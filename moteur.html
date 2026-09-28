@@ -36,6 +36,15 @@
   .row select { width:auto; min-width:90px; }
   pre { white-space:pre-wrap; font-size:13px; background:var(--bg); padding:10px; border-radius:8px; overflow:auto; }
   .hidden { display:none; }
+  .etiquette { font-weight:700; margin:16px 0 8px; }
+  .cartes { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; }
+  .carte { display:flex; flex-direction:column; align-items:flex-start; gap:2px; text-align:left; padding:14px 16px; border-width:2px; }
+  .carte .ico { font-size:30px; line-height:1.1; }
+  .carte b { font-size:18px; }
+  .carte small { color:var(--mute); font-size:14px; }
+  .carte.sel, .puce.sel { border-color:var(--accent); background:color-mix(in srgb, var(--accent) 14%, var(--card)); }
+  .puces { display:flex; flex-wrap:wrap; gap:8px; }
+  .puce { border-radius:999px; padding:8px 14px; border-width:2px; }
 </style>
 </head>
 <body>
@@ -44,11 +53,19 @@
 
   <section class="card" id="config">
     <h1 style="margin:0 0 8px;font-size:22px">Lancer une session</h1>
+    <p class="etiquette">1. Que veux-tu faire ?</p>
+    <div class="cartes" role="radiogroup" aria-label="Mode">
+      <button class="carte sel" data-mode="entrainement" role="radio" aria-checked="true">
+        <span class="ico">🎲</span><b>Entraînement</b><small>Des questions au hasard, jamais deux fois la même</small></button>
+      <button class="carte" data-mode="examen" role="radio" aria-checked="false">
+        <span class="ico">📝</span><b>Examen blanc</b><small>Les vraies questions du CEB 2026, dans l'ordre</small></button>
+    </div>
+    <p class="etiquette">2. Quelle matière ?</p>
+    <div class="puces" id="matieres" role="radiogroup" aria-label="Matière">
+      <button class="puce sel" data-matiere="" role="radio" aria-checked="true">🌈 Tout</button>
+    </div>
+    <p class="etiquette">3. Réglages</p>
     <div class="grid2">
-      <div><label for="mode">Mode</label>
-        <select id="mode"><option value="entrainement">Entraînement aléatoire</option><option value="examen">Examen officiel (CEB 2026 TC — échantillon)</option></select></div>
-      <div><label for="matiere">Matière</label>
-        <select id="matiere"><option value="">Toutes</option></select></div>
       <div><label for="nb">Nombre de questions</label>
         <input id="nb" type="number" min="1" max="200" value="10"></div>
       <div><label for="chrono">Chrono (minutes, 0 = libre)</label>
@@ -87,15 +104,27 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const donnees = await chargerDonnees();
 
-for (const m of donnees.catalogue.matieres) $('matiere').insertAdjacentHTML('beforeend', `<option value="${m.id}">${m.emoji} ${m.nom}</option>`);
+for (const m of donnees.catalogue.matieres) $('matieres').insertAdjacentHTML('beforeend', `<button class="puce" data-matiere="${m.id}" role="radio" aria-checked="false">${m.emoji} ${m.nom}</button>`);
+
+// Groupes de gros boutons : un seul sélectionné à la fois.
+let modeChoisi = 'entrainement', matiereChoisie = '';
+function groupe(selecteur, attr, onChoix) {
+  const boutons = [...document.querySelectorAll(selecteur)];
+  boutons.forEach((b) => b.onclick = () => {
+    boutons.forEach((x) => { x.classList.toggle('sel', x === b); x.setAttribute('aria-checked', x === b); });
+    onChoix(b.dataset[attr]);
+  });
+}
+groupe('.carte', 'mode', (v) => { modeChoisi = v; });
+groupe('.puce', 'matiere', (v) => { matiereChoisie = v; });
 $('infoData').textContent = `${donnees.banque.length} questions fixes + ${donnees.modeles.length} modèles de questions générées chargés.`;
 
 let session, reponse, timer, idsPoses, fini = false;
 
 $('go').onclick = async () => {
-  const mode = $('mode').value;
+  const mode = modeChoisi;
   const opts = { mode, nbQuestions: +$('nb').value || 10, dureeSecondes: (+$('chrono').value || 0) * 60 || null };
-  if ($('matiere').value) opts.matieres = [$('matiere').value];
+  if (matiereChoisie) opts.matieres = [matiereChoisie];
   const examen = mode === 'examen' ? await donnees.chargerExamen('ceb-2026-tc') : null;
   session = new QuizSession({ ...donnees, examen }, opts);
   idsPoses = new Set(); fini = false;
