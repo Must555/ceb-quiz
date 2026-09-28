@@ -32,6 +32,8 @@ export function rendreSaisie(q) {
     case 'association':
       return `<div class="asso">${q.gauche.map((g, i) => `
         <div class="asso-ligne"><p>${esc(g)}</p><select class="champ" data-i="${i}"><option value="">Choisir…</option>${q.droite.map((d, k) => `<option value="${k}">${esc(d)}</option>`).join('')}</select></div>`).join('')}</div>`;
+    case 'ouverte':
+      return `<p class="consigne">Écris ta réponse, puis compare-la avec la réponse modèle.</p><textarea class="champ" id="saisie" rows="3" spellcheck="true" placeholder="Ta réponse"></textarea>`;
     default:
       return '<p class="consigne">Ce type de question se fait sur papier.</p>';
   }
@@ -69,10 +71,10 @@ export function brancher(zone, q, { onPret, onValider }) {
       onPret(q.lignes.every((_, i) => etat.grille[i] != null));
     });
   }
-  const champs = [...zone.querySelectorAll('input.champ, select.champ')];
+  const champs = [...zone.querySelectorAll('input.champ, select.champ, textarea.champ')];
   champs.forEach((c) => {
     c.addEventListener('input', () => onPret(champs.every((x) => x.value.trim() !== '') || (q.type === 'association' && champs.some((x) => x.value !== ''))));
-    c.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); onValider(); } });
+    c.addEventListener('keydown', (e) => { if (e.key === 'Enter' && c.tagName !== 'TEXTAREA') { e.preventDefault(); onValider(); } });
   });
   if (champs[0] && matchMedia('(pointer:fine)').matches) champs[0].focus();
 
@@ -81,7 +83,7 @@ export function brancher(zone, q, { onPret, onValider }) {
       switch (q.type) {
         case 'qcm': case 'vrai_faux': return etat.reponse;
         case 'qcm_multi': return [...zone.querySelectorAll('.rep.sel')].map((b) => +b.dataset.i);
-        case 'numerique': case 'texte_court': return zone.querySelector('#saisie').value;
+        case 'numerique': case 'texte_court': case 'ouverte': return zone.querySelector('#saisie').value;
         case 'trous': return [...zone.querySelectorAll('.trou')].map((x) => x.value);
         case 'grille': return q.lignes.map((_, i) => etat.grille[i] ?? null);
         case 'ordre': return etat.ordre;
@@ -91,7 +93,7 @@ export function brancher(zone, q, { onPret, onValider }) {
     },
     // Après correction : colore les bonnes / mauvaises réponses et bloque la saisie.
     montrerCorrection() {
-      zone.querySelectorAll('button, input, select').forEach((el) => { el.disabled = true; });
+      zone.querySelectorAll('button, input, select, textarea').forEach((el) => { el.disabled = true; });
       if (q.type === 'qcm') reps.forEach((b) => b.classList.add(+b.dataset.i === q.reponse ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'vrai_faux') reps.forEach((b) => b.classList.add((b.dataset.v === '1') === q.reponse ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'qcm_multi') reps.forEach((b) => b.classList.add(q.reponse.includes(+b.dataset.i) ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));

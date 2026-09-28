@@ -1,16 +1,88 @@
 {
   "examens": [
-    { "id": "ceb-2015", "annee": 2015, "referentiel": "socles", "fichier": "examens/ceb-2015.json", "statut": "a_encoder" },
-    { "id": "ceb-2016", "annee": 2016, "referentiel": "socles", "fichier": "examens/ceb-2016.json", "statut": "a_encoder" },
-    { "id": "ceb-2017", "annee": 2017, "referentiel": "socles", "fichier": "examens/ceb-2017.json", "statut": "a_encoder" },
-    { "id": "ceb-2018", "annee": 2018, "referentiel": "socles", "fichier": "examens/ceb-2018.json", "statut": "a_encoder" },
-    { "id": "ceb-2019", "annee": 2019, "referentiel": "socles", "fichier": "examens/ceb-2019.json", "statut": "a_encoder" },
-    { "id": "ceb-2021", "annee": 2021, "referentiel": "socles", "fichier": "examens/ceb-2021.json", "statut": "a_encoder" },
-    { "id": "ceb-2022", "annee": 2022, "referentiel": "socles", "fichier": "examens/ceb-2022.json", "statut": "a_encoder" },
-    { "id": "ceb-2023", "annee": 2023, "referentiel": "socles", "fichier": "examens/ceb-2023.json", "statut": "a_encoder" },
-    { "id": "ceb-2024", "annee": 2024, "referentiel": "socles", "fichier": "examens/ceb-2024.json", "statut": "a_encoder" },
-    { "id": "ceb-2025", "annee": 2025, "referentiel": "socles", "fichier": "examens/ceb-2025.json", "statut": "a_encoder" },
-    { "id": "ceb-2026-so", "annee": 2026, "referentiel": "socles", "fichier": "examens/ceb-2026-so.json", "statut": "a_encoder" },
-    { "id": "ceb-2026-tc", "annee": 2026, "referentiel": "tronc_commun", "fichier": "examens/ceb-2026-tc.json", "statut": "exemple" }
+    {
+      "id": "ceb-2015",
+      "annee": 2015,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2015.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2016",
+      "annee": 2016,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2016.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2017",
+      "annee": 2017,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2017.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2018",
+      "annee": 2018,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2018.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2019",
+      "annee": 2019,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2019.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2021",
+      "annee": 2021,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2021.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2022",
+      "annee": 2022,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2022.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2023",
+      "annee": 2023,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2023.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2024",
+      "annee": 2024,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2024.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2025",
+      "annee": 2025,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2025.json",
+      "statut": "a_encoder"
+    },
+    {
+      "id": "ceb-2026-so",
+      "annee": 2026,
+      "referentiel": "socles",
+      "fichier": "examens/ceb-2026-so.json",
+      "statut": "disponible"
+    },
+    {
+      "id": "ceb-2026-tc",
+      "annee": 2026,
+      "referentiel": "tronc_commun",
+      "fichier": "examens/ceb-2026-tc.json",
+      "statut": "disponible"
+    }
   ]
 }

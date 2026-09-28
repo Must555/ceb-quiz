@@ -1,5 +1,5 @@
 // Mission CEB — application (écrans : connexion, accueil, quiz, résultat, réglages).
-import { chargerDonnees, QuizSession } from '../engine/index.js';
+import { chargerDonnees, QuizSession, estJouable } from '../engine/index.js';
 import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
@@ -23,7 +23,12 @@ const OUPS = ['Pas tout à fait…', 'Presque !', 'Oups !', 'Pas grave, on appre
 
 let donnees = null;
 let joueur = null;
-const choix = { mode: 'entrainement', matiere: '', examen: null, examenChrono: false, cible: null };
+const choix = { mode: 'entrainement', matiere: '', examen: null, examenChrono: false, livret: null, cible: null };
+const cacheExamens = {};
+async function examenCharge(id) { return (cacheExamens[id] ??= donnees.chargerExamen(id)); }
+// Questions jouables à l'écran d'un examen, éventuellement pour un seul livret.
+const jouables = (ex, livret = null) => ex.questions.filter((q) => q.numerisable !== false && estJouable(q) && (livret == null || q.livret === livret));
+const NOM_MAT = { fr: 'Français', ma: 'Maths', hg: 'Histoire-géo', sc: 'Sciences' };
 let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
@@ -246,7 +251,9 @@ function afficherAccueil() {
             <button class="puce chr" data-chr="0">🧘 Sans chrono</button>
             <button class="puce chr" data-chr="1">⏱️ Chronométré</button>
           </div>
-          <p class="mute" style="font-size:13px;margin:10px 0 0">🔒 Les autres années arrivent bientôt. Pour l'instant : un échantillon du CEB 2026.</p>
+          <h3 class="section-titre" style="margin-top:16px">📚 Quel livret ?</h3>
+          <div class="livrets" id="choix-livret"><p class="mute">Chargement…</p></div>
+          <p class="mute" style="font-size:13px;margin:10px 0 0">Les questions à faire sur papier (tracés, dessins) sont retirées. 🔒 Les autres années arrivent bientôt.</p>
         </section>
 
         <div class="go"><button class="btn btn-cta" id="lancer">Lancer la mission →</button></div>
@@ -291,7 +298,20 @@ function afficherAccueil() {
   };
   $$('.mode', el).forEach((b) => b.onclick = () => { choix.mode = b.dataset.mode; majChoix(); });
   $$('.matiere', el).forEach((b) => b.onclick = () => { choix.matiere = b.dataset.mat; majChoix(); });
-  $$('.puce.ex', el).forEach((b) => b.onclick = () => { choix.examen = b.dataset.ex; majChoix(); });
+  $$('.puce.ex', el).forEach((b) => b.onclick = () => { choix.examen = b.dataset.ex; choix.livret = null; majChoix(); majLivrets(); });
+  async function majLivrets() {
+    const zone = $('#choix-livret', el);
+    if (!choix.examen || !zone) return;
+    const id = choix.examen;
+    const ex = await examenCharge(id);
+    if (id !== choix.examen) return;
+    const livrets = (ex.livrets ?? []).map((l) => ({ ...l, nb: jouables(ex, l.n).length })).filter((l) => l.nb > 0);
+    const btn = (n, e, titre, sous, nb) => `<button class="livret${choix.livret === n ? ' sel' : ''}" data-l="${n ?? ''}"><span class="e">${e}</span><b>${titre}</b><small>${sous} · ${nb} question${nb > 1 ? 's' : ''}</small></button>`;
+    zone.innerHTML = btn(null, '🗂️', 'Tout l\'examen', 'Tous les livrets', jouables(ex).length)
+      + livrets.map((l) => btn(l.n, { fr: '📖', ma: '🔢', hg: '🌍', sc: '🔬' }[l.matiere] ?? '📄', `Livret ${l.n} · ${l.titre}`, /Éveil/.test(l.titre) ? 'Éveil' : NOM_MAT[l.matiere] ?? '', l.nb)).join('');
+    $$('.livret', zone).forEach((b) => b.onclick = () => { choix.livret = b.dataset.l ? Number(b.dataset.l) : null; majLivrets(); });
+  }
+  majLivrets();
   $$('.puce.chr', el).forEach((b) => b.onclick = () => { choix.examenChrono = b.dataset.chr === '1'; majChoix(); });
   $$('[data-aller="reglages"]', el).forEach((b) => b.onclick = afficherReglages);
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
@@ -318,8 +338,8 @@ async function lancerPartie() {
     // Même défi toute la journée pour ce joueur (graine = date + joueur), sans tenir compte de l'historique.
     session = new QuizSession({ ...base, historique: [] }, { nbQuestions: 10, seed: `${store.aujourdhui()}|${joueur.id}` });
   } else {
-    examen = await donnees.chargerExamen(choix.examen);
-    session = new QuizSession({ examen }, { mode: 'examen' });
+    examen = await examenCharge(choix.examen);
+    session = new QuizSession({ examen }, { mode: 'examen', livrets: choix.livret ? [choix.livret] : null });
     if (choix.examenChrono) session.o.dureeSecondes = Math.max(120, session.o.nbQuestions * 90);
   }
   partie = { session, modeJeu, examen, fini: false };
@@ -375,12 +395,12 @@ function questionSuivante() {
   if (!q) return terminerPartie(false);
   partie.corrige = false;
   const docs = (q.documents ?? []).map((id) => partie.examen?.documents?.find((d) => d.id === id)).filter(Boolean);
-  const origine = q.source === 'examen' ? `CEB ${partie.examen.annee} · livret ${q.livret} · question ${q.numero}` : nomDomaine(q.domaine);
+  const origine = q.source === 'examen' ? `CEB ${partie.examen.annee}${partie.examen.referentiel === 'tronc_commun' ? ' (tronc commun)' : ''} · livret ${q.livret} · question ${q.numero}` : nomDomaine(q.domaine);
   $('#q-zone').innerHTML = `
     <p class="origine">${esc(origine)}</p>
     <h2>${esc(q.enonce)}</h2>
-    ${docs.map((d) => `<button class="btn doc-btn" data-doc="${d.id}">📄 Voir le document : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" hidden><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
+    ${docs.map((d, i) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
+      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
     <div id="q-saisie">${rendreSaisie(q)}</div>`;
   $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
   const pied = $('#pied');
@@ -399,17 +419,18 @@ function valider(passer) {
   partie.corrige = true;
   partie.ui.montrerCorrection();
   const ok = r.correct === true;
+  const ouverte = r.correct === null && !passer;
   const partielle = !ok && r.score > 0;
   const pied = $('#pied');
-  pied.className = `pied-quiz ${ok ? 'juste' : 'faux'}`;
+  pied.className = `pied-quiz ${ok ? 'juste' : ouverte ? 'ouvert' : 'faux'}`;
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
-  const titre = ok ? `${pick(BRAVO)} ${r.serie >= 3 ? `🔥 ${r.serie} d'affilée` : '✅'}` : passer ? 'Voici la réponse 👇' : partielle ? `En partie juste (${r.detail})` : pick(OUPS);
+  const titre = ok ? `${pick(BRAVO)} ${r.serie >= 3 ? `🔥 ${r.serie} d'affilée` : '✅'}` : passer ? 'Voici la réponse 👇' : ouverte ? '✍️ Compare avec la réponse modèle' : partielle ? `En partie juste (${r.detail})` : pick(OUPS);
   const montrerBonne = !ok && !['qcm', 'vrai_faux', 'qcm_multi', 'grille'].includes(q.type);
   $('#retour').innerHTML = `${r.xpGagne ? `<span class="xp-gagne">+${r.xpGagne} XP</span>` : ''}<b>${titre}</b>
-    ${r.remarque && !ok && !passer ? `<p>${esc(r.remarque)}</p>` : ''}
-    ${montrerBonne ? `<p class="bonne">Réponse : ${esc(r.bonneReponse)}</p>` : ''}
+    ${r.remarque && !ok && !passer && !ouverte ? `<p>${esc(r.remarque)}</p>` : ''}
+    ${montrerBonne ? `<p class="bonne">${q.type === 'ouverte' ? 'Réponse modèle' : 'Réponse'} : ${esc(r.bonneReponse)}</p>` : ''}
     ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}
-    ${!ok && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}`;
+    ${!ok && !ouverte && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}`;
   $('#retour').hidden = false;
   $('#voir-regle')?.addEventListener('click', () => ouvrirFiche(q.fiche));
   $('#passer').hidden = true;

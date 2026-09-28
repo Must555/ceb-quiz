@@ -1,10 +1,10 @@
 {
-  "id": "ceb-2026-tc",
+  "id": "ceb-2026-so",
   "annee": 2026,
-  "referentiel": "tronc_commun",
-  "titre": "CEB 2026 — Référentiels du Tronc commun",
+  "referentiel": "socles",
+  "titre": "CEB 2026 — Socles de compétences",
   "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
-  "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio du récit. Certaines questions reposent sur des figures du questionnaire que nous n'avons pas : elles sont omises ou gardées en mode papier.",
+  "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (photos, schémas, grilles) sont omises ou gardées en mode papier.",
   "livrets": [
     {
       "n": 1,
@@ -24,7 +24,7 @@
     {
       "n": 3,
       "matiere": "ma",
-      "titre": "Géométrie",
+      "titre": "Solides et figures",
       "date": "2026-06-18",
       "points": 40
     },
@@ -33,12 +33,12 @@
       "matiere": "ma",
       "titre": "Grandeurs",
       "date": "2026-06-19",
-      "points": 60
+      "points": 55
     },
     {
       "n": 5,
       "matiere": "hg",
-      "titre": "Formation historique et géographique",
+      "titre": "Éveil — Formation historique et géographique",
       "date": "2026-06-19",
       "points": 50
     },
@@ -52,21 +52,21 @@
     {
       "n": 7,
       "matiere": "ma",
-      "titre": "Arithmétique 1",
+      "titre": "Nombres 1",
       "date": "2026-06-22",
-      "points": 27
+      "points": 33
     },
     {
       "n": 8,
       "matiere": "ma",
-      "titre": "Arithmétique 2 et traitement de données",
+      "titre": "Nombres 2",
       "date": "2026-06-22",
-      "points": 38
+      "points": 37
     },
     {
       "n": 9,
       "matiere": "sc",
-      "titre": "Initiation scientifique",
+      "titre": "Éveil — Initiation scientifique",
       "date": "2026-06-23",
       "points": 50
     },
@@ -80,226 +80,121 @@
   ],
   "documents": [
     {
-      "id": "croisiere",
+      "id": "nature-1",
       "page": 2,
-      "titre": "Croisière évasion Liège – Maastricht",
-      "fichier": "assets/2026-tc/pdf02.webp",
-      "alt": "Horaires, tarifs du bateau (adulte 12 €, enfant 12-18 ans 9 €, enfant de moins de 12 ans 6 € par trajet ; –10 % pour un aller-retour le même jour) et carte à l'échelle 1/400 000 : Liège-Maastricht = 6,5 cm."
+      "titre": "La nature des documents (1 et 2)",
+      "fichier": "assets/2026-so/pdf02.webp",
+      "alt": "Document 1 : Le bain, illustration d'un manuscrit (début du 15e siècle). Document 2 : Dame romaine à sa toilette (fin IIe - début IIIe siècle), sculpture en relief."
     },
     {
-      "id": "merov-couv",
+      "id": "nature-2",
       "page": 3,
-      "titre": "Manuel « À la rencontre des Mérovingiens » (couverture)",
-      "fichier": "assets/2026-tc/pdf03.webp",
-      "alt": "Couverture d'un manuel d'histoire."
+      "titre": "La nature des documents (3 à 5)",
+      "fichier": "assets/2026-so/pdf03.webp",
+      "alt": "Document 3 : Femme se peignant, Renoir (1907-1908). Document 4 : une salle de bain en 2025. Document 5 : La Toilette, Louis Boizot (1775), statuette."
     },
     {
-      "id": "merov-tdm",
+      "id": "carolingiens",
       "page": 4,
-      "titre": "Table des matières du manuel",
-      "fichier": "assets/2026-tc/pdf04.webp",
-      "alt": "Table des matières : se soigner p. 16, des bijoux p. 14, équipement offensif p. 17, défensif p. 19…"
+      "titre": "Les Carolingiens",
+      "fichier": "assets/2026-so/pdf04.webp",
+      "alt": "Fiches de Charlemagne, Lothaire Ier, Carloman Ier, Pépin le Bref, Charles le Chauve, Louis le Pieux et Louis le Germanique, avec leurs dates."
     },
     {
-      "id": "merov-rites",
+      "id": "ue",
       "page": 5,
-      "titre": "Des rites funéraires – le cimetière de Vieuxville",
-      "fichier": "assets/2026-tc/pdf05.webp",
-      "alt": "Page de manuel en quatre blocs A à D sur les fouilles du cimetière mérovingien de Vieuxville."
+      "titre": "La construction de l'Union européenne",
+      "fichier": "assets/2026-so/pdf05.webp",
+      "alt": "Six cartes de l'Europe (1958, 1973, 1986, 1995, 2013, 2026) montrant les pays membres."
     },
     {
-      "id": "merov-index",
+      "id": "communes",
       "page": 6,
-      "titre": "Index du manuel",
-      "fichier": "assets/2026-tc/pdf06.webp",
-      "alt": "Index alphabétique : Fibule 13, 14 ; Francisque 19, 26 ; Scramasaxe 19, 26…"
+      "titre": "Le nombre d'habitants par commune",
+      "fichier": "assets/2026-so/pdf06.webp",
+      "alt": "Carte de Belgique : villes classées de moins de 25 000 à plus de 100 000 habitants."
     },
     {
-      "id": "christianisme",
+      "id": "train",
       "page": 7,
-      "titre": "La diffusion du christianisme dans le monde",
-      "fichier": "assets/2026-tc/pdf07.webp",
-      "alt": "Carte du monde (le nord est à gauche) montrant les étapes de la diffusion du christianisme."
-    },
-    {
-      "id": "recherche-1",
-      "page": 8,
-      "titre": "Une recherche documentaire (documents 1 et 2)",
-      "fichier": "assets/2026-tc/pdf08.webp",
-      "alt": "Affiche invitant les ouvriers belges à travailler dans les mines ; graphique du nombre d'habitants italiens en Belgique de 1890 à 2010."
-    },
-    {
-      "id": "recherche-2",
-      "page": 9,
-      "titre": "Une recherche documentaire (documents 3 et 4)",
-      "fichier": "assets/2026-tc/pdf09.webp",
-      "alt": "Carte politique de l'Italie ; article de presse de 1964 sur l'accord belgo-marocain."
-    },
-    {
-      "id": "classes",
-      "page": 10,
-      "titre": "La vie dans une classe à des moments différents",
-      "fichier": "assets/2026-tc/pdf10.webp",
-      "alt": "Photo d'une classe vers 1920 et photo d'une classe en 2026."
-    },
-    {
-      "id": "population",
-      "page": 11,
-      "titre": "La population dans le monde",
-      "fichier": "assets/2026-tc/pdf11.webp",
-      "alt": "Carte (le nord est à gauche) des 20 plus grandes agglomérations du monde, classées par nombre d'habitants."
-    },
-    {
-      "id": "zones",
-      "page": 12,
-      "titre": "Les zones thermiques du monde",
-      "fichier": "assets/2026-tc/pdf12.webp",
-      "alt": "Carte (le nord est à gauche) des zones 1, 2, 3, des lignes F, G, H et des océans A à E."
-    },
-    {
-      "id": "baulers",
-      "page": 13,
-      "titre": "Vues aériennes de Baulers (1994, 2006, 2021)",
-      "fichier": "assets/2026-tc/pdf13.webp",
-      "alt": "Trois photos aériennes du même zoning à trois dates."
-    },
-    {
-      "id": "effet-serre-1",
-      "page": 14,
-      "titre": "Le réchauffement climatique",
-      "fichier": "assets/2026-tc/pdf14.webp",
-      "alt": "Texte sur les gaz à effet de serre et leur origine."
-    },
-    {
-      "id": "effet-serre-2",
-      "page": 15,
-      "titre": "Activités humaines et effet de serre",
-      "fichier": "assets/2026-tc/pdf15.webp",
-      "alt": "Illustrations : engrais, ruminants, forêts, électricité, chauffage, transports."
+      "titre": "Carte du réseau ferroviaire de Belgique",
+      "fichier": "assets/2026-so/pdf07.webp",
+      "alt": "Carte des lignes de train en Belgique."
     },
     {
       "id": "empreintes-1",
       "page": 3,
       "titre": "Enquête sur les empreintes digitales (1)",
-      "fichier": "assets/2026-tc/pdf19.webp",
-      "alt": "Article : introduction et bloc 1 « Des crêtes et des sillons »."
+      "fichier": "assets/2026-so/pdf11.webp",
+      "alt": "Article : introduction et bloc 1."
     },
     {
       "id": "empreintes-2",
       "page": 4,
       "titre": "Enquête sur les empreintes digitales (2)",
-      "fichier": "assets/2026-tc/pdf20.webp",
-      "alt": "Bloc 2 « Anatomie d'une empreinte digitale » : boucle, spirale, arche, minuties."
+      "fichier": "assets/2026-so/pdf12.webp",
+      "alt": "Bloc 2 : anatomie d'une empreinte."
     },
     {
       "id": "empreintes-3",
       "page": 5,
       "titre": "Enquête sur les empreintes digitales (3)",
-      "fichier": "assets/2026-tc/pdf21.webp",
-      "alt": "Blocs 3 « Des tracés uniques », 4 « Des produits pour révéler », 5 « Positive ou négative »."
+      "fichier": "assets/2026-so/pdf13.webp",
+      "alt": "Blocs 3, 4 et 5."
     },
     {
       "id": "empreintes-4",
       "page": 6,
       "titre": "Enquête sur les empreintes digitales (4)",
-      "fichier": "assets/2026-tc/pdf22.webp",
-      "alt": "Bloc 6 « Identifier et déverrouiller », source de l'article et glossaire."
+      "fichier": "assets/2026-so/pdf14.webp",
+      "alt": "Bloc 6, source et glossaire."
     },
     {
-      "id": "classif-1",
+      "id": "vases",
+      "page": 2,
+      "titre": "Les vases communicants",
+      "fichier": "assets/2026-so/pdf18.webp",
+      "alt": "Expérience en quatre étapes : le liquide passe d'un bocal à l'autre jusqu'à ce que les niveaux soient égaux."
+    },
+    {
+      "id": "meteo",
       "page": 3,
-      "titre": "Classification des vivants – collection 1",
-      "fichier": "assets/2026-tc/pdf27.webp",
-      "alt": "Photos : homard, grande limace, pie bavarde, piéride du chou, pipistrelle commune, poisson-chat."
-    },
-    {
-      "id": "classif-2",
-      "page": 4,
-      "titre": "Classification des vivants – collection 2",
-      "fichier": "assets/2026-tc/pdf28.webp",
-      "alt": "Mammifères, oiseaux, actinoptérygiens, insectes, crustacés, annélides."
-    },
-    {
-      "id": "classif-3",
-      "page": 5,
-      "titre": "Classification des vivants – collection 3",
-      "fichier": "assets/2026-tc/pdf29.webp",
-      "alt": "Animaux numérotés de 1 à 8 : mammifères, insectes, oiseaux, actinoptérygiens."
-    },
-    {
-      "id": "bougies-1",
-      "page": 6,
-      "titre": "Expérience 1 : bougies et récipients",
-      "fichier": "assets/2026-tc/pdf30.webp",
-      "alt": "Protocole : une bougie sous des récipients de 90 ml à 2 800 ml."
-    },
-    {
-      "id": "bougies-2",
-      "page": 7,
-      "titre": "Expérience 1 : résultats",
-      "fichier": "assets/2026-tc/pdf31.webp",
-      "alt": "Tableau et graphique de la durée de combustion selon le volume du récipient."
-    },
-    {
-      "id": "bougies-3",
-      "page": 8,
-      "titre": "Expérience 2 : nombre de bougies",
-      "fichier": "assets/2026-tc/pdf32.webp",
-      "alt": "Protocole : 1, 2 puis 3 bougies sous le récipient de 2 800 ml."
-    },
-    {
-      "id": "bougies-4",
-      "page": 9,
-      "titre": "Expérience 2 : résultats",
-      "fichier": "assets/2026-tc/pdf33.webp",
-      "alt": "1 bougie 66 s, 2 bougies 38 s, 3 bougies 28 s."
-    },
-    {
-      "id": "bougies-5",
-      "page": 10,
-      "titre": "Expérience 3 : deux bougies de hauteurs différentes",
-      "fichier": "assets/2026-tc/pdf34.webp",
-      "alt": "Une bougie de 5 cm et une de 10 cm sous un récipient."
-    },
-    {
-      "id": "extincteurs",
-      "page": 11,
-      "titre": "Éteindre un incendie",
-      "fichier": "assets/2026-tc/pdf35.webp",
-      "alt": "Classes de feux A, B, C, D, F et dispositifs d'extinction adaptés."
+      "titre": "Les caractéristiques d'un bulletin météorologique",
+      "fichier": "assets/2026-so/pdf19.webp",
+      "alt": "Cartes météo de la Belgique du lundi au jeudi, avec légende des pictogrammes."
     },
     {
       "id": "gabrielle",
-      "page": 12,
+      "page": 8,
       "titre": "Gabrielle Petit, une personnalité belge",
-      "fichier": "assets/2026-tc/pdf36.webp",
-      "alt": "Texte en quatre blocs : enfance au couvent, espionne, arrestation, symbole de la résistance."
+      "fichier": "assets/2026-so/pdf20.webp",
+      "alt": "Texte en quatre blocs."
     },
     {
       "id": "eiffel",
-      "page": 13,
+      "page": 9,
       "titre": "L'inimitable tour Eiffel",
-      "fichier": "assets/2026-tc/pdf37.webp",
-      "alt": "Article sur la construction de la tour Eiffel, avec glossaire."
+      "fichier": "assets/2026-so/pdf21.webp",
+      "alt": "Article et glossaire."
     },
     {
       "id": "nettoyage",
-      "page": 14,
+      "page": 10,
       "titre": "Au top : le grand nettoyage / Jouer aide à grandir",
-      "fichier": "assets/2026-tc/pdf38.webp",
-      "alt": "Texte sur le grand nettoyage de printemps et affiche « Jouer aide à grandir »."
+      "fichier": "assets/2026-so/pdf22.webp",
+      "alt": "Texte et affiche."
     },
     {
       "id": "blagues",
-      "page": 15,
+      "page": 11,
       "titre": "Nelson (BD) et « Rions un peu ! »",
-      "fichier": "assets/2026-tc/pdf39.webp",
-      "alt": "Bande dessinée et trois blagues numérotées."
+      "fichier": "assets/2026-so/pdf23.webp",
+      "alt": "Bande dessinée et trois blagues."
     }
   ],
   "questions": [
     {
-      "id": "ceb-2026-tc-l2-q1",
+      "id": "ceb-2026-so-l2-q1",
       "livret": 2,
       "numero": "1",
       "domaine": "fr.ecrire",
@@ -310,7 +205,7 @@
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q2",
+      "id": "ceb-2026-so-l3-q2",
       "livret": 3,
       "numero": "2",
       "domaine": "ma.geometrie",
@@ -322,7 +217,7 @@
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q5",
+      "id": "ceb-2026-so-l3-q5",
       "livret": 3,
       "numero": "5",
       "domaine": "ma.geometrie",
@@ -333,7 +228,7 @@
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q6",
+      "id": "ceb-2026-so-l3-q6",
       "livret": 3,
       "numero": "6",
       "domaine": "ma.geometrie",
@@ -344,7 +239,7 @@
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q9",
+      "id": "ceb-2026-so-l3-q9",
       "livret": 3,
       "numero": "9",
       "domaine": "ma.geometrie",
@@ -355,79 +250,171 @@
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q12",
+      "id": "ceb-2026-so-l3-q11",
       "livret": 3,
-      "numero": "12",
+      "numero": "11",
       "domaine": "ma.geometrie",
       "type": "ouverte",
-      "enonce": "Trace un losange dont la grande diagonale [BD] est donnée et dont la petite diagonale [AC] mesure 4 cm. Écris les lettres A et C, puis trace un triangle équilatéral de base [DA].",
+      "enonce": "Trace un carré dont un côté [AD] est donné. Écris les lettres B et C pour les autres sommets, puis trace un triangle équilatéral de base [AD].",
       "points": 3,
       "corrigeVerifie": false,
       "fiche": "ma-quadrilateres",
       "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q13",
+      "id": "ceb-2026-so-l3-q13",
       "livret": 3,
       "numero": "13",
       "domaine": "ma.geometrie",
-      "type": "trous",
-      "enonce": "Observe cette photo de cyclistes qui terminent une course. Trois coureurs ont déjà franchi la ligne d'arrivée avant Tim. Complète.",
-      "points": 2,
+      "type": "ouverte",
+      "enonce": "Trace le trajet sur le quadrillage : au départ de A, 5 cases vers la droite, descends de 3, 2 vers la gauche, monte de 4 : note B. De B, 5 cases vers la gauche, descends de 6, monte de 1 : note C.",
+      "points": 1,
       "corrigeVerifie": false,
-      "texte": "Tim est en {1} position. Jonas se trouve 8 places derrière Romain, qui est en douzième position : Jonas est en {2} position.",
-      "reponse": [
-        [
-          "quatrième",
-          "4e",
-          "4ème",
-          "4",
-          "quatrieme"
-        ],
-        [
-          "vingtième",
-          "20e",
-          "20ème",
-          "20",
-          "vingtieme"
-        ]
-      ],
-      "souple": true,
-      "explication": "3 coureurs sont devant Tim, donc Tim est 4e. Romain est 12e ; 8 places derrière : 12 + 8 = 20e."
+      "numerisable": false
     },
     {
-      "id": "ceb-2026-tc-l3-q19",
+      "id": "ceb-2026-so-l3-q15",
+      "livret": 3,
+      "numero": "15",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "a) Trace un quadrilatère qui a un seul angle droit. b) Trace un parallélogramme dont la base mesure 8 cm. c) Trace les deux côtés manquants d'un rectangle.",
+      "points": 3,
+      "corrigeVerifie": false,
+      "fiche": "ma-quadrilateres",
+      "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l3-q19",
       "livret": 3,
       "numero": "19",
       "domaine": "ma.geometrie",
-      "type": "grille",
-      "enonce": "Pour chaque solide, indique si la propriété est vraie.",
-      "points": 2,
+      "type": "trous",
+      "enonce": "Complète les phrases (exemple : un rectangle possède 4 angles droits).",
+      "points": 3,
       "corrigeVerifie": false,
-      "lignes": [
-        "Parallélépipède rectangle : il a des faces parallèles",
-        "Prisme droit à base triangulaire : il a des faces parallèles",
-        "Pyramide à base carrée : elle a des faces parallèles",
-        "Parallélépipède rectangle : faces latérales perpendiculaires à la (aux) base(s)",
-        "Prisme droit à base triangulaire : faces latérales perpendiculaires aux bases",
-        "Pyramide à base carrée : faces latérales perpendiculaires à la base"
-      ],
-      "colonnes": [
-        "Oui",
-        "Non"
-      ],
+      "fiche": "ma-quadrilateres",
+      "texte": "Un trapèze rectangle possède 2 angles {1}.  ·  Un triangle isocèle possède 2 côtés {2}.  ·  Dans un rectangle, les côtés opposés sont {3}.",
       "reponse": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        1
+        [
+          "droits"
+        ],
+        [
+          "isométriques",
+          "égaux",
+          "de même longueur",
+          "isometriques"
+        ],
+        [
+          "parallèles",
+          "isométriques",
+          "égaux",
+          "parallèles et isométriques",
+          "paralleles"
+        ]
       ],
-      "explication": "Le parallélépipède et le prisme droit ont deux bases parallèles et des faces latérales perpendiculaires aux bases. La pyramide n'a qu'une base et ses faces latérales sont inclinées."
+      "souple": true,
+      "explication": "Trapèze rectangle : 2 angles droits. Triangle isocèle : 2 côtés isométriques (de même longueur). Rectangle : côtés opposés parallèles et de même longueur."
     },
     {
-      "id": "ceb-2026-tc-l4-q1",
+      "id": "ceb-2026-so-l3-q20a",
+      "livret": 3,
+      "numero": "20a",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Tous mes côtés sont isométriques. Je suis un…",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-quadrilateres",
+      "choix": [
+        "parallélogramme",
+        "triangle rectangle",
+        "losange",
+        "trapèze"
+      ],
+      "reponse": 2,
+      "explication": "Le losange a ses 4 côtés de même longueur."
+    },
+    {
+      "id": "ceb-2026-so-l3-q20b",
+      "livret": 3,
+      "numero": "20b",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Je n'ai qu'une seule paire de côtés parallèles. Je suis un…",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-quadrilateres",
+      "choix": [
+        "parallélogramme",
+        "pentagone régulier",
+        "rectangle",
+        "trapèze"
+      ],
+      "reponse": 3,
+      "explication": "Le trapèze a une seule paire de côtés parallèles ; le parallélogramme et le rectangle en ont deux."
+    },
+    {
+      "id": "ceb-2026-so-l3-q20c",
+      "livret": 3,
+      "numero": "20c",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Tous mes angles sont de même amplitude. Je suis un…",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-quadrilateres",
+      "choix": [
+        "parallélogramme",
+        "pentagone régulier",
+        "triangle isocèle",
+        "losange"
+      ],
+      "reponse": 1,
+      "explication": "Un polygone régulier a tous ses angles égaux."
+    },
+    {
+      "id": "ceb-2026-so-l3-q20d",
+      "livret": 3,
+      "numero": "20d",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Je n'ai qu'un seul angle droit. Je suis un…",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-quadrilateres",
+      "choix": [
+        "rectangle",
+        "pentagone régulier",
+        "triangle rectangle",
+        "losange"
+      ],
+      "reponse": 2,
+      "explication": "Le triangle rectangle a un seul angle droit ; le rectangle en a quatre."
+    },
+    {
+      "id": "ceb-2026-so-l3-q21",
+      "livret": 3,
+      "numero": "21",
+      "domaine": "ma.geometrie",
+      "type": "trous",
+      "enonce": "Le développement d'un solide montre 4 faces triangulaires (c'est une pyramide à base triangulaire). Complète.",
+      "points": 2,
+      "corrigeVerifie": false,
+      "texte": "Ce solide possède 4 faces, {1} arêtes et {2} sommets.",
+      "reponse": [
+        [
+          "6"
+        ],
+        [
+          "4"
+        ]
+      ],
+      "souple": true,
+      "explication": "Une pyramide à base triangulaire (tétraèdre) : 4 faces, 6 arêtes, 4 sommets."
+    },
+    {
+      "id": "ceb-2026-so-l4-q1",
       "livret": 4,
       "numero": "1",
       "domaine": "ma.grandeurs",
@@ -464,7 +451,7 @@
       "explication": "150 m est une longueur, 30 min une durée, 3,5 t une masse (en tonnes)."
     },
     {
-      "id": "ceb-2026-tc-l4-q2",
+      "id": "ceb-2026-so-l4-q2",
       "livret": 4,
       "numero": "2",
       "domaine": "ma.grandeurs",
@@ -478,7 +465,7 @@
       "explication": "Pour 1 hectare : 80 ÷ 4 = 20 kg. Pour 10 hectares : 20 × 10 = 200 kg."
     },
     {
-      "id": "ceb-2026-tc-l4-q3",
+      "id": "ceb-2026-so-l4-q3",
       "livret": 4,
       "numero": "3",
       "domaine": "ma.grandeurs",
@@ -499,7 +486,7 @@
       "explication": "De 9 h 47 à 10 h 00 : 13 min. De 10 h 00 à 11 h 12 : 1 h 12 min. Total : 1 h 25 min."
     },
     {
-      "id": "ceb-2026-tc-l4-q4a",
+      "id": "ceb-2026-so-l4-q4a",
       "livret": 4,
       "numero": "4a",
       "domaine": "ma.grandeurs",
@@ -518,7 +505,7 @@
       "explication": "Un smartphone pèse environ 280 grammes : 280 kg serait le poids d'une moto !"
     },
     {
-      "id": "ceb-2026-tc-l4-q4b",
+      "id": "ceb-2026-so-l4-q4b",
       "livret": 4,
       "numero": "4b",
       "domaine": "ma.grandeurs",
@@ -537,7 +524,7 @@
       "explication": "0,7 l = 70 cl : c'est une gourde. 0,7 cl serait une seule goutte ou presque."
     },
     {
-      "id": "ceb-2026-tc-l4-q4c",
+      "id": "ceb-2026-so-l4-q4c",
       "livret": 4,
       "numero": "4c",
       "domaine": "ma.grandeurs",
@@ -556,7 +543,7 @@
       "explication": "Une fourmi mesure environ 7 mm (moins d'un centimètre)."
     },
     {
-      "id": "ceb-2026-tc-l4-q5",
+      "id": "ceb-2026-so-l4-q5",
       "livret": 4,
       "numero": "5",
       "domaine": "ma.grandeurs",
@@ -570,7 +557,7 @@
       "explication": "Volume : 6 dm × 2,5 dm × 4 dm = 60 dm³ = 60 l. Les 3/4 : 60 ÷ 4 × 3 = 45 l."
     },
     {
-      "id": "ceb-2026-tc-l4-q7",
+      "id": "ceb-2026-so-l4-q7",
       "livret": 4,
       "numero": "7",
       "domaine": "ma.grandeurs",
@@ -599,7 +586,7 @@
       "explication": "Des tours de piste : une longueur. Des achats : un coût. Un parquet couvre une surface : une aire."
     },
     {
-      "id": "ceb-2026-tc-l4-q10",
+      "id": "ceb-2026-so-l4-q10",
       "livret": 4,
       "numero": "10",
       "domaine": "ma.grandeurs",
@@ -618,7 +605,7 @@
       "explication": "70 + 20 = 90 min = 1 h 30. 16 h 45 + 1 h 30 = 18 h 15."
     },
     {
-      "id": "ceb-2026-tc-l4-q11",
+      "id": "ceb-2026-so-l4-q11",
       "livret": 4,
       "numero": "11",
       "domaine": "ma.grandeurs",
@@ -641,7 +628,7 @@
       "explication": "Page (0,1 mm) < carte d'identité (moins de 1 mm) < pièce de 2 € (environ 2 mm) < dictionnaire."
     },
     {
-      "id": "ceb-2026-tc-l4-q13",
+      "id": "ceb-2026-so-l4-q13",
       "livret": 4,
       "numero": "13",
       "domaine": "ma.grandeurs",
@@ -664,7 +651,7 @@
       "explication": "150 % de 500 = 500 × 150 ÷ 100 = 750. 5 % de 75 = 75 × 5 ÷ 100 = 3,75."
     },
     {
-      "id": "ceb-2026-tc-l4-q14",
+      "id": "ceb-2026-so-l4-q14",
       "livret": 4,
       "numero": "14",
       "domaine": "ma.grandeurs",
@@ -697,7 +684,7 @@
       "explication": "1 m³ = 1 000 dm³ ; 1 min = 60 s ; 1 t = 1 000 kg ; 1 km = 10 hm ; 1 l = 10 dl."
     },
     {
-      "id": "ceb-2026-tc-l4-q15",
+      "id": "ceb-2026-so-l4-q15",
       "livret": 4,
       "numero": "15",
       "domaine": "ma.grandeurs",
@@ -723,7 +710,7 @@
       "explication": "1 000 km = 10 × 100 km → 60 l. 25 km = le quart de 100 km → 6 ÷ 4 = 1,5 l. 1,2 l = 6 ÷ 5 → 100 ÷ 5 = 20 km."
     },
     {
-      "id": "ceb-2026-tc-l4-q16a",
+      "id": "ceb-2026-so-l4-q16a",
       "livret": 4,
       "numero": "16a",
       "domaine": "ma.grandeurs",
@@ -742,7 +729,7 @@
       "explication": "3 mg × 100 = 300 mg. (300 cg = 3 000 mg ; 300 dg = 30 000 mg ; 3 g = 3 000 mg.)"
     },
     {
-      "id": "ceb-2026-tc-l4-q16b",
+      "id": "ceb-2026-so-l4-q16b",
       "livret": 4,
       "numero": "16b",
       "domaine": "ma.grandeurs",
@@ -761,7 +748,7 @@
       "explication": "0,45 dal × 10 = 4,5 dal = 45 l."
     },
     {
-      "id": "ceb-2026-tc-l4-q18a",
+      "id": "ceb-2026-so-l4-q18a",
       "livret": 4,
       "numero": "18a",
       "domaine": "ma.grandeurs",
@@ -780,7 +767,7 @@
       "explication": "On multiplie par 5 : le polygone a 5 côtés égaux. C'est un pentagone régulier."
     },
     {
-      "id": "ceb-2026-tc-l4-q18b",
+      "id": "ceb-2026-so-l4-q18b",
       "livret": 4,
       "numero": "18b",
       "domaine": "ma.grandeurs",
@@ -799,596 +786,537 @@
       "explication": "Deux longueurs différentes, chacune deux fois : les côtés opposés sont égaux deux à deux. C'est un parallélogramme."
     },
     {
-      "id": "ceb-2026-tc-l4-q20",
+      "id": "ceb-2026-so-l4-q20",
       "livret": 4,
       "numero": "20",
+      "domaine": "ma.donnees",
+      "type": "numerique",
+      "enonce": "Florentin a fait 15 456, 13 961, 14 785, 12 050, 9 220, 18 782 et 8 916 pas du lundi au dimanche (total : 93 170 pas). Combien de pas a-t-il faits en moyenne chaque jour ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-moyenne",
+      "reponse": 13310,
+      "unite": "pas",
+      "explication": "Moyenne = total ÷ nombre de jours = 93 170 ÷ 7 = 13 310 pas."
+    },
+    {
+      "id": "ceb-2026-so-l4-q21",
+      "livret": 4,
+      "numero": "21",
       "domaine": "ma.grandeurs",
       "type": "numerique",
-      "enonce": "Une famille de 2 adultes et 2 enfants de 11 ans et 6 ans fait l'aller-retour Liège-Maastricht en bateau le même jour. Observe le tarif. Combien paie la famille au total ?",
+      "enonce": "Tarif du bateau Liège-Maastricht, par trajet : adulte 12 €, enfant de 12 à 18 ans 9 €, enfant de moins de 12 ans 6 € ; –10 % sur le total pour un aller-retour le même jour. Une famille de 2 adultes et 2 enfants de 11 ans et 6 ans fait l'aller-retour en bateau. Combien paie-t-elle au total ?",
       "points": 3,
       "corrigeVerifie": false,
       "fiche": "ma-pourcentages",
-      "documents": [
-        "croisiere"
-      ],
       "unite": "€",
       "reponse": 64.8,
       "explication": "Un trajet : 2 × 12 € + 2 × 6 € = 36 € (les deux enfants ont moins de 12 ans). Aller-retour : 72 €. Réduction de 10 % : 72 − 7,20 = 64,80 €."
     },
     {
-      "id": "ceb-2026-tc-l4-q21",
+      "id": "ceb-2026-so-l4-q22a",
       "livret": 4,
-      "numero": "21",
-      "domaine": "ma.grandeurs",
+      "numero": "22a",
+      "domaine": "ma.donnees",
       "type": "numerique",
-      "enonce": "Observe la carte. Calcule, en kilomètres, la distance réelle en ligne droite entre Liège et Maastricht.",
+      "enonce": "Altitude maximale des massifs montagneux en France : Alpes 4 808 m, Pyrénées 3 298 m, Massif central 1 886 m, Jura 1 720 m, Vosges 1 424 m. Combien de massifs ont une altitude maximale supérieure à 2 000 m ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "ma-echelle",
-      "documents": [
-        "croisiere"
-      ],
-      "unite": "km",
-      "reponse": 26,
-      "explication": "Échelle 1/400 000 : 1 cm = 400 000 cm = 4 km. 6,5 cm × 4 = 26 km."
+      "reponse": 2,
+      "explication": "Seuls les Alpes (4 808 m) et les Pyrénées (3 298 m) dépassent 2 000 m."
     },
     {
-      "id": "ceb-2026-tc-l4-q24",
+      "id": "ceb-2026-so-l4-q24",
       "livret": 4,
       "numero": "24",
       "domaine": "ma.grandeurs",
-      "type": "numerique",
-      "enonce": "Écris sous forme de nombre décimal : 1 kg et 1/2 kg = ? kg",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "ma-fractions",
-      "unite": "kg",
-      "reponse": 1.5,
-      "explication": "1/2 kg = 0,5 kg. 1 + 0,5 = 1,5 kg."
-    },
-    {
-      "id": "ceb-2026-tc-l4-q26",
-      "livret": 4,
-      "numero": "26",
-      "domaine": "ma.grandeurs",
-      "type": "grille",
-      "enonce": "Quelle grandeur faut-il calculer pour chaque action ?",
+      "type": "trous",
+      "enonce": "Complète chaque expression par le bon préfixe (déca, déci, hecto, kilo, centi, milli).",
       "points": 3,
       "corrigeVerifie": false,
-      "fiche": "ma-aires-perimetres",
-      "lignes": [
-        "Repeindre un mur",
-        "Placer une clôture autour d'une piscine",
-        "Remplir un bac à sable"
+      "fiche": "ma-conversions",
+      "texte": "Un {1}mètre équivaut à 100 m.  ·  Un {2}gramme équivaut à 0,001 g.  ·  Un {3}litre équivaut à 10 ml.",
+      "reponse": [
+        [
+          "hecto"
+        ],
+        [
+          "milli"
+        ],
+        [
+          "centi"
+        ]
       ],
-      "colonnes": [
-        "Volume (m³)",
-        "Aire (m²)",
-        "Périmètre (m)"
+      "souple": true,
+      "explication": "hecto = 100 ; milli = 0,001 ; centi = 0,01 (1 cl = 10 ml)."
+    },
+    {
+      "id": "ceb-2026-so-l5-q1a",
+      "livret": 5,
+      "numero": "1a",
+      "domaine": "hg.histoire",
+      "type": "association",
+      "enonce": "La nature des documents : associe chaque trace du passé à sa nature.",
+      "points": 5,
+      "corrigeVerifie": false,
+      "documents": [
+        "nature-1",
+        "nature-2"
+      ],
+      "gauche": [
+        "Document 1 : Le bain (illustration d'un manuscrit)",
+        "Document 2 : Dame romaine à sa toilette",
+        "Document 3 : Femme se peignant (Renoir)",
+        "Document 4 : Une salle de bain, 2025",
+        "Document 5 : La Toilette (Louis Boizot)"
+      ],
+      "droite": [
+        "Enluminure",
+        "Bas-relief",
+        "Peinture",
+        "Photographie",
+        "Sculpture",
+        "Monument"
       ],
       "reponse": [
-        1,
-        2,
-        0
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ]
       ],
-      "explication": "Peindre couvre une surface (aire, m²). Une clôture fait le tour (périmètre, m). Remplir un bac demande un volume (m³)."
+      "explication": "Une image peinte dans un manuscrit est une enluminure. Une sculpture qui ressort d'un fond est un bas-relief. Renoir peint ; 2025 : une photographie ; Boizot a réalisé une statuette : une sculpture."
     },
     {
-      "id": "ceb-2026-tc-l4-q27",
-      "livret": 4,
-      "numero": "27",
-      "domaine": "ma.grandeurs",
-      "type": "qcm",
-      "enonce": "Trois emballages : A = 125 g pour 2,60 € ; B = 200 g pour 3,90 € ; C = 125 g pour 2,80 €. Quel produit est le moins cher au kilogramme ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "ma-monnaie",
-      "choix": [
-        "A",
-        "B",
-        "C"
-      ],
-      "reponse": 1,
-      "explication": "Prix au kg : A = 2,60 × 8 = 20,80 € ; B = 3,90 × 5 = 19,50 € ; C = 2,80 × 8 = 22,40 €. B est le moins cher."
-    },
-    {
-      "id": "ceb-2026-tc-l4-q28",
-      "livret": 4,
-      "numero": "28",
-      "domaine": "ma.grandeurs",
-      "type": "qcm",
-      "enonce": "Dans quelle phrase est exprimée une durée ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "ma-durees",
-      "choix": [
-        "Au coup de sifflet, les coureurs démarrent.",
-        "Soudain, la fenêtre claque.",
-        "Au réveil, je reste 10 minutes dans mon lit.",
-        "Le film commence à 20 h 30."
-      ],
-      "reponse": 2,
-      "explication": "« 10 minutes » dit combien de temps ça dure. « 20 h 30 » est un moment, pas une durée."
-    },
-    {
-      "id": "ceb-2026-tc-l4-q29",
-      "livret": 4,
-      "numero": "29",
-      "domaine": "ma.grandeurs",
-      "type": "numerique",
-      "enonce": "La distance par voie navigable entre deux ports est de 33 kilomètres. Il faut 2 h 30 pour faire ce trajet en bateau. Quelle est la vitesse moyenne du bateau ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "ma-vitesse",
-      "unite": "km/h",
-      "reponse": 13.2,
-      "explication": "2 h 30 = 2,5 h. Vitesse = 33 ÷ 2,5 = 13,2 km/h."
-    },
-    {
-      "id": "ceb-2026-tc-l4-q30",
-      "livret": 4,
-      "numero": "30",
-      "domaine": "ma.grandeurs",
-      "type": "ouverte",
-      "enonce": "Écris la formule du calcul de l'aire d'un carré et d'un triangle.",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "ma-aires-perimetres",
-      "reponseModele": "Carré : côté × côté. Triangle : (base × hauteur) ÷ 2."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q1",
+      "id": "ceb-2026-so-l5-q1b",
       "livret": 5,
-      "numero": "1",
+      "numero": "1b",
       "domaine": "hg.histoire",
-      "type": "trous",
-      "enonce": "Dans le portfolio, tu trouves la couverture et 3 pages d'un manuel d'histoire. À l'aide de la table des matières et de l'index, écris un numéro de page où trouver chaque information.",
+      "type": "grille",
+      "enonce": "Coche la période conventionnelle de chaque document.",
       "points": 3,
       "corrigeVerifie": false,
       "fiche": "hg-periodes",
       "documents": [
-        "merov-tdm",
-        "merov-index"
+        "nature-1",
+        "nature-2"
       ],
-      "texte": "La façon dont les Mérovingiens se soignaient : page {1}  ·  Les fibules que portaient les Mérovingiens : page {2}  ·  Le scramasaxe et la francisque : page {3}",
-      "reponse": [
-        [
-          "16"
-        ],
-        [
-          "13",
-          "14"
-        ],
-        [
-          "19",
-          "26"
-        ]
+      "lignes": [
+        "Document 2 (fin IIe - début IIIe siècle)",
+        "Document 4 (2025)",
+        "Document 5 (1775)"
       ],
-      "souple": true,
-      "explication": "Table des matières : « Se soigner » p. 16. Index : Fibule 13, 14 ; Scramasaxe et Francisque 19, 26."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q2",
-      "livret": 5,
-      "numero": "2",
-      "domaine": "hg.histoire",
-      "type": "ouverte",
-      "enonce": "Sur une frise de l'an 1 à 900, trace un trait bleu pour le début de la romanisation dans nos régions, puis un trait rouge pour la date du sacre de Charlemagne (800).",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "numerisable": false
-    },
-    {
-      "id": "ceb-2026-tc-l5-q3",
-      "livret": 5,
-      "numero": "3",
-      "domaine": "hg.histoire",
-      "type": "qcm",
-      "enonce": "Dans le cimetière mérovingien de Vieuxville, on a retrouvé de nombreuses tombes datant du 5e au 7e siècle. Durant quelle période conventionnelle ont-elles été réalisées ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "choix": [
+      "colonnes": [
         "Préhistoire",
+        "Antiquité",
         "Moyen Âge",
         "Temps modernes",
         "Époque contemporaine"
       ],
-      "reponse": 1,
-      "explication": "Le Moyen Âge va de 476 à 1492 : les 5e, 6e et 7e siècles en font partie."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q4",
-      "livret": 5,
-      "numero": "4",
-      "domaine": "hg.histoire",
-      "type": "trous",
-      "enonce": "Lis la page « Des rites funéraires ». Écris la lettre de l'extrait (A, B, C ou D) qui permet d'affirmer chaque phrase.",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "fr-lire-intention",
-      "documents": [
-        "merov-rites"
-      ],
-      "texte": "Les Mérovingiens partageaient un repas avec leurs défunts (vraie) : extrait {1}  ·  Le cimetière de Vieuxville se situe en province de Luxembourg (fausse) : extrait {2}  ·  Les Mérovingiens plaçaient leurs tombes à l'écart de leurs lieux de vie (vraie) : extrait {3}",
       "reponse": [
-        [
-          "D"
-        ],
-        [
-          "A"
-        ],
-        [
-          "B"
-        ]
-      ],
-      "souple": true,
-      "explication": "D parle du repas partagé avec le défunt ; A dit que Vieuxville est en province de Liège ; B parle de l'isolement des tombes."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q5",
-      "livret": 5,
-      "numero": "5",
-      "domaine": "hg.histoire",
-      "type": "trous",
-      "enonce": "Sur une frise chronologique (An 1, 1492, 2026), les lettres A à E correspondent aux cinq périodes conventionnelles, dans l'ordre. Complète.",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "texte": "A = {1}  ·  E = {2}  ·  Date du passage de la période B à la période C : {3}",
-      "reponse": [
-        [
-          "Préhistoire"
-        ],
-        [
-          "Époque contemporaine",
-          "epoque contemporaine"
-        ],
-        [
-          "476"
-        ]
-      ],
-      "souple": true,
-      "explication": "A Préhistoire, B Antiquité, C Moyen Âge, D Temps modernes, E Époque contemporaine. On passe de l'Antiquité au Moyen Âge en 476."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q6",
-      "livret": 5,
-      "numero": "6",
-      "domaine": "hg.histoire",
-      "type": "grille",
-      "enonce": "Coche la date qui correspond à chaque fait marquant de l'histoire.",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "lignes": [
-        "La Révolution française",
-        "L'arrivée de Christophe Colomb aux Amériques",
-        "L'invention de l'écriture au Proche-Orient"
-      ],
-      "colonnes": [
-        "Vers 3500 av. J.-C.",
-        "An 1",
-        "476",
-        "1492",
-        "1789"
-      ],
-      "reponse": [
+        1,
         4,
-        3,
-        0
-      ],
-      "explication": "Révolution française : 1789. Christophe Colomb : 1492. Invention de l'écriture : vers 3500 av. J.-C."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q7a",
-      "livret": 5,
-      "numero": "7a",
-      "domaine": "hg.histoire",
-      "type": "qcm",
-      "enonce": "Observe la carte de la diffusion du christianisme. Au cours de quelle période conventionnelle le christianisme est-il apparu dans nos régions ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "documents": [
-        "christianisme"
-      ],
-      "choix": [
-        "Préhistoire",
-        "Antiquité",
-        "Moyen Âge",
-        "Temps modernes"
-      ],
-      "reponse": 1,
-      "explication": "Nos régions (Bruxelles) sont en rouge : de la naissance de Jésus-Christ à la fin du 5e siècle. C'est l'Antiquité."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q7b",
-      "livret": 5,
-      "numero": "7b",
-      "domaine": "hg.histoire",
-      "type": "qcm",
-      "enonce": "Quel moment clé peut expliquer une large diffusion du christianisme dans le monde ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "hg-periodes",
-      "documents": [
-        "christianisme"
-      ],
-      "choix": [
-        "La période gallo-romaine dans nos régions",
-        "Le Haut Moyen Âge dans nos régions",
-        "Les premières colonisations par les Européens",
-        "L'après 1945"
-      ],
-      "reponse": 2,
-      "explication": "Du 16e au 19e siècle, les Européens colonisent l'Amérique, l'Afrique et l'Océanie : le christianisme s'y répand (en jaune sur la carte)."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q8",
-      "livret": 5,
-      "numero": "8",
-      "domaine": "hg.histoire",
-      "type": "ouverte",
-      "enonce": "Observe les deux photos de classes (vers 1920 et en 2026). Écris trois points communs qui montrent qu'il s'agit bien d'une classe, puis un objet de la classe de 2026 qu'on ne voit pas sur la photo de 1920.",
-      "points": 4,
-      "corrigeVerifie": false,
-      "documents": [
-        "classes"
-      ],
-      "reponseModele": "Points communs : des bancs ou des tables d'élèves, un tableau, un enseignant, des élèves assis… Objet présent seulement en 2026 : par exemple un tableau interactif, un ordinateur ou un écran."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q9",
-      "livret": 5,
-      "numero": "9",
-      "domaine": "hg.histoire",
-      "type": "qcm",
-      "enonce": "Un élève fait un travail sur l'immigration italienne en Belgique après 1945. Quel document traite réellement de l'immigration italienne en Belgique ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "documents": [
-        "recherche-1",
-        "recherche-2"
-      ],
-      "choix": [
-        "Document 1 (affiche pour les ouvriers belges)",
-        "Document 2 (nombre d'habitants italiens en Belgique)",
-        "Document 3 (carte de l'Italie)",
-        "Document 4 (accord belgo-marocain)"
-      ],
-      "reponse": 1,
-      "explication": "Seul le graphique montre les Italiens vivant en Belgique. L'affiche vise les ouvriers belges, la carte ne parle que de l'Italie, l'article parle des travailleurs marocains."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q11",
-      "livret": 5,
-      "numero": "11",
-      "domaine": "hg.geographie",
-      "type": "trous",
-      "enonce": "Observe la carte de la population dans le monde (attention : le nord est à gauche).",
-      "points": 4,
-      "corrigeVerifie": false,
-      "fiche": "hg-globe",
-      "documents": [
-        "population"
-      ],
-      "texte": "Hémisphère qui compte le moins d'agglomérations de 15 à 20 millions d'habitants : hémisphère {1}  ·  Pôle le plus proche de l'agglomération la plus peuplée d'Afrique : pôle {2}  ·  Continent qui compte le plus d'agglomérations d'au moins 15 millions d'habitants : {3}  ·  Continent des agglomérations les plus peuplées du monde : {4}",
-      "reponse": [
-        [
-          "Sud",
-          "austral"
-        ],
-        [
-          "Nord"
-        ],
-        [
-          "Asie",
-          "l'Asie"
-        ],
-        [
-          "Asie",
-          "l'Asie"
-        ]
-      ],
-      "souple": true,
-      "explication": "Une seule agglomération de 15 à 20 millions (Kinshasa) est au sud de l'équateur. La plus peuplée d'Afrique est Le Caire, au nord. L'Asie compte le plus de géantes, dont les trois de plus de 30 millions (Tokyo, Shanghai, Delhi)."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q12",
-      "livret": 5,
-      "numero": "12",
-      "domaine": "hg.geographie",
-      "type": "trous",
-      "enonce": "Observe la carte des zones thermiques et sa légende.",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "hg-globe",
-      "documents": [
-        "zones"
-      ],
-      "texte": "La zone tempérée est la zone {1}  ·  La zone chaude est la zone {2}",
-      "reponse": [
-        [
-          "2"
-        ],
-        [
-          "3"
-        ]
-      ],
-      "souple": true,
-      "explication": "Zone 1 (bleu) : froide. Zone 2 (jaune) : tempérée. Zone 3 (rose) : chaude."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q13",
-      "livret": 5,
-      "numero": "13",
-      "domaine": "hg.geographie",
-      "type": "trous",
-      "enonce": "Écris le nom de l'océan désigné par chaque lettre sur la carte des zones thermiques.",
-      "points": 4,
-      "corrigeVerifie": false,
-      "fiche": "hg-globe",
-      "documents": [
-        "zones"
-      ],
-      "texte": "A : océan {1}  ·  C : océan {2}  ·  D : océan {3}  ·  E : océan {4}",
-      "reponse": [
-        [
-          "Pacifique"
-        ],
-        [
-          "Indien"
-        ],
-        [
-          "Austral",
-          "Antarctique"
-        ],
-        [
-          "Arctique",
-          "Glacial Arctique"
-        ]
-      ],
-      "souple": true,
-      "explication": "La carte est tournée (nord à gauche). A est à l'ouest de l'Amérique : Pacifique. C, au sud de l'Asie et à l'est de l'Afrique : Indien. D, tout au sud : Austral. E, tout au nord : Arctique."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q14",
-      "livret": 5,
-      "numero": "14",
-      "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Un élève affirme : « Sur la carte, la lettre B désigne l'océan Atlantique qui sépare l'Amérique de l'Asie. » Cette affirmation n'est pas correcte. Pourquoi ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "hg-globe",
-      "documents": [
-        "zones"
-      ],
-      "reponseModele": "L'océan Atlantique sépare l'Amérique de l'Europe et de l'Afrique, pas de l'Asie."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q15",
-      "livret": 5,
-      "numero": "15",
-      "domaine": "hg.geographie",
-      "type": "grille",
-      "enonce": "Sur la carte des zones thermiques (nord à gauche), comment s'appellent les lignes imaginaires F et G ?",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "hg-globe",
-      "documents": [
-        "zones"
-      ],
-      "lignes": [
-        "Ligne F",
-        "Ligne G"
-      ],
-      "colonnes": [
-        "Cercle polaire arctique",
-        "Tropique du Capricorne",
-        "Tropique du Cancer",
-        "Équateur"
-      ],
-      "reponse": [
-        2,
         3
       ],
-      "explication": "G, au milieu de la zone chaude, est l'équateur. F est du côté nord (à gauche) : c'est le tropique du Cancer."
+      "explication": "IIe-IIIe siècle : Antiquité (avant 476). 2025 : Époque contemporaine (après 1789). 1775 : Temps modernes (entre 1492 et 1789)."
     },
     {
-      "id": "ceb-2026-tc-l5-q16",
+      "id": "ceb-2026-so-l5-q1c",
       "livret": 5,
-      "numero": "16",
+      "numero": "1c",
+      "domaine": "hg.histoire",
+      "type": "texte_court",
+      "enonce": "Tous ces documents traitent d'un même thème. Lequel ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "documents": [
+        "nature-1",
+        "nature-2"
+      ],
+      "reponse": [
+        "la toilette",
+        "toilette",
+        "l'hygiène",
+        "hygiene",
+        "l'hygiene",
+        "hygiène",
+        "se laver",
+        "la propreté",
+        "propreté",
+        "le bain",
+        "se coiffer"
+      ],
+      "souple": true,
+      "explication": "On y voit un bain, une femme qu'on coiffe, une salle de bain : le thème est la toilette (l'hygiène)."
+    },
+    {
+      "id": "ceb-2026-so-l5-q2",
+      "livret": 5,
+      "numero": "2",
+      "domaine": "hg.histoire",
+      "type": "qcm_multi",
+      "enonce": "« La première enceinte de Bruxelles remonte au début du 13e siècle. Les premiers habitants s'installent autour d'un château fort construit au 10e siècle sur une île de la Senne. Pour se protéger, ils construisent une enceinte faite de terre et de pierres, longue de 4 km, avec une quarantaine de tours et 7 portes. » Photo : la tour Anneessens, à Bruxelles, vestige de la première enceinte. Coche les trois informations que tu peux lire ou voir.",
+      "points": 3,
+      "corrigeVerifie": false,
+      "choix": [
+        "Les matériaux utilisés pour la construction de cette enceinte.",
+        "La durée de construction du château fort.",
+        "La ville où se trouve ce vestige.",
+        "L'enceinte a été construite pour se protéger des Vikings.",
+        "La hauteur de la tour.",
+        "Le nom de ce vestige."
+      ],
+      "reponse": [
+        0,
+        2,
+        5
+      ],
+      "explication": "Le document donne les matériaux (terre et pierres), la ville (Bruxelles) et le nom du vestige (tour Anneessens). Rien sur la durée des travaux, les Vikings ni la hauteur."
+    },
+    {
+      "id": "ceb-2026-so-l5-q3",
+      "livret": 5,
+      "numero": "3",
       "domaine": "hg.geographie",
+      "type": "trous",
+      "enonce": "En Belgique, le solstice d'hiver (vers le 21 décembre) est la journée la plus courte, le solstice d'été (vers le 21 juin) la plus longue ; aux équinoxes (vers le 21 mars et le 21 septembre), le jour dure environ 12 heures. Écris la date qui convient : 26 juin, 12 septembre, 18 décembre ou 14 février.",
+      "points": 3,
+      "corrigeVerifie": false,
+      "texte": "Lever 8 h 40, coucher 16 h 37 (jour de 7 h 57) : {1}  ·  Lever 5 h 30, coucher 22 h 00 (jour de 16 h 30) : {2}  ·  Lever 7 h 13, coucher 20 h 04 (jour de 12 h 51) : {3}",
+      "reponse": [
+        [
+          "18 décembre",
+          "18 decembre"
+        ],
+        [
+          "26 juin"
+        ],
+        [
+          "12 septembre"
+        ]
+      ],
+      "souple": true,
+      "explication": "Le jour le plus court est proche du solstice d'hiver (18 décembre), le plus long proche du solstice d'été (26 juin), et un jour d'environ 12 heures est proche de l'équinoxe (12 septembre)."
+    },
+    {
+      "id": "ceb-2026-so-l5-q4a",
+      "livret": 5,
+      "numero": "4a",
+      "domaine": "hg.histoire",
+      "type": "trous",
+      "enonce": "Lis les fiches sur les Carolingiens et complète l'arbre généalogique de Charlemagne (742 - 814).",
+      "points": 5,
+      "corrigeVerifie": false,
+      "fiche": "hg-dates-cles",
+      "documents": [
+        "carolingiens"
+      ],
+      "texte": "Son père Pépin le Bref : ({1} - {2})  ·  Son fils qui lui succède : {3} (778 - 840)  ·  Né en 795, mort en 855 : {4}  ·  Charles le Chauve : ({5} - {6})  ·  Son frère, né en 751, mort en 771 : {7}",
+      "reponse": [
+        [
+          "714"
+        ],
+        [
+          "768"
+        ],
+        [
+          "Louis le Pieux",
+          "Louis Ier",
+          "Louis 1er"
+        ],
+        [
+          "Lothaire",
+          "Lothaire Ier",
+          "Lothaire 1er"
+        ],
+        [
+          "826"
+        ],
+        [
+          "877"
+        ],
+        [
+          "Carloman",
+          "Carloman Ier",
+          "Carloman 1er"
+        ]
+      ],
+      "souple": true,
+      "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne."
+    },
+    {
+      "id": "ceb-2026-so-l5-q4c",
+      "livret": 5,
+      "numero": "4c",
+      "domaine": "hg.histoire",
       "type": "ouverte",
-      "enonce": "Sur les photos aériennes de Baulers (1994 et 2006), trace une croix rouge à un même endroit où l'occupation du sol a changé, puis décris cette occupation aux deux dates.",
-      "points": 3,
+      "enonce": "Un élève affirme : « Charlemagne aurait pu rencontrer Charles le Chauve. » C'est faux. Pourquoi ?",
+      "points": 1,
       "corrigeVerifie": false,
+      "fiche": "hg-dates-cles",
       "documents": [
-        "baulers"
+        "carolingiens"
       ],
-      "numerisable": false
+      "reponseModele": "Charlemagne est mort en 814 et Charles le Chauve est né en 826 : ils n'ont jamais vécu en même temps."
     },
     {
-      "id": "ceb-2026-tc-l5-q18",
+      "id": "ceb-2026-so-l5-q4d",
       "livret": 5,
-      "numero": "18",
+      "numero": "4d",
+      "domaine": "hg.histoire",
+      "type": "trous",
+      "enonce": "La vie de Charlemagne (742 - 814) s'étend sur deux siècles. Lesquels ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "hg-siecles",
+      "documents": [
+        "carolingiens"
+      ],
+      "texte": "Le {1} siècle et le {2} siècle.",
+      "reponse": [
+        [
+          "8e",
+          "8",
+          "VIIIe",
+          "8ème",
+          "huitième"
+        ],
+        [
+          "9e",
+          "9",
+          "IXe",
+          "9ème",
+          "neuvième"
+        ]
+      ],
+      "souple": true,
+      "explication": "742 est au 8e siècle (701-800) ; 814 est au 9e siècle (801-900)."
+    },
+    {
+      "id": "ceb-2026-so-l5-q4e",
+      "livret": 5,
+      "numero": "4e",
+      "domaine": "hg.histoire",
+      "type": "qcm",
+      "enonce": "Charlemagne a vécu au Moyen Âge. Quel événement a eu lieu pendant cette période ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "hg-periodes",
+      "choix": [
+        "L'arrivée des Vikings dans nos régions.",
+        "L'invention de la machine à vapeur.",
+        "L'indépendance de la Belgique.",
+        "La Seconde Guerre mondiale."
+      ],
+      "reponse": 0,
+      "explication": "Les Vikings arrivent dans nos régions au 9e siècle, au Moyen Âge. La machine à vapeur (18e siècle), l'indépendance de la Belgique (1830) et la Seconde Guerre mondiale (1940-1945) sont plus tardives."
+    },
+    {
+      "id": "ceb-2026-so-l5-q5a",
+      "livret": 5,
+      "numero": "5a",
       "domaine": "hg.geographie",
-      "type": "grille",
-      "enonce": "Lis les informations sur l'effet de serre. Quel gaz à effet de serre est produit par chaque activité ?",
+      "type": "trous",
+      "enonce": "Observe les cartes de la construction de l'Union européenne. Écris le nom d'un pays…",
       "points": 3,
       "corrigeVerifie": false,
-      "fiche": "sc-energie",
       "documents": [
-        "effet-serre-1",
-        "effet-serre-2"
+        "ue"
       ],
-      "lignes": [
-        "L'élevage industriel",
-        "Les déplacements en voiture thermique (essence, diesel)",
-        "Le chauffage au gaz naturel d'un bâtiment"
+      "texte": "qui fait partie de l'UE en 1958 : {1}  ·  qui en fait partie en 1986 mais pas en 1973 : {2}  ·  qui en fait partie en 1973 mais pas en 1958 : {3}",
+      "reponse": [
+        [
+          "Belgique",
+          "France",
+          "Allemagne",
+          "Italie",
+          "Pays-Bas",
+          "Luxembourg"
+        ],
+        [
+          "Espagne",
+          "Portugal",
+          "Grèce",
+          "Grece"
+        ],
+        [
+          "Royaume-Uni",
+          "Irlande",
+          "Danemark",
+          "Angleterre",
+          "Grande-Bretagne"
+        ]
       ],
-      "colonnes": [
-        "Dioxyde de carbone (CO₂)",
-        "Méthane (CH₄)",
-        "Protoxyde d'azote (N₂O)"
+      "souple": true,
+      "explication": "1958 : Belgique, France, Allemagne, Italie, Pays-Bas, Luxembourg. Entrent en 1973 : Royaume-Uni, Irlande, Danemark. Entre 1973 et 1986 : Grèce, Espagne, Portugal."
+    },
+    {
+      "id": "ceb-2026-so-l5-q5b",
+      "livret": 5,
+      "numero": "5b",
+      "domaine": "hg.geographie",
+      "type": "qcm_multi",
+      "enonce": "Coche les deux pays qui, en 2013, ne font pas partie de l'Union européenne.",
+      "points": 1,
+      "corrigeVerifie": false,
+      "documents": [
+        "ue"
+      ],
+      "choix": [
+        "Italie",
+        "Suisse",
+        "Norvège",
+        "France",
+        "Pologne"
       ],
       "reponse": [
         1,
-        0,
-        0
+        2
       ],
-      "explication": "La digestion des ruminants dégage du méthane. Brûler du pétrole ou du gaz (combustibles fossiles) produit du CO₂."
+      "explication": "La Suisse et la Norvège ne sont pas membres de l'Union européenne."
     },
     {
-      "id": "ceb-2026-tc-l5-q19",
+      "id": "ceb-2026-so-l5-q6a",
       "livret": 5,
-      "numero": "19",
+      "numero": "6a",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Une élève affirme : « Ma famille participe à la lutte contre le réchauffement climatique parce qu'elle a remplacé les déplacements en voiture thermique par des déplacements à vélo. » C'est correct. Pourquoi ?",
+      "type": "texte_court",
+      "enonce": "Carte du nombre d'habitants par commune : écris le nom d'une ville wallonne de 50 000 à 75 000 habitants, située plutôt à l'ouest de Namur.",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "sc-energie",
+      "fiche": "hg-belgique",
       "documents": [
-        "effet-serre-1"
-      ],
-      "reponseModele": "Le vélo ne brûle pas de pétrole : il ne produit pas de dioxyde de carbone (CO₂), un gaz à effet de serre."
-    },
-    {
-      "id": "ceb-2026-tc-l5-q20",
-      "livret": 5,
-      "numero": "20",
-      "domaine": "hg.geographie",
-      "type": "grille",
-      "enonce": "Densité de population (hab./km²) : Anvers 686, Flandre orientale 564, Namur 138, Hainaut 358. Quel symbole de la légende faut-il mettre pour chaque province ?",
-      "points": 4,
-      "corrigeVerifie": false,
-      "fiche": "hg-densite",
-      "lignes": [
-        "Anvers (686)",
-        "Flandre orientale (564)",
-        "Namur (138)",
-        "Hainaut (358)"
-      ],
-      "colonnes": [
-        "■ 0-199",
-        "▼ 200-399",
-        "● 400-599",
-        "▲ 600 et +"
+        "communes"
       ],
       "reponse": [
-        3,
-        2,
-        0,
-        1
+        "Tournai"
       ],
-      "explication": "On place chaque densité dans la bonne tranche : 686 ≥ 600 ; 564 entre 400 et 599 ; 138 < 200 ; 358 entre 200 et 399."
+      "souple": true,
+      "explication": "Tournai (Hainaut) est dans la tranche 50 000 - 75 000 et se trouve à l'ouest de Namur. Verviers est dans la même tranche mais à l'est."
     },
     {
-      "id": "ceb-2026-tc-l6-q1",
+      "id": "ceb-2026-so-l5-q6b",
+      "livret": 5,
+      "numero": "6b",
+      "domaine": "hg.geographie",
+      "type": "qcm",
+      "enonce": "Arlon est…",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "hg-belgique",
+      "documents": [
+        "communes"
+      ],
+      "choix": [
+        "une ville de plus de 25 000 habitants.",
+        "une ville de plus de 50 000 habitants.",
+        "une ville de plus de 75 000 habitants."
+      ],
+      "reponse": 0,
+      "explication": "Arlon est dans la tranche 25 000 - 50 000 habitants."
+    },
+    {
+      "id": "ceb-2026-so-l5-q6c",
+      "livret": 5,
+      "numero": "6c",
+      "domaine": "hg.geographie",
+      "type": "trous",
+      "enonce": "Écris le nom de deux villes belges de plus de 100 000 habitants situées en dehors de la Région wallonne.",
+      "points": 2,
+      "corrigeVerifie": false,
+      "fiche": "hg-belgique",
+      "documents": [
+        "communes"
+      ],
+      "texte": "{1} et {2}",
+      "reponse": [
+        [
+          "Anvers",
+          "Gand",
+          "Bruges",
+          "Bruxelles"
+        ],
+        [
+          "Anvers",
+          "Gand",
+          "Bruges",
+          "Bruxelles"
+        ]
+      ],
+      "souple": true,
+      "explication": "Anvers, Gand, Bruges (Flandre) et Bruxelles (Région de Bruxelles-Capitale) dépassent 100 000 habitants."
+    },
+    {
+      "id": "ceb-2026-so-l5-q6d",
+      "livret": 5,
+      "numero": "6d",
+      "domaine": "hg.geographie",
+      "type": "texte_court",
+      "enonce": "Écris le nom d'une ville de plus de 100 000 habitants située dans la province de Hainaut.",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "hg-belgique",
+      "documents": [
+        "communes"
+      ],
+      "reponse": [
+        "Charleroi"
+      ],
+      "souple": true,
+      "explication": "Charleroi est la seule ville du Hainaut de plus de 100 000 habitants sur la carte."
+    },
+    {
+      "id": "ceb-2026-so-l5-q6e",
+      "livret": 5,
+      "numero": "6e",
+      "domaine": "hg.geographie",
+      "type": "texte_court",
+      "enonce": "Écris le nom d'une ville de moins de 25 000 habitants située dans la province de Luxembourg.",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "hg-belgique",
+      "documents": [
+        "communes"
+      ],
+      "reponse": [
+        "Bastogne",
+        "Libramont",
+        "La Roche-en-Ardenne",
+        "La Roche",
+        "Libramont-Chevigny"
+      ],
+      "souple": true,
+      "explication": "Bastogne, Libramont et La Roche-en-Ardenne sont de petites villes de la province de Luxembourg."
+    },
+    {
+      "id": "ceb-2026-so-l5-q8",
+      "livret": 5,
+      "numero": "8",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "Sur deux planisphères, situe l'Asie, l'Afrique, l'Océanie, l'océan Atlantique et l'océan Pacifique.",
+      "points": 10,
+      "corrigeVerifie": false,
+      "fiche": "hg-globe",
+      "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l6-q1",
       "livret": 6,
       "numero": "1",
       "domaine": "fr.lire",
@@ -1419,7 +1347,7 @@
       "explication": "Ces informations se trouvent dans la source, à la fin de l'article : Annalisa Plaitano, Cosinus n°255, janvier 2023."
     },
     {
-      "id": "ceb-2026-tc-l6-q2",
+      "id": "ceb-2026-so-l6-q2",
       "livret": 6,
       "numero": "2",
       "domaine": "fr.lire",
@@ -1439,7 +1367,7 @@
       "explication": "Un tracé qui tourne en s'éloignant du centre, comme une coquille d'escargot, est une spirale."
     },
     {
-      "id": "ceb-2026-tc-l6-q3",
+      "id": "ceb-2026-so-l6-q3",
       "livret": 6,
       "numero": "3",
       "domaine": "fr.lire",
@@ -1474,7 +1402,7 @@
       "explication": "Méthodes non destructives : bloc 4. Sécrétions graisseuses (sébum) : bloc 1. Minuties : bloc 2."
     },
     {
-      "id": "ceb-2026-tc-l6-q4",
+      "id": "ceb-2026-so-l6-q4",
       "livret": 6,
       "numero": "4",
       "domaine": "fr.lire",
@@ -1488,7 +1416,7 @@
       "reponseModele": "L'article dit que les chimpanzés, les pékans et les koalas ont aussi des empreintes digitales."
     },
     {
-      "id": "ceb-2026-tc-l6-q5",
+      "id": "ceb-2026-so-l6-q5",
       "livret": 6,
       "numero": "5",
       "domaine": "fr.lire",
@@ -1502,7 +1430,7 @@
       "reponseModele": "Des poudres étalées au pinceau ; des composantes chimiques volatiles (des vapeurs qui changent la couleur du sébum)."
     },
     {
-      "id": "ceb-2026-tc-l6-q6",
+      "id": "ceb-2026-so-l6-q6",
       "livret": 6,
       "numero": "6",
       "domaine": "fr.lire",
@@ -1526,7 +1454,7 @@
       "explication": "« Les premières » renvoie au premier mot cité (les traces), « les secondes » au deuxième (les empreintes)."
     },
     {
-      "id": "ceb-2026-tc-l6-q7",
+      "id": "ceb-2026-so-l6-q7",
       "livret": 6,
       "numero": "7",
       "domaine": "fr.grammaire",
@@ -1555,7 +1483,7 @@
       "explication": "« possède » se conjugue : verbe. « vous » remplace les personnes à qui l'on parle : pronom. « vos » accompagne le nom « doigts » : déterminant possessif."
     },
     {
-      "id": "ceb-2026-tc-l6-q8",
+      "id": "ceb-2026-so-l6-q8",
       "livret": 6,
       "numero": "8",
       "domaine": "fr.vocabulaire",
@@ -1578,7 +1506,7 @@
       "explication": "Positif et négatif sont de sens contraire."
     },
     {
-      "id": "ceb-2026-tc-l6-q9",
+      "id": "ceb-2026-so-l6-q9",
       "livret": 6,
       "numero": "9",
       "domaine": "fr.grammaire",
@@ -1604,7 +1532,7 @@
       "explication": "Le premier « elles » reprend « les minuties » ; le second reprend « deux ou plusieurs empreintes »."
     },
     {
-      "id": "ceb-2026-tc-l6-q10",
+      "id": "ceb-2026-so-l6-q10",
       "livret": 6,
       "numero": "10",
       "domaine": "fr.lire",
@@ -1618,7 +1546,7 @@
       "reponseModele": "Identifier des criminels ; retrouver des personnes disparues ; déverrouiller un téléphone."
     },
     {
-      "id": "ceb-2026-tc-l6-q11",
+      "id": "ceb-2026-so-l6-q11",
       "livret": 6,
       "numero": "11",
       "domaine": "fr.lire",
@@ -1651,7 +1579,7 @@
       "explication": "Le texte ne donne aucun chiffre sur les cambrioleurs. Il dit que les membres d'une famille ont un dessin proche (vrai) et que le fœtus a des empreintes dès le quatrième mois (donc « cinquième » est faux)."
     },
     {
-      "id": "ceb-2026-tc-l6-q13",
+      "id": "ceb-2026-so-l6-q13",
       "livret": 6,
       "numero": "13",
       "domaine": "fr.lire",
@@ -1672,46 +1600,55 @@
       "explication": "Le (7) renvoie à la définition n° 7 du glossaire : « Criminologie »."
     },
     {
-      "id": "ceb-2026-tc-l6-q14",
+      "id": "ceb-2026-so-l6-q14",
       "livret": 6,
       "numero": "14",
       "domaine": "fr.grammaire",
       "type": "qcm",
-      "enonce": "Dans la phrase « Au cours de notre vie, nos empreintes digitales ne changent pas », quel est le groupe complément circonstanciel de phrase ?",
+      "enonce": "« Depuis des milliers d'années, les êtres humains utilisent traces et empreintes. » Structure : complément de phrase + sujet + verbe + complément direct du verbe. Quelle phrase a la même structure ?",
       "points": 1,
       "corrigeVerifie": false,
       "fiche": "fr-sujet-complements",
       "choix": [
-        "Au cours de notre vie",
-        "nos empreintes digitales",
-        "ne changent pas",
-        "digitales"
+        "Pour révéler les traces, on peut utiliser différents types de poudres.",
+        "Chaque être humain possède des empreintes digitales.",
+        "Au cours de notre vie, nos empreintes digitales ne changent pas.",
+        "Avec quelles techniques peut-on les révéler ?"
       ],
       "reponse": 0,
-      "explication": "« Au cours de notre vie » peut être déplacé ou supprimé : c'est un complément de phrase (il indique le temps)."
+      "explication": "« Pour révéler les traces » (complément de phrase) + « on » (sujet) + « peut utiliser » (verbe) + « différents types de poudres » (complément direct). La 3e phrase n'a pas de complément direct."
     },
     {
-      "id": "ceb-2026-tc-l6-q15",
+      "id": "ceb-2026-so-l6-q15",
       "livret": 6,
       "numero": "15",
-      "domaine": "fr.grammaire",
-      "type": "qcm",
-      "enonce": "« Découvrons en détail ces traces étonnantes… » À quel mode est le verbe « Découvrons » ?",
-      "points": 1,
+      "domaine": "fr.conjugaison",
+      "type": "grille",
+      "enonce": "À quel temps de l'indicatif est conjugué chaque verbe ?",
+      "points": 3,
       "corrigeVerifie": false,
-      "fiche": "fr-modes",
-      "choix": [
-        "Indicatif",
-        "Impératif",
-        "Subjonctif",
-        "Participe",
-        "Infinitif"
+      "fiche": "fr-conjugaison-temps-simples",
+      "lignes": [
+        "Il a d'abord rejeté les empreintes digitales.",
+        "Vous découvrez que vous avez été cambriolés.",
+        "Alphonse Bertillon était l'un des précurseurs de la criminologie."
       ],
-      "reponse": 1,
-      "explication": "Pas de sujet exprimé, une invitation à faire quelque chose : c'est l'impératif."
+      "colonnes": [
+        "Passé simple",
+        "Présent",
+        "Futur simple",
+        "Passé composé",
+        "Imparfait"
+      ],
+      "reponse": [
+        3,
+        1,
+        4
+      ],
+      "explication": "« a rejeté » : auxiliaire + participe = passé composé. « découvrez » : présent. « était » : imparfait."
     },
     {
-      "id": "ceb-2026-tc-l6-q16",
+      "id": "ceb-2026-so-l6-q16",
       "livret": 6,
       "numero": "16",
       "domaine": "fr.vocabulaire",
@@ -1736,7 +1673,7 @@
       "explication": "Criminel vient de « crime ». Digital vient de « doigt » (du latin digitus)."
     },
     {
-      "id": "ceb-2026-tc-l7-q1a",
+      "id": "ceb-2026-so-l7-q1a",
       "livret": 7,
       "numero": "1a",
       "domaine": "ma.arithmetique",
@@ -1749,7 +1686,7 @@
       "explication": "On calcule d'abord la parenthèse : 14 : 2 = 7. Puis 128 − 7 = 121."
     },
     {
-      "id": "ceb-2026-tc-l7-q1b",
+      "id": "ceb-2026-so-l7-q1b",
       "livret": 7,
       "numero": "1b",
       "domaine": "ma.arithmetique",
@@ -1762,7 +1699,7 @@
       "explication": "36 + 27 + 0 + 20 = 83."
     },
     {
-      "id": "ceb-2026-tc-l7-q1c",
+      "id": "ceb-2026-so-l7-q1c",
       "livret": 7,
       "numero": "1c",
       "domaine": "ma.arithmetique",
@@ -1775,7 +1712,7 @@
       "explication": "80 × 3 = 240 ; 6 × 3 = 18 ; 240 + 18 = 258."
     },
     {
-      "id": "ceb-2026-tc-l7-q1d",
+      "id": "ceb-2026-so-l7-q1d",
       "livret": 7,
       "numero": "1d",
       "domaine": "ma.arithmetique",
@@ -1788,7 +1725,7 @@
       "explication": "10 000 : 2 = 5 000 ; 50 : 2 = 25 ; total 5 025."
     },
     {
-      "id": "ceb-2026-tc-l7-q1e",
+      "id": "ceb-2026-so-l7-q1e",
       "livret": 7,
       "numero": "1e",
       "domaine": "ma.arithmetique",
@@ -1801,7 +1738,7 @@
       "explication": "211 + 89 = 300 ; 85 + 45 = 130 ; 300 + 130 = 430."
     },
     {
-      "id": "ceb-2026-tc-l7-q1f",
+      "id": "ceb-2026-so-l7-q1f",
       "livret": 7,
       "numero": "1f",
       "domaine": "ma.arithmetique",
@@ -1814,7 +1751,7 @@
       "explication": "3 × 218 = 654, puis × 100 = 65 400."
     },
     {
-      "id": "ceb-2026-tc-l7-q1g",
+      "id": "ceb-2026-so-l7-q1g",
       "livret": 7,
       "numero": "1g",
       "domaine": "ma.arithmetique",
@@ -1827,7 +1764,7 @@
       "explication": "2,25 − 0,55 = 1,70 = 1,7."
     },
     {
-      "id": "ceb-2026-tc-l7-q1h",
+      "id": "ceb-2026-so-l7-q1h",
       "livret": 7,
       "numero": "1h",
       "domaine": "ma.arithmetique",
@@ -1840,7 +1777,7 @@
       "explication": "8 × 9 = 72 ; 0,5 × 9 = 4,5 ; 72 + 4,5 = 76,5."
     },
     {
-      "id": "ceb-2026-tc-l7-q2a",
+      "id": "ceb-2026-so-l7-q2a",
       "livret": 7,
       "numero": "2a",
       "domaine": "ma.arithmetique",
@@ -1853,7 +1790,7 @@
       "explication": "30 = 15 × 2, donc 375 × 2 = 750."
     },
     {
-      "id": "ceb-2026-tc-l7-q2b",
+      "id": "ceb-2026-so-l7-q2b",
       "livret": 7,
       "numero": "2b",
       "domaine": "ma.arithmetique",
@@ -1866,7 +1803,7 @@
       "explication": "2,5 est 10 fois plus petit que 25 : 375 : 10 = 37,5."
     },
     {
-      "id": "ceb-2026-tc-l7-q2c",
+      "id": "ceb-2026-so-l7-q2c",
       "livret": 7,
       "numero": "2c",
       "domaine": "ma.arithmetique",
@@ -1879,7 +1816,7 @@
       "explication": "7,5 est la moitié de 15 : 375 : 2 = 187,5."
     },
     {
-      "id": "ceb-2026-tc-l7-q3",
+      "id": "ceb-2026-so-l7-q3",
       "livret": 7,
       "numero": "3",
       "domaine": "ma.arithmetique",
@@ -1892,7 +1829,7 @@
       "explication": "Il y a 1 chiffre après la virgule dans 34,8 et 1 dans 2,6 : 2 chiffres en tout. 9 048 → 90,48."
     },
     {
-      "id": "ceb-2026-tc-l7-q4a",
+      "id": "ceb-2026-so-l7-q4a",
       "livret": 7,
       "numero": "4a",
       "domaine": "ma.arithmetique",
@@ -1905,7 +1842,7 @@
       "explication": "5 478,301 : 5 milliers, 4 centaines, 7 dizaines, 8 unités."
     },
     {
-      "id": "ceb-2026-tc-l7-q4b",
+      "id": "ceb-2026-so-l7-q4b",
       "livret": 7,
       "numero": "4b",
       "domaine": "ma.arithmetique",
@@ -1918,7 +1855,7 @@
       "explication": "Après la virgule : 3 dixièmes, 0 centième, 1 millième."
     },
     {
-      "id": "ceb-2026-tc-l7-q5",
+      "id": "ceb-2026-so-l7-q5",
       "livret": 7,
       "numero": "5",
       "domaine": "ma.arithmetique",
@@ -1932,7 +1869,7 @@
       "explication": "344,99 + 1 042,00 + 285,50 = 1 672,49 €. Aligne bien les virgules !"
     },
     {
-      "id": "ceb-2026-tc-l7-q6",
+      "id": "ceb-2026-so-l7-q6",
       "livret": 7,
       "numero": "6",
       "domaine": "ma.arithmetique",
@@ -1945,7 +1882,7 @@
       "explication": "37 millièmes = 0,037. Donc 18,037."
     },
     {
-      "id": "ceb-2026-tc-l7-q7a",
+      "id": "ceb-2026-so-l7-q7a",
       "livret": 7,
       "numero": "7a",
       "domaine": "ma.arithmetique",
@@ -1958,7 +1895,7 @@
       "explication": "× 0,1 revient à diviser par 10."
     },
     {
-      "id": "ceb-2026-tc-l7-q7b",
+      "id": "ceb-2026-so-l7-q7b",
       "livret": 7,
       "numero": "7b",
       "domaine": "ma.arithmetique",
@@ -1971,7 +1908,7 @@
       "explication": "× 0,5 revient à prendre la moitié."
     },
     {
-      "id": "ceb-2026-tc-l7-q7c",
+      "id": "ceb-2026-so-l7-q7c",
       "livret": 7,
       "numero": "7c",
       "domaine": "ma.arithmetique",
@@ -1984,7 +1921,7 @@
       "explication": "Diviser par 0,1 revient à multiplier par 10."
     },
     {
-      "id": "ceb-2026-tc-l7-q7d",
+      "id": "ceb-2026-so-l7-q7d",
       "livret": 7,
       "numero": "7d",
       "domaine": "ma.arithmetique",
@@ -1997,7 +1934,7 @@
       "explication": "Diviser par 0,5 revient à multiplier par 2."
     },
     {
-      "id": "ceb-2026-tc-l7-q8",
+      "id": "ceb-2026-so-l7-q8",
       "livret": 7,
       "numero": "8",
       "domaine": "ma.arithmetique",
@@ -2016,7 +1953,7 @@
       "explication": "Les surfinias et les bégonias coûtent tous 2 € : 5 + 5 = 10 plants à 2 €. Total : 7,50 + 30 + 20 = 57,50 €."
     },
     {
-      "id": "ceb-2026-tc-l7-q9a",
+      "id": "ceb-2026-so-l7-q9a",
       "livret": 7,
       "numero": "9a",
       "domaine": "ma.arithmetique",
@@ -2035,7 +1972,7 @@
       "explication": "36 000 + 4 500 ≈ 40 500."
     },
     {
-      "id": "ceb-2026-tc-l7-q9b",
+      "id": "ceb-2026-so-l7-q9b",
       "livret": 7,
       "numero": "9b",
       "domaine": "ma.arithmetique",
@@ -2054,7 +1991,7 @@
       "explication": "150 × 50 = 7 500."
     },
     {
-      "id": "ceb-2026-tc-l7-q9c",
+      "id": "ceb-2026-so-l7-q9c",
       "livret": 7,
       "numero": "9c",
       "domaine": "ma.arithmetique",
@@ -2073,54 +2010,106 @@
       "explication": "40 300 − 18 000 ≈ 22 300 → 22 000."
     },
     {
-      "id": "ceb-2026-tc-l7-q10a",
+      "id": "ceb-2026-so-l7-q10",
       "livret": 7,
-      "numero": "10a",
+      "numero": "10",
       "domaine": "ma.arithmetique",
-      "type": "numerique",
-      "enonce": "Complète : 376 + 18 = … + 20",
-      "points": 1,
+      "type": "trous",
+      "enonce": "Complète pour obtenir 1 à chaque fois.",
+      "points": 3,
       "corrigeVerifie": false,
       "fiche": "ma-decimaux",
-      "reponse": 374,
-      "explication": "376 + 18 = 394. 394 − 20 = 374."
+      "texte": "1 = 0,45 + {1}  ·  1 = {2} × 0,25  ·  1 = 0,10 + {3} + 0,70",
+      "reponse": [
+        [
+          "0,55",
+          "0.55"
+        ],
+        [
+          "4"
+        ],
+        [
+          "0,20",
+          "0,2",
+          "0.2",
+          "0.20"
+        ]
+      ],
+      "souple": true,
+      "explication": "1 − 0,45 = 0,55. 4 × 0,25 = 1. 0,10 + 0,70 = 0,80 ; il manque 0,20."
     },
     {
-      "id": "ceb-2026-tc-l7-q10b",
-      "livret": 7,
-      "numero": "10b",
-      "domaine": "ma.arithmetique",
-      "type": "numerique",
-      "enonce": "Complète : (39 + 17) + 13 = … + 30",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "ma-decimaux",
-      "reponse": 39,
-      "explication": "17 + 13 = 30, donc il reste 39."
-    },
-    {
-      "id": "ceb-2026-tc-l7-q11",
+      "id": "ceb-2026-so-l7-q11",
       "livret": 7,
       "numero": "11",
       "domaine": "ma.arithmetique",
-      "type": "qcm",
-      "enonce": "Quelle est la seule égalité correcte ?",
-      "points": 1,
+      "type": "qcm_multi",
+      "enonce": "Dans une grille de nombres, trouve les trois paires dont la somme est égale à 10 (exemple : 4,1 et 5,9).",
+      "points": 3,
       "corrigeVerifie": false,
-      "fiche": "ma-division",
+      "fiche": "ma-decimaux",
       "choix": [
-        "450 : 20 = (450 : 10) + (450 : 2)",
-        "450 : 20 = (450 : 100) : 2",
-        "450 : 20 = (450 : 2) × 10",
-        "450 : 20 = (450 : 10) : 2"
+        "1,3 et 8,7",
+        "7,2 et 2,8",
+        "3,6 et 6,4",
+        "4,2 et 5,9",
+        "7,5 et 2,4",
+        "4,6 et 5,5"
       ],
-      "reponse": 3,
-      "explication": "Diviser par 20, c'est diviser par 10 puis par 2 : 450 : 10 = 45 ; 45 : 2 = 22,5."
+      "reponse": [
+        0,
+        1,
+        2
+      ],
+      "explication": "1,3 + 8,7 = 10 ; 7,2 + 2,8 = 10 ; 3,6 + 6,4 = 10. Les autres paires ne font pas 10."
     },
     {
-      "id": "ceb-2026-tc-l8-qA1",
+      "id": "ceb-2026-so-l7-q12",
+      "livret": 7,
+      "numero": "12",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "Quelle opération donne le même résultat que 8 × 1,5 ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-decimaux",
+      "choix": [
+        "(8 × 1) + (8 × 5)",
+        "(8 × 0,5) + (8 × 1)",
+        "(8 + 0,5) × (8 + 1)",
+        "(8 + 1) × (8 + 5)"
+      ],
+      "reponse": 1,
+      "explication": "1,5 = 1 + 0,5, donc 8 × 1,5 = (8 × 1) + (8 × 0,5) = 8 + 4 = 12."
+    },
+    {
+      "id": "ceb-2026-so-l7-q13",
+      "livret": 7,
+      "numero": "13",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Décompose 0,36 en parts égales.",
+      "points": 2,
+      "corrigeVerifie": false,
+      "fiche": "ma-decimaux",
+      "texte": "0,36 = 3 × {1}  ·  0,36 = 9 × {2}",
+      "reponse": [
+        [
+          "0,12",
+          "0.12"
+        ],
+        [
+          "0,04",
+          "0.04"
+        ]
+      ],
+      "souple": true,
+      "explication": "0,36 : 3 = 0,12. 0,36 : 9 = 0,04."
+    },
+    {
+      "id": "ceb-2026-so-l8-q1",
       "livret": 8,
-      "numero": "A1",
+      "numero": "1",
       "domaine": "ma.arithmetique",
       "type": "qcm",
       "enonce": "« 13,9 > 12,308 » se lit…",
@@ -2137,9 +2126,9 @@
       "explication": "Le signe > se lit « est plus grand que ». 13 unités > 12 unités."
     },
     {
-      "id": "ceb-2026-tc-l8-qA3a",
+      "id": "ceb-2026-so-l8-q3a",
       "livret": 8,
-      "numero": "A3a",
+      "numero": "3a",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de l'Espagne : quarante-huit millions cinquante-neuf-mille-sept-cent-septante-sept.",
@@ -2150,9 +2139,9 @@
       "explication": "48 millions, 59 milliers, 777 : 48 059 777."
     },
     {
-      "id": "ceb-2026-tc-l8-qA3b",
+      "id": "ceb-2026-so-l8-q3b",
       "livret": 8,
-      "numero": "A3b",
+      "numero": "3b",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de la Belgique : onze millions sept-cent-cinquante-quatre-mille-quatre.",
@@ -2163,9 +2152,9 @@
       "explication": "11 millions, 754 milliers, 4 unités : 11 754 004."
     },
     {
-      "id": "ceb-2026-tc-l8-qA4b",
+      "id": "ceb-2026-so-l8-q4b",
       "livret": 8,
-      "numero": "A4b",
+      "numero": "4b",
       "domaine": "ma.arithmetique",
       "type": "qcm",
       "enonce": "Un tableau contient des nombres rangés de 0,75 à 0,95. Lequel de ces nombres peut y être inscrit ?",
@@ -2182,9 +2171,9 @@
       "explication": "Seul 0,8 (= 0,80) est compris entre 0,75 et 0,95."
     },
     {
-      "id": "ceb-2026-tc-l8-qA6",
+      "id": "ceb-2026-so-l8-q6",
       "livret": 8,
-      "numero": "A6",
+      "numero": "6",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Lors d'un match Belgique-Norvège, 12 500 enfants sont dans les gradins. La Norvège est encouragée par 3 650 enfants et 23 700 adultes. La Belgique est encouragée par 26 650 supporters. Combien de supporters adultes encouragent la Belgique ?",
@@ -2194,9 +2183,9 @@
       "explication": "Enfants pour la Belgique : 12 500 − 3 650 = 8 850. Adultes pour la Belgique : 26 650 − 8 850 = 17 800."
     },
     {
-      "id": "ceb-2026-tc-l8-qA8b",
+      "id": "ceb-2026-so-l8-q8b",
       "livret": 8,
-      "numero": "A8b",
+      "numero": "8b",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Un compteur d'eau affiche 0306,580 m³. Quelle est la partie entière du nombre de m³ consommés ?",
@@ -2208,9 +2197,9 @@
       "explication": "La partie entière est avant la virgule : 0306 = 306 (le zéro de gauche ne change rien)."
     },
     {
-      "id": "ceb-2026-tc-l8-qA9a",
+      "id": "ceb-2026-so-l8-q9a",
       "livret": 8,
-      "numero": "A9a",
+      "numero": "9a",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 50 · 100 · 200 · 400 · … · 1 600",
@@ -2220,9 +2209,9 @@
       "explication": "On multiplie par 2 à chaque fois : 400 × 2 = 800."
     },
     {
-      "id": "ceb-2026-tc-l8-qA9b",
+      "id": "ceb-2026-so-l8-q9b",
       "livret": 8,
-      "numero": "A9b",
+      "numero": "9b",
       "domaine": "ma.arithmetique",
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 1,57 · … · 0,97 · 0,67 · 0,37 · 0,07",
@@ -2233,9 +2222,9 @@
       "explication": "On retire 0,3 à chaque fois : 1,57 − 0,3 = 1,27."
     },
     {
-      "id": "ceb-2026-tc-l8-qA10a",
+      "id": "ceb-2026-so-l8-q10a",
       "livret": 8,
-      "numero": "A10a",
+      "numero": "10a",
       "domaine": "ma.arithmetique",
       "type": "qcm",
       "enonce": "Un joueur de basket a inscrit 5 points de moins que son équipier qui en a marqué 21. Quelle opération permet de trouver ses points ?",
@@ -2251,9 +2240,9 @@
       "explication": "« 5 de moins que 21 » : 21 − 5 = 16."
     },
     {
-      "id": "ceb-2026-tc-l8-qA10b",
+      "id": "ceb-2026-so-l8-q10b",
       "livret": 8,
-      "numero": "A10b",
+      "numero": "10b",
       "domaine": "ma.arithmetique",
       "type": "qcm",
       "enonce": "Un livreur transporte 72 casiers de 12 bouteilles d'un litre. Quelle opération permet de trouver la quantité d'eau transportée ?",
@@ -2269,9 +2258,9 @@
       "explication": "72 casiers de 12 litres : 72 × 12 = 864 litres."
     },
     {
-      "id": "ceb-2026-tc-l8-qA11",
+      "id": "ceb-2026-so-l8-q11",
       "livret": 8,
-      "numero": "A11",
+      "numero": "11",
       "domaine": "ma.arithmetique",
       "type": "qcm",
       "enonce": "Une classe de 26 élèves de 10 ans et 3 adultes visite un parc. Tarif groupe scolaire : enfant 19 €, adulte 28 €, 1 adulte gratuit pour 15 entrées enfants payantes. Quelle résolution est correcte ?",
@@ -2288,99 +2277,112 @@
       "explication": "26 enfants payants → 1 adulte gratuit (on n'atteint pas 30). On paie 26 × 19 € et 2 adultes × 28 € : 494 + 56 = 550 €."
     },
     {
-      "id": "ceb-2026-tc-l8-qA13",
+      "id": "ceb-2026-so-l8-q13a",
       "livret": 8,
-      "numero": "A13",
+      "numero": "13a",
       "domaine": "ma.arithmetique",
-      "type": "ordre",
-      "enonce": "Range ces nombres du plus grand au plus petit.",
+      "type": "qcm",
+      "enonce": "Quel nombre est équivalent à 1,25 ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "ma-decimaux",
-      "elements": [
-        "12,045",
-        "12,45",
-        "12,405",
-        "12,504",
-        "12,05"
+      "fiche": "ma-fractions",
+      "choix": [
+        "3/4",
+        "1,250",
+        "12,5",
+        "25/100"
       ],
-      "reponse": [
-        3,
-        1,
-        2,
-        4,
-        0
-      ],
-      "explication": "12,504 > 12,450 > 12,405 > 12,050 > 12,045 (ajoute des zéros pour comparer)."
+      "reponse": 1,
+      "explication": "1,25 = 1,250 : ajouter un zéro à la fin de la partie décimale ne change rien."
     },
     {
-      "id": "ceb-2026-tc-l8-qA14",
+      "id": "ceb-2026-so-l8-q13b",
       "livret": 8,
-      "numero": "A14",
+      "numero": "13b",
       "domaine": "ma.arithmetique",
-      "type": "trous",
-      "enonce": "Dans la division 1 475 : 12 = 122 reste 11, comment s'appellent les nombres 1 475 et 11 ? (12 est le diviseur, 122 le quotient)",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "ma-division",
-      "texte": "1 475 est le {1}  ·  11 est le {2}",
-      "reponse": [
-        [
-          "dividende"
-        ],
-        [
-          "reste"
-        ]
-      ],
-      "souple": true,
-      "explication": "Dividende : diviseur = quotient, avec un reste."
-    },
-    {
-      "id": "ceb-2026-tc-l8-qA15a",
-      "livret": 8,
-      "numero": "A15a",
-      "domaine": "ma.arithmetique",
-      "type": "vrai_faux",
-      "enonce": "Vérifie avec la calculatrice : 38,3 × (4,6 + 245) = 9 559,68. Ce résultat est-il correct ?",
+      "type": "qcm",
+      "enonce": "Quel nombre est équivalent à 0,375 ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "ma-decimaux",
-      "reponse": true,
-      "explication": "4,6 + 245 = 249,6 ; 38,3 × 249,6 = 9 559,68. C'est correct."
+      "fiche": "ma-fractions",
+      "choix": [
+        "1/3",
+        "3,750",
+        "3/8",
+        "5/8"
+      ],
+      "reponse": 2,
+      "explication": "3/8 = 3 : 8 = 0,375."
     },
     {
-      "id": "ceb-2026-tc-l8-qA15b",
+      "id": "ceb-2026-so-l8-q13c",
       "livret": 8,
-      "numero": "A15b",
+      "numero": "13c",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "Quel nombre est équivalent à 4 ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-fractions",
+      "choix": [
+        "40 dixièmes",
+        "40 centièmes",
+        "4/10",
+        "4/100"
+      ],
+      "reponse": 0,
+      "explication": "40 dixièmes = 40 : 10 = 4."
+    },
+    {
+      "id": "ceb-2026-so-l8-q14",
+      "livret": 8,
+      "numero": "14",
       "domaine": "ma.arithmetique",
       "type": "numerique",
-      "enonce": "Vérifie avec la calculatrice : (9 135 : 145) − 50,25 = 22,75. Ce résultat est faux : écris le résultat correct.",
+      "enonce": "Des constructions de carrés : construction 1 = 3 carrés, 2 = 6 carrés, 3 = 10 carrés, 4 = 15 carrés. Combien de carrés contiendra la construction 5 ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "reponse": 21,
+      "explication": "On ajoute 3, puis 4, puis 5… donc 15 + 6 = 21."
+    },
+    {
+      "id": "ceb-2026-so-l8-q15",
+      "livret": 8,
+      "numero": "15",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "Quel nombre n'est pas un multiple de 4 ?",
       "points": 1,
       "corrigeVerifie": false,
       "fiche": "ma-division",
-      "reponse": 12.75,
-      "explication": "9 135 : 145 = 63 ; 63 − 50,25 = 12,75."
+      "choix": [
+        "3 520",
+        "8 936",
+        "7 110",
+        "6 304"
+      ],
+      "reponse": 2,
+      "explication": "Un nombre est multiple de 4 si le nombre formé par ses deux derniers chiffres l'est : 20, 36, 04 oui ; 10 non."
     },
     {
-      "id": "ceb-2026-tc-l8-qD4",
+      "id": "ceb-2026-so-l8-q16",
       "livret": 8,
-      "numero": "D4",
-      "domaine": "ma.donnees",
+      "numero": "16",
+      "domaine": "ma.arithmetique",
       "type": "association",
-      "enonce": "Retrouve le numéro de GSM de chacun. Indices : le numéro de Léa contient au moins deux fois le chiffre 7 ; Tom et Carine ont le préfixe 0422 ; la somme des deux derniers chiffres du numéro de Mehdi est 10 ; le dernier chiffre du numéro de Carine est impair.",
-      "points": 1,
+      "enonce": "Associe chaque situation à l'opération qui la résout. A : 110 + (25 × 10) · B : (110 + 10) × 25 · C : (110 − 25) : 10 · D : (110 + 10) : 25",
+      "points": 3,
       "corrigeVerifie": false,
       "gauche": [
-        "0422 / 87 17 46",
-        "0431 / 71 12 78",
-        "0422 / 23 81 71",
-        "0414 / 71 18 73"
+        "110 élèves et 10 parents font une excursion à 25 € par personne. Prix total ?",
+        "Un élève a 110 vignettes et reçoit 25 sachets de 10 vignettes. Combien en a-t-il ?",
+        "110 briques rouges et 10 bleues ; on construit des tours de 25 briques. Combien de tours ?"
       ],
       "droite": [
-        "Léa",
-        "Tom",
-        "Carine",
-        "Mehdi"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
       "reponse": [
         [
@@ -2393,541 +2395,273 @@
         ],
         [
           2,
-          2
-        ],
-        [
-          3,
           3
         ]
       ],
-      "explication": "Préfixe 0422 : Tom et Carine ; Carine finit par un chiffre impair (71), donc Tom a 87 17 46. Mehdi : 7 + 3 = 10 → 0414. Léa : 0431 / 71 12 78 (deux fois le 7)."
+      "explication": "Excursion : (110 + 10) personnes × 25 € → B. Vignettes : 110 + 25 × 10 → A. Tours : (110 + 10) briques : 25 → D."
     },
     {
-      "id": "ceb-2026-tc-l9-q1b",
-      "livret": 9,
-      "numero": "1b",
-      "domaine": "sc.vivant",
-      "type": "trous",
-      "enonce": "Complète la phrase.",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "sc-corps-humain",
-      "texte": "Le sang va du cœur aux organes par les {1} et il retourne des organes au cœur par les {2}.",
-      "reponse": [
-        [
-          "artères",
-          "arteres"
-        ],
-        [
-          "veines"
-        ]
-      ],
-      "souple": true,
-      "explication": "Artères : du cœur vers les organes. Veines : des organes vers le cœur."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q3",
-      "livret": 9,
-      "numero": "3",
-      "domaine": "sc.vivant",
-      "type": "ouverte",
-      "enonce": "Une élève affirme : « Tous les déchets transportés par le sang sont évacués au niveau des poumons. » C'est faux. Pourquoi ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-corps-humain",
-      "reponseModele": "Les poumons n'évacuent que le dioxyde de carbone ; les autres déchets sont filtrés par les reins et évacués dans l'urine."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q5",
-      "livret": 9,
-      "numero": "5",
-      "domaine": "sc.vivant",
-      "type": "trous",
-      "enonce": "Dans un dispositif qui illustre la respiration, un ballon se gonfle puis se dégonfle. Complète (aspiration, expiration, inspiration, oxygénation).",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "sc-corps-humain",
-      "texte": "Le ballon se gonfle : cela illustre l'{1}.  ·  Le ballon se dégonfle : cela illustre l'{2}.",
-      "reponse": [
-        [
-          "inspiration"
-        ],
-        [
-          "expiration"
-        ]
-      ],
-      "souple": true,
-      "explication": "L'air entre dans les poumons : inspiration. L'air sort : expiration."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q6",
-      "livret": 9,
-      "numero": "6",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Dans le monde du vivant, une espèce est un ensemble de vivants pouvant…",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "choix": [
-        "respirer et se nourrir.",
-        "vivre et mourir.",
-        "se déplacer et se nourrir.",
-        "se reproduire et avoir des descendants féconds."
-      ],
-      "reponse": 3,
-      "explication": "Deux vivants sont de la même espèce s'ils peuvent se reproduire ensemble et avoir des petits eux-mêmes féconds."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q7",
-      "livret": 9,
-      "numero": "7",
-      "domaine": "sc.vivant",
-      "type": "trous",
-      "enonce": "Complète avec : arbre, attribut, espèce, état, classification, ressemblance.",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "texte": "Un caractère par lequel les organismes diffèrent ou se ressemblent est un {1}.  ·  Un système emboîté d'organismes regroupés est une {2}.",
-      "reponse": [
-        [
-          "attribut"
-        ],
-        [
-          "classification"
-        ]
-      ],
-      "souple": true,
-      "explication": "Un attribut, c'est ce qu'un vivant possède (plumes, poils…). On range les vivants dans une classification en ensembles emboîtés."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q8a",
-      "livret": 9,
-      "numero": "8a",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Observe la collection 2. Quel attribut permet de distinguer les actinoptérygiens des autres animaux de ce classement ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-2"
-      ],
-      "choix": [
-        "Des yeux et une bouche",
-        "Un squelette externe et des pattes articulées",
-        "Des nageoires rayonnées",
-        "3 paires de pattes, 1 paire d'antennes, des ailes"
-      ],
-      "reponse": 2,
-      "explication": "Les actinoptérygiens sont les poissons à nageoires rayonnées."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q8b",
-      "livret": 9,
-      "numero": "8b",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Observe la collection 2. Quel attribut permet de distinguer les insectes des autres animaux de ce classement ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-2"
-      ],
-      "choix": [
-        "Un squelette interne",
-        "Un squelette externe et des pattes articulées",
-        "Des poils, des mamelles, des oreilles avec pavillon",
-        "3 paires de pattes, 1 paire d'antennes, des ailes"
-      ],
-      "reponse": 3,
-      "explication": "Le squelette externe est commun à tous les arthropodes ; les 3 paires de pattes, 1 paire d'antennes et les ailes sont propres aux insectes."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q8c",
-      "livret": 9,
-      "numero": "8c",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Observe la collection 2. Quel attribut permet de distinguer les annélides des autres animaux de ce classement ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-2"
-      ],
-      "choix": [
-        "Des yeux et une bouche",
-        "Un squelette interne",
-        "Un squelette externe et des pattes articulées",
-        "Un corps annelé"
-      ],
-      "reponse": 3,
-      "explication": "Annélide vient de « anneau » : leur corps est fait d'anneaux."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q9",
-      "livret": 9,
-      "numero": "9",
-      "domaine": "sc.vivant",
-      "type": "association",
-      "enonce": "Dans quel ensemble faut-il placer le rougegorge et le lombric ?",
-      "points": 2,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "gauche": [
-        "Rougegorge",
-        "Lombric"
-      ],
-      "droite": [
-        "Plumes",
-        "Corps annelé",
-        "Poils, mamelles, oreilles avec pavillon",
-        "3 paires de pattes, ailes"
-      ],
-      "reponse": [
-        [
-          0,
-          0
-        ],
-        [
-          1,
-          1
-        ]
-      ],
-      "explication": "Le rougegorge a des plumes : c'est un oiseau. Le lombric (ver de terre) a un corps annelé."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q10",
-      "livret": 9,
-      "numero": "10",
-      "domaine": "sc.vivant",
-      "type": "ouverte",
-      "enonce": "Observe la collection 3. Note tous les attributs partagés utilisés pour classer les mammifères, les insectes et les oiseaux (exemple : actinoptérygiens = yeux, bouche, squelette interne, nageoires rayonnées).",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-3"
-      ],
-      "reponseModele": "Mammifères : yeux, bouche, squelette interne, 4 membres, poils, mamelles, oreilles avec pavillon. Insectes : yeux, bouche, squelette externe, 1 paire d'antennes, 3 paires de pattes, ailes. Oiseaux : yeux, bouche, squelette interne, 4 membres, plumes."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q11a",
-      "livret": 9,
-      "numero": "11a",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Collection 1. Quel animal a : 1 squelette interne, 4 membres, des mamelles, des poils ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-1"
-      ],
-      "choix": [
-        "Homard",
-        "Grande limace",
-        "Pie bavarde",
-        "Piéride du chou",
-        "Pipistrelle commune",
-        "Poisson-chat"
-      ],
-      "reponse": 4,
-      "explication": "Poils et mamelles : c'est un mammifère, la pipistrelle (une chauve-souris)."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q11b",
-      "livret": 9,
-      "numero": "11b",
-      "domaine": "sc.vivant",
-      "type": "qcm",
-      "enonce": "Collection 1. Quel animal a : 2 yeux, 4 membres, des plumes, 1 squelette interne ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-classification",
-      "documents": [
-        "classif-1"
-      ],
-      "choix": [
-        "Homard",
-        "Grande limace",
-        "Pie bavarde",
-        "Piéride du chou",
-        "Pipistrelle commune",
-        "Poisson-chat"
-      ],
-      "reponse": 2,
-      "explication": "Les plumes indiquent un oiseau : la pie bavarde."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q12",
-      "livret": 9,
-      "numero": "12",
-      "domaine": "sc.matiere",
-      "type": "trous",
-      "enonce": "Trois expériences avec une bougie : A (la bougie s'éteint sous une cloche en verre), B (de la buée apparaît sur une plaque en verre froide), C (le thermomètre au-dessus de la flamme monte). Complète chaque conclusion.",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "texte": "A : il faut du {1} pour que la bougie brûle.  ·  B : la combustion libère de la {2}.  ·  C : la combustion libère de la {3}.",
-      "reponse": [
-        [
-          "dioxygène",
-          "dioxygene",
-          "O2",
-          "oxygène",
-          "oxygene",
-          "l'air",
-          "air"
-        ],
-        [
-          "vapeur d'eau",
-          "vapeur",
-          "l'eau",
-          "eau"
-        ],
-        [
-          "chaleur",
-          "l'énergie thermique",
-          "énergie thermique",
-          "energie thermique"
-        ]
-      ],
-      "souple": true,
-      "explication": "Sous la cloche, le dioxygène s'épuise et la flamme s'éteint. La buée montre la vapeur d'eau. Le thermomètre montre la chaleur libérée."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q13",
-      "livret": 9,
-      "numero": "13",
-      "domaine": "sc.matiere",
+      "id": "ceb-2026-so-l8-q17",
+      "livret": 8,
+      "numero": "17",
+      "domaine": "ma.arithmetique",
       "type": "qcm_multi",
-      "enonce": "Dans une chaudière à gaz, la combustion du gaz naturel nécessite du dioxygène. Que libère cette combustion ? (3 réponses)",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "choix": [
-        "De la vapeur d'eau",
-        "Du bois",
-        "De l'azote",
-        "Du dioxyde de carbone (CO₂)",
-        "De l'électricité",
-        "De l'énergie thermique"
-      ],
-      "reponse": [
-        0,
-        3,
-        5
-      ],
-      "explication": "Une combustion libère de la chaleur (énergie thermique), de la vapeur d'eau et du dioxyde de carbone."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q14",
-      "livret": 9,
-      "numero": "14",
-      "domaine": "sc.matiere",
-      "type": "qcm",
-      "enonce": "Un feu s'est déclaré dans la cuisine. Après avoir coupé le gaz, quel moyen permet de l'éteindre en toute sécurité ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "choix": [
-        "Jeter de l'eau sur la poêle.",
-        "Étendre une couverture humide sur la poêle.",
-        "Retirer la poêle du feu.",
-        "Appeler les secours."
-      ],
-      "reponse": 1,
-      "explication": "La couverture humide prive le feu de dioxygène. Jamais d'eau sur de l'huile en feu !"
-    },
-    {
-      "id": "ceb-2026-tc-l9-q15",
-      "livret": 9,
-      "numero": "15",
-      "domaine": "sc.matiere",
-      "type": "grille",
-      "enonce": "Quel type de phénomène est-ce ?",
-      "points": 3,
-      "corrigeVerifie": false,
-      "fiche": "sc-phenomenes",
-      "lignes": [
-        "L'évaporation de l'eau : l'eau change simplement d'état.",
-        "L'eau et l'huile dans un même récipient se superposent sans se transformer.",
-        "Une chaîne en fer restée longtemps sous la pluie rouille : le fer s'est transformé."
-      ],
-      "colonnes": [
-        "Biologique",
-        "Chimique",
-        "Électrique",
-        "Physique"
-      ],
-      "reponse": [
-        3,
-        3,
-        1
-      ],
-      "explication": "Physique : la matière ne se transforme pas (changement d'état, superposition). Chimique : une nouvelle matière apparaît (la rouille)."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q16",
-      "livret": 9,
-      "numero": "16",
-      "domaine": "sc.energie",
-      "type": "qcm_multi",
-      "enonce": "Quelles sont les deux ressources d'énergie non renouvelables ?",
+      "enonce": "Quels sont les deux nombres à la fois impairs et multiples de 3 ?",
       "points": 2,
       "corrigeVerifie": false,
-      "fiche": "sc-energie",
+      "fiche": "ma-division",
       "choix": [
-        "Lumière du Soleil",
-        "Gaz naturel",
-        "Vent",
-        "Eau",
-        "Pétrole"
+        "112",
+        "123",
+        "181",
+        "159",
+        "192"
       ],
       "reponse": [
         1,
-        4
+        3
       ],
-      "explication": "Le gaz naturel et le pétrole se forment en millions d'années : ils s'épuisent."
+      "explication": "Impairs : 123, 181, 159. Multiples de 3 (somme des chiffres divisible par 3) : 123 (6) et 159 (15). 181 (10) ne l'est pas."
     },
     {
-      "id": "ceb-2026-tc-l9-q17",
+      "id": "ceb-2026-so-l8-q19",
+      "livret": 8,
+      "numero": "19",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "4 539 : 63 = 72 reste 3. Quelle opération permet de vérifier cette division ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "ma-division",
+      "choix": [
+        "(3 + 72) × 63",
+        "(72 × 63) − 3",
+        "(72 × 63) + 3",
+        "72 × 63"
+      ],
+      "reponse": 2,
+      "explication": "Quotient × diviseur + reste = dividende : 72 × 63 + 3 = 4 536 + 3 = 4 539."
+    },
+    {
+      "id": "ceb-2026-so-l9-q1c",
       "livret": 9,
-      "numero": "17",
+      "numero": "1c",
+      "domaine": "sc.matiere",
+      "type": "grille",
+      "enonce": "On verse du liquide dans le tube 1 d'un récipient qui relie 5 tubes de tailles différentes (vases communicants). Vrai ou faux ?",
+      "points": 3,
+      "corrigeVerifie": false,
+      "documents": [
+        "vases"
+      ],
+      "lignes": [
+        "Le tube 1 sera rempli en premier.",
+        "Le niveau de l'eau sera plus haut dans le tube 2 car il est plus gros.",
+        "Le niveau de l'eau sera le même dans tous les tubes."
+      ],
+      "colonnes": [
+        "Vrai",
+        "Faux"
+      ],
+      "reponse": [
+        1,
+        1,
+        0
+      ],
+      "explication": "Dans des vases communicants, le liquide se répartit et atteint le même niveau dans tous les tubes, quelle que soit leur forme."
+    },
+    {
+      "id": "ceb-2026-so-l9-q2b",
+      "livret": 9,
+      "numero": "2b",
       "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "« Vendredi, dans le centre du pays, on prévoit de la pluie qui laissera plus tard la place à des averses de pluie abondantes. En Haute Belgique, des chutes de neige sont attendues en fin de journée. » Quelles trois icônes faudrait-il dessiner sur la carte ?",
+      "points": 3,
+      "corrigeVerifie": false,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Risque de pluie",
+        "Pluie",
+        "Pluie et neige",
+        "Giboulées de neige fondante",
+        "Chutes de neige",
+        "Averses de pluie abondantes"
+      ],
+      "reponse": [
+        1,
+        4,
+        5
+      ],
+      "explication": "Le bulletin parle de pluie, d'averses de pluie abondantes et de chutes de neige."
+    },
+    {
+      "id": "ceb-2026-so-l9-q4a",
+      "livret": 9,
+      "numero": "4a",
+      "domaine": "sc.vivant",
       "type": "trous",
-      "enonce": "Situations : 1 la laine pour un pull ; 2 le liège en construction ; 3 l'acier pour des radiateurs ; 4 le bois pour des portes et des châssis. Écris un numéro.",
+      "enonce": "Comme chez l'Homme, les organes des animaux forment des appareils. Écris le nom de l'appareil auquel appartient chaque organe.",
+      "points": 3,
+      "corrigeVerifie": false,
+      "fiche": "sc-corps-humain",
+      "texte": "Le crâne : appareil {1}  ·  Le cœur : appareil {2}  ·  Le poumon : appareil {3}",
+      "reponse": [
+        [
+          "locomoteur",
+          "squelettique",
+          "osseux",
+          "squelette"
+        ],
+        [
+          "circulatoire",
+          "cardiovasculaire",
+          "sanguin"
+        ],
+        [
+          "respiratoire"
+        ]
+      ],
+      "souple": true,
+      "explication": "Le crâne fait partie du squelette (appareil locomoteur). Le cœur fait circuler le sang (appareil circulatoire). Le poumon sert à respirer (appareil respiratoire)."
+    },
+    {
+      "id": "ceb-2026-so-l9-q4c",
+      "livret": 9,
+      "numero": "4c",
+      "domaine": "sc.vivant",
+      "type": "ouverte",
+      "enonce": "Une élève affirme : « L'appareil digestif du pigeon possède les mêmes organes que celui de l'Homme. » C'est faux. Pourquoi ?",
+      "points": 1,
+      "corrigeVerifie": false,
+      "fiche": "sc-corps-humain",
+      "reponseModele": "Le pigeon possède un jabot et un gésier, que l'Homme n'a pas."
+    },
+    {
+      "id": "ceb-2026-so-l9-q6a",
+      "livret": 9,
+      "numero": "6a",
+      "domaine": "sc.vivant",
+      "type": "ordre",
+      "enonce": "Remets les étapes du cycle de vie de la libellule dans l'ordre, en commençant par les œufs.",
+      "points": 5,
+      "corrigeVerifie": false,
+      "fiche": "sc-classification",
+      "elements": [
+        "Libellule adulte",
+        "Jeune larve",
+        "Ponte",
+        "Œufs",
+        "Nymphe",
+        "Métamorphose",
+        "Larve âgée",
+        "Reproduction"
+      ],
+      "reponse": [
+        3,
+        1,
+        6,
+        4,
+        5,
+        0,
+        7,
+        2
+      ],
+      "explication": "Œufs → jeune larve → larve âgée → nymphe (dans l'eau) → métamorphose → libellule adulte (dans l'air) → reproduction → ponte."
+    },
+    {
+      "id": "ceb-2026-so-l9-q6b",
+      "livret": 9,
+      "numero": "6b",
+      "domaine": "sc.vivant",
+      "type": "qcm_multi",
+      "enonce": "Quels sont les deux animaux qui subissent aussi des métamorphoses au cours de leur vie ?",
       "points": 2,
       "corrigeVerifie": false,
-      "fiche": "sc-energie",
-      "texte": "Une situation où la matière est un bon isolant thermique : {1}  ·  Une situation où la matière est un bon conducteur thermique : {2}",
+      "fiche": "sc-classification",
+      "choix": [
+        "La grenouille",
+        "Le chien",
+        "L'hirondelle",
+        "Le papillon",
+        "La truite"
+      ],
       "reponse": [
-        [
-          "1",
-          "2",
-          "4"
-        ],
-        [
-          "3"
-        ]
+        0,
+        3
       ],
-      "souple": true,
-      "explication": "La laine, le liège et le bois isolent. L'acier (un métal) conduit bien la chaleur, c'est pourquoi on en fait des radiateurs."
+      "explication": "Le têtard devient grenouille ; la chenille devient papillon. Ce sont des métamorphoses."
     },
     {
-      "id": "ceb-2026-tc-l9-q18",
+      "id": "ceb-2026-so-l9-q7b",
       "livret": 9,
-      "numero": "18",
-      "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Quel facteur influence la durée de combustion de la flamme dans l'expérience 1 ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "documents": [
-        "bougies-1",
-        "bougies-2"
-      ],
-      "reponseModele": "Le volume du récipient (la quantité d'air, donc de dioxygène, disponible)."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q19a",
-      "livret": 9,
-      "numero": "19a",
+      "numero": "7b",
       "domaine": "sc.matiere",
       "type": "trous",
-      "enonce": "Expérience 1 : complète le tableau à l'aide du graphique.",
-      "points": 4,
+      "enonce": "Dans la nature, on trouve l'eau à l'état liquide. Sous quels deux autres états peut-on la trouver ?",
+      "points": 2,
       "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "documents": [
-        "bougies-1",
-        "bougies-2"
-      ],
-      "texte": "Récipient 2 (150 ml) : {1} secondes  ·  Récipient 3 (250 ml) : {2} secondes  ·  Récipient 4 : {3} ml (14 secondes)  ·  Récipient 6 : {4} ml (73 secondes)",
+      "fiche": "sc-phenomenes",
+      "texte": "{1} et {2}",
       "reponse": [
         [
-          "5"
+          "solide",
+          "l'état solide",
+          "glace",
+          "la glace"
         ],
         [
-          "8"
-        ],
-        [
-          "400"
-        ],
-        [
-          "2800",
-          "2 800"
+          "gazeux",
+          "l'état gazeux",
+          "vapeur",
+          "vapeur d'eau",
+          "la vapeur d'eau",
+          "gazeuse"
         ]
       ],
       "souple": true,
-      "explication": "On lit la hauteur des bâtonnets (5 s et 8 s) et les volumes écrits sous le graphique (400 ml et 2 800 ml)."
+      "explication": "L'eau peut être solide (glace, neige, grêle), liquide ou gazeuse (vapeur d'eau)."
     },
     {
-      "id": "ceb-2026-tc-l9-q20",
+      "id": "ceb-2026-so-l9-q9",
       "livret": 9,
-      "numero": "20",
-      "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Quel facteur influence la durée de combustion de la flamme dans l'expérience 2 ?",
-      "points": 1,
-      "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "documents": [
-        "bougies-3",
-        "bougies-4"
-      ],
-      "reponseModele": "Le nombre de bougies : plus il y a de bougies, plus le dioxygène est consommé vite."
-    },
-    {
-      "id": "ceb-2026-tc-l9-q21",
-      "livret": 9,
-      "numero": "21",
+      "numero": "9",
       "domaine": "sc.matiere",
       "type": "qcm",
-      "enonce": "Lors de l'expérience 3, la grande bougie s'éteint parce qu'il n'y a plus de dioxygène dans le haut du bocal. Quel serait donc le bon réflexe en cas d'incendie ?",
+      "enonce": "1 litre d'eau pèse 1 000 g, 1 litre d'huile 835 g et 1 litre de lait 1 020 g. Dans l'eau, l'huile remonte au-dessus. On verse du lait et de l'huile dans un bocal et on attend une heure. Qu'observe-t-on ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "documents": [
-        "bougies-5"
-      ],
+      "fiche": "sc-phenomenes",
       "choix": [
-        "Couper l'électricité de la maison.",
-        "Sortir de la maison, en position debout.",
-        "Sortir de la maison, en position accroupie.",
-        "Ouvrir les portes et les fenêtres pour laisser entrer de l'air."
+        "L'huile au-dessus du lait",
+        "Le lait au-dessus de l'huile",
+        "Le lait et l'huile complètement mélangés"
       ],
-      "reponse": 2,
-      "explication": "La fumée chaude monte et le dioxygène manque en hauteur : on sort en restant bas, accroupi."
+      "reponse": 0,
+      "explication": "L'huile est plus légère que le lait (835 g contre 1 020 g par litre) : elle flotte au-dessus."
     },
     {
-      "id": "ceb-2026-tc-l9-q22",
+      "id": "ceb-2026-so-l9-q10",
       "livret": 9,
-      "numero": "22",
-      "domaine": "sc.matiere",
+      "numero": "10",
+      "domaine": "sc.vivant",
       "type": "qcm",
-      "enonce": "L'huile de la friteuse prend feu (feu de classe F). Quel dispositif faut-il utiliser ?",
+      "enonce": "Sur un tubercule de pomme de terre, de petites pousses apparaissent. Qu'est-ce que c'est ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "sc-combustion",
-      "documents": [
-        "extincteurs"
-      ],
       "choix": [
-        "Extincteur CO₂",
-        "Extincteur à mousse",
-        "Extincteur à mousse de graisse",
-        "Dévidoir"
+        "Des graines qui sortent de l'intérieur du tubercule.",
+        "Des fleurs qui sortent pour que la pomme de terre devienne une plante.",
+        "Des feuilles qui se préparent à sortir.",
+        "Des germes qui deviendront des racines et la tige de la plante."
       ],
-      "reponse": 2,
-      "explication": "Seul l'extincteur à mousse de graisse convient aux feux de classe F (huiles et graisses de cuisson)."
+      "reponse": 3,
+      "explication": "Ce sont des germes : ils donneront les racines et la tige d'une nouvelle plante."
     },
     {
-      "id": "ceb-2026-tc-l10-q1",
+      "id": "ceb-2026-so-l10-q1",
       "livret": 10,
       "numero": "1",
       "domaine": "fr.lire",
@@ -2957,7 +2691,7 @@
       "explication": "L'article sur la tour Eiffel informe. La bande dessinée cherche à faire sourire : donner du plaisir."
     },
     {
-      "id": "ceb-2026-tc-l10-q2",
+      "id": "ceb-2026-so-l10-q2",
       "livret": 10,
       "numero": "2",
       "domaine": "fr.lire",
@@ -2971,7 +2705,7 @@
       "reponseModele": "Observer les mouvements des troupes allemandes ; transmettre les renseignements aux Anglais ; écrire des messages cachés dans des cartes postales."
     },
     {
-      "id": "ceb-2026-tc-l10-q3",
+      "id": "ceb-2026-so-l10-q3",
       "livret": 10,
       "numero": "3",
       "domaine": "fr.lire",
@@ -2995,7 +2729,7 @@
       "explication": "Le titre dit « une personnalité belge ». Les funérailles nationales ont lieu après la guerre, en 1919."
     },
     {
-      "id": "ceb-2026-tc-l10-q4",
+      "id": "ceb-2026-so-l10-q4",
       "livret": 10,
       "numero": "4",
       "domaine": "fr.lire",
@@ -3023,7 +2757,7 @@
       "explication": "Sa mission d'espionne va dans le bloc 2 ; sa naissance va dans le bloc sur son enfance."
     },
     {
-      "id": "ceb-2026-tc-l10-q5",
+      "id": "ceb-2026-so-l10-q5",
       "livret": 10,
       "numero": "5",
       "domaine": "fr.lire",
@@ -3037,7 +2771,7 @@
       "reponseModele": "Personne ne savait qu'elle était une espionne ; elle changeait souvent d'identité."
     },
     {
-      "id": "ceb-2026-tc-l10-q7",
+      "id": "ceb-2026-so-l10-q7",
       "livret": 10,
       "numero": "7",
       "domaine": "fr.lire",
@@ -3051,7 +2785,7 @@
       "reponseModele": "Elle a été montée en seulement deux ans et elle est devenue le plus haut édifice du monde."
     },
     {
-      "id": "ceb-2026-tc-l10-q8",
+      "id": "ceb-2026-so-l10-q8",
       "livret": 10,
       "numero": "8",
       "domaine": "fr.lire",
@@ -3072,7 +2806,7 @@
       "explication": "Le texte dit que le fer est « plébiscité pour sa résistance » : il est solide."
     },
     {
-      "id": "ceb-2026-tc-l10-q9",
+      "id": "ceb-2026-so-l10-q9",
       "livret": 10,
       "numero": "9",
       "domaine": "fr.vocabulaire",
@@ -3093,7 +2827,7 @@
       "explication": "« De nombreux artistes sont particulièrement réticents… » : les poètes, écrivains et peintres sont des artistes."
     },
     {
-      "id": "ceb-2026-tc-l10-q10",
+      "id": "ceb-2026-so-l10-q10",
       "livret": 10,
       "numero": "10",
       "domaine": "fr.lire",
@@ -3114,7 +2848,7 @@
       "explication": "L'objectif est de ramasser les déchets qui jonchent les rues, les chemins et les rivières."
     },
     {
-      "id": "ceb-2026-tc-l10-q11",
+      "id": "ceb-2026-so-l10-q11",
       "livret": 10,
       "numero": "11",
       "domaine": "fr.lire",
@@ -3128,7 +2862,7 @@
       "reponseModele": "Des animaux ne parlent pas et ne vont pas au café."
     },
     {
-      "id": "ceb-2026-tc-l10-q13",
+      "id": "ceb-2026-so-l10-q13",
       "livret": 10,
       "numero": "13",
       "domaine": "fr.grammaire",
@@ -3160,7 +2894,7 @@
       "explication": "« le » reprend « ce premier bulletin ». « lui » : Tom répond à son père."
     },
     {
-      "id": "ceb-2026-tc-l10-q15a",
+      "id": "ceb-2026-so-l10-q15a",
       "livret": 10,
       "numero": "15a",
       "domaine": "fr.lire",
@@ -3181,7 +2915,7 @@
       "explication": "« Un père demande à son fils Tom » : c'est le père de Tom qui parle."
     },
     {
-      "id": "ceb-2026-tc-l10-q15b",
+      "id": "ceb-2026-so-l10-q15b",
       "livret": 10,
       "numero": "15b",
       "domaine": "fr.lire",
@@ -3202,7 +2936,7 @@
       "explication": "Il parle à son fils Tom."
     },
     {
-      "id": "ceb-2026-tc-l10-q16",
+      "id": "ceb-2026-so-l10-q16",
       "livret": 10,
       "numero": "16",
       "domaine": "fr.lire",
@@ -3223,7 +2957,7 @@
       "explication": "« Migrateur » est entendu comme « mi-grateur » : il ne se gratte qu'à moitié, d'un seul côté."
     },
     {
-      "id": "ceb-2026-tc-l10-q17",
+      "id": "ceb-2026-so-l10-q17",
       "livret": 10,
       "numero": "17",
       "domaine": "fr.lire",
@@ -3244,7 +2978,7 @@
       "explication": "L'affiche dit : « Le jeu est essentiel au développement de l'enfant »."
     },
     {
-      "id": "ceb-2026-tc-l10-q18",
+      "id": "ceb-2026-so-l10-q18",
       "livret": 10,
       "numero": "18",
       "domaine": "fr.vocabulaire",
@@ -3270,68 +3004,72 @@
       "explication": "Gabrielle Petit s'opposait à l'ennemi (sens 2). Le fer supporte de grandes forces (sens 3)."
     },
     {
-      "id": "ceb-2026-tc-l10-q19",
+      "id": "ceb-2026-so-l10-q19",
       "livret": 10,
       "numero": "19",
       "domaine": "fr.lire",
       "type": "grille",
-      "enonce": "Chaque phrase exprime-t-elle un fait ou une opinion ?",
+      "enonce": "En te basant sur les textes du portfolio, que peux-tu dire ?",
       "points": 3,
       "corrigeVerifie": false,
       "fiche": "fr-lire-intention",
+      "documents": [
+        "nettoyage"
+      ],
       "lignes": [
-        "La tour Eiffel est monstrueuse.",
-        "« Le grand nettoyage » a lieu le temps d'un weekend.",
-        "Un oiseau migrateur est un oiseau qui se déplace d'une région à une autre en fonction des saisons."
+        "Pour aider les enfants à grandir, il est important que les parents jouent avec eux chaque jour.",
+        "Pour participer au grand nettoyage, il faut apporter son propre matériel.",
+        "Le grand nettoyage a lieu le premier weekend de février."
       ],
       "colonnes": [
-        "Fait",
-        "Opinion"
+        "C'est VRAI",
+        "C'est FAUX",
+        "Les textes ne permettent pas de le dire"
       ],
       "reponse": [
+        2,
         1,
-        0,
-        0
+        2
       ],
-      "explication": "« Monstrueuse » est un jugement : opinion. Les deux autres phrases peuvent être vérifiées : ce sont des faits."
+      "explication": "L'affiche ne parle pas des parents ni de « chaque jour ». Le texte dit qu'on fournit le matériel : il ne faut donc pas l'apporter (faux). Aucune date n'est donnée."
     },
     {
-      "id": "ceb-2026-tc-l10-q20a",
+      "id": "ceb-2026-so-l10-q20a",
       "livret": 10,
       "numero": "20a",
-      "domaine": "fr.grammaire",
+      "domaine": "fr.conjugaison",
       "type": "qcm",
-      "enonce": "« Jouer aide à grandir. » À quel mode est le verbe « Jouer » ?",
+      "enonce": "« Gabrielle Petit ne grandit pas dans sa famille. » À quel temps de l'indicatif est le verbe ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "fr-modes",
+      "fiche": "fr-conjugaison-temps-simples",
       "choix": [
-        "Impératif",
-        "Infinitif",
-        "Participe",
-        "Indicatif"
+        "Imparfait",
+        "Présent",
+        "Plus-que-parfait",
+        "Passé composé"
       ],
       "reponse": 1,
-      "explication": "« Jouer » n'est pas conjugué : c'est l'infinitif."
+      "explication": "« grandit » : présent (elle grandit). À l'imparfait, ce serait « grandissait »."
     },
     {
-      "id": "ceb-2026-tc-l10-q20b",
+      "id": "ceb-2026-so-l10-q20b",
       "livret": 10,
       "numero": "20b",
-      "domaine": "fr.grammaire",
+      "domaine": "fr.conjugaison",
       "type": "qcm",
-      "enonce": "« Un oiseau qui ne se gratte que d'un seul côté. » À quel mode est le verbe « gratte » ?",
+      "enonce": "« Je le lui ai prêté. » À quel temps de l'indicatif est le verbe ?",
       "points": 1,
       "corrigeVerifie": false,
-      "fiche": "fr-modes",
+      "fiche": "fr-passe-compose",
       "choix": [
-        "Impératif",
-        "Infinitif",
-        "Participe",
-        "Indicatif"
+        "Imparfait",
+        "Présent",
+        "Plus-que-parfait",
+        "Passé composé"
       ],
       "reponse": 3,
-      "explication": "« se gratte » est conjugué au présent de l'indicatif (il se gratte)."
+      "explication": "« ai prêté » : auxiliaire avoir au présent + participe passé = passé composé."
     }
   ]
 }

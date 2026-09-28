@@ -162,7 +162,18 @@ test('mode examen : questions officielles dans l\'ordre, sans les questions papi
   while ((q = session.suivante())) { ids.push(q.id); session.repondre(null); }
   assert.ok(ids.length >= 3);
   assert.ok(!ids.includes('ceb-2026-tc-l3-q2'), 'question de tracé exclue');
-  assert.ok(!ids.includes('ceb-2026-tc-l6-q11'), 'question sans corrigé exclue');
+  assert.ok(!ids.includes('ceb-2026-tc-l2-q1'), 'production écrite (papier) exclue');
+  assert.ok(ids.includes('ceb-2026-tc-l4-q30'), 'question ouverte avec réponse modèle incluse');
+  assert.equal(new Set(ids).size, ids.length, 'aucune question en double');
+});
+
+test('mode examen : un seul livret', async () => {
+  const ex = await donnees.chargerExamen('ceb-2026-tc');
+  const session = new QuizSession({ examen: ex }, { mode: 'examen', livrets: [4] });
+  let q, n = 0;
+  while ((q = session.suivante())) { assert.equal(q.livret, 4); n++; session.repondre(null); }
+  assert.equal(n, session.o.nbQuestions);
+  assert.ok(n >= 20);
 });
 
 test('correction : cas particuliers', () => {

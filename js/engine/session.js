@@ -23,6 +23,7 @@ const PAR_DEFAUT = {
   domaines: null,          // ex. ['ma.grandeurs'] ; null = tous
   referentiel: null,       // 'socles' | 'tronc_commun' | null
   difficulteMax: 3,
+  livrets: null,           // mode examen : ex. [4, 7] ; null = tous les livrets
   poidsModele: 3,          // un modèle « pèse » autant que 3 questions fixes
   maxParModele: 3,         // variantes d'un même modèle par session
   seed: undefined,
@@ -31,6 +32,9 @@ const PAR_DEFAUT = {
   // 0 = jamais tiré ; 5 = cinq fois plus de chances. N'affecte jamais l'anti-répétition.
   poids: null,
 };
+
+// Jouable à l'écran : un corrigé automatique, ou une question ouverte avec réponse modèle (autoévaluation).
+export const estJouable = (q) => q.reponse != null || (q.type === 'ouverte' && !!q.reponseModele);
 
 export class QuizSession {
   constructor({ banque = [], modeles = [], historique = [], examen = null }, options = {}) {
@@ -51,11 +55,11 @@ export class QuizSession {
 
     if (this.o.mode === 'examen') {
       if (!examen) throw new Error('Le mode examen demande un examen.');
-      this.fileExamen = examen.questions.filter((q) => q.numerisable !== false && q.reponse != null
-        && this.filtre(q));
+      this.fileExamen = examen.questions.filter((q) => q.numerisable !== false && estJouable(q)
+        && this.filtre(q) && (!this.o.livrets || this.o.livrets.includes(q.livret)));
       this.o.nbQuestions = this.fileExamen.length;
     } else {
-      this.banque = banque.filter((q) => q.numerisable !== false && q.reponse != null && this.filtre(q));
+      this.banque = banque.filter((q) => q.numerisable !== false && estJouable(q) && this.filtre(q));
       this.modeles = modeles.filter((m) => this.filtre(m));
     }
   }
