@@ -5,8 +5,11 @@ HTML/CSS/JavaScript natif, sans dépendance ni étape de build. Publié automati
 Netlify (https://ceb-quiz-bruxelles.netlify.app) à chaque push sur `main`.
 
 ## Arborescence
-- `index.html` : page d'accueil (page d'attente pour l'instant)
-- `moteur.html` : page de test du moteur de quiz (étape 2)
+- `index.html` : l'application Mission CEB (connexion par pseudo, accueil, quiz, résultat, réglages)
+- `css/app.css` : styles, 3 ambiances au choix (Néon, Pop, Sunset)
+- `js/app/` : application (`app.js` écrans, `store.js` sauvegarde locale, `progression.js` XP/niveaux/série/défis/badges, `question-ui.js` affichage des 10 types)
+- `assets/` : pages de portfolio utilisées par les examens
+- `maquettes/` : propositions de design ; `moteur.html` : page de test du moteur
 - `data/` : catalogue, banque de questions, modèles générés, examens officiels 2015-2026
 - `js/engine/` : moteur de quiz
 - `tests/` : tests automatiques (`npm test`, Node 20+)
