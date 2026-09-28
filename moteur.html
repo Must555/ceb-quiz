@@ -59,6 +59,7 @@
   </section>
 
   <section class="card hidden" id="jeu">
+    <p style="margin:0 0 10px"><button id="menu">🏠 Menu principal</button></p>
     <div class="stats" id="stats"></div>
     <p class="meta" id="qmeta"></p>
     <div class="enonce" id="enonce"></div>
@@ -74,7 +75,7 @@
   <section class="card hidden" id="fin">
     <h2 style="margin-top:0">Résultat</h2>
     <div id="resume"></div>
-    <p><button class="primaire" id="rejouer">Nouvelle session</button></p>
+    <p style="display:flex;gap:8px;flex-wrap:wrap"><button class="primaire" id="rejouer">🔁 Rejouer</button><button id="menuFin">🏠 Menu principal</button></p>
     <details><summary>Données brutes (pour vérification)</summary><pre id="brut"></pre></details>
   </section>
 </main>
@@ -184,13 +185,15 @@ function valider(passer = false) {
     ${!ok ? `<div style="white-space:pre-line"><b>Bonne réponse :</b> ${esc(r.bonneReponse)}</div>` : ''}
     ${r.explication ? `<div style="margin-top:6px">💡 ${esc(r.explication)}</div>` : ''}</div>`;
   $('valider').classList.add('hidden'); $('passer').classList.add('hidden'); $('suivant').classList.remove('hidden');
+  // Dernière question : on ne propose plus de « question suivante » mais le résultat.
+  $('suivant').textContent = session.etat().terminee ? 'Voir mon résultat 🏁' : 'Question suivante →';
   $('suivant').focus();
   majStats();
 }
 
 $('valider').onclick = () => valider(false);
 $('passer').onclick = () => valider(true);
-$('suivant').onclick = afficher;
+$('suivant').onclick = () => (session.etat().terminee ? terminer() : afficher());
 
 function terminer() {
   if (fini) return; fini = true;
@@ -205,7 +208,14 @@ function terminer() {
   $('brut').textContent = JSON.stringify(r, null, 2);
 }
 
-$('rejouer').onclick = () => { $('fin').classList.add('hidden'); $('config').classList.remove('hidden'); };
+function retourMenu() {
+  fini = true; clearInterval(timer);
+  $('jeu').classList.add('hidden'); $('fin').classList.add('hidden'); $('config').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+$('menu').onclick = retourMenu;
+$('menuFin').onclick = retourMenu;
+$('rejouer').onclick = () => $('go').click(); // mêmes réglages
 </script>
 </body>
 </html>
