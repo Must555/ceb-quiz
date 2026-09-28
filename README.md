@@ -7,7 +7,8 @@ Netlify (https://ceb-quiz-bruxelles.netlify.app) à chaque push sur `main`.
 ## Arborescence
 - `index.html` : l'application Mission CEB (connexion par pseudo, accueil, quiz, résultat, réglages)
 - `css/app.css` : styles, 3 ambiances au choix (Néon, Pop, Sunset)
-- `js/app/` : application (`app.js` écrans, `store.js` sauvegarde locale, `progression.js` XP/niveaux/série/défis/badges, `question-ui.js` affichage des 10 types)
+- `js/app/` : application (`app.js` écrans, `store.js` sauvegarde locale, `progression.js` XP/niveaux/série/défis/badges, `coach.js` points faibles et révisions, `question-ui.js` affichage des 10 types)
+- `data/fiches.json` : 35 fiches Rappel ; chaque question pointe vers sa fiche (champ `fiche`)
 - `assets/` : pages de portfolio utilisées par les examens
 - `maquettes/` : propositions de design ; `moteur.html` : page de test du moteur
 - `data/` : catalogue, banque de questions, modèles générés, examens officiels 2015-2026
@@ -40,3 +41,10 @@ const q = s.suivante();        // question
 const r = s.repondre('64,8');  // { correct, score, xpGagne, bonneReponse, explication, ... }
 s.resume();                    // bilan + idsVus à mémoriser dans l'historique
 ```
+
+## Coach (lot A)
+- Maîtrise par notion : moyenne pondérée des 12 dernières réponses (les récentes comptent plus).
+  Statuts : à découvrir (< 3 réponses), à retravailler (< 60 %), en progrès (< 80 % ou < 6 réponses), maîtrisé.
+- Révision espacée : question ratée → revient à J+1, puis J+3, puis J+7 si réussie (boîtes de Leitner).
+- Mission ciblée : option `poids` de `QuizSession` (notions fragiles ×20, révisions dues ×5, difficulté adaptée).
+  L'anti-répétition n'est jamais affectée par la pondération.

@@ -156,6 +156,7 @@
     ],
     "examens": [
       "examens/index.json"
-    ]
+    ],
+    "fiches": "fiches.json"
   }
 }

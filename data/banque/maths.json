@@ -7,10 +7,19 @@
       "type": "qcm",
       "difficulte": 1,
       "enonce": "Quel nombre est le plus grand ?",
-      "choix": ["0,5", "0,45", "0,405", "0,54"],
+      "choix": [
+        "0,5",
+        "0,45",
+        "0,405",
+        "0,54"
+      ],
       "reponse": 3,
       "explication": "On compare chiffre par chiffre après la virgule : 0,54 a 5 dixièmes et 4 centièmes, c'est le plus grand.",
-      "tags": ["decimaux", "comparer"]
+      "tags": [
+        "decimaux",
+        "comparer"
+      ],
+      "fiche": "ma-decimaux"
     },
     {
       "id": "ma-b-0002",
@@ -21,7 +30,11 @@
       "reponse": 135,
       "unite": "min",
       "explication": "2 h = 120 min. 120 + 15 = 135 min.",
-      "tags": ["temps", "conversion"]
+      "tags": [
+        "temps",
+        "conversion"
+      ],
+      "fiche": "ma-durees"
     },
     {
       "id": "ma-b-0003",
@@ -31,7 +44,10 @@
       "enonce": "Un carré est aussi un rectangle.",
       "reponse": true,
       "explication": "Un rectangle a 4 angles droits. Le carré en a 4 aussi : c'est un rectangle particulier, avec 4 côtés égaux.",
-      "tags": ["quadrilateres"]
+      "tags": [
+        "quadrilateres"
+      ],
+      "fiche": "ma-quadrilateres"
     }
   ]
 }

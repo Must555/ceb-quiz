@@ -1,5 +1,6 @@
 // Règles de progression : niveaux, série de jours, défis du jour, badges, gemmes.
 import { aujourdhui } from './store.js';
+import { majCoach } from './coach.js';
 
 // ---------- Niveaux ----------
 // Seuil du niveau n = 50 × n × (n − 1) XP : 0, 100, 300, 600, 1000, 1500, 2100…
@@ -59,6 +60,7 @@ export const BADGES = [
   { id: 'ma20', e: '📐', nom: 'As des maths', desc: '20 bonnes réponses en maths', test: (j) => (j.parMatiere.ma?.bonnes ?? 0) >= 20 },
   { id: 'hg20', e: '🌍', nom: 'Globe-trotter', desc: '20 bonnes réponses en histoire-géo', test: (j) => (j.parMatiere.hg?.bonnes ?? 0) >= 20 },
   { id: 'sc20', e: '🧪', nom: 'Savant fou', desc: '20 bonnes réponses en sciences', test: (j) => (j.parMatiere.sc?.bonnes ?? 0) >= 20 },
+  { id: 'coach', e: '🧭', nom: 'Bien guidé', desc: 'Termine une mission ciblée du coach', test: (j, s) => s && s.modeJeu === 'cible' },
   { id: 'examen', e: '📝', nom: 'Candidat', desc: 'Termine un examen blanc', test: (j, s) => s && s.mode === 'examen' },
   { id: 'chrono', e: '⏱️', nom: 'Contre la montre', desc: '10 bonnes réponses en mode Chrono', test: (j, s) => s && s.modeJeu === 'chrono' && s.bonnes >= 10 },
   { id: 'niveau5', e: '👑', nom: 'Aventurier', desc: 'Atteins le niveau 5', test: (j) => niveau(j.xp).n >= 5 },
@@ -84,6 +86,7 @@ export function enregistrerSession(j, resume, modeJeu, jour = aujourdhui()) {
     }
   }
   j.historique.push(...resume.idsVus);
+  majCoach(j, resume.details, jour);
 
   const jr = (j.jours[jour] ??= jourDe(j, jour));
   jr.questions += resume.questions;

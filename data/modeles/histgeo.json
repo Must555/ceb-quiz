@@ -6,14 +6,16 @@
       "domaine": "hg.histoire",
       "difficulte": 1,
       "generateur": "repere_temps",
-      "sorte": "periode"
+      "sorte": "periode",
+      "fiche": "hg-periodes"
     },
     {
       "id": "hg-m-siecles",
       "domaine": "hg.histoire",
       "difficulte": 2,
       "generateur": "repere_temps",
-      "sorte": "siecle"
+      "sorte": "siecle",
+      "fiche": "hg-siecles"
     }
   ]
 }

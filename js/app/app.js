@@ -3,6 +3,7 @@ import { chargerDonnees, QuizSession } from '../engine/index.js';
 import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
+import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -22,7 +23,7 @@ const OUPS = ['Pas tout à fait…', 'Presque !', 'Oups !', 'Pas grave, on appre
 
 let donnees = null;
 let joueur = null;
-const choix = { mode: 'entrainement', matiere: '', examen: null, examenChrono: false };
+const choix = { mode: 'entrainement', matiere: '', examen: null, examenChrono: false, cible: null };
 let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
@@ -165,7 +166,7 @@ function afficherAccueil() {
   const joueAujourdhui = jr.questions > 0;
   const nbBadges = Object.keys(joueur.badges).length;
   const defiFait = !!jr.defiDuJourFait;
-  if (choix.mode === 'defi' && defiFait) choix.mode = 'entrainement';
+  if ((choix.mode === 'defi' && defiFait) || choix.mode === 'cible') choix.mode = 'entrainement';
 
   const phrase = serie > 0 && !joueAujourdhui ? `Joue aujourd'hui pour garder ta série de <b>${serie} jour${serie > 1 ? 's' : ''}</b> 🔥`
     : serie > 1 ? `Série de <b>${serie} jours</b>, continue comme ça !`
@@ -183,7 +184,7 @@ function afficherAccueil() {
       <div class="marque"><span class="pastille">🚀</span><div>Mission CEB<small>SAISON 2027</small></div></div>
       <nav class="nav">
         <button class="actif"><span>🏠</span>Accueil</button>
-        <button class="bientot" data-bientot><span>📊</span>Progrès</button>
+        <button data-aller="progres"><span>📊</span>Progrès</button>
         <button class="bientot" data-bientot><span>🏅</span>Collection</button>
         <button data-aller="reglages"><span>🎨</span>Mon style</button>
         <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
@@ -216,6 +217,8 @@ function afficherAccueil() {
             <div class="prog"><span>Aujourd'hui</span><div class="barre"><i style="width:${Math.min(100, jr.questions * 10)}%"></i></div><b>${Math.min(jr.questions, 10)}/10${jr.questions >= 10 ? ' ✔' : ''}</b></div>
           </div>
         </section>
+
+        ${blocCoach()}
 
         <section class="carte">
           <h3 class="section-titre">🎮 Mode de jeu</h3>
@@ -270,6 +273,7 @@ function afficherAccueil() {
   </div>
   <nav class="navbas">
     <button class="actif"><span>🏠</span>Accueil</button>
+    <button data-aller="progres"><span>📊</span>Progrès</button>
     <button data-aller="reglages"><span>🎨</span>Mon style</button>
     <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
   </nav>`;
@@ -292,6 +296,8 @@ function afficherAccueil() {
   $$('[data-aller="reglages"]', el).forEach((b) => b.onclick = afficherReglages);
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
   $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
+  $$('[data-aller="progres"]', el).forEach((b) => b.onclick = afficherProgres);
+  brancherCoach(el);
   $('#lancer', el).onclick = lancerPartie;
   majChoix();
 }
@@ -303,7 +309,9 @@ async function lancerPartie() {
   const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique };
   let session;
   if (modeJeu === 'entrainement') {
-    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null });
+    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null, poids: poidsCoach(joueur) });
+  } else if (modeJeu === 'cible') {
+    session = new QuizSession(base, { nbQuestions: 10, maxParModele: 5, poids: poidsCoach(joueur, { mode: 'cible', notion: choix.cible }) });
   } else if (modeJeu === 'chrono') {
     session = new QuizSession(base, { nbQuestions: 200, dureeSecondes: 180, matieres: choix.matiere ? [choix.matiere] : null, difficulteMax: 2 });
   } else if (modeJeu === 'defi') {
@@ -400,8 +408,10 @@ function valider(passer) {
   $('#retour').innerHTML = `${r.xpGagne ? `<span class="xp-gagne">+${r.xpGagne} XP</span>` : ''}<b>${titre}</b>
     ${r.remarque && !ok && !passer ? `<p>${esc(r.remarque)}</p>` : ''}
     ${montrerBonne ? `<p class="bonne">Réponse : ${esc(r.bonneReponse)}</p>` : ''}
-    ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}`;
+    ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}
+    ${!ok && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}`;
   $('#retour').hidden = false;
+  $('#voir-regle')?.addEventListener('click', () => ouvrirFiche(q.fiche));
   $('#passer').hidden = true;
   const bv = $('#valider');
   bv.disabled = false;
@@ -453,7 +463,7 @@ function afficherResultat(resume, res) {
     ${domaines.length ? `<section class="carte par-domaine"><h3 style="margin-bottom:12px">Détail</h3>${domaines.map(([d, v]) => `
       <div class="ligne"><span>${esc(nomDomaine(d))}</span><b>${v.bonnes}/${v.posees}</b><div class="barre"><i style="width:${Math.round((v.bonnes / v.posees) * 100)}%"></i></div></div>`).join('')}</section>` : ''}
     <div class="actions">
-      <button class="btn btn-cta" id="rejouer">${partie.modeJeu === 'defi' ? 'Nouvelle mission' : 'Rejouer'} 🔁</button>
+      <button class="btn btn-cta" id="rejouer">${partie.modeJeu === 'defi' ? 'Nouvelle mission' : partie.modeJeu === 'cible' ? 'Encore une mission ciblée' : 'Rejouer'} 🔁</button>
       <button class="btn" id="accueil">🏠 Accueil</button>
     </div>
   </div>`;
@@ -465,6 +475,116 @@ function afficherResultat(resume, res) {
     joueur = store.joueurActif();
     lancerPartie();
   };
+}
+
+// ============================================================ Coach
+function blocCoach() {
+  const pret = coachPret(joueur);
+  const dues = revisionsDues(joueur);
+  const faibles = faiblesses(joueur, donnees.fiches);
+  const nbReponses = Object.values(joueur.notions).reduce((s, n) => s + n.r.length, 0);
+  let corps;
+  if (!pret) {
+    corps = `<p>Je t'observe encore un peu : réponds à <b>${10 - nbReponses} question${10 - nbReponses > 1 ? 's' : ''}</b> de plus et je te dirai exactement quoi travailler.</p>
+      <div class="barre"><i style="width:${nbReponses * 10}%"></i></div>`;
+  } else if (faibles.length) {
+    corps = `<p>Voici ce qu'on va renforcer ensemble :</p>
+      <div class="coach-liste">${faibles.map((x) => `
+        <div class="coach-ligne"><span class="e">${x.fiche.e}</span>
+          <div><b>${esc(x.fiche.titre)}</b><div class="barre"><i style="width:${Math.round(x.m * 100)}%"></i></div></div>
+          <button class="btn petit voir-fiche" data-f="${x.fiche.id}" aria-label="Voir la fiche ${esc(x.fiche.titre)}">📘</button></div>`).join('')}
+      </div>`;
+  } else {
+    corps = `<p>Aucun point faible repéré pour l'instant, bravo 💪 Continue à varier les matières.</p>`;
+  }
+  const bouton = pret && (faibles.length || dues.length)
+    ? `<button class="btn btn-cta" id="mission-ciblee">🎯 Mission ciblée</button>` : '';
+  return `<section class="carte coach">
+    <div class="coach-tete"><span class="coach-ico">🧭</span><div><h3>Ton coach</h3>
+      ${dues.length ? `<small class="mute">🔁 ${dues.length} question${dues.length > 1 ? 's' : ''} à revoir aujourd'hui</small>` : '<small class="mute">Il repère tes points faibles au fil des parties</small>'}</div></div>
+    ${corps}${bouton ? `<div class="coach-actions">${bouton}<button class="lien" data-aller="progres">Voir toutes mes notions →</button></div>` : ''}
+  </section>`;
+}
+
+function brancherCoach(el) {
+  $$('.voir-fiche', el).forEach((b) => b.onclick = () => ouvrirFiche(b.dataset.f, {
+    cta: '🎯 M\'entraîner sur cette notion', onCta: () => lancerCible(b.dataset.f, false),
+  }));
+  $('#mission-ciblee', el)?.addEventListener('click', () => lancerCible(null, true));
+  $$('[data-aller="progres"]', el).forEach((b) => b.onclick = afficherProgres);
+}
+
+// Lance une mission ciblée : sur une notion précise, ou sur l'ensemble des faiblesses.
+function lancerCible(notion, avecRappel) {
+  const demarrer = () => { choix.mode = 'cible'; choix.cible = notion; lancerPartie(); };
+  const rappel = notion ?? faiblesses(joueur, donnees.fiches, 1)[0]?.fiche.id;
+  if (avecRappel && rappel && donnees.fiches[rappel]) {
+    ouvrirFiche(rappel, { titreHaut: 'Petit rappel avant de commencer', cta: 'J\'ai compris, on y va ! 🎯', onCta: demarrer });
+  } else demarrer();
+}
+
+function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel' } = {}) {
+  const f = donnees.fiches[id];
+  if (!f) return;
+  const m = maitrise(joueur, id);
+  const fond = document.createElement('div');
+  fond.className = 'modal-fond';
+  fond.innerHTML = `<div class="modal carte" role="dialog" aria-modal="true" aria-labelledby="fiche-titre">
+    <small class="sur">${esc(titreHaut)}</small>
+    <h2 id="fiche-titre"><span>${f.e}</span> ${esc(f.titre)}</h2>
+    ${m.n ? `<p class="mute" style="margin:0 0 10px">${STATUTS[m.statut].e} ${STATUTS[m.statut].nom} · ${Math.round(m.m * 100)} % sur tes ${m.n} dernière${m.n > 1 ? 's' : ''} réponse${m.n > 1 ? 's' : ''}</p>` : ''}
+    <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+    <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
+    ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
+    <div class="modal-actions">${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
+  </div>`;
+  const fermer = () => { fond.remove(); document.removeEventListener('keydown', echap); };
+  const echap = (e) => { if (e.key === 'Escape') fermer(); };
+  document.addEventListener('keydown', echap);
+  fond.addEventListener('click', (e) => { if (e.target === fond) fermer(); });
+  document.body.append(fond);
+  $('#fiche-fermer', fond).onclick = fermer;
+  $('#fiche-cta', fond)?.addEventListener('click', () => { fermer(); onCta?.(); });
+  ($('#fiche-cta', fond) ?? $('#fiche-fermer', fond)).focus();
+}
+
+// ============================================================ Mes progrès
+function afficherProgres() {
+  const notions = carteNotions(joueur, donnees.fiches);
+  const maitrisees = notions.filter((x) => x.statut === 'maitrise').length;
+  const dues = revisionsDues(joueur).length;
+  const pct = joueur.totalQuestions ? Math.round((joueur.totalBonnes / joueur.totalQuestions) * 100) : 0;
+  const parMat = MATIERES.filter((m) => m.id).map((m) => ({ ...m, liste: notions.filter((x) => x.fiche.matiere === m.id)
+    .sort((a, b) => STATUTS[a.statut].ordre - STATUTS[b.statut].ordre || a.m - b.m) }));
+
+  $('#ecran-progres').innerHTML = `<div class="progres">
+    <p><button class="btn" id="retour-accueil">← Accueil</button></p>
+    <h1>📊 Mes progrès</h1>
+    <div class="gains">
+      <div><b>${joueur.totalQuestions}</b><small>questions</small></div>
+      <div><b>${pct} %</b><small>de réussite</small></div>
+      <div><b>${maitrisees}/${notions.length}</b><small>notions maîtrisées</small></div>
+    </div>
+    ${dues ? `<p class="carte" style="margin:0">🔁 <b>${dues} question${dues > 1 ? 's' : ''} à revoir aujourd'hui.</b> Le coach les glisse dans ta prochaine mission ciblée. <button class="btn btn-cta petit" id="p-cible">🎯 Mission ciblée</button></p>` : ''}
+    <p class="legende">${Object.values(STATUTS).sort((a, b) => a.ordre - b.ordre).map((st) => `<span>${st.e} ${st.nom}</span>`).join('')}</p>
+    ${parMat.map((m) => `<section class="carte">
+      <h3 class="section-titre">${m.e} ${m.nom}</h3>
+      <div class="notions">${m.liste.map((x) => `
+        <div class="notion st-${x.statut}">
+          <span class="e">${x.fiche.e}</span>
+          <div class="nom"><b>${esc(x.fiche.titre)}</b><small>${STATUTS[x.statut].e} ${STATUTS[x.statut].nom}${x.n ? ` · ${Math.round(x.m * 100)} %` : ''}</small>
+            <div class="barre"><i style="width:${x.n ? Math.round(x.m * 100) : 0}%"></i></div></div>
+          <button class="btn petit" data-fiche="${x.fiche.id}" aria-label="Fiche">📘</button>
+          <button class="btn petit" data-cible="${x.fiche.id}" aria-label="S'entraîner">🎯</button>
+        </div>`).join('')}</div>
+    </section>`).join('')}
+  </div>`;
+  montrer('ecran-progres');
+  const el = $('#ecran-progres');
+  $('#retour-accueil', el).onclick = afficherAccueil;
+  $('#p-cible', el)?.addEventListener('click', () => lancerCible(null, true));
+  $$('[data-fiche]', el).forEach((b) => b.onclick = () => ouvrirFiche(b.dataset.fiche, { cta: '🎯 M\'entraîner sur cette notion', onCta: () => lancerCible(b.dataset.fiche, false) }));
+  $$('[data-cible]', el).forEach((b) => b.onclick = () => lancerCible(b.dataset.cible, true));
 }
 
 // ============================================================ Réglages

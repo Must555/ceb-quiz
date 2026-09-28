@@ -1,0 +1,461 @@
+{
+  "description": "Fiches Rappel : une par notion. Chaque question (banque, modèle, examen) pointe vers une fiche via son champ `fiche`. Le coach mesure la maîtrise par fiche.",
+  "fiches": [
+    {
+      "id": "ma-pourcentages",
+      "matiere": "ma",
+      "e": "💯",
+      "titre": "Les pourcentages",
+      "regle": [
+        "« 25 % » veut dire 25 sur 100.",
+        "Pour calculer un pourcentage d'un nombre : nombre × pourcentage ÷ 100.",
+        "Réduction : prix de départ − réduction = prix à payer."
+      ],
+      "exemple": "20 % de 150 € = 150 × 20 ÷ 100 = 30 €. Avec 20 % de réduction, on paie 150 − 30 = 120 €.",
+      "astuce": "10 % = on divise par 10. 50 % = la moitié. 25 % = le quart."
+    },
+    {
+      "id": "ma-aires-perimetres",
+      "matiere": "ma",
+      "e": "🟩",
+      "titre": "Aire et périmètre",
+      "regle": [
+        "Le périmètre, c'est le tour de la figure (en m, cm…).",
+        "L'aire, c'est la surface à l'intérieur (en m², cm²…).",
+        "Rectangle : aire = L × l ; périmètre = (L + l) × 2.",
+        "Triangle : aire = (base × hauteur) ÷ 2."
+      ],
+      "exemple": "Rectangle de 6 m sur 4 m : périmètre = (6 + 4) × 2 = 20 m ; aire = 6 × 4 = 24 m².",
+      "astuce": "Clôture, bordure, ruban → périmètre. Peinture, carrelage, gazon → aire."
+    },
+    {
+      "id": "ma-volumes",
+      "matiere": "ma",
+      "e": "📦",
+      "titre": "Le volume",
+      "regle": [
+        "Le volume, c'est la place occupée dans l'espace (en cm³, dm³, m³).",
+        "Parallélépipède rectangle : volume = longueur × largeur × hauteur.",
+        "1 dm³ = 1 litre."
+      ],
+      "exemple": "Boîte de 5 cm × 4 cm × 3 cm : volume = 60 cm³.",
+      "astuce": "Aquarium de 40 cm × 25 cm × 30 cm = 4 dm × 2,5 dm × 3 dm = 30 dm³ = 30 litres."
+    },
+    {
+      "id": "ma-conversions",
+      "matiere": "ma",
+      "e": "📏",
+      "titre": "Convertir les mesures",
+      "regle": [
+        "Longueur : km → hm → dam → m → dm → cm → mm (× 10 à chaque pas vers la droite).",
+        "Masse : kg → hg → dag → g → dg → cg → mg (× 10 à chaque pas). 1 t = 1 000 kg.",
+        "Capacité : l → dl → cl → ml (× 10 à chaque pas)."
+      ],
+      "exemple": "3,5 km = 3 500 m ; 250 cl = 2,5 l ; 2 t = 2 000 kg.",
+      "astuce": "Vers une unité plus petite, le nombre devient plus grand (on multiplie). Vers une unité plus grande, il devient plus petit (on divise)."
+    },
+    {
+      "id": "ma-durees",
+      "matiere": "ma",
+      "e": "🕒",
+      "titre": "Heures et durées",
+      "regle": [
+        "1 h = 60 min ; 1 min = 60 s ; 1 jour = 24 h.",
+        "Pour trouver une heure d'arrivée : heure de départ + durée.",
+        "Si les minutes dépassent 60, on ajoute 1 h et on retire 60 min."
+      ],
+      "exemple": "16 h 45 + 1 h 30 = 17 h 75 = 18 h 15.",
+      "astuce": "Pour une durée entre deux heures, avance par étapes : 9 h 47 → 10 h 00 (13 min) → 11 h 00 (1 h) → 11 h 12 (12 min) = 1 h 25."
+    },
+    {
+      "id": "ma-echelle",
+      "matiere": "ma",
+      "e": "🗺️",
+      "titre": "L'échelle d'une carte",
+      "regle": [
+        "Échelle 1/100 000 : 1 cm sur la carte = 100 000 cm en réalité = 1 km.",
+        "Distance réelle = distance sur la carte × nombre de l'échelle.",
+        "On convertit ensuite en km (100 000 cm = 1 km)."
+      ],
+      "exemple": "Échelle 1/400 000 : 1 cm = 4 km. 6,5 cm sur la carte = 6,5 × 4 = 26 km.",
+      "astuce": "Retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm."
+    },
+    {
+      "id": "ma-vitesse",
+      "matiere": "ma",
+      "e": "🚴",
+      "titre": "La vitesse moyenne",
+      "regle": [
+        "Vitesse = distance ÷ durée.",
+        "En km/h : les kilomètres parcourus en 1 heure.",
+        "30 min = 0,5 h ; 1 h 30 = 1,5 h ; 2 h 15 = 2,25 h."
+      ],
+      "exemple": "33 km en 2 h 30 → 33 ÷ 2,5 = 13,2 km/h.",
+      "astuce": "Vérifie si c'est réaliste : un vélo roule vers 15-25 km/h, une voiture vers 50-120 km/h."
+    },
+    {
+      "id": "ma-proportionnalite",
+      "matiere": "ma",
+      "e": "⚖️",
+      "titre": "La proportionnalité",
+      "regle": [
+        "Deux grandeurs sont proportionnelles si, quand l'une double, l'autre double aussi.",
+        "Méthode : on calcule pour 1, puis on multiplie.",
+        "On peut aussi utiliser un tableau et chercher le nombre qui fait passer d'une ligne à l'autre."
+      ],
+      "exemple": "80 kg de graines pour 4 ha → 20 kg pour 1 ha → 200 kg pour 10 ha.",
+      "astuce": "« Pour 1 » est la clé : divise d'abord, multiplie ensuite."
+    },
+    {
+      "id": "ma-fractions",
+      "matiere": "ma",
+      "e": "🍕",
+      "titre": "Les fractions",
+      "regle": [
+        "3/4 : on partage en 4 parts égales et on en prend 3.",
+        "Fraction d'une quantité : on divise par le dénominateur, puis on multiplie par le numérateur.",
+        "Simplifier : on divise le haut et le bas par le même nombre (2/8 = 1/4)."
+      ],
+      "exemple": "3/4 de 60 = (60 ÷ 4) × 3 = 15 × 3 = 45.",
+      "astuce": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 3/4 = 0,75 = 75 %."
+    },
+    {
+      "id": "ma-decimaux",
+      "matiere": "ma",
+      "e": "🔢",
+      "titre": "Les nombres décimaux",
+      "regle": [
+        "Pour comparer : on compare d'abord la partie entière, puis les dixièmes, puis les centièmes…",
+        "Multiplier un décimal : on calcule sans la virgule, puis on remet autant de chiffres après la virgule qu'au départ.",
+        "× 10 : la virgule avance d'un rang vers la droite ; ÷ 10 : vers la gauche."
+      ],
+      "exemple": "0,54 > 0,5 car 54 centièmes > 50 centièmes. 2,9 × 4 : 29 × 4 = 116 → 11,6.",
+      "astuce": "Ajoute des zéros pour comparer facilement : 0,5 = 0,50 et 0,45 < 0,50."
+    },
+    {
+      "id": "ma-division",
+      "matiere": "ma",
+      "e": "➗",
+      "titre": "La division et le reste",
+      "regle": [
+        "Dividende ÷ diviseur = quotient, avec parfois un reste.",
+        "Le reste est toujours plus petit que le diviseur.",
+        "Vérification : quotient × diviseur + reste = dividende."
+      ],
+      "exemple": "129 ÷ 7 = 18 reste 3, car 18 × 7 = 126 et 126 + 3 = 129.",
+      "astuce": "« Combien de groupes complets ? » → c'est le quotient. « Combien en reste-t-il ? » → c'est le reste."
+    },
+    {
+      "id": "ma-moyenne",
+      "matiere": "ma",
+      "e": "📊",
+      "titre": "La moyenne",
+      "regle": [
+        "Moyenne = somme de toutes les valeurs ÷ nombre de valeurs."
+      ],
+      "exemple": "Notes 12, 15 et 18 : (12 + 15 + 18) ÷ 3 = 45 ÷ 3 = 15.",
+      "astuce": "La moyenne est toujours entre la plus petite et la plus grande valeur."
+    },
+    {
+      "id": "ma-monnaie",
+      "matiere": "ma",
+      "e": "💶",
+      "titre": "Calculer avec la monnaie",
+      "regle": [
+        "Prix total = quantité × prix d'un article.",
+        "Rendu = somme donnée − prix total.",
+        "Aligne bien les virgules dans les additions et soustractions."
+      ],
+      "exemple": "4 croissants à 1,20 € = 4,80 €. On paie avec 10 € → on rend 10 − 4,80 = 5,20 €.",
+      "astuce": "Pour comparer des prix, calcule le prix pour 1 kg (ou 1 l) de chaque produit."
+    },
+    {
+      "id": "ma-quadrilateres",
+      "matiere": "ma",
+      "e": "🔷",
+      "titre": "Les quadrilatères",
+      "regle": [
+        "Carré : 4 côtés égaux et 4 angles droits.",
+        "Rectangle : 4 angles droits (côtés opposés égaux).",
+        "Losange : 4 côtés égaux. Parallélogramme : côtés opposés parallèles. Trapèze : au moins 2 côtés parallèles."
+      ],
+      "exemple": "Un carré est un rectangle particulier, et aussi un losange particulier.",
+      "astuce": "Pense à une famille : le carré a toutes les qualités des autres."
+    },
+    {
+      "id": "fr-conjugaison-temps-simples",
+      "matiere": "fr",
+      "e": "✍️",
+      "titre": "Présent, imparfait, futur",
+      "regle": [
+        "Présent (1er groupe) : -e, -es, -e, -ons, -ez, -ent. (2e groupe) : -is, -is, -it, -issons, -issez, -issent.",
+        "Imparfait : -ais, -ais, -ait, -ions, -iez, -aient.",
+        "Futur simple : infinitif + -ai, -as, -a, -ons, -ez, -ont (aller → j'irai, être → je serai, avoir → j'aurai, faire → je ferai)."
+      ],
+      "exemple": "chanter : je chante / je chantais / je chanterai. finir : nous finissons / nous finissions / nous finirons.",
+      "astuce": "Imparfait = « avant, d'habitude ». Futur = « demain »."
+    },
+    {
+      "id": "fr-passe-compose",
+      "matiere": "fr",
+      "e": "⏮️",
+      "titre": "Le passé composé",
+      "regle": [
+        "Auxiliaire avoir ou être au présent + participe passé.",
+        "Avec avoir : le participe ne s'accorde pas avec le sujet (elles ont chanté).",
+        "Avec être : il s'accorde avec le sujet (elles sont allées)."
+      ],
+      "exemple": "Nous avons fini. Elle est venue. Ils sont partis.",
+      "astuce": "Participe en -é, -i ou -u ? Mets-le au féminin : prise → pris, faite → fait."
+    },
+    {
+      "id": "fr-homophones",
+      "matiere": "fr",
+      "e": "👂",
+      "titre": "Les homophones",
+      "regle": [
+        "a (on peut dire « avait ») / à (on ne peut pas).",
+        "ont (« avaient ») / on (« il »).",
+        "et (« et puis ») / est (« était »).",
+        "ses (« les siens ») / ces (« ceux-là »). ou (« ou bien ») / où (un lieu)."
+      ],
+      "exemple": "Il a mangé à la cantine. Ils ont faim, on mange ?",
+      "astuce": "Remplace le mot par un autre : si la phrase a encore du sens, tu as trouvé le bon."
+    },
+    {
+      "id": "fr-sujet-complements",
+      "matiere": "fr",
+      "e": "🧩",
+      "titre": "Sujet et compléments",
+      "regle": [
+        "Le sujet : on le trouve avec « Qui est-ce qui… ? » ou « Qu'est-ce qui… ? » devant le verbe.",
+        "Le complément de phrase peut être déplacé ou supprimé (où ? quand ? comment ?).",
+        "Le complément du verbe ne peut pas être déplacé ni supprimé."
+      ],
+      "exemple": "Au cours de notre vie, nos empreintes ne changent pas. → « Au cours de notre vie » : complément de phrase.",
+      "astuce": "Encadre le sujet par « C'est … qui » : C'est le petit chien qui aboie."
+    },
+    {
+      "id": "fr-classes-mots",
+      "matiere": "fr",
+      "e": "🏷️",
+      "titre": "Les classes de mots",
+      "regle": [
+        "Nom, déterminant, adjectif, pronom, verbe : ce sont des mots variables.",
+        "Adverbe, préposition, conjonction : ils sont invariables.",
+        "Un mot en -ment est souvent un adverbe (rapidement)."
+      ],
+      "exemple": "« petits » dans « de petits métiers » est un adjectif ; « prend » est un verbe.",
+      "astuce": "Pour trouver un verbe, conjugue-le : je prends, tu prends… Si ça marche, c'est un verbe."
+    },
+    {
+      "id": "fr-modes",
+      "matiere": "fr",
+      "e": "🎛️",
+      "titre": "Les modes du verbe",
+      "regle": [
+        "Indicatif : il raconte un fait (il joue).",
+        "Impératif : un ordre ou un conseil, sans sujet (joue ! jouons !).",
+        "Infinitif : la forme du dictionnaire (jouer). Participe : joué, jouant."
+      ],
+      "exemple": "« Découvrons ces traces » → impératif. « On peut remarquer » → remarquer est à l'infinitif.",
+      "astuce": "Pas de sujet + ton d'ordre = impératif."
+    },
+    {
+      "id": "fr-vocabulaire",
+      "matiere": "fr",
+      "e": "📚",
+      "titre": "Le vocabulaire",
+      "regle": [
+        "Antonymes : mots de sens contraire (positif / négatif).",
+        "Synonymes : mots de sens proche (content / joyeux).",
+        "Mot dérivé : mot racine + préfixe ou suffixe (science → scientifique).",
+        "Un même mot peut avoir plusieurs sens : c'est la phrase qui choisit."
+      ],
+      "exemple": "« résistance » : le fer résiste aux forces / la résistance s'oppose à l'ennemi.",
+      "astuce": "Pour trouver le mot racine, enlève le début ou la fin du mot : in-visible, criminel → crime."
+    },
+    {
+      "id": "fr-lire-intention",
+      "matiere": "fr",
+      "e": "🔎",
+      "titre": "Lire : fait, opinion, intention",
+      "regle": [
+        "Un fait peut être vérifié par tout le monde.",
+        "Une opinion dépend de la personne (beau, monstrueux, le meilleur…).",
+        "Intention de l'auteur : informer, persuader, enjoindre (donner des consignes), donner du plaisir (raconter, faire rire)."
+      ],
+      "exemple": "Recette = enjoindre. Article sur la tour Eiffel = informer. Bande dessinée = donner du plaisir.",
+      "astuce": "Cherche les mots qui jugent (beau, horrible) : ils montrent une opinion."
+    },
+    {
+      "id": "fr-accords",
+      "matiere": "fr",
+      "e": "🔗",
+      "titre": "Pluriels et accords",
+      "regle": [
+        "Pluriel en général : + s. Noms en -al → -aux (sauf bal, carnaval, festival…).",
+        "Noms en -eau, -au, -eu → + x (des bateaux, des jeux).",
+        "L'adjectif s'accorde avec le nom : des roses rouges, des fleurs blanches."
+      ],
+      "exemple": "un cheval → des chevaux ; une jolie fleur → de jolies fleurs.",
+      "astuce": "Cherche le nom dont parle l'adjectif, puis regarde son genre et son nombre."
+    },
+    {
+      "id": "fr-pronoms",
+      "matiere": "fr",
+      "e": "👉",
+      "titre": "Les pronoms",
+      "regle": [
+        "Un pronom remplace un nom ou un groupe de mots pour éviter les répétitions.",
+        "Il prend le genre et le nombre du nom remplacé (elles → des noms féminins pluriels).",
+        "le, la, les, lui, leur peuvent aussi être des pronoms devant un verbe."
+      ],
+      "exemple": "Les minuties sont petites. C'est grâce à elles… → « elles » = les minuties.",
+      "astuce": "Pour trouver ce que remplace un pronom, relis la phrase d'avant."
+    },
+    {
+      "id": "hg-periodes",
+      "matiere": "hg",
+      "e": "🏛️",
+      "titre": "Les périodes de l'histoire",
+      "regle": [
+        "Préhistoire : jusqu'à l'invention de l'écriture (vers 3500 av. J.-C.).",
+        "Antiquité : jusqu'à la fin de l'Empire romain d'Occident (476).",
+        "Moyen Âge : jusqu'à l'arrivée de Christophe Colomb en Amérique (1492).",
+        "Temps modernes : jusqu'à la Révolution française (1789). Ensuite : Époque contemporaine."
+      ],
+      "exemple": "Les Mérovingiens (5e-7e siècle) vivaient au Moyen Âge.",
+      "astuce": "Retiens les 4 dates charnières : 3500 av. J.-C., 476, 1492, 1789."
+    },
+    {
+      "id": "hg-siecles",
+      "matiere": "hg",
+      "e": "🕰️",
+      "titre": "Les siècles",
+      "regle": [
+        "Un siècle = 100 ans.",
+        "Le 1er siècle va de l'an 1 à l'an 100 ; le 20e siècle de 1901 à 2000.",
+        "Nous sommes au 21e siècle (XXIe)."
+      ],
+      "exemple": "1889 → 19e siècle ; 1900 → 19e siècle ; 1901 → 20e siècle.",
+      "astuce": "Prends les centaines de l'année et ajoute 1 (1889 → 18 + 1 = 19). Attention aux années qui finissent par 00 !"
+    },
+    {
+      "id": "hg-dates-cles",
+      "matiere": "hg",
+      "e": "📅",
+      "titre": "Quelques dates clés",
+      "regle": [
+        "800 : Charlemagne est sacré empereur.",
+        "1830 : indépendance de la Belgique.",
+        "1914-1918 : Première Guerre mondiale. 1940-1945 : Seconde Guerre mondiale.",
+        "1958 : naissance de la Communauté économique européenne (ancêtre de l'Union européenne)."
+      ],
+      "exemple": "Gabrielle Petit, résistante belge, a vécu pendant la Première Guerre mondiale.",
+      "astuce": "Place chaque date sur une frise : tu verras mieux dans quelle période elle se trouve."
+    },
+    {
+      "id": "hg-belgique",
+      "matiere": "hg",
+      "e": "🇧🇪",
+      "titre": "La Belgique",
+      "regle": [
+        "3 régions : flamande, wallonne, Bruxelles-Capitale.",
+        "10 provinces : 5 en Flandre, 5 en Wallonie.",
+        "Provinces wallonnes : Hainaut, Namur, Liège, Luxembourg, Brabant wallon."
+      ],
+      "exemple": "Bruxelles-Capitale est la région la plus densément peuplée.",
+      "astuce": "Flandre au nord, Wallonie au sud, Bruxelles au centre."
+    },
+    {
+      "id": "hg-globe",
+      "matiere": "hg",
+      "e": "🌐",
+      "titre": "Le globe : lignes et océans",
+      "regle": [
+        "L'équateur partage la Terre en hémisphère Nord et hémisphère Sud.",
+        "La zone chaude est entre les tropiques (du Cancer au nord, du Capricorne au sud).",
+        "Océans : Atlantique (entre Europe/Afrique et Amérique), Pacifique (le plus grand), Indien, Arctique, Austral."
+      ],
+      "exemple": "La Belgique est dans l'hémisphère Nord, en zone tempérée.",
+      "astuce": "Le tropique du Cancer est au nord de l'équateur, le tropique du Capricorne au sud."
+    },
+    {
+      "id": "hg-densite",
+      "matiere": "hg",
+      "e": "👥",
+      "titre": "La densité de population",
+      "regle": [
+        "Densité = nombre d'habitants ÷ superficie (en km²).",
+        "Elle s'exprime en habitants par km² (hab./km²)."
+      ],
+      "exemple": "500 000 habitants sur 2 500 km² → 200 hab./km².",
+      "astuce": "Plus il y a de monde sur un petit territoire, plus la densité est grande."
+    },
+    {
+      "id": "sc-corps-humain",
+      "matiere": "sc",
+      "e": "❤️",
+      "titre": "Circulation et respiration",
+      "regle": [
+        "Le cœur pompe le sang. Artères : du cœur vers les organes. Veines : des organes vers le cœur.",
+        "Dans les poumons (alvéoles), le sang prend le dioxygène (O₂) et rejette le dioxyde de carbone (CO₂).",
+        "Dans l'intestin, les nutriments passent dans le sang."
+      ],
+      "exemple": "Inspiration : le diaphragme descend, l'air entre. Expiration : l'air sort.",
+      "astuce": "Artère = « Aller » (A comme Aller, depuis le cœur)."
+    },
+    {
+      "id": "sc-classification",
+      "matiere": "sc",
+      "e": "🦋",
+      "titre": "Classer les vivants",
+      "regle": [
+        "On classe les animaux d'après leurs attributs (ce qu'ils ont), pas d'après ce qu'ils font.",
+        "Mammifères : poils, mamelles. Oiseaux : plumes. Insectes : 3 paires de pattes, 1 paire d'antennes.",
+        "Une espèce : des êtres qui peuvent se reproduire entre eux et avoir des petits eux-mêmes féconds."
+      ],
+      "exemple": "La chauve-souris vole mais a des poils et des mamelles : c'est un mammifère.",
+      "astuce": "Pose-toi la question : « Qu'est-ce qu'il A ? » (plumes, poils, squelette…)."
+    },
+    {
+      "id": "sc-combustion",
+      "matiere": "sc",
+      "e": "🔥",
+      "titre": "La combustion",
+      "regle": [
+        "Pour brûler, il faut : un combustible, du dioxygène (O₂) et de la chaleur (triangle du feu).",
+        "Une combustion libère de la chaleur, de la vapeur d'eau et du dioxyde de carbone (CO₂).",
+        "Pour éteindre, on supprime un des trois éléments."
+      ],
+      "exemple": "Huile en feu : couvrir avec une couverture humide (on prive le feu d'O₂). Jamais d'eau !",
+      "astuce": "En cas d'incendie, sors accroupi : la fumée chaude monte vers le plafond."
+    },
+    {
+      "id": "sc-phenomenes",
+      "matiere": "sc",
+      "e": "🧊",
+      "titre": "Physique ou chimique ?",
+      "regle": [
+        "Phénomène physique : la matière ne change pas (changement d'état, mélange).",
+        "Phénomène chimique : une nouvelle matière apparaît (rouille, combustion, cuisson)."
+      ],
+      "exemple": "La glace qui fond = physique. Le fer qui rouille = chimique.",
+      "astuce": "Peut-on revenir en arrière facilement ? Oui → souvent physique. Non → souvent chimique."
+    },
+    {
+      "id": "sc-energie",
+      "matiere": "sc",
+      "e": "⚡",
+      "titre": "L'énergie",
+      "regle": [
+        "Renouvelables : soleil, vent, eau, bois… (elles se renouvellent vite).",
+        "Non renouvelables : pétrole, gaz naturel, charbon, uranium (elles s'épuisent).",
+        "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air."
+      ],
+      "exemple": "Un radiateur est en acier (conducteur) ; un pull en laine garde la chaleur (isolant).",
+      "astuce": "Ce qui a mis des millions d'années à se former (pétrole, gaz) ne se renouvelle pas."
+    }
+  ]
+}

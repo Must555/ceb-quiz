@@ -44,6 +44,8 @@ export function nouveauJoueur(pseudo, avatar, couleur) {
     badges: {},         // { id: dateObtention }
     sessions: [],       // résumé des 50 dernières sessions
     historique: [],     // ids des questions déjà vues
+    notions: {},        // coach : { idFiche: { r: [1, 0, 0.5…], vu } }
+    aRevoir: {},        // coach : { 'm:idModele' | 'q:idQuestion': { notion, boite, due } }
     totalQuestions: 0,
     totalBonnes: 0,
   };
@@ -55,7 +57,9 @@ export function listeJoueurs() {
 
 export function joueurActif() {
   const s = lire();
-  return s.actif ? s.joueurs[s.actif] ?? null : null;
+  const j = s.actif ? s.joueurs[s.actif] ?? null : null;
+  if (j) { j.notions ??= {}; j.aRevoir ??= {}; } // joueurs créés avant le coach
+  return j;
 }
 
 export function pseudoPris(pseudo) {

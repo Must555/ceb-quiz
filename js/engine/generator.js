@@ -134,6 +134,7 @@ function finaliser(q, modele) {
     ...q,
     source: 'modele',
     modeleId: modele.id,
+    fiche: modele.fiche ?? q.fiche,
     matiere: modele.matiere,
     domaine: modele.domaine,
     difficulte: modele.difficulte ?? 2,

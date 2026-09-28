@@ -27,6 +27,9 @@ const PAR_DEFAUT = {
   maxParModele: 3,         // variantes d'un même modèle par session
   seed: undefined,
   now: () => Date.now(),   // injectable pour les tests
+  // Pondération personnalisée (coach) : fonction (questionOuModele) => poids ≥ 0.
+  // 0 = jamais tiré ; 5 = cinq fois plus de chances. N'affecte jamais l'anti-répétition.
+  poids: null,
 };
 
 export class QuizSession {
@@ -116,24 +119,26 @@ export class QuizSession {
     // Pas deux fois de suite le même modèle, sauf s'il n'y a rien d'autre.
     if (modeles.length > 1 || fixes.length > 0) modeles = modeles.filter((m) => m.id !== this.dernierModele);
 
-    for (let essai = 0; essai < 20; essai++) {
-      const poidsTotal = fixes.length + modeles.length * this.o.poidsModele;
-      if (poidsTotal === 0) return null;
-      let r = this.rng.next() * poidsTotal;
+    const poids = this.o.poids ?? (() => 1);
+    let candidats = [
+      ...fixes.map((item) => ({ item, modele: false, w: poids(item) })),
+      ...modeles.map((item) => ({ item, modele: true, w: this.o.poidsModele * poids(item) })),
+    ].filter((c) => c.w > 0);
 
-      if (r < fixes.length) {
-        const q = fixes[Math.floor(r)];
-        this.dernierModele = null;
-        return q;
-      }
-      r -= fixes.length;
-      const modele = modeles[Math.floor(r / this.o.poidsModele)];
+    for (let essai = 0; essai < 30 && candidats.length; essai++) {
+      const total = candidats.reduce((s, c) => s + c.w, 0);
+      let r = this.rng.next() * total;
+      const c = candidats.find((x) => (r -= x.w) < 0) ?? candidats[candidats.length - 1];
+
+      if (!c.modele) { this.dernierModele = null; return c.item; }
+
+      const modele = c.item;
       const exclure = eviterHistorique ? new Set([...this.vus, ...this.historique]) : this.vus;
       const q = genererVariante(modele, this.rng, exclure);
       if (!q || this.dejaPosee(q)) {
         // Modèle épuisé pour cette session : on le retire du tirage.
         if (!q && !eviterHistorique) this.epuises.add(modele.id);
-        modeles = modeles.filter((m) => m !== modele);
+        candidats = candidats.filter((x) => x !== c);
         continue;
       }
       this.parModele.set(modele.id, (this.parModele.get(modele.id) ?? 0) + 1);
@@ -161,7 +166,7 @@ export class QuizSession {
     this.xp += xpGagne;
 
     const entree = {
-      questionId: q.id, modeleId: q.modeleId ?? null, domaine: q.domaine,
+      questionId: q.id, modeleId: q.modeleId ?? null, domaine: q.domaine, notion: q.fiche ?? q.domaine,
       reponse: reponseEleve, ...res, xpGagne, t: this.tempsEcoule(),
     };
     this.reponses.push(entree);
@@ -206,6 +211,8 @@ export class QuizSession {
       dureeSecondes: this.tempsEcoule(),
       parDomaine,
       idsVus: [...this.vus], // à ajouter à l'historique de l'enfant
+      // Détail question par question (pour le coach : maîtrise par notion, révisions)
+      details: this.reponses.map((r) => ({ questionId: r.questionId, modeleId: r.modeleId, domaine: r.domaine, notion: r.notion, correct: r.correct, ratio: r.max ? (r.score ?? 0) / r.max : 0 })),
     };
   }
 }

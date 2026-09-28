@@ -74,7 +74,8 @@
       "enonce": "{p.nom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-{p.pr} payer ?",
       "reponse": "prix - prix * remise / 100",
       "unite": "€",
-      "explication": "{remise} % de {prix} € = {prix} × {remise} ÷ 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €."
+      "explication": "{remise} % de {prix} € = {prix} × {remise} ÷ 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €.",
+      "fiche": "ma-pourcentages"
     },
     {
       "id": "ma-m-pourcentage-simple",
@@ -105,7 +106,8 @@
       "enonce": "Calcule {p} % de {n} €.",
       "reponse": "n * p / 100",
       "unite": "€",
-      "explication": "{p} % de {n}, c'est {n} × {p} ÷ 100 = {=n * p / 100} €."
+      "explication": "{p} % de {n}, c'est {n} × {p} ÷ 100 = {=n * p / 100} €.",
+      "fiche": "ma-pourcentages"
     },
     {
       "id": "ma-m-aire-rectangle",
@@ -138,7 +140,8 @@
       "enonce": "{lieu} rectangulaire mesure {L} m de long et {l} m de large. Quelle est son aire ?",
       "reponse": "L * l",
       "unite": "m²",
-      "explication": "Aire du rectangle = longueur × largeur = {L} × {l} = {=L * l} m²."
+      "explication": "Aire du rectangle = longueur × largeur = {L} × {l} = {=L * l} m².",
+      "fiche": "ma-aires-perimetres"
     },
     {
       "id": "ma-m-perimetre-rectangle",
@@ -161,7 +164,8 @@
       "enonce": "Pour clôturer un jardin rectangulaire de {L} m sur {l} m, combien de mètres de clôture faut-il ?",
       "reponse": "2 * (L + l)",
       "unite": "m",
-      "explication": "Le périmètre, c'est le tour : ({L} + {l}) × 2 = {=2 * (L + l)} m."
+      "explication": "Le périmètre, c'est le tour : ({L} + {l}) × 2 = {=2 * (L + l)} m.",
+      "fiche": "ma-aires-perimetres"
     },
     {
       "id": "ma-m-aire-triangle",
@@ -184,7 +188,8 @@
       "enonce": "Un triangle a une base de {b} cm et une hauteur de {h} cm. Quelle est son aire ?",
       "reponse": "b * h / 2",
       "unite": "cm²",
-      "explication": "Aire du triangle = (base × hauteur) ÷ 2 = ({b} × {h}) ÷ 2 = {=b * h / 2} cm²."
+      "explication": "Aire du triangle = (base × hauteur) ÷ 2 = ({b} × {h}) ÷ 2 = {=b * h / 2} cm².",
+      "fiche": "ma-aires-perimetres"
     },
     {
       "id": "ma-m-volume-pave",
@@ -208,7 +213,8 @@
       "enonce": "Une boîte en forme de parallélépipède rectangle mesure {L} cm de long, {l} cm de large et {h} cm de haut. Quel est son volume ?",
       "reponse": "L * l * h",
       "unite": "cm³",
-      "explication": "Volume = longueur × largeur × hauteur = {L} × {l} × {h} = {=L * l * h} cm³."
+      "explication": "Volume = longueur × largeur × hauteur = {L} × {l} × {h} = {=L * l * h} cm³.",
+      "fiche": "ma-volumes"
     },
     {
       "id": "ma-m-echelle",
@@ -264,7 +270,8 @@
       "enonce": "Sur une carte à l'échelle 1/{e}, la distance en ligne droite entre {villes.a} et {villes.b} mesure {cm} cm. Quelle est la distance réelle en kilomètres ?",
       "reponse": "km",
       "unite": "km",
-      "explication": "1 cm sur la carte = {e} cm en vrai = {=e / 100000} km. Donc {cm} cm × {=e / 100000} = {=km} km."
+      "explication": "1 cm sur la carte = {e} cm en vrai = {=e / 100000} km. Donc {cm} cm × {=e / 100000} = {=km} km.",
+      "fiche": "ma-echelle"
     },
     {
       "id": "ma-m-duree-heure-fin",
@@ -325,7 +332,8 @@
         "{fh}:{fm}"
       ],
       "souple": true,
-      "explication": "{d} min = {=floor(d / 60)} h {=d % 60} min. {h} h {m} + {=floor(d / 60)} h {=d % 60} min = {fh} h {fm}."
+      "explication": "{d} min = {=floor(d / 60)} h {=d % 60} min. {h} h {m} + {=floor(d / 60)} h {=d % 60} min = {fh} h {fm}.",
+      "fiche": "ma-durees"
     },
     {
       "id": "ma-m-conversion",
@@ -438,7 +446,8 @@
       "enonce": "Convertis : {v} {c.de} = ? {c.vers}",
       "reponse": "r",
       "unite": "{c.vers}",
-      "explication": "1 {c.de} = {=c_f} {c.vers}. Donc {v} {c.de} = {v} × {=c_f} = {=r} {c.vers}."
+      "explication": "1 {c.de} = {=c_f} {c.vers}. Donc {v} {c.de} = {v} × {=c_f} = {=r} {c.vers}.",
+      "fiche": "ma-conversions"
     },
     {
       "id": "ma-m-fraction-quantite",
@@ -485,7 +494,8 @@
       ],
       "enonce": "Il y a {q} {chose}. Combien font les {num}/{den} de ces {chose} ?",
       "reponse": "q / den * num",
-      "explication": "On partage en {den} : {q} ÷ {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}."
+      "explication": "On partage en {den} : {q} ÷ {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}.",
+      "fiche": "ma-fractions"
     },
     {
       "id": "ma-m-proportionnalite",
@@ -568,7 +578,8 @@
       ],
       "enonce": "{ctx.a} {x} {ctx.u1}, {ctx.b} {=a} {ctx.u2}. Combien en faut-il pour {y} {ctx.u1} ?",
       "reponse": "r",
-      "explication": "Pour 1 {ctx.u1s} : {=a} ÷ {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}."
+      "explication": "Pour 1 {ctx.u1s} : {=a} ÷ {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}.",
+      "fiche": "ma-proportionnalite"
     },
     {
       "id": "ma-m-vitesse",
@@ -644,7 +655,8 @@
       "enonce": "{veh.nom} parcourt {=d} km en {t.txt}. Quelle est sa vitesse moyenne en km/h ?",
       "reponse": "v",
       "unite": "km/h",
-      "explication": "Vitesse = distance ÷ durée = {=d} km ÷ {=t_h} h = {=v} km/h."
+      "explication": "Vitesse = distance ÷ durée = {=d} km ÷ {=t_h} h = {=v} km/h.",
+      "fiche": "ma-vitesse"
     },
     {
       "id": "ma-m-multiplication-decimale",
@@ -672,7 +684,8 @@
         "a * b / 10",
         "a * b + b"
       ],
-      "explication": "On calcule sans la virgule : {=a * 10} × {b} = {=a * b * 10}. Il y a 1 chiffre après la virgule dans {a}, donc le résultat en a 1 aussi : {=a * b}."
+      "explication": "On calcule sans la virgule : {=a * 10} × {b} = {=a * b * 10}. Il y a 1 chiffre après la virgule dans {a}, donc le résultat en a 1 aussi : {=a * b}.",
+      "fiche": "ma-decimaux"
     },
     {
       "id": "ma-m-division-euclidienne",
@@ -708,7 +721,8 @@
       ],
       "enonce": "On range {n} {objet} {g}. Combien de groupes complets peut-on faire ?",
       "reponse": "floor(n / g)",
-      "explication": "{n} ÷ {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}."
+      "explication": "{n} ÷ {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}.",
+      "fiche": "ma-division"
     },
     {
       "id": "ma-m-moyenne",
@@ -745,7 +759,8 @@
       ],
       "enonce": "{p} a obtenu {a}/20, {b}/20 et {c}/20 à trois interrogations. Quelle est sa moyenne sur 20 ?",
       "reponse": "(a + b + c) / 3",
-      "explication": "Moyenne = somme ÷ nombre de notes = ({a} + {b} + {c}) ÷ 3 = {=a + b + c} ÷ 3 = {=(a + b + c) / 3}."
+      "explication": "Moyenne = somme ÷ nombre de notes = ({a} + {b} + {c}) ÷ 3 = {=a + b + c} ÷ 3 = {=(a + b + c) / 3}.",
+      "fiche": "ma-moyenne"
     },
     {
       "id": "ma-m-prix-total-rendu",
@@ -787,7 +802,8 @@
       "enonce": "Tu achètes {n1} {art} à {p1} € pièce et tu paies avec un billet de {billet} €. Combien te rend-on ?",
       "reponse": "billet - total",
       "unite": "€",
-      "explication": "Prix total : {n1} × {p1} = {=total} €. Rendu : {billet} − {=total} = {=billet - total} €."
+      "explication": "Prix total : {n1} × {p1} = {=total} €. Rendu : {billet} − {=total} = {=billet - total} €.",
+      "fiche": "ma-monnaie"
     }
   ]
 }

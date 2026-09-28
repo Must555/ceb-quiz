@@ -6,14 +6,22 @@
       "domaine": "fr.conjugaison",
       "difficulte": 1,
       "generateur": "conjugaison",
-      "temps": ["present", "imparfait", "futur"]
+      "temps": [
+        "present",
+        "imparfait",
+        "futur"
+      ],
+      "fiche": "fr-conjugaison-temps-simples"
     },
     {
       "id": "fr-m-conjugaison-passe-compose",
       "domaine": "fr.conjugaison",
       "difficulte": 2,
       "generateur": "conjugaison",
-      "temps": ["passe_compose"]
+      "temps": [
+        "passe_compose"
+      ],
+      "fiche": "fr-passe-compose"
     },
     {
       "id": "fr-m-homophones",
@@ -21,29 +29,114 @@
       "type": "qcm",
       "difficulte": 1,
       "variables": {
-        "h": { "liste": [
-          { "phrase": "Mon frère ___ oublié son cartable.", "bon": "a", "faux": "à", "pourquoi": "On peut dire « avait oublié » : c'est le verbe avoir." },
-          { "phrase": "Nous partons ___ la mer demain.", "bon": "à", "faux": "a", "pourquoi": "On ne peut pas dire « avait la mer » : c'est la préposition « à »." },
-          { "phrase": "Les enfants ___ bien joué.", "bon": "ont", "faux": "on", "pourquoi": "On peut dire « avaient joué » : c'est le verbe avoir." },
-          { "phrase": "___ ira au parc après l'école.", "bon": "On", "faux": "Ont", "pourquoi": "On peut remplacer par « il » : c'est le pronom « on »." },
-          { "phrase": "Le chat ___ sur le canapé.", "bon": "est", "faux": "et", "pourquoi": "On peut dire « était » : c'est le verbe être." },
-          { "phrase": "J'ai acheté du pain ___ du fromage.", "bon": "et", "faux": "est", "pourquoi": "On peut dire « et puis » : c'est le mot de liaison « et »." },
-          { "phrase": "___ livres sont sur la table.", "bon": "Ses", "faux": "Ces", "pourquoi": "On peut dire « les siens » : ce sont les livres à lui ou à elle." },
-          { "phrase": "Regarde ___ oiseaux dans le ciel !", "bon": "ces", "faux": "ses", "pourquoi": "On les montre du doigt : « ces oiseaux-là »." },
-          { "phrase": "Tu viens ___ tu restes ?", "bon": "ou", "faux": "où", "pourquoi": "On peut dire « ou bien » : c'est un choix." },
-          { "phrase": "___ as-tu rangé tes chaussures ?", "bon": "Où", "faux": "Ou", "pourquoi": "On demande un lieu : « où » avec un accent." },
-          { "phrase": "Elle ___ lave les mains.", "bon": "se", "faux": "ce", "pourquoi": "On peut dire « elle me lave, elle te lave » : c'est « se »." },
-          { "phrase": "___ matin, il pleut.", "bon": "Ce", "faux": "Se", "pourquoi": "On peut dire « ce matin-là » : c'est « ce »." },
-          { "phrase": "Les élèves ___ leurs cahiers.", "bon": "prennent", "faux": "prenne", "pourquoi": "Le sujet « les élèves » est au pluriel : le verbe se termine par -ent." },
-          { "phrase": "Il ___ fait peur.", "bon": "m'a", "faux": "ma", "pourquoi": "On peut dire « m'avait fait peur » : c'est « m'a » (me + a)." },
-          { "phrase": "C'est ___ trousse.", "bon": "ma", "faux": "m'a", "pourquoi": "On peut dire « la mienne » : c'est le déterminant « ma »." },
-          { "phrase": "Il faut ___ dépêcher.", "bon": "se", "faux": "ce", "pourquoi": "« se dépêcher » est un verbe pronominal." }
-        ] }
+        "h": {
+          "liste": [
+            {
+              "phrase": "Mon frère ___ oublié son cartable.",
+              "bon": "a",
+              "faux": "à",
+              "pourquoi": "On peut dire « avait oublié » : c'est le verbe avoir."
+            },
+            {
+              "phrase": "Nous partons ___ la mer demain.",
+              "bon": "à",
+              "faux": "a",
+              "pourquoi": "On ne peut pas dire « avait la mer » : c'est la préposition « à »."
+            },
+            {
+              "phrase": "Les enfants ___ bien joué.",
+              "bon": "ont",
+              "faux": "on",
+              "pourquoi": "On peut dire « avaient joué » : c'est le verbe avoir."
+            },
+            {
+              "phrase": "___ ira au parc après l'école.",
+              "bon": "On",
+              "faux": "Ont",
+              "pourquoi": "On peut remplacer par « il » : c'est le pronom « on »."
+            },
+            {
+              "phrase": "Le chat ___ sur le canapé.",
+              "bon": "est",
+              "faux": "et",
+              "pourquoi": "On peut dire « était » : c'est le verbe être."
+            },
+            {
+              "phrase": "J'ai acheté du pain ___ du fromage.",
+              "bon": "et",
+              "faux": "est",
+              "pourquoi": "On peut dire « et puis » : c'est le mot de liaison « et »."
+            },
+            {
+              "phrase": "___ livres sont sur la table.",
+              "bon": "Ses",
+              "faux": "Ces",
+              "pourquoi": "On peut dire « les siens » : ce sont les livres à lui ou à elle."
+            },
+            {
+              "phrase": "Regarde ___ oiseaux dans le ciel !",
+              "bon": "ces",
+              "faux": "ses",
+              "pourquoi": "On les montre du doigt : « ces oiseaux-là »."
+            },
+            {
+              "phrase": "Tu viens ___ tu restes ?",
+              "bon": "ou",
+              "faux": "où",
+              "pourquoi": "On peut dire « ou bien » : c'est un choix."
+            },
+            {
+              "phrase": "___ as-tu rangé tes chaussures ?",
+              "bon": "Où",
+              "faux": "Ou",
+              "pourquoi": "On demande un lieu : « où » avec un accent."
+            },
+            {
+              "phrase": "Elle ___ lave les mains.",
+              "bon": "se",
+              "faux": "ce",
+              "pourquoi": "On peut dire « elle me lave, elle te lave » : c'est « se »."
+            },
+            {
+              "phrase": "___ matin, il pleut.",
+              "bon": "Ce",
+              "faux": "Se",
+              "pourquoi": "On peut dire « ce matin-là » : c'est « ce »."
+            },
+            {
+              "phrase": "Les élèves ___ leurs cahiers.",
+              "bon": "prennent",
+              "faux": "prenne",
+              "pourquoi": "Le sujet « les élèves » est au pluriel : le verbe se termine par -ent."
+            },
+            {
+              "phrase": "Il ___ fait peur.",
+              "bon": "m'a",
+              "faux": "ma",
+              "pourquoi": "On peut dire « m'avait fait peur » : c'est « m'a » (me + a)."
+            },
+            {
+              "phrase": "C'est ___ trousse.",
+              "bon": "ma",
+              "faux": "m'a",
+              "pourquoi": "On peut dire « la mienne » : c'est le déterminant « ma »."
+            },
+            {
+              "phrase": "Il faut ___ dépêcher.",
+              "bon": "se",
+              "faux": "ce",
+              "pourquoi": "« se dépêcher » est un verbe pronominal."
+            }
+          ]
+        }
       },
       "enonce": "Complète avec le bon mot : {h.phrase}",
       "reponse": "{h.bon}",
-      "distracteurs": ["{h.faux}"],
-      "explication": "« {h.bon} ». {h.pourquoi}"
+      "distracteurs": [
+        "{h.faux}"
+      ],
+      "explication": "« {h.bon} ». {h.pourquoi}",
+      "fiche": "fr-homophones"
     }
   ]
 }

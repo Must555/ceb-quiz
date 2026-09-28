@@ -322,3 +322,54 @@ button:disabled { cursor:default; }
   .gains b { font-size:20px; }
   .toast { top:auto; bottom:150px; max-width:calc(100% - 32px); text-align:center; }
 }
+
+/* ---------- Coach ---------- */
+.coach { border-color:var(--accent); }
+[data-theme="neon"] .coach, [data-theme="sunset"] .coach { border:2px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+.coach-tete { display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+.coach-ico { width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:26px; background:var(--accent); color:var(--accent-txt); flex:none; }
+.coach h3 { font-size:20px; font-weight:800; }
+.coach p { margin:0 0 10px; }
+.coach-liste { display:flex; flex-direction:column; gap:8px; margin-bottom:12px; }
+.coach-ligne { display:grid; grid-template-columns:34px 1fr auto; gap:10px; align-items:center; background:var(--panel2); border:var(--bord); border-radius:14px; padding:8px 10px; }
+.coach-ligne .e { font-size:24px; text-align:center; }
+.coach-ligne b { font-size:15px; display:block; margin-bottom:5px; }
+.coach-ligne .barre { height:8px; }
+.coach-actions { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.btn.petit { padding:8px 10px; font-size:15px; border-radius:10px; }
+.btn-fiche { font-size:14px; padding:8px 12px; margin-top:4px; }
+
+/* ---------- Fiche (fenêtre) ---------- */
+.modal-fond { position:fixed; inset:0; z-index:60; background:rgba(0,0,0,.55); display:grid; place-items:center; padding:16px; animation:apparait .15s ease; }
+@keyframes apparait { from { opacity:0; } }
+.modal { width:100%; max-width:540px; max-height:calc(100vh - 32px); overflow:auto; background:var(--fond); }
+[data-theme="sunset"] .modal { background:#3a1250; }
+.modal .sur { font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:12px; color:var(--mute); }
+.modal h2 { font-size:26px; font-weight:900; margin:6px 0 10px; }
+.regle { margin:0 0 12px; padding-left:20px; }
+.regle li { margin-bottom:6px; }
+.encart { background:var(--panel2); border:var(--bord); border-radius:14px; padding:10px 12px; margin-bottom:10px; }
+.encart p { margin:4px 0 0; }
+.encart.astuce { border-color:var(--accent); }
+.modal-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.modal-actions .btn { flex:1; min-width:140px; }
+
+/* ---------- Mes progrès ---------- */
+.progres { max-width:820px; margin:0 auto; padding:20px 16px 100px; display:flex; flex-direction:column; gap:16px; }
+.progres h1 { font-size:30px; font-weight:900; }
+.legende { display:flex; gap:14px; flex-wrap:wrap; margin:0; color:var(--mute); font-size:14px; font-weight:600; }
+.notions { display:flex; flex-direction:column; gap:8px; }
+.notion { display:grid; grid-template-columns:34px 1fr auto auto; gap:10px; align-items:center; padding:10px; border-radius:14px; background:var(--panel2); border:var(--bord); }
+.notion .e { font-size:24px; text-align:center; }
+.notion .nom b { display:block; }
+.notion .nom small { color:var(--mute); display:block; margin-bottom:6px; }
+.notion .barre { height:8px; }
+.notion.st-fragile { border-left:5px solid #f97316; }
+.notion.st-progres { border-left:5px solid #eab308; }
+.notion.st-maitrise { border-left:5px solid var(--juste); }
+@media (max-width:760px) {
+  .modal-actions { flex-direction:column-reverse; }
+  .modal h2 { font-size:22px; }
+  .notion { grid-template-columns:30px 1fr auto; }
+  .notion [data-fiche] { display:none; } /* sur téléphone : on touche 🎯, la fiche s'ouvre avant la mission */
+}

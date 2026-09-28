@@ -13,11 +13,13 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
     console.warn(e.message); return null; // un fichier manquant ne bloque pas le reste
   })));
 
-  const [banques, fichiersModeles, indexExamens] = await Promise.all([
+  const [banques, fichiersModeles, indexExamens, fichiersFiches] = await Promise.all([
     lire(catalogue.sources.banque),
     lire(catalogue.sources.modeles),
     fetchJson(base + catalogue.sources.examens[0]),
+    catalogue.sources.fiches ? fetchJson(base + catalogue.sources.fiches).catch(() => null) : null,
   ]);
+  const fiches = Object.fromEntries((fichiersFiches?.fiches ?? []).map((f) => [f.id, f]));
 
   const banque = banques.filter(Boolean).flatMap((f) =>
     f.questions.map((q) => ({ matiere: f.matiere, source: 'banque', ...q })));
@@ -31,6 +33,7 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
     banque,
     modeles,
     examens: indexExamens.examens,
+    fiches,
     chargerExamen: async (id) => {
       const meta = indexExamens.examens.find((e) => e.id === id);
       if (!meta) throw new Error(`Examen inconnu : ${id}`);

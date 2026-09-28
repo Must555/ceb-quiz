@@ -2,91 +2,216 @@
   "matiere": "fr",
   "questions": [
     {
-      "id": "fr-b-0001", "domaine": "fr.grammaire", "type": "qcm", "difficulte": 1,
+      "id": "fr-b-0001",
+      "domaine": "fr.grammaire",
+      "type": "qcm",
+      "difficulte": 1,
       "enonce": "Dans la phrase « Le petit chien aboie fort », quel est le sujet ?",
-      "choix": ["Le petit chien", "aboie", "fort", "petit"],
+      "choix": [
+        "Le petit chien",
+        "aboie",
+        "fort",
+        "petit"
+      ],
       "reponse": 0,
-      "explication": "On pose la question « Qui est-ce qui aboie ? » → le petit chien. C'est le sujet."
+      "explication": "On pose la question « Qui est-ce qui aboie ? » → le petit chien. C'est le sujet.",
+      "fiche": "fr-sujet-complements"
     },
     {
-      "id": "fr-b-0002", "domaine": "fr.grammaire", "type": "qcm", "difficulte": 2,
+      "id": "fr-b-0002",
+      "domaine": "fr.grammaire",
+      "type": "qcm",
+      "difficulte": 2,
       "enonce": "Dans la phrase « Au cours de notre vie, nos empreintes digitales ne changent pas », quel est le complément circonstanciel de phrase ?",
-      "choix": ["Au cours de notre vie", "nos empreintes digitales", "ne changent pas", "digitales"],
+      "choix": [
+        "Au cours de notre vie",
+        "nos empreintes digitales",
+        "ne changent pas",
+        "digitales"
+      ],
       "reponse": 0,
-      "explication": "« Au cours de notre vie » peut être déplacé ou supprimé : c'est un complément de phrase (il indique le temps)."
+      "explication": "« Au cours de notre vie » peut être déplacé ou supprimé : c'est un complément de phrase (il indique le temps).",
+      "fiche": "fr-sujet-complements"
     },
     {
-      "id": "fr-b-0003", "domaine": "fr.grammaire", "type": "qcm", "difficulte": 2,
+      "id": "fr-b-0003",
+      "domaine": "fr.grammaire",
+      "type": "qcm",
+      "difficulte": 2,
       "enonce": "Quelle est la classe du mot « rapidement » ?",
-      "choix": ["Adverbe", "Adjectif", "Verbe", "Nom"],
+      "choix": [
+        "Adverbe",
+        "Adjectif",
+        "Verbe",
+        "Nom"
+      ],
       "reponse": 0,
-      "explication": "« Rapidement » est invariable et précise un verbe (courir rapidement) : c'est un adverbe."
+      "explication": "« Rapidement » est invariable et précise un verbe (courir rapidement) : c'est un adverbe.",
+      "fiche": "fr-classes-mots"
     },
     {
-      "id": "fr-b-0004", "domaine": "fr.grammaire", "type": "qcm", "difficulte": 2,
+      "id": "fr-b-0004",
+      "domaine": "fr.grammaire",
+      "type": "qcm",
+      "difficulte": 2,
       "enonce": "Dans « Découvrons ces traces étonnantes », à quel mode est le verbe « découvrons » ?",
-      "choix": ["Impératif", "Indicatif", "Infinitif", "Participe"],
+      "choix": [
+        "Impératif",
+        "Indicatif",
+        "Infinitif",
+        "Participe"
+      ],
       "reponse": 0,
-      "explication": "Il n'y a pas de sujet exprimé et c'est une invitation : c'est l'impératif."
+      "explication": "Il n'y a pas de sujet exprimé et c'est une invitation : c'est l'impératif.",
+      "fiche": "fr-modes"
     },
     {
-      "id": "fr-b-0005", "domaine": "fr.vocabulaire", "type": "texte_court", "difficulte": 1,
+      "id": "fr-b-0005",
+      "domaine": "fr.vocabulaire",
+      "type": "texte_court",
+      "difficulte": 1,
       "enonce": "Écris le contraire (antonyme) de « positif ».",
-      "reponse": ["négatif"],
+      "reponse": [
+        "négatif"
+      ],
       "souple": true,
-      "explication": "Positif ↔ négatif : ce sont deux antonymes."
+      "explication": "Positif ↔ négatif : ce sont deux antonymes.",
+      "fiche": "fr-vocabulaire"
     },
     {
-      "id": "fr-b-0006", "domaine": "fr.vocabulaire", "type": "texte_court", "difficulte": 2,
+      "id": "fr-b-0006",
+      "domaine": "fr.vocabulaire",
+      "type": "texte_court",
+      "difficulte": 2,
       "enonce": "Le mot « criminel » est construit à partir de quel nom ?",
-      "reponse": ["crime", "un crime", "le crime"],
+      "reponse": [
+        "crime",
+        "un crime",
+        "le crime"
+      ],
       "souple": true,
-      "explication": "Criminel = crime + -el. Le mot racine est « crime »."
+      "explication": "Criminel = crime + -el. Le mot racine est « crime ».",
+      "fiche": "fr-vocabulaire"
     },
     {
-      "id": "fr-b-0007", "domaine": "fr.vocabulaire", "type": "association", "difficulte": 2,
+      "id": "fr-b-0007",
+      "domaine": "fr.vocabulaire",
+      "type": "association",
+      "difficulte": 2,
       "enonce": "Relie chaque phrase au sens du mot « résistance ».",
-      "gauche": ["Gabrielle Petit est un symbole de la résistance.", "Le fer est choisi pour sa résistance."],
-      "droite": ["Action de s'opposer à quelqu'un ou à quelque chose", "Capacité d'un matériau à résister à des forces"],
-      "reponse": [[0, 0], [1, 1]],
-      "explication": "Un même mot peut avoir plusieurs sens : c'est le contexte de la phrase qui permet de choisir."
+      "gauche": [
+        "Gabrielle Petit est un symbole de la résistance.",
+        "Le fer est choisi pour sa résistance."
+      ],
+      "droite": [
+        "Action de s'opposer à quelqu'un ou à quelque chose",
+        "Capacité d'un matériau à résister à des forces"
+      ],
+      "reponse": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "explication": "Un même mot peut avoir plusieurs sens : c'est le contexte de la phrase qui permet de choisir.",
+      "fiche": "fr-vocabulaire"
     },
     {
-      "id": "fr-b-0008", "domaine": "fr.lire", "type": "grille", "difficulte": 2,
+      "id": "fr-b-0008",
+      "domaine": "fr.lire",
+      "type": "grille",
+      "difficulte": 2,
       "enonce": "Fait ou opinion ? Classe chaque phrase.",
-      "colonnes": ["Fait", "Opinion"],
-      "lignes": ["La tour Eiffel est monstrueuse.", "La tour Eiffel se trouve à Paris.", "Ce film est le plus beau du monde.", "L'eau bout à 100 °C."],
-      "reponse": [1, 0, 1, 0],
-      "explication": "Un fait peut être vérifié par tout le monde. Une opinion dépend de la personne qui parle (« monstrueuse », « le plus beau »)."
+      "colonnes": [
+        "Fait",
+        "Opinion"
+      ],
+      "lignes": [
+        "La tour Eiffel est monstrueuse.",
+        "La tour Eiffel se trouve à Paris.",
+        "Ce film est le plus beau du monde.",
+        "L'eau bout à 100 °C."
+      ],
+      "reponse": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "explication": "Un fait peut être vérifié par tout le monde. Une opinion dépend de la personne qui parle (« monstrueuse », « le plus beau »).",
+      "fiche": "fr-lire-intention"
     },
     {
-      "id": "fr-b-0009", "domaine": "fr.orthographe", "type": "qcm", "difficulte": 1,
+      "id": "fr-b-0009",
+      "domaine": "fr.orthographe",
+      "type": "qcm",
+      "difficulte": 1,
       "enonce": "Quel est le pluriel correct ?",
-      "choix": ["des chevaux", "des chevals", "des chevaus", "des cheveaux"],
+      "choix": [
+        "des chevaux",
+        "des chevals",
+        "des chevaus",
+        "des cheveaux"
+      ],
       "reponse": 0,
-      "explication": "Les noms en -al font leur pluriel en -aux : un cheval, des chevaux (sauf quelques exceptions : bals, carnavals, festivals…)."
+      "explication": "Les noms en -al font leur pluriel en -aux : un cheval, des chevaux (sauf quelques exceptions : bals, carnavals, festivals…).",
+      "fiche": "fr-accords"
     },
     {
-      "id": "fr-b-0010", "domaine": "fr.orthographe", "type": "trous", "difficulte": 2,
+      "id": "fr-b-0010",
+      "domaine": "fr.orthographe",
+      "type": "trous",
+      "difficulte": 2,
       "enonce": "Accorde les mots entre parenthèses.",
       "texte": "Les fleurs (blanc) {1} et les roses (rouge) {2} sont (joli) {3}.",
-      "reponse": [["blanches"], ["rouges"], ["jolies"]],
+      "reponse": [
+        [
+          "blanches"
+        ],
+        [
+          "rouges"
+        ],
+        [
+          "jolies"
+        ]
+      ],
       "souple": false,
-      "explication": "« Fleurs » et « roses » sont féminin pluriel : blanches, rouges, jolies."
+      "explication": "« Fleurs » et « roses » sont féminin pluriel : blanches, rouges, jolies.",
+      "fiche": "fr-accords"
     },
     {
-      "id": "fr-b-0011", "domaine": "fr.lire", "type": "qcm", "difficulte": 2,
+      "id": "fr-b-0011",
+      "domaine": "fr.lire",
+      "type": "qcm",
+      "difficulte": 2,
       "enonce": "Quelle est l'intention principale d'une recette de cuisine ?",
-      "choix": ["Enjoindre (dire de faire)", "Informer", "Persuader", "Donner du plaisir"],
+      "choix": [
+        "Enjoindre (dire de faire)",
+        "Informer",
+        "Persuader",
+        "Donner du plaisir"
+      ],
       "reponse": 0,
-      "explication": "Une recette donne des consignes à suivre (« Mélange », « Verse ») : son intention est d'enjoindre."
+      "explication": "Une recette donne des consignes à suivre (« Mélange », « Verse ») : son intention est d'enjoindre.",
+      "fiche": "fr-lire-intention"
     },
     {
-      "id": "fr-b-0012", "domaine": "fr.grammaire", "type": "texte_court", "difficulte": 2,
+      "id": "fr-b-0012",
+      "domaine": "fr.grammaire",
+      "type": "texte_court",
+      "difficulte": 2,
       "enonce": "Dans « C'est grâce à elles que l'on peut comparer les empreintes », si « elles » remplace « les minuties », quel est le genre de « minuties » ? (masculin ou féminin)",
-      "reponse": ["féminin", "feminin"],
+      "reponse": [
+        "féminin",
+        "feminin"
+      ],
       "souple": true,
-      "explication": "Le pronom « elles » est féminin pluriel : il remplace un nom féminin pluriel, « les minuties »."
+      "explication": "Le pronom « elles » est féminin pluriel : il remplace un nom féminin pluriel, « les minuties ».",
+      "fiche": "fr-pronoms"
     }
   ]
 }
