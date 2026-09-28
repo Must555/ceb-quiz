@@ -1,0 +1,39 @@
+{
+  "matiere": "ma",
+  "description": "Modèles de questions générées. Chaque tirage choisit des valeurs dans `variables`, vérifie `contraintes`, puis calcule `reponse`. L'id de la variante = id du modèle + valeurs tirées, ce qui sert à l'anti-répétition.",
+  "modeles": [
+    {
+      "id": "ma-m-pourcentage-solde",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "prenom": { "liste": ["Léa", "Nassim", "Emma", "Yanis", "Chloé", "Mehdi", "Louis", "Inès"] },
+        "objet": { "liste": ["un vélo", "une trottinette", "un sac à dos", "une console", "des baskets"] },
+        "prix": { "min": 20, "max": 200, "pas": 10 },
+        "remise": { "liste": [10, 20, 25, 50] }
+      },
+      "contraintes": ["(prix * remise) % 100 === 0"],
+      "enonce": "{prenom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-il/elle payer ?",
+      "reponse": "prix - prix * remise / 100",
+      "unite": "€",
+      "explication": "{remise} % de {prix} € = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €."
+    },
+    {
+      "id": "ma-m-aire-rectangle",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 1,
+      "variables": {
+        "lieu": { "liste": ["un potager", "une chambre", "un terrain de jeu", "une terrasse"] },
+        "longueur": { "min": 3, "max": 15 },
+        "largeur": { "min": 2, "max": 12 }
+      },
+      "contraintes": ["longueur > largeur"],
+      "enonce": "{lieu} rectangulaire mesure {longueur} m de long et {largeur} m de large. Quelle est son aire ?",
+      "reponse": "longueur * largeur",
+      "unite": "m²",
+      "explication": "Aire du rectangle = longueur × largeur = {longueur} × {largeur} = {=longueur * largeur} m²."
+    }
+  ]
+}

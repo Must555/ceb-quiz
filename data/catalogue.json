@@ -1,0 +1,69 @@
+{
+  "version": "1.1.0",
+  "description": "Catalogue central. Depuis 2026, le CEB existe en deux versions (référentiels) : 'socles' (ancien programme, jusqu'en 2026) et 'tronc_commun' (nouveau programme, à partir de 2026). Chaque question indique son référentiel.",
+  "referentiels": {
+    "socles": { "nom": "Socles de compétences", "annees": "2015-2026" },
+    "tronc_commun": { "nom": "Référentiels du Tronc commun", "annees": "2026+" }
+  },
+  "matieres": [
+    {
+      "id": "fr", "nom": "Français", "emoji": "📚", "couleur": "#FF6B6B",
+      "domaines": [
+        { "id": "fr.ecouter", "nom": "Écouter", "referentiels": ["tronc_commun"], "note": "Nécessite un fichier audio" },
+        { "id": "fr.lire", "nom": "Lire / Comprendre un texte" },
+        { "id": "fr.ecrire", "nom": "Écrire (production de texte)", "note": "Non corrigeable automatiquement : grille d'autoévaluation" },
+        { "id": "fr.grammaire", "nom": "Grammaire (classes, fonctions, modes)" },
+        { "id": "fr.orthographe", "nom": "Orthographe" },
+        { "id": "fr.conjugaison", "nom": "Conjugaison" },
+        { "id": "fr.vocabulaire", "nom": "Vocabulaire (antonymes, dérivés, sens)" }
+      ]
+    },
+    {
+      "id": "ma", "nom": "Mathématiques", "emoji": "🔢", "couleur": "#4D96FF",
+      "domaines": [
+        { "id": "ma.arithmetique", "nom": "Arithmétique (nombres, opérations)" },
+        { "id": "ma.grandeurs", "nom": "Grandeurs (mesures, monnaie, temps, %)" },
+        { "id": "ma.geometrie", "nom": "Géométrie (solides, figures, mouvements)" },
+        { "id": "ma.donnees", "nom": "Traitement de données" }
+      ]
+    },
+    {
+      "id": "hg", "nom": "Histoire-Géo", "emoji": "🌍", "couleur": "#FFB84D",
+      "nomOfficiel": { "tronc_commun": "Formation historique et géographique", "socles": "Éveil — Histoire / Géographie" },
+      "domaines": [
+        { "id": "hg.histoire", "nom": "Histoire (frises, périodes, sources)" },
+        { "id": "hg.geographie", "nom": "Géographie (cartes, repères, territoire)" }
+      ]
+    },
+    {
+      "id": "sc", "nom": "Sciences", "emoji": "🔬", "couleur": "#6BCB77",
+      "nomOfficiel": { "tronc_commun": "Initiation scientifique", "socles": "Éveil — Sciences" },
+      "domaines": [
+        { "id": "sc.vivant", "nom": "Le vivant (corps humain, classification)" },
+        { "id": "sc.matiere", "nom": "La matière (combustion, phénomènes)" },
+        { "id": "sc.energie", "nom": "L'énergie" }
+      ]
+    }
+  ],
+  "typesQuestion": {
+    "qcm": "Une seule bonne réponse (`choix`, `reponse` = index)",
+    "qcm_multi": "Plusieurs bonnes réponses (`choix`, `reponse` = tableau d'index)",
+    "vrai_faux": "Vrai ou faux (`reponse` = true/false)",
+    "grille": "Tableau à cocher : une ligne = une affirmation, colonnes au choix, ex. VRAI / FAUX / Le texte ne permet pas (`lignes`, `colonnes`, `reponse` = index de colonne par ligne)",
+    "numerique": "Nombre à saisir (`reponse`, `tolerance`, `unite`)",
+    "texte_court": "Mot ou groupe de mots (`reponse` = formes acceptées, `souple` = ignorer accents/majuscules)",
+    "trous": "Phrase(s) à compléter, plusieurs cases (`texte` avec {1},{2}…, `reponse` = liste de formes acceptées par case)",
+    "ordre": "Remettre dans l'ordre (`elements`, `reponse` = ordre des index)",
+    "association": "Relier deux colonnes (`gauche`, `droite`, `reponse` = paires)",
+    "ouverte": "Réponse rédigée : l'enfant écrit, puis compare avec `reponseModele` et s'autoévalue (non notée automatiquement)"
+  },
+  "numerisable": {
+    "description": "Certaines questions officielles ne peuvent pas se faire à l'écran (tracer au compas, colorier, écouter sans audio). Elles sont gardées avec `numerisable: false` : affichées en mode 'examen papier' avec le corrigé, mais exclues de l'entraînement aléatoire."
+  },
+  "difficultes": { "1": "Facile", "2": "Moyen", "3": "Niveau CEB" },
+  "sources": {
+    "banque": ["banque/francais.json", "banque/maths.json", "banque/histgeo.json", "banque/sciences.json"],
+    "modeles": ["modeles/maths.json", "modeles/francais.json"],
+    "examens": ["examens/index.json"]
+  }
+}

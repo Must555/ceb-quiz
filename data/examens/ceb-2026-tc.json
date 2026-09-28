@@ -1,0 +1,106 @@
+{
+  "id": "ceb-2026-tc",
+  "annee": 2026,
+  "referentiel": "tronc_commun",
+  "titre": "CEB 2026 — Référentiels du Tronc commun",
+  "livrets": [
+    { "n": 1,  "matiere": "fr", "titre": "Écouter",                          "date": "2026-06-18", "points": 25, "audio": null },
+    { "n": 2,  "matiere": "fr", "titre": "Écrire",                           "date": "2026-06-18", "points": 35 },
+    { "n": 3,  "matiere": "ma", "titre": "Géométrie",                        "date": "2026-06-18", "points": 40 },
+    { "n": 4,  "matiere": "ma", "titre": "Grandeurs",                        "date": "2026-06-19", "points": 60 },
+    { "n": 5,  "matiere": "hg", "titre": "Formation historique et géographique", "date": "2026-06-19", "points": 50 },
+    { "n": 6,  "matiere": "fr", "titre": "Lire 1",                           "date": "2026-06-22", "points": 30 },
+    { "n": 7,  "matiere": "ma", "titre": "Arithmétique 1",                   "date": "2026-06-22", "points": 27 },
+    { "n": 8,  "matiere": "ma", "titre": "Arithmétique 2 + Traitement de données", "date": "2026-06-22", "points": 38 },
+    { "n": 9,  "matiere": "sc", "titre": "Initiation scientifique",          "date": "2026-06-23", "points": 50 },
+    { "n": 10, "matiere": "fr", "titre": "Lire 2",                           "date": "2026-06-23", "points": 30 }
+  ],
+  "documents": [
+    {
+      "id": "p2-croisiere",
+      "page": 2,
+      "titre": "Croisière évasion Liège – Maastricht",
+      "fichier": "assets/2026-tc/p2-croisiere.webp",
+      "alt": "Horaires et tarifs du bateau Liège-Maastricht (adulte 12 €, enfant 12-18 ans 9 €, enfant de moins de 12 ans 6 €, par trajet ; -10 % pour un aller-retour le même jour) et carte à l'échelle 1/400 000 où Liège-Maastricht mesure 6,5 cm."
+    },
+    {
+      "id": "p5-rites-funeraires",
+      "page": 5,
+      "titre": "Des rites funéraires – le cimetière de Vieuxville",
+      "fichier": "assets/2026-tc/p5-rites-funeraires.webp",
+      "blocs": ["A", "B", "C", "D"],
+      "alt": "Page de manuel d'histoire en quatre blocs A à D sur les fouilles du cimetière mérovingien de Vieuxville."
+    }
+  ],
+  "questions": [
+    {
+      "id": "ceb-2026-tc-l4-q21",
+      "livret": 4, "numero": "21",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "numerisable": true,
+      "documents": ["p2-croisiere"],
+      "enonce": "Observe la carte. Calcule, en kilomètres, la distance réelle en ligne droite entre Liège et Maastricht.",
+      "reponse": 26,
+      "unite": "km",
+      "points": 1,
+      "explication": "Échelle 1/400 000 : 1 cm sur la carte = 400 000 cm = 4 km en vrai. 6,5 cm × 4 km = 26 km.",
+      "corrigeVerifie": false
+    },
+    {
+      "id": "ceb-2026-tc-l4-q20",
+      "livret": 4, "numero": "20",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "numerisable": true,
+      "documents": ["p2-croisiere"],
+      "enonce": "Une famille de 2 adultes et 2 enfants âgés de 11 ans et 6 ans fait une excursion d'une journée à Maastricht. Ils partent de Liège et prennent le bateau pour l'aller et le retour. Calcule le prix total que cette famille va payer.",
+      "reponse": 64.8,
+      "unite": "€",
+      "points": 3,
+      "explication": "Un trajet : 2 × 12 € + 2 × 6 € = 36 €. Aller-retour : 36 × 2 = 72 €. Réduction de 10 % : 72 − 7,20 = 64,80 €.",
+      "corrigeVerifie": false
+    },
+    {
+      "id": "ceb-2026-tc-l5-q3",
+      "livret": 5, "numero": "3",
+      "domaine": "hg.histoire",
+      "type": "qcm",
+      "numerisable": true,
+      "enonce": "Dans le cimetière mérovingien de Vieuxville, on a retrouvé de nombreuses tombes datant du 5e au 7e siècle. Durant quelle période conventionnelle ces tombes ont-elles été réalisées ?",
+      "choix": ["Préhistoire", "Moyen Âge", "Temps modernes", "Époque contemporaine"],
+      "reponse": 1,
+      "points": 1,
+      "explication": "Le Moyen Âge va de 476 (fin de l'Empire romain d'Occident) à 1492. Les 5e, 6e et 7e siècles en font partie.",
+      "corrigeVerifie": false
+    },
+    {
+      "id": "ceb-2026-tc-l6-q11",
+      "livret": 6, "numero": "11",
+      "domaine": "fr.lire",
+      "type": "grille",
+      "numerisable": true,
+      "documents": ["p-empreintes"],
+      "enonce": "Trace une croix dans la case qui convient.",
+      "colonnes": ["Le texte permet de dire que c'est VRAI", "Le texte permet de dire que c'est FAUX", "Le texte ne permet pas de dire si c'est vrai ou faux"],
+      "lignes": [
+        "Les trois quarts des cambrioleurs sont retrouvés grâce aux empreintes laissées.",
+        "Les empreintes digitales des membres d'une même famille se ressemblent.",
+        "Les empreintes digitales se forment au cinquième mois de grossesse."
+      ],
+      "reponse": null,
+      "points": 3,
+      "_note": "Réponse à compléter à partir du texte du portfolio (pages 'empreintes digitales') ou du corrigé officiel."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q2",
+      "livret": 3, "numero": "2",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "numerisable": false,
+      "enonce": "Trace un triangle isocèle dont la base mesure 10 cm. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "_note": "Question de tracé : réservée au mode 'examen papier'."
+    }
+  ]
+}
