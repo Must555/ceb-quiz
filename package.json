@@ -1,0 +1,9 @@
+{
+  "name": "ceb-quiz",
+  "private": true,
+  "type": "module",
+  "description": "Site d'entraînement au CEB (FWB) — HTML/CSS/JS natif, sans dépendance.",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}

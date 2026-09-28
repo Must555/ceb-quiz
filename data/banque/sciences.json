@@ -1,0 +1,76 @@
+{
+  "matiere": "sc",
+  "questions": [
+    {
+      "id": "sc-b-0001", "domaine": "sc.vivant", "type": "trous", "difficulte": 2,
+      "enonce": "Complète avec « artères » ou « veines ».",
+      "texte": "Le sang va du cœur aux organes par les {1} et il revient des organes au cœur par les {2}.",
+      "reponse": [["artères", "arteres"], ["veines"]],
+      "souple": true,
+      "explication": "Artères : le sang part du cœur. Veines : le sang revient vers le cœur."
+    },
+    {
+      "id": "sc-b-0002", "domaine": "sc.vivant", "type": "qcm", "difficulte": 2,
+      "enonce": "Dans quel organe se font les échanges gazeux entre le sang et l'air ?",
+      "choix": ["Les poumons", "Le cœur", "Le foie", "Les intestins"],
+      "reponse": 0,
+      "explication": "Dans les alvéoles des poumons, le sang reçoit du dioxygène et rejette du dioxyde de carbone."
+    },
+    {
+      "id": "sc-b-0003", "domaine": "sc.vivant", "type": "qcm", "difficulte": 2,
+      "enonce": "Une espèce est un ensemble d'êtres vivants pouvant…",
+      "choix": ["se reproduire et avoir des descendants féconds.", "respirer et se nourrir.", "vivre et mourir.", "se déplacer et se nourrir."],
+      "reponse": 0,
+      "explication": "Deux êtres vivants sont de la même espèce s'ils peuvent se reproduire ensemble et que leurs petits peuvent aussi se reproduire."
+    },
+    {
+      "id": "sc-b-0004", "domaine": "sc.vivant", "type": "qcm", "difficulte": 2,
+      "enonce": "Quel groupe d'attributs permet de reconnaître un insecte ?",
+      "choix": ["3 paires de pattes, 1 paire d'antennes, des ailes", "Des poils et des mamelles", "Des plumes", "Un corps annelé"],
+      "reponse": 0,
+      "explication": "Les insectes ont un squelette externe, 6 pattes (3 paires), 2 antennes et généralement des ailes."
+    },
+    {
+      "id": "sc-b-0005", "domaine": "sc.vivant", "type": "vrai_faux", "difficulte": 1,
+      "enonce": "La chauve-souris (pipistrelle) est un mammifère.",
+      "reponse": true,
+      "explication": "Elle a des poils et allaite ses petits avec des mamelles : c'est un mammifère, même si elle vole."
+    },
+    {
+      "id": "sc-b-0006", "domaine": "sc.matiere", "type": "qcm", "difficulte": 2,
+      "enonce": "Une bougie allumée sous une cloche en verre finit par s'éteindre. Pourquoi ?",
+      "choix": ["Il n'y a plus assez de dioxygène.", "Il fait trop chaud.", "La cire est finie.", "Il y a trop de lumière."],
+      "reponse": 0,
+      "explication": "Pour brûler, une flamme a besoin de dioxygène (O₂). Sous la cloche, il est consommé et la flamme s'éteint."
+    },
+    {
+      "id": "sc-b-0007", "domaine": "sc.matiere", "type": "grille", "difficulte": 2,
+      "enonce": "Phénomène physique ou chimique ?",
+      "colonnes": ["Physique", "Chimique"],
+      "lignes": ["L'eau qui s'évapore", "Une chaîne en fer qui rouille", "L'huile et l'eau qui se superposent", "Du bois qui brûle"],
+      "reponse": [0, 1, 0, 1],
+      "explication": "Physique : la matière ne change pas (seulement son état ou sa place). Chimique : une nouvelle matière apparaît (rouille, cendres, fumée)."
+    },
+    {
+      "id": "sc-b-0008", "domaine": "sc.matiere", "type": "qcm", "difficulte": 1,
+      "enonce": "De l'huile prend feu dans une poêle. Que faut-il faire, après avoir coupé le gaz ?",
+      "choix": ["Étendre une couverture humide sur la poêle.", "Jeter de l'eau dessus.", "Souffler sur les flammes.", "Ouvrir la fenêtre."],
+      "reponse": 0,
+      "explication": "La couverture humide prive le feu de dioxygène. Jamais d'eau sur de l'huile en feu : ça projette l'huile brûlante !"
+    },
+    {
+      "id": "sc-b-0009", "domaine": "sc.energie", "type": "qcm_multi", "difficulte": 1,
+      "enonce": "Coche les deux ressources d'énergie non renouvelables.",
+      "choix": ["Gaz naturel", "Pétrole", "Lumière du Soleil", "Vent", "Eau"],
+      "reponse": [0, 1],
+      "explication": "Le gaz et le pétrole mettent des millions d'années à se former : ils s'épuisent. Le soleil, le vent et l'eau se renouvellent."
+    },
+    {
+      "id": "sc-b-0010", "domaine": "sc.energie", "type": "qcm", "difficulte": 2,
+      "enonce": "Quelle matière est un bon conducteur thermique ?",
+      "choix": ["L'acier", "La laine", "Le liège", "Le bois"],
+      "reponse": 0,
+      "explication": "Les métaux comme l'acier transmettent bien la chaleur (c'est pour ça qu'on en fait des radiateurs). La laine, le liège et le bois sont des isolants."
+    }
+  ]
+}

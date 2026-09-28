@@ -1,6 +1,6 @@
 {
   "matiere": "ma",
-  "description": "Modèles de questions générées. Chaque tirage choisit des valeurs dans `variables`, vérifie `contraintes`, puis calcule `reponse`. L'id de la variante = id du modèle + valeurs tirées, ce qui sert à l'anti-répétition.",
+  "description": "Modèles de questions générées. Chaque tirage choisit des valeurs dans `variables`, calcule les `derivees`, vérifie les `contraintes`, puis calcule `reponse`. L'id de la variante = id du modèle + valeurs tirées (anti-répétition).",
   "modeles": [
     {
       "id": "ma-m-pourcentage-solde",
@@ -8,16 +8,104 @@
       "type": "numerique",
       "difficulte": 2,
       "variables": {
-        "prenom": { "liste": ["Léa", "Nassim", "Emma", "Yanis", "Chloé", "Mehdi", "Louis", "Inès"] },
-        "objet": { "liste": ["un vélo", "une trottinette", "un sac à dos", "une console", "des baskets"] },
-        "prix": { "min": 20, "max": 200, "pas": 10 },
-        "remise": { "liste": [10, 20, 25, 50] }
+        "p": {
+          "liste": [
+            {
+              "nom": "Léa",
+              "pr": "elle"
+            },
+            {
+              "nom": "Nassim",
+              "pr": "il"
+            },
+            {
+              "nom": "Emma",
+              "pr": "elle"
+            },
+            {
+              "nom": "Yanis",
+              "pr": "il"
+            },
+            {
+              "nom": "Chloé",
+              "pr": "elle"
+            },
+            {
+              "nom": "Mehdi",
+              "pr": "il"
+            },
+            {
+              "nom": "Louis",
+              "pr": "il"
+            },
+            {
+              "nom": "Inès",
+              "pr": "elle"
+            }
+          ]
+        },
+        "objet": {
+          "liste": [
+            "un vélo",
+            "une trottinette",
+            "un sac à dos",
+            "une console",
+            "des baskets",
+            "un casque audio"
+          ]
+        },
+        "prix": {
+          "min": 20,
+          "max": 200,
+          "pas": 10
+        },
+        "remise": {
+          "liste": [
+            10,
+            20,
+            25,
+            50
+          ]
+        }
       },
-      "contraintes": ["(prix * remise) % 100 === 0"],
-      "enonce": "{prenom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-il/elle payer ?",
+      "contraintes": [
+        "(prix * remise) % 100 == 0"
+      ],
+      "enonce": "{p.nom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-{p.pr} payer ?",
       "reponse": "prix - prix * remise / 100",
       "unite": "€",
-      "explication": "{remise} % de {prix} € = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €."
+      "explication": "{remise} % de {prix} € = {prix} × {remise} ÷ 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €."
+    },
+    {
+      "id": "ma-m-pourcentage-simple",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 1,
+      "variables": {
+        "p": {
+          "liste": [
+            5,
+            10,
+            20,
+            25,
+            50,
+            75,
+            150
+          ]
+        },
+        "n": {
+          "min": 20,
+          "max": 800,
+          "pas": 20
+        }
+      },
+      "contraintes": [
+        "(n * p) % 100 == 0"
+      ],
+      "enonce": "Calcule {p} % de {n} €.",
+      "reponse": "n * p / 100",
+      "unite": "€",
+      "explication": "{p} % de {n}, c'est {n} × {p} ÷ 100 = {=n * p / 100} €."
     },
     {
       "id": "ma-m-aire-rectangle",
@@ -25,15 +113,681 @@
       "type": "numerique",
       "difficulte": 1,
       "variables": {
-        "lieu": { "liste": ["un potager", "une chambre", "un terrain de jeu", "une terrasse"] },
-        "longueur": { "min": 3, "max": 15 },
-        "largeur": { "min": 2, "max": 12 }
+        "lieu": {
+          "liste": [
+            "Un potager",
+            "Une chambre",
+            "Un terrain de jeu",
+            "Une terrasse",
+            "Un tapis",
+            "Une piscine"
+          ]
+        },
+        "L": {
+          "min": 3,
+          "max": 15
+        },
+        "l": {
+          "min": 2,
+          "max": 12
+        }
       },
-      "contraintes": ["longueur > largeur"],
-      "enonce": "{lieu} rectangulaire mesure {longueur} m de long et {largeur} m de large. Quelle est son aire ?",
-      "reponse": "longueur * largeur",
+      "contraintes": [
+        "L > l"
+      ],
+      "enonce": "{lieu} rectangulaire mesure {L} m de long et {l} m de large. Quelle est son aire ?",
+      "reponse": "L * l",
       "unite": "m²",
-      "explication": "Aire du rectangle = longueur × largeur = {longueur} × {largeur} = {=longueur * largeur} m²."
+      "explication": "Aire du rectangle = longueur × largeur = {L} × {l} = {=L * l} m²."
+    },
+    {
+      "id": "ma-m-perimetre-rectangle",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 1,
+      "variables": {
+        "L": {
+          "min": 4,
+          "max": 40
+        },
+        "l": {
+          "min": 2,
+          "max": 30
+        }
+      },
+      "contraintes": [
+        "L > l"
+      ],
+      "enonce": "Pour clôturer un jardin rectangulaire de {L} m sur {l} m, combien de mètres de clôture faut-il ?",
+      "reponse": "2 * (L + l)",
+      "unite": "m",
+      "explication": "Le périmètre, c'est le tour : ({L} + {l}) × 2 = {=2 * (L + l)} m."
+    },
+    {
+      "id": "ma-m-aire-triangle",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "b": {
+          "min": 4,
+          "max": 20
+        },
+        "h": {
+          "min": 3,
+          "max": 16
+        }
+      },
+      "contraintes": [
+        "(b * h) % 2 == 0"
+      ],
+      "enonce": "Un triangle a une base de {b} cm et une hauteur de {h} cm. Quelle est son aire ?",
+      "reponse": "b * h / 2",
+      "unite": "cm²",
+      "explication": "Aire du triangle = (base × hauteur) ÷ 2 = ({b} × {h}) ÷ 2 = {=b * h / 2} cm²."
+    },
+    {
+      "id": "ma-m-volume-pave",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "L": {
+          "min": 2,
+          "max": 12
+        },
+        "l": {
+          "min": 2,
+          "max": 10
+        },
+        "h": {
+          "min": 2,
+          "max": 10
+        }
+      },
+      "enonce": "Une boîte en forme de parallélépipède rectangle mesure {L} cm de long, {l} cm de large et {h} cm de haut. Quel est son volume ?",
+      "reponse": "L * l * h",
+      "unite": "cm³",
+      "explication": "Volume = longueur × largeur × hauteur = {L} × {l} × {h} = {=L * l * h} cm³."
+    },
+    {
+      "id": "ma-m-echelle",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 3,
+      "variables": {
+        "villes": {
+          "liste": [
+            {
+              "a": "Liège",
+              "b": "Namur"
+            },
+            {
+              "a": "Bruxelles",
+              "b": "Louvain"
+            },
+            {
+              "a": "Mons",
+              "b": "Charleroi"
+            },
+            {
+              "a": "Gand",
+              "b": "Bruges"
+            },
+            {
+              "a": "Arlon",
+              "b": "Bastogne"
+            }
+          ]
+        },
+        "cm": {
+          "min": 1,
+          "max": 15,
+          "decimales": 1
+        },
+        "e": {
+          "liste": [
+            25000,
+            50000,
+            100000,
+            200000,
+            400000
+          ]
+        }
+      },
+      "derivees": {
+        "km": "cm * e / 100000"
+      },
+      "contraintes": [
+        "round(km, 1) == km"
+      ],
+      "enonce": "Sur une carte à l'échelle 1/{e}, la distance en ligne droite entre {villes.a} et {villes.b} mesure {cm} cm. Quelle est la distance réelle en kilomètres ?",
+      "reponse": "km",
+      "unite": "km",
+      "explication": "1 cm sur la carte = {e} cm en vrai = {=e / 100000} km. Donc {cm} cm × {=e / 100000} = {=km} km."
+    },
+    {
+      "id": "ma-m-duree-heure-fin",
+      "domaine": "ma.grandeurs",
+      "type": "texte_court",
+      "difficulte": 2,
+      "variables": {
+        "activite": {
+          "liste": [
+            {
+              "q": "Un gâteau entre au four",
+              "v": "Il cuit"
+            },
+            {
+              "q": "Un film commence",
+              "v": "Il dure"
+            },
+            {
+              "q": "Un train part de Bruxelles",
+              "v": "Le trajet dure"
+            },
+            {
+              "q": "Un match de basket commence",
+              "v": "Il dure"
+            }
+          ]
+        },
+        "h": {
+          "min": 8,
+          "max": 19
+        },
+        "m": {
+          "min": 0,
+          "max": 55,
+          "pas": 5
+        },
+        "d": {
+          "min": 25,
+          "max": 150,
+          "pas": 5
+        }
+      },
+      "derivees": {
+        "fin": "h * 60 + m + d",
+        "fh": "floor(fin / 60)",
+        "fm": "fin % 60"
+      },
+      "contraintes": [
+        "fm >= 10",
+        "m >= 10",
+        "fh < 24"
+      ],
+      "enonce": "{activite.q} à {h} h {m}. {activite.v} {d} minutes. À quelle heure est-ce terminé ? (exemple : 14 h 35)",
+      "reponse": [
+        "{fh} h {fm}",
+        "{fh}h{fm}",
+        "{fh} h {fm} min",
+        "{fh}:{fm}"
+      ],
+      "souple": true,
+      "explication": "{d} min = {=floor(d / 60)} h {=d % 60} min. {h} h {m} + {=floor(d / 60)} h {=d % 60} min = {fh} h {fm}."
+    },
+    {
+      "id": "ma-m-conversion",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "c": {
+          "liste": [
+            {
+              "de": "km",
+              "vers": "m",
+              "f": 1000,
+              "entier": 0
+            },
+            {
+              "de": "m",
+              "vers": "cm",
+              "f": 100,
+              "entier": 0
+            },
+            {
+              "de": "cm",
+              "vers": "mm",
+              "f": 10,
+              "entier": 0
+            },
+            {
+              "de": "kg",
+              "vers": "g",
+              "f": 1000,
+              "entier": 0
+            },
+            {
+              "de": "t",
+              "vers": "kg",
+              "f": 1000,
+              "entier": 0
+            },
+            {
+              "de": "g",
+              "vers": "mg",
+              "f": 1000,
+              "entier": 0
+            },
+            {
+              "de": "l",
+              "vers": "cl",
+              "f": 100,
+              "entier": 0
+            },
+            {
+              "de": "l",
+              "vers": "dl",
+              "f": 10,
+              "entier": 0
+            },
+            {
+              "de": "dl",
+              "vers": "ml",
+              "f": 100,
+              "entier": 0
+            },
+            {
+              "de": "m",
+              "vers": "km",
+              "f": 0.001,
+              "entier": 0
+            },
+            {
+              "de": "g",
+              "vers": "kg",
+              "f": 0.001,
+              "entier": 0
+            },
+            {
+              "de": "cl",
+              "vers": "l",
+              "f": 0.01,
+              "entier": 0
+            },
+            {
+              "de": "h",
+              "vers": "min",
+              "f": 60,
+              "entier": 1
+            },
+            {
+              "de": "min",
+              "vers": "s",
+              "f": 60,
+              "entier": 1
+            }
+          ]
+        },
+        "v": {
+          "min": 0.5,
+          "max": 60,
+          "decimales": 1
+        }
+      },
+      "derivees": {
+        "r": "v * c_f"
+      },
+      "contraintes": [
+        "round(r, 3) == r",
+        "r >= 0.01",
+        "c_entier == 0 || round(v) == v"
+      ],
+      "enonce": "Convertis : {v} {c.de} = ? {c.vers}",
+      "reponse": "r",
+      "unite": "{c.vers}",
+      "explication": "1 {c.de} = {=c_f} {c.vers}. Donc {v} {c.de} = {v} × {=c_f} = {=r} {c.vers}."
+    },
+    {
+      "id": "ma-m-fraction-quantite",
+      "domaine": "ma.arithmetique",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "num": {
+          "min": 1,
+          "max": 5
+        },
+        "den": {
+          "liste": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            10
+          ]
+        },
+        "q": {
+          "min": 12,
+          "max": 240,
+          "pas": 4
+        },
+        "chose": {
+          "liste": [
+            "billes",
+            "élèves",
+            "pages",
+            "bonbons",
+            "timbres"
+          ]
+        }
+      },
+      "contraintes": [
+        "num < den",
+        "q % den == 0",
+        "!(num % 2 == 0 && den % 2 == 0)",
+        "!(num % 3 == 0 && den % 3 == 0)",
+        "!(num % 5 == 0 && den % 5 == 0)"
+      ],
+      "enonce": "Il y a {q} {chose}. Combien font les {num}/{den} de ces {chose} ?",
+      "reponse": "q / den * num",
+      "explication": "On partage en {den} : {q} ÷ {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}."
+    },
+    {
+      "id": "ma-m-proportionnalite",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 3,
+      "variables": {
+        "ctx": {
+          "liste": [
+            {
+              "a": "Pour faire",
+              "u1": "crêpes",
+              "b": "on utilise",
+              "u2": "g de farine",
+              "k": 25,
+              "u1s": "crêpe"
+            },
+            {
+              "a": "Une voiture parcourt",
+              "u1": "km",
+              "b": "et consomme",
+              "u2": "litres d'essence",
+              "k": 0.06,
+              "u1s": "km"
+            },
+            {
+              "a": "Pour",
+              "u1": "élèves",
+              "b": "l'école commande",
+              "u2": "cahiers",
+              "k": 4,
+              "u1s": "élève"
+            },
+            {
+              "a": "Pour ensemencer",
+              "u1": "hectares",
+              "b": "un agriculteur utilise",
+              "u2": "kg de graines",
+              "k": 20,
+              "u1s": "hectare"
+            }
+          ]
+        },
+        "x": {
+          "liste": [
+            4,
+            5,
+            8,
+            10,
+            20,
+            25,
+            50,
+            100
+          ]
+        },
+        "y": {
+          "liste": [
+            2,
+            6,
+            12,
+            15,
+            30,
+            40,
+            60,
+            150,
+            200,
+            250
+          ]
+        }
+      },
+      "derivees": {
+        "a": "x * ctx_k",
+        "r": "y * ctx_k"
+      },
+      "contraintes": [
+        "y != x",
+        "round(a, 1) == a",
+        "round(r, 1) == r",
+        "a >= 1"
+      ],
+      "enonce": "{ctx.a} {x} {ctx.u1}, {ctx.b} {=a} {ctx.u2}. Combien en faut-il pour {y} {ctx.u1} ?",
+      "reponse": "r",
+      "explication": "Pour 1 {ctx.u1s} : {=a} ÷ {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}."
+    },
+    {
+      "id": "ma-m-vitesse",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 3,
+      "variables": {
+        "veh": {
+          "liste": [
+            {
+              "nom": "Un cycliste",
+              "vmin": 12,
+              "vmax": 30
+            },
+            {
+              "nom": "Un bateau",
+              "vmin": 10,
+              "vmax": 40
+            },
+            {
+              "nom": "Un bus",
+              "vmin": 30,
+              "vmax": 70
+            },
+            {
+              "nom": "Un train",
+              "vmin": 60,
+              "vmax": 160
+            }
+          ]
+        },
+        "t": {
+          "liste": [
+            {
+              "txt": "30 min",
+              "h": 0.5
+            },
+            {
+              "txt": "1 h 30 min",
+              "h": 1.5
+            },
+            {
+              "txt": "2 h",
+              "h": 2
+            },
+            {
+              "txt": "2 h 30 min",
+              "h": 2.5
+            },
+            {
+              "txt": "3 h",
+              "h": 3
+            },
+            {
+              "txt": "4 h",
+              "h": 4
+            }
+          ]
+        },
+        "k": {
+          "min": 0,
+          "max": 50
+        }
+      },
+      "derivees": {
+        "v": "veh_vmin + 2 * k",
+        "d": "v * t_h"
+      },
+      "contraintes": [
+        "v <= veh_vmax",
+        "round(d, 0) == d"
+      ],
+      "enonce": "{veh.nom} parcourt {=d} km en {t.txt}. Quelle est sa vitesse moyenne en km/h ?",
+      "reponse": "v",
+      "unite": "km/h",
+      "explication": "Vitesse = distance ÷ durée = {=d} km ÷ {=t_h} h = {=v} km/h."
+    },
+    {
+      "id": "ma-m-multiplication-decimale",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "difficulte": 2,
+      "variables": {
+        "a": {
+          "min": 1.1,
+          "max": 9.9,
+          "decimales": 1
+        },
+        "b": {
+          "min": 3,
+          "max": 9
+        }
+      },
+      "contraintes": [
+        "round(a) != a"
+      ],
+      "enonce": "Combien font {a} × {b} ?",
+      "reponse": "a * b",
+      "distracteurs": [
+        "a * b * 10",
+        "a * b / 10",
+        "a * b + b"
+      ],
+      "explication": "On calcule sans la virgule : {=a * 10} × {b} = {=a * b * 10}. Il y a 1 chiffre après la virgule dans {a}, donc le résultat en a 1 aussi : {=a * b}."
+    },
+    {
+      "id": "ma-m-division-euclidienne",
+      "domaine": "ma.arithmetique",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "n": {
+          "min": 40,
+          "max": 400
+        },
+        "g": {
+          "liste": [
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            12
+          ]
+        },
+        "objet": {
+          "liste": [
+            "œufs dans des boîtes de",
+            "élèves dans des équipes de",
+            "bouteilles dans des caisses de"
+          ]
+        }
+      },
+      "contraintes": [
+        "n % g != 0"
+      ],
+      "enonce": "On range {n} {objet} {g}. Combien de groupes complets peut-on faire ?",
+      "reponse": "floor(n / g)",
+      "explication": "{n} ÷ {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}."
+    },
+    {
+      "id": "ma-m-moyenne",
+      "domaine": "ma.donnees",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "p": {
+          "liste": [
+            "Sarah",
+            "Adam",
+            "Lina",
+            "Tom",
+            "Yasmine",
+            "Noah"
+          ]
+        },
+        "a": {
+          "min": 8,
+          "max": 20
+        },
+        "b": {
+          "min": 8,
+          "max": 20
+        },
+        "c": {
+          "min": 8,
+          "max": 20
+        }
+      },
+      "contraintes": [
+        "(a + b + c) % 3 == 0",
+        "a != b"
+      ],
+      "enonce": "{p} a obtenu {a}/20, {b}/20 et {c}/20 à trois interrogations. Quelle est sa moyenne sur 20 ?",
+      "reponse": "(a + b + c) / 3",
+      "explication": "Moyenne = somme ÷ nombre de notes = ({a} + {b} + {c}) ÷ 3 = {=a + b + c} ÷ 3 = {=(a + b + c) / 3}."
+    },
+    {
+      "id": "ma-m-prix-total-rendu",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "difficulte": 2,
+      "variables": {
+        "n1": {
+          "min": 2,
+          "max": 6
+        },
+        "p1": {
+          "min": 0.5,
+          "max": 4,
+          "decimales": 1
+        },
+        "art": {
+          "liste": [
+            "croissants",
+            "cahiers",
+            "stylos",
+            "bouteilles d'eau",
+            "pommes"
+          ]
+        },
+        "billet": {
+          "liste": [
+            20,
+            50
+          ]
+        }
+      },
+      "derivees": {
+        "total": "n1 * p1"
+      },
+      "contraintes": [
+        "total < billet"
+      ],
+      "enonce": "Tu achètes {n1} {art} à {p1} € pièce et tu paies avec un billet de {billet} €. Combien te rend-on ?",
+      "reponse": "billet - total",
+      "unite": "€",
+      "explication": "Prix total : {n1} × {p1} = {=total} €. Rendu : {billet} − {=total} = {=billet - total} €."
     }
   ]
 }

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test du moteur — CEB Quiz</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --txt:#1d2433; --mute:#5b6478; --line:#dfe3ec; --accent:#4D96FF; --ok:#1f9d55; --ko:#d64545; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12151c; --card:#1c212b; --txt:#e8ebf2; --mute:#9aa3b5; --line:#2e3542; --accent:#6aa8ff; --ok:#3ccf7d; --ko:#ff6b6b; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:16px/1.5 system-ui, sans-serif; padding:16px; }
+  main { max-width:760px; margin:0 auto; }
+  .bandeau { background:#fff3cd; color:#664d03; border-radius:10px; padding:10px 14px; font-size:14px; margin-bottom:16px; }
+  @media (prefers-color-scheme: dark) { .bandeau { background:#3a3013; color:#ffe08a; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; margin-bottom:14px; }
+  label { display:block; font-size:14px; color:var(--mute); margin:8px 0 4px; }
+  select, input[type=text], input[type=number] { width:100%; padding:10px; border-radius:8px; border:1px solid var(--line); background:var(--bg); color:var(--txt); font-size:16px; }
+  .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; }
+  button { font:inherit; cursor:pointer; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--txt); padding:10px 14px; }
+  button.primaire { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+  button.choix { display:block; width:100%; text-align:left; margin:6px 0; }
+  button.choix.sel { outline:3px solid var(--accent); }
+  .stats { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:14px; color:var(--mute); }
+  .stats b { color:var(--txt); }
+  .enonce { font-size:19px; font-weight:600; margin:6px 0 12px; white-space:pre-line; }
+  .meta { font-size:13px; color:var(--mute); }
+  .fb { border-radius:10px; padding:12px; margin-top:12px; }
+  .fb.ok { background:color-mix(in srgb, var(--ok) 15%, transparent); }
+  .fb.ko { background:color-mix(in srgb, var(--ko) 15%, transparent); }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  td, th { border:1px solid var(--line); padding:6px; text-align:center; }
+  td:first-child { text-align:left; }
+  .row { display:flex; gap:8px; align-items:center; margin:6px 0; }
+  .row > span { flex:1; }
+  .row select { width:auto; min-width:90px; }
+  pre { white-space:pre-wrap; font-size:13px; background:var(--bg); padding:10px; border-radius:8px; overflow:auto; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bandeau">🔧 <b>Page de test du moteur</b> (étape 2). Ce n'est pas encore l'interface pour les enfants : elle arrive à l'étape 3.</div>
+
+  <section class="card" id="config">
+    <h1 style="margin:0 0 8px;font-size:22px">Lancer une session</h1>
+    <div class="grid2">
+      <div><label for="mode">Mode</label>
+        <select id="mode"><option value="entrainement">Entraînement aléatoire</option><option value="examen">Examen officiel (CEB 2026 TC — échantillon)</option></select></div>
+      <div><label for="matiere">Matière</label>
+        <select id="matiere"><option value="">Toutes</option></select></div>
+      <div><label for="nb">Nombre de questions</label>
+        <input id="nb" type="number" min="1" max="200" value="10"></div>
+      <div><label for="chrono">Chrono (minutes, 0 = libre)</label>
+        <input id="chrono" type="number" min="0" max="180" value="0"></div>
+    </div>
+    <p style="margin:14px 0 0"><button class="primaire" id="go">Commencer</button></p>
+    <p class="meta" id="infoData"></p>
+  </section>
+
+  <section class="card hidden" id="jeu">
+    <div class="stats" id="stats"></div>
+    <p class="meta" id="qmeta"></p>
+    <div class="enonce" id="enonce"></div>
+    <div id="zone"></div>
+    <p style="margin:14px 0 0;display:flex;gap:8px;flex-wrap:wrap">
+      <button class="primaire" id="valider">Valider</button>
+      <button id="passer">Passer</button>
+      <button id="suivant" class="primaire hidden">Question suivante →</button>
+    </p>
+    <div id="fb"></div>
+  </section>
+
+  <section class="card hidden" id="fin">
+    <h2 style="margin-top:0">Résultat</h2>
+    <div id="resume"></div>
+    <p><button class="primaire" id="rejouer">Nouvelle session</button></p>
+    <details><summary>Données brutes (pour vérification)</summary><pre id="brut"></pre></details>
+  </section>
+</main>
+
+<script type="module">
+import { chargerDonnees, QuizSession } from './js/engine/index.js';
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const donnees = await chargerDonnees();
+
+for (const m of donnees.catalogue.matieres) $('matiere').insertAdjacentHTML('beforeend', `<option value="${m.id}">${m.emoji} ${m.nom}</option>`);
+$('infoData').textContent = `${donnees.banque.length} questions fixes + ${donnees.modeles.length} modèles de questions générées chargés.`;
+
+let session, reponse, timer, idsPoses, fini = false;
+
+$('go').onclick = async () => {
+  const mode = $('mode').value;
+  const opts = { mode, nbQuestions: +$('nb').value || 10, dureeSecondes: (+$('chrono').value || 0) * 60 || null };
+  if ($('matiere').value) opts.matieres = [$('matiere').value];
+  const examen = mode === 'examen' ? await donnees.chargerExamen('ceb-2026-tc') : null;
+  session = new QuizSession({ ...donnees, examen }, opts);
+  idsPoses = new Set(); fini = false;
+  $('config').classList.add('hidden'); $('fin').classList.add('hidden'); $('jeu').classList.remove('hidden');
+  clearInterval(timer); timer = setInterval(majStats, 1000);
+  afficher();
+};
+
+function majStats() {
+  const e = session.etat();
+  const t = e.tempsRestant == null ? '' : ` · ⏱ <b>${Math.floor(e.tempsRestant / 60)}:${String(e.tempsRestant % 60).padStart(2, '0')}</b>`;
+  $('stats').innerHTML = `Question <b>${e.index}/${e.total}</b> · ✅ <b>${e.bonnes}</b> · 🔥 série <b>${e.serie}</b> · ⭐ <b>${e.xp} XP</b>${t} · 🛡️ uniques : <b>${idsPoses.size}</b>`;
+  if (e.tempsRestant === 0 && !fini) terminer(); // temps écoulé
+}
+
+function afficher() {
+  const q = session.suivante();
+  $('fb').innerHTML = ''; $('suivant').classList.add('hidden');
+  $('valider').classList.remove('hidden'); $('passer').classList.remove('hidden');
+  if (!q) return terminer();
+  if (idsPoses.has(q.id)) alertDoublon(q); // ne doit jamais arriver
+  idsPoses.add(q.id);
+  const src = q.source === 'modele' ? `généré · modèle ${q.modeleId}` : q.source === 'examen' ? `examen officiel · livret ${q.livret} · question ${q.numero}` : 'banque';
+  $('qmeta').textContent = `${q.domaine} · difficulté ${q.difficulte ?? '–'} · ${src}`;
+  $('enonce').textContent = q.enonce;
+  reponse = null;
+  $('zone').innerHTML = rendreSaisie(q);
+  brancherSaisie(q);
+  majStats();
+}
+
+function alertDoublon(q) { console.error('DOUBLON', q.id); $('fb').innerHTML = `<div class="fb ko">⚠️ Doublon détecté : ${esc(q.id)}</div>`; }
+
+function rendreSaisie(q) {
+  switch (q.type) {
+    case 'qcm': return q.choix.map((c, i) => `<button class="choix" data-i="${i}">${esc(c)}</button>`).join('');
+    case 'vrai_faux': return `<button class="choix" data-v="1">Vrai</button><button class="choix" data-v="0">Faux</button>`;
+    case 'qcm_multi': return q.choix.map((c, i) => `<label class="row" style="color:inherit"><input type="checkbox" value="${i}"> <span>${esc(c)}</span></label>`).join('');
+    case 'numerique': return `<input type="text" inputmode="decimal" id="saisie" placeholder="Ta réponse${q.unite ? ' (en ' + esc(q.unite) + ')' : ''}" autocomplete="off">`;
+    case 'texte_court': return `<input type="text" id="saisie" placeholder="Ta réponse" autocomplete="off" autocapitalize="off" spellcheck="false">`;
+    case 'trous': {
+      let n = 0;
+      return `<p>${esc(q.texte).replace(/\{(\d+)\}/g, () => `<input type="text" class="trou" data-k="${n++}" style="width:130px;display:inline-block;padding:4px 8px" autocomplete="off">`)}</p>`;
+    }
+    case 'grille': return `<table><tr><th></th>${q.colonnes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr>${q.lignes.map((l, i) =>
+      `<tr><td>${esc(l)}</td>${q.colonnes.map((_, j) => `<td><input type="radio" name="g${i}" value="${j}"></td>`).join('')}</tr>`).join('')}</table>`;
+    case 'ordre': return q.elements.map((el, i) => `<div class="row"><span>${esc(el)}</span><select class="ord" data-i="${i}"><option value="">rang…</option>${q.elements.map((_, r) => `<option value="${r}">${r + 1}</option>`).join('')}</select></div>`).join('');
+    case 'association': return q.gauche.map((g, i) => `<div class="row"><span>${esc(g)}</span><select class="asso" data-i="${i}"><option value="">…</option>${q.droite.map((d, j) => `<option value="${j}">${esc(d)}</option>`).join('')}</select></div>`).join('');
+    default: return '<p class="meta">Type non affichable ici.</p>';
+  }
+}
+
+function brancherSaisie(q) {
+  const boutons = [...$('zone').querySelectorAll('button.choix')];
+  boutons.forEach((b) => b.onclick = () => {
+    boutons.forEach((x) => x.classList.remove('sel')); b.classList.add('sel');
+    reponse = q.type === 'vrai_faux' ? b.dataset.v === '1' : +b.dataset.i;
+  });
+  const s = $('saisie'); if (s) { s.focus(); s.onkeydown = (e) => { if (e.key === 'Enter') valider(); }; }
+}
+
+function lireReponse(q) {
+  const z = $('zone');
+  switch (q.type) {
+    case 'numerique': case 'texte_court': return $('saisie').value;
+    case 'qcm_multi': return [...z.querySelectorAll('input:checked')].map((x) => +x.value);
+    case 'trous': return [...z.querySelectorAll('.trou')].map((x) => x.value);
+    case 'grille': return q.lignes.map((_, i) => { const r = z.querySelector(`input[name=g${i}]:checked`); return r ? +r.value : null; });
+    case 'ordre': {
+      // l'élève donne un rang à chaque élément ; on reconstruit la liste ordonnée d'index
+      const rangs = [...z.querySelectorAll('.ord')].map((s) => s.value === '' ? null : +s.value);
+      const out = []; rangs.forEach((r, i) => { if (r != null) out[r] = i; });
+      return out;
+    }
+    case 'association': return [...z.querySelectorAll('.asso')].filter((s) => s.value !== '').map((s) => [+s.dataset.i, +s.value]);
+    default: return reponse;
+  }
+}
+
+function valider(passer = false) {
+  const q = session.courante; if (!q) return;
+  const r = passer ? session.passer() : session.repondre(lireReponse(q));
+  const ok = r.correct === true;
+  $('fb').innerHTML = `<div class="fb ${ok ? 'ok' : 'ko'}">
+    <b>${ok ? '✅ Bravo !' : r.score > 0 ? `🟡 En partie juste (${r.detail})` : passer ? '⏭️ Question passée' : '❌ Pas tout à fait'}</b>${r.xpGagne ? ` · +${r.xpGagne} XP` : ''}
+    ${r.remarque && !ok ? `<div>${esc(r.remarque)}</div>` : ''}
+    ${!ok ? `<div style="white-space:pre-line"><b>Bonne réponse :</b> ${esc(r.bonneReponse)}</div>` : ''}
+    ${r.explication ? `<div style="margin-top:6px">💡 ${esc(r.explication)}</div>` : ''}</div>`;
+  $('valider').classList.add('hidden'); $('passer').classList.add('hidden'); $('suivant').classList.remove('hidden');
+  $('suivant').focus();
+  majStats();
+}
+
+$('valider').onclick = () => valider(false);
+$('passer').onclick = () => valider(true);
+$('suivant').onclick = afficher;
+
+function terminer() {
+  if (fini) return; fini = true;
+  clearInterval(timer);
+  if (session.courante) session.passer();
+  const r = session.resume();
+  $('jeu').classList.add('hidden'); $('fin').classList.remove('hidden');
+  const lignes = Object.entries(r.parDomaine).map(([d, v]) => `<tr><td>${esc(d)}</td><td>${v.bonnes}/${v.posees}</td></tr>`).join('');
+  $('resume').innerHTML = `<p style="font-size:20px"><b>${r.bonnes}/${r.questions}</b> bonnes réponses · ${r.pourcentage} % · ⭐ ${r.xp} XP · 🔥 meilleure série ${r.meilleureSerie}</p>
+    <p class="meta">🛡️ ${r.idsVus.length} questions posées, ${new Set(r.idsVus).size} différentes : ${r.idsVus.length === new Set(r.idsVus).size ? 'aucune répétition ✔' : 'RÉPÉTITION DÉTECTÉE ✘'}</p>
+    <table><tr><th>Domaine</th><th>Réussite</th></tr>${lignes}</table>`;
+  $('brut').textContent = JSON.stringify(r, null, 2);
+}
+
+$('rejouer').onclick = () => { $('fin').classList.add('hidden'); $('config').classList.remove('hidden'); };
+</script>
+</body>
+</html>
