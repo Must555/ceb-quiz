@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette C · Arène CEB</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fond:#3d1a8c; --fond2:#2a0f66; --txt:#fff;
+    --rouge:#ff5a5f; --bleu:#2f80ed; --jaune:#f2a900; --vert:#10a37f;
+    --titre:'Lilita One', 'Arial Rounded MT Bold', Impact, system-ui, sans-serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; color:var(--txt); font-family:Nunito, system-ui, sans-serif;
+    background:
+      radial-gradient(circle at 10% 20%, rgba(255,255,255,.06) 0 80px, transparent 81px),
+      radial-gradient(circle at 90% 70%, rgba(255,255,255,.05) 0 140px, transparent 141px),
+      radial-gradient(circle at 60% 10%, rgba(255,255,255,.04) 0 60px, transparent 61px),
+      linear-gradient(180deg, var(--fond), var(--fond2)); }
+  button { font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
+  .wrap { max-width:980px; margin:0 auto; padding:18px 16px 40px; }
+
+  header { display:flex; align-items:center; gap:12px; margin-bottom:22px; }
+  .logo { font-family:var(--titre); font-size:34px; letter-spacing:1px; margin-right:auto; text-shadow:0 4px 0 rgba(0,0,0,.25); }
+  .logo span { color:#ffd23f; }
+  .joueur { display:flex; align-items:center; gap:10px; background:rgba(255,255,255,.12); border-radius:999px; padding:5px 14px 5px 5px; font-weight:900; }
+  .joueur .ava { width:38px; height:38px; border-radius:50%; background:#fff; display:grid; place-items:center; font-size:22px; }
+  .joueur small { display:block; font-weight:700; opacity:.8; font-size:12px; }
+
+  .accueil { display:grid; grid-template-columns:1.1fr 1fr; gap:18px; align-items:stretch; margin-bottom:22px; }
+  .bienvenue { background:#fff; color:#2a0f66; border-radius:14px; padding:22px; box-shadow:0 6px 0 rgba(0,0,0,.25); }
+  .bienvenue h1 { font-family:var(--titre); font-weight:400; font-size:34px; margin:0 0 6px; line-height:1.05; }
+  .bienvenue p { margin:0 0 14px; font-weight:700; color:#5b4a86; }
+  .rangee { display:flex; gap:10px; }
+  .stat { flex:1; background:#f2edff; border-radius:10px; padding:10px; text-align:center; }
+  .stat b { font-family:var(--titre); font-weight:400; font-size:26px; display:block; line-height:1; white-space:nowrap; }
+  .stat small { font-weight:800; color:#6c5a99; font-size:12px; }
+  .jouer { display:flex; flex-direction:column; gap:12px; }
+  .gros { flex:1; border-radius:14px; display:flex; align-items:center; gap:14px; padding:16px 18px; text-align:left; box-shadow:0 6px 0 rgba(0,0,0,.3); transition:transform .1s; }
+  .gros:active { transform:translateY(4px); box-shadow:0 2px 0 rgba(0,0,0,.3); }
+  .gros .e { font-size:40px; }
+  .gros b { font-family:var(--titre); font-weight:400; font-size:26px; display:block; line-height:1.05; }
+  .gros small { font-weight:800; opacity:.9; }
+  .g-entrainement { background:#ffd23f; color:#3a2a00; }
+  .g-examen { background:#fff; color:#2a0f66; }
+
+  h2 { font-family:var(--titre); font-weight:400; font-size:26px; margin:0 0 12px; text-shadow:0 3px 0 rgba(0,0,0,.2); }
+  .tuiles { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .tuile { position:relative; border-radius:10px; padding:22px 20px 22px 86px; min-height:112px; text-align:left; box-shadow:0 6px 0 rgba(0,0,0,.3); overflow:hidden; transition:transform .1s; }
+  .tuile:hover { transform:translateY(-2px); }
+  .tuile:active { transform:translateY(4px); box-shadow:0 2px 0 rgba(0,0,0,.3); }
+  .tuile .forme { position:absolute; left:16px; top:50%; transform:translateY(-50%); width:56px; height:56px; border-radius:14px; background:rgba(255,255,255,.25); display:grid; place-items:center; font-size:32px; }
+  .tuile b { font-family:var(--titre); font-weight:400; font-size:30px; display:block; line-height:1; }
+  .tuile small { font-weight:800; opacity:.9; display:block; margin-top:4px; }
+  .tuile .niv { position:absolute; right:14px; top:12px; background:rgba(0,0,0,.2); border-radius:999px; padding:3px 10px; font-weight:900; font-size:13px; }
+  .t-rouge { background:var(--rouge); } .t-bleu { background:var(--bleu); } .t-jaune { background:var(--jaune); } .t-vert { background:var(--vert); }
+  .tuile.large { grid-column:1 / -1; background:linear-gradient(90deg,var(--rouge),var(--bleu),var(--jaune),var(--vert)); min-height:84px; }
+
+  .bas { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:22px; }
+  .petit { background:rgba(255,255,255,.12); border:2px solid rgba(255,255,255,.18); border-radius:12px; padding:14px; }
+  .petit h3 { margin:0 0 8px; font-size:16px; font-weight:900; }
+  .petit .barre { height:12px; border-radius:999px; background:rgba(0,0,0,.3); overflow:hidden; }
+  .petit .barre i { display:block; height:100%; background:#ffd23f; border-radius:999px; }
+  .petit p { margin:6px 0 0; font-size:13px; font-weight:700; opacity:.85; }
+  .petit .badges { display:flex; gap:8px; font-size:28px; }
+
+  @media (max-width:760px) {
+    .logo { font-size:26px; }
+    .joueur small { display:none; }
+    .accueil { grid-template-columns:1fr; }
+    .bienvenue h1 { font-size:28px; }
+    .tuiles { grid-template-columns:1fr; gap:10px; }
+    .tuile { min-height:84px; padding:16px 16px 16px 76px; }
+    .tuile b { font-size:26px; }
+    .bas { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">CEB <span>Arena</span></div>
+    <div class="joueur"><span class="ava">🐼</span><div>Léa_2014<small>Niveau 5 · 1 240 XP</small></div></div>
+  </header>
+
+  <section class="accueil">
+    <div class="bienvenue">
+      <h1>Salut Léa !<br>On joue ? 🎉</h1>
+      <p>Tu as répondu juste à 7 questions sur 10 hier. Bats ton record aujourd'hui !</p>
+      <div class="rangee">
+        <div class="stat"><b>🔥 12</b><small>jours d'affilée</small></div>
+        <div class="stat"><b>🏅 8</b><small>badges</small></div>
+        <div class="stat"><b>🎯 74 %</b><small>réussite</small></div>
+      </div>
+    </div>
+    <div class="jouer">
+      <button class="gros g-entrainement"><span class="e">🎲</span><div><b>Partie rapide</b><small>10 questions au hasard · jamais deux fois la même</small></div></button>
+      <button class="gros g-examen"><span class="e">📝</span><div><b>Examen blanc</b><small>Les vrais CEB de 2015 à 2026</small></div></button>
+    </div>
+  </section>
+
+  <h2>Choisis ta matière</h2>
+  <div class="tuiles">
+    <button class="tuile t-rouge"><span class="forme">📖</span><span class="niv">Niv. 6</span><b>Français</b><small>Lire · grammaire · conjugaison</small></button>
+    <button class="tuile t-bleu"><span class="forme">🔢</span><span class="niv">Niv. 4</span><b>Maths</b><small>Nombres · grandeurs · géométrie</small></button>
+    <button class="tuile t-jaune"><span class="forme">🌍</span><span class="niv">Niv. 3</span><b>Histoire-Géo</b><small>Repères · cartes · Belgique</small></button>
+    <button class="tuile t-vert"><span class="forme">🔬</span><span class="niv">Niv. 2</span><b>Sciences</b><small>Vivant · matière · énergie</small></button>
+    <button class="tuile large"><span class="forme">🌈</span><b>Tout mélangé</b><small>Le mode le plus proche du vrai CEB</small></button>
+  </div>
+
+  <div class="bas">
+    <div class="petit"><h3>🎁 Prochain coffre</h3><div class="barre"><i style="width:65%"></i></div><p>650 / 1 000 XP</p></div>
+    <div class="petit"><h3>🏆 Défi du jour</h3><div class="barre"><i style="width:40%"></i></div><p>4 / 10 bonnes réponses en maths</p></div>
+    <div class="petit"><h3>🏅 Derniers badges</h3><div class="badges">🥇 🎯 ⚡ <span style="opacity:.35;filter:grayscale(1)">📐</span></div></div>
+  </div>
+</div>
+</body>
+</html>

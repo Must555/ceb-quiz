@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette A · Mission CEB</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#0e1433; --bg2:#151d45; --panel:#1b2456; --panel2:#222d68; --line:rgba(255,255,255,.08);
+    --txt:#f3f5ff; --mute:#aab3dd; --violet:#7c4dff; --jaune:#ffc83d; --vert:#2ee59d; --rose:#ff4f8b;
+    --r:20px; --titre:'Baloo 2', Nunito, 'Arial Rounded MT Bold', system-ui, sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; }
+  body { background: radial-gradient(1200px 600px at 70% -10%, #2b2a7a 0%, transparent 60%), radial-gradient(800px 500px at 0% 100%, #1a3a7a 0%, transparent 60%), var(--bg);
+    color:var(--txt); font-family:Nunito, system-ui, sans-serif; min-height:100vh; }
+  h1, h2, h3, .titre { font-family:var(--titre); margin:0; line-height:1.1; }
+  button { font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
+  .app { display:grid; grid-template-columns:230px 1fr; min-height:100vh; }
+
+  /* Barre latérale */
+  .side { padding:22px 14px; display:flex; flex-direction:column; gap:6px; border-right:1px solid var(--line); background:rgba(10,14,40,.45); position:sticky; top:0; height:100vh; }
+  .logo { display:flex; align-items:center; gap:10px; padding:4px 8px 18px; }
+  .logo .fusee { font-size:34px; filter:drop-shadow(0 4px 10px rgba(255,120,60,.5)); }
+  .logo b { font-family:var(--titre); font-size:26px; line-height:.9; letter-spacing:.5px; }
+  .logo b small { display:block; font-size:14px; color:var(--jaune); letter-spacing:2px; }
+  .nav a { display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:14px; color:var(--mute); text-decoration:none; font-weight:700; }
+  .nav a span { font-size:20px; width:24px; text-align:center; }
+  .nav a.actif { background:linear-gradient(90deg, var(--violet), #9b6bff); color:#fff; box-shadow:0 8px 20px rgba(124,77,255,.35); }
+  .nav a:hover:not(.actif) { background:var(--panel); color:var(--txt); }
+  .niveau { margin-top:auto; background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:14px; text-align:center; }
+  .niveau svg { width:90px; height:90px; margin:-40px auto 4px; display:block; }
+  .niveau b { font-family:var(--titre); font-size:18px; }
+  .niveau p { margin:0 0 8px; color:var(--mute); font-size:13px; }
+
+  /* Contenu */
+  .main { padding:22px 26px 40px; display:grid; grid-template-columns:1fr 300px; gap:20px; align-content:start; }
+  .top { grid-column:1 / -1; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  .salut h1 { font-size:28px; }
+  .salut p { margin:2px 0 0; color:var(--mute); }
+  .salut p b { color:var(--jaune); }
+  .stats { display:flex; gap:6px; background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:6px; }
+  .stat { display:flex; align-items:center; gap:8px; padding:6px 12px; border-radius:12px; }
+  .stat + .stat { border-left:1px solid var(--line); }
+  .stat .i { font-size:22px; }
+  .stat b { font-family:var(--titre); font-size:20px; display:block; line-height:1; }
+  .stat small { color:var(--mute); font-size:12px; }
+  .avatar { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#ffb86b,#ff7a59); display:grid; place-items:center; font-size:24px; border:3px solid var(--vert); }
+
+  .carte { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:18px; }
+  .hero { position:relative; overflow:hidden; display:grid; grid-template-columns:170px 1fr; gap:10px; align-items:center; padding:22px 26px;
+    background:linear-gradient(120deg, #3b5bff 0%, #7c4dff 55%, #b44dff 100%); border:0; box-shadow:0 20px 40px rgba(60,60,200,.35); }
+  .hero::after { content:''; position:absolute; inset:auto -60px -80px auto; width:260px; height:260px; border-radius:50%; background:rgba(255,255,255,.08); }
+  .hero svg { width:170px; height:170px; }
+  .hero h2 { font-size:40px; text-transform:uppercase; text-shadow:0 3px 0 rgba(0,0,0,.18); }
+  .hero h2 span { color:var(--jaune); }
+  .hero p { margin:6px 0 14px; opacity:.92; }
+  .barre { height:14px; background:rgba(0,0,0,.25); border-radius:999px; overflow:hidden; }
+  .barre i { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg, var(--vert), #9bff6b); }
+  .prog { display:flex; align-items:center; gap:12px; background:rgba(0,0,0,.18); padding:10px 14px; border-radius:14px; max-width:420px; }
+  .prog .barre { flex:1; }
+  .prog b { font-family:var(--titre); color:var(--vert); font-size:20px; }
+
+  .section-titre { display:flex; align-items:center; gap:8px; font-size:20px; margin:0 0 12px; }
+  .modes { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .mode { border-radius:18px; padding:16px 12px 14px; text-align:center; color:#fff; position:relative; transition:transform .15s; box-shadow:inset 0 -5px 0 rgba(0,0,0,.2); }
+  .mode:hover { transform:translateY(-3px); }
+  .mode.sel { outline:3px solid #fff; outline-offset:2px; }
+  .mode .e { font-size:44px; display:block; margin-bottom:6px; filter:drop-shadow(0 4px 6px rgba(0,0,0,.25)); }
+  .mode b { font-family:var(--titre); font-size:18px; text-transform:uppercase; display:block; }
+  .mode small { display:block; opacity:.9; font-size:13px; margin-top:2px; }
+  .m1 { background:linear-gradient(160deg,#3d8bff,#2359e0); }
+  .m2 { background:linear-gradient(160deg,#ffae2b,#f07b0c); }
+  .m3 { background:linear-gradient(160deg,#9b6bff,#6a3fe0); }
+  .m4 { background:linear-gradient(160deg,#ff5c8a,#e02f62); }
+  .nouveau { position:absolute; top:-8px; right:-6px; background:var(--jaune); color:#3a2a00; font-size:11px; font-weight:800; padding:2px 8px; border-radius:999px; }
+
+  .matieres { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+  .matiere { border-radius:18px; padding:16px 10px; text-align:center; background:var(--panel2); border:2px solid transparent; transition:transform .15s, border-color .15s; }
+  .matiere:hover { transform:translateY(-3px); }
+  .matiere.sel { border-color:var(--jaune); background:#2a3680; }
+  .matiere .e { font-size:40px; display:block; }
+  .matiere b { font-family:var(--titre); font-size:16px; display:block; margin-top:4px; }
+  .matiere small { color:var(--mute); font-size:12px; display:block; }
+  .mini { height:6px; background:rgba(255,255,255,.1); border-radius:999px; margin-top:8px; overflow:hidden; }
+  .mini i { display:block; height:100%; background:var(--vert); }
+
+  .go { display:flex; justify-content:center; }
+  .go button { font-family:var(--titre); font-size:24px; text-transform:uppercase; letter-spacing:.5px; padding:16px 48px; border-radius:999px;
+    background:linear-gradient(90deg,#ff4fd8,#7c4dff); box-shadow:0 10px 30px rgba(200,80,255,.45), inset 0 -5px 0 rgba(0,0,0,.2); }
+  .go button:active { transform:translateY(2px); }
+
+  .col-droite { display:flex; flex-direction:column; gap:16px; grid-row:2 / span 4; grid-column:2; }
+  .col-gauche { display:flex; flex-direction:column; gap:20px; grid-column:1; grid-row:2 / span 4; }
+  .col-droite h3 { font-size:19px; margin-bottom:10px; color:var(--jaune); }
+  .coffre { text-align:center; font-size:64px; line-height:1; margin:4px 0 10px; }
+  .ligne-prog { display:flex; justify-content:space-between; font-size:13px; color:var(--mute); margin-bottom:6px; }
+  .defi { display:grid; grid-template-columns:34px 1fr auto; gap:4px 10px; align-items:center; background:var(--panel2); border-radius:14px; padding:10px 12px; margin-bottom:8px; }
+  .defi .e { font-size:24px; grid-row:span 2; }
+  .defi span { font-size:14px; font-weight:700; }
+  .defi .xp { font-size:12px; color:var(--jaune); font-weight:800; grid-row:span 2; }
+  .defi .barre { height:7px; }
+  .badges { display:flex; gap:10px; justify-content:space-between; }
+  .badge { width:54px; height:54px; border-radius:50%; display:grid; place-items:center; font-size:28px; background:radial-gradient(circle at 30% 30%, #ffe8a0, #f0a500); box-shadow:0 4px 0 #b37700; }
+  .badge.gris { background:#2d376e; box-shadow:0 4px 0 #1c2455; filter:grayscale(1); opacity:.55; }
+  footer { grid-column:1 / -1; color:var(--mute); font-size:12px; display:flex; justify-content:space-between; padding-top:10px; }
+  .navbas { display:none; }
+
+  /* Tablette */
+  @media (max-width:1180px) {
+    .main { grid-template-columns:1fr; }
+    .col-gauche, .col-droite { grid-column:1; grid-row:auto; }
+    .col-droite { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  }
+  /* Téléphone */
+  @media (max-width:760px) {
+    .app { grid-template-columns:1fr; }
+    .side { display:none; }
+    .main { padding:16px 16px 100px; gap:16px; }
+    .salut h1 { font-size:24px; }
+    .stats { width:100%; justify-content:space-between; }
+    .stat { padding:4px 6px; gap:4px; flex-direction:column; text-align:center; }
+    .stat + .stat { border-left:0; }
+    .stat .i { font-size:20px; }
+    .stat b { font-size:17px; }
+    .avatar-top { display:none; }
+    .hero { grid-template-columns:1fr; text-align:center; padding:18px; }
+    .hero svg { width:110px; height:110px; margin:0 auto -6px; }
+    .hero h2 { font-size:30px; }
+    .prog { margin:0 auto; }
+    .modes { grid-template-columns:1fr 1fr; }
+    .matieres { grid-template-columns:repeat(3,1fr); }
+    .matiere .e { font-size:32px; }
+    .matiere small { display:none; }
+    .go { position:fixed; left:0; right:0; bottom:70px; padding:0 16px; z-index:5; }
+    .go button { width:100%; font-size:20px; padding:14px; }
+    .navbas { display:flex; position:fixed; bottom:0; left:0; right:0; height:64px; background:#0b1030; border-top:1px solid var(--line); justify-content:space-around; align-items:center; z-index:6; }
+    .navbas a { color:var(--mute); text-decoration:none; font-size:11px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:2px; }
+    .navbas a span { font-size:22px; }
+    .navbas a.actif { color:#fff; }
+    footer { display:none; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Mascotte « Robi », dessinée en SVG (aucune image externe) -->
+    <symbol id="robi" viewBox="0 0 200 200">
+      <ellipse cx="100" cy="188" rx="52" ry="8" fill="rgba(0,0,0,.25)"/>
+      <path d="M58 118 q-22 30 -6 62 h96 q16 -32 -6 -62z" fill="#2f5bff"/>
+      <rect x="62" y="112" width="76" height="62" rx="26" fill="#eef2ff"/>
+      <circle cx="100" cy="143" r="14" fill="#35d0ff"/><circle cx="100" cy="143" r="7" fill="#bff3ff"/>
+      <rect x="92" y="18" width="16" height="22" rx="8" fill="#dfe6ff"/><circle cx="100" cy="16" r="9" fill="#ffc83d"/>
+      <rect x="32" y="36" width="136" height="96" rx="44" fill="#f7f9ff"/>
+      <rect x="22" y="70" width="18" height="34" rx="9" fill="#35d0ff"/><rect x="160" y="70" width="18" height="34" rx="9" fill="#35d0ff"/>
+      <rect x="48" y="52" width="104" height="66" rx="32" fill="#16204d"/>
+      <ellipse cx="78" cy="82" rx="11" ry="13" fill="#46e0ff"/><ellipse cx="122" cy="82" rx="11" ry="13" fill="#46e0ff"/>
+      <circle cx="81" cy="78" r="4" fill="#fff"/><circle cx="125" cy="78" r="4" fill="#fff"/>
+      <path d="M84 102 q16 12 32 0" stroke="#46e0ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M150 120 q26 -6 30 -36" stroke="#eef2ff" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="181" cy="80" r="11" fill="#eef2ff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="app">
+  <aside class="side">
+    <div class="logo"><span class="fusee">🚀</span><b>MISSION<br>CEB<small>2027</small></b></div>
+    <nav class="nav">
+      <a href="#" class="actif"><span>🏠</span>Accueil</a>
+      <a href="#"><span>📊</span>Mes progrès</a>
+      <a href="#"><span>🏅</span>Mes badges</a>
+      <a href="#"><span>🧑‍🚀</span>Mon avatar</a>
+      <a href="#"><span>🕘</span>Historique</a>
+      <a href="#"><span>⚙️</span>Paramètres</a>
+    </nav>
+    <div class="niveau">
+      <svg><use href="#robi"/></svg>
+      <b>⚡ Niveau 5</b>
+      <p>Explorateur du savoir</p>
+      <div class="barre"><i style="width:65%"></i></div>
+      <p style="margin:6px 0 0">650 / 1000 XP</p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <div class="salut">
+        <h1>Salut Léa ! 👋</h1>
+        <p>Prête à gagner <b>100 XP</b> aujourd'hui ?</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="i">⭐</span><div><b>1 240</b><small>XP</small></div></div>
+        <div class="stat"><span class="i">🔥</span><div><b>12</b><small>jours d'affilée</small></div></div>
+        <div class="stat"><span class="i">🏅</span><div><b>8</b><small>badges</small></div></div>
+        <div class="stat"><span class="i">💎</span><div><b>156</b><small>gemmes</small></div></div>
+        <div class="stat avatar-top"><div class="avatar">🦊</div></div>
+      </div>
+    </header>
+
+    <div class="col-gauche">
+      <section class="carte hero">
+        <svg><use href="#robi"/></svg>
+        <div>
+          <h2>Ta mission <span>du jour</span> 🚀</h2>
+          <p>Chaque question te rapproche de ton objectif : réussir ton CEB !</p>
+          <div class="prog"><span>Objectif du jour</span><div class="barre"><i style="width:65%"></i></div><b>65 %</b></div>
+        </div>
+      </section>
+
+      <section class="carte">
+        <h3 class="section-titre">🎮 Choisis ton mode de jeu</h3>
+        <div class="modes">
+          <button class="mode m1 sel"><span class="e">🎲</span><b>Entraînement</b><small>Questions au hasard, jamais deux fois la même</small></button>
+          <button class="mode m2"><span class="nouveau">+50 XP</span><span class="e">🏆</span><b>Défi du jour</b><small>10 questions, une fois par jour</small></button>
+          <button class="mode m3"><span class="e">📝</span><b>Examen blanc</b><small>Un vrai CEB, dans l'ordre</small></button>
+          <button class="mode m4"><span class="e">⏱️</span><b>Chrono</b><small>Un maximum en 3 minutes !</small></button>
+        </div>
+      </section>
+
+      <section class="carte">
+        <h3 class="section-titre">📚 Choisis ta matière</h3>
+        <div class="matieres">
+          <button class="matiere"><span class="e">📖</span><b>Français</b><small>Lire, grammaire, conjugaison</small><div class="mini"><i style="width:72%"></i></div></button>
+          <button class="matiere"><span class="e">🔢</span><b>Maths</b><small>Nombres, grandeurs, géométrie</small><div class="mini"><i style="width:58%"></i></div></button>
+          <button class="matiere"><span class="e">🌍</span><b>Histoire-Géo</b><small>Repères, cartes, pays</small><div class="mini"><i style="width:40%"></i></div></button>
+          <button class="matiere"><span class="e">🔬</span><b>Sciences</b><small>Vivant, matière, énergie</small><div class="mini"><i style="width:25%"></i></div></button>
+          <button class="matiere sel"><span class="e">🌈</span><b>Tout</b><small>Un mélange de tout</small><div class="mini"><i style="width:55%"></i></div></button>
+        </div>
+      </section>
+
+      <div class="go"><button>🚀 Commencer ma mission</button></div>
+    </div>
+
+    <div class="col-droite">
+      <section class="carte">
+        <h3>Prochaine récompense</h3>
+        <div class="coffre">🎁</div>
+        <div class="ligne-prog"><span>Coffre surprise</span><span>650 / 1 000 XP</span></div>
+        <div class="barre"><i style="width:65%"></i></div>
+      </section>
+      <section class="carte">
+        <h3>Défis du jour</h3>
+        <div class="defi"><span class="e">🎯</span><span>Réponds à 10 questions</span><span class="xp">+50 XP</span><div class="barre"><i style="width:60%"></i></div></div>
+        <div class="defi"><span class="e">⭐</span><span>Fais 80 % ou plus</span><span class="xp">+50 XP</span><div class="barre"><i style="width:0%"></i></div></div>
+        <div class="defi"><span class="e">🔥</span><span>5 bonnes réponses d'affilée</span><span class="xp">+30 XP</span><div class="barre"><i style="width:80%"></i></div></div>
+      </section>
+      <section class="carte">
+        <h3>Tes badges</h3>
+        <div class="badges"><div class="badge">🥇</div><div class="badge">🎯</div><div class="badge">⚡</div><div class="badge gris">📐</div></div>
+      </section>
+    </div>
+
+    <footer><span>Mission CEB · Réussis ton CEB avec plaisir !</span><span>Aide · Parents</span></footer>
+  </main>
+</div>
+
+<nav class="navbas">
+  <a href="#" class="actif"><span>🏠</span>Accueil</a>
+  <a href="#"><span>📊</span>Progrès</a>
+  <a href="#"><span>🏅</span>Badges</a>
+  <a href="#"><span>🦊</span>Moi</a>
+</nav>
+
+<script>
+  // Maquette : seule la sélection visuelle fonctionne.
+  for (const g of ['.mode', '.matiere']) {
+    const els = [...document.querySelectorAll(g)];
+    els.forEach((b) => b.onclick = () => els.forEach((x) => x.classList.toggle('sel', x === b)));
+  }
+</script>
+</body>
+</html>

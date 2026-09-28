@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquettes · CEB Quiz</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --txt:#1d2433; --mute:#5b6478; --line:#dfe3ec; --accent:#4D96FF; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12151c; --card:#1c212b; --txt:#e8ebf2; --mute:#9aa3b5; --line:#2e3542; --accent:#6aa8ff; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:16px/1.55 system-ui, sans-serif; padding:24px 16px; }
+  main { max-width:1000px; margin:0 auto; }
+  h1 { margin:0 0 4px; font-size:28px; }
+  .intro { color:var(--mute); margin:0 0 20px; }
+  .grille { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+  .m { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; }
+  .apercu { height:120px; display:grid; place-items:center; font-size:44px; color:#fff; font-weight:800; }
+  .a { background:linear-gradient(120deg,#0e1433,#3b5bff 60%,#b44dff); }
+  .b { background:linear-gradient(120deg,#14b8a6,#3b82f6); }
+  .c { background:linear-gradient(120deg,#3d1a8c,#ff5a5f 70%,#f2a900); }
+  .corps { padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  h2 { margin:0; font-size:20px; }
+  p { margin:0; color:var(--mute); }
+  ul { margin:0; padding-left:18px; font-size:14px; }
+  li.plus::marker { content:'✅ '; } li.moins::marker { content:'⚠️ '; }
+  .btn { margin-top:auto; display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; padding:12px; border-radius:12px; }
+  .note { margin-top:20px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px; color:var(--mute); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🎨 Trois propositions de design</h1>
+  <p class="intro">Page d'accueil de l'enfant. Ouvre chaque maquette sur ton ordinateur <b>et</b> sur ton téléphone : elles s'adaptent aux deux. Les chiffres (XP, badges…) sont des exemples.</p>
+  <div class="grille">
+    <article class="m"><div class="apercu a">🚀</div><div class="corps">
+      <h2>A · Mission CEB</h2>
+      <p>Inspirée de ton image : univers spatial sombre, mascotte robot, tableau de bord complet.</p>
+      <ul><li class="plus">Très « jeu vidéo », motivant</li><li class="plus">Tout visible d'un coup sur ordinateur</li><li class="moins">Beaucoup d'éléments : chargé pour certains enfants</li></ul>
+      <a class="btn" href="a-mission.html">Voir la maquette A</a></div></article>
+    <article class="m"><div class="apercu b">🧭</div><div class="corps">
+      <h2>B · Parcours</h2>
+      <p>Clair et aéré, avec un chemin d'étapes à débloquer par matière et un objectif quotidien.</p>
+      <ul><li class="plus">L'enfant sait toujours quoi faire ensuite</li><li class="plus">Très lisible, repose les yeux</li><li class="moins">Demande de découper le programme en unités (travail de contenu)</li></ul>
+      <a class="btn" href="b-parcours.html">Voir la maquette B</a></div></article>
+    <article class="m"><div class="apercu c">🎲</div><div class="corps">
+      <h2>C · Arène</h2>
+      <p>Grandes tuiles de couleur, très peu de texte : on choisit et on joue en un clic.</p>
+      <ul><li class="plus">Le plus simple et le plus rapide</li><li class="plus">Parfait sur tablette et téléphone</li><li class="moins">Moins de place pour le suivi des progrès</li></ul>
+      <a class="btn" href="c-arene.html">Voir la maquette C</a></div></article>
+  </div>
+  <p class="note">💡 On peut aussi <b>mélanger</b> : par exemple les couleurs de A avec la simplicité de C, ou le parcours de B dans l'univers spatial de A.</p>
+</main>
+</body>
+</html>
