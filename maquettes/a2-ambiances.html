@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="fr" data-theme="neon" data-heros="avatar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maquette A · Ambiances</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ AMBIANCES ============ */
+  :root {
+    --titre: Outfit, 'Segoe UI', system-ui, sans-serif;
+    --texte: Inter, 'Segoe UI', system-ui, sans-serif;
+    --r: 18px;
+  }
+  /* 1. Néon : sombre neutre (pas bleu nuit), accents électriques — codes des jeux et applis musicales */
+  [data-theme="neon"] {
+    --fond:#0b0b10; --deco: radial-gradient(900px 500px at 85% -10%, rgba(139,92,246,.28), transparent 60%), radial-gradient(700px 400px at -10% 110%, rgba(34,211,238,.18), transparent 60%);
+    --panel:#15151d; --panel2:#1d1d28; --ligne:rgba(255,255,255,.07); --txt:#f4f4f8; --mute:#9a9ab0;
+    --accent:#c6ff3d; --accent-txt:#0b0b10; --prog:linear-gradient(90deg,#c6ff3d,#3dffb5); --or:#ffd23f;
+    --hero:linear-gradient(115deg,#6d28d9 0%,#7c3aed 45%,#0ea5e9 100%); --hero-txt:#fff; --hero-accent:#c6ff3d;
+    --m1:linear-gradient(150deg,#2563eb,#1e40af); --m2:linear-gradient(150deg,#f59e0b,#ea580c); --m3:linear-gradient(150deg,#8b5cf6,#6d28d9); --m4:linear-gradient(150deg,#ec4899,#be185d); --m-txt:#fff;
+    --mat:#1d1d28; --mat-sel:#262636;
+    --cta:linear-gradient(90deg,#c6ff3d,#3dffb5); --cta-txt:#0b0b10; --cta-ombre:0 10px 30px rgba(198,255,61,.25);
+    --bord:1px solid var(--ligne); --ombre:none; --ombre-bouton:inset 0 -4px 0 rgba(0,0,0,.25);
+    --nav-actif:#c6ff3d; --nav-actif-txt:#0b0b10;
+  }
+  /* 2. Pop : fond clair, couleurs franches, contours noirs épais — style « sticker » très tendance */
+  [data-theme="pop"] {
+    --fond:#fff7ea; --deco: radial-gradient(circle at 1px 1px, rgba(0,0,0,.07) 1px, transparent 0) 0 0/22px 22px;
+    --panel:#ffffff; --panel2:#fff; --ligne:#111; --txt:#111; --mute:#4b4b55;
+    --accent:#111; --accent-txt:#fff; --prog:#22c55e; --or:#f59e0b;
+    --hero:#7c5cff; --hero-txt:#fff; --hero-accent:#ffe14d;
+    --m1:#4d7cff; --m2:#ffb020; --m3:#b388ff; --m4:#ff5c8a; --m-txt:#111;
+    --mat:#fff; --mat-sel:#ffe14d;
+    --cta:#ff5c8a; --cta-txt:#111; --cta-ombre:5px 5px 0 #111;
+    --bord:3px solid #111; --ombre:5px 5px 0 #111; --ombre-bouton:4px 4px 0 #111;
+    --nav-actif:#111; --nav-actif-txt:#fff;
+  }
+  /* 3. Sunset : dégradé violet → rose → orange, panneaux en verre dépoli — énergie des jeux mobiles */
+  [data-theme="sunset"] {
+    --fond:#2a0b3f; --deco: linear-gradient(160deg,#2a0b3f 0%,#5a137a 35%,#b3306f 70%,#ff7a4d 100%) fixed;
+    --panel:rgba(255,255,255,.10); --panel2:rgba(255,255,255,.12); --ligne:rgba(255,255,255,.18); --txt:#fff; --mute:rgba(255,255,255,.75);
+    --accent:#ffd166; --accent-txt:#3a1040; --prog:linear-gradient(90deg,#ffd166,#ff9f68); --or:#ffd166;
+    --hero:rgba(255,255,255,.14); --hero-txt:#fff; --hero-accent:#ffd166;
+    --m1:linear-gradient(150deg,#4f7dff,#6a4dff); --m2:linear-gradient(150deg,#ffb347,#ff7a4d); --m3:linear-gradient(150deg,#c86bff,#8a3dff); --m4:linear-gradient(150deg,#ff5c8a,#e0306a); --m-txt:#fff;
+    --mat:rgba(255,255,255,.10); --mat-sel:rgba(255,255,255,.25);
+    --cta:#ffd166; --cta-txt:#3a1040; --cta-ombre:0 10px 30px rgba(255,209,102,.35);
+    --bord:1px solid var(--ligne); --ombre:0 8px 30px rgba(0,0,0,.15); --ombre-bouton:inset 0 -4px 0 rgba(0,0,0,.2);
+    --nav-actif:#ffd166; --nav-actif-txt:#3a1040;
+  }
+
+  /* ============ MISE EN PAGE ============ */
+  * { box-sizing:border-box; }
+  html, body { margin:0; }
+  body { background:var(--deco), var(--fond); color:var(--txt); font-family:var(--texte); min-height:100vh; transition:background .3s; }
+  h1, h2, h3 { font-family:var(--titre); margin:0; line-height:1.1; letter-spacing:-.01em; }
+  button { font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
+  .app { display:grid; grid-template-columns:230px 1fr; min-height:100vh; }
+  .carte { background:var(--panel); border:var(--bord); box-shadow:var(--ombre); border-radius:var(--r); padding:18px; backdrop-filter:blur(10px); }
+
+  .side { padding:22px 14px; display:flex; flex-direction:column; gap:6px; position:sticky; top:0; height:100vh; border-right:var(--bord); }
+  .logo { display:flex; align-items:center; gap:10px; padding:4px 8px 20px; font-family:var(--titre); font-weight:900; font-size:24px; letter-spacing:-.02em; }
+  .logo .pastille { width:40px; height:40px; border-radius:12px; display:grid; place-items:center; background:var(--accent); color:var(--accent-txt); font-size:20px; box-shadow:var(--ombre-bouton); }
+  .logo small { display:block; font-size:12px; font-weight:700; color:var(--mute); letter-spacing:.15em; }
+  .nav a { display:flex; align-items:center; gap:12px; padding:11px 14px; border-radius:12px; color:var(--mute); text-decoration:none; font-weight:600; }
+  .nav a span { font-size:19px; width:24px; text-align:center; }
+  .nav a.actif { background:var(--nav-actif); color:var(--nav-actif-txt); font-weight:700; }
+  .nav a:hover:not(.actif) { background:var(--panel2); color:var(--txt); }
+  .niveau { margin-top:auto; }
+  .niveau b { font-family:var(--titre); font-size:17px; }
+  .niveau p { margin:2px 0 8px; color:var(--mute); font-size:13px; }
+
+  .main { padding:22px 26px 40px; display:grid; grid-template-columns:1fr 300px; gap:20px; align-content:start; }
+  .top { grid-column:1 / -1; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+  .salut h1 { font-size:30px; font-weight:800; }
+  .salut p { margin:2px 0 0; color:var(--mute); }
+  .salut p b { color:var(--txt); }
+  .stats { display:flex; gap:4px; background:var(--panel); border:var(--bord); box-shadow:var(--ombre); border-radius:16px; padding:6px; backdrop-filter:blur(10px); }
+  .stat { display:flex; align-items:center; gap:8px; padding:6px 12px; }
+  .stat .i { font-size:21px; }
+  .stat b { font-family:var(--titre); font-size:20px; display:block; line-height:1; font-weight:800; }
+  .stat small { color:var(--mute); font-size:12px; }
+  .ava-mini { width:42px; height:42px; border-radius:50%; background:#ffcf99; display:grid; place-items:center; font-size:24px; border:3px solid var(--accent); }
+
+  .col-gauche { display:flex; flex-direction:column; gap:20px; grid-column:1; grid-row:2 / span 4; min-width:0; }
+  .col-droite { display:flex; flex-direction:column; gap:16px; grid-row:2 / span 4; grid-column:2; }
+
+  .hero { position:relative; overflow:hidden; display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:center; padding:24px 28px; background:var(--hero); color:var(--hero-txt); }
+  .hero-visuel { position:relative; width:150px; height:150px; }
+  .hero-visuel svg.robi { width:150px; height:150px; }
+  [data-heros="avatar"] .hero-visuel svg.robi, [data-heros="robot"] .hero-visuel .joueur { display:none; }
+  .joueur { width:150px; height:150px; border-radius:50%; display:grid; place-items:center; font-size:84px; background:#ffcf99;
+    box-shadow:0 0 0 6px rgba(255,255,255,.25), 0 0 0 12px rgba(255,255,255,.08); }
+  [data-theme="pop"] .joueur { box-shadow:0 0 0 4px #111, 6px 6px 0 4px #111; }
+  .niv-badge { position:absolute; right:-4px; bottom:6px; background:var(--hero-accent); color:#111; font-family:var(--titre); font-weight:900; font-size:15px; padding:4px 10px; border-radius:999px; border:3px solid rgba(0,0,0,.15); }
+  .hero small.sur { font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:12px; opacity:.85; }
+  .hero h2 { font-size:42px; font-weight:900; text-transform:uppercase; letter-spacing:-.02em; margin:4px 0 6px; }
+  .hero h2 span { color:var(--hero-accent); }
+  .hero p { margin:0 0 14px; opacity:.92; }
+  .barre { height:12px; background:rgba(127,127,127,.25); border-radius:999px; overflow:hidden; }
+  .barre i { display:block; height:100%; border-radius:999px; background:var(--prog); }
+  [data-theme="pop"] .barre { border:2px solid #111; height:14px; background:#fff; }
+  .prog { display:flex; align-items:center; gap:12px; background:rgba(0,0,0,.2); padding:10px 14px; border-radius:14px; max-width:440px; }
+  [data-theme="pop"] .prog { background:#fff; color:#111; border:3px solid #111; }
+  .prog .barre { flex:1; }
+  .prog b { font-family:var(--titre); color:var(--hero-accent); font-size:20px; font-weight:900; }
+  [data-theme="pop"] .prog b { color:#111; }
+
+  .section-titre { display:flex; align-items:center; gap:8px; font-size:20px; font-weight:800; margin:0 0 12px; }
+  .modes { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .mode { border-radius:16px; padding:16px 12px 14px; text-align:left; color:var(--m-txt); position:relative; transition:transform .15s; box-shadow:var(--ombre-bouton); }
+  [data-theme="pop"] .mode { border:3px solid #111; }
+  .mode:hover { transform:translateY(-3px); }
+  .mode.sel { outline:3px solid var(--txt); outline-offset:3px; }
+  .mode .e { font-size:36px; display:block; margin-bottom:10px; }
+  .mode b { font-family:var(--titre); font-size:19px; font-weight:800; display:block; }
+  .mode small { display:block; opacity:.9; font-size:13px; margin-top:2px; line-height:1.35; }
+  .m1 { background:var(--m1); } .m2 { background:var(--m2); } .m3 { background:var(--m3); } .m4 { background:var(--m4); }
+  .etiq { position:absolute; top:10px; right:10px; background:rgba(0,0,0,.25); color:#fff; font-size:11px; font-weight:800; padding:3px 8px; border-radius:999px; }
+  [data-theme="pop"] .etiq { background:#111; }
+
+  .matieres { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+  .matiere { border-radius:16px; padding:14px 12px; text-align:left; background:var(--mat); border:var(--bord); transition:transform .15s; }
+  [data-theme="neon"] .matiere, [data-theme="sunset"] .matiere { border:2px solid transparent; }
+  .matiere:hover { transform:translateY(-3px); }
+  .matiere.sel { background:var(--mat-sel); border-color:var(--accent); }
+  [data-theme="pop"] .matiere.sel { box-shadow:4px 4px 0 #111; border-color:#111; }
+  .matiere .e { font-size:30px; display:block; }
+  .matiere b { font-family:var(--titre); font-size:17px; font-weight:800; display:block; margin-top:6px; }
+  .matiere small { color:var(--mute); font-size:12px; display:block; }
+  .mini { height:6px; background:rgba(127,127,127,.25); border-radius:999px; margin-top:10px; overflow:hidden; }
+  .mini i { display:block; height:100%; background:var(--prog); }
+
+  .go { display:flex; justify-content:center; }
+  .go button { font-family:var(--titre); font-weight:900; font-size:22px; letter-spacing:.02em; text-transform:uppercase; padding:16px 52px; border-radius:16px; background:var(--cta); color:var(--cta-txt); box-shadow:var(--cta-ombre); }
+  [data-theme="pop"] .go button { border:3px solid #111; }
+  .go button:active { transform:translateY(2px); }
+
+  .col-droite h3 { font-size:18px; font-weight:800; margin-bottom:12px; }
+  .coffre { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
+  .coffre span { font-size:46px; }
+  .coffre p { margin:0; color:var(--mute); font-size:14px; }
+  .coffre p b { color:var(--txt); }
+  .defi { display:grid; grid-template-columns:30px 1fr auto; gap:6px 10px; align-items:center; padding:10px 0; border-top:var(--bord); }
+  [data-theme="pop"] .defi { border-top:2px dashed #111; }
+  .defi:first-of-type { border-top:0; padding-top:0; }
+  .defi .e { font-size:22px; grid-row:span 2; }
+  .defi span { font-size:14px; font-weight:600; }
+  .defi .xp { font-size:12px; color:var(--or); font-weight:800; grid-row:span 2; }
+  [data-theme="pop"] .defi .xp { color:#111; background:#ffe14d; border:2px solid #111; border-radius:8px; padding:2px 6px; }
+  .defi .barre { height:7px; }
+  .collection { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .collection div { aspect-ratio:1; border-radius:14px; display:grid; place-items:center; font-size:26px; background:var(--panel2); border:var(--bord); }
+  .collection div.lock { opacity:.35; filter:grayscale(1); }
+  .collection div.rare { background:linear-gradient(135deg,#ffd23f,#ff9f1c); }
+  footer { grid-column:1 / -1; color:var(--mute); font-size:12px; padding-top:10px; }
+  .navbas { display:none; }
+
+  /* Sélecteur d'ambiance (propre à la maquette) */
+  .choix-ambiance { position:fixed; right:16px; bottom:16px; z-index:20; background:#fff; color:#111; border-radius:16px; padding:10px; box-shadow:0 10px 40px rgba(0,0,0,.35); font-family:system-ui, sans-serif; font-size:13px; width:250px; }
+  .choix-ambiance b { display:block; margin:0 0 6px 2px; }
+  .choix-ambiance .rang { display:flex; gap:6px; margin-bottom:8px; }
+  .choix-ambiance button { flex:1; border:2px solid #ddd; border-radius:10px; padding:7px 4px; font-weight:700; font-size:13px; color:#111; background:#fafafa; }
+  .choix-ambiance button.sel { border-color:#111; background:#111; color:#fff; }
+  .choix-ambiance .replier { position:absolute; top:6px; right:8px; flex:none; border:0; background:none; font-size:16px; padding:2px; }
+  .choix-ambiance.ferme > :not(.replier):not(b) { display:none; }
+
+  @media (max-width:1180px) {
+    .main { grid-template-columns:1fr; }
+    .col-gauche, .col-droite { grid-column:1; grid-row:auto; }
+    .col-droite { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  }
+  @media (max-width:760px) {
+    .app { grid-template-columns:1fr; }
+    .side { display:none; }
+    .main { padding:16px 16px 150px; gap:16px; }
+    .salut h1 { font-size:25px; }
+    .stats { width:100%; justify-content:space-between; }
+    .stat { padding:4px 6px; gap:2px; flex-direction:column; text-align:center; }
+    .stat b { font-size:17px; }
+    .stat-ava { display:none; }
+    .hero { grid-template-columns:1fr; text-align:center; padding:20px 18px; justify-items:center; }
+    .hero-visuel, .hero-visuel svg.robi { width:110px; height:110px; }
+    .joueur { width:110px; height:110px; font-size:62px; }
+    .hero h2 { font-size:30px; }
+    .prog { margin:0 auto; width:100%; }
+    .modes { grid-template-columns:1fr 1fr; }
+    .matieres { grid-template-columns:repeat(3,1fr); }
+    .matiere small { display:none; }
+    .go { position:fixed; left:0; right:0; bottom:74px; padding:0 16px; z-index:5; }
+    .go button { width:100%; font-size:19px; padding:14px; }
+    .navbas { display:flex; position:fixed; bottom:0; left:0; right:0; height:64px; background:var(--fond); border-top:var(--bord); justify-content:space-around; align-items:center; z-index:6; }
+    .navbas a { color:var(--mute); text-decoration:none; font-size:11px; font-weight:700; display:flex; flex-direction:column; align-items:center; gap:2px; }
+    .navbas a span { font-size:22px; }
+    .navbas a.actif { color:var(--txt); }
+    .choix-ambiance { top:10px; bottom:auto; right:10px; width:210px; }
+    footer { display:none; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="robi" viewBox="0 0 200 200">
+    <path d="M58 118 q-22 30 -6 62 h96 q16 -32 -6 -62z" fill="#2f5bff"/>
+    <rect x="62" y="112" width="76" height="62" rx="26" fill="#eef2ff"/>
+    <circle cx="100" cy="143" r="14" fill="#35d0ff"/>
+    <rect x="92" y="18" width="16" height="22" rx="8" fill="#dfe6ff"/><circle cx="100" cy="16" r="9" fill="#ffc83d"/>
+    <rect x="32" y="36" width="136" height="96" rx="44" fill="#f7f9ff"/>
+    <rect x="48" y="52" width="104" height="66" rx="32" fill="#16204d"/>
+    <ellipse cx="78" cy="82" rx="11" ry="13" fill="#46e0ff"/><ellipse cx="122" cy="82" rx="11" ry="13" fill="#46e0ff"/>
+    <path d="M84 102 q16 12 32 0" stroke="#46e0ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </symbol>
+</defs></svg>
+
+<div class="app">
+  <aside class="side">
+    <div class="logo"><span class="pastille">🚀</span><div>Mission CEB<small>SAISON 2027</small></div></div>
+    <nav class="nav">
+      <a href="#" class="actif"><span>🏠</span>Accueil</a>
+      <a href="#"><span>📊</span>Mes progrès</a>
+      <a href="#"><span>🏅</span>Collection</a>
+      <a href="#"><span>🧑‍🎤</span>Mon avatar</a>
+      <a href="#"><span>🕘</span>Historique</a>
+      <a href="#"><span>⚙️</span>Réglages</a>
+    </nav>
+    <div class="carte niveau">
+      <b>⚡ Niveau 5 · Explorateur</b>
+      <p>Encore 350 XP pour le niveau 6</p>
+      <div class="barre"><i style="width:65%"></i></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="top">
+      <div class="salut"><h1>Salut Léa 👋</h1><p>Il te reste <b>3 jours</b> avant ta prochaine récompense de série.</p></div>
+      <div class="stats">
+        <div class="stat"><span class="i">⭐</span><div><b>1 240</b><small>XP</small></div></div>
+        <div class="stat"><span class="i">🔥</span><div><b>12</b><small>jours</small></div></div>
+        <div class="stat"><span class="i">🏅</span><div><b>8</b><small>badges</small></div></div>
+        <div class="stat"><span class="i">💎</span><div><b>156</b><small>gemmes</small></div></div>
+        <div class="stat stat-ava"><div class="ava-mini">🦊</div></div>
+      </div>
+    </header>
+
+    <div class="col-gauche">
+      <section class="carte hero">
+        <div class="hero-visuel">
+          <div class="joueur">🦊</div>
+          <svg class="robi"><use href="#robi"/></svg>
+          <span class="niv-badge">NIV. 5</span>
+        </div>
+        <div>
+          <small class="sur">Mission du jour</small>
+          <h2>Objectif <span>CEB</span> 🎯</h2>
+          <p>10 questions par jour, et le CEB n'aura plus de secret pour toi.</p>
+          <div class="prog"><span>Aujourd'hui</span><div class="barre"><i style="width:70%"></i></div><b>7/10</b></div>
+        </div>
+      </section>
+
+      <section class="carte">
+        <h3 class="section-titre">🎮 Mode de jeu</h3>
+        <div class="modes">
+          <button class="mode m1 sel"><span class="e">🎲</span><b>Entraînement</b><small>Au hasard, jamais deux fois la même</small></button>
+          <button class="mode m2"><span class="etiq">+50 XP</span><span class="e">🏆</span><b>Défi du jour</b><small>10 questions, une fois par jour</small></button>
+          <button class="mode m3"><span class="e">📝</span><b>Examen blanc</b><small>Les vrais CEB 2015 → 2026</small></button>
+          <button class="mode m4"><span class="e">⏱️</span><b>Chrono</b><small>Un max en 3 minutes</small></button>
+        </div>
+      </section>
+
+      <section class="carte">
+        <h3 class="section-titre">📚 Matière</h3>
+        <div class="matieres">
+          <button class="matiere"><span class="e">📖</span><b>Français</b><small>Lire, grammaire…</small><div class="mini"><i style="width:72%"></i></div></button>
+          <button class="matiere"><span class="e">📐</span><b>Maths</b><small>Nombres, grandeurs…</small><div class="mini"><i style="width:58%"></i></div></button>
+          <button class="matiere"><span class="e">🌍</span><b>Histoire-Géo</b><small>Repères, cartes…</small><div class="mini"><i style="width:40%"></i></div></button>
+          <button class="matiere"><span class="e">🧪</span><b>Sciences</b><small>Vivant, matière…</small><div class="mini"><i style="width:25%"></i></div></button>
+          <button class="matiere sel"><span class="e">🔀</span><b>Mix</b><small>Toutes les matières</small><div class="mini"><i style="width:55%"></i></div></button>
+        </div>
+      </section>
+
+      <div class="go"><button>Lancer la mission →</button></div>
+    </div>
+
+    <div class="col-droite">
+      <section class="carte">
+        <h3>🎁 Prochaine récompense</h3>
+        <div class="coffre"><span>🎁</span><p>Coffre rare : un <b>nouvel avatar</b> à gagner</p></div>
+        <div class="barre"><i style="width:65%"></i></div>
+        <p style="margin:6px 0 0;color:var(--mute);font-size:13px">650 / 1 000 XP</p>
+      </section>
+      <section class="carte">
+        <h3>⚡ Défis du jour</h3>
+        <div class="defi"><span class="e">🎯</span><span>10 questions</span><span class="xp">+50 XP</span><div class="barre"><i style="width:70%"></i></div></div>
+        <div class="defi"><span class="e">⭐</span><span>80 % ou plus</span><span class="xp">+50 XP</span><div class="barre"><i style="width:0%"></i></div></div>
+        <div class="defi"><span class="e">🔥</span><span>5 d'affilée</span><span class="xp">+30 XP</span><div class="barre"><i style="width:80%"></i></div></div>
+      </section>
+      <section class="carte">
+        <h3>🏅 Ma collection <span style="color:var(--mute);font-weight:600;font-size:14px">8 / 40</span></h3>
+        <div class="collection"><div class="rare">🥇</div><div>🎯</div><div>⚡</div><div>🧠</div><div>📚</div><div class="lock">🌋</div><div class="lock">🛰️</div><div class="lock">👑</div></div>
+      </section>
+    </div>
+    <footer>Mission CEB · Fait pour réussir ton CEB</footer>
+  </main>
+</div>
+
+<nav class="navbas">
+  <a href="#" class="actif"><span>🏠</span>Accueil</a>
+  <a href="#"><span>📊</span>Progrès</a>
+  <a href="#"><span>🏅</span>Collection</a>
+  <a href="#"><span>🦊</span>Moi</a>
+</nav>
+
+<div class="choix-ambiance" id="ambiance">
+  <button class="replier" id="replier" title="Réduire">–</button>
+  <b>🎨 Essaie les ambiances</b>
+  <div class="rang">
+    <button data-t="neon" class="sel">Néon</button>
+    <button data-t="pop">Pop</button>
+    <button data-t="sunset">Sunset</button>
+  </div>
+  <div class="rang">
+    <button data-h="avatar" class="sel">🦊 Avatar</button>
+    <button data-h="robot">🤖 Robot</button>
+  </div>
+</div>
+
+<script>
+  const html = document.documentElement;
+  const groupe = (sel, onChoix) => {
+    const els = [...document.querySelectorAll(sel)];
+    els.forEach((b) => b.addEventListener('click', () => { els.forEach((x) => x.classList.toggle('sel', x === b)); onChoix && onChoix(b); }));
+  };
+  groupe('[data-t]', (b) => html.dataset.theme = b.dataset.t);
+  groupe('[data-h]', (b) => html.dataset.heros = b.dataset.h);
+  groupe('.mode'); groupe('.matiere');
+  // Lien direct vers une ambiance : a2-ambiances.html#pop
+  const h = location.hash.slice(1);
+  if (['neon', 'pop', 'sunset'].includes(h)) document.querySelector(`[data-t="${h}"]`).click();
+  document.getElementById('replier').onclick = () => document.getElementById('ambiance').classList.toggle('ferme');
+</script>
+</body>
+</html>
