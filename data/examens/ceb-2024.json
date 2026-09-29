@@ -1,0 +1,4165 @@
+{
+ "id": "ceb-2024",
+ "annee": 2024,
+ "referentiel": "socles",
+ "titre": "CEB 2024",
+ "source": "FWB, épreuve externe commune 2024 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2024-06-24",
+   "points": 20,
+   "audio": null
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2024-06-24",
+   "points": 35
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2024-06-24",
+   "points": 40
+  },
+  {
+   "n": 4,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2024-06-25",
+   "points": 55
+  },
+  {
+   "n": 5,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2024-06-25",
+   "points": 60
+  },
+  {
+   "n": 6,
+   "matiere": "ma",
+   "titre": "Nombres et opérations 1",
+   "date": "2024-06-27",
+   "points": 36
+  },
+  {
+   "n": 7,
+   "matiere": "ma",
+   "titre": "Nombres et opérations 2",
+   "date": "2024-06-27",
+   "points": 34
+  },
+  {
+   "n": 8,
+   "matiere": "fr",
+   "titre": "Lire — texte informatif",
+   "date": "2024-06-27",
+   "points": 30
+  },
+  {
+   "n": 9,
+   "matiere": "fr",
+   "titre": "Lire — texte fictionnel",
+   "date": "2024-06-28",
+   "points": 35
+  },
+  {
+   "n": 10,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2024-06-28",
+   "points": 60
+  }
+ ],
+ "documents": [
+  {
+   "id": "choco-1",
+   "page": 3,
+   "titre": "À propos du chocolat (1)",
+   "fichier": "assets/2024/pdf03.webp",
+   "alt": "Introduction et partie 1 « D'où vient le chocolat ? » : le cacaoyer, la cabosse et les fèves."
+  },
+  {
+   "id": "choco-2",
+   "page": 4,
+   "titre": "À propos du chocolat (2)",
+   "fichier": "assets/2024/pdf04.webp",
+   "alt": "Partie 2 « Comment fabrique-t-on le chocolat ? » : récolte, fermentation, séchage ; propos de Didier, artisan-chocolatier."
+  },
+  {
+   "id": "choco-3",
+   "page": 5,
+   "titre": "À propos du chocolat (3)",
+   "fichier": "assets/2024/pdf05.webp",
+   "alt": "Torréfaction, broyage, vannage, conchage ; « Un bon chocolat, c'est quoi ? »."
+  },
+  {
+   "id": "choco-4",
+   "page": 6,
+   "titre": "À propos du chocolat (4)",
+   "fichier": "assets/2024/pdf06.webp",
+   "alt": "Partie 3 « Le chocolat, stop ou encore ? » : effets sur l'environnement et bienfaits."
+  },
+  {
+   "id": "choco-5",
+   "page": 7,
+   "titre": "À propos du chocolat (5)",
+   "fichier": "assets/2024/pdf07.webp",
+   "alt": "Partie 4 « Envie de chocolat ? » : recette des truffes au chocolat et encadré « Le saviez-vous ? »."
+  },
+  {
+   "id": "avion",
+   "page": 8,
+   "titre": "Plan d'un avion",
+   "fichier": "assets/2024/pdf08.webp",
+   "alt": "Plan des sièges (rangées 1 à 21, lettres A à F) : première classe rangées 1 à 7, classe économique 8 à 21 ; sièges réservés en noir ; WC à l'avant et à l'arrière."
+  },
+  {
+   "id": "traces",
+   "page": 9,
+   "titre": "Des traces du passé",
+   "fichier": "assets/2024/pdf09.webp",
+   "alt": "1 : Très Riches Heures du duc de Berry (1412-1416). 2 : Droits de l'Homme (1789). 3 : Traité instituant la CEE (1957). 4 : Auroch de Lascaux (17 000 av. J.-C.). 5 : Appel au Peuple (1830)."
+  },
+  {
+   "id": "paysages",
+   "page": 10,
+   "titre": "Des paysages",
+   "fichier": "assets/2024/pdf10.webp",
+   "alt": "Photo 1 : terrain sec et rocailleux. Photo 2 : une forêt de conifères vue du ciel. Photo 3 : prairie avec des vaches et un château. Photo 4 : une grand-place de ville."
+  },
+  {
+   "id": "espace",
+   "page": 11,
+   "titre": "L'organisation de l'espace",
+   "fichier": "assets/2024/pdf11.webp",
+   "alt": "Photo A : un village. Photo B : une grande ville vue du ciel. Photo C : des champs séparés par des haies."
+  },
+  {
+   "id": "jo-1",
+   "page": 12,
+   "titre": "Des Jeux Olympiques modernes d'été",
+   "fichier": "assets/2024/pdf12.webp",
+   "alt": "Logos et affiches : 1 Paris, 2 Melbourne, 3 Mexico, 4 Séoul, 5 affiche de Stockholm 1912."
+  },
+  {
+   "id": "jo-2",
+   "page": 13,
+   "titre": "Documents sur les J.O.",
+   "fichier": "assets/2024/pdf13.webp",
+   "alt": "Document A : note officielle de 1896. Document B : affiche des J.O. et de l'Exposition universelle de Saint-Louis 1904. Document C : photo de Charlotte Cooper, championne en 1900."
+  },
+  {
+   "id": "aeroports",
+   "page": 14,
+   "titre": "Carte d'aéroports ayant servi pour les J.O.",
+   "fichier": "assets/2024/pdf14.webp",
+   "alt": "Trajets en avion depuis Bruxelles vers Athènes, Los Angeles, Tokyo, Rio de Janeiro et Sydney."
+  },
+  {
+   "id": "medailles",
+   "page": 15,
+   "titre": "Médailles aux J.O. de Tokyo 2020",
+   "fichier": "assets/2024/pdf15.webp",
+   "alt": "Graphique des médailles d'or, d'argent et de bronze de huit pays."
+  },
+  {
+   "id": "attributions-1",
+   "page": 16,
+   "titre": "Attributions des J.O. d'été (1)",
+   "fichier": "assets/2024/pdf16.webp",
+   "alt": "Carte des Amériques et de l'Europe de l'Ouest avec les années des J.O."
+  },
+  {
+   "id": "attributions-2",
+   "page": 17,
+   "titre": "Attributions des J.O. d'été (2)",
+   "fichier": "assets/2024/pdf17.webp",
+   "alt": "Carte de l'Europe de l'Est, de l'Asie et de l'Océanie avec les années des J.O."
+  },
+  {
+   "id": "migrations",
+   "page": 18,
+   "titre": "Trajets migratoires d'oiseaux",
+   "fichier": "assets/2024/pdf18.webp",
+   "alt": "Carte de quatre trajets numérotés de la Belgique vers l'Afrique."
+  },
+  {
+   "id": "coeur-1",
+   "page": 19,
+   "titre": "Avec le cœur (1)",
+   "fichier": "assets/2024/pdf19.webp",
+   "alt": "Début du récit de Ludovic Flamant : le devoir de poème, Nico et Nour dans la cour."
+  },
+  {
+   "id": "coeur-2",
+   "page": 20,
+   "titre": "Avec le cœur (2)",
+   "fichier": "assets/2024/pdf20.webp",
+   "alt": "Suite : le rire de Nour, leur première rencontre, la page blanche."
+  },
+  {
+   "id": "coeur-3",
+   "page": 21,
+   "titre": "Avec le cœur (3)",
+   "fichier": "assets/2024/pdf21.webp",
+   "alt": "Fin : le rêve du chien et le poème de Nico. Ludovic Flamant, texte inédit, 2022."
+  },
+  {
+   "id": "experience-air",
+   "page": 22,
+   "titre": "Une expérience scientifique",
+   "fichier": "assets/2024/pdf22.webp",
+   "alt": "Étapes d'une expérience sur les effets de la chaleur sur l'air (bouteille, eau chaude, assiette d'eau colorée)."
+  },
+  {
+   "id": "classification",
+   "page": 23,
+   "titre": "La classification du vivant",
+   "fichier": "assets/2024/pdf23.webp",
+   "alt": "Collection : argyronète, héron cendré, aselle aquatique, cistude d'Europe, épinoche, triton à crête, limnée des étangs, ragondin, libellule."
+  },
+  {
+   "id": "meduse",
+   "page": 24,
+   "titre": "Des cycles de vie : la méduse",
+   "fichier": "assets/2024/pdf24.webp",
+   "alt": "Œuf, planule, polype, strobile, éphyrule, méduse adulte."
+  },
+  {
+   "id": "papillon",
+   "page": 25,
+   "titre": "Des cycles de vie : le papillon",
+   "fichier": "assets/2024/pdf25.webp",
+   "alt": "Œufs, chenille, chrysalide (pupe), métamorphose, papillon adulte, reproduction."
+  },
+  {
+   "id": "meteo",
+   "page": 26,
+   "titre": "Un bulletin météorologique",
+   "fichier": "assets/2024/pdf26.webp",
+   "alt": "Bulletin du lundi 24/06 au vendredi 28/06 (températures, vent, précipitations) et instruments : pluviomètre, anémomètre, girouette, thermomètre, baromètre."
+  },
+  {
+   "id": "sante",
+   "page": 27,
+   "titre": "La santé de l'humain",
+   "fichier": "assets/2024/pdf27.webp",
+   "alt": "Graphique des besoins énergétiques moyens (kcal) des filles/femmes et garçons/hommes à 3 ans, 10 ans, 16 ans, 30-60 ans et plus de 70 ans."
+  },
+  {
+   "id": "dents",
+   "page": 28,
+   "titre": "Les dents et le régime alimentaire",
+   "fichier": "assets/2024/pdf28.webp",
+   "alt": "Mâchoire humaine et tableau des dents des carnivores, omnivores et herbivores."
+  },
+  {
+   "id": "fleurs",
+   "page": 29,
+   "titre": "Des fleurs dans un vase",
+   "fichier": "assets/2024/pdf29.webp",
+   "alt": "Expérience 1 : deux éprouvettes, une avec de l'huile. Expérience 2 : deux éprouvettes avec de l'huile, dont une avec une tulipe."
+  },
+  {
+   "id": "liquides",
+   "page": 30,
+   "titre": "Des expériences avec des liquides",
+   "fichier": "assets/2024/pdf30.webp",
+   "alt": "1 : lait écrémé et huile. 2 : bouteille d'eau au congélateur. 3 : eau qui bout."
+  },
+  {
+   "id": "electricite",
+   "page": 31,
+   "titre": "L'électricité",
+   "fichier": "assets/2024/pdf31.webp",
+   "alt": "Deux montages avec 2 batteries, une lampe LED, des câbles et de l'eau salée."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2024-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "Écris une histoire dont tu es le personnage principal et qui se termine par : « Finalement, nous nous sommes quittés en échangeant nos regards et sans dire un mot. Au fond de moi, j'avais déjà hâte de revenir en forêt et de retrouver mon nouvel ami / ma nouvelle amie pour une prochaine aventure. » Invente un titre, écris en « je », fais des paragraphes, utilise des mots de liaison, au moins 90 mots.",
+   "points": 35,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q1a",
+   "livret": 3,
+   "numero": "1a",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Plan de l'avion : trace une croix sur le siège 18E.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "avion"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q1b",
+   "livret": 3,
+   "numero": "1b",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Plan de l'avion : un couple veut deux sièges libres côte à côte en classe économique, le plus près possible des toilettes (WC) situées à l'arrière. Quels sièges ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "avion"
+   ],
+   "choix": [
+    "21A et 21B",
+    "20B et 20C",
+    "19D et 19E",
+    "21D et 21F"
+   ],
+   "reponse": 1,
+   "explication": "En rangée 21, aucun siège libre n'est à côté d'un autre (B, C et E sont pris). En rangée 20, B et C sont libres et côte à côte."
+  },
+  {
+   "id": "ceb-2024-l3-q1c",
+   "livret": 3,
+   "numero": "1c",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Plan de l'avion : une famille veut 5 sièges libres sur la même rangée en classe économique. Quelle rangée choisir ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "avion"
+   ],
+   "choix": [
+    "Rangée 11",
+    "Rangée 16",
+    "Rangée 18",
+    "Rangée 21"
+   ],
+   "reponse": 1,
+   "explication": "En rangée 16, seul le siège A est pris : B, C, D, E et F sont libres."
+  },
+  {
+   "id": "ceb-2024-l3-q1d",
+   "livret": 3,
+   "numero": "1d",
+   "domaine": "ma.geometrie",
+   "type": "texte_court",
+   "enonce": "Plan de l'avion : un homme d'affaires veut un siège côté couloir, à la dernière rangée de la première classe. Quel siège ? (exemple : 3A)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "avion"
+   ],
+   "reponse": [
+    "7C",
+    "7D",
+    "7 C",
+    "7 D"
+   ],
+   "explication": "La dernière rangée de première classe est la 7. Côté couloir : C ou D, tous deux libres."
+  },
+  {
+   "id": "ceb-2024-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Complète la suite en dessinant les trois figures suivantes.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q3",
+   "livret": 3,
+   "numero": "3",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris le nom précis (2 mots) de chaque triangle dessiné.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Exemple : pour être un triangle, il faut et il suffit d'être un polygone à 3 côtés. Complète selon le même principe.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-quadrilateres",
+   "texte": "Pour être un {1}, il faut et il suffit d'être un polygone à 4 côtés isométriques.  ·  Pour être un {2}, il faut et il suffit d'être un polygone à 3 côtés dont 2 sont isométriques.  ·  Pour être un {3}, il faut et il suffit d'être un polygone à 4 côtés avec 4 angles droits.",
+   "reponse": [
+    [
+     "losange"
+    ],
+    [
+     "triangle isocèle",
+     "triangle isocele"
+    ],
+    [
+     "rectangle"
+    ]
+   ],
+   "explication": "4 côtés de même longueur : le losange. 3 côtés dont 2 égaux : le triangle isocèle. 4 angles droits : le rectangle (le carré en est un cas particulier)."
+  },
+  {
+   "id": "ceb-2024-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace avec précision un hexagone régulier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Quadrillage : coche les déplacements de la figure B et colorie le nouvel emplacement de la figure A.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Repasse les pointillés pour faire apparaitre un carré, un triangle équilatéral et un triangle obtusangle.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace l'axe de symétrie de chaque lettre.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q9",
+   "livret": 3,
+   "numero": "9",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les figures numérotées selon leurs angles droits et leurs côtés isométriques.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q10",
+   "livret": 3,
+   "numero": "10",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Achève le tracé du parallélogramme.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Compte les faces, sommets et arêtes des solides A, B et C.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Place chaque solide dans le classement (polyèdre, prisme, pyramide…).",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Reproduis le dessin en respectant les dimensions.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure l'agrandissement et la réduction de la figure.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q16",
+   "livret": 3,
+   "numero": "16",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Découpe et colle deux triangles pour former un losange, un parallélogramme et un rectangle.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l3-q13",
+   "livret": 3,
+   "numero": "13",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Émilie dicte : « Trace 2 droites parallèles a et b. Trace 2 autres droites parallèles c et d, sécantes aux droites a et b mais non perpendiculaires à elles. » Quelle figure obtient-on ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-quadrilateres",
+   "choix": [
+    "un trapèze (non parallélogramme)",
+    "un rectangle",
+    "un triangle",
+    "un parallélogramme (non rectangle)"
+   ],
+   "reponse": 3,
+   "explication": "Deux paires de côtés parallèles, sans angle droit : un parallélogramme qui n'est pas un rectangle."
+  },
+  {
+   "id": "ceb-2024-l3-q17",
+   "livret": 3,
+   "numero": "17",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Le dessin montre un rectangle ABCD, ses deux diagonales et un cercle de centre E (milieu de [BC]) qui passe par B et C. Quel programme permet de le construire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-cercle",
+   "choix": [
+    "Rectangle ABCD, diagonales [AC] et [BD], E milieu de [BC], cercle de centre E et de rayon [BC].",
+    "Rectangle ABCD, médianes [AC] et [BD], E milieu de [BC], cercle de centre E et de diamètre [BC].",
+    "Rectangle ABCD, diagonales [AC] et [BD], E milieu de [BC], cercle de centre E et de diamètre [BC].",
+    "Rectangle ABCD, médianes [AC] et [BD], E milieu de [BC], cercle de centre E et de rayon [EC]."
+   ],
+   "reponse": 2,
+   "explication": "[AC] et [BD] relient des sommets opposés : ce sont des diagonales, pas des médianes. Le cercle passe par B et C avec E au milieu : [BC] est son diamètre."
+  },
+  {
+   "id": "ceb-2024-l4-q1a",
+   "livret": 4,
+   "numero": "1a",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Complète avec une information de l'emballage.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "Température : {1}  ·  Durée : {2}",
+   "reponse": [
+    [
+     "170 °C",
+     "170°C",
+     "170 degrés",
+     "170 °c"
+    ],
+    [
+     "8 min",
+     "8 minutes",
+     "8min"
+    ]
+   ],
+   "explication": "La température de cuisson est 170 °C et la durée 8 minutes."
+  },
+  {
+   "id": "ceb-2024-l4-q1b",
+   "livret": 4,
+   "numero": "1b",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. De quel type de grandeur s'agit-il ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "360 g : {1}  ·  4,99 € : {2}",
+   "reponse": [
+    [
+     "masse",
+     "la masse",
+     "poids"
+    ],
+    [
+     "coût",
+     "le coût",
+     "prix",
+     "le prix",
+     "valeur",
+     "monnaie",
+     "cout"
+    ]
+   ],
+   "explication": "Les grammes mesurent une masse ; les euros un coût (un prix)."
+  },
+  {
+   "id": "ceb-2024-l4-q2",
+   "livret": 4,
+   "numero": "2",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace une figure qui a le même périmètre que le losange.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q3",
+   "livret": 4,
+   "numero": "3",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Lis le chronomètre et trace les aiguilles pour 6 min 28 s.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q4",
+   "livret": 4,
+   "numero": "4",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Estime la longueur de la ligne courbe.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Une douche dure 8 minutes. Un pommeau classique consomme 15 l d'eau par minute, un pommeau économique 6 l par minute. Combien de litres d'eau économise-t-on avec le pommeau économique ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "unite": "l",
+   "reponse": 72,
+   "explication": "Classique : 8 × 15 = 120 l. Économique : 8 × 6 = 48 l. Économie : 120 − 48 = 72 l (ou 8 × 9 = 72 l)."
+  },
+  {
+   "id": "ceb-2024-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace sur le récipient gradué les deux étapes pour mesurer 1,5 litre de lait.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un compteur indique qu'il reste 648 heures avant l'ouverture des Jeux Olympiques. Combien de jours cela fait-il ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "unite": "jours",
+   "reponse": 27,
+   "explication": "Un jour compte 24 heures : 648 : 24 = 27 jours."
+  },
+  {
+   "id": "ceb-2024-l4-q8",
+   "livret": 4,
+   "numero": "8",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Écris l'aire des figures A, B et C tracées dans le quadrillage.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Colorie 3/12, 2/6 et 1/3 du rectangle, puis complète les numérateurs pour que la somme vaille 1.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Calcule la masse totale des bonbons du récipient (un bonbon pèse 2,4 g).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q11a",
+   "livret": 4,
+   "numero": "11a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "1 litre, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "10 centilitres",
+    "10 décalitres",
+    "10 décilitres",
+    "10 hectolitres"
+   ],
+   "reponse": 2,
+   "explication": "1 l = 10 dl (et 100 cl)."
+  },
+  {
+   "id": "ceb-2024-l4-q11b",
+   "livret": 4,
+   "numero": "11b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "1 mètre, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "0,1 kilomètre",
+    "0,1 centimètre",
+    "0,1 décimètre",
+    "0,1 décamètre"
+   ],
+   "reponse": 3,
+   "explication": "1 dam = 10 m, donc 1 m = 0,1 dam."
+  },
+  {
+   "id": "ceb-2024-l4-q11c",
+   "livret": 4,
+   "numero": "11c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "1 gramme, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "0,001 kilogramme",
+    "0,001 décagramme",
+    "0,001 centigramme",
+    "0,001 milligramme"
+   ],
+   "reponse": 0,
+   "explication": "1 kg = 1 000 g, donc 1 g = 0,001 kg."
+  },
+  {
+   "id": "ceb-2024-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Chaque croquette contient 40 % de crevettes. Quelle est la masse de crevettes dans une seule croquette ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "unite": "g",
+   "reponse": 24,
+   "explication": "Une croquette : 360 g : 6 = 60 g. 40 % de 60 g : 60 × 40 : 100 = 24 g."
+  },
+  {
+   "id": "ceb-2024-l4-q13a",
+   "livret": 4,
+   "numero": "13a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Quelles classes seront à la mer le premier samedi d'octobre (5 octobre) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Le 5 octobre : P3 (jusqu'au 6/10) et P6 (jusqu'au 11/10). P5 est rentrée le 4/10, P4 le 27/09."
+  },
+  {
+   "id": "ceb-2024-l4-q13b",
+   "livret": 4,
+   "numero": "13b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. À quelle date 3 classes seront-elles à la mer en même temps ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "Le 25 septembre",
+    "Le 2 octobre",
+    "Le 6 octobre",
+    "Le 9 octobre"
+   ],
+   "reponse": 1,
+   "explication": "Du 30/09 au 04/10, P3, P5 et P6 sont toutes à la mer. Le 25/09 : P4 et P5 ; le 6/10 : P3 et P6 ; le 9/10 : P6."
+  },
+  {
+   "id": "ceb-2024-l4-q13c",
+   "livret": 4,
+   "numero": "13c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Les P3 vont habituellement à la piscine le lundi. Quelle date le directeur doit-il annuler ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "Le lundi 23 septembre",
+    "Le lundi 30 septembre",
+    "Le lundi 7 octobre",
+    "Le lundi 14 octobre"
+   ],
+   "reponse": 1,
+   "explication": "Les P3 sont à la mer du 30/09 au 06/10 : le seul lundi de cette période est le 30 septembre."
+  },
+  {
+   "id": "ceb-2024-l4-q14",
+   "livret": 4,
+   "numero": "14",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un parallélépipède rectangle a un volume de 60 m³. Sa base mesure 5 m sur 4 m. Quelle est sa hauteur ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "unite": "m",
+   "reponse": 3,
+   "explication": "Aire de la base : 5 × 4 = 20 m². Hauteur : 60 : 20 = 3 m."
+  },
+  {
+   "id": "ceb-2024-l4-q15",
+   "livret": 4,
+   "numero": "15",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Avec des bouteilles recyclées, on fabrique des oreillers : 3 oreillers demandent 36 bouteilles. Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "texte": "10 oreillers : {1} bouteilles  ·  {2} oreillers : 60 bouteilles",
+   "reponse": [
+    [
+     "120"
+    ],
+    [
+     "5"
+    ]
+   ],
+   "explication": "Un oreiller : 36 : 3 = 12 bouteilles. 10 oreillers : 120 bouteilles. 60 bouteilles : 60 : 12 = 5 oreillers."
+  },
+  {
+   "id": "ceb-2024-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Sur 2 500 élèves interrogés, 87 % ont répondu OUI à la question « Votre cartable est-il trop lourd ? ». Combien d'élèves ont répondu OUI ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "reponse": 2175,
+   "explication": "1 % de 2 500 = 25. 87 × 25 = 2 175 élèves."
+  },
+  {
+   "id": "ceb-2024-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Barre la figure dont la partie grisée représente une fraction différente des autres.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q18a",
+   "livret": 4,
+   "numero": "18a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Combien de minutes a-t-elle pour changer de train à Liège ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "unite": "min",
+   "reponse": 14,
+   "explication": "De 16:49 à 17:03 : 11 min jusqu'à 17:00, puis 3 min, soit 14 min."
+  },
+  {
+   "id": "ceb-2024-l4-q18b",
+   "livret": 4,
+   "numero": "18b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Quelle est la durée totale du trajet ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "choix": [
+    "104 min",
+    "38 min",
+    "56 min",
+    "64 min"
+   ],
+   "reponse": 3,
+   "explication": "De 16:17 à 17:17 : 60 min, puis 4 min jusqu'à 17:21 : 64 min."
+  },
+  {
+   "id": "ceb-2024-l4-q19",
+   "livret": 4,
+   "numero": "19",
+   "domaine": "ma.donnees",
+   "type": "ouverte",
+   "enonce": "Lis le graphique des styles de musique par âge et complète les phrases.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l4-q20",
+   "livret": 4,
+   "numero": "20",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Pour carreler une terrasse, il faut 32 dalles carrées de 40 cm de côté. Combien faudrait-il de dalles avec un autre format ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-aires-perimetres",
+   "texte": "Dalles de 20 cm × 40 cm : {1}  ·  Dalles de 80 cm × 40 cm : {2}  ·  Dalles de 80 cm × 80 cm : {3}",
+   "reponse": [
+    [
+     "64"
+    ],
+    [
+     "16"
+    ],
+    [
+     "8"
+    ]
+   ],
+   "explication": "Une dalle 20 × 40 est la moitié d'une 40 × 40 : il en faut 2 fois plus (64). Une 80 × 40 vaut 2 dalles : 16. Une 80 × 80 vaut 4 dalles : 8."
+  },
+  {
+   "id": "ceb-2024-l4-q21",
+   "livret": 4,
+   "numero": "21",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Ordures ménagères en Wallonie (kg par habitant) : 2015 : 152 ; 2016 : 150,8 ; 2017 : 147,4 ; 2018 : 145,1 ; 2019 : 144,9 ; 2020 : 142 ; 2021 : 141,9 ; 2022 : 140,7. Quelle est la quantité moyenne ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-moyenne",
+   "unite": "kg/hab.",
+   "reponse": 145.6,
+   "explication": "Total : 1 164,8 kg. Moyenne sur 8 ans : 1 164,8 : 8 = 145,6 kg par habitant."
+  },
+  {
+   "id": "ceb-2024-l4-q22",
+   "livret": 4,
+   "numero": "22",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Complète l'unité de chaque grandeur avec le préfixe adéquat (déca, déci, hecto, kilo, centi, milli).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l5-q1a",
+   "livret": 5,
+   "numero": "1a",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quelle période historique conventionnelle se rapporte chaque trace du passé ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "documents": [
+    "traces"
+   ],
+   "lignes": [
+    "Trace 1 : Les Très Riches Heures du duc de Berry (1412-1416)",
+    "Trace 3 : Traité instituant la Communauté économique européenne (1957)",
+    "Trace 4 : Auroch, peinture de Lascaux (17 000 ans av. J.-C.)"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    2,
+    4,
+    0
+   ],
+   "explication": "1412-1416 : Moyen Âge (476-1492). 1957 : Époque contemporaine (après 1789). 17 000 av. J.-C. : Préhistoire."
+  },
+  {
+   "id": "ceb-2024-l5-q1b",
+   "livret": 5,
+   "numero": "1b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quel évènement historique se rapporte chaque trace ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "documents": [
+    "traces"
+   ],
+   "lignes": [
+    "Trace 3 : Traité instituant la Communauté économique européenne (1957)",
+    "Trace 5 : Appel au Peuple (1830)"
+   ],
+   "colonnes": [
+    "L'indépendance de la Belgique",
+    "La guerre 14-18",
+    "La guerre 40-45",
+    "La signature du Traité de Rome",
+    "Le premier homme dans l'espace"
+   ],
+   "reponse": [
+    3,
+    0
+   ],
+   "explication": "Le Traité de Rome (1957) crée la Communauté économique européenne. L'Appel au Peuple de 1830 appelle les Belges à combattre les Hollandais : l'indépendance."
+  },
+  {
+   "id": "ceb-2024-l5-q1c1",
+   "livret": 5,
+   "numero": "1c1",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "La trace 5 (« Appel au Peuple » de 1830, affiche imprimée) est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "traces"
+   ],
+   "choix": [
+    "un graphique",
+    "une peinture",
+    "un monument",
+    "un document écrit"
+   ],
+   "reponse": 3,
+   "explication": "C'est un texte imprimé : un document écrit."
+  },
+  {
+   "id": "ceb-2024-l5-q1c2",
+   "livret": 5,
+   "numero": "1c2",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "La trace 5 nous renseigne sur une manière dont les gens…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "traces"
+   ],
+   "choix": [
+    "communiquaient en 1830.",
+    "s'instruisaient en 1830.",
+    "se soignaient en 1830.",
+    "se logeaient en 1830.",
+    "s'alimentaient en 1830."
+   ],
+   "reponse": 0,
+   "explication": "Une affiche placardée pour appeler la population : un moyen de communiquer."
+  },
+  {
+   "id": "ceb-2024-l5-q1d1",
+   "livret": 5,
+   "numero": "1d1",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Un hypocauste de villa romaine est un système de chauffage par le sol. Il nous renseigne sur une technique que l'Humain utilisait pour…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "choix": [
+    "s'instruire",
+    "s'alimenter",
+    "se distraire",
+    "se déplacer",
+    "se loger"
+   ],
+   "reponse": 4,
+   "explication": "Chauffer sa maison, c'est une question de logement."
+  },
+  {
+   "id": "ceb-2024-l5-q1d2",
+   "livret": 5,
+   "numero": "1d2",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "À quelle période conventionnelle se rapporte l'hypocauste de villa romaine ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "choix": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": 1,
+   "explication": "Les villas romaines datent de l'Antiquité."
+  },
+  {
+   "id": "ceb-2024-l5-q1e",
+   "livret": 5,
+   "numero": "1e",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Un élève affirme : « Le lancer du disque existe depuis très longtemps. Des traces prouvent qu'il est apparu au Moyen Âge. » Pourtant, le Discobole de Myron date du 5e siècle avant J.-C. Pourquoi l'élève a-t-il tort ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "reponseModele": "Le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité : le lancer du disque existait donc bien avant le Moyen Âge."
+  },
+  {
+   "id": "ceb-2024-l5-q2a",
+   "livret": 5,
+   "numero": "2a",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Écris le numéro des villes organisatrices des J.O. dans les étiquettes de la carte.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "documents": [
+    "jo-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l5-q2b",
+   "livret": 5,
+   "numero": "2b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Le document 5 (affiche des J.O. de Stockholm 1912) est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "jo-1"
+   ],
+   "choix": [
+    "un monument",
+    "un document écrit",
+    "une sculpture",
+    "un document audiovisuel"
+   ],
+   "reponse": 1,
+   "explication": "Une affiche imprimée avec du texte : parmi les propositions, c'est un document écrit."
+  },
+  {
+   "id": "ceb-2024-l5-q2c",
+   "livret": 5,
+   "numero": "2c",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Dans quel siècle se situe l'année 1912 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "choix": [
+    "18e siècle",
+    "19e siècle",
+    "20e siècle",
+    "21e siècle"
+   ],
+   "reponse": 2,
+   "explication": "Le 20e siècle va de 1901 à 2000."
+  },
+  {
+   "id": "ceb-2024-l5-q2d",
+   "livret": 5,
+   "numero": "2d",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Pierre de Coubertin est né en 1863 et mort en 1937. Situe ces évènements par rapport à sa vie.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "lignes": [
+    "La guerre 14-18",
+    "La signature du Traité de Rome (1957)",
+    "L'indépendance de la Belgique (1830)"
+   ],
+   "colonnes": [
+    "avant sa naissance",
+    "pendant sa vie",
+    "après sa mort"
+   ],
+   "reponse": [
+    1,
+    2,
+    0
+   ],
+   "explication": "1914-1918 est entre 1863 et 1937. 1957 est après 1937. 1830 est avant 1863."
+  },
+  {
+   "id": "ceb-2024-l5-q2e",
+   "livret": 5,
+   "numero": "2e",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Dans quel document se trouve la réponse à chaque question ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "jo-2"
+   ],
+   "lignes": [
+    "En quelle année ont eu lieu les J.O. de Saint-Louis aux États-Unis ?",
+    "L'escrime faisait-elle partie des disciplines aux J.O. de 1896 ?",
+    "Pierre de Coubertin était-il encore Secrétaire général du Comité International Olympique en 1900 ?",
+    "Les femmes pouvaient-elles participer aux J.O. de 1900 ?",
+    "Dans quelle ville se sont déroulés les J.O. en 1900 ?"
+   ],
+   "colonnes": [
+    "Document A",
+    "Document B",
+    "Document C",
+    "Dans aucun document"
+   ],
+   "reponse": [
+    1,
+    0,
+    3,
+    2,
+    0
+   ],
+   "explication": "B : l'affiche de Saint-Louis 1904. A : la note de 1896 cite l'escrime et annonce Paris pour 1900. C : Charlotte Cooper, championne en 1900. Rien ne dit si Coubertin avait encore ce poste en 1900."
+  },
+  {
+   "id": "ceb-2024-l5-q2e2",
+   "livret": 5,
+   "numero": "2e2",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Le document C (Charlotte Cooper, championne olympique en 1900, en longue robe avec sa raquette) est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "jo-2"
+   ],
+   "choix": [
+    "un monument",
+    "une photographie",
+    "une sculpture",
+    "un document écrit"
+   ],
+   "reponse": 1,
+   "explication": "C'est une photographie d'époque."
+  },
+  {
+   "id": "ceb-2024-l5-q2e3",
+   "livret": 5,
+   "numero": "2e3",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Le document C nous renseigne sur la manière dont certaines athlètes…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "jo-2"
+   ],
+   "choix": [
+    "s'instruisaient en 1900.",
+    "s'exprimaient en 1900.",
+    "s'habillaient en 1900.",
+    "se soignaient en 1900."
+   ],
+   "reponse": 2,
+   "explication": "On voit la tenue de sport d'une championne en 1900 : une longue robe."
+  },
+  {
+   "id": "ceb-2024-l5-q2f",
+   "livret": 5,
+   "numero": "2f",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Observe la carte des attributions des J.O. d'été.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "attributions-1",
+    "attributions-2"
+   ],
+   "texte": "Le continent où les J.O. ont été le plus souvent organisés : {1}.  ·  Un autre continent qui les a accueillis plus de deux fois : {2}.",
+   "reponse": [
+    [
+     "Europe",
+     "l'Europe"
+    ],
+    [
+     "Amérique",
+     "l'Amérique",
+     "Asie",
+     "l'Asie",
+     "Amérique du Nord",
+     "l'Amérique du Nord"
+    ]
+   ],
+   "explication": "L'Europe a accueilli le plus de J.O. L'Amérique (États-Unis, Canada, Mexique, Brésil) et l'Asie (Tokyo, Séoul, Pékin) les ont accueillis plus de deux fois. L'Océanie seulement deux fois."
+  },
+  {
+   "id": "ceb-2024-l5-q2g",
+   "livret": 5,
+   "numero": "2g",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Une élève affirme : « Les J.O. d'été se sont déroulés sur tous les continents ! » C'est faux. Pourquoi ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "attributions-1",
+    "attributions-2"
+   ],
+   "reponseModele": "Aucun J.O. d'été n'a été organisé en Afrique (ni en Antarctique)."
+  },
+  {
+   "id": "ceb-2024-l5-q2h",
+   "livret": 5,
+   "numero": "2h",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Observe la carte des aéroports. Quelle direction a prise chaque délégation ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-orientation",
+   "documents": [
+    "aeroports"
+   ],
+   "lignes": [
+    "De Bruxelles à Los Angeles (1984)",
+    "De Bruxelles à Tokyo (2021)",
+    "De Tokyo à Sydney (2000)"
+   ],
+   "colonnes": [
+    "nord",
+    "ouest",
+    "est",
+    "sud"
+   ],
+   "reponse": [
+    1,
+    2,
+    3
+   ],
+   "explication": "Los Angeles est à l'ouest de la Belgique, Tokyo à l'est ; Sydney est au sud de Tokyo."
+  },
+  {
+   "id": "ceb-2024-l5-q2i",
+   "livret": 5,
+   "numero": "2i",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Un élève affirme : « Pour aller aux J.O. de Sydney, l'avion des athlètes belges a survolé seulement deux continents. » C'est faux. Pourquoi ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "aeroports"
+   ],
+   "reponseModele": "L'avion part d'Europe, survole l'Asie et arrive en Océanie : il passe au-dessus de trois continents."
+  },
+  {
+   "id": "ceb-2024-l5-q2j",
+   "livret": 5,
+   "numero": "2j",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Graphique des médailles de Tokyo 2020. Un tableau reprend : Japon (or 27, argent 14, bronze 17) ; un pays X (or 10, argent 12, bronze 14) ; Canada (or 7, argent 7, bronze ?).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "medailles"
+   ],
+   "texte": "Le pays X est {1}.  ·  Médailles de bronze du Canada : {2}.  ·  Pays de l'Union européenne qui a gagné le plus de médailles de bronze : {3}.",
+   "reponse": [
+    [
+     "les Pays-Bas",
+     "Pays-Bas"
+    ],
+    [
+     "10"
+    ],
+    [
+     "les Pays-Bas",
+     "Pays-Bas"
+    ]
+   ],
+   "explication": "Les Pays-Bas ont 10 médailles d'or, 12 d'argent et 14 de bronze (la France en a 11 de bronze). Le Canada a 10 médailles de bronze."
+  },
+  {
+   "id": "ceb-2024-l5-q2k1",
+   "livret": 5,
+   "numero": "2k1",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été se déroulent généralement…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "choix": [
+    "deux fois par an",
+    "tous les ans",
+    "tous les deux ans",
+    "tous les quatre ans"
+   ],
+   "reponse": 3,
+   "explication": "1996, 2000, 2004… : tous les 4 ans."
+  },
+  {
+   "id": "ceb-2024-l5-q2k2",
+   "livret": 5,
+   "numero": "2k2",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été durent environ…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "choix": [
+    "une semaine",
+    "deux semaines",
+    "un mois",
+    "quatre ans"
+   ],
+   "reponse": 1,
+   "explication": "Par exemple du 08/08 au 24/08 : environ 16 jours, deux semaines."
+  },
+  {
+   "id": "ceb-2024-l5-q2k3",
+   "livret": 5,
+   "numero": "2k3",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. de Pékin se sont déroulés 8 ans après ceux de…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "choix": [
+    "Rio de Janeiro",
+    "Londres",
+    "Sydney",
+    "Atlanta"
+   ],
+   "reponse": 2,
+   "explication": "2008 − 8 = 2000 : Sydney."
+  },
+  {
+   "id": "ceb-2024-l5-q2l",
+   "livret": 5,
+   "numero": "2l",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Jesse Owens (États-Unis, J.O. 1936), Bianca Buitendag (Afrique du Sud, J.O. 2020), Hermann Weingärtner (Allemagne, J.O. 1896). Sur quel continent se trouve le pays de chaque athlète ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "lignes": [
+    "Jesse Owens",
+    "Bianca Buitendag",
+    "Hermann Weingärtner"
+   ],
+   "colonnes": [
+    "Europe",
+    "Amérique",
+    "Océanie",
+    "Afrique",
+    "Asie"
+   ],
+   "reponse": [
+    1,
+    3,
+    0
+   ],
+   "explication": "Les États-Unis sont en Amérique, l'Afrique du Sud en Afrique, l'Allemagne en Europe."
+  },
+  {
+   "id": "ceb-2024-l5-q2l2",
+   "livret": 5,
+   "numero": "2l2",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quel siècle chaque athlète a-t-il été médaillé ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "lignes": [
+    "Jesse Owens (1936)",
+    "Bianca Buitendag (2020)",
+    "Hermann Weingärtner (1896)"
+   ],
+   "colonnes": [
+    "19e siècle",
+    "20e siècle",
+    "21e siècle"
+   ],
+   "reponse": [
+    1,
+    2,
+    0
+   ],
+   "explication": "1896 : 19e siècle ; 1936 : 20e siècle ; 2020 : 21e siècle."
+  },
+  {
+   "id": "ceb-2024-l5-q3a",
+   "livret": 5,
+   "numero": "3a",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Les oiseaux migrateurs préfèrent survoler les terres. Coucou gris : Belgique → Suisse → Italie → Libye → Tchad → République centrafricaine → RD Congo. Hirondelle rustique : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Sénégal. Cigogne noire : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Mali → Burkina Faso → Togo. Écris le numéro du trajet sur la carte.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "migrations"
+   ],
+   "texte": "Coucou gris : trajet n° {1}  ·  Hirondelle rustique : trajet n° {2}  ·  Cigogne noire : trajet n° {3}",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "1"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "Le trajet 3 passe par l'Italie, la Libye et le Tchad. Le trajet 1 finit au Sénégal. Le trajet 2 finit au Togo."
+  },
+  {
+   "id": "ceb-2024-l5-q3b",
+   "livret": 5,
+   "numero": "3b",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Lis le calendrier des périodes de migration : quel oiseau part en septembre ? Combien de temps dure l'absence du chardonneret ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l5-q4a",
+   "livret": 5,
+   "numero": "4a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Photo n°1 : un terrain sec, rocailleux, avec très peu de végétation. Quel milieu « naturel » représente-t-elle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-regions-naturelles",
+   "documents": [
+    "paysages"
+   ],
+   "choix": [
+    "une forêt",
+    "un désert",
+    "une montagne",
+    "une mer",
+    "un océan"
+   ],
+   "reponse": 1,
+   "explication": "Sol sec et végétation rare : un désert."
+  },
+  {
+   "id": "ceb-2024-l5-q4b",
+   "livret": 5,
+   "numero": "4b",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Chaque photographie est-elle prise au sol ou vue du ciel ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "paysages"
+   ],
+   "lignes": [
+    "Photo n°2 (la forêt)",
+    "Photo n°4 (la grand-place)"
+   ],
+   "colonnes": [
+    "Photographie au sol",
+    "Photographie aérienne"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "La forêt est vue d'en haut (photo aérienne) ; la grand-place est photographiée depuis le sol."
+  },
+  {
+   "id": "ceb-2024-l5-q4c",
+   "livret": 5,
+   "numero": "4c",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Écris le numéro de la photographie dont le paysage est surtout caractérisé par…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "paysages"
+   ],
+   "texte": "un vaste terrain couvert d'arbres : photo n° {1}  ·  la rareté de la végétation : photo n° {2}",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "1"
+    ]
+   ],
+   "explication": "Photo 2 : une forêt. Photo 1 : un sol presque nu."
+  },
+  {
+   "id": "ceb-2024-l5-q4d",
+   "livret": 5,
+   "numero": "4d",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux caractéristiques dominantes du paysage de la photo n°4 (une grand-place de ville).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "paysages"
+   ],
+   "choix": [
+    "Peu humanisé",
+    "Très humanisé",
+    "Naturel",
+    "Rural",
+    "Urbain",
+    "Industriel"
+   ],
+   "reponse": [
+    1,
+    4
+   ],
+   "explication": "Des bâtiments partout : un paysage très humanisé et urbain."
+  },
+  {
+   "id": "ceb-2024-l5-q4e",
+   "livret": 5,
+   "numero": "4e",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "La forêt est un milieu à la végétation abondante. Est-ce un atout ou une contrainte pour l'Humain ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-regions-naturelles",
+   "lignes": [
+    "Elle rend possible la préservation de nombreuses espèces animales et végétales.",
+    "Elle rend possible la réduction des gaz à effet de serre."
+   ],
+   "colonnes": [
+    "Atout",
+    "Contrainte"
+   ],
+   "reponse": [
+    0,
+    0
+   ],
+   "explication": "Protéger la biodiversité et absorber le CO₂ sont deux avantages."
+  },
+  {
+   "id": "ceb-2024-l5-q4f",
+   "livret": 5,
+   "numero": "4f",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Observe les photos A (un village), B (une grande ville) et C (des champs). Quelle photo correspond à chaque affirmation ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "espace"
+   ],
+   "lignes": [
+    "La photo représente une surface très bâtie.",
+    "La photo représente un village.",
+    "La photo montre que l'Humain plante des végétaux pour séparer les champs et les prairies."
+   ],
+   "colonnes": [
+    "Photo A",
+    "Photo B",
+    "Photo C"
+   ],
+   "reponse": [
+    1,
+    0,
+    2
+   ],
+   "explication": "B : une ville entièrement construite. A : quelques maisons autour d'une église. C : des haies entre les champs."
+  },
+  {
+   "id": "ceb-2024-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "47 × 9,9 donne un nombre…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "plus petit que 470",
+    "égal à 470",
+    "plus grand que 470"
+   ],
+   "reponse": 0,
+   "explication": "47 × 10 = 470 ; comme 9,9 < 10, le produit est plus petit."
+  },
+  {
+   "id": "ceb-2024-l6-q2",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les opérations pour obtenir 2 400, puis 24, puis 2,4.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "2 400 = 4 × {1} = {2} × 8 = {3} + 600 = {4} : 20  ·  24 = 4 × {5} = {6} × 8 = {7} + 6 = {8} : 20  ·  2,4 = 4 × {9} = {10} × 8 = {11} + 0,6 = {12} : 20",
+   "reponse": [
+    [
+     "600"
+    ],
+    [
+     "300"
+    ],
+    [
+     "1800",
+     "1 800"
+    ],
+    [
+     "48000",
+     "48 000"
+    ],
+    [
+     "6"
+    ],
+    [
+     "3"
+    ],
+    [
+     "18"
+    ],
+    [
+     "480"
+    ],
+    [
+     "0,6"
+    ],
+    [
+     "0,3"
+    ],
+    [
+     "1,8"
+    ],
+    [
+     "48"
+    ]
+   ],
+   "explication": "2 400 : 600 × 4, 300 × 8, 1 800 + 600, 48 000 : 20. On divise ensuite par 100 puis par 1 000."
+  },
+  {
+   "id": "ceb-2024-l6-q3a",
+   "livret": 6,
+   "numero": "3a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux décompositions qui donnent le même résultat que 15 × 45.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "(5 × 45) + (5 × 45)",
+    "15 × 9 × 5",
+    "10 × 5 × 40 × 5",
+    "(10 × 40) + (5 × 5)",
+    "(10 × 45) + (5 × 45)"
+   ],
+   "reponse": [
+    1,
+    4
+   ],
+   "explication": "15 × 45 = 675. 45 = 9 × 5 donne 15 × 9 × 5 = 675. 15 = 10 + 5 donne (10 × 45) + (5 × 45) = 675."
+  },
+  {
+   "id": "ceb-2024-l6-q3b",
+   "livret": 6,
+   "numero": "3b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux décompositions qui donnent le même résultat que 880 : 20.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "(800 : 20) + (80 : 20)",
+    "(880 : 10) × 2",
+    "(880 : 2) × 10",
+    "(880 : 10) : 2",
+    "(800 : 2) + (80 : 10)"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "880 : 20 = 44. On peut diviser 800 puis 80 par 20 (40 + 4), ou diviser par 10 puis par 2 (88 : 2)."
+  },
+  {
+   "id": "ceb-2024-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quelle opération permet de vérifier 886 432 : 4 = 221 608 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "choix": [
+    "886 432 − 221 608",
+    "221 608 : 4",
+    "221 608 × 4",
+    "886 432 × 4"
+   ],
+   "reponse": 2,
+   "explication": "On vérifie une division par une multiplication : quotient × diviseur = dividende."
+  },
+  {
+   "id": "ceb-2024-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les suites.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-suites",
+   "texte": "840 → +70 → {1} → +70 → {2} → +70 → {3}  ·  1 080 → +90 → {4} → +90 → {5} → +90 → {6}",
+   "reponse": [
+    [
+     "910"
+    ],
+    [
+     "980"
+    ],
+    [
+     "1050",
+     "1 050"
+    ],
+    [
+     "1170",
+     "1 170"
+    ],
+    [
+     "1260",
+     "1 260"
+    ],
+    [
+     "1350",
+     "1 350"
+    ]
+   ],
+   "explication": "On ajoute 70 : 910, 980, 1 050. On ajoute 90 : 1 170, 1 260, 1 350."
+  },
+  {
+   "id": "ceb-2024-l6-q6",
+   "livret": 6,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Arbre de décomposition : 15 000 = 7 500 + 7 500 ; 7 500 = 3 750 + 3 750 ; 3 750 = 1 250 + 1 250 + 1 250.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "15 000 = {1} × 3 750  ·  15 000 = (6 × 1 250) + {2}",
+   "reponse": [
+    [
+     "4"
+    ],
+    [
+     "7500",
+     "7 500"
+    ]
+   ],
+   "explication": "15 000 contient 4 fois 3 750. 6 × 1 250 = 7 500, il manque 7 500."
+  },
+  {
+   "id": "ceb-2024-l6-q7",
+   "livret": 6,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quelle opération a un résultat estimé le plus proche de 500 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "1,5 × 493",
+    "10 000 − 9 287",
+    "1 900 : 5",
+    "207,56 + 291,6"
+   ],
+   "reponse": 3,
+   "explication": "≈ 740 ; ≈ 710 ; 380 ; ≈ 500 (208 + 292)."
+  },
+  {
+   "id": "ceb-2024-l6-q8",
+   "livret": 6,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les opérations.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "9 × 67,2 = ({1} × 67,2) − 67,2  ·  4 × 50 × 3 = {2} × 200  ·  760 : 0,1 = 760 × {3}  ·  6 498 − 379 = 6 500 − {4}  ·  856 + 1 397 = 860 + {5}  ·  2,88 + 25,73 + 14,12 + 7,27 = 17 + {6}",
+   "reponse": [
+    [
+     "10"
+    ],
+    [
+     "3"
+    ],
+    [
+     "10"
+    ],
+    [
+     "381"
+    ],
+    [
+     "1393",
+     "1 393"
+    ],
+    [
+     "33"
+    ]
+   ],
+   "explication": "9 fois = 10 fois − 1 fois. 4 × 50 = 200. Diviser par 0,1 = multiplier par 10. On ajoute 2 aux deux termes d'une soustraction. On déplace 4 d'un terme à l'autre. 2,88 + 14,12 = 17 et 25,73 + 7,27 = 33."
+  },
+  {
+   "id": "ceb-2024-l6-q9a",
+   "livret": 6,
+   "numero": "9a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "25/10, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "2,05",
+    "0,25",
+    "2,5",
+    "25"
+   ],
+   "reponse": 2,
+   "explication": "25 : 10 = 2,5."
+  },
+  {
+   "id": "ceb-2024-l6-q9b",
+   "livret": 6,
+   "numero": "9b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "32/16, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "32,16",
+    "16,32",
+    "0,32",
+    "2"
+   ],
+   "reponse": 3,
+   "explication": "32 : 16 = 2."
+  },
+  {
+   "id": "ceb-2024-l6-q9c",
+   "livret": 6,
+   "numero": "9c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "14,65, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "1 465/10",
+    "1 465/100",
+    "1 465/1 000"
+   ],
+   "reponse": 1,
+   "explication": "14,65 = 1 465 centièmes."
+  },
+  {
+   "id": "ceb-2024-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les trois opérations qui donnent le même résultat que 12,5 × 48.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "25 × 24",
+    "25 × 96",
+    "(15 × 48) − 2,5",
+    "(12 × 48) + (0,5 × 48)",
+    "(10 × 48) + (2,5 × 48)",
+    "480 + 2,5"
+   ],
+   "reponse": [
+    0,
+    3,
+    4
+   ],
+   "explication": "12,5 × 48 = 600. 25 × 24 = 600 (double et moitié). 12,5 = 12 + 0,5 ou 10 + 2,5."
+  },
+  {
+   "id": "ceb-2024-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "texte": "1 = 10 × {1} = 2 × {2}  ·  10 = 0,2 × {3} = 4 × {4}",
+   "reponse": [
+    [
+     "0,1"
+    ],
+    [
+     "0,5"
+    ],
+    [
+     "50"
+    ],
+    [
+     "2,5"
+    ]
+   ],
+   "explication": "10 × 0,1 = 1 ; 2 × 0,5 = 1 ; 0,2 × 50 = 10 ; 4 × 2,5 = 10."
+  },
+  {
+   "id": "ceb-2024-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète les cases blanches du tableau de multiplication (0,07 ; 0,7 ; 7 ; 70 ; 700).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l6-q13a",
+   "livret": 6,
+   "numero": "13a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "12 × 8, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "12 × 2 × 2",
+    "12 × 2 × 2 × 2",
+    "12 × 2 × 2 × 2 × 2"
+   ],
+   "reponse": 1,
+   "explication": "8 = 2 × 2 × 2."
+  },
+  {
+   "id": "ceb-2024-l6-q13b",
+   "livret": 6,
+   "numero": "13b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "3 600 : 40, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "3 600 : 10 × 4",
+    "3 600 : 10 : 10 : 10 : 10",
+    "3 600 : 10 : 2 : 2"
+   ],
+   "reponse": 2,
+   "explication": "Diviser par 40, c'est diviser par 10, puis par 2, puis encore par 2."
+  },
+  {
+   "id": "ceb-2024-l7-q1",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Calcule le nombre de places assises des gradins (photo).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l7-q2a",
+   "livret": 7,
+   "numero": "2a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche tous les multiples de 8 compris entre 1 et 37.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "8",
+    "12",
+    "16",
+    "18",
+    "24",
+    "28",
+    "32",
+    "36"
+   ],
+   "reponse": [
+    0,
+    2,
+    4,
+    6
+   ],
+   "explication": "8, 16, 24, 32 (le suivant, 40, dépasse 37)."
+  },
+  {
+   "id": "ceb-2024-l7-q2b",
+   "livret": 7,
+   "numero": "2b",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Écris un nombre impair qui est diviseur de 18.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "reponse": [
+    "1",
+    "3",
+    "9"
+   ],
+   "explication": "Les diviseurs de 18 sont 1, 2, 3, 6, 9 et 18 ; les impairs sont 1, 3 et 9."
+  },
+  {
+   "id": "ceb-2024-l7-q3",
+   "livret": 7,
+   "numero": "3",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète les cases de la droite graduée.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l7-q4",
+   "livret": 7,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Complète par le signe qui convient.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "lignes": [
+    "5/4 … 1",
+    "5/9 … 5,9",
+    "0,2 … 20 centièmes"
+   ],
+   "colonnes": [
+    "<",
+    "=",
+    ">"
+   ],
+   "reponse": [
+    2,
+    0,
+    1
+   ],
+   "explication": "5/4 = 1,25 > 1. 5/9 est plus petit que 1, donc < 5,9. 0,2 = 0,20 = 20 centièmes."
+  },
+  {
+   "id": "ceb-2024-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Place une virgule dans le nombre 2 4 5 6 8 1 pour que…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "le nombre contienne 245 unités entières : {1}  ·  le « 2 » occupe le rang des dizaines de mille : {2}  ·  le « 8 » occupe le rang des centièmes : {3}",
+   "reponse": [
+    [
+     "245,681"
+    ],
+    [
+     "24568,1",
+     "24 568,1"
+    ],
+    [
+     "2456,81",
+     "2 456,81"
+    ]
+   ],
+   "explication": "245,681 ; 24 568,1 (2 dizaines de mille) ; 2 456,81 (8 centièmes)."
+  },
+  {
+   "id": "ceb-2024-l7-q6",
+   "livret": 7,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "7 adultes et 16 enfants viennent au gouter. On prévoit 4 verres par enfant et 3 verres par adulte. Une bouteille de jus remplit 6 verres. Combien de bouteilles faut-il acheter au minimum ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "unite": "bouteilles",
+   "reponse": 15,
+   "explication": "Verres : 16 × 4 = 64 et 7 × 3 = 21, soit 85 verres. 85 : 6 = 14 reste 1 : il faut une 15e bouteille pour le dernier verre."
+  },
+  {
+   "id": "ceb-2024-l7-q7",
+   "livret": 7,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris ces nombres en chiffres.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "Quatre millions sept-cent-soixante-neuf-mille-trois-cents : {1}  ·  Sept millions quatre-vingt-mille-vingt-quatre : {2}  ·  Cinq-mille-septante-trois unités douze millièmes : {3}",
+   "reponse": [
+    [
+     "4769300",
+     "4 769 300"
+    ],
+    [
+     "7080024",
+     "7 080 024"
+    ],
+    [
+     "5073,012",
+     "5 073,012"
+    ]
+   ],
+   "explication": "4 769 300 ; 7 080 024 ; 5 073,012."
+  },
+  {
+   "id": "ceb-2024-l7-q8",
+   "livret": 7,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux nombres équivalents.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "septante-cinq dixièmes",
+    "7,05",
+    "0,075",
+    "trois quarts",
+    "75/100",
+    "100/75"
+   ],
+   "reponse": [
+    3,
+    4
+   ],
+   "explication": "Trois quarts = 0,75 = 75/100. Septante-cinq dixièmes = 7,5."
+  },
+  {
+   "id": "ceb-2024-l7-q9",
+   "livret": 7,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Dans le nombre 721 546,03, le « 2 » représente le rang des…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "choix": [
+    "dizaines",
+    "unités de mille",
+    "dixièmes",
+    "dizaines de mille",
+    "centaines"
+   ],
+   "reponse": 3,
+   "explication": "7 centaines de mille, 2 dizaines de mille, 1 unité de mille…"
+  },
+  {
+   "id": "ceb-2024-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Exemple : 9 300 000 s'écrit aussi 9,3 millions et se dit « 9 millions 300 mille ». Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "6,08 millions s'écrit en unités {1}.  ·  33 003 000 s'écrit {2} millions.",
+   "reponse": [
+    [
+     "6080000",
+     "6 080 000"
+    ],
+    [
+     "33,003"
+    ]
+   ],
+   "explication": "6,08 millions = 6 080 000. 33 003 000 = 33,003 millions (33 millions 3 mille)."
+  },
+  {
+   "id": "ceb-2024-l7-q11",
+   "livret": 7,
+   "numero": "11",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Retrouve le dividende de la division et le premier terme de la soustraction.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l7-q12",
+   "livret": 7,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Un chocolatier a produit autant de pralines de chacun de ces 6 gouts : praliné, fraise, caramel, vanille, lait, moka. En tout, 1 560 pralines. Combien de pralines à la fraise ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "reponse": 260,
+   "explication": "1 560 : 6 = 260."
+  },
+  {
+   "id": "ceb-2024-l7-q13",
+   "livret": 7,
+   "numero": "13",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "L'école a acheté 18 boites de 5 paquets de feuilles. Les 2 classes maternelles reçoivent 3 paquets chacune. Le reste est partagé entre les 6 classes primaires. Quelle résolution convient ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "choix": [
+    "18 × 5 = 90 ; 90 − 2 = 88 ; 88 : 8 = 11",
+    "18 − 6 = 12 ; 12 : 6 = 2 ; 2 × 5 = 10",
+    "18 × 5 = 90 ; 90 − 6 = 84 ; 84 : 6 = 14",
+    "5 × 18 = 90 ; 90 − 6 = 84 ; 84 − 6 = 78"
+   ],
+   "reponse": 2,
+   "explication": "90 paquets, moins 2 × 3 = 6 pour les maternelles : 84 paquets, partagés en 6 : 14 paquets."
+  },
+  {
+   "id": "ceb-2024-l7-q14",
+   "livret": 7,
+   "numero": "14",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète le nombre 2 3 7 _ par un chiffre.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-divisibilite",
+   "texte": "multiple de 2 mais pas de 5 : 237{1}  ·  multiple de 5 mais pas de 2 : 237{2}  ·  ni multiple de 2 ni de 5 : 237{3}",
+   "reponse": [
+    [
+     "2",
+     "4",
+     "6",
+     "8"
+    ],
+    [
+     "5"
+    ],
+    [
+     "1",
+     "3",
+     "7",
+     "9"
+    ]
+   ],
+   "explication": "Un multiple de 2 finit par un chiffre pair ; un multiple de 5 par 0 ou 5. 2 370 est multiple des deux."
+  },
+  {
+   "id": "ceb-2024-l7-q15",
+   "livret": 7,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Place chaque nombre dans la bonne colonne.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "lignes": [
+    "83,98",
+    "83,809",
+    "82,740",
+    "83,787"
+   ],
+   "colonnes": [
+    "Inférieur à 83,7",
+    "Entre 83,7 et 83,8",
+    "Supérieur à 83,8"
+   ],
+   "reponse": [
+    2,
+    2,
+    0,
+    1
+   ],
+   "explication": "83,98 et 83,809 dépassent 83,800. 82,740 est sous 83,7. 83,787 est entre 83,700 et 83,800."
+  },
+  {
+   "id": "ceb-2024-l8-q1",
+   "livret": 8,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Le texte « À propos du chocolat » occupe les pages 3 à 7 du portfolio. Quelle page présente…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "choco-1",
+    "choco-2",
+    "choco-3",
+    "choco-4",
+    "choco-5"
+   ],
+   "texte": "le contenu du texte en quelques lignes : page {1}  ·  deux points de vue sur la consommation du chocolat : page {2}",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "6"
+    ]
+   ],
+   "explication": "L'introduction (page 3) annonce le contenu. « Le chocolat, stop ou encore ? » (page 6) donne deux points de vue."
+  },
+  {
+   "id": "ceb-2024-l8-q2",
+   "livret": 8,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Dans quelle partie du texte se trouvent ces informations ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "choco-1",
+    "choco-2",
+    "choco-3",
+    "choco-4",
+    "choco-5"
+   ],
+   "lignes": [
+    "Des conseils sur la conservation du chocolat",
+    "Le transport des fèves de cacao",
+    "Les bienfaits du chocolat sur la santé"
+   ],
+   "colonnes": [
+    "D'où vient le chocolat ?",
+    "Comment fabrique-t-on le chocolat ?",
+    "Propos recueillis auprès de Didier, un artisan-chocolatier",
+    "Le chocolat, stop ou encore ?",
+    "Envie de chocolat ?"
+   ],
+   "reponse": [
+    4,
+    1,
+    3
+   ],
+   "explication": "La conservation : « Le saviez-vous ? » de la recette. L'expédition des fèves : la fabrication. Les bienfaits : « … ou encore ? »."
+  },
+  {
+   "id": "ceb-2024-l8-q3",
+   "livret": 8,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Comment les cabosses sont-elles récoltées ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-2"
+   ],
+   "reponseModele": "Deux fois par an, à l'aide d'un outil tranchant : on les détache du tronc, puis on les fend pour en sortir les fèves."
+  },
+  {
+   "id": "ceb-2024-l8-q4",
+   "livret": 8,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "En quoi consiste la phase de fermentation des fèves de cacao ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-2"
+   ],
+   "reponseModele": "Les fèves sont rassemblées en tas couverts de feuilles de bananier ou placées dans de grands bacs en bois, et elles sont régulièrement mélangées."
+  },
+  {
+   "id": "ceb-2024-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "choco-1",
+    "choco-2",
+    "choco-3",
+    "choco-4",
+    "choco-5"
+   ],
+   "lignes": [
+    "Le sol où pousse le cacaoyer influence le gout du chocolat.",
+    "Les méthodes de fabrication du chocolat sont identiques chez tous les chocolatiers."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "« C'est la terre qui va donner le gout. » « Les méthodes peuvent varier suivant les fabricants. »"
+  },
+  {
+   "id": "ceb-2024-l8-q6",
+   "livret": 8,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Réponds en te référant au texte.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-1",
+    "choco-2",
+    "choco-3",
+    "choco-4",
+    "choco-5"
+   ],
+   "texte": "On cultive le cacaoyer dans des régions proches de {1}.  ·  La pulpe autour des fèves est {2}.  ·  Les fèves deviennent brunes pendant la {3}.  ·  La fermentation est arrêtée par le {4}.",
+   "reponse": [
+    [
+     "l'équateur",
+     "equateur",
+     "l'equateur",
+     "équateur"
+    ],
+    [
+     "sucrée et légèrement acide",
+     "sucrée et acide",
+     "sucree et legerement acide",
+     "sucrée",
+     "acidulée"
+    ],
+    [
+     "fermentation",
+     "phase de fermentation"
+    ],
+    [
+     "séchage",
+     "sechage",
+     "séchage au soleil"
+    ]
+   ],
+   "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête."
+  },
+  {
+   "id": "ceb-2024-l8-q7",
+   "livret": 8,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "D'après le texte, quelle étape se situe entre le « séchage des fèves au soleil » et l'« expédition des fèves dans les chocolateries » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-2"
+   ],
+   "reponse": [
+    "le stockage",
+    "stockage",
+    "le stockage dans de grands sacs en toile",
+    "stockage dans des sacs en toile",
+    "elles sont stockées dans de grands sacs en toile",
+    "la mise en sac",
+    "le stockage en sacs"
+   ],
+   "explication": "« Elles sont stockées dans de grands sacs en toile, pour être finalement expédiées. »"
+  },
+  {
+   "id": "ceb-2024-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Cite un bénéfice que Didier retire de ses « voyages cacao ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-2"
+   ],
+   "reponseModele": "Il découvre de nouvelles façons de travailler le chocolat et apprend des choses sur la plante elle-même."
+  },
+  {
+   "id": "ceb-2024-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "La consommation de chocolat doit rester « modérée ». Cela signifie qu'elle doit rester…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "choix": [
+    "régulière",
+    "suffisante",
+    "excessive",
+    "mesurée"
+   ],
+   "reponse": 3,
+   "explication": "Modéré = mesuré, sans excès."
+  },
+  {
+   "id": "ceb-2024-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Écris une raison pour laquelle la culture intensive du cacaoyer a des effets négatifs sur l'environnement.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-4"
+   ],
+   "reponseModele": "Elle entraine une déforestation massive (qui modifie le climat local) ou elle demande énormément d'eau (20 000 l pour 1 kg de fèves)."
+  },
+  {
+   "id": "ceb-2024-l8-q11",
+   "livret": 8,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Manon dit : « Le chocolat, c'est bon pour la santé ! » Qu'en penses-tu d'après le texte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "choco-4"
+   ],
+   "choix": [
+    "Manon a raison.",
+    "Manon a tort.",
+    "Manon a raison et tort à la fois."
+   ],
+   "reponse": 2,
+   "explication": "Le chocolat donne de l'énergie et diminue le stress, mais sa consommation doit rester modérée."
+  },
+  {
+   "id": "ceb-2024-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle caractéristique permet de dire avec certitude que « Truffes au chocolat » est une recette ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "choco-5"
+   ],
+   "choix": [
+    "Présence d'une illustration",
+    "Utilisation de l'infinitif dans chacune des phrases",
+    "Présence d'un titre",
+    "Numérotation des étapes",
+    "Présence d'une liste d'ingrédients à utiliser"
+   ],
+   "reponse": 4,
+   "explication": "Une illustration, un titre ou des étapes numérotées existent dans d'autres textes ; la liste d'ingrédients est propre à la recette."
+  },
+  {
+   "id": "ceb-2024-l8-q13",
+   "livret": 8,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Page 7 : quelle est l'intention principale des auteurs ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "choco-5"
+   ],
+   "lignes": [
+    "Avec le texte « Truffes au chocolat »",
+    "Avec les textes « Le saviez-vous ? »"
+   ],
+   "colonnes": [
+    "Persuader",
+    "Donner du plaisir",
+    "Faire agir",
+    "Informer"
+   ],
+   "reponse": [
+    2,
+    3
+   ],
+   "explication": "Une recette fait agir (elle dit quoi faire). « Le saviez-vous ? » donne des informations."
+  },
+  {
+   "id": "ceb-2024-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Barre la photo de l'étape qui n'apparait pas dans la recette.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Pourquoi conseille-t-on de conserver les truffes au chocolat dans un récipient fermé ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "choco-5"
+   ],
+   "choix": [
+    "Parce que le chocolat prend les odeurs qui l'entourent.",
+    "Parce que le chocolat fond à la lumière.",
+    "Pour que les enfants ne les mangent pas.",
+    "Pour qu'elles durcissent plus vite."
+   ],
+   "reponse": 0,
+   "explication": "« Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. »"
+  },
+  {
+   "id": "ceb-2024-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "D'après le texte, écris un bienfait de la consommation de chocolat.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "choco-4"
+   ],
+   "reponseModele": "Il donne de l'énergie ; il diminue le stress ; il augmente le bienêtre."
+  },
+  {
+   "id": "ceb-2024-l8-q17",
+   "livret": 8,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« La cabosse est mure environ quatre à cinq mois après la floraison. » Dans quelle partie pourrais-tu ajouter cette information ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "choco-1",
+    "choco-2",
+    "choco-3",
+    "choco-4",
+    "choco-5"
+   ],
+   "choix": [
+    "D'où vient le chocolat ?",
+    "Comment fabrique-t-on le chocolat ?",
+    "Propos recueillis auprès de Didier, un artisan-chocolatier",
+    "Le chocolat, stop ou encore ?",
+    "Envie de chocolat ?"
+   ],
+   "reponse": 0,
+   "explication": "La cabosse, fruit du cacaoyer, est décrite dans « D'où vient le chocolat ? »."
+  },
+  {
+   "id": "ceb-2024-l8-q18",
+   "livret": 8,
+   "numero": "18",
+   "domaine": "fr.vocabulaire",
+   "type": "texte_court",
+   "enonce": "« Le cacaoyer est l'arbre qui produit les fruits à l'intérieur desquels se trouvent des graines appelées fèves de cacao. Celles-ci interviennent dans la fabrication du chocolat. » Recopie un mot ou groupe de mots qui désigne les « graines ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "reponse": [
+    "fèves de cacao",
+    "fèves",
+    "celles-ci",
+    "les fèves de cacao",
+    "feves de cacao"
+   ],
+   "explication": "Les graines sont appelées « fèves de cacao », puis reprises par « celles-ci »."
+  },
+  {
+   "id": "ceb-2024-l8-q19",
+   "livret": 8,
+   "numero": "19",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« … si l'on veut limiter les effets négatifs d'une production intensive du chocolat… » Quel sens a « effets » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "Vêtements et objets personnels.",
+    "Procédés qui créent des images qui n'existent pas dans la réalité.",
+    "Ce que produit quelque chose.",
+    "Impression produite sur quelqu'un."
+   ],
+   "reponse": 2,
+   "explication": "Les effets de la production, ce sont ses conséquences : ce qu'elle produit."
+  },
+  {
+   "id": "ceb-2024-l8-q20",
+   "livret": 8,
+   "numero": "20",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "Dans quelle phrase « production » a-t-il le même sens que dans « une production intensive du chocolat » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "Le frottement entraine la production de la chaleur.",
+    "Cet artiste a reçu une récompense pour sa production.",
+    "La production agricole augmente dans nos régions.",
+    "Ce film est une production franco-belge."
+   ],
+   "reponse": 2,
+   "explication": "Il s'agit de produire des biens en grande quantité, comme la production agricole."
+  },
+  {
+   "id": "ceb-2024-l8-q21",
+   "livret": 8,
+   "numero": "21",
+   "domaine": "fr.vocabulaire",
+   "type": "trous",
+   "enonce": "Écris un mot de la même famille (exemple : producteurs → production, produit, produire).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-familles-mots",
+   "texte": "dégustation → {1}  ·  tranchant → {2}",
+   "reponse": [
+    [
+     "déguster",
+     "dégustateur",
+     "dégustatrice",
+     "degustation",
+     "deguster",
+     "gout",
+     "goût",
+     "gouter",
+     "goûter"
+    ],
+    [
+     "trancher",
+     "tranche",
+     "tranchée",
+     "tranchage",
+     "tranches",
+     "tranchoir"
+    ]
+   ],
+   "explication": "Dégustation → déguster, dégustateur. Tranchant → trancher, une tranche."
+  },
+  {
+   "id": "ceb-2024-l9-q1",
+   "livret": 9,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Récit « Avec le cœur ». Quel résumé correspond le mieux à cette histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "choix": [
+    "Un garçon paniqué par un devoir d'écriture questionne son amie ; sur ses conseils, il écrit un texte sur son dernier cauchemar et le lit devant la classe.",
+    "Un garçon doit écrire un poème ; son amie lui lit un poème de Prévert pour l'inspirer ; le matin, il l'écrit d'une traite et reçoit des félicitations.",
+    "Un garçon angoissé par un devoir d'écriture suit le conseil de son amie et questionne le chien de son rêve ; il trouve l'inspiration et lit sa poésie devant la classe.",
+    "Un garçon est paniqué car son amie le traite de cancre ; il questionne le chien de ses rêves, trouve l'inspiration et lit son poème."
+   ],
+   "reponse": 2,
+   "explication": "Nico écrit sur le conseil du chien de son rêve, pas sur son cauchemar ; Nour ne le traite pas de cancre et ne lui lit pas Prévert pour ce devoir."
+  },
+  {
+   "id": "ceb-2024-l9-q2",
+   "livret": 9,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Mes enfants, j'avais pensé vous donner un texte à apprendre et à déclamer devant toute la classe mais j'ai changé d'avis… » Nico s'était tout de suite senti rassuré, car…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1"
+   ],
+   "choix": [
+    "il allait pouvoir travailler avec Nour.",
+    "il n'aimait pas écrire des poèmes.",
+    "il aurait plus de temps pour réaliser le devoir.",
+    "il ne devrait pas mémoriser et réciter un texte."
+   ],
+   "reponse": 3,
+   "explication": "Il est soulagé de ne pas devoir apprendre et déclamer un texte… avant d'apprendre qu'il devra l'écrire."
+  },
+  {
+   "id": "ceb-2024-l9-q3",
+   "livret": 9,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Dans quel état est Nico quand Madame Lampion annonce qu'il faut écrire un poème ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1"
+   ],
+   "choix": [
+    "satisfait",
+    "inquiet",
+    "déçu",
+    "triste"
+   ],
+   "reponse": 1,
+   "explication": "« Nico avait blêmi : c'était encore pire ! » Il n'en dort plus."
+  },
+  {
+   "id": "ceb-2024-l9-q4",
+   "livret": 9,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Le lundi matin, des cernes sous les yeux, Nico cherchait son amie Nour du regard. » Pourquoi Nico a-t-il des cernes ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-1"
+   ],
+   "reponseModele": "Il n'a pas dormi du weekend, angoissé par son poème, et il a fait des cauchemars trois nuits de suite."
+  },
+  {
+   "id": "ceb-2024-l9-q5",
+   "livret": 9,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Pourquoi Nour demande-t-elle à Nico de lui raconter son dernier cauchemar ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1"
+   ],
+   "choix": [
+    "pour le répéter à sa Grand-Mère",
+    "pour avoir des idées d'histoire",
+    "pour se moquer de Nico",
+    "pour aider son ami à écrire un poème"
+   ],
+   "reponse": 1,
+   "explication": "Elle écrit une histoire de vampire : « ça me donnera peut-être des idées »."
+  },
+  {
+   "id": "ceb-2024-l9-q6",
+   "livret": 9,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Lola dit : « Nour et Nico sont simplement amis. » Solan répond : « Non ! Nico est amoureux de Nour ! » Qui a raison ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "choix": [
+    "Lola",
+    "Solan"
+   ],
+   "reponse": 1,
+   "explication": "« Voilà comment Nour et lui étaient devenus amis. À vrai dire, peut-être même un peu plus que ça… Du moins pour Nico. »"
+  },
+  {
+   "id": "ceb-2024-l9-q7",
+   "livret": 9,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Écris un élément du texte qui prouve que Nour aime rédiger.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-1"
+   ],
+   "reponseModele": "Elle griffonne dans son carnet intime ; elle écrit une histoire de vampire « juste pour le plaisir » ; elle a fini son poème dès le vendredi soir."
+  },
+  {
+   "id": "ceb-2024-l9-q8",
+   "livret": 9,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Coche l'illustration du moment où Nico parle à Nour pour la première fois.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l9-q9",
+   "livret": 9,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "La première fois, Nico demande à Nour : « Ça parle de vaches, ton bouquin ? » Qu'est-ce qui l'amène à poser cette question ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-2"
+   ],
+   "reponseModele": "Le nom de l'auteur, Prévert, lui fait penser à un « pré tout vert » avec des vaches."
+  },
+  {
+   "id": "ceb-2024-l9-q10",
+   "livret": 9,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Son rire était le plus beau du monde aux oreilles de Nico, mais à cet instant, il lui faisait juste saigner le cœur. » Pourquoi ce rire le rend-il triste ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-2"
+   ],
+   "reponseModele": "Nour se moque de sa peur d'un bébé caniche, alors que Nico est amoureux d'elle et veut lui plaire."
+  },
+  {
+   "id": "ceb-2024-l9-q11",
+   "livret": 9,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Jamais Nico n'aurait avoué à Nour qu'il ne parvenait pas à écrire parce que, en vérité, c'était à cause d'elle. » C'est à cause de Nour, car…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-2"
+   ],
+   "choix": [
+    "elle aime lire des poèmes.",
+    "elle écrit des histoires pour le plaisir.",
+    "elle vient d'arriver dans la classe.",
+    "elle est plus qu'une amie pour Nico."
+   ],
+   "reponse": 3,
+   "explication": "Nico est amoureux : il a peur que son poème ne plaise pas à Nour."
+  },
+  {
+   "id": "ceb-2024-l9-q12",
+   "livret": 9,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Pourquoi Nico souhaite-t-il que son poème soit magnifique ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-2"
+   ],
+   "reponseModele": "Pour plaire à Nour, qui est une grande lectrice et écrivaine : son poème doit être aussi beau que celui de Prévert."
+  },
+  {
+   "id": "ceb-2024-l9-q13",
+   "livret": 9,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Il en plaça la pointe sur l'angoissante immensité de la page blanche de son cahier. On aurait dit un désert de neige occupé à le narguer… » Recopie l'expression à laquelle l'auteur compare la page blanche.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-2"
+   ],
+   "reponse": [
+    "un désert de neige",
+    "désert de neige",
+    "un desert de neige"
+   ],
+   "explication": "« On aurait dit un désert de neige » : une comparaison."
+  },
+  {
+   "id": "ceb-2024-l9-q14",
+   "livret": 9,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "lignes": [
+    "Finalement, le chien du rêve de Nico devient son ami.",
+    "Nour est amoureuse de Nico.",
+    "Nico et Nour se connaissent depuis l'école maternelle.",
+    "Le sujet du poème est imposé."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    2,
+    1,
+    1
+   ],
+   "explication": "Nico parle du « conseil d'un ami, le chien de mon rêve ». Rien ne dit ce que ressent Nour. Il ne la connait que depuis quelques mois. Le sujet est « entièrement libre »."
+  },
+  {
+   "id": "ceb-2024-l9-q15",
+   "livret": 9,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Remets ces actions de Nour dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "elements": [
+    "Nour écoute le poème de Nico.",
+    "Nour écrit le poème pour Madame Lampion.",
+    "Nour lit un poème de Prévert.",
+    "Nour écrit une histoire de vampire."
+   ],
+   "reponse": [
+    2,
+    1,
+    3,
+    0
+   ],
+   "explication": "Elle lisait Prévert lors de leur première rencontre (quelques mois avant), a fini son poème le vendredi, écrit une histoire de vampire le lundi et écoute Nico le mercredi."
+  },
+  {
+   "id": "ceb-2024-l9-q16",
+   "livret": 9,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Le texte a pour titre « Avec le cœur ». Explique ce choix.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "reponseModele": "La maitresse demande un poème qui « vienne du cœur » ; Nico finit par écrire sincèrement, avec ses sentiments pour Nour : « écrit avec le cœur, comme demandé »."
+  },
+  {
+   "id": "ceb-2024-l9-q17",
+   "livret": 9,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle phrase correspond le mieux à l'histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "choix": [
+    "Au fil des jours et des semaines, l'amour rend aveugle.",
+    "Dans la vie, il ne faut pas être parfait, il faut être vrai.",
+    "Le secret du bonheur, c'est de rêver sa vie en couleurs.",
+    "Il ne faut pas reporter au lendemain ce que l'on peut faire le jour même."
+   ],
+   "reponse": 1,
+   "explication": "Le chien conseille : « Si tu ne te sens pas capable de quelque chose, avoue-le. » Nico réussit en étant sincère."
+  },
+  {
+   "id": "ceb-2024-l9-q18",
+   "livret": 9,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention principale de l'auteur ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "choix": [
+    "Informer le lecteur sur la manière de rédiger une poésie.",
+    "Divertir le lecteur avec une histoire sur la rédaction d'une poésie.",
+    "Donner des règles au lecteur pour rédiger une poésie.",
+    "Inciter le lecteur à lire un texte poétique."
+   ],
+   "reponse": 1,
+   "explication": "C'est un récit qui raconte une histoire pour le plaisir du lecteur."
+  },
+  {
+   "id": "ceb-2024-l9-q19",
+   "livret": 9,
+   "numero": "19",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« Nico s'était tout de suite senti rassuré. Puis elle avait poursuivi, enroulant son collier autour de son doigt… » Quel mot sert à relier les deux phrases ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "reponse": [
+    "puis"
+   ],
+   "explication": "« Puis » est un organisateur qui marque la suite dans le temps."
+  },
+  {
+   "id": "ceb-2024-l9-q20",
+   "livret": 9,
+   "numero": "20",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-accords",
+   "documents": [
+    "coeur-2"
+   ],
+   "lignes": [
+    "Qui parle ?",
+    "À qui parle-t-il ?"
+   ],
+   "colonnes": [
+    "un garçon",
+    "une fille"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "« il » montre que c'est un garçon qui parle ; « provoquée » (féminin) montre qu'il parle à une fille."
+  },
+  {
+   "id": "ceb-2024-l9-q20b",
+   "livret": 9,
+   "numero": "20b",
+   "domaine": "fr.orthographe",
+   "type": "texte_court",
+   "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée. Recopie le mot qui prouve qu'il parle à une fille.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-participe-passe",
+   "reponse": [
+    "provoquée"
+   ],
+   "souple": false,
+   "explication": "Le participe « provoquée » s'accorde avec « l' » (Nour), qui est féminin."
+  },
+  {
+   "id": "ceb-2024-l9-q21",
+   "livret": 9,
+   "numero": "21",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« J'ai beaucoup aimé ton texte. » Qui parle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-3"
+   ],
+   "choix": [
+    "Nour",
+    "Nico",
+    "Le chien",
+    "Madame Lampion"
+   ],
+   "reponse": 0,
+   "explication": "« J'ai beaucoup aimé ton texte, lui dit-elle à la récré » : c'est Nour."
+  },
+  {
+   "id": "ceb-2024-l9-q22",
+   "livret": 9,
+   "numero": "22",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "« Cela ne faisait que quelques mois qu'il la connaissait. Nour était arrivée en cours d'année dans leur classe, suite à un déménagement. La première fois qu'il lui avait adressé la parole, elle se tenait assise… » Coche les mots (autres que « elle ») qui désignent Nour.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "choix": [
+    "il",
+    "la",
+    "Nour",
+    "leur",
+    "lui",
+    "déménagement"
+   ],
+   "reponse": [
+    1,
+    2,
+    4
+   ],
+   "explication": "« la » (qu'il la connaissait), « Nour » et « lui » (il lui avait adressé la parole) désignent Nour. « il » désigne Nico."
+  },
+  {
+   "id": "ceb-2024-l9-q23",
+   "livret": 9,
+   "numero": "23",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« Lorsqu'il se réveillerait le lendemain, son devoir ne serait pas fait et il se ridiculiserait devant Nour. Pour couronner le tout, voilà que le chien de son cauchemar avait décidé de revenir rôder dans sa tête endormie… » Écris la classe des mots (nom, pronom, verbe, déterminant, adjectif, mot de liaison).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-classes-mots",
+   "texte": "devoir : {1}  ·  et : {2}  ·  sa : {3}",
+   "reponse": [
+    [
+     "nom",
+     "un nom"
+    ],
+    [
+     "mot de liaison",
+     "conjonction",
+     "conjonction de coordination"
+    ],
+    [
+     "déterminant",
+     "determinant",
+     "déterminant possessif"
+    ]
+   ],
+   "explication": "« son devoir » : nom (précédé d'un déterminant). « et » relie deux propositions. « sa » accompagne le nom « tête »."
+  },
+  {
+   "id": "ceb-2024-l9-q24",
+   "livret": 9,
+   "numero": "24",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« J'ai mes raisons. » a la structure : Sujet – Verbe – Complément direct du verbe. Quelle phrase a la même structure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sujet-complements",
+   "choix": [
+    "Aucun mot ne venait.",
+    "Cette nuit, j'ai rêvé d'un chien.",
+    "Elle fronça les sourcils.",
+    "Il écrivit son poème d'une traite."
+   ],
+   "reponse": 2,
+   "explication": "« Elle » (sujet) « fronça » (verbe) « les sourcils » (CD). Les autres n'ont pas de CD ou ajoutent un autre complément."
+  },
+  {
+   "id": "ceb-2024-l9-q25",
+   "livret": 9,
+   "numero": "25",
+   "domaine": "fr.conjugaison",
+   "type": "grille",
+   "enonce": "« Ça, je l'avais terminé vendredi soir ! Là, j'écrivais juste pour le plaisir… Raconte-moi ton dernier cauchemar, ça me donnera peut-être des idées. — Ça m'étonnerait. » À quel temps sont ces verbes ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-conjugaison-temps-simples",
+   "lignes": [
+    "avais terminé",
+    "écrivais",
+    "donnera",
+    "m'étonnerait"
+   ],
+   "colonnes": [
+    "Imparfait",
+    "Plus-que-parfait",
+    "Futur simple",
+    "Conditionnel présent"
+   ],
+   "reponse": [
+    1,
+    0,
+    2,
+    3
+   ],
+   "explication": "avais terminé : plus-que-parfait (auxiliaire à l'imparfait). écrivais : imparfait. donnera : futur simple. étonnerait : conditionnel présent."
+  },
+  {
+   "id": "ceb-2024-l9-q26",
+   "livret": 9,
+   "numero": "26",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Parlez de ce que vous voulez, pourvu que ça vienne du cœur. » Par quoi peut-on remplacer « pourvu que » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "choix": [
+    "afin que",
+    "à condition que",
+    "de sorte que",
+    "pour que"
+   ],
+   "reponse": 1,
+   "explication": "« Pourvu que » exprime une condition."
+  },
+  {
+   "id": "ceb-2024-l9-q27",
+   "livret": 9,
+   "numero": "27",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Celui-ci m'a surtout l'air un peu dans la lune, mais avec un bon fond tout de même. » Quel sens a le mot « fond » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "La partie la plus basse de quelque chose.",
+    "L'endroit le plus reculé.",
+    "Ce sur quoi se détachent des motifs.",
+    "Nature profonde d'une personne."
+   ],
+   "reponse": 3,
+   "explication": "Avoir « un bon fond », c'est être gentil au fond de soi."
+  },
+  {
+   "id": "ceb-2024-l10-q1a",
+   "livret": 10,
+   "numero": "1a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Entoure sur la photo de Julia l'organe qui lui permet de gouter la saveur du lait.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q1b",
+   "livret": 10,
+   "numero": "1b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Écris le nom du sens lié à l'organe désigné par la flèche sur la photo.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q1c",
+   "livret": 10,
+   "numero": "1c",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Coche les noms des sens de l'être humain.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "choix": [
+    "Odorat",
+    "Respiration",
+    "Gentillesse",
+    "Vue",
+    "Transpiration",
+    "Humour"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Les cinq sens : la vue, l'ouïe, l'odorat, le gout et le toucher."
+  },
+  {
+   "id": "ceb-2024-l10-q2",
+   "livret": 10,
+   "numero": "2",
+   "domaine": "sc.matiere",
+   "type": "ordre",
+   "enonce": "Expérience sur les effets de la chaleur sur l'air. Remets les étapes dans l'ordre.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-air",
+   "documents": [
+    "experience-air"
+   ],
+   "elements": [
+    "Voici le matériel nécessaire.",
+    "De l'eau colorée est versée dans une assiette.",
+    "De l'eau chaude est versée dans une bouteille.",
+    "L'eau chaude est retirée de la bouteille.",
+    "La bouteille est retournée et posée au centre de l'assiette.",
+    "Après quelques instants, une partie de l'eau colorée se trouve dans la bouteille."
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "explication": "L'eau chaude réchauffe l'air de la bouteille. En se refroidissant, l'air prend moins de place : l'eau colorée monte dans la bouteille."
+  },
+  {
+   "id": "ceb-2024-l10-q3",
+   "livret": 10,
+   "numero": "3",
+   "domaine": "sc.matiere",
+   "type": "trous",
+   "enonce": "Écris le nom de ces étapes du cycle de l'eau (ruissèlement, transpiration, condensation, évaporation, solidification, congélation, précipitations).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "texte": "L'eau de la fonte des glaces forme des cours d'eau : {1}.  ·  L'eau des nuages tombe sous forme de pluie, de neige ou de grêle : {2}.  ·  La vapeur d'eau se transforme en gouttelettes pour former des nuages : {3}.",
+   "reponse": [
+    [
+     "ruissèlement",
+     "ruissellement",
+     "ruisselement"
+    ],
+    [
+     "précipitations",
+     "précipitation",
+     "precipitations"
+    ],
+    [
+     "condensation"
+    ]
+   ],
+   "explication": "L'eau qui coule forme des cours d'eau (ruissèlement). La pluie et la neige sont des précipitations. La vapeur qui redevient liquide se condense."
+  },
+  {
+   "id": "ceb-2024-l10-q4",
+   "livret": 10,
+   "numero": "4",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Tableau de classification : écris le nom de l'animal qui correspond aux attributs cochés.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "classification"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q5",
+   "livret": 10,
+   "numero": "5",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Schémas du cycle de vie de la méduse et du hanneton : retrouve les étiquettes.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "documents": [
+    "meduse",
+    "papillon"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q6",
+   "livret": 10,
+   "numero": "6",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Schémas de quatre appareils du corps humain : lequel est circulatoire, respiratoire, digestif ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q7a",
+   "livret": 10,
+   "numero": "7a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Un des rôles des os est de protéger certains organes. Par quoi sont-ils protégés ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "lignes": [
+    "La moelle épinière",
+    "Les poumons"
+   ],
+   "colonnes": [
+    "le crâne",
+    "la cage thoracique",
+    "les vertèbres",
+    "le bassin"
+   ],
+   "reponse": [
+    2,
+    1
+   ],
+   "explication": "La moelle épinière passe à l'intérieur de la colonne vertébrale ; les côtes (cage thoracique) entourent les poumons."
+  },
+  {
+   "id": "ceb-2024-l10-q7b",
+   "livret": 10,
+   "numero": "7b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Entoure sur le squelette de la chauvesouris l'articulation qui correspond au coude.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q8a",
+   "livret": 10,
+   "numero": "8a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Photo d'un lac de montagne : écris les états de l'eau observés.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q8b",
+   "livret": 10,
+   "numero": "8b",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Comment s'appelle le passage de l'eau de l'état liquide à l'état solide ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "choix": [
+    "Solidification",
+    "Condensation",
+    "Vaporisation"
+   ],
+   "reponse": 0,
+   "explication": "Liquide → solide : solidification."
+  },
+  {
+   "id": "ceb-2024-l10-q8c",
+   "livret": 10,
+   "numero": "8c",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "À quel état est l'aluminium sur chaque photo ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "lignes": [
+    "Photo 1 : des brindilles d'aluminium placées au-dessus d'une flamme",
+    "Photo 2 : l'aluminium fondu versé dans un moule",
+    "Photo 3 : l'aluminium refroidi forme un petit lingot"
+   ],
+   "colonnes": [
+    "solide",
+    "liquide",
+    "gazeux"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Les brindilles sont encore solides ; fondu, l'aluminium est liquide ; refroidi, il redevient solide."
+  },
+  {
+   "id": "ceb-2024-l10-q9a",
+   "livret": 10,
+   "numero": "9a",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Complète la tendance générale de chaque journée du bulletin météo à l'aide de la légende.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "meteo"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q9b",
+   "livret": 10,
+   "numero": "9b",
+   "domaine": "sc.energie",
+   "type": "grille",
+   "enonce": "Bulletin : mardi 25/06 vent de 4 km/h ; jeudi 27/06 vent de sud-ouest ; vendredi 28/06 précipitations de 15 mm. Quel instrument a servi ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "meteo"
+   ],
+   "lignes": [
+    "Vitesse du vent (mardi)",
+    "Direction du vent (jeudi)",
+    "Quantité de précipitations (vendredi)"
+   ],
+   "colonnes": [
+    "pluviomètre",
+    "anémomètre",
+    "girouette",
+    "thermomètre",
+    "baromètre"
+   ],
+   "reponse": [
+    1,
+    2,
+    0
+   ],
+   "explication": "L'anémomètre mesure la vitesse du vent, la girouette indique sa direction, le pluviomètre recueille la pluie."
+  },
+  {
+   "id": "ceb-2024-l10-q9c",
+   "livret": 10,
+   "numero": "9c",
+   "domaine": "sc.energie",
+   "type": "trous",
+   "enonce": "Complète à l'aide du bulletin météorologique.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "meteo"
+   ],
+   "texte": "Jeudi 27/06, la donnée « sud-ouest » est la {1} du vent.  ·  Vendredi 28/06, la quantité de précipitations est de {2} mm.",
+   "reponse": [
+    [
+     "direction"
+    ],
+    [
+     "15"
+    ]
+   ],
+   "explication": "SO = sud-ouest : une direction. Vendredi : 15 mm de pluie."
+  },
+  {
+   "id": "ceb-2024-l10-q10a1",
+   "livret": 10,
+   "numero": "10a1",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Les besoins énergétiques sont…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "documents": [
+    "sante"
+   ],
+   "choix": [
+    "les plus élevés après 70 ans.",
+    "les plus élevés à l'adolescence.",
+    "les plus élevés à l'âge adulte.",
+    "les plus élevés chez l'enfant."
+   ],
+   "reponse": 1,
+   "explication": "Les bâtons les plus hauts sont ceux des adolescents (16 ans)."
+  },
+  {
+   "id": "ceb-2024-l10-q10a2",
+   "livret": 10,
+   "numero": "10a2",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "documents": [
+    "sante"
+   ],
+   "choix": [
+    "les femmes adultes ont des besoins plus élevés que les hommes.",
+    "les femmes de plus de 70 ans ont les mêmes besoins que les hommes.",
+    "les filles de 3 ans ont des besoins plus élevés que les garçons.",
+    "les filles de 16 ans ont des besoins moins élevés que les garçons du même âge."
+   ],
+   "reponse": 3,
+   "explication": "À 16 ans : 2 400 kcal pour les filles, 3 000 pour les garçons."
+  },
+  {
+   "id": "ceb-2024-l10-q10a3",
+   "livret": 10,
+   "numero": "10a3",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "documents": [
+    "sante"
+   ],
+   "choix": [
+    "en vieillissant, les besoins augmentent.",
+    "les besoins de l'homme augmentent toute sa vie.",
+    "chez l'homme et la femme, les besoins augmentent entre 3 ans et l'adolescence puis diminuent.",
+    "les besoins des filles diminuent toute leur vie."
+   ],
+   "reponse": 2,
+   "explication": "Les bâtons montent jusqu'à 16 ans, puis redescendent."
+  },
+  {
+   "id": "ceb-2024-l10-q10a4",
+   "livret": 10,
+   "numero": "10a4",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Quelles sont les deux variables qui influencent les besoins énergétiques ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "documents": [
+    "sante"
+   ],
+   "choix": [
+    "l'âge",
+    "le sexe (fille ou garçon)",
+    "la taille des bâtons",
+    "le pays",
+    "la saison"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Le graphique compare les besoins selon l'âge et selon le sexe."
+  },
+  {
+   "id": "ceb-2024-l10-q10b1",
+   "livret": 10,
+   "numero": "10b1",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Trace les bâtonnets manquants dans le graphique des dépenses énergétiques.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q10b2",
+   "livret": 10,
+   "numero": "10b2",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 60 minutes, quel sport fait dépenser le plus de kcal ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "choix": [
+    "Le tennis",
+    "Le judo",
+    "Le handball",
+    "Le yoga"
+   ],
+   "reponse": 2,
+   "explication": "Handball : 748 kcal, le plus grand nombre."
+  },
+  {
+   "id": "ceb-2024-l10-q10b3",
+   "livret": 10,
+   "numero": "10b3",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 15 minutes d'activité, la dépense énergétique…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "choix": [
+    "est plus importante en yoga qu'en équitation.",
+    "est plus importante en tennis de table qu'en équitation.",
+    "est moins importante en yoga qu'en tennis de table.",
+    "est moins importante en brasse qu'en équitation."
+   ],
+   "reponse": 2,
+   "explication": "Yoga 26 kcal < tennis de table 51 kcal. Tennis de table et équitation sont égaux (51)."
+  },
+  {
+   "id": "ceb-2024-l10-q10b4",
+   "livret": 10,
+   "numero": "10b4",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-alimentation",
+   "texte": "Après 60 min, le sport qui fait dépenser autant que le tennis : {1}.  ·  60 min de crawl font dépenser {2} kcal.",
+   "reponse": [
+    [
+     "la natation (brasse)",
+     "natation brasse",
+     "la brasse",
+     "brasse",
+     "natation (brasse)",
+     "la natation"
+    ],
+    [
+     "680"
+    ]
+   ],
+   "explication": "Tennis et brasse : 408 kcal chacun. Crawl : 680 kcal."
+  },
+  {
+   "id": "ceb-2024-l10-q11a",
+   "livret": 10,
+   "numero": "11a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète les étiquettes du schéma (omnivore, herbivore, carnivore).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "dents"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2024-l10-q11b",
+   "livret": 10,
+   "numero": "11b",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "D'après le tableau des dents, quel est le régime alimentaire de ces animaux ? (Le furet a des canines longues, pointues et recourbées et des molaires en forme de scie ; le cerf a des incisives larges, plates et en forme de bêche et des molaires aplaties.)",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-regimes",
+   "documents": [
+    "dents"
+   ],
+   "lignes": [
+    "Furet",
+    "Cerf"
+   ],
+   "colonnes": [
+    "Carnivore",
+    "Herbivore",
+    "Omnivore"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Canines longues et recourbées : carnivore. Incisives en bêche et molaires plates, sans canines : herbivore."
+  },
+  {
+   "id": "ceb-2024-l10-q12a",
+   "livret": 10,
+   "numero": "12a",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Pour comparer les deux expériences sur l'eau du vase, coche les trois conditions à respecter.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "fleurs"
+   ],
+   "choix": [
+    "Réaliser chaque expérience dans un même endroit de la classe.",
+    "Utiliser une même quantité d'eau dans chaque éprouvette.",
+    "Éclairer les éprouvettes jour et nuit.",
+    "Placer des tulipes de la même couleur.",
+    "Respecter la même durée pour les deux expériences.",
+    "Arroser la tulipe chaque jour."
+   ],
+   "reponse": [
+    0,
+    1,
+    4
+   ],
+   "explication": "On ne change qu'une chose à la fois : même endroit, même quantité d'eau, même durée."
+  },
+  {
+   "id": "ceb-2024-l10-q12b",
+   "livret": 10,
+   "numero": "12b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Hypothèses : l'eau du vase s'évapore / l'eau est absorbée par les fleurs. Quelle conclusion tirent les élèves des deux expériences ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "fleurs"
+   ],
+   "reponseModele": "Les deux hypothèses sont correctes : sans huile, le niveau baisse (l'eau s'évapore) ; avec de l'huile, le niveau baisse seulement là où il y a la tulipe (elle absorbe l'eau)."
+  },
+  {
+   "id": "ceb-2024-l10-q13",
+   "livret": 10,
+   "numero": "13",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Expérience 2 : une bouteille en verre remplie d'eau passe 12 h au congélateur. Expérience 3 : un litre d'eau bout dans une casserole. Écris une question que les élèves auraient pu se poser avant chaque expérience.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "liquides"
+   ],
+   "reponseModele": "Exp. 2 : Que devient l'eau au congélateur ? L'eau prend-elle plus de place en gelant (la bouteille va-t-elle casser) ? Exp. 3 : À quelle température l'eau bout-elle ? Que devient l'eau quand elle bout ?"
+  },
+  {
+   "id": "ceb-2024-l10-q14a",
+   "livret": 10,
+   "numero": "14a",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Deux montages : dans le premier, la lampe LED est reliée aux batteries par des câbles ; dans le second, le circuit passe par un verre d'eau salée. La lampe s'allume dans les deux cas. Quelle question les élèves se posaient-ils ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "documents": [
+    "electricite"
+   ],
+   "choix": [
+    "Les générateurs sont-ils capables d'allumer la lampe LED ?",
+    "La lampe LED est-elle sensible à l'eau salée ?",
+    "L'eau salée est-elle conductrice d'électricité ?",
+    "Les câbles électriques sont-ils bons conducteurs ?",
+    "Peut-on allumer la lampe LED avec seulement 2 câbles ?"
+   ],
+   "reponse": 2,
+   "explication": "La seule différence entre les montages est l'eau salée : on teste si elle laisse passer le courant."
+  },
+  {
+   "id": "ceb-2024-l10-q14b",
+   "livret": 10,
+   "numero": "14b",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "La lampe reste éteinte avec une cuillère en plastique, en bois ou en porcelaine ; elle s'allume avec une cuillère en fer, en argent ou en étain. Quelle conclusion ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "reponseModele": "Les métaux (fer, argent, étain) sont conducteurs d'électricité ; le plastique, le bois et la porcelaine sont des isolants."
+  }
+ ]
+}
