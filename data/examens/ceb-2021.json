@@ -1,0 +1,4063 @@
+{
+ "id": "ceb-2021",
+ "annee": 2021,
+ "referentiel": "socles",
+ "titre": "CEB 2021",
+ "source": "FWB, épreuve externe commune 2021 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Les livrets portent la mention « CEB 2020 » : l'épreuve préparée pour 2020 (annulée à cause de la crise sanitaire) a été utilisée en 2021 ; les dates des livrets sont donc approximatives.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2021-06-17",
+   "points": 20,
+   "audio": null
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2021-06-17",
+   "points": 40
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2021-06-17",
+   "points": 50
+  },
+  {
+   "n": 4,
+   "matiere": "fr",
+   "titre": "Lire — texte informatif",
+   "date": "2021-06-18",
+   "points": 40
+  },
+  {
+   "n": 5,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2021-06-18",
+   "points": 60
+  },
+  {
+   "n": 6,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2021-06-21",
+   "points": 60
+  },
+  {
+   "n": 7,
+   "matiere": "fr",
+   "titre": "Lire — texte fictionnel",
+   "date": "2021-06-21",
+   "points": 40
+  },
+  {
+   "n": 8,
+   "matiere": "ma",
+   "titre": "Nombres et opérations",
+   "date": "2021-06-22",
+   "points": 80
+  },
+  {
+   "n": 9,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2021-06-22",
+   "points": 60
+  }
+ ],
+ "documents": [
+  {
+   "id": "mg-0",
+   "page": 3,
+   "titre": "Miniguide du patrimoine : sommaire",
+   "fichier": "assets/2021/pdf03.webp",
+   "alt": "Six richesses du patrimoine en Wallonie et à Bruxelles : Atomium, Folon, Gille de Binche, marionnettes liégeoises, abbaye d'Orval, Adolphe Sax."
+  },
+  {
+   "id": "mg-1",
+   "page": 4,
+   "titre": "L'Atomium (Bruxelles-Capitale)",
+   "fichier": "assets/2021/pdf04.webp",
+   "alt": "Construit pour l'Exposition universelle de 1958, 102 m, neuf sphères de 18 m ; cinq des neuf boules sont accessibles au public."
+  },
+  {
+   "id": "mg-2",
+   "page": 5,
+   "titre": "Jean-Michel Folon (Brabant wallon)",
+   "fichier": "assets/2021/pdf05.webp",
+   "alt": "Musée à La Hulpe ; aquarelles aux couleurs pastel et douces, petits bonshommes à chapeau ; thèmes : l'arbre, l'oiseau et la terre."
+  },
+  {
+   "id": "mg-3",
+   "page": 6,
+   "titre": "Le Gille de Binche (Hainaut)",
+   "fichier": "assets/2021/pdf06.webp",
+   "alt": "Costume issu d'un personnage de théâtre du 17e siècle, masque de cire le matin, chapeau de plumes l'après-midi, oranges offertes au public."
+  },
+  {
+   "id": "mg-4",
+   "page": 7,
+   "titre": "Le théâtre de marionnettes liégeoises (Liège)",
+   "fichier": "assets/2021/pdf07.webp",
+   "alt": "Marionnettes en bois animées par un montreur ; Charlemagne, Tchantchès et Nanesse."
+  },
+  {
+   "id": "mg-5",
+   "page": 8,
+   "titre": "L'abbaye d'Orval (Luxembourg)",
+   "fichier": "assets/2021/pdf08.webp",
+   "alt": "Construite par des moines italiens à partir de 1020, abîmée pendant la Révolution française ; légende de la comtesse Mathilde et de la truite (« Val d'Or »)."
+  },
+  {
+   "id": "mg-6",
+   "page": 9,
+   "titre": "Adolphe Sax (Namur)",
+   "fichier": "assets/2021/pdf09.webp",
+   "alt": "Né à Dinant en 1814 ; perfectionne la clarinette et la flute de pan, invente le saxophone."
+  },
+  {
+   "id": "carte-1",
+   "page": 10,
+   "titre": "Carte 1 : Belgique, voies de communication",
+   "fichier": "assets/2021/pdf10.webp",
+   "alt": "Autoroutes (A3 Bruxelles-Liège, A15 Charleroi-Namur-Liège, A27 près de Verviers et Malmedy…), voies navigables et aéroports."
+  },
+  {
+   "id": "carte-2",
+   "page": 11,
+   "titre": "Carte 2 : Belgique, réseau ferroviaire",
+   "fichier": "assets/2021/pdf11.webp",
+   "alt": "Lignes de chemin de fer et gares, dont Liège-Namur-Dinant et Charleroi-Namur-Liège."
+  },
+  {
+   "id": "liege",
+   "page": 12,
+   "titre": "Liège, ville wallonne",
+   "fichier": "assets/2021/pdf12.webp",
+   "alt": "Document A : photo aérienne (2019) ; document B : plan avec cours d'eau, routes et voies ferrées (2019) ; document C : carte de 1778."
+  },
+  {
+   "id": "rue",
+   "page": 13,
+   "titre": "Une rue à des époques différentes",
+   "fichier": "assets/2021/pdf13.webp",
+   "alt": "Même rue de Courcelles : photo ancienne (charrette tirée par un cheval) et photo récente (voitures garées, passage pour piétons)."
+  },
+  {
+   "id": "affiche",
+   "page": 14,
+   "titre": "Une trace du passé : affiche de 1940",
+   "fichier": "assets/2021/pdf14.webp",
+   "alt": "Avis du ministre de la Défense nationale H. Denis, Bruxelles, 12 mai 1940 : les Belges de 16 à 30 ans doivent partir ; transport gratuit en train. Document reproduit à l'identique en 2020."
+  },
+  {
+   "id": "veg-a",
+   "page": 15,
+   "titre": "Des végétaux : expérience A",
+   "fichier": "assets/2021/pdf15.webp",
+   "alt": "Plantes sur de vieux murs ; graines de haricot arrosées et non arrosées."
+  },
+  {
+   "id": "veg-b",
+   "page": 16,
+   "titre": "Des végétaux : expérience B",
+   "fichier": "assets/2021/pdf16.webp",
+   "alt": "Plante à la lumière et plante dans l'obscurité."
+  },
+  {
+   "id": "veg-c",
+   "page": 17,
+   "titre": "Des végétaux : expérience C",
+   "fichier": "assets/2021/pdf17.webp",
+   "alt": "Plante dans l'eau avec sels minéraux et plante dans l'eau sans sels minéraux."
+  },
+  {
+   "id": "cerf",
+   "page": 18,
+   "titre": "Un cycle de vie : le cerf",
+   "fichier": "assets/2021/pdf18.webp",
+   "alt": "Brame en septembre, gestation d'environ 8 mois, mise bas mi-mai à mi-juin, allaitement, sevrage, âge adulte."
+  },
+  {
+   "id": "foret",
+   "page": 19,
+   "titre": "Animaux de nos forêts",
+   "fichier": "assets/2021/pdf19.webp",
+   "alt": "Sanglier, biche, renard, loir gris, orvet, épeire diadème, belette, pic épeiche."
+  },
+  {
+   "id": "jardin",
+   "page": 20,
+   "titre": "Animaux du jardin",
+   "fichier": "assets/2021/pdf20.webp",
+   "alt": "Épeire diadème (4 paires de pattes, chélicères, pas d'antennes), carabe violet, oxychilus, gloméris, trombidion."
+  },
+  {
+   "id": "ensembles",
+   "page": 21,
+   "titre": "Des ensembles emboités",
+   "fichier": "assets/2021/pdf21.webp",
+   "alt": "Classement : squelette externe et pattes articulées, mandibules et antennes, 3 paires de pattes, 4 paires de pattes, pied plat…"
+  },
+  {
+   "id": "clop-1",
+   "page": 22,
+   "titre": "Cloportes : expérience 1",
+   "fichier": "assets/2021/pdf22.webp",
+   "alt": "Bouteille entre glaçons et eau chaude : 5 cloportes côté glaçons, 2 au milieu, 1 côté eau chaude ; tous restent vivants."
+  },
+  {
+   "id": "clop-2",
+   "page": 23,
+   "titre": "Cloportes : expériences 2 et 3",
+   "fichier": "assets/2021/pdf23.webp",
+   "alt": "Moitié obscure / moitié éclairée : tous les cloportes sont du côté obscur. Deux bouteilles : tous vivants."
+  },
+  {
+   "id": "froid-1",
+   "page": 24,
+   "titre": "Des effets du froid (1)",
+   "fichier": "assets/2021/pdf24.webp",
+   "alt": "Bouteilles d'eau placées au congélateur."
+  },
+  {
+   "id": "froid-2",
+   "page": 25,
+   "titre": "Des effets du froid (2)",
+   "fichier": "assets/2021/pdf25.webp",
+   "alt": "La bouteille gelée est plus large (A) ou plus haute (B) que celle restée en classe."
+  },
+  {
+   "id": "chaleur",
+   "page": 26,
+   "titre": "Des effets de la chaleur",
+   "fichier": "assets/2021/pdf26.webp",
+   "alt": "Une pièce chauffée ne passe plus entre deux clous ; refroidie, elle passe à nouveau."
+  },
+  {
+   "id": "fusee-1",
+   "page": 27,
+   "titre": "Une fusée (1)",
+   "fichier": "assets/2021/pdf27.webp",
+   "alt": "Bicarbonate + vinaigre : ça mousse et du gaz carbonique se dégage."
+  },
+  {
+   "id": "fusee-2",
+   "page": 28,
+   "titre": "Une fusée (2)",
+   "fichier": "assets/2021/pdf28.webp",
+   "alt": "Rampe de lancement graduée de 0 à 12 m."
+  },
+  {
+   "id": "gm-1",
+   "page": 29,
+   "titre": "La grand-mère aux oiseaux (1)",
+   "fichier": "assets/2021/pdf29.webp",
+   "alt": "Brigitte veut mettre un oiseau en cage ; la grand-mère refuse et la traite d'égoïste."
+  },
+  {
+   "id": "gm-2",
+   "page": 30,
+   "titre": "La grand-mère aux oiseaux (2)",
+   "fichier": "assets/2021/pdf30.webp",
+   "alt": "La grand-mère raconte : le grand-père soldat, prisonnier cinq ans en Allemagne, a rangé la cage dans la grange."
+  },
+  {
+   "id": "gm-3",
+   "page": 31,
+   "titre": "La grand-mère aux oiseaux (3)",
+   "fichier": "assets/2021/pdf31.webp",
+   "alt": "Le pigeon voyageur, l'hirondelle, le geai, le perdreau. Georges Coulonges, Pocket, 1996."
+  },
+  {
+   "id": "aqua",
+   "page": 32,
+   "titre": "Aqua Passion",
+   "fichier": "assets/2021/pdf32.webp",
+   "alt": "Aquarium 72 l (60 × 30 × 40 cm) 79,99 € ; chauffage 100 W 16,78 € (20 °C à 34 °C) ; O'Pure 100 ml 3,90 € ; nourriture en flocons 250 g 8,50 € ; scalaire 6,90 € pour 1 ou 18,90 € pour 3 ; platy 13,50 € pour 5."
+  },
+  {
+   "id": "capa",
+   "page": 33,
+   "titre": "Des capacités",
+   "fichier": "assets/2021/pdf33.webp",
+   "alt": "Quatre récipients gradués : 1 éprouvette (environ 210 ml), 2 verre doseur (environ 500 ml), 3 gobelet (environ 1,75 dl), 4 verre (environ 0,3 l)."
+  },
+  {
+   "id": "parking",
+   "page": 34,
+   "titre": "Plan de stationnement",
+   "fichier": "assets/2021/pdf34.webp",
+   "alt": "Quadrillage A-H / 1-9 ; tarifs : vert 0,5 €/h, orange 0,8 €/h, bleu 1 €/h."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2021-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "Tu es en classes de dépaysement ou en excursion et tu viens de vivre une situation particulière (une copine ou un copain maladroit, une découverte exceptionnelle, un moment de panique dans un parc animalier, des visiteurs bloqués dans un musée). Écris une lettre (au moins 90 mots) à un membre de ta famille pour lui raconter ce qui s'est passé.",
+   "points": 40,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q3c",
+   "livret": 3,
+   "numero": "3c",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Une pyramide à base triangulaire : complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-solides",
+   "texte": "Nombre de faces : {1}  ·  Nombre d'arêtes : {2}  ·  Nombre de sommets : {3}",
+   "reponse": [
+    [
+     "4"
+    ],
+    [
+     "6"
+    ],
+    [
+     "4"
+    ]
+   ],
+   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets."
+  },
+  {
+   "id": "ceb-2021-l3-q13a",
+   "livret": 3,
+   "numero": "13a",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Complète chaque proposition le plus précisément possible.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-triangles",
+   "texte": "Ce polygone est régulier et il a 3 angles : c'est un {1}.  ·  Ce quadrilatère a une et une seule paire de côtés parallèles et les deux autres côtés de même longueur : c'est un {2}.",
+   "reponse": [
+    [
+     "triangle équilatéral",
+     "triangle equilateral"
+    ],
+    [
+     "trapèze isocèle",
+     "trapeze isocele"
+    ]
+   ],
+   "explication": "Polygone régulier à 3 angles = triangle équilatéral. Une seule paire de côtés parallèles et deux côtés isométriques = trapèze isocèle."
+  },
+  {
+   "id": "ceb-2021-l3-q13b",
+   "livret": 3,
+   "numero": "13b",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris l'énoncé (la description) d'un triangle rectangle.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-triangles",
+   "reponseModele": "Ce polygone a 3 côtés et un angle droit."
+  },
+  {
+   "id": "ceb-2021-l3-q18b",
+   "livret": 3,
+   "numero": "18b",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Plan de stationnement : un automobiliste se gare en F8 (rue verte). Combien paie-t-il par heure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-monnaie",
+   "documents": [
+    "parking"
+   ],
+   "choix": [
+    "0,5 €",
+    "0,8 €",
+    "1 €"
+   ],
+   "reponse": 0,
+   "explication": "En F8, la rue est verte : 0,5 € par heure."
+  },
+  {
+   "id": "ceb-2021-l3-q1",
+   "livret": 3,
+   "numero": "1",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Que voient les joueurs 1 et 2 du plateau de jeu ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Place les polygones dans l'arbre de classement.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q3a",
+   "livret": 3,
+   "numero": "3a",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le dé qui a le plus de faces.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q3b",
+   "livret": 3,
+   "numero": "3b",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le développement du dé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q3d",
+   "livret": 3,
+   "numero": "3d",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nomme les polygones réguliers qui forment ce dé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nomme le quadrilatère tracé entre deux parallèles.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un carré et un non-polygone.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Choisis les pièces pour construire un solide fermé et nomme-le.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Géoplan : côtés perpendiculaires, axe de symétrie, somme des angles.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Achève l'agrandissement du dessin.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q9",
+   "livret": 3,
+   "numero": "9",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un rectangle dont les sommets sont des points donnés.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q10",
+   "livret": 3,
+   "numero": "10",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Plan d'appartement : suis le programme de construction.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trouve les triangles scalènes acutangles, isocèle acutangle, scalènes obtusangles.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Colorie les figures qui ont au moins deux axes de symétrie.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les solides : prismes, pyramides, non-polyèdres.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Reproduis le symbole des Jeux olympiques.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q16",
+   "livret": 3,
+   "numero": "16",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un parallélogramme, un trapèze et un pentagone non régulier.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q17",
+   "livret": 3,
+   "numero": "17",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Assemble deux trapèzes rectangles pour former un pentagone puis un trapèze isocèle.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q18a",
+   "livret": 3,
+   "numero": "18a",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris les coordonnées des cases où le stationnement coute le plus cher.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q18c",
+   "livret": 3,
+   "numero": "18c",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris les cases du chemin le plus court de la place de la Libération à la Grand Place.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l3-q19",
+   "livret": 3,
+   "numero": "19",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Termine le pavage.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l4-q1",
+   "livret": 4,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Dans le miniguide, à quelle page (province) trouve-t-on ces informations ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "lignes": [
+    "Assister à une pièce de théâtre traditionnel.",
+    "Assister à un cortège folklorique.",
+    "Visiter un bâtiment historique.",
+    "S'informer sur l'inventeur du saxophone.",
+    "Visiter un musée où l'on peut admirer les œuvres d'un aquarelliste."
+   ],
+   "colonnes": [
+    "Brabant wallon",
+    "Hainaut",
+    "Liège",
+    "Luxembourg",
+    "Namur"
+   ],
+   "reponse": [
+    2,
+    1,
+    3,
+    4,
+    0
+   ],
+   "explication": "Marionnettes : Liège. Gille : Hainaut. Abbaye d'Orval : Luxembourg. Adolphe Sax : Namur. Folon : Brabant wallon."
+  },
+  {
+   "id": "ceb-2021-l4-q2b",
+   "livret": 4,
+   "numero": "2b",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Voici une aquarelle aux couleurs pastel où flotte un petit bonhomme à chapeau. Elle a été réalisée par…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-2"
+   ],
+   "choix": [
+    "Adolphe Sax",
+    "Jean-Michel Folon",
+    "Charlemagne",
+    "Mathilde de Toscane"
+   ],
+   "reponse": 1,
+   "explication": "Couleurs pastel, petits bonshommes à chapeau : c'est le style de Folon."
+  },
+  {
+   "id": "ceb-2021-l4-q3",
+   "livret": 4,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "La consultation de ce miniguide peut te permettre de…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "choix": [
+    "construire un théâtre de marionnettes.",
+    "choisir la destination de ta prochaine excursion.",
+    "prendre des cours de cuisine.",
+    "participer à la fabrication d'un saxophone."
+   ],
+   "reponse": 1,
+   "explication": "Le guide présente des lieux à découvrir en Wallonie et à Bruxelles."
+  },
+  {
+   "id": "ceb-2021-l4-q4",
+   "livret": 4,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Que nous indiquent tous les titres du miniguide ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "choix": [
+    "quelques noms de personnages célèbres.",
+    "quelques richesses de notre patrimoine.",
+    "quelques lieux qu'il faut absolument visiter.",
+    "quelques monuments qui font partie de notre histoire."
+   ],
+   "reponse": 1,
+   "explication": "Le guide annonce « six richesses » de notre patrimoine : lieux, personnages, traditions."
+  },
+  {
+   "id": "ceb-2021-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "D'après le miniguide uniquement :",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "mg-1",
+    "mg-2",
+    "mg-5"
+   ],
+   "lignes": [
+    "Jean-Michel Folon utilise des couleurs pastel.",
+    "La construction de l'abbaye d'Orval a été terminée en 1114.",
+    "Seules quatre boules de l'Atomium sont accessibles au public."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas savoir"
+   ],
+   "reponse": [
+    0,
+    2,
+    1
+   ],
+   "explication": "Folon : « couleurs pastel et douces ». Orval : le texte donne seulement le début (1020). Atomium : cinq boules sont accessibles, pas quatre."
+  },
+  {
+   "id": "ceb-2021-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Ces informations ne sont pas dans le miniguide. À quelle province les associer ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-provinces",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "lignes": [
+    "Cet inventeur dispose à Dinant d'un espace qui lui est consacré.",
+    "La collerette du Gille se porte aux épaules.",
+    "Cet artiste a déposé plus de 500 œuvres dans la ferme du Château de La Hulpe."
+   ],
+   "colonnes": [
+    "Brabant wallon",
+    "Hainaut",
+    "Liège",
+    "Luxembourg",
+    "Namur"
+   ],
+   "reponse": [
+    4,
+    1,
+    0
+   ],
+   "explication": "Sax (Dinant) : Namur. Gille : Hainaut. Folon (La Hulpe) : Brabant wallon."
+  },
+  {
+   "id": "ceb-2021-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Cinq des neuf boules sont accessibles au public. » Explique ce que veut dire « accessibles ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "mg-1"
+   ],
+   "reponseModele": "Le public peut y entrer, les visiter."
+  },
+  {
+   "id": "ceb-2021-l4-q8",
+   "livret": 4,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quels thèmes Jean-Michel Folon a-t-il choisis pour sensibiliser à la préservation de l'environnement ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-2"
+   ],
+   "choix": [
+    "L'arbre",
+    "La mer",
+    "L'oiseau",
+    "Le soleil",
+    "La terre",
+    "Le chapeau"
+   ],
+   "reponse": [
+    0,
+    2,
+    4
+   ],
+   "explication": "« L'arbre, l'oiseau et la terre sont des thèmes choisis par l'artiste. »"
+  },
+  {
+   "id": "ceb-2021-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Le Gille de Binche offre des fruits lors du carnaval. » Écris le titre du sujet où se trouve cette information.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-3"
+   ],
+   "reponse": [
+    "Le Gille de Binche",
+    "Gille de Binche"
+   ],
+   "explication": "C'est dans la page « Le Gille de Binche » (il offre ses oranges)."
+  },
+  {
+   "id": "ceb-2021-l4-q11",
+   "livret": 4,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Quant au célèbre chapeau de plumes, il ne sort que lors du cortège de l'après-midi. » Le chapeau…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "mg-3"
+   ],
+   "choix": [
+    "ne sort pas lors du cortège de l'après-midi.",
+    "sort uniquement lors du cortège de l'après-midi.",
+    "sort lors du cortège du matin et lors du cortège de l'après-midi."
+   ],
+   "reponse": 1,
+   "explication": "« ne… que » veut dire « seulement »."
+  },
+  {
+   "id": "ceb-2021-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Les théâtres, modestement aménagés… » veut dire…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "mg-4"
+   ],
+   "choix": [
+    "aménagés avec luxe.",
+    "aménagés avec simplicité.",
+    "aménagés avec du mobilier ancien.",
+    "aménagés avec des matériaux solides."
+   ],
+   "reponse": 1,
+   "explication": "Modestement = simplement, sans luxe."
+  },
+  {
+   "id": "ceb-2021-l4-q13",
+   "livret": 4,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Une légende est à l'origine de son nom. » Que signifie « origine » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "mg-5"
+   ],
+   "choix": [
+    "Point de départ d'une demi-droite",
+    "Point de départ de ce qui est envoyé, adressé, distribué",
+    "Commencement, première apparition de quelque chose",
+    "Milieu social d'où est issu quelqu'un"
+   ],
+   "reponse": 2,
+   "explication": "Le nom « Orval » vient de la légende : c'est son commencement."
+  },
+  {
+   "id": "ceb-2021-l4-q14",
+   "livret": 4,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Invente un titre pour chacun des trois paragraphes du texte sur l'abbaye d'Orval (situation, histoire, légende).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-5"
+   ],
+   "reponseModele": "1. Où se trouve l'abbaye ? 2. L'histoire de l'abbaye. 3. La légende du nom « Orval »."
+  },
+  {
+   "id": "ceb-2021-l4-q15",
+   "livret": 4,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Beaucoup de constructions subissent des détériorations au cours du temps. » Recopie une phrase du miniguide qui confirme que c'est le cas pour l'abbaye d'Orval.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-5"
+   ],
+   "reponseModele": "« Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française. »"
+  },
+  {
+   "id": "ceb-2021-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Transforme le verbe en nom (exemple : le costume provient → la provenance du costume).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-familles-mots",
+   "documents": [
+    "mg-5",
+    "mg-6"
+   ],
+   "texte": "L'abbaye se situe dans un vallon → la {1} de l'abbaye  ·  Adolphe Sax invente de nouveaux instruments → l'{2} de nouveaux instruments  ·  Des moines créent une brasserie → la {3} d'une brasserie",
+   "reponse": [
+    [
+     "situation"
+    ],
+    [
+     "invention"
+    ],
+    [
+     "création",
+     "creation"
+    ]
+   ],
+   "explication": "se situer → situation ; inventer → invention ; créer → création."
+  },
+  {
+   "id": "ceb-2021-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Ensuite, il en invente des nouveaux dont le plus connu est le saxophone. Cette invention fait évoluer les musiques militaires. » Le mot « invention » remplace…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "mg-6"
+   ],
+   "reponse": [
+    "le saxophone",
+    "saxophone",
+    "l'invention du saxophone"
+   ],
+   "explication": "« Cette invention », c'est le saxophone."
+  },
+  {
+   "id": "ceb-2021-l4-q18",
+   "livret": 4,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Dans un premier temps, il perfectionne des instruments déjà existants. » Remplace « Dans un premier temps » par un autre groupe de mots de même sens.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "mg-6"
+   ],
+   "reponse": [
+    "d'abord",
+    "tout d'abord",
+    "premièrement",
+    "au début",
+    "au départ",
+    "pour commencer",
+    "en premier",
+    "en premier lieu",
+    "au debut",
+    "premierement"
+   ],
+   "explication": "« D'abord », « Tout d'abord », « Premièrement »…"
+  },
+  {
+   "id": "ceb-2021-l4-q19",
+   "livret": 4,
+   "numero": "19",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Distingue ce qui est réel de ce qui est imaginaire.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "lignes": [
+    "L'invention du saxophone",
+    "Les aventures de Tchantchès et Nanesse",
+    "Le monde peint par Jean-Michel Folon"
+   ],
+   "colonnes": [
+    "Réel",
+    "Imaginaire"
+   ],
+   "reponse": [
+    0,
+    1,
+    1
+   ],
+   "explication": "Le saxophone existe vraiment ; Tchantchès et Nanesse sont des marionnettes ; Folon « emmène le visiteur dans un monde imaginaire »."
+  },
+  {
+   "id": "ceb-2021-l4-q20",
+   "livret": 4,
+   "numero": "20",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Comment les auteurs organisent-ils la description des aquarelles de Folon ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "mg-2"
+   ],
+   "choix": [
+    "Ils expliquent les outils utilisés, puis décrivent les personnages.",
+    "Ils énumèrent tous les sujets et les objets choisis par Folon.",
+    "Ils décrivent d'abord les couleurs, ensuite les personnages et enfin ils citent d'autres éléments."
+   ],
+   "reponse": 2,
+   "explication": "« couleurs pastel et douces… drôles de petits bonshommes… des éléments de la nature »."
+  },
+  {
+   "id": "ceb-2021-l4-q21",
+   "livret": 4,
+   "numero": "21",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Réponds en te servant du miniguide.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "texte": "L'Atomium a été construit pour l'{1} de 1958.  ·  Les deux héros les plus populaires des marionnettes liégeoises : {2} et {3}.  ·  Les moines qui ont construit l'abbaye d'Orval étaient {4}.",
+   "reponse": [
+    [
+     "Exposition universelle",
+     "exposition universelle",
+     "Exposition internationale",
+     "Expo 58",
+     "expo"
+    ],
+    [
+     "Tchantchès",
+     "Tchantches",
+     "Nanesse"
+    ],
+    [
+     "Nanesse",
+     "Tchantchès",
+     "Tchantches"
+    ],
+    [
+     "italiens",
+     "Italiens",
+     "italien"
+    ]
+   ],
+   "explication": "Exposition universelle de 1958 ; Tchantchès et Nanesse ; des moines italiens."
+  },
+  {
+   "id": "ceb-2021-l4-q21b",
+   "livret": 4,
+   "numero": "21b",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Adolphe Sax a perfectionné des instruments déjà existants. Lesquels ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-6"
+   ],
+   "choix": [
+    "La clarinette",
+    "Le saxophone",
+    "La flute de pan",
+    "Le piano"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "« il perfectionne des instruments déjà existants comme la clarinette ou la flute de pan ». Le saxophone, il l'a inventé."
+  },
+  {
+   "id": "ceb-2021-l4-q22",
+   "livret": 4,
+   "numero": "22",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention principale des auteurs du miniguide ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "mg-0",
+    "mg-1",
+    "mg-2",
+    "mg-3",
+    "mg-4",
+    "mg-5",
+    "mg-6"
+   ],
+   "choix": [
+    "Obliger à visiter des musées en Wallonie.",
+    "Persuader que la peinture est le plus beau des arts.",
+    "Émouvoir en racontant de belles histoires folkloriques.",
+    "Informer sur le patrimoine en Wallonie et à Bruxelles."
+   ],
+   "reponse": 3,
+   "explication": "C'est un guide : il informe."
+  },
+  {
+   "id": "ceb-2021-l4-q2a",
+   "livret": 4,
+   "numero": "2a",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Identifie le personnage de la photo.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Choisis la peinture d'élève faite à la manière de Folon et justifie.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "mg-2"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q1",
+   "livret": 5,
+   "numero": "1",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Voici des pages d'un atlas : Europe relief 8-9, Europe cours d'eau 10, Union européenne 11-12, zone euro 13, monde climat 24, monde milieux naturels 23, monde relief 21. Écris la page où tu trouveras la carte utile.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "texte": "Quelles chaines de montagnes se trouvent en France ? page(s) {1}  ·  Quel climat trouve-t-on en Amérique du Sud ? page {2}  ·  Puis-je payer en euros en Croatie ? page {3}",
+   "reponse": [
+    [
+     "8-9",
+     "8",
+     "9",
+     "8 et 9",
+     "8 - 9"
+    ],
+    [
+     "24"
+    ],
+    [
+     "13"
+    ]
+   ],
+   "explication": "Relief de l'Europe : 8-9 ; climats du monde : 24 ; zone euro : 13."
+  },
+  {
+   "id": "ceb-2021-l5-q2a",
+   "livret": 5,
+   "numero": "2a",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quelle période conventionnelle appartient chaque trace ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Tapisserie de Bayeux représentant l'attaque d'un château (11e siècle)",
+    "Gravure d'un atelier d'imprimerie (16e siècle)",
+    "Capsule Apollo de retour de la Lune (20e siècle)",
+    "Casque celte (4e siècle avant J.-C.)"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    2,
+    3,
+    4,
+    1
+   ],
+   "explication": "11e s. : Moyen Âge ; 16e s. : Temps modernes ; 20e s. : époque contemporaine ; avant J.-C. (après l'écriture) : Antiquité."
+  },
+  {
+   "id": "ceb-2021-l5-q2b",
+   "livret": 5,
+   "numero": "2b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Quel est un évènement marquant de l'Antiquité ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "choix": [
+    "La découverte des Amériques par Christophe Colomb",
+    "L'invention de l'imprimerie par Gutenberg",
+    "La Première Guerre mondiale",
+    "L'arrivée des Romains dans nos régions",
+    "Les premières peintures rupestres"
+   ],
+   "reponse": 3,
+   "explication": "César conquiert nos régions en 57 avant J.-C. : c'est l'Antiquité."
+  },
+  {
+   "id": "ceb-2021-l5-q3d",
+   "livret": 5,
+   "numero": "3d",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Mercator (1538), Léonard de Vinci (vers 1487), James Watt (1769), Christophe Colomb (1492) : dans quelle période conventionnelle se situent ces découvertes ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "choix": [
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": 2,
+   "explication": "Les Temps modernes vont de 1492 environ à 1789."
+  },
+  {
+   "id": "ceb-2021-l5-q3e",
+   "livret": 5,
+   "numero": "3e",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Léonard de Vinci (1452-1519), Christophe Colomb (1451-1506), Gérard Mercator (1512-1594), James Watt (1736-1819). Vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "lignes": [
+    "Léonard de Vinci a pu rencontrer Christophe Colomb.",
+    "Gérard Mercator et James Watt ont vécu au cours du même siècle.",
+    "James Watt est mort au 19e siècle."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Vinci et Colomb vivent en même temps. Mercator : 16e s., Watt : 18e-19e s. 1819 appartient au 19e siècle."
+  },
+  {
+   "id": "ceb-2021-l5-q5a",
+   "livret": 5,
+   "numero": "5a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Le théâtre de marionnettes (Liège) se situe plutôt… du musée Folon (La Hulpe).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-orientation",
+   "documents": [
+    "mg-0"
+   ],
+   "choix": [
+    "au nord",
+    "au sud",
+    "à l'ouest",
+    "à l'est"
+   ],
+   "reponse": 3,
+   "explication": "Liège est à l'est de La Hulpe (Brabant wallon)."
+  },
+  {
+   "id": "ceb-2021-l5-q5a2",
+   "livret": 5,
+   "numero": "5a2",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Pour aller de l'Atomium (Bruxelles) à Binche, on prend la direction…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-orientation",
+   "documents": [
+    "mg-0"
+   ],
+   "choix": [
+    "du nord",
+    "du sud",
+    "de l'ouest",
+    "de l'est"
+   ],
+   "reponse": 1,
+   "explication": "Binche (Hainaut) est au sud de Bruxelles."
+  },
+  {
+   "id": "ceb-2021-l5-q5b",
+   "livret": 5,
+   "numero": "5b",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Quel pays limitrophe de la Belgique est le plus proche de l'abbaye d'Orval ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-belgique",
+   "documents": [
+    "mg-5"
+   ],
+   "reponse": [
+    "la France",
+    "France"
+   ],
+   "explication": "L'abbaye est « à un kilomètre de la frontière française »."
+  },
+  {
+   "id": "ceb-2021-l5-q5c",
+   "livret": 5,
+   "numero": "5c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Regarde les cartes 1 et 2. On peut aller…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-transports",
+   "documents": [
+    "carte-1",
+    "carte-2"
+   ],
+   "lignes": [
+    "en car, de Bruxelles à Liège par l'autoroute A27.",
+    "en train, de Liège à Dinant, en passant par Namur.",
+    "en train, ou en car par l'autoroute, de Charleroi à Liège."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    0,
+    0
+   ],
+   "explication": "Bruxelles-Liège, c'est l'A3 (l'A27 est près de Verviers et Malmedy). La ligne Liège-Namur-Dinant existe. Charleroi-Liège : train ou autoroute A15."
+  },
+  {
+   "id": "ceb-2021-l5-q6a",
+   "livret": 5,
+   "numero": "6a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Quel document de Liège permet de faire chaque observation ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "liege"
+   ],
+   "lignes": [
+    "Une ligne de chemin de fer a été construite au sud de la Meuse.",
+    "Le cimetière de Robermont se situe au sud de Bressoux.",
+    "La surface entre Liège et Jupille était peu bâtie au 18e siècle."
+   ],
+   "colonnes": [
+    "Document A (photo 2019)",
+    "Document B (plan 2019)",
+    "Document C (carte 1778)"
+   ],
+   "reponse": [
+    1,
+    1,
+    2
+   ],
+   "explication": "Le plan B indique les voies ferrées et les noms ; seule la carte de 1778 montre le 18e siècle."
+  },
+  {
+   "id": "ceb-2021-l5-q6b",
+   "livret": 5,
+   "numero": "6b",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Document A (photo aérienne de Liège) : entoure les deux caractéristiques dominantes du lieu.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liege"
+   ],
+   "choix": [
+    "rural",
+    "urbain",
+    "peu humanisé",
+    "très humanisé"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "Une grande ville : urbain et très humanisé."
+  },
+  {
+   "id": "ceb-2021-l5-q8",
+   "livret": 5,
+   "numero": "8",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Rue de Courcelles : quelle photo permet de le voir ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "rue"
+   ],
+   "lignes": [
+    "L'Homme se déplace grâce à des véhicules tirés par des animaux.",
+    "Des emplacements sont réservés au stationnement des automobiles.",
+    "Le nom de la rue a changé."
+   ],
+   "colonnes": [
+    "La photo ancienne",
+    "La photo récente",
+    "Aucune photo"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "Charrette à cheval sur l'ancienne ; voitures garées sur la récente ; aucun nom de rue n'est visible."
+  },
+  {
+   "id": "ceb-2021-l5-q10c",
+   "livret": 5,
+   "numero": "10c",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Combien de temps dure la gestation de la biche (cerf) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "cerf"
+   ],
+   "choix": [
+    "Environ 8 mois",
+    "Environ 8 semaines",
+    "Environ 6 mois"
+   ],
+   "reponse": 0,
+   "explication": "« Les femelles fécondées portent leur petit pendant environ 8 mois. »"
+  },
+  {
+   "id": "ceb-2021-l5-q11a",
+   "livret": 5,
+   "numero": "11a",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "L'affiche du 12 mai 1940 (« reproduite à l'identique en 2020 ») est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "affiche"
+   ],
+   "choix": [
+    "une reproduction d'un monument.",
+    "une photographie.",
+    "un document audiovisuel original.",
+    "un document écrit original.",
+    "un document écrit reconstitué."
+   ],
+   "reponse": 4,
+   "explication": "C'est un texte, refait à l'identique en 2020 : un document écrit reconstitué."
+  },
+  {
+   "id": "ceb-2021-l5-q11b",
+   "livret": 5,
+   "numero": "11b",
+   "domaine": "hg.histoire",
+   "type": "texte_court",
+   "enonce": "À quelle date le document a-t-il été diffusé ? (jour mois année)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "affiche"
+   ],
+   "reponse": [
+    "12 mai 1940",
+    "12/05/1940",
+    "12-05-1940",
+    "12.05.1940"
+   ],
+   "explication": "« À Bruxelles, le 12 mai 1940 »."
+  },
+  {
+   "id": "ceb-2021-l5-q11c",
+   "livret": 5,
+   "numero": "11c",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Au cours de quel évènement marquant l'avis a-t-il été diffusé ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "documents": [
+    "affiche"
+   ],
+   "choix": [
+    "Le premier homme dans l'espace",
+    "La signature du Traité de Rome",
+    "La Première Guerre mondiale",
+    "La Seconde Guerre mondiale",
+    "L'indépendance de la Belgique"
+   ],
+   "reponse": 3,
+   "explication": "L'Allemagne envahit la Belgique le 10 mai 1940 : Seconde Guerre mondiale (1939-1945)."
+  },
+  {
+   "id": "ceb-2021-l5-q11d",
+   "livret": 5,
+   "numero": "11d",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "L'avis concerne les hommes âgés de plus de 16 ans et de moins de 30 ans en 1940. Ils sont nés…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "documents": [
+    "affiche"
+   ],
+   "choix": [
+    "entre 1900 et 1910",
+    "entre 1910 et 1924",
+    "entre 1924 et 1940",
+    "entre 1916 et 1930"
+   ],
+   "reponse": 1,
+   "explication": "1940 − 30 = 1910 et 1940 − 16 = 1924."
+  },
+  {
+   "id": "ceb-2021-l5-q11e",
+   "livret": 5,
+   "numero": "11e",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Pour chaque affirmation, que permet le document ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "affiche"
+   ],
+   "lignes": [
+    "Jean, élève de 6e primaire, ne doit pas partir.",
+    "Pour se rendre à Erquelinnes, le train est gratuit pour les personnes concernées.",
+    "Les hommes de moins de 1 m 70 ne sont pas concernés.",
+    "Le ministre de la Défense en 1940 s'appelle Monsieur Denis.",
+    "Gérard, qui a 34 ans, ne doit pas se rendre à Erquelinnes."
+   ],
+   "colonnes": [
+    "Je l'ai lu",
+    "Je peux le déduire",
+    "Je ne peux pas le déduire"
+   ],
+   "reponse": [
+    1,
+    0,
+    2,
+    0,
+    1
+   ],
+   "explication": "Jean a environ 12 ans et Gérard 34 : hors de 16-30 ans, on le déduit. Le transport gratuit et le nom H. Denis sont écrits. La taille n'est pas mentionnée."
+  },
+  {
+   "id": "ceb-2021-l5-q3a",
+   "livret": 5,
+   "numero": "3a",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Colorie la durée de vie de Léonard de Vinci sur la ligne du temps.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q3b",
+   "livret": 5,
+   "numero": "3b",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Coche la ligne du temps où situer les 4 dates.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q3c",
+   "livret": 5,
+   "numero": "3c",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Colorie la période des découvertes sur la ligne du temps.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q4",
+   "livret": 5,
+   "numero": "4",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Nature des traces du passé photographiées.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Place « affluent » et « confluent ».",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "liege"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q6d",
+   "livret": 5,
+   "numero": "6d",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Trace le trajet entre les deux musées de Liège.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q7",
+   "livret": 5,
+   "numero": "7",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Abbaye de Villers-la-Ville : reporte les numéros sur la maquette et le plan.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q9a",
+   "livret": 5,
+   "numero": "9a",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Situe les carnavals de Nice, Cologne et Venise sur la carte.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q9b",
+   "livret": 5,
+   "numero": "9b",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Nomme le pays A sur la carte d'Europe.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q9c",
+   "livret": 5,
+   "numero": "9c",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Situe les continents et les océans sur les planisphères.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q10a",
+   "livret": 5,
+   "numero": "10a",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Calendrier : un animal qui peut s'accoupler en janvier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l5-q10b",
+   "livret": 5,
+   "numero": "10b",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Calendrier : l'animal dont la gestation est la plus longue.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q2",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Nafissatou Thiam saute 5,38 m, 6,26 m, 5,79 m, 5,93 m et 6,42 m. Quelle est la longueur moyenne de ses sauts (en m) ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-moyenne",
+   "reponse": 5.956,
+   "tolerance": 0.005,
+   "unite": "m",
+   "explication": "(5,38 + 6,26 + 5,79 + 5,93 + 6,42) : 5 = 29,78 : 5 = 5,956 m."
+  },
+  {
+   "id": "ceb-2021-l6-q3",
+   "livret": 6,
+   "numero": "3",
+   "domaine": "ma.grandeurs",
+   "type": "grille",
+   "enonce": "Choisis la mesure approximative qui convient.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "lignes": [
+    "La masse d'un cahier (en g)",
+    "La capacité d'un seau d'eau (en l)",
+    "Le volume d'une gomme (en cm³)"
+   ],
+   "colonnes": [
+    "10",
+    "100",
+    "1 000"
+   ],
+   "reponse": [
+    1,
+    0,
+    0
+   ],
+   "explication": "Un cahier ≈ 100 g, un seau ≈ 10 l, une gomme ≈ 10 cm³."
+  },
+  {
+   "id": "ceb-2021-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Complète (exemple : un centième de mètre, c'est un cm, centimètre).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "Un dixième de litre, c'est un {1}  ·  Un millième de mètre, c'est un {2}  ·  Mille grammes, c'est un {3}",
+   "reponse": [
+    [
+     "dl",
+     "décilitre",
+     "decilitre"
+    ],
+    [
+     "mm",
+     "millimètre",
+     "millimetre"
+    ],
+    [
+     "kg",
+     "kilogramme"
+    ]
+   ],
+   "explication": "déci = 1/10, milli = 1/1000, kilo = 1000."
+  },
+  {
+   "id": "ceb-2021-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Document Aqua Passion : écris un nombre et son étalon pour chaque type de grandeur.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "documents": [
+    "aqua"
+   ],
+   "texte": "Une capacité : {1}  ·  Une longueur : {2}  ·  Une masse : {3}  ·  Une température : {4}",
+   "reponse": [
+    [
+     "72 l",
+     "100 l",
+     "100 ml",
+     "72l",
+     "100l",
+     "100ml"
+    ],
+    [
+     "60 cm",
+     "30 cm",
+     "40 cm",
+     "60cm",
+     "30cm",
+     "40cm"
+    ],
+    [
+     "250 g",
+     "250g"
+    ],
+    [
+     "20 °C",
+     "34 °C",
+     "20°C",
+     "34°C",
+     "20 °c",
+     "34 °c"
+    ]
+   ],
+   "explication": "Capacité : 72 l, 100 l ou 100 ml ; longueur : 60, 30 ou 40 cm ; masse : 250 g ; température : 20 °C ou 34 °C."
+  },
+  {
+   "id": "ceb-2021-l6-q6a",
+   "livret": 6,
+   "numero": "6a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Une boite de nourriture contient 250 g. J'utilise 5 g par jour. Pendant combien de jours puis-je nourrir mes poissons ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "documents": [
+    "aqua"
+   ],
+   "reponse": 50,
+   "unite": "jours",
+   "explication": "250 : 5 = 50 jours."
+  },
+  {
+   "id": "ceb-2021-l6-q6b",
+   "livret": 6,
+   "numero": "6b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "J'entame la boite (50 jours) le 17 juin. Quel jour vais-je la terminer ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "4 aout",
+    "5 aout",
+    "6 aout",
+    "31 juillet"
+   ],
+   "reponse": 1,
+   "explication": "Du 17 au 30 juin : 14 jours ; juillet : 31 jours (45) ; encore 5 jours en aout : le 5 aout."
+  },
+  {
+   "id": "ceb-2021-l6-q7",
+   "livret": 6,
+   "numero": "7",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un client achète 2 boites de nourriture (8,50 € pièce), 1 flacon O'Pure (3,90 €), 5 platys (13,50 € les 5) et 1 scalaire (6,90 €). Il reçoit une ristourne de 10 %. Combien paie-t-il (en €) ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "documents": [
+    "aqua"
+   ],
+   "reponse": 37.17,
+   "tolerance": 0.005,
+   "unite": "€",
+   "explication": "17 + 3,90 + 13,50 + 6,90 = 41,30 € ; 10 % = 4,13 € ; 41,30 − 4,13 = 37,17 €."
+  },
+  {
+   "id": "ceb-2021-l6-q8",
+   "livret": 6,
+   "numero": "8",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Scalaires : 18,90 € pour 3 chez Aqua Passion, 31 € pour 5 chez Dori. Quelle est la différence de prix pour 15 poissons (en €) ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "reponse": 1.5,
+   "tolerance": 0.005,
+   "unite": "€",
+   "explication": "Aqua Passion : 5 × 18,90 = 94,50 €. Dori : 3 × 31 = 93 €. Différence : 1,50 €."
+  },
+  {
+   "id": "ceb-2021-l6-q9",
+   "livret": 6,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Platy : 13,50 € pour 5. Complète le tableau.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "documents": [
+    "aqua"
+   ],
+   "texte": "1 poisson : {1} €  ·  {2} poissons : 8,10 €  ·  10 poissons : {3} €",
+   "reponse": [
+    [
+     "2,70",
+     "2,7"
+    ],
+    [
+     "3"
+    ],
+    [
+     "27",
+     "27,00"
+    ]
+   ],
+   "explication": "13,50 : 5 = 2,70 € ; 8,10 : 2,70 = 3 ; 2 × 13,50 = 27 €."
+  },
+  {
+   "id": "ceb-2021-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Observe les récipients : 1 (≈ 210 ml), 2 (≈ 0,5 l), 3 (≈ 1,75 dl), 4 (≈ 0,3 l).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "documents": [
+    "capa"
+   ],
+   "texte": "Le récipient qui contient la plus grande quantité : n° {1}  ·  la plus petite quantité : n° {2}",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "3"
+    ]
+   ],
+   "explication": "En ml : 210, 500, 175, 300. Le plus : n° 2 ; le moins : n° 3."
+  },
+  {
+   "id": "ceb-2021-l6-q13a",
+   "livret": 6,
+   "numero": "13a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Le bas du chapeau est un cercle de 18 cm de diamètre. Quelle longueur de ruban faut-il environ pour en faire le tour ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-cercle",
+   "choix": [
+    "18 cm",
+    "25 cm",
+    "36 cm",
+    "57 cm",
+    "75 cm"
+   ],
+   "reponse": 3,
+   "explication": "Circonférence ≈ 3,14 × 18 ≈ 56,5 cm, donc environ 57 cm."
+  },
+  {
+   "id": "ceb-2021-l6-q13b",
+   "livret": 6,
+   "numero": "13b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Combien de carrés entiers de 25 cm de côté peut-on découper dans une feuille de 50 cm sur 70 cm ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-aires-perimetres",
+   "reponse": 4,
+   "explication": "50 : 25 = 2 et 70 : 25 = 2 (reste 20 cm) : 2 × 2 = 4 carrés."
+  },
+  {
+   "id": "ceb-2021-l6-q15",
+   "livret": 6,
+   "numero": "15",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Au parc à conteneurs, on peut déposer 1 m³ par jour. Combien de caisses de 50 cm × 50 cm × 25 cm peut-on déposer au maximum ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "reponse": 16,
+   "unite": "caisses",
+   "explication": "Une caisse : 0,5 × 0,5 × 0,25 = 0,0625 m³. 1 : 0,0625 = 16 caisses."
+  },
+  {
+   "id": "ceb-2021-l6-q17a",
+   "livret": 6,
+   "numero": "17a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Stages d'été du lundi 6 juillet 2020 au vendredi 14 aout, une semaine chacun. Le théâtre a lieu la 4e ou la 5e semaine. Quelle semaine est possible ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "du 20 au 24 juillet",
+    "du 27 au 31 juillet",
+    "du 10 au 14 aout",
+    "du 13 au 17 juillet"
+   ],
+   "reponse": 1,
+   "explication": "Semaines : 6-10, 13-17, 20-24, 27-31 juillet (4e), 3-7 aout (5e)."
+  },
+  {
+   "id": "ceb-2021-l6-q17b",
+   "livret": 6,
+   "numero": "17b",
+   "domaine": "ma.grandeurs",
+   "type": "texte_court",
+   "enonce": "La kermesse a lieu le 4e dimanche d'aout 2020 (le 2 aout 2020 est un dimanche). Écris sa date (jour/mois/année).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "reponse": [
+    "23/08/2020",
+    "23/8/2020",
+    "23 aout 2020",
+    "23 août 2020",
+    "23-08-2020"
+   ],
+   "explication": "Dimanches d'aout : 2, 9, 16, 23. Le 4e est le 23/08/2020."
+  },
+  {
+   "id": "ceb-2021-l6-q17c",
+   "livret": 6,
+   "numero": "17c",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Un stage dure de 8 h 45 à 16 h 30. Combien de temps dure une journée ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "texte": "{1} h {2} min",
+   "reponse": [
+    [
+     "7"
+    ],
+    [
+     "45"
+    ]
+   ],
+   "explication": "De 8 h 45 à 16 h 45 : 8 h ; moins 15 min : 7 h 45."
+  },
+  {
+   "id": "ceb-2021-l6-q17d",
+   "livret": 6,
+   "numero": "17d",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Le 31 aout 2020 est un lundi. Le 1er septembre 2020 sera un…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "lundi",
+    "mardi",
+    "mercredi",
+    "dimanche"
+   ],
+   "reponse": 1,
+   "explication": "Le lendemain d'un lundi est un mardi."
+  },
+  {
+   "id": "ceb-2021-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Calcule la distance entre deux poteaux du viaduc.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Colorie la même charge de batterie.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Écris le pourcentage et la fraction de charge des batteries.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q14",
+   "livret": 6,
+   "numero": "14",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Estime la hauteur des deux arbres.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q16",
+   "livret": 6,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Géoplan : aire et périmètre de figures.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q18",
+   "livret": 6,
+   "numero": "18",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Lis la mesure de la seringue, de la balle et du rouleau.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l6-q19",
+   "livret": 6,
+   "numero": "19",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Verres de jus : fractions.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l7-q1",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel titre pourrait convenir à l'histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "choix": [
+    "Une drôle d'histoire d'amour entre des grands-parents",
+    "Les oiseaux vivent bien mieux en liberté !",
+    "Comment garder ses oiseaux en bonne santé ?",
+    "L'histoire de Brigitte, une petite fille espiègle",
+    "Mon grand-père, ce héros !"
+   ],
+   "reponse": 1,
+   "explication": "La grand-mère fait comprendre à Brigitte qu'un oiseau doit vivre libre."
+  },
+  {
+   "id": "ceb-2021-l7-q2",
+   "livret": 7,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« …un verdier un peu espiègle que, le matin, elle était toute surprise de ne pas trouver perché au bout de sa jambe de plâtre. » Quel oiseau Brigitte était-elle surprise de ne pas trouver ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "gm-1"
+   ],
+   "choix": [
+    "un verdier",
+    "un rouge-gorge",
+    "un verdier et une pie",
+    "une pie"
+   ],
+   "reponse": 0,
+   "explication": "Le pronom « que » reprend « un verdier »."
+  },
+  {
+   "id": "ceb-2021-l7-q3",
+   "livret": 7,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Qui parle ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "lignes": [
+    "« Mais il fait froid ! »",
+    "« Il ne fera pas toujours froid. »",
+    "« J'aimais bien entendre chanter les chardonnerets […]. »"
+   ],
+   "colonnes": [
+    "Le grand-père",
+    "Brigitte",
+    "La grand-mère"
+   ],
+   "reponse": [
+    1,
+    2,
+    2
+   ],
+   "explication": "Brigitte veut garder l'oiseau au chaud ; la grand-mère lui répond ; puis elle raconte ce qu'elle a dit au grand-père."
+  },
+  {
+   "id": "ceb-2021-l7-q4",
+   "livret": 7,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Argument de Brigitte : « Les oiseaux seraient bien dans la cuisine. » La grand-mère est-elle d'accord ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1"
+   ],
+   "choix": [
+    "Oui",
+    "Non : « Les oiseaux sont bien dans les arbres ! […] dans le ciel, quand ils volent. »",
+    "Non : « Il n'est pas question d'avoir un chat dans la maison. »"
+   ],
+   "reponse": 1,
+   "explication": "Pour la grand-mère, les oiseaux sont bien en liberté."
+  },
+  {
+   "id": "ceb-2021-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Tu es une égoïste… comme les autres » : « les autres », ce sont…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "gm-1"
+   ],
+   "choix": [
+    "ceux qui soignent les oiseaux.",
+    "ceux qui n'ont jamais été faits prisonniers.",
+    "ceux qui mettent les oiseaux en cage.",
+    "ceux qui aiment les chardonnerets."
+   ],
+   "reponse": 2,
+   "explication": "Comme les gens qui enferment les oiseaux pour leur propre plaisir."
+  },
+  {
+   "id": "ceb-2021-l7-q6",
+   "livret": 7,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Pourquoi la grand-mère dit-elle à Brigitte qu'elle est « égoïste » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1"
+   ],
+   "reponseModele": "Parce que Brigitte veut un oiseau pour son propre plaisir, sans penser au bonheur de l'oiseau."
+  },
+  {
+   "id": "ceb-2021-l7-q7",
+   "livret": 7,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Brigitte était affreusement vexée. » Pourquoi ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1"
+   ],
+   "reponseModele": "Parce que sa grand-mère l'a traitée d'égoïste (et a refusé son idée)."
+  },
+  {
+   "id": "ceb-2021-l7-q8",
+   "livret": 7,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Un lecteur a compris : « Brigitte a froid dans le dos car il ne fait pas chaud dans la pièce. » A-t-il bien compris ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-expressions",
+   "documents": [
+    "gm-2"
+   ],
+   "choix": [
+    "Oui",
+    "Non : « La température n'était pas en cause » ; elle a froid dans le dos parce qu'elle a peur d'être mal jugée."
+   ],
+   "reponse": 1,
+   "explication": "« Avoir froid dans le dos », c'est avoir peur."
+  },
+  {
+   "id": "ceb-2021-l7-q9",
+   "livret": 7,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "« […] ça n'est pas pour lui que tu veux un oiseau : c'est pour toi. » Que remplacent les pronoms ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "gm-1"
+   ],
+   "texte": "lui : {1}  ·  toi : {2}  ·  tu : {3}",
+   "reponse": [
+    [
+     "l'oiseau",
+     "un oiseau",
+     "oiseau"
+    ],
+    [
+     "Brigitte"
+    ],
+    [
+     "Brigitte"
+    ]
+   ],
+   "explication": "« lui » = l'oiseau ; « toi » et « tu » = Brigitte, à qui parle la grand-mère."
+  },
+  {
+   "id": "ceb-2021-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Son bonheur, tu t'en fiches : c'est le tien qui t'intéresse. Et d'ailleurs, ce n'est pas un oiseau que tu veux : c'est un jouet. » « Et d'ailleurs » peut être remplacé par…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "gm-1"
+   ],
+   "choix": [
+    "C'est pourquoi,",
+    "De plus,",
+    "Par exemple,",
+    "Au contraire,",
+    "Et pourtant,"
+   ],
+   "reponse": 1,
+   "explication": "« D'ailleurs » ajoute un argument : « De plus »."
+  },
+  {
+   "id": "ceb-2021-l7-q11",
+   "livret": 7,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Quel est le temps de ces verbes du texte ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-conjugaison-temps-simples",
+   "documents": [
+    "gm-2"
+   ],
+   "lignes": [
+    "elle s'était mariée",
+    "ils avaient installé",
+    "ils élevaient",
+    "cela se faisait",
+    "il chante"
+   ],
+   "colonnes": [
+    "Présent",
+    "Imparfait",
+    "Passé simple",
+    "Plus-que-parfait"
+   ],
+   "reponse": [
+    3,
+    3,
+    1,
+    1,
+    0
+   ],
+   "explication": "Plus-que-parfait = auxiliaire à l'imparfait + participe passé. « élevaient », « faisait » : imparfait ; « chante » : présent."
+  },
+  {
+   "id": "ceb-2021-l7-q12",
+   "livret": 7,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Le chardonneret s'élève facilement » veut dire…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "gm-2"
+   ],
+   "choix": [
+    "que le chardonneret se lève tous les matins.",
+    "que le chardonneret accepte facilement la vie en captivité.",
+    "que le chardonneret s'envole facilement dans les airs.",
+    "que le chardonneret aime les graines de chanvre."
+   ],
+   "reponse": 1,
+   "explication": "« Élever » un animal, c'est le faire grandir chez soi."
+  },
+  {
+   "id": "ceb-2021-l7-q13",
+   "livret": 7,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Nous étions heureux. Et puis il y a eu la guerre. » Quel groupe de mots relie ces deux phrases ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "gm-2"
+   ],
+   "choix": [
+    "Et puis",
+    "il y a eu",
+    "la guerre",
+    "Nous étions"
+   ],
+   "reponse": 0,
+   "explication": "« Et puis » est un organisateur (connecteur) de temps."
+  },
+  {
+   "id": "ceb-2021-l7-q14",
+   "livret": 7,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Réel ou imaginaire ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "lignes": [
+    "« c'est comme si tu lui disais : Entre, mon ami ! Un festin est servi à l'intérieur ! »",
+    "L'hirondelle cimente son nid avec la boue des chemins et part l'hiver dans les pays chauds."
+   ],
+   "colonnes": [
+    "Réel",
+    "Imaginaire"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "La première est une comparaison inventée par la grand-mère ; la seconde décrit la vraie vie de l'hirondelle."
+  },
+  {
+   "id": "ceb-2021-l7-q15",
+   "livret": 7,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Range ces faits dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "elements": [
+    "Les grands-parents élèvent des chardonnerets dans une cage.",
+    "Le grand-père est emprisonné en Allemagne.",
+    "Le grand-père suspend la cage dans la grange.",
+    "La grand-mère raconte l'histoire de la cage à Brigitte."
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "explication": "Mariage et chardonnerets, puis la guerre et la captivité, le retour (la cage à la grange), enfin le récit à Brigitte."
+  },
+  {
+   "id": "ceb-2021-l7-q16",
+   "livret": 7,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "« Elle fait une bise au monsieur qui est habillé en soldat. » Remplace par le personnage du texte.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "gm-3"
+   ],
+   "texte": "Elle = {1}  ·  le monsieur habillé en soldat = {2}",
+   "reponse": [
+    [
+     "Brigitte"
+    ],
+    [
+     "le grand-père",
+     "grand-père",
+     "son grand-père",
+     "le grand-pere",
+     "grand-pere"
+    ]
+   ],
+   "explication": "Brigitte regarde les photos de son grand-père soldat."
+  },
+  {
+   "id": "ceb-2021-l7-q17",
+   "livret": 7,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Pourquoi le grand-père a-t-il rangé la cage dans la grange en rentrant de la guerre ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-2",
+    "gm-3"
+   ],
+   "choix": [
+    "Il pensait que la grand-mère ne voulait plus entendre chanter les oiseaux.",
+    "Il n'y avait plus de graines de chanvre.",
+    "Il ne voulait plus faire vivre aux oiseaux ce qu'il avait vécu lui-même.",
+    "Il préférait s'occuper de pigeons voyageurs."
+   ],
+   "reponse": 2,
+   "explication": "Prisonnier derrière les barbelés, il a compris ce que vit un oiseau en cage."
+  },
+  {
+   "id": "ceb-2021-l7-q18",
+   "livret": 7,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Que permet de dire le texte ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "lignes": [
+    "L'hirondelle vole bas quand il risque de pleuvoir.",
+    "Brigitte déteste les histoires de sa grand-mère.",
+    "Le grand-père est resté cinq ans en captivité."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas savoir"
+   ],
+   "reponse": [
+    2,
+    1,
+    0
+   ],
+   "explication": "Le texte ne parle pas du vol bas. « Ces histoires vraies ravissaient Brigitte. » « Il est resté cinq ans dans un camp. »"
+  },
+  {
+   "id": "ceb-2021-l7-q19",
+   "livret": 7,
+   "numero": "19",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Que fait l'hirondelle au printemps ? Écris deux actions du texte.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "gm-3"
+   ],
+   "reponseModele": "Elle cimente son nid avec la boue des chemins ; elle retrouve son nid et y fait une nouvelle nichée."
+  },
+  {
+   "id": "ceb-2021-l7-q20",
+   "livret": 7,
+   "numero": "20",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Quelle information concerne chaque oiseau ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "gm-3"
+   ],
+   "lignes": [
+    "Le pigeon voyageur",
+    "Le geai"
+   ],
+   "colonnes": [
+    "Il utilise de la boue pour son nid.",
+    "Il parcourt de grandes distances pour rentrer chez lui.",
+    "Il brise parfois ses œufs et part vivre ailleurs.",
+    "Il fonce contre son grillage jusqu'à la mort."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Pigeon : de Toulouse à Lille en une journée. Geai : casse ses œufs si son nid est découvert."
+  },
+  {
+   "id": "ceb-2021-l7-q21",
+   "livret": 7,
+   "numero": "21",
+   "domaine": "fr.grammaire",
+   "type": "grille",
+   "enonce": "Quelle est la structure de chaque phrase ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "lignes": [
+    "Elle regarde les photos.",
+    "Tu es une égoïste.",
+    "Elle fait une bise au monsieur qui est habillé en soldat."
+   ],
+   "colonnes": [
+    "S – V – CD – CI",
+    "S – V – CD",
+    "CC – S – V – CC",
+    "S – V – CC – CD",
+    "S – V – attribut"
+   ],
+   "reponse": [
+    1,
+    4,
+    0
+   ],
+   "explication": "« les photos » : CD. « une égoïste » : attribut (verbe être). « une bise » : CD ; « au monsieur… » : CI."
+  },
+  {
+   "id": "ceb-2021-l7-q22",
+   "livret": 7,
+   "numero": "22",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Schéma narratif (l'action = E, la résolution = B). Quelle phrase correspond à chaque étape ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "lignes": [
+    "La situation initiale",
+    "L'élément déclencheur",
+    "La situation finale"
+   ],
+   "colonnes": [
+    "A. Brigitte veut élever un oiseau dans une cage.",
+    "C. Brigitte est en convalescence chez sa grand-mère et rêve d'oiseaux.",
+    "D. Brigitte a compris pourquoi les oiseaux sont mieux en liberté."
+   ],
+   "reponse": [
+    1,
+    0,
+    2
+   ],
+   "explication": "Situation initiale : C ; déclencheur : A ; situation finale : D."
+  },
+  {
+   "id": "ceb-2021-l7-q23",
+   "livret": 7,
+   "numero": "23",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle morale peux-tu tirer de cette histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "choix": [
+    "Il faut toujours écouter ses parents avant d'agir.",
+    "Il faut penser aussi au bonheur des autres avant d'agir.",
+    "Il faut essayer de ne pas fâcher ses grands-parents.",
+    "Il est inutile de s'acharner si on n'obtient pas ce que l'on veut.",
+    "Il est inutile de conserver des objets qui ne servent plus."
+   ],
+   "reponse": 1,
+   "explication": "Brigitte pensait à son plaisir, pas au bonheur de l'oiseau."
+  },
+  {
+   "id": "ceb-2021-l7-q24",
+   "livret": 7,
+   "numero": "24",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention principale de l'auteur ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "gm-1",
+    "gm-2",
+    "gm-3"
+   ],
+   "choix": [
+    "Informer sur les différentes variétés d'oiseaux.",
+    "Persuader qu'il est nécessaire d'élever des oiseaux.",
+    "Donner du plaisir avec une histoire émouvante.",
+    "Donner les règles à suivre pour élever des oiseaux."
+   ],
+   "reponse": 2,
+   "explication": "C'est un extrait de roman : un récit émouvant."
+  },
+  {
+   "id": "ceb-2021-l7-q25",
+   "livret": 7,
+   "numero": "25",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "D'où est tirée cette histoire ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "gm-3"
+   ],
+   "texte": "Titre du livre : {1}  ·  Auteur : {2}",
+   "reponse": [
+    [
+     "La grand-mère aux oiseaux",
+     "la grand-mère aux oiseaux",
+     "La grand-mere aux oiseaux"
+    ],
+    [
+     "Georges Coulonges",
+     "Coulonges"
+    ]
+   ],
+   "explication": "Georges Coulonges, La grand-mère aux oiseaux, Pocket, 1996."
+  },
+  {
+   "id": "ceb-2021-l8-q2a",
+   "livret": 8,
+   "numero": "2a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 99 × 85, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "175",
+    "850",
+    "8 500",
+    "9 000"
+   ],
+   "reponse": 2,
+   "explication": "100 × 85 = 8 500."
+  },
+  {
+   "id": "ceb-2021-l8-q2b",
+   "livret": 8,
+   "numero": "2b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 1 213 : 4, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "250",
+    "300",
+    "350",
+    "4 800"
+   ],
+   "reponse": 1,
+   "explication": "1 200 : 4 = 300."
+  },
+  {
+   "id": "ceb-2021-l8-q2c",
+   "livret": 8,
+   "numero": "2c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 15 896 − 7 985, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "7 000",
+    "8 000",
+    "22 000",
+    "24 000"
+   ],
+   "reponse": 1,
+   "explication": "16 000 − 8 000 = 8 000."
+  },
+  {
+   "id": "ceb-2021-l8-q2d",
+   "livret": 8,
+   "numero": "2d",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 2 537 + 10 098, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "7 600",
+    "8 000",
+    "10 250",
+    "12 600"
+   ],
+   "reponse": 3,
+   "explication": "2 500 + 10 100 = 12 600."
+  },
+  {
+   "id": "ceb-2021-l8-q3a",
+   "livret": 8,
+   "numero": "3a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 15 000 − 5",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 14995,
+   "tolerance": 0.0001,
+   "explication": "15 000 − 5 = 14995."
+  },
+  {
+   "id": "ceb-2021-l8-q3b",
+   "livret": 8,
+   "numero": "3b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 3,1 × 1",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 3.1,
+   "tolerance": 0.0001,
+   "explication": "3,1 × 1 = 3,1."
+  },
+  {
+   "id": "ceb-2021-l8-q3c",
+   "livret": 8,
+   "numero": "3c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 1,12 + 1,2",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 2.32,
+   "tolerance": 0.0001,
+   "explication": "1,12 + 1,20 = 2,32."
+  },
+  {
+   "id": "ceb-2021-l8-q3d",
+   "livret": 8,
+   "numero": "3d",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 1 736,8 − 381,6",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 1355.2,
+   "tolerance": 0.0001,
+   "explication": "1 736,8 − 381,6 = 1355,2."
+  },
+  {
+   "id": "ceb-2021-l8-q3e",
+   "livret": 8,
+   "numero": "3e",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 108 : … = 12",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 9,
+   "tolerance": 0.0001,
+   "explication": "12 × 9 = 108."
+  },
+  {
+   "id": "ceb-2021-l8-q3f",
+   "livret": 8,
+   "numero": "3f",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 0,8 × 600",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 480,
+   "tolerance": 0.0001,
+   "explication": "8 × 60 = 480."
+  },
+  {
+   "id": "ceb-2021-l8-q6a",
+   "livret": 8,
+   "numero": "6a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Dans 65 982,1, quel rang occupe le chiffre 8 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "choix": [
+    "Les dizaines de mille",
+    "Les dixièmes",
+    "Les dizaines",
+    "Les centaines"
+   ],
+   "reponse": 2,
+   "explication": "6 DM, 5 UM, 9 C, 8 D, 2 U, 1 d."
+  },
+  {
+   "id": "ceb-2021-l8-q6b",
+   "livret": 8,
+   "numero": "6b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Combien y a-t-il de centaines dans 65 982,1 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "choix": [
+    "65 982",
+    "659",
+    "982,1",
+    "9"
+   ],
+   "reponse": 1,
+   "explication": "Il y a 659 centaines (65 900 = 659 × 100). Le chiffre des centaines est 9, mais le nombre de centaines est 659."
+  },
+  {
+   "id": "ceb-2021-l8-q6c",
+   "livret": 8,
+   "numero": "6c",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Place la virgule dans 659821 pour lire : six-cent-cinquante-neuf unités et huit-cent-vingt-et-un millièmes.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "reponse": [
+    "659,821"
+   ],
+   "explication": "659 unités, 821 millièmes : 659,821."
+  },
+  {
+   "id": "ceb-2021-l8-q7",
+   "livret": 8,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète ces opérations.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "840 : 7 = (700 + {1}) : 7  ·  3 × 71 × 20 = 20 × 71 × {2}  ·  24 × 150 = {3} × 300  ·  3 627 − 1 995 = {4} − 2 000  ·  7,92 + 18 + 5,08 + 82 = 100 + {5}  ·  79 × 98 = (79 × 100) − (79 × {6})",
+   "reponse": [
+    [
+     "140"
+    ],
+    [
+     "3"
+    ],
+    [
+     "12"
+    ],
+    [
+     "3632",
+     "3 632"
+    ],
+    [
+     "13"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "840 − 700 = 140 ; commutativité ; 24 : 2 et 150 × 2 ; on ajoute 5 aux deux termes ; 7,92 + 5,08 = 13 et 18 + 82 = 100 ; 98 = 100 − 2."
+  },
+  {
+   "id": "ceb-2021-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Dans la multiplication posée 41 × 72 : 82, puis 2 870, total 2 952.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "82 est le résultat de 41 × {1}  ·  2 870 est le résultat de 41 × {2}  ·  2 952 est le résultat de 41 × {3}",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "70"
+    ],
+    [
+     "72"
+    ]
+   ],
+   "explication": "41 × 72 = 41 × 2 + 41 × 70 = 82 + 2 870 = 2 952."
+  },
+  {
+   "id": "ceb-2021-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "10 = {1} − 90  ·  10 = 300 : {2}  ·  10 = {3} × 1/5  ·  100 = {4} − 22  ·  100 = 55,55 + {5}  ·  100 = 1 200 : {6}  ·  100 = 1/4 de {7}",
+   "reponse": [
+    [
+     "100"
+    ],
+    [
+     "30"
+    ],
+    [
+     "50"
+    ],
+    [
+     "122"
+    ],
+    [
+     "44,45"
+    ],
+    [
+     "12"
+    ],
+    [
+     "400"
+    ]
+   ],
+   "explication": "100 − 90 ; 300 : 30 ; 50 : 5 ; 122 − 22 ; 100 − 55,55 = 44,45 ; 1 200 : 12 ; 400 : 4."
+  },
+  {
+   "id": "ceb-2021-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Place le signe qui convient.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "lignes": [
+    "3/5 … 0,35",
+    "1/4 … 0,250",
+    "3/2 … 1",
+    "1/5 … 0,2",
+    "1/6 … 6 centièmes"
+   ],
+   "colonnes": [
+    "<",
+    "=",
+    ">"
+   ],
+   "reponse": [
+    2,
+    1,
+    2,
+    1,
+    2
+   ],
+   "explication": "3/5 = 0,6 ; 1/4 = 0,25 ; 3/2 = 1,5 ; 1/5 = 0,2 ; 1/6 ≈ 0,17 > 0,06."
+  },
+  {
+   "id": "ceb-2021-l8-q13",
+   "livret": 8,
+   "numero": "13",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Range ces résultats du moins élevé au plus élevé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "24/30",
+    "30/50",
+    "7/10",
+    "18/20"
+   ],
+   "reponse": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "explication": "30/50 = 0,6 ; 7/10 = 0,7 ; 24/30 = 0,8 ; 18/20 = 0,9."
+  },
+  {
+   "id": "ceb-2021-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète en gardant le même résultat (compensation).",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "0,5 × 6 = 1 × {1}  ·  10 000 : 125 = {2} : 1 000  ·  2 765 − 621 = {3} − 600  ·  79,6 + 12,7 = 80 + {4}",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "80000",
+     "80 000"
+    ],
+    [
+     "2744",
+     "2 744"
+    ],
+    [
+     "12,3"
+    ]
+   ],
+   "explication": "× 2 et : 2 ; les deux termes × 8 ; on retire 21 aux deux termes ; + 0,4 et − 0,4."
+  },
+  {
+   "id": "ceb-2021-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris l'opération réciproque (exemple : 18 + 3 = 21 donc 21 − 3 = 18).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "17,5 − 3,2 = 14,3 donc 14,3 + 3,2 = {1}  ·  3,6 × 50 = 180 donc 180 : 50 = {2}",
+   "reponse": [
+    [
+     "17,5"
+    ],
+    [
+     "3,6"
+    ]
+   ],
+   "explication": "L'addition est la réciproque de la soustraction ; la division, de la multiplication."
+  },
+  {
+   "id": "ceb-2021-l8-q17a",
+   "livret": 8,
+   "numero": "17a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "326 × 75 = ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "326 × (25 × 3)",
+    "326 × (70 × 5)",
+    "(3 × 26) × 75"
+   ],
+   "reponse": 0,
+   "explication": "75 = 25 × 3."
+  },
+  {
+   "id": "ceb-2021-l8-q17b",
+   "livret": 8,
+   "numero": "17b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "16 × 123 = ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "(10 × 6) × 123",
+    "(8 × 8) × 123",
+    "(4 × 4) × 123"
+   ],
+   "reponse": 2,
+   "explication": "16 = 4 × 4."
+  },
+  {
+   "id": "ceb-2021-l8-q18",
+   "livret": 8,
+   "numero": "18",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Parmi les nombres de 1 à 15 :",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "texte": "un multiple de 6 : {1}  ·  un diviseur de 24 et de 15 : {2}  ·  le seul nombre à deux chiffres multiple de 5 et diviseur de 10 : {3}",
+   "reponse": [
+    [
+     "6",
+     "12"
+    ],
+    [
+     "1",
+     "3"
+    ],
+    [
+     "10"
+    ]
+   ],
+   "explication": "Multiples de 6 : 6, 12. Diviseurs communs de 24 et 15 : 1, 3. 10 est multiple de 5 et divise 10."
+  },
+  {
+   "id": "ceb-2021-l8-q19",
+   "livret": 8,
+   "numero": "19",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète avec : moitié, double, tiers, triple, quart, dixième.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions",
+   "texte": "1,2 est le {1} de 0,6  ·  0,4 est le {2} de 1,2  ·  0,3 est le {3} de 1,2  ·  1,2 est le {4} de 12",
+   "reponse": [
+    [
+     "double"
+    ],
+    [
+     "tiers"
+    ],
+    [
+     "quart"
+    ],
+    [
+     "dixième",
+     "dixieme"
+    ]
+   ],
+   "explication": "0,6 × 2 = 1,2 ; 1,2 : 3 = 0,4 ; 1,2 : 4 = 0,3 ; 12 : 10 = 1,2."
+  },
+  {
+   "id": "ceb-2021-l8-q20",
+   "livret": 8,
+   "numero": "20",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "3 934 : 7 = 562. Quelle démarche ne permet PAS de vérifier ce résultat ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "choix": [
+    "562 × 7",
+    "3 500 : 7, 420 : 7, 14 : 7, puis on additionne les trois quotients",
+    "540 : 7, 21 : 7, puis on ajoute 1",
+    "2 × 7, 60 × 7, 500 × 7, puis on additionne les trois produits"
+   ],
+   "reponse": 2,
+   "explication": "3 500 + 420 + 14 = 3 934 et 7 × 562 = 3 934 fonctionnent ; 540 et 21 ne décomposent pas 3 934."
+  },
+  {
+   "id": "ceb-2021-l8-q21",
+   "livret": 8,
+   "numero": "21",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Réglette 1 × 5 = 5, plaquette 5 × 5 = 25, cube 5 × 5 × 5 = 125. Même principe avec 8 :",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "texte": "réglette 1 × 8 = 8  ·  plaquette : {1}  ·  cube : {2}",
+   "reponse": [
+    [
+     "64",
+     "8 × 8 = 64",
+     "8x8=64"
+    ],
+    [
+     "512",
+     "8 × 8 × 8 = 512"
+    ]
+   ],
+   "explication": "8 × 8 = 64 et 8 × 8 × 8 = 512."
+  },
+  {
+   "id": "ceb-2021-l8-q1",
+   "livret": 8,
+   "numero": "1",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Calcul mental dicté.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q4",
+   "livret": 8,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Abaque : écris le nombre et ajoute des jetons.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Situe 0,5 sur les droites graduées.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Compte les voitures du parking.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q11",
+   "livret": 8,
+   "numero": "11",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Rouleaux de tickets : nombre de visiteurs du musée.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Nombre de clémentines dans la caissette.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q22",
+   "livret": 8,
+   "numero": "22",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète la table d'addition des décimaux.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l8-q23",
+   "livret": 8,
+   "numero": "23",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Colorie les produits égaux au produit grisé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q1",
+   "livret": 9,
+   "numero": "1",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Quel sens ou quel organe ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "texte": "Entendre le maïs sauter : l'{1}  ·  Sentir le parfum du popcorn : l'{2}  ·  Froid, rugueux : organe = la {3}  ·  Sucré, acide : organe = la {4}",
+   "reponse": [
+    [
+     "ouïe",
+     "ouie"
+    ],
+    [
+     "odorat"
+    ],
+    [
+     "peau"
+    ],
+    [
+     "langue"
+    ]
+   ],
+   "explication": "Ouïe, odorat ; le toucher par la peau ; le goût par la langue."
+  },
+  {
+   "id": "ceb-2021-l9-q2a",
+   "livret": 9,
+   "numero": "2a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quelle expérience teste chaque hypothèse ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "veg-a",
+    "veg-b",
+    "veg-c"
+   ],
+   "lignes": [
+    "Pour son développement, la plante a besoin de sels minéraux.",
+    "Pour germer, une graine a besoin d'eau.",
+    "Pour se développer, une plante a besoin de lumière."
+   ],
+   "colonnes": [
+    "Expérience A (arrosage)",
+    "Expérience B (lumière)",
+    "Expérience C (sels minéraux)"
+   ],
+   "reponse": [
+    2,
+    0,
+    1
+   ],
+   "explication": "A compare arrosé / non arrosé ; B lumière / obscurité ; C avec / sans sels minéraux."
+  },
+  {
+   "id": "ceb-2021-l9-q2b",
+   "livret": 9,
+   "numero": "2b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Pourquoi une plante peut-elle pousser sur un mur ? Coche les trois bonnes réponses.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "veg-a"
+   ],
+   "choix": [
+    "de l'eau s'est infiltrée dans le mur.",
+    "il y a de la terre à l'intérieur du mur.",
+    "le mur donne de la chaleur.",
+    "le mur contient des sels minéraux.",
+    "le mur est exposé à la lumière.",
+    "le mur a été construit sur les racines de la plante."
+   ],
+   "reponse": [
+    0,
+    3,
+    4
+   ],
+   "explication": "Les expériences montrent les besoins : eau, sels minéraux et lumière."
+  },
+  {
+   "id": "ceb-2021-l9-q3b",
+   "livret": 9,
+   "numero": "3b",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Accouplement, gestation, mise bas, allaitement, sevrage : comment appelle-t-on les animaux qui ont ce cycle de vie ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "cerf"
+   ],
+   "choix": [
+    "Des oiseaux",
+    "Des insectes",
+    "Des amphibiens",
+    "Des mammifères"
+   ],
+   "reponse": 3,
+   "explication": "Les petits se développent dans le ventre et tètent : ce sont des mammifères."
+  },
+  {
+   "id": "ceb-2021-l9-q3c",
+   "livret": 9,
+   "numero": "3c",
+   "domaine": "sc.vivant",
+   "type": "texte_court",
+   "enonce": "Écris le nom d'un animal du portfolio (animaux des forêts) qui a le même cycle de vie que le cerf.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "foret"
+   ],
+   "reponse": [
+    "sanglier",
+    "le sanglier",
+    "renard",
+    "le renard",
+    "loir gris",
+    "le loir gris",
+    "loir",
+    "belette",
+    "la belette",
+    "biche"
+   ],
+   "explication": "Les mammifères : sanglier, renard, loir gris, belette."
+  },
+  {
+   "id": "ceb-2021-l9-q3d",
+   "livret": 9,
+   "numero": "3d",
+   "domaine": "sc.vivant",
+   "type": "texte_court",
+   "enonce": "Accouplement, ponte, couvaison, éclosion, âge adulte : à quel animal du portfolio correspond ce cycle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "foret"
+   ],
+   "reponse": [
+    "pic épeiche",
+    "le pic épeiche",
+    "pic epeiche",
+    "pic"
+   ],
+   "explication": "La couvaison concerne les oiseaux : le pic épeiche."
+  },
+  {
+   "id": "ceb-2021-l9-q6a",
+   "livret": 9,
+   "numero": "6a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Truite, arbre, ver de terre : vivants et échanges gazeux. Pantin de bois, ballon : non vivants, pas d'échange gazeux. Écris une conclusion.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "reponseModele": "Les êtres vivants font des échanges gazeux (ils respirent) ; les non-vivants n'en font pas."
+  },
+  {
+   "id": "ceb-2021-l9-q6b",
+   "livret": 9,
+   "numero": "6b",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Un pou : échanges gazeux ? vivant ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "choix": [
+    "Échanges gazeux, vivant",
+    "Pas d'échange gazeux, vivant",
+    "Pas d'échange gazeux, non vivant"
+   ],
+   "reponse": 0,
+   "explication": "Le pou est un animal : il respire, il est vivant."
+  },
+  {
+   "id": "ceb-2021-l9-q6c",
+   "livret": 9,
+   "numero": "6c",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Coche les trois propositions qui correspondent à la définition d'un organisme vivant.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "choix": [
+    "Il parle.",
+    "Il grandit.",
+    "Il dort.",
+    "Il se reproduit.",
+    "Il se nourrit.",
+    "Il court."
+   ],
+   "reponse": [
+    1,
+    3,
+    4
+   ],
+   "explication": "Tout être vivant naît, grandit, se nourrit, se reproduit et meurt."
+  },
+  {
+   "id": "ceb-2021-l9-q7d",
+   "livret": 9,
+   "numero": "7d",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Le cloporte est plus proche du gloméris que du carabe violet. Quel attribut le justifie ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "jardin"
+   ],
+   "choix": [
+    "Bouche, yeux",
+    "Squelette externe, pattes articulées",
+    "3 paires de pattes articulées",
+    "Au moins une paire de pattes articulées sur tous les segments"
+   ],
+   "reponse": 3,
+   "explication": "Le cloporte et le gloméris ont des pattes sur tous les segments ; le carabe (insecte) a 3 paires de pattes."
+  },
+  {
+   "id": "ceb-2021-l9-q8a",
+   "livret": 9,
+   "numero": "8a",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Expérience 1 (bouteille entre glaçons et eau chaude) : à quelle question répond-elle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-ecosystemes",
+   "documents": [
+    "clop-1"
+   ],
+   "choix": [
+    "Les cloportes préfèrent-ils l'obscurité ou la lumière ?",
+    "Les cloportes préfèrent-ils le froid ou la chaleur ?",
+    "Les cloportes préfèrent-ils l'humidité ou la sècheresse ?",
+    "Les cloportes préfèrent-ils vivre en groupe ou seuls ?"
+   ],
+   "reponse": 1,
+   "explication": "Seule la température change entre les deux côtés."
+  },
+  {
+   "id": "ceb-2021-l9-q8b",
+   "livret": 9,
+   "numero": "8b",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Les expériences valident-elles l'affirmation ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-ecosystemes",
+   "documents": [
+    "clop-1",
+    "clop-2"
+   ],
+   "lignes": [
+    "Les cloportes recherchent l'obscurité.",
+    "La lumière tue les cloportes.",
+    "Les cloportes fuient la chaleur.",
+    "Les cloportes meurent quand la terre est sèche."
+   ],
+   "colonnes": [
+    "Oui",
+    "Non",
+    "On ne sait pas"
+   ],
+   "reponse": [
+    0,
+    1,
+    0,
+    2
+   ],
+   "explication": "Exp. 2 : tous du côté obscur. Tous restent vivants à la lumière. Exp. 1 : 5 côté glaçons, 1 côté chaud. Aucune expérience ne teste la terre sèche."
+  },
+  {
+   "id": "ceb-2021-l9-q8c",
+   "livret": 9,
+   "numero": "8c",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Les cloportes préfèrent vivre dans un endroit…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-ecosystemes",
+   "documents": [
+    "clop-1",
+    "clop-2"
+   ],
+   "choix": [
+    "lumineux",
+    "sombre",
+    "frais",
+    "chaud"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Ils vont vers l'obscurité et vers le froid."
+  },
+  {
+   "id": "ceb-2021-l9-q9a",
+   "livret": 9,
+   "numero": "9a",
+   "domaine": "sc.energie",
+   "type": "trous",
+   "enonce": "Cuillère en bois, papier, caoutchouc : l'ampoule ne s'allume pas. Mine de crayon, pièce de cuivre, fil de fer : elle s'allume.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "texte": "Les premières matières sont des {1} électriques (elles ne laissent pas passer le courant). Les autres sont des {2} électriques.",
+   "reponse": [
+    [
+     "isolants"
+    ],
+    [
+     "conducteurs"
+    ]
+   ],
+   "explication": "Isolants : bois, papier, caoutchouc. Conducteurs : métaux, mine de crayon (graphite)."
+  },
+  {
+   "id": "ceb-2021-l9-q9b",
+   "livret": 9,
+   "numero": "9b",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Dans ce circuit, un objet empêche le courant de passer. Lequel ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "choix": [
+    "une fourchette en fer",
+    "une paire de ciseaux en fer",
+    "un crayon ordinaire taillé des deux côtés",
+    "un trombone en fer",
+    "une gomme"
+   ],
+   "reponse": 4,
+   "explication": "La gomme (caoutchouc) est isolante ; la mine de crayon conduit."
+  },
+  {
+   "id": "ceb-2021-l9-q10a",
+   "livret": 9,
+   "numero": "10a",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Des bouteilles d'eau gelées sont plus larges ou plus hautes. Que peux-tu déduire ? (deux réponses)",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "froid-1",
+    "froid-2"
+   ],
+   "choix": [
+    "L'eau à l'état solide occupe un volume plus grand qu'à l'état liquide.",
+    "L'eau à l'état solide occupe un volume plus petit qu'à l'état liquide.",
+    "L'eau à l'état liquide occupe un volume plus grand qu'à l'état solide.",
+    "L'eau à l'état liquide occupe un volume plus petit qu'à l'état solide.",
+    "L'eau occupe le même volume dans les deux états."
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "En gelant, l'eau augmente de volume."
+  },
+  {
+   "id": "ceb-2021-l9-q10b",
+   "livret": 9,
+   "numero": "10b",
+   "domaine": "sc.matiere",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "froid-1",
+    "froid-2"
+   ],
+   "texte": "Le passage de l'état liquide à l'état solide s'appelle la {1}.  ·  L'état de l'eau qui n'est pas illustré ici : l'état {2}.",
+   "reponse": [
+    [
+     "solidification",
+     "congélation",
+     "congelation"
+    ],
+    [
+     "gazeux"
+    ]
+   ],
+   "explication": "Liquide → solide : solidification. Les expériences montrent l'eau liquide et la glace, pas la vapeur."
+  },
+  {
+   "id": "ceb-2021-l9-q11a",
+   "livret": 9,
+   "numero": "11a",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Que montre l'expérience de la pièce chauffée ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "chaleur"
+   ],
+   "choix": [
+    "la pièce « a rétréci ».",
+    "la pièce « s'est élargie ».",
+    "les clous « se sont rapprochés ».",
+    "les clous « se sont écartés »."
+   ],
+   "reponse": 1,
+   "explication": "Chaude, la pièce ne passe plus : elle est devenue plus grande."
+  },
+  {
+   "id": "ceb-2021-l9-q11b",
+   "livret": 9,
+   "numero": "11b",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Lorsqu'on chauffe certains corps, leur volume augmente. Ce phénomène s'appelle…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "chaleur"
+   ],
+   "choix": [
+    "la dilatation.",
+    "la contraction.",
+    "la dilettante.",
+    "la pression."
+   ],
+   "reponse": 0,
+   "explication": "C'est la dilatation."
+  },
+  {
+   "id": "ceb-2021-l9-q3a",
+   "livret": 9,
+   "numero": "3a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Coche la représentation du cycle de vie du cerf.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q4",
+   "livret": 9,
+   "numero": "4",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Associe les organes aux appareils et les publicités aux schémas.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q5",
+   "livret": 9,
+   "numero": "5",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Place les os du rongeur et les fonctions du squelette.",
+   "points": 7,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q7a",
+   "livret": 9,
+   "numero": "7a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète le tableau de classement des animaux de la forêt.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q7b",
+   "livret": 9,
+   "numero": "7b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Entoure les chélicères.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q7c",
+   "livret": 9,
+   "numero": "7c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Donne un attribut qui distingue ces animaux de l'épeire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q7e",
+   "livret": 9,
+   "numero": "7e",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Place le gloméris, le trombidion et l'oxychilus dans les ensembles.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q9c",
+   "livret": 9,
+   "numero": "9c",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Barre la vérification incorrecte.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q12a",
+   "livret": 9,
+   "numero": "12a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Fusée : lis le tableau des décollages.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2021-l9-q12b",
+   "livret": 9,
+   "numero": "12b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Trace le bâtonnet manquant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  }
+ ]
+}
