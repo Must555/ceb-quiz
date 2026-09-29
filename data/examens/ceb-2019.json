@@ -1,0 +1,3818 @@
+{
+ "id": "ceb-2019",
+ "annee": 2019,
+ "referentiel": "socles",
+ "titre": "CEB 2019",
+ "source": "FWB, épreuve externe commune 2019 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2019-06-17",
+   "points": 25,
+   "audio": null
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2019-06-17",
+   "points": 30
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2019-06-17",
+   "points": 50
+  },
+  {
+   "n": 4,
+   "matiere": "ma",
+   "titre": "Nombres et opérations",
+   "date": "2019-06-18",
+   "points": 80
+  },
+  {
+   "n": 5,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2019-06-18",
+   "points": 60
+  },
+  {
+   "n": 6,
+   "matiere": "fr",
+   "titre": "Lire — texte informatif",
+   "date": "2019-06-20",
+   "points": 25
+  },
+  {
+   "n": 7,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2019-06-20",
+   "points": 65
+  },
+  {
+   "n": 8,
+   "matiere": "fr",
+   "titre": "Lire — texte fictionnel",
+   "date": "2019-06-21",
+   "points": 30
+  },
+  {
+   "n": 9,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2019-06-21",
+   "points": 60
+  }
+ ],
+ "documents": [
+  {
+   "id": "cycle-1",
+   "page": 2,
+   "titre": "Cycle de vie du haricot et du pommier",
+   "fichier": "assets/2019/pdf02.webp",
+   "alt": "Schéma du cycle de vie du haricot et photos du pommier (A à F)."
+  },
+  {
+   "id": "cycle-2",
+   "page": 3,
+   "titre": "Cycle de vie de la capucine",
+   "fichier": "assets/2019/pdf03.webp",
+   "alt": "Photos des étapes du cycle de vie de la capucine."
+  },
+  {
+   "id": "classif",
+   "page": 4,
+   "titre": "La classification animale",
+   "fichier": "assets/2019/pdf04.webp",
+   "alt": "Photos d'une grenouille, d'un lézard, d'un triton, d'une salamandre et d'un squelette de grenouille."
+  },
+  {
+   "id": "eau-1",
+   "page": 5,
+   "titre": "Le cycle de l'eau",
+   "fichier": "assets/2019/pdf05.webp",
+   "alt": "Évapotranspiration, condensation, précipitations, ruissèlement, infiltration, nappe phréatique, captage, château d'eau, station d'épuration."
+  },
+  {
+   "id": "eau-2",
+   "page": 6,
+   "titre": "Les états de l'eau : la salade",
+   "fichier": "assets/2019/pdf06.webp",
+   "alt": "Une salade posée sur une balance est plus légère le lendemain."
+  },
+  {
+   "id": "evap-1",
+   "page": 7,
+   "titre": "L'évaporation (1)",
+   "fichier": "assets/2019/pdf07.webp",
+   "alt": "50 cl d'eau dans des bouteilles découpées de deux façons : petite ou grande surface de contact avec l'air. La bouteille A est la référence."
+  },
+  {
+   "id": "evap-2",
+   "page": 8,
+   "titre": "L'évaporation (2)",
+   "fichier": "assets/2019/pdf08.webp",
+   "alt": "Dispositif 1 : A et B sur une table à 90 cm. Dispositif 2 : A sur une table, C sur un radiateur chaud."
+  },
+  {
+   "id": "evap-3",
+   "page": 9,
+   "titre": "L'évaporation (3)",
+   "fichier": "assets/2019/pdf09.webp",
+   "alt": "Dispositif 3 : A sur une table à 90 cm, D sur une armoire à 200 cm. Dispositif 4 : A sur un radiateur, E sur une table."
+  },
+  {
+   "id": "meteo",
+   "page": 10,
+   "titre": "Un bulletin météorologique",
+   "fichier": "assets/2019/pdf10.webp",
+   "alt": "Jeudi 17 janvier 2019 : giboulées et vent, températures, vent de 60 km/h, lever 8 h 36, coucher 17 h 08."
+  },
+  {
+   "id": "beaufort",
+   "page": 11,
+   "titre": "L'échelle de Beaufort",
+   "fichier": "assets/2019/pdf11.webp",
+   "alt": "Forces 0 à 12 : de « la fumée s'élève verticalement » à l'ouragan."
+  },
+  {
+   "id": "grue-1",
+   "page": 12,
+   "titre": "Des équilibres : la grue",
+   "fichier": "assets/2019/pdf12.webp",
+   "alt": "Une grue : flèche, contrepoids, charge, tour, base."
+  },
+  {
+   "id": "grue-2",
+   "page": 14,
+   "titre": "La grue : expériences 1 et 2",
+   "fichier": "assets/2019/pdf14.webp",
+   "alt": "Exp. 1 : plaque plus grande sous la tour → équilibre. Exp. 2 : 4 billes au fond de la tour au lieu de 2 → équilibre."
+  },
+  {
+   "id": "grue-3",
+   "page": 15,
+   "titre": "La grue : expériences 3 et 4",
+   "fichier": "assets/2019/pdf15.webp",
+   "alt": "Exp. 3 : 2 boules de plasticine en contrepoids au lieu d'1 → équilibre. Exp. 4 : flèche de 30 cm au lieu de 50 cm → équilibre."
+  },
+  {
+   "id": "loisir-1",
+   "page": 16,
+   "titre": "Loisir, vous avez dit loisir… (sommaire)",
+   "fichier": "assets/2019/pdf16.webp",
+   "alt": "Intertitres : Que signifie le mot « loisir » ? · La conquête du loisir · Quelles activités… ? · Choisir ses activités… · Enfin, pour conclure…"
+  },
+  {
+   "id": "loisir-2",
+   "page": 17,
+   "titre": "Loisir (1)",
+   "fichier": "assets/2019/pdf17.webp",
+   "alt": "Deux sens : temps libre / activité de délassement. La conquête du loisir au 20e siècle (congés payés, fin du travail des enfants). Photo : vacanciers à Heyst-sur-Mer vers 1907."
+  },
+  {
+   "id": "loisir-3",
+   "page": 18,
+   "titre": "Loisir (2)",
+   "fichier": "assets/2019/pdf18.webp",
+   "alt": "Activités physiques, intellectuelles, culturelles, de détente, créatives ; l'inactivité est parfois nécessaire ; des choix liés à l'âge."
+  },
+  {
+   "id": "loisir-4",
+   "page": 19,
+   "titre": "Loisir (3)",
+   "fichier": "assets/2019/pdf19.webp",
+   "alt": "Tableau 11 ans / 17 ans (télévision 81 % → 66 %, musique 37 % → 68,5 %, ordinateur 14,5 % → 69 %…) ; sources pour choisir ; conclusion."
+  },
+  {
+   "id": "charbon-1",
+   "page": 20,
+   "titre": "La formation du charbon",
+   "fichier": "assets/2019/pdf20.webp",
+   "alt": "Le carbonifère commence il y a environ 360 millions d'années et dure environ 60 millions d'années."
+  },
+  {
+   "id": "charbon-2",
+   "page": 21,
+   "titre": "Le charbon dans nos régions",
+   "fichier": "assets/2019/pdf21.webp",
+   "alt": "Ligne du temps : traces antiques, exploitation artisanale, exploitation industrielle grâce à la machine à vapeur (pompes), mécanisation au 19e siècle, fermetures au 20e siècle."
+  },
+  {
+   "id": "mines-1",
+   "page": 22,
+   "titre": "Les sites miniers de Wallonie vers 1930",
+   "fichier": "assets/2019/pdf22.webp",
+   "alt": "Carte des bassins houillers : 1 Grand-Hornu, 2 Bois-du-Luc, 3 Bois du Cazier, 4 Blegny-Mine ; bassin de Campine au nord."
+  },
+  {
+   "id": "mines-2",
+   "page": 23,
+   "titre": "Belgique : les provinces",
+   "fichier": "assets/2019/pdf23.webp",
+   "alt": "Carte des provinces et des régions."
+  },
+  {
+   "id": "voies",
+   "page": 24,
+   "titre": "Les voies navigables en 1953",
+   "fichier": "assets/2019/pdf24.webp",
+   "alt": "Meuse, canaux vers Anvers, les Pays-Bas, le Hainaut et la France ; aucune voie navigable vers Arlon."
+  },
+  {
+   "id": "gis-1",
+   "page": 25,
+   "titre": "Des gisements dans le monde",
+   "fichier": "assets/2019/pdf25.webp",
+   "alt": "1 mine d'or en Australie, 2 mine de diamant en Sibérie, 3 mine d'uranium au Niger."
+  },
+  {
+   "id": "gis-2",
+   "page": 26,
+   "titre": "Carte des principaux gisements",
+   "fichier": "assets/2019/pdf26.webp",
+   "alt": "Charbon, cuivre, diamant, fer, or, uranium dans le monde."
+  },
+  {
+   "id": "ue-1",
+   "page": 28,
+   "titre": "La construction de l'Union européenne (1)",
+   "fichier": "assets/2019/pdf28.webp",
+   "alt": "CECA en 1951 (6 pays), Traité de Rome en 1957 (CEE), élargissements successifs."
+  },
+  {
+   "id": "ue-2",
+   "page": 29,
+   "titre": "La construction de l'Union européenne (2)",
+   "fichier": "assets/2019/pdf29.webp",
+   "alt": "Réunification allemande (1990), Traité de Maastricht (1992), élargissements jusqu'en 2013."
+  },
+  {
+   "id": "europe",
+   "page": 30,
+   "titre": "L'Europe politique actuelle",
+   "fichier": "assets/2019/pdf30.webp",
+   "alt": "Carte des pays d'Europe."
+  },
+  {
+   "id": "terrils",
+   "page": 32,
+   "titre": "Des terrils",
+   "fichier": "assets/2019/pdf32.webp",
+   "alt": "Terril de la Fosse Cuvinot (France) et terril Albert Ier (Saint-Vaast) ; carte de la région de Saint-Vaast."
+  },
+  {
+   "id": "regions",
+   "page": 33,
+   "titre": "Des régions au fil du temps",
+   "fichier": "assets/2019/pdf33.webp",
+   "alt": "Ixelles et Chiny au 18e siècle et en 2019."
+  },
+  {
+   "id": "traces-1",
+   "page": 34,
+   "titre": "Des traces du passé (1)",
+   "fichier": "assets/2019/pdf34.webp",
+   "alt": "Document 1 : livret d'ouvrier (19e siècle)."
+  },
+  {
+   "id": "traces-2",
+   "page": 35,
+   "titre": "Des traces du passé (2)",
+   "fichier": "assets/2019/pdf35.webp",
+   "alt": "Document 2 : Hiercheur, bronze de Georges Petit. Document 3 : Mines de charbon et cokerie de Flénu, aquarelle de Van Gogh (1879)."
+  },
+  {
+   "id": "livret-1",
+   "page": 36,
+   "titre": "Le livret du mineur (1)",
+   "fichier": "assets/2019/pdf36.webp",
+   "alt": "Loi du 10 novembre 1845 ; livret délivré par la ville d'Enghien à un ouvrier né le 11 janvier 1866."
+  },
+  {
+   "id": "livret-2",
+   "page": 37,
+   "titre": "Le livret du mineur (2)",
+   "fichier": "assets/2019/pdf37.webp",
+   "alt": "Sections de Péronnes, puits Sainte-Barbe, Saint-Albert (sorti le 19 aout 1914)."
+  },
+  {
+   "id": "conte-1",
+   "page": 38,
+   "titre": "La vieille dans la bouteille (1)",
+   "fichier": "assets/2019/pdf38.webp",
+   "alt": "La vieille obtient une chaumière, puis une maison de briques, sans jamais remercier la fée."
+  },
+  {
+   "id": "conte-2",
+   "page": 39,
+   "titre": "La vieille dans la bouteille (2)",
+   "fichier": "assets/2019/pdf39.webp",
+   "alt": "Puis un manoir, le titre de duchesse, et elle devient reine."
+  },
+  {
+   "id": "conte-3",
+   "page": 40,
+   "titre": "La vieille dans la bouteille (3)",
+   "fichier": "assets/2019/pdf40.webp",
+   "alt": "Elle veut régner sur le monde entier et se retrouve dans sa bouteille. Françoise Rachmuhl, 15 contes d'Europe, Flammarion Jeunesse, 2013."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2019-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "« Une étrange rencontre » : au départ d'une image et de ce titre, invente une histoire (au moins 10 lignes) dans laquelle tu intègres la phrase : « Tout à coup, des bruits de pas résonnent derrière la porte… »",
+   "points": 30,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q10c",
+   "livret": 3,
+   "numero": "10c",
+   "domaine": "ma.geometrie",
+   "type": "numerique",
+   "enonce": "Une vitre est un quadrilatère dont trois angles mesurent 90°, 90° et 60°. Quelle est l'amplitude du quatrième angle (en degrés) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-angles",
+   "reponse": 120,
+   "unite": "°",
+   "explication": "La somme des angles d'un quadrilatère vaut 360° : 360 − 90 − 90 − 60 = 120°."
+  },
+  {
+   "id": "ceb-2019-l3-q20",
+   "livret": 3,
+   "numero": "20",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Qui suis-je ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-quadrilateres",
+   "texte": "Quadrilatère aux côtés parallèles deux à deux et tous isométriques, aux angles de même amplitude : un {1}  ·  Polygone à 3 côtés isométriques et 3 angles égaux : un {2}  ·  Polygone régulier à 6 côtés : un {3}",
+   "reponse": [
+    [
+     "carré",
+     "carre"
+    ],
+    [
+     "triangle équilatéral",
+     "triangle equilateral"
+    ],
+    [
+     "hexagone régulier",
+     "hexagone regulier"
+    ]
+   ],
+   "explication": "Carré ; triangle équilatéral ; hexagone régulier."
+  },
+  {
+   "id": "ceb-2019-l3-q17c",
+   "livret": 3,
+   "numero": "17c",
+   "domaine": "ma.geometrie",
+   "type": "texte_court",
+   "enonce": "Dans un quadrillage, on noircit les cases (J,4), (M,5), (N,8), (M,11) et (J,12). Un cercle passe par ces 5 cases. Dans quelle case se trouve son centre ? (lettre, nombre)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-cercle",
+   "reponse": [
+    "J,8",
+    "(J,8)",
+    "J8",
+    "J 8",
+    "(J ; 8)",
+    "J;8"
+   ],
+   "explication": "Le centre est à égale distance (4 cases) de J4, N8 et J12 : c'est la case (J,8)."
+  },
+  {
+   "id": "ceb-2019-l3-q1",
+   "livret": 3,
+   "numero": "1",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le plan qui correspond à la maison.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nomme les figures 1 à 4.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q3",
+   "livret": 3,
+   "numero": "3",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un trapèze, un cercle et un triangle scalène.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Croix sur les planches nécessaires pour construire la boite.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Compte les faces, sommets et arêtes des solides A et B.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Bandelettes superposées : quel quadrilatère ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Coche la construction qui correspond aux consignes.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Complète le carrelage.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q9",
+   "livret": 3,
+   "numero": "9",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Reproduis la construction agrandie.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q10a",
+   "livret": 3,
+   "numero": "10a",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nomme les figures du vitrage.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q10b",
+   "livret": 3,
+   "numero": "10b",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris la lettre d'une figure à deux paires de côtés parallèles.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace les axes de symétrie.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Achève la frise.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q13",
+   "livret": 3,
+   "numero": "13",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un rectangle, un losange et un cerf-volant sur papier pointé.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Plan du domaine de Wégimont : coordonnées et itinéraire.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un triangle identique pour former un quadrilatère.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q16",
+   "livret": 3,
+   "numero": "16",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Pyramides, non-polyèdres, solides à faces quadrilatères.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q17ab",
+   "livret": 3,
+   "numero": "17ab",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Noircis les cases et trace le cercle.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q18",
+   "livret": 3,
+   "numero": "18",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Achève l'octogone régulier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q19",
+   "livret": 3,
+   "numero": "19",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Rectangle strict et trapèze isocèle dans la figure.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q21",
+   "livret": 3,
+   "numero": "21",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Développement de la boite : languettes B et C.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l3-q22",
+   "livret": 3,
+   "numero": "22",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Puzzle : reconstitue le carré.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q2a",
+   "livret": 4,
+   "numero": "2a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 1,3 + 1,22",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 2.52,
+   "tolerance": 0.0001,
+   "explication": "1,30 + 1,22 = 2,52."
+  },
+  {
+   "id": "ceb-2019-l4-q2b",
+   "livret": 4,
+   "numero": "2b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 54 × 0,5 = 54 : …",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 2,
+   "tolerance": 0.0001,
+   "explication": "Multiplier par 0,5, c'est diviser par 2."
+  },
+  {
+   "id": "ceb-2019-l4-q2c",
+   "livret": 4,
+   "numero": "2c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 27,7 + 1,5",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 29.2,
+   "tolerance": 0.0001,
+   "explication": "27,7 + 1,5 = 29,2."
+  },
+  {
+   "id": "ceb-2019-l4-q2d",
+   "livret": 4,
+   "numero": "2d",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 5 − 2 = 500 − …",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 497,
+   "tolerance": 0.0001,
+   "explication": "5 − 2 = 3 et 500 − 497 = 3."
+  },
+  {
+   "id": "ceb-2019-l4-q2e",
+   "livret": 4,
+   "numero": "2e",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 1 997 − 538",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 1459,
+   "tolerance": 0.0001,
+   "explication": "1 997 − 538 = 1459."
+  },
+  {
+   "id": "ceb-2019-l4-q2f",
+   "livret": 4,
+   "numero": "2f",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 91 : … = 7",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 13,
+   "tolerance": 0.0001,
+   "explication": "7 × 13 = 91."
+  },
+  {
+   "id": "ceb-2019-l4-q3a",
+   "livret": 4,
+   "numero": "3a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 42 × 99,2, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "142",
+    "429",
+    "4 200",
+    "3 800",
+    "420"
+   ],
+   "reponse": 2,
+   "explication": "42 × 100 = 4 200."
+  },
+  {
+   "id": "ceb-2019-l4-q3b",
+   "livret": 4,
+   "numero": "3b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 52 : 10,5, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "42",
+    "520",
+    "10",
+    "5",
+    "12"
+   ],
+   "reponse": 3,
+   "explication": "52 : 10 ≈ 5."
+  },
+  {
+   "id": "ceb-2019-l4-q3c",
+   "livret": 4,
+   "numero": "3c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 40 × 0,801, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "320",
+    "32",
+    "410",
+    "50",
+    "48"
+   ],
+   "reponse": 1,
+   "explication": "40 × 0,8 = 32."
+  },
+  {
+   "id": "ceb-2019-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris le nombre entier qui précède et celui qui suit immédiatement (exemple : 1 999 < 2 000 < 2 001).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "{1} < 20 000 < {2}  ·  {3} < 12 099 < {4}  ·  {5} < 37,46 < {6}",
+   "reponse": [
+    [
+     "19999",
+     "19 999"
+    ],
+    [
+     "20001",
+     "20 001"
+    ],
+    [
+     "12098",
+     "12 098"
+    ],
+    [
+     "12100",
+     "12 100"
+    ],
+    [
+     "37"
+    ],
+    [
+     "38"
+    ]
+   ],
+   "explication": "Pour 37,46, les entiers qui l'encadrent sont 37 et 38."
+  },
+  {
+   "id": "ceb-2019-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "7,1 × 8,71 = 8,71 × {1}  ·  {2} × 100 = 2 × 27 × 50  ·  2,8 × 99 = (2,8 × 100) − {3}  ·  24,2 × 340 = {4} × 34  ·  37 × 105 = (37 × 100) + (37 × {5})  ·  44 : 1,2 = {6} : 12",
+   "reponse": [
+    [
+     "7,1"
+    ],
+    [
+     "27"
+    ],
+    [
+     "2,8"
+    ],
+    [
+     "242"
+    ],
+    [
+     "5"
+    ],
+    [
+     "440"
+    ]
+   ],
+   "explication": "Commutativité ; 2 × 50 = 100 ; 99 = 100 − 1 ; × 10 et : 10 ; 105 = 100 + 5 ; on multiplie les deux termes par 10."
+  },
+  {
+   "id": "ceb-2019-l4-q11a",
+   "livret": 4,
+   "numero": "11a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 876,7 + 782,9",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 1659.6,
+   "tolerance": 0.0001,
+   "explication": "876,7 + 782,9 = 1659,6."
+  },
+  {
+   "id": "ceb-2019-l4-q11b",
+   "livret": 4,
+   "numero": "11b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 789,2 × 7,6",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 5997.92,
+   "tolerance": 0.0001,
+   "explication": "789,2 × 7,6 = 5997,92."
+  },
+  {
+   "id": "ceb-2019-l4-q11c",
+   "livret": 4,
+   "numero": "11c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 4 169,6 : 8",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 521.2,
+   "tolerance": 0.0001,
+   "explication": "4 169,6 : 8 = 521,2."
+  },
+  {
+   "id": "ceb-2019-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Calcule : 0,5 + 1/4",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "reponse": [
+    "0,75",
+    "3/4"
+   ],
+   "explication": "0,5 + 0,25 = 0,75 (ou 3/4)."
+  },
+  {
+   "id": "ceb-2019-l4-q13a",
+   "livret": 4,
+   "numero": "13a",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces nombres du plus petit au plus grand.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "0,15",
+    "2/5",
+    "30/100",
+    "0,25",
+    "10/20"
+   ],
+   "reponse": [
+    0,
+    3,
+    2,
+    1,
+    4
+   ],
+   "explication": "0,15 < 0,25 < 0,30 < 0,40 < 0,50."
+  },
+  {
+   "id": "ceb-2019-l4-q13b",
+   "livret": 4,
+   "numero": "13b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Parmi 0,15 ; 2/5 ; 30/100 ; 0,25 ; 10/20, lequel vaut « un quart » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "0,15",
+    "2/5",
+    "30/100",
+    "0,25",
+    "10/20"
+   ],
+   "reponse": 3,
+   "explication": "1/4 = 0,25."
+  },
+  {
+   "id": "ceb-2019-l4-q13c",
+   "livret": 4,
+   "numero": "13c",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Écris 0,15 sous une autre forme.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "reponse": [
+    "15/100",
+    "15 %",
+    "15%",
+    "3/20",
+    "0,150",
+    "15 centièmes"
+   ],
+   "explication": "0,15 = 15/100 = 15 %."
+  },
+  {
+   "id": "ceb-2019-l4-q14a",
+   "livret": 4,
+   "numero": "14a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Un pack contient 6 bouteilles de 1,5 l. On range 36 packs. Quel calcul donne le nombre de bouteilles ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "choix": [
+    "36 + 6",
+    "36 × 1,5",
+    "36 × 6",
+    "36 : 1,5",
+    "6 × 1,5",
+    "(36 × 6) × 1,5"
+   ],
+   "reponse": 2,
+   "explication": "36 packs de 6 bouteilles : 36 × 6."
+  },
+  {
+   "id": "ceb-2019-l4-q14b",
+   "livret": 4,
+   "numero": "14b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Combien de litres contient un pack de 6 bouteilles de 1,5 l ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "reponse": 9,
+   "unite": "l",
+   "explication": "6 × 1,5 = 9 litres."
+  },
+  {
+   "id": "ceb-2019-l4-q15",
+   "livret": 4,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces nombres du plus petit au plus grand.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "elements": [
+    "23,7",
+    "23,85",
+    "23,8",
+    "23,08",
+    "23,79",
+    "23,783"
+   ],
+   "reponse": [
+    3,
+    0,
+    5,
+    4,
+    2,
+    1
+   ],
+   "explication": "23,08 < 23,7 < 23,783 < 23,79 < 23,8 < 23,85."
+  },
+  {
+   "id": "ceb-2019-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Peut-on placer 500 juste au milieu de ces segments ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-droite-graduee",
+   "lignes": [
+    "de 400 à 600",
+    "de 250 à 750",
+    "de 125 à 375"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    0,
+    0,
+    1
+   ],
+   "explication": "Milieux : 500, 500 et 250."
+  },
+  {
+   "id": "ceb-2019-l4-q18",
+   "livret": 4,
+   "numero": "18",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète le dernier chiffre (ou les deux derniers).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-divisibilite",
+   "texte": "476_ divisible par 2 : 476{1}  ·  62__ divisible par 4 et par 5 : 62{2}  ·  592_ pair et divisible par 3 : 592{3}",
+   "reponse": [
+    [
+     "0",
+     "2",
+     "4",
+     "6",
+     "8"
+    ],
+    [
+     "00",
+     "20",
+     "40",
+     "60",
+     "80"
+    ],
+    [
+     "2",
+     "8"
+    ]
+   ],
+   "explication": "Divisible par 2 : chiffre pair. Par 4 et 5 : finit par 0 et les deux derniers chiffres divisibles par 4. Pair et par 3 : 5 + 9 + 2 + 2 = 18 ou + 8 = 24."
+  },
+  {
+   "id": "ceb-2019-l4-q19",
+   "livret": 4,
+   "numero": "19",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "68,4 + 39,5 = 68 + 39 + {1}  ·  37 × 200 = 37 × 100 × {2}  ·  68,6 + 39,5 = 68 + 39 + {3}",
+   "reponse": [
+    [
+     "0,9"
+    ],
+    [
+     "2"
+    ],
+    [
+     "1,1"
+    ]
+   ],
+   "explication": "0,4 + 0,5 = 0,9 ; 200 = 100 × 2 ; 0,6 + 0,5 = 1,1."
+  },
+  {
+   "id": "ceb-2019-l4-q20",
+   "livret": 4,
+   "numero": "20",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Où placer les virgules pour obtenir 9664 + 658 + 4836 + 732 = 284 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "choix": [
+    "96,64 + 65,8 + 48,36 + 73,2",
+    "966,4 + 6,58 + 483,6 + 7,32",
+    "9,664 + 65,8 + 4,836 + 73,2",
+    "96,64 + 6,58 + 48,36 + 73,2"
+   ],
+   "reponse": 0,
+   "explication": "96,64 + 48,36 = 145 et 65,8 + 73,2 = 139 ; 145 + 139 = 284."
+  },
+  {
+   "id": "ceb-2019-l4-q22a",
+   "livret": 4,
+   "numero": "22a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Quels nombres sont à la fois multiples de 3 et de 7 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "21",
+    "15",
+    "77",
+    "18",
+    "28",
+    "35",
+    "63",
+    "14",
+    "27"
+   ],
+   "reponse": [
+    0,
+    6
+   ],
+   "explication": "Multiples de 21 : 21 et 63."
+  },
+  {
+   "id": "ceb-2019-l4-q22b",
+   "livret": 4,
+   "numero": "22b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Quels nombres sont à la fois diviseurs de 45 et de 72 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "15",
+    "3",
+    "17",
+    "5",
+    "2",
+    "12",
+    "6",
+    "9",
+    "8"
+   ],
+   "reponse": [
+    1,
+    7
+   ],
+   "explication": "Diviseurs communs de 45 et 72 : 1, 3, 9."
+  },
+  {
+   "id": "ceb-2019-l4-q24",
+   "livret": 4,
+   "numero": "24",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Si 26 × 48 = 1 248, alors…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "26 × 24 = {1}  ·  26 × 0,48 = {2}  ·  2,6 × 48 = {3}",
+   "reponse": [
+    [
+     "624"
+    ],
+    [
+     "12,48"
+    ],
+    [
+     "124,8"
+    ]
+   ],
+   "explication": "24 est la moitié de 48 ; 0,48 = 48 : 100 ; 2,6 = 26 : 10."
+  },
+  {
+   "id": "ceb-2019-l4-q25a",
+   "livret": 4,
+   "numero": "25a",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces fractions de la plus petite à la plus grande.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "7/12",
+    "3/12",
+    "8/12",
+    "11/12"
+   ],
+   "reponse": [
+    1,
+    0,
+    2,
+    3
+   ],
+   "explication": "Même dénominateur : on compare les numérateurs."
+  },
+  {
+   "id": "ceb-2019-l4-q25b",
+   "livret": 4,
+   "numero": "25b",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces fractions de la plus petite à la plus grande.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "5/3",
+    "5/8",
+    "5/6",
+    "5/2"
+   ],
+   "reponse": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "explication": "Même numérateur : plus le dénominateur est grand, plus la fraction est petite."
+  },
+  {
+   "id": "ceb-2019-l4-q25c",
+   "livret": 4,
+   "numero": "25c",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces fractions de la plus petite à la plus grande.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "1/3",
+    "5/10",
+    "6/5",
+    "12/16"
+   ],
+   "reponse": [
+    0,
+    1,
+    3,
+    2
+   ],
+   "explication": "1/3 ≈ 0,33 ; 5/10 = 0,5 ; 12/16 = 0,75 ; 6/5 = 1,2."
+  },
+  {
+   "id": "ceb-2019-l4-q1",
+   "livret": 4,
+   "numero": "1",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Calcul mental dicté.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q4",
+   "livret": 4,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Avec les chiffres donnés : plus grand nombre, plus petit décimal…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète la droite graduée.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Décompose en parts égales.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q8",
+   "livret": 4,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Compte les bouteilles des douze casiers.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Cible : combien de points Sam a-t-il marqués ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Décomposition du nombre 10.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q21",
+   "livret": 4,
+   "numero": "21",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Journaux de classe : combien peut-on en réaliser ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l4-q23",
+   "livret": 4,
+   "numero": "23",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète la table de multiplication.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q1b",
+   "livret": 5,
+   "numero": "1b",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quel appareil du corps humain est concerné ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "lignes": [
+    "Beaucoup d'élèves sont enrhumés et toussent.",
+    "Un élève a vomi sa soupe.",
+    "Un élève s'est fracturé la clavicule."
+   ],
+   "colonnes": [
+    "Respiratoire",
+    "Digestif",
+    "Locomoteur",
+    "Circulatoire"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "Toux : respiration. Vomissement : digestion. Os cassé : squelette (locomoteur)."
+  },
+  {
+   "id": "ceb-2019-l5-q2b",
+   "livret": 5,
+   "numero": "2b",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "La fleur attire les insectes en stimulant leurs sens.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-fleur",
+   "texte": "Son nectar est sucré : stimulus {1}, sens : {2}  ·  Elle sent bon : stimulus {3}, sens : {4}  ·  Elle est colorée : stimulus {5}, sens : {6}",
+   "reponse": [
+    [
+     "gustatif"
+    ],
+    [
+     "le gout",
+     "gout",
+     "le goût",
+     "goût"
+    ],
+    [
+     "olfactif"
+    ],
+    [
+     "l'odorat",
+     "odorat"
+    ],
+    [
+     "visuel"
+    ],
+    [
+     "la vue",
+     "vue"
+    ]
+   ],
+   "explication": "Gustatif / goût ; olfactif / odorat ; visuel / vue."
+  },
+  {
+   "id": "ceb-2019-l5-q3a",
+   "livret": 5,
+   "numero": "3a",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Quels attributs différencient le triton (trouvé près de la mare) du lézard ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "choix": [
+    "Un squelette interne d'os",
+    "4 membres",
+    "Une peau nue",
+    "Des écailles",
+    "4 doigts aux pattes antérieures"
+   ],
+   "reponse": [
+    2,
+    3
+   ],
+   "explication": "Le triton a la peau nue, le lézard des écailles. Les deux ont un squelette interne et 4 membres. (La différence de doigts est aussi possible : à vérifier dans le tableau.)"
+  },
+  {
+   "id": "ceb-2019-l5-q3c",
+   "livret": 5,
+   "numero": "3c",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "La salamandre a, comme le triton, la peau nue et 4 doigts aux pattes antérieures. Elle est plus proche…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "choix": [
+    "du triton",
+    "du lézard"
+   ],
+   "reponse": 0,
+   "explication": "Peau nue et 4 doigts aux pattes avant : comme le triton (amphibiens)."
+  },
+  {
+   "id": "ceb-2019-l5-q4c",
+   "livret": 5,
+   "numero": "4c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "On verse 50 cm³ d'eau sur trois terres. Argileuse : 40 cm³ recueillis en 9 min ; tourbée : 47 cm³ en 2 min ; sablonneuse : 49 cm³ en 2 min. Quelle terre est la plus perméable ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "choix": [
+    "La terre argileuse",
+    "La terre tourbée",
+    "La terre sablonneuse"
+   ],
+   "reponse": 2,
+   "explication": "Elle laisse passer le plus d'eau (49 cm³) le plus vite (2 min)."
+  },
+  {
+   "id": "ceb-2019-l5-q4d",
+   "livret": 5,
+   "numero": "4d",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "Même tableau : vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "lignes": [
+    "L'eau prend plus de temps pour passer dans une terre sablonneuse que dans une terre argileuse.",
+    "La terre tourbée est plus perméable que la terre argileuse.",
+    "L'eau prend plus de temps pour passer dans une terre sablonneuse que dans une terre tourbée."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "Sablonneuse : 2 min, argileuse : 9 min, tourbée : 2 min."
+  },
+  {
+   "id": "ceb-2019-l5-q5b",
+   "livret": 5,
+   "numero": "5b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Une salade fraiche posée sur une balance est plus légère le lendemain. Que s'est-il passé ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "eau-2"
+   ],
+   "reponseModele": "L'eau contenue dans la salade s'est évaporée : la salade a perdu de l'eau, donc du poids."
+  },
+  {
+   "id": "ceb-2019-l5-q5c",
+   "livret": 5,
+   "numero": "5c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Ce phénomène (la salade plus légère) est lié à quel changement d'état ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "eau-2"
+   ],
+   "choix": [
+    "La sublimation",
+    "L'évaporation",
+    "La fusion",
+    "La solidification",
+    "La condensation"
+   ],
+   "reponse": 1,
+   "explication": "L'eau liquide de la salade est passée à l'état gazeux."
+  },
+  {
+   "id": "ceb-2019-l5-q6a",
+   "livret": 5,
+   "numero": "6a",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Dispositif 3 : bouteille A sur une table à 90 cm, bouteille D sur une armoire à 200 cm. Quelle hypothèse vérifie-t-on ? L'eau s'évapore plus vite quand…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "evap-3"
+   ],
+   "choix": [
+    "la température est élevée.",
+    "la température est basse.",
+    "la bouteille se trouve en hauteur.",
+    "la surface de contact avec l'air est petite.",
+    "la surface de contact avec l'air est grande."
+   ],
+   "reponse": 2,
+   "explication": "Seule la hauteur change entre A et D."
+  },
+  {
+   "id": "ceb-2019-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Dispositif 4 : A sur un radiateur, E (autre forme) sur une table. Ce dispositif ne convient pas parce qu'il fait varier…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "evap-3"
+   ],
+   "choix": [
+    "la température.",
+    "la surface de contact avec l'air.",
+    "la hauteur.",
+    "la température et la surface de contact avec l'air en même temps."
+   ],
+   "reponse": 3,
+   "explication": "Pour une expérience valable, on ne fait varier qu'une seule condition à la fois."
+  },
+  {
+   "id": "ceb-2019-l5-q6d",
+   "livret": 5,
+   "numero": "6d",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "La serviette étendue sur un mur au soleil sèche le plus vite. Pourquoi ? L'eau s'évapore plus vite…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "choix": [
+    "à la chaleur et avec une petite surface au contact de l'air.",
+    "à la chaleur et avec une grande surface au contact de l'air.",
+    "à l'ombre avec une grande surface au contact de l'air."
+   ],
+   "reponse": 1,
+   "explication": "Chaleur + grande surface étendue = évaporation rapide."
+  },
+  {
+   "id": "ceb-2019-l5-q7b",
+   "livret": 5,
+   "numero": "7b",
+   "domaine": "sc.energie",
+   "type": "texte_court",
+   "enonce": "Bulletin météo du 17 janvier 2019 : à quelle heure le soleil se couchera-t-il ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "meteo"
+   ],
+   "reponse": [
+    "17h08",
+    "17 h 08",
+    "17:08",
+    "17h 08",
+    "17 h08"
+   ],
+   "explication": "« Coucher : 17h08 »."
+  },
+  {
+   "id": "ceb-2019-l5-q8a",
+   "livret": 5,
+   "numero": "8a",
+   "domaine": "sc.energie",
+   "type": "grille",
+   "enonce": "Quelle expérience teste chaque variable qui influence l'équilibre de la grue ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "grue-2",
+    "grue-3"
+   ],
+   "lignes": [
+    "La longueur de la flèche",
+    "La matière de la tour (métal, bois…)",
+    "Le poids de la tour à la base"
+   ],
+   "colonnes": [
+    "Expérience 1",
+    "Expérience 2",
+    "Expérience 3",
+    "Expérience 4",
+    "Aucune"
+   ],
+   "reponse": [
+    3,
+    4,
+    1
+   ],
+   "explication": "Exp. 1 : plaque sous la tour ; exp. 2 : billes au fond de la tour ; exp. 3 : contrepoids ; exp. 4 : longueur de la flèche. Aucune ne change la matière."
+  },
+  {
+   "id": "ceb-2019-l5-q8b",
+   "livret": 5,
+   "numero": "8b",
+   "domaine": "sc.energie",
+   "type": "grille",
+   "enonce": "Que permettent de dire les quatre expériences ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "grue-2",
+    "grue-3"
+   ],
+   "lignes": [
+    "Hypothèse 1 : si on augmente suffisamment la surface de base, la grue pourra tenir en équilibre.",
+    "Hypothèse 2 : si on augmente la hauteur de la tour, la grue pourra tenir en équilibre."
+   ],
+   "colonnes": [
+    "Hypothèse validée",
+    "Hypothèse non valide",
+    "Aucune expérience ne permet de vérifier"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "L'expérience 1 valide l'hypothèse 1. Aucune expérience ne change la hauteur de la tour."
+  },
+  {
+   "id": "ceb-2019-l5-q8c",
+   "livret": 5,
+   "numero": "8c",
+   "domaine": "sc.energie",
+   "type": "trous",
+   "enonce": "Pour maintenir la grue en équilibre, on peut…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "grue-2",
+    "grue-3"
+   ],
+   "texte": "{1} la surface de la base de la tour  ·  {2} la longueur de la flèche",
+   "reponse": [
+    [
+     "augmenter"
+    ],
+    [
+     "diminuer"
+    ]
+   ],
+   "explication": "Grande plaque : équilibre. Flèche de 30 cm au lieu de 50 cm : équilibre."
+  },
+  {
+   "id": "ceb-2019-l5-q9b",
+   "livret": 5,
+   "numero": "9b",
+   "domaine": "sc.energie",
+   "type": "qcm_multi",
+   "enonce": "Quels objets peux-tu intégrer dans le circuit pour que l'ampoule s'allume ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "choix": [
+    "Cuillère en bois",
+    "Bout de laine",
+    "Fourchette en fer",
+    "Barquette en aluminium",
+    "Verre",
+    "Élastique",
+    "Cuillère en plastique",
+    "Pièce en cuivre",
+    "Latte en métal"
+   ],
+   "reponse": [
+    2,
+    3,
+    7,
+    8
+   ],
+   "explication": "Les métaux (fer, aluminium, cuivre) sont conducteurs."
+  },
+  {
+   "id": "ceb-2019-l5-q1a",
+   "livret": 5,
+   "numero": "1a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Nomme les appareils des schémas A, B et C.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q1c",
+   "livret": 5,
+   "numero": "1c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète les étiquettes des organes.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q2a",
+   "livret": 5,
+   "numero": "2a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète le cycle de vie du pommier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cycle-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q2c",
+   "livret": 5,
+   "numero": "2c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Étapes du cycle de la capucine.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "cycle-2"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q3b",
+   "livret": 5,
+   "numero": "3b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète le tableau pour la grenouille.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "classif"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q3d",
+   "livret": 5,
+   "numero": "3d",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Place le triton et la salamandre dans les ensembles.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q4a",
+   "livret": 5,
+   "numero": "4a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Complète le schéma du cycle de l'eau en classe.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q4b",
+   "livret": 5,
+   "numero": "4b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Que représente le récipient de récupération ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "eau-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q5a",
+   "livret": 5,
+   "numero": "5a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Nomme les changements d'état.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q6b",
+   "livret": 5,
+   "numero": "6b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Lis le graphique de l'évaporation.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q6e",
+   "livret": 5,
+   "numero": "6e",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Choisis le récipient pour récupérer le sel.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q7a",
+   "livret": 5,
+   "numero": "7a",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Étiquettes du bulletin météo.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "meteo"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q7c",
+   "livret": 5,
+   "numero": "7c",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Force du vent (Beaufort) sur les photos.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "beaufort"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l5-q9a",
+   "livret": 5,
+   "numero": "9a",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Barre le montage incorrect.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Le texte « Loisir, vous avez dit loisir… » est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "loisir-1",
+    "loisir-2",
+    "loisir-3",
+    "loisir-4"
+   ],
+   "choix": [
+    "un article.",
+    "une affiche.",
+    "un compte rendu.",
+    "un mode d'emploi."
+   ],
+   "reponse": 0,
+   "explication": "Intertitres, informations, sources, auteur (Collectif CEB) : un article."
+  },
+  {
+   "id": "ceb-2019-l6-q2",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "La réponse se trouve-t-elle dans le texte ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "loisir-1",
+    "loisir-2",
+    "loisir-3",
+    "loisir-4"
+   ],
+   "lignes": [
+    "Quels sont les pays où l'on ne bénéficie pas encore de temps de loisir aujourd'hui ?",
+    "Quelles sont les activités de loisir pratiquées collectivement ?",
+    "Pourquoi est-il important d'avoir des loisirs ?"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    1,
+    0,
+    0
+   ],
+   "explication": "Aucun pays n'est cité. Les activités collectives : « Quelles activités pour occuper le temps de loisir ? ». L'importance : « Enfin, pour conclure… »."
+  },
+  {
+   "id": "ceb-2019-l6-q3",
+   "livret": 6,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle proposition pourrait remplacer l'intertitre « La conquête du loisir » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "loisir-2"
+   ],
+   "choix": [
+    "L'évolution du temps de loisir.",
+    "À la recherche d'un temps de loisir enrichissant.",
+    "Un temps de loisir pour petits et grands.",
+    "Les activités de loisir aujourd'hui dans le monde."
+   ],
+   "reponse": 0,
+   "explication": "Le paragraphe raconte comment le temps de loisir s'est allongé au fil du temps."
+  },
+  {
+   "id": "ceb-2019-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "L'auteur propose deux significations du mot « loisir ».",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "loisir-2"
+   ],
+   "texte": "1. le {1}  ·  2. une {2}",
+   "reponse": [
+    [
+     "temps libre"
+    ],
+    [
+     "activité de délassement",
+     "activite de delassement",
+     "occupation",
+     "activité"
+    ]
+   ],
+   "explication": "« temps libre » ou « activité de délassement »."
+  },
+  {
+   "id": "ceb-2019-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Recopie un groupe de mots de « La conquête du loisir » qui montre que cette conquête a été vécue en Belgique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "loisir-2"
+   ],
+   "reponse": [
+    "Vacanciers sur une plage de Heyst-sur-Mer, vers 1907",
+    "Vacanciers sur une plage de Heyst-sur-Mer",
+    "Heyst-sur-Mer",
+    "une plage de Heyst-sur-Mer"
+   ],
+   "explication": "La légende de la photo : Heyst-sur-Mer est une station de la côte belge."
+  },
+  {
+   "id": "ceb-2019-l6-q6",
+   "livret": 6,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quelles activités augmentent avec l'âge (de 11 à 17 ans) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "loisir-3",
+    "loisir-4"
+   ],
+   "choix": [
+    "Utiliser l'ordinateur.",
+    "Lire des bandes dessinées.",
+    "Écouter de la musique.",
+    "Regarder la télévision."
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Ordinateur : 14,5 % → 69 % ; musique : 37 % → 68,5 %."
+  },
+  {
+   "id": "ceb-2019-l6-q7",
+   "livret": 6,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Explique avec deux éléments du texte pourquoi l'inactivité est parfois nécessaire.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "loisir-3"
+   ],
+   "reponseModele": "Elle permet de déconnecter, de se ressourcer ; elle développe notre créativité."
+  },
+  {
+   "id": "ceb-2019-l6-q8",
+   "livret": 6,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "D'après le texte…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "loisir-1",
+    "loisir-2",
+    "loisir-3",
+    "loisir-4"
+   ],
+   "lignes": [
+    "le loisir permet de réduire l'anxiété.",
+    "à 17 ans, 37 % des adolescents écoutent de la musique enregistrée tous les jours."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "« Il contribue tantôt à réduire l'anxiété ». 37 %, c'est à 11 ans ; à 17 ans, c'est 68,5 %."
+  },
+  {
+   "id": "ceb-2019-l6-q9",
+   "livret": 6,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quelles sources l'auteur cite-t-il pour trouver une activité de loisir ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "loisir-4"
+   ],
+   "choix": [
+    "Internet",
+    "Les services culturels et sportifs des communes",
+    "Les bibliothèques scolaires",
+    "Les offices du tourisme",
+    "Les journaux publicitaires",
+    "La télévision"
+   ],
+   "reponse": [
+    0,
+    1,
+    3,
+    4
+   ],
+   "explication": "Internet, les services des communes, les offices du tourisme, les journaux publicitaires, l'avis des proches."
+  },
+  {
+   "id": "ceb-2019-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Dans « Que signifie le mot \"loisir\" ? », l'intention de l'auteur est de…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "loisir-2"
+   ],
+   "choix": [
+    "persuader le lecteur de l'importance des loisirs.",
+    "renseigner le lecteur sur la signification du mot « loisir ».",
+    "raconter ce que font les retraités.",
+    "encourager le lecteur à prendre du temps pour ses loisirs."
+   ],
+   "reponse": 1,
+   "explication": "Le paragraphe explique les sens du mot."
+  },
+  {
+   "id": "ceb-2019-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« …dans les pays d'Europe tout au moins, la durée du temps de loisir s'est allongée. » Que veut dire « dans les pays d'Europe tout au moins » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "loisir-2"
+   ],
+   "choix": [
+    "En dehors des pays d'Europe.",
+    "Au minimum dans les pays d'Europe.",
+    "Dans un seul pays d'Europe.",
+    "Seulement dans quelques pays d'Europe."
+   ],
+   "reponse": 1,
+   "explication": "« Tout au moins » = au minimum, en tout cas."
+  },
+  {
+   "id": "ceb-2019-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Certaines de ces pratiques sont en déclin […]. » Explique ce que l'auteur veut dire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "loisir-3"
+   ],
+   "reponseModele": "Certaines activités sont de moins en moins pratiquées quand on grandit (par exemple la télévision ou les BD)."
+  },
+  {
+   "id": "ceb-2019-l6-q13",
+   "livret": 6,
+   "numero": "13",
+   "domaine": "fr.vocabulaire",
+   "type": "trous",
+   "enonce": "Transforme le verbe en nom (exemple : la durée s'est allongée → l'allongement de la durée).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-familles-mots",
+   "texte": "L'inactivité, c'est même nécessaire → la {1} d'être parfois inactif  ·  Les êtres humains ont occupé leur temps → l'{2} du temps de loisir",
+   "reponse": [
+    [
+     "nécessité",
+     "necessite"
+    ],
+    [
+     "occupation"
+    ]
+   ],
+   "explication": "nécessaire → nécessité ; occuper → occupation."
+  },
+  {
+   "id": "ceb-2019-l6-q14",
+   "livret": 6,
+   "numero": "14",
+   "domaine": "fr.conjugaison",
+   "type": "trous",
+   "enonce": "Écris l'infinitif et le temps des verbes.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-conjugaison-temps-simples",
+   "texte": "« Ceux-ci se sont battus » : infinitif {1}, temps : {2}  ·  « ils touchaient leur salaire » : infinitif {3}, temps : {4}",
+   "reponse": [
+    [
+     "se battre",
+     "battre"
+    ],
+    [
+     "passé composé",
+     "passe compose"
+    ],
+    [
+     "toucher"
+    ],
+    [
+     "imparfait"
+    ]
+   ],
+   "explication": "se battre au passé composé ; toucher à l'imparfait."
+  },
+  {
+   "id": "ceb-2019-l6-q15",
+   "livret": 6,
+   "numero": "15",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« Le passage de l'enfance vers l'adolescence ne consiste pas uniquement en un changement physique et mental. » Écris le groupe sujet du verbe « consiste ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "reponse": [
+    "Le passage de l'enfance vers l'adolescence"
+   ],
+   "explication": "Qui est-ce qui ne consiste pas… ? « Le passage de l'enfance vers l'adolescence »."
+  },
+  {
+   "id": "ceb-2019-l6-q16",
+   "livret": 6,
+   "numero": "16",
+   "domaine": "fr.grammaire",
+   "type": "ouverte",
+   "enonce": "Indique la fonction des groupes soulignés.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q1",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "ma.grandeurs",
+   "type": "grille",
+   "enonce": "Choisis l'unité qui convient.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "lignes": [
+    "La distance de Bruxelles à Ostende",
+    "La capacité d'un seau d'eau",
+    "Le volume d'une boite d'allumettes",
+    "L'aire d'une feuille de papier"
+   ],
+   "colonnes": [
+    "mm",
+    "cm³",
+    "dm²",
+    "m",
+    "l",
+    "hg",
+    "km"
+   ],
+   "reponse": [
+    6,
+    4,
+    1,
+    2
+   ],
+   "explication": "Distance : km ; capacité : l ; volume : cm³ ; aire : dm²."
+  },
+  {
+   "id": "ceb-2019-l7-q2a",
+   "livret": 7,
+   "numero": "2a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "33 cl pourraient être…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "la capacité d'une cuillère à soupe.",
+    "la capacité d'une piscine olympique.",
+    "la capacité d'une canette de soda.",
+    "la capacité d'un seau d'eau."
+   ],
+   "reponse": 2,
+   "explication": "Une canette contient 33 cl."
+  },
+  {
+   "id": "ceb-2019-l7-q2b",
+   "livret": 7,
+   "numero": "2b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "3 m³ pourraient être…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "le volume d'une boite de feuilles.",
+    "le volume d'une citerne à mazout.",
+    "le volume d'une chambre à coucher.",
+    "le volume d'une valise."
+   ],
+   "reponse": 1,
+   "explication": "3 m³ = 3 000 litres : une citerne. Une chambre fait environ 30 m³."
+  },
+  {
+   "id": "ceb-2019-l7-q2c",
+   "livret": 7,
+   "numero": "2c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "20 secondes pourraient être…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "la durée d'un journal télévisé.",
+    "la durée pour courir 1 000 mètres.",
+    "la durée d'un coup de tonnerre.",
+    "la durée d'une publicité télévisée."
+   ],
+   "reponse": 3,
+   "explication": "Une publicité dure environ 20 à 30 secondes."
+  },
+  {
+   "id": "ceb-2019-l7-q3",
+   "livret": 7,
+   "numero": "3",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Complète les dimensions avec l'unité adéquate.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "texte": "Un carnet : 140 sur 200 {1}  ·  Un matelas : 140 sur 200 {2}  ·  Un champ : 140 sur 200 {3}",
+   "reponse": [
+    [
+     "mm"
+    ],
+    [
+     "cm"
+    ],
+    [
+     "m"
+    ]
+   ],
+   "explication": "Carnet : 14 cm = 140 mm ; matelas : 140 cm ; champ : 140 m."
+  },
+  {
+   "id": "ceb-2019-l7-q4b",
+   "livret": 7,
+   "numero": "4b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Dépliée, une échelle pèse 13,8 kg. Repliée, elle pèse…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "moins de 13,8 kg.",
+    "toujours 13,8 kg.",
+    "plus de 13,8 kg."
+   ],
+   "reponse": 1,
+   "explication": "La masse ne change pas quand on plie l'échelle."
+  },
+  {
+   "id": "ceb-2019-l7-q7a",
+   "livret": 7,
+   "numero": "7a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "Un centilitre est… (2 réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "100 × plus grand qu'un litre.",
+    "100 × plus petit qu'un litre.",
+    "10 × plus grand qu'un décilitre.",
+    "10 × plus petit qu'un décilitre."
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "1 l = 100 cl et 1 dl = 10 cl."
+  },
+  {
+   "id": "ceb-2019-l7-q7b",
+   "livret": 7,
+   "numero": "7b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "25 centimètres représentent… (2 réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "250 millimètres.",
+    "2,5 décimètres.",
+    "2 500 kilomètres.",
+    "0,25 décamètre."
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "25 cm = 250 mm = 2,5 dm = 0,25 m = 0,025 dam."
+  },
+  {
+   "id": "ceb-2019-l7-q9",
+   "livret": 7,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "texte_court",
+   "enonce": "Choux sur 1/6 du potager, carottes sur 1/4, tomates sur 1/3. Quelle fraction du potager sera occupée ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-addition",
+   "reponse": [
+    "3/4",
+    "9/12",
+    "18/24"
+   ],
+   "explication": "2/12 + 3/12 + 4/12 = 9/12 = 3/4."
+  },
+  {
+   "id": "ceb-2019-l7-q11a",
+   "livret": 7,
+   "numero": "11a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Le Tour de France 2019 se termine le dimanche 28 juillet. À partir du dimanche 23 juin, combien de semaines entières nous en séparent ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "reponse": 5,
+   "unite": "semaines",
+   "explication": "Du 23 juin au 28 juillet : 35 jours = 5 semaines."
+  },
+  {
+   "id": "ceb-2019-l7-q11b",
+   "livret": 7,
+   "numero": "11b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Le Tour de France 2019 se déroule du 6 au 28 juillet. Combien de jours dure-t-il ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "reponse": 23,
+   "unite": "jours",
+   "explication": "28 − 6 + 1 = 23 jours (on compte le premier et le dernier jour)."
+  },
+  {
+   "id": "ceb-2019-l7-q11c",
+   "livret": 7,
+   "numero": "11c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Le 1er juillet 2019 est un lundi. Quel jour est le 28 juillet 2019 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "choix": [
+    "Samedi",
+    "Dimanche",
+    "Lundi",
+    "Vendredi"
+   ],
+   "reponse": 1,
+   "explication": "Les lundis : 1, 8, 15, 22, 29. Le 28 est un dimanche."
+  },
+  {
+   "id": "ceb-2019-l7-q12",
+   "livret": 7,
+   "numero": "12",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Eddy Merckx est né le 17/6/1945. Quel âge a-t-il le 20 juin 2019 ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "reponse": 74,
+   "unite": "ans",
+   "explication": "2019 − 1945 = 74 ; son anniversaire (17 juin) est déjà passé."
+  },
+  {
+   "id": "ceb-2019-l7-q13a",
+   "livret": 7,
+   "numero": "13a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "18e étape : Embrun (785 m), cols de Vars (2 109 m), d'Izoard (2 360 m), du Galibier (2 642 m), du Lautaret (2 058 m), arrivée Valloire (1 419 m). Quelle est l'altitude du sommet le plus élevé (en m) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "reponse": 2642,
+   "unite": "m",
+   "explication": "Le col du Galibier : 2 642 m."
+  },
+  {
+   "id": "ceb-2019-l7-q13b",
+   "livret": 7,
+   "numero": "13b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Départ à Embrun (785 m), arrivée à Valloire (1 419 m). Quelle est la différence d'altitude (en m) ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 634,
+   "unite": "m",
+   "explication": "1 419 − 785 = 634 m."
+  },
+  {
+   "id": "ceb-2019-l7-q14",
+   "livret": 7,
+   "numero": "14",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Étapes : 192 km, 27 km, 214 km, 215 km et 169 km. Combien de km en moyenne par jour ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-moyenne",
+   "reponse": 163.4,
+   "tolerance": 0.001,
+   "unite": "km",
+   "explication": "817 : 5 = 163,4 km."
+  },
+  {
+   "id": "ceb-2019-l7-q17a",
+   "livret": 7,
+   "numero": "17a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Pompe à essence : 42 l à 1,36 € le litre. Quel est le prix (en €) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "reponse": 57.12,
+   "tolerance": 0.005,
+   "unite": "€",
+   "explication": "42 × 1,36 = 57,12 €."
+  },
+  {
+   "id": "ceb-2019-l7-q17b",
+   "livret": 7,
+   "numero": "17b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Pompe à essence : 29,50 € à 1,18 € le litre. Combien de litres ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "reponse": 25,
+   "tolerance": 0.001,
+   "unite": "l",
+   "explication": "29,50 : 1,18 = 25 litres."
+  },
+  {
+   "id": "ceb-2019-l7-q18a",
+   "livret": 7,
+   "numero": "18a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un peintre tapisse 48 m² par jour. Combien en 6 jours ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "reponse": 288,
+   "unite": "m²",
+   "explication": "48 × 6 = 288 m²."
+  },
+  {
+   "id": "ceb-2019-l7-q18b",
+   "livret": 7,
+   "numero": "18b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Au même rythme (48 m² par jour), combien de jours pour tapisser 192 m² ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "reponse": 4,
+   "unite": "jours",
+   "explication": "192 : 48 = 4 jours."
+  },
+  {
+   "id": "ceb-2019-l7-q22",
+   "livret": 7,
+   "numero": "22",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un paquet normal permet 66 lessives. Ce paquet offre 50 % de lessives en plus. Combien de lessives en tout ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "reponse": 99,
+   "unite": "lessives",
+   "explication": "50 % de 66 = 33 ; 66 + 33 = 99."
+  },
+  {
+   "id": "ceb-2019-l7-q4a",
+   "livret": 7,
+   "numero": "4a",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "L'échelle dépliée : vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Jauges d'essence : fraction, pourcentage, distance restante.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q6",
+   "livret": 7,
+   "numero": "6",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace le tiers manquant du rectangle.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q8",
+   "livret": 7,
+   "numero": "8",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Quelle fraction du rectangle représente le losange ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Qu'indiquera la balance ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q13c",
+   "livret": 7,
+   "numero": "13c",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Distance entre le col d'Izoard et Briançon.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q15",
+   "livret": 7,
+   "numero": "15",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Aires du rectangle, du losange, du trapèze et du triangle.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q16",
+   "livret": 7,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Aire de la pelouse et nombre de panneaux de clôture.",
+   "points": 8,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q19",
+   "livret": 7,
+   "numero": "19",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Lis les mesures sur les instruments.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q20",
+   "livret": 7,
+   "numero": "20",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Indique 60 cl et 175 °C sur les instruments.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l7-q21",
+   "livret": 7,
+   "numero": "21",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Combien de boites sur les palettes ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l8-q1",
+   "livret": 8,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Le livre",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "conte-3"
+   ],
+   "texte": "Titre du livre : {1}  ·  Auteure : {2}",
+   "reponse": [
+    [
+     "15 contes d'Europe",
+     "Quinze contes d'Europe",
+     "15 contes d’Europe"
+    ],
+    [
+     "Françoise Rachmuhl",
+     "Francoise Rachmuhl",
+     "Rachmuhl"
+    ]
+   ],
+   "explication": "Françoise Rachmuhl, 15 contes d'Europe, Flammarion Jeunesse, 2013. (« La vieille dans la bouteille » est le titre du conte.)"
+  },
+  {
+   "id": "ceb-2019-l8-q2",
+   "livret": 8,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel résumé correspond le mieux à l'histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "choix": [
+    "Une gentille fée réalise les souhaits mais rate toujours sa dernière expérience.",
+    "Une vieille dame enfermée dans une bouteille de vinaigre en a pris la couleur.",
+    "Une fée délivre les vieilles dames enfermées dans des bouteilles.",
+    "Une vieille dame veut voir ses souhaits réalisés, n'est jamais satisfaite et est punie à la fin.",
+    "Une fée veut réaliser les souhaits de tout le monde, mais n'est jamais récompensée."
+   ],
+   "reponse": 3,
+   "explication": "La vieille demande toujours plus et retourne dans sa bouteille."
+  },
+  {
+   "id": "ceb-2019-l8-q3",
+   "livret": 8,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de l'auteure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "choix": [
+    "Convaincre qu'il faut aider les personnes âgées.",
+    "Donner une méthode pour écrire un conte.",
+    "Raconter une histoire plaisante.",
+    "Informer sur les différents types d'habitation."
+   ],
+   "reponse": 2,
+   "explication": "C'est un conte."
+  },
+  {
+   "id": "ceb-2019-l8-q4",
+   "livret": 8,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Les souhaits de la vieille dame",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "texte": "Au début, elle souhaite une jolie petite {1}.  ·  À la fin, elle souhaite être souveraine (reine) du {2}.",
+   "reponse": [
+    [
+     "chaumière",
+     "chaumiere",
+     "maison"
+    ],
+    [
+     "monde",
+     "monde entier"
+    ]
+   ],
+   "explication": "Une chaumière avec des rosiers ; puis régner sur le monde entier."
+  },
+  {
+   "id": "ceb-2019-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Remets ces moments dans l'ordre de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "elements": [
+    "La vieille dame devient reine d'un pays.",
+    "La vieille dame se retrouve dans une maison de briques.",
+    "La vieille dame souhaite devenir reine du monde.",
+    "La vieille dame se retrouve dans une chaumière.",
+    "La vieille dame est duchesse.",
+    "La vieille dame retourne dans la bouteille."
+   ],
+   "reponse": [
+    3,
+    1,
+    4,
+    0,
+    2,
+    5
+   ],
+   "explication": "Chaumière, maison de briques, (manoir), duchesse, reine, reine du monde, bouteille."
+  },
+  {
+   "id": "ceb-2019-l8-q6",
+   "livret": 8,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Comment la vieille dame souhaite-t-elle appeler ses domestiques ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "conte-2"
+   ],
+   "reponse": [
+    "en agitant sa sonnette d'argent",
+    "avec une sonnette",
+    "avec une sonnette d'argent",
+    "en agitant une sonnette",
+    "une sonnette",
+    "sa sonnette d'argent",
+    "en agitant sa sonnette"
+   ],
+   "explication": "« chaque fois que j'agiterais ma sonnette d'argent »."
+  },
+  {
+   "id": "ceb-2019-l8-q7a",
+   "livret": 8,
+   "numero": "7a",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Qui parle ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "lignes": [
+    "« La fée vaquait à ses affaires aux quatre coins du monde. »",
+    "« Et demain, tu verras bien ! »"
+   ],
+   "colonnes": [
+    "La fée",
+    "La vieille dame",
+    "Le narrateur"
+   ],
+   "reponse": [
+    2,
+    0
+   ],
+   "explication": "La première phrase raconte (narrateur) ; la seconde est la formule de la fée."
+  },
+  {
+   "id": "ceb-2019-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "La vieille dame n'est pas reconnaissante. Quelles phrases le montrent ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "choix": [
+    "Elle n'eut pas une pensée pour la fée.",
+    "Elle avait le teint rouge et l'esprit aigre.",
+    "Elle oublia de remercier la fée.",
+    "Elle était étonnée, elle était enchantée.",
+    "Elle recevait tous les honneurs dus à son rang."
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Ne pas remercier, ne pas penser à la fée : c'est l'ingratitude."
+  },
+  {
+   "id": "ceb-2019-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Quel terme l'auteure emploie-t-elle pour désigner les vendeurs de moules ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "conte-1"
+   ],
+   "reponse": [
+    "marchands",
+    "les marchands",
+    "des marchands"
+   ],
+   "explication": "« des marchands qui crient pour attirer la clientèle »."
+  },
+  {
+   "id": "ceb-2019-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« La fée vaquait à ses affaires aux quatre coins du monde. » Cela veut dire que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-expressions",
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "choix": [
+    "la fée aimait voyager partout dans le monde.",
+    "la fée exerçait des activités partout dans le monde.",
+    "la fée avait des connaissances partout dans le monde.",
+    "la fée s'occupait des affaires de tout le monde."
+   ],
+   "reponse": 1,
+   "explication": "« Vaquer à ses affaires » = s'occuper de ses activités ; « aux quatre coins du monde » = partout."
+  },
+  {
+   "id": "ceb-2019-l8-q11",
+   "livret": 8,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Entoure les deux synonymes de « bougonner ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "choix": [
+    "grogner",
+    "chanter",
+    "se parler",
+    "râler",
+    "crier"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Bougonner = grogner, râler."
+  },
+  {
+   "id": "ceb-2019-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "fr.conjugaison",
+   "type": "trous",
+   "enonce": "Temps des verbes : « elle accéda encore au désir de la vieille » ; « mes valets courraient de chaque côté ».",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-conjugaison-temps-simples",
+   "documents": [
+    "conte-2"
+   ],
+   "texte": "« accéda » est au {1} (comme « retrouva »).  ·  « courraient » est au conditionnel présent, comme « je {2} » ou « je m'y {3} ».",
+   "reponse": [
+    [
+     "passé simple",
+     "passe simple"
+    ],
+    [
+     "pourrais"
+    ],
+    [
+     "rendrais"
+    ]
+   ],
+   "explication": "accéda : passé simple. Conditionnel présent : pourrais, rendrais, courraient."
+  },
+  {
+   "id": "ceb-2019-l8-q13",
+   "livret": 8,
+   "numero": "13",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« Elle ne montra aucun étonnement et, naturellement, elle oublia de remercier la fée. » Écris la classe des mots.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-classes-mots",
+   "documents": [
+    "conte-2"
+   ],
+   "texte": "Elle : {1}  ·  étonnement : {2}  ·  naturellement : {3}",
+   "reponse": [
+    [
+     "pronom"
+    ],
+    [
+     "nom"
+    ],
+    [
+     "adverbe"
+    ]
+   ],
+   "explication": "« Elle » remplace la vieille ; « étonnement » est précédé du déterminant « aucun » ; « naturellement » est invariable (adverbe en -ment)."
+  },
+  {
+   "id": "ceb-2019-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« …elle se souvint tout à coup de la vieille couleur de vinaigre. » Quelle est la classe du mot « vieille » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-classes-mots",
+   "documents": [
+    "conte-1"
+   ],
+   "choix": [
+    "adjectif",
+    "nom",
+    "pronom",
+    "verbe"
+   ],
+   "reponse": 1,
+   "explication": "« la vieille (qui a la) couleur de vinaigre » : la vieille dame, c'est un nom."
+  },
+  {
+   "id": "ceb-2019-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "« Le lendemain, la vieille […] se retrouva dans son manoir […], une nuée de domestiques autour d'elle. Pour pouvoir leur donner ses ordres […], il lui fallait apprendre… » Quels pronoms désignent la vieille dame ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "conte-2"
+   ],
+   "choix": [
+    "elle",
+    "leur",
+    "il",
+    "lui"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "« autour d'elle », « il lui fallait » : la vieille. « leur » = les domestiques ; « il » est impersonnel."
+  },
+  {
+   "id": "ceb-2019-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "fr.grammaire",
+   "type": "grille",
+   "enonce": "Quelle est la structure de chaque phrase ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "lignes": [
+    "La fée vaquait à ses affaires aux quatre coins du monde.",
+    "Chaque fois que j'agite ma sonnette, des domestiques accourent à mon appel.",
+    "La fée était bonne fille."
+   ],
+   "colonnes": [
+    "CC – GS – V – CI",
+    "GS – V – CI – CC",
+    "GS – V – attribut",
+    "GS – V – CD – CC"
+   ],
+   "reponse": [
+    1,
+    0,
+    2
+   ],
+   "explication": "« à ses affaires » : CI ; « aux quatre coins du monde » : CC. « Chaque fois que… » : CC en tête. « bonne fille » : attribut."
+  },
+  {
+   "id": "ceb-2019-l8-q17",
+   "livret": 8,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Quelle est la décision finale de la fée ? Quelle morale peux-tu tirer de l'histoire ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "reponseModele": "La fée renvoie la vieille dans sa bouteille. Morale : qui veut toujours plus finit par tout perdre ; il faut savoir dire merci et se contenter de ce qu'on a."
+  },
+  {
+   "id": "ceb-2019-l8-q7b",
+   "livret": 8,
+   "numero": "7b",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Recopie une autre phrase dite par la fée.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "conte-1",
+    "conte-2",
+    "conte-3"
+   ],
+   "reponseModele": "« Très bien, lui dit-elle. Ce soir, avant de t'endormir, tourne-toi trois fois dans ton lit. »"
+  },
+  {
+   "id": "ceb-2019-l9-q1b",
+   "livret": 9,
+   "numero": "1b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quelle période conventionnelle associer ces faits ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "documents": [
+    "charbon-2"
+   ],
+   "lignes": [
+    "Des machines permettent de remonter des quantités énormes de charbon (mécanisation, 19e siècle).",
+    "Des pompes à eau (machine à vapeur) permettent de vider l'eau des puits (18e siècle)."
+   ],
+   "colonnes": [
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    2,
+    1
+   ],
+   "explication": "La mécanisation du 19e siècle : époque contemporaine. Les premières pompes à vapeur (18e siècle) : Temps modernes."
+  },
+  {
+   "id": "ceb-2019-l9-q2a",
+   "livret": 9,
+   "numero": "2a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Dans quelle province se trouve chaque site minier ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-provinces",
+   "documents": [
+    "mines-1",
+    "mines-2"
+   ],
+   "lignes": [
+    "Le Grand-Hornu",
+    "Blegny-Mine"
+   ],
+   "colonnes": [
+    "Liège",
+    "Namur",
+    "Hainaut",
+    "Luxembourg",
+    "Brabant wallon"
+   ],
+   "reponse": [
+    2,
+    0
+   ],
+   "explication": "Le Grand-Hornu est près de Mons (Hainaut) ; Blegny-Mine près de Liège."
+  },
+  {
+   "id": "ceb-2019-l9-q2b",
+   "livret": 9,
+   "numero": "2b",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Quelles provinces flamandes sont concernées par un bassin houiller (Campine) ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-provinces",
+   "documents": [
+    "mines-1",
+    "mines-2"
+   ],
+   "choix": [
+    "Limbourg",
+    "Flandre occidentale",
+    "Flandre orientale",
+    "Brabant flamand",
+    "Anvers"
+   ],
+   "reponse": [
+    0,
+    4
+   ],
+   "explication": "Le bassin de Campine s'étend dans le Limbourg et jusque dans la province d'Anvers."
+  },
+  {
+   "id": "ceb-2019-l9-q3a",
+   "livret": 9,
+   "numero": "3a",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Lithographie du complexe Cockerill (vers 1850). Écris un repère de la légende qui montre que ce lieu est en Région wallonne.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cours-eau",
+   "reponse": [
+    "Meuse",
+    "la Meuse",
+    "Pont de Seraing",
+    "le pont de Seraing",
+    "Seraing",
+    "Ligne de chemin de fer Liège–Namur",
+    "ligne Liège-Namur",
+    "Liège",
+    "Namur"
+   ],
+   "explication": "La Meuse, le pont de Seraing ou la ligne Liège–Namur."
+  },
+  {
+   "id": "ceb-2019-l9-q3b",
+   "livret": 9,
+   "numero": "3b",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "En 1953, le charbon de Blegny, chargé sur des péniches à Liège, ne pouvait PAS être livré par bateau…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-transports",
+   "documents": [
+    "voies"
+   ],
+   "choix": [
+    "jusqu'à Anvers.",
+    "jusqu'aux Pays-Bas.",
+    "jusqu'au nord de la France.",
+    "jusqu'à Arlon.",
+    "jusqu'à la province de Hainaut."
+   ],
+   "reponse": 3,
+   "explication": "Aucune voie navigable ne va jusqu'à Arlon."
+  },
+  {
+   "id": "ceb-2019-l9-q3c",
+   "livret": 9,
+   "numero": "3c",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "« Il n'y a pas de voies navigables dans la province de Luxembourg parce que les pentes sont trop fortes. » Quelle carte a permis cette proposition ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "choix": [
+    "Bassins hydrographiques",
+    "Relief",
+    "Régions naturelles",
+    "Précipitations annuelles"
+   ],
+   "reponse": 1,
+   "explication": "Les pentes se lisent sur la carte du relief."
+  },
+  {
+   "id": "ceb-2019-l9-q4a",
+   "livret": 9,
+   "numero": "4a",
+   "domaine": "hg.histoire",
+   "type": "numerique",
+   "enonce": "En quelle année est née la CECA (Communauté européenne du charbon et de l'acier) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "documents": [
+    "ue-1"
+   ],
+   "reponse": 1951,
+   "explication": "En 1951, six pays mettent en commun charbon et acier."
+  },
+  {
+   "id": "ceb-2019-l9-q4b",
+   "livret": 9,
+   "numero": "4b",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "D'après les documents sur l'Union européenne…",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-europe",
+   "documents": [
+    "ue-1",
+    "ue-2",
+    "europe"
+   ],
+   "lignes": [
+    "l'Autriche et le Portugal font partie de l'UE depuis la même année.",
+    "l'Espagne fait partie de l'UE depuis plus longtemps que la Pologne.",
+    "la Suisse fait partie de l'UE depuis 2004.",
+    "la Norvège fait partie de l'UE depuis 1995."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "explication": "Portugal et Espagne : 1986 ; Autriche : 1995 ; Pologne : 2004. La Suisse et la Norvège ne font pas partie de l'UE."
+  },
+  {
+   "id": "ceb-2019-l9-q4c",
+   "livret": 9,
+   "numero": "4c",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Tous les pays d'Europe font-ils partie de l'Union européenne ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-europe",
+   "documents": [
+    "europe"
+   ],
+   "choix": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": 1,
+   "explication": "Non : la Suisse, la Norvège, la Serbie… n'en font pas partie."
+  },
+  {
+   "id": "ceb-2019-l9-q5c",
+   "livret": 9,
+   "numero": "5c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "D'après la carte des gisements…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "gis-2"
+   ],
+   "lignes": [
+    "on exploite des mines de charbon ailleurs qu'en Belgique.",
+    "l'uranium est exploité en Amérique du Sud."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "On voit du charbon sur tous les continents ; aucun symbole d'uranium en Amérique du Sud."
+  },
+  {
+   "id": "ceb-2019-l9-q9",
+   "livret": 9,
+   "numero": "9",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Quelle période conventionnelle illustre chaque document ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Reconstitution d'un bateau romain (160-180 après J.-C.)",
+    "Caravelle de Christophe Colomb (fin du 15e siècle)",
+    "Péniche en 2017"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    1,
+    3,
+    4
+   ],
+   "explication": "Les Romains : Antiquité ; 1492 : début des Temps modernes ; aujourd'hui : époque contemporaine."
+  },
+  {
+   "id": "ceb-2019-l9-q10",
+   "livret": 9,
+   "numero": "10",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Quelle est la nature de ces traces du passé ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "traces-1",
+    "traces-2"
+   ],
+   "lignes": [
+    "Document 1 : livret d'ouvrier (19e siècle)",
+    "Document 2 : Hiercheur, bronze de Georges Petit",
+    "Document 3 : aquarelle de Van Gogh"
+   ],
+   "colonnes": [
+    "Photographie",
+    "Sculpture",
+    "Monument",
+    "Peinture",
+    "Document écrit"
+   ],
+   "reponse": [
+    4,
+    1,
+    3
+   ],
+   "explication": "Un livret : écrit ; un bronze : sculpture ; une aquarelle : peinture."
+  },
+  {
+   "id": "ceb-2019-l9-q8a",
+   "livret": 9,
+   "numero": "8a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Ixelles était rurale au 18e siècle. En 2019, cette région est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "regions"
+   ],
+   "choix": [
+    "rurale.",
+    "urbaine.",
+    "industrielle."
+   ],
+   "reponse": 1,
+   "explication": "Aujourd'hui, Ixelles est couverte de rues et de maisons : urbaine."
+  },
+  {
+   "id": "ceb-2019-l9-q8b",
+   "livret": 9,
+   "numero": "8b",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Chiny était rurale au 18e siècle. En 2019, cette région est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "regions"
+   ],
+   "choix": [
+    "rurale.",
+    "urbaine.",
+    "industrielle."
+   ],
+   "reponse": 0,
+   "explication": "Chiny (Gaume) reste entourée de forêts et de champs : rurale."
+  },
+  {
+   "id": "ceb-2019-l9-q12a",
+   "livret": 9,
+   "numero": "12a",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Le livret d'ouvrier est imposé par la loi du 10 novembre 1845. En quel siècle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "documents": [
+    "livret-1"
+   ],
+   "choix": [
+    "17e siècle",
+    "18e siècle",
+    "19e siècle",
+    "20e siècle"
+   ],
+   "reponse": 2,
+   "explication": "1845 appartient au 19e siècle (1801-1900)."
+  },
+  {
+   "id": "ceb-2019-l9-q12b",
+   "livret": 9,
+   "numero": "12b",
+   "domaine": "hg.histoire",
+   "type": "trous",
+   "enonce": "Le livret du mineur",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "livret-1"
+   ],
+   "texte": "Date de naissance de l'ouvrier : {1}  ·  Ville où le livret a été délivré : {2}",
+   "reponse": [
+    [
+     "11 janvier 1866",
+     "11/01/1866",
+     "11/1/1866"
+    ],
+    [
+     "Enghien"
+    ]
+   ],
+   "explication": "« né à … le 11 janvier 1866 » ; sceau de la ville d'Enghien."
+  },
+  {
+   "id": "ceb-2019-l9-q12c",
+   "livret": 9,
+   "numero": "12c",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Le livret du mineur : vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "livret-1",
+    "livret-2"
+   ],
+   "lignes": [
+    "Le mineur est sorti du « St Albert – Section de Péronnes » le 19 aout 1914.",
+    "Si le titulaire ne sait pas écrire, il trace une croix à la place de sa signature.",
+    "Une mine de charbon portait le nom de « Puits Sainte-Barbe »."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "« Sorti le dix-neuf aout 1914 » (indice 5). La signature est remplacée par celle de deux témoins (indice 2). Le cachet « Puits Ste-Barbe » (indice 3)."
+  },
+  {
+   "id": "ceb-2019-l9-q13b",
+   "livret": 9,
+   "numero": "13b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Cueillette, chasse, pêche, huttes, peaux de bêtes, outils en pierre taillée, feu, troc, nomades : au temps…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "choix": [
+    "des chasseurs-cueilleurs",
+    "des premiers agriculteurs",
+    "des Gallo-Romains",
+    "du Moyen Âge"
+   ],
+   "reponse": 0,
+   "explication": "Nomades qui chassent et cueillent : la Préhistoire des chasseurs-cueilleurs."
+  },
+  {
+   "id": "ceb-2019-l9-q1a",
+   "livret": 9,
+   "numero": "1a",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Coche les lignes du temps où représenter le carbonifère.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "charbon-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q5a",
+   "livret": 9,
+   "numero": "5a",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Place les gisements sur la carte du monde.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "gis-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q5b",
+   "livret": 9,
+   "numero": "5b",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Situe les océans Atlantique et Pacifique.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q5d",
+   "livret": 9,
+   "numero": "5d",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Classe les utilisations du cuivre.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q6",
+   "livret": 9,
+   "numero": "6",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Un paysage : photo au sol ou aérienne, caractéristiques, composantes.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q7",
+   "livret": 9,
+   "numero": "7",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Des terrils : altitude et localisation sur la carte.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "terrils"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q11",
+   "livret": 9,
+   "numero": "11",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Roues horaires : journée d'un enfant mineur (1860) et de Lucie (2019).",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q13a",
+   "livret": 9,
+   "numero": "13a",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Place les affirmations dans le tableau du mode de vie.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2019-l9-q14",
+   "livret": 9,
+   "numero": "14",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Complète la rose des vents.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  }
+ ]
+}
