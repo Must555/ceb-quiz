@@ -395,3 +395,89 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 }
 .mute a { color:var(--txt); font-weight:700; }
 a.btn { text-decoration:none; }
+
+/* ---------- Espace parents (Lot D) ---------- */
+.lien-parents { align-self:center; }
+.temps-jour { margin:6px 0 0; font-size:14px; font-weight:700; color:var(--mute); }
+.temps-jour.fini { color:var(--or); }
+.pause { text-align:center; max-width:440px; }
+.pause-e { font-size:56px; line-height:1; margin-bottom:6px; }
+.pause .modal-actions { justify-content:center; flex-wrap:wrap; }
+.parents { max-width:820px; margin:0 auto; padding:20px 16px 100px; display:flex; flex-direction:column; gap:16px; }
+.parents h1 { font-size:30px; font-weight:900; }
+.parents h2 { font-size:20px; font-weight:800; margin:0 0 10px; }
+.parents .carte p { line-height:1.5; }
+.parents-pin { max-width:440px; padding-top:48px; }
+.parents-pin .carte { display:flex; flex-direction:column; gap:8px; }
+.parents-pin .champ.pin { font-size:24px; letter-spacing:.4em; text-align:center; max-width:180px; }
+.p-pin-actions { display:flex; gap:10px; justify-content:space-between; margin-top:6px; }
+.p-note { font-size:13px; margin:6px 0 0; }
+.p-barre { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+.p-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.p-tete p { margin:4px 0 0; }
+.p-rebours { display:flex; align-items:center; gap:18px; background:var(--hero); color:var(--hero-txt); flex-wrap:wrap; }
+.p-rebours small.sur { display:block; font-weight:800; letter-spacing:.12em; text-transform:uppercase; font-size:12px; opacity:.85; }
+.p-rebours > div > b { font-family:var(--titre); font-size:40px; line-height:1; color:var(--hero-accent); }
+.p-rebours p { margin:0; flex:1 1 280px; }
+.p-enfants { display:flex; gap:8px; flex-wrap:wrap; }
+.p-enfant-titre { display:flex; align-items:center; gap:10px; font-size:24px !important; margin:6px 0 -4px !important; }
+.p-kpis { display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin-bottom:14px; }
+.p-kpis div { background:var(--panel2); border:var(--bord); border-radius:14px; padding:10px 12px; }
+.p-kpis b { display:block; font-family:var(--titre); font-size:26px; }
+.p-kpis small { color:var(--mute); font-size:12.5px; }
+.p-graph { display:grid; grid-template-columns:repeat(7, 1fr); gap:8px; align-items:end; height:190px; }
+.p-col { display:flex; flex-direction:column; align-items:center; gap:3px; height:100%; min-width:0; }
+.p-val { font-size:12px; font-weight:700; min-height:15px; }
+.p-barre-v { flex:1; width:100%; max-width:38px; display:flex; align-items:flex-end; border-bottom:2px solid var(--ligne); }
+.p-barre-v i { display:block; width:100%; background:var(--accent); border-radius:4px 4px 0 0; min-height:0; }
+.p-col small { font-size:11.5px; color:var(--mute); white-space:nowrap; }
+.p-col .p-pct { font-weight:700; color:var(--txt); min-height:14px; }
+.p-legende { font-size:12.5px; margin:8px 0 0; }
+.p-table { width:100%; border-collapse:collapse; margin-top:12px; font-size:14px; }
+.p-table th, .p-table td { text-align:left; padding:6px 8px; border-bottom:var(--bord); }
+.p-table th { color:var(--mute); font-weight:600; font-size:12.5px; }
+.p-seuils { display:flex; flex-direction:column; gap:10px; margin:10px 0; }
+.p-seuil { display:grid; grid-template-columns:110px 1fr 52px 190px; gap:10px; align-items:center; font-size:14px; }
+.p-seuil .etat { font-size:13px; color:var(--mute); }
+.p-jauge { position:relative; height:12px; border-radius:999px; background:rgba(127,127,127,.22); overflow:visible; }
+.p-jauge i { display:block; height:100%; border-radius:999px; background:var(--accent); }
+.p-trait { position:absolute; top:-4px; bottom:-4px; width:2px; background:var(--txt); opacity:.7; }
+.p-faibles { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
+.p-faibles li { display:grid; grid-template-columns:1fr 140px 48px; gap:10px; align-items:center; }
+.p-plan { padding-left:22px; margin:10px 0; display:flex; flex-direction:column; gap:10px; }
+.p-plan li > b { display:block; margin-bottom:4px; }
+.p-plan li > span { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+.p-plan .p-fiche-sem { font-size:13px; color:var(--txt); font-weight:700; margin-left:4px; }
+.p-notion { font-size:13px; padding:3px 9px; border-radius:999px; background:var(--panel2); border:var(--bord); }
+.p-limite { display:flex; flex-direction:column; gap:6px; font-weight:700; max-width:320px; }
+.p-bonus { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.p-pin-ligne { display:flex; gap:8px; max-width:320px; }
+.p-comprendre details { border-top:var(--bord); padding:8px 0; }
+.p-comprendre summary { cursor:pointer; font-weight:700; }
+.p-comprendre ul { margin:8px 0; padding-left:20px; line-height:1.5; }
+.p-sources { font-size:13px; }
+.p-sources a { color:var(--txt); }
+@media (max-width:760px) {
+  .p-kpis { grid-template-columns:repeat(2, 1fr); }
+  .p-seuil { grid-template-columns:90px 1fr 44px; }
+  .p-seuil .etat { grid-column:1 / -1; margin-top:-6px; }
+  .p-faibles li { grid-template-columns:1fr 80px 42px; }
+  .p-graph { gap:4px; }
+  .p-col small { font-size:10.5px; }
+}
+@media print {
+  body { background:#fff !important; color:#111 !important; }
+  .ecran:not(#ecran-parents), .navbas, .no-print, .p-comprendre, .toast { display:none !important; }
+  .parents { max-width:none; padding:0; gap:10px; }
+  .parents .carte { background:#fff !important; border:1px solid #bbb !important; box-shadow:none !important; backdrop-filter:none; color:#111; break-inside:avoid; }
+  .p-rebours, .p-rebours b { color:#111 !important; }
+  .mute, .p-kpis small, .p-col small, .p-seuil .etat { color:#444 !important; }
+  .p-kpis div, .p-notion { background:#f4f4f4 !important; border:1px solid #ccc !important; }
+  .p-barre-v i, .p-jauge i { background:#333 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .p-jauge { background:#ddd !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .p-trait { background:#111 !important; }
+}
+.p-barre .btn { padding:8px 12px; font-size:15px; }
+.p-faibles b, .p-seuil b { white-space:nowrap; }
+.print-only { display:none; }
+@media print { .print-only { display:block; } }

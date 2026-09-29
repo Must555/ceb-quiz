@@ -4,6 +4,7 @@ import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
+import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -90,6 +91,7 @@ function afficherConnexion(forcerCreation = false) {
         </div>
         <p style="margin-top:14px"><button class="btn" id="nouveau-joueur" style="width:100%">➕ Nouveau joueur</button></p>
       </section>
+      <button class="lien lien-parents" id="aller-parents">👪 Espace parents</button>
       <details class="carte"><summary style="cursor:pointer;font-weight:700">🔑 J'ai un code de sauvegarde</summary>
         <p class="mute" style="margin:8px 0">Colle le code copié sur un autre appareil pour retrouver ta progression.</p>
         <textarea id="code-import" class="champ" rows="3" style="font-size:13px"></textarea>
@@ -119,6 +121,7 @@ function afficherConnexion(forcerCreation = false) {
   if (!creation) {
     $$('.joueur-ligne', el).forEach((b) => b.onclick = () => { joueur = store.choisirJoueur(b.dataset.id); appliquerTheme(joueur.theme); afficherAccueil(); });
     $('#nouveau-joueur', el).onclick = () => afficherConnexion(true);
+    $('#aller-parents', el).onclick = () => afficherParents(() => afficherConnexion());
     $('#importer', el).onclick = () => {
       try { joueur = store.importerJoueur($('#code-import', el).value); appliquerTheme(joueur.theme); toast(`Content de te revoir, ${joueur.pseudo} !`); afficherAccueil(); }
       catch { $('#err-import', el).textContent = 'Ce code ne fonctionne pas. Vérifie qu\'il est complet.'; }
@@ -196,6 +199,7 @@ function afficherAccueil() {
         <button class="bientot" data-bientot><span>🏅</span>Collection</button>
         <button data-aller="reglages"><span>🎨</span>Mon style</button>
         <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
+        <button data-aller="parents"><span>👪</span>Parents</button>
       </nav>
       <div class="carte niveau">
         <b>⚡ Niveau ${nv.n} · ${nv.titre}</b>
@@ -205,7 +209,7 @@ function afficherAccueil() {
     </aside>
     <main class="main">
       <header class="top">
-        <div class="salut"><h1>Salut ${esc(joueur.pseudo)} 👋</h1><p>${phrase}</p></div>
+        <div class="salut"><h1>Salut ${esc(joueur.pseudo)} 👋</h1><p>${phrase}</p>${blocTemps()}</div>
         <div class="stats">
           <div class="stat"><span class="i">⭐</span><div><b>${joueur.xp.toLocaleString('fr-BE')}</b><small>XP</small></div></div>
           <div class="stat"><span class="i">🔥</span><div><b>${serie}</b><small>jour${serie > 1 ? 's' : ''}</small></div></div>
@@ -320,13 +324,40 @@ function afficherAccueil() {
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
   $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
   $$('[data-aller="progres"]', el).forEach((b) => b.onclick = afficherProgres);
+  $$('[data-aller="parents"]', el).forEach((b) => b.onclick = () => afficherParents(afficherAccueil));
   brancherCoach(el);
   $('#lancer', el).onclick = lancerPartie;
   majChoix();
 }
 
 // ============================================================ Partie
+// Limite de temps choisie par les parents : petit compteur à l'accueil, pause quand elle est atteinte.
+function blocTemps() {
+  const t = etatTemps(joueur, store.reglagesParents());
+  if (t.limite == null) return '';
+  return `<p class="temps-jour${t.atteint ? ' fini' : ''}">⏳ ${t.atteint ? 'Temps de jeu terminé pour aujourd\'hui' : `Encore ${t.restant} min de jeu aujourd'hui`}</p>`;
+}
+
+function afficherPause() {
+  const t = etatTemps(joueur, store.reglagesParents());
+  const fond = document.createElement('div');
+  fond.className = 'modal-fond';
+  fond.innerHTML = `<div class="modal carte pause" role="dialog" aria-modal="true" aria-labelledby="pause-titre">
+    <div class="pause-e">🌙</div>
+    <h2 id="pause-titre">C'est tout pour aujourd'hui !</h2>
+    <p>Tu as joué <b>${t.minutes} minutes</b> : c'est la limite fixée avec tes parents. Ton cerveau a bien travaillé, reviens demain pour garder ta série 🔥</p>
+    <p class="mute">Envie de continuer autrement ? Un examen ou une fiche sur papier, ça marche aussi 🖨️</p>
+    <div class="modal-actions"><a class="btn" href="imprimer.html">🖨️ Papier</a><button class="btn" id="pause-parent">👪 Code parent</button><button class="btn btn-cta" id="pause-ok">D'accord</button></div>
+  </div>`;
+  document.body.append(fond);
+  const fermer = () => fond.remove();
+  $('#pause-ok', fond).onclick = fermer;
+  $('#pause-parent', fond).onclick = () => { fermer(); afficherParents(afficherAccueil); };
+  $('#pause-ok', fond).focus();
+}
+
 async function lancerPartie() {
+  if (etatTemps(joueur, store.reglagesParents()).atteint) return afficherPause();
   const modeJeu = choix.mode;
   let examen = null;
   const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique };
@@ -634,6 +665,11 @@ function afficherReglages() {
       <button class="btn" id="copier">📋 Copier mon code</button>
     </section>
     <section class="carte">
+      <p class="etape-titre">👪 Pour les parents</p>
+      <p class="mute" style="margin:0 0 10px;font-size:14px">Bilan de la semaine, points faibles, temps d'écran et plan de révision jusqu'au CEB. Protégé par un code.</p>
+      <button class="btn" id="r-parents">👪 Espace parents</button>
+    </section>
+    <section class="carte">
       <p class="etape-titre">Joueur</p>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn" id="changer">🔁 Changer de joueur</button>
@@ -649,6 +685,7 @@ function afficherReglages() {
   $$('.couleurs button', el).forEach((b) => b.onclick = () => { $$('.couleurs button', el).forEach((x) => x.classList.toggle('sel', x === b)); joueur = store.modifier((j) => { j.couleur = b.dataset.c; }); rafraichirAva(); });
   $('#retour-accueil', el).onclick = afficherAccueil;
   $('#changer', el).onclick = () => { store.deconnecter(); afficherConnexion(); };
+  $('#r-parents', el).onclick = () => afficherParents(afficherReglages);
   $('#copier', el).onclick = async () => {
     const code = store.exporterJoueur(joueur);
     try { await navigator.clipboard.writeText(code); toast('Code copié ! 📋'); }
@@ -659,6 +696,211 @@ function afficherReglages() {
     if (!confirme) { confirme = true; $('#confirm-suppr', el).textContent = 'Toute ta progression sera effacée. Clique encore une fois pour confirmer.'; return; }
     store.supprimerJoueur(joueur.id); joueur = null; afficherConnexion();
   };
+}
+
+
+// ============================================================ Espace parents (Lot D)
+// Verrou léger : le code (4 chiffres, stocké haché) évite que l'enfant change ses propres réglages.
+// Ce n'est pas un coffre-fort : tout reste dans ce navigateur, rien n'est envoyé.
+let parentsOuvert = false;
+
+function afficherParents(retour) {
+  const el = $('#ecran-parents');
+  const reglages = store.reglagesParents();
+  const quitter = () => { parentsOuvert = false; retour(); };
+  if (!parentsOuvert) return ecranPin(el, reglages, () => { parentsOuvert = true; afficherParents(retour); }, quitter);
+
+  const joueurs = store.listeJoueurs();
+  const id = afficherParents.enfant && joueurs.some((j) => j.id === afficherParents.enfant) ? afficherParents.enfant : (joueur?.id ?? joueurs[0]?.id);
+  const enfant = id ? store.joueurParId(id) : null;
+  const onglets = joueurs.map((j) => `<button class="puce${j.id === id ? ' sel' : ''}" data-enfant="${j.id}">${j.avatar} ${esc(j.pseudo)}</button>`).join('');
+  const jRestants = Math.max(0, joursEntre(store.aujourdhui(), CEB.debut));
+
+  el.innerHTML = `<div class="parents">
+    <div class="p-barre no-print"><button class="btn" id="p-retour">← Retour</button>
+      <div class="p-actions">${enfant ? '<button class="btn" id="p-imprimer">🖨️ Imprimer le bilan</button>' : ''}<button class="btn" id="p-verrou">🔒 Fermer</button></div></div>
+    <header class="p-tete">
+      <h1>👪 Espace parents</h1>
+      <p class="mute">Tout reste sur cet appareil : aucun compte, aucune donnée envoyée.</p>
+      <p class="print-only">Bilan du ${esc(dateLongue(store.aujourdhui()))}</p>
+    </header>
+    <section class="carte p-rebours">
+      <div><small class="sur">CEB ${CEB.annee}</small><b>${jRestants ? `J − ${jRestants}` : 'C\'est parti !'}</b></div>
+      <p>${jRestants ? `Encore <b>${jRestants} jours</b> (environ ${Math.floor(jRestants / 7)} semaines) avant le lundi 21 juin ${CEB.annee}.` : 'Le CEB a commencé ou est terminé.'} Épreuves le matin : ${CEB.jours.map((d) => `${d.jour} (${d.matiere.toLowerCase()})`).join(', ')}.</p>
+    </section>
+    ${joueurs.length > 1 ? `<div class="p-enfants no-print" role="tablist" aria-label="Enfant">${onglets}</div>` : ''}
+    ${enfant ? blocsEnfant(enfant, reglages) : '<section class="carte"><p>Aucun joueur sur cet appareil pour l\'instant. Le bilan apparaîtra dès que votre enfant aura créé son joueur et joué une première partie.</p></section>'}
+    ${blocComprendre()}
+    <section class="carte no-print">
+      <h2>🔑 Code parent</h2>
+      <p class="mute">Changez le code à 4 chiffres qui protège cet espace.</p>
+      <div class="p-pin-ligne"><input class="champ" id="p-nouveau-pin" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="Nouveau code"><button class="btn" id="p-changer-pin">Changer</button></div>
+      <p class="erreur" id="p-err-pin"></p>
+    </section>
+  </div>`;
+  montrer('ecran-parents');
+
+  $('#p-retour', el).onclick = quitter;
+  $('#p-verrou', el).onclick = quitter;
+  $('#p-imprimer', el)?.addEventListener('click', () => window.print());
+  $$('[data-enfant]', el).forEach((b) => b.onclick = () => { afficherParents.enfant = b.dataset.enfant; afficherParents(retour); });
+  $('#p-changer-pin', el).onclick = () => {
+    const v = $('#p-nouveau-pin', el).value.trim();
+    if (!pinValide(v)) { $('#p-err-pin', el).textContent = 'Le code doit contenir exactement 4 chiffres.'; return; }
+    store.modifierParents((p) => { p.pinHash = hashPin(v); });
+    $('#p-nouveau-pin', el).value = ''; $('#p-err-pin', el).textContent = '';
+    toast('Nouveau code enregistré 🔑');
+  };
+  if (enfant) {
+    $('#p-limite', el).onchange = (e) => {
+      const v = e.target.value === '' ? null : Number(e.target.value);
+      store.modifierParents((p) => { p.limites[enfant.id] = v; });
+      afficherParents(retour);
+    };
+    $$('[data-bonus]', el).forEach((b) => b.onclick = () => {
+      store.modifierParents((p) => {
+        const jour = store.aujourdhui();
+        const actuel = p.bonus[enfant.id]?.[jour] ?? 0;
+        p.bonus[enfant.id] = { [jour]: b.dataset.bonus === 'illimite' ? 'illimite' : (actuel === 'illimite' ? 0 : actuel) + Number(b.dataset.bonus) };
+      });
+      toast('Temps ajouté pour aujourd\'hui ⏳');
+      afficherParents(retour);
+    });
+    $('#p-plan-tout', el)?.addEventListener('click', (e) => { $('#p-plan-suite', el).hidden = false; e.target.remove(); });
+  }
+}
+
+function ecranPin(el, reglages, ok, annuler) {
+  const creation = !reglages.pinHash;
+  el.innerHTML = `<div class="parents parents-pin"><section class="carte">
+    <h1>👪 Espace parents</h1>
+    ${creation ? `<p>Choisissez un <b>code à 4 chiffres</b> que votre enfant ne connaît pas. Il protège le bilan, la limite de temps d'écran et les réglages.</p>
+      <label class="etape-titre" for="pin1">Code</label><input class="champ pin" id="pin1" type="password" inputmode="numeric" maxlength="4" autocomplete="off">
+      <label class="etape-titre" for="pin2">Confirmez le code</label><input class="champ pin" id="pin2" type="password" inputmode="numeric" maxlength="4" autocomplete="off">`
+      : `<p>Entrez le code parent.</p><input class="champ pin" id="pin1" type="password" inputmode="numeric" maxlength="4" autocomplete="off" aria-label="Code parent">`}
+    <p class="erreur" id="err-pin"></p>
+    <div class="p-pin-actions"><button class="btn" id="pin-annuler">← Retour</button><button class="btn btn-cta" id="pin-ok">${creation ? 'Créer le code' : 'Entrer'}</button></div>
+    <p class="mute p-note">C'est un verrou simple : il évite que l'enfant modifie ses propres réglages, mais tout reste enregistré dans ce navigateur. ${creation ? '' : 'Code oublié ? Supprimez les données du site dans le navigateur (la progression sera aussi effacée), ou utilisez d\'abord le code de sauvegarde de chaque joueur.'}</p>
+  </section></div>`;
+  montrer('ecran-parents');
+  const valider = () => {
+    const a = $('#pin1', el).value.trim();
+    const err = $('#err-pin', el);
+    if (creation) {
+      const b = $('#pin2', el).value.trim();
+      if (!pinValide(a)) return err.textContent = 'Le code doit contenir exactement 4 chiffres.';
+      if (a !== b) return err.textContent = 'Les deux codes ne sont pas identiques.';
+      store.modifierParents((p) => { p.pinHash = hashPin(a); });
+      return ok();
+    }
+    if (!verifierPin(reglages, a)) { err.textContent = 'Code incorrect.'; $('#pin1', el).value = ''; return; }
+    ok();
+  };
+  $('#pin-ok', el).onclick = valider;
+  $('#pin-annuler', el).onclick = annuler;
+  $$('.pin', el).forEach((i) => i.addEventListener('keydown', (e) => { if (e.key === 'Enter') valider(); }));
+  $('#pin1', el).focus();
+}
+
+const NOMS_MAT = { fr: 'Français', ma: 'Maths', hg: 'Histoire-géo', sc: 'Sciences' };
+
+function blocsEnfant(j, reglages) {
+  const b = bilanSemaine(j);
+  const maxQ = Math.max(10, ...b.jours.map((x) => x.questions));
+  const evol = b.questions - b.semainePrecedente;
+  const faibles = faiblesses(j, donnees.fiches, 5);
+  const ind = indicateurCEB(j);
+  const plan = planRevision(j, donnees.fiches);
+  const temps = etatTemps(j, reglages);
+  const limite = reglages.limites?.[j.id] ?? null;
+  const pct = (x) => (x.posees ? Math.round((x.bonnes / x.posees) * 100) : 0);
+  const statutPlan = { fragile: '🟠', progres: '🟡', decouverte: '🆕' };
+  const semaine = (s, i) => `<li><b>${i === 0 ? 'Cette semaine' : `Semaine du ${new Date(s.debut + 'T12:00:00').toLocaleDateString('fr-BE', { day: 'numeric', month: 'long' })}`}</b>
+    <span>${s.notions.map((n) => `<span class="p-notion" title="${esc(STATUTS[n.statut]?.nom ?? '')}">${statutPlan[n.statut] ?? ''} ${esc(n.titre)}</span>`).join('')}
+      <a class="p-fiche-sem no-print" href="imprimer.html?mode=fiche&joueur=${encodeURIComponent(j.id)}&notions=${s.notions.slice(0, 4).map((n) => n.id).join(',')}">🖨️ fiche</a></span></li>`;
+
+  return `
+  <h2 class="p-enfant-titre">${ava(j, 40)} ${esc(j.pseudo)}</h2>
+
+  <section class="carte">
+    <h2>📅 Les 7 derniers jours</h2>
+    <div class="p-kpis">
+      <div><b>${b.questions}</b><small>questions${b.semainePrecedente || b.questions ? ` · ${evol >= 0 ? '+' : '−'}${Math.abs(evol)} vs semaine d'avant` : ''}</small></div>
+      <div><b>${b.questions ? b.pourcentage + ' %' : '—'}</b><small>de bonnes réponses</small></div>
+      <div><b>${b.minutes} min</b><small>de jeu</small></div>
+      <div><b>${b.joursActifs} / 7</b><small>jours actifs</small></div>
+    </div>
+    <div class="p-graph" role="img" aria-label="Questions par jour sur les 7 derniers jours : ${b.jours.map((x) => `${jourCourt(x.jour)} ${x.questions}`).join(', ')}">
+      ${b.jours.map((x) => `<div class="p-col" title="${esc(dateLongue(x.jour))} : ${x.questions} questions, ${x.bonnes} bonnes${x.secondes ? `, ${Math.round(x.secondes / 60)} min` : ''}">
+        <span class="p-val">${x.questions || ''}</span>
+        <div class="p-barre-v"><i style="height:${Math.round((x.questions / maxQ) * 100)}%"></i></div>
+        <small>${jourCourt(x.jour)}</small><small class="p-pct">${x.questions ? Math.round((x.bonnes / x.questions) * 100) + ' %' : ''}</small></div>`).join('')}
+    </div>
+    <p class="mute p-legende">Barres : questions répondues par jour. En dessous : pourcentage de bonnes réponses.</p>
+    ${Object.keys(b.parMatiere).length ? `<table class="p-table"><thead><tr><th>Matière (cette semaine)</th><th>Questions</th><th>Réussite</th></tr></thead><tbody>
+      ${Object.entries(b.parMatiere).map(([m, v]) => `<tr><td>${NOMS_MAT[m] ?? m}</td><td>${v.posees}</td><td>${pct(v)} %</td></tr>`).join('')}</tbody></table>` : ''}
+    ${b.examens.length ? `<p>📝 Examen${b.examens.length > 1 ? 's' : ''} blanc${b.examens.length > 1 ? 's' : ''} cette semaine : ${b.examens.map((e) => `<b>${e.pourcentage} %</b> (${e.questions} questions)`).join(', ')}.</p>` : ''}
+  </section>
+
+  <section class="carte">
+    <h2>🎯 Par rapport au CEB</h2>
+    <p class="mute">Pour réussir le CEB ${CEB.annee}, il faut au moins <b>${CEB.seuilMatiere} % dans chaque matière</b> et <b>${CEB.seuilMoyenne} % de moyenne</b>. Voici le taux de bonnes réponses de ${esc(j.pseudo)} depuis le début (indicatif : ce n'est pas une note du CEB).</p>
+    <div class="p-seuils">${ind.lignes.map((l) => `<div class="p-seuil">
+      <span class="nom">${l.nom}</span>
+      <div class="p-jauge" title="${l.pct ?? 0} %"><i style="width:${l.pct ?? 0}%"></i><span class="p-trait" style="left:${CEB.seuilMatiere}%"></span></div>
+      <b>${l.pct == null ? '—' : l.pct + ' %'}</b>
+      <span class="etat">${!l.assez ? `⏳ pas assez de questions (${l.posees})` : l.ok ? '✅ au-dessus de 50 %' : '⚠️ sous 50 %'}</span></div>`).join('')}</div>
+    <p>${ind.complet ? `Moyenne : <b>${ind.moyenne} %</b> ${ind.ok ? '✅ au-dessus des seuils' : ind.moyenne >= CEB.seuilMoyenne ? '⚠️ une matière reste sous 50 %' : '⚠️ sous les 60 %'}` : 'La moyenne s\'affichera quand chaque matière aura au moins 20 questions.'}</p>
+  </section>
+
+  <section class="carte">
+    <h2>🔎 Points faibles</h2>
+    ${!coachPret(j) ? `<p>Pas encore assez de réponses pour repérer les points faibles (il en faut une dizaine).</p>`
+      : faibles.length ? `<ul class="p-faibles">${faibles.map((x) => `<li><span>${x.fiche.e} ${esc(x.fiche.titre)}</span><div class="p-jauge"><i style="width:${Math.round(x.m * 100)}%"></i></div><b>${Math.round(x.m * 100)} %</b></li>`).join('')}</ul>
+        <p class="no-print"><a class="btn btn-cta" href="imprimer.html?mode=fiche&joueur=${encodeURIComponent(j.id)}">🖨️ Imprimer une fiche sur ces points faibles</a></p>`
+      : '<p>Aucun point faible repéré pour l\'instant 👏</p>'}
+    <p class="mute">${plan.maitrisees} notion${plan.maitrisees > 1 ? 's' : ''} maîtrisée${plan.maitrisees > 1 ? 's' : ''} sur ${plan.total}.</p>
+  </section>
+
+  <section class="carte">
+    <h2>🗓️ Plan de révision jusqu'au CEB</h2>
+    ${plan.joursRestants ? `<p>${plan.aTravailler} notion${plan.aTravailler > 1 ? 's' : ''} à travailler, environ <b>${plan.parSemaine} par semaine</b>. Rythme conseillé : <b>${plan.questionsParJour} questions par jour</b>, 5 jours par semaine (les missions ciblées du coach visent d'abord les notions fragiles ; chaque semaine a aussi sa fiche à imprimer).</p>
+    <ol class="p-plan">${plan.planning.slice(0, 4).map(semaine).join('')}</ol>
+    ${plan.planning.length > 4 ? `<button class="lien no-print" id="p-plan-tout">Voir tout le plan (${plan.planning.length} semaines)</button><ol class="p-plan" id="p-plan-suite" start="5" hidden>${plan.planning.slice(4).map((s2, i) => semaine(s2, i + 4)).join('')}</ol>` : ''}
+    ${plan.debutExamens ? `<p>🏁 À partir du <b>${new Date(plan.debutExamens + 'T12:00:00').toLocaleDateString('fr-BE', { day: 'numeric', month: 'long' })}</b> : un examen blanc complet par semaine (à l'écran ou sur papier), puis révision des erreurs.</p>` : ''}`
+      : '<p>Le CEB est commencé ou passé : plus de plan à proposer.</p>'}
+  </section>
+
+  <section class="carte no-print">
+    <h2>⏳ Temps d'écran</h2>
+    <p>Aujourd'hui : <b>${temps.minutes} min</b> de jeu${temps.limite != null ? ` sur ${temps.limite} min autorisées` : ''}.</p>
+    <label class="p-limite">Limite par jour pour ${esc(j.pseudo)}
+      <select class="champ" id="p-limite">${LIMITES.map((m) => `<option value="${m ?? ''}" ${m === limite ? 'selected' : ''}>${m == null ? 'Pas de limite' : `${m} minutes`}</option>`).join('')}</select></label>
+    <p class="mute">Quand la limite est atteinte, la partie en cours se termine normalement, puis le jeu propose une pause jusqu'au lendemain. Les examens papier restent possibles.</p>
+    ${limite != null ? `<div class="p-bonus"><span>Aujourd'hui seulement :</span><button class="btn petit" data-bonus="15">+15 min</button><button class="btn petit" data-bonus="30">+30 min</button><button class="btn petit" data-bonus="illimite">Sans limite</button></div>` : ''}
+  </section>`;
+}
+
+function blocComprendre() {
+  return `<section class="carte p-comprendre">
+    <h2>📘 Comprendre le CEB</h2>
+    <details open><summary>C'est quoi, le CEB ?</summary>
+      <p>Le <b>Certificat d'Études de Base</b> est l'épreuve externe commune que passent tous les élèves de 6e primaire en Fédération Wallonie-Bruxelles. Il clôture l'enseignement primaire. Les questions sont les mêmes pour toutes les écoles.</p></details>
+    <details><summary>Quand et quelles matières ?</summary>
+      <ul>${CEB.jours.map((d) => `<li><b>${d.jour} ${CEB.annee}</b> : ${d.matiere}</li>`).join('')}</ul>
+      <p>Les épreuves ont lieu le matin. Depuis 2026, les élèves suivent les nouveaux référentiels du <b>tronc commun</b> : le CEB ${CEB.annee} évalue ces attendus.</p></details>
+    <details><summary>Comment le réussir ?</summary>
+      <p>Il faut au moins <b>50 % dans chaque matière</b> (français, mathématiques, sciences, formation historique et géographique) <b>et</b> au moins <b>60 % de moyenne</b> sur l'ensemble. Ce seuil a été relevé par un décret du 19 mars 2026. En cas d'échec à l'épreuve, le jury de l'école peut encore accorder le CEB en tenant compte du dossier de l'élève. Depuis la rentrée 2026, un élève sans CEB entre quand même en 1re secondaire, avec un accompagnement renforcé.</p></details>
+    <details><summary>Comment Mission CEB aide votre enfant</summary>
+      <ul>
+        <li><b>Vraies questions</b> des CEB 2015 à 2026, en examen blanc ou mélangées à l'entraînement.</li>
+        <li><b>Questions générées à l'infini</b>, sans jamais répéter une question dans une même partie.</li>
+        <li><b>Coach</b> : il repère les notions fragiles, les fait revenir (révision espacée) et propose des missions ciblées.</li>
+        <li><b>Papier</b> : examens blancs et fiches ciblées à imprimer, avec corrigé séparé et questions de tracé.</li>
+      </ul>
+      <p class="mute">Les réponses des examens officiels ont été établies par l'équipe Mission CEB (les corrigés officiels n'étaient pas disponibles) : en cas de doute, fiez-vous au corrigé de l'école.</p></details>
+    <p class="mute p-sources">Sources : <a href="https://ligue-enseignement.be/education-enseignement/articles/breves/ceb-ce1d-et-cess-de-juin-2027-les-dates-et-infos-pratiques-des-epreuves" target="_blank" rel="noopener">Ligue de l'Enseignement</a> · <a href="https://exercices-ceb.be/ceb-2027" target="_blank" rel="noopener">exercices-ceb.be</a> · <a href="https://www.bruxelles-j.be/etudier-se-former/enseignement-secondaire/le-ceb-le-certificat-detude-de-base/" target="_blank" rel="noopener">Bruxelles-J</a> · <a href="https://www.enseignement.be" target="_blank" rel="noopener">enseignement.be</a></p>
+  </section>`;
 }
 
 // Accès pour les tests automatiques uniquement (?debug dans l'adresse).

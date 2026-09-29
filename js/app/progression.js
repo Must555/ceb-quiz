@@ -92,6 +92,13 @@ export function enregistrerSession(j, resume, modeJeu, jour = aujourdhui()) {
   jr.questions += resume.questions;
   jr.bonnes += resume.bonnes;
   jr.sessions += 1;
+  // Pour l'espace parents : temps de jeu et matières du jour.
+  jr.secondes = (jr.secondes ?? 0) + (resume.dureeSecondes ?? 0);
+  jr.mat ??= {};
+  for (const [dom, v] of Object.entries(resume.parDomaine)) {
+    const c = (jr.mat[dom.split('.')[0]] ??= { posees: 0, bonnes: 0 });
+    c.posees += v.posees; c.bonnes += v.bonnes;
+  }
   if (resume.questions >= 10) jr.meilleurPct = Math.max(jr.meilleurPct, resume.pourcentage);
   jr.meilleureSerie = Math.max(jr.meilleureSerie, resume.meilleureSerie);
   if (modeJeu === 'defi') jr.defiDuJourFait = true;

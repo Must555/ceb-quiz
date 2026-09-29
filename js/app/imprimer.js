@@ -191,6 +191,7 @@ function charger(code) {
   erreur(null);
   url.searchParams.set('code', c);
   url.searchParams.delete('mode');
+  url.searchParams.delete('joueur');
   history.replaceState(null, '', url);
   rendre();
   if (c[0] === 'T') majNotions();
@@ -245,9 +246,9 @@ function majNotions() {
   majBilan();
 }
 
-function initFiche(notionsUrl) {
+function initFiche(notionsUrl, idJoueur) {
   const joueurs = store.listeJoueurs();
-  joueurFiche = store.joueurActif() ?? joueurs[0] ?? null;
+  joueurFiche = (idJoueur && store.joueurParId(idJoueur)) || store.joueurActif() || joueurs[0] || null;
   const sel = $('#pf-joueur');
   if (joueurs.length) {
     $('#pf-joueur-bloc').hidden = false;
@@ -282,7 +283,7 @@ async function demarrer() {
     throw e;
   }
   const params = new URL(location.href).searchParams;
-  initFiche((params.get('notions') ?? '').split(',').filter((n) => donnees.fiches[n]));
+  initFiche((params.get('notions') ?? '').split(',').filter((n) => donnees.fiches[n]), params.get('joueur'));
   $$('#formats button').forEach((b) => b.onclick = () => {
     if (b.dataset.f === 'T') {
       // On montre d'abord le choix des notions ; la fiche est créée avec « Créer la fiche ».

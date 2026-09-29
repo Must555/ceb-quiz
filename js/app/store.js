@@ -120,3 +120,23 @@ export function importerJoueur(code) {
   ecrire();
   return s.joueurs[j.id];
 }
+
+// Réglages de l'espace parents (communs à l'appareil) : PIN haché, limites de temps, bonus du jour.
+export function reglagesParents() {
+  const s = lire();
+  s.parents ??= { pinHash: null, limites: {}, bonus: {} };
+  return s.parents;
+}
+
+export function modifierParents(fn) {
+  const p = reglagesParents();
+  fn(p);
+  ecrire();
+  return p;
+}
+
+export function joueurParId(id) {
+  const j = lire().joueurs[id] ?? null;
+  if (j) { j.notions ??= {}; j.aRevoir ??= {}; }
+  return j;
+}
