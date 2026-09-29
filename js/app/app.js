@@ -192,6 +192,7 @@ function afficherAccueil() {
       <nav class="nav">
         <button class="actif"><span>🏠</span>Accueil</button>
         <button data-aller="progres"><span>📊</span>Progrès</button>
+        <a class="nav-lien" href="imprimer.html"><span>🖨️</span>Examen papier</a>
         <button class="bientot" data-bientot><span>🏅</span>Collection</button>
         <button data-aller="reglages"><span>🎨</span>Mon style</button>
         <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
@@ -255,7 +256,7 @@ function afficherAccueil() {
           </div>
           <h3 class="section-titre" style="margin-top:16px">📚 Quel livret ?</h3>
           <div class="livrets" id="choix-livret"><p class="mute">Chargement…</p></div>
-          <p class="mute" style="font-size:13px;margin:10px 0 0">Les questions à faire sur papier (tracés, dessins) sont retirées. 🔒 Les autres années arrivent bientôt.</p>
+          <p class="mute" style="font-size:13px;margin:10px 0 0">Les questions à faire sur papier (tracés, dessins) sont retirées ici. Pour t'entraîner sur papier, avec des tracés : <a href="imprimer.html">imprime un examen 🖨️</a>.</p>
         </section>
 
         <div class="go"><button class="btn btn-cta" id="lancer">Lancer la mission →</button></div>

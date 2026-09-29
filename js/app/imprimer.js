@@ -1,0 +1,199 @@
+// Page « Examen papier » : tirage, aperçu et impression de l'examen puis du corrigé.
+import { chargerDonnees, bonneReponseLisible } from '../engine/index.js';
+import { FORMATS, composerExamen, nouveauCode, lireCode } from '../engine/papier.js';
+import { esc } from './question-ui.js';
+
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const LETTRES = 'ABCDEFGHIJ';
+const case_ = '<span class="case" aria-hidden="true"></span>';
+
+let donnees = null;
+let examen = null;
+let vue = 'examen';
+
+// ------------------------------------------------------------------ rendu d'une question (examen)
+function zoneReponse(q) {
+  switch (q.type) {
+    case 'qcm':
+      return `<ul class="choix">${q.choix.map((c, i) => `<li>${case_}<b>${LETTRES[i]}.</b> ${esc(c)}</li>`).join('')}</ul>`;
+    case 'qcm_multi':
+      return `<p class="consigne">Coche toutes les bonnes réponses.</p><ul class="choix">${q.choix.map((c, i) => `<li>${case_}<b>${LETTRES[i]}.</b> ${esc(c)}</li>`).join('')}</ul>`;
+    case 'vrai_faux':
+      return `<p class="choix-ligne">${case_} Vrai &nbsp;&nbsp;&nbsp; ${case_} Faux</p>`;
+    case 'numerique':
+      return `<p class="ligne-rep">Réponse : <span class="pointilles"></span>${q.unite ? ` ${esc(q.unite)}` : ''}</p>`;
+    case 'texte_court':
+      return '<p class="ligne-rep">Réponse : <span class="pointilles long"></span></p>';
+    case 'trous':
+      return `<p class="trous">${esc(q.texte ?? '').replace(/\{\d+\}/g, '<span class="trou"></span>')}</p>`;
+    case 'grille':
+      return `<table class="grille"><thead><tr><th></th>${q.colonnes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead>
+        <tbody>${q.lignes.map((l) => `<tr><td>${esc(l)}</td>${q.colonnes.map(() => `<td class="c">${case_}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    case 'ordre':
+      return `<p class="consigne">Numérote de 1 à ${q.elements.length} dans le bon ordre.</p><ul class="choix">${q.elements.map((e) => `<li><span class="case num"></span>${esc(e)}</li>`).join('')}</ul>`;
+    case 'association':
+      return `<p class="consigne">Écris la lettre qui convient dans chaque case.</p><div class="asso">
+        <ul>${q.gauche.map((g, i) => `<li>${i + 1}. ${esc(g)} <span class="case num"></span></li>`).join('')}</ul>
+        <ul>${q.droite.map((d, k) => `<li><b>${LETTRES[k]}.</b> ${esc(d)}</li>`).join('')}</ul></div>`;
+    case 'ouverte':
+      return '<div class="lignes"><span></span><span></span><span></span></div>';
+    case 'trace':
+      return `<div class="figure">${q.figure}</div>`;
+    default:
+      return '<div class="lignes"><span></span><span></span></div>';
+  }
+}
+
+const origine = (q) => (q.source === 'examen'
+  ? `CEB ${q.annee}${q.referentiel === 'tronc_commun' ? ' (tronc commun)' : ''} · livret ${q.livret} · question ${q.numero}`
+  : '');
+
+function documents(q, avecDocs) {
+  const docs = q.docsResolus ?? [];
+  if (!docs.length) return '';
+  if (!avecDocs) return `<p class="doc-ref">📄 Document : portfolio du CEB ${q.annee}, page ${docs.map((d) => d.page).join(', ')}.</p>`;
+  return docs.map((d) => `<figure class="doc"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}"><figcaption>Portfolio du CEB ${q.annee}, page ${d.page} — ${esc(d.titre)}</figcaption></figure>`).join('');
+}
+
+function questionExamen(q, avecDocs, docsDejaImprimes) {
+  // Un document partagé par plusieurs questions n'est imprimé qu'une fois.
+  const nouveaux = (q.docsResolus ?? []).filter((d) => !docsDejaImprimes.has(d.fichier));
+  nouveaux.forEach((d) => docsDejaImprimes.add(d.fichier));
+  const dejaVu = (q.docsResolus ?? []).length && !nouveaux.length;
+  const blocDocs = dejaVu ? `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.page).join(', ')}).</p>`
+    : documents({ ...q, docsResolus: nouveaux }, avecDocs);
+  return `<article class="question${q.type === 'trace' ? ' q-trace' : ''}${nouveaux.length && avecDocs ? ' avec-doc' : ''}">
+    <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce)}</p><span class="bareme">… / ${q.pointsPapier}</span></header>
+    ${origine(q) ? `<p class="origine">${esc(origine(q))}</p>` : ''}
+    ${blocDocs}
+    ${zoneReponse(q)}
+  </article>`;
+}
+
+// ------------------------------------------------------------------ rendu du corrigé
+function reponseCorrige(q) {
+  if (q.type === 'trace') return `<p>${esc(q.reponseTexte)}</p><div class="figure solution">${q.solution}</div>`;
+  if (q.type === 'qcm') return `<p><b>${LETTRES[q.reponse]}.</b> ${esc(q.choix[q.reponse])}</p>`;
+  if (q.type === 'qcm_multi') return `<p>${q.reponse.map((i) => `<b>${LETTRES[i]}.</b> ${esc(q.choix[i])}`).join(' · ')}</p>`;
+  if (q.type === 'association') return `<p>${q.reponse.map(([g, d]) => `${g + 1} → <b>${LETTRES[d]}</b>`).join(' · ')}</p>`;
+  if (q.type === 'trous') return `<p>${q.reponse.map((r, i) => `(${i + 1}) <b>${esc([].concat(r)[0])}</b>`).join(' · ')}</p>`;
+  if (q.type === 'ordre') return `<p>${q.reponse.map((i, k) => `${k + 1}. ${esc(q.elements[i])}`).join('<br>')}</p>`;
+  if (q.type === 'ouverte') return `<p><i>Réponse modèle :</i> ${esc(q.reponseModele ?? '')}</p>`;
+  const autres = q.type === 'texte_court' && [].concat(q.reponse).length > 1 ? ` <span class="mute">(aussi accepté : ${[].concat(q.reponse).slice(1, 4).map(esc).join(', ')})</span>` : '';
+  return `<p class="pre"><b>${esc(bonneReponseLisible(q))}</b>${autres}</p>`;
+}
+
+function questionCorrige(q) {
+  const fiche = donnees.fiches[q.fiche];
+  return `<article class="question corrige">
+    <header><span class="num">${q.numeroPapier}</span><p class="enonce court">${esc(q.enonce)}</p><span class="bareme">${q.pointsPapier} pt${q.pointsPapier > 1 ? 's' : ''}</span></header>
+    ${reponseCorrige(q)}
+    ${q.explication ? `<p class="explication">💡 ${esc(q.explication)}</p>` : ''}
+    ${fiche ? `<p class="fiche">À revoir en cas d'erreur : « ${esc(fiche.titre)} »</p>` : ''}
+  </article>`;
+}
+
+// ------------------------------------------------------------------ page
+function entete(titre, sousTitre) {
+  return `<div class="entete">
+    <div class="marque"><span class="pastille">🚀</span><div><b>Mission CEB</b><small>${esc(titre)}</small></div></div>
+    <div class="code-bloc"><small>Code</small><b>${examen.code}</b></div>
+  </div>
+  <p class="sous-titre">${sousTitre}</p>`;
+}
+
+function rendre() {
+  const avecDocs = $('#opt-docs').checked;
+  const docsImprimes = new Set();
+  const pied = `<div class="pied">Mission CEB · ${esc(examen.nom)} · code ${examen.code} · ceb-quiz-bruxelles.netlify.app</div>`;
+  const htmlExamen = `<section class="feuille" data-vue="examen">
+    ${entete(`${examen.nom} — examen blanc`, `${examen.nbQuestions} questions · ${examen.duree} · total sur ${examen.total} points`)}
+    <div class="identite"><span>Prénom : <i></i></span><span>Date : <i></i></span><span class="score">Score : <i></i> / ${examen.total}</span></div>
+    <p class="consignes">Lis bien chaque question. Tu peux utiliser une latte, une équerre et un compas. Pas de calculatrice, sauf si la question le permet.</p>
+    ${examen.sections.map((s) => `<h2 class="section">${esc(s.titre)} <span>… / ${s.total}</span></h2>
+      ${s.questions.map((q) => questionExamen(q, avecDocs, docsImprimes)).join('')}`).join('')}
+    <p class="fin">Fin de l'examen. Relis tes réponses ! 🚀</p>
+    ${pied}
+  </section>`;
+  const htmlCorrige = `<section class="feuille" data-vue="corrige">
+    ${entete(`${examen.nom} — corrigé`, `Corrigé de l'examen ${examen.code} · total sur ${examen.total} points · les réponses aux questions de tracé sont dessinées en rouge (réduites).`)}
+    <p class="consignes">Pour les questions à plusieurs cases (tableaux, textes à trous, ordre…), on peut donner une partie des points pour chaque case juste.</p>
+    ${examen.sections.map((s) => `<h2 class="section">${esc(s.titre)} <span>${s.total} points</span></h2>
+      ${s.questions.map(questionCorrige).join('')}`).join('')}
+    ${pied.replace('· code', '· corrigé · code')}
+  </section>`;
+  $('#apercu').innerHTML = htmlExamen + htmlCorrige;
+  montrerVue();
+  const q = examen.sections.flatMap((s) => s.questions);
+  const nbTraces = q.filter((x) => x.type === 'trace').length;
+  const nbOff = q.filter((x) => x.source === 'examen').length;
+  $('#infos').textContent = `${examen.nbQuestions} questions dont ${nbOff} tirées des vrais CEB et ${nbTraces} tracé${nbTraces > 1 ? 's' : ''}.`;
+  $('#code').value = examen.code;
+  $$('#formats button').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.f === examen.format)));
+  document.title = `Examen ${examen.code} — Mission CEB`;
+}
+
+// Pied de page imprimé sur chaque feuille (boîtes de marge @page) : code + numéro de page.
+function majPied() {
+  if (!examen) return;
+  const style = $('#style-pied') ?? document.head.appendChild(Object.assign(document.createElement('style'), { id: 'style-pied' }));
+  const t = `Mission CEB · ${examen.nom}${vue === 'corrige' ? ' · CORRIGÉ' : ''} · code ${examen.code}`.replace(/"/g, '');
+  style.textContent = `@page { @bottom-left { content: "${t}"; font: 9pt Inter, sans-serif; color: #5b6070; }
+    @bottom-right { content: "page " counter(page) " / " counter(pages); font: 9pt Inter, sans-serif; color: #5b6070; } }`;
+}
+
+function montrerVue() {
+  majPied();
+  $$('.feuille').forEach((f) => { f.hidden = f.dataset.vue !== vue; });
+  $$('.onglet').forEach((o) => o.classList.toggle('actif', o.dataset.vue === vue));
+  document.body.dataset.vue = vue;
+}
+
+function charger(code) {
+  const c = lireCode(code);
+  if (!c) {
+    const err = $('#erreur');
+    err.textContent = 'Ce code n\'existe pas. Il ressemble à « C-7KQ4M » : une lettre, un tiret et 5 caractères.';
+    err.hidden = false;
+    return;
+  }
+  $('#erreur').hidden = true;
+  examen = composerExamen(donnees, c);
+  const url = new URL(location.href);
+  url.searchParams.set('code', c);
+  history.replaceState(null, '', url);
+  rendre();
+}
+
+async function imprimer(v) {
+  vue = v;
+  montrerVue();
+  // On attend que les images du portfolio soient chargées avant d'ouvrir l'impression.
+  const imgs = $$(`.feuille[data-vue="${v}"] img`);
+  await Promise.all(imgs.map((i) => (i.complete ? null : new Promise((r) => { i.onload = i.onerror = r; }))));
+  window.print();
+}
+
+async function demarrer() {
+  $('#formats').innerHTML = Object.entries(FORMATS).map(([f, x]) =>
+    `<button role="radio" data-f="${f}" aria-checked="false"><b>${esc(x.nom)}</b><small>${esc(x.description)} · ${esc(x.duree)}</small></button>`).join('');
+  try {
+    donnees = await chargerDonnees({ base: 'data/' });
+    donnees.banque.push(...await donnees.questionsExamens().catch(() => []));
+  } catch (e) {
+    $('#apercu').innerHTML = '<p class="chargement">Impossible de charger les questions. Vérifie ta connexion et recharge la page.</p>';
+    throw e;
+  }
+  $$('#formats button').forEach((b) => b.onclick = () => charger(nouveauCode(b.dataset.f)));
+  $('#nouveau').onclick = () => charger(nouveauCode(examen?.format ?? 'C'));
+  $('#form-code').onsubmit = (e) => { e.preventDefault(); charger($('#code').value); };
+  $('#opt-docs').onchange = rendre;
+  $$('.onglet').forEach((o) => o.onclick = () => { vue = o.dataset.vue; montrerVue(); });
+  $('#imprimer-examen').onclick = () => imprimer('examen');
+  $('#imprimer-corrige').onclick = () => imprimer('corrige');
+  const demande = new URL(location.href).searchParams.get('code');
+  charger(lireCode(demande) ?? nouveauCode('C'));
+}
+
+demarrer();

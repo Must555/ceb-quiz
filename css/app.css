@@ -393,3 +393,4 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
   .notion { grid-template-columns:30px 1fr auto; }
   .notion [data-fiche] { display:none; } /* sur téléphone : on touche 🎯, la fiche s'ouvre avant la mission */
 }
+.mute a { color:var(--txt); font-weight:700; }

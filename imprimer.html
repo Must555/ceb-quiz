@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Examen papier — Mission CEB</title>
+<meta name="description" content="Imprime un examen blanc du CEB tiré au hasard, avec son corrigé séparé et des questions de tracé.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23c6ff3d'/><text x='50' y='68' font-size='58' text-anchor='middle'>🖨️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/papier.css">
+</head>
+<body>
+  <header class="barre-outils">
+    <div class="outils-haut">
+      <a class="retour" href="./">← Mission CEB</a>
+      <h1>🖨️ Examen papier</h1>
+    </div>
+    <p class="intro">Un examen blanc tiré au hasard, à imprimer. Le corrigé s'imprime à part : garde-le pour la correction.</p>
+
+    <div class="formats" id="formats" role="radiogroup" aria-label="Format de l'examen"></div>
+
+    <div class="actions">
+      <button class="btn" id="nouveau">🎲 Nouveau tirage</button>
+      <form class="code" id="form-code">
+        <label for="code">Code</label>
+        <input id="code" autocomplete="off" spellcheck="false" maxlength="8" placeholder="C-7KQ4M">
+        <button class="btn petit" type="submit">Retrouver</button>
+      </form>
+      <span class="infos" id="infos"></span>
+    </div>
+    <p class="erreur" id="erreur" hidden></p>
+    <div class="actions">
+      <button class="btn cta" id="imprimer-examen">🖨️ Imprimer l'examen</button>
+      <button class="btn" id="imprimer-corrige">✅ Imprimer le corrigé</button>
+      <label class="option"><input type="checkbox" id="opt-docs" checked> Imprimer les documents du portfolio</label>
+    </div>
+    <p class="astuce">Pour obtenir un PDF, choisis « Enregistrer au format PDF » comme imprimante. Le code en bas de chaque page permet de retrouver le même examen et son corrigé.</p>
+    <nav class="onglets" aria-label="Aperçu">
+      <button class="onglet actif" data-vue="examen">Aperçu de l'examen</button>
+      <button class="onglet" data-vue="corrige">Aperçu du corrigé</button>
+    </nav>
+  </header>
+
+  <main id="apercu" aria-live="polite"><p class="chargement">Préparation de l'examen…</p></main>
+  <noscript><p style="padding:24px">Cette page a besoin de JavaScript.</p></noscript>
+  <script type="module" src="js/app/imprimer.js"></script>
+</body>
+</html>
