@@ -1,0 +1,4055 @@
+{
+ "id": "ceb-2023",
+ "annee": 2023,
+ "referentiel": "socles",
+ "titre": "CEB 2023",
+ "source": "FWB, épreuve externe commune 2023 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2023-06-26",
+   "points": 20,
+   "audio": null
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2023-06-26",
+   "points": 35
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2023-06-26",
+   "points": 40
+  },
+  {
+   "n": 4,
+   "matiere": "fr",
+   "titre": "Lire — texte informatif",
+   "date": "2023-06-27",
+   "points": 30
+  },
+  {
+   "n": 5,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2023-06-27",
+   "points": 60
+  },
+  {
+   "n": 6,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2023-06-29",
+   "points": 55
+  },
+  {
+   "n": 7,
+   "matiere": "fr",
+   "titre": "Lire — texte fictionnel",
+   "date": "2023-06-29",
+   "points": 35
+  },
+  {
+   "n": 8,
+   "matiere": "ma",
+   "titre": "Nombres et opérations",
+   "date": "2023-06-30",
+   "points": 70
+  },
+  {
+   "n": 9,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2023-06-30",
+   "points": 60
+  }
+ ],
+ "documents": [
+  {
+   "id": "cirque-1",
+   "page": 2,
+   "titre": "Tous en piste ! (1)",
+   "fichier": "assets/2023/pdf02.webp",
+   "alt": "Introduction et « L'histoire du cirque en Europe » : l'Antiquité (Circus Maximus) et le Moyen Âge (saltimbanques)."
+  },
+  {
+   "id": "cirque-2",
+   "page": 3,
+   "titre": "Tous en piste ! (2)",
+   "fichier": "assets/2023/pdf03.webp",
+   "alt": "Cadres 3 et 4 : Philip Astley et le cirque traditionnel au 18e siècle, le cirque contemporain, l'interdiction des animaux sauvages en 2014."
+  },
+  {
+   "id": "cirque-3",
+   "page": 4,
+   "titre": "Le cirque traditionnel",
+   "fichier": "assets/2023/pdf04.webp",
+   "alt": "Un divertissement populaire : numéros, Monsieur Loyal, piste circulaire de 13 mètres, chapiteau."
+  },
+  {
+   "id": "cirque-4",
+   "page": 5,
+   "titre": "Le cirque contemporain",
+   "fichier": "assets/2023/pdf05.webp",
+   "alt": "Un art : une histoire racontée, des artistes athlètes, comédiens et danseurs, des mises en scène spectaculaires."
+  },
+  {
+   "id": "cirque-5",
+   "page": 6,
+   "titre": "Les écoles de cirque",
+   "fichier": "assets/2023/pdf06.webp",
+   "alt": "Interview de l'école Circomédie de Fleurus : public, disciplines, esprit de coopération, formation professionnelle."
+  },
+  {
+   "id": "cycle-eau",
+   "page": 7,
+   "titre": "Le cycle de l'eau",
+   "fichier": "assets/2023/pdf07.webp",
+   "alt": "Schéma avec les lettres A (nuages), B (pluie), C (rivière), D (sous le sol) et E (flèches qui montent de la mer)."
+  },
+  {
+   "id": "ferme-1",
+   "page": 8,
+   "titre": "Des animaux de la ferme",
+   "fichier": "assets/2023/pdf08.webp",
+   "alt": "Cheval, lapin, chat, doryphore, mouche, fourmi."
+  },
+  {
+   "id": "ferme-2",
+   "page": 9,
+   "titre": "Classification des animaux de la ferme",
+   "fichier": "assets/2023/pdf09.webp",
+   "alt": "Arbre : yeux, bouche → squelette interne, 4 membres, poils (sabots : cheval ; incisives à croissance constante : lapin ; molaires sécantes : chat) ou squelette externe, 3 paires de pattes, antennes (constriction abdominale : fourmi ; élytres : doryphore ; 1 paire de balanciers : mouche)."
+  },
+  {
+   "id": "debit-1",
+   "page": 10,
+   "titre": "Le débit expiratoire de pointe (1)",
+   "fichier": "assets/2023/pdf10.webp",
+   "alt": "Tableau 1 : volume d'air expiré (l/min) par Pablo, Léa, Ethan et Théo lors de 4 tests."
+  },
+  {
+   "id": "debit-2",
+   "page": 11,
+   "titre": "Le débit expiratoire de pointe (2)",
+   "fichier": "assets/2023/pdf11.webp",
+   "alt": "Tableau 2 : débit moyen des hommes et des femmes selon l'âge (20 à 60 ans) et la taille."
+  },
+  {
+   "id": "flottaison-1",
+   "page": 12,
+   "titre": "La flottaison (expérience 1)",
+   "fichier": "assets/2023/pdf12.webp",
+   "alt": "Neuf objets posés sur l'eau : frigolite, éponge, pince en hêtre, clé en fer, boule en azobé, crayon en cèdre, vis, bouchon en liège, dé en plastique."
+  },
+  {
+   "id": "flottaison-2",
+   "page": 13,
+   "titre": "La flottaison (expérience 2)",
+   "fichier": "assets/2023/pdf13.webp",
+   "alt": "Une boule d'azobé coule dans l'eau douce et flotte dans l'eau salée."
+  },
+  {
+   "id": "flottaison-3",
+   "page": 14,
+   "titre": "La flottaison (expérience 3)",
+   "fichier": "assets/2023/pdf14.webp",
+   "alt": "Deux boites en métal de même masse : posée à plat, la boite flotte ; à la verticale ou écrasée, elle coule."
+  },
+  {
+   "id": "phenomenes",
+   "page": 15,
+   "titre": "Deux phénomènes naturels",
+   "fichier": "assets/2023/pdf15.webp",
+   "alt": "Récipient d'eau colorée fermé par un bouchon traversé d'un tube : le niveau descend au frigo et monte dans l'eau chaude."
+  },
+  {
+   "id": "circuit",
+   "page": 16,
+   "titre": "Le circuit électrique simple",
+   "fichier": "assets/2023/pdf16.webp",
+   "alt": "Trois circuits avec différents générateurs (dont un panneau photovoltaïque), récepteurs (ventilateur, moteur) et fils."
+  },
+  {
+   "id": "geocaching",
+   "page": 17,
+   "titre": "Le géocaching",
+   "fichier": "assets/2023/pdf17.webp",
+   "alt": "SMS reçu par Nora : rendez-vous à Arlon à 10 h 30 le 16 aout, chasse une heure après, piquenique de 13 h à 14 h, fin du jeu deux heures trente après."
+  },
+  {
+   "id": "caches-1",
+   "page": 18,
+   "titre": "Des caches en Wallonie (1)",
+   "fichier": "assets/2023/pdf18.webp",
+   "alt": "Carte : Hainaut, Brabant wallon, caches de Braine-le-Château (8), Waterloo (7), Spiennes (6)."
+  },
+  {
+   "id": "caches-2",
+   "page": 19,
+   "titre": "Des caches en Wallonie (2)",
+   "fichier": "assets/2023/pdf19.webp",
+   "alt": "Carte : Bruxelles (1), Cointe (2), Chaudfontaine (3), Mageroy (4) près d'Arlon, Vieuxville (5) ; provinces de Namur, Liège et Luxembourg."
+  },
+  {
+   "id": "tresors-1",
+   "page": 20,
+   "titre": "Les trésors (1 à 3)",
+   "fichier": "assets/2023/pdf20.webp",
+   "alt": "1 : gravure du Manneken-Pis (17e s.). 2 : astrolabe nautique (16e s.). 3 : photo d'un soldat (20e s.)."
+  },
+  {
+   "id": "tresors-2",
+   "page": 21,
+   "titre": "Les trésors (4 à 8)",
+   "fichier": "assets/2023/pdf21.webp",
+   "alt": "4 : bas-relief d'une moissonneuse des Trévires (2e s.). 5 : fibule mérovingienne (6e s.). 6 : silex taillé (vers 7 000 av. J.-C.). 7 : instruments de médecine de guerre, Waterloo (19e s.). 8 : lithographie du pilori (19e s.)."
+  },
+  {
+   "id": "decouverte",
+   "page": 22,
+   "titre": "La découverte de caches",
+   "fichier": "assets/2023/pdf22.webp",
+   "alt": "Photo A : une rue de Liège vue depuis la colline de Cointe. Photo B : une prairie et une ferme dans la région de Vieuxville."
+  },
+  {
+   "id": "mont-st-jean",
+   "page": 23,
+   "titre": "La ferme de Mont-Saint-Jean",
+   "fichier": "assets/2023/pdf23.webp",
+   "alt": "Photo 1 : la ferme au bord de la route (A). Photo 2 : vue aérienne avec des champs (B) et un rondpoint (C). Photo 3 : la ferme entre une zone boisée et une zone bâtie."
+  },
+  {
+   "id": "moissons-1",
+   "page": 24,
+   "titre": "Les moissons (1 à 3)",
+   "fichier": "assets/2023/pdf24.webp",
+   "alt": "1 : moissonneuse des Trévires (2e s.). 2 : moissonneuse mécanique tirée par des chevaux (1834). 3 : Très Riches Heures du duc de Berry (vers 1410), hommes et femmes aux champs."
+  },
+  {
+   "id": "moissons-2",
+   "page": 25,
+   "titre": "Les moissons (4 à 6)",
+   "fichier": "assets/2023/pdf25.webp",
+   "alt": "4 : fresque égyptienne (vers 4 000 av. J.-C.). 5 : moissonneuse-batteuse en Wallonie (2020). 6 : La moisson, Abel Grimmer (1607)."
+  },
+  {
+   "id": "cartes-1",
+   "page": 26,
+   "titre": "Des cartes de Belgique (1 et 2)",
+   "fichier": "assets/2023/pdf26.webp",
+   "alt": "Carte 1 : provinces et régions. Carte 2 : densité de population."
+  },
+  {
+   "id": "cartes-2",
+   "page": 27,
+   "titre": "Des cartes de Belgique (3 et 4)",
+   "fichier": "assets/2023/pdf27.webp",
+   "alt": "Carte 3 : régions naturelles et agriculture (élevages). Carte 4 : industries (sidérurgie, cimenteries, alimentaire…)."
+  },
+  {
+   "id": "trouble-1",
+   "page": 28,
+   "titre": "Une période trouble (1)",
+   "fichier": "assets/2023/pdf28.webp",
+   "alt": "Article sur Jules Hannecart, prisonnier au Stalag I A (extraits 1 à 5)."
+  },
+  {
+   "id": "trouble-2",
+   "page": 29,
+   "titre": "Une période trouble (2)",
+   "fichier": "assets/2023/pdf29.webp",
+   "alt": "Faire-part de décès de Gérard Barthélemy (extrait 6) et carte de l'Europe en 1942 (extrait 7)."
+  },
+  {
+   "id": "saisons-1",
+   "page": 30,
+   "titre": "Le cycle des saisons (1)",
+   "fichier": "assets/2023/pdf30.webp",
+   "alt": "La Terre autour du Soleil, équinoxes et solstices."
+  },
+  {
+   "id": "saisons-2",
+   "page": 31,
+   "titre": "Le cycle des saisons (2)",
+   "fichier": "assets/2023/pdf31.webp",
+   "alt": "Solstice d'été et solstice d'hiver : durée du jour et de la nuit."
+  },
+  {
+   "id": "manneken",
+   "page": 32,
+   "titre": "La garde-robe du Manneken-Pis",
+   "fichier": "assets/2023/pdf32.webp",
+   "alt": "Costumes : 1 anglais (offert en 1972), 2 indien (1931), 3 argentin (1958), 4 rwandais (2019) ; carte du monde avec les lettres A à D."
+  },
+  {
+   "id": "genie-1",
+   "page": 33,
+   "titre": "Le Génie de la Machine à Écrire (1)",
+   "fichier": "assets/2023/pdf33.webp",
+   "alt": "Début du récit d'Orianne Charpentier : Papa rapporte une machine à écrire, Jules la gagne à pile ou face."
+  },
+  {
+   "id": "genie-2",
+   "page": 34,
+   "titre": "Le Génie de la Machine à Écrire (2)",
+   "fichier": "assets/2023/pdf34.webp",
+   "alt": "Cassie invente le Génie ; premier vœu de Jules : son poids en bonbons."
+  },
+  {
+   "id": "genie-3",
+   "page": 35,
+   "titre": "Le Génie de la Machine à Écrire (3)",
+   "fichier": "assets/2023/pdf35.webp",
+   "alt": "Deuxième et troisième vœux ; Jules donne la machine à Cassie."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2023-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "Écris la suite et la fin de l'histoire (au moins 90 mots) et invente un titre. Début : « Aujourd'hui, c'est l'anniversaire de Louis. Comme chaque année, il attend avec impatience le cadeau de son grand-père car c'est lui qui a toujours les idées les plus originales. Enfin ! Le facteur sonne à la porte et lui remet un colis. Louis l'ouvre avec empressement et… quelle n'est pas sa surprise ! »",
+   "points": 35,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q1",
+   "livret": 3,
+   "numero": "1",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Complète le carrelage avec les bons carreaux.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un triangle équilatéral, un losange et un disque à partir des segments donnés.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Termine la frise.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les solides numérotés (polyèdre, prisme, pyramide, non-polyèdre).",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Écris le nom de la figure (triangle … …).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Plan du magasin de meubles : repère des emplacements, trace le trajet le plus court, complète par droite ou gauche.",
+   "points": 7,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un triangle rectangle et un parallélogramme de sommet commun A.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q10",
+   "livret": 3,
+   "numero": "10",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un octogone régulier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les quadrilatères selon leurs côtés et leurs angles.",
+   "points": 7,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Compte les axes de symétrie de la figure.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q13",
+   "livret": 3,
+   "numero": "13",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Reproduis le dessin de losanges.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Reproduis la constellation d'Orion en l'agrandissant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Coche le solide et le matériel (bâtonnets, boules) qui conviennent.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q16",
+   "livret": 3,
+   "numero": "16",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Découpe et colle les triangles sur le carré et le disque.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l3-q3",
+   "livret": 3,
+   "numero": "3",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Un carré et un triangle équilatéral sont des polygones réguliers. Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-quadrilateres",
+   "texte": "Ce sont des polygones réguliers parce que tous leurs {1} sont isométriques (de même longueur) et parce que tous leurs {2} sont isométriques (de même amplitude).",
+   "reponse": [
+    [
+     "côtés",
+     "cotes"
+    ],
+    [
+     "angles"
+    ]
+   ],
+   "explication": "Un polygone régulier a tous ses côtés de même longueur et tous ses angles de même amplitude."
+  },
+  {
+   "id": "ceb-2023-l3-q9b",
+   "livret": 3,
+   "numero": "9b",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Une porte est représentée par un parallélogramme A et un triangle B. Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-angles",
+   "texte": "La somme des angles du parallélogramme A est de {1} degrés.  ·  La somme des angles du triangle B est de {2} degrés.",
+   "reponse": [
+    [
+     "360"
+    ],
+    [
+     "180"
+    ]
+   ],
+   "explication": "La somme des angles d'un quadrilatère vaut 360° ; celle d'un triangle 180°."
+  },
+  {
+   "id": "ceb-2023-l4-q1",
+   "livret": 4,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Texte « Tous en piste ! ». Dans quelle partie se trouvent les réponses à ces questions ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "cirque-1",
+    "cirque-2",
+    "cirque-3",
+    "cirque-4",
+    "cirque-5"
+   ],
+   "lignes": [
+    "Où est né le cirque traditionnel ?",
+    "Dans quel type de cirques voit-on Monsieur Loyal ?",
+    "Qui a eu l'idée d'organiser des spectacles de chevaux ?"
+   ],
+   "colonnes": [
+    "L'histoire du cirque en Europe",
+    "Le cirque traditionnel",
+    "Le cirque contemporain",
+    "Les écoles de cirque"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "La naissance en Angleterre et Philip Astley sont dans l'histoire du cirque ; Monsieur Loyal présente le cirque traditionnel."
+  },
+  {
+   "id": "ceb-2023-l4-q2",
+   "livret": 4,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Range ces évènements de l'histoire du cirque dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "cirque-1",
+    "cirque-2"
+   ],
+   "elements": [
+    "Philip Astley a l'idée d'organiser des spectacles équestres.",
+    "Des acrobates, jongleurs, dompteurs présentent leurs tours dans des châteaux et sur des foires.",
+    "Les animaux sauvages sont interdits dans les cirques en Belgique.",
+    "L'apparition de la télévision provoque une baisse d'intérêt pour le cirque."
+   ],
+   "reponse": [
+    1,
+    0,
+    3,
+    2
+   ],
+   "explication": "Moyen Âge (saltimbanques), 18e siècle (Astley), dès 1950 (télévision), 2014 (interdiction)."
+  },
+  {
+   "id": "ceb-2023-l4-q3",
+   "livret": 4,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Au Moyen Âge, les saltimbanques proposaient différents numéros. Écris-en deux.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-1"
+   ],
+   "texte": "{1} et {2}",
+   "reponse": [
+    [
+     "acrobatie",
+     "l'acrobatie",
+     "acrobaties",
+     "jonglerie",
+     "la jonglerie",
+     "domptage",
+     "le domptage"
+    ],
+    [
+     "acrobatie",
+     "l'acrobatie",
+     "acrobaties",
+     "jonglerie",
+     "la jonglerie",
+     "domptage",
+     "le domptage"
+    ]
+   ],
+   "explication": "« Ils présentent des numéros d'acrobatie, de jonglerie, de domptage… »"
+  },
+  {
+   "id": "ceb-2023-l4-q4",
+   "livret": 4,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Dans les années septante, de jeunes artistes renouvèlent les arts du cirque… » Pourquoi ont-ils imaginé cette nouvelle forme de cirque ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-2"
+   ],
+   "reponseModele": "Parce que, dès 1950, le public montrait moins d'intérêt pour le cirque traditionnel (notamment à cause de la télévision)."
+  },
+  {
+   "id": "ceb-2023-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Pourquoi les numéros avec des animaux sauvages sont-ils interdits en Belgique ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-2"
+   ],
+   "reponseModele": "Pour protéger les animaux et veiller à leur bienêtre."
+  },
+  {
+   "id": "ceb-2023-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« Chaque numéro est construit de la même manière : tout au long de sa prestation, l'artiste cherche à provoquer une émotion de plus en plus forte chez le spectateur. » « sa prestation », c'est la prestation…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "choix": [
+    "du spectateur",
+    "du numéro",
+    "de l'artiste",
+    "de la musique"
+   ],
+   "reponse": 2,
+   "explication": "« sa » renvoie à l'artiste qui présente son numéro."
+  },
+  {
+   "id": "ceb-2023-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« Les artistes de cirque doivent être à la fois athlètes, comédiens, danseurs… Chacun d'eux joue un rôle dans l'histoire. » Cela veut dire que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "choix": [
+    "un seul artiste joue un rôle.",
+    "quelques artistes jouent un rôle.",
+    "presque tous les artistes jouent un rôle.",
+    "tous les artistes jouent un rôle."
+   ],
+   "reponse": 3,
+   "explication": "« Chacun d'eux » : chaque artiste, donc tous."
+  },
+  {
+   "id": "ceb-2023-l4-q8",
+   "livret": 4,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Le spectacle du cirque traditionnel cherche à provoquer des réactions. Écris-en deux citées dans le texte.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-3"
+   ],
+   "texte": "{1} et {2}",
+   "reponse": [
+    [
+     "émerveillement",
+     "l'émerveillement",
+     "la peur",
+     "peur",
+     "le rire",
+     "rire"
+    ],
+    [
+     "émerveillement",
+     "l'émerveillement",
+     "la peur",
+     "peur",
+     "le rire",
+     "rire"
+    ]
+   ],
+   "explication": "« Provoquer l'émerveillement, la peur, le rire. »"
+  },
+  {
+   "id": "ceb-2023-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "cirque-3",
+    "cirque-4"
+   ],
+   "lignes": [
+    "Les numéros du cirque contemporain sont uniquement des acrobaties.",
+    "La piste d'un cirque traditionnel est circulaire."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Les numéros sont « principalement d'acrobatie », pas uniquement. « La piste circulaire d'un diamètre de 13 mètres. »"
+  },
+  {
+   "id": "ceb-2023-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "À quel type de cirques se rapporte chaque information ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-3",
+    "cirque-4"
+   ],
+   "lignes": [
+    "Le spectacle est imaginé et créé par un metteur en scène.",
+    "Le spectacle est une suite de numéros sans rapport les uns avec les autres."
+   ],
+   "colonnes": [
+    "Cirque traditionnel",
+    "Cirque contemporain"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Les metteurs en scène créent les spectacles contemporains ; le traditionnel enchaine une douzaine de numéros indépendants."
+  },
+  {
+   "id": "ceb-2023-l4-q11",
+   "livret": 4,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Dans quelle partie du texte pourrais-tu ajouter ces informations ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "cirque-1",
+    "cirque-2",
+    "cirque-3",
+    "cirque-4",
+    "cirque-5"
+   ],
+   "lignes": [
+    "Les grandes familles de cirques apparaissent au début du 20e siècle.",
+    "Il existe une seule école qui organise une formation professionnelle aux arts du cirque en Belgique."
+   ],
+   "colonnes": [
+    "L'histoire du cirque en Europe",
+    "Une comparaison entre deux types de cirques",
+    "Les écoles de cirque"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Une date de l'histoire ; une information sur la formation."
+  },
+  {
+   "id": "ceb-2023-l4-q13",
+   "livret": 4,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "À la bibliothèque, que dois-tu utiliser pour vérifier les informations sur la comparaison du cirque traditionnel et du cirque contemporain ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "choix": [
+    "Un dictionnaire des synonymes",
+    "Le livre documentaire « Histoire du cirque d'hier à aujourd'hui »",
+    "Un livret publicitaire sur l'école de cirque Circomédie",
+    "Une revue avec l'interview « Tu seras trapéziste comme maman ! »",
+    "La brochure « 20 bricolages sur le thème du cirque »"
+   ],
+   "reponse": 1,
+   "explication": "Pour vérifier des informations, on consulte un documentaire sur le sujet."
+  },
+  {
+   "id": "ceb-2023-l4-q14a",
+   "livret": 4,
+   "numero": "14a",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Quel est l'esprit encouragé par la formation aux arts du cirque ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-5"
+   ],
+   "reponse": [
+    "un esprit de coopération et d'entraide",
+    "coopération et entraide",
+    "coopération",
+    "entraide",
+    "l'esprit de coopération",
+    "esprit de coopération et d'entraide",
+    "la coopération et l'entraide"
+   ],
+   "explication": "« Il n'y a pas d'esprit de compétition, mais bien un esprit de coopération et d'entraide. »"
+  },
+  {
+   "id": "ceb-2023-l4-q14b",
+   "livret": 4,
+   "numero": "14b",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Cite deux disciplines que l'enfant peut exercer à l'école Circomédie.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-5"
+   ],
+   "texte": "{1} et {2}",
+   "reponse": [
+    [
+     "acrobatie",
+     "l'acrobatie",
+     "jonglerie",
+     "la jonglerie",
+     "trapèze",
+     "le trapèze"
+    ],
+    [
+     "acrobatie",
+     "l'acrobatie",
+     "jonglerie",
+     "la jonglerie",
+     "trapèze",
+     "le trapèze"
+    ]
+   ],
+   "explication": "« Ils touchent à toutes les disciplines : acrobatie, jonglerie, trapèze… »"
+  },
+  {
+   "id": "ceb-2023-l4-q15",
+   "livret": 4,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Je termine mes études secondaires dans une option cirque et je veux devenir artiste professionnel. Dans quelle école puis-je suivre cette formation ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "cirque-5"
+   ],
+   "reponse": [
+    "l'École Supérieure des Arts du Cirque de Bruxelles",
+    "École Supérieure des Arts du Cirque de Bruxelles",
+    "École Supérieure des Arts du Cirque",
+    "l'École Supérieure des Arts du Cirque",
+    "ESAC"
+   ],
+   "explication": "« Ces jeunes ont la possibilité de poursuivre leur formation à l'École Supérieure des Arts du Cirque de Bruxelles. »"
+  },
+  {
+   "id": "ceb-2023-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "numerique",
+   "enonce": "Combien y a-t-il de paragraphes dans le cadre 4 de « L'histoire du cirque en Europe » (celui qui commence par « Au 20e siècle ») ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "cirque-2"
+   ],
+   "reponse": 2,
+   "explication": "Un paragraphe commence par « Au 20e siècle », l'autre par « Aujourd'hui »."
+  },
+  {
+   "id": "ceb-2023-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "Recopie un organisateur textuel qui introduit un paragraphe du cadre 3 (celui sur Philip Astley).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "cirque-2"
+   ],
+   "reponse": [
+    "Par la suite",
+    "À partir du 19e siècle",
+    "Au 18e siècle",
+    "A partir du 19e siecle",
+    "par la suite"
+   ],
+   "explication": "« Au 18e siècle », « Par la suite » et « À partir du 19e siècle » organisent le cadre 3."
+  },
+  {
+   "id": "ceb-2023-l4-q18",
+   "livret": 4,
+   "numero": "18",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« L'idéal est de commencer dans une école de cirque amateur. Pour ceux qui se destinent à devenir artistes professionnels, certaines écoles secondaires organisent une option spécifique. Ensuite, ces jeunes ont la possibilité de poursuivre leur formation… » Quel mot relie deux phrases ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "reponse": [
+    "Ensuite"
+   ],
+   "explication": "« Ensuite » marque l'étape suivante."
+  },
+  {
+   "id": "ceb-2023-l4-q19",
+   "livret": 4,
+   "numero": "19",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Ils rendent la représentation à la fois fantastique et insolite. » Par quel mot peut-on remplacer « insolite » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "choix": [
+    "comique",
+    "inhabituelle",
+    "ordinaire",
+    "incontournable"
+   ],
+   "reponse": 1,
+   "explication": "Insolite = qui surprend, inhabituel."
+  },
+  {
+   "id": "ceb-2023-l4-q20",
+   "livret": 4,
+   "numero": "20",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« Là, ils présentent des numéros d'acrobatie. » a la structure : Complément circonstanciel – Sujet – Verbe – Complément direct. Quelle phrase a la même structure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sujet-complements",
+   "choix": [
+    "Au Moyen Âge, des troupes de saltimbanques se forment.",
+    "Le spectacle, dans son ensemble, raconte une histoire.",
+    "Avant six ans, les enfants participent à des ateliers de psychomotricité.",
+    "Dans les années septante, de jeunes artistes renouvèlent les arts du cirque."
+   ],
+   "reponse": 3,
+   "explication": "« Dans les années septante » (CC), « de jeunes artistes » (S), « renouvèlent » (V), « les arts du cirque » (CD)."
+  },
+  {
+   "id": "ceb-2023-l4-q21",
+   "livret": 4,
+   "numero": "21",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Ils touchent à toutes les disciplines : acrobatie, jonglerie, trapèze… » Quel sens a « toucher à » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "Porter la main sur…",
+    "Être en contact avec quelque chose.",
+    "Apporter des modifications.",
+    "Faire l'expérience de…"
+   ],
+   "reponse": 3,
+   "explication": "Les enfants essaient toutes les disciplines."
+  },
+  {
+   "id": "ceb-2023-l4-q22",
+   "livret": 4,
+   "numero": "22",
+   "domaine": "fr.vocabulaire",
+   "type": "trous",
+   "enonce": "Écris un mot de la même famille (exemple : créativité → créatif, créer, création).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-familles-mots",
+   "texte": "renouveler → {1}  ·  émerveillement → {2}",
+   "reponse": [
+    [
+     "renouvellement",
+     "renouveau",
+     "nouveau",
+     "nouvelle",
+     "nouveauté",
+     "renouvèlement",
+     "renouvelable",
+     "nouvellement"
+    ],
+    [
+     "émerveiller",
+     "merveille",
+     "merveilleux",
+     "merveilleuse",
+     "émerveillé",
+     "émerveillée",
+     "merveilleusement"
+    ]
+   ],
+   "explication": "Renouveler → renouvellement, nouveau. Émerveillement → émerveiller, merveille, merveilleux."
+  },
+  {
+   "id": "ceb-2023-l5-q1a",
+   "livret": 5,
+   "numero": "1a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Observe la carte des caches (le nord est en haut).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-orientation",
+   "documents": [
+    "caches-1",
+    "caches-2"
+   ],
+   "lignes": [
+    "La province de Liège se trouve … de la province de Hainaut.",
+    "Braine-le-Château se situe … de la ville de Liège.",
+    "Mageroy se trouve dans la partie … de la province de Luxembourg."
+   ],
+   "colonnes": [
+    "nord",
+    "sud",
+    "est",
+    "ouest"
+   ],
+   "reponse": [
+    2,
+    3,
+    1
+   ],
+   "explication": "Liège est à droite du Hainaut (est). Braine-le-Château est à gauche de Liège (ouest). Mageroy est en bas de la province de Luxembourg (sud), près d'Arlon."
+  },
+  {
+   "id": "ceb-2023-l5-q1b",
+   "livret": 5,
+   "numero": "1b",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Kim, Sacha et Sami suivent des cours d'eau pour aller d'une cache à l'autre (Vieuxville est au bord de l'Ourthe).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-cours-eau",
+   "documents": [
+    "caches-2"
+   ],
+   "texte": "De la cache n°5 (Vieuxville) à la cache n°2 (Cointe, Liège), ils suivent l'{1}.  ·  De Liège à Namur, ils suivent la {2}.",
+   "reponse": [
+    [
+     "Ourthe"
+    ],
+    [
+     "Meuse"
+    ]
+   ],
+   "explication": "L'Ourthe coule de Vieuxville jusqu'à Liège. Liège et Namur sont toutes deux sur la Meuse."
+  },
+  {
+   "id": "ceb-2023-l5-q1d",
+   "livret": 5,
+   "numero": "1d",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quelle période conventionnelle se rapporte chaque trésor ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "documents": [
+    "tresors-1",
+    "tresors-2"
+   ],
+   "lignes": [
+    "Trésor n°2 : astrolabe nautique du 16e siècle",
+    "Trésor n°5 : fibule du 6e siècle (cimetière mérovingien)"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    3,
+    2
+   ],
+   "explication": "Le 16e siècle fait partie des Temps modernes (1492-1789). Le 6e siècle est au début du Moyen Âge (476-1492)."
+  },
+  {
+   "id": "ceb-2023-l5-q1f",
+   "livret": 5,
+   "numero": "1f",
+   "domaine": "hg.histoire",
+   "type": "association",
+   "enonce": "Associe chaque trésor au repère de temps qui lui correspond.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "documents": [
+    "tresors-1",
+    "tresors-2"
+   ],
+   "gauche": [
+    "Trésor 2 : astrolabe nautique (16e s.)",
+    "Trésor 4 : moissonneuse des Trévires (2e s.)",
+    "Trésor 6 : silex taillé d'un nomade (vers 7 000 av. J.-C.)",
+    "Trésor 7 : médecine de guerre, Waterloo (19e s.)"
+   ],
+   "droite": [
+    "Le temps des sociétés industrielles",
+    "Le temps des Gallo-Romains",
+    "Le temps des grands domaines et du développement des villes",
+    "Le temps des chasseurs-cueilleurs",
+    "Le temps des grandes découvertes techniques et géographiques"
+   ],
+   "reponse": [
+    [
+     0,
+     4
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "explication": "L'astrolabe sert aux grandes découvertes ; les Trévires vivaient à l'époque gallo-romaine ; un nomade de 7 000 av. J.-C. était chasseur-cueilleur ; Waterloo (1815) appartient au temps des sociétés industrielles."
+  },
+  {
+   "id": "ceb-2023-l5-q2a",
+   "livret": 5,
+   "numero": "2a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Photo A (une rue de Liège depuis la colline de Cointe) et photo B (une prairie près de Vieuxville) : quel type de photo ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "decouverte"
+   ],
+   "lignes": [
+    "Photo A",
+    "Photo B"
+   ],
+   "colonnes": [
+    "Photo au sol",
+    "Photo aérienne"
+   ],
+   "reponse": [
+    0,
+    0
+   ],
+   "explication": "Les deux photos sont prises à hauteur d'homme, depuis le sol."
+  },
+  {
+   "id": "ceb-2023-l5-q2b",
+   "livret": 5,
+   "numero": "2b",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Lequel de ces deux paysages…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "decouverte"
+   ],
+   "lignes": [
+    "est principalement constitué d'éléments naturels ?",
+    "est un paysage urbain ?",
+    "possède le plus d'espaces non bâtis ?"
+   ],
+   "colonnes": [
+    "Photo A",
+    "Photo B"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "A : une ville (maisons, voitures). B : une grande prairie et une ferme."
+  },
+  {
+   "id": "ceb-2023-l5-q2c",
+   "livret": 5,
+   "numero": "2c",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Les bâtiments visibles sur la photo B (région de Vieuxville) sont principalement des bâtiments…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "decouverte"
+   ],
+   "choix": [
+    "industriels",
+    "agricoles",
+    "commerciaux"
+   ],
+   "reponse": 1,
+   "explication": "Une ferme et un hangar au bord d'une prairie : des bâtiments agricoles."
+  },
+  {
+   "id": "ceb-2023-l5-q2d",
+   "livret": 5,
+   "numero": "2d",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Dans quelle province ont été prises les deux photos (Cointe et Vieuxville) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-provinces",
+   "documents": [
+    "caches-2"
+   ],
+   "reponse": [
+    "Liège",
+    "la province de Liège",
+    "province de Liège"
+   ],
+   "explication": "Cointe (à Liège) et Vieuxville sont dans la province de Liège."
+  },
+  {
+   "id": "ceb-2023-l5-q2e",
+   "livret": 5,
+   "numero": "2e",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Photos de la ferme de Mont-Saint-Jean : à quel élément correspond chaque lettre ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "mont-st-jean"
+   ],
+   "lignes": [
+    "A (photo 1)",
+    "B (photo 2)",
+    "C (photo 2)"
+   ],
+   "colonnes": [
+    "Espace boisé",
+    "Prairies, champs",
+    "Voies de communication",
+    "Bâtiments"
+   ],
+   "reponse": [
+    3,
+    1,
+    2
+   ],
+   "explication": "A montre la ferme (bâtiments), B les champs derrière, C le rondpoint (voie de communication)."
+  },
+  {
+   "id": "ceb-2023-l5-q2f",
+   "livret": 5,
+   "numero": "2f",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Photo n°3 : une zone peu humanisée et une zone très humanisée. Écris un élément aménagé par l'homme qui sépare ces deux zones.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "documents": [
+    "mont-st-jean"
+   ],
+   "reponse": [
+    "une route",
+    "la route",
+    "route",
+    "une autoroute",
+    "la chaussée",
+    "une voie de communication",
+    "une rue",
+    "une voie rapide",
+    "la route nationale"
+   ],
+   "explication": "Une route sépare la zone bâtie de la zone boisée et agricole."
+  },
+  {
+   "id": "ceb-2023-l5-q3",
+   "livret": 5,
+   "numero": "3",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Les documents sur les moissons permettent-ils de dire que c'est vrai ou faux ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "moissons-1",
+    "moissons-2"
+   ],
+   "lignes": [
+    "La mécanisation des outils nécessite malgré tout l'utilisation des animaux.",
+    "Les moissons sont réalisées uniquement lors de journées ensoleillées.",
+    "De tout temps, les moissons sont uniquement réalisées par des hommes.",
+    "Des machines agricoles motorisées sont utilisées à l'époque contemporaine.",
+    "Les moissons étaient déjà réalisées en 10 000 avant J.-C."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    2,
+    1,
+    0,
+    2
+   ],
+   "explication": "La moissonneuse mécanique de 1834 est tirée par des chevaux. Rien ne parle de la météo. Des femmes moissonnent sur le document 3. La moissonneuse-batteuse de 2020 est motorisée. Le plus ancien document date de 4 000 av. J.-C."
+  },
+  {
+   "id": "ceb-2023-l5-q4a",
+   "livret": 5,
+   "numero": "4a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "De quel continent proviennent ces costumes du Manneken-Pis ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "manneken"
+   ],
+   "lignes": [
+    "Costume n°1 : bourgeoisie anglaise (Royaume-Uni)",
+    "Costume n°3 : costume traditionnel d'Argentine"
+   ],
+   "colonnes": [
+    "Afrique",
+    "Amérique",
+    "Antarctique",
+    "Asie",
+    "Europe",
+    "Océanie"
+   ],
+   "reponse": [
+    4,
+    1
+   ],
+   "explication": "Le Royaume-Uni est en Europe ; l'Argentine en Amérique (du Sud)."
+  },
+  {
+   "id": "ceb-2023-l5-q4b",
+   "livret": 5,
+   "numero": "4b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Le costume n°2 a été offert le 09/01/1931 et le costume n°4 le 01/07/2019. Entre quels repères de la ligne du temps faut-il les placer ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "documents": [
+    "manneken"
+   ],
+   "choix": [
+    "n°2 entre 1920 et 1930 ; n°4 entre 2000 et 2010",
+    "n°2 entre 1930 et 1940 ; n°4 entre 2010 et 2020",
+    "n°2 entre 1930 et 1940 ; n°4 après 2020",
+    "n°2 entre 1910 et 1920 ; n°4 entre 2010 et 2020"
+   ],
+   "reponse": 1,
+   "explication": "1931 est juste après 1930 ; 2019 est juste avant 2020."
+  },
+  {
+   "id": "ceb-2023-l5-q4c",
+   "livret": 5,
+   "numero": "4c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Sur la carte du monde, quelle lettre indique chaque océan ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "manneken"
+   ],
+   "lignes": [
+    "L'océan Atlantique",
+    "L'océan Pacifique"
+   ],
+   "colonnes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "reponse": [
+    2,
+    1
+   ],
+   "explication": "C est entre l'Amérique et l'Afrique (Atlantique). B est à l'est de l'Asie (Pacifique). D est l'océan Indien, A l'océan Arctique."
+  },
+  {
+   "id": "ceb-2023-l5-q5",
+   "livret": 5,
+   "numero": "5",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Pour chaque proposition, quelle carte faut-il ajouter à celle qui est donnée ? (carte 1 : provinces ; carte 2 : densité de population ; carte 3 : régions naturelles et agriculture ; carte 4 : industries)",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "cartes-1",
+    "cartes-2"
+   ],
+   "lignes": [
+    "Carte 1 et … : le Luxembourg est la province avec la densité de population la plus basse.",
+    "Carte 2 et … : l'élevage porcin se pratique dans des provinces plus peuplées que l'élevage bovin.",
+    "Carte 3 et … : la zone côtière et les polders sont les seules régions avec une industrie alimentaire liée au poisson.",
+    "Carte 4 et … : la sidérurgie et la métallurgie se sont développées autour de Charleroi et Liège, à forte densité de population."
+   ],
+   "colonnes": [
+    "carte 1",
+    "carte 2",
+    "carte 3",
+    "carte 4"
+   ],
+   "reponse": [
+    1,
+    2,
+    3,
+    1
+   ],
+   "explication": "La densité est sur la carte 2, les élevages sur la carte 3, les industries (poisson, sidérurgie) sur la carte 4."
+  },
+  {
+   "id": "ceb-2023-l5-q6a",
+   "livret": 5,
+   "numero": "6a",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Les documents « Une période trouble » (Stalag I A, 1940-1945 ; faire-part de 1945) se rapportent à quel siècle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "documents": [
+    "trouble-1",
+    "trouble-2"
+   ],
+   "choix": [
+    "17e siècle",
+    "18e siècle",
+    "19e siècle",
+    "20e siècle",
+    "21e siècle"
+   ],
+   "reponse": 3,
+   "explication": "1940-1945 : 20e siècle."
+  },
+  {
+   "id": "ceb-2023-l5-q6b",
+   "livret": 5,
+   "numero": "6b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Ces documents concernent quel évènement marquant ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "documents": [
+    "trouble-1",
+    "trouble-2"
+   ],
+   "choix": [
+    "L'indépendance de la Belgique",
+    "La Première Guerre mondiale",
+    "La Seconde Guerre mondiale",
+    "La signature du Traité de Rome",
+    "Le premier homme dans l'espace"
+   ],
+   "reponse": 2,
+   "explication": "Prisonnier en 1940, libéré en 1945, l'Allemagne nazie : c'est la guerre 40-45."
+  },
+  {
+   "id": "ceb-2023-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Vrai ou faux d'après les extraits de l'article sur Jules Hannecart ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "trouble-1"
+   ],
+   "lignes": [
+    "Le soldat Jules Hannecart a été fait prisonnier le 28 mai 1940.",
+    "À la libération, au départ de Mol, les Montois sont rentrés chez eux en train.",
+    "Les prisonniers ont souffert du froid durant l'hiver 45."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    0,
+    0
+   ],
+   "explication": "« Fait prisonnier le 28 mai 1940 » (extrait 2). « Le retour s'effectua par train spécial » (extrait 5). « Entre 15 et 30 degrés sous zéro » en janvier 1945 (extrait 3)."
+  },
+  {
+   "id": "ceb-2023-l5-q6d1",
+   "livret": 5,
+   "numero": "6d1",
+   "domaine": "hg.histoire",
+   "type": "trous",
+   "enonce": "Faire-part de décès de Gérard Barthélemy, prisonnier politique (extrait 6).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "trouble-2"
+   ],
+   "texte": "Il est décédé en {1}.  ·  Le faire-part a été rédigé en {2}.",
+   "reponse": [
+    [
+     "mars 1944",
+     "03/1944"
+    ],
+    [
+     "mai 1945",
+     "05/1945"
+    ]
+   ],
+   "explication": "« Décédé […] en mars 1944 » ; « Namur, le 13 mai 1945 »."
+  },
+  {
+   "id": "ceb-2023-l5-q6d2",
+   "livret": 5,
+   "numero": "6d2",
+   "domaine": "hg.histoire",
+   "type": "qcm_multi",
+   "enonce": "Le faire-part est écrit plus d'un an après le décès. Coche les deux explications possibles. Sa famille…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "trouble-2"
+   ],
+   "choix": [
+    "ne savait pas qu'il était mort.",
+    "n'a pas eu le temps de le faire plus tôt.",
+    "ne l'aimait pas.",
+    "a dû attendre que la guerre soit finie."
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Mort dans un camp en Allemagne pendant la guerre, la nouvelle n'a pu arriver qu'après la libération (mai 1945)."
+  },
+  {
+   "id": "ceb-2023-l5-q6e",
+   "livret": 5,
+   "numero": "6e",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Quelle est la nature de l'extrait n°6 (faire-part de décès) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "trouble-2"
+   ],
+   "choix": [
+    "Monument",
+    "Photographie",
+    "Peinture",
+    "Sculpture",
+    "Graphique",
+    "Document écrit",
+    "Document audiovisuel"
+   ],
+   "reponse": 5,
+   "explication": "Un faire-part est un document écrit."
+  },
+  {
+   "id": "ceb-2023-l5-q6f",
+   "livret": 5,
+   "numero": "6f",
+   "domaine": "hg.histoire",
+   "type": "trous",
+   "enonce": "Complète l'arbre généalogique de Gérard Barthélemy grâce au faire-part (son frère est marié à Mathilde Hayot ; ses neveu et nièces sont Françoise, Geneviève et Michel).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "trouble-2"
+   ],
+   "texte": "Son frère : {1} Barthélemy  ·  Sa nièce (autre que Geneviève) : {2} Barthélemy",
+   "reponse": [
+    [
+     "Louis"
+    ],
+    [
+     "Françoise",
+     "Francoise"
+    ]
+   ],
+   "explication": "« Monsieur Louis Barthélemy, Madame Louis Barthélemy, née Mathilde Hayot » ; « Mesdemoiselles Françoise et Geneviève Barthélemy »."
+  },
+  {
+   "id": "ceb-2023-l5-q7a",
+   "livret": 5,
+   "numero": "7a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Dans l'hémisphère nord, quel jour est…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-terre-mouvements",
+   "documents": [
+    "saisons-1",
+    "saisons-2"
+   ],
+   "lignes": [
+    "le jour le plus long ?",
+    "le jour le plus court ?"
+   ],
+   "colonnes": [
+    "Équinoxe d'automne",
+    "Solstice d'hiver",
+    "Équinoxe de printemps",
+    "Solstice d'été"
+   ],
+   "reponse": [
+    3,
+    1
+   ],
+   "explication": "Au solstice d'été, la durée du jour est maximale ; au solstice d'hiver, elle est minimale."
+  },
+  {
+   "id": "ceb-2023-l5-q7b",
+   "livret": 5,
+   "numero": "7b",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Les informations permettent-elles de dire que c'est vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-terre-mouvements",
+   "documents": [
+    "saisons-1",
+    "saisons-2"
+   ],
+   "lignes": [
+    "Lors du solstice d'hiver en Belgique, la durée du jour est égale à la durée de la nuit.",
+    "Lors du solstice d'été chez nous, c'est l'hiver à Buenos Aires (hémisphère sud)."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Jour et nuit sont égaux aux équinoxes, pas au solstice. Quand l'hémisphère nord est en été, l'hémisphère sud est en hiver."
+  },
+  {
+   "id": "ceb-2023-l5-q8a",
+   "livret": 5,
+   "numero": "8a",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Situe ces astronomes dans le temps.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Georges Lemaître, astronome belge, développe en 1927 la théorie de l'« atome primitif »",
+    "Abu Mahmud Al-Khujandi construit un observatoire en Iran au 10e siècle"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    4,
+    2
+   ],
+   "explication": "1927 : Époque contemporaine. Le 10e siècle : Moyen Âge."
+  },
+  {
+   "id": "ceb-2023-l5-q8a2",
+   "livret": 5,
+   "numero": "8a2",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Et où ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "lignes": [
+    "Georges Lemaître (Belgique)",
+    "Al-Khujandi (Iran, en Asie)"
+   ],
+   "colonnes": [
+    "En Europe",
+    "Ailleurs dans le monde"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "La Belgique est en Europe ; l'Iran en Asie."
+  },
+  {
+   "id": "ceb-2023-l5-q8b",
+   "livret": 5,
+   "numero": "8b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Isaac Newton présente son télescope en 1672. Situe ces évènements par rapport à cette date.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "lignes": [
+    "L'invention de l'imprimerie (vers 1450)",
+    "La signature du Traité de Rome (1957)"
+   ],
+   "colonnes": [
+    "avant",
+    "durant",
+    "après"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "1450 < 1672 < 1957."
+  },
+  {
+   "id": "ceb-2023-l5-q8c",
+   "livret": 5,
+   "numero": "8c",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "La planète Neptune a été découverte en 1846. Quel scientifique vivait à ce moment-là ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "choix": [
+    "Stephen Hawking (20e et 21e siècles)",
+    "Edmond Halley (17e et 18e siècles)",
+    "Angeline Stickney (19e siècle)",
+    "Nicole-Reine Étable (18e siècle)",
+    "Christiaan Huygens (17e siècle)"
+   ],
+   "reponse": 2,
+   "explication": "1846 est au 19e siècle."
+  },
+  {
+   "id": "ceb-2023-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Un parcours de géocaching compte 78 km. Complète le tableau.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "texte": "Nora : 10 % = {1} km  ·  Jules : {2} % = 39 km  ·  Arthur : 30 % = {3} km  ·  Saïd : 70 % = {4} km",
+   "reponse": [
+    [
+     "7,8"
+    ],
+    [
+     "50"
+    ],
+    [
+     "23,4"
+    ],
+    [
+     "54,6"
+    ]
+   ],
+   "explication": "10 % de 78 = 7,8 km. 39 est la moitié de 78 : 50 %. 30 % = 3 × 7,8 = 23,4 km. 70 % = 7 × 7,8 = 54,6 km."
+  },
+  {
+   "id": "ceb-2023-l6-q2a",
+   "livret": 6,
+   "numero": "2a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Nous sommes le jeudi 29 juin 2023. L'excursion est prévue le mercredi 16 aout 2023. Combien de jours doit-on encore attendre ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "documents": [
+    "geocaching"
+   ],
+   "unite": "jours",
+   "reponse": 48,
+   "explication": "Il reste 1 jour en juin (le 30), 31 jours en juillet et 16 jours en aout : 1 + 31 + 16 = 48."
+  },
+  {
+   "id": "ceb-2023-l6-q2b",
+   "livret": 6,
+   "numero": "2b",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "« Nous devons être à Arlon à 10h30. La chasse au trésor commencera une heure après notre arrivée. Notre piquenique est prévu de 13h à 14h. Le jeu se termine deux heures trente après la fin du piquenique. »",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "documents": [
+    "geocaching"
+   ],
+   "texte": "Début de la chasse au trésor : {1}  ·  Fin du jeu : {2}",
+   "reponse": [
+    [
+     "11 h 30",
+     "11h30",
+     "11:30",
+     "11 h 30 min"
+    ],
+    [
+     "16 h 30",
+     "16h30",
+     "16:30",
+     "16 h 30 min"
+    ]
+   ],
+   "explication": "10 h 30 + 1 h = 11 h 30. 14 h + 2 h 30 = 16 h 30."
+  },
+  {
+   "id": "ceb-2023-l6-q3a",
+   "livret": 6,
+   "numero": "3a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Nora met dans son sac à dos vide (0,33 kg) : une veste de pluie, un stylo, une gourde, un piquenique, un carnet et une carte, dont les masses sont 380 g, 12 g, 1,050 kg, 210 g, 325 g et 40 g. Quelle est la masse du sac rempli, en kilogrammes ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "unite": "kg",
+   "reponse": 2.347,
+   "explication": "En grammes : 330 + 380 + 12 + 1 050 + 210 + 325 + 40 = 2 347 g = 2,347 kg."
+  },
+  {
+   "id": "ceb-2023-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Durée de marche de Nora en minutes : lundi 37, mardi 0, mercredi 25, jeudi 9, vendredi 0, samedi 13, dimanche 42. Quelle est la durée moyenne de marche par jour ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-moyenne",
+   "unite": "min",
+   "reponse": 18,
+   "explication": "Total : 126 min. Sur 7 jours (y compris les jours à 0) : 126 : 7 = 18 min."
+  },
+  {
+   "id": "ceb-2023-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Un podomètre indique : 480 pas, 6 min, 12 kcal. Complète (la marche est régulière).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "texte": "160 pas : {1} min et {2} kcal  ·  {3} pas : 24 min et {4} kcal  ·  {5} pas : {6} min et 18 kcal",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "4"
+    ],
+    [
+     "1920",
+     "1 920"
+    ],
+    [
+     "48"
+    ],
+    [
+     "720"
+    ],
+    [
+     "9"
+    ]
+   ],
+   "explication": "160 pas = 480 : 3, donc 6 : 3 = 2 min et 12 : 3 = 4 kcal. 24 min = 4 × 6 min : 1 920 pas, 48 kcal. 18 kcal = 1,5 × 12 : 720 pas, 9 min."
+  },
+  {
+   "id": "ceb-2023-l6-q6",
+   "livret": 6,
+   "numero": "6",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Pour une même distance, quand le moniteur fait 3 pas, Nora en fait 4. Le podomètre du moniteur indique 480 pas. Combien de pas Nora a-t-elle faits ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "unite": "pas",
+   "reponse": 640,
+   "explication": "480 : 3 = 160 groupes de 3 pas. Nora fait 160 × 4 = 640 pas."
+  },
+  {
+   "id": "ceb-2023-l6-q7a",
+   "livret": 6,
+   "numero": "7a",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Louna est née le 16 septembre 2007. Quel âge aura-t-elle en juillet 2023 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "unite": "ans",
+   "reponse": 15,
+   "explication": "En septembre 2023 elle aura 16 ans ; en juillet 2023, elle a encore 15 ans (pas assez pour louer un vélo)."
+  },
+  {
+   "id": "ceb-2023-l6-q7c",
+   "livret": 6,
+   "numero": "7c",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Location d'un vélo électrique : forfait de 1 € pour débloquer le vélo + 0,15 € par minute. Axel loue un vélo pendant 45 minutes. Combien paie-t-il ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-monnaie",
+   "unite": "€",
+   "reponse": 7.75,
+   "explication": "45 × 0,15 = 6,75 € ; + 1 € de forfait = 7,75 €."
+  },
+  {
+   "id": "ceb-2023-l6-q8a",
+   "livret": 6,
+   "numero": "8a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Que signifie toujours le préfixe « hecto » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "5 ×",
+    "10 ×",
+    "100 ×",
+    "500 ×"
+   ],
+   "reponse": 2,
+   "explication": "Hecto = 100 fois l'unité (1 hl = 100 l)."
+  },
+  {
+   "id": "ceb-2023-l6-q8b",
+   "livret": 6,
+   "numero": "8b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Combien de litres font 5 hl ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "5",
+    "10",
+    "100",
+    "500"
+   ],
+   "reponse": 3,
+   "explication": "5 × 100 l = 500 l."
+  },
+  {
+   "id": "ceb-2023-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les opérations (réponds par une fraction, exemple : 3/4).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-addition",
+   "texte": "1/4 + 3/8 = {1}  ·  1/2 − 1/6 = {2}",
+   "reponse": [
+    [
+     "5/8",
+     "10/16"
+    ],
+    [
+     "1/3",
+     "2/6",
+     "4/12"
+    ]
+   ],
+   "explication": "1/4 = 2/8, donc 2/8 + 3/8 = 5/8. 1/2 = 3/6, donc 3/6 − 1/6 = 2/6 = 1/3."
+  },
+  {
+   "id": "ceb-2023-l6-q14a",
+   "livret": 6,
+   "numero": "14a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Que représente le « 4 » dans 2,4 cm ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "choix": [
+    "4 cm",
+    "40 cm",
+    "4 mm",
+    "40 mm"
+   ],
+   "reponse": 2,
+   "explication": "Le 4 est au rang des dixièmes de cm, c'est-à-dire des millimètres."
+  },
+  {
+   "id": "ceb-2023-l6-q14b",
+   "livret": 6,
+   "numero": "14b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Que représente le « 2 » dans 12,5 l ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "choix": [
+    "2 dl",
+    "2 dal",
+    "2 l",
+    "2 cm³"
+   ],
+   "reponse": 2,
+   "explication": "Le 2 est au rang des unités : 2 litres."
+  },
+  {
+   "id": "ceb-2023-l6-q15",
+   "livret": 6,
+   "numero": "15",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un abat-jour cylindrique a un diamètre de 50 cm. Quelle longueur de ruban faut-il pour en faire exactement le tour ? (prends π = 3,14)",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-cercle",
+   "unite": "cm",
+   "reponse": 157,
+   "explication": "Circonférence = diamètre × 3,14 = 50 × 3,14 = 157 cm."
+  },
+  {
+   "id": "ceb-2023-l6-q20a",
+   "livret": 6,
+   "numero": "20a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Quelle est la grandeur la plus grande ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "6 cl",
+    "6,6 l",
+    "66 ml",
+    "660 dl"
+   ],
+   "reponse": 3,
+   "explication": "660 dl = 66 l : c'est le plus grand (6 cl = 0,06 l ; 66 ml = 0,066 l)."
+  },
+  {
+   "id": "ceb-2023-l6-q20b",
+   "livret": 6,
+   "numero": "20b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Quelle est la grandeur la plus grande ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "12 mm",
+    "120 m",
+    "1,2 dm",
+    "1 200 cm"
+   ],
+   "reponse": 1,
+   "explication": "120 m est le plus grand (1 200 cm = 12 m)."
+  },
+  {
+   "id": "ceb-2023-l6-q20c",
+   "livret": 6,
+   "numero": "20c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Quelle est la grandeur la plus grande ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "choix": [
+    "8,2 m²",
+    "82 dm²",
+    "820 cm²",
+    "0,82 dam²"
+   ],
+   "reponse": 3,
+   "explication": "0,82 dam² = 82 m² ; 82 dm² = 0,82 m² ; 820 cm² = 0,082 m²."
+  },
+  {
+   "id": "ceb-2023-l6-q9",
+   "livret": 6,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace sur l'instrument un trait indiquant 3,6 kg.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Calcule l'aire du tapis posé sur le carrelage.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Combien de boites A et B peut-on placer dans la caissette ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q13",
+   "livret": 6,
+   "numero": "13",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Plan du jardin : exprime chaque surface par une fraction.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q16",
+   "livret": 6,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Estime ce qu'il reste dans les boites de café, de céréales et le flacon de parfum.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q17",
+   "livret": 6,
+   "numero": "17",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Lis le graphique d'utilisation des écrans et complète le tableau.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q18",
+   "livret": 6,
+   "numero": "18",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Complète les mesures pour obtenir 1 m³.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l6-q19",
+   "livret": 6,
+   "numero": "19",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Entoure les enveloppes dans lesquelles ton livret peut entrer sans être plié.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l7-q1",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Récit « Le Génie de la Machine à Écrire ». Quel résumé correspond le mieux à cette histoire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "choix": [
+    "Un frère et une sœur se disputent une machine à écrire. La sœur invente un Génie pour la récupérer. Finalement, le frère fait disparaitre la machine et la sœur.",
+    "Un frère et une sœur se disputent une machine à écrire. La sœur invente une stratégie pour récupérer cette machine gagnée par le frère. Finalement, celui-ci la lui cède.",
+    "Un frère et une sœur se disputent une machine à écrire. Le frère crée un Génie qui réalise ses vœux. Finalement, il décide de se débarrasser de la machine.",
+    "Un frère et une sœur se disputent une machine à écrire. Le frère la gagne et découvre, grâce à sa sœur, qu'elle est magique. Finalement, ils se la partagent."
+   ],
+   "reponse": 1,
+   "explication": "Cassie invente le Génie pour récupérer la machine ; à la fin, Jules la lui donne."
+  },
+  {
+   "id": "ceb-2023-l7-q2",
+   "livret": 7,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Qui est la narratrice de ce texte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "choix": [
+    "Papa",
+    "Jules",
+    "Maman",
+    "Cassie"
+   ],
+   "reponse": 3,
+   "explication": "Cassie raconte : « mon petit frère Jules »."
+  },
+  {
+   "id": "ceb-2023-l7-q4",
+   "livret": 7,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Quelle est la manie de Papa quand il est énervé ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-1"
+   ],
+   "reponse": [
+    "se passer les mains sur la figure",
+    "il se passe les mains sur la figure",
+    "se passer les mains sur le visage",
+    "se frotter le visage",
+    "se passer la main sur la figure"
+   ],
+   "explication": "« Papa s'est passé les mains sur la figure. […] Une manie qu'il a quand il est énervé. »"
+  },
+  {
+   "id": "ceb-2023-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« — Waouh ! s'est exclamé mon petit frère Jules, 8 ans, mon châtiment sur cette terre. » Que veut dire Cassie ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "qu'elle est heureuse d'avoir un frère.",
+    "que c'est une vraie punition d'avoir ce frère.",
+    "qu'elle déteste son frère.",
+    "que son frère est la seule personne importante sur cette terre."
+   ],
+   "reponse": 1,
+   "explication": "Un châtiment est une punition : Cassie trouve son petit frère pénible (avec humour)."
+  },
+  {
+   "id": "ceb-2023-l7-q6",
+   "livret": 7,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Explique comment Cassie fait pour résoudre son problème (elle veut la machine que son frère a obtenue), puis comment le problème est résolu à la fin.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "reponseModele": "Elle fait croire à Jules qu'un Génie habite la machine et réalise ses vœux. À la fin, Jules lui donne la machine à écrire."
+  },
+  {
+   "id": "ceb-2023-l7-q7",
+   "livret": 7,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Je me suis approchée de la machine, le cœur battant. » Pourquoi Cassie a-t-elle le cœur battant ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-2"
+   ],
+   "reponseModele": "Elle est impatiente et nerveuse de découvrir si Jules a cru au Génie et a répondu à son message."
+  },
+  {
+   "id": "ceb-2023-l7-q8",
+   "livret": 7,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel est le deuxième vœu adressé au « Génie de la Machine à Écrire » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-3"
+   ],
+   "choix": [
+    "Faire disparaitre la machine à écrire.",
+    "Recevoir son poids en friandises.",
+    "Obtenir la meilleure note en français.",
+    "Faire disparaitre sa sœur."
+   ],
+   "reponse": 2,
+   "explication": "Premier vœu : les bonbons ; deuxième : la meilleure note au devoir de français."
+  },
+  {
+   "id": "ceb-2023-l7-q9",
+   "livret": 7,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Il en avait tiré la couette pour cacher le monticule sucré. » Que désigne « le monticule sucré » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "genie-2"
+   ],
+   "reponse": [
+    "les bonbons",
+    "le tas de bonbons",
+    "des bonbons",
+    "bonbons",
+    "les friandises",
+    "le tas de friandises",
+    "les paquets de bonbons"
+   ],
+   "explication": "Le tas de bonbons que Cassie a versé sur le lit."
+  },
+  {
+   "id": "ceb-2023-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Range ces étapes de l'histoire dans l'ordre.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "elements": [
+    "Une stratégie imaginée par Cassie",
+    "La découverte d'un objet étonnant",
+    "Une nouvelle propriétaire pour la machine",
+    "Un tirage au sort pour désigner le propriétaire de la machine"
+   ],
+   "reponse": [
+    1,
+    3,
+    0,
+    2
+   ],
+   "explication": "Papa rapporte la machine, pile ou face, Cassie invente le Génie, Jules lui donne la machine."
+  },
+  {
+   "id": "ceb-2023-l7-q11",
+   "livret": 7,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Qui est réellement le « Génie de la Machine à Écrire » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "reponse": [
+    "Cassie",
+    "sa sœur",
+    "la sœur de Jules",
+    "la narratrice"
+   ],
+   "explication": "C'est Cassie qui écrit les messages du Génie."
+  },
+  {
+   "id": "ceb-2023-l7-q12a",
+   "livret": 7,
+   "numero": "12a",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel sentiment éprouve Cassie quand son frère annonce qu'il veut la machine à écrire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1"
+   ],
+   "choix": [
+    "d'étonnement",
+    "de fierté",
+    "d'injustice",
+    "d'impatience"
+   ],
+   "reponse": 2,
+   "explication": "« Mais c'est trop injuste, pourquoi il l'aurait ? »"
+  },
+  {
+   "id": "ceb-2023-l7-q12b",
+   "livret": 7,
+   "numero": "12b",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel sentiment éprouve Cassie quand son frère lui donne la machine à écrire ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-3"
+   ],
+   "choix": [
+    "d'étonnement",
+    "de fierté",
+    "d'injustice",
+    "d'impatience"
+   ],
+   "reponse": 0,
+   "explication": "« Comme je restais bouche bée » : elle est étonnée."
+  },
+  {
+   "id": "ceb-2023-l7-q13",
+   "livret": 7,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "lignes": [
+    "Jules a reçu son poids en bonbons.",
+    "Jules a eu la meilleure note en français.",
+    "C'est Cassie qui écrit les trois vœux."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    1,
+    2,
+    1
+   ],
+   "explication": "Cassie achète une dizaine de paquets, pas son poids. On ne connait pas sa note. Les vœux sont écrits par Jules ; Cassie écrit les messages du Génie."
+  },
+  {
+   "id": "ceb-2023-l7-q14",
+   "livret": 7,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Pourquoi Jules signe-t-il son dernier message « ton ex-maître » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-3"
+   ],
+   "reponseModele": "Parce qu'il donne la machine (et donc le Génie) à sa sœur : il n'en est plus le maître."
+  },
+  {
+   "id": "ceb-2023-l7-q15",
+   "livret": 7,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "« — On partage ? »",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-3"
+   ],
+   "lignes": [
+    "Qui parle ?",
+    "À qui parle-t-on ?"
+   ],
+   "colonnes": [
+    "Papa",
+    "Maman",
+    "Cassie",
+    "Jules"
+   ],
+   "reponse": [
+    3,
+    2
+   ],
+   "explication": "Jules sort les bonbons de sous son lit et propose de les partager avec Cassie."
+  },
+  {
+   "id": "ceb-2023-l7-q17",
+   "livret": 7,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Louise : « À la fin, Jules veut que sa sœur disparaisse. » Sami : « Non ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-3"
+   ],
+   "choix": [
+    "Louise",
+    "Sami"
+   ],
+   "reponse": 1,
+   "explication": "Jules plaisante : il donne la machine à sa sœur et lui propose de partager les bonbons."
+  },
+  {
+   "id": "ceb-2023-l7-q18",
+   "livret": 7,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Le « Génie de la Machine à Écrire » existe-t-il vraiment dans cette histoire ? Justifie.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "genie-1",
+    "genie-2",
+    "genie-3"
+   ],
+   "reponseModele": "Non : c'est Cassie qui l'a inventé et qui écrit ses messages pour récupérer la machine."
+  },
+  {
+   "id": "ceb-2023-l7-q19a",
+   "livret": 7,
+   "numero": "19a",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Qui est « Je » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-accords",
+   "choix": [
+    "Jules",
+    "Cassie"
+   ],
+   "reponse": 1,
+   "explication": "« retournée » est au féminin."
+  },
+  {
+   "id": "ceb-2023-l7-q19b",
+   "livret": 7,
+   "numero": "19b",
+   "domaine": "fr.orthographe",
+   "type": "texte_court",
+   "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Recopie le mot qui montre que « Je » est une fille.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-participe-passe",
+   "reponse": [
+    "retournée"
+   ],
+   "souple": false,
+   "explication": "Avec l'auxiliaire être, le participe passé « retournée » s'accorde avec le sujet féminin."
+  },
+  {
+   "id": "ceb-2023-l7-q20",
+   "livret": 7,
+   "numero": "20",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« — Mais c'est trop injuste, pourquoi il l'aurait ? C'est moi qui veux être écrivain, pas lui ! » Que remplacent les pronoms ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "genie-1"
+   ],
+   "texte": "l' : {1}  ·  lui : {2}",
+   "reponse": [
+    [
+     "la machine à écrire",
+     "la machine",
+     "machine à écrire"
+    ],
+    [
+     "Jules",
+     "son frère",
+     "le frère"
+    ]
+   ],
+   "explication": "« l' » remplace la machine à écrire ; « lui » désigne Jules."
+  },
+  {
+   "id": "ceb-2023-l7-q22",
+   "livret": 7,
+   "numero": "22",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« J'ai retenu mon souffle. » a la structure : Sujet – Verbe – Complément direct. Quelle phrase a la même structure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sujet-complements",
+   "choix": [
+    "J'ai tout versé en pluie.",
+    "Je te la donne.",
+    "J'ai arraché la feuille.",
+    "J'ai tapé sans m'arrêter."
+   ],
+   "reponse": 2,
+   "explication": "« J' » (S) « ai arraché » (V) « la feuille » (CD)."
+  },
+  {
+   "id": "ceb-2023-l7-q24",
+   "livret": 7,
+   "numero": "24",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Toute ma fortune y est passée mais je l'ai sacrifiée sans regret. » Quel mot pourrait remplacer « mais » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "choix": [
+    "car",
+    "donc",
+    "pourtant",
+    "parce que"
+   ],
+   "reponse": 2,
+   "explication": "« Mais » marque une opposition, comme « pourtant »."
+  },
+  {
+   "id": "ceb-2023-l7-q25",
+   "livret": 7,
+   "numero": "25",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Quand je pense que ça fait huit ans que je te supporte ! » Quel sens a « supporter » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "choix": [
+    "Soutenir (porter pour empêcher de tomber)",
+    "Résister à quelque chose sans faiblir",
+    "Tolérer la présence, l'attitude de quelqu'un",
+    "Encourager un candidat ou une équipe"
+   ],
+   "reponse": 2,
+   "explication": "Cassie « tolère » son petit frère depuis huit ans."
+  },
+  {
+   "id": "ceb-2023-l7-q26",
+   "livret": 7,
+   "numero": "26",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« C'est la raison pour laquelle je suis sortie de mes gonds lorsque j'ai lu… » L'expression « sortir de ses gonds » veut dire…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-expressions",
+   "choix": [
+    "se sentir triste.",
+    "sauter de joie.",
+    "sortir à l'extérieur.",
+    "se mettre en colère."
+   ],
+   "reponse": 3,
+   "explication": "Elle crie « Espèce d'ingrat ! Minable ! » : elle est en colère."
+  },
+  {
+   "id": "ceb-2023-l7-q27",
+   "livret": 7,
+   "numero": "27",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de l'auteure ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "choix": [
+    "Persuader le lecteur qu'il faut toujours partager.",
+    "Informer le lecteur sur ce que l'on peut faire avec une machine à écrire.",
+    "Inciter le lecteur à résoudre des énigmes.",
+    "Divertir le lecteur avec une histoire plaisante."
+   ],
+   "reponse": 3,
+   "explication": "C'est un récit amusant."
+  },
+  {
+   "id": "ceb-2023-l7-q3",
+   "livret": 7,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Coche la machine à écrire qui correspond à celle décrite dans l'histoire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l7-q16",
+   "livret": 7,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Coche le livre dans lequel tu pourrais trouver cette histoire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q1a",
+   "livret": 8,
+   "numero": "1a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Sans calculer : 13,3 + 103,5 + 32,5, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "130",
+    "150",
+    "170"
+   ],
+   "reponse": 1,
+   "explication": "13 + 104 + 33 ≈ 150."
+  },
+  {
+   "id": "ceb-2023-l8-q1b",
+   "livret": 8,
+   "numero": "1b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Sans calculer : 1 003,6 − 257,1, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "650",
+    "750",
+    "850"
+   ],
+   "reponse": 1,
+   "explication": "1 000 − 250 = 750."
+  },
+  {
+   "id": "ceb-2023-l8-q1c",
+   "livret": 8,
+   "numero": "1c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Sans calculer : 703 × 19,7, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "1 400",
+    "14 000",
+    "140 000"
+   ],
+   "reponse": 1,
+   "explication": "700 × 20 = 14 000."
+  },
+  {
+   "id": "ceb-2023-l8-q1d",
+   "livret": 8,
+   "numero": "1d",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Sans calculer : 203 : 1,9, c'est à peu près…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "100",
+    "150",
+    "200"
+   ],
+   "reponse": 0,
+   "explication": "200 : 2 = 100."
+  },
+  {
+   "id": "ceb-2023-l8-q3",
+   "livret": 8,
+   "numero": "3",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Effectue les opérations.",
+   "points": 8,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "765 + 162 = {1}  ·  8 020 − 40,8 = {2}  ·  0,8 + 0,55 = {3}  ·  12,3 − 2,31 = {4}  ·  60 × 9 = {5}  ·  7 × 0,8 = {6}  ·  600 × 0,7 = {7}  ·  7,2 : 9 = {8}",
+   "reponse": [
+    [
+     "927"
+    ],
+    [
+     "7979,2",
+     "7 979,2"
+    ],
+    [
+     "1,35"
+    ],
+    [
+     "9,99"
+    ],
+    [
+     "540"
+    ],
+    [
+     "5,6"
+    ],
+    [
+     "420"
+    ],
+    [
+     "0,8"
+    ]
+   ],
+   "explication": "927 ; 7 979,2 ; 1,35 ; 9,99 ; 540 ; 5,6 ; 420 ; 0,8."
+  },
+  {
+   "id": "ceb-2023-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris ces nombres en chiffres.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "3 unités de mille et 9 unités : {1}  ·  7 dizaines et 5 dixièmes : {2}",
+   "reponse": [
+    [
+     "3009",
+     "3 009"
+    ],
+    [
+     "70,5"
+    ]
+   ],
+   "explication": "3 000 + 9 = 3 009 ; 70 + 0,5 = 70,5."
+  },
+  {
+   "id": "ceb-2023-l8-q6",
+   "livret": 8,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète avec un de ces nombres : 2,015 ; 2,105 ; 2,15 ; 2,25 ; 2.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "texte": "2,2 < {1} < 2,3  ·  2,02 < {2} < 2,12  ·  2,001 < {3} < 2,02",
+   "reponse": [
+    [
+     "2,25"
+    ],
+    [
+     "2,105"
+    ],
+    [
+     "2,015"
+    ]
+   ],
+   "explication": "2,25 est entre 2,20 et 2,30 ; 2,105 entre 2,020 et 2,120 ; 2,015 entre 2,001 et 2,020."
+  },
+  {
+   "id": "ceb-2023-l8-q7",
+   "livret": 8,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "1 table : 4 chaises ; 2 tables jointes : 6 chaises ; 3 tables jointes : 8 chaises.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-suites",
+   "texte": "Avec 7 tables jointes, on place {1} chaises.  ·  Pour placer 20 chaises, il faut joindre {2} tables.",
+   "reponse": [
+    [
+     "16"
+    ],
+    [
+     "9"
+    ]
+   ],
+   "explication": "Chaque table ajoutée apporte 2 chaises : chaises = 2 × tables + 2. 7 tables : 16 chaises. 20 chaises : (20 − 2) : 2 = 9 tables."
+  },
+  {
+   "id": "ceb-2023-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Dominique transfère sur un disque dur de 250 Go le contenu de deux clés USB : une clé de 32 Go remplie au quart et une clé de 64 Go remplie à moitié. Combien de Go resteront disponibles sur le disque dur ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions",
+   "unite": "Go",
+   "reponse": 210,
+   "explication": "1/4 de 32 = 8 Go ; 1/2 de 64 = 32 Go ; total 40 Go. 250 − 40 = 210 Go."
+  },
+  {
+   "id": "ceb-2023-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe ces nombres dans l'ordre croissant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "1/2",
+    "0,6",
+    "5/3",
+    "1/5",
+    "1"
+   ],
+   "reponse": [
+    3,
+    0,
+    1,
+    4,
+    2
+   ],
+   "explication": "1/5 = 0,2 ; 1/2 = 0,5 ; 0,6 ; 1 ; 5/3 ≈ 1,67."
+  },
+  {
+   "id": "ceb-2023-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Comment se lit 16 983,5 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "choix": [
+    "Mille-six-cent-nonante-huit unités et trente-cinq dixièmes",
+    "Seize-mille-neuf-cent-quatre-vingt-trois unités et trente-cinq dixièmes",
+    "Seize-mille-neuf-cent-quatre-vingts unités et trente-cinq centièmes",
+    "Seize-mille-neuf-cent-quatre-vingt-trois unités et cinq dixièmes"
+   ],
+   "reponse": 3,
+   "explication": "16 983 unités et 5 dixièmes."
+  },
+  {
+   "id": "ceb-2023-l8-q11b",
+   "livret": 8,
+   "numero": "11b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Combien y a-t-il de centaines entières dans 3 692,74 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "reponse": 36,
+   "explication": "3 692 = 36 centaines et 92 unités."
+  },
+  {
+   "id": "ceb-2023-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les opérations.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "texte": "1 = 0,125 × {1}  ·  1 = 0,25 × {2}  ·  1 = 2 × {3}  ·  1 = 5 × {4}",
+   "reponse": [
+    [
+     "8"
+    ],
+    [
+     "4"
+    ],
+    [
+     "0,5"
+    ],
+    [
+     "0,2"
+    ]
+   ],
+   "explication": "0,125 = 1/8 ; 0,25 = 1/4 ; 2 × 0,5 = 1 ; 5 × 0,2 = 1."
+  },
+  {
+   "id": "ceb-2023-l8-q13a",
+   "livret": 8,
+   "numero": "13a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Le nombre 12 est… (coche toutes les bonnes réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "impair",
+    "multiple de 36",
+    "diviseur de 36",
+    "le double de 36"
+   ],
+   "reponse": [
+    2
+   ],
+   "explication": "36 = 12 × 3 : 12 est un diviseur de 36."
+  },
+  {
+   "id": "ceb-2023-l8-q13b",
+   "livret": 8,
+   "numero": "13b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Le nombre 72 est… (coche toutes les bonnes réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "impair",
+    "multiple de 36",
+    "diviseur de 36",
+    "le double de 36"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "72 = 2 × 36 : multiple et double de 36."
+  },
+  {
+   "id": "ceb-2023-l8-q13c",
+   "livret": 8,
+   "numero": "13c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Le nombre 87 est… (coche toutes les bonnes réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "impair",
+    "multiple de 36",
+    "diviseur de 36",
+    "le double de 36"
+   ],
+   "reponse": [
+    0
+   ],
+   "explication": "87 finit par 7 : il est impair."
+  },
+  {
+   "id": "ceb-2023-l8-q13d",
+   "livret": 8,
+   "numero": "13d",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Le nombre 33 est… (coche toutes les bonnes réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "pair",
+    "le tiers de 99",
+    "multiple de 99",
+    "diviseur de 99",
+    "premier"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "99 = 3 × 33 : 33 est le tiers et un diviseur de 99. Il n'est pas premier (3 × 11)."
+  },
+  {
+   "id": "ceb-2023-l8-q13e",
+   "livret": 8,
+   "numero": "13e",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Le nombre 17 est… (coche toutes les bonnes réponses)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "pair",
+    "le tiers de 99",
+    "multiple de 99",
+    "diviseur de 99",
+    "premier"
+   ],
+   "reponse": [
+    4
+   ],
+   "explication": "17 n'a que deux diviseurs (1 et 17) : il est premier."
+  },
+  {
+   "id": "ceb-2023-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Un directeur veut acheter un stylo pour chacun de ses 144 élèves, sans stylo en trop. Quelle boite choisir ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-divisibilite",
+   "choix": [
+    "Boite de 5 stylos",
+    "Boite de 22 stylos",
+    "Boite de 36 stylos"
+   ],
+   "reponse": 2,
+   "explication": "144 = 4 × 36. 144 n'est pas multiple de 5 ni de 22."
+  },
+  {
+   "id": "ceb-2023-l8-q17",
+   "livret": 8,
+   "numero": "17",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "100 − 12,5 … 12,5 − 100",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "choix": [
+    "=",
+    "≠"
+   ],
+   "reponse": 1,
+   "explication": "La soustraction n'est pas commutative : 87,5 ≠ −87,5."
+  },
+  {
+   "id": "ceb-2023-l8-q19",
+   "livret": 8,
+   "numero": "19",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète par l'opération réciproque.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "64,7 + 43,3 = 108, donc 108 {1} = 64,7  ·  45,66 : 0,3 = 152,2, donc 152,2 {2} = 45,66",
+   "reponse": [
+    [
+     "− 43,3",
+     "-43,3",
+     "- 43,3",
+     "−43,3"
+    ],
+    [
+     "× 0,3",
+     "x 0,3",
+     "x0,3",
+     "×0,3"
+    ]
+   ],
+   "explication": "On annule une addition par une soustraction, une division par une multiplication."
+  },
+  {
+   "id": "ceb-2023-l8-q20b",
+   "livret": 8,
+   "numero": "20b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Pain au chocolat 1,25 € pièce (×3), croissant 1,20 €, tarte 19,50 € : total 24,45 €. Jean-Pierre donne 25 € et on lui rend 0,55 €. Coche les deux opérations qui vérifient la transaction.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-monnaie",
+   "choix": [
+    "24,45 + 0,55",
+    "24,45 − 0,55",
+    "25 − 0,55",
+    "25 + 0,55"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Prix + monnaie rendue = somme donnée ; somme donnée − monnaie rendue = prix."
+  },
+  {
+   "id": "ceb-2023-l8-q21",
+   "livret": 8,
+   "numero": "21",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux fractions comprises entre 0,2 et 0,8.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "choix": [
+    "3/12",
+    "7/10",
+    "6/5",
+    "45/50",
+    "10/100"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "3/12 = 0,25 et 7/10 = 0,7. 6/5 = 1,2 ; 45/50 = 0,9 ; 10/100 = 0,1."
+  },
+  {
+   "id": "ceb-2023-l8-q22",
+   "livret": 8,
+   "numero": "22",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Si 21 × 43 = 903, alors…",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "2,1 × 43 = {1}  ·  42 × 43 = {2}  ·  21 × 44 = {3}  ·  22 × 43 = {4}",
+   "reponse": [
+    [
+     "90,3"
+    ],
+    [
+     "1806",
+     "1 806"
+    ],
+    [
+     "924"
+    ],
+    [
+     "946"
+    ]
+   ],
+   "explication": "903 : 10 ; 903 × 2 ; 903 + 21 ; 903 + 43."
+  },
+  {
+   "id": "ceb-2023-l8-q25",
+   "livret": 8,
+   "numero": "25",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux opérations dont le résultat est égal à 56 × 25.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "choix": [
+    "(50 × 20) + (6 × 5)",
+    "(56 × 20) + (56 × 5)",
+    "(56 × 20) + 5",
+    "(56 × 100) : 4",
+    "(56 + 20) × 5"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "56 × 25 = 1 400 = 56 × 20 + 56 × 5 = 5 600 : 4."
+  },
+  {
+   "id": "ceb-2023-l8-q2",
+   "livret": 8,
+   "numero": "2",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Compte les losanges noirs du carrelage.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q4",
+   "livret": 8,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète la droite graduée.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q11a",
+   "livret": 8,
+   "numero": "11a",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Recopie le plus grand nombre de l'abaque.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète les tableaux selon l'exemple.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Les nombres sont-ils bien placés sur les droites graduées ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q18",
+   "livret": 8,
+   "numero": "18",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Calcule le nombre d'agrafes dans une barrette.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q20a",
+   "livret": 8,
+   "numero": "20a",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Pose l'opération qui vérifie le prix de 24,45 €.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q23",
+   "livret": 8,
+   "numero": "23",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète l'arbre de décomposition de 4,8.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l8-q24",
+   "livret": 8,
+   "numero": "24",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Entoure le segment où 4,62 est bien placé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l9-q1",
+   "livret": 9,
+   "numero": "1",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Tous les êtres vivants…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "lignes": [
+    "respirent.",
+    "dorment.",
+    "se déplacent."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    1
+   ],
+   "explication": "Tous les vivants respirent ; les plantes ne dorment pas et ne se déplacent pas."
+  },
+  {
+   "id": "ceb-2023-l9-q2a",
+   "livret": 9,
+   "numero": "2a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quel sens utilise-t-on pour chaque action ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "lignes": [
+    "Détecter une odeur de brulé.",
+    "Remarquer qu'un moteur est très bruyant.",
+    "Déterminer si une soupe est assez salée."
+   ],
+   "colonnes": [
+    "Odorat",
+    "Ouïe",
+    "Vue",
+    "Gout"
+   ],
+   "reponse": [
+    0,
+    1,
+    3
+   ],
+   "explication": "Une odeur : odorat. Un bruit : ouïe. Le sel : gout."
+  },
+  {
+   "id": "ceb-2023-l9-q2b",
+   "livret": 9,
+   "numero": "2b",
+   "domaine": "sc.vivant",
+   "type": "texte_court",
+   "enonce": "En plus de l'odorat, de l'ouïe, de la vue et du gout, quel est le cinquième sens de l'être humain ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "reponse": [
+    "le toucher",
+    "toucher"
+   ],
+   "explication": "Les cinq sens : vue, ouïe, odorat, gout et toucher."
+  },
+  {
+   "id": "ceb-2023-l9-q2c",
+   "livret": 9,
+   "numero": "2c",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Écris un organe associé à chaque sens.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "texte": "Ouïe : {1}  ·  Gout : {2}",
+   "reponse": [
+    [
+     "l'oreille",
+     "oreille",
+     "les oreilles",
+     "oreilles"
+    ],
+    [
+     "la langue",
+     "langue",
+     "la bouche",
+     "bouche"
+    ]
+   ],
+   "explication": "On entend avec les oreilles, on goute avec la langue."
+  },
+  {
+   "id": "ceb-2023-l9-q3",
+   "livret": 9,
+   "numero": "3",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quelle est la fonction principale de chaque appareil ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "lignes": [
+    "Appareil tégumentaire",
+    "Appareil locomoteur",
+    "Appareil circulatoire",
+    "Appareil respiratoire"
+   ],
+   "colonnes": [
+    "Transport dans tout l'organisme",
+    "Protection, toucher",
+    "Échanges gazeux",
+    "Absorption, dégradation, assimilation, stockage",
+    "Support, protection, mobilité"
+   ],
+   "reponse": [
+    1,
+    4,
+    0,
+    2
+   ],
+   "explication": "La peau protège et permet le toucher ; os et muscles soutiennent et font bouger ; le sang transporte ; les poumons échangent les gaz."
+  },
+  {
+   "id": "ceb-2023-l9-q4a",
+   "livret": 9,
+   "numero": "4a",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "D'après l'arbre, quel animal possède des yeux, une bouche, un squelette interne, 4 membres, des poils et des molaires sécantes ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "ferme-2"
+   ],
+   "choix": [
+    "le cheval",
+    "le lapin",
+    "le chat",
+    "la fourmi"
+   ],
+   "reponse": 2,
+   "explication": "Les molaires sécantes (qui coupent la viande) sont celles du chat."
+  },
+  {
+   "id": "ceb-2023-l9-q4b",
+   "livret": 9,
+   "numero": "4b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Des élèves classent la coccinelle avec le doryphore. Coche tous les attributs de la coccinelle repris dans l'arbre.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "ferme-2"
+   ],
+   "choix": [
+    "Yeux, bouche",
+    "Squelette externe, 3 paires de pattes, antennes",
+    "Élytres",
+    "Squelette interne, 4 membres, poils",
+    "Constriction abdominale",
+    "1 paire de balanciers"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "Comme le doryphore, la coccinelle est un insecte (squelette externe, 6 pattes, antennes) avec des élytres."
+  },
+  {
+   "id": "ceb-2023-l9-q4c",
+   "livret": 9,
+   "numero": "4c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète l'arbre de classification avec le dindon, le canard, le chien, l'âne, le cochon et la vache.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l9-q5a",
+   "livret": 9,
+   "numero": "5a",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Masse et fréquence cardiaque au repos : girafe 900 kg / 65 ; éléphant 3 000 kg / 35 ; homme 78 kg / 70 ; chat 4 kg / 130 ; souris 0,040 kg / 500 battements par minute. Quelle affirmation est correcte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "choix": [
+    "Plus la taille est petite, plus la fréquence est basse.",
+    "Plus la taille est grande, plus la fréquence est basse.",
+    "Plus la masse est petite, plus la fréquence est basse.",
+    "Plus la masse est petite, plus la fréquence est élevée."
+   ],
+   "reponse": 3,
+   "explication": "Le tableau donne des masses : la souris (la plus légère) a le cœur le plus rapide, l'éléphant (le plus lourd) le plus lent. (La girafe, plus grande que l'homme mais plus légère que l'éléphant, montre que c'est la masse qui compte ici.)"
+  },
+  {
+   "id": "ceb-2023-l9-q5b",
+   "livret": 9,
+   "numero": "5b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Lis le graphique de la fréquence cardiaque avant, pendant et après un effort.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l9-q6",
+   "livret": 9,
+   "numero": "6",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Selon les êtres vivants, où le sang charge-t-il l'oxygène et décharge-t-il le gaz carbonique ? Coche les trois propositions correctes.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "choix": [
+    "Les branchies",
+    "La bouche",
+    "Le cœur",
+    "La peau",
+    "Les poumons",
+    "Le nez"
+   ],
+   "reponse": [
+    0,
+    3,
+    4
+   ],
+   "explication": "Les poissons respirent par les branchies, la grenouille aussi par la peau, les mammifères par les poumons."
+  },
+  {
+   "id": "ceb-2023-l9-q7a",
+   "livret": 9,
+   "numero": "7a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Trace les trois bâtonnets manquants dans le graphique du débit expiratoire.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "debit-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l9-q7b",
+   "livret": 9,
+   "numero": "7b",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "À quel appareil sont liées les mesures du débit expiratoire de pointe ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "documents": [
+    "debit-1"
+   ],
+   "choix": [
+    "Appareil circulatoire",
+    "Appareil digestif",
+    "Appareil locomoteur",
+    "Appareil respiratoire"
+   ],
+   "reponse": 3,
+   "explication": "On mesure l'air soufflé : c'est la respiration."
+  },
+  {
+   "id": "ceb-2023-l9-q7d",
+   "livret": 9,
+   "numero": "7d",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Tableau 2 (débit moyen des adultes). Coche la bonne proposition.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "debit-2"
+   ],
+   "lignes": [
+    "Chez l'homme, quand l'âge augmente, le débit…",
+    "Chez la femme, quand la taille augmente, le débit…"
+   ],
+   "colonnes": [
+    "diminue",
+    "augmente",
+    "ne change pas"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Homme de 170 cm : 584 à 20 ans, 480 à 60 ans. Femme de 20 ans : 425 à 160 cm, 475 à 175 cm."
+  },
+  {
+   "id": "ceb-2023-l9-q7d2",
+   "livret": 9,
+   "numero": "7d2",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "À âge et taille identiques, que peut-on dire du débit expiratoire moyen de la femme et de l'homme ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "debit-2"
+   ],
+   "choix": [
+    "Ils ont une capacité identique.",
+    "La femme a une plus grande capacité que l'homme.",
+    "L'homme a une plus grande capacité que la femme."
+   ],
+   "reponse": 2,
+   "explication": "À 20 ans et 160 cm : 547 l/min pour l'homme, 425 pour la femme."
+  },
+  {
+   "id": "ceb-2023-l9-q7e",
+   "livret": 9,
+   "numero": "7e",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Coche les trois éléments qui font varier le débit expiratoire de pointe moyen chez les adultes.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "debit-2"
+   ],
+   "choix": [
+    "l'âge",
+    "la taille",
+    "le sexe (homme ou femme)",
+    "la couleur des yeux",
+    "le poids du spiromètre"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "Le tableau varie selon l'âge, la taille et le sexe."
+  },
+  {
+   "id": "ceb-2023-l9-q8a",
+   "livret": 9,
+   "numero": "8a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Expérience 1 : neuf objets sont déposés sur l'eau ; certains flottent, d'autres coulent. Quelle question les élèves se posaient-ils ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "flottaison-1"
+   ],
+   "reponseModele": "Quels objets flottent et quels objets coulent ? (La matière d'un objet influence-t-elle sa flottaison ?)"
+  },
+  {
+   "id": "ceb-2023-l9-q8b",
+   "livret": 9,
+   "numero": "8b",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "Quelle expérience teste chaque variable ? (1 : neuf objets de matières différentes ; 2 : une boule d'azobé dans l'eau douce puis salée ; 3 : une boite de métal posée à plat, à la verticale ou écrasée)",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "flottaison-1",
+    "flottaison-2",
+    "flottaison-3"
+   ],
+   "lignes": [
+    "La forme de l'objet",
+    "Le type d'eau",
+    "La température de l'eau"
+   ],
+   "colonnes": [
+    "Expérience 1",
+    "Expérience 2",
+    "Expérience 3",
+    "Aucune des expériences"
+   ],
+   "reponse": [
+    2,
+    1,
+    3
+   ],
+   "explication": "La boite écrasée change de forme (exp. 3). L'eau douce ou salée (exp. 2). Aucune expérience ne change la température."
+  },
+  {
+   "id": "ceb-2023-l9-q8c",
+   "livret": 9,
+   "numero": "8c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Un élève affirme : « Tout ce qui est en bois flotte sur l'eau. » A-t-il raison ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "flottaison-2"
+   ],
+   "choix": [
+    "Oui, tous les bois flottent.",
+    "Non : la boule en bois d'azobé coule dans l'eau douce."
+   ],
+   "reponse": 1,
+   "explication": "L'azobé est un bois très dense : il coule dans l'eau douce."
+  },
+  {
+   "id": "ceb-2023-l9-q9a",
+   "livret": 9,
+   "numero": "9a",
+   "domaine": "sc.matiere",
+   "type": "trous",
+   "enonce": "Schéma du cycle de l'eau : A (au niveau des nuages), B (la pluie qui tombe), C (la rivière qui coule vers la mer). Utilise : infiltration, évaporation, précipitations, ruissèlement, condensation.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "documents": [
+    "cycle-eau"
+   ],
+   "texte": "A : {1}  ·  B : {2}  ·  C : {3}",
+   "reponse": [
+    [
+     "condensation"
+    ],
+    [
+     "précipitations",
+     "précipitation"
+    ],
+    [
+     "ruissèlement",
+     "ruissellement"
+    ]
+   ],
+   "explication": "La vapeur se condense en nuages (A), la pluie tombe (B), l'eau ruisselle vers la mer (C). D est l'infiltration, E l'évaporation."
+  },
+  {
+   "id": "ceb-2023-l9-q9b",
+   "livret": 9,
+   "numero": "9b",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "Expérience 1 : de l'eau traverse un filtre contenant de la terre et du gravier. Expérience 2 : après deux jours, il manque de l'eau dans le récipient ouvert. Quelle étape du cycle chaque expérience illustre-t-elle ? (D : l'eau qui pénètre dans le sol ; E : l'eau qui monte de la mer vers le ciel)",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "documents": [
+    "cycle-eau"
+   ],
+   "lignes": [
+    "Expérience 1",
+    "Expérience 2"
+   ],
+   "colonnes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "reponse": [
+    3,
+    4
+   ],
+   "explication": "L'eau qui traverse la terre s'infiltre (D). L'eau du récipient ouvert s'évapore (E)."
+  },
+  {
+   "id": "ceb-2023-l9-q10a",
+   "livret": 9,
+   "numero": "10a",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Un récipient d'eau colorée, fermé par un bouchon traversé d'un tube : au frigo, le niveau baisse ; dans l'eau chaude, il monte. Coche les deux propositions correctes.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "phenomenes"
+   ],
+   "choix": [
+    "Le liquide augmente de volume quand il est chauffé.",
+    "Le liquide s'évapore en passant par le petit tuyau.",
+    "Le liquide diminue de volume quand il est refroidi.",
+    "La température du liquide n'a pas d'influence sur le volume.",
+    "Le liquide est plus lourd quand il est chauffé."
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Chauffé, le liquide se dilate et monte ; refroidi, il se contracte et descend."
+  },
+  {
+   "id": "ceb-2023-l9-q10b",
+   "livret": 9,
+   "numero": "10b",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Quels deux phénomènes observe-t-on dans cette expérience ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "phenomenes"
+   ],
+   "choix": [
+    "Évaporation",
+    "Dilatation",
+    "Compensation",
+    "Contraction",
+    "Dissolution",
+    "Condensation"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "Dilatation à la chaleur, contraction au froid."
+  },
+  {
+   "id": "ceb-2023-l9-q10c",
+   "livret": 9,
+   "numero": "10c",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Dans quelles situations observe-t-on aussi la dilatation et la contraction dues à la température ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "choix": [
+    "Une éponge mouillée a été mise à sécher.",
+    "Une route se déforme et se soulève lors d'un été chaud.",
+    "Les peignes d'un joint de chaussée sont plus écartés en hiver qu'en été.",
+    "Un champignon déshydraté a été trempé dans l'eau."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "La route se dilate à la chaleur ; en hiver, le béton se contracte et le joint s'écarte. L'éponge et le champignon changent à cause de l'eau, pas de la température."
+  },
+  {
+   "id": "ceb-2023-l9-q11a",
+   "livret": 9,
+   "numero": "11a",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Écris G sur un générateur, R sur un récepteur et F sur un fil de connexion.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "circuit"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2023-l9-q11b",
+   "livret": 9,
+   "numero": "11b",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Un circuit avec un moteur, une hélice et un interrupteur. Dans quel cas l'hélice tournera-t-elle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "choix": [
+    "Batteries déchargées, circuit fermé",
+    "Batteries déchargées, circuit ouvert",
+    "Batteries chargées, circuit fermé",
+    "Batteries chargées, circuit ouvert"
+   ],
+   "reponse": 2,
+   "explication": "Il faut une source d'énergie (batteries chargées) et un circuit fermé (interrupteur sur « I »)."
+  },
+  {
+   "id": "ceb-2023-l9-q11c",
+   "livret": 9,
+   "numero": "11c",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Un tableau classe comme bons conducteurs : le tuyau en cuivre, le clou en fer, la mine de crayon en graphite et l'eau salée ; comme mauvais : le bois sec, l'élastique en caoutchouc, la gomme. Les objets métalliques sont-ils les seuls bons conducteurs ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "choix": [
+    "Oui",
+    "Non : la mine de crayon (graphite) et l'eau salée conduisent aussi l'électricité."
+   ],
+   "reponse": 1,
+   "explication": "Le graphite et l'eau salée ne sont pas des métaux, mais ils conduisent le courant."
+  }
+ ]
+}
