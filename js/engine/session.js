@@ -125,16 +125,16 @@ export class QuizSession {
 
   tirerDansPool(eviterHistorique) {
     const fixes = this.banque.filter((q) => !this.dejaPosee(q) && !(eviterHistorique && this.historique.has(q.id)));
-    let modeles = this.modeles.filter((m) =>
+    const modeles = this.modeles.filter((m) =>
       (this.parModele.get(m.id) ?? 0) < this.o.maxParModele && !this.epuises.has(m.id));
-    // Pas deux fois de suite le même modèle, sauf s'il n'y a rien d'autre.
-    if (modeles.length > 1 || fixes.length > 0) modeles = modeles.filter((m) => m.id !== this.dernierModele);
-
     const poids = this.o.poids ?? (() => 1);
     let candidats = [
       ...fixes.map((item) => ({ item, modele: false, w: poids(item) })),
       ...modeles.map((item) => ({ item, modele: true, w: this.o.poidsModele * poids(item) })),
     ].filter((c) => c.w > 0);
+    // Pas deux fois de suite le même modèle, sauf s'il n'y a rien d'autre (après pondération :
+    // un candidat de poids 0 ne compte pas comme « autre chose »).
+    if (candidats.length > 1) candidats = candidats.filter((c) => !(c.modele && c.item.id === this.dernierModele));
 
     for (let essai = 0; essai < 30 && candidats.length; essai++) {
       const total = candidats.reduce((s, c) => s + c.w, 0);

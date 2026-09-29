@@ -17,7 +17,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .outils-haut h1 { font-family: var(--titre); font-size: 28px; margin: 0; }
 .retour { color: var(--violet); font-weight: 700; text-decoration: none; }
 .intro { color: var(--mute); margin: 6px 0 14px; }
-.formats { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px; }
+.formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+@media (max-width: 640px) { .formats { grid-template-columns: repeat(2, 1fr); } }
 .formats button { text-align: left; background: #fff; border: 2px solid var(--ligne); border-radius: 14px; padding: 10px 12px; }
 .formats button b { display: block; font-family: var(--titre); font-size: 16px; }
 .formats button small { color: var(--mute); font-size: 12.5px; }
@@ -38,6 +39,26 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .onglet { background: transparent; border: 0; border-bottom: 3px solid transparent; padding: 6px 4px; font-weight: 700; color: var(--mute); }
 .onglet.actif { color: var(--encre); border-bottom-color: var(--encre); }
 .chargement { text-align: center; padding: 60px 16px; color: var(--mute); }
+
+/* Fiche ciblée : choix des notions */
+.panneau-fiche { background: #fff; border: 2px solid var(--encre); border-radius: 14px; padding: 14px; margin-top: 12px; }
+.pf-tete { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pf-tete h2 { font-family: var(--titre); font-size: 20px; margin: 0; }
+.pf-joueur { font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 6px; }
+.pf-joueur select { font: inherit; padding: 5px 8px; border-radius: 8px; border: 2px solid var(--ligne); }
+.pf-bilan { margin: 8px 0 0; }
+.pf-aide { color: var(--mute); font-size: 13px; margin: 4px 0 8px; }
+.pf-notions { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 4px 16px; max-height: 320px; overflow: auto; border-top: 1px solid var(--ligne); padding-top: 8px; }
+.pf-notions h3 { grid-column: 1 / -1; font-family: var(--titre); font-size: 15px; margin: 8px 0 2px; }
+.pf-notions label { display: flex; align-items: center; gap: 6px; font-size: 14px; padding: 3px 0; cursor: pointer; }
+.pf-notions label.off { opacity: .45; cursor: default; }
+.pf-notions .statut { margin-left: auto; font-size: 12px; }
+
+/* Rappel en tête de notion (fiche ciblée) */
+.rappel { border: 2px solid var(--violet); border-radius: 10px; padding: 8px 12px; margin: 8px 0 4px; background: #faf7ff; break-inside: avoid; }
+.rappel > b { font-family: var(--titre); color: var(--violet); }
+.rappel ul { margin: 4px 0; padding-left: 20px; }
+.rappel p { margin: 4px 0 0; font-size: 14px; }
 
 /* ---------- Feuille ---------- */
 main { padding: 8px 16px 40px; }
@@ -125,7 +146,7 @@ main { padding: 8px 16px 40px; }
   .pied { display: none; }
   .question.avec-doc { break-inside: auto; }
   .grille { break-inside: avoid; }
-  .num, .pastille, .section { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .num, .pastille, .section, .rappel { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .figure { overflow: visible; }
   .q-trace .figure svg { max-width: 100%; }
   .doc img { max-height: 170mm; }

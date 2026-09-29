@@ -522,7 +522,7 @@ function blocCoach() {
     corps = `<p>Aucun point faible repéré pour l'instant, bravo 💪 Continue à varier les matières.</p>`;
   }
   const bouton = pret && (faibles.length || dues.length)
-    ? `<button class="btn btn-cta" id="mission-ciblee">🎯 Mission ciblée</button>` : '';
+    ? `<button class="btn btn-cta" id="mission-ciblee">🎯 Mission ciblée</button>${faibles.length ? '<a class="btn petit" href="imprimer.html?mode=fiche" title="Une fiche à imprimer sur tes points faibles">🖨️ Fiche papier</a>' : ''}` : '';
   return `<section class="carte coach">
     <div class="coach-tete"><span class="coach-ico">🧭</span><div><h3>Ton coach</h3>
       ${dues.length ? `<small class="mute">🔁 ${dues.length} question${dues.length > 1 ? 's' : ''} à revoir aujourd'hui</small>` : '<small class="mute">Il repère tes points faibles au fil des parties</small>'}</div></div>

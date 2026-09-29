@@ -1,6 +1,8 @@
 // Page « Examen papier » : tirage, aperçu et impression de l'examen puis du corrigé.
 import { chargerDonnees, bonneReponseLisible } from '../engine/index.js';
-import { FORMATS, composerExamen, nouveauCode, lireCode } from '../engine/papier.js';
+import { FORMATS, FICHE, composerExamen, composerFiche, nouveauCode, lireCode } from '../engine/papier.js';
+import * as store from './store.js';
+import { faiblesses, maitrise, coachPret, STATUTS } from './coach.js';
 import { esc } from './question-ui.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -11,6 +13,8 @@ const case_ = '<span class="case" aria-hidden="true"></span>';
 let donnees = null;
 let examen = null;
 let vue = 'examen';
+let notionsChoisies = []; // fiche ciblée
+const MATIERES = { fr: '📖 Français', ma: '📐 Mathématiques', hg: '🌍 Histoire-géo', sc: '🧪 Sciences' };
 
 // ------------------------------------------------------------------ rendu d'une question (examen)
 function zoneReponse(q) {
@@ -103,35 +107,48 @@ function entete(titre, sousTitre) {
   <p class="sous-titre">${sousTitre}</p>`;
 }
 
+function blocRappel(f) {
+  return `<div class="rappel"><b>📘 Rappel</b>
+    <ul>${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+    ${f.exemple ? `<p><b>Exemple :</b> ${esc(f.exemple)}</p>` : ''}
+    ${f.astuce ? `<p>💡 ${esc(f.astuce)}</p>` : ''}</div>`;
+}
+
 function rendre() {
   const avecDocs = $('#opt-docs').checked;
   const docsImprimes = new Set();
-  const pied = `<div class="pied">Mission CEB · ${esc(examen.nom)} · code ${examen.code} · ceb-quiz-bruxelles.netlify.app</div>`;
+  const fiche = examen.format === 'T';
+  const titres = examen.sections.map((s) => s.rappel?.titre).filter(Boolean);
   const htmlExamen = `<section class="feuille" data-vue="examen">
-    ${entete(`${examen.nom} — examen blanc`, `${examen.nbQuestions} questions · ${examen.duree} · total sur ${examen.total} points`)}
+    ${entete(fiche ? 'Fiche ciblée — je m\'entraîne' : `${examen.nom} — examen blanc`,
+      fiche ? `${titres.map(esc).join(' · ')} — ${examen.nbQuestions} exercices · ${examen.duree}`
+        : `${examen.nbQuestions} questions · ${examen.duree} · total sur ${examen.total} points`)}
     <div class="identite"><span>Prénom : <i></i></span><span>Date : <i></i></span><span class="score">Score : <i></i> / ${examen.total}</span></div>
-    <p class="consignes">Lis bien chaque question. Tu peux utiliser une latte, une équerre et un compas. Pas de calculatrice, sauf si la question le permet.</p>
+    <p class="consignes">${fiche ? 'Lis d\'abord le rappel de chaque notion, puis fais les exercices. Ils vont du plus facile au plus difficile.'
+      : 'Lis bien chaque question. Tu peux utiliser une latte, une équerre et un compas. Pas de calculatrice, sauf si la question le permet.'}</p>
     ${examen.sections.map((s) => `<h2 class="section">${esc(s.titre)} <span>… / ${s.total}</span></h2>
+      ${s.rappel ? blocRappel(s.rappel) : ''}
       ${s.questions.map((q) => questionExamen(q, avecDocs, docsImprimes)).join('')}`).join('')}
-    <p class="fin">Fin de l'examen. Relis tes réponses ! 🚀</p>
-    ${pied}
+    <p class="fin">${fiche ? 'Bravo, fiche terminée ! Vérifie tes réponses avec le corrigé. 🎯' : 'Fin de l\'examen. Relis tes réponses ! 🚀'}</p>
   </section>`;
   const htmlCorrige = `<section class="feuille" data-vue="corrige">
-    ${entete(`${examen.nom} — corrigé`, `Corrigé de l'examen ${examen.code} · total sur ${examen.total} points · les réponses aux questions de tracé sont dessinées en rouge (réduites).`)}
+    ${entete(`${fiche ? 'Fiche ciblée' : examen.nom} — corrigé`, `Corrigé ${fiche ? 'de la fiche' : 'de l\'examen'} ${examen.code} · total sur ${examen.total} points · les réponses aux questions de tracé sont dessinées en rouge (réduites).`)}
     <p class="consignes">Pour les questions à plusieurs cases (tableaux, textes à trous, ordre…), on peut donner une partie des points pour chaque case juste.</p>
     ${examen.sections.map((s) => `<h2 class="section">${esc(s.titre)} <span>${s.total} points</span></h2>
       ${s.questions.map(questionCorrige).join('')}`).join('')}
-    ${pied.replace('· code', '· corrigé · code')}
   </section>`;
   $('#apercu').innerHTML = htmlExamen + htmlCorrige;
   montrerVue();
   const q = examen.sections.flatMap((s) => s.questions);
   const nbTraces = q.filter((x) => x.type === 'trace').length;
   const nbOff = q.filter((x) => x.source === 'examen').length;
-  $('#infos').textContent = `${examen.nbQuestions} questions dont ${nbOff} tirées des vrais CEB et ${nbTraces} tracé${nbTraces > 1 ? 's' : ''}.`;
+  $('#infos').textContent = `${examen.nbQuestions} ${fiche ? 'exercices' : 'questions'} dont ${nbOff} tiré${nbOff > 1 ? 's' : ''} des vrais CEB et ${nbTraces} tracé${nbTraces > 1 ? 's' : ''}.`;
   $('#code').value = examen.code;
   $$('#formats button').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.f === examen.format)));
-  document.title = `Examen ${examen.code} — Mission CEB`;
+  $('#panneau-fiche').hidden = !fiche;
+  $('#imprimer-examen').textContent = `🖨️ Imprimer ${fiche ? 'la fiche' : 'l\'examen'}`;
+  $('.onglet[data-vue="examen"]').textContent = `Aperçu ${fiche ? 'de la fiche' : 'de l\'examen'}`;
+  document.title = `${fiche ? 'Fiche' : 'Examen'} ${examen.code} — Mission CEB`;
 }
 
 // Pied de page imprimé sur chaque feuille (boîtes de marge @page) : code + numéro de page.
@@ -150,20 +167,99 @@ function montrerVue() {
   document.body.dataset.vue = vue;
 }
 
+function erreur(msg) {
+  const err = $('#erreur');
+  err.textContent = msg ?? '';
+  err.hidden = !msg;
+}
+
 function charger(code) {
   const c = lireCode(code);
-  if (!c) {
-    const err = $('#erreur');
-    err.textContent = 'Ce code n\'existe pas. Il ressemble à « C-7KQ4M » : une lettre, un tiret et 5 caractères.';
-    err.hidden = false;
-    return;
-  }
-  $('#erreur').hidden = true;
-  examen = composerExamen(donnees, c);
+  if (!c) return erreur('Ce code n\'existe pas. Il ressemble à « C-7KQ4M » : une lettre, un tiret et 5 caractères.');
   const url = new URL(location.href);
+  if (c[0] === 'T') {
+    if (!notionsChoisies.length) {
+      montrerPanneauFiche();
+      return erreur('Coche au moins une notion pour créer la fiche.');
+    }
+    examen = composerFiche(donnees, c, notionsChoisies);
+    url.searchParams.set('notions', examen.notions.join(','));
+  } else {
+    examen = composerExamen(donnees, c);
+    url.searchParams.delete('notions');
+  }
+  erreur(null);
   url.searchParams.set('code', c);
+  url.searchParams.delete('mode');
   history.replaceState(null, '', url);
   rendre();
+  if (c[0] === 'T') majNotions();
+}
+
+// ------------------------------------------------------------------ fiche ciblée : choix des notions
+let joueurFiche = null;
+
+function montrerPanneauFiche() {
+  $('#panneau-fiche').hidden = false;
+  $$('#formats button').forEach((b) => b.setAttribute('aria-checked', String(b.dataset.f === 'T')));
+  majNotions();
+}
+
+function preselection() {
+  if (!joueurFiche) return [];
+  return faiblesses(joueurFiche, donnees.fiches, 3).map((x) => x.fiche.id);
+}
+
+function majBilan() {
+  const b = $('#pf-bilan');
+  if (!joueurFiche) { b.innerHTML = 'Aucun joueur sur cet appareil : choisis toi-même les notions à travailler.'; return; }
+  const faibles = faiblesses(joueurFiche, donnees.fiches, 4);
+  if (!coachPret(joueurFiche)) b.innerHTML = `<b>${esc(joueurFiche.pseudo)}</b> n'a pas encore assez joué pour que le coach repère ses points faibles. Choisis les notions toi-même.`;
+  else if (!faibles.length) b.innerHTML = `Aucun point faible repéré pour <b>${esc(joueurFiche.pseudo)}</b>, bravo ! Choisis les notions que tu veux revoir.`;
+  else b.innerHTML = `Points faibles repérés pour <b>${esc(joueurFiche.pseudo)}</b> : ${faibles.map((x) => `${x.fiche.e} ${esc(x.fiche.titre)} (${Math.round(x.m * 100)} %)`).join(' · ')}.`;
+}
+
+function majNotions() {
+  const zone = $('#pf-notions');
+  const fiches = Object.values(donnees.fiches);
+  const statut = (id) => {
+    if (!joueurFiche) return '';
+    const m = maitrise(joueurFiche, id);
+    return m.n ? `<span class="statut" title="${STATUTS[m.statut].nom}">${STATUTS[m.statut].e} ${Math.round(m.m * 100)} %</span>` : '';
+  };
+  zone.innerHTML = Object.entries(MATIERES).map(([mat, nom]) => {
+    const liste = fiches.filter((f) => f.matiere === mat).sort((a, b) => a.titre.localeCompare(b.titre, 'fr'));
+    return liste.length ? `<h3>${nom}</h3>${liste.map((f) => `<label><input type="checkbox" value="${f.id}" ${notionsChoisies.includes(f.id) ? 'checked' : ''}> ${f.e ?? ''} ${esc(f.titre)} ${statut(f.id)}</label>`).join('')}` : '';
+  }).join('');
+  const maj = () => {
+    const plein = notionsChoisies.length >= FICHE.maxNotions;
+    $$('input', zone).forEach((i) => { i.disabled = plein && !i.checked; i.parentElement.classList.toggle('off', i.disabled); });
+    $('#pf-compte').textContent = notionsChoisies.length
+      ? `Cochées (${notionsChoisies.length}/4) : ${notionsChoisies.map((n) => donnees.fiches[n].titre).join(' · ')}` : 'Aucune notion cochée';
+  };
+  $$('input', zone).forEach((i) => i.onchange = () => {
+    notionsChoisies = i.checked ? [...notionsChoisies, i.value] : notionsChoisies.filter((n) => n !== i.value);
+    maj();
+  });
+  maj();
+  majBilan();
+}
+
+function initFiche(notionsUrl) {
+  const joueurs = store.listeJoueurs();
+  joueurFiche = store.joueurActif() ?? joueurs[0] ?? null;
+  const sel = $('#pf-joueur');
+  if (joueurs.length) {
+    $('#pf-joueur-bloc').hidden = false;
+    sel.innerHTML = joueurs.map((j) => `<option value="${j.id}" ${j.id === joueurFiche?.id ? 'selected' : ''}>${esc(j.avatar)} ${esc(j.pseudo)}</option>`).join('');
+    sel.onchange = () => {
+      joueurFiche = joueurs.find((j) => j.id === sel.value) ?? null;
+      notionsChoisies = preselection();
+      majNotions();
+    };
+  }
+  notionsChoisies = notionsUrl.length ? notionsUrl : preselection();
+  $('#pf-creer').onclick = () => charger(nouveauCode('T'));
 }
 
 async function imprimer(v) {
@@ -176,8 +272,8 @@ async function imprimer(v) {
 }
 
 async function demarrer() {
-  $('#formats').innerHTML = Object.entries(FORMATS).map(([f, x]) =>
-    `<button role="radio" data-f="${f}" aria-checked="false"><b>${esc(x.nom)}</b><small>${esc(x.description)} · ${esc(x.duree)}</small></button>`).join('');
+  $('#formats').innerHTML = [...Object.entries(FORMATS), ['T', FICHE]].map(([f, x]) =>
+    `<button role="radio" data-f="${f}" aria-checked="false"${f === 'T' ? ' class="f-fiche"' : ''}><b>${f === 'T' ? '🎯 ' : ''}${esc(x.nom)}</b><small>${esc(x.description)} · ${esc(x.duree)}</small></button>`).join('');
   try {
     donnees = await chargerDonnees({ base: 'data/' });
     donnees.banque.push(...await donnees.questionsExamens().catch(() => []));
@@ -185,15 +281,27 @@ async function demarrer() {
     $('#apercu').innerHTML = '<p class="chargement">Impossible de charger les questions. Vérifie ta connexion et recharge la page.</p>';
     throw e;
   }
-  $$('#formats button').forEach((b) => b.onclick = () => charger(nouveauCode(b.dataset.f)));
+  const params = new URL(location.href).searchParams;
+  initFiche((params.get('notions') ?? '').split(',').filter((n) => donnees.fiches[n]));
+  $$('#formats button').forEach((b) => b.onclick = () => {
+    if (b.dataset.f === 'T') {
+      // On montre d'abord le choix des notions ; la fiche est créée avec « Créer la fiche ».
+      montrerPanneauFiche();
+      if (notionsChoisies.length && examen?.format !== 'T') charger(nouveauCode('T'));
+    } else charger(nouveauCode(b.dataset.f));
+  });
   $('#nouveau').onclick = () => charger(nouveauCode(examen?.format ?? 'C'));
   $('#form-code').onsubmit = (e) => { e.preventDefault(); charger($('#code').value); };
   $('#opt-docs').onchange = rendre;
   $$('.onglet').forEach((o) => o.onclick = () => { vue = o.dataset.vue; montrerVue(); });
   $('#imprimer-examen').onclick = () => imprimer('examen');
   $('#imprimer-corrige').onclick = () => imprimer('corrige');
-  const demande = new URL(location.href).searchParams.get('code');
-  charger(lireCode(demande) ?? nouveauCode('C'));
+  const code = lireCode(params.get('code'));
+  if (code) charger(code);
+  else if (params.get('mode') === 'fiche') {
+    if (notionsChoisies.length) charger(nouveauCode('T'));
+    else { charger(nouveauCode('C')); montrerPanneauFiche(); }
+  } else charger(nouveauCode('C'));
 }
 
 demarrer();

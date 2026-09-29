@@ -88,3 +88,33 @@ test('les tracés restent hors du jeu à l\'écran', () => {
   assert.ok(!donnees.modeles.some((m) => m.id.startsWith('trace-')));
   assert.ok(!donnees.banque.some((q) => q.type === 'trace'));
 });
+
+test('fiche ciblée : notions respectées, reproductible, sans doublon', async () => {
+  const { composerFiche } = await import('../js/engine/papier.js');
+  const notions = ['ma-fractions', 'fr-homophones', 'ma-symetrie'];
+  const a = composerFiche(donnees, 'T-7KQ4M', notions);
+  assert.deepEqual(a, composerFiche(donnees, 'T-7KQ4M', notions));
+  assert.equal(a.sections.length, 3);
+  const ids = new Set();
+  for (const s of a.sections) {
+    assert.ok(s.rappel && s.rappel.regle.length);
+    assert.ok(s.questions.length >= 5, `${s.id} : ${s.questions.length} exercices`);
+    for (const q of s.questions) {
+      assert.equal(q.fiche, s.id);
+      assert.ok(!ids.has(q.id)); ids.add(q.id);
+    }
+  }
+  assert.ok(a.sections[2].questions.some((q) => q.type === 'trace'), 'la symétrie a un tracé');
+  // une seule notion : une fiche plus longue
+  assert.ok(composerFiche(donnees, 'T-22222', ['ma-proportionnalite']).nbQuestions >= 10);
+  assert.throws(() => composerFiche(donnees, 'C-22222', notions));
+  assert.throws(() => composerFiche(donnees, 'T-22222', []));
+  assert.throws(() => composerExamen(donnees, 'T-22222'));
+});
+
+test('fiche ciblée : chaque notion a au moins un exercice', async () => {
+  const { composerFiche } = await import('../js/engine/papier.js');
+  for (const id of Object.keys(donnees.fiches)) {
+    assert.ok(composerFiche(donnees, 'T-33333', [id]).nbQuestions >= 1, id);
+  }
+});

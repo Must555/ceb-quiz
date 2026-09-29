@@ -20,6 +20,22 @@
 
     <div class="formats" id="formats" role="radiogroup" aria-label="Format de l'examen"></div>
 
+    <section class="panneau-fiche" id="panneau-fiche" hidden>
+      <div class="pf-tete">
+        <h2>🎯 Fiche ciblée</h2>
+        <label class="pf-joueur" id="pf-joueur-bloc" hidden>Points faibles de
+          <select id="pf-joueur"></select>
+        </label>
+      </div>
+      <p class="pf-bilan" id="pf-bilan"></p>
+      <p class="pf-aide">Coche de 1 à 4 notions. Chaque notion commence par son rappel, puis des exercices du plus facile au plus difficile.</p>
+      <div class="pf-notions" id="pf-notions"></div>
+      <div class="actions">
+        <button class="btn cta" id="pf-creer">Créer la fiche</button>
+        <span class="infos" id="pf-compte"></span>
+      </div>
+    </section>
+
     <div class="actions">
       <button class="btn" id="nouveau">🎲 Nouveau tirage</button>
       <form class="code" id="form-code">
@@ -35,7 +51,7 @@
       <button class="btn" id="imprimer-corrige">✅ Imprimer le corrigé</button>
       <label class="option"><input type="checkbox" id="opt-docs" checked> Imprimer les documents du portfolio</label>
     </div>
-    <p class="astuce">Pour obtenir un PDF, choisis « Enregistrer au format PDF » comme imprimante. Le code en bas de chaque page permet de retrouver le même examen et son corrigé.</p>
+    <p class="astuce">Pour obtenir un PDF, choisis « Enregistrer au format PDF » comme imprimante. Le code en bas de chaque page permet de retrouver le même examen et son corrigé (pour une fiche ciblée : le même code avec les mêmes notions cochées).</p>
     <nav class="onglets" aria-label="Aperçu">
       <button class="onglet actif" data-vue="examen">Aperçu de l'examen</button>
       <button class="onglet" data-vue="corrige">Aperçu du corrigé</button>
