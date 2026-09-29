@@ -1,0 +1,3540 @@
+{
+ "id": "ceb-2017",
+ "annee": 2017,
+ "referentiel": "socles",
+ "titre": "CEB 2017",
+ "source": "FWB, épreuve externe commune 2017 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Lire-écrire 1 — texte informatif",
+   "date": "2017-06-15",
+   "points": 30
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2017-06-15",
+   "points": 30
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2017-06-15",
+   "points": 40
+  },
+  {
+   "n": 4,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2017-06-16",
+   "points": 60
+  },
+  {
+   "n": 5,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2017-06-16",
+   "points": 50
+  },
+  {
+   "n": 6,
+   "matiere": "fr",
+   "titre": "Lire-écrire 2 — conte",
+   "date": "2017-06-19",
+   "points": 30
+  },
+  {
+   "n": 7,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2017-06-19",
+   "points": 50
+  },
+  {
+   "n": 8,
+   "matiere": "ma",
+   "titre": "Nombres et opérations",
+   "date": "2017-06-20",
+   "points": 70
+  },
+  {
+   "n": 9,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2017-06-20",
+   "points": 20,
+   "audio": null
+  }
+ ],
+ "documents": [
+  {
+   "id": "art-1",
+   "page": 3,
+   "titre": "La Belgique, ses arts et ses loisirs (1)",
+   "fichier": "assets/2017/pdf03.webp",
+   "alt": "L'Art nouveau de Victor Horta : grandes fenêtres, verrières, lignes courbes qui rappellent la végétation (façades, rampes d'escalier, lustres, vases)."
+  },
+  {
+   "id": "art-2",
+   "page": 4,
+   "titre": "La Belgique, ses arts et ses loisirs (2)",
+   "fichier": "assets/2017/pdf04.webp",
+   "alt": "Verre, acier et fer ; l'Art nouveau disparait avec la guerre (trop couteux). La BD (Tintin, 1929 ; Spirou et Tintin dès la fin des années 1930). Le surréalisme de Magritte (années 1920). Un pays bizarre ? (Lille / Rijssel)."
+  },
+  {
+   "id": "vase",
+   "page": 5,
+   "titre": "Le vase de Tante Gertrude",
+   "fichier": "assets/2017/pdf05.webp",
+   "alt": "Bande dessinée de Peyo (Poussy), sans texte, à raconter."
+  },
+  {
+   "id": "evap-1",
+   "page": 6,
+   "titre": "L'évaporation de l'eau",
+   "fichier": "assets/2017/pdf06.webp",
+   "alt": "Même quantité d'eau dans des récipients identiques : sur le radiateur, sur une table, dans le frigo, devant un ventilateur allumé."
+  },
+  {
+   "id": "evap-2",
+   "page": 7,
+   "titre": "L'évaporation : résultats",
+   "fichier": "assets/2017/pdf07.webp",
+   "alt": "Départ à 30 mm. Après 24 h / 48 h : radiateur 25 / 20 ; table 29 / 28 ; frigo 30 / 29 ; ventilateur 18 / 6 mm."
+  },
+  {
+   "id": "sel",
+   "page": 8,
+   "titre": "L'eau salée",
+   "fichier": "assets/2017/pdf08.webp",
+   "alt": "1 dl d'eau à 20 °C : 10, 20, 30 g de sel se dissolvent ; à 40 g, il reste du sel au fond."
+  },
+  {
+   "id": "chaine",
+   "page": 9,
+   "titre": "La chaine alimentaire",
+   "fichier": "assets/2017/pdf09.webp",
+   "alt": "Chaine fléchée (plantes → insecte → petit mammifère → vipère → rapace) et pyramide alimentaire."
+  },
+  {
+   "id": "plantes",
+   "page": 10,
+   "titre": "Des plantes vertes",
+   "fichier": "assets/2017/pdf10.webp",
+   "alt": "Polypode, laitue de mer, pommier, polytric, pin noir."
+  },
+  {
+   "id": "stimulus",
+   "page": 11,
+   "titre": "Les êtres vivants réagissent à des stimulus",
+   "fichier": "assets/2017/pdf11.webp",
+   "alt": "Signaux (odeurs, bruits, mouvements) et modifications de l'environnement."
+  },
+  {
+   "id": "circuit-1",
+   "page": 12,
+   "titre": "Des circuits électriques",
+   "fichier": "assets/2017/pdf12.webp",
+   "alt": "Circuit fermé, circuit ouvert, écrou en métal intégré."
+  },
+  {
+   "id": "circuit-2",
+   "page": 13,
+   "titre": "Un circuit avec de l'eau",
+   "fichier": "assets/2017/pdf13.webp",
+   "alt": "Mode d'emploi d'un sèche-cheveux : « L'eau est un conducteur d'électricité ». Une LED s'allume quand les fils plongent dans l'eau."
+  },
+  {
+   "id": "animaux",
+   "page": 14,
+   "titre": "Quelques animaux préhistoriques",
+   "fichier": "assets/2017/pdf14.webp",
+   "alt": "Rhinocéros laineux, auroch, cheval, mégalocéros, mammouth."
+  },
+  {
+   "id": "peinture",
+   "page": 15,
+   "titre": "Les peintures pariétales",
+   "fichier": "assets/2017/pdf15.webp",
+   "alt": "Grotte de Vallon-Pont-d'Arc (France), occupée entre 35 000 et 25 000 ans avant J.-C."
+  },
+  {
+   "id": "cartes-1",
+   "page": 16,
+   "titre": "Tri de cartes et plans (1)",
+   "fichier": "assets/2017/pdf16.webp",
+   "alt": "Doc 1 : carte météo. Doc 2 : voies de communication. Doc 3 : empire de Charlemagne. Doc 4 : plan du métro de Bruxelles. Doc 5 : réseau ferroviaire de Bruxelles. Doc 6 : carte touristique de Hotton."
+  },
+  {
+   "id": "cartes-2",
+   "page": 17,
+   "titre": "Tri de cartes et plans (2)",
+   "fichier": "assets/2017/pdf17.webp",
+   "alt": "Doc 7 : plan routier La Louvière, Mons, Binche. Doc 8 : courants marins. Doc 9 : fuseaux horaires. Doc 10 : zones climatiques."
+  },
+  {
+   "id": "refugies-1",
+   "page": 18,
+   "titre": "Les réfugiés (1)",
+   "fichier": "assets/2017/pdf18.webp",
+   "alt": "Carte d'identité d'étranger d'Alphonse Louis Hayot, né à Lustin, nationalité belge, valable du 10 mai 1944 au 9 mai 1945 (timbre de 100 francs)."
+  },
+  {
+   "id": "refugies-2",
+   "page": 19,
+   "titre": "Les réfugiés (2)",
+   "fichier": "assets/2017/pdf19.webp",
+   "alt": "Juin 1940 : la Belgique et une partie de la France occupées ; zone libre (Muret). Photos : réfugiés en France en 1940 et en Hongrie en 2016."
+  },
+  {
+   "id": "voies",
+   "page": 20,
+   "titre": "Les voies navigables de Belgique",
+   "fichier": "assets/2017/pdf20.webp",
+   "alt": "Voies > 1 500 t surtout en Flandre (canal Albert, Escaut…) ; Meuse ; aucune en Ardenne."
+  },
+  {
+   "id": "relief",
+   "page": 21,
+   "titre": "Précipitations et altitudes",
+   "fichier": "assets/2017/pdf21.webp",
+   "alt": "Il pleut le plus en Haute Belgique (Hautes Fagnes, Ardenne : 1 400-1 500 mm) ; Botrange 694 m ; Bruxelles en Moyenne Belgique."
+  },
+  {
+   "id": "meteo",
+   "page": 22,
+   "titre": "Relevés météorologiques à Uccle",
+   "fichier": "assets/2017/pdf22.webp",
+   "alt": "Janvier à juin : moyennes, records (38,8 °C en juin 1947), ensoleillement, précipitations, jours de pluie."
+  },
+  {
+   "id": "explo",
+   "page": 23,
+   "titre": "Les grands explorateurs",
+   "fichier": "assets/2017/pdf23.webp",
+   "alt": "Magellan (1480-1521), Colomb (≈1451-1506), Vasco de Gama (≈1469-1524), Cartier (1491-1557), Vespucci (1454-1512)."
+  },
+  {
+   "id": "juge-1",
+   "page": 24,
+   "titre": "Le juge interroge un rocher (1)",
+   "fichier": "assets/2017/pdf24.webp",
+   "alt": "Goutte du Rocher, jeune vendeur d'huile de sésame, se fait voler ses économies. Le juge Su Dongpo fait battre le rocher."
+  },
+  {
+   "id": "juge-2",
+   "page": 25,
+   "titre": "Le juge interroge un rocher (2)",
+   "fichier": "assets/2017/pdf25.webp",
+   "alt": "La foule se moque ; le juge lui fait payer une sapèque d'amende et reconnait la pièce huileuse du voleur."
+  },
+  {
+   "id": "juge-3",
+   "page": 26,
+   "titre": "Le juge interroge un rocher (3)",
+   "fichier": "assets/2017/pdf26.webp",
+   "alt": "Le sac est retrouvé ; le juge partage une anguille avec l'enfant. Contes chinois, L'école des loisirs, 2002."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2017-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de l'auteur du texte « La Belgique, ses arts et ses loisirs » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "choix": [
+    "Donner du plaisir.",
+    "Persuader.",
+    "Enjoindre.",
+    "Informer."
+   ],
+   "reponse": 3,
+   "explication": "Le texte explique des faits : il informe."
+  },
+  {
+   "id": "ceb-2017-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "« Ils utilisaient aussi des lignes courbes qui rappellent la végétation. » Où peut-on observer ces lignes courbes ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "art-1"
+   ],
+   "choix": [
+    "en façade",
+    "les rampes d'escalier",
+    "les lustres",
+    "les vases",
+    "les toits plats",
+    "les ponts"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "explication": "« Ce style apparaissait en façade, mais aussi à l'intérieur comme les rampes d'escalier, les lustres, les vases… »"
+  },
+  {
+   "id": "ceb-2017-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Écris les deux raisons pour lesquelles l'Art nouveau a rapidement disparu.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "art-2"
+   ],
+   "reponseModele": "Construire ces maisons coutait très cher ; avec la Première Guerre mondiale, ces dépenses n'étaient plus possibles."
+  },
+  {
+   "id": "ceb-2017-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "D'après le texte, quel est le métier de…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "texte": "Victor Horta : {1}  ·  Hergé : {2}",
+   "reponse": [
+    [
+     "architecte"
+    ],
+    [
+     "dessinateur"
+    ]
+   ],
+   "explication": "Horta a imaginé des maisons ; Hergé a créé Tintin."
+  },
+  {
+   "id": "ceb-2017-l1-q7a",
+   "livret": 1,
+   "numero": "7a",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "En Belgique, la BD s'est développée… le surréalisme.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "choix": [
+    "avant",
+    "en même temps que",
+    "après"
+   ],
+   "reponse": 1,
+   "explication": "Les deux se développent dans les années 1920."
+  },
+  {
+   "id": "ceb-2017-l1-q7b",
+   "livret": 1,
+   "numero": "7b",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "En Belgique, l'Art nouveau s'est développé… le surréalisme.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "choix": [
+    "avant",
+    "en même temps que",
+    "après"
+   ],
+   "reponse": 0,
+   "explication": "Art nouveau : fin du 19e siècle ; surréalisme : années 1920."
+  },
+  {
+   "id": "ceb-2017-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« Chez nous, c'est également dans la presse que sont nées, en 1929, les aventures de Tintin. » Quel est le sujet du verbe « sont nées » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "documents": [
+    "art-2"
+   ],
+   "reponse": [
+    "les aventures de Tintin"
+   ],
+   "explication": "Qui est-ce qui sont nées ? « les aventures de Tintin » (sujet inversé)."
+  },
+  {
+   "id": "ceb-2017-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« Ces deux magazines appartenaient à des maisons d'édition qui publiaient des livres… » Recopie le complément indirect du verbe « appartenaient ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "documents": [
+    "art-2"
+   ],
+   "reponse": [
+    "à des maisons d'édition",
+    "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros"
+   ],
+   "explication": "Appartenir à quelque chose : « à des maisons d'édition »."
+  },
+  {
+   "id": "ceb-2017-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« Les matériaux favoris de ces architectes étaient le verre, l'acier et le fer qu'ils combinaient. » Que désigne « qu' » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "art-2"
+   ],
+   "choix": [
+    "les architectes",
+    "le verre, l'acier et le fer",
+    "les matériaux favoris",
+    "le hasard"
+   ],
+   "reponse": 1,
+   "explication": "Ils combinaient le verre, l'acier et le fer."
+  },
+  {
+   "id": "ceb-2017-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Le surréalisme est apparu après la Première Guerre mondiale parce que des artistes…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "art-2"
+   ],
+   "choix": [
+    "voulaient s'opposer aux idées de l'époque, les bouleverser et davantage rêver.",
+    "voulaient peindre ce qu'ils voyaient.",
+    "avaient besoin de verre et d'acier.",
+    "voulaient faire de la bande dessinée."
+   ],
+   "reponse": 0,
+   "explication": "C'est ce que dit le texte."
+  },
+  {
+   "id": "ceb-2017-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Les toiles de Magritte sont des énigmes, cela signifie que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "art-2"
+   ],
+   "choix": [
+    "ses toiles apportent des réponses.",
+    "ses toiles sont difficiles à comprendre.",
+    "ses toiles font peur.",
+    "ses toiles montrent le ciel et les étoiles."
+   ],
+   "reponse": 1,
+   "explication": "Une énigme est difficile à comprendre."
+  },
+  {
+   "id": "ceb-2017-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.vocabulaire",
+   "type": "texte_court",
+   "enonce": "« Les architectes Art nouveau intégraient dans leurs constructions de grandes fenêtres… » Remplace « intégraient ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "documents": [
+    "art-1"
+   ],
+   "reponse": [
+    "incluaient",
+    "inséraient",
+    "mettaient",
+    "plaçaient",
+    "ajoutaient",
+    "incorporaient",
+    "installaient",
+    "utilisaient"
+   ],
+   "explication": "intégrer = inclure, insérer, mettre."
+  },
+  {
+   "id": "ceb-2017-l1-q15",
+   "livret": 1,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Sous quel intertitre placer chaque phrase ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "lignes": [
+    "Selon la ville traversée, un même fleuve pourra être appelé « Maas » ou « Meuse ».",
+    "Cet art s'était déjà développé en Amérique avant la guerre.",
+    "Sur ses tableaux, on peut voir le ciel et les nuages à travers les objets."
+   ],
+   "colonnes": [
+    "1. Des dizaines de héros de BD",
+    "2. Le surréalisme de Magritte",
+    "3. Un pays bizarre ?"
+   ],
+   "reponse": [
+    2,
+    0,
+    1
+   ],
+   "explication": "Deux langues pour un même lieu : pays bizarre. La BD existait aux États-Unis. Les tableaux : Magritte."
+  },
+  {
+   "id": "ceb-2017-l1-q17",
+   "livret": 1,
+   "numero": "17",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "Quelles phrases contiennent un attribut du sujet ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "choix": [
+    "La Belgique est un pays surréaliste.",
+    "En effet, les deux noms désignent la même ville.",
+    "En effet, fabriquer de telles maisons était très couteux.",
+    "Avec la guerre, ces dépenses n'étaient plus possibles."
+   ],
+   "reponse": [
+    0,
+    2,
+    3
+   ],
+   "explication": "Après le verbe être : « un pays surréaliste », « très couteux », « plus possibles ». « désignent la même ville » : CD."
+  },
+  {
+   "id": "ceb-2017-l1-q18",
+   "livret": 1,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« …les conditions ont été réunies pour que de nombreux artistes puissent montrer et exercer leurs talents. » Quel métier exercent ces artistes ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "art-2"
+   ],
+   "reponse": [
+    "dessinateur de BD",
+    "dessinateurs de BD",
+    "dessinateur",
+    "dessinateurs",
+    "auteur de BD",
+    "auteurs de bande dessinée",
+    "dessinateurs de bande dessinée"
+   ],
+   "explication": "Le paragraphe parle de la bande dessinée."
+  },
+  {
+   "id": "ceb-2017-l1-q16",
+   "livret": 1,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Dans « Des dizaines de héros de BD », recopie un groupe de mots avec « héros » au singulier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-accords",
+   "documents": [
+    "art-2"
+   ],
+   "reponse": [
+    "le héros créé par Hergé",
+    "le héros"
+   ],
+   "explication": "« le héros créé par Hergé » : le déterminant « le » montre le singulier."
+  },
+  {
+   "id": "ceb-2017-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Colorie les deux propositions qui prouvent que la maison est Art nouveau.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Souligne ce qui contribue à la réputation de la Belgique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Recopie le groupe nominal qui désigne Tintin.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "« Le vase de Tante Gertrude » : raconte par écrit, de manière humoristique, l'histoire d'une bande dessinée sans texte, pour un lecteur qui ne la connait pas (paragraphes, connecteurs, temps verbaux adéquats).",
+   "points": 30,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q3",
+   "livret": 3,
+   "numero": "3",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Complète : faces, sommets et arêtes.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-solides",
+   "texte": "Cube : {1} faces, {2} sommets, {3} arêtes  ·  Pyramide à base carrée : {4} faces, {5} sommets, {6} arêtes  ·  Tétraèdre : {7} faces, {8} sommets, {9} arêtes",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "8"
+    ],
+    [
+     "12"
+    ],
+    [
+     "5"
+    ],
+    [
+     "5"
+    ],
+    [
+     "8"
+    ],
+    [
+     "4"
+    ],
+    [
+     "4"
+    ],
+    [
+     "6"
+    ]
+   ],
+   "explication": "Cube 6-8-12 ; pyramide carrée 5-5-8 ; tétraèdre 4-4-6."
+  },
+  {
+   "id": "ceb-2017-l3-q13a",
+   "livret": 3,
+   "numero": "13a",
+   "domaine": "ma.geometrie",
+   "type": "numerique",
+   "enonce": "Combien vaut la somme des 3 angles d'un triangle (en degrés) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-triangles",
+   "reponse": 180,
+   "unite": "°",
+   "explication": "Toujours 180°."
+  },
+  {
+   "id": "ceb-2017-l3-q1",
+   "livret": 3,
+   "numero": "1",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace la figure après rotation.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Codage des triangles équilatéral, rectangle, isocèle.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q3b",
+   "livret": 3,
+   "numero": "3b",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Faces attachées au sommet entouré.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le parallélépipède du développement.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Coupe d'un cube : que obtient-on ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Critères du diagramme en arbre.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nombre d'axes de symétrie des figures.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Agrandis la figure.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q9",
+   "livret": 3,
+   "numero": "9",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure la construction qui correspond à l'énoncé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q10",
+   "livret": 3,
+   "numero": "10",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Tracés dans des cercles.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace carré, rectangle, triangle rectangle et parallélogramme.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un triangle de 5, 6 et 8 cm.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q13bc",
+   "livret": 3,
+   "numero": "13bc",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nature du triangle et hauteur.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Itinéraire sur le plan de Verviers et coordonnées.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Développement d'un prisme à base triangulaire.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q1",
+   "livret": 4,
+   "numero": "1",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Un terrain et une raquette de tennis.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "texte": "Masse d'une raquette : 300 {1}  ·  Longueur d'une raquette : {2} cm (0,7 / 7 / 70 / 700)  ·  Aire d'un terrain : 200 {3}  ·  Largeur d'un terrain : {4} m (0,1 / 1 / 10 / 100)",
+   "reponse": [
+    [
+     "g"
+    ],
+    [
+     "70"
+    ],
+    [
+     "m²",
+     "m2"
+    ],
+    [
+     "10"
+    ]
+   ],
+   "explication": "Une raquette pèse environ 300 g et mesure 70 cm ; un terrain de tennis fait environ 10 m de large et 200 m² (en simple)."
+  },
+  {
+   "id": "ceb-2017-l4-q2",
+   "livret": 4,
+   "numero": "2",
+   "domaine": "ma.grandeurs",
+   "type": "grille",
+   "enonce": "Compare : <, > ou = ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "lignes": [
+    "57,2 l … 57,2 dal",
+    "240 mg … 2 400 cg",
+    "3 dam² … 30 dm²",
+    "1,1 cg … 1,1 g"
+   ],
+   "colonnes": [
+    "<",
+    "=",
+    ">"
+   ],
+   "reponse": [
+    0,
+    0,
+    2,
+    0
+   ],
+   "explication": "1 dal = 10 l ; 2 400 cg = 24 g ; 3 dam² = 300 m² ; 1,1 cg = 0,011 g."
+  },
+  {
+   "id": "ceb-2017-l4-q3a",
+   "livret": 4,
+   "numero": "3a",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "175 cm pourraient correspondre à…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "la hauteur d'une marche",
+    "la longueur d'une table",
+    "la taille d'un adulte",
+    "la profondeur d'un évier"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "1,75 m : une table ou un adulte."
+  },
+  {
+   "id": "ceb-2017-l4-q3b",
+   "livret": 4,
+   "numero": "3b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "15 s pourraient correspondre à…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "la durée pour courir 100 m",
+    "la durée pour cuire un poulet",
+    "la durée du journal télévisé",
+    "la durée d'une chanson"
+   ],
+   "reponse": [
+    0
+   ],
+   "explication": "Un enfant court 100 m en environ 15 s."
+  },
+  {
+   "id": "ceb-2017-l4-q3c",
+   "livret": 4,
+   "numero": "3c",
+   "domaine": "ma.grandeurs",
+   "type": "qcm_multi",
+   "enonce": "3 kg pourraient correspondre à…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "choix": [
+    "la masse d'un bébé",
+    "la masse d'une feuille de papier",
+    "la masse d'un sac de pommes de terre",
+    "la masse d'une télécommande"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Un bébé à la naissance pèse environ 3 kg ; un petit sac de pommes de terre aussi."
+  },
+  {
+   "id": "ceb-2017-l4-q4",
+   "livret": 4,
+   "numero": "4",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Écris l'opération commune à chaque cadre (les nombres changent, l'unité aussi).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "5 dm → 0,5 cm et 5 dam → 0,5 m : {1}  ·  30 mm² → 3 cm² et 30 m² → 3 dam² : {2}  ·  0,2 m³ → 2 dm³ et 0,2 dm³ → 2 cm³ : {3}",
+   "reponse": [
+    [
+     ": 100",
+     ":100",
+     "÷ 100",
+     "÷100",
+     "/100"
+    ],
+    [
+     "× 10",
+     "x 10",
+     "×10",
+     "x10",
+     "* 10"
+    ],
+    [
+     ": 100",
+     ":100",
+     "÷ 100",
+     "÷100",
+     "/100"
+    ]
+   ],
+   "explication": "5 dm = 50 cm ; 50 : 100 = 0,5. 30 mm² = 0,3 cm² ; × 10 = 3. 0,2 m³ = 200 dm³ ; : 100 = 2."
+  },
+  {
+   "id": "ceb-2017-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Un parallélépipède rectangle A est formé de 24 cubes.",
+   "points": 6,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "texte": "On double la longueur : {1} cubes  ·  On diminue de moitié la hauteur : {2} cubes  ·  On triple chaque dimension : {3} cubes",
+   "reponse": [
+    [
+     "48"
+    ],
+    [
+     "12"
+    ],
+    [
+     "648"
+    ]
+   ],
+   "explication": "× 2 ; : 2 ; × 3 × 3 × 3 = × 27 : 24 × 27 = 648."
+  },
+  {
+   "id": "ceb-2017-l4-q8c",
+   "livret": 4,
+   "numero": "8c",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un parallélépipède rectangle mesure 80 cm × 40 cm × 30 cm. Quel est son volume (en cm³) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "reponse": 96000,
+   "unite": "cm³",
+   "explication": "80 × 40 × 30 = 96 000 cm³ (96 dm³)."
+  },
+  {
+   "id": "ceb-2017-l4-q14b",
+   "livret": 4,
+   "numero": "14b",
+   "domaine": "ma.grandeurs",
+   "type": "texte_court",
+   "enonce": "Recette : 3/5 l d'eau gazeuse, 1/4 l de jus d'orange, 3/10 l de jus de raisin, 1/20 l de grenadine. Quelle quantité de boisson (en litres) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-addition",
+   "reponse": [
+    "1,2",
+    "1,2 l",
+    "6/5",
+    "24/20",
+    "1,20"
+   ],
+   "explication": "12/20 + 5/20 + 6/20 + 1/20 = 24/20 = 1,2 l."
+  },
+  {
+   "id": "ceb-2017-l4-q15",
+   "livret": 4,
+   "numero": "15",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Gâteau pour 6 personnes : 180 g de sucre, 2 œufs… (farine : 675 g pour 15 personnes ; beurre : 180 g pour 12 personnes).",
+   "points": 9,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "texte": "Sucre : 12 pers. {1} g, 15 pers. {2} g  ·  Farine : 6 pers. {3} g, 12 pers. {4} g  ·  Beurre : 6 pers. {5} g, 15 pers. {6} g  ·  Œufs : 12 pers. {7}, 15 pers. {8}",
+   "reponse": [
+    [
+     "360"
+    ],
+    [
+     "450"
+    ],
+    [
+     "270"
+    ],
+    [
+     "540"
+    ],
+    [
+     "90"
+    ],
+    [
+     "225"
+    ],
+    [
+     "4"
+    ],
+    [
+     "5"
+    ]
+   ],
+   "explication": "Pour 12 : × 2. Pour 15 : × 2,5 (ou pour 3 personnes × 5)."
+  },
+  {
+   "id": "ceb-2017-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Un élève a calculé : 2 → 3 ; : 2 → 1 → 1,5 ; × 5 → 5 → 7,5. Quel problème correspond ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "choix": [
+    "Pour 3 personnes, 2 pommes. Combien pour 5 personnes ?",
+    "2 personnes font un trajet de 3 h. Combien de temps pour 5 personnes ?",
+    "2 kg de pommes coutent 3 €. Combien pour 5 kg ?",
+    "2 récipients contiennent 5 l. Combien pour 3 récipients ?"
+   ],
+   "reponse": 2,
+   "explication": "2 kg → 3 € ; 1 kg → 1,50 € ; 5 kg → 7,50 €."
+  },
+  {
+   "id": "ceb-2017-l4-q19",
+   "livret": 4,
+   "numero": "19",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un pot contient 20 % de noisettes. On mélange 5 pots. Quel pourcentage de noisettes contient le mélange ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "reponse": 20,
+   "unite": "%",
+   "explication": "La proportion ne change pas : toujours 20 %."
+  },
+  {
+   "id": "ceb-2017-l4-q20",
+   "livret": 4,
+   "numero": "20",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Il faut 18 pierres pour 1 m². Combien de pierres pour un mur de 272 m de long et 2 m de haut ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-aires-perimetres",
+   "reponse": 9792,
+   "unite": "pierres",
+   "explication": "272 × 2 = 544 m² ; 544 × 18 = 9 792 pierres."
+  },
+  {
+   "id": "ceb-2017-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Combien de fois utiliser l'autre forme ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Représentation des sports choisis.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q8ab",
+   "livret": 4,
+   "numero": "8ab",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Périmètre et aire des faces.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Prix du terrain à 70 € le m².",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Aire de la partie grisée.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q11",
+   "livret": 4,
+   "numero": "11",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Fractions de l'hexagone.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace le segment complet.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q13",
+   "livret": 4,
+   "numero": "13",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trace le rectangle entier.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q14a",
+   "livret": 4,
+   "numero": "14a",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Éprouvettes : ingrédients.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Classe les masses sur les balances.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l4-q18",
+   "livret": 4,
+   "numero": "18",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Graphique des classeurs.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q1a",
+   "livret": 5,
+   "numero": "1a",
+   "domaine": "hg.histoire",
+   "type": "qcm_multi",
+   "enonce": "Quels animaux de la page 14 sont représentés sur la peinture de Vallon-Pont-d'Arc (Chauvet) ?",
+   "points": 1.5,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "animaux",
+    "peinture"
+   ],
+   "choix": [
+    "Le rhinocéros laineux",
+    "L'auroch",
+    "Le cheval",
+    "Le mégalocéros",
+    "Le mammouth"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "On reconnait des chevaux, des aurochs et des rhinocéros."
+  },
+  {
+   "id": "ceb-2017-l5-q1e",
+   "livret": 5,
+   "numero": "1e",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Pendant quelle période conventionnelle les artistes ont-ils peint sur ces parois (−35 000 à −25 000) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "documents": [
+    "peinture"
+   ],
+   "choix": [
+    "Temps modernes",
+    "Moyen Âge",
+    "Antiquité",
+    "Préhistoire"
+   ],
+   "reponse": 3,
+   "explication": "Avant l'invention de l'écriture : Préhistoire."
+  },
+  {
+   "id": "ceb-2017-l5-q2",
+   "livret": 5,
+   "numero": "2",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Quelle période conventionnelle commence avec chaque évènement (dans nos régions) ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Conquête de la Gaule par les Romains",
+    "Arrivée des Francs dans nos régions",
+    "Invention de l'imprimerie par Gutenberg",
+    "Déclaration des droits de l'homme"
+   ],
+   "colonnes": [
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "explication": "Dans l'ordre chronologique."
+  },
+  {
+   "id": "ceb-2017-l5-q3",
+   "livret": 5,
+   "numero": "3",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "À quelle période appartient chaque œuvre ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Bas-relief égyptien (entre 200 et 54 av. J.-C.)",
+    "La Joconde, Léonard de Vinci (1503-1506)",
+    "Don Quichotte, ballet (2013)"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    1,
+    3,
+    4
+   ],
+   "explication": "Avant J.-C. après l'écriture : Antiquité ; 16e siècle : Temps modernes ; 2013 : époque contemporaine."
+  },
+  {
+   "id": "ceb-2017-l5-q4a",
+   "livret": 5,
+   "numero": "4a",
+   "domaine": "hg.histoire",
+   "type": "trous",
+   "enonce": "Carte d'identité d'étranger (document 1).",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "refugies-1"
+   ],
+   "texte": "Nom du titulaire : {1}  ·  Nationalité : {2}  ·  Localité de naissance : {3}",
+   "reponse": [
+    [
+     "Hayot",
+     "Alphonse Hayot",
+     "Hayot Alphonse",
+     "Hayot Alphonse Louis",
+     "Alphonse Louis Hayot"
+    ],
+    [
+     "belge"
+    ],
+    [
+     "Lustin"
+    ]
+   ],
+   "explication": "Hayot Alphonse Louis, né à Lustin, nationalité belge."
+  },
+  {
+   "id": "ceb-2017-l5-q4b",
+   "livret": 5,
+   "numero": "4b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Le document est…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "refugies-1"
+   ],
+   "lignes": [
+    "gratuit.",
+    "valable à vie.",
+    "destiné aux étrangers."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    1,
+    0
+   ],
+   "explication": "Un timbre de 100 francs ; valable du 10 mai 1944 au 9 mai 1945 ; « carte d'identité d'étranger »."
+  },
+  {
+   "id": "ceb-2017-l5-q4c",
+   "livret": 5,
+   "numero": "4c",
+   "domaine": "hg.histoire",
+   "type": "qcm_multi",
+   "enonce": "Le titulaire de la carte…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "refugies-1",
+    "refugies-2"
+   ],
+   "choix": [
+    "fuit une guerre.",
+    "est en vacances.",
+    "travaille en France.",
+    "n'est plus en sécurité dans son pays.",
+    "vient d'un pays occupé par les Allemands."
+   ],
+   "reponse": [
+    0,
+    3,
+    4
+   ],
+   "explication": "Carte « non travailleur » ; la Belgique est occupée depuis 1940."
+  },
+  {
+   "id": "ceb-2017-l5-q4d",
+   "livret": 5,
+   "numero": "4d",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "En 1944, le titulaire de la carte était…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "refugies-1"
+   ],
+   "choix": [
+    "un prisonnier de guerre.",
+    "un réfugié.",
+    "un touriste.",
+    "un étranger en séjour illégal."
+   ],
+   "reponse": 1,
+   "explication": "Il a fui la guerre et séjourne légalement en France."
+  },
+  {
+   "id": "ceb-2017-l5-q4e",
+   "livret": 5,
+   "numero": "4e",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Les réfugiés de 1940 et de 2016 fuient un problème similaire. Lequel ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "refugies-2"
+   ],
+   "choix": [
+    "un tsunami.",
+    "une transformation du climat.",
+    "la guerre dans leur pays.",
+    "une épidémie de grippe."
+   ],
+   "reponse": 2,
+   "explication": "Dans les deux cas, la guerre."
+  },
+  {
+   "id": "ceb-2017-l5-q5a",
+   "livret": 5,
+   "numero": "5a",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Quel document utiliser pour chaque activité ?",
+   "points": 6,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "cartes-1",
+    "cartes-2"
+   ],
+   "lignes": [
+    "Se déplacer en train dans la région de Bruxelles.",
+    "Aller de Binche à Mons en voiture.",
+    "Préparer une élocution sur Charlemagne.",
+    "Préparer une visite touristique avec des loisirs.",
+    "Connaitre le décalage horaire entre Bruxelles et New York.",
+    "Se déplacer en métro dans Bruxelles."
+   ],
+   "colonnes": [
+    "Doc 3",
+    "Doc 4",
+    "Doc 5",
+    "Doc 6",
+    "Doc 7",
+    "Doc 9"
+   ],
+   "reponse": [
+    2,
+    4,
+    0,
+    3,
+    5,
+    1
+   ],
+   "explication": "5 : réseau ferroviaire ; 7 : plan routier ; 3 : empire de Charlemagne ; 6 : carte touristique ; 9 : fuseaux horaires ; 4 : métro."
+  },
+  {
+   "id": "ceb-2017-l5-q5b",
+   "livret": 5,
+   "numero": "5b",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Une carte avec des lignes de pression (1005, 1010…), des A et des D et le sens de rotation des vents est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "cartes-1"
+   ],
+   "choix": [
+    "une carte du relief de l'Europe",
+    "une carte météorologique",
+    "une carte des courants marins",
+    "une carte des océans"
+   ],
+   "reponse": 1,
+   "explication": "A = anticyclone, D = dépression : carte météo."
+  },
+  {
+   "id": "ceb-2017-l5-q6b",
+   "livret": 5,
+   "numero": "6b",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Quelles voies navigables emprunte-t-on d'Anvers à Namur en passant par Liège ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cours-eau",
+   "documents": [
+    "voies"
+   ],
+   "choix": [
+    "Le canal Albert",
+    "La Meuse",
+    "Le canal de Willebroek",
+    "L'Escaut",
+    "La Sambre"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Le canal Albert relie Anvers à Liège, puis on remonte la Meuse jusqu'à Namur."
+  },
+  {
+   "id": "ceb-2017-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Voies navigables pour bateaux de plus de 1 500 tonnes : vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-transports",
+   "documents": [
+    "voies"
+   ],
+   "lignes": [
+    "Elles sont plus présentes en Wallonie qu'en Flandre.",
+    "Elles sont présentes uniquement dans le centre de la Belgique.",
+    "Elles sont plus présentes en Flandre qu'en Wallonie.",
+    "Il n'y en a pas en Haute Belgique."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "explication": "Le nord du pays (plat) est bien mieux équipé ; l'Ardenne n'en a pas."
+  },
+  {
+   "id": "ceb-2017-l5-q9",
+   "livret": 5,
+   "numero": "9",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Au point culminant de la Belgique (694 m), on a construit un escalier de 6 m. Quel est ce lieu ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-regions-naturelles",
+   "documents": [
+    "relief"
+   ],
+   "reponse": [
+    "Botrange",
+    "le signal de Botrange",
+    "signal de Botrange",
+    "Hautes Fagnes"
+   ],
+   "explication": "Le signal de Botrange (Hautes Fagnes) : 694 + 6 = 700 m."
+  },
+  {
+   "id": "ceb-2017-l5-q10a",
+   "livret": 5,
+   "numero": "10a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "En Belgique, où pleut-il le plus en moyenne par an ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-regions-naturelles",
+   "documents": [
+    "relief"
+   ],
+   "choix": [
+    "En Basse Belgique",
+    "En Moyenne Belgique",
+    "En Haute Belgique"
+   ],
+   "reponse": 2,
+   "explication": "L'Ardenne et les Hautes Fagnes reçoivent 1 400 à 1 500 mm."
+  },
+  {
+   "id": "ceb-2017-l5-q10b",
+   "livret": 5,
+   "numero": "10b",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Dans quelle zone se situe Bruxelles ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-regions-naturelles",
+   "documents": [
+    "relief"
+   ],
+   "choix": [
+    "En Basse Belgique",
+    "En Moyenne Belgique",
+    "En Haute Belgique"
+   ],
+   "reponse": 1,
+   "explication": "Bruxelles est en Moyenne Belgique."
+  },
+  {
+   "id": "ceb-2017-l5-q10c",
+   "livret": 5,
+   "numero": "10c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Précipitations en Belgique : correct ou incorrect ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-climats",
+   "documents": [
+    "relief"
+   ],
+   "lignes": [
+    "Plus le relief est plat, plus il y a de précipitations.",
+    "Il pleut plus dans l'ouest que dans l'est de la Belgique.",
+    "Les Hautes Fagnes sont un des endroits où il pleut le plus.",
+    "Il pleut moins au Littoral qu'en Lorraine belge."
+   ],
+   "colonnes": [
+    "Correct",
+    "Incorrect"
+   ],
+   "reponse": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "explication": "Plus on monte, plus il pleut ; l'est (Ardenne) est plus arrosé que l'ouest."
+  },
+  {
+   "id": "ceb-2017-l5-q11a",
+   "livret": 5,
+   "numero": "11a",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Qu'a découvert chaque navigateur ?",
+   "points": 2.5,
+   "corrigeVerifie": false,
+   "fiche": "hg-personnages",
+   "documents": [
+    "explo"
+   ],
+   "lignes": [
+    "Magellan",
+    "Christophe Colomb",
+    "Vasco de Gama",
+    "Jacques Cartier",
+    "Amerigo Vespucci"
+   ],
+   "colonnes": [
+    "Le passage au sud de l'Amérique",
+    "San Salvador (1492)",
+    "La route de l'Inde par le cap de Bonne-Espérance",
+    "Le Canada et le Saint-Laurent",
+    "L'idée d'un nouveau continent"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Voir la page 23 du portfolio."
+  },
+  {
+   "id": "ceb-2017-l5-q11b",
+   "livret": 5,
+   "numero": "11b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Les iles Galápagos ont été découvertes en 1535. Quel navigateur cité a pu connaitre cette découverte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-frise",
+   "documents": [
+    "explo"
+   ],
+   "choix": [
+    "Magellan (1480-1521)",
+    "Christophe Colomb (1451-1506)",
+    "Vasco de Gama (1469-1524)",
+    "Jacques Cartier (1491-1557)",
+    "Amerigo Vespucci (1454-1512)"
+   ],
+   "reponse": 3,
+   "explication": "Seul Cartier est encore vivant en 1535."
+  },
+  {
+   "id": "ceb-2017-l5-q1b",
+   "livret": 5,
+   "numero": "1b",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Nom de l'animal représenté ; vit-il encore à l'état sauvage ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "animaux"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q1c",
+   "livret": 5,
+   "numero": "1c",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Écris une question à propos de la peinture.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q1d",
+   "livret": 5,
+   "numero": "1d",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Colorie la durée d'occupation de la grotte.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q4a2",
+   "livret": 5,
+   "numero": "4a2",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Année de naissance du titulaire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "refugies-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q6a",
+   "livret": 5,
+   "numero": "6a",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Repasse les voies de Namur à Anvers par Bruxelles.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "voies"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q7",
+   "livret": 5,
+   "numero": "7",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Associe photos et dessins de vallées.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q8",
+   "livret": 5,
+   "numero": "8",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Photo aérienne qui correspond au plan.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l5-q11cde",
+   "livret": 5,
+   "numero": "11cde",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Durées de vie des explorateurs sur la ligne du temps.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "explo"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de l'auteur du conte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-lire-intention",
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "choix": [
+    "Donner du plaisir.",
+    "Persuader.",
+    "Enjoindre.",
+    "Informer."
+   ],
+   "reponse": 0,
+   "explication": "C'est un conte."
+  },
+  {
+   "id": "ceb-2017-l6-q2",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Le juge se rend au marché pour acheter des légumes, du poisson, de l'huile, mais aussi pour… et pour…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "juge-1"
+   ],
+   "reponseModele": "parler avec les gens de la ville et s'informer des injustices à réparer."
+  },
+  {
+   "id": "ceb-2017-l6-q3",
+   "livret": 6,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Pourquoi tout le monde venait-il acheter l'huile de Goutte du Rocher ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1"
+   ],
+   "choix": [
+    "C'était la meilleure huile du marché (parfumée, dense, couleur d'or).",
+    "Il apportait le plus grand soin à son huile.",
+    "Elle était la moins chère.",
+    "Le juge obligeait les gens à l'acheter."
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "« la meilleure huile du marché » ; « il apportait le plus grand soin à son huile, aussi tout le monde venait lui en acheter »."
+  },
+  {
+   "id": "ceb-2017-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Pour le juge, pourquoi le jeune marchand pleurait-il ? Et en réalité ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1"
+   ],
+   "reponseModele": "Le juge pense que la maladie de ses parents s'est aggravée ; en réalité, on lui a volé son sac d'économies."
+  },
+  {
+   "id": "ceb-2017-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Remets les faits dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "elements": [
+    "Le sac d'économies du jeune marchand disparait.",
+    "Le juge découvre le jeune marchand en larmes.",
+    "Le juge ordonne que l'on batte le rocher.",
+    "Le juge condamne les passants à verser une amende.",
+    "Les gardes arrêtent le voleur.",
+    "Le sac d'argent est retrouvé sous le foin."
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "explication": "Le vol a lieu pendant le sommeil de l'enfant, avant l'arrivée du juge."
+  },
+  {
+   "id": "ceb-2017-l6-q6",
+   "livret": 6,
+   "numero": "6",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Dans quels buts le juge fait-il tourner chaque pièce entre ses doigts ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-2"
+   ],
+   "reponseModele": "Pour l'examiner (voir si elle est poisseuse) et pour la sentir (reconnaitre l'odeur de l'huile de sésame)."
+  },
+  {
+   "id": "ceb-2017-l6-q7",
+   "livret": 6,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Complète le résumé avec : anguille, argent, coupable, pièce, huile, fou, rocher.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "texte": "C'est l'histoire d'un vendeur d'{1} dont l'{2} a été volé. Un juge s'est fait passer pour {3} en faisant semblant d'accuser un {4}. Il a obligé chaque villageois à lui donner une {5}. Le {6} a été découvert car sa pièce sentait l'{7}.",
+   "reponse": [
+    [
+     "huile"
+    ],
+    [
+     "argent"
+    ],
+    [
+     "fou"
+    ],
+    [
+     "rocher"
+    ],
+    [
+     "pièce",
+     "piece"
+    ],
+    [
+     "coupable"
+    ],
+    [
+     "huile"
+    ]
+   ],
+   "explication": "Huile, argent, fou, rocher, pièce, coupable, huile."
+  },
+  {
+   "id": "ceb-2017-l6-q8",
+   "livret": 6,
+   "numero": "8",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« …autour de ce curieux interrogatoire » : l'interrogatoire est curieux parce que…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1"
+   ],
+   "choix": [
+    "le juge interroge le jeune marchand.",
+    "le juge interroge un rocher.",
+    "le juge s'interroge lui-même.",
+    "le juge interroge tous les gens du village."
+   ],
+   "reponse": 1,
+   "explication": "Un rocher ne peut pas parler !"
+  },
+  {
+   "id": "ceb-2017-l6-q9",
+   "livret": 6,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Goutte du Rocher assistait, très perplexe, à cette étrange enquête. » Cela signifie…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "juge-2"
+   ],
+   "choix": [
+    "Il assistait le juge dans son enquête.",
+    "Il regardait l'enquête se dérouler sans intervenir.",
+    "Il s'était assis par terre.",
+    "Il battait le rocher avec les gardes."
+   ],
+   "reponse": 1,
+   "explication": "« Assister à » = être présent, regarder."
+  },
+  {
+   "id": "ceb-2017-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "Quel mot décrit le juge comme une personne lucide, qui sait ce qu'elle fait ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "juge-2"
+   ],
+   "choix": [
+    "fou",
+    "dérangé",
+    "clairvoyant",
+    "stupide"
+   ],
+   "reponse": 2,
+   "explication": "Clairvoyant = qui voit clair, lucide."
+  },
+  {
+   "id": "ceb-2017-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quelles expressions décrivent le juge comme une personne qui a perdu la raison ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-expressions",
+   "documents": [
+    "juge-1",
+    "juge-2"
+   ],
+   "choix": [
+    "Le juge est devenu fou",
+    "son esprit est dérangé",
+    "Il a besoin de repos",
+    "un juge aussi clairvoyant"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "« fou », « esprit dérangé »."
+  },
+  {
+   "id": "ceb-2017-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Qui prononce ces paroles ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-2"
+   ],
+   "lignes": [
+    "« Qu'est-ce que c'est ? »",
+    "« C'est bien vrai. »",
+    "« Et notre petit vendeur d'huile en imbibe chaque pièce qu'il reçoit. »"
+   ],
+   "colonnes": [
+    "Le juge",
+    "Goutte du Rocher",
+    "La foule"
+   ],
+   "reponse": [
+    2,
+    1,
+    0
+   ],
+   "explication": "La foule demande ; Goutte du Rocher confirme ; le juge explique."
+  },
+  {
+   "id": "ceb-2017-l6-q13",
+   "livret": 6,
+   "numero": "13",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "Écris le groupe sujet.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "texte": "« c'est toi qui as pris l'argent » : sujet de « as pris » = {1}  ·  « L'huile de sésame que vend Goutte du Rocher » : sujet de « vend » = {2}",
+   "reponse": [
+    [
+     "qui",
+     "toi",
+     "qui (toi)"
+    ],
+    [
+     "Goutte du Rocher"
+    ]
+   ],
+   "explication": "« qui » (mis pour toi) ; le sujet de « vend » est inversé : Goutte du Rocher."
+  },
+  {
+   "id": "ceb-2017-l6-q15",
+   "livret": 6,
+   "numero": "15",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« …tout le monde venait lui en acheter. Or un matin, alors que le juge… » Quel organisateur textuel lie les deux paragraphes ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "juge-1"
+   ],
+   "reponse": [
+    "Or",
+    "or",
+    "Or un matin"
+   ],
+   "explication": "« Or » introduit l'élément perturbateur."
+  },
+  {
+   "id": "ceb-2017-l6-q16",
+   "livret": 6,
+   "numero": "16",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "« …vendait la meilleure huile du marché. Elle était parfumée et dense… » Quelles marques montrent que « huile » est féminin ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-accords",
+   "documents": [
+    "juge-1"
+   ],
+   "choix": [
+    "meilleure",
+    "du marché",
+    "Elle",
+    "parfumée",
+    "était"
+   ],
+   "reponse": [
+    0,
+    2,
+    3
+   ],
+   "explication": "meilleure, Elle, parfumée (dense est pareil au masculin)."
+  },
+  {
+   "id": "ceb-2017-l6-q17",
+   "livret": 6,
+   "numero": "17",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel est le résumé de cette histoire ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "choix": [
+    "Le juge généreux fait payer les villageois et donne l'argent au marchand, qui l'invite à déjeuner.",
+    "Le juge fait frapper un rocher ; les villageois paient pour le spectacle et l'argent est offert au marchand.",
+    "Le juge se fait passer pour fou afin que les villageois paient une amende d'une pièce ; le coupable est attrapé car sa pièce porte des traces d'huile.",
+    "Le juge trouve une astuce ; sachant qu'il va être découvert, le voleur se dénonce."
+   ],
+   "reponse": 2,
+   "explication": "Le voleur ne se dénonce pas : c'est l'huile sur sa pièce qui le trahit."
+  },
+  {
+   "id": "ceb-2017-l6-q18",
+   "livret": 6,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Quelle « injustice » le juge a-t-il réparée ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "juge-1",
+    "juge-2",
+    "juge-3"
+   ],
+   "reponseModele": "Il a retrouvé le voleur et rendu au jeune marchand l'argent qui devait servir à soigner ses parents."
+  },
+  {
+   "id": "ceb-2017-l6-q14",
+   "livret": 6,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Entoure la ligne du temps qui correspond à la phrase.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q1a",
+   "livret": 7,
+   "numero": "1a",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "Évaporation (départ 30 mm ; après 24 h : radiateur 25, table 29, frigo 30, ventilateur 18 mm). L'expérience valide-t-elle l'hypothèse ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "evap-2"
+   ],
+   "lignes": [
+    "Le vent favorise plus l'évaporation que la chaleur après 24 h.",
+    "Sur une table ou dans un frigo, la même quantité d'eau s'évapore en 24 h.",
+    "La chaleur favorise l'évaporation de l'eau."
+   ],
+   "colonnes": [
+    "Valide",
+    "Ne valide pas"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Ventilateur : −12 mm, radiateur : −5 mm. Table : −1 mm, frigo : 0. Radiateur (−5) > table (−1)."
+  },
+  {
+   "id": "ceb-2017-l7-q1c",
+   "livret": 7,
+   "numero": "1c",
+   "domaine": "sc.matiere",
+   "type": "trous",
+   "enonce": "Relis le graphique : hauteur d'eau (mm) après 24 h et après 48 h.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "evap-2"
+   ],
+   "texte": "Radiateur : {1} et {2}  ·  Table : {3} et {4}  ·  Frigo : {5} et {6}  ·  Ventilateur : {7} et {8}",
+   "reponse": [
+    [
+     "25"
+    ],
+    [
+     "20"
+    ],
+    [
+     "29"
+    ],
+    [
+     "28"
+    ],
+    [
+     "30"
+    ],
+    [
+     "29"
+    ],
+    [
+     "18"
+    ],
+    [
+     "6"
+    ]
+   ],
+   "explication": "Lecture du graphique en bâtonnets."
+  },
+  {
+   "id": "ceb-2017-l7-q2a",
+   "livret": 7,
+   "numero": "2a",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "1 dl d'eau à 20 °C : 10, 20 et 30 g de sel se dissolvent, avec 40 g il reste du sel au fond.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-melanges",
+   "documents": [
+    "sel"
+   ],
+   "lignes": [
+    "On peut dissoudre complètement au moins 30 g de sel dans 1 dl d'eau.",
+    "On peut dissoudre complètement au moins 40 g de sel.",
+    "C'est à partir de 35 g que le sel ne se dissout plus.",
+    "Si on chauffe l'eau, on peut dissoudre plus de 40 g."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le montrer"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    2
+   ],
+   "explication": "Rien n'est testé entre 30 et 40 g, ni avec de l'eau chaude."
+  },
+  {
+   "id": "ceb-2017-l7-q2b",
+   "livret": 7,
+   "numero": "2b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "On refait l'expérience avec du sucre. Quelle question les élèves se posent-ils ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-melanges",
+   "documents": [
+    "sel"
+   ],
+   "reponseModele": "« Peut-on dissoudre autant de sucre qu'on le veut dans 1 dl d'eau ? »"
+  },
+  {
+   "id": "ceb-2017-l7-q2c",
+   "livret": 7,
+   "numero": "2c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Hypothèse : si on ajoute de l'eau à 20 °C, le sel au fond pourrait continuer à se dissoudre. Pour vérifier, il faut…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-melanges",
+   "documents": [
+    "sel"
+   ],
+   "choix": [
+    "ajouter de l'eau à 20 °C et du sel.",
+    "ajouter uniquement de l'eau à 20 °C.",
+    "ajouter uniquement du sel."
+   ],
+   "reponse": 1,
+   "explication": "On ne change qu'une chose : la quantité d'eau."
+  },
+  {
+   "id": "ceb-2017-l7-q3c",
+   "livret": 7,
+   "numero": "3c",
+   "domaine": "sc.matiere",
+   "type": "grille",
+   "enonce": "Graphique de l'eau qui chauffe (ébullition vers 16 min, puis palier) : que montre-t-il ?",
+   "points": 2.5,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "lignes": [
+    "Il faut toujours 16 minutes pour faire bouillir de l'eau.",
+    "Une fois que l'eau bout, sa température n'augmente plus.",
+    "Si on arrête de chauffer, la température diminue.",
+    "La température de l'eau qui bout reste stable.",
+    "Ici, l'eau bout à 100 °C."
+   ],
+   "colonnes": [
+    "Le graphique le montre",
+    "Il ne le montre pas"
+   ],
+   "reponse": [
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "explication": "Le graphique montre un palier à 100 °C ; il ne dit rien des autres casseroles ni du refroidissement."
+  },
+  {
+   "id": "ceb-2017-l7-q3d",
+   "livret": 7,
+   "numero": "3d",
+   "domaine": "sc.matiere",
+   "type": "numerique",
+   "enonce": "Si on continue à chauffer l'eau qui bout pendant 5 minutes, quelle sera sa température (°C) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "reponse": 100,
+   "unite": "°C",
+   "explication": "L'eau qui bout reste à 100 °C."
+  },
+  {
+   "id": "ceb-2017-l7-q4b",
+   "livret": 7,
+   "numero": "4b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Chaine : herbe, criquet, lapin, merle, musaraigne, renard, hibou. Quels animaux disparaitront s'il n'y a plus aucun végétal ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-chaines",
+   "documents": [
+    "chaine"
+   ],
+   "choix": [
+    "hibou",
+    "renard",
+    "merle",
+    "lapin",
+    "musaraigne",
+    "criquet"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "explication": "Tous : les herbivores meurent de faim, puis les carnivores qui les mangent."
+  },
+  {
+   "id": "ceb-2017-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quel appareil est touché par chaque maladie ?",
+   "points": 2.5,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "lignes": [
+    "un souffle au cœur",
+    "une bronchite",
+    "une indigestion",
+    "une fracture du tibia",
+    "de l'eczéma"
+   ],
+   "colonnes": [
+    "Circulatoire",
+    "Respiratoire",
+    "Digestif",
+    "Locomoteur",
+    "Tégumentaire"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Cœur : circulatoire ; bronches : respiratoire ; estomac : digestif ; os : locomoteur ; peau : tégumentaire."
+  },
+  {
+   "id": "ceb-2017-l7-q6a",
+   "livret": 7,
+   "numero": "6a",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Stimulus, organe, sens.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "stimulus"
+   ],
+   "texte": "Le contact, la peau : le {1}  ·  Les odeurs, le nez : l'{2}  ·  Les ondes sonores, l'{3} : l'{4}  ·  La lumière, l'{5} : la {6}  ·  Les substances dissoutes, la langue : le {7}",
+   "reponse": [
+    [
+     "toucher"
+    ],
+    [
+     "odorat"
+    ],
+    [
+     "oreille"
+    ],
+    [
+     "ouïe",
+     "ouie"
+    ],
+    [
+     "œil",
+     "oeil",
+     "yeux"
+    ],
+    [
+     "vue"
+    ],
+    [
+     "gout",
+     "goût"
+    ]
+   ],
+   "explication": "Toucher, odorat, oreille/ouïe, œil/vue, goût."
+  },
+  {
+   "id": "ceb-2017-l7-q7a",
+   "livret": 7,
+   "numero": "7a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Air inspiré / air expiré (oxygène 21 % → 16,5 % ; gaz carbonique 0,03 % → 4,53 % ; azote 78 % → 78 %).",
+   "points": 1.5,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "lignes": [
+    "L'air expiré contient … d'oxygène que l'air inspiré.",
+    "L'air expiré contient … de gaz carbonique que l'air inspiré.",
+    "L'air expiré contient … d'azote que l'air inspiré."
+   ],
+   "colonnes": [
+    "moins",
+    "autant",
+    "plus"
+   ],
+   "reponse": [
+    0,
+    2,
+    1
+   ],
+   "explication": "On consomme de l'oxygène et on rejette du gaz carbonique."
+  },
+  {
+   "id": "ceb-2017-l7-q7b",
+   "livret": 7,
+   "numero": "7b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Pendant la respiration…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-appareils",
+   "choix": [
+    "de l'azote est consommé.",
+    "du gaz carbonique est produit.",
+    "de l'oxygène est consommé.",
+    "tout l'oxygène de l'air est consommé."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Il reste 16,5 % d'oxygène : il n'est pas tout consommé."
+  },
+  {
+   "id": "ceb-2017-l7-q8a",
+   "livret": 7,
+   "numero": "8a",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Un graphique « Nombre moyen de jours » de janvier à juin (entre 15 et 20) représente…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "meteo"
+   ],
+   "choix": [
+    "La moyenne des températures maximales.",
+    "Le nombre moyen de jours d'ensoleillement.",
+    "Le nombre moyen de jours de précipitations.",
+    "Le record de chaleur depuis 1901."
+   ],
+   "reponse": 2,
+   "explication": "19,2 ; 16,3 ; 17,8 ; 15 ; 16,2 ; 15 : les jours avec précipitations."
+  },
+  {
+   "id": "ceb-2017-l7-q8b",
+   "livret": 7,
+   "numero": "8b",
+   "domaine": "sc.energie",
+   "type": "trous",
+   "enonce": "D'après le tableau d'Uccle, le plus haut record de température maximale…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "meteo"
+   ],
+   "texte": "{1} °C au mois de {2} {3}",
+   "reponse": [
+    [
+     "38,8"
+    ],
+    [
+     "juin"
+    ],
+    [
+     "1947"
+    ]
+   ],
+   "explication": "38,8 °C en juin 1947."
+  },
+  {
+   "id": "ceb-2017-l7-q9",
+   "livret": 7,
+   "numero": "9",
+   "domaine": "sc.energie",
+   "type": "grille",
+   "enonce": "Quel instrument ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-phenomenes",
+   "lignes": [
+    "Mesure la vitesse du vent.",
+    "Mesure la pression atmosphérique.",
+    "Indique d'où vient le vent.",
+    "Mesure la quantité de précipitations."
+   ],
+   "colonnes": [
+    "une girouette",
+    "un thermomètre",
+    "un baromètre",
+    "un anémomètre",
+    "un pluviomètre"
+   ],
+   "reponse": [
+    3,
+    2,
+    0,
+    4
+   ],
+   "explication": "Anémomètre, baromètre, girouette, pluviomètre."
+  },
+  {
+   "id": "ceb-2017-l7-q12a",
+   "livret": 7,
+   "numero": "12a",
+   "domaine": "sc.energie",
+   "type": "texte_court",
+   "enonce": "Quelle affirmation scientifique du mode d'emploi du sèche-cheveux l'expérience confirme-t-elle ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-electricite",
+   "documents": [
+    "circuit-2"
+   ],
+   "reponse": [
+    "L'eau est un conducteur d'électricité.",
+    "l'eau est un conducteur d'électricité",
+    "L'eau est conductrice"
+   ],
+   "explication": "La LED s'allume quand les fils plongent dans l'eau."
+  },
+  {
+   "id": "ceb-2017-l7-q1b",
+   "livret": 7,
+   "numero": "1b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Écris une autre hypothèse.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q1d",
+   "livret": 7,
+   "numero": "1d",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Où le linge sèchera-t-il le plus vite ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q3ab",
+   "livret": 7,
+   "numero": "3ab",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Lis le graphique de l'eau qui chauffe.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q4a",
+   "livret": 7,
+   "numero": "4a",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Écris deux chaines alimentaires.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "chaine"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q4c",
+   "livret": 7,
+   "numero": "4c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Trace les flèches de la chaine.",
+   "points": 1.5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q6b",
+   "livret": 7,
+   "numero": "6b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Sens le plus stimulé sur les photos.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q8c",
+   "livret": 7,
+   "numero": "8c",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Complète le graphique de l'ensoleillement.",
+   "points": 1.5,
+   "corrigeVerifie": false,
+   "documents": [
+    "meteo"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Place les plantes vertes dans la clé.",
+   "points": 2.5,
+   "corrigeVerifie": false,
+   "documents": [
+    "plantes"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q11",
+   "livret": 7,
+   "numero": "11",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Tri des montages électriques.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "circuit-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l7-q12b",
+   "livret": 7,
+   "numero": "12b",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Situations dangereuses.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q1a",
+   "livret": 8,
+   "numero": "1a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 639 : 9",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 71,
+   "tolerance": 0.0001,
+   "explication": "Résultat : 71."
+  },
+  {
+   "id": "ceb-2017-l8-q1b",
+   "livret": 8,
+   "numero": "1b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 19,98 + 7,52",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 27.5,
+   "tolerance": 0.0001,
+   "explication": "Résultat : 27,5."
+  },
+  {
+   "id": "ceb-2017-l8-q1c",
+   "livret": 8,
+   "numero": "1c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 16 × 2,3 × 0",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 0,
+   "tolerance": 0.0001,
+   "explication": "Multiplier par 0 donne 0."
+  },
+  {
+   "id": "ceb-2017-l8-q1d",
+   "livret": 8,
+   "numero": "1d",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : … + 17,5 = 38,6",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 21.1,
+   "tolerance": 0.0001,
+   "explication": "38,6 − 17,5 = 21,1."
+  },
+  {
+   "id": "ceb-2017-l8-q1e",
+   "livret": 8,
+   "numero": "1e",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 75 % de 44 000",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 33000,
+   "tolerance": 0.0001,
+   "explication": "44 000 : 4 × 3 = 33 000."
+  },
+  {
+   "id": "ceb-2017-l8-q1f",
+   "livret": 8,
+   "numero": "1f",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : … × 1,2 = 8,4",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 7,
+   "tolerance": 0.0001,
+   "explication": "8,4 : 1,2 = 7."
+  },
+  {
+   "id": "ceb-2017-l8-q1g",
+   "livret": 8,
+   "numero": "1g",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 200 000 − 480",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 199520,
+   "tolerance": 0.0001,
+   "explication": "Résultat : 199520."
+  },
+  {
+   "id": "ceb-2017-l8-q1h",
+   "livret": 8,
+   "numero": "1h",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 2 250 + 330 + 1 750 + … = 5 000",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 670,
+   "tolerance": 0.0001,
+   "explication": "2 250 + 1 750 = 4 000 ; + 330 = 4 330 ; 5 000 − 4 330 = 670."
+  },
+  {
+   "id": "ceb-2017-l8-q1i",
+   "livret": 8,
+   "numero": "1i",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 888 × 0,125",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 111,
+   "tolerance": 0.0001,
+   "explication": "0,125 = 1/8 ; 888 : 8 = 111."
+  },
+  {
+   "id": "ceb-2017-l8-q1j",
+   "livret": 8,
+   "numero": "1j",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 5 032 − 298",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 4734,
+   "tolerance": 0.0001,
+   "explication": "Résultat : 4734."
+  },
+  {
+   "id": "ceb-2017-l8-q2a",
+   "livret": 8,
+   "numero": "2a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 70 095 − 29 003 ≈ ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "30 000",
+    "35 000",
+    "40 000",
+    "50 000"
+   ],
+   "reponse": 2,
+   "explication": "70 000 − 30 000 = 40 000."
+  },
+  {
+   "id": "ceb-2017-l8-q2b",
+   "livret": 8,
+   "numero": "2b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 45 048 + 7 602 ≈ ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "49 000",
+    "50 000",
+    "52 000",
+    "55 000"
+   ],
+   "reponse": 2,
+   "explication": "45 000 + 7 600 ≈ 52 600."
+  },
+  {
+   "id": "ceb-2017-l8-q2c",
+   "livret": 8,
+   "numero": "2c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 898 × 50 ≈ ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "4 000",
+    "4 500",
+    "40 000",
+    "45 000"
+   ],
+   "reponse": 3,
+   "explication": "900 × 50 = 45 000."
+  },
+  {
+   "id": "ceb-2017-l8-q2d",
+   "livret": 8,
+   "numero": "2d",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Estime : 24 059 : 61 ≈ ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "350",
+    "400",
+    "3 500",
+    "4 000"
+   ],
+   "reponse": 1,
+   "explication": "24 000 : 60 = 400."
+  },
+  {
+   "id": "ceb-2017-l8-q3a",
+   "livret": 8,
+   "numero": "3a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quelle opération donnera un résultat proche de 500 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "25 780 − 5 200",
+    "3 499 : 7,1",
+    "12,5 × 9",
+    "407,98 + 0,197"
+   ],
+   "reponse": 1,
+   "explication": "3 500 : 7 = 500."
+  },
+  {
+   "id": "ceb-2017-l8-q3b",
+   "livret": 8,
+   "numero": "3b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quelle opération donnera un résultat proche de 4 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "0,009 × 4",
+    "702 − 598",
+    "11,9 : 3",
+    "3,994 + 1,989"
+   ],
+   "reponse": 2,
+   "explication": "12 : 3 = 4."
+  },
+  {
+   "id": "ceb-2017-l8-q4",
+   "livret": 8,
+   "numero": "4",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "413 : 12 = 34, reste 5. Quelle opération permet de vérifier ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "choix": [
+    "(34 + 5) × 12",
+    "(34 × 12) + 5",
+    "(34 × 12) − 5",
+    "(413 : 34) − 5"
+   ],
+   "reponse": 1,
+   "explication": "Quotient × diviseur + reste = dividende."
+  },
+  {
+   "id": "ceb-2017-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris en chiffres.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "trente-cinq-mille unités vingt-sept millièmes : {1}  ·  mille-huit-cent-douze centièmes : {2}  ·  un million quinze-mille-neuf-cent-cinquante-trois unités : {3}",
+   "reponse": [
+    [
+     "35000,027",
+     "35 000,027"
+    ],
+    [
+     "18,12"
+    ],
+    [
+     "1015953",
+     "1 015 953"
+    ]
+   ],
+   "explication": "1 812 centièmes = 18,12."
+  },
+  {
+   "id": "ceb-2017-l8-q6",
+   "livret": 8,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Place la virgule dans 20538609.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "texte": "2 est le chiffre des unités de mille : {1}  ·  9 est le chiffre des millièmes : {2}",
+   "reponse": [
+    [
+     "2053,8609",
+     "2 053,8609"
+    ],
+    [
+     "20538,609",
+     "20 538,609"
+    ]
+   ],
+   "explication": "Il faut 4 chiffres avant la virgule, puis 3 chiffres après la virgule."
+  },
+  {
+   "id": "ceb-2017-l8-q7",
+   "livret": 8,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les comptages.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-suites",
+   "texte": "799 996 ; 799 997 ; 799 998 ; {1} ; {2} ; {3}  ·  {4} ; {5} ; {6} ; 59,02 ; 59,03 ; 59,04",
+   "reponse": [
+    [
+     "799999",
+     "799 999"
+    ],
+    [
+     "800000",
+     "800 000"
+    ],
+    [
+     "800001",
+     "800 001"
+    ],
+    [
+     "58,99"
+    ],
+    [
+     "59",
+     "59,00"
+    ],
+    [
+     "59,01"
+    ]
+   ],
+   "explication": "On avance de 1, puis de 0,01."
+  },
+  {
+   "id": "ceb-2017-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Deux intrus se cachent parmi ces écritures de 1,2. Lesquels ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "12/10",
+    "1,02",
+    "1,2",
+    "1 200/1 000",
+    "6/5",
+    "1,200",
+    "1/2"
+   ],
+   "reponse": [
+    1,
+    6
+   ],
+   "explication": "1,02 et 1/2 ne valent pas 1,2."
+  },
+  {
+   "id": "ceb-2017-l8-q11a",
+   "livret": 8,
+   "numero": "11a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm_multi",
+   "enonce": "Quels nombres sont multiples de 8 mais pas de 5 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-multiples-diviseurs",
+   "choix": [
+    "10",
+    "24",
+    "40",
+    "345",
+    "56",
+    "160",
+    "35",
+    "104"
+   ],
+   "reponse": [
+    1,
+    4,
+    7
+   ],
+   "explication": "24, 56, 104 (40 et 160 sont aussi multiples de 5)."
+  },
+  {
+   "id": "ceb-2017-l8-q13",
+   "livret": 8,
+   "numero": "13",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "7 680 : 16 = 480. Sans calculer, complète.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "texte": "7 685 : 16 = {1} reste {2}  ·  768 : 16 = {3}  ·  7 680 : 160 = {4}  ·  7 680 : 48 = {5}",
+   "reponse": [
+    [
+     "480"
+    ],
+    [
+     "5"
+    ],
+    [
+     "48"
+    ],
+    [
+     "48"
+    ],
+    [
+     "160"
+    ]
+   ],
+   "explication": "5 de plus = reste 5 ; dividende : 10 ; diviseur × 10 ; 48 = 16 × 3 donc 480 : 3 = 160."
+  },
+  {
+   "id": "ceb-2017-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Si 314 × 52 = 16 328, alors…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "31,4 × 52 = {1}  ·  314 × 0,52 = {2}",
+   "reponse": [
+    [
+     "1632,8",
+     "1 632,8"
+    ],
+    [
+     "163,28"
+    ]
+   ],
+   "explication": ": 10 et : 100."
+  },
+  {
+   "id": "ceb-2017-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "43 × 15 est-il égal à… ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "lignes": [
+    "43 × 10 × 5",
+    "(43 × 10) + (43 × 5)",
+    "43 × 5 × 3",
+    "(43 + 10) + (43 + 5)"
+   ],
+   "colonnes": [
+    "=",
+    "≠"
+   ],
+   "reponse": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "explication": "15 = 10 + 5 = 5 × 3 (et pas 10 × 5)."
+  },
+  {
+   "id": "ceb-2017-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris les signes manquants.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "2,5 × 72 = (10 {1} 72) {2} 4  ·  874 − 9,7 = (874 {3} 10) {4} 0,3",
+   "reponse": [
+    [
+     "×",
+     "x",
+     "*"
+    ],
+    [
+     ":",
+     "÷",
+     "/"
+    ],
+    [
+     "−",
+     "-"
+    ],
+    [
+     "+"
+    ]
+   ],
+   "explication": "2,5 = 10 : 4 ; retirer 9,7, c'est retirer 10 et rajouter 0,3."
+  },
+  {
+   "id": "ceb-2017-l8-q19",
+   "livret": 8,
+   "numero": "19",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète la soustraction : 7 3 _ _ − 5 _ 7 1 = _ 2 8 1.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "73{1} − 5{2}71 = {3}281",
+   "reponse": [
+    [
+     "52"
+    ],
+    [
+     "0"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "7 352 − 5 071 = 2 281."
+  },
+  {
+   "id": "ceb-2017-l8-q20",
+   "livret": 8,
+   "numero": "20",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "17 paquets de 4 biscuits ; 12 enfants mangent chacun 2 biscuits. Combien en reste-t-il ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "choix": [
+    "A : 49 biscuits",
+    "B : 17 × 4 = 68 ; 12 × 2 = 24 ; 68 − 24 = 44",
+    "C : 68 + 24 = 92",
+    "D : (4 × 17) − (1 × 12) = 56"
+   ],
+   "reponse": 1,
+   "explication": "68 − 24 = 44 biscuits."
+  },
+  {
+   "id": "ceb-2017-l8-q21",
+   "livret": 8,
+   "numero": "21",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Parking : 2 niveaux de 100 places et 4 niveaux de 80 places. 60 % des places sont occupées. Combien de places restent disponibles ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-pourcentages",
+   "reponse": 208,
+   "unite": "places",
+   "explication": "200 + 320 = 520 places ; 40 % libres : 520 × 0,4 = 208."
+  },
+  {
+   "id": "ceb-2017-l8-q22",
+   "livret": 8,
+   "numero": "22",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Obtiens 730 avec 4, 5, 6, 7, 8 et 25 (chacun une fois au maximum). Écris tes étapes.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponseModele": "6 × 25 = 150 ; 150 − 4 = 146 ; 146 × 5 = 730."
+  },
+  {
+   "id": "ceb-2017-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Complète les cases de la droite graduée.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Arbre de décomposition de 0,75.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q11b",
+   "livret": 8,
+   "numero": "11b",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Place 72, 123, 340, 720 dans le diagramme.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Parcours de multiples.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q17",
+   "livret": 8,
+   "numero": "17",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Nombre de points noirs.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2017-l8-q18",
+   "livret": 8,
+   "numero": "18",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Écris un énoncé pour 17 × 25 = 425.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  }
+ ]
+}
