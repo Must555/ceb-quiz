@@ -95,18 +95,23 @@ export function coachPret(j) { return Object.values(j.notions ?? {}).reduce((s, 
 //   mode 'normal' : tirage libre, avec un petit coup de pouce aux révisions dues.
 export function poidsCoach(j, { mode = 'normal', notion = null, jour = aujourdhui() } = {}) {
   const dues = new Set(revisionsDues(j, jour).map((r) => r.cle));
-  return (c) => {
-    const n = notionDe(c);
-    const { statut } = maitrise(j, n);
-    const due = dues.has(cleCandidat(c));
+  // Une famille peut couvrir plusieurs notions (une fiche par forme) : on retient la plus prioritaire.
+  const poidsNotion = (c, n) => {
+    const { statut, m } = maitrise(j, n);
     let w = 1;
     if (mode === 'cible') {
-      if (notion) w = n === notion ? 10 : 0.05;               // mission sur une notion précise
-      else w = { fragile: 20, progres: 4, decouverte: 0.6, maitrise: 0.25 }[statut];
-      if (due) w *= 5;
-    } else if (due) {
-      w *= 3;
+      if (notion) w = n === notion ? 10 : 0.002;               // mission sur une notion précise
+      // « en progrès » faute de données mais tout juste jusqu'ici : pas prioritaire
+      else w = statut === 'progres' && m >= 0.8 ? 0.4 : { fragile: 60, progres: 8, decouverte: 0.4, maitrise: 0.15 }[statut];
     }
+    return { w, statut };
+  };
+  return (c) => {
+    const notions = [...new Set([notionDe(c), ...(c.formes ?? []).map((f) => f.fiche).filter(Boolean)])];
+    const { w: w0, statut } = notions.map((n) => poidsNotion(c, n)).reduce((a, b) => (b.w > a.w ? b : a));
+    let w = w0;
+    const due = dues.has(cleCandidat(c));
+    if (due) w *= mode === 'cible' ? 5 : 3;
     // Difficulté adaptée : on ne noie pas l'enfant sous le « niveau CEB » quand ça coince,
     // et on évite les questions trop faciles sur ce qu'il maîtrise.
     const diff = c.difficulte ?? 1;

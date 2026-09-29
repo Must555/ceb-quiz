@@ -64,6 +64,13 @@ export class QuizSession {
     }
   }
 
+  accepteVariante(q) {
+    const o = this.o;
+    if (o.domaines && !o.domaines.includes(q.domaine)) return false;
+    if ((q.difficulte ?? 1) > o.difficulteMax) return false;
+    return true;
+  }
+
   filtre(q) {
     const o = this.o;
     if (o.matieres && !o.matieres.includes(q.matiere ?? q.domaine?.split('.')[0])) return false;
@@ -87,7 +94,7 @@ export class QuizSession {
 
   // --- Tirage -------------------------------------------------------------
   dejaPosee(q) {
-    return this.vus.has(q.id) || this.contenus.has(normaliserTexte(q.enonce));
+    return this.vus.has(q.id) || this.contenus.has(normaliserTexte(q.cleContenu ?? q.enonce));
   }
 
   suivante() {
@@ -98,7 +105,7 @@ export class QuizSession {
     const q = this.o.mode === 'examen' ? this.tirerExamen() : this.tirerAleatoire();
     if (!q) return null; // plus aucune question neuve disponible pour ces filtres
     this.vus.add(q.id);
-    this.contenus.add(normaliserTexte(q.enonce));
+    this.contenus.add(normaliserTexte(q.cleContenu ?? q.enonce));
     this.courante = q;
     return q;
   }
@@ -138,7 +145,13 @@ export class QuizSession {
 
       const modele = c.item;
       const exclure = eviterHistorique ? new Set([...this.vus, ...this.historique]) : this.vus;
-      const q = genererVariante(modele, this.rng, exclure);
+      // Une famille peut mêler plusieurs domaines/difficultés : on vérifie la question produite.
+      let q = null;
+      for (let k = 0; k < 6; k++) {
+        const v = genererVariante(modele, this.rng, exclure);
+        if (!v) break;
+        if (this.accepteVariante(v)) { q = v; break; }
+      }
       if (!q || this.dejaPosee(q)) {
         // Modèle épuisé pour cette session : on le retire du tirage.
         if (!q && !eviterHistorique) this.epuises.add(modele.id);

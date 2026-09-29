@@ -1,0 +1,395 @@
+{
+ "matiere": "ma",
+ "bases": [
+  {
+   "id": "ma-solides",
+   "description": "Solides : faces, arêtes, sommets (polyèdres) et solides qui roulent.",
+   "cle": "nom",
+   "phrases": {
+    "polyedre": {
+     "polyèdre": "un polyèdre (toutes ses faces sont planes)",
+     "non polyèdre": "un solide qui n'est pas un polyèdre (il a une surface courbe)"
+    },
+    "polyedre_pluriel": {
+     "polyèdre": "polyèdres",
+     "non polyèdre": "solides à surface courbe"
+    }
+   },
+   "items": [
+    {
+     "nom": "le cube",
+     "faces": 6,
+     "aretes": 12,
+     "sommets": 8,
+     "polyedre": "polyèdre",
+     "info": "Ses 6 faces sont des carrés identiques."
+    },
+    {
+     "nom": "le pavé droit",
+     "faces": 6,
+     "aretes": 12,
+     "sommets": 8,
+     "polyedre": "polyèdre",
+     "info": "Ses 6 faces sont des rectangles (on l'appelle aussi parallélépipède rectangle)."
+    },
+    {
+     "nom": "le prisme droit à base triangulaire",
+     "faces": 5,
+     "aretes": 9,
+     "sommets": 6,
+     "polyedre": "polyèdre",
+     "info": "2 bases triangulaires et 3 faces latérales rectangulaires."
+    },
+    {
+     "nom": "le prisme droit à base pentagonale",
+     "faces": 7,
+     "aretes": 15,
+     "sommets": 10,
+     "polyedre": "polyèdre",
+     "info": "2 bases pentagonales et 5 faces latérales rectangulaires."
+    },
+    {
+     "nom": "le prisme droit à base hexagonale",
+     "faces": 8,
+     "aretes": 18,
+     "sommets": 12,
+     "polyedre": "polyèdre",
+     "info": "2 bases hexagonales et 6 faces latérales rectangulaires."
+    },
+    {
+     "nom": "la pyramide à base carrée",
+     "faces": 5,
+     "aretes": 8,
+     "sommets": 5,
+     "polyedre": "polyèdre",
+     "info": "1 base carrée et 4 faces triangulaires qui se rejoignent au sommet."
+    },
+    {
+     "nom": "la pyramide à base triangulaire",
+     "faces": 4,
+     "aretes": 6,
+     "sommets": 4,
+     "polyedre": "polyèdre",
+     "info": "Toutes ses faces sont des triangles (on l'appelle aussi tétraèdre)."
+    },
+    {
+     "nom": "la pyramide à base pentagonale",
+     "faces": 6,
+     "aretes": 10,
+     "sommets": 6,
+     "polyedre": "polyèdre",
+     "info": "1 base pentagonale et 5 faces triangulaires."
+    },
+    {
+     "nom": "la pyramide à base hexagonale",
+     "faces": 7,
+     "aretes": 12,
+     "sommets": 7,
+     "polyedre": "polyèdre",
+     "info": "1 base hexagonale et 6 faces triangulaires."
+    },
+    {
+     "nom": "le cylindre",
+     "polyedre": "non polyèdre",
+     "info": "Il a 2 disques et une surface courbe : il peut rouler."
+    },
+    {
+     "nom": "le cône",
+     "polyedre": "non polyèdre",
+     "info": "Il a 1 disque et une surface courbe : il peut rouler."
+    },
+    {
+     "nom": "la sphère",
+     "polyedre": "non polyèdre",
+     "info": "Elle n'a qu'une surface courbe : elle roule dans tous les sens."
+    }
+   ]
+  },
+  {
+   "id": "ma-quadrilateres",
+   "description": "Propriétés toujours vraies des quadrilatères.",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "le carré",
+     "props": [
+      "4 côtés de même longueur",
+      "4 angles droits",
+      "2 paires de côtés parallèles",
+      "des diagonales de même longueur",
+      "des diagonales perpendiculaires",
+      "des diagonales qui se coupent en leur milieu",
+      "au moins un angle droit"
+     ],
+     "info": "Le carré a toutes ces propriétés : c'est à la fois un rectangle et un losange.",
+     "resume": "Propriétés toujours vraies pour le carré : 4 côtés de même longueur, 4 angles droits, 2 paires de côtés parallèles, des diagonales de même longueur, des diagonales perpendiculaires, des diagonales qui se coupent en leur milieu, au moins un angle droit."
+    },
+    {
+     "nom": "le rectangle",
+     "props": [
+      "4 angles droits",
+      "2 paires de côtés parallèles",
+      "des diagonales de même longueur",
+      "des diagonales qui se coupent en leur milieu",
+      "au moins un angle droit"
+     ],
+     "info": "Le rectangle a 4 angles droits et ses diagonales ont la même longueur.",
+     "resume": "Propriétés toujours vraies pour le rectangle : 4 angles droits, 2 paires de côtés parallèles, des diagonales de même longueur, des diagonales qui se coupent en leur milieu, au moins un angle droit."
+    },
+    {
+     "nom": "le losange",
+     "props": [
+      "4 côtés de même longueur",
+      "2 paires de côtés parallèles",
+      "des diagonales perpendiculaires",
+      "des diagonales qui se coupent en leur milieu"
+     ],
+     "info": "Le losange a 4 côtés égaux et des diagonales perpendiculaires.",
+     "resume": "Propriétés toujours vraies pour le losange : 4 côtés de même longueur, 2 paires de côtés parallèles, des diagonales perpendiculaires, des diagonales qui se coupent en leur milieu."
+    },
+    {
+     "nom": "le parallélogramme",
+     "props": [
+      "2 paires de côtés parallèles",
+      "des diagonales qui se coupent en leur milieu"
+     ],
+     "info": "Le parallélogramme a ses côtés opposés parallèles et de même longueur.",
+     "resume": "Propriétés toujours vraies pour le parallélogramme : 2 paires de côtés parallèles, des diagonales qui se coupent en leur milieu."
+    },
+    {
+     "nom": "le trapèze rectangle",
+     "props": [
+      "au moins un angle droit"
+     ],
+     "info": "Le trapèze rectangle a au moins une paire de côtés parallèles et au moins deux angles droits.",
+     "resume": "Propriétés toujours vraies pour le trapèze rectangle : au moins un angle droit."
+    },
+    {
+     "nom": "le trapèze isocèle",
+     "props": [
+      "des diagonales de même longueur"
+     ],
+     "info": "Le trapèze isocèle a au moins une paire de côtés parallèles et ses diagonales ont toujours la même longueur.",
+     "resume": "Propriétés toujours vraies pour le trapèze isocèle : des diagonales de même longueur."
+    }
+   ]
+  },
+  {
+   "id": "ma-axes-symetrie",
+   "description": "Nombre d'axes de symétrie de figures et de lettres majuscules (écriture bâton).",
+   "cle": "nom",
+   "phrases": {
+    "axes": {
+     "0": "aucun axe de symétrie",
+     "1": "un seul axe de symétrie",
+     "2": "2 axes de symétrie",
+     "3": "3 axes de symétrie",
+     "4": "4 axes de symétrie",
+     "5": "5 axes de symétrie",
+     "6": "6 axes de symétrie",
+     "8": "8 axes de symétrie"
+    }
+   },
+   "items": [
+    {
+     "nom": "le carré",
+     "axes": 4,
+     "sorte": "figure",
+     "info": "Les 2 médianes et les 2 diagonales."
+    },
+    {
+     "nom": "le rectangle (qui n'est pas un carré)",
+     "axes": 2,
+     "sorte": "figure",
+     "info": "Les 2 droites qui passent par les milieux des côtés opposés ; les diagonales ne sont pas des axes."
+    },
+    {
+     "nom": "le losange (qui n'est pas un carré)",
+     "axes": 2,
+     "sorte": "figure",
+     "info": "Ses 2 diagonales."
+    },
+    {
+     "nom": "le parallélogramme quelconque",
+     "axes": 0,
+     "sorte": "figure",
+     "info": "Il a un centre de symétrie mais aucun axe."
+    },
+    {
+     "nom": "le trapèze isocèle (qui n'est pas un rectangle)",
+     "axes": 1,
+     "sorte": "figure",
+     "info": "L'axe passe par les milieux des deux côtés parallèles."
+    },
+    {
+     "nom": "le trapèze rectangle (qui n'est pas un rectangle)",
+     "axes": 0,
+     "sorte": "figure",
+     "info": "Aucun pliage ne le partage en deux parties superposables."
+    },
+    {
+     "nom": "le triangle équilatéral",
+     "axes": 3,
+     "sorte": "figure",
+     "info": "Chaque axe passe par un sommet et le milieu du côté opposé."
+    },
+    {
+     "nom": "le triangle isocèle (non équilatéral)",
+     "axes": 1,
+     "sorte": "figure",
+     "info": "L'axe passe par le sommet principal et le milieu de la base."
+    },
+    {
+     "nom": "le triangle scalène",
+     "axes": 0,
+     "sorte": "figure",
+     "info": "Ses 3 côtés sont différents."
+    },
+    {
+     "nom": "le pentagone régulier",
+     "axes": 5,
+     "sorte": "figure",
+     "info": "Un polygone régulier a autant d'axes que de côtés."
+    },
+    {
+     "nom": "l'hexagone régulier",
+     "axes": 6,
+     "sorte": "figure",
+     "info": "Un polygone régulier a autant d'axes que de côtés."
+    },
+    {
+     "nom": "l'octogone régulier",
+     "axes": 8,
+     "sorte": "figure",
+     "info": "Un polygone régulier a autant d'axes que de côtés."
+    },
+    {
+     "nom": "la lettre A",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre H",
+     "axes": 2,
+     "sorte": "lettre",
+     "info": "Un axe vertical et un axe horizontal."
+    },
+    {
+     "nom": "la lettre I",
+     "axes": 2,
+     "sorte": "lettre",
+     "info": "Un axe vertical et un axe horizontal."
+    },
+    {
+     "nom": "la lettre M",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre T",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre U",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre V",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre W",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre Y",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe vertical."
+    },
+    {
+     "nom": "la lettre C",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe horizontal."
+    },
+    {
+     "nom": "la lettre D",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe horizontal."
+    },
+    {
+     "nom": "la lettre E",
+     "axes": 1,
+     "sorte": "lettre",
+     "info": "Un axe horizontal."
+    },
+    {
+     "nom": "la lettre F",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre G",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre J",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre L",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre N",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Elle a un centre de symétrie, mais aucun axe."
+    },
+    {
+     "nom": "la lettre P",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre R",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Aucun pliage ne la partage en deux moitiés identiques."
+    },
+    {
+     "nom": "la lettre S",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Elle a un centre de symétrie, mais aucun axe."
+    },
+    {
+     "nom": "la lettre Z",
+     "axes": 0,
+     "sorte": "lettre",
+     "info": "Elle a un centre de symétrie, mais aucun axe."
+    }
+   ]
+  }
+ ]
+}

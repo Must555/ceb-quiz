@@ -1,0 +1,825 @@
+{
+ "matiere": "fr",
+ "modeles": [
+  {
+   "id": "fr-f-classes-mots",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-classes-mots",
+   "difficulte": 2,
+   "generateur": "fr_classes",
+   "base": "fr-phrases-classes"
+  },
+  {
+   "id": "fr-f-sujet",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-sujet-complements",
+   "difficulte": 2,
+   "generateur": "fr_fonctions",
+   "base": "fr-phrases-fonctions",
+   "formes": [
+    "sujet"
+   ]
+  },
+  {
+   "id": "fr-f-fonctions",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-fonctions",
+   "difficulte": 3,
+   "generateur": "fr_fonctions",
+   "base": "fr-phrases-fonctions",
+   "formes": [
+    "fonction",
+    "trouver",
+    "grille"
+   ]
+  },
+  {
+   "id": "fr-f-types-phrases",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-types-phrases",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-phrases-types",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "valeurs": [
+      "déclarative",
+      "interrogative",
+      "exclamative",
+      "impérative"
+     ],
+     "ordreFixe": true,
+     "enonce": "De quel type est la phrase « {cle} » ?",
+     "explication": "C'est une phrase {valeur}. {ind_type}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "forme",
+     "valeurs": [
+      "affirmative",
+      "négative"
+     ],
+     "ordreFixe": true,
+     "enonce": "La phrase « {cle} » est-elle à la forme affirmative ou négative ?",
+     "explication": "Forme {valeur}. {ind_forme}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "type",
+     "valeurs": [
+      "déclarative",
+      "interrogative",
+      "exclamative",
+      "impérative"
+     ],
+     "enonce": "Indique le type de chaque phrase.",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "signe",
+     "valeurs": [
+      ".",
+      "?",
+      "!"
+     ],
+     "ordreFixe": true,
+     "fiche": "fr-ponctuation",
+     "enonce": "Quel signe de ponctuation faut-il à la fin de cette phrase : « {sans} ___ » ?",
+     "explication": "« {cle} » C'est une phrase {type}. {ind_type}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "fiche": "fr-ponctuation",
+     "difficulte": 2,
+     "enonce": "Lis cette phrase : {cle} {question}",
+     "explication": "{rep}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-pronoms",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-pronoms",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-pronoms",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "pronom",
+     "valeurs": [
+      "il",
+      "elle",
+      "ils",
+      "elles",
+      "nous",
+      "vous",
+      "le",
+      "la",
+      "les",
+      "lui",
+      "leur"
+     ],
+     "enonce": "Dans la phrase « {cle} », quel pronom peut remplacer « {groupe} » ?",
+     "explication": "{resultat} {note}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-groupe-nominal",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-groupe-nominal",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-gn",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "noyau",
+     "distracteurs": "autres",
+     "enonce": "Quel est le noyau du groupe nominal « {cle} » ?",
+     "explication": "Le noyau est le nom « {valeur} » : c'est le mot principal du groupe. Les autres mots (déterminant, adjectifs, compléments du nom) le précisent."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "genre",
+     "valeurs": [
+      "masculin singulier",
+      "féminin singulier",
+      "masculin pluriel",
+      "féminin pluriel"
+     ],
+     "ordreFixe": true,
+     "enonce": "Quel est le genre et le nombre du groupe nominal « {cle} » ?",
+     "explication": "Le noyau « {noyau} » est {valeur} : tout le groupe nominal est donc {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-pluriel",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-pluriel",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-pluriels",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "pluriel",
+     "distracteurs": "faux",
+     "enonce": "Quel est le pluriel de « {cle} » ?",
+     "explication": "{Cle} → {valeur}. {regle}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "motpl",
+     "saisie": true,
+     "souple": false,
+     "difficulte": 3,
+     "enonce": "Écris au pluriel : « {cle} » → « {art} … »",
+     "explication": "{Cle} → {pluriel}. {regle}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "finale",
+     "enonce": "Lequel de ces noms {valeurPhrase} ?",
+     "explication": "{Cle} → {pluriel}. {regle}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-feminin",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-feminin",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-feminins",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "feminin",
+     "distracteurs": "faux",
+     "filtre": {
+      "cat": "nom"
+     },
+     "enonce": "Quel est le féminin de « {cle} » ?",
+     "explication": "{Cle} → {valeur}. {regle}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "feminin",
+     "distracteurs": "faux",
+     "filtre": {
+      "cat": "adj"
+     },
+     "enonce": "Quel est le féminin de l'adjectif « {cle} » ?",
+     "explication": "{Cle} → {valeur}. {regle}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "feminin",
+     "saisie": true,
+     "souple": false,
+     "filtre": {
+      "cat": "adj"
+     },
+     "difficulte": 3,
+     "enonce": "Écris l'adjectif « {cle} » au féminin.",
+     "explication": "{Cle} → {valeur}. {regle}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "motf",
+     "saisie": true,
+     "souple": false,
+     "filtre": {
+      "cat": "nom"
+     },
+     "difficulte": 3,
+     "enonce": "Écris le féminin : « {cle} » → « {artf} … »",
+     "explication": "{Cle} → {feminin}. {regle}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-accord-adjectif",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-accord-adjectif",
+   "difficulte": 1,
+   "generateur": "fr_accord_adj"
+  },
+  {
+   "id": "fr-f-accord-sujet-verbe",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-accord-sujet-verbe",
+   "difficulte": 2,
+   "generateur": "fr_accord_sv",
+   "base": "fr-accord-sv"
+  },
+  {
+   "id": "fr-f-participe-passe",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-participe-passe",
+   "difficulte": 2,
+   "generateur": "fr_participe"
+  },
+  {
+   "id": "fr-f-homophones",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-homophones",
+   "difficulte": 2,
+   "generateur": "fr_homophones",
+   "base": "fr-homophones"
+  },
+  {
+   "id": "fr-f-e-er",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-e-er",
+   "difficulte": 2,
+   "generateur": "fr_e_er",
+   "base": "fr-e-er"
+  },
+  {
+   "id": "fr-f-orthographe-lexicale",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-orthographe-lexicale",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-orthographe",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "bonne",
+     "distracteurs": "faux",
+     "enonce": "Complète avec le mot bien écrit : « {cle} »",
+     "explication": "{complete} Retiens bien l'orthographe de « {valeur} »."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-conj-choisir",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-conjugaison-temps-simples",
+   "difficulte": 2,
+   "generateur": "fr_conj",
+   "formes": [
+    "choisir"
+   ]
+  },
+  {
+   "id": "fr-f-conj-temps",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-conjugaison-temps-simples",
+   "difficulte": 2,
+   "generateur": "fr_conj",
+   "formes": [
+    "temps"
+   ]
+  },
+  {
+   "id": "fr-f-conj-ecrire",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-temps-recit",
+   "difficulte": 3,
+   "generateur": "fr_conj",
+   "formes": [
+    "ecrire"
+   ]
+  },
+  {
+   "id": "fr-f-modes",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-modes",
+   "difficulte": 2,
+   "generateur": "fr_conj",
+   "formes": [
+    "mode",
+    "imperatif"
+   ]
+  },
+  {
+   "id": "fr-f-infinitif",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-infinitif",
+   "difficulte": 1,
+   "generateur": "fr_conj",
+   "formes": [
+    "infinitif"
+   ]
+  },
+  {
+   "id": "fr-f-auxiliaire",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-auxiliaires",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-auxiliaires",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "aux",
+     "valeurs": [
+      "être",
+      "avoir"
+     ],
+     "ordreFixe": true,
+     "enonce": "Au passé composé, le verbe « {cle} » se conjugue avec quel auxiliaire ?",
+     "explication": "{exemple} : auxiliaire {valeur}. {note}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "aux",
+     "valeurs": [
+      "être",
+      "avoir"
+     ],
+     "enonce": "Classe ces verbes selon leur auxiliaire au passé composé.",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "aux",
+     "enonce": "Au passé composé, quel verbe ne se conjugue pas avec le même auxiliaire que les autres ?",
+     "explication": "{groupe} se conjuguent avec {valeurPhrase}. « {cle} » se conjugue avec {valeurIntrusPhrase} : {exemple}. {note}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-synonymes",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-synonymes",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-synonymes",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "syn",
+     "distracteurs": "faux",
+     "enonce": "Quel mot est un synonyme de « {mot} » ?",
+     "explication": "« {valeur} » et « {mot} » ont presque le même sens. {autres}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "intrus",
+     "distracteurs": "syns",
+     "difficulte": 2,
+     "enonce": "Quel mot n'est pas un synonyme de « {mot} » ?",
+     "explication": "L'intrus est « {valeur} ». Synonymes de « {mot} » : {synliste}."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-antonymes",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-antonymes",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-antonymes",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "ant",
+     "distracteurs": "faux",
+     "enonce": "Quel est le contraire (l'antonyme) de « {cle} » ?",
+     "explication": "Le contraire de « {cle} » est « {valeur} ». {note}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "ant",
+     "saisie": true,
+     "souple": false,
+     "avec": "prefixe",
+     "difficulte": 2,
+     "enonce": "Écris le contraire de « {cle} » en ajoutant un préfixe.",
+     "explication": "On écrit « {valeur} » : le préfixe « {prefixe} » exprime le contraire."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-familles-mots",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-familles-mots",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-familles",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "famille",
+     "avec": "derive",
+     "enonce": "De quel mot vient « {cle} » ?",
+     "explication": "« {cle} » est de la famille du mot « {valeur} »."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "famille",
+     "enonce": "Quel mot n'est pas de la même famille que les autres ?",
+     "explication": "{groupe} sont de la famille du mot « {valeur} ». « {cle} » n'en fait pas partie. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "famille",
+     "avec": "derive",
+     "cibles": [
+      "blanc",
+      "bois",
+      "chant",
+      "chat",
+      "chaud",
+      "cheval",
+      "dent",
+      "dos",
+      "fleur",
+      "froid",
+      "glace",
+      "grand",
+      "jardin",
+      "jour",
+      "lait",
+      "lire",
+      "long",
+      "mer",
+      "neige",
+      "riche",
+      "roi",
+      "sel",
+      "terre"
+     ],
+     "enonce": "Lequel de ces mots est de la famille de « {valeur} » ?",
+     "explication": "« {cle} » est de la famille du mot « {valeur} »."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-prefixes-suffixes",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-prefixes-suffixes",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-affixes",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "sens",
+     "filtre": {
+      "sorte": "préfixe"
+     },
+     "enonce": "Dans le mot « {cle} », que veut dire le préfixe « {affixe} » ?",
+     "explication": "Dans « {cle} », le préfixe « {affixe} » veut dire « {valeur} »."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "sens",
+     "filtre": {
+      "sorte": "suffixe"
+     },
+     "enonce": "Dans le mot « {cle} », quel est le sens du suffixe « {affixe} » ?",
+     "explication": "Dans « {cle} », le suffixe « {affixe} » indique : {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "sens",
+     "filtre": {
+      "sorte": "préfixe"
+     },
+     "enonce": "Lequel de ces mots contient un préfixe qui veut dire « {valeur} » ?",
+     "explication": "Dans « {cle} », le préfixe « {affixe} » veut dire « {valeur} »."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "base",
+     "difficulte": 1,
+     "enonce": "Quel est le mot de base de « {cle} » ?",
+     "explication": "« {cle} » est formé à partir de « {valeur} » et du {sorte} « {affixe} »."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-generique",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-generique",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-generiques",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "gen",
+     "enonce": "Quel mot générique convient pour « {cle} » ?",
+     "explication": "« {Cle} » est {valeurPhrase} : « {valeur} » est le mot générique, « {cle} » est un mot plus précis (spécifique)."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "gen",
+     "enonce": "Lequel de ces mots désigne {valeurPhrase} ?",
+     "explication": "« {Cle} » est {valeurPhrase}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "gen",
+     "enonce": "Quel mot est l'intrus ?",
+     "explication": "{groupe} : ce sont des {valeurPluriel}. « {cle} » est {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "gen",
+     "valeurs": [
+      "fruit",
+      "légume",
+      "arbre",
+      "fleur"
+     ],
+     "enonce": "Range chaque mot dans la bonne catégorie.",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "gen",
+     "valeurs": [
+      "outil",
+      "meuble",
+      "vêtement",
+      "instrument de musique"
+     ],
+     "enonce": "Range chaque mot dans la bonne catégorie.",
+     "explication": "{liste}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-sens-mots",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-sens-mots",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-sens-mots",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "sens",
+     "distracteurs": "faux",
+     "enonce": "Dans la phrase « {cle} », que veut dire « {mot} » ?",
+     "explication": "Ici, « {mot} » veut dire : {valeur}. C'est la phrase (le contexte) qui donne le sens du mot."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "emploi",
+     "valeurs": [
+      "au sens propre",
+      "au sens figuré"
+     ],
+     "ordreFixe": true,
+     "enonce": "Dans la phrase « {cle} », « {expr} » est employé…",
+     "explication": "« {expr} » est employé {valeur}. {note}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "emploi",
+     "valeurs": [
+      "au sens propre",
+      "au sens figuré"
+     ],
+     "enonce": "Les mots de ces phrases sont-ils employés au sens propre ou au sens figuré ?",
+     "explication": "{liste}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-expressions",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-expressions",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-expressions",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "sens",
+     "enonce": "Que veut dire l'expression « {cle} » ?",
+     "explication": "« {Cle} » veut dire : {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "sens",
+     "enonce": "Quelle expression veut dire « {valeur} » ?",
+     "explication": "« {Cle} » veut dire : {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-niveaux-langue",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-niveaux-langue",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-niveaux",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "niveau",
+     "valeurs": [
+      "familier",
+      "courant",
+      "soutenu"
+     ],
+     "ordreFixe": true,
+     "enonce": "À quel niveau de langue appartient « {cle} » ?",
+     "explication": "« {cle} » appartient au langage {valeur}. {note}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "niveau",
+     "valeurs": [
+      "familier",
+      "courant",
+      "soutenu"
+     ],
+     "enonce": "Classe ces mots selon leur niveau de langue.",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "niveau",
+     "enonce": "Quel mot appartient au langage {valeur} ?",
+     "explication": "« {cle} » appartient au langage {valeur}. {note}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-ordre-alphabetique",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-ordre-alphabetique",
+   "difficulte": 1,
+   "generateur": "fr_alpha"
+  },
+  {
+   "id": "fr-f-connecteurs",
+   "domaine": "fr.lire",
+   "fiche": "fr-connecteurs",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-connecteurs",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "bonne",
+     "distracteurs": "faux",
+     "enonce": "Complète avec le mot de liaison qui convient : « {cle} »",
+     "explication": "{complete} « {bonne} » exprime {relphrase}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "relation",
+     "difficulte": 3,
+     "enonce": "Dans la phrase « {complete} », qu'exprime le mot de liaison « {bonne} » ?",
+     "explication": "« {bonne} » exprime {relphrase}."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-fait-opinion",
+   "domaine": "fr.lire",
+   "fiche": "fr-lire-intention",
+   "difficulte": 1,
+   "generateur": "faits",
+   "base": "fr-faits-opinions",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "nature",
+     "valeurs": [
+      "fait",
+      "opinion"
+     ],
+     "ordreFixe": true,
+     "enonce": "Cette phrase exprime-t-elle un fait ou une opinion ? « {cle} »",
+     "explication": "C'est {valeurPhrase} : {note}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "nature",
+     "valeurs": [
+      "fait",
+      "opinion"
+     ],
+     "enonce": "Chaque phrase exprime-t-elle un fait ou une opinion ?",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "nature",
+     "enonce": "Quelle phrase exprime {valeurPhrase} ?",
+     "explication": "« {Cle} » : {note}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-intentions",
+   "domaine": "fr.lire",
+   "fiche": "fr-types-textes",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-textes-courts",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "intention",
+     "enonce": "Lis cet extrait : « {cle} » Quelle est l'intention principale de l'auteur ?",
+     "explication": "L'auteur veut {valeur}. {indice}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "genre",
+     "distracteurs": "genre_faux",
+     "enonce": "Lis cet extrait : « {cle} » De quel type de texte s'agit-il ?",
+     "explication": "C'est {valeur}. {indice}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "intention",
+     "enonce": "Lequel de ces textes a pour but {valeurPhrase} ?",
+     "explication": "{indice}"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-reprises",
+   "domaine": "fr.lire",
+   "fiche": "fr-reprises",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-reprises",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "ref",
+     "distracteurs": "faux",
+     "enonce": "Lis : « {texte} » Dans ce texte, que désigne « {mot} » ?",
+     "explication": "Dans ce texte, « {mot} » reprend « {valeur} » : cela évite de répéter le même mot."
+    }
+   ]
+  },
+  {
+   "id": "fr-f-inferences",
+   "domaine": "fr.lire",
+   "fiche": "fr-inferences",
+   "difficulte": 2,
+   "generateur": "faits",
+   "base": "fr-inferences",
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "bonne",
+     "distracteurs": "faux",
+     "enonce": "Lis : « {cle} » {question}",
+     "explication": "Réponse : {valeur} Le texte ne le dit pas directement, mais ses indices permettent de le deviner."
+    }
+   ]
+  }
+ ]
+}

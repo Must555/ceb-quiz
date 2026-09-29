@@ -152,11 +152,27 @@
     "modeles": [
       "modeles/maths.json",
       "modeles/francais.json",
-      "modeles/histgeo.json"
+      "modeles/histgeo.json",
+      "modeles/familles-fr.json",
+      "modeles/familles-ma.json",
+      "modeles/familles-hg.json",
+      "modeles/familles-sc.json"
     ],
     "examens": [
       "examens/index.json"
     ],
-    "fiches": "fiches.json"
+    "fiches": [
+      "fiches.json",
+      "fiches-fr.json",
+      "fiches-ma.json",
+      "fiches-hg.json",
+      "fiches-sc.json"
+    ],
+    "faits": [
+      "faits/fr.json",
+      "faits/ma.json",
+      "faits/hg.json",
+      "faits/sc.json"
+    ]
   }
 }

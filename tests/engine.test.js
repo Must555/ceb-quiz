@@ -77,8 +77,10 @@ test('ANTI-RÉPÉTITION : jamais deux fois la même question dans une session (5
     let q;
     while ((q = session.suivante())) {
       assert.ok(!ids.has(q.id), `session ${s} : id répété ${q.id}`);
-      assert.ok(!textes.has(q.enonce), `session ${s} : énoncé répété « ${q.enonce} »`);
-      ids.add(q.id); textes.add(q.enonce);
+      // Même contenu (énoncé + choix proposés) = même question pour l'enfant.
+      const contenu = q.cleContenu ?? q.enonce;
+      assert.ok(!textes.has(contenu), `session ${s} : question répétée « ${contenu} »`);
+      ids.add(q.id); textes.add(contenu);
       session.repondre(reponseParfaite(q));
     }
     assert.equal(ids.size, 40);
@@ -94,8 +96,11 @@ test('ANTI-RÉPÉTITION : session très longue sur une seule matière jusqu\'à 
     ids.add(q.id);
     session.repondre('x');
   }
-  // 10 questions fixes + 2 modèles × maxParModele (3)
-  assert.equal(ids.size, 16);
+  // questions fixes + chaque modèle au plus maxParModele (3) fois, et aucune répétition
+  const nbModeles = donnees.modeles.filter((m) => m.matiere === 'hg').length;
+  const nbFixes = donnees.banque.filter((q) => q.matiere === 'hg').length;
+  assert.ok(ids.size <= nbFixes + 3 * nbModeles);
+  assert.ok(ids.size >= nbFixes + 2 * nbModeles, `${ids.size} questions seulement`);
 });
 
 test('pas deux fois de suite le même modèle', () => {

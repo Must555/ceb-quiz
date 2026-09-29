@@ -1,0 +1,318 @@
+{
+ "fiches": [
+  {
+   "id": "sc-regimes",
+   "matiere": "sc",
+   "e": "🥕",
+   "titre": "Le régime alimentaire",
+   "regle": [
+    "Herbivore : mange des végétaux (herbe, feuilles, graines, fruits).",
+    "Carnivore : mange d'autres animaux (viande, poissons, insectes…).",
+    "Omnivore : mange à la fois des végétaux et des animaux."
+   ],
+   "exemple": "La vache est herbivore, le loup est carnivore, le sanglier est omnivore.",
+   "astuce": "Omni = « tout » : l'omnivore mange de tout."
+  },
+  {
+   "id": "sc-reproduction",
+   "matiere": "sc",
+   "e": "🥚",
+   "titre": "Ovipare ou vivipare ?",
+   "regle": [
+    "Ovipare : la femelle pond des œufs ; le petit se développe dans l'œuf, hors du corps de la mère.",
+    "Vivipare : le petit se développe dans le ventre de sa mère et naît déjà formé.",
+    "Tous les mammifères de chez nous sont vivipares ; tous les oiseaux sont ovipares."
+   ],
+   "exemple": "La poule est ovipare ; le chat est vivipare.",
+   "astuce": "Ovi = œuf, vivi = vivant : l'ovipare pond des œufs, le vivipare met au monde des petits vivants."
+  },
+  {
+   "id": "sc-hiver",
+   "matiere": "sc",
+   "e": "❄️",
+   "titre": "Passer l'hiver",
+   "regle": [
+    "Hiberner : dormir profondément tout l'hiver, le cœur bat très lentement (hérisson, loir, chauve-souris).",
+    "S'engourdir (vie ralentie) : le corps prend la température de l'air, l'animal se cache et ne bouge plus (grenouille, crapaud, lézard, couleuvre, coccinelle).",
+    "Migrer : partir vers des pays plus chauds (hirondelle, cigogne, martinet).",
+    "Rester actif : continuer à chercher sa nourriture (renard, cerf, écureuil, mésange)."
+   ],
+   "exemple": "L'hirondelle part en Afrique en automne, car il n'y a plus d'insectes volants chez nous en hiver.",
+   "astuce": "L'écureuil n'hiberne pas : il reste actif et mange les réserves qu'il a cachées."
+  },
+  {
+   "id": "sc-metamorphoses",
+   "matiere": "sc",
+   "e": "🦋",
+   "titre": "Cycles de vie et métamorphoses",
+   "regle": [
+    "Une métamorphose est un grand changement de forme au cours de la vie d'un animal.",
+    "Papillon : œuf → chenille (larve) → chrysalide (nymphe) → papillon adulte.",
+    "Grenouille : œuf → têtard (branchies, vit dans l'eau) → têtard avec pattes → grenouille (poumons).",
+    "Coccinelle, abeille, moustique, hanneton : œuf → larve → nymphe → adulte."
+   ],
+   "exemple": "La larve du hanneton s'appelle le ver blanc ; celle de la mouche, l'asticot.",
+   "astuce": "Les mammifères, les oiseaux et les reptiles ne font pas de métamorphose : le petit ressemble déjà à l'adulte."
+  },
+  {
+   "id": "sc-chaines",
+   "matiere": "sc",
+   "e": "🔗",
+   "titre": "Les chaînes alimentaires",
+   "regle": [
+    "La flèche → veut dire « est mangé par ».",
+    "Une chaîne commence toujours par un producteur : un végétal qui fabrique sa matière grâce à la lumière.",
+    "Ensuite viennent les consommateurs : primaire (le 1er mangeur, herbivore), secondaire (le 2e), tertiaire (le 3e).",
+    "Les décomposeurs (vers de terre, champignons, bactéries) recyclent la matière morte."
+   ],
+   "exemple": "L'herbe → le lapin → le renard : l'herbe est le producteur, le lapin le consommateur primaire, le renard le consommateur secondaire.",
+   "astuce": "Suis la flèche comme si c'était la nourriture qui voyage."
+  },
+  {
+   "id": "sc-ecosystemes",
+   "matiere": "sc",
+   "e": "🍄",
+   "titre": "Milieux, décomposeurs et champignons",
+   "regle": [
+    "Un écosystème = un milieu (sol, eau, climat) + tous les êtres vivants qui y vivent.",
+    "Chaque milieu (mare, forêt, mer) abrite des êtres vivants adaptés.",
+    "Les décomposeurs transforment les restes (feuilles mortes, cadavres) en matières minérales qui nourrissent le sol.",
+    "Les champignons ne sont ni des plantes ni des animaux : sans chlorophylle, ils se nourrissent de matière déjà faite et se reproduisent par des spores."
+   ],
+   "exemple": "En forêt, le ver de terre et les champignons font disparaître les feuilles mortes.",
+   "astuce": "Tous les êtres vivants dépendent les uns des autres."
+  },
+  {
+   "id": "sc-plantes",
+   "matiere": "sc",
+   "e": "🌱",
+   "titre": "La vie des plantes",
+   "regle": [
+    "Racine : puise l'eau et les sels minéraux, fixe la plante. Tige : soutient et transporte la sève. Feuille : fabrique la nourriture.",
+    "Photosynthèse : avec la lumière, les feuilles utilisent l'eau et le dioxyde de carbone pour fabriquer des sucres, et rejettent du dioxygène.",
+    "Pour germer, une graine a besoin d'eau, d'air et de chaleur (pas forcément de lumière).",
+    "Feuillus : feuilles larges ; conifères : aiguilles ou écailles, graines dans des cônes."
+   ],
+   "exemple": "La tomate contient des graines : pour un botaniste, c'est un fruit.",
+   "astuce": "Photo = lumière, synthèse = fabrication."
+  },
+  {
+   "id": "sc-fleur",
+   "matiere": "sc",
+   "e": "🌸",
+   "titre": "La fleur, du pollen au fruit",
+   "regle": [
+    "Étamines : organes mâles, produisent le pollen. Pistil : organe femelle, contient l'ovaire et les ovules.",
+    "Pollinisation : le pollen passe des étamines au pistil (grâce aux insectes ou au vent).",
+    "Après la fécondation, l'ovaire devient le fruit et les ovules deviennent les graines.",
+    "Les graines sont dispersées par le vent, l'eau, les animaux ou la plante elle-même."
+   ],
+   "exemple": "Le pissenlit a des graines à parachute : le vent les emporte.",
+   "astuce": "Ovaire → fruit, ovule → graine."
+  },
+  {
+   "id": "sc-appareils",
+   "matiere": "sc",
+   "e": "🫁",
+   "titre": "Les appareils du corps",
+   "regle": [
+    "Digestif : bouche, œsophage, estomac, intestins, foie. Respiratoire : fosses nasales, trachée, bronches, poumons.",
+    "Circulatoire : cœur, artères, veines, capillaires. Excréteur (urinaire) : reins, uretères, vessie, urètre.",
+    "Locomoteur : os (le squelette), muscles, tendons, articulations. Système nerveux : cerveau, moelle épinière, nerfs.",
+    "Les 5 sens : la vue (yeux), l'ouïe (oreilles), l'odorat (nez), le goût (langue), le toucher (peau)."
+   ],
+   "exemple": "Le crâne protège le cerveau ; les côtes protègent le cœur et les poumons.",
+   "astuce": "Un appareil = plusieurs organes qui travaillent ensemble pour une même fonction."
+  },
+  {
+   "id": "sc-dents",
+   "matiere": "sc",
+   "e": "🦷",
+   "titre": "Les dents",
+   "regle": [
+    "Incisives (plates, tranchantes) : couper. Canines (pointues) : déchirer. Prémolaires et molaires (larges) : broyer.",
+    "Dents de lait : 20. Dents définitives : 32 (8 incisives, 4 canines, 8 prémolaires, 12 molaires).",
+    "Brosse-toi les dents au moins 2 fois par jour, pendant 2 minutes : les bactéries et le sucre provoquent les caries."
+   ],
+   "exemple": "Le loup a de longues canines ; la vache a de larges molaires pour broyer l'herbe.",
+   "astuce": "Couronne = partie visible ; racine = cachée dans la gencive."
+  },
+  {
+   "id": "sc-alimentation",
+   "matiere": "sc",
+   "e": "🍎",
+   "titre": "Alimentation et santé",
+   "regle": [
+    "Aliments bâtisseurs (viande, poisson, œufs, lait, fromage) : pour grandir et réparer le corps.",
+    "Aliments énergétiques (pain, pâtes, riz, pommes de terre, beurre, huile, sucre) : pour avoir de l'énergie.",
+    "Aliments protecteurs (fruits et légumes) : vitamines et minéraux pour bien fonctionner.",
+    "Bien dormir (9 à 11 h), bouger chaque jour, boire de l'eau et se laver les mains : c'est bon pour la santé."
+   ],
+   "exemple": "Un repas équilibré : des légumes, un féculent, un peu de viande ou de poisson, de l'eau.",
+   "astuce": "Varie ton assiette : chaque groupe d'aliments a son rôle."
+  },
+  {
+   "id": "sc-etats",
+   "matiere": "sc",
+   "e": "🧊",
+   "titre": "Les états de la matière",
+   "regle": [
+    "Solide : forme propre. Liquide : prend la forme du récipient. Gaz : occupe tout l'espace.",
+    "Fusion : solide → liquide. Solidification : liquide → solide.",
+    "Vaporisation (évaporation ou ébullition) : liquide → gaz. Condensation : gaz → liquide. Sublimation : solide → gaz.",
+    "L'eau pure gèle à 0 °C et bout à 100 °C (au niveau de la mer)."
+   ],
+   "exemple": "La buée sur le miroir de la salle de bain, c'est de la condensation.",
+   "astuce": "La vapeur d'eau est invisible !"
+  },
+  {
+   "id": "sc-cycle-eau",
+   "matiere": "sc",
+   "e": "💧",
+   "titre": "Le cycle de l'eau",
+   "regle": [
+    "Le Soleil chauffe l'eau des mers, lacs et rivières : elle s'évapore.",
+    "En montant, la vapeur se refroidit et se condense en nuages (gouttelettes).",
+    "Les gouttes tombent : ce sont les précipitations (pluie, neige, grêle).",
+    "L'eau ruisselle ou s'infiltre, rejoint les rivières puis la mer… et le cycle recommence."
+   ],
+   "exemple": "Quand l'eau de mer s'évapore, le sel reste dans la mer : la pluie n'est pas salée.",
+   "astuce": "Évaporation → condensation → précipitations → ruissellement/infiltration."
+  },
+  {
+   "id": "sc-melanges",
+   "matiere": "sc",
+   "e": "🧪",
+   "titre": "Mélanges et séparation",
+   "regle": [
+    "Mélange homogène : on ne distingue pas les constituants (eau sucrée). Hétérogène : on les distingue (eau et huile).",
+    "Soluble : se dissout dans l'eau (sel, sucre). Insoluble : ne se dissout pas (sable, huile).",
+    "Séparer : décantation (laisser reposer), filtration (filtre), évaporation (récupérer ce qui est dissous), tamisage (tamis), aimantation (aimant)."
+   ],
+   "exemple": "Pour récupérer le sel de l'eau de mer, on fait évaporer l'eau (marais salants).",
+   "astuce": "Un filtre ne retient pas ce qui est dissous."
+  },
+  {
+   "id": "sc-materiaux",
+   "matiere": "sc",
+   "e": "🧱",
+   "titre": "Les matériaux",
+   "regle": [
+    "Conducteurs électriques : les métaux (cuivre, fer, aluminium…). Isolants : plastique, bois sec, verre, caoutchouc.",
+    "Bons conducteurs de chaleur : les métaux. Isolants thermiques : laine, liège, polystyrène, air.",
+    "Transparent : on voit à travers. Translucide : la lumière passe mais on ne voit pas nettement. Opaque : la lumière ne passe pas.",
+    "Matériaux naturels (bois, laine, pierre) ou fabriqués par l'être humain (plastique, verre, béton)."
+   ],
+   "exemple": "Un fil électrique : du cuivre (conducteur) entouré de plastique (isolant).",
+   "astuce": "Métal = conducteur électrique."
+  },
+  {
+   "id": "sc-aimants",
+   "matiere": "sc",
+   "e": "🧲",
+   "titre": "Les aimants",
+   "regle": [
+    "Un aimant attire le fer, l'acier et le nickel, mais pas le cuivre, l'aluminium, l'or, le bois ou le plastique.",
+    "Un aimant a deux pôles : nord et sud. Deux pôles de même nom se repoussent ; deux pôles différents s'attirent.",
+    "L'aiguille d'une boussole est un petit aimant qui indique le nord."
+   ],
+   "exemple": "Avec un aimant, on peut séparer de la limaille de fer du sable.",
+   "astuce": "Pas tous les métaux : surtout le fer et l'acier."
+  },
+  {
+   "id": "sc-dechets",
+   "matiere": "sc",
+   "e": "♻️",
+   "titre": "Trier ses déchets",
+   "regle": [
+    "PMC : emballages en plastique (bouteilles, flacons, pots, barquettes…), emballages en métal (canettes, conserves), cartons à boissons (briques de lait).",
+    "Papiers-cartons : journaux, magazines, boîtes en carton propres. Verre : bouteilles et bocaux (bulle à verre).",
+    "Déchets organiques : épluchures, restes de fruits et légumes, marc de café (compost).",
+    "Piles, peintures, appareils électriques : point de collecte ou recyparc."
+   ],
+   "exemple": "Une brique de lait va dans les PMC, pas dans les papiers-cartons.",
+   "astuce": "Le meilleur déchet est celui qu'on ne produit pas."
+  },
+  {
+   "id": "sc-air",
+   "matiere": "sc",
+   "e": "🌬️",
+   "titre": "L'air",
+   "regle": [
+    "L'air est un mélange de gaz : environ 78 % de diazote, 21 % de dioxygène et 1 % d'autres gaz.",
+    "L'air a une masse, il occupe de la place et on peut le comprimer.",
+    "Nous inspirons du dioxygène et rejetons du dioxyde de carbone."
+   ],
+   "exemple": "Dans 100 litres d'air, il y a environ 21 litres de dioxygène.",
+   "astuce": "21 % de dioxygène : pense à « 21 », comme un anniversaire important !"
+  },
+  {
+   "id": "sc-transformations",
+   "matiere": "sc",
+   "e": "🔄",
+   "titre": "Les transformations d'énergie",
+   "regle": [
+    "Formes d'énergie : électrique, thermique (chaleur), lumineuse, mécanique (mouvement), sonore, chimique.",
+    "Un appareil reçoit une forme d'énergie et la transforme en une autre.",
+    "Une partie de l'énergie est souvent « perdue » en chaleur."
+   ],
+   "exemple": "Une éolienne transforme l'énergie mécanique du vent en énergie électrique.",
+   "astuce": "Demande-toi : « Qu'est-ce qui le fait marcher ? » puis « Qu'est-ce qu'il produit ? »."
+  },
+  {
+   "id": "sc-electricite",
+   "matiere": "sc",
+   "e": "💡",
+   "titre": "L'électricité",
+   "regle": [
+    "Pour qu'une ampoule s'allume, il faut un circuit fermé : une boucle de la borne + à la borne − de la pile.",
+    "Un interrupteur ouvert coupe le circuit ; fermé, il laisse passer le courant.",
+    "Les métaux conduisent le courant ; le plastique, le bois sec, le verre, le caoutchouc sont isolants.",
+    "Danger : le courant des prises (230 V) peut tuer. Jamais d'eau près d'un appareil électrique."
+   ],
+   "exemple": "Une clé en métal placée dans le circuit laisse passer le courant ; une gomme, non.",
+   "astuce": "Circuit fermé = courant qui passe = ampoule allumée."
+  },
+  {
+   "id": "sc-lumiere-son",
+   "matiere": "sc",
+   "e": "🔦",
+   "titre": "La lumière et le son",
+   "regle": [
+    "Source de lumière : produit sa lumière (Soleil, flamme, lampe). Objet éclairé : renvoie la lumière reçue (Lune, miroir).",
+    "La lumière se propage en ligne droite ; l'ombre se forme derrière un objet opaque, du côté opposé à la source.",
+    "Un son est produit par une vibration ; il se propage dans l'air, l'eau et les solides, mais pas dans le vide.",
+    "La lumière est beaucoup plus rapide que le son (on voit l'éclair avant d'entendre le tonnerre)."
+   ],
+   "exemple": "Vers le milieu de la journée, le Soleil est haut : les ombres sont courtes.",
+   "astuce": "Pas de matière = pas de son."
+  },
+  {
+   "id": "sc-systeme-solaire",
+   "matiere": "sc",
+   "e": "🪐",
+   "titre": "Le système solaire",
+   "regle": [
+    "Le Soleil est une étoile ; 8 planètes tournent autour de lui.",
+    "Dans l'ordre : Mercure, Vénus, la Terre, Mars (rocheuses), Jupiter, Saturne, Uranus, Neptune (géantes gazeuses).",
+    "Un satellite tourne autour d'une planète : la Lune est le satellite de la Terre."
+   ],
+   "exemple": "Jupiter est la plus grande planète ; Mercure est la plus proche du Soleil.",
+   "astuce": "« Me Voici Toute Mignonne, Je Suis Une Nébuleuse » : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+  },
+  {
+   "id": "sc-terre-mouvements",
+   "matiere": "sc",
+   "e": "🌍",
+   "titre": "La Terre, le Soleil et la Lune",
+   "regle": [
+    "Rotation : la Terre tourne sur elle-même en 24 heures → le jour et la nuit.",
+    "Révolution : la Terre tourne autour du Soleil en 365 jours et 6 heures → une année. Les saisons viennent de l'inclinaison de son axe.",
+    "Le Soleil se lève à l'est, est au sud vers le milieu de la journée (en Belgique) et se couche à l'ouest.",
+    "Phases de la Lune : nouvelle lune → premier croissant → premier quartier → pleine lune → dernier quartier → dernier croissant."
+   ],
+   "exemple": "Le matin, le Soleil est à l'est : ton ombre est tournée vers l'ouest.",
+   "astuce": "Nord → est → sud → ouest, dans le sens des aiguilles d'une montre."
+  }
+ ]
+}

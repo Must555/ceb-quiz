@@ -1,0 +1,1978 @@
+{
+ "matiere": "sc",
+ "modeles": [
+  {
+   "id": "sc-f-animaux-classe",
+   "generateur": "sciences",
+   "base": "animaux",
+   "domaine": "sc.vivant",
+   "fiche": "sc-classification",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "classe",
+     "enonce": "À quelle classe d'animaux appartient {cle} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "classe",
+     "cibles": [
+      "mammifère",
+      "oiseau",
+      "poisson",
+      "reptile",
+      "amphibien",
+      "insecte",
+      "arachnide",
+      "crustacé",
+      "mollusque"
+     ],
+     "enonce": "Lequel de ces animaux est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "classe",
+     "enonce": "Quel est l'intrus dans cette liste d'animaux ?",
+     "explication": "{groupe} sont des {valeurPluriel}. {Cle} est {valeurIntrusPhrase}. {info}"
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "classe",
+     "enonce": "Vrai ou faux ? {Cle} est {valeurPhrase}.",
+     "explication": "{Cle} est {bonnePhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "classe",
+     "valeurs": [
+      "mammifère",
+      "oiseau",
+      "poisson",
+      "reptile"
+     ],
+     "enonce": "Classe chaque animal.",
+     "explication": "{liste}. Mammifère : poils et mamelles ; oiseau : plumes ; poisson : écailles et branchies ; reptile : écailles et poumons."
+    },
+    {
+     "sorte": "grille",
+     "champ": "classe",
+     "valeurs": [
+      "insecte",
+      "arachnide",
+      "crustacé",
+      "mollusque"
+     ],
+     "difficulte": 2,
+     "enonce": "Classe chaque invertébré.",
+     "explication": "{liste}. Insecte : 6 pattes ; arachnide : 8 pattes ; crustacé : carapace et souvent 10 pattes ; mollusque : corps mou."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "classe",
+     "saisie": true,
+     "difficulte": 2,
+     "filtre": {
+      "classe": [
+       "mammifère",
+       "oiseau",
+       "poisson",
+       "reptile",
+       "amphibien",
+       "insecte"
+      ]
+     },
+     "enonce": "Écris la classe d'animaux à laquelle appartient {cle} (un seul mot).",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-animaux-attributs",
+   "generateur": "sciences",
+   "base": "animaux",
+   "domaine": "sc.vivant",
+   "fiche": "sc-classification",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "squelette",
+     "enonce": "{Cle} est-{il} un vertébré ou un invertébré ?",
+     "explication": "{Cle} est {valeurPhrase}. Un vertébré a un squelette interne avec une colonne vertébrale."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "squelette",
+     "enonce": "Lequel de ces animaux est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase} : c'est le seul des quatre. Un vertébré a une colonne vertébrale ; un invertébré n'en a pas."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "squelette",
+     "enonce": "Quel est l'intrus ? (pense au squelette)",
+     "explication": "{groupe} sont des {valeurPluriel}. {Cle} est {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "squelette",
+     "valeurs": [
+      "vertébré",
+      "invertébré"
+     ],
+     "enonce": "Vertébré ou invertébré ?",
+     "explication": "{liste}. Les vertébrés (mammifères, oiseaux, poissons, reptiles, amphibiens) ont une colonne vertébrale."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "revetement",
+     "enonce": "{Cle} : de quoi son corps est-il couvert ?",
+     "explication": "{Cle} a le corps couvert {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "revetement",
+     "enonce": "Lequel de ces animaux a le corps couvert {valeurPhrase} ?",
+     "explication": "{Cle} a le corps couvert {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "revetement",
+     "valeurs": [
+      "des poils",
+      "des plumes",
+      "des écailles",
+      "une peau nue"
+     ],
+     "enonce": "De quoi le corps de chaque animal est-il couvert ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "respiration",
+     "enonce": "Comment respire {cle} ?",
+     "explication": "{Cle} respire {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "respiration",
+     "cibles": [
+      "avec des branchies",
+      "avec des poumons",
+      "avec des trachées"
+     ],
+     "enonce": "Lequel de ces animaux respire {valeur} ?",
+     "explication": "{Cle} respire {valeur}. {info}"
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "respiration",
+     "enonce": "Vrai ou faux ? {Cle} respire {valeur}.",
+     "explication": "{Cle} respire {bonne}. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "pattes",
+     "filtre": {
+      "pattes": [
+       2,
+       4,
+       6,
+       8,
+       10,
+       14
+      ]
+     },
+     "enonce": "Combien de pattes a {cle} ?",
+     "explication": "{Cle} a {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "pattes",
+     "cibles": [
+      "6",
+      "8",
+      "10"
+     ],
+     "enonce": "Lequel de ces animaux a {valeurPhrase} ?",
+     "explication": "{Cle} a {valeurPhrase}. Insectes : 6 pattes ; arachnides : 8 ; la plupart des crustacés : 10."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-animaux-regime",
+   "generateur": "sciences",
+   "base": "animaux",
+   "domaine": "sc.vivant",
+   "fiche": "sc-regimes",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "regime",
+     "enonce": "{Cle} : quel est son régime alimentaire ?",
+     "explication": "{Cle} est {valeur}. Herbivore : mange des végétaux ; carnivore : mange d'autres animaux ; omnivore : mange des deux."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "regime",
+     "enonce": "Lequel de ces animaux est {valeur} ?",
+     "explication": "{Cle} est {valeur}. {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "regime",
+     "difficulte": 2,
+     "enonce": "Quel est l'intrus ? (pense à ce que mangent ces animaux)",
+     "explication": "{groupe} sont {valeurPluriel}. {Cle} est {valeurIntrus}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "regime",
+     "enonce": "Vrai ou faux ? {Cle} est {valeur}.",
+     "explication": "{Cle} est {bonne}. Herbivore : végétaux ; carnivore : animaux ; omnivore : les deux."
+    },
+    {
+     "sorte": "grille",
+     "champ": "regime",
+     "valeurs": [
+      "herbivore",
+      "carnivore",
+      "omnivore"
+     ],
+     "enonce": "Quel est le régime alimentaire de chaque animal ?",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-animaux-reproduction",
+   "generateur": "sciences",
+   "base": "animaux",
+   "domaine": "sc.vivant",
+   "fiche": "sc-reproduction",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "reproduction",
+     "enonce": "{Cle} est-{il} ovipare ou vivipare ?",
+     "explication": "{Cle} est {valeur}. Ovipare : la femelle pond des œufs ; vivipare : le petit se développe dans le ventre de sa mère."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "reproduction",
+     "enonce": "Lequel de ces animaux est {valeur} ?",
+     "explication": "{Cle} est {valeur} ; les trois autres ne le sont pas. {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "reproduction",
+     "difficulte": 2,
+     "enonce": "Quel est l'intrus ? (pense à la naissance des petits)",
+     "explication": "{groupe} sont {valeurPluriel}. {Cle} est {valeurIntrus}. {info}"
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "reproduction",
+     "enonce": "Vrai ou faux ? {Cle} est {valeur}.",
+     "explication": "{Cle} est {bonne}. Ovipare : pond des œufs ; vivipare : met au monde des petits déjà formés."
+    },
+    {
+     "sorte": "grille",
+     "champ": "reproduction",
+     "valeurs": [
+      "ovipare",
+      "vivipare"
+     ],
+     "enonce": "Ovipare ou vivipare ?",
+     "explication": "{liste}. Tous les mammifères de cette liste sont vivipares ; les oiseaux sont tous ovipares."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-animaux-hiver",
+   "generateur": "sciences",
+   "base": "animaux",
+   "domaine": "sc.vivant",
+   "fiche": "sc-hiver",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "hiver",
+     "enonce": "Comment {cle} passe-t-{il} l'hiver ?",
+     "explication": "{Cle} passe l'hiver {valeurPhrase}. {info_hiver}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "hiver",
+     "enonce": "Lequel de ces animaux passe l'hiver {valeurPhrase} ?",
+     "explication": "{Cle} passe l'hiver {valeurPhrase}. {info_hiver}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "hiver",
+     "enonce": "Quel est l'intrus ? (pense à la façon de passer l'hiver)",
+     "explication": "{groupe} passent l'hiver {valeurPhrase}. {Cle} passe l'hiver {valeurIntrusPhrase}. {info_hiver}"
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "hiver",
+     "enonce": "Vrai ou faux ? {Cle} passe l'hiver {valeurPhrase}.",
+     "explication": "{Cle} passe l'hiver {bonnePhrase}. {info_hiver}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "hiver",
+     "valeurs": [
+      "en hibernant",
+      "en migrant vers des pays plus chauds",
+      "en s'engourdissant (vie ralentie)",
+      "en continuant à chercher sa nourriture"
+     ],
+     "enonce": "Comment chaque animal passe-t-il l'hiver ?",
+     "explication": "{liste}. Hiberner : dormir profondément (mammifères). S'engourdir : le corps se refroidit avec l'air (reptiles, amphibiens, insectes…)."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-cycles-vie",
+   "generateur": "sciences",
+   "base": "cycles",
+   "domaine": "sc.vivant",
+   "fiche": "sc-metamorphoses",
+   "difficulte": 2,
+   "suites": {
+    "papillon": {
+     "de": "du papillon",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie du papillon.",
+     "enonceApres": "Dans le cycle de vie du papillon, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie du papillon, quelle étape vient juste avant « {cle} » ?"
+    },
+    "grenouille": {
+     "de": "de la grenouille",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie de la grenouille.",
+     "enonceApres": "Dans le cycle de vie de la grenouille, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie de la grenouille, quelle étape vient juste avant « {cle} » ?"
+    },
+    "coccinelle": {
+     "de": "de la coccinelle",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie de la coccinelle.",
+     "enonceApres": "Dans le cycle de vie de la coccinelle, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie de la coccinelle, quelle étape vient juste avant « {cle} » ?"
+    },
+    "abeille": {
+     "de": "de l'abeille",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie de l'abeille.",
+     "enonceApres": "Dans le cycle de vie de l'abeille, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie de l'abeille, quelle étape vient juste avant « {cle} » ?"
+    },
+    "moustique": {
+     "de": "du moustique",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie du moustique.",
+     "enonceApres": "Dans le cycle de vie du moustique, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie du moustique, quelle étape vient juste avant « {cle} » ?"
+    },
+    "hanneton": {
+     "de": "du hanneton",
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de vie du hanneton.",
+     "enonceApres": "Dans le cycle de vie du hanneton, quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "Dans le cycle de vie du hanneton, quelle étape vient juste avant « {cle} » ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "suite_ordre",
+     "suites": [
+      "papillon",
+      "grenouille",
+      "coccinelle",
+      "abeille",
+      "moustique",
+      "hanneton"
+     ]
+    },
+    {
+     "sorte": "suite_apres",
+     "suites": [
+      "papillon",
+      "grenouille",
+      "coccinelle",
+      "abeille",
+      "moustique",
+      "hanneton"
+     ]
+    },
+    {
+     "sorte": "suite_apres",
+     "sens": "avant",
+     "suites": [
+      "grenouille",
+      "papillon",
+      "hanneton",
+      "moustique"
+     ]
+    },
+    {
+     "sorte": "lequel",
+     "champ": "meta",
+     "cibles": [
+      "oui"
+     ],
+     "enonce": "Lequel de ces animaux subit une métamorphose au cours de sa vie ?",
+     "explication": "{Cle} subit une métamorphose. {meta_info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "meta",
+     "cibles": [
+      "non"
+     ],
+     "enonce": "Lequel de ces animaux ne subit PAS de métamorphose ?",
+     "explication": "{Cle} ressemble déjà à l'adulte à la naissance ou à la sortie de l'œuf : {il} grandit sans se transformer. Les trois autres subissent une métamorphose."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    },
+    {
+     "sorte": "affirmation_choix",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    },
+    {
+     "sorte": "affirmation_grille",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "sc-f-chaines-alimentaires",
+   "generateur": "sciences",
+   "base": "chaines",
+   "domaine": "sc.vivant",
+   "fiche": "sc-chaines",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "chaine",
+     "question": "ordre",
+     "difficulte": 1
+    },
+    {
+     "sorte": "chaine",
+     "question": "role"
+    },
+    {
+     "sorte": "chaine",
+     "question": "qui"
+    },
+    {
+     "sorte": "chaine",
+     "question": "manquant",
+     "difficulte": 1
+    }
+   ]
+  },
+  {
+   "id": "sc-f-ecosystemes",
+   "generateur": "sciences",
+   "base": "ecosystemes",
+   "domaine": "sc.vivant",
+   "fiche": "sc-ecosystemes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "milieu",
+     "enonce": "Dans quel milieu trouve-t-on {cle} ?",
+     "explication": "On trouve {cle} dans {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "milieu",
+     "enonce": "Lequel de ces êtres vivants vit dans {valeur} ?",
+     "explication": "{Cle} vit dans {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "milieu",
+     "valeurs": [
+      "la mare",
+      "la forêt",
+      "la mer"
+     ],
+     "enonce": "Dans quel milieu vit chaque être vivant ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "decomp",
+     "cibles": [
+      "oui"
+     ],
+     "enonce": "Lequel de ces êtres vivants est un décomposeur ?",
+     "explication": "{Cle} est un décomposeur. {info_d} Les décomposeurs recyclent la matière morte."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-plante-parties",
+   "generateur": "sciences",
+   "base": "plante",
+   "domaine": "sc.vivant",
+   "fiche": "sc-plantes",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "À quoi sert cette partie de la plante : {cle} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "role",
+     "enonce": "Quelle partie de la plante sert à {valeur} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "role",
+     "n": 3,
+     "enonce": "Relie chaque partie de la plante à son rôle.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-fleur",
+   "generateur": "sciences",
+   "base": "fleur",
+   "domaine": "sc.vivant",
+   "fiche": "sc-fleur",
+   "difficulte": 2,
+   "suites": {
+    "fleur": {
+     "enonceOrdre": "Remets dans l'ordre les étapes, de la fleur jusqu'au fruit.",
+     "enonceApres": "De la fleur au fruit : quelle étape vient juste après « {cle} » ?",
+     "enonceAvant": "De la fleur au fruit : quelle étape vient juste avant « {cle} » ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "Quel est le rôle de cette partie de la fleur : {cle} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "role",
+     "enonce": "Quelle partie de la fleur a ce rôle : {valeur} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "role",
+     "n": 3,
+     "enonce": "Relie chaque partie de la fleur à son rôle.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "suite_ordre",
+     "suite": "fleur"
+    },
+    {
+     "sorte": "suite_apres",
+     "suite": "fleur"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-plantes-vie",
+   "generateur": "sciences",
+   "base": "plantes_vie",
+   "domaine": "sc.vivant",
+   "fiche": "sc-plantes",
+   "difficulte": 2,
+   "suites": {
+    "haricot": {
+     "enonceOrdre": "Remets dans l'ordre les étapes de la vie d'un plant de haricot.",
+     "enonceApres": "Dans la vie d'un plant de haricot, quelle étape vient juste après : « {cle} » ?",
+     "enonceAvant": "Dans la vie d'un plant de haricot, quelle étape vient juste avant : « {cle} » ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "suite_ordre",
+     "suite": "haricot"
+    },
+    {
+     "sorte": "suite_apres",
+     "suite": "haricot"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "dissem",
+     "fiche": "sc-fleur",
+     "enonce": "Par quoi les graines de cette plante sont-elles surtout dispersées : {cle} ?",
+     "explication": "Chez {cle}, les graines sont dispersées {valeurPhrase}. {info_d}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "dissem",
+     "fiche": "sc-fleur",
+     "enonce": "Chez quelle plante les graines sont-elles surtout dispersées {valeurPhrase} ?",
+     "explication": "Chez {cle}, les graines sont dispersées {valeurPhrase}. {info_d}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "dissem",
+     "fiche": "sc-fleur",
+     "valeurs": [
+      "le vent",
+      "les animaux",
+      "l'eau",
+      "la plante elle-même"
+     ],
+     "enonce": "Qui disperse surtout les graines de chaque plante ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-arbres",
+   "generateur": "sciences",
+   "base": "arbres",
+   "domaine": "sc.vivant",
+   "fiche": "sc-plantes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "enonce": "{Cle} est-il un feuillu ou un conifère ?",
+     "explication": "{Cle} est {valeurPhrase}. {info} Feuillu : feuilles larges et plates ; conifère : aiguilles ou écailles et cônes."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "type",
+     "enonce": "Lequel de ces arbres est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "type",
+     "enonce": "Quel est l'intrus dans cette liste d'arbres ?",
+     "explication": "{groupe} sont des {valeurPluriel}. {Cle} est {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "type",
+     "valeurs": [
+      "feuillu",
+      "conifère"
+     ],
+     "enonce": "Feuillu ou conifère ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "feuillage",
+     "difficulte": 3,
+     "enonce": "Quel type de feuillage a {cle} ?",
+     "explication": "{Cle} a {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "affirmation",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    },
+    {
+     "sorte": "affirmation_choix",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    },
+    {
+     "sorte": "affirmation_grille",
+     "filtre": {
+      "verite": [
+       true,
+       false
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "sc-f-plantes-mangees",
+   "generateur": "sciences",
+   "base": "plantes_mangees",
+   "domaine": "sc.vivant",
+   "fiche": "sc-plantes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "partie",
+     "enonce": "Quand on mange {cle}, quelle partie de la plante mange-t-on ?",
+     "explication": "On mange {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "partie",
+     "enonce": "Dans lequel de ces aliments mange-t-on {valeurPhrase} de la plante ?",
+     "explication": "Avec {cle}, on mange {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "partie",
+     "valeurs": [
+      "racine",
+      "feuille",
+      "fruit",
+      "graine"
+     ],
+     "enonce": "Quelle partie de la plante mange-t-on ?",
+     "explication": "{liste}. Un fruit contient des graines ; une graine peut donner une nouvelle plante."
+    },
+    {
+     "sorte": "grille",
+     "champ": "partie",
+     "valeurs": [
+      "racine",
+      "tige",
+      "feuille",
+      "fleur"
+     ],
+     "enonce": "Quelle partie de la plante mange-t-on ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "partie",
+     "difficulte": 3,
+     "enonce": "Quel est l'intrus ? (pense à la partie de la plante que l'on mange)",
+     "explication": "Avec {groupe}, on mange des {valeurPluriel}. Avec {cle}, on mange {valeurIntrusPhrase}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-appareils",
+   "generateur": "sciences",
+   "base": "corps",
+   "domaine": "sc.vivant",
+   "fiche": "sc-appareils",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "appareil",
+     "enonce": "À quel appareil du corps appartient cet organe : {cle} ?",
+     "explication": "{Cle} {fait} partie {valeurPhrase}. Rôle : {role}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "appareil",
+     "enonce": "Lequel de ces organes fait partie {valeurPhrase} ?",
+     "explication": "{Cle} {fait} partie {valeurPhrase}. Rôle : {role}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "appareil",
+     "enonce": "Quel est l'intrus ? (pense aux appareils du corps)",
+     "explication": "{groupe} font partie {valeurPhrase}. {Cle} {fait} partie {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "appareil",
+     "valeurs": [
+      "l'appareil digestif",
+      "l'appareil respiratoire",
+      "l'appareil circulatoire",
+      "l'appareil excréteur (urinaire)"
+     ],
+     "enonce": "À quel appareil appartient chaque organe ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "appareil",
+     "valeurs": [
+      "l'appareil locomoteur",
+      "le système nerveux",
+      "l'appareil digestif",
+      "l'appareil respiratoire"
+     ],
+     "enonce": "À quel appareil appartient chaque organe ?",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-organes-roles",
+   "generateur": "sciences",
+   "base": "corps",
+   "domaine": "sc.vivant",
+   "fiche": "sc-appareils",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "Quel est le rôle de cet organe : {cle} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "role",
+     "enonce": "Quel organe a pour rôle de {valeur} ?",
+     "explication": "{Cle} → {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "role",
+     "n": 3,
+     "enonce": "Relie chaque organe à son rôle.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "sens",
+     "difficulte": 1,
+     "enonce": "Quel sens est lié à cet organe : {cle} ?",
+     "explication": "{Cle} : {valeur}. Nous avons cinq sens : la vue, l'ouïe, l'odorat, le goût et le toucher."
+    },
+    {
+     "sorte": "association",
+     "champ": "sens",
+     "n": 4,
+     "difficulte": 1,
+     "enonce": "Relie chaque organe des sens au sens qui lui correspond.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-trajets-corps",
+   "generateur": "sciences",
+   "base": "trajets",
+   "domaine": "sc.vivant",
+   "fiche": "sc-corps-humain",
+   "difficulte": 2,
+   "suites": {
+    "aliments": {
+     "enonceOrdre": "Remets dans l'ordre le trajet des aliments dans le tube digestif.",
+     "enonceApres": "Dans le tube digestif, par quel organe les aliments passent-ils juste après {cle} ?",
+     "enonceAvant": "Dans le tube digestif, par quel organe les aliments passent-ils juste avant {cle} ?"
+    },
+    "air": {
+     "enonceOrdre": "Remets dans l'ordre le trajet de l'air quand on inspire par le nez.",
+     "enonceApres": "Quand on inspire, où va l'air juste après {cle} ?",
+     "enonceAvant": "Quand on inspire, par où passe l'air juste avant {cle} ?"
+    },
+    "urine": {
+     "enonceOrdre": "Remets dans l'ordre le trajet de l'urine, depuis l'organe qui la fabrique.",
+     "enonceApres": "Où va l'urine juste après {cle} ?",
+     "enonceAvant": "D'où vient l'urine qui arrive dans {cle} ?"
+    },
+    "sang": {
+     "circulaire": true,
+     "enonceOrdre": "Remets dans l'ordre le trajet du sang dans le corps, en commençant par « {debut} ».",
+     "enonceApres": "Dans la circulation, où va le sang juste après {cle} ?",
+     "enonceAvant": "Dans la circulation, par où passe le sang juste avant {cle} ?"
+    },
+    "message": {
+     "enonceOrdre": "Un ballon arrive vers Noah, qui le frappe du pied. Remets dans l'ordre le trajet du message nerveux.",
+     "enonceApres": "Un ballon arrive, on le frappe du pied. Quelle étape vient juste après : « {cle} » ?",
+     "enonceAvant": "Un ballon arrive, on le frappe du pied. Quelle étape vient juste avant : « {cle} » ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "suite_ordre",
+     "suites": [
+      "aliments",
+      "air",
+      "urine",
+      "sang",
+      "message"
+     ]
+    },
+    {
+     "sorte": "suite_apres",
+     "suites": [
+      "aliments",
+      "air",
+      "urine",
+      "sang",
+      "message"
+     ]
+    },
+    {
+     "sorte": "suite_apres",
+     "sens": "avant",
+     "suites": [
+      "aliments",
+      "air",
+      "urine",
+      "sang"
+     ]
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-dents",
+   "generateur": "sciences",
+   "base": "dents",
+   "domaine": "sc.vivant",
+   "fiche": "sc-dents",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "À quoi servent {cle} ?",
+     "explication": "{Cle} ({forme}) servent à {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "role",
+     "enonce": "Quelles dents servent à {valeur} ?",
+     "explication": "{Cle} ({forme}) servent à {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "forme",
+     "enonce": "Comment sont {cle} ?",
+     "explication": "{Cle} sont {valeur} : elles servent à {role}."
+    },
+    {
+     "sorte": "calcul",
+     "champ": "adulte",
+     "n": 1,
+     "difficulte": 2,
+     "enonce": "Combien de dents de ce type un adulte a-t-il en tout : {a.cle} ?",
+     "reponse": "a_adulte",
+     "unite": "dents",
+     "explication": "Un adulte a {a.adulte} dents de ce type ({a.cle}). En tout : 8 incisives, 4 canines, 8 prémolaires et 12 molaires = 32 dents."
+    },
+    {
+     "sorte": "dents_reste",
+     "difficulte": 2
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-alimentation",
+   "generateur": "sciences",
+   "base": "alimentation",
+   "domaine": "sc.vivant",
+   "fiche": "sc-alimentation",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "Quel est le rôle principal de cet aliment : {cle} ?",
+     "explication": "{Cle} {est} surtout {valeur}. Bâtisseurs : pour grandir et réparer le corps ; énergétiques : pour avoir de l'énergie ; protecteurs : vitamines et minéraux."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "role",
+     "enonce": "Lequel de ces aliments est surtout {valeur} ?",
+     "explication": "{Cle} {est} surtout {valeur}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "role",
+     "valeurs": [
+      "un aliment bâtisseur",
+      "un aliment énergétique",
+      "un aliment protecteur"
+     ],
+     "enonce": "Quel est le rôle principal de chaque aliment ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "role",
+     "difficulte": 2,
+     "enonce": "Quel est l'intrus ? (pense au rôle des aliments)",
+     "explication": "{groupe} sont {valeurPluriel}. {Cle} {est} {valeurIntrus}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "groupe",
+     "difficulte": 2,
+     "enonce": "Dans quel groupe d'aliments range-t-on {cle} ?",
+     "explication": "{Cle} : groupe « {valeur} »."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-etats-matiere",
+   "generateur": "sciences",
+   "base": "etats",
+   "domaine": "sc.matiere",
+   "fiche": "sc-etats",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "etat",
+     "enonce": "À température ambiante (environ 20 °C), dans quel état se trouve {cle} ?",
+     "explication": "À 20 °C, {cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "etat",
+     "enonce": "Lequel de ces corps est {valeurPhrase} à température ambiante (environ 20 °C) ?",
+     "explication": "À 20 °C, {cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "etat",
+     "valeurs": [
+      "solide",
+      "liquide",
+      "gazeux"
+     ],
+     "enonce": "À température ambiante (environ 20 °C), dans quel état se trouve chaque corps ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "etat",
+     "enonce": "Quel est l'intrus ? (pense à l'état à température ambiante)",
+     "explication": "À 20 °C, {groupe} sont {valeurPhrase}. {Cle} est {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-changements-etat",
+   "generateur": "sciences",
+   "base": "etats",
+   "domaine": "sc.matiere",
+   "fiche": "sc-etats",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "changement",
+     "enonce": "« {cle} » Quel changement d'état se produit ?",
+     "explication": "{info_c}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "changement",
+     "enonce": "Dans quelle situation se produit {valeur} ?",
+     "explication": "{info_c}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "passage",
+     "difficulte": 1,
+     "enonce": "Comment appelle-t-on {cle} ?",
+     "explication": "On l'appelle {valeur}. Fusion : solide → liquide ; solidification : liquide → solide ; vaporisation : liquide → gaz ; condensation : gaz → liquide."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "passage",
+     "saisie": true,
+     "difficulte": 3,
+     "enonce": "Écris le nom du changement d'état : {cle}.",
+     "explication": "On l'appelle {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "changement",
+     "n": 3,
+     "enonce": "Relie chaque situation au changement d'état qui se produit.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-cycle-eau",
+   "generateur": "sciences",
+   "base": "cycle_eau",
+   "domaine": "sc.matiere",
+   "fiche": "sc-cycle-eau",
+   "difficulte": 2,
+   "suites": {
+    "eau": {
+     "circulaire": true,
+     "enonceOrdre": "Remets dans l'ordre les étapes du cycle de l'eau, en commençant par : « {debut} ».",
+     "enonceApres": "Dans le cycle de l'eau, que se passe-t-il juste après cette étape : « {cle} » ?",
+     "enonceAvant": "Dans le cycle de l'eau, que se passe-t-il juste avant cette étape : « {cle} » ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "suite_ordre",
+     "suite": "eau",
+     "n": 4
+    },
+    {
+     "sorte": "suite_apres",
+     "suite": "eau"
+    },
+    {
+     "sorte": "suite_apres",
+     "suite": "eau",
+     "sens": "avant"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-melanges",
+   "generateur": "sciences",
+   "base": "melanges",
+   "domaine": "sc.matiere",
+   "fiche": "sc-melanges",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "melange",
+     "enonce": "Ce mélange est-il homogène ou hétérogène : {cle} ?",
+     "explication": "C'est un mélange {valeur}. Homogène : on ne distingue pas les constituants ; hétérogène : on les distingue. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "melange",
+     "valeurs": [
+      "homogène",
+      "hétérogène"
+     ],
+     "enonce": "Mélange homogène ou hétérogène ?",
+     "explication": "{liste}. Homogène : on ne distingue plus les constituants à l'œil nu."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "soluble",
+     "difficulte": 1,
+     "enonce": "Dans l'eau, est-ce soluble ou insoluble : {cle} ?",
+     "explication": "{Cle} : {valeur} dans l'eau. Soluble : se dissout et on ne le voit plus ; insoluble : on le voit toujours."
+    },
+    {
+     "sorte": "grille",
+     "champ": "soluble",
+     "valeurs": [
+      "soluble",
+      "insoluble"
+     ],
+     "enonce": "Soluble ou insoluble dans l'eau ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "separation",
+     "enonce": "Quelle technique est la mieux adaptée pour séparer ce mélange : {cle} ?",
+     "explication": "Pour séparer {cle}, on utilise {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "separation",
+     "enonce": "Quel mélange sépare-t-on habituellement par {valeur} ?",
+     "explication": "{Cle} : on utilise {valeur}."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-materiaux",
+   "generateur": "sciences",
+   "base": "materiaux",
+   "domaine": "sc.matiere",
+   "fiche": "sc-materiaux",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "elec",
+     "enonce": "Pour l'électricité, est-ce un conducteur ou un isolant : {cle} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info} Les métaux conduisent l'électricité."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "elec",
+     "enonce": "Lequel de ces matériaux est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "elec",
+     "valeurs": [
+      "conducteur",
+      "isolant"
+     ],
+     "enonce": "Conducteur ou isolant électrique ?",
+     "explication": "{liste}. Les métaux conduisent le courant ; le plastique, le bois sec, le verre et le caoutchouc sont isolants."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "therm",
+     "enonce": "Pour la chaleur, est-ce un bon conducteur ou un isolant : {cle} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "therm",
+     "enonce": "Lequel de ces matériaux est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "magn",
+     "fiche": "sc-aimants",
+     "enonce": "Ce matériau est-il attiré par un aimant : {cle} ?",
+     "explication": "{Cle} → {valeur}. Un aimant attire le fer, l'acier et le nickel, pas les autres métaux courants."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "magn",
+     "fiche": "sc-aimants",
+     "cibles": [
+      "attiré par un aimant"
+     ],
+     "enonce": "Lequel de ces matériaux est attiré par un aimant ?",
+     "explication": "{Cle} est attiré par un aimant. Un aimant attire le fer, l'acier et le nickel."
+    },
+    {
+     "sorte": "grille",
+     "champ": "magn",
+     "fiche": "sc-aimants",
+     "valeurs": [
+      "attiré par un aimant",
+      "pas attiré par un aimant"
+     ],
+     "enonce": "Attiré par un aimant ou non ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "origine",
+     "difficulte": 1,
+     "enonce": "Est-ce un matériau naturel ou fabriqué par l'être humain : {cle} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-objets-proprietes",
+   "generateur": "sciences",
+   "base": "objets",
+   "domaine": "sc.matiere",
+   "fiche": "sc-materiaux",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "flottaison",
+     "enonce": "Dans une bassine d'eau, cet objet flotte-t-il ou coule-t-il : {cle} ?",
+     "explication": "{Cle} {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "flottaison",
+     "enonce": "Lequel de ces objets {valeur} dans l'eau ?",
+     "explication": "{Cle} {valeur} dans l'eau ; les autres non."
+    },
+    {
+     "sorte": "grille",
+     "champ": "flottaison",
+     "valeurs": [
+      "flotte",
+      "coule"
+     ],
+     "enonce": "Dans l'eau, flotte ou coule ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "transparence",
+     "difficulte": 2,
+     "enonce": "Face à la lumière, comment est cet objet : {cle} ?",
+     "explication": "{Cle} : {valeur}. Transparent : on voit nettement à travers ; translucide : la lumière passe, mais on ne voit pas nettement ; opaque : la lumière ne passe pas."
+    },
+    {
+     "sorte": "grille",
+     "champ": "transparence",
+     "difficulte": 2,
+     "valeurs": [
+      "transparent",
+      "translucide",
+      "opaque"
+     ],
+     "enonce": "Transparent, translucide ou opaque ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "transparence",
+     "difficulte": 2,
+     "enonce": "Lequel de ces objets est {valeur} ?",
+     "explication": "{Cle} : {valeur}. Transparent : on voit nettement à travers ; translucide : la lumière passe, mais on ne voit pas nettement ; opaque : la lumière ne passe pas."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-dechets",
+   "generateur": "sciences",
+   "base": "dechets",
+   "domaine": "sc.matiere",
+   "fiche": "sc-dechets",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "poubelle",
+     "enonce": "Où faut-il jeter ce déchet : {cle} ?",
+     "explication": "{Cle} → {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "poubelle",
+     "cibles": [
+      "le sac PMC",
+      "les papiers-cartons",
+      "la bulle à verre",
+      "les déchets organiques (compost)"
+     ],
+     "enonce": "Lequel de ces déchets va dans {valeur} ?",
+     "explication": "{Cle} va dans {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "poubelle",
+     "valeurs": [
+      "le sac PMC",
+      "les papiers-cartons",
+      "la bulle à verre",
+      "les déchets organiques (compost)"
+     ],
+     "enonce": "Trie ces déchets.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-air",
+   "generateur": "sciences",
+   "base": "air",
+   "domaine": "sc.matiere",
+   "fiche": "sc-air",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "calcul",
+     "champ": "volume",
+     "n": 1,
+     "enonce": "Un récipient fermé contient {a.volume} litres d'air. Sachant que l'air contient environ 21 % de dioxygène, combien de litres de dioxygène ce récipient contient-il environ ?",
+     "reponse": "a_volume * 21 / 100",
+     "unite": "litres",
+     "explication": "21 % de {a.volume} litres = {a.volume} × 21 ÷ 100 = {=a_volume * 21 / 100} litres.",
+     "difficulte": 3
+    },
+    {
+     "sorte": "calcul",
+     "champ": "volume",
+     "n": 1,
+     "enonce": "Une cuve contient {a.volume} litres d'air. Sachant que l'air contient environ 78 % de diazote, combien de litres de diazote la cuve contient-elle environ ?",
+     "reponse": "a_volume * 78 / 100",
+     "unite": "litres",
+     "explication": "78 % de {a.volume} litres = {a.volume} × 78 ÷ 100 = {=a_volume * 78 / 100} litres.",
+     "difficulte": 3
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-combustion",
+   "generateur": "sciences",
+   "base": "combustion",
+   "domaine": "sc.matiere",
+   "fiche": "sc-combustion",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "supprime",
+     "enonce": "« {cle} » Quel élément du triangle du feu supprime-t-on ainsi ?",
+     "explication": "On supprime {valeur}. {info_e}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "supprime",
+     "enonce": "Quelle action éteint le feu en supprimant {valeur} ?",
+     "explication": "{info_e}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "triangle",
+     "difficulte": 1,
+     "enonce": "Dans le triangle du feu, que représente {cle} ?",
+     "explication": "{Cle} : {valeur}. Pour qu'il y ait un feu, il faut un combustible, un comburant (le dioxygène) et de la chaleur."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "combustible",
+     "cibles": [
+      "oui"
+     ],
+     "difficulte": 1,
+     "enonce": "Lequel de ces matériaux peut brûler (est un combustible) ?",
+     "explication": "{Cle} peut brûler : c'est un combustible."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "combustible",
+     "cibles": [
+      "non"
+     ],
+     "difficulte": 1,
+     "enonce": "Lequel de ces matériaux ne brûle pas ?",
+     "explication": "{Cle} ne brûle pas : ce n'est pas un combustible."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-phenomenes",
+   "generateur": "sciences",
+   "base": "phenomenes",
+   "domaine": "sc.matiere",
+   "fiche": "sc-phenomenes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "enonce": "« {Cle} » : est-ce un phénomène physique ou chimique ?",
+     "explication": "C'est {valeurPhrase} : {pourquoi}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "type",
+     "enonce": "Lequel de ces exemples est {valeurPhrase} ?",
+     "explication": "{Cle} : {valeurPhrase}, car {pourquoi}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "type",
+     "enonce": "Quel est l'intrus ? (physique ou chimique ?)",
+     "explication": "{groupe} : {valeurPluriel}. {Cle} : {valeurIntrusPhrase}, car {pourquoi}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "type",
+     "valeurs": [
+      "physique",
+      "chimique"
+     ],
+     "enonce": "Phénomène physique ou chimique ?",
+     "explication": "{liste}. Chimique : une nouvelle matière apparaît. Physique : la matière reste la même."
+    }
+   ]
+  },
+  {
+   "id": "sc-f-sources-energie",
+   "generateur": "sciences",
+   "base": "sources_energie",
+   "domaine": "sc.energie",
+   "fiche": "sc-energie",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "source",
+     "enonce": "Est-ce une ressource d'énergie renouvelable ou non renouvelable : {cle} ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "source",
+     "enonce": "Laquelle de ces ressources d'énergie est {valeur} ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "source",
+     "enonce": "Quel est l'intrus parmi ces ressources d'énergie ?",
+     "explication": "{groupe} : ressources {valeurPluriel}. {Cle} : {valeurIntrus}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "source",
+     "valeurs": [
+      "renouvelable",
+      "non renouvelable"
+     ],
+     "enonce": "Ressource d'énergie renouvelable ou non renouvelable ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-transformations-energie",
+   "generateur": "sciences",
+   "base": "transformations",
+   "domaine": "sc.energie",
+   "fiche": "sc-transformations",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "recue",
+     "enonce": "Quelle forme d'énergie est reçue par {cle} pour fonctionner ?",
+     "explication": "{info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "produite",
+     "enonce": "Quelle forme d'énergie utile est surtout produite par {cle} ?",
+     "explication": "{info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "utile",
+     "filtre": {
+      "recue": "Énergie électrique"
+     },
+     "cibles": [
+      "Énergie lumineuse",
+      "Énergie thermique (chaleur)",
+      "Énergie mécanique (mouvement)",
+      "Énergie sonore"
+     ],
+     "enonce": "Lequel de ces appareils électriques sert surtout à produire {valeurPhrase} ?",
+     "explication": "{info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "recue",
+     "cibles": [
+      "Énergie lumineuse",
+      "Énergie mécanique (mouvement)",
+      "Énergie chimique"
+     ],
+     "difficulte": 3,
+     "enonce": "Lequel de ces exemples fonctionne grâce à {valeurPhrase} ?",
+     "explication": "{info}"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-circuit",
+   "generateur": "sciences",
+   "base": "circuit",
+   "domaine": "sc.energie",
+   "fiche": "sc-electricite",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "circuit"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "electrique",
+     "cibles": [
+      "conducteur"
+     ],
+     "difficulte": 1,
+     "enonce": "Tu veux fermer un circuit pour allumer une ampoule. Lequel de ces objets laisse passer le courant ?",
+     "explication": "{Cle} laisse passer le courant : {pourquoi}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "electrique",
+     "cibles": [
+      "isolant"
+     ],
+     "difficulte": 1,
+     "enonce": "Lequel de ces objets ne laisse PAS passer le courant électrique ?",
+     "explication": "{Cle} ne laisse pas passer le courant : {pourquoi}."
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-lumiere-son",
+   "generateur": "sciences",
+   "base": "lumiere",
+   "domaine": "sc.energie",
+   "fiche": "sc-lumiere-son",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "lumiere",
+     "difficulte": 1,
+     "enonce": "Est-ce une source de lumière ou un objet éclairé : {cle} ?",
+     "explication": "{Cle} : {valeur}. {info} Une source de lumière produit sa propre lumière ; un objet éclairé renvoie la lumière qu'il reçoit."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "lumiere",
+     "enonce": "Lequel est {valeur} ?",
+     "explication": "{Cle} : {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "lumiere",
+     "valeurs": [
+      "une source de lumière",
+      "un objet éclairé"
+     ],
+     "enonce": "Source de lumière ou objet éclairé ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-systeme-solaire",
+   "generateur": "sciences",
+   "base": "systeme_solaire",
+   "domaine": "sc.energie",
+   "fiche": "sc-systeme-solaire",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "ordre",
+     "champ": "rang",
+     "n": 4,
+     "enonce": "Range ces planètes de la plus proche à la plus éloignée du Soleil.",
+     "explication": "Ordre complet : Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+    },
+    {
+     "sorte": "extreme",
+     "champ": "taille",
+     "sens": "max",
+     "enonce": "Laquelle de ces planètes est la plus grande ?",
+     "explication": "Diamètres : {liste}. {Cle} est la plus grande des trois.",
+     "valeurAffichee": "{diametre} km"
+    },
+    {
+     "sorte": "extreme",
+     "champ": "rang",
+     "sens": "min",
+     "enonce": "Laquelle de ces planètes est la plus proche du Soleil ?",
+     "explication": "{Cle} est la plus proche du Soleil des trois. Ordre : Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "enonce": "Quel type de planète est {cle} ?",
+     "explication": "{Cle} est une planète {valeur}. Les 4 premières sont rocheuses (telluriques), les 4 dernières sont des géantes gazeuses."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "type",
+     "enonce": "Quel est l'intrus parmi ces planètes ?",
+     "explication": "{groupe} sont {valeurPluriel}. {Cle} est une planète {valeurIntrus}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "astre",
+     "difficulte": 1,
+     "enonce": "Qu'est-ce que {cle} ?",
+     "explication": "{Cle} est {valeur}. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-terre-soleil-lune",
+   "generateur": "sciences",
+   "base": "terre",
+   "domaine": "sc.energie",
+   "fiche": "sc-terre-mouvements",
+   "difficulte": 2,
+   "suites": {
+    "lune": {
+     "circulaire": true,
+     "enonceOrdre": "Remets dans l'ordre les phases de la Lune, en commençant par : « {debut} ».",
+     "enonceApres": "Quelle phase de la Lune vient juste après {cle} ?",
+     "enonceAvant": "Quelle phase de la Lune vient juste avant {cle} ?"
+    }
+   },
+   "formes": [
+    {
+     "sorte": "suite_ordre",
+     "suite": "lune",
+     "n": 4,
+     "difficulte": 3
+    },
+    {
+     "sorte": "suite_apres",
+     "suite": "lune"
+    },
+    {
+     "sorte": "soleil"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
+    },
+    {
+     "sorte": "affirmation"
+    },
+    {
+     "sorte": "affirmation_choix"
+    },
+    {
+     "sorte": "affirmation_grille"
+    }
+   ]
+  }
+ ]
+}

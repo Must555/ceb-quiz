@@ -69,6 +69,7 @@ export function genererVariante(modele, rng, exclure = new Set()) {
     if (!gen) throw new Error(`Générateur inconnu : ${modele.generateur}`);
     for (let i = 0; i < MAX_ESSAIS; i++) {
       const q = gen(modele, rng);
+      if (!q) continue;
       q.id = `${modele.id}#${q._signature}`;
       delete q._signature;
       if (!exclure.has(q.id)) return finaliser(q, modele);
@@ -134,10 +135,10 @@ function finaliser(q, modele) {
     ...q,
     source: 'modele',
     modeleId: modele.id,
-    fiche: modele.fiche ?? q.fiche,
+    fiche: q.fiche ?? modele.fiche,
     matiere: modele.matiere,
-    domaine: modele.domaine,
-    difficulte: modele.difficulte ?? 2,
+    domaine: q.domaine ?? modele.domaine,
+    difficulte: q.difficulte ?? modele.difficulte ?? 2,
     referentiels: modele.referentiels ?? ['socles', 'tronc_commun'],
     numerisable: true,
   };

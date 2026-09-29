@@ -1,0 +1,330 @@
+{
+ "fiches": [
+  {
+   "id": "ma-numeration",
+   "matiere": "ma",
+   "e": "🔢",
+   "titre": "Lire, écrire et décomposer les nombres",
+   "regle": [
+    "On lit un grand nombre par classes de 3 chiffres : les millions, les mille, puis les unités.",
+    "Chaque chiffre a une valeur selon son rang : unités, dizaines, centaines, unités de mille… et après la virgule : dixièmes, centièmes, millièmes.",
+    "Un rang vide s'écrit avec un 0 : trois-mille-cinq = 3 005.",
+    "En Belgique : septante (70), quatre-vingts (80), nonante (90)."
+   ],
+   "exemple": "45 873,26 : 8 est le chiffre des centaines, 2 celui des dixièmes, 6 celui des centièmes. Il y a 458 centaines en tout.",
+   "astuce": "Pour « combien de centaines en tout », prends tous les chiffres jusqu'à celui des centaines."
+  },
+  {
+   "id": "ma-arrondir",
+   "matiere": "ma",
+   "e": "🎯",
+   "titre": "Arrondir un nombre",
+   "regle": [
+    "Pour arrondir, on regarde le chiffre juste à droite du rang demandé.",
+    "S'il vaut 0, 1, 2, 3 ou 4 : on arrondit en dessous (on garde le chiffre).",
+    "S'il vaut 5, 6, 7, 8 ou 9 : on arrondit au-dessus (on ajoute 1 au chiffre)."
+   ],
+   "exemple": "4 587 arrondi à la centaine : le chiffre des dizaines est 8, donc 4 600. 3,14 arrondi au dixième : 3,1.",
+   "astuce": "Attention aux 9 : 3,97 arrondi au dixième donne 4."
+  },
+  {
+   "id": "ma-droite-graduee",
+   "matiere": "ma",
+   "e": "📏",
+   "titre": "La droite graduée",
+   "regle": [
+    "Sur une droite graduée, tous les petits intervalles ont la même valeur.",
+    "Valeur d'un intervalle = écart entre deux repères connus : nombre d'intervalles.",
+    "Vers la droite, les nombres augmentent ; vers la gauche, ils diminuent."
+   ],
+   "exemple": "Entre 100 et 200, il y a 4 intervalles : chacun vaut 100 : 4 = 25. La 3e graduation après 100 est 175.",
+   "astuce": "Compte les intervalles (les espaces), pas les traits !"
+  },
+  {
+   "id": "ma-suites",
+   "matiere": "ma",
+   "e": "🔁",
+   "titre": "Les suites de nombres",
+   "regle": [
+    "Une suite suit une règle qui se répète : ajouter, enlever, multiplier ou diviser par le même nombre.",
+    "Pour trouver la règle, compare deux nombres voisins, puis vérifie avec les suivants.",
+    "Pour un trou au milieu, applique la règle à partir du nombre juste avant."
+   ],
+   "exemple": "50 ; 100 ; 200 ; 400 : on multiplie par 2 à chaque fois. 1,57 ; 1,27 ; 0,97 : on enlève 0,3.",
+   "astuce": "Si les écarts ne sont pas égaux, essaie la multiplication."
+  },
+  {
+   "id": "ma-fractions-comparer",
+   "matiere": "ma",
+   "e": "⚖️",
+   "titre": "Comparer des fractions",
+   "regle": [
+    "Même dénominateur : la plus grande fraction a le plus grand numérateur (5/8 > 3/8).",
+    "Même numérateur : la plus grande fraction a le plus petit dénominateur (2/3 > 2/5), car les parts sont plus grandes.",
+    "Sinon, on met les fractions sur le même dénominateur (3/4 = 6/8, donc 3/4 > 5/8)."
+   ],
+   "exemple": "Comparer 2/3 et 3/4 : 2/3 = 8/12 et 3/4 = 9/12, donc 2/3 < 3/4.",
+   "astuce": "Compare aussi à 1/2 : une fraction est plus grande que 1/2 si son numérateur dépasse la moitié du dénominateur."
+  },
+  {
+   "id": "ma-fraction-decimal-pourcent",
+   "matiere": "ma",
+   "e": "🔄",
+   "titre": "Fraction, nombre décimal et pourcentage",
+   "regle": [
+    "Un même nombre peut s'écrire de 3 façons : 3/4 = 0,75 = 75 %.",
+    "Fraction → décimal : on cherche une fraction égale sur 10, 100 ou 1 000 (3/4 = 75/100 = 0,75).",
+    "Pourcentage = fraction sur 100 : 35 % = 35/100 = 0,35."
+   ],
+   "exemple": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 1/5 = 0,2 = 20 % ; 1/10 = 0,1 = 10 %.",
+   "astuce": "Pour passer d'un décimal à un pourcentage, multiplie par 100 : 0,07 = 7 %."
+  },
+  {
+   "id": "ma-fractions-addition",
+   "matiere": "ma",
+   "e": "➕",
+   "titre": "Additionner des fractions",
+   "regle": [
+    "Avec le même dénominateur, on additionne (ou on soustrait) les numérateurs et on garde le dénominateur.",
+    "On n'additionne jamais les dénominateurs : 2/7 + 3/7 = 5/7 (et pas 5/14).",
+    "Le tout vaut 1 : 1 = 8/8 = 5/5…"
+   ],
+   "exemple": "2/8 + 3/8 = 5/8. Il reste 8/8 − 5/8 = 3/8.",
+   "astuce": "Pense aux parts d'une pizza : 2 parts + 3 parts = 5 parts de même taille."
+  },
+  {
+   "id": "ma-operations",
+   "matiere": "ma",
+   "e": "🧮",
+   "titre": "Les quatre opérations",
+   "regle": [
+    "Addition et soustraction de décimaux : on aligne les virgules et on complète avec des 0 si besoin.",
+    "Multiplication d'un décimal : on calcule sans virgule, puis on remet autant de chiffres après la virgule qu'il y en avait au départ.",
+    "Pour trouver un terme manquant, on utilise l'opération inverse : … + 25 = 80 → 80 − 25 = 55 ; … × 6 = 42 → 42 : 6 = 7.",
+    "On vérifie une soustraction avec une addition et une division avec une multiplication."
+   ],
+   "exemple": "12,4 − 3,75 = 12,40 − 3,75 = 8,65. Vérification : 8,65 + 3,75 = 12,4.",
+   "astuce": "Avant de calculer, estime le résultat : cela évite les grosses erreurs de virgule."
+  },
+  {
+   "id": "ma-calcul-mental",
+   "matiere": "ma",
+   "e": "🧠",
+   "titre": "Calcul mental et calcul réfléchi",
+   "regle": [
+    "× 10, × 100, × 1 000 : chaque chiffre prend une valeur 10, 100, 1 000 fois plus grande (la virgule se déplace vers la droite).",
+    "× 0,1 = : 10 ; × 0,5 = : 2 ; : 0,5 = × 2 ; : 0,25 = × 4.",
+    "× 5 = × 10 : 2 ; × 25 = × 100 : 4 ; × 9 = × 10 − le nombre ; × 99 = × 100 − le nombre.",
+    "Si un facteur est multiplié par 10 et l'autre divisé par 10, le produit ne change pas."
+   ],
+   "exemple": "36 × 25 = 3 600 : 4 = 900. Sachant que 25 × 15 = 375, alors 2,5 × 15 = 37,5.",
+   "astuce": "Dans une somme, si tu ajoutes 2 à un terme, enlève 2 à l'autre : 376 + 18 = 374 + 20."
+  },
+  {
+   "id": "ma-estimation",
+   "matiere": "ma",
+   "e": "🔭",
+   "titre": "Estimer un résultat",
+   "regle": [
+    "Pour estimer, on arrondit les nombres pour calculer facilement de tête.",
+    "L'estimation donne l'ordre de grandeur : dizaines, centaines, milliers… ?",
+    "Elle permet de vérifier la place de la virgule dans un résultat."
+   ],
+   "exemple": "152 × 49 ≈ 150 × 50 = 7 500. 48,7 × 3,1 ≈ 50 × 3 = 150, donc le résultat est 150,97 et pas 15,097.",
+   "astuce": "Choisis des nombres « ronds » qui vont bien ensemble."
+  },
+  {
+   "id": "ma-priorites",
+   "matiere": "ma",
+   "e": "🥇",
+   "titre": "Les priorités et les parenthèses",
+   "regle": [
+    "On calcule d'abord ce qui est entre parenthèses.",
+    "Sans parenthèses : d'abord les multiplications et les divisions, ensuite les additions et les soustractions.",
+    "Avec seulement des + et des −, on calcule de gauche à droite."
+   ],
+   "exemple": "4 + 5 × 3 = 4 + 15 = 19, mais (4 + 5) × 3 = 9 × 3 = 27.",
+   "astuce": "Souligne d'abord le calcul prioritaire, puis réécris le calcul pas à pas."
+  },
+  {
+   "id": "ma-multiples-diviseurs",
+   "matiere": "ma",
+   "e": "🔗",
+   "titre": "Multiples, diviseurs et nombres premiers",
+   "regle": [
+    "Un multiple de 6 est dans la table de 6 : 6, 12, 18, 24…",
+    "Un diviseur de 24 divise 24 sans reste : 1, 2, 3, 4, 6, 8, 12, 24.",
+    "Un nombre premier a exactement 2 diviseurs : 1 et lui-même (2, 3, 5, 7, 11, 13…). 1 n'est pas premier.",
+    "Plus petit multiple commun (PPCM) : quand deux choses se répètent et se retrouvent. Plus grand diviseur commun (PGCD) : pour faire des groupes identiques sans reste."
+   ],
+   "exemple": "Multiples de 6 : 6, 12, 18, 24 ; multiples de 8 : 8, 16, 24. Le plus petit multiple commun est 24.",
+   "astuce": "Beaucoup de nombres impairs ne sont pas premiers : 9, 15, 21, 27, 49, 51, 91…"
+  },
+  {
+   "id": "ma-divisibilite",
+   "matiere": "ma",
+   "e": "✂️",
+   "titre": "Les caractères de divisibilité",
+   "regle": [
+    "Par 2 : le chiffre des unités est pair. Par 5 : il se termine par 0 ou 5. Par 10 : il se termine par 0.",
+    "Par 3 : la somme des chiffres est divisible par 3. Par 9 : la somme des chiffres est divisible par 9.",
+    "Par 4 : les deux derniers chiffres forment un nombre divisible par 4. Par 25 : il se termine par 00, 25, 50 ou 75."
+   ],
+   "exemple": "4 518 : 4 + 5 + 1 + 8 = 18. 18 est divisible par 9, donc 4 518 est divisible par 9 (et par 3).",
+   "astuce": "Un nombre divisible par 9 est toujours divisible par 3."
+  },
+  {
+   "id": "ma-ordres-grandeur",
+   "matiere": "ma",
+   "e": "🐘",
+   "titre": "Ordres de grandeur des mesures",
+   "regle": [
+    "Masse : une pomme ≈ 150 g, un élève ≈ 40 kg, une voiture ≈ 1 200 kg, un éléphant ≈ 5 t.",
+    "Longueur : une fourmi ≈ 7 mm, un crayon ≈ 18 cm, une porte ≈ 2 m, Bruxelles–Liège ≈ 100 km.",
+    "Capacité : une cuillère à café ≈ 5 ml, une canette = 33 cl, un seau ≈ 10 l.",
+    "Durée : une récréation ≈ 15 min, un match de football = 90 min, une nuit ≈ 10 h."
+   ],
+   "exemple": "La masse d'un smartphone est d'environ 180 g (pas 180 kg, ni 180 mg).",
+   "astuce": "Compare avec un objet que tu connais bien : c'est plus lourd ou plus léger qu'une pomme ?"
+  },
+  {
+   "id": "ma-unites-aire-volume",
+   "matiere": "ma",
+   "e": "🧊",
+   "titre": "Unités d'aire et de volume",
+   "regle": [
+    "Aires : 1 m² = 100 dm² = 10 000 cm². On avance de 2 chiffres par unité.",
+    "Unités agraires : 1 a = 100 m² ; 1 ha = 100 a = 10 000 m² ; 1 km² = 100 ha.",
+    "Volumes : 1 m³ = 1 000 dm³ ; 1 dm³ = 1 000 cm³. On avance de 3 chiffres par unité.",
+    "Le lien avec les capacités : 1 dm³ = 1 l et 1 cm³ = 1 ml."
+   ],
+   "exemple": "Un aquarium de 50 cm × 30 cm × 40 cm : 60 000 cm³ = 60 dm³ = 60 litres.",
+   "astuce": "1 are, c'est l'aire d'un carré de 10 m sur 10 m : 100 m². 1 hectare, c'est un carré de 100 m sur 100 m : 10 000 m²."
+  },
+  {
+   "id": "ma-cercle",
+   "matiere": "ma",
+   "e": "⭕",
+   "titre": "Le cercle et le disque",
+   "regle": [
+    "Le rayon relie le centre à un point du cercle. Le diamètre traverse le cercle en passant par le centre.",
+    "Diamètre = 2 × rayon.",
+    "Circonférence (le tour) = diamètre × 3,14.",
+    "Aire du disque = rayon × rayon × 3,14."
+   ],
+   "exemple": "Une roue de 60 cm de diamètre : circonférence = 60 × 3,14 = 188,4 cm.",
+   "astuce": "3,14 est une valeur approchée du nombre π (pi)."
+  },
+  {
+   "id": "ma-calendrier",
+   "matiere": "ma",
+   "e": "📅",
+   "titre": "Le calendrier",
+   "regle": [
+    "1 an = 12 mois = 365 jours (366 jours pour une année bissextile, avec un 29 février).",
+    "Mois de 31 jours : janvier, mars, mai, juillet, août, octobre, décembre. Mois de 30 jours : avril, juin, septembre, novembre. Février : 28 ou 29 jours.",
+    "1 semaine = 7 jours ; 1 jour = 24 h ; 1 siècle = 100 ans.",
+    "Les années bissextiles sont en général divisibles par 4 (2024, 2028…)."
+   ],
+   "exemple": "Le 3 mai est un mardi. 14 jours plus tard (2 semaines), le 17 mai est aussi un mardi.",
+   "astuce": "Compte les jours sur les bosses de tes poings : une bosse = 31 jours, un creux = 30 jours (ou février)."
+  },
+  {
+   "id": "ma-temperatures",
+   "matiere": "ma",
+   "e": "🌡️",
+   "titre": "Les températures",
+   "regle": [
+    "Sous 0 °C, on écrit les températures avec le signe − : −5 °C se lit « moins cinq degrés ».",
+    "Plus le nombre après le signe − est grand, plus il fait froid : −12 °C < −3 °C < 0 °C < 4 °C.",
+    "Pour calculer un écart qui traverse 0, on passe par 0 : de −4 °C à 7 °C, il y a 4 + 7 = 11 degrés."
+   ],
+   "exemple": "Il fait 3 °C et la température baisse de 8 degrés : 3 − 8 = −5 °C.",
+   "astuce": "Imagine un thermomètre : monter = aller vers le haut, baisser = aller vers le bas."
+  },
+  {
+   "id": "ma-problemes",
+   "matiere": "ma",
+   "e": "🧩",
+   "titre": "Résoudre un problème",
+   "regle": [
+    "Lis tout l'énoncé et repère la question.",
+    "Cherche les données utiles (attention : certaines ne servent à rien).",
+    "Découpe le problème en étapes : chaque étape répond à une petite question.",
+    "Écris chaque calcul avec son résultat et son unité, puis vérifie que la réponse est vraisemblable."
+   ],
+   "exemple": "3 cahiers à 2,40 € et une trousse à 6 € payés avec 20 € : 3 × 2,40 = 7,20 € ; 7,20 + 6 = 13,20 € ; 20 − 13,20 = 6,80 €.",
+   "astuce": "Demande-toi à chaque fois : faut-il réunir, enlever, répéter ou partager ?"
+  },
+  {
+   "id": "ma-solides",
+   "matiere": "ma",
+   "e": "🧊",
+   "titre": "Les solides",
+   "regle": [
+    "Un polyèdre n'a que des faces planes (cube, pavé, prismes, pyramides). Le cylindre, le cône et la sphère ont une surface courbe : ce ne sont pas des polyèdres.",
+    "Face = surface plane ; arête = segment où deux faces se rejoignent ; sommet = point où plusieurs arêtes se rejoignent.",
+    "Cube et pavé droit : 6 faces, 12 arêtes, 8 sommets.",
+    "Pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets. Prisme à base triangulaire : 5 faces, 9 arêtes, 6 sommets."
+   ],
+   "exemple": "Un prisme dont la base a n côtés a n + 2 faces, 3 × n arêtes et 2 × n sommets.",
+   "astuce": "Une pyramide dont la base a n côtés a n + 1 faces, 2 × n arêtes et n + 1 sommets."
+  },
+  {
+   "id": "ma-symetrie",
+   "matiere": "ma",
+   "e": "🦋",
+   "titre": "Les axes de symétrie",
+   "regle": [
+    "Un axe de symétrie partage une figure en deux parties qui se superposent exactement quand on plie.",
+    "Carré : 4 axes. Rectangle et losange : 2 axes. Triangle équilatéral : 3 axes. Triangle isocèle : 1 axe. Parallélogramme quelconque : aucun axe.",
+    "Un polygone régulier a autant d'axes que de côtés (hexagone régulier : 6 axes).",
+    "Les diagonales d'un rectangle ne sont pas des axes de symétrie !"
+   ],
+   "exemple": "La lettre H a 2 axes (vertical et horizontal), la lettre A en a 1, la lettre S n'en a aucun.",
+   "astuce": "Pour vérifier, imagine que tu plies la figure le long de la droite."
+  },
+  {
+   "id": "ma-triangles",
+   "matiere": "ma",
+   "e": "🔺",
+   "titre": "Les triangles",
+   "regle": [
+    "Selon les côtés : équilatéral (3 côtés égaux), isocèle (au moins 2 côtés égaux), scalène (3 côtés différents). Un triangle équilatéral est donc aussi isocèle, mais on le nomme par son nom le plus précis.",
+    "Selon les angles : un triangle rectangle a un angle droit.",
+    "La somme des 3 angles d'un triangle vaut toujours 180°. Dans un triangle équilatéral, chaque angle mesure 60°.",
+    "Dans un triangle isocèle, les deux angles à la base sont égaux."
+   ],
+   "exemple": "Deux angles mesurent 50° et 70° : le troisième mesure 180 − 50 − 70 = 60°.",
+   "astuce": "Un triangle ne peut avoir qu'un seul angle droit ou obtus."
+  },
+  {
+   "id": "ma-angles",
+   "matiere": "ma",
+   "e": "📐",
+   "titre": "Les angles",
+   "regle": [
+    "Angle aigu : moins de 90°. Angle droit : 90°. Angle obtus : entre 90° et 180°. Angle plat : 180°.",
+    "Un tour complet = 360° ; un demi-tour = 180° ; un quart de tour = 90°.",
+    "La somme des angles d'un quadrilatère vaut 360°.",
+    "Sur une horloge, deux heures voisines sont séparées de 30° (360 : 12)."
+   ],
+   "exemple": "À 3 h, les aiguilles forment un angle droit : 3 × 30 = 90°.",
+   "astuce": "Compare avec le coin d'une feuille (angle droit) : plus fermé = aigu, plus ouvert = obtus."
+  },
+  {
+   "id": "ma-donnees",
+   "matiere": "ma",
+   "e": "📊",
+   "titre": "Lire des données",
+   "regle": [
+    "Dans un tableau ou un diagramme, lis d'abord le titre et les unités.",
+    "Le total : on additionne toutes les valeurs. L'écart : la plus grande moins la plus petite.",
+    "La moyenne : la somme des valeurs divisée par le nombre de valeurs.",
+    "L'effectif : le nombre de fois qu'une valeur apparaît. Pourcentage d'un effectif : effectif sur total, ramené à 100."
+   ],
+   "exemple": "Notes : 12 ; 15 ; 18. Moyenne = (12 + 15 + 18) : 3 = 45 : 3 = 15.",
+   "astuce": "Vérifie que la moyenne est bien entre la plus petite et la plus grande valeur."
+  }
+ ]
+}

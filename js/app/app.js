@@ -36,6 +36,8 @@ async function demarrer() {
   appliquerTheme(store.joueurActif()?.theme ?? 'neon');
   try {
     donnees = await chargerDonnees({ base: 'data/' });
+    // Les vraies questions du CEB rejoignent aussi l'entraînement (avec leurs documents).
+    donnees.banque.push(...await donnees.questionsExamens().catch(() => []));
   } catch (e) {
     document.body.innerHTML = `<p style="padding:24px">Impossible de charger les questions. Vérifie ta connexion et recharge la page.</p>`;
     throw e;
@@ -394,8 +396,8 @@ function questionSuivante() {
   const q = partie.session.suivante();
   if (!q) return terminerPartie(false);
   partie.corrige = false;
-  const docs = (q.documents ?? []).map((id) => partie.examen?.documents?.find((d) => d.id === id)).filter(Boolean);
-  const origine = q.source === 'examen' ? `CEB ${partie.examen.annee}${partie.examen.referentiel === 'tronc_commun' ? ' (tronc commun)' : ''} · livret ${q.livret} · question ${q.numero}` : nomDomaine(q.domaine);
+  const docs = q.docsResolus ?? (q.documents ?? []).map((id) => partie.examen?.documents?.find((d) => d.id === id)).filter(Boolean);
+  const origine = q.source === 'examen' ? `CEB ${q.annee ?? partie.examen?.annee}${q.referentiel === 'tronc_commun' ? ' (tronc commun)' : ''} · livret ${q.livret} · question ${q.numero}` : nomDomaine(q.domaine);
   $('#q-zone').innerHTML = `
     <p class="origine">${esc(origine)}</p>
     <h2>${esc(q.enonce)}</h2>

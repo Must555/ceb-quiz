@@ -1,0 +1,1224 @@
+{
+ "matiere": "hg",
+ "modeles": [
+  {
+   "id": "hg-f-frise-ordre",
+   "generateur": "faits",
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-frise",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "ordre",
+     "champ": "annee",
+     "valeurAffichee": "{date}",
+     "n": 4,
+     "ecartMin": 1,
+     "element": "{Cle} ({date})",
+     "difficulte": 1,
+     "enonce": "Aide-toi des dates : range ces événements dans l'ordre chronologique, du plus ancien au plus récent.",
+     "explication": "Ordre : {liste}. Attention aux dates av. J.-C. : plus le nombre est grand, plus c'est ancien."
+    },
+    {
+     "sorte": "ordre",
+     "champ": "annee",
+     "valeurAffichee": "{date}",
+     "n": 4,
+     "ecartMin": 60,
+     "sens": "decroissant",
+     "element": "{Cle}",
+     "difficulte": 3,
+     "enonce": "Sans les dates, range ces événements du plus récent au plus ancien.",
+     "explication": "Du plus récent au plus ancien : {liste}."
+    },
+    {
+     "sorte": "ordre",
+     "champ": "annee",
+     "valeurAffichee": "{date}",
+     "n": 3,
+     "ecartMin": 150,
+     "difficulte": 3,
+     "enonce": "Sans les dates, range ces événements du plus ancien au plus récent.",
+     "explication": "Ordre : {liste}."
+    },
+    {
+     "sorte": "ordre",
+     "champ": "annee",
+     "valeurAffichee": "{date}",
+     "n": 4,
+     "ecartMin": 60,
+     "filtre": {
+      "belgique": true
+     },
+     "difficulte": 3,
+     "enonce": "Histoire de nos régions : range ces événements du plus ancien au plus récent (sans les dates).",
+     "explication": "Ordre : {liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-evenement-periode",
+   "generateur": "faits",
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-periodes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "periode",
+     "choix": 5,
+     "ordreFixe": true,
+     "difficulte": 1,
+     "enonce": "Dans quelle période conventionnelle situes-tu cet événement : {cle} ({date}) ?",
+     "explication": "{date} se situe {valeurPhrase}. Repères : 3500 av. J.-C., 476, 1492, 1789. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "periode",
+     "choix": 5,
+     "ordreFixe": true,
+     "filtre": {
+      "repere": true
+     },
+     "difficulte": 2,
+     "enonce": "Sans regarder de date : pendant quelle période conventionnelle a eu lieu {cle} ?",
+     "explication": "{Cle} : {date}, donc {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "periode",
+     "difficulte": 2,
+     "enonce": "Lequel de ces événements s'est déroulé {valeurPhrase} ?",
+     "explication": "{Cle} : {date}, donc {valeurPhrase}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "periode",
+     "difficulte": 1,
+     "enonce": "Vrai ou faux ? {Cle} ({date}) a eu lieu {valeurPhrase}.",
+     "explication": "{date} : période « {bonne} »."
+    },
+    {
+     "sorte": "grille",
+     "champ": "periode",
+     "valeurs": [
+      "Antiquité",
+      "Moyen Âge",
+      "Temps modernes",
+      "Époque contemporaine"
+     ],
+     "element": "{Cle} ({date})",
+     "difficulte": 2,
+     "enonce": "Coche la période conventionnelle de chaque événement.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-dates-reperes",
+   "generateur": "faits",
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-dates-cles",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "date",
+     "filtre": {
+      "repere": true
+     },
+     "enonce": "Quelle est la date de cet événement : {cle} ?",
+     "explication": "{valeur} : {cle}. {info}"
+    },
+    {
+     "sorte": "association",
+     "champ": "date",
+     "n": 4,
+     "filtre": {
+      "repere": true
+     },
+     "enonce": "Relie chaque événement à sa date.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "date",
+     "filtre": {
+      "repere": true,
+      "belgique": true
+     },
+     "saisie": true,
+     "difficulte": 3,
+     "enonce": "En quelle année a eu lieu cet événement : {cle} ? (écris l'année)",
+     "explication": "{valeur} : {cle}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-siecles",
+   "generateur": "hg_evenements",
+   "sorte": [
+    "siecle",
+    "siecle_lequel"
+   ],
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-siecles",
+   "difficulte": 2
+  },
+  {
+   "id": "hg-f-avant-apres",
+   "generateur": "hg_evenements",
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-frise",
+   "difficulte": 3,
+   "sorte": [
+    {
+     "sorte": "avant_apres",
+     "ecartMin": 100
+    },
+    {
+     "sorte": "avant_apres",
+     "ecartMin": 40,
+     "belgique": true
+    },
+    {
+     "sorte": "premier",
+     "ecartMin": 150
+    },
+    {
+     "sorte": "premier",
+     "ecartMin": 60,
+     "belgique": true
+    }
+   ]
+  },
+  {
+   "id": "hg-f-duree",
+   "generateur": "hg_evenements",
+   "base": "hg-evenements",
+   "domaine": "hg.histoire",
+   "fiche": "hg-frise",
+   "difficulte": 2,
+   "sorte": [
+    "duree",
+    "duree",
+    {
+     "sorte": "duree_jc",
+     "difficulte": 3
+    }
+   ]
+  },
+  {
+   "id": "hg-f-modes-vie",
+   "generateur": "faits",
+   "base": "hg-modes-vie",
+   "domaine": "hg.histoire",
+   "fiche": "hg-modes-vie",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "periode",
+     "choix": 5,
+     "ordreFixe": true,
+     "enonce": "À quelle période conventionnelle associes-tu {cle} ?",
+     "explication": "{Cle} : période « {valeur} ». {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "periode",
+     "enonce": "Lequel de ces éléments est typique de la vie {valeurPhrase} ?",
+     "explication": "{Cle} : période « {valeur} ». {info}"
+    },
+    {
+     "sorte": "intrus",
+     "champ": "periode",
+     "difficulte": 2,
+     "enonce": "Trois de ces éléments appartiennent à la même période. Lequel est l'intrus ?",
+     "explication": "{groupe} : période « {valeur} ». {Cle} : période « {valeurIntrus} »."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "periode",
+     "enonce": "Vrai ou faux ? {Cle}, c'est typique de la vie {valeurPhrase}.",
+     "explication": "{Cle} : période « {bonne} ». {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "periode",
+     "valeurs": [
+      "Antiquité",
+      "Moyen Âge",
+      "Temps modernes",
+      "Époque contemporaine"
+     ],
+     "difficulte": 2,
+     "enonce": "Coche la période qui correspond à chaque élément.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "periode",
+     "valeurs": [
+      "Préhistoire",
+      "Antiquité",
+      "Moyen Âge",
+      "Époque contemporaine"
+     ],
+     "difficulte": 2,
+     "enonce": "Coche la période qui correspond à chaque élément.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-personnages",
+   "generateur": "faits",
+   "base": "hg-personnages",
+   "domaine": "hg.histoire",
+   "fiche": "hg-personnages",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "periode",
+     "choix": 5,
+     "ordreFixe": true,
+     "enonce": "À quelle période conventionnelle situes-tu {cle}, {role} ?",
+     "explication": "{Cle} ({quand}) : période « {valeur} »."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "periode",
+     "enonce": "Lequel de ces personnages a joué un rôle important {valeurPhrase} ?",
+     "explication": "{Cle}, {role} ({quand}) : période « {valeur} »."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "periode",
+     "difficulte": 3,
+     "enonce": "Trois de ces personnages appartiennent à la même période. Lequel est l'intrus ?",
+     "explication": "{groupe} : période « {valeur} ». {Cle} : période « {valeurIntrus} »."
+    },
+    {
+     "sorte": "grille",
+     "champ": "periode",
+     "valeurs": [
+      "Antiquité",
+      "Moyen Âge",
+      "Temps modernes",
+      "Époque contemporaine"
+     ],
+     "enonce": "Coche la période de chaque personnage.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "role",
+     "enonce": "Qui était {cle} ?",
+     "explication": "{Cle} était {valeur} ({quand})."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "nom",
+     "cle": "role",
+     "enonce": "Qui était {cle} ?",
+     "explication": "{Cle} : c'était {valeur} ({quand})."
+    },
+    {
+     "sorte": "association",
+     "champ": "role",
+     "n": 3,
+     "difficulte": 3,
+     "enonce": "Relie chaque personnage à ce qui l'a rendu célèbre.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-sources",
+   "generateur": "faits",
+   "base": "hg-sources",
+   "domaine": "hg.histoire",
+   "fiche": "hg-sources",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "nature",
+     "choix": 4,
+     "ordreFixe": true,
+     "enonce": "Pour l'historien, {cle}, c'est quelle sorte de source ?",
+     "explication": "C'est {valeurPhrase} : c'est {type}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "nature",
+     "enonce": "Lequel de ces documents est {valeurPhrase} ?",
+     "explication": "{Cle} : {valeurPhrase}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "nature",
+     "difficulte": 3,
+     "enonce": "Trois de ces traces du passé sont de la même nature. Laquelle est l'intrus ?",
+     "explication": "{groupe} : {valeurPluriel}. {Cle} : {valeurIntrusPhrase}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "nature",
+     "valeurs": [
+      "écrite",
+      "iconographique",
+      "matérielle",
+      "orale"
+     ],
+     "enonce": "Quelle est la nature de chaque source ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "epoque",
+     "difficulte": 3,
+     "enonce": "Tu fais un travail sur {sujet}. Ce document a-t-il été produit à cette époque-là ? « {Cle} »",
+     "explication": "Réponse : {valeur}. Une source d'époque (primaire) a été produite par des personnes qui ont vécu les faits ; un document réalisé plus tard reconstitue le passé."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-provinces",
+   "generateur": "faits",
+   "base": "hg-provinces",
+   "domaine": "hg.geographie",
+   "fiche": "hg-provinces",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "chefLieu",
+     "enonce": "Quel est le chef-lieu de {cle} ?",
+     "explication": "Le chef-lieu de {cle} est {valeur}.",
+     "avec": [
+      "chefLieuQ"
+     ]
+    },
+    {
+     "sorte": "attribut",
+     "champ": "chefLieu",
+     "saisie": true,
+     "difficulte": 2,
+     "enonce": "Écris le chef-lieu de {cle}.",
+     "explication": "Le chef-lieu de {cle} est {valeur}.",
+     "avec": [
+      "chefLieuQ"
+     ]
+    },
+    {
+     "sorte": "attribut",
+     "champ": "court",
+     "cle": "chefLieuQ",
+     "avec": [
+      "chefLieuQ"
+     ],
+     "enonce": "{Cle} est le chef-lieu de quelle province ?",
+     "explication": "{Cle} est le chef-lieu de {nom}."
+    },
+    {
+     "sorte": "association",
+     "champ": "chefLieu",
+     "n": 4,
+     "difficulte": 2,
+     "enonce": "Relie chaque province à son chef-lieu.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "region",
+     "valeurs": [
+      "Région flamande",
+      "Région wallonne"
+     ],
+     "enonce": "Dans quelle Région se trouve chaque province ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "voisins",
+     "cibles": [
+      "la France",
+      "les Pays-Bas",
+      "l'Allemagne",
+      "le Grand-Duché de Luxembourg"
+     ],
+     "difficulte": 3,
+     "enonce": "Laquelle de ces provinces a une frontière avec {valeur} ?",
+     "explication": "{Cle} touche {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-villes-provinces",
+   "generateur": "faits",
+   "base": "hg-villes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-provinces",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "provinceQ",
+     "enonce": "Dans quelle province se trouve {cle} ?",
+     "explication": "{Cle} se trouve dans {valeurPhrase} ({region}).",
+     "avec": [
+      "provinceDistincte"
+     ]
+    },
+    {
+     "sorte": "grille",
+     "champ": "region",
+     "valeurs": [
+      "Région flamande",
+      "Région wallonne",
+      "Région de Bruxelles-Capitale"
+     ],
+     "enonce": "Dans quelle Région se trouve chaque ville ou commune ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "region",
+     "difficulte": 1,
+     "enonce": "Laquelle de ces villes se trouve {valeurPhrase} ?",
+     "explication": "{Cle} se trouve {valeurPhrase}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "provinceQ",
+     "enonce": "Vrai ou faux ? {Cle} se trouve dans {valeurPhrase}.",
+     "explication": "{Cle} se trouve dans {bonnePhrase} ({region}).",
+     "avec": [
+      "provinceDistincte"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hg-f-langues-communautes",
+   "generateur": "faits",
+   "base": "hg-villes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-langues",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "langue",
+     "choix": 4,
+     "enonce": "Quelle est la langue officielle à {cle} ?",
+     "explication": "Langue officielle à {cle} ({region}) : {valeur}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "langue",
+     "valeurs": [
+      "le français",
+      "le néerlandais",
+      "l'allemand",
+      "le français et le néerlandais"
+     ],
+     "enonce": "Quelle est la langue officielle de chaque commune ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "langue",
+     "cibles": [
+      "l'allemand",
+      "le néerlandais",
+      "le français"
+     ],
+     "enonce": "Dans laquelle de ces communes la seule langue officielle est {valeur} ?",
+     "explication": "À {cle}, la langue officielle est {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "communaute",
+     "choix": 4,
+     "difficulte": 3,
+     "enonce": "Quelle Communauté s'occupe des écoles à {cle} ?",
+     "explication": "La Communauté dépend de la langue : à {cle}, la langue officielle est {langue}, donc c'est {valeur} qui organise les écoles.",
+     "filtre": {
+      "region": [
+       "Région flamande",
+       "Région wallonne"
+      ]
+     }
+    },
+    {
+     "sorte": "attribut",
+     "champ": "communaute",
+     "choix": 4,
+     "difficulte": 3,
+     "filtre": {
+      "region": "Région de Bruxelles-Capitale"
+     },
+     "enonce": "À {cle}, commune de la Région de Bruxelles-Capitale, quelle(s) Communauté(s) organise(nt) les écoles ?",
+     "explication": "À Bruxelles, le français et le néerlandais sont tous deux officiels : la Communauté française et la Communauté flamande y ont chacune leurs écoles.",
+     "valeurs": [
+      "la Communauté française",
+      "la Communauté flamande",
+      "la Communauté germanophone",
+      "les Communautés française et flamande"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hg-f-villes-rivieres",
+   "generateur": "faits",
+   "base": "hg-villes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-cours-eau",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "riviere",
+     "enonce": "Quel cours d'eau traverse {cle} ?",
+     "explication": "{Cle} est traversée par {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "riviere",
+     "enonce": "Laquelle de ces villes est traversée par {valeur} ?",
+     "explication": "{Cle} est traversée par {valeur}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "riviere",
+     "enonce": "Vrai ou faux ? {Cle} est traversée par {valeur}.",
+     "explication": "{Cle} est traversée par {bonne}."
+    },
+    {
+     "sorte": "association",
+     "champ": "riviere",
+     "n": 3,
+     "difficulte": 3,
+     "enonce": "Relie chaque ville au cours d'eau qui la traverse.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-cours-eau",
+   "generateur": "faits",
+   "base": "hg-cours-eau",
+   "domaine": "hg.geographie",
+   "fiche": "hg-cours-eau",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "seJette",
+     "distracteurs": "seJetteFaux",
+     "enonce": "Où se jette {cle} ?",
+     "explication": "{Cle} se jette dans {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "bassin",
+     "valeurs": [
+      "l'Escaut",
+      "la Meuse"
+     ],
+     "enonce": "À quel bassin appartient chaque rivière : celui de l'Escaut ou celui de la Meuse ?",
+     "explication": "{liste}.",
+     "filtre": {
+      "type": "rivière"
+     }
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "type",
+     "enonce": "Vrai ou faux ? {Cle} est {valeurPhrase}.",
+     "explication": "{Cle} est {bonnePhrase}. Un fleuve se jette dans la mer ; une rivière se jette dans un autre cours d'eau."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "type",
+     "cibles": [
+      "fleuve"
+     ],
+     "enonce": "Lequel de ces cours d'eau est un fleuve ?",
+     "explication": "{Cle} se jette dans la mer du Nord : c'est un fleuve. Les autres sont des rivières."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-regions-naturelles",
+   "generateur": "faits",
+   "base": "hg-regions-naturelles",
+   "domaine": "hg.geographie",
+   "fiche": "hg-regions-naturelles",
+   "difficulte": 3,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "region",
+     "enonce": "De quelle région naturelle de Belgique s'agit-il ? « {cle} »",
+     "explication": "Cette description correspond {valeurPhrase}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "region",
+     "enonce": "Laquelle de ces descriptions correspond {valeurPhrase} ?",
+     "explication": "« {cle} » : cette description correspond {valeurPhrase}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-villes-regions-naturelles",
+   "generateur": "faits",
+   "base": "hg-villes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-regions-naturelles",
+   "difficulte": 3,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "naturelle",
+     "enonce": "Dans quelle région naturelle se trouve {cle} ?",
+     "explication": "{Cle} se trouve {valeurPhrase}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "naturelle",
+     "cibles": [
+      "l'Ardenne",
+      "la Hesbaye",
+      "la Campine",
+      "la Lorraine belge",
+      "la Famenne",
+      "le Condroz"
+     ],
+     "enonce": "Laquelle de ces villes se trouve {valeurPhrase} ?",
+     "explication": "{Cle} se trouve {valeurPhrase}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-belgique-reperes",
+   "generateur": "hg_banque",
+   "base": "hg-q-belgique",
+   "domaine": "hg.geographie",
+   "fiche": "hg-belgique",
+   "difficulte": 2
+  },
+  {
+   "id": "hg-f-europe",
+   "generateur": "faits",
+   "base": "hg-pays-europe",
+   "domaine": "hg.geographie",
+   "fiche": "hg-europe",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "capitale",
+     "enonce": "Quelle est la capitale {de} ?",
+     "explication": "La capitale {de} est {valeur}.",
+     "avec": [
+      "capitaleDistincte"
+     ]
+    },
+    {
+     "sorte": "attribut",
+     "champ": "capitale",
+     "saisie": true,
+     "filtre": {
+      "ue": "membre de l'UE",
+      "fondateur": "pays fondateur"
+     },
+     "difficulte": 2,
+     "enonce": "Écris le nom de la capitale {de}.",
+     "explication": "La capitale {de} est {valeur}.",
+     "avec": [
+      "capitaleDistincte"
+     ]
+    },
+    {
+     "sorte": "attribut",
+     "champ": "nom",
+     "cle": "capitale",
+     "enonce": "{Cle} est la capitale de quel pays ?",
+     "explication": "{Cle} est la capitale {de}.",
+     "avec": [
+      "capitaleDistincte"
+     ]
+    },
+    {
+     "sorte": "association",
+     "champ": "capitale",
+     "n": 4,
+     "difficulte": 3,
+     "enonce": "Relie chaque pays à sa capitale.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "ue",
+     "valeurs": [
+      "membre de l'UE",
+      "pas membre de l'UE"
+     ],
+     "enonce": "En 2026, chacun de ces pays fait-il partie de l'Union européenne ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "ue",
+     "enonce": "Quel est l'intrus ? (pense à l'Union européenne en 2026)",
+     "explication": "{groupe} → {valeurPluriel}. {Cle} → {valeurIntrusPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "fondateur",
+     "cibles": [
+      "pays fondateur"
+     ],
+     "difficulte": 3,
+     "enonce": "Lequel de ces pays fait partie des six pays fondateurs de la Communauté européenne (1957) ?",
+     "explication": "Les six pays fondateurs sont la Belgique, la France, l'Allemagne, l'Italie, les Pays-Bas et le Luxembourg. Parmi les choix, c'est donc {le}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "euro",
+     "cibles": [
+      "n'utilise pas l'euro"
+     ],
+     "difficulte": 3,
+     "enonce": "Lequel de ces pays de l'Union européenne n'utilise pas l'euro comme monnaie ?",
+     "explication": "Parmi les choix, c'est {le} qui n'utilise pas l'euro. En Belgique, les pièces et billets en euros sont arrivés en 2002."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-continents",
+   "generateur": "faits",
+   "base": "hg-pays-monde",
+   "domaine": "hg.geographie",
+   "fiche": "hg-continents",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "continent",
+     "enonce": "Sur quel continent trouve-t-on {cle} ?",
+     "explication": "On trouve {cle} en {valeur}.",
+     "filtre": {
+      "genre": "pays"
+     }
+    },
+    {
+     "sorte": "lequel",
+     "champ": "continent",
+     "enonce": "Lequel de ces pays se trouve en {valeur} ?",
+     "explication": "On trouve {cle} en {valeur}.",
+     "filtre": {
+      "genre": "pays"
+     }
+    },
+    {
+     "sorte": "intrus",
+     "champ": "continent",
+     "difficulte": 2,
+     "enonce": "Quel pays n'est pas sur le même continent que les autres ?",
+     "explication": "{groupe} : {valeur}. {Cle} : {valeurIntrus}.",
+     "filtre": {
+      "genre": "pays",
+      "continent": [
+       "Europe",
+       "Afrique",
+       "Asie",
+       "Océanie"
+      ]
+     }
+    },
+    {
+     "sorte": "grille",
+     "champ": "continent",
+     "valeurs": [
+      "Europe",
+      "Afrique",
+      "Asie",
+      "Amérique du Sud"
+     ],
+     "difficulte": 2,
+     "enonce": "Sur quel continent se trouve chaque pays ?",
+     "explication": "{liste}.",
+     "filtre": {
+      "genre": "pays"
+     }
+    },
+    {
+     "sorte": "attribut",
+     "champ": "continent",
+     "enonce": "Sur quel continent trouve-t-on {cle} ?",
+     "explication": "On trouve {cle} en {valeur}. {info}",
+     "filtre": {
+      "genre": "élément"
+     }
+    },
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "ordreFixe": false,
+     "enonce": "Qu'est-ce que {cle} ?",
+     "explication": "{Cle} : {valeur} ({continent}). {info}",
+     "filtre": {
+      "genre": "élément"
+     }
+    },
+    {
+     "sorte": "lequel",
+     "champ": "type",
+     "cibles": [
+      "un fleuve",
+      "une chaîne de montagnes",
+      "un désert"
+     ],
+     "enonce": "Lequel de ces noms désigne {valeur} ?",
+     "explication": "{Cle} : {valeur} ({continent}).",
+     "filtre": {
+      "genre": "élément"
+     }
+    },
+    {
+     "sorte": "intrus",
+     "champ": "continent",
+     "difficulte": 3,
+     "enonce": "Lequel de ces éléments n'est pas sur le même continent que les autres ?",
+     "explication": "{groupe} : {valeur}. {Cle} : {valeurIntrus}.",
+     "filtre": {
+      "genre": "élément",
+      "continent": [
+       "Europe",
+       "Afrique",
+       "Asie",
+       "Océanie"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "hg-f-globe-reperes",
+   "generateur": "hg_melange",
+   "base": "hg-q-globe",
+   "domaine": "hg.geographie",
+   "fiche": "hg-globe",
+   "difficulte": 2,
+   "melange": [
+    {
+     "generateur": "hg_banque"
+    },
+    {
+     "generateur": "hg_banque"
+    },
+    {
+     "generateur": "hg_latitude"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-hemispheres-zones",
+   "generateur": "faits",
+   "base": "hg-villes-monde",
+   "domaine": "hg.geographie",
+   "fiche": "hg-globe",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "hemNS",
+     "enonce": "Dans quel hémisphère se trouve {Cle} ({pays}) : l'hémisphère Nord ou l'hémisphère Sud ?",
+     "explication": "{Cle} est à environ {latTexte} de latitude : au {cote} de l'équateur, donc dans {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "zone",
+     "choix": 3,
+     "ordreFixe": true,
+     "enonce": "{Cle} ({pays}) se trouve à environ {latTexte} de latitude. Dans quelle zone thermique ?",
+     "explication": "{latTexte} : {valeur}. Zone chaude entre les tropiques (environ 23°), zones tempérées jusqu'aux cercles polaires (environ 66°), zones froides au-delà."
+    },
+    {
+     "sorte": "grille",
+     "champ": "zone",
+     "valeurs": [
+      "la zone chaude",
+      "une zone tempérée",
+      "une zone froide"
+     ],
+     "element": "{Cle} ({latTexte})",
+     "enonce": "Dans quelle zone thermique se trouve chaque lieu ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "hemEO",
+     "difficulte": 3,
+     "enonce": "Par rapport au méridien de Greenwich, dans quel hémisphère se trouve {cle} ({pays}) ?",
+     "explication": "{Cle} est {cote2} du méridien de Greenwich : dans {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-milieux-climats",
+   "generateur": "faits",
+   "base": "hg-milieux",
+   "domaine": "hg.geographie",
+   "fiche": "hg-climats",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "milieu",
+     "enonce": "Quel grand milieu est décrit ? « {cle} »",
+     "explication": "C'est {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "milieu",
+     "enonce": "Laquelle de ces descriptions correspond {valeurPhrase} ?",
+     "explication": "« {cle} » : c'est {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "climat",
+     "enonce": "Quel climat est décrit ? « {cle} »",
+     "explication": "C'est {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "climat",
+     "enonce": "Laquelle de ces descriptions correspond {valeurPhrase} ?",
+     "explication": "« {cle} » : c'est {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-orientation",
+   "generateur": "hg_melange",
+   "base": "hg-villes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-orientation",
+   "difficulte": 2,
+   "melange": [
+    {
+     "generateur": "hg_orientation",
+     "sorte": [
+      "rotation",
+      "rotation",
+      "rotation",
+      "oppose",
+      "entre"
+     ]
+    },
+    {
+     "generateur": "hg_orientation",
+     "sorte": [
+      "rotation",
+      "oppose"
+     ]
+    },
+    {
+     "generateur": "hg_position",
+     "sorte": "villes"
+    },
+    {
+     "generateur": "hg_position",
+     "sorte": "quadrillage"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-lecture-cartes",
+   "generateur": "hg_banque",
+   "base": "hg-q-cartes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-cartes",
+   "difficulte": 1
+  },
+  {
+   "id": "hg-f-types-cartes",
+   "generateur": "faits",
+   "base": "hg-usages-cartes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-cartes",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "carte",
+     "enonce": "Quelle carte utilises-tu pour {cle} ?",
+     "explication": "Pour {cle}, il faut {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "carte",
+     "enonce": "Pour laquelle de ces tâches utilises-tu {valeur} ?",
+     "explication": "Pour {cle}, on utilise {valeur}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-echelle",
+   "generateur": "hg_echelle",
+   "domaine": "hg.geographie",
+   "fiche": "hg-echelle",
+   "difficulte": 3,
+   "sorte": [
+    "carte_reel",
+    "carte_reel",
+    "reel_carte",
+    {
+     "sorte": "graphique",
+     "difficulte": 2
+    },
+    {
+     "sorte": "detail",
+     "difficulte": 2
+    }
+   ]
+  },
+  {
+   "id": "hg-f-densite",
+   "generateur": "hg_densite",
+   "domaine": "hg.geographie",
+   "fiche": "hg-densite",
+   "difficulte": 2,
+   "sorte": [
+    "estimation",
+    "comparer",
+    "tranches",
+    "calcul",
+    "calcul"
+   ]
+  },
+  {
+   "id": "hg-f-secteurs",
+   "generateur": "faits",
+   "base": "hg-metiers",
+   "domaine": "hg.geographie",
+   "fiche": "hg-secteurs",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "secteur",
+     "choix": 3,
+     "ordreFixe": true,
+     "enonce": "Dans quel secteur d'activité travaille {cle} ?",
+     "explication": "{Cle} : {valeurPhrase}. Primaire = on tire les ressources de la nature ; secondaire = on transforme ou on construit ; tertiaire = on rend des services."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "secteur",
+     "enonce": "Lequel de ces métiers appartient au secteur {valeur} ?",
+     "explication": "{Cle} : secteur {valeur}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "secteur",
+     "enonce": "Trois de ces métiers sont du même secteur. Lequel est l'intrus ?",
+     "explication": "{groupe} : secteur {valeur}. {Cle} : secteur {valeurIntrus}."
+    },
+    {
+     "sorte": "grille",
+     "champ": "secteur",
+     "valeurs": [
+      "primaire",
+      "secondaire",
+      "tertiaire"
+     ],
+     "enonce": "Classe chaque métier dans son secteur d'activité.",
+     "explication": "{liste}."
+    }
+   ]
+  },
+  {
+   "id": "hg-f-paysages",
+   "generateur": "faits",
+   "base": "hg-paysages",
+   "domaine": "hg.geographie",
+   "fiche": "hg-paysages",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "type",
+     "choix": 3,
+     "ordreFixe": true,
+     "enonce": "Quel type de paysage est décrit ? « {cle} »",
+     "explication": "C'est un paysage {valeur}."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "type",
+     "enonce": "Laquelle de ces descriptions correspond à un paysage {valeur} ?",
+     "explication": "« {cle} » : c'est un paysage {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "habitat",
+     "choix": 3,
+     "ordreFixe": true,
+     "enonce": "Quel type d'habitat est décrit ? « {cle} »",
+     "explication": "C'est un habitat {valeur}. Groupé = maisons rassemblées ; dispersé = maisons éloignées les unes des autres ; linéaire = maisons alignées le long d'une route ou d'un cours d'eau.",
+     "difficulte": 2
+    },
+    {
+     "sorte": "lequel",
+     "champ": "habitat",
+     "enonce": "Laquelle de ces descriptions correspond à un habitat {valeur} ?",
+     "explication": "« {cle} » : habitat {valeur}.",
+     "difficulte": 2
+    }
+   ]
+  },
+  {
+   "id": "hg-f-transports",
+   "generateur": "faits",
+   "base": "hg-transports",
+   "domaine": "hg.geographie",
+   "fiche": "hg-transports",
+   "difficulte": 1,
+   "formes": [
+    {
+     "sorte": "grille",
+     "champ": "voie",
+     "valeurs": [
+      "la route",
+      "le rail",
+      "l'eau",
+      "l'air"
+     ],
+     "enonce": "Quelle voie utilise chaque moyen de transport ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "intrus",
+     "champ": "voie",
+     "enonce": "Quel moyen de transport n'utilise pas la même voie que les autres ?",
+     "explication": "{groupe} utilisent {valeur}. {Cle} utilise {valeurIntrus}."
+    }
+   ]
+  }
+ ]
+}

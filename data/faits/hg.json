@@ -1,0 +1,5518 @@
+{
+ "matiere": "hg",
+ "bases": [
+  {
+   "id": "hg-evenements",
+   "description": "Événements datés, de la Préhistoire à aujourd'hui (histoire de Belgique et repères mondiaux). annee < 0 : av. J.-C. ; periode absente pour les 4 dates charnières.",
+   "cle": "nom",
+   "phrases": {
+    "periode": {
+     "Préhistoire": "pendant la Préhistoire",
+     "Antiquité": "pendant l'Antiquité",
+     "Moyen Âge": "pendant le Moyen Âge",
+     "Temps modernes": "pendant les Temps modernes",
+     "Époque contemporaine": "pendant l'Époque contemporaine"
+    }
+   },
+   "items": [
+    {
+     "nom": "la maîtrise du feu par les premiers humains",
+     "annee": -400000,
+     "periode": "Préhistoire",
+     "date": "il y a environ 400 000 ans",
+     "approx": true
+    },
+    {
+     "nom": "l'apparition de l'agriculture au Proche-Orient",
+     "annee": -9000,
+     "periode": "Préhistoire",
+     "date": "vers 9000 av. J.-C.",
+     "approx": true,
+     "info": "Les humains commencent à cultiver des plantes et à élever des animaux : ils deviennent sédentaires."
+    },
+    {
+     "nom": "l'arrivée des premiers agriculteurs-éleveurs dans nos régions",
+     "annee": -5000,
+     "periode": "Préhistoire",
+     "date": "vers 5000 av. J.-C.",
+     "approx": true,
+     "belgique": true,
+     "info": "C'est le Néolithique : les humains deviennent sédentaires."
+    },
+    {
+     "nom": "l'invention de l'écriture en Mésopotamie",
+     "annee": -3500,
+     "date": "vers 3500 av. J.-C.",
+     "approx": true,
+     "charniere": true,
+     "info": "Elle marque la fin de la Préhistoire et le début de l'Antiquité.",
+     "repere": true
+    },
+    {
+     "nom": "la construction de la pyramide de Khéops, en Égypte",
+     "annee": -2560,
+     "periode": "Antiquité",
+     "date": "vers 2560 av. J.-C.",
+     "approx": true
+    },
+    {
+     "nom": "l'organisation des premiers Jeux olympiques, en Grèce",
+     "annee": -776,
+     "periode": "Antiquité",
+     "date": "776 av. J.-C."
+    },
+    {
+     "nom": "la fondation de Rome, selon la légende",
+     "annee": -753,
+     "periode": "Antiquité",
+     "date": "753 av. J.-C."
+    },
+    {
+     "nom": "la mort d'Alexandre le Grand",
+     "annee": -323,
+     "periode": "Antiquité",
+     "date": "323 av. J.-C."
+    },
+    {
+     "nom": "la révolte d'Ambiorix, chef des Éburons, contre les Romains",
+     "annee": -54,
+     "periode": "Antiquité",
+     "date": "54 av. J.-C.",
+     "belgique": true
+    },
+    {
+     "nom": "la victoire de Jules César sur les Gaulois à Alésia",
+     "annee": -52,
+     "periode": "Antiquité",
+     "date": "52 av. J.-C.",
+     "repere": true
+    },
+    {
+     "nom": "le début du règne d'Auguste, premier empereur romain",
+     "annee": -27,
+     "periode": "Antiquité",
+     "date": "27 av. J.-C."
+    },
+    {
+     "nom": "l'éruption du Vésuve qui ensevelit Pompéi",
+     "annee": 79,
+     "periode": "Antiquité",
+     "date": "79"
+    },
+    {
+     "nom": "la fin de l'Empire romain d'Occident",
+     "annee": 476,
+     "charniere": true,
+     "info": "Elle marque la fin de l'Antiquité et le début du Moyen Âge.",
+     "date": "476",
+     "repere": true
+    },
+    {
+     "nom": "le baptême de Clovis, roi des Francs",
+     "annee": 496,
+     "periode": "Moyen Âge",
+     "date": "vers 496",
+     "approx": true,
+     "belgique": true,
+     "repere": true,
+     "date_accepte": [
+      "496"
+     ]
+    },
+    {
+     "nom": "le sacre de Charlemagne comme empereur",
+     "annee": 800,
+     "periode": "Moyen Âge",
+     "belgique": true,
+     "date": "800",
+     "repere": true
+    },
+    {
+     "nom": "la mort de Charlemagne",
+     "annee": 814,
+     "periode": "Moyen Âge",
+     "date": "814"
+    },
+    {
+     "nom": "le traité de Verdun, qui partage l'empire de Charlemagne",
+     "annee": 843,
+     "periode": "Moyen Âge",
+     "date": "843"
+    },
+    {
+     "nom": "la bataille de Hastings, qui fait de Guillaume le Conquérant le roi d'Angleterre",
+     "annee": 1066,
+     "periode": "Moyen Âge",
+     "date": "1066"
+    },
+    {
+     "nom": "la charte de Huy, une des plus anciennes chartes de libertés accordées à une ville",
+     "annee": 1066,
+     "periode": "Moyen Âge",
+     "date": "1066",
+     "belgique": true
+    },
+    {
+     "nom": "la prise de Jérusalem par les croisés de Godefroid de Bouillon",
+     "annee": 1099,
+     "periode": "Moyen Âge",
+     "belgique": true,
+     "date": "1099"
+    },
+    {
+     "nom": "la bataille des Éperons d'or, à Courtrai",
+     "annee": 1302,
+     "periode": "Moyen Âge",
+     "belgique": true,
+     "info": "Les milices des villes flamandes battent les chevaliers du roi de France.",
+     "date": "1302",
+     "repere": true
+    },
+    {
+     "nom": "l'arrivée de la grande peste noire en Europe",
+     "annee": 1347,
+     "periode": "Moyen Âge",
+     "date": "1347"
+    },
+    {
+     "nom": "la fondation de l'université de Louvain",
+     "annee": 1425,
+     "periode": "Moyen Âge",
+     "date": "1425",
+     "belgique": true
+    },
+    {
+     "nom": "la création de l'ordre de la Toison d'or par Philippe le Bon, duc de Bourgogne",
+     "annee": 1430,
+     "periode": "Moyen Âge",
+     "belgique": true,
+     "date": "1430"
+    },
+    {
+     "nom": "la mort de Jeanne d'Arc",
+     "annee": 1431,
+     "periode": "Moyen Âge",
+     "date": "1431"
+    },
+    {
+     "nom": "l'invention de l'imprimerie à caractères mobiles par Gutenberg",
+     "annee": 1450,
+     "periode": "Moyen Âge",
+     "date": "vers 1450",
+     "approx": true,
+     "repere": true,
+     "date_accepte": [
+      "1450"
+     ]
+    },
+    {
+     "nom": "la prise de Constantinople par les Turcs",
+     "annee": 1453,
+     "periode": "Moyen Âge",
+     "date": "1453"
+    },
+    {
+     "nom": "la mort de Charles le Téméraire, duc de Bourgogne, à Nancy",
+     "annee": 1477,
+     "periode": "Moyen Âge",
+     "belgique": true,
+     "date": "1477"
+    },
+    {
+     "nom": "l'arrivée de Christophe Colomb en Amérique",
+     "annee": 1492,
+     "charniere": true,
+     "info": "Elle marque la fin du Moyen Âge et le début des Temps modernes.",
+     "date": "1492",
+     "repere": true
+    },
+    {
+     "nom": "la naissance de Charles Quint, à Gand",
+     "annee": 1500,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "date": "1500",
+     "repere": true
+    },
+    {
+     "nom": "le début de la Réforme protestante de Martin Luther",
+     "annee": 1517,
+     "periode": "Temps modernes",
+     "date": "1517"
+    },
+    {
+     "nom": "le départ de l'expédition de Magellan pour le premier tour du monde",
+     "annee": 1519,
+     "periode": "Temps modernes",
+     "date": "1519"
+    },
+    {
+     "nom": "la publication du grand livre d'anatomie d'André Vésale",
+     "annee": 1543,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "date": "1543"
+    },
+    {
+     "nom": "l'abdication de Charles Quint, à Bruxelles",
+     "annee": 1555,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "date": "1555"
+    },
+    {
+     "nom": "l'exécution des comtes d'Egmont et de Hornes sur la Grand-Place de Bruxelles",
+     "annee": 1568,
+     "periode": "Temps modernes",
+     "date": "1568",
+     "belgique": true
+    },
+    {
+     "nom": "la publication de la carte du monde de Gérard Mercator",
+     "annee": 1569,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "date": "1569"
+    },
+    {
+     "nom": "la prise d'Anvers par les troupes espagnoles d'Alexandre Farnèse",
+     "annee": 1585,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "date": "1585"
+    },
+    {
+     "nom": "la première observation du ciel avec une lunette par Galilée",
+     "annee": 1609,
+     "periode": "Temps modernes",
+     "date": "1609"
+    },
+    {
+     "nom": "le début du règne de Louis XIV, le Roi-Soleil",
+     "annee": 1643,
+     "periode": "Temps modernes",
+     "date": "1643"
+    },
+    {
+     "nom": "le bombardement de Bruxelles par l'armée de Louis XIV",
+     "annee": 1695,
+     "periode": "Temps modernes",
+     "belgique": true,
+     "info": "La Grand-Place est en grande partie détruite, puis reconstruite.",
+     "date": "1695"
+    },
+    {
+     "nom": "le début du règne de l'impératrice Marie-Thérèse d'Autriche sur nos régions",
+     "annee": 1740,
+     "periode": "Temps modernes",
+     "date": "1740",
+     "belgique": true
+    },
+    {
+     "nom": "le brevet de la machine à vapeur perfectionnée de James Watt",
+     "annee": 1769,
+     "periode": "Temps modernes",
+     "date": "1769"
+    },
+    {
+     "nom": "la déclaration d'indépendance des États-Unis",
+     "annee": 1776,
+     "periode": "Temps modernes",
+     "date": "1776"
+    },
+    {
+     "nom": "le début de la Révolution française",
+     "annee": 1789,
+     "charniere": true,
+     "info": "Elle marque la fin des Temps modernes et le début de l'Époque contemporaine.",
+     "date": "1789",
+     "repere": true
+    },
+    {
+     "nom": "la victoire des armées de la Révolution française à Fleurus",
+     "annee": 1794,
+     "periode": "Époque contemporaine",
+     "date": "1794",
+     "belgique": true,
+     "info": "Elle ouvre la voie à l'annexion de nos régions par la France."
+    },
+    {
+     "nom": "l'annexion de nos régions par la France",
+     "annee": 1795,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "info": "C'est le début de la période française.",
+     "date": "1795"
+    },
+    {
+     "nom": "la défaite de Napoléon à Waterloo",
+     "annee": 1815,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "info": "Nos régions sont ensuite réunies aux Pays-Bas (période hollandaise).",
+     "date": "1815",
+     "repere": true
+    },
+    {
+     "nom": "l'installation des usines de John Cockerill à Seraing",
+     "annee": 1817,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1817"
+    },
+    {
+     "nom": "la révolution belge, qui mène à l'indépendance de la Belgique",
+     "annee": 1830,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1830",
+     "repere": true
+    },
+    {
+     "nom": "la prestation de serment de Léopold Ier, premier roi des Belges",
+     "annee": 1831,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1831",
+     "repere": true
+    },
+    {
+     "nom": "l'adoption de la Constitution belge",
+     "annee": 1831,
+     "periode": "Époque contemporaine",
+     "date": "1831",
+     "belgique": true
+    },
+    {
+     "nom": "l'inauguration de la première ligne de chemin de fer belge, entre Bruxelles et Malines",
+     "annee": 1835,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1835"
+    },
+    {
+     "nom": "le traité de Londres, par lequel les Pays-Bas reconnaissent l'indépendance de la Belgique",
+     "annee": 1839,
+     "periode": "Époque contemporaine",
+     "date": "1839",
+     "belgique": true
+    },
+    {
+     "nom": "le brevet du saxophone d'Adolphe Sax",
+     "annee": 1846,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1846"
+    },
+    {
+     "nom": "l'invention du téléphone par Graham Bell",
+     "annee": 1876,
+     "periode": "Époque contemporaine",
+     "date": "1876"
+    },
+    {
+     "nom": "la mise au point de l'ampoule électrique par Thomas Edison",
+     "annee": 1879,
+     "periode": "Époque contemporaine",
+     "date": "1879"
+    },
+    {
+     "nom": "la reconnaissance de l'État indépendant du Congo, propriété de Léopold II",
+     "annee": 1885,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1885"
+    },
+    {
+     "nom": "la première automobile à moteur à essence de Carl Benz",
+     "annee": 1886,
+     "periode": "Époque contemporaine",
+     "date": "1886"
+    },
+    {
+     "nom": "le premier vol en avion à moteur des frères Wright",
+     "annee": 1903,
+     "periode": "Époque contemporaine",
+     "date": "1903"
+    },
+    {
+     "nom": "la reprise du Congo par la Belgique, qui en fait une colonie belge",
+     "annee": 1908,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1908"
+    },
+    {
+     "nom": "le naufrage du Titanic",
+     "annee": 1912,
+     "periode": "Époque contemporaine",
+     "date": "1912"
+    },
+    {
+     "nom": "l'invasion de la Belgique par l'Allemagne, au début de la Première Guerre mondiale",
+     "annee": 1914,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1914",
+     "repere": true
+    },
+    {
+     "nom": "la bataille de l'Yser",
+     "annee": 1914,
+     "periode": "Époque contemporaine",
+     "date": "1914",
+     "belgique": true,
+     "info": "L'armée belge arrête l'avancée allemande en inondant la plaine de l'Yser."
+    },
+    {
+     "nom": "l'armistice qui met fin à la Première Guerre mondiale",
+     "annee": 1918,
+     "periode": "Époque contemporaine",
+     "date": "1918",
+     "repere": true
+    },
+    {
+     "nom": "la première élection belge au suffrage universel masculin pur, selon la règle « un homme, une voix »",
+     "annee": 1919,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1919"
+    },
+    {
+     "nom": "la découverte de la pénicilline par Alexander Fleming",
+     "annee": 1928,
+     "periode": "Époque contemporaine",
+     "date": "1928"
+    },
+    {
+     "nom": "la première apparition de Tintin, le héros d'Hergé",
+     "annee": 1929,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1929"
+    },
+    {
+     "nom": "la mort du roi Albert Ier à Marche-les-Dames",
+     "annee": 1934,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1934"
+    },
+    {
+     "nom": "le début du règne du roi Léopold III",
+     "annee": 1934,
+     "periode": "Époque contemporaine",
+     "date": "1934",
+     "belgique": true
+    },
+    {
+     "nom": "le début de la Seconde Guerre mondiale en Europe",
+     "annee": 1939,
+     "periode": "Époque contemporaine",
+     "date": "1939"
+    },
+    {
+     "nom": "l'invasion de la Belgique par l'armée allemande, le 10 mai, pendant la Seconde Guerre mondiale",
+     "annee": 1940,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1940",
+     "repere": true
+    },
+    {
+     "nom": "la libération de Bruxelles",
+     "annee": 1944,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1944"
+    },
+    {
+     "nom": "la fin de la Seconde Guerre mondiale",
+     "annee": 1945,
+     "periode": "Époque contemporaine",
+     "date": "1945",
+     "repere": true
+    },
+    {
+     "nom": "le premier vote des femmes aux élections législatives en Belgique",
+     "annee": 1949,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "info": "Le droit de vote leur est accordé en 1948 ; elles votent pour la première fois aux élections de 1949.",
+     "date": "1949"
+    },
+    {
+     "nom": "le début du règne du roi Baudouin",
+     "annee": 1951,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1951"
+    },
+    {
+     "nom": "la catastrophe minière du Bois du Cazier, à Marcinelle",
+     "annee": 1956,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1956"
+    },
+    {
+     "nom": "la signature du traité de Rome, qui crée la Communauté économique européenne",
+     "annee": 1957,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1957"
+    },
+    {
+     "nom": "le lancement de Spoutnik, le premier satellite artificiel",
+     "annee": 1957,
+     "periode": "Époque contemporaine",
+     "date": "1957"
+    },
+    {
+     "nom": "l'Exposition universelle de Bruxelles, pour laquelle on a construit l'Atomium",
+     "annee": 1958,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1958",
+     "repere": true
+    },
+    {
+     "nom": "l'indépendance du Congo",
+     "annee": 1960,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1960",
+     "repere": true
+    },
+    {
+     "nom": "la fixation de la frontière linguistique",
+     "annee": 1962,
+     "periode": "Époque contemporaine",
+     "date": "1962",
+     "belgique": true
+    },
+    {
+     "nom": "le premier pas de l'être humain sur la Lune",
+     "annee": 1969,
+     "periode": "Époque contemporaine",
+     "date": "1969",
+     "repere": true
+    },
+    {
+     "nom": "la première réforme de l'État belge",
+     "annee": 1970,
+     "periode": "Époque contemporaine",
+     "date": "1970",
+     "belgique": true
+    },
+    {
+     "nom": "la chute du mur de Berlin",
+     "annee": 1989,
+     "periode": "Époque contemporaine",
+     "date": "1989"
+    },
+    {
+     "nom": "la création de la Région de Bruxelles-Capitale",
+     "annee": 1989,
+     "periode": "Époque contemporaine",
+     "date": "1989",
+     "belgique": true
+    },
+    {
+     "nom": "la transformation de la Belgique en État fédéral",
+     "annee": 1993,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "1993",
+     "repere": true
+    },
+    {
+     "nom": "le début du règne du roi Albert II",
+     "annee": 1993,
+     "periode": "Époque contemporaine",
+     "date": "1993",
+     "belgique": true
+    },
+    {
+     "nom": "l'ouverture du tunnel sous la Manche",
+     "annee": 1994,
+     "periode": "Époque contemporaine",
+     "date": "1994"
+    },
+    {
+     "nom": "l'arrivée des pièces et des billets en euros",
+     "annee": 2002,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "2002",
+     "repere": true
+    },
+    {
+     "nom": "le début du règne du roi Philippe",
+     "annee": 2013,
+     "periode": "Époque contemporaine",
+     "belgique": true,
+     "date": "2013"
+    },
+    {
+     "nom": "la sortie du Royaume-Uni de l'Union européenne",
+     "annee": 2020,
+     "periode": "Époque contemporaine",
+     "date": "2020"
+    }
+   ]
+  },
+  {
+   "id": "hg-modes-vie",
+   "description": "Éléments de la vie quotidienne caractéristiques d'une période.",
+   "cle": "nom",
+   "phrases": {
+    "periode": {
+     "Préhistoire": "pendant la Préhistoire",
+     "Antiquité": "pendant l'Antiquité",
+     "Moyen Âge": "pendant le Moyen Âge",
+     "Temps modernes": "pendant les Temps modernes",
+     "Époque contemporaine": "pendant l'Époque contemporaine"
+    }
+   },
+   "items": [
+    {
+     "nom": "l'outil en silex taillé (le biface)",
+     "periode": "Préhistoire",
+     "theme": "outils"
+    },
+    {
+     "nom": "la hache en pierre polie",
+     "periode": "Préhistoire",
+     "theme": "outils"
+    },
+    {
+     "nom": "la peinture d'animaux sur les parois d'une grotte",
+     "periode": "Préhistoire",
+     "theme": "art"
+    },
+    {
+     "nom": "la chasse au mammouth",
+     "periode": "Préhistoire",
+     "theme": "alimentation"
+    },
+    {
+     "nom": "la hutte faite de branches et de peaux de bêtes",
+     "periode": "Préhistoire",
+     "theme": "habitat"
+    },
+    {
+     "nom": "la vie de nomade, de chasse et de cueillette",
+     "periode": "Préhistoire",
+     "theme": "mode de vie"
+    },
+    {
+     "nom": "le propulseur pour lancer des sagaies",
+     "periode": "Préhistoire",
+     "theme": "outils"
+    },
+    {
+     "nom": "les hiéroglyphes des Égyptiens",
+     "periode": "Antiquité",
+     "theme": "écriture"
+    },
+    {
+     "nom": "le rouleau de papyrus",
+     "periode": "Antiquité",
+     "theme": "écriture"
+    },
+    {
+     "nom": "la momification des pharaons",
+     "periode": "Antiquité",
+     "theme": "croyances"
+    },
+    {
+     "nom": "la voie romaine pavée",
+     "periode": "Antiquité",
+     "theme": "transports"
+    },
+    {
+     "nom": "la villa gallo-romaine",
+     "periode": "Antiquité",
+     "theme": "habitat"
+    },
+    {
+     "nom": "les thermes romains",
+     "periode": "Antiquité",
+     "theme": "loisirs"
+    },
+    {
+     "nom": "les combats de gladiateurs",
+     "periode": "Antiquité",
+     "theme": "loisirs"
+    },
+    {
+     "nom": "le légionnaire romain",
+     "periode": "Antiquité",
+     "theme": "métiers"
+    },
+    {
+     "nom": "l'aqueduc romain",
+     "periode": "Antiquité",
+     "theme": "constructions"
+    },
+    {
+     "nom": "la toge des citoyens romains",
+     "periode": "Antiquité",
+     "theme": "vêtements"
+    },
+    {
+     "nom": "la course de chars dans le cirque romain",
+     "periode": "Antiquité",
+     "theme": "loisirs"
+    },
+    {
+     "nom": "le château fort avec son donjon et son pont-levis",
+     "periode": "Moyen Âge",
+     "theme": "habitat"
+    },
+    {
+     "nom": "le chevalier en armure",
+     "periode": "Moyen Âge",
+     "theme": "métiers"
+    },
+    {
+     "nom": "le moine copiste qui écrit sur du parchemin",
+     "periode": "Moyen Âge",
+     "theme": "écriture"
+    },
+    {
+     "nom": "le seigneur et ses serfs",
+     "periode": "Moyen Âge",
+     "theme": "société"
+    },
+    {
+     "nom": "le tournoi de chevaliers",
+     "periode": "Moyen Âge",
+     "theme": "loisirs"
+    },
+    {
+     "nom": "la cathédrale gothique et ses vitraux",
+     "periode": "Moyen Âge",
+     "theme": "constructions"
+    },
+    {
+     "nom": "le beffroi, symbole des libertés de la ville",
+     "periode": "Moyen Âge",
+     "theme": "constructions"
+    },
+    {
+     "nom": "l'enluminure d'un manuscrit",
+     "periode": "Moyen Âge",
+     "theme": "art"
+    },
+    {
+     "nom": "les croisades vers Jérusalem",
+     "periode": "Moyen Âge",
+     "theme": "événements"
+    },
+    {
+     "nom": "la perruque poudrée des nobles à la cour de Louis XIV",
+     "periode": "Temps modernes",
+     "theme": "vêtements"
+    },
+    {
+     "nom": "le château de Versailles",
+     "periode": "Temps modernes",
+     "theme": "constructions"
+    },
+    {
+     "nom": "le galion espagnol chargé de l'or d'Amérique",
+     "periode": "Temps modernes",
+     "theme": "transports"
+    },
+    {
+     "nom": "la lunette astronomique de Galilée",
+     "periode": "Temps modernes",
+     "theme": "sciences"
+    },
+    {
+     "nom": "les tableaux de Rubens",
+     "periode": "Temps modernes",
+     "theme": "art"
+    },
+    {
+     "nom": "la locomotive à vapeur",
+     "periode": "Époque contemporaine",
+     "theme": "transports"
+    },
+    {
+     "nom": "l'usine avec ses machines à vapeur et ses hautes cheminées",
+     "periode": "Époque contemporaine",
+     "theme": "métiers"
+    },
+    {
+     "nom": "le travail des enfants dans les mines de charbon",
+     "periode": "Époque contemporaine",
+     "theme": "métiers",
+     "info": "Au 19e siècle, de jeunes enfants (les galibots) travaillaient au fond des mines."
+    },
+    {
+     "nom": "l'éclairage des rues au gaz",
+     "periode": "Époque contemporaine",
+     "theme": "éclairage"
+    },
+    {
+     "nom": "l'ampoule électrique",
+     "periode": "Époque contemporaine",
+     "theme": "éclairage"
+    },
+    {
+     "nom": "l'automobile",
+     "periode": "Époque contemporaine",
+     "theme": "transports"
+    },
+    {
+     "nom": "l'avion",
+     "periode": "Époque contemporaine",
+     "theme": "transports"
+    },
+    {
+     "nom": "le téléphone",
+     "periode": "Époque contemporaine",
+     "theme": "communication"
+    },
+    {
+     "nom": "la télévision",
+     "periode": "Époque contemporaine",
+     "theme": "communication"
+    },
+    {
+     "nom": "l'ordinateur",
+     "periode": "Époque contemporaine",
+     "theme": "communication"
+    },
+    {
+     "nom": "le smartphone",
+     "periode": "Époque contemporaine",
+     "theme": "communication"
+    },
+    {
+     "nom": "la photographie",
+     "periode": "Époque contemporaine",
+     "theme": "art"
+    },
+    {
+     "nom": "les tranchées de la Première Guerre mondiale",
+     "periode": "Époque contemporaine",
+     "theme": "événements"
+    },
+    {
+     "nom": "le supermarché",
+     "periode": "Époque contemporaine",
+     "theme": "alimentation"
+    },
+    {
+     "nom": "les dolmens de Wéris, faits d'énormes blocs de pierre",
+     "periode": "Préhistoire",
+     "theme": "constructions",
+     "info": "Ils ont été construits par les premiers agriculteurs, à la fin de la Préhistoire."
+    },
+    {
+     "nom": "le village de cabanes des premiers agriculteurs",
+     "periode": "Préhistoire",
+     "theme": "habitat"
+    },
+    {
+     "nom": "la fraise, ce grand col plissé porté par les nobles au 16e siècle",
+     "periode": "Temps modernes",
+     "theme": "vêtements"
+    },
+    {
+     "nom": "le carrosse doré du roi Louis XIV",
+     "periode": "Temps modernes",
+     "theme": "transports"
+    },
+    {
+     "nom": "l'atlas de cartes de Mercator",
+     "periode": "Temps modernes",
+     "theme": "sciences"
+    }
+   ]
+  },
+  {
+   "id": "hg-personnages",
+   "description": "Personnages historiques : période (liée à ce qui les a rendus célèbres) et rôle.",
+   "cle": "nom",
+   "phrases": {
+    "periode": {
+     "Préhistoire": "pendant la Préhistoire",
+     "Antiquité": "pendant l'Antiquité",
+     "Moyen Âge": "pendant le Moyen Âge",
+     "Temps modernes": "pendant les Temps modernes",
+     "Époque contemporaine": "pendant l'Époque contemporaine"
+    }
+   },
+   "items": [
+    {
+     "nom": "Ramsès II",
+     "periode": "Antiquité",
+     "role": "le grand pharaon qui a fait construire les temples d'Abou Simbel",
+     "quand": "vers 1250 av. J.-C."
+    },
+    {
+     "nom": "Cléopâtre",
+     "periode": "Antiquité",
+     "role": "la dernière reine de l'Égypte ancienne",
+     "quand": "morte en 30 av. J.-C."
+    },
+    {
+     "nom": "Jules César",
+     "periode": "Antiquité",
+     "role": "le général romain qui a conquis la Gaule",
+     "quand": "1er siècle av. J.-C."
+    },
+    {
+     "nom": "Ambiorix",
+     "periode": "Antiquité",
+     "role": "le chef des Éburons révolté contre les Romains",
+     "quand": "54 av. J.-C.",
+     "belgique": true
+    },
+    {
+     "nom": "Vercingétorix",
+     "periode": "Antiquité",
+     "role": "le chef gaulois vaincu à Alésia",
+     "quand": "52 av. J.-C."
+    },
+    {
+     "nom": "Auguste",
+     "periode": "Antiquité",
+     "role": "le premier empereur romain",
+     "quand": "à partir de 27 av. J.-C."
+    },
+    {
+     "nom": "Clovis",
+     "periode": "Moyen Âge",
+     "role": "le roi des Francs qui s'est converti au christianisme vers 496",
+     "quand": "roi de 481 à 511",
+     "belgique": true
+    },
+    {
+     "nom": "Charlemagne",
+     "periode": "Moyen Âge",
+     "role": "le roi des Francs sacré empereur en 800",
+     "quand": "empereur de 800 à 814",
+     "belgique": true
+    },
+    {
+     "nom": "Godefroid de Bouillon",
+     "periode": "Moyen Âge",
+     "role": "un des chefs de la première croisade",
+     "quand": "prise de Jérusalem en 1099",
+     "belgique": true
+    },
+    {
+     "nom": "Marco Polo",
+     "periode": "Moyen Âge",
+     "role": "le marchand vénitien qui a voyagé jusqu'en Chine",
+     "quand": "13e siècle"
+    },
+    {
+     "nom": "Jeanne d'Arc",
+     "periode": "Moyen Âge",
+     "role": "la jeune fille qui a combattu les Anglais pendant la guerre de Cent Ans",
+     "quand": "morte en 1431"
+    },
+    {
+     "nom": "Philippe le Bon",
+     "periode": "Moyen Âge",
+     "role": "le duc de Bourgogne qui a réuni une grande partie de nos régions",
+     "quand": "15e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Charles le Téméraire",
+     "periode": "Moyen Âge",
+     "role": "le duc de Bourgogne mort à la bataille de Nancy",
+     "quand": "mort en 1477",
+     "belgique": true
+    },
+    {
+     "nom": "Gutenberg",
+     "periode": "Moyen Âge",
+     "role": "l'inventeur de l'imprimerie à caractères mobiles",
+     "quand": "vers 1450"
+    },
+    {
+     "nom": "Charles Quint",
+     "periode": "Temps modernes",
+     "role": "l'empereur né à Gand en 1500",
+     "quand": "1500-1558",
+     "belgique": true
+    },
+    {
+     "nom": "Pieter Bruegel l'Ancien",
+     "periode": "Temps modernes",
+     "role": "le peintre des scènes de la vie des paysans",
+     "quand": "16e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Pierre Paul Rubens",
+     "periode": "Temps modernes",
+     "role": "le célèbre peintre baroque d'Anvers",
+     "quand": "1577-1640",
+     "belgique": true
+    },
+    {
+     "nom": "Gérard Mercator",
+     "periode": "Temps modernes",
+     "role": "le géographe flamand auteur d'une célèbre carte du monde",
+     "quand": "16e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "André Vésale",
+     "periode": "Temps modernes",
+     "role": "le médecin bruxellois, père de l'anatomie moderne",
+     "quand": "16e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Galilée",
+     "periode": "Temps modernes",
+     "role": "le savant italien qui a observé le ciel avec une lunette",
+     "quand": "début du 17e siècle"
+    },
+    {
+     "nom": "Louis XIV",
+     "periode": "Temps modernes",
+     "role": "le roi de France surnommé le Roi-Soleil",
+     "quand": "roi de 1643 à 1715"
+    },
+    {
+     "nom": "Napoléon Ier",
+     "periode": "Époque contemporaine",
+     "role": "l'empereur des Français vaincu à Waterloo",
+     "quand": "empereur de 1804 à 1815"
+    },
+    {
+     "nom": "Léopold Ier",
+     "periode": "Époque contemporaine",
+     "role": "le premier roi des Belges",
+     "quand": "roi de 1831 à 1865",
+     "belgique": true
+    },
+    {
+     "nom": "Léopold II",
+     "periode": "Époque contemporaine",
+     "role": "le roi des Belges propriétaire de l'État indépendant du Congo",
+     "quand": "roi de 1865 à 1909",
+     "belgique": true
+    },
+    {
+     "nom": "Albert Ier",
+     "periode": "Époque contemporaine",
+     "role": "le « Roi-Chevalier » de la Première Guerre mondiale",
+     "quand": "roi de 1909 à 1934",
+     "belgique": true
+    },
+    {
+     "nom": "Baudouin",
+     "periode": "Époque contemporaine",
+     "role": "le roi des Belges au moment de l'indépendance du Congo",
+     "quand": "roi de 1951 à 1993",
+     "belgique": true
+    },
+    {
+     "nom": "Gabrielle Petit",
+     "periode": "Époque contemporaine",
+     "role": "la résistante belge fusillée en 1916",
+     "quand": "1893-1916",
+     "belgique": true
+    },
+    {
+     "nom": "John Cockerill",
+     "periode": "Époque contemporaine",
+     "role": "l'industriel qui a fondé de grandes usines à Seraing",
+     "quand": "19e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Adolphe Sax",
+     "periode": "Époque contemporaine",
+     "role": "l'inventeur belge du saxophone",
+     "quand": "19e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Zénobe Gramme",
+     "periode": "Époque contemporaine",
+     "role": "l'inventeur belge de la dynamo",
+     "quand": "19e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Ernest Solvay",
+     "periode": "Époque contemporaine",
+     "role": "le chimiste et industriel belge qui a inventé un procédé pour fabriquer la soude",
+     "quand": "19e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Louis Braille",
+     "periode": "Époque contemporaine",
+     "role": "l'inventeur de l'écriture en relief pour les aveugles",
+     "quand": "19e siècle"
+    },
+    {
+     "nom": "Louis Pasteur",
+     "periode": "Époque contemporaine",
+     "role": "le savant qui a mis au point le vaccin contre la rage",
+     "quand": "19e siècle"
+    },
+    {
+     "nom": "Marie Curie",
+     "periode": "Époque contemporaine",
+     "role": "la scientifique qui a découvert le radium",
+     "quand": "vers 1900"
+    },
+    {
+     "nom": "Victor Horta",
+     "periode": "Époque contemporaine",
+     "role": "l'architecte belge de l'Art nouveau",
+     "quand": "fin du 19e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Hergé",
+     "periode": "Époque contemporaine",
+     "role": "le dessinateur belge qui a créé Tintin",
+     "quand": "20e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "René Magritte",
+     "periode": "Époque contemporaine",
+     "role": "le peintre surréaliste belge",
+     "quand": "20e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Georges Lemaître",
+     "periode": "Époque contemporaine",
+     "role": "le prêtre et astronome belge à l'origine de la théorie du Big Bang",
+     "quand": "20e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Anne Frank",
+     "periode": "Époque contemporaine",
+     "role": "la jeune fille juive qui a écrit son journal pendant la Seconde Guerre mondiale",
+     "quand": "1929-1945"
+    },
+    {
+     "nom": "Neil Armstrong",
+     "periode": "Époque contemporaine",
+     "role": "le premier homme à avoir marché sur la Lune",
+     "quand": "1969"
+    },
+    {
+     "nom": "Eddy Merckx",
+     "periode": "Époque contemporaine",
+     "role": "le coureur cycliste belge cinq fois vainqueur du Tour de France",
+     "quand": "20e siècle",
+     "belgique": true
+    },
+    {
+     "nom": "Toutânkhamon",
+     "periode": "Antiquité",
+     "role": "le jeune pharaon célèbre pour son masque en or",
+     "quand": "vers 1330 av. J.-C."
+    },
+    {
+     "nom": "Alexandre le Grand",
+     "periode": "Antiquité",
+     "role": "le roi de Macédoine qui a conquis un immense empire jusqu'en Inde",
+     "quand": "mort en 323 av. J.-C."
+    },
+    {
+     "nom": "Martin Luther",
+     "periode": "Temps modernes",
+     "role": "le moine allemand à l'origine de la Réforme protestante",
+     "quand": "16e siècle"
+    },
+    {
+     "nom": "Magellan",
+     "periode": "Temps modernes",
+     "role": "le navigateur dont l'expédition a fait le premier tour du monde",
+     "quand": "départ en 1519"
+    },
+    {
+     "nom": "Marie-Thérèse d'Autriche",
+     "periode": "Temps modernes",
+     "role": "l'impératrice qui a régné sur nos régions au 18e siècle",
+     "quand": "1740-1780",
+     "belgique": true
+    },
+    {
+     "nom": "Léopold III",
+     "periode": "Époque contemporaine",
+     "role": "le roi des Belges pendant la Seconde Guerre mondiale",
+     "quand": "roi de 1934 à 1951",
+     "belgique": true
+    },
+    {
+     "nom": "Albert II",
+     "periode": "Époque contemporaine",
+     "role": "le frère et successeur du roi Baudouin",
+     "quand": "roi de 1993 à 2013",
+     "belgique": true
+    },
+    {
+     "nom": "Philippe",
+     "periode": "Époque contemporaine",
+     "role": "le roi des Belges en 2026",
+     "quand": "roi depuis 2013",
+     "belgique": true
+    },
+    {
+     "nom": "Nelson Mandela",
+     "periode": "Époque contemporaine",
+     "role": "le président sud-africain qui a lutté contre l'apartheid",
+     "quand": "20e siècle"
+    }
+   ]
+  },
+  {
+   "id": "hg-sources",
+   "description": "Sources de l'historien : nature (écrite, iconographique, matérielle, orale) et époque de production.",
+   "cle": "nom",
+   "phrases": {
+    "nature": {
+     "écrite": "une source écrite",
+     "iconographique": "une source iconographique (une image)",
+     "matérielle": "une source matérielle (un objet, un vestige)",
+     "orale": "une source orale"
+    },
+    "nature_pluriel": {
+     "écrite": "des sources écrites",
+     "iconographique": "des sources iconographiques",
+     "matérielle": "des sources matérielles",
+     "orale": "des sources orales"
+    }
+   },
+   "items": [
+    {
+     "nom": "une lettre écrite par un soldat dans les tranchées en 1916",
+     "nature": "écrite",
+     "type": "une lettre",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Première Guerre mondiale"
+    },
+    {
+     "nom": "un journal imprimé à Bruxelles en septembre 1830",
+     "nature": "écrite",
+     "type": "un journal",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la révolution belge"
+    },
+    {
+     "nom": "un acte de naissance rédigé en 1905",
+     "nature": "écrite",
+     "type": "un document administratif",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la vie en 1905"
+    },
+    {
+     "nom": "une charte sur parchemin qui accorde des libertés à une ville au 13e siècle",
+     "nature": "écrite",
+     "type": "une charte",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les villes au Moyen Âge"
+    },
+    {
+     "nom": "le journal intime d'une jeune fille écrit pendant la Seconde Guerre mondiale",
+     "nature": "écrite",
+     "type": "un journal intime",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Seconde Guerre mondiale"
+    },
+    {
+     "nom": "un carnet de notes d'un ingénieur des chemins de fer en 1835",
+     "nature": "écrite",
+     "type": "un carnet",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les premiers trains"
+    },
+    {
+     "nom": "un livre d'histoire écrit en 2020 sur les Romains",
+     "nature": "écrite",
+     "type": "un livre",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "l'Antiquité romaine"
+    },
+    {
+     "nom": "un article d'encyclopédie écrit en 2015 sur Charlemagne",
+     "nature": "écrite",
+     "type": "un article",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "Charlemagne"
+    },
+    {
+     "nom": "un roman écrit en 2010 qui raconte la bataille des Éperons d'or",
+     "nature": "écrite",
+     "type": "un roman",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "la bataille des Éperons d'or"
+    },
+    {
+     "nom": "un tableau de Pieter Bruegel l'Ancien montrant des paysans au travail (16e siècle)",
+     "nature": "iconographique",
+     "type": "une peinture",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la vie des paysans au 16e siècle"
+    },
+    {
+     "nom": "une photographie de classe prise vers 1920",
+     "nature": "iconographique",
+     "type": "une photographie",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "l'école vers 1920"
+    },
+    {
+     "nom": "une photographie de la libération de Bruxelles prise en septembre 1944",
+     "nature": "iconographique",
+     "type": "une photographie",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Seconde Guerre mondiale"
+    },
+    {
+     "nom": "une enluminure dans un manuscrit du Moyen Âge",
+     "nature": "iconographique",
+     "type": "une enluminure",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "le Moyen Âge"
+    },
+    {
+     "nom": "une peinture d'animaux sur la paroi d'une grotte préhistorique",
+     "nature": "iconographique",
+     "type": "une peinture",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Préhistoire"
+    },
+    {
+     "nom": "une gravure du 18e siècle montrant la Grand-Place de Bruxelles",
+     "nature": "iconographique",
+     "type": "une gravure",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "Bruxelles au 18e siècle"
+    },
+    {
+     "nom": "un tableau peint en 1890 qui imagine la bataille de Waterloo (1815)",
+     "nature": "iconographique",
+     "type": "une peinture",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "la bataille de Waterloo"
+    },
+    {
+     "nom": "un dessin réalisé en 2005 pour un manuel scolaire, qui imagine la vie des hommes préhistoriques",
+     "nature": "iconographique",
+     "type": "un dessin",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "la Préhistoire"
+    },
+    {
+     "nom": "une affiche dessinée en 2022 pour un spectacle sur les chevaliers",
+     "nature": "iconographique",
+     "type": "une affiche",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "les chevaliers"
+    },
+    {
+     "nom": "une pièce de monnaie romaine retrouvée dans un champ",
+     "nature": "matérielle",
+     "type": "un objet",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "l'Antiquité romaine"
+    },
+    {
+     "nom": "un biface en silex découvert dans une grotte",
+     "nature": "matérielle",
+     "type": "un outil",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Préhistoire"
+    },
+    {
+     "nom": "une épée de chevalier exposée dans un musée",
+     "nature": "matérielle",
+     "type": "une arme",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "le Moyen Âge"
+    },
+    {
+     "nom": "les ruines d'un château fort",
+     "nature": "matérielle",
+     "type": "un vestige",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "le Moyen Âge"
+    },
+    {
+     "nom": "un casque de soldat de la Première Guerre mondiale",
+     "nature": "matérielle",
+     "type": "un objet",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Première Guerre mondiale"
+    },
+    {
+     "nom": "une amphore retrouvée dans une villa gallo-romaine",
+     "nature": "matérielle",
+     "type": "un objet",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "l'Antiquité romaine"
+    },
+    {
+     "nom": "le beffroi de Tournai",
+     "nature": "matérielle",
+     "type": "un monument",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les villes au Moyen Âge"
+    },
+    {
+     "nom": "les vestiges d'une voie romaine",
+     "nature": "matérielle",
+     "type": "un vestige",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "l'Antiquité romaine"
+    },
+    {
+     "nom": "une lampe de mineur du 19e siècle",
+     "nature": "matérielle",
+     "type": "un objet",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les mines de charbon"
+    },
+    {
+     "nom": "une copie en plastique d'un casque romain vendue dans un musée",
+     "nature": "matérielle",
+     "type": "un objet",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "l'Antiquité romaine"
+    },
+    {
+     "nom": "le témoignage enregistré d'un ancien mineur racontant son travail",
+     "nature": "orale",
+     "type": "un témoignage",
+     "sujet": "les mines de charbon"
+    },
+    {
+     "nom": "le récit de ta grand-mère qui raconte son école quand elle était petite",
+     "nature": "orale",
+     "type": "un témoignage",
+     "sujet": "l'école d'autrefois"
+    },
+    {
+     "nom": "l'interview d'une ancienne résistante de la Seconde Guerre mondiale",
+     "nature": "orale",
+     "type": "un témoignage",
+     "sujet": "la Seconde Guerre mondiale"
+    },
+    {
+     "nom": "une chanson populaire transmise de génération en génération",
+     "nature": "orale",
+     "type": "une chanson",
+     "sujet": "les traditions"
+    },
+    {
+     "nom": "une affiche collée sur les murs de Bruxelles pendant la Première Guerre mondiale",
+     "nature": "iconographique",
+     "type": "une affiche",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "la Première Guerre mondiale"
+    },
+    {
+     "nom": "une carte postale illustrée de la côte belge envoyée en 1910",
+     "nature": "iconographique",
+     "type": "une carte postale",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les vacances à la mer vers 1910"
+    },
+    {
+     "nom": "le registre des élèves d'une école de village tenu en 1880",
+     "nature": "écrite",
+     "type": "un registre",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "l'école au 19e siècle"
+    },
+    {
+     "nom": "un manuel scolaire de 2021 qui explique la vie des chevaliers",
+     "nature": "écrite",
+     "type": "un manuel",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "les chevaliers"
+    },
+    {
+     "nom": "une maquette de château fort construite par des élèves en 2024",
+     "nature": "matérielle",
+     "type": "une maquette",
+     "epoque": "Non, il a été réalisé bien plus tard",
+     "sujet": "les châteaux forts"
+    },
+    {
+     "nom": "le marteau et l'enclume d'un forgeron du 19e siècle",
+     "nature": "matérielle",
+     "type": "des outils",
+     "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
+     "sujet": "les métiers d'autrefois"
+    },
+    {
+     "nom": "une légende racontée de génération en génération dans un village ardennais",
+     "nature": "orale",
+     "type": "un récit",
+     "sujet": "les traditions"
+    },
+    {
+     "nom": "le récit d'un ancien soldat de la Seconde Guerre mondiale, enregistré pour la radio",
+     "nature": "orale",
+     "type": "un témoignage",
+     "sujet": "la Seconde Guerre mondiale"
+    }
+   ]
+  },
+  {
+   "id": "hg-provinces",
+   "description": "Les 10 provinces belges (population au 1er janvier 2024, superficie en km², Statbel). chefLieuQ : présent seulement quand le chef-lieu ne porte pas le nom de la province.",
+   "cle": "nom",
+   "phrases": {
+    "region": {
+     "Région flamande": "en Région flamande",
+     "Région wallonne": "en Région wallonne"
+    }
+   },
+   "items": [
+    {
+     "nom": "la province d'Anvers",
+     "court": "Anvers",
+     "chefLieu": "Anvers",
+     "region": "Région flamande",
+     "pop": 1926522,
+     "sup": 2876,
+     "voisins": [
+      "les Pays-Bas"
+     ]
+    },
+    {
+     "nom": "la province de Limbourg",
+     "court": "Limbourg",
+     "chefLieu": "Hasselt",
+     "region": "Région flamande",
+     "pop": 900098,
+     "sup": 2427,
+     "voisins": [
+      "les Pays-Bas"
+     ],
+     "chefLieuQ": "Hasselt"
+    },
+    {
+     "nom": "la province de Flandre orientale",
+     "court": "Flandre orientale",
+     "chefLieu": "Gand",
+     "region": "Région flamande",
+     "pop": 1572002,
+     "sup": 3007,
+     "voisins": [
+      "les Pays-Bas"
+     ],
+     "chefLieuQ": "Gand"
+    },
+    {
+     "nom": "la province de Flandre occidentale",
+     "court": "Flandre occidentale",
+     "chefLieu": "Bruges",
+     "region": "Région flamande",
+     "pop": 1226375,
+     "sup": 3197,
+     "voisins": [
+      "la France",
+      "les Pays-Bas"
+     ],
+     "mer": true,
+     "chefLieuQ": "Bruges"
+    },
+    {
+     "nom": "la province du Brabant flamand",
+     "court": "Brabant flamand",
+     "chefLieu": "Louvain",
+     "region": "Région flamande",
+     "pop": 1196773,
+     "sup": 2118,
+     "voisins": [],
+     "chefLieuQ": "Louvain"
+    },
+    {
+     "nom": "la province du Brabant wallon",
+     "court": "Brabant wallon",
+     "chefLieu": "Wavre",
+     "region": "Région wallonne",
+     "pop": 414130,
+     "sup": 1097,
+     "voisins": [],
+     "chefLieuQ": "Wavre"
+    },
+    {
+     "nom": "la province de Hainaut",
+     "court": "Hainaut",
+     "chefLieu": "Mons",
+     "region": "Région wallonne",
+     "pop": 1360074,
+     "sup": 3813,
+     "voisins": [
+      "la France"
+     ],
+     "chefLieuQ": "Mons"
+    },
+    {
+     "nom": "la province de Namur",
+     "court": "Namur",
+     "chefLieu": "Namur",
+     "region": "Région wallonne",
+     "pop": 503895,
+     "sup": 3675,
+     "voisins": [
+      "la France"
+     ]
+    },
+    {
+     "nom": "la province de Liège",
+     "court": "Liège",
+     "chefLieu": "Liège",
+     "region": "Région wallonne",
+     "pop": 1119038,
+     "sup": 3857,
+     "voisins": [
+      "les Pays-Bas",
+      "l'Allemagne",
+      "le Grand-Duché de Luxembourg"
+     ]
+    },
+    {
+     "nom": "la province de Luxembourg",
+     "court": "Luxembourg",
+     "chefLieu": "Arlon",
+     "region": "Région wallonne",
+     "pop": 295146,
+     "sup": 4459,
+     "voisins": [
+      "la France",
+      "le Grand-Duché de Luxembourg"
+     ],
+     "chefLieuQ": "Arlon"
+    }
+   ]
+  },
+  {
+   "id": "hg-villes",
+   "description": "Villes et communes belges : province, Région, langue officielle, Communauté, cours d'eau, région naturelle, coordonnées arrondies. naturelle absente quand le nom de la ville contient déjà la réponse (Marche-en-Famenne, La Roche-en-Ardenne, Herve) ou quand la région est discutée (Fagne/Famenne). provinceDistincte : la ville ne porte pas le nom de sa province.",
+   "cle": "nom",
+   "phrases": {
+    "region": {
+     "Région flamande": "en Région flamande",
+     "Région wallonne": "en Région wallonne",
+     "Région de Bruxelles-Capitale": "en Région de Bruxelles-Capitale"
+    },
+    "provinceQ": {
+     "Anvers": "la province d'Anvers",
+     "Limbourg": "la province de Limbourg",
+     "Flandre orientale": "la province de Flandre orientale",
+     "Flandre occidentale": "la province de Flandre occidentale",
+     "Brabant flamand": "la province du Brabant flamand",
+     "Brabant wallon": "la province du Brabant wallon",
+     "Hainaut": "la province de Hainaut",
+     "Namur": "la province de Namur",
+     "Liège": "la province de Liège",
+     "Luxembourg": "la province de Luxembourg"
+    },
+    "naturelle": {
+     "l'Ardenne": "en Ardenne",
+     "la Hesbaye": "en Hesbaye",
+     "la Campine": "en Campine",
+     "le Condroz": "dans le Condroz",
+     "la Famenne": "en Famenne",
+     "la Lorraine belge": "en Lorraine belge",
+     "les Polders": "dans les Polders",
+     "le pays de Herve": "au pays de Herve"
+    }
+   },
+   "items": [
+    {
+     "nom": "Bruxelles",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "riviere": "la Senne",
+     "lat": 50.85,
+     "lon": 4.35,
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Ixelles",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Schaerbeek",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Anderlecht",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "riviere": "la Senne",
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Uccle",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Molenbeek-Saint-Jean",
+     "region": "Région de Bruxelles-Capitale",
+     "langue": "le français et le néerlandais",
+     "communaute": "les Communautés française et flamande"
+    },
+    {
+     "nom": "Anvers",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "l'Escaut",
+     "lat": 51.22,
+     "lon": 4.4,
+     "provinceQ": "Anvers",
+     "communaute": "la Communauté flamande"
+    },
+    {
+     "nom": "Malines",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": [
+      "la Dyle",
+      "la Senne"
+     ],
+     "lat": 51.03,
+     "lon": 4.48,
+     "provinceQ": "Anvers",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Turnhout",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 51.32,
+     "lon": 4.95,
+     "naturelle": "la Campine",
+     "provinceQ": "Anvers",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Lierre",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Nèthe",
+     "provinceQ": "Anvers",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Geel",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "naturelle": "la Campine",
+     "provinceQ": "Anvers",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Hasselt",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "le Démer",
+     "lat": 50.93,
+     "lon": 5.34,
+     "provinceQ": "Limbourg",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Genk",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 50.97,
+     "lon": 5.5,
+     "naturelle": "la Campine",
+     "provinceQ": "Limbourg",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Tongres",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 50.78,
+     "lon": 5.46,
+     "naturelle": "la Hesbaye",
+     "provinceQ": "Limbourg",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Saint-Trond",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "naturelle": "la Hesbaye",
+     "provinceQ": "Limbourg",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Maaseik",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Meuse",
+     "provinceQ": "Limbourg",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Gand",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": [
+      "l'Escaut",
+      "la Lys"
+     ],
+     "lat": 51.05,
+     "lon": 3.72,
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Alost",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Dendre",
+     "lat": 50.94,
+     "lon": 4.04,
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Saint-Nicolas",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Audenarde",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "l'Escaut",
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Termonde",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": [
+      "l'Escaut",
+      "la Dendre"
+     ],
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ninove",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Dendre",
+     "provinceQ": "Flandre orientale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Bruges",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 51.21,
+     "lon": 3.22,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ostende",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 51.23,
+     "lon": 2.92,
+     "cote": true,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Courtrai",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Lys",
+     "lat": 50.83,
+     "lon": 3.26,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ypres",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "lat": 50.85,
+     "lon": 2.88,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Roulers",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Dixmude",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "l'Yser",
+     "naturelle": "les Polders",
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Nieuport",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "l'Yser",
+     "cote": true,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "La Panne",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "cote": true,
+     "lat": 51.1,
+     "lon": 2.59,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Knokke-Heist",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "cote": true,
+     "lat": 51.35,
+     "lon": 3.29,
+     "provinceQ": "Flandre occidentale",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Louvain",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Dyle",
+     "lat": 50.88,
+     "lon": 4.7,
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Vilvorde",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Senne",
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Hal",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "la Senne",
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Tirlemont",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "naturelle": "la Hesbaye",
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Diest",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "le Démer",
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Aarschot",
+     "region": "Région flamande",
+     "langue": "le néerlandais",
+     "riviere": "le Démer",
+     "provinceQ": "Brabant flamand",
+     "communaute": "la Communauté flamande",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Wavre",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Dyle",
+     "lat": 50.72,
+     "lon": 4.61,
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Nivelles",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.6,
+     "lon": 4.33,
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Waterloo",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ottignies-Louvain-la-Neuve",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Dyle",
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Tubize",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Senne",
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Jodoigne",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "naturelle": "la Hesbaye",
+     "provinceQ": "Brabant wallon",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Mons",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.45,
+     "lon": 3.95,
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Charleroi",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Sambre",
+     "lat": 50.41,
+     "lon": 4.44,
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Tournai",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "l'Escaut",
+     "lat": 50.61,
+     "lon": 3.39,
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "La Louvière",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Mouscron",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.74,
+     "lon": 3.21,
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ath",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Dendre",
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Thuin",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Sambre",
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Chimay",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.05,
+     "lon": 4.32,
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Binche",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Soignies",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Hainaut",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Namur",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": [
+      "la Meuse",
+      "la Sambre"
+     ],
+     "lat": 50.47,
+     "lon": 4.87,
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française"
+    },
+    {
+     "nom": "Dinant",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": [
+      "la Meuse",
+      "la Lesse"
+     ],
+     "lat": 50.26,
+     "lon": 4.91,
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Andenne",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Meuse",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Ciney",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "naturelle": "le Condroz",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Gembloux",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Rochefort",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "naturelle": "la Famenne",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Philippeville",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Couvin",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Namur",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Liège",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": [
+      "la Meuse",
+      "l'Ourthe",
+      "la Vesdre"
+     ],
+     "lat": 50.63,
+     "lon": 5.57,
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française"
+    },
+    {
+     "nom": "Verviers",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Vesdre",
+     "lat": 50.59,
+     "lon": 5.86,
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Seraing",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Meuse",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Huy",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Meuse",
+     "lat": 50.52,
+     "lon": 5.24,
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Visé",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Meuse",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Spa",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.49,
+     "lon": 5.86,
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Waremme",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "naturelle": "la Hesbaye",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Herve",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Stavelot",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "l'Amblève",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Malmedy",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Eupen",
+     "region": "Région wallonne",
+     "langue": "l'allemand",
+     "riviere": "la Vesdre",
+     "lat": 50.63,
+     "lon": 6.03,
+     "provinceQ": "Liège",
+     "communaute": "la Communauté germanophone",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Saint-Vith",
+     "region": "Région wallonne",
+     "langue": "l'allemand",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté germanophone",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "La Calamine",
+     "region": "Région wallonne",
+     "langue": "l'allemand",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté germanophone",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Bütgenbach",
+     "region": "Région wallonne",
+     "langue": "l'allemand",
+     "provinceQ": "Liège",
+     "communaute": "la Communauté germanophone",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Arlon",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 49.68,
+     "lon": 5.82,
+     "naturelle": "la Lorraine belge",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Virton",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 49.57,
+     "lon": 5.53,
+     "naturelle": "la Lorraine belge",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Bastogne",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50,
+     "lon": 5.72,
+     "naturelle": "l'Ardenne",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Marche-en-Famenne",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "lat": 50.23,
+     "lon": 5.34,
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Bouillon",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "la Semois",
+     "lat": 49.79,
+     "lon": 5.07,
+     "naturelle": "l'Ardenne",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Durbuy",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "l'Ourthe",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "La Roche-en-Ardenne",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "riviere": "l'Ourthe",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Neufchâteau",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "naturelle": "l'Ardenne",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    },
+    {
+     "nom": "Florenville",
+     "region": "Région wallonne",
+     "langue": "le français",
+     "provinceQ": "Luxembourg",
+     "communaute": "la Communauté française",
+     "provinceDistincte": true
+    }
+   ]
+  },
+  {
+   "id": "hg-cours-eau",
+   "description": "Fleuves et rivières de Belgique.",
+   "cle": "nom",
+   "phrases": {
+    "type": {
+     "fleuve": "un fleuve",
+     "rivière": "une rivière"
+    },
+    "bassin": {
+     "l'Escaut": "le bassin de l'Escaut",
+     "la Meuse": "le bassin de la Meuse"
+    }
+   },
+   "items": [
+    {
+     "nom": "l'Escaut",
+     "type": "fleuve",
+     "seJette": "la mer du Nord",
+     "bassin": "l'Escaut",
+     "info": "Il prend sa source en France et se jette dans la mer du Nord aux Pays-Bas.",
+     "seJetteFaux": [
+      "la Meuse",
+      "l'Ourthe",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Meuse",
+     "type": "fleuve",
+     "seJette": "la mer du Nord",
+     "bassin": "la Meuse",
+     "info": "Elle prend sa source en France et se jette dans la mer du Nord aux Pays-Bas.",
+     "seJetteFaux": [
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "l'Yser",
+     "type": "fleuve",
+     "seJette": "la mer du Nord",
+     "info": "C'est un petit fleuve côtier : il se jette dans la mer du Nord à Nieuport.",
+     "seJetteFaux": [
+      "la Meuse",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Sambre",
+     "type": "rivière",
+     "seJette": "la Meuse",
+     "bassin": "la Meuse",
+     "info": "Elle rejoint la Meuse à Namur.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "l'Ourthe",
+     "type": "rivière",
+     "seJette": "la Meuse",
+     "bassin": "la Meuse",
+     "info": "Elle rejoint la Meuse à Liège.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Lesse",
+     "type": "rivière",
+     "seJette": "la Meuse",
+     "bassin": "la Meuse",
+     "info": "Elle rejoint la Meuse près de Dinant.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Semois",
+     "type": "rivière",
+     "seJette": "la Meuse",
+     "bassin": "la Meuse",
+     "info": "Elle rejoint la Meuse en France.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Vesdre",
+     "type": "rivière",
+     "seJette": "l'Ourthe",
+     "bassin": "la Meuse",
+     "info": "Elle traverse Eupen et Verviers avant de rejoindre l'Ourthe.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "l'Amblève",
+     "type": "rivière",
+     "seJette": "l'Ourthe",
+     "bassin": "la Meuse",
+     "info": "Elle passe à Stavelot avant de rejoindre l'Ourthe.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Escaut",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Lys",
+     "type": "rivière",
+     "seJette": "l'Escaut",
+     "bassin": "l'Escaut",
+     "info": "Elle rejoint l'Escaut à Gand.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Dendre",
+     "type": "rivière",
+     "seJette": "l'Escaut",
+     "bassin": "l'Escaut",
+     "info": "Elle rejoint l'Escaut à Termonde.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "le Rupel",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Dyle",
+     "type": "rivière",
+     "seJette": "le Rupel",
+     "bassin": "l'Escaut",
+     "info": "Elle traverse Wavre, Louvain et Malines, puis rejoint la Nèthe pour former le Rupel.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "l'Escaut"
+     ]
+    },
+    {
+     "nom": "la Senne",
+     "type": "rivière",
+     "seJette": "la Dyle",
+     "bassin": "l'Escaut",
+     "info": "Elle traverse Bruxelles (où elle coule sous terre) et Vilvorde.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel"
+     ]
+    },
+    {
+     "nom": "le Démer",
+     "type": "rivière",
+     "seJette": "la Dyle",
+     "bassin": "l'Escaut",
+     "info": "Il traverse Hasselt et Diest.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "l'Escaut",
+      "le Rupel"
+     ]
+    },
+    {
+     "nom": "le Rupel",
+     "type": "rivière",
+     "seJette": "l'Escaut",
+     "bassin": "l'Escaut",
+     "info": "Il est formé par la Dyle et la Nèthe, et rejoint l'Escaut.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "la Dyle"
+     ]
+    },
+    {
+     "nom": "la Nèthe",
+     "type": "rivière",
+     "seJette": "le Rupel",
+     "bassin": "l'Escaut",
+     "info": "Elle traverse Lierre, puis rejoint la Dyle pour former le Rupel.",
+     "seJetteFaux": [
+      "la mer du Nord",
+      "la Meuse",
+      "l'Ourthe",
+      "l'Escaut"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hg-regions-naturelles",
+   "description": "Indices caractéristiques des régions naturelles (agro-géographiques) de Belgique.",
+   "cle": "nom",
+   "phrases": {
+    "region": {
+     "les Dunes": "aux Dunes",
+     "les Polders": "aux Polders",
+     "la Campine": "à la Campine",
+     "la Hesbaye": "à la Hesbaye",
+     "le Condroz": "au Condroz",
+     "la Famenne": "à la Famenne",
+     "l'Ardenne": "à l'Ardenne",
+     "la Lorraine belge": "à la Lorraine belge",
+     "le pays de Herve": "au pays de Herve"
+    }
+   },
+   "items": [
+    {
+     "nom": "Au bord de la mer, des collines de sable plantées d'oyats protègent la côte.",
+     "region": "les Dunes"
+    },
+    {
+     "nom": "Plaine très basse et plate, gagnée sur la mer, protégée par des digues et parcourue de fossés.",
+     "region": "les Polders"
+    },
+    {
+     "nom": "Anciens marais asséchés près de la côte : de grandes prairies plates où paissent des vaches.",
+     "region": "les Polders"
+    },
+    {
+     "nom": "Sols sableux assez pauvres au nord-est du pays, avec des bruyères et des bois de pins.",
+     "region": "la Campine"
+    },
+    {
+     "nom": "Au nord-est du pays, on y a exploité des mines de charbon jusqu'à la fin du 20e siècle (Genk, Beringen).",
+     "region": "la Campine"
+    },
+    {
+     "nom": "Plateau aux sols limoneux très fertiles : immenses champs de céréales et de betteraves sucrières.",
+     "region": "la Hesbaye"
+    },
+    {
+     "nom": "Autour de Waremme et de Hannut, les champs de betteraves sucrières s'étendent à perte de vue.",
+     "region": "la Hesbaye"
+    },
+    {
+     "nom": "Paysage de crêtes (les « tiges ») et de creux (les « chavées ») qui alternent, entre la Meuse et la Famenne.",
+     "region": "le Condroz"
+    },
+    {
+     "nom": "Grosses fermes en carré et villages sur les crêtes, autour de Ciney.",
+     "region": "le Condroz"
+    },
+    {
+     "nom": "Dépression aux sols argileux, humides, couverte de prairies, autour de Marche et de Rochefort.",
+     "region": "la Famenne"
+    },
+    {
+     "nom": "Plateau élevé et froid, couvert de grandes forêts (épicéas, hêtres), avec des vallées profondes.",
+     "region": "l'Ardenne"
+    },
+    {
+     "nom": "Région la plus haute de Belgique, où se trouvent les Hautes Fagnes et le signal de Botrange.",
+     "region": "l'Ardenne"
+    },
+    {
+     "nom": "Au sud du pays, autour d'Arlon et de Virton : un climat un peu plus doux et des côtes (cuestas).",
+     "region": "la Lorraine belge"
+    },
+    {
+     "nom": "Région de prairies entourées de haies (bocage), célèbre pour son fromage et son sirop de pommes et de poires.",
+     "region": "le pays de Herve"
+    }
+   ]
+  },
+  {
+   "id": "hg-pays-europe",
+   "description": "Pays d'Europe : capitale, appartenance à l'Union européenne (2026), pays fondateurs, euro (la Bulgarie utilise l'euro depuis le 1er janvier 2026). capitaleDistincte : la capitale ne porte pas le nom du pays.",
+   "cle": "nom",
+   "phrases": {
+    "ue": {
+     "membre de l'UE": "membre de l'Union européenne",
+     "pas membre de l'UE": "pas membre de l'Union européenne"
+    },
+    "ue_pluriel": {
+     "membre de l'UE": "membres de l'Union européenne",
+     "pas membre de l'UE": "pas membres de l'Union européenne"
+    }
+   },
+   "items": [
+    {
+     "nom": "Belgique",
+     "le": "la Belgique",
+     "de": "de la Belgique",
+     "capitale": "Bruxelles",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "France",
+     "le": "la France",
+     "de": "de la France",
+     "capitale": "Paris",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Allemagne",
+     "le": "l'Allemagne",
+     "de": "de l'Allemagne",
+     "capitale": "Berlin",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Italie",
+     "le": "l'Italie",
+     "de": "de l'Italie",
+     "capitale": "Rome",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Pays-Bas",
+     "le": "les Pays-Bas",
+     "de": "des Pays-Bas",
+     "capitale": "Amsterdam",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Luxembourg",
+     "le": "le Luxembourg",
+     "de": "du Luxembourg",
+     "capitale": "Luxembourg",
+     "ue": "membre de l'UE",
+     "fondateur": "pays fondateur",
+     "euro": "utilise l'euro"
+    },
+    {
+     "nom": "Danemark",
+     "le": "le Danemark",
+     "de": "du Danemark",
+     "capitale": "Copenhague",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Irlande",
+     "le": "l'Irlande",
+     "de": "de l'Irlande",
+     "capitale": "Dublin",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Grèce",
+     "le": "la Grèce",
+     "de": "de la Grèce",
+     "capitale": "Athènes",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Espagne",
+     "le": "l'Espagne",
+     "de": "de l'Espagne",
+     "capitale": "Madrid",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Portugal",
+     "le": "le Portugal",
+     "de": "du Portugal",
+     "capitale": "Lisbonne",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Autriche",
+     "le": "l'Autriche",
+     "de": "de l'Autriche",
+     "capitale": "Vienne",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Finlande",
+     "le": "la Finlande",
+     "de": "de la Finlande",
+     "capitale": "Helsinki",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Suède",
+     "le": "la Suède",
+     "de": "de la Suède",
+     "capitale": "Stockholm",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Pologne",
+     "le": "la Pologne",
+     "de": "de la Pologne",
+     "capitale": "Varsovie",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Tchéquie",
+     "le": "la Tchéquie",
+     "de": "de la Tchéquie",
+     "capitale": "Prague",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Slovaquie",
+     "le": "la Slovaquie",
+     "de": "de la Slovaquie",
+     "capitale": "Bratislava",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Hongrie",
+     "le": "la Hongrie",
+     "de": "de la Hongrie",
+     "capitale": "Budapest",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Slovénie",
+     "le": "la Slovénie",
+     "de": "de la Slovénie",
+     "capitale": "Ljubljana",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Croatie",
+     "le": "la Croatie",
+     "de": "de la Croatie",
+     "capitale": "Zagreb",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Estonie",
+     "le": "l'Estonie",
+     "de": "de l'Estonie",
+     "capitale": "Tallinn",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Lettonie",
+     "le": "la Lettonie",
+     "de": "de la Lettonie",
+     "capitale": "Riga",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Lituanie",
+     "le": "la Lituanie",
+     "de": "de la Lituanie",
+     "capitale": "Vilnius",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Roumanie",
+     "le": "la Roumanie",
+     "de": "de la Roumanie",
+     "capitale": "Bucarest",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "n'utilise pas l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Bulgarie",
+     "le": "la Bulgarie",
+     "de": "de la Bulgarie",
+     "capitale": "Sofia",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "info": "Elle utilise l'euro depuis le 1er janvier 2026.",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Malte",
+     "le": "Malte",
+     "de": "de Malte",
+     "capitale": "La Valette",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Chypre",
+     "le": "Chypre",
+     "de": "de Chypre",
+     "capitale": "Nicosie",
+     "ue": "membre de l'UE",
+     "fondateur": "entré plus tard",
+     "euro": "utilise l'euro",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Royaume-Uni",
+     "le": "le Royaume-Uni",
+     "de": "du Royaume-Uni",
+     "capitale": "Londres",
+     "ue": "pas membre de l'UE",
+     "info": "Il a quitté l'Union européenne en 2020.",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Suisse",
+     "le": "la Suisse",
+     "de": "de la Suisse",
+     "capitale": "Berne",
+     "ue": "pas membre de l'UE",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Norvège",
+     "le": "la Norvège",
+     "de": "de la Norvège",
+     "capitale": "Oslo",
+     "ue": "pas membre de l'UE",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Islande",
+     "le": "l'Islande",
+     "de": "de l'Islande",
+     "capitale": "Reykjavik",
+     "ue": "pas membre de l'UE",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Serbie",
+     "le": "la Serbie",
+     "de": "de la Serbie",
+     "capitale": "Belgrade",
+     "ue": "pas membre de l'UE",
+     "capitaleDistincte": true
+    },
+    {
+     "nom": "Albanie",
+     "le": "l'Albanie",
+     "de": "de l'Albanie",
+     "capitale": "Tirana",
+     "ue": "pas membre de l'UE",
+     "capitaleDistincte": true
+    }
+   ]
+  },
+  {
+   "id": "hg-pays-monde",
+   "description": "Pays du monde (genre « pays », situés sur un seul continent) et grands éléments naturels (genre « élément » : fleuves, montagnes, déserts, volcans).",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "la Belgique",
+     "continent": "Europe",
+     "capitale": "Bruxelles",
+     "genre": "pays"
+    },
+    {
+     "nom": "la France",
+     "continent": "Europe",
+     "capitale": "Paris",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Espagne",
+     "continent": "Europe",
+     "capitale": "Madrid",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Italie",
+     "continent": "Europe",
+     "capitale": "Rome",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Pologne",
+     "continent": "Europe",
+     "capitale": "Varsovie",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Norvège",
+     "continent": "Europe",
+     "capitale": "Oslo",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Grèce",
+     "continent": "Europe",
+     "capitale": "Athènes",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Irlande",
+     "continent": "Europe",
+     "capitale": "Dublin",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Maroc",
+     "continent": "Afrique",
+     "capitale": "Rabat",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Algérie",
+     "continent": "Afrique",
+     "capitale": "Alger",
+     "genre": "pays"
+    },
+    {
+     "nom": "la République démocratique du Congo",
+     "continent": "Afrique",
+     "capitale": "Kinshasa",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Sénégal",
+     "continent": "Afrique",
+     "capitale": "Dakar",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Kenya",
+     "continent": "Afrique",
+     "capitale": "Nairobi",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Nigeria",
+     "continent": "Afrique",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Rwanda",
+     "continent": "Afrique",
+     "capitale": "Kigali",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Mali",
+     "continent": "Afrique",
+     "capitale": "Bamako",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Tunisie",
+     "continent": "Afrique",
+     "capitale": "Tunis",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Cameroun",
+     "continent": "Afrique",
+     "capitale": "Yaoundé",
+     "genre": "pays"
+    },
+    {
+     "nom": "Madagascar",
+     "continent": "Afrique",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Éthiopie",
+     "continent": "Afrique",
+     "capitale": "Addis-Abeba",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Chine",
+     "continent": "Asie",
+     "capitale": "Pékin",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Japon",
+     "continent": "Asie",
+     "capitale": "Tokyo",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Inde",
+     "continent": "Asie",
+     "capitale": "New Delhi",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Viêt Nam",
+     "continent": "Asie",
+     "capitale": "Hanoï",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Thaïlande",
+     "continent": "Asie",
+     "capitale": "Bangkok",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Arabie saoudite",
+     "continent": "Asie",
+     "capitale": "Riyad",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Corée du Sud",
+     "continent": "Asie",
+     "capitale": "Séoul",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Pakistan",
+     "continent": "Asie",
+     "capitale": "Islamabad",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Iran",
+     "continent": "Asie",
+     "capitale": "Téhéran",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Mongolie",
+     "continent": "Asie",
+     "capitale": "Oulan-Bator",
+     "genre": "pays"
+    },
+    {
+     "nom": "les États-Unis",
+     "continent": "Amérique du Nord",
+     "capitale": "Washington",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Canada",
+     "continent": "Amérique du Nord",
+     "capitale": "Ottawa",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Mexique",
+     "continent": "Amérique du Nord",
+     "capitale": "Mexico",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Brésil",
+     "continent": "Amérique du Sud",
+     "capitale": "Brasilia",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Argentine",
+     "continent": "Amérique du Sud",
+     "capitale": "Buenos Aires",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Pérou",
+     "continent": "Amérique du Sud",
+     "capitale": "Lima",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Chili",
+     "continent": "Amérique du Sud",
+     "capitale": "Santiago",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Colombie",
+     "continent": "Amérique du Sud",
+     "capitale": "Bogota",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Bolivie",
+     "continent": "Amérique du Sud",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Venezuela",
+     "continent": "Amérique du Sud",
+     "capitale": "Caracas",
+     "genre": "pays"
+    },
+    {
+     "nom": "l'Australie",
+     "continent": "Océanie",
+     "capitale": "Canberra",
+     "genre": "pays"
+    },
+    {
+     "nom": "la Nouvelle-Zélande",
+     "continent": "Océanie",
+     "capitale": "Wellington",
+     "genre": "pays"
+    },
+    {
+     "nom": "le Nil",
+     "type": "un fleuve",
+     "continent": "Afrique",
+     "info": "C'est un des plus longs fleuves du monde ; il traverse l'Égypte.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Congo",
+     "type": "un fleuve",
+     "continent": "Afrique",
+     "info": "Il traverse la forêt équatoriale d'Afrique centrale.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Niger",
+     "type": "un fleuve",
+     "continent": "Afrique",
+     "genre": "élément"
+    },
+    {
+     "nom": "l'Amazone",
+     "type": "un fleuve",
+     "continent": "Amérique du Sud",
+     "info": "C'est le fleuve qui a le plus grand débit du monde.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Mississippi",
+     "type": "un fleuve",
+     "continent": "Amérique du Nord",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Yangzi Jiang",
+     "type": "un fleuve",
+     "continent": "Asie",
+     "info": "C'est le plus long fleuve de Chine.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Gange",
+     "type": "un fleuve",
+     "continent": "Asie",
+     "info": "C'est un fleuve sacré pour les hindous, en Inde.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Danube",
+     "type": "un fleuve",
+     "continent": "Europe",
+     "info": "Il traverse Vienne, Budapest et Belgrade.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Rhin",
+     "type": "un fleuve",
+     "continent": "Europe",
+     "genre": "élément"
+    },
+    {
+     "nom": "la Volga",
+     "type": "un fleuve",
+     "continent": "Europe",
+     "info": "C'est le plus long fleuve d'Europe.",
+     "genre": "élément"
+    },
+    {
+     "nom": "la Seine",
+     "type": "un fleuve",
+     "continent": "Europe",
+     "info": "Elle traverse Paris.",
+     "genre": "élément"
+    },
+    {
+     "nom": "les Alpes",
+     "type": "une chaîne de montagnes",
+     "continent": "Europe",
+     "info": "Le mont Blanc en est le plus haut sommet.",
+     "genre": "élément"
+    },
+    {
+     "nom": "les Pyrénées",
+     "type": "une chaîne de montagnes",
+     "continent": "Europe",
+     "info": "Elles séparent la France de l'Espagne.",
+     "genre": "élément"
+    },
+    {
+     "nom": "les Carpates",
+     "type": "une chaîne de montagnes",
+     "continent": "Europe",
+     "genre": "élément"
+    },
+    {
+     "nom": "l'Himalaya",
+     "type": "une chaîne de montagnes",
+     "continent": "Asie",
+     "info": "L'Everest, le plus haut sommet du monde, s'y trouve.",
+     "genre": "élément"
+    },
+    {
+     "nom": "les Andes",
+     "type": "une chaîne de montagnes",
+     "continent": "Amérique du Sud",
+     "info": "C'est la plus longue chaîne de montagnes du monde.",
+     "genre": "élément"
+    },
+    {
+     "nom": "les Rocheuses",
+     "type": "une chaîne de montagnes",
+     "continent": "Amérique du Nord",
+     "genre": "élément"
+    },
+    {
+     "nom": "l'Atlas",
+     "type": "une chaîne de montagnes",
+     "continent": "Afrique",
+     "info": "On la trouve notamment au Maroc.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Sahara",
+     "type": "un désert",
+     "continent": "Afrique",
+     "info": "C'est le plus grand désert chaud du monde.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Kalahari",
+     "type": "un désert",
+     "continent": "Afrique",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Gobi",
+     "type": "un désert",
+     "continent": "Asie",
+     "genre": "élément"
+    },
+    {
+     "nom": "l'Atacama",
+     "type": "un désert",
+     "continent": "Amérique du Sud",
+     "info": "C'est un des déserts les plus secs du monde.",
+     "genre": "élément"
+    },
+    {
+     "nom": "le Kilimandjaro",
+     "type": "un volcan",
+     "continent": "Afrique",
+     "info": "C'est le plus haut sommet d'Afrique.",
+     "genre": "élément"
+    },
+    {
+     "nom": "l'Etna",
+     "type": "un volcan",
+     "continent": "Europe",
+     "info": "Il se trouve en Sicile, en Italie.",
+     "genre": "élément"
+    }
+   ],
+   "phrases": {}
+  },
+  {
+   "id": "hg-villes-monde",
+   "description": "Villes du monde : latitude/longitude arrondies, hémisphères, zone thermique (lieux trop proches d'une ligne exclus).",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "Bruxelles",
+     "pays": "Belgique",
+     "lat": 51,
+     "lon": 4,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "51° N"
+    },
+    {
+     "nom": "Oslo",
+     "pays": "Norvège",
+     "lat": 60,
+     "lon": 11,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "60° N"
+    },
+    {
+     "nom": "Madrid",
+     "pays": "Espagne",
+     "lat": 40,
+     "lon": -4,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "40° N"
+    },
+    {
+     "nom": "Lisbonne",
+     "pays": "Portugal",
+     "lat": 39,
+     "lon": -9,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "39° N"
+    },
+    {
+     "nom": "Dublin",
+     "pays": "Irlande",
+     "lat": 53,
+     "lon": -6,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "53° N"
+    },
+    {
+     "nom": "Rome",
+     "pays": "Italie",
+     "lat": 42,
+     "lon": 12,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "42° N"
+    },
+    {
+     "nom": "Moscou",
+     "pays": "Russie",
+     "lat": 56,
+     "lon": 38,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "56° N"
+    },
+    {
+     "nom": "Dakar",
+     "pays": "Sénégal",
+     "lat": 15,
+     "lon": -17,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "la zone chaude",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "15° N"
+    },
+    {
+     "nom": "Kinshasa",
+     "pays": "République démocratique du Congo",
+     "lat": -4,
+     "lon": 15,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Est",
+     "zone": "la zone chaude",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "4° S"
+    },
+    {
+     "nom": "Nairobi",
+     "pays": "Kenya",
+     "lat": -1,
+     "lon": 37,
+     "hemEO": "l'hémisphère Est",
+     "zone": "la zone chaude",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "1° S"
+    },
+    {
+     "nom": "Le Cap",
+     "pays": "Afrique du Sud",
+     "lat": -34,
+     "lon": 18,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "34° S"
+    },
+    {
+     "nom": "Pékin",
+     "pays": "Chine",
+     "lat": 40,
+     "lon": 116,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "40° N"
+    },
+    {
+     "nom": "Tokyo",
+     "pays": "Japon",
+     "lat": 36,
+     "lon": 140,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "36° N"
+    },
+    {
+     "nom": "Bangkok",
+     "pays": "Thaïlande",
+     "lat": 14,
+     "lon": 101,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "la zone chaude",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "14° N"
+    },
+    {
+     "nom": "Singapour",
+     "pays": "cité-État d'Asie",
+     "lat": 1,
+     "lon": 104,
+     "hemEO": "l'hémisphère Est",
+     "zone": "la zone chaude",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "1° N"
+    },
+    {
+     "nom": "Sydney",
+     "pays": "Australie",
+     "lat": -34,
+     "lon": 151,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "34° S"
+    },
+    {
+     "nom": "Wellington",
+     "pays": "Nouvelle-Zélande",
+     "lat": -41,
+     "lon": 175,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "41° S"
+    },
+    {
+     "nom": "New York",
+     "pays": "États-Unis",
+     "lat": 41,
+     "lon": -74,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "41° N"
+    },
+    {
+     "nom": "Montréal",
+     "pays": "Canada",
+     "lat": 46,
+     "lon": -74,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "46° N"
+    },
+    {
+     "nom": "Mexico",
+     "pays": "Mexique",
+     "lat": 19,
+     "lon": -99,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "la zone chaude",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "19° N"
+    },
+    {
+     "nom": "Lima",
+     "pays": "Pérou",
+     "lat": -12,
+     "lon": -77,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "la zone chaude",
+     "cote": "sud",
+     "cote2": "à l'ouest",
+     "latTexte": "12° S"
+    },
+    {
+     "nom": "Buenos Aires",
+     "pays": "Argentine",
+     "lat": -35,
+     "lon": -58,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'ouest",
+     "latTexte": "35° S"
+    },
+    {
+     "nom": "Santiago",
+     "pays": "Chili",
+     "lat": -33,
+     "lon": -71,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'ouest",
+     "latTexte": "33° S"
+    },
+    {
+     "nom": "Bogota",
+     "pays": "Colombie",
+     "lat": 5,
+     "lon": -74,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "la zone chaude",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "5° N"
+    },
+    {
+     "nom": "Reykjavik",
+     "pays": "Islande",
+     "lat": 64,
+     "lon": -22,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "nord",
+     "cote2": "à l'ouest",
+     "latTexte": "64° N"
+    },
+    {
+     "nom": "Mourmansk",
+     "pays": "Russie",
+     "lat": 69,
+     "lon": 33,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone froide",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "69° N"
+    },
+    {
+     "nom": "Longyearbyen",
+     "pays": "Svalbard, Norvège",
+     "lat": 78,
+     "lon": 16,
+     "hemNS": "l'hémisphère Nord",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone froide",
+     "cote": "nord",
+     "cote2": "à l'est",
+     "latTexte": "78° N"
+    },
+    {
+     "nom": "la base antarctique belge Princesse Elisabeth",
+     "pays": "Antarctique",
+     "lat": -72,
+     "lon": 23,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Est",
+     "zone": "une zone froide",
+     "cote": "sud",
+     "cote2": "à l'est",
+     "latTexte": "72° S"
+    },
+    {
+     "nom": "Ushuaïa",
+     "pays": "Argentine",
+     "lat": -55,
+     "lon": -68,
+     "hemNS": "l'hémisphère Sud",
+     "hemEO": "l'hémisphère Ouest",
+     "zone": "une zone tempérée",
+     "cote": "sud",
+     "cote2": "à l'ouest",
+     "latTexte": "55° S"
+    }
+   ]
+  },
+  {
+   "id": "hg-metiers",
+   "description": "Métiers et secteur d'activité.",
+   "cle": "nom",
+   "phrases": {
+    "secteur": {
+     "primaire": "le secteur primaire",
+     "secondaire": "le secteur secondaire",
+     "tertiaire": "le secteur tertiaire"
+    }
+   },
+   "items": [
+    {
+     "nom": "l'agricultrice qui cultive des céréales",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "l'éleveur de vaches laitières",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "le pêcheur en mer du Nord",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "le bûcheron",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "le maraîcher qui cultive des légumes",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "l'apiculteur qui récolte le miel",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "le mineur de charbon",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "l'ouvrier d'une carrière de pierre",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "le viticulteur qui cultive la vigne",
+     "secteur": "primaire"
+    },
+    {
+     "nom": "l'ouvrière d'une usine automobile",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "le maçon qui construit une maison",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "le menuisier qui fabrique des meubles",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "l'ouvrier d'une brasserie",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "l'ouvrier d'une aciérie",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "l'ouvrière d'une chocolaterie industrielle",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "le soudeur dans un chantier naval",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "l'ouvrier d'une sucrerie qui transforme les betteraves",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "la couturière d'un atelier de confection",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "le couvreur qui pose une toiture",
+     "secteur": "secondaire"
+    },
+    {
+     "nom": "l'institutrice",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le médecin",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "l'infirmier",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la coiffeuse",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le vendeur dans un magasin",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la caissière de supermarché",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le chauffeur de bus",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la policière",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le facteur",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "l'avocate",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le guide touristique",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la serveuse de restaurant",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le pharmacien",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la journaliste",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le banquier",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "la bibliothécaire",
+     "secteur": "tertiaire"
+    },
+    {
+     "nom": "le pompier",
+     "secteur": "tertiaire"
+    }
+   ]
+  },
+  {
+   "id": "hg-paysages",
+   "description": "Descriptions de paysages : rural, urbain, industriel. Descriptions d'habitat : groupé, dispersé, linéaire.",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "Des champs de blé, des prairies avec des vaches et quelques fermes.",
+     "type": "rural"
+    },
+    {
+     "nom": "Un petit village entouré de vergers, de champs et de bois.",
+     "type": "rural"
+    },
+    {
+     "nom": "Des pâturages, un tracteur dans un champ et une ferme isolée.",
+     "type": "rural"
+    },
+    {
+     "nom": "Des prairies entourées de haies, des vaches et des fermes éloignées les unes des autres.",
+     "type": "rural"
+    },
+    {
+     "nom": "Des immeubles, des magasins, des rues embouteillées et des trottoirs pleins de monde.",
+     "type": "urbain"
+    },
+    {
+     "nom": "Une gare, des tours de bureaux, un métro et de grandes avenues.",
+     "type": "urbain"
+    },
+    {
+     "nom": "Des maisons mitoyennes serrées les unes contre les autres, des écoles, des parcs et beaucoup de circulation.",
+     "type": "urbain"
+    },
+    {
+     "nom": "Une place avec un hôtel de ville, des cafés, des commerces et des bus.",
+     "type": "urbain"
+    },
+    {
+     "nom": "Des usines, de hautes cheminées, des entrepôts et une voie ferrée pour les marchandises.",
+     "type": "industriel"
+    },
+    {
+     "nom": "Des hauts fourneaux, des terrils et d'anciennes mines de charbon.",
+     "type": "industriel"
+    },
+    {
+     "nom": "Un zoning avec de grands hangars, des parkings pour camions et une autoroute toute proche.",
+     "type": "industriel"
+    },
+    {
+     "nom": "Un port avec des grues, des conteneurs empilés et des raffineries.",
+     "type": "industriel"
+    },
+    {
+     "nom": "Les maisons sont serrées les unes contre les autres autour de l'église et de la place du village.",
+     "habitat": "groupé"
+    },
+    {
+     "nom": "Les maisons forment un noyau compact au centre, entouré de champs.",
+     "habitat": "groupé"
+    },
+    {
+     "nom": "Toutes les maisons sont regroupées au même endroit, au bord de la rivière.",
+     "habitat": "groupé"
+    },
+    {
+     "nom": "Les fermes sont isolées, éloignées les unes des autres au milieu des prairies.",
+     "habitat": "dispersé"
+    },
+    {
+     "nom": "On voit des maisons éparpillées un peu partout dans la campagne, chacune entourée de ses terres.",
+     "habitat": "dispersé"
+    },
+    {
+     "nom": "Des fermes isolées au milieu des champs, reliées par de petits chemins.",
+     "habitat": "dispersé"
+    },
+    {
+     "nom": "Les maisons sont alignées le long de la route principale, sur plusieurs kilomètres.",
+     "habitat": "linéaire (en ruban)"
+    },
+    {
+     "nom": "Les maisons s'étirent en une longue file le long d'un canal.",
+     "habitat": "linéaire (en ruban)"
+    },
+    {
+     "nom": "Les maisons sont construites les unes à la suite des autres, de chaque côté d'une longue rue qui traverse la campagne.",
+     "habitat": "linéaire (en ruban)"
+    }
+   ],
+   "phrases": {}
+  },
+  {
+   "id": "hg-milieux",
+   "description": "Indices des grands milieux de vie du monde. Indices des grands types de climats.",
+   "cle": "nom",
+   "phrases": {
+    "milieu": {
+     "la forêt équatoriale": "à la forêt équatoriale",
+     "le désert chaud": "au désert chaud",
+     "la savane": "à la savane",
+     "la toundra": "à la toundra",
+     "le milieu polaire": "au milieu polaire",
+     "la forêt tempérée": "à la forêt tempérée",
+     "la taïga": "à la taïga",
+     "la montagne": "à la montagne"
+    },
+    "climat": {
+     "le climat tempéré océanique": "au climat tempéré océanique",
+     "le climat méditerranéen": "au climat méditerranéen",
+     "le climat continental": "au climat continental",
+     "le climat équatorial": "au climat équatorial",
+     "le climat polaire": "au climat polaire",
+     "le climat désertique": "au climat désertique"
+    }
+   },
+   "items": [
+    {
+     "nom": "Il fait chaud et humide toute l'année et il pleut presque tous les jours.",
+     "milieu": "la forêt équatoriale"
+    },
+    {
+     "nom": "Une forêt très dense, avec de très grands arbres, des lianes et des gorilles.",
+     "milieu": "la forêt équatoriale"
+    },
+    {
+     "nom": "Il ne pleut presque jamais ; il fait très chaud le jour et froid la nuit ; on y voit des dunes de sable.",
+     "milieu": "le désert chaud"
+    },
+    {
+     "nom": "On y croise des dromadaires et, parfois, une oasis avec des palmiers dattiers.",
+     "milieu": "le désert chaud"
+    },
+    {
+     "nom": "De hautes herbes, quelques arbres comme le baobab ou l'acacia, des zèbres et des lions ; une saison sèche et une saison des pluies.",
+     "milieu": "la savane"
+    },
+    {
+     "nom": "Le sol est gelé en profondeur ; en été, seuls des mousses, des lichens et de petits arbustes poussent. On y voit des rennes.",
+     "milieu": "la toundra"
+    },
+    {
+     "nom": "Une immense étendue de glace et de neige, un froid extrême et des ours polaires.",
+     "milieu": "le milieu polaire"
+    },
+    {
+     "nom": "Des manchots empereurs vivent sur la glace, dans le froid extrême du pôle Sud.",
+     "milieu": "le milieu polaire"
+    },
+    {
+     "nom": "Une forêt de chênes et de hêtres qui perdent leurs feuilles en automne ; quatre saisons bien marquées.",
+     "milieu": "la forêt tempérée"
+    },
+    {
+     "nom": "Une immense forêt de conifères (sapins, épicéas), des hivers très longs et très froids.",
+     "milieu": "la taïga"
+    },
+    {
+     "nom": "Plus on monte, plus il fait froid : les forêts laissent la place aux alpages, puis aux rochers et aux neiges éternelles.",
+     "milieu": "la montagne"
+    },
+    {
+     "nom": "Des hivers doux, des étés frais et des pluies réparties sur toute l'année.",
+     "climat": "le climat tempéré océanique"
+    },
+    {
+     "nom": "C'est le climat de la Belgique : il n'y fait jamais ni très chaud ni très froid longtemps, et il pleut souvent.",
+     "climat": "le climat tempéré océanique"
+    },
+    {
+     "nom": "Des étés chauds et secs, des hivers doux et pluvieux ; on y cultive l'olivier et la vigne.",
+     "climat": "le climat méditerranéen"
+    },
+    {
+     "nom": "Le climat du sud de la France, de l'Italie et de la Grèce, au bord de la mer Méditerranée.",
+     "climat": "le climat méditerranéen"
+    },
+    {
+     "nom": "Des hivers très froids et longs, des étés chauds ; c'est le climat de l'intérieur des grands continents, loin de la mer.",
+     "climat": "le climat continental"
+    },
+    {
+     "nom": "Il fait chaud et humide toute l'année, avec des pluies presque tous les jours, près de l'équateur.",
+     "climat": "le climat équatorial"
+    },
+    {
+     "nom": "Il fait froid toute l'année, même en été ; les températures restent le plus souvent sous 0 °C.",
+     "climat": "le climat polaire"
+    },
+    {
+     "nom": "Il fait très chaud et il ne pleut presque jamais.",
+     "climat": "le climat désertique"
+    }
+   ]
+  },
+  {
+   "id": "hg-usages-cartes",
+   "description": "Besoins et type de carte adapté.",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "trouver le chemin en voiture entre Namur et Arlon",
+     "carte": "une carte routière"
+    },
+    {
+     "nom": "repérer les autoroutes et les nationales pour partir en vacances",
+     "carte": "une carte routière"
+    },
+    {
+     "nom": "trouver une rue précise dans une ville",
+     "carte": "un plan de ville"
+    },
+    {
+     "nom": "repérer l'emplacement de la gare et de l'hôtel de ville dans Liège",
+     "carte": "un plan de ville"
+    },
+    {
+     "nom": "connaître les frontières et les capitales des pays d'Europe",
+     "carte": "une carte politique"
+    },
+    {
+     "nom": "savoir quels pays entourent la Belgique",
+     "carte": "une carte politique"
+    },
+    {
+     "nom": "voir où se trouvent les plaines, les plateaux et les montagnes",
+     "carte": "une carte du relief"
+    },
+    {
+     "nom": "comparer l'altitude de l'Ardenne et celle de la Flandre",
+     "carte": "une carte du relief"
+    },
+    {
+     "nom": "savoir où vivent beaucoup ou peu d'habitants par km²",
+     "carte": "une carte de la densité de population"
+    },
+    {
+     "nom": "comparer le nombre d'habitants au km² dans les provinces",
+     "carte": "une carte de la densité de population"
+    },
+    {
+     "nom": "connaître les températures et les précipitations des différentes régions",
+     "carte": "une carte des climats"
+    },
+    {
+     "nom": "repérer les zones chaudes, tempérées et froides de la Terre",
+     "carte": "une carte des climats"
+    }
+   ]
+  },
+  {
+   "id": "hg-transports",
+   "description": "Moyens de transport et voie utilisée.",
+   "cle": "nom",
+   "items": [
+    {
+     "nom": "le camion",
+     "voie": "la route"
+    },
+    {
+     "nom": "la voiture",
+     "voie": "la route"
+    },
+    {
+     "nom": "le bus",
+     "voie": "la route"
+    },
+    {
+     "nom": "le vélo",
+     "voie": "la route"
+    },
+    {
+     "nom": "la moto",
+     "voie": "la route"
+    },
+    {
+     "nom": "le car scolaire",
+     "voie": "la route"
+    },
+    {
+     "nom": "le train",
+     "voie": "le rail"
+    },
+    {
+     "nom": "le tram",
+     "voie": "le rail"
+    },
+    {
+     "nom": "le TGV",
+     "voie": "le rail"
+    },
+    {
+     "nom": "le train de marchandises",
+     "voie": "le rail"
+    },
+    {
+     "nom": "la péniche",
+     "voie": "l'eau"
+    },
+    {
+     "nom": "le paquebot",
+     "voie": "l'eau"
+    },
+    {
+     "nom": "le porte-conteneurs",
+     "voie": "l'eau"
+    },
+    {
+     "nom": "le ferry",
+     "voie": "l'eau"
+    },
+    {
+     "nom": "le bateau de pêche",
+     "voie": "l'eau"
+    },
+    {
+     "nom": "l'avion",
+     "voie": "l'air"
+    },
+    {
+     "nom": "l'hélicoptère",
+     "voie": "l'air"
+    },
+    {
+     "nom": "la montgolfière",
+     "voie": "l'air"
+    },
+    {
+     "nom": "l'avion-cargo",
+     "voie": "l'air"
+    }
+   ]
+  },
+  {
+   "id": "hg-q-belgique",
+   "description": "Questions sur les institutions, le territoire et le relief de la Belgique (réserve de mauvaises réponses).",
+   "cle": "q",
+   "items": [
+    {
+     "q": "Combien de Régions compte la Belgique ?",
+     "ok": "3",
+     "ko": [
+      "2",
+      "4",
+      "5",
+      "10"
+     ],
+     "expl": "Trois Régions : la Région flamande, la Région wallonne et la Région de Bruxelles-Capitale."
+    },
+    {
+     "q": "Combien de Communautés compte la Belgique ?",
+     "ok": "3",
+     "ko": [
+      "2",
+      "4",
+      "5",
+      "10"
+     ],
+     "expl": "Trois Communautés : française, flamande et germanophone. Elles s'occupent notamment de l'enseignement et de la culture."
+    },
+    {
+     "q": "Quelles sont les trois Régions de la Belgique ?",
+     "ok": "La Région flamande, la Région wallonne et la Région de Bruxelles-Capitale",
+     "ko": [
+      "La Région flamande, la Région wallonne et la Région germanophone",
+      "La Région française, la Région flamande et la Région germanophone",
+      "La Région du Nord, la Région du Centre et la Région du Sud"
+     ],
+     "expl": "Les Régions s'occupent surtout du territoire : économie, routes, environnement, logement…"
+    },
+    {
+     "q": "Quelles sont les trois Communautés de la Belgique ?",
+     "ok": "Les Communautés française, flamande et germanophone",
+     "ko": [
+      "Les Communautés flamande, wallonne et bruxelloise",
+      "Les Communautés française, néerlandaise et luxembourgeoise",
+      "Les Communautés du Nord, du Centre et du Sud"
+     ],
+     "expl": "Les Communautés sont liées aux langues : français, néerlandais et allemand."
+    },
+    {
+     "q": "Quelles sont les trois langues officielles de la Belgique ?",
+     "ok": "Le français, le néerlandais et l'allemand",
+     "ko": [
+      "Le français, le néerlandais et l'anglais",
+      "Le français, le flamand et le wallon",
+      "Le français, l'allemand et le luxembourgeois",
+      "Le wallon, le flamand et le bruxellois"
+     ],
+     "expl": "Le français, le néerlandais et l'allemand sont les trois langues officielles."
+    },
+    {
+     "q": "Quelle est la capitale de la Belgique ?",
+     "ok": "Bruxelles",
+     "ko": [
+      "Namur",
+      "Anvers",
+      "Liège",
+      "Gand"
+     ],
+     "expl": "Bruxelles est la capitale de la Belgique. Namur est la capitale de la Wallonie."
+    },
+    {
+     "q": "Quelle ville est la capitale de la Wallonie ?",
+     "ok": "Namur",
+     "ko": [
+      "Liège",
+      "Charleroi",
+      "Mons",
+      "Wavre"
+     ],
+     "expl": "Le Parlement et le Gouvernement wallons siègent à Namur."
+    },
+    {
+     "q": "Dans quelle province se trouve la Région de Bruxelles-Capitale ?",
+     "ok": "Dans aucune province",
+     "ko": [
+      "Dans le Brabant flamand",
+      "Dans le Brabant wallon",
+      "Dans la province d'Anvers"
+     ],
+     "expl": "Bruxelles-Capitale ne fait partie d'aucune province : les 10 provinces sont en Flandre (5) et en Wallonie (5)."
+    },
+    {
+     "q": "Combien de communes compte la Région de Bruxelles-Capitale ?",
+     "ok": "19",
+     "ko": [
+      "10",
+      "5",
+      "262",
+      "9"
+     ],
+     "expl": "La Région de Bruxelles-Capitale compte 19 communes, dont Bruxelles-Ville, Ixelles et Schaerbeek."
+    },
+    {
+     "q": "Dans quelle Région se trouvent les communes de langue allemande ?",
+     "ok": "Dans la Région wallonne",
+     "ko": [
+      "Dans la Région flamande",
+      "Dans la Région de Bruxelles-Capitale",
+      "Dans aucune Région"
+     ],
+     "expl": "Les communes germanophones (Eupen, Saint-Vith…) sont dans la province de Liège, en Région wallonne."
+    },
+    {
+     "q": "Dans quelle province se trouvent les communes de langue allemande ?",
+     "ok": "Dans la province de Liège",
+     "ko": [
+      "Dans la province de Luxembourg",
+      "Dans la province de Limbourg",
+      "Dans la province de Namur"
+     ],
+     "expl": "Les 9 communes germanophones, comme Eupen et Saint-Vith, sont à l'est de la province de Liège."
+    },
+    {
+     "q": "Quelle Région est officiellement bilingue (français et néerlandais) ?",
+     "ok": "La Région de Bruxelles-Capitale",
+     "ko": [
+      "La Région wallonne",
+      "La Région flamande",
+      "Aucune Région"
+     ],
+     "expl": "À Bruxelles, le français et le néerlandais sont tous les deux langues officielles."
+    },
+    {
+     "q": "Combien de provinces compte la Région wallonne ?",
+     "ok": "5",
+     "ko": [
+      "10",
+      "3",
+      "4",
+      "6"
+     ],
+     "expl": "Hainaut, Namur, Liège, Luxembourg et Brabant wallon : 5 provinces."
+    },
+    {
+     "q": "Qui est le chef de l'État en Belgique ?",
+     "ok": "Le roi",
+     "ko": [
+      "Le Premier ministre",
+      "Le président de la République",
+      "Le bourgmestre de Bruxelles"
+     ],
+     "expl": "La Belgique est une monarchie constitutionnelle : le roi est le chef de l'État. Le Premier ministre dirige le gouvernement fédéral."
+    },
+    {
+     "q": "Qui est le roi des Belges en 2026 ?",
+     "ok": "Philippe",
+     "ko": [
+      "Albert II",
+      "Baudouin",
+      "Léopold III",
+      "Albert Ier"
+     ],
+     "expl": "Le roi Philippe règne depuis 2013. Il a succédé à son père, Albert II."
+    },
+    {
+     "q": "Comment s'appelle le chef d'une commune belge ?",
+     "ok": "Le bourgmestre",
+     "ko": [
+      "Le gouverneur",
+      "Le maire",
+      "Le Premier ministre"
+     ],
+     "expl": "En Belgique, on dit « bourgmestre » (en France, on dit « maire »). Une province est dirigée par un gouverneur."
+    },
+    {
+     "q": "Qui s'occupe de l'enseignement dans les écoles francophones de Wallonie et de Bruxelles ?",
+     "ok": "La Fédération Wallonie-Bruxelles (Communauté française)",
+     "ko": [
+      "La Région wallonne",
+      "La province",
+      "La Région de Bruxelles-Capitale"
+     ],
+     "expl": "L'enseignement dépend des Communautés. Pour les francophones, c'est la Fédération Wallonie-Bruxelles, qui organise aussi le CEB."
+    },
+    {
+     "q": "Quel est le point culminant (le plus haut) de la Belgique ?",
+     "ok": "Le signal de Botrange",
+     "ko": [
+      "Le mont Kemmel",
+      "Le mont Blanc",
+      "La citadelle de Namur",
+      "L'Atomium"
+     ],
+     "expl": "Le signal de Botrange, dans les Hautes Fagnes (province de Liège), culmine à 694 mètres."
+    },
+    {
+     "q": "Quelle est l'altitude du signal de Botrange, point culminant de la Belgique ?",
+     "ok": "694 m",
+     "ko": [
+      "156 m",
+      "1 694 m",
+      "4 809 m",
+      "69 m"
+     ],
+     "expl": "694 m : c'est modeste comparé aux Alpes (le mont Blanc dépasse 4 800 m)."
+    },
+    {
+     "q": "Dans quelle province se trouve le signal de Botrange ?",
+     "ok": "La province de Liège",
+     "ko": [
+      "La province de Luxembourg",
+      "La province de Namur",
+      "La province de Limbourg"
+     ],
+     "expl": "Il se trouve dans les Hautes Fagnes, à l'est de la province de Liège."
+    },
+    {
+     "q": "Quelle est la longueur de la côte belge ?",
+     "ok": "Environ 67 km",
+     "ko": [
+      "Environ 670 km",
+      "Environ 7 km",
+      "Environ 1 670 km"
+     ],
+     "expl": "La côte belge, le long de la mer du Nord, mesure environ 67 km, de La Panne à Knokke-Heist."
+    },
+    {
+     "q": "Quelle mer borde la Belgique ?",
+     "ok": "La mer du Nord",
+     "ko": [
+      "La mer Méditerranée",
+      "La mer Baltique",
+      "La Manche",
+      "L'océan Atlantique"
+     ],
+     "expl": "La Belgique a une petite côte sur la mer du Nord, en Flandre occidentale."
+    },
+    {
+     "q": "Quelle province belge est bordée par la mer ?",
+     "ok": "La Flandre occidentale",
+     "ko": [
+      "La Flandre orientale",
+      "La province d'Anvers",
+      "Le Hainaut"
+     ],
+     "expl": "Seule la Flandre occidentale touche la mer du Nord (Ostende, La Panne, Knokke-Heist…)."
+    },
+    {
+     "q": "Combien de pays voisins la Belgique a-t-elle ?",
+     "ok": "4",
+     "ko": [
+      "3",
+      "5",
+      "6"
+     ],
+     "expl": "La France, les Pays-Bas, l'Allemagne et le Grand-Duché de Luxembourg."
+    },
+    {
+     "q": "Quel pays voisin se trouve au nord de la Belgique ?",
+     "ok": "Les Pays-Bas",
+     "ko": [
+      "La France",
+      "L'Allemagne",
+      "Le Luxembourg"
+     ],
+     "expl": "Les Pays-Bas au nord, l'Allemagne à l'est, le Luxembourg au sud-est et la France au sud et à l'ouest."
+    },
+    {
+     "q": "Quel pays voisin se trouve à l'est de la Belgique ?",
+     "ok": "L'Allemagne",
+     "ko": [
+      "La France",
+      "Les Pays-Bas",
+      "Le Royaume-Uni"
+     ],
+     "expl": "L'Allemagne est à l'est, près de la province de Liège."
+    },
+    {
+     "q": "Quel pays voisin se trouve au sud-est de la Belgique ?",
+     "ok": "Le Grand-Duché de Luxembourg",
+     "ko": [
+      "Les Pays-Bas",
+      "Le Royaume-Uni",
+      "La Suisse"
+     ],
+     "expl": "Le Grand-Duché de Luxembourg touche la province de Luxembourg et la province de Liège."
+    },
+    {
+     "q": "Comment évolue l'altitude en Belgique ?",
+     "ok": "Elle augmente du nord-ouest (la côte) vers le sud-est (l'Ardenne)",
+     "ko": [
+      "Elle augmente du sud-est vers le nord-ouest",
+      "Elle est partout la même",
+      "Elle augmente de l'est vers l'ouest"
+     ],
+     "expl": "La basse Belgique est au nord-ouest (Polders, près de la mer), la haute Belgique au sud-est (Ardenne, Hautes Fagnes)."
+    },
+    {
+     "q": "Quelle est la plus grande province de Belgique (en superficie) ?",
+     "ok": "La province de Luxembourg",
+     "ko": [
+      "La province de Liège",
+      "La province de Hainaut",
+      "La province d'Anvers"
+     ],
+     "expl": "La province de Luxembourg mesure environ 4 460 km², mais c'est la moins peuplée."
+    },
+    {
+     "q": "Quelle est la plus petite province de Belgique (en superficie) ?",
+     "ok": "Le Brabant wallon",
+     "ko": [
+      "Le Brabant flamand",
+      "Le Limbourg",
+      "La province de Namur"
+     ],
+     "expl": "Le Brabant wallon mesure environ 1 100 km²."
+    },
+    {
+     "q": "Quelle est la province la plus peuplée de Belgique (en 2024) ?",
+     "ok": "La province d'Anvers",
+     "ko": [
+      "La province de Hainaut",
+      "La province de Liège",
+      "La Flandre orientale"
+     ],
+     "expl": "En 2024, la province d'Anvers comptait un peu plus de 1,9 million d'habitants."
+    },
+    {
+     "q": "Quelle est la province la moins peuplée de Belgique (en 2024) ?",
+     "ok": "La province de Luxembourg",
+     "ko": [
+      "Le Brabant wallon",
+      "La province de Namur",
+      "Le Limbourg"
+     ],
+     "expl": "En 2024, la province de Luxembourg comptait environ 295 000 habitants."
+    },
+    {
+     "q": "Quel est le plus grand port de Belgique ?",
+     "ok": "Le port d'Anvers",
+     "ko": [
+      "Le port d'Ostende",
+      "Le port de Liège",
+      "Le port de Namur"
+     ],
+     "expl": "Le port d'Anvers, sur l'Escaut, est l'un des plus grands ports d'Europe."
+    },
+    {
+     "q": "Laquelle de ces provinces n'a aucune frontière avec un pays étranger ?",
+     "ok": "Le Brabant flamand",
+     "ko": [
+      "Le Hainaut",
+      "La province de Liège",
+      "La province d'Anvers",
+      "La province de Luxembourg"
+     ],
+     "expl": "Les deux Brabants (flamand et wallon) sont au centre du pays : ils ne touchent aucun pays étranger."
+    },
+    {
+     "q": "Combien de provinces compte la Belgique ?",
+     "ok": "10",
+     "ko": [
+      "9",
+      "11",
+      "12",
+      "3"
+     ],
+     "expl": "10 provinces : 5 en Région flamande et 5 en Région wallonne. Bruxelles-Capitale ne fait partie d'aucune province."
+    },
+    {
+     "q": "Combien de provinces compte la Région flamande ?",
+     "ok": "5",
+     "ko": [
+      "10",
+      "3",
+      "4",
+      "6"
+     ],
+     "expl": "Anvers, Limbourg, Flandre orientale, Flandre occidentale et Brabant flamand : 5 provinces."
+    },
+    {
+     "q": "Qui dirige une province ?",
+     "ok": "Le gouverneur",
+     "ko": [
+      "Le bourgmestre",
+      "Le roi",
+      "Le Premier ministre"
+     ],
+     "expl": "Chaque province a un gouverneur. Une commune est dirigée par un bourgmestre."
+    },
+    {
+     "q": "Combien de communes de langue allemande compte la Belgique ?",
+     "ok": "9",
+     "ko": [
+      "3",
+      "19",
+      "5"
+     ],
+     "expl": "Les 9 communes germanophones (Eupen, Saint-Vith, La Calamine…) sont à l'est de la province de Liège."
+    },
+    {
+     "q": "Dans quelle mer se jettent l'Escaut et la Meuse ?",
+     "ok": "La mer du Nord",
+     "ko": [
+      "La mer Méditerranée",
+      "La mer Baltique",
+      "La mer Noire"
+     ],
+     "expl": "Les deux fleuves traversent la Belgique puis les Pays-Bas avant de se jeter dans la mer du Nord."
+    },
+    {
+     "q": "Quelle est la superficie de la Belgique ?",
+     "ok": "Environ 30 700 km²",
+     "ko": [
+      "Environ 3 070 km²",
+      "Environ 307 000 km²",
+      "Environ 1 000 km²"
+     ],
+     "expl": "La Belgique mesure environ 30 700 km² : c'est un petit pays (la France est environ 18 fois plus grande)."
+    },
+    {
+     "q": "Combien d'habitants la Belgique comptait-elle au 1er janvier 2024 ?",
+     "ok": "Environ 11,8 millions",
+     "ko": [
+      "Environ 1,2 million",
+      "Environ 118 millions",
+      "Environ 5 millions"
+     ],
+     "expl": "Au 1er janvier 2024, la Belgique comptait environ 11 764 000 habitants (Statbel)."
+    },
+    {
+     "q": "Quelle est la commune la plus peuplée de Belgique ?",
+     "ok": "Anvers",
+     "ko": [
+      "Gand",
+      "Charleroi",
+      "Liège",
+      "Bruges"
+     ],
+     "expl": "La commune d'Anvers compte plus d'un demi-million d'habitants : c'est la plus peuplée du pays."
+    }
+   ]
+  },
+  {
+   "id": "hg-q-globe",
+   "description": "Questions sur le globe : lignes imaginaires, océans, continents.",
+   "cle": "q",
+   "items": [
+    {
+     "q": "Quelle ligne imaginaire partage la Terre en hémisphère Est et hémisphère Ouest ?",
+     "ok": "Le méridien de Greenwich",
+     "ko": [
+      "L'équateur",
+      "Le tropique du Cancer",
+      "Le cercle polaire arctique"
+     ],
+     "expl": "Le méridien de Greenwich (longitude 0°) passe par Londres. L'équateur, lui, sépare le Nord et le Sud."
+    },
+    {
+     "q": "Quelle est la latitude de l'équateur ?",
+     "ok": "0°",
+     "ko": [
+      "90°",
+      "23°",
+      "45°",
+      "66°"
+     ],
+     "expl": "L'équateur est la latitude 0°. Les pôles sont à 90° nord et 90° sud."
+    },
+    {
+     "q": "Quelle est la latitude du pôle Nord ?",
+     "ok": "90° nord",
+     "ko": [
+      "0°",
+      "66° nord",
+      "180° nord",
+      "23° nord"
+     ],
+     "expl": "On compte les latitudes de 0° (équateur) à 90° (pôles)."
+    },
+    {
+     "q": "Par quelle ville passe le méridien de Greenwich ?",
+     "ok": "Londres",
+     "ko": [
+      "Paris",
+      "Bruxelles",
+      "Rome",
+      "New York"
+     ],
+     "expl": "Greenwich est un quartier de Londres, où se trouve un ancien observatoire."
+    },
+    {
+     "q": "Dans quel hémisphère se trouve le tropique du Cancer ?",
+     "ok": "Dans l'hémisphère Nord",
+     "ko": [
+      "Dans l'hémisphère Sud",
+      "Sur l'équateur",
+      "Au pôle Nord"
+     ],
+     "expl": "Tropique du Cancer au nord (environ 23° N), tropique du Capricorne au sud (environ 23° S)."
+    },
+    {
+     "q": "Dans quel hémisphère se trouve le tropique du Capricorne ?",
+     "ok": "Dans l'hémisphère Sud",
+     "ko": [
+      "Dans l'hémisphère Nord",
+      "Sur l'équateur",
+      "Au pôle Sud"
+     ],
+     "expl": "Tropique du Capricorne au sud (environ 23° S), tropique du Cancer au nord."
+    },
+    {
+     "q": "À quelle latitude environ se trouvent les tropiques ?",
+     "ok": "Environ 23°",
+     "ko": [
+      "Environ 66°",
+      "Environ 45°",
+      "Environ 90°",
+      "Environ 10°"
+     ],
+     "expl": "Les tropiques sont à environ 23° (23°26') au nord et au sud de l'équateur."
+    },
+    {
+     "q": "À quelle latitude environ se trouvent les cercles polaires ?",
+     "ok": "Environ 66°",
+     "ko": [
+      "Environ 23°",
+      "Environ 45°",
+      "Environ 90°",
+      "Environ 50°"
+     ],
+     "expl": "Les cercles polaires sont à environ 66° (66°34') au nord et au sud."
+    },
+    {
+     "q": "Quelle ligne imaginaire limite la zone froide du Nord ?",
+     "ok": "Le cercle polaire arctique",
+     "ko": [
+      "Le tropique du Cancer",
+      "L'équateur",
+      "Le cercle polaire antarctique",
+      "Le méridien de Greenwich"
+     ],
+     "expl": "Au nord du cercle polaire arctique, c'est la zone froide du Nord."
+    },
+    {
+     "q": "Quelle ligne imaginaire limite la zone froide du Sud ?",
+     "ok": "Le cercle polaire antarctique",
+     "ko": [
+      "Le tropique du Capricorne",
+      "L'équateur",
+      "Le cercle polaire arctique",
+      "Le méridien de Greenwich"
+     ],
+     "expl": "Au sud du cercle polaire antarctique, c'est la zone froide du Sud (l'Antarctique)."
+    },
+    {
+     "q": "Entre quelles lignes imaginaires se trouve la zone tempérée du Nord ?",
+     "ok": "Entre le tropique du Cancer et le cercle polaire arctique",
+     "ko": [
+      "Entre l'équateur et le tropique du Cancer",
+      "Entre le tropique du Capricorne et le cercle polaire antarctique",
+      "Entre le cercle polaire arctique et le pôle Nord"
+     ],
+     "expl": "La Belgique se trouve dans cette zone tempérée du Nord."
+    },
+    {
+     "q": "Dans quelle zone thermique se trouve la Belgique ?",
+     "ok": "La zone tempérée du Nord",
+     "ko": [
+      "La zone chaude",
+      "La zone froide du Nord",
+      "La zone tempérée du Sud"
+     ],
+     "expl": "La Belgique (environ 50° à 51° N) est entre le tropique du Cancer et le cercle polaire arctique."
+    },
+    {
+     "q": "Dans quels hémisphères se trouve la Belgique ?",
+     "ok": "Dans l'hémisphère Nord et dans l'hémisphère Est",
+     "ko": [
+      "Dans l'hémisphère Sud et dans l'hémisphère Est",
+      "Dans l'hémisphère Nord et dans l'hémisphère Ouest",
+      "Dans l'hémisphère Sud et dans l'hémisphère Ouest"
+     ],
+     "expl": "La Belgique est au nord de l'équateur et un peu à l'est du méridien de Greenwich."
+    },
+    {
+     "q": "Quel est le plus grand océan du monde ?",
+     "ok": "L'océan Pacifique",
+     "ko": [
+      "L'océan Atlantique",
+      "L'océan Indien",
+      "L'océan Arctique",
+      "L'océan Austral"
+     ],
+     "expl": "Le Pacifique couvre à lui seul environ un tiers de la surface de la Terre."
+    },
+    {
+     "q": "Quel océan sépare l'Amérique de l'Asie ?",
+     "ok": "L'océan Pacifique",
+     "ko": [
+      "L'océan Atlantique",
+      "L'océan Indien",
+      "L'océan Austral"
+     ],
+     "expl": "Le Pacifique est entre l'Amérique (à l'est) et l'Asie et l'Océanie (à l'ouest)."
+    },
+    {
+     "q": "Quel océan sépare l'Europe et l'Afrique de l'Amérique ?",
+     "ok": "L'océan Atlantique",
+     "ko": [
+      "L'océan Pacifique",
+      "L'océan Indien",
+      "L'océan Arctique"
+     ],
+     "expl": "L'Atlantique est entre l'Europe et l'Afrique à l'est, et l'Amérique à l'ouest."
+    },
+    {
+     "q": "Quel océan baigne l'est de l'Afrique et le sud de l'Inde ?",
+     "ok": "L'océan Indien",
+     "ko": [
+      "L'océan Atlantique",
+      "L'océan Pacifique",
+      "L'océan Arctique"
+     ],
+     "expl": "L'océan Indien est entre l'Afrique, l'Asie et l'Australie."
+    },
+    {
+     "q": "Quel océan entoure le pôle Nord ?",
+     "ok": "L'océan Arctique",
+     "ko": [
+      "L'océan Austral",
+      "L'océan Pacifique",
+      "L'océan Indien"
+     ],
+     "expl": "Au pôle Nord, il n'y a pas de continent : c'est un océan en grande partie gelé, l'océan Arctique."
+    },
+    {
+     "q": "Quel océan entoure l'Antarctique ?",
+     "ok": "L'océan Austral",
+     "ko": [
+      "L'océan Arctique",
+      "L'océan Indien",
+      "L'océan Atlantique"
+     ],
+     "expl": "L'océan Austral entoure le continent Antarctique, autour du pôle Sud."
+    },
+    {
+     "q": "Combien d'océans y a-t-il sur la Terre ?",
+     "ok": "5",
+     "ko": [
+      "3",
+      "4",
+      "7"
+     ],
+     "expl": "Pacifique, Atlantique, Indien, Arctique et Austral."
+    },
+    {
+     "q": "Quel est le plus grand continent ?",
+     "ok": "L'Asie",
+     "ko": [
+      "L'Afrique",
+      "L'Amérique",
+      "L'Europe",
+      "L'Océanie"
+     ],
+     "expl": "L'Asie est le plus grand continent et aussi le plus peuplé."
+    },
+    {
+     "q": "Sur quel continent se trouve le pôle Sud ?",
+     "ok": "L'Antarctique",
+     "ko": [
+      "L'Océanie",
+      "L'Amérique du Sud",
+      "L'Afrique"
+     ],
+     "expl": "Le pôle Sud est sur l'Antarctique, un continent recouvert de glace."
+    },
+    {
+     "q": "Quelle mer sépare l'Europe de l'Afrique ?",
+     "ok": "La mer Méditerranée",
+     "ko": [
+      "La mer du Nord",
+      "La mer Baltique",
+      "La mer Noire",
+      "La mer Rouge"
+     ],
+     "expl": "La Méditerranée est entre le sud de l'Europe et le nord de l'Afrique."
+    },
+    {
+     "q": "Quelles montagnes marquent la limite entre l'Europe et l'Asie ?",
+     "ok": "Les monts Oural",
+     "ko": [
+      "Les Alpes",
+      "Les Pyrénées",
+      "L'Himalaya",
+      "Les Andes"
+     ],
+     "expl": "Les monts Oural, en Russie, marquent la limite entre l'Europe et l'Asie."
+    },
+    {
+     "q": "Qu'est-ce qu'un planisphère ?",
+     "ok": "Une carte qui montre toute la surface de la Terre à plat",
+     "ko": [
+      "Une maquette de la Terre en forme de boule",
+      "Une carte d'une seule ville",
+      "Un instrument qui indique le nord"
+     ],
+     "expl": "Le globe est une maquette en boule ; le planisphère représente toute la Terre sur une surface plane."
+    },
+    {
+     "q": "Qu'est-ce qu'un globe terrestre ?",
+     "ok": "Une maquette de la Terre en forme de boule",
+     "ko": [
+      "Une carte de la Terre à plat",
+      "Une carte de la Belgique",
+      "Un instrument qui indique le nord"
+     ],
+     "expl": "Le globe respecte la forme de la Terre ; le planisphère la représente à plat."
+    }
+   ]
+  },
+  {
+   "id": "hg-q-cartes",
+   "description": "Questions sur la lecture de cartes et l'orientation.",
+   "cle": "q",
+   "items": [
+    {
+     "q": "Sur une carte dont le nord est en haut, quelle direction se trouve à droite ?",
+     "ok": "L'est",
+     "ko": [
+      "L'ouest",
+      "Le sud",
+      "Le nord"
+     ],
+     "expl": "Nord en haut, sud en bas, est à droite, ouest à gauche."
+    },
+    {
+     "q": "Sur une carte dont le nord est en haut, quelle direction se trouve à gauche ?",
+     "ok": "L'ouest",
+     "ko": [
+      "L'est",
+      "Le sud",
+      "Le nord"
+     ],
+     "expl": "Nord en haut, sud en bas, est à droite, ouest à gauche."
+    },
+    {
+     "q": "Sur une carte dont le nord est en haut, quelle direction se trouve en bas ?",
+     "ok": "Le sud",
+     "ko": [
+      "L'est",
+      "L'ouest",
+      "Le nord"
+     ],
+     "expl": "Le sud est à l'opposé du nord : en bas de la carte."
+    },
+    {
+     "q": "Qu'est-ce qu'une carte politique montre surtout ?",
+     "ok": "Les pays, leurs frontières et leurs capitales",
+     "ko": [
+      "L'altitude des montagnes",
+      "Les températures",
+      "Les routes et les autoroutes"
+     ],
+     "expl": "Une carte politique montre les pays (ou les provinces), leurs frontières et leurs villes principales."
+    },
+    {
+     "q": "Où cherches-tu la signification d'un symbole sur une carte ?",
+     "ok": "Dans la légende",
+     "ko": [
+      "Dans l'échelle",
+      "Dans la rose des vents",
+      "Dans le titre"
+     ],
+     "expl": "La légende explique chaque couleur et chaque symbole utilisés."
+    },
+    {
+     "q": "Comment s'appelle l'instrument qui indique le nord ?",
+     "ok": "La boussole",
+     "ko": [
+      "Le thermomètre",
+      "Le baromètre",
+      "La loupe",
+      "Le pluviomètre"
+     ],
+     "expl": "L'aiguille aimantée de la boussole se tourne vers le nord."
+    },
+    {
+     "q": "Sur quelle carte la Belgique paraît-elle la plus grande (feuilles de même taille) ?",
+     "ok": "Sur la carte à 1/1 000 000",
+     "ko": [
+      "Sur la carte à 1/5 000 000",
+      "Sur la carte à 1/10 000 000",
+      "Sur la carte à 1/50 000 000"
+     ],
+     "expl": "Plus le nombre sous le « 1 » est petit, plus les objets sont représentés en grand."
+    },
+    {
+     "q": "Sur la plupart des cartes, où se trouve le nord ?",
+     "ok": "En haut",
+     "ko": [
+      "En bas",
+      "À gauche",
+      "À droite"
+     ],
+     "expl": "Par convention, le nord est en haut. Mais vérifie toujours la flèche du nord ou la rose des vents : certaines cartes sont tournées !"
+    },
+    {
+     "q": "À quoi sert la légende d'une carte ?",
+     "ok": "À expliquer ce que signifient les couleurs et les symboles",
+     "ko": [
+      "À calculer les distances réelles",
+      "À indiquer le nord",
+      "À donner le titre de la carte"
+     ],
+     "expl": "La légende est le « dictionnaire » de la carte : elle explique les couleurs et les symboles."
+    },
+    {
+     "q": "À quoi sert l'échelle d'une carte ?",
+     "ok": "À calculer les distances réelles",
+     "ko": [
+      "À expliquer les symboles",
+      "À indiquer le nord",
+      "À dire de quoi parle la carte"
+     ],
+     "expl": "L'échelle indique combien de mètres ou de kilomètres représente 1 cm sur la carte."
+    },
+    {
+     "q": "À quoi sert la rose des vents sur une carte ?",
+     "ok": "À indiquer les points cardinaux",
+     "ko": [
+      "À mesurer les distances",
+      "À montrer où il y a du vent",
+      "À expliquer les couleurs"
+     ],
+     "expl": "La rose des vents montre le nord, l'est, le sud, l'ouest et les directions intermédiaires."
+    },
+    {
+     "q": "Qu'est-ce qui indique le sujet d'une carte ?",
+     "ok": "Le titre",
+     "ko": [
+      "L'échelle",
+      "La rose des vents",
+      "La source"
+     ],
+     "expl": "Le titre dit ce que la carte représente (par exemple : « Densité de population en Belgique »)."
+    },
+    {
+     "q": "Sur une carte du relief, quelle couleur représente généralement les basses plaines ?",
+     "ok": "Le vert",
+     "ko": [
+      "Le brun foncé",
+      "Le blanc",
+      "Le rouge"
+     ],
+     "expl": "Du vert (basses altitudes) au jaune, puis au brun (hautes altitudes) : plus c'est foncé, plus c'est haut."
+    },
+    {
+     "q": "Sur une carte du relief, quelle couleur représente généralement les hautes montagnes ?",
+     "ok": "Le brun foncé",
+     "ko": [
+      "Le vert",
+      "Le bleu",
+      "Le jaune pâle"
+     ],
+     "expl": "Plus le brun est foncé, plus l'altitude est élevée."
+    },
+    {
+     "q": "Sur une carte, que représente en général une ligne bleue sinueuse ?",
+     "ok": "Un cours d'eau",
+     "ko": [
+      "Une autoroute",
+      "Une frontière",
+      "Une voie de chemin de fer"
+     ],
+     "expl": "Le bleu est utilisé pour l'eau : mers, lacs, fleuves et rivières."
+    },
+    {
+     "q": "D'où le soleil se lève-t-il ?",
+     "ok": "De l'est",
+     "ko": [
+      "De l'ouest",
+      "Du nord",
+      "Du sud"
+     ],
+     "expl": "Le soleil se lève à l'est et se couche à l'ouest."
+    },
+    {
+     "q": "Où le soleil se couche-t-il ?",
+     "ok": "À l'ouest",
+     "ko": [
+      "À l'est",
+      "Au nord",
+      "Au sud"
+     ],
+     "expl": "Le soleil se lève à l'est et se couche à l'ouest."
+    },
+    {
+     "q": "En Belgique, où se trouve le soleil vers midi (heure solaire) ?",
+     "ok": "Au sud",
+     "ko": [
+      "Au nord",
+      "À l'est",
+      "À l'ouest"
+     ],
+     "expl": "Dans l'hémisphère Nord, en dehors de la zone chaude, le soleil de midi est toujours du côté sud."
+    },
+    {
+     "q": "Quelle direction indique l'aiguille aimantée d'une boussole ?",
+     "ok": "Le nord",
+     "ko": [
+      "Le sud",
+      "L'est",
+      "L'ouest"
+     ],
+     "expl": "L'aiguille aimantée se tourne vers le nord : on en déduit les autres directions."
+    },
+    {
+     "q": "Quelle est la différence entre une carte et un plan ?",
+     "ok": "Un plan représente un petit espace (une ville, un quartier) avec beaucoup de détails",
+     "ko": [
+      "Un plan représente tout un pays",
+      "Un plan ne contient jamais de légende",
+      "Il n'y a aucune différence"
+     ],
+     "expl": "Un plan montre un petit territoire avec beaucoup de détails (rues, bâtiments). Une carte montre un territoire plus grand."
+    },
+    {
+     "q": "Qu'est-ce qu'une photo aérienne ?",
+     "ok": "Une photo prise d'en haut, depuis un avion, un drone ou un satellite",
+     "ko": [
+      "Une photo prise au sommet d'une montagne vers la vallée",
+      "Un dessin fait par un géographe",
+      "Une carte avec une légende"
+     ],
+     "expl": "Une photo aérienne montre le paysage vu d'en haut : on peut la comparer à une carte ou à un plan."
+    },
+    {
+     "q": "Sur une carte dont le nord est en haut, quelle direction se trouve en haut à droite ?",
+     "ok": "Le nord-est",
+     "ko": [
+      "Le sud-est",
+      "Le nord-ouest",
+      "Le sud-ouest"
+     ],
+     "expl": "En haut = nord, à droite = est : en haut à droite, c'est le nord-est."
+    },
+    {
+     "q": "Sur une carte dont le nord est en haut, quelle direction se trouve en bas à gauche ?",
+     "ok": "Le sud-ouest",
+     "ko": [
+      "Le nord-ouest",
+      "Le sud-est",
+      "Le nord-est"
+     ],
+     "expl": "En bas = sud, à gauche = ouest : en bas à gauche, c'est le sud-ouest."
+    },
+    {
+     "q": "Sur une carte, que représente en général une grande surface bleue ?",
+     "ok": "De l'eau (une mer ou un lac)",
+     "ko": [
+      "Une forêt",
+      "Une ville",
+      "Un champ"
+     ],
+     "expl": "Sur les cartes, l'eau est toujours en bleu."
+    },
+    {
+     "q": "Pour te promener dans un village, quelle carte choisis-tu ?",
+     "ok": "La carte à 1/10 000",
+     "ko": [
+      "La carte à 1/1 000 000",
+      "La carte à 1/5 000 000",
+      "Un planisphère"
+     ],
+     "expl": "À 1/10 000, 1 cm représente 100 m : on voit les rues et les chemins. À 1/1 000 000, 1 cm représente 10 km : trop peu de détails."
+    },
+    {
+     "q": "Que signifie l'échelle 1/100 000 ?",
+     "ok": "1 cm sur la carte représente 100 000 cm (1 km) en réalité",
+     "ko": [
+      "1 cm sur la carte représente 100 000 km en réalité",
+      "1 km sur la carte représente 100 000 cm en réalité",
+      "La carte est 100 000 fois plus grande que la réalité"
+     ],
+     "expl": "100 000 cm = 1 000 m = 1 km. La carte est 100 000 fois plus petite que la réalité."
+    },
+    {
+     "q": "Quels sont les quatre points cardinaux ?",
+     "ok": "Le nord, l'est, le sud et l'ouest",
+     "ko": [
+      "Le nord-est, le sud-est, le sud-ouest et le nord-ouest",
+      "La droite, la gauche, le haut et le bas",
+      "Le nord, le sud, le haut et le bas"
+     ],
+     "expl": "Les 4 points cardinaux sont le nord, l'est, le sud et l'ouest. Entre eux se trouvent les directions intermédiaires (nord-est, sud-est…)."
+    },
+    {
+     "q": "Sur une rose des vents à 8 directions, combien y a-t-il de directions intermédiaires ?",
+     "ok": "4",
+     "ko": [
+      "8",
+      "2",
+      "6"
+     ],
+     "expl": "4 points cardinaux (N, E, S, O) + 4 directions intermédiaires (NE, SE, SO, NO) = 8 directions."
+    },
+    {
+     "q": "Qu'est-ce qu'une carte thématique ?",
+     "ok": "Une carte qui présente un sujet précis (le climat, la densité de population, le relief…)",
+     "ko": [
+      "Une carte qui montre seulement les routes",
+      "Une carte dessinée à la main",
+      "Une carte sans légende"
+     ],
+     "expl": "Une carte thématique traite d'un thème : son titre et sa légende disent lequel."
+    },
+    {
+     "q": "Tu es face au nord. Où se trouve l'est ?",
+     "ok": "À ta droite",
+     "ko": [
+      "À ta gauche",
+      "Derrière toi",
+      "Devant toi"
+     ],
+     "expl": "Face au nord : l'est est à droite, l'ouest à gauche et le sud derrière toi."
+    },
+    {
+     "q": "Tu es face au nord. Où se trouve le sud ?",
+     "ok": "Derrière toi",
+     "ko": [
+      "À ta droite",
+      "À ta gauche",
+      "Devant toi"
+     ],
+     "expl": "Le sud est la direction opposée au nord : il est derrière toi."
+    },
+    {
+     "q": "Le matin, tu regardes le soleil se lever droit devant toi. Vers quelle direction regardes-tu ?",
+     "ok": "L'est",
+     "ko": [
+      "L'ouest",
+      "Le nord",
+      "Le sud"
+     ],
+     "expl": "Le soleil se lève à l'est : tu regardes donc vers l'est."
+    },
+    {
+     "q": "À quoi sert la source indiquée sous une carte ou un graphique ?",
+     "ok": "À savoir d'où viennent les informations et de quand elles datent",
+     "ko": [
+      "À expliquer les symboles",
+      "À calculer les distances",
+      "À indiquer le nord"
+     ],
+     "expl": "La source (par exemple « Statbel, 2024 ») dit qui a produit les données et en quelle année : des chiffres peuvent changer avec le temps."
+    }
+   ]
+  }
+ ]
+}

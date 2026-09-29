@@ -18,22 +18,6 @@
       "fiche": "fr-sujet-complements"
     },
     {
-      "id": "fr-b-0002",
-      "domaine": "fr.grammaire",
-      "type": "qcm",
-      "difficulte": 2,
-      "enonce": "Dans la phrase « Au cours de notre vie, nos empreintes digitales ne changent pas », quel est le complément circonstanciel de phrase ?",
-      "choix": [
-        "Au cours de notre vie",
-        "nos empreintes digitales",
-        "ne changent pas",
-        "digitales"
-      ],
-      "reponse": 0,
-      "explication": "« Au cours de notre vie » peut être déplacé ou supprimé : c'est un complément de phrase (il indique le temps).",
-      "fiche": "fr-sujet-complements"
-    },
-    {
       "id": "fr-b-0003",
       "domaine": "fr.grammaire",
       "type": "qcm",

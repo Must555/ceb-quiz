@@ -1,0 +1,454 @@
+{
+ "matiere": "ma",
+ "modeles": [
+  {
+   "id": "ma-f-nombres-lettres",
+   "generateur": "ma_nombres_lettres",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-numeration",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-valeur-position",
+   "generateur": "ma_valeur_position",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-numeration",
+   "difficulte": 1
+  },
+  {
+   "id": "ma-f-decomposer",
+   "generateur": "ma_decomposer",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-numeration",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-arrondir",
+   "generateur": "ma_arrondir",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-arrondir",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-comparer-decimaux",
+   "generateur": "ma_comparer_decimaux",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-decimaux",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-intercaler",
+   "generateur": "ma_intercaler",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-decimaux",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-droite-graduee",
+   "generateur": "ma_droite_graduee",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-droite-graduee",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-suites",
+   "generateur": "ma_suites",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-suites",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-fractions-equivalentes",
+   "generateur": "ma_fractions_equivalentes",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-fractions",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-comparer-fractions",
+   "generateur": "ma_comparer_fractions",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-fractions-comparer",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-fraction-decimal-pourcentage",
+   "generateur": "ma_frac_dec_pct",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-fraction-decimal-pourcent",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-fraction-grandeur",
+   "generateur": "ma_fraction_grandeur",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-fractions",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-addition-fractions",
+   "generateur": "ma_addition_fractions",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-fractions-addition",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-calcul-ecrit",
+   "generateur": "ma_calcul_ecrit",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-operations",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-calcul-mental",
+   "generateur": "ma_calcul_mental",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-calcul-mental",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-proprietes",
+   "generateur": "ma_proprietes",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-calcul-mental",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-estimation",
+   "generateur": "ma_estimation",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-estimation",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-terme-manquant",
+   "generateur": "ma_terme_manquant",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-operations",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-priorites",
+   "generateur": "ma_priorites",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-priorites",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-multiples-diviseurs",
+   "generateur": "ma_multiples_diviseurs",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-multiples-diviseurs",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-ppcm-pgcd",
+   "generateur": "ma_ppcm_pgcd",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-multiples-diviseurs",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-divisibilite",
+   "generateur": "ma_divisibilite",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-divisibilite",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-mesures",
+   "generateur": "ma_mesures",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-conversions",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-mesures-realistes",
+   "generateur": "ma_mesures_realistes",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-ordres-grandeur",
+   "difficulte": 1
+  },
+  {
+   "id": "ma-f-aires-volumes-unites",
+   "generateur": "ma_aires_volumes",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-unites-aire-volume",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-figures",
+   "generateur": "ma_figures",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-aires-perimetres",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-cercle",
+   "generateur": "ma_cercle",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-cercle",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-durees",
+   "generateur": "ma_durees",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-durees",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-calendrier",
+   "generateur": "ma_calendrier",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-calendrier",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-achats",
+   "generateur": "ma_achats",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-monnaie",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-pourcentages-contextes",
+   "generateur": "ma_pourcentages",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-pourcentages",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-echelle-plans",
+   "generateur": "ma_echelle",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-echelle",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-vitesse-distance-temps",
+   "generateur": "ma_vitesse",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-vitesse",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-proportionnalite-tableaux",
+   "generateur": "ma_proportionnalite",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-proportionnalite",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-temperatures",
+   "generateur": "ma_temperatures",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-temperatures",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-problemes",
+   "generateur": "ma_problemes",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-problemes",
+   "difficulte": 3
+  },
+  {
+   "id": "ma-f-triangles",
+   "generateur": "ma_triangles",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-triangles",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-angles",
+   "generateur": "ma_angles",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-angles",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-donnees",
+   "generateur": "ma_donnees",
+   "domaine": "ma.donnees",
+   "fiche": "ma-donnees",
+   "difficulte": 2
+  },
+  {
+   "id": "ma-f-solides",
+   "generateur": "faits",
+   "base": "ma-solides",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-solides",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "faces",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "enonce": "Combien de faces a {cle} ?",
+     "explication": "{Cle} a {faces} faces, {aretes} arêtes et {sommets} sommets. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "aretes",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "enonce": "Combien d'arêtes a {cle} ?",
+     "explication": "{Cle} a {aretes} arêtes (les segments où deux faces se rejoignent). {info}",
+     "difficulte": 3
+    },
+    {
+     "sorte": "attribut",
+     "champ": "sommets",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "enonce": "Combien de sommets a {cle} ?",
+     "explication": "{Cle} a {sommets} sommets (les « coins » du solide). {info}"
+    },
+    {
+     "sorte": "calcul",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "avec": "faces",
+     "n": 1,
+     "enonce": "Pour {a.cle}, combien y a-t-il de faces, d'arêtes et de sommets en tout ? (additionne les trois nombres)",
+     "reponse": "a_faces + a_aretes + a_sommets",
+     "explication": "{a.cle} : {a.faces} faces + {a.aretes} arêtes + {a.sommets} sommets = {=a_faces + a_aretes + a_sommets}.",
+     "difficulte": 3
+    },
+    {
+     "sorte": "lequel",
+     "champ": "polyedre",
+     "enonce": "Lequel de ces solides est {valeurPhrase} ?",
+     "explication": "{Cle} est {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "polyedre",
+     "valeurs": [
+      "polyèdre",
+      "non polyèdre"
+     ],
+     "enonce": "Ce solide est-il un polyèdre (uniquement des faces planes) ?",
+     "explication": "{liste}"
+    },
+    {
+     "sorte": "extreme",
+     "champ": "faces",
+     "sens": "max",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "enonce": "Lequel de ces solides a le plus de faces ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "sommets",
+     "filtre": {
+      "polyedre": "polyèdre"
+     },
+     "enonce": "Vrai ou faux ? {Cle} a {valeur} sommets.",
+     "explication": "{Cle} a {bonne} sommets. {info}"
+    }
+   ]
+  },
+  {
+   "id": "ma-f-quadrilateres-proprietes",
+   "generateur": "faits",
+   "base": "ma-quadrilateres",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-quadrilateres",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "lequel",
+     "champ": "props",
+     "cibles": [
+      "4 côtés de même longueur",
+      "4 angles droits",
+      "2 paires de côtés parallèles",
+      "des diagonales de même longueur",
+      "des diagonales perpendiculaires",
+      "des diagonales qui se coupent en leur milieu",
+      "au moins un angle droit"
+     ],
+     "enonce": "Lequel de ces quadrilatères a toujours {valeur} ?",
+     "explication": "{Cle} a toujours {valeur}. Les autres quadrilatères proposés ne l'ont pas toujours. {resume}"
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "props",
+     "enonce": "Vrai ou faux ? {Cle} a toujours {valeur}.",
+     "explication": "{resume}"
+    }
+   ]
+  },
+  {
+   "id": "ma-f-symetrie",
+   "generateur": "faits",
+   "base": "ma-axes-symetrie",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-symetrie",
+   "difficulte": 2,
+   "formes": [
+    {
+     "sorte": "attribut",
+     "champ": "axes",
+     "enonce": "Combien d'axes de symétrie a {cle} (écrite ou dessinée en majuscule d'imprimerie) ?",
+     "filtre": {
+      "sorte": "lettre"
+     },
+     "explication": "{Cle} : {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "axes",
+     "enonce": "Combien d'axes de symétrie a {cle} ?",
+     "filtre": {
+      "sorte": "figure"
+     },
+     "explication": "{Cle} : {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "axes",
+     "cibles": [
+      "1",
+      "2"
+     ],
+     "filtre": {
+      "sorte": "lettre"
+     },
+     "enonce": "Laquelle de ces lettres majuscules a {valeurPhrase} ?",
+     "explication": "{Cle} : {valeurPhrase}. {info}"
+    },
+    {
+     "sorte": "extreme",
+     "champ": "axes",
+     "sens": "max",
+     "filtre": {
+      "sorte": "figure"
+     },
+     "enonce": "Laquelle de ces figures a le plus d'axes de symétrie ?",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "vrai_faux",
+     "champ": "axes",
+     "filtre": {
+      "sorte": "figure"
+     },
+     "enonce": "Vrai ou faux ? Nombre d'axes de symétrie pour {cle} : {valeur}.",
+     "explication": "{Cle} : {bonnePhrase}. {info}"
+    }
+   ]
+  }
+ ]
+}

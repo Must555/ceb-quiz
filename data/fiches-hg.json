@@ -1,0 +1,239 @@
+{
+ "fiches": [
+  {
+   "id": "hg-frise",
+   "matiere": "hg",
+   "e": "📏",
+   "titre": "La ligne du temps",
+   "regle": [
+    "On range les événements du plus ancien (à gauche) au plus récent (à droite).",
+    "Avant J.-C. : plus le nombre est grand, plus c'est ancien (500 av. J.-C. est avant 100 av. J.-C.).",
+    "Durée entre deux dates après J.-C. : on soustrait (1830 − 1302 = 528 ans).",
+    "Il n'y a pas d'an 0 : on passe de l'an 1 av. J.-C. à l'an 1 apr. J.-C. De 52 av. J.-C. à 476 : 52 + 476 − 1 = 527 ans."
+   ],
+   "exemple": "Charles Quint naît en 1500 et abdique en 1555 : 55 ans plus tard.",
+   "astuce": "Dessine une petite ligne du temps avec les 4 dates charnières (3500 av. J.-C., 476, 1492, 1789) et place les événements dessus."
+  },
+  {
+   "id": "hg-modes-vie",
+   "matiere": "hg",
+   "e": "🏠",
+   "titre": "Les modes de vie à travers le temps",
+   "regle": [
+    "Préhistoire : chasse, cueillette, outils en pierre, huttes, peintures dans les grottes ; puis premiers agriculteurs.",
+    "Antiquité : écriture (hiéroglyphes), Romains (voies, villas, thermes).",
+    "Moyen Âge : châteaux forts, chevaliers, seigneurs et serfs, moines copistes, villes et beffrois.",
+    "Temps modernes : grands voyages, cours royales (Versailles), grands peintres. Époque contemporaine : machines, usines, trains, électricité, voitures, ordinateurs."
+   ],
+   "exemple": "Le moine copiste qui écrit sur du parchemin → Moyen Âge.",
+   "astuce": "Demande-toi : quelle énergie ? quelle écriture ? quel habitat ? Cela t'aide à trouver la période."
+  },
+  {
+   "id": "hg-personnages",
+   "matiere": "hg",
+   "e": "👑",
+   "titre": "Personnages de l'histoire",
+   "regle": [
+    "Antiquité : Jules César, Ambiorix, Vercingétorix, les pharaons.",
+    "Moyen Âge : Clovis, Charlemagne (sacré en 800), Godefroid de Bouillon, les ducs de Bourgogne.",
+    "Temps modernes : Charles Quint (né à Gand en 1500), Bruegel, Rubens, Mercator, Vésale.",
+    "Époque contemporaine : les rois des Belges (Léopold Ier depuis 1831… Philippe depuis 2013), Adolphe Sax, Hergé…"
+   ],
+   "exemple": "Charlemagne, sacré empereur en 800, appartient au Moyen Âge.",
+   "astuce": "Associe chaque personnage à une date que tu connais, puis place-la sur la ligne du temps."
+  },
+  {
+   "id": "hg-sources",
+   "matiere": "hg",
+   "e": "🔎",
+   "titre": "Les sources de l'historien",
+   "regle": [
+    "Source écrite : lettre, journal, charte, livre…",
+    "Source iconographique : image (peinture, photo, gravure, enluminure…).",
+    "Source matérielle : objet ou vestige (outil, monnaie, bâtiment, ruines…).",
+    "Source orale : témoignage, récit, chanson transmise de vive voix."
+   ],
+   "exemple": "Une photo de classe de 1920 est une source iconographique d'époque.",
+   "astuce": "Une source d'époque a été produite au moment des faits ; un livre ou un dessin récent sur les Romains n'est pas une trace de l'Antiquité."
+  },
+  {
+   "id": "hg-provinces",
+   "matiere": "hg",
+   "e": "🗺️",
+   "titre": "Les 10 provinces et leurs chefs-lieux",
+   "regle": [
+    "Flandre : Anvers (Anvers), Limbourg (Hasselt), Flandre orientale (Gand), Flandre occidentale (Bruges), Brabant flamand (Louvain).",
+    "Wallonie : Brabant wallon (Wavre), Hainaut (Mons), Namur (Namur), Liège (Liège), Luxembourg (Arlon).",
+    "La Région de Bruxelles-Capitale ne fait partie d'aucune province."
+   ],
+   "exemple": "Arlon est le chef-lieu de la province de Luxembourg.",
+   "astuce": "Attention aux pièges : le chef-lieu du Hainaut est Mons (pas Charleroi) et celui du Limbourg est Hasselt."
+  },
+  {
+   "id": "hg-langues",
+   "matiere": "hg",
+   "e": "🗣️",
+   "titre": "Régions, Communautés et langues",
+   "regle": [
+    "3 Régions : flamande, wallonne, Bruxelles-Capitale (territoire, économie, routes…).",
+    "3 Communautés : française, flamande, germanophone (enseignement, culture…).",
+    "Langues officielles : néerlandais en Flandre, français en Wallonie (allemand dans 9 communes de l'est de la province de Liège), français et néerlandais à Bruxelles."
+   ],
+   "exemple": "Eupen est en Région wallonne, mais sa langue officielle est l'allemand.",
+   "astuce": "Région = territoire ; Communauté = langue."
+  },
+  {
+   "id": "hg-cours-eau",
+   "matiere": "hg",
+   "e": "🌊",
+   "titre": "Les cours d'eau de Belgique",
+   "regle": [
+    "Deux grands fleuves : l'Escaut (Tournai, Gand, Anvers) et la Meuse (Dinant, Namur, Huy, Liège).",
+    "Bassin de la Meuse : Sambre (Charleroi, Namur), Ourthe, Vesdre, Amblève, Lesse, Semois.",
+    "Bassin de l'Escaut : Lys (Courtrai, Gand), Dendre (Ath, Alost), Senne (Bruxelles), Dyle (Wavre, Louvain, Malines), Démer.",
+    "Un fleuve se jette dans la mer ; une rivière se jette dans un autre cours d'eau."
+   ],
+   "exemple": "La Sambre se jette dans la Meuse à Namur.",
+   "astuce": "Namur (Sambre et Meuse), Liège (Meuse et Ourthe), Gand (Escaut et Lys) : ville de confluence !"
+  },
+  {
+   "id": "hg-regions-naturelles",
+   "matiere": "hg",
+   "e": "🌾",
+   "titre": "Les régions naturelles de Belgique",
+   "regle": [
+    "Au nord : Dunes, Polders (terres gagnées sur la mer), Campine (sols sableux, bruyères, pins).",
+    "Au centre : régions limoneuses comme la Hesbaye (sols très fertiles, céréales, betteraves).",
+    "Au sud de la Meuse : Condroz (crêtes et creux), Famenne (dépression argileuse), Ardenne (plateau élevé, forêts), Lorraine belge (tout au sud).",
+    "Le pays de Herve : prairies et haies (bocage)."
+   ],
+   "exemple": "Bastogne se trouve en Ardenne ; Waremme en Hesbaye.",
+   "astuce": "Du nord-ouest au sud-est, on monte : basse Belgique (Dunes, Polders, Flandre), moyenne Belgique (Hesbaye, Condroz), haute Belgique (Ardenne). Attention : la Famenne est un creux entre le Condroz et l'Ardenne."
+  },
+  {
+   "id": "hg-europe",
+   "matiere": "hg",
+   "e": "🇪🇺",
+   "titre": "L'Europe et l'Union européenne",
+   "regle": [
+    "En 2026, l'Union européenne compte 27 pays (le Royaume-Uni l'a quittée en 2020).",
+    "6 pays fondateurs (1957) : Belgique, France, Allemagne, Italie, Pays-Bas, Luxembourg.",
+    "Bruxelles accueille de nombreuses institutions européennes.",
+    "La plupart des pays de l'UE utilisent l'euro (en Belgique depuis 2002, en Bulgarie depuis 2026), mais pas tous (Danemark, Suède, Pologne, Tchéquie, Hongrie, Roumanie)."
+   ],
+   "exemple": "Varsovie est la capitale de la Pologne.",
+   "astuce": "La Suisse et la Norvège sont en Europe, mais ne font pas partie de l'Union européenne."
+  },
+  {
+   "id": "hg-continents",
+   "matiere": "hg",
+   "e": "🌍",
+   "titre": "Continents, fleuves et montagnes",
+   "regle": [
+    "Continents : Europe, Asie, Afrique, Amérique (du Nord et du Sud), Océanie, Antarctique.",
+    "Grands fleuves : Nil et Congo (Afrique), Amazone (Amérique du Sud), Mississippi (Amérique du Nord), Yangzi Jiang (Asie), Volga et Danube (Europe).",
+    "Montagnes : Alpes (Europe), Himalaya (Asie), Andes (Amérique du Sud), Rocheuses (Amérique du Nord), Atlas (Afrique)."
+   ],
+   "exemple": "L'Everest, le plus haut sommet du monde, est dans l'Himalaya (Asie).",
+   "astuce": "Regarde un planisphère et repère d'abord l'Europe, puis les continents autour."
+  },
+  {
+   "id": "hg-climats",
+   "matiere": "hg",
+   "e": "🌦️",
+   "titre": "Climats et grands milieux",
+   "regle": [
+    "La Belgique a un climat tempéré océanique : hivers doux, étés frais, pluies toute l'année.",
+    "Zone chaude : forêt équatoriale (chaud et humide), savane, désert chaud.",
+    "Zones tempérées : forêts de feuillus, climat méditerranéen, climat continental, taïga plus au nord.",
+    "Zones froides : toundra, milieu polaire (banquise)."
+   ],
+   "exemple": "Rennes, mousses et sol gelé → la toundra.",
+   "astuce": "Pense à la température ET aux pluies pour reconnaître un climat."
+  },
+  {
+   "id": "hg-orientation",
+   "matiere": "hg",
+   "e": "🧭",
+   "titre": "S'orienter",
+   "regle": [
+    "4 points cardinaux : nord, est, sud, ouest. 4 intermédiaires : nord-est, sud-est, sud-ouest, nord-ouest.",
+    "Un quart de tour = 2 crans sur la rose des vents à 8 directions ; un demi-tour = direction opposée.",
+    "Sur une carte, le nord est en général en haut, l'est à droite.",
+    "Le soleil se lève à l'est et se couche à l'ouest ; à midi, en Belgique, il est au sud."
+   ],
+   "exemple": "Tu regardes vers le nord et tu fais un quart de tour vers la droite : tu regardes vers l'est.",
+   "astuce": "Retiens l'ordre dans le sens des aiguilles d'une montre : Nord, Est, Sud, Ouest (« N'Est-ce Sûrement pas Ouvert ? »)."
+  },
+  {
+   "id": "hg-echelle",
+   "matiere": "hg",
+   "e": "📐",
+   "titre": "L'échelle d'une carte",
+   "regle": [
+    "1/25 000 : 1 cm sur la carte = 25 000 cm en réalité = 250 m.",
+    "1/100 000 : 1 cm = 1 km. 1/1 000 000 : 1 cm = 10 km.",
+    "Distance réelle = distance sur la carte × le nombre sous le « 1 » (puis on convertit les cm en m ou en km).",
+    "Plus le nombre sous le 1 est petit, plus la carte est détaillée."
+   ],
+   "exemple": "À 1/50 000, 4 cm = 200 000 cm = 2 km.",
+   "astuce": "Pour convertir des cm en km, enlève 5 zéros (100 000 cm = 1 km)."
+  },
+  {
+   "id": "hg-secteurs",
+   "matiere": "hg",
+   "e": "🏭",
+   "titre": "Les secteurs d'activité",
+   "regle": [
+    "Primaire : on tire les ressources de la nature (agriculture, élevage, pêche, forêt, mines).",
+    "Secondaire : on transforme les matières premières ou on construit (usines, artisans, bâtiment).",
+    "Tertiaire : on rend des services (enseignement, santé, commerce, transport, administration…)."
+   ],
+   "exemple": "Le pêcheur (primaire) → l'usine de conserves (secondaire) → le vendeur au magasin (tertiaire).",
+   "astuce": "Pose-toi la question : cette personne récolte-t-elle, fabrique-t-elle ou rend-elle un service ?"
+  },
+  {
+   "id": "hg-paysages",
+   "matiere": "hg",
+   "e": "🏘️",
+   "titre": "Paysages et habitat",
+   "regle": [
+    "Paysage rural : champs, prairies, fermes, villages.",
+    "Paysage urbain : immeubles, commerces, beaucoup de circulation.",
+    "Paysage industriel : usines, entrepôts, ports, terrils.",
+    "Habitat groupé (maisons rassemblées), dispersé (fermes isolées), linéaire (maisons alignées le long d'une route)."
+   ],
+   "exemple": "Des fermes isolées au milieu des prairies → habitat dispersé.",
+   "astuce": "Regarde ce qui domine dans le paysage : la nature cultivée, les bâtiments ou les usines."
+  },
+  {
+   "id": "hg-cartes",
+   "matiere": "hg",
+   "e": "🗺️",
+   "titre": "Lire une carte",
+   "regle": [
+    "Le titre dit de quoi parle la carte.",
+    "La légende explique les couleurs et les symboles.",
+    "L'échelle permet de calculer les distances ; la rose des vents indique les directions.",
+    "Il existe plusieurs types de cartes : routière, plan de ville, politique (frontières), du relief, des climats, de densité de population…",
+    "La source (et sa date) dit d'où viennent les informations : des chiffres de 2024 ne sont pas ceux de 1990."
+   ],
+   "exemple": "Pour trouver une rue, on prend un plan de ville.",
+   "astuce": "Avant de répondre, lis toujours le titre et la légende."
+  },
+  {
+   "id": "hg-transports",
+   "matiere": "hg",
+   "e": "🚆",
+   "titre": "Les moyens de transport",
+   "regle": [
+    "Par la route : voiture, bus, camion, vélo.",
+    "Par le rail : train, tram.",
+    "Par l'eau : péniche (canaux et rivières), bateau, porte-conteneurs.",
+    "Par l'air : avion, hélicoptère."
+   ],
+   "exemple": "La péniche transporte beaucoup de marchandises lourdes sur les canaux, lentement mais à bas prix.",
+   "astuce": "Demande-toi sur quoi roule, flotte ou vole le véhicule."
+  }
+ ]
+}

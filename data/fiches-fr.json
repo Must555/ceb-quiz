@@ -1,0 +1,356 @@
+{
+ "fiches": [
+  {
+   "id": "fr-fonctions",
+   "matiere": "fr",
+   "e": "🧱",
+   "titre": "Les fonctions dans la phrase",
+   "regle": [
+    "Sujet : il commande l'accord du verbe ; on l'encadre par « c'est … qui ».",
+    "Complément du verbe : on ne peut pas le déplacer. Direct (sans préposition : il mange une pomme) ou indirect (avec préposition : il parle à Léa).",
+    "Complément de phrase : on peut le déplacer et le supprimer (où ? quand ? comment ?).",
+    "Attribut du sujet : après être, sembler, devenir, paraître, rester (Léa est contente)."
+   ],
+   "exemple": "Chaque matin (complément de phrase), Léa (sujet) prend (verbe) le bus (complément direct du verbe).",
+   "astuce": "Essaie de déplacer le groupe : s'il bouge sans problème, c'est un complément de phrase."
+  },
+  {
+   "id": "fr-types-phrases",
+   "matiere": "fr",
+   "e": "❓",
+   "titre": "Types et formes de phrases",
+   "regle": [
+    "Déclarative : elle informe (.)",
+    "Interrogative : elle pose une question (?)",
+    "Exclamative : elle exprime un sentiment fort (!), souvent avec quel, comme, que.",
+    "Impérative : elle donne un ordre ou un conseil, sans sujet.",
+    "Forme négative : ne… pas, ne… jamais, ne… plus, ne… rien, personne ne…"
+   ],
+   "exemple": "Range ta chambre. (impérative) — Tu ne ranges pas ta chambre ? (interrogative, négative)",
+   "astuce": "Regarde le signe de fin, puis cherche une négation."
+  },
+  {
+   "id": "fr-ponctuation",
+   "matiere": "fr",
+   "e": "✒️",
+   "titre": "La ponctuation",
+   "regle": [
+    "Le point termine une phrase ; ? pose une question ; ! exprime un sentiment fort.",
+    "La virgule sépare les éléments d'une énumération ou détache un complément.",
+    "Les deux-points annoncent une énumération ou une explication.",
+    "Les guillemets encadrent des paroles ; le tiret signale qu'un autre personnage parle.",
+    "Les parenthèses ajoutent une précision ; les points de suspension créent du suspense."
+   ],
+   "exemple": "« J'ai gagné ! » crie Hugo. Il faut : du lait, des œufs et de la farine.",
+   "astuce": "Lis la phrase à voix haute : la ponctuation marque les pauses et le ton."
+  },
+  {
+   "id": "fr-groupe-nominal",
+   "matiere": "fr",
+   "e": "🧺",
+   "titre": "Le groupe nominal",
+   "regle": [
+    "Le groupe nominal a pour noyau un nom.",
+    "Le noyau peut être précisé par un déterminant, des adjectifs, un complément du nom (de…, à…, en…).",
+    "Tout le groupe prend le genre et le nombre du noyau."
+   ],
+   "exemple": "le petit chien noir de Hugo → noyau : chien (masculin singulier).",
+   "astuce": "Le noyau est le nom qu'on ne peut pas supprimer."
+  },
+  {
+   "id": "fr-pluriel",
+   "matiere": "fr",
+   "e": "➕",
+   "titre": "Le pluriel des noms et des adjectifs",
+   "regle": [
+    "En général : + s.",
+    "-eau, -au, -eu → + x (sauf landau, pneu, bleu).",
+    "-al → -aux (sauf bal, carnaval, festival, chacal, récital, régal).",
+    "-ou → + s, sauf bijou, caillou, chou, genou, hibou, joujou, pou (+ x).",
+    "-ail → + s, sauf travail, vitrail, corail, émail (-aux).",
+    "-s, -x, -z : pas de changement."
+   ],
+   "exemple": "un cheval → des chevaux ; un clou → des clous ; un bijou → des bijoux.",
+   "astuce": "Apprends par cœur la liste des 7 mots en -ou : bijou, caillou, chou, genou, hibou, joujou, pou."
+  },
+  {
+   "id": "fr-feminin",
+   "matiere": "fr",
+   "e": "👭",
+   "titre": "Le féminin des noms et des adjectifs",
+   "regle": [
+    "En général : + e (voisin → voisine).",
+    "-eur → -euse ou -trice ; -er → -ère ; -f → -ve ; -x → -se.",
+    "Parfois la consonne double : bon → bonne, gentil → gentille, chat → chatte.",
+    "Quelques mots changent complètement : coq → poule, oncle → tante."
+   ],
+   "exemple": "un chanteur → une chanteuse ; un acteur → une actrice ; sportif → sportive.",
+   "astuce": "Écoute bien le féminin : on entend souvent la lettre finale (gros → grosse)."
+  },
+  {
+   "id": "fr-accord-adjectif",
+   "matiere": "fr",
+   "e": "🎨",
+   "titre": "L'accord de l'adjectif",
+   "regle": [
+    "L'adjectif s'accorde en genre et en nombre avec le nom qu'il accompagne.",
+    "Après être (attribut), il s'accorde avec le sujet.",
+    "Un nom masculin + un nom féminin → masculin pluriel."
+   ],
+   "exemple": "des chaussures vertes ; Mes cousines sont contentes ; Le pull et la robe sont neufs.",
+   "astuce": "Pose la question « qui est-ce qui est… ? » pour trouver le nom avec lequel accorder."
+  },
+  {
+   "id": "fr-accord-sujet-verbe",
+   "matiere": "fr",
+   "e": "🤝",
+   "titre": "L'accord du verbe avec le sujet",
+   "regle": [
+    "Le verbe s'accorde avec le noyau du sujet.",
+    "Attention au sujet éloigné, au sujet placé après le verbe et au complément du nom.",
+    "« qui » a le nombre du nom qu'il reprend. Le, la, les, leur devant le verbe ne sont pas des sujets."
+   ],
+   "exemple": "Le chien des voisins aboie. Dans la mare vivent des grenouilles. Mon frère les aide.",
+   "astuce": "Encadre le sujet par « c'est … qui » ou « ce sont … qui »."
+  },
+  {
+   "id": "fr-participe-passe",
+   "matiere": "fr",
+   "e": "✅",
+   "titre": "Accord du participe passé",
+   "regle": [
+    "Avec être, le participe passé s'accorde avec le sujet (elles sont parties).",
+    "Avec avoir, il ne s'accorde pas avec le sujet (elles ont mangé).",
+    "Un garçon et une fille : masculin pluriel (ils sont partis)."
+   ],
+   "exemple": "Léa est arrivée. Tom et Léa sont arrivés. Léa a mangé.",
+   "astuce": "Cherche d'abord l'auxiliaire, puis le sujet."
+  },
+  {
+   "id": "fr-e-er",
+   "matiere": "fr",
+   "e": "🔀",
+   "titre": "-é, -er, -ez ou -ait ?",
+   "regle": [
+    "Après une préposition (à, de, pour, sans) ou un verbe conjugué : infinitif en -er.",
+    "Après avoir ou être : participe passé en -é (+ accord éventuel).",
+    "Avec vous : -ez. À l'imparfait : -ais (je, tu), -ait (il, elle, on)."
+   ],
+   "exemple": "Il faut ranger. J'ai rangé. Vous rangez. Il rangeait.",
+   "astuce": "Remplace par « vendre » ou « vendu » : vendre → -er ; vendu → -é."
+  },
+  {
+   "id": "fr-orthographe-lexicale",
+   "matiere": "fr",
+   "e": "🔤",
+   "titre": "Mots à connaître par cœur",
+   "regle": [
+    "Les mots invariables ne changent jamais : beaucoup, toujours, jamais, souvent, parfois, pendant, depuis…",
+    "Beaucoup de mots courants ont des lettres muettes ou doubles : trottoir, girafe, hibou, automne."
+   ],
+   "exemple": "Il y a toujours beaucoup de monde sur le trottoir.",
+   "astuce": "Copie les mots difficiles et cache-les pour les réécrire."
+  },
+  {
+   "id": "fr-temps-recit",
+   "matiere": "fr",
+   "e": "📜",
+   "titre": "Passé simple et conditionnel présent",
+   "regle": [
+    "Passé simple (récit), 3e personne : -a / -èrent (il chanta, ils chantèrent) ; -it / -irent (il finit, ils prirent) ; -ut / -urent (il voulut) ; -int / -inrent (il vint).",
+    "Conditionnel présent : radical du futur + -ais, -ais, -ait, -ions, -iez, -aient (je chanterais, nous irions)."
+   ],
+   "exemple": "Il ouvrit la porte et vit un dragon. Si j'étais riche, je voyagerais.",
+   "astuce": "Futur : je chanterai. Conditionnel : je chanterais (avec un s)."
+  },
+  {
+   "id": "fr-infinitif",
+   "matiere": "fr",
+   "e": "📖",
+   "titre": "L'infinitif du verbe",
+   "regle": [
+    "L'infinitif est la forme du verbe dans le dictionnaire.",
+    "Il se termine par -er, -ir, -re ou -oir.",
+    "Pour le trouver, dis « il faut… » devant le verbe."
+   ],
+   "exemple": "nous prendrons → prendre ; il voulut → vouloir ; elles iraient → aller.",
+   "astuce": "Astuce : « Il faut … » → il faut prendre, il faut aller."
+  },
+  {
+   "id": "fr-auxiliaires",
+   "matiere": "fr",
+   "e": "🔧",
+   "titre": "Être ou avoir au passé composé ?",
+   "regle": [
+    "La plupart des verbes se conjuguent avec avoir.",
+    "Avec être : aller, venir, arriver, partir, rester, tomber, naître, mourir, devenir, revenir…",
+    "Les verbes pronominaux (se laver, s'amuser…) se conjuguent avec être."
+   ],
+   "exemple": "Elle est tombée. Il a couru. Nous nous sommes amusés.",
+   "astuce": "Courir et marcher se conjuguent avec avoir : il a couru, il a marché."
+  },
+  {
+   "id": "fr-synonymes",
+   "matiere": "fr",
+   "e": "🟰",
+   "titre": "Les synonymes",
+   "regle": [
+    "Des synonymes sont des mots de même classe qui ont presque le même sens.",
+    "On les utilise pour éviter les répétitions."
+   ],
+   "exemple": "content = joyeux = ravi ; commencer = débuter.",
+   "astuce": "Remplace le mot dans une phrase : si le sens reste le même, c'est un synonyme."
+  },
+  {
+   "id": "fr-antonymes",
+   "matiere": "fr",
+   "e": "↔️",
+   "titre": "Les antonymes (contraires)",
+   "regle": [
+    "Des antonymes sont des mots de sens contraire.",
+    "On peut les former avec un préfixe : in-, im-, il-, ir-, dé-, dés-, mal-, mé-."
+   ],
+   "exemple": "possible → impossible ; heureux → malheureux ; lisible → illisible.",
+   "astuce": "Devant b, m, p : im- (impossible). Devant l : il-. Devant r : ir-."
+  },
+  {
+   "id": "fr-familles-mots",
+   "matiere": "fr",
+   "e": "🌳",
+   "titre": "Les familles de mots",
+   "regle": [
+    "Les mots d'une même famille sont formés à partir du même mot de base et ont un sens proche.",
+    "Attention aux faux amis : ils se ressemblent mais n'ont pas le même sens (ventre n'est pas de la famille de vent)."
+   ],
+   "exemple": "terre : terrain, enterrer, souterrain, atterrir.",
+   "astuce": "Demande-toi si le sens du mot de base se retrouve dans le mot."
+  },
+  {
+   "id": "fr-prefixes-suffixes",
+   "matiere": "fr",
+   "e": "🧩",
+   "titre": "Préfixes et suffixes",
+   "regle": [
+    "Le préfixe se place devant le mot de base : re- (de nouveau), pré- (avant), in-/im-/dé-/mal- (le contraire), sous- (en dessous).",
+    "Le suffixe se place après : -ette/-on (petit), -eur/-iste (personne qui fait), -able (qui peut être), -ment (de telle manière), -ier (arbre fruitier), -erie (magasin)."
+   ],
+   "exemple": "re + lire = relire ; pomme + ier = pommier ; laver + able = lavable.",
+   "astuce": "Enlève le préfixe ou le suffixe pour retrouver le mot de base."
+  },
+  {
+   "id": "fr-generique",
+   "matiere": "fr",
+   "e": "🗂️",
+   "titre": "Mot générique, mot spécifique",
+   "regle": [
+    "Le mot générique désigne une catégorie : fruit, outil, meuble…",
+    "Le mot spécifique est plus précis : pomme, marteau, chaise…"
+   ],
+   "exemple": "fruit → pomme, poire, banane.",
+   "astuce": "Demande-toi : « c'est un… quoi ? »"
+  },
+  {
+   "id": "fr-sens-mots",
+   "matiere": "fr",
+   "e": "🔍",
+   "titre": "Le sens des mots",
+   "regle": [
+    "Un même mot peut avoir plusieurs sens : c'est la phrase qui choisit.",
+    "Sens propre : le sens premier, concret. Sens figuré : un sens imagé."
+   ],
+   "exemple": "la glace (dessert, miroir, eau gelée) ; avoir un cœur d'or (sens figuré).",
+   "astuce": "Relis la phrase entière avant de choisir le sens."
+  },
+  {
+   "id": "fr-expressions",
+   "matiere": "fr",
+   "e": "💬",
+   "titre": "Les expressions",
+   "regle": [
+    "Une expression est un groupe de mots qui a un sens imagé.",
+    "Il ne faut pas la comprendre mot à mot."
+   ],
+   "exemple": "avoir un poil dans la main = être paresseux.",
+   "astuce": "Imagine la scène : l'image t'aide souvent à comprendre le sens."
+  },
+  {
+   "id": "fr-niveaux-langue",
+   "matiere": "fr",
+   "e": "🎩",
+   "titre": "Les niveaux de langue",
+   "regle": [
+    "Familier : entre amis (une bagnole, bouffer).",
+    "Courant : dans la plupart des situations (une voiture, manger).",
+    "Soutenu : à l'écrit ou dans les occasions spéciales (une automobile, se sustenter)."
+   ],
+   "exemple": "un bouquin (familier) / un livre (courant) / un ouvrage (soutenu).",
+   "astuce": "À l'école et dans une rédaction, utilise le langage courant."
+  },
+  {
+   "id": "fr-ordre-alphabetique",
+   "matiere": "fr",
+   "e": "🔠",
+   "titre": "L'ordre alphabétique",
+   "regle": [
+    "Les mots du dictionnaire sont rangés dans l'ordre de l'alphabet.",
+    "Si la 1re lettre est la même, on compare la 2e, puis la 3e…",
+    "Les accents ne comptent pas pour ranger les mots."
+   ],
+   "exemple": "baleine → banane → bateau → bijou.",
+   "astuce": "Récite l'alphabet en pointant les lettres."
+  },
+  {
+   "id": "fr-connecteurs",
+   "matiere": "fr",
+   "e": "🔗",
+   "titre": "Les mots de liaison (connecteurs)",
+   "regle": [
+    "Cause : parce que, car, puisque.",
+    "Conséquence : donc, alors, c'est pourquoi, par conséquent.",
+    "Opposition : mais, pourtant, cependant, bien que.",
+    "Temps : quand, puis, ensuite, avant de, pendant que, lorsque.",
+    "Ajout : et, de plus, en plus."
+   ],
+   "exemple": "Il pleut, donc je prends mon parapluie. Je prends mon parapluie car il pleut.",
+   "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ?"
+  },
+  {
+   "id": "fr-types-textes",
+   "matiere": "fr",
+   "e": "📰",
+   "titre": "Types de textes et intentions",
+   "regle": [
+    "Raconter une histoire : conte, fable, récit.",
+    "Informer : texte documentaire, article de journal.",
+    "Convaincre : publicité, affiche, critique.",
+    "Donner des consignes : recette, mode d'emploi, règle du jeu."
+   ],
+   "exemple": "« Mélange la farine… » → recette → donner des consignes.",
+   "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte."
+  },
+  {
+   "id": "fr-reprises",
+   "matiere": "fr",
+   "e": "🔁",
+   "titre": "Les reprises dans un texte",
+   "regle": [
+    "Pour éviter les répétitions, on reprend un nom par un pronom (il, elle, le, lui, celui-ci…) ou par un autre groupe nominal (cet animal, ce dernier…).",
+    "Pour savoir ce que désigne une reprise, relis la phrase d'avant."
+   ],
+   "exemple": "Julie a un chaton. Elle l'adore. → Elle = Julie ; l' = le chaton.",
+   "astuce": "Remplace la reprise par ta réponse : la phrase doit garder son sens."
+  },
+  {
+   "id": "fr-inferences",
+   "matiere": "fr",
+   "e": "🕵️",
+   "titre": "Lire entre les lignes (inférences)",
+   "regle": [
+    "Un texte ne dit pas tout : il faut parfois deviner à partir d'indices.",
+    "Cherche les mots qui donnent des indices (vêtements, gestes, lieux, moments)."
+   ],
+   "exemple": "Tom met son bonnet et ses gants → il fait froid.",
+   "astuce": "Justifie toujours ta réponse avec un indice du texte."
+  }
+ ]
+}

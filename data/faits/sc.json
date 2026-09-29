@@ -1,0 +1,6821 @@
+{
+ "matiere": "sc",
+ "bases": [
+  {
+   "id": "animaux",
+   "description": "Animaux courants : classe, squelette, revêtement, respiration, pattes, régime, reproduction, hiver. Un champ absent = fait ambigu volontairement écarté.",
+   "cle": "nom",
+   "phrases": {
+    "classe": {
+     "mammifère": "un mammifère",
+     "oiseau": "un oiseau",
+     "poisson": "un poisson",
+     "reptile": "un reptile",
+     "amphibien": "un amphibien",
+     "insecte": "un insecte",
+     "arachnide": "un arachnide",
+     "crustacé": "un crustacé",
+     "mollusque": "un mollusque",
+     "annélide": "un annélide",
+     "myriapode": "un myriapode"
+    },
+    "classe_pluriel": {
+     "mammifère": "mammifères",
+     "oiseau": "oiseaus",
+     "poisson": "poissons",
+     "reptile": "reptiles",
+     "amphibien": "amphibiens",
+     "insecte": "insectes",
+     "arachnide": "arachnides",
+     "crustacé": "crustacés",
+     "mollusque": "mollusques",
+     "annélide": "annélides",
+     "myriapode": "myriapodes"
+    },
+    "regime": {
+     "herbivore": "herbivore",
+     "carnivore": "carnivore",
+     "omnivore": "omnivore"
+    },
+    "regime_pluriel": {
+     "herbivore": "herbivores",
+     "carnivore": "carnivores",
+     "omnivore": "omnivores"
+    },
+    "reproduction": {
+     "ovipare": "ovipare",
+     "vivipare": "vivipare"
+    },
+    "reproduction_pluriel": {
+     "ovipare": "ovipares",
+     "vivipare": "vivipares"
+    },
+    "squelette": {
+     "vertébré": "un vertébré",
+     "invertébré": "un invertébré"
+    },
+    "squelette_pluriel": {
+     "vertébré": "vertébrés",
+     "invertébré": "invertébrés"
+    },
+    "hiver": {
+     "en hibernant": "en hibernant",
+     "en migrant vers des pays plus chauds": "en migrant vers des pays plus chauds",
+     "en s'engourdissant (vie ralentie)": "en s'engourdissant (vie ralentie)",
+     "en continuant à chercher sa nourriture": "en continuant à chercher sa nourriture"
+    },
+    "pattes": {
+     "0": "aucune patte",
+     "2": "2 pattes",
+     "4": "4 pattes",
+     "6": "6 pattes",
+     "8": "8 pattes",
+     "10": "10 pattes",
+     "14": "14 pattes"
+    },
+    "revetement": {
+     "des poils": "de poils",
+     "des plumes": "de plumes",
+     "des écailles": "d'écailles",
+     "une peau nue": "d'une peau nue"
+    }
+   },
+   "items": [
+    {
+     "nom": "le chat",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la vache",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le lapin",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le cheval",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la chèvre",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le mouton",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "info": "Sa laine est faite de poils.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le cochon",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "omnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le dauphin",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "une peau nue",
+     "info": "Il vit dans l'eau, mais il respire avec des poumons et allaite ses petits.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la baleine",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "une peau nue",
+     "info": "Elle remonte à la surface pour respirer : c'est un mammifère, pas un poisson.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la chauve-souris",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "hiver": "en hibernant",
+     "info": "Elle vole, mais elle a des poils et allaite ses petits : c'est un mammifère.",
+     "info_hiver": "Chez nous, elle hiberne suspendue dans une grotte ou un grenier.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le hérisson",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en hibernant",
+     "info": "Ses piquants sont des poils durcis.",
+     "info_hiver": "Il dort tout l'hiver dans un nid de feuilles ; son cœur bat très lentement.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la marmotte",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en hibernant",
+     "info_hiver": "Elle dort plusieurs mois dans son terrier ; sa température baisse fortement.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le loir",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en hibernant",
+     "info_hiver": "Il dort tout l'hiver en boule, bien caché ; on dit « dormir comme un loir ».",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le sanglier",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "omnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste actif et fouille le sol de la forêt pour trouver sa nourriture.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "l'ours brun",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "omnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le renard",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste actif tout l'hiver ; son pelage devient plus épais.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "l'écureuil",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il n'hiberne pas : il reste actif et mange les noisettes et les glands qu'il a cachés en automne.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le loup",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le lion",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le tigre",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la girafe",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le zèbre",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "l'éléphant",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "l'hippopotame",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le rhinocéros",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la souris",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la taupe",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "info": "Elle mange surtout des vers de terre et des larves.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le phoque",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le cerf",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste actif et mange des écorces, des bourgeons et des herbes sèches.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le chevreuil",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste actif et se nourrit de ronces, de bourgeons et de lierre.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le lièvre",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste actif tout l'hiver dans les champs.",
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le castor",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "herbivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la loutre",
+     "classe": "mammifère",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "le lynx",
+     "classe": "mammifère",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "vivipare",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "revetement": "des poils",
+     "pattes": 4,
+     "classe_accepte": [
+      "mammifères"
+     ]
+    },
+    {
+     "nom": "la poule",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "omnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le merle",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "omnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "l'aigle",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la chouette",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le pigeon",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "herbivore",
+     "info": "Il mange surtout des graines.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le manchot",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "info": "Il ne vole pas, mais il a des plumes et pond des œufs : c'est un oiseau.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "l'autruche",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "info": "Elle ne vole pas, mais elle a des plumes et pond des œufs : c'est un oiseau.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le canard",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "omnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la mésange",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "omnivore",
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Elle reste chez nous et cherche des graines ; les mangeoires l'aident à passer l'hiver.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "l'hirondelle",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "hiver": "en migrant vers des pays plus chauds",
+     "info": "Elle attrape des insectes en vol.",
+     "info_hiver": "En automne, elle part en Afrique, où elle trouve encore des insectes à manger.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la cigogne",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "hiver": "en migrant vers des pays plus chauds",
+     "info_hiver": "En automne, elle s'envole vers l'Afrique, où il fait plus chaud.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le martinet",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "hiver": "en migrant vers des pays plus chauds",
+     "info_hiver": "Il ne mange que des insectes volants : en hiver, il part en Afrique.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le coucou",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "hiver": "en migrant vers des pays plus chauds",
+     "info_hiver": "Il part en Afrique à la fin de l'été et revient chez nous au printemps.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la grue cendrée",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "hiver": "en migrant vers des pays plus chauds",
+     "info_hiver": "Elle passe au-dessus de la Belgique en grands V quand elle part vers le sud.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la pie",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "omnivore",
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Elle reste chez nous toute l'année et mange ce qu'elle trouve.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le moineau",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste chez nous et cherche des graines, parfois près des maisons.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le pic épeiche",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "hiver": "en continuant à chercher sa nourriture",
+     "info_hiver": "Il reste chez nous et cherche des larves sous l'écorce des arbres.",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "le héron cendré",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la buse",
+     "classe": "oiseau",
+     "il": "elle",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "l'épervier",
+     "classe": "oiseau",
+     "il": "il",
+     "squelette": "vertébré",
+     "reproduction": "ovipare",
+     "revetement": "des plumes",
+     "respiration": "avec des poumons",
+     "pattes": 2,
+     "regime": "carnivore",
+     "classe_accepte": [
+      "oiseaus"
+     ]
+    },
+    {
+     "nom": "la truite",
+     "classe": "poisson",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le requin",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le saumon",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le poisson rouge",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "omnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le brochet",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "la carpe",
+     "classe": "poisson",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "omnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le hareng",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le thon",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "l'anguille",
+     "classe": "poisson",
+     "il": "elle",
+     "squelette": "vertébré",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "info": "Elle ressemble à un serpent, mais elle respire avec des branchies : c'est un poisson.",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "la raie",
+     "classe": "poisson",
+     "il": "elle",
+     "squelette": "vertébré",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le cabillaud",
+     "classe": "poisson",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des branchies",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "poissons"
+     ]
+    },
+    {
+     "nom": "le lézard des murailles",
+     "classe": "reptile",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Son corps prend la température de l'air : en hiver, il se cache et s'engourdit.",
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "la tortue",
+     "classe": "reptile",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "le crocodile",
+     "classe": "reptile",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "la couleuvre à collier",
+     "classe": "reptile",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 0,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Elle se cache sous des pierres ou dans un trou et reste engourdie par le froid.",
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "la vipère",
+     "classe": "reptile",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "pattes": 0,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Elle se cache dans un trou et reste engourdie jusqu'au printemps.",
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "le caméléon",
+     "classe": "reptile",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "pattes": 4,
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "le python",
+     "classe": "reptile",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "des écailles",
+     "respiration": "avec des poumons",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 0,
+     "classe_accepte": [
+      "reptiles"
+     ]
+    },
+    {
+     "nom": "la grenouille",
+     "classe": "amphibien",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "une peau nue",
+     "respiration": [
+      "avec des poumons et à travers la peau",
+      "avec des poumons"
+     ],
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info": "Le têtard respire avec des branchies, puis la grenouille adulte avec des poumons et sa peau.",
+     "info_hiver": "Elle s'enfouit dans la vase ou sous des feuilles et s'engourdit.",
+     "classe_accepte": [
+      "amphibiens"
+     ]
+    },
+    {
+     "nom": "le crapaud",
+     "classe": "amphibien",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "une peau nue",
+     "respiration": [
+      "avec des poumons et à travers la peau",
+      "avec des poumons"
+     ],
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Il se cache dans un trou ou sous des feuilles et s'engourdit.",
+     "classe_accepte": [
+      "amphibiens"
+     ]
+    },
+    {
+     "nom": "la salamandre",
+     "classe": "amphibien",
+     "il": "elle",
+     "squelette": "vertébré",
+     "revetement": "une peau nue",
+     "respiration": [
+      "avec des poumons et à travers la peau",
+      "avec des poumons"
+     ],
+     "regime": "carnivore",
+     "pattes": 4,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Elle se cache sous une souche ou dans un trou et s'engourdit.",
+     "classe_accepte": [
+      "amphibiens"
+     ]
+    },
+    {
+     "nom": "le triton",
+     "classe": "amphibien",
+     "il": "il",
+     "squelette": "vertébré",
+     "revetement": "une peau nue",
+     "respiration": [
+      "avec des poumons et à travers la peau",
+      "avec des poumons"
+     ],
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "pattes": 4,
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info_hiver": "Il se cache sous une pierre ou dans la vase et s'engourdit.",
+     "classe_accepte": [
+      "amphibiens"
+     ]
+    },
+    {
+     "nom": "la coccinelle",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "hiver": "en s'engourdissant (vie ralentie)",
+     "info": "Elle mange des pucerons.",
+     "info_hiver": "Les adultes se regroupent à l'abri (sous une écorce, dans un coin de fenêtre) et s'engourdissent.",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "l'abeille",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "herbivore",
+     "reproduction": "ovipare",
+     "info": "Elle se nourrit de nectar et de pollen.",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "la fourmi",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "omnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "le papillon",
+     "classe": "insecte",
+     "il": "il",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "herbivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "le criquet",
+     "classe": "insecte",
+     "il": "il",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "herbivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "le hanneton",
+     "classe": "insecte",
+     "il": "il",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "herbivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "la mouche",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "le moustique",
+     "classe": "insecte",
+     "il": "il",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "la libellule",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "la guêpe",
+     "classe": "insecte",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 6,
+     "respiration": "avec des trachées",
+     "reproduction": "ovipare",
+     "classe_accepte": [
+      "insectes"
+     ]
+    },
+    {
+     "nom": "l'araignée",
+     "classe": "arachnide",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 8,
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "info": "Elle a 8 pattes : ce n'est pas un insecte (6 pattes).",
+     "classe_accepte": [
+      "arachnides"
+     ]
+    },
+    {
+     "nom": "le scorpion",
+     "classe": "arachnide",
+     "il": "il",
+     "squelette": "invertébré",
+     "regime": "carnivore",
+     "classe_accepte": [
+      "arachnides"
+     ]
+    },
+    {
+     "nom": "la tique",
+     "classe": "arachnide",
+     "il": "elle",
+     "squelette": "invertébré",
+     "pattes": 8,
+     "reproduction": "ovipare",
+     "info": "Elle a 8 pattes et se nourrit de sang : c'est un arachnide.",
+     "classe_accepte": [
+      "arachnides"
+     ]
+    },
+    {
+     "nom": "le crabe",
+     "classe": "crustacé",
+     "il": "il",
+     "squelette": "invertébré",
+     "regime": "omnivore",
+     "reproduction": "ovipare",
+     "respiration": "avec des branchies",
+     "pattes": 10,
+     "info": "Ses 2 pinces comptent parmi ses 10 pattes.",
+     "classe_accepte": [
+      "crustacés"
+     ]
+    },
+    {
+     "nom": "la crevette",
+     "classe": "crustacé",
+     "il": "elle",
+     "squelette": "invertébré",
+     "regime": "omnivore",
+     "reproduction": "ovipare",
+     "respiration": "avec des branchies",
+     "classe_accepte": [
+      "crustacés"
+     ]
+    },
+    {
+     "nom": "le homard",
+     "classe": "crustacé",
+     "il": "il",
+     "squelette": "invertébré",
+     "reproduction": "ovipare",
+     "respiration": "avec des branchies",
+     "pattes": 10,
+     "classe_accepte": [
+      "crustacés"
+     ]
+    },
+    {
+     "nom": "le cloporte",
+     "classe": "crustacé",
+     "il": "il",
+     "squelette": "invertébré",
+     "pattes": 14,
+     "info": "Il vit sous les pierres et les feuilles mortes ; c'est un crustacé terrestre.",
+     "classe_accepte": [
+      "crustacés"
+     ]
+    },
+    {
+     "nom": "l'escargot",
+     "classe": "mollusque",
+     "il": "il",
+     "squelette": "invertébré",
+     "regime": "herbivore",
+     "reproduction": "ovipare",
+     "info": "Il a un corps mou protégé par une coquille.",
+     "classe_accepte": [
+      "mollusques"
+     ]
+    },
+    {
+     "nom": "la limace",
+     "classe": "mollusque",
+     "il": "elle",
+     "squelette": "invertébré",
+     "reproduction": "ovipare",
+     "info": "C'est un mollusque sans coquille.",
+     "classe_accepte": [
+      "mollusques"
+     ]
+    },
+    {
+     "nom": "la moule",
+     "classe": "mollusque",
+     "il": "elle",
+     "squelette": "invertébré",
+     "respiration": "avec des branchies",
+     "classe_accepte": [
+      "mollusques"
+     ]
+    },
+    {
+     "nom": "la pieuvre",
+     "classe": "mollusque",
+     "il": "elle",
+     "squelette": "invertébré",
+     "regime": "carnivore",
+     "reproduction": "ovipare",
+     "respiration": "avec des branchies",
+     "info": "Elle a un corps mou et 8 bras, mais pas de coquille.",
+     "classe_accepte": [
+      "mollusques"
+     ]
+    },
+    {
+     "nom": "l'huître",
+     "classe": "mollusque",
+     "il": "elle",
+     "squelette": "invertébré",
+     "respiration": "avec des branchies",
+     "classe_accepte": [
+      "mollusques"
+     ]
+    },
+    {
+     "nom": "le ver de terre",
+     "classe": "annélide",
+     "il": "il",
+     "squelette": "invertébré",
+     "info": "Son corps est fait d'anneaux : c'est un annélide.",
+     "classe_accepte": [
+      "annélides"
+     ]
+    },
+    {
+     "nom": "la sangsue",
+     "classe": "annélide",
+     "il": "elle",
+     "squelette": "invertébré",
+     "info": "Son corps est fait d'anneaux : c'est un annélide.",
+     "classe_accepte": [
+      "annélides"
+     ]
+    },
+    {
+     "nom": "le mille-pattes",
+     "classe": "myriapode",
+     "il": "il",
+     "squelette": "invertébré",
+     "info": "Il a de nombreuses paires de pattes : c'est un myriapode, pas un insecte.",
+     "classe_accepte": [
+      "myriapodes"
+     ]
+    },
+    {
+     "nom": "la scolopendre",
+     "classe": "myriapode",
+     "il": "elle",
+     "squelette": "invertébré",
+     "info": "Elle a une paire de pattes par anneau du corps : c'est un myriapode.",
+     "classe_accepte": [
+      "myriapodes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cycles",
+   "description": "Cycles de vie, métamorphoses, noms des larves.",
+   "cle": "nom",
+   "phrases": {
+    "meta": {
+     "oui": "subit une métamorphose",
+     "non": "ne subit pas de métamorphose"
+    }
+   },
+   "items": [
+    {
+     "nom": "papillon:1",
+     "texte": "l'œuf",
+     "suite": "papillon",
+     "rang": 1
+    },
+    {
+     "nom": "papillon:2",
+     "texte": "la chenille",
+     "suite": "papillon",
+     "rang": 2
+    },
+    {
+     "nom": "papillon:3",
+     "texte": "la chrysalide",
+     "suite": "papillon",
+     "rang": 3
+    },
+    {
+     "nom": "papillon:4",
+     "texte": "le papillon adulte",
+     "suite": "papillon",
+     "rang": 4
+    },
+    {
+     "nom": "grenouille:1",
+     "texte": "l'œuf",
+     "suite": "grenouille",
+     "rang": 1
+    },
+    {
+     "nom": "grenouille:2",
+     "texte": "le têtard sans pattes",
+     "suite": "grenouille",
+     "rang": 2
+    },
+    {
+     "nom": "grenouille:3",
+     "texte": "le têtard avec des pattes arrière",
+     "suite": "grenouille",
+     "rang": 3
+    },
+    {
+     "nom": "grenouille:4",
+     "texte": "le têtard avec quatre pattes",
+     "suite": "grenouille",
+     "rang": 4
+    },
+    {
+     "nom": "grenouille:5",
+     "texte": "la jeune grenouille",
+     "suite": "grenouille",
+     "rang": 5
+    },
+    {
+     "nom": "grenouille:6",
+     "texte": "la grenouille adulte",
+     "suite": "grenouille",
+     "rang": 6
+    },
+    {
+     "nom": "coccinelle:1",
+     "texte": "l'œuf",
+     "suite": "coccinelle",
+     "rang": 1
+    },
+    {
+     "nom": "coccinelle:2",
+     "texte": "la larve",
+     "suite": "coccinelle",
+     "rang": 2
+    },
+    {
+     "nom": "coccinelle:3",
+     "texte": "la nymphe",
+     "suite": "coccinelle",
+     "rang": 3
+    },
+    {
+     "nom": "coccinelle:4",
+     "texte": "la coccinelle adulte",
+     "suite": "coccinelle",
+     "rang": 4
+    },
+    {
+     "nom": "abeille:1",
+     "texte": "l'œuf",
+     "suite": "abeille",
+     "rang": 1
+    },
+    {
+     "nom": "abeille:2",
+     "texte": "la larve",
+     "suite": "abeille",
+     "rang": 2
+    },
+    {
+     "nom": "abeille:3",
+     "texte": "la nymphe",
+     "suite": "abeille",
+     "rang": 3
+    },
+    {
+     "nom": "abeille:4",
+     "texte": "l'abeille adulte",
+     "suite": "abeille",
+     "rang": 4
+    },
+    {
+     "nom": "moustique:1",
+     "texte": "l'œuf",
+     "suite": "moustique",
+     "rang": 1
+    },
+    {
+     "nom": "moustique:2",
+     "texte": "la larve (dans l'eau)",
+     "suite": "moustique",
+     "rang": 2
+    },
+    {
+     "nom": "moustique:3",
+     "texte": "la nymphe (dans l'eau)",
+     "suite": "moustique",
+     "rang": 3
+    },
+    {
+     "nom": "moustique:4",
+     "texte": "le moustique adulte",
+     "suite": "moustique",
+     "rang": 4
+    },
+    {
+     "nom": "hanneton:1",
+     "texte": "l'œuf",
+     "suite": "hanneton",
+     "rang": 1
+    },
+    {
+     "nom": "hanneton:2",
+     "texte": "la larve (le ver blanc)",
+     "suite": "hanneton",
+     "rang": 2
+    },
+    {
+     "nom": "hanneton:3",
+     "texte": "la nymphe",
+     "suite": "hanneton",
+     "rang": 3
+    },
+    {
+     "nom": "hanneton:4",
+     "texte": "le hanneton adulte",
+     "suite": "hanneton",
+     "rang": 4
+    },
+    {
+     "nom": "haricot:1",
+     "texte": "la graine",
+     "suite": "haricot",
+     "rang": 1
+    },
+    {
+     "nom": "haricot:2",
+     "texte": "la germination",
+     "suite": "haricot",
+     "rang": 2
+    },
+    {
+     "nom": "haricot:3",
+     "texte": "la jeune plante",
+     "suite": "haricot",
+     "rang": 3
+    },
+    {
+     "nom": "haricot:4",
+     "texte": "la plante en fleurs",
+     "suite": "haricot",
+     "rang": 4
+    },
+    {
+     "nom": "haricot:5",
+     "texte": "la pollinisation des fleurs",
+     "suite": "haricot",
+     "rang": 5
+    },
+    {
+     "nom": "haricot:6",
+     "texte": "le fruit (la gousse) avec de nouvelles graines",
+     "suite": "haricot",
+     "rang": 6
+    },
+    {
+     "nom": "la grenouille",
+     "meta": "oui",
+     "il": "elle",
+     "meta_info": "Le têtard, qui vit dans l'eau et respire avec des branchies, se transforme en grenouille."
+    },
+    {
+     "nom": "le crapaud",
+     "meta": "oui",
+     "il": "il",
+     "meta_info": "Comme la grenouille, il commence sa vie sous forme de têtard."
+    },
+    {
+     "nom": "le triton",
+     "meta": "oui",
+     "il": "il",
+     "meta_info": "C'est un amphibien : sa larve vit dans l'eau et se transforme."
+    },
+    {
+     "nom": "le papillon",
+     "meta": "oui",
+     "il": "il",
+     "meta_info": "La chenille devient chrysalide, puis papillon."
+    },
+    {
+     "nom": "la coccinelle",
+     "meta": "oui",
+     "il": "elle",
+     "meta_info": "Sa larve ne lui ressemble pas du tout ; elle devient nymphe, puis coccinelle adulte."
+    },
+    {
+     "nom": "l'abeille",
+     "meta": "oui",
+     "il": "elle",
+     "meta_info": "La larve, sans pattes, devient nymphe puis abeille adulte."
+    },
+    {
+     "nom": "le moustique",
+     "meta": "oui",
+     "il": "il",
+     "meta_info": "Sa larve et sa nymphe vivent dans l'eau."
+    },
+    {
+     "nom": "la mouche",
+     "meta": "oui",
+     "il": "elle",
+     "meta_info": "Sa larve s'appelle l'asticot."
+    },
+    {
+     "nom": "le hanneton",
+     "meta": "oui",
+     "il": "il",
+     "meta_info": "Sa larve, le ver blanc, vit plusieurs années dans le sol."
+    },
+    {
+     "nom": "la libellule",
+     "meta": "oui",
+     "il": "elle",
+     "meta_info": "Sa larve vit dans l'eau avant de se transformer en libellule adulte."
+    },
+    {
+     "nom": "le chien",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "le chat",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "le cheval",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "le lapin",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "la poule",
+     "meta": "non",
+     "il": "elle"
+    },
+    {
+     "nom": "le canard",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "le pigeon",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "le lézard",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "la tortue",
+     "meta": "non",
+     "il": "elle"
+    },
+    {
+     "nom": "l'araignée",
+     "meta": "non",
+     "il": "elle"
+    },
+    {
+     "nom": "le mouton",
+     "meta": "non",
+     "il": "il"
+    },
+    {
+     "nom": "la vache",
+     "meta": "non",
+     "il": "elle"
+    },
+    {
+     "nom": "Comment s'appelle la larve du papillon ?",
+     "rep": "la chenille",
+     "faux": [
+      "le têtard",
+      "l'asticot",
+      "le ver blanc"
+     ],
+     "pourquoi": "La larve du papillon est la chenille ; elle se transforme ensuite en chrysalide."
+    },
+    {
+     "nom": "Comment s'appelle la larve de la grenouille ?",
+     "rep": "le têtard",
+     "faux": [
+      "la chenille",
+      "l'asticot",
+      "la chrysalide"
+     ],
+     "pourquoi": "La larve de la grenouille est le têtard ; il vit dans l'eau et respire avec des branchies."
+    },
+    {
+     "nom": "Comment s'appelle la larve de la mouche ?",
+     "rep": "l'asticot",
+     "faux": [
+      "le têtard",
+      "la chenille",
+      "la chrysalide"
+     ],
+     "pourquoi": "La larve de la mouche est l'asticot."
+    },
+    {
+     "nom": "Comment s'appelle la larve du hanneton ?",
+     "rep": "le ver blanc",
+     "faux": [
+      "le têtard",
+      "la chenille",
+      "l'asticot"
+     ],
+     "pourquoi": "La larve du hanneton est le ver blanc ; elle vit dans le sol."
+    },
+    {
+     "nom": "Comment s'appelle la nymphe du papillon ?",
+     "rep": "la chrysalide",
+     "faux": [
+      "le têtard",
+      "la chenille",
+      "l'asticot"
+     ],
+     "pourquoi": "La chenille s'enferme dans une chrysalide, où elle se transforme en papillon."
+    },
+    {
+     "nom": "Comment appelle-t-on la transformation complète d'un animal au cours de sa vie (par exemple : chenille → papillon) ?",
+     "rep": "une métamorphose",
+     "faux": [
+      "une mue",
+      "une hibernation",
+      "une migration"
+     ],
+     "pourquoi": "La métamorphose est un changement important de forme au cours de la vie d'un animal."
+    },
+    {
+     "nom": "Où vit le têtard ?",
+     "rep": "dans l'eau",
+     "faux": [
+      "dans la terre",
+      "dans les arbres",
+      "dans une chrysalide"
+     ],
+     "pourquoi": "Le têtard vit dans l'eau (mare, étang) et respire avec des branchies."
+    },
+    {
+     "nom": "Que fait la chenille pendant la plus grande partie de sa vie ?",
+     "rep": "elle mange des feuilles et grandit",
+     "faux": [
+      "elle pond des œufs",
+      "elle vole de fleur en fleur",
+      "elle dort dans une chrysalide"
+     ],
+     "pourquoi": "La chenille mange beaucoup de feuilles pour grandir avant de devenir chrysalide."
+    },
+    {
+     "nom": "Le têtard respire avec des branchies.",
+     "verite": true,
+     "pourquoi": "Il vit dans l'eau, comme un poisson ; la grenouille adulte respire avec des poumons et sa peau."
+    },
+    {
+     "nom": "Pendant une métamorphose, la forme du corps de l'animal change beaucoup.",
+     "verite": true,
+     "pourquoi": "Par exemple, la chenille rampante devient un papillon avec des ailes."
+    },
+    {
+     "nom": "Le poussin subit une métamorphose avant de devenir une poule.",
+     "verite": false,
+     "pourquoi": "Le poussin ressemble déjà à une poule : il grandit sans se transformer."
+    },
+    {
+     "nom": "La chrysalide mange beaucoup de feuilles.",
+     "verite": false,
+     "pourquoi": "La chrysalide ne mange pas : elle reste immobile pendant que son corps se transforme."
+    },
+    {
+     "nom": "La coccinelle sort de l'œuf avec sa couleur rouge et ses points noirs.",
+     "verite": false,
+     "pourquoi": "La coccinelle sort de l'œuf sous forme de larve, qui ne ressemble pas du tout à l'adulte."
+    },
+    {
+     "nom": "La grenouille pond ses œufs dans l'eau.",
+     "verite": true,
+     "pourquoi": "Les œufs (le frai) sont pondus dans l'eau, où vivront les têtards."
+    },
+    {
+     "nom": "Le têtard perd ses pattes en devenant grenouille.",
+     "verite": false,
+     "pourquoi": "Le têtard ne perd pas ses pattes : c'est sa queue qui disparaît petit à petit, tandis que les pattes apparaissent."
+    },
+    {
+     "nom": "Chez le papillon, la larve ne ressemble pas du tout à l'adulte.",
+     "verite": true,
+     "pourquoi": "La chenille n'a pas d'ailes et mange des feuilles ; le papillon adulte vole et boit le nectar des fleurs."
+    }
+   ]
+  },
+  {
+   "id": "chaines",
+   "description": "Chaînes alimentaires vérifiées (la flèche = « est mangé par »).",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "chaine01",
+     "maillons": [
+      "l'herbe",
+      "le lapin",
+      "le renard"
+     ]
+    },
+    {
+     "nom": "chaine02",
+     "maillons": [
+      "les feuilles de chou",
+      "la chenille",
+      "la mésange",
+      "l'épervier"
+     ]
+    },
+    {
+     "nom": "chaine03",
+     "maillons": [
+      "la salade",
+      "la limace",
+      "le hérisson"
+     ]
+    },
+    {
+     "nom": "chaine04",
+     "maillons": [
+      "les glands",
+      "le mulot",
+      "la chouette"
+     ]
+    },
+    {
+     "nom": "chaine05",
+     "maillons": [
+      "les algues microscopiques",
+      "la daphnie",
+      "l'épinoche",
+      "le brochet"
+     ]
+    },
+    {
+     "nom": "chaine06",
+     "maillons": [
+      "l'herbe",
+      "le criquet",
+      "la grenouille",
+      "le héron"
+     ]
+    },
+    {
+     "nom": "chaine07",
+     "maillons": [
+      "l'herbe",
+      "la vache",
+      "l'être humain"
+     ]
+    },
+    {
+     "nom": "chaine08",
+     "maillons": [
+      "l'herbe",
+      "le zèbre",
+      "le lion"
+     ]
+    },
+    {
+     "nom": "chaine09",
+     "maillons": [
+      "les feuilles d'acacia",
+      "la girafe",
+      "le lion"
+     ]
+    },
+    {
+     "nom": "chaine10",
+     "maillons": [
+      "le rosier",
+      "le puceron",
+      "la coccinelle"
+     ]
+    },
+    {
+     "nom": "chaine11",
+     "maillons": [
+      "le plancton végétal",
+      "le plancton animal",
+      "le hareng",
+      "le phoque"
+     ]
+    },
+    {
+     "nom": "chaine12",
+     "maillons": [
+      "les lentilles d'eau",
+      "le canard",
+      "le renard"
+     ]
+    },
+    {
+     "nom": "chaine13",
+     "maillons": [
+      "la laitue",
+      "l'escargot",
+      "la grive"
+     ]
+    },
+    {
+     "nom": "chaine14",
+     "maillons": [
+      "le blé",
+      "le mulot",
+      "la buse"
+     ]
+    },
+    {
+     "nom": "chaine15",
+     "maillons": [
+      "l'herbe",
+      "le chevreuil",
+      "le loup"
+     ]
+    },
+    {
+     "nom": "chaine16",
+     "maillons": [
+      "les graines de tournesol",
+      "la mésange",
+      "l'épervier"
+     ]
+    },
+    {
+     "nom": "chaine17",
+     "maillons": [
+      "les baies du sorbier",
+      "le merle",
+      "l'épervier"
+     ]
+    },
+    {
+     "nom": "chaine18",
+     "maillons": [
+      "le maïs",
+      "la poule",
+      "le renard"
+     ]
+    },
+    {
+     "nom": "chaine19",
+     "maillons": [
+      "l'herbe",
+      "le mouton",
+      "le loup"
+     ]
+    },
+    {
+     "nom": "chaine20",
+     "maillons": [
+      "les feuilles de chêne",
+      "la chenille",
+      "la mésange",
+      "l'épervier"
+     ]
+    },
+    {
+     "nom": "chaine21",
+     "maillons": [
+      "le trèfle",
+      "le lapin",
+      "la buse"
+     ]
+    },
+    {
+     "nom": "chaine22",
+     "maillons": [
+      "les pissenlits",
+      "le lapin",
+      "le renard"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecosystemes",
+   "description": "Milieux de vie (mare, forêt, mer), décomposeurs, champignons.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "le dytique",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "la larve de libellule",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "le nénuphar",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "la lentille d'eau",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "la daphnie",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "la limnée",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "le gerris",
+     "milieu": "la mare",
+     "info": "Cet insecte glisse à la surface de l'eau."
+    },
+    {
+     "nom": "le têtard",
+     "milieu": "la mare"
+    },
+    {
+     "nom": "le chevreuil",
+     "milieu": "la forêt",
+     "decomp": "non"
+    },
+    {
+     "nom": "le sanglier",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "le pic épeiche",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "le chêne",
+     "milieu": "la forêt",
+     "decomp": "non"
+    },
+    {
+     "nom": "le hêtre",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "la chouette hulotte",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "le cerf",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "le geai des chênes",
+     "milieu": "la forêt"
+    },
+    {
+     "nom": "l'écureuil",
+     "milieu": "la forêt",
+     "decomp": "non"
+    },
+    {
+     "nom": "le hareng",
+     "milieu": "la mer",
+     "decomp": "non"
+    },
+    {
+     "nom": "le phoque",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "le crabe",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "la moule",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "l'étoile de mer",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "la méduse",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "le requin",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "le dauphin",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "le cabillaud",
+     "milieu": "la mer"
+    },
+    {
+     "nom": "le ver de terre",
+     "decomp": "oui",
+     "info_d": "Il mange les feuilles mortes et les mélange à la terre."
+    },
+    {
+     "nom": "le cloporte",
+     "decomp": "oui",
+     "info_d": "Il se nourrit de feuilles mortes et de bois pourri."
+    },
+    {
+     "nom": "le champignon de souche",
+     "decomp": "oui",
+     "info_d": "Il décompose le bois mort."
+    },
+    {
+     "nom": "les bactéries du sol",
+     "decomp": "oui",
+     "info_d": "Ces êtres vivants minuscules transforment les restes en matières minérales."
+    },
+    {
+     "nom": "la moisissure",
+     "decomp": "oui",
+     "info_d": "C'est un champignon qui décompose les aliments et les restes."
+    },
+    {
+     "nom": "le renard",
+     "decomp": "non"
+    },
+    {
+     "nom": "la mésange",
+     "decomp": "non"
+    },
+    {
+     "nom": "le lapin",
+     "decomp": "non"
+    },
+    {
+     "nom": "l'herbe",
+     "decomp": "non"
+    },
+    {
+     "nom": "l'abeille",
+     "decomp": "non"
+    },
+    {
+     "nom": "le lion",
+     "decomp": "non"
+    },
+    {
+     "nom": "la vache",
+     "decomp": "non"
+    },
+    {
+     "nom": "Les décomposeurs transforment les feuilles mortes et les cadavres en matières minérales.",
+     "verite": true,
+     "pourquoi": "Ces matières minérales enrichissent le sol et nourrissent à nouveau les plantes."
+    },
+    {
+     "nom": "Le ver de terre aide à décomposer les feuilles mortes.",
+     "verite": true,
+     "pourquoi": "Il mange les débris de végétaux et les mélange à la terre : c'est un décomposeur."
+    },
+    {
+     "nom": "Les champignons ne sont ni des végétaux ni des animaux.",
+     "verite": true,
+     "pourquoi": "Ils forment un groupe à part : ils n'ont pas de chlorophylle et se nourrissent de matière déjà fabriquée."
+    },
+    {
+     "nom": "Les champignons fabriquent leur nourriture grâce à la lumière, comme les plantes vertes.",
+     "verite": false,
+     "pourquoi": "Les champignons n'ont pas de chlorophylle : ils se nourrissent de matière morte ou vivent avec d'autres êtres vivants."
+    },
+    {
+     "nom": "Les champignons se reproduisent grâce à des spores.",
+     "verite": true,
+     "pourquoi": "Les spores sont de minuscules cellules, souvent produites sous le chapeau, que le vent disperse."
+    },
+    {
+     "nom": "Les champignons ont des racines, une tige et des feuilles.",
+     "verite": false,
+     "pourquoi": "Un champignon a un pied et un chapeau ; sa plus grande partie, le mycélium, est un réseau de filaments caché dans le sol."
+    },
+    {
+     "nom": "Sans décomposeurs, les feuilles mortes s'accumuleraient sur le sol de la forêt.",
+     "verite": true,
+     "pourquoi": "Ce sont eux qui font disparaître petit à petit les feuilles mortes en les transformant en humus."
+    },
+    {
+     "nom": "Un écosystème, c'est seulement l'ensemble des animaux d'un milieu.",
+     "verite": false,
+     "pourquoi": "Un écosystème comprend un milieu (sol, eau, climat) et tous les êtres vivants qui y vivent : animaux, végétaux, champignons…"
+    },
+    {
+     "nom": "Dans une chaîne alimentaire, le premier maillon est un producteur.",
+     "verite": true,
+     "pourquoi": "Le producteur est un végétal (ou une algue) qui fabrique sa propre matière grâce à la lumière."
+    },
+    {
+     "nom": "Les plantes vertes doivent manger d'autres êtres vivants pour vivre.",
+     "verite": false,
+     "pourquoi": "Les plantes vertes fabriquent leur propre matière avec de l'eau, des sels minéraux, du dioxyde de carbone et de la lumière."
+    },
+    {
+     "nom": "Les moisissures sur un vieux pain sont des végétaux.",
+     "verite": false,
+     "pourquoi": "Les moisissures sont des champignons."
+    },
+    {
+     "nom": "La levure utilisée pour faire lever la pâte à pain est un champignon.",
+     "verite": true,
+     "pourquoi": "C'est un champignon microscopique qui produit du gaz et fait gonfler la pâte."
+    },
+    {
+     "nom": "Si tous les renards disparaissaient d'une forêt, cela n'aurait aucun effet sur les autres animaux.",
+     "verite": false,
+     "pourquoi": "Les êtres vivants dépendent les uns des autres : sans renards, les lapins et les mulots pourraient devenir beaucoup trop nombreux."
+    },
+    {
+     "nom": "Un même animal peut faire partie de plusieurs chaînes alimentaires.",
+     "verite": true,
+     "pourquoi": "Par exemple, le renard mange des lapins, des mulots ou des poules : les chaînes s'entrecroisent et forment un réseau alimentaire."
+    },
+    {
+     "nom": "La mare, la forêt et la mer abritent exactement les mêmes êtres vivants.",
+     "verite": false,
+     "pourquoi": "Chaque milieu a ses propres êtres vivants, adaptés à ses conditions (eau douce, eau salée, ombre…)."
+    },
+    {
+     "nom": "Tous les champignons des bois peuvent se manger sans danger.",
+     "verite": false,
+     "pourquoi": "Certains champignons sont mortels : on ne mange jamais un champignon cueilli sans l'avis d'un spécialiste."
+    }
+   ]
+  },
+  {
+   "id": "plante",
+   "description": "Parties de la plante et leur rôle.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "la racine",
+     "role": "absorber l'eau et les sels minéraux du sol, et fixer la plante"
+    },
+    {
+     "nom": "la tige",
+     "role": "soutenir la plante et transporter la sève"
+    },
+    {
+     "nom": "la feuille",
+     "role": "fabriquer la nourriture de la plante grâce à la lumière"
+    },
+    {
+     "nom": "la fleur",
+     "role": "permettre la reproduction de la plante"
+    },
+    {
+     "nom": "le fruit",
+     "role": "protéger les graines"
+    },
+    {
+     "nom": "la graine",
+     "role": "donner naissance à une nouvelle plante"
+    },
+    {
+     "nom": "le bourgeon",
+     "role": "donner une nouvelle pousse avec des feuilles ou des fleurs"
+    }
+   ]
+  },
+  {
+   "id": "fleur",
+   "description": "Parties de la fleur, pollinisation, de la fleur au fruit.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "les pétales",
+     "role": "attirer les insectes grâce à leurs couleurs"
+    },
+    {
+     "nom": "les sépales",
+     "role": "protéger le bouton de la fleur avant qu'il s'ouvre"
+    },
+    {
+     "nom": "les étamines",
+     "role": "produire le pollen (ce sont les organes mâles)"
+    },
+    {
+     "nom": "le pistil",
+     "role": "recevoir le pollen (c'est l'organe femelle de la fleur)"
+    },
+    {
+     "nom": "l'ovaire",
+     "role": "devenir le fruit après la fécondation"
+    },
+    {
+     "nom": "les ovules",
+     "role": "devenir les graines après la fécondation"
+    },
+    {
+     "nom": "fleur:1",
+     "texte": "le bouton de fleur",
+     "suite": "fleur",
+     "rang": 1
+    },
+    {
+     "nom": "fleur:2",
+     "texte": "la fleur ouverte",
+     "suite": "fleur",
+     "rang": 2
+    },
+    {
+     "nom": "fleur:3",
+     "texte": "la pollinisation (le pollen arrive sur le pistil)",
+     "suite": "fleur",
+     "rang": 3
+    },
+    {
+     "nom": "fleur:4",
+     "texte": "la fécondation des ovules",
+     "suite": "fleur",
+     "rang": 4
+    },
+    {
+     "nom": "fleur:5",
+     "texte": "l'ovaire grossit et devient un fruit",
+     "suite": "fleur",
+     "rang": 5
+    },
+    {
+     "nom": "fleur:6",
+     "texte": "le fruit mûr libère ses graines",
+     "suite": "fleur",
+     "rang": 6
+    },
+    {
+     "nom": "La pollinisation, c'est le transport du pollen des étamines vers le pistil.",
+     "verite": true,
+     "pourquoi": "Le pollen peut être transporté par des insectes (abeilles, bourdons…) ou par le vent."
+    },
+    {
+     "nom": "Le pollen est produit par le pistil.",
+     "verite": false,
+     "pourquoi": "Le pollen est produit par les étamines, les organes mâles de la fleur."
+    },
+    {
+     "nom": "Après la fécondation, les pétales deviennent le fruit.",
+     "verite": false,
+     "pourquoi": "Ce ne sont pas les pétales : c'est l'ovaire qui devient le fruit ; les pétales fanent et tombent."
+    },
+    {
+     "nom": "Après la fécondation, les ovules deviennent des graines.",
+     "verite": true,
+     "pourquoi": "Chaque ovule fécondé devient une graine, à l'intérieur du fruit."
+    },
+    {
+     "nom": "Toutes les fleurs sont pollinisées par les abeilles.",
+     "verite": false,
+     "pourquoi": "Le vent transporte aussi le pollen de nombreuses plantes, comme les graminées ou le noisetier."
+    },
+    {
+     "nom": "En butinant, l'abeille transporte du pollen d'une fleur à l'autre.",
+     "verite": true,
+     "pourquoi": "Le pollen se colle à ses poils et se dépose sur le pistil d'une autre fleur."
+    },
+    {
+     "nom": "Les couleurs et le parfum des fleurs attirent les insectes pollinisateurs.",
+     "verite": true,
+     "pourquoi": "En venant chercher le nectar, les insectes transportent le pollen."
+    },
+    {
+     "nom": "Le fruit se forme avant la fleur.",
+     "verite": false,
+     "pourquoi": "Le fruit se forme après la fleur : c'est l'ovaire de la fleur fécondée qui grossit."
+    },
+    {
+     "nom": "Les étamines sont les organes femelles de la fleur.",
+     "verite": false,
+     "pourquoi": "Les étamines sont les organes mâles ; le pistil est l'organe femelle."
+    },
+    {
+     "nom": "Sans pollinisation, la plupart des plantes à fleurs ne pourraient pas produire de fruits.",
+     "verite": true,
+     "pourquoi": "C'est pour cela que les abeilles et les autres insectes pollinisateurs sont si importants."
+    },
+    {
+     "nom": "Quelle partie de la fleur devient le fruit ?",
+     "rep": "l'ovaire",
+     "faux": [
+      "les pétales",
+      "les étamines",
+      "les sépales"
+     ],
+     "pourquoi": "Après la fécondation, l'ovaire grossit et devient le fruit."
+    },
+    {
+     "nom": "Quelle partie de la fleur produit le pollen ?",
+     "rep": "les étamines",
+     "faux": [
+      "le pistil",
+      "les pétales",
+      "les sépales"
+     ],
+     "pourquoi": "Les étamines sont les organes mâles : elles produisent le pollen."
+    },
+    {
+     "nom": "Comment appelle-t-on le transport du pollen des étamines jusqu'au pistil ?",
+     "rep": "la pollinisation",
+     "faux": [
+      "la germination",
+      "la photosynthèse",
+      "la dissémination"
+     ],
+     "pourquoi": "La pollinisation permet ensuite la fécondation des ovules."
+    }
+   ]
+  },
+  {
+   "id": "plantes_vie",
+   "description": "Germination, besoins des plantes, photosynthèse, dissémination des graines.",
+   "cle": "nom",
+   "phrases": {
+    "dissem": {
+     "le vent": "par le vent",
+     "les animaux": "par les animaux",
+     "l'eau": "par l'eau",
+     "la plante elle-même": "par la plante elle-même (les fruits éclatent)"
+    }
+   },
+   "items": [
+    {
+     "nom": "haricot:1",
+     "texte": "la graine est semée dans la terre humide",
+     "suite": "haricot",
+     "rang": 1
+    },
+    {
+     "nom": "haricot:2",
+     "texte": "la graine gonfle et une petite racine sort",
+     "suite": "haricot",
+     "rang": 2
+    },
+    {
+     "nom": "haricot:3",
+     "texte": "la tige et les premières feuilles apparaissent",
+     "suite": "haricot",
+     "rang": 3
+    },
+    {
+     "nom": "haricot:4",
+     "texte": "la plante grandit et fait de nouvelles feuilles",
+     "suite": "haricot",
+     "rang": 4
+    },
+    {
+     "nom": "haricot:5",
+     "texte": "la plante fleurit",
+     "suite": "haricot",
+     "rang": 5
+    },
+    {
+     "nom": "haricot:6",
+     "texte": "les fleurs sont pollinisées",
+     "suite": "haricot",
+     "rang": 6
+    },
+    {
+     "nom": "haricot:7",
+     "texte": "les gousses se forment avec de nouvelles graines",
+     "suite": "haricot",
+     "rang": 7
+    },
+    {
+     "nom": "le pissenlit",
+     "dissem": "le vent",
+     "info_d": "Ses graines ont de petits parachutes."
+    },
+    {
+     "nom": "l'érable",
+     "dissem": "le vent",
+     "info_d": "Ses fruits ont des ailes qui tournoient comme des hélices."
+    },
+    {
+     "nom": "le frêne",
+     "dissem": "le vent",
+     "info_d": "Ses fruits ont une aile qui les fait planer."
+    },
+    {
+     "nom": "le tilleul",
+     "dissem": "le vent",
+     "info_d": "Ses fruits sont attachés à une sorte d'aile."
+    },
+    {
+     "nom": "le chardon",
+     "dissem": "le vent",
+     "info_d": "Ses graines portent des aigrettes légères."
+    },
+    {
+     "nom": "la bardane",
+     "dissem": "les animaux",
+     "info_d": "Ses fruits ont des crochets qui s'accrochent aux poils des animaux."
+    },
+    {
+     "nom": "le gaillet gratteron",
+     "dissem": "les animaux",
+     "info_d": "Ses petits fruits s'accrochent aux poils et aux vêtements."
+    },
+    {
+     "nom": "le cerisier",
+     "dissem": "les animaux",
+     "info_d": "Les oiseaux mangent les cerises et rejettent les noyaux plus loin."
+    },
+    {
+     "nom": "le sorbier",
+     "dissem": "les animaux",
+     "info_d": "Les oiseaux mangent ses baies et dispersent les graines."
+    },
+    {
+     "nom": "le chêne",
+     "dissem": "les animaux",
+     "info_d": "Les geais et les écureuils transportent les glands et en oublient une partie."
+    },
+    {
+     "nom": "le noisetier",
+     "dissem": "les animaux",
+     "info_d": "Les écureuils cachent des noisettes et en oublient."
+    },
+    {
+     "nom": "le cocotier",
+     "dissem": "l'eau",
+     "info_d": "La noix de coco flotte et peut voyager sur la mer."
+    },
+    {
+     "nom": "le nénuphar",
+     "dissem": "l'eau",
+     "info_d": "Ses graines flottent un moment et sont emportées par l'eau."
+    },
+    {
+     "nom": "la balsamine",
+     "dissem": "la plante elle-même",
+     "info_d": "Ses fruits éclatent et projettent les graines quand on les touche."
+    },
+    {
+     "nom": "le genêt",
+     "dissem": "la plante elle-même",
+     "info_d": "Ses gousses sèchent, éclatent et projettent les graines."
+    },
+    {
+     "nom": "le lupin",
+     "dissem": "la plante elle-même",
+     "info_d": "Ses gousses sèches s'ouvrent brusquement et lancent les graines."
+    },
+    {
+     "nom": "Pour germer, une graine a besoin d'eau, d'air et d'une température suffisante.",
+     "verite": true,
+     "pourquoi": "Sans eau, sans air ou dans le froid, la graine ne germe pas."
+    },
+    {
+     "nom": "Une graine a toujours besoin de lumière pour germer.",
+     "verite": false,
+     "pourquoi": "Pour germer, elle a besoin d'eau, d'air et de chaleur ; la lumière devient nécessaire ensuite, pour que la jeune plante fabrique sa nourriture."
+    },
+    {
+     "nom": "Une plante verte a besoin de lumière pour fabriquer sa nourriture.",
+     "verite": true,
+     "pourquoi": "C'est la photosynthèse : grâce à la lumière, les feuilles fabriquent des sucres."
+    },
+    {
+     "nom": "À la lumière, les feuilles absorbent du dioxyde de carbone et rejettent du dioxygène.",
+     "verite": true,
+     "pourquoi": "C'est la photosynthèse ; c'est grâce à elle que les plantes produisent le dioxygène que nous respirons."
+    },
+    {
+     "nom": "Les plantes trouvent leur nourriture toute faite dans le sol.",
+     "verite": false,
+     "pourquoi": "Dans le sol, elles puisent l'eau et les sels minéraux ; elles fabriquent elles-mêmes leur nourriture dans les feuilles, grâce à la lumière."
+    },
+    {
+     "nom": "La chlorophylle donne la couleur verte aux feuilles.",
+     "verite": true,
+     "pourquoi": "C'est aussi la chlorophylle qui capte la lumière pour la photosynthèse."
+    },
+    {
+     "nom": "Une plante gardée dans le noir finit par jaunir puis mourir.",
+     "verite": true,
+     "pourquoi": "Sans lumière, elle ne peut plus fabriquer sa nourriture."
+    },
+    {
+     "nom": "Les racines servent à fabriquer la nourriture de la plante.",
+     "verite": false,
+     "pourquoi": "Les racines puisent l'eau et les sels minéraux ; la nourriture est fabriquée dans les feuilles."
+    },
+    {
+     "nom": "La sève brute monte des racines vers les feuilles.",
+     "verite": true,
+     "pourquoi": "Elle contient l'eau et les sels minéraux puisés dans le sol."
+    },
+    {
+     "nom": "Une plante peut vivre longtemps sans eau.",
+     "verite": false,
+     "pourquoi": "Sans eau, la plante se dessèche et meurt : l'eau est indispensable à tous les êtres vivants."
+    },
+    {
+     "nom": "Les cotylédons contiennent des réserves qui nourrissent la jeune plante au début de la germination.",
+     "verite": true,
+     "pourquoi": "Au début, la jeune plante vit sur ces réserves, avant de pouvoir fabriquer sa nourriture."
+    },
+    {
+     "nom": "Pendant la germination d'un haricot, c'est la tige qui sort la première de la graine.",
+     "verite": false,
+     "pourquoi": "Pendant la germination, c'est d'abord la petite racine (la radicule) qui sort, puis la tige."
+    },
+    {
+     "nom": "La dissémination, c'est la dispersion des graines loin de la plante mère.",
+     "verite": true,
+     "pourquoi": "Le vent, l'eau, les animaux ou la plante elle-même dispersent les graines."
+    },
+    {
+     "nom": "Les graines tombent toujours juste au pied de la plante mère.",
+     "verite": false,
+     "pourquoi": "Beaucoup de graines voyagent : avec le vent, l'eau, les animaux ou en étant projetées par la plante."
+    },
+    {
+     "nom": "De quoi une graine a-t-elle besoin pour germer ?",
+     "rep": "d'eau, d'air et de chaleur",
+     "faux": [
+      "de lumière et de sel",
+      "d'engrais et de lumière",
+      "de terre et de lumière"
+     ],
+     "pourquoi": "Une graine peut germer sur du coton humide, sans terre : il lui faut de l'eau, de l'air et une température suffisante."
+    },
+    {
+     "nom": "Comment appelle-t-on la fabrication de nourriture par les feuilles grâce à la lumière ?",
+     "rep": "la photosynthèse",
+     "faux": [
+      "la germination",
+      "la pollinisation",
+      "la respiration"
+     ],
+     "pourquoi": "Photo = lumière, synthèse = fabrication."
+    },
+    {
+     "nom": "Quel gaz les plantes vertes rejettent-elles à la lumière ?",
+     "rep": "le dioxygène",
+     "faux": [
+      "le dioxyde de carbone",
+      "le diazote",
+      "l'hélium"
+     ],
+     "pourquoi": "Pendant la photosynthèse, les plantes absorbent du dioxyde de carbone et rejettent du dioxygène."
+    },
+    {
+     "nom": "Quel gaz les feuilles absorbent-elles pour fabriquer leur nourriture ?",
+     "rep": "le dioxyde de carbone",
+     "faux": [
+      "le dioxygène",
+      "le diazote",
+      "l'hélium"
+     ],
+     "pourquoi": "Les feuilles utilisent le dioxyde de carbone de l'air, l'eau et la lumière pour fabriquer des sucres."
+    }
+   ]
+  },
+  {
+   "id": "arbres",
+   "description": "Arbres : feuillus ou conifères, feuillage caduc ou persistant.",
+   "cle": "nom",
+   "phrases": {
+    "type": {
+     "feuillu": "un feuillu",
+     "conifère": "un conifère"
+    },
+    "type_pluriel": {
+     "feuillu": "feuillus",
+     "conifère": "conifères"
+    },
+    "feuillage": {
+     "caduc": "un feuillage caduc (il perd ses feuilles en automne)",
+     "persistant": "un feuillage persistant (il reste vert en hiver)"
+    }
+   },
+   "items": [
+    {
+     "nom": "le chêne",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le hêtre",
+     "type": "feuillu"
+    },
+    {
+     "nom": "le bouleau",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "l'érable",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le châtaignier",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le marronnier",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le tilleul",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le frêne",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le peuplier",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le saule",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le platane",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le cerisier",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le pommier",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le noyer",
+     "type": "feuillu",
+     "feuillage": "caduc"
+    },
+    {
+     "nom": "le houx",
+     "type": "feuillu",
+     "feuillage": "persistant",
+     "info": "Ses feuilles piquantes restent vertes tout l'hiver : c'est un feuillu à feuilles persistantes."
+    },
+    {
+     "nom": "le sapin",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "l'épicéa",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "le pin",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "le cèdre",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "l'if",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "le douglas",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "le thuya",
+     "type": "conifère",
+     "feuillage": "persistant"
+    },
+    {
+     "nom": "le mélèze",
+     "type": "conifère",
+     "feuillage": "caduc",
+     "info": "C'est un conifère particulier : il perd ses aiguilles en automne."
+    },
+    {
+     "nom": "Les conifères ont des feuilles en forme d'aiguilles ou d'écailles.",
+     "verite": true,
+     "pourquoi": "Le sapin, le pin ou l'épicéa ont des aiguilles ; le thuya a de petites écailles."
+    },
+    {
+     "nom": "Chez la plupart des conifères, les graines se forment dans des cônes.",
+     "verite": true,
+     "pourquoi": "On appelle souvent les cônes du pin des « pommes de pin »."
+    },
+    {
+     "nom": "Tous les conifères gardent leurs aiguilles en hiver.",
+     "verite": false,
+     "pourquoi": "Le mélèze est un conifère qui perd ses aiguilles en automne."
+    },
+    {
+     "nom": "Tous les feuillus perdent leurs feuilles en automne.",
+     "verite": false,
+     "pourquoi": "Le houx est un feuillu qui garde ses feuilles toute l'année."
+    },
+    {
+     "nom": "On peut estimer l'âge d'un arbre coupé en comptant ses cernes.",
+     "verite": true,
+     "pourquoi": "L'arbre forme en général un nouveau cerne chaque année."
+    },
+    {
+     "nom": "Un arbre à feuillage caduc perd ses feuilles à la mauvaise saison.",
+     "verite": true,
+     "pourquoi": "Chez nous, la plupart des feuillus perdent leurs feuilles en automne."
+    },
+    {
+     "nom": "Le sapin de Noël est un feuillu.",
+     "verite": false,
+     "pourquoi": "Le sapin de Noël est un conifère : il a des aiguilles et produit des cônes."
+    },
+    {
+     "nom": "En Belgique, la forêt ardennaise compte beaucoup d'épicéas plantés par l'être humain.",
+     "verite": true,
+     "pourquoi": "L'épicéa pousse vite ; on l'a beaucoup planté pour son bois."
+    }
+   ]
+  },
+  {
+   "id": "plantes_mangees",
+   "description": "Partie de la plante que l'on mange (sens botanique).",
+   "cle": "nom",
+   "phrases": {
+    "partie": {
+     "racine": "une racine",
+     "tige": "une tige",
+     "feuille": "une feuille",
+     "fleur": "une fleur",
+     "fruit": "un fruit",
+     "graine": "une graine"
+    },
+    "partie_pluriel": {
+     "racine": "racines",
+     "tige": "tiges",
+     "feuille": "feuilles",
+     "fleur": "fleurs",
+     "fruit": "fruits",
+     "graine": "graines"
+    }
+   },
+   "items": [
+    {
+     "nom": "la carotte",
+     "partie": "racine"
+    },
+    {
+     "nom": "le radis",
+     "partie": "racine"
+    },
+    {
+     "nom": "la betterave",
+     "partie": "racine"
+    },
+    {
+     "nom": "le panais",
+     "partie": "racine"
+    },
+    {
+     "nom": "le salsifis",
+     "partie": "racine"
+    },
+    {
+     "nom": "l'asperge",
+     "partie": "tige",
+     "info": "On mange la jeune pousse (la tige) qui sort de terre."
+    },
+    {
+     "nom": "la canne à sucre",
+     "partie": "tige",
+     "info": "Le sucre est extrait de sa tige."
+    },
+    {
+     "nom": "la laitue",
+     "partie": "feuille"
+    },
+    {
+     "nom": "l'épinard",
+     "partie": "feuille"
+    },
+    {
+     "nom": "le chou blanc",
+     "partie": "feuille"
+    },
+    {
+     "nom": "la mâche",
+     "partie": "feuille"
+    },
+    {
+     "nom": "le cresson",
+     "partie": "feuille"
+    },
+    {
+     "nom": "l'oseille",
+     "partie": "feuille"
+    },
+    {
+     "nom": "la roquette",
+     "partie": "feuille"
+    },
+    {
+     "nom": "le chou-fleur",
+     "partie": "fleur",
+     "info": "On mange ses fleurs en boutons, serrées les unes contre les autres."
+    },
+    {
+     "nom": "le brocoli",
+     "partie": "fleur",
+     "info": "On mange ses boutons de fleurs."
+    },
+    {
+     "nom": "l'artichaut",
+     "partie": "fleur",
+     "info": "On mange la base de sa grosse fleur en bouton."
+    },
+    {
+     "nom": "la tomate",
+     "partie": "fruit",
+     "info": "Elle contient des graines : pour un botaniste, c'est un fruit."
+    },
+    {
+     "nom": "le concombre",
+     "partie": "fruit",
+     "info": "Il contient des graines : c'est un fruit."
+    },
+    {
+     "nom": "la courgette",
+     "partie": "fruit",
+     "info": "Elle contient des graines : c'est un fruit."
+    },
+    {
+     "nom": "le poivron",
+     "partie": "fruit",
+     "info": "Il contient des graines : c'est un fruit."
+    },
+    {
+     "nom": "l'aubergine",
+     "partie": "fruit",
+     "info": "Elle contient des graines : c'est un fruit."
+    },
+    {
+     "nom": "le potiron",
+     "partie": "fruit",
+     "info": "Il contient des graines (les pépins) : c'est un fruit."
+    },
+    {
+     "nom": "la pomme",
+     "partie": "fruit"
+    },
+    {
+     "nom": "la cerise",
+     "partie": "fruit"
+    },
+    {
+     "nom": "le haricot vert",
+     "partie": "fruit",
+     "info": "On mange la gousse entière avec ses petites graines : la gousse est le fruit."
+    },
+    {
+     "nom": "le melon",
+     "partie": "fruit"
+    },
+    {
+     "nom": "la poire",
+     "partie": "fruit"
+    },
+    {
+     "nom": "la prune",
+     "partie": "fruit"
+    },
+    {
+     "nom": "le petit pois",
+     "partie": "graine",
+     "info": "On mange les graines, sans la gousse."
+    },
+    {
+     "nom": "la lentille",
+     "partie": "graine"
+    },
+    {
+     "nom": "le pois chiche",
+     "partie": "graine"
+    },
+    {
+     "nom": "la fève",
+     "partie": "graine"
+    },
+    {
+     "nom": "le grain de café",
+     "partie": "graine",
+     "info": "Le « grain » de café est la graine du caféier."
+    }
+   ]
+  },
+  {
+   "id": "corps",
+   "description": "Organes, appareils du corps humain et organes des sens.",
+   "cle": "nom",
+   "phrases": {
+    "appareil": {
+     "l'appareil digestif": "de l'appareil digestif",
+     "l'appareil respiratoire": "de l'appareil respiratoire",
+     "l'appareil circulatoire": "de l'appareil circulatoire",
+     "l'appareil excréteur (urinaire)": "de l'appareil excréteur (urinaire)",
+     "l'appareil locomoteur": "de l'appareil locomoteur",
+     "le système nerveux": "du système nerveux"
+    }
+   },
+   "items": [
+    {
+     "nom": "la bouche",
+     "role": "broyer les aliments et les mélanger à la salive",
+     "fait": "fait"
+    },
+    {
+     "nom": "les glandes salivaires",
+     "appareil": "l'appareil digestif",
+     "role": "produire la salive",
+     "fait": "font"
+    },
+    {
+     "nom": "l'œsophage",
+     "appareil": "l'appareil digestif",
+     "role": "conduire les aliments de la bouche jusqu'à l'estomac",
+     "fait": "fait"
+    },
+    {
+     "nom": "l'estomac",
+     "appareil": "l'appareil digestif",
+     "role": "brasser les aliments et les mélanger aux sucs digestifs",
+     "fait": "fait"
+    },
+    {
+     "nom": "l'intestin grêle",
+     "appareil": "l'appareil digestif",
+     "role": "faire passer les nutriments dans le sang",
+     "fait": "fait"
+    },
+    {
+     "nom": "le gros intestin",
+     "appareil": "l'appareil digestif",
+     "role": "récupérer l'eau des restes et former les excréments",
+     "fait": "fait"
+    },
+    {
+     "nom": "le foie",
+     "appareil": "l'appareil digestif",
+     "role": "produire la bile, qui aide à digérer les graisses",
+     "fait": "fait"
+    },
+    {
+     "nom": "l'anus",
+     "appareil": "l'appareil digestif",
+     "role": "rejeter les excréments hors du corps",
+     "fait": "fait"
+    },
+    {
+     "nom": "les fosses nasales",
+     "appareil": "l'appareil respiratoire",
+     "role": "réchauffer, humidifier et filtrer l'air qui entre",
+     "fait": "font"
+    },
+    {
+     "nom": "la trachée",
+     "appareil": "l'appareil respiratoire",
+     "role": "conduire l'air de la gorge jusqu'aux bronches",
+     "fait": "fait"
+    },
+    {
+     "nom": "les bronches",
+     "appareil": "l'appareil respiratoire",
+     "role": "conduire l'air à l'intérieur de chaque poumon",
+     "fait": "font"
+    },
+    {
+     "nom": "les poumons",
+     "appareil": "l'appareil respiratoire",
+     "role": "permettre les échanges de gaz entre l'air et le sang",
+     "fait": "font"
+    },
+    {
+     "nom": "le cœur",
+     "appareil": "l'appareil circulatoire",
+     "role": "pomper le sang pour le faire circuler dans tout le corps",
+     "fait": "fait"
+    },
+    {
+     "nom": "les artères",
+     "appareil": "l'appareil circulatoire",
+     "role": "conduire le sang du cœur vers les organes",
+     "fait": "font"
+    },
+    {
+     "nom": "les veines",
+     "appareil": "l'appareil circulatoire",
+     "role": "ramener le sang des organes vers le cœur",
+     "fait": "font"
+    },
+    {
+     "nom": "les capillaires",
+     "appareil": "l'appareil circulatoire",
+     "role": "permettre les échanges entre le sang et les organes (ce sont des vaisseaux très fins)",
+     "fait": "font"
+    },
+    {
+     "nom": "les reins",
+     "appareil": "l'appareil excréteur (urinaire)",
+     "role": "filtrer le sang et fabriquer l'urine",
+     "fait": "font"
+    },
+    {
+     "nom": "les uretères",
+     "appareil": "l'appareil excréteur (urinaire)",
+     "role": "conduire l'urine des reins jusqu'à la vessie",
+     "fait": "font"
+    },
+    {
+     "nom": "la vessie",
+     "appareil": "l'appareil excréteur (urinaire)",
+     "role": "stocker l'urine avant de la vider",
+     "fait": "fait"
+    },
+    {
+     "nom": "l'urètre",
+     "appareil": "l'appareil excréteur (urinaire)",
+     "role": "évacuer l'urine hors du corps",
+     "fait": "fait"
+    },
+    {
+     "nom": "les os",
+     "appareil": "l'appareil locomoteur",
+     "role": "former le squelette, qui soutient le corps et protège certains organes",
+     "fait": "font"
+    },
+    {
+     "nom": "les muscles",
+     "appareil": "l'appareil locomoteur",
+     "role": "faire bouger les os en se contractant",
+     "fait": "font"
+    },
+    {
+     "nom": "les tendons",
+     "appareil": "l'appareil locomoteur",
+     "role": "attacher les muscles aux os",
+     "fait": "font"
+    },
+    {
+     "nom": "les articulations",
+     "appareil": "l'appareil locomoteur",
+     "role": "permettre aux os de bouger les uns par rapport aux autres",
+     "fait": "font"
+    },
+    {
+     "nom": "le cerveau",
+     "appareil": "le système nerveux",
+     "role": "recevoir les informations des sens et commander les mouvements",
+     "fait": "fait"
+    },
+    {
+     "nom": "la moelle épinière",
+     "appareil": "le système nerveux",
+     "role": "relier le cerveau aux nerfs du tronc et des membres, à l'intérieur de la colonne vertébrale",
+     "fait": "fait"
+    },
+    {
+     "nom": "les nerfs",
+     "appareil": "le système nerveux",
+     "role": "porter les messages des organes des sens vers le cerveau, et les ordres du cerveau vers les muscles",
+     "fait": "font"
+    },
+    {
+     "nom": "les yeux",
+     "sens": "la vue",
+     "fait": "font"
+    },
+    {
+     "nom": "les oreilles",
+     "sens": "l'ouïe",
+     "fait": "font"
+    },
+    {
+     "nom": "le nez",
+     "sens": "l'odorat",
+     "fait": "fait"
+    },
+    {
+     "nom": "la langue",
+     "sens": "le goût",
+     "fait": "fait"
+    },
+    {
+     "nom": "la peau",
+     "sens": "le toucher",
+     "fait": "fait"
+    }
+   ]
+  },
+  {
+   "id": "trajets",
+   "description": "Trajets dans le corps (aliments, air, urine, sang, message nerveux).",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "aliments:1",
+     "texte": "la bouche",
+     "suite": "aliments",
+     "rang": 1
+    },
+    {
+     "nom": "aliments:2",
+     "texte": "l'œsophage",
+     "suite": "aliments",
+     "rang": 2
+    },
+    {
+     "nom": "aliments:3",
+     "texte": "l'estomac",
+     "suite": "aliments",
+     "rang": 3
+    },
+    {
+     "nom": "aliments:4",
+     "texte": "l'intestin grêle",
+     "suite": "aliments",
+     "rang": 4
+    },
+    {
+     "nom": "aliments:5",
+     "texte": "le gros intestin",
+     "suite": "aliments",
+     "rang": 5
+    },
+    {
+     "nom": "aliments:6",
+     "texte": "l'anus",
+     "suite": "aliments",
+     "rang": 6
+    },
+    {
+     "nom": "air:1",
+     "texte": "les fosses nasales",
+     "suite": "air",
+     "rang": 1
+    },
+    {
+     "nom": "air:2",
+     "texte": "la gorge (le pharynx)",
+     "suite": "air",
+     "rang": 2
+    },
+    {
+     "nom": "air:3",
+     "texte": "le larynx",
+     "suite": "air",
+     "rang": 3
+    },
+    {
+     "nom": "air:4",
+     "texte": "la trachée",
+     "suite": "air",
+     "rang": 4
+    },
+    {
+     "nom": "air:5",
+     "texte": "les bronches",
+     "suite": "air",
+     "rang": 5
+    },
+    {
+     "nom": "air:6",
+     "texte": "les bronchioles",
+     "suite": "air",
+     "rang": 6
+    },
+    {
+     "nom": "air:7",
+     "texte": "les alvéoles pulmonaires",
+     "suite": "air",
+     "rang": 7
+    },
+    {
+     "nom": "urine:1",
+     "texte": "les reins",
+     "suite": "urine",
+     "rang": 1
+    },
+    {
+     "nom": "urine:2",
+     "texte": "les uretères",
+     "suite": "urine",
+     "rang": 2
+    },
+    {
+     "nom": "urine:3",
+     "texte": "la vessie",
+     "suite": "urine",
+     "rang": 3
+    },
+    {
+     "nom": "urine:4",
+     "texte": "l'urètre",
+     "suite": "urine",
+     "rang": 4
+    },
+    {
+     "nom": "sang:1",
+     "texte": "le cœur",
+     "suite": "sang",
+     "rang": 1
+    },
+    {
+     "nom": "sang:2",
+     "texte": "les artères",
+     "suite": "sang",
+     "rang": 2
+    },
+    {
+     "nom": "sang:3",
+     "texte": "les capillaires des organes",
+     "suite": "sang",
+     "rang": 3
+    },
+    {
+     "nom": "sang:4",
+     "texte": "les veines",
+     "suite": "sang",
+     "rang": 4
+    },
+    {
+     "nom": "message:1",
+     "texte": "l'œil voit le ballon",
+     "suite": "message",
+     "rang": 1
+    },
+    {
+     "nom": "message:2",
+     "texte": "le nerf optique transmet le message",
+     "suite": "message",
+     "rang": 2
+    },
+    {
+     "nom": "message:3",
+     "texte": "le cerveau analyse et décide",
+     "suite": "message",
+     "rang": 3
+    },
+    {
+     "nom": "message:4",
+     "texte": "la moelle épinière transmet l'ordre",
+     "suite": "message",
+     "rang": 4
+    },
+    {
+     "nom": "message:5",
+     "texte": "un nerf porte l'ordre au muscle",
+     "suite": "message",
+     "rang": 5
+    },
+    {
+     "nom": "message:6",
+     "texte": "le muscle de la jambe se contracte",
+     "suite": "message",
+     "rang": 6
+    },
+    {
+     "nom": "Quand on inspire, le diaphragme s'abaisse et l'air entre dans les poumons.",
+     "verite": true,
+     "pourquoi": "Le diaphragme est un muscle placé sous les poumons."
+    },
+    {
+     "nom": "Les aliments passent par le foie pendant la digestion.",
+     "verite": false,
+     "pourquoi": "Les aliments ne passent pas dans le foie : il fabrique la bile, qui coule dans l'intestin grêle."
+    },
+    {
+     "nom": "Dans l'intestin grêle, les nutriments passent dans le sang.",
+     "verite": true,
+     "pourquoi": "Le sang les transporte ensuite vers tous les organes."
+    },
+    {
+     "nom": "Le sang qui part des poumons est riche en dioxygène.",
+     "verite": true,
+     "pourquoi": "Dans les alvéoles, le sang se charge de dioxygène et se débarrasse du dioxyde de carbone."
+    },
+    {
+     "nom": "L'air que l'on inspire va dans l'estomac.",
+     "verite": false,
+     "pourquoi": "L'air passe par la trachée et les bronches jusqu'aux poumons ; les aliments, eux, passent par l'œsophage jusqu'à l'estomac."
+    },
+    {
+     "nom": "Les artères ramènent le sang vers le cœur.",
+     "verite": false,
+     "pourquoi": "Les artères emportent le sang du cœur vers les organes ; ce sont les veines qui le ramènent."
+    },
+    {
+     "nom": "Les reins filtrent le sang pour en retirer des déchets.",
+     "verite": true,
+     "pourquoi": "Ces déchets et de l'eau forment l'urine."
+    },
+    {
+     "nom": "Tous les déchets du corps sont rejetés par les poumons.",
+     "verite": false,
+     "pourquoi": "Les poumons rejettent le dioxyde de carbone ; les reins rejettent d'autres déchets dans l'urine."
+    },
+    {
+     "nom": "L'épiglotte empêche les aliments d'entrer dans la trachée quand on avale.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'il vaut mieux ne pas parler la bouche pleine : on risque d'avaler de travers."
+    },
+    {
+     "nom": "Le cœur est un os.",
+     "verite": false,
+     "pourquoi": "Le cœur est un muscle creux qui se contracte sans arrêt pour pomper le sang."
+    },
+    {
+     "nom": "Pendant un effort, le cœur bat plus vite.",
+     "verite": true,
+     "pourquoi": "Les muscles ont besoin de plus de dioxygène et de nutriments : le cœur accélère pour leur en apporter."
+    }
+   ]
+  },
+  {
+   "id": "dents",
+   "description": "Dents : types, rôles, nombres ; hygiène dentaire.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "les incisives",
+     "role": "couper les aliments",
+     "forme": "plates et tranchantes",
+     "adulte": 8,
+     "lait": 8
+    },
+    {
+     "nom": "les canines",
+     "role": "déchirer les aliments",
+     "forme": "pointues",
+     "adulte": 4,
+     "lait": 4
+    },
+    {
+     "nom": "les prémolaires",
+     "role": "écraser et broyer les aliments",
+     "forme": "larges avec deux bosses",
+     "adulte": 8,
+     "lait": 0
+    },
+    {
+     "nom": "les molaires",
+     "role": "écraser et broyer les aliments",
+     "forme": "larges avec plusieurs bosses",
+     "adulte": 12,
+     "lait": 8
+    },
+    {
+     "nom": "Un enfant a 20 dents de lait.",
+     "verite": true,
+     "pourquoi": "Les 20 dents de lait tombent petit à petit et sont remplacées par des dents définitives."
+    },
+    {
+     "nom": "Un adulte a 32 dents, dents de sagesse comprises.",
+     "verite": true,
+     "pourquoi": "8 incisives, 4 canines, 8 prémolaires et 12 molaires : 32 dents."
+    },
+    {
+     "nom": "Les dents de lait ne tombent jamais.",
+     "verite": false,
+     "pourquoi": "Entre 6 et 12 ans environ, les dents de lait tombent et les dents définitives les remplacent."
+    },
+    {
+     "nom": "Se brosser les dents une fois par semaine suffit.",
+     "verite": false,
+     "pourquoi": "Il faut se brosser les dents au moins deux fois par jour, pendant deux minutes."
+    },
+    {
+     "nom": "Les caries sont causées par des bactéries qui se nourrissent du sucre resté sur les dents.",
+     "verite": true,
+     "pourquoi": "Ces bactéries produisent un acide qui attaque l'émail : d'où l'importance du brossage."
+    },
+    {
+     "nom": "L'émail est la partie la plus dure de la dent.",
+     "verite": true,
+     "pourquoi": "L'émail recouvre la couronne et protège la dent ; c'est la matière la plus dure du corps."
+    },
+    {
+     "nom": "Les carnivores ont de longues canines pour déchirer la viande.",
+     "verite": true,
+     "pourquoi": "Pense aux crocs du loup ou du chat."
+    },
+    {
+     "nom": "Les herbivores comme la vache ont de larges molaires pour broyer l'herbe.",
+     "verite": true,
+     "pourquoi": "La vache broie longuement l'herbe avec ses molaires, larges et plates."
+    },
+    {
+     "nom": "La racine est la partie visible de la dent.",
+     "verite": false,
+     "pourquoi": "La partie visible est la couronne ; la racine est cachée dans la gencive et l'os de la mâchoire."
+    },
+    {
+     "nom": "Les dents définitives poussent sous les dents de lait et les remplacent.",
+     "verite": true,
+     "pourquoi": "En poussant, la dent définitive fait tomber la dent de lait."
+    },
+    {
+     "nom": "Les dents de lait n'ont pas besoin d'être brossées puisqu'elles vont tomber.",
+     "verite": false,
+     "pourquoi": "Des dents de lait cariées font mal et peuvent abîmer les dents définitives qui poussent en dessous."
+    },
+    {
+     "nom": "Quelles dents apparaissent sans remplacer de dents de lait ?",
+     "rep": "les molaires définitives",
+     "faux": [
+      "les incisives",
+      "les canines",
+      "les prémolaires"
+     ],
+     "pourquoi": "Les 12 molaires définitives poussent derrière les dents de lait ; les prémolaires, elles, remplacent les molaires de lait."
+    },
+    {
+     "nom": "Comment s'appelle la partie visible de la dent ?",
+     "rep": "la couronne",
+     "faux": [
+      "la racine",
+      "la pulpe",
+      "la gencive"
+     ],
+     "pourquoi": "La couronne est la partie visible ; la racine est cachée dans la mâchoire."
+    },
+    {
+     "nom": "Combien de temps faut-il se brosser les dents ?",
+     "rep": "environ 2 minutes",
+     "faux": [
+      "environ 10 secondes",
+      "environ 20 minutes",
+      "environ 1 heure"
+     ],
+     "pourquoi": "Deux minutes, au moins deux fois par jour, en brossant toutes les faces des dents."
+    }
+   ]
+  },
+  {
+   "id": "alimentation",
+   "description": "Aliments : rôle (bâtisseur, énergétique, protecteur), groupes ; hygiène de vie.",
+   "cle": "nom",
+   "phrases": {
+    "role_pluriel": {
+     "un aliment bâtisseur": "des aliments bâtisseurs",
+     "un aliment énergétique": "des aliments énergétiques",
+     "un aliment protecteur": "des aliments protecteurs"
+    }
+   },
+   "items": [
+    {
+     "nom": "le steak",
+     "role": "un aliment bâtisseur",
+     "groupe": "la viande, le poisson et les œufs",
+     "est": "est"
+    },
+    {
+     "nom": "le poulet",
+     "role": "un aliment bâtisseur",
+     "groupe": "la viande, le poisson et les œufs",
+     "est": "est"
+    },
+    {
+     "nom": "le poisson",
+     "role": "un aliment bâtisseur",
+     "groupe": "la viande, le poisson et les œufs",
+     "est": "est"
+    },
+    {
+     "nom": "l'œuf",
+     "role": "un aliment bâtisseur",
+     "groupe": "la viande, le poisson et les œufs",
+     "est": "est"
+    },
+    {
+     "nom": "le jambon",
+     "role": "un aliment bâtisseur",
+     "groupe": "la viande, le poisson et les œufs",
+     "est": "est"
+    },
+    {
+     "nom": "le lait",
+     "role": "un aliment bâtisseur",
+     "groupe": "les produits laitiers",
+     "est": "est"
+    },
+    {
+     "nom": "le yaourt",
+     "role": "un aliment bâtisseur",
+     "groupe": "les produits laitiers",
+     "est": "est"
+    },
+    {
+     "nom": "le fromage",
+     "role": "un aliment bâtisseur",
+     "groupe": "les produits laitiers",
+     "est": "est"
+    },
+    {
+     "nom": "le pain",
+     "role": "un aliment énergétique",
+     "groupe": "les féculents",
+     "est": "est"
+    },
+    {
+     "nom": "les pâtes",
+     "role": "un aliment énergétique",
+     "groupe": "les féculents",
+     "est": "sont"
+    },
+    {
+     "nom": "le riz",
+     "role": "un aliment énergétique",
+     "groupe": "les féculents",
+     "est": "est"
+    },
+    {
+     "nom": "les pommes de terre",
+     "role": "un aliment énergétique",
+     "groupe": "les féculents",
+     "est": "sont"
+    },
+    {
+     "nom": "le beurre",
+     "role": "un aliment énergétique",
+     "groupe": "les matières grasses",
+     "est": "est"
+    },
+    {
+     "nom": "l'huile",
+     "role": "un aliment énergétique",
+     "groupe": "les matières grasses",
+     "est": "est"
+    },
+    {
+     "nom": "le sucre",
+     "role": "un aliment énergétique",
+     "groupe": "les sucreries",
+     "est": "est"
+    },
+    {
+     "nom": "les bonbons",
+     "role": "un aliment énergétique",
+     "groupe": "les sucreries",
+     "est": "sont"
+    },
+    {
+     "nom": "le chocolat",
+     "role": "un aliment énergétique",
+     "groupe": "les sucreries",
+     "est": "est"
+    },
+    {
+     "nom": "la pomme",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "l'orange",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "la carotte",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "le brocoli",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "la tomate",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "les épinards",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "sont"
+    },
+    {
+     "nom": "le kiwi",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "la poire",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "le chou-fleur",
+     "role": "un aliment protecteur",
+     "groupe": "les fruits et légumes",
+     "est": "est"
+    },
+    {
+     "nom": "Un enfant de ton âge a besoin d'environ 9 à 11 heures de sommeil par nuit.",
+     "verite": true,
+     "pourquoi": "Le sommeil permet au corps de récupérer et au cerveau de retenir ce qu'on a appris."
+    },
+    {
+     "nom": "L'eau est la meilleure boisson pour se désaltérer.",
+     "verite": true,
+     "pourquoi": "Le corps a besoin d'eau chaque jour ; les sodas contiennent beaucoup de sucre."
+    },
+    {
+     "nom": "Il faut se laver les mains avant de manger et après être allé aux toilettes.",
+     "verite": true,
+     "pourquoi": "Le lavage des mains élimine une grande partie des microbes."
+    },
+    {
+     "nom": "Les sodas peuvent remplacer l'eau sans problème.",
+     "verite": false,
+     "pourquoi": "Les sodas contiennent beaucoup de sucre : ils favorisent les caries et le surpoids."
+    },
+    {
+     "nom": "Il est conseillé aux enfants de bouger au moins une heure par jour.",
+     "verite": true,
+     "pourquoi": "L'activité physique renforce les muscles, les os, le cœur et les poumons."
+    },
+    {
+     "nom": "Les antibiotiques soignent la grippe.",
+     "verite": false,
+     "pourquoi": "La grippe est causée par un virus ; les antibiotiques n'agissent que contre les bactéries."
+    },
+    {
+     "nom": "Un vaccin aide le corps à se défendre contre une maladie.",
+     "verite": true,
+     "pourquoi": "Le vaccin « entraîne » le corps à reconnaître un microbe pour mieux le combattre."
+    },
+    {
+     "nom": "Sauter le petit-déjeuner n'a aucun effet sur la concentration en classe.",
+     "verite": false,
+     "pourquoi": "Sans petit-déjeuner, le corps manque d'énergie en matinée et la concentration diminue."
+    },
+    {
+     "nom": "Le tabac abîme les poumons.",
+     "verite": true,
+     "pourquoi": "La fumée de tabac contient des substances toxiques qui abîment les poumons et le cœur."
+    },
+    {
+     "nom": "Il faut manger surtout des sucreries et des matières grasses pour être en forme.",
+     "verite": false,
+     "pourquoi": "Il faut en manger peu : la base d'une alimentation équilibrée, ce sont l'eau, les fruits, les légumes et les féculents."
+    },
+    {
+     "nom": "Les fruits et les légumes apportent des vitamines.",
+     "verite": true,
+     "pourquoi": "Ce sont des aliments protecteurs : ils aident le corps à bien fonctionner et à se défendre."
+    },
+    {
+     "nom": "Le lait et le fromage apportent du calcium, utile pour les os et les dents.",
+     "verite": true,
+     "pourquoi": "Ce sont des aliments bâtisseurs : ils apportent aussi des protéines."
+    },
+    {
+     "nom": "Une alimentation équilibrée, c'est manger toujours la même chose.",
+     "verite": false,
+     "pourquoi": "Il faut varier : chaque groupe d'aliments apporte quelque chose de différent au corps."
+    }
+   ]
+  },
+  {
+   "id": "etats",
+   "description": "États de la matière, changements d'état, températures repères de l'eau.",
+   "cle": "nom",
+   "phrases": {
+    "etat": {
+     "solide": "à l'état solide",
+     "liquide": "à l'état liquide",
+     "gazeux": "à l'état gazeux"
+    }
+   },
+   "items": [
+    {
+     "nom": "le fer",
+     "etat": "solide"
+    },
+    {
+     "nom": "le bois",
+     "etat": "solide"
+    },
+    {
+     "nom": "le sel",
+     "etat": "solide"
+    },
+    {
+     "nom": "le sucre",
+     "etat": "solide"
+    },
+    {
+     "nom": "le verre",
+     "etat": "solide"
+    },
+    {
+     "nom": "le sable",
+     "etat": "solide"
+    },
+    {
+     "nom": "la pierre",
+     "etat": "solide"
+    },
+    {
+     "nom": "la cire",
+     "etat": "solide"
+    },
+    {
+     "nom": "le chocolat",
+     "etat": "solide"
+    },
+    {
+     "nom": "l'or",
+     "etat": "solide"
+    },
+    {
+     "nom": "l'eau",
+     "etat": "liquide"
+    },
+    {
+     "nom": "le lait",
+     "etat": "liquide"
+    },
+    {
+     "nom": "l'huile",
+     "etat": "liquide"
+    },
+    {
+     "nom": "le jus d'orange",
+     "etat": "liquide"
+    },
+    {
+     "nom": "le vinaigre",
+     "etat": "liquide"
+    },
+    {
+     "nom": "l'essence",
+     "etat": "liquide"
+    },
+    {
+     "nom": "le mercure",
+     "etat": "liquide",
+     "info": "C'est le seul métal liquide à température ambiante."
+    },
+    {
+     "nom": "l'air",
+     "etat": "gazeux"
+    },
+    {
+     "nom": "le dioxygène",
+     "etat": "gazeux"
+    },
+    {
+     "nom": "le dioxyde de carbone",
+     "etat": "gazeux"
+    },
+    {
+     "nom": "la vapeur d'eau",
+     "etat": "gazeux",
+     "info": "Elle est invisible."
+    },
+    {
+     "nom": "l'hélium",
+     "etat": "gazeux",
+     "info": "On en met dans les ballons qui s'envolent."
+    },
+    {
+     "nom": "le diazote",
+     "etat": "gazeux"
+    },
+    {
+     "nom": "le gaz naturel",
+     "etat": "gazeux"
+    },
+    {
+     "nom": "Un glaçon fond dans un verre de limonade.",
+     "changement": "la fusion",
+     "info_c": "Le glaçon passe de l'état solide à l'état liquide : c'est la fusion."
+    },
+    {
+     "nom": "La neige fond au soleil.",
+     "changement": "la fusion",
+     "info_c": "La neige (solide) devient de l'eau liquide : c'est la fusion."
+    },
+    {
+     "nom": "Le beurre fond dans une poêle chaude.",
+     "changement": "la fusion",
+     "info_c": "Le beurre passe de solide à liquide : c'est la fusion."
+    },
+    {
+     "nom": "Un carré de chocolat fond dans la main.",
+     "changement": "la fusion",
+     "info_c": "La chaleur de la main fait passer le chocolat de solide à liquide : c'est la fusion."
+    },
+    {
+     "nom": "La cire d'une bougie coule près de la flamme.",
+     "changement": "la fusion",
+     "info_c": "La cire solide devient liquide : c'est la fusion."
+    },
+    {
+     "nom": "L'eau d'une flaque gèle pendant la nuit.",
+     "changement": "la solidification",
+     "info_c": "L'eau passe de liquide à solide (la glace) : c'est la solidification."
+    },
+    {
+     "nom": "On met de l'eau au congélateur pour faire des glaçons.",
+     "changement": "la solidification",
+     "info_c": "L'eau liquide devient solide : c'est la solidification."
+    },
+    {
+     "nom": "La cire d'une bougie éteinte durcit en refroidissant.",
+     "changement": "la solidification",
+     "info_c": "La cire liquide redevient solide : c'est la solidification."
+    },
+    {
+     "nom": "Du chocolat fondu durcit au frigo.",
+     "changement": "la solidification",
+     "info_c": "Le chocolat liquide redevient solide : c'est la solidification."
+    },
+    {
+     "nom": "La lave d'un volcan refroidit et devient de la roche.",
+     "changement": "la solidification",
+     "info_c": "La lave (roche fondue, liquide) devient solide : c'est la solidification."
+    },
+    {
+     "nom": "Le linge mouillé sèche sur une corde.",
+     "changement": "la vaporisation",
+     "info_c": "L'eau du linge passe de liquide à gazeux (vapeur d'eau) : c'est une évaporation, une forme de vaporisation."
+    },
+    {
+     "nom": "Une flaque d'eau disparaît au soleil.",
+     "changement": "la vaporisation",
+     "info_c": "L'eau liquide devient de la vapeur d'eau : c'est une évaporation, une forme de vaporisation."
+    },
+    {
+     "nom": "L'eau bout dans une casserole.",
+     "changement": "la vaporisation",
+     "info_c": "L'eau liquide se transforme en vapeur à 100 °C : c'est l'ébullition, une forme de vaporisation."
+    },
+    {
+     "nom": "Dans les marais salants, l'eau de mer disparaît et le sel reste.",
+     "changement": "la vaporisation",
+     "info_c": "L'eau passe à l'état gazeux et le sel reste : c'est une évaporation, une forme de vaporisation."
+    },
+    {
+     "nom": "Des cheveux mouillés sèchent à l'air libre.",
+     "changement": "la vaporisation",
+     "info_c": "L'eau liquide devient de la vapeur d'eau : c'est une évaporation, une forme de vaporisation."
+    },
+    {
+     "nom": "De la buée apparaît sur le miroir de la salle de bain.",
+     "changement": "la condensation",
+     "info_c": "La vapeur d'eau (gaz) touche le miroir froid et redevient liquide : c'est la condensation."
+    },
+    {
+     "nom": "Des gouttes se forment sur une canette froide sortie du frigo.",
+     "changement": "la condensation",
+     "info_c": "La vapeur d'eau de l'air se refroidit contre la canette et devient liquide : c'est la condensation."
+    },
+    {
+     "nom": "De la rosée apparaît sur l'herbe au petit matin.",
+     "changement": "la condensation",
+     "info_c": "La nuit, la vapeur d'eau de l'air se refroidit et forme des gouttes : c'est la condensation."
+    },
+    {
+     "nom": "En hiver, les lunettes se couvrent de buée quand on entre dans une pièce chaude.",
+     "changement": "la condensation",
+     "info_c": "La vapeur d'eau de la pièce touche les verres froids et devient liquide : c'est la condensation."
+    },
+    {
+     "nom": "De la glace carbonique (du dioxyde de carbone solide) se transforme directement en gaz.",
+     "changement": "la sublimation",
+     "info_c": "Le solide devient gaz sans passer par l'état liquide : c'est la sublimation."
+    },
+    {
+     "nom": "Par temps très froid et sec, la neige disparaît sans fondre.",
+     "changement": "la sublimation",
+     "info_c": "La glace passe directement de solide à gazeux : c'est la sublimation."
+    },
+    {
+     "nom": "le passage de l'état solide à l'état liquide",
+     "passage": "la fusion",
+     "passage_accepte": [
+      "fusion"
+     ]
+    },
+    {
+     "nom": "le passage de l'état liquide à l'état solide",
+     "passage": "la solidification",
+     "passage_accepte": [
+      "solidification"
+     ]
+    },
+    {
+     "nom": "le passage de l'état liquide à l'état gazeux",
+     "passage": "la vaporisation",
+     "passage_accepte": [
+      "vaporisation",
+      "évaporation",
+      "l'évaporation",
+      "ébullition",
+      "l'ébullition"
+     ]
+    },
+    {
+     "nom": "le passage de l'état gazeux à l'état liquide",
+     "passage": "la condensation",
+     "passage_accepte": [
+      "condensation",
+      "liquéfaction",
+      "la liquéfaction"
+     ]
+    },
+    {
+     "nom": "le passage de l'état solide directement à l'état gazeux",
+     "passage": "la sublimation",
+     "passage_accepte": [
+      "sublimation"
+     ]
+    },
+    {
+     "nom": "Au niveau de la mer, l'eau pure bout à 100 °C.",
+     "verite": true,
+     "pourquoi": "C'est un repère à connaître : l'eau pure bout à 100 °C et gèle à 0 °C."
+    },
+    {
+     "nom": "L'eau pure gèle à 0 °C.",
+     "verite": true,
+     "pourquoi": "En dessous de 0 °C, l'eau liquide devient de la glace."
+    },
+    {
+     "nom": "L'eau pure bout à 0 °C.",
+     "verite": false,
+     "pourquoi": "L'eau pure gèle à 0 °C et bout à 100 °C (au niveau de la mer)."
+    },
+    {
+     "nom": "La glace fond à 100 °C.",
+     "verite": false,
+     "pourquoi": "La glace fond à 0 °C ; c'est à 100 °C que l'eau bout."
+    },
+    {
+     "nom": "Quand l'eau gèle, son volume augmente.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'une bouteille pleine d'eau peut éclater au congélateur."
+    },
+    {
+     "nom": "La glace flotte sur l'eau liquide.",
+     "verite": true,
+     "pourquoi": "Les glaçons flottent dans un verre et les icebergs flottent sur la mer."
+    },
+    {
+     "nom": "Pendant qu'elle bout, l'eau d'une casserole continue à chauffer bien au-dessus de 100 °C.",
+     "verite": false,
+     "pourquoi": "Tant qu'elle bout, l'eau reste à 100 °C : la chaleur sert à la transformer en vapeur."
+    },
+    {
+     "nom": "Un gaz a une forme propre.",
+     "verite": false,
+     "pourquoi": "Un gaz n'a pas de forme propre : il occupe tout l'espace disponible."
+    },
+    {
+     "nom": "Un liquide prend la forme du récipient qui le contient.",
+     "verite": true,
+     "pourquoi": "Mais sa surface reste plane et horizontale au repos."
+    },
+    {
+     "nom": "Un solide a une forme propre.",
+     "verite": true,
+     "pourquoi": "Un solide garde sa forme, quel que soit le récipient."
+    },
+    {
+     "nom": "Un gaz occupe tout l'espace disponible.",
+     "verite": true,
+     "pourquoi": "Par exemple, le parfum d'un flacon ouvert se répand dans toute la pièce."
+    },
+    {
+     "nom": "Le nuage blanc au-dessus d'une casserole d'eau qui bout, c'est de la vapeur d'eau.",
+     "verite": false,
+     "pourquoi": "La vapeur d'eau est invisible ; le « nuage » blanc est fait de minuscules gouttelettes d'eau déjà recondensées."
+    },
+    {
+     "nom": "Un changement d'état est un phénomène physique.",
+     "verite": true,
+     "pourquoi": "La matière change seulement d'état : la glace, l'eau et la vapeur restent de l'eau."
+    },
+    {
+     "nom": "Pour faire fondre de la glace, il faut la refroidir.",
+     "verite": false,
+     "pourquoi": "Pour faire fondre la glace, il faut la chauffer (lui apporter de la chaleur)."
+    }
+   ]
+  },
+  {
+   "id": "cycle_eau",
+   "description": "Cycle de l'eau.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "eau:1",
+     "texte": "l'eau des mers, des lacs et des rivières s'évapore grâce à la chaleur du Soleil",
+     "suite": "eau",
+     "rang": 1
+    },
+    {
+     "nom": "eau:2",
+     "texte": "la vapeur d'eau monte, se refroidit et se condense en nuages",
+     "suite": "eau",
+     "rang": 2
+    },
+    {
+     "nom": "eau:3",
+     "texte": "les gouttelettes des nuages grossissent et tombent en pluie, en neige ou en grêle",
+     "suite": "eau",
+     "rang": 3
+    },
+    {
+     "nom": "eau:4",
+     "texte": "l'eau ruisselle sur le sol ou s'infiltre dans la terre",
+     "suite": "eau",
+     "rang": 4
+    },
+    {
+     "nom": "eau:5",
+     "texte": "l'eau rejoint les rivières, puis la mer",
+     "suite": "eau",
+     "rang": 5
+    },
+    {
+     "nom": "Le Soleil fournit l'énergie qui fait évaporer l'eau.",
+     "verite": true,
+     "pourquoi": "Sans la chaleur du Soleil, l'eau ne s'évaporerait presque pas et le cycle s'arrêterait."
+    },
+    {
+     "nom": "Les nuages sont faits de minuscules gouttelettes d'eau ou de petits cristaux de glace.",
+     "verite": true,
+     "pourquoi": "La vapeur d'eau, elle, est invisible : c'est en se condensant qu'elle forme les nuages."
+    },
+    {
+     "nom": "Les nuages sont faits de vapeur d'eau.",
+     "verite": false,
+     "pourquoi": "La vapeur d'eau est invisible ; les nuages sont faits de minuscules gouttelettes d'eau ou de cristaux de glace."
+    },
+    {
+     "nom": "Une partie de l'eau de pluie s'infiltre dans le sol et forme des nappes souterraines.",
+     "verite": true,
+     "pourquoi": "C'est dans ces nappes que l'on puise une partie de l'eau du robinet."
+    },
+    {
+     "nom": "La quantité totale d'eau sur Terre reste à peu près la même : elle circule sans cesse.",
+     "verite": true,
+     "pourquoi": "L'eau passe d'un état à l'autre et d'un endroit à l'autre, mais elle ne disparaît pas."
+    },
+    {
+     "nom": "Quand l'eau de mer s'évapore, le sel monte aussi dans les nuages.",
+     "verite": false,
+     "pourquoi": "Seule l'eau s'évapore : le sel reste dans la mer. C'est pour cela que la pluie n'est pas salée."
+    },
+    {
+     "nom": "La neige et la grêle ne font pas partie du cycle de l'eau.",
+     "verite": false,
+     "pourquoi": "La neige et la grêle sont des précipitations, comme la pluie : de l'eau qui tombe des nuages sous forme solide."
+    },
+    {
+     "nom": "Les plantes rejettent aussi de la vapeur d'eau dans l'air par leurs feuilles.",
+     "verite": true,
+     "pourquoi": "C'est la transpiration des plantes ; elle participe au cycle de l'eau."
+    },
+    {
+     "nom": "L'eau de la mer ne s'évapore jamais.",
+     "verite": false,
+     "pourquoi": "L'eau des mers s'évapore beaucoup : c'est la principale source de la vapeur d'eau qui forme les nuages."
+    },
+    {
+     "nom": "Les nuages se forment quand la vapeur d'eau se refroidit en montant.",
+     "verite": true,
+     "pourquoi": "En se refroidissant, la vapeur se condense en gouttelettes."
+    },
+    {
+     "nom": "Comment appelle-t-on la pluie, la neige et la grêle ?",
+     "rep": "des précipitations",
+     "faux": [
+      "des condensations",
+      "des évaporations",
+      "des infiltrations"
+     ],
+     "pourquoi": "Tout ce qui tombe des nuages s'appelle des précipitations."
+    },
+    {
+     "nom": "Quel changement d'état permet la formation des nuages ?",
+     "rep": "la condensation",
+     "faux": [
+      "la fusion",
+      "la vaporisation",
+      "la sublimation"
+     ],
+     "pourquoi": "La vapeur d'eau se refroidit en altitude et redevient liquide (gouttelettes) : c'est la condensation."
+    },
+    {
+     "nom": "Qu'est-ce qui fait évaporer l'eau des mers ?",
+     "rep": "la chaleur du Soleil",
+     "faux": [
+      "le vent seul",
+      "la Lune",
+      "le sel de la mer"
+     ],
+     "pourquoi": "Le Soleil chauffe l'eau, qui s'évapore ; le vent peut accélérer l'évaporation, mais l'énergie vient du Soleil."
+    },
+    {
+     "nom": "Comment appelle-t-on le fait que l'eau de pluie pénètre dans le sol ?",
+     "rep": "l'infiltration",
+     "faux": [
+      "le ruissellement",
+      "l'évaporation",
+      "la condensation"
+     ],
+     "pourquoi": "L'eau qui s'enfonce dans le sol s'infiltre ; celle qui coule à la surface ruisselle."
+    }
+   ]
+  },
+  {
+   "id": "melanges",
+   "description": "Mélanges homogènes/hétérogènes, solubilité, techniques de séparation.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "de l'eau salée (le sel est bien dissous)",
+     "melange": "homogène"
+    },
+    {
+     "nom": "de l'eau sucrée",
+     "melange": "homogène"
+    },
+    {
+     "nom": "du sirop de grenadine mélangé à de l'eau",
+     "melange": "homogène"
+    },
+    {
+     "nom": "l'air",
+     "melange": "homogène",
+     "info": "C'est un mélange de gaz que l'on ne distingue pas."
+    },
+    {
+     "nom": "du thé filtré",
+     "melange": "homogène"
+    },
+    {
+     "nom": "de l'eau et de l'huile",
+     "melange": "hétérogène",
+     "separation": [
+      "la décantation"
+     ]
+    },
+    {
+     "nom": "de l'eau et du sable",
+     "melange": "hétérogène",
+     "separation": [
+      "la décantation",
+      "la filtration"
+     ]
+    },
+    {
+     "nom": "de l'eau boueuse",
+     "melange": "hétérogène",
+     "separation": [
+      "la décantation",
+      "la filtration"
+     ]
+    },
+    {
+     "nom": "une vinaigrette",
+     "melange": "hétérogène"
+    },
+    {
+     "nom": "du jus d'orange avec de la pulpe",
+     "melange": "hétérogène"
+    },
+    {
+     "nom": "du sable et des cailloux",
+     "melange": "hétérogène",
+     "separation": [
+      "le tamisage"
+     ]
+    },
+    {
+     "nom": "une salade de fruits",
+     "melange": "hétérogène"
+    },
+    {
+     "nom": "du sel dissous dans de l'eau",
+     "separation": [
+      "l'évaporation"
+     ]
+    },
+    {
+     "nom": "de l'eau de mer (pour en récupérer le sel)",
+     "separation": [
+      "l'évaporation"
+     ]
+    },
+    {
+     "nom": "de la limaille de fer mélangée à du sable",
+     "melange": "hétérogène",
+     "separation": [
+      "l'aimantation (avec un aimant)"
+     ]
+    },
+    {
+     "nom": "des clous en fer mélangés à de la sciure de bois",
+     "melange": "hétérogène",
+     "separation": [
+      "l'aimantation (avec un aimant)",
+      "le tamisage"
+     ]
+    },
+    {
+     "nom": "des trombones en acier mélangés à des confettis en papier",
+     "separation": [
+      "l'aimantation (avec un aimant)"
+     ]
+    },
+    {
+     "nom": "du café et son marc",
+     "separation": [
+      "la filtration"
+     ]
+    },
+    {
+     "nom": "du thé et ses feuilles",
+     "separation": [
+      "la filtration",
+      "le tamisage"
+     ]
+    },
+    {
+     "nom": "de la farine avec des grumeaux",
+     "separation": [
+      "le tamisage"
+     ]
+    },
+    {
+     "nom": "de la farine mélangée à de petits cailloux",
+     "separation": [
+      "le tamisage"
+     ]
+    },
+    {
+     "nom": "le sel",
+     "soluble": "soluble"
+    },
+    {
+     "nom": "le sucre",
+     "soluble": "soluble"
+    },
+    {
+     "nom": "le café soluble",
+     "soluble": "soluble"
+    },
+    {
+     "nom": "le sirop",
+     "soluble": "soluble"
+    },
+    {
+     "nom": "le sucre glace",
+     "soluble": "soluble"
+    },
+    {
+     "nom": "le sable",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "l'huile",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "le poivre moulu",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "la limaille de fer",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "les grains de riz",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "les petits cailloux",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "la sciure de bois",
+     "soluble": "insoluble"
+    },
+    {
+     "nom": "Quand le sucre se dissout dans l'eau, il ne disparaît pas : l'eau devient sucrée.",
+     "verite": true,
+     "pourquoi": "Le sucre est toujours là, en morceaux invisibles : on peut le récupérer en faisant évaporer l'eau."
+    },
+    {
+     "nom": "Quand on dissout du sel dans l'eau, le sel n'existe plus.",
+     "verite": false,
+     "pourquoi": "Le sel est toujours là (l'eau est salée) ; on peut le récupérer par évaporation."
+    },
+    {
+     "nom": "Dans un mélange homogène, on ne distingue pas les constituants à l'œil nu.",
+     "verite": true,
+     "pourquoi": "Par exemple, dans de l'eau sucrée, on ne voit plus le sucre."
+    },
+    {
+     "nom": "Dans un mélange hétérogène, on distingue au moins deux constituants.",
+     "verite": true,
+     "pourquoi": "Par exemple, dans de l'eau et de l'huile, on voit deux couches."
+    },
+    {
+     "nom": "On peut séparer le sel de l'eau salée avec un filtre à café.",
+     "verite": false,
+     "pourquoi": "Le sel dissous passe à travers le filtre ; pour le récupérer, il faut faire évaporer l'eau."
+    },
+    {
+     "nom": "L'huile flotte sur l'eau parce qu'elle est plus légère à volume égal.",
+     "verite": true,
+     "pourquoi": "Un litre d'huile pèse moins qu'un litre d'eau."
+    },
+    {
+     "nom": "Un aimant permet de séparer de la limaille de fer du sable.",
+     "verite": true,
+     "pourquoi": "Le fer est attiré par l'aimant, le sable non."
+    },
+    {
+     "nom": "Le sable se dissout dans l'eau si on remue assez longtemps.",
+     "verite": false,
+     "pourquoi": "Le sable est insoluble : même en remuant, il retombe au fond (il décante)."
+    },
+    {
+     "nom": "Dans de l'eau chaude, on peut dissoudre plus de sucre que dans de l'eau froide.",
+     "verite": true,
+     "pourquoi": "La chaleur augmente la quantité de sucre que l'eau peut dissoudre."
+    },
+    {
+     "nom": "Une dissolution est un phénomène physique.",
+     "verite": true,
+     "pourquoi": "Aucune nouvelle matière n'apparaît : le sucre et l'eau sont toujours là."
+    }
+   ]
+  },
+  {
+   "id": "materiaux",
+   "description": "Matériaux : conducteurs/isolants (électricité, chaleur), aimants, origine.",
+   "cle": "nom",
+   "phrases": {
+    "elec": {
+     "conducteur": "un conducteur électrique",
+     "isolant": "un isolant électrique"
+    },
+    "elec_pluriel": {
+     "conducteur": "conducteurs électriques",
+     "isolant": "isolants électriques"
+    },
+    "therm": {
+     "conducteur": "un bon conducteur de chaleur",
+     "isolant": "un isolant thermique"
+    },
+    "therm_pluriel": {
+     "conducteur": "bons conducteurs de chaleur",
+     "isolant": "isolants thermiques"
+    },
+    "magn": {
+     "attiré par un aimant": "attiré par un aimant",
+     "pas attiré par un aimant": "pas attiré par un aimant"
+    },
+    "magn_pluriel": {
+     "attiré par un aimant": "attirés par un aimant",
+     "pas attiré par un aimant": "pas attirés par un aimant"
+    },
+    "origine": {
+     "naturel": "un matériau naturel",
+     "fabriqué par l'être humain": "un matériau fabriqué par l'être humain"
+    },
+    "origine_pluriel": {
+     "naturel": "des matériaux naturels",
+     "fabriqué par l'être humain": "des matériaux fabriqués par l'être humain"
+    }
+   },
+   "items": [
+    {
+     "nom": "le cuivre",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "le fer",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "attiré par un aimant"
+    },
+    {
+     "nom": "l'acier",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "l'aluminium",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "l'or",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "l'argent",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "le nickel",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "attiré par un aimant"
+    },
+    {
+     "nom": "le zinc",
+     "elec": "conducteur",
+     "therm": "conducteur",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "le plastique",
+     "elec": "isolant",
+     "therm": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "le bois sec",
+     "elec": "isolant",
+     "therm": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel",
+     "info": "Attention : mouillé, le bois laisse passer un peu le courant."
+    },
+    {
+     "nom": "le verre",
+     "elec": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "le caoutchouc",
+     "elec": "isolant",
+     "magn": "pas attiré par un aimant"
+    },
+    {
+     "nom": "la laine",
+     "therm": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel"
+    },
+    {
+     "nom": "le liège",
+     "therm": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel"
+    },
+    {
+     "nom": "le papier",
+     "elec": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "la porcelaine",
+     "elec": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "le polystyrène",
+     "elec": "isolant",
+     "therm": "isolant",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "l'air",
+     "therm": "isolant",
+     "info": "C'est pour cela qu'un double vitrage (deux vitres séparées par de l'air) isole bien."
+    },
+    {
+     "nom": "l'eau salée",
+     "elec": "conducteur",
+     "info": "C'est pour cela qu'il est dangereux d'utiliser un appareil électrique près de l'eau."
+    },
+    {
+     "nom": "le coton",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel"
+    },
+    {
+     "nom": "la pierre",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel"
+    },
+    {
+     "nom": "le béton",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "le nylon",
+     "magn": "pas attiré par un aimant",
+     "origine": "fabriqué par l'être humain"
+    },
+    {
+     "nom": "la soie",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel",
+     "info": "Elle est produite par une chenille, le ver à soie."
+    },
+    {
+     "nom": "le sable",
+     "magn": "pas attiré par un aimant",
+     "origine": "naturel"
+    },
+    {
+     "nom": "la brique",
+     "origine": "fabriqué par l'être humain",
+     "info": "Elle est fabriquée en cuisant de l'argile."
+    },
+    {
+     "nom": "Deux pôles nord d'aimants se repoussent.",
+     "verite": true,
+     "pourquoi": "Deux pôles de même nom se repoussent ; deux pôles différents s'attirent."
+    },
+    {
+     "nom": "Le pôle nord d'un aimant attire le pôle sud d'un autre aimant.",
+     "verite": true,
+     "pourquoi": "Deux pôles différents s'attirent."
+    },
+    {
+     "nom": "Deux pôles sud d'aimants s'attirent.",
+     "verite": false,
+     "pourquoi": "Deux pôles de même nom se repoussent."
+    },
+    {
+     "nom": "Un aimant attire tous les métaux.",
+     "verite": false,
+     "pourquoi": "Un aimant attire le fer, l'acier et le nickel, mais pas le cuivre, l'aluminium ni l'or."
+    },
+    {
+     "nom": "L'aiguille d'une boussole est un petit aimant qui indique le nord.",
+     "verite": true,
+     "pourquoi": "Elle s'oriente selon le « grand aimant » qu'est la Terre."
+    },
+    {
+     "nom": "La force d'un aimant ne peut pas traverser une feuille de papier.",
+     "verite": false,
+     "pourquoi": "La force de l'aimant traverse le papier, le carton, le bois ou l'eau."
+    },
+    {
+     "nom": "Si on coupe un aimant en deux, on obtient un pôle nord tout seul et un pôle sud tout seul.",
+     "verite": false,
+     "pourquoi": "Chaque morceau devient un aimant complet, avec un pôle nord et un pôle sud."
+    },
+    {
+     "nom": "Les métaux sont de bons conducteurs de chaleur.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'une cuillère en métal plongée dans une soupe chaude devient vite chaude."
+    },
+    {
+     "nom": "La laine et le liège sont de bons isolants thermiques.",
+     "verite": true,
+     "pourquoi": "Ils laissent mal passer la chaleur : un pull en laine garde la chaleur du corps."
+    },
+    {
+     "nom": "Le plastique conduit bien le courant électrique.",
+     "verite": false,
+     "pourquoi": "Le plastique est un isolant : c'est pour cela qu'il entoure les fils électriques."
+    },
+    {
+     "nom": "Les fils électriques sont en cuivre entouré de plastique.",
+     "verite": true,
+     "pourquoi": "Le cuivre conduit le courant, le plastique isole et protège."
+    },
+    {
+     "nom": "Une poignée de casserole en bois devient vite brûlante.",
+     "verite": false,
+     "pourquoi": "Le bois est un isolant thermique : la poignée reste froide et on ne se brûle pas."
+    }
+   ]
+  },
+  {
+   "id": "objets",
+   "description": "Objets : flotte ou coule, transparent/translucide/opaque.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "un bouchon en liège",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une balle de ping-pong",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "un glaçon",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "un morceau de bois",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une pomme",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une bouteille en plastique vide et fermée",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une plume",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une feuille d'arbre",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "un morceau de polystyrène",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une bougie",
+     "flottaison": "flotte"
+    },
+    {
+     "nom": "une clé en fer",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une bille en verre",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une pièce de monnaie",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "un caillou",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "un clou",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une cuillère en métal",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une bille en acier",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une boule de pâte à modeler",
+     "flottaison": "coule"
+    },
+    {
+     "nom": "une vitre",
+     "transparence": "transparent"
+    },
+    {
+     "nom": "un verre à boire",
+     "transparence": "transparent"
+    },
+    {
+     "nom": "le film alimentaire",
+     "transparence": "transparent"
+    },
+    {
+     "nom": "l'eau claire",
+     "transparence": "transparent"
+    },
+    {
+     "nom": "le papier calque",
+     "transparence": "translucide"
+    },
+    {
+     "nom": "une vitre en verre dépoli",
+     "transparence": "translucide"
+    },
+    {
+     "nom": "le papier sulfurisé",
+     "transparence": "translucide"
+    },
+    {
+     "nom": "un morceau de carton",
+     "transparence": "opaque"
+    },
+    {
+     "nom": "une planche en bois",
+     "transparence": "opaque"
+    },
+    {
+     "nom": "une brique",
+     "transparence": "opaque"
+    },
+    {
+     "nom": "une plaque de métal",
+     "transparence": "opaque"
+    },
+    {
+     "nom": "un livre fermé",
+     "transparence": "opaque"
+    }
+   ]
+  },
+  {
+   "id": "dechets",
+   "description": "Tri des déchets en Belgique.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "une bouteille d'eau en plastique",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "une canette de soda",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "une brique de lait",
+     "poubelle": "le sac PMC",
+     "info": "Une brique de lait (carton à boisson) va dans les PMC, pas dans les papiers-cartons."
+    },
+    {
+     "nom": "une boîte de conserve vide",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "un pot de yaourt vide",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "un flacon de shampoing vide",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "une barquette en aluminium",
+     "poubelle": "le sac PMC"
+    },
+    {
+     "nom": "un journal",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "une boîte de céréales en carton",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "un magazine",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "une feuille de cahier",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "un carton d'emballage",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "un rouleau de papier toilette en carton",
+     "poubelle": "les papiers-cartons"
+    },
+    {
+     "nom": "une bouteille de jus en verre",
+     "poubelle": "la bulle à verre"
+    },
+    {
+     "nom": "un pot de confiture en verre",
+     "poubelle": "la bulle à verre",
+     "info": "Sans son couvercle : le couvercle en métal va dans les PMC."
+    },
+    {
+     "nom": "un bocal de cornichons",
+     "poubelle": "la bulle à verre"
+    },
+    {
+     "nom": "des épluchures de pommes de terre",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "un trognon de pomme",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "du marc de café",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "une peau de banane",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "des coquilles d'œufs",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "des restes de légumes",
+     "poubelle": "les déchets organiques (compost)"
+    },
+    {
+     "nom": "une pile usagée",
+     "poubelle": "un point de collecte spécial (magasin, recyparc)",
+     "info": "Les piles contiennent des produits dangereux : on les rapporte dans un point de collecte (magasin, école, recyparc)."
+    },
+    {
+     "nom": "un vieux pot de peinture",
+     "poubelle": "un point de collecte spécial (magasin, recyparc)",
+     "info": "La peinture est un produit dangereux : elle va au recyparc."
+    },
+    {
+     "nom": "un vieil ordinateur",
+     "poubelle": "un point de collecte spécial (magasin, recyparc)",
+     "info": "Les appareils électriques se rapportent au magasin ou au recyparc."
+    },
+    {
+     "nom": "une ampoule LED usagée",
+     "poubelle": "un point de collecte spécial (magasin, recyparc)",
+     "info": "Elle se rapporte dans un point de collecte (magasin ou recyparc)."
+    },
+    {
+     "nom": "Trier ses déchets permet de les recycler et d'économiser des matières premières.",
+     "verite": true,
+     "pourquoi": "Avec des bouteilles recyclées, on refait du verre ; avec du papier, on refait du papier."
+    },
+    {
+     "nom": "Le compost transforme les déchets organiques en engrais naturel.",
+     "verite": true,
+     "pourquoi": "Les vers de terre, les champignons et les bactéries décomposent les épluchures."
+    },
+    {
+     "nom": "Une brique de lait va dans les papiers-cartons.",
+     "verite": false,
+     "pourquoi": "Une brique de lait contient aussi du plastique et de l'aluminium : c'est un carton à boisson, elle va dans les PMC."
+    },
+    {
+     "nom": "Une assiette cassée va dans la bulle à verre.",
+     "verite": false,
+     "pourquoi": "La bulle à verre accepte les bouteilles et bocaux ; la vaisselle, la porcelaine et les miroirs n'y vont pas."
+    },
+    {
+     "nom": "Le verre peut être recyclé de très nombreuses fois.",
+     "verite": true,
+     "pourquoi": "Fondu, le verre recyclé permet de fabriquer de nouvelles bouteilles."
+    },
+    {
+     "nom": "Les piles usagées vont dans la poubelle ordinaire.",
+     "verite": false,
+     "pourquoi": "Les piles contiennent des produits dangereux : on les rapporte à un point de collecte."
+    },
+    {
+     "nom": "Réduire ses déchets, c'est encore mieux que les recycler.",
+     "verite": true,
+     "pourquoi": "Par exemple : une gourde plutôt que des bouteilles jetables, une boîte à tartines plutôt que de l'emballage."
+    },
+    {
+     "nom": "Que veut dire « PMC » ?",
+     "rep": "Plastiques, Métaux et Cartons à boissons",
+     "faux": [
+      "Papiers, Magazines et Cartons",
+      "Piles, Médicaments et Chimiques",
+      "Pots, Marmites et Cuillères"
+     ],
+     "pourquoi": "Le sac PMC reçoit les emballages en plastique, les emballages en métal et les cartons à boissons."
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "description": "Composition et propriétés de l'air.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "volume 100",
+     "volume": 100
+    },
+    {
+     "nom": "volume 200",
+     "volume": 200
+    },
+    {
+     "nom": "volume 300",
+     "volume": 300
+    },
+    {
+     "nom": "volume 400",
+     "volume": 400
+    },
+    {
+     "nom": "volume 500",
+     "volume": 500
+    },
+    {
+     "nom": "volume 600",
+     "volume": 600
+    },
+    {
+     "nom": "volume 700",
+     "volume": 700
+    },
+    {
+     "nom": "volume 800",
+     "volume": 800
+    },
+    {
+     "nom": "volume 900",
+     "volume": 900
+    },
+    {
+     "nom": "volume 1000",
+     "volume": 1000
+    },
+    {
+     "nom": "volume 50",
+     "volume": 50
+    },
+    {
+     "nom": "volume 150",
+     "volume": 150
+    },
+    {
+     "nom": "volume 250",
+     "volume": 250
+    },
+    {
+     "nom": "volume 350",
+     "volume": 350
+    },
+    {
+     "nom": "volume 450",
+     "volume": 450
+    },
+    {
+     "nom": "volume 1500",
+     "volume": 1500
+    },
+    {
+     "nom": "volume 2000",
+     "volume": 2000
+    },
+    {
+     "nom": "volume 2500",
+     "volume": 2500
+    },
+    {
+     "nom": "volume 3000",
+     "volume": 3000
+    },
+    {
+     "nom": "volume 5000",
+     "volume": 5000
+    },
+    {
+     "nom": "L'air est un mélange de plusieurs gaz.",
+     "verite": true,
+     "pourquoi": "Il contient surtout du diazote (environ 78 %) et du dioxygène (environ 21 %)."
+    },
+    {
+     "nom": "L'air contient environ 21 % de dioxygène.",
+     "verite": true,
+     "pourquoi": "Le reste est surtout du diazote (environ 78 %) et un peu d'autres gaz (environ 1 %)."
+    },
+    {
+     "nom": "L'air est composé surtout de dioxygène.",
+     "verite": false,
+     "pourquoi": "L'air contient surtout du diazote (environ 78 %) ; le dioxygène n'en représente qu'environ 21 %."
+    },
+    {
+     "nom": "L'air a une masse.",
+     "verite": true,
+     "pourquoi": "Un ballon de football bien gonflé pèse un tout petit peu plus que le même ballon dégonflé."
+    },
+    {
+     "nom": "On peut comprimer l'air dans une seringue bouchée.",
+     "verite": true,
+     "pourquoi": "Un gaz peut être comprimé : on peut le serrer dans un plus petit volume."
+    },
+    {
+     "nom": "L'air chaud monte.",
+     "verite": true,
+     "pourquoi": "C'est ce qui fait voler les montgolfières."
+    },
+    {
+     "nom": "L'air n'occupe pas de place.",
+     "verite": false,
+     "pourquoi": "Un verre retourné enfoncé dans l'eau ne se remplit pas : l'air qu'il contient occupe la place."
+    },
+    {
+     "nom": "L'air que nous expirons ne contient plus du tout de dioxygène.",
+     "verite": false,
+     "pourquoi": "L'air expiré contient encore du dioxygène (environ 16 %), mais moins que l'air que nous inspirons."
+    },
+    {
+     "nom": "L'air que nous expirons contient plus de dioxyde de carbone que l'air que nous inspirons.",
+     "verite": true,
+     "pourquoi": "Le corps rejette le dioxyde de carbone par les poumons."
+    },
+    {
+     "nom": "Le vent, c'est de l'air en mouvement.",
+     "verite": true,
+     "pourquoi": "C'est le vent qui fait tourner les éoliennes et avancer les voiliers."
+    },
+    {
+     "nom": "Le dioxygène est le gaz le plus abondant dans l'air.",
+     "verite": false,
+     "pourquoi": "Le gaz le plus abondant est le diazote (environ 78 %)."
+    },
+    {
+     "nom": "Une bougie a besoin du dioxygène de l'air pour brûler.",
+     "verite": true,
+     "pourquoi": "Sous un bocal retourné, elle s'éteint quand le dioxygène est épuisé."
+    },
+    {
+     "nom": "Quel gaz est le plus abondant dans l'air ?",
+     "rep": "le diazote",
+     "faux": [
+      "le dioxygène",
+      "le dioxyde de carbone",
+      "la vapeur d'eau"
+     ],
+     "pourquoi": "Le diazote représente environ 78 % de l'air."
+    },
+    {
+     "nom": "Quel pourcentage de l'air le dioxygène représente-t-il environ ?",
+     "rep": "environ 21 %",
+     "faux": [
+      "environ 78 %",
+      "environ 50 %",
+      "environ 1 %"
+     ],
+     "pourquoi": "L'air contient environ 21 % de dioxygène et 78 % de diazote."
+    },
+    {
+     "nom": "Quel pourcentage de l'air le diazote représente-t-il environ ?",
+     "rep": "environ 78 %",
+     "faux": [
+      "environ 21 %",
+      "environ 50 %",
+      "environ 100 %"
+     ],
+     "pourquoi": "Le diazote représente environ 78 % de l'air."
+    },
+    {
+     "nom": "Quel gaz de l'air nos cellules utilisent-elles pour respirer ?",
+     "rep": "le dioxygène",
+     "faux": [
+      "le diazote",
+      "le dioxyde de carbone",
+      "l'hélium"
+     ],
+     "pourquoi": "Nous inspirons le dioxygène et rejetons du dioxyde de carbone."
+    }
+   ]
+  },
+  {
+   "id": "combustion",
+   "description": "Triangle du feu, extinction, combustibles.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "Fermer le robinet de gaz d'un réchaud allumé.",
+     "supprime": "le combustible",
+     "info_e": "Sans gaz, il n'y a plus de combustible : la flamme s'éteint."
+    },
+    {
+     "nom": "Poser un couvercle sur une poêle en feu.",
+     "supprime": "le comburant (le dioxygène)",
+     "info_e": "Le couvercle empêche l'air d'arriver : le feu manque de dioxygène."
+    },
+    {
+     "nom": "Étendre une couverture anti-feu sur une friteuse en feu.",
+     "supprime": "le comburant (le dioxygène)",
+     "info_e": "La couverture étouffe le feu : le dioxygène n'arrive plus."
+    },
+    {
+     "nom": "Jeter du sable sur un petit feu de camp.",
+     "supprime": "le comburant (le dioxygène)",
+     "info_e": "Le sable étouffe le feu : le dioxygène n'arrive plus."
+    },
+    {
+     "nom": "Arroser un feu de bois avec de l'eau.",
+     "supprime": "la chaleur",
+     "info_e": "L'eau refroidit le bois : il n'est plus assez chaud pour brûler."
+    },
+    {
+     "nom": "Couper des arbres pour créer une tranchée pare-feu dans une forêt.",
+     "supprime": "le combustible",
+     "info_e": "Le feu n'a plus de bois à brûler en arrivant à la tranchée."
+    },
+    {
+     "nom": "Retirer les bûches qui n'ont pas encore brûlé.",
+     "supprime": "le combustible",
+     "info_e": "On enlève le combustible."
+    },
+    {
+     "nom": "Poser un verre retourné sur une bougie allumée.",
+     "supprime": "le comburant (le dioxygène)",
+     "info_e": "Sous le verre, le dioxygène s'épuise et la flamme s'éteint."
+    },
+    {
+     "nom": "Refroidir des braises en les arrosant d'eau.",
+     "supprime": "la chaleur",
+     "info_e": "L'eau refroidit les braises."
+    },
+    {
+     "nom": "Utiliser un éteignoir pour éteindre une bougie.",
+     "supprime": "le comburant (le dioxygène)",
+     "info_e": "L'éteignoir coiffe la flamme et la prive de dioxygène."
+    },
+    {
+     "nom": "le bois",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "le papier",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "le gaz naturel",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "la cire de la bougie",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "l'air qui entoure la flamme",
+     "triangle": "le comburant (le dioxygène)"
+    },
+    {
+     "nom": "la flamme d'une allumette",
+     "triangle": "la chaleur"
+    },
+    {
+     "nom": "une étincelle",
+     "triangle": "la chaleur"
+    },
+    {
+     "nom": "le charbon",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "l'essence",
+     "triangle": "le combustible"
+    },
+    {
+     "nom": "le carton",
+     "combustible": "oui"
+    },
+    {
+     "nom": "l'alcool à brûler",
+     "combustible": "oui"
+    },
+    {
+     "nom": "le mazout",
+     "combustible": "oui"
+    },
+    {
+     "nom": "la bûche de bois",
+     "combustible": "oui"
+    },
+    {
+     "nom": "la feuille de papier",
+     "combustible": "oui"
+    },
+    {
+     "nom": "l'eau",
+     "combustible": "non"
+    },
+    {
+     "nom": "le sable",
+     "combustible": "non"
+    },
+    {
+     "nom": "la pierre",
+     "combustible": "non"
+    },
+    {
+     "nom": "le verre",
+     "combustible": "non"
+    },
+    {
+     "nom": "la brique",
+     "combustible": "non"
+    },
+    {
+     "nom": "Une combustion produit de la chaleur.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'on brûle du bois ou du gaz pour se chauffer."
+    },
+    {
+     "nom": "La combustion du bois ou du gaz produit du dioxyde de carbone et de la vapeur d'eau.",
+     "verite": true,
+     "pourquoi": "On peut voir la buée (l'eau) sur une plaque froide au-dessus d'une flamme."
+    },
+    {
+     "nom": "Une bougie peut brûler sans dioxygène.",
+     "verite": false,
+     "pourquoi": "Sans dioxygène (le comburant), la combustion s'arrête."
+    },
+    {
+     "nom": "Il faut jeter de l'eau sur de l'huile qui brûle.",
+     "verite": false,
+     "pourquoi": "L'eau projette l'huile brûlante et étend le feu : on étouffe avec un couvercle ou une couverture anti-feu."
+    },
+    {
+     "nom": "En cas d'incendie, il faut sortir en restant près du sol.",
+     "verite": true,
+     "pourquoi": "La fumée chaude et toxique monte : près du sol, l'air est plus respirable."
+    },
+    {
+     "nom": "Le dioxygène est un combustible.",
+     "verite": false,
+     "pourquoi": "Le dioxygène est le comburant : il permet au combustible de brûler."
+    },
+    {
+     "nom": "La combustion est un phénomène chimique.",
+     "verite": true,
+     "pourquoi": "De nouvelles matières apparaissent : cendres, fumée, dioxyde de carbone."
+    },
+    {
+     "nom": "Un appareil de chauffage mal réglé peut produire du monoxyde de carbone, un gaz toxique.",
+     "verite": true,
+     "pourquoi": "Ce gaz est invisible et sans odeur : un détecteur permet de donner l'alerte."
+    },
+    {
+     "nom": "Pour éteindre un feu, il faut lui apporter plus d'air.",
+     "verite": false,
+     "pourquoi": "L'air apporte du dioxygène, qui attise le feu ; pour l'éteindre, on l'en prive."
+    },
+    {
+     "nom": "Pour éteindre un feu, il suffit de supprimer un des trois éléments du triangle du feu.",
+     "verite": true,
+     "pourquoi": "Combustible, comburant ou chaleur : sans l'un des trois, la combustion s'arrête."
+    },
+    {
+     "nom": "Quels sont les trois éléments du triangle du feu ?",
+     "rep": "un combustible, un comburant et de la chaleur",
+     "faux": [
+      "de l'eau, du bois et du vent",
+      "du dioxyde de carbone, du bois et de la lumière",
+      "un combustible, de l'eau et du sable"
+     ],
+     "pourquoi": "Sans l'un de ces trois éléments, le feu s'éteint."
+    },
+    {
+     "nom": "Quel est le numéro d'appel d'urgence européen en cas d'incendie ?",
+     "rep": "112",
+     "faux": [
+      "101",
+      "1207",
+      "911"
+     ],
+     "pourquoi": "Le 112 fonctionne dans toute l'Europe, pour les pompiers et l'aide médicale urgente."
+    }
+   ]
+  },
+  {
+   "id": "phenomenes",
+   "description": "Phénomènes physiques ou chimiques.",
+   "cle": "nom",
+   "phrases": {
+    "type": {
+     "physique": "un phénomène physique",
+     "chimique": "un phénomène chimique"
+    },
+    "type_pluriel": {
+     "physique": "des phénomènes physiques",
+     "chimique": "des phénomènes chimiques"
+    }
+   },
+   "items": [
+    {
+     "nom": "la glace qui fond",
+     "type": "physique",
+     "pourquoi": "l'eau change seulement d'état"
+    },
+    {
+     "nom": "l'eau qui bout",
+     "type": "physique",
+     "pourquoi": "l'eau change seulement d'état"
+    },
+    {
+     "nom": "le sucre qui se dissout dans l'eau",
+     "type": "physique",
+     "pourquoi": "le sucre est toujours là, l'eau est sucrée"
+    },
+    {
+     "nom": "un verre qui se brise",
+     "type": "physique",
+     "pourquoi": "c'est toujours du verre, en morceaux"
+    },
+    {
+     "nom": "une feuille de papier déchirée",
+     "type": "physique",
+     "pourquoi": "c'est toujours du papier"
+    },
+    {
+     "nom": "le beurre qui fond",
+     "type": "physique",
+     "pourquoi": "le beurre change seulement d'état"
+    },
+    {
+     "nom": "l'eau qui gèle",
+     "type": "physique",
+     "pourquoi": "l'eau change seulement d'état"
+    },
+    {
+     "nom": "la buée sur un miroir",
+     "type": "physique",
+     "pourquoi": "la vapeur d'eau redevient de l'eau liquide"
+    },
+    {
+     "nom": "une planche sciée en deux",
+     "type": "physique",
+     "pourquoi": "c'est toujours du bois"
+    },
+    {
+     "nom": "de la pâte à modeler que l'on déforme",
+     "type": "physique",
+     "pourquoi": "c'est toujours la même pâte"
+    },
+    {
+     "nom": "du sel mélangé à de l'eau",
+     "type": "physique",
+     "pourquoi": "le sel est toujours là, l'eau est salée"
+    },
+    {
+     "nom": "le linge qui sèche",
+     "type": "physique",
+     "pourquoi": "l'eau s'évapore, elle change seulement d'état"
+    },
+    {
+     "nom": "le fer qui rouille",
+     "type": "chimique",
+     "pourquoi": "une nouvelle matière apparaît (la rouille)"
+    },
+    {
+     "nom": "le bois qui brûle",
+     "type": "chimique",
+     "pourquoi": "de nouvelles matières apparaissent (cendres, fumée, gaz)"
+    },
+    {
+     "nom": "un gâteau qui cuit",
+     "type": "chimique",
+     "pourquoi": "la pâte se transforme en une nouvelle matière"
+    },
+    {
+     "nom": "une pomme coupée qui brunit",
+     "type": "chimique",
+     "pourquoi": "la chair de la pomme se transforme au contact de l'air"
+    },
+    {
+     "nom": "le lait qui tourne",
+     "type": "chimique",
+     "pourquoi": "le lait se transforme (il devient aigre et caille)"
+    },
+    {
+     "nom": "un œuf qui cuit",
+     "type": "chimique",
+     "pourquoi": "le blanc se transforme et ne peut plus redevenir liquide"
+    },
+    {
+     "nom": "une allumette qui brûle",
+     "type": "chimique",
+     "pourquoi": "de nouvelles matières apparaissent (cendres, fumée)"
+    },
+    {
+     "nom": "du pain qui grille",
+     "type": "chimique",
+     "pourquoi": "le pain se transforme et noircit"
+    },
+    {
+     "nom": "un comprimé effervescent dans l'eau",
+     "type": "chimique",
+     "pourquoi": "un nouveau gaz se forme (les bulles)"
+    },
+    {
+     "nom": "du vinaigre versé sur du bicarbonate",
+     "type": "chimique",
+     "pourquoi": "un nouveau gaz se forme et fait des bulles"
+    },
+    {
+     "nom": "une statue en cuivre qui devient verte",
+     "type": "chimique",
+     "pourquoi": "une nouvelle matière verte se forme à la surface du cuivre"
+    },
+    {
+     "nom": "du bois qui pourrit",
+     "type": "chimique",
+     "pourquoi": "le bois est transformé en de nouvelles matières"
+    }
+   ]
+  },
+  {
+   "id": "sources_energie",
+   "description": "Ressources d'énergie renouvelables ou non.",
+   "cle": "nom",
+   "phrases": {
+    "source_pluriel": {
+     "renouvelable": "renouvelables",
+     "non renouvelable": "non renouvelables"
+    }
+   },
+   "items": [
+    {
+     "nom": "le Soleil",
+     "source": "renouvelable"
+    },
+    {
+     "nom": "le vent",
+     "source": "renouvelable"
+    },
+    {
+     "nom": "l'eau des rivières",
+     "source": "renouvelable"
+    },
+    {
+     "nom": "le bois",
+     "source": "renouvelable",
+     "info": "Il est renouvelable à condition de replanter les arbres coupés."
+    },
+    {
+     "nom": "la chaleur du sous-sol (géothermie)",
+     "source": "renouvelable"
+    },
+    {
+     "nom": "les marées",
+     "source": "renouvelable"
+    },
+    {
+     "nom": "le pétrole",
+     "source": "non renouvelable",
+     "fossile": "oui"
+    },
+    {
+     "nom": "le gaz naturel",
+     "source": "non renouvelable",
+     "fossile": "oui"
+    },
+    {
+     "nom": "le charbon",
+     "source": "non renouvelable",
+     "fossile": "oui"
+    },
+    {
+     "nom": "l'uranium",
+     "source": "non renouvelable",
+     "info": "C'est le combustible des centrales nucléaires, comme celles de Doel et de Tihange."
+    },
+    {
+     "nom": "Le pétrole, le gaz naturel et le charbon sont des énergies fossiles.",
+     "verite": true,
+     "pourquoi": "Ils se sont formés en millions d'années à partir de restes d'êtres vivants."
+    },
+    {
+     "nom": "L'uranium est une ressource d'énergie renouvelable.",
+     "verite": false,
+     "pourquoi": "L'uranium est extrait du sol et ses réserves s'épuisent : il n'est pas renouvelable."
+    },
+    {
+     "nom": "Brûler du pétrole, du gaz ou du charbon rejette du dioxyde de carbone.",
+     "verite": true,
+     "pourquoi": "Ce gaz renforce l'effet de serre et contribue au réchauffement climatique."
+    },
+    {
+     "nom": "Un panneau solaire photovoltaïque produit de l'électricité à partir de la lumière.",
+     "verite": true,
+     "pourquoi": "Il transforme l'énergie lumineuse en énergie électrique."
+    },
+    {
+     "nom": "Une éolienne produit de l'électricité même quand il n'y a pas de vent.",
+     "verite": false,
+     "pourquoi": "Sans vent, les pales ne tournent pas et l'éolienne ne produit rien."
+    },
+    {
+     "nom": "Les énergies fossiles se reforment en quelques années.",
+     "verite": false,
+     "pourquoi": "Les énergies fossiles mettent des millions d'années à se former : à notre échelle, elles s'épuisent."
+    },
+    {
+     "nom": "Isoler le toit d'une maison permet d'économiser de l'énergie.",
+     "verite": true,
+     "pourquoi": "La chaleur s'échappe moins : on chauffe moins."
+    },
+    {
+     "nom": "Éteindre la lumière en quittant une pièce permet d'économiser de l'énergie.",
+     "verite": true,
+     "pourquoi": "Chaque petit geste réduit la consommation d'électricité."
+    },
+    {
+     "nom": "Une énergie renouvelable finit toujours par s'épuiser.",
+     "verite": false,
+     "pourquoi": "Une énergie renouvelable se renouvelle rapidement : le Soleil brille, le vent souffle, l'eau coule chaque jour."
+    },
+    {
+     "nom": "Au large de la côte belge, en mer du Nord, il y a des parcs d'éoliennes.",
+     "verite": true,
+     "pourquoi": "Le vent de la mer du Nord est une ressource d'énergie renouvelable."
+    }
+   ]
+  },
+  {
+   "id": "transformations",
+   "description": "Appareils : énergie reçue → énergie produite.",
+   "cle": "nom",
+   "phrases": {
+    "recue": {
+     "Énergie électrique": "de l'énergie électrique",
+     "Énergie thermique (chaleur)": "de la chaleur (énergie thermique)",
+     "Énergie lumineuse": "de l'énergie lumineuse",
+     "Énergie mécanique (mouvement)": "du mouvement (énergie mécanique)",
+     "Énergie sonore": "du son (énergie sonore)",
+     "Énergie chimique": "de l'énergie chimique"
+    },
+    "produite": {
+     "Énergie électrique": "de l'énergie électrique",
+     "Énergie thermique (chaleur)": "de la chaleur (énergie thermique)",
+     "Énergie lumineuse": "de l'énergie lumineuse",
+     "Énergie mécanique (mouvement)": "du mouvement (énergie mécanique)",
+     "Énergie sonore": "du son (énergie sonore)",
+     "Énergie chimique": "de l'énergie chimique"
+    },
+    "utile": {
+     "Énergie électrique": "de l'énergie électrique",
+     "Énergie thermique (chaleur)": "de la chaleur (énergie thermique)",
+     "Énergie lumineuse": "de l'énergie lumineuse",
+     "Énergie mécanique (mouvement)": "du mouvement (énergie mécanique)",
+     "Énergie sonore": "du son (énergie sonore)",
+     "Énergie chimique": "de l'énergie chimique"
+    }
+   },
+   "items": [
+    {
+     "nom": "une ampoule allumée",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie lumineuse",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie lumineuse",
+     "info": "Elle transforme l'énergie électrique en lumière (et un peu de chaleur)."
+    },
+    {
+     "nom": "un radiateur électrique",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie thermique (chaleur)",
+     "info": "Il transforme l'énergie électrique en chaleur."
+    },
+    {
+     "nom": "un ventilateur",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie mécanique (mouvement)",
+      "Énergie sonore",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie mécanique (mouvement)",
+     "info": "Il transforme l'énergie électrique en mouvement (les pales tournent)."
+    },
+    {
+     "nom": "un mixeur",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie mécanique (mouvement)",
+      "Énergie sonore",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie mécanique (mouvement)",
+     "info": "Il transforme l'énergie électrique en mouvement (les lames tournent)."
+    },
+    {
+     "nom": "un haut-parleur",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie sonore"
+     ],
+     "utile": "Énergie sonore",
+     "info": "Il transforme l'énergie électrique en son."
+    },
+    {
+     "nom": "une sonnette électrique",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie sonore"
+     ],
+     "utile": "Énergie sonore",
+     "info": "Elle transforme l'énergie électrique en son."
+    },
+    {
+     "nom": "une bouilloire électrique",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie thermique (chaleur)",
+     "info": "Elle transforme l'énergie électrique en chaleur pour chauffer l'eau."
+    },
+    {
+     "nom": "un fer à repasser",
+     "recue": "Énergie électrique",
+     "produite": [
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie thermique (chaleur)",
+     "info": "Il transforme l'énergie électrique en chaleur."
+    },
+    {
+     "nom": "un panneau solaire photovoltaïque",
+     "recue": "Énergie lumineuse",
+     "produite": [
+      "Énergie électrique"
+     ],
+     "utile": "Énergie électrique",
+     "info": "Il transforme la lumière du Soleil en électricité."
+    },
+    {
+     "nom": "une éolienne",
+     "recue": "Énergie mécanique (mouvement)",
+     "produite": [
+      "Énergie électrique"
+     ],
+     "utile": "Énergie électrique",
+     "info": "Le vent fait tourner les pales : l'énergie du mouvement devient de l'électricité."
+    },
+    {
+     "nom": "la dynamo d'un vélo",
+     "recue": "Énergie mécanique (mouvement)",
+     "produite": [
+      "Énergie électrique"
+     ],
+     "utile": "Énergie électrique",
+     "info": "La roue qui tourne fait tourner la dynamo : le mouvement devient de l'électricité."
+    },
+    {
+     "nom": "une pile",
+     "recue": "Énergie chimique",
+     "produite": [
+      "Énergie électrique"
+     ],
+     "utile": "Énergie électrique",
+     "info": "Des produits chimiques à l'intérieur de la pile produisent de l'électricité."
+    },
+    {
+     "nom": "le moteur à essence d'une voiture",
+     "recue": "Énergie chimique",
+     "produite": [
+      "Énergie mécanique (mouvement)",
+      "Énergie thermique (chaleur)",
+      "Énergie sonore"
+     ],
+     "utile": "Énergie mécanique (mouvement)",
+     "info": "L'essence brûle : son énergie chimique devient du mouvement (et beaucoup de chaleur)."
+    },
+    {
+     "nom": "un poêle à bois",
+     "recue": "Énergie chimique",
+     "produite": [
+      "Énergie thermique (chaleur)",
+      "Énergie lumineuse"
+     ],
+     "utile": "Énergie thermique (chaleur)",
+     "info": "Le bois brûle : son énergie chimique devient de la chaleur."
+    },
+    {
+     "nom": "une bougie allumée",
+     "recue": "Énergie chimique",
+     "produite": [
+      "Énergie lumineuse",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie lumineuse",
+     "info": "La cire brûle : son énergie chimique devient de la lumière et de la chaleur."
+    },
+    {
+     "nom": "les muscles d'un cycliste",
+     "recue": "Énergie chimique",
+     "produite": [
+      "Énergie mécanique (mouvement)",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie mécanique (mouvement)",
+     "info": "L'énergie des aliments devient du mouvement (et de la chaleur : on a chaud en pédalant)."
+    },
+    {
+     "nom": "une centrale hydroélectrique",
+     "recue": "Énergie mécanique (mouvement)",
+     "produite": [
+      "Énergie électrique"
+     ],
+     "utile": "Énergie électrique",
+     "info": "L'eau qui tombe fait tourner une turbine : le mouvement devient de l'électricité."
+    },
+    {
+     "nom": "une trottinette électrique",
+     "recue": [
+      "Énergie électrique",
+      "Énergie chimique"
+     ],
+     "produite": [
+      "Énergie mécanique (mouvement)",
+      "Énergie thermique (chaleur)",
+      "Énergie sonore"
+     ],
+     "utile": "Énergie mécanique (mouvement)",
+     "info": "Sa batterie (énergie chimique) fournit de l'électricité, que le moteur transforme en mouvement."
+    },
+    {
+     "nom": "une plante verte au soleil",
+     "recue": "Énergie lumineuse",
+     "produite": [
+      "Énergie chimique"
+     ],
+     "utile": "Énergie chimique",
+     "info": "Grâce à la photosynthèse, elle transforme la lumière en énergie chimique (des sucres)."
+    },
+    {
+     "nom": "une lampe de poche allumée",
+     "recue": [
+      "Énergie électrique",
+      "Énergie chimique"
+     ],
+     "produite": [
+      "Énergie lumineuse",
+      "Énergie thermique (chaleur)"
+     ],
+     "utile": "Énergie lumineuse",
+     "info": "La pile (énergie chimique) fournit de l'électricité, qui devient de la lumière dans l'ampoule."
+    }
+   ]
+  },
+  {
+   "id": "circuit",
+   "description": "Objets conducteurs/isolants dans un circuit ; sécurité électrique.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "une clé en métal",
+     "electrique": "conducteur",
+     "pourquoi": "le métal est un bon conducteur électrique"
+    },
+    {
+     "nom": "un trombone en acier",
+     "electrique": "conducteur",
+     "pourquoi": "l'acier est un métal conducteur"
+    },
+    {
+     "nom": "une pièce de monnaie",
+     "electrique": "conducteur",
+     "pourquoi": "le métal est un bon conducteur électrique"
+    },
+    {
+     "nom": "une cuillère en inox",
+     "electrique": "conducteur",
+     "pourquoi": "l'inox est un métal conducteur"
+    },
+    {
+     "nom": "une bande de papier aluminium",
+     "electrique": "conducteur",
+     "pourquoi": "l'aluminium est un métal conducteur"
+    },
+    {
+     "nom": "un clou en fer",
+     "electrique": "conducteur",
+     "pourquoi": "le fer est un métal conducteur"
+    },
+    {
+     "nom": "un fil de cuivre dénudé",
+     "electrique": "conducteur",
+     "pourquoi": "le cuivre est un très bon conducteur"
+    },
+    {
+     "nom": "une fourchette en métal",
+     "electrique": "conducteur",
+     "pourquoi": "le métal est un bon conducteur électrique"
+    },
+    {
+     "nom": "une gomme",
+     "electrique": "isolant",
+     "pourquoi": "le caoutchouc et le plastique sont isolants"
+    },
+    {
+     "nom": "une règle en plastique",
+     "electrique": "isolant",
+     "pourquoi": "le plastique est isolant"
+    },
+    {
+     "nom": "un bouchon en liège",
+     "electrique": "isolant",
+     "pourquoi": "le liège est isolant"
+    },
+    {
+     "nom": "une baguette en bois sec",
+     "electrique": "isolant",
+     "pourquoi": "le bois sec est isolant"
+    },
+    {
+     "nom": "un élastique",
+     "electrique": "isolant",
+     "pourquoi": "le caoutchouc est isolant"
+    },
+    {
+     "nom": "une bille en verre",
+     "electrique": "isolant",
+     "pourquoi": "le verre est isolant"
+    },
+    {
+     "nom": "une ficelle",
+     "electrique": "isolant",
+     "pourquoi": "c'est un matériau isolant"
+    },
+    {
+     "nom": "un morceau de carton",
+     "electrique": "isolant",
+     "pourquoi": "le carton sec est isolant"
+    },
+    {
+     "nom": "une paille en plastique",
+     "electrique": "isolant",
+     "pourquoi": "le plastique est isolant"
+    },
+    {
+     "nom": "un morceau de tissu",
+     "electrique": "isolant",
+     "pourquoi": "c'est un matériau isolant"
+    },
+    {
+     "nom": "Pour que l'ampoule s'allume, le circuit doit être fermé.",
+     "verite": true,
+     "pourquoi": "Le courant doit pouvoir faire une boucle complète, d'une borne de la pile à l'autre."
+    },
+    {
+     "nom": "Une ampoule s'allume si elle est reliée par un seul fil à une seule borne de la pile.",
+     "verite": false,
+     "pourquoi": "Il faut une boucle complète : de la borne + à la borne − en passant par l'ampoule."
+    },
+    {
+     "nom": "Une pile a deux bornes : une borne + et une borne −.",
+     "verite": true,
+     "pourquoi": "Dans un circuit, chaque borne doit être reliée à l'ampoule."
+    },
+    {
+     "nom": "Le courant des prises de la maison (230 volts) peut être mortel.",
+     "verite": true,
+     "pourquoi": "Il ne faut jamais jouer avec les prises ni ouvrir un appareil branché."
+    },
+    {
+     "nom": "Il ne faut jamais introduire un objet en métal dans une prise électrique.",
+     "verite": true,
+     "pourquoi": "Le métal conduit le courant jusqu'à la main : risque d'électrocution."
+    },
+    {
+     "nom": "On peut utiliser un sèche-cheveux branché dans son bain si l'on fait attention.",
+     "verite": false,
+     "pourquoi": "L'eau conduit le courant : un appareil électrique près de l'eau peut provoquer une électrocution."
+    },
+    {
+     "nom": "Quand on ouvre l'interrupteur, le courant ne passe plus.",
+     "verite": true,
+     "pourquoi": "Un interrupteur ouvert coupe le circuit."
+    },
+    {
+     "nom": "Un interrupteur fermé empêche le courant de passer.",
+     "verite": false,
+     "pourquoi": "C'est l'inverse : quand l'interrupteur est fermé, le circuit est fermé et le courant passe ; ouvert, il coupe le circuit."
+    },
+    {
+     "nom": "Toucher les deux bornes d'une pile de 4,5 volts est très dangereux.",
+     "verite": false,
+     "pourquoi": "Une petite pile ne présente pas de danger pour la peau ; c'est le courant des prises (230 volts) qui est dangereux."
+    },
+    {
+     "nom": "Il ne faut jamais toucher un appareil électrique avec les mains mouillées.",
+     "verite": true,
+     "pourquoi": "L'eau rend le corps meilleur conducteur : le risque d'électrocution augmente."
+    },
+    {
+     "nom": "Quand deux ampoules sont branchées l'une après l'autre dans un même circuit, si l'une grille, l'autre s'éteint aussi.",
+     "verite": true,
+     "pourquoi": "Le circuit est coupé : le courant ne passe plus du tout."
+    },
+    {
+     "nom": "Le corps humain ne conduit pas du tout l'électricité.",
+     "verite": false,
+     "pourquoi": "Le corps humain conduit le courant : c'est pour cela qu'on peut s'électrocuter."
+    }
+   ]
+  },
+  {
+   "id": "lumiere",
+   "description": "Sources de lumière, ombres, son.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "le Soleil",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "une étoile",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "une bougie allumée",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "une lampe allumée",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "l'écran allumé d'une tablette",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "un feu de camp",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "l'éclair d'un orage",
+     "lumiere": "une source de lumière"
+    },
+    {
+     "nom": "le ver luisant",
+     "lumiere": "une source de lumière",
+     "info": "Cet insecte produit sa propre lumière."
+    },
+    {
+     "nom": "la Lune",
+     "lumiere": "un objet éclairé",
+     "info": "Elle renvoie la lumière du Soleil."
+    },
+    {
+     "nom": "un miroir",
+     "lumiere": "un objet éclairé"
+    },
+    {
+     "nom": "la planète Vénus",
+     "lumiere": "un objet éclairé",
+     "info": "Comme toutes les planètes, elle renvoie la lumière du Soleil."
+    },
+    {
+     "nom": "un livre",
+     "lumiere": "un objet éclairé"
+    },
+    {
+     "nom": "le catadioptre d'un vélo",
+     "lumiere": "un objet éclairé",
+     "info": "Il renvoie la lumière des phares, mais n'en produit pas."
+    },
+    {
+     "nom": "un mur blanc",
+     "lumiere": "un objet éclairé"
+    },
+    {
+     "nom": "la neige",
+     "lumiere": "un objet éclairé"
+    },
+    {
+     "nom": "une bande réfléchissante de gilet fluo",
+     "lumiere": "un objet éclairé"
+    },
+    {
+     "nom": "La lumière se propage en ligne droite.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'on ne voit pas derrière un obstacle et que les ombres se forment."
+    },
+    {
+     "nom": "Une ombre se forme derrière un objet opaque éclairé.",
+     "verite": true,
+     "pourquoi": "L'objet arrête la lumière : derrière lui, la zone n'est pas éclairée."
+    },
+    {
+     "nom": "Quand le Soleil est bas sur l'horizon, les ombres sont plus longues.",
+     "verite": true,
+     "pourquoi": "Le matin et le soir, les ombres sont longues ; vers le milieu de la journée, elles sont courtes."
+    },
+    {
+     "nom": "La Lune ne produit pas de lumière : elle renvoie celle du Soleil.",
+     "verite": true,
+     "pourquoi": "La Lune est un objet éclairé, pas une source de lumière."
+    },
+    {
+     "nom": "Un objet transparent produit une ombre bien noire.",
+     "verite": false,
+     "pourquoi": "Un objet transparent laisse passer la lumière : il ne fait presque pas d'ombre."
+    },
+    {
+     "nom": "Plus on rapproche un objet de la lampe, plus son ombre devient petite.",
+     "verite": false,
+     "pourquoi": "Plus l'objet est proche de la lampe, plus son ombre est grande."
+    },
+    {
+     "nom": "La lumière blanche du Soleil contient toutes les couleurs de l'arc-en-ciel.",
+     "verite": true,
+     "pourquoi": "Des gouttes de pluie ou un prisme peuvent séparer ces couleurs."
+    },
+    {
+     "nom": "Vers le milieu de la journée, en Belgique, les ombres sont les plus longues de la journée.",
+     "verite": false,
+     "pourquoi": "Vers le milieu de la journée, le Soleil est au plus haut : les ombres sont les plus courtes."
+    },
+    {
+     "nom": "On voit un objet quand la lumière qu'il produit ou qu'il renvoie entre dans nos yeux.",
+     "verite": true,
+     "pourquoi": "Dans le noir complet, on ne voit rien."
+    },
+    {
+     "nom": "La lumière ne peut pas traverser le vide de l'espace.",
+     "verite": false,
+     "pourquoi": "La lumière du Soleil traverse le vide de l'espace pour arriver jusqu'à nous."
+    },
+    {
+     "nom": "L'ombre se forme du même côté que la source de lumière.",
+     "verite": false,
+     "pourquoi": "L'ombre se forme toujours du côté opposé à la source de lumière."
+    },
+    {
+     "nom": "Il ne faut jamais regarder le Soleil en face, même avec des lunettes de soleil.",
+     "verite": true,
+     "pourquoi": "La lumière du Soleil peut abîmer gravement les yeux."
+    },
+    {
+     "nom": "Un son est produit par un objet qui vibre.",
+     "verite": true,
+     "pourquoi": "La corde de guitare, la peau du tambour ou nos cordes vocales vibrent."
+    },
+    {
+     "nom": "Le son se propage dans le vide.",
+     "verite": false,
+     "pourquoi": "Le son a besoin de matière (air, eau, solide) : dans le vide de l'espace, il n'y a aucun son."
+    },
+    {
+     "nom": "Pendant un orage, on voit l'éclair avant d'entendre le tonnerre.",
+     "verite": true,
+     "pourquoi": "La lumière va beaucoup plus vite que le son."
+    },
+    {
+     "nom": "Le son se propage aussi dans l'eau et dans les solides.",
+     "verite": true,
+     "pourquoi": "Sous l'eau, on entend les bruits ; en collant l'oreille à une table, on entend un grattement."
+    },
+    {
+     "nom": "Une corde de guitare plus courte donne un son plus aigu.",
+     "verite": true,
+     "pourquoi": "C'est pour cela qu'on appuie sur les cordes pour changer de note."
+    },
+    {
+     "nom": "Les sons très forts peuvent abîmer l'oreille.",
+     "verite": true,
+     "pourquoi": "Il faut protéger ses oreilles et ne pas écouter la musique trop fort au casque."
+    },
+    {
+     "nom": "L'écho est un son renvoyé par un obstacle, comme une falaise ou un grand mur.",
+     "verite": true,
+     "pourquoi": "Le son revient vers nous après avoir « rebondi »."
+    },
+    {
+     "nom": "Le son va plus vite que la lumière.",
+     "verite": false,
+     "pourquoi": "La lumière est bien plus rapide : c'est pour cela qu'on voit l'éclair avant d'entendre le tonnerre."
+    },
+    {
+     "nom": "Un objet qui ne vibre pas peut quand même produire un son.",
+     "verite": false,
+     "pourquoi": "Tout son vient d'une vibration, même si elle est parfois trop petite pour être vue."
+    },
+    {
+     "nom": "Que se passe-t-il quand on pose la main sur une cloche qui sonne ?",
+     "rep": "le son s'arrête, car la cloche ne vibre plus",
+     "faux": [
+      "le son devient plus fort",
+      "le son devient plus aigu",
+      "rien ne change"
+     ],
+     "pourquoi": "La main arrête la vibration : sans vibration, pas de son."
+    },
+    {
+     "nom": "Quel type de matière arrête complètement la lumière ?",
+     "rep": "une matière opaque",
+     "faux": [
+      "une matière transparente",
+      "une matière translucide",
+      "de l'air"
+     ],
+     "pourquoi": "Une matière opaque (bois, carton, métal) arrête la lumière et forme une ombre nette."
+    },
+    {
+     "nom": "Comment appelle-t-on une matière qui laisse passer la lumière mais à travers laquelle on ne voit pas nettement ?",
+     "rep": "translucide",
+     "faux": [
+      "transparente",
+      "opaque",
+      "conductrice"
+     ],
+     "pourquoi": "Le papier calque ou le verre dépoli sont translucides."
+    }
+   ]
+  },
+  {
+   "id": "systeme_solaire",
+   "description": "Planètes (ordre, type, taille), étoiles, satellites.",
+   "cle": "nom",
+   "phrases": {
+    "type_pluriel": {
+     "tellurique (rocheuse)": "des planètes telluriques",
+     "gazeuse (géante)": "des planètes gazeuses"
+    },
+    "astre_pluriel": {
+     "une étoile": "des étoiles",
+     "une planète": "des planètes",
+     "un satellite": "des satellites"
+    }
+   },
+   "items": [
+    {
+     "nom": "Mercure",
+     "rang": 1,
+     "type": "tellurique (rocheuse)",
+     "diametre": 4879,
+     "taille": 1,
+     "astre": "une planète",
+     "info": "C'est la planète la plus proche du Soleil."
+    },
+    {
+     "nom": "Vénus",
+     "rang": 2,
+     "type": "tellurique (rocheuse)",
+     "diametre": 12104,
+     "taille": 2,
+     "astre": "une planète",
+     "info": "C'est la planète la plus chaude."
+    },
+    {
+     "nom": "la Terre",
+     "rang": 3,
+     "type": "tellurique (rocheuse)",
+     "diametre": 12756,
+     "taille": 2,
+     "astre": "une planète",
+     "info": "C'est la seule planète connue où il y a de la vie."
+    },
+    {
+     "nom": "Mars",
+     "rang": 4,
+     "type": "tellurique (rocheuse)",
+     "diametre": 6792,
+     "taille": 1,
+     "astre": "une planète",
+     "info": "On la surnomme la planète rouge."
+    },
+    {
+     "nom": "Jupiter",
+     "rang": 5,
+     "type": "gazeuse (géante)",
+     "diametre": 142984,
+     "taille": 5,
+     "astre": "une planète",
+     "info": "C'est la plus grande planète du système solaire."
+    },
+    {
+     "nom": "Saturne",
+     "rang": 6,
+     "type": "gazeuse (géante)",
+     "diametre": 120536,
+     "taille": 4,
+     "astre": "une planète",
+     "info": "Elle est entourée de grands anneaux."
+    },
+    {
+     "nom": "Uranus",
+     "rang": 7,
+     "type": "gazeuse (géante)",
+     "diametre": 51118,
+     "taille": 3,
+     "astre": "une planète"
+    },
+    {
+     "nom": "Neptune",
+     "rang": 8,
+     "type": "gazeuse (géante)",
+     "diametre": 49528,
+     "taille": 3,
+     "astre": "une planète",
+     "info": "C'est la planète la plus éloignée du Soleil."
+    },
+    {
+     "nom": "le Soleil",
+     "astre": "une étoile",
+     "info": "C'est une étoile : il produit sa propre lumière."
+    },
+    {
+     "nom": "l'étoile Polaire",
+     "astre": "une étoile"
+    },
+    {
+     "nom": "Sirius",
+     "astre": "une étoile",
+     "info": "C'est l'étoile la plus brillante de notre ciel nocturne."
+    },
+    {
+     "nom": "la Lune",
+     "astre": "un satellite",
+     "info": "C'est le satellite naturel de la Terre : elle tourne autour de la Terre."
+    },
+    {
+     "nom": "Titan",
+     "astre": "un satellite",
+     "info": "Il tourne autour de Saturne."
+    },
+    {
+     "nom": "Phobos",
+     "astre": "un satellite",
+     "info": "Il tourne autour de Mars."
+    },
+    {
+     "nom": "Io",
+     "astre": "un satellite",
+     "info": "Il tourne autour de Jupiter."
+    },
+    {
+     "nom": "Le Soleil est une étoile.",
+     "verite": true,
+     "pourquoi": "C'est une énorme boule de gaz très chaude qui produit sa propre lumière."
+    },
+    {
+     "nom": "La Lune est une planète.",
+     "verite": false,
+     "pourquoi": "La Lune est un satellite : elle tourne autour de la Terre, pas directement autour du Soleil."
+    },
+    {
+     "nom": "Il y a 8 planètes dans le système solaire.",
+     "verite": true,
+     "pourquoi": "Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus et Neptune."
+    },
+    {
+     "nom": "Pluton est la 9e planète du système solaire.",
+     "verite": false,
+     "pourquoi": "Depuis 2006, Pluton est classée « planète naine »."
+    },
+    {
+     "nom": "Jupiter est la plus grande planète du système solaire.",
+     "verite": true,
+     "pourquoi": "Son diamètre est environ 11 fois plus grand que celui de la Terre."
+    },
+    {
+     "nom": "Les planètes tournent autour du Soleil.",
+     "verite": true,
+     "pourquoi": "Le Soleil est au centre du système solaire."
+    },
+    {
+     "nom": "Le Soleil tourne autour de la Terre.",
+     "verite": false,
+     "pourquoi": "C'est la Terre qui tourne autour du Soleil, en environ 365 jours."
+    },
+    {
+     "nom": "Les étoiles disparaissent pendant la journée.",
+     "verite": false,
+     "pourquoi": "Les étoiles sont toujours là, mais la lumière du Soleil nous empêche de les voir."
+    },
+    {
+     "nom": "Saturne est entourée d'anneaux bien visibles.",
+     "verite": true,
+     "pourquoi": "Ses anneaux sont faits de morceaux de glace et de roche."
+    },
+    {
+     "nom": "Les quatre planètes les plus proches du Soleil sont rocheuses.",
+     "verite": true,
+     "pourquoi": "Mercure, Vénus, la Terre et Mars sont des planètes telluriques."
+    },
+    {
+     "nom": "Le Soleil est la plus petite étoile de l'Univers.",
+     "verite": false,
+     "pourquoi": "Le Soleil est une étoile de taille moyenne ; il nous paraît très grand parce qu'il est proche de nous."
+    },
+    {
+     "nom": "Le Soleil est beaucoup plus grand que la Terre.",
+     "verite": true,
+     "pourquoi": "On pourrait aligner plus de 100 Terres sur le diamètre du Soleil."
+    },
+    {
+     "nom": "Quelle est la planète la plus proche du Soleil ?",
+     "rep": "Mercure",
+     "faux": [
+      "Vénus",
+      "la Terre",
+      "Neptune"
+     ],
+     "pourquoi": "Dans l'ordre : Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+    },
+    {
+     "nom": "Quelle est la planète la plus éloignée du Soleil ?",
+     "rep": "Neptune",
+     "faux": [
+      "Mercure",
+      "Jupiter",
+      "Uranus"
+     ],
+     "pourquoi": "Dans l'ordre : Mercure, Vénus, la Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+    },
+    {
+     "nom": "Quelle est la troisième planète à partir du Soleil ?",
+     "rep": "la Terre",
+     "faux": [
+      "Mars",
+      "Vénus",
+      "Jupiter"
+     ],
+     "pourquoi": "Mercure, Vénus, puis la Terre."
+    }
+   ]
+  },
+  {
+   "id": "terre",
+   "description": "Rotation, révolution, saisons, phases de la Lune.",
+   "cle": "nom",
+   "phrases": {},
+   "items": [
+    {
+     "nom": "lune:1",
+     "texte": "la nouvelle lune",
+     "suite": "lune",
+     "rang": 1
+    },
+    {
+     "nom": "lune:2",
+     "texte": "le premier croissant",
+     "suite": "lune",
+     "rang": 2
+    },
+    {
+     "nom": "lune:3",
+     "texte": "le premier quartier",
+     "suite": "lune",
+     "rang": 3
+    },
+    {
+     "nom": "lune:4",
+     "texte": "la pleine lune",
+     "suite": "lune",
+     "rang": 4
+    },
+    {
+     "nom": "lune:5",
+     "texte": "le dernier quartier",
+     "suite": "lune",
+     "rang": 5
+    },
+    {
+     "nom": "lune:6",
+     "texte": "le dernier croissant",
+     "suite": "lune",
+     "rang": 6
+    },
+    {
+     "nom": "La Terre tourne sur elle-même en environ 24 heures.",
+     "verite": true,
+     "pourquoi": "C'est le mouvement de rotation."
+    },
+    {
+     "nom": "La rotation de la Terre sur elle-même explique l'alternance du jour et de la nuit.",
+     "verite": true,
+     "pourquoi": "La moitié de la Terre tournée vers le Soleil est éclairée (jour), l'autre moitié est dans la nuit."
+    },
+    {
+     "nom": "La Terre fait le tour du Soleil en environ 365 jours et 6 heures.",
+     "verite": true,
+     "pourquoi": "C'est le mouvement de révolution : il dure une année."
+    },
+    {
+     "nom": "Tous les 4 ans, on ajoute un jour au mois de février.",
+     "verite": true,
+     "pourquoi": "Les 4 fois 6 heures en trop forment un jour : le 29 février des années bissextiles."
+    },
+    {
+     "nom": "Les saisons existent parce que la Terre est parfois plus proche, parfois plus loin du Soleil.",
+     "verite": false,
+     "pourquoi": "Les saisons viennent de l'inclinaison de l'axe de la Terre : selon la période de l'année, notre hémisphère reçoit les rayons du Soleil plus ou moins directement."
+    },
+    {
+     "nom": "Le Soleil se lève à l'ouest.",
+     "verite": false,
+     "pourquoi": "Le Soleil se lève à l'est et se couche à l'ouest."
+    },
+    {
+     "nom": "La Lune fait le tour de la Terre en environ un mois.",
+     "verite": true,
+     "pourquoi": "Il faut environ 29 jours et demi pour passer d'une nouvelle lune à la suivante."
+    },
+    {
+     "nom": "La Lune change de forme parce que l'ombre de la Terre la cache.",
+     "verite": false,
+     "pourquoi": "Les phases viennent du fait qu'on voit, depuis la Terre, une partie plus ou moins grande de la face éclairée par le Soleil."
+    },
+    {
+     "nom": "En Belgique, le jour le plus long de l'année est vers le 21 juin.",
+     "verite": true,
+     "pourquoi": "C'est le solstice d'été."
+    },
+    {
+     "nom": "En Belgique, le jour le plus court de l'année est vers le 21 décembre.",
+     "verite": true,
+     "pourquoi": "C'est le solstice d'hiver."
+    },
+    {
+     "nom": "Quand c'est l'été en Belgique, c'est aussi l'été en Australie.",
+     "verite": false,
+     "pourquoi": "Les saisons sont inversées : quand c'est l'été chez nous (hémisphère nord), c'est l'hiver en Australie (hémisphère sud)."
+    },
+    {
+     "nom": "L'axe de la Terre est incliné.",
+     "verite": true,
+     "pourquoi": "Cette inclinaison est à l'origine des saisons."
+    },
+    {
+     "nom": "Quand il fait jour en Belgique, il fait jour partout sur la Terre.",
+     "verite": false,
+     "pourquoi": "Seule la moitié de la Terre tournée vers le Soleil est éclairée : de l'autre côté, il fait nuit."
+    },
+    {
+     "nom": "En Belgique, quand le Soleil est au plus haut dans le ciel (vers le milieu de la journée), il est au sud.",
+     "verite": true,
+     "pourquoi": "Le matin, il est à l'est ; le soir, à l'ouest."
+    },
+    {
+     "nom": "Le Soleil tourne autour de la Terre en 24 heures.",
+     "verite": false,
+     "pourquoi": "C'est la Terre qui tourne sur elle-même en 24 heures ; le Soleil nous semble se déplacer dans le ciel."
+    },
+    {
+     "nom": "La Lune est le satellite naturel de la Terre.",
+     "verite": true,
+     "pourquoi": "Elle tourne autour de la Terre."
+    },
+    {
+     "nom": "Lors de la pleine lune, on voit toute la face éclairée de la Lune.",
+     "verite": true,
+     "pourquoi": "À la nouvelle lune, au contraire, on ne la voit presque pas."
+    },
+    {
+     "nom": "Aux équinoxes, vers le 21 mars et le 23 septembre, le jour et la nuit durent à peu près 12 heures.",
+     "verite": true,
+     "pourquoi": "Équinoxe veut dire « nuit égale » (au jour)."
+    },
+    {
+     "nom": "Combien de temps la Terre met-elle pour tourner sur elle-même ?",
+     "rep": "environ 24 heures",
+     "faux": [
+      "environ 1 heure",
+      "environ 1 mois",
+      "environ 365 jours"
+     ],
+     "pourquoi": "C'est la rotation : elle donne le jour et la nuit."
+    },
+    {
+     "nom": "Combien de temps la Terre met-elle pour faire le tour du Soleil ?",
+     "rep": "environ 365 jours et 6 heures",
+     "faux": [
+      "environ 24 heures",
+      "environ 29 jours",
+      "environ 100 jours"
+     ],
+     "pourquoi": "C'est la révolution : elle dure une année."
+    },
+    {
+     "nom": "Qu'est-ce qui explique l'alternance du jour et de la nuit ?",
+     "rep": "la rotation de la Terre sur elle-même",
+     "faux": [
+      "la révolution de la Terre autour du Soleil",
+      "le mouvement de la Lune autour de la Terre",
+      "les nuages qui cachent le Soleil"
+     ],
+     "pourquoi": "En 24 heures, chaque endroit de la Terre passe du côté éclairé au côté sombre."
+    },
+    {
+     "nom": "Qu'est-ce qui explique les saisons ?",
+     "rep": "l'inclinaison de l'axe de la Terre pendant sa révolution",
+     "faux": [
+      "la distance entre la Terre et la Lune",
+      "la rotation de la Terre en 24 heures",
+      "les phases de la Lune"
+     ],
+     "pourquoi": "Grâce à l'inclinaison, notre hémisphère reçoit plus ou moins de lumière selon la période de l'année."
+    },
+    {
+     "nom": "Où le Soleil se lève-t-il ?",
+     "rep": "à l'est",
+     "faux": [
+      "à l'ouest",
+      "au nord",
+      "au sud"
+     ],
+     "pourquoi": "Le Soleil se lève à l'est, est au sud vers le milieu de la journée et se couche à l'ouest."
+    },
+    {
+     "nom": "Où le Soleil se couche-t-il ?",
+     "rep": "à l'ouest",
+     "faux": [
+      "à l'est",
+      "au nord",
+      "au sud"
+     ],
+     "pourquoi": "Le Soleil se lève à l'est, est au sud vers le milieu de la journée et se couche à l'ouest."
+    }
+   ]
+  }
+ ]
+}

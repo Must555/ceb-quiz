@@ -57,3 +57,18 @@ for (const meta of dispo) {
     assert.ok(jouables >= 100, `${meta.id} : seulement ${jouables} questions jouables`);
   });
 }
+
+test('questions officielles injectées dans l\'entraînement : documents joints, sans doublon', async () => {
+  const { chargerDonnees, QuizSession } = await import('../js/engine/index.js');
+  const d = await chargerDonnees({ base: 'data/', fetchJson: lire });
+  const qs = await d.questionsExamens();
+  assert.ok(qs.length >= 150, `${qs.length} questions`);
+  assert.equal(new Set(qs.map((q) => q.id)).size, qs.length);
+  for (const q of qs) {
+    assert.equal(q.docsResolus.length, (q.documents ?? []).length, `document manquant : ${q.id}`);
+    assert.notEqual(q.type, 'ouverte');
+  }
+  const s = new QuizSession({ banque: [...d.banque, ...qs], modeles: d.modeles }, { seed: 1, nbQuestions: 200 });
+  let q, n = 0; while ((q = s.suivante())) { if (q.source === 'examen') n++; s.repondre(null); }
+  assert.ok(n > 10, `seulement ${n} questions officielles sur 200`);
+});
