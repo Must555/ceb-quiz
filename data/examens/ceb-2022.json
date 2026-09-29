@@ -1194,7 +1194,7 @@
    "type": "grille",
    "enonce": "Les enluminures (février, mars, juillet, novembre) permettent-elles de dire que c'est vrai ou faux ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "enluminures"
@@ -1447,7 +1447,7 @@
    "type": "grille",
    "enonce": "Les photos des glaciers (19e et 21e siècle) permettent-elles de dire que c'est vrai ou faux ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "glaciers-1",
@@ -1810,7 +1810,7 @@
    "type": "numerique",
    "enonce": "Dans ce bac carré de 1 m de côté, on plante des fraisiers à 20 cm des bords et à 20 cm les uns des autres. Combien de fraisiers peut-on planter ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
    "documents": [
     "potager"
@@ -3374,7 +3374,7 @@
    "type": "qcm_multi",
    "enonce": "Liseron des dunes (grandes fleurs roses en forme d'entonnoir, feuilles arrondies). Coche ses trois caractéristiques d'après la clé.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "littoral-2",

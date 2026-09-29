@@ -996,7 +996,7 @@
    "type": "trous",
    "enonce": "Écris l'opération commune à chaque cadre (les nombres changent, l'unité aussi).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "5 dm → 0,5 cm et 5 dam → 0,5 m : {1}  ·  30 mm² → 3 cm² et 30 m² → 3 dam² : {2}  ·  0,2 m³ → 2 dm³ et 0,2 dm³ → 2 cm³ : {3}",
    "reponse": [
@@ -1296,7 +1296,7 @@
    "type": "qcm_multi",
    "enonce": "Quels animaux de la page 14 sont représentés sur la peinture de Vallon-Pont-d'Arc (Chauvet) ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "animaux",
@@ -2464,7 +2464,7 @@
    "type": "grille",
    "enonce": "Graphique de l'eau qui chauffe (ébullition vers 16 min, puis palier) : que montre-t-il ?",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "lignes": [
     "Il faut toujours 16 minutes pour faire bouillir de l'eau.",

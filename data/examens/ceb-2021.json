@@ -1496,7 +1496,7 @@
    "type": "grille",
    "enonce": "Rue de Courcelles : quelle photo permet de le voir ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "rue"
@@ -1958,7 +1958,7 @@
    "type": "numerique",
    "enonce": "Un client achète 2 boites de nourriture (8,50 € pièce), 1 flacon O'Pure (3,90 €), 5 platys (13,50 € les 5) et 1 scalaire (6,90 €). Il reçoit une ristourne de 10 %. Combien paie-t-il (en €) ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "documents": [
     "aqua"
@@ -2044,7 +2044,7 @@
    "type": "qcm",
    "enonce": "Le bas du chapeau est un cercle de 18 cm de diamètre. Quelle longueur de ruban faut-il environ pour en faire le tour ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-cercle",
    "choix": [
     "18 cm",
@@ -2527,7 +2527,7 @@
    "type": "qcm",
    "enonce": "« Nous étions heureux. Et puis il y a eu la guerre. » Quel groupe de mots relie ces deux phrases ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "documents": [
     "gm-2"

@@ -1623,7 +1623,7 @@
    "type": "texte_court",
    "enonce": "Écris le nom d'un fort de Liège situé sur la rive gauche de la Meuse.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cours-eau",
    "documents": [
     "forts"
@@ -1869,7 +1869,7 @@
    "type": "trous",
    "enonce": "La carte-lettre (document H).",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "carte-lettre"
@@ -2355,7 +2355,7 @@
    "type": "qcm",
    "enonce": "Livre 50,50 €, clé USB 28,99 €, CD 19,40 €, écran 148,50 €, disque dur 87,10 €. Estime le total.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "230",

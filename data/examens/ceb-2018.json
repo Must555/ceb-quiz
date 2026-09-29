@@ -1444,7 +1444,7 @@
    "type": "qcm",
    "enonce": "D'après les résultats (A, B, C, D germent ; E sans eau ne germe pas), quelle condition est indispensable à la germination ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "germ-3"
@@ -1740,7 +1740,7 @@
    "type": "qcm",
    "enonce": "Graphique des batraciens à Lasne : que représente la ligne bleue ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "batra"
@@ -1761,7 +1761,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles ont été les deux dates les plus favorables pour quitter le lieu d'hibernation ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "batra"
@@ -1786,7 +1786,7 @@
    "type": "numerique",
    "enonce": "Combien de batraciens sont sortis le soir le plus chaud (le 12 mars) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "batra"
@@ -2600,7 +2600,7 @@
    "type": "grille",
    "enonce": "Quelle(s) langue(s) officielle(s) ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-langues",
    "documents": [
     "langues"

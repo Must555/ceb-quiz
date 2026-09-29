@@ -1023,7 +1023,7 @@
    "type": "trous",
    "enonce": "Avec la table des matières du portfolio, écris un numéro de page pour chaque document recherché.",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "tdm"
@@ -1120,7 +1120,7 @@
    "type": "qcm_multi",
    "enonce": "Quels pays de l'Union européenne actuelle l'Empire romain (50-100 après J.-C.) recouvrait-il entièrement ?",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "choix": [
     "Italie",
@@ -2350,7 +2350,7 @@
    "type": "grille",
    "enonce": "Ces exemples sont-ils liés à la dilatation ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "lignes": [
     "L'alcool du thermomètre monte dans l'eau chaude.",

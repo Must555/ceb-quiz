@@ -1174,7 +1174,7 @@
    "type": "trous",
    "enonce": "Table des matières d'un miniguide sur Bruxelles : En avion, en train, en bus p. 2 · Nos dix coups de cœur p. 3 · Itinéraires conseillés p. 5 · Achats p. 6 · Budget p. 8 · Climat p. 9 · Moyens de transport p. 10 · Plan de la ville p. 11 · Où dormir ? p. 12 · Où manger ? p. 13 · Où sortir ? p. 14 · Histoire de la ville de Bruxelles p. 17 · Patrimoine culturel et personnages célèbres p. 18 · Spécialités culinaires p. 19. À quelle page commence la rubrique où tu trouveras l'information ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "texte": "En quelle année Bruxelles a-t-elle été fondée ? p. {1}  ·  Où trouver un hôtel ? p. {2}  ·  Où déguster des moules ? p. {3}",
    "reponse": [
@@ -1381,7 +1381,7 @@
    "type": "qcm",
    "enonce": "Une photo montre la piste de ski du Mont des Brumes, en province de Liège. Quel milieu naturel y voit-on ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
    "choix": [
     "Mer",
@@ -1728,7 +1728,7 @@
    "type": "qcm",
    "enonce": "Sur le plan de l'Expo 58, l'Atomium (4) se situe plutôt… du hall d'accueil (1).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
     "expo-1",
@@ -2013,7 +2013,7 @@
    "type": "association",
    "enonce": "Place chaque évènement dans le temps qui convient (deux temps resteront vides).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "gauche": [
     "L'invention de la machine à vapeur",
@@ -4063,7 +4063,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux mots qui ne se rapportent pas à tous les êtres vivants.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "choix": [
     "Respiration",

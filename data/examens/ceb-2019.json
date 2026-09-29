@@ -386,7 +386,7 @@
    "type": "texte_court",
    "enonce": "Dans un quadrillage, on noircit les cases (J,4), (M,5), (N,8), (M,11) et (J,12). Un cercle passe par ces 5 cases. Dans quelle case se trouve son centre ? (lettre, nombre)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-cercle",
    "reponse": [
     "J,8",
@@ -3159,7 +3159,7 @@
    "type": "qcm",
    "enonce": "« …elle se souvint tout à coup de la vieille couleur de vinaigre. » Quelle est la classe du mot « vieille » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
    "documents": [
     "conte-1"
@@ -3266,7 +3266,7 @@
    "type": "grille",
    "enonce": "À quelle période conventionnelle associer ces faits ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "charbon-2"
@@ -3325,7 +3325,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles provinces flamandes sont concernées par un bassin houiller (Campine) ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-provinces",
    "documents": [
     "mines-1",
@@ -3639,7 +3639,7 @@
    "type": "trous",
    "enonce": "Le livret du mineur",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "livret-1"
