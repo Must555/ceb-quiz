@@ -1,0 +1,3493 @@
+{
+ "id": "ceb-2018",
+ "annee": 2018,
+ "referentiel": "socles",
+ "titre": "CEB 2018",
+ "source": "FWB, épreuve externe commune 2018 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Le livret « Solides et figures » repose entièrement sur des tracés : il reste en mode papier.",
+ "livrets": [
+  {
+   "n": 1,
+   "matiere": "fr",
+   "titre": "Lire — texte narratif",
+   "date": "2018-06-15",
+   "points": 35
+  },
+  {
+   "n": 2,
+   "matiere": "fr",
+   "titre": "Écrire",
+   "date": "2018-06-15",
+   "points": 30
+  },
+  {
+   "n": 3,
+   "matiere": "ma",
+   "titre": "Solides et figures",
+   "date": "2018-06-15",
+   "points": 30
+  },
+  {
+   "n": 4,
+   "matiere": "ma",
+   "titre": "Grandeurs",
+   "date": "2018-06-18",
+   "points": 50
+  },
+  {
+   "n": 5,
+   "matiere": "sc",
+   "titre": "Éveil — Initiation scientifique",
+   "date": "2018-06-18",
+   "points": 60
+  },
+  {
+   "n": 6,
+   "matiere": "fr",
+   "titre": "Lire — texte informatif",
+   "date": "2018-06-19",
+   "points": 25
+  },
+  {
+   "n": 7,
+   "matiere": "hg",
+   "titre": "Éveil — Formation historique et géographique",
+   "date": "2018-06-19",
+   "points": 60
+  },
+  {
+   "n": 8,
+   "matiere": "ma",
+   "titre": "Nombres et opérations",
+   "date": "2018-06-21",
+   "points": 50
+  },
+  {
+   "n": 9,
+   "matiere": "fr",
+   "titre": "Écouter",
+   "date": "2018-06-21",
+   "points": 20,
+   "audio": null
+  }
+ ],
+ "documents": [
+  {
+   "id": "faon-1",
+   "page": 2,
+   "titre": "Une heure de vie (1)",
+   "fichier": "assets/2018/pdf02.webp",
+   "alt": "Un photographe découvre en Ardenne un faon né depuis une heure ; la mère s'est enfuie. Il se souvient du conseil du garde forestier : ne jamais toucher un jeune animal."
+  },
+  {
+   "id": "faon-2",
+   "page": 3,
+   "titre": "Une heure de vie (2)",
+   "fichier": "assets/2018/pdf03.webp",
+   "alt": "Le faon, inodore et bien camouflé, rejoint sa mère guidé par ses appels. René-Pierre Audras, journaliste."
+  },
+  {
+   "id": "germ-1",
+   "page": 4,
+   "titre": "La germination : expérience 1",
+   "fichier": "assets/2018/pdf04.webp",
+   "alt": "Pot A (témoin) : terre, eau, chaleur, lumière. Pot B : à l'extérieur, avec des chutes de température."
+  },
+  {
+   "id": "germ-2",
+   "page": 5,
+   "titre": "La germination : expériences 2 et 3",
+   "fichier": "assets/2018/pdf05.webp",
+   "alt": "Pot C : sans terre (sur du feutre). Pot D : dans l'obscurité."
+  },
+  {
+   "id": "germ-3",
+   "page": 6,
+   "titre": "La germination : expérience 4 et résultats",
+   "fichier": "assets/2018/pdf06.webp",
+   "alt": "Pot E : sans eau. Résultats : les graines germent dans A, B, C et D, pas dans E."
+  },
+  {
+   "id": "etats",
+   "page": 7,
+   "titre": "Les états de l'eau : expérience 1",
+   "fichier": "assets/2018/pdf07.webp",
+   "alt": "Photos A à E : glaçons dans un ballon, glace qui fond, eau chauffée, eau qui bout."
+  },
+  {
+   "id": "cycle",
+   "page": 8,
+   "titre": "Le cycle de l'eau",
+   "fichier": "assets/2018/pdf08.webp",
+   "alt": "Infiltration, nappe phréatique, captage, château d'eau, distribution, retour à la mer."
+  },
+  {
+   "id": "captage",
+   "page": 9,
+   "titre": "Cycle d'extraction et de distribution de l'eau",
+   "fichier": "assets/2018/pdf09.webp",
+   "alt": "Captage dans la nappe, traitement (nitrates, pesticides), désinfection, distribution, assainissement, rejet."
+  },
+  {
+   "id": "conso",
+   "page": 10,
+   "titre": "La consommation d'eau en Wallonie",
+   "fichier": "assets/2018/pdf10.webp",
+   "alt": "Chasse d'eau 33 %, hygiène corporelle 36 %, lessive 13 %, vaisselle 7 %, nettoyage 4 %, jardinage 3 %, boisson et aliments 4 % (à vérifier sur le graphique)."
+  },
+  {
+   "id": "champi",
+   "page": 11,
+   "titre": "Trier des champignons",
+   "fichier": "assets/2018/pdf11.webp",
+   "alt": "Schéma : chapeau, lamelles, anneau, pied, volve. Vesse de loup, amanite ovoïde, tricholome, oronge, pézize, pratelle, cèpe."
+  },
+  {
+   "id": "batra",
+   "page": 12,
+   "titre": "Quand les batraciens sont de sortie",
+   "fichier": "assets/2018/pdf12.webp",
+   "alt": "Migration à Lasne du 1er au 13 mars : 695 le 5 mars, 393 le 4 mars, 359 le 11 mars, 271 le 12 mars… ; températures du soir (rouge) et du matin (bleu)."
+  },
+  {
+   "id": "grenouille",
+   "page": 13,
+   "titre": "Le cycle de vie de la grenouille",
+   "fichier": "assets/2018/pdf13.webp",
+   "alt": "Œufs, têtards sans pattes, avec pattes arrière, avec pattes avant, grenouille adulte."
+  },
+  {
+   "id": "circuit",
+   "page": 14,
+   "titre": "Un circuit électrique simple",
+   "fichier": "assets/2018/pdf14.webp",
+   "alt": "Fil de cuivre, ampoule, pile, clous en acier, tige de cuivre à manche en bois, plaque en bois."
+  },
+  {
+   "id": "ciney",
+   "page": 15,
+   "titre": "La ville de Ciney",
+   "fichier": "assets/2018/pdf15.webp",
+   "alt": "Carte Ferraris de 1777 (ville entourée de remparts en pentagone) et plan de 2017."
+  },
+  {
+   "id": "guerre-1",
+   "page": 16,
+   "titre": "La guerre 1914-1918 (1)",
+   "fichier": "assets/2018/pdf16.webp",
+   "alt": "Front stabilisé et grandes batailles : Flandres, Artois, Somme, Verdun…"
+  },
+  {
+   "id": "guerre-2",
+   "page": 17,
+   "titre": "Carte du front fin 1914",
+   "fichier": "assets/2018/pdf17.webp",
+   "alt": "La Belgique presque entièrement occupée sauf une petite zone près de l'Yser ; avance extrême des Allemands près de Meaux."
+  },
+  {
+   "id": "spontin-1",
+   "page": 18,
+   "titre": "Spontin, 1914 (1)",
+   "fichier": "assets/2018/pdf18.webp",
+   "alt": "Monument aux martyrs du 23 aout 1914 ; 128 maisons sur 149 incendiées."
+  },
+  {
+   "id": "spontin-2",
+   "page": 19,
+   "titre": "Spontin, 1914 (2)",
+   "fichier": "assets/2018/pdf19.webp",
+   "alt": "Plaques : soldats tombés à l'Yser (Lottin, Résimont, Pierroux) et civils tués, dont des enfants (Gabrielle Poncin, 8 ans ; Laure Poncin, 11 ans)."
+  },
+  {
+   "id": "enfants-1",
+   "page": 20,
+   "titre": "Le travail des enfants (1)",
+   "fichier": "assets/2018/pdf20.webp",
+   "alt": "1843 : les enfants de la classe ouvrière travaillent 12 à 13 h dès 6-7 ans. 1889 : loi pour les moins de 12 ans. Photo 1 : briqueterie, Herstal, 1899."
+  },
+  {
+   "id": "enfants-2",
+   "page": 21,
+   "titre": "Le travail des enfants (2)",
+   "fichier": "assets/2018/pdf21.webp",
+   "alt": "Photo 2 : deux garçons au tri du charbon, 1904. 1914 : école obligatoire de 6 à 14 ans. Photo 3 : écoliers 2017. Photos 4-5 : Népal et Inde, 2011."
+  },
+  {
+   "id": "enfants-3",
+   "page": 22,
+   "titre": "Carte des enfants au travail",
+   "fichier": "assets/2018/pdf22.webp",
+   "alt": "Les plus fortes proportions (plus de 20 %) se trouvent en Afrique et en Asie."
+  },
+  {
+   "id": "provinces",
+   "page": 24,
+   "titre": "Carte des provinces belges",
+   "fichier": "assets/2018/pdf24.webp",
+   "alt": "Provinces et chefs-lieux."
+  },
+  {
+   "id": "langues",
+   "page": 25,
+   "titre": "Carte linguistique de Belgique",
+   "fichier": "assets/2018/pdf25.webp",
+   "alt": "Régions de langue française, néerlandaise, allemande et Bruxelles bilingue."
+  },
+  {
+   "id": "wallonie",
+   "page": 26,
+   "titre": "Carte de la Wallonie",
+   "fichier": "assets/2018/pdf26.webp",
+   "alt": "Carte en couleurs et quatre légendes possibles."
+  },
+  {
+   "id": "bruxelles",
+   "page": 27,
+   "titre": "Plan de la Région de Bruxelles-Capitale",
+   "fichier": "assets/2018/pdf27.webp",
+   "alt": "Les 19 communes."
+  },
+  {
+   "id": "abeilles-1",
+   "page": 28,
+   "titre": "Les abeilles (1)",
+   "fichier": "assets/2018/pdf28.webp",
+   "alt": "Ouvrières (butineuses, sentinelles, ventileuses, cirières, nettoyeuses, nourricières), faux bourdons, reine ; rayons et alvéoles, gelée royale."
+  },
+  {
+   "id": "abeilles-2",
+   "page": 29,
+   "titre": "Les abeilles (2)",
+   "fichier": "assets/2018/pdf29.webp",
+   "alt": "Développement de la larve, défense de la ruche, propolis ; communication par la vue, l'odorat et la danse."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ceb-2018-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Quel résumé correspond à l'histoire ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "Le faon attend que le photographe ait terminé son reportage avant de rejoindre sa mère.",
+    "Pris de pitié, l'homme prend le faon dans ses bras et le ramène près de sa mère.",
+    "Un photographe prend des photos d'un jeune faon abandonné. Plutôt que de le prendre dans ses bras, l'homme comprend qu'il doit s'éloigner. Le faon rejoint alors lentement le troupeau.",
+    "L'homme s'éloigne et le troupeau se rapproche du faon pour l'accueillir."
+   ],
+   "reponse": 2,
+   "explication": "Le photographe s'écarte et le faon rejoint seul les siens, guidé par sa mère."
+  },
+  {
+   "id": "ceb-2018-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "ordre",
+   "enonce": "Remets les actions dans l'ordre de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "elements": [
+    "Un promeneur cherche à faire de belles photos.",
+    "L'homme sursaute en entendant une plainte.",
+    "Les chevreuils prennent la fuite.",
+    "Le faon se met à marcher.",
+    "Le photographe retourne, doublement heureux."
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Promenade, plainte, fuite des chevreuils, le faon marche, retour heureux."
+  },
+  {
+   "id": "ceb-2018-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "L'auteur de cette histoire est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "un garde forestier.",
+    "un journaliste.",
+    "un responsable d'un parc animalier.",
+    "un promeneur qui découvre la forêt."
+   ],
+   "reponse": 1,
+   "explication": "« René-Pierre Audras, journaliste s'intéressant au monde animal »."
+  },
+  {
+   "id": "ceb-2018-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Il pensa que son effort était désormais inutile. » Pourquoi ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "Parce qu'il n'entendait plus de plainte.",
+    "Parce qu'il ne pourrait pas prendre de photos des animaux qui ont fui.",
+    "Parce qu'il s'était trompé de chemin.",
+    "Parce qu'il était trop fatigué."
+   ],
+   "reponse": 1,
+   "explication": "Il entend une galopade : les chevreuils s'enfuient."
+  },
+  {
+   "id": "ceb-2018-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Les chevreuils avaient entendu ou senti son approche. » C'est l'approche…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "d'un chasseur.",
+    "du photographe.",
+    "d'un chevreuil.",
+    "de la mère du faon.",
+    "du faon."
+   ],
+   "reponse": 1,
+   "explication": "« son » renvoie à l'homme qui descend vers la clairière."
+  },
+  {
+   "id": "ceb-2018-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "« L'homme se promenait… il était prêt à fixer n'importe quoi, simplement parce qu'il faisait beau, que l'on était revenu au printemps, qu'il respirait un air encore mouillé de rosée. » Quels pronoms désignent l'homme ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "faon-1"
+   ],
+   "choix": [
+    "il (était prêt)",
+    "il (faisait beau)",
+    "l'on (était revenu)",
+    "il (respirait)"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "« il faisait beau » est impersonnel ; « on » désigne les gens en général."
+  },
+  {
+   "id": "ceb-2018-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« La mère réclamait son petit, lui enjoignait de la rejoindre… » Que remplacent les pronoms ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "faon-1"
+   ],
+   "texte": "lui = {1}  ·  la = {2}",
+   "reponse": [
+    [
+     "son petit",
+     "le faon",
+     "petit",
+     "faon"
+    ],
+    [
+     "la mère",
+     "mère",
+     "sa mère"
+    ]
+   ],
+   "explication": "La mère demande à son petit de la rejoindre, elle."
+  },
+  {
+   "id": "ceb-2018-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« Et le bébé chevreuil voulut obéir. Il déplia ses jambes… Elles se révélèrent trop faibles. » Que remplacent les pronoms ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "faon-1"
+   ],
+   "texte": "Il = {1}  ·  Elles = {2}",
+   "reponse": [
+    [
+     "le bébé chevreuil",
+     "le faon",
+     "bébé chevreuil",
+     "faon"
+    ],
+    [
+     "ses pattes",
+     "les pattes",
+     "pattes",
+     "ses jambes",
+     "jambes"
+    ]
+   ],
+   "explication": "Le bébé chevreuil ; ses pattes (jambes)."
+  },
+  {
+   "id": "ceb-2018-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "La mère a abandonné son faon…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "parce que le faon ne répondait pas à ses appels.",
+    "parce que le troupeau s'était éloigné.",
+    "parce que le faon devait apprendre à se débrouiller.",
+    "parce qu'elle a perçu la présence d'un homme."
+   ],
+   "reponse": 3,
+   "explication": "« la crainte de l'homme avait été plus forte que l'amour maternel »."
+  },
+  {
+   "id": "ceb-2018-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Au simple déclic, la frayeur du faon redoubla. » Le déclic, c'est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "la gâchette d'un fusil.",
+    "le bruit provoqué par l'appareil photo.",
+    "la fermeture d'un sac.",
+    "le galop du troupeau."
+   ],
+   "reponse": 1,
+   "explication": "Il vient de braquer son objectif : c'est le bruit de la photo."
+  },
+  {
+   "id": "ceb-2018-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.vocabulaire",
+   "type": "texte_court",
+   "enonce": "« le photographe braqua son objectif sur le chétif animal » : remplace « braqua » par un verbe de même sens.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponse": [
+    "pointa",
+    "dirigea",
+    "orienta",
+    "tourna",
+    "visa"
+   ],
+   "explication": "braquer = pointer, diriger."
+  },
+  {
+   "id": "ceb-2018-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Écris un indice du texte qui montre que le faon est tout jeune.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponse": [
+    "né à peine d'une heure",
+    "son poil encore humide",
+    "poil encore humide",
+    "presque poisseux",
+    "ses pattes trop faibles",
+    "il est né depuis une heure",
+    "né depuis une heure"
+   ],
+   "explication": "« né à peine d'une heure ainsi que l'indiquait son poil encore humide, presque poisseux »."
+  },
+  {
+   "id": "ceb-2018-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Comment l'homme a-t-il envie de réagir après la photo ? Comment réagit-il en réalité ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponseModele": "Il a envie de prendre le faon dans ses bras ; en réalité il s'écarte et s'éloigne pour ne pas le toucher."
+  },
+  {
+   "id": "ceb-2018-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Ne touchez jamais un jeune animal. » Écris deux raisons citées par l'auteur.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponseModele": "Il sentirait l'odeur humaine ; il serait délaissé par les siens (mis en quarantaine), donc condamné à mort."
+  },
+  {
+   "id": "ceb-2018-l1-q15",
+   "livret": 1,
+   "numero": "15",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Le faon abandonné n'est pas sans défense. Recopie une idée du texte qui le prouve.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-2"
+   ],
+   "reponseModele": "Son pelage se fond dans les couleurs naturelles ; il est inodore ; sa mère le défendrait contre un renard ; elle reste dans le voisinage."
+  },
+  {
+   "id": "ceb-2018-l1-q16",
+   "livret": 1,
+   "numero": "16",
+   "domaine": "fr.grammaire",
+   "type": "texte_court",
+   "enonce": "« Le photographe s'éloigna un peu pour que le petit animal reprenne quelque confiance. De nouveau, l'appel se fit entendre… » Recopie les mots qui enchainent ces deux phrases.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponse": [
+    "De nouveau",
+    "de nouveau"
+   ],
+   "explication": "« De nouveau » relie la deuxième et la troisième phrase."
+  },
+  {
+   "id": "ceb-2018-l1-q17",
+   "livret": 1,
+   "numero": "17",
+   "domaine": "fr.conjugaison",
+   "type": "trous",
+   "enonce": "Complète le tableau des temps (extrait : commença, s'était immobilisé, faisait, obligeait, avança, jeta, avait compris, redoublait…).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-conjugaison-temps-simples",
+   "documents": [
+    "faon-2"
+   ],
+   "texte": "« commença » est au {1} (comme « avança »)  ·  « s'était immobilisé » est au plus-que-parfait (comme « avait {2} »)  ·  « faisait » est à l'{3}",
+   "reponse": [
+    [
+     "passé simple",
+     "passe simple"
+    ],
+    [
+     "compris"
+    ],
+    [
+     "imparfait"
+    ]
+   ],
+   "explication": "commença : passé simple ; avait compris : plus-que-parfait ; faisait : imparfait."
+  },
+  {
+   "id": "ceb-2018-l1-q18",
+   "livret": 1,
+   "numero": "18",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "« Il serait alors délaissé par les siens. » Remplace « les siens » par un groupe nominal de même sens.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "reponse": [
+    "sa mère",
+    "sa famille",
+    "les chevreuils",
+    "les autres chevreuils",
+    "son troupeau",
+    "sa harde",
+    "ses parents",
+    "le troupeau"
+   ],
+   "explication": "« les siens » = sa famille, sa mère, les autres chevreuils."
+  },
+  {
+   "id": "ceb-2018-l1-q19",
+   "livret": 1,
+   "numero": "19",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« né à peine d'une heure ainsi que l'indiquait son poil… » Quel mot de liaison peut remplacer « ainsi que » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "pendant que",
+    "alors que",
+    "comme"
+   ],
+   "reponse": 2,
+   "explication": "« comme l'indiquait son poil » garde le sens."
+  },
+  {
+   "id": "ceb-2018-l1-q20",
+   "livret": 1,
+   "numero": "20",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "Quel est un synonyme de « gracieux » ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-synonymes",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "brusque",
+    "élégant",
+    "gras",
+    "féroce",
+    "fragile"
+   ],
+   "reponse": 1,
+   "explication": "Gracieux = élégant."
+  },
+  {
+   "id": "ceb-2018-l1-q21",
+   "livret": 1,
+   "numero": "21",
+   "domaine": "fr.grammaire",
+   "type": "trous",
+   "enonce": "« Maladroitement, […] le faon jeta un coup d'œil en direction de l'homme qui faisait tout pour conserver une attitude rassurante. » Classe des mots.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-classes-mots",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "texte": "maladroitement : {1}  ·  homme : {2}  ·  rassurante : {3}",
+   "reponse": [
+    [
+     "adverbe"
+    ],
+    [
+     "nom"
+    ],
+    [
+     "adjectif"
+    ]
+   ],
+   "explication": "Adverbe en -ment ; nom (l'homme) ; adjectif qui qualifie « attitude »."
+  },
+  {
+   "id": "ceb-2018-l1-q22",
+   "livret": 1,
+   "numero": "22",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "« Il sifflota, satisfait de sa pleine liberté, du sentiment qu'il avait d'être son maître. » Quel adjectif pourrait qualifier l'homme ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "triste",
+    "serein",
+    "craintif",
+    "généreux"
+   ],
+   "reponse": 1,
+   "explication": "Il est tranquille et satisfait : serein."
+  },
+  {
+   "id": "ceb-2018-l1-q23",
+   "livret": 1,
+   "numero": "23",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "« Là-bas, comme si elle avait compris que son petit lui revenait, la mère redoublait ses appels. » Qu'est-ce que ressent la mère ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-2"
+   ],
+   "reponseModele": "Elle est inquiète et impatiente de retrouver son petit, puis soulagée et heureuse."
+  },
+  {
+   "id": "ceb-2018-l1-q24",
+   "livret": 1,
+   "numero": "24",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quels titres auraient pu convenir (deux réponses) ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-1",
+    "faon-2"
+   ],
+   "choix": [
+    "Un photographe responsable de ses actes",
+    "Un troupeau en fuite",
+    "Une femelle sans cœur",
+    "Une sage décision"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "L'homme prend la bonne décision de ne pas toucher le faon."
+  },
+  {
+   "id": "ceb-2018-l1-q25",
+   "livret": 1,
+   "numero": "25",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Entoure le croquis qui représente le paysage de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l2-q1",
+   "livret": 2,
+   "numero": "1",
+   "domaine": "fr.ecrire",
+   "type": "ouverte",
+   "enonce": "Le photographe oublie le conseil (« Ne touchez jamais un jeune animal ») et prend le faon dans ses bras. Écris la suite de l'histoire en 2 ou 3 paragraphes : ce que fait le photographe, comment réagit le faon, une fin.",
+   "points": 30,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q1",
+   "livret": 3,
+   "numero": "1",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Construis un hexagone régulier à partir du trapèze.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q2",
+   "livret": 3,
+   "numero": "2",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Construis un carré de 4 cm de côté.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q3",
+   "livret": 3,
+   "numero": "3",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Nombre de faces, arêtes et sommets du solide développé.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q4",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le développement du cube.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q5",
+   "livret": 3,
+   "numero": "5",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure le modèle réduit en respectant les proportions.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q6",
+   "livret": 3,
+   "numero": "6",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Repère les cases de la figure et colorie les figures.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q7",
+   "livret": 3,
+   "numero": "7",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les huit figures et donne deux propriétés communes.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q8",
+   "livret": 3,
+   "numero": "8",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un triangle au compas (6, 8 et 4 cm).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q9",
+   "livret": 3,
+   "numero": "9",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Repasse un triangle obtusangle scalène et un triangle rectangle.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q10",
+   "livret": 3,
+   "numero": "10",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un cercle de 4 cm de rayon passant par A.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q11",
+   "livret": 3,
+   "numero": "11",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Retrouve le tracé qui contient les trois figures.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q12",
+   "livret": 3,
+   "numero": "12",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Que verrait le personnage ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q13",
+   "livret": 3,
+   "numero": "13",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Classe les figures selon leur nombre d'axes de symétrie.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q14",
+   "livret": 3,
+   "numero": "14",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Puzzle : construis un triangle.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l3-q15",
+   "livret": 3,
+   "numero": "15",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Pièces nécessaires pour construire les solides.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q2",
+   "livret": 4,
+   "numero": "2",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "choix": [
+    "Nicolas",
+    "Laura",
+    "Ils ont colorié la même surface"
+   ],
+   "reponse": 1,
+   "explication": "3/5 = 6/10 < 7/10."
+  },
+  {
+   "id": "ceb-2018-l4-q4b",
+   "livret": 4,
+   "numero": "4b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "36 élèves : la moitié préfère la confiserie, le tiers la menuiserie, le reste la balade en forêt. Combien d'élèves ont préféré la balade ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions",
+   "reponse": 6,
+   "unite": "élèves",
+   "explication": "36 : 2 = 18 ; 36 : 3 = 12 ; 36 − 18 − 12 = 6."
+  },
+  {
+   "id": "ceb-2018-l4-q5",
+   "livret": 4,
+   "numero": "5",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Le périmètre de chaque figure mesure 18 cm. Donne la longueur des côtés.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-aires-perimetres",
+   "texte": "Triangle équilatéral : côtés de {1} cm  ·  Losange : côtés de {2} cm",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "4,5"
+    ]
+   ],
+   "explication": "18 : 3 = 6 ; 18 : 4 = 4,5."
+  },
+  {
+   "id": "ceb-2018-l4-q6",
+   "livret": 4,
+   "numero": "6",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Change l'unité pour rendre la grandeur 10 fois plus grande (63 hl, 25 dal, 8,75 l) puis 100 fois plus petite (82 dl, 0,98 l).",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "63 {1}  ·  25 {2}  ·  8,75 {3}  ·  82 {4}  ·  0,98 {5}",
+   "reponse": [
+    [
+     "kl"
+    ],
+    [
+     "hl"
+    ],
+    [
+     "dal"
+    ],
+    [
+     "ml"
+    ],
+    [
+     "cl"
+    ]
+   ],
+   "explication": "10 fois plus grand : unité juste au-dessus. 100 fois plus petit : deux unités en dessous (dl → ml, l → cl)."
+  },
+  {
+   "id": "ceb-2018-l4-q7",
+   "livret": 4,
+   "numero": "7",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Une caisse a un fond de 54 cm sur 36 cm. Quelle hauteur minimale (en cm) faut-il pour y ranger 270 cubes de 6 cm d'arête ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "reponse": 30,
+   "unite": "cm",
+   "explication": "Par couche : 9 × 6 = 54 cubes. 270 : 54 = 5 couches de 6 cm = 30 cm."
+  },
+  {
+   "id": "ceb-2018-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Le compteur d'eau affiche 0 0 0 3 9 6 7 et le « 9 » désigne les hectolitres. Place les chiffres dans l'abaque.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "texte": "kl : {1}  ·  hl : 9  ·  dal : {2}  ·  l : {3}",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "6"
+    ],
+    [
+     "7"
+    ]
+   ],
+   "explication": "Chaque chiffre vaut 10 fois moins que celui de gauche : 3 kl, 9 hl, 6 dal, 7 l."
+  },
+  {
+   "id": "ceb-2018-l4-q13",
+   "livret": 4,
+   "numero": "13",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "La plus grande longueur de la salle mesure 1 268 cm. Combien de banquettes entières de 1 m peut-on aligner ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-conversions",
+   "reponse": 12,
+   "unite": "banquettes",
+   "explication": "1 268 cm = 12,68 m : 12 banquettes entières."
+  },
+  {
+   "id": "ceb-2018-l4-q14a",
+   "livret": 4,
+   "numero": "14a",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Le mercredi 27 juin, le soleil se lève à 05:31 et se couche à 22:00. Combien de temps entre le lever et le coucher ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "texte": "{1} h {2} min",
+   "reponse": [
+    [
+     "16"
+    ],
+    [
+     "29"
+    ]
+   ],
+   "explication": "De 5 h 31 à 21 h 31 : 16 h ; + 29 min jusqu'à 22 h."
+  },
+  {
+   "id": "ceb-2018-l4-q14b",
+   "livret": 4,
+   "numero": "14b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Combien de jours du mercredi 16 mai au mercredi 27 juin inclus ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calendrier",
+   "reponse": 43,
+   "unite": "jours",
+   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43."
+  },
+  {
+   "id": "ceb-2018-l4-q15a",
+   "livret": 4,
+   "numero": "15a",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Il est 12:08. Je dois retrouver Arthur à 14h40. Combien de temps reste-t-il ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-durees",
+   "texte": "{1} h {2} min",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "32"
+    ]
+   ],
+   "explication": "De 12 h 08 à 14 h 08 : 2 h ; + 32 min."
+  },
+  {
+   "id": "ceb-2018-l4-q16",
+   "livret": 4,
+   "numero": "16",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Milkshake pour 8 personnes : 4 boules de glace, 1 l de lait, 2 cuillerées de sirop. Complète.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-proportionnalite",
+   "texte": "12 personnes : {1} boules, {2} l de lait, {3} cuillerées  ·  1,25 l de lait : {4} personnes",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "1,5"
+    ],
+    [
+     "3"
+    ],
+    [
+     "10"
+    ]
+   ],
+   "explication": "12 = 8 × 1,5 : tout × 1,5. 1,25 l = 1 l × 1,25 : 8 × 1,25 = 10 personnes."
+  },
+  {
+   "id": "ceb-2018-l4-q17",
+   "livret": 4,
+   "numero": "17",
+   "domaine": "ma.grandeurs",
+   "type": "grille",
+   "enonce": "Quel objet correspond à chaque encadrement ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "ma-ordres-grandeur",
+   "lignes": [
+    "0,8 t < … < 1,5 t",
+    "12 cm < … < 16 cm",
+    "4 g < … < 5 g",
+    "1 000 W < … < 2 000 W",
+    "200 cm < … < 220 cm"
+   ],
+   "colonnes": [
+    "Masse d'une feuille A4",
+    "Puissance d'un fer à repasser",
+    "Masse d'une voiture",
+    "Longueur d'un stylo",
+    "Hauteur d'une porte"
+   ],
+   "reponse": [
+    2,
+    3,
+    0,
+    1,
+    4
+   ],
+   "explication": "Voiture ≈ 1 t ; stylo ≈ 14 cm ; feuille ≈ 5 g ; fer ≈ 1 500 W ; porte ≈ 2,10 m."
+  },
+  {
+   "id": "ceb-2018-l4-q18",
+   "livret": 4,
+   "numero": "18",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Un aquarium cubique de 40 cm de côté est rempli sur 30 cm. Il faut 2 ml d'« Algue Stop » par litre. Combien de ml faut-il ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-volumes",
+   "reponse": 96,
+   "unite": "ml",
+   "explication": "40 × 40 × 30 = 48 000 cm³ = 48 l ; 48 × 2 = 96 ml."
+  },
+  {
+   "id": "ceb-2018-l4-q1",
+   "livret": 4,
+   "numero": "1",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Colorie et écris des fractions.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q3",
+   "livret": 4,
+   "numero": "3",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Fractions du disque.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q4a",
+   "livret": 4,
+   "numero": "4a",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Entoure la représentation de la situation.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q5b",
+   "livret": 4,
+   "numero": "5b",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Dimensions possibles d'un rectangle de 18 cm de périmètre.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q8",
+   "livret": 4,
+   "numero": "8",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Aire des cinq figures.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q9",
+   "livret": 4,
+   "numero": "9",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Colorie 75 % et 140 % de l'unité.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q10",
+   "livret": 4,
+   "numero": "10",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Pourcentage de la figure grisé.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q11",
+   "livret": 4,
+   "numero": "11",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Trajets de Marc et Justine.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l4-q15b",
+   "livret": 4,
+   "numero": "15b",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Durée restante sur l'horloge.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q1a",
+   "livret": 5,
+   "numero": "1a",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Expérience 1 : pot A dans la classe (chaleur), pot B à l'extérieur (chutes de température). Quelle condition l'expérience fait-elle varier ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "germ-1"
+   ],
+   "choix": [
+    "La présence de terre",
+    "La présence d'eau et de lumière",
+    "La présence de lumière",
+    "La présence de chaleur"
+   ],
+   "reponse": 3,
+   "explication": "Seule la température change entre A et B."
+  },
+  {
+   "id": "ceb-2018-l5-q1b",
+   "livret": 5,
+   "numero": "1b",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Les élèves veulent savoir si les graines germent uniquement au contact de la terre. Quelle expérience ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "germ-1",
+    "germ-2",
+    "germ-3"
+   ],
+   "choix": [
+    "Expérience 1",
+    "Expérience 2 (sans terre, sur du feutre)",
+    "Expérience 3",
+    "Expérience 4"
+   ],
+   "reponse": 1,
+   "explication": "Le pot C est sans terre."
+  },
+  {
+   "id": "ceb-2018-l5-q1c",
+   "livret": 5,
+   "numero": "1c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Rédige la question que les élèves se sont posée avant l'expérience 3 (pot D dans l'obscurité).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "germ-2"
+   ],
+   "reponseModele": "« Les graines ont-elles besoin de lumière pour germer ? »"
+  },
+  {
+   "id": "ceb-2018-l5-q1e",
+   "livret": 5,
+   "numero": "1e",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "D'après les résultats (A, B, C, D germent ; E sans eau ne germe pas), quelle condition est indispensable à la germination ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-plantes",
+   "documents": [
+    "germ-3"
+   ],
+   "choix": [
+    "L'eau",
+    "La terre",
+    "La lumière",
+    "Un sac noir"
+   ],
+   "reponse": 0,
+   "explication": "Seul le pot sans eau n'a pas germé."
+  },
+  {
+   "id": "ceb-2018-l5-q4b",
+   "livret": 5,
+   "numero": "4b",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Cycle de l'eau dans le milieu naturel : coche les deux affirmations correctes.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "choix": [
+    "La totalité de l'eau de pluie aboutit dans la nappe phréatique.",
+    "De l'eau s'évapore de la végétation.",
+    "Seulement une partie de l'eau de pluie aboutit dans les rivières.",
+    "L'entièreté de l'eau de pluie est absorbée par les plantes."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "L'eau se partage : évaporation, ruissèlement, infiltration, absorption."
+  },
+  {
+   "id": "ceb-2018-l5-q4c",
+   "livret": 5,
+   "numero": "4c",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Pourquoi l'utilisation des herbicides est-elle déconseillée, parfois interdite ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-cycle-eau",
+   "documents": [
+    "cycle",
+    "captage"
+   ],
+   "reponseModele": "L'herbicide s'infiltre avec l'eau de pluie jusqu'à la nappe phréatique, où l'on capte l'eau potable : il pollue l'eau que nous buvons."
+  },
+  {
+   "id": "ceb-2018-l5-q6a",
+   "livret": 5,
+   "numero": "6a",
+   "domaine": "sc.matiere",
+   "type": "ordre",
+   "enonce": "Remets les photos de l'expérience dans l'ordre (glaçons qui fondent puis eau chauffée).",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "etats"
+   ],
+   "elements": [
+    "Photo D : ballon rempli de glaçons",
+    "Photo E : glace et eau liquide",
+    "Photo A : eau liquide, sans flamme",
+    "Photo C : eau liquide chauffée",
+    "Photo B : l'eau bout"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Glace → fonte → eau liquide → chauffage → ébullition."
+  },
+  {
+   "id": "ceb-2018-l5-q6b",
+   "livret": 5,
+   "numero": "6b",
+   "domaine": "sc.matiere",
+   "type": "qcm_multi",
+   "enonce": "Sur la photo E, il y a de la glace et de l'eau liquide. Quels états ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "etats"
+   ],
+   "choix": [
+    "solide",
+    "liquide",
+    "gazeux"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Glace : solide ; eau : liquide."
+  },
+  {
+   "id": "ceb-2018-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Glace et eau liquide mélangées (photo E) : à quelle température ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "etats"
+   ],
+   "choix": [
+    "−10 °C",
+    "0 °C",
+    "10 °C",
+    "20 °C",
+    "100 °C"
+   ],
+   "reponse": 1,
+   "explication": "La glace fond à 0 °C."
+  },
+  {
+   "id": "ceb-2018-l5-q6d",
+   "livret": 5,
+   "numero": "6d",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "L'eau bout (photo B) : à quelle température ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "documents": [
+    "etats"
+   ],
+   "choix": [
+    "−10 °C",
+    "0 °C",
+    "10 °C",
+    "20 °C",
+    "100 °C"
+   ],
+   "reponse": 4,
+   "explication": "L'eau bout à 100 °C."
+  },
+  {
+   "id": "ceb-2018-l5-q7",
+   "livret": 5,
+   "numero": "7",
+   "domaine": "sc.matiere",
+   "type": "qcm",
+   "enonce": "Glace sortie du congélateur, relevés toutes les 10 min : −5,5 °C (que de la glace), −2 °C (que de la glace), puis la glace fond à 0 °C, beaucoup puis un peu de glace (température stable), enfin tout est fondu à 1,5 °C. Quel tableau convient ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-etats",
+   "choix": [
+    "−5,5 ; −2 ; 0 ; 1,5 ; 1,5 ; 5",
+    "−5,5 ; −2 ; 0 ; 0 ; 1,5 ; 1,5",
+    "−5,5 ; −2 ; 0 ; 1,5 ; 1,5 ; 1,5",
+    "−5,5 ; −2 ; 0 ; 0 ; 0 ; 1,5"
+   ],
+   "reponse": 3,
+   "explication": "Tant qu'il reste de la glace, la température reste à 0 °C (8 h 20, 8 h 30, 8 h 40)."
+  },
+  {
+   "id": "ceb-2018-l5-q8",
+   "livret": 5,
+   "numero": "8",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Clé de détermination des champignons : complète.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-classification",
+   "documents": [
+    "champi"
+   ],
+   "texte": "Pas de distinction pied/chapeau, en forme de boule : {1}  ·  en forme de coupe : {2}  ·  Lamelles, pas d'anneau : {3}  ·  Anneau, pas de volve : {4}  ·  Volve, chapeau blanc : {5}  ·  Volve, chapeau orangé : {6}",
+   "reponse": [
+    [
+     "vesse de loup",
+     "la vesse de loup"
+    ],
+    [
+     "pézize",
+     "pezize"
+    ],
+    [
+     "tricholome"
+    ],
+    [
+     "pratelle"
+    ],
+    [
+     "amanite ovoïde",
+     "amanite ovoide"
+    ],
+    [
+     "oronge"
+    ]
+   ],
+   "explication": "Vesse de loup, pézize, tricholome, pratelle, amanite ovoïde, oronge (le cèpe n'a pas de lamelles)."
+  },
+  {
+   "id": "ceb-2018-l5-q9a",
+   "livret": 5,
+   "numero": "9a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "La circulation du sang : vrai ou faux ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "lignes": [
+    "Notre appareil circulatoire est un appareil fermé.",
+    "Le rythme cardiaque ne varie pas en fonction de l'activité physique.",
+    "Le cœur est un muscle qui se contracte.",
+    "La circulation sanguine s'effectue toujours dans un seul sens.",
+    "Chez un humain vivant, le cœur s'arrête parfois pour se reposer."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "explication": "Le sang circule en circuit fermé, toujours dans le même sens ; le cœur accélère à l'effort et ne s'arrête jamais."
+  },
+  {
+   "id": "ceb-2018-l5-q9b",
+   "livret": 5,
+   "numero": "9b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "« Quand tu fais du sport, le cœur envoie plus de sang vers les muscles » parce que…",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "choix": [
+    "les muscles ont besoin de plus d'oxygène qu'au repos.",
+    "le sang doit descendre plus bas dans le corps qu'au repos.",
+    "les muscles produisent plus de déchets qu'au repos."
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Le sang apporte l'oxygène et emporte les déchets."
+  },
+  {
+   "id": "ceb-2018-l5-q10a",
+   "livret": 5,
+   "numero": "10a",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Quel type d'articulation ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "lignes": [
+    "L'épaule",
+    "Le coude",
+    "La hanche",
+    "Le genou"
+   ],
+   "colonnes": [
+    "Charnière",
+    "Sphérique"
+   ],
+   "reponse": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "explication": "Épaule et hanche tournent dans tous les sens (sphériques) ; coude et genou se plient dans un seul sens (charnières)."
+  },
+  {
+   "id": "ceb-2018-l5-q11a",
+   "livret": 5,
+   "numero": "11a",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Graphique des batraciens à Lasne : que représente la ligne bleue ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "batra"
+   ],
+   "choix": [
+    "Le nombre de batraciens",
+    "La température du soir",
+    "La température du matin"
+   ],
+   "reponse": 2,
+   "explication": "Légende : bleu = température du matin."
+  },
+  {
+   "id": "ceb-2018-l5-q11b",
+   "livret": 5,
+   "numero": "11b",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Quelles ont été les deux dates les plus favorables pour quitter le lieu d'hibernation ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "batra"
+   ],
+   "choix": [
+    "4 mars",
+    "5 mars",
+    "11 mars",
+    "12 mars"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "695 batraciens le 5 mars et 393 le 4 mars."
+  },
+  {
+   "id": "ceb-2018-l5-q11d",
+   "livret": 5,
+   "numero": "11d",
+   "domaine": "sc.vivant",
+   "type": "numerique",
+   "enonce": "Combien de batraciens sont sortis le soir le plus chaud (le 12 mars) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-donnees",
+   "documents": [
+    "batra"
+   ],
+   "reponse": 271,
+   "explication": "Le 12 mars (environ 15 °C le soir) : 271 batraciens."
+  },
+  {
+   "id": "ceb-2018-l5-q13",
+   "livret": 5,
+   "numero": "13",
+   "domaine": "sc.vivant",
+   "type": "qcm",
+   "enonce": "Un de tes cinq sens peut être perturbé par une illusion d'optique. Lequel ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "sc-corps-humain",
+   "choix": [
+    "la vue",
+    "l'ouïe",
+    "l'odorat",
+    "le toucher",
+    "le gout"
+   ],
+   "reponse": 0,
+   "explication": "Une illusion d'optique trompe la vue."
+  },
+  {
+   "id": "ceb-2018-l5-q1d",
+   "livret": 5,
+   "numero": "1d",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Choisis la situation à comparer pour prouver que l'arrosage est nécessaire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q2",
+   "livret": 5,
+   "numero": "2",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Complète le schéma du cycle de l'eau.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "documents": [
+    "cycle"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q3",
+   "livret": 5,
+   "numero": "3",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Complète le graphique en bâtonnets de la consommation d'eau.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "conso"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q4a",
+   "livret": 5,
+   "numero": "4a",
+   "domaine": "sc.matiere",
+   "type": "ouverte",
+   "enonce": "Place les légendes des flèches du cycle de l'eau.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q5",
+   "livret": 5,
+   "numero": "5",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Croissance du blé et du haricot : lis les graphiques.",
+   "points": 5,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q10b",
+   "livret": 5,
+   "numero": "10b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Biceps contracté ou non.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q10c",
+   "livret": 5,
+   "numero": "10c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Question pour dessiner le biceps.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q11c",
+   "livret": 5,
+   "numero": "11c",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Température du matin du 9 mars.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "batra"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q12",
+   "livret": 5,
+   "numero": "12",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Complète le cycle de vie de la grenouille.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "grenouille"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l5-q14",
+   "livret": 5,
+   "numero": "14",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Circuits où l'ampoule peut s'allumer.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "circuit"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l6-q2",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Arbre : « L'abeille peut remplir plusieurs missions » → oui : {1}. Non → « Elle pond » → oui : {2} ; non : {3}.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "abeilles-1",
+    "abeilles-2"
+   ],
+   "texte": "Plusieurs missions : {1}  ·  Une seule mission et elle pond : {2}  ·  Elle ne pond pas : {3}",
+   "reponse": [
+    [
+     "ouvrière",
+     "ouvriere",
+     "l'ouvrière"
+    ],
+    [
+     "reine",
+     "la reine"
+    ],
+    [
+     "mâle",
+     "male",
+     "le mâle"
+    ]
+   ],
+   "explication": "L'ouvrière change de mission ; la reine pond ; le mâle ne participe pas à la vie commune."
+  },
+  {
+   "id": "ceb-2018-l6-q3",
+   "livret": 6,
+   "numero": "3",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Les ouvrières : quelle fonction ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "abeilles-1",
+    "abeilles-2"
+   ],
+   "lignes": [
+    "ventileuse",
+    "nettoyeuse"
+   ],
+   "colonnes": [
+    "Récolter la nourriture",
+    "Renouveler l'air",
+    "Assurer la propreté",
+    "Construire les rayons"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Les ventileuses battent des ailes ; les nettoyeuses gardent la ruche propre."
+  },
+  {
+   "id": "ceb-2018-l6-q4",
+   "livret": 6,
+   "numero": "4",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Lorsqu'un ennemi est tué, de quelles deux façons les abeilles s'en débarrassent-elles ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "abeilles-2"
+   ],
+   "reponseModele": "Les nettoyeuses expédient le cadavre dehors ; sinon, elles l'embaument de propolis pour éviter qu'il n'infecte la ruche."
+  },
+  {
+   "id": "ceb-2018-l6-q5",
+   "livret": 6,
+   "numero": "5",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Dans quelle partie du texte pourrait-on placer ces phrases ? (A fonctionner, B durer, C communiquer)",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "abeilles-1",
+    "abeilles-2"
+   ],
+   "lignes": [
+    "Pas question de se tromper de ruche sur le chemin du retour.",
+    "Ce n'est pas dans la ruche que la reine est fécondée."
+   ],
+   "colonnes": [
+    "A",
+    "B",
+    "C"
+   ],
+   "reponse": [
+    2,
+    1
+   ],
+   "explication": "Retrouver la ruche : communiquer / s'orienter (C). La fécondation de la reine : durer (B)."
+  },
+  {
+   "id": "ceb-2018-l6-q6",
+   "livret": 6,
+   "numero": "6",
+   "domaine": "fr.grammaire",
+   "type": "qcm",
+   "enonce": "« …chacune d'elles a une mission bien précise à remplir sans empiéter sur celle des autres catégories. » « celle » désigne…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "abeilles-1"
+   ],
+   "choix": [
+    "les ouvrières",
+    "des autres catégories",
+    "une mission",
+    "son expérience"
+   ],
+   "reponse": 2,
+   "explication": "« celle » = la mission des autres catégories."
+  },
+  {
+   "id": "ceb-2018-l6-q7",
+   "livret": 6,
+   "numero": "7",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "« Les mâles ou faux bourdons… Ce sont de véritables rois fainéants ou rentiers… celles-ci les tuent en hiver. » Quels mots désignent les mâles ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-reprises",
+   "documents": [
+    "abeilles-1"
+   ],
+   "choix": [
+    "faux bourdons",
+    "rois fainéants",
+    "rentiers",
+    "ouvrières",
+    "celles-ci"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "« celles-ci » désigne les ouvrières."
+  },
+  {
+   "id": "ceb-2018-l6-q8",
+   "livret": 6,
+   "numero": "8",
+   "domaine": "fr.grammaire",
+   "type": "qcm_multi",
+   "enonce": "Quelles phrases ont la même structure que « Les butineuses ont le rôle le plus noble de la ruche » (sujet – verbe – CD) ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-fonctions",
+   "choix": [
+    "Les ouvrières sont des abeilles femelles atrophiées.",
+    "Les ventileuses renouvèlent l'air intérieur.",
+    "La reine se déplace en suivant des cercles concentriques.",
+    "Les nourricières nourrissent les larves et la reine."
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "« sont… » : attribut ; « se déplace en suivant… » : CC."
+  },
+  {
+   "id": "ceb-2018-l6-q9",
+   "livret": 6,
+   "numero": "9",
+   "domaine": "fr.vocabulaire",
+   "type": "qcm",
+   "enonce": "« Ceux-ci comprennent de petites loges en forme d'hexagone. » Dans quelle phrase « comprendre » a-t-il le même sens ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "abeilles-1"
+   ],
+   "choix": [
+    "Ces apiculteurs comprennent le langage des abeilles.",
+    "Ces élèves comprennent aisément les consignes.",
+    "Ces livres comprennent beaucoup d'histoires épatantes.",
+    "Ces touristes comprennent les explications."
+   ],
+   "reponse": 2,
+   "explication": "Ici, « comprendre » = contenir."
+  },
+  {
+   "id": "ceb-2018-l6-q10",
+   "livret": 6,
+   "numero": "10",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Écris avec précision ce qu'est la « gelée royale ».",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "abeilles-1"
+   ],
+   "reponseModele": "Une sorte de lait sécrété par les glandes des abeilles nourricières, donné aux larves."
+  },
+  {
+   "id": "ceb-2018-l6-q12",
+   "livret": 6,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Dans quelle partie du texte trouver l'information ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "abeilles-1",
+    "abeilles-2"
+   ],
+   "lignes": [
+    "Que fait la reine une fois fécondée ?",
+    "De quels aliments les larves sont-elles nourries ?",
+    "De quel organe des sens les abeilles se servent-elles pour retrouver leur ruche ?"
+   ],
+   "colonnes": [
+    "A",
+    "B",
+    "C"
+   ],
+   "reponse": [
+    1,
+    1,
+    2
+   ],
+   "explication": "La ponte et l'élevage des larves : B. L'orientation : C."
+  },
+  {
+   "id": "ceb-2018-l6-q13a",
+   "livret": 6,
+   "numero": "13a",
+   "domaine": "fr.lire",
+   "type": "qcm_multi",
+   "enonce": "Quels moyens les abeilles utilisent-elles pour communiquer et s'orienter ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "documents": [
+    "abeilles-2"
+   ],
+   "choix": [
+    "l'odorat",
+    "le toucher",
+    "la danse",
+    "l'ouïe",
+    "la vue"
+   ],
+   "reponse": [
+    0,
+    2,
+    4
+   ],
+   "explication": "La vue (le soleil), l'odorat et la danse."
+  },
+  {
+   "id": "ceb-2018-l6-q14",
+   "livret": 6,
+   "numero": "14",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Écris un titre plus précis que « Les abeilles ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "abeilles-1",
+    "abeilles-2"
+   ],
+   "reponseModele": "La vie bien organisée des abeilles dans la ruche."
+  },
+  {
+   "id": "ceb-2018-l6-q1",
+   "livret": 6,
+   "numero": "1",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Entoure la couverture de livre qui pourrait contenir le texte.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l6-q11",
+   "livret": 6,
+   "numero": "11",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Entoure la flèche du sens de construction d'un rayon.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q1b",
+   "livret": 7,
+   "numero": "1b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Carte du front fin 1914 : vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "guerre-2"
+   ],
+   "lignes": [
+    "Les Allemands ont envahi toute la France.",
+    "Les Allemands ont conquis Paris.",
+    "Les Allemands sont arrivés à moins de 100 km de Paris à vol d'oiseau."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    1,
+    0
+   ],
+   "explication": "Ils ont occupé le nord-est et se sont approchés de Meaux, à quelques dizaines de km de Paris, sans le prendre."
+  },
+  {
+   "id": "ceb-2018-l7-q1c",
+   "livret": 7,
+   "numero": "1c",
+   "domaine": "hg.histoire",
+   "type": "qcm_multi",
+   "enonce": "À la fin de 1914, la Belgique…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "guerre-2"
+   ],
+   "choix": [
+    "était entièrement occupée par l'armée allemande.",
+    "était presque entièrement occupée par l'armée allemande.",
+    "n'était pas occupée.",
+    "gardait une poche de résistance dans la région d'Ypres."
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "Seule une petite zone derrière l'Yser n'était pas occupée."
+  },
+  {
+   "id": "ceb-2018-l7-q1e",
+   "livret": 7,
+   "numero": "1e",
+   "domaine": "hg.histoire",
+   "type": "texte_court",
+   "enonce": "À quelle date l'armistice de la Première Guerre mondiale a-t-il été signé ? (jour mois année)",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-dates-cles",
+   "reponse": [
+    "11 novembre 1918",
+    "11/11/1918",
+    "11-11-1918",
+    "11.11.1918"
+   ],
+   "explication": "Le 11 novembre 1918."
+  },
+  {
+   "id": "ceb-2018-l7-q2a",
+   "livret": 7,
+   "numero": "2a",
+   "domaine": "hg.histoire",
+   "type": "qcm_multi",
+   "enonce": "Le document 1 (monument aux martyrs de Spontin) est la photo…",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "spontin-1"
+   ],
+   "choix": [
+    "d'une église.",
+    "d'un monument.",
+    "d'une maison.",
+    "d'une trace du passé.",
+    "d'un site archéologique."
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "Un monument, qui est une trace du passé."
+  },
+  {
+   "id": "ceb-2018-l7-q2b",
+   "livret": 7,
+   "numero": "2b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Les plaques (documents 2, 3 et 4) permettent-elles de dire que… ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "spontin-1",
+    "spontin-2"
+   ],
+   "lignes": [
+    "Plus de 40 personnes ont été tuées.",
+    "Toutes ces victimes ont été fusillées.",
+    "Le massacre a eu lieu au mois de septembre.",
+    "Des enfants ont été tués."
+   ],
+   "colonnes": [
+    "C'est vrai",
+    "C'est faux",
+    "On ne peut pas le dire"
+   ],
+   "reponse": [
+    0,
+    2,
+    1,
+    0
+   ],
+   "explication": "Plus de 40 noms ; la façon dont ils sont morts n'est pas indiquée ; « Martyrs du 23 aout 1914 » ; Gabrielle Poncin avait 8 ans."
+  },
+  {
+   "id": "ceb-2018-l7-q2c",
+   "livret": 7,
+   "numero": "2c",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Ernest Lottin, Antoine Résimont et Joseph Pierroux ne sont pas morts en même temps que les autres. Pourquoi ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "spontin-2"
+   ],
+   "reponseModele": "C'étaient des soldats morts au front (à l'Yser en 1914 et 1915, à Rennes en 1916), pas des civils tués à Spontin le 23 aout 1914."
+  },
+  {
+   "id": "ceb-2018-l7-q4a",
+   "livret": 7,
+   "numero": "4a",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Le travail des enfants en Belgique : fait certain ou pas ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "enfants-1",
+    "enfants-2"
+   ],
+   "lignes": [
+    "en 1843, tous les enfants travaillent.",
+    "en 1850, on peut faire travailler les enfants de 7 ans dans des usines.",
+    "c'est en 1914 que l'école devient obligatoire.",
+    "en 1904, des filles travaillent au tri du charbon."
+   ],
+   "colonnes": [
+    "Fait certain",
+    "Fait qui n'est pas certain"
+   ],
+   "reponse": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "explication": "En 1843, ce sont les enfants de la classe ouvrière. La première loi date de 1889. L'école obligatoire : 1914. La photo de 1904 montre des garçons."
+  },
+  {
+   "id": "ceb-2018-l7-q4b",
+   "livret": 7,
+   "numero": "4b",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "En 1914, pourquoi certains parents continuent-ils à envoyer leurs enfants travailler ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "enfants-1"
+   ],
+   "reponseModele": "Parce que l'argent gagné par les enfants aide la famille pauvre à vivre."
+  },
+  {
+   "id": "ceb-2018-l7-q4d",
+   "livret": 7,
+   "numero": "4d",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Sur quels continents se trouvent les pays qui comptent plus de 20 % d'enfants au travail ?",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "hg-continents",
+   "documents": [
+    "enfants-3"
+   ],
+   "choix": [
+    "Afrique",
+    "Asie",
+    "Europe",
+    "Océanie",
+    "Amérique du Nord"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Afrique (nombreux pays) et Asie (Népal…)."
+  },
+  {
+   "id": "ceb-2018-l7-q5",
+   "livret": 7,
+   "numero": "5",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Quelle période conventionnelle illustre chaque document ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-periodes",
+   "lignes": [
+    "Dolmens de Wéris",
+    "Colisée de Rome",
+    "Chevaliers de la tapisserie de Bayeux",
+    "Grandes découvertes",
+    "Révolution industrielle"
+   ],
+   "colonnes": [
+    "Préhistoire",
+    "Antiquité",
+    "Moyen Âge",
+    "Temps modernes",
+    "Époque contemporaine"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Dans l'ordre chronologique."
+  },
+  {
+   "id": "ceb-2018-l7-q7a",
+   "livret": 7,
+   "numero": "7a",
+   "domaine": "hg.histoire",
+   "type": "texte_court",
+   "enonce": "Sur la carte de Ciney de 1777, quelles constructions forment les côtés du pentagone rose ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-sources",
+   "documents": [
+    "ciney"
+   ],
+   "reponse": [
+    "les remparts",
+    "remparts",
+    "des remparts",
+    "les murailles",
+    "murailles",
+    "les fortifications",
+    "fortifications"
+   ],
+   "explication": "Les remparts (le plan actuel garde des noms de rues « Rempart… »)."
+  },
+  {
+   "id": "ceb-2018-l7-q7d",
+   "livret": 7,
+   "numero": "7d",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "En quel siècle se situe l'année 1777 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-siecles",
+   "choix": [
+    "17e siècle",
+    "18e siècle",
+    "19e siècle"
+   ],
+   "reponse": 1,
+   "explication": "1701 à 1800 : 18e siècle."
+  },
+  {
+   "id": "ceb-2018-l7-q8c",
+   "livret": 7,
+   "numero": "8c",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Le paysage à l'avant-plan de la photographie (champs, prairies, bois) est…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "choix": [
+    "un paysage rural.",
+    "un paysage industriel.",
+    "un paysage urbain."
+   ],
+   "reponse": 0,
+   "explication": "Champs et prairies : paysage rural."
+  },
+  {
+   "id": "ceb-2018-l7-q9a",
+   "livret": 7,
+   "numero": "9a",
+   "domaine": "hg.geographie",
+   "type": "trous",
+   "enonce": "Plan de la Région de Bruxelles-Capitale : complète par au nord, au sud, à l'est ou à l'ouest.",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-orientation",
+   "documents": [
+    "bruxelles"
+   ],
+   "texte": "Anderlecht est {1} de Woluwe-Saint-Pierre  ·  Uccle est {2} de la Ville de Bruxelles  ·  Woluwe-Saint-Lambert est {3} de Watermael-Boitsfort  ·  La Ville de Bruxelles est {4} d'Uccle",
+   "reponse": [
+    [
+     "à l'ouest",
+     "a l'ouest",
+     "ouest"
+    ],
+    [
+     "au sud",
+     "sud"
+    ],
+    [
+     "au nord",
+     "nord"
+    ],
+    [
+     "au nord",
+     "nord"
+    ]
+   ],
+   "explication": "Anderlecht est à l'ouest, Uccle au sud, Woluwe-Saint-Lambert au nord de Boitsfort."
+  },
+  {
+   "id": "ceb-2018-l7-q10",
+   "livret": 7,
+   "numero": "10",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Quelle(s) langue(s) officielle(s) ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "hg-langues",
+   "documents": [
+    "langues"
+   ],
+   "lignes": [
+    "dans la ville de Liège",
+    "dans la ville d'Anvers",
+    "dans la province de Liège",
+    "dans la Région de Bruxelles-Capitale"
+   ],
+   "colonnes": [
+    "français",
+    "néerlandais",
+    "allemand",
+    "français et allemand",
+    "français et néerlandais"
+   ],
+   "reponse": [
+    0,
+    1,
+    3,
+    4
+   ],
+   "explication": "La province de Liège comprend la Communauté germanophone ; Bruxelles est bilingue."
+  },
+  {
+   "id": "ceb-2018-l7-q11a",
+   "livret": 7,
+   "numero": "11a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Carte de la Wallonie : quelle légende convient ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "wallonie"
+   ],
+   "choix": [
+    "Légende 1 (bassins des cours d'eau)",
+    "Légende 2 (agricole, boisé, urbanisé)",
+    "Légende 3 (arrondissements)",
+    "Légende 4 (types de paysages)"
+   ],
+   "reponse": 1,
+   "explication": "Les couleurs montrent l'occupation du sol : le sud boisé (Ardenne), le sillon Sambre-et-Meuse urbanisé."
+  },
+  {
+   "id": "ceb-2018-l7-q11b",
+   "livret": 7,
+   "numero": "11b",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Quel titre convient à cette carte ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-cartes",
+   "documents": [
+    "wallonie"
+   ],
+   "choix": [
+    "Principales villes de Wallonie",
+    "Principaux cours d'eau en Wallonie",
+    "Occupation du territoire en Wallonie (agriculture et urbanisation)",
+    "Répartition des paysages en Wallonie"
+   ],
+   "reponse": 2,
+   "explication": "La légende 2 décrit l'occupation du territoire."
+  },
+  {
+   "id": "ceb-2018-l7-q12a",
+   "livret": 7,
+   "numero": "12a",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Pourquoi les branches de ces arbres ont-elles poussé en oblique ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "hg-climats",
+   "choix": [
+    "Elles se sont tournées vers le soleil.",
+    "Ces arbres ne sont pas protégés des vents dominants.",
+    "Les feuilles sont plus lourdes d'un côté.",
+    "Les humains ont arrosé d'un seul côté.",
+    "Le vent souffle fort et très souvent dans la même direction."
+   ],
+   "reponse": [
+    1,
+    4
+   ],
+   "explication": "Le vent dominant, fort et toujours dans le même sens, couche les arbres."
+  },
+  {
+   "id": "ceb-2018-l7-q12b",
+   "livret": 7,
+   "numero": "12b",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Pour les cultures, la haie est-elle un atout ou une contrainte ?",
+   "points": 5,
+   "corrigeVerifie": false,
+   "fiche": "hg-paysages",
+   "lignes": [
+    "En cas de pluies abondantes, elle ralentit le ruissèlement et les coulées de boue.",
+    "Elle occupe un espace du champ cultivable.",
+    "Une haie de feuillus enrichit naturellement le sol.",
+    "Elle joue un rôle de brise-vent.",
+    "Elle fait de l'ombre aux cultures proches."
+   ],
+   "colonnes": [
+    "Un atout",
+    "Une contrainte"
+   ],
+   "reponse": [
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "explication": "Elle protège le sol et les cultures, mais prend de la place et fait de l'ombre."
+  },
+  {
+   "id": "ceb-2018-l7-q1a",
+   "livret": 7,
+   "numero": "1a",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Colorie la durée des batailles sur la ligne du temps.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "guerre-1"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q1d",
+   "livret": 7,
+   "numero": "1d",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Repasse le contour de la Belgique de 1914.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q3",
+   "livret": 7,
+   "numero": "3",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Graphique : seul pays avec plus de victimes civiles que militaires.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q4c",
+   "livret": 7,
+   "numero": "4c",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Classe les photos 1 à 5 par siècle et par lieu.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "enfants-1",
+    "enfants-2"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q4e",
+   "livret": 7,
+   "numero": "4e",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Deux pays européens où le travail des enfants n'a pas disparu.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "enfants-3"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q6",
+   "livret": 7,
+   "numero": "6",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Complète la grille horaire de la semaine.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q7bc",
+   "livret": 7,
+   "numero": "7bc",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Colorie les rues et la place de Ciney.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "documents": [
+    "ciney"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q8ab",
+   "livret": 7,
+   "numero": "8ab",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Paysage : limite très bâti / peu bâti et composantes.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q9b",
+   "livret": 7,
+   "numero": "9b",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Nomme la commune coloriée en noir.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "documents": [
+    "bruxelles"
+   ],
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q13",
+   "livret": 7,
+   "numero": "13",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Cours d'eau : sens de l'écoulement et légende.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l8-q1a",
+   "livret": 8,
+   "numero": "1a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 84 : 7",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 12,
+   "tolerance": 0.0001,
+   "explication": "84 : 7 = 12."
+  },
+  {
+   "id": "ceb-2018-l8-q1b",
+   "livret": 8,
+   "numero": "1b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : … + 24,5 = 43,7",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 19.2,
+   "tolerance": 0.0001,
+   "explication": "43,7 − 24,5 = 19,2."
+  },
+  {
+   "id": "ceb-2018-l8-q1c",
+   "livret": 8,
+   "numero": "1c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 26,98 + 8,52",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 35.5,
+   "tolerance": 0.0001,
+   "explication": "26,98 + 8,52 = 35.5."
+  },
+  {
+   "id": "ceb-2018-l8-q1d",
+   "livret": 8,
+   "numero": "1d",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 100 000 − 2",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 99998,
+   "tolerance": 0.0001,
+   "explication": "100 000 − 2 = 99998."
+  },
+  {
+   "id": "ceb-2018-l8-q1e",
+   "livret": 8,
+   "numero": "1e",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 18 × 3,2 × 0",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 0,
+   "tolerance": 0.0001,
+   "explication": "Tout nombre multiplié par 0 donne 0."
+  },
+  {
+   "id": "ceb-2018-l8-q1f",
+   "livret": 8,
+   "numero": "1f",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 60 % de 186 000",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 111600,
+   "tolerance": 0.0001,
+   "explication": "10 % = 18 600 ; × 6 = 111 600."
+  },
+  {
+   "id": "ceb-2018-l8-q1g",
+   "livret": 8,
+   "numero": "1g",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : … × 700 = 42",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 0.06,
+   "tolerance": 0.0001,
+   "explication": "42 : 700 = 0,06."
+  },
+  {
+   "id": "ceb-2018-l8-q1h",
+   "livret": 8,
+   "numero": "1h",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 8 031 − 295",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 7736,
+   "tolerance": 0.0001,
+   "explication": "8 031 − 295 = 7736."
+  },
+  {
+   "id": "ceb-2018-l8-q1i",
+   "livret": 8,
+   "numero": "1i",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 648 × 0,125",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 81,
+   "tolerance": 0.0001,
+   "explication": "0,125 = 1/8 ; 648 : 8 = 81."
+  },
+  {
+   "id": "ceb-2018-l8-q1j",
+   "livret": 8,
+   "numero": "1j",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Calcule : 2 240 + 330 + 1 760 + … = 7 000",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "reponse": 2670,
+   "tolerance": 0.0001,
+   "explication": "2 240 + 1 760 = 4 000 ; + 330 = 4 330 ; 7 000 − 4 330 = 2 670."
+  },
+  {
+   "id": "ceb-2018-l8-q2a",
+   "livret": 8,
+   "numero": "2a",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quel nombre est le plus proche de 17 × 10,09 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "200",
+    "150",
+    "170",
+    "100",
+    "1 700"
+   ],
+   "reponse": 2,
+   "explication": "17 × 10 = 170."
+  },
+  {
+   "id": "ceb-2018-l8-q2b",
+   "livret": 8,
+   "numero": "2b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quel nombre est le plus proche de 41 × 0,8 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "320",
+    "32",
+    "410",
+    "57",
+    "45"
+   ],
+   "reponse": 1,
+   "explication": "40 × 0,8 = 32."
+  },
+  {
+   "id": "ceb-2018-l8-q2c",
+   "livret": 8,
+   "numero": "2c",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Quel nombre est le plus proche de 250 × 108 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-estimation",
+   "choix": [
+    "25 000",
+    "2 800",
+    "10 800",
+    "43 200",
+    "47 000"
+   ],
+   "reponse": 0,
+   "explication": "250 × 100 = 25 000."
+  },
+  {
+   "id": "ceb-2018-l8-q3a",
+   "livret": 8,
+   "numero": "3a",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 6 854 + 2 377 + 106",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 9337,
+   "tolerance": 0.0001,
+   "explication": "6 854 + 2 377 + 106 = 9337."
+  },
+  {
+   "id": "ceb-2018-l8-q3b",
+   "livret": 8,
+   "numero": "3b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 252 × 3,4",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 856.8,
+   "tolerance": 0.0001,
+   "explication": "252 × 3,4 = 856,8."
+  },
+  {
+   "id": "ceb-2018-l8-q3c",
+   "livret": 8,
+   "numero": "3c",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Effectue : 2 143,7 − 236,5",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "reponse": 1907.2,
+   "tolerance": 0.0001,
+   "explication": "2 143,7 − 236,5 = 1907,2."
+  },
+  {
+   "id": "ceb-2018-l8-q4a",
+   "livret": 8,
+   "numero": "4a",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "329,02 × 34 = 11 186,68 (produits partiels : 1 316,08 et 9 870,6). Complète sans calculer.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "329,02 × 30 = {1}  ·  329,02 × 4 = {2}  ·  11 186,68 : 34 = {3}",
+   "reponse": [
+    [
+     "9870,6",
+     "9 870,6",
+     "9870,60"
+    ],
+    [
+     "1316,08",
+     "1 316,08"
+    ],
+    [
+     "329,02"
+    ]
+   ],
+   "explication": "Les deux produits partiels et la réciproque."
+  },
+  {
+   "id": "ceb-2018-l8-q4b",
+   "livret": 8,
+   "numero": "4b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Sachant que 329,02 × 34 = 11 186,68, combien vaut 329,02 × 35 ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "choix": [
+    "11 186,68 + 35",
+    "11 186,68 + 1",
+    "11 186,68 + 34",
+    "11 186,68 + 329,02"
+   ],
+   "reponse": 3,
+   "explication": "35 fois, c'est 34 fois + 1 fois 329,02."
+  },
+  {
+   "id": "ceb-2018-l8-q5",
+   "livret": 8,
+   "numero": "5",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "4 menus identiques + 2 bouteilles de jus à 12 € + 3 thés à 2 € = 102 €. Quelle opération donne le prix d'un menu ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "choix": [
+    "(102 : 4) − 24 − 6",
+    "(102 − 24 − 6) × 4",
+    "(102 : 4) − 24 + 6",
+    "(102 − 24 − 6) : 4"
+   ],
+   "reponse": 3,
+   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 30) : 4 = 18 €."
+  },
+  {
+   "id": "ceb-2018-l8-q6",
+   "livret": 8,
+   "numero": "6",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "24 × 38 = (24 × 40) − (24 × {1})  ·  192 : 12 = (120 : 12) + ({2} : 12)",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "72"
+    ]
+   ],
+   "explication": "38 = 40 − 2 ; 192 = 120 + 72."
+  },
+  {
+   "id": "ceb-2018-l8-q7",
+   "livret": 8,
+   "numero": "7",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-numeration",
+   "texte": "Ajoute 2 centièmes à 4 573,169 → {1}  ·  Ajoute 3 unités de mille à 125 678,058 → {2}",
+   "reponse": [
+    [
+     "4573,189",
+     "4 573,189"
+    ],
+    [
+     "128678,058",
+     "128 678,058"
+    ]
+   ],
+   "explication": "Le chiffre des centièmes passe de 6 à 8 ; celui des unités de mille de 5 à 8."
+  },
+  {
+   "id": "ceb-2018-l8-q8",
+   "livret": 8,
+   "numero": "8",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "9 627 : 21 = 458, reste 9. Quel calcul permet de vérifier ?",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-division",
+   "choix": [
+    "458 × 21",
+    "(458 × 21) − 9",
+    "(458 × 21) + 9",
+    "(458 × 21) × 9"
+   ],
+   "reponse": 2,
+   "explication": "Dividende = quotient × diviseur + reste."
+  },
+  {
+   "id": "ceb-2018-l8-q9",
+   "livret": 8,
+   "numero": "9",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Pyramide de produits : chaque case est le produit des deux cases en dessous. En bas : 5, ?, 4. Au milieu : ?, 24.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-calcul-mental",
+   "texte": "Case du bas au milieu : {1}  ·  Case du milieu à gauche : {2}  ·  Sommet : {3}",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "30"
+    ],
+    [
+     "720"
+    ]
+   ],
+   "explication": "24 = 6 × 4 ; 5 × 6 = 30 ; 30 × 24 = 720."
+  },
+  {
+   "id": "ceb-2018-l8-q11",
+   "livret": 8,
+   "numero": "11",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les droites graduées.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "fiche": "ma-droite-graduee",
+   "texte": "30 ; 45 ; {1} ; 75 ; 90  ·  125 ; 250 ; 375 ; {2} ; 625  ·  5,6 ; 5,8 ; {3} ; 6,2 ; 6,4",
+   "reponse": [
+    [
+     "60"
+    ],
+    [
+     "500"
+    ],
+    [
+     "6",
+     "6,0"
+    ]
+   ],
+   "explication": "Pas de 15, de 125 et de 0,2."
+  },
+  {
+   "id": "ceb-2018-l8-q12",
+   "livret": 8,
+   "numero": "12",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Place une virgule dans 67003 pour lire « soixante-sept unités et trois millièmes ».",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "reponse": [
+    "67,003"
+   ],
+   "explication": "67 unités, 003 millièmes."
+  },
+  {
+   "id": "ceb-2018-l8-q13",
+   "livret": 8,
+   "numero": "13",
+   "domaine": "ma.arithmetique",
+   "type": "texte_court",
+   "enonce": "Écris « septante centièmes » en chiffres.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-decimaux",
+   "reponse": [
+    "0,70",
+    "0,7"
+   ],
+   "explication": "70 centièmes = 0,70."
+  },
+  {
+   "id": "ceb-2018-l8-q16",
+   "livret": 8,
+   "numero": "16",
+   "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Écris le signe manquant.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "fiche": "ma-operations",
+   "texte": "Si 218,051 = 973,204 − 755,153 alors 755,153 {1} 218,051 = 973,204  ·  Si 62,3 × 7,1 = 442,33 alors 442,33 {2} 7,1 = 62,3",
+   "reponse": [
+    [
+     "+"
+    ],
+    [
+     ":",
+     "÷",
+     "/"
+    ]
+   ],
+   "explication": "Opérations réciproques."
+  },
+  {
+   "id": "ceb-2018-l8-q17b",
+   "livret": 8,
+   "numero": "17b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "Nombres triangulaires : 1 + 3 = 4 ; 3 + 6 = 9 ; 6 + 10 = 16 ; 10 + 15 = 25 ; 15 + 21 = 36. Tous les résultats sont…",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-suites",
+   "choix": [
+    "des nombres pairs.",
+    "des nombres impairs.",
+    "des nombres premiers.",
+    "des nombres carrés."
+   ],
+   "reponse": 3,
+   "explication": "4 = 2², 9 = 3², 16 = 4²…"
+  },
+  {
+   "id": "ceb-2018-l8-q18a",
+   "livret": 8,
+   "numero": "18a",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe dans l'ordre croissant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "7,23",
+    "7,199",
+    "7,2",
+    "7,02"
+   ],
+   "reponse": [
+    3,
+    1,
+    2,
+    0
+   ],
+   "explication": "7,02 < 7,199 < 7,2 < 7,23."
+  },
+  {
+   "id": "ceb-2018-l8-q18b",
+   "livret": 8,
+   "numero": "18b",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe dans l'ordre croissant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "2/10",
+    "2/5",
+    "3/4",
+    "1/2"
+   ],
+   "reponse": [
+    0,
+    1,
+    3,
+    2
+   ],
+   "explication": "0,2 < 0,4 < 0,5 < 0,75."
+  },
+  {
+   "id": "ceb-2018-l8-q18c",
+   "livret": 8,
+   "numero": "18c",
+   "domaine": "ma.arithmetique",
+   "type": "ordre",
+   "enonce": "Classe dans l'ordre croissant.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "fiche": "ma-fractions-comparer",
+   "elements": [
+    "0,74",
+    "1/4",
+    "0,480",
+    "3/4"
+   ],
+   "reponse": [
+    1,
+    2,
+    0,
+    3
+   ],
+   "explication": "0,25 < 0,48 < 0,74 < 0,75."
+  },
+  {
+   "id": "ceb-2018-l8-q19",
+   "livret": 8,
+   "numero": "19",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Quelle opération correspond à chaque situation ?",
+   "points": 4,
+   "corrigeVerifie": false,
+   "fiche": "ma-problemes",
+   "lignes": [
+    "Je partage 3 paquets de 15 biscuits entre 5 enfants.",
+    "Mon voisin a 15 clapiers de 3 lapins. 5 lapins se sont enfuis.",
+    "Alice partage 5 paquets de 15 images avec ses 2 amies (3 personnes).",
+    "On achète 15 crayons à 1 € et 3 gommes à 5 €."
+   ],
+   "colonnes": [
+    "A (15 × 3) × 5",
+    "B (3 × 15) : 5",
+    "C (15 − 5) × 3",
+    "D (15 × 3) − 5",
+    "E 15 + (3 × 5)",
+    "F (5 × 15) : 3"
+   ],
+   "reponse": [
+    1,
+    3,
+    5,
+    4
+   ],
+   "explication": "B = 9 biscuits ; D = 40 lapins ; F = 25 images ; E = 30 €."
+  },
+  {
+   "id": "ceb-2018-l8-q10",
+   "livret": 8,
+   "numero": "10",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Nombre total d'étoiles.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l8-q14",
+   "livret": 8,
+   "numero": "14",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Colorie des paires de produits 12, 24 et 36.",
+   "points": 3,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l8-q15",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Décompose 0,54 en parts égales.",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l8-q17a",
+   "livret": 8,
+   "numero": "17a",
+   "domaine": "ma.arithmetique",
+   "type": "ouverte",
+   "enonce": "Représente le sixième nombre triangulaire.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false
+  }
+ ]
+}
