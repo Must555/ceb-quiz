@@ -42,7 +42,7 @@ async function demarrer() {
     document.body.innerHTML = `<p style="padding:24px">Impossible de charger les questions. Vérifie ta connexion et recharge la page.</p>`;
     throw e;
   }
-  choix.examen = donnees.examens.find((e) => e.statut !== 'a_encoder')?.id ?? null;
+  choix.examen = donnees.examens.findLast((e) => e.statut !== 'a_encoder')?.id ?? null;
   joueur = store.joueurActif();
   joueur ? afficherAccueil() : afficherConnexion();
 }

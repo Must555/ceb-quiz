@@ -7,7 +7,8 @@ import { estJouable } from '../js/engine/session.js';
 
 const lire = async (c) => JSON.parse(await readFile(new URL('../' + c, import.meta.url), 'utf8'));
 const index = await lire('data/examens/index.json');
-const fiches = Object.fromEntries((await lire('data/fiches.json')).fiches.map((f) => [f.id, f]));
+const fichiersFiches = (await lire('data/catalogue.json')).sources.fiches;
+const fiches = Object.fromEntries((await Promise.all(fichiersFiches.map((f) => lire('data/' + f)))).flatMap((x) => x.fiches).map((f) => [f.id, f]));
 const dispo = index.examens.filter((e) => e.statut !== 'a_encoder');
 const TYPES = ['qcm', 'qcm_multi', 'vrai_faux', 'grille', 'numerique', 'texte_court', 'trous', 'ordre', 'association', 'ouverte'];
 
