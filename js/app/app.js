@@ -24,7 +24,19 @@ const OUPS = ['Pas tout à fait…', 'Presque !', 'Oups !', 'Pas grave, on appre
 
 let donnees = null;
 let joueur = null;
-const choix = { mode: 'entrainement', matiere: '', examen: null, examenChrono: false, livret: null, cible: null };
+const choix = { mode: 'entrainement', matiere: '', source: 'melange', examen: null, examenChrono: false, livret: null, cible: null };
+// D'où viennent les questions de l'entraînement : vrais CEB, questions nouvelles (générées) ou un mélange à parts égales.
+const SOURCES = [['melange', '⚖️ Les deux'], ['ceb', '📜 Vrais CEB'], ['nouvelles', '✨ Nouvelles questions']];
+function poidsSource(source, matiere) {
+  if (source === 'ceb') return (c) => (c.source === 'examen' ? 1 : 0);
+  if (source === 'nouvelles') return (c) => (c.source === 'examen' ? 0 : 1);
+  // Mélange : autant de chances de tomber sur une vraie question du CEB que sur une nouvelle.
+  const dans = (c) => !matiere || (c.matiere ?? c.domaine?.split('.')[0]) === matiere;
+  const officielles = donnees.banque.filter((q) => q.source === 'examen' && dans(q)).length;
+  const autres = donnees.banque.filter((q) => q.source !== 'examen' && dans(q)).length + 3 * donnees.modeles.filter(dans).length;
+  const f = officielles ? autres / officielles : 1;
+  return (c) => (c.source === 'examen' ? f : 1);
+}
 const cacheExamens = {};
 async function examenCharge(id) { return (cacheExamens[id] ??= donnees.chargerExamen(id)); }
 // Questions jouables à l'écran d'un examen, éventuellement pour un seul livret.
@@ -43,7 +55,9 @@ async function demarrer() {
     document.body.innerHTML = `<p style="padding:24px">Impossible de charger les questions. Vérifie ta connexion et recharge la page.</p>`;
     throw e;
   }
-  choix.examen = donnees.examens.findLast((e) => e.statut !== 'a_encoder')?.id ?? null;
+  // Examen blanc proposé par défaut : le plus récent du tronc commun (le CEB 2027 porte sur ces référentiels).
+  const dispo = donnees.examens.filter((e) => e.statut !== 'a_encoder');
+  choix.examen = (dispo.findLast((e) => e.referentiel === 'tronc_commun') ?? dispo.at(-1))?.id ?? null;
   joueur = store.joueurActif();
   joueur ? afficherAccueil() : afficherConnexion();
 }
@@ -251,6 +265,7 @@ function afficherAccueil() {
           <div class="matieres">${MATIERES.map((m) => `
             <button class="matiere" data-mat="${m.id}"><span class="e">${m.e}</span><b>${m.nom}</b><small>${m.sous}</small><div class="mini"><i style="width:${pctMat(m.id)}%"></i></div></button>`).join('')}
           </div>
+          <div class="sources" role="radiogroup" aria-labelledby="titre-sources"><span class="sources-titre" id="titre-sources">Questions :</span>${SOURCES.map(([id, nom]) => `<button class="puce src" role="radio" data-src="${id}">${nom}</button>`).join('')}</div>
         </section>
 
         <section class="carte" id="bloc-examen" hidden>
@@ -301,6 +316,8 @@ function afficherAccueil() {
   const majChoix = () => {
     $$('.mode', el).forEach((b) => b.classList.toggle('sel', b.dataset.mode === choix.mode));
     $$('.matiere', el).forEach((b) => b.classList.toggle('sel', b.dataset.mat === choix.matiere));
+    $$('.puce.src', el).forEach((b) => { const ok = b.dataset.src === choix.source; b.classList.toggle('sel', ok); b.setAttribute('aria-checked', String(ok)); });
+    $('.sources', el).hidden = choix.mode !== 'entrainement';
     $$('.puce.ex', el).forEach((b) => b.classList.toggle('sel', b.dataset.ex === choix.examen));
     $$('.puce.chr', el).forEach((b) => b.classList.toggle('sel', (b.dataset.chr === '1') === choix.examenChrono));
     $('#bloc-examen', el).hidden = choix.mode !== 'examen';
@@ -309,6 +326,7 @@ function afficherAccueil() {
   };
   $$('.mode', el).forEach((b) => b.onclick = () => { choix.mode = b.dataset.mode; majChoix(); });
   $$('.matiere', el).forEach((b) => b.onclick = () => { choix.matiere = b.dataset.mat; majChoix(); });
+  $$('.puce.src', el).forEach((b) => b.onclick = () => { choix.source = b.dataset.src; majChoix(); });
   $$('.puce.ex', el).forEach((b) => b.onclick = () => { choix.examen = b.dataset.ex; choix.livret = null; majChoix(); majLivrets(); });
   async function majLivrets() {
     const zone = $('#choix-livret', el);
@@ -367,7 +385,8 @@ async function lancerPartie() {
   const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique };
   let session;
   if (modeJeu === 'entrainement') {
-    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null, poids: poidsCoach(joueur) });
+    const coach = poidsCoach(joueur), src = poidsSource(choix.source, choix.matiere);
+    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null, poids: (c) => coach(c) * src(c) });
   } else if (modeJeu === 'cible') {
     session = new QuizSession(base, { nbQuestions: 10, maxParModele: 5, poids: poidsCoach(joueur, { mode: 'cible', notion: choix.cible }) });
   } else if (modeJeu === 'chrono') {

@@ -167,6 +167,8 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .matiere small { color:var(--mute); font-size:12px; display:block; }
 .mini { height:6px; background:rgba(127,127,127,.25); border-radius:999px; margin-top:10px; overflow:hidden; }
 .mini i { display:block; height:100%; background:var(--prog); }
+.sources { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:14px; }
+.sources-titre { font-weight:700; font-family:var(--titre); margin-right:2px; }
 .options-examen { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
 .puce { border-radius:999px; padding:8px 14px; border:var(--bord-fort); background:var(--panel2); font-weight:700; }
 .puce.sel { border-color:var(--accent); background:var(--mat-sel); }
