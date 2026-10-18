@@ -456,6 +456,7 @@ function questionSuivante() {
   $('#q-zone').innerHTML = `
     <p class="origine">${esc(origine)}</p>
     <h2>${esc(q.enonce)}</h2>
+    ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${docs.map((d, i) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
       <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
     <div id="q-saisie">${rendreSaisie(q)}</div>`;

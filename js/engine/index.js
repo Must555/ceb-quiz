@@ -2,6 +2,6 @@
 export { chargerDonnees } from './loader.js';
 export { QuizSession, bonneReponseLisible, estJouable } from './session.js';
 export { genererVariante, remplir } from './generator.js';
-export { corriger } from './checker.js';
+export { corriger, formesRectifiees } from './checker.js';
 export { formatNombre, parseNombre, normaliserTexte } from './format.js';
 export { createRng } from './random.js';

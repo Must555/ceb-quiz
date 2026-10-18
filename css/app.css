@@ -519,3 +519,7 @@ a.btn { text-decoration:none; }
   [data-theme="lecture"] .rep { font-size:18px; }
   .hero h2 { font-size:28px; }
 }
+
+/* Figure d'une question générée (SVG : graphique, développement, frise…), toujours sur fond blanc pour rester lisible dans toutes les ambiances. */
+.figure-q { margin:0 0 16px; background:#fff; border:var(--bord); border-radius:12px; padding:10px; }
+.figure-q svg { display:block; width:100%; height:auto; max-height:360px; margin:0 auto; }

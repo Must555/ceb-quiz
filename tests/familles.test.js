@@ -3,7 +3,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { chargerDonnees, genererVariante, corriger, createRng, normaliserTexte } from '../js/engine/index.js';
+import { chargerDonnees, genererVariante, corriger, createRng, normaliserTexte, formesRectifiees } from '../js/engine/index.js';
 
 const fetchJson = async (c) => JSON.parse(await readFile(new URL('../' + c, import.meta.url), 'utf8'));
 const donnees = await chargerDonnees({ base: 'data/', fetchJson });
@@ -58,7 +58,12 @@ for (const m of donnees.modeles) {
       for (const t of textes) assert.doesNotMatch(String(t), TEXTE_CASSE, `${ctx} : texte cassé « ${t} »`);
       if (m.id.includes('-f-')) assert.ok(q.explication?.length > 5, `${ctx} : explication manquante`);
       const unique = (arr, quoi) => assert.equal(new Set(arr.map((x) => String(x).trim().toLowerCase())).size, arr.length, `${ctx} : ${quoi} en double ${JSON.stringify(arr)}`);
-      if (q.type === 'qcm') { assert.ok(q.choix.length >= 2 && q.reponse >= 0 && q.reponse < q.choix.length, ctx); unique(q.choix, 'choix'); }
+      if (q.type === 'qcm') {
+        assert.ok(q.choix.length >= 2 && q.reponse >= 0 && q.reponse < q.choix.length, ctx); unique(q.choix, 'choix');
+        // Un distracteur ne doit pas être la bonne réponse écrite en orthographe rectifiée (connaître / connaitre).
+        const rect = (x) => [...formesRectifiees(String(x).toLowerCase().trim())][0].replace(/-/g, '');
+        assert.equal(new Set(q.choix.map(rect)).size, q.choix.length, `${ctx} : deux choix identiques en orthographe rectifiée ${JSON.stringify(q.choix)}`);
+      }
       if (q.type === 'ordre') unique(q.elements, 'éléments');
       if (q.type === 'association') { unique(q.gauche, 'gauche'); unique(q.droite, 'droite'); }
       if (q.type === 'grille') { unique(q.lignes, 'lignes'); assert.ok(q.reponse.every((c) => c >= 0 && c < q.colonnes.length), ctx); }

@@ -71,6 +71,7 @@ function questionExamen(q, avecDocs, docsDejaImprimes) {
     <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce)}</p><span class="bareme">… / ${q.pointsPapier}</span></header>
     ${origine(q) ? `<p class="origine">${esc(origine(q))}</p>` : ''}
     ${blocDocs}
+    ${q.figure && q.type !== 'trace' ? `<div class="figure figure-q">${q.figure}</div>` : ''}
     ${zoneReponse(q)}
   </article>`;
 }

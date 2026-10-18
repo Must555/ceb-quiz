@@ -8,10 +8,28 @@ import { parseNombre, normaliserTexte } from './format.js';
 const estRempli = (v) => v !== null && v !== undefined && v !== '';
 const memeEnsemble = (a, b) => a.length === b.length && [...a].sort().join() === [...b].sort().join();
 
+// Orthographe rectifiée (1990) : le référentiel du tronc commun impose de l'enseigner (FRALA p. 28),
+// mais les manuels et les parents utilisent encore l'ancienne graphie. On accepte donc les deux :
+//   - accent circonflexe sur i et u facultatif (connaître/connaitre, il paraît/parait), sauf quand il
+//     distingue deux mots (dû, sûr, mûr, jeûne, croît), au passé simple (nous vînmes, vous fûtes)
+//     et au subjonctif imparfait (qu'il fût) ;
+//   - trait d'union facultatif ou soudure (porte-monnaie/portemonnaie, vingt et un/vingt-et-un) ;
+//   - è au futur et au conditionnel des verbes en é-consonne-er (je cèderai/céderai), événement/évènement.
+const CIRCONFLEXE_UTILE = /^(dû|dûs|dûe|dûes|sûr|sûre|sûrs|sûres|sûrement|mûr|mûre|mûrs|mûres|jeûne|jeûnes|jeûner|croît)$|[îû]n?(mes|tes)$|(?<![ao])[îû]n?t$/;
+export function formesRectifiees(texte) {
+  const mots = texte.split(/(\s+|-)/).map((m) => (CIRCONFLEXE_UTILE.test(m) ? m : m.replace(/î/g, 'i').replace(/û/g, 'u')));
+  const base = mots.join('')
+    .replace(/é([bcdfgjklmnpqrstvz]{1,2})er(ai|as|a|ons|ez|ont|ais|ait|ions|iez|aient)\b/g, 'è$1er$2')
+    .replace(/événement/g, 'évènement');
+  return new Set([base, base.replace(/-/g, ' '), base.replace(/-/g, '')]);
+}
+
 function comparerTexte(saisie, acceptees, souple) {
   const opts = { accents: !souple };
   const s = normaliserTexte(saisie, opts);
   if (acceptees.some((r) => normaliserTexte(r, opts) === s)) return { ok: true };
+  const formesSaisie = formesRectifiees(s);
+  if (acceptees.some((r) => [...formesRectifiees(normaliserTexte(r, opts))].some((f) => formesSaisie.has(f)))) return { ok: true };
   // En mode strict, on repère le cas « juste à un accent près » pour aider l'enfant.
   if (!souple && acceptees.some((r) => normaliserTexte(r) === normaliserTexte(saisie))) {
     return { ok: false, remarque: 'Presque ! Vérifie les accents.' };

@@ -156,7 +156,11 @@
       "modeles/familles-fr.json",
       "modeles/familles-ma.json",
       "modeles/familles-hg.json",
-      "modeles/familles-sc.json"
+      "modeles/familles-sc.json",
+      "modeles/tc-fr.json",
+      "modeles/tc-ma.json",
+      "modeles/tc-hg.json",
+      "modeles/tc-sc.json"
     ],
     "examens": [
       "examens/index.json"

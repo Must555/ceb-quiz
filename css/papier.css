@@ -152,3 +152,5 @@ main { padding: 8px 16px 40px; }
   .doc img { max-height: 170mm; }
   a { color: inherit; text-decoration: none; }
 }
+
+.figure-q svg { max-width: 120mm; height: auto; }
