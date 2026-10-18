@@ -1,9 +1,9 @@
 /* Mission CEB — page « Examen papier » (aperçu à l'écran + impression A4) */
 :root {
-  --titre: Outfit, 'Segoe UI', system-ui, sans-serif;
-  --texte: Inter, 'Segoe UI', system-ui, sans-serif;
-  --fond: #eef0f4; --papier: #fff; --encre: #16161d; --mute: #5b6070; --ligne: #c9ced8;
-  --accent: #c6ff3d; --accent-fonce: #3a5a00; --violet: #6d28d9; --rouge: #d0021b;
+  --titre: 'Alegreya', Georgia, serif;
+  --texte: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --fond: #f3ead5; --papier: #fff; --encre: #16161d; --mute: #5b6070; --ligne: #c9ced8;
+  --accent: #dfe8f7; --accent-fonce: #1f4e96; --violet: #1f4e96; --rouge: #d0021b;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -22,11 +22,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .formats button { text-align: left; background: #fff; border: 2px solid var(--ligne); border-radius: 14px; padding: 10px 12px; }
 .formats button b { display: block; font-family: var(--titre); font-size: 16px; }
 .formats button small { color: var(--mute); font-size: 12.5px; }
-.formats button[aria-checked="true"] { border-color: var(--encre); background: #f6ffe0; box-shadow: inset 0 0 0 1px var(--encre); }
+.formats button[aria-checked="true"] { border-color: var(--encre); background: #eef3fb; box-shadow: inset 0 0 0 1px var(--encre); }
 .actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--titre); font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; background: #fff; border: 2px solid var(--ligne); }
 .btn:hover { border-color: var(--encre); }
-.btn.cta { background: var(--accent); border-color: var(--encre); }
+.btn.cta { background: #1f4e96; color: #fff; border-color: #13305e; }
 .btn.petit { padding: 7px 12px; font-size: 14px; }
 .code { display: flex; align-items: center; gap: 6px; }
 .code label { font-weight: 700; }

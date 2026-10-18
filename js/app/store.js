@@ -33,7 +33,7 @@ export function nouveauJoueur(pseudo, avatar, couleur) {
   return {
     id: 'j' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
     pseudo, avatar, couleur,
-    theme: 'neon',
+    theme: 'parchemin',
     creeLe: new Date().toISOString(),
     xp: 0,
     gemmes: 0,

@@ -34,7 +34,7 @@ let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
 async function demarrer() {
-  appliquerTheme(store.joueurActif()?.theme ?? 'neon');
+  appliquerTheme(store.joueurActif()?.theme ?? 'parchemin');
   try {
     donnees = await chargerDonnees({ base: 'data/' });
     // Les vraies questions du CEB rejoignent aussi l'entraînement (avec leurs documents).
@@ -48,7 +48,11 @@ async function demarrer() {
   joueur ? afficherAccueil() : afficherConnexion();
 }
 
-function appliquerTheme(t) { racine.dataset.theme = t; }
+// Anciennes ambiances (Néon, Pop, Sunset) → nouvelles ambiances « école ».
+const AMBIANCES = [['parchemin', 'Parchemin'], ['cahier', 'Cahier'], ['tableau', 'Tableau']];
+const ANCIENNES = { neon: 'tableau', pop: 'cahier', sunset: 'parchemin' };
+const ambiance = (t) => (AMBIANCES.some(([id]) => id === t) ? t : ANCIENNES[t] ?? 'parchemin');
+function appliquerTheme(t) { racine.dataset.theme = ambiance(t); }
 function montrer(id) {
   $$('.ecran').forEach((e) => { e.hidden = e.id !== id; });
   window.scrollTo(0, 0);
@@ -59,7 +63,7 @@ function toast(msg) {
   document.body.append(t); setTimeout(() => t.remove(), 2700);
 }
 function confettis(n = 80) {
-  const cols = ['#c6ff3d', '#3dffb5', '#7c3aed', '#ffd23f', '#ff5c8a', '#4d7cff'];
+  const cols = ['#1f4e96', '#c2362c', '#e0a800', '#2f6b4f', '#8a2e3b', '#9cc4e8'];
   for (let i = 0; i < n; i++) {
     const c = document.createElement('i');
     c.className = 'confetti';
@@ -78,7 +82,7 @@ function afficherConnexion(forcerCreation = false) {
   const joueurs = store.listeJoueurs();
   const el = $('#ecran-connexion');
   const creation = forcerCreation || joueurs.length === 0;
-  const nouveau = { avatar: AVATARS[0], couleur: COULEURS[0], theme: racine.dataset.theme || 'neon' };
+  const nouveau = { avatar: AVATARS[0], couleur: COULEURS[0], theme: ambiance(racine.dataset.theme) };
 
   el.innerHTML = `<div class="connexion"><div class="connexion-boite">
     <div class="marque"><span class="pastille">🚀</span><div>Mission CEB<small>RÉUSSIS TON CEB EN JOUANT</small></div></div>
@@ -155,7 +159,7 @@ function afficherConnexion(forcerCreation = false) {
 }
 
 function blocAmbiances(actuel) {
-  return `<div class="ambiances">${[['neon', 'Néon'], ['pop', 'Pop'], ['sunset', 'Sunset']].map(([id, nom]) =>
+  return `<div class="ambiances">${AMBIANCES.map(([id, nom]) =>
     `<button data-t="${id}" class="${actuel === id ? 'sel' : ''}"><span class="apercu ap-${id}"></span>${nom}</button>`).join('')}</div>`;
 }
 function brancherAmbiances(el, onChoix) {
@@ -650,7 +654,7 @@ function afficherReglages() {
     <h1>🎨 Mon style</h1>
     <section class="carte">
       <p class="etape-titre">Ambiance</p>
-      ${blocAmbiances(joueur.theme)}
+      ${blocAmbiances(ambiance(joueur.theme))}
     </section>
     <section class="carte">
       <div class="apercu-joueur" style="margin-bottom:14px">${ava(joueur, 64)}<div><b style="font-family:var(--titre);font-size:22px">${esc(joueur.pseudo)}</b><div class="mute">Niveau ${niveau(joueur.xp).n} · ${niveau(joueur.xp).titre}</div></div></div>
