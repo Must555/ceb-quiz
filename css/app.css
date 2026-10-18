@@ -1,6 +1,6 @@
 /* ============================================================
    Mission CEB — styles de l'application
-   3 ambiances « école » au choix : Parchemin (défaut), Cahier, Tableau
+   3 ambiances au choix : Cahier (défaut), Tableau, Lecture (confort de lecture)
    ============================================================ */
 :root {
   --texte: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
@@ -9,22 +9,19 @@
   --r: 14px;
   --juste: #2e7d32; --faux: #b3261e;
 }
-/* Parchemin : papier ancien pâle, encre brune et bleu de stylo-plume. */
-[data-theme="parchemin"] {
-  --manuscrit: 'Alegreya', Georgia, serif;
-  --fond:#f4ecd9; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
-    radial-gradient(38% 30% at 18% 22%, rgba(160,120,60,.10), transparent 70%),
-    radial-gradient(30% 26% at 82% 68%, rgba(160,120,60,.09), transparent 70%),
-    radial-gradient(26% 22% at 60% 12%, rgba(255,255,255,.35), transparent 70%),
-    radial-gradient(130% 100% at 50% 45%, transparent 58%, rgba(120,85,35,.22) 100%);
-  --panel:#fffaf0; --panel2:#f7efdc; --ligne:#e2d3b0; --txt:#2f2416; --mute:#6d5c42;
-  --accent:#1f4e96; --accent-txt:#fff; --prog:#1f4e96; --or:#8a5d00;
-  --hero:#fffaf0; --hero-txt:#2f2416; --hero-accent:#8a2e3b;
-  --m1:#2f5d8a; --m2:#a26a12; --m3:#2f6b4f; --m4:#8a2e3b; --m-txt:#fff;
-  --mat:#fffaf0; --mat-sel:#f1e4c3;
-  --cta:#1f4e96; --cta-txt:#fff; --cta-ombre:0 3px 0 #13305e;
-  --bord:1px solid var(--ligne); --bord-fort:2px solid #d8c59a; --ombre:0 1px 0 rgba(90,65,25,.05), 0 6px 16px rgba(90,65,25,.07); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
-  --nav-actif:#1f4e96; --nav-actif-txt:#fff; --champ:#fffdf7; --modal:#fbf5e6;
+/* Lecture : confort de lecture — fond crème uni (moins d'éblouissement), texte plus grand et plus aéré,
+   aucune écriture cursive. Pensée pour les enfants qui se fatiguent vite à lire. */
+[data-theme="lecture"] {
+  --manuscrit: var(--texte);
+  --fond:#f8f3e6; --deco: none;
+  --panel:#fffcf4; --panel2:#f3ecdb; --ligne:#e0d6bf; --txt:#1f2430; --mute:#545a66;
+  --accent:#2b5797; --accent-txt:#fff; --prog:#2b5797; --or:#8a5d00;
+  --hero:#fffcf4; --hero-txt:#1f2430; --hero-accent:#2b5797;
+  --m1:#2b5797; --m2:#9a6418; --m3:#2e6a4f; --m4:#8e3a46; --m-txt:#fff;
+  --mat:#fffcf4; --mat-sel:#e9eef8;
+  --cta:#2b5797; --cta-txt:#fff; --cta-ombre:0 3px 0 #1b3b6b;
+  --bord:1px solid var(--ligne); --bord-fort:2px solid #d3c7aa; --ombre:0 1px 2px rgba(60,50,30,.05); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.16);
+  --nav-actif:#2b5797; --nav-actif-txt:#fff; --champ:#fffefa; --modal:#fffcf4;
 }
 /* Cahier : page Seyès (lignes bleues, marge rouge), stylo bleu et surligneur jaune. */
 [data-theme="cahier"] {
@@ -104,7 +101,7 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .ambiances button { border-radius:14px; padding:10px; border:var(--bord-fort); background:var(--panel2); font-weight:800; font-family:var(--titre); display:flex; flex-direction:column; align-items:center; gap:6px; }
 .ambiances button.sel { border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
 .ambiances .apercu { width:100%; height:36px; border-radius:8px; }
-.ap-parchemin { background:radial-gradient(110% 120% at 50% 50%, #fffaf0 50%, #e6d3a8); border:1px solid #b89a63; outline:1px solid #b89a63; outline-offset:-5px; }
+.ap-lecture { background:#f8f3e6; border:1px solid #d3c7aa; box-shadow:inset 0 -9px 0 -6px #2b5797, inset 0 -14px 0 -10px #c9bfa8, inset 0 -19px 0 -15px #c9bfa8; }
 .ap-cahier { background:linear-gradient(90deg, transparent 14px, #e07a7a 14px 16px, transparent 16px), repeating-linear-gradient(180deg, #fff 0 7px, #c3d0ea 7px 8px); border:1px solid #cbd6ec; }
 .ap-tableau { background:#1e3a2f; border:3px solid #8a6a43; box-shadow:inset 10px -8px 0 -6px #f2efe4; }
 .apercu-joueur { display:flex; align-items:center; gap:14px; }
@@ -487,7 +484,7 @@ a.btn { text-decoration:none; }
 
 /* ---------- Ambiances « école » : titres manuscrits, détails ---------- */
 .salut h1, .connexion h1, .resultat h1, .progres h1, .reglages h1, .parents h1 { font-family:var(--manuscrit); font-weight:400; line-height:1.4; letter-spacing:0; }
-[data-theme="parchemin"] :is(.salut h1, .connexion h1, .resultat h1, .progres h1, .reglages h1, .parents h1) { font-weight:800; line-height:1.15; }
+[data-theme="lecture"] :is(.salut h1, .connexion h1, .resultat h1, .progres h1, .reglages h1, .parents h1, .hero h2) { font-weight:700; line-height:1.2; }
 .salut h1 { font-size:27px; } .connexion h1 { font-size:26px; } .resultat h1 { font-size:30px; }
 /* Cahier : carte « page » avec marge rouge pour le héros, sélection au surligneur. */
 [data-theme="cahier"] .hero { border:1px solid var(--ligne); box-shadow:var(--ombre); background:linear-gradient(90deg, transparent 18px, rgba(214,72,72,.55) 18px 20px, transparent 20px), #fff; }
@@ -497,18 +494,18 @@ a.btn { text-decoration:none; }
 /* Tableau : cadre en bois autour du tableau, traits de craie. */
 [data-theme="tableau"] body { box-shadow:inset 0 0 0 10px #7a5a37, inset 0 0 0 12px #5d4227; }
 [data-theme="tableau"] .hero { border:2px solid rgba(242,239,228,.35); }
-[data-theme="tableau"] .collection div.obtenu, [data-theme="cahier"] .collection div.obtenu, [data-theme="parchemin"] .collection div.obtenu { background:linear-gradient(135deg,#f3d36b,#e3a43c); }
+[data-theme="tableau"] .collection div.obtenu, [data-theme="cahier"] .collection div.obtenu, [data-theme="lecture"] .collection div.obtenu { background:linear-gradient(135deg,#f3d36b,#e3a43c); }
 .niv-badge { color:#1c2333; }
 [data-theme="cahier"] .side { background:#fdfdfa; border-right:2px solid rgba(214,72,72,.55); }
 [data-theme="tableau"] .side { background:rgba(0,0,0,.12); }
 [data-theme="tableau"] :is(.rep.juste, .rep.faux) .lettre { color:#14261f; }
-/* Parchemin : le héros ressemble à un certificat (double filet sépia, sceau de cire pour le niveau). */
-[data-theme="parchemin"] :is(h1, h2, h3) { font-family:'Alegreya', Georgia, serif; }
-[data-theme="parchemin"] .hero { border:1px solid #b89a63; outline:1px solid #b89a63; outline-offset:-7px; box-shadow:var(--ombre); }
-[data-theme="parchemin"] .hero h2 { font-weight:800; font-size:38px; line-height:1.1; }
-[data-theme="parchemin"] .hero small.sur { color:#8a6a3a; font-style:italic; font-family:'Alegreya', Georgia, serif; font-size:16px; opacity:1; }
-[data-theme="parchemin"] .hero .grand-ava { box-shadow:0 0 0 4px #fffaf0, 0 0 0 5px #b89a63; }
-[data-theme="parchemin"] .niv-badge { background:#8a2e3b; color:#fbeedd; border:2px solid #6b1f2a; box-shadow:0 2px 0 rgba(0,0,0,.2); }
-[data-theme="parchemin"] .prog { background:#f7efdc; border:1px solid var(--ligne); }
-[data-theme="parchemin"] .prog b { color:#1f4e96; }
-[data-theme="parchemin"] .carte { backdrop-filter:none; }
+/* Lecture : texte plus grand, interlignes et espacement des mots plus larges, pas d'effets. */
+[data-theme="lecture"] body { font-size:18px; line-height:1.6; word-spacing:.06em; letter-spacing:.01em; }
+[data-theme="lecture"] .carte { backdrop-filter:none; }
+[data-theme="lecture"] .hero { border:1px solid var(--ligne); border-left:6px solid #2b5797; }
+[data-theme="lecture"] .hero .grand-ava { box-shadow:0 0 0 5px #f3ecdb; }
+[data-theme="lecture"] .prog { background:#f3ecdb; }
+[data-theme="lecture"] .question h2 { font-size:27px; line-height:1.5; font-weight:700; }
+[data-theme="lecture"] .rep { font-size:19px; line-height:1.45; }
+[data-theme="lecture"] :is(.grille-ligne p, .asso-ligne p, .texte-trous, .retour p) { font-size:19px; line-height:1.6; }
+[data-theme="lecture"] .doc img { filter:none; }

@@ -34,7 +34,7 @@ let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
 async function demarrer() {
-  appliquerTheme(store.joueurActif()?.theme ?? 'parchemin');
+  appliquerTheme(store.joueurActif()?.theme ?? 'cahier');
   try {
     donnees = await chargerDonnees({ base: 'data/' });
     // Les vraies questions du CEB rejoignent aussi l'entraînement (avec leurs documents).
@@ -49,9 +49,9 @@ async function demarrer() {
 }
 
 // Anciennes ambiances (Néon, Pop, Sunset) → nouvelles ambiances « école ».
-const AMBIANCES = [['parchemin', 'Parchemin'], ['cahier', 'Cahier'], ['tableau', 'Tableau']];
-const ANCIENNES = { neon: 'tableau', pop: 'cahier', sunset: 'parchemin' };
-const ambiance = (t) => (AMBIANCES.some(([id]) => id === t) ? t : ANCIENNES[t] ?? 'parchemin');
+const AMBIANCES = [['cahier', 'Cahier'], ['tableau', 'Tableau'], ['lecture', 'Lecture']];
+const ANCIENNES = { neon: 'tableau', pop: 'cahier', sunset: 'cahier', parchemin: 'lecture' };
+const ambiance = (t) => (AMBIANCES.some(([id]) => id === t) ? t : ANCIENNES[t] ?? 'cahier');
 function appliquerTheme(t) { racine.dataset.theme = ambiance(t); }
 function montrer(id) {
   $$('.ecran').forEach((e) => { e.hidden = e.id !== id; });

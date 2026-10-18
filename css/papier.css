@@ -1,8 +1,8 @@
 /* Mission CEB — page « Examen papier » (aperçu à l'écran + impression A4) */
 :root {
-  --titre: 'Alegreya', Georgia, serif;
+  --titre: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
   --texte: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
-  --fond: #f3ead5; --papier: #fff; --encre: #16161d; --mute: #5b6070; --ligne: #c9ced8;
+  --fond: #eef2f9; --papier: #fff; --encre: #16161d; --mute: #5b6070; --ligne: #c9ced8;
   --accent: #dfe8f7; --accent-fonce: #1f4e96; --violet: #1f4e96; --rouge: #d0021b;
 }
 * { box-sizing: border-box; }
