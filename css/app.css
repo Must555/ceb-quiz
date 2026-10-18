@@ -11,16 +11,20 @@
 }
 /* Parchemin : papier ancien pâle, encre brune et bleu de stylo-plume. */
 [data-theme="parchemin"] {
-  --titre: 'Alegreya', Georgia, serif; --manuscrit: 'Alegreya', Georgia, serif;
-  --fond:#f3ead5; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"), radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,90,40,.16) 100%);
-  --panel:#fbf6e8; --panel2:#f3e9d0; --ligne:#dccba4; --txt:#2e2418; --mute:#6b5a40;
+  --manuscrit: 'Alegreya', Georgia, serif;
+  --fond:#f4ecd9; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
+    radial-gradient(38% 30% at 18% 22%, rgba(160,120,60,.10), transparent 70%),
+    radial-gradient(30% 26% at 82% 68%, rgba(160,120,60,.09), transparent 70%),
+    radial-gradient(26% 22% at 60% 12%, rgba(255,255,255,.35), transparent 70%),
+    radial-gradient(130% 100% at 50% 45%, transparent 58%, rgba(120,85,35,.22) 100%);
+  --panel:#fffaf0; --panel2:#f7efdc; --ligne:#e2d3b0; --txt:#2f2416; --mute:#6d5c42;
   --accent:#1f4e96; --accent-txt:#fff; --prog:#1f4e96; --or:#8a5d00;
-  --hero:#23467e; --hero-txt:#f6eedb; --hero-accent:#ecc96b;
+  --hero:#fffaf0; --hero-txt:#2f2416; --hero-accent:#8a2e3b;
   --m1:#2f5d8a; --m2:#a26a12; --m3:#2f6b4f; --m4:#8a2e3b; --m-txt:#fff;
-  --mat:#fbf6e8; --mat-sel:#ece0bf;
+  --mat:#fffaf0; --mat-sel:#f1e4c3;
   --cta:#1f4e96; --cta-txt:#fff; --cta-ombre:0 3px 0 #13305e;
-  --bord:1px solid var(--ligne); --bord-fort:2px solid #cfbb8d; --ombre:0 1px 0 rgba(90,65,25,.06), 0 8px 20px rgba(90,65,25,.08); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
-  --nav-actif:#1f4e96; --nav-actif-txt:#fff; --champ:#fffdf6; --modal:#f7f0dd;
+  --bord:1px solid var(--ligne); --bord-fort:2px solid #d8c59a; --ombre:0 1px 0 rgba(90,65,25,.05), 0 6px 16px rgba(90,65,25,.07); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
+  --nav-actif:#1f4e96; --nav-actif-txt:#fff; --champ:#fffdf7; --modal:#fbf5e6;
 }
 /* Cahier : page Seyès (lignes bleues, marge rouge), stylo bleu et surligneur jaune. */
 [data-theme="cahier"] {
@@ -100,7 +104,7 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .ambiances button { border-radius:14px; padding:10px; border:var(--bord-fort); background:var(--panel2); font-weight:800; font-family:var(--titre); display:flex; flex-direction:column; align-items:center; gap:6px; }
 .ambiances button.sel { border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
 .ambiances .apercu { width:100%; height:36px; border-radius:8px; }
-.ap-parchemin { background:radial-gradient(110% 120% at 50% 50%, #f6eedb 55%, #dcc9a0); border:1px solid #cfbb8d; box-shadow:inset 0 -10px 0 #23467e; }
+.ap-parchemin { background:radial-gradient(110% 120% at 50% 50%, #fffaf0 50%, #e6d3a8); border:1px solid #b89a63; outline:1px solid #b89a63; outline-offset:-5px; }
 .ap-cahier { background:linear-gradient(90deg, transparent 14px, #e07a7a 14px 16px, transparent 16px), repeating-linear-gradient(180deg, #fff 0 7px, #c3d0ea 7px 8px); border:1px solid #cbd6ec; }
 .ap-tableau { background:#1e3a2f; border:3px solid #8a6a43; box-shadow:inset 10px -8px 0 -6px #f2efe4; }
 .apercu-joueur { display:flex; align-items:center; gap:14px; }
@@ -140,7 +144,6 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .niv-badge { position:absolute; right:-4px; bottom:4px; background:var(--hero-accent); color:#111; font-family:var(--titre); font-weight:900; font-size:15px; padding:4px 10px; border-radius:999px; border:3px solid rgba(0,0,0,.15); }
 .hero small.sur { font-weight:700; font-size:14px; opacity:.85; }
 .hero h2 { font-family:var(--manuscrit); font-size:32px; font-weight:400; line-height:1.5; margin:10px 0 8px; }
-[data-theme="parchemin"] .hero h2 { font-weight:800; font-size:40px; line-height:1.1; }
 .hero h2 span { color:var(--hero-accent); }
 .hero p { margin:0 0 14px; opacity:.92; }
 .prog { display:flex; align-items:center; gap:12px; background:rgba(0,0,0,.2); padding:10px 14px; border-radius:14px; max-width:440px; }
@@ -491,10 +494,6 @@ a.btn { text-decoration:none; }
 [data-theme="cahier"] .hero .grand-ava { box-shadow:0 0 0 5px #e7edf8, 0 0 0 10px #f4f7fc; }
 [data-theme="cahier"] .prog { background:#f4f7fc; border:1px solid var(--ligne); }
 [data-theme="cahier"] :is(.rep.sel, .opt.sel, .matiere.sel, .puce.sel, .livret.sel) { border-color:#1c3faa; }
-/* Parchemin : héros encre bleue avec liseré doré. */
-[data-theme="parchemin"] .hero { box-shadow:inset 0 0 0 1px rgba(236,201,107,.45), var(--ombre); }
-[data-theme="parchemin"] .hero .grand-ava { box-shadow:0 0 0 5px rgba(236,201,107,.45), 0 0 0 10px rgba(255,255,255,.08); }
-[data-theme="parchemin"] .prog { background:rgba(0,0,0,.18); }
 /* Tableau : cadre en bois autour du tableau, traits de craie. */
 [data-theme="tableau"] body { box-shadow:inset 0 0 0 10px #7a5a37, inset 0 0 0 12px #5d4227; }
 [data-theme="tableau"] .hero { border:2px solid rgba(242,239,228,.35); }
@@ -503,3 +502,13 @@ a.btn { text-decoration:none; }
 [data-theme="cahier"] .side { background:#fdfdfa; border-right:2px solid rgba(214,72,72,.55); }
 [data-theme="tableau"] .side { background:rgba(0,0,0,.12); }
 [data-theme="tableau"] :is(.rep.juste, .rep.faux) .lettre { color:#14261f; }
+/* Parchemin : le héros ressemble à un certificat (double filet sépia, sceau de cire pour le niveau). */
+[data-theme="parchemin"] :is(h1, h2, h3) { font-family:'Alegreya', Georgia, serif; }
+[data-theme="parchemin"] .hero { border:1px solid #b89a63; outline:1px solid #b89a63; outline-offset:-7px; box-shadow:var(--ombre); }
+[data-theme="parchemin"] .hero h2 { font-weight:800; font-size:38px; line-height:1.1; }
+[data-theme="parchemin"] .hero small.sur { color:#8a6a3a; font-style:italic; font-family:'Alegreya', Georgia, serif; font-size:16px; opacity:1; }
+[data-theme="parchemin"] .hero .grand-ava { box-shadow:0 0 0 4px #fffaf0, 0 0 0 5px #b89a63; }
+[data-theme="parchemin"] .niv-badge { background:#8a2e3b; color:#fbeedd; border:2px solid #6b1f2a; box-shadow:0 2px 0 rgba(0,0,0,.2); }
+[data-theme="parchemin"] .prog { background:#f7efdc; border:1px solid var(--ligne); }
+[data-theme="parchemin"] .prog b { color:#1f4e96; }
+[data-theme="parchemin"] .carte { backdrop-filter:none; }
