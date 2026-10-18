@@ -128,7 +128,7 @@ main { padding: 8px 16px 40px; }
 .solution svg { max-width: 100%; }
 
 @media (max-width: 640px) {
-  .grille { width: 100%; }
+  .grille { width: 100%; display: block; overflow-x: auto; }
   .feuille { padding: 16px 12px; }
   .question > :not(header):not(.origine), .origine { margin-left: 0; }
   .asso { grid-template-columns: 1fr; }
