@@ -2017,15 +2017,16 @@ function frSources(modele, rng) {
       explication: `${maj(bon)} : on connaît l'auteur ou l'organisme, l'information est vérifiée et datée. Un message anonyme, une publicité ou une vidéo de blagues ne sont pas des sources sûres.` };
   }
   // date : l'information la plus récente
-  const quoi = rng.pick([['les horaires actuels des bus de ta ville', 'Les horaires changent souvent'], ['la météo de ce week-end', 'La météo change chaque jour'],
+  const quoi = rng.pick([['les horaires actuels des bus de ta ville', 'Les horaires changent souvent'], ["les heures d'ouverture actuelles de la bibliothèque", "Les heures d'ouverture peuvent changer"],
     ['les prix actuels des places de cinéma', 'Les prix changent souvent'], ['le classement actuel de ton équipe de football', 'Le classement change après chaque match']]);
-  const base = rng.int(2012, 2018);
-  const annees = rng.shuffle([base, base + 2, base + 4, base + 7]);
+  // L'année « actuelle » est donnée dans l'énoncé : le document le plus récent est de cette année-là.
+  const maintenant = rng.int(2022, 2026);
+  const annees = rng.shuffle([maintenant, maintenant - 2, maintenant - 4, maintenant - 7]);
   const docs = annees.map((a) => `un document daté de ${a}`);
   const recent = Math.max(...annees);
   const q = qcmFixe(docs[annees.indexOf(recent)], docs);
   return { _signature: `date|${quoi[0]}|${annees.join(',')}`, ...q,
-    enonce: `Tu cherches ${quoi[0]}. Plusieurs documents en parlent. Lequel choisis-tu ?`,
+    enonce: `Nous sommes en ${maintenant}. Tu cherches ${quoi[0]}. Plusieurs documents en parlent. Lequel choisis-tu ?`,
     explication: `${quoi[1]} : il faut le document le plus récent (${recent}). Regarde toujours la date d'un document.` };
 }
 
