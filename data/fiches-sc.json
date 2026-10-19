@@ -91,6 +91,7 @@
     "Racine : puise l'eau et les sels minéraux, fixe la plante. Tige : soutient et transporte la sève. Feuille : fabrique la nourriture.",
     "Photosynthèse : avec la lumière, les feuilles utilisent l'eau et le dioxyde de carbone pour fabriquer des sucres, et rejettent du dioxygène.",
     "Pour germer, une graine a besoin d'eau, d'air et de chaleur (pas forcément de lumière).",
+  "Dans le noir, une jeune plante s'allonge vite grâce aux réserves de la graine, mais reste jaune et fragile ; sans lumière, elle finit par mourir.",
     "Feuillus : feuilles larges ; conifères : aiguilles ou écailles, graines dans des cônes."
    ],
    "exemple": "La tomate contient des graines : pour un botaniste, c'est un fruit.",
@@ -381,7 +382,7 @@
    "regle": [
     "Un ensemble regroupe tous les animaux qui partagent un même attribut (ce qu'ils ont : poils, plumes, squelette interne…).",
     "Un ensemble placé à l'intérieur d'un autre regroupe des animaux qui ont l'attribut du grand ensemble ET un attribut en plus.",
-    "On place chaque animal dans le plus petit ensemble qui lui correspond. S'il n'a aucun des attributs, il reste dans le grand rectangle.",
+    "On place chaque animal dans le plus petit ensemble qui lui correspond. S'il n'a aucun des attributs écrits sur les ensembles dessinés, il reste dans le grand rectangle, hors des ensembles.",
     "Exemple d'emboîtement : squelette interne → 4 membres → poils ; squelette externe et pattes articulées → antennes → 6 pattes.",
     "Plus deux animaux sont dans un petit ensemble commun, plus ils partagent d'attributs : ils sont plus proches parents."
    ],
@@ -422,7 +423,7 @@
    "e": "🫀",
    "titre": "Digestion, respiration, circulation : ensemble",
    "regle": [
-    "Digestif : bouche → œsophage → estomac → intestin grêle → côlon → anus (glandes annexes : glandes salivaires, pancréas, foie). Les nutriments passent dans le sang au niveau de l'intestin grêle ; le côlon absorbe de l'eau.",
+    "Digestif : bouche → œsophage → estomac → intestin grêle → côlon → anus (glandes annexes : glandes salivaires, pancréas, foie). Les nutriments passent dans le sang au niveau de l'intestin grêle ; le côlon (gros intestin) absorbe encore de l'eau.",
     "Respiratoire : nez ou bouche → trachée → bronches → alvéoles des poumons. Dans les alvéoles, le dioxygène passe dans le sang et le dioxyde de carbone en sort.",
     "Circulatoire : le cœur pompe le sang ; les artères partent du cœur, les veines y reviennent. Le sang transporte dioxygène, nutriments, dioxyde de carbone et déchets.",
     "Le dioxyde de carbone est rejeté par les poumons ; d'autres déchets sont filtrés par les reins et évacués dans l'urine.",

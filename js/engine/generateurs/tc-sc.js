@@ -62,7 +62,8 @@ function marqueur(m, x, y, c) {
 // Graphique en courbes : plusieurs séries sur les mêmes abscisses.
 function svgCourbes({ titre, xs, series, xTitre, yTitre, yMin, yMax, yPas, yEtiq }) {
   const W = 400; const nLeg = Math.ceil(series.length / 2);
-  const T = 30 + nLeg * 18 + 20; const B = 44; const L = 46; const R = 16; const H = T + 190 + B;
+  const T = 30 + nLeg * 18 + 20; const B = 44; const L = 46; const R = 16;
+  const hp = Math.max(190, Math.round(((yMax - yMin) / yPas) * 8)); const H = T + hp + B;
   const px = (x) => L + ((x - xs[0]) / (xs[xs.length - 1] - xs[0])) * (W - L - R);
   const py = (y) => H - B - ((y - yMin) / (yMax - yMin)) * (H - B - T);
   let s = `<text x="${W / 2}" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="${ENCRE}">${esc(titre)}</text>`;
@@ -143,6 +144,14 @@ function svgTableau({ titre, entetes, lignes }) {
 
 // ================================================================ 1. RELEVÉS D'EXPÉRIENCE
 const rnd = (v, pas) => Math.round(v / pas) * pas;
+// Courbe « régulière » : pas de palier suivi d'une reprise, pas d'écart qui grandit brusquement
+// (évite les escaliers dus aux arrondis, physiquement faux pour un refroidissement ou un réchauffement).
+const reguliere = (v, r) => {
+  const d = v.slice(1).map((x, i) => Math.abs(x - v[i]));
+  if (d[0] === 0) return false;
+  for (let k = 1; k < d.length; k++) if ((d[k - 1] === 0 && d[k] > 0) || d[k] > d[k - 1] + r) return false;
+  return true;
+};
 const jit = (rng, a = 0.9, b = 1.1) => a + rng.next() * (b - a);
 
 const MATERIAUX = [
@@ -172,16 +181,23 @@ const QCM_ISOLANT_CHAUD = (iso) => ({
 function expRefroid(rng, support) {
   const p = rng.pick(PRENOMS); const Ta = rng.pick([18, 20, 22]); const T0 = rng.pick([60, 70, 80, 90]);
   const pas = rng.pick([5, 10]); const xs = [0, 1, 2, 3, 4, 5, 6].map((i) => i * pas);
-  const mats = avecIsolants(rng); const r = support === 'graphique' ? 5 : 1;
-  const series = mats.map((m) => { const k = m.k * jit(rng, 0.92, 1.08); return { nom: m.nom, v: xs.map((t) => rnd(Ta + (T0 - Ta) * Math.exp(-k * t), r)) }; });
+  const mats = avecIsolants(rng); const r = support === 'graphique' ? 2 : 1;
+  let series;
+  for (let essai = 0; essai < 25; essai++) {
+    series = mats.map((m) => { const k = m.k * jit(rng, 0.92, 1.08); return { nom: m.nom, v: xs.map((t) => rnd(Ta + (T0 - Ta) * Math.exp(-k * t), r)) }; });
+    if (series.every((x) => reguliere(x.v, r))) break;
+    series = null;
+  }
+  if (!series) return null;
   const isos = mats.slice(1).map((m) => m.nom);
   const meilleur = series.slice(1).reduce((a, b) => (b.v[6] > a.v[6] ? b : a));
+  if (series.slice(1).filter((x) => x.v[6] === meilleur.v[6]).length > 1) return null;
   const iso = rng.pick(isos);
   return {
     id: 'refroid', domaine: 'sc.energie', fiche: 'sc-chaleur', kind: 'ligne', xs, series, support,
     contexte: `${p} verse la même quantité d'eau chaude, à ${T0} °C, dans ${mats.length} pots identiques. Un pot reste sans rien ; les autres sont entourés ${listeOu(deDes(isos))}. La classe est à ${Ta} °C. Toutes les ${pas} minutes, ${il(p)} mesure la température de l'eau.`,
     titre: 'Température de l\'eau dans les pots', xTitre: 'Temps (min)', yTitre: 'Température (°C)', yNom: 'la température de l\'eau', unite: '°C', uniteMot: 'degrés',
-    yMin: Math.floor(Math.min(...series.flatMap((x) => x.v)) / 10) * 10, yMax: T0, yPas: support === 'graphique' ? 5 : 5, yEtiq: 10,
+    yMin: Math.floor(Math.min(...series.flatMap((x) => x.v)) / 10) * 10, yMax: T0, yPas: 2, yEtiq: 10,
     quand: (x) => (x === 0 ? 'au départ' : `après ${x} minutes`), objet: (n) => `du pot « ${n} »`, sens: 'baisse',
     borne: (x) => (x === 0 ? 'le départ' : `la ${x}e minute`),
     plus: { q: 'dans quel pot l\'eau est-elle', haut: 'la plus chaude', bas: 'la moins chaude' },
@@ -233,7 +249,7 @@ function expGlacon(rng, support) {
       },
       conclusion: {
         enonce: 'Quelle conclusion peut-on tirer de cette expérience ?',
-        bonne: 'Un isolant thermique garde chaud ce qui est chaud, mais garde aussi froid ce qui est froid.',
+        bonne: 'Un isolant thermique ne sert pas seulement à garder au chaud : il garde aussi au froid ce qui est froid.',
         faux: ['Un isolant sert seulement à garder au chaud.', 'Un glaçon emballé fond plus vite qu\'un glaçon sans rien.', 'Le matériau autour du glaçon ne change rien.'],
         pourquoi: 'Les glaçons entourés d\'un isolant ont fondu plus lentement : l\'isolant ralentit le passage de la chaleur dans les deux sens.',
       },
@@ -251,19 +267,29 @@ function expGlacon(rng, support) {
 function expSoleil(rng, support) {
   const p = rng.pick(PRENOMS); const T0 = rng.pick([14, 16, 18]); const xs = [0, 20, 40, 60, 80, 100, 120];
   const couleur = rng.next() < 0.5; const r = support === 'graphique' ? 2 : 1;
-  const courbe = (E, k) => xs.map((t) => rnd(E - (E - T0) * Math.exp(-k * t), r));
+  const courbe = (E, k0) => {
+    for (let essai = 0; essai < 25; essai++) {
+      const k = k0 * jit(rng, 0.8, 1.2); const v = xs.map((t) => rnd(E - (E - T0) * Math.exp(-k * t), r));
+      if (reguliere(v, r)) return v;
+    }
+    return null;
+  };
   let series; let contexte; let cause; let demarche;
   if (couleur) {
     series = [{ nom: 'Bouteille noire', v: courbe(T0 + rng.int(26, 30), 0.022) }, { nom: 'Bouteille blanche', v: courbe(T0 + rng.int(13, 16), 0.02) }];
-    if (rng.next() < 0.5) series.push({ nom: 'À l\'ombre', v: courbe(T0 + rng.int(4, 6), 0.02) });
+    if (rng.next() < 0.5) {
+      // Deux bouteilles blanches : on précise toujours où elles sont pour lever l'ambiguïté.
+      series = [{ nom: 'Noire au soleil', v: series[0].v }, { nom: 'Blanche au soleil', v: series[1].v }, { nom: 'Blanche à l\'ombre', v: courbe(T0 + rng.int(4, 6), 0.02) }];
+    }
     contexte = `${p} remplit des bouteilles identiques avec la même quantité d'eau à ${T0} °C. ${series.length === 3 ? 'Une bouteille noire et une bouteille blanche sont posées au soleil, une autre bouteille blanche à l\'ombre.' : 'Une bouteille noire et une bouteille blanche sont posées côte à côte au soleil.'} Toutes les 20 minutes, ${il(p)} mesure la température de l'eau.`;
     cause = {
-      enonce: 'Pourquoi l\'eau de la bouteille noire se réchauffe-t-elle plus que celle de la bouteille blanche ?',
+      enonce: `Pourquoi l'eau de la bouteille noire se réchauffe-t-elle plus que celle de la bouteille blanche${series.length === 3 ? ' posée au soleil' : ''} ?`,
       bonne: 'La bouteille noire absorbe davantage la lumière du Soleil ; la blanche en renvoie une grande partie.',
       faux: ['La bouteille noire contient plus d\'eau.', 'Le noir produit de la chaleur tout seul, même dans l\'obscurité.', 'La bouteille blanche fabrique du froid.'],
       pourquoi: 'La lumière absorbée par la bouteille est transformée en énergie thermique (chaleur). Une surface noire absorbe plus de lumière qu\'une surface blanche.',
     };
-    demarche = { faux: ['La couleur des bouteilles.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'], teste: 'la couleur de la bouteille' };
+    demarche = { faux: ['La couleur des bouteilles.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'],
+      teste: series.length === 3 ? 'la couleur (bouteilles noire et blanche au soleil) ou l\'endroit (deux bouteilles blanches, au soleil et à l\'ombre)' : 'la couleur de la bouteille' };
   } else {
     series = [{ nom: 'Au soleil', v: courbe(T0 + rng.int(20, 25), 0.02) }, { nom: 'À l\'ombre', v: courbe(T0 + rng.int(4, 6), 0.02) }];
     contexte = `${p} remplit deux bouteilles identiques avec la même quantité d'eau à ${T0} °C. ${maj(il(p))} pose une bouteille au soleil et l'autre à l'ombre. Toutes les 20 minutes, ${il(p)} mesure la température de l'eau.`;
@@ -275,21 +301,22 @@ function expSoleil(rng, support) {
     };
     demarche = { faux: ['L\'endroit où on pose la bouteille.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'], teste: 'l\'endroit (soleil ou ombre)' };
   }
+  if (series.some((x) => !x.v)) return null;
   const max = Math.max(...series.flatMap((s) => s.v));
   return {
     id: 'soleil', domaine: 'sc.energie', fiche: 'sc-chaleur', kind: 'ligne', xs, series, support, contexte,
     titre: 'Température de l\'eau des bouteilles', xTitre: 'Temps (min)', yTitre: 'Température (°C)', yNom: 'la température de l\'eau', unite: '°C', uniteMot: 'degrés',
     yMin: Math.floor((T0 - 2) / 4) * 4, yMax: Math.ceil((max + 1) / 4) * 4, yPas: 2, yEtiq: 4,
-    quand: (x) => (x === 0 ? 'au départ' : `après ${x} minutes`), objet: (n) => (n.startsWith('Bouteille') ? `de la ${n.toLowerCase()}` : `de la bouteille ${n === 'Au soleil' ? 'au soleil' : 'à l\'ombre'}`), sens: 'hausse',
+    quand: (x) => (x === 0 ? 'au départ' : `après ${x} minutes`), objet: (n) => (n.startsWith('Bouteille') ? `de la ${n.toLowerCase()}` : `de la bouteille ${n === 'Au soleil' ? 'au soleil' : n === 'À l\'ombre' ? 'à l\'ombre' : n.toLowerCase()}`), sens: 'hausse',
     borne: (x) => (x === 0 ? 'le départ' : `la ${x}e minute`), egal: 'Les deux ont la même température',
     plus: { q: 'quelle bouteille contient l\'eau', haut: 'la plus chaude', bas: 'la moins chaude' },
     specs: {
       cause,
       demarche: {
         enonce: 'Pour que la comparaison soit juste, qu\'est-ce qui doit être pareil pour toutes les bouteilles ?',
-        bonne: 'La quantité d\'eau, la sorte de bouteille et la température de départ.',
+        bonne: 'La quantité d\'eau, la taille des bouteilles et la température de départ.',
         faux: demarche.faux,
-        pourquoi: `On ne change qu'une seule chose à la fois : ici, ${demarche.teste}. Tout le reste doit rester identique.`,
+        pourquoi: `Entre deux bouteilles que l'on compare, on ne change qu'une seule chose : ici, ${demarche.teste}. Tout le reste doit rester identique.`,
         fiche: 'sc-demarche',
       },
     },
@@ -351,6 +378,7 @@ function expPlante(rng, support) {
     yMin: 0, yMax: Math.ceil((Hd + 1) / 4) * 4, yPas: 2, yEtiq: 4,
     quand: (x) => (x === 0 ? 'au départ' : `au jour ${x}`), objet: (n) => `de la plante « ${n} »`, sens: 'hausse', minX: 6,
     borne: (x) => `le jour ${x}`, egal: 'Les deux ont la même hauteur',
+    note: 'Ce n\'est pas une erreur : dans le noir, la jeune plante s\'allonge vite grâce aux réserves de la graine, mais elle reste jaune et fragile.',
     plus: { q: 'quelle plante est', haut: 'la plus haute', bas: 'la moins haute' },
     specs: {
       conclusion: {
@@ -401,7 +429,7 @@ function expGermination(rng, support) {
 
 function figureDe(ds) {
   if (ds.kind === 'barres') {
-    if (ds.support === 'tableau') return svgTableau({ titre: ds.titre, entetes: ['Pot / boîte', ds.yTitre], lignes: ds.cats.map((c, i) => [c, fmt(ds.vals[i])]) });
+    if (ds.support === 'tableau') return svgTableau({ titre: ds.titre, entetes: [ds.id === 'germination' ? 'Boîte' : 'Pot', ds.yTitre], lignes: ds.cats.map((c, i) => [c, fmt(ds.vals[i])]) });
     const m = Math.max(...ds.vals); const pas = m > 60 ? 20 : m > 30 ? 10 : 5;
     return svgBarres({ titre: ds.titre, cats: ds.cats, vals: ds.vals, yTitre: ds.yTitre, yMax: Math.ceil((m + 1) / pas) * pas, yPas: pas });
   }
@@ -462,7 +490,7 @@ function questionReleve(ds, rng) {
       const q = `${maj(ds.quand(xs[i]))}, ${ds.plus.q} ${haut ? ds.plus.haut : ds.plus.bas} ?`;
       return { ...base, ...r, fiche: 'sc-lire-donnees',
         enonce: `${ds.contexte} Observe ${sup}. ${q}`,
-        explication: `${maj(ds.quand(xs[i]))} : ${S.map((s) => `« ${s.nom} » ${fmt(s.v[i])} ${ds.unite}`).join(', ')}. ${haut ? 'La plus grande' : 'La plus petite'} valeur est pour « ${bon.nom} ».`, _signature: `${cle}|plus|${haut}|${i}` };
+        explication: `${maj(ds.quand(xs[i]))} : ${S.map((s) => `« ${s.nom} » ${fmt(s.v[i])} ${ds.unite}`).join(', ')}. ${haut ? 'La plus grande' : 'La plus petite'} valeur est pour « ${bon.nom} ».${ds.note ? ` ${ds.note}` : ''}`, _signature: `${cle}|plus|${haut}|${i}` };
     }
     if ((f === 'ecart' || f === 'plus') && S.length >= 2) {
       const [a, b] = rng.shuffle(S).slice(0, 2); const i = rng.int(Math.max(ixMin, 2), xs.length - 1);
@@ -470,7 +498,7 @@ function questionReleve(ds, rng) {
       if (d <= 0) return null;
       return { ...base, type: 'numerique', reponse: d, unite: ds.unite, fiche: 'sc-lire-donnees',
         enonce: `${ds.contexte} Observe ${sup}. ${maj(ds.quand(xs[i]))}, quelle est la différence entre ${ds.yNom} ${ds.objet(h.nom)} et ${ds.masc ? 'celui' : 'celle'} ${ds.objet(l.nom)} ?`,
-        explication: `${maj(ds.quand(xs[i]))} : « ${h.nom} » ${fmt(h.v[i])} ${ds.unite} et « ${l.nom} » ${fmt(l.v[i])} ${ds.unite}. Différence : ${fmt(h.v[i])} − ${fmt(l.v[i])} = ${fmt(d)} ${ds.uniteMot}.`, _signature: `${cle}|ecart|${h.nom}|${l.nom}|${i}` };
+        explication: `${maj(ds.quand(xs[i]))} : « ${h.nom} » ${fmt(h.v[i])} ${ds.unite} et « ${l.nom} » ${fmt(l.v[i])} ${ds.unite}. Différence : ${fmt(h.v[i])} − ${fmt(l.v[i])} = ${fmt(d)} ${ds.uniteMot}.${ds.note ? ` ${ds.note}` : ''}`, _signature: `${cle}|ecart|${h.nom}|${l.nom}|${i}` };
     }
     if (f === 'variation' || f === 'ecart' || f === 'plus') {
       const s = rng.pick(S); const i0 = ds.fixeDebut ?? 0; const i1 = rng.int(Math.max(ixMin, 2), xs.length - 1);
@@ -493,6 +521,7 @@ export function genererReleves(modele, rng) {
   const sup = rng.next() < 0.6 ? 'graphique' : 'tableau';
   const exps = [expRefroid, expRefroid, expGlacon, expSoleil, expSoleil, expPouls, expPlante, expGermination];
   const ds = rng.pick(exps)(rng, sup);
+  if (!ds) return null;
   const q = questionReleve(ds, rng);
   if (!q) return null;
   q.cleContenu = q._signature;
@@ -506,7 +535,7 @@ export function genererEffort(modele, rng) {
   const p = rng.pick(PRENOMS); const e = il(p);
   const forme = rng.pick(['pouls', 'pouls', 'ventil', 'moyenne', 'moyenne', 'moyPouls', 'hausse', 'tableau', 'pourquoi', 'pourquoi', 'vocab', 'mesure', 'vf', 'vf']);
   const apres = rng.next() < 0.5;
-  const sport = rng.pick(['après avoir couru 5 minutes', 'après 30 sauts à la corde', 'juste après une course', 'après avoir monté les escaliers en courant', 'après 2 minutes de jumping jacks']);
+  const sport = rng.pick(['après avoir couru 5 minutes', 'après 30 sauts à la corde', 'juste après une course', 'après avoir monté les escaliers en courant', 'après 2 minutes de sauts en étoile']);
   const moment = apres ? sport : 'au repos, assis' + (FILLES.includes(p) ? 'e' : '');
   if (forme === 'pouls') {
     const { s, k } = rng.pick(DUREES);
@@ -558,7 +587,7 @@ export function genererEffort(modele, rng) {
     const fig = svgTableau({ titre: elider(pouls ? `Rythme cardiaque de ${p} (battements/min)` : `Ventilation de ${p} (mouvements/min)`),
       entetes: ['', 'Mesure 1', 'Mesure 2', 'Mesure 3'], lignes: [['Au repos', ...rep.v.map(String)], ['Après l\'effort', ...eff.v.map(String)]] });
     const q = rng.pick(['repos', 'effort', 'diff']);
-    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) ÷ 3 = ${o.v[0] + o.v[1] + o.v[2]} ÷ 3 = ${o.m}.`;
+    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) ÷ 3 = ${o.v[0] + o.v[1] + o.v[2]} ÷ 3 = ${o.m} ${unite}.`;
     if (q === 'diff') {
       return { type: 'numerique', reponse: eff.m - rep.m, unite, figure: fig, difficulte: 3,
         enonce: `${p} a mesuré 3 fois ${pouls ? 'son rythme cardiaque' : 'sa ventilation'} au repos, puis 3 fois après l'effort. Calcule la moyenne de chaque ligne du tableau. De combien la moyenne après l'effort dépasse-t-elle la moyenne au repos ?`,
@@ -592,7 +621,7 @@ export function genererEffort(modele, rng) {
     ];
     const Q = rng.pick(QS);
     const r = qcm(rng, Q.b, rng.shuffle(Q.f).slice(0, 3));
-    return { ...r, enonce: Q.e, explication: `${Q.b} ${Q.x}`, _signature: `pq|${Q.e}` };
+    return { ...r, enonce: Q.e, explication: `${Q.b}${/[.!?]$/.test(Q.b) ? '' : '.'} ${Q.x}`, _signature: `pq|${Q.e}` };
   }
   if (forme === 'vocab') {
     const QS = [
@@ -670,10 +699,11 @@ const ANIMAUX = [
   A('la', 'mouche', 'p6', 'ins'), A('la', 'sauterelle', 'p6', 'ins'), A('la', 'libellule', 'p6', 'ins'), A('la', 'guêpe', 'p6', 'ins'), A('le', 'hanneton', 'p6', 'ins'),
   A('le', 'crabe', 'an', 'cru', { note: 'il a 10 pattes' }), A('la', 'crevette', 'an', 'cru', { note: 'elle a 10 pattes' }), A('le', 'homard', 'an', 'cru', { note: 'il a 10 pattes' }),
   A('l\'', 'écrevisse', 'an', 'cru', { note: 'elle a 10 pattes' }), A('le', 'cloporte', 'an', 'cru', { note: 'il a 14 pattes' }),
-  A('l\'', 'araignée', 'p8', 'ara'), A('le', 'scorpion', 'p8', 'ara'), A('le', 'faucheux', 'p8', 'ara'),
+  A('l\'', 'araignée', 'p8', 'ara'), A('le', 'scorpion', 'p8', 'ara', { note: 'ses pinces ne sont pas des pattes' }), A('le', 'faucheux', 'p8', 'ara'),
   A('l\'', 'escargot', 'co', 'esc'), A('la', 'limace', 'pp', 'lim'),
   A('le', 'ver de terre', 'ar', 'ann'), A('la', 'sangsue', 'ar', 'ann'),
 ];
+for (const a of ANIMAUX) if (a.groupe === 'ois') a.note = 'ses ailes sont ses membres avant';
 const le = (a) => `${a.art}${a.art.endsWith('\'') ? '' : ' '}${a.nom}`;
 const Le = (a) => maj(le(a));
 const fem = (a) => a.art === 'la' || ['abeille', 'autruche', 'écrevisse', 'araignée'].includes(a.nom);
@@ -796,7 +826,7 @@ export function genererEmboites(modele, rng) {
       const a = rng.pick(ANIMAUX); const z = zoneDe(a, dessines);
       const r = qcm(rng, `Zone ${lettres[z]}`, rng.shuffle(zones.filter((k) => k !== z)).slice(0, 3).map((k) => `Zone ${lettres[k]}`));
       const expl = z === 'racine'
-        ? `${Le(a)} n'a aucun des attributs écrits dans ces ensembles : on ${fem(a) ? 'la' : 'le'} place dans le grand rectangle, hors des autres ensembles (zone ${lettres[z]}).`
+        ? `${Le(a)} a ${attributsTexte(a)}, mais aucun des ensembles dessinés ne porte ces attributs : on ${fem(a) ? 'la' : 'le'} place dans le grand rectangle « Animaux de la collection », hors des autres ensembles (zone ${lettres[z]}).`
         : `${Le(a)} a ${attributsTexte(a)}. On ${fem(a) ? 'la' : 'le'} place dans le plus petit ensemble qui lui correspond : « ${ENS[z].lignes.join(' ')} » (zone ${lettres[z]}).${a.note ? ` Attention : ${a.note}.` : ''}`;
       return { ...r, figure: fig, enonce: `Voici une classification en ensembles emboîtés. Dans quelle zone faut-il placer ${le(a)} ?`, explication: expl,
         _signature: `zone|${cleScen}|${ordreL.join('')}|${a.nom}` };
@@ -806,7 +836,7 @@ export function genererEmboites(modele, rng) {
     const bon = rng.pick(bons);
     const faux = rng.shuffle(ANIMAUX.filter((a) => zoneDe(a, dessines) !== z)).slice(0, 3);
     const r = qcm(rng, maj(bon.nom), faux.map((a) => maj(a.nom)));
-    const expl = `${Le(bon)} a ${attributsTexte(bon)} : sa place est dans la zone ${lettres[z]}. ${maj(faux.map((a) => `${le(a)} va dans la zone ${lettres[zoneDe(a, dessines)]}`).join(' ; '))}.`;
+    const expl = `${Le(bon)} a ${attributsTexte(bon)}${z === 'racine' ? ', mais aucun des ensembles dessinés ne porte ces attributs' : ''} : sa place est dans la zone ${lettres[z]}. ${maj(faux.map((a) => `${le(a)} va dans la zone ${lettres[zoneDe(a, dessines)]}`).join(' ; '))}.`;
     return { ...r, figure: fig, enonce: `Voici une classification en ensembles emboîtés. Quel animal faut-il placer dans la zone ${lettres[z]} ?`, explication: expl,
       _signature: `qui|${cleScen}|${ordreL.join('')}|${z}|${bon.nom}|${triee(faux.map((a) => a.nom))}` };
   }
@@ -850,7 +880,7 @@ export function genererEmboites(modele, rng) {
     const a = rng.pick(ANIMAUX); const k = rng.pick(ORDRE_ENS.filter((x) => x !== 'racine'));
     const v = possede(a, k);
     return { type: 'vrai_faux', reponse: v, enonce: `Vrai ou faux ? Dans une classification en ensembles emboîtés, ${le(a)} se trouve à l'intérieur de l'ensemble « ${ENS[k].lignes.join(' ')} ».`,
-      explication: `${v ? 'Vrai' : 'Faux'}. ${Le(a)} a ${attributsTexte(a)}${v ? '' : ` : ${ilA(a)} n'a ${ENS[k].neg}`}.${a.note ? ` (${maj(a.note)}.)` : ''}`,
+      explication: `${v ? 'Vrai' : 'Faux'}. ${Le(a)} a ${attributsTexte(a)}${v ? '' : ` : ${ilA(a)} n'a ${ENS[k].neg}`}.${a.note && ['m4', 'p6', 'p8'].includes(k) ? ` (${maj(a.note)}.)` : ''}`,
       _signature: `dedans|${a.nom}|${k}` };
   }
   // intrus : lequel ne peut pas aller dans l'ensemble k ?
@@ -860,7 +890,7 @@ export function genererEmboites(modele, rng) {
   const bon = rng.pick(non); const faux = rng.shuffle(oui).slice(0, 3);
   const r = qcm(rng, maj(bon.nom), faux.map((a) => maj(a.nom)));
   return { ...r, enonce: `Lequel de ces animaux ne peut pas être placé dans l'ensemble « ${ENS[k].lignes.join(' ')} » ?`,
-    explication: `${Le(bon)} a ${attributsTexte(bon)}, mais ${ilA(bon)} n'a ${ENS[k].neg}. ${maj(listeEt(faux.map(le)))} ont ${ENS[k].attr}.`,
+    explication: `${Le(bon)} a ${attributsTexte(bon)}, mais ${ilA(bon)} n'a ${ENS[k].neg}. ${maj(listeEt(faux.map(le)))} ont ${ENS[k].attr}.${k === 'm4' && faux.some((a) => a.note?.includes('ailes')) ? ' Les ailes des oiseaux et de la chauve-souris sont leurs membres avant.' : ''}`,
     _signature: `intrus|${k}|${bon.nom}|${triee(faux.map((a) => a.nom))}` };
 }
 
@@ -893,6 +923,7 @@ const NOTE_ATTR = {
   m4: { ois: 'Les ailes de l\'oiseau sont ses membres avant : il a bien 4 membres.', mam: '' },
   ec: { amp: 'Les amphibiens ont une peau nue et humide, sans écailles.' },
 };
+const noteAttr = (a, k) => (k === 'm4' && a.nom === 'chauve-souris' ? 'Les ailes de la chauve-souris sont ses membres avant : elle a bien 4 membres.' : NOTE_ATTR[k]?.[a.groupe] ?? '');
 function etat(a, k) {
   if (a.nom === 'souris' && k === 'ec') return '?';
   return GROUPES[a.groupe].split(' ')[CLES_ATTR.indexOf(k)];
@@ -932,7 +963,7 @@ export function genererAttributs(modele, rng) {
     if (!bons.length || mauvais.length < 3) return null;
     const k = rng.pick(bons); const faux = rng.shuffle(mauvais).slice(0, 3);
     const r = qcm(rng, maj(ATTR[k].txt), faux.map((x) => maj(ATTR[x].txt)));
-    const note = NOTE_ATTR[k]?.[a.groupe] ?? '';
+    const note = noteAttr(a, k);
     return { ...r, enonce: forme === 'possede' ? `Lequel de ces attributs ${le(a)} possède-t-${ilA(a)} ?` : `Lequel de ces attributs ${le(a)} ne possède-t-${ilA(a)} pas ?`,
       explication: `${resumeAttr(a)}${forme === 'pasPossede' ? ` ${maj(ilA(a))} ${negation(k)}.` : ''}${note ? ` ${note}` : ''}`,
       _signature: `${forme}|${a.nom}|${k}|${triee(faux)}` };
@@ -950,7 +981,7 @@ export function genererAttributs(modele, rng) {
   }
   if (forme === 'vf') {
     const a = rng.pick(SANS); const k = rng.pick(CLES_ATTR.filter((x) => etat(a, x) !== '?'));
-    const v = avoir(a, k); const note = NOTE_ATTR[k]?.[a.groupe] ?? '';
+    const v = avoir(a, k); const note = noteAttr(a, k);
     return { type: 'vrai_faux', reponse: v, enonce: `Vrai ou faux ? ${Le(a)} a ${ATTR[k].txt}.`,
       explication: `${v ? 'Vrai' : 'Faux'}. ${resumeAttr(a)}${v ? '' : ` ${maj(ilA(a))} ${negation(k)}.`}${note ? ` ${note}` : ''}`, _signature: `vf|${a.nom}|${k}` };
   }
@@ -963,7 +994,7 @@ export function genererAttributs(modele, rng) {
     if (tires.length < 4) return null;
     return { type: 'grille', enonce: `Ces animaux ont-ils ${ATTR[k].txt} ? Choisis Oui ou Non pour chacun.`, lignes: tires.map((a) => maj(a.nom)), colonnes: ['Oui', 'Non'],
       reponse: tires.map((a) => (avoir(a, k) ? 0 : 1)), points: 4,
-      explication: `Ont ${ATTR[k].txt} : ${tires.filter((a) => avoir(a, k)).map((a) => a.nom).join(', ') || 'aucun'}. N'ont pas ${ATTR[k].neg} : ${tires.filter((a) => !avoir(a, k)).map((a) => a.nom).join(', ') || 'aucun'}.`,
+      explication: `Ont ${ATTR[k].txt} : ${tires.filter((a) => avoir(a, k)).map((a) => a.nom).join(', ') || 'aucun'}. N'ont pas ${ATTR[k].neg} : ${tires.filter((a) => !avoir(a, k)).map((a) => a.nom).join(', ') || 'aucun'}.${k === 'm4' && tires.some((a) => a.groupe === 'ois' || a.nom === 'chauve-souris') ? ' Les ailes des oiseaux et de la chauve-souris sont leurs membres avant.' : ''}`,
       _signature: `grille|${k}|${triee(tires.map((a) => a.nom))}` };
   }
   if (forme === 'espece') {
@@ -1023,7 +1054,7 @@ const AFFIRM = [
   ['La plupart des nutriments passent dans le sang au niveau de l\'intestin grêle.', true, 'C\'est l\'absorption intestinale : les nutriments traversent la paroi de l\'intestin grêle et passent dans le sang.'],
   ['Le dioxygène passe de l\'air au sang dans les alvéoles des poumons.', true, 'Les alvéoles sont entourées de petits vaisseaux sanguins : c\'est là que se font les échanges gazeux.'],
   ['Le dioxyde de carbone est rejeté hors du corps par les poumons, lors de l\'expiration.', true, 'Le sang apporte le dioxyde de carbone aux poumons ; il passe dans les alvéoles et sort avec l\'air expiré.'],
-  ['Le côlon absorbe de l\'eau.', true, 'À la fin du tube digestif, le côlon absorbe de l\'eau ; ce qui n\'est pas absorbé est évacué par l\'anus.'],
+  ['Le côlon (gros intestin) absorbe encore de l\'eau avant que les restes soient évacués par l\'anus.', true, 'Une grande partie de l\'eau passe dans le sang dans l\'intestin grêle ; le côlon en absorbe encore : les restes deviennent plus solides et sont évacués par l\'anus.'],
   ['Les artères transportent le sang du cœur vers les organes.', true, 'Artères : du cœur vers les organes. Veines : des organes vers le cœur.'],
   ['Les veines ramènent le sang des organes vers le cœur.', true, 'Artères : du cœur vers les organes. Veines : des organes vers le cœur.'],
   ['Certains déchets transportés par le sang sont évacués dans l\'urine.', true, 'Les reins filtrent le sang : les déchets forment l\'urine.'],
@@ -1055,7 +1086,7 @@ const QCMS = [
   { e: 'Quel muscle en forme de dôme, situé sous les poumons, s\'abaisse à l\'inspiration ?', b: 'Le diaphragme', f: ['Le cœur', 'L\'œsophage', 'Le biceps'], x: 'En s\'abaissant, il agrandit la cage thoracique : l\'air entre.' },
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le pancréas', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le foie', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
-  { e: 'Dans quelle partie du tube digestif de l\'eau est-elle absorbée, juste avant l\'anus ?', b: 'Dans le côlon', f: ['Dans l\'œsophage', 'Dans la bouche', 'Dans la trachée'], x: 'Le côlon absorbe de l\'eau ; le reste est évacué par l\'anus.' },
+  { e: 'Dans quelle partie du tube digestif de l\'eau est-elle absorbée, juste avant l\'anus ?', b: 'Dans le côlon', f: ['Dans l\'œsophage', 'Dans la bouche', 'Dans la trachée'], x: 'Le côlon (gros intestin) absorbe encore de l\'eau ; les restes sont évacués par l\'anus.' },
   { e: 'Quel conduit amène l\'air jusqu\'aux bronches ?', b: 'La trachée', f: ['L\'œsophage', 'L\'artère', 'L\'intestin grêle'], x: 'Nez ou bouche → trachée → bronches → alvéoles des poumons.' },
   { e: 'Que transporte le sang qui revient des muscles vers les poumons ?', b: 'Du dioxyde de carbone à rejeter', f: ['Des aliments non digérés', 'De l\'urine', 'De l\'air pur'], x: 'Les muscles produisent du dioxyde de carbone ; le sang l\'emporte jusqu\'aux poumons.' },
 ];

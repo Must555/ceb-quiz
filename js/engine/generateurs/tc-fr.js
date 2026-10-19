@@ -77,7 +77,7 @@ const TEMPS_C = {
   pqp: { nom: 'plus-que-parfait', au: 'au plus-que-parfait', aux: 'imparfait', regle: "auxiliaire être ou avoir à l'imparfait + participe passé" },
   fa: { nom: 'futur antérieur', au: 'au futur antérieur', aux: 'futur', regle: 'auxiliaire être ou avoir au futur simple + participe passé' },
   cp: { nom: 'conditionnel passé', au: 'au conditionnel passé', aux: 'conditionnel', regle: 'auxiliaire être ou avoir au conditionnel présent + participe passé' },
-  fp: { nom: 'futur proche', au: 'au futur proche', regle: 'verbe aller au présent + infinitif' },
+  fp: { nom: 'futur proche', au: 'au futur proche', regle: 'verbe aller au présent + infinitif (ce n\'est pas un temps composé : il n\'y a pas de participe passé)' },
   pc: { nom: 'passé composé', au: 'au passé composé', aux: 'present', regle: 'auxiliaire être ou avoir au présent + participe passé' },
 };
 // {S} sujet, {P} pronom qui reprend le sujet, {A} avoir à l'imparfait (accordé au sujet), {V} verbe, {C} complément.
@@ -295,11 +295,11 @@ function frRadicalEr(modele, rng) {
 const PHRASES_CORR = [
   ['sv', 'Les enfants [jouent|joue] dans la cour de récréation.'], ['sv', 'Mes parents [regardent|regarde] un film à la télévision.'],
   ['sv', 'Le chien de mes voisins [aboie|aboient] toute la nuit.'], ['sv', 'Chaque matin, les oiseaux [chantent|chante] dans le jardin.'],
-  ['sv', 'Tu [manges|mange] ton dessert trop vite.'], ['sv', 'Nous [partons|partez] en vacances demain.'],
+  ['sv', 'Mes sœurs [mangent|mange] leur dessert trop vite.'], ['sv', 'Mes cousins [partent|part] en vacances demain.'],
   ['sv', 'Les élèves de ma classe [préparent|prépare] un spectacle.'], ['sv', 'Dans la forêt [vivent|vit] des cerfs et des sangliers.'],
-  ['sv', 'Ma sœur et mon frère [font|fait] leurs devoirs.'], ['sv', 'Vous [finissez|finissent] toujours avant les autres.'],
+  ['sv', 'Ma sœur et mon frère [font|fait] leurs devoirs.'], ['sv', 'Ces élèves [finissent|finit] toujours avant les autres.'],
   ['sv', 'Les fleurs du jardin [sentent|sent] très bon.'], ['sv', 'Le maître [explique|expliquent] la leçon aux élèves.'],
-  ['sv', 'Les pommes de cet arbre [sont|est] bien mûres.'], ['sv', 'Je [range|ranges] mes affaires dans mon cartable.'],
+  ['sv', 'Les pommes de cet arbre [sont|est] bien mûres.'], ['sv', 'Mon frère [range|ranges] ses affaires dans son cartable.'],
   ['sv', 'Mes amis [viennent|vient] souvent jouer chez moi.'], ['sv', 'Les voitures [roulent|roule] lentement dans la rue.'],
   ['sv', 'Le facteur [apporte|apportent] les lettres.'], ['sv', 'Où [vont|va] tes cousins cet été ?'],
   ['sv', "Les joueurs de l'équipe [courent|court] très vite."], ['sv', 'Mon grand-père nous [raconte|racontent] une histoire.'],
@@ -332,9 +332,9 @@ const PHRASES_CORR = [
   ['son', 'Mes cousins [sont|son] très gentils.'], ['son', 'Léa promène [son|sont] chien tous les soirs.'],
   ['son', 'Les magasins [sont|son] fermés le dimanche.'], ['son', 'Le chat dort sur [son|sont] coussin.'],
   ['son', 'Ils [sont|son] partis tôt ce matin.'], ['son', 'Mon père répare [son|sont] vélo.'],
-  ['ces', 'Le chat lèche [ses|ces] pattes après le repas.'], ['ces', "L'oiseau déploie [ses|ces] ailes pour s'envoler."],
-  ['ces', '[Ces|Ses] jours-ci, il fait très froid.'], ['ces', 'Le paon étale [ses|ces] plumes colorées.'],
-  ['ces', 'Combien coûtent [ces|ses] pommes-là ?'],
+  // ses → ces n'est pas retenu : « Le chat lèche ces pattes » reste une phrase correcte.
+  ['ces', '[Ces|Ses] jours-ci, il fait très froid.'], ['ces', 'Combien coûtent [ces|ses] pommes-là ?'],
+  ['ces', 'Regarde [ces|ses] nuages-là : ils annoncent la pluie.'], ['ces', '[Ces|Ses] chaussures-ci sont trop petites pour moi.'],
   ['er', 'Je vais [manger|mangé] chez ma grand-mère.'], ['er', 'Nous avons [joué|jouer] au football.'],
   ['er', 'Il faut [ranger|rangé] ta chambre.'], ['er', 'Tom a [regardé|regarder] un dessin animé.'],
   ['er', "Elle veut [chanter|chanté] à la fête de l'école."], ['er', 'Hier, nous avons [visité|visiter] un château.'],
@@ -394,7 +394,7 @@ const PHRASES_GN = [
   '{CP:Hier}, ma {EP@tante:vieille} {N:tante} a préparé une {N:tarte} {CN@tarte:aux pommes}.',
   '{CP:Aujourd\'hui}, les {N:élèves} {CN@élèves:de sixième} visitent un {N:musée} {EP@musée:immense}.',
   '{CP:En hiver}, ce {N:pull} {CN@pull:en laine} est {AT:chaud}.',
-  'Une {EP@maison:jolie} {N:maison} {CN@maison:en briques} se trouve {CP:au bout de la rue}.',
+  '{CP:Au bout de la rue}, on aperçoit une {EP@maison:jolie} {N:maison} {CN@maison:en briques}.',
   '{CP:Dans le jardin}, les {N:roses} {EP@roses:rouges} semblent {AT:fragiles}.',
   '{CP:Depuis lundi}, le {N:vélo} {CN@vélo:de Tom} est {AT:cassé}.',
   'Mon {N:oncle} {CN@oncle:de Liège} conduit un {N:camion} {EP@camion:énorme} {CP:chaque jour}.',
@@ -407,30 +407,30 @@ const PHRASES_GN = [
   '{CP:Sur la table}, le {N:gâteau} {CN@gâteau:au chocolat} semble {AT:délicieux}.',
   'Notre {N:professeur} {CN@professeur:de gymnastique} organise un {N:tournoi} {EP@tournoi:amusant} {CP:vendredi}.',
   'Le {EP@pont:vieux} {N:pont} {CN@pont:de pierre} traverse la {N:rivière} {EP@rivière:calme}.',
-  'Les {N:enfants} {EP@enfants:sages} reçoivent une {N:récompense} {CN@récompense:en chocolat} {CP:à la fin de la journée}.',
+  '{CP:Ce soir}, les {N:enfants} {EP@enfants:sages} reçoivent une {N:récompense} {CN@récompense:en chocolat}.',
   '{CP:Depuis la place}, la {N:tour} {CN@tour:de l\'église} paraît {AT:immense}.',
   '{CP:Le dimanche}, mon {N:grand-père} lit le {N:journal} {CN@journal:du village} dans son {N:fauteuil} {EP@fauteuil:préféré}.',
-  'Une {N:abeille} {EP@abeille:curieuse} tourne autour du {N:pot} {CN@pot:de confiture} {CP:depuis dix minutes}.',
+  'Une {N:abeille} {EP@abeille:curieuse} vole autour du {N:pot} {CN@pot:de confiture} {CP:depuis dix minutes}.',
   '{CP:Ce samedi}, le {N:train} {CN@train:pour Ostende} est {AT:complet}.',
   '{CP:Depuis l\'été}, les {N:murs} {CN@murs:de ma chambre} sont {AT:bleus}.',
-  'Tom a trouvé une {N:pièce} {EP@pièce:ancienne} {CN@pièce:en argent} {CP:dans le sable}.',
+  '{CP:Pendant les vacances}, Tom a trouvé une {N:pièce} {EP@pièce:ancienne} {CN@pièce:en argent}.',
   'La {N:boulangère} {EP@boulangère:souriante} vend du {N:pain} {EP@pain:frais} {CP:chaque matin}.',
   'Le {N:jardin} {CN@jardin:de Mamie} devient {AT:magnifique} {CP:au printemps}.',
   '{CP:Hier}, ma {N:mère} a acheté une {N:lampe} {EP@lampe:moderne} {CN@lampe:en verre}.',
-  'Les {N:nuages} {EP@nuages:gris} annoncent un {N:orage} {EP@orage:terrible} {CP:pour ce soir}.',
+  '{CP:Depuis midi}, les {N:nuages} {EP@nuages:gris} annoncent un {N:orage} {EP@orage:terrible}.',
   '{CP:Aujourd\'hui}, le {N:directeur} {CN@directeur:de l\'école} paraît {AT:inquiet}.',
   '{CP:Avant de sortir}, j\'ai mis mon {N:bonnet} {CN@bonnet:en laine} et mes {N:gants} {EP@gants:chauds}.',
   '{CP:Selon ma sœur}, ce {N:livre} {CN@livre:d\'aventures} est {AT:passionnant}.',
   'Les {N:poules} {CN@poules:de la ferme} pondent des {N:œufs} {EP@œufs:frais} {CP:tous les jours}.',
-  'Une {N:voiture} {CN@voiture:de sport} {EP@voiture:rouge} attend {CP:devant la maison}.',
+  'Une {EP@voiture:petite} {N:voiture} {CN@voiture:de sport} attend {CP:devant la maison}.',
   'Mon {N:ami} {EP@ami:fidèle} reste {AT:calme} {CP:pendant l\'orage}.',
-  '{CP:À la plage}, les {N:enfants} construisent un {N:château} {CN@château:de sable} {EP@château:gigantesque}.',
+  '{CP:À la plage}, les {N:enfants} construisent un {EP@château:grand} {N:château} {CN@château:de sable}.',
   'L\'{N:eau} {CN@eau:de la piscine} semble {AT:froide} {CP:ce matin}.',
   'Le {N:facteur} {CN@facteur:du quartier} apporte un {EP@colis:gros} {N:colis} {CP:à midi}.',
   '{CP:Cette année}, les {N:fraises} {CN@fraises:du jardin} sont {AT:sucrées}.',
   'Le {EP@lapin:petit} {N:lapin} {CN@lapin:de Zoé} mange une {N:carotte} {CP:chaque soir}.',
   '{CP:Soudain}, une {EP@odeur:délicieuse} {N:odeur} {CN@odeur:de crêpes} remplit la {N:cuisine}.',
-  'Le {N:boulanger} {EP@boulanger:matinal} prépare des {N:croissants} {CN@croissants:au beurre} {CP:avant l\'aube}.',
+  '{CP:Dès cinq heures}, le {N:boulanger} {EP@boulanger:courageux} prépare des {N:croissants} {CN@croissants:au beurre}.',
   'Mes {N:cousins} {CN@cousins:de Namur} semblent {AT:heureux} {CP:depuis leur arrivée}.',
 ];
 const FONCTIONS_GN = { EP: 'épithète', CN: 'complément du nom', AT: 'attribut du sujet', CP: 'complément de phrase', CD: 'complément direct du verbe' };
@@ -505,15 +505,15 @@ const PHRASES_PRED = [
   ['', '', 'cette histoire', 'semble', 'incroyable'], ['pendant la récréation', 'd', 'les enfants', 'jouent', 'au ballon'],
   ['vers dix heures', 'f', 'le facteur', 'apporte', 'le courrier'], ['au printemps', 'd', 'les hirondelles', 'reviennent', ''],
   ['', '', 'ma sœur', 'deviendra', 'vétérinaire'], ['hier soir', 'd', "l'orage", 'a réveillé', 'toute la famille'],
-  ["avant l'aube", 'f', 'le boulanger', 'prépare', 'les croissants'], ['chaque mercredi', 'd', 'Zoé', 'apprend', 'le piano'],
+  ['dès cinq heures', 'f', 'le boulanger', 'prépare', 'les croissants'], ['chaque mercredi', 'd', 'Zoé', 'apprend', 'le piano'],
   ['en automne', 'f', 'les feuilles des arbres', 'tombent', ''], ['le soir', 'f', 'le professeur', 'corrige', 'nos cahiers'],
   ['ce week-end', 'd', 'mes cousins', 'ont construit', 'une cabane'], ['', '', 'cette tarte aux pommes', 'est', 'délicieuse'],
-  ['soudain', 'd', 'le chien', 'aboie', ''], ['avant le match', 'f', 'les joueurs', 'écoutent', "l'entraîneur"],
+  ['dans la cour', 'd', 'le chien', 'aboie', ''], ['avant le match', 'f', 'les joueurs', 'écoutent', "l'entraîneur"],
   ['à la ferme', 'd', 'Léa', 'nourrit', 'les lapins'], ['', '', 'mon oncle', 'parle', 'à ses voisins'],
-  ['dans un mois', 'd', 'nous', 'partirons', ''], ['avec enthousiasme', 'f', 'les touristes', 'photographient', 'la cathédrale'],
+  ['dans un mois', 'd', 'nous', 'partirons', ''], ['pendant la visite', 'f', 'les touristes', 'photographient', 'la cathédrale'],
   ['le matin', 'd', 'Papa', 'boit', 'un café'], ['ce soir', 'f', 'le petit garçon', 'paraît', 'fatigué'],
   ['cet été', 'd', 'mes grands-parents', 'visiteront', 'la Grèce'], ['', '', 'les abeilles', 'fabriquent', 'du miel'],
-  ['avant de dormir', 'd', 'Hugo', 'lit', 'une histoire'], ['dans la grange', 'f', 'le chat', 'attrape', 'une souris'],
+  ['avant de dormir', 'd', 'Hugo', 'lit', 'une histoire'], ['dans la grange', 'd', 'le chat', 'attrape', 'une souris'],
   ['tous les matins', 'd', 'la voisine', 'promène', 'son chien'], ['', '', 'les spectateurs', 'applaudissent', 'les acrobates'],
   ['pendant la nuit', 'd', 'la neige', 'est tombée', ''], ['depuis ce matin', 'd', 'le vent', 'secoue', 'les arbres'],
   ['au début du cours', 'f', 'la maîtresse', 'distribue', 'les dictionnaires'], ['à midi', 'd', 'les élèves', 'mangent', 'leurs tartines'],
@@ -595,7 +595,7 @@ const CADRES_ENUM = [
   ['crepes', 'Mamie mélange L.'],
 ];
 const CADRES_DP = [
-  ['crepes', 'Pour faire des crêpes, il faut L.'], ['cartable', 'Voici ce que tu dois apporter L.'], ['sport', 'Prépare tes affaires de sport L.'],
+  ['crepes', 'Pour faire des crêpes, voici les ingrédients L.'], ['cartable', 'Voici ce que tu dois apporter L.'], ['sport', 'Prépare tes affaires de sport L.'],
   ['fruits', 'Voici ma liste de courses L.'], ['ferme', 'Voici les animaux de la ferme L.'], ['hiver', 'En hiver, je porte tout ceci L.'],
 ];
 const PAROLES = [
@@ -603,11 +603,19 @@ const PAROLES = [
   ['As-tu fini tes devoirs', '?', 'demande'], ['Pourquoi le ciel est-il bleu', '?', 'demande'], ['Est-ce que la piscine est ouverte', '?', 'demande'],
   ['Attention, le bus arrive', '!', 'crie'], ['Quel magnifique arc-en-ciel', '!', "s'exclame"], ['Au secours', '!', 'crie'],
   ['Bravo, tu as gagné', '!', "s'exclame"], ['Comme il fait chaud aujourd\'hui', '!', "s'exclame"], ['Quelle belle surprise', '!', "s'exclame"],
-  ['Le repas est prêt', '.', 'annonce'], ['Je pars à la piscine', '.', 'dit'], ['Nous allons visiter un château', '.', 'explique'],
-  ['Il faut ranger la classe', '.', 'dit'], ['Le train partira à midi', '.', 'annonce'], ['Mon chat a eu trois chatons', '.', 'raconte'],
+  ['Le repas est prêt', '.', 'annonce'], ['Je pars à la piscine', '.', 'annonce'], ['Nous allons visiter un château', '.', 'explique'],
+  ['Il faut ranger la classe', '.', 'rappelle'], ['Le train partira à midi', '.', 'annonce'], ['Mon chat a eu trois chatons', '.', 'raconte'],
 ];
 const LOCUTEURS = ['Léa', 'Tom', 'Maman', 'le maître', 'Hugo', 'Grand-père', 'la directrice', 'Zoé'];
-const REPONSES = ['Oui, j\'arrive !', 'Non, pas maintenant.', 'Bien sûr, attends-moi !', 'Je ne sais pas.', 'Plus tard, peut-être.', 'Oui, avec plaisir !'];
+// Réponses possibles pour chacune des 6 premières PAROLES (les questions) : la réponse doit aller avec la question.
+const REPONSES = [
+  ["Oui, j'arrive !", 'Non, pas maintenant.', 'Plus tard, peut-être.', 'Oui, avec plaisir !'],
+  ['Sous mon lit.', 'Derrière la porte.', 'Je ne sais plus.'],
+  ['Il est midi.', 'Il est déjà huit heures !', 'Je ne sais pas.'],
+  ['Oui, depuis longtemps !', 'Pas encore.', 'Presque.'],
+  ['Je ne sais pas.', 'Bonne question !'],
+  ["Oui, jusqu'à six heures.", 'Non, elle est fermée.', 'Je crois que oui.'],
+];
 const REPONDANTS = [['Tom', 'répond'], ['Léa', 'répond'], ['Papa', 'répond'], ['Zoé', 'répond'], ['Hugo', 'dit']];
 const EXPLICATIONS_DP = [
   ['Tom ne peut pas sortir', 'il a de la fièvre'], ['Prends ton parapluie', 'il va pleuvoir'], ['Léa est très contente', 'elle a gagné la course'],
@@ -615,6 +623,7 @@ const EXPLICATIONS_DP = [
   ['La route est fermée', 'un arbre est tombé'], ['Hugo a faim', "il n'a pas mangé à midi"], ['Les fleurs sont fanées', 'personne ne les a arrosées'],
   ['Le match est annulé', 'le terrain est inondé'],
 ];
+const deLoc = (l) => (l.startsWith('le ') ? `du ${l.slice(3)}` : `de ${l}`);
 const finSigne = (s) => (s === '.' ? '.' : ` ${s}`);
 const enumerer = (items) => `${items.slice(0, -1).join(', ')} et ${items.at(-1)}`;
 
@@ -639,7 +648,8 @@ function frPonctuation(modele, rng) {
     if (forme === 'deux_points') {
       const trou = t.replace(' L', `___ ${enumerer(items)}`);
       const complete = t.replace(' L', ` : ${enumerer(items)}`);
-      return { _signature: sig, ...choixSignes(':'), enonce: `Quel signe faut-il à la place de ___ ? « ${trou} »`,
+      // Pas de virgule parmi les choix : « Voici ma liste de courses, des poires… » pourrait se défendre.
+      return { _signature: sig, ...choixSignes(':', [',']), enonce: `Quel signe faut-il à la place de ___ ? « ${trou} »`,
         explication: `« ${complete} » Les deux-points annoncent l'énumération qui suit.` };
     }
     const bonne = t.replace('L', enumerer(items));
@@ -648,8 +658,7 @@ function frPonctuation(modele, rng) {
       `${verbe} ${objets.slice(0, -1).join(' ')} et ${objets.at(-1)}.`,
       `${verbe}, ${enumerer(objets)}.`,
       `${verbe} ${objets[0]} ${objets.slice(1, -1).join(', ')}, et ${objets.at(-1)}.`.replace(/ {2,}/g, ' '),
-      `${verbe} ${objets.join(', ')}.`,
-    ];
+    ]; // (pas d'énumération sans « et » : « des pommes, des poires, des fraises. » est aussi correct)
     const q = qcm(rng, bonne, faux);
     if (!q) return null;
     return { _signature: sig, ...q, enonce: 'Quelle phrase est correctement ponctuée ?',
@@ -663,7 +672,7 @@ function frPonctuation(modele, rng) {
     const complete = `${intro} : « ${parole}${finSigne(signe)} »`;
     const sig = `${forme}|${iP}|${loc}`;
     if (forme === 'parole_dp') {
-      return { _signature: sig, ...choixSignes(':', [signe]), enonce: `Quel signe faut-il à la place de ___ ? ${intro}___ « ${parole}${finSigne(signe)} »`,
+      return { _signature: sig, ...choixSignes(':', [signe, ',']), enonce: `Quel signe faut-il à la place de ___ ? ${intro}___ « ${parole}${finSigne(signe)} »`,
         explication: `${complete} Les deux-points annoncent les paroles de quelqu'un ; les paroles sont encadrées par des guillemets.` };
     }
     if (forme === 'parole_fin') {
@@ -674,7 +683,7 @@ function frPonctuation(modele, rng) {
     }
     if (forme === 'guillemets') {
       const q = qcm(rng, SIGNES['«»'], ['les parenthèses ( )', 'les points de suspension (…)', SIGNES[':'], SIGNES['–']]);
-      return { _signature: sig, ...q, enonce: `Quels signes faut-il placer autour des paroles de ${loc} ? ${intro} : ___ ${parole}${finSigne(signe)} ___`,
+      return { _signature: sig, ...q, enonce: `Quels signes faut-il placer autour des paroles ${deLoc(loc)} ? ${intro} : ___ ${parole}${finSigne(signe)} ___`,
         explication: `${complete} Les guillemets encadrent les paroles rapportées.` };
     }
     const autreSigne = signe === '?' ? '.' : '?';
@@ -692,9 +701,9 @@ function frPonctuation(modele, rng) {
     const iP = rng.int(0, 5); // questions
     const [parole] = PAROLES[iP];
     const loc = rng.pick(LOCUTEURS);
-    const iR = rng.int(0, REPONSES.length - 1);
+    const iR = rng.int(0, REPONSES[iP].length - 1);
     const [rep, verbe] = rng.pick(REPONDANTS.filter(([n]) => bas(n) !== bas(loc)));
-    const repo = REPONSES[iR];
+    const repo = REPONSES[iP][iR];
     const sansFin = repo.slice(0, -1).replace(/ $/, '');
     const fin = repo.endsWith('!') ? ' !' : '.';
     const rendu = (x) => `– ${parole} ? demande ${loc}. ${x} ${sansFin}${fin === '.' ? ',' : fin} ${verbe} ${rep}.`;
@@ -706,7 +715,8 @@ function frPonctuation(modele, rng) {
   // explication
   const iE = rng.int(0, EXPLICATIONS_DP.length - 1);
   const [a, b] = EXPLICATIONS_DP[iE];
-  const q = qcm(rng, SIGNES[':'], [SIGNES['?'], SIGNES['!'], SIGNES['«»'], SIGNES['–']]);
+  // Ni virgule, ni tiret, ni points de suspension parmi les choix : ils pourraient aussi se défendre.
+  const q = qcm(rng, SIGNES[':'], [SIGNES['?'], SIGNES['!'], SIGNES['«»']]);
   return { _signature: `explication|${iE}`, ...q,
     enonce: `Quel signe peut annoncer l'explication ? « ${a}___ ${b}. »`,
     explication: `« ${a} : ${b}. » Les deux-points annoncent une explication (la cause de ce qui précède).` };
@@ -715,13 +725,13 @@ function frPonctuation(modele, rng) {
 // ═════════════════════════ 7. Adverbes en -ment ═════════════════════════
 // [adjectif, féminin (si règle « féminin + ment »), adverbe, classe, phrase avec ___]
 const ADVERBES = [
-  ['doux', 'douce', 'doucement', 'fem', 'Le bébé dort, parle ___.'], ['heureux', 'heureuse', 'heureusement', 'fem', '___, il ne pleut plus.'],
+  ['doux', 'douce', 'doucement', 'fem', 'Le bébé dort : parle ___ !'], ['heureux', 'heureuse', 'heureusement', 'fem', '___, il ne pleut plus.'],
   ['léger', 'légère', 'légèrement', 'fem', 'La porte est ___ ouverte.'], ['fier', 'fière', 'fièrement', 'fem', 'Tom montre ___ sa médaille.'],
   ['sérieux', 'sérieuse', 'sérieusement', 'fem', 'Léa travaille ___.'], ['complet', 'complète', 'complètement', 'fem', 'Le gâteau a ___ brûlé.'],
   ['discret', 'discrète', 'discrètement', 'fem', 'Le chat entre ___ dans la cuisine.'], ['franc', 'franche', 'franchement', 'fem', 'Dis-moi ___ ce que tu penses.'],
   ['vif', 'vive', 'vivement', 'fem', 'Le public applaudit ___.'], ['attentif', 'attentive', 'attentivement', 'fem', 'Les élèves écoutent ___ la consigne.'],
   ['long', 'longue', 'longuement', 'fem', 'Il a réfléchi ___ avant de répondre.'], ['fou', 'folle', 'follement', 'fem', 'Les enfants s\'amusent ___.'],
-  ['frais', 'fraîche', 'fraîchement', 'fem', 'Le pain est ___ sorti du four.'], ['nouveau', 'nouvelle', 'nouvellement', 'fem', 'Ce magasin est ___ ouvert.'],
+  ['frais', 'fraîche', 'fraîchement', 'fem', 'Le pain est ___ sorti du four.'],
   ['facile', null, 'facilement', 'e', 'Tom a gagné la course ___.'], ['rapide', null, 'rapidement', 'e', 'Le guépard court ___.'],
   ['calme', null, 'calmement', 'e', 'Le pilote parle ___ aux passagers.'], ['tranquille', null, 'tranquillement', 'e', 'Le chat dort ___ au soleil.'],
   ['sage', null, 'sagement', 'e', 'Les enfants attendent ___ leur tour.'], ['triste', null, 'tristement', 'e', 'Le clown sourit ___.'],
@@ -730,7 +740,7 @@ const ADVERBES = [
   ['vrai', null, 'vraiment', 'voy', 'Ce film est ___ drôle.'], ['poli', null, 'poliment', 'voy', 'Hugo salue ___ la voisine.'],
   ['joli', null, 'joliment', 'voy', 'La table est ___ décorée.'], ['absolu', null, 'absolument', 'voy', 'Tu dois ___ lire ce livre.'],
   ['aisé', null, 'aisément', 'voy', 'On reconnaît ___ sa voix.'], ['infini', null, 'infiniment', 'voy', 'Je te remercie ___.'],
-  ['passionné', null, 'passionnément', 'voy', 'Léa lit ___ son roman.'], ['hardi', null, 'hardiment', 'voy', 'Le chevalier avance ___ vers le dragon.'],
+  ['passionné', null, 'passionnément', 'voy', 'Léa lit ___ son roman.'],
   ['bruyant', null, 'bruyamment', 'ant', 'Les enfants entrent ___ dans la classe.'], ['courant', null, 'couramment', 'ant', 'Mon cousin parle ___ l\'anglais.'],
   ['méchant', null, 'méchamment', 'ant', 'Le loup regarde ___ les moutons.'], ['puissant', null, 'puissamment', 'ant', 'Le moteur gronde ___.'],
   ['élégant', null, 'élégamment', 'ant', 'La danseuse saute ___.'], ['brillant', null, 'brillamment', 'ant', 'Zoé a ___ réussi son examen.'],
@@ -742,7 +752,7 @@ const ADVERBES = [
   ['gentil', null, 'gentiment', 'exc', 'Léa aide ___ sa petite sœur.'], ['bref', null, 'brièvement', 'exc', 'Le maître explique ___ le jeu.'],
   ['énorme', null, 'énormément', 'exc', 'Tom mange ___ de chocolat.'], ['précis', null, 'précisément', 'exc', 'Mesure ___ la longueur du banc.'],
   ['profond', null, 'profondément', 'exc', 'Le bébé dort ___.'], ['intense', null, 'intensément', 'exc', 'Les joueurs s\'entraînent ___.'],
-  ['lent', 'lente', 'lentement', 'exc', 'La tortue avance ___.'], ['présent', 'présente', 'présentement', 'exc', 'Le directeur est ___ en réunion.'],
+  ['lent', 'lente', 'lentement', 'exc', 'La tortue avance ___.'],
 ];
 function regleAdv([adj, fem, adv, cl]) {
   switch (cl) {
@@ -809,9 +819,9 @@ const PP_SEUL = [
   ['Les feuilles (tomber) recouvrent le trottoir.', 'tombé', 'fp', 'feuilles'], ['Léa range ses chaussettes (laver) dans l\'armoire.', 'lavé', 'fp', 'chaussettes'],
   ['Le chat dort sur le pull (oublier) par Tom.', 'oublié', 'ms', 'pull'], ['Les fenêtres (ouvrir) laissent entrer l\'air frais.', 'ouvert', 'fp', 'fenêtres'],
   ['Une lettre (écrire) à la main fait toujours plaisir.', 'écrit', 'fs', 'lettre'], ['Mamie nous sert une tarte (cuire) au four.', 'cuit', 'fs', 'tarte'],
-  ['Les élèves (fatiguer) rentrent chez eux.', 'fatigué', 'mp', 'élèves'], ['Le vase (casser) est dans la poubelle.', 'cassé', 'ms', 'vase'],
+  ['Les joueurs (fatiguer) rentrent au vestiaire.', 'fatigué', 'mp', 'joueurs'], ['Le vase (casser) est dans la poubelle.', 'cassé', 'ms', 'vase'],
   ['Nous avons mangé des pommes (cueillir) le matin même.', 'cueilli', 'fp', 'pommes'], ['Les volets (fermer), la maison semble vide.', 'fermé', 'mp', 'volets'],
-  ['Tom porte une chemise (repasser) par son père.', 'repassé', 'fs', 'chemise'], ['Les enfants (déguiser) défilent dans la rue.', 'déguisé', 'mp', 'enfants'],
+  ['Tom porte une chemise (repasser) par son père.', 'repassé', 'fs', 'chemise'], ['Les garçons (déguiser) défilent dans la rue.', 'déguisé', 'mp', 'garçons'],
   ['Il a jeté les journaux (déchirer).', 'déchiré', 'mp', 'journaux'], ['Les cadeaux (emballer) attendent sous le sapin.', 'emballé', 'mp', 'cadeaux'],
   ['La neige (tomber) cette nuit recouvre le jardin.', 'tombé', 'fs', 'neige'], ['Zoé cherche sa poupée (perdre).', 'perdu', 'fs', 'poupée'],
   ['Les devoirs (finir), Hugo peut aller jouer.', 'fini', 'mp', 'devoirs'], ['Un oiseau (blesser) est tombé du nid.', 'blessé', 'ms', 'oiseau'],
@@ -878,7 +888,7 @@ function frPPAccord(modele, rng) {
       bonne = accorderPP(pp, code);
       const t = (x) => maj(elider(`${gn} que ${s} ${av} ${x} ${c.endsWith('p') ? fin : fin}.`));
       enonceTxt = t(`(${v})`);
-      explication = `« ${t(bonne)} » Le complément direct « que » (mis pour « ${gn} ») est placé avant le verbe : avec avoir, le participe passé s'accorde avec lui (${GN[code]}).`;
+      explication = `« ${t(bonne)} » Le pronom relatif « que » remplace « ${gn} » : c'est le complément direct du verbe (${elider(`${s} ${av} ${pp}`)} quoi ? → « ${gn} »), et il est placé avant le verbe. Avec avoir, le participe passé s'accorde donc avec lui (${GN[code]}).`;
     } else if (forme === 'pronom') {
       bonne = accorderPP(pp, code);
       const t = (x) => elider(`${maj(gn)}, ${s} ${pron}${pron === 'les' ? ' ' : ''}${av} ${x} hier.`);

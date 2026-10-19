@@ -111,7 +111,7 @@ function rendu(prims, W, H, { marge = 30, echelleMax = 40 } = {}) {
   }
   for (const p of prims) {
     if (p.t === 'angle') out += angleDroitSvg(T(p.p), p.u, p.v);
-    else if (p.t === 'texte') { const [x, y] = T(p.p); out += texteSvg(x + (p.dx ?? 0), y + (p.dy ?? 0), p.s, { size: p.size ?? 14, anchor: p.anchor ?? 'middle', bold: p.bold }); }
+    else if (p.t === 'texte') { const [x, y] = T(p.p); out += texteSvg(x + (p.dx ?? 0), y + (p.dy ?? 0), p.s, { size: p.size ?? 14, anchor: p.anchor ?? 'middle', bold: p.bold, halo: p.halo }); }
   }
   return svg(W, H, out);
 }
@@ -160,7 +160,7 @@ function figureAire(sorte, d, u) {
     const { D, dd } = d;
     const N = [D / 2, 0]; const E = [D, dd / 2]; const S = [D / 2, dd]; const O = [0, dd / 2];
     P.push({ t: 'poly', P: [O, N, E, S], fill: COUL.violet }, { t: 'ligne', a: O, b: E, dash: '6 4', sw: 1.8 }, { t: 'ligne', a: N, b: S, dash: '6 4', sw: 1.8 }, { t: 'angle', p: [D / 2, dd / 2], u: [1, 0], v: [0, -1] });
-    P.push({ t: 'texte', p: [D * 0.27, dd / 2], s: L(D), dy: 13 }, { t: 'texte', p: [D / 2, dd * 0.78], s: L(dd), dx: 8, anchor: 'start' });
+    P.push({ t: 'texte', p: [D * 0.27, dd / 2], s: L(D), dy: 13, halo: true }, { t: 'texte', p: [D / 2, dd * 0.7], s: L(dd), dx: 7, anchor: 'start', halo: true });
   }
   return rendu(P, 380, 230, { marge: 34, echelleMax: 30 });
 }

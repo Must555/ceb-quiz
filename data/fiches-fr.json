@@ -41,7 +41,7 @@
     "Les guillemets encadrent des paroles ; le tiret signale qu'un autre personnage parle.",
     "Les parenthèses ajoutent une précision ; les points de suspension créent du suspense."
    ],
-   "exemple": "« J'ai gagné ! » crie Hugo. Il faut : du lait, des œufs et de la farine.",
+   "exemple": "Hugo crie : « J'ai gagné ! » Voici les ingrédients : du lait, des œufs et de la farine.",
    "astuce": "Lis la phrase à voix haute : la ponctuation marque les pauses et le ton."
   },
   {
@@ -362,7 +362,8 @@
     "Plus-que-parfait : auxiliaire à l'imparfait (j'avais fini, elle était partie). Action passée avant une autre action passée.",
     "Futur antérieur : auxiliaire au futur simple (tu auras fini). Action future terminée avant une autre.",
     "Conditionnel passé : auxiliaire au conditionnel présent (je serais venu). Souvent après « si » + plus-que-parfait.",
-    "Futur proche : aller au présent + infinitif (je vais partir). Avec être, le participe passé s'accorde avec le sujet."
+    "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (elles étaient parties, Léa sera arrivée).",
+  "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord."
    ],
    "exemple": "Quand tu auras fini tes devoirs, tu pourras jouer. Si j'avais su, je serais venue plus tôt.",
    "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé."
@@ -391,7 +392,7 @@
     "Le verbe s'accorde avec son sujet (c'est … qui / ce sont … qui).",
     "Dans le groupe nominal, déterminant et adjectifs prennent le genre et le nombre du nom.",
     "Avec être, le participe passé s'accorde avec le sujet (elles sont parties).",
-    "Homophones : a/à (avait), et/est (était), son/sont (étaient), ses/ces (mes / ce).",
+    "Homophones : a/à (avait), et/est (était), son/sont (étaient), ces/ses (ce, cette / mes).",
     "-é ou -er : remplace par « vendu » ou « vendre »."
    ],
    "exemple": "Les fleurs du jardin sentent bon. Ma sœur est partie à la mer.",
@@ -420,7 +421,7 @@
     "Une phrase simple contient un groupe sujet et un groupe prédicat ; elle peut avoir un complément de phrase.",
     "Le sujet : c'est de lui qu'on parle (c'est … qui).",
     "Le prédicat : ce qu'on dit du sujet ; c'est le verbe conjugué avec ses compléments (ou son attribut). On ne peut ni le déplacer ni le supprimer.",
-    "Le complément de phrase (quand ? où ? comment ?) peut être déplacé et supprimé."
+    "Le complément de phrase (quand ? où ? pourquoi ?) peut être déplacé et supprimé."
    ],
    "exemple": "Chaque soir (complément de phrase), mon frère (sujet) lit une BD (prédicat).",
    "astuce": "Supprime ce qui peut l'être : il reste le sujet et le prédicat."
@@ -434,7 +435,8 @@
     "Règle générale : adjectif au féminin + -ment (lent → lente → lentement ; doux → doucement).",
     "Adjectif terminé par une voyelle (i, u, é, ai) : masculin + -ment (vrai → vraiment, poli → poliment).",
     "-ant → -amment (bruyant → bruyamment) ; -ent → -emment, prononcé « amment » (prudent → prudemment).",
-    "Exceptions : gentil → gentiment, bref → brièvement, énorme → énormément, précis → précisément, profond → profondément ; lent → lentement."
+    "Exceptions : gentil → gentiment, bref → brièvement ; en -ément : énorme → énormément, intense → intensément, précis → précisément, profond → profondément.",
+  "Attention : lent se termine par -ent mais suit la règle générale : lente → lentement."
    ],
    "exemple": "Papa conduit prudemment. Les enfants entrent bruyamment.",
    "astuce": "-ant donne -amment avec un a, -ent donne -emment avec un e : la voyelle de l'adjectif se garde."
