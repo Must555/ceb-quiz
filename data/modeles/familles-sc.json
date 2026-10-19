@@ -936,7 +936,7 @@
      "sorte": "lequel",
      "champ": "sang",
      "fiche": "sc-sang",
-     "enonce": "Quel élément du sang a pour rôle de {valeur} ?",
+     "enonce": "Dans le sang, quel élément a ce rôle : {valeur} ?",
      "explication": "{Cle} : {valeur}."
     },
     {
@@ -1761,7 +1761,7 @@
      "champ": "source",
      "avec": "chauffage",
      "ordreFixe": true,
-     "enonce": "Une famille se chauffe avec {chauffage}. La ressource d'énergie utilisée ({cle}) est-elle renouvelable ou non renouvelable ?",
+     "enonce": "Une famille se chauffe avec {chauffage}. Elle utilise ainsi {cle} comme ressource d'énergie. Cette ressource est-elle renouvelable ou non renouvelable ?",
      "explication": "{Cle} : ressource {valeur}. {info}"
     },
     {

@@ -1063,11 +1063,18 @@ const famille = (code) => (code.startsWith('D') ? 'déterminant' : 'pronom');
 // « article indéfini » et « déterminant indéfini » ne sont jamais proposés ensemble (un, des… sont parfois appelés déterminants indéfinis).
 const conflitIndef = (a, b) => [a, b].sort().join() === ['article indéfini', 'déterminant indéfini'].sort().join();
 
+// Le référentiel P6 (FRALA) nomme les sous-classes de déterminants « possessifs, démonstratifs, interrogatifs,
+// exclamatifs, cardinaux, indéfinis » : pas d'« article ». Les articles (le, un, du…) ne servent donc
+// que dans la question « déterminant ou pronom ? », jamais comme classe précise demandée ou proposée.
+const ARTICLES = new Set(['D.def', 'D.ind', 'D.part']);
+const CLASSES_P6 = Object.entries(CLASSES_FINES).filter(([c]) => !ARTICLES.has(c)).map(([, l]) => l);
+const leMot = (m, de = false) => `${de ? 'du' : 'le'} ${/\s/.test(m) ? 'groupe de mots' : 'mot'} « ${m} »`;
+
 function frClassesFines(modele, rng) {
   const i = rng.int(0, PHRASES_FINES.length - 1);
   const { texte, unites } = analyserFines(PHRASES_FINES[i]);
-  const surs = unites.filter((u) => occurrences(texte, u.mot) === 1);
   const forme = choixForme(rng, modele, ['classe', 'classe', 'det_pron', 'trouver', 'grille']);
+  const surs = unites.filter((u) => occurrences(texte, u.mot) === 1 && (forme === 'det_pron' || !ARTICLES.has(u.code)));
   const phrase = `Dans la phrase « ${texte} »`;
   const expl = (u) => `« ${u.mot} » : ${EXPL_CLASSES[u.code]}`;
   if (forme === 'classe') {
@@ -1075,12 +1082,12 @@ function frClassesFines(modele, rng) {
     if (!u) return null;
     const bonne = CLASSES_FINES[u.code];
     const jumeau = CLASSES_FINES[(u.code.startsWith('D') ? 'P' : 'D') + u.code.slice(1)];
-    const memeFamille = Object.entries(CLASSES_FINES).filter(([c]) => c[0] === u.code[0]).map(([, l]) => l);
-    const pool = rng.shuffle([...memeFamille, ...Object.values(CLASSES_FINES)]).filter((l) => !conflitIndef(l, bonne));
+    const memeFamille = Object.entries(CLASSES_FINES).filter(([c]) => c[0] === u.code[0] && !ARTICLES.has(c)).map(([, l]) => l);
+    const pool = rng.shuffle([...memeFamille, ...CLASSES_P6]).filter((l) => !conflitIndef(l, bonne));
     const prio = jumeau && !conflitIndef(jumeau, bonne) ? [jumeau] : [];
     const q = qcm(rng, bonne, pool, { prio });
     if (!q || q.choix.some((a) => q.choix.some((b) => conflitIndef(a, b)))) return null;
-    return { _signature: `classe|${i}|${u.mot}`, ...q, enonce: `${phrase}, quelle est la classe précise du mot « ${u.mot} » ?`, explication: expl(u) };
+    return { _signature: `classe|${i}|${u.mot}`, ...q, enonce: `${phrase}, quelle est la classe précise ${leMot(u.mot, true)} ?`, explication: expl(u) };
   }
   if (forme === 'det_pron') {
     const u = rng.pick(surs);
@@ -1090,7 +1097,7 @@ function frClassesFines(modele, rng) {
       ? 'Il est placé devant un nom (parfois avec un adjectif) et l\'introduit.'
       : 'Il n\'accompagne pas de nom : il remplace un nom ou désigne une personne.';
     return { _signature: `dp|${i}|${u.mot}`, ...qcmFixe(bonne, ['déterminant', 'pronom']),
-      enonce: `${phrase}, le mot « ${u.mot} » est-il un déterminant ou un pronom ?`,
+      enonce: `${phrase}, ${leMot(u.mot)} est-il un déterminant ou un pronom ?`,
       explication: `« ${u.mot} » est un ${bonne}. ${pourquoi} Précisément, ${EXPL_CLASSES[u.code]}` };
   }
   if (forme === 'trouver') {
@@ -1203,7 +1210,7 @@ function frNarrateur(modele, rng) {
 // ═════════════════════════ 11. Réel / imaginaire, vraisemblable / invraisemblable ═════════════════════════
 // Sujets et actions possibles dans la réalité (v) ; actions impossibles (inv : propres au sujet ou communes à sa catégorie).
 const SUJETS_RI = [
-  { s: 'le chien de {P}', c: 'animal', v: ['aboie quand le facteur arrive', 'creuse un trou dans le jardin', 'rapporte la balle à son maître', 'se roule dans la boue'] },
+  { s: 'le chien de {P}', c: 'animal', v: ['aboie quand le facteur arrive', 'creuse un trou dans le jardin', 'rapporte la balle qu\'on lui lance', 'se roule dans la boue'] },
   { s: 'le chat de la voisine', c: 'animal', v: ['dort au soleil sur le rebord de la fenêtre', 'attrape une souris dans la grange', 'grimpe sur le toit du garage'] },
   { s: 'un écureuil', c: 'animal', v: ['cache des noisettes au pied d\'un arbre', 'grimpe en haut d\'un chêne'] },
   { s: 'la vache du fermier', c: 'animal', v: ['broute l\'herbe du pré', 'donne du lait chaque matin'] },

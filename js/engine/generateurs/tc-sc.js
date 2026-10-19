@@ -16,10 +16,10 @@
 import { formatNombre as fmt } from '../format.js';
 
 // ---------------------------------------------------------------- outils
-const FILLES = ['Léa', 'Agathe', 'Emma', 'Louise', 'Juliette', 'Océane', 'Amélie', 'Chloé', 'Zoé', 'Solène', 'Maëlle', 'Alice', 'Pauline', 'Margaux'];
-const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Théo', 'Hugo'];
+const FILLES = ['Léa', 'Agathe', 'Manon', 'Louise', 'Juliette', 'Camille', 'Amélie', 'Chloé', 'Mathilde', 'Clémence', 'Élise', 'Claire', 'Pauline', 'Margaux'];
+const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Mathis', 'Quentin', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Clément', 'Pierre'];
 const PRENOMS = [...FILLES, ...GARCONS];
-const VOY = /\bde (?=(Agathe|Emma|Océane|Amélie|Alice|Antoine|Arthur|Étienne|Émile|Élise|Hugo)\b)/g;
+const VOY = /\bde (?=(Agathe|Amélie|Antoine|Arthur|Étienne|Émile|Élise)\b)/g;
 const elider = (t) => (typeof t === 'string' ? t.replace(VOY, 'd\'') : t);
 const il = (p) => (FILLES.includes(p) ? 'elle' : 'il');
 const maj = (s) => (s ? String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCase()) : s);
@@ -1247,7 +1247,7 @@ const V_ACTIONS = {
 };
 const V_REPONSES = ['Les ballons se gonflent : l\'air entre par le tube.', 'Les ballons se dégonflent : l\'air sort par le tube.', 'Les ballons ne bougent pas.', 'L\'air entre dans la bouteille par le fond.'];
 const V_ORDRE = {
-  tire: ['On tire la membrane vers le bas', 'Le volume à l\'intérieur de la bouteille augmente', 'L\'air extérieur entre par le tube', 'Les ballons se gonflent'],
+  tire: ['On tire la membrane vers le bas', 'Le volume à l\'intérieur de la bouteille augmente', 'L\'air extérieur entre par le tube et gonfle les ballons', 'On relâche la membrane : les ballons se dégonflent'],
   pousse: ['On pousse la membrane vers le haut', 'Le volume à l\'intérieur de la bouteille diminue', 'Les ballons sont comprimés', 'L\'air des ballons sort par le tube'],
 };
 
@@ -1352,8 +1352,8 @@ export function genererVentilation(modele, rng) {
   }
   const a = rng.pick(['tire', 'pousse']);
   const r = ordre(rng, V_ORDRE[a]);
-  return { ...r, enonce: `${intro} Remets dans l'ordre ce qui se passe quand ${p} ${a === 'tire' ? 'tire la membrane vers le bas' : 'pousse la membrane vers le haut'}.`,
-    explication: `${V_ORDRE[a].join(' → ')}. ${a === 'tire' ? 'Dans le corps, c\'est l\'inspiration.' : 'Dans le corps, c\'est l\'expiration.'}`,
+  return { ...r, enonce: `${intro} Remets dans l'ordre ce qui se passe quand ${p} ${a === 'tire' ? 'tire la membrane vers le bas, puis la relâche' : 'pousse la membrane vers le haut'}.`,
+    explication: `${V_ORDRE[a].join(' → ')}. ${a === 'tire' ? 'Dans le corps, tirer la membrane correspond à l\'inspiration, la relâcher à l\'expiration.' : 'Dans le corps, c\'est l\'expiration.'}`,
     _signature: `ordre|${a}|${r.elements.join('|')}`, cleContenu: `ordre|${a}|${r.elements.join('|')}` };
 }
 
@@ -1376,28 +1376,28 @@ const CTX_DEM = [
     effet: (v) => `le refroidissement de l'eau chaude (à ${v.T} °C au départ)`, mesure: 'la température de l\'eau après 30 minutes',
     f: [{ nom: 'le matériau autour du pot', col: 'Autour du pot', v: ['rien', 'laine'], ph: ['sans rien autour du pot', 'pot entouré de laine'], temoin: true, q: 'la laine autour d\'un pot ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans rien autour', 'un pot d\'eau chaude entouré d\'une écharpe en laine'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans couvercle', 'un pot d\'eau chaude fermé par un couvercle'] },
-      { nom: 'la quantité d\'eau', col: 'Quantité d\'eau', v: ['200 mL', '400 mL'], ph: ['200 mL d\'eau', '400 mL d\'eau'] }],
+      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 mL', '400 mL'], ph: ['200 mL d\'eau', '400 mL d\'eau'] }],
     fait: (rng, v) => `Après 30 minutes, l'eau du pot entouré de laine est à ${rng.int(42, v.T - 12)} °C.`,
     hyp: () => ['Je pense que la laine va ralentir le refroidissement de l\'eau.', 'Peut-être qu\'un couvercle garde l\'eau chaude plus longtemps.'],
     jug: () => ['L\'écharpe en laine rouge est la plus belle.', 'Mesurer des températures, c\'est amusant.'] },
   { id: 'glacon', dom: 'sc.energie', tire: () => ({}),
     effet: () => 'la durée de fonte d\'un glaçon', mesure: 'le temps que met le glaçon pour fondre complètement',
     f: [{ nom: 'la taille du glaçon', col: 'Glaçon', v: ['petit', 'gros'], ph: ['petit glaçon', 'gros glaçon'] }, { nom: 'l\'endroit (soleil ou ombre)', col: 'Endroit', v: ['ombre', 'soleil'], ph: ['à l\'ombre', 'au soleil'] },
-      { nom: 'l\'emballage du glaçon', col: 'Emballage', v: ['aucun', 'torchon'], ph: ['sans emballage', 'dans un torchon'], temoin: true, q: 'un torchon autour d\'un glaçon le fait fondre moins vite', desc: ['un glaçon posé sans rien dans une assiette', 'un glaçon identique enveloppé dans un torchon'] }],
+      { nom: 'l\'emballage du glaçon', col: 'Emballage', v: ['aucun', 'torchon'], ph: ['sans emballage', 'dans un torchon'], temoin: true, q: 'un torchon autour d\'un glaçon le fait fondre moins vite', desc: ['un glaçon posé sans rien dans une assiette', 'un glaçon enveloppé dans un torchon, dans une assiette'] }],
     fait: (rng) => `Le glaçon posé au soleil a complètement fondu en ${rng.int(14, 40)} minutes.`,
     hyp: () => ['Je pense qu\'un glaçon fond plus vite au soleil qu\'à l\'ombre.', 'Peut-être qu\'un gros glaçon met plus de temps à fondre qu\'un petit.'],
     jug: () => ['Les glaçons en forme d\'étoile sont les plus jolis.', 'Regarder un glaçon fondre, c\'est ennuyeux.'] },
   { id: 'sucre', dom: 'sc.matiere', tire: () => ({}),
     effet: () => 'la vitesse à laquelle le sucre se dissout dans l\'eau', mesure: 'le temps nécessaire pour que le sucre ne soit plus visible',
-    f: [{ nom: 'la température de l\'eau', col: 'Eau', v: ['froide', 'chaude'], ph: ['eau froide', 'eau chaude'] }, { nom: 'le fait de remuer', col: 'On remue', v: ['non', 'oui'], ph: ['sans remuer', 'en remuant'], temoin: true, q: 'remuer fait dissoudre le sucre plus vite', desc: ['un verre d\'eau avec un morceau de sucre, sans remuer', 'un verre identique avec un morceau de sucre, en remuant'] },
+    f: [{ nom: 'la température de l\'eau', col: 'Eau', v: ['froide', 'chaude'], ph: ['eau froide', 'eau chaude'] }, { nom: 'le fait de remuer', col: 'On remue', v: ['non', 'oui'], ph: ['sans remuer', 'en remuant'], temoin: true, q: 'remuer fait dissoudre le sucre plus vite', desc: ['un verre d\'eau avec un morceau de sucre, sans remuer', 'un verre d\'eau avec un morceau de sucre, en remuant'] },
       { nom: 'la forme du sucre', col: 'Sucre', v: ['en morceau', 'en poudre'], ph: ['sucre en morceau', 'sucre en poudre'] }],
     fait: (rng) => `Dans l'eau chaude, le sucre en poudre n'est plus visible après ${rng.int(8, 40)} secondes.`,
     hyp: () => ['Je pense que le sucre se dissout plus vite dans l\'eau chaude.', 'Peut-être que le sucre en poudre se dissout plus vite que le sucre en morceau.'],
     jug: () => ['Le sucre en morceau est plus joli que le sucre en poudre.', 'L\'eau sucrée, c\'est délicieux.'] },
   { id: 'evap', dom: 'sc.matiere', tire: (rng) => ({ V: rng.pick([100, 150, 200]) }),
     effet: (v) => `l'évaporation de ${v.V} mL d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
-    f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre étroit', 'assiette large'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'près du radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
-      { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient identique fermé par un couvercle'] }],
+    f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre', 'assiette'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
+      { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient d\'eau fermé par un couvercle'] }],
     fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} mL d'eau dans le verre étroit.`,
     hyp: () => ['Je pense que l\'eau s\'évapore plus vite dans une assiette large que dans un verre.', 'Peut-être que l\'eau s\'évapore plus vite près du radiateur.'],
     jug: () => ['L\'assiette bleue est la plus belle de la cuisine.', 'Cette expérience est trop longue, c\'est nul.'] },
@@ -1516,7 +1516,7 @@ export function genererDemarche(modele, rng) {
     const temoin = inv ? 'Le montage 2' : 'Le montage 1';
     const choix = ['Le montage 1', 'Le montage 2', 'Les deux montages'];
     return { type: 'qcm', choix, reponse: choix.indexOf(temoin), domaine: cc.dom, fiche: 'sc-demarche',
-      enonce: `${p} veut savoir si ${f.q}. Montage 1 : ${d1}. Montage 2 : ${d2}. Quel montage sert de témoin ?`,
+      enonce: `${p} veut savoir si ${f.q}. Montage 1 : ${d1}. Montage 2 : ${d2}. Pour le reste, les deux montages sont identiques. Quel montage sert de témoin ?`,
       explication: `Le témoin est le montage où l'on n'a rien ajouté ni changé : ici, ${f.desc[0]}. On compare l'autre montage au témoin pour voir l'effet du changement.`,
       _signature: `tem|${cc.id}|${f.col}|${inv}|${p}`, cleContenu: `tem|${cc.id}|${f.col}|${inv}` };
   }
@@ -1556,7 +1556,7 @@ const SIT_CHALEUR = [
   { id: 'bain', env: 'froid', tire: (rng) => ({ c: rng.int(36, 40), f: rng.int(18, 22) }),
     txt: (p, t) => `${p} oublie de vider la baignoire : l'eau du bain est à ${deg(t.c)} et l'air de la salle de bain à ${deg(t.f)}.`, chaud: 'l\'eau du bain', froid: 'l\'air de la salle de bain', objet: 'l\'eau du bain' },
   { id: 'plat', env: 'froid', tire: (rng) => ({ c: rng.pick([50, 55, 60, 65, 70]), f: rng.int(3, 6) }),
-    txt: (p, t) => `${p} range un plat de pâtes encore tiède, à ${deg(t.c)}, dans un frigo réglé à ${deg(t.f)}.`, chaud: 'le plat de pâtes', froid: 'l\'air du frigo', objet: 'le plat de pâtes' },
+    txt: (p, t) => `${p} range un plat de pâtes encore chaud, à ${deg(t.c)}, dans un frigo réglé à ${deg(t.f)}.`, chaud: 'le plat de pâtes', froid: 'l\'air du frigo', objet: 'le plat de pâtes' },
   { id: 'cuillere', tire: (rng) => ({ f: rng.int(18, 22), c: rng.pick([70, 75, 80, 85, 90]) }),
     txt: (p, t) => `${p} plonge une cuillère en métal, à ${deg(t.f)}, dans une soupe à ${deg(t.c)}.`, chaud: 'la soupe', froid: 'la cuillère' },
   { id: 'glacon', tire: (rng) => ({ f: -rng.int(5, 18), c: rng.int(15, 25) }),
@@ -1583,11 +1583,11 @@ const CHALEUR_QCM = [
     f: ['Le souffle apporte du froid dans la soupe.', 'La soupe fabrique du froid quand on souffle.', 'Le souffle est plus chaud que la soupe.'] },
 ];
 const CHALEUR_VF = [
-  ['La chaleur passe toujours d\'une matière chaude vers une matière plus froide.', true, 'C\'est une loi de la nature : jamais l\'inverse.'],
+  ['La chaleur passe toujours d\'une matière chaude vers une matière plus froide.', true, 'C\'est une loi de la nature : d\'elle-même, la chaleur ne passe jamais du froid vers le chaud.'],
   ['Un objet chaud posé dans une pièce refroidit jusqu\'à la température de la pièce.', true, 'Il perd de la chaleur tant qu\'il est plus chaud que l\'air autour, puis la température ne change plus.'],
   ['Un objet froid posé dans une pièce se réchauffe jusqu\'à devenir plus chaud que la pièce.', false, 'Il se réchauffe seulement jusqu\'à la température de la pièce : à ce moment, la chaleur ne passe plus.'],
   ['Quand on met un glaçon dans un jus, c\'est le froid du glaçon qui passe dans le jus.', false, 'C\'est la chaleur du jus qui passe dans le glaçon : le jus refroidit et le glaçon fond.'],
-  ['Deux objets qui se touchent finissent par avoir la même température.', true, 'La chaleur passe du plus chaud vers le plus froid jusqu\'à ce que leurs températures soient égales.'],
+  ['Deux objets qui se touchent, et que rien ne chauffe ni ne refroidit, finissent par avoir la même température.', true, 'La chaleur passe du plus chaud vers le plus froid jusqu\'à ce que leurs températures soient égales.'],
   ['Si on mélange de l\'eau à 60 °C et de l\'eau à 20 °C, on obtient de l\'eau à 80 °C.', false, 'Les températures ne s\'additionnent pas : le mélange a une température entre 20 °C et 60 °C.'],
   ['Une cuillère en métal plongée dans une soupe chaude devient chaude.', true, 'La chaleur de la soupe passe dans la cuillère. Le métal est un bon conducteur thermique.'],
   ['Un pull en laine produit de la chaleur.', false, 'La laine ne produit pas de chaleur : c\'est un isolant qui ralentit la perte de la chaleur du corps.'],
@@ -1631,8 +1631,8 @@ export function genererTransfert(modele, rng) {
         _signature: `qui|${sig}|${chauffe}`, cleContenu: `qui|${sig}|${chauffe}` };
     }
     const Tenv = S.env === 'froid' ? t.f : t.c;
-    return { type: 'numerique', reponse: Tenv, unite: '°C', enonce: `${S.txt(p, t)} Plusieurs heures plus tard, quelle est la température ${deLe(S.objet)} ?`,
-      explication: `${maj(S.objet)} ${S.env === 'froid' ? 'perd de la chaleur' : 'reçoit de la chaleur'} tant que sa température est différente de celle ${deLe(S.env === 'froid' ? S.froid : S.chaud)}. Quand les températures sont égales, la chaleur ne passe plus : ${S.objet} finit à ${deg(Tenv)}.`,
+    return { type: 'numerique', reponse: Tenv, unite: '°C', enonce: `${S.txt(p, t)} Plusieurs heures plus tard, quelle est environ la température ${deLe(S.objet)} ?`,
+      explication: `${maj(S.objet)} ${S.env === 'froid' ? 'perd de la chaleur' : 'reçoit de la chaleur'} tant que sa température est différente de celle ${deLe(S.env === 'froid' ? S.froid : S.chaud)}. Quand les températures sont égales, la chaleur ne passe plus : ${S.objet} finit à environ ${deg(Tenv)}, la température ${deLe(S.env === 'froid' ? S.froid : S.chaud)}.`,
       _signature: `fin|${sig}`, cleContenu: `fin|${sig}` };
   }
   if (forme === 'melange') {
@@ -1709,7 +1709,7 @@ const ECO_SITUATIONS = [
     b: 'L\'air est vite renouvelé, mais les murs et les meubles n\'ont pas le temps de se refroidir : on perd moins de chaleur.',
     f: ['Les fenêtres entrouvertes laissent entrer de la chaleur.', 'Ouvrir grand les fenêtres produit de la chaleur.', 'Il ne faut jamais aérer en hiver.'] },
   { e: (f) => `La famille ${f} ferme toujours la porte entre le salon chauffé et le garage froid. Pourquoi ?`,
-    b: 'La chaleur ne part pas du salon vers le garage, plus froid : on chauffe seulement la pièce utilisée.',
+    b: 'La porte fermée ralentit le passage de la chaleur du salon vers le garage, plus froid : on chauffe seulement la pièce utilisée.',
     f: ['Pour que le froid du garage ne passe pas dans le salon.', 'Pour que le garage se réchauffe plus vite.', 'Une porte fermée produit de la chaleur.'] },
   { e: (p) => `${p} met un couvercle sur la casserole pour faire bouillir l'eau des pâtes. Pourquoi ?`,
     b: 'La chaleur s\'échappe moins : l\'eau bout plus vite et on utilise moins d\'énergie.',
@@ -1727,7 +1727,7 @@ const ECO_SITUATIONS = [
     b: 'Ils emprisonnent de l\'air entre les plumes : cet air isole et leur corps perd moins de chaleur.',
     f: ['Les plumes gonflées produisent de la chaleur.', 'Pour paraître plus gros et faire peur au froid.', 'Les plumes gonflées laissent mieux sortir la chaleur.'] },
   { e: (p) => `${p} remarque que les casseroles ont un fond en métal et une poignée en bois ou en plastique. Pourquoi ?`,
-    b: 'Le métal conduit bien la chaleur vers les aliments ; le bois et le plastique sont isolants : la poignée reste froide.',
+    b: 'Le métal conduit bien la chaleur vers les aliments ; le bois et le plastique sont isolants : la poignée ne devient pas brûlante.',
     f: ['Le métal est isolant et le bois est conducteur.', 'Le bois produit du froid pour protéger la main.', 'C\'est seulement pour décorer la casserole.'], enfant: true },
   { e: (f) => `La famille ${f} fait isoler les murs de sa maison avec des plaques de polystyrène. Quel est le but ?`,
     b: 'Ralentir le passage de la chaleur de l\'intérieur chaud vers l\'extérieur froid.',
@@ -1737,7 +1737,7 @@ const ECO_SITUATIONS = [
     f: ['Il produit de la chaleur.', 'Il conduit la chaleur vers l\'extérieur.', 'Il empêche la porte de grincer.'] },
 ];
 const GESTES_BONS = [
-  'Fermer les volets et les rideaux le soir', 'Baisser le chauffage d\'un degré', 'Aérer 5 minutes, fenêtres grandes ouvertes',
+  'Fermer les volets et les rideaux le soir', 'Baisser le chauffage d\'un degré',
   'Fermer la porte des pièces non chauffées', 'Isoler le toit', 'Remplacer le simple vitrage par du double vitrage', 'Mettre un pull plutôt que monter le chauffage',
   'Baisser le chauffage la nuit et quand on part', 'Poser un boudin sous la porte d\'entrée', 'Isoler les murs', 'Fermer la porte d\'entrée rapidement en hiver',
 ];
@@ -1913,7 +1913,7 @@ export function genererMesures(modele, rng) {
       const faux = autres.map((x) => rng.pick(GRANDEURS[x].instr));
       const r = qcm(rng, maj(instr), faux.map(maj));
       return { ...r, enonce: `${p} veut mesurer ${c.t}. Quel instrument doit-${pr(p)} utiliser ?`,
-        explication: `Pour mesurer ${c.t}, on utilise ${instr} : il sert ${GRANDEURS[g].sert}. On exprime le résultat ${UN[c.u]}.`,
+        explication: `Pour mesurer ${c.t}, on utilise ${instr} : ${/^une /.test(instr) ? 'elle' : 'il'} sert ${GRANDEURS[g].sert}. On exprime le résultat ${UN[c.u]}.`,
         _signature: `ins|${c.t}|${instr}|${triee(faux)}`, cleContenu: `ins|${c.t}|${triee(faux)}` };
     }
     if (forme === 'unite') {
@@ -1960,7 +1960,7 @@ export function genererMesures(modele, rng) {
     const c = val > 60 ? 'L\'eau chauffe sur la cuisinière.' : '';
     return { type: 'numerique', reponse: val, unite: '°C', figure: figThermometre(lo, hi, pas, etiq, val),
       enonce: `${p} relève une température. ${c} Quelle température indique ce thermomètre ?`.replace(/ {2}/g, ' '),
-      explication: `Entre deux nombres écrits, il y a ${etiq / pas} intervalles : chaque petit trait vaut ${pas} °C. Le haut de la colonne rouge est à ${deg(val)}.`,
+      explication: `Entre deux nombres écrits, il y a ${etiq} °C, partagés en ${etiq / pas} intervalles : chaque petit trait vaut ${pas} °C. Le haut de la colonne rouge est à ${deg(val)}.`,
       _signature: `th|${lo}|${pas}|${val}`, cleContenu: `th|${lo}|${pas}|${val}` };
   }
   if (forme === 'eprouvette' || forme === 'pluvio') {
@@ -1973,7 +1973,7 @@ export function genererMesures(modele, rng) {
     return { type: 'numerique', reponse: val, unite: u, figure: figEprouvette(max, pas, etiq, val, u, pl),
       enonce: pl ? `Après une averse, ${p} lit le niveau de l'eau dans le pluviomètre de l'école. Combien de millimètres de pluie sont tombés ?`
         : `${p} a versé de l'eau dans ${instr}. Quel volume d'eau contient-${/^cette/.test(instr) ? 'elle' : 'il'} ?`,
-      explication: `Entre deux nombres écrits (${fmt(etiq)} ${u}), il y a ${etiq / pas} intervalles : chaque petit trait vaut ${fmt(pas)} ${u}. Le niveau de l'eau est à ${fmt(val)} ${u}.`,
+      explication: `Entre deux nombres écrits, il y a ${fmt(etiq)} ${u}, partagés en ${etiq / pas} intervalles : chaque petit trait vaut ${fmt(pas)} ${u}. Le niveau de l'eau est à ${fmt(val)} ${u}.`,
       _signature: `${forme}|${max}|${pas}|${val}`, cleContenu: `${forme}|${max}|${pas}|${val}` };
   }
   if (forme === 'chrono') {
@@ -2016,7 +2016,7 @@ const HYBRIDES = [
   { txt: () => 'Une cane de Pékin et un canard de Barbarie ont des canetons, les canards mulards. Les canards mulards sont stériles : ils ne peuvent pas avoir de petits.', a: 'la cane de Pékin', b: 'le canard de Barbarie' },
 ];
 const RESSEMBLE = [['lapin', 'lievre'], ['chien', 'renard'], ['cheval', 'ane'], ['mouton', 'chevre'], ['cheval', 'zebre']];
-const DIFFERENTS = [['chien', ['caniche', 'labrador']], ['chien', ['beagle', 'teckel']], ['chien', ['border collie', 'berger allemand']], ['chat', ['persan', 'siamois']],
+const DIFFERENTS = [['chien', ['caniche', 'labrador']], ['chien', ['dalmatien', 'teckel']], ['chien', ['bouvier des Flandres', 'teckel']], ['chat', ['persan', 'siamois']],
   ['chat', ['sacré de Birmanie', 'chartreux']], ['cheval', ['frison', 'haflinger']], ['poule', ['soie', 'Leghorn']], ['vache', ['Highland', 'Holstein']], ['lapin', ['angora', 'rex']]];
 const DEF_ESPECE = 'Une espèce : des vivants qui peuvent se reproduire entre eux et avoir des petits féconds (capables, à leur tour, d\'avoir des petits).';
 const animalAleatoire = (rng, e) => (ESP[e] ? nomAnimal(e, rng.pick(ESP[e].races)) : nomAnimal(e));
@@ -2049,7 +2049,7 @@ export function genererEspece(modele, rng) {
     const racesEx = liste.filter(([x]) => x === eDouble).map(([, r]) => r).slice(0, 2);
     const groupes = [...new Set(liste.map(([e]) => e))].map((e) => `${nomEspece(e)} (${liste.filter(([x]) => x === e).length})`);
     return { type: 'numerique', reponse: nb, unite: 'espèces',
-      enonce: `${p} a fait la liste des animaux d'une ferme pédagogique : ${listeEt(liste.map(([e, r]) => nomAnimal(e, r)))}. Combien d'espèces différentes y a-t-il dans cette liste ?`,
+      enonce: `${p} a fait la liste des animaux qu'${pr(p)} a vus dans un parc animalier : ${listeEt(liste.map(([e, r]) => nomAnimal(e, r)))}. Combien d'espèces différentes y a-t-il dans cette liste ?`,
       explication: `Il y a ${nb} espèces : ${listeEt(groupes)}. Des races différentes (comme ${listeEt(racesEx)}) appartiennent à la même espèce : elles peuvent avoir ensemble des petits féconds.${liste.some(([e]) => SEULS[e] || ['mouton', 'chevre'].every((x) => liste.some(([y]) => y === x))) ? ' Attention aux animaux qui se ressemblent : le lapin et le lièvre, le cheval, l\'âne et le zèbre, le chien et le renard, le mouton et la chèvre sont des espèces différentes.' : ''}`,
       _signature: `cpt|${liste.map(([e, r]) => `${e}:${r}`).join(',')}`, cleContenu: `cpt|${triee(liste.map(([e, r]) => `${e}:${r}`))}` };
   }
