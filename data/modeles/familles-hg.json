@@ -431,9 +431,23 @@
     {
      "sorte": "association",
      "champ": "chefLieu",
-     "n": 4,
+     "n": 5,
      "difficulte": 2,
-     "enonce": "Relie chaque province à son chef-lieu.",
+     "filtre": {
+      "region": "Région flamande"
+     },
+     "enonce": "Relie chaque province de la Région flamande à son chef-lieu.",
+     "explication": "{liste}."
+    },
+    {
+     "sorte": "association",
+     "champ": "chefLieu",
+     "n": 5,
+     "difficulte": 2,
+     "filtre": {
+      "region": "Région wallonne"
+     },
+     "enonce": "Relie chaque province de la Région wallonne à son chef-lieu.",
      "explication": "{liste}."
     },
     {

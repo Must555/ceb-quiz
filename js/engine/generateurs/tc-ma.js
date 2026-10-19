@@ -1594,7 +1594,7 @@ const fractionsOperations = famille([
     return {
       ...q, difficulte: 3,
       enonce: `Calcule et simplifie si possible : ${calc}`,
-      explication: `Les dénominateurs sont différents : on ne peut pas ${plus ? 'additionner' : 'soustraire'} tout de suite. ${etapeEquivalente(f)} Puis ${calc2} = ${frac(n, d)}.${texteSimplification(n, d)} On ne ${plus ? 'additionne' : 'soustrait'} jamais les dénominateurs.`,
+      explication: `Les dénominateurs sont différents : on ne peut pas ${plus ? 'additionner' : 'soustraire'} tout de suite. ${etapeEquivalente(f)} Puis ${calc2} = ${frac(n, d)}.${texteSimplification(n, d)} On ${plus ? 'n\'additionne' : 'ne soustrait'} jamais les dénominateurs.`,
     };
   }, 3),
   // Une grandeur fractionnée multipliée par un nombre entier (en situation).
@@ -1603,10 +1603,10 @@ const fractionsOperations = famille([
     const k = rng.int(2, 12);
     const cas = rng.pick([
       { bs: [2, 4, 5, 8, 10], f: 1, u: 'l', e: (x) => `${P.n} boit ${x} l de lait chaque jour. Combien de litres boit-${il} en ${k} jours ?` },
-      { bs: [2, 3, 4, 5, 6, 10, 12, 15, 20], f: 60, u: 'min', g: 'h', e: (x) => `Une séance d'entraînement dure ${x} h. Combien de minutes durent ${k} séances ?` },
+      { bs: [2, 3, 4, 5, 6, 10, 12], f: 60, u: 'min', g: 'h', e: (x) => `Une séance d'entraînement dure ${x} h. Combien de minutes durent ${k} séances ?` },
       { bs: [2, 4, 5, 10, 20, 25], f: 100, u: 'cm', g: 'm', e: (x) => `${P.n} coupe ${k} morceaux de ficelle de ${x} m chacun. Quelle longueur de ficelle utilise-t-${il}, en cm ?` },
       { bs: [2, 4, 5, 8, 10, 20], f: 1000, u: 'g', g: 'kg', e: (x) => `Une recette demande ${x} kg de farine pour un gâteau. Combien de grammes de farine faut-il pour ${k} gâteaux ?` },
-      { bs: [2, 4, 5, 10], f: 1, u: 'km', e: (x) => `${P.n} court ${x} km chaque matin. Combien de kilomètres court-${il} en ${k} matins ?` },
+      { bs: [2, 4, 5], f: 1, u: 'km', e: (x) => `${P.n} court ${x} km chaque matin. Combien de kilomètres court-${il} en ${k} matins ?` },
       { bs: [2, 3, 4, 6, 12], f: 60, u: 'min', g: 'h', e: (x) => `${P.n} lit ${x} h chaque soir. Combien de minutes lit-${il} en ${k} soirs ?` },
     ]);
     const b = rng.pick(cas.bs); const a = rng.int(1, b - 1);
@@ -1732,7 +1732,7 @@ const achatsPromos = famille([
       type: 'numerique', unite: '€', difficulte: 3,
       enonce: `Promotion sur les ${pl} : « ${L.txt} ». Un article coûte ${eur(p / 100)}. Combien paies-tu pour ${n} ${pl} ?${n > L.lot ? ' (La promotion compte pour chaque lot complet.)' : ''}`,
       reponse: tot / 100,
-      explication: `Un lot, c'est ${L.lot} articles dont tu paies ${L.paye}. ${n} articles = ${lots} ${lots > 1 ? 'lots' : 'lot'}${reste ? ` et ${reste} ${reste > 1 ? 'articles' : 'article'} sans promotion` : ''}. Tu paies ${lots} × ${L.paye}${reste ? ` + ${reste}` : ''} = ${lots * L.paye + reste} articles : ${lots * L.paye + reste} × ${eur(p / 100)} = ${eur(tot / 100)}.`,
+      explication: `Un lot, c'est ${L.lot} articles dont tu paies ${L.paye}. ${n} articles = ${lots} ${lots > 1 ? 'lots' : 'lot'}${reste ? ` et ${reste} ${reste > 1 ? 'articles' : 'article'} sans promotion` : ''}. Tu paies ${lots} × ${L.paye}${reste ? ` + ${reste}` : ''} = ${lots * L.paye + reste} ${lots * L.paye + reste > 1 ? 'articles' : 'article'} : ${lots * L.paye + reste} × ${eur(p / 100)} = ${eur(tot / 100)}.`,
     };
   }, 2),
   // Remise en pourcentage.
@@ -1759,12 +1759,15 @@ const achatsPromos = famille([
       return {
         ...c, difficulte: 2,
         enonce: `Un magasin ${mag} annonce : « Jusqu'à ${pct} % de remise ! » Quelle phrase est forcément vraie ?`,
-        explication: `« Jusqu'à ${pct} % » veut dire que ${pct} % est la remise la plus grande. Beaucoup d'articles ont une remise plus petite (ou pas de remise du tout), mais aucun n'a plus de ${pct} %.`,
+        explication: `« Jusqu'à ${pct} % » veut dire que ${pct} % est la remise la plus grande. D'autres articles peuvent avoir une remise plus petite, mais aucun n'a plus de ${pct} %.`,
       };
     }
-    const [obj, objs] = rng.pick([['vélo', 'vélos'], ['séjour', 'séjours'], ['ordinateur', 'ordinateurs'], ['canapé', 'canapés'], ['abonnement', 'abonnements'], ['menu', 'menus'], ['manteau', 'manteaux'], ['casque', 'casques']]);
-    const prix = rng.int(3, 90) * rng.pick([1, 5, 10]);
-    const c = qcm(rng, `Le ${obj} le moins cher coûte ${prix} €.`, [`Tous les ${objs} coûtent ${prix} €.`, `Le ${obj} le plus cher coûte ${prix} €.`, `Aucun ${obj} ne coûte plus de ${prix} €.`]);
+    // [singulier, pluriel, prix minimum, prix maximum, pas] : des prix « à partir de » réalistes.
+    const [obj, objs, pmin, pmax, pas] = rng.pick([['vélo', 'vélos', 90, 400, 10], ['séjour', 'séjours', 150, 900, 10], ['ordinateur', 'ordinateurs', 250, 900, 10], ['canapé', 'canapés', 200, 900, 10],
+      ['abonnement', 'abonnements', 5, 30, 1], ['menu', 'menus', 8, 25, 1], ['manteau', 'manteaux', 25, 120, 5], ['casque', 'casques', 15, 60, 5]]);
+    const prix = rng.int(pmin / pas, pmax / pas) * pas;
+    const le = /^[aeéiou]/.test(obj) ? 'L\'' : 'Le ';
+    const c = qcm(rng, `${le}${obj} le moins cher coûte ${prix} €.`, [`Tous les ${objs} coûtent ${prix} €.`, `${le}${obj} le plus cher coûte ${prix} €.`, `Aucun ${obj} ne coûte plus de ${prix} €.`]);
     return {
       ...c, difficulte: 2,
       enonce: `Une publicité annonce : « ${majuscule(objs)} à partir de ${prix} € ». Que peux-tu en déduire ?`,
@@ -1785,7 +1788,7 @@ const achatsPromos = famille([
         type: 'numerique', unite: '€', difficulte: 3,
         enonce: `${qui} achète ${k} ${objs} à ${eur(achat / 100)} pièce. ${gain ? `${Il} les revend tous à ${eur(vente / 100)} pièce. Quel est son bénéfice ?` : `${Il} ne parvient à les revendre qu'à ${eur(vente / 100)} pièce. Quelle est sa perte ?`}`,
         reponse: diff / 100,
-        explication: `Par ${obj} : ${gain ? `${eur(vente / 100)} − ${eur(achat / 100)} = ${eur((vente - achat) / 100)} de bénéfice` : `${eur(achat / 100)} − ${eur(vente / 100)} = ${eur((achat - vente) / 100)} de perte`}. Pour ${k} ${objs} : ${k} × ${eur(Math.abs(vente - achat) / 100)} = ${eur(diff / 100)}. (On peut aussi calculer le prix de vente total moins le prix d'achat total.)`,
+        explication: `Par ${obj} : ${gain ? `${eur(vente / 100)} − ${eur(achat / 100)} = ${eur((vente - achat) / 100)} de bénéfice` : `${eur(achat / 100)} − ${eur(vente / 100)} = ${eur((achat - vente) / 100)} de perte`}. Pour ${k} ${objs} : ${k} × ${eur(Math.abs(vente - achat) / 100)} = ${eur(diff / 100)}. ${gain ? '(On peut aussi calculer : prix de vente total − prix d\'achat total.)' : '(On peut aussi calculer : prix d\'achat total − prix de vente total.)'}`,
       };
     }
     const achat = rng.int(40, 900) * 100 + rng.pick([0, 50]); const frais = rng.int(5, 120) * 100 + rng.pick([0, 50]);
@@ -1825,13 +1828,14 @@ const achatsPromos = famille([
     const [sg, pl, art, mn, mx] = rng.pick(ARTICLES_PROMO);
     const p = prixCents(rng, mn, mx, 20); const n = rng.int(2, 6);
     const OFFRES = [
-      { txt: 'le deuxième à moitié prix', tot: () => Math.floor(n / 2) * 1.5 * p + (n % 2) * p, calc: () => `${Math.floor(n / 2)} × ${eur(1.5 * p / 100)}${n % 2 ? ` + ${eur(p / 100)}` : ''}` },
-      { txt: '3 pour le prix de 2', tot: () => (Math.floor(n / 3) * 2 + (n % 3)) * p, calc: () => `${Math.floor(n / 3) * 2 + (n % 3)} × ${eur(p / 100)}` },
-      { txt: '− 30 % sur chaque article', tot: () => n * p * 0.7, calc: () => `${n} × ${eur(0.7 * p / 100)}` },
-      { txt: '− 20 % sur chaque article', tot: () => n * p * 0.8, calc: () => `${n} × ${eur(0.8 * p / 100)}` },
-      { txt: '1 acheté, 1 gratuit', tot: () => (Math.ceil(n / 2)) * p, calc: () => `${Math.ceil(n / 2)} × ${eur(p / 100)}` },
+      { txt: 'le deuxième à moitié prix', tot: () => Math.floor(n / 2) * 1.5 * p + (n % 2) * p, calc: () => `${Math.floor(n / 2)} ${n >= 4 ? 'paires' : 'paire'} à ${eur(1.5 * p / 100)} (${eur(p / 100)} + ${eur(p / 200)})${n % 2 ? ` + 1 article à ${eur(p / 100)}` : ''}`, unit: true },
+      { txt: '3 pour le prix de 2', tot: () => (Math.floor(n / 3) * 2 + (n % 3)) * p, calc: () => `${Math.floor(n / 3) * 2 + (n % 3)} ${Math.floor(n / 3) * 2 + (n % 3) > 1 ? 'articles payés' : 'article payé'} × ${eur(p / 100)}` },
+      { txt: '− 30 % sur chaque article', tot: () => n * p * 0.7, calc: () => `${n} × ${eur(0.7 * p / 100)} (prix réduit de 30 %)` },
+      { txt: '− 20 % sur chaque article', tot: () => n * p * 0.8, calc: () => `${n} × ${eur(0.8 * p / 100)} (prix réduit de 20 %)` },
+      { txt: '1 acheté, 1 gratuit', tot: () => (Math.ceil(n / 2)) * p, calc: () => `${Math.ceil(n / 2)} ${Math.ceil(n / 2) > 1 ? 'articles payés' : 'article payé'} × ${eur(p / 100)}` },
     ];
     const [A, B] = rng.shuffle(OFFRES).slice(0, 2);
+    if (A.txt.includes('%') && B.txt.includes('%')) return null; // − 20 % contre − 30 % : rien à calculer
     const ta = Math.round(A.tot()); const tb = Math.round(B.tot());
     const choix = ['L\'offre A', 'L\'offre B', 'Les deux offres coûtent la même chose'];
     const rep = ta < tb ? 0 : tb < ta ? 1 : 2;
@@ -1966,7 +1970,7 @@ const grapheFleche = famille([
       cle: `${g.join(',')}|${dr.join(',')}`,
       figure: figureDeuxEnsembles(g, dr, qs.map((_, i) => [i, i]), { titreG: tg, titreD: td }),
       reponse: r(qs[cache] * pu / 100),
-      explication: `Prix pour 1 ${unite} : ${eur(qs[0] * pu / 100)} : ${qs[0]} = ${eur(pu / 100)}. Pour ${qs[cache]} : ${qs[cache]} × ${eur(pu / 100)} = ${eur(qs[cache] * pu / 100)}. On passe toujours de gauche à droite en multipliant par ${fmt(pu / 100)}.`,
+      explication: `${qs.includes(1) ? `On lit sur le graphe : 1 ${unite} coûte ${eur(pu / 100)}.` : `Prix pour 1 ${unite} : ${eur(qs[0] * pu / 100)} : ${qs[0]} = ${eur(pu / 100)}.`} Pour ${qs[cache]} : ${qs[cache]} × ${eur(pu / 100)} = ${eur(qs[cache] * pu / 100)}. On passe toujours de gauche à droite en multipliant par ${fmt(pu / 100)}.`,
     };
   }, 2),
   // Est-ce une situation de proportionnalité ?
@@ -2215,7 +2219,7 @@ const solidesFaces = famille([
       type: 'numerique', difficulte: 3,
       enonce: `Combien de faces de ce solide sont des ${forme} ?`,
       cle: `${sol.cle}|${forme}`, figure: sol.figure, reponse: nb,
-      explication: `${majuscule(nomSolide(sol.sorte, sol.n))} a ${sol.sorte === 'prisme' ? `2 bases (des ${NOMS_BASES[sol.n][1]}s) et ${sol.n} faces latérales rectangulaires` : `1 base (un ${NOMS_BASES[sol.n][1]}) et ${sol.n} faces latérales triangulaires`}. Il y a donc ${nb} ${forme}.`,
+      explication: `${majuscule(nomSolide(sol.sorte, sol.n))} a ${sol.sorte === 'prisme' ? `2 bases (des ${NOMS_BASES[sol.n][1]}s) et ${sol.n} faces latérales rectangulaires` : `1 base (un ${NOMS_BASES[sol.n][1]}) et ${sol.n} faces latérales triangulaires`}. ${nb ? `Il y a donc ${nb} ${forme}.` : `Il n'y en a donc aucun : la réponse est 0.`}`,
     };
   }, 2),
   // Pavé droit nommé : faces parallèles, perpendiculaires, isométriques.
@@ -2350,8 +2354,8 @@ function cadrer(P, W, H, marge) {
 }
 const TRIANGLES_CODES = [
   { nom: 'équilatéral', pts: (r1) => [[0, 0], [10, 0], [5, -8.66]], codes: [1, 1, 1], droits: [], expl: 'Les trois côtés portent le même codage : ils ont la même longueur. C\'est un triangle équilatéral (il est aussi isocèle, mais « équilatéral » est plus précis).', exclus: ['isocèle'] },
-  { nom: 'isocèle', pts: (r1) => [[0, 0], [10, 0], [5, -(6 + r1 * 8)]], codes: [0, 1, 1], droits: [], expl: 'Deux côtés seulement portent le même codage : c\'est un triangle isocèle.', exclus: [] },
-  { nom: 'rectangle', pts: (r1) => [[0, 0], [10, 0], [0, -(4 + r1 * 5)]], codes: [0, 0, 0], droits: [0], expl: 'Le petit carré indique un angle droit, et aucun côté n\'a le même codage qu\'un autre : c\'est un triangle rectangle.', exclus: [] },
+  { nom: 'isocèle', pts: (r1) => [[0, 0], [10, 0], [5, -(r1 < 0.5 ? 6 + r1 * 1.6 : 11 + (r1 - 0.5) * 6)]], codes: [0, 1, 1], droits: [], expl: 'Deux côtés seulement portent le même codage : c\'est un triangle isocèle.', exclus: [] },
+  { nom: 'rectangle', pts: (r1) => [[0, 0], [10, 0], [0, -(4 + r1 * 3)]], codes: [0, 0, 0], droits: [0], expl: 'Le petit carré indique un angle droit, et aucun codage n\'indique deux côtés de même longueur : c\'est un triangle rectangle.', exclus: ['scalène'] }, // un triangle rectangle est souvent aussi scalène : distracteur défendable
   { nom: 'rectangle isocèle', pts: () => [[0, 0], [10, 0], [0, -10]], codes: [1, 0, 1], droits: [0], expl: 'Un angle droit (petit carré) et deux côtés de même longueur (même codage) : c\'est un triangle rectangle isocèle.', exclus: ['rectangle', 'isocèle'] },
   { nom: 'scalène', pts: (r1) => [[0, 0], [10, 0], [2.5 + r1 * 2, -(5 + r1 * 3)]], codes: [1, 2, 3], droits: [], expl: 'Les trois côtés ont des codages différents : leurs longueurs sont toutes différentes. C\'est un triangle scalène.', exclus: [] },
 ];
@@ -2431,7 +2435,7 @@ const symbolesGeo = famille([
       enonce: nier ? 'D\'après la figure, quelle écriture est FAUSSE ?' : 'D\'après la figure, quelle écriture est vraie ?',
       cle: `${a}${b}${c}${d}|${th.toFixed(2)}|${phi.toFixed(2)}|${ecart}|${decal}|${offD}|${marque.length}`,
       figure: svg(W, H, s),
-      explication: `${a} et ${b} ne se coupent pas : ${a} // ${b}. Le petit carré montre un angle droit : ${c} ⊥ ${a}, et comme ${b} // ${a}, on a aussi ${c} ⊥ ${b}. La droite ${d} coupe les autres sans angle droit : elle n'est ni parallèle ni perpendiculaire à elles.`,
+      explication: `${a} et ${b} ne se coupent pas : ${a} // ${b}. Le petit carré montre un angle droit : ${c} ⊥ ${a}, et comme ${b} // ${a}, on a aussi ${c} ⊥ ${b}. La droite ${d} coupe les autres droites sans former d'angle droit : elle n'est ni parallèle ni perpendiculaire aux autres.`,
     };
   }, 2),
   // Nature d'une figure d'après le codage.
@@ -2470,6 +2474,9 @@ const symbolesGeo = famille([
     const noms = deuxLettres(rng, LETTRES_PTS, n);
     const seg = (k) => `[${noms[k]}${noms[(k + 1) % n]}]`;
     const Pc = cadrer(P, 320, 210, 36);
+    // Le codage ne doit pas contredire grossièrement le dessin : les deux côtés codés pareil ont presque la même longueur.
+    const lg = (k) => Math.hypot(Pc[(k + 1) % n][0] - Pc[k][0], Pc[(k + 1) % n][1] - Pc[k][1]);
+    if (Math.max(lg(i), lg(j)) / Math.min(lg(i), lg(j)) > 1.25) return null;
     const paires = [];
     for (let x = 0; x < n; x++) for (let y = x + 1; y < n; y++) paires.push([x, y]);
     const bonne = `${seg(Math.min(i, j))} et ${seg(Math.max(i, j))}`;
@@ -2480,7 +2487,7 @@ const symbolesGeo = famille([
       enonce: `D'après le codage, quels côtés de ce polygone ont la même longueur ?`,
       cle: `${noms.join('')}|${codes.join('')}|${Pc.flat().map(Math.round).join(',')}`,
       figure: svg(320, 210, figurePolygoneCode(Pc, noms, codes, [], rng.pick(FONDS))),
-      explication: `Les côtés ${seg(Math.min(i, j))} et ${seg(Math.max(i, j))} portent le même codage (deux petits traits) : ils ont la même longueur, même si le dessin n'est pas exact. Un codage différent (un trait, trois traits) indique une autre longueur.`,
+      explication: `Les côtés ${seg(Math.min(i, j))} et ${seg(Math.max(i, j))} portent le même codage (deux petits traits) : ils ont la même longueur (le dessin n'est pas forcément exact : on se fie au codage). Un codage différent (un trait, trois traits) indique une autre longueur.`,
     };
   }, 2),
   // Le petit carré : angle droit.

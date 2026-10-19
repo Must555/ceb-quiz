@@ -363,7 +363,7 @@
     "Futur antérieur : auxiliaire au futur simple (tu auras fini). Action future terminée avant une autre.",
     "Conditionnel passé : auxiliaire au conditionnel présent (je serais venu). Souvent après « si » + plus-que-parfait.",
     "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (elles étaient parties, Léa sera arrivée).",
-  "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord."
+    "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord."
    ],
    "exemple": "Quand tu auras fini tes devoirs, tu pourras jouer. Si j'avais su, je serais venue plus tôt.",
    "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé."
@@ -436,7 +436,7 @@
     "Adjectif terminé par une voyelle (i, u, é, ai) : masculin + -ment (vrai → vraiment, poli → poliment).",
     "-ant → -amment (bruyant → bruyamment) ; -ent → -emment, prononcé « amment » (prudent → prudemment).",
     "Exceptions : gentil → gentiment, bref → brièvement ; en -ément : énorme → énormément, intense → intensément, précis → précisément, profond → profondément.",
-  "Attention : lent se termine par -ent mais suit la règle générale : lente → lentement."
+    "Attention : lent se termine par -ent mais suit la règle générale : lente → lentement."
    ],
    "exemple": "Papa conduit prudemment. Les enfants entrent bruyamment.",
    "astuce": "-ant donne -amment avec un a, -ent donne -emment avec un e : la voyelle de l'adjectif se garde."
@@ -454,6 +454,203 @@
    ],
    "exemple": "La lettre que Léa a écrite est sur mon bureau. Léa a écrit une lettre.",
    "astuce": "Avec avoir, pose la question « quoi ? » : si la réponse (que, l', les…) est avant le verbe, accorde."
+  },
+  {
+   "id": "fr-determinants-pronoms",
+   "matiere": "fr",
+   "e": "🔍",
+   "titre": "Déterminants et pronoms : les sous-classes",
+   "regle": [
+    "Le déterminant est placé devant un nom : article (le, un, du), possessif (mon, leur), démonstratif (ce, cette), numéral cardinal (trois), interrogatif ou exclamatif (quel), indéfini (chaque, plusieurs, quelques).",
+    "Le pronom remplace un nom ou désigne une personne, sans nom après lui.",
+    "Pronoms : personnel (je, le, lui, leur), possessif (le mien, la tienne), démonstratif (celui-ci, cela, ça), numéral (deux, employé seul), indéfini (quelqu'un, personne, chacun, rien).",
+    "Un même mot peut changer de classe : « leur maison » (déterminant), « je leur parle » (pronom)."
+   ],
+   "exemple": "Plusieurs élèves (déterminant indéfini) sont partis ; plusieurs (pronom indéfini) sont restés.",
+   "astuce": "Regarde ce qui suit : s'il y a un nom, c'est un déterminant ; sinon, c'est un pronom."
+  },
+  {
+   "id": "fr-narrateur",
+   "matiere": "fr",
+   "e": "🎙️",
+   "titre": "Le narrateur et le point de vue",
+   "regle": [
+    "Le narrateur est celui qui raconte l'histoire (ce n'est pas forcément l'auteur).",
+    "Narrateur interne : un personnage raconte ce qu'il vit ; il dit « je ».",
+    "Narrateur externe : il ne participe pas à l'histoire ; il dit « il » ou « elle ».",
+    "Point de vue objectif : des faits, sans avis. Point de vue subjectif : des mots qui jugent ou expriment des sentiments (magnifique, horrible, je trouve que…)."
+   ],
+   "exemple": "« J'ai ouvert la porte » → narrateur interne. « Ce château est superbe ! » → point de vue subjectif.",
+   "astuce": "Cherche « je » dans le récit, puis cherche les mots qui donnent un avis."
+  },
+  {
+   "id": "fr-reel-imaginaire",
+   "matiere": "fr",
+   "e": "🦄",
+   "titre": "Réel ou imaginaire ? Vraisemblable ou non ?",
+   "regle": [
+    "Réel : des faits vrais, qu'on peut vérifier (article, documentaire, encyclopédie).",
+    "Imaginaire : une histoire inventée par un auteur (conte, roman, BD).",
+    "Vraisemblable : cela pourrait arriver dans la réalité. Invraisemblable : c'est impossible (animal qui parle, magie).",
+    "Une histoire inventée peut être vraisemblable : un roman peut raconter un bus raté."
+   ],
+   "exemple": "« Le chien ouvrit le frigo et se fit un sandwich. » → imaginaire et invraisemblable.",
+   "astuce": "Demande-toi : est-ce que cela pourrait vraiment arriver ?"
+  },
+  {
+   "id": "fr-organisateurs",
+   "matiere": "fr",
+   "e": "🧭",
+   "titre": "Les organisateurs du récit",
+   "regle": [
+    "Les organisateurs textuels indiquent l'ordre des évènements.",
+    "Début : d'abord, pour commencer, il était une fois, un jour.",
+    "Suite : ensuite, puis, après, le lendemain. Évènement brusque : soudain, tout à coup.",
+    "Fin : enfin, finalement, pour finir, depuis ce jour."
+   ],
+   "exemple": "D'abord, mélange la farine et les œufs. Ensuite, ajoute le lait. Enfin, fais cuire.",
+   "astuce": "Repère l'organisateur au début de chaque phrase, puis vérifie que l'histoire est logique."
+  },
+  {
+   "id": "fr-consignes",
+   "matiere": "fr",
+   "e": "📋",
+   "titre": "Suivre plusieurs consignes",
+   "regle": [
+    "Lis toute la consigne avant de commencer.",
+    "Fais les étapes dans l'ordre : 1, puis 2, puis 3.",
+    "Après chaque étape, note le résultat avant de passer à la suivante.",
+    "Relis la question : que dois-tu écrire exactement (un mot, un nombre…) ?"
+   ],
+   "exemple": "1. Garde les noms d'animaux. 2. Prends le premier dans l'ordre alphabétique. 3. Écris-le au pluriel.",
+   "astuce": "Barre ou entoure au fur et à mesure pour ne rien oublier."
+  },
+  {
+   "id": "fr-passive-mise-en-evidence",
+   "matiere": "fr",
+   "e": "🔄",
+   "titre": "Voix passive et mise en évidence",
+   "regle": [
+    "Voix active : le sujet fait l'action (Le chat attrape la souris).",
+    "Voix passive : le sujet subit l'action ; être + participe passé accordé avec le sujet (La souris est attrapée par le chat).",
+    "Le complément d'agent, introduit par « par », dit qui fait l'action ; il peut manquer.",
+    "Mise en évidence : « c'est … qui » (sujet) ou « c'est … que » (complément) : C'est le chat qui attrape la souris."
+   ],
+   "exemple": "Les feuilles sont emportées par le vent. → voix passive (le vent fait l'action).",
+   "astuce": "Attention : « Léa est partie » est à la voix active (partir se conjugue avec être)."
+  },
+  {
+   "id": "fr-subjonctif-participe",
+   "matiere": "fr",
+   "e": "🎛️",
+   "titre": "Repérer le subjonctif et les participes",
+   "regle": [
+    "Subjonctif présent : après « il faut que », « vouloir que », « il est important que » (que je finisse, qu'il fasse, que nous allions).",
+    "Participe présent : forme en -ant, invariable (en marchant, chantant).",
+    "Participe passé : forme en -é, -i, -u, -s, -t… (mangé, fini, venu, pris, peint), seul ou avec être ou avoir.",
+    "Les autres modes : indicatif (fait réel), impératif (ordre), infinitif (forme du dictionnaire)."
+   ],
+   "exemple": "Maman veut que tu ranges (subjonctif) ta chambre. Léa est rentrée (participe passé) en chantant (participe présent).",
+   "astuce": "Un « que » devant le verbe après « il faut » ou « vouloir » annonce le subjonctif."
+  },
+  {
+   "id": "fr-participe-present",
+   "matiere": "fr",
+   "e": "🏃",
+   "titre": "Le participe présent",
+   "regle": [
+    "Le participe présent se termine toujours par -ant.",
+    "On prend le radical du présent avec « nous » et on remplace -ons par -ant : nous finissons → finissant.",
+    "Exceptions : être → étant, avoir → ayant, savoir → sachant.",
+    "Il est invariable. Avec « en », il forme le gérondif : en chantant."
+   ],
+   "exemple": "nous mangeons → mangeant ; nous commençons → commençant ; nous voyons → voyant.",
+   "astuce": "Pense à « nous » : il garde le ç et le e (commençant, mangeant)."
+  },
+  {
+   "id": "fr-champ-lexical",
+   "matiere": "fr",
+   "e": "🌊",
+   "titre": "Le champ lexical",
+   "regle": [
+    "Un champ lexical est un ensemble de mots qui se rapportent à un même thème.",
+    "Il peut contenir des noms, des verbes et des adjectifs : mer → vague, plage, nager, salé.",
+    "Les champs lexicaux aident à comprendre de quoi parle un texte et l'ambiance (peur, joie…)."
+   ],
+   "exemple": "Champ lexical de l'hiver : neige, flocon, luge, verglas, frissonner.",
+   "astuce": "Pour trouver l'intrus, demande-toi : à quoi me font penser les autres mots ?"
+  },
+  {
+   "id": "fr-intensite-modalite",
+   "matiere": "fr",
+   "e": "🌡️",
+   "titre": "Intensité, certitude et probabilité",
+   "regle": [
+    "Des mots expriment une idée plus ou moins forte : tiède → chaud → brûlant ; aimer → adorer.",
+    "Les adverbes très, trop, si, assez, peu, extrêmement modifient l'intensité d'un adjectif.",
+    "Certitude : il est certain que, sans aucun doute, c'est sûr.",
+    "Probabilité (pas sûr) : peut-être, probablement, sans doute, il est probable que."
+   ],
+   "exemple": "« Sans doute, il pleuvra demain » = il pleuvra probablement (ce n'est pas certain).",
+   "astuce": "Attention : « sans doute » veut dire « probablement » ; « sans aucun doute » veut dire « c'est sûr »."
+  },
+  {
+   "id": "fr-mots-composes",
+   "matiere": "fr",
+   "e": "🧱",
+   "titre": "Les mots composés",
+   "regle": [
+    "Un mot composé est formé de plusieurs mots et désigne une seule chose.",
+    "Il peut être soudé (portefeuille), avec un trait d'union (chou-fleur), avec un connecteur (pomme de terre) ou juxtaposé (carte postale).",
+    "Pluriel : nom + nom ou nom + adjectif → les deux varient (choux-fleurs, coffres-forts).",
+    "Avec un connecteur, seul le premier nom varie (pommes de terre) ; après un mot invariable, seul le nom varie (sous-marins).",
+    "Orthographe rectifiée : certains mots peuvent se souder (portemonnaie) ; les deux graphies sont acceptées."
+   ],
+   "exemple": "un arc-en-ciel → des arcs-en-ciel ; un timbre-poste → des timbres-poste.",
+   "astuce": "Demande-toi ce que chaque mot veut dire au pluriel : des choux et des fleurs, mais des timbres pour la poste."
+  },
+  {
+   "id": "fr-coherence-temps",
+   "matiere": "fr",
+   "e": "⏳",
+   "titre": "Imparfait et passé simple dans un récit",
+   "regle": [
+    "Dans un récit au passé, on utilise surtout l'imparfait et le passé simple.",
+    "Imparfait : le décor, une description ou une action qui dure (Il faisait nuit. Léa lisait.).",
+    "Passé simple : une action soudaine, qui fait avancer l'histoire (Soudain, le téléphone sonna.).",
+    "On ne mélange pas sans raison le présent ou le futur avec ces temps."
+   ],
+   "exemple": "Léa lisait un roman quand, tout à coup, le téléphone sonna.",
+   "astuce": "« Soudain », « tout à coup » annoncent souvent un passé simple."
+  },
+  {
+   "id": "fr-paratexte",
+   "matiere": "fr",
+   "e": "📖",
+   "titre": "Le paratexte : autour du texte",
+   "regle": [
+    "Titre, sous-titre et intertitres annoncent le sujet et les parties.",
+    "Chapeau : court texte en gras sous le titre d'un article, qui résume l'essentiel.",
+    "Légende : texte qui explique une image. Encadré : information en plus, dans un cadre.",
+    "Sommaire (au début) : les parties et leurs pages. Index (à la fin) : les mots importants, par ordre alphabétique.",
+    "Note de bas de page : explication appelée par un astérisque (*) ou un chiffre."
+   ],
+   "exemple": "Pour trouver la page sur le hérisson dans un documentaire, cherche « hérisson » dans l'index.",
+   "astuce": "Avant de lire, regarde le titre, les images et leurs légendes : ils t'aident à deviner le contenu."
+  },
+  {
+   "id": "fr-sources",
+   "matiere": "fr",
+   "e": "🌐",
+   "titre": "Choisir une source fiable",
+   "regle": [
+    "Une source fiable indique son auteur (ou l'organisme) et sa date ; elle est vérifiée (encyclopédie, musée, spécialiste).",
+    "Une publicité, un message anonyme ou une vidéo de blagues ne sont pas des sources sûres.",
+    "Un hyperlien mène vers une autre page : lis son titre pour savoir s'il correspond à ta recherche.",
+    "Pour une information qui change (horaires, prix, météo), choisis le document le plus récent."
+   ],
+   "exemple": "Pour un exposé sur les volcans : le site d'un musée des sciences, plutôt qu'un forum anonyme.",
+   "astuce": "Pose-toi trois questions : Qui l'a écrit ? Quand ? Est-ce que ça répond à ma question ?"
   }
  ]
 }

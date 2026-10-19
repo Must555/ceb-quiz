@@ -3072,7 +3072,80 @@ const vuesAeriennes = famille('va', [
   }],
 ]);
 
+// =====================================================================================
+// 16. Facultatif (formation économique P6) : produire et consommer autrement
+// =====================================================================================
+const EQUITABLE = {
+  ok: ['Le producteur de cacao reçoit un prix juste, fixé à l\'avance, qui lui permet de vivre de son travail.',
+    'Les enfants des cultivateurs vont à l\'école au lieu de travailler dans les plantations.',
+    'Une partie de l\'argent sert à construire un puits ou une école dans le village des producteurs.',
+    'Les producteurs de café se regroupent en coopérative et décident ensemble.'],
+  ko: ['Le café est acheté au prix le plus bas possible, même si le cultivateur ne peut pas en vivre.',
+    'Des enfants travaillent toute la journée dans les plantations de cacao.',
+    'L\'intermédiaire garde presque tout le bénéfice et le producteur reçoit très peu.',
+    'Les ouvriers travaillent sans contrat, sans pause et sans protection.'],
+};
+const ALTERNATIVES = {
+  ok: ['Acheter un vélo d\'occasion dans un magasin de seconde main', 'Faire réparer son grille-pain dans un « repair café »',
+    'Emprunter une perceuse à un voisin ou à une bibliothèque d\'outils', 'Échanger des vêtements trop petits dans une bourse aux vêtements',
+    'Louer une tente pour les vacances au lieu d\'en acheter une'],
+  ko: ['Acheter un smartphone neuf chaque année', 'Jeter une chaise dont un pied est cassé et en acheter une neuve',
+    'Acheter des vêtements neufs qu\'on ne portera qu\'une fois', 'Remplacer son vélo neuf dès qu\'un nouveau modèle sort'],
+};
+const BANQUE_CONSO = [
+  { q: 'Que fait-on quand on épargne ?', ok: 'On met de l\'argent de côté pour plus tard.', ko: ['On emprunte de l\'argent à une banque.', 'On dépense tout son argent tout de suite.', 'On paie une dette.'],
+    expl: 'Épargner, c\'est garder une partie de son argent pour plus tard (par exemple sur un compte d\'épargne). Emprunter, c\'est faire un crédit.' },
+  { q: 'Que fait-on quand on prend un crédit ?', ok: 'On emprunte de l\'argent qu\'il faudra rembourser, en payant en plus des intérêts.', ko: ['On reçoit de l\'argent en cadeau.', 'On met de l\'argent de côté.', 'On échange des objets sans argent.'],
+    expl: 'Un crédit est un prêt : la banque prête de l\'argent, qu\'il faut rembourser petit à petit, avec des intérêts (un supplément).' },
+  { q: 'Laquelle de ces actions est une mission d\'une banque ?', ok: 'Garder en sécurité l\'argent de ses clients et leur prêter de l\'argent', ko: ['Fabriquer les produits vendus dans les magasins', 'Voter les lois du pays', 'Soigner les malades'],
+    expl: 'Une banque reçoit l\'argent des clients (dépôts, épargne), gère les moyens de paiement (cartes, virements) et accorde des prêts (crédits).' },
+  { q: 'Des centaines de personnes donnent chacune un peu d\'argent sur internet pour aider un jeune agriculteur à acheter des vaches. Comment appelle-t-on ce mode de financement ?', ok: 'Le financement participatif', ko: ['Le crédit bancaire', 'L\'impôt', 'Le commerce équitable'],
+    expl: 'Dans le financement participatif, beaucoup de personnes apportent chacune une petite somme pour financer un projet.' },
+  { q: 'Acheter ses légumes directement à un agriculteur de sa région, c\'est…', ok: 'Acheter en circuit court', ko: ['Acheter en grande quantité', 'Acheter à crédit', 'Acheter de seconde main'],
+    expl: 'Dans un circuit court, il y a au maximum un intermédiaire entre le producteur et le consommateur : le producteur gagne mieux sa vie et les produits voyagent moins.' },
+  { q: 'Que garantit un label de commerce équitable sur un paquet de café ?', ok: 'Que les producteurs ont reçu un prix juste pour leur travail', ko: ['Que le café est le moins cher du magasin', 'Que le café a été cultivé en Belgique', 'Que le paquet est en plastique recyclé'],
+    expl: 'Le commerce équitable garantit aux producteurs (souvent dans des pays pauvres) un prix juste et de meilleures conditions de travail.' },
+  { q: 'Pourquoi faire réparer un objet plutôt que d\'en acheter un neuf aide-t-il l\'environnement ?', ok: 'On utilise moins de matières premières et d\'énergie, et on produit moins de déchets.', ko: ['Parce que les objets neufs sont toujours plus solides.', 'Parce que réparer coûte toujours plus cher.', 'Cela n\'a aucun effet sur l\'environnement.'],
+    expl: 'Les ressources de la planète (métaux, pétrole…) ne sont pas infinies. Réparer, réutiliser ou acheter d\'occasion permet de les économiser et de réduire les déchets.' },
+];
+
+const consommer = famille('ca', [
+  [3, (rng) => {
+    const cherche = rng.next() < 0.65;
+    const bonne = rng.pick(cherche ? EQUITABLE.ok : EQUITABLE.ko);
+    const q = qcm(rng, bonne, cherche ? EQUITABLE.ko : EQUITABLE.ok);
+    return {
+      ...q,
+      enonce: cherche ? 'Laquelle de ces situations respecte les principes du commerce équitable ?' : 'Laquelle de ces situations ne respecte pas les principes du commerce équitable ?',
+      explication: `${bonne} ${cherche ? 'C\'est un principe du commerce équitable : un prix juste, de bonnes conditions de travail, pas de travail des enfants, des projets pour la communauté.' : 'Le commerce équitable, au contraire, garantit un prix juste, de bonnes conditions de travail et refuse le travail des enfants.'}`,
+      _signature: `eq|${cherche}|${bonne}|${cle(q.choix)}`, cleContenu: `eq|${cherche}|${bonne}`, difficulte: 2,
+    };
+  }],
+  [3, (rng) => {
+    const bonne = rng.pick(ALTERNATIVES.ok);
+    const q = qcm(rng, bonne, ALTERNATIVES.ko);
+    return {
+      ...q,
+      enonce: 'Laquelle de ces actions est une alternative à l\'achat d\'un objet neuf ?',
+      explication: `${bonne} : c'est une alternative (seconde main, réparation, prêt, échange ou location). Cela économise de l'argent et les ressources de la planète.`,
+      _signature: `alt|${bonne}|${cle(q.choix)}`, cleContenu: `alt|${bonne}`, difficulte: 1,
+    };
+  }],
+  [3, (rng) => {
+    const items = tirerMixte(rng, [...ALTERNATIVES.ok.map((t) => ({ t, c: 0 })), ...ALTERNATIVES.ko.map((t) => ({ t, c: 1 }))], 4, (x) => x.c);
+    if (!items) return null;
+    return {
+      ...grilleQ(items, ['Consommer autrement', 'Acheter du neuf sans nécessité']),
+      enonce: 'Chaque action est-elle une façon de consommer autrement, ou un achat neuf qui n\'est pas nécessaire ?',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'consommer autrement' : 'achat neuf pas nécessaire'}`).join(' ; ')) + '.',
+      _signature: `gr|${cle(items.map((x) => x.t))}`, cleContenu: `gr|${cle(items.map((x) => x.t))}`, difficulte: 2,
+    };
+  }],
+  [4, (rng) => ({ ...depuisBanque(rng, BANQUE_CONSO, 'bq'), difficulte: 2 })],
+]);
+
 export const GENERATEURS = {
+  hg_tc_consommer: consommer,
   hg_tc_vues_aeriennes: vuesAeriennes,
   hg_tc_eau_relief: eauRelief,
   hg_tc_peuplement_be: peuplementBe,

@@ -324,6 +324,132 @@
    ],
    "exemple": "Presque tous les Égyptiens vivent dans la vallée et le delta du Nil, au milieu du désert.",
    "astuce": "Pour comparer des densités, calcule toujours habitants ÷ km² : ne regarde pas seulement le nombre d'habitants."
+  },
+  {
+   "id": "hg-planisphere",
+   "matiere": "hg",
+   "e": "🗺️",
+   "titre": "Le planisphère : continents, océans, lignes",
+   "regle": [
+    "6 continents : Europe, Asie, Afrique, Amérique (du Nord et du Sud), Océanie, Antarctique.",
+    "5 océans : Pacifique (le plus grand), Atlantique, Indien, Arctique (autour du pôle Nord), Austral, aussi appelé océan Antarctique (autour de l'Antarctique).",
+    "L'équateur partage la Terre en hémisphère Nord et hémisphère Sud.",
+    "Le tropique du Cancer (au nord) et le tropique du Capricorne (au sud) limitent la zone chaude ; les cercles polaires arctique et antarctique entourent les zones froides."
+   ],
+   "exemple": "L'Europe est au nord de l'Afrique ; l'océan Atlantique les sépare de l'Amérique.",
+   "astuce": "Repère d'abord l'Europe et l'Afrique au centre de la carte, puis l'Amérique à gauche et l'Asie à droite."
+  },
+  {
+   "id": "hg-millenaires",
+   "matiere": "hg",
+   "e": "⏳",
+   "titre": "Millénaires, siècles et an 1",
+   "regle": [
+    "1 siècle = 100 ans ; 1 millénaire = 1 000 ans = 10 siècles.",
+    "L'an 1 est le début de l'ère chrétienne, du Ier siècle et du Ier millénaire après J.-C. Il n'y a pas d'an 0.",
+    "Après J.-C. : le IIe millénaire va de 1001 à 2000 ; le IIIe a commencé en 2001.",
+    "Avant J.-C., on compte à rebours : le IVe millénaire av. J.-C. va de 4000 à 3001 av. J.-C. ; 3000 av. J.-C. est plus ancien que 500 av. J.-C."
+   ],
+   "exemple": "1492 → XVe siècle, IIe millénaire ; vers 3500 av. J.-C. → IVe millénaire av. J.-C.",
+   "astuce": "Pour une durée à cheval sur l'an 1 (au 1er janvier), additionne les deux nombres et retire 1 : du 1er janvier 10 av. J.-C. au 1er janvier 10 apr. J.-C., il s'écoule 19 ans."
+  },
+  {
+   "id": "hg-outils-info",
+   "matiere": "hg",
+   "e": "📚",
+   "titre": "Trouver une information",
+   "regle": [
+    "La table des matières donne les chapitres dans l'ordre du livre, avec leur page de début.",
+    "L'index, à la fin du livre, range les mots importants par ordre alphabétique avec les pages où on en parle.",
+    "Un chapitre se termine à la page qui précède le début du chapitre suivant.",
+    "Dans un moteur de recherche, tape des mots-clés précis (le sujet + ce que tu cherches)."
+   ],
+   "exemple": "Pour lire sur Charlemagne, cherche « Charlemagne » dans l'index, ou le chapitre « Haut Moyen Âge » dans la table des matières.",
+   "astuce": "Dictionnaire = sens des mots ; atlas = cartes ; index = pages où trouver un mot."
+  },
+  {
+   "id": "hg-documents",
+   "matiere": "hg",
+   "e": "🧐",
+   "titre": "Critiquer un document",
+   "regle": [
+    "Identifie l'auteur (qui l'a fait ?), la date et le lieu de réalisation du document.",
+    "La date de réalisation n'est pas toujours la date des faits racontés : un article de 2006 peut parler de 1956.",
+    "Trace du passé : réalisée à l'époque des faits. Travail postérieur : réalisé plus tard (manuel, film, BD, maquette…).",
+    "Un document est pertinent s'il parle du bon sujet, de la bonne époque et du bon lieu.",
+    "Demande-toi quelle est l'intention de l'auteur : informer, convaincre, rendre hommage, vendre…"
+   ],
+   "exemple": "Une affiche de 1946 qui propose du travail dans les mines belges : trace du passé, dont l'intention est de convaincre.",
+   "astuce": "Distingue ce qui est écrit dans le document de ce que tu peux en déduire."
+  },
+  {
+   "id": "hg-changements",
+   "matiere": "hg",
+   "e": "🔄",
+   "titre": "Changements et continuités",
+   "regle": [
+    "Un changement : ce qui est différent d'une époque à l'autre.",
+    "Une continuité (ou permanence) : ce qui reste pareil.",
+    "Pour comparer, on peut construire un tableau à double entrée : un thème par ligne, une époque par colonne."
+   ],
+   "exemple": "Entre 1950 et aujourd'hui : la monnaie a changé (franc belge → euro), la capitale est restée Bruxelles.",
+   "astuce": "Si les deux cases d'une ligne du tableau sont identiques, c'est une continuité."
+  },
+  {
+   "id": "hg-peuplement-belgique",
+   "matiere": "hg",
+   "e": "🏙️",
+   "titre": "Le peuplement de la Belgique",
+   "regle": [
+    "En 2024 : Belgique ≈ 11,8 millions d'habitants ; Région flamande ≈ 6,8 ; Région wallonne ≈ 3,7 ; Région de Bruxelles-Capitale ≈ 1,2 million.",
+    "Espaces très peuplés : l'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège).",
+    "Espaces peu peuplés : l'Ardenne, la Famenne, les Hautes Fagnes.",
+    "Densité = habitants ÷ km². La province d'Anvers est la plus peuplée ; celle de Luxembourg la moins peuplée et la moins dense."
+   ],
+   "exemple": "Bruxelles-Capitale : environ 1,2 million d'habitants sur 162 km², soit plus de 7 000 habitants par km².",
+   "astuce": "Une grande population ne veut pas dire une forte densité : compare toujours avec la superficie."
+  },
+  {
+   "id": "hg-eau-relief",
+   "matiere": "hg",
+   "e": "🏞️",
+   "titre": "L'eau et le relief",
+   "regle": [
+    "Un cours d'eau naît à sa source. Un affluent se jette dans un autre cours d'eau ; le confluent est l'endroit où ils se rejoignent. Un méandre est une grande boucle.",
+    "Un fleuve se jette dans la mer à son embouchure : un estuaire (large entonnoir, comme l'Escaut) ou un delta (plusieurs bras, comme le Nil).",
+    "Plaine : surface plane et peu élevée. Plateau : surface assez plane et plus élevée, entaillée par des vallées. Montagne : altitude élevée, fortes pentes.",
+    "Une vallée est un creux allongé creusé par un cours d'eau ; ses pentes sont les versants. L'altitude se mesure à partir du niveau de la mer."
+   ],
+   "exemple": "La Sambre est un affluent de la Meuse ; Namur est au confluent des deux.",
+   "astuce": "Basse Belgique = plaine (Flandre) ; haute Belgique = plateau (Ardenne). Le point le plus haut : Botrange, 694 m."
+  },
+  {
+   "id": "hg-vues-aeriennes",
+   "matiere": "hg",
+   "e": "🛩️",
+   "titre": "Comparer des vues aériennes",
+   "regle": [
+    "Lis d'abord la légende et les dates des vues.",
+    "Repère ce qui a changé (nouvelles maisons, usines, routes, forêt abattue ou plantée) et ce qui est resté pareil (rivière, routes anciennes).",
+    "Paysage rural : champs, prairies, bois, villages. Paysage urbain : immeubles, maisons serrées, usines.",
+    "Habitat groupé (maisons serrées), dispersé (fermes isolées), linéaire (maisons le long d'une route)."
+   ],
+   "exemple": "Des champs en 1975 remplacés par des maisons en 2020 : un lotissement a été construit.",
+   "astuce": "Compare les deux vues case par case, comme dans un jeu des différences."
+  },
+  {
+   "id": "hg-consommer",
+   "matiere": "hg",
+   "e": "♻️",
+   "titre": "Produire et consommer autrement",
+   "regle": [
+    "Commerce équitable : un prix juste pour les producteurs, de bonnes conditions de travail, pas de travail des enfants.",
+    "Alternatives à l'achat neuf : seconde main, réparation (repair café), prêt, échange, location.",
+    "Épargner = mettre de l'argent de côté ; un crédit = un prêt à rembourser avec des intérêts.",
+    "Une banque garde l'argent, gère les paiements et accorde des prêts. Financement participatif : beaucoup de personnes financent un projet."
+   ],
+   "exemple": "Faire réparer son vélo plutôt que d'en acheter un neuf économise de l'argent et des ressources.",
+   "astuce": "Avant d'acheter, demande-toi : en ai-je vraiment besoin ? Puis-je l'emprunter, le réparer ou l'acheter d'occasion ?"
   }
  ]
 }

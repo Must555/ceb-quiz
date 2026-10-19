@@ -130,7 +130,8 @@ export class QuizSession {
     const poids = this.o.poids ?? (() => 1);
     let candidats = [
       ...fixes.map((item) => ({ item, modele: false, w: poids(item) })),
-      ...modeles.map((item) => ({ item, modele: true, w: this.o.poidsModele * poids(item) })),
+      // `poids` propre au modèle (ex. 0.4 pour une notion hors P6 ou facultative) : il sort moins souvent.
+      ...modeles.map((item) => ({ item, modele: true, w: this.o.poidsModele * (item.poids ?? 1) * poids(item) })),
     ].filter((c) => c.w > 0);
     // Pas deux fois de suite le même modèle, sauf s'il n'y a rien d'autre (après pondération :
     // un candidat de poids 0 ne compte pas comme « autre chose »).

@@ -1872,13 +1872,13 @@ function figEprouvette(max, pas, etiq, val, unite, pluvio) {
   s += `<rect x="${xa}" y="${y(val).toFixed(1)}" width="${xb - xa}" height="${(yB - y(val)).toFixed(1)}" fill="#a9c9ec"/>`;
   s += `<line x1="${xa}" y1="${y(val).toFixed(1)}" x2="${xb}" y2="${y(val).toFixed(1)}" stroke="#1f5fbf" stroke-width="2"/>`;
   s += `<path d="M${xa} ${pluvio ? 50 : 40} L${xa} ${yB} L${xb} ${yB} L${xb} ${pluvio ? 50 : 40}" fill="none" stroke="${ENCRE}" stroke-width="2"/>`;
-  s += `<rect x="${xa - 22}" y="${yB}" width="${xb - xa + 44}" height="10" rx="2" fill="#d5dae3" stroke="${ENCRE}" stroke-width="1.4"/>`;
+  s += `<rect x="${xa - 8}" y="${yB}" width="${xb - xa + 16}" height="10" rx="2" fill="#d5dae3" stroke="${ENCRE}" stroke-width="1.4"/>`;
   for (let v = 0; v <= max + 1e-9; v += pas) {
     const m = Math.abs(v / etiq - Math.round(v / etiq)) < 1e-9; const yy = y(v).toFixed(1);
     s += `<line x1="${xb}" y1="${yy}" x2="${xb - (m ? 18 : 9)}" y2="${yy}" stroke="${ENCRE}" stroke-width="${m ? 1.5 : 1}"/>`;
-    if (m) s += `<text x="${xb + 8}" y="${(+yy + 4.5).toFixed(1)}" font-size="13" fill="${ENCRE}">${fmt(v)}</text>`;
+    if (m) s += `<text x="${xb + 14}" y="${(+yy + 4.5).toFixed(1)}" font-size="13" fill="${ENCRE}">${fmt(v)}</text>`;
   }
-  s += `<text x="${xb + 8}" y="${yH - 14}" font-size="13" font-weight="bold" fill="${ENCRE}">${unite}</text>`;
+  s += `<text x="${pluvio ? 194 : xb + 14}" y="${pluvio ? 38 : yH - 14}" font-size="13" font-weight="bold" fill="${ENCRE}">${unite}</text>`;
   return svg(W, H, s);
 }
 function figChrono(m, sec) {
@@ -1954,13 +1954,13 @@ export function genererMesures(modele, rng) {
   }
   if (forme === 'thermo') {
     const [lo, hi, pas, etiq] = rng.pick([[-10, 30, 1, 5], [0, 40, 1, 5], [10, 50, 1, 5], [-20, 40, 2, 10], [0, 60, 2, 10], [20, 100, 2, 10]]);
-    const n = Math.round((hi - lo) / pas); let k = rng.int(1, n - 1);
+    const n = Math.round((hi - lo) / pas); let k = rng.int(Math.max(1, Math.floor(-lo / pas) + 1), n - 1); // valeur positive (les réponses numériques négatives ne sont pas admises)
     if (rng.next() < 0.8 && ((k * pas) % etiq === 0)) k += 1;
     const val = lo + k * pas;
-    const c = val < 0 ? 'Il gèle dehors.' : val > 60 ? 'L\'eau chauffe sur la cuisinière.' : '';
+    const c = val > 60 ? 'L\'eau chauffe sur la cuisinière.' : '';
     return { type: 'numerique', reponse: val, unite: '°C', figure: figThermometre(lo, hi, pas, etiq, val),
       enonce: `${p} relève une température. ${c} Quelle température indique ce thermomètre ?`.replace(/ {2}/g, ' '),
-      explication: `Entre deux nombres écrits, il y a ${etiq / pas} intervalles : chaque petit trait vaut ${pas} °C. Le haut de la colonne rouge est à ${deg(val)}.${val < 0 ? ' Sous 0, la température est négative.' : ''}`,
+      explication: `Entre deux nombres écrits, il y a ${etiq / pas} intervalles : chaque petit trait vaut ${pas} °C. Le haut de la colonne rouge est à ${deg(val)}.`,
       _signature: `th|${lo}|${pas}|${val}`, cleContenu: `th|${lo}|${pas}|${val}` };
   }
   if (forme === 'eprouvette' || forme === 'pluvio') {
