@@ -1,7 +1,7 @@
 // Générateurs des familles du tronc commun (référentiel FHGES, attendus de P6), matière hg.
 // Voir js/engine/generateurs/gen-*.js pour les conventions (formes, _signature, qcm…).
 //
-//   hg_tc_moments      : les moments clés de P6 (et rappels de P5) ↔ périodes, dates, faits ; ordre chronologique
+//   hg_tc_moments      : les quatre moments clés de P6 ↔ périodes, dates, faits ; faits marquants ; ordre chronologique
 //   hg_tc_galloromains : échanges Celtes ↔ Romains, premiers chrétiens, Francs, Clovis, Charlemagne, familles de langues
 //   hg_tc_migrations   : migrations de travail vers la Belgique après 1945 (accords, Bois du Cazier, intégration, apports)
 //   hg_tc_colonisations: explorations et colonisations (XVe-XVIIIe s.), produits des Amériques, impacts, commerce triangulaire
@@ -80,21 +80,12 @@ function famille(nom, sortes) {
 }
 
 // =====================================================================================
-// 1. Moments clés (P6) et rappels (P5)
+// 1. Moments clés (P6) — référentiel FHGES, 6e primaire
 // =====================================================================================
 const PERIODES = ['Préhistoire', 'Antiquité', 'Moyen Âge', 'Temps modernes', 'Époque contemporaine'];
 const REPERES_PERIODES = 'Repères : écriture vers 3500 av. J.-C. (fin de la Préhistoire), 476 (début du Moyen Âge), 1492 (début des Temps modernes), 1789 (début de l\'Époque contemporaine).';
 
 const MOMENTS = [
-  {
-    id: 'neo', p6: false, court: 'Les premiers agriculteurs (Néolithique)', rupture: 'le Néolithique',
-    moment: 'les premiers agriculteurs dans nos régions', dates: 'vers 5000 av. J.-C.', a: -5000, periode: 'Préhistoire',
-    pourquoi: 'Vers 5000 av. J.-C., c\'est bien avant l\'invention de l\'écriture (vers 3500 av. J.-C.) : c\'est la Préhistoire.',
-    faits: [
-      { t: 'les premiers agriculteurs et éleveurs s\'installent dans nos régions', d: 'vers 5000 av. J.-C.', a: -5000 },
-      { t: 'les humains construisent des villages et deviennent sédentaires' },
-    ],
-  },
   {
     id: 'rom', p6: true, court: 'La période gallo-romaine', rupture: 'la romanisation de nos régions',
     moment: 'la période gallo-romaine dans nos régions', dates: 'd\'environ 50 av. J.-C. au Ve siècle', a: -50, periode: 'Antiquité',
@@ -139,29 +130,19 @@ const MOMENTS = [
       { t: 'la Belgique signe un accord avec l\'Italie pour faire venir des mineurs', d: '1946', a: 1946 },
       { t: 'la catastrophe du Bois du Cazier fait 262 morts à Marcinelle', d: '1956', a: 1956 },
       { t: 'la Belgique signe des accords avec le Maroc et la Turquie pour faire venir des travailleurs', d: '1964', a: 1964 },
-      { t: 'les familles des travailleurs immigrés les rejoignent : la Belgique devient plus multiculturelle' },
-    ],
-  },
-  {
-    id: 'med', p6: false, court: 'Seigneuries et villes', rupture: 'la croissance économique médiévale',
-    moment: 'le développement des seigneuries et des villes', dates: 'du XIe au XIVe siècle', a: 1050, periode: 'Moyen Âge',
-    pourquoi: 'Du XIe au XIVe siècle, c\'est entre 476 et 1492 : le Moyen Âge.',
-    faits: [
-      { t: 'Huy reçoit une charte de franchises, une des plus anciennes de nos régions', d: '1066', a: 1066 },
-      { t: 'les villes se développent et les bourgeois obtiennent des droits' },
-    ],
-  },
-  {
-    id: 'ind', p6: false, court: 'L\'industrialisation', rupture: 'l\'industrialisation',
-    moment: 'le temps du patronat, du monde ouvrier et du monde rural', dates: 'du XIXe siècle au début du XXe siècle', a: 1835, periode: 'Époque contemporaine',
-    pourquoi: 'Le XIXe siècle commence en 1801, après 1789 : c\'est l\'Époque contemporaine.',
-    faits: [
-      { t: 'la première ligne de chemin de fer de Belgique relie Bruxelles à Malines', d: '1835', a: 1835 },
-      { t: 'les machines à vapeur se répandent dans les mines et les usines' },
+      { t: 'les familles des travailleurs immigrés les rejoignent et la Belgique devient plus multiculturelle' },
     ],
   },
 ];
 const P6 = MOMENTS.filter((m) => m.p6);
+// Faits marquants du référentiel (P6) : passage d'une période conventionnelle à une autre.
+const FAITS_MARQUANTS = [
+  { t: 'l\'invention de l\'écriture au Proche-Orient', d: 'vers 3500 av. J.-C.', passage: 'de la Préhistoire à l\'Antiquité' },
+  { t: 'le début de l\'ère chrétienne', d: 'an 1', passage: null },
+  { t: 'la chute de l\'Empire romain d\'Occident', d: '476', passage: 'de l\'Antiquité au Moyen Âge' },
+  { t: 'l\'arrivée de Christophe Colomb aux Amériques', d: '1492', passage: 'du Moyen Âge aux Temps modernes' },
+  { t: 'la Révolution française', d: '1789', passage: 'des Temps modernes à l\'Époque contemporaine' },
+];
 const TOUS_FAITS = MOMENTS.flatMap((m) => m.faits.map((f) => ({ ...f, m })));
 const avecDate = (f) => (f.d ? `${f.t} (${f.d})` : f.t);
 
@@ -285,6 +266,32 @@ const moments = famille('mc', [
       difficulte: 2,
     };
   }],
+  // Fait marquant ↔ passage d'une période conventionnelle à une autre
+  [2, (rng) => {
+    const f = rng.pick(FAITS_MARQUANTS.filter((x) => x.passage));
+    const date = rng.next() < 0.5;
+    const lib = (x) => maj(date ? `${x.t} (${x.d})` : x.t);
+    const q = qcm(rng, lib(f), FAITS_MARQUANTS.map(lib));
+    return {
+      ...q,
+      enonce: `Quel fait marquant correspond au passage ${f.passage} ?`,
+      explication: `${maj(f.t)} (${f.d}) marque le passage ${f.passage}. ${REPERES_PERIODES}`,
+      _signature: `fmq|${f.d}|${date}|${cle(q.choix)}`,
+      cleContenu: `fmq|${f.d}|${date}`,
+      difficulte: date ? 1 : 2,
+    };
+  }],
+  // Fait marquant → date
+  [1, (rng) => {
+    const f = rng.pick(FAITS_MARQUANTS);
+    return {
+      ...qcmFixe(FAITS_MARQUANTS.map((x) => maj(x.d)), maj(f.d)),
+      enonce: `Quelle est la date de ce fait marquant : « ${f.t} » ?`,
+      explication: `${maj(f.t)} : ${f.d}${f.d.endsWith('.') ? '' : '.'}${f.passage ? ` Ce fait marque le passage ${f.passage}.` : ' C\'est le point de départ de notre façon de compter les années.'}`,
+      _signature: `fmd|${f.d}`,
+      difficulte: 1,
+    };
+  }],
 ]);
 
 // =====================================================================================
@@ -293,12 +300,11 @@ const moments = famille('mc', [
 const APPORTS_ROMAINS = [
   'la langue latine', 'l\'écriture avec l\'alphabet latin', 'les chaussées (routes pavées)', 'les villas (grands domaines agricoles)',
   'les thermes (bains publics)', 'les maisons en pierre avec un toit de tuiles', 'les mosaïques', 'les dieux romains comme Jupiter et Mercure',
-  'la culture de la vigne',
 ];
 const APPORTS_CELTES = [
-  'le tonneau en bois', 'le savon', 'les braies (une sorte de pantalon)', 'la déesse Épona, protectrice des chevaux', 'la cotte de mailles',
+  'le tonneau en bois', 'les braies (une sorte de pantalon)', 'la déesse Épona, protectrice des chevaux', 'la cotte de mailles',
 ];
-const COL_ECHANGES = ['Les Celtes l\'ont adopté des Romains', 'Les Romains l\'ont adopté des Celtes'];
+const COL_ECHANGES = ['Apport des Romains aux Celtes', 'Apport des Celtes aux Romains'];
 
 const FRANCS = [
   { q: 'Quel roi des Francs s\'est fait baptiser vers 496, ce qui a favorisé la christianisation de son royaume ?', ok: 'Clovis',
@@ -342,7 +348,7 @@ const FRANCS = [
     expl: 'Clovis a été baptisé à Reims par l\'évêque Remi (saint Remi), vers 496.' },
   { q: 'Pourquoi parle-t-on surtout une langue germanique au nord de la Belgique et une langue romane au sud ?', ok: 'Les Francs se sont installés plus nombreux au nord ; au sud, le latin a continué d\'évoluer.',
     ko: ['Les Romains n\'ont jamais conquis le sud de la Belgique.', 'Charlemagne a interdit le latin au nord.', 'Les Vikings ont apporté le néerlandais au XXe siècle.', 'C\'est une décision prise en 1830.'],
-    expl: 'Au Haut Moyen Âge, les Francs (germaniques) s\'installent surtout au nord : les langues germaniques s\'y imposent. Au sud, le latin parlé devient peu à peu le wallon et le français.', difficulte: 3 },
+    expl: 'Au Haut Moyen Âge, les Francs (germaniques) s\'installent surtout au nord : les langues germaniques s\'y imposent. Au sud, le latin parlé devient peu à peu le wallon et le français. Cette frontière entre les langues s\'est formée lentement, pendant plusieurs siècles.', difficulte: 3 },
 ];
 
 const LANGUES = [
@@ -380,7 +386,7 @@ const VF_GALLO = [
   { t: 'Les villas romaines étaient de grands domaines agricoles.', v: true, expl: 'Une villa gallo-romaine est un grand domaine agricole avec la maison du maître et des bâtiments de ferme.' },
   { t: 'Les Romains ont construit des chaussées, comme celle qui reliait Bavay à Cologne en passant par Tongres.', v: true, expl: 'Les chaussées romaines reliaient les villes de l\'Empire ; certaines routes actuelles suivent encore leur tracé.' },
   { t: 'Les monastères de Nivelles et de Stavelot ont été fondés pendant le Haut Moyen Âge.', v: true, expl: 'Ils ont été fondés au VIIe siècle, pendant le Haut Moyen Âge (Ve-Xe siècle).' },
-  { t: 'Les Gaulois n\'ont rien apporté aux Romains.', v: false, expl: 'Les échanges allaient dans les deux sens : les Romains ont adopté le tonneau, le savon, les braies ou la déesse Épona.' },
+  { t: 'Les Gaulois n\'ont rien apporté aux Romains.', v: false, expl: 'Les échanges allaient dans les deux sens : les Romains ont adopté le tonneau, les braies, la cotte de mailles ou la déesse Épona.' },
   { t: 'L\'anglais et l\'allemand font partie de la même famille de langues que le néerlandais.', v: true, expl: 'Ce sont trois langues germaniques.' },
   { t: 'L\'italien et l\'espagnol sont des langues germaniques.', v: false, expl: 'L\'italien et l\'espagnol viennent du latin : ce sont des langues romanes.' },
 ];
@@ -393,7 +399,7 @@ const galloromains = famille('gr', [
     if (!items) return null;
     return {
       ...grilleQ(items, COL_ECHANGES),
-      enonce: 'Celtes (Gaulois) et Romains ont échangé des idées et des objets. Pour chaque élément, qui l\'a adopté de l\'autre peuple ?',
+      enonce: 'Celtes (Gaulois) et Romains ont échangé des idées et des objets. Chaque élément est-il un apport des Romains aux Celtes ou un apport des Celtes aux Romains ?',
       explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'apport des Romains' : 'apport des Celtes'}`).join(' ; ')) + '.',
       _signature: `ech|${cle(items.map((x) => x.t))}`,
       cleContenu: `ech|${cle(items.map((x) => x.t))}`,
@@ -408,11 +414,11 @@ const galloromains = famille('gr', [
     return {
       ...q,
       enonce: celte
-        ? 'Lequel de ces éléments les Romains ont-ils adopté des Celtes (Gaulois) ?'
-        : 'Lequel de ces éléments les Celtes de nos régions ont-ils adopté des Romains ?',
+        ? 'Lequel de ces éléments les Romains ont-ils emprunté aux Celtes (Gaulois) ?'
+        : 'Lequel de ces éléments les Celtes de nos régions ont-ils emprunté aux Romains ?',
       explication: celte
-        ? `${maj(bonne)} vient des Celtes. Les autres propositions sont des apports des Romains.`
-        : `${maj(bonne)} est un apport des Romains. Les autres propositions viennent des Celtes et ont été adoptées par les Romains.`,
+        ? `${maj(bonne)} : c'est un apport des Celtes aux Romains. Les autres propositions sont des apports des Romains.`
+        : `${maj(bonne)} : c'est un apport des Romains aux Celtes. Les autres propositions viennent des Celtes et ont été adoptées par les Romains.`,
       _signature: `ech1|${celte}|${bonne}|${cle(q.choix)}`,
       cleContenu: `ech1|${celte}|${cle(q.choix)}`,
       difficulte: 2,
@@ -440,7 +446,7 @@ const galloromains = famille('gr', [
     return {
       ...q,
       enonce: fam === 0 ? 'Laquelle de ces langues est une langue romane (issue du latin) ?' : 'Laquelle de ces langues est une langue germanique ?',
-      explication: `${maj(bonne)} est une langue ${fam === 0 ? 'romane : elle vient du latin' : 'germanique, comme le néerlandais, l\'allemand ou l\'anglais'}. Les autres sont des langues ${fam === 0 ? 'germaniques' : 'romanes (issues du latin)'}.`,
+      explication: `${maj(bonne)} est une langue ${fam === 0 ? 'romane : elle vient du latin' : `germanique, comme ${['le néerlandais', 'l\'allemand', 'l\'anglais'].filter((x) => x !== bonne).slice(0, 2).join(' ou ')}`}. Les autres sont des langues ${fam === 0 ? 'germaniques' : 'romanes (issues du latin)'}.`,
       _signature: `lq|${fam}|${bonne}|${cle(q.choix)}`,
       cleContenu: `lq|${fam}|${cle(q.choix)}`,
       difficulte: 1,
@@ -770,7 +776,7 @@ const colonisations = famille('co', [
     return {
       ...grilleQ(items, COL_PRODUITS),
       enonce: 'Ces aliments étaient-ils déjà connus en Europe avant 1492, ou ont-ils été rapportés des Amériques par les Européens ?',
-      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'des Amériques' : 'déjà connu en Europe'}`).join(' ; ')) + '.',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'produit venu des Amériques' : 'produit déjà connu en Europe'}`).join(' ; ')) + '.',
       _signature: `pr|${cle(items.map((x) => x.t))}`,
       cleContenu: `pr|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -787,8 +793,8 @@ const colonisations = famille('co', [
         ? 'Lequel de ces produits les Européens ont-ils découvert dans les Amériques et rapporté en Europe ?'
         : 'Lequel de ces produits était déjà connu en Europe avant l\'arrivée de Christophe Colomb aux Amériques ?',
       explication: am
-        ? `${bonne} vient des Amériques. Les autres étaient déjà connus en Europe. Autres produits des Amériques : pomme de terre, maïs, tomate, cacao, tabac, dinde, haricot.`
-        : `${bonne} était déjà connu en Europe. Les autres propositions viennent des Amériques.`,
+        ? `${bonne} : produit venu des Amériques. Les autres propositions étaient déjà connues en Europe. Autres produits des Amériques : ${['pomme de terre', 'maïs', 'tomate', 'cacao', 'tabac', 'dinde', 'haricot', 'ananas'].filter((x) => !bonne.toLowerCase().endsWith(x)).join(', ')}.`
+        : `${bonne} : produit déjà connu en Europe avant 1492. Les autres propositions viennent des Amériques.`,
       _signature: `prq|${am}|${bonne}|${cle(q.choix)}`,
       cleContenu: `prq|${am}|${cle(q.choix)}`,
       difficulte: am ? 1 : 2,
@@ -870,7 +876,7 @@ const colonisations = famille('co', [
     const q = qcm(rng, t.quoi, [...TRIANGLE.map((x) => x.quoi), 'Des épices et de la soie d\'Asie']);
     return {
       ...q,
-      enonce: `Dans le commerce triangulaire, que transportaient les navires sur le trajet « ${t.de.toLowerCase()} » ?`,
+      enonce: `Dans le commerce triangulaire, que transportaient les navires sur le trajet « ${t.de.charAt(0).toLowerCase()}${t.de.slice(1)} » ?`,
       explication: TRIANGLE_EXPL,
       _signature: `triq|${t.de}|${cle(q.choix)}`,
       cleContenu: `triq|${t.de}`,
@@ -981,7 +987,7 @@ const rechauffement = famille('re', [
   [1, (rng) => {
     const tr = rng.pick(TRAJETS);
     const bonne = rng.pick(['À vélo', 'À pied']);
-    const q = qcm(rng, bonne, ['En voiture à essence', 'En voiture diesel', 'En moto à essence', 'En taxi']);
+    const q = qcm(rng, bonne, ['En voiture à essence', 'En voiture diesel', 'En moto à essence', 'En scooter à essence']);
     return {
       ...q,
       enonce: `Pour ${tr}, quel moyen de déplacement ne rejette pas de gaz à effet de serre ?`,
@@ -1005,7 +1011,7 @@ const CLIMATS = {
   continental: { nom: 'Continental', sud: false, desc: 'hivers très froids (sous 0 °C), étés assez chauds et des pluies surtout en été' },
   tropical: { nom: 'Tropical humide', sud: true, desc: 'chaud toute l\'année, avec une saison des pluies très arrosée et une saison sèche' },
   aride: { nom: 'Aride (désertique)', sud: true, desc: 'presque pas de pluie de toute l\'année, étés très chauds' },
-  polaire: { nom: 'Polaire', sud: true, desc: 'froid toute l\'année : même le mois le plus chaud reste sous 10 °C' },
+  polaire: { nom: 'Polaire', sud: false, desc: 'froid toute l\'année (même le mois le plus chaud reste sous 10 °C)' },
 };
 const p5 = (rng, a, b) => 5 * rng.int(Math.ceil(a / 5), Math.floor(b / 5));
 const cosSaison = (tmin, tmax, m) => tmin + (tmax - tmin) * (1 - Math.cos((2 * Math.PI * m) / 12)) / 2;
@@ -1275,7 +1281,7 @@ const ORDRES_POP = [
   { q: 'En dehors de l\'Antarctique, quel continent compte le moins d\'habitants ?', ok: 'L\'Océanie',
     ko: ['L\'Asie', 'L\'Afrique', 'L\'Europe', 'L\'Amérique'],
     expl: 'L\'Océanie (Australie, Nouvelle-Zélande, îles du Pacifique) compte environ 45 millions d\'habitants : c\'est le continent habité le moins peuplé.' },
-  { q: 'Sur quel continent personne n\'habite-t-il de façon permanente ?', ok: 'L\'Antarctique',
+  { q: 'Sur quel continent n\'y a-t-il aucun habitant permanent ?', ok: 'L\'Antarctique',
     ko: ['L\'Océanie', 'L\'Afrique', 'L\'Europe', 'L\'Amérique'],
     expl: 'L\'Antarctique est couvert de glace et glacial toute l\'année : seuls des scientifiques y séjournent dans des bases.' },
   { q: 'Quels sont les deux pays les plus peuplés du monde ?', ok: 'L\'Inde et la Chine',
@@ -1292,9 +1298,9 @@ const LIEUX = [
   { t: 'le Sahara', ou: 'au Sahara', p: false, c: 'Il fait très chaud et il y a très peu d\'eau (désert chaud).' },
   { t: 'la Sibérie', ou: 'en Sibérie', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
   { t: 'l\'Amazonie', ou: 'en Amazonie', p: false, c: 'C\'est une immense forêt dense, chaude et humide, difficile à traverser et à défricher.' },
-  { t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes : pentes raides, froid et peu de terres cultivables.' },
+  { t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes, aux pentes raides, où il fait froid et où l\'on cultive peu.' },
   { t: 'l\'Antarctique', ou: 'en Antarctique', p: false, c: 'C\'est un continent couvert de glace, glacial toute l\'année.' },
-  { t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'Il est recouvert d\'une épaisse calotte de glace.' },
+  { t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'C\'est une région recouverte d\'une épaisse calotte de glace.' },
   { t: 'le centre de l\'Australie', ou: 'au centre de l\'Australie', p: false, c: 'C\'est une région très sèche (aride), avec très peu de pluie.' },
   { t: 'le Grand Nord canadien', ou: 'dans le Grand Nord canadien', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
   { t: 'la vallée et le delta du Nil', ou: 'dans la vallée et le delta du Nil', p: true, c: 'L\'eau du fleuve permet de cultiver des terres fertiles au milieu du désert.' },
@@ -1398,7 +1404,7 @@ const population = famille('po', [
       enonce: `${donnees} Quel pays ${sorte === 'dense' ? 'est le plus densément peuplé' : 'a la plus grande population totale'} ?`,
       explication: sorte === 'dense'
         ? `${calc} La densité la plus forte est celle ${deNom(plusDense.nom)}${plusDense !== plusPeuple ? `, même si ${plusPeuple.nom} a plus d'habitants` : ''}.`
-        : `On compare simplement le nombre d'habitants : ${maj(plusPeuple.nom)} en a le plus. ${calc}`,
+        : `On compare simplement le nombre d'habitants : ${plusPeuple.nom} en a le plus. ${calc}`,
       _signature: sig, difficulte: sorte === 'dense' ? 3 : 1,
     };
   }],
