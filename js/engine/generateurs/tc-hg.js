@@ -1002,7 +1002,7 @@ const INIT = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
 const CLIMATS = {
   oceanique: { nom: 'Tempéré océanique', sud: true, desc: 'hivers doux (au-dessus de 0 °C), étés frais (moins de 20 °C) et pluies régulières tous les mois' },
   mediterraneen: { nom: 'Méditerranéen', sud: true, desc: 'hivers doux et pluvieux, étés chauds et secs' },
-  continental: { nom: 'Continental', sud: false, desc: 'hivers très froids (sous 0 °C), étés chauds et des pluies surtout en été' },
+  continental: { nom: 'Continental', sud: false, desc: 'hivers très froids (sous 0 °C), étés assez chauds et des pluies surtout en été' },
   tropical: { nom: 'Tropical humide', sud: true, desc: 'chaud toute l\'année, avec une saison des pluies très arrosée et une saison sèche' },
   aride: { nom: 'Aride (désertique)', sud: true, desc: 'presque pas de pluie de toute l\'année, étés très chauds' },
   polaire: { nom: 'Polaire', sud: true, desc: 'froid toute l\'année : même le mois le plus chaud reste sous 10 °C' },
@@ -1025,7 +1025,7 @@ function donneesClimat(type, rng) {
       P = plages([[70, 110], [60, 90], [50, 75], [40, 60], [25, 45], [5, 20], [0, 10], [5, 20], [30, 50], [60, 95], [80, 120], [80, 120]]);
       break;
     case 'continental':
-      T = saison(rng.int(-14, -7), rng.int(18, 22));
+      T = saison(rng.int(-14, -7), rng.int(19, 23));
       P = plages([[30, 45], [25, 40], [30, 45], [35, 50], [50, 65], [70, 90], [75, 95], [65, 85], [50, 65], [45, 60], [40, 55], [35, 50]]);
       break;
     case 'tropical': {
