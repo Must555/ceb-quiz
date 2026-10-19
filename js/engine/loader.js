@@ -33,8 +33,19 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
 
   const banque = banques.filter(Boolean).flatMap((f) =>
     f.questions.map((q) => ({ matiere: f.matiere, source: 'banque', ...q })));
+  // Dans `formes`, une entrée réduite à { fiche } n'est pas une sorte de question : elle déclare une
+  // notion visée par la famille (pour le coach et les fiches ciblées). On la range dans `notions`
+  // pour que les générateurs ne voient que de vraies formes.
+  const separerNotions = (m) => {
+    if (!Array.isArray(m.formes)) return m;
+    const estNotion = (x) => x && typeof x === 'object' && Object.keys(x).length === 1 && 'fiche' in x;
+    const formes = m.formes.filter((x) => !estNotion(x));
+    const notions = [...(m.notions ?? []), ...m.formes.filter(estNotion).map((x) => x.fiche)];
+    const { formes: _f, ...reste } = m;
+    return { ...reste, ...(formes.length ? { formes } : {}), ...(notions.length ? { notions } : {}) };
+  };
   const modeles = fichiersModeles.filter(Boolean).flatMap((f) =>
-    f.modeles.map((m) => avecBase({ matiere: f.matiere, ...m })).filter(Boolean));
+    f.modeles.map((m) => avecBase(separerNotions({ matiere: f.matiere, ...m }))).filter(Boolean));
 
   verifierIdsUniques([...banque, ...modeles]);
 

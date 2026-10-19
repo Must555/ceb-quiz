@@ -104,7 +104,7 @@ test('mission sur une notion précise : presque uniquement cette notion', () => 
   const j = nouveauJoueur('t', '🦊', '#fff');
   const sess = new QuizSession(donnees, { seed: 3, nbQuestions: 10, maxParModele: 4, poids: poidsCoach(j, { mode: 'cible', notion: 'fr-homophones' }) });
   // Familles qui couvrent la notion : leur fiche principale ou une de leurs formes { fiche }.
-  const couvrent = new Set(donnees.modeles.filter((m) => m.fiche === 'fr-homophones' || (m.formes ?? []).some((f) => f?.fiche === 'fr-homophones')).map((m) => m.id));
+  const couvrent = new Set(donnees.modeles.filter((m) => m.fiche === 'fr-homophones' || [...(m.formes ?? []).map((f) => f?.fiche), ...(m.notions ?? [])].includes('fr-homophones')).map((m) => m.id));
   const notions = []; let ciblees = 0; let q;
   while ((q = sess.suivante())) { notions.push(q.fiche); if (couvrent.has(q.modeleId)) ciblees++; sess.repondre(null); }
   assert.equal(notions.length, 10);

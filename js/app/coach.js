@@ -107,7 +107,7 @@ export function poidsCoach(j, { mode = 'normal', notion = null, jour = aujourdhu
     return { w, statut };
   };
   return (c) => {
-    const notions = [...new Set([notionDe(c), ...(c.formes ?? []).map((f) => f.fiche).filter(Boolean)])];
+    const notions = [...new Set([notionDe(c), ...(c.formes ?? []).map((f) => f?.fiche), ...(c.notions ?? [])].filter(Boolean))];
     const { w: w0, statut } = notions.map((n) => poidsNotion(c, n)).reduce((a, b) => (b.w > a.w ? b : a));
     let w = w0;
     const due = dues.has(cleCandidat(c));

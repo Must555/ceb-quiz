@@ -307,7 +307,13 @@
    "difficulte": 2,
    "generateur": "fr_conj",
    "formes": [
-    "choisir"
+    "choisir",
+    {
+     "fiche": "fr-passe-compose"
+    },
+    {
+     "fiche": "fr-temps-recit"
+    }
    ]
   },
   {
@@ -317,7 +323,13 @@
    "difficulte": 2,
    "generateur": "fr_conj",
    "formes": [
-    "temps"
+    "temps",
+    {
+     "fiche": "fr-passe-compose"
+    },
+    {
+     "fiche": "fr-temps-recit"
+    }
    ]
   },
   {
@@ -327,7 +339,10 @@
    "difficulte": 3,
    "generateur": "fr_conj",
    "formes": [
-    "ecrire"
+    "ecrire",
+    {
+     "fiche": "fr-conjugaison-temps-simples"
+    }
    ]
   },
   {
@@ -338,7 +353,10 @@
    "generateur": "fr_conj",
    "formes": [
     "mode",
-    "imperatif"
+    "imperatif",
+    {
+     "fiche": "fr-subjonctif-participe"
+    }
    ]
   },
   {

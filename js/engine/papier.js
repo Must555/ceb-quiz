@@ -137,7 +137,7 @@ export function composerExamen(donnees, code) {
 }
 
 // Notions couvertes par une question ou un modèle (une famille peut couvrir plusieurs fiches).
-const notionsDe = (c) => [c.fiche ?? c.domaine, ...(c.formes ?? []).map((f) => f.fiche)].filter(Boolean);
+const notionsDe = (c) => [c.fiche ?? c.domaine, ...(c.formes ?? []).map((f) => f?.fiche), ...(c.notions ?? [])].filter(Boolean);
 
 /**
  * Fiche ciblée : pour chaque notion, le rappel (fiche) puis des exercices du plus facile au plus difficile,
