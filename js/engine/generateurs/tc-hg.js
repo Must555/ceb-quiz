@@ -2586,7 +2586,7 @@ const peuplementBe = famille('pb', [
     return {
       ...q,
       enonce: `Lequel de ces espaces de Belgique est ${peu ? 'peu peuplé' : 'très peuplé'} ?`,
-      explication: 'Les espaces les plus peuplés de Belgique sont l\'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège). L\'Ardenne, la Famenne et les Hautes Fagnes, plus élevées et boisées, sont peu peuplées.',
+      explication: 'Les espaces les plus peuplés de Belgique sont l\'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège). L\'Ardenne et les Hautes Fagnes (plateaux élevés, boisés, au climat rude) ainsi que la Famenne (région rurale, sans grande ville) sont peu peuplées.',
       _signature: `esp|${peu}|${bonne}|${cle(q.choix)}`, cleContenu: `esp|${peu}|${bonne}`,
       difficulte: 1,
     };
