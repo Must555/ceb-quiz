@@ -23,7 +23,8 @@
         "Le périmètre, c'est le tour de la figure (en m, cm…).",
         "L'aire, c'est la surface à l'intérieur (en m², cm²…).",
         "Rectangle : aire = L × l ; périmètre = (L + l) × 2.",
-        "Triangle : aire = (base × hauteur) ÷ 2."
+        "Triangle : aire = (base × hauteur) ÷ 2.",
+        "Parallélogramme : base × hauteur. Losange : (grande diagonale × petite diagonale) ÷ 2. Trapèze : (grande base + petite base) × hauteur ÷ 2."
       ],
       "exemple": "Rectangle de 6 m sur 4 m : périmètre = (6 + 4) × 2 = 20 m ; aire = 6 × 4 = 24 m².",
       "astuce": "Clôture, bordure, ruban → périmètre. Peinture, carrelage, gazon → aire."
@@ -177,7 +178,7 @@
       "regle": [
         "Carré : 4 côtés égaux et 4 angles droits.",
         "Rectangle : 4 angles droits (côtés opposés égaux).",
-        "Losange : 4 côtés égaux. Parallélogramme : côtés opposés parallèles. Trapèze : au moins 2 côtés parallèles."
+        "Losange : 4 côtés égaux. Parallélogramme : côtés opposés parallèles. Trapèze : au moins une paire de côtés parallèles (un trapèze isocèle a en plus ses deux côtés non parallèles de même longueur)."
       ],
       "exemple": "Un carré est un rectangle particulier, et aussi un losange particulier.",
       "astuce": "Pense à une famille : le carré a toutes les qualités des autres."

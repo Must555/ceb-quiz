@@ -1,4 +1,86 @@
 {
  "matiere": "fr",
- "modeles": []
+ "modeles": [
+  {
+   "id": "fr-f-conj-composes",
+   "generateur": "tc_fr_conj_composes",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-temps-composes",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-conj-radical-er",
+   "generateur": "tc_fr_radical_er",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-verbes-er-radical",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-corriger",
+   "generateur": "tc_fr_corriger",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-relire",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "fr-accord-adjectif"
+    },
+    {
+     "fiche": "fr-accord-sujet-verbe"
+    },
+    {
+     "fiche": "fr-e-er"
+    },
+    {
+     "fiche": "fr-homophones"
+    },
+    {
+     "fiche": "fr-participe-passe"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-fonctions-gn",
+   "generateur": "tc_fr_fonctions_gn",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-epithete-cn",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-predicat",
+   "generateur": "tc_fr_predicat",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-predicat",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-ponctuation",
+   "generateur": "tc_fr_ponctuation",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-ponctuation",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-adverbes",
+   "generateur": "tc_fr_adverbes",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-adverbes",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-pp-sans-aux-cd",
+   "generateur": "tc_fr_pp_accord",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-pp-sans-aux-cd",
+   "difficulte": 3,
+   "variantesMin": 40
+  }
+ ]
 }

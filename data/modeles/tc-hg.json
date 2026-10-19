@@ -1,4 +1,61 @@
 {
  "matiere": "hg",
- "modeles": []
+ "modeles": [
+  {
+   "id": "hg-f-moments-cles",
+   "generateur": "hg_tc_moments",
+   "domaine": "hg.histoire",
+   "fiche": "hg-moments-cles",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-gallo-romains-francs",
+   "generateur": "hg_tc_galloromains",
+   "domaine": "hg.histoire",
+   "fiche": "hg-gallo-romains-francs",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-migrations-1945",
+   "generateur": "hg_tc_migrations",
+   "domaine": "hg.histoire",
+   "fiche": "hg-migrations",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-colonisations",
+   "generateur": "hg_tc_colonisations",
+   "domaine": "hg.histoire",
+   "fiche": "hg-colonisations",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-rechauffement",
+   "generateur": "hg_tc_rechauffement",
+   "domaine": "hg.geographie",
+   "fiche": "hg-rechauffement",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-climatogramme",
+   "generateur": "hg_tc_climatogramme",
+   "domaine": "hg.geographie",
+   "fiche": "hg-climats",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-population-monde",
+   "generateur": "hg_tc_population",
+   "domaine": "hg.geographie",
+   "fiche": "hg-population-monde",
+   "difficulte": 2,
+   "variantesMin": 40
+  }
+ ]
 }

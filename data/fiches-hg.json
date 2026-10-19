@@ -144,9 +144,10 @@
    "titre": "Climats et grands milieux",
    "regle": [
     "La Belgique a un climat tempéré océanique : hivers doux, étés frais, pluies toute l'année.",
-    "Zone chaude : forêt équatoriale (chaud et humide), savane, désert chaud.",
-    "Zones tempérées : forêts de feuillus, climat méditerranéen, climat continental, taïga plus au nord.",
-    "Zones froides : toundra, milieu polaire (banquise)."
+    "Zone chaude : forêt équatoriale (chaud et humide), savane et climat tropical (chaud toute l'année, une saison des pluies et une saison sèche), désert chaud (climat aride : presque jamais de pluie).",
+    "Zones tempérées : forêts de feuillus, climat méditerranéen (étés chauds et secs, hivers doux et pluvieux), climat continental (hivers sous 0 °C, étés chauds), taïga plus au nord.",
+    "Zones froides : toundra, milieu polaire (banquise) : froid toute l'année, même le mois le plus chaud reste sous 10 °C.",
+    "Climatogramme : les barres bleues donnent les précipitations de chaque mois (en mm), la courbe rouge la température moyenne (en °C). Si les mois les plus chauds sont décembre, janvier et février, le lieu est dans l'hémisphère Sud."
    ],
    "exemple": "Rennes, mousses et sol gelé → la toundra.",
    "astuce": "Pense à la température ET aux pluies pour reconnaître un climat."
@@ -234,6 +235,94 @@
    ],
    "exemple": "La péniche transporte beaucoup de marchandises lourdes sur les canaux, lentement mais à bas prix.",
    "astuce": "Demande-toi sur quoi roule, flotte ou vole le véhicule."
+  },
+  {
+   "id": "hg-moments-cles",
+   "matiere": "hg",
+   "e": "🧭",
+   "titre": "Les moments clés de l'histoire de nos régions",
+   "regle": [
+    "Période gallo-romaine (d'environ 50 av. J.-C. au Ve siècle) : la romanisation de nos régions → Antiquité.",
+    "Haut Moyen Âge (du Ve au Xe siècle) : les grandes migrations, les Francs s'installent, Clovis, Charlemagne → Moyen Âge.",
+    "Explorations et premières colonisations européennes (du XVe au XVIIIe siècle) : Christophe Colomb en 1492 → Temps modernes.",
+    "L'après 1945 (de 1945 à nos jours) : migrations de travailleurs vers la Belgique → Époque contemporaine.",
+    "Faits marquants : vers 3500 av. J.-C., invention de l'écriture (Préhistoire → Antiquité) ; an 1, début de l'ère chrétienne ; 476, chute de l'Empire romain d'Occident (Antiquité → Moyen Âge) ; 1492, Christophe Colomb aux Amériques (Moyen Âge → Temps modernes) ; 1789, Révolution française (Temps modernes → Époque contemporaine)."
+   ],
+   "exemple": "Le baptême de Clovis (vers 496) appartient au Haut Moyen Âge, donc au Moyen Âge.",
+   "astuce": "Place d'abord les 4 dates repères (vers 3500 av. J.-C., 476, 1492, 1789) sur une frise, puis glisse chaque moment clé dans sa période."
+  },
+  {
+   "id": "hg-gallo-romains-francs",
+   "matiere": "hg",
+   "e": "🏛️",
+   "titre": "Gallo-Romains et Francs",
+   "regle": [
+    "Apports des Romains aux Celtes : le latin, l'écriture, les chaussées, les villas, les thermes, les tuiles, les mosaïques, les dieux romains.",
+    "Apports des Celtes aux Romains : le tonneau, les braies (pantalons), la cotte de mailles, la déesse Épona.",
+    "Les premiers chrétiens apparaissent à l'époque romaine (IVe siècle : Servais, évêque de Tongres).",
+    "Les Francs, peuple germanique, s'installent dans nos régions : Clovis se fait baptiser vers 496, Charlemagne est couronné empereur en 800 ; des monastères sont fondés (Nivelles, Stavelot).",
+    "Deux familles de langues : romanes, issues du latin (français, wallon, italien, espagnol…) et germaniques (néerlandais, allemand, anglais…)."
+   ],
+   "exemple": "Le tonneau est une invention gauloise adoptée par les Romains pour transporter le vin.",
+   "astuce": "Clovis = baptême (vers 496) ; Charlemagne = empereur (800). Ne les confonds pas !"
+  },
+  {
+   "id": "hg-migrations",
+   "matiere": "hg",
+   "e": "⛏️",
+   "titre": "Les migrations vers la Belgique après 1945",
+   "regle": [
+    "Après la guerre, il faut reconstruire le pays et produire du charbon, mais les mines manquent d'ouvriers.",
+    "1946 : accord avec l'Italie (des mineurs contre du charbon). Puis l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). 1974 : arrêt officiel de l'immigration de travail.",
+    "8 août 1956 : catastrophe du Bois du Cazier à Marcinelle (Charleroi) : 262 morts, dont 136 Italiens.",
+    "Obstacles à l'intégration : langue, logement (baraquements), famille restée au pays, préjugés. Facilités : regroupement familial, associations (ex. ACLI), école, compatriotes, syndicats.",
+    "Apports culturels : cuisine (pizza, couscous, döner kebab…), religions (islam, orthodoxie), langues, musique, fêtes."
+   ],
+   "exemple": "Le chanteur Salvatore Adamo, fils d'un mineur sicilien, est arrivé enfant en Belgique.",
+   "astuce": "Retiens 46 – 56 – 64 – 74 : Italie, Bois du Cazier, Maroc et Turquie, arrêt."
+  },
+  {
+   "id": "hg-colonisations",
+   "matiere": "hg",
+   "e": "⛵",
+   "titre": "Explorations et colonisations (XVe-XVIIIe siècle)",
+   "regle": [
+    "Grands voyages : Christophe Colomb arrive aux Amériques (1492), Vasco de Gama atteint l'Inde par la mer (1498), l'expédition de Magellan fait le premier tour du monde (1519-1522).",
+    "Produits venus des Amériques : pomme de terre, maïs, tomate, cacao, tabac, dinde, haricot, ananas. Blé, pomme, raisin ou chou étaient déjà connus en Europe.",
+    "Impacts sur les peuples colonisés : maladies, travail forcé, esclavage, langue et religion imposées, terres et richesses prises.",
+    "Commerce triangulaire : Europe → Afrique (tissus, armes, alcool) ; Afrique → Amériques (esclaves) ; Amériques → Europe (sucre, coton, café, tabac)."
+   ],
+   "exemple": "On parle portugais au Brésil parce que le Portugal l'a colonisé.",
+   "astuce": "Pense à un repas européen sans pomme de terre, tomate ni chocolat : c'était le cas avant 1492 !"
+  },
+  {
+   "id": "hg-rechauffement",
+   "matiere": "hg",
+   "e": "🌡️",
+   "titre": "Le réchauffement climatique",
+   "regle": [
+    "L'effet de serre est naturel, mais les activités humaines le renforcent en rejetant des gaz à effet de serre.",
+    "Causes : le CO₂ (brûler du charbon, du pétrole, du gaz ; couper et brûler les forêts) et le méthane (élevage de vaches, rizières, décharges).",
+    "Conséquences : fonte des glaciers, montée du niveau des mers, sécheresses et vagues de chaleur, océans plus chauds, animaux et plantes qui migrent ou disparaissent.",
+    "Solutions : isoler les maisons, vélo, marche et transports en commun, énergies renouvelables (soleil, vent, eau), moins de gaspillage, produits locaux et de saison."
+   ],
+   "exemple": "Aller à l'école à vélo plutôt qu'en voiture évite de rejeter du CO₂.",
+   "astuce": "Cause = ce qui rejette des gaz ; conséquence = ce qui arrive à la planète ; solution = ce qui réduit les rejets."
+  },
+  {
+   "id": "hg-population-monde",
+   "matiere": "hg",
+   "e": "👥",
+   "titre": "La population du monde",
+   "regle": [
+    "Environ 8 milliards d'humains : environ 6 sur 10 en Asie, environ 1 sur 10 en Europe ; plus de la moitié vit en ville.",
+    "Espaces très peuplés : vallée du Nil, Asie du Sud et de l'Est (Inde, Chine, Bangladesh, Java), Europe de l'Ouest, littoraux.",
+    "Espaces presque vides : déserts (Sahara), régions très froides (Sibérie, Antarctique), hautes montagnes (Himalaya), forêt dense (Amazonie).",
+    "Le relief, l'eau, le climat et la proximité de la mer expliquent ces différences.",
+    "Densité = habitants ÷ superficie. Un pays très peuplé n'est pas forcément très dense (la Russie a plus d'habitants que le Japon, mais elle est bien moins dense)."
+   ],
+   "exemple": "Presque tous les Égyptiens vivent dans la vallée et le delta du Nil, au milieu du désert.",
+   "astuce": "Pour comparer des densités, calcule toujours habitants ÷ km² : ne regarde pas seulement le nombre d'habitants."
   }
  ]
 }

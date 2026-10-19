@@ -73,7 +73,7 @@ test('révision espacée : J+1, puis J+3, puis J+7, puis sortie', () => {
 
 test('SIMULATION : le coach repère la faiblesse et la mission ciblée la travaille', () => {
   const j = nouveauJoueur('t', '🦊', '#fff');
-  jouer(j, { notionFaible: 'ma-conversions', sessions: 25 });
+  jouer(j, { notionFaible: 'ma-conversions', sessions: 25, options: { matieres: ['ma'] } });
   const f = faiblesses(j, donnees.fiches);
   assert.ok(f.length >= 1);
   assert.equal(f[0].fiche.id, 'ma-conversions', `faiblesse repérée : ${f.map((x) => x.fiche.id)}`);

@@ -41,7 +41,7 @@
     "Les guillemets encadrent des paroles ; le tiret signale qu'un autre personnage parle.",
     "Les parenthèses ajoutent une précision ; les points de suspension créent du suspense."
    ],
-   "exemple": "« J'ai gagné ! » crie Hugo. Il faut : du lait, des œufs et de la farine.",
+   "exemple": "Hugo crie : « J'ai gagné ! » Voici les ingrédients : du lait, des œufs et de la farine.",
    "astuce": "Lis la phrase à voix haute : la ponctuation marque les pauses et le ton."
   },
   {
@@ -351,6 +351,109 @@
    ],
    "exemple": "Tom met son bonnet et ses gants → il fait froid.",
    "astuce": "Justifie toujours ta réponse avec un indice du texte."
+  },
+  {
+   "id": "fr-temps-composes",
+   "matiere": "fr",
+   "e": "⏳",
+   "titre": "Les temps composés et le futur proche",
+   "regle": [
+    "Un temps composé = auxiliaire (être ou avoir) conjugué + participe passé.",
+    "Plus-que-parfait : auxiliaire à l'imparfait (j'avais fini, elle était partie). Action passée avant une autre action passée.",
+    "Futur antérieur : auxiliaire au futur simple (tu auras fini). Action future terminée avant une autre.",
+    "Conditionnel passé : auxiliaire au conditionnel présent (je serais venu). Souvent après « si » + plus-que-parfait.",
+    "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (elles étaient parties, Léa sera arrivée).",
+  "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord."
+   ],
+   "exemple": "Quand tu auras fini tes devoirs, tu pourras jouer. Si j'avais su, je serais venue plus tôt.",
+   "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé."
+  },
+  {
+   "id": "fr-verbes-er-radical",
+   "matiere": "fr",
+   "e": "🔀",
+   "titre": "Verbes en -er à radical variable",
+   "regle": [
+    "Appeler, jeter : on double la consonne devant un e muet (j'appelle, je jetterai ; mais nous appelons).",
+    "Acheter, lever, peser, mener… : e devient è devant un e muet (j'achète, j'achèterai ; mais nous achetons).",
+    "Céder, répéter, espérer… : é devient è au présent devant un e muet (je cède, nous cédons). Futur : je céderai (ou cèderai).",
+    "-oyer, -uyer : y devient i devant un e muet (je nettoie, j'essuierai). -ayer : les deux sont permis (je paie ou je paye). Envoyer → j'enverrai.",
+    "-cer, -ger : ç ou ge devant a et o (nous commençons, je mangeais)."
+   ],
+   "exemple": "Je jette, nous jetons. J'achète, nous achetons. Je nettoie, nous nettoyons.",
+   "astuce": "Le radical change seulement quand la syllabe suivante est muette : je, tu, il, ils au présent, et tout le futur."
+  },
+  {
+   "id": "fr-relire",
+   "matiere": "fr",
+   "e": "🔍",
+   "titre": "Relire pour corriger",
+   "regle": [
+    "Le verbe s'accorde avec son sujet (c'est … qui / ce sont … qui).",
+    "Dans le groupe nominal, déterminant et adjectifs prennent le genre et le nombre du nom.",
+    "Avec être, le participe passé s'accorde avec le sujet (elles sont parties).",
+    "Homophones : a/à (avait), et/est (était), son/sont (étaient), ces/ses (ce, cette / mes).",
+    "-é ou -er : remplace par « vendu » ou « vendre »."
+   ],
+   "exemple": "Les fleurs du jardin sentent bon. Ma sœur est partie à la mer.",
+   "astuce": "Relis la phrase plusieurs fois, en cherchant à chaque fois un seul type d'erreur."
+  },
+  {
+   "id": "fr-epithete-cn",
+   "matiere": "fr",
+   "e": "🏷️",
+   "titre": "Épithète et complément du nom",
+   "regle": [
+    "L'adjectif épithète est placé juste à côté du nom (avant ou après), sans verbe : un chat noir, une jolie maison.",
+    "Le complément du nom est un groupe qui précise le nom, introduit par une préposition (de, à, en, pour…) : le vélo de Tom, une tarte aux pommes.",
+    "L'attribut du sujet est relié au sujet par un verbe (être, sembler, devenir, paraître, rester) : le ciel est gris.",
+    "Épithète et complément du nom font partie du groupe nominal : on peut les supprimer."
+   ],
+   "exemple": "Le chat noir (épithète) de la voisine (complément du nom) semble fatigué (attribut).",
+   "astuce": "Y a-t-il un verbe entre le nom et l'adjectif ? Oui → attribut ; non → épithète."
+  },
+  {
+   "id": "fr-predicat",
+   "matiere": "fr",
+   "e": "🧩",
+   "titre": "Sujet, prédicat et complément de phrase",
+   "regle": [
+    "Une phrase simple contient un groupe sujet et un groupe prédicat ; elle peut avoir un complément de phrase.",
+    "Le sujet : c'est de lui qu'on parle (c'est … qui).",
+    "Le prédicat : ce qu'on dit du sujet ; c'est le verbe conjugué avec ses compléments (ou son attribut). On ne peut ni le déplacer ni le supprimer.",
+    "Le complément de phrase (quand ? où ? pourquoi ?) peut être déplacé et supprimé."
+   ],
+   "exemple": "Chaque soir (complément de phrase), mon frère (sujet) lit une BD (prédicat).",
+   "astuce": "Supprime ce qui peut l'être : il reste le sujet et le prédicat."
+  },
+  {
+   "id": "fr-adverbes",
+   "matiere": "fr",
+   "e": "🚀",
+   "titre": "Former un adverbe en -ment",
+   "regle": [
+    "Règle générale : adjectif au féminin + -ment (lent → lente → lentement ; doux → doucement).",
+    "Adjectif terminé par une voyelle (i, u, é, ai) : masculin + -ment (vrai → vraiment, poli → poliment).",
+    "-ant → -amment (bruyant → bruyamment) ; -ent → -emment, prononcé « amment » (prudent → prudemment).",
+    "Exceptions : gentil → gentiment, bref → brièvement ; en -ément : énorme → énormément, intense → intensément, précis → précisément, profond → profondément.",
+  "Attention : lent se termine par -ent mais suit la règle générale : lente → lentement."
+   ],
+   "exemple": "Papa conduit prudemment. Les enfants entrent bruyamment.",
+   "astuce": "-ant donne -amment avec un a, -ent donne -emment avec un e : la voyelle de l'adjectif se garde."
+  },
+  {
+   "id": "fr-pp-sans-aux-cd",
+   "matiere": "fr",
+   "e": "🎯",
+   "titre": "Participe passé : sans auxiliaire et avec avoir",
+   "regle": [
+    "Employé sans auxiliaire, le participe passé s'accorde comme un adjectif avec le nom : des feuilles tombées.",
+    "Avec avoir, il ne s'accorde jamais avec le sujet.",
+    "Avec avoir, il s'accorde avec le complément direct si celui-ci est placé AVANT le verbe : les pommes que j'ai achetées ; ces fleurs, je les ai cueillies.",
+    "Si le complément direct est après le verbe, pas d'accord : j'ai acheté des pommes."
+   ],
+   "exemple": "La lettre que Léa a écrite est sur mon bureau. Léa a écrit une lettre.",
+   "astuce": "Avec avoir, pose la question « quoi ? » : si la réponse (que, l', les…) est avant le verbe, accorde."
   }
  ]
 }
