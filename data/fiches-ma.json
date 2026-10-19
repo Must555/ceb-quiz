@@ -392,7 +392,7 @@
     "Diagonale : relie deux sommets opposés. Médiane : relie les milieux de deux côtés opposés. Hauteur : perpendiculaire aux bases (côtés parallèles).",
     "Diagonales qui se coupent en leur milieu : carré, rectangle, losange, parallélogramme.",
     "Diagonales de même longueur : carré, rectangle (et trapèze isocèle). Diagonales perpendiculaires : carré, losange.",
-    "Les diagonales sont des axes de symétrie dans le carré et le losange ; les médianes sont des axes de symétrie dans le carré et le rectangle."
+    "Les diagonales sont des axes de symétrie dans le carré et le losange ; les médianes sont des axes de symétrie dans le carré et le rectangle. Médianes perpendiculaires : carré, rectangle. Médianes de même longueur : carré, losange."
    ],
    "exemple": "Rectangle : diagonales égales mais pas perpendiculaires ; ses 2 axes de symétrie sont ses médianes.",
    "astuce": "Losange ↔ diagonales, rectangle ↔ médianes, carré ↔ les deux."
