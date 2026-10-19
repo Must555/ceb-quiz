@@ -253,15 +253,15 @@ const aires = famille([
     const sorte = rng.pick(['triangle', 'losange', 'parallelogramme']);
     const L = rng.int(4, 20); const l = rng.int(2, 15);
     if (sorte === 'triangle') {
-      const bonne = 'la moitié de l\'aire du rectangle';
-      return { ...qcm(rng, bonne, ['le double de l\'aire du rectangle', 'la même aire que le rectangle', 'le quart de l\'aire du rectangle']), difficulte: 2, enonce: `Un triangle a la même base (${L} cm) et la même hauteur (${l} cm) qu'un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du triangle ?`, explication: `Le triangle occupe la moitié du rectangle : ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm², la moitié de ${L * l} cm².` };
+      const bonne = 'La moitié de l\'aire du rectangle';
+      return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La même aire que le rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `Un triangle a la même base (${L} cm) et la même hauteur (${l} cm) qu'un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du triangle ?`, explication: `Le triangle occupe la moitié du rectangle : ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm², la moitié de ${L * l} cm².` };
     }
     if (sorte === 'losange') {
-      const bonne = 'la moitié de l\'aire du rectangle';
-      return { ...qcm(rng, bonne, ['le double de l\'aire du rectangle', 'la même aire que le rectangle', 'le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On dessine un losange dans un rectangle de ${L} cm sur ${l} cm : ses sommets sont les milieux des côtés du rectangle. Quelle est l'aire du losange ?`, explication: `Les diagonales du losange mesurent ${L} cm et ${l} cm. Aire = ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm² : c'est la moitié de l'aire du rectangle (${L * l} cm²).` };
+      const bonne = 'La moitié de l\'aire du rectangle';
+      return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La même aire que le rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On dessine un losange dans un rectangle de ${L} cm sur ${l} cm : ses sommets sont les milieux des côtés du rectangle. Quelle est l'aire du losange ?`, explication: `Les diagonales du losange mesurent ${L} cm et ${l} cm. Aire = ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm² : c'est la moitié de l'aire du rectangle (${L * l} cm²).` };
     }
-    const bonne = 'la même aire que le rectangle';
-    return { ...qcm(rng, bonne, ['le double de l\'aire du rectangle', 'la moitié de l\'aire du rectangle', 'le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On découpe un triangle d'un côté d'un parallélogramme et on le recolle de l'autre côté : on obtient un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du parallélogramme ?`, explication: `Découper et recoller ne change pas l'aire : le parallélogramme a la même aire que le rectangle, ${L} × ${l} = ${L * l} cm² (base × hauteur).` };
+    const bonne = 'La même aire que le rectangle';
+    return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La moitié de l\'aire du rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On découpe un triangle d'un côté d'un parallélogramme et on le recolle de l'autre côté : on obtient un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du parallélogramme ?`, explication: `Découper et recoller ne change pas l'aire : le parallélogramme a la même aire que le rectangle, ${L} × ${l} = ${L * l} cm² (base × hauteur).` };
   }),
 ]);
 
