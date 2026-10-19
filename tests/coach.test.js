@@ -103,11 +103,15 @@ test('mission ciblée générale : au moins 5 questions sur 10 visent les faible
 test('mission sur une notion précise : presque uniquement cette notion', () => {
   const j = nouveauJoueur('t', '🦊', '#fff');
   const sess = new QuizSession(donnees, { seed: 3, nbQuestions: 10, maxParModele: 4, poids: poidsCoach(j, { mode: 'cible', notion: 'fr-homophones' }) });
-  const notions = []; let q;
-  while ((q = sess.suivante())) { notions.push(q.fiche); sess.repondre(null); }
-  // 1 modèle homophones × 4 variantes max, le reste est complété par d'autres notions
-  assert.equal(notions.filter((x) => x === 'fr-homophones').length, 4); // maxParModele 4 dans ce test
+  // Familles qui couvrent la notion : leur fiche principale ou une de leurs formes { fiche }.
+  const couvrent = new Set(donnees.modeles.filter((m) => m.fiche === 'fr-homophones' || (m.formes ?? []).some((f) => f?.fiche === 'fr-homophones')).map((m) => m.id));
+  const notions = []; let ciblees = 0; let q;
+  while ((q = sess.suivante())) { notions.push(q.fiche); if (couvrent.has(q.modeleId)) ciblees++; sess.repondre(null); }
   assert.equal(notions.length, 10);
+  // 2 familles visées (homophones + « corriger le mot mal écrit », qui mêle plusieurs notions) × 4 variantes max :
+  // elles remplissent presque toute la mission ; le reste est complété par d'autres notions.
+  assert.ok(ciblees >= 7, `${ciblees} questions des familles visées sur 10`);
+  assert.ok(notions.filter((x) => x === 'fr-homophones').length >= 3, `notions : ${notions}`);
 });
 
 test('pondération zéro : un candidat de poids 0 n\'est jamais tiré', () => {
