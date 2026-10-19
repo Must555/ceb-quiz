@@ -314,11 +314,12 @@ function texteIndice(ind, th, noms, items) {
 }
 
 function figureTableauLogique(noms, items) {
-  const n = noms.length; const c0 = 92; const cw = 64; const rh = 34; const h0 = 40;
+  // Colonnes assez larges pour l'étiquette la plus longue (« salade de fruits »).
+  const n = noms.length; const c0 = 92; const cw = Math.max(64, Math.max(...items.map((it) => it[1].length)) * 7.4 + 12); const rh = 34; const h0 = 40;
   const W = c0 + n * cw + 8; const H = h0 + n * rh + 14;
   let s = '';
   s += rectSvg(8, 8, W - 16, h0 - 8, { fill: COUL.jaune, sw: 0 });
-  for (let j = 0; j < n; j++) s += texteSvg(c0 + j * cw + cw / 2, 8 + (h0 - 8) / 2, items[j][1], { size: items[j][1].length > 9 ? 10 : 12, bold: true });
+  for (let j = 0; j < n; j++) s += texteSvg(c0 + j * cw + cw / 2, 8 + (h0 - 8) / 2, items[j][1], { size: 12, bold: true });
   for (let i = 0; i < n; i++) {
     if (i % 2) s += rectSvg(8, h0 + i * rh, W - 16, rh, { fill: '#f4f6fa', sw: 0 });
     s += texteSvg(16, h0 + i * rh + rh / 2, noms[i], { size: 14, anchor: 'start', bold: true });
