@@ -380,8 +380,8 @@ function frCorriger(modele, rng) {
   const fautive = src.replace(m[0], faux);
   const mots = motsDe(fautive);
   if (mots.filter((x) => bas(x) === bas(faux)).length !== 1) return null;
-  // NB : modele.formes contient ici des objets { fiche } → seule la dernière sorte sort (à corriger avec coach.test.js, voir rapport étape 2).
-  const forme = rng.pick(modele.formes ?? ['trouver', 'trouver', 'corriger', 'corriger_libre']);
+  // modele.formes liste ici des entrées { fiche } (notions visées) : choixForme les ignore.
+  const forme = choixForme(rng, modele, ['trouver', 'trouver', 'corriger', 'corriger_libre']);
   const explication = `Il faut écrire « ${bon} » : « ${correcte} » ${regleCorr(cat, bon)}`;
   const base = { fiche: FICHE_CORR[cat], explication };
   if (forme === 'trouver') {

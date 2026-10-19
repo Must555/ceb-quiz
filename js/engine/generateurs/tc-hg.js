@@ -3106,7 +3106,7 @@ const BANQUE_CONSO = [
     expl: 'Dans un circuit court, il y a au maximum un intermédiaire entre le producteur et le consommateur : le producteur gagne mieux sa vie et les produits voyagent moins.' },
   { q: 'Que garantit un label de commerce équitable sur un paquet de café ?', ok: 'Que les producteurs ont reçu un prix juste pour leur travail', ko: ['Que le café est le moins cher du magasin', 'Que le café a été cultivé en Belgique', 'Que le paquet est en plastique recyclé'],
     expl: 'Le commerce équitable garantit aux producteurs (souvent dans des pays pauvres) un prix juste et de meilleures conditions de travail.' },
-  { q: 'Pourquoi faire réparer un objet plutôt que d\'en acheter un neuf aide-t-il l\'environnement ?', ok: 'On utilise moins de matières premières et d\'énergie, et on produit moins de déchets.', ko: ['Parce que les objets neufs sont toujours plus solides.', 'Parce que réparer coûte toujours plus cher.', 'Cela n\'a aucun effet sur l\'environnement.'],
+  { q: 'Pourquoi faire réparer un objet plutôt que d\'en acheter un neuf aide-t-il l\'environnement ?', ok: 'Parce qu\'on utilise moins de matières premières et d\'énergie, et qu\'on produit moins de déchets.', ko: ['Parce que les objets neufs sont toujours plus solides.', 'Parce que réparer coûte toujours plus cher.', 'Ce n\'est pas vrai : cela n\'a aucun effet sur l\'environnement.'],
     expl: 'Les ressources de la planète (métaux, pétrole…) ne sont pas infinies. Réparer, réutiliser ou acheter d\'occasion permet de les économiser et de réduire les déchets.' },
 ];
 
@@ -3138,7 +3138,7 @@ const consommer = famille('ca', [
     return {
       ...grilleQ(items, ['Consommer autrement', 'Acheter du neuf sans nécessité']),
       enonce: 'Chaque action est-elle une façon de consommer autrement, ou un achat neuf qui n\'est pas nécessaire ?',
-      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'consommer autrement' : 'achat neuf pas nécessaire'}`).join(' ; ')) + '.',
+      explication: maj(items.map((x, i) => `${i ? x.t.charAt(0).toLowerCase() + x.t.slice(1) : x.t} : ${x.c === 0 ? 'consommer autrement' : 'achat neuf pas nécessaire'}`).join(' ; ')) + '.',
       _signature: `gr|${cle(items.map((x) => x.t))}`, cleContenu: `gr|${cle(items.map((x) => x.t))}`, difficulte: 2,
     };
   }],

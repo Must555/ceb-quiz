@@ -2233,7 +2233,7 @@ const solidesFaces = famille([
       type: 'numerique', difficulte: 3,
       enonce: `Combien de faces de ce solide sont des ${forme} ?`,
       cle: `${sol.cle}|${forme}`, figure: sol.figure, reponse: nb,
-      explication: `${majuscule(nomSolide(sol.sorte, sol.n))} a ${sol.sorte === 'prisme' ? `2 bases (des ${NOMS_BASES[sol.n][1]}s) et ${sol.n} faces latérales rectangulaires` : `1 base (un ${NOMS_BASES[sol.n][1]}) et ${sol.n} faces latérales triangulaires`}. ${nb ? `Il y a donc ${nb} ${forme}.` : `Il n'y en a donc aucun : la réponse est 0.`}`,
+      explication: `${majuscule(nomSolide(sol.sorte, sol.n))} a ${sol.sorte === 'prisme' ? `2 bases (des ${NOMS_BASES[sol.n][1]}s) et ${sol.n} faces latérales rectangulaires` : `1 base (un ${NOMS_BASES[sol.n][1]}) et ${sol.n} faces latérales triangulaires`}. ${nb ? `Il y a donc ${nb} ${forme}.` : `Aucune face n'est donc un ${forme.slice(0, -1)} : la réponse est 0.`}`,
     };
   }, 2),
   // Pavé droit nommé : faces parallèles, perpendiculaires, isométriques.

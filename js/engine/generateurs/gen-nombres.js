@@ -302,7 +302,7 @@ const valeurPosition = famille([
     const reste = n % 10 ** p;
     return {
       type: 'numerique', difficulte: 2,
-      enonce: `Combien y a-t-il de ${RANGS[p].pl} en tout dans le nombre ${fmt(n)} ?`,
+      enonce: `Combien y a-t-il ${/^[aeiouéè]/.test(RANGS[p].pl) ? 'd\'' : 'de '}${RANGS[p].pl} en tout dans le nombre ${fmt(n)} ?`,
       reponse: q,
       explication: `On prend tous les chiffres jusqu'à celui des ${RANGS[p].pl} (inclus) : ${fmt(n)} = ${fmt(q)} ${RANGS[p].pl}${reste ? ` et ${fmt(reste)} ${pluriel(reste, 'unité')}` : ''}.`,
     };
@@ -2931,7 +2931,7 @@ const problemes = famille([
       type: 'numerique', unite: 'semaines', difficulte: 3,
       enonce: `${P.n} veut acheter ${jeu} à ${prix} €. ${P.il === 'elle' ? 'Elle' : 'Il'} a déjà ${a} € et économise ${eur(s)} par semaine. Au bout de combien de semaines aura-t-${P.il} assez d'argent ?`,
       reponse: sem,
-      explication: Number.isInteger((prix - a) / s) ? `Il manque ${prix} − ${a} = ${prix - a} €. ${prix - a} : ${fmt(s)} = ${sem} semaines.` : `Il manque ${prix} − ${a} = ${prix - a} €. Après ${sem - 1} semaines, ${P.il} a économisé ${eur((sem - 1) * s)} : pas encore assez. Après ${sem} semaines : ${eur(sem * s)}, c'est suffisant. Réponse : ${sem} semaines.`,
+      explication: Number.isInteger((prix - a) / s) ? `Il manque ${prix} − ${a} = ${prix - a} €. ${prix - a} : ${fmt(s)} = ${sem} semaines.` : `Il manque ${prix} − ${a} = ${prix - a} €. Après ${sem - 1} ${sem - 1 > 1 ? 'semaines' : 'semaine'}, ${P.il} a économisé ${eur((sem - 1) * s)} : pas encore assez. Après ${sem} semaines : ${eur(sem * s)}, c'est suffisant. Réponse : ${sem} semaines.`,
     };
   }),
   forme((rng) => {
