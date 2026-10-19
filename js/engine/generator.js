@@ -91,8 +91,12 @@ export function genererVariante(modele, rng, exclure = new Set()) {
     const id = `${modele.id}#${signature(vars)}`;
     if (exclure.has(id)) continue;
 
+    // Anti-répétition renforcée : deux variantes d'un même modèle avec les mêmes nombres
+    // (ex. même rectangle 6 m × 4 m, contexte différent) comptent comme la même question.
+    const nombres = Object.keys(vars).sort().filter((k) => typeof vars[k] === 'number').map((k) => vars[k]);
     const q = {
       id,
+      ...(nombres.length ? { cleContenu: `${modele.id}|${nombres.join(',')}` } : {}),
       type: modele.type,
       enonce: remplir(modele.enonce, vars),
       explication: remplir(modele.explication, vars),

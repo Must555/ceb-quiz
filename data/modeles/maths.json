@@ -127,11 +127,11 @@
         },
         "L": {
           "min": 3,
-          "max": 15
+          "max": 28
         },
         "l": {
           "min": 2,
-          "max": 12
+          "max": 19
         }
       },
       "contraintes": [
