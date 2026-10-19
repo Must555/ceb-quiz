@@ -6,10 +6,11 @@
    "e": "🔢",
    "titre": "Lire, écrire et décomposer les nombres",
    "regle": [
-    "On lit un grand nombre par classes de 3 chiffres : les millions, les mille, puis les unités.",
+    "On lit un grand nombre par classes de 3 chiffres : les milliards, les millions, les mille, puis les unités.",
     "Chaque chiffre a une valeur selon son rang : unités, dizaines, centaines, unités de mille… et après la virgule : dixièmes, centièmes, millièmes.",
     "Un rang vide s'écrit avec un 0 : trois-mille-cinq = 3 005.",
-    "En Belgique : septante (70), quatre-vingts (80), nonante (90)."
+    "En Belgique : septante (70), quatre-vingts (80), nonante (90).",
+    "1 million = 1 000 000 (6 zéros) ; 1 milliard = 1 000 000 000 (9 zéros) = mille millions."
    ],
    "exemple": "45 873,26 : 8 est le chiffre des centaines, 2 celui des dixièmes, 6 celui des centièmes. Il y a 458 centaines en tout.",
    "astuce": "Pour « combien de centaines en tout », prends tous les chiffres jusqu'à celui des centaines."
@@ -115,7 +116,8 @@
     "× 10, × 100, × 1 000 : chaque chiffre prend une valeur 10, 100, 1 000 fois plus grande (la virgule se déplace vers la droite).",
     "× 0,1 = : 10 ; × 0,5 = : 2 ; : 0,5 = × 2 ; : 0,25 = × 4.",
     "× 5 = × 10 : 2 ; × 25 = × 100 : 4 ; × 9 = × 10 − le nombre ; × 99 = × 100 − le nombre.",
-    "Si un facteur est multiplié par 10 et l'autre divisé par 10, le produit ne change pas."
+    "Si un facteur est multiplié par 10 et l'autre divisé par 10, le produit ne change pas.",
+    "× 250 = × 1 000 : 4. Décompositions à connaitre : 100 = 4 × 25 = 2 × 50 = 5 × 20 ; 1 = 0,5 × 2 = 0,25 × 4 = 0,2 × 5 = 0,1 × 10."
    ],
    "exemple": "36 × 25 = 3 600 : 4 = 900. Sachant que 25 × 15 = 375, alors 2,5 × 15 = 37,5.",
    "astuce": "Dans une somme, si tu ajoutes 2 à un terme, enlève 2 à l'autre : 376 + 18 = 374 + 20."
@@ -182,7 +184,8 @@
     "Masse : une pomme ≈ 150 g, un élève ≈ 40 kg, une voiture ≈ 1 200 kg, un éléphant ≈ 5 t.",
     "Longueur : une fourmi ≈ 7 mm, un crayon ≈ 18 cm, une porte ≈ 2 m, Bruxelles–Liège ≈ 100 km.",
     "Capacité : une cuillère à café ≈ 5 ml, une canette = 33 cl, un seau ≈ 10 l.",
-    "Durée : une récréation ≈ 15 min, un match de football = 90 min, une nuit ≈ 10 h."
+    "Durée : une récréation ≈ 15 min, un match de football = 90 min, une nuit ≈ 10 h.",
+    "Volume : un dé à jouer ≈ 1 cm³, une brique de lait = 1 dm³ = 1 l, une boîte à chaussures ≈ 8 dm³, une salle de classe ≈ 200 m³."
    ],
    "exemple": "La masse d'un smartphone est d'environ 180 g (pas 180 kg, ni 180 mg).",
    "astuce": "Compare avec un objet que tu connais bien : c'est plus lourd ou plus léger qu'une pomme ?"
@@ -251,7 +254,8 @@
     "Lis tout l'énoncé et repère la question.",
     "Cherche les données utiles (attention : certaines ne servent à rien).",
     "Découpe le problème en étapes : chaque étape répond à une petite question.",
-    "Écris chaque calcul avec son résultat et son unité, puis vérifie que la réponse est vraisemblable."
+    "Écris chaque calcul avec son résultat et son unité, puis vérifie que la réponse est vraisemblable.",
+    "Pour choisir le bon calcul, traduis chaque étape : « par pièce » → ×, « partager » → :, « il reste » → −. Les parenthèses montrent ce qu'on calcule d'abord."
    ],
    "exemple": "3 cahiers à 2,40 € et une trousse à 6 € payés avec 20 € : 3 × 2,40 = 7,20 € ; 7,20 + 6 = 13,20 € ; 20 − 13,20 = 6,80 €.",
    "astuce": "Demande-toi à chaque fois : faut-il réunir, enlever, répéter ou partager ?"
@@ -265,7 +269,8 @@
     "Un polyèdre n'a que des faces planes (cube, pavé, prismes, pyramides). Le cylindre, le cône et la sphère ont une surface courbe : ce ne sont pas des polyèdres.",
     "Face = surface plane ; arête = segment où deux faces se rejoignent ; sommet = point où plusieurs arêtes se rejoignent.",
     "Cube et pavé droit : 6 faces, 12 arêtes, 8 sommets.",
-    "Pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets. Prisme à base triangulaire : 5 faces, 9 arêtes, 6 sommets."
+    "Pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets. Prisme à base triangulaire : 5 faces, 9 arêtes, 6 sommets.",
+    "Pavé droit : chaque face est parallèle (et isométrique) à la face opposée, et perpendiculaire aux 4 autres."
    ],
    "exemple": "Un prisme dont la base a n côtés a n + 2 faces, 3 × n arêtes et 2 × n sommets.",
    "astuce": "Une pyramide dont la base a n côtés a n + 1 faces, 2 × n arêtes et n + 1 sommets."
@@ -293,7 +298,8 @@
     "Selon les côtés : équilatéral (3 côtés égaux), isocèle (au moins 2 côtés égaux), scalène (3 côtés différents). Un triangle équilatéral est donc aussi isocèle, mais on le nomme par son nom le plus précis.",
     "Selon les angles : un triangle rectangle a un angle droit.",
     "La somme des 3 angles d'un triangle vaut toujours 180°. Dans un triangle équilatéral, chaque angle mesure 60°.",
-    "Dans un triangle isocèle, les deux angles à la base sont égaux."
+    "Dans un triangle isocèle, les deux angles à la base sont égaux.",
+    "Au compas : on trace un côté, puis deux arcs de cercle depuis ses extrémités (rayon = longueur des autres côtés) ; leur croisement donne le 3e sommet."
    ],
    "exemple": "Deux angles mesurent 50° et 70° : le troisième mesure 180 − 50 − 70 = 60°.",
    "astuce": "Un triangle ne peut avoir qu'un seul angle droit ou obtus."
@@ -392,7 +398,8 @@
     "Diagonale : relie deux sommets opposés. Médiane : relie les milieux de deux côtés opposés. Hauteur : perpendiculaire aux bases (côtés parallèles).",
     "Diagonales qui se coupent en leur milieu : carré, rectangle, losange, parallélogramme.",
     "Diagonales de même longueur : carré, rectangle (et trapèze isocèle). Diagonales perpendiculaires : carré, losange.",
-    "Les diagonales sont des axes de symétrie dans le carré et le losange ; les médianes sont des axes de symétrie dans le carré et le rectangle. Médianes perpendiculaires : carré, rectangle. Médianes de même longueur : carré, losange."
+    "Les diagonales sont des axes de symétrie dans le carré et le losange ; les médianes sont des axes de symétrie dans le carré et le rectangle. Médianes perpendiculaires : carré, rectangle. Médianes de même longueur : carré, losange.",
+    "Hauteur d'un triangle : segment qui part d'un sommet et arrive perpendiculairement sur le côté opposé. Hauteur d'un parallélogramme : perpendiculaire à un côté, jusqu'au côté opposé."
    ],
    "exemple": "Rectangle : diagonales égales mais pas perpendiculaires ; ses 2 axes de symétrie sont ses médianes.",
    "astuce": "Losange ↔ diagonales, rectangle ↔ médianes, carré ↔ les deux."
@@ -466,6 +473,104 @@
    ],
    "exemple": "Écriture correcte : 12 × 40 = 480 puis 480 + 35 = 515, ou (12 × 40) + 35 = 480 + 35 = 515.",
    "astuce": "Lis chaque « = » séparément : ce qui est à gauche et à droite doit toujours avoir la même valeur."
+  },
+  {
+   "id": "ma-fractions-operations",
+   "matiere": "ma",
+   "e": "✖️",
+   "titre": "Calculer avec des fractions",
+   "regle": [
+    "Multiplier une fraction par un nombre entier : on multiplie le numérateur et on garde le dénominateur. 3 × 2/7 = 6/7.",
+    "Pour additionner ou soustraire, il faut le même dénominateur. Si un dénominateur est un multiple de l'autre, on transforme la fraction qui a le plus petit : 1/4 = 2/8.",
+    "Ensuite, on additionne (ou on soustrait) les numérateurs et on garde le dénominateur. On n'additionne jamais les dénominateurs.",
+    "On simplifie le résultat si possible : on divise le numérateur et le dénominateur par un même nombre."
+   ],
+   "exemple": "1/4 + 3/8 = 2/8 + 3/8 = 5/8. 4 × 3/8 = 12/8 = 3/2.",
+   "astuce": "Pense à des parts de pizza : on ne peut additionner que des parts de même taille."
+  },
+  {
+   "id": "ma-promotions",
+   "matiere": "ma",
+   "e": "🏷️",
+   "titre": "Promotions, bénéfice et perte",
+   "regle": [
+    "« Le deuxième à moitié prix » : dans chaque paire, on paie un article entier et la moitié du second.",
+    "« 3 pour le prix de 2 », « 1 acheté, 1 gratuit » : on compte les lots complets ; les articles en plus se paient au prix normal.",
+    "« Jusqu'à 70 % de remise » : 70 % est la plus grande remise, beaucoup d'articles ont moins. « À partir de 15 € » : 15 € est le prix le plus bas.",
+    "Prix de revient = prix d'achat + frais. Bénéfice = prix de vente − prix de revient. Si on vend moins cher que le prix de revient, on fait une perte."
+   ],
+   "exemple": "Achat 120 €, transport 15 € : prix de revient 135 €. Vente 160 € : bénéfice de 160 − 135 = 25 €.",
+   "astuce": "Pour comparer deux promotions, calcule le prix total de chacune pour le même nombre d'articles."
+  },
+  {
+   "id": "ma-graphe-fleche",
+   "matiere": "ma",
+   "e": "➡️",
+   "titre": "Les graphes fléchés",
+   "regle": [
+    "Un graphe fléché relie des éléments par des flèches. Chaque flèche représente la même relation ou la même opération (× 4, + 3, « est le double de »…).",
+    "Le sens de la flèche compte : « 8 → 4 » pour « est le double de » se lit « 8 est le double de 4 ».",
+    "Pour trouver l'opération, elle doit marcher pour toutes les flèches, pas seulement pour une.",
+    "Situation de proportionnalité : on passe toujours d'un ensemble à l'autre en multipliant par le même nombre. Avec « + 3 », ce n'est pas de la proportionnalité."
+   ],
+   "exemple": "Cahiers → prix : 2 → 3 € ; 5 → 7,50 €. Prix d'un cahier : 3 : 2 = 1,50 €. Pour 8 cahiers : 8 × 1,50 = 12 €.",
+   "astuce": "Pour remonter une flèche, fais l'opération inverse : × 4 devient : 4, + 3 devient − 3."
+  },
+  {
+   "id": "ma-assemblages-cubes",
+   "matiere": "ma",
+   "e": "🧱",
+   "titre": "Assemblages de cubes",
+   "regle": [
+    "Pour compter les cubes d'un assemblage, on compte colonne par colonne : une colonne de 3 cubes compte 3 cubes, même si on ne voit que celui du dessus.",
+    "Un cube est toujours posé sur la table ou sur un autre cube : sous chaque cube visible, il y a des cubes cachés.",
+    "Vu de dessus, on voit une case par colonne, quelle que soit sa hauteur.",
+    "Un grand cube de 2 × 2 × 2 contient 8 petits cubes ; un grand cube de 3 × 3 × 3 en contient 27."
+   ],
+   "exemple": "Des colonnes de 3, 2, 2 et 1 cubes : 3 + 2 + 2 + 1 = 8 cubes. Vu de dessus : 4 cases.",
+   "astuce": "Dessine la vue de dessus et écris dans chaque case la hauteur de la colonne, puis additionne."
+  },
+  {
+   "id": "ma-symboles-geo",
+   "matiere": "ma",
+   "e": "📐",
+   "titre": "Symboles et codage en géométrie",
+   "regle": [
+    "Un point se nomme par une majuscule (le point A). Une droite se nomme par une minuscule (la droite a).",
+    "[AB] désigne le segment dont les extrémités sont les points A et B.",
+    "a // b : la droite a est parallèle à la droite b. a ⊥ b : la droite a est perpendiculaire à la droite b.",
+    "Sur une figure, le petit carré indique un angle droit. Des petits traits identiques indiquent des côtés de même longueur (isométriques)."
+   ],
+   "exemple": "Si a ⊥ c et b ⊥ c, alors a // b.",
+   "astuce": "Le codage dit la vérité même si le dessin n'est pas parfait : fie-toi aux traits et aux petits carrés."
+  },
+  {
+   "id": "ma-encadrer",
+   "matiere": "ma",
+   "e": "🎯",
+   "titre": "Encadrer un nombre décimal",
+   "regle": [
+    "Encadrer un nombre, c'est l'écrire entre deux nombres plus simples, le plus proche possible : un juste en dessous, un juste au-dessus.",
+    "Au dixième : les deux nombres ont un chiffre après la virgule et se suivent (7,3 < 7,38 < 7,4).",
+    "Au centième : deux chiffres après la virgule (7,38 < 7,386 < 7,39). Au millième : trois chiffres (2,456 < 2,4567 < 2,457).",
+    "Le nombre du dessous s'obtient en « coupant » le nombre au bon rang ; celui du dessus est le suivant."
+   ],
+   "exemple": "12,507 au centième : 12,50 < 12,507 < 12,51.",
+   "astuce": "Vérifie toujours : le nombre doit être plus grand que celui de gauche et plus petit que celui de droite."
+  },
+  {
+   "id": "ma-horaire",
+   "matiere": "ma",
+   "e": "🗓️",
+   "titre": "Établir l'horaire d'une journée",
+   "regle": [
+    "On part de l'heure de début et on ajoute la durée de chaque activité, une par une, sans oublier les pauses, les repas et les trajets.",
+    "L'heure de fin d'une activité est l'heure de début de la suivante (s'il n'y a pas de pause).",
+    "Si les minutes dépassent 60, on ajoute 1 h et on retire 60 min : 10 h 75 = 11 h 15.",
+    "Pour savoir s'il reste du temps, on additionne toutes les durées et on compare avec le temps disponible."
+   ],
+   "exemple": "Départ 8 h 40, trajet 50 min → 9 h 30 ; visite 1 h 15 → 10 h 45 ; pause 15 min → 11 h.",
+   "astuce": "Écris l'horaire dans un tableau à deux colonnes : activité, heure de début."
   }
  ]
 }

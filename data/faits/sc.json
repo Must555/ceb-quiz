@@ -3206,7 +3206,7 @@
      "fait": "fait"
     },
     {
-     "nom": "le gros intestin",
+     "nom": "le côlon (gros intestin)",
      "appareil": "l'appareil digestif",
      "role": "récupérer l'eau des restes et former les excréments",
      "fait": "fait"
@@ -3215,6 +3215,12 @@
      "nom": "le foie",
      "appareil": "l'appareil digestif",
      "role": "produire la bile, qui aide à digérer les graisses",
+     "fait": "fait"
+    },
+    {
+     "nom": "le pancréas",
+     "appareil": "l'appareil digestif",
+     "role": "produire le suc pancréatique, qui aide à digérer les aliments dans l'intestin grêle",
      "fait": "fait"
     },
     {
@@ -3248,6 +3254,11 @@
      "fait": "font"
     },
     {
+     "nom": "le diaphragme",
+     "role": "s'abaisser à l'inspiration pour agrandir la cage thoracique (c'est un muscle placé sous les poumons)",
+     "fait": "fait"
+    },
+    {
      "nom": "le cœur",
      "appareil": "l'appareil circulatoire",
      "role": "pomper le sang pour le faire circuler dans tout le corps",
@@ -3270,6 +3281,26 @@
      "appareil": "l'appareil circulatoire",
      "role": "permettre les échanges entre le sang et les organes (ce sont des vaisseaux très fins)",
      "fait": "font"
+    },
+    {
+     "nom": "les globules rouges",
+     "sang": "transporter le dioxygène dans tout le corps",
+     "fait": "font"
+    },
+    {
+     "nom": "les globules blancs",
+     "sang": "défendre le corps contre les microbes",
+     "fait": "font"
+    },
+    {
+     "nom": "les plaquettes",
+     "sang": "aider à boucher une plaie pour arrêter le saignement",
+     "fait": "font"
+    },
+    {
+     "nom": "le plasma",
+     "sang": "transporter les nutriments et les déchets (c'est la partie liquide du sang)",
+     "fait": "fait"
     },
     {
      "nom": "les reins",
@@ -3396,7 +3427,7 @@
     },
     {
      "nom": "aliments:5",
-     "texte": "le gros intestin",
+     "texte": "le côlon (gros intestin)",
      "suite": "aliments",
      "rang": 5
     },
@@ -3586,6 +3617,51 @@
      "nom": "Pendant un effort, le cœur bat plus vite.",
      "verite": true,
      "pourquoi": "Les muscles ont besoin de plus de dioxygène et de nutriments : le cœur accélère pour leur en apporter."
+    },
+    {
+     "nom": "Les alvéoles pulmonaires sont de minuscules sacs d'air entourés de petits vaisseaux sanguins.",
+     "verite": true,
+     "pourquoi": "C'est là que le dioxygène passe de l'air dans le sang, et que le dioxyde de carbone passe du sang dans l'air."
+    },
+    {
+     "nom": "Dans les alvéoles, le dioxyde de carbone passe de l'air vers le sang.",
+     "verite": false,
+     "pourquoi": "C'est l'inverse : le dioxyde de carbone passe du sang vers l'air des alvéoles ; le dioxygène, lui, passe de l'air vers le sang."
+    },
+    {
+     "nom": "Le pancréas fait partie du tube digestif : les aliments passent à l'intérieur.",
+     "verite": false,
+     "pourquoi": "Le pancréas est une glande annexe : il verse son suc digestif dans l'intestin grêle, mais les aliments n'y passent pas."
+    },
+    {
+     "nom": "Dans le côlon, les restes des aliments perdent de l'eau et deviennent plus solides.",
+     "verite": true,
+     "pourquoi": "Le côlon (gros intestin) absorbe de l'eau ; les restes sont ensuite évacués par l'anus."
+    },
+    {
+     "nom": "Le diaphragme est un muscle placé sous les poumons.",
+     "verite": true,
+     "pourquoi": "En s'abaissant, il agrandit la cage thoracique : l'air entre dans les poumons (inspiration)."
+    },
+    {
+     "nom": "Les globules rouges transportent le dioxygène.",
+     "verite": true,
+     "pourquoi": "Ils se chargent de dioxygène dans les poumons et le déposent dans les organes."
+    },
+    {
+     "nom": "Les globules blancs donnent au sang sa couleur rouge.",
+     "verite": false,
+     "pourquoi": "Ce sont les globules rouges qui donnent au sang sa couleur ; les globules blancs défendent le corps contre les microbes."
+    },
+    {
+     "nom": "Le plasma est la partie liquide du sang.",
+     "verite": true,
+     "pourquoi": "Il transporte les nutriments et des déchets ; les globules et les plaquettes baignent dedans."
+    },
+    {
+     "nom": "Les plaquettes aident à arrêter le saignement quand on se coupe.",
+     "verite": true,
+     "pourquoi": "Elles s'accumulent sur la plaie et aident à former un bouchon (un caillot)."
     }
    ]
   },
@@ -5561,6 +5637,120 @@
       "911"
      ],
      "pourquoi": "Le 112 fonctionne dans toute l'Europe, pour les pompiers et l'aide médicale urgente."
+    },
+    {
+     "nom": "Quand une bougie brûle, la cire fond près de la mèche : c'est un changement d'état.",
+     "verite": true,
+     "pourquoi": "La cire passe de l'état solide à l'état liquide (fusion) : c'est un phénomène physique, la matière reste de la cire.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Quand la cire fondue refroidit et redevient solide, c'est une transformation chimique.",
+     "verite": false,
+     "pourquoi": "C'est une solidification, un changement d'état : un phénomène physique. La matière reste de la cire.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Quand la cire brûle dans la flamme, elle se transforme en d'autres matières : du dioxyde de carbone et de l'eau.",
+     "verite": true,
+     "pourquoi": "C'est une combustion : un phénomène chimique.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Si on tient un verre froid au-dessus de la flamme d'une bougie, de la buée apparaît sur le verre.",
+     "verite": true,
+     "pourquoi": "La combustion de la cire produit de la vapeur d'eau, qui se condense sur le verre froid.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Sous un bocal retourné, une bougie reste allumée sans fin.",
+     "verite": false,
+     "pourquoi": "Elle s'éteint quand le dioxygène de l'air du bocal est en grande partie utilisé.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Sous un grand bocal, une bougie reste allumée plus longtemps que sous un petit bocal.",
+     "verite": true,
+     "pourquoi": "Le grand bocal contient plus d'air, donc plus de dioxygène.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "La flamme d'une bougie libère de l'énergie thermique (de la chaleur) et de la lumière.",
+     "verite": true,
+     "pourquoi": "L'énergie chimique stockée dans la cire est transformée en énergie thermique et en lumière.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Une bougie allumée devient plus petite parce que la cire disparaît sans rien produire.",
+     "verite": false,
+     "pourquoi": "La cire ne disparaît pas : en brûlant, elle se transforme en dioxyde de carbone et en vapeur d'eau, qui partent dans l'air.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "On tient un verre froid au-dessus de la flamme d'une bougie : de la buée apparaît sur le verre. Que montre cette observation ?",
+     "rep": "La combustion produit de l'eau.",
+     "faux": [
+      "La flamme produit du dioxygène.",
+      "La cire fond et coule sur le verre.",
+      "Le verre fabrique de l'eau quand il chauffe."
+     ],
+     "pourquoi": "La vapeur d'eau produite par la combustion se condense sur le verre froid : c'est la buée.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "On retourne un bocal sur une bougie allumée. Après quelques secondes, la flamme s'éteint. Pourquoi ?",
+     "rep": "Elle n'a plus assez de dioxygène.",
+     "faux": [
+      "Elle n'a plus de cire.",
+      "Le bocal souffle sur la flamme.",
+      "Il y a trop de dioxygène dans le bocal."
+     ],
+     "pourquoi": "Sans assez de dioxygène (le comburant), la combustion s'arrête.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Près de la mèche d'une bougie allumée, la cire devient liquide. Comment s'appelle ce phénomène ?",
+     "rep": "Une fusion (un phénomène physique)",
+     "faux": [
+      "Une combustion (un phénomène chimique)",
+      "Une évaporation",
+      "Une solidification"
+     ],
+     "pourquoi": "La cire passe de l'état solide à l'état liquide : c'est une fusion, un changement d'état. La matière reste de la cire.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "On place un thermomètre au-dessus d'une bougie allumée : la température monte. Que montre cette observation ?",
+     "rep": "La combustion libère de l'énergie thermique.",
+     "faux": [
+      "La bougie absorbe la chaleur de l'air.",
+      "La flamme produit du froid.",
+      "Le thermomètre fabrique de la chaleur."
+     ],
+     "pourquoi": "L'énergie chimique de la cire est transformée en énergie thermique (chaleur) lors de la combustion.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Après une heure, une bougie allumée est devenue plus petite. Que s'est-il passé ?",
+     "rep": "La cire a brûlé : elle s'est transformée en dioxyde de carbone et en vapeur d'eau, partis dans l'air.",
+     "faux": [
+      "La cire a disparu sans rien produire.",
+      "La cire s'est transformée en dioxygène.",
+      "La cire est entrée dans la mèche."
+     ],
+     "pourquoi": "Lors d'une combustion, la matière se transforme : c'est un phénomène chimique.",
+     "bougie": "oui"
+    },
+    {
+     "nom": "Une bougie reste allumée plus longtemps sous un grand bocal que sous un petit. Pourquoi ?",
+     "rep": "Le grand bocal contient plus d'air, donc plus de dioxygène.",
+     "faux": [
+      "Le grand bocal est plus chaud.",
+      "Le petit bocal contient plus de dioxygène.",
+      "Le grand bocal fabrique de l'air."
+     ],
+     "pourquoi": "La flamme a besoin de dioxygène : plus il y a d'air, plus elle dure.",
+     "bougie": "oui"
     }
    ]
   },
@@ -5714,7 +5904,8 @@
    "items": [
     {
      "nom": "le Soleil",
-     "source": "renouvelable"
+     "source": "renouvelable",
+     "chauffage": "un chauffe-eau solaire (panneaux sur le toit)"
     },
     {
      "nom": "le vent",
@@ -5727,11 +5918,19 @@
     {
      "nom": "le bois",
      "source": "renouvelable",
-     "info": "Il est renouvelable à condition de replanter les arbres coupés."
+     "info": "Il est renouvelable à condition de replanter les arbres coupés.",
+     "chauffage": "un poêle à bois"
+    },
+    {
+     "nom": "les pellets (granulés de bois)",
+     "source": "renouvelable",
+     "info": "Ils sont faits de sciure de bois : renouvelables à condition de replanter les arbres.",
+     "chauffage": "un poêle à pellets"
     },
     {
      "nom": "la chaleur du sous-sol (géothermie)",
-     "source": "renouvelable"
+     "source": "renouvelable",
+     "chauffage": "une installation de géothermie"
     },
     {
      "nom": "les marées",
@@ -5745,17 +5944,26 @@
     {
      "nom": "le gaz naturel",
      "source": "non renouvelable",
-     "fossile": "oui"
+     "fossile": "oui",
+     "chauffage": "une chaudière au gaz naturel"
     },
     {
      "nom": "le charbon",
      "source": "non renouvelable",
-     "fossile": "oui"
+     "fossile": "oui",
+     "chauffage": "un vieux poêle à charbon"
     },
     {
      "nom": "l'uranium",
      "source": "non renouvelable",
      "info": "C'est le combustible des centrales nucléaires, comme celles de Doel et de Tihange."
+    },
+    {
+     "nom": "le mazout",
+     "source": "non renouvelable",
+     "fossile": "oui",
+     "info": "Le mazout est fabriqué à partir du pétrole.",
+     "chauffage": "une chaudière au mazout"
     },
     {
      "nom": "Le pétrole, le gaz naturel et le charbon sont des énergies fossiles.",
@@ -5806,6 +6014,26 @@
      "nom": "Au large de la côte belge, en mer du Nord, il y a des parcs d'éoliennes.",
      "verite": true,
      "pourquoi": "Le vent de la mer du Nord est une ressource d'énergie renouvelable."
+    },
+    {
+     "nom": "En Belgique, beaucoup de maisons sont chauffées au gaz naturel ou au mazout.",
+     "verite": true,
+     "pourquoi": "Ce sont des ressources non renouvelables : elles s'épuisent et leur combustion rejette du dioxyde de carbone."
+    },
+    {
+     "nom": "Se chauffer avec un poêle à pellets utilise une ressource renouvelable.",
+     "verite": true,
+     "pourquoi": "Les pellets sont faits de bois, renouvelable si l'on replante les arbres."
+    },
+    {
+     "nom": "Le mazout est une ressource d'énergie renouvelable.",
+     "verite": false,
+     "pourquoi": "Le mazout est fabriqué à partir du pétrole, une énergie fossile qui s'épuise."
+    },
+    {
+     "nom": "Un chauffe-eau solaire utilise l'énergie du Soleil pour chauffer l'eau.",
+     "verite": true,
+     "pourquoi": "L'énergie lumineuse du Soleil est transformée en énergie thermique : c'est une ressource renouvelable."
     }
    ]
   },

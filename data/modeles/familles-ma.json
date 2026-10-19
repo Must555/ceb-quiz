@@ -41,7 +41,12 @@
    "generateur": "ma_intercaler",
    "domaine": "ma.arithmetique",
    "fiche": "ma-decimaux",
-   "difficulte": 2
+   "difficulte": 2,
+   "formes": [
+    {
+     "fiche": "ma-encadrer"
+    }
+   ]
   },
   {
    "id": "ma-f-droite-graduee",
@@ -167,7 +172,12 @@
    "generateur": "ma_mesures_realistes",
    "domaine": "ma.grandeurs",
    "fiche": "ma-ordres-grandeur",
-   "difficulte": 1
+   "difficulte": 1,
+   "formes": [
+    {
+     "fiche": "ma-unites-aire-volume"
+    }
+   ]
   },
   {
    "id": "ma-f-aires-volumes-unites",
@@ -195,7 +205,12 @@
    "generateur": "ma_durees",
    "domaine": "ma.grandeurs",
    "fiche": "ma-durees",
-   "difficulte": 2
+   "difficulte": 2,
+   "formes": [
+    {
+     "fiche": "ma-horaire"
+    }
+   ]
   },
   {
    "id": "ma-f-calendrier",

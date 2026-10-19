@@ -10,7 +10,8 @@
 //   tc_fr_adverbes      : formation des adverbes en -ment
 //   tc_fr_pp_accord     : participe passé sans auxiliaire et avec avoir (complément direct placé avant)
 
-import { conjuguer, PERSONNES } from './conjugaison.js';
+import { conjuguer, PERSONNES, participePresent, participesPresents, verbesIrreguliers, AUX_ETRE } from './conjugaison.js';
+import { VERBES_CONJ } from './gen-francais.js';
 import { formesRectifiees } from '../checker.js';
 
 const maj = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
@@ -61,7 +62,7 @@ const SUJETS_C = [
   { s: 'Léa et Tom', pr: 'ils', idx: 5, g: 'm' },
 ];
 // [infinitif, participe passé, auxiliaire, complément]
-const VERBES_C = [
+export const VERBES_C = [
   ['finir', 'fini', 'avoir', 'le puzzle'], ['ranger', 'rangé', 'avoir', 'le grenier'], ['manger', 'mangé', 'avoir', 'tout le gâteau'],
   ['préparer', 'préparé', 'avoir', 'le repas'], ['lire', 'lu', 'avoir', 'la bande dessinée'], ['écrire', 'écrit', 'avoir', 'une lettre à Mamie'],
   ['terminer', 'terminé', 'avoir', 'le dessin'], ['construire', 'construit', 'avoir', 'une cabane'], ['réparer', 'réparé', 'avoir', 'le vélo'],
@@ -162,7 +163,7 @@ function frConjComposes(modele, rng) {
 
 // ═════════════════════════ 2. Verbes en -ER à radical variable ═════════════════════════
 // [infinitif, type, complément, sujets imposés ?]
-const VERBES_ER = [
+export const VERBES_ER = [
   ['appeler', 'double', 'le chien'], ['rappeler', 'double', 'le médecin'], ['jeter', 'double', 'les papiers à la poubelle'], ['projeter', 'double', 'un film'],
   ['acheter', 'grave', 'du pain'], ['peser', 'grave', 'les pommes'], ['lever', 'grave', 'la main'], ['mener', 'grave', 'la course'],
   ['amener', 'grave', 'un ami'], ['promener', 'grave', 'le chien'], ['semer', 'grave', 'des graines'], ['enlever', 'grave', 'le manteau'],

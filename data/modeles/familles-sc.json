@@ -924,6 +924,28 @@
      "difficulte": 1,
      "enonce": "Relie chaque organe des sens au sens qui lui correspond.",
      "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "sang",
+     "fiche": "sc-sang",
+     "enonce": "Dans le sang, quel est le rôle de cet élément : {cle} ?",
+     "explication": "{Cle} : {valeur}. Le sang est formé d'un liquide, le plasma, dans lequel baignent les globules rouges, les globules blancs et les plaquettes."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "sang",
+     "fiche": "sc-sang",
+     "enonce": "Quel élément du sang a pour rôle de {valeur} ?",
+     "explication": "{Cle} : {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "sang",
+     "n": 3,
+     "fiche": "sc-sang",
+     "enonce": "Relie chaque élément du sang à son rôle.",
+     "explication": "{liste}."
     }
    ]
   },
@@ -1632,6 +1654,22 @@
     },
     {
      "sorte": "affirmation_grille"
+    },
+    {
+     "sorte": "affirmation",
+     "filtre": {
+      "bougie": "oui"
+     }
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "filtre": {
+      "bougie": "oui"
+     },
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
     }
    ]
   },
@@ -1717,6 +1755,33 @@
     },
     {
      "sorte": "affirmation_grille"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "source",
+     "avec": "chauffage",
+     "ordreFixe": true,
+     "enonce": "Une famille se chauffe avec {chauffage}. La ressource d'énergie utilisée ({cle}) est-elle renouvelable ou non renouvelable ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "source",
+     "avec": "chauffage",
+     "enonce": "Pour se chauffer, laquelle de ces ressources d'énergie est {valeur} ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "source",
+     "avec": "chauffage",
+     "element": "{chauffage}",
+     "valeurs": [
+      "renouvelable",
+      "non renouvelable"
+     ],
+     "enonce": "Ces appareils de chauffage utilisent-ils une ressource d'énergie renouvelable ou non renouvelable ?",
+     "explication": "{liste}."
     }
    ]
   },

@@ -86,6 +86,51 @@
    "fiche": "ma-egalites",
    "difficulte": 2,
    "variantesMin": 40
+  },
+  {
+   "id": "ma-f-fractions-operations",
+   "generateur": "ma_tc_fractions_operations",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-fractions-operations",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-achats-promos",
+   "generateur": "ma_tc_achats_promos",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-promotions",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-graphe-fleche",
+   "generateur": "ma_tc_graphe_fleche",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-graphe-fleche",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-solides-faces",
+   "generateur": "ma_tc_solides_faces",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-solides",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "ma-assemblages-cubes"
+    }
+   ]
+  },
+  {
+   "id": "ma-f-symboles-geo",
+   "generateur": "ma_tc_symboles_geo",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-symboles-geo",
+   "difficulte": 2,
+   "variantesMin": 40
   }
  ]
 }
