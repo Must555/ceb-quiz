@@ -1498,6 +1498,9 @@ const VERBES_ACTION = () => VERBES_CONJ.filter(([v]) => !['être', 'avoir', 'all
   'mentir', 'décevoir', 'souffrir', 'pleurer', 'grossir', 'maigrir', 'vieillir', 'pâlir', 'frémir', 'guérir', 'rompre', 'interrompre', 'fondre',
   'confondre', 'craindre', 'envahir', 'savoir', 'croire', 'recevoir', 'grandir', 'mordre', 'atterrir'].includes(v));
 const AVANT_DE = ['sortir', 'jouer', 'partir', 'dormir', 'manger', 'regarder la télévision'];
+// Verbes dont le gérondif a du sens après « X est rentré / arrivé / parti / revenu en … ».
+const VERBES_GERONDIF = new Set(['chanter', 'siffler', 'raconter', 'courir', 'marcher', 'traverser', 'écouter', 'pousser', 'chuchoter',
+  'glisser', 'patiner', 'bondir', 'rire', 'conduire', 'boire', 'parcourir', 'lire']);
 const RENTRER = [['est rentré{e}', 'rentré{e}', 'rentrer'], ['est arrivé{e}', 'arrivé{e}', 'arriver'], ['est parti{e}', 'parti{e}', 'partir'], ['est revenu{e}', 'revenu{e}', 'revenir']];
 
 function frTempsPassive(modele, rng) {
@@ -1525,7 +1528,7 @@ function frTempsPassive(modele, rng) {
     const q = qcm(rng, bonne, [passif(it, t, { accord: false }), passif(it, t, { etreT: autreT }), inverse, actif(it, t)]);
     if (!q) return null;
     return { _signature: `transf|${i}|${t}`, ...q, fiche: 'fr-passive-mise-en-evidence',
-      enonce: `Quelle phrase dit la même chose que « ${actif(it, t)} », mais à la voix passive ?`,
+      enonce: `Quelle phrase dit la même chose que « ${actif(it, t)} », mais à la voix passive (au même temps) ?`,
       explication: `« ${bonne} » ${regleP}` };
   }
   if (forme === 'agent') {
@@ -1577,7 +1580,7 @@ function frTempsPassive(modele, rng) {
       explication: `« ${subj} » (verbe ${v}) est au subjonctif présent : il suit « ${qui[1]} que ». « ${qui[1]} » est à l'indicatif et « ${inf} » à l'infinitif.` };
   }
   // participe : présent ou passé dans « X est rentré(e) en …-ant … »
-  const [v, c] = rng.pick(VERBES_ACTION());
+  const [v, c] = rng.pick(VERBES_ACTION().filter(([x]) => VERBES_GERONDIF.has(x)));
   const perso = personnage(rng);
   const [aux, pp, inf] = rng.pick(RENTRER).map((x) => rendreGabarit(x, perso));
   const ppr = participePresent(v);
@@ -1637,7 +1640,8 @@ function frParticipePresent(modele, rng) {
       enonce: `On dit « nous ${nous} ». Écris le participe présent de ce verbe (${v}).`,
       explication: `nous ${nous} → radical « ${nous.replace(/ons$/, '')} » + -ant = ${ppr}.` };
   }
-  // radical / terminaison
+  // radical / terminaison (pas les verbes en -ger : « mange- » ou « mang- » + « -eant » se défendent tous deux)
+  if (/ger$/.test(v)) return null;
   const rad = ppr.slice(0, -3);
   const decoupe = (r) => `radical « ${r}- » + terminaison « -${ppr.slice(r.length)} »`;
   const pool = [ppr.slice(0, -4), ppr.slice(0, -2), ppr.slice(0, -5)].filter((r) => r.length >= 1 && r !== rad).map(decoupe);
@@ -1670,7 +1674,10 @@ const CHAMPS = [
 ];
 // Groupes qu'on ne mélange pas (un mot de l'un pourrait se rattacher à l'autre).
 const PROCHES = new Set(['C|E', 'E|C']);
-const THEMES_PROCHES = [["l'hiver", 'la santé'], ['la cuisine', 'la ferme'], ['la cuisine', 'le jardin'], ['la mer', 'la cuisine'], ['la ferme', 'la santé'], ["l'école", 'la musique']];
+const THEMES_PROCHES = [["l'hiver", 'la santé'], ['la cuisine', 'la ferme'], ['la cuisine', 'le jardin'], ['la mer', 'la cuisine'], ['la ferme', 'la santé'], ["l'école", 'la musique'],
+  // mots à double sens : frisson / trembler (froid ou peur), piste (cirque ou ski), tournoi / gardien, fouet, éclair, glacier, bulletin (météo)
+  ["l'hiver", 'la peur'], ['la montagne', 'le cirque'], ['le château fort', 'le football'], ['la cuisine', 'le cirque'],
+  ['la météo', 'la cuisine'], ['la montagne', 'la cuisine'], ["l'école", 'la météo']];
 const compatibles = (a, b) => a[1] !== b[1] && !PROCHES.has(`${a[1]}|${b[1]}`) && !a[2].some((m) => b[2].includes(m))
   && !THEMES_PROCHES.some(([x, y]) => (x === a[0] && y === b[0]) || (x === b[0] && y === a[0]));
 
@@ -1744,13 +1751,16 @@ const MARQUES = { certain: ['Il est certain que', 'Je suis sûr que', 'Sans aucu
 const CHOIX_MOD = ['certaine', 'possible, mais pas sûre'];
 const elision = (s) => s.replace(/ que (?=[aeiouyéèhAEIOUYÉ])/g, " qu'");
 
+// Échelles dont l'ordre des deux premiers mots se discute (amusant/drôle, apprécier/aimer, joli/beau) :
+// on peut demander le mot le plus fort, mais pas de les ranger tous.
+const ORDRE_DOUTEUX = new Set(['amusant', 'apprécier', 'joli']);
 function frIntensiteModalite(modele, rng) {
   const forme = choixForme(rng, modele, ['ordre', 'fort', 'adverbe', 'modalite', 'modalite', 'laquelle']);
   if (forme === 'ordre' || forme === 'fort') {
     const iE = rng.int(0, ECHELLES.length - 1);
     const e = ECHELLES[iE];
     if (forme === 'ordre') {
-      if (e.length < 3) return null;
+      if (e.length < 3 || ORDRE_DOUTEUX.has(e[0])) return null;
       const elements = rng.shuffle(e);
       if (elements.every((x, k) => x === e[k])) return null;
       return { _signature: `ordre|${iE}|${elements.join(',')}`, type: 'ordre', elements, reponse: e.map((x) => elements.indexOf(x)),
@@ -1808,7 +1818,7 @@ const COMPOSES = [
   ['cerf-volant', "trait d'union", 'cerfs-volants', ['cerf-volants', 'cerfs-volant'], 'na'], ['rouge-gorge', "trait d'union", 'rouges-gorges', ['rouge-gorges', 'rouges-gorge'], 'na'],
   ['oiseau-mouche', "trait d'union", 'oiseaux-mouches', ['oiseau-mouches', 'oiseaux-mouche', 'oiseaus-mouches'], 'nn'], ['bateau-mouche', "trait d'union", 'bateaux-mouches', ['bateau-mouches', 'bateaux-mouche'], 'nn'],
   ['wagon-restaurant', "trait d'union", 'wagons-restaurants', ['wagon-restaurants', 'wagons-restaurant'], 'nn'], ['timbre-poste', "trait d'union", 'timbres-poste', ['timbres-postes', 'timbre-postes'], 'nc'],
-  ['sous-marin', "trait d'union", 'sous-marins', ['sous-marin', 'sous-marines'], 'inv'], ['sous-sol', "trait d'union", 'sous-sols', ['sous-sol', 'sous-solx'], 'inv'],
+  ['sous-marin', "trait d'union", 'sous-marins', ['sous-marin', 'sous-marines'], 'inv'], ['sous-sol', "trait d'union", 'sous-sols', ['sous-sol', 'sous-soles'], 'inv'],
   ['avant-bras', "trait d'union", 'avant-bras', ['avants-bras', 'avant-bra'], 'inv'], ['demi-heure', "trait d'union", 'demi-heures', ['demies-heures', 'demis-heures'], 'demi'],
   ['belle-sœur', "trait d'union", 'belles-sœurs', ['belle-sœurs', 'belles-sœur'], 'na'],
   ['pomme de terre', 'avec un connecteur', 'pommes de terre', ['pommes de terres', 'pomme de terres'], 'prep'], ['machine à laver', 'avec un connecteur', 'machines à laver', ['machines à lavers', 'machine à laver'], 'prep'],
@@ -1883,7 +1893,7 @@ const FONDS = [['lire', 'un roman', 'b'], ['dormir', 'sous la tente', 'o'], ['jo
   ['dessiner', 'un dragon', 'i'], ['ranger', 'sa chambre', 'i'], ['écouter', 'la radio', 'i'], ['chanter', 'une chanson', 'b'], ['nager', 'dans le lac', 'o'],
   ['tricoter', 'une écharpe', 'i'], ['peindre', 'un paysage', 'b'], ['attendre', 'le bus', 'o'], ['écrire', 'une lettre', 'i'], ['préparer', 'le repas', 'i'], ['réfléchir', 'à son problème', 'b']];
 const EVENEMENTS = [['le téléphone', 'sonner', '', 'b'], ['un éclair', 'illuminer', 'le ciel', 'b'], ['une voiture', 'klaxonner', 'dans la rue', 'i'], ["quelqu'un", 'frapper', 'à la porte', 'i'],
-  ['un oiseau', 'entrer', 'par la fenêtre', 'i'], ['le vent', 'claquer', 'la porte', 'i'], ['un vase', 'tomber', "de l'étagère", 'i'], ['un renard', 'apparaître', 'au bout du chemin', 'o'],
+  ['un oiseau', 'entrer', 'par la fenêtre', 'i'], ['la porte', 'claquer', '', 'i'], ['un vase', 'tomber', "de l'étagère", 'i'], ['un renard', 'apparaître', 'au bout du chemin', 'o'],
   ['un orage', 'éclater', '', 'b'], ['une souris', 'traverser', 'la cuisine', 'i'], ['un inconnu', 'venir', 'vers lui', 'b'],
   ['la lumière', 'trembler', '', 'i'], ['un chien', 'grogner', 'derrière la haie', 'o'], ['un hibou', 'hululer', 'tout près', 'o']];
 const DECORS = [['faire', 'Il', 'nuit'], ['être', 'Il', 'tard'], ['faire', 'Il', 'froid'], ['souffler', 'Le vent', 'fort'], ['briller', 'La lune', 'dans le ciel']];

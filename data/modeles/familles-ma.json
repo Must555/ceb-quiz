@@ -141,6 +141,7 @@
   },
   {
    "id": "ma-f-multiples-diviseurs",
+   "poids": 0.4,
    "generateur": "ma_multiples_diviseurs",
    "domaine": "ma.arithmetique",
    "fiche": "ma-multiples-diviseurs",
@@ -148,6 +149,7 @@
   },
   {
    "id": "ma-f-ppcm-pgcd",
+   "poids": 0.4,
    "generateur": "ma_ppcm_pgcd",
    "domaine": "ma.arithmetique",
    "fiche": "ma-multiples-diviseurs",
@@ -155,6 +157,7 @@
   },
   {
    "id": "ma-f-divisibilite",
+   "poids": 0.4,
    "generateur": "ma_divisibilite",
    "domaine": "ma.arithmetique",
    "fiche": "ma-divisibilite",
@@ -195,6 +198,7 @@
   },
   {
    "id": "ma-f-cercle",
+   "poids": 0.4,
    "generateur": "ma_cercle",
    "domaine": "ma.geometrie",
    "fiche": "ma-cercle",
@@ -256,6 +260,7 @@
   },
   {
    "id": "ma-f-temperatures",
+   "poids": 0.4,
    "generateur": "ma_temperatures",
    "domaine": "ma.grandeurs",
    "fiche": "ma-temperatures",
@@ -277,6 +282,7 @@
   },
   {
    "id": "ma-f-angles",
+   "poids": 0.4,
    "generateur": "ma_angles",
    "domaine": "ma.geometrie",
    "fiche": "ma-angles",
