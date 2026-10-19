@@ -94,6 +94,14 @@
      "date": "27 av. J.-C."
     },
     {
+     "nom": "le début de l'ère chrétienne",
+     "annee": 1,
+     "periode": "Antiquité",
+     "date": "an 1",
+     "repere": true,
+     "info": "L'an 1 est le début de l'ère chrétienne, du Ier siècle et du Ier millénaire après J.-C. Il n'y a pas d'an 0 : l'an 1 av. J.-C. est directement suivi de l'an 1 apr. J.-C."
+    },
+    {
      "nom": "l'éruption du Vésuve qui ensevelit Pompéi",
      "annee": 79,
      "periode": "Antiquité",
@@ -556,11 +564,12 @@
      "date": "1956"
     },
     {
-     "nom": "la signature du traité de Rome, qui crée la Communauté économique européenne",
+     "nom": "la signature du traité de Rome, qui fonde la Communauté économique européenne (CEE)",
      "annee": 1957,
      "periode": "Époque contemporaine",
      "belgique": true,
-     "date": "1957"
+     "date": "1957",
+     "info": "Le traité est signé à Rome le 25 mars 1957 par six pays, dont la Belgique ; la CEE commence à fonctionner le 1er janvier 1958."
     },
     {
      "nom": "le lancement de Spoutnik, le premier satellite artificiel",
@@ -4217,7 +4226,7 @@
   },
   {
    "id": "hg-milieux",
-   "description": "Indices des grands milieux de vie du monde. Indices des grands types de climats.",
+   "description": "Indices des grands milieux de vie du monde. Indices des grands types de climats du référentiel (aride, tropical, polaire, tempéré océanique, méditerranéen, continental).",
    "cle": "nom",
    "phrases": {
     "milieu": {
@@ -4234,9 +4243,9 @@
      "le climat tempéré océanique": "au climat tempéré océanique",
      "le climat méditerranéen": "au climat méditerranéen",
      "le climat continental": "au climat continental",
-     "le climat équatorial": "au climat équatorial",
+     "le climat tropical": "au climat tropical",
      "le climat polaire": "au climat polaire",
-     "le climat désertique": "au climat désertique"
+     "le climat aride (désertique)": "au climat aride (désertique)"
     }
    },
    "items": [
@@ -4305,8 +4314,8 @@
      "climat": "le climat continental"
     },
     {
-     "nom": "Il fait chaud et humide toute l'année, avec des pluies presque tous les jours, près de l'équateur.",
-     "climat": "le climat équatorial"
+     "nom": "Il fait chaud toute l'année (plus de 18 °C chaque mois) ; il y a une saison des pluies et une saison sèche.",
+     "climat": "le climat tropical"
     },
     {
      "nom": "Il fait froid toute l'année, même en été ; les températures restent le plus souvent sous 0 °C.",
@@ -4314,7 +4323,19 @@
     },
     {
      "nom": "Il fait très chaud et il ne pleut presque jamais.",
-     "climat": "le climat désertique"
+     "climat": "le climat aride (désertique)"
+    },
+    {
+     "nom": "Le climat de la savane : chaud toute l'année, avec une saison sèche et une saison des pluies très arrosée.",
+     "climat": "le climat tropical"
+    },
+    {
+     "nom": "Le climat du Sahara et du centre de l'Australie : il ne tombe presque pas de pluie de toute l'année.",
+     "climat": "le climat aride (désertique)"
+    },
+    {
+     "nom": "Le climat de l'Antarctique et du nord du Groenland : même le mois le plus chaud reste sous 10 °C.",
+     "climat": "le climat polaire"
     }
    ]
   },
@@ -5047,7 +5068,7 @@
       "L'océan Atlantique",
       "L'océan Indien",
       "L'océan Arctique",
-      "L'océan Austral"
+      "L'océan Austral (ou océan Antarctique)"
      ],
      "expl": "Le Pacifique couvre à lui seul environ un tiers de la surface de la Terre."
     },
@@ -5057,7 +5078,7 @@
      "ko": [
       "L'océan Atlantique",
       "L'océan Indien",
-      "L'océan Austral"
+      "L'océan Austral (ou océan Antarctique)"
      ],
      "expl": "Le Pacifique est entre l'Amérique (à l'est) et l'Asie et l'Océanie (à l'ouest)."
     },
@@ -5085,7 +5106,7 @@
      "q": "Quel océan entoure le pôle Nord ?",
      "ok": "L'océan Arctique",
      "ko": [
-      "L'océan Austral",
+      "L'océan Austral (ou océan Antarctique)",
       "L'océan Pacifique",
       "L'océan Indien"
      ],
@@ -5093,13 +5114,13 @@
     },
     {
      "q": "Quel océan entoure l'Antarctique ?",
-     "ok": "L'océan Austral",
+     "ok": "L'océan Austral (ou océan Antarctique)",
      "ko": [
       "L'océan Arctique",
       "L'océan Indien",
       "L'océan Atlantique"
      ],
-     "expl": "L'océan Austral entoure le continent Antarctique, autour du pôle Sud."
+     "expl": "L'océan Austral, que l'on appelle aussi océan Antarctique, entoure le continent Antarctique, autour du pôle Sud."
     },
     {
      "q": "Combien d'océans y a-t-il sur la Terre ?",
@@ -5109,7 +5130,7 @@
       "4",
       "7"
      ],
-     "expl": "Pacifique, Atlantique, Indien, Arctique et Austral."
+     "expl": "Pacifique, Atlantique, Indien, Arctique et Austral (aussi appelé océan Antarctique)."
     },
     {
      "q": "Quel est le plus grand continent ?",
@@ -5173,6 +5194,39 @@
       "Un instrument qui indique le nord"
      ],
      "expl": "Le globe respecte la forme de la Terre ; le planisphère la représente à plat."
+    },
+    {
+     "q": "Quelle chaîne de montagnes se trouve entre la mer Noire et la mer Caspienne ?",
+     "ok": "Le Caucase",
+     "ko": [
+      "Les Alpes",
+      "Les Pyrénées",
+      "Les monts Oural",
+      "Les Carpates"
+     ],
+     "expl": "Le Caucase s'étend entre la mer Noire et la mer Caspienne, au sud-est de l'Europe. Avec les Alpes et les Pyrénées, c'est un des principaux reliefs d'Europe."
+    },
+    {
+     "q": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+     "ok": "Les Pyrénées",
+     "ko": [
+      "Les Alpes",
+      "Le Caucase",
+      "Les monts Oural",
+      "Les Carpates"
+     ],
+     "expl": "Les Pyrénées forment la frontière entre la France et l'Espagne."
+    },
+    {
+     "q": "Dans quelle chaîne de montagnes se trouve le mont Blanc ?",
+     "ok": "Les Alpes",
+     "ko": [
+      "Les Pyrénées",
+      "Le Caucase",
+      "Les monts Oural",
+      "Les Carpates"
+     ],
+     "expl": "Le mont Blanc (environ 4 800 m), à la frontière entre la France et l'Italie, est le plus haut sommet des Alpes."
     }
    ]
   },

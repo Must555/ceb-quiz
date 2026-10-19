@@ -792,8 +792,8 @@
       "pays fondateur"
      ],
      "difficulte": 3,
-     "enonce": "Lequel de ces pays fait partie des six pays fondateurs de la Communauté européenne (1957) ?",
-     "explication": "Les six pays fondateurs sont la Belgique, la France, l'Allemagne, l'Italie, les Pays-Bas et le Luxembourg. Parmi les choix, c'est donc {le}."
+     "enonce": "Lequel de ces pays fait partie des six pays fondateurs de la Communauté économique européenne (CEE), qui ont signé le traité de Rome en 1957 ?",
+     "explication": "Les six pays fondateurs sont la Belgique, la France, l'Allemagne, l'Italie, les Pays-Bas et le Luxembourg (traité de Rome signé en 1957, CEE en place le 1er janvier 1958). Parmi les choix, c'est donc {le}."
     },
     {
      "sorte": "lequel",
