@@ -81,6 +81,120 @@
    "fiche": "fr-pp-sans-aux-cd",
    "difficulte": 3,
    "variantesMin": 40
+  },
+  {
+   "id": "fr-f-classes-fines",
+   "generateur": "tc_fr_classes_fines",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-determinants-pronoms",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-narrateur",
+   "generateur": "tc_fr_narrateur",
+   "domaine": "fr.lire",
+   "fiche": "fr-narrateur",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-reel-imaginaire",
+   "generateur": "tc_fr_reel_imaginaire",
+   "domaine": "fr.lire",
+   "fiche": "fr-reel-imaginaire",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-ordre-recit",
+   "generateur": "tc_fr_ordre_recit",
+   "domaine": "fr.lire",
+   "fiche": "fr-organisateurs",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-consignes",
+   "generateur": "tc_fr_consignes",
+   "domaine": "fr.lire",
+   "fiche": "fr-consignes",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-temps-passive",
+   "generateur": "tc_fr_temps_passive",
+   "domaine": "fr.grammaire",
+   "fiche": "fr-passive-mise-en-evidence",
+   "difficulte": 3,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "fr-subjonctif-participe"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-participe-present",
+   "generateur": "tc_fr_participe_present",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-participe-present",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-champ-lexical",
+   "generateur": "tc_fr_champ_lexical",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-champ-lexical",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-intensite-modalite",
+   "generateur": "tc_fr_intensite_modalite",
+   "domaine": "fr.vocabulaire",
+   "fiche": "fr-intensite-modalite",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-mots-composes",
+   "generateur": "tc_fr_mots_composes",
+   "domaine": "fr.orthographe",
+   "fiche": "fr-mots-composes",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "fr-prefixes-suffixes"
+    }
+   ]
+  },
+  {
+   "id": "fr-f-coherence-temps",
+   "generateur": "tc_fr_coherence_temps",
+   "domaine": "fr.conjugaison",
+   "fiche": "fr-coherence-temps",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-paratexte",
+   "generateur": "tc_fr_paratexte",
+   "domaine": "fr.lire",
+   "fiche": "fr-paratexte",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "fr-f-sources",
+   "generateur": "tc_fr_sources",
+   "domaine": "fr.lire",
+   "fiche": "fr-sources",
+   "difficulte": 2,
+   "variantesMin": 40
   }
  ]
 }

@@ -3,7 +3,8 @@
 //
 // Familles : aires des quadrilatères, logique déductive, développements de solides,
 // lecture de représentations (ensembles, arbres, tableaux, diagrammes), propriétés des figures,
-// mouvements, périmètre constant, vocabulaire des opérations, égalités.
+// mouvements, périmètre constant, vocabulaire des opérations, égalités ; puis (étape 2) opérations sur les
+// fractions, achats et promotions, graphes fléchés, solides et assemblages de cubes, symboles géométriques.
 // Les figures sont des SVG autonomes (traits #1c2333 sur fond blanc, quadrillage gris clair).
 
 import { formatNombre } from '../format.js';
@@ -1528,6 +1529,1006 @@ const egalites = famille([
 ]);
 
 
+// ===========================================================================
+// 10. Opérations sur les fractions : × un entier, + et − (un dénominateur multiple de l'autre)
+// ===========================================================================
+const pgcdF = (a, b) => (b === 0 ? Math.abs(a) : pgcdF(b, a % b));
+const simplifier = (n, d) => { const g = pgcdF(n, d); return [n / g, d / g]; };
+const frac = (n, d) => (d === 1 ? String(n) : `${n}/${d}`);
+const fracSimple = (n, d) => frac(...simplifier(n, d));
+const memeValeur = ([a, b], [c, d]) => a * d === b * c;
+function texteSimplification(n, d) {
+  const [a, b] = simplifier(n, d);
+  if (a === n) return '';
+  return ` On simplifie : on divise le numérateur et le dénominateur par ${n / a}. ${frac(n, d)} = ${frac(a, b)}.`;
+}
+// QCM de fractions : aucun distracteur ne peut valoir la bonne réponse (2/4 et 1/2, par exemple).
+function choixFractions(rng, bonne, cands) {
+  const vus = new Set(); const fausses = [];
+  for (const [n, d] of cands) {
+    if (!Number.isInteger(n) || !Number.isInteger(d) || n <= 0 || d <= 0 || memeValeur([n, d], bonne)) continue;
+    const t = frac(n, d);
+    if (!vus.has(t)) { vus.add(t); fausses.push(t); }
+  }
+  return qcm(rng, fracSimple(...bonne), fausses, 4, 3);
+}
+// Deux fractions dont la seconde a un dénominateur multiple de la première.
+function deuxFractions(rng, { somme = 'libre' } = {}) {
+  const b = rng.int(2, 8); const m = rng.int(2, b <= 4 ? 5 : 3); const d = b * m;
+  const a = rng.int(1, b - 1); const c = rng.int(1, d - 1);
+  if (pgcdF(a, b) !== 1 || pgcdF(c, d) !== 1) return null;
+  if (somme === 'moinsQueUn' && a * m + c >= d) return null;
+  return { a, b, c, d, m, am: a * m };
+}
+const etapeEquivalente = ({ a, b, m, am, d }) => `${d} est un multiple de ${b} (${b} × ${m} = ${d}) : on écrit ${frac(a, b)} avec le dénominateur ${d}, en multipliant le numérateur et le dénominateur par ${m}. ${frac(a, b)} = ${frac(am, d)}.`;
+
+const fractionsOperations = famille([
+  // Multiplier une fraction par un nombre entier.
+  forme((rng) => {
+    const b = rng.int(2, 12); const a = rng.int(1, b + 3); const k = rng.int(2, 9);
+    if (a % b === 0 || pgcdF(a, b) !== 1) return null;
+    const n = k * a;
+    const c = choixFractions(rng, [n, b], [[n, k * b], [a + k, b], [a, k * b], [n, b + k], [a + k, b + k], [n + 1, b], [n - 1, b]]);
+    if (!c) return null;
+    const calc = rng.next() < 0.7 ? `${k} × ${frac(a, b)}` : `${frac(a, b)} × ${k}`;
+    return {
+      ...c, difficulte: 2,
+      enonce: `Calcule et simplifie si possible : ${calc}`,
+      explication: `On multiplie le numérateur par ${k} et on garde le dénominateur : ${calc} = ${frac(n, b)} (c'est ${frac(a, b)} répété ${k} fois).${texteSimplification(n, b)}`,
+    };
+  }, 3),
+  // Additionner ou soustraire deux fractions (un dénominateur est un multiple de l'autre).
+  forme((rng) => {
+    const f = deuxFractions(rng); if (!f) return null;
+    const { a, b, c, d, am } = f;
+    const plus = rng.next() < 0.55;
+    if (!plus && am === c) return null;
+    const n = plus ? am + c : Math.abs(am - c);
+    const petitDabord = plus ? rng.next() < 0.5 : am > c;
+    const calc = petitDabord ? `${frac(a, b)} ${plus ? '+' : '−'} ${frac(c, d)}` : `${frac(c, d)} ${plus ? '+' : '−'} ${frac(a, b)}`;
+    const calc2 = petitDabord ? `${frac(am, d)} ${plus ? '+' : '−'} ${frac(c, d)}` : `${frac(c, d)} ${plus ? '+' : '−'} ${frac(am, d)}`;
+    const cands = plus ? [[a + c, b + d], [a + c, d], [am + c, b + d], [a + c, b], [n + 1, d], [n, 2 * d]]
+      : [[Math.abs(a - c), d - b], [Math.abs(a - c), d], [n + 1, d], [n, b], [Math.abs(a - c), b]];
+    const q = choixFractions(rng, [n, d], cands);
+    if (!q) return null;
+    return {
+      ...q, difficulte: 3,
+      enonce: `Calcule et simplifie si possible : ${calc}`,
+      explication: `Les dénominateurs sont différents : on ne peut pas ${plus ? 'additionner' : 'soustraire'} tout de suite. ${etapeEquivalente(f)} Puis ${calc2} = ${frac(n, d)}.${texteSimplification(n, d)} On ${plus ? 'n\'additionne' : 'ne soustrait'} jamais les dénominateurs.`,
+    };
+  }, 3),
+  // Une grandeur fractionnée multipliée par un nombre entier (en situation).
+  forme((rng) => {
+    const P = rng.pick(PRENOMS); const il = P.g === 'f' ? 'elle' : 'il';
+    const k = rng.int(2, 12);
+    const cas = rng.pick([
+      { bs: [2, 4, 5, 8, 10], f: 1, u: 'l', e: (x) => `${P.n} boit ${x} l de lait chaque jour. Combien de litres boit-${il} en ${k} jours ?` },
+      { bs: [2, 3, 4, 5, 6, 10, 12], f: 60, u: 'min', g: 'h', e: (x) => `Une séance d'entraînement dure ${x} h. Combien de minutes durent ${k} séances ?` },
+      { bs: [2, 4, 5, 10, 20, 25], f: 100, u: 'cm', g: 'm', e: (x) => `${P.n} coupe ${k} morceaux de ficelle de ${x} m chacun. Quelle longueur de ficelle utilise-t-${il}, en cm ?` },
+      { bs: [2, 4, 5, 8, 10, 20], f: 1000, u: 'g', g: 'kg', e: (x) => `Une recette demande ${x} kg de farine pour un gâteau. Combien de grammes de farine faut-il pour ${k} gâteaux ?` },
+      { bs: [2, 4, 5], f: 1, u: 'km', e: (x) => `${P.n} court ${x} km chaque matin. Combien de kilomètres court-${il} en ${k} matins ?` },
+      { bs: [2, 3, 4, 6, 12], f: 60, u: 'min', g: 'h', e: (x) => `${P.n} lit ${x} h chaque soir. Combien de minutes lit-${il} en ${k} soirs ?` },
+    ]);
+    const b = rng.pick(cas.bs); const a = rng.int(1, b - 1);
+    if (pgcdF(a, b) !== 1) return null;
+    const v = r(k * a * cas.f / b);
+    if (cas.f > 1 && !Number.isInteger(v)) return null;
+    const [sn, sd] = simplifier(k * a, b);
+    return {
+      type: 'numerique', unite: cas.u, difficulte: 3,
+      enonce: cas.e(frac(a, b)),
+      reponse: v,
+      explication: `${k} × ${frac(a, b)} = ${frac(k * a, b)}${sd !== b ? ` = ${frac(sn, sd)}` : ''} ${cas.g ?? cas.u}. ${cas.f === 1 ? (sd === 1 ? '' : `${frac(sn, sd)} ${cas.u} = ${sn} : ${sd} = ${fmt(v)} ${cas.u}. `) : `1 ${cas.g} = ${fmt(cas.f)} ${cas.u}, donc ${frac(sn, sd)} ${cas.g} = ${sd === 1 ? `${sn} × ${fmt(cas.f)}` : `${sn} × ${fmt(cas.f)} : ${sd}`} = ${fmt(v)} ${cas.u}. `}`.trim(),
+    };
+  }, 2),
+  // Additionner des grandeurs fractionnées (en situation) : ce qui est pris, ce qui reste.
+  forme((rng) => {
+    const f = deuxFractions(rng, { somme: 'moinsQueUn' }); if (!f) return null;
+    const { a, b, c, d, am } = f;
+    const [P1, P2] = rng.shuffle(PRENOMS);
+    const il = P1.g === 'f' ? 'elle' : 'il';
+    const ctx = rng.pick([
+      { t: `Dans le potager de ${P1.n}, ${frac(a, b)} du terrain est planté de légumes et ${frac(c, d)} de fleurs.`, pris: 'Quelle fraction du terrain est plantée ?', reste: 'Quelle fraction du terrain n\'est pas plantée ?' },
+      { t: `${P1.n} mange ${frac(a, b)} d'une pizza et ${P2.n} en mange ${frac(c, d)}.`, pris: 'Quelle fraction de la pizza ont-ils mangée à deux ?', reste: 'Quelle fraction de la pizza reste-t-il ?' },
+      { t: `${P1.n} dépense ${frac(a, b)} de ses économies pour un livre et ${frac(c, d)} pour un jeu.`, pris: `Quelle fraction de ses économies a-t-${il} dépensée ?`, reste: `Quelle fraction de ses économies lui reste-t-il ?` },
+      { t: `Dans une école, ${frac(a, b)} des élèves viennent à pied et ${frac(c, d)} à vélo. Les autres viennent en voiture.`, pris: 'Quelle fraction des élèves vient à pied ou à vélo ?', reste: 'Quelle fraction des élèves vient en voiture ?' },
+      { t: `Le mercredi après-midi, ${P1.n} passe ${frac(a, b)} de son temps à lire et ${frac(c, d)} à jouer dehors.`, pris: 'Quelle fraction de son après-midi cela fait-il en tout ?', reste: 'Quelle fraction de son après-midi lui reste-t-il pour autre chose ?' },
+      { t: `On remplit un aquarium : ${frac(a, b)} le matin et ${frac(c, d)} l'après-midi.`, pris: 'Quelle fraction de l\'aquarium est remplie ?', reste: 'Quelle fraction de l\'aquarium reste-t-il à remplir ?' },
+    ]);
+    const reste = rng.next() < 0.45;
+    const n = reste ? d - am - c : am + c;
+    const q = choixFractions(rng, [n, d], [[a + c, b + d], [a + c, d], [reste ? am + c : d - am - c, d], [n + 1, d], [reste ? b + d - a - c : a + c + 1, b + d]]);
+    if (!q) return null;
+    return {
+      ...q, difficulte: 3,
+      enonce: `${ctx.t} ${reste ? ctx.reste : ctx.pris}`,
+      explication: `${etapeEquivalente(f)} ${frac(am, d)} + ${frac(c, d)} = ${frac(am + c, d)}.${reste ? ` Le tout vaut ${frac(d, d)} : il reste ${frac(d, d)} − ${frac(am + c, d)} = ${frac(n, d)}.` : ''}${texteSimplification(n, d)}`,
+    };
+  }, 2),
+  // Compléter pour obtenir 1 (ou une autre fraction).
+  forme((rng) => {
+    const f = deuxFractions(rng, { somme: 'moinsQueUn' }); if (!f) return null;
+    const { a, b, d, am } = f;
+    const viser1 = rng.next() < 0.6;
+    const cible = viser1 ? d : rng.int(am + 1, d + Math.floor(d / 2));
+    if (cible - am < 1 || (!viser1 && pgcdF(cible, d) !== 1)) return null;
+    return {
+      type: 'numerique', difficulte: 3,
+      enonce: `Complète : ${frac(a, b)} + …/${d} = ${viser1 ? '1' : frac(cible, d)}`,
+      reponse: cible - am,
+      explication: `${etapeEquivalente(f)} ${viser1 ? `1 = ${frac(d, d)}. ` : ''}Il manque ${cible} − ${am} = ${cible - am} : ${frac(am, d)} + ${frac(cible - am, d)} = ${frac(cible, d)}${viser1 ? ' = 1' : ''}.`,
+    };
+  }),
+  // Vrai ou faux : erreurs fréquentes.
+  forme((rng) => {
+    const f = deuxFractions(rng); if (!f) return null;
+    const { a, b, c, d, am } = f;
+    if (rng.next() < 0.5) {
+      const juste = rng.next() < 0.5;
+      const res = juste ? (rng.next() < 0.5 ? frac(am + c, d) : fracSimple(am + c, d)) : frac(a + c, b + d);
+      if (!juste && memeValeur([a + c, b + d], [am + c, d])) return null;
+      return {
+        type: 'vrai_faux', reponse: juste, difficulte: 3,
+        enonce: `Vrai ou faux ? ${frac(a, b)} + ${frac(c, d)} = ${res}`,
+        explication: `${etapeEquivalente(f)} ${frac(am, d)} + ${frac(c, d)} = ${frac(am + c, d)}.${texteSimplification(am + c, d)} ${juste ? 'C\'est donc vrai.' : 'C\'est donc faux : on n\'additionne jamais les dénominateurs.'}`,
+      };
+    }
+    const k = rng.int(2, 6); const juste = rng.next() < 0.5;
+    const res = juste ? frac(k * a, b) : frac(k * a, k * b);
+    return {
+      type: 'vrai_faux', reponse: juste, difficulte: 2,
+      enonce: `Vrai ou faux ? ${k} × ${frac(a, b)} = ${res}`,
+      explication: `On multiplie seulement le numérateur : ${k} × ${frac(a, b)} = ${frac(k * a, b)}.${juste ? ' C\'est donc vrai.' : ` C'est donc faux : ${frac(k * a, k * b)} = ${frac(a, b)}, la fraction n'a pas changé de valeur.`}`,
+    };
+  }),
+]);
+
+// ===========================================================================
+// 11. Achats : promotions, remises, bénéfice et perte
+// ===========================================================================
+const eur = (x) => { const c = Math.round(x * 100); return `${formatNombre(Math.floor(c / 100))}${c % 100 ? `,${String(c % 100).padStart(2, '0')}` : ''} €`; };
+// [singulier, pluriel, article, prix min, prix max] (en euros)
+const ARTICLES_PROMO = [
+  ['paquet de biscuits', 'paquets de biscuits', 'un', 1, 4], ['bouteille de jus', 'bouteilles de jus', 'une', 1, 4],
+  ['tube de dentifrice', 'tubes de dentifrice', 'un', 1.5, 4], ['boîte de céréales', 'boîtes de céréales', 'une', 2, 5],
+  ['pot de confiture', 'pots de confiture', 'un', 1.5, 5], ['T-shirt', 'T-shirts', 'un', 6, 20], ['paire de chaussettes', 'paires de chaussettes', 'une', 2, 9],
+  ['livre de poche', 'livres de poche', 'un', 5, 12], ['cahier', 'cahiers', 'un', 1, 4], ['tablette de chocolat', 'tablettes de chocolat', 'une', 1, 4],
+  ['bande dessinée', 'bandes dessinées', 'une', 8, 16], ['jeu de cartes', 'jeux de cartes', 'un', 3, 12], ['ballon', 'ballons', 'un', 6, 25],
+  ['sac de croquettes', 'sacs de croquettes', 'un', 4, 15], ['pot de peinture', 'pots de peinture', 'un', 8, 30], ['plante verte', 'plantes vertes', 'une', 4, 18],
+];
+const prixCents = (rng, min, max, pas) => rng.int(Math.ceil(min * 100 / pas), Math.floor(max * 100 / pas)) * pas;
+const LOTS = [
+  { txt: '1 acheté, 1 gratuit', lot: 2, paye: 1 }, { txt: '3 pour le prix de 2', lot: 3, paye: 2 },
+  { txt: '4 pour le prix de 3', lot: 4, paye: 3 }, { txt: '2 achetés, le 3e offert', lot: 3, paye: 2 },
+];
+const MAGASINS = ['de vêtements', 'de chaussures', 'de jouets', 'de sport', 'de jardinage', 'de meubles', 'de jeux vidéo', 'de bricolage'];
+const MARCHANDS = [
+  ['Un libraire', 'livres', 'livre', 'Il'], ['Un fleuriste', 'bouquets', 'bouquet', 'Il'], ['Une boulangère', 'gâteaux', 'gâteau', 'Elle'], ['Un marchand de glaces', 'cornets', 'cornet', 'Il'],
+  ['Une commerçante', 'sacs', 'sac', 'Elle'], ['Un vendeur de fruits', 'cageots de pommes', 'cageot', 'Il'], ['Une fermière', 'pots de miel', 'pot', 'Elle'], ['Une marchande de jouets', 'peluches', 'peluche', 'Elle'],
+];
+
+const achatsPromos = famille([
+  // « Le deuxième à moitié prix »
+  forme((rng) => {
+    const [sg, pl, art, mn, mx] = rng.pick(ARTICLES_PROMO);
+    const p = prixCents(rng, mn, mx, 10); const n = rng.int(2, 7);
+    const paires = Math.floor(n / 2); const seul = n % 2;
+    const tot = paires * (p + p / 2) + seul * p;
+    return {
+      type: 'numerique', unite: '€', difficulte: 3,
+      enonce: `Promotion : « le deuxième à moitié prix ». ${majuscule(art)} ${sg} coûte ${eur(p / 100)}. Combien paies-tu pour ${n} ${pl} ?${n > 2 ? ' (La promotion compte pour chaque paire d\'articles.)' : ''}`,
+      reponse: tot / 100,
+      explication: `Une paire coûte ${eur(p / 100)} + ${eur(p / 200)} (la moitié) = ${eur(1.5 * p / 100)}. ${n} articles = ${paires} ${paires > 1 ? 'paires' : 'paire'}${seul ? ' et 1 article au prix normal' : ''}. Total : ${paires} × ${eur(1.5 * p / 100)}${seul ? ` + ${eur(p / 100)}` : ''} = ${eur(tot / 100)}.`,
+    };
+  }, 2),
+  // Lots : « 1 acheté, 1 gratuit », « 3 pour le prix de 2 »…
+  forme((rng) => {
+    const [, pl, , mn, mx] = rng.pick(ARTICLES_PROMO);
+    const L = rng.pick(LOTS);
+    const p = prixCents(rng, mn, mx, 5); const n = rng.int(L.lot, 3 * L.lot + L.lot - 1);
+    const lots = Math.floor(n / L.lot); const reste = n % L.lot;
+    const tot = (lots * L.paye + reste) * p;
+    return {
+      type: 'numerique', unite: '€', difficulte: 3,
+      enonce: `Promotion sur les ${pl} : « ${L.txt} ». Un article coûte ${eur(p / 100)}. Combien paies-tu pour ${n} ${pl} ?${n > L.lot ? ' (La promotion compte pour chaque lot complet.)' : ''}`,
+      reponse: tot / 100,
+      explication: `Un lot, c'est ${L.lot} articles dont tu paies ${L.paye}. ${n} articles = ${lots} ${lots > 1 ? 'lots' : 'lot'}${reste ? ` et ${reste} ${reste > 1 ? 'articles' : 'article'} sans promotion` : ''}. Tu paies ${lots} × ${L.paye}${reste ? ` + ${reste}` : ''} = ${lots * L.paye + reste} ${lots * L.paye + reste > 1 ? 'articles' : 'article'} : ${lots * L.paye + reste} × ${eur(p / 100)} = ${eur(tot / 100)}.`,
+    };
+  }, 2),
+  // Remise en pourcentage.
+  forme((rng) => {
+    const [sg, , art, mn, mx] = rng.pick(ARTICLES_PROMO);
+    const pct = rng.pick([10, 15, 20, 25, 30, 40, 50, 60, 70]);
+    const p = prixCents(rng, Math.max(mn, 2), mx * 1.5, rng.pick([100, 50, 20, 10]));
+    if ((p * pct) % 100) return null;
+    const remise = p * pct / 100;
+    const demandeRemise = rng.next() < 0.3;
+    return {
+      type: 'numerique', unite: '€', difficulte: 2,
+      enonce: `${majuscule(art)} ${sg} coûte ${eur(p / 100)}. Pendant les soldes, il y a ${pct} % de remise. ${demandeRemise ? 'De combien d\'euros le prix diminue-t-il ?' : 'Quel est le nouveau prix ?'}`,
+      reponse: (demandeRemise ? remise : p - remise) / 100,
+      explication: `${pct} % de ${eur(p / 100)} = ${eur(p / 100)} × ${pct} : 100 = ${eur(remise / 100)}.${demandeRemise ? '' : ` Nouveau prix : ${eur(p / 100)} − ${eur(remise / 100)} = ${eur((p - remise) / 100)}.`}`,
+    };
+  }, 2),
+  // Comprendre les annonces : « jusqu'à … % », « à partir de … ».
+  forme((rng) => {
+    if (rng.next() < 0.55) {
+      const pct = rng.pick([30, 40, 50, 60, 70]); const mag = rng.pick(MAGASINS);
+      const bonne = `Aucun article n'a une remise de plus de ${pct} %.`;
+      const c = qcm(rng, bonne, [`Tous les articles ont une remise de ${pct} %.`, `Tous les articles ont une remise d'au moins ${pct} %.`, `Certains articles ont une remise de plus de ${pct} %.`]);
+      return {
+        ...c, difficulte: 2,
+        enonce: `Un magasin ${mag} annonce : « Jusqu'à ${pct} % de remise ! » Quelle phrase est forcément vraie ?`,
+        explication: `« Jusqu'à ${pct} % » veut dire que ${pct} % est la remise la plus grande. D'autres articles peuvent avoir une remise plus petite, mais aucun n'a plus de ${pct} %.`,
+      };
+    }
+    // [singulier, pluriel, prix minimum, prix maximum, pas] : des prix « à partir de » réalistes.
+    const [obj, objs, pmin, pmax, pas] = rng.pick([['vélo', 'vélos', 90, 400, 10], ['séjour', 'séjours', 150, 900, 10], ['ordinateur', 'ordinateurs', 250, 900, 10], ['canapé', 'canapés', 200, 900, 10],
+      ['abonnement', 'abonnements', 5, 30, 1], ['menu', 'menus', 8, 25, 1], ['manteau', 'manteaux', 25, 120, 5], ['casque', 'casques', 15, 60, 5]]);
+    const prix = rng.int(pmin / pas, pmax / pas) * pas;
+    const le = /^[aeéiou]/.test(obj) ? 'L\'' : 'Le ';
+    const c = qcm(rng, `${le}${obj} le moins cher coûte ${prix} €.`, [`Tous les ${objs} coûtent ${prix} €.`, `${le}${obj} le plus cher coûte ${prix} €.`, `Aucun ${obj} ne coûte plus de ${prix} €.`]);
+    return {
+      ...c, difficulte: 2,
+      enonce: `Une publicité annonce : « ${majuscule(objs)} à partir de ${prix} € ». Que peux-tu en déduire ?`,
+      explication: `« À partir de ${prix} € » veut dire que le prix commence à ${prix} € : c'est le prix le plus bas. Les autres ${objs} coûtent plus cher.`,
+    };
+  }),
+  // Bénéfice, perte, prix de revient.
+  forme((rng) => {
+    const [qui, objs, obj, Il] = rng.pick(MARCHANDS);
+    const t = rng.int(0, 2);
+    if (t === 0) {
+      const k = rng.int(8, 60); const achat = prixCents(rng, 1, 20, 10);
+      const gain = rng.next() < 0.75;
+      const vente = gain ? achat + prixCents(rng, 0.2, 8, 10) : achat - prixCents(rng, 0.1, Math.min(achat / 200, 4), 10);
+      if (vente <= 0 || vente === achat) return null;
+      const diff = Math.abs(vente - achat) * k;
+      return {
+        type: 'numerique', unite: '€', difficulte: 3,
+        enonce: `${qui} achète ${k} ${objs} à ${eur(achat / 100)} pièce. ${gain ? `${Il} les revend tous à ${eur(vente / 100)} pièce. Quel est son bénéfice ?` : `${Il} ne parvient à les revendre qu'à ${eur(vente / 100)} pièce. Quelle est sa perte ?`}`,
+        reponse: diff / 100,
+        explication: `Par ${obj} : ${gain ? `${eur(vente / 100)} − ${eur(achat / 100)} = ${eur((vente - achat) / 100)} de bénéfice` : `${eur(achat / 100)} − ${eur(vente / 100)} = ${eur((achat - vente) / 100)} de perte`}. Pour ${k} ${objs} : ${k} × ${eur(Math.abs(vente - achat) / 100)} = ${eur(diff / 100)}. ${gain ? '(On peut aussi calculer : prix de vente total − prix d\'achat total.)' : '(On peut aussi calculer : prix d\'achat total − prix de vente total.)'}`,
+      };
+    }
+    const achat = rng.int(40, 900) * 100 + rng.pick([0, 50]); const frais = rng.int(5, 120) * 100 + rng.pick([0, 50]);
+    const revient = achat + frais;
+    const gain = rng.next() < 0.7;
+    const vente = gain ? revient + rng.int(10, 400) * 100 : revient - rng.int(5, Math.min(100, Math.floor(revient / 200))) * 100;
+    if (t === 1) {
+      const demande = rng.pick(['revient', 'resultat', 'resultat']);
+      if (demande === 'revient') {
+        return {
+          type: 'numerique', unite: '€', difficulte: 2,
+          enonce: `${qui} achète des ${objs} pour ${eur(achat / 100)}. Le transport lui coûte ${eur(frais / 100)}. Quel est le prix de revient de ces ${objs} ?`,
+          reponse: revient / 100,
+          explication: `Le prix de revient, c'est tout ce que le commerçant a dépensé : prix d'achat + frais. ${eur(achat / 100)} + ${eur(frais / 100)} = ${eur(revient / 100)}.`,
+        };
+      }
+      return {
+        type: 'numerique', unite: '€', difficulte: 3,
+        enonce: `${qui} achète des ${objs} pour ${eur(achat / 100)}. Le transport lui coûte ${eur(frais / 100)}. ${Il} vend tout pour ${eur(vente / 100)}. ${gain ? 'Quel est son bénéfice ?' : 'Quelle est sa perte ?'}`,
+        reponse: Math.abs(vente - revient) / 100,
+        explication: `Prix de revient : ${eur(achat / 100)} + ${eur(frais / 100)} = ${eur(revient / 100)}. ${gain ? `Bénéfice = prix de vente − prix de revient = ${eur(vente / 100)} − ${eur(revient / 100)} = ${eur((vente - revient) / 100)}.` : `Il vend moins cher que le prix de revient : perte = ${eur(revient / 100)} − ${eur(vente / 100)} = ${eur((revient - vente) / 100)}.`}`,
+      };
+    }
+    const d = Math.abs(vente - revient); const d2 = Math.abs(vente - achat);
+    const bonne = `${gain ? 'Un bénéfice' : 'Une perte'} de ${eur(d / 100)}`;
+    const fausses = [`${gain ? 'Une perte' : 'Un bénéfice'} de ${eur(d / 100)}`, `${vente > achat ? 'Un bénéfice' : 'Une perte'} de ${eur(d2 / 100)}`, `Un bénéfice de ${eur(vente / 100)}`, `${gain ? 'Un bénéfice' : 'Une perte'} de ${eur((d + 2 * frais) / 100)}`];
+    const c = qcm(rng, bonne, fausses);
+    if (!c) return null;
+    return {
+      ...c, difficulte: 3,
+      enonce: `${qui} achète des ${objs} pour ${eur(achat / 100)} et paie ${eur(frais / 100)} de transport. ${Il} vend tout pour ${eur(vente / 100)}. Fait-${Il.toLowerCase()} un bénéfice ou une perte ?`,
+      explication: `Prix de revient : ${eur(achat / 100)} + ${eur(frais / 100)} = ${eur(revient / 100)}. ${Il} vend pour ${eur(vente / 100)}, ${gain ? 'plus' : 'moins'} que le prix de revient : ${gain ? `bénéfice de ${eur(vente / 100)} − ${eur(revient / 100)}` : `perte de ${eur(revient / 100)} − ${eur(vente / 100)}`} = ${eur(d / 100)}. Attention à ne pas oublier les frais de transport !`,
+    };
+  }, 3),
+  // Comparer deux promotions.
+  forme((rng) => {
+    const [sg, pl, art, mn, mx] = rng.pick(ARTICLES_PROMO);
+    const p = prixCents(rng, mn, mx, 20); const n = rng.int(2, 6);
+    const OFFRES = [
+      { txt: 'le deuxième à moitié prix', tot: () => Math.floor(n / 2) * 1.5 * p + (n % 2) * p, calc: () => `${Math.floor(n / 2)} ${n >= 4 ? 'paires' : 'paire'} à ${eur(1.5 * p / 100)} (${eur(p / 100)} + ${eur(p / 200)})${n % 2 ? ` + 1 article à ${eur(p / 100)}` : ''}`, unit: true },
+      { txt: '3 pour le prix de 2', tot: () => (Math.floor(n / 3) * 2 + (n % 3)) * p, calc: () => `${Math.floor(n / 3) * 2 + (n % 3)} ${Math.floor(n / 3) * 2 + (n % 3) > 1 ? 'articles payés' : 'article payé'} × ${eur(p / 100)}` },
+      { txt: '− 30 % sur chaque article', tot: () => n * p * 0.7, calc: () => `${n} × ${eur(0.7 * p / 100)} (prix réduit de 30 %)` },
+      { txt: '− 20 % sur chaque article', tot: () => n * p * 0.8, calc: () => `${n} × ${eur(0.8 * p / 100)} (prix réduit de 20 %)` },
+      { txt: '1 acheté, 1 gratuit', tot: () => (Math.ceil(n / 2)) * p, calc: () => `${Math.ceil(n / 2)} ${Math.ceil(n / 2) > 1 ? 'articles payés' : 'article payé'} × ${eur(p / 100)}` },
+    ];
+    const [A, B] = rng.shuffle(OFFRES).slice(0, 2);
+    if (A.txt.includes('%') && B.txt.includes('%')) return null; // − 20 % contre − 30 % : rien à calculer
+    const ta = Math.round(A.tot()); const tb = Math.round(B.tot());
+    const choix = ['L\'offre A', 'L\'offre B', 'Les deux offres coûtent la même chose'];
+    const rep = ta < tb ? 0 : tb < ta ? 1 : 2;
+    return {
+      type: 'qcm', choix, reponse: rep, difficulte: 3,
+      enonce: `${majuscule(art)} ${sg} coûte ${eur(p / 100)}. Tu veux acheter ${n} ${pl}. Offre A : « ${A.txt} ». Offre B : « ${B.txt} ». Quelle offre est la moins chère ?`,
+      explication: `Offre A : ${A.calc()} = ${eur(ta / 100)}. Offre B : ${B.calc()} = ${eur(tb / 100)}. ${rep === 2 ? 'Les deux offres coûtent la même chose.' : `L'offre ${rep === 0 ? 'A' : 'B'} est la moins chère.`}`,
+    };
+  }, 2),
+]);
+
+// ===========================================================================
+// 12. Graphes fléchés
+// ===========================================================================
+// Flèche de P vers Q (pointe dessinée à la main : pas de <marker>, donc pas d'identifiant partagé).
+function flecheSvg(P, Q, { recul = 0, avance = 0, stroke = COUL.trait, sw = 1.8 } = {}) {
+  const dx = Q[0] - P[0]; const dy = Q[1] - P[1]; const L = Math.hypot(dx, dy); const ux = dx / L; const uy = dy / L;
+  const A = [P[0] + ux * avance, P[1] + uy * avance]; const B = [Q[0] - ux * recul, Q[1] - uy * recul];
+  const base = [B[0] - ux * 10, B[1] - uy * 10];
+  return ligneSvg(A, base, { stroke, sw }) + `<polygon points="${pts([B, [base[0] - uy * 5, base[1] + ux * 5], [base[0] + uy * 5, base[1] - ux * 5]])}" fill="${stroke}"/>`;
+}
+const ellipseSvg = (cx, cy, rx, ry, fill) => `<ellipse cx="${n1(cx)}" cy="${n1(cy)}" rx="${n1(rx)}" ry="${n1(ry)}" fill="${fill}" stroke="${COUL.trait}" stroke-width="2"/>`;
+
+// Deux ensembles : étiquettes à gauche et à droite, flèches liens [i, j] (de gauche i vers droite j).
+function figureDeuxEnsembles(gauche, droite, liens, { titreG = '', titreD = '', op = '' } = {}) {
+  const n = Math.max(gauche.length, droite.length); const pas = 40;
+  const y0 = (titreG || titreD ? 62 : 40) + (op ? 8 : 0); const H = y0 + n * pas + 14; const W = 360;
+  const xg = 90; const xd = 270;
+  const yG = (i) => y0 + pas / 2 + i * pas + (n - gauche.length) * pas / 2;
+  const yD = (j) => y0 + pas / 2 + j * pas + (n - droite.length) * pas / 2;
+  let s = ellipseSvg(xg, y0 + n * pas / 2, 58, n * pas / 2 + 8, COUL.bleu) + ellipseSvg(xd, y0 + n * pas / 2, 58, n * pas / 2 + 8, COUL.orange);
+  if (titreG) s += texteSvg(xg, 18, titreG, { size: 13, bold: true });
+  if (titreD) s += texteSvg(xd, 18, titreD, { size: 13, bold: true });
+  if (op) s += rectSvg(W / 2 - 34, y0 - 30, 68, 24, { fill: COUL.jaune, sw: 1.5 }) + texteSvg(W / 2, y0 - 18, op, { size: 15, bold: true });
+  for (const [i, j] of liens) s += flecheSvg([xg + 26, yG(i)], [xd - 26, yD(j)], { sw: 1.6 });
+  gauche.forEach((t, i) => { s += texteSvg(xg, yG(i), t, { size: 15, bold: t === '?' }); });
+  droite.forEach((t, j) => { s += texteSvg(xd, yD(j), t, { size: 15, bold: t === '?' }); });
+  return svg(W, H, s);
+}
+// Un seul ensemble : nombres sur une ellipse, flèches éventuelles (i → j).
+function figureUnEnsemble(nombres, liens, legende) {
+  const W = 360; const H = 250; const cx = W / 2; const cy = 140; const rx = 120; const ry = 72;
+  const k = nombres.length;
+  const P = nombres.map((_, i) => { const a = -Math.PI / 2 + (2 * Math.PI * i) / k + 0.3; return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)]; });
+  let s = ellipseSvg(cx, cy, rx + 36, ry + 30, COUL.vert);
+  s += texteSvg(cx, 20, legende, { size: 13, bold: true });
+  for (const [i, j] of liens) s += flecheSvg(P[i], P[j], { recul: 15, avance: 15, sw: 1.6 });
+  nombres.forEach((t, i) => { s += cercleSvg(P[i][0], P[i][1], 3, { fill: COUL.trait }) + texteSvg(P[i][0], P[i][1] - 13, fmt(t), { size: 14, bold: true, halo: true }); });
+  return svg(W, H, s);
+}
+const OPERATEURS = {
+  fois: (k) => ({ txt: `× ${k}`, f: (x) => x * k, inv: (y) => y / k, mots: `multiplier par ${k}` }),
+  plus: (k) => ({ txt: `+ ${k}`, f: (x) => x + k, inv: (y) => y - k, mots: `ajouter ${k}` }),
+  moins: (k) => ({ txt: `− ${k}`, f: (x) => x - k, inv: (y) => y + k, mots: `retirer ${k}` }),
+  div: (k) => ({ txt: `: ${k}`, f: (x) => x / k, inv: (y) => y * k, mots: `diviser par ${k}` }),
+};
+function operateurAuHasard(rng) {
+  const sorte = rng.pick(['fois', 'fois', 'plus', 'moins', 'div']);
+  const k = sorte === 'fois' || sorte === 'div' ? rng.int(2, 12) : rng.int(3, 75);
+  const op = OPERATEURS[sorte](k);
+  let gauche;
+  if (sorte === 'div') gauche = rng.shuffle(range(2, 15)).slice(0, 4).map((x) => x * k);
+  else if (sorte === 'moins') gauche = rng.shuffle(range(k + 1, k + 60)).slice(0, 4);
+  else gauche = rng.shuffle(range(1, sorte === 'fois' ? 15 : 90)).slice(0, 4);
+  return { sorte, k, op, gauche };
+}
+// Relations dans un seul ensemble : x → y signifie « x … y ».
+const RELATIONS = [
+  { txt: 'est le double de', ok: (x, y) => x === 2 * y },
+  { txt: 'est la moitié de', ok: (x, y) => 2 * x === y },
+  { txt: 'est le triple de', ok: (x, y) => x === 3 * y },
+  { txt: 'a 5 de plus que', ok: (x, y) => x === y + 5 },
+  { txt: 'a 10 de moins que', ok: (x, y) => x + 10 === y },
+  { txt: 'est 10 fois plus grand que', ok: (x, y) => x === 10 * y },
+];
+const CONTEXTES_PROPORTION = [
+  ['Nombre de cahiers', 'Prix (€)', 'cahier', [80, 350]], ['Nombre de kg de pommes', 'Prix (€)', 'kg', [150, 450]], ['Nombre de places', 'Prix (€)', 'place', [500, 1500]],
+  ['Nombre de litres', 'Prix (€)', 'litre', [120, 220]], ['Nombre de tickets', 'Prix (€)', 'ticket', [150, 400]], ['Nombre de mètres', 'Prix (€)', 'mètre', [200, 900]],
+];
+
+const grapheFleche = famille([
+  // Compléter un graphe fléché (opérateur donné).
+  forme((rng) => {
+    const { sorte, op, gauche } = operateurAuHasard(rng);
+    const droite = gauche.map(op.f);
+    const inverse = rng.next() < 0.3;
+    const cache = rng.int(0, 3);
+    const ordre = rng.next() < 0.5 ? range(0, 3) : rng.shuffle(range(0, 3));
+    const g = gauche.map((x, i) => (inverse && i === cache ? '?' : fmt(x)));
+    const dr = ordre.map((i) => (!inverse && i === cache ? '?' : fmt(droite[i])));
+    const rep = inverse ? gauche[cache] : droite[cache];
+    return {
+      type: 'numerique', difficulte: inverse ? 3 : 2,
+      enonce: `Complète ce graphe fléché : quel nombre remplace le point d'interrogation ?`,
+      cle: `${op.txt}|${g.join(',')}|${dr.join(',')}`,
+      figure: figureDeuxEnsembles(g, dr, gauche.map((_, i) => [i, ordre.indexOf(i)]), { op: op.txt }),
+      reponse: rep,
+      explication: inverse ? `Chaque flèche veut dire « ${op.mots} ». On remonte la flèche en faisant l'opération inverse : ${fmt(droite[cache])} ${sorte === 'fois' ? ':' : sorte === 'div' ? '×' : sorte === 'plus' ? '−' : '+'} ${op.txt.split(' ')[1]} = ${fmt(rep)}.` : `Chaque flèche veut dire « ${op.mots} » : ${fmt(gauche[cache])} ${op.txt} = ${fmt(rep)}.`,
+    };
+  }, 3),
+  // Trouver l'opérateur.
+  forme((rng) => {
+    const sorte = rng.pick(['fois', 'plus']);
+    const k = sorte === 'fois' ? rng.int(2, 9) : rng.int(3, 40);
+    const op = OPERATEURS[sorte](k);
+    const gauche = rng.shuffle(range(2, 12)).slice(0, 3);
+    const droite = gauche.map(op.f);
+    const verifie = (o) => gauche.every((x, i) => o.f(x) === droite[i]);
+    const cands = [OPERATEURS.plus(droite[0] - gauche[0]), OPERATEURS.fois(k + 1), OPERATEURS.fois(k - 1), OPERATEURS.plus(k), OPERATEURS.fois(k), OPERATEURS.plus(droite[1] - gauche[1]), OPERATEURS.fois(2 * k)]
+      .filter((o) => o.txt !== op.txt && !verifie(o) && !/[−] |\b0\b|× 1$|\+ 0$/.test(o.txt) && !o.txt.includes('-'));
+    const c = qcm(rng, op.txt, cands.map((o) => o.txt));
+    if (!c) return null;
+    return {
+      ...c, difficulte: 2,
+      enonce: 'Quelle opération fait passer de chaque nombre de gauche à son nombre de droite ?',
+      cle: `${gauche.join(',')}|${droite.join(',')}`,
+      figure: figureDeuxEnsembles(gauche.map(fmt), droite.map(fmt), [[0, 0], [1, 1], [2, 2]]),
+      explication: `${gauche.map((x, i) => `${x} ${op.txt} = ${droite[i]}`).join(' ; ')}. L'opération doit marcher pour toutes les flèches, pas seulement pour une.`,
+    };
+  }, 2),
+  // Situation de proportionnalité : compléter le prix.
+  forme((rng) => {
+    const [tg, td, unite, [pmin, pmax]] = rng.pick(CONTEXTES_PROPORTION);
+    const pu = rng.int(pmin / 10, pmax / 10) * 10;
+    const qs = rng.shuffle(range(1, 12)).slice(0, 4);
+    const cache = rng.int(1, 3);
+    const g = qs.map(fmt); const dr = qs.map((q, i) => (i === cache ? '?' : eur(q * pu / 100).replace(' €', '')));
+    if (qs[cache] === 1) return null;
+    return {
+      type: 'numerique', unite: '€', difficulte: 3,
+      enonce: `Ce graphe fléché représente une situation de proportionnalité. Quel prix remplace le point d'interrogation ?`,
+      cle: `${g.join(',')}|${dr.join(',')}`,
+      figure: figureDeuxEnsembles(g, dr, qs.map((_, i) => [i, i]), { titreG: tg, titreD: td }),
+      reponse: r(qs[cache] * pu / 100),
+      explication: `${qs.includes(1) ? `On lit sur le graphe : 1 ${unite} coûte ${eur(pu / 100)}.` : `Prix pour 1 ${unite} : ${eur(qs[0] * pu / 100)} : ${qs[0]} = ${eur(pu / 100)}.`} Pour ${qs[cache]} : ${qs[cache]} × ${eur(pu / 100)} = ${eur(qs[cache] * pu / 100)}. On passe toujours de gauche à droite en multipliant par ${fmt(pu / 100)}.`,
+    };
+  }, 2),
+  // Est-ce une situation de proportionnalité ?
+  forme((rng) => {
+    const prop = rng.next() < 0.5;
+    const P = rng.pick(PRENOMS);
+    let tg; let td; let gauche; let droite; let expl;
+    if (prop) {
+      const [a, b, k] = rng.pick([['Nombre de paquets', 'Nombre de biscuits', rng.int(6, 15)], ['Nombre de voitures', 'Nombre de roues', 4], ['Nombre de semaines', 'Nombre de jours', 7], ['Nombre de boîtes', 'Nombre d\'œufs', rng.pick([6, 10, 12])], ['Nombre d\'heures', 'Nombre de minutes', 60], ['Nombre de tables', 'Nombre de chaises', rng.int(4, 8)]]);
+      tg = a; td = b; gauche = rng.shuffle(range(1, 9)).slice(0, 4).sort((x, y) => x - y); droite = gauche.map((x) => x * k);
+      expl = `Vrai : on passe toujours de gauche à droite en multipliant par ${k}. Quand une grandeur double, l'autre double aussi.`;
+    } else {
+      const ctx = rng.pick([
+        () => { const d = rng.int(2, 6); return [`Âge de ${P.n}`, 'Âge de son frère', (x) => x + d, `l'écart d'âge reste toujours ${d} ans (on ajoute ${d})`, 2]; },
+        () => { const d = rng.int(2, 5); return ['Nombre d\'invités', 'Nombre de chaises', (x) => x + d, `on ajoute toujours ${d} chaises (+ ${d}), on ne multiplie pas`, 2]; },
+        () => { const f = rng.int(2, 6); const c = rng.pick([3, 4, 5]); return ['Nombre de places', 'Prix avec frais (€)', (x) => f * x + c, `il y a ${c} € de frais fixes en plus du prix des places`, 1]; },
+        () => { const e = rng.int(2, 6); const dep = rng.pick([5, 8, 10, 12, 15]); return ['Nombre de semaines', 'Argent dans la tirelire (€)', (x) => dep + e * x, `la tirelire contenait déjà ${dep} € au départ (on ajoute ${e} € par semaine à ces ${dep} €)`, 1]; },
+      ])();
+      tg = ctx[0]; td = ctx[1];
+      gauche = rng.shuffle(range(ctx[4], 12)).slice(0, 4).sort((x, y) => x - y); droite = gauche.map(ctx[2]);
+      expl = `Faux : ${ctx[3]}. Par exemple, ${gauche[0]} donne ${droite[0]}, mais le double, ${2 * gauche[0]}, ne donne pas ${2 * droite[0]}.`;
+    }
+    return {
+      type: 'vrai_faux', reponse: prop, difficulte: 3,
+      enonce: 'Vrai ou faux ? Ce graphe fléché représente une situation de proportionnalité.',
+      cle: `${tg}|${gauche.join(',')}|${droite.join(',')}`,
+      figure: figureDeuxEnsembles(gauche.map(fmt), droite.map(fmt), gauche.map((_, i) => [i, i]), { titreG: tg, titreD: td }),
+      explication: expl,
+    };
+  }, 2),
+  // Relation dans un seul ensemble : compter les flèches ou trouver celle qui manque.
+  forme((rng) => {
+    const R = rng.pick(RELATIONS);
+    for (let essai = 0; essai < 30; essai++) {
+      const k = rng.int(5, 6);
+      const base = rng.shuffle(range(1, R.txt.includes('10 fois') ? 9 : 30)).slice(0, 3);
+      const autres = base.map((x) => (R.ok(2 * x, x) ? 2 * x : R.ok(3 * x, x) ? 3 * x : R.ok(x + 5, x) ? x + 5 : R.ok(x, 2 * x) ? 2 * x : R.ok(x, x + 10) ? x + 10 : 10 * x));
+      const nombres = rng.shuffle([...new Set([...base, ...autres, ...rng.shuffle(range(1, 60)).slice(0, 3)])]).slice(0, k);
+      const liens = [];
+      nombres.forEach((x, i) => nombres.forEach((y, j) => { if (i !== j && R.ok(x, y)) liens.push([i, j]); }));
+      if (liens.length < 2 || liens.length > 4) continue;
+      const couples = liens.map(([i, j]) => `${fmt(nombres[i])} → ${fmt(nombres[j])}`);
+      if (rng.next() < 0.5) {
+        return {
+          type: 'numerique', difficulte: 3,
+          enonce: `Dans cet ensemble, on veut tracer une flèche de x vers y quand « x ${R.txt} y ». Combien de flèches faut-il tracer ?`,
+          cle: `${R.txt}|${nombres.join(',')}`,
+          figure: figureUnEnsemble(nombres, [], `x → y : « x ${R.txt} y »`),
+          reponse: liens.length,
+          explication: `On teste chaque nombre avec tous les autres. Les flèches sont : ${couples.join(' ; ')}. Il y en a ${liens.length}.`,
+        };
+      }
+      const manque = rng.int(0, liens.length - 1);
+      const faux = [];
+      nombres.forEach((x, i) => nombres.forEach((y, j) => { if (i !== j && !R.ok(x, y)) faux.push(`${fmt(x)} → ${fmt(y)}`); }));
+      const inverses = liens.map(([i, j]) => `${fmt(nombres[j])} → ${fmt(nombres[i])}`).filter((t) => faux.includes(t));
+      const c = qcm(rng, couples[manque], [...rng.shuffle(inverses).slice(0, 1), ...rng.shuffle(faux)]);
+      if (!c) continue;
+      return {
+        ...c, difficulte: 3,
+        enonce: `Dans ce graphe, une flèche de x vers y veut dire « x ${R.txt} y ». Il manque une flèche. Laquelle ?`,
+        cle: `${R.txt}|${nombres.join(',')}|${manque}`,
+        figure: figureUnEnsemble(nombres, liens.filter((_, i) => i !== manque), `x → y : « x ${R.txt} y »`),
+        explication: `${couples[manque]} : ${fmt(nombres[liens[manque][0]])} ${R.txt} ${fmt(nombres[liens[manque][1]])}. Attention au sens de la flèche : elle part de x et arrive sur y.`,
+      };
+    }
+    return null;
+  }, 2),
+  // Une flèche est fausse.
+  forme((rng) => {
+    const { op, gauche } = operateurAuHasard(rng);
+    const droite = gauche.map(op.f);
+    const faux = rng.int(0, 3);
+    const d2 = droite.slice(); d2[faux] = droite[faux] + rng.pick([-10, -2, -1, 1, 2, 10, droite[faux]]);
+    if (d2[faux] <= 0 || new Set(d2).size < 4 || gauche.some((x, i) => i !== faux && op.f(x) !== d2[i])) return null;
+    const textes = gauche.map((x, i) => `${fmt(x)} → ${fmt(d2[i])}`);
+    const c = { type: 'qcm', choix: textes, reponse: faux };
+    return {
+      ...c, difficulte: 2,
+      enonce: `Dans ce graphe fléché, chaque flèche veut dire « ${op.txt} ». Une flèche est fausse. Laquelle ?`,
+      cle: `${op.txt}|${textes.join(',')}`,
+      figure: figureDeuxEnsembles(gauche.map(fmt), d2.map(fmt), gauche.map((_, i) => [i, i]), { op: op.txt }),
+      explication: `${fmt(gauche[faux])} ${op.txt} = ${fmt(droite[faux])}, et pas ${fmt(d2[faux])}. Les autres flèches sont justes : ${gauche.filter((_, i) => i !== faux).map((x) => `${fmt(x)} ${op.txt} = ${fmt(op.f(x))}`).join(' ; ')}.`,
+    };
+  }),
+]);
+
+// ===========================================================================
+// 13. Solides : faces, arêtes, sommets, faces parallèles ; assemblages de cubes
+// ===========================================================================
+const NOMS_BASES = { 3: ['triangulaire', 'triangle'], 4: ['carrée', 'carré'], 5: ['pentagonale', 'pentagone'], 6: ['hexagonale', 'hexagone'], 8: ['octogonale', 'octogone'] };
+function prismeOuPyramide(sorte, n, R, H, rot) {
+  const base = range(0, n - 1).map((i) => { const a = rot + (2 * Math.PI * i) / n; return [R * Math.cos(a), 0, R * Math.sin(a)]; });
+  if (sorte === 'pyramide') {
+    return { S: [...base, [0, H, 0]], F: [range(0, n - 1), ...range(0, n - 1).map((i) => [i, (i + 1) % n, n])] };
+  }
+  const haut = base.map(([x, , z]) => [x, H, z]);
+  return { S: [...base, ...haut], F: [range(0, n - 1), range(n, 2 * n - 1), ...range(0, n - 1).map((i) => [i, (i + 1) % n, n + (i + 1) % n, n + i])] };
+}
+// Projection orthogonale (lacet puis tangage) ; faces visibles = normale tournée vers l'observateur.
+function figureSolide(S, F, { lacet = 0.5, tangage = 0.45, W = 320, H = 240, etiquettes = null, fill = COUL.bleu, ecartMin = 0 } = {}) {
+  const tourne = ([x, y, z]) => {
+    const x1 = x * Math.cos(lacet) + z * Math.sin(lacet); const z1 = -x * Math.sin(lacet) + z * Math.cos(lacet);
+    return [x1, y * Math.cos(tangage) - z1 * Math.sin(tangage), y * Math.sin(tangage) + z1 * Math.cos(tangage)];
+  };
+  const T = S.map(tourne);
+  const centre = T.reduce((s, p) => [s[0] + p[0] / T.length, s[1] + p[1] / T.length, s[2] + p[2] / T.length], [0, 0, 0]);
+  const visible = F.map((f) => {
+    const [a, b, c] = [T[f[0]], T[f[1]], T[f[2]]];
+    const u = [b[0] - a[0], b[1] - a[1], b[2] - a[2]]; const v = [c[0] - a[0], c[1] - a[1], c[2] - a[2]];
+    let nz = u[0] * v[1] - u[1] * v[0];
+    const nrm = [u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], nz];
+    const m = f.reduce((s, i) => [s[0] + T[i][0] / f.length, s[1] + T[i][1] / f.length, s[2] + T[i][2] / f.length], [0, 0, 0]);
+    if (nrm[0] * (m[0] - centre[0]) + nrm[1] * (m[1] - centre[1]) + nrm[2] * (m[2] - centre[2]) < 0) nz = -nz;
+    return nz > 1e-6;
+  });
+  const xs = T.map((p) => p[0]); const ys = T.map((p) => -p[1]);
+  const marge = etiquettes ? 34 : 22;
+  const s = Math.min((W - 2 * marge) / (Math.max(...xs) - Math.min(...xs)), (H - 2 * marge) / (Math.max(...ys) - Math.min(...ys)));
+  const ox = (W - (Math.max(...xs) - Math.min(...xs)) * s) / 2 - Math.min(...xs) * s; const oy = (H - (Math.max(...ys) - Math.min(...ys)) * s) / 2 - Math.min(...ys) * s;
+  const E = (p) => [ox + p[0] * s, oy - p[1] * s];
+  // Deux sommets trop proches à l'écran (un sommet caché derrière un autre) : dessin refusé.
+  if (ecartMin) { const Q = T.map(E); for (let i = 0; i < Q.length; i++) for (let j = i + 1; j < Q.length; j++) if (Math.hypot(Q[i][0] - Q[j][0], Q[i][1] - Q[j][1]) < ecartMin) return null; }
+  const aretes = new Map();
+  F.forEach((f, k) => f.forEach((i, t) => { const j = f[(t + 1) % f.length]; const cle = i < j ? `${i}-${j}` : `${j}-${i}`; aretes.set(cle, (aretes.get(cle) || false) || visible[k]); }));
+  let out = '';
+  F.forEach((f, k) => { if (visible[k]) out += polySvg(f.map((i) => E(T[i])), { fill, sw: 0 }); });
+  for (const [cle, vis] of aretes) { if (!vis) { const [i, j] = cle.split('-').map(Number); out += ligneSvg(E(T[i]), E(T[j]), { sw: 1.4, dash: '5 4', stroke: COUL.doux }); } }
+  for (const [cle, vis] of aretes) { if (vis) { const [i, j] = cle.split('-').map(Number); out += ligneSvg(E(T[i]), E(T[j]), { sw: 2 }); } }
+  if (etiquettes) {
+    // Chaque étiquette est placée autour de son sommet, là où elle est le plus loin des arêtes et des autres étiquettes
+    // (un sommet caché ou le sommet de devant ne doit pas avoir son nom posé sur une arête).
+    const segs = [...aretes.keys()].map((cle) => cle.split('-').map((i) => E(T[+i])));
+    const distSeg = (q, [a, b]) => { const dx = b[0] - a[0]; const dy = b[1] - a[1]; const t = Math.max(0, Math.min(1, ((q[0] - a[0]) * dx + (q[1] - a[1]) * dy) / (dx * dx + dy * dy || 1))); return Math.hypot(q[0] - a[0] - t * dx, q[1] - a[1] - t * dy); };
+    const poses = [];
+    T.forEach((p, i) => {
+      const q = E(p); let best = null;
+      for (let k = 0; k < 16; k++) {
+        const a = (2 * Math.PI * k) / 16; const c = [q[0] + Math.cos(a) * 15, q[1] + Math.sin(a) * 15];
+        if (c[0] < 8 || c[0] > W - 8 || c[1] < 10 || c[1] > H - 6) continue;
+        const sc = Math.min(...segs.map((sg) => distSeg(c, sg)), ...poses.map((o) => Math.hypot(c[0] - o[0], c[1] - o[1]) / 2));
+        if (!best || sc > best[0]) best = [sc, c];
+      }
+      poses.push(best[1]);
+      out += texteSvg(best[1][0], best[1][1], etiquettes[i], { size: 14, bold: true, halo: true });
+    });
+  }
+  return svg(W, H, out);
+}
+const formules = (sorte, n) => (sorte === 'prisme'
+  ? { faces: n + 2, aretes: 3 * n, sommets: 2 * n, x: `Un prisme dont la base a ${n} côtés : 2 bases + ${n} faces latérales = ${n + 2} faces ; ${n} arêtes en bas, ${n} en haut et ${n} verticales = ${3 * n} arêtes ; ${n} sommets en bas et ${n} en haut = ${2 * n} sommets.` }
+  : { faces: n + 1, aretes: 2 * n, sommets: n + 1, x: `Une pyramide dont la base a ${n} côtés : 1 base + ${n} faces triangulaires = ${n + 1} faces ; ${n} arêtes autour de la base + ${n} qui montent au sommet = ${2 * n} arêtes ; ${n} sommets de la base + le sommet du haut = ${n + 1} sommets.` });
+function solideAuHasard(rng, ns = [3, 4, 5, 6, 8]) {
+  const sorte = rng.pick(['prisme', 'pyramide']); const n = rng.pick(ns);
+  const R = 1; const H = decimal(rng, sorte === 'prisme' ? 0.9 : 1.2, 2.2, 1);
+  if (sorte === 'prisme' && Math.abs(H - 2 * Math.sin(Math.PI / n)) < 0.3) return solideAuHasard(rng, ns); // faces latérales bien rectangulaires (pas carrées)
+  const rot = rng.int(0, 11) * Math.PI / 36 + (n === 4 ? Math.PI / 4 : 0.1);
+  const lacet = rng.int(-6, 6) * 0.05; const tangage = decimal(rng, 0.32, 0.6, 2);
+  const { S, F } = prismeOuPyramide(sorte, n, R, H, rot);
+  const figure = figureSolide(S, F, { lacet, tangage, fill: rng.pick(FONDS), ecartMin: 16 });
+  if (!figure) return solideAuHasard(rng, ns);
+  return { sorte, n, H, figure, cle: `${sorte}|${n}|${H}|${rot.toFixed(2)}|${lacet}|${tangage}` };
+}
+const nomSolide = (sorte, n) => `${sorte === 'prisme' ? 'le prisme droit' : 'la pyramide'} à base ${NOMS_BASES[n][0]}`;
+
+// Assemblages de cubes en perspective (cavalière isométrique). h[y][x] = hauteur de la colonne.
+function figureCubes(h, { W = 320, H = 220, s = 30 } = {}) {
+  const c = Math.cos(Math.PI / 6) * s;
+  const cubes = [];
+  h.forEach((ligne, y) => ligne.forEach((k, x) => { for (let z = 0; z < k; z++) cubes.push([x, y, z]); }));
+  cubes.sort((a, b) => a[0] + a[1] + a[2] - (b[0] + b[1] + b[2]) || a[2] - b[2]);
+  const P = ([x, y, z]) => [(x - y) * c, (x + y) * s / 2 - z * s];
+  const tous = cubes.flatMap(([x, y, z]) => [P([x, y, z + 1]), P([x + 1, y + 1, z]), P([x + 1, y, z]), P([x, y + 1, z])]);
+  const minX = Math.min(...tous.map((p) => p[0])); const maxX = Math.max(...tous.map((p) => p[0]));
+  const minY = Math.min(...tous.map((p) => p[1])); const maxY = Math.max(...tous.map((p) => p[1]));
+  const ox = (W - (maxX - minX)) / 2 - minX; const oy = (H - (maxY - minY)) / 2 - minY;
+  const Q = (p) => { const [a, b] = P(p); return [a + ox, b + oy]; };
+  let out = '';
+  for (const [x, y, z] of cubes) {
+    out += polySvg([Q([x, y, z + 1]), Q([x + 1, y, z + 1]), Q([x + 1, y + 1, z + 1]), Q([x, y + 1, z + 1])], { fill: '#fff4c2', sw: 1.6 });
+    out += polySvg([Q([x + 1, y, z]), Q([x + 1, y + 1, z]), Q([x + 1, y + 1, z + 1]), Q([x + 1, y, z + 1])], { fill: '#9cc3f5', sw: 1.6 });
+    out += polySvg([Q([x, y + 1, z]), Q([x + 1, y + 1, z]), Q([x + 1, y + 1, z + 1]), Q([x, y + 1, z + 1])], { fill: '#5d8fd8', sw: 1.6 });
+  }
+  return { out, W, H };
+}
+// Hauteurs « en escalier » (jamais plus haut devant que derrière) : tous les cubes du dessus sont visibles.
+function hauteursEscalier(rng, nx, ny, hmax, total) {
+  for (let essai = 0; essai < 300; essai++) {
+    const h = range(0, ny - 1).map(() => range(0, nx - 1).map(() => 0));
+    for (let y = 0; y < ny; y++) {
+      for (let x = 0; x < nx; x++) {
+        const lim = Math.min(hmax, y ? h[y - 1][x] : hmax, x ? h[y][x - 1] : hmax);
+        h[y][x] = rng.int(0, lim);
+      }
+    }
+    const n = h.flat().reduce((a, b) => a + b, 0);
+    if (n < total[0] || n > total[1] || !h[0][0]) continue;
+    // assemblage d'un seul tenant (vue de dessus connexe)
+    const cases = []; h.forEach((l, y) => l.forEach((k, x) => { if (k) cases.push([x, y]); }));
+    const set = new Set(cases.map((p) => p.join())); const vu = new Set(['0,0']); const file = [[0, 0]];
+    while (file.length) { const [x, y] = file.pop(); for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { const k = `${x + dx},${y + dy}`; if (set.has(k) && !vu.has(k)) { vu.add(k); file.push([x + dx, y + dy]); } } }
+    if (vu.size !== cases.length) continue;
+    return { h, n, cases };
+  }
+  return null;
+}
+function polyominoAuHasard(rng, k) {
+  const cases = [[0, 0]]; const set = new Set(['0,0']);
+  while (cases.length < k) {
+    const [x, y] = rng.pick(cases); const [dx, dy] = rng.pick([[1, 0], [-1, 0], [0, 1], [0, -1]]);
+    const key = `${x + dx},${y + dy}`;
+    if (!set.has(key)) { set.add(key); cases.push([x + dx, y + dy]); }
+  }
+  return normaliserCases(cases);
+}
+
+const solidesFaces = famille([
+  // Compter faces, arêtes, sommets sur un dessin.
+  forme((rng) => {
+    const sol = solideAuHasard(rng);
+    const F = formules(sol.sorte, sol.n);
+    const quoi = rng.pick(['faces', 'aretes', 'sommets']);
+    return {
+      type: 'numerique', difficulte: quoi === 'faces' ? 2 : 3,
+      enonce: `Combien ${quoi === 'aretes' ? "d'arêtes" : `de ${quoi}`} a ce solide ? (Les traits en pointillé sont les arêtes cachées.)`,
+      cle: sol.cle, figure: sol.figure, reponse: F[quoi],
+      explication: F.x,
+    };
+  }, 3),
+  // Nommer le solide dessiné.
+  forme((rng) => {
+    const sol = solideAuHasard(rng, [3, 5, 6, 8]);
+    const bonne = majuscule(nomSolide(sol.sorte, sol.n));
+    const autre = sol.sorte === 'prisme' ? 'pyramide' : 'prisme';
+    const fausses = [nomSolide(autre, sol.n), ...[3, 5, 6, 8].filter((m) => m !== sol.n).map((m) => nomSolide(sol.sorte, m)), ...[3, 5, 6, 8].filter((m) => m !== sol.n).map((m) => nomSolide(autre, m))].map(majuscule);
+    const c = qcm(rng, bonne, [fausses[0], ...rng.shuffle(fausses.slice(1))]);
+    return {
+      ...c, difficulte: 2,
+      enonce: 'Comment s\'appelle ce solide ?',
+      cle: sol.cle, figure: sol.figure,
+      explication: `${sol.sorte === 'prisme' ? 'Il a deux bases identiques et parallèles reliées par des rectangles : c\'est un prisme droit.' : 'Toutes les faces latérales sont des triangles qui se rejoignent en un même sommet : c\'est une pyramide.'} Sa base a ${sol.n} côtés : c'est un ${NOMS_BASES[sol.n][1]}. ${bonne}.`,
+    };
+  }, 2),
+  // Forme et nombre de faces d'une sorte donnée.
+  forme((rng) => {
+    const sol = solideAuHasard(rng, [3, 5, 6, 8]);
+    const lat = sol.sorte === 'prisme' ? 'des rectangles' : 'des triangles';
+    if (rng.next() < 0.5) {
+      const c = qcm(rng, lat, ['des rectangles', 'des triangles', `des ${NOMS_BASES[sol.n][1]}s`, 'des carrés', 'des disques']);
+      return {
+        ...c, difficulte: 2,
+        enonce: 'Quelle est la forme des faces latérales de ce solide (les faces qui ne sont pas des bases) ?',
+        cle: sol.cle, figure: sol.figure,
+        explication: sol.sorte === 'prisme' ? `Dans un prisme droit, les faces latérales sont des rectangles ; les deux bases sont des ${NOMS_BASES[sol.n][1]}s.` : `Dans une pyramide, les faces latérales sont des triangles qui se rejoignent au sommet ; la base est un ${NOMS_BASES[sol.n][1]}.`,
+      };
+    }
+    const forme = rng.pick(['triangles', 'rectangles']);
+    const nb = sol.sorte === 'prisme' ? (forme === 'rectangles' ? sol.n : sol.n === 3 ? 2 : 0) : (forme === 'triangles' ? sol.n + (sol.n === 3 ? 1 : 0) : 0);
+    return {
+      type: 'numerique', difficulte: 3,
+      enonce: `Combien de faces de ce solide sont des ${forme} ?`,
+      cle: `${sol.cle}|${forme}`, figure: sol.figure, reponse: nb,
+      explication: `${majuscule(nomSolide(sol.sorte, sol.n))} a ${sol.sorte === 'prisme' ? `2 bases (des ${NOMS_BASES[sol.n][1]}s) et ${sol.n} faces latérales rectangulaires` : `1 base (un ${NOMS_BASES[sol.n][1]}) et ${sol.n} faces latérales triangulaires`}. ${nb ? `Il y a donc ${nb} ${forme}.` : `Aucune face n'est donc un ${forme.slice(0, -1)} : la réponse est 0.`}`,
+    };
+  }, 2),
+  // Pavé droit nommé : faces parallèles, perpendiculaires, isométriques.
+  forme((rng) => {
+    const L = rng.pick(['ABCDEFGH', 'IJKLMNOP', 'MNOPQRST', 'QRSTUVWX', 'EFGHIJKL']);
+    const [a, b, c] = rng.shuffle([decimal(rng, 1, 1.4, 1), decimal(rng, 1.6, 2.2, 1), decimal(rng, 2.5, 3.4, 1)]);
+    const S = [[0, 0, 0], [a, 0, 0], [a, 0, b], [0, 0, b], [0, c, 0], [a, c, 0], [a, c, b], [0, c, b]].map(([x, y, z]) => [x - a / 2, y, z - b / 2]);
+    // Faces nommées en tournant : bas ABCD, haut EFGH, puis les 4 faces latérales.
+    const FACES = [[0, 1, 2, 3], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]];
+    const OPP = [1, 0, 4, 5, 2, 3];
+    const nom = (f) => FACES[f].map((i) => L[i]).join('');
+    const f = rng.int(0, 5);
+    const lacet = decimal(rng, -0.75, -0.35, 2) + rng.pick([0, Math.PI / 2]); const tangage = decimal(rng, 0.35, 0.55, 2);
+    const figure = figureSolide(S, FACES, { lacet, tangage, etiquettes: L.split(''), fill: COUL.jaune, ecartMin: 45 });
+    if (!figure) return null;
+    const cle = `${L}|${a},${b},${c}|${lacet.toFixed(2)}|${tangage}`;
+    const t = rng.pick(['parallele', 'parallele', 'iso', 'pasPerp', 'perp']);
+    if (t === 'perp') {
+      return {
+        type: 'numerique', difficulte: 2,
+        enonce: `Combien de faces de ce pavé droit sont perpendiculaires à la face ${nom(f)} ?`,
+        cle: `${cle}|${f}|perp`, figure, reponse: 4,
+        explication: `Dans un pavé droit, chaque face est parallèle à la face opposée (${nom(OPP[f])}) et perpendiculaire aux 4 autres faces.`,
+      };
+    }
+    const autres = range(0, 5).filter((x) => x !== f && x !== OPP[f]).map(nom);
+    const q = qcm(rng, nom(OPP[f]), rng.shuffle(autres));
+    const enonce = {
+      parallele: `Quelle face de ce pavé droit est parallèle à la face ${nom(f)} ?`,
+      iso: `Les arêtes de ce pavé droit ont trois longueurs différentes. Quelle face est isométrique à la face ${nom(f)} (même forme et mêmes dimensions) ?`,
+      pasPerp: `Quelle face de ce pavé droit n'est PAS perpendiculaire à la face ${nom(f)} ?`,
+    }[t];
+    return {
+      ...q, difficulte: t === 'parallele' ? 2 : 3,
+      enonce, cle: `${cle}|${f}|${t}`, figure,
+      explication: `La face ${nom(OPP[f])} est la face opposée à ${nom(f)} : elles sont parallèles et isométriques. Les 4 autres faces (${enumerer(autres)}) sont perpendiculaires à ${nom(f)}.`,
+    };
+  }, 2),
+  // Compter les cubes d'un assemblage.
+  forme((rng) => {
+    const nx = rng.int(2, 3); const ny = rng.int(2, 3);
+    const a = hauteursEscalier(rng, nx, ny, 3, [4, 14]);
+    if (!a) return null;
+    const { out, W, H } = figureCubes(a.h);
+    const petit = nx === 2 && ny === 2 && Math.max(...a.h.flat()) <= 2;
+    const grand = rng.next() < 0.3 ? rng.pick([petit ? 8 : 27, 27].filter((g) => g > a.n)) : null;
+    const detail = a.h.flatMap((l) => l.filter((k) => k > 0)).join(' + ');
+    return {
+      type: 'numerique', difficulte: grand ? 3 : 2, fiche: 'ma-assemblages-cubes',
+      enonce: grand
+        ? `Combien de petits cubes faut-il ajouter à cet assemblage pour obtenir un grand cube de ${grand === 8 ? '2 × 2 × 2' : '3 × 3 × 3'} cubes ? (Chaque cube est posé sur la table ou sur un autre cube.)`
+        : 'Combien de petits cubes forment cet assemblage ? (Chaque cube est posé sur la table ou sur un autre cube : certains sont cachés.)',
+      cle: `${JSON.stringify(a.h)}|${grand}`,
+      figure: svg(W, H, out),
+      reponse: grand ? grand - a.n : a.n,
+      explication: `On compte colonne par colonne : chaque colonne contient autant de cubes que sa hauteur, même si les cubes du dessous sont cachés. ${detail} = ${a.n} cubes.${grand ? ` Le grand cube en a ${grand === 8 ? '2 × 2 × 2' : '3 × 3 × 3'} = ${grand} : il faut en ajouter ${grand} − ${a.n} = ${grand - a.n}.` : ''}`,
+    };
+  }, 2),
+  // Vue de dessus d'un assemblage d'au plus 5 cubes.
+  forme((rng) => {
+    const a = hauteursEscalier(rng, 3, 3, 3, [3, 5]);
+    if (!a || a.cases.length < 3) return null;
+    const vue = normaliserCases(a.cases);
+    const can = canonique(vue);
+    const fausses = []; const vus = new Set([can]);
+    for (let essai = 0; essai < 60 && fausses.length < 3; essai++) {
+      const p = polyominoAuHasard(rng, Math.max(2, vue.length + rng.pick([-1, 0, 0, 1])));
+      const cp = canonique(p);
+      if (vus.has(cp) || Math.max(...p.map((x) => x[0])) > 3 || Math.max(...p.map((x) => x[1])) > 3) continue;
+      vus.add(cp); fausses.push(orienter(p, rng.int(0, 7)));
+    }
+    if (fausses.length < 3) return null;
+    const liste = rng.shuffle([vue, ...fausses]);
+    const idx = liste.indexOf(vue);
+    const { out } = figureCubes(a.h, { W: 360, H: 180, s: 30 });
+    let s2 = `<g>${out}</g>`;
+    liste.forEach((cells, k) => {
+      const px = 10 + k * 87; const py = 190;
+      const w = Math.max(...cells.map((c) => c[0])) + 1; const h2 = Math.max(...cells.map((c) => c[1])) + 1;
+      const u = Math.min(60 / w, 60 / h2, 20);
+      s2 += texteSvg(px + 10, py + 12, 'ABCD'[k], { size: 16, bold: true });
+      s2 += dessinCases(cells, px + 22 + (60 - w * u) / 2, py + 22 + (60 - h2 * u) / 2, u, '#fff4c2');
+    });
+    return {
+      type: 'qcm', choix: ['A', 'B', 'C', 'D'], reponse: idx, difficulte: 3, fiche: 'ma-assemblages-cubes',
+      enonce: 'Quel dessin montre cet assemblage de cubes vu de dessus ?',
+      cle: `${JSON.stringify(a.h)}|${liste.map(cleCases).join('/')}`,
+      figure: svg(360, 290, s2),
+      explication: `Vu de dessus, on voit une case pour chaque colonne de cubes, quelle que soit sa hauteur : ${vue.length} cases. C'est le dessin ${'ABCD'[idx]} (il peut être tourné). Les autres dessins n'ont pas la bonne forme.`,
+    };
+  }, 2),
+]);
+
+// ===========================================================================
+// 14. Symboles et codage géométriques : A, a, [AB], //, ⊥, angle droit, longueurs égales
+// ===========================================================================
+const LETTRES_PTS = 'ABCDEFGHIJKLMNPRSTUVWXYZ';
+const LETTRES_DR = 'abcdefghkmnprstuvw';
+const deuxLettres = (rng, lettres, n = 2) => rng.shuffle(lettres.split('')).slice(0, n);
+// Petits traits de codage au milieu d'un segment (k traits).
+function codage(P, Q, k) {
+  const m = [(P[0] + Q[0]) / 2, (P[1] + Q[1]) / 2]; const L = Math.hypot(Q[0] - P[0], Q[1] - P[1]);
+  const u = [(Q[0] - P[0]) / L, (Q[1] - P[1]) / L]; const nrm = [-u[1], u[0]];
+  let s = '';
+  for (let i = 0; i < k; i++) {
+    const o = (i - (k - 1) / 2) * 6; const c = [m[0] + u[0] * o, m[1] + u[1] * o];
+    s += ligneSvg([c[0] - nrm[0] * 7 - u[0] * 2, c[1] - nrm[1] * 7 - u[1] * 2], [c[0] + nrm[0] * 7 + u[0] * 2, c[1] + nrm[1] * 7 + u[1] * 2], { sw: 2 });
+  }
+  return s;
+}
+// Carré d'angle droit au sommet P du polygone (voisins A et B).
+function coinDroit(P, A, B, t = 11) {
+  const ua = [(A[0] - P[0]) / Math.hypot(A[0] - P[0], A[1] - P[1]), (A[1] - P[1]) / Math.hypot(A[0] - P[0], A[1] - P[1])];
+  const ub = [(B[0] - P[0]) / Math.hypot(B[0] - P[0], B[1] - P[1]), (B[1] - P[1]) / Math.hypot(B[0] - P[0], B[1] - P[1])];
+  return angleDroitSvg(P, ua, ub, t);
+}
+const tourner = (P, a, c) => P.map(([x, y]) => [c[0] + (x - c[0]) * Math.cos(a) - (y - c[1]) * Math.sin(a), c[1] + (x - c[0]) * Math.sin(a) + (y - c[1]) * Math.cos(a)]);
+function figurePolygoneCode(P, noms, codes, droits, fill) {
+  const c = P.reduce((s, p) => [s[0] + p[0] / P.length, s[1] + p[1] / P.length], [0, 0]);
+  let s = polySvg(P, { fill, sw: 2 });
+  P.forEach((p, i) => { const q = P[(i + 1) % P.length]; if (codes[i]) s += codage(p, q, codes[i]); });
+  droits.forEach((i) => { s += coinDroit(P[i], P[(i + P.length - 1) % P.length], P[(i + 1) % P.length]); });
+  P.forEach((p, i) => { const d = Math.hypot(p[0] - c[0], p[1] - c[1]) || 1; s += texteSvg(p[0] + (p[0] - c[0]) / d * 16, p[1] + (p[1] - c[1]) / d * 16, noms[i], { size: 15, bold: true }); });
+  return s;
+}
+// Cadre une liste de points dans W × H (garde les proportions).
+function cadrer(P, W, H, marge) {
+  const xs = P.map((p) => p[0]); const ys = P.map((p) => p[1]);
+  const s = Math.min((W - 2 * marge) / (Math.max(...xs) - Math.min(...xs)), (H - 2 * marge) / (Math.max(...ys) - Math.min(...ys)));
+  const ox = (W - (Math.max(...xs) - Math.min(...xs)) * s) / 2 - Math.min(...xs) * s; const oy = (H - (Math.max(...ys) - Math.min(...ys)) * s) / 2 - Math.min(...ys) * s;
+  return P.map(([x, y]) => [ox + x * s, oy + y * s]);
+}
+const TRIANGLES_CODES = [
+  { nom: 'équilatéral', pts: (r1) => [[0, 0], [10, 0], [5, -8.66]], codes: [1, 1, 1], droits: [], expl: 'Les trois côtés portent le même codage : ils ont la même longueur. C\'est un triangle équilatéral (il est aussi isocèle, mais « équilatéral » est plus précis).', exclus: ['isocèle'] },
+  { nom: 'isocèle', pts: (r1) => [[0, 0], [10, 0], [5, -(r1 < 0.5 ? 6 + r1 * 1.6 : 11 + (r1 - 0.5) * 6)]], codes: [0, 1, 1], droits: [], expl: 'Deux côtés seulement portent le même codage : c\'est un triangle isocèle.', exclus: [] },
+  { nom: 'rectangle', pts: (r1) => [[0, 0], [10, 0], [0, -(4 + r1 * 3)]], codes: [0, 0, 0], droits: [0], expl: 'Le petit carré indique un angle droit, et aucun codage n\'indique deux côtés de même longueur : c\'est un triangle rectangle.', exclus: ['scalène'] }, // un triangle rectangle est souvent aussi scalène : distracteur défendable
+  { nom: 'rectangle isocèle', pts: () => [[0, 0], [10, 0], [0, -10]], codes: [1, 0, 1], droits: [0], expl: 'Un angle droit (petit carré) et deux côtés de même longueur (même codage) : c\'est un triangle rectangle isocèle.', exclus: ['rectangle', 'isocèle'] },
+  { nom: 'scalène', pts: (r1) => [[0, 0], [10, 0], [2.5 + r1 * 2, -(5 + r1 * 3)]], codes: [1, 2, 3], droits: [], expl: 'Les trois côtés ont des codages différents : leurs longueurs sont toutes différentes. C\'est un triangle scalène.', exclus: [] },
+];
+const QUADS_CODES = [
+  { nom: 'carré', pts: () => [[0, 0], [8, 0], [8, -8], [0, -8]], codes: [1, 1, 1, 1], droits: [0, 1, 2, 3], expl: 'Quatre côtés de même longueur et quatre angles droits : c\'est un carré (le nom le plus précis).' },
+  { nom: 'rectangle', pts: (r1) => [[0, 0], [11, 0], [11, -(5 + r1 * 2)], [0, -(5 + r1 * 2)]], codes: [1, 2, 1, 2], droits: [0, 1, 2, 3], expl: 'Quatre angles droits et des côtés opposés de même longueur (deux codages différents) : c\'est un rectangle.' },
+  { nom: 'losange', pts: (r1) => [[0, 0], [3 + r1, -5], [6 + 2 * r1, 0], [3 + r1, 5]], codes: [1, 1, 1, 1], droits: [], expl: 'Quatre côtés de même longueur, mais pas d\'angle droit : c\'est un losange.' },
+  { nom: 'parallélogramme', pts: (r1) => [[0, 0], [10, 0], [12 + r1 * 2, -6], [2 + r1 * 2, -6]], codes: [1, 2, 1, 2], droits: [], expl: 'Les côtés opposés ont deux à deux la même longueur, sans angle droit : c\'est un parallélogramme.' },
+];
+
+const symbolesGeo = famille([
+  // Sens des symboles (sans figure).
+  forme((rng) => {
+    const [A, B] = deuxLettres(rng, LETTRES_PTS); const [d, e] = deuxLettres(rng, LETTRES_DR);
+    const cas = rng.pick([
+      { e: `Que désigne l'écriture [${A}${B}] ?`, b: `Le segment dont les extrémités sont les points ${A} et ${B}`, f: [`Le point ${A}${B}`, `La droite ${A.toLowerCase()}${B.toLowerCase()}`, `Les points ${A} et ${B} sont parallèles`], x: `[${A}${B}] désigne le segment d'extrémités ${A} et ${B} : les crochets montrent que le trait s'arrête en ${A} et en ${B}.` },
+      { e: `Que signifie l'écriture ${d} // ${e} ?`, b: `La droite ${d} est parallèle à la droite ${e}.`, f: [`La droite ${d} est perpendiculaire à la droite ${e}.`, `Les droites ${d} et ${e} se coupent.`, `La droite ${d} est la moitié de la droite ${e}.`], x: 'Le symbole // signifie « est parallèle à » : les deux droites ont la même direction et ne se coupent jamais.' },
+      { e: `Que signifie l'écriture ${d} ⊥ ${e} ?`, b: `La droite ${d} est perpendiculaire à la droite ${e}.`, f: [`La droite ${d} est parallèle à la droite ${e}.`, `La droite ${d} est plus longue que la droite ${e}.`, `Les droites ${d} et ${e} ne se coupent jamais.`], x: 'Le symbole ⊥ signifie « est perpendiculaire à » : les deux droites se coupent en formant un angle droit.' },
+      { e: `Comment écrit-on « la droite ${d} est parallèle à la droite ${e} » ?`, b: `${d} // ${e}`, f: [`${d} ⊥ ${e}`, `[${d}${e}]`, `${d} = ${e}`], x: '« Est parallèle à » s\'écrit avec le symbole //.' },
+      { e: `Comment écrit-on « la droite ${d} est perpendiculaire à la droite ${e} » ?`, b: `${d} ⊥ ${e}`, f: [`${d} // ${e}`, `[${d}${e}]`, `${d} = ${e}`], x: '« Est perpendiculaire à » s\'écrit avec le symbole ⊥.' },
+      { e: `Comment écrit-on « le segment d'extrémités ${A} et ${B} » ?`, b: `[${A}${B}]`, f: [`${A} // ${B}`, `${A} ⊥ ${B}`, `${A.toLowerCase()}${B.toLowerCase()}`], x: `Un segment s'écrit avec des crochets et les noms de ses deux extrémités : [${A}${B}].` },
+      { e: `Sur une figure, on lit « ${A} » et « ${d} ». Que désignent-ils ?`, b: `${A} est un point et ${d} est une droite.`, f: [`${A} est une droite et ${d} est un point.`, `${A} et ${d} sont deux points.`, `${A} et ${d} sont deux droites.`], x: 'On nomme un point par une lettre majuscule (A) et une droite par une lettre minuscule (a).' },
+    ]);
+    return { ...qcm(rng, cas.b, cas.f), difficulte: 1, enonce: cas.e, explication: cas.x };
+  }, 2),
+  // Droites parallèles et perpendiculaires sur une figure.
+  forme((rng) => {
+    const [a, b, c, d] = deuxLettres(rng, LETTRES_DR, 4);
+    const W = 340; const H = 240; const ctr = [W / 2, H / 2];
+    const th = rng.int(0, 35) * 5 * Math.PI / 180; const u = [Math.cos(th), Math.sin(th)]; const nv = [-u[1], u[0]];
+    const ecart = rng.int(55, 85); const decal = rng.int(-40, 40);
+    const phi = th + rng.pick([1, -1]) * rng.int(30, 60) * Math.PI / 180; const w = [Math.cos(phi), Math.sin(phi)];
+    const pA = [ctr[0] - nv[0] * ecart / 2, ctr[1] - nv[1] * ecart / 2]; const pB = [ctr[0] + nv[0] * ecart / 2, ctr[1] + nv[1] * ecart / 2];
+    const pC = [ctr[0] + u[0] * decal, ctr[1] + u[1] * decal]; const offD = decal + rng.pick([-1, 1]) * rng.int(45, 70); const pD = [ctr[0] + u[0] * offD, ctr[1] + u[1] * offD];
+    const droite = (p, v, nom) => {
+      const t = 300; const A1 = [p[0] - v[0] * t, p[1] - v[1] * t]; const B1 = [p[0] + v[0] * t, p[1] + v[1] * t];
+      return { A1, B1, nom, p, v };
+    };
+    const D = [droite(pA, u, a), droite(pB, u, b), droite(pC, nv, c), droite(pD, w, d)];
+    // Découpe dans le cadre.
+    const clip = ({ p, v }) => { let t0 = -1e9; let t1 = 1e9; for (const [pp, q] of [[-v[0], p[0] - 12], [v[0], W - 12 - p[0]], [-v[1], p[1] - 12], [v[1], H - 12 - p[1]]]) { if (Math.abs(pp) < 1e-9) continue; const t = q / pp; if (pp < 0) t0 = Math.max(t0, t); else t1 = Math.min(t1, t); } return [[p[0] + v[0] * t0, p[1] + v[1] * t0], [p[0] + v[0] * t1, p[1] + v[1] * t1]]; };
+    let s = '';
+    const inter = (L1, L2) => { const det = L1.v[0] * L2.v[1] - L1.v[1] * L2.v[0]; const t = ((L2.p[0] - L1.p[0]) * L2.v[1] - (L2.p[1] - L1.p[1]) * L2.v[0]) / det; return [L1.p[0] + L1.v[0] * t, L1.p[1] + L1.v[1] * t]; };
+    D.forEach((L) => { const [e1, e2] = clip(L); L.e = [e1, e2]; s += ligneSvg(e1, e2, { sw: 2 }); });
+    const marque = rng.next() < 0.5 ? [0] : [0, 1];
+    for (const i of marque) { const I = inter(D[i], D[2]); s += angleDroitSvg(I, D[i].v, D[2].v, 10); }
+    // Étiquettes : près d'un bout de chaque droite, loin des autres étiquettes et des autres droites.
+    const distDroite = (q, L) => Math.abs((q[0] - L.p[0]) * L.v[1] - (q[1] - L.p[1]) * L.v[0]);
+    // La droite oblique ne doit pas passer près des angles droits (sinon on croirait qu'elle y passe).
+    if ([0, 1].some((i) => distDroite(inter(D[i], D[2]), D[3]) < 30)) return null;
+    const poses = [];
+    for (const L of D) {
+      const cands = [];
+      for (const [e, f] of [[L.e[1], L.e[0]], [L.e[0], L.e[1]]]) {
+        for (const t of [16, 34]) {
+          for (const sg of [1, -1]) {
+            const dir = [f[0] - e[0], f[1] - e[1]]; const n2 = Math.hypot(...dir);
+            const q = [e[0] + dir[0] / n2 * t - dir[1] / n2 * 11 * sg, e[1] + dir[1] / n2 * t + dir[0] / n2 * 11 * sg];
+            if (q[0] < 10 || q[0] > W - 10 || q[1] < 12 || q[1] > H - 10) continue;
+            const score = Math.min(...poses.map((p2) => Math.hypot(q[0] - p2[0], q[1] - p2[1]) / 2.4), ...D.filter((M) => M !== L).map((M) => distDroite(q, M)));
+            cands.push([score, q]);
+          }
+        }
+      }
+      cands.sort((x, y) => y[0] - x[0]);
+      if (!cands.length || cands[0][0] < 9) return null;
+      poses.push(cands[0][1]);
+      s += texteSvg(cands[0][1][0], cands[0][1][1], L.nom, { size: 16, bold: true, halo: true });
+    }
+    const vraies = [`${a} // ${b}`, `${b} // ${a}`, `${c} ⊥ ${a}`, `${a} ⊥ ${c}`, `${c} ⊥ ${b}`, `${b} ⊥ ${c}`];
+    const fausses = [`${a} ⊥ ${b}`, `${c} // ${a}`, `${c} // ${b}`, `${d} ⊥ ${a}`, `${d} // ${c}`, `${d} // ${a}`, `${b} ⊥ ${d}`, `${d} ⊥ ${c}`];
+    const nier = rng.next() < 0.3;
+    const q = nier ? qcm(rng, rng.pick(fausses), rng.shuffle(vraies).filter((x, i, arr) => arr.findIndex((y) => y.split(' ').sort().join() === x.split(' ').sort().join()) === i))
+      : qcm(rng, rng.pick(vraies), rng.shuffle(fausses));
+    return {
+      ...q, difficulte: 2,
+      enonce: nier ? 'D\'après la figure, quelle écriture est FAUSSE ?' : 'D\'après la figure, quelle écriture est vraie ?',
+      cle: `${a}${b}${c}${d}|${th.toFixed(2)}|${phi.toFixed(2)}|${ecart}|${decal}|${offD}|${marque.length}`,
+      figure: svg(W, H, s),
+      explication: `${a} et ${b} ne se coupent pas : ${a} // ${b}. Le petit carré montre un angle droit : ${c} ⊥ ${a}, et comme ${b} // ${a}, on a aussi ${c} ⊥ ${b}. La droite ${d} coupe les autres droites sans former d'angle droit : elle n'est ni parallèle ni perpendiculaire aux autres.`,
+    };
+  }, 2),
+  // Nature d'une figure d'après le codage.
+  forme((rng) => {
+    const tri = rng.next() < 0.5;
+    const modele = rng.pick(tri ? TRIANGLES_CODES : QUADS_CODES);
+    const r1 = rng.int(0, 10) / 10;
+    let P = tourner(modele.pts(r1), rng.int(-8, 8) * 5 * Math.PI / 180, [5, -3]);
+    const miroir = rng.next() < 0.5;
+    if (miroir) P = P.map(([x, y]) => [-x, y]);
+    const noms = deuxLettres(rng, LETTRES_PTS, P.length);
+    const Pc = cadrer(P, 320, 210, 36);
+    const figure = svg(320, 210, figurePolygoneCode(Pc, noms, modele.codes, modele.droits, rng.pick(FONDS)));
+    const nom = `${tri ? 'triangle ' : ''}${modele.nom}`;
+    const pool = tri ? TRIANGLES_CODES.map((m) => m.nom).filter((x) => x !== modele.nom && !(modele.exclus || []).includes(x)).map((x) => `triangle ${x}`)
+      : ['carré', 'rectangle', 'losange', 'parallélogramme', 'trapèze'].filter((x) => x !== modele.nom);
+    const q = qcm(rng, nom, rng.shuffle(pool));
+    return {
+      ...q, difficulte: 2,
+      enonce: `D'après le codage, quel est le nom le plus précis de ${tri ? 'ce triangle' : 'ce quadrilatère'} ${noms.join('')} ?`,
+      cle: `${modele.nom}|${r1}|${noms.join('')}|${miroir}|${Pc.flat().map(Math.round).join(',')}`,
+      figure,
+      explication: `${modele.expl} (Petits traits identiques = côtés de même longueur ; petit carré = angle droit.)`,
+    };
+  }, 2),
+  // Quels côtés ont la même longueur d'après le codage ?
+  forme((rng) => {
+    const n = rng.pick([4, 4, 5]);
+    const base = n === 4 ? [[0, 0], [rng.int(8, 12), rng.int(-1, 1)], [rng.int(8, 12), -rng.int(5, 8)], [rng.int(0, 3), -rng.int(5, 8)]]
+      : [[0, 0], [rng.int(7, 10), 0], [rng.int(10, 12), -rng.int(4, 6)], [rng.int(4, 6), -rng.int(8, 10)], [-rng.int(1, 3), -rng.int(4, 6)]];
+    const P = tourner(base, rng.int(-6, 6) * 5 * Math.PI / 180, [5, -4]);
+    const [i, j] = rng.shuffle(range(0, n - 1)).slice(0, 2);
+    const codes = range(0, n - 1).map(() => 0);
+    const autres = rng.shuffle(range(0, n - 1).filter((k) => k !== i && k !== j));
+    codes[i] = 2; codes[j] = 2; codes[autres[0]] = 1; if (autres[1] !== undefined && rng.next() < 0.6) codes[autres[1]] = 3;
+    const noms = deuxLettres(rng, LETTRES_PTS, n);
+    const seg = (k) => `[${noms[k]}${noms[(k + 1) % n]}]`;
+    const Pc = cadrer(P, 320, 210, 36);
+    // Le codage ne doit pas contredire grossièrement le dessin : les deux côtés codés pareil ont presque la même longueur.
+    const lg = (k) => Math.hypot(Pc[(k + 1) % n][0] - Pc[k][0], Pc[(k + 1) % n][1] - Pc[k][1]);
+    if (Math.max(lg(i), lg(j)) / Math.min(lg(i), lg(j)) > 1.25) return null;
+    const paires = [];
+    for (let x = 0; x < n; x++) for (let y = x + 1; y < n; y++) paires.push([x, y]);
+    const bonne = `${seg(Math.min(i, j))} et ${seg(Math.max(i, j))}`;
+    const fausses = paires.filter(([x, y]) => !(codes[x] && codes[x] === codes[y])).map(([x, y]) => `${seg(x)} et ${seg(y)}`);
+    const q = qcm(rng, bonne, rng.shuffle(fausses));
+    return {
+      ...q, difficulte: 2,
+      enonce: `D'après le codage, quels côtés de ce polygone ont la même longueur ?`,
+      cle: `${noms.join('')}|${codes.join('')}|${Pc.flat().map(Math.round).join(',')}`,
+      figure: svg(320, 210, figurePolygoneCode(Pc, noms, codes, [], rng.pick(FONDS))),
+      explication: `Les côtés ${seg(Math.min(i, j))} et ${seg(Math.max(i, j))} portent le même codage (deux petits traits) : ils ont la même longueur (le dessin n'est pas forcément exact : on se fie au codage). Un codage différent (un trait, trois traits) indique une autre longueur.`,
+    };
+  }, 2),
+  // Le petit carré : angle droit.
+  forme((rng) => {
+    const noms = deuxLettres(rng, LETTRES_PTS, 4);
+    const k = rng.int(0, 3);
+    const P = cadrer(tourner([[0, 0], [rng.int(9, 13), 0], [rng.int(8, 12), -rng.int(5, 8)], [rng.int(0, 3), -rng.int(5, 8)]], rng.int(-6, 6) * 5 * Math.PI / 180, [5, -4]), 320, 200, 36);
+    // On redresse l'angle k pour qu'il soit vraiment droit : on place le sommet suivant sur la perpendiculaire.
+    const A = P[(k + 3) % 4]; const S = P[k]; const B = P[(k + 1) % 4];
+    const u = [(A[0] - S[0]) / Math.hypot(A[0] - S[0], A[1] - S[1]), (A[1] - S[1]) / Math.hypot(A[0] - S[0], A[1] - S[1])];
+    const lb = Math.hypot(B[0] - S[0], B[1] - S[1]); const v1 = [-u[1], u[0]]; const v2 = [u[1], -u[0]];
+    const choixV = Math.hypot(S[0] + v1[0] * lb - B[0], S[1] + v1[1] * lb - B[1]) < Math.hypot(S[0] + v2[0] * lb - B[0], S[1] + v2[1] * lb - B[1]) ? v1 : v2;
+    P[(k + 1) % 4] = [S[0] + choixV[0] * lb, S[1] + choixV[1] * lb];
+    const Pc = cadrer(P, 320, 200, 36);
+    const bonne = `L'angle en ${noms[k]} est un angle droit.`;
+    const q = qcm(rng, bonne, [`Les côtés qui partent de ${noms[k]} ont la même longueur.`, `L'angle en ${noms[k]} est plus petit qu'un angle droit.`, `Le côté [${noms[k]}${noms[(k + 1) % 4]}] est parallèle au côté [${noms[(k + 3) % 4]}${noms[k]}].`]);
+    return {
+      ...q, difficulte: 1,
+      enonce: `Que signifie le petit carré dessiné en ${noms[k]} ?`,
+      cle: `${noms.join('')}|${k}|${Pc.flat().map(Math.round).join(',')}`,
+      figure: svg(320, 200, figurePolygoneCode(Pc, noms, [0, 0, 0, 0], [k], rng.pick(FONDS))),
+      explication: `Le petit carré est le codage de l'angle droit : en ${noms[k]}, les côtés [${noms[(k + 3) % 4]}${noms[k]}] et [${noms[k]}${noms[(k + 1) % 4]}] sont perpendiculaires.`,
+    };
+  }),
+]);
+
+
 export const GENERATEURS = {
   ma_tc_aires_quadrilateres: aires,
   ma_tc_logique_deductive: logique,
@@ -1538,4 +2539,9 @@ export const GENERATEURS = {
   ma_tc_perimetre_constant: perimetreConstant,
   ma_tc_vocabulaire_operations: vocabulaireOperations,
   ma_tc_egalites: egalites,
+  ma_tc_fractions_operations: fractionsOperations,
+  ma_tc_achats_promos: achatsPromos,
+  ma_tc_graphe_fleche: grapheFleche,
+  ma_tc_solides_faces: solidesFaces,
+  ma_tc_symboles_geo: symbolesGeo,
 };

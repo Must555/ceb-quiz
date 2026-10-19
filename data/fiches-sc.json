@@ -91,7 +91,7 @@
     "Racine : puise l'eau et les sels minéraux, fixe la plante. Tige : soutient et transporte la sève. Feuille : fabrique la nourriture.",
     "Photosynthèse : avec la lumière, les feuilles utilisent l'eau et le dioxyde de carbone pour fabriquer des sucres, et rejettent du dioxygène.",
     "Pour germer, une graine a besoin d'eau, d'air et de chaleur (pas forcément de lumière).",
-  "Dans le noir, une jeune plante s'allonge vite grâce aux réserves de la graine, mais reste jaune et fragile ; sans lumière, elle finit par mourir.",
+    "Dans le noir, une jeune plante s'allonge vite grâce aux réserves de la graine, mais reste jaune et fragile ; sans lumière, elle finit par mourir.",
     "Feuillus : feuilles larges ; conifères : aiguilles ou écailles, graines dans des cônes."
    ],
    "exemple": "La tomate contient des graines : pour un botaniste, c'est un fruit.",
@@ -431,6 +431,90 @@
    ],
    "exemple": "Pour courir, le muscle reçoit le dioxygène (poumons → sang → cœur → artères) et les nutriments (intestin grêle → sang).",
    "astuce": "Le sang est le « camion de livraison » qui relie les trois systèmes."
+  },
+  {
+   "id": "sc-ventilation",
+   "matiere": "sc",
+   "e": "🎈",
+   "titre": "Le modèle de la ventilation",
+   "regle": [
+    "Dans le modèle : la bouteille représente la cage thoracique, la membrane en caoutchouc le diaphragme, les ballons les poumons, le tube la trachée et les branches du Y les bronches.",
+    "On tire la membrane vers le bas : le volume dans la bouteille augmente, l'air entre et les ballons se gonflent. C'est l'inspiration.",
+    "On pousse la membrane vers le haut : le volume diminue, l'air sort et les ballons se dégonflent. C'est l'expiration.",
+    "Un modèle ne montre pas tout : dans le corps, les côtes bougent aussi, le diaphragme est un muscle, et les poumons contiennent des millions d'alvéoles."
+   ],
+   "exemple": "Le diaphragme s'abaisse → la cage thoracique s'agrandit → l'air entre dans les poumons (inspiration).",
+   "astuce": "Membrane tirée vers le bas = diaphragme qui s'abaisse = l'air entre."
+  },
+  {
+   "id": "sc-faits-hypotheses",
+   "matiere": "sc",
+   "e": "💬",
+   "titre": "Fait, hypothèse ou jugement ?",
+   "regle": [
+    "Un fait est une observation ou une mesure que tout le monde peut vérifier : « Après une semaine, 8 graines sur 10 ont germé. »",
+    "Une hypothèse est une idée que l'on va vérifier par une expérience : « Je pense que les graines ont besoin d'eau pour germer. »",
+    "Un jugement de valeur est un avis personnel, qui dépend des goûts : « Cette expérience est la plus amusante. »",
+    "En sciences, on conclut à partir des faits, jamais à partir des goûts."
+   ],
+   "exemple": "« Le glaçon au soleil a fondu en 20 minutes » est un fait ; « Les glaçons en étoile sont les plus jolis » est un jugement de valeur.",
+   "astuce": "Mots d'un jugement : beau, joli, amusant, meilleur, nul… Mots d'une hypothèse : je pense que, peut-être que…"
+  },
+  {
+   "id": "sc-transfert-chaleur",
+   "matiere": "sc",
+   "e": "♨️",
+   "titre": "La chaleur voyage du chaud vers le froid",
+   "regle": [
+    "La chaleur (énergie thermique) passe toujours d'une matière chaude vers une matière plus froide ; d'elle-même, elle ne va jamais dans l'autre sens.",
+    "La matière chaude se refroidit, la matière froide se réchauffe, jusqu'à ce qu'elles aient la même température : alors la chaleur ne passe plus.",
+    "Un objet posé dans une pièce finit à la température de la pièce.",
+    "Si on mélange la même quantité d'eau chaude et d'eau froide, la température du mélange est entre les deux (à peu près au milieu) : les températures ne s'additionnent pas."
+   ],
+   "exemple": "Un glaçon dans une limonade : la chaleur passe de la limonade vers le glaçon. La limonade refroidit et le glaçon fond.",
+   "astuce": "On ne dit pas « le froid entre » : c'est toujours la chaleur qui se déplace."
+  },
+  {
+   "id": "sc-economie-chaleur",
+   "matiere": "sc",
+   "e": "🏠",
+   "titre": "Limiter les pertes de chaleur",
+   "regle": [
+    "Se chauffer consomme beaucoup d'énergie : en hiver, la chaleur de la maison s'échappe vers l'extérieur, plus froid.",
+    "Pour limiter les pertes, on isole : toit, murs, double vitrage (une couche d'air ou de gaz entre deux vitres).",
+    "Gestes utiles : fermer volets et rideaux le soir, fermer les portes des pièces non chauffées, aérer peu de temps mais fenêtres grandes ouvertes, baisser un peu le chauffage.",
+    "Un isolant (laine, polystyrène, liège, air immobile) ne produit pas de chaleur : il ralentit son passage. Les métaux, eux, conduisent bien la chaleur."
+   ],
+   "exemple": "Plusieurs couches de vêtements emprisonnent de l'air : la chaleur du corps s'échappe moins.",
+   "astuce": "Moins de chaleur perdue = moins de mazout ou de gaz brûlé = moins de dioxyde de carbone rejeté."
+  },
+  {
+   "id": "sc-mesures",
+   "matiere": "sc",
+   "e": "📏",
+   "titre": "Instruments et unités",
+   "regle": [
+    "Température : le thermomètre, en degrés Celsius (°C). Masse : la balance, en grammes (g) ou kilogrammes (kg).",
+    "Durée : le chronomètre, en secondes (s) ou minutes (min). Volume d'un liquide : le verre gradué ou l'éprouvette graduée, en millilitres (mL) ou litres (L).",
+    "Quantité de pluie : le pluviomètre, en millimètres (mm). Longueur : le mètre ruban ou la latte, en centimètres (cm) ou mètres (m).",
+    "Pour lire une graduation, compte combien vaut un petit trait entre deux nombres écrits. Écris toujours l'unité avec le résultat."
+   ],
+   "exemple": "Entre 20 et 30 °C il y a 5 petits intervalles : chaque trait vaut 2 °C.",
+   "astuce": "1 kg = 1 000 g ; 1 L = 1 000 mL ; 1 min = 60 s."
+  },
+  {
+   "id": "sc-sang",
+   "matiere": "sc",
+   "e": "🩸",
+   "titre": "Le sang",
+   "regle": [
+    "Le sang est formé d'un liquide, le plasma, dans lequel baignent les globules rouges, les globules blancs et les plaquettes.",
+    "Les globules rouges transportent le dioxygène ; ils donnent au sang sa couleur rouge.",
+    "Les globules blancs défendent le corps contre les microbes. Les plaquettes aident à boucher une plaie.",
+    "Le plasma transporte les nutriments et des déchets, comme le dioxyde de carbone, vers les organes qui les évacuent."
+   ],
+   "exemple": "Quand on se coupe, les plaquettes aident à former un bouchon (un caillot) : le saignement s'arrête.",
+   "astuce": "Le sang est le « camion de livraison » du corps : il apporte le dioxygène et les nutriments, il emporte les déchets."
   }
  ]
 }

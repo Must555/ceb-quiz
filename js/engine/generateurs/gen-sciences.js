@@ -24,8 +24,8 @@ const majuscule = (s) => (s ? String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) 
 const nettoyer = (s) => (s == null ? s : majuscule(String(s).replace(/\s+([.,])/g, '$1').replace(/\s{2,}/g, ' ').trim()));
 const remplir = (t, vars) => String(t ?? '').replace(/\{([A-Za-z_]+)\}/g, (_, k) => (vars[k] == null ? '' : String(vars[k])));
 
-const FILLES = ['Léa', 'Agathe', 'Emma', 'Louise', 'Juliette', 'Océane', 'Amélie', 'Chloé', 'Zoé', 'Solène', 'Maëlle', 'Alice', 'Pauline', 'Margaux'];
-const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Théo', 'Hugo'];
+const FILLES = ['Léa', 'Agathe', 'Manon', 'Louise', 'Juliette', 'Camille', 'Amélie', 'Chloé', 'Mathilde', 'Clémence', 'Élise', 'Claire', 'Pauline', 'Margaux'];
+const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Mathis', 'Quentin', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Clément', 'Pierre'];
 const PRENOMS = [...FILLES, ...GARCONS];
 const pronom = (p) => (FILLES.includes(p) ? 'elle' : 'il');
 

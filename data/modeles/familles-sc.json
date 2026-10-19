@@ -203,6 +203,7 @@
   },
   {
    "id": "sc-f-animaux-regime",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "animaux",
    "domaine": "sc.vivant",
@@ -249,6 +250,7 @@
   },
   {
    "id": "sc-f-animaux-reproduction",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "animaux",
    "domaine": "sc.vivant",
@@ -294,6 +296,7 @@
   },
   {
    "id": "sc-f-animaux-hiver",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "animaux",
    "domaine": "sc.vivant",
@@ -340,6 +343,7 @@
   },
   {
    "id": "sc-f-cycles-vie",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "cycles",
    "domaine": "sc.vivant",
@@ -472,6 +476,7 @@
   },
   {
    "id": "sc-f-chaines-alimentaires",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "chaines",
    "domaine": "sc.vivant",
@@ -551,6 +556,7 @@
   },
   {
    "id": "sc-f-plante-parties",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "plante",
    "domaine": "sc.vivant",
@@ -580,6 +586,7 @@
   },
   {
    "id": "sc-f-fleur",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "fleur",
    "domaine": "sc.vivant",
@@ -640,6 +647,7 @@
   },
   {
    "id": "sc-f-plantes-vie",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "plantes_vie",
    "domaine": "sc.vivant",
@@ -708,6 +716,7 @@
   },
   {
    "id": "sc-f-arbres",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "arbres",
    "domaine": "sc.vivant",
@@ -780,6 +789,7 @@
   },
   {
    "id": "sc-f-plantes-mangees",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "plantes_mangees",
    "domaine": "sc.vivant",
@@ -924,6 +934,28 @@
      "difficulte": 1,
      "enonce": "Relie chaque organe des sens au sens qui lui correspond.",
      "explication": "{liste}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "sang",
+     "fiche": "sc-sang",
+     "enonce": "Dans le sang, quel est le rôle de cet élément : {cle} ?",
+     "explication": "{Cle} : {valeur}. Le sang est formé d'un liquide, le plasma, dans lequel baignent les globules rouges, les globules blancs et les plaquettes."
+    },
+    {
+     "sorte": "lequel",
+     "champ": "sang",
+     "fiche": "sc-sang",
+     "enonce": "Dans le sang, quel élément a ce rôle : {valeur} ?",
+     "explication": "{Cle} : {valeur}."
+    },
+    {
+     "sorte": "association",
+     "champ": "sang",
+     "n": 3,
+     "fiche": "sc-sang",
+     "enonce": "Relie chaque élément du sang à son rôle.",
+     "explication": "{liste}."
     }
    ]
   },
@@ -1006,6 +1038,7 @@
   },
   {
    "id": "sc-f-dents",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "dents",
    "domaine": "sc.vivant",
@@ -1064,6 +1097,7 @@
   },
   {
    "id": "sc-f-alimentation",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "alimentation",
    "domaine": "sc.vivant",
@@ -1120,6 +1154,7 @@
   },
   {
    "id": "sc-f-etats-matiere",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "etats",
    "domaine": "sc.matiere",
@@ -1168,6 +1203,7 @@
   },
   {
    "id": "sc-f-changements-etat",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "etats",
    "domaine": "sc.matiere",
@@ -1212,6 +1248,7 @@
   },
   {
    "id": "sc-f-cycle-eau",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "cycle_eau",
    "domaine": "sc.matiere",
@@ -1260,6 +1297,7 @@
   },
   {
    "id": "sc-f-melanges",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "melanges",
    "domaine": "sc.matiere",
@@ -1470,6 +1508,7 @@
   },
   {
    "id": "sc-f-dechets",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "dechets",
    "domaine": "sc.matiere",
@@ -1526,6 +1565,7 @@
   },
   {
    "id": "sc-f-air",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "air",
    "domaine": "sc.matiere",
@@ -1632,6 +1672,22 @@
     },
     {
      "sorte": "affirmation_grille"
+    },
+    {
+     "sorte": "affirmation",
+     "filtre": {
+      "bougie": "oui"
+     }
+    },
+    {
+     "sorte": "attribut",
+     "champ": "rep",
+     "distracteurs": "faux",
+     "filtre": {
+      "bougie": "oui"
+     },
+     "enonce": "{cle}",
+     "explication": "{pourquoi}"
     }
    ]
   },
@@ -1717,6 +1773,33 @@
     },
     {
      "sorte": "affirmation_grille"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "source",
+     "avec": "chauffage",
+     "ordreFixe": true,
+     "enonce": "Une famille se chauffe avec {chauffage}. Elle utilise ainsi {cle} comme ressource d'énergie. Cette ressource est-elle renouvelable ou non renouvelable ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "lequel",
+     "champ": "source",
+     "avec": "chauffage",
+     "enonce": "Pour se chauffer, laquelle de ces ressources d'énergie est {valeur} ?",
+     "explication": "{Cle} : ressource {valeur}. {info}"
+    },
+    {
+     "sorte": "grille",
+     "champ": "source",
+     "avec": "chauffage",
+     "element": "{chauffage}",
+     "valeurs": [
+      "renouvelable",
+      "non renouvelable"
+     ],
+     "enonce": "Ces appareils de chauffage utilisent-ils une ressource d'énergie renouvelable ou non renouvelable ?",
+     "explication": "{liste}."
     }
    ]
   },
@@ -1771,6 +1854,7 @@
   },
   {
    "id": "sc-f-circuit",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "circuit",
    "domaine": "sc.energie",
@@ -1813,6 +1897,7 @@
   },
   {
    "id": "sc-f-lumiere-son",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "lumiere",
    "domaine": "sc.energie",
@@ -1862,6 +1947,7 @@
   },
   {
    "id": "sc-f-systeme-solaire",
+   "poids": 0.5,
    "generateur": "sciences",
    "base": "systeme_solaire",
    "domaine": "sc.energie",

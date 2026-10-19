@@ -307,7 +307,13 @@
    "difficulte": 2,
    "generateur": "fr_conj",
    "formes": [
-    "choisir"
+    "choisir",
+    {
+     "fiche": "fr-passe-compose"
+    },
+    {
+     "fiche": "fr-temps-recit"
+    }
    ]
   },
   {
@@ -317,7 +323,13 @@
    "difficulte": 2,
    "generateur": "fr_conj",
    "formes": [
-    "temps"
+    "temps",
+    {
+     "fiche": "fr-passe-compose"
+    },
+    {
+     "fiche": "fr-temps-recit"
+    }
    ]
   },
   {
@@ -327,7 +339,10 @@
    "difficulte": 3,
    "generateur": "fr_conj",
    "formes": [
-    "ecrire"
+    "ecrire",
+    {
+     "fiche": "fr-conjugaison-temps-simples"
+    }
    ]
   },
   {
@@ -338,7 +353,10 @@
    "generateur": "fr_conj",
    "formes": [
     "mode",
-    "imperatif"
+    "imperatif",
+    {
+     "fiche": "fr-subjonctif-participe"
+    }
    ]
   },
   {
@@ -536,6 +554,57 @@
      "difficulte": 1,
      "enonce": "Quel est le mot de base de « {cle} » ?",
      "explication": "« {cle} » est formé à partir de « {valeur} » et du {sorte} « {affixe} »."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "graphie",
+     "filtre": {
+      "affixe": [
+       "in-",
+       "im-",
+       "il-",
+       "ir-"
+      ]
+     },
+     "valeurs": [
+      "in- devant les autres lettres",
+      "im- devant m, b ou p",
+      "il- devant l",
+      "ir- devant r"
+     ],
+     "ordreFixe": true,
+     "enonce": "Dans le mot « {cle} », pourquoi écrit-on le préfixe « {affixe} » ?",
+     "explication": "« {cle} » = {affixe} + {base}. On écrit {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "graphie",
+     "filtre": {
+      "affixe": [
+       "en-",
+       "em-"
+      ]
+     },
+     "valeurs": [
+      "en- devant les autres lettres",
+      "em- devant m, b ou p"
+     ],
+     "ordreFixe": true,
+     "enonce": "Le verbe « {cle} » vient du mot « {base} » (mettre dans). Pourquoi écrit-on le préfixe « {affixe} » ?",
+     "explication": "« {cle} » = {affixe} + {base}. On écrit {valeur}."
+    },
+    {
+     "sorte": "attribut",
+     "champ": "nom",
+     "avec": "graphie",
+     "filtre": {
+      "sens": "le contraire"
+     },
+     "saisie": true,
+     "souple": false,
+     "difficulte": 3,
+     "enonce": "Ajoute devant « {base} » le préfixe qui veut dire « le contraire » (in-, im-, il- ou ir-). Écris le mot obtenu.",
+     "explication": "On écrit « {cle} » : {graphie}."
     }
    ]
   },
@@ -770,7 +839,7 @@
      "sorte": "attribut",
      "champ": "intention",
      "enonce": "Lis cet extrait : « {cle} » Quelle est l'intention principale de l'auteur ?",
-     "explication": "L'auteur veut {valeur}. {indice}"
+     "explication": "Intention dominante : {valeur}. {indice}"
     },
     {
      "sorte": "attribut",
@@ -784,6 +853,21 @@
      "champ": "intention",
      "enonce": "Lequel de ces textes a pour but {valeurPhrase} ?",
      "explication": "{indice}"
+    },
+    {
+     "sorte": "attribut",
+     "champ": "structure",
+     "valeurs": [
+      "narrative",
+      "descriptive",
+      "explicative",
+      "argumentative",
+      "dialoguée"
+     ],
+     "ordreFixe": true,
+     "difficulte": 3,
+     "enonce": "Lis cet extrait : « {cle} » Quelle est sa structure dominante ?",
+     "explication": "C'est {valeurPhrase}. {indice}"
     }
    ]
   },

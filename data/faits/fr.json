@@ -10829,35 +10829,40 @@
      "affixe": "im-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "possible"
+     "base": "possible",
+     "graphie": "im- devant m, b ou p"
     },
     {
      "nom": "invisible",
      "affixe": "in-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "visible"
+     "base": "visible",
+     "graphie": "in- devant les autres lettres"
     },
     {
      "nom": "inconnu",
      "affixe": "in-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "connu"
+     "base": "connu",
+     "graphie": "in- devant les autres lettres"
     },
     {
      "nom": "illisible",
      "affixe": "il-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "lisible"
+     "base": "lisible",
+     "graphie": "il- devant l"
     },
     {
      "nom": "irrégulier",
      "affixe": "ir-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "régulier"
+     "base": "régulier",
+     "graphie": "ir- devant r"
     },
     {
      "nom": "malheureux",
@@ -10899,14 +10904,16 @@
      "affixe": "in-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "capable"
+     "base": "capable",
+     "graphie": "in- devant les autres lettres"
     },
     {
      "nom": "inutile",
      "affixe": "in-",
      "sorte": "préfixe",
      "sens": "le contraire",
-     "base": "utile"
+     "base": "utile",
+     "graphie": "in- devant les autres lettres"
     },
     {
      "nom": "dévisser",
@@ -11384,6 +11391,246 @@
      "sorte": "suffixe",
      "sens": "qui tire sur (un peu)",
      "base": "blanc"
+    },
+    {
+     "nom": "immobile",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "mobile",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "impatient",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "patient",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "impoli",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "poli",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "imprudent",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "prudent",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "imbuvable",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "buvable",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "immangeable",
+     "affixe": "im-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "mangeable",
+     "graphie": "im- devant m, b ou p"
+    },
+    {
+     "nom": "illégal",
+     "affixe": "il-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "légal",
+     "graphie": "il- devant l"
+    },
+    {
+     "nom": "illimité",
+     "affixe": "il-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "limité",
+     "graphie": "il- devant l"
+    },
+    {
+     "nom": "illogique",
+     "affixe": "il-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "logique",
+     "graphie": "il- devant l"
+    },
+    {
+     "nom": "irréel",
+     "affixe": "ir-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "réel",
+     "graphie": "ir- devant r"
+    },
+    {
+     "nom": "irresponsable",
+     "affixe": "ir-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "responsable",
+     "graphie": "ir- devant r"
+    },
+    {
+     "nom": "irréparable",
+     "affixe": "ir-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "réparable",
+     "graphie": "ir- devant r"
+    },
+    {
+     "nom": "irremplaçable",
+     "affixe": "ir-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "remplaçable",
+     "graphie": "ir- devant r"
+    },
+    {
+     "nom": "injuste",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "juste",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "inexact",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "exact",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "inattendu",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "attendu",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "incomplet",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "complet",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "inoubliable",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "oubliable",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "innombrable",
+     "affixe": "in-",
+     "sorte": "préfixe",
+     "sens": "le contraire",
+     "base": "nombrable",
+     "graphie": "in- devant les autres lettres"
+    },
+    {
+     "nom": "enterrer",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "terre",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "encadrer",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "cadre",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "enfourner",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "four",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "ensabler",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "sable",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "encaisser",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "caisse",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "enneiger",
+     "affixe": "en-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "neige",
+     "graphie": "en- devant les autres lettres"
+    },
+    {
+     "nom": "embouteiller",
+     "affixe": "em-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "bouteille",
+     "graphie": "em- devant m, b ou p"
+    },
+    {
+     "nom": "emprisonner",
+     "affixe": "em-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "prison",
+     "graphie": "em- devant m, b ou p"
+    },
+    {
+     "nom": "embarquer",
+     "affixe": "em-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "barque",
+     "graphie": "em- devant m, b ou p"
+    },
+    {
+     "nom": "emballer",
+     "affixe": "em-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "balle",
+     "graphie": "em- devant m, b ou p"
+    },
+    {
+     "nom": "empocher",
+     "affixe": "em-",
+     "sorte": "préfixe",
+     "sens": "dans",
+     "base": "poche",
+     "graphie": "em- devant m, b ou p"
     }
    ]
   },
@@ -13087,7 +13334,7 @@
      "relphrase": "le temps"
     },
     {
-     "nom": "La route était glissante ; ___, la voiture a dérapé.",
+     "nom": "La route était glissante ; ___ la voiture a dérapé.",
      "bonne": "c'est pourquoi",
      "relation": "conséquence",
      "faux": [
@@ -13095,7 +13342,7 @@
       "car",
       "mais"
      ],
-     "complete": "La route était glissante ; c'est pourquoi, la voiture a dérapé.",
+     "complete": "La route était glissante ; c'est pourquoi la voiture a dérapé.",
      "relphrase": "la conséquence"
     },
     {
@@ -13385,6 +13632,198 @@
      ],
      "complete": "Il ne fait pas beau ; alors, nous ferons un pique-nique dans le salon.",
      "relphrase": "la conséquence"
+    },
+    {
+     "nom": "Le vélo ne pollue pas, il est bon pour la santé et il ne coûte presque rien. ___, c'est le meilleur moyen d'aller à l'école.",
+     "bonne": "En conclusion",
+     "relation": "conclusion",
+     "faux": [
+      "Pourtant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Le vélo ne pollue pas, il est bon pour la santé et il ne coûte presque rien. En conclusion, c'est le meilleur moyen d'aller à l'école.",
+     "relphrase": "la conclusion"
+    },
+    {
+     "nom": "Nous avons visité le château, pique-niqué au bord du lac et fait une balade à vélo. ___, c'était une journée formidable.",
+     "bonne": "Bref",
+     "relation": "conclusion",
+     "faux": [
+      "Pourtant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Nous avons visité le château, pique-niqué au bord du lac et fait une balade à vélo. Bref, c'était une journée formidable.",
+     "relphrase": "la conclusion (on résume)"
+    },
+    {
+     "nom": "Les abeilles fabriquent le miel, pollinisent les fleurs et aident les fruits à pousser. ___, elles sont indispensables.",
+     "bonne": "En résumé",
+     "relation": "conclusion",
+     "faux": [
+      "Cependant",
+      "Car",
+      "Parce qu'"
+     ],
+     "complete": "Les abeilles fabriquent le miel, pollinisent les fleurs et aident les fruits à pousser. En résumé, elles sont indispensables.",
+     "relphrase": "la conclusion (on résume)"
+    },
+    {
+     "nom": "Il faut se brosser les dents, manger des fruits et éviter les bonbons. ___, prendre soin de ses dents, c'est facile !",
+     "bonne": "En conclusion",
+     "relation": "conclusion",
+     "faux": [
+      "Pourtant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Il faut se brosser les dents, manger des fruits et éviter les bonbons. En conclusion, prendre soin de ses dents, c'est facile !",
+     "relphrase": "la conclusion"
+    },
+    {
+     "nom": "Le film était drôle, les acteurs étaient excellents et la musique était belle. ___, je te le conseille.",
+     "bonne": "Bref",
+     "relation": "conclusion",
+     "faux": [
+      "Pourtant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Le film était drôle, les acteurs étaient excellents et la musique était belle. Bref, je te le conseille.",
+     "relphrase": "la conclusion (on résume)"
+    },
+    {
+     "nom": "Lire développe l'imagination, enrichit le vocabulaire et fait voyager. ___, lire est une excellente habitude.",
+     "bonne": "Pour conclure",
+     "relation": "conclusion",
+     "faux": [
+      "Cependant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Lire développe l'imagination, enrichit le vocabulaire et fait voyager. Pour conclure, lire est une excellente habitude.",
+     "relphrase": "la conclusion"
+    },
+    {
+     "nom": "Le chien garde la maison, joue avec les enfants et les accompagne en promenade. ___, c'est un compagnon précieux.",
+     "bonne": "En résumé",
+     "relation": "conclusion",
+     "faux": [
+      "Pourtant",
+      "Car",
+      "Parce que"
+     ],
+     "complete": "Le chien garde la maison, joue avec les enfants et les accompagne en promenade. En résumé, c'est un compagnon précieux.",
+     "relphrase": "la conclusion (on résume)"
+    },
+    {
+     "nom": "___ il pleut, nous irons au parc.",
+     "bonne": "Même s'",
+     "relation": "opposition",
+     "faux": [
+      "Parce qu'",
+      "Donc",
+      "Car"
+     ],
+     "complete": "Même s'il pleut, nous irons au parc.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Margaux a gagné la course, ___ elle avait mal au pied.",
+     "bonne": "même si",
+     "relation": "opposition",
+     "faux": [
+      "parce qu'",
+      "donc",
+      "car"
+     ],
+     "complete": "Margaux a gagné la course, même si elle avait mal au pied.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Le gâteau était un peu brûlé ; ___, tout le monde l'a mangé.",
+     "bonne": "cependant",
+     "relation": "opposition",
+     "faux": [
+      "donc",
+      "car",
+      "parce que"
+     ],
+     "complete": "Le gâteau était un peu brûlé ; cependant, tout le monde l'a mangé.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Il connaissait bien la route ; ___, il s'est perdu.",
+     "bonne": "pourtant",
+     "relation": "opposition",
+     "faux": [
+      "donc",
+      "car",
+      "parce qu'"
+     ],
+     "complete": "Il connaissait bien la route ; pourtant, il s'est perdu.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Nous jouerons dehors ___ il fait froid.",
+     "bonne": "même s'",
+     "relation": "opposition",
+     "faux": [
+      "parce qu'",
+      "donc",
+      "car"
+     ],
+     "complete": "Nous jouerons dehors même s'il fait froid.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Louis était fatigué ; ___, il a terminé son exposé.",
+     "bonne": "cependant",
+     "relation": "opposition",
+     "faux": [
+      "donc",
+      "car",
+      "parce qu'"
+     ],
+     "complete": "Louis était fatigué ; cependant, il a terminé son exposé.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "___ elle soit petite, Juliette porte les gros sacs.",
+     "bonne": "Bien qu'",
+     "relation": "opposition",
+     "faux": [
+      "Parce qu'",
+      "Donc",
+      "Car"
+     ],
+     "complete": "Bien qu'elle soit petite, Juliette porte les gros sacs.",
+     "relphrase": "l'opposition (concession : on s'attendait au contraire)"
+    },
+    {
+     "nom": "Le pont était fermé ; ___, nous avons fait un détour.",
+     "bonne": "par conséquent",
+     "relation": "conséquence",
+     "faux": [
+      "pourtant",
+      "car",
+      "parce que"
+     ],
+     "complete": "Le pont était fermé ; par conséquent, nous avons fait un détour.",
+     "relphrase": "la conséquence"
+    },
+    {
+     "nom": "Clément s'est entraîné tous les jours, ___ il a gagné le tournoi.",
+     "bonne": "donc",
+     "relation": "conséquence",
+     "faux": [
+      "car",
+      "mais",
+      "pourtant"
+     ],
+     "complete": "Clément s'est entraîné tous les jours, donc il a gagné le tournoi.",
+     "relphrase": "la conséquence"
     }
    ]
   },
@@ -13633,7 +14072,7 @@
    "items": [
     {
      "nom": "Mélange la farine et le sucre. Ajoute deux œufs, puis verse le lait petit à petit.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "une recette",
      "genre_faux": [
       "un conte",
@@ -13644,14 +14083,15 @@
     },
     {
      "nom": "Il était une fois une princesse qui vivait dans un château au milieu de la forêt. Un jour, un dragon apparut…",
-     "intention": "raconter une histoire",
+     "intention": "donner du plaisir, émouvoir",
      "genre": "un conte",
      "genre_faux": [
       "un texte documentaire",
       "une publicité",
       "une recette"
      ],
-     "indice": "« Il était une fois » et les personnages imaginaires montrent qu'on raconte une histoire."
+     "indice": "« Il était une fois » et les personnages imaginaires montrent qu'on raconte une histoire.",
+     "structure": "narrative"
     },
     {
      "nom": "Le hérisson est un petit mammifère couvert de piquants. Il se nourrit surtout d'insectes et de vers.",
@@ -13666,18 +14106,19 @@
     },
     {
      "nom": "Venez nombreux à la grande brocante de l'école ! Des centaines d'objets à petits prix vous attendent !",
-     "intention": "convaincre",
+     "intention": "persuader (convaincre, donner envie)",
      "genre": "une publicité",
      "genre_faux": [
       "un conte",
       "un texte documentaire",
       "une recette"
      ],
-     "indice": "Le texte cherche à donner envie de venir : il veut convaincre."
+     "indice": "Le texte cherche à donner envie de venir : il veut convaincre.",
+     "structure": "argumentative"
     },
     {
      "nom": "Branche l'appareil. Appuie sur le bouton rouge pendant trois secondes. Attends que la lumière verte s'allume.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "un mode d'emploi",
      "genre_faux": [
       "un conte",
@@ -13688,7 +14129,7 @@
     },
     {
      "nom": "Chaque joueur reçoit cinq cartes. Le plus jeune commence. Celui qui n'a plus de cartes gagne la partie.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "une règle du jeu",
      "genre_faux": [
       "un conte",
@@ -13699,14 +14140,14 @@
     },
     {
      "nom": "Le renard, affamé, aperçut un corbeau perché sur un arbre, un fromage dans le bec. Il décida de le tromper.",
-     "intention": "raconter une histoire",
      "genre": "une fable",
      "genre_faux": [
       "un texte documentaire",
       "une publicité",
       "une recette"
      ],
-     "indice": "Des animaux qui agissent comme des humains dans une histoire : c'est une fable."
+     "indice": "Des animaux qui agissent comme des humains dans une histoire : c'est une fable.",
+     "structure": "narrative"
     },
     {
      "nom": "Le lion d'Afrique vit dans la savane. Le mâle peut peser jusqu'à 250 kilos.",
@@ -13721,14 +14162,15 @@
     },
     {
      "nom": "Sans les abeilles, plus de pommes ni de fraises ! Protéger les abeilles, c'est protéger notre avenir.",
-     "intention": "convaincre",
+     "intention": "persuader (convaincre, donner envie)",
      "genre": "une affiche de sensibilisation",
      "genre_faux": [
       "un conte",
       "un texte documentaire",
       "une recette"
      ],
-     "indice": "Le texte veut faire réagir le lecteur et changer ses habitudes : il cherche à convaincre."
+     "indice": "Le texte veut faire réagir le lecteur et changer ses habitudes : il cherche à convaincre.",
+     "structure": "argumentative"
     },
     {
      "nom": "Hier, un violent orage a frappé la ville de Namur. Plusieurs rues ont été inondées.",
@@ -13739,33 +14181,36 @@
       "une publicité",
       "une recette"
      ],
-     "indice": "Le texte rapporte un fait réel qui vient de se passer : c'est un article."
+     "indice": "Le texte rapporte un fait réel qui vient de se passer : c'est un article.",
+     "structure": "narrative"
     },
     {
      "nom": "Ce matin-là, Léo se réveilla avec une étrange impression : son chat lui parlait !",
-     "intention": "raconter une histoire",
+     "intention": "donner du plaisir, émouvoir",
      "genre": "un récit imaginaire",
      "genre_faux": [
       "un texte documentaire",
       "une publicité",
       "une recette"
      ],
-     "indice": "Un personnage, un moment et un événement étrange : on raconte une histoire."
+     "indice": "Un personnage, un moment et un événement étrange : on raconte une histoire.",
+     "structure": "narrative"
     },
     {
      "nom": "Offrez-vous le nouveau vélo Turbo : léger, rapide et solide ! Vous ne le regretterez pas !",
-     "intention": "convaincre",
+     "intention": "persuader (convaincre, donner envie)",
      "genre": "une publicité",
      "genre_faux": [
       "un conte",
       "un texte documentaire",
       "une recette"
      ],
-     "indice": "Le texte vante un produit pour donner envie de l'acheter."
+     "indice": "Le texte vante un produit pour donner envie de l'acheter.",
+     "structure": "argumentative"
     },
     {
      "nom": "Coupe le carton en deux. Colle les deux morceaux l'un sur l'autre et laisse sécher.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "une fiche de bricolage",
      "genre_faux": [
       "un conte",
@@ -13787,29 +14232,31 @@
     },
     {
      "nom": "Le Petit Poucet et ses frères, perdus dans la forêt, marchèrent longtemps avant d'apercevoir une lumière.",
-     "intention": "raconter une histoire",
+     "intention": "donner du plaisir, émouvoir",
      "genre": "un conte",
      "genre_faux": [
       "un texte documentaire",
       "une publicité",
       "une recette"
      ],
-     "indice": "Des personnages de conte, une suite d'événements : on raconte une histoire."
+     "indice": "Des personnages de conte, une suite d'événements : on raconte une histoire.",
+     "structure": "narrative"
     },
     {
      "nom": "Lisez ce roman : c'est le plus passionnant de l'année ! Vous ne pourrez plus le lâcher !",
-     "intention": "convaincre",
+     "intention": "persuader (convaincre, donner envie)",
      "genre": "une critique de livre",
      "genre_faux": [
       "un conte",
       "un texte documentaire",
       "une recette"
      ],
-     "indice": "Le texte donne un avis pour pousser à lire le livre."
+     "indice": "Le texte donne un avis pour pousser à lire le livre.",
+     "structure": "argumentative"
     },
     {
      "nom": "En cas d'incendie, sors calmement de la classe et rejoins la cour sans courir.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "une consigne de sécurité",
      "genre_faux": [
       "un conte",
@@ -13831,18 +14278,19 @@
     },
     {
      "nom": "Il était une fois un loup qui avait très faim. Il frappa à la porte de la maison des trois petits cochons.",
-     "intention": "raconter une histoire",
+     "intention": "donner du plaisir, émouvoir",
      "genre": "un conte",
      "genre_faux": [
       "un texte documentaire",
       "une publicité",
       "une recette"
      ],
-     "indice": "« Il était une fois » annonce un conte."
+     "indice": "« Il était une fois » annonce un conte.",
+     "structure": "narrative"
     },
     {
      "nom": "Arrosez les plantes deux fois par semaine et placez-les près d'une fenêtre.",
-     "intention": "donner des consignes",
+     "intention": "enjoindre (donner des consignes, des ordres)",
      "genre": "une fiche d'entretien",
      "genre_faux": [
       "un conte",
@@ -13860,15 +14308,152 @@
       "une publicité",
       "une recette"
      ],
-     "indice": "Le texte rapporte un événement réel."
+     "indice": "Le texte rapporte un événement réel.",
+     "structure": "narrative"
+    },
+    {
+     "nom": "« Tu viens jouer ? demanda Léa. – Pas maintenant, répondit Louis, je finis mon dessin. – Alors je t'attends ! »",
+     "intention": "donner du plaisir, émouvoir",
+     "structure": "dialoguée",
+     "genre": "un dialogue de récit",
+     "genre_faux": [
+      "une recette",
+      "un texte documentaire",
+      "une publicité"
+     ],
+     "indice": "Les tirets et les verbes « demanda », « répondit » montrent que des personnages se parlent : c'est un dialogue."
+    },
+    {
+     "nom": "LE JOURNALISTE : Pourquoi aimez-vous les volcans ? LA SCIENTIFIQUE : Parce qu'ils nous apprennent comment la Terre fonctionne.",
+     "intention": "informer",
+     "structure": "dialoguée",
+     "genre": "une interview",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "une publicité"
+     ],
+     "indice": "Une personne pose des questions, une autre répond pour donner des informations : c'est une interview."
+    },
+    {
+     "nom": "Mon chat s'appelle Caramel. Il a un pelage roux, de longues moustaches blanches et de grands yeux verts.",
+     "intention": "informer",
+     "structure": "descriptive",
+     "genre": "une description",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "une publicité"
+     ],
+     "indice": "Le texte dit comment est le chat (couleur, moustaches, yeux) : il le décrit."
+    },
+    {
+     "nom": "La cuisine de Mamie est petite mais lumineuse. Au milieu, une table en bois ; près de la fenêtre, un vieux buffet bleu.",
+     "structure": "descriptive",
+     "genre": "une description",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "une publicité"
+     ],
+     "indice": "Le texte présente un lieu, ce qu'il y a et où se trouvent les objets : il décrit."
+    },
+    {
+     "nom": "Pourquoi les feuilles tombent-elles en automne ? Parce que l'arbre ne reçoit plus assez de lumière et d'eau : il se protège du froid en les laissant tomber.",
+     "intention": "informer",
+     "structure": "explicative",
+     "genre": "un texte explicatif",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "une publicité"
+     ],
+     "indice": "Le texte répond à la question « pourquoi ? » avec une cause : c'est un texte explicatif."
+    },
+    {
+     "nom": "Comment se forme un arc-en-ciel ? La lumière du soleil traverse les gouttes de pluie et se sépare en plusieurs couleurs.",
+     "intention": "informer",
+     "structure": "explicative",
+     "genre": "un texte explicatif",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "une publicité"
+     ],
+     "indice": "Le texte répond à la question « comment ? » : il explique un phénomène."
+    },
+    {
+     "nom": "Il faut interdire les voitures devant l'école. D'abord, l'air serait moins pollué. Ensuite, les élèves seraient plus en sécurité. C'est donc une bonne idée.",
+     "intention": "persuader (convaincre, donner envie)",
+     "structure": "argumentative",
+     "genre": "un texte argumentatif",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "un texte documentaire"
+     ],
+     "indice": "L'auteur donne son idée, puis des arguments, puis une conclusion : il veut convaincre."
+    },
+    {
+     "nom": "Adoptez un animal du refuge ! Ils attendent une famille, ils sont vaccinés et ils vous donneront tout leur amour.",
+     "intention": "persuader (convaincre, donner envie)",
+     "structure": "argumentative",
+     "genre": "une affiche de sensibilisation",
+     "genre_faux": [
+      "un conte",
+      "une recette",
+      "un texte documentaire"
+     ],
+     "indice": "Le texte donne des arguments pour pousser le lecteur à agir : il veut persuader."
+    },
+    {
+     "nom": "Dans le ciel de minuit, la lune ronde / Veille sur les toits et sur le monde.",
+     "intention": "donner du plaisir, émouvoir",
+     "genre": "un poème",
+     "genre_faux": [
+      "une recette",
+      "un texte documentaire",
+      "une publicité"
+     ],
+     "indice": "Les vers et les rimes (ronde / monde) montrent un poème : il cherche à faire rêver, à émouvoir."
+    },
+    {
+     "nom": "Un jour, un petit garçon trouva une graine magique. Il la planta, et le lendemain, un haricot géant touchait les nuages.",
+     "intention": "donner du plaisir, émouvoir",
+     "structure": "narrative",
+     "genre": "un conte",
+     "genre_faux": [
+      "un texte documentaire",
+      "une publicité",
+      "une recette"
+     ],
+     "indice": "Un personnage, des évènements qui se suivent et de la magie : on raconte une histoire pour le plaisir."
+    },
+    {
+     "nom": "Ne cours pas dans les couloirs. Range ton matériel avant de sortir. Respecte les autres.",
+     "intention": "enjoindre (donner des consignes, des ordres)",
+     "genre": "un règlement de classe",
+     "genre_faux": [
+      "un conte",
+      "un texte documentaire",
+      "une publicité"
+     ],
+     "indice": "Les verbes à l'impératif disent ce qu'il faut faire ou ne pas faire : le texte veut faire agir."
     }
    ],
    "phrases": {
     "intention": {
      "informer": "d'informer",
-     "convaincre": "de convaincre",
-     "raconter une histoire": "de raconter une histoire",
-     "donner des consignes": "de donner des consignes"
+     "persuader (convaincre, donner envie)": "de persuader (convaincre, donner envie)",
+     "enjoindre (donner des consignes, des ordres)": "d'enjoindre (donner des consignes, des ordres, des conseils)",
+     "donner du plaisir, émouvoir": "de donner du plaisir, de susciter des émotions"
+    },
+    "structure": {
+     "narrative": "une structure narrative",
+     "descriptive": "une structure descriptive",
+     "explicative": "une structure explicative",
+     "argumentative": "une structure argumentative",
+     "dialoguée": "une structure dialoguée"
     }
    }
   },

@@ -10,7 +10,7 @@
 // Les autres (conjugaison, participe passé, accord de l'adjectif, ordre alphabétique) combinent
 // des listes définies ci-dessous. `modele.formes` (liste de noms) choisit les sortes de questions.
 
-import { conjuguer, avecPronom, commenceParVoyelle, participePasse, AUX_ETRE, TEMPS, AU_TEMPS, aImperatif } from './conjugaison.js';
+import { conjuguer, avecPronom, commenceParVoyelle, participePasse, participePresent, AUX_ETRE, TEMPS, AU_TEMPS, aImperatif } from './conjugaison.js';
 
 const maj = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
 const bas = (s) => String(s).trim().toLowerCase();
@@ -477,7 +477,7 @@ function frAccordAdj(modele, rng) {
 
 // ───────────────────────── Conjugaison en contexte ─────────────────────────
 // [infinitif, complément]
-const VERBES_CONJ = [
+export const VERBES_CONJ = [
   ['chanter', 'une chanson'], ['jouer', 'au ballon'], ['regarder', 'les étoiles'], ['écouter', 'la radio'],
   ['dessiner', 'un dragon'], ['raconter', 'une blague'], ['chercher', 'un trésor'], ['marcher', 'dans la forêt'],
   ['danser', 'sur la scène'], ['aimer', 'les crêpes'], ['habiter', 'près de la gare'], ['arriver', 'à la gare'],
@@ -491,8 +491,61 @@ const VERBES_CONJ = [
   ['partir', 'en vacances'], ['savoir', 'la réponse'], ['devoir', 'partir tôt'], ['mettre', 'la table'], ['lire', 'un roman'],
   ['écrire', 'une lettre'], ['courir', 'très vite'], ['tenir', 'la corde'], ['revenir', 'du parc'], ['dormir', 'sous la tente'],
   ['sortir', 'du cinéma'], ['boire', 'un jus de pomme'], ['croire', 'cette histoire'], ['recevoir', 'un colis'],
+  // Étape 2 : 1er groupe (sans changement de radical, sauf ç / ge)
+  ['ajouter', 'du sel'], ['allumer', 'la lampe'], ['apporter', 'des fleurs'], ['attraper', 'le ballon'], ['bavarder', 'pendant le cours'],
+  ['bricoler', 'dans le garage'], ['cacher', 'le trésor'], ['camper', 'près du lac'], ['casser', 'un verre'], ['chuchoter', 'un secret'],
+  ['coller', 'des images'], ['colorier', 'un dessin'], ['compter', 'les billes'], ['couper', 'le pain'], ['crier', 'très fort'],
+  ['décorer', 'le sapin'], ['deviner', 'la réponse'], ['dîner', 'au restaurant'], ['discuter', 'avec le directeur'], ['emprunter', 'un livre'],
+  ['éviter', 'les flaques'], ['expliquer', 'la règle'], ['fabriquer', 'une cabane'], ['fermer', 'la porte'], ['frapper', 'à la porte'],
+  ['glisser', 'sur la glace'], ['goûter', 'la soupe'], ['grimper', 'aux arbres'], ['inviter', 'les voisins'], ['laver', 'la voiture'],
+  ['montrer', 'le chemin'], ['observer', 'les oiseaux'], ['oublier', 'les clés'], ['patiner', 'sur le lac gelé'], ['pêcher', 'dans la rivière'],
+  ['pleurer', 'de joie'], ['pousser', 'la brouette'], ['prêter', 'un crayon'], ['quitter', 'la maison'], ['ramasser', 'les feuilles'],
+  ['réciter', 'une poésie'], ['remercier', 'le facteur'], ['réparer', 'le vélo'], ['rêver', 'de vacances'], ['saluer', 'le public'],
+  ['siffler', 'une chanson'], ['souffler', 'les bougies'], ['soigner', 'le chat'], ['sonner', 'à la porte'], ['surveiller', 'les enfants'],
+  ['téléphoner', 'à la voisine'], ['tirer', 'le rideau'], ['toucher', 'le mur'], ['tourner', 'à gauche'], ['traverser', 'la rue'],
+  ['tricoter', 'une écharpe'], ['visiter', 'le musée'], ['sauver', 'le chaton'], ['entrer', 'dans la classe'],
+  ['plonger', 'dans la piscine'], ['bouger', 'sans arrêt'], ['corriger', 'les erreurs'], ['mélanger', 'les couleurs'], ['déménager', 'à Namur'],
+  ['interroger', 'le témoin'], ['encourager', 'les joueurs'], ['échanger', 'des cartes'], ['diriger', "l'orchestre"],
+  ['prononcer', 'un discours'], ['annoncer', 'la nouvelle'], ['remplacer', 'le joueur blessé'], ['tracer', 'un cercle'], ['foncer', 'vers la sortie'],
+  // 2e groupe
+  ['agir', 'vite'], ['avertir', 'les voisins'], ['bâtir', 'une maison'], ['bondir', 'de joie'], ['fleurir', 'le balcon'],
+  ['guérir', 'vite'], ['maigrir', 'un peu'], ['nourrir', 'les poules'], ['punir', 'le chien'], ['saisir', 'la balle'],
+  ['salir', 'le tapis'], ['vieillir', 'doucement'], ['accomplir', 'une mission'], ['agrandir', 'la maison'], ['arrondir', 'le résultat'],
+  ['atterrir', 'sur la piste'], ['démolir', 'le vieux mur'], ['divertir', 'le public'], ['élargir', 'la route'], ['envahir', 'le jardin'],
+  ['éblouir', 'les spectateurs'], ['fournir', 'les crayons'], ['grossir', 'un peu'], ['trahir', 'un ami'], ['rôtir', 'le poulet'],
+  ['polir', 'la pierre'], ['enrichir', 'la collection'], ['embellir', 'le jardin'], ['raccourcir', 'le pantalon'], ['blanchir', 'le mur'],
+  ['noircir', 'la page'], ['pâlir', 'de peur'], ['frémir', 'de peur'], ['établir', 'les règles'], ['garnir', 'le gâteau'],
+  ['réunir', 'la famille'], ['épaissir', 'la sauce'],
+  // 3e groupe (tables de conjugaison.js)
+  ['acquérir', "de l'expérience"], ['conquérir', 'le public'], ['mourir', 'de rire'], ['naître', 'au printemps'], ['asseoir', 'le bébé sur la chaise'],
+  ['vaincre', 'la peur'], ['convaincre', 'les parents'], ['résoudre', "l'énigme"], ['cueillir', 'des cerises'], ['accueillir', 'les invités'],
+  ['coudre', 'un bouton'], ['plaire', 'à tout le monde'], ['rire', 'aux éclats'], ['sourire', 'au photographe'], ['suivre', 'attentivement le cours'],
+  ['poursuivre', 'le voleur'], ['vivre', 'à la campagne'], ['battre', 'le record'], ['combattre', 'le dragon'], ['fuir', 'le danger'],
+  ['mentir', 'à la maîtresse'], ['sentir', 'les roses'], ['servir', 'le dessert'], ['repartir', 'vers la gare'], ['ouvrir', 'la fenêtre'],
+  ['couvrir', 'la casserole'], ['découvrir', 'un passage secret'], ['offrir', 'un cadeau'], ['souffrir', 'du froid'], ['conduire', 'le camion'],
+  ['construire', 'une tour'], ['détruire', 'le château de sable'], ['produire', 'un film'], ['traduire', 'le texte'], ['cuire', 'les pâtes'],
+  ['peindre', 'un paysage'], ['éteindre', 'la lumière'], ['atteindre', 'le sommet'], ['craindre', "l'orage"], ['plaindre', 'le pauvre chien'],
+  ['joindre', 'les mains'], ['rejoindre', 'le groupe'], ['connaître', 'le chemin'], ['reconnaître', 'la voix de Mamie'], ['paraître', 'en forme'],
+  ['apparaître', 'à la fenêtre'], ['disparaître', 'dans la nuit'], ['rompre', 'le silence'], ['interrompre', 'la réunion'], ['apercevoir', 'un écureuil'],
+  ['décevoir', 'le public'], ['prévoir', 'un pique-nique'], ['revoir', 'le film'], ['interdire', 'les bonbons'], ['prédire', "l'avenir"],
+  ['décrire', 'le paysage'], ['inscrire', 'la date au tableau'], ['relire', 'la consigne'], ['élire', 'un délégué'], ['parcourir', 'la forêt'],
+  ['secourir', 'le blessé'], ['refaire', 'le puzzle'], ['défaire', 'les valises'], ['obtenir', 'une médaille'], ['retenir', 'la leçon'],
+  ['appartenir', 'au club de foot'], ['soutenir', "l'équipe"], ['prévenir', 'les pompiers'], ['parvenir', 'au sommet'], ['apprendre', 'la poésie'],
+  ['comprendre', 'la leçon'], ['surprendre', 'les invités'], ['reprendre', 'du gâteau'], ['permettre', 'aux enfants de sortir'], ['promettre', 'de revenir'],
+  ['remettre', 'le livre en place'], ['vendre', 'des glaces'], ['attendre', 'le bus'], ['entendre', 'un bruit'], ['répondre', 'à la question'],
+  ['rendre', 'le livre'], ['perdre', 'la clé'], ['descendre', 'à la cave'], ['défendre', 'le château'], ['mordre', 'dans la pomme'],
+  ['tordre', 'le fil de fer'], ['fondre', 'en larmes'], ['tondre', 'la pelouse'], ['étendre', 'le linge'], ['confondre', 'les jumeaux'],
+  ['suspendre', 'le manteau'], ['correspondre', 'avec une amie anglaise'],
 ];
-const PAS_IMPERATIF = new Set(['être', 'avoir', 'tomber', 'arriver', 'habiter', 'aimer', 'savoir', 'voir', 'revenir', 'grandir', 'croire']);
+// Verbes dont l'impératif (ou une consigne « il faut… ») serait étrange dans ces phrases.
+const PAS_IMPERATIF = new Set(['être', 'avoir', 'tomber', 'arriver', 'habiter', 'aimer', 'savoir', 'voir', 'revenir', 'grandir', 'croire',
+  'casser', 'oublier', 'pleurer', 'guérir', 'maigrir', 'grossir', 'vieillir', 'pâlir', 'frémir', 'salir', 'trahir', 'envahir',
+  'vivre', 'reconnaître', 'découvrir', 'éblouir', 'atterrir']);
+// Verbes exclus des cadres « Il faut… », « Il faut que… », « en …-ant » (sens étrange ou action négative).
+const SANS_CADRE = new Set(['être', 'avoir', 'tomber', 'aller', 'pouvoir', 'devoir', 'vouloir', 'naître', 'mourir', 'perdre', 'casser',
+  'oublier', 'salir', 'trahir', 'mentir', 'décevoir', 'souffrir', 'pleurer', 'grossir', 'maigrir', 'vieillir', 'pâlir', 'frémir',
+  'craindre', 'interrompre', 'rompre', 'disparaître', 'confondre', 'fondre', 'mordre', 'apparaître', 'paraître', 'plaire', 'appartenir',
+  'correspondre', 'guérir', 'grandir', 'envahir', 'atterrir', 'recevoir', 'savoir', 'croire', 'arriver']);
 // [texte, idx de personne, genre ('m'/'f' ou null si inconnu), pronom ?]
 const SUJETS_CONJ = [
   ['je', 0, null, true], ['tu', 1, null, true], ['il', 2, 'm', true], ['elle', 2, 'f', true], ['nous', 3, null, true],
@@ -501,6 +554,8 @@ const SUJETS_CONJ = [
   ['Notre voisin', 2, 'm'], ['Juliette et Chloé', 5, 'f'], ['Mes cousins', 5, 'm'], ['Nathan et Agathe', 5, 'm'],
   ['Les filles', 5, 'f'], ['Lucas et Hugo', 5, 'm'], ['Ma sœur et moi', 3, null], ['Ton frère et toi', 4, null],
 ];
+const PERSONNES_SUBJ = [{ pronom: 'je', idx: 0 }, { pronom: 'tu', idx: 1 }, { pronom: 'il', idx: 2 }, { pronom: 'elle', idx: 2 },
+  { pronom: 'nous', idx: 3 }, { pronom: 'vous', idx: 4 }, { pronom: 'ils', idx: 5 }, { pronom: 'elles', idx: 5 }];
 const TEMPS_CONJ = ['present', 'imparfait', 'futur', 'passe_compose', 'passe_simple', 'conditionnel'];
 const INDICES_TEMPS = {
   present: 'Le présent exprime ce qui se passe maintenant ou une habitude.',
@@ -513,6 +568,9 @@ const INDICES_TEMPS = {
 
 const personneDe = (s) => ({ pronom: s[3] ? s[0] : ({ 3: 'nous', 4: 'vous', 5: 'ils' }[s[1]] ?? 'il'), idx: s[1], genre: s[2] ?? undefined });
 const conjForme = (v, t, s) => conjuguer(v, t, personneDe(s)).forme;
+const conjFormes = (v, t, s) => conjuguer(v, t, personneDe(s)).formesAcceptees;
+// Infinitifs acceptés aussi en orthographe rectifiée non gérée par le correcteur.
+const INF_RECTIFIE = { asseoir: ['assoir'] };
 function tempsPossibles(v, s) {
   return TEMPS_CONJ.filter((t) => {
     if (t === 'passe_simple' && ![2, 5].includes(s[1])) return false;
@@ -527,9 +585,9 @@ function frConj(modele, rng) {
   const [v, c] = rng.pick(VERBES_CONJ);
 
   if (mode === 'mode') {
-    const sorte = rng.pick(['indicatif', 'imperatif', 'infinitif']);
+    const sorte = rng.pick(['indicatif', 'imperatif', 'infinitif', 'subjonctif', 'participe']);
     if (['pouvoir', 'devoir', 'vouloir', 'recevoir'].includes(v)) return null;
-    let phrase; let f;
+    let phrase; let f; let fiche = 'fr-modes';
     if (sorte === 'indicatif') {
       const s = rng.pick(SUJETS_CONJ);
       const t = rng.pick(['present', 'imparfait', 'futur']);
@@ -540,22 +598,37 @@ function frConj(modele, rng) {
       if (PAS_IMPERATIF.has(v) || !aImperatif(v)) return null;
       f = maj(conjuguer(v, 'imperatif', { idx: rng.pick([1, 3, 4]) }).forme);
       phrase = `${f} ${c} !`;
-    } else {
-      if (['être', 'avoir', 'tomber', 'aller'].includes(v)) return null;
+    } else if (sorte === 'infinitif') {
+      if (SANS_CADRE.has(v)) return null;
       const cadre = rng.pick(['Il faut ', 'Nous allons ', 'Papa nous demande de ']);
       const de = cadre.endsWith('de ') && commenceParVoyelle(v) ? `${cadre.slice(0, -3)}d'` : cadre;
       phrase = `${de}${v} ${c}.`;
       f = v;
+    } else if (sorte === 'subjonctif') {
+      if (SANS_CADRE.has(v)) return null;
+      const p = rng.pick(PERSONNES_SUBJ);
+      f = conjuguer(v, 'subjonctif', p).forme;
+      const sujet = p.pronom === 'je' && commenceParVoyelle(f) ? `j'${f}` : `${p.pronom} ${f}`;
+      const que = rng.pick(['Il faut que', 'Maman veut que', 'Il est important que']);
+      phrase = `${que} ${sujet} ${c}.`.replace(/que (?=[aeiouéè])/, "qu'");
+      fiche = 'fr-subjonctif-participe';
+    } else {
+      if (SANS_CADRE.has(v)) return null;
+      f = `en ${participePresent(v)}`;
+      phrase = `${rng.pick(['Léa', 'Mon frère', 'Papa', 'La maîtresse', 'Grand-mère', 'Jules', 'Camille'])} ${rng.pick(['chantonne', 'sourit', 'sifflote'])} ${f} ${c}.`;
+      fiche = 'fr-subjonctif-participe';
     }
-    const choix = ['indicatif', 'impératif', 'infinitif'];
-    const bonne = { indicatif: 'indicatif', imperatif: 'impératif', infinitif: 'infinitif' }[sorte];
+    const choix = ['indicatif', 'impératif', 'infinitif', 'subjonctif', 'participe'];
+    const bonne = { indicatif: 'indicatif', imperatif: 'impératif', infinitif: 'infinitif', subjonctif: 'subjonctif', participe: 'participe' }[sorte];
     const expl = {
       indicatif: 'Le verbe est conjugué avec un sujet et présente un fait : c\'est l\'indicatif.',
       imperatif: 'Le verbe n\'a pas de sujet exprimé et donne un ordre ou un conseil : c\'est l\'impératif.',
       infinitif: 'Le verbe n\'est pas conjugué, c\'est la forme du dictionnaire : c\'est l\'infinitif.',
+      subjonctif: 'Après « il faut que », « vouloir que », « il est important que », le verbe se met au subjonctif présent.',
+      participe: 'La forme en -ant est le participe présent (ici précédé de « en ») : elle est invariable.',
     }[sorte];
     return {
-      _signature: `mode|${phrase}`, type: 'qcm', choix, reponse: choix.indexOf(bonne), fiche: 'fr-modes',
+      _signature: `mode|${phrase}`, type: 'qcm', choix, reponse: choix.indexOf(bonne), fiche,
       enonce: `Dans la phrase « ${phrase} », à quel mode est le verbe « ${f} » ?`,
       explication: `« ${f} » : ${bonne}. ${expl}`,
     };
@@ -605,7 +678,7 @@ function frConj(modele, rng) {
     if (TEMPS_CONJ.some((u) => u !== t && u !== 'passe_compose' && temps.includes(u) && conjForme(v, u, s) === f)) return null;
     const phrase = phraseAvec(s, f, c);
     return {
-      _signature: `inf|${v}|${t}|${s[0]}`, type: 'texte_court', reponse: [v], souple: false,
+      _signature: `inf|${v}|${t}|${s[0]}`, type: 'texte_court', reponse: [v, ...(INF_RECTIFIE[v] ?? [])], souple: false,
       enonce: `Quel est l'infinitif du verbe conjugué dans la phrase « ${phrase} » ?`,
       explication: `« ${f} » est le verbe « ${v} » conjugué ${AU_TEMPS[t]}. L'infinitif est la forme du dictionnaire (celle qu'on dit après « il faut… »).`,
     };
@@ -619,7 +692,7 @@ function frConj(modele, rng) {
     const t = rng.pick(cand);
     if (cerger && t === 'present' && s[1] !== 3) return null;
     const f = conjForme(v, t, s);
-    const rep = s[3] ? [f, avecPronom(s[0], f)] : [f, `${s[0]} ${f}`];
+    const rep = conjFormes(v, t, s).flatMap((x) => (s[3] ? [x, avecPronom(s[0], x)] : [x, `${s[0]} ${x}`]));
     const debut = s[3] ? (s[0] === 'je' && commenceParVoyelle(f) ? "J'…" : `${maj(s[0])} …`) : `${s[0]} …`;
     const cedille = cerger && /(ç|ge)[aoâ]/.test(f);
     return {

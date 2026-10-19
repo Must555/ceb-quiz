@@ -341,7 +341,260 @@ function diagramme(rng) {
   });
 }
 
-export const TRACES = { symetrie, agrandissement, cases, figureDimensions, cercle, perpendiculaire, axesSymetrie, diagramme };
+// ------------------------------------------------------------------ 9. Constructions au compas
+// Arc de cercle de centre C et de rayon R, autour de l'angle a (radians, repère écran), ouverture ±d.
+const arc = (C, R, a, d, couleur = ROUGE) => {
+  const P1 = [C[0] + R * Math.cos(a - d), C[1] + R * Math.sin(a - d)];
+  const P2 = [C[0] + R * Math.cos(a + d), C[1] + R * Math.sin(a + d)];
+  return `<path d="M ${r1(P1[0])} ${r1(P1[1])} A ${r1(R)} ${r1(R)} 0 0 1 ${r1(P2[0])} ${r1(P2[1])}" fill="none" stroke="${couleur}" stroke-width="0.35"/>`;
+};
+// Place des points (en mm) dans un cadre d'au moins wMin × hMin, centrés.
+const cadrePoints = (pts, marge = 12, wMin = 0, hMin = 0) => {
+  const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+  const W = Math.max(wMin, Math.max(...xs) - Math.min(...xs) + 2 * marge), H = Math.max(hMin, Math.max(...ys) - Math.min(...ys) + 2 * marge);
+  const dx = (W - (Math.max(...xs) - Math.min(...xs))) / 2 - Math.min(...xs), dy = (H - (Math.max(...ys) - Math.min(...ys))) / 2 - Math.min(...ys);
+  return { pts: pts.map(([x, y]) => [x + dx, y + dy]), W, H };
+};
+const NOMS_TRI = [['A', 'B', 'C'], ['D', 'E', 'F'], ['K', 'L', 'M'], ['R', 'S', 'T'], ['P', 'Q', 'R'], ['E', 'F', 'G']];
+function compas(rng) {
+  const sorte = rng.pick(['isocele', 'isocele', 'equilateral', 'equilateral', 'hexagone', 'triangleInscrit']);
+  if (sorte === 'hexagone' || sorte === 'triangleInscrit') {
+    const R = rng.int(5, 10) * 5; // rayon en mm (2,5 cm à 5 cm)
+    const depart = rng.int(0, 23) * 15;
+    const marge = 14;
+    const W = 2 * R + 2 * marge + 20, H = 2 * R + 2 * marge;
+    const O = [W / 2, H / 2];
+    const sommets = Array.from({ length: 6 }, (_, i) => { const a = (depart + 60 * i) * Math.PI / 180; return [O[0] + R * Math.cos(a), O[1] - R * Math.sin(a)]; });
+    const A = sommets[0];
+    const fond = `<circle cx="${r1(O[0])}" cy="${r1(O[1])}" r="${R}" fill="none" stroke="${NOIR}" stroke-width="0.6"/>${point(O, 'O', -5, -2)}${point(A, 'A', A[0] >= O[0] ? 2.5 : -6, A[1] <= O[1] ? -2 : 5)}`;
+    // Traces de compas : arc de rayon R centré sur chaque sommet, qui coupe le cercle au sommet suivant.
+    const marques = sommets.slice(1).map((S, i) => arc(sommets[i], R, Math.atan2(S[1] - sommets[i][1], S[0] - sommets[i][0]), 0.14)).join('');
+    const fig = sorte === 'hexagone' ? sommets : [sommets[0], sommets[2], sommets[4]];
+    const rcm = fmt(R / 10);
+    return base('compas', `${sorte}.${R}.${depart}`, {
+      fiche: 'ma-polygones',
+      difficulte: 3,
+      enonce: sorte === 'hexagone'
+        ? `Trace l'hexagone régulier inscrit dans ce cercle de centre O, en commençant au point A. Utilise ton compas sans changer son ouverture.`
+        : `Trace le triangle équilatéral inscrit dans ce cercle de centre O, dont un sommet est le point A. Utilise ton compas.`,
+      figure: svg(W, H, fond),
+      solution: svg(W, H, fond + marques + poly(fig, ROUGE), 0.6),
+      reponseTexte: sorte === 'hexagone'
+        ? `On ouvre le compas du rayon (${rcm} cm) et on reporte 6 fois cette longueur sur le cercle à partir de A ; on relie les 6 points. Les côtés de l'hexagone mesurent ${rcm} cm.`
+        : `On reporte 6 fois le rayon (${rcm} cm) sur le cercle à partir de A, puis on relie un point sur deux : A, le 3e et le 5e point.`,
+      explication: sorte === 'hexagone' ? 'Dans un hexagone régulier inscrit dans un cercle, chaque côté a la même longueur que le rayon : on reporte le rayon 6 fois au compas.' : 'On construit d\'abord les 6 sommets de l\'hexagone régulier (le rayon reporté 6 fois), puis on garde un sommet sur deux : le triangle obtenu est équilatéral.',
+    });
+  }
+  const noms = rng.pick(NOMS_TRI);
+  const b = rng.int(6, 16) * 5; // base en mm : 3 cm à 8 cm, par demi-centimètre
+  const c = sorte === 'equilateral' ? b : rng.int(Math.ceil((b / 2 + 12) / 5), 18) * 5;
+  if (sorte === 'isocele' && Math.abs(c - b) < 5) return null; // isocèle, pas équilatéral
+  const h = Math.sqrt(c * c - (b / 2) ** 2);
+  const ang = rng.pick([-20, -15, -10, -5, 0, 0, 5, 10, 15, 20]) * Math.PI / 180;
+  const u = [Math.cos(ang), Math.sin(ang)], n = [Math.sin(ang), -Math.cos(ang)];
+  const A0 = [0, 0], B0 = [b * u[0], b * u[1]], C0 = [b / 2 * u[0] + h * n[0], b / 2 * u[1] + h * n[1]];
+  const avecBase = rng.next() < 0.7;
+  // Sans côté déjà tracé, on laisse un cadre assez grand pour travailler.
+  const { pts: [A, B, C], W, H } = cadrePoints([A0, B0, C0], 14, avecBase ? 0 : 130, avecBase ? 0 : 95);
+  const [nA, nB, nC] = noms;
+  const lbl = (P, nom, dx, dy) => texte(P[0] + dx, P[1] + dy, nom, { taille: 4.5, gras: true });
+  const baseTrace = avecBase ? seg(A, B, NOIR, 0.6) + point(A, '') + point(B, '') + lbl(A, nA, -5, 3) + lbl(B, nB, 3, 3) : cadre(W, H);
+  const aC = Math.atan2(C[1] - A[1], C[0] - A[0]), bC = Math.atan2(C[1] - B[1], C[0] - B[0]);
+  const arcs = arc(A, c, aC, 0.18) + arc(B, c, bC, 0.18);
+  const sol = (avecBase ? '' : seg(A, B, ROUGE, 0.6) + lbl(A, nA, -5, 3) + lbl(B, nB, 3, 3)) + baseTrace.replace(cadre(W, H), '') + arcs + poly([A, B, C], ROUGE) + lbl(C, nC, 0, -3);
+  const bt = fmt(b / 10), ct = fmt(c / 10);
+  const enonce = sorte === 'equilateral'
+    ? (avecBase ? `Construis au compas le triangle équilatéral ${nA}${nB}${nC} à partir du côté [${nA}${nB}] déjà tracé.` : `Construis au compas un triangle équilatéral ${nA}${nB}${nC} de ${bt} cm de côté.`)
+    : (avecBase ? `Construis au compas le triangle isocèle ${nA}${nB}${nC} à partir du côté [${nA}${nB}] déjà tracé : [${nA}${nC}] et [${nB}${nC}] mesurent ${ct} cm.` : `Construis au compas un triangle isocèle ${nA}${nB}${nC} : [${nA}${nB}] mesure ${bt} cm, [${nA}${nC}] et [${nB}${nC}] mesurent ${ct} cm.`);
+  return base('compas', `${sorte}.${b}.${c}.${Math.round(ang * 100)}.${avecBase ? 1 : 0}.${noms.join('')}`, {
+    fiche: 'ma-triangles',
+    difficulte: avecBase ? 2 : 3,
+    enonce,
+    figure: svg(W, H, baseTrace),
+    solution: svg(W, H, sol, 0.6),
+    reponseTexte: `${avecBase ? '' : `On trace [${nA}${nB}] de ${bt} cm. `}On ouvre le compas de ${sorte === 'equilateral' ? bt : ct} cm, on trace un arc de centre ${nA} puis un arc de centre ${nB} : ils se croisent en ${nC}. On relie ${nC} à ${nA} et à ${nB}.`,
+    explication: sorte === 'equilateral' ? `Les trois côtés ont la même longueur : le compas garde l'ouverture de [${nA}${nB}] pour les deux arcs.` : `Les deux côtés égaux partent des extrémités de la base [${nA}${nB}] : un arc depuis ${nA} et un arc depuis ${nB}, avec la même ouverture (${ct} cm).`,
+  });
+}
+
+// ------------------------------------------------------------------ 10. Hauteurs, médianes, diagonales
+const NOMS_QUAD = [['A', 'B', 'C', 'D'], ['E', 'F', 'G', 'H'], ['K', 'L', 'M', 'N'], ['P', 'Q', 'R', 'S'], ['R', 'S', 'T', 'U']];
+const tourne = (pts, a) => pts.map(([x, y]) => [x * Math.cos(a) - y * Math.sin(a), x * Math.sin(a) + y * Math.cos(a)]);
+const marqueAngle = (H, u, v, couleur = ROUGE) => `<polyline points="${[[H[0] + u[0] * 3, H[1] + u[1] * 3], [H[0] + u[0] * 3 + v[0] * 3, H[1] + u[1] * 3 + v[1] * 3], [H[0] + v[0] * 3, H[1] + v[1] * 3]].map((p) => p.map(r1).join(',')).join(' ')}" fill="none" stroke="${couleur}" stroke-width="0.4"/>`;
+// Pied de la perpendiculaire menée de P sur la droite (A, B).
+const pied = (P, A, B) => { const d = [B[0] - A[0], B[1] - A[1]]; const t = ((P[0] - A[0]) * d[0] + (P[1] - A[1]) * d[1]) / (d[0] ** 2 + d[1] ** 2); return [A[0] + t * d[0], A[1] + t * d[1]]; };
+const unit = (P, Q) => { const L = Math.hypot(Q[0] - P[0], Q[1] - P[1]); return [(Q[0] - P[0]) / L, (Q[1] - P[1]) / L]; };
+function etiquettes(pts, noms) {
+  const c = pts.reduce((s, p) => [s[0] + p[0] / pts.length, s[1] + p[1] / pts.length], [0, 0]);
+  return pts.map((p, i) => { const u = unit(c, p); return texte(p[0] + u[0] * 5, p[1] + u[1] * 5 + 1.6, noms[i], { taille: 4.5, gras: true }); }).join('');
+}
+function hauteursMedianes(rng) {
+  const sorte = rng.pick(['hauteurTriangle', 'hauteurTriangle', 'hauteurParallelogramme', 'hauteurTrapeze', 'medianes', 'diagonales']);
+  const ang = rng.int(-4, 4) * 5 * Math.PI / 180;
+  let pts, noms, enonce, rep, expl, fiche = 'ma-diagonales-medianes', solExtra = '', sig, diff = 2;
+  if (sorte === 'hauteurTriangle') {
+    const k0 = rng.int(0, 2); noms = rng.pick(NOMS_TRI).map((_, i, l) => l[(i + k0) % 3]); // le sommet n'est pas toujours la 1re lettre
+    const b = rng.int(50, 90), h = rng.int(30, 55), t = rng.int(20, 80) / 100;
+    pts = [[t * b, -h], [0, 0], [b, 0]]; // sommet, puis le côté opposé
+    sig = `${b}.${h}.${t}`;
+  } else if (sorte === 'hauteurParallelogramme') {
+    noms = rng.pick(NOMS_QUAD);
+    const b = rng.int(55, 85), h = rng.int(25, 45), o = rng.int(10, Math.min(30, b - 25)) * rng.pick([1, -1]);
+    pts = [[0, 0], [b, 0], [b + o, -h], [o, -h]];
+    sig = `${b}.${h}.${o}`;
+  } else if (sorte === 'hauteurTrapeze') {
+    noms = rng.pick(NOMS_QUAD);
+    const B = rng.int(60, 90), b = rng.int(25, B - 20), h = rng.int(25, 45), o = rng.int(5, B - b - 5);
+    pts = [[0, 0], [B, 0], [o + b, -h], [o, -h]];
+    sig = `${B}.${b}.${h}.${o}`;
+  } else {
+    noms = rng.pick(NOMS_QUAD);
+    const f = rng.pick(['rectangle', 'carre', 'losange', 'parallelogramme', 'quelconque']);
+    if (f === 'rectangle') { const L = rng.int(55, 85), l = rng.int(25, 45); pts = [[0, 0], [L, 0], [L, -l], [0, -l]]; } else if (f === 'carre') { const c = rng.int(35, 50); pts = [[0, 0], [c, 0], [c, -c], [0, -c]]; } else if (f === 'losange') { const D = rng.int(60, 85), d = rng.int(30, 50); pts = [[0, 0], [D / 2, d / 2], [D, 0], [D / 2, -d / 2]]; } else if (f === 'parallelogramme') { const b = rng.int(55, 80), h = rng.int(25, 40), o = rng.int(10, 25); pts = [[0, 0], [b, 0], [b + o, -h], [o, -h]]; } else { pts = [[0, 0], [rng.int(60, 85), rng.int(-8, 8)], [rng.int(55, 80), -rng.int(30, 45)], [rng.int(5, 20), -rng.int(30, 45)]]; }
+    sig = `${f}.${pts.flat().map(Math.round).join('.')}`;
+  }
+  const { pts: P, W, H } = cadrePoints(tourne(pts, ang), 12);
+  const figure = poly(P) + etiquettes(P, noms);
+  if (sorte === 'hauteurTriangle') {
+    const [S, A, B] = P; const Hh = pied(S, A, B);
+    solExtra = seg(S, Hh, ROUGE, 0.6) + marqueAngle(Hh, unit(Hh, B), unit(Hh, S));
+    enonce = `Trace la hauteur du triangle ${[...noms].sort().join('')} issue du sommet ${noms[0]} (perpendiculaire au côté [${noms[1]}${noms[2]}]).`;
+    rep = `Segment qui part de ${noms[0]} et arrive sur [${noms[1]}${noms[2]}] en formant un angle droit.`;
+    expl = `Pose un côté de l'angle droit de l'équerre sur [${noms[1]}${noms[2]}] et fais-la glisser jusqu'à ce que l'autre côté passe par ${noms[0]}.`;
+    fiche = 'ma-triangles';
+  } else if (sorte === 'hauteurParallelogramme') {
+    // Sommet dont le pied de la hauteur tombe sur le côté [AB] (pas sur son prolongement).
+    const k = pts[3][0] > 0 ? 3 : 2;
+    const [A, B] = P; const S = P[k]; const Hh = pied(S, A, B);
+    solExtra = seg(S, Hh, ROUGE, 0.6) + marqueAngle(Hh, unit(Hh, A), unit(Hh, S));
+    enonce = `Trace la hauteur du parallélogramme ${noms.join('')} issue du sommet ${noms[k]}, perpendiculaire au côté [${noms[0]}${noms[1]}].`;
+    rep = `Segment qui part de ${noms[k]} et arrive perpendiculairement sur [${noms[0]}${noms[1]}].`;
+    expl = 'La hauteur est perpendiculaire à la base : utilise l\'équerre posée sur le côté.';
+  } else if (sorte === 'hauteurTrapeze') {
+    const [A, B, , D] = P; const Hh = pied(D, A, B);
+    solExtra = seg(D, Hh, ROUGE, 0.6) + marqueAngle(Hh, unit(Hh, B), unit(Hh, D));
+    enonce = `Trace une hauteur du trapèze ${noms.join('')} : un segment perpendiculaire aux deux bases [${noms[0]}${noms[1]}] et [${noms[3]}${noms[2]}].`;
+    rep = `Un segment perpendiculaire aux deux bases (ici depuis ${noms[3]}). Toute autre hauteur entre les deux bases est juste aussi : elles ont toutes la même longueur.`;
+    expl = 'Les bases du trapèze sont parallèles : une hauteur les relie en formant un angle droit avec chacune.';
+  } else if (sorte === 'medianes') {
+    const M = P.map((p, i) => { const q = P[(i + 1) % 4]; return [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2]; });
+    solExtra = seg(M[0], M[2], ROUGE, 0.6) + seg(M[1], M[3], ROUGE, 0.6) + M.map((m) => `<circle cx="${r1(m[0])}" cy="${r1(m[1])}" r="0.9" fill="${ROUGE}"/>`).join('');
+    enonce = `Trace les deux médianes du quadrilatère ${noms.join('')}.`;
+    rep = 'Les deux segments qui relient les milieux des côtés opposés (mesure chaque côté et prends la moitié).';
+    expl = 'Une médiane relie les milieux de deux côtés opposés : mesure chaque côté à la latte pour trouver son milieu.';
+    diff = 2;
+  } else {
+    const O = (() => { const [A, B, C, D] = P; const d1 = [C[0] - A[0], C[1] - A[1]], d2 = [D[0] - B[0], D[1] - B[1]]; const det = d1[0] * d2[1] - d1[1] * d2[0]; const t = ((B[0] - A[0]) * d2[1] - (B[1] - A[1]) * d2[0]) / det; return [A[0] + t * d1[0], A[1] + t * d1[1]]; })();
+    solExtra = seg(P[0], P[2], ROUGE, 0.6) + seg(P[1], P[3], ROUGE, 0.6) + texte(O[0] + 2.5, O[1] - 2, 'O', { taille: 4.5, couleur: ROUGE, gras: true });
+    enonce = `Trace les diagonales du quadrilatère ${noms.join('')}. Nomme O leur point d'intersection.`;
+    rep = `Les segments [${noms[0]}${noms[2]}] et [${noms[1]}${noms[3]}], qui relient les sommets opposés ; ils se coupent en O.`;
+    expl = 'Une diagonale relie deux sommets opposés (qui ne se suivent pas).';
+    diff = 1;
+  }
+  return base('hauteurs', `${sorte}.${sig}.${Math.round(ang * 100)}.${noms.join('')}`, {
+    fiche, difficulte: diff, enonce,
+    figure: svg(W, H, figure),
+    solution: svg(W, H, figure + solExtra, 0.6),
+    reponseTexte: rep, explication: expl,
+  });
+}
+
+// ------------------------------------------------------------------ 11. Compléter un développement (cube ou pavé)
+const VOISINS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+// Six carrés forment un développement du cube si, en roulant un cube de case en case, chaque case reçoit une face différente.
+function patronCube(cells) {
+  const set = new Set(cells.map((c) => c.join()));
+  let aretes = 0;
+  for (const [x, y] of cells) { if (set.has(`${x + 1},${y}`)) aretes++; if (set.has(`${x},${y + 1}`)) aretes++; }
+  if (cells.length !== 6 || aretes !== 5) return false;
+  const roule = { '1,0': (s) => ({ b: s.e, e: s.t, t: s.w, w: s.b, n: s.n, s: s.s }), '-1,0': (s) => ({ b: s.w, w: s.t, t: s.e, e: s.b, n: s.n, s: s.s }), '0,1': (s) => ({ b: s.s, s: s.t, t: s.n, n: s.b, e: s.e, w: s.w }), '0,-1': (s) => ({ b: s.n, n: s.t, t: s.s, s: s.b, e: s.e, w: s.w }) };
+  const etats = new Map([[cells[0].join(), { b: 0, t: 1, n: 2, s: 3, e: 4, w: 5 }]]);
+  const file = [cells[0]];
+  while (file.length) {
+    const [x, y] = file.shift(); const st = etats.get(`${x},${y}`);
+    for (const [dx, dy] of VOISINS) { const k = `${x + dx},${y + dy}`; if (set.has(k) && !etats.has(k)) { etats.set(k, roule[`${dx},${dy}`](st)); file.push([x + dx, y + dy]); } }
+  }
+  return new Set([...etats.values()].map((s) => s.b)).size === 6;
+}
+// Les 11 développements du cube (bande de 4 + 1 de chaque côté, 3 + 3 décalés, 2 + 2 + 2 en escalier…).
+const PATRONS_CUBE = [
+  [[0, 1], [1, 1], [2, 1], [3, 1], [0, 0], [0, 2]], [[0, 1], [1, 1], [2, 1], [3, 1], [0, 0], [1, 2]], [[0, 1], [1, 1], [2, 1], [3, 1], [0, 0], [2, 2]],
+  [[0, 1], [1, 1], [2, 1], [3, 1], [0, 0], [3, 2]], [[0, 1], [1, 1], [2, 1], [3, 1], [1, 0], [1, 2]], [[0, 1], [1, 1], [2, 1], [3, 1], [1, 0], [2, 2]],
+  [[0, 0], [1, 0], [2, 0], [2, 1], [3, 1], [4, 1]], [[0, 0], [1, 0], [1, 1], [2, 1], [2, 2], [3, 2]], [[0, 0], [1, 0], [1, 1], [2, 1], [3, 1], [1, 2]],
+  [[0, 0], [1, 0], [1, 1], [2, 1], [3, 1], [2, 2]], [[0, 0], [1, 0], [1, 1], [2, 1], [3, 1], [3, 2]],
+];
+const TRANSFOS = [([x, y]) => [x, y], ([x, y]) => [-y, x], ([x, y]) => [-x, -y], ([x, y]) => [y, -x], ([x, y]) => [-x, y], ([x, y]) => [y, x], ([x, y]) => [x, -y], ([x, y]) => [-y, -x]];
+const recaler = (cells) => { const mx = Math.min(...cells.map((c) => c[0])), my = Math.min(...cells.map((c) => c[1])); return cells.map(([x, y]) => [x - mx, y - my]); };
+const carre = (x, y, w, h, couleur = NOIR, remplissage = 'none', ep = 0.7) => `<rect x="${r1(x)}" y="${r1(y)}" width="${r1(w)}" height="${r1(h)}" fill="${remplissage}" ${remplissage !== 'none' ? 'fill-opacity="0.35"' : ''} stroke="${couleur}" stroke-width="${ep}"/>`;
+function developpement(rng) {
+  if (rng.next() < 0.5) {
+    const k = rng.pick([1, 2, 2]); // côté du cube, en carreaux de 1 cm
+    const cells = recaler(rng.pick(PATRONS_CUBE).map(TRANSFOS[rng.int(0, 7)]));
+    const set = new Set(cells.map((c) => c.join()));
+    const feuilles = cells.filter(([x, y]) => VOISINS.filter(([dx, dy]) => set.has(`${x + dx},${y + dy}`)).length === 1);
+    const ote = rng.pick(feuilles);
+    const reste = cells.filter((c) => c !== ote);
+    const restSet = new Set(reste.map((c) => c.join()));
+    const cands = [];
+    for (const [x, y] of reste) for (const [dx, dy] of VOISINS) { const c = [x + dx, y + dy]; if (!restSet.has(c.join()) && !cands.some((d) => d.join() === c.join())) cands.push(c); }
+    const bons = cands.filter((c) => patronCube([...reste, c]));
+    const xs = [...reste, ...bons].map((c) => c[0]), ys = [...reste, ...bons].map((c) => c[1]);
+    const ox = 1 - Math.min(...xs), oy = 1 - Math.min(...ys);
+    const cols = (Math.max(...xs) + ox + 2) * k, rows = (Math.max(...ys) + oy + 2) * k;
+    const W = cols * U + 6, H = rows * U + 6;
+    const dessin = (cs, coul, remp) => cs.map(([x, y]) => carre(((x + ox) * k) * U, ((y + oy) * k) * U, k * U, k * U, coul, remp)).join('');
+    const g = (c) => `<g transform="translate(3,3)">${quadrillage(cols, rows)}${dessin(reste, NOIR, 'none')}${c}</g>`;
+    return base('developpement', `cube.${k}.${reste.map((c) => c.join('_')).join('.')}`, {
+      fiche: 'ma-developpements',
+      difficulte: 3,
+      enonce: `Il manque une face à ce développement du cube. Dessine-la sur le quadrillage pour que l'on puisse fermer le cube.${bons.length > 1 ? ' (Plusieurs places sont possibles : une seule suffit.)' : ''}`,
+      figure: svg(W, H, g('')),
+      solution: svg(W, H, g(dessin(bons, ROUGE, ROUGE)), 0.6),
+      reponseTexte: bons.length > 1 ? `Une des ${bons.length} places coloriées en rouge (toutes conviennent).` : 'La face coloriée en rouge : c\'est la seule place possible.',
+      explication: 'Imagine une face posée au sol et replie les autres autour : la face ajoutée doit fermer le seul côté encore ouvert, sans se superposer à une autre.',
+    });
+  }
+  // Pavé droit a × b × c (en carreaux de 1 cm) : bande latérale a, b, a, b de hauteur c ; dessus et dessous a × b.
+  for (let essai = 0; essai < 30; essai++) {
+    const a = rng.int(1, 4), b = rng.int(1, 4), c = rng.int(2, 4);
+    if ((a === b && b === c) || 2 * (a + b) > 14 || c + 2 * b > 10) continue;
+    const xs = [0, a, a + b, 2 * a + b];
+    const lat = [[xs[0], b, a, c], [xs[1], b, b, c], [xs[2], b, a, c], [xs[3], b, b, c]].map(([x, y, w, h], i) => ({ x, y, w, h, nom: `lat${i}` }));
+    const iH = rng.pick([0, 2]), iB = rng.pick([0, 2]);
+    const dessus = { x: xs[iH], y: 0, w: a, h: b, nom: 'dessus', sur: iH };
+    const dessous = { x: xs[iB], y: b + c, w: a, h: b, nom: 'dessous', sur: iB };
+    const faces = [...lat, dessus, dessous];
+    const feuilles = ['dessus', 'dessous', 'lat3', ...(iH !== 0 && iB !== 0 ? ['lat0'] : [])];
+    const oteNom = rng.pick(feuilles);
+    const ote = faces.find((f) => f.nom === oteNom);
+    const reste = faces.filter((f) => f !== ote);
+    // Côté où la face manquante s'attache (trait épais).
+    let bord;
+    if (oteNom === 'dessus') bord = [[ote.x, b], [ote.x + a, b]];
+    else if (oteNom === 'dessous') bord = [[ote.x, b + c], [ote.x + a, b + c]];
+    else if (oteNom === 'lat3') bord = [[xs[3], b], [xs[3], b + c]];
+    else bord = [[a, b], [a, b + c]];
+    const cols = 2 * (a + b) + 2, rows = c + 2 * b + 2;
+    const W = cols * U + 6, H = rows * U + 6;
+    const X = (v) => (v + 1) * U, Y = (v) => (v + 1) * U;
+    const dessin = (fs, coul, remp) => fs.map((f) => carre(X(f.x), Y(f.y), f.w * U, f.h * U, coul, remp)).join('');
+    const trait = `<line x1="${X(bord[0][0])}" y1="${Y(bord[0][1])}" x2="${X(bord[1][0])}" y2="${Y(bord[1][1])}" stroke="${NOIR}" stroke-width="1.6"/>`;
+    const g = (extra) => `<g transform="translate(3,3)">${quadrillage(cols, rows)}${dessin(reste, NOIR, 'none')}${trait}${extra}</g>`;
+    const dims = `${fmt(ote.w)} cm sur ${fmt(ote.h)} cm`;
+    return base('developpement', `pave.${a}.${b}.${c}.${iH}.${iB}.${oteNom}`, {
+      fiche: 'ma-developpements',
+      difficulte: 3,
+      enonce: 'Il manque une face à ce développement d\'un pavé droit. Dessine-la contre le côté tracé en gras (1 carreau = 1 cm).',
+      figure: svg(W, H, g('')),
+      solution: svg(W, H, g(dessin([ote], ROUGE, ROUGE)), 0.6),
+      reponseTexte: `Un rectangle de ${dims}, collé contre le côté en gras.`,
+      explication: 'Dans un pavé droit, les faces opposées sont identiques : cherche la face qui doit lui être superposée en pliant, et reprends ses dimensions.',
+    });
+  }
+  return null;
+}
+
+export const TRACES = { symetrie, agrandissement, cases, figureDimensions, cercle, perpendiculaire, axesSymetrie, diagramme, compas, hauteursMedianes, developpement };
 
 // Tire `n` questions de tracé toutes différentes (familles variées d'abord).
 export function tirerTraces(rng, n, exclure = new Set()) {

@@ -59,6 +59,64 @@
    "fiche": "sc-liens-systemes",
    "difficulte": 2,
    "variantesMin": 40
+  },
+  {
+   "id": "sc-f-ventilation-modele",
+   "generateur": "sc_ventilation",
+   "domaine": "sc.vivant",
+   "fiche": "sc-ventilation",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "sc-f-demarche",
+   "generateur": "sc_demarche",
+   "domaine": "sc.matiere",
+   "fiche": "sc-demarche",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "sc-faits-hypotheses"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-transfert-chaleur",
+   "generateur": "sc_transfert",
+   "domaine": "sc.energie",
+   "fiche": "sc-transfert-chaleur",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "sc-f-economie-chaleur",
+   "generateur": "sc_economie",
+   "domaine": "sc.energie",
+   "fiche": "sc-economie-chaleur",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "sc-chaleur"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-mesure-instruments",
+   "generateur": "sc_mesures",
+   "domaine": "sc.matiere",
+   "fiche": "sc-mesures",
+   "difficulte": 1,
+   "variantesMin": 40
+  },
+  {
+   "id": "sc-f-espece",
+   "generateur": "sc_espece",
+   "domaine": "sc.vivant",
+   "fiche": "sc-espece",
+   "difficulte": 2,
+   "variantesMin": 40
   }
  ]
 }

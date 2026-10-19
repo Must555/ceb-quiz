@@ -56,6 +56,105 @@
    "fiche": "hg-population-monde",
    "difficulte": 2,
    "variantesMin": 40
+  },
+  {
+   "id": "hg-f-planisphere",
+   "generateur": "hg_tc_planisphere",
+   "domaine": "hg.geographie",
+   "fiche": "hg-planisphere",
+   "difficulte": 1,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "hg-continents"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-millenaires",
+   "generateur": "hg_tc_millenaires",
+   "domaine": "hg.histoire",
+   "fiche": "hg-millenaires",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "hg-frise"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-outils-info",
+   "generateur": "hg_tc_outils_info",
+   "domaine": "hg.histoire",
+   "fiche": "hg-outils-info",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-pertinence-doc",
+   "generateur": "hg_tc_pertinence",
+   "domaine": "hg.histoire",
+   "fiche": "hg-documents",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "hg-sources"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-change-continue",
+   "generateur": "hg_tc_change",
+   "domaine": "hg.histoire",
+   "fiche": "hg-changements",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-belgique-peuplement",
+   "generateur": "hg_tc_peuplement_be",
+   "base": "hg-provinces",
+   "domaine": "hg.geographie",
+   "fiche": "hg-peuplement-belgique",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "hg-f-eau-relief",
+   "generateur": "hg_tc_eau_relief",
+   "domaine": "hg.geographie",
+   "fiche": "hg-eau-relief",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "hg-cours-eau"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-vues-aeriennes",
+   "generateur": "hg_tc_vues_aeriennes",
+   "domaine": "hg.geographie",
+   "fiche": "hg-vues-aeriennes",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "hg-paysages"
+    }
+   ]
+  },
+  {
+   "id": "hg-f-consommer-autrement",
+   "generateur": "hg_tc_consommer",
+   "domaine": "hg.geographie",
+   "fiche": "hg-consommer",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "poids": 0.4
   }
  ]
 }

@@ -37,7 +37,8 @@
       "regle": [
         "Le volume, c'est la place occupée dans l'espace (en cm³, dm³, m³).",
         "Parallélépipède rectangle : volume = longueur × largeur × hauteur.",
-        "1 dm³ = 1 litre."
+        "1 dm³ = 1 litre.",
+        "Repères : petit cube de 1 cm d'arête = 1 cm³ ; brique de lait = 1 dm³ = 1 l."
       ],
       "exemple": "Boîte de 5 cm × 4 cm × 3 cm : volume = 60 cm³.",
       "astuce": "Aquarium de 40 cm × 25 cm × 30 cm = 4 dm × 2,5 dm × 3 dm = 30 dm³ = 30 litres."
@@ -63,7 +64,8 @@
       "regle": [
         "1 h = 60 min ; 1 min = 60 s ; 1 jour = 24 h.",
         "Pour trouver une heure d'arrivée : heure de départ + durée.",
-        "Si les minutes dépassent 60, on ajoute 1 h et on retire 60 min."
+        "Si les minutes dépassent 60, on ajoute 1 h et on retire 60 min.",
+        "Horaire d'une journée : ajoute les durées une par une, dans l'ordre des activités."
       ],
       "exemple": "16 h 45 + 1 h 30 = 17 h 75 = 18 h 15.",
       "astuce": "Pour une durée entre deux heures, avance par étapes : 9 h 47 → 10 h 00 (13 min) → 11 h 00 (1 h) → 11 h 12 (12 min) = 1 h 25."
@@ -115,7 +117,8 @@
       "regle": [
         "3/4 : on partage en 4 parts égales et on en prend 3.",
         "Fraction d'une quantité : on divise par le dénominateur, puis on multiplie par le numérateur.",
-        "Simplifier : on divise le haut et le bas par le même nombre (2/8 = 1/4)."
+        "Simplifier : on divise le haut et le bas par le même nombre (2/8 = 1/4).",
+        "Fraction × nombre entier : on multiplie seulement le numérateur (3 × 2/7 = 6/7)."
       ],
       "exemple": "3/4 de 60 = (60 ÷ 4) × 3 = 15 × 3 = 45.",
       "astuce": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 3/4 = 0,75 = 75 %."
@@ -128,7 +131,8 @@
       "regle": [
         "Pour comparer : on compare d'abord la partie entière, puis les dixièmes, puis les centièmes…",
         "Multiplier un décimal : on calcule sans la virgule, puis on remet autant de chiffres après la virgule qu'au départ.",
-        "× 10 : la virgule avance d'un rang vers la droite ; ÷ 10 : vers la gauche."
+        "× 10 : la virgule avance d'un rang vers la droite ; ÷ 10 : vers la gauche.",
+        "Encadrer au centième : 7,38 < 7,386 < 7,39."
       ],
       "exemple": "0,54 > 0,5 car 54 centièmes > 50 centièmes. 2,9 × 4 : 29 × 4 = 116 → 11,6.",
       "astuce": "Ajoute des zéros pour comparer facilement : 0,5 = 0,50 et 0,45 < 0,50."
@@ -165,7 +169,8 @@
       "regle": [
         "Prix total = quantité × prix d'un article.",
         "Rendu = somme donnée − prix total.",
-        "Aligne bien les virgules dans les additions et soustractions."
+        "Aligne bien les virgules dans les additions et soustractions.",
+        "Promotions : « le 2e à moitié prix », « 3 pour 2 » : calcule le prix payé pour le lot, puis compare."
       ],
       "exemple": "4 croissants à 1,20 € = 4,80 €. On paie avec 10 € → on rend 10 − 4,80 = 5,20 €.",
       "astuce": "Pour comparer des prix, calcule le prix pour 1 kg (ou 1 l) de chaque produit."
@@ -257,7 +262,8 @@
       "regle": [
         "Indicatif : il raconte un fait (il joue).",
         "Impératif : un ordre ou un conseil, sans sujet (joue ! jouons !).",
-        "Infinitif : la forme du dictionnaire (jouer). Participe : joué, jouant."
+        "Infinitif : la forme du dictionnaire (jouer). Participe : joué, jouant (le participe présent en -ant est invariable).",
+        "Subjonctif : après « il faut que », « vouloir que » (il faut que tu finisses)."
       ],
       "exemple": "« Découvrons ces traces » → impératif. « On peut remarquer » → remarquer est à l'infinitif.",
       "astuce": "Pas de sujet + ton d'ordre = impératif."
@@ -351,7 +357,7 @@
         "800 : Charlemagne est sacré empereur.",
         "1830 : indépendance de la Belgique.",
         "1914-1918 : Première Guerre mondiale. 1940-1945 : Seconde Guerre mondiale.",
-        "1958 : naissance de la Communauté économique européenne (ancêtre de l'Union européenne)."
+        "1957 : signature du traité de Rome, qui fonde la Communauté économique européenne (CEE, en place le 1er janvier 1958), ancêtre de l'Union européenne."
       ],
       "exemple": "Gabrielle Petit, résistante belge, a vécu pendant la Première Guerre mondiale.",
       "astuce": "Place chaque date sur une frise : tu verras mieux dans quelle période elle se trouve."
@@ -377,7 +383,7 @@
       "regle": [
         "L'équateur partage la Terre en hémisphère Nord et hémisphère Sud.",
         "La zone chaude est entre les tropiques (du Cancer au nord, du Capricorne au sud).",
-        "Océans : Atlantique (entre Europe/Afrique et Amérique), Pacifique (le plus grand), Indien, Arctique, Austral."
+        "Océans : Atlantique (entre Europe/Afrique et Amérique), Pacifique (le plus grand), Indien, Arctique, Austral (aussi appelé océan Antarctique)."
       ],
       "exemple": "La Belgique est dans l'hémisphère Nord, en zone tempérée.",
       "astuce": "Le tropique du Cancer est au nord de l'équateur, le tropique du Capricorne au sud."
@@ -402,7 +408,8 @@
       "regle": [
         "Le cœur pompe le sang. Artères : du cœur vers les organes. Veines : des organes vers le cœur.",
         "Dans les poumons (alvéoles), le sang prend le dioxygène (O₂) et rejette le dioxyde de carbone (CO₂).",
-        "Dans l'intestin, les nutriments passent dans le sang."
+        "Dans l'intestin, les nutriments passent dans le sang.",
+        "Le sang : plasma (liquide), globules rouges (transportent le dioxygène), globules blancs (combattent les microbes), plaquettes (referment les plaies)."
       ],
       "exemple": "Inspiration : le diaphragme descend, l'air entre. Expiration : l'air sort.",
       "astuce": "Artère = « Aller » (A comme Aller, depuis le cœur)."
@@ -428,7 +435,8 @@
       "regle": [
         "Pour brûler, il faut : un combustible, du dioxygène (O₂) et de la chaleur (triangle du feu).",
         "Une combustion libère de la chaleur, de la vapeur d'eau et du dioxyde de carbone (CO₂).",
-        "Pour éteindre, on supprime un des trois éléments."
+        "Pour éteindre, on supprime un des trois éléments.",
+        "Bougie : la cire fond (phénomène physique) puis brûle (phénomène chimique) ; un verre froid au-dessus se couvre de buée (eau produite) ; sous un bocal, la flamme s'éteint faute de dioxygène."
       ],
       "exemple": "Huile en feu : couvrir avec une couverture humide (on prive le feu d'O₂). Jamais d'eau !",
       "astuce": "En cas d'incendie, sors accroupi : la fumée chaude monte vers le plafond."
@@ -453,6 +461,7 @@
       "regle": [
         "Renouvelables : soleil, vent, eau, bois… (elles se renouvellent vite).",
         "Non renouvelables : pétrole, gaz naturel, charbon, uranium (elles s'épuisent).",
+        "Pour se chauffer : gaz naturel, mazout, charbon (non renouvelables) ; bois, pellets, Soleil (renouvelables).",
         "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air."
       ],
       "exemple": "Un radiateur est en acier (conducteur) ; un pull en laine garde la chaleur (isolant).",

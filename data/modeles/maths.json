@@ -726,6 +726,7 @@
     },
     {
       "id": "ma-m-moyenne",
+      "poids": 0.4,
       "domaine": "ma.donnees",
       "type": "numerique",
       "difficulte": 2,

@@ -10,7 +10,8 @@ import { formatNombre } from '../format.js';
 // ---------------------------------------------------------------------------
 // Outils communs
 // ---------------------------------------------------------------------------
-const r = (x, d = 6) => { const f = 10 ** d; return Math.round(x * f) / f; };
+// (les entiers sont rendus tels quels : au-delà de 9 milliards, x × 10⁶ dépasserait la précision des nombres JS)
+const r = (x, d = 6) => { if (Number.isInteger(x)) return x; const f = 10 ** d; return Math.round(x * f) / f; };
 const fmt = (x) => formatNombre(r(x));
 const eur = (x) => {
   const c = Math.round(x * 100);
@@ -22,6 +23,7 @@ const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
 const enumerer = (l) => (l.length < 2 ? l.join('') : `${l.slice(0, -1).join(', ')} et ${l[l.length - 1]}`);
 const pluriel = (n, sing, plur = sing + 's') => (n > 1 ? plur : sing);
 const dedoublonner = (arr) => [...new Set(arr)];
+const majusculeN = (t) => t.charAt(0).toUpperCase() + t.slice(1);
 
 // Prénoms courants en Belgique (il/elle pour les accords).
 const PRENOMS = [
@@ -105,8 +107,9 @@ function moins1000(n, final) {
 }
 export function enLettres(n) {
   if (n === 0) return 'zéro';
-  const m = Math.floor(n / 1e6); const k = Math.floor((n % 1e6) / 1000); const u = n % 1000;
+  const g = Math.floor(n / 1e9); const m = Math.floor((n % 1e9) / 1e6); const k = Math.floor((n % 1e6) / 1000); const u = n % 1000;
   const blocs = [];
+  if (g) blocs.push(g === 1 ? 'un milliard' : `${moins1000(g, true)} milliards`);
   if (m) blocs.push(m === 1 ? 'un million' : `${moins1000(m, true)} millions`);
   let bas = '';
   if (k) bas = k === 1 ? 'mille' : `${moins1000(k, false)}-mille`;
@@ -122,6 +125,11 @@ function nombreAvecZeros(rng, nb, pz = 0.3) {
   return Number(s);
 }
 const classes = (n) => {
+  const g = Math.floor(n / 1e9);
+  if (g) {
+    const p3 = (x) => String(x).padStart(3, '0');
+    return `classe des milliards : ${g} ; classe des millions : ${p3(Math.floor((n % 1e9) / 1e6))} ; classe des mille : ${p3(Math.floor((n % 1e6) / 1000))} ; classe des unités : ${p3(n % 1000)}`;
+  }
   const m = Math.floor(n / 1e6); const k = Math.floor((n % 1e6) / 1000); const u = n % 1000;
   const p3 = (x) => String(x).padStart(3, '0');
   if (m) return `classe des millions : ${m} ; classe des mille : ${p3(k)} ; classe des unités : ${p3(u)}`;
@@ -161,6 +169,15 @@ const avecDecimales = (milliemes, dec) => {
   return dec ? `${formatNombre(ent)},${frac}` : formatNombre(ent);
 };
 const nbDecimales = (x) => { const s = String(r(x)); return s.includes('.') ? s.split('.')[1].length : 0; };
+
+// Grands nombres (jusqu'aux milliards) : classes tirées une à une, certaines vides (rangs à zéro).
+const RANGS_GRANDS = { 6: 'unités de millions', 7: 'dizaines de millions', 8: 'centaines de millions', 9: 'unités de milliards', 10: 'dizaines de milliards', 11: 'centaines de milliards' };
+function grandNombre(rng, pVide = 0.3) {
+  const g = rng.pick([rng.int(1, 9), rng.int(10, 99), rng.int(100, 999)]);
+  const cl = () => (rng.next() < pVide ? 0 : rng.pick([rng.int(1, 999), rng.int(1, 99), rng.int(100, 999)]));
+  const m = cl(); const k = cl(); const u = cl();
+  return { n: g * 1e9 + m * 1e6 + k * 1e3 + u, g, m, k, u };
+}
 
 // ---------------------------------------------------------------------------
 // NOMBRES
@@ -213,6 +230,28 @@ const nombresLettres = famille([
       explication: `${fmt(dec)} ${pluriel(dec, nomDec)} : le dernier chiffre doit être au rang des ${nomDec}s, le ${['1er', '2e', '3e'][k - 1]} chiffre après la virgule. On écrit ${fmt(v)}.`,
     };
   }, 2),
+  // Jusqu'aux milliards.
+  forme((rng) => {
+    const { n } = grandNombre(rng);
+    return {
+      type: 'numerique', difficulte: 3,
+      enonce: `Écris ce nombre en chiffres : « ${enLettres(n)} ».`,
+      reponse: n,
+      explication: `On découpe par classes de trois chiffres (${classes(n)}). On écrit donc ${fmt(n)}. Une classe vide s'écrit 000.`,
+    };
+  }, 2),
+  forme((rng) => {
+    const { n, g, m, k, u } = grandNombre(rng, 0.35);
+    const fausses = [g * 1e6 + m * 1e3 + k, g * 1e9 + k * 1e6 + m * 1e3 + u, g * 1e10 + m * 1e6 + k * 1e3 + u, g * 1e9 + m * 1e5 + k * 1e3 + u]
+      .filter((x) => x !== n && Number.isInteger(x) && x > 0);
+    const c = qcm(rng, fmt(n), fausses.map(fmt));
+    if (!c) return null;
+    return {
+      ...c, difficulte: 3,
+      enonce: `Quel nombre s'écrit « ${enLettres(n)} » ?`,
+      explication: `1 milliard = 1 000 000 000 (9 zéros). Classe par classe : ${classes(n)}. Le nombre est ${fmt(n)}.`,
+    };
+  }),
 ]);
 
 const valeurPosition = famille([
@@ -263,7 +302,7 @@ const valeurPosition = famille([
     const reste = n % 10 ** p;
     return {
       type: 'numerique', difficulte: 2,
-      enonce: `Combien y a-t-il de ${RANGS[p].pl} en tout dans le nombre ${fmt(n)} ?`,
+      enonce: `Combien y a-t-il ${/^[aeiouéè]/.test(RANGS[p].pl) ? 'd\'' : 'de '}${RANGS[p].pl} en tout dans le nombre ${fmt(n)} ?`,
       reponse: q,
       explication: `On prend tous les chiffres jusqu'à celui des ${RANGS[p].pl} (inclus) : ${fmt(n)} = ${fmt(q)} ${RANGS[p].pl}${reste ? ` et ${fmt(reste)} ${pluriel(reste, 'unité')}` : ''}.`,
     };
@@ -282,6 +321,30 @@ const valeurPosition = famille([
       enonce: `Ajoute 1 ${RANGS[p].sg} au nombre ${fmt(n)}. Quel nombre obtiens-tu ?`,
       reponse: res,
       explication: `1 ${RANGS[p].sg} = ${fmt(10 ** p)}. ${fmt(n)} + ${fmt(10 ** p)} = ${fmt(res)}.${Math.floor(r(n / 10 ** p)) % 10 === 9 ? ` Le chiffre des ${RANGS[p].pl} était un 9 : il devient 0 et on fait une retenue au rang suivant.` : ''}`,
+    };
+  }),
+  // Jusqu'aux milliards : chiffre d'un rang, nombre de millions (ou de milliers) en tout.
+  forme((rng) => {
+    const chiffres = [rng.int(1, 9), ...range(1, rng.int(9, 11)).map(() => rng.int(0, 9))];
+    const n = Number(chiffres.join(''));
+    const hp = chiffres.length - 1;
+    if (rng.next() < 0.6) {
+      const p = rng.int(6, hp);
+      const d = Math.floor(n / 10 ** p) % 10;
+      return {
+        type: 'numerique', difficulte: 3,
+        enonce: `Dans le nombre ${fmt(n)}, quel est le chiffre des ${RANGS_GRANDS[p]} ?`,
+        reponse: d,
+        explication: `Classe des milliards, puis des millions, puis des mille, puis des unités ; dans chaque classe : centaines, dizaines, unités. ${majusculeN(classes(n))}. Le chiffre des ${RANGS_GRANDS[p]} est ${d}.`,
+      };
+    }
+    const [qui, div] = rng.pick([['millions', 1e6], ['milliers (unités de mille)', 1e3], ['millions', 1e6]]);
+    const q = Math.floor(n / div);
+    return {
+      type: 'numerique', difficulte: 3,
+      enonce: `Combien y a-t-il de ${qui} en tout dans le nombre ${fmt(n)} ?`,
+      reponse: q,
+      explication: `On garde tous les chiffres jusqu'au rang des ${div === 1e6 ? 'unités de millions' : 'unités de mille'} : ${fmt(n)} contient ${fmt(q)} ${div === 1e6 ? 'millions' : 'milliers'}.`,
     };
   }),
 ]);
@@ -348,6 +411,18 @@ const decomposer = famille([
       ...c, difficulte: 2,
       enonce: `Quelle décomposition correspond au nombre ${fmt(nb.valeur)} ?`,
       explication: `${fmt(nb.valeur)} = ${ecr(termes)}. Chaque chiffre vaut selon son rang : ${termes.map((t) => `${t.d} ${rangNom(t.p, t.d)}`).join(', ')}.`,
+    };
+  }),
+  // Jusqu'aux milliards.
+  forme((rng) => {
+    const { n, g, m, k, u } = grandNombre(rng, 0.35);
+    const parts = [[g, g > 1 ? 'milliards' : 'milliard'], [m, m > 1 ? 'millions' : 'million'], [k, 'mille'], [u, '']].filter(([x]) => x);
+    if (parts.length < 3) return null;
+    return {
+      type: 'numerique', difficulte: 3,
+      enonce: `Quel nombre est égal à ${parts.map(([x, mot]) => `${fmt(x)}${mot ? ` ${mot}` : ''}`).join(' + ')} ?`,
+      reponse: n,
+      explication: `On écrit chaque classe à sa place (3 chiffres par classe, des 0 dans les classes vides) : ${classes(n)}. Réponse : ${fmt(n)}.`,
     };
   }),
 ]);
@@ -515,6 +590,35 @@ const intercaler = famille([
       explication: `Ce sont ${enumerer(entiers.map(fmt))} : il y en a ${entiers.length}.`,
     };
   }),
+  // Encadrer un nombre décimal au dixième, au centième, au millième.
+  forme((rng) => {
+    const k = rng.pick([1, 2, 2, 3]);
+    const dec = k === 3 ? 4 : k + rng.int(1, 2);
+    const ent = rng.pick([rng.int(0, 9), rng.int(10, 99), rng.int(100, 999)]);
+    const frac = rng.int(1, 10 ** dec - 1);
+    if (frac % 10 === 0 || frac % 10 ** (dec - k) === 0) return null; // il faut des chiffres après le rang demandé
+    const x = ent + frac / 10 ** dec;
+    const unite = 10 ** (dec - k);
+    const bas = Math.floor(frac / unite) * unite; // en 10^-dec
+    const lo = r(ent + bas / 10 ** dec); const hi = r(ent + (bas + unite) / 10 ** dec);
+    const ecr = (v) => avecDecimales(Math.round(v * 1000), k); // k décimales exactement
+    const xs = fmt(x);
+    const precision = ['', 'dixième', 'centième', 'millième'][k];
+    const t = rng.pick(['bas', 'haut', 'qcm', 'qcm']);
+    const expl = `Au ${precision}, on garde ${k} ${k > 1 ? 'chiffres' : 'chiffre'} après la virgule : ${ecr(lo)} est juste en dessous de ${xs}, et le ${precision} suivant est ${ecr(hi)}. ${ecr(lo)} < ${xs} < ${ecr(hi)}.`;
+    if (t === 'qcm') {
+      const u = 10 ** -k;
+      const c = qcm(rng, `${ecr(lo)} < ${xs} < ${ecr(hi)}`, [`${ecr(r(lo - u))} < ${xs} < ${ecr(lo)}`, `${ecr(hi)} < ${xs} < ${ecr(r(hi + u))}`], 3, 2);
+      if (!c || r(lo - u) < 0) return null;
+      return { ...c, difficulte: 2, fiche: 'ma-encadrer', enonce: `Quel est l'encadrement au ${precision} de ${xs} ?`, explication: expl };
+    }
+    return {
+      type: 'numerique', difficulte: 2, fiche: 'ma-encadrer',
+      enonce: t === 'bas' ? `Encadre ${xs} au ${precision} : … < ${xs} < ${ecr(hi)}` : `Encadre ${xs} au ${precision} : ${ecr(lo)} < ${xs} < …`,
+      reponse: t === 'bas' ? lo : hi,
+      explication: expl,
+    };
+  }, 2),
 ]);
 
 const droiteGraduee = famille([
@@ -1130,6 +1234,81 @@ const calculMental = famille([
       explication: `${double ? `Le double, c'est multiplier par 2 : ${fmt(x)} × 2` : `La moitié, c'est diviser par 2 : ${fmt(x)} : 2`} = ${fmt(res)}.`,
     };
   }),
+  // × 250, × 25 avec des décimaux, regroupements 4 × 25.
+  forme((rng) => {
+    const t = rng.int(0, 2);
+    if (t === 0) {
+      const n = rng.pick([rng.int(2, 20) * 4, rng.int(3, 49)]);
+      const calc = rng.next() < 0.7 ? `${n} × 250` : `250 × ${n}`;
+      return {
+        type: 'numerique', difficulte: 2,
+        enonce: `Calcule mentalement : ${calc}`,
+        reponse: n * 250,
+        explication: `Astuce : × 250, c'est × 1 000 puis : 4. ${n} × 1 000 = ${fmt(n * 1000)} ; ${fmt(n * 1000)} : 4 = ${fmt(n * 250)}.`,
+      };
+    }
+    if (t === 1) {
+      const x = r(rng.int(2, 60) * 0.4);
+      if (Number.isInteger(x)) return null;
+      return {
+        type: 'numerique', difficulte: 3,
+        enonce: `Calcule mentalement : ${fmt(x)} × 25`,
+        reponse: r(x * 25),
+        explication: `Astuce : × 25, c'est × 100 puis : 4. ${fmt(x)} × 100 = ${fmt(x * 100)} ; ${fmt(x * 100)} : 4 = ${fmt(x * 25)}.`,
+      };
+    }
+    const [a, b] = rng.pick([[4, 25], [25, 4], [2, 50], [50, 2], [5, 20], [20, 5], [4, 250], [8, 125]]);
+    const n = rng.int(3, 99);
+    const ordre = rng.pick([`${a} × ${n} × ${b}`, `${n} × ${a} × ${b}`, `${a} × ${n} × ${b}`]);
+    return {
+      type: 'numerique', difficulte: 2,
+      enonce: `Calcule astucieusement : ${ordre}`,
+      reponse: a * b * n,
+      explication: `On peut changer l'ordre des facteurs : ${a} × ${b} = ${fmt(a * b)}, puis ${fmt(a * b)} × ${n} = ${fmt(a * b * n)}.`,
+    };
+  }, 2),
+  // Décompositions de 100 et de 1 (en deux facteurs, en dixièmes, en centièmes).
+  forme((rng) => {
+    const t = rng.int(0, 3);
+    if (t === 0) {
+      const a = rng.pick([2, 4, 5, 10, 20, 25, 50, 8]); const b = r(100 / a);
+      const gauche = rng.next() < 0.5;
+      return {
+        type: 'numerique', difficulte: 2,
+        enonce: `Complète : 100 = ${gauche ? `${a} × …` : `… × ${a}`}`,
+        reponse: b,
+        explication: `${fmt(a)} × ${fmt(b)} = 100. À connaitre : 100 = 2 × 50 = 4 × 25 = 5 × 20 = 10 × 10 = 8 × 12,5.`,
+      };
+    }
+    if (t === 1) {
+      const [a, b] = rng.pick([[0.5, 2], [0.25, 4], [0.2, 5], [0.1, 10], [0.125, 8], [2, 0.5], [4, 0.25], [5, 0.2], [10, 0.1], [8, 0.125]]);
+      return {
+        type: 'numerique', difficulte: 3,
+        enonce: `Complète : 1 = ${fmt(a)} × …`,
+        reponse: b,
+        explication: `${fmt(a)} × ${fmt(b)} = 1. À connaitre : 1 = 0,5 × 2 = 0,25 × 4 = 0,2 × 5 = 0,1 × 10 = 0,125 × 8.`,
+      };
+    }
+    if (t === 2) {
+      const k = rng.pick([1, 2]);
+      const a = rng.int(1, 10 ** k - 1); if (a % 10 === 0 && k === 2) return null;
+      const nom = k === 1 ? 'dixièmes' : 'centièmes';
+      return {
+        type: 'numerique', difficulte: 2,
+        enonce: `Combien de ${nom} faut-il ajouter à ${fmt(a / 10 ** k)} pour obtenir 1 ?`,
+        reponse: 10 ** k - a,
+        explication: `1 = ${10 ** k} ${nom}. ${fmt(a / 10 ** k)} = ${a} ${a > 1 ? nom : nom.slice(0, -1)}. Il manque ${10 ** k} − ${a} = ${10 ** k - a} ${nom} (${fmt((10 ** k - a) / 10 ** k)}).`,
+      };
+    }
+    const [nom, k] = rng.pick([['dixièmes', 10], ['centièmes', 100], ['millièmes', 1000]]);
+    const n = rng.int(1, 9);
+    return {
+      type: 'numerique', difficulte: 1,
+      enonce: `Combien de ${nom} y a-t-il dans ${n === 1 ? '1 unité' : `${n} unités`} ?`,
+      reponse: n * k,
+      explication: `1 = ${fmt(k)} ${nom}, donc ${n} = ${n} × ${fmt(k)} = ${fmt(n * k)} ${nom}.`,
+    };
+  }, 2),
 ]);
 
 // Transformation d'un facteur pour « Sachant que a × b = p, calcule… »
@@ -1762,6 +1941,22 @@ const REALISTES = [
   ['aire', "L'aire d'une classe est d'environ", 60, 'm²'], ['aire', "L'aire de la forêt de Soignes est d'environ", 4400, 'ha'],
 ];
 const UNITES_REALISTES = { masse: ['mg', 'g', 'kg', 't'], longueur: ['mm', 'cm', 'm', 'km'], capacite: ['ml', 'cl', 'l', 'hl'], duree: ['s', 'min', 'h', 'jours'], aire: ['cm²', 'm²', 'ha', 'km²'] };
+// Volumes et capacités d'objets courants (valeurs arrondies, ordre de grandeur).
+const VOLUMES_REALISTES = [
+  ["Le volume d'une bille est d'environ", 2, 'cm³'], ["Le volume d'un morceau de sucre est d'environ", 2, 'cm³'],
+  ["Le volume d'une gomme est d'environ", 10, 'cm³'], ["Le volume d'une boîte d'allumettes est d'environ", 25, 'cm³'],
+  ["Le volume d'une brique de lait d'un litre est de", 1, 'dm³'], ["Le volume d'un dictionnaire est d'environ", 3, 'dm³'],
+  ["Le volume d'une boîte à chaussures est d'environ", 8, 'dm³'], ["Le volume d'un seau rempli d'eau est d'environ", 10, 'dm³'],
+  ["Le volume d'un carton de déménagement est d'environ", 60, 'dm³'], ["Le volume d'eau d'une baignoire remplie est d'environ", 150, 'dm³'],
+  ["Le volume d'un réfrigérateur est d'environ", 300, 'dm³'], ["Le volume d'une armoire est d'environ", 2, 'm³'],
+  ["Le volume de la caisse d'un camion de déménagement est d'environ", 20, 'm³'], ["Le volume d'une salle de classe est d'environ", 200, 'm³'],
+  ["Le volume d'eau d'une piscine olympique est d'environ", 2500, 'm³'],
+];
+const CAPACITES_LITRES = [
+  ["La capacité d'un sac à dos d'écolier est d'environ", 20, 'l'], ["La capacité d'un sac de terreau est d'environ", 40, 'l'],
+  ["La capacité d'un arrosoir est d'environ", 10, 'l'], ["La capacité d'une cuillère à soupe est d'environ", 15, 'ml'],
+  ["La capacité d'un aquarium de salon est d'environ", 100, 'l'], ["La capacité d'une tasse est d'environ", 25, 'cl'],
+];
 const mesuresRealistes = famille([
   forme((rng) => {
     const [g, phrase, v, u] = rng.pick(REALISTES);
@@ -1783,6 +1978,38 @@ const mesuresRealistes = famille([
       enonce: `${debut} : quelle est la mesure la plus vraisemblable ?`,
       explication: `${phrase} ${fmt(v)} ${u}. Les autres mesures sont 10, 100 ou 1 000 fois trop grandes ou trop petites.`,
     };
+  }),
+  // Volumes : choisir l'unité (cm³, dm³, m³).
+  forme((rng) => {
+    const [phrase, v, u] = rng.pick(VOLUMES_REALISTES);
+    const choix = ['cm³', 'dm³', 'm³'];
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(u), difficulte: 2,
+      enonce: `${phrase} ${fmt(v)}…`,
+      explication: `${phrase} ${fmt(v)} ${u}. Repères : un petit cube de 1 cm d'arête = 1 cm³ ; une brique de lait = 1 dm³ = 1 litre ; un grand cube de 1 m d'arête = 1 m³ = 1 000 litres.`,
+    };
+  }, 2),
+  // Volumes et capacités : la valeur la plus vraisemblable.
+  forme((rng) => {
+    const [phrase, v, u] = rng.pick([...VOLUMES_REALISTES, ...CAPACITES_LITRES].filter(([p]) => /d'environ$/.test(p)));
+    const fausses = [r(v * 10), r(v / 10), r(v * 100), r(v * 1000), r(v / 100)].filter((x) => x >= 0.1 && nbDecimales(x) <= 2).map((x) => `${fmt(x)} ${u}`);
+    const c = qcm(rng, `${fmt(v)} ${u}`, fausses);
+    if (!c) return null;
+    return {
+      ...c, difficulte: 2,
+      enonce: `${phrase.replace(/ est d'environ$/, '')} : quelle mesure est la plus vraisemblable ?`,
+      explication: `${phrase} ${fmt(v)} ${u}. Les autres valeurs sont au moins 10 fois trop grandes ou trop petites. Rappel : 1 dm³ = 1 l et 1 m³ = 1 000 l.`,
+    };
+  }),
+  // Lien volume – capacité.
+  forme((rng) => {
+    const cas = rng.pick([
+      () => { const v = rng.int(8, 45); return { e: `Une piscine de jardin contient ${v} m³ d'eau. Combien de litres d'eau contient-elle ?`, rep: v * 1000, u: 'l', x: `1 m³ = 1 000 l, donc ${v} m³ = ${fmt(v * 1000)} l.` }; },
+      () => { const v = rng.int(30, 400); return { e: `Un aquarium a un volume de ${v} dm³. Combien de litres d'eau peut-il contenir ?`, rep: v, u: 'l', x: `1 dm³ = 1 l, donc ${v} dm³ = ${v} l.` }; },
+      () => { const v = rng.pick([250, 500, 750, 1500, 2000, 330, 200]); return { e: `Un récipient a un volume de ${fmt(v)} cm³. Combien de millilitres peut-il contenir ?`, rep: v, u: 'ml', x: `1 cm³ = 1 ml, donc ${fmt(v)} cm³ = ${fmt(v)} ml.` }; },
+      () => { const v = rng.int(2, 60) * 500; return { e: `Une citerne contient ${fmt(v)} litres d'eau. Quel est ce volume en m³ ?`, rep: v / 1000, u: 'm³', x: `1 m³ = 1 000 l, donc ${fmt(v)} l = ${fmt(v)} : 1 000 = ${fmt(v / 1000)} m³.` }; },
+    ])();
+    return { type: 'numerique', unite: cas.u, difficulte: 2, fiche: 'ma-unites-aire-volume', enonce: cas.e, reponse: cas.rep, explication: cas.x };
   }),
 ]);
 
@@ -2087,8 +2314,76 @@ const durees = famille([
       explication: `Attention, les heures ne comptent pas en base 10 ! ${fmt(h)} h = ${fmt(h)} × 60 min = ${min} min${min >= 60 ? ` = ${txt(min)}` : ''}.`,
     };
   }),
+  // Établir l'horaire d'une journée : enchaîner les activités.
+  forme((rng) => {
+    const J = rng.pick(JOURNEES);
+    const n = rng.int(3, 5);
+    const acts = J.acts.slice(0, n).map(([nom, a, b]) => [nom, rng.int(a / 5, b / 5) * 5]);
+    const debut = rng.int(8 * 12, 10 * 12) * 5;
+    const debuts = []; let t = debut;
+    for (const [, d] of acts) { debuts.push(t); t += d; }
+    if (t > 18 * 60) return null;
+    // « Le dîner » (repas de midi en Belgique) doit commencer entre 11 h 30 et 13 h 30.
+    const iDiner = acts.findIndex(([nom]) => nom === 'le dîner');
+    if (iDiner >= 0 && (debuts[iDiner] < 11 * 60 + 30 || debuts[iDiner] > 13 * 60 + 30)) return null;
+    const k = rng.int(2, n); // k = n : heure de fin de la dernière activité
+    const cible = k === n ? t : debuts[k];
+    const h = (m) => heureTxt(Math.floor(m / 60), m % 60);
+    const etapes = acts.slice(0, k).map(([nom, d], i) => `${h(debuts[i])} + ${dureeTxt(d)} (${nom}) → ${h(debuts[i] + d)}`);
+    return {
+      type: 'texte_court', souple: true, difficulte: 3, fiche: 'ma-horaire',
+      enonce: `Programme de ${J.titre} : on commence à ${h(debut)}, puis les activités s'enchaînent sans attente : ${acts.map(([nom, d]) => `${nom} (${dureeTxt(d)})`).join(', ')}. ${k === n ? `À quelle heure ${acts[n - 1][0].startsWith('les ') ? 'se terminent' : 'se termine'} ${acts[n - 1][0]} ?` : `À quelle heure ${acts[k][0].startsWith('les ') ? 'commencent' : 'commence'} ${acts[k][0]} ?`} (exemple de réponse : 14 h 35)`,
+      reponse: heuresAcceptees(Math.floor(cible / 60), cible % 60),
+      explication: `On ajoute les durées une par une : ${etapes.join(' ; ')}.`,
+    };
+  }, 2),
+  // Temps libre dans une journée.
+  forme((rng) => {
+    const J = rng.pick(JOURNEES);
+    const acts = rng.shuffle(J.acts.filter(([nom]) => nom !== 'le dîner')).slice(0, 3).map(([nom, a, b]) => [nom, rng.int(a / 5, b / 5) * 5]);
+    const total = acts.reduce((x, [, d]) => x + d, 0);
+    const debut = rng.int(8 * 12, 10 * 12) * 5; const libre = rng.int(2, 24) * 5;
+    const fin = debut + total + libre;
+    const h = (m) => heureTxt(Math.floor(m / 60), m % 60);
+    return {
+      type: 'numerique', unite: 'min', difficulte: 3, fiche: 'ma-horaire',
+      enonce: `Pour ${J.titre}, on dispose de ${h(debut)} à ${h(fin)}. On prévoit ${acts.map(([nom, d]) => `${nom} (${dureeTxt(d)})`).join(', ')}. Combien de minutes reste-t-il pour le temps libre ?`,
+      reponse: libre,
+      explication: `Temps disponible : de ${h(debut)} à ${h(fin)}, soit ${dureeTxt(fin - debut)} = ${fin - debut} min. Activités : ${acts.map(([, d]) => d).join(' + ')} = ${total} min. Temps libre : ${fin - debut} − ${total} = ${libre} min.`,
+    };
+  }),
+  // Choisir des activités qui remplissent exactement un créneau.
+  forme((rng) => {
+    const P = rng.pick(PRENOMS);
+    const pool = rng.shuffle([['la piscine', 45, 90], ['la bibliothèque', 20, 60], ['le cinéma', 90, 130], ['le parc', 30, 75], ['le musée', 60, 100], ['la plaine de jeux', 30, 60], ['le marché', 20, 45], ['le cours de dessin', 45, 75]]).slice(0, 4)
+      .map(([nom, a, b]) => [nom, rng.int(a / 5, b / 5) * 5]);
+    const trajet = rng.pick([10, 15, 20]);
+    const [i, j] = rng.shuffle([0, 1, 2, 3]).slice(0, 2);
+    const dispo = pool[i][1] + pool[j][1] + trajet;
+    const paires = [];
+    for (let a = 0; a < 4; a++) for (let b = a + 1; b < 4; b++) paires.push([a, b]);
+    if (paires.filter(([a, b]) => pool[a][1] + pool[b][1] + trajet === dispo).length !== 1) return null;
+    const txt = ([a, b]) => `${majusculeN(pool[a][0])} et ${pool[b][0]}`;
+    const bonne = txt([Math.min(i, j), Math.max(i, j)]);
+    const c = qcm(rng, bonne, rng.shuffle(paires.filter(([a, b]) => !(a === Math.min(i, j) && b === Math.max(i, j)))).map(txt));
+    if (!c) return null;
+    const d0 = rng.int(13 * 12, 15 * 12) * 5;
+    const h = (m) => heureTxt(Math.floor(m / 60), m % 60);
+    return {
+      ...c, difficulte: 3, fiche: 'ma-horaire',
+      enonce: `${P.n} est libre de ${h(d0)} à ${h(d0 + dispo)}. ${P.il === 'elle' ? 'Elle' : 'Il'} veut faire deux activités et compte ${trajet} min de trajet entre les deux. Durées : ${pool.map(([nom, d]) => `${nom} ${dureeTxt(d)}`).join(', ')}. Quelles activités remplissent exactement son temps libre ?`,
+      explication: `Temps libre : ${dureeTxt(dispo)} = ${dispo} min. Sans le trajet : ${dispo} − ${trajet} = ${dispo - trajet} min. ${bonne} : ${pool[Math.min(i, j)][1]} + ${pool[Math.max(i, j)][1]} = ${dispo - trajet} min. C'est la seule paire qui convient.`,
+    };
+  }),
 ]);
 
+// Horaire d'une journée : activités [nom, durée min, durée max] (minutes, multiples de 5).
+const JOURNEES = [
+  { titre: "l'excursion de la classe", acts: [['le trajet en car', 30, 70], ['la visite guidée du musée', 60, 105], ['le pique-nique', 30, 50], ["l'atelier de peinture", 40, 75], ['la promenade dans le parc', 30, 60], ['le retour en car', 30, 70]] },
+  { titre: 'la journée de stage sportif', acts: [["l'échauffement", 15, 25], ['le tournoi de football', 60, 100], ['la pause collation', 10, 20], ["l'initiation à l'escalade", 45, 80], ['le dîner', 40, 60], ['la course d\'orientation', 50, 90]] },
+  { titre: 'la journée à la ferme', acts: [['le trajet à vélo', 20, 45], ['les soins aux animaux', 40, 70], ['la fabrication du pain', 50, 90], ['le dîner', 35, 55], ['la balade à poney', 30, 50], ['la traite des vaches', 25, 45]] },
+  { titre: 'la journée au parc à thème', acts: [['le trajet en train', 40, 80], ['le spectacle des dauphins', 25, 45], ['les attractions', 60, 120], ['le dîner', 30, 50], ['le grand huit', 15, 30], ['le retour en train', 40, 80]] },
+];
 const MOIS = [['janvier', 31], ['février', 28], ['mars', 31], ['avril', 30], ['mai', 31], ['juin', 30], ['juillet', 31], ['août', 31], ['septembre', 30], ['octobre', 31], ['novembre', 30], ['décembre', 31]];
 const JOURS = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'];
 const bissextile = (a) => (a % 4 === 0 && a % 100 !== 0) || a % 400 === 0;
@@ -2636,7 +2931,7 @@ const problemes = famille([
       type: 'numerique', unite: 'semaines', difficulte: 3,
       enonce: `${P.n} veut acheter ${jeu} à ${prix} €. ${P.il === 'elle' ? 'Elle' : 'Il'} a déjà ${a} € et économise ${eur(s)} par semaine. Au bout de combien de semaines aura-t-${P.il} assez d'argent ?`,
       reponse: sem,
-      explication: Number.isInteger((prix - a) / s) ? `Il manque ${prix} − ${a} = ${prix - a} €. ${prix - a} : ${fmt(s)} = ${sem} semaines.` : `Il manque ${prix} − ${a} = ${prix - a} €. Après ${sem - 1} semaines, ${P.il} a économisé ${eur((sem - 1) * s)} : pas encore assez. Après ${sem} semaines : ${eur(sem * s)}, c'est suffisant. Réponse : ${sem} semaines.`,
+      explication: Number.isInteger((prix - a) / s) ? `Il manque ${prix} − ${a} = ${prix - a} €. ${prix - a} : ${fmt(s)} = ${sem} semaines.` : `Il manque ${prix} − ${a} = ${prix - a} €. Après ${sem - 1} ${sem - 1 > 1 ? 'semaines' : 'semaine'}, ${P.il} a économisé ${eur((sem - 1) * s)} : pas encore assez. Après ${sem} semaines : ${eur(sem * s)}, c'est suffisant. Réponse : ${sem} semaines.`,
     };
   }),
   forme((rng) => {
@@ -2699,7 +2994,60 @@ const problemes = famille([
       explication: `Tous les enfants : ${fmt(enfants)}. Tous les adultes : ${fmt(ad1)} + ${fmt(ad2)} = ${fmt(ad1 + ad2)}. Total : ${fmt(enfants)} + ${fmt(ad1 + ad2)} = ${fmt(tot)}. Le nombre ${fmt(n1)} ne sert pas : il est déjà compté dans les enfants !`,
     };
   }),
+  // Quel calcul correspond à l'énoncé ?
+  forme((rng) => {
+    const P = rng.pick(PRENOMS);
+    const t = enonceCalcul(rng, P);
+    if (!t) return null;
+    // Aucun calcul faux ne doit donner par hasard le même résultat que le bon.
+    const val = (x) => Function(`return ${x.replace(/×/g, '*').replace(/:/g, '/').replace(/−/g, '-')}`)();
+    const c = qcm(rng, t.bon, rng.shuffle(t.faux.filter((f) => Math.abs(val(f) - val(t.bon)) > 1e-9)));
+    if (!c) return null;
+    return {
+      ...c, difficulte: 3,
+      enonce: `${t.e} Quel calcul permet de répondre ?`,
+      explication: `Le bon calcul est ${t.bon}.${t.bon.includes('(') ? ' Les parenthèses indiquent ce qu\'on calcule en premier.' : ''} Lis l'énoncé étape par étape : chaque phrase dit s'il faut réunir (+), enlever (−), répéter (×) ou partager (:).`,
+    };
+  }, 2),
+  // Quel énoncé correspond au calcul ?
+  forme((rng) => {
+    const P = rng.pick(PRENOMS);
+    const a = rng.int(3, 12); const b = rng.int(4, 15); const c = rng.int(2, 9);
+    const [bon, ...autres] = rng.shuffle(ENONCES_CALCUL);
+    if (bon.calc(a, b, c).includes(':') && (a + b) % c) return null;
+    const fausses = autres.filter((x) => !x.calc(a, b, c).includes(':')).map((x) => x.e(P, a, b, c));
+    const q = qcm(rng, bon.e(P, a, b, c), fausses);
+    if (!q) return null;
+    return {
+      ...q, difficulte: 3,
+      enonce: `Quel problème se résout avec le calcul ${bon.calc(a, b, c)} ?`,
+      explication: `Dans ${bon.calc(a, b, c)}, on calcule d'abord ce qui est entre parenthèses. C'est le problème : « ${bon.e(P, a, b, c)} » Les autres problèmes demandent d'autres opérations ou un autre ordre.`,
+    };
+  }, 2),
 ]);
+
+// Choisir le calcul (ou l'énoncé) : modèles d'énoncés avec leur calcul et des calculs faux plausibles.
+function enonceCalcul(rng, P) {
+  const Il = P.il === 'elle' ? 'Elle' : 'Il';
+  const T = [
+    () => { const a = rng.int(2, 9); const b = rng.int(2, 15); const c = rng.pick([20, 50, 100]); if (a * b >= c) return null; return { e: `${P.n} achète ${a} livres à ${b} € pièce et paie avec un billet de ${c} €. Combien lui rend-on ?`, bon: `${c} − (${a} × ${b})`, faux: [`(${c} − ${a}) × ${b}`, `${c} − ${a} + ${b}`, `(${a} × ${b}) − ${c}`, `${c} : ${a} × ${b}`] }; },
+    () => { const b = rng.int(3, 6); const a = b * rng.int(4, 9); return { e: `Les ${a} élèves d'une école forment des équipes de ${b} joueurs. Combien d'équipes y a-t-il ?`, bon: `${a} : ${b}`, faux: [`${a} × ${b}`, `${a} − ${b}`, `${b} : ${a}`, `${a} + ${b}`] }; },
+    () => { const a = rng.int(15, 80); const b = rng.int(5, 40); const c = rng.int(5, 30); return { e: `${P.n} a ${a} € dans sa tirelire. ${Il} reçoit ${b} € de sa grand-mère, puis dépense ${c} €. Combien lui reste-t-il ?`, bon: `${a} + ${b} − ${c}`, faux: [`${a} − ${b} + ${c}`, `${a} − ${b} − ${c}`, `${a} + ${b} + ${c}`, `(${a} − ${c}) − ${b}`] }; },
+    () => { const b = rng.pick([6, 10, 12]); const a = b * rng.int(5, 20); const c = rng.pick([2, 3, 4, 5]); return { e: `Une fermière range ${a} œufs dans des boîtes de ${b}. Elle vend chaque boîte ${c} €. Combien gagne-t-elle si elle vend toutes les boîtes ?`, bon: `(${a} : ${b}) × ${c}`, faux: [`(${a} × ${b}) : ${c}`, `${a} × ${c}`, `(${a} : ${c}) × ${b}`, `${a} : ${b} + ${c}`] }; },
+    () => { const b = rng.int(8, 25); const c = rng.int(3, 9); const a = b * c + rng.int(20, 150); return { e: `Un livre a ${a} pages. ${P.n} en lit ${b} par jour pendant ${c} jours. Combien de pages lui reste-t-il à lire ?`, bon: `${a} − (${b} × ${c})`, faux: [`(${a} − ${b}) × ${c}`, `${a} − ${b} − ${c}`, `${a} − (${b} + ${c})`, `(${a} : ${b}) − ${c}`] }; },
+    () => { const b = rng.int(3, 8); const a = rng.int(18, 26); const c = rng.int(2, 5); return { e: `Une école a ${b} classes de ${a} élèves. Chaque élève reçoit ${c} cahiers. Combien de cahiers faut-il ?`, bon: `${b} × ${a} × ${c}`, faux: [`(${b} × ${a}) + ${c}`, `(${b} + ${a}) × ${c}`, `${b} + ${a} + ${c}`, `(${b} × ${a}) : ${c}`] }; },
+    () => { const b = rng.int(2, 5); const c = rng.int(2, 9) * 2; const a = c + b * rng.int(3, 12); return { e: `${P.n} a ${a} images. ${Il} en garde ${c} et partage les autres entre ses ${b} amis, en parts égales. Combien d'images reçoit chaque ami ?`, bon: `(${a} − ${c}) : ${b}`, faux: [`${a} − ${c} : ${b}`, `(${a} : ${b}) − ${c}`, `(${a} + ${c}) : ${b}`, `(${a} − ${b}) : ${c}`] }; },
+  ];
+  return rng.pick(T)();
+}
+const ENONCES_CALCUL = [
+  { calc: (a, b, c) => `(${a} × ${b}) + ${c}`, e: (P, a, b, c) => `${P.n} achète ${a} paquets de ${b} images. Son ami lui en donne encore ${c}. Combien d'images a-t-${P.il} ?` },
+  { calc: (a, b, c) => `(${a} × ${b}) − ${c}`, e: (P, a, b, c) => `${P.n} achète ${a} paquets de ${b} images. ${P.il === 'elle' ? 'Elle' : 'Il'} en donne ${c} à son ami. Combien lui en reste-t-il ?` },
+  { calc: (a, b, c) => `(${a} + ${b}) × ${c}`, e: (P, a, b, c) => `Un club compte ${a} filles et ${b} garçons. Chaque membre reçoit ${c} images. Combien d'images faut-il ?` },
+  { calc: (a, b, c) => `${a} × (${b} + ${c})`, e: (P, a, b, c) => `${P.n} achète ${a} pochettes. Chaque pochette contient ${b} images et ${c} autocollants. Combien d'objets a-t-${P.il} en tout ?` },
+  { calc: (a, b, c) => `${a} + (${b} × ${c})`, e: (P, a, b, c) => `${P.n} a déjà ${a} images. ${P.il === 'elle' ? 'Elle' : 'Il'} achète ${b} paquets de ${c} images. Combien d'images a-t-${P.il} maintenant ?` },
+  { calc: (a, b, c) => `(${a} + ${b}) : ${c}`, e: (P, a, b, c) => `${P.n} a ${a} images et en reçoit ${b}. ${P.il === 'elle' ? 'Elle' : 'Il'} les range dans un album, ${c} par page. Combien de pages remplit-${P.il} ?` },
+];
 
 // ---------------------------------------------------------------------------
 // GÉOMÉTRIE : triangles et angles

@@ -6,14 +6,20 @@
 //   sc_emboites    : classification en ensembles emboîtés (figure de rectangles emboîtés, attributs partagés)
 //   sc_attributs   : attributs des animaux (liste officielle P6) et notion d'espèce
 //   sc_systemes    : liens entre systèmes respiratoire, circulatoire et digestif (trajets, diaphragme…)
+//   sc_ventilation : modèle de la ventilation (bouteille, membrane, ballons) : correspondances, inspiration/expiration, limites
+//   sc_demarche    : démarche d'investigation (facteur testé, un seul facteur qui change, témoin, fait/hypothèse/jugement)
+//   sc_transfert   : la chaleur passe du chaud vers le froid ; équilibre des températures (courbes, mélanges)
+//   sc_economie    : limiter les pertes de chaleur (isolation, gestes, choix d'un isolant ou d'un conducteur)
+//   sc_mesures     : instruments et unités (thermomètre, balance, chronomètre, verre gradué, pluviomètre), lectures
+//   sc_espece      : notion d'espèce (races, hybrides stériles, compter les espèces)
 
 import { formatNombre as fmt } from '../format.js';
 
 // ---------------------------------------------------------------- outils
-const FILLES = ['Léa', 'Agathe', 'Emma', 'Louise', 'Juliette', 'Océane', 'Amélie', 'Chloé', 'Zoé', 'Solène', 'Maëlle', 'Alice', 'Pauline', 'Margaux'];
-const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Théo', 'Hugo'];
+const FILLES = ['Léa', 'Agathe', 'Manon', 'Louise', 'Juliette', 'Camille', 'Amélie', 'Chloé', 'Mathilde', 'Clémence', 'Élise', 'Claire', 'Pauline', 'Margaux'];
+const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Mathis', 'Quentin', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Clément', 'Pierre'];
 const PRENOMS = [...FILLES, ...GARCONS];
-const VOY = /\bde (?=(Agathe|Emma|Océane|Amélie|Alice|Antoine|Arthur|Étienne|Émile|Hugo)\b)/g;
+const VOY = /\bde (?=(Agathe|Amélie|Antoine|Arthur|Étienne|Émile|Élise)\b)/g;
 const elider = (t) => (typeof t === 'string' ? t.replace(VOY, 'd\'') : t);
 const il = (p) => (FILLES.includes(p) ? 'elle' : 'il');
 const maj = (s) => (s ? String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCase()) : s);
@@ -1152,6 +1158,975 @@ export function genererSystemes(modele, rng) {
     explication: `${m.map(([o, s]) => `${o} : système ${s}`).join(' ; ')}.`, _signature: `org|${triee(m.map(([o]) => o))}` };
 }
 
+// ================================================================ 6. ÉTAPE 2 : OUTILS COMMUNS
+// Prénoms et noms de famille français uniquement (règle du projet).
+const FILLES_F = ['Léa', 'Chloé', 'Manon', 'Camille', 'Juliette', 'Mathilde', 'Pauline', 'Agathe', 'Amélie', 'Élise', 'Margaux', 'Clémence'];
+const GARCONS_F = ['Louis', 'Arthur', 'Jules', 'Victor', 'Antoine', 'Baptiste', 'Maxime', 'Romain', 'Mathis', 'Quentin', 'Étienne', 'Émile', 'Clément'];
+const ENFANTS = [...FILLES_F, ...GARCONS_F];
+const NOMS_FAMILLE = ['Dubois', 'Lambert', 'Martin', 'Lefèvre', 'Moreau', 'Dupont', 'Leroy', 'Mercier'];
+const pr = (p) => (FILLES_F.includes(p) ? 'elle' : 'il');
+const minus = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+const point = (s) => (/[.!?]$/.test(s) ? s : `${s}.`);
+// QCM dont les choix sont rangés (lettres, montages…) plutôt que mélangés.
+function qcmRange(bonne, faux, tri = (a, b) => a.localeCompare(b)) {
+  const f = [...new Set(faux)].filter((x) => x !== bonne).slice(0, 3);
+  if (f.length < 2) return null;
+  const choix = [bonne, ...f].sort(tri);
+  return { type: 'qcm', choix, reponse: choix.indexOf(bonne) };
+}
+// « le » → « du », « la » → « de la », « l' » → « de l' », « les » → « des »
+const deLe = (gn) => gn.replace(/^le /, 'du ').replace(/^la /, 'de la ').replace(/^l'/, 'de l\'').replace(/^les /, 'des ');
+const aLe = (gn) => gn.replace(/^le /, 'au ').replace(/^la /, 'à la ').replace(/^l'/, 'à l\'').replace(/^les /, 'aux ');
+
+// ================================================================ 7. MODÈLE DE LA VENTILATION (bouteille, ballons, membrane)
+const VPARTS = {
+  tube: { modele: 'le tube (la paille)', ligne: 'Le tube (la paille)', organe: 'la trachée' },
+  branches: { modele: 'les deux branches du tube en Y', ligne: 'Les branches du tube en Y', organe: 'les bronches' },
+  ballons: { modele: 'les ballons', ligne: 'Les ballons', organe: 'les poumons' },
+  bouteille: { modele: 'la bouteille', ligne: 'La bouteille', organe: 'la cage thoracique' },
+  membrane: { modele: 'la membrane en caoutchouc', ligne: 'La membrane en caoutchouc', organe: 'le diaphragme' },
+};
+const VCLES = Object.keys(VPARTS);
+const ORG_EXTRA = ['le cœur', 'l\'estomac', 'l\'œsophage'];
+const CORRESP = 'Dans ce modèle : la bouteille représente la cage thoracique, la membrane le diaphragme, les ballons les poumons, le tube la trachée et les branches du Y les bronches.';
+
+function figureVentilation(etat, lettres) {
+  const W = 372; const H = 336; const cx = 150; const yM = 266;
+  const flex = etat === 'tiree' ? 30 : etat === 'poussee' ? -24 : 0;
+  const [rx, ry] = etat === 'tiree' ? [27, 36] : etat === 'poussee' ? [13, 17] : [20, 26];
+  let s = '';
+  s += `<path d="M80 ${yM} L80 104 Q80 74 128 62 L128 34 L172 34 L172 62 Q220 74 220 104 L220 ${yM}" fill="#eef4fb" stroke="${ENCRE}" stroke-width="2.4"/>`;
+  s += `<rect x="122" y="24" width="56" height="20" rx="3" fill="#b08d63" stroke="${ENCRE}" stroke-width="1.6"/>`;
+  const tube = `M${cx} 6 L${cx} 128 M${cx} 128 L116 156 M${cx} 128 L184 156`;
+  s += `<path d="${tube}" fill="none" stroke="${ENCRE}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s += `<path d="${tube}" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>`;
+  for (const x of [116, 184]) s += `<ellipse cx="${x}" cy="${154 + ry}" rx="${rx}" ry="${ry}" fill="#f6cfd0" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  if (flex < 0) s += `<path d="M81.2 ${yM} Q${cx} ${yM + 2 * flex} 218.8 ${yM} Z" fill="#ffffff"/>`;
+  s += `<path d="M76 ${yM} Q${cx} ${yM + 2 * flex} 224 ${yM}" fill="none" stroke="#c0392b" stroke-width="4.5" stroke-linecap="round"/>`;
+  const yb = yM + flex;
+  s += `<line x1="${cx}" y1="${yb}" x2="${cx}" y2="${yb + 14}" stroke="${ENCRE}" stroke-width="2"/><circle cx="${cx}" cy="${yb + 19}" r="5" fill="#ffffff" stroke="${ENCRE}" stroke-width="2"/>`;
+  if (etat !== 'repos') {
+    const x = cx - 44; const [y1, y2] = etat === 'tiree' ? [yM + 10, yM + 46] : [yM + 46, yM + 4];
+    const d = y2 > y1 ? -1 : 1;
+    s += `<line x1="${x}" y1="${y1}" x2="${x}" y2="${y2 + d * 6}" stroke="${ENCRE}" stroke-width="3"/>`
+      + `<path d="M${x - 7} ${y2 + d * 9} L${x} ${y2} L${x + 7} ${y2 + d * 9} Z" fill="${ENCRE}"/>`;
+  }
+  if (lettres) {
+    const yMem = yM + 0.4476 * flex;
+    const cibles = {
+      tube: [153, 100, 58], bouteille: [220, 122, 112], branches: [172, 145, 166],
+      ballons: [184 + rx, 154 + ry, 216], membrane: [205, yMem, 296],
+    };
+    for (const [k, [tx, ty, ly]] of Object.entries(cibles)) {
+      s += `<line x1="${tx}" y1="${ty.toFixed(1)}" x2="${330}" y2="${ly}" stroke="${ENCRE}" stroke-width="1.2"/>`
+        + `<circle cx="${tx}" cy="${ty.toFixed(1)}" r="2.6" fill="${ENCRE}"/>`
+        + `<circle cx="346" cy="${ly}" r="13" fill="#ffffff" stroke="${ENCRE}" stroke-width="1.6"/>`
+        + `<text x="346" y="${ly + 5}" font-size="14" font-weight="bold" text-anchor="middle" fill="${ENCRE}">${lettres[k]}</text>`;
+    }
+  }
+  return svg(W, H, s);
+}
+
+const V_LIMITES_VRAIES = [
+  'Dans le corps, les côtes bougent et la cage thoracique s\'agrandit ; la bouteille, elle, ne change pas de forme.',
+  'Dans le corps, le diaphragme est un muscle qui se contracte ; dans le modèle, c\'est la main qui tire la membrane.',
+  'Les vrais poumons ne sont pas des sacs vides : ils contiennent des millions de petites alvéoles.',
+  'Dans le corps, le dioxygène passe dans le sang au niveau des alvéoles ; dans le modèle, il n\'y a pas de sang.',
+];
+const V_LIMITES_FAUSSES = [
+  'Dans le corps, l\'air entre dans les poumons quand le diaphragme remonte.',
+  'Dans le corps, l\'air arrive aux poumons par l\'œsophage.',
+  'Dans le corps, il n\'y a qu\'un seul poumon.',
+  'Dans le corps, les poumons se gonflent quand la cage thoracique devient plus petite.',
+  'Dans le corps, le diaphragme se trouve au-dessus des poumons.',
+];
+const V_ACTIONS = {
+  tire: { txt: 'tire la membrane vers le bas', bonne: 'Les ballons se gonflent : l\'air entre par le tube.', mvt: 'l\'inspiration' },
+  pousse: { txt: 'pousse la membrane vers le haut', bonne: 'Les ballons se dégonflent : l\'air sort par le tube.', mvt: 'l\'expiration' },
+  relache: { txt: 'relâche la membrane qu\'il avait tirée vers le bas', bonne: 'Les ballons se dégonflent : l\'air sort par le tube.', mvt: 'l\'expiration' },
+};
+const V_REPONSES = ['Les ballons se gonflent : l\'air entre par le tube.', 'Les ballons se dégonflent : l\'air sort par le tube.', 'Les ballons ne bougent pas.', 'L\'air entre dans la bouteille par le fond.'];
+const V_ORDRE = {
+  tire: ['On tire la membrane vers le bas', 'Le volume à l\'intérieur de la bouteille augmente', 'L\'air extérieur entre par le tube et gonfle les ballons', 'On relâche la membrane : les ballons se dégonflent'],
+  pousse: ['On pousse la membrane vers le haut', 'Le volume à l\'intérieur de la bouteille diminue', 'Les ballons sont comprimés', 'L\'air des ballons sort par le tube'],
+};
+
+export function genererVentilation(modele, rng) {
+  const forme = rng.pick(['represente', 'represente', 'represente', 'lettre', 'lettre', 'etat', 'action', 'pourquoi', 'reel', 'reel', 'limite', 'limite', 'grille', 'vf', 'ordre']);
+  const p = rng.pick(ENFANTS);
+  const intro = `${p} a fabriqué un modèle du système respiratoire : une bouteille sans fond, fermée en bas par une membrane en caoutchouc, et un tube en Y relié à deux ballons.`;
+  const verbeP = (a) => V_ACTIONS[a].txt.replace('qu\'il avait', `qu'${pr(p)} avait`);
+  if (forme === 'represente' || forme === 'lettre') {
+    const etat = rng.pick(['repos', 'tiree', 'poussee']);
+    const ordreL = rng.shuffle(VCLES);
+    const lettres = Object.fromEntries(ordreL.map((k, i) => [k, 'ABCDE'[i]]));
+    const k = rng.pick(VCLES);
+    const fig = figureVentilation(etat, lettres);
+    const cle = `${forme}|${etat}|${VCLES.map((x) => lettres[x]).join('')}|${k}`;
+    if (forme === 'represente') {
+      const faux = rng.shuffle([...VCLES.filter((x) => x !== k).map((x) => VPARTS[x].organe), ...ORG_EXTRA]).slice(0, 3);
+      const r = qcm(rng, maj(VPARTS[k].organe), faux.map(maj));
+      return { ...r, figure: fig, enonce: `${intro} Dans ce modèle, que représente la partie ${lettres[k]} ?`,
+        explication: `La partie ${lettres[k]} montre ${VPARTS[k].modele}, qui ${/^les/.test(VPARTS[k].modele) ? 'représentent' : 'représente'} ${VPARTS[k].organe}. ${CORRESP}`,
+        _signature: `${cle}|${triee(faux)}`, cleContenu: cle };
+    }
+    const faux = rng.shuffle(VCLES.filter((x) => x !== k)).slice(0, 3).map((x) => lettres[x]);
+    const r = qcmRange(lettres[k], faux);
+    return { ...r, figure: fig, enonce: `${intro} Quelle lettre désigne la partie du modèle qui représente ${VPARTS[k].organe} ?`,
+      explication: `La partie ${lettres[k]} montre ${VPARTS[k].modele}, qui ${/^les/.test(VPARTS[k].modele) ? 'représentent' : 'représente'} ${VPARTS[k].organe}. ${CORRESP}`,
+      _signature: `${cle}|${triee(faux)}`, cleContenu: cle };
+  }
+  if (forme === 'etat') {
+    const etat = rng.pick(['tiree', 'poussee']);
+    const a = etat === 'tiree' ? 'tire' : 'pousse';
+    const choix = ['L\'inspiration', 'L\'expiration', 'Aucun : l\'air ne bouge pas'];
+    const bonne = etat === 'tiree' ? 0 : 1;
+    return { type: 'qcm', choix, reponse: bonne, figure: figureVentilation(etat, null),
+      enonce: `${intro} Sur le dessin, ${p} ${verbeP(a)} (flèche). Quel mouvement respiratoire le modèle imite-t-il ?`,
+      explication: etat === 'tiree'
+        ? 'Quand on tire la membrane vers le bas, le volume dans la bouteille augmente : l\'air entre dans les ballons. Dans le corps, c\'est l\'inspiration : le diaphragme s\'abaisse et l\'air entre dans les poumons.'
+        : 'Quand on pousse la membrane vers le haut, le volume dans la bouteille diminue : l\'air sort des ballons. Dans le corps, c\'est l\'expiration : le diaphragme remonte et l\'air sort des poumons.',
+      _signature: `etat|${etat}|${p}`, cleContenu: `etat|${etat}` };
+  }
+  if (forme === 'action') {
+    const a = rng.pick(['tire', 'pousse', 'relache']);
+    const A = V_ACTIONS[a];
+    const r = qcm(rng, A.bonne, V_REPONSES);
+    return { ...r, enonce: `${intro} ${p} ${verbeP(a)}. Que se passe-t-il ?`,
+      explication: `${A.bonne} Le modèle imite ${A.mvt}. ${a === 'tire' ? 'Le volume dans la bouteille augmente, comme celui de la cage thoracique quand le diaphragme s\'abaisse.' : 'Le volume dans la bouteille diminue, comme celui de la cage thoracique quand le diaphragme remonte.'}`,
+      _signature: `action|${a}|${p}`, cleContenu: `action|${a}` };
+  }
+  if (forme === 'pourquoi') {
+    const tire = rng.next() < 0.5;
+    const bonne = tire ? 'Le volume à l\'intérieur de la bouteille augmente : l\'air extérieur entre dans les ballons par le tube.'
+      : 'Le volume à l\'intérieur de la bouteille diminue : l\'air des ballons est chassé par le tube.';
+    const faux = tire
+      ? ['La membrane souffle de l\'air dans les ballons.', 'Les ballons fabriquent de l\'air.', 'L\'air entre dans les ballons par le fond de la bouteille.', 'Le volume à l\'intérieur de la bouteille diminue.']
+      : ['La membrane aspire l\'air des ballons.', 'L\'air des ballons se transforme en eau.', 'Le volume à l\'intérieur de la bouteille augmente.', 'Les ballons laissent passer l\'air à travers leur paroi.'];
+    const f = rng.shuffle(faux).slice(0, 3);
+    const r = qcm(rng, bonne, f);
+    return { ...r, enonce: `${intro} Quand ${p} ${tire ? 'tire la membrane vers le bas, les ballons se gonflent' : 'pousse la membrane vers le haut, les ballons se dégonflent'}. Pourquoi ?`,
+      explication: `${bonne} C'est la même chose dans le corps : ${tire ? 'quand le diaphragme s\'abaisse, la cage thoracique s\'agrandit et l\'air entre dans les poumons' : 'quand le diaphragme remonte, la cage thoracique diminue de volume et l\'air sort des poumons'}.`,
+      _signature: `pq|${tire}|${triee(f)}`, cleContenu: `pq|${tire}|${triee(f)}` };
+  }
+  if (forme === 'reel') {
+    const sens = rng.pick(['modeleTire', 'modelePousse', 'corpsBas', 'corpsHaut']);
+    const contracte = 'Il se contracte et s\'abaisse : la cage thoracique s\'agrandit et l\'air entre (inspiration).';
+    const relache = 'Il se relâche et remonte : la cage thoracique diminue et l\'air sort (expiration).';
+    if (sens === 'modeleTire' || sens === 'modelePousse') {
+      const t = sens === 'modeleTire';
+      const bonne = t ? contracte : relache;
+      const r = qcm(rng, bonne, rng.shuffle([t ? relache : contracte, 'Il pousse les aliments vers l\'estomac.', 'Il fait battre le cœur plus vite.', 'Il ne bouge pas : seuls les poumons bougent.']).slice(0, 3));
+      return { ...r, enonce: `${intro} ${p} ${verbeP(t ? 'tire' : 'pousse')}. Dans le corps, que fait le diaphragme pour produire le même effet ?`,
+        explication: `${bonne} La membrane du modèle représente le diaphragme, un muscle en forme de dôme placé sous les poumons.`,
+        _signature: `reel|${sens}|${r.choix.slice().sort().join('|')}`, cleContenu: `reel|${sens}|${triee(r.choix)}` };
+    }
+    const bas = sens === 'corpsBas';
+    const bonne = bas ? 'La tirer vers le bas.' : 'La pousser vers le haut.';
+    const r = qcm(rng, bonne, rng.shuffle([bas ? 'La pousser vers le haut.' : 'La tirer vers le bas.', 'Serrer la bouteille avec les mains.', 'Retirer le bouchon de la bouteille.']).slice(0, 3));
+    return { ...r, enonce: `${intro} Dans le corps, le diaphragme ${bas ? 's\'abaisse' : 'remonte'}. Que doit faire ${p} avec la membrane pour imiter ce mouvement ?`,
+      explication: `${bonne} La membrane représente le diaphragme. ${bas ? 'Quand il s\'abaisse, la cage thoracique s\'agrandit et l\'air entre : c\'est l\'inspiration.' : 'Quand il remonte, la cage thoracique diminue et l\'air sort : c\'est l\'expiration.'}`,
+      _signature: `reel|${sens}|${triee(r.choix)}`, cleContenu: `reel|${sens}|${triee(r.choix)}` };
+  }
+  if (forme === 'limite') {
+    const b = rng.pick(V_LIMITES_VRAIES); const f = rng.shuffle(V_LIMITES_FAUSSES).slice(0, 3);
+    const r = qcm(rng, b, f);
+    return { ...r, enonce: `${intro} Un modèle ne montre pas tout. Laquelle de ces phrases décrit une vraie différence entre le modèle et le corps humain ?`,
+      explication: `${b} Les autres phrases sont fausses : dans le corps, l'air passe par la trachée (pas par l'œsophage), il y a deux poumons, le diaphragme est sous les poumons et l'air entre quand la cage thoracique s'agrandit (le diaphragme s'abaisse).`,
+      _signature: `lim|${b}|${triee(f)}`, cleContenu: `lim|${b}|${triee(f)}` };
+  }
+  if (forme === 'grille') {
+    const tires = rng.shuffle(VCLES).slice(0, 4);
+    const colonnes = rng.shuffle(tires).map((k) => maj(VPARTS[k].organe));
+    return { type: 'grille', enonce: `${intro} Que représente chaque partie du modèle dans le corps ?`, lignes: tires.map((k) => VPARTS[k].ligne), colonnes,
+      reponse: tires.map((k) => colonnes.indexOf(maj(VPARTS[k].organe))), points: 4,
+      explication: `${maj(tires.map((k) => `${VPARTS[k].modele} → ${VPARTS[k].organe}`).join(' ; '))}.`,
+      _signature: `grille|${tires.join(',')}|${colonnes.join(',')}`, cleContenu: `grille|${triee(tires)}` };
+  }
+  if (forme === 'vf') {
+    const k = rng.pick(VCLES); const vrai = rng.next() < 0.45;
+    const o = vrai ? VPARTS[k].organe : rng.pick([...VCLES.filter((x) => x !== k).map((x) => VPARTS[x].organe), ...ORG_EXTRA]);
+    return { type: 'vrai_faux', reponse: vrai, enonce: `${intro} Vrai ou faux ? Dans ce modèle, ${VPARTS[k].modele} ${/^les/.test(VPARTS[k].modele) ? 'représentent' : 'représente'} ${o}.`,
+      explication: `${vrai ? 'Vrai' : 'Faux'}. ${maj(VPARTS[k].modele)} ${/^les/.test(VPARTS[k].modele) ? 'représentent' : 'représente'} ${VPARTS[k].organe}. ${CORRESP}`,
+      _signature: `vf|${k}|${o}`, cleContenu: `vf|${k}|${o}` };
+  }
+  const a = rng.pick(['tire', 'pousse']);
+  const r = ordre(rng, V_ORDRE[a]);
+  return { ...r, enonce: `${intro} Remets dans l'ordre ce qui se passe quand ${p} ${a === 'tire' ? 'tire la membrane vers le bas, puis la relâche' : 'pousse la membrane vers le haut'}.`,
+    explication: `${V_ORDRE[a].join(' → ')}. ${a === 'tire' ? 'Dans le corps, tirer la membrane correspond à l\'inspiration, la relâcher à l\'expiration.' : 'Dans le corps, c\'est l\'expiration.'}`,
+    _signature: `ordre|${a}|${r.elements.join('|')}`, cleContenu: `ordre|${a}|${r.elements.join('|')}` };
+}
+
+// ================================================================ 8. DÉMARCHE D'INVESTIGATION
+// Chaque contexte : 3 facteurs à 2 valeurs. « temoin » : facteur dont la valeur 0 est « sans rien changer ».
+const CTX_DEM = [
+  { id: 'germ', dom: 'sc.vivant', tire: (rng) => ({ g: rng.pick(['haricot', 'lentille', 'radis', 'cresson', 'pois']) }),
+    effet: (v) => `la germination des graines de ${v.g}`, mesure: 'le nombre de graines qui ont germé après une semaine',
+    f: [{ nom: 'l\'eau', col: 'Coton', v: ['mouillé', 'sec'], ph: ['sur du coton mouillé', 'sur du coton sec'] }, { nom: 'la température', col: 'Température', v: ['20 °C', '4 °C'], ph: ['à 20 °C', 'à 4 °C'] }, { nom: 'la lumière', col: 'Lumière', v: ['oui', 'non'], ph: ['à la lumière', 'dans le noir'] }],
+    fait: (rng, v) => `Après une semaine, ${rng.int(6, 10)} graines de ${v.g} sur 10 ont germé sur le coton mouillé.`,
+    hyp: (v) => [`Je pense que les graines de ${v.g} ont besoin d'eau pour germer.`, 'Peut-être que les graines germent mieux au chaud qu\'au froid.'],
+    jug: (v) => [`Les graines de ${v.g} sont les plus jolies de toutes les graines.`, 'Faire germer des graines, c\'est passionnant.'] },
+  { id: 'plant', dom: 'sc.vivant', tire: (rng) => ({ g: rng.pick(['haricot', 'tomate', 'tournesol', 'pois']) }),
+    effet: (v) => `la croissance d'un plant de ${v.g}`, mesure: 'la hauteur du plant après trois semaines',
+    f: [{ nom: 'la lumière', col: 'Lumière', v: ['oui', 'non'], ph: ['à la lumière', 'dans le noir'] }, { nom: 'l\'arrosage', col: 'Arrosage', v: ['oui', 'non'], ph: ['arrosé', 'pas arrosé'] }, { nom: 'la sorte de terre', col: 'Terre', v: ['terreau', 'sable'], ph: ['dans du terreau', 'dans du sable'] }],
+    fait: (rng, v) => `Après trois semaines, le plant de ${v.g} placé à la lumière mesure ${rng.int(9, 24)} cm.`,
+    hyp: (v) => [`Je pense que le plant de ${v.g} a besoin de lumière pour bien pousser.`, 'Peut-être que les plants poussent mieux dans le terreau que dans le sable.'],
+    jug: (v) => [`Les fleurs de ${v.g} sont les plus belles du jardin.`, 'Le pot vert est beaucoup plus joli que le pot brun.'] },
+  { id: 'refroid', dom: 'sc.energie', tire: (rng) => ({ T: rng.pick([60, 70, 80]) }),
+    effet: (v) => `le refroidissement de l'eau chaude (à ${v.T} °C au départ)`, mesure: 'la température de l\'eau après 30 minutes',
+    f: [{ nom: 'le matériau autour du pot', col: 'Autour du pot', v: ['rien', 'laine'], ph: ['sans rien autour du pot', 'pot entouré de laine'], temoin: true, q: 'la laine autour d\'un pot ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans rien autour', 'un pot d\'eau chaude entouré d\'une écharpe en laine'] },
+      { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans couvercle', 'un pot d\'eau chaude fermé par un couvercle'] },
+      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 mL', '400 mL'], ph: ['200 mL d\'eau', '400 mL d\'eau'] }],
+    fait: (rng, v) => `Après 30 minutes, l'eau du pot entouré de laine est à ${rng.int(42, v.T - 12)} °C.`,
+    hyp: () => ['Je pense que la laine va ralentir le refroidissement de l\'eau.', 'Peut-être qu\'un couvercle garde l\'eau chaude plus longtemps.'],
+    jug: () => ['L\'écharpe en laine rouge est la plus belle.', 'Mesurer des températures, c\'est amusant.'] },
+  { id: 'glacon', dom: 'sc.energie', tire: () => ({}),
+    effet: () => 'la durée de fonte d\'un glaçon', mesure: 'le temps que met le glaçon pour fondre complètement',
+    f: [{ nom: 'la taille du glaçon', col: 'Glaçon', v: ['petit', 'gros'], ph: ['petit glaçon', 'gros glaçon'] }, { nom: 'l\'endroit (soleil ou ombre)', col: 'Endroit', v: ['ombre', 'soleil'], ph: ['à l\'ombre', 'au soleil'] },
+      { nom: 'l\'emballage du glaçon', col: 'Emballage', v: ['aucun', 'torchon'], ph: ['sans emballage', 'dans un torchon'], temoin: true, q: 'un torchon autour d\'un glaçon le fait fondre moins vite', desc: ['un glaçon posé sans rien dans une assiette', 'un glaçon enveloppé dans un torchon, dans une assiette'] }],
+    fait: (rng) => `Le glaçon posé au soleil a complètement fondu en ${rng.int(14, 40)} minutes.`,
+    hyp: () => ['Je pense qu\'un glaçon fond plus vite au soleil qu\'à l\'ombre.', 'Peut-être qu\'un gros glaçon met plus de temps à fondre qu\'un petit.'],
+    jug: () => ['Les glaçons en forme d\'étoile sont les plus jolis.', 'Regarder un glaçon fondre, c\'est ennuyeux.'] },
+  { id: 'sucre', dom: 'sc.matiere', tire: () => ({}),
+    effet: () => 'la vitesse à laquelle le sucre se dissout dans l\'eau', mesure: 'le temps nécessaire pour que le sucre ne soit plus visible',
+    f: [{ nom: 'la température de l\'eau', col: 'Eau', v: ['froide', 'chaude'], ph: ['eau froide', 'eau chaude'] }, { nom: 'le fait de remuer', col: 'On remue', v: ['non', 'oui'], ph: ['sans remuer', 'en remuant'], temoin: true, q: 'remuer fait dissoudre le sucre plus vite', desc: ['un verre d\'eau avec un morceau de sucre, sans remuer', 'un verre d\'eau avec un morceau de sucre, en remuant'] },
+      { nom: 'la forme du sucre', col: 'Sucre', v: ['en morceau', 'en poudre'], ph: ['sucre en morceau', 'sucre en poudre'] }],
+    fait: (rng) => `Dans l'eau chaude, le sucre en poudre n'est plus visible après ${rng.int(8, 40)} secondes.`,
+    hyp: () => ['Je pense que le sucre se dissout plus vite dans l\'eau chaude.', 'Peut-être que le sucre en poudre se dissout plus vite que le sucre en morceau.'],
+    jug: () => ['Le sucre en morceau est plus joli que le sucre en poudre.', 'L\'eau sucrée, c\'est délicieux.'] },
+  { id: 'evap', dom: 'sc.matiere', tire: (rng) => ({ V: rng.pick([100, 150, 200]) }),
+    effet: (v) => `l'évaporation de ${v.V} mL d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
+    f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre', 'assiette'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
+      { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient d\'eau fermé par un couvercle'] }],
+    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} mL d'eau dans le verre étroit.`,
+    hyp: () => ['Je pense que l\'eau s\'évapore plus vite dans une assiette large que dans un verre.', 'Peut-être que l\'eau s\'évapore plus vite près du radiateur.'],
+    jug: () => ['L\'assiette bleue est la plus belle de la cuisine.', 'Cette expérience est trop longue, c\'est nul.'] },
+  { id: 'bougie', dom: 'sc.matiere', tire: () => ({}),
+    effet: () => 'la durée pendant laquelle une bougie reste allumée sous un bocal retourné', mesure: 'le temps avant que la flamme s\'éteigne',
+    f: [{ nom: 'la taille du bocal', col: 'Bocal', v: ['petit', 'grand'], ph: ['petit bocal', 'grand bocal'] }, { nom: 'l\'épaisseur de la bougie', col: 'Bougie', v: ['fine', 'épaisse'], ph: ['bougie fine', 'bougie épaisse'] }, { nom: 'la couleur de la bougie', col: 'Couleur', v: ['blanche', 'rouge'], ph: ['bougie blanche', 'bougie rouge'] }],
+    fait: (rng) => `Sous le petit bocal, la flamme s'est éteinte après ${rng.int(6, 25)} secondes.`,
+    hyp: () => ['Je pense que la bougie restera allumée plus longtemps sous le grand bocal.', 'Peut-être que la couleur de la bougie ne change rien.'],
+    jug: () => ['Les bougies rouges sont plus belles que les bougies blanches.', 'Les bougies parfumées sentent meilleur que les autres.'] },
+  { id: 'pain', dom: 'sc.vivant', tire: () => ({}),
+    effet: () => 'l\'apparition de moisissures sur une tranche de pain', mesure: 'le nombre de jours avant que des moisissures apparaissent',
+    f: [{ nom: 'l\'humidité du pain', col: 'Pain', v: ['sec', 'humide'], ph: ['pain sec', 'pain humide'] }, { nom: 'la température', col: 'Endroit', v: ['frigo', 'cuisine'], ph: ['au frigo', 'dans la cuisine'] }, { nom: 'la sorte de pain', col: 'Sorte', v: ['blanc', 'gris'], ph: ['pain blanc', 'pain gris'] }],
+    fait: (rng) => `La tranche de pain humide placée dans la cuisine a moisi après ${rng.int(3, 7)} jours.`,
+    hyp: () => ['Je pense que le pain humide moisit plus vite que le pain sec.', 'Peut-être que le pain moisit moins vite au frigo.', 'Peut-être que le pain gris moisit moins vite que le pain blanc.'],
+    jug: () => ['Le pain moisi, c\'est dégoûtant.', 'Le pain gris est meilleur que le pain blanc.', 'Une tartine de pain blanc, c\'est plus joli.'] },
+];
+const JUG_COMMUNS = ['Les sciences, c\'est la matière la plus intéressante.', 'C\'est l\'expérience la plus amusante de l\'année.', 'Mon carnet d\'expériences est le plus beau de la classe.'];
+const diffs = (a, b) => a.map((x, i) => (x !== b[i] ? i : -1)).filter((i) => i >= 0);
+const descMontage = (c, m) => c.f.map((f, i) => f.ph[m[i]]).join(', ');
+
+export function genererDemarche(modele, rng) {
+  const forme = rng.pick(['paire', 'paire', 'paire', 'facteur', 'facteur', 'juste', 'juste', 'garder', 'mesure', 'temoin', 'nature', 'nature', 'natureQ', 'natureQ']);
+  const c = rng.pick(CTX_DEM); const v = c.tire(rng); const p = rng.pick(ENFANTS);
+  const base = { domaine: c.dom };
+  const bits = () => [rng.int(0, 1), rng.int(0, 1), rng.int(0, 1)];
+  const flip = (m, ...is) => m.map((x, i) => (is.includes(i) ? 1 - x : x));
+  if (forme === 'paire') {
+    const t = rng.int(0, 2); const n = rng.pick([3, 4, 4]);
+    const m0 = bits(); const M = [m0, flip(m0, t)];
+    const autres = rng.shuffle([0, 1, 2].filter((i) => i !== t));
+    // Distracteurs plausibles : un montage qui ne diffère que par un AUTRE facteur, puis un qui diffère par deux facteurs.
+    const cands = [flip(m0, autres[0]), flip(m0, t, autres[1]), flip(m0, autres[1]), flip(m0, t, autres[0]), flip(m0, autres[0], autres[1])];
+    for (const x of cands) {
+      if (M.length >= n) break;
+      if (M.some((y) => y.join() === x.join())) continue;
+      if (M.some((y) => { const d = diffs(x, y); return d.length === 1 && d[0] === t; })) continue;
+      M.push(x);
+    }
+    if (M.length < n) return null;
+    const ordreM = rng.shuffle(M.map((_, i) => i));
+    const L = 'ABCD';
+    const lettreDe = (i) => L[ordreM.indexOf(i)];
+    const paires = [];
+    for (let i = 0; i < M.length; i++) for (let j = i + 1; j < M.length; j++) paires.push([i, j]);
+    const nom = ([i, j]) => [lettreDe(i), lettreDe(j)].sort().join(' et ');
+    const bonnes = paires.filter(([i, j]) => { const d = diffs(M[i], M[j]); return d.length === 1 && d[0] === t; });
+    if (bonnes.length !== 1) return null;
+    const faux = rng.shuffle(paires.filter((x) => x !== bonnes[0])).slice(0, 3).map(nom);
+    const r = qcmRange(nom(bonnes[0]), faux);
+    if (!r) return null;
+    const lignes = ordreM.map((i, k) => [L[k], ...M[i].map((b, f) => c.f[f].v[b])]);
+    const fig = svgTableau({ titre: `Les montages de ${p}`, entetes: ['Montage', ...c.f.map((f) => f.col)], lignes });
+    const [a, b] = nom(bonnes[0]).split(' et ');
+    return { ...base, ...r, figure: fig, fiche: 'sc-demarche',
+      enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. ${maj(pr(p))} a préparé ces montages. Quels montages doit-${pr(p)} comparer ?`,
+      explication: `Les montages ${a} et ${b} sont identiques, sauf pour « ${c.f[t].col} » (${c.f[t].v.join(' / ')}). Pour tester un facteur, on compare deux montages où seul ce facteur change ; dans les autres paires, autre chose change aussi (ou ce n'est pas le bon facteur).`,
+      _signature: `paire|${c.id}|${t}|${lignes.map((l) => l.join(',')).join(';')}|${triee(faux)}`, cleContenu: `paire|${c.id}|${t}|${lignes.map((l) => l.join(',')).join(';')}` };
+  }
+  if (forme === 'facteur' || forme === 'juste') {
+    const m1 = bits(); const t = rng.int(0, 2);
+    let m2; let cas = 'un';
+    if (forme === 'juste') {
+      cas = rng.pick(['un', 'un', 'deux', 'autre']);
+      const o = rng.pick([0, 1, 2].filter((i) => i !== t));
+      m2 = cas === 'un' ? flip(m1, t) : cas === 'deux' ? flip(m1, t, o) : flip(m1, o);
+    } else m2 = flip(m1, t);
+    const txt = `Montage 1 : ${descMontage(c, m1)}. Montage 2 : ${descMontage(c, m2)}.`;
+    const sig = `${c.id}|${m1.join('')}|${m2.join('')}|${t}`;
+    if (forme === 'facteur') {
+      const quest = rng.next() < 0.5;
+      if (quest) {
+        const Q = (i) => `Est-ce que ${c.f[i].nom} a une influence sur ${c.effet(v)} ?`;
+        const r = qcm(rng, Q(t), [0, 1, 2].filter((i) => i !== t).map(Q));
+        return { ...base, ...r, fiche: 'sc-demarche', enonce: `Pour une expérience sur ${c.effet(v)}, ${p} prépare deux montages. ${txt} À quelle question ${p} veut-${pr(p)} répondre ?`,
+          explication: `Entre les deux montages, une seule chose change : ${c.f[t].nom} (${c.f[t].ph.join(' / ')}). ${p} teste donc ${c.f[t].nom}. Tout le reste est identique.`,
+          _signature: `fq|${sig}|${triee(r.choix)}`, cleContenu: `fq|${sig}` };
+      }
+      const r = qcm(rng, maj(c.f[t].nom), [0, 1, 2].filter((i) => i !== t).map((i) => maj(c.f[i].nom)).concat([maj(c.mesure)]));
+      return { ...base, ...r, fiche: 'sc-demarche', enonce: `Pour une expérience sur ${c.effet(v)}, ${p} prépare deux montages. ${txt} Quel facteur ${p} teste-t-${pr(p)} ?`,
+        explication: `Entre les deux montages, une seule chose change : ${c.f[t].nom} (${c.f[t].ph.join(' / ')}). C'est le facteur testé. ${maj(c.mesure)}, c'est ce que l'on mesure (le résultat), pas un facteur.`,
+        _signature: `fac|${sig}|${triee(r.choix)}`, cleContenu: `fac|${sig}` };
+    }
+    const d = diffs(m1, m2);
+    const ok = cas === 'un';
+    const pourquoi = ok ? `Une seule chose change entre les deux montages, ${c.f[t].nom} : la comparaison est juste.`
+      : cas === 'deux' ? `Deux choses changent en même temps (${c.f[d[0]].nom} et ${c.f[d[1]].nom}) : si le résultat est différent, on ne saura pas laquelle est la cause.`
+        : `Une seule chose change, mais c'est ${c.f[d[0]].nom} : cette comparaison teste ${c.f[d[0]].nom}, pas ${c.f[t].nom}.`;
+    return { ...base, type: 'vrai_faux', reponse: ok, fiche: 'sc-demarche',
+      enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. ${txt} Vrai ou faux ? Comparer ces deux montages permet de répondre à sa question.`,
+      explication: `${ok ? 'Vrai' : 'Faux'}. ${pourquoi} Dans une expérience juste, on ne change qu'un seul facteur à la fois.`,
+      _signature: `juste|${sig}|${cas}`, cleContenu: `juste|${sig}` };
+  }
+  if (forme === 'garder') {
+    const t = rng.int(0, 2); const o = rng.pick([0, 1, 2].filter((i) => i !== t));
+    const r = qcm(rng, maj(c.f[o].nom), [maj(c.f[t].nom), maj(c.mesure), 'Rien : on peut tout changer']);
+    const autres = [0, 1, 2].filter((i) => i !== t).map((i) => c.f[i].nom);
+    return { ...base, ...r, fiche: 'sc-demarche',
+      enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. Qu'est-ce qui doit rester identique dans ses deux montages ?`,
+      explication: `On ne change que le facteur testé (${c.f[t].nom}). Tout le reste doit rester identique : ${listeEt(autres)}. ${maj(c.mesure)}, c'est le résultat que l'on mesure à la fin.`,
+      _signature: `garder|${c.id}|${t}|${o}|${triee(r.choix)}`, cleContenu: `garder|${c.id}|${t}|${o}` };
+  }
+  if (forme === 'mesure') {
+    const t = rng.int(0, 2);
+    const faux = rng.shuffle(CTX_DEM.filter((x) => x.id !== c.id && x.mesure !== c.mesure)).slice(0, 3).map((x) => maj(x.mesure));
+    const r = qcm(rng, maj(c.mesure), faux);
+    return { ...base, ...r, fiche: 'sc-demarche',
+      enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. Que doit-${pr(p)} mesurer ou observer à la fin de l'expérience ?`,
+      explication: `Pour connaître l'effet sur ${c.effet(v)}, on mesure ${c.mesure} dans chaque montage, puis on compare.`,
+      _signature: `mes|${c.id}|${t}|${triee(faux)}`, cleContenu: `mes|${c.id}|${t}|${triee(faux)}` };
+  }
+  if (forme === 'temoin') {
+    const cs = CTX_DEM.filter((x) => x.f.some((f) => f.temoin));
+    const cc = rng.pick(cs); const f = rng.pick(cc.f.filter((x) => x.temoin));
+    const inv = rng.next() < 0.5;
+    const [d1, d2] = inv ? [f.desc[1], f.desc[0]] : f.desc;
+    const temoin = inv ? 'Le montage 2' : 'Le montage 1';
+    const choix = ['Le montage 1', 'Le montage 2', 'Les deux montages'];
+    return { type: 'qcm', choix, reponse: choix.indexOf(temoin), domaine: cc.dom, fiche: 'sc-demarche',
+      enonce: `${p} veut savoir si ${f.q}. Montage 1 : ${d1}. Montage 2 : ${d2}. Pour le reste, les deux montages sont identiques. Quel montage sert de témoin ?`,
+      explication: `Le témoin est le montage où l'on n'a rien ajouté ni changé : ici, ${f.desc[0]}. On compare l'autre montage au témoin pour voir l'effet du changement.`,
+      _signature: `tem|${cc.id}|${f.col}|${inv}|${p}`, cleContenu: `tem|${cc.id}|${f.col}|${inv}` };
+  }
+  // Fait, hypothèse ou jugement de valeur ?
+  const fait = c.fait(rng, v); const hyp = rng.pick(c.hyp(v)); const jug = rng.pick([...c.jug(v), ...JUG_COMMUNS]);
+  const NAT = ['Un fait', 'Une hypothèse', 'Un jugement de valeur'];
+  const rappel = 'Un fait est une observation ou une mesure que tout le monde peut vérifier. Une hypothèse est une idée à vérifier par une expérience (« Je pense que… », « Peut-être que… »). Un jugement de valeur est un avis personnel (beau, amusant, meilleur…).';
+  if (forme === 'nature') {
+    const tri = rng.shuffle([[fait, 0], [hyp, 1], [jug, 2]]);
+    return { ...base, type: 'grille', fiche: 'sc-faits-hypotheses', points: 3,
+      enonce: `Pendant une expérience sur ${c.effet(v)}, les élèves notent ces phrases. Est-ce un fait, une hypothèse ou un jugement de valeur ?`,
+      lignes: tri.map(([t]) => t), colonnes: NAT, reponse: tri.map(([, k]) => k),
+      explication: `Fait : « ${fait} » Hypothèse : « ${hyp} » Jugement de valeur : « ${jug} » ${rappel}`,
+      _signature: `nat|${triee([fait, hyp, jug])}`, cleContenu: `nat|${triee([fait, hyp, jug])}` };
+  }
+  const k = rng.int(0, 2);
+  const phrases = [fait, hyp, jug];
+  const r = qcm(rng, phrases[k], phrases.filter((_, i) => i !== k).concat(k === 2 ? [rng.pick(c.hyp(v).filter((x) => x !== hyp))] : [rng.pick([...c.jug(v), ...JUG_COMMUNS].filter((x) => x !== jug))]));
+  if (!r) return null;
+  return { ...base, ...r, fiche: 'sc-faits-hypotheses',
+    enonce: `Pendant une expérience sur ${c.effet(v)}, les élèves notent ces phrases. Laquelle est ${['un fait', 'une hypothèse', 'un jugement de valeur'][k]} ?`,
+    explication: `« ${phrases[k]} » est ${['un fait', 'une hypothèse', 'un jugement de valeur'][k]}. ${rappel}`,
+    _signature: `natQ|${k}|${triee(r.choix)}`, cleContenu: `natQ|${k}|${triee(r.choix)}` };
+}
+
+// ================================================================ 9. TRANSFERT DE CHALEUR ET ÉQUILIBRE
+// chaud / froid : groupes nominaux ; env : true si le « froid » ou le « chaud » est l'air d'une pièce (température qui ne change presque pas).
+const deg = (t) => `${fmt(t)} °C`;
+const accord = (gn, sing, plur) => (/^les /.test(gn) ? plur : sing);
+const SIT_CHALEUR = [
+  { id: 'choco', env: 'froid', tire: (rng) => ({ c: rng.pick([60, 65, 70, 75, 80, 85]), f: rng.int(18, 23) }),
+    txt: (p, t) => `${p} oublie sa tasse de chocolat chaud, à ${deg(t.c)}, sur la table de la cuisine, où il fait ${deg(t.f)}.`, chaud: 'le chocolat', froid: 'l\'air de la cuisine', objet: 'le chocolat' },
+  { id: 'canette', env: 'chaud', tire: (rng) => ({ f: rng.int(3, 7), c: rng.int(19, 24) }),
+    txt: (p, t) => `${p} sort une canette de jus du frigo, à ${deg(t.f)}, et la pose sur la table d'une pièce où il fait ${deg(t.c)}.`, chaud: 'l\'air de la pièce', froid: 'la canette', objet: 'le jus de la canette' },
+  { id: 'yaourt', env: 'chaud', tire: (rng) => ({ f: rng.int(4, 6), c: rng.int(19, 23) }),
+    txt: (p, t) => `${p} sort un pot de yaourt du frigo, à ${deg(t.f)}, et l'oublie dans la cuisine, où il fait ${deg(t.c)}.`, chaud: 'l\'air de la cuisine', froid: 'le yaourt', objet: 'le yaourt' },
+  { id: 'bain', env: 'froid', tire: (rng) => ({ c: rng.int(36, 40), f: rng.int(18, 22) }),
+    txt: (p, t) => `${p} oublie de vider la baignoire : l'eau du bain est à ${deg(t.c)} et l'air de la salle de bain à ${deg(t.f)}.`, chaud: 'l\'eau du bain', froid: 'l\'air de la salle de bain', objet: 'l\'eau du bain' },
+  { id: 'plat', env: 'froid', tire: (rng) => ({ c: rng.pick([50, 55, 60, 65, 70]), f: rng.int(3, 6) }),
+    txt: (p, t) => `${p} range un plat de pâtes encore chaud, à ${deg(t.c)}, dans un frigo réglé à ${deg(t.f)}.`, chaud: 'le plat de pâtes', froid: 'l\'air du frigo', objet: 'le plat de pâtes' },
+  { id: 'cuillere', tire: (rng) => ({ f: rng.int(18, 22), c: rng.pick([70, 75, 80, 85, 90]) }),
+    txt: (p, t) => `${p} plonge une cuillère en métal, à ${deg(t.f)}, dans une soupe à ${deg(t.c)}.`, chaud: 'la soupe', froid: 'la cuillère' },
+  { id: 'glacon', tire: (rng) => ({ f: -rng.int(5, 18), c: rng.int(15, 25) }),
+    txt: (p, t) => `${p} met un glaçon, à ${deg(t.f)}, dans un verre de limonade à ${deg(t.c)}.`, chaud: 'la limonade', froid: 'le glaçon', note: ' (il finit par fondre)' },
+  { id: 'bouillotte', tire: (rng) => ({ c: rng.pick([50, 55, 60, 65]), f: rng.int(12, 17) }),
+    txt: (p, t) => `${p} glisse une bouillotte, à ${deg(t.c)}, entre les draps de son lit, à ${deg(t.f)}.`, chaud: 'la bouillotte', froid: 'les draps' },
+  { id: 'biberon', tire: (rng) => ({ f: rng.int(4, 8), c: rng.pick([45, 50, 55, 60]) }),
+    txt: (p, t) => `Pour réchauffer le biberon de sa petite sœur, ${p} plonge le biberon de lait, à ${deg(t.f)}, dans une casserole d'eau chaude, à ${deg(t.c)}.`, chaud: 'l\'eau de la casserole', froid: 'le lait' },
+  { id: 'rampe', tire: (rng) => ({ f: rng.int(1, 8), c: 30 }),
+    txt: (p, t) => `En hiver, ${p} pose sa main (environ 30 °C) sur une rampe en métal à ${deg(t.f)}.`, chaud: 'la main', froid: 'la rampe' },
+];
+const CHALEUR_QCM = [
+  { e: (p) => `${p} touche, dans la même pièce, une rampe en métal et une planche en bois. Les deux sont à la même température, mais le métal semble plus froid. Pourquoi ?`,
+    b: 'Le métal est un bon conducteur thermique : il emporte plus vite la chaleur de la main.', f: ['Le métal fabrique du froid.', 'Le métal est toujours plus froid que le bois.', 'Le bois produit de la chaleur.'] },
+  { e: (p) => `${p} tient un glaçon dans sa main : le glaçon fond. Pourquoi ?`,
+    b: 'La chaleur passe de la main, plus chaude, vers le glaçon, plus froid.', f: ['Le froid du glaçon passe dans la main.', 'Le glaçon produit de la chaleur.', 'La main fabrique de l\'eau.'] },
+  { e: (p) => `${p} a froid aux mains en hiver. Que se passe-t-il ?`,
+    b: 'Ses mains perdent de la chaleur, qui passe vers l\'air plus froid.', f: ['Le froid de l\'air entre dans ses mains.', 'Ses mains fabriquent du froid.', 'L\'air froid lui donne de la chaleur.'] },
+  { e: () => 'Quand s\'arrête le passage de la chaleur entre deux objets qui se touchent ?', b: 'Quand les deux objets ont la même température.',
+    f: ['Quand l\'objet chaud est devenu le plus froid des deux.', 'Jamais : la chaleur passe sans fin.', 'Quand l\'objet froid est devenu le plus chaud des deux.'] },
+  { e: () => 'Dans quel sens la chaleur (l\'énergie thermique) passe-t-elle toujours ?', b: 'D\'une matière chaude vers une matière plus froide.',
+    f: ['D\'une matière froide vers une matière plus chaude.', 'Du bas vers le haut, toujours.', 'De la plus grosse matière vers la plus petite.'] },
+  { e: (p) => `${p} souffle sur sa soupe chaude. Pourquoi la soupe refroidit-elle ?`, b: 'La soupe, plus chaude que l\'air, lui cède de la chaleur ; en soufflant, on remplace sans arrêt l\'air réchauffé par de l\'air plus frais.',
+    f: ['Le souffle apporte du froid dans la soupe.', 'La soupe fabrique du froid quand on souffle.', 'Le souffle est plus chaud que la soupe.'] },
+];
+const CHALEUR_VF = [
+  ['La chaleur passe toujours d\'une matière chaude vers une matière plus froide.', true, 'C\'est une loi de la nature : d\'elle-même, la chaleur ne passe jamais du froid vers le chaud.'],
+  ['Un objet chaud posé dans une pièce refroidit jusqu\'à la température de la pièce.', true, 'Il perd de la chaleur tant qu\'il est plus chaud que l\'air autour, puis la température ne change plus.'],
+  ['Un objet froid posé dans une pièce se réchauffe jusqu\'à devenir plus chaud que la pièce.', false, 'Il se réchauffe seulement jusqu\'à la température de la pièce : à ce moment, la chaleur ne passe plus.'],
+  ['Quand on met un glaçon dans un jus, c\'est le froid du glaçon qui passe dans le jus.', false, 'C\'est la chaleur du jus qui passe dans le glaçon : le jus refroidit et le glaçon fond.'],
+  ['Deux objets qui se touchent, et que rien ne chauffe ni ne refroidit, finissent par avoir la même température.', true, 'La chaleur passe du plus chaud vers le plus froid jusqu\'à ce que leurs températures soient égales.'],
+  ['Si on mélange de l\'eau à 60 °C et de l\'eau à 20 °C, on obtient de l\'eau à 80 °C.', false, 'Les températures ne s\'additionnent pas : le mélange a une température entre 20 °C et 60 °C.'],
+  ['Une cuillère en métal plongée dans une soupe chaude devient chaude.', true, 'La chaleur de la soupe passe dans la cuillère. Le métal est un bon conducteur thermique.'],
+  ['Un pull en laine produit de la chaleur.', false, 'La laine ne produit pas de chaleur : c\'est un isolant qui ralentit la perte de la chaleur du corps.'],
+];
+
+function figureEquilibre(rng) {
+  const k = rng.pick([2, 3, 4]); const V1 = rng.pick([100, 150, 200]);
+  for (let essai = 0; essai < 40; essai++) {
+    const T1 = rng.pick([60, 65, 70, 75, 80, 85]); const T2 = rng.pick([10, 15, 20]);
+    const Te = (T1 + k * T2) / (1 + k);
+    if (Te % 5 !== 0) continue;
+    const r = 0.38 + rng.next() * 0.2; const xs = [0, 2, 4, 6, 8, 10, 12, 14];
+    const tasse = xs.map((t) => Math.round(Te + (T1 - Te) * Math.exp(-r * t)));
+    const bol = xs.map((t) => Math.round(Te - (Te - T2) * Math.exp(-r * t)));
+    if (tasse[7] !== Te || bol[7] !== Te || tasse[6] !== Te || bol[6] !== Te) continue;
+    return { k, V1, V2: k * V1, T1, T2, Te, xs, tasse, bol };
+  }
+  return null;
+}
+
+export function genererTransfert(modele, rng) {
+  const forme = rng.pick(['sens', 'sens', 'sens', 'qui', 'finale', 'finale', 'melange', 'melange', 'courbe', 'courbe', 'courbe', 'pourquoi', 'vf']);
+  const p = rng.pick(ENFANTS);
+  if (forme === 'sens' || forme === 'qui' || forme === 'finale') {
+    const pool = forme === 'finale' ? SIT_CHALEUR.filter((s) => s.env) : forme === 'qui' ? SIT_CHALEUR.filter((s) => !s.env && s.id !== 'rampe') : SIT_CHALEUR;
+    const S = rng.pick(pool); const t = S.tire(rng);
+    const sig = `${S.id}|${t.c}|${t.f}`;
+    if (forme === 'sens') {
+      const bonne = maj(`${deLe(S.chaud)} vers ${S.froid}`);
+      const r = qcm(rng, bonne, [maj(`${deLe(S.froid)} vers ${S.chaud}`), maj(`Le froid passe ${deLe(S.froid)} vers ${S.chaud}`), 'La chaleur ne passe pas : chacun garde sa température']);
+      return { ...r, enonce: `${S.txt(p, t)} Dans quel sens la chaleur passe-t-elle ?`,
+        explication: `La chaleur passe toujours du plus chaud vers le plus froid : ${deLe(S.chaud)} (${deg(t.c)}) vers ${S.froid} (${deg(t.f)}). On ne dit pas que « le froid passe » : c'est la chaleur qui se déplace.`,
+        _signature: `sens|${sig}|${triee(r.choix)}`, cleContenu: `sens|${sig}` };
+    }
+    if (forme === 'qui') {
+      const chauffe = rng.next() < 0.5;
+      const bonne = maj(chauffe ? S.froid : S.chaud);
+      const r = qcm(rng, bonne, [maj(chauffe ? S.chaud : S.froid), 'Les deux', 'Aucun des deux']);
+      return { ...r, enonce: `${S.txt(p, t)} Lequel des deux va ${chauffe ? 'se réchauffer' : 'se refroidir'} ?`,
+        explication: `La chaleur passe ${deLe(S.chaud)} (${deg(t.c)}) vers ${S.froid} (${deg(t.f)}) : ${S.chaud} ${accord(S.chaud, 'se refroidit', 'se refroidissent')} et ${S.froid} ${accord(S.froid, 'se réchauffe', 'se réchauffent')}${S.note ?? ''}. La chaleur passe jusqu'à ce que leurs températures soient égales.`,
+        _signature: `qui|${sig}|${chauffe}`, cleContenu: `qui|${sig}|${chauffe}` };
+    }
+    const Tenv = S.env === 'froid' ? t.f : t.c;
+    return { type: 'numerique', reponse: Tenv, unite: '°C', enonce: `${S.txt(p, t)} Plusieurs heures plus tard, quelle est environ la température ${deLe(S.objet)} ?`,
+      explication: `${maj(S.objet)} ${S.env === 'froid' ? 'perd de la chaleur' : 'reçoit de la chaleur'} tant que sa température est différente de celle ${deLe(S.env === 'froid' ? S.froid : S.chaud)}. Quand les températures sont égales, la chaleur ne passe plus : ${S.objet} finit à environ ${deg(Tenv)}, la température ${deLe(S.env === 'froid' ? S.froid : S.chaud)}.`,
+      _signature: `fin|${sig}`, cleContenu: `fin|${sig}` };
+  }
+  if (forme === 'melange') {
+    let T1; let T2;
+    do { T1 = rng.int(9, 18) * 5; T2 = rng.int(2, 6) * 5; } while ((T1 + T2) % 2 || T1 - T2 < 30);
+    const V = rng.pick([100, 150, 200, 250, 300]); const m = (T1 + T2) / 2;
+    const d = rng.pick([5, 10, 15].filter((x) => x !== T2));
+    const choix = [m, T1 + T2, T1 + d, Math.max(0, T2 - d)].map(deg);
+    const r = qcm(rng, deg(m), choix.slice(1));
+    return { ...r, enonce: `${p} verse ${V} mL d'eau à ${deg(T1)} et ${V} mL d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
+      explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) ÷ 2 = ${m} °C. Les températures ne s'additionnent pas.`,
+      _signature: `mel|${T1}|${T2}|${V}|${d}`, cleContenu: `mel|${T1}|${T2}|${V}` };
+  }
+  if (forme === 'courbe') {
+    const E = figureEquilibre(rng); if (!E) return null;
+    const inv = rng.next() < 0.5;
+    const [nA, nB] = ['Courbe A', 'Courbe B'];
+    const series = inv ? [{ nom: nA, v: E.bol }, { nom: nB, v: E.tasse }] : [{ nom: nA, v: E.tasse }, { nom: nB, v: E.bol }];
+    const fig = svgCourbes({ titre: 'Température de l\'eau', xs: E.xs, series, xTitre: 'Temps (min)', yTitre: 'Température (°C)', yMin: 0, yMax: Math.ceil((E.T1 + 1) / 10) * 10, yPas: 5, yEtiq: 10 });
+    const ctx = `${p} pose une tasse contenant ${E.V1} mL d'eau à ${deg(E.T1)} dans un bol contenant ${E.V2} mL d'eau à ${deg(E.T2)}. Le bol est placé dans une boîte en polystyrène. ${maj(pr(p))} mesure la température des deux eaux toutes les 2 minutes.`;
+    const sig = `${E.T1}|${E.T2}|${E.k}|${E.V1}|${E.tasse.join(',')}|${inv}`;
+    const q = rng.pick(['laquelle', 'finale', 'gain', 'perte', 'conclusion']);
+    const nomTasse = inv ? nB : nA; const nomBol = inv ? nA : nB;
+    if (q === 'laquelle') {
+      const tasse = rng.next() < 0.5;
+      const choix = [nA, nB];
+      return { type: 'qcm', choix, reponse: choix.indexOf(tasse ? nomTasse : nomBol), figure: fig,
+        enonce: `${ctx} Quelle courbe montre la température de l'eau ${tasse ? 'de la tasse' : 'du bol'} ?`,
+        explication: `L'eau de la tasse part de ${deg(E.T1)} et se refroidit (${nomTasse}) ; l'eau du bol part de ${deg(E.T2)} et se réchauffe (${nomBol}). La chaleur passe de l'eau chaude vers l'eau froide.`,
+        _signature: `cq|${sig}|${tasse}`, cleContenu: `cq|${sig}|${tasse}` };
+    }
+    if (q === 'finale') {
+      return { type: 'numerique', reponse: E.Te, unite: '°C', figure: fig, enonce: `${ctx} À quelle température les deux eaux finissent-elles par arriver ?`,
+        explication: `À la fin, les deux courbes se rejoignent à ${deg(E.Te)} : les deux eaux ont la même température, la chaleur ne passe plus. L'eau du bol, plus abondante, a moins changé de température que celle de la tasse.`,
+        _signature: `cf|${sig}`, cleContenu: `cf|${sig}` };
+    }
+    if (q === 'gain' || q === 'perte') {
+      const g = q === 'gain'; const d = g ? E.Te - E.T2 : E.T1 - E.Te;
+      return { type: 'numerique', reponse: d, unite: '°C', figure: fig, enonce: `${ctx} De combien de degrés l'eau ${g ? 'du bol s\'est-elle réchauffée' : 'de la tasse s\'est-elle refroidie'} ?`,
+        explication: `L'eau ${g ? `du bol passe de ${deg(E.T2)} à ${deg(E.Te)} : ${E.Te} − ${E.T2}` : `de la tasse passe de ${deg(E.T1)} à ${deg(E.Te)} : ${E.T1} − ${E.Te}`} = ${d} degrés.`,
+        _signature: `cg|${sig}|${q}`, cleContenu: `cg|${sig}|${q}` };
+    }
+    const r = qcm(rng, 'La chaleur passe de l\'eau de la tasse vers l\'eau du bol, jusqu\'à ce qu\'elles aient la même température.',
+      ['Le froid de l\'eau du bol passe dans la tasse jusqu\'à ce qu\'elle gèle.', 'L\'eau de la tasse devient plus froide que l\'eau du bol.', 'Chaque eau garde sa température de départ.']);
+    return { ...r, figure: fig, enonce: `${ctx} Que montre ce graphique ?`,
+      explication: `L'eau de la tasse (${deg(E.T1)}) se refroidit et l'eau du bol (${deg(E.T2)}) se réchauffe ; les deux courbes se rejoignent à ${deg(E.Te)}. La chaleur passe du chaud vers le froid jusqu'à l'équilibre des températures.`,
+      _signature: `cc|${sig}|${triee(r.choix)}`, cleContenu: `cc|${sig}` };
+  }
+  if (forme === 'pourquoi') {
+    const Q = rng.pick(CHALEUR_QCM);
+    const r = qcm(rng, Q.b, Q.f);
+    return { ...r, enonce: Q.e(p), explication: `${Q.b} La chaleur passe toujours du plus chaud vers le plus froid, jusqu'à ce que les températures soient égales.`,
+      _signature: `pq|${Q.b}|${p}|${triee(r.choix)}`, cleContenu: `pq|${Q.b}|${p}` };
+  }
+  const [t, v, x] = rng.pick(CHALEUR_VF);
+  return { type: 'vrai_faux', reponse: v, enonce: `Vrai ou faux ? ${t}`, explication: `${v ? 'Vrai' : 'Faux'}. ${x}`, _signature: `vf|${t}` };
+}
+
+// ================================================================ 10. LIMITER LES PERTES DE CHALEUR
+const ECO_SITUATIONS = [
+  { e: (f) => `La famille ${f} remplace ses vieilles fenêtres à simple vitrage par du double vitrage. Pourquoi cela permet-il d'économiser de l'énergie ?`,
+    b: 'La couche d\'air (ou de gaz) entre les deux vitres est un isolant : la chaleur de la maison s\'échappe moins.',
+    f: ['Le double vitrage produit de la chaleur.', 'Le double vitrage empêche le froid d\'entrer dans la maison.', 'Le double vitrage laisse passer plus de vent.'] },
+  { e: (f) => `La famille ${f} pose une épaisse couche de laine de roche sous son toit. Pourquoi ?`,
+    b: 'La laine de roche est un isolant : elle ralentit les pertes de chaleur par le toit.',
+    f: ['La laine de roche produit de la chaleur.', 'La laine de roche est un bon conducteur thermique.', 'La laine de roche aspire le froid de la maison.'] },
+  { e: (f) => `Le soir, en hiver, la famille ${f} ferme les volets et tire les rideaux épais. Pourquoi ?`,
+    b: 'Les volets et les rideaux gardent une couche d\'air près des fenêtres : moins de chaleur s\'échappe.',
+    f: ['Les rideaux réchauffent la pièce en produisant de la chaleur.', 'Les volets empêchent le froid d\'entrer.', 'C\'est seulement pour que les voisins ne voient pas à l\'intérieur.'] },
+  { e: (f) => `La famille ${f} baisse son thermostat de 21 °C à 19 °C. Pourquoi est-ce une économie d'énergie ?`,
+    b: 'Plus la maison est chaude par rapport à l\'extérieur, plus elle perd de chaleur : en chauffant un peu moins, on consomme moins.',
+    f: ['À 19 °C, le chauffage produit plus de chaleur.', 'À 19 °C, le froid n\'entre plus dans la maison.', 'Cela ne change rien à la consommation.'] },
+  { e: (f) => `En hiver, la famille ${f} aère en ouvrant grand les fenêtres 5 minutes, plutôt que de les laisser entrouvertes toute la journée. Pourquoi ?`,
+    b: 'L\'air est vite renouvelé, mais les murs et les meubles n\'ont pas le temps de se refroidir : on perd moins de chaleur.',
+    f: ['Les fenêtres entrouvertes laissent entrer de la chaleur.', 'Ouvrir grand les fenêtres produit de la chaleur.', 'Il ne faut jamais aérer en hiver.'] },
+  { e: (f) => `La famille ${f} ferme toujours la porte entre le salon chauffé et le garage froid. Pourquoi ?`,
+    b: 'La porte fermée ralentit le passage de la chaleur du salon vers le garage, plus froid : on chauffe seulement la pièce utilisée.',
+    f: ['Pour que le froid du garage ne passe pas dans le salon.', 'Pour que le garage se réchauffe plus vite.', 'Une porte fermée produit de la chaleur.'] },
+  { e: (p) => `${p} met un couvercle sur la casserole pour faire bouillir l'eau des pâtes. Pourquoi ?`,
+    b: 'La chaleur s\'échappe moins : l\'eau bout plus vite et on utilise moins d\'énergie.',
+    f: ['Le couvercle produit de la chaleur.', 'Le couvercle empêche le froid d\'entrer dans la casserole.', 'Le couvercle fait bouillir l\'eau à plus de 100 °C.'], enfant: true },
+  { e: (p) => `${p} emporte son thé dans une bouteille isotherme (thermos). Pourquoi le thé reste-t-il chaud longtemps ?`,
+    b: 'Les deux parois de la bouteille sont séparées par du vide (ou de l\'air) qui laisse très mal passer la chaleur.',
+    f: ['La bouteille isotherme produit de la chaleur.', 'La bouteille est en métal, un bon conducteur thermique.', 'Le thé fabrique sa propre chaleur.'], enfant: true },
+  { e: (p) => `${p} met ses boissons dans une glacière en polystyrène pour le pique-nique. Pourquoi restent-elles fraîches ?`,
+    b: 'Le polystyrène est un isolant : il ralentit le passage de la chaleur de l\'air vers les boissons.',
+    f: ['Le polystyrène produit du froid.', 'Le polystyrène est un bon conducteur thermique.', 'Le polystyrène attire le froid de l\'air.'], enfant: true },
+  { e: (p) => `En hiver, ${p} porte plusieurs couches de vêtements (t-shirt, pull, veste). Pourquoi a-t-${pr(p)} plus chaud ?`,
+    b: 'Entre les couches, de l\'air reste emprisonné : c\'est un bon isolant, la chaleur du corps s\'échappe moins.',
+    f: ['Chaque vêtement produit de la chaleur.', 'Les vêtements empêchent le froid d\'entrer dans le corps.', 'Les vêtements serrés font battre le cœur plus vite.'], enfant: true },
+  { e: () => 'En hiver, les oiseaux gonflent leurs plumes. Pourquoi ?',
+    b: 'Ils emprisonnent de l\'air entre les plumes : cet air isole et leur corps perd moins de chaleur.',
+    f: ['Les plumes gonflées produisent de la chaleur.', 'Pour paraître plus gros et faire peur au froid.', 'Les plumes gonflées laissent mieux sortir la chaleur.'] },
+  { e: (p) => `${p} remarque que les casseroles ont un fond en métal et une poignée en bois ou en plastique. Pourquoi ?`,
+    b: 'Le métal conduit bien la chaleur vers les aliments ; le bois et le plastique sont isolants : la poignée ne devient pas brûlante.',
+    f: ['Le métal est isolant et le bois est conducteur.', 'Le bois produit du froid pour protéger la main.', 'C\'est seulement pour décorer la casserole.'], enfant: true },
+  { e: (f) => `La famille ${f} fait isoler les murs de sa maison avec des plaques de polystyrène. Quel est le but ?`,
+    b: 'Ralentir le passage de la chaleur de l\'intérieur chaud vers l\'extérieur froid.',
+    f: ['Empêcher le froid de l\'extérieur d\'entrer.', 'Produire de la chaleur dans les murs.', 'Rendre les murs plus conducteurs.'] },
+  { e: (f) => `La famille ${f} pose un boudin de bas de porte sous la porte d'entrée. Pourquoi ?`,
+    b: 'Il bouche le passage sous la porte : l\'air chaud de la maison ne s\'échappe plus par là.',
+    f: ['Il produit de la chaleur.', 'Il conduit la chaleur vers l\'extérieur.', 'Il empêche la porte de grincer.'] },
+];
+const GESTES_BONS = [
+  'Fermer les volets et les rideaux le soir', 'Baisser le chauffage d\'un degré',
+  'Fermer la porte des pièces non chauffées', 'Isoler le toit', 'Remplacer le simple vitrage par du double vitrage', 'Mettre un pull plutôt que monter le chauffage',
+  'Baisser le chauffage la nuit et quand on part', 'Poser un boudin sous la porte d\'entrée', 'Isoler les murs', 'Fermer la porte d\'entrée rapidement en hiver',
+];
+const GESTES_MAUVAIS = [
+  'Laisser une fenêtre entrouverte toute la journée avec le chauffage allumé', 'Chauffer la maison à 25 °C', 'Laisser la porte du garage froid ouverte sur le salon',
+  'Couvrir le radiateur avec du linge et des meubles', 'Laisser les volets ouverts toute la nuit en hiver', 'Chauffer les pièces où personne ne va jamais',
+  'Laisser la porte d\'entrée ouverte en hiver', 'Garder des fenêtres à simple vitrage qui laissent passer l\'air',
+];
+const ISOLANTS = ['de la laine', 'du polystyrène', 'du liège', 'du feutre (un tissu épais)'];
+const CONDUCTEURS = ['de l\'aluminium', 'du cuivre', 'du fer', 'de l\'acier'];
+const GARDER = ['fabriquer une boîte pour garder une pizza chaude pendant le trajet', 'fabriquer une glacière pour garder des boissons fraîches', 'fabriquer un couvre-théière pour garder le thé chaud',
+  'emballer un glaçon pour qu\'il fonde le moins vite possible', 'fabriquer un manchon pour garder une gourde d\'eau fraîche', 'isoler une niche pour que son chien n\'ait pas froid en hiver'];
+const PASSER = ['fabriquer le fond d\'une casserole qui chauffe vite', 'fabriquer une poêle qui transmet bien la chaleur aux aliments', 'fabriquer un radiateur qui chauffe bien la pièce'];
+const CHAUFFAGE = [{ u: 'litres de mazout', a: [1600, 3200], g: [0.18, 0.35] }, { u: 'mètres cubes de gaz', a: [1400, 2800], g: [0.18, 0.35] }];
+const ECO_VF = [
+  ['Un isolant thermique produit de la chaleur.', false, 'Un isolant ne produit pas de chaleur : il ralentit son passage.'],
+  ['Un isolant peut aussi garder au froid ce qui est froid.', true, 'Il ralentit le passage de la chaleur dans les deux sens : une glacière garde les boissons fraîches.'],
+  ['L\'air immobile est un bon isolant thermique.', true, 'C\'est pour cela qu\'on utilise le double vitrage, la laine ou les vêtements en couches : ils emprisonnent de l\'air.'],
+  ['Les métaux sont de bons isolants thermiques.', false, 'Les métaux sont de bons conducteurs thermiques : la chaleur les traverse facilement.'],
+  ['Une grande partie de l\'énergie utilisée à la maison sert à se chauffer.', true, 'En Belgique, le chauffage des maisons consomme beaucoup d\'énergie : bien isoler permet d\'en économiser.'],
+  ['Isoler une maison permet de consommer moins de mazout ou de gaz.', true, 'La chaleur s\'échappe moins : la chaudière doit produire moins de chaleur.'],
+  ['Le double vitrage empêche le froid d\'entrer dans la maison.', false, 'Ce n\'est pas le froid qui entre : c\'est la chaleur qui sort. Le double vitrage ralentit sa sortie.'],
+  ['Un pull en laine réchauffe parce qu\'il fabrique de la chaleur.', false, 'Le pull ne fabrique rien : il ralentit la perte de la chaleur produite par le corps.'],
+];
+
+export function genererEconomie(modele, rng) {
+  const forme = rng.pick(['situation', 'situation', 'situation', 'geste', 'geste', 'grille', 'grille', 'materiau', 'materiau', 'calcul', 'calcul', 'vf']);
+  const p = rng.pick(ENFANTS); const fam = rng.pick(NOMS_FAMILLE);
+  if (forme === 'situation') {
+    const i = rng.int(0, ECO_SITUATIONS.length - 1); const S = ECO_SITUATIONS[i];
+    const qui = S.enfant ? p : fam;
+    const r = qcm(rng, S.b, S.f);
+    return { ...r, enonce: S.e(qui), explication: `${S.b} Rappel : la chaleur passe toujours du chaud vers le froid ; un isolant ralentit ce passage, un métal (conducteur thermique) le facilite.`,
+      _signature: `sit|${i}|${qui}|${r.choix.join('|')}`, cleContenu: `sit|${i}|${qui}` };
+  }
+  if (forme === 'geste') {
+    const bon = rng.next() < 0.6;
+    const [A, B] = bon ? [GESTES_BONS, GESTES_MAUVAIS] : [GESTES_MAUVAIS, GESTES_BONS];
+    const b = rng.pick(A); const f = rng.shuffle(B).slice(0, 3);
+    const r = qcm(rng, b, f);
+    return { ...r, enonce: bon ? `La famille ${fam} veut dépenser moins d'énergie pour se chauffer. Lequel de ces gestes l'aide à limiter les pertes de chaleur ?` : `Lequel de ces gestes fait gaspiller de l'énergie de chauffage ?`,
+      explication: bon ? `« ${b} » limite les pertes de chaleur. Les autres gestes laissent la chaleur s'échapper ou font chauffer pour rien.` : `« ${b} » gaspille l'énergie : la chaleur s'échappe ou on chauffe pour rien. Les autres gestes aident à économiser.`,
+      _signature: `geste|${bon}|${b}|${triee(f)}`, cleContenu: `geste|${bon}|${b}|${triee(f)}` };
+  }
+  if (forme === 'grille') {
+    const nb = rng.int(1, 3);
+    const tires = rng.shuffle([...rng.shuffle(GESTES_BONS).slice(0, nb).map((g) => [g, 0]), ...rng.shuffle(GESTES_MAUVAIS).slice(0, 4 - nb).map((g) => [g, 1])]);
+    return { type: 'grille', enonce: 'Ces gestes aident-ils à économiser l\'énergie de chauffage, ou la gaspillent-ils ?', lignes: tires.map(([g]) => g), colonnes: ['Économise', 'Gaspille'],
+      reponse: tires.map(([, k]) => k), points: 4,
+      explication: `Économisent l'énergie : ${tires.filter(([, k]) => k === 0).map(([g]) => minus(g)).join(' ; ') || 'aucun'}. Gaspillent : ${tires.filter(([, k]) => k === 1).map(([g]) => minus(g)).join(' ; ') || 'aucun'}.`,
+      _signature: `grille|${triee(tires.map(([g]) => g))}`, cleContenu: `grille|${triee(tires.map(([g]) => g))}` };
+  }
+  if (forme === 'materiau') {
+    const garder = rng.next() < 0.7;
+    const but = garder ? rng.pick(GARDER) : rng.pick(PASSER);
+    const b = garder ? rng.pick(ISOLANTS) : rng.pick(CONDUCTEURS);
+    const f = rng.shuffle(garder ? CONDUCTEURS : ISOLANTS).slice(0, 3);
+    const r = qcm(rng, maj(b), f.map(maj));
+    return { ...r, fiche: 'sc-chaleur', enonce: `${p} veut ${but}. Quel matériau doit-${pr(p)} choisir ?`,
+      explication: garder ? `${maj(b)} : c'est un isolant thermique, il ralentit le passage de la chaleur. Les métaux (${f.map((x) => x.replace(/^de l'|^du /, '')).join(', ')}) sont de bons conducteurs thermiques : la chaleur les traverse facilement.`
+        : `${maj(b)} : c'est un métal, un bon conducteur thermique, la chaleur le traverse facilement. Les autres matériaux sont des isolants thermiques.`,
+      _signature: `mat|${but}|${b}|${triee(f)}`, cleContenu: `mat|${but}|${b}|${triee(f)}` };
+  }
+  if (forme === 'calcul') {
+    const C = rng.pick(CHAUFFAGE);
+    const avant = rng.int(C.a[0] / 50, C.a[1] / 50) * 50;
+    const gain = Math.round((avant * (C.g[0] + rng.next() * (C.g[1] - C.g[0]))) / 10) * 10;
+    const apres = avant - gain; const trav = rng.pick(['isolé son toit', 'installé du double vitrage', 'isolé ses murs', 'isolé son toit et ses murs']);
+    const q = rng.pick(['diff', 'diff', 'mois']);
+    if (q === 'mois' && gain % 12) return null;
+    if (q === 'mois') {
+      return { type: 'numerique', reponse: gain / 12, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)}. En moyenne, combien de ${C.u} économise-t-elle par mois ?`,
+        explication: `Économie par an : ${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. Par mois : ${fmt(gain)} ÷ 12 = ${fmt(gain / 12)} ${C.u}. Une maison mieux isolée perd moins de chaleur : elle consomme moins.`,
+        _signature: `cm|${C.u}|${avant}|${apres}|${trav}`, cleContenu: `cm|${C.u}|${avant}|${apres}` };
+    }
+    return { type: 'numerique', reponse: gain, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)} par an. Combien de ${C.u} économise-t-elle chaque année ?`,
+      explication: `${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. La chaleur s'échappe moins de la maison : la chaudière doit en produire moins.`,
+      _signature: `cd|${C.u}|${avant}|${apres}|${trav}`, cleContenu: `cd|${C.u}|${avant}|${apres}` };
+  }
+  const [t, v, x] = rng.pick(ECO_VF);
+  return { type: 'vrai_faux', reponse: v, enonce: `Vrai ou faux ? ${t}`, explication: `${v ? 'Vrai' : 'Faux'}. ${x}`, _signature: `vf|${t}` };
+}
+
+// ================================================================ 11. INSTRUMENTS DE MESURE ET UNITÉS
+// Grandeurs du primaire (P4-P6). Le dynamomètre et le newton ne sont vus qu'en S1 : exclus.
+const UN = { '°C': 'en degrés Celsius (°C)', g: 'en grammes (g)', kg: 'en kilogrammes (kg)', s: 'en secondes (s)', min: 'en minutes (min)', mL: 'en millilitres (mL)', L: 'en litres (L)', mm: 'en millimètres (mm)', cm: 'en centimètres (cm)' };
+const GRANDEURS = {
+  temp: { sert: 'à mesurer une température', instr: ['un thermomètre'], unites: ['°C'], ctx: [
+    { t: 'la température de l\'eau du bain de son petit frère', u: '°C', v: [35, 39] }, { t: 'la température de l\'air dans la classe', u: '°C', v: [18, 23] },
+    { t: 'la température de l\'eau d\'une mare en hiver', u: '°C', v: [2, 8] }, { t: 'la température de l\'eau qui chauffe dans une casserole', u: '°C', v: [40, 95] },
+    { t: 'la température à l\'intérieur du frigo', u: '°C', v: [3, 7] }, { t: 'la température de l\'eau d\'un pot entouré de laine', u: '°C', v: [30, 70] }] },
+  masse: { sert: 'à mesurer une masse', instr: ['une balance'], unites: ['g', 'kg'], ctx: [
+    { t: 'la masse de trois pommes', u: 'g', v: [35, 60], k: 10 }, { t: 'la masse d\'un chaton', u: 'g', v: [40, 90], k: 10 },
+    { t: 'la masse du sable utilisé pour une expérience', u: 'g', v: [10, 50], k: 10 }, { t: 'la masse d\'un glaçon avant qu\'il fonde', u: 'g', v: [18, 40] },
+    { t: 'la masse de son cartable', u: 'kg', v: [3, 7] }, { t: 'la masse d\'un sac de pommes de terre', u: 'kg', v: [2, 10] }] },
+  duree: { sert: 'à mesurer une durée', instr: ['un chronomètre'], unites: ['s', 'min'], ctx: [
+    { t: 'le temps que met un glaçon pour fondre complètement', u: 'min', v: [15, 60] }, { t: 'le temps de sa course de 60 mètres', u: 's', v: [9, 15] },
+    { t: 'le temps que met un morceau de sucre pour se dissoudre', u: 's', v: [30, 180] }, { t: 'le temps pendant lequel une bougie reste allumée sous un bocal', u: 's', v: [5, 30] },
+    { t: 'le temps que met l\'eau d\'une casserole pour bouillir', u: 'min', v: [5, 12] }] },
+  volume: { sert: 'à mesurer un volume de liquide', instr: ['un verre gradué', 'une éprouvette graduée'], unites: ['mL', 'L'], ctx: [
+    { t: 'le volume de lait pour une pâte à crêpes', u: 'mL', v: [5, 10], k: 50 }, { t: 'le volume d\'eau versé dans chaque pot de l\'expérience', u: 'mL', v: [2, 6], k: 50 },
+    { t: 'le volume d\'eau resté dans un verre après trois jours', u: 'mL', v: [4, 18], k: 5 }, { t: 'le volume d\'huile pour une recette', u: 'mL', v: [2, 6], k: 10 }] },
+  pluie: { sert: 'à mesurer la quantité de pluie tombée', instr: ['un pluviomètre'], unites: ['mm'], ctx: [
+    { t: 'la quantité de pluie tombée pendant la nuit', u: 'mm', v: [2, 25] }, { t: 'la quantité de pluie tombée pendant un orage', u: 'mm', v: [5, 40] }] },
+  longueur: { sert: 'à mesurer une longueur', instr: ['un mètre ruban'], unites: ['cm'], ctx: [
+    { t: 'la hauteur d\'un plant de haricot', u: 'cm', v: [5, 40] }, { t: 'la longueur d\'un ver de terre', u: 'cm', v: [6, 20] }, { t: 'la taille d\'un élève de sa classe', u: 'cm', v: [135, 160] }] },
+};
+// Grandeurs qu'on ne propose jamais ensemble (sinon deux réponses défendables).
+const CONFLITS = { masse: ['volume'], volume: ['masse', 'pluie'], pluie: ['volume', 'longueur'], longueur: ['pluie'] };
+const compatibles = (g) => Object.keys(GRANDEURS).filter((x) => x !== g && !(CONFLITS[g] ?? []).includes(x));
+
+function figThermometre(lo, hi, pas, etiq, val) {
+  const W = 230; const H = 360; const x0 = 98; const yb = 318; const yT = 290; const yH = 34;
+  const y = (t) => yT - ((t - lo) / (hi - lo)) * (yT - yH);
+  let s = `<text x="${x0 + 8}" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="${ENCRE}">°C</text>`;
+  s += `<rect x="${x0}" y="${yH - 10}" width="16" height="${yb - yH}" rx="8" fill="#ffffff" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  s += `<rect x="${x0 + 4}" y="${y(val).toFixed(1)}" width="8" height="${(yb - y(val)).toFixed(1)}" fill="#c0392b"/>`;
+  s += `<circle cx="${x0 + 8}" cy="${yb}" r="16" fill="#c0392b" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  for (let t = lo; t <= hi + 1e-9; t += pas) {
+    const maj5 = Math.abs(((t - lo) / etiq) - Math.round((t - lo) / etiq)) < 1e-9;
+    const yy = y(t).toFixed(1);
+    s += `<line x1="${x0 + 18}" y1="${yy}" x2="${x0 + 18 + (maj5 ? 16 : 8)}" y2="${yy}" stroke="${ENCRE}" stroke-width="${maj5 ? 1.6 : 1}"/>`;
+    if (maj5) s += `<text x="${x0 + 40}" y="${(+yy + 4.5).toFixed(1)}" font-size="13" fill="${ENCRE}">${fmt(t)}</text>`;
+  }
+  return svg(W, H, s);
+}
+function figEprouvette(max, pas, etiq, val, unite, pluvio) {
+  const W = 260; const H = 360; const xa = 90; const xb = 150; const yB = 316; const yH = 56;
+  const y = (v) => yB - (v / max) * (yB - yH);
+  let s = '';
+  if (pluvio) s += `<path d="M60 18 L180 18 L${xb} 50 L${xa} 50 Z" fill="#ffffff" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  s += `<rect x="${xa}" y="${y(val).toFixed(1)}" width="${xb - xa}" height="${(yB - y(val)).toFixed(1)}" fill="#a9c9ec"/>`;
+  s += `<line x1="${xa}" y1="${y(val).toFixed(1)}" x2="${xb}" y2="${y(val).toFixed(1)}" stroke="#1f5fbf" stroke-width="2"/>`;
+  s += `<path d="M${xa} ${pluvio ? 50 : 40} L${xa} ${yB} L${xb} ${yB} L${xb} ${pluvio ? 50 : 40}" fill="none" stroke="${ENCRE}" stroke-width="2"/>`;
+  s += `<rect x="${xa - 8}" y="${yB}" width="${xb - xa + 16}" height="10" rx="2" fill="#d5dae3" stroke="${ENCRE}" stroke-width="1.4"/>`;
+  for (let v = 0; v <= max + 1e-9; v += pas) {
+    const m = Math.abs(v / etiq - Math.round(v / etiq)) < 1e-9; const yy = y(v).toFixed(1);
+    s += `<line x1="${xb}" y1="${yy}" x2="${xb - (m ? 18 : 9)}" y2="${yy}" stroke="${ENCRE}" stroke-width="${m ? 1.5 : 1}"/>`;
+    if (m) s += `<text x="${xb + 14}" y="${(+yy + 4.5).toFixed(1)}" font-size="13" fill="${ENCRE}">${fmt(v)}</text>`;
+  }
+  s += `<text x="${pluvio ? 194 : xb + 14}" y="${pluvio ? 38 : yH - 14}" font-size="13" font-weight="bold" fill="${ENCRE}">${unite}</text>`;
+  return svg(W, H, s);
+}
+function figChrono(m, sec) {
+  const W = 320; const H = 220; const d2 = (n) => String(n).padStart(2, '0');
+  let s = `<rect x="146" y="10" width="28" height="18" rx="4" fill="#d5dae3" stroke="${ENCRE}" stroke-width="1.6"/>`;
+  s += `<circle cx="160" cy="120" r="88" fill="#f2f5fa" stroke="${ENCRE}" stroke-width="2.4"/>`;
+  s += `<rect x="82" y="88" width="156" height="58" rx="6" fill="#ffffff" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  s += `<text x="160" y="132" font-size="38" font-family="Courier New, monospace" font-weight="bold" text-anchor="middle" fill="${ENCRE}">${d2(m)}:${d2(sec)}</text>`;
+  s += `<text x="122" y="166" font-size="13" text-anchor="middle" fill="${ENCRE}">min</text><text x="198" y="166" font-size="13" text-anchor="middle" fill="${ENCRE}">s</text>`;
+  return svg(W, H, s);
+}
+function figBalance(affiche, objet) {
+  const W = 320; const H = 220;
+  let s = `<rect x="${160 - largeur(objet, 13) / 2 - 12}" y="34" width="${largeur(objet, 13) + 24}" height="44" rx="6" fill="#f6e7c8" stroke="${ENCRE}" stroke-width="1.6"/>`;
+  s += `<text x="160" y="61" font-size="13" text-anchor="middle" fill="${ENCRE}">${esc(objet)}</text>`;
+  s += `<ellipse cx="160" cy="84" rx="96" ry="9" fill="#d5dae3" stroke="${ENCRE}" stroke-width="1.6"/>`;
+  s += `<path d="M58 100 L262 100 L282 196 L38 196 Z" fill="#f2f5fa" stroke="${ENCRE}" stroke-width="2"/>`;
+  s += `<rect x="96" y="128" width="128" height="44" rx="5" fill="#ffffff" stroke="${ENCRE}" stroke-width="1.8"/>`;
+  s += `<text x="160" y="159" font-size="24" font-family="Courier New, monospace" font-weight="bold" text-anchor="middle" fill="${ENCRE}">${esc(affiche)}</text>`;
+  return svg(W, H, s);
+}
+const valeurCtx = (rng, c) => rng.int(c.v[0], c.v[1]) * (c.k ?? 1);
+
+export function genererMesures(modele, rng) {
+  const forme = rng.pick(['instrument', 'instrument', 'unite', 'unite', 'ecriture', 'ecriture', 'grandeur', 'grille', 'thermo', 'thermo', 'eprouvette', 'pluvio', 'chrono', 'balance']);
+  const p = rng.pick(ENFANTS);
+  const G = Object.keys(GRANDEURS);
+  if (forme === 'instrument' || forme === 'unite' || forme === 'ecriture') {
+    const g = rng.pick(G); const c = rng.pick(GRANDEURS[g].ctx); const autres = rng.shuffle(compatibles(g)).slice(0, 3);
+    const instr = rng.pick(GRANDEURS[g].instr);
+    if (forme === 'instrument') {
+      const faux = autres.map((x) => rng.pick(GRANDEURS[x].instr));
+      const r = qcm(rng, maj(instr), faux.map(maj));
+      return { ...r, enonce: `${p} veut mesurer ${c.t}. Quel instrument doit-${pr(p)} utiliser ?`,
+        explication: `Pour mesurer ${c.t}, on utilise ${instr} : ${/^une /.test(instr) ? 'elle' : 'il'} sert ${GRANDEURS[g].sert}. On exprime le résultat ${UN[c.u]}.`,
+        _signature: `ins|${c.t}|${instr}|${triee(faux)}`, cleContenu: `ins|${c.t}|${triee(faux)}` };
+    }
+    if (forme === 'unite') {
+      const faux = autres.map((x) => UN[rng.pick(GRANDEURS[x].unites)]);
+      const r = qcm(rng, maj(UN[c.u]), faux.map(maj));
+      return { ...r, enonce: `Avec ${instr}, ${p} mesure ${c.t}. Dans quelle unité va-t-${pr(p)} exprimer son résultat ?`,
+        explication: `${maj(instr)} sert ${GRANDEURS[g].sert}. Ici, on exprime le résultat ${UN[c.u]}.`,
+        _signature: `uni|${c.t}|${instr}|${triee(faux)}`, cleContenu: `uni|${c.t}|${triee(faux)}` };
+    }
+    const val = valeurCtx(rng, c);
+    const bonne = `${fmt(val)} ${c.u}`;
+    const faux = autres.map((x) => `${fmt(val)} ${rng.pick(GRANDEURS[x].unites)}`);
+    const r = qcm(rng, bonne, faux);
+    return { ...r, enonce: `Avec ${instr}, ${p} mesure ${c.t}. L'instrument indique ${fmt(val)}. Comment écrire correctement le résultat ?`,
+      explication: `${maj(instr)} sert ${GRANDEURS[g].sert} : le résultat s'écrit ${bonne}. Un nombre sans la bonne unité ne veut rien dire en sciences.`,
+      _signature: `ecr|${c.t}|${val}|${triee(faux)}`, cleContenu: `ecr|${c.t}|${val}` };
+  }
+  if (forme === 'grandeur') {
+    const g = rng.pick(G); const instr = rng.pick(GRANDEURS[g].instr); const autres = rng.shuffle(compatibles(g)).slice(0, 3);
+    const r = qcm(rng, maj(GRANDEURS[g].sert), autres.map((x) => maj(GRANDEURS[x].sert)));
+    return { ...r, enonce: `À quoi sert ${instr} ?`, explication: `${maj(instr)} sert ${GRANDEURS[g].sert}. Unité : ${GRANDEURS[g].unites.map((u) => UN[u].replace(/^en /, '')).join(' ou ')}.`,
+      _signature: `gr|${instr}|${triee(autres)}`, cleContenu: `gr|${instr}|${triee(autres)}` };
+  }
+  if (forme === 'grille') {
+    let gs;
+    for (let essai = 0; essai < 20; essai++) {
+      gs = rng.shuffle(G).slice(0, 4);
+      if (gs.every((a) => gs.every((b) => !(CONFLITS[a] ?? []).includes(b)))) break;
+      gs = null;
+    }
+    if (!gs) return null;
+    const lignes = gs.map((g) => maj(rng.pick(GRANDEURS[g].instr)));
+    const colonnes = rng.shuffle(gs).map((g) => maj(GRANDEURS[g].sert.replace(/^à mesurer /, '')));
+    return { type: 'grille', enonce: 'Que mesure chacun de ces instruments ?', lignes, colonnes,
+      reponse: gs.map((g) => colonnes.indexOf(maj(GRANDEURS[g].sert.replace(/^à mesurer /, '')))), points: 4,
+      explication: `${gs.map((g, i) => `${lignes[i]} : ${GRANDEURS[g].sert.replace(/^à mesurer /, '')} (${GRANDEURS[g].unites.join(' ou ')})`).join(' ; ')}.`,
+      _signature: `grille|${lignes.join(',')}|${colonnes.join(',')}`, cleContenu: `grille|${triee(lignes)}` };
+  }
+  if (forme === 'thermo') {
+    const [lo, hi, pas, etiq] = rng.pick([[-10, 30, 1, 5], [0, 40, 1, 5], [10, 50, 1, 5], [-20, 40, 2, 10], [0, 60, 2, 10], [20, 100, 2, 10]]);
+    const n = Math.round((hi - lo) / pas); let k = rng.int(Math.max(1, Math.floor(-lo / pas) + 1), n - 1); // valeur positive (les réponses numériques négatives ne sont pas admises)
+    if (rng.next() < 0.8 && ((k * pas) % etiq === 0)) k += 1;
+    const val = lo + k * pas;
+    const c = val > 60 ? 'L\'eau chauffe sur la cuisinière.' : '';
+    return { type: 'numerique', reponse: val, unite: '°C', figure: figThermometre(lo, hi, pas, etiq, val),
+      enonce: `${p} relève une température. ${c} Quelle température indique ce thermomètre ?`.replace(/ {2}/g, ' '),
+      explication: `Entre deux nombres écrits, il y a ${etiq} °C, partagés en ${etiq / pas} intervalles : chaque petit trait vaut ${pas} °C. Le haut de la colonne rouge est à ${deg(val)}.`,
+      _signature: `th|${lo}|${pas}|${val}`, cleContenu: `th|${lo}|${pas}|${val}` };
+  }
+  if (forme === 'eprouvette' || forme === 'pluvio') {
+    const pl = forme === 'pluvio';
+    const [max, pas, etiq] = pl ? rng.pick([[40, 1, 5], [60, 2, 10], [30, 1, 5]]) : rng.pick([[100, 5, 20], [100, 2, 10], [250, 10, 50], [500, 20, 100], [200, 5, 50]]);
+    const n = Math.round(max / pas); let k = rng.int(2, n - 1);
+    if (rng.next() < 0.8 && ((k * pas) % etiq === 0)) k += 1;
+    const val = k * pas; const u = pl ? 'mm' : 'mL';
+    const instr = pl ? 'ce pluviomètre' : rng.pick(['cette éprouvette graduée', 'ce verre gradué']);
+    return { type: 'numerique', reponse: val, unite: u, figure: figEprouvette(max, pas, etiq, val, u, pl),
+      enonce: pl ? `Après une averse, ${p} lit le niveau de l'eau dans le pluviomètre de l'école. Combien de millimètres de pluie sont tombés ?`
+        : `${p} a versé de l'eau dans ${instr}. Quel volume d'eau contient-${/^cette/.test(instr) ? 'elle' : 'il'} ?`,
+      explication: `Entre deux nombres écrits, il y a ${fmt(etiq)} ${u}, partagés en ${etiq / pas} intervalles : chaque petit trait vaut ${fmt(pas)} ${u}. Le niveau de l'eau est à ${fmt(val)} ${u}.`,
+      _signature: `${forme}|${max}|${pas}|${val}`, cleContenu: `${forme}|${max}|${pas}|${val}` };
+  }
+  if (forme === 'chrono') {
+    const m = rng.int(1, 9); const sec = rng.int(1, 59);
+    const quoi = rng.pick(['le temps que met un glaçon pour fondre', 'le temps que met un morceau de sucre pour se dissoudre', 'le temps pendant lequel une bougie reste allumée', 'le temps que met l\'eau pour bouillir']);
+    return { type: 'numerique', reponse: m * 60 + sec, unite: 's', figure: figChrono(m, sec),
+      enonce: `${p} a mesuré ${quoi}. Voici ce qu'affiche son chronomètre. Combien de secondes cela fait-il en tout ?`,
+      explication: `Le chronomètre affiche ${m} min ${sec} s. 1 minute = 60 secondes : ${m} × 60 + ${sec} = ${m * 60} + ${sec} = ${m * 60 + sec} secondes.`,
+      _signature: `chr|${m}|${sec}|${quoi}`, cleContenu: `chr|${m}|${sec}` };
+  }
+  const [objet, lib] = rng.pick([['de la farine', 'Farine'], ['des pommes de terre', 'Pommes de terre'], ['du sable', 'Sable'], ['du sucre', 'Sucre'], ['des cerises', 'Cerises'], ['du terreau', 'Terreau'], ['des noix', 'Noix']]);
+  const enG = rng.next() < 0.5;
+  const grammes = enG ? rng.int(21, 380) * 5 : rng.int(4, 79) * 25;
+  if (enG && grammes < 1000) return null;
+  const kg = grammes / 1000;
+  return { type: 'numerique', reponse: enG ? kg : grammes, unite: enG ? 'kg' : 'g', figure: figBalance(enG ? `${fmt(grammes)} g` : `${fmt(kg)} kg`, lib),
+    enonce: `${p} pèse ${objet} sur une balance. Quelle est la masse ${enG ? 'en kilogrammes (kg)' : 'en grammes (g)'} ?`,
+    explication: `1 kg = 1 000 g. ${enG ? `${fmt(grammes)} g = ${fmt(grammes)} ÷ 1 000 = ${fmt(kg)} kg.` : `${fmt(kg)} kg = ${fmt(kg)} × 1 000 = ${fmt(grammes)} g.`}`,
+    _signature: `bal|${lib}|${grammes}|${enG}`, cleContenu: `bal|${grammes}|${enG}` };
+}
+
+// ================================================================ 12. LA NOTION D'ESPÈCE (races, hybrides stériles, compter les espèces)
+const ESP = {
+  chien: { gn: 'un chien', races: ['caniche', 'berger allemand', 'labrador', 'teckel', 'dalmatien', 'bouvier des Flandres', 'beagle', 'border collie', 'berger malinois', 'golden retriever'], f: 'une chienne', m: 'un chien', petits: 'chiots', nomEsp: 'les chiens', proche: ['renard'] },
+  chat: { gn: 'un chat', races: ['siamois', 'persan', 'chartreux', 'maine coon', 'sacré de Birmanie', 'européen'], f: 'une chatte', m: 'un chat', petits: 'chatons', nomEsp: 'les chats', proche: [] },
+  cheval: { gn: 'un cheval', races: ['frison', 'pur-sang', 'haflinger', 'trait belge', 'appaloosa', 'lipizzan'], f: 'une jument', m: 'un étalon', petits: 'poulains', nomEsp: 'les chevaux', proche: ['ane', 'zebre'] },
+  vache: { gn: 'une vache', races: ['Blanc-Bleu Belge', 'Holstein', 'Limousine', 'Charolaise', 'Highland', 'Jersiaise'], f: 'une vache', m: 'un taureau', petits: 'veaux', nomEsp: 'les bovins', proche: [] },
+  lapin: { gn: 'un lapin', races: ['géant des Flandres', 'bélier', 'rex', 'hollandais', 'angora'], f: 'une lapine', m: 'un lapin', petits: 'lapereaux', nomEsp: 'les lapins', proche: ['lievre'] },
+  poule: { gn: 'une poule', races: ['coucou de Malines', 'Brahma', 'Sussex', 'Leghorn', 'soie'], f: 'une poule', m: 'un coq', petits: 'poussins', nomEsp: 'les poules', proche: [] },
+  mouton: { gn: 'un mouton', races: ['Texel', 'Suffolk', 'mérinos', 'Ouessant'], f: 'une brebis', m: 'un bélier', petits: 'agneaux', nomEsp: 'les moutons', proche: ['chevre'] },
+  chevre: { gn: 'une chèvre', races: ['alpine', 'saanen', 'poitevine'], f: 'une chèvre', m: 'un bouc', petits: 'chevreaux', nomEsp: 'les chèvres', proche: ['mouton'] },
+};
+const SEULS = { ane: { gn: 'un âne', nomEsp: 'les ânes' }, zebre: { gn: 'un zèbre', nomEsp: 'les zèbres' }, lievre: { gn: 'un lièvre', nomEsp: 'les lièvres' }, renard: { gn: 'un renard', nomEsp: 'les renards' } };
+const nomAnimal = (e, race) => (race ? `${ESP[e].gn} de race ${race}` : (ESP[e]?.gn ?? SEULS[e].gn));
+const nomEspece = (e) => (ESP[e] ?? SEULS[e]).nomEsp;
+const HYBRIDES = [
+  { txt: (r) => `Une jument de race ${r} et un âne ont un petit : un mulet. Devenu adulte, le mulet ne peut pas avoir de petits (il est stérile).`, a: 'la jument', b: 'l\'âne', race: 'cheval' },
+  { txt: (r) => `Un étalon de race ${r} et une ânesse ont un petit : un bardot. Le bardot est stérile : il ne peut pas avoir de petits.`, a: 'le cheval', b: 'l\'ânesse', race: 'cheval' },
+  { txt: (r) => `Une jument de race ${r} et un zèbre ont eu un petit, un zébrule. Le zébrule est stérile : il ne peut pas avoir de petits.`, a: 'la jument', b: 'le zèbre', race: 'cheval' },
+  { txt: () => 'Une cane de Pékin et un canard de Barbarie ont des canetons, les canards mulards. Les canards mulards sont stériles : ils ne peuvent pas avoir de petits.', a: 'la cane de Pékin', b: 'le canard de Barbarie' },
+];
+const RESSEMBLE = [['lapin', 'lievre'], ['chien', 'renard'], ['cheval', 'ane'], ['mouton', 'chevre'], ['cheval', 'zebre']];
+const DIFFERENTS = [['chien', ['caniche', 'labrador']], ['chien', ['dalmatien', 'teckel']], ['chien', ['bouvier des Flandres', 'teckel']], ['chat', ['persan', 'siamois']],
+  ['chat', ['sacré de Birmanie', 'chartreux']], ['cheval', ['frison', 'haflinger']], ['poule', ['soie', 'Leghorn']], ['vache', ['Highland', 'Holstein']], ['lapin', ['angora', 'rex']]];
+const DEF_ESPECE = 'Une espèce : des vivants qui peuvent se reproduire entre eux et avoir des petits féconds (capables, à leur tour, d\'avoir des petits).';
+const animalAleatoire = (rng, e) => (ESP[e] ? nomAnimal(e, rng.pick(ESP[e].races)) : nomAnimal(e));
+
+export function genererEspece(modele, rng) {
+  const forme = rng.pick(['compte', 'compte', 'compte', 'meme', 'meme', 'scenario', 'scenario', 'verifier', 'ressemble', 'vf', 'vf', 'grille']);
+  const p = rng.pick(ENFANTS);
+  const CL = Object.keys(ESP);
+  if (forme === 'compte') {
+    const ne = rng.int(2, 4);
+    let esps = rng.shuffle(CL).slice(0, ne);
+    if (rng.next() < 0.65) { // piège : un animal qui ressemble à une espèce de la liste
+      const avecProche = esps.filter((e) => ESP[e].proche.length);
+      if (avecProche.length) { const pr0 = rng.pick(ESP[rng.pick(avecProche)].proche); if (!esps.includes(pr0)) esps = [...esps.slice(0, ne - 1), pr0]; }
+    }
+    if (new Set(esps).size !== esps.length || esps.length < 2) return null;
+    const total = rng.int(Math.max(ne + 1, 5), 6);
+    const items = esps.map((e) => [e, ESP[e] ? rng.pick(ESP[e].races) : null]);
+    let essais = 0;
+    while (items.length < total && essais++ < 50) {
+      const e = rng.pick(esps.filter((x) => ESP[x]));
+      if (!e) break;
+      const r = rng.pick(ESP[e].races);
+      if (!items.some(([a, b]) => a === e && b === r)) items.push([e, r]);
+    }
+    if (items.length < total) return null;
+    const liste = rng.shuffle(items);
+    const nb = new Set(liste.map(([e]) => e)).size;
+    const eDouble = [...new Set(liste.map(([e]) => e))].find((e) => liste.filter(([x]) => x === e).length > 1);
+    const racesEx = liste.filter(([x]) => x === eDouble).map(([, r]) => r).slice(0, 2);
+    const groupes = [...new Set(liste.map(([e]) => e))].map((e) => `${nomEspece(e)} (${liste.filter(([x]) => x === e).length})`);
+    return { type: 'numerique', reponse: nb, unite: 'espèces',
+      enonce: `${p} a fait la liste des animaux qu'${pr(p)} a vus dans un parc animalier : ${listeEt(liste.map(([e, r]) => nomAnimal(e, r)))}. Combien d'espèces différentes y a-t-il dans cette liste ?`,
+      explication: `Il y a ${nb} espèces : ${listeEt(groupes)}. Des races différentes (comme ${listeEt(racesEx)}) appartiennent à la même espèce : elles peuvent avoir ensemble des petits féconds.${liste.some(([e]) => SEULS[e] || ['mouton', 'chevre'].every((x) => liste.some(([y]) => y === x))) ? ' Attention aux animaux qui se ressemblent : le lapin et le lièvre, le cheval, l\'âne et le zèbre, le chien et le renard, le mouton et la chèvre sont des espèces différentes.' : ''}`,
+      _signature: `cpt|${liste.map(([e, r]) => `${e}:${r}`).join(',')}`, cleContenu: `cpt|${triee(liste.map(([e, r]) => `${e}:${r}`))}` };
+  }
+  if (forme === 'meme') {
+    const e = rng.pick(CL); const [r1, r2] = rng.shuffle(ESP[e].races).slice(0, 2);
+    const proches = ESP[e].proche.map((x) => animalAleatoire(rng, x));
+    const autres = rng.shuffle(CL.filter((x) => x !== e && !ESP[e].proche.includes(x))).slice(0, 3).map((x) => animalAleatoire(rng, x));
+    const faux = [...proches, ...autres].slice(0, 3);
+    const r = qcm(rng, maj(nomAnimal(e, r2)), faux.map(maj));
+    const pl = proches.length > 1;
+    return { ...r, enonce: `Lequel de ces animaux est de la même espèce qu'${nomAnimal(e, r1)} ?`,
+      explication: `${maj(nomAnimal(e, r1))} et ${nomAnimal(e, r2)} sont deux races de la même espèce : ${ESP[e].gn.startsWith('une') ? 'elles' : 'ils'} peuvent avoir ensemble des petits, eux-mêmes féconds.${proches.length ? ` ${maj(listeEt(proches.map((x) => x.replace(/ de race .*/, ''))))} : ${pl ? 'ils ressemblent' : 'il ressemble'} peut-être à ${ESP[e].gn}, mais ${pl ? 'ce sont d\'autres espèces' : 'c\'est une autre espèce'}.` : ''}`,
+      _signature: `meme|${e}|${r1}|${r2}|${triee(faux)}`, cleContenu: `meme|${e}|${r1}|${r2}|${triee(faux)}` };
+  }
+  const CHOIX3 = ['Ils sont de la même espèce.', 'Ils sont de deux espèces différentes.', 'On ne peut pas encore conclure.'];
+  if (forme === 'scenario') {
+    const hyb = rng.next() < 0.45;
+    if (hyb) {
+      const H = rng.pick(HYBRIDES); const r = H.race ? rng.pick(ESP.cheval.races) : '';
+      return { type: 'qcm', choix: CHOIX3, reponse: 1, fiche: 'sc-espece',
+        enonce: `${H.txt(r)} Que peut-on conclure sur ${H.a} et ${H.b} ?`,
+        explication: `Ils peuvent avoir un petit, mais ce petit est stérile : ils ne peuvent pas avoir de descendants féconds. Ce sont donc deux espèces différentes. ${DEF_ESPECE}`,
+        _signature: `hyb|${HYBRIDES.indexOf(H)}|${r}`, cleContenu: `hyb|${HYBRIDES.indexOf(H)}|${r}` };
+    }
+    const e = rng.pick(CL); const [r1, r2] = rng.shuffle(ESP[e].races).slice(0, 2); const E = ESP[e];
+    return { type: 'qcm', choix: CHOIX3, reponse: 0, fiche: 'sc-espece',
+      enonce: `${maj(E.f)} de race ${r1} et ${E.m} de race ${r2} ont des ${E.petits}. Devenus adultes, ces ${E.petits} ont eux-mêmes des petits. Que peut-on conclure sur les deux parents ?`,
+      explication: `Ils ont des petits, et ces petits sont féconds : les deux parents sont de la même espèce, même s'ils sont de races différentes. ${DEF_ESPECE}`,
+      _signature: `cro|${e}|${r1}|${r2}`, cleContenu: `cro|${e}|${r1}|${r2}` };
+  }
+  if (forme === 'verifier') {
+    const e = rng.pick(CL); const [r1, r2] = rng.shuffle(ESP[e].races).slice(0, 2); const E = ESP[e];
+    const b = `Que les ${E.petits}, devenus adultes, peuvent eux aussi avoir des petits.`;
+    const r = qcm(rng, b, rng.shuffle([`Que les ${E.petits} ressemblent à leurs parents.`, `Que les ${E.petits} sont nés en bonne santé.`, 'Que les deux parents ont la même couleur.', 'Que les deux parents mangent la même nourriture.']).slice(0, 3));
+    return { ...r, fiche: 'sc-espece', enonce: `${maj(E.f)} de race ${r1} et ${E.m} de race ${r2} ont eu des ${E.petits}. Pour montrer qu'ils sont de la même espèce, que faut-il encore vérifier ?`,
+      explication: `${b} Avoir des petits ne suffit pas : il faut que ces petits soient féconds (le mulet, petit d'un âne et d'une jument, est stérile). ${DEF_ESPECE}`,
+      _signature: `ver|${e}|${r1}|${r2}|${triee(r.choix)}`, cleContenu: `ver|${e}|${r1}|${r2}` };
+  }
+  if (forme === 'ressemble') {
+    const sem = rng.next() < 0.5;
+    if (sem) {
+      const [a, b] = rng.pick(RESSEMBLE);
+      const na = animalAleatoire(rng, a).replace(/ de race .*/, ''); const nb = animalAleatoire(rng, b).replace(/ de race .*/, '');
+      const bonne = 'Non : la ressemblance ne suffit pas. Il faudrait qu\'ils puissent avoir ensemble des petits féconds, et ce n\'est pas le cas.';
+      const r = qcm(rng, bonne, ['Oui : ils se ressemblent, donc ils sont de la même espèce.', 'Oui : ils ont tous les deux quatre pattes et des poils.', 'Non : ils ne vivent pas au même endroit.']);
+      return { ...r, enonce: `${maj(na)} et ${nb} se ressemblent beaucoup. ${p} en conclut qu'ils sont de la même espèce. A-t-${pr(p)} raison ?`,
+        explication: `${bonne} ${maj(nomEspece(a))} et ${nomEspece(b)} sont deux espèces différentes. ${DEF_ESPECE}`,
+        _signature: `res|${a}|${b}|${p}`, cleContenu: `res|${a}|${b}` };
+    }
+    const [e, [r1, r2]] = rng.pick(DIFFERENTS);
+    const il2 = ESP[e].gn.startsWith('une') ? 'elles' : 'ils';
+    const bonne = `Non : ${il2} peuvent avoir ensemble des ${ESP[e].petits} féconds, donc ${il2} sont de la même espèce.`;
+    const r = qcm(rng, bonne, [`Oui : ${il2} sont très différent${il2 === 'elles' ? 'e' : ''}s, donc ce sont deux espèces.`, `Oui : ${il2} n'ont pas la même taille ni la même couleur.`, `Non : ${il2} vivent tous les deux avec l'être humain.`.replace('elles vivent tous', 'elles vivent toutes')]);
+    return { ...r, enonce: `${maj(nomAnimal(e, r1))} et ${nomAnimal(e, r2)} ne se ressemblent pas du tout. ${p} en conclut qu'${il2} sont de deux espèces différentes. A-t-${pr(p)} raison ?`,
+      explication: `${bonne} Ce sont deux races de la même espèce. ${DEF_ESPECE}`,
+      _signature: `dif|${e}|${r1}|${r2}|${p}`, cleContenu: `dif|${e}|${r1}|${r2}` };
+  }
+  // Paires : même espèce ou espèces différentes ?
+  const paire = () => {
+    const k = rng.pick(['meme', 'meme', 'proche', 'autre']);
+    if (k === 'meme') { const e = rng.pick(CL); const [a, b] = rng.shuffle(ESP[e].races).slice(0, 2); return { t: `${maj(nomAnimal(e, a))} et ${nomAnimal(e, b)}`, v: true, x: `deux races de la même espèce (${nomEspece(e)})` }; }
+    if (k === 'proche') { const [a, b] = rng.pick(RESSEMBLE); return { t: `${maj(animalAleatoire(rng, a))} et ${animalAleatoire(rng, b)}`, v: false, x: `deux espèces différentes (${nomEspece(a)} et ${nomEspece(b)}), même s'ils se ressemblent` }; }
+    const [a, b] = rng.shuffle(CL).slice(0, 2); return { t: `${maj(animalAleatoire(rng, a))} et ${animalAleatoire(rng, b)}`, v: false, x: `deux espèces différentes (${nomEspece(a)} et ${nomEspece(b)})` };
+  };
+  if (forme === 'vf') {
+    const P = paire();
+    return { type: 'vrai_faux', reponse: P.v, fiche: 'sc-espece', enonce: `Vrai ou faux ? ${P.t} sont de la même espèce.`,
+      explication: `${P.v ? 'Vrai' : 'Faux'} : ${P.x}. ${DEF_ESPECE}`, _signature: `vf|${P.t}`, cleContenu: `vf|${P.t}` };
+  }
+  const ps = []; let essais = 0;
+  while (ps.length < 4 && essais++ < 30) { const P = paire(); if (!ps.some((x) => x.t === P.t)) ps.push(P); }
+  if (ps.length < 4 || ps.every((x) => x.v) || ps.every((x) => !x.v)) return null;
+  return { type: 'grille', fiche: 'sc-espece', enonce: 'Ces deux animaux sont-ils de la même espèce ?', lignes: ps.map((x) => x.t), colonnes: ['Même espèce', 'Espèces différentes'],
+    reponse: ps.map((x) => (x.v ? 0 : 1)), points: 4, explication: `${ps.map((x) => `${x.t} : ${x.x}`).join(' ; ')}. ${DEF_ESPECE}`,
+    _signature: `grille|${triee(ps.map((x) => x.t))}`, cleContenu: `grille|${triee(ps.map((x) => x.t))}` };
+}
+
 // ---------------------------------------------------------------- enregistrement
 const avecCle = (fn) => (modele, rng) => {
   const q = fn(modele, rng);
@@ -1169,4 +2144,10 @@ export const GENERATEURS = {
   sc_emboites: avecCle(genererEmboites),
   sc_attributs: avecCle(genererAttributs),
   sc_systemes: avecCle(genererSystemes),
+  sc_ventilation: avecCle(genererVentilation),
+  sc_demarche: avecCle(genererDemarche),
+  sc_transfert: avecCle(genererTransfert),
+  sc_economie: avecCle(genererEconomie),
+  sc_mesures: avecCle(genererMesures),
+  sc_espece: avecCle(genererEspece),
 };

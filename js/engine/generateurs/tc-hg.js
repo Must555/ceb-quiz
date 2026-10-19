@@ -13,6 +13,7 @@
 // sont volontairement limités à ce qui est sûr et enseigné en 6e primaire.
 
 import { formatNombre as n } from '../format.js';
+import { romain } from './histoire.js';
 
 const maj = (s) => String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCase());
 const cle = (arr) => arr.slice().sort().join(',');
@@ -74,6 +75,7 @@ function famille(nom, sortes) {
     const q = sortes[i][1](rng, modele);
     if (!q) return null;
     q._signature = `${nom}${i}|${q._signature}`;
+    if (q.explication) q.explication = q.explication.replace(/J\.-C\.\./g, 'J.-C.');
     if (q.cleContenu) q.cleContenu = `${nom}${i}|${q.cleContenu}`;
     return q;
   };
@@ -1410,7 +1412,1749 @@ const population = famille('po', [
   }],
 ]);
 
+// =====================================================================================
+// ÉTAPE 2 — utilitaires communs (figures SVG)
+// =====================================================================================
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const r1 = (v) => Math.round(v * 10) / 10;
+const svgOuvrir = (w, h) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" font-family="Arial, sans-serif"><rect x="0" y="0" width="${w}" height="${h}" fill="#ffffff"/>`;
+// Pastille lettrée (repère sur une carte ou un dessin).
+const pastille = (x, y, l) => `<circle cx="${r1(x)}" cy="${r1(y)}" r="9.5" fill="#ffffff" stroke="#1c2333" stroke-width="1.6"/><text x="${r1(x)}" y="${r1(y + 4.6)}" font-size="13" font-weight="bold" text-anchor="middle" fill="#1c2333">${l}</text>`;
+const LETTRES = ['A', 'B', 'C', 'D', 'E', 'F'];
+const leLa = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+
+// =====================================================================================
+// 8. Planisphère (P6) : continents, océans, équateur, tropiques, cercles polaires
+// =====================================================================================
+// Fond de carte simplifié, projection équirectangulaire : x = longitude, y = latitude.
+const PX = (lon) => ((lon + 180) * 400) / 360;
+const PY = (lat) => 6 + ((90 - lat) * 200) / 180;
+const TERRES = [
+  // Amérique du Nord (avec l'Amérique centrale)
+  [[-168, 66], [-162, 70], [-156, 71.3], [-141, 69.7], [-128, 70], [-115, 68.5], [-97, 68], [-94, 71.5], [-87, 68], [-82, 66.5], [-87, 64], [-94, 60], [-93, 57.5], [-87, 55.5], [-82, 52.5], [-79, 55], [-77, 59], [-71, 61], [-64, 60], [-61, 56], [-56, 52], [-60, 47.5], [-66, 44.8], [-70, 41.8], [-74, 40.5], [-76, 35.5], [-81, 31], [-80, 25.3], [-82.5, 28], [-84, 30], [-90, 29.2], [-94, 29.6], [-97.3, 27], [-97.5, 22], [-95, 18.7], [-91, 18.7], [-90.4, 21], [-87, 21.5], [-88, 16], [-83.5, 15], [-83.7, 11], [-79.5, 9.5], [-77.4, 8.6], [-79, 8], [-80.5, 7.3], [-85.7, 10], [-87.5, 13], [-91.5, 14], [-96.5, 15.7], [-105.5, 20], [-105.7, 23], [-110, 24.2], [-112.5, 29], [-114.5, 31.5], [-117, 32.5], [-120.6, 34.5], [-123, 38], [-124.2, 42], [-124, 46.5], [-125, 50], [-130, 54.5], [-136, 58], [-140, 59.8], [-146, 61], [-150, 59.5], [-154, 58], [-158, 56.5], [-163, 54.8], [-158, 58.5], [-162, 60], [-165.5, 62], [-164.5, 64], [-168, 65.6]],
+  // Groenland
+  [[-73, 78.2], [-62, 81.8], [-40, 83.2], [-22, 82.5], [-18, 77], [-20, 71], [-24, 68.5], [-32, 68], [-40, 65], [-43.5, 60], [-48, 61], [-51.5, 64.5], [-53.5, 68], [-55, 71], [-58, 75.5], [-66, 76.5]],
+  // Archipel arctique canadien (simplifié)
+  [[-121, 71.5], [-114, 74], [-104, 76], [-96, 78], [-84, 80.5], [-70, 82.5], [-62, 82], [-72, 78.5], [-78, 76], [-77, 72.8], [-70, 70.5], [-62.5, 66.8], [-66, 62.5], [-74, 64], [-80, 64], [-82, 69.5], [-90, 70], [-98, 72], [-105, 69], [-116, 69.2]],
+  // Amérique du Sud
+  [[-77.4, 8.6], [-75.5, 10.5], [-72, 12.3], [-68, 10.6], [-62, 10.5], [-60, 8.3], [-56, 6], [-52, 4.8], [-50, 1], [-48, -1], [-44, -2.5], [-38.5, -4], [-35, -6], [-35, -9], [-37.5, -12.5], [-39, -15], [-39.5, -18.5], [-41, -22], [-44.5, -23.3], [-48.5, -26], [-48.7, -28.5], [-53, -33.5], [-58.4, -34.7], [-57, -38], [-62, -39], [-65, -41], [-64, -42.8], [-65.5, -45], [-67.5, -46.5], [-66, -48], [-68.3, -50.2], [-68.5, -52.3], [-66.5, -55], [-70, -55.5], [-74, -52.5], [-75.5, -48.5], [-74, -44], [-73.5, -39], [-71.7, -32], [-71.4, -26], [-70.2, -18.5], [-75, -15.5], [-77, -12], [-79.5, -7.5], [-81.2, -6], [-80.4, -3.5], [-80, -0.5], [-79.8, 1.5], [-78, 3.5], [-77.3, 6.5]],
+  // Eurasie
+  [[-9, 37], [-8.8, 41.5], [-9, 43], [-4, 43.5], [-1.5, 43.5], [-1.2, 46], [-2.5, 47.3], [-4.6, 48.3], [-1.5, 48.7], [-1.3, 49.7], [1.5, 50.5], [3, 51.2], [4.5, 52.5], [5.2, 53.4], [8.4, 53.6], [8.4, 55.6], [8.2, 57], [10.5, 57.7], [10.6, 56], [10.2, 54.5], [12, 54.2], [14.2, 53.9], [17, 54.7], [19.6, 54.4], [21, 55.6], [21.3, 57.2], [23.5, 57.2], [24.3, 59.4], [28.2, 59.7], [30.2, 59.9], [28.5, 60.5], [25.5, 60.3], [22.5, 60.2], [21.4, 61.3], [21.6, 63.2], [24.5, 64.9], [25.4, 65.4], [22.5, 65.8], [21.2, 64.5], [19.5, 63.5], [17.5, 62.3], [17.3, 60.6], [18.9, 59.7], [16.7, 57.5], [16, 56.2], [14.3, 55.5], [12.9, 55.4], [12.6, 56.6], [11.8, 58], [10.5, 59.3], [9.5, 59], [7.5, 58], [5.6, 58.8], [5, 60], [5, 62], [6.5, 62.6], [8.5, 63.4], [10, 64.2], [12.5, 66], [14, 67.5], [15.5, 68.6], [18, 69.6], [21, 70.2], [24, 71], [28, 71], [30.5, 70], [33, 69.4], [36.5, 69], [40.5, 67.7], [41.2, 66.3], [38, 66], [34.5, 66], [33, 64.5], [37, 64], [40, 64.6], [44, 65.8], [44, 68.4], [46, 67.8], [53.5, 68.3], [58, 68.8], [61, 69.8], [66, 69.4], [68.5, 68.2], [67, 71], [69, 72.9], [72.5, 72.8], [72.6, 70], [75, 72.3], [80, 72.5], [83, 70.3], [83.5, 71.5], [80.5, 73.6], [87, 74.6], [94, 76], [100, 76.5], [104, 77.7], [108, 76.7], [113, 75.9], [113.5, 73.6], [118, 73.5], [124, 73.6], [128.5, 72.5], [131, 70.8], [136, 71.6], [140, 72.4], [146, 72.3], [152, 71], [159, 70.9], [161, 69.6], [168, 69.9], [170.5, 70.1], [176, 69.8], [180, 68.8], [180, 65.5], [178.5, 64.5], [176, 62.6], [173.5, 61.7], [170.5, 60], [165.5, 59.9], [163.3, 59], [162, 57.7], [163, 56.2], [161.8, 54.9], [158, 52.2], [156.7, 51.1], [155.8, 53.6], [155.5, 56.5], [156.5, 57.8], [161, 60.4], [159.5, 61.7], [154, 59.4], [151.3, 59.5], [148.5, 59.3], [143, 59.4], [139.5, 57.9], [135.3, 54.7], [137.2, 53.9], [140.5, 53.3], [141.4, 52.2], [140.5, 48.3], [138, 46], [135.5, 43.9], [132, 43.2], [129.7, 41.1], [129.5, 37.2], [129.2, 35.2], [127, 34.6], [126.3, 34.5], [126.6, 37.5], [124.8, 39.6], [121.7, 39], [121.5, 40.8], [119.6, 39.9], [117.7, 38.9], [118.9, 37.4], [120.8, 37.8], [122.5, 36.9], [120.3, 36], [119.2, 34.8], [120.8, 32.6], [121.9, 30.9], [121.5, 28.6], [119.6, 25.8], [117, 23.6], [114, 22.3], [111, 21.4], [109.7, 21.5], [108.5, 21.7], [106.7, 20.2], [105.7, 18.7], [107.5, 16.3], [109.3, 13.3], [109, 11.4], [107, 10.4], [104.7, 8.7], [105, 10.3], [103, 11.2], [100.9, 12.7], [100.1, 13.4], [99.2, 10.8], [100.4, 7.4], [101.4, 6.8], [103.4, 4.8], [104.2, 1.4], [103.4, 1.3], [101.3, 2.8], [100.3, 5.1], [98.3, 8.4], [98.5, 13.4], [97.6, 16.4], [94.3, 16.1], [94.3, 19.3], [92.4, 20.7], [91.8, 22.3], [90.4, 22], [88.9, 21.7], [86.9, 21], [86.5, 20.1], [84.8, 19.2], [82.2, 16.6], [80.2, 15.1], [79.8, 10.3], [78.4, 8.9], [77.5, 8.1], [76.3, 9.9], [74.8, 12.8], [73.4, 16], [72.8, 19.3], [72.6, 21.4], [70.5, 20.8], [69, 22.3], [67.4, 23.9], [66.4, 25.4], [61.5, 25.1], [57.4, 25.7], [56.4, 27.1], [54.7, 26.5], [51.5, 27.9], [50.1, 30.1], [47.9, 30], [48.6, 28], [50.1, 26.7], [50.8, 24.8], [51.6, 24.2], [54, 24.1], [56, 26], [56.4, 24.9], [57.4, 23.9], [59.8, 22.5], [58.6, 20.4], [57.8, 19], [55.3, 17.2], [52.2, 15.9], [49.1, 14.5], [45, 12.8], [43.5, 12.6], [42.8, 15.2], [42.6, 16.8], [40.9, 19.5], [39.1, 21.3], [38.5, 23.7], [37, 25.8], [35.1, 28.1], [34.6, 28.1], [34.9, 29.5], [34.3, 31.2], [34.6, 31.5], [35.5, 33.1], [35.9, 35.4], [36.2, 36.7], [34.7, 36.8], [32.5, 36.1], [30.6, 36.7], [28.7, 36.7], [27.6, 37.5], [26.3, 38.2], [26.8, 39.6], [26.2, 40.8], [24.9, 40.9], [23.7, 40.7], [24, 40.1], [22.8, 40.3], [23.4, 39.2], [23.4, 38.2], [22.8, 37.3], [21.7, 36.8], [21.1, 38.3], [20.2, 39.6], [19.4, 41.7], [18.4, 42.5], [17.5, 43.1], [16, 43.5], [15, 44.6], [14.3, 45.3], [13.7, 45.7], [12.3, 45.3], [12.4, 44.2], [13.5, 43.6], [14.7, 42.1], [16.2, 41.7], [17.9, 40.6], [18.5, 40.2], [17.2, 39.4], [16.6, 38.4], [15.7, 38], [15.9, 39.5], [15.4, 40.1], [14, 40.8], [12.3, 41.7], [10.5, 42.9], [10.2, 43.9], [8.9, 44.4], [7.5, 43.8], [6.5, 43.1], [4.6, 43.4], [3.1, 43.1], [3.2, 41.9], [0.8, 41], [-0.3, 39.3], [0.2, 38.7], [-0.7, 37.6], [-2.1, 36.7], [-4.4, 36.7], [-5.6, 36], [-6.5, 36.9], [-7.4, 37.2], [-8.9, 37.1]],
+  // Îles britanniques, Islande
+  [[-5.7, 50.1], [-3.5, 50.4], [0.8, 50.8], [1.5, 51.3], [1.7, 52.7], [0.2, 53.4], [-0.5, 54.5], [-1.6, 55.6], [-2, 57.1], [-1.8, 57.6], [-3.4, 57.7], [-3, 58.6], [-5, 58.6], [-5.8, 57.5], [-6.2, 56.5], [-5.6, 55.3], [-4.8, 54.8], [-3.3, 54.9], [-3.4, 54.3], [-3, 53.4], [-4.6, 53.3], [-4.2, 52.3], [-5.2, 51.7], [-3, 51.5], [-5, 51]],
+  [[-6, 52.2], [-6.1, 53.5], [-5.6, 54.6], [-7.3, 55.3], [-8.4, 55.2], [-10, 54.2], [-9.9, 53.4], [-10.3, 51.9], [-8.5, 51.6]],
+  [[-24.3, 65.5], [-22.5, 66.4], [-18, 66.2], [-14.5, 66.4], [-13.6, 65.1], [-15, 64.3], [-18.7, 63.4], [-22.6, 63.8]],
+  // Japon, Sakhaline, Taïwan, Philippines, Sri Lanka
+  [[130.2, 31.3], [131.2, 31.4], [132, 33.4], [134.6, 34.2], [136.8, 34.3], [139.8, 34.9], [140.8, 35.7], [141, 38.3], [142, 39.6], [141.4, 41.4], [140, 40.7], [139.9, 39.4], [139, 37.9], [136.8, 37.2], [136, 35.7], [133, 35.5], [131, 34.6]],
+  [[140, 41.5], [141.2, 43.2], [141.7, 45.4], [143.8, 44.2], [145.5, 43.3], [143.3, 42], [141, 42.3]],
+  [[142, 46], [143.5, 49.5], [142.8, 54.3], [142.2, 51]],
+  [[120.1, 23], [121.9, 25], [121.6, 22]],
+  [[120.6, 18.5], [122.3, 18.5], [122.2, 16.3], [124, 12.6], [126.3, 9.2], [126.2, 6.3], [125.4, 5.6], [122, 6.9], [123.3, 9.8], [120.6, 14.2]],
+  [[79.8, 6.1], [79.9, 8.9], [80.4, 9.8], [81.9, 7.6], [81.6, 6.4]],
+  // Indonésie, Nouvelle-Guinée
+  [[95.3, 5.6], [97.5, 5.2], [100.4, 2.1], [104, -1.2], [106, -3.1], [105.9, -5.8], [104.5, -5.9], [102.3, -4], [100.4, -0.9], [98.5, 1.7]],
+  [[109.6, 1.9], [109.7, -1.2], [110.3, -3], [114.5, -3.5], [116.5, -2.5], [117.5, 0.8], [118.9, 1.2], [117.9, 4.1], [119.2, 5.4], [117, 7], [116, 6], [114.5, 4.5], [111, 1.6]],
+  [[105.2, -6.8], [108.6, -6.7], [110.5, -6.9], [112.6, -6.9], [114.6, -7.8], [113, -8.3], [108.5, -7.8], [106.4, -7.4]],
+  [[119.4, -5.4], [120.4, -5.5], [121.6, -4.2], [121.4, -2], [123.1, -0.7], [124.9, 1.6], [120.9, 1.3], [119.8, 0.1], [119.2, -3.5]],
+  [[131, -1.4], [134.1, -0.9], [138, -1.6], [141, -2.6], [144.6, -3.9], [147.6, -6.1], [148.1, -8], [150.5, -10.6], [147.1, -10.1], [146, -8.1], [143.4, -8.2], [141, -9.1], [138.9, -8.1], [137.6, -5.1], [134.7, -4.1], [132.4, -4], [132, -2.8]],
+  // Afrique
+  [[-17.1, 21], [-17.4, 14.7], [-16.7, 13.5], [-15.6, 11.5], [-13.2, 9], [-11.4, 6.8], [-7.5, 4.4], [-3.3, 5.1], [1.1, 6], [2.7, 6.3], [4.5, 6.3], [6, 4.3], [7.5, 4.5], [8.5, 4.5], [9.6, 3.6], [9.8, 1.1], [9.3, -0.7], [11.1, -3.8], [12.2, -5.8], [13.4, -9.3], [13.6, -12], [11.8, -15.8], [12.3, -19.1], [14.3, -22.5], [15.3, -27.3], [16.5, -28.6], [17.9, -31.3], [18.4, -34], [20, -34.8], [22.6, -33.9], [25.8, -33.7], [28.3, -32.2], [30.9, -29.9], [32.5, -28.5], [32.9, -26.2], [35.4, -24], [35.5, -21.2], [34.7, -19.8], [36.6, -18.6], [40.5, -15.4], [40.5, -10.6], [39.4, -7.1], [39.2, -4.7], [40.3, -2.6], [42.4, -0.6], [44.3, 1.5], [46.6, 3], [48.9, 6.7], [50.7, 9.8], [51.3, 11.9], [48.6, 11.3], [45.4, 10.6], [43.4, 11.6], [43.3, 12.6], [41.2, 14.8], [39.3, 15.9], [38.4, 18.1], [37.4, 21], [36.9, 22.1], [35.6, 23.9], [34.2, 26.2], [33.3, 28], [32.5, 29.9], [32.3, 31.2], [30.1, 31.5], [28.9, 30.9], [25.2, 31.6], [23.1, 32.6], [20.1, 32.2], [19.7, 30.5], [18, 30.8], [15.4, 32.3], [11.5, 33.1], [10.3, 34], [11.1, 35.2], [10.1, 37.1], [8.4, 36.9], [5.3, 36.7], [1.5, 36.6], [-1.2, 35.4], [-2.2, 35.2], [-5.4, 35.9], [-6.2, 35.1], [-6.9, 33.6], [-9.3, 32.6], [-9.7, 30.3], [-11.2, 28.2], [-13.2, 27.6], [-14.6, 25.4], [-16.3, 23.4], [-16.9, 21.7]],
+  // Madagascar
+  [[49.3, -12], [50.4, -15.5], [49.5, -17.1], [48, -22.6], [47.1, -24.9], [45.4, -25.6], [43.9, -24.6], [43.3, -22.1], [44.5, -19.9], [44, -17.3], [46.3, -15.8], [48, -13.6]],
+  // Australie, Tasmanie, Nouvelle-Zélande
+  [[113.4, -22], [113.8, -26.5], [114.9, -29.5], [115, -33.5], [116.7, -35], [119.9, -34], [123.5, -33.9], [126.2, -32.3], [129, -31.7], [131.3, -31.5], [134.2, -32.6], [135.9, -34.8], [137.7, -33], [137.8, -35.6], [139.6, -36.6], [140.6, -38], [143.6, -38.8], [146.3, -39.1], [148.3, -37.8], [150, -37.4], [150.9, -34.4], [152.9, -31.1], [153.6, -28.2], [153.1, -25], [150.9, -22.6], [149.2, -21.1], [147.4, -19.5], [146.1, -18.2], [145.3, -15.6], [145.2, -14.9], [143.6, -14], [142.5, -10.7], [141.6, -13.2], [141.6, -16.5], [140.6, -17.6], [139.3, -17.4], [137.3, -15.8], [135.4, -14.7], [136.9, -12.3], [134.7, -11.9], [132.6, -11.6], [131.3, -12.1], [130.2, -13.1], [129.5, -14.9], [127.7, -14.1], [125.1, -14.7], [123.6, -16.4], [122.3, -17.6], [121.1, -19.4], [119, -20], [117.2, -20.6], [114.7, -21.8]],
+  [[144.7, -40.7], [146.3, -41.1], [148.3, -40.9], [148.3, -42.2], [147.4, -43.2], [146, -43.6], [145.2, -42.3]],
+  [[172.6, -34.4], [174.3, -35.3], [175.9, -37.5], [178.5, -37.7], [177, -39.4], [176, -41.3], [174.6, -41.3], [174.6, -39.9], [173.8, -39.1], [174.6, -38], [174.4, -36.4]],
+  [[172.7, -40.5], [174.2, -41.7], [173.2, -43.2], [171.4, -44.4], [170.6, -45.9], [169.3, -46.6], [166.5, -46], [168.2, -44], [170.5, -43], [171.8, -41.5]],
+  // Antarctique
+  [[-180, -90], [-180, -78], [-160, -78.5], [-150, -77], [-140, -75.3], [-125, -73.8], [-110, -74.3], [-100, -73.5], [-90, -73], [-80, -73.3], [-75, -71], [-68, -67.5], [-63, -64.6], [-57, -63.3], [-58.5, -65.2], [-61, -68.5], [-62, -72], [-61, -74.7], [-55, -77.5], [-45, -78.3], [-35, -77.8], [-26, -76], [-18, -73], [-10, -71.3], [0, -70.3], [10, -70], [20, -70], [30, -69.6], [40, -69], [50, -67], [60, -67.2], [70, -68.5], [75, -69.5], [80, -67.5], [90, -66.5], [100, -65.8], [110, -66], [120, -66.8], [130, -66.2], [140, -66.8], [150, -68.6], [160, -70.5], [165, -71.5], [170, -72], [167, -76], [165, -78], [172, -78.5], [180, -78], [180, -90]],
+];
+// Mers fermées tracées en « eau » par-dessus les terres.
+const MERS = [
+  // mer Noire, mer Caspienne
+  [[28, 41.3], [28.5, 43.4], [30.7, 46.5], [33.5, 44.6], [36.6, 45.3], [38.2, 47.1], [39.7, 47], [38.3, 44.6], [41.6, 41.5], [36.5, 41.3], [33.3, 42], [31.3, 41.2]],
+  [[47, 45], [50.3, 46.9], [53.2, 46.6], [52.7, 45.2], [51.3, 44.5], [52.7, 42], [54.2, 40.5], [53.1, 39.3], [53.9, 37.3], [51.5, 36.8], [49.2, 37.6], [49.5, 40.2], [47.8, 41.9]],
+  // mer Baltique (golfe de Botnie) déjà découpée ; mer Rouge et golfe Persique : ouverts dans le tracé.
+];
+const CONTINENTS_P = [
+  { id: 'eur', nom: 'l\'Europe', pos: [[16, 50]] },
+  { id: 'asi', nom: 'l\'Asie', pos: [[95, 50], [80, 60]] },
+  { id: 'afr', nom: 'l\'Afrique', pos: [[20, 8], [24, 18]] },
+  { id: 'amn', nom: 'l\'Amérique du Nord', pos: [[-100, 47], [-108, 58]] },
+  { id: 'ams', nom: 'l\'Amérique du Sud', pos: [[-58, -10], [-63, -22]] },
+  { id: 'oce', nom: 'l\'Océanie', pos: [[125, -26]] },
+  { id: 'ant', nom: 'l\'Antarctique', pos: [[20, -80], [100, -79]] },
+];
+const OCEANS_P = [
+  { id: 'atl', nom: 'l\'océan Atlantique', pos: [[-40, 30], [-18, -22]] },
+  { id: 'pac', nom: 'l\'océan Pacifique', pos: [[-140, 8], [-120, -30], [165, 18]] },
+  { id: 'ind', nom: 'l\'océan Indien', pos: [[75, -22], [88, -12]] },
+  { id: 'arc', nom: 'l\'océan Arctique', pos: [[5, 81], [-160, 79]] },
+  { id: 'aus', nom: 'l\'océan Austral (ou océan Antarctique)', court: 'l\'océan Austral (ou Antarctique)', pos: [[-120, -62], [60, -59]] },
+];
+const LIGNES_P = [
+  { id: 'equ', nom: 'l\'équateur', lat: 0, def: 'partage la Terre en deux hémisphères, Nord et Sud', coul: '#b3261e' },
+  { id: 'can', nom: 'le tropique du Cancer', lat: 23.44, def: 'est au nord de l\'équateur et limite la zone chaude au nord', coul: '#c26a00' },
+  { id: 'cap', nom: 'le tropique du Capricorne', lat: -23.44, def: 'est au sud de l\'équateur et limite la zone chaude au sud', coul: '#c26a00' },
+  { id: 'cpn', nom: 'le cercle polaire arctique', lat: 66.56, def: 'limite la zone froide du Nord', coul: '#1f5fa8' },
+  { id: 'cps', nom: 'le cercle polaire antarctique', lat: -66.56, def: 'limite la zone froide du Sud', coul: '#1f5fa8' },
+  { id: 'gre', nom: 'le méridien de Greenwich', lon: 0, def: 'passe par Londres et partage la Terre en hémisphère Est et hémisphère Ouest', coul: '#5b6475' },
+];
+const cheminP = (pts) => `M${pts.map(([lo, la]) => `${r1(PX(lo))} ${r1(PY(la))}`).join('L')}Z`;
+const FOND_PLANISPHERE = (() => {
+  const s = [];
+  s.push('<rect x="0" y="6" width="400" height="200" fill="#d6ebf7" stroke="#1c2333" stroke-width="1"/>');
+  s.push(`<path d="${TERRES.map(cheminP).join('')}" fill="#efe3c4" stroke="#1c2333" stroke-width="0.7" stroke-linejoin="round"/>`);
+  s.push(`<path d="${MERS.map(cheminP).join('')}" fill="#d6ebf7" stroke="#1c2333" stroke-width="0.6"/>`);
+  return s.join('');
+})();
+
+// cibles = [{ cat: 'cont' | 'ocean' | 'ligne', obj, lettre, pos? }]
+function svgPlanisphere(cibles) {
+  const s = [svgOuvrir(400, 214), FOND_PLANISPHERE];
+  for (const c of cibles.filter((x) => x.cat === 'ligne')) {
+    const l = c.obj;
+    if (l.lon !== undefined) s.push(`<line x1="${r1(PX(l.lon))}" y1="6" x2="${r1(PX(l.lon))}" y2="206" stroke="${l.coul}" stroke-width="1.6" stroke-dasharray="6 3"/>`);
+    else s.push(`<line x1="0" y1="${r1(PY(l.lat))}" x2="400" y2="${r1(PY(l.lat))}" stroke="${l.coul}" stroke-width="${l.id === 'equ' ? 2 : 1.6}" stroke-dasharray="${l.id === 'equ' ? '' : '6 3'}"/>`);
+  }
+  for (const c of cibles) {
+    if (c.cat === 'ligne') {
+      const l = c.obj;
+      s.push(l.lon !== undefined ? pastille(PX(l.lon), PY(-48), c.lettre) : pastille(13, PY(l.lat), c.lettre));
+    } else s.push(pastille(PX(c.pos[0]), PY(c.pos[1]), c.lettre));
+  }
+  s.push('</svg>');
+  return s.join('');
+}
+
+const NOMS_LIGNES_EXPL = 'Repères : l\'équateur (0°) partage la Terre en hémisphère Nord et hémisphère Sud ; le tropique du Cancer est au nord de l\'équateur, le tropique du Capricorne au sud ; les cercles polaires (arctique au nord, antarctique au sud) entourent les zones froides.';
+const QUESTIONS_GLOBE_SANS_CARTE = [
+  { q: 'Quelle ligne imaginaire partage la Terre en hémisphère Nord et hémisphère Sud ?', ok: 'L\'équateur',
+    ko: ['Le tropique du Cancer', 'Le tropique du Capricorne', 'Le cercle polaire arctique', 'Le méridien de Greenwich'],
+    expl: 'L\'équateur (latitude 0°) fait le tour de la Terre à égale distance des deux pôles : il la partage en hémisphère Nord et hémisphère Sud.' },
+  { q: 'Entre quelles lignes se trouve la zone chaude de la Terre ?', ok: 'Entre le tropique du Cancer et le tropique du Capricorne',
+    ko: ['Entre l\'équateur et le cercle polaire arctique', 'Entre les deux cercles polaires', 'Entre le cercle polaire arctique et le pôle Nord'],
+    expl: 'La zone chaude s\'étend de part et d\'autre de l\'équateur, entre le tropique du Cancer (au nord) et le tropique du Capricorne (au sud).' },
+  { q: 'Quel tropique se trouve dans l\'hémisphère Sud ?', ok: 'Le tropique du Capricorne',
+    ko: ['Le tropique du Cancer', 'Le cercle polaire arctique', 'L\'équateur'],
+    expl: 'Le tropique du Capricorne est au sud de l\'équateur ; le tropique du Cancer est au nord.' },
+  { q: 'Quel tropique se trouve dans l\'hémisphère Nord ?', ok: 'Le tropique du Cancer',
+    ko: ['Le tropique du Capricorne', 'Le cercle polaire antarctique', 'L\'équateur'],
+    expl: 'Le tropique du Cancer est au nord de l\'équateur (il traverse le Sahara et le Mexique) ; le tropique du Capricorne est au sud.' },
+  { q: 'Quelle ligne entoure la zone froide autour du pôle Nord ?', ok: 'Le cercle polaire arctique',
+    ko: ['Le cercle polaire antarctique', 'Le tropique du Cancer', 'L\'équateur'],
+    expl: 'Au nord du cercle polaire arctique, c\'est la zone froide du Nord, autour du pôle Nord et de l\'océan Arctique.' },
+  { q: 'Combien de continents compte-t-on sur la Terre ?', ok: '6 : Europe, Asie, Afrique, Amérique, Océanie et Antarctique',
+    ko: ['4 : Europe, Asie, Afrique et Amérique', '5 : Europe, Asie, Afrique, Amérique et Océanie', '7 : Europe, Asie, Afrique, Amérique, Océanie, Antarctique et Groenland'],
+    expl: 'On compte 6 continents : l\'Europe, l\'Asie, l\'Afrique, l\'Amérique (du Nord et du Sud), l\'Océanie et l\'Antarctique. Le Groenland est une île.' },
+  { q: 'Quels sont les deux océans qui entourent les pôles ?', ok: 'L\'océan Arctique (au nord) et l\'océan Austral (au sud)',
+    ko: ['L\'océan Atlantique et l\'océan Pacifique', 'L\'océan Indien et l\'océan Arctique', 'L\'océan Pacifique et l\'océan Austral'],
+    expl: 'L\'océan Arctique entoure le pôle Nord ; l\'océan Austral, aussi appelé océan Antarctique, entoure le continent Antarctique et le pôle Sud.' },
+];
+
+function nomCible(c) { return c.obj.nom; }
+const CAT_TXT = { cont: 'continent', ocean: 'océan', ligne: 'ligne' };
+
+const planisphere = famille('pl', [
+  // Lettre → nom (continent, océan ou ligne)
+  [6, (rng) => {
+    const cibles = tirerCibles(rng);
+    const c = rng.pick(cibles);
+    const pool = c.cat === 'cont' ? CONTINENTS_P : c.cat === 'ocean' ? OCEANS_P : LIGNES_P;
+    const q = qcm(rng, maj(c.obj.nom), pool.filter((x) => x !== c.obj).map((x) => maj(x.nom)));
+    const quoi = c.cat === 'cont' ? 'Quel continent' : c.cat === 'ocean' ? 'Quel océan' : 'Quelle ligne';
+    return {
+      ...q, figure: svgPlanisphere(cibles),
+      enonce: `Observe ce planisphère. ${quoi} est ${c.cat === 'ligne' ? 'désignée' : 'désigné'} par la lettre ${c.lettre} ?`,
+      explication: `La lettre ${c.lettre} désigne ${c.obj.nom}${c.cat === 'ligne' ? `, qui ${c.obj.def}` : ''}. ${c.cat === 'ligne' ? NOMS_LIGNES_EXPL : c.cat === 'ocean' ? 'Les 5 océans : Pacifique (le plus grand), Atlantique, Indien, Arctique (autour du pôle Nord) et Austral, aussi appelé océan Antarctique (autour de l\'Antarctique).' : 'Les 6 continents : Europe, Asie, Afrique, Amérique (du Nord et du Sud), Océanie et Antarctique.'}`,
+      _signature: `nom|${sigCibles(cibles)}|${c.lettre}|${cle(q.choix)}`,
+      cleContenu: `nom|${sigCibles(cibles)}|${c.lettre}`,
+      difficulte: c.cat === 'ligne' ? 2 : 1,
+    };
+  }],
+  // Nom → lettre
+  [4, (rng) => {
+    const cibles = tirerCibles(rng);
+    const c = rng.pick(cibles);
+    const choix = cibles.map((x) => x.lettre).sort();
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(c.lettre), figure: svgPlanisphere(cibles),
+      enonce: `Observe ce planisphère. Quelle lettre désigne ${c.obj.court ?? c.obj.nom} ?`,
+      explication: `${maj(c.obj.nom)} : lettre ${c.lettre}. ${cibles.filter((x) => x !== c).map((x) => `${x.lettre} = ${x.obj.court ?? x.obj.nom}`).join(' ; ')}.`,
+      _signature: `let|${sigCibles(cibles)}|${c.obj.id}`,
+      cleContenu: `let|${sigCibles(cibles)}|${c.obj.id}`,
+      difficulte: c.cat === 'ligne' ? 2 : 1,
+    };
+  }],
+  // Grille : chaque lettre → son nom (une seule catégorie)
+  [3, (rng) => {
+    const cat = rng.pick(['cont', 'cont', 'ocean', 'ligne']);
+    const pool = cat === 'cont' ? CONTINENTS_P : cat === 'ocean' ? OCEANS_P : LIGNES_P.filter((l) => l.id !== 'gre');
+    const k = Math.min(pool.length, rng.int(3, 4));
+    const objs = rng.shuffle(pool).slice(0, k);
+    const lettres = rng.shuffle(LETTRES).slice(0, k).sort();
+    const cibles = objs.map((obj, i) => ({ cat, obj, lettre: lettres[i], pos: obj.pos ? rng.pick(obj.pos) : null }));
+    const colonnes = rng.shuffle(objs);
+    const items = cibles.map((c) => ({ t: `Lettre ${c.lettre}`, c: colonnes.indexOf(c.obj) }));
+    return {
+      ...grilleQ(items, colonnes.map((o) => maj(o.court ?? o.nom))),
+      figure: svgPlanisphere(cibles),
+      enonce: `Observe ce planisphère. Associe chaque lettre ${cat === 'cont' ? 'au continent' : cat === 'ocean' ? 'à l\'océan' : 'à la ligne'} qu'elle désigne.`,
+      explication: `${cibles.map((c) => `${c.lettre} : ${c.obj.court ?? c.obj.nom}`).join(' ; ')}.${cat === 'ligne' ? ` ${NOMS_LIGNES_EXPL}` : ''}`,
+      _signature: `gr|${sigCibles(cibles)}|${colonnes.map((o) => o.id).join(',')}`,
+      cleContenu: `gr|${sigCibles(cibles)}`,
+      difficulte: 2,
+    };
+  }],
+  // Vrai ou faux sur la carte
+  [2, (rng) => {
+    const cibles = tirerCibles(rng);
+    const c = rng.pick(cibles);
+    const vrai = rng.next() < 0.5;
+    const pool = c.cat === 'cont' ? CONTINENTS_P : c.cat === 'ocean' ? OCEANS_P : LIGNES_P;
+    const affirme = vrai ? c.obj : rng.pick(pool.filter((x) => x !== c.obj));
+    return {
+      type: 'vrai_faux', figure: svgPlanisphere(cibles),
+      enonce: `Observe ce planisphère. Vrai ou faux ? La lettre ${c.lettre} désigne ${affirme.court ?? affirme.nom}.`,
+      reponse: vrai,
+      explication: `La lettre ${c.lettre} désigne ${c.obj.nom}${c.cat === 'ligne' ? `, qui ${c.obj.def}` : ''}.`,
+      _signature: `vf|${sigCibles(cibles)}|${c.lettre}|${affirme.id}`,
+      cleContenu: `vf|${sigCibles(cibles)}|${c.lettre}|${affirme.id}`,
+      difficulte: 1,
+    };
+  }],
+  // Hémisphère d'un repère (lettre sur un continent entièrement d'un côté de l'équateur)
+  [2, (rng) => {
+    // Seulement des continents entièrement d'un côté de l'équateur (l'Asie et l'Océanie ont des îles des deux côtés).
+    const cont = rng.pick(CONTINENTS_P.filter((x) => ['eur', 'amn', 'ant'].includes(x.id)));
+    const autres = tirerCibles(rng, 2).filter((x) => x.obj !== cont && x.cat !== 'cont');
+    const lettre = rng.pick(LETTRES.filter((l) => !autres.some((x) => x.lettre === l)));
+    const c = { cat: 'cont', obj: cont, lettre, pos: rng.pick(cont.pos) };
+    const equ = { cat: 'ligne', obj: LIGNES_P[0], lettre: rng.pick(LETTRES.filter((l) => l !== lettre && !autres.some((x) => x.lettre === l))) };
+    const cibles = [c, equ, ...autres.filter((x) => x.obj.id !== 'equ')];
+    const nord = cont.id !== 'ant';
+    const choix = ['Dans l\'hémisphère Nord', 'Dans l\'hémisphère Sud'];
+    return {
+      type: 'qcm', choix, reponse: nord ? 0 : 1, figure: svgPlanisphere(cibles),
+      enonce: `Observe ce planisphère. La lettre ${equ.lettre} désigne l'équateur. Dans quel hémisphère se trouve le continent désigné par la lettre ${lettre} ?`,
+      explication: `La lettre ${lettre} désigne ${cont.nom}. Ce continent est ${nord ? 'au nord' : 'au sud'} de l'équateur : dans l'hémisphère ${nord ? 'Nord' : 'Sud'}. (L'Afrique et l'Amérique du Sud, elles, sont traversées par l'équateur : elles sont en partie dans chaque hémisphère.)`,
+      _signature: `hem|${sigCibles(cibles)}`,
+      cleContenu: `hem|${sigCibles(cibles)}`,
+      difficulte: 2,
+    };
+  }],
+  [2, (rng) => ({ ...depuisBanque(rng, QUESTIONS_GLOBE_SANS_CARTE, 'gl'), difficulte: 2 })],
+]);
+
+// 3 à 5 repères de catégories mêlées, lettres distinctes, sans deux repères au même endroit.
+function tirerCibles(rng, k = rng.int(3, 5)) {
+  const objs = [];
+  const pool = rng.shuffle([
+    ...CONTINENTS_P.map((obj) => ({ cat: 'cont', obj })),
+    ...OCEANS_P.map((obj) => ({ cat: 'ocean', obj })),
+    ...LIGNES_P.map((obj) => ({ cat: 'ligne', obj })),
+  ]);
+  let lignes = 0;
+  for (const x of pool) {
+    if (x.cat === 'ligne' && lignes >= 2) continue;
+    if (x.cat === 'ligne') lignes++;
+    objs.push(x);
+    if (objs.length === k) break;
+  }
+  const lettres = rng.shuffle(LETTRES).slice(0, k);
+  return objs.map((x, i) => ({ ...x, lettre: lettres[i], pos: x.obj.pos ? rng.pick(x.obj.pos) : null }));
+}
+const sigCibles = (cibles) => cibles.map((c) => `${c.lettre}${c.obj.id}${c.pos ? c.pos.join('/') : ''}`).sort().join(',');
+
+// =====================================================================================
+// 9. Millénaires, siècles, an 1 (frise graduée en millénaires, durées)
+// =====================================================================================
+// Une année est un entier non nul : négatif = avant J.-C. (il n'y a pas d'an 0).
+const anTxt = (y) => (y < 0 ? `${-y} av. J.-C.` : y === 1 ? 'l\'an 1' : String(y));
+const anTxtC = (y) => (y < 0 ? `${-y} av. J.-C.` : y === 1 ? 'an 1' : String(y));
+const rangDe = (y) => Math.floor((Math.abs(y) - 1) / 1000) + 1; // millénaire (dans son ère)
+const rangSiecle = (y) => Math.floor((Math.abs(y) - 1) / 100) + 1;
+const ordR = (k) => (k === 1 ? 'Ier' : `${romain(k)}e`);
+const nomMil = (k, av) => `${ordR(k)} millénaire ${av ? 'av.' : 'apr.'} J.-C.`;
+const nomSie = (k, av) => `${ordR(k)} siècle ${av ? 'av.' : 'apr.'} J.-C.`;
+const bornesMil = (k, av) => (av ? `de ${k * 1000} av. J.-C. à ${(k - 1) * 1000 + 1} av. J.-C.` : `de ${k === 1 ? 'l\'an 1' : (k - 1) * 1000 + 1} à ${k * 1000}`);
+const bornesSie = (k, av) => (av ? `de ${k * 100} av. J.-C. à ${(k - 1) * 100 + 1} av. J.-C.` : `de ${k === 1 ? 'l\'an 1' : (k - 1) * 100 + 1} à ${k * 100}`);
+
+// Première ou dernière année d'un siècle (p = 100) ou d'un millénaire (p = 1000), sinon ''.
+// Avant J.-C., on compte à rebours : 1000 av. J.-C. ouvre le Ier millénaire av. J.-C., 1001 av. J.-C. clôt le IIe.
+function extremite(y, p) {
+  const a = Math.abs(y);
+  if (a % p === 0) return y < 0 ? 'première' : 'dernière';
+  if (a % p === 1) return y < 0 ? 'dernière' : 'première';
+  return '';
+}
+function tirerAnnee(rng) {
+  const r = rng.next();
+  if (r < 0.12) return rng.pick([1000, 2000, 1001, 2001, 1, 100, 101, 1900, 1901]);
+  if (r < 0.62) return rng.int(2, 2026);
+  if (r < 0.7) return -rng.pick([1000, 2000, 3000, 1001, 2001, 3001, 100, 101, 1]);
+  return -rng.int(2, 5000);
+}
+
+// Frise de 4000 av. J.-C. à 2000, graduée en millénaires (55 unités par millénaire).
+const FX = (y) => 34 + ((y < 0 ? y : y - 1) + 4000) * 0.055;
+function svgFrise(reperes) {
+  const s = [svgOuvrir(400, 128)];
+  s.push('<line x1="24" y1="70" x2="386" y2="70" stroke="#1c2333" stroke-width="2"/><path d="M394 70 L384 65 L384 75 Z" fill="#1c2333"/>');
+  for (let k = 0; k <= 6; k++) {
+    const x = 34 + k * 55; const y = k < 4 ? -(4 - k) * 1000 : k === 4 ? 1 : (k - 4) * 1000;
+    s.push(`<line x1="${x}" y1="62" x2="${x}" y2="78" stroke="#1c2333" stroke-width="2"/>`);
+    if (y < 0) s.push(`<text x="${x}" y="94" font-size="12" text-anchor="middle" fill="#1c2333">${-y}</text><text x="${x}" y="108" font-size="12" text-anchor="middle" fill="#1c2333">av. J.-C.</text>`);
+    else s.push(`<text x="${x}" y="94" font-size="12" font-weight="${y === 1 ? 'bold' : 'normal'}" text-anchor="middle" fill="#1c2333">${y === 1 ? 'an 1' : y}</text>`);
+  }
+  for (const r of reperes) {
+    const x = r1(r.x);
+    s.push(`<line x1="${x}" y1="44" x2="${x}" y2="70" stroke="#b3261e" stroke-width="1.8"/><circle cx="${x}" cy="70" r="3.2" fill="#b3261e"/>`);
+    s.push(pastille(x, 32, r.lettre));
+  }
+  s.push('</svg>');
+  return s.join('');
+}
+const MIL_FRISE = [
+  { k: 4, av: true }, { k: 3, av: true }, { k: 2, av: true }, { k: 1, av: true }, { k: 1, av: false }, { k: 2, av: false },
+];
+const GRAD_FRISE = [-4000, -3000, -2000, -1000, 1, 1000, 2000];
+const FAITS_FRISE = [
+  { t: 'L\'invention de l\'écriture (vers 3500 av. J.-C.)', y: -3500 },
+  { t: 'Le début de l\'ère chrétienne (an 1)', y: 1 },
+  { t: 'La chute de l\'Empire romain d\'Occident (476)', y: 476 },
+  { t: 'L\'arrivée de Christophe Colomb aux Amériques (1492)', y: 1492, groupe: 'tard' },
+  { t: 'La Révolution française (1789)', y: 1789, groupe: 'tard' },
+];
+const AN1 = [
+  { q: 'Quelle année vient juste après l\'an 1 av. J.-C. ?', ok: 'L\'an 1 apr. J.-C.', ko: ['L\'an 0', 'L\'an 2 av. J.-C.', 'L\'an 2 apr. J.-C.'],
+    expl: 'Il n\'y a pas d\'an 0 : on passe directement de l\'an 1 av. J.-C. à l\'an 1 apr. J.-C.' },
+  { q: 'Que marque l\'an 1 dans notre calendrier ?', ok: 'Le début de l\'ère chrétienne, du Ier siècle et du Ier millénaire apr. J.-C.',
+    ko: ['La fin de la Préhistoire', 'La chute de l\'Empire romain d\'Occident', 'Le début du Moyen Âge'],
+    expl: 'L\'an 1 est le début de l\'ère chrétienne : c\'est la première année du Ier siècle et du Ier millénaire après J.-C. La Préhistoire se termine vers 3500 av. J.-C., le Moyen Âge commence en 476.' },
+  { q: 'L\'an 1 est la première année de quel siècle ?', ok: 'Du Ier siècle apr. J.-C.', ko: ['Du Ier siècle av. J.-C.', 'Du IIe siècle apr. J.-C.', 'Du siècle 0'],
+    expl: 'Le Ier siècle apr. J.-C. va de l\'an 1 à l\'an 100. Il n\'y a ni an 0 ni siècle 0.' },
+  { q: 'L\'an 1 est la première année de quel millénaire ?', ok: 'Du Ier millénaire apr. J.-C.', ko: ['Du Ier millénaire av. J.-C.', 'Du IIe millénaire apr. J.-C.', 'Du millénaire 0'],
+    expl: 'Le Ier millénaire apr. J.-C. va de l\'an 1 à l\'an 1000.' },
+  { q: 'Quelle est la dernière année du Ier siècle av. J.-C. ?', ok: 'L\'an 1 av. J.-C.', ko: ['L\'an 0', 'L\'an 100 av. J.-C.', 'L\'an 1 apr. J.-C.'],
+    expl: 'Le Ier siècle av. J.-C. va de 100 av. J.-C. à 1 av. J.-C. (avant J.-C., on compte à rebours). L\'année suivante est l\'an 1 apr. J.-C.' },
+  { q: 'Pendant quelle période conventionnelle se situe l\'an 1 ?', ok: 'L\'Antiquité', ko: ['La Préhistoire', 'Le Moyen Âge', 'Les Temps modernes'],
+    expl: 'L\'Antiquité va de l\'invention de l\'écriture (vers 3500 av. J.-C.) à la chute de l\'Empire romain d\'Occident (476) : l\'an 1 est en pleine Antiquité.' },
+];
+const VF_AN1 = [
+  { t: 'Dans notre calendrier, l\'an 0 n\'existe pas.', v: true, expl: 'On passe directement de l\'an 1 av. J.-C. à l\'an 1 apr. J.-C.' },
+  { t: 'Un millénaire dure 1 000 ans, soit 10 siècles.', v: true, expl: '1 siècle = 100 ans ; 1 millénaire = 1 000 ans = 10 siècles.' },
+  { t: 'Un millénaire dure 100 ans.', v: false, expl: 'C\'est un siècle qui dure 100 ans. Un millénaire dure 1 000 ans (10 siècles).' },
+  { t: 'L\'an 2000 est la dernière année du IIe millénaire.', v: true, expl: 'Le IIe millénaire va de 1001 à 2000 ; le IIIe millénaire a commencé le 1er janvier 2001.' },
+  { t: 'L\'an 2000 est la première année du IIIe millénaire.', v: false, expl: 'Le IIIe millénaire commence en 2001. L\'an 2000 est la dernière année du IIe millénaire (1001-2000).' },
+  { t: 'Avant J.-C., plus le nombre de l\'année est grand, plus l\'année est ancienne.', v: true, expl: 'Avant J.-C., on compte à rebours : 3000 av. J.-C. est plus ancien que 500 av. J.-C.' },
+  { t: 'L\'an 1 marque le début de l\'ère chrétienne.', v: true, expl: 'Notre calendrier compte les années à partir de l\'an 1, début de l\'ère chrétienne.' },
+  { t: 'Le IVe millénaire av. J.-C. est plus récent que le IIe millénaire av. J.-C.', v: false, expl: 'Avant J.-C., on compte à rebours : le IVe millénaire av. J.-C. (4000 à 3001 av. J.-C.) est plus ancien que le IIe (2000 à 1001 av. J.-C.).' },
+];
+
+function choixVoisins(rng, bonneK, bonneAv, nomF, maxK) {
+  const cands = [[bonneK - 1, bonneAv], [bonneK + 1, bonneAv], [bonneK, !bonneAv], [bonneK + 2, bonneAv], [bonneK - 2, bonneAv]]
+    .filter(([k, av]) => k >= 1 && k <= (av ? maxK : bonneAv ? maxK : Math.max(maxK, bonneK + 2)));
+  const faux = rng.shuffle(cands).slice(0, 3).map(([k, av]) => nomF(k, av));
+  const bonne = nomF(bonneK, bonneAv);
+  const choix = rng.shuffle([bonne, ...faux.filter((f) => f !== bonne)]);
+  return { type: 'qcm', choix, reponse: choix.indexOf(bonne) };
+}
+
+const millenaires = famille('mil', [
+  // Année → millénaire
+  [4, (rng) => {
+    const y = tirerAnnee(rng); const av = y < 0; const k = rangDe(y);
+    const q = choixVoisins(rng, k, av, nomMil, av ? 5 : 3);
+    const piege = extremite(y, 1000);
+    return {
+      ...q,
+      enonce: `Dans quel millénaire se situe l'année ${anTxtC(y)} ?`,
+      explication: `Le ${nomMil(k, av)} va ${bornesMil(k, av)}${av ? ' (avant J.-C., on compte à rebours)' : ''}.${piege ? ` Attention : ${anTxtC(y)} est la ${piege} année de ce millénaire.` : ''}${y === 1 ? ' L\'an 1 est le début de l\'ère chrétienne.' : ''}`,
+      _signature: `ym|${y}|${cle(q.choix)}`, cleContenu: `ym|${y}`,
+      difficulte: av || piege ? 3 : 2,
+    };
+  }],
+  // Année → siècle (aussi avant J.-C.)
+  [3, (rng) => {
+    // Avant J.-C., on reste dans le Ier millénaire (un « XXXIVe siècle av. J.-C. » n'apporte rien à 11 ans).
+    let y = tirerAnnee(rng); if (y < -1001) y = -rng.int(1, 1000);
+    const av = y < 0; const k = rangSiecle(y);
+    const q = choixVoisins(rng, k, av, nomSie, av ? 11 : 21);
+    const piege = extremite(y, 100);
+    return {
+      ...q,
+      enonce: `Dans quel siècle se situe l'année ${anTxtC(y)} ?`,
+      explication: `Le ${nomSie(k, av)} va ${bornesSie(k, av)}${av ? ' (avant J.-C., on compte à rebours)' : ''}.${piege ? ` Attention : ${anTxtC(y)} est la ${piege} année de ce siècle.` : ''}`,
+      _signature: `ys|${y}|${cle(q.choix)}`, cleContenu: `ys|${y}`,
+      difficulte: av || piege ? 3 : 2,
+    };
+  }],
+  // Millénaire → bornes
+  [2, (rng) => {
+    const av = rng.next() < 0.4; const k = av ? rng.int(1, 5) : rng.int(1, 3);
+    const bonne = maj(bornesMil(k, av));
+    const faux = av
+      ? [`De ${(k - 1) * 1000 + 1} av. J.-C. à ${k * 1000} av. J.-C.`, `De ${(k + 1) * 1000} av. J.-C. à ${k * 1000 + 1} av. J.-C.`,
+        k > 1 ? `De ${k * 1000 - 1} av. J.-C. à ${(k - 1) * 1000} av. J.-C.` : 'De 1000 av. J.-C. à l\'an 1000 apr. J.-C.']
+      : k === 1
+        ? ['De 1 à 999', 'De 1001 à 2000', 'De 100 à 1000']
+        : [`De ${(k - 1) * 1000} à ${k * 1000 - 1}`, `De ${k * 1000 + 1} à ${(k + 1) * 1000}`, `De ${(k - 2) * 1000 + 1 === 1 ? 'l\'an 1' : (k - 2) * 1000 + 1} à ${(k - 1) * 1000}`];
+    const q = qcm(rng, bonne, faux);
+    return {
+      ...q,
+      enonce: `Quelles sont la première et la dernière année du ${nomMil(k, av)} ?`,
+      explication: `Le ${nomMil(k, av)} va ${bornesMil(k, av)}. Un millénaire compte 1 000 ans et, comme il n'y a pas d'an 0, ${av ? 'il se termine par une année en « 001 » avant J.-C.' : 'il commence par une année en « 001 » (ou l\'an 1) et se termine par une année en « 000 ».'}`,
+      _signature: `bo|${k}|${av}|${cle(q.choix)}`, cleContenu: `bo|${k}|${av}`,
+      difficulte: 2,
+    };
+  }],
+  // Durées : millénaires, siècles, années
+  [3, (rng) => {
+    const sorte = rng.int(0, 3);
+    if (sorte < 3) {
+      const nm = rng.int(2, 9);
+      const [enonce, reponse, expl] = [
+        [`Combien d'années y a-t-il dans ${nm} millénaires ?`, nm * 1000, `1 millénaire = 1 000 ans, donc ${nm} millénaires = ${n(nm * 1000)} ans.`],
+        [`Combien de siècles y a-t-il dans ${nm} millénaires ?`, nm * 10, `1 millénaire = 10 siècles, donc ${nm} millénaires = ${nm * 10} siècles.`],
+        [`${nm * 10} siècles, cela fait combien de millénaires ?`, nm, `10 siècles = 1 millénaire, donc ${nm * 10} siècles = ${nm} millénaires.`],
+      ][sorte];
+      return { type: 'numerique', reponse, unite: sorte === 0 ? 'ans' : sorte === 1 ? 'siècles' : 'millénaires', enonce, explication: expl, _signature: `du|${sorte}|${nm}`, difficulte: 1 };
+    }
+    // Comparer trois durées
+    for (let e = 0; e < 20; e++) {
+      const d = [{ v: rng.int(1, 4) * 1000, t: null }, { v: rng.int(5, 39) * 100, t: null }, { v: rng.int(4, 45) * 100 + rng.pick([0, 50]), t: null }];
+      d[0].t = `${d[0].v / 1000} millénaire${d[0].v > 1000 ? 's' : ''}`;
+      d[1].t = `${d[1].v / 100} siècles`;
+      d[2].t = `${n(d[2].v)} ans`;
+      if (new Set(d.map((x) => x.v)).size < 3) continue;
+      const vs = d.map((x) => x.v).sort((a, b) => a - b);
+      if (vs[2] - vs[1] < 200) continue;
+      const max = d.find((x) => x.v === vs[2]);
+      const q = qcm(rng, max.t, d.map((x) => x.t), 2);
+      return {
+        ...q,
+        enonce: 'Quelle est la durée la plus longue ?',
+        explication: `On convertit tout en années : ${d.map((x) => `${x.t} = ${n(x.v)} ans`).join(' ; ')}. La plus longue : ${max.t}.`,
+        _signature: `cmp|${d.map((x) => x.v).join(',')}|${cle(q.choix)}`, cleContenu: `cmp|${d.map((x) => x.v).sort().join(',')}`,
+        difficulte: 2,
+      };
+    }
+    return null;
+  }],
+  // L'an 1
+  [2, (rng) => (rng.next() < 0.55 ? { ...depuisBanque(rng, AN1, 'an1'), difficulte: 2 } : { ...depuisVF(rng, VF_AN1, 'vfan1'), difficulte: 2 })],
+  // Calcul de durée à cheval sur l'an 1 (au 1er janvier : pas d'an 0)
+  [1, (rng) => {
+    const a = rng.int(2, 60); const b = rng.int(2, 60);
+    const d = a + b - 1;
+    if (rng.next() < 0.5) {
+      return {
+        type: 'numerique', reponse: d, unite: 'ans',
+        enonce: `Combien d'années se sont écoulées entre le 1er janvier de l'an ${a} av. J.-C. et le 1er janvier de l'an ${b} apr. J.-C. ?`,
+        explication: `Du 1er janvier ${a} av. J.-C. au 1er janvier de l'an 1 apr. J.-C. : ${a} ans. Du 1er janvier de l'an 1 au 1er janvier ${b} : ${b - 1} ans. Total : ${a} + ${b - 1} = ${d} ans. Il n'y a pas d'an 0, c'est pourquoi on n'obtient pas ${a} + ${b} = ${a + b}.`,
+        _signature: `jc|${a}|${b}`, difficulte: 3,
+      };
+    }
+    const age = d;
+    const bonne = `Le 1er janvier de l'an ${b} apr. J.-C.`;
+    const q = qcm(rng, bonne, [`Le 1er janvier de l'an ${b - 1 === 1 ? '1' : b - 1} apr. J.-C.`, `Le 1er janvier de l'an ${b + 1} apr. J.-C.`, `Le 1er janvier de l'an ${b} av. J.-C.`]);
+    return {
+      ...q,
+      enonce: `Un olivier est planté le 1er janvier de l'an ${a} av. J.-C. À quelle date a-t-il exactement ${age} ans ?`,
+      explication: `Du 1er janvier ${a} av. J.-C. au 1er janvier de l'an 1 apr. J.-C., il s'écoule ${a} ans. Il reste ${age} − ${a} = ${age - a} ans à compter à partir de l'an 1 : on arrive au 1er janvier de l'an ${b}. Il n'y a pas d'an 0.`,
+      _signature: `age|${a}|${b}|${cle(q.choix)}`, cleContenu: `age|${a}|${b}`, difficulte: 3,
+    };
+  }],
+  // Frise : repère → millénaire
+  [3, (rng) => {
+    const k = rng.int(2, 3);
+    const segs = rng.shuffle(MIL_FRISE).slice(0, k);
+    const lettres = rng.shuffle(LETTRES).slice(0, k);
+    const reperes = segs.map((m, i) => {
+      const deb = m.av ? -m.k * 1000 : (m.k - 1) * 1000 + 1;
+      const y = deb + rng.int(250, 750);
+      return { ...m, y, x: FX(y), lettre: lettres[i] };
+    });
+    const c = rng.pick(reperes);
+    const q = choixVoisins(rng, c.k, c.av, nomMil, 4);
+    return {
+      ...q, figure: svgFrise(reperes),
+      enonce: `Observe cette frise graduée en millénaires. Dans quel millénaire se trouve le repère ${c.lettre} ?`,
+      explication: `Le repère ${c.lettre} est entre ${c.av ? `${c.k * 1000} av. J.-C. et ${c.k === 1 ? 'l\'an 1' : `${(c.k - 1) * 1000} av. J.-C.`}` : `${c.k === 1 ? 'l\'an 1' : (c.k - 1) * 1000} et ${c.k * 1000}`} : c'est le ${nomMil(c.k, c.av)}. Chaque intervalle de la frise représente un millénaire (1 000 ans).`,
+      _signature: `fr|${reperes.map((r) => `${r.lettre}${r.y}`).join(',')}|${c.lettre}|${cle(q.choix)}`,
+      cleContenu: `fr|${reperes.map((r) => `${r.lettre}${r.y}`).join(',')}|${c.lettre}`,
+      difficulte: 2,
+    };
+  }],
+  // Frise : repère sur une graduation → date
+  [2, (rng) => {
+    const g = rng.pick(GRAD_FRISE.slice(1, 6));
+    const lettre = rng.pick(LETTRES);
+    const choix = rng.shuffle([g, ...rng.shuffle(GRAD_FRISE.filter((x) => x !== g)).slice(0, 3)]).map((y) => maj(anTxtC(y)));
+    const bonne = maj(anTxtC(g));
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(bonne), figure: svgFrise([{ x: FX(g === 1 ? 1 : g), lettre }]),
+      enonce: `Observe cette frise graduée en millénaires. Le repère ${lettre} est placé sur une graduation. Quelle date indique-t-il ?`,
+      explication: `Les graduations sont espacées de 1 000 ans. Le repère ${lettre} est sur la graduation ${anTxtC(g)}.${g === 1 ? ' L\'an 1 sépare les années avant J.-C. (à gauche) des années après J.-C. (à droite).' : ''}`,
+      _signature: `grad|${g}|${lettre}|${cle(choix)}`, cleContenu: `grad|${g}|${lettre}`,
+      difficulte: 1,
+    };
+  }],
+  // Frise : fait marquant placé
+  [2, (rng) => {
+    const tard = rng.pick(FAITS_FRISE.filter((f) => f.groupe));
+    const pool = FAITS_FRISE.filter((f) => !f.groupe || f === tard);
+    const k = rng.int(2, 3);
+    const places = rng.shuffle(pool).slice(0, k);
+    const lettres = rng.shuffle(LETTRES).slice(0, k);
+    const reperes = places.map((f, i) => ({ ...f, x: FX(f.y), lettre: lettres[i] }));
+    const c = rng.pick(reperes);
+    const q = qcm(rng, c.t, pool.map((f) => f.t));
+    return {
+      ...q, figure: svgFrise(reperes),
+      enonce: `Observe cette frise graduée en millénaires. Quel fait marquant est placé au repère ${c.lettre} ?`,
+      explication: `Le repère ${c.lettre} est placé en ${anTxtC(c.y).replace(/^an 1$/, 'l\'an 1')}. ${reperes.filter((x) => x !== c).map((x) => `Repère ${x.lettre} : ${leLa(x.t)}`).join(' ; ')}${reperes.length > 1 ? '.' : ''}`.trim(),
+      _signature: `fm|${reperes.map((r) => `${r.lettre}${r.y}`).join(',')}|${c.lettre}|${cle(q.choix)}`,
+      cleContenu: `fm|${reperes.map((r) => `${r.lettre}${r.y}`).join(',')}|${c.lettre}`,
+      difficulte: 2,
+    };
+  }],
+  // Ordre chronologique de dates mêlées (av. / apr. J.-C.)
+  [2, (rng) => {
+    const ys = [];
+    for (let e = 0; e < 40 && ys.length < 4; e++) {
+      const y = rng.next() < 0.5 ? -rng.int(1, 40) * 50 : rng.int(1, 40) * 50;
+      if (ys.every((z) => Math.abs(z - y) >= 100)) ys.push(y);
+    }
+    if (ys.length < 4 || ys.every((y) => y > 0) || ys.every((y) => y < 0)) return null;
+    const o = ordreQ(rng, ys, (y) => y, (y) => anTxtC(y));
+    return {
+      ...o,
+      enonce: 'Range ces années dans l\'ordre chronologique, de la plus ancienne à la plus récente.',
+      explication: `Ordre : ${ys.slice().sort((a, b) => a - b).map(anTxtC).join(' → ')}. Avant J.-C., plus le nombre est grand, plus l'année est ancienne.`,
+      _signature: `ord|${ys.slice().sort((a, b) => a - b).join(',')}`, cleContenu: `ord|${ys.slice().sort((a, b) => a - b).join(',')}`,
+      difficulte: 2,
+    };
+  }],
+]);
+
+// =====================================================================================
+// 10. Outils d'information : table des matières, index, moteur de recherche
+// =====================================================================================
+const PRENOMS_F = ['Léa', 'Chloé', 'Manon', 'Camille', 'Juliette', 'Mathilde', 'Pauline', 'Agathe', 'Amélie', 'Élise', 'Margaux', 'Clémence'];
+const PRENOMS_G = ['Louis', 'Arthur', 'Jules', 'Victor', 'Antoine', 'Baptiste', 'Maxime', 'Romain', 'Mathis', 'Quentin', 'Étienne', 'Émile', 'Clément'];
+const PRENOMS = [...PRENOMS_F, ...PRENOMS_G];
+const LIVRES = [
+  { titre: 'Histoire de nos régions', chap: [
+    { t: 'La Préhistoire', mots: ['les outils en silex', 'les premiers agriculteurs de nos régions', 'les peintures dans les grottes'], idx: ['Silex', 'Grotte', 'Néolithique'] },
+    { t: 'Les Gallo-Romains', mots: ['la conquête de nos régions par Jules César', 'les villas romaines', 'les chaussées romaines'], idx: ['César (Jules)', 'Villa romaine', 'Chaussée romaine'] },
+    { t: 'Le Haut Moyen Âge : les Francs', mots: ['le baptême de Clovis', 'le couronnement de Charlemagne', 'les monastères de Nivelles et de Stavelot'], idx: ['Clovis', 'Charlemagne', 'Monastère'] },
+    { t: 'Explorations et colonisations', mots: ['le voyage de Christophe Colomb en 1492', 'le commerce triangulaire', 'le tour du monde de Magellan'], idx: ['Colomb (Christophe)', 'Esclavage', 'Magellan (Fernand de)'] },
+    { t: 'Les migrations après 1945', mots: ['la catastrophe du Bois du Cazier', 'l\'accord belgo-italien de 1946', 'l\'arrivée des travailleurs marocains et turcs'], idx: ['Bois du Cazier', 'Italie', 'Maroc'] },
+  ] },
+  { titre: 'Atlas du monde', chap: [
+    { t: 'Continents et océans', mots: ['l\'océan Indien', 'la forme des continents', 'les noms des six continents'], idx: ['Océan', 'Équateur', 'Tropique'] },
+    { t: 'Les climats de la Terre', mots: ['le climat méditerranéen', 'la saison sèche du climat tropical', 'la lecture d\'un climatogramme'], idx: ['Climatogramme', 'Méditerranéen (climat)', 'Tropical (climat)'] },
+    { t: 'La population du monde', mots: ['la densité de population', 'les pays les plus peuplés', 'les grandes villes du monde'], idx: ['Densité', 'Inde', 'Ville'] },
+    { t: 'Le réchauffement climatique', mots: ['la fonte de la banquise', 'les gaz à effet de serre', 'la montée du niveau des mers'], idx: ['Glacier', 'Effet de serre', 'Banquise'] },
+    { t: 'Fleuves et montagnes', mots: ['le Nil et l\'Amazone', 'l\'Himalaya et l\'Everest', 'la chaîne des Andes'], idx: ['Nil', 'Himalaya', 'Andes'] },
+  ] },
+  { titre: 'La Belgique', chap: [
+    { t: 'Régions et provinces', mots: ['le chef-lieu de chaque province', 'les trois Régions du pays', 'la frontière linguistique'], idx: ['Province', 'Région', 'Frontière linguistique'] },
+    { t: 'Relief et cours d\'eau', mots: ['le plateau de l\'Ardenne', 'la Meuse et ses affluents', 'le point le plus haut du pays'], idx: ['Ardenne', 'Meuse', 'Signal de Botrange'] },
+    { t: 'La population belge', mots: ['les villes les plus peuplées', 'le nombre d\'habitants par km² dans chaque province', 'les régions les plus peuplées du pays'], idx: ['Anvers', 'Densité', 'Sillon Sambre-et-Meuse'] },
+    { t: 'Les transports', mots: ['le port d\'Anvers', 'le réseau des autoroutes', 'les canaux et les péniches'], idx: ['Port', 'Autoroute', 'Canal'] },
+    { t: 'Le climat de la Belgique', mots: ['les pluies en Belgique', 'les températures en hiver', 'le climat tempéré océanique'], idx: ['Pluie', 'Hiver', 'Océanique (climat)'] },
+  ] },
+];
+const triFr = (a, b) => a.localeCompare(b, 'fr', { sensitivity: 'base' });
+
+function pagination(rng, nb) {
+  const debuts = [rng.int(3, 7)];
+  for (let i = 1; i <= nb; i++) debuts.push(debuts[i - 1] + rng.int(6, 19));
+  return debuts; // nb débuts + la page qui suit le dernier chapitre
+}
+function svgTable(titre, chap, debuts) {
+  const h = 58 + chap.length * 28;
+  const s = [svgOuvrir(400, h)];
+  s.push(`<rect x="8" y="6" width="384" height="${h - 12}" rx="6" fill="#fffdf6" stroke="#1c2333" stroke-width="1.2"/>`);
+  s.push(`<text x="200" y="30" font-size="15" font-weight="bold" text-anchor="middle" fill="#1c2333">${esc(titre)} — Table des matières</text>`);
+  chap.forEach((c, i) => {
+    const y = 60 + i * 28;
+    const lib = `${i + 1}. ${c.t}`;
+    s.push(`<text x="22" y="${y}" font-size="13" fill="#1c2333">${esc(lib)}</text>`);
+    s.push(`<line x1="${r1(26 + lib.length * 6.3)}" y1="${y - 3}" x2="352" y2="${y - 3}" stroke="#5b6475" stroke-width="1.2" stroke-dasharray="1.5 3.5"/>`);
+    s.push(`<text x="378" y="${y}" font-size="13" font-weight="bold" text-anchor="end" fill="#1c2333">${debuts[i]}</text>`);
+  });
+  s.push('</svg>');
+  return s.join('');
+}
+function svgIndex(titre, entrees) {
+  const h = 56 + entrees.length * 24;
+  const s = [svgOuvrir(400, h)];
+  s.push(`<rect x="8" y="6" width="384" height="${h - 12}" rx="6" fill="#fffdf6" stroke="#1c2333" stroke-width="1.2"/>`);
+  s.push(`<text x="200" y="30" font-size="15" font-weight="bold" text-anchor="middle" fill="#1c2333">${esc(titre)} — Index</text>`);
+  entrees.forEach((e, i) => {
+    const y = 58 + i * 24;
+    s.push(`<text x="22" y="${y}" font-size="13" fill="#1c2333">${esc(e.mot)}</text>`);
+    s.push(`<line x1="${r1(26 + e.mot.length * 6.3)}" y1="${y - 3}" x2="${r1(372 - e.pages.join(', ').length * 7)}" y2="${y - 3}" stroke="#5b6475" stroke-width="1.2" stroke-dasharray="1.5 3.5"/>`);
+    s.push(`<text x="378" y="${y}" font-size="13" text-anchor="end" fill="#1c2333">${e.pages.join(', ')}</text>`);
+  });
+  s.push('</svg>');
+  return s.join('');
+}
+// Entrées d'index cohérentes avec la pagination : chaque mot renvoie à des pages de son chapitre.
+function entreesIndex(rng, livre, debuts) {
+  const out = [];
+  livre.chap.forEach((c, i) => {
+    for (const mot of c.idx) {
+      const a = debuts[i]; const b = debuts[i + 1] - 1;
+      const p1 = rng.int(a, b);
+      const pages = rng.next() < 0.35 ? [...new Set([p1, rng.int(a, b)])].sort((x, y) => x - y) : [p1];
+      out.push({ mot, pages, chap: c });
+    }
+  });
+  return out;
+}
+
+const OUTILS = [
+  { q: 'Pour savoir rapidement à quelles pages un livre parle de Charlemagne, que consultes-tu ?', ok: 'L\'index, à la fin du livre',
+    ko: ['La couverture', 'La première page du premier chapitre', 'La quatrième de couverture (le dos du livre)'],
+    expl: 'L\'index est une liste alphabétique des mots importants avec les pages où on en parle. Il se trouve en général à la fin du livre.' },
+  { q: 'Pour connaître les grandes parties (les chapitres) d\'un livre et leur page de début, que consultes-tu ?', ok: 'La table des matières',
+    ko: ['L\'index', 'Un dictionnaire', 'La couverture'],
+    expl: 'La table des matières donne la liste des chapitres dans l\'ordre du livre, avec la page où chacun commence.' },
+  { q: 'Dans un index, comment les mots sont-ils rangés ?', ok: 'Par ordre alphabétique',
+    ko: ['Dans l\'ordre des chapitres', 'Du plus court au plus long', 'Par ordre chronologique'],
+    expl: 'Dans un index, les mots sont rangés par ordre alphabétique pour être retrouvés vite. C\'est la table des matières qui suit l\'ordre des chapitres.' },
+  { q: 'Dans une table des matières, comment les chapitres sont-ils rangés ?', ok: 'Dans l\'ordre où ils apparaissent dans le livre',
+    ko: ['Par ordre alphabétique', 'Du plus long au plus court', 'Au hasard'],
+    expl: 'La table des matières suit l\'ordre du livre : les numéros de page augmentent d\'une ligne à l\'autre.' },
+  { q: 'Quel ouvrage consultes-tu pour trouver une carte des climats du monde ?', ok: 'Un atlas',
+    ko: ['Un dictionnaire', 'Un livre de recettes', 'Un roman'],
+    expl: 'Un atlas est un livre de cartes : cartes du relief, des climats, de la population, des pays…' },
+  { q: 'Quel ouvrage consultes-tu pour trouver le sens du mot « affluent » ?', ok: 'Un dictionnaire',
+    ko: ['Un atlas', 'Un annuaire téléphonique', 'Un calendrier'],
+    expl: 'Le dictionnaire donne la définition des mots, rangés par ordre alphabétique.' },
+  { q: 'Où se trouve généralement la table des matières ?', ok: 'Au début ou à la fin du livre',
+    ko: ['Au milieu du livre', 'Sur la couverture', 'Dans chaque chapitre'],
+    expl: 'Selon les livres, la table des matières est placée au début ou à la fin. L\'index, lui, est en général à la fin.' },
+];
+const RECHERCHES = [
+  { besoin: 'la date de la catastrophe du Bois du Cazier', ok: 'Bois du Cazier catastrophe date', ko: ['catastrophe', 'mine', 'histoire de la Belgique'] },
+  { besoin: 'le nombre d\'habitants de la province de Namur', ok: 'population province de Namur', ko: ['Namur', 'province', 'habitants'] },
+  { besoin: 'le climat de l\'Égypte', ok: 'climat Égypte', ko: ['Égypte', 'climat', 'pyramides Égypte'] },
+  { besoin: 'les causes de la fonte des glaciers', ok: 'causes fonte des glaciers', ko: ['glace', 'montagne', 'eau'] },
+  { besoin: 'l\'année du couronnement de Charlemagne', ok: 'Charlemagne couronnement année', ko: ['roi', 'empereur', 'Moyen Âge'] },
+  { besoin: 'les produits que les Européens ont rapportés des Amériques', ok: 'produits rapportés des Amériques en Europe', ko: ['Amérique', 'produits', 'Europe'] },
+  { besoin: 'la longueur du fleuve Amazone', ok: 'longueur fleuve Amazone', ko: ['fleuve', 'forêt amazonienne animaux', 'Brésil'] },
+  { besoin: 'les pays d\'où venaient les travailleurs immigrés en Belgique après 1945', ok: 'pays d\'origine travailleurs immigrés Belgique après 1945', ko: ['travail', 'Belgique', 'pays du monde'] },
+];
+
+const outilsInfo = famille('oi', [
+  // Table des matières : quel chapitre ?
+  [5, (rng) => {
+    const livre = rng.pick(LIVRES);
+    const debuts = pagination(rng, livre.chap.length);
+    const i = rng.int(0, livre.chap.length - 1);
+    const mot = rng.pick(livre.chap[i].mots);
+    const qui = rng.pick(PRENOMS);
+    const choix = livre.chap.map((_, k) => `Page ${debuts[k]}`);
+    return {
+      type: 'qcm', choix, reponse: i, figure: svgTable(livre.titre, livre.chap, debuts),
+      enonce: `${qui} cherche des informations sur ${mot}. Observe la table des matières : à quelle page commence le chapitre à lire ?`,
+      explication: `${maj(mot)} : c'est le sujet du chapitre « ${livre.chap[i].t} », qui commence à la page ${debuts[i]}. La table des matières donne la page de début de chaque chapitre.`,
+      _signature: `tm|${livre.titre}|${debuts.join(',')}|${mot}`,
+      cleContenu: `tm|${livre.titre}|${debuts.join(',')}|${mot}`,
+      difficulte: 2,
+    };
+  }],
+  // Table des matières : dernière page d'un chapitre
+  [3, (rng) => {
+    const livre = rng.pick(LIVRES);
+    const debuts = pagination(rng, livre.chap.length);
+    const i = rng.int(0, livre.chap.length - 2);
+    const fin = debuts[i + 1] - 1;
+    if (rng.next() < 0.5) {
+      return {
+        type: 'numerique', reponse: fin, figure: svgTable(livre.titre, livre.chap, debuts),
+        enonce: `Observe la table des matières. Quelle est la dernière page du chapitre « ${livre.chap[i].t} » ?`,
+        explication: `Le chapitre « ${livre.chap[i].t} » commence à la page ${debuts[i]} et le chapitre suivant à la page ${debuts[i + 1]} : il se termine donc à la page ${debuts[i + 1]} − 1 = ${fin}.`,
+        _signature: `fin|${livre.titre}|${debuts.join(',')}|${i}`, cleContenu: `fin|${livre.titre}|${debuts.join(',')}|${i}`,
+        difficulte: 2,
+      };
+    }
+    const nb = debuts[i + 1] - debuts[i];
+    return {
+      type: 'numerique', reponse: nb, unite: 'pages', figure: svgTable(livre.titre, livre.chap, debuts),
+      enonce: `Observe la table des matières. Combien de pages compte le chapitre « ${livre.chap[i].t} » ?`,
+      explication: `Il va de la page ${debuts[i]} à la page ${fin} (le chapitre suivant commence page ${debuts[i + 1]}) : ${debuts[i + 1]} − ${debuts[i]} = ${nb} pages.`,
+      _signature: `nbp|${livre.titre}|${debuts.join(',')}|${i}`, cleContenu: `nbp|${livre.titre}|${debuts.join(',')}|${i}`,
+      difficulte: 3,
+    };
+  }],
+  // Table des matières : sur quel chapitre tombe une page ?
+  [2, (rng) => {
+    const livre = rng.pick(LIVRES);
+    const debuts = pagination(rng, livre.chap.length);
+    const i = rng.int(0, livre.chap.length - 2);
+    const page = rng.int(debuts[i] + 1, debuts[i + 1] - 1);
+    const choix = livre.chap.map((c) => c.t);
+    return {
+      type: 'qcm', choix, reponse: i, figure: svgTable(livre.titre, livre.chap, debuts),
+      enonce: `Observe la table des matières. Le livre est ouvert à la page ${page}. Dans quel chapitre se trouve cette page ?`,
+      explication: `Le chapitre « ${livre.chap[i].t} » commence à la page ${debuts[i]} et le suivant à la page ${debuts[i + 1]} : la page ${page} se trouve entre les deux.`,
+      _signature: `pg|${livre.titre}|${debuts.join(',')}|${page}`, cleContenu: `pg|${livre.titre}|${debuts.join(',')}|${page}`,
+      difficulte: 2,
+    };
+  }],
+  // Index : pages d'un mot
+  [3, (rng) => {
+    const livre = rng.pick(LIVRES);
+    const debuts = pagination(rng, livre.chap.length);
+    const toutes = entreesIndex(rng, livre, debuts);
+    const montre = rng.shuffle(toutes).slice(0, rng.int(6, 8)).sort((a, b) => triFr(a.mot, b.mot));
+    if (new Set(montre.map((e) => e.pages.join(','))).size < montre.length) return null;
+    const e = rng.pick(montre);
+    const q = qcm(rng, `Page${e.pages.length > 1 ? 's' : ''} ${e.pages.join(' et ')}`, montre.filter((x) => x !== e).map((x) => `Page${x.pages.length > 1 ? 's' : ''} ${x.pages.join(' et ')}`));
+    return {
+      ...q, figure: svgIndex(livre.titre, montre),
+      enonce: `Observe l'index de ce livre. À quelle(s) page(s) trouves-tu des informations sur « ${e.mot} » ?`,
+      explication: `Dans l'index, les mots sont rangés par ordre alphabétique : « ${e.mot} » renvoie ${e.pages.length > 1 ? 'aux pages' : 'à la page'} ${e.pages.join(' et ')}.`,
+      _signature: `ix|${livre.titre}|${montre.map((x) => x.mot + x.pages.join('-')).join(',')}|${e.mot}|${cle(q.choix)}`,
+      cleContenu: `ix|${livre.titre}|${montre.map((x) => x.mot + x.pages.join('-')).join(',')}|${e.mot}`,
+      difficulte: 1,
+    };
+  }],
+  // Index : où insérer un mot oublié (ordre alphabétique) ?
+  [3, (rng) => {
+    const livre = rng.pick(LIVRES);
+    const debuts = pagination(rng, livre.chap.length);
+    const toutes = entreesIndex(rng, livre, debuts).sort((a, b) => triFr(a.mot, b.mot));
+    const k = rng.int(1, toutes.length - 2);
+    const oublie = toutes[k];
+    const reste = toutes.filter((x) => x !== oublie);
+    // On garde 5 ou 6 mots autour de la place du mot oublié.
+    const deb = Math.max(0, Math.min(k - rng.int(1, 3), reste.length - 6));
+    const montre = reste.slice(deb, deb + 6);
+    const pos = montre.findIndex((x) => triFr(x.mot, oublie.mot) > 0);
+    if (pos <= 0) return null;
+    const paires = montre.slice(0, -1).map((x, j) => `Entre « ${x.mot} » et « ${montre[j + 1].mot} »`);
+    const bonne = paires[pos - 1];
+    const q = qcm(rng, bonne, paires);
+    return {
+      ...q, figure: svgIndex(livre.titre, montre),
+      enonce: `Le mot « ${oublie.mot} » a été oublié dans cet index. Où faut-il l'écrire pour respecter l'ordre alphabétique ?`,
+      explication: `Dans un index, les mots sont rangés par ordre alphabétique (on compare la 1re lettre, puis la 2e…). « ${oublie.mot} » se place après « ${montre[pos - 1].mot} » et avant « ${montre[pos].mot} ».`,
+      _signature: `ins|${livre.titre}|${montre.map((x) => x.mot).join(',')}|${oublie.mot}|${cle(q.choix)}`,
+      cleContenu: `ins|${livre.titre}|${montre.map((x) => x.mot).join(',')}|${oublie.mot}`,
+      difficulte: 2,
+    };
+  }],
+  // Quel outil ?
+  [2, (rng) => ({ ...depuisBanque(rng, OUTILS, 'out'), difficulte: 1 })],
+  // Moteur de recherche : les meilleurs mots-clés
+  [2, (rng) => {
+    const r = rng.pick(RECHERCHES);
+    const qui = rng.pick(PRENOMS);
+    const q = qcm(rng, `« ${r.ok} »`, r.ko.map((x) => `« ${x} »`));
+    return {
+      ...q,
+      enonce: `${qui} veut trouver sur internet ${r.besoin}. Quels mots-clés doit-${PRENOMS_F.includes(qui) ? 'elle' : 'il'} taper dans le moteur de recherche ?`,
+      explication: `Les meilleurs mots-clés sont précis et reprennent les mots importants de la question : « ${r.ok} ». Des mots trop vagues donnent des milliers de résultats qui ne répondent pas à la question.`,
+      _signature: `mr|${r.besoin}|${qui}|${cle(q.choix)}`, cleContenu: `mr|${r.besoin}`,
+      difficulte: 2,
+    };
+  }],
+]);
+
+// =====================================================================================
+// 11. Juger un document : auteur, date, lieu, trace du passé / travail postérieur, pertinence
+// =====================================================================================
+const MOIS_TXT = MOIS;
+const dateJour = (rng, a) => `${rng.int(2, 27)} ${rng.pick(MOIS_TXT)} ${a}`;
+// Documents (fictifs mais vraisemblables) : chaque fabrique tire lieu et dates, et donne des distracteurs naturels.
+const FAB_DOCS = [
+  (rng) => {
+    const a = rng.int(1947, 1955); const lieu = rng.pick(['Marcinelle', 'Charleroi', 'Seraing', 'La Louvière', 'Frameries']);
+    return { genre: 'une lettre', texte: `Une lettre écrite à ${lieu} le ${dateJour(rng, a)} par un mineur italien à sa mère, restée en Italie. Il lui raconte son travail au fond de la mine.`,
+      auteur: 'Un mineur italien', fauxAuteurs: ['Sa mère, restée en Italie', 'Le directeur de la mine', 'Un historien d\'aujourd\'hui'],
+      lieu, fauxLieux: ['En Italie', 'À Bruxelles', 'À Rome'], prod: a, evoque: a, evTxt: String(a), trace: true };
+  },
+  (rng) => {
+    const anniv = rng.pick([40, 50, 60, 65]); const a = 1956 + anniv; const lieu = rng.pick(['Bruxelles', 'Liège', 'Namur', 'Mons']);
+    return { genre: 'un article de journal', texte: `Un article écrit à ${lieu} en ${a} par une journaliste belge, pour les ${anniv} ans de la catastrophe du Bois du Cazier (1956) à Marcinelle.`,
+      auteur: 'Une journaliste belge', fauxAuteurs: ['Les mineurs du Bois du Cazier', 'Le roi Baudouin', 'Les familles italiennes de 1956'],
+      lieu, fauxLieux: ['À Marcinelle', 'En Italie', 'À Anvers'], prod: a, evoque: 1956, evTxt: '1956', trace: false };
+  },
+  (rng) => {
+    const a = rng.int(2005, 2023); const lieu = rng.pick(['Namur', 'Liège', 'Wavre', 'Arlon']);
+    return { genre: 'un manuel d\'histoire', texte: `Un manuel d'histoire écrit à ${lieu} en ${a} par deux enseignantes. Il explique le baptême de Clovis, roi des Francs, vers 496.`,
+      auteur: 'Deux enseignantes', fauxAuteurs: ['Clovis, roi des Francs', 'L\'évêque Remi', 'Des moines du Moyen Âge'],
+      lieu, fauxLieux: ['À Reims', 'À Tournai', 'À Rome'], prod: a, evoque: 496, evTxt: 'vers 496', trace: false };
+  },
+  (rng) => {
+    const arrivee = rng.int(1964, 1972); const a = rng.int(2005, 2020); const lieu = rng.pick(['Liège', 'Bruxelles', 'Charleroi', 'Genk']);
+    return { genre: 'un témoignage enregistré', texte: `Un témoignage enregistré à ${lieu} en ${a} : une dame arrivée du Maroc en ${arrivee} raconte son premier hiver en Belgique.`,
+      auteur: 'Une dame arrivée du Maroc', fauxAuteurs: ['Le roi des Belges', 'Un ministre marocain', 'Un journaliste de 1964'],
+      lieu, fauxLieux: ['Au Maroc', 'À Anvers', 'À Rome'], prod: a, evoque: arrivee, evTxt: String(arrivee), temoin: true };
+  },
+  (rng) => {
+    const a = rng.int(1955, 1966); const lieu = rng.pick(['Charleroi', 'Liège', 'Genk', 'Mons']);
+    return { genre: 'une photographie', texte: `Une photographie prise à ${lieu} en ${a} par un photographe belge. On y voit des mineurs qui remontent du fond de la mine.`,
+      auteur: 'Un photographe belge', fauxAuteurs: ['Les mineurs', 'Un historien d\'aujourd\'hui', 'Le patron de la mine'],
+      lieu, fauxLieux: ['À Bruxelles', 'En Italie', 'Au Maroc'], prod: a, evoque: a, evTxt: String(a), trace: true };
+  },
+  (rng) => {
+    const a = rng.int(2008, 2024); const lieu = rng.pick(['Tongres', 'Arlon', 'Tournai']);
+    return { genre: 'une maquette', texte: `Une maquette d'une villa gallo-romaine, construite en ${a} par une classe de 6e ${/^[AEIOU]/.test(lieu) ? 'd\'' : 'de '}${lieu} pour une exposition.`,
+      auteur: 'Une classe de 6e', fauxAuteurs: ['Les Romains', 'Jules César', 'Un propriétaire de villa romaine'],
+      lieu, fauxLieux: ['À Rome', 'En Gaule, il y a 2 000 ans', 'À Athènes'], prod: a, evoque: null, evTxt: 'l\'époque gallo-romaine', trace: false };
+  },
+];
+
+const TRACES = [
+  'une pièce de monnaie romaine trouvée à Tongres', 'la mosaïque d\'une villa gallo-romaine', 'la tombe de Childéric découverte à Tournai',
+  'une lettre écrite en 1950 par un mineur italien', 'une photo prise au Bois du Cazier en 1956', 'le contrat de travail d\'un mineur marocain signé en 1965',
+  'une carte du monde dessinée par Mercator en 1569', 'le journal de bord d\'un navire du XVIIIe siècle', 'une affiche de 1946 qui propose du travail dans les mines belges',
+];
+const POSTERIEURS = [
+  'un manuel scolaire de 2020 sur les Gallo-Romains', 'un film de 2015 sur Christophe Colomb', 'une bande dessinée de 1990 sur Charlemagne',
+  'un site internet créé en 2022 sur l\'immigration italienne', 'une maquette de villa romaine construite par une classe en 2024', 'un documentaire de 2006 sur la catastrophe du Bois du Cazier',
+  'un dessin d\'enfant de 2023 représentant Clovis', 'une exposition de 2019 sur le commerce triangulaire',
+];
+
+const SUJETS_DOC = [
+  { g: 'migr', q: 'Pourquoi des mineurs italiens sont-ils venus en Belgique après 1945 ?', docs: [
+    'le texte de l\'accord belgo-italien de 1946 (« des hommes contre du charbon »)', 'une affiche de 1946 qui propose aux Italiens du travail dans les mines belges', 'une lettre de 1948 d\'un mineur italien qui explique pourquoi il a quitté son village'] },
+  { g: 'rom', q: 'Comment vivaient les Gallo-Romains dans nos régions ?', docs: [
+    'le plan d\'une villa gallo-romaine découverte en Wallonie', 'des objets du quotidien trouvés dans des tombes gallo-romaines à Tongres', 'une mosaïque retrouvée dans une villa romaine de nos régions'] },
+  { g: 'colo', q: 'Quels aliments inconnus en Europe avant 1492 les Européens ont-ils découverts dans les Amériques ?', docs: [
+    'une liste de marchandises débarquées en Espagne par des navires au XVIe siècle', 'une gravure du XVIe siècle qui montre des plants de maïs et de tabac', 'un tableau qui compare les aliments connus en Europe avant et après 1492'] },
+  { g: 'migr', q: 'Comment s\'est déroulée la catastrophe du Bois du Cazier ?', docs: [
+    'un article de journal du 9 août 1956 sur l\'incendie de la mine', 'le témoignage d\'un mineur sauvé de l\'incendie de 1956', 'la liste des 262 victimes, avec leur nationalité'] },
+  { g: 'hma', q: 'Qui était Charlemagne ?', docs: [
+    'la vie de Charlemagne écrite par Éginhard, un savant de sa cour', 'une pièce de monnaie frappée au nom de Charlemagne', 'un récit de son couronnement à Rome en 800'] },
+  { g: 'migr', q: 'Quels apports culturels les migrations après 1945 ont-elles laissés en Belgique ?', docs: [
+    'une photo d\'un restaurant marocain ouvert à Bruxelles en 1975', 'un article sur la fête annuelle d\'une association italienne de Charleroi', 'un reportage sur une mosquée construite à Liège'] },
+  { g: 'colo', q: 'Comment fonctionnait le commerce triangulaire ?', docs: [
+    'le journal de bord d\'un navire négrier du XVIIIe siècle', 'le récit d\'un ancien esclave sur sa traversée de l\'Atlantique', 'un registre de vente d\'esclaves aux Antilles en 1750'] },
+];
+// Questions de recherche et documents qui ne conviennent pas pour UNE raison (sujet, époque ou lieu).
+const RAISONS = ['Il ne parle pas du bon sujet.', 'Il ne parle pas de la bonne époque.', 'Il ne parle pas du bon lieu.'];
+const NON_PERT = [
+  { q: 'Que mangeaient les habitants de nos régions au Moyen Âge ?', docs: [
+    { t: 'le plan d\'un château fort de nos régions au XIIe siècle', r: 0 },
+    { t: 'un livre de recettes belges publié en 2020', r: 1 },
+    { t: 'un texte sur ce que mangeaient les paysans chinois au Moyen Âge', r: 2 }] },
+  { q: 'Comment travaillaient les mineurs en Belgique dans les années 1950 ?', docs: [
+    { t: 'une photo de la récolte des betteraves en Hesbaye en 1955', r: 0 },
+    { t: 'une photo de mineurs belges au travail en 1890', r: 1 },
+    { t: 'un reportage sur des mineurs au travail en Pologne en 1955', r: 2 }] },
+  { q: 'Pourquoi des travailleurs marocains sont-ils venus en Belgique dans les années 1960 ?', docs: [
+    { t: 'un article sur la construction d\'une autoroute en Belgique en 1965', r: 0 },
+    { t: 'un article sur des travailleurs marocains arrivés en Belgique en 2020', r: 1 },
+    { t: 'un article sur les travailleurs marocains partis en France dans les années 1960', r: 2 }] },
+  { q: 'Quelles routes les Romains ont-ils construites dans nos régions ?', docs: [
+    { t: 'une carte des grands fleuves de nos régions à l\'époque romaine', r: 0 },
+    { t: 'une carte des autoroutes belges de 2024', r: 1 },
+    { t: 'une carte des routes romaines en Espagne', r: 2 }] },
+];
+const INTENTIONS = ['Convaincre (persuader) les lecteurs', 'Informer, expliquer', 'Donner des nouvelles à sa famille', 'Rendre hommage à des personnes', 'Vendre un produit', 'Faire rire'];
+// ex : intentions voisines écartées des choix (une affiche qui convainc informe aussi un peu…).
+const DOCS_INTENTION = [
+  { t: 'Une affiche de 1946 collée dans des villages italiens : « Travaillez dans les mines belges ! Bon salaire, logement, voyage gratuit ! »', i: 0, ex: [1, 4] },
+  { t: 'Un panneau d\'un musée qui explique comment on extrayait le charbon au fond de la mine.', i: 1, ex: [] },
+  { t: 'Une lettre d\'un mineur à sa femme : « Je vais bien, le travail est dur, je pense à vous chaque jour. »', i: 2, ex: [1] },
+  { t: 'Un discours prononcé chaque 8 août au Bois du Cazier, devant la liste des 262 mineurs morts en 1956.', i: 3, ex: [1] },
+  { t: 'Une publicité de 1960 pour une nouvelle marque de chocolat belge.', i: 4, ex: [0, 1] },
+  { t: 'Une page de manuel scolaire qui décrit la vie dans une villa gallo-romaine.', i: 1, ex: [] },
+  { t: 'Une affiche de 2024 qui encourage les habitants à venir à vélo au travail : « Moins de CO₂, plus de santé ! »', i: 0, ex: [1] },
+  { t: 'Une plaque commémorative posée sur un monument, avec les noms des mineurs morts dans une catastrophe.', i: 3, ex: [1] },
+];
+const INFERER = [
+  { doc: 'Lettre d\'un mineur, 1952 : « Ici, nous dormons à six dans une baraque en tôle. L\'hiver, on a très froid. »',
+    ok: 'Ses conditions de logement étaient difficiles.', lu: ['Il dort à six dans une baraque en tôle.', 'L\'hiver, il a très froid.'], faux: ['Il habitait un grand château.'] },
+  { doc: 'Affiche de 1946 : « Les mineurs en Belgique reçoivent un bon salaire, un logement et le voyage gratuit. »',
+    ok: 'La Belgique avait besoin de beaucoup de mineurs.', lu: ['Le voyage est gratuit.', 'Les mineurs reçoivent un logement.'], faux: ['Les mines belges allaient fermer.'] },
+  { doc: 'Article, 9 août 1956 : « Des centaines de familles attendent devant les grilles du Bois du Cazier depuis hier matin. »',
+    ok: 'Beaucoup de mineurs étaient encore bloqués au fond de la mine.', lu: ['Des familles attendent devant les grilles.', 'Elles attendent depuis la veille au matin.'], faux: ['La mine était vide ce jour-là.'] },
+  { doc: 'Journal de bord, 1750 : « Nous avons échangé en Afrique nos tissus et nos fusils contre des captifs. »',
+    ok: 'Des êtres humains étaient vendus comme des marchandises.', lu: ['Ils ont donné des tissus et des fusils.', 'L\'échange a eu lieu en Afrique.'], faux: ['Le navire transportait des touristes.'] },
+];
+
+const pertinence = famille('pd', [
+  // Auteur / lieu / date de réalisation / époque évoquée
+  [6, (rng) => {
+    const d = rng.pick(FAB_DOCS)(rng);
+    // Pas de question « trace ou travail postérieur » pour un témoignage recueilli plus tard (classement discuté).
+    const quoi = rng.pick(['auteur', 'auteur', 'lieu', 'date', 'date', ...(d.temoin ? [] : ['trace'])]);
+    const doc = `Document : ${d.texte}`;
+    if (quoi === 'auteur') {
+      const q = qcm(rng, d.auteur, d.fauxAuteurs);
+      return { ...q, enonce: `${doc}\nQui est l'auteur de ce document ?`, explication: `L'auteur est la personne qui a réalisé le document : ${leLa(d.auteur)}.${d.temoin ? ' Dans un témoignage, l\'auteur est le témoin qui raconte.' : ''}`, _signature: `au|${d.texte}|${cle(q.choix)}`, cleContenu: `au|${d.texte}`, difficulte: 1 };
+    }
+    if (quoi === 'lieu') {
+      const bonne = `À ${d.lieu}`;
+      const q = qcm(rng, bonne, d.fauxLieux.filter((x) => x !== bonne));
+      return { ...q, enonce: `${doc}\nOù ce document a-t-il été réalisé ?`, explication: `Le document a été réalisé à ${d.lieu}. Attention à ne pas confondre le lieu où le document a été fait avec les lieux dont il parle.`, _signature: `li|${d.texte}|${cle(q.choix)}`, cleContenu: `li|${d.texte}`, difficulte: 2 };
+    }
+    const faux = [...new Set([d.evoque, d.prod - 10, d.prod + 10, d.prod - 20, 1830, 1789].filter((x) => x && x !== d.prod))];
+    if (quoi === 'date') {
+      const decale = d.prod !== d.evoque;
+      const q = qcm(rng, String(d.prod), (decale && d.evoque ? [d.evoque, ...rng.shuffle(faux.slice(1)).slice(0, 2)] : rng.shuffle(faux).slice(0, 3)).map(String));
+      return { ...q, enonce: `${doc}\nEn quelle année ce document a-t-il été réalisé ?`, explication: `Le document a été réalisé en ${d.prod}.${decale ? ` Il parle de faits plus anciens (${d.evTxt}) : la date de réalisation d'un document n'est pas toujours la date des faits dont il parle.` : ''}`, _signature: `da|${d.texte}|${cle(q.choix)}`, cleContenu: `da|${d.texte}`, difficulte: decale ? 3 : 1 };
+    }
+    // Trace du passé ou travail postérieur ?
+    const choix = ['Une trace du passé (réalisée à l\'époque des faits)', 'Un travail postérieur (réalisé plus tard)'];
+    return { type: 'qcm', choix, reponse: d.trace ? 0 : 1, enonce: `${doc}\nPour connaître les faits dont il parle, ce document est-il une trace du passé ou un travail postérieur ?`,
+      explication: d.trace ? 'C\'est une trace du passé : il a été réalisé au moment des faits, par quelqu\'un qui les a vécus ou vus.' : `C'est un travail postérieur : il a été réalisé en ${d.prod}, bien après les faits dont il parle (${d.evTxt}).`,
+      _signature: `tp|${d.texte}`, cleContenu: `tp|${d.texte}`, difficulte: 2 };
+  }],
+  // Grille trace / travail postérieur
+  [3, (rng) => {
+    const pool = [...TRACES.map((t) => ({ t, c: 0 })), ...POSTERIEURS.map((t) => ({ t, c: 1 }))];
+    const items = tirerMixte(rng, pool, 4, (x) => x.c);
+    if (!items) return null;
+    return {
+      ...grilleQ(items, ['Trace du passé', 'Travail postérieur']),
+      enonce: 'Chaque document est-il une trace du passé (réalisée à l\'époque des faits) ou un travail postérieur (réalisé plus tard, par exemple par un historien ou un auteur d\'aujourd\'hui) ?',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'trace du passé' : 'travail postérieur'}`).join(' ; ')) + '.',
+      _signature: `gtp|${cle(items.map((x) => x.t))}`, cleContenu: `gtp|${cle(items.map((x) => x.t))}`,
+      difficulte: 2,
+    };
+  }],
+  // Quel document est pertinent ?
+  [4, (rng) => {
+    const s = rng.pick(SUJETS_DOC);
+    const bonne = maj(rng.pick(s.docs));
+    // Distracteurs pris dans d'autres thèmes (pas de document voisin qui pourrait aussi convenir).
+    const autres = SUJETS_DOC.filter((x) => x.g !== s.g).flatMap((x) => x.docs).map(maj);
+    const q = qcm(rng, bonne, autres);
+    const qui = rng.pick(PRENOMS);
+    return {
+      ...q,
+      enonce: `${qui} fait une recherche sur la question : « ${s.q} » Quel document est pertinent (utile) pour y répondre ?`,
+      explication: `${bonne} : ce document parle du sujet de la question, à la bonne époque et au bon endroit. Les autres documents parlent d'autres sujets.`,
+      _signature: `pert|${s.q}|${bonne}|${cle(q.choix)}`, cleContenu: `pert|${s.q}|${bonne}`,
+      difficulte: 2,
+    };
+  }],
+  // Quel document n'est pas pertinent ?
+  [2, (rng) => {
+    const s = rng.pick(SUJETS_DOC);
+    const intrus = maj(rng.pick(SUJETS_DOC.filter((x) => x.g !== s.g).flatMap((x) => x.docs)));
+    const choix = rng.shuffle([intrus, ...s.docs.map(maj)]);
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(intrus),
+      enonce: `Question de recherche : « ${s.q} » Quel document n'est pas pertinent pour y répondre ?`,
+      explication: `${intrus} : ce document parle d'un autre sujet. Les trois autres aident à répondre à la question.`,
+      _signature: `npert|${s.q}|${intrus}|${choix.join(',')}`, cleContenu: `npert|${s.q}|${intrus}`,
+      difficulte: 2,
+    };
+  }],
+  // Pourquoi ce document ne convient-il pas ?
+  [3, (rng) => {
+    const s = rng.pick(NON_PERT);
+    const d = rng.pick(s.docs);
+    return {
+      ...qcmFixe(RAISONS, RAISONS[d.r]),
+      enonce: `Question de recherche : « ${s.q} »\nDocument : ${d.t}.\nPourquoi ce document n'est-il pas pertinent ?`,
+      explication: `${RAISONS[d.r]} Un document pertinent doit parler du bon sujet, de la bonne époque et du bon lieu.`,
+      _signature: `rais|${s.q}|${d.t}`, cleContenu: `rais|${s.q}|${d.t}`,
+      difficulte: 3,
+    };
+  }],
+  // Intention de l'auteur
+  [2, (rng) => {
+    const d = rng.pick(DOCS_INTENTION);
+    const q = qcm(rng, INTENTIONS[d.i], INTENTIONS.filter((_, k) => !d.ex.includes(k)));
+    return {
+      ...q,
+      enonce: `Document : ${d.t}\nQuelle est l'intention de l'auteur ?`,
+      explication: `${INTENTIONS[d.i]} : c'est ce que cherche à faire l'auteur de ce document. Se demander « pourquoi ce document a-t-il été fait ? » aide à le critiquer.`,
+      _signature: `int|${d.t}|${cle(q.choix)}`, cleContenu: `int|${d.t}`,
+      difficulte: 2,
+    };
+  }],
+  // Ce qu'on lit / ce qu'on peut en déduire
+  [2, (rng) => {
+    const d = rng.pick(INFERER);
+    const q = qcm(rng, d.ok, [...d.lu, ...d.faux], 3);
+    return {
+      ...q,
+      enonce: `${d.doc}\nQuelle information n'est pas écrite dans le document, mais peut en être déduite ?`,
+      explication: `« ${d.ok.replace(/\.$/, '')} » : on le déduit du document, mais ce n'est pas écrit. Au contraire, ${d.lu.map((t) => `« ${t.replace(/\.$/, '')} »`).join(' et ')} : cela, on le lit directement dans le document.`,
+      _signature: `inf|${d.doc}|${cle(q.choix)}`, cleContenu: `inf|${d.doc}`,
+      difficulte: 3,
+    };
+  }],
+]);
+
+// =====================================================================================
+// 12. Changements et continuités entre deux époques
+// =====================================================================================
+const EPOQUES_CC = [
+  { a: 'la période gallo-romaine', b: 'le Haut Moyen Âge', ou: 'dans nos régions',
+    ch: ['des rois francs remplacent l\'empereur romain', 'le christianisme devient la religion de la plupart des habitants', 'de nombreux monastères sont construits', 'au nord de nos régions, une langue germanique s\'impose'],
+    co: ['la plupart des habitants vivent de l\'agriculture', 'au sud de nos régions, on parle toujours une langue issue du latin', 'on cultive toujours le blé pour faire du pain'] },
+  { a: 'le XVe siècle (avant 1492)', b: 'le XVIIe siècle', ou: 'en Europe',
+    ch: ['on mange de nouveaux aliments venus des Amériques, comme la tomate ou le cacao', 'les Européens savent que les Amériques existent', 'des navigateurs européens ont déjà fait le tour du monde'],
+    co: ['la plupart des gens vivent à la campagne et travaillent la terre', 'on voyage sur terre à pied, à cheval ou en charrette', 'les navires avancent grâce au vent qui gonfle leurs voiles', 'on fait toujours du pain avec du blé'] },
+  { a: 'les années 1950', b: 'aujourd\'hui', ou: 'en Belgique',
+    ch: ['il n\'y a plus aucune mine de charbon en activité', 'on paie en euros', 'on trouve des mosquées dans de nombreuses villes', 'beaucoup de familles ont un ordinateur et un smartphone', 'on mange couramment des pizzas, du couscous ou des kebabs'],
+    co: ['la Belgique est un royaume, avec un roi', 'Bruxelles est la capitale du pays', 'des personnes venues d\'autres pays s\'installent en Belgique pour y travailler', 'on fête la Saint-Nicolas le 6 décembre'] },
+  { a: 'la période gallo-romaine', b: 'aujourd\'hui', ou: 'dans nos régions',
+    ch: ['on n\'écrit plus en latin, mais en français, en néerlandais ou en allemand', 'on se déplace en voiture et en train', 'on s\'éclaire à l\'électricité', 'le christianisme et d\'autres religions ont remplacé les dieux romains'],
+    co: ['certaines routes suivent encore le tracé des chaussées romaines', 'beaucoup de mots français viennent du latin', 'des villes fondées par les Romains, comme Tongres et Arlon, existent toujours', 'on utilise des pièces de monnaie pour acheter'] },
+];
+const COL_CC = ['Changement', 'Continuité'];
+const TABLEAU_CC = [
+  { th: 'Énergie principale', a: 'charbon', b: 'gaz, pétrole…', co: false },
+  { th: 'Monnaie', a: 'franc belge', b: 'euro', co: false },
+  { th: 'Mines de charbon', a: 'très nombreuses', b: 'toutes fermées', co: false },
+  { th: 'Lieux de culte', a: 'surtout des églises', b: 'églises, mosquées…', co: false },
+  { th: 'Pour communiquer', a: 'lettre, téléphone', b: 'smartphone', co: false },
+  { th: 'Capitale', a: 'Bruxelles', b: 'Bruxelles', co: true },
+  { th: 'Chef de l\'État', a: 'un roi', b: 'un roi', co: true },
+  { th: 'Saint-Nicolas', a: 'le 6 décembre', b: 'le 6 décembre', co: true },
+];
+function svgTableauCC(lignes) {
+  const h = 40 + lignes.length * 30;
+  const s = [svgOuvrir(400, h)];
+  const xs = [8, 150, 271, 392];
+  s.push(`<rect x="8" y="8" width="384" height="26" fill="#e8eef7" stroke="#1c2333" stroke-width="1"/>`);
+  ['', 'En 1950', 'Aujourd\'hui'].forEach((t, i) => s.push(`<text x="${(xs[i] + xs[i + 1]) / 2}" y="26" font-size="13" font-weight="bold" text-anchor="middle" fill="#1c2333">${esc(t)}</text>`));
+  lignes.forEach((l, i) => {
+    const y = 34 + i * 30;
+    s.push(`<rect x="8" y="${y}" width="384" height="30" fill="#ffffff" stroke="#1c2333" stroke-width="1"/>`);
+    s.push(`<text x="14" y="${y + 19}" font-size="12.5" font-weight="bold" fill="#1c2333">${esc(l.th)}</text>`);
+    s.push(`<text x="210.5" y="${y + 19}" font-size="12" text-anchor="middle" fill="#1c2333">${esc(l.a)}</text>`);
+    s.push(`<text x="331.5" y="${y + 19}" font-size="12" text-anchor="middle" fill="#1c2333">${esc(l.b)}</text>`);
+  });
+  for (const x of xs.slice(1, 3)) s.push(`<line x1="${x}" y1="8" x2="${x}" y2="${h - 6}" stroke="#1c2333" stroke-width="1"/>`);
+  s.push('</svg>');
+  return s.join('');
+}
+const DEF_CC = [
+  { q: 'En histoire, qu\'est-ce qu\'une continuité ?', ok: 'Quelque chose qui reste pareil d\'une époque à l\'autre',
+    ko: ['Quelque chose qui change d\'une époque à l\'autre', 'Un événement qui se passe en une seule journée', 'La date de début d\'une période'],
+    expl: 'Une continuité (ou permanence) est ce qui ne change pas entre deux époques. Un changement est ce qui est différent.' },
+  { q: 'En histoire, qu\'est-ce qu\'un changement ?', ok: 'Quelque chose qui est différent d\'une époque à l\'autre',
+    ko: ['Quelque chose qui reste pareil d\'une époque à l\'autre', 'Un document écrit à l\'époque des faits', 'Une période de mille ans'],
+    expl: 'Un changement, c\'est ce qui est différent entre deux époques. Ce qui reste pareil s\'appelle une continuité (ou permanence).' },
+];
+
+const changeContinue = famille('cc', [
+  // Grille changement / continuité
+  [5, (rng) => {
+    const e = rng.pick(EPOQUES_CC);
+    const pool = [...e.ch.map((t) => ({ t, c: 0 })), ...e.co.map((t) => ({ t, c: 1 }))];
+    const items = tirerMixte(rng, pool, 4, (x) => x.c);
+    if (!items) return null;
+    return {
+      ...grilleQ(items, COL_CC),
+      enonce: `Compare ${e.a} et ${e.b}, ${e.ou}. Chaque phrase décrit la situation ${e.b === 'aujourd\'hui' ? 'd\'aujourd\'hui' : `pendant ${e.b}`}. Est-ce un changement ou une continuité (ce qui ne change pas) par rapport ${e.a.replace(/^les /, 'aux ').replace(/^le /, 'au ').replace(/^(?!au |aux )/, 'à ')} ?`,
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'changement' : 'continuité'}`).join(' ; ')) + '.',
+      _signature: `gr|${e.a}|${e.b}|${cle(items.map((x) => x.t))}`, cleContenu: `gr|${e.a}|${e.b}|${cle(items.map((x) => x.t))}`,
+      difficulte: 2,
+    };
+  }],
+  // QCM : un changement parmi des continuités (ou l'inverse)
+  [4, (rng) => {
+    const e = rng.pick(EPOQUES_CC);
+    const cherche = rng.next() < 0.5 ? 'ch' : 'co';
+    const bonne = maj(rng.pick(e[cherche]));
+    const q = qcm(rng, bonne, e[cherche === 'ch' ? 'co' : 'ch'].map(maj));
+    return {
+      ...q,
+      enonce: `Entre ${e.a} et ${e.b}, ${e.ou}, laquelle de ces phrases décrit ${cherche === 'ch' ? 'un changement' : 'une continuité (quelque chose qui ne change pas)'} ?`,
+      explication: `${bonne} : c'est ${cherche === 'ch' ? 'un changement' : 'une continuité'}. Les autres phrases décrivent ${cherche === 'ch' ? 'des continuités' : 'des changements'}.`,
+      _signature: `q|${e.a}|${e.b}|${cherche}|${bonne}|${cle(q.choix)}`, cleContenu: `q|${e.a}|${e.b}|${cherche}|${bonne}`,
+      difficulte: 2,
+    };
+  }],
+  // Tableau à double entrée (1950 / aujourd'hui)
+  [3, (rng) => {
+    const cherche = rng.next() < 0.6;
+    const cible = rng.pick(TABLEAU_CC.filter((x) => x.co === cherche));
+    const autres = rng.shuffle(TABLEAU_CC.filter((x) => x.co !== cherche)).slice(0, 3);
+    const lignes = rng.shuffle([cible, ...autres]);
+    const choix = lignes.map((l) => l.th);
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(cible.th), figure: svgTableauCC(lignes),
+      enonce: `Observe ce tableau qui compare la Belgique en 1950 et aujourd'hui. Dans quelle ligne observes-tu ${cherche ? 'une continuité (quelque chose qui n\'a pas changé)' : 'un changement'} ?`,
+      explication: `« ${cible.th} » : ${cible.a} en 1950, ${cible.b} aujourd'hui. ${cherche ? 'C\'est pareil : une continuité.' : 'C\'est différent : un changement.'} Dans les autres lignes, ${cherche ? 'les deux colonnes sont différentes' : 'les deux colonnes sont identiques'}.`,
+      _signature: `tab|${lignes.map((l) => l.th).join(',')}|${cherche}`, cleContenu: `tab|${cle(lignes.map((l) => l.th))}|${cherche}`,
+      difficulte: 1,
+    };
+  }],
+  // Vrai / faux
+  [2, (rng) => {
+    const e = rng.pick(EPOQUES_CC);
+    const estCh = rng.next() < 0.5;
+    const t = rng.pick(estCh ? e.ch : e.co);
+    const ditCh = rng.next() < 0.5;
+    return {
+      type: 'vrai_faux',
+      enonce: `Vrai ou faux ? Entre ${e.a} et ${e.b}, ${e.ou}, « ${t} » est ${ditCh ? 'un changement' : 'une continuité'}.`,
+      reponse: ditCh === estCh,
+      explication: `${maj(t)} : c'est ${estCh ? 'un changement (c\'est différent d\'une époque à l\'autre)' : 'une continuité (c\'est pareil aux deux époques)'}.`,
+      _signature: `vf|${e.a}|${e.b}|${t}|${ditCh}`,
+      difficulte: 2,
+    };
+  }],
+  [1, (rng) => ({ ...depuisBanque(rng, DEF_CC, 'def'), difficulte: 1 })],
+]);
+
+// =====================================================================================
+// 13. Rappel P5 : le peuplement de la Belgique (base « hg-provinces », Statbel 1er janvier 2024)
+// =====================================================================================
+const REGIONS_POP = [
+  { nom: 'la Région flamande', pop: 6821770, sup: 13625 },
+  { nom: 'la Région wallonne', pop: 3692283, sup: 16901 },
+  { nom: 'la Région de Bruxelles-Capitale', pop: 1249597, sup: 162 },
+];
+const BELGIQUE_POP = 11763650;
+const millions = (p) => `${n(Math.round(p / 1e5) / 10)} million${p >= 1.95e6 ? 's' : ''}`;
+const ESPACES_BE = {
+  peuples: ['L\'espace Bruxelles-Gand-Anvers-Louvain', 'Le sillon Sambre-et-Meuse (de Charleroi à Liège)'],
+  vides: ['L\'Ardenne', 'Le plateau des Hautes Fagnes', 'La Famenne'],
+};
+const VILLES_ESPACES = [
+  ...['Charleroi', 'Namur', 'Liège', 'Huy', 'Seraing', 'Andenne'].map((t) => ({ t, c: 0 })),
+  ...['Bruxelles', 'Gand', 'Anvers', 'Louvain', 'Malines'].map((t) => ({ t, c: 1 })),
+];
+const COL_ESPACES = ['Sillon Sambre-et-Meuse', 'Espace Bruxelles-Gand-Anvers-Louvain'];
+const BANQUE_PEUPL = [
+  { q: 'Quelle est la province la plus peuplée de Belgique ?', ok: 'La province d\'Anvers', ko: ['La province de Hainaut', 'La province de Liège', 'La province de Luxembourg', 'La province de Namur'],
+    expl: 'Au 1er janvier 2024, la province d\'Anvers comptait un peu plus de 1,9 million d\'habitants : c\'est la plus peuplée.' },
+  { q: 'Quelle est la province la moins peuplée de Belgique ?', ok: 'La province de Luxembourg', ko: ['La province d\'Anvers', 'La province de Hainaut', 'La province de Liège', 'La province de Flandre orientale'],
+    expl: 'La province de Luxembourg (environ 295 000 habitants en 2024) est la moins peuplée. C\'est aussi la plus grande province : sa densité est la plus faible du pays (environ 66 habitants par km²).' },
+  { q: 'Quelle province a la plus faible densité de population ?', ok: 'La province de Luxembourg', ko: ['La province d\'Anvers', 'La province du Brabant flamand', 'La province de Flandre orientale', 'La province du Brabant wallon'],
+    expl: 'Dans la province de Luxembourg, en Ardenne, il y a environ 66 habitants par km² : c\'est la densité la plus faible de Belgique.' },
+  { q: 'Quelle Région belge compte le plus d\'habitants ?', ok: 'La Région flamande', ko: ['La Région wallonne', 'La Région de Bruxelles-Capitale'],
+    expl: 'En 2024 : Région flamande ≈ 6,8 millions, Région wallonne ≈ 3,7 millions, Région de Bruxelles-Capitale ≈ 1,2 million d\'habitants.' },
+  { q: 'Quelle Région belge a la plus forte densité de population ?', ok: 'La Région de Bruxelles-Capitale', ko: ['La Région flamande', 'La Région wallonne'],
+    expl: 'La Région de Bruxelles-Capitale compte environ 1,2 million d\'habitants sur seulement 162 km² : plus de 7 000 habitants par km² !' },
+  { q: 'Quelle est la commune la plus peuplée de Belgique ?', ok: 'Anvers', ko: ['Gand', 'Charleroi', 'Liège', 'Namur'],
+    expl: 'La commune d\'Anvers compte plus d\'un demi-million d\'habitants : c\'est la plus peuplée du pays.' },
+  { q: 'Quelles sont les deux villes les plus peuplées de Wallonie ?', ok: 'Charleroi et Liège', ko: ['Namur et Mons', 'Arlon et Bastogne', 'Wavre et Dinant'],
+    expl: 'Charleroi et Liège, deux villes du sillon Sambre-et-Meuse, comptent chacune environ 200 000 habitants.' },
+  { q: 'Pourquoi le sillon Sambre-et-Meuse est-il très peuplé ?', ok: 'Les vallées de la Sambre et de la Meuse ont attiré mines, usines et villes.',
+    ko: ['C\'est la région la plus haute de Belgique.', 'C\'est une grande forêt protégée.', 'Il n\'y a ni route ni rivière.'],
+    expl: 'Le long de la Sambre et de la Meuse se sont développées les mines de charbon et les industries : beaucoup de gens sont venus y travailler et y habiter (Charleroi, Namur, Liège).' },
+  { q: 'Pourquoi l\'Ardenne est-elle peu peuplée ?', ok: 'C\'est un plateau élevé, couvert de forêts, au climat plus froid et plus humide.',
+    ko: ['C\'est une grande plaine couverte de villes.', 'C\'est la région où se trouvent les plus grands ports.', 'Elle est située au bord de la mer du Nord.'],
+    expl: 'En Ardenne, le relief est plus élevé, les forêts nombreuses et le climat plus rude : il y a peu de grandes villes et la densité est faible.' },
+];
+
+const peuplementBe = famille('pb', [
+  // Comparer des provinces à partir des données (population totale ≠ densité)
+  [5, (rng, modele) => {
+    const provs = (modele.items ?? []).filter((x) => x.pop && x.sup);
+    if (provs.length < 4) return null;
+    const k = rng.int(3, 4);
+    const tires = rng.shuffle(provs).slice(0, k);
+    const sorte = rng.pick(['dense', 'dense', 'peu_dense', 'peuple']);
+    const val = (p) => (sorte === 'peuple' ? p.pop : p.pop / p.sup);
+    const tri = tires.slice().sort((a, b) => val(b) - val(a));
+    const bon = sorte === 'peu_dense' ? tri[tri.length - 1] : tri[0];
+    const second = sorte === 'peu_dense' ? tri[tri.length - 2] : tri[1];
+    const ratio = Math.max(val(bon), val(second)) / Math.min(val(bon), val(second));
+    if (ratio < 1.15) return null;
+    const pop = (p) => Math.round(p.pop / 1000) * 1000;
+    const donnees = tires.map((p) => `${maj(p.nom)} : ${n(pop(p))} habitants pour ${n(p.sup)} km²`).join('\n');
+    const q = { type: 'qcm', choix: tires.map((p) => maj(p.nom)), reponse: tires.indexOf(bon) };
+    const dens = tires.map((p) => `${p.court} ≈ ${n(Math.round(p.pop / p.sup))} hab./km²`).join(' ; ');
+    return {
+      ...q,
+      enonce: `Population au 1er janvier 2024 (Statbel) :\n${donnees}\n${sorte === 'peuple' ? 'Quelle province compte le plus d\'habitants ?' : sorte === 'dense' ? 'Quelle province a la plus forte densité de population ?' : 'Quelle province a la plus faible densité de population ?'}`,
+      explication: sorte === 'peuple'
+        ? `On compare le nombre total d'habitants : ${bon.nom} en a le plus. (Densités : ${dens}.)`
+        : `Densité = nombre d'habitants ÷ superficie. ${dens}. ${sorte === 'dense' ? 'La plus forte' : 'La plus faible'} : ${bon.nom}.`,
+      _signature: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`, cleContenu: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`,
+      difficulte: sorte === 'peuple' ? 1 : 3,
+    };
+  }],
+  // Espaces très peuplés / peu peuplés
+  [3, (rng) => {
+    const peu = rng.next() < 0.5;
+    const bonne = rng.pick(peu ? ESPACES_BE.vides : ESPACES_BE.peuples);
+    const q = qcm(rng, bonne, peu ? ESPACES_BE.peuples : ESPACES_BE.vides, peu ? 2 : 3);
+    return {
+      ...q,
+      enonce: `Lequel de ces espaces de Belgique est ${peu ? 'peu peuplé' : 'très peuplé'} ?`,
+      explication: 'Les espaces les plus peuplés de Belgique sont l\'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège). L\'Ardenne et les Hautes Fagnes (plateaux élevés, boisés, au climat rude) ainsi que la Famenne (région rurale, sans grande ville) sont peu peuplées.',
+      _signature: `esp|${peu}|${bonne}|${cle(q.choix)}`, cleContenu: `esp|${peu}|${bonne}`,
+      difficulte: 1,
+    };
+  }],
+  // Villes → espace peuplé
+  [3, (rng) => {
+    const items = tirerMixte(rng, VILLES_ESPACES, 4, (x) => x.c);
+    if (!items) return null;
+    return {
+      ...grilleQ(items, COL_ESPACES),
+      enonce: 'Ces villes se trouvent dans un des deux espaces les plus peuplés de Belgique. Lequel ?',
+      explication: 'Sillon Sambre-et-Meuse : Charleroi, Namur, Andenne, Huy, Seraing, Liège (le long de la Sambre et de la Meuse). Espace Bruxelles-Gand-Anvers-Louvain : Bruxelles, Gand, Anvers, Louvain et Malines.',
+      _signature: `vil|${cle(items.map((x) => x.t))}`, cleContenu: `vil|${cle(items.map((x) => x.t))}`,
+      difficulte: 2,
+    };
+  }],
+  // Ordres de grandeur (au dixième de million)
+  [3, (rng) => {
+    const terr = rng.pick([...REGIONS_POP, { nom: 'la Belgique', pop: BELGIQUE_POP }]);
+    const bonne = `Environ ${millions(terr.pop)}`;
+    const faux = [...REGIONS_POP, { pop: BELGIQUE_POP }].filter((x) => x.pop !== terr.pop).map((x) => `Environ ${millions(x.pop)}`);
+    const q = qcm(rng, bonne, faux);
+    return {
+      ...q,
+      enonce: `Au 1er janvier 2024, environ combien d'habitants compte ${terr.nom} ?`,
+      explication: `${maj(terr.nom)} compte environ ${millions(terr.pop)} d'habitants. Repères 2024 : Belgique ≈ 11,8 millions ; Région flamande ≈ 6,8 millions ; Région wallonne ≈ 3,7 millions ; Région de Bruxelles-Capitale ≈ 1,2 million.`,
+      _signature: `og|${terr.nom}|${cle(q.choix)}`, cleContenu: `og|${terr.nom}`,
+      difficulte: 2,
+    };
+  }],
+  [3, (rng) => ({ ...depuisBanque(rng, BANQUE_PEUPL, 'bq'), difficulte: 2 })],
+  // Vrai / faux : population totale et densité des Régions
+  [2, (rng) => {
+    const [a, b] = rng.shuffle(REGIONS_POP).slice(0, 2);
+    const dense = rng.next() < 0.5;
+    const v = (x) => (dense ? x.pop / x.sup : x.pop);
+    return {
+      type: 'vrai_faux',
+      enonce: `Vrai ou faux ? ${maj(a.nom)} ${dense ? 'a une densité de population plus forte que' : 'compte plus d\'habitants que'} ${b.nom}.`,
+      reponse: v(a) > v(b),
+      explication: `${maj(a.nom)} : ≈ ${millions(a.pop)} d'habitants pour ${n(a.sup)} km² (≈ ${n(Math.round(a.pop / a.sup))} hab./km²). ${maj(b.nom)} : ≈ ${millions(b.pop)} d'habitants pour ${n(b.sup)} km² (≈ ${n(Math.round(b.pop / b.sup))} hab./km²).`,
+      _signature: `vf|${a.nom}|${b.nom}|${dense}`,
+      difficulte: 2,
+    };
+  }],
+]);
+
+// =====================================================================================
+// 14. Rappel P5 : vocabulaire de l'eau (hydrographie) et du relief
+// =====================================================================================
+// Schéma d'un fleuve : source en montagne, méandre, affluent, confluent, embouchure (estuaire ou delta).
+// Dessiné avec la mer à droite ; `miroir` la met à gauche.
+const ELEMENTS_EAU = {
+  source: { nom: 'la source', def: 'l\'endroit où le cours d\'eau prend naissance' },
+  meandre: { nom: 'un méandre', def: 'une grande boucle (courbe) du cours d\'eau' },
+  affluent: { nom: 'un affluent', def: 'un cours d\'eau qui se jette dans un autre cours d\'eau' },
+  confluent: { nom: 'le confluent', def: 'l\'endroit où deux cours d\'eau se rejoignent' },
+  embouchure: { nom: 'l\'embouchure', def: 'l\'endroit où le fleuve se jette dans la mer' },
+};
+function svgFleuve(delta, miroir, lettres) {
+  const X = (x) => (miroir ? 400 - x : x);
+  const P = (pts) => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${X(x)} ${y}`).join('');
+  const s = [svgOuvrir(400, 240)];
+  // Mer
+  s.push(`<path d="${P([[352, 0], [400, 0], [400, 240], [330, 240], [338, 190], [352, 150], [345, 110], [356, 60]])}Z" fill="#cfe6f7" stroke="#1f5fa8" stroke-width="1.2"/>`);
+  s.push(`<text x="${X(378)}" y="40" font-size="13" font-weight="bold" text-anchor="middle" fill="#1f5fa8">MER</text>`);
+  // Montagnes
+  for (const [x, y, h] of [[30, 70, 46], [64, 64, 56], [98, 72, 40], [230, 44, 40], [262, 38, 48]]) {
+    s.push(`<path d="${P([[x - 26, y], [x, y - h], [x + 26, y]])}Z" fill="#d9c7a0" stroke="#6b5a3a" stroke-width="1.2"/>`);
+    s.push(`<path d="${P([[x - 8, y - h + 14], [x, y - h], [x + 8, y - h + 14]])}" fill="none" stroke="#ffffff" stroke-width="2"/>`);
+  }
+  const eau = 'fill="none" stroke="#1f5fa8" stroke-linecap="round" stroke-linejoin="round"';
+  // Fleuve : source (70, 78) → méandre → confluent (250, 150) → embouchure
+  s.push(`<path d="M${X(70)} 78 C${X(80)} 110 ${X(70)} 130 ${X(100)} 150 C${X(130)} 170 ${X(120)} 210 ${X(160)} 205 C${X(200)} 200 ${X(165)} 150 ${X(205)} 145 L${X(250)} 150 C${X(280)} 154 ${X(300)} 156 ${X(318)} 158" ${eau} stroke-width="4"/>`);
+  // Affluent : depuis les montagnes de droite (246, 60) jusqu'au confluent
+  s.push(`<path d="M${X(246)} 62 C${X(258)} 90 ${X(236)} 110 ${X(250)} 150" ${eau} stroke-width="2.6"/>`);
+  if (delta) {
+    s.push(`<path d="${P([[314, 158], [366, 118], [374, 158], [366, 198]])}Z" fill="#dfe8c4" stroke="#6b7a3a" stroke-width="1.2"/>`);
+    s.push(`<path d="${P([[314, 158], [362, 124]])} M${X(314)} 158 L${X(372)} 158 M${X(314)} 158 L${X(362)} 192 M${X(338)} 158 L${X(352)} 140" ${eau} stroke-width="2.6"/>`);
+  } else {
+    s.push(`<path d="${P([[312, 154], [350, 136], [354, 178], [312, 162]])}Z" fill="#cfe6f7" stroke="#1f5fa8" stroke-width="2"/>`);
+  }
+  s.push(`<circle cx="${X(70)}" cy="78" r="3.5" fill="#1f5fa8"/>`);
+  const pos = { source: [70, 96], meandre: [150, 222], affluent: [228, 100], confluent: [250, 172], embouchure: [326, 182] };
+  for (const [k, l] of Object.entries(lettres)) {
+    const [x, y] = pos[k];
+    s.push(pastille(X(x), y, l));
+  }
+  s.push('</svg>');
+  return s.join('');
+}
+// Profil du relief : mer, plaine, plateau entaillé par une vallée (deux versants), montagne.
+function profilRelief(rng) {
+  const plaine = rng.pick([20, 40, 60, 80]);
+  const plateau = rng.int(3, 6) * 100;
+  const fond = plateau - rng.int(2, 3) * 100;
+  const sommet = rng.int(9, 13) * 100;
+  return { plaine, plateau, fond, sommet };
+}
+function svgRelief(p, lettres, pointAlt) {
+  const s = [svgOuvrir(400, 236)];
+  const Y = (a) => 196 - a * 0.13;
+  const pts = [[44, Y(0)], [70, Y(0)], [78, Y(p.plaine)], [140, Y(p.plaine)], [168, Y(p.plateau)], [212, Y(p.plateau)], [236, Y(p.fond)], [246, Y(p.fond)], [270, Y(p.plateau)], [300, Y(p.plateau)], [340, Y(p.sommet)], [368, Y(p.plateau + 100)], [392, Y(p.plateau + 50)], [392, 200], [44, 200]];
+  for (let a = 0; a <= 1300; a += 100) {
+    s.push(`<line x1="44" y1="${r1(Y(a))}" x2="392" y2="${r1(Y(a))}" stroke="${a % 500 === 0 ? '#b8c0cc' : '#e3e7ee'}" stroke-width="1"/>`);
+    if (a % 200 === 0) s.push(`<text x="40" y="${r1(Y(a) + 4)}" font-size="12" text-anchor="end" fill="#1c2333">${n(a)}</text>`);
+  }
+  s.push(`<text x="8" y="16" font-size="12" font-weight="bold" fill="#1c2333">Altitude (m)</text>`);
+  s.push(`<path d="M44 ${r1(Y(0))} L70 ${r1(Y(0))} L70 200 L44 200 Z" fill="#cfe6f7" stroke="none"/>`);
+  s.push(`<path d="M${pts.slice(1).map(([x, y]) => `${x} ${r1(y)}`).join('L')}Z" fill="#e6d7b0" stroke="#6b5a3a" stroke-width="1.6" stroke-linejoin="round"/>`);
+  s.push(`<line x1="44" y1="${r1(Y(0))}" x2="70" y2="${r1(Y(0))}" stroke="#1f5fa8" stroke-width="2"/>`);
+  s.push(`<circle cx="241" cy="${r1(Y(p.fond) - 2)}" r="3.5" fill="#1f5fa8"/>`);
+  s.push('<line x1="44" y1="200" x2="392" y2="200" stroke="#1c2333" stroke-width="1.2"/><line x1="44" y1="20" x2="44" y2="200" stroke="#1c2333" stroke-width="1.2"/>');
+  const pos = { mer: [57, Y(0) + 14], plaine: [108, Y(p.plaine) - 16], plateau: [190, Y(p.plateau) - 16], vallee: [241, Y(p.fond) + 16], versant: [258, (Y(p.fond) + Y(p.plateau)) / 2 - 2], montagne: [340, Y(p.sommet) - 16] };
+  for (const [k, l] of Object.entries(lettres)) s.push(pastille(pos[k][0], pos[k][1], l));
+  if (pointAlt) {
+    const [x, a] = pointAlt;
+    s.push(`<circle cx="${x}" cy="${r1(Y(a))}" r="4.5" fill="#b3261e" stroke="#ffffff" stroke-width="1.5"/>`);
+    s.push(pastille(x, Y(a) - 17, pointAlt[2]));
+  }
+  s.push('</svg>');
+  return s.join('');
+}
+const ELEMENTS_RELIEF = {
+  plaine: { nom: 'une plaine', def: 'une surface plane et peu élevée, où les cours d\'eau sont peu ou pas encaissés' },
+  plateau: { nom: 'un plateau', def: 'une surface assez plane, plus élevée, dans laquelle les cours d\'eau sont encaissés (ils creusent des vallées)' },
+  vallee: { nom: 'une vallée', def: 'un creux allongé, creusé par un cours d\'eau' },
+  versant: { nom: 'un versant', def: 'une pente qui descend vers le fond d\'une vallée' },
+  montagne: { nom: 'une montagne', def: 'un relief d\'altitude élevée, avec de fortes pentes' },
+  mer: { nom: 'la mer', def: 'le niveau 0 à partir duquel on mesure l\'altitude' },
+};
+const VOCAB_EAU = [
+  { def: 'L\'endroit où un cours d\'eau prend naissance', ok: 'La source', ko: ['L\'embouchure', 'Le confluent', 'Le méandre'] },
+  { def: 'L\'endroit où deux cours d\'eau se rejoignent', ok: 'Le confluent', ko: ['La source', 'L\'embouchure', 'Le delta'] },
+  { def: 'Un cours d\'eau qui se jette dans un autre cours d\'eau', ok: 'Un affluent', ko: ['Un fleuve', 'Un estuaire', 'Un méandre'] },
+  { def: 'L\'endroit où un fleuve se jette dans la mer', ok: 'L\'embouchure', ko: ['La source', 'Le confluent', 'Le méandre'] },
+  { def: 'Une embouchure large, en forme d\'entonnoir, où la marée remonte', ok: 'Un estuaire', ko: ['Un delta', 'Une source', 'Un méandre'] },
+  { def: 'Une embouchure où le fleuve se divise en plusieurs bras, formant une sorte de triangle', ok: 'Un delta', ko: ['Un estuaire', 'Un confluent', 'Une source'] },
+  { def: 'Une grande boucle que forme un cours d\'eau', ok: 'Un méandre', ko: ['Un delta', 'Un confluent', 'Une source'] },
+  { def: 'Un cours d\'eau qui se jette dans la mer', ok: 'Un fleuve', ko: ['Un affluent', 'Un méandre', 'Un confluent'] },
+  { def: 'Une surface plane et peu élevée, où les cours d\'eau sont peu ou pas encaissés', ok: 'Une plaine', ko: ['Un plateau', 'Une montagne', 'Un versant'] },
+  { def: 'Une surface assez plane et élevée, entaillée par des cours d\'eau encaissés', ok: 'Un plateau', ko: ['Une plaine', 'Une vallée', 'Un versant'] },
+  { def: 'Un relief d\'altitude élevée, avec de fortes pentes', ok: 'Une montagne', ko: ['Une plaine', 'Un plateau', 'Une vallée'] },
+  { def: 'Un creux allongé creusé par un cours d\'eau', ok: 'Une vallée', ko: ['Un plateau', 'Une plaine', 'Un sommet'] },
+  { def: 'Chacune des deux pentes d\'une vallée', ok: 'Un versant', ko: ['Un sommet', 'Une plaine', 'Un confluent'] },
+  { def: 'La hauteur d\'un lieu par rapport au niveau de la mer', ok: 'L\'altitude', ko: ['La longueur', 'La profondeur', 'La latitude'] },
+];
+const BELGIQUE_EAU = [
+  { q: 'La Sambre se jette dans la Meuse à Namur. Pour la Meuse, la Sambre est…', ok: 'un affluent', ko: ['un fleuve', 'un estuaire', 'un delta'],
+    expl: 'La Sambre se jette dans un autre cours d\'eau (la Meuse) : c\'est un affluent de la Meuse.' },
+  { q: 'Namur est construite à l\'endroit où la Sambre rejoint la Meuse. Cet endroit s\'appelle…', ok: 'un confluent', ko: ['une source', 'une embouchure', 'un méandre'],
+    expl: 'Le confluent est l\'endroit où deux cours d\'eau se rejoignent. Liège (Ourthe et Meuse) et Gand (Lys et Escaut) sont aussi des villes de confluent.' },
+  { q: 'L\'Escaut se jette dans la mer du Nord, aux Pays-Bas, par une large embouchure en forme d\'entonnoir. Comment appelle-t-on ce type d\'embouchure ?', ok: 'Un estuaire', ko: ['Un delta', 'Un confluent', 'Un méandre'],
+    expl: 'Une embouchure large et évasée, où la marée remonte, est un estuaire. L\'estuaire de l\'Escaut mène au port d\'Anvers.' },
+  { q: 'En Égypte, le Nil se divise en plusieurs bras avant de se jeter dans la mer Méditerranée. Comment appelle-t-on cette embouchure ?', ok: 'Un delta', ko: ['Un estuaire', 'Un confluent', 'Une source'],
+    expl: 'Le Nil forme un delta : il se divise en plusieurs bras, sur une zone en forme de triangle (comme la lettre grecque delta, Δ).' },
+  { q: 'La Meuse se jette dans la mer du Nord. C\'est donc…', ok: 'un fleuve', ko: ['une rivière', 'un affluent', 'un ruisseau'],
+    expl: 'Un fleuve se jette dans la mer ; une rivière se jette dans un autre cours d\'eau. La Meuse et l\'Escaut sont les deux grands fleuves de Belgique.' },
+  { q: 'Dans quel pays la Meuse prend-elle sa source ?', ok: 'En France', ko: ['En Belgique', 'Aux Pays-Bas', 'En Allemagne'],
+    expl: 'La Meuse prend sa source en France (plateau de Langres), traverse la Belgique (Dinant, Namur, Liège) et se jette dans la mer du Nord aux Pays-Bas.' },
+  { q: 'L\'Ardenne est une région élevée, assez plane, où les rivières coulent au fond de vallées profondes. C\'est…', ok: 'un plateau', ko: ['une plaine', 'une montagne', 'un delta'],
+    expl: 'L\'Ardenne est un plateau : une surface assez plane et élevée, entaillée par des vallées encaissées (Semois, Ourthe, Amblève…).' },
+  { q: 'La Flandre, près de la mer du Nord, est une région basse et plate. C\'est…', ok: 'une plaine', ko: ['un plateau', 'une montagne', 'un versant'],
+    expl: 'La basse Belgique (Flandre, polders) est une plaine : une surface plane et peu élevée.' },
+  { q: 'Quelle est l\'altitude du point le plus haut de Belgique, le signal de Botrange ?', ok: 'Environ 700 m', ko: ['Environ 70 m', 'Environ 2 000 m', 'Environ 4 800 m'],
+    expl: 'Le signal de Botrange, dans les Hautes Fagnes, culmine à 694 m. Le mont Blanc, le plus haut sommet des Alpes, dépasse 4 800 m.' },
+  { q: 'Près de Bouillon, la Semois dessine de grandes boucles. Comment appelle-t-on ces boucles ?', ok: 'Des méandres', ko: ['Des deltas', 'Des confluents', 'Des estuaires'],
+    expl: 'Un méandre est une grande boucle d\'un cours d\'eau. La Semois en forme de nombreux, autour de Bouillon notamment.' },
+];
+
+const eauRelief = famille('er', [
+  // Schéma d'un fleuve : lettre → élément
+  [5, (rng) => {
+    const delta = rng.next() < 0.5; const miroir = rng.next() < 0.5;
+    const k = rng.int(3, 5);
+    const elts = rng.shuffle(Object.keys(ELEMENTS_EAU)).slice(0, k);
+    const ls = rng.shuffle(LETTRES).slice(0, k);
+    const lettres = Object.fromEntries(elts.map((e, i) => [e, ls[i]]));
+    const cible = rng.pick(elts);
+    const noms = Object.values(ELEMENTS_EAU).map((x) => maj(x.nom));
+    const q = qcm(rng, maj(ELEMENTS_EAU[cible].nom), noms);
+    return {
+      ...q, figure: svgFleuve(delta, miroir, lettres),
+      enonce: `Observe ce schéma d'un fleuve. Que désigne la lettre ${lettres[cible]} ?`,
+      explication: `La lettre ${lettres[cible]} désigne ${ELEMENTS_EAU[cible].nom} : ${ELEMENTS_EAU[cible].def}.`,
+      _signature: `fl|${delta}|${miroir}|${elts.map((e) => e + lettres[e]).join(',')}|${cible}|${cle(q.choix)}`,
+      cleContenu: `fl|${delta}|${miroir}|${elts.map((e) => e + lettres[e]).join(',')}|${cible}`,
+      difficulte: 2,
+    };
+  }],
+  // Schéma d'un fleuve : estuaire ou delta ?
+  [2, (rng) => {
+    const delta = rng.next() < 0.5; const miroir = rng.next() < 0.5;
+    const l = rng.pick(LETTRES);
+    const choix = ['Un estuaire', 'Un delta'];
+    return {
+      type: 'qcm', choix, reponse: delta ? 1 : 0, figure: svgFleuve(delta, miroir, { embouchure: l }),
+      enonce: `Observe ce schéma. Quelle forme a l'embouchure du fleuve (lettre ${l}) ?`,
+      explication: delta
+        ? 'Le fleuve se divise en plusieurs bras avant d\'atteindre la mer : c\'est un delta (comme le Nil ou le Rhône).'
+        : 'L\'embouchure s\'élargit en forme d\'entonnoir : c\'est un estuaire (comme l\'Escaut ou la Seine).',
+      _signature: `ed|${delta}|${miroir}|${l}`, cleContenu: `ed|${delta}|${miroir}|${l}`,
+      difficulte: 2,
+    };
+  }],
+  // Profil du relief : lettre → élément
+  [4, (rng) => {
+    const p = profilRelief(rng);
+    const k = rng.int(3, 5);
+    const elts = rng.shuffle(Object.keys(ELEMENTS_RELIEF).filter((e) => e !== 'mer')).slice(0, k);
+    const ls = rng.shuffle(LETTRES).slice(0, k);
+    const lettres = Object.fromEntries(elts.map((e, i) => [e, ls[i]]));
+    const cible = rng.pick(elts);
+    const noms = Object.keys(ELEMENTS_RELIEF).filter((e) => e !== 'mer').map((e) => maj(ELEMENTS_RELIEF[e].nom));
+    const q = qcm(rng, maj(ELEMENTS_RELIEF[cible].nom), noms);
+    return {
+      ...q, figure: svgRelief(p, lettres),
+      enonce: `Observe ce profil du relief. Que désigne la lettre ${lettres[cible]} ?`,
+      explication: `La lettre ${lettres[cible]} désigne ${ELEMENTS_RELIEF[cible].nom} : ${ELEMENTS_RELIEF[cible].def}.`,
+      _signature: `rel|${p.plaine},${p.plateau},${p.fond},${p.sommet}|${elts.map((e) => e + lettres[e]).join(',')}|${cible}|${cle(q.choix)}`,
+      cleContenu: `rel|${p.plaine},${p.plateau},${p.fond},${p.sommet}|${elts.map((e) => e + lettres[e]).join(',')}|${cible}`,
+      difficulte: 2,
+    };
+  }],
+  // Profil du relief : lire une altitude
+  [3, (rng) => {
+    const p = profilRelief(rng);
+    const l = rng.pick(LETTRES);
+    const quoi = rng.pick(['plateau', 'fond', 'sommet']);
+    const alt = p[quoi];
+    const x = quoi === 'plateau' ? rng.pick([184, 286]) : quoi === 'fond' ? 241 : 340;
+    const faux = rng.shuffle([alt - 200, alt - 100, alt + 100, alt + 200].filter((a) => a > 0)).slice(0, 3);
+    const choix = rng.shuffle([alt, ...faux]).map((a) => `${n(a)} m`);
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(`${n(alt)} m`), figure: svgRelief(p, {}, [x, alt, l]),
+      enonce: `Observe ce profil du relief. Quelle est l'altitude du point ${l} ?`,
+      explication: `On suit la ligne horizontale du point ${l} jusqu'à l'axe des altitudes : ${n(alt)} m. L'altitude est la hauteur par rapport au niveau de la mer (0 m). Chaque ligne du quadrillage représente 100 m.`,
+      _signature: `alt|${p.plaine},${p.plateau},${p.fond},${p.sommet}|${quoi}|${l}|${cle(choix)}`,
+      cleContenu: `alt|${p.plaine},${p.plateau},${p.fond},${p.sommet}|${quoi}|${l}`,
+      difficulte: 2,
+    };
+  }],
+  // Définitions
+  [3, (rng) => {
+    const it = rng.pick(VOCAB_EAU);
+    const q = qcm(rng, it.ok, it.ko);
+    return {
+      ...q,
+      enonce: `Quel mot correspond à cette définition : « ${it.def} » ?`,
+      explication: `${it.ok} : ${leLa(it.def)}.`,
+      _signature: `def|${it.ok}|${cle(q.choix)}`, cleContenu: `def|${it.ok}`,
+      difficulte: 1,
+    };
+  }],
+  [3, (rng) => ({ ...depuisBanque(rng, BELGIQUE_EAU, 'be'), difficulte: 2 })],
+]);
+
+// =====================================================================================
+// 15. Rappel P5 : comparer des vues aériennes (avant / après, habitat, ville / campagne)
+// =====================================================================================
+const VA = { cols: 8, rows: 5, w: 46, h: 28, x0: 16 };
+const COUL_VA = {
+  champ: '#f3e3a0', prairie: '#cfe8b0', foret: '#86b872', maisons: '#eeeeee', usine: '#d3d5da', immeubles: '#d6d6d6',
+};
+function celluleVA(type, x, y, rng) {
+  const { w, h } = VA;
+  const s = [`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${COUL_VA[type]}" stroke="#ffffff" stroke-width="1"/>`];
+  if (type === 'champ') for (let k = 1; k < 4; k++) s.push(`<line x1="${x + 3}" y1="${y + k * 7}" x2="${x + w - 3}" y2="${y + k * 7}" stroke="#cdb562" stroke-width="1"/>`);
+  if (type === 'foret') for (const [dx, dy] of [[10, 9], [24, 8], [37, 11], [16, 20], [31, 20]]) s.push(`<circle cx="${x + dx}" cy="${y + dy}" r="6" fill="#4f8a3e"/>`);
+  if (type === 'maisons') for (const [dx, dy] of [[5, 4], [25, 5], [9, 16], [29, 17]]) s.push(`<rect x="${x + dx}" y="${y + dy}" width="11" height="8" fill="#c0504d" stroke="#1c2333" stroke-width="0.8"/>`);
+  if (type === 'usine') s.push(`<rect x="${x + 4}" y="${y + 5}" width="30" height="17" fill="#8a8f99" stroke="#1c2333" stroke-width="0.8"/><rect x="${x + 36}" y="${y + 4}" width="6" height="18" fill="#5b6475"/>`);
+  if (type === 'immeubles') s.push(`<rect x="${x + 4}" y="${y + 4}" width="16" height="20" fill="#9aa0aa" stroke="#1c2333" stroke-width="0.8"/><rect x="${x + 25}" y="${y + 4}" width="17" height="20" fill="#9aa0aa" stroke="#1c2333" stroke-width="0.8"/>`);
+  return s.join('');
+}
+function vueVA(sc, y0, titre) {
+  const { cols, rows, w, h, x0 } = VA;
+  const s = [`<text x="${x0}" y="${y0 - 6}" font-size="13" font-weight="bold" fill="#1c2333">${esc(titre)}</text>`];
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) s.push(celluleVA(sc.g[r][c], x0 + c * w, y0 + r * h));
+  const yR = y0 + sc.rangRiviere * h;
+  s.push(`<path d="M${x0} ${yR} C${x0 + 60} ${yR - 12} ${x0 + 110} ${yR + 12} ${x0 + 184} ${yR} S${x0 + 300} ${yR - 10} ${x0 + cols * w} ${yR + 2}" fill="none" stroke="#3b82c4" stroke-width="5"/>`);
+  const xRo = x0 + sc.colRoute * w;
+  s.push(`<line x1="${xRo}" y1="${y0}" x2="${xRo}" y2="${y0 + rows * h}" stroke="#8a8f99" stroke-width="5"/>`);
+  if (sc.autoroute) {
+    const yA = y0 + sc.autoroute * h;
+    s.push(`<line x1="${x0}" y1="${yA}" x2="${x0 + cols * w}" y2="${yA}" stroke="#5b6475" stroke-width="9"/><line x1="${x0}" y1="${yA}" x2="${x0 + cols * w}" y2="${yA}" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="6 5"/>`);
+  }
+  s.push(`<rect x="${x0}" y="${y0}" width="${cols * w}" height="${rows * h}" fill="none" stroke="#1c2333" stroke-width="1.4"/>`);
+  return s.join('');
+}
+function legendeVA(y, types, autoroute) {
+  const items = [...types.map((t) => ({ t })), { t: 'route' }, ...(autoroute ? [{ t: 'autoroute' }] : []), { t: 'riviere' }];
+  const noms = { champ: 'Champs', prairie: 'Prairies', foret: 'Forêt', maisons: 'Maisons', usine: 'Usines', immeubles: 'Immeubles', route: 'Route', autoroute: 'Autoroute', riviere: 'Rivière' };
+  const s = [];
+  items.forEach((it, i) => {
+    const x = 16 + (i % 4) * 94; const yy = y + Math.floor(i / 4) * 22;
+    if (COUL_VA[it.t]) s.push(`<rect x="${x}" y="${yy}" width="16" height="13" fill="${COUL_VA[it.t]}" stroke="#1c2333" stroke-width="0.8"/>${it.t === 'maisons' ? `<rect x="${x + 4}" y="${yy + 3}" width="8" height="7" fill="#c0504d"/>` : it.t === 'foret' ? `<circle cx="${x + 8}" cy="${yy + 6.5}" r="5" fill="#4f8a3e"/>` : it.t === 'usine' ? `<rect x="${x + 3}" y="${yy + 3}" width="10" height="7" fill="#8a8f99"/>` : ''}`);
+    else s.push(`<line x1="${x}" y1="${yy + 6.5}" x2="${x + 16}" y2="${yy + 6.5}" stroke="${it.t === 'riviere' ? '#3b82c4' : it.t === 'autoroute' ? '#5b6475' : '#8a8f99'}" stroke-width="${it.t === 'autoroute' ? 8 : 5}"/>`);
+    s.push(`<text x="${x + 21}" y="${yy + 11}" font-size="12" fill="#1c2333">${noms[it.t]}</text>`);
+  });
+  return s.join('');
+}
+// Scène rurale de départ : champs et prairies, un bois, un village le long de la route, une rivière.
+function sceneVA(rng) {
+  const { cols, rows } = VA;
+  const g = Array.from({ length: rows }, () => Array.from({ length: cols }, () => (rng.next() < 0.55 ? 'champ' : 'prairie')));
+  const colRoute = rng.int(3, 5);
+  const rangRiviere = rng.pick([3, 4]);
+  // bois de 2 × 2 dans un coin
+  const fr = rng.pick([0, 3]); const fc = rng.pick([0, 6]);
+  for (const [r, c] of [[fr, fc], [fr, fc + 1], [fr + 1, fc], [fr + 1, fc + 1]]) g[r][c] = 'foret';
+  // village : 2 cellules contre la route
+  const vr = rng.int(1, 2);
+  g[vr][colRoute - 1] = 'maisons'; g[vr][colRoute] = 'maisons';
+  return { g, colRoute, rangRiviere, autoroute: 0 };
+}
+const copieVA = (sc) => ({ ...sc, g: sc.g.map((r) => r.slice()) });
+const voisins4 = (r, c) => [[r - 1, c], [r + 1, c], [r, c - 1], [r, c + 1]].filter(([a, b]) => a >= 0 && a < VA.rows && b >= 0 && b < VA.cols);
+const MODIFS_VA = {
+  lotissement: { txt: 'Des maisons ont été construites à la place de champs ou de prairies.', perm: 'Le nombre de maisons',
+    appl(sc, rng) {
+      const cand = []; sc.g.forEach((row, r) => row.forEach((t, c) => { if (t === 'maisons') for (const [a, b] of voisins4(r, c)) if (['champ', 'prairie'].includes(sc.g[a][b])) cand.push([a, b]); }));
+      const pris = rng.shuffle([...new Map(cand.map((x) => [x.join(), x])).values()]).slice(0, 3);
+      for (const [a, b] of pris) sc.g[a][b] = 'maisons';
+      return pris.length >= 2;
+    } },
+  deboisement: { txt: 'Une partie de la forêt a été abattue pour faire des champs.', perm: 'La surface couverte par la forêt', exclut: 'reboisement',
+    appl(sc, rng) {
+      const f = []; sc.g.forEach((row, r) => row.forEach((t, c) => { if (t === 'foret') f.push([r, c]); }));
+      const pris = rng.shuffle(f).slice(0, rng.int(2, 3));
+      for (const [a, b] of pris) sc.g[a][b] = 'champ';
+      return pris.length >= 2;
+    } },
+  reboisement: { txt: 'Des arbres ont été plantés sur d\'anciens champs : la forêt s\'est agrandie.', perm: 'La surface couverte par la forêt', exclut: 'deboisement',
+    appl(sc, rng) {
+      const cand = []; sc.g.forEach((row, r) => row.forEach((t, c) => { if (t === 'foret') for (const [a, b] of voisins4(r, c)) if (sc.g[a][b] === 'champ') cand.push([a, b]); }));
+      const pris = rng.shuffle([...new Map(cand.map((x) => [x.join(), x])).values()]).slice(0, 2);
+      for (const [a, b] of pris) sc.g[a][b] = 'foret';
+      return pris.length >= 2;
+    } },
+  zoning: { txt: 'Des usines (un zoning industriel) ont été construites.', perm: 'Le nombre d\'usines',
+    appl(sc, rng) {
+      const r0 = rng.pick([0, 4].filter((r) => sc.g[r][sc.colRoute] !== 'maisons' && sc.g[r][sc.colRoute] !== 'foret'));
+      if (r0 === undefined) return false;
+      const cells = [[r0, sc.colRoute], [r0, sc.colRoute - 1]].filter(([a, b]) => ['champ', 'prairie'].includes(sc.g[a][b]));
+      for (const [a, b] of cells) sc.g[a][b] = 'usine';
+      return cells.length === 2;
+    } },
+  autoroute: { txt: 'Une autoroute a été construite.', perm: 'Le réseau des routes',
+    appl(sc) { sc.autoroute = sc.rangRiviere === 3 ? 1 : 2; return true; } },
+};
+const PERMANENT_VA = ['Le tracé de la rivière'];
+const FAUX_VA = ['La rivière a changé de tracé.', 'La route principale a disparu.', 'Le village a été entièrement détruit.'];
+
+function avantApres(rng, nbMod) {
+  const avant = sceneVA(rng);
+  const apres = copieVA(avant);
+  const faites = [];
+  for (const k of rng.shuffle(Object.keys(MODIFS_VA))) {
+    if (faites.length === nbMod) break;
+    if (faites.some((f) => MODIFS_VA[f].exclut === k)) continue;
+    const essai = copieVA(apres);
+    if (MODIFS_VA[k].appl(essai, rng)) { Object.assign(apres, essai); faites.push(k); }
+  }
+  if (faites.length < nbMod) return null;
+  const a1 = rng.int(1965, 1985); const a2 = rng.int(2015, 2024);
+  const types = [...new Set([...avant.g.flat(), ...apres.g.flat()])];
+  const ordreT = ['champ', 'prairie', 'foret', 'maisons', 'usine', 'immeubles'].filter((t) => types.includes(t));
+  const yL = 26 + 140 + 30 + 140 + 14;
+  const hauteur = yL + Math.ceil((ordreT.length + 2 + (apres.autoroute ? 1 : 0)) / 4) * 22 + 4;
+  const figure = `${svgOuvrir(400, hauteur)}${vueVA(avant, 26, `Vue 1 : en ${a1}`)}${vueVA(apres, 26 + 140 + 30, `Vue 2 : en ${a2}`)}${legendeVA(yL, ordreT, apres.autoroute)}</svg>`;
+  const sig = `${avant.g.flat().join('').length}|${avant.g.map((r) => r.map((t) => t[0]).join('')).join('/')}|${apres.g.map((r) => r.map((t) => t[0]).join('')).join('/')}|${avant.colRoute}${avant.rangRiviere}${apres.autoroute}|${a1}|${a2}`;
+  return { figure, faites, a1, a2, sig };
+}
+
+// Habitat groupé, dispersé ou linéaire (une seule vue).
+function svgHabitat(rng, type) {
+  const W = 368; const H = 190; const x0 = 16; const y0 = 12;
+  const s = [svgOuvrir(400, 252)];
+  for (let r = 0; r < 5; r++) for (let c = 0; c < 8; c++) s.push(`<rect x="${x0 + c * 46}" y="${y0 + r * 38}" width="46" height="38" fill="${rng.next() < 0.55 ? COUL_VA.champ : COUL_VA.prairie}" stroke="#ffffff" stroke-width="1"/>`);
+  const maisons = [];
+  const route = rng.int(70, 120);
+  s.push(`<line x1="${x0}" y1="${y0 + route}" x2="${x0 + W}" y2="${y0 + route}" stroke="#8a8f99" stroke-width="6"/>`);
+  if (type === 'groupe') {
+    const cx = rng.int(120, 250); const cy = y0 + route;
+    s.push(`<line x1="${x0 + cx}" y1="${y0}" x2="${x0 + cx}" y2="${y0 + H}" stroke="#8a8f99" stroke-width="5"/>`);
+    for (let e = 0; e < 400 && maisons.length < 16; e++) {
+      const x = x0 + cx + rng.int(-58, 58); const y = cy + rng.int(-50, 50);
+      if (Math.abs(y - cy) < 9 || Math.abs(x - x0 - cx) < 9) continue;
+      if (maisons.every(([a, b]) => Math.abs(a - x) > 15 || Math.abs(b - y) > 13)) maisons.push([x, y]);
+    }
+  } else if (type === 'disperse') {
+    for (let e = 0; e < 400 && maisons.length < 7; e++) {
+      const x = x0 + rng.int(14, W - 14); const y = y0 + rng.int(12, H - 12);
+      if (Math.abs(y - y0 - route) < 12) continue;
+      if (maisons.every(([a, b]) => Math.hypot(a - x, b - y) > 80)) maisons.push([x, y]);
+    }
+    for (const [x, y] of maisons) s.push(`<line x1="${x}" y1="${y}" x2="${x}" y2="${y0 + route}" stroke="#b9a77a" stroke-width="2"/>`);
+  } else {
+    for (let x = x0 + rng.int(14, 30); x < x0 + W - 12; x += rng.int(24, 30)) {
+      maisons.push([x, y0 + route - 14]);
+      if (rng.next() < 0.8) maisons.push([x + rng.int(-4, 4), y0 + route + 14]);
+    }
+  }
+  for (const [x, y] of maisons) s.push(`<rect x="${x - 6}" y="${y - 5}" width="12" height="10" fill="#c0504d" stroke="#1c2333" stroke-width="0.9"/>`);
+  s.push(`<rect x="${x0}" y="${y0}" width="${W}" height="${H}" fill="none" stroke="#1c2333" stroke-width="1.4"/>`);
+  s.push(`<rect x="16" y="220" width="12" height="10" fill="#c0504d" stroke="#1c2333" stroke-width="0.9"/><text x="34" y="229" font-size="12" fill="#1c2333">Maison ou ferme</text>`);
+  s.push(`<line x1="150" y1="225" x2="168" y2="225" stroke="#8a8f99" stroke-width="5"/><text x="174" y="229" font-size="12" fill="#1c2333">Route</text>`);
+  s.push(`<rect x="230" y="219" width="16" height="12" fill="${COUL_VA.champ}" stroke="#1c2333" stroke-width="0.8"/><rect x="250" y="219" width="16" height="12" fill="${COUL_VA.prairie}" stroke="#1c2333" stroke-width="0.8"/><text x="272" y="229" font-size="12" fill="#1c2333">Champs, prairies</text>`);
+  s.push('</svg>');
+  return { figure: s.join(''), sig: maisons.map(([x, y]) => `${x},${y}`).join(';') };
+}
+const HABITATS = {
+  groupe: { nom: 'Un habitat groupé', expl: 'Les maisons sont serrées les unes contre les autres autour d\'un carrefour : c\'est un habitat groupé (un village).' },
+  disperse: { nom: 'Un habitat dispersé', expl: 'Les maisons (des fermes) sont isolées, loin les unes des autres, au milieu des champs : c\'est un habitat dispersé.' },
+  lineaire: { nom: 'Un habitat linéaire (en ruban)', expl: 'Les maisons sont alignées le long de la route : c\'est un habitat linéaire (en ruban).' },
+};
+
+const vuesAeriennes = famille('va', [
+  // Quel changement ?
+  [5, (rng) => {
+    const r = avantApres(rng, rng.int(1, 2));
+    if (!r) return null;
+    const bon = rng.pick(r.faites);
+    const pasFaites = Object.keys(MODIFS_VA).filter((k) => !r.faites.includes(k));
+    const q = qcm(rng, MODIFS_VA[bon].txt, [...pasFaites.map((k) => MODIFS_VA[k].txt), ...FAUX_VA]);
+    return {
+      ...q, figure: r.figure,
+      enonce: `Compare ces deux vues aériennes du même endroit. Quel changement s'est produit entre ${r.a1} et ${r.a2} ?`,
+      explication: `${MODIFS_VA[bon].txt}${r.faites.length > 1 ? ` On observe aussi : ${leLa(MODIFS_VA[r.faites.find((k) => k !== bon)].txt)}` : ''} La rivière et la route principale, elles, n'ont pas changé.`,
+      _signature: `ch|${r.sig}|${bon}|${cle(q.choix)}`, cleContenu: `ch|${r.sig}|${bon}`,
+      difficulte: 2,
+    };
+  }],
+  // Qu'est-ce qui n'a pas changé ?
+  [3, (rng) => {
+    const r = avantApres(rng, rng.int(2, 3));
+    if (!r) return null;
+    const perm = [...new Set(r.faites.map((k) => MODIFS_VA[k].perm))];
+    if (perm.length < 2) return null;
+    const bonne = rng.pick([...PERMANENT_VA, ...(r.faites.includes('autoroute') ? [] : ['Le tracé de la route principale'])]);
+    const q = qcm(rng, bonne, perm);
+    return {
+      ...q, figure: r.figure,
+      enonce: `Compare ces deux vues aériennes du même endroit (${r.a1} et ${r.a2}). Quel élément n'a pas changé ?`,
+      explication: `${bonne} est identique sur les deux vues : c'est une permanence. Ont changé : ${r.faites.map((k) => leLa(MODIFS_VA[k].txt).replace(/\.$/, '')).join(' ; ')}.`,
+      _signature: `pe|${r.sig}|${bonne}|${cle(q.choix)}`, cleContenu: `pe|${r.sig}|${bonne}`,
+      difficulte: 2,
+    };
+  }],
+  // Type d'habitat
+  [4, (rng) => {
+    const type = rng.pick(Object.keys(HABITATS));
+    const h = svgHabitat(rng, type);
+    const choix = Object.values(HABITATS).map((x) => x.nom);
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(HABITATS[type].nom), figure: h.figure, fiche: 'hg-paysages',
+      enonce: 'Observe cette vue aérienne. Quel type d\'habitat montre-t-elle ?',
+      explication: HABITATS[type].expl,
+      _signature: `hab|${type}|${h.sig}`, cleContenu: `hab|${type}|${h.sig}`,
+      difficulte: 1,
+    };
+  }],
+  // Ville ou campagne ?
+  [2, (rng) => {
+    const rural = sceneVA(rng);
+    const urbain = copieVA(rural);
+    urbain.g = urbain.g.map((row, r) => row.map((t, c) => (Math.abs(c - urbain.colRoute) <= 1 || r % 2 === 0 ? (rng.next() < 0.75 ? 'immeubles' : 'maisons') : (rng.next() < 0.3 ? 'usine' : 'immeubles'))));
+    urbain.g[rng.int(0, 4)][rng.pick([0, 7])] = 'prairie';
+    const urbainEn1 = rng.next() < 0.5;
+    const [v1, v2] = urbainEn1 ? [urbain, rural] : [rural, urbain];
+    const types = ['champ', 'prairie', 'foret', 'maisons', 'immeubles', 'usine'].filter((t) => [...v1.g.flat(), ...v2.g.flat()].includes(t));
+    const yL = 26 + 140 + 30 + 140 + 14;
+    const figure = `${svgOuvrir(400, yL + Math.ceil((types.length + 2) / 4) * 22 + 4)}${vueVA(v1, 26, 'Vue 1')}${vueVA(v2, 26 + 140 + 30, 'Vue 2')}${legendeVA(yL, types, 0)}</svg>`;
+    const chercheRural = rng.next() < 0.5;
+    const choix = ['Vue 1', 'Vue 2'];
+    const bonne = chercheRural === urbainEn1 ? 'Vue 2' : 'Vue 1';
+    return {
+      type: 'qcm', choix, reponse: choix.indexOf(bonne), figure, fiche: 'hg-paysages',
+      enonce: `Observe ces deux vues aériennes. Laquelle montre un paysage ${chercheRural ? 'rural (la campagne)' : 'urbain (la ville)'} ?`,
+      explication: `${bonne} : ${chercheRural ? 'on y voit surtout des champs, des prairies et un bois, avec un petit village : c\'est un paysage rural.' : 'on y voit surtout des immeubles, des maisons serrées et des usines : c\'est un paysage urbain.'}`,
+      _signature: `vc|${v1.g.flat().join('')}|${v2.g.flat().join('')}|${chercheRural}`, cleContenu: `vc|${v1.g.flat().join('')}|${v2.g.flat().join('')}|${chercheRural}`,
+      difficulte: 1,
+    };
+  }],
+]);
+
+// =====================================================================================
+// 16. Facultatif (formation économique P6) : produire et consommer autrement
+// =====================================================================================
+const EQUITABLE = {
+  ok: ['Le producteur de cacao reçoit un prix juste, fixé à l\'avance, qui lui permet de vivre de son travail.',
+    'Les enfants des cultivateurs vont à l\'école au lieu de travailler dans les plantations.',
+    'Une partie de l\'argent sert à construire un puits ou une école dans le village des producteurs.',
+    'Les producteurs de café se regroupent en coopérative et décident ensemble.'],
+  ko: ['Le café est acheté au prix le plus bas possible, même si le cultivateur ne peut pas en vivre.',
+    'Des enfants travaillent toute la journée dans les plantations de cacao.',
+    'L\'intermédiaire garde presque tout le bénéfice et le producteur reçoit très peu.',
+    'Les ouvriers travaillent sans contrat, sans pause et sans protection.'],
+};
+const ALTERNATIVES = {
+  ok: ['Acheter un vélo d\'occasion dans un magasin de seconde main', 'Faire réparer son grille-pain dans un « repair café »',
+    'Emprunter une perceuse à un voisin ou à une bibliothèque d\'outils', 'Échanger des vêtements trop petits dans une bourse aux vêtements',
+    'Louer une tente pour les vacances au lieu d\'en acheter une'],
+  ko: ['Acheter un smartphone neuf chaque année', 'Jeter une chaise dont un pied est cassé et en acheter une neuve',
+    'Acheter des vêtements neufs qu\'on ne portera qu\'une fois', 'Remplacer son vélo neuf dès qu\'un nouveau modèle sort'],
+};
+const BANQUE_CONSO = [
+  { q: 'Que fait-on quand on épargne ?', ok: 'On met de l\'argent de côté pour plus tard.', ko: ['On emprunte de l\'argent à une banque.', 'On dépense tout son argent tout de suite.', 'On paie une dette.'],
+    expl: 'Épargner, c\'est garder une partie de son argent pour plus tard (par exemple sur un compte d\'épargne). Emprunter, c\'est faire un crédit.' },
+  { q: 'Que fait-on quand on prend un crédit ?', ok: 'On emprunte de l\'argent qu\'il faudra rembourser, en payant en plus des intérêts.', ko: ['On reçoit de l\'argent en cadeau.', 'On met de l\'argent de côté.', 'On échange des objets sans argent.'],
+    expl: 'Un crédit est un prêt : la banque prête de l\'argent, qu\'il faut rembourser petit à petit, avec des intérêts (un supplément).' },
+  { q: 'Laquelle de ces actions est une mission d\'une banque ?', ok: 'Garder en sécurité l\'argent de ses clients et leur prêter de l\'argent', ko: ['Fabriquer les produits vendus dans les magasins', 'Voter les lois du pays', 'Soigner les malades'],
+    expl: 'Une banque reçoit l\'argent des clients (dépôts, épargne), gère les moyens de paiement (cartes, virements) et accorde des prêts (crédits).' },
+  { q: 'Des centaines de personnes donnent chacune un peu d\'argent sur internet pour aider un jeune agriculteur à acheter des vaches. Comment appelle-t-on ce mode de financement ?', ok: 'Le financement participatif', ko: ['Le crédit bancaire', 'L\'impôt', 'Le commerce équitable'],
+    expl: 'Dans le financement participatif, beaucoup de personnes apportent chacune une petite somme pour financer un projet.' },
+  { q: 'Acheter ses légumes directement à un agriculteur de sa région, c\'est…', ok: 'Acheter en circuit court', ko: ['Acheter en grande quantité', 'Acheter à crédit', 'Acheter de seconde main'],
+    expl: 'Dans un circuit court, il y a au maximum un intermédiaire entre le producteur et le consommateur : le producteur gagne mieux sa vie et les produits voyagent moins.' },
+  { q: 'Que garantit un label de commerce équitable sur un paquet de café ?', ok: 'Que les producteurs ont reçu un prix juste pour leur travail', ko: ['Que le café est le moins cher du magasin', 'Que le café a été cultivé en Belgique', 'Que le paquet est en plastique recyclé'],
+    expl: 'Le commerce équitable garantit aux producteurs (souvent dans des pays pauvres) un prix juste et de meilleures conditions de travail.' },
+  { q: 'Pourquoi faire réparer un objet plutôt que d\'en acheter un neuf aide-t-il l\'environnement ?', ok: 'Parce qu\'on utilise moins de matières premières et d\'énergie, et qu\'on produit moins de déchets.', ko: ['Parce que les objets neufs sont toujours plus solides.', 'Parce que réparer coûte toujours plus cher.', 'Ce n\'est pas vrai : cela n\'a aucun effet sur l\'environnement.'],
+    expl: 'Les ressources de la planète (métaux, pétrole…) ne sont pas infinies. Réparer, réutiliser ou acheter d\'occasion permet de les économiser et de réduire les déchets.' },
+];
+
+const consommer = famille('ca', [
+  [3, (rng) => {
+    const cherche = rng.next() < 0.65;
+    const bonne = rng.pick(cherche ? EQUITABLE.ok : EQUITABLE.ko);
+    const q = qcm(rng, bonne, cherche ? EQUITABLE.ko : EQUITABLE.ok);
+    return {
+      ...q,
+      enonce: cherche ? 'Laquelle de ces situations respecte les principes du commerce équitable ?' : 'Laquelle de ces situations ne respecte pas les principes du commerce équitable ?',
+      explication: `${bonne} ${cherche ? 'C\'est un principe du commerce équitable : un prix juste, de bonnes conditions de travail, pas de travail des enfants, des projets pour la communauté.' : 'Le commerce équitable, au contraire, garantit un prix juste, de bonnes conditions de travail et refuse le travail des enfants.'}`,
+      _signature: `eq|${cherche}|${bonne}|${cle(q.choix)}`, cleContenu: `eq|${cherche}|${bonne}`, difficulte: 2,
+    };
+  }],
+  [3, (rng) => {
+    const bonne = rng.pick(ALTERNATIVES.ok);
+    const q = qcm(rng, bonne, ALTERNATIVES.ko);
+    return {
+      ...q,
+      enonce: 'Laquelle de ces actions est une alternative à l\'achat d\'un objet neuf ?',
+      explication: `${bonne} : c'est une alternative (seconde main, réparation, prêt, échange ou location). Cela économise de l'argent et les ressources de la planète.`,
+      _signature: `alt|${bonne}|${cle(q.choix)}`, cleContenu: `alt|${bonne}`, difficulte: 1,
+    };
+  }],
+  [3, (rng) => {
+    const items = tirerMixte(rng, [...ALTERNATIVES.ok.map((t) => ({ t, c: 0 })), ...ALTERNATIVES.ko.map((t) => ({ t, c: 1 }))], 4, (x) => x.c);
+    if (!items) return null;
+    return {
+      ...grilleQ(items, ['Consommer autrement', 'Acheter du neuf sans nécessité']),
+      enonce: 'Chaque action est-elle une façon de consommer autrement, ou un achat neuf qui n\'est pas nécessaire ?',
+      explication: maj(items.map((x, i) => `${i ? x.t.charAt(0).toLowerCase() + x.t.slice(1) : x.t} : ${x.c === 0 ? 'consommer autrement' : 'achat neuf pas nécessaire'}`).join(' ; ')) + '.',
+      _signature: `gr|${cle(items.map((x) => x.t))}`, cleContenu: `gr|${cle(items.map((x) => x.t))}`, difficulte: 2,
+    };
+  }],
+  [4, (rng) => ({ ...depuisBanque(rng, BANQUE_CONSO, 'bq'), difficulte: 2 })],
+]);
+
 export const GENERATEURS = {
+  hg_tc_consommer: consommer,
+  hg_tc_vues_aeriennes: vuesAeriennes,
+  hg_tc_eau_relief: eauRelief,
+  hg_tc_peuplement_be: peuplementBe,
+  hg_tc_change: changeContinue,
+  hg_tc_pertinence: pertinence,
+  hg_tc_outils_info: outilsInfo,
+  hg_tc_planisphere: planisphere,
+  hg_tc_millenaires: millenaires,
   hg_tc_moments: moments,
   hg_tc_galloromains: galloromains,
   hg_tc_migrations: migrations,

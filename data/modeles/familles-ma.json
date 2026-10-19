@@ -41,7 +41,12 @@
    "generateur": "ma_intercaler",
    "domaine": "ma.arithmetique",
    "fiche": "ma-decimaux",
-   "difficulte": 2
+   "difficulte": 2,
+   "formes": [
+    {
+     "fiche": "ma-encadrer"
+    }
+   ]
   },
   {
    "id": "ma-f-droite-graduee",
@@ -136,6 +141,7 @@
   },
   {
    "id": "ma-f-multiples-diviseurs",
+   "poids": 0.4,
    "generateur": "ma_multiples_diviseurs",
    "domaine": "ma.arithmetique",
    "fiche": "ma-multiples-diviseurs",
@@ -143,6 +149,7 @@
   },
   {
    "id": "ma-f-ppcm-pgcd",
+   "poids": 0.4,
    "generateur": "ma_ppcm_pgcd",
    "domaine": "ma.arithmetique",
    "fiche": "ma-multiples-diviseurs",
@@ -150,6 +157,7 @@
   },
   {
    "id": "ma-f-divisibilite",
+   "poids": 0.4,
    "generateur": "ma_divisibilite",
    "domaine": "ma.arithmetique",
    "fiche": "ma-divisibilite",
@@ -167,7 +175,12 @@
    "generateur": "ma_mesures_realistes",
    "domaine": "ma.grandeurs",
    "fiche": "ma-ordres-grandeur",
-   "difficulte": 1
+   "difficulte": 1,
+   "formes": [
+    {
+     "fiche": "ma-unites-aire-volume"
+    }
+   ]
   },
   {
    "id": "ma-f-aires-volumes-unites",
@@ -185,6 +198,7 @@
   },
   {
    "id": "ma-f-cercle",
+   "poids": 0.4,
    "generateur": "ma_cercle",
    "domaine": "ma.geometrie",
    "fiche": "ma-cercle",
@@ -195,7 +209,12 @@
    "generateur": "ma_durees",
    "domaine": "ma.grandeurs",
    "fiche": "ma-durees",
-   "difficulte": 2
+   "difficulte": 2,
+   "formes": [
+    {
+     "fiche": "ma-horaire"
+    }
+   ]
   },
   {
    "id": "ma-f-calendrier",
@@ -241,6 +260,7 @@
   },
   {
    "id": "ma-f-temperatures",
+   "poids": 0.4,
    "generateur": "ma_temperatures",
    "domaine": "ma.grandeurs",
    "fiche": "ma-temperatures",
@@ -262,6 +282,7 @@
   },
   {
    "id": "ma-f-angles",
+   "poids": 0.4,
    "generateur": "ma_angles",
    "domaine": "ma.geometrie",
    "fiche": "ma-angles",
