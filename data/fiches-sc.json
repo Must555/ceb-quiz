@@ -313,6 +313,123 @@
    ],
    "exemple": "Le matin, le Soleil est à l'est : ton ombre est tournée vers l'ouest.",
    "astuce": "Nord → est → sud → ouest, dans le sens des aiguilles d'une montre."
+  },
+  {
+   "id": "sc-lire-donnees",
+   "matiere": "sc",
+   "e": "📈",
+   "titre": "Lire un tableau ou un graphique",
+   "regle": [
+    "Lis d'abord le titre, puis ce qui est écrit sur chaque axe (ou en tête de chaque colonne) et l'unité.",
+    "Dans un graphique à courbes, la légende indique quelle courbe correspond à quel objet.",
+    "Pour lire une valeur : pars du temps sur l'axe horizontal, monte jusqu'à la courbe, puis va lire la valeur sur l'axe vertical.",
+    "Pour comparer, regarde les valeurs au même moment. Pour un écart, fais une soustraction (grande valeur − petite valeur)."
+   ],
+   "exemple": "Après 20 minutes, l'eau du pot « Laine » est à 55 °C et celle du pot « Sans rien » à 40 °C : écart = 55 − 40 = 15 degrés.",
+   "astuce": "N'oublie jamais l'unité dans ta réponse (°C, cm, minutes, battements par minute…)."
+  },
+  {
+   "id": "sc-demarche",
+   "matiere": "sc",
+   "e": "🔬",
+   "titre": "Une expérience juste",
+   "regle": [
+    "On part d'une question (« La laine garde-t-elle l'eau chaude ? ») et on émet une hypothèse.",
+    "On ne change qu'une seule chose à la fois (le facteur testé) ; tout le reste doit rester identique.",
+    "On garde un témoin (par exemple un pot sans rien) pour pouvoir comparer.",
+    "On répète les mesures et on fait la moyenne pour avoir un résultat fiable.",
+    "On conclut en s'appuyant sur les résultats : cause → effet."
+   ],
+   "exemple": "Pour tester la lumière : deux pots de haricots avec la même terre, le même arrosage, mais l'un à la lumière et l'autre dans le noir.",
+   "astuce": "Si deux choses changent en même temps, on ne sait pas laquelle est la cause !"
+  },
+  {
+   "id": "sc-chaleur",
+   "matiere": "sc",
+   "e": "🌡️",
+   "titre": "La chaleur et les isolants",
+   "regle": [
+    "La chaleur (énergie thermique) passe toujours d'une matière chaude vers une matière plus froide.",
+    "Un objet chaud refroidit jusqu'à atteindre la température de l'air autour de lui.",
+    "Un isolant thermique (laine, polystyrène, liège, air) ralentit ce passage : il garde chaud ce qui est chaud, et froid ce qui est froid. Il ne produit ni chaleur ni froid.",
+    "Les métaux sont de bons conducteurs thermiques : la chaleur les traverse facilement.",
+    "La lumière absorbée se transforme en énergie thermique ; une surface noire absorbe plus de lumière qu'une surface blanche."
+   ],
+   "exemple": "Un glaçon entouré de laine fond plus lentement : la laine ralentit l'arrivée de la chaleur de l'air.",
+   "astuce": "Ce n'est pas « le froid qui entre », c'est la chaleur qui sort !"
+  },
+  {
+   "id": "sc-effort",
+   "matiere": "sc",
+   "e": "🏃",
+   "titre": "Rythme cardiaque et ventilation",
+   "regle": [
+    "Le rythme cardiaque est le nombre de battements du cœur par minute. La ventilation est le nombre de mouvements respiratoires (inspiration + expiration) par minute.",
+    "On les mesure avec un chronomètre : par exemple, on compte pendant 15 secondes et on multiplie par 4 (4 × 15 s = 1 minute).",
+    "On répète la mesure 3 fois et on calcule la moyenne : (mesure 1 + mesure 2 + mesure 3) ÷ 3.",
+    "Pendant l'effort, les muscles ont besoin de plus de dioxygène et de nutriments, et produisent plus de dioxyde de carbone : le cœur bat plus vite et on respire plus vite.",
+    "Après l'effort, au repos, ils redescendent peu à peu vers leur valeur de départ."
+   ],
+   "exemple": "21 battements en 15 secondes → 21 × 4 = 84 battements par minute.",
+   "astuce": "On sent le pouls au poignet ou sur le côté du cou, avec deux doigts (jamais avec le pouce)."
+  },
+  {
+   "id": "sc-ensembles-emboites",
+   "matiere": "sc",
+   "e": "🪆",
+   "titre": "Classer en ensembles emboîtés",
+   "regle": [
+    "Un ensemble regroupe tous les animaux qui partagent un même attribut (ce qu'ils ont : poils, plumes, squelette interne…).",
+    "Un ensemble placé à l'intérieur d'un autre regroupe des animaux qui ont l'attribut du grand ensemble ET un attribut en plus.",
+    "On place chaque animal dans le plus petit ensemble qui lui correspond. S'il n'a aucun des attributs, il reste dans le grand rectangle.",
+    "Exemple d'emboîtement : squelette interne → 4 membres → poils ; squelette externe et pattes articulées → antennes → 6 pattes.",
+    "Plus deux animaux sont dans un petit ensemble commun, plus ils partagent d'attributs : ils sont plus proches parents."
+   ],
+   "exemple": "Le chat et le pigeon sont tous les deux dans « 4 membres » (les ailes du pigeon sont ses membres avant), mais le chat va dans « poils » et le pigeon dans « plumes ».",
+   "astuce": "On classe selon ce que l'animal A, pas selon ce qu'il fait ni où il vit."
+  },
+  {
+   "id": "sc-attributs",
+   "matiere": "sc",
+   "e": "🔎",
+   "titre": "Les attributs des animaux",
+   "regle": [
+    "Un attribut est un caractère que l'on peut observer chez un animal : squelette interne ou externe, 4 membres, poils, plumes, écailles, nageoires rayonnées…",
+    "Squelette externe et pattes articulées : insectes (6 pattes, des antennes), araignées et scorpions (8 pattes, pas d'antennes), crustacés (des antennes).",
+    "Pied plat et tentacules : escargot et limace ; l'escargot a aussi une coquille. Corps mou en anneaux : ver de terre, sangsue.",
+    "Les scientifiques classent les vivants d'après leurs attributs partagés : c'est la classification phylogénétique, qui montre les liens de parenté entre espèces."
+   ],
+   "exemple": "La chauve-souris vole, mais elle a des poils et 4 membres (ses ailes sont ses membres avant) : elle est classée avec les animaux à poils.",
+   "astuce": "Demande-toi : « Qu'est-ce qu'il A ? »"
+  },
+  {
+   "id": "sc-espece",
+   "matiere": "sc",
+   "e": "🐴",
+   "titre": "La notion d'espèce",
+   "regle": [
+    "Une espèce est un ensemble de vivants qui peuvent se reproduire entre eux et avoir des petits eux-mêmes féconds (capables d'avoir des petits à leur tour).",
+    "Des animaux très différents peuvent être de la même espèce : toutes les races de chiens forment une seule espèce.",
+    "Des animaux qui se ressemblent peuvent être d'espèces différentes : le lapin et le lièvre.",
+    "L'âne et la jument peuvent avoir un petit, le mulet, mais il est stérile : l'âne et le cheval sont deux espèces différentes."
+   ],
+   "exemple": "Un caniche et un berger allemand ont des chiots qui pourront avoir des chiots : même espèce.",
+   "astuce": "Le test, ce n'est pas la ressemblance : ce sont les petits… et les petits des petits !"
+  },
+  {
+   "id": "sc-liens-systemes",
+   "matiere": "sc",
+   "e": "🫀",
+   "titre": "Digestion, respiration, circulation : ensemble",
+   "regle": [
+    "Digestif : bouche → œsophage → estomac → intestin grêle → côlon → anus (glandes annexes : glandes salivaires, pancréas, foie). Les nutriments passent dans le sang au niveau de l'intestin grêle ; le côlon absorbe de l'eau.",
+    "Respiratoire : nez ou bouche → trachée → bronches → alvéoles des poumons. Dans les alvéoles, le dioxygène passe dans le sang et le dioxyde de carbone en sort.",
+    "Circulatoire : le cœur pompe le sang ; les artères partent du cœur, les veines y reviennent. Le sang transporte dioxygène, nutriments, dioxyde de carbone et déchets.",
+    "Le dioxyde de carbone est rejeté par les poumons ; d'autres déchets sont filtrés par les reins et évacués dans l'urine.",
+    "Inspiration : le diaphragme s'abaisse, les côtes se soulèvent, la cage thoracique s'agrandit. Expiration : le diaphragme remonte, la cage thoracique diminue."
+   ],
+   "exemple": "Pour courir, le muscle reçoit le dioxygène (poumons → sang → cœur → artères) et les nutriments (intestin grêle → sang).",
+   "astuce": "Le sang est le « camion de livraison » qui relie les trois systèmes."
   }
  ]
 }

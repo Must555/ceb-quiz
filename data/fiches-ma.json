@@ -325,6 +325,147 @@
    ],
    "exemple": "Notes : 12 ; 15 ; 18. Moyenne = (12 + 15 + 18) : 3 = 45 : 3 = 15.",
    "astuce": "Vérifie que la moyenne est bien entre la plus petite et la plus grande valeur."
+  },
+  {
+   "id": "ma-aires-formules",
+   "matiere": "ma",
+   "e": "📐",
+   "titre": "Formules d'aire des quadrilatères et du triangle",
+   "regle": [
+    "Rectangle : longueur × largeur. Carré : côté × côté.",
+    "Parallélogramme : base × hauteur (la hauteur est perpendiculaire à la base, ce n'est pas le côté oblique).",
+    "Triangle : base × hauteur : 2 (c'est la moitié d'un rectangle ou d'un parallélogramme).",
+    "Losange : grande diagonale × petite diagonale : 2.",
+    "Trapèze : (grande base + petite base) × hauteur : 2."
+   ],
+   "exemple": "Trapèze de bases 10 cm et 6 cm, hauteur 4 cm : (10 + 6) × 4 : 2 = 16 × 4 : 2 = 32 cm².",
+   "astuce": "Mets toutes les longueurs dans la même unité avant de calculer, et écris l'aire en unités « carrées » (cm², m²)."
+  },
+  {
+   "id": "ma-logique",
+   "matiere": "ma",
+   "e": "🕵️",
+   "titre": "Les énigmes logiques (tableau à double entrée)",
+   "regle": [
+    "Dessine un tableau : les personnes en lignes, les choix en colonnes.",
+    "Chaque indice « ne… pas » ou « ni… ni… » permet de barrer une ou plusieurs cases.",
+    "Quand une ligne (ou une colonne) n'a plus qu'une case libre, c'est la bonne réponse : entoure-la.",
+    "Une case sûre permet de barrer tout le reste de sa ligne et de sa colonne."
+   ],
+   "exemple": "Léa, Tom et Inès ont chacun un animal différent. Tom n'a pas le chat. Ni Léa ni Tom n'ont le lapin. → Inès a le lapin, donc Léa a le chat et Tom le chien.",
+   "astuce": "Relis tous les indices à chaque fois que tu as trouvé une nouvelle case : un indice peut servir deux fois."
+  },
+  {
+   "id": "ma-developpements",
+   "matiere": "ma",
+   "e": "📦",
+   "titre": "Les développements des solides",
+   "regle": [
+    "Un développement est le patron « déplié » d'un solide : en le pliant, on reconstruit le solide sans trou ni superposition.",
+    "Cube : 6 carrés identiques. Il existe 11 développements différents du cube.",
+    "Pavé droit : 6 rectangles, identiques deux à deux. Prisme droit à base triangulaire : 2 triangles et 3 rectangles.",
+    "Pyramide à base carrée : 1 carré et 4 triangles. Cylindre : 1 rectangle et 2 disques."
+   ],
+   "exemple": "Une croix de 6 carrés (4 en colonne et 1 de chaque côté) est un développement du cube.",
+   "astuce": "Un bloc de 2 × 2 carrés ou une ligne de 5 carrés ne peut jamais faire un cube. Imagine une face posée au sol et replie les autres autour."
+  },
+  {
+   "id": "ma-representations",
+   "matiere": "ma",
+   "e": "🗂️",
+   "titre": "Ensembles, arbres et tableaux",
+   "regle": [
+    "Diagramme d'ensembles : la partie commune à deux cercles (l'intersection) contient ce qui est dans les deux ensembles à la fois.",
+    "« Seulement A » : la partie de A sans l'intersection. « A en tout » : toute la partie de A, intersection comprise.",
+    "Arbre de choix : le nombre de possibilités est le produit des choix à chaque étape (3 entrées × 4 plats = 12 menus).",
+    "Tableau à double entrée : on lit la case au croisement d'une ligne et d'une colonne ; on additionne une ligne ou une colonne pour un total."
+   ],
+   "exemple": "8 élèves font seulement du foot, 5 font foot et natation, 6 seulement natation : 13 font du foot en tout.",
+   "astuce": "N'oublie pas ce qui est écrit en dehors des cercles quand on demande le total."
+  },
+  {
+   "id": "ma-diagonales-medianes",
+   "matiere": "ma",
+   "e": "✳️",
+   "titre": "Diagonales, médianes et hauteurs des quadrilatères",
+   "regle": [
+    "Diagonale : relie deux sommets opposés. Médiane : relie les milieux de deux côtés opposés. Hauteur : perpendiculaire aux bases (côtés parallèles).",
+    "Diagonales qui se coupent en leur milieu : carré, rectangle, losange, parallélogramme.",
+    "Diagonales de même longueur : carré, rectangle (et trapèze isocèle). Diagonales perpendiculaires : carré, losange.",
+    "Les diagonales sont des axes de symétrie dans le carré et le losange ; les médianes sont des axes de symétrie dans le carré et le rectangle."
+   ],
+   "exemple": "Rectangle : diagonales égales mais pas perpendiculaires ; ses 2 axes de symétrie sont ses médianes.",
+   "astuce": "Losange ↔ diagonales, rectangle ↔ médianes, carré ↔ les deux."
+  },
+  {
+   "id": "ma-polygones",
+   "matiere": "ma",
+   "e": "⬢",
+   "titre": "Les polygones réguliers",
+   "regle": [
+    "Un polygone régulier a tous ses côtés de même longueur ET tous ses angles de même amplitude.",
+    "Pentagone : 5 côtés ; hexagone : 6 ; octogone : 8 ; décagone : 10.",
+    "Un polygone régulier a autant d'axes de symétrie que de côtés.",
+    "Le carré et le triangle équilatéral sont réguliers ; le rectangle et le losange ne le sont pas."
+   ],
+   "exemple": "Un hexagone régulier tracé dans un cercle a des côtés égaux au rayon : on reporte 6 fois le rayon au compas.",
+   "astuce": "Penta = 5, hexa = 6, octo = 8 (comme une pieuvre !), déca = 10."
+  },
+  {
+   "id": "ma-mouvements",
+   "matiere": "ma",
+   "e": "🔄",
+   "titre": "Les mouvements : glisser, retourner, pivoter",
+   "regle": [
+    "Glissement : la figure se déplace sans tourner ; elle garde la même orientation.",
+    "Retournement : on retourne le calque ; l'image est « en miroir ».",
+    "Pivotement : la figure tourne autour d'un point (quart de tour, demi-tour…).",
+    "Ces trois mouvements ne changent ni les longueurs ni les angles. L'agrandissement et la réduction changent la taille, pas la forme."
+   ],
+   "exemple": "Agrandir au double un rectangle de 3 × 2 carreaux donne 6 × 4 carreaux : longueurs × 2, aire × 4.",
+   "astuce": "Repère un petit détail de la figure (un coin, un « pied ») et regarde où il se retrouve dans l'image."
+  },
+  {
+   "id": "ma-perimetre-constant",
+   "matiere": "ma",
+   "e": "🧵",
+   "titre": "Même périmètre, aires différentes",
+   "regle": [
+    "Des rectangles peuvent avoir le même périmètre et des aires différentes.",
+    "Pour un périmètre donné, longueur + largeur = périmètre : 2.",
+    "Plus les côtés sont proches (plus le rectangle ressemble à un carré), plus l'aire est grande.",
+    "Si on ajoute à la longueur ce qu'on enlève à la largeur, le périmètre ne change pas."
+   ],
+   "exemple": "Périmètre 16 cm : 7 × 1 = 7 cm² ; 6 × 2 = 12 cm² ; 5 × 3 = 15 cm² ; 4 × 4 = 16 cm² (le plus grand).",
+   "astuce": "Commence par calculer le demi-périmètre, puis fais la liste des paires de côtés possibles."
+  },
+  {
+   "id": "ma-vocabulaire-operations",
+   "matiere": "ma",
+   "e": "🔤",
+   "titre": "Le vocabulaire des opérations",
+   "regle": [
+    "Addition : termes → somme. Soustraction : premier terme − deuxième terme → différence.",
+    "Multiplication : facteurs → produit.",
+    "Division : dividende : diviseur → quotient (et parfois un reste, toujours plus petit que le diviseur).",
+    "Dividende = quotient × diviseur + reste."
+   ],
+   "exemple": "Dans 87 : 7 = 12 reste 3 : 87 est le dividende, 7 le diviseur, 12 le quotient et 3 le reste.",
+   "astuce": "« Le produit de la somme de 3 et 4 par 5 » : (3 + 4) × 5 = 35. Commence par l'opération la plus « intérieure »."
+  },
+  {
+   "id": "ma-egalites",
+   "matiere": "ma",
+   "e": "⚖️",
+   "titre": "Le signe = et les égalités",
+   "regle": [
+    "Le signe « = » veut dire « a la même valeur que ». Le signe « ≠ » veut dire « n'est pas égal à ».",
+    "Une égalité peut avoir un calcul des deux côtés : 152 + 17 = 190 − 21 (les deux valent 169).",
+    "Pour compléter une égalité, calcule le côté connu, puis cherche le nombre qui donne la même valeur de l'autre côté.",
+    "Attention aux fausses égalités : 12 × 40 = 480 + 35 = 515 est faux, car 12 × 40 ne vaut pas 515."
+   ],
+   "exemple": "Écriture correcte : 12 × 40 = 480 puis 480 + 35 = 515, ou (12 × 40) + 35 = 480 + 35 = 515.",
+   "astuce": "Lis chaque « = » séparément : ce qui est à gauche et à droite doit toujours avoir la même valeur."
   }
  ]
 }
