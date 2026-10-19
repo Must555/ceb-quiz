@@ -279,7 +279,7 @@ const moments = famille('mc', [
     return {
       ...grilleQ(items, P6.map((m) => m.court)),
       enonce: 'Associe chaque fait au moment clé qui lui correspond.',
-      explication: faits.map((f) => `${maj(avecDate(f))} → ${f.m.court.toLowerCase()} (${f.m.dates})`).join(' ; ') + '.',
+      explication: maj(faits.map((f) => `${avecDate(f)} → ${f.m.court} (${f.m.dates})`).join(' ; ')) + '.',
       _signature: `gr|${cle(faits.map((f) => f.t))}`,
       cleContenu: `gr|${cle(faits.map((f) => f.t))}`,
       difficulte: 2,
@@ -394,7 +394,7 @@ const galloromains = famille('gr', [
     return {
       ...grilleQ(items, COL_ECHANGES),
       enonce: 'Celtes (Gaulois) et Romains ont échangé des idées et des objets. Pour chaque élément, qui l\'a adopté de l\'autre peuple ?',
-      explication: items.map((x) => `${maj(x.t)} : ${x.c === 0 ? 'apport des Romains' : 'apport des Celtes'}`).join(' ; ') + '.',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'apport des Romains' : 'apport des Celtes'}`).join(' ; ')) + '.',
       _signature: `ech|${cle(items.map((x) => x.t))}`,
       cleContenu: `ech|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -606,7 +606,7 @@ const migrations = famille('mi', [
     return {
       ...grilleQ(items, colonnes),
       enonce: 'Les migrations ont enrichi la cuisine en Belgique. De quel pays vient chaque plat ?',
-      explication: plats.map((x) => `${maj(x.t)} : ${x.p}`).join(' ; ') + '. Ce sont des apports culturels des migrations depuis 1945.',
+      explication: maj(plats.map((x) => `${x.t} : ${x.p}`).join(' ; ')) + '. Ce sont des apports culturels des migrations depuis 1945.',
       _signature: `pl|${cle(plats.map((x) => x.t))}|${pays.join(',')}`,
       cleContenu: `pl|${cle(plats.map((x) => x.t))}`,
       difficulte: 1,
@@ -651,7 +651,7 @@ const migrations = famille('mi', [
     return {
       ...grilleQ(items, ['Facilité', 'Obstacle']),
       enonce: 'Pour un travailleur immigré arrivé en Belgique entre 1945 et 1970, chaque situation est-elle une facilité ou un obstacle à son intégration ?',
-      explication: items.map((x) => `${maj(x.t)} : ${x.c === 0 ? 'facilité' : 'obstacle'}`).join(' ; ') + '.',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'facilité' : 'obstacle'}`).join(' ; ')) + '.',
       _signature: `int|${cle(items.map((x) => x.t))}`,
       cleContenu: `int|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -695,14 +695,14 @@ const PRODUITS_EUROPE = ['le blé', 'l\'orge', 'la pomme', 'la poire', 'le raisi
 const COL_PRODUITS = ['Venu des Amériques', 'Déjà connu en Europe avant 1492'];
 
 const EXPLORATEURS = [
-  { qui: 'Christophe Colomb', quoi: 'arrive aux Amériques en traversant l\'océan Atlantique', a: 1492, d: '1492', pour: 'l\'Espagne' },
-  { qui: 'Vasco de Gama', quoi: 'atteint l\'Inde par la mer en contournant l\'Afrique', a: 1498, d: '1498', pour: 'le Portugal' },
-  { qui: 'Bartolomeu Dias', quoi: 'est le premier Européen à contourner le sud de l\'Afrique (le cap de Bonne-Espérance)', a: 1488, d: '1488', pour: 'le Portugal' },
-  { qui: 'Fernand de Magellan', quoi: 'dirige l\'expédition qui fait le premier tour du monde', a: 1519, d: '1519-1522', pour: 'l\'Espagne' },
-  { qui: 'Pedro Álvares Cabral', quoi: 'arrive au Brésil', a: 1500, d: '1500', pour: 'le Portugal' },
-  { qui: 'Hernán Cortés', quoi: 'conquiert l\'empire aztèque (au Mexique)', a: 1521, d: '1519-1521', pour: 'l\'Espagne' },
-  { qui: 'Francisco Pizarro', quoi: 'conquiert l\'empire inca (au Pérou)', a: 1532, d: '1532-1533', pour: 'l\'Espagne' },
-  { qui: 'Jacques Cartier', quoi: 'explore le golfe du Saint-Laurent, au Canada', a: 1534, d: '1534', pour: 'la France' },
+  { qui: 'Christophe Colomb', quoi: 'arrive aux Amériques en traversant l\'océan Atlantique', a: 1492, d: '1492', pour: 'de l\'Espagne' },
+  { qui: 'Vasco de Gama', quoi: 'atteint l\'Inde par la mer en contournant l\'Afrique', a: 1498, d: '1498', pour: 'du Portugal' },
+  { qui: 'Bartolomeu Dias', quoi: 'est le premier Européen à contourner le sud de l\'Afrique par le cap de Bonne-Espérance', a: 1488, d: '1488', pour: 'du Portugal' },
+  { qui: 'Fernand de Magellan', quoi: 'dirige l\'expédition qui fait le premier tour du monde', a: 1519, d: '1519-1522', pour: 'de l\'Espagne' },
+  { qui: 'Pedro Álvares Cabral', quoi: 'arrive au Brésil', a: 1500, d: '1500', pour: 'du Portugal' },
+  { qui: 'Hernán Cortés', quoi: 'conquiert l\'empire aztèque, au Mexique', a: 1521, d: '1519-1521', pour: 'de l\'Espagne' },
+  { qui: 'Francisco Pizarro', quoi: 'conquiert l\'empire inca, au Pérou', a: 1532, d: '1532-1533', pour: 'de l\'Espagne' },
+  { qui: 'Jacques Cartier', quoi: 'explore le golfe du Saint-Laurent, au Canada', a: 1534, d: '1534', pour: 'de la France' },
 ];
 const IMPACTS = {
   ok: [
@@ -770,7 +770,7 @@ const colonisations = famille('co', [
     return {
       ...grilleQ(items, COL_PRODUITS),
       enonce: 'Ces aliments étaient-ils déjà connus en Europe avant 1492, ou ont-ils été rapportés des Amériques par les Européens ?',
-      explication: items.map((x) => `${maj(x.t)} : ${x.c === 0 ? 'des Amériques' : 'déjà connu en Europe'}`).join(' ; ') + '.',
+      explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'des Amériques' : 'déjà connu en Europe'}`).join(' ; ')) + '.',
       _signature: `pr|${cle(items.map((x) => x.t))}`,
       cleContenu: `pr|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -801,7 +801,7 @@ const colonisations = famille('co', [
     return {
       ...q,
       enonce: `Quel navigateur ou conquérant ${e.quoi} (${e.d}) ?`,
-      explication: `${e.d} : ${e.qui}, au service de ${e.pour}, ${e.quoi}.`,
+      explication: `${e.d} : ${e.qui}, au service ${e.pour}, ${e.quoi}.`,
       _signature: `qui|${e.qui}|${cle(q.choix)}`,
       cleContenu: `qui|${e.qui}`,
       difficulte: 2,
@@ -843,8 +843,8 @@ const colonisations = famille('co', [
     const q = qcm(rng, p.colon, COLONS);
     return {
       ...q,
-      enonce: `Aujourd'hui, on parle surtout ${p.langue} ${p.ou}. Quel pays européen a colonisé cette région ?`,
-      explication: `${p.colon.replace(/^L'/, 'L\'').replace(/^(Le|La|Les) /, (x) => x)} a colonisé cette région et y a imposé sa langue : on y parle encore ${p.langue}. C'est un héritage de la colonisation.`,
+      enonce: `Aujourd'hui, on parle surtout ${p.langue} ${p.ou}. Quel pays européen y a imposé sa langue en colonisant cette région ?`,
+      explication: `${p.colon} ${p.colon === 'Les Pays-Bas' ? 'ont' : 'a'} colonisé cette région et y ${p.colon === 'Les Pays-Bas' ? 'ont' : 'a'} imposé ${p.colon === 'Les Pays-Bas' ? 'leur' : 'sa'} langue : on y parle encore ${p.langue}. C'est un héritage de la colonisation.`,
       _signature: `lang|${p.ou}|${cle(q.choix)}`,
       cleContenu: `lang|${p.ou}`,
       difficulte: 2,
@@ -924,7 +924,7 @@ const rechauffement = famille('re', [
     return {
       ...grilleQ(items, COL_GAZ),
       enonce: 'Quel gaz à effet de serre est surtout rejeté par chaque activité ?',
-      explication: `${items.map((x) => `${maj(x.t)} → ${x.c === 0 ? 'CO₂' : 'méthane'}`).join(' ; ')}. Brûler du charbon, du pétrole, du gaz ou du bois rejette du CO₂ ; l'élevage, les rizières et les décharges rejettent du méthane.`,
+      explication: `${maj(items.map((x) => `${x.t} → ${x.c === 0 ? 'CO₂' : 'méthane'}`).join(' ; '))}. Brûler du charbon, du pétrole, du gaz ou du bois rejette du CO₂ ; l'élevage, les rizières et les décharges rejettent du méthane.`,
       _signature: `gaz|${cle(items.map((x) => x.t))}`,
       cleContenu: `gaz|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -943,7 +943,7 @@ const rechauffement = famille('re', [
     return {
       ...grilleQ(items, COL_CCS),
       enonce: 'Réchauffement climatique : chaque élément est-il une cause, une conséquence ou une solution ?',
-      explication: items.map((x) => `${maj(x.t)} : ${COL_CCS[x.c].toLowerCase()}`).join(' ; ') + '.',
+      explication: maj(items.map((x) => `${x.t} : ${COL_CCS[x.c].toLowerCase()}`).join(' ; ')) + '.',
       _signature: `ccs|${cle(items.map((x) => x.t))}`,
       cleContenu: `ccs|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -1013,7 +1013,7 @@ const cosSaison = (tmin, tmax, m) => tmin + (tmax - tmin) * (1 - Math.cos((2 * M
 // Données pour l'hémisphère Nord (mois le plus froid : janvier, le plus chaud : juillet).
 function donneesClimat(type, rng) {
   let T; let P;
-  const saison = (tmin, tmax) => Array.from({ length: 12 }, (_, m) => Math.round(cosSaison(tmin, tmax, m) + (rng.int(-1, 1) * 0.6)));
+  const saison = (tmin, tmax) => Array.from({ length: 12 }, (_, m) => Math.round(cosSaison(tmin, tmax, m) + ([2, 3, 4, 8, 9, 10].includes(m) ? rng.int(-1, 1) * 0.6 : 0)));
   const plages = (pl) => pl.map(([a, b]) => p5(rng, a, b));
   switch (type) {
     case 'oceanique':
@@ -1062,10 +1062,10 @@ function donneesClimat(type, rng) {
 
 function axes(T, P) {
   const tmin = Math.min(...T); const tmax = Math.max(...T);
-  const tS = tmax - tmin > 25 ? 10 : 5;
-  const tLo = Math.floor(tmin / tS) * tS;
-  let nb = Math.max(4, Math.ceil((tmax - tLo) / tS));
-  if (tLo + nb * tS === tmax) nb += 0;
+  // L'axe des températures part au plus haut de 0 °C (sinon un climat chaud paraîtrait froid).
+  const tS = tmax - Math.min(0, tmin) > 25 ? 10 : 5;
+  const tLo = Math.min(0, Math.floor(tmin / tS) * tS);
+  const nb = Math.max(4, Math.ceil((tmax - tLo) / tS));
   const pMax = Math.max(...P, 1);
   const pS = [10, 20, 25, 50, 100].find((s) => s * nb >= pMax + 5) ?? 100;
   return { tS, tLo, nb, pS };
@@ -1126,6 +1126,7 @@ const SECHE_CONFLITS = {
   'Oui, de décembre à février': ['Oui, de novembre à mars'],
   'Oui, de novembre à mars': ['Oui, de décembre à février'],
 };
+const deMois = (m) => (/^[aeiou]/.test(MOIS[m]) ? `d'${MOIS[m]}` : `de ${MOIS[m]}`);
 const voisins = (m) => [m - 1, m + 1, m + 6, m - 3, m + 3, m - 2, m + 2].map((x) => ((x % 12) + 12) % 12).filter((x) => x !== m);
 
 function climatogramme(modele, rng) {
@@ -1164,9 +1165,11 @@ function climatogramme(modele, rng) {
         `Le point le plus bas de la courbe rouge est en ${MOIS[iFroid]} (environ ${n(T[iFroid])} °C). ${lire}`, 'froid', 1);
     case 'pluvieux':
       return qMois(iPluie, 'Observe ce climatogramme. Quel est le mois le plus pluvieux ?',
-        `La barre bleue la plus haute est celle de ${MOIS[iPluie]} (environ ${n(P[iPluie])} mm). ${lire}`, 'pluvieux', 1);
+        `La barre bleue la plus haute est celle ${deMois(iPluie)} (environ ${n(P[iPluie])} mm). ${lire}`, 'pluvieux', 1);
     case 'pluie_mois': {
-      const m = rng.int(0, 11);
+      const mois = P.map((p, i) => (p >= 10 ? i : -1)).filter((i) => i >= 0);
+      if (!mois.length) return null;
+      const m = rng.pick(mois);
       const v = P[m];
       const cand = [v - 2 * pS, v - pS, v + pS, v + 2 * pS].filter((x) => x >= 0);
       const faux = rng.shuffle(cand).slice(0, 3);
@@ -1174,7 +1177,7 @@ function climatogramme(modele, rng) {
       return {
         ...base, type: 'qcm', choix: choix.map((x) => `Environ ${n(x)} mm`), reponse: choix.indexOf(v),
         enonce: `Observe ce climatogramme. Combien de millimètres de pluie tombe-t-il environ en ${MOIS[m]} ?`,
-        explication: `Pour lire les précipitations, on regarde le haut de la barre bleue de ${MOIS[m]} et on lit l'axe de droite (en mm) : environ ${n(v)} mm. Les lignes du quadrillage sont espacées de ${n(pS)} mm.`,
+        explication: `Pour lire les précipitations, on regarde le haut de la barre bleue ${deMois(m)} et on lit l'axe de droite (en mm) : environ ${n(v)} mm. Les lignes du quadrillage sont espacées de ${n(pS)} mm.`,
         _signature: `pm|${m}|${donnees}|${cle(choix.map(String))}`, cleContenu: `pm|${m}|${donnees}`, difficulte: 2,
       };
     }
@@ -1186,7 +1189,7 @@ function climatogramme(modele, rng) {
       return {
         ...base, type: 'qcm', choix: choix.map((x) => `Environ ${n(x)} °C`), reponse: choix.indexOf(v),
         enonce: `Observe ce climatogramme. Quelle est la température moyenne en ${MOIS[m]} ?`,
-        explication: `On regarde le point de la courbe rouge au-dessus de ${MOIS[m]} et on lit l'axe de gauche (en °C) : environ ${n(v)} °C.`,
+        explication: `On regarde le point de la courbe rouge au-dessus du mois ${deMois(m)} et on lit l'axe de gauche (en °C) : environ ${n(v)} °C.`,
         _signature: `tm|${m}|${donnees}|${cle(choix.map(String))}`, cleContenu: `tm|${m}|${donnees}`, difficulte: 2,
       };
     }
@@ -1196,7 +1199,7 @@ function climatogramme(modele, rng) {
       return {
         ...base, ...q,
         enonce: 'Observe ce climatogramme. De quel type de climat s\'agit-il ?',
-        explication: `Climat ${bon.toLowerCase()} : ${CLIMATS[type].desc}. Ici, les températures vont d'environ ${n(Math.min(...T))} °C à ${n(Math.max(...T))} °C.${sud ? ' Les mois chauds sont en décembre-janvier : le lieu est dans l\'hémisphère Sud.' : ''}`,
+        explication: `Climat ${bon.toLowerCase()} : ${CLIMATS[type].desc}. Ici, les températures vont d'environ ${n(Math.min(...T))} °C à ${n(Math.max(...T))} °C.${sud && type !== 'tropical' ? ' Les mois chauds sont en décembre-janvier : le lieu est dans l\'hémisphère Sud.' : ''}`,
         _signature: `ty|${donnees}|${cle(q.choix)}`, cleContenu: `ty|${donnees}`, difficulte: 3,
       };
     }
@@ -1321,6 +1324,7 @@ const PAYS_POP = [
 ];
 const popTxt = (p) => (p >= 1e9 ? `${n(Math.round(p / 1e7) / 100)} milliard` : `${n(Math.round(p / 1e5) / 10)} millions`);
 const dens = (x) => x.pop / x.sup;
+const deNom = (nom) => (/^le /.test(nom) ? nom.replace(/^le /, 'du ') : /^les /.test(nom) ? nom.replace(/^les /, 'des ') : `de ${nom}`);
 const densTxt = (x) => { const d = dens(x); return d < 10 ? n(Math.round(d * 10) / 10) : n(Math.round(d)); };
 
 const population = famille('po', [
@@ -1332,7 +1336,7 @@ const population = famille('po', [
     return {
       ...grilleQ(items.map((x) => ({ t: x.t, c: x.p ? 0 : 1 })), ['Très peuplé', 'Peu peuplé']),
       enonce: 'Ces espaces du monde sont-ils très peuplés ou peu peuplés ?',
-      explication: items.map((x) => `${maj(x.t)} : ${x.p ? 'très peuplé' : 'peu peuplé'}`).join(' ; ') + '. Le relief, l\'eau, le climat et la proximité de la mer expliquent ces différences.',
+      explication: maj(items.map((x) => `${x.t} : ${x.p ? 'très peuplé' : 'peu peuplé'}`).join(' ; ')) + '. Le relief, l\'eau, le climat et la proximité de la mer expliquent ces différences.',
       _signature: `pp|${cle(items.map((x) => x.t))}`,
       cleContenu: `pp|${cle(items.map((x) => x.t))}`,
       difficulte: 2,
@@ -1345,7 +1349,7 @@ const population = famille('po', [
     return {
       ...q,
       enonce: `Pourquoi y a-t-il ${l.p ? 'beaucoup' : 'très peu'} d'habitants ${l.ou} ?`,
-      explication: `${maj(l.t)} est ${l.p ? 'très peuplé(e)' : 'presque vide'} : ${l.c.charAt(0).toLowerCase()}${l.c.slice(1)}`,
+      explication: `${maj(l.ou)}, il y a ${l.p ? 'beaucoup' : 'très peu'} d'habitants : ${l.c.charAt(0).toLowerCase()}${l.c.slice(1)}`,
       _signature: `cause|${l.t}|${cle(q.choix)}`,
       cleContenu: `cause|${l.t}`,
       difficulte: 2,
@@ -1359,7 +1363,7 @@ const population = famille('po', [
     return {
       ...q,
       enonce: `Lequel de ces espaces est ${peu ? 'très peu peuplé' : 'très peuplé'} ?`,
-      explication: `${maj(bonne.t)} : ${bonne.c}`,
+      explication: `${maj(bonne.t)} : ${bonne.c.charAt(0).toLowerCase()}${bonne.c.slice(1)}`,
       _signature: `leq|${peu}|${bonne.t}|${cle(q.choix)}`,
       cleContenu: `leq|${peu}|${cle(q.choix)}`,
       difficulte: 1,
@@ -1378,12 +1382,13 @@ const population = famille('po', [
     const sorte = rng.pick(['dense', 'dense', 'peuple', 'vf']);
     const sig = `${a.nom}|${b.nom}|${sorte}`;
     if (sorte === 'vf') {
+      const x = rng.next() < 0.5 ? a : b; const y = x === a ? b : a;
       return {
         type: 'vrai_faux',
-        enonce: `${donnees} Vrai ou faux ? Comme ${plusPeuple.nom} a plus d'habitants, ${plusPeuple.nom} est aussi le pays le plus densément peuplé.`,
-        reponse: plusPeuple === plusDense,
-        explication: `${calc} ${plusPeuple === plusDense ? 'Ici, c\'est vrai' : 'Ici, c\'est faux'} : la densité dépend du nombre d'habitants ET de la superficie.`,
-        _signature: sig, difficulte: 3,
+        enonce: `${donnees} Vrai ou faux ? ${maj(x.nom)} a une densité de population plus forte que ${y.nom}.`,
+        reponse: dens(x) > dens(y),
+        explication: `${calc} La densité dépend du nombre d'habitants ET de la superficie : ce n'est pas toujours le pays le plus peuplé qui est le plus dense.`,
+        _signature: `${sig}|${x.nom}`, difficulte: 3,
       };
     }
     const bonne = sorte === 'dense' ? plusDense : plusPeuple;
@@ -1392,7 +1397,7 @@ const population = famille('po', [
       type: 'qcm', choix, reponse: choix.indexOf(maj(bonne.nom)),
       enonce: `${donnees} Quel pays ${sorte === 'dense' ? 'est le plus densément peuplé' : 'a la plus grande population totale'} ?`,
       explication: sorte === 'dense'
-        ? `${calc} ${maj(plusDense.nom)} est plus densément peuplé${plusDense !== plusPeuple ? `, même si ${plusPeuple.nom} a plus d'habitants` : ''}.`
+        ? `${calc} La densité la plus forte est celle ${deNom(plusDense.nom)}${plusDense !== plusPeuple ? `, même si ${plusPeuple.nom} a plus d'habitants` : ''}.`
         : `On compare simplement le nombre d'habitants : ${maj(plusPeuple.nom)} en a le plus. ${calc}`,
       _signature: sig, difficulte: sorte === 'dense' ? 3 : 1,
     };

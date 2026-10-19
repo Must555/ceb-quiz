@@ -253,8 +253,8 @@ function regleER(inf, type) {
     case 'oyer': return inf.endsWith('envoyer')
       ? `Devant un e muet, le y devient i : ${j(c('present', 0))}, nous ${c('present', 3)}. Futur irrégulier : ${j(c('futur', 0))}.`
       : `Devant un e muet, le y devient i : ${j(c('present', 0))}, nous ${c('present', 3)}, ${j(c('futur', 0))}.`;
-    case 'cer': return `Devant a et o, le c prend une cédille pour garder le son [s] : nous ${c('present', 3)}, ${j(c('imparfait', 0))}.`;
-    default: return `Devant a et o, on ajoute un e après le g pour garder le son [j] : nous ${c('present', 3)}, ${j(c('imparfait', 0))}.`;
+    case 'cer': return `Devant a et o, le c prend une cédille pour garder le son « s » : nous ${c('present', 3)}, ${j(c('imparfait', 0))}.`;
+    default: return `Devant a et o, on ajoute un e après le g pour garder le son « je » : nous ${c('present', 3)}, ${j(c('imparfait', 0))}.`;
   }
 }
 const avecPron = (p, f) => (p === 'je' && /^[aeiouyéèh]/.test(f) ? `j'${f}` : `${p} ${f}`);
@@ -262,7 +262,7 @@ const avecPron = (p, f) => (p === 'je' && /^[aeiouyéèh]/.test(f) ? `j'${f}` : 
 function frRadicalEr(modele, rng) {
   const forme = rng.pick(modele.formes ?? ['ecrire', 'choisir']);
   const [inf, type, comp, sujets] = rng.pick(VERBES_ER);
-  const t = rng.pick(Object.keys(TEMPS_ER));
+  const t = rng.pick(['present', 'present', 'imparfait', 'futur', 'futur', 'conditionnel']);
   const p = rng.pick(sujets ?? PERSONNES);
   const formes = conjER(inf, type, t, p.idx);
   const T = TEMPS_ER[t];
@@ -383,7 +383,7 @@ function frCorriger(modele, rng) {
     return { _signature: `corriger|${i}`, type: 'texte_court', souple: false, reponse: [bon], ...base,
       enonce: `Dans la phrase « ${fautive} », le mot « ${faux} » est mal écrit. Écris-le correctement.` };
   }
-  return { _signature: `libre|${i}`, type: 'texte_court', souple: false, reponse: [bon], ...base,
+  return { _signature: `libre|${i}`, type: 'texte_court', souple: false, reponse: [bon], ...base, fiche: 'fr-relire',
     enonce: `Un seul mot est mal écrit dans cette phrase. Écris ce mot correctement (seulement ce mot) : « ${fautive} »` };
 }
 
@@ -392,7 +392,7 @@ function frCorriger(modele, rng) {
 const PHRASES_GN = [
   'Le {N:chat} {EP@chat:noir} {CN@chat:de la voisine} dort {CP:sur le muret}.',
   '{CP:Hier}, ma {EP@tante:vieille} {N:tante} a préparé une {N:tarte} {CN@tarte:aux pommes}.',
-  'Les {N:élèves} {CN@élèves:de sixième} visitent un {N:musée} {EP@musée:immense} {CP:à Bruxelles}.',
+  '{CP:Aujourd\'hui}, les {N:élèves} {CN@élèves:de sixième} visitent un {N:musée} {EP@musée:immense}.',
   '{CP:En hiver}, ce {N:pull} {CN@pull:en laine} est {AT:chaud}.',
   'Une {EP@maison:jolie} {N:maison} {CN@maison:en briques} se trouve {CP:au bout de la rue}.',
   '{CP:Dans le jardin}, les {N:roses} {EP@roses:rouges} semblent {AT:fragiles}.',
@@ -401,7 +401,7 @@ const PHRASES_GN = [
   'La {N:soupe} {CN@soupe:aux légumes} est {AT:brûlante} {CP:ce soir}.',
   '{CP:Au marché}, Papa choisit des {N:tomates} {EP@tomates:mûres} et un {N:melon} {CN@melon:du Portugal}.',
   'Le {N:chien} {CN@chien:du fermier} garde les {N:moutons} {EP@moutons:blancs} {CP:jour et nuit}.',
-  'Ma {N:sœur} porte une {N:robe} {EP@robe:longue} {CN@robe:à fleurs} {CP:pour la fête}.',
+  '{CP:Ce soir}, ma {N:sœur} porte une {N:robe} {EP@robe:longue} {CN@robe:à fleurs}.',
   'Les {N:feuilles} {CN@feuilles:du chêne} deviennent {AT:jaunes} {CP:en automne}.',
   '{CP:Cette nuit}, un {EP@orage:violent} {N:orage} a secoué la {N:maison} {CN@maison:de mes grands-parents}.',
   '{CP:Sur la table}, le {N:gâteau} {CN@gâteau:au chocolat} semble {AT:délicieux}.',
@@ -416,7 +416,7 @@ const PHRASES_GN = [
   'Tom a trouvé une {N:pièce} {EP@pièce:ancienne} {CN@pièce:en argent} {CP:dans le sable}.',
   'La {N:boulangère} {EP@boulangère:souriante} vend du {N:pain} {EP@pain:frais} {CP:chaque matin}.',
   'Le {N:jardin} {CN@jardin:de Mamie} devient {AT:magnifique} {CP:au printemps}.',
-  'Ma {N:mère} a acheté une {N:lampe} {EP@lampe:moderne} {CN@lampe:en verre} {CP:pour le salon}.',
+  '{CP:Hier}, ma {N:mère} a acheté une {N:lampe} {EP@lampe:moderne} {CN@lampe:en verre}.',
   'Les {N:nuages} {EP@nuages:gris} annoncent un {N:orage} {EP@orage:terrible} {CP:pour ce soir}.',
   '{CP:Aujourd\'hui}, le {N:directeur} {CN@directeur:de l\'école} paraît {AT:inquiet}.',
   '{CP:Avant de sortir}, j\'ai mis mon {N:bonnet} {CN@bonnet:en laine} et mes {N:gants} {EP@gants:chauds}.',
@@ -428,7 +428,7 @@ const PHRASES_GN = [
   'L\'{N:eau} {CN@eau:de la piscine} semble {AT:froide} {CP:ce matin}.',
   'Le {N:facteur} {CN@facteur:du quartier} apporte un {EP@colis:gros} {N:colis} {CP:à midi}.',
   '{CP:Cette année}, les {N:fraises} {CN@fraises:du jardin} sont {AT:sucrées}.',
-  'Le {EP@lapin:petit} {N:lapin} {CN@lapin:de Zoé} mange une {N:carotte} {CP:dans sa cage}.',
+  'Le {EP@lapin:petit} {N:lapin} {CN@lapin:de Zoé} mange une {N:carotte} {CP:chaque soir}.',
   '{CP:Soudain}, une {EP@odeur:délicieuse} {N:odeur} {CN@odeur:de crêpes} remplit la {N:cuisine}.',
   'Le {N:boulanger} {EP@boulanger:matinal} prépare des {N:croissants} {CN@croissants:au beurre} {CP:avant l\'aube}.',
   'Mes {N:cousins} {CN@cousins:de Namur} semblent {AT:heureux} {CP:depuis leur arrivée}.',
@@ -532,7 +532,7 @@ function frPredicat(modele, rng) {
   const aff = (g) => (texte.startsWith(maj(g)) ? maj(g) : g); // tel qu'écrit dans la phrase
   const forme = rng.pick(modele.formes ?? ['predicat', 'predicat', 'sujet', 'cp', 'supprimer', 'grille']);
   const phrase = `Dans la phrase « ${texte} »`;
-  const explP = `Le prédicat est « ${p} » : c'est ce qu'on dit du sujet « ${s} ». Il contient le verbe conjugué « ${v} »${suite ? ' et ses compléments' : ''}. On ne peut ni le déplacer ni le supprimer.`;
+  const explP = `Le prédicat est « ${p} » : c'est ce qu'on dit du sujet « ${s} ». Il contient le verbe conjugué « ${v} »${suite ? ' et les mots qui le complètent' : ''}. On ne peut ni le déplacer ni le supprimer.`;
   const deplacee = pos === 'd' ? `${maj(s)} ${p} ${cp}.` : `${maj(cp)}, ${s} ${p}.`;
   const explCP = cp ? `« ${aff(cp)} » est un complément de phrase : on peut le déplacer (« ${deplacee} ») et le supprimer (« ${maj(s)} ${p}. »).` : '';
   const explS = `« ${aff(s)} » est le groupe sujet : c'est de lui qu'on parle ; on peut l'encadrer par « c'est … qui » ou « ce sont … qui ».`;
@@ -663,13 +663,13 @@ function frPonctuation(modele, rng) {
     const complete = `${intro} : « ${parole}${finSigne(signe)} »`;
     const sig = `${forme}|${iP}|${loc}`;
     if (forme === 'parole_dp') {
-      return { _signature: sig, ...choixSignes(':', [signe]), enonce: `Quel signe faut-il à la place de ___ ? « ${intro}___ « ${parole}${finSigne(signe)} » »`,
+      return { _signature: sig, ...choixSignes(':', [signe]), enonce: `Quel signe faut-il à la place de ___ ? ${intro}___ « ${parole}${finSigne(signe)} »`,
         explication: `${complete} Les deux-points annoncent les paroles de quelqu'un ; les paroles sont encadrées par des guillemets.` };
     }
     if (forme === 'parole_fin') {
       const exclus = signe === '.' ? ['!'] : signe === '!' ? ['.'] : [];
       const regle = { '?': 'La phrase pose une question : elle se termine par un point d\'interrogation.', '!': 'La phrase exprime un sentiment fort (surprise, joie, peur…) : elle se termine par un point d\'exclamation.', '.': 'La phrase donne simplement une information : elle se termine par un point.' }[signe];
-      return { _signature: sig, ...choixSignes(signe, exclus), enonce: `Quel signe faut-il à la place de ___ ? « ${intro} : « ${parole}___ » »`,
+      return { _signature: sig, ...choixSignes(signe, exclus), enonce: `Quel signe faut-il à la place de ___ ? ${intro} : « ${parole}___ »`,
         explication: `${complete} ${regle}` };
     }
     if (forme === 'guillemets') {

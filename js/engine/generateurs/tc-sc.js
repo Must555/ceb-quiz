@@ -13,6 +13,8 @@ import { formatNombre as fmt } from '../format.js';
 const FILLES = ['Léa', 'Inès', 'Emma', 'Louise', 'Yasmine', 'Olivia', 'Amira', 'Chloé', 'Zoé', 'Sofia', 'Maëlle', 'Alice', 'Nora', 'Lina'];
 const GARCONS = ['Noah', 'Adam', 'Mohamed', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Ilyes', 'Victor', 'Jules', 'Rayan', 'Elias', 'Théo', 'Hugo'];
 const PRENOMS = [...FILLES, ...GARCONS];
+const VOY = /\bde (?=(Inès|Emma|Olivia|Amira|Alice|Adam|Arthur|Ilyes|Elias|Hugo)\b)/g;
+const elider = (t) => (typeof t === 'string' ? t.replace(VOY, 'd\'') : t);
 const il = (p) => (FILLES.includes(p) ? 'elle' : 'il');
 const maj = (s) => (s ? String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCase()) : s);
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -121,7 +123,8 @@ function svgBarres({ titre, cats, vals, yTitre, yMax, yPas }) {
 function svgTableau({ titre, entetes, lignes }) {
   const c0 = Math.max(...[entetes[0], ...lignes.map((l) => l[0])].map((t) => largeur(t, 12))) + 16;
   const autres = entetes.slice(1);
-  const cw = Math.max(34, ...autres.map((t) => largeur(t, 12) + 12), ...lignes.flatMap((l) => l.slice(1)).map((t) => largeur(t, 12) + 12));
+  let cw = Math.max(34, ...autres.map((t) => largeur(t, 12) + 12), ...lignes.flatMap((l) => l.slice(1)).map((t) => largeur(t, 12) + 12));
+  if (c0 + cw * autres.length + 4 < 340) cw = (340 - 4 - c0) / autres.length;
   const W = Math.ceil(c0 + cw * autres.length + 4); const rh = 24; const T = 30;
   const H = T + rh * (lignes.length + 1) + 4;
   let s = `<text x="2" y="18" font-size="13" font-weight="bold" fill="${ENCRE}">${esc(titre)}</text>`;
@@ -277,7 +280,7 @@ function expSoleil(rng, support) {
     id: 'soleil', domaine: 'sc.energie', fiche: 'sc-chaleur', kind: 'ligne', xs, series, support, contexte,
     titre: 'Température de l\'eau des bouteilles', xTitre: 'Temps (min)', yTitre: 'Température (°C)', yNom: 'la température de l\'eau', unite: '°C', uniteMot: 'degrés',
     yMin: Math.floor((T0 - 2) / 4) * 4, yMax: Math.ceil((max + 1) / 4) * 4, yPas: 2, yEtiq: 4,
-    quand: (x) => (x === 0 ? 'au départ' : `après ${x} minutes`), objet: (n) => `de la bouteille « ${n} »`, sens: 'hausse',
+    quand: (x) => (x === 0 ? 'au départ' : `après ${x} minutes`), objet: (n) => (n.startsWith('Bouteille') ? `de la ${n.toLowerCase()}` : `de la bouteille ${n === 'Au soleil' ? 'au soleil' : 'à l\'ombre'}`), sens: 'hausse',
     borne: (x) => (x === 0 ? 'le départ' : `la ${x}e minute`), egal: 'Les deux ont la même température',
     plus: { q: 'quelle bouteille contient l\'eau', haut: 'la plus chaude', bas: 'la moins chaude' },
     specs: {
@@ -316,7 +319,7 @@ function expPouls(rng) {
       : `${p} mesure son rythme cardiaque chaque minute : d'abord au repos, puis pendant une course de ${d} minutes, puis pendant la récupération.`,
     titre: 'Rythme cardiaque minute par minute', xTitre: 'Temps (min)', yTitre: 'Battements par minute', yNom: 'le rythme cardiaque', unite: 'battements par minute', uniteMot: 'battements par minute',
     yMin: 60, yMax: 180, yPas: 10, yEtiq: 20,
-    quand: (x) => `à la minute ${x}`, objet: (n) => `de ${n}`, sens: 'hausse', fixeDebut: 0,
+    masc: true, quand: (x) => `à la minute ${x}`, objet: (n) => `de ${n}`, sens: 'hausse', fixeDebut: 0,
     borne: (x) => `la minute ${x}`, egal: 'Les deux ont le même rythme cardiaque',
     plus: deux ? { q: 'qui a', haut: 'le rythme cardiaque le plus élevé', bas: 'le rythme cardiaque le moins élevé' } : null,
     specs: {
@@ -446,7 +449,7 @@ function questionReleve(ds, rng) {
       const s = rng.pick(S); const i = rng.int(ixMin, xs.length - 1);
       const quoi = ds.support === 'tableau' ? `la ligne « ${s.nom} »` : `la courbe « ${s.nom} »`;
       return { ...base, type: 'numerique', reponse: s.v[i], unite: ds.unite, fiche: 'sc-lire-donnees',
-        enonce: `${ds.contexte} Observe ${sup}. Quelle est ${ds.yNom} ${ds.objet(s.nom)} ${ds.quand(xs[i])} ?`,
+        enonce: `${ds.contexte} Observe ${sup}. ${ds.masc ? 'Quel' : 'Quelle'} est ${ds.yNom} ${ds.objet(s.nom)} ${ds.quand(xs[i])} ?`,
         explication: `On suit ${quoi} jusqu'à ${fmt(xs[i])} sur l'axe du temps et on lit : ${fmt(s.v[i])} ${ds.unite}.`, _signature: `${cle}|lire|${s.nom}|${i}` };
     }
     if (f === 'plus' && ds.plus && S.length >= 2) {
@@ -466,7 +469,7 @@ function questionReleve(ds, rng) {
       const [h, l] = a.v[i] >= b.v[i] ? [a, b] : [b, a]; const d = h.v[i] - l.v[i];
       if (d <= 0) return null;
       return { ...base, type: 'numerique', reponse: d, unite: ds.unite, fiche: 'sc-lire-donnees',
-        enonce: `${ds.contexte} Observe ${sup}. ${maj(ds.quand(xs[i]))}, quelle est la différence entre ${ds.yNom} ${ds.objet(h.nom)} et celle ${ds.objet(l.nom)} ?`,
+        enonce: `${ds.contexte} Observe ${sup}. ${maj(ds.quand(xs[i]))}, quelle est la différence entre ${ds.yNom} ${ds.objet(h.nom)} et ${ds.masc ? 'celui' : 'celle'} ${ds.objet(l.nom)} ?`,
         explication: `${maj(ds.quand(xs[i]))} : « ${h.nom} » ${fmt(h.v[i])} ${ds.unite} et « ${l.nom} » ${fmt(l.v[i])} ${ds.unite}. Différence : ${fmt(h.v[i])} − ${fmt(l.v[i])} = ${fmt(d)} ${ds.uniteMot}.`, _signature: `${cle}|ecart|${h.nom}|${l.nom}|${i}` };
     }
     if (f === 'variation' || f === 'ecart' || f === 'plus') {
@@ -474,7 +477,7 @@ function questionReleve(ds, rng) {
       const d = Math.abs(s.v[i1] - s.v[i0]); if (d === 0) return null;
       const verbe = s.v[i1] > s.v[i0] ? 'augmenté' : 'baissé';
       return { ...base, type: 'numerique', reponse: d, unite: ds.unite, fiche: 'sc-lire-donnees',
-        enonce: `${ds.contexte} Observe ${sup}. De combien ${ds.yNom} ${ds.objet(s.nom)} a-t-elle ${verbe} entre ${ds.borne(xs[i0])} et ${ds.borne(xs[i1])} ?`,
+        enonce: `${ds.contexte} Observe ${sup}. De combien ${ds.yNom} ${ds.objet(s.nom)} a-t-${ds.masc ? 'il' : 'elle'} ${verbe} entre ${ds.borne(xs[i0])} et ${ds.borne(xs[i1])} ?`,
         explication: `${maj(ds.quand(xs[i0]))} : ${fmt(s.v[i0])} ${ds.unite} ; ${ds.quand(xs[i1])} : ${fmt(s.v[i1])} ${ds.unite}. ${fmt(Math.max(s.v[i0], s.v[i1]))} − ${fmt(Math.min(s.v[i0], s.v[i1]))} = ${fmt(d)} ${ds.uniteMot}.`, _signature: `${cle}|var|${s.nom}|${i1}` };
     }
   }
@@ -526,7 +529,7 @@ export function genererEffort(modele, rng) {
   if (forme === 'moyenne' || forme === 'moyPouls') {
     const pouls = forme === 'moyPouls' || rng.next() < 0.5;
     let m; let d1; let d2;
-    if (forme === 'moyPouls') { m = apres ? rng.int(30, 42) : rng.int(18, 24); d1 = rng.int(-2, 2); d2 = rng.int(-2, 2); } else if (pouls) { m = apres ? rng.int(120, 170) : rng.int(70, 98); d1 = rng.int(-4, 4); d2 = rng.int(-4, 4); } else { m = apres ? rng.int(28, 42) : rng.int(14, 22); d1 = rng.int(-2, 2); d2 = rng.int(-2, 2); }
+    if (forme === 'moyPouls') { m = apres ? rng.int(30, 42) : rng.int(18, 24); d1 = rng.int(-2, 2); d2 = rng.int(-2, 2); } else if (pouls) { m = apres ? rng.int(120, 170) : rng.int(72, 92); d1 = rng.int(-4, 4); d2 = rng.int(-4, 4); } else { m = apres ? rng.int(28, 42) : rng.int(14, 22); d1 = rng.int(-2, 2); d2 = rng.int(-2, 2); }
     const vals = [m + d1, m + d2, m - d1 - d2];
     if (new Set(vals).size < 2) return null;
     const somme = vals[0] + vals[1] + vals[2];
@@ -552,7 +555,7 @@ export function genererEffort(modele, rng) {
     const pouls = rng.next() < 0.5; const unite = pouls ? 'battements par minute' : 'mouvements par minute';
     const gen = (lo, hi, d) => { const m = rng.int(lo, hi); const a = rng.int(-d, d); const b = rng.int(-d, d); return { m, v: [m + a, m + b, m - a - b] }; };
     const rep = pouls ? gen(70, 95, 3) : gen(14, 22, 2); const eff = pouls ? gen(120, 165, 4) : gen(28, 42, 2);
-    const fig = svgTableau({ titre: pouls ? `Rythme cardiaque de ${p} (battements/min)` : `Ventilation de ${p} (mouvements/min)`,
+    const fig = svgTableau({ titre: elider(pouls ? `Rythme cardiaque de ${p} (battements/min)` : `Ventilation de ${p} (mouvements/min)`),
       entetes: ['', 'Mesure 1', 'Mesure 2', 'Mesure 3'], lignes: [['Au repos', ...rep.v.map(String)], ['Après l\'effort', ...eff.v.map(String)]] });
     const q = rng.pick(['repos', 'effort', 'diff']);
     const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) ÷ 3 = ${o.v[0] + o.v[1] + o.v[2]} ÷ 3 = ${o.m}.`;
@@ -677,7 +680,7 @@ const fem = (a) => a.art === 'la' || ['abeille', 'autruche', 'écrevisse', 'arai
 const ilA = (a) => (fem(a) ? 'elle' : 'il');
 
 function attributsTexte(a) {
-  const ch = chaineEns(a.feuille).map((k) => ENS[k].attr);
+  const ch = chaineEns(a.feuille).flatMap((k) => (k === 'se' ? ['un squelette externe', 'des pattes articulées'] : [ENS[k].attr]));
   if (!ch.length) return 'aucun de ces attributs';
   return listeEt(ch);
 }
@@ -793,7 +796,7 @@ export function genererEmboites(modele, rng) {
       const a = rng.pick(ANIMAUX); const z = zoneDe(a, dessines);
       const r = qcm(rng, `Zone ${lettres[z]}`, rng.shuffle(zones.filter((k) => k !== z)).slice(0, 3).map((k) => `Zone ${lettres[k]}`));
       const expl = z === 'racine'
-        ? `${Le(a)} n'a aucun des attributs écrits dans les ensembles : on ${fem(a) ? 'la' : 'le'} place dans le grand rectangle, hors des autres ensembles (zone ${lettres[z]}).`
+        ? `${Le(a)} n'a aucun des attributs écrits dans ces ensembles : on ${fem(a) ? 'la' : 'le'} place dans le grand rectangle, hors des autres ensembles (zone ${lettres[z]}).`
         : `${Le(a)} a ${attributsTexte(a)}. On ${fem(a) ? 'la' : 'le'} place dans le plus petit ensemble qui lui correspond : « ${ENS[z].lignes.join(' ')} » (zone ${lettres[z]}).${a.note ? ` Attention : ${a.note}.` : ''}`;
       return { ...r, figure: fig, enonce: `Voici une classification en ensembles emboîtés. Dans quelle zone faut-il placer ${le(a)} ?`, explication: expl,
         _signature: `zone|${cleScen}|${ordreL.join('')}|${a.nom}` };
@@ -803,7 +806,7 @@ export function genererEmboites(modele, rng) {
     const bon = rng.pick(bons);
     const faux = rng.shuffle(ANIMAUX.filter((a) => zoneDe(a, dessines) !== z)).slice(0, 3);
     const r = qcm(rng, maj(bon.nom), faux.map((a) => maj(a.nom)));
-    const expl = `${Le(bon)} a ${attributsTexte(bon)} : sa place est dans la zone ${lettres[z]}. ${faux.map((a) => `${Le(a)} va dans la zone ${lettres[zoneDe(a, dessines)]}`).join(' ; ')}.`;
+    const expl = `${Le(bon)} a ${attributsTexte(bon)} : sa place est dans la zone ${lettres[z]}. ${maj(faux.map((a) => `${le(a)} va dans la zone ${lettres[zoneDe(a, dessines)]}`).join(' ; '))}.`;
     return { ...r, figure: fig, enonce: `Voici une classification en ensembles emboîtés. Quel animal faut-il placer dans la zone ${lettres[z]} ?`, explication: expl,
       _signature: `qui|${cleScen}|${ordreL.join('')}|${z}|${bon.nom}|${triee(faux.map((a) => a.nom))}` };
   }
@@ -840,7 +843,7 @@ export function genererEmboites(modele, rng) {
     const faux = ORDRE_ENS.filter((k) => k !== 'racine' && !(possede(a, k) && possede(b, k))).map((k) => ENS[k].court);
     const r = qcm(rng, ENS[lca].court, rng.shuffle(faux).slice(0, 3));
     return { ...r, enonce: `Quel attribut ${le(a)} et ${le(b)} partagent-ils ?`,
-      explication: `${Le(a)} a ${attributsTexte(a)}. ${Le(b)} a ${attributsTexte(b)}. Ils partagent ${listeEt(communs.map((k) => ENS[k].attr))} : dans une classification en ensembles emboîtés, ils sont tous les deux dans l'ensemble « ${ENS[lca].lignes.join(' ')} ».${a.note ? ` (${maj(le(a))} : ${a.note}.)` : ''}`,
+      explication: `${Le(a)} a ${attributsTexte(a)}. ${Le(b)} a ${attributsTexte(b)}. Ils partagent ${listeEt(communs.map((k) => ENS[k].attr))} : dans une classification en ensembles emboîtés, ils sont tous les deux dans l'ensemble « ${ENS[lca].lignes.join(' ')} ».`,
       _signature: `part|${triee([a.nom, b.nom])}` };
   }
   if (forme === 'dedans') {
@@ -857,7 +860,7 @@ export function genererEmboites(modele, rng) {
   const bon = rng.pick(non); const faux = rng.shuffle(oui).slice(0, 3);
   const r = qcm(rng, maj(bon.nom), faux.map((a) => maj(a.nom)));
   return { ...r, enonce: `Lequel de ces animaux ne peut pas être placé dans l'ensemble « ${ENS[k].lignes.join(' ')} » ?`,
-    explication: `${Le(bon)} a ${attributsTexte(bon)}, mais ${ilA(bon)} n'a ${ENS[k].neg}. ${listeEt(faux.map((a) => maj(a.nom)))} ont ${ENS[k].attr}.`,
+    explication: `${Le(bon)} a ${attributsTexte(bon)}, mais ${ilA(bon)} n'a ${ENS[k].neg}. ${maj(listeEt(faux.map(le)))} ont ${ENS[k].attr}.`,
     _signature: `intrus|${k}|${bon.nom}|${triee(faux.map((a) => a.nom))}` };
 }
 
@@ -942,7 +945,7 @@ export function genererAttributs(modele, rng) {
     const bon = rng.pick(bons); const faux = rng.shuffle(mauvais).slice(0, 3);
     const r = qcm(rng, maj(bon.nom), faux.map((a) => maj(a.nom)));
     return { ...r, enonce: neg ? `Lequel de ces animaux n'a pas ${ATTR[k].neg} ?` : `Lequel de ces animaux a ${ATTR[k].txt} ?`,
-      explication: neg ? `${Le(bon)} ${negation(k)}. ${listeEt(faux.map((a) => maj(a.nom)))} ont ${ATTR[k].txt}.` : `${resumeAttr(bon)} ${listeEt(faux.map((a) => maj(a.nom)))} n'ont pas ${ATTR[k].neg}.`,
+      explication: neg ? `${Le(bon)} ${negation(k)}. ${maj(listeEt(faux.map(le)))} ont ${ATTR[k].txt}.` : `${resumeAttr(bon)} ${maj(listeEt(faux.map(le)))} n'ont pas ${ATTR[k].neg}.`,
       _signature: `qui|${neg}|${k}|${bon.nom}|${triee(faux.map((a) => a.nom))}` };
   }
   if (forme === 'vf') {
@@ -987,19 +990,19 @@ export function genererAttributs(modele, rng) {
   ];
   const Q = rng.pick(QS);
   const r = qcm(rng, maj(Q.b), rng.shuffle(Q.f).slice(0, 3).map(maj));
-  return { ...r, fiche: Q.cl ? 'sc-attributs' : 'sc-espece', enonce: Q.e, explication: `${maj(Q.b)} Une espèce : des vivants qui peuvent se reproduire entre eux et avoir des descendants féconds. On classe les animaux d'après leurs attributs partagés.`, _signature: `espQ|${Q.e}` };
+  return { ...r, fiche: Q.cl ? 'sc-attributs' : 'sc-espece', enonce: Q.e, explication: `${maj(Q.b)} ${Q.cl ? 'Les scientifiques classent les animaux d\'après les attributs qu\'ils partagent : plus deux espèces partagent d\'attributs, plus elles sont proches parentes.' : 'Une espèce : des vivants qui peuvent se reproduire entre eux et avoir des descendants féconds.'}`, _signature: `espQ|${Q.e}` };
 }
 
 // ================================================================ 5. LIENS ENTRE LES SYSTÈMES
 const TRAJETS = {
   o2: { titre: 'le trajet du dioxygène, de l\'air jusqu\'aux muscles', etapes: [
     'L\'air entre par le nez ou la bouche', 'L\'air descend dans la trachée', 'L\'air passe dans les bronches', 'L\'air arrive dans les alvéoles des poumons',
-    'Le dioxygène passe dans le sang', 'Le sang riche en dioxygène arrive au cœur', 'Le cœur envoie ce sang dans les artères', 'Le dioxygène arrive aux muscles'] },
+    'Le dioxygène passe dans le sang', 'Le sang riche en dioxygène arrive au cœur', 'Le cœur envoie le sang dans les artères', 'Le dioxygène arrive aux muscles'] },
   co2: { titre: 'le trajet du dioxyde de carbone, du muscle jusqu\'à l\'extérieur du corps', etapes: [
-    'Le muscle produit du dioxyde de carbone', 'Le dioxyde de carbone passe dans le sang', 'Le sang revient au cœur par les veines', 'Le cœur envoie ce sang vers les poumons',
+    'Le muscle produit du dioxyde de carbone', 'Le dioxyde de carbone passe dans le sang', 'Le sang revient au cœur par les veines', 'Le cœur envoie le sang vers les poumons',
     'Le dioxyde de carbone passe du sang dans les alvéoles', 'L\'air remonte par les bronches et la trachée', 'L\'air est rejeté par le nez ou la bouche'] },
   nut: { titre: 'le trajet d\'un aliment jusqu\'à ce que ses nutriments arrivent aux muscles', etapes: [
-    'L\'aliment est mâché dans la bouche', 'Il descend par l\'œsophage', 'Il est brassé dans l\'estomac', 'Dans l\'intestin grêle, les nutriments passent dans le sang',
+    'L\'aliment est mâché dans la bouche', 'L\'aliment descend par l\'œsophage', 'L\'aliment est brassé dans l\'estomac', 'Dans l\'intestin grêle, les nutriments passent dans le sang',
     'Le sang transporte les nutriments dans tout le corps', 'Les nutriments arrivent aux muscles'] },
   tube: { titre: 'le trajet des aliments dans le tube digestif', etapes: ['Bouche', 'Œsophage', 'Estomac', 'Intestin grêle', 'Côlon', 'Anus'] },
   air: { titre: 'le trajet de l\'air inspiré', etapes: ['Nez', 'Trachée', 'Bronches', 'Alvéoles des poumons'] },
@@ -1113,7 +1116,7 @@ export function genererSystemes(modele, rng) {
   for (const s of rng.shuffle(syst)) { const o = rng.pick(ORGANES[s]); tires.push([o, s]); vus.add(o); }
   while (tires.length < 4) { const s = rng.pick(syst); const o = rng.pick(ORGANES[s]); if (!vus.has(o)) { tires.push([o, s]); vus.add(o); } }
   const m = rng.shuffle(tires);
-  return { type: 'grille', enonce: 'À quel système appartient chacun de ces organes ?', lignes: m.map(([o]) => o), colonnes: ['Respiratoire', 'Circulatoire', 'Digestif'],
+  return { type: 'grille', enonce: 'À quel système appartient chacun de ces éléments du corps ?', lignes: m.map(([o]) => o), colonnes: ['Respiratoire', 'Circulatoire', 'Digestif'],
     reponse: m.map(([, s]) => syst.indexOf(s)), points: 4,
     explication: `${m.map(([o, s]) => `${o} : système ${s}`).join(' ; ')}.`, _signature: `org|${triee(m.map(([o]) => o))}` };
 }
@@ -1122,6 +1125,8 @@ export function genererSystemes(modele, rng) {
 const avecCle = (fn) => (modele, rng) => {
   const q = fn(modele, rng);
   if (!q || !q.type || (q.type === 'qcm' && !q.choix)) return null;
+  for (const k of ['enonce', 'explication']) q[k] = elider(q[k]);
+  if (Array.isArray(q.choix)) q.choix = q.choix.map(elider);
   if (!q.cleContenu) q.cleContenu = q._signature;
   if (q.fiche === undefined) delete q.fiche;
   return q;

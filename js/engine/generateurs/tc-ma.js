@@ -78,8 +78,8 @@ const ligneSvg = ([x1, y1], [x2, y2], { stroke = COUL.trait, sw = 2, dash } = {}
   `<line x1="${n1(x1)}" y1="${n1(y1)}" x2="${n1(x2)}" y2="${n1(y2)}" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round"${dashAttr(dash)}/>`;
 const cercleSvg = (cx, cy, rr, { fill = 'none', stroke = COUL.trait, sw = 2, dash, opacite } = {}) =>
   `<circle cx="${n1(cx)}" cy="${n1(cy)}" r="${n1(rr)}" fill="${fill}"${opacite ? ` fill-opacity="${opacite}"` : ''} stroke="${stroke}" stroke-width="${sw}"${dashAttr(dash)}/>`;
-const texteSvg = (x, y, s, { size = 14, anchor = 'middle', fill = COUL.trait, bold = false } = {}) =>
-  `<text x="${n1(x)}" y="${n1(y)}" font-size="${size}" text-anchor="${anchor}" dominant-baseline="central" fill="${fill}"${bold ? ' font-weight="bold"' : ''}>${esc(s)}</text>`;
+const texteSvg = (x, y, s, { size = 14, anchor = 'middle', fill = COUL.trait, bold = false, halo = false } = {}) =>
+  `<text x="${n1(x)}" y="${n1(y)}" font-size="${size}" text-anchor="${anchor}" dominant-baseline="central" fill="${fill}"${bold ? ' font-weight="bold"' : ''}${halo ? ' stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke"' : ''}>${esc(s)}</text>`;
 const rectSvg = (x, y, w, h, opts) => polySvg([[x, y], [x + w, y], [x + w, y + h], [x, y + h]], opts);
 function quadrillage(x0, y0, nx, ny, u) {
   let s = '';
@@ -136,14 +136,14 @@ function figureAire(sorte, d, u) {
     const A = [0, h]; const B = [b, h]; const C = [b + o, 0]; const D = [o, 0]; const Hp = [o, h];
     P.push({ t: 'poly', P: [A, B, C, D], fill: COUL.bleu }, { t: 'ligne', a: D, b: Hp, dash: '6 4', sw: 1.8 }, { t: 'angle', p: Hp, u: [1, 0], v: [0, -1] });
     P.push({ t: 'texte', p: [b / 2, h], s: L(b), dy: 16 }, { t: 'texte', p: [o, h / 2], s: L(h), dx: 8, anchor: 'start' });
-    if (c) P.push({ t: 'texte', p: [o / 2, h / 2], s: L(c), dx: -10, anchor: 'end' });
+    if (c) P.push({ t: 'texte', p: [o / 2, h / 2], s: L(c), dx: -16, anchor: 'end' });
   } else if (sorte === 'trapeze') {
     const { B, b, h, o, c, rect } = d;
     if (rect) {
       const A = [0, h]; const Bp = [B, h]; const C = [b, 0]; const D = [0, 0];
       P.push({ t: 'poly', P: [A, Bp, C, D], fill: COUL.vert }, { t: 'angle', p: A, u: [1, 0], v: [0, -1] }, { t: 'angle', p: D, u: [1, 0], v: [0, 1] });
-      P.push({ t: 'texte', p: [B / 2, h], s: L(B), dy: 16 }, { t: 'texte', p: [b / 2, 0], s: L(b), dy: -14 }, { t: 'texte', p: [0, h / 2], s: L(h), dx: -8, anchor: 'end' });
-      if (c) P.push({ t: 'texte', p: [(B + b) / 2, h / 2], s: L(c), dx: 10, anchor: 'start' });
+      P.push({ t: 'texte', p: [B / 2, h], s: L(B), dy: 16 }, { t: 'texte', p: [b / 2, 0], s: L(b), dy: -14 }, { t: 'texte', p: [0, h / 2], s: L(h), dx: 16, anchor: 'start' });
+      if (c) P.push({ t: 'texte', p: [(B + b) / 2, h / 2], s: L(c), dx: 14, dy: -12, anchor: 'start' });
     } else {
       const A = [0, h]; const Bp = [B, h]; const C = [o + b, 0]; const D = [o, 0]; const Hp = [o, h];
       P.push({ t: 'poly', P: [A, Bp, C, D], fill: COUL.vert }, { t: 'ligne', a: D, b: Hp, dash: '6 4', sw: 1.8 }, { t: 'angle', p: Hp, u: [1, 0], v: [0, -1] });
@@ -179,14 +179,14 @@ const aires = famille([
   forme((rng) => {
     const sorte = rng.pick(['parallelogramme', 'trapeze', 'trapeze', 'triangle', 'losange']);
     const u = rng.pick(['cm', 'cm', 'm']);
-    const [h, o, c] = rng.pick(PYTH.filter(([hh, oo]) => hh <= 16 && oo <= 16));
+    const [h, o, c] = rng.pick(PYTH.filter(([hh, oo]) => hh <= 16 && oo <= 16 && oo <= 1.6 * hh));
     let d;
     if (sorte === 'parallelogramme') d = { b: rng.int(o + 2, o + 14), h, o, c: rng.next() < 0.8 ? c : null };
     else if (sorte === 'triangle') d = { b: rng.int(o + 2, o + 14), h, o, c: rng.next() < 0.7 ? c : null };
     else if (sorte === 'trapeze') {
       const rect = rng.next() < 0.4; const b = rng.int(3, 14);
       d = rect ? { B: b + o, b, h, o, c: rng.next() < 0.8 ? c : null, rect } : { B: b + 2 * o, b, h, o, c: rng.next() < 0.8 ? c : null, rect };
-    } else { const D = rng.int(6, 20); d = { D, dd: rng.int(3, D - 2) }; }
+    } else { const D = rng.int(6, 20); d = { D, dd: rng.int(Math.max(3, Math.ceil(D * 0.4)), D - 2) }; }
     const { a, x } = calculAire(sorte, d, u);
     const piege = d.c ? ` Le côté oblique (${fmt(d.c)} ${u}) ne sert pas : on utilise la hauteur, perpendiculaire à la base.` : '';
     return {
@@ -269,17 +269,17 @@ const aires = famille([
 // 2. Logique déductive (tableau à double entrée, solution unique)
 // ===========================================================================
 const THEMES_LOGIQUE = [
-  { intro: 'Chaque enfant a un animal différent', pos: 'a', neg: "n'a pas", niPl: "n'ont", qPers: 'Quel animal a {P} ?',
+  { intro: 'ont chacun un animal différent', pos: 'a', neg: "n'a pas", niPl: "n'ont", qPers: 'Quel animal a {P} ?',
     items: [['le chat', 'chat'], ['le chien', 'chien'], ['le lapin', 'lapin'], ['le hamster', 'hamster'], ['la tortue', 'tortue'], ['le perroquet', 'perroquet']] },
-  { intro: 'Chaque enfant pratique un sport différent', pos: 'pratique', neg: 'ne pratique pas', niPl: 'ne pratiquent', qPers: 'Quel sport pratique {P} ?',
+  { intro: 'pratiquent chacun un sport différent', pos: 'pratique', neg: 'ne pratique pas', niPl: 'ne pratiquent', qPers: 'Quel sport pratique {P} ?',
     items: [['le judo', 'judo'], ['le tennis', 'tennis'], ['la natation', 'natation'], ['le football', 'football'], ['la danse', 'danse'], ["l'escalade", 'escalade']] },
-  { intro: "Chaque enfant joue d'un instrument différent", pos: 'joue', neg: 'ne joue pas', niPl: 'ne jouent', qPers: 'De quel instrument joue {P} ?',
+  { intro: "jouent chacun d'un instrument différent", pos: 'joue', neg: 'ne joue pas', niPl: 'ne jouent', qPers: 'De quel instrument joue {P} ?',
     items: [['du piano', 'piano'], ['de la guitare', 'guitare'], ['du violon', 'violon'], ['de la batterie', 'batterie'], ['de la flûte', 'flûte'], ['de la trompette', 'trompette']] },
-  { intro: 'Chaque enfant a choisi un dessert différent', pos: 'a choisi', neg: "n'a pas choisi", niPl: "n'ont choisi", qPers: 'Quel dessert a choisi {P} ?',
+  { intro: 'ont chacun choisi un dessert différent', pos: 'a choisi', neg: "n'a pas choisi", niPl: "n'ont choisi", qPers: 'Quel dessert a choisi {P} ?',
     items: [['la tarte', 'tarte'], ['la glace', 'glace'], ['la gaufre', 'gaufre'], ['le flan', 'flan'], ['la crêpe', 'crêpe'], ['la salade de fruits', 'salade de fruits']] },
-  { intro: "Chaque enfant a un vélo d'une couleur différente", pos: 'a', neg: "n'a pas", niPl: "n'ont", qPers: 'De quelle couleur est le vélo de {P} ?',
+  { intro: "ont chacun un vélo d'une couleur différente", pos: 'a', neg: "n'a pas", niPl: "n'ont", qPers: 'De quelle couleur est le vélo de {P} ?',
     items: [['le vélo rouge', 'rouge'], ['le vélo bleu', 'bleu'], ['le vélo vert', 'vert'], ['le vélo jaune', 'jaune'], ['le vélo noir', 'noir'], ['le vélo blanc', 'blanc']] },
-  { intro: 'Chaque enfant part en vacances dans un pays différent', pos: 'part', neg: 'ne part pas', niPl: 'ne partent', qPers: 'Dans quel pays part {P} ?',
+  { intro: 'partent chacun en vacances dans un pays différent', pos: 'part', neg: 'ne part pas', niPl: 'ne partent', qPers: 'Dans quel pays part {P} ?',
     items: [['en Espagne', 'Espagne'], ['en Italie', 'Italie'], ['en Grèce', 'Grèce'], ['au Portugal', 'Portugal'], ['en France', 'France'], ['aux Pays-Bas', 'Pays-Bas']] },
 ];
 
@@ -315,7 +315,7 @@ function texteIndice(ind, th, noms, items) {
 
 function figureTableauLogique(noms, items) {
   const n = noms.length; const c0 = 92; const cw = 64; const rh = 34; const h0 = 40;
-  const W = c0 + n * cw + 16; const H = h0 + n * rh + 14;
+  const W = c0 + n * cw + 8; const H = h0 + n * rh + 14;
   let s = '';
   s += rectSvg(8, 8, W - 16, h0 - 8, { fill: COUL.jaune, sw: 0 });
   for (let j = 0; j < n; j++) s += texteSvg(c0 + j * cw + cw / 2, 8 + (h0 - 8) / 2, items[j][1], { size: items[j][1].length > 9 ? 10 : 12, bold: true });
@@ -366,12 +366,12 @@ const logique = famille([
     }
     if (choisis.length < 2 || choisis.length > 7) return null;
     // L'élève ne doit pas lire directement la réponse : aucune case de la question ne doit être « évidente ».
-    if (choisis.some((x) => x.t === 'soit' && x.p === pCible && n === 3 && choisis.some((y) => y.t === 'neg' && y.p === pCible))) return null;
+    if (!surItem && choisis.some((x) => x.t === 'soit' && x.p === pCible && choisis.some((y) => (y.t === 'neg' && y.p === pCible && (y.i === x.i1 || y.i === x.i2)) || (y.t === 'ni' && (y.p1 === pCible || y.p2 === pCible) && (y.i === x.i1 || y.i === x.i2))))) return null;
 
     const indicesTxt = choisis.map((ind, k) => `${k + 1}. ${texteIndice(ind, th, noms, items)}`);
     const listeItems = enumerer(items.map((it) => it[1]));
     const question = surItem ? `Qui ${th.pos} ${items[iCible][0]} ?` : th.qPers.replace('{P}', noms[pCible]);
-    const enonce = `${enumerer(noms)}. ${th.intro} (${listeItems}).\n${indicesTxt.join('\n')}\n${question}`;
+    const enonce = `${enumerer(noms)} ${th.intro} : ${listeItems}.\n${indicesTxt.join('\n')}\n${question}`;
     const bonne = surItem ? noms[pCible] : majuscule(items[iCible][1]);
     const fausses = surItem ? noms.filter((x) => x !== bonne) : items.filter((_, i) => i !== iCible).map((it) => majuscule(it[1]));
     const q = qcm(rng, bonne, fausses, 4, 2);
@@ -577,7 +577,7 @@ const developpements = famille([
     const mot = { faces: 'faces', aretes: 'arêtes', sommets: 'sommets' }[quoi];
     return {
       type: 'numerique', difficulte: quoi === 'faces' ? 2 : 3,
-      enonce: `On plie ce développement pour construire un solide. Combien de ${mot} aura ce solide ?`,
+      enonce: `On plie ce développement pour construire un solide. Combien ${quoi === 'aretes' ? "d'arêtes" : `de ${mot}`} aura ce solide ?`,
       cle, figure, reponse: S[quoi],
       explication: `${INDICES_SOLIDES[sorte]} ${majuscule(S.nom)} a ${S.faces} faces, ${S.aretes} arêtes et ${S.sommets} sommets.`,
     };
@@ -637,13 +637,13 @@ const developpements = famille([
 // 4. Lire des représentations : ensembles, arbres, tableaux, diagrammes à bandes
 // ===========================================================================
 const COUPLES_ENSEMBLES = [
-  { qui: 'élèves', a: 'football', b: 'natation', c: 'judo', verbe: 'pratiquent', titre: 'Les sports des élèves de 6e' },
-  { qui: 'enfants', a: 'pommes', b: 'poires', c: 'fraises', verbe: 'aiment les', titre: 'Les fruits préférés' },
-  { qui: 'élèves', a: 'néerlandais', b: 'anglais', c: 'arabe', verbe: 'parlent', titre: 'Les langues parlées' },
-  { qui: 'enfants', a: 'chat', b: 'chien', c: 'poisson', verbe: 'ont un', titre: 'Les animaux de la classe' },
-  { qui: 'élèves', a: 'piano', b: 'guitare', c: 'chant', verbe: 'font du', titre: 'Les activités musicales' },
+  { qui: 'élèves', a: 'football', b: 'natation', c: 'judo', titre: 'Les sports des élèves de 6e', ph: { football: 'pratiquent le football', natation: 'pratiquent la natation' } },
+  { qui: 'enfants', a: 'pommes', b: 'poires', c: 'fraises', titre: 'Les fruits préférés', ph: { pommes: 'aiment les pommes', poires: 'aiment les poires' } },
+  { qui: 'élèves', a: 'néerlandais', b: 'anglais', c: 'arabe', titre: 'Les langues parlées', ph: { néerlandais: 'parlent néerlandais', anglais: 'parlent anglais' } },
+  { qui: 'enfants', a: 'chat', b: 'chien', c: 'poisson', titre: 'Les animaux de la classe', ph: { chat: 'ont un chat', chien: 'ont un chien' } },
+  { qui: 'élèves', a: 'piano', b: 'guitare', c: 'chant', titre: 'Les activités musicales', ph: { piano: 'font du piano', guitare: 'font de la guitare' } },
 ];
-const verbeEns = (C, x) => (C.verbe.endsWith(' les') || C.verbe.endsWith(' un') || C.verbe.endsWith(' du') ? `${C.verbe} ${x}` : `${C.verbe} le ${x}`).replace('le néerlandais', 'le néerlandais');
+const verbeEns = (C, x) => C.ph[x];
 function figureVenn2(C, v, avecNombres = true) {
   const W = 400; const H = 270;
   let s = rectSvg(10, 10, W - 20, H - 20, { fill: '#ffffff', sw: 1.8 });
@@ -675,7 +675,7 @@ function figureVennNombres(lA, lB, zones) {
     a: [[85, 100], [85, 145], [85, 190], [122, 75], [122, 122], [122, 168], [122, 215]],
     ab: [[200, 85], [200, 125], [200, 165], [200, 205]],
     b: [[315, 100], [315, 145], [315, 190], [278, 75], [278, 122], [278, 168], [278, 215]],
-    o: [[32, 32], [368, 32], [32, 245], [368, 245], [200, 30], [200, 252]],
+    o: [[30, 250], [370, 250], [30, 215], [370, 215], [200, 255], [30, 180]],
   };
   for (const z of Object.keys(zones)) zones[z].forEach((n, k) => { const [x, y] = SLOTS[z][k]; s += texteSvg(x, y, String(n), { size: 15 }); });
   return svg(W, H, s);
@@ -698,7 +698,7 @@ function figureArbre(niveaux, titres) {
       const y = noeud(niv, debut + k * part, part);
       s += ligneSvg([xParent + 4, yParent], [xs[niv + 1] - 4, y], { sw: 1.3 });
       s += cercleSvg(xs[niv + 1], y, 2.6, { fill: COUL.trait, sw: 0 });
-      s += texteSvg(xs[niv + 1] + 6, y - 8, o, { size: 11.5, anchor: 'start' });
+      s += texteSvg(xs[niv + 1] + 4, y - 9, o, { size: 11.5, anchor: 'start', halo: true });
       dessiner(niv + 1, debut + k * part, part, y, xs[niv + 1]);
     });
   };
@@ -761,12 +761,12 @@ const CONTEXTES_TABLEAU = [
   { coin: 'classe / transport', lignes: ['5A', '5B', '6A', '6B'], colonnes: ['à pied', 'à vélo', 'en bus', 'en voiture'], qui: 'élèves', phrase: (l, c) => `Combien d'élèves de la ${l} viennent à l'école ${c} ?`, total: (c) => `Combien d'élèves viennent à l'école ${c} en tout ?`, totalL: (l) => `Combien d'élèves y a-t-il en ${l} ?`, max: (c) => `Quelle classe compte le plus d'élèves qui viennent ${c} ?`, nomL: (l) => `la ${l}` },
   { coin: 'jour / repas', lignes: ['lundi', 'mardi', 'jeudi', 'vendredi'], colonnes: ['pâtes', 'poisson', 'poulet', 'légumes'], qui: 'repas', phrase: (l, c) => `Combien de repas « ${c} » la cantine a-t-elle servis le ${l} ?`, total: (c) => `Combien de repas « ${c} » ont été servis en tout ?`, totalL: (l) => `Combien de repas ont été servis le ${l} ?`, max: (c) => `Quel jour a-t-on servi le plus de repas « ${c} » ?`, nomL: (l) => l },
   { coin: 'mois / livres', lignes: ['janvier', 'février', 'mars'], colonnes: ['romans', 'BD', 'documentaires'], qui: 'livres', phrase: (l, c) => `Combien de ${c} la bibliothèque a-t-elle prêtés en ${l} ?`, total: (c) => `Combien de ${c} ont été prêtés en tout ?`, totalL: (l) => `Combien de livres ont été prêtés en ${l} ?`, max: (c) => `Quel mois a-t-on prêté le plus de ${c} ?`, nomL: (l) => l },
-  { coin: 'équipe / médailles', lignes: ['Rouges', 'Bleus', 'Verts', 'Jaunes'], colonnes: ['or', 'argent', 'bronze'], qui: 'médailles', phrase: (l, c) => `Combien de médailles d'${c} l'équipe des ${l} a-t-elle gagnées ?`, total: (c) => `Combien de médailles d'${c} ont été distribuées en tout ?`, totalL: (l) => `Combien de médailles l'équipe des ${l} a-t-elle gagnées ?`, max: (c) => `Quelle équipe a gagné le plus de médailles d'${c} ?`, nomL: (l) => `les ${l}` },
+  { coin: 'équipe / médailles', lignes: ['Rouges', 'Bleus', 'Verts', 'Jaunes'], colonnes: ['or', 'argent', 'bronze'], qui: 'médailles', phrase: (l, c) => `Combien de médailles ${c === 'or' || c === 'argent' ? "d'" : 'de '}${c} l'équipe des ${l} a-t-elle gagnées ?`, total: (c) => `Combien de médailles ${c === 'or' || c === 'argent' ? "d'" : 'de '}${c} ont été distribuées en tout ?`, totalL: (l) => `Combien de médailles l'équipe des ${l} a-t-elle gagnées ?`, max: (c) => `Quelle équipe a gagné le plus de médailles ${c === 'or' || c === 'argent' ? "d'" : 'de '}${c} ?`, nomL: (l) => `les ${l}` },
 ];
 const CONTEXTES_BANDES = [
   { titre: 'Fruits vendus à la récréation', cats: ['pommes', 'bananes', 'poires', 'kiwis', 'oranges', 'prunes'], unite: 'fruits', q: (c) => `Combien de ${c} ont été vendu${c === 'pommes' || c === 'bananes' || c === 'poires' || c === 'oranges' || c === 'prunes' ? 'e' : ''}s ?` },
   { titre: 'Élèves inscrits par activité', cats: ['théâtre', 'judo', 'chorale', 'échecs', 'dessin', 'basket'], unite: 'élèves', q: (c) => `Combien d'élèves sont inscrits à l'activité « ${c} » ?` },
-  { titre: 'Visiteurs du musée', cats: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'], unite: 'visiteurs', q: (c) => `Combien de visiteurs sont venus le ${c} ?` },
+  { titre: 'Visiteurs du musée', pasMin: 5, cats: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'], unite: 'visiteurs', q: (c) => `Combien de visiteurs sont venus le ${c} ?` },
   { titre: 'Livres lus pendant les vacances', cats: ['Léa', 'Tom', 'Inès', 'Adam', 'Zoé', 'Hugo'], unite: 'livres', q: (c) => `Combien de livres ${c} a-t-${['Léa', 'Inès', 'Zoé'].includes(c) ? 'elle' : 'il'} lus ?` },
 ];
 
@@ -778,7 +778,7 @@ const representations = famille([
     const total = v.a + v.ab + v.b + v.o;
     const fa = verbeEns(C, C.a); const fb = verbeEns(C, C.b);
     const qs = [
-      [`Combien d'${C.qui} ${fa} et ${C.verbe.includes(' ') ? '' : ''}${verbeEns(C, C.b).replace(C.verbe + ' ', '')} à la fois ?`, v.ab, `On lit le nombre dans la partie commune aux deux ensembles (l'intersection) : ${v.ab}.`],
+      [`Combien d'${C.qui} sont à la fois dans l'ensemble « ${C.a} » et dans l'ensemble « ${C.b} » ?`, v.ab, `On lit le nombre dans la partie commune aux deux ensembles (l'intersection) : ${v.ab}.`],
       [`Combien d'${C.qui} ${fa} seulement ?`, v.a, `« Seulement » : on prend la partie de l'ensemble « ${C.a} » qui n'est pas dans l'autre : ${v.a}.`],
       [`Combien d'${C.qui} ${fb} (en tout) ?`, v.b + v.ab, `Tout l'ensemble « ${C.b} » : ${v.b} + ${v.ab} = ${v.b + v.ab}. N'oublie pas l'intersection !`],
       [`Combien d'${C.qui} ${fa} (en tout) ?`, v.a + v.ab, `Tout l'ensemble « ${C.a} » : ${v.a} + ${v.ab} = ${v.a + v.ab}. N'oublie pas l'intersection !`],
@@ -799,11 +799,11 @@ const representations = famille([
     const v = { a: rng.int(1, 9), b: rng.int(1, 9), c: rng.int(1, 9), ab: rng.int(0, 6), ac: rng.int(0, 6), bc: rng.int(0, 6), abc: rng.int(1, 5), o: rng.int(0, 5) };
     const tot = Object.values(v).reduce((a, b) => a + b, 0);
     const qs = [
-      [`Combien sont dans les trois ensembles « ${C.a} », « ${C.b} » et « ${C.c} » ?`, v.abc, `La zone au centre, commune aux trois cercles : ${v.abc}.`],
-      [`Combien sont seulement dans l'ensemble « ${C.a} » ?`, v.a, `La partie du cercle « ${C.a} » qui ne touche aucun autre cercle : ${v.a}.`],
-      [`Combien sont dans les ensembles « ${C.a} » et « ${C.b} », mais pas « ${C.c} » ?`, v.ab, `La zone commune à « ${C.a} » et « ${C.b} », en dehors du cercle « ${C.c} » : ${v.ab}.`],
-      [`Combien sont dans l'ensemble « ${C.c} » (en tout) ?`, v.c + v.ac + v.bc + v.abc, `Toutes les zones du cercle « ${C.c} » : ${v.c} + ${v.ac} + ${v.bc} + ${v.abc} = ${v.c + v.ac + v.bc + v.abc}.`],
-      [`Combien sont dans exactement deux ensembles ?`, v.ab + v.ac + v.bc, `Les trois zones communes à deux cercles seulement (sans le centre) : ${v.ab} + ${v.ac} + ${v.bc} = ${v.ab + v.ac + v.bc}.`],
+      [`Combien d'${C.qui} sont dans les trois ensembles « ${C.a} », « ${C.b} » et « ${C.c} » ?`, v.abc, `La zone au centre, commune aux trois cercles : ${v.abc}.`],
+      [`Combien d'${C.qui} sont seulement dans l'ensemble « ${C.a} » ?`, v.a, `La partie du cercle « ${C.a} » qui ne touche aucun autre cercle : ${v.a}.`],
+      [`Combien d'${C.qui} sont dans les ensembles « ${C.a} » et « ${C.b} », mais pas « ${C.c} » ?`, v.ab, `La zone commune à « ${C.a} » et « ${C.b} », en dehors du cercle « ${C.c} » : ${v.ab}.`],
+      [`Combien d'${C.qui} sont dans l'ensemble « ${C.c} » (en tout) ?`, v.c + v.ac + v.bc + v.abc, `Toutes les zones du cercle « ${C.c} » : ${v.c} + ${v.ac} + ${v.bc} + ${v.abc} = ${v.c + v.ac + v.bc + v.abc}.`],
+      [`Combien d'${C.qui} sont dans exactement deux ensembles ?`, v.ab + v.ac + v.bc, `Les trois zones communes à deux cercles seulement (sans le centre) : ${v.ab} + ${v.ac} + ${v.bc} = ${v.ab + v.ac + v.bc}.`],
       [`Combien de ${C.qui} y a-t-il en tout ?`, tot, `On additionne les 8 zones, y compris celle en dehors des cercles : ${tot}.`],
     ];
     const [e, rep, x] = rng.pick(qs);
@@ -835,10 +835,10 @@ const representations = famille([
   // Arbre de choix (dénombrement).
   forme((rng) => {
     const MENUS = [
-      { titres: ['entrée', 'plat', 'dessert'], opts: [['soupe', 'salade', 'melon'], ['pâtes', 'poulet', 'poisson', 'omelette'], ['glace', 'fruit', 'yaourt']], quoi: 'menus', phrase: 'Au restaurant scolaire, on choisit une entrée, un plat et un dessert.' },
-      { titres: ['haut', 'bas', 'chaussures'], opts: [['t-shirt', 'pull', 'chemise'], ['jean', 'short', 'jupe'], ['baskets', 'sandales', 'bottes']], quoi: 'tenues', phrase: 'Pour s\'habiller, Léa choisit un haut, un bas et une paire de chaussures.' },
-      { titres: ['glace', 'parfum', 'sauce'], opts: [['cornet', 'pot'], ['vanille', 'fraise', 'chocolat', 'citron'], ['caramel', 'sans sauce', 'coulis']], quoi: 'glaces', phrase: 'Chez le glacier, on choisit un cornet ou un pot, un parfum et une sauce.' },
-      { titres: ['pain', 'garniture'], opts: [['blanc', 'gris', 'complet', 'baguette'], ['fromage', 'jambon', 'thon', 'poulet', 'œuf']], quoi: 'sandwichs', phrase: 'À la sandwicherie, on choisit un pain et une garniture.' },
+      { titres: ['entrée', 'plat', 'dessert'], opts: [['soupe', 'salade', 'melon'], ['pâtes', 'poulet', 'poisson', 'omelette'], ['glace', 'fruit', 'yaourt']], quoi: 'menus', f: '', phrase: 'Au restaurant scolaire, on choisit une entrée, un plat et un dessert.' },
+      { titres: ['haut', 'bas', 'chaussures'], opts: [['t-shirt', 'pull', 'chemise'], ['jean', 'short', 'jupe'], ['baskets', 'sandales', 'bottes']], quoi: 'tenues', f: 'e', phrase: 'Pour s\'habiller, Léa choisit un haut, un bas et une paire de chaussures.' },
+      { titres: ['contenant', 'parfum', 'sauce'], opts: [['cornet', 'pot'], ['vanille', 'fraise', 'chocolat', 'citron'], ['caramel', 'sans sauce', 'coulis']], quoi: 'glaces', f: 'e', phrase: 'Chez le glacier, on choisit un cornet ou un pot, un parfum et une sauce.' },
+      { titres: ['pain', 'garniture'], opts: [['blanc', 'gris', 'complet', 'baguette'], ['fromage', 'jambon', 'thon', 'poulet', 'œuf']], quoi: 'sandwichs', f: '', phrase: 'À la sandwicherie, on choisit un pain et une garniture.' },
     ];
     const M = rng.pick(MENUS);
     const niveaux = M.opts.map((o) => rng.shuffle(o).slice(0, rng.int(2, Math.min(o.length, 4))));
@@ -848,8 +848,8 @@ const representations = famille([
     const produit = niveaux.map((l) => l.length).join(' × ');
     const k = rng.int(0, niveaux.length - 1); const choixFixe = rng.pick(niveaux[k]);
     const qs = [
-      [`Combien de ${M.quoi} différents peut-on composer ?`, total, `On multiplie le nombre de possibilités à chaque étape : ${produit} = ${total}.${avecFigure ? ' C\'est aussi le nombre de branches au bout de l\'arbre.' : ''}`],
-      [`Combien de ${M.quoi} différents contiennent « ${choixFixe} » ?`, total / niveaux[k].length, `On fixe « ${choixFixe} » : il reste ${niveaux.filter((_, i) => i !== k).map((l) => l.length).join(' × ')} = ${total / niveaux[k].length} possibilités.`],
+      [`Combien de ${M.quoi} différent${M.f}s peut-on composer ?`, total, `On multiplie le nombre de possibilités à chaque étape : ${produit} = ${total}.${avecFigure ? ' C\'est aussi le nombre de branches au bout de l\'arbre.' : ''}`],
+      [`Combien de ${M.quoi} différent${M.f}s peut-on composer avec le choix « ${choixFixe} » ?`, total / niveaux[k].length, (() => { const reste = niveaux.filter((_, i) => i !== k).map((l) => l.length); return `On fixe « ${choixFixe} » : il reste ${reste.length > 1 ? `${reste.join(' × ')} = ` : ''}${total / niveaux[k].length} possibilités pour les autres choix.${avecFigure ? ' Dans l\'arbre, on compte les branches qui passent par ce choix.' : ''}`; })()],
     ];
     const [q, rep, x] = rng.pick(qs);
     const listes = niveaux.map((l, i) => `${M.titres[i]} : ${l.join(', ')}`).join(' ; ');
@@ -882,7 +882,7 @@ const representations = famille([
     const B = rng.pick(CONTEXTES_BANDES);
     const n = rng.int(4, 6);
     const cats = B.cats.slice(0, n);
-    const [pas, graduation] = rng.pick([[1, 2], [2, 4], [5, 10], [10, 20], [2, 2], [5, 5]]);
+    const [pas, graduation] = rng.pick([[1, 2], [2, 4], [5, 10], [10, 20], [2, 2], [5, 5]].filter(([p]) => p >= (B.pasMin ?? 1)));
     const vals = cats.map(() => rng.int(1, 12) * pas);
     const horizontal = rng.next() < 0.35;
     const fig = figureBandes(cats, vals, pas, graduation, B.titre, horizontal);
@@ -898,7 +898,7 @@ const representations = famille([
     if (sorte === 'ecart') {
       if (vals[i] === vals[j]) return null;
       const [g, p] = vals[i] > vals[j] ? [i, j] : [j, i];
-      return { type: 'numerique', difficulte: 2, enonce: `Combien de ${B.unite} de plus pour « ${cats[g]} » que pour « ${cats[p]} » ?`, cle, figure: fig, reponse: vals[g] - vals[p], explication: `${cats[g]} : ${fmt(vals[g])} ; ${cats[p]} : ${fmt(vals[p])}. Écart : ${fmt(vals[g])} − ${fmt(vals[p])} = ${fmt(vals[g] - vals[p])}.` };
+      return { type: 'numerique', difficulte: 2, enonce: `Combien ${B.unite === 'élèves' ? "d'élèves" : `de ${B.unite}`} de plus pour « ${cats[g]} » que pour « ${cats[p]} » ?`, cle, figure: fig, reponse: vals[g] - vals[p], explication: `${cats[g]} : ${fmt(vals[g])} ; ${cats[p]} : ${fmt(vals[p])}. Écart : ${fmt(vals[g])} − ${fmt(vals[p])} = ${fmt(vals[g] - vals[p])}.` };
     }
     const tot = vals.reduce((a, b) => a + b, 0);
     return { type: 'numerique', difficulte: 2, enonce: `Combien de ${B.unite} en tout d'après ce diagramme ?`, cle, figure: fig, reponse: tot, explication: `On additionne toutes les bandes : ${vals.map(fmt).join(' + ')} = ${fmt(tot)}.` };
@@ -930,11 +930,11 @@ const QUADS = {
   'trapèze isocèle': { tout: 'tout trapèze isocèle', v: { diag_milieu: 0, diag_egales: 1, diag_perp: 0, diag_axes: 0, cotes_egaux: 0, opp_egaux: 0, deux_paires: 0, angles_droits: 0 } },
 };
 const RESUME_QUADS = {
-  carré: 'Le carré a toutes ces propriétés : diagonales et médianes de même longueur, perpendiculaires, qui se coupent en leur milieu et qui sont des axes de symétrie (4 axes).',
-  rectangle: 'Rectangle : diagonales de même longueur qui se coupent en leur milieu (mais pas perpendiculaires) ; ses 2 médianes sont ses axes de symétrie.',
-  losange: 'Losange : diagonales perpendiculaires qui se coupent en leur milieu ; ce sont ses 2 axes de symétrie (pas les médianes).',
-  parallélogramme: 'Parallélogramme : ses diagonales se coupent en leur milieu, c\'est tout ; il n\'a pas d\'axe de symétrie.',
-  'trapèze isocèle': 'Trapèze isocèle : ses diagonales ont la même longueur ; il a 1 axe de symétrie (qui passe par les milieux des deux bases).',
+  carré: 'Le carré a toutes ces propriétés : 4 côtés égaux, 4 angles droits, diagonales de même longueur, perpendiculaires, qui se coupent en leur milieu ; diagonales et médianes sont ses 4 axes de symétrie.',
+  rectangle: 'Rectangle : 4 angles droits, côtés opposés parallèles et égaux ; diagonales de même longueur qui se coupent en leur milieu (mais pas perpendiculaires) ; ses 2 médianes sont ses axes de symétrie.',
+  losange: 'Losange : 4 côtés égaux, côtés opposés parallèles ; diagonales perpendiculaires qui se coupent en leur milieu, ce sont ses 2 axes de symétrie (pas les médianes, qui ont la même longueur).',
+  parallélogramme: 'Parallélogramme : côtés opposés parallèles et de même longueur ; ses diagonales se coupent en leur milieu, mais n\'ont pas la même longueur et ne sont pas perpendiculaires ; il n\'a pas d\'axe de symétrie.',
+  'trapèze isocèle': 'Trapèze isocèle : ses deux bases sont parallèles et ses diagonales ont la même longueur (mais elles ne se coupent pas en leur milieu) ; il a 1 axe de symétrie, qui passe par les milieux des deux bases.',
 };
 const POLYREG = [[5, 'pentagone'], [6, 'hexagone'], [8, 'octogone'], [10, 'décagone']];
 const AXES_FIG = [['un carré', 4], ['un rectangle (qui n\'est pas un carré)', 2], ['un losange (qui n\'est pas un carré)', 2], ['un parallélogramme (qui n\'est ni un rectangle, ni un losange)', 0], ['un trapèze isocèle', 1], ['un triangle équilatéral', 3], ['un triangle isocèle (qui n\'est pas équilatéral)', 1], ['un pentagone régulier', 5], ['un hexagone régulier', 6], ['un octogone régulier', 8], ['un décagone régulier', 10]];
@@ -963,6 +963,7 @@ function figureSegment(rng) {
   let A; let B; let C; let D;
   if (sorte === 'para') {
     const o = rng.int(1, 4); const b = rng.int(Math.max(o + 3, 6), 13 - o);
+    if (o * o + h * h === b * b) return null; // ce serait un losange (diagonales = axes)
     A = [0, h]; B = [b, h]; C = [b + o, 0]; D = [o, 0];
   } else {
     const o = rng.int(1, 4); const b = rng.int(3, 7); const o2 = rng.int(1, 5); if (o2 === o) return null;
@@ -998,7 +999,7 @@ function figureHauteurTriangle(rng) {
   let pied;
   if (vraie) pied = [ax, h];
   else {
-    const cands = range(0, b).filter((x) => Math.abs(x - ax) >= 2);
+    const cands = range(1, b - 1).filter((x) => Math.abs(x - ax) >= 2);
     if (!cands.length) return null;
     pied = [rng.pick(cands), h];
   }
@@ -1040,7 +1041,7 @@ const proprietesFigures = famille([
     const cas = rng.pick([
       () => { const [f, n] = rng.pick(AXES_FIG); return { e: `Combien d'axes de symétrie a ${f} ?`, r: n, x: n ? `${majuscule(f)} a ${n} axe${n > 1 ? 's' : ''} de symétrie.${f.includes('régulier') ? ' Un polygone régulier a autant d\'axes que de côtés.' : ''}` : `${majuscule(f)} n'a aucun axe de symétrie : en le pliant, les deux moitiés ne se superposent jamais.`, fiche: 'ma-symetrie' }; },
       () => { const [f, n] = rng.pick([['un parallélogramme', 2], ['un losange', 2], ['un rectangle', 2], ['un carré', 2], ['un trapèze (qui n\'est pas un parallélogramme)', 1]]); return { e: `Combien de paires de côtés parallèles a ${f} ?`, r: n, x: `${majuscule(f)} a ${n} paire${n > 1 ? 's' : ''} de côtés parallèles.${n === 1 ? ' Seules ses deux bases sont parallèles.' : ''}`, fiche: 'ma-quadrilateres' }; },
-      () => { const [f, n] = rng.pick([['un rectangle', 4], ['un carré', 4], ['un trapèze rectangle (qui n\'est pas un rectangle)', 2], ['un losange (qui n\'est pas un carré)', 0], ['un parallélogramme (qui n\'est pas un rectangle)', 0]]); return { e: `Combien d'angles droits a ${f} ?`, r: n, x: `${majuscule(f)} a ${n} angle${n > 1 ? 's' : ''} droit${n > 1 ? 's' : ''}.${n === 2 ? ' Son côté perpendiculaire aux deux bases forme 2 angles droits.' : ''}`, fiche: 'ma-quadrilateres' }; },
+      () => { const [f, n] = rng.pick([['un rectangle', 4], ['un carré', 4], ['un trapèze rectangle (qui n\'est pas un rectangle)', 2], ['un losange (qui n\'est pas un carré)', 0], ['un parallélogramme (qui n\'est pas un rectangle)', 0]]); return { e: `Combien d'angles droits a ${f} ?`, r: n, x: `${majuscule(f)} ${n ? `a ${n} angle${n > 1 ? 's' : ''} droit${n > 1 ? 's' : ''}` : "n'a aucun angle droit"}.${n === 2 ? ' Son côté perpendiculaire aux deux bases forme 2 angles droits.' : ''}`, fiche: 'ma-quadrilateres' }; },
       () => { const [n, nom] = rng.pick(POLYREG); const quoi = rng.pick(['côtés', 'sommets']); return { e: `Combien de ${quoi} a un ${nom} ?`, r: n, x: `Un ${nom} a ${n} côtés et ${n} sommets (penta = 5, hexa = 6, octo = 8, déca = 10).`, fiche: 'ma-polygones' }; },
     ])();
     return { type: 'numerique', difficulte: 2, enonce: cas.e, reponse: cas.r, explication: cas.x, fiche: cas.fiche };
@@ -1165,8 +1166,8 @@ const mouvements = famille([
     if (!pB) return null;
     const s = quadrillage(m, m, NX, NY, u)
       + dessinForme(cA, m + pA.x * u, m + pA.y * u, u, COUL.bleu) + dessinForme(cB, m + pB.x * u, m + pB.y * u, u, COUL.orange)
-      + texteSvg(m + (pA.x + wA / 2) * u, m + (pA.y + hA / 2) * u, 'A', { size: 15, bold: true, fill: COUL.bleuF })
-      + texteSvg(m + (pB.x + wB / 2) * u, m + (pB.y + hB / 2) * u, 'B', { size: 15, bold: true, fill: COUL.orangeF });
+      + texteSvg(m + (pA.x + wA / 2) * u, m + (pA.y + hA / 2) * u, 'A', { size: 16, bold: true, fill: COUL.bleuF, halo: true })
+      + texteSvg(m + (pB.x + wB / 2) * u, m + (pB.y + hB / 2) * u, 'B', { size: 16, bold: true, fill: COUL.orangeF, halo: true });
     const figure = svg(2 * m + NX * u, 2 * m + NY * u, s);
     const cle = `${nomF}|${cleCases(cA)}|${cleCases(cB)}|${pA.x},${pA.y},${pB.x},${pB.y}`;
     // Question précise sur le pivotement (quart de tour / demi-tour).
@@ -1467,7 +1468,7 @@ const egalites = famille([
     const op2 = rng.pick(['+', '−', '×', ':']);
     const manque = rng.pick([0, 1]); // 0 : premier nombre manquant, 1 : second
     let c; let d;
-    if (op2 === '+') { if (v < 4) return null; c = rng.int(1, v - 1); d = v - c; } else if (op2 === '−') { d = rng.int(2, 150); c = v + d; } else if (op2 === '×') { const divs = range(2, v - 1).filter((k) => v % k === 0 && v / k > 1); if (!divs.length) return null; c = rng.pick(divs); d = v / c; } else { d = rng.int(2, 9); c = v * d; }
+    if (op2 === '+') { if (v < 4) return null; c = rng.int(1, v - 1); d = v - c; } else if (op2 === '−') { d = rng.int(2, 150); c = v + d; } else if (op2 === '×') { const divs = range(2, v - 1).filter((k) => v % k === 0 && v / k > 1); if (!divs.length) return null; c = rng.pick(divs); d = v / c; } else { d = rng.int(2, v > 100 ? 4 : 9); c = v * d; }
     const rep = manque ? d : c;
     const droite = manque ? `${fmt(c)} ${op2} …` : `… ${op2} ${fmt(d)}`;
     const gaucheAGauche = rng.next() < 0.75;
@@ -1508,6 +1509,7 @@ const egalites = famille([
     };
   }),
 ]);
+
 
 export const GENERATEURS = {
   ma_tc_aires_quadrilateres: aires,
