@@ -85,6 +85,7 @@ const TEMPS_C = {
   cp: { nom: 'conditionnel passé', au: 'au conditionnel passé', aux: 'conditionnel', regle: 'auxiliaire être ou avoir au conditionnel présent + participe passé' },
   fp: { nom: 'futur proche', au: 'au futur proche', regle: 'verbe aller au présent + infinitif (ce n\'est pas un temps composé : il n\'y a pas de participe passé)' },
   pc: { nom: 'passé composé', au: 'au passé composé', aux: 'present', regle: 'auxiliaire être ou avoir au présent + participe passé' },
+  pa: { nom: 'passé antérieur', au: 'au passé antérieur', aux: 'passe_simple', regle: 'auxiliaire être ou avoir au passé simple + participe passé ; il exprime une action terminée juste avant une autre action au passé simple' },
 };
 // {S} sujet, {P} pronom qui reprend le sujet, {A} avoir à l'imparfait (accordé au sujet), {V} verbe, {C} complément.
 const CADRES_C = {
@@ -93,6 +94,8 @@ const CADRES_C = {
   cp: [{ t: 'Si {S} {A} eu le temps, {P} {V} {C}.', pro: true }, { t: 'Si {S} {A} pu, {P} {V} {C}.', pro: true }, { t: 'Avec un peu plus de temps, {S} {V} {C}.' }],
   fp: [{ t: 'Dans cinq minutes, {S} {V} {C}.' }, { t: 'Ce soir, {S} {V} {C}.' }, { t: "Tout à l'heure, {S} {V} {C}." }],
   pc: [{ t: 'Hier, {S} {V} {C}.' }, { t: 'Ce matin, {S} {V} {C}.' }],
+  pa: [{ t: 'Quand {S} {V} {C}, {P} alla se reposer.', pro: true, avoir: true }, { t: 'Dès que {S} {V} {C}, {P} sortit dans le jardin.', pro: true, avoir: true },
+    { t: 'Lorsque {S} {V} {C}, {P} téléphona à Mamie.', pro: true, avoir: true }],
 };
 const auxForme = (aux, temps, idx) => conjuguer(aux, temps, { pronom: 'x', idx }).forme;
 
@@ -115,11 +118,12 @@ function rendreC(cadre, s, verbe, c) {
 
 function frConjComposes(modele, rng) {
   const forme = choixForme(rng, modele, ['ecrire', 'ecrire', 'choisir', 'temps']);
-  const t = rng.pick(forme === 'temps' ? ['pqp', 'fa', 'cp', 'fp', 'pc'] : ['pqp', 'fa', 'cp', 'fp']);
+  // Passé antérieur : peu tiré (environ 1 fois sur 12), seulement avec il, elle, ils, elles ou un nom.
+  const t = rng.next() < 0.08 ? 'pa' : rng.pick(forme === 'temps' ? ['pqp', 'fa', 'cp', 'fp', 'pc'] : ['pqp', 'fa', 'cp', 'fp']);
   const iC = rng.int(0, CADRES_C[t].length - 1);
   const cadre = CADRES_C[t][iC];
   const v = rng.pick(cadre.avoir ? VERBES_C.filter((x) => x[2] === 'avoir') : VERBES_C);
-  const s = rng.pick(SUJETS_C);
+  const s = rng.pick(t === 'pa' ? SUJETS_C.filter((x) => x.idx === 2 || x.idx === 5) : SUJETS_C);
   const formes = formeComposee(v, t, s);
   const T = TEMPS_C[t];
   const complete = rendreC(cadre, s, formes[0], v[3]);
@@ -142,7 +146,7 @@ function frConjComposes(modele, rng) {
     };
   }
   if (forme === 'choisir') {
-    const autres = ['pqp', 'fa', 'cp', 'fp', 'pc'].filter((x) => x !== t).map((x) => formeComposee(v, x, s)[0]);
+    const autres = ['pqp', 'fa', 'cp', 'fp', 'pc', 'pa'].filter((x) => x !== t).map((x) => formeComposee(v, x, s)[0]);
     const prio = [];
     if (v[2] === 'être' && s.g && t !== 'fp') {
       const pl = s.idx >= 3 ? 's' : '';
@@ -158,7 +162,7 @@ function frConjComposes(modele, rng) {
     };
   }
   // temps : reconnaître le temps
-  const q = qcm(rng, T.nom, ['pqp', 'fa', 'cp', 'fp', 'pc'].map((x) => TEMPS_C[x].nom));
+  const q = qcm(rng, T.nom, ['pqp', 'fa', 'cp', 'fp', 'pc', 'pa'].map((x) => TEMPS_C[x].nom), { prio: t === 'pa' ? ['plus-que-parfait'] : [] });
   return {
     _signature: sig, ...q,
     enonce: `Dans la phrase « ${complete} », à quel temps est conjugué le verbe « ${formes[0]} » ?`,

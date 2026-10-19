@@ -154,7 +154,7 @@ test('score, série et XP', () => {
   assert.equal(r2.correct, true); assert.equal(r2.serie, 2);
   assert.equal(r2.xpGagne, 10 + 5 * (d2 - 1) + 2, 'bonus de série de +2 XP');
   q = session.suivante();
-  const r3 = session.repondre(q.type === 'qcm' ? (q.reponse + 1) % q.choix.length : 'mauvaise réponse');
+  const r3 = session.repondre(q.type === 'qcm' ? (q.reponse + 1) % q.choix.length : q.type === 'vrai_faux' ? !q.reponse : 'mauvaise réponse');
   assert.equal(r3.correct, false); assert.equal(r3.serie, 0); assert.ok(r3.bonneReponse);
   const res = session.resume();
   assert.equal(res.bonnes, 2); assert.equal(res.meilleureSerie, 2);

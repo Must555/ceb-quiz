@@ -2101,8 +2101,22 @@ function figureSolide(S, F, { lacet = 0.5, tangage = 0.45, W = 320, H = 240, eti
   for (const [cle, vis] of aretes) { if (!vis) { const [i, j] = cle.split('-').map(Number); out += ligneSvg(E(T[i]), E(T[j]), { sw: 1.4, dash: '5 4', stroke: COUL.doux }); } }
   for (const [cle, vis] of aretes) { if (vis) { const [i, j] = cle.split('-').map(Number); out += ligneSvg(E(T[i]), E(T[j]), { sw: 2 }); } }
   if (etiquettes) {
-    const c2 = E(centre);
-    T.forEach((p, i) => { const q = E(p); const d = Math.hypot(q[0] - c2[0], q[1] - c2[1]) || 1; out += texteSvg(q[0] + (q[0] - c2[0]) / d * 16, q[1] + (q[1] - c2[1]) / d * 16, etiquettes[i], { size: 14, bold: true, halo: true }); });
+    // Chaque étiquette est placée autour de son sommet, là où elle est le plus loin des arêtes et des autres étiquettes
+    // (un sommet caché ou le sommet de devant ne doit pas avoir son nom posé sur une arête).
+    const segs = [...aretes.keys()].map((cle) => cle.split('-').map((i) => E(T[+i])));
+    const distSeg = (q, [a, b]) => { const dx = b[0] - a[0]; const dy = b[1] - a[1]; const t = Math.max(0, Math.min(1, ((q[0] - a[0]) * dx + (q[1] - a[1]) * dy) / (dx * dx + dy * dy || 1))); return Math.hypot(q[0] - a[0] - t * dx, q[1] - a[1] - t * dy); };
+    const poses = [];
+    T.forEach((p, i) => {
+      const q = E(p); let best = null;
+      for (let k = 0; k < 16; k++) {
+        const a = (2 * Math.PI * k) / 16; const c = [q[0] + Math.cos(a) * 15, q[1] + Math.sin(a) * 15];
+        if (c[0] < 8 || c[0] > W - 8 || c[1] < 10 || c[1] > H - 6) continue;
+        const sc = Math.min(...segs.map((sg) => distSeg(c, sg)), ...poses.map((o) => Math.hypot(c[0] - o[0], c[1] - o[1]) / 2));
+        if (!best || sc > best[0]) best = [sc, c];
+      }
+      poses.push(best[1]);
+      out += texteSvg(best[1][0], best[1][1], etiquettes[i], { size: 14, bold: true, halo: true });
+    });
   }
   return svg(W, H, out);
 }

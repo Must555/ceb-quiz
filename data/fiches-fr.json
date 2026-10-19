@@ -231,10 +231,12 @@
    "e": "🧩",
    "titre": "Préfixes et suffixes",
    "regle": [
-    "Le préfixe se place devant le mot de base : re- (de nouveau), pré- (avant), in-/im-/dé-/mal- (le contraire), sous- (en dessous).",
+    "Le préfixe se place devant le mot de base : re- (de nouveau), pré- (avant), sous- (en dessous), en-/em- (dans : enterrer, embouteiller).",
+    "in-, im-, il-, ir- veulent souvent dire « le contraire » : im- devant m, b, p (impoli) ; il- devant l (illisible) ; ir- devant r (irréel) ; in- ailleurs (injuste).",
+    "Quand le préfixe se termine par la consonne qui commence le mot de base, on écrit deux consonnes : immobile, illégal, irréel, innombrable, emmener.",
     "Le suffixe se place après : -ette/-on (petit), -eur/-iste (personne qui fait), -able (qui peut être), -ment (de telle manière), -ier (arbre fruitier), -erie (magasin)."
    ],
-   "exemple": "re + lire = relire ; pomme + ier = pommier ; laver + able = lavable.",
+   "exemple": "re + lire = relire ; il + lisible = illisible ; em + bouteille = embouteiller ; pomme + ier = pommier.",
    "astuce": "Enlève le préfixe ou le suffixe pour retrouver le mot de base."
   },
   {
@@ -307,12 +309,12 @@
    "regle": [
     "Cause : parce que, car, puisque.",
     "Conséquence : donc, alors, c'est pourquoi, par conséquent.",
-    "Opposition : mais, pourtant, cependant, bien que.",
+    "Opposition / concession : mais, pourtant, cependant, même si, bien que.",
     "Temps : quand, puis, ensuite, avant de, pendant que, lorsque.",
-    "Ajout : et, de plus, en plus."
+    "Ajout : et, de plus, en plus. Conclusion : en conclusion, pour conclure, bref, en résumé."
    ],
    "exemple": "Il pleut, donc je prends mon parapluie. Je prends mon parapluie car il pleut.",
-   "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ?"
+   "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ? Concession = on s'attendait au contraire (pourtant, même si)."
   },
   {
    "id": "fr-types-textes",
@@ -320,13 +322,13 @@
    "e": "📰",
    "titre": "Types de textes et intentions",
    "regle": [
-    "Raconter une histoire : conte, fable, récit.",
-    "Informer : texte documentaire, article de journal.",
-    "Convaincre : publicité, affiche, critique.",
-    "Donner des consignes : recette, mode d'emploi, règle du jeu."
+    "Quatre intentions : informer, persuader (convaincre), enjoindre (donner des consignes, des ordres) et donner du plaisir (émouvoir, divertir).",
+    "Informer : texte documentaire, article de journal. Persuader : publicité, affiche, critique.",
+    "Enjoindre : recette, mode d'emploi, règle du jeu, règlement. Donner du plaisir : conte, roman, poème, BD.",
+    "Cinq structures : narrative (on raconte), descriptive (on décrit), explicative (comment ? pourquoi ?), argumentative (une idée et des arguments), dialoguée (des personnes se parlent)."
    ],
    "exemple": "« Mélange la farine… » → recette → donner des consignes.",
-   "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte."
+   "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte ; « pourquoi ? parce que » = texte explicatif."
   },
   {
    "id": "fr-reprises",
@@ -363,7 +365,8 @@
     "Futur antérieur : auxiliaire au futur simple (tu auras fini). Action future terminée avant une autre.",
     "Conditionnel passé : auxiliaire au conditionnel présent (je serais venu). Souvent après « si » + plus-que-parfait.",
     "Avec l'auxiliaire être, le participe passé s'accorde avec le sujet (elles étaient parties, Léa sera arrivée).",
-    "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord."
+    "Futur proche : verbe aller au présent + infinitif (je vais partir, elles vont arriver). Ce n'est pas un temps composé : il n'y a pas de participe passé, donc pas d'accord.",
+    "Passé antérieur : auxiliaire au passé simple + participe passé (quand il eut fini, il sortit) ; action terminée juste avant une autre, dans un récit."
    ],
    "exemple": "Quand tu auras fini tes devoirs, tu pourras jouer. Si j'avais su, je serais venue plus tôt.",
    "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé."

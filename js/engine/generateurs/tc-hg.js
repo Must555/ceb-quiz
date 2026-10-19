@@ -1490,7 +1490,7 @@ const OCEANS_P = [
   { id: 'pac', nom: 'l\'océan Pacifique', pos: [[-140, 8], [-120, -30], [165, 18]] },
   { id: 'ind', nom: 'l\'océan Indien', pos: [[75, -22], [88, -12]] },
   { id: 'arc', nom: 'l\'océan Arctique', pos: [[5, 81], [-160, 79]] },
-  { id: 'aus', nom: 'l\'océan Austral (ou océan Antarctique)', court: 'l\'océan Austral', pos: [[-120, -62], [60, -59]] },
+  { id: 'aus', nom: 'l\'océan Austral (ou océan Antarctique)', court: 'l\'océan Austral (ou Antarctique)', pos: [[-120, -62], [60, -59]] },
 ];
 const LIGNES_P = [
   { id: 'equ', nom: 'l\'équateur', lat: 0, def: 'partage la Terre en deux hémisphères, Nord et Sud', coul: '#b3261e' },
