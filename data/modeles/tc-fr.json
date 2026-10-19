@@ -23,7 +23,24 @@
    "domaine": "fr.orthographe",
    "fiche": "fr-relire",
    "difficulte": 2,
-   "variantesMin": 40
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "fr-accord-adjectif"
+    },
+    {
+     "fiche": "fr-accord-sujet-verbe"
+    },
+    {
+     "fiche": "fr-e-er"
+    },
+    {
+     "fiche": "fr-homophones"
+    },
+    {
+     "fiche": "fr-participe-passe"
+    }
+   ]
   },
   {
    "id": "fr-f-fonctions-gn",

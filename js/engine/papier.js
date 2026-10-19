@@ -8,7 +8,8 @@
 // (même id, même énoncé), y compris d'une matière à l'autre.
 
 import { createRng } from './random.js';
-import { QuizSession } from './session.js';
+import { QuizSession, estJouable } from './session.js';
+import { genererVariante } from './generator.js';
 import { normaliserTexte } from './format.js';
 import { tirerTraces } from './traces.js';
 
@@ -167,22 +168,30 @@ export function composerFiche(donnees, code, notions) {
       if (t && t.fiche === notion && !traces.some((x) => x.id === t.id)) traces.push(t);
     }
     const nbTraces = Math.min(traces.length, parNotion >= 8 ? 2 : 1);
-    const session = new QuizSession(
-      { banque: donnees.banque, modeles: donnees.modeles },
-      { mode: 'entrainement', nbQuestions: 10_000, maxParModele: 12, seed: `${c}/${notion}`, poids: (q) => (notionsDe(q).includes(notion) ? (q.docsResolus?.length ? 0.3 : 1) : 0) },
-    );
+    // Tirage direct : questions fixes de la notion et familles qui la couvrent. Une famille peut viser
+    // plusieurs notions (une fiche par forme) : on retire au sort jusqu'à obtenir une variante de la bonne notion.
     const questions = [];
     const voulues = parNotion - nbTraces;
-    for (let essais = 0; questions.length < voulues && essais < voulues * 25; essais++) {
-      const q = session.suivante();
-      if (!q) break;
-      session.passer();
-      if (q.fiche !== notion || idsVus.has(q.id) || contenus.has(cleContenu(q))) continue;
+    const rngN = createRng(`${c}/${notion}`);
+    const fixes = rngN.shuffle(donnees.banque.filter((q) => q.fiche === notion && q.numerisable !== false && estJouable(q)));
+    const familles = rngN.shuffle(donnees.modeles.filter((m) => notionsDe(m).includes(notion)));
+    const accepter = (q) => {
+      if (!q || q.fiche !== notion || idsVus.has(q.id) || contenus.has(cleContenu(q))) return false;
       const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier));
-      if (docs.length > 1 || (docs.length && docsVus.size >= 3)) continue;
+      if (docs.length > 1 || (docs.length && docsVus.size >= 3)) return false;
       docs.forEach((d) => docsVus.add(d.fichier));
       idsVus.add(q.id); contenus.add(cleContenu(q));
       questions.push({ ...q });
+      return true;
+    };
+    let actives = [...familles];
+    for (let tour = 0; questions.length < voulues && (actives.length || fixes.length) && tour < 400; tour++) {
+      // Une chance sur trois de prendre une question fixe (vrais CEB, banque) quand il en reste.
+      if (fixes.length && (!actives.length || rngN.next() < 0.34)) { accepter(fixes.shift()); continue; }
+      const m = actives[tour % actives.length];
+      let ok = false;
+      for (let k = 0; k < 40 && !ok; k++) ok = accepter(genererVariante(m, rngN, idsVus));
+      if (!ok) actives = actives.filter((x) => x !== m);
     }
     questions.sort((a, b) => (a.difficulte ?? 2) - (b.difficulte ?? 2));
     for (const t of traces.slice(0, nbTraces)) { idsVus.add(t.id); questions.push(t); }

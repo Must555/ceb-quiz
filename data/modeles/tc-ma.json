@@ -1,14 +1,91 @@
 {
  "matiere": "ma",
  "modeles": [
-  { "id": "ma-f-aires-quadrilateres", "generateur": "ma_tc_aires_quadrilateres", "domaine": "ma.grandeurs", "fiche": "ma-aires-formules", "difficulte": 2, "variantesMin": 40 },
-  { "id": "ma-f-logique-deductive", "generateur": "ma_tc_logique_deductive", "domaine": "ma.donnees", "fiche": "ma-logique", "difficulte": 3, "variantesMin": 40 },
-  { "id": "ma-f-developpements", "generateur": "ma_tc_developpements", "domaine": "ma.geometrie", "fiche": "ma-developpements", "difficulte": 2, "variantesMin": 40 },
-  { "id": "ma-f-lire-representations", "generateur": "ma_tc_lire_representations", "domaine": "ma.donnees", "fiche": "ma-representations", "difficulte": 2, "variantesMin": 40 },
-  { "id": "ma-f-proprietes-figures", "generateur": "ma_tc_proprietes_figures", "domaine": "ma.geometrie", "fiche": "ma-diagonales-medianes", "difficulte": 2, "variantesMin": 40, "formes": [{ "fiche": "ma-polygones" }, { "fiche": "ma-quadrilateres" }, { "fiche": "ma-triangles" }] },
-  { "id": "ma-f-mouvements", "generateur": "ma_tc_mouvements", "domaine": "ma.geometrie", "fiche": "ma-mouvements", "difficulte": 2, "variantesMin": 40 },
-  { "id": "ma-f-perimetre-constant", "generateur": "ma_tc_perimetre_constant", "domaine": "ma.grandeurs", "fiche": "ma-perimetre-constant", "difficulte": 3, "variantesMin": 40 },
-  { "id": "ma-f-vocabulaire-operations", "generateur": "ma_tc_vocabulaire_operations", "domaine": "ma.arithmetique", "fiche": "ma-vocabulaire-operations", "difficulte": 2, "variantesMin": 40 },
-  { "id": "ma-f-egalites", "generateur": "ma_tc_egalites", "domaine": "ma.arithmetique", "fiche": "ma-egalites", "difficulte": 2, "variantesMin": 40 }
+  {
+   "id": "ma-f-aires-quadrilateres",
+   "generateur": "ma_tc_aires_quadrilateres",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-aires-formules",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-logique-deductive",
+   "generateur": "ma_tc_logique_deductive",
+   "domaine": "ma.donnees",
+   "fiche": "ma-logique",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-developpements",
+   "generateur": "ma_tc_developpements",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-developpements",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-lire-representations",
+   "generateur": "ma_tc_lire_representations",
+   "domaine": "ma.donnees",
+   "fiche": "ma-representations",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-proprietes-figures",
+   "generateur": "ma_tc_proprietes_figures",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-diagonales-medianes",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "ma-polygones"
+    },
+    {
+     "fiche": "ma-quadrilateres"
+    },
+    {
+     "fiche": "ma-triangles"
+    },
+    {
+     "fiche": "ma-symetrie"
+    }
+   ]
+  },
+  {
+   "id": "ma-f-mouvements",
+   "generateur": "ma_tc_mouvements",
+   "domaine": "ma.geometrie",
+   "fiche": "ma-mouvements",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-perimetre-constant",
+   "generateur": "ma_tc_perimetre_constant",
+   "domaine": "ma.grandeurs",
+   "fiche": "ma-perimetre-constant",
+   "difficulte": 3,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-vocabulaire-operations",
+   "generateur": "ma_tc_vocabulaire_operations",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-vocabulaire-operations",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "ma-f-egalites",
+   "generateur": "ma_tc_egalites",
+   "domaine": "ma.arithmetique",
+   "fiche": "ma-egalites",
+   "difficulte": 2,
+   "variantesMin": 40
+  }
  ]
 }

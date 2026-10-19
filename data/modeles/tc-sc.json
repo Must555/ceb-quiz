@@ -1,10 +1,64 @@
 {
  "matiere": "sc",
  "modeles": [
-  { "id": "sc-f-releves-graphique", "generateur": "sc_releves", "domaine": "sc.energie", "fiche": "sc-lire-donnees", "difficulte": 2, "variantesMin": 40 },
-  { "id": "sc-f-effort-mesures", "generateur": "sc_effort", "domaine": "sc.vivant", "fiche": "sc-effort", "difficulte": 2, "variantesMin": 40 },
-  { "id": "sc-f-ensembles-emboites", "generateur": "sc_emboites", "domaine": "sc.vivant", "fiche": "sc-ensembles-emboites", "difficulte": 2, "variantesMin": 40 },
-  { "id": "sc-f-attributs-especes", "generateur": "sc_attributs", "domaine": "sc.vivant", "fiche": "sc-attributs", "difficulte": 2, "variantesMin": 40 },
-  { "id": "sc-f-liens-systemes", "generateur": "sc_systemes", "domaine": "sc.vivant", "fiche": "sc-liens-systemes", "difficulte": 2, "variantesMin": 40 }
+  {
+   "id": "sc-f-releves-graphique",
+   "generateur": "sc_releves",
+   "domaine": "sc.energie",
+   "fiche": "sc-lire-donnees",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "sc-chaleur"
+    },
+    {
+     "fiche": "sc-demarche"
+    },
+    {
+     "fiche": "sc-effort"
+    },
+    {
+     "fiche": "sc-plantes"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-effort-mesures",
+   "generateur": "sc_effort",
+   "domaine": "sc.vivant",
+   "fiche": "sc-effort",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "sc-f-ensembles-emboites",
+   "generateur": "sc_emboites",
+   "domaine": "sc.vivant",
+   "fiche": "sc-ensembles-emboites",
+   "difficulte": 2,
+   "variantesMin": 40
+  },
+  {
+   "id": "sc-f-attributs-especes",
+   "generateur": "sc_attributs",
+   "domaine": "sc.vivant",
+   "fiche": "sc-attributs",
+   "difficulte": 2,
+   "variantesMin": 40,
+   "formes": [
+    {
+     "fiche": "sc-espece"
+    }
+   ]
+  },
+  {
+   "id": "sc-f-liens-systemes",
+   "generateur": "sc_systemes",
+   "domaine": "sc.vivant",
+   "fiche": "sc-liens-systemes",
+   "difficulte": 2,
+   "variantesMin": 40
+  }
  ]
 }
