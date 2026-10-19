@@ -352,7 +352,7 @@
     "Quand une ligne (ou une colonne) n'a plus qu'une case libre, c'est la bonne réponse : entoure-la.",
     "Une case sûre permet de barrer tout le reste de sa ligne et de sa colonne."
    ],
-   "exemple": "Léa, Tom et Inès ont chacun un animal différent. Tom n'a pas le chat. Ni Léa ni Tom n'ont le lapin. → Inès a le lapin, donc Léa a le chat et Tom le chien.",
+   "exemple": "Léa, Tom et Agathe ont chacun un animal différent. Tom n'a pas le chat. Ni Léa ni Tom n'ont le lapin. → Agathe a le lapin, donc Léa a le chat et Tom le chien.",
    "astuce": "Relis tous les indices à chaque fois que tu as trouvé une nouvelle case : un indice peut servir deux fois."
   },
   {

@@ -21,10 +21,10 @@ const decimal = (rng, min, max, dec) => rng.int(min * 10 ** dec, max * 10 ** dec
 const forme = (fn, poids = 1) => Object.assign(fn, { poids });
 
 const PRENOMS = [
-  ['Léa', 'f'], ['Emma', 'f'], ['Inès', 'f'], ['Lina', 'f'], ['Chloé', 'f'], ['Nora', 'f'], ['Louise', 'f'],
-  ['Alice', 'f'], ['Zoé', 'f'], ['Sarah', 'f'], ['Yasmine', 'f'], ['Julie', 'f'], ['Amira', 'f'], ['Manon', 'f'],
-  ['Noah', 'm'], ['Lucas', 'm'], ['Adam', 'm'], ['Louis', 'm'], ['Arthur', 'm'], ['Jules', 'm'], ['Victor', 'm'],
-  ['Nathan', 'm'], ['Rayan', 'm'], ['Mehdi', 'm'], ['Théo', 'm'], ['Hugo', 'm'], ['Tom', 'm'], ['Simon', 'm'],
+  ['Léa', 'f'], ['Emma', 'f'], ['Agathe', 'f'], ['Margaux', 'f'], ['Chloé', 'f'], ['Pauline', 'f'], ['Louise', 'f'],
+  ['Alice', 'f'], ['Zoé', 'f'], ['Mathilde', 'f'], ['Juliette', 'f'], ['Julie', 'f'], ['Amélie', 'f'], ['Manon', 'f'],
+  ['Baptiste', 'm'], ['Lucas', 'm'], ['Antoine', 'm'], ['Louis', 'm'], ['Arthur', 'm'], ['Jules', 'm'], ['Victor', 'm'],
+  ['Nathan', 'm'], ['Romain', 'm'], ['Mathis', 'm'], ['Théo', 'm'], ['Hugo', 'm'], ['Tom', 'm'], ['Simon', 'm'],
 ].map(([n, g]) => ({ n, g }));
 
 // QCM : bonne réponse + distracteurs distincts, mélangés.
@@ -783,7 +783,7 @@ const CONTEXTES_BANDES = [
   { titre: 'Fruits vendus à la récréation', cats: ['pommes', 'bananes', 'poires', 'kiwis', 'oranges', 'prunes'], unite: 'fruits', ecart: (g, p) => `Quel est l'écart entre les ventes de ${g} et celles de ${p} ?`, q: (c) => `Combien de ${c} ont été vendu${c === 'pommes' || c === 'bananes' || c === 'poires' || c === 'oranges' || c === 'prunes' ? 'e' : ''}s ?` },
   { titre: 'Élèves inscrits par activité', cats: ['théâtre', 'judo', 'chorale', 'échecs', 'dessin', 'basket'], unite: 'élèves', ecart: (g, p) => `Combien d'élèves de plus sont inscrits à l'activité « ${g} » qu'à l'activité « ${p} » ?`, q: (c) => `Combien d'élèves sont inscrits à l'activité « ${c} » ?` },
   { titre: 'Visiteurs du musée', pasMin: 5, cats: ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'], unite: 'visiteurs', ecart: (g, p) => `Combien de visiteurs de plus sont venus le ${g} que le ${p} ?`, q: (c) => `Combien de visiteurs sont venus le ${c} ?` },
-  { titre: 'Livres lus pendant les vacances', cats: ['Léa', 'Tom', 'Inès', 'Adam', 'Zoé', 'Hugo'], unite: 'livres', ecart: (g, p) => `Combien de livres ${g} a-t-${['Léa', 'Inès', 'Zoé'].includes(g) ? 'elle' : 'il'} lus de plus ${/^[AEIOUÉÈ]/.test(p) ? "qu'" : 'que '}${p} ?`, q: (c) => `Combien de livres ${c} a-t-${['Léa', 'Inès', 'Zoé'].includes(c) ? 'elle' : 'il'} lus ?` },
+  { titre: 'Livres lus pendant les vacances', cats: ['Léa', 'Tom', 'Agathe', 'Antoine', 'Zoé', 'Hugo'], unite: 'livres', ecart: (g, p) => `Combien de livres ${g} a-t-${['Léa', 'Agathe', 'Zoé'].includes(g) ? 'elle' : 'il'} lus de plus ${/^[AEIOUÉÈ]/.test(p) ? "qu'" : 'que '}${p} ?`, q: (c) => `Combien de livres ${c} a-t-${['Léa', 'Agathe', 'Zoé'].includes(c) ? 'elle' : 'il'} lus ?` },
 ];
 
 const representations = famille([
@@ -1454,7 +1454,7 @@ const egalites = famille([
     const bonneEcriture = `${txtExpr(a, op1, b)} = ${fmt(r1)} puis ${fmt(r1)} ${op2} ${fmt(c)} = ${fmt(r2)}, ou bien (${txtExpr(a, op1, b)}) ${op2} ${fmt(c)} = ${fmt(r2)}`;
     return {
       type: 'vrai_faux', reponse: vrai, difficulte: 3, fiche: 'ma-egalites',
-      enonce: `Vrai ou faux ? Pour calculer « ${txtExpr(a, op1, b)}, puis ${op2 === '+' ? 'ajouter' : 'retirer'} ${fmt(c)} », Sam écrit :\n${ecr}\nCette écriture est correcte.`,
+      enonce: `Vrai ou faux ? Pour calculer « ${txtExpr(a, op1, b)}, puis ${op2 === '+' ? 'ajouter' : 'retirer'} ${fmt(c)} », Paul écrit :\n${ecr}\nCette écriture est correcte.`,
       explication: vrai
         ? `Vrai : chaque signe « = » relie deux écritures qui ont la même valeur.`
         : `Faux : le signe « = » doit relier deux choses égales. Ici, ${sorte === 'chaine' ? `on lit ${txtExpr(a, op1, b)} = ${fmt(r2)}, ce qui est faux (${txtExpr(a, op1, b)} = ${fmt(r1)})` : `on lit ${fmt(r1)} = ${fmt(r1)} ${op2} ${fmt(c)}, ce qui est faux`}. Il faut écrire : ${bonneEcriture}.`,

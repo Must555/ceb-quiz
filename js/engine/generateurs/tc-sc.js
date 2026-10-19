@@ -10,10 +10,10 @@
 import { formatNombre as fmt } from '../format.js';
 
 // ---------------------------------------------------------------- outils
-const FILLES = ['Léa', 'Inès', 'Emma', 'Louise', 'Yasmine', 'Olivia', 'Amira', 'Chloé', 'Zoé', 'Sofia', 'Maëlle', 'Alice', 'Nora', 'Lina'];
-const GARCONS = ['Noah', 'Adam', 'Mohamed', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Ilyes', 'Victor', 'Jules', 'Rayan', 'Elias', 'Théo', 'Hugo'];
+const FILLES = ['Léa', 'Agathe', 'Emma', 'Louise', 'Juliette', 'Océane', 'Amélie', 'Chloé', 'Zoé', 'Solène', 'Maëlle', 'Alice', 'Pauline', 'Margaux'];
+const GARCONS = ['Baptiste', 'Antoine', 'Maxime', 'Arthur', 'Lucas', 'Nathan', 'Louis', 'Étienne', 'Victor', 'Jules', 'Romain', 'Émile', 'Théo', 'Hugo'];
 const PRENOMS = [...FILLES, ...GARCONS];
-const VOY = /\bde (?=(Inès|Emma|Olivia|Amira|Alice|Adam|Arthur|Ilyes|Elias|Hugo)\b)/g;
+const VOY = /\bde (?=(Agathe|Emma|Océane|Amélie|Alice|Antoine|Arthur|Étienne|Émile|Hugo)\b)/g;
 const elider = (t) => (typeof t === 'string' ? t.replace(VOY, 'd\'') : t);
 const il = (p) => (FILLES.includes(p) ? 'elle' : 'il');
 const maj = (s) => (s ? String(s).replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCase()) : s);

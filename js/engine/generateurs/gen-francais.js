@@ -372,10 +372,10 @@ function frAccordSV(modele, rng) {
 // ───────────────────────── Participe passé (être / avoir) ─────────────────────────
 const SUJETS_PP = [
   ['Léa', 'f', 's'], ['Tom', 'm', 's'], ['ma tante', 'f', 's'], ['mon oncle', 'm', 's'], ['Mamie', 'f', 's'],
-  ['Papi', 'm', 's'], ['la voisine', 'f', 's'], ['le facteur', 'm', 's'], ['Yasmine', 'f', 's'], ['Mehdi', 'm', 's'],
-  ['Emma et Zoé', 'f', 'p'], ['Noah et Adam', 'm', 'p'], ['Inès et Lucas', 'm', 'p', true], ['mes cousines', 'f', 'p'],
-  ['les garçons', 'm', 'p'], ['Nora et sa sœur', 'f', 'p'], ['Chloé et Samuel', 'm', 'p', true], ['les filles', 'f', 'p'],
-  ['les joueuses', 'f', 'p'], ['Victor et Elias', 'm', 'p'],
+  ['Papi', 'm', 's'], ['la voisine', 'f', 's'], ['le facteur', 'm', 's'], ['Juliette', 'f', 's'], ['Mathis', 'm', 's'],
+  ['Emma et Zoé', 'f', 'p'], ['Baptiste et Antoine', 'm', 'p'], ['Agathe et Lucas', 'm', 'p', true], ['mes cousines', 'f', 'p'],
+  ['les garçons', 'm', 'p'], ['Pauline et sa sœur', 'f', 'p'], ['Chloé et Samuel', 'm', 'p', true], ['les filles', 'f', 'p'],
+  ['les joueuses', 'f', 'p'], ['Victor et Émile', 'm', 'p'],
 ];
 const VERBES_PP = [
   ['aller', 'à la piscine'], ['partir', 'en vacances'], ['arriver', 'en retard'], ['venir', 'à la fête'],
@@ -416,7 +416,7 @@ const NOMS_ADJ = [
   ['des pantalons', 'Ces pantalons', 'm', 'p', 'v'], ['une veste', 'La veste de Papa', 'f', 's', 'v'], ['des bonnets', 'Nos bonnets', 'm', 'p', 'v'],
   ['un cartable', 'Mon cartable', 'm', 's', 'o'], ['une trousse', 'Ta trousse', 'f', 's', 'o'], ['des crayons', 'Mes crayons', 'm', 'p', 'o'],
   ['une valise', 'La valise', 'f', 's', 'o'], ['des sacs', 'Les sacs', 'm', 'p', 'o'], ['des boîtes', 'Ces boîtes', 'f', 'p', 'o'],
-  ['un vélo', 'Le vélo de Sami', 'm', 's', 'g'], ['des voitures', 'Les voitures', 'f', 'p', 'g'], ['une maison', 'Cette maison', 'f', 's', 'g'],
+  ['un vélo', 'Le vélo de Sébastien', 'm', 's', 'g'], ['des voitures', 'Les voitures', 'f', 'p', 'g'], ['une maison', 'Cette maison', 'f', 's', 'g'],
   ['des volets', 'Les volets', 'm', 'p', 'g'], ['une porte', 'La porte du garage', 'f', 's', 'g'], ['des murs', 'Les murs de la classe', 'm', 'p', 'g'],
   ['une fillette', 'La fillette', 'f', 's', 'p'], ['des garçons', 'Les garçons', 'm', 'p', 'p'], ['une chanteuse', 'La chanteuse', 'f', 's', 'p'],
   ['des joueuses', 'Les joueuses', 'f', 'p', 'p'], ['un pompier', 'Le pompier', 'm', 's', 'p'], ['des infirmières', 'Les infirmières', 'f', 'p', 'p'],
@@ -497,8 +497,8 @@ const PAS_IMPERATIF = new Set(['être', 'avoir', 'tomber', 'arriver', 'habiter',
 const SUJETS_CONJ = [
   ['je', 0, null, true], ['tu', 1, null, true], ['il', 2, 'm', true], ['elle', 2, 'f', true], ['nous', 3, null, true],
   ['vous', 4, null, true], ['ils', 5, 'm', true], ['elles', 5, 'f', true],
-  ['Léa', 2, 'f'], ['Adam', 2, 'm'], ['Mon grand-père', 2, 'm'], ['La maîtresse', 2, 'f'], ['Mehdi', 2, 'm'], ['Sofia', 2, 'f'],
-  ['Notre voisin', 2, 'm'], ['Yasmine et Chloé', 5, 'f'], ['Mes cousins', 5, 'm'], ['Nathan et Inès', 5, 'm'],
+  ['Léa', 2, 'f'], ['Antoine', 2, 'm'], ['Mon grand-père', 2, 'm'], ['La maîtresse', 2, 'f'], ['Mathis', 2, 'm'], ['Solène', 2, 'f'],
+  ['Notre voisin', 2, 'm'], ['Juliette et Chloé', 5, 'f'], ['Mes cousins', 5, 'm'], ['Nathan et Agathe', 5, 'm'],
   ['Les filles', 5, 'f'], ['Lucas et Hugo', 5, 'm'], ['Ma sœur et moi', 3, null], ['Ton frère et toi', 4, null],
 ];
 const TEMPS_CONJ = ['present', 'imparfait', 'futur', 'passe_compose', 'passe_simple', 'conditionnel'];

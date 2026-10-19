@@ -25,13 +25,13 @@ const dedoublonner = (arr) => [...new Set(arr)];
 
 // Prénoms courants en Belgique (il/elle pour les accords).
 const PRENOMS = [
-  ['Léa', 'f'], ['Emma', 'f'], ['Inès', 'f'], ['Lina', 'f'], ['Chloé', 'f'], ['Nora', 'f'], ['Olivia', 'f'],
-  ['Louise', 'f'], ['Alice', 'f'], ['Zoé', 'f'], ['Sarah', 'f'], ['Yasmine', 'f'], ['Maëlle', 'f'], ['Julie', 'f'],
-  ['Amira', 'f'], ['Elif', 'f'], ['Manon', 'f'], ['Fatima', 'f'], ['Charlotte', 'f'], ['Aya', 'f'], ['Lucie', 'f'],
-  ['Noah', 'm'], ['Lucas', 'm'], ['Adam', 'm'], ['Louis', 'm'], ['Mohamed', 'm'], ['Arthur', 'm'], ['Jules', 'm'],
-  ['Victor', 'm'], ['Nathan', 'm'], ['Rayan', 'm'], ['Mehdi', 'm'], ['Yanis', 'm'], ['Théo', 'm'], ['Hugo', 'm'],
-  ['Gabriel', 'm'], ['Liam', 'm'], ['Sacha', 'm'], ['Tom', 'm'], ['Milan', 'm'], ['Ilyes', 'm'], ['Simon', 'm'],
-  ['Amine', 'm'], ['Mattéo', 'm'], ['Kenzo', 'm'], ['Bilal', 'm'],
+  ['Léa', 'f'], ['Emma', 'f'], ['Agathe', 'f'], ['Margaux', 'f'], ['Chloé', 'f'], ['Pauline', 'f'], ['Océane', 'f'],
+  ['Louise', 'f'], ['Alice', 'f'], ['Zoé', 'f'], ['Mathilde', 'f'], ['Juliette', 'f'], ['Maëlle', 'f'], ['Julie', 'f'],
+  ['Amélie', 'f'], ['Élodie', 'f'], ['Manon', 'f'], ['Clémence', 'f'], ['Charlotte', 'f'], ['Anaïs', 'f'], ['Lucie', 'f'],
+  ['Baptiste', 'm'], ['Lucas', 'm'], ['Antoine', 'm'], ['Louis', 'm'], ['Maxime', 'm'], ['Arthur', 'm'], ['Jules', 'm'],
+  ['Victor', 'm'], ['Nathan', 'm'], ['Romain', 'm'], ['Mathis', 'm'], ['Quentin', 'm'], ['Théo', 'm'], ['Hugo', 'm'],
+  ['Gabriel', 'm'], ['Clément', 'm'], ['Bastien', 'm'], ['Tom', 'm'], ['Florian', 'm'], ['Étienne', 'm'], ['Simon', 'm'],
+  ['Aurélien', 'm'], ['Benoît', 'm'], ['Corentin', 'm'], ['Valentin', 'm'],
 ].map(([n, g]) => ({ n, il: g === 'f' ? 'elle' : 'il', e: g === 'f' ? 'e' : '' }));
 
 // QCM : la bonne réponse + des distracteurs distincts (textes). null si pas assez de choix.

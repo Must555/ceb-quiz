@@ -43,7 +43,7 @@
      "nom": "{D:Les} {N:enfants} {V:chantent} {ADV:joyeusement} {P:dans} {D:la} {N:cour}."
     },
     {
-     "nom": "{NP:Yasmine} {V:est} {A:fière} {P:de} {D:son} {N:dessin}."
+     "nom": "{NP:Juliette} {V:est} {A:fière} {P:de} {D:son} {N:dessin}."
     },
     {
      "nom": "{D:Un} {A:gros} {N:orage} {V:éclate} {ADV:brusquement}."
@@ -55,7 +55,7 @@
      "nom": "{D:Le} {N:chien} {V:aboie}, {C:car} {PR:il} {V:entend} {D:un} {N:bruit}."
     },
     {
-     "nom": "{NP:Lucas} {C:et} {NP:Inès} {V:jouent} {P:sur} {D:la} {N:plage}."
+     "nom": "{NP:Lucas} {C:et} {NP:Agathe} {V:jouent} {P:sur} {D:la} {N:plage}."
     },
     {
      "nom": "{D:Cette} {N:tarte} {V:est} {ADV:trop} {A:sucrée}."
@@ -91,7 +91,7 @@
      "nom": "{D:Ce} {N:film} {V:est} {A:long}, {C:mais} {PR:il} {V:est} {A:passionnant}."
     },
     {
-     "nom": "{NP:Sofia} {V:dessine} {D:un} {N:cheval} {A:blanc} {P:sur} {D:une} {A:grande} {N:feuille}."
+     "nom": "{NP:Solène} {V:dessine} {D:un} {N:cheval} {A:blanc} {P:sur} {D:une} {A:grande} {N:feuille}."
     },
     {
      "nom": "{D:Mes} {N:parents} {V:travaillent} {ADV:beaucoup}."
@@ -121,7 +121,7 @@
      "nom": "{D:Les} {N:élèves} {V:écoutent} {D:la} {N:musique} {P:en} {N:silence}."
     },
     {
-     "nom": "{NP:Nora} {V:offre} {D:des} {N:fleurs} {P:à} {D:sa} {N:maman}."
+     "nom": "{NP:Pauline} {V:offre} {D:des} {N:fleurs} {P:à} {D:sa} {N:maman}."
     },
     {
      "nom": "{PR:On} {V:entend} {D:les} {N:vagues} {P:depuis} {D:la} {N:fenêtre}."
@@ -157,7 +157,7 @@
      "nom": "{D:Ces} {N:enfants} {V:sont} {A:polis} {C:et} {A:gentils}."
     },
     {
-     "nom": "{NP:Adam} {V:cherche} {D:ses} {N:lunettes} {ADV:partout}."
+     "nom": "{NP:Antoine} {V:cherche} {D:ses} {N:lunettes} {ADV:partout}."
     },
     {
      "nom": "{D:Le} {N:vétérinaire} {V:soigne} {D:un} {N:cheval} {A:malade}."
@@ -248,7 +248,7 @@
      "nom": "{S:Nous} {V:parlons} {CI:de nos vacances} {CP:pendant le repas}."
     },
     {
-     "nom": "{S:La maman de Sami} {V:prépare} {CD:une soupe aux légumes}."
+     "nom": "{S:La maman de Sébastien} {V:prépare} {CD:une soupe aux légumes}."
     },
     {
      "nom": "{S:Ce gâteau} {V:semble} {AT:délicieux}."
@@ -281,7 +281,7 @@
      "nom": "{CP:En été}, {S:les hirondelles} {V:construisent} {CD:leur nid} {CP:sous le toit}."
     },
     {
-     "nom": "{S:Yasmine} {V:reste} {AT:calme} {CP:pendant l'orage}."
+     "nom": "{S:Juliette} {V:reste} {AT:calme} {CP:pendant l'orage}."
     },
     {
      "nom": "{S:Le facteur} {V:apporte} {CD:un colis} {CI:à notre voisin}."
@@ -302,7 +302,7 @@
      "nom": "{S:Cette histoire} {V:paraît} {AT:incroyable}."
     },
     {
-     "nom": "{S:Nora} {V:ressemble} {CI:à son père}."
+     "nom": "{S:Pauline} {V:ressemble} {CI:à son père}."
     },
     {
      "nom": "{S:Les pompiers} {V:éteignent} {CD:l'incendie} {CP:en quelques minutes}."
@@ -338,7 +338,7 @@
      "nom": "{S:Les abeilles} {V:fabriquent} {CD:du miel}."
     },
     {
-     "nom": "{S:Adam} {V:a oublié} {CD:son cahier de français}."
+     "nom": "{S:Antoine} {V:a oublié} {CD:son cahier de français}."
     },
     {
      "nom": "{CP:Le soir}, {S:les grenouilles} {V:coassent}."
@@ -368,10 +368,10 @@
      "nom": "{S:Le lion} {V:est} {AT:le roi des animaux}."
     },
     {
-     "nom": "{S:Sami} {V:prête} {CD:son vélo} {CI:à son cousin}."
+     "nom": "{S:Sébastien} {V:prête} {CD:son vélo} {CI:à son cousin}."
     },
     {
-     "nom": "{CP:Pendant les vacances}, {S:Inès} {V:écrit} {CD:une lettre} {CI:à sa correspondante}."
+     "nom": "{CP:Pendant les vacances}, {S:Agathe} {V:écrit} {CD:une lettre} {CI:à sa correspondante}."
     },
     {
      "nom": "{S:Les musiciens de la fanfare} {V:jouent} {CD:un air joyeux}."
@@ -392,7 +392,7 @@
      "nom": "{CP:Sous le pont} {V:coule} {S:une petite rivière}."
     },
     {
-     "nom": "{S:Mehdi et Lucas} {V:discutent} {CI:de football}."
+     "nom": "{S:Mathis et Lucas} {V:discutent} {CI:de football}."
     },
     {
      "nom": "{S:La maîtresse} {V:corrige} {CD:nos cahiers} {CP:le mercredi}."
@@ -534,7 +534,7 @@
      "r": "a"
     },
     {
-     "nom": "Mehdi pense ___ son match de dimanche.",
+     "nom": "Mathis pense ___ son match de dimanche.",
      "r": "à"
     },
     {
@@ -550,7 +550,7 @@
      "r": "est"
     },
     {
-     "nom": "Nina ___ Hugo sont jumeaux.",
+     "nom": "Ninon ___ Hugo sont jumeaux.",
      "r": "et"
     },
     {
@@ -626,7 +626,7 @@
      "r": "ont"
     },
     {
-     "nom": "Adam range ___ vélo dans le garage.",
+     "nom": "Antoine range ___ vélo dans le garage.",
      "r": "son"
     },
     {
@@ -1097,7 +1097,7 @@
      "r": "qu'elles"
     },
     {
-     "nom": "___ sœur s'appelle Nora.",
+     "nom": "___ sœur s'appelle Pauline.",
      "r": "ma"
     },
     {
@@ -1724,7 +1724,7 @@
        "p"
       ],
       [
-       "Nora",
+       "Pauline",
        "s"
       ]
      ],
@@ -2606,7 +2606,7 @@
      "ind_forme": "Il n'y a pas de mot de négation (ne… pas, ne… jamais, ne… plus, ne… rien…)."
     },
     {
-     "nom": "Adam n'aime pas les épinards.",
+     "nom": "Antoine n'aime pas les épinards.",
      "type": "déclarative",
      "forme": "négative",
      "ind_type": "Elle donne une information et se termine par un point.",
@@ -2960,7 +2960,7 @@
      "rep": "Dans cette phrase, la virgule sert à séparer les éléments d'une énumération."
     },
     {
-     "nom": "Chaque samedi, Nora va à la piscine.",
+     "nom": "Chaque samedi, Pauline va à la piscine.",
      "signe_nom": "la virgule",
      "question": "À quoi sert la virgule ?",
      "role": "détacher un complément placé en début de phrase",
@@ -3030,7 +3030,7 @@
      "rep": "Dans cette phrase, les tirets servent à indiquer qu'un autre personnage prend la parole."
     },
     {
-     "nom": "— As-tu faim ? demande Papa. — Oui, très faim ! répond Inès.",
+     "nom": "— As-tu faim ? demande Papa. — Oui, très faim ! répond Agathe.",
      "signe_nom": "les tirets",
      "question": "À quoi servent les tirets ?",
      "role": "indiquer qu'un autre personnage prend la parole",
@@ -3163,8 +3163,8 @@
      "note": "Le groupe sujet est remplacé par un pronom sujet de même genre et de même nombre."
     },
     {
-     "nom": "Sofia et son frère vont à l'école.",
-     "groupe": "Sofia et son frère",
+     "nom": "Solène et son frère vont à l'école.",
+     "groupe": "Solène et son frère",
      "pronom": "ils",
      "resultat": "Ils vont à l'école.",
      "note": "Le groupe sujet est remplacé par un pronom sujet de même genre et de même nombre."
@@ -3191,8 +3191,8 @@
      "note": "Le groupe sujet est remplacé par un pronom sujet de même genre et de même nombre."
     },
     {
-     "nom": "Nora et Emma chantent.",
-     "groupe": "Nora et Emma",
+     "nom": "Pauline et Emma chantent.",
+     "groupe": "Pauline et Emma",
      "pronom": "elles",
      "resultat": "Elles chantent.",
      "note": "Le groupe sujet est remplacé par un pronom sujet de même genre et de même nombre."
@@ -3233,10 +3233,10 @@
      "note": "Le groupe contient « toi » : on le remplace par « vous »."
     },
     {
-     "nom": "Noah range ses jouets.",
+     "nom": "Baptiste range ses jouets.",
      "groupe": "ses jouets",
      "pronom": "les",
-     "resultat": "Noah les range.",
+     "resultat": "Baptiste les range.",
      "note": "Le complément direct du verbe est remplacé par le, la ou les, placé devant le verbe."
     },
     {
@@ -3275,10 +3275,10 @@
      "note": "Le complément direct du verbe est remplacé par le, la ou les, placé devant le verbe."
     },
     {
-     "nom": "Mehdi finit son dessin.",
+     "nom": "Mathis finit son dessin.",
      "groupe": "son dessin",
      "pronom": "le",
-     "resultat": "Mehdi le finit.",
+     "resultat": "Mathis le finit.",
      "note": "Le complément direct du verbe est remplacé par le, la ou les, placé devant le verbe."
     },
     {
@@ -3818,10 +3818,10 @@
      "genre": "féminin pluriel"
     },
     {
-     "nom": "mon ami Mehdi",
+     "nom": "mon ami Mathis",
      "noyau": "ami",
      "autres": [
-      "Mehdi",
+      "Mathis",
       "mon"
      ],
      "genre": "masculin singulier"
@@ -13039,7 +13039,7 @@
      "relphrase": "la cause"
     },
     {
-     "nom": "Mehdi a beaucoup travaillé, ___ il a réussi son examen.",
+     "nom": "Mathis a beaucoup travaillé, ___ il a réussi son examen.",
      "bonne": "alors",
      "relation": "conséquence",
      "faux": [
@@ -13047,7 +13047,7 @@
       "mais",
       "parce qu'"
      ],
-     "complete": "Mehdi a beaucoup travaillé, alors il a réussi son examen.",
+     "complete": "Mathis a beaucoup travaillé, alors il a réussi son examen.",
      "relphrase": "la conséquence"
     },
     {
@@ -13171,7 +13171,7 @@
      "relphrase": "le temps"
     },
     {
-     "nom": "Adam est grand ___ fort.",
+     "nom": "Antoine est grand ___ fort.",
      "bonne": "et",
      "relation": "addition",
      "faux": [
@@ -13179,7 +13179,7 @@
       "parce que",
       "quand"
      ],
-     "complete": "Adam est grand et fort.",
+     "complete": "Antoine est grand et fort.",
      "relphrase": "l'ajout d'une idée"
     },
     {
@@ -13207,7 +13207,7 @@
      "relphrase": "le temps"
     },
     {
-     "nom": "Lina est malade ; ___, elle ne viendra pas à l'école.",
+     "nom": "Margaux est malade ; ___, elle ne viendra pas à l'école.",
      "bonne": "par conséquent",
      "relation": "conséquence",
      "faux": [
@@ -13215,7 +13215,7 @@
       "car",
       "parce que"
      ],
-     "complete": "Lina est malade ; par conséquent, elle ne viendra pas à l'école.",
+     "complete": "Margaux est malade ; par conséquent, elle ne viendra pas à l'école.",
      "relphrase": "la conséquence"
     },
     {
@@ -13279,7 +13279,7 @@
      "relphrase": "la conséquence"
     },
     {
-     "nom": "Sami range sa chambre ___ ses amis vont venir.",
+     "nom": "Sébastien range sa chambre ___ ses amis vont venir.",
      "bonne": "car",
      "relation": "cause",
      "faux": [
@@ -13287,7 +13287,7 @@
       "donc",
       "ensuite"
      ],
-     "complete": "Sami range sa chambre car ses amis vont venir.",
+     "complete": "Sébastien range sa chambre car ses amis vont venir.",
      "relphrase": "la cause"
     },
     {
@@ -13938,12 +13938,12 @@
      ]
     },
     {
-     "id": "Adam téléphone à ses grands-parents. Il leur raconte sa journée.|leur",
-     "texte": "Adam téléphone à ses grands-parents. Il leur raconte sa journée.",
+     "id": "Antoine téléphone à ses grands-parents. Il leur raconte sa journée.|leur",
+     "texte": "Antoine téléphone à ses grands-parents. Il leur raconte sa journée.",
      "mot": "leur",
      "ref": "ses grands-parents",
      "faux": [
-      "Adam",
+      "Antoine",
       "sa journée"
      ]
     },
@@ -13958,12 +13958,12 @@
      ]
     },
     {
-     "id": "Mehdi a reçu un vélo. Il le range dans le garage.|le",
-     "texte": "Mehdi a reçu un vélo. Il le range dans le garage.",
+     "id": "Mathis a reçu un vélo. Il le range dans le garage.|le",
+     "texte": "Mathis a reçu un vélo. Il le range dans le garage.",
      "mot": "le",
      "ref": "le vélo",
      "faux": [
-      "Mehdi",
+      "Mathis",
       "le garage"
      ]
     },
@@ -13978,12 +13978,12 @@
      ]
     },
     {
-     "id": "Sofia a écrit à sa correspondante. Celle-ci habite en Espagne.|Celle-ci",
-     "texte": "Sofia a écrit à sa correspondante. Celle-ci habite en Espagne.",
+     "id": "Solène a écrit à sa correspondante. Celle-ci habite en Espagne.|Celle-ci",
+     "texte": "Solène a écrit à sa correspondante. Celle-ci habite en Espagne.",
      "mot": "Celle-ci",
      "ref": "la correspondante",
      "faux": [
-      "Sofia",
+      "Solène",
       "l'Espagne"
      ]
     },
@@ -13998,30 +13998,30 @@
      ]
     },
     {
-     "id": "Lucas et Nora préparent un gâteau. Ils le partageront avec leurs amis.|Ils",
-     "texte": "Lucas et Nora préparent un gâteau. Ils le partageront avec leurs amis.",
+     "id": "Lucas et Pauline préparent un gâteau. Ils le partageront avec leurs amis.|Ils",
+     "texte": "Lucas et Pauline préparent un gâteau. Ils le partageront avec leurs amis.",
      "mot": "Ils",
-     "ref": "Lucas et Nora",
+     "ref": "Lucas et Pauline",
      "faux": [
       "leurs amis",
       "le gâteau"
      ]
     },
     {
-     "id": "Lucas et Nora préparent un gâteau. Ils le partageront avec leurs amis.|le",
-     "texte": "Lucas et Nora préparent un gâteau. Ils le partageront avec leurs amis.",
+     "id": "Lucas et Pauline préparent un gâteau. Ils le partageront avec leurs amis.|le",
+     "texte": "Lucas et Pauline préparent un gâteau. Ils le partageront avec leurs amis.",
      "mot": "le",
      "ref": "le gâteau",
      "faux": [
-      "Lucas et Nora",
+      "Lucas et Pauline",
       "leurs amis"
      ]
     },
     {
-     "id": "La maîtresse félicite Inès. Elle lui offre un livre.|lui",
-     "texte": "La maîtresse félicite Inès. Elle lui offre un livre.",
+     "id": "La maîtresse félicite Agathe. Elle lui offre un livre.|lui",
+     "texte": "La maîtresse félicite Agathe. Elle lui offre un livre.",
      "mot": "lui",
-     "ref": "Inès",
+     "ref": "Agathe",
      "faux": [
       "la maîtresse",
       "un livre"
@@ -14148,22 +14148,22 @@
      ]
     },
     {
-     "id": "Le facteur apporte un colis à Nina. La fillette l'ouvre aussitôt.|La fillette",
-     "texte": "Le facteur apporte un colis à Nina. La fillette l'ouvre aussitôt.",
+     "id": "Le facteur apporte un colis à Ninon. La fillette l'ouvre aussitôt.|La fillette",
+     "texte": "Le facteur apporte un colis à Ninon. La fillette l'ouvre aussitôt.",
      "mot": "La fillette",
-     "ref": "Nina",
+     "ref": "Ninon",
      "faux": [
       "le facteur",
       "le colis"
      ]
     },
     {
-     "id": "Le facteur apporte un colis à Nina. La fillette l'ouvre aussitôt.|l'",
-     "texte": "Le facteur apporte un colis à Nina. La fillette l'ouvre aussitôt.",
+     "id": "Le facteur apporte un colis à Ninon. La fillette l'ouvre aussitôt.|l'",
+     "texte": "Le facteur apporte un colis à Ninon. La fillette l'ouvre aussitôt.",
      "mot": "l'",
      "ref": "le colis",
      "faux": [
-      "Nina",
+      "Ninon",
       "le facteur"
      ]
     },
@@ -14218,13 +14218,13 @@
      ]
     },
     {
-     "id": "Mehdi a perdu ses clés. Sa sœur les a retrouvées dans son manteau.|les",
-     "texte": "Mehdi a perdu ses clés. Sa sœur les a retrouvées dans son manteau.",
+     "id": "Mathis a perdu ses clés. Sa sœur les a retrouvées dans son manteau.|les",
+     "texte": "Mathis a perdu ses clés. Sa sœur les a retrouvées dans son manteau.",
      "mot": "les",
      "ref": "ses clés",
      "faux": [
       "sa sœur",
-      "Mehdi"
+      "Mathis"
      ]
     },
     {
@@ -14275,8 +14275,8 @@
      ]
     },
     {
-     "nom": "Sofia bâille, se frotte les yeux et pose la tête sur son bureau.",
-     "question": "Comment se sent Sofia ?",
+     "nom": "Solène bâille, se frotte les yeux et pose la tête sur son bureau.",
+     "question": "Comment se sent Solène ?",
      "bonne": "Elle est fatiguée.",
      "faux": [
       "Elle est en colère.",
@@ -14295,8 +14295,8 @@
      ]
     },
     {
-     "nom": "Adam serre les poings, devient tout rouge et claque la porte.",
-     "question": "Comment se sent Adam ?",
+     "nom": "Antoine serre les poings, devient tout rouge et claque la porte.",
+     "question": "Comment se sent Antoine ?",
      "bonne": "Il est en colère.",
      "faux": [
       "Il est joyeux.",
@@ -14305,8 +14305,8 @@
      ]
     },
     {
-     "nom": "Inès regarde la pendule toutes les deux minutes et tape du pied.",
-     "question": "Comment se sent Inès ?",
+     "nom": "Agathe regarde la pendule toutes les deux minutes et tape du pied.",
+     "question": "Comment se sent Agathe ?",
      "bonne": "Elle est impatiente.",
      "faux": [
       "Elle est endormie.",
@@ -14325,7 +14325,7 @@
      ]
     },
     {
-     "nom": "Mehdi a une valise, un billet de train et un maillot de bain.",
+     "nom": "Mathis a une valise, un billet de train et un maillot de bain.",
      "question": "Que va-t-il probablement faire ?",
      "bonne": "Partir en vacances.",
      "faux": [
@@ -14335,7 +14335,7 @@
      ]
     },
     {
-     "nom": "Nora pleure en regardant son ballon qui s'envole dans le ciel.",
+     "nom": "Pauline pleure en regardant son ballon qui s'envole dans le ciel.",
      "question": "Pourquoi pleure-t-elle ?",
      "bonne": "Elle a perdu son ballon.",
      "faux": [
@@ -14455,13 +14455,13 @@
      ]
     },
     {
-     "nom": "Yasmine reçoit sa note, sourit jusqu'aux oreilles et saute de joie.",
+     "nom": "Juliette reçoit sa note, sourit jusqu'aux oreilles et saute de joie.",
      "question": "Comment est sa note ?",
      "bonne": "Elle est très bonne.",
      "faux": [
       "Elle est très mauvaise.",
       "Elle n'a pas encore de note.",
-      "Elle est moyenne et Yasmine est déçue."
+      "Elle est moyenne et Juliette est déçue."
      ]
     },
     {
@@ -14515,7 +14515,7 @@
      ]
     },
     {
-     "nom": "Nina se réveille, regarde son réveil et saute du lit en criant : “Je suis en retard !”",
+     "nom": "Ninon se réveille, regarde son réveil et saute du lit en criant : “Je suis en retard !”",
      "question": "Pourquoi se dépêche-t-elle ?",
      "bonne": "Elle s'est réveillée trop tard.",
      "faux": [

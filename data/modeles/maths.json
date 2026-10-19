@@ -15,7 +15,7 @@
               "pr": "elle"
             },
             {
-              "nom": "Nassim",
+              "nom": "Guillaume",
               "pr": "il"
             },
             {
@@ -23,7 +23,7 @@
               "pr": "elle"
             },
             {
-              "nom": "Yanis",
+              "nom": "Quentin",
               "pr": "il"
             },
             {
@@ -31,7 +31,7 @@
               "pr": "elle"
             },
             {
-              "nom": "Mehdi",
+              "nom": "Mathis",
               "pr": "il"
             },
             {
@@ -39,7 +39,7 @@
               "pr": "il"
             },
             {
-              "nom": "Inès",
+              "nom": "Agathe",
               "pr": "elle"
             }
           ]
@@ -732,12 +732,12 @@
       "variables": {
         "p": {
           "liste": [
-            "Sarah",
-            "Adam",
-            "Lina",
+            "Mathilde",
+            "Antoine",
+            "Margaux",
             "Tom",
-            "Yasmine",
-            "Noah"
+            "Juliette",
+            "Baptiste"
           ]
         },
         "a": {
