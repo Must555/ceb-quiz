@@ -94,8 +94,8 @@ const CADRES_C = {
   cp: [{ t: 'Si {S} {A} eu le temps, {P} {V} {C}.', pro: true }, { t: 'Si {S} {A} pu, {P} {V} {C}.', pro: true }, { t: 'Avec un peu plus de temps, {S} {V} {C}.' }],
   fp: [{ t: 'Dans cinq minutes, {S} {V} {C}.' }, { t: 'Ce soir, {S} {V} {C}.' }, { t: "Tout à l'heure, {S} {V} {C}." }],
   pc: [{ t: 'Hier, {S} {V} {C}.' }, { t: 'Ce matin, {S} {V} {C}.' }],
-  pa: [{ t: 'Quand {S} {V} {C}, {P} alla se reposer.', pro: true, avoir: true }, { t: 'Dès que {S} {V} {C}, {P} sortit dans le jardin.', pro: true, avoir: true },
-    { t: 'Lorsque {S} {V} {C}, {P} téléphona à Mamie.', pro: true, avoir: true }],
+  pa: [{ t: 'Quand {S} {V} {C}, {P} {PS:aller} se reposer.', pro: true, avoir: true }, { t: 'Dès que {S} {V} {C}, {P} {PS:sortir} dans le jardin.', pro: true, avoir: true },
+    { t: 'Lorsque {S} {V} {C}, {P} {PS:téléphoner} à Mamie.', pro: true, avoir: true }],
 };
 const auxForme = (aux, temps, idx) => conjuguer(aux, temps, { pronom: 'x', idx }).forme;
 
@@ -112,7 +112,8 @@ function formeComposee(v, t, s) {
 }
 function rendreC(cadre, s, verbe, c) {
   const t = cadre.t.replace('{S}', s.s).replace('{P}', s.pr ?? s.s)
-    .replace('{A}', auxForme('avoir', 'imparfait', s.idx)).replace('{V}', verbe).replace('{C}', c);
+    .replace('{A}', auxForme('avoir', 'imparfait', s.idx)).replace('{V}', verbe).replace('{C}', c)
+    .replace(/\{PS:([^}]+)\}/, (_, v) => auxForme(v, 'passe_simple', s.idx));
   return maj(elider(t));
 }
 

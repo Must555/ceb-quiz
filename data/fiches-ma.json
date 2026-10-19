@@ -185,7 +185,7 @@
     "Longueur : une fourmi ≈ 7 mm, un crayon ≈ 18 cm, une porte ≈ 2 m, Bruxelles–Liège ≈ 100 km.",
     "Capacité : une cuillère à café ≈ 5 ml, une canette = 33 cl, un seau ≈ 10 l.",
     "Durée : une récréation ≈ 15 min, un match de football = 90 min, une nuit ≈ 10 h.",
-    "Volume : un dé à jouer ≈ 1 cm³, une brique de lait = 1 dm³ = 1 l, une boîte à chaussures ≈ 8 dm³, une salle de classe ≈ 200 m³."
+    "Volume : un petit cube de 1 cm d'arête = 1 cm³ (un morceau de sucre ≈ 2 cm³), une brique de lait = 1 dm³ = 1 l, une boîte à chaussures ≈ 8 dm³, une salle de classe ≈ 200 m³."
    ],
    "exemple": "La masse d'un smartphone est d'environ 180 g (pas 180 kg, ni 180 mg).",
    "astuce": "Compare avec un objet que tu connais bien : c'est plus lourd ou plus léger qu'une pomme ?"
@@ -496,7 +496,7 @@
    "regle": [
     "« Le deuxième à moitié prix » : dans chaque paire, on paie un article entier et la moitié du second.",
     "« 3 pour le prix de 2 », « 1 acheté, 1 gratuit » : on compte les lots complets ; les articles en plus se paient au prix normal.",
-    "« Jusqu'à 70 % de remise » : 70 % est la plus grande remise, beaucoup d'articles ont moins. « À partir de 15 € » : 15 € est le prix le plus bas.",
+    "« Jusqu'à 70 % de remise » : 70 % est la plus grande remise ; d'autres articles ont une remise plus petite. « À partir de 15 € » : 15 € est le prix le plus bas.",
     "Prix de revient = prix d'achat + frais. Bénéfice = prix de vente − prix de revient. Si on vend moins cher que le prix de revient, on fait une perte."
    ],
    "exemple": "Achat 120 €, transport 15 € : prix de revient 135 €. Vente 160 € : bénéfice de 160 − 135 = 25 €.",

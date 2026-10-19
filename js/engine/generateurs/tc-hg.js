@@ -1777,9 +1777,10 @@ const millenaires = famille('mil', [
   }],
   // Année → siècle (aussi avant J.-C.)
   [3, (rng) => {
-    let y = tirerAnnee(rng); if (y < 0 && rng.next() < 0.5) y = -rng.int(1, 999);
+    // Avant J.-C., on reste dans le Ier millénaire (un « XXXIVe siècle av. J.-C. » n'apporte rien à 11 ans).
+    let y = tirerAnnee(rng); if (y < -1001) y = -rng.int(1, 1000);
     const av = y < 0; const k = rangSiecle(y);
-    const q = choixVoisins(rng, k, av, nomSie, av ? 50 : 21);
+    const q = choixVoisins(rng, k, av, nomSie, av ? 11 : 21);
     const piege = extremite(y, 100);
     return {
       ...q,
@@ -1844,7 +1845,7 @@ const millenaires = famille('mil', [
   // L'an 1
   [2, (rng) => (rng.next() < 0.55 ? { ...depuisBanque(rng, AN1, 'an1'), difficulte: 2 } : { ...depuisVF(rng, VF_AN1, 'vfan1'), difficulte: 2 })],
   // Calcul de durée à cheval sur l'an 1 (au 1er janvier : pas d'an 0)
-  [2, (rng) => {
+  [1, (rng) => {
     const a = rng.int(2, 60); const b = rng.int(2, 60);
     const d = a + b - 1;
     if (rng.next() < 0.5) {
@@ -1962,7 +1963,7 @@ const LIVRES = [
   { titre: 'La Belgique', chap: [
     { t: 'Régions et provinces', mots: ['le chef-lieu de chaque province', 'les trois Régions du pays', 'la frontière linguistique'], idx: ['Province', 'Région', 'Frontière linguistique'] },
     { t: 'Relief et cours d\'eau', mots: ['le plateau de l\'Ardenne', 'la Meuse et ses affluents', 'le point le plus haut du pays'], idx: ['Ardenne', 'Meuse', 'Signal de Botrange'] },
-    { t: 'La population belge', mots: ['les villes les plus peuplées', 'le nombre d\'habitants par km² dans chaque province', 'le sillon Sambre-et-Meuse'], idx: ['Anvers', 'Densité', 'Sillon Sambre-et-Meuse'] },
+    { t: 'La population belge', mots: ['les villes les plus peuplées', 'le nombre d\'habitants par km² dans chaque province', 'les régions les plus peuplées du pays'], idx: ['Anvers', 'Densité', 'Sillon Sambre-et-Meuse'] },
     { t: 'Les transports', mots: ['le port d\'Anvers', 'le réseau des autoroutes', 'les canaux et les péniches'], idx: ['Port', 'Autoroute', 'Canal'] },
     { t: 'Le climat de la Belgique', mots: ['les pluies en Belgique', 'les températures en hiver', 'le climat tempéré océanique'], idx: ['Pluie', 'Hiver', 'Océanique (climat)'] },
   ] },
@@ -2120,7 +2121,7 @@ const outilsInfo = famille('oi', [
     return {
       ...q, figure: svgIndex(livre.titre, montre),
       enonce: `Observe l'index de ce livre. À quelle(s) page(s) trouves-tu des informations sur « ${e.mot} » ?`,
-      explication: `Dans l'index, les mots sont rangés par ordre alphabétique : « ${e.mot} » renvoie à la page${e.pages.length > 1 ? 's' : ''} ${e.pages.join(' et ')}.`,
+      explication: `Dans l'index, les mots sont rangés par ordre alphabétique : « ${e.mot} » renvoie ${e.pages.length > 1 ? 'aux pages' : 'à la page'} ${e.pages.join(' et ')}.`,
       _signature: `ix|${livre.titre}|${montre.map((x) => x.mot + x.pages.join('-')).join(',')}|${e.mot}|${cle(q.choix)}`,
       cleContenu: `ix|${livre.titre}|${montre.map((x) => x.mot + x.pages.join('-')).join(',')}|${e.mot}`,
       difficulte: 1,
@@ -2280,7 +2281,7 @@ const INFERER = [
   { doc: 'Article, 9 août 1956 : « Des centaines de familles attendent devant les grilles du Bois du Cazier depuis hier matin. »',
     ok: 'Beaucoup de mineurs étaient encore bloqués au fond de la mine.', lu: ['Des familles attendent devant les grilles.', 'Elles attendent depuis la veille au matin.'], faux: ['La mine était vide ce jour-là.'] },
   { doc: 'Journal de bord, 1750 : « Nous avons échangé en Afrique nos tissus et nos fusils contre des captifs. »',
-    ok: 'Des êtres humains étaient vendus comme des marchandises.', lu: ['Le navire transportait des tissus et des fusils.', 'L\'échange a eu lieu en Afrique.'], faux: ['Le navire transportait des touristes.'] },
+    ok: 'Des êtres humains étaient vendus comme des marchandises.', lu: ['Ils ont donné des tissus et des fusils.', 'L\'échange a eu lieu en Afrique.'], faux: ['Le navire transportait des touristes.'] },
 ];
 
 const pertinence = famille('pd', [
@@ -2384,7 +2385,7 @@ const pertinence = famille('pd', [
     return {
       ...q,
       enonce: `${d.doc}\nQuelle information n'est pas écrite dans le document, mais peut en être déduite ?`,
-      explication: `${d.ok} On le déduit du document, mais ce n'est pas écrit. ${d.lu.join(' ')} : cela, on le lit directement.`,
+      explication: `« ${d.ok.replace(/\.$/, '')} » : on le déduit du document, mais ce n'est pas écrit. Au contraire, ${d.lu.map((t) => `« ${t.replace(/\.$/, '')} »`).join(' et ')} : cela, on le lit directement dans le document.`,
       _signature: `inf|${d.doc}|${cle(q.choix)}`, cleContenu: `inf|${d.doc}`,
       difficulte: 3,
     };
@@ -2454,7 +2455,7 @@ const changeContinue = famille('cc', [
     if (!items) return null;
     return {
       ...grilleQ(items, COL_CC),
-      enonce: `Compare ${e.a} et ${e.b}, ${e.ou}. Chaque phrase décrit la situation ${e.b === 'aujourd\'hui' ? 'd\'aujourd\'hui' : `pendant ${e.b}`}. Est-ce un changement ou une continuité (ce qui ne change pas) par rapport à ${e.a} ?`,
+      enonce: `Compare ${e.a} et ${e.b}, ${e.ou}. Chaque phrase décrit la situation ${e.b === 'aujourd\'hui' ? 'd\'aujourd\'hui' : `pendant ${e.b}`}. Est-ce un changement ou une continuité (ce qui ne change pas) par rapport ${e.a.replace(/^les /, 'aux ').replace(/^le /, 'au ').replace(/^(?!au |aux )/, 'à ')} ?`,
       explication: maj(items.map((x) => `${x.t} : ${x.c === 0 ? 'changement' : 'continuité'}`).join(' ; ')) + '.',
       _signature: `gr|${e.a}|${e.b}|${cle(items.map((x) => x.t))}`, cleContenu: `gr|${e.a}|${e.b}|${cle(items.map((x) => x.t))}`,
       difficulte: 2,

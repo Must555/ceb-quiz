@@ -1943,7 +1943,7 @@ const REALISTES = [
 const UNITES_REALISTES = { masse: ['mg', 'g', 'kg', 't'], longueur: ['mm', 'cm', 'm', 'km'], capacite: ['ml', 'cl', 'l', 'hl'], duree: ['s', 'min', 'h', 'jours'], aire: ['cm²', 'm²', 'ha', 'km²'] };
 // Volumes et capacités d'objets courants (valeurs arrondies, ordre de grandeur).
 const VOLUMES_REALISTES = [
-  ["Le volume d'un dé à jouer est d'environ", 1, 'cm³'], ["Le volume d'un morceau de sucre est d'environ", 2, 'cm³'],
+  ["Le volume d'une bille est d'environ", 2, 'cm³'], ["Le volume d'un morceau de sucre est d'environ", 2, 'cm³'],
   ["Le volume d'une gomme est d'environ", 10, 'cm³'], ["Le volume d'une boîte d'allumettes est d'environ", 25, 'cm³'],
   ["Le volume d'une brique de lait d'un litre est de", 1, 'dm³'], ["Le volume d'un dictionnaire est d'environ", 3, 'dm³'],
   ["Le volume d'une boîte à chaussures est d'environ", 8, 'dm³'], ["Le volume d'un seau rempli d'eau est d'environ", 10, 'dm³'],
@@ -1986,7 +1986,7 @@ const mesuresRealistes = famille([
     return {
       type: 'qcm', choix, reponse: choix.indexOf(u), difficulte: 2,
       enonce: `${phrase} ${fmt(v)}…`,
-      explication: `${phrase} ${fmt(v)} ${u}. Repères : un dé à jouer ≈ 1 cm³ ; une brique de lait = 1 dm³ = 1 litre ; un grand carton cube de 1 m de côté = 1 m³ = 1 000 litres.`,
+      explication: `${phrase} ${fmt(v)} ${u}. Repères : un petit cube de 1 cm d'arête = 1 cm³ ; une brique de lait = 1 dm³ = 1 litre ; un grand cube de 1 m d'arête = 1 m³ = 1 000 litres.`,
     };
   }, 2),
   // Volumes et capacités : la valeur la plus vraisemblable.
@@ -2004,7 +2004,7 @@ const mesuresRealistes = famille([
   // Lien volume – capacité.
   forme((rng) => {
     const cas = rng.pick([
-      () => { const v = rng.int(12, 90); return { e: `Une piscine de jardin contient ${v} m³ d'eau. Combien de litres d'eau contient-elle ?`, rep: v * 1000, u: 'l', x: `1 m³ = 1 000 l, donc ${v} m³ = ${fmt(v * 1000)} l.` }; },
+      () => { const v = rng.int(8, 45); return { e: `Une piscine de jardin contient ${v} m³ d'eau. Combien de litres d'eau contient-elle ?`, rep: v * 1000, u: 'l', x: `1 m³ = 1 000 l, donc ${v} m³ = ${fmt(v * 1000)} l.` }; },
       () => { const v = rng.int(30, 400); return { e: `Un aquarium a un volume de ${v} dm³. Combien de litres d'eau peut-il contenir ?`, rep: v, u: 'l', x: `1 dm³ = 1 l, donc ${v} dm³ = ${v} l.` }; },
       () => { const v = rng.pick([250, 500, 750, 1500, 2000, 330, 200]); return { e: `Un récipient a un volume de ${fmt(v)} cm³. Combien de millilitres peut-il contenir ?`, rep: v, u: 'ml', x: `1 cm³ = 1 ml, donc ${fmt(v)} cm³ = ${fmt(v)} ml.` }; },
       () => { const v = rng.int(2, 60) * 500; return { e: `Une citerne contient ${fmt(v)} litres d'eau. Quel est ce volume en m³ ?`, rep: v / 1000, u: 'm³', x: `1 m³ = 1 000 l, donc ${fmt(v)} l = ${fmt(v)} : 1 000 = ${fmt(v / 1000)} m³.` }; },
@@ -2323,6 +2323,9 @@ const durees = famille([
     const debuts = []; let t = debut;
     for (const [, d] of acts) { debuts.push(t); t += d; }
     if (t > 18 * 60) return null;
+    // « Le dîner » (repas de midi en Belgique) doit commencer entre 11 h 30 et 13 h 30.
+    const iDiner = acts.findIndex(([nom]) => nom === 'le dîner');
+    if (iDiner >= 0 && (debuts[iDiner] < 11 * 60 + 30 || debuts[iDiner] > 13 * 60 + 30)) return null;
     const k = rng.int(2, n); // k = n : heure de fin de la dernière activité
     const cible = k === n ? t : debuts[k];
     const h = (m) => heureTxt(Math.floor(m / 60), m % 60);
@@ -2337,7 +2340,7 @@ const durees = famille([
   // Temps libre dans une journée.
   forme((rng) => {
     const J = rng.pick(JOURNEES);
-    const acts = rng.shuffle(J.acts).slice(0, 3).map(([nom, a, b]) => [nom, rng.int(a / 5, b / 5) * 5]);
+    const acts = rng.shuffle(J.acts.filter(([nom]) => nom !== 'le dîner')).slice(0, 3).map(([nom, a, b]) => [nom, rng.int(a / 5, b / 5) * 5]);
     const total = acts.reduce((x, [, d]) => x + d, 0);
     const debut = rng.int(8 * 12, 10 * 12) * 5; const libre = rng.int(2, 24) * 5;
     const fin = debut + total + libre;
