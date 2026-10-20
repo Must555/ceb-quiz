@@ -75,3 +75,29 @@ h2 { font-size:21px; margin:16px 0 8px; }
 @media print { .haut, .agir, .voisines, .pied { display:none; } body { background:#fff; color:#000; } }
 /* Couleur de fond de secours sous les dégradés (lisibilité si le dégradé ne s'affiche pas). */
 .haut { background-color:#14307a; } .agir { background-color:#16337f; }
+/* Pages « recherche » (examens, exercices, guides) */
+.compte-a-rebours { display:inline-block; background:#fff; color:var(--nuit); border-radius:14px; padding:8px 16px; font-weight:700; margin:0; }
+.compte-a-rebours b { font:800 24px/1 var(--titre); color:var(--bleu); }
+.ic-h1 { display:inline-block; width:1.1em; height:1.1em; vertical-align:-.2em; object-fit:contain; }
+.tableau { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:16px; }
+th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--ligne); }
+th { font-size:14px; color:var(--mute); }
+.papier { color:var(--mute); font-size:14px; }
+.annees { grid-template-columns:repeat(auto-fill, minmax(170px, 1fr)) !important; }
+.annees .carte-mat b { font-size:26px; }
+.exemple { border:1px solid var(--ligne); border-radius:14px; padding:4px 14px; margin:0 0 10px; background:var(--panel2); }
+.exemple summary { cursor:pointer; font-weight:700; padding:10px 0; list-style:none; }
+.exemple summary .num { display:inline-grid; place-items:center; width:26px; height:26px; border-radius:50%; background:var(--soleil); color:#1d1a0b; font-size:14px; margin-right:10px; }
+.exemple summary .choix { display:block; font-weight:400; color:var(--mute); font-size:15px; margin:4px 0 0 36px; }
+.exemple summary::after { content:'Voir la réponse'; display:block; font-size:13px; color:var(--bleu-v); margin:6px 0 0 36px; }
+.exemple[open] summary::after { content:''; }
+.exemple p { margin:0 0 12px 36px; }
+.mute-t { color:var(--mute); font-size:15px; }
+.plan { list-style:none; padding:0; margin:0; display:grid; gap:12px; counter-reset:p; }
+.plan li { border-left:4px solid var(--soleil); padding:4px 0 4px 16px; }
+.plan .quand { display:block; font-size:14px; color:var(--mute); font-weight:700; }
+.plan b { font:800 20px/1.2 var(--titre); }
+.plan p { margin:4px 0 0; }
+.nw { white-space:nowrap; }
+@media (max-width:560px) { table { font-size:14px; } th, td { padding:8px 5px; } .pts { display:none; } }

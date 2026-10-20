@@ -31,7 +31,11 @@ test('une page par fiche, avec titre, description, lien d\'entraînement et cano
     assert.match(h, /href="\.\.\/app\/(\?fiche=|")/);
     assert.ok(!/undefined|null/.test(h.replace(/<script type="application\/ld\+json">.*?<\/script>/s, '')), p);
   }
-  assert.equal((out['sitemap.xml'].match(/<loc>/g) ?? []).length, pages.length + 2);
+  // Chaque adresse du plan du site correspond à un fichier publié.
+  for (const [, u] of out['sitemap.xml'].matchAll(/<loc>https:\/\/missionceb\.be\/([^<]*)<\/loc>/g)) {
+    const f = u === '' ? 'index.html' : u.endsWith('/') ? `${u}index.html` : u;
+    assert.ok(out[f] || f === 'index.html', `sitemap : ${u} sans fichier`);
+  }
 });
 
 test('le service worker met en cache des fichiers qui existent tous, et jamais les pages publiques', async () => {
@@ -40,4 +44,22 @@ test('le service worker met en cache des fichiers qui existent tous, et jamais l
   assert.ok(!liste.some((f) => f.startsWith('fiches/') || f === 'sw.js' || f.startsWith('assets/20')), 'ni pages publiques ni portfolios dans le cœur');
   for (const f of liste.filter((x) => x !== './')) await access(new URL('../' + f, import.meta.url));
   assert.match(out['sw.js'], /const VERSION = '[0-9a-f]{12}'/);
+});
+
+test('pages « recherche » : titres courts, descriptions, fil d\'Ariane, liens vers l\'application', () => {
+  const pages = Object.keys(out).filter((p) => /^(examens|exercices|ceb-2027|reviser-le-ceb)\//.test(p));
+  assert.ok(pages.length >= 20, String(pages.length));
+  const dec = (x) => x.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+  for (const p of pages) {
+    const h = out[p];
+    const titre = dec(h.match(/<title>([^<]+)<\/title>/)[1]);
+    assert.ok(titre.length <= 60, `${p} : titre de ${titre.length} caractères : ${titre}`);
+    const desc = dec(h.match(/<meta name="description" content="([^"]+)">/)[1]);
+    assert.ok(desc.length >= 100 && desc.length <= 160, `${p} : description de ${desc.length} caractères`);
+    assert.match(h, /"@type":"BreadcrumbList"/);
+    assert.match(h, /href="\.\.\/app\//);
+    assert.ok(!/undefined|NaN/.test(h), p);
+  }
+  assert.match(out['exercices/maths.html'], /class="exemple"/);
+  assert.match(out['examens/ceb-2026-tc.html'], /app\/\?examen=ceb-2026-tc/);
 });

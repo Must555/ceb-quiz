@@ -70,6 +70,11 @@ async function demarrer() {
   // Arrivée depuis une page fiche publique (missionceb.be/fiches/…) : la fiche s'ouvre à l'accueil.
   const ficheParam = new URL(location.href).searchParams.get('fiche');
   if (ficheParam && donnees.fiches[ficheParam]) { ficheDemandee = ficheParam; history.replaceState(null, '', location.pathname); }
+  // Arrivée depuis une page « examen » ou « exercices » : le bon mode est déjà choisi à l'accueil.
+  const params = new URL(location.href).searchParams;
+  const exParam = params.get('examen'), matParam = params.get('matiere');
+  if (exParam && donnees.examens.some((e) => e.id === exParam && e.statut !== 'a_encoder')) { choix.mode = 'examen'; choix.examen = exParam; choix.livret = null; history.replaceState(null, '', location.pathname); }
+  if (matParam && MATIERES.some((m) => m.id === matParam)) { choix.mode = 'entrainement'; choix.matiere = matParam; history.replaceState(null, '', location.pathname); }
   // Défi entre amis reçu par lien : on le garde en mémoire et on nettoie l'adresse.
   const code = new URL(location.href).searchParams.get('defi');
   if (code) {
