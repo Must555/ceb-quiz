@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mission CEB — Réussis ton CEB en jouant</title>
+<link rel="icon" href="../assets/icones/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Playwrite+BE+WAL:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --papier:#fbf8f1; --encre:#14213d; --mute:#5a6378; --bleu:#1c3faa; --bleu-c:#dfe8fb; --ligne-s:#d5def0; --marge:#e07a6e;
+  --stabilo:#ffe066; --vert:#1f7a54; --vert-c:#dcf1e6; --orange:#b4590b; --orange-c:#fde9d4; --rose-c:#fde2e1; --violet-c:#ebe2fb;
+  --carte:#ffffff; --bord:#e6e0d2; --r:28px;
+  --titre:'Bricolage Grotesque', 'Atkinson Hyperlegible', system-ui, sans-serif; --main:'Playwrite BE WAL', 'Segoe Script', cursive;
+  color-scheme: light;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--papier); color:var(--encre); font:18px/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; overflow-x:clip; }
+img { display:block; max-width:100%; }
+a { color:inherit; }
+.c { max-width:1180px; margin:0 auto; padding:0 20px; }
+h1, h2, h3 { font-family:var(--titre); margin:0; line-height:1.02; letter-spacing:-.02em; }
+.main { font-family:var(--main); font-weight:400; letter-spacing:0; }
+.stabilo { background:linear-gradient(transparent 58%, var(--stabilo) 58%, var(--stabilo) 92%, transparent 92%); padding:0 .08em; }
+.btn { display:inline-flex; align-items:center; gap:10px; font:800 18px/1 var(--titre); padding:17px 26px; border-radius:999px; text-decoration:none; transition:transform .15s, box-shadow .15s; }
+.btn:hover { transform:translateY(-2px); }
+.btn-encre { background:var(--encre); color:#fff; box-shadow:0 10px 24px rgba(20,33,61,.25); }
+.btn-ligne { background:transparent; color:var(--encre); box-shadow:inset 0 0 0 2px var(--encre); }
+.fleche { display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--stabilo); color:var(--encre); font-size:16px; margin-right:-10px; }
+
+/* En-tête */
+.haut { position:sticky; top:0; z-index:10; background:rgba(251,248,241,.86); backdrop-filter:blur(10px); border-bottom:1px solid transparent; }
+.haut .c { display:flex; align-items:center; gap:18px; height:74px; }
+.marque { display:flex; align-items:center; gap:10px; text-decoration:none; font:800 22px/1 var(--titre); }
+.marque img { width:42px; height:42px; border-radius:12px; }
+.menu { display:flex; gap:2px; margin-left:auto; }
+.menu a { text-decoration:none; font-weight:700; font-size:16px; padding:9px 13px; border-radius:999px; color:var(--mute); }
+.menu a:hover { background:#efe9db; color:var(--encre); }
+.haut .btn { padding:12px 20px; font-size:16px; }
+
+/* Héros : page de cahier */
+.heros { position:relative; padding:60px 0 40px;
+  background:linear-gradient(90deg, transparent 72px, var(--marge) 72px, var(--marge) 74px, transparent 74px), repeating-linear-gradient(180deg, transparent 0 35px, var(--ligne-s) 35px 36px); }
+.heros .c { display:grid; grid-template-columns:1.1fr .9fr; gap:30px; align-items:center; }
+.etiquette { display:inline-flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--bord); border-radius:999px; padding:7px 14px 7px 8px; font-weight:700; font-size:15px; box-shadow:0 4px 14px rgba(20,33,61,.06); }
+.etiquette i { width:10px; height:10px; border-radius:50%; background:#2fb36d; box-shadow:0 0 0 4px #2fb36d33; }
+.heros h1 { font-size:clamp(46px, 7.2vw, 96px); font-weight:800; margin:22px 0 0; }
+.heros h1 .main { display:block; font-size:.5em; color:var(--bleu); margin:.25em 0 .1em; }
+.heros .sous { font-size:21px; color:var(--mute); max-width:560px; margin:22px 0 30px; }
+.actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+.mini-preuves { display:flex; align-items:center; gap:12px; margin-top:30px; font-size:15px; color:var(--mute); }
+.mini-preuves .avas { display:flex; }
+.mini-preuves .avas img { width:40px; height:40px; border-radius:50%; border:3px solid var(--papier); margin-left:-10px; background:#cfe0ff; }
+.mini-preuves .avas img:first-child { margin-left:0; }
+.mini-preuves b { color:var(--encre); }
+
+/* Carte « question » qui sert d'illustration */
+.demo { position:relative; }
+.question { background:#fff; border-radius:30px; padding:24px; box-shadow:0 30px 80px rgba(20,33,61,.16), 0 2px 0 var(--bord); transform:rotate(1.5deg); }
+.question .tete { display:flex; align-items:center; gap:10px; font-size:14px; font-weight:700; color:var(--mute); margin-bottom:12px; }
+.question .tete img { width:36px; height:36px; }
+.question .tete .niv { margin-left:auto; background:var(--bleu-c); color:var(--bleu); padding:4px 10px; border-radius:999px; }
+.question h3 { font-size:24px; line-height:1.25; letter-spacing:-.01em; margin-bottom:16px; }
+.choix { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.choix span { border:2px solid var(--bord); border-radius:16px; padding:13px 14px; font-weight:700; display:flex; align-items:center; gap:10px; }
+.choix span b { width:28px; height:28px; border-radius:9px; background:#f3efe4; display:grid; place-items:center; font-size:14px; }
+.choix .ok { border-color:var(--vert); background:var(--vert-c); } .choix .ok b { background:var(--vert); color:#fff; }
+.bulle { position:absolute; display:flex; align-items:center; gap:10px; background:#fff; border-radius:18px; padding:10px 14px 10px 10px; box-shadow:0 18px 40px rgba(20,33,61,.16); font-weight:700; font-size:15px; line-height:1.2; }
+.bulle img { width:42px; height:42px; object-fit:contain; }
+.bulle small { display:block; font-weight:400; color:var(--mute); font-size:13px; }
+.b1 { left:-34px; bottom:-34px; transform:rotate(-3deg); } .b2 { right:-18px; top:-30px; transform:rotate(3deg); }
+.ava-coin { position:absolute; right:-10px; bottom:-56px; width:118px; border-radius:50%; border:6px solid #fff; box-shadow:0 16px 36px rgba(20,33,61,.2); background:#cfe0ff; }
+
+/* Bandeau défilant des matières */
+.bande { border-block:1px solid var(--bord); background:#fff; overflow:hidden; margin-top:70px; }
+.bande div { display:flex; gap:44px; padding:16px 0; white-space:nowrap; width:max-content; animation:defile 40s linear infinite; font:800 22px/1 var(--titre); color:#b6ad98; }
+.bande span { display:flex; align-items:center; gap:12px; } .bande img { width:34px; height:34px; }
+@keyframes defile { to { transform:translateX(-50%); } }
+
+/* Bento */
+section.bloc { padding:90px 0; }
+.titre-bloc { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-bottom:34px; flex-wrap:wrap; }
+.titre-bloc h2 { font-size:clamp(34px, 4.6vw, 58px); font-weight:800; max-width:720px; }
+.titre-bloc p { max-width:380px; color:var(--mute); margin:0; }
+.bento { display:grid; grid-template-columns:repeat(6, 1fr); grid-auto-rows:minmax(200px, auto); gap:16px; }
+.case { border-radius:var(--r); padding:28px; position:relative; overflow:hidden; text-decoration:none; transition:transform .2s; }
+.case:hover { transform:translateY(-4px); }
+.case h3 { font-size:28px; font-weight:800; margin-bottom:8px; }
+.case p { margin:0; color:#3c465c; font-size:17px; max-width:420px; }
+.case .ic { position:absolute; width:150px; height:150px; object-fit:contain; right:18px; bottom:14px; filter:drop-shadow(0 14px 18px rgba(0,0,0,.14)); transition:transform .3s; }
+.case:hover .ic { transform:rotate(-6deg) scale(1.06); }
+.k1 { grid-column:span 4; grid-row:span 2; background:var(--bleu-c); }
+.k1 .ic { width:250px; height:250px; right:26px; bottom:22px; }
+.k2 { grid-column:span 2; background:var(--orange-c); } .k3 { grid-column:span 2; background:var(--vert-c); }
+.k4 { grid-column:span 3; background:var(--rose-c); } .k5 { grid-column:span 3; background:var(--violet-c); }
+.case .pastille { display:inline-block; background:#fff; border-radius:999px; padding:5px 12px; font-weight:700; font-size:14px; margin-bottom:14px; }
+.k1 .lignes { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; max-width:440px; }
+.k1 .lignes span { background:#fff; border-radius:999px; padding:7px 13px; font-weight:700; font-size:15px; }
+.k2 p, .k3 p, .k4 p, .k5 p { max-width:58%; }
+
+/* Matières */
+.matieres { display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; }
+.mat { background:var(--carte); border:1px solid var(--bord); border-radius:var(--r); padding:22px 22px 24px; text-decoration:none; transition:transform .2s, box-shadow .2s; }
+.mat:hover { transform:translateY(-4px); box-shadow:0 20px 44px rgba(20,33,61,.1); }
+.mat .fond { height:150px; border-radius:20px; display:grid; place-items:center; margin-bottom:16px; }
+.mat .fond img { width:120px; height:120px; object-fit:contain; }
+.mat b { font:800 24px/1 var(--titre); display:block; }
+.mat small { display:block; color:var(--mute); font-size:15px; margin:8px 0 12px; }
+.mat .n { font-weight:700; color:var(--bleu); }
+
+/* Parents : page de carnet */
+.parents { background:var(--encre); color:#fff; border-radius:40px; padding:60px; display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+.parents h2 { font-size:clamp(34px, 4.4vw, 54px); font-weight:800; }
+.parents h2 .main { color:var(--stabilo); font-size:.62em; display:block; margin-bottom:.2em; }
+.parents p.int { color:#c8d0e4; margin:16px 0 26px; }
+.liste-p { list-style:none; padding:0; margin:0 0 30px; display:grid; gap:12px; }
+.liste-p li { display:flex; gap:14px; align-items:center; font-weight:700; }
+.liste-p li img { width:40px; height:40px; object-fit:contain; background:#ffffff14; border-radius:12px; padding:4px; }
+.liste-p li span { display:block; font-weight:400; color:#aeb8d2; font-size:15px; }
+.parents .btn-encre { background:var(--stabilo); color:var(--encre); }
+.carnet { background:var(--papier); color:var(--encre); border-radius:26px; padding:24px 26px; transform:rotate(-2deg); box-shadow:0 30px 60px rgba(0,0,0,.35);
+  background-image:repeating-linear-gradient(180deg, transparent 0 31px, var(--ligne-s) 31px 32px); background-position:0 70px; }
+.carnet .t { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+.carnet .t img { width:52px; height:52px; border-radius:50%; background:#cfe0ff; border:3px solid #fff; }
+.carnet .t b { font:800 20px/1.1 var(--titre); }
+.carnet .ligne { display:grid; grid-template-columns:120px 1fr 48px; gap:10px; align-items:center; height:32px; font-size:15px; }
+.carnet .ligne .j { height:12px; border-radius:99px; background:#e9e3d4; position:relative; overflow:hidden; } .carnet .ligne .j i { position:absolute; inset:0 auto 0 0; border-radius:99px; background:var(--vert); }
+.carnet .ligne b { text-align:right; }
+.carnet .note { font-family:var(--main); color:var(--marge); font-size:17px; margin-top:12px; transform:rotate(-2deg); }
+.carnet small.f { display:block; color:var(--mute); font-size:12px; margin-top:6px; }
+
+/* Chiffres */
+.chiffres { display:grid; grid-template-columns:repeat(4, 1fr); border-top:2px solid var(--encre); }
+.chiffres div { padding:28px 10px 0; border-right:1px solid var(--bord); }
+.chiffres div:last-child { border-right:0; }
+.chiffres b { display:block; font:800 clamp(44px, 6vw, 76px)/1 var(--titre); letter-spacing:-.03em; }
+.chiffres span { color:var(--mute); }
+
+/* FAQ */
+.faq { display:grid; grid-template-columns:.8fr 1.2fr; gap:50px; }
+.faq h2 { font-size:clamp(34px, 4.4vw, 54px); font-weight:800; }
+.faq details { border-bottom:1px solid var(--bord); padding:6px 0; }
+.faq summary { cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:16px; font:800 21px/1.3 var(--titre); padding:16px 0; }
+.faq summary::after { content:'+'; width:34px; height:34px; flex:none; border-radius:50%; background:#efe9db; display:grid; place-items:center; font-size:22px; }
+.faq details[open] summary::after { content:'–'; background:var(--stabilo); }
+.faq p { margin:0 0 20px; color:var(--mute); max-width:620px; }
+
+/* Final */
+.final { text-align:center; padding:100px 0 110px; background:radial-gradient(600px 300px at 50% 100%, #ffe06655, transparent 70%); }
+.final h2 { font-size:clamp(40px, 6vw, 80px); font-weight:800; }
+.final h2 .main { color:var(--bleu); font-size:.55em; display:block; margin-bottom:.15em; }
+.final p { color:var(--mute); margin:20px auto 30px; max-width:520px; }
+footer { border-top:1px solid var(--bord); padding:30px 0; font-size:15px; color:var(--mute); }
+footer .c { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 24px; }
+footer a { text-decoration:none; margin-right:18px; color:var(--encre); font-weight:700; }
+
+@media (prefers-reduced-motion: reduce) { * { animation:none !important; transition:none !important; } }
+@media (max-width: 980px) {
+  .menu { display:none; }
+  .heros .c, .parents, .faq { grid-template-columns:1fr; }
+  .demo { margin:40px 26px 60px; }
+  .bento { grid-template-columns:1fr 1fr; }
+  .k1, .k4, .k5 { grid-column:span 2; } .k2, .k3 { grid-column:span 1; }
+  .k1 { grid-row:span 1; } .k1 .ic { width:170px; height:170px; }
+  .matieres { grid-template-columns:1fr 1fr; }
+  .chiffres { grid-template-columns:1fr 1fr; } .chiffres div:nth-child(2) { border-right:0; } .chiffres div:nth-child(n+3) { padding-top:28px; }
+  .parents { padding:40px 28px; }
+}
+@media (max-width: 560px) {
+  body { font-size:17px; }
+  .heros { background:repeating-linear-gradient(180deg, transparent 0 35px, var(--ligne-s) 35px 36px); }
+  .heros .sous { font-size:18px; }
+  .actions .btn { flex:1 1 100%; justify-content:center; }
+  .haut .btn span { display:none; }
+  .bento { grid-template-columns:1fr; } .k1, .k2, .k3, .k4, .k5 { grid-column:span 1; }
+  .case { min-height:210px; } .case .ic { width:110px; height:110px; } .k1 .ic { width:130px; height:130px; }
+  .k1 .lignes, .k1 p { max-width:62%; }
+  .k2 p, .k3 p, .k4 p, .k5 p { max-width:60%; }
+  .question h3 { font-size:20px; } .choix { grid-template-columns:1fr; }
+  .b1 { left:-14px; } .b2 { right:-8px; } .ava-coin { width:90px; right:-6px; }
+  .carnet .ligne { grid-template-columns:96px 1fr 42px; }
+  section.bloc { padding:64px 0; }
+}
+</style>
+</head>
+<body>
+<header class="haut">
+  <div class="c">
+    <a class="marque" href="#"><img src="../assets/icones/logo-128.png" alt="">Mission CEB</a>
+    <nav class="menu" aria-label="Menu principal"><a href="#jeu">Le jeu</a><a href="#fiches">Fiches</a><a href="#parents">Parents</a><a href="#faq">Questions</a></nav>
+    <a class="btn btn-encre" href="../app/">Jouer <span>gratuitement</span></a>
+  </div>
+</header>
+
+<main>
+<section class="heros">
+  <div class="c">
+    <div>
+      <span class="etiquette"><i></i>CEB 2027 : plus que <b id="jours">244 jours</b></span>
+      <h1><span class="main">Pour les élèves de 6e primaire</span>Réussis ton <span class="stabilo">CEB</span> en jouant.</h1>
+      <p class="sous">Des questions toujours nouvelles, les vrais examens depuis 2015 et un coach qui repère tes points faibles. Dix minutes par jour, sans compte et sans publicité.</p>
+      <div class="actions">
+        <a class="btn btn-encre" href="../app/">Commencer ma mission <span class="fleche">→</span></a>
+        <a class="btn btn-ligne" href="#parents">Je suis parent</a>
+      </div>
+      <div class="mini-preuves"><div class="avas"><img src="../assets/avatars/01-renard.webp" alt=""><img src="../assets/avatars/17-astronaute-fille.webp" alt=""><img src="../assets/avatars/10-dragon.webp" alt=""><img src="../assets/avatars/18-ninja-fille.webp" alt=""></div><span><b>18 avatars</b> à choisir · 3 ambiances</span></div>
+    </div>
+    <div class="demo" aria-hidden="true">
+      <div class="question">
+        <div class="tete"><img src="../assets/ui/ma.webp" alt="">Maths · Grandeurs<span class="niv">Niveau 2</span></div>
+        <h3>Combien font 20 % de 150 € ?</h3>
+        <div class="choix"><span><b>A</b>15 €</span><span class="ok"><b>B</b>30 €</span><span><b>C</b>20 €</span><span><b>D</b>130 €</span></div>
+      </div>
+      <div class="bulle b2"><img src="../assets/ui/serie.webp" alt=""><div>5 jours d'affilée<small>Ta série continue !</small></div></div>
+      <div class="bulle b1"><img src="../assets/ui/xp.webp" alt=""><div>+15 XP<small>Bravo, c'est juste</small></div></div>
+      <img class="ava-coin" src="../assets/avatars/02-loup.webp" alt="">
+    </div>
+  </div>
+  <div class="bande" aria-hidden="true"><div>
+    <span><img src="../assets/ui/fr.webp" alt="">Français</span><span><img src="../assets/ui/ma.webp" alt="">Maths</span><span><img src="../assets/ui/hg.webp" alt="">Histoire-géo</span><span><img src="../assets/ui/sc.webp" alt="">Sciences</span><span><img src="../assets/ui/examen.webp" alt="">Vrais examens 2015-2026</span><span><img src="../assets/ui/fiches.webp" alt="">193 fiches</span>
+    <span><img src="../assets/ui/fr.webp" alt="">Français</span><span><img src="../assets/ui/ma.webp" alt="">Maths</span><span><img src="../assets/ui/hg.webp" alt="">Histoire-géo</span><span><img src="../assets/ui/sc.webp" alt="">Sciences</span><span><img src="../assets/ui/examen.webp" alt="">Vrais examens 2015-2026</span><span><img src="../assets/ui/fiches.webp" alt="">193 fiches</span>
+  </div></div>
+</section>
+
+<section class="bloc" id="jeu">
+  <div class="c">
+    <div class="titre-bloc"><h2>Tout ce qu'il faut pour être <span class="stabilo">prêt le jour J</span>.</h2><p>Cinq façons de s'entraîner, toutes gratuites, sur ordinateur, tablette ou téléphone, même hors ligne.</p></div>
+    <div class="bento">
+      <a class="case k1" href="../app/"><span class="pastille">Le cœur de Mission CEB</span><h3>Entraînement intelligent</h3><p>10 questions à la fois, jamais deux fois la même. La difficulté s'adapte et le coach ramène tes erreurs quelques jours plus tard.</p>
+        <div class="lignes"><span>Questions illimitées</span><span>Coach</span><span>Règle en cas d'erreur</span><span>Niveau adaptatif</span></div><img class="ic" src="../assets/ui/entrainement.webp" alt=""></a>
+      <a class="case k2" href="../app/"><span class="pastille">Le jour J</span><h3>Examen réel</h3><p>Les vrais CEB, livret par livret, chronométrés.</p><img class="ic" src="../assets/ui/examen.webp" alt=""></a>
+      <a class="case k3" href="../app/"><span class="pastille">1 fois par jour</span><h3>Défi du jour</h3><p>Dix questions de toutes les matières.</p><img class="ic" src="../assets/ui/defi.webp" alt=""></a>
+      <a class="case k4" href="../app/"><span class="pastille">À deux</span><h3>Défi entre amis</h3><p>Envoie un lien : ton ami aura exactement les mêmes questions.</p><img class="ic" src="../assets/ui/amis.webp" alt=""></a>
+      <a class="case k5" href="../imprimer.html"><span class="pastille">Sur papier</span><h3>Examens à imprimer</h3><p>Avec tracés, et un corrigé séparé pour les parents.</p><img class="ic" src="../assets/ui/papier.webp" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="fiches" style="padding-top:0">
+  <div class="c">
+    <div class="titre-bloc"><h2>193 fiches pour <span class="main" style="color:var(--bleu)">tout</span> réviser.</h2><p>Chaque règle tient sur une fiche : la règle, un exemple, une astuce, puis des exercices corrigés tout de suite.</p></div>
+    <div class="matieres">
+      <a class="mat" href="../fiches/#fr"><div class="fond" style="background:var(--vert-c)"><img src="../assets/ui/fr.webp" alt=""></div><b>Français</b><small>Lire, grammaire, conjugaison, orthographe</small><span class="n">58 fiches →</span></a>
+      <a class="mat" href="../fiches/#ma"><div class="fond" style="background:var(--bleu-c)"><img src="../assets/ui/ma.webp" alt=""></div><b>Maths</b><small>Nombres, grandeurs, géométrie, données</small><span class="n">55 fiches →</span></a>
+      <a class="mat" href="../fiches/#hg"><div class="fond" style="background:var(--orange-c)"><img src="../assets/ui/hg.webp" alt=""></div><b>Histoire-géo</b><small>Repères, cartes, Belgique et monde</small><span class="n">38 fiches →</span></a>
+      <a class="mat" href="../fiches/#sc"><div class="fond" style="background:var(--violet-c)"><img src="../assets/ui/sc.webp" alt=""></div><b>Sciences</b><small>Vivant, matière, énergie</small><span class="n">42 fiches →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="parents" style="padding-top:0">
+  <div class="c">
+    <div class="parents">
+      <div>
+        <h2><span class="main">Pour les parents</span>Vous suivez, sans surveiller.</h2>
+        <p class="int">Un espace protégé par un code vous montre l'essentiel en un coup d'œil, et vous aide à organiser les révisions jusqu'au CEB.</p>
+        <ul class="liste-p">
+          <li><img src="../assets/ui/progres.webp" alt=""><div>Bilan de la semaine<span>Temps, réussite par matière, points faibles</span></div></li>
+          <li><img src="../assets/ui/chrono.webp" alt=""><div>Limite de temps par jour<span>De 15 à 90 minutes, si vous le souhaitez</span></div></li>
+          <li><img src="../assets/ui/papier.webp" alt=""><div>Plan de révision<span>Semaine par semaine, avec des fiches à imprimer</span></div></li>
+          <li><img src="../assets/emoji/1f512.webp" alt=""><div>Aucune donnée envoyée<span>Tout reste sur l'appareil de l'enfant</span></div></li>
+        </ul>
+        <a class="btn btn-encre" href="../app/">Découvrir l'espace parents <span class="fleche" style="background:var(--encre);color:var(--stabilo)">→</span></a>
+      </div>
+      <div class="carnet" aria-hidden="true">
+        <div class="t"><img src="../assets/avatars/17-astronaute-fille.webp" alt=""><div><b>Bilan de Léa</b><br><small style="color:var(--mute)">Cette semaine · 5 jours · 1 h 20</small></div></div>
+        <div class="ligne"><span>Français</span><div class="j"><i style="width:72%"></i></div><b>72 %</b></div>
+        <div class="ligne"><span>Maths</span><div class="j"><i style="width:64%"></i></div><b>64 %</b></div>
+        <div class="ligne"><span>Histoire-géo</span><div class="j"><i style="width:58%;background:#d39a12"></i></div><b>58 %</b></div>
+        <div class="ligne"><span>Sciences</span><div class="j"><i style="width:80%"></i></div><b>80 %</b></div>
+        <p class="note">À revoir : les siècles et les fractions !</p>
+        <small class="f">Exemple de bilan, données fictives.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" style="padding-top:0">
+  <div class="c">
+    <div class="chiffres">
+      <div><b>12</b><span>examens officiels du CEB</span></div>
+      <div><b>193</b><span>fiches de révision</span></div>
+      <div><b>222</b><span>familles de questions</span></div>
+      <div><b>0 €</b><span>sans abonnement, sans pub</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="faq" style="padding-top:20px">
+  <div class="c faq">
+    <h2>Les questions qu'on nous pose.</h2>
+    <div>
+      <details open><summary>C'est vraiment gratuit ?</summary><p>Oui : pas d'abonnement, pas de publicité, pas d'achat dans l'application.</p></details>
+      <details><summary>Faut-il créer un compte ?</summary><p>Non. Un pseudo et un avatar suffisent. La progression reste dans le navigateur ; un code de sauvegarde permet de la retrouver sur un autre appareil.</p></details>
+      <details><summary>Le contenu correspond-il au CEB 2027 ?</summary><p>Le CEB 2027 porte sur les référentiels du tronc commun. Les questions et les fiches les suivent, et l'examen 2026 « tronc commun » est proposé en entier.</p></details>
+      <details><summary>Ça marche sur tablette et sans internet ?</summary><p>Oui. Après une première visite, Mission CEB fonctionne hors ligne et s'ajoute à l'écran d'accueil comme une application.</p></details>
+      <details><summary>Qui a fait Mission CEB ?</summary><p>Un projet indépendant, non affilié à la Fédération Wallonie-Bruxelles. Une erreur ? missionceb@outlook.be.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="c">
+    <h2><span class="main">C'est parti ?</span>Ta première mission t'attend.</h2>
+    <p>Choisis ton avatar et réponds à tes 10 premières questions. Ça prend deux minutes.</p>
+    <a class="btn btn-encre" href="../app/">Commencer gratuitement <span class="fleche">→</span></a>
+  </div>
+</section>
+</main>
+<footer><div class="c"><span><b style="color:var(--encre)">Mission CEB</b> · Entraînement gratuit au CEB (Fédération Wallonie-Bruxelles)</span><nav><a href="../app/">Jouer</a><a href="../fiches/">Fiches</a><a href="../imprimer.html">Examens papier</a><a href="mailto:missionceb@outlook.be">Contact</a></nav></div></footer>
+<script>
+  const j = Math.ceil((new Date('2027-06-21T08:00:00') - new Date()) / 864e5);
+  if (j > 0) document.getElementById('jours').textContent = `${j} jours`;
+</script>
+</body>
+</html>
