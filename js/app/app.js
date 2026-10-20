@@ -4,6 +4,7 @@ import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
+import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, sons, ouvrirZoom } from './confort.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -59,14 +60,23 @@ async function demarrer() {
   const dispo = donnees.examens.filter((e) => e.statut !== 'a_encoder');
   choix.examen = (dispo.findLast((e) => e.referentiel === 'tronc_commun') ?? dispo.at(-1))?.id ?? null;
   joueur = store.joueurActif();
+  // Documents du portfolio : un toucher les ouvre en grand (zoom).
+  document.addEventListener('click', (e) => { const img = e.target.closest?.('.doc img'); if (img) ouvrirZoom(img.src, img.alt); });
   joueur ? afficherAccueil() : afficherConnexion();
+}
+
+// Bouton « Écouter » (lecture à voix haute), si le joueur l'a activée. Jamais pour une question de lecture.
+function boutonVoix(q) {
+  if (!confortDe(joueur).voix || !voixDisponible()) return '';
+  if (!peutLireAVoixHaute(q)) return '<p class="voix-off">🔇 Question de lecture : c\'est à toi de lire !</p>';
+  return '<button class="btn petit btn-voix" id="btn-voix" aria-pressed="false">🔊 Écouter</button>';
 }
 
 // Anciennes ambiances (Néon, Pop, Sunset) → nouvelles ambiances « école ».
 const AMBIANCES = [['cahier', 'Cahier'], ['tableau', 'Tableau'], ['lecture', 'Lecture']];
 const ANCIENNES = { neon: 'tableau', pop: 'cahier', sunset: 'cahier', parchemin: 'lecture' };
 const ambiance = (t) => (AMBIANCES.some(([id]) => id === t) ? t : ANCIENNES[t] ?? 'cahier');
-function appliquerTheme(t) { racine.dataset.theme = ambiance(t); }
+function appliquerTheme(t) { racine.dataset.theme = ambiance(t); appliquerConfort(store.joueurActif()); }
 function montrer(id) {
   $$('.ecran').forEach((e) => { e.hidden = e.id !== id; });
   window.scrollTo(0, 0);
@@ -424,13 +434,16 @@ function afficherQuiz() {
         <div class="barre"><i id="q-prog" style="width:0%"></i></div>
         <span class="compteur" id="q-compteur"></span>
       </div>
-      <div class="puces-etat"><span class="serie-flamme" id="q-serie">🔥 0</span><span id="q-xp">⭐ 0 XP</span><span class="chrono" id="q-chrono" hidden></span></div>
+      <div class="puces-etat"><span class="serie-flamme" id="q-serie">🔥 0</span><span id="q-xp">⭐ 0 XP</span><span class="chrono" id="q-chrono" hidden></span><button class="puce-son" id="q-son"></button></div>
       <section class="question" id="q-zone"></section>
     </div>
     <div class="pied-quiz" id="pied"><div class="retour" id="retour" hidden></div>
       <div class="in"><button class="btn" id="passer">Je ne sais pas</button><button class="btn btn-cta" id="valider" disabled>Valider</button></div></div>`;
   montrer('ecran-quiz');
-  $('#quitter').onclick = () => terminerPartie(true);
+  const majSon = () => { const on = confortDe(joueur).sons; const b = $('#q-son'); b.textContent = on ? '🔊' : '🔇'; b.setAttribute('aria-label', on ? 'Couper les sons' : 'Remettre les sons'); b.setAttribute('aria-pressed', String(!on)); };
+  $('#q-son').onclick = () => { joueur = store.modifier((j) => { j.confort = { ...confortDe(j), sons: !confortDe(j).sons }; }); appliquerConfort(joueur); majSon(); };
+  majSon();
+  $('#quitter').onclick = () => { taire(); terminerPartie(true); };
   $('#passer').onclick = () => valider(true);
   $('#valider').onclick = () => (partie.corrige ? continuer() : valider(false));
   clearInterval(partie.timer);
@@ -467,12 +480,14 @@ function questionSuivante() {
   const origine = q.source === 'examen' ? `CEB ${q.annee ?? partie.examen?.annee}${q.referentiel === 'tronc_commun' ? ' (tronc commun)' : ''} · livret ${q.livret} · question ${q.numero}` : nomDomaine(q.domaine);
   $('#q-zone').innerHTML = `
     <p class="origine">${esc(origine)}</p>
+    ${boutonVoix(q)}
     <h2>${esc(q.enonce)}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${docs.map((d, i) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
+      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('')}
     <div id="q-saisie">${rendreSaisie(q)}</div>`;
   $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  taire(); brancherBoutonVoix($('#btn-voix'), () => texteAVoix(q));
   const pied = $('#pied');
   pied.className = 'pied-quiz';
   $('#retour').hidden = true;
@@ -491,6 +506,7 @@ function valider(passer) {
   const ok = r.correct === true;
   const ouverte = r.correct === null && !passer;
   const partielle = !ok && r.score > 0;
+  if (ok) sons.juste(); else if (r.correct === false && !passer) sons.faux();
   const pied = $('#pied');
   pied.className = `pied-quiz ${ok ? 'juste' : ouverte ? 'ouvert' : 'faux'}`;
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -559,7 +575,7 @@ function afficherResultat(resume, res) {
     </div>
   </div>`;
   montrer('ecran-resultat');
-  if (pct >= 70 || res.nouveauxBadges.length || res.niveauApres > res.niveauAvant) setTimeout(() => confettis(), 200);
+  if (pct >= 70 || res.nouveauxBadges.length || res.niveauApres > res.niveauAvant) { setTimeout(() => confettis(), 200); sons.fanfare(); }
   $('#accueil').onclick = afficherAccueil;
   $('#rejouer').onclick = () => {
     if (partie.modeJeu === 'defi') choix.mode = 'entrainement';
@@ -769,12 +785,14 @@ function allerQuestion(i) {
   const docs = (q.documents ?? []).map((id) => reel.examen.documents?.find((d) => d.id === id)).filter(Boolean);
   $('#q-zone').innerHTML = `
     <p class="origine">Question ${esc(q.numero)}</p>
+    ${boutonVoix(q)}
     <h2>${esc(q.enonce)}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${docs.map((d, k) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${k === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${k === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
+      <figure class="doc" id="doc-${d.id}" ${k === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('')}
     <div id="q-saisie">${rendreSaisie(q).replace('puis compare-la avec la réponse modèle.', 'tu la compareras avec la réponse modèle à la fin.')}</div>`;
   $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  taire(); brancherBoutonVoix($('#btn-voix'), () => texteAVoix(q));
   let ui = null; // reste nul pendant la remise des réponses déjà données
   const noter = () => { if (!ui) return; if (er.noter(q.id, ui.lire())) { sauverBientot(); majNavReel(); } else tickReel(); };
   const branche = brancher($('#q-saisie'), q, { onPret: noter, onValider: () => $('#r-suiv').click() });
@@ -853,7 +871,7 @@ function afficherBilanReel(resume, res) {
     </div>
   </div>`;
   montrer('ecran-resultat');
-  if (pct >= 60) setTimeout(() => confettis(), 200);
+  if (pct >= 60) { setTimeout(() => confettis(), 200); sons.fanfare(); }
   $('#accueil').onclick = afficherAccueil;
   $('#voir-revue').onclick = () => afficherRevueReel(resume, res, true);
 }
@@ -957,14 +975,15 @@ function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel' 
     <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
     <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
     ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
-    <div class="modal-actions">${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
+    <div class="modal-actions">${confortDe(joueur).voix && voixDisponible() ? '<button class="btn" id="fiche-voix" aria-pressed="false">🔊 Écouter</button>' : ''}${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
   </div>`;
-  const fermer = () => { fond.remove(); document.removeEventListener('keydown', echap); };
-  const echap = (e) => { if (e.key === 'Escape') fermer(); };
+  const fermer = () => { taire(); fond.remove(); document.removeEventListener('keydown', echap); };
+  const echap = (e) => { if (e.key === 'Escape' && !document.querySelector('.zoom-fond')) fermer(); };
   document.addEventListener('keydown', echap);
   fond.addEventListener('click', (e) => { if (e.target === fond) fermer(); });
   document.body.append(fond);
   $('#fiche-fermer', fond).onclick = fermer;
+  brancherBoutonVoix($('#fiche-voix', fond), () => [f.titre, ...f.regle, `Exemple : ${f.exemple}`, f.astuce ? `Astuce : ${f.astuce}` : ''].filter(Boolean).join('. '));
   $('#fiche-cta', fond)?.addEventListener('click', () => { fermer(); onCta?.(); });
   ($('#fiche-cta', fond) ?? $('#fiche-fermer', fond)).focus();
 }
@@ -1025,6 +1044,17 @@ function afficherReglages() {
       <p class="etape-titre" style="margin-top:14px">Couleur de fond</p>
       <div class="couleurs">${COULEURS.map((c) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}"></button>`).join('')}</div>
     </section>
+    <section class="carte confort">
+      <p class="etape-titre">👓 Confort de lecture</p>
+      <div class="ligne-reglage"><span>Taille du texte</span><div class="options-examen" role="radiogroup" aria-label="Taille du texte">${TAILLES.map(([id, nom]) => `<button class="puce cf-taille" role="radio" data-v="${id}">${nom}</button>`).join('')}</div></div>
+      <div class="ligne-reglage"><span>Espacement</span><div class="options-examen" role="radiogroup" aria-label="Espacement du texte">${ESPACES.map(([id, nom]) => `<button class="puce cf-espace" role="radio" data-v="${id}">${nom}</button>`).join('')}</div></div>
+      <div class="ligne-reglage"><span>Lecture à voix haute</span><div class="options-examen">${voixDisponible()
+        ? '<button class="puce cf-voix" role="switch" id="cf-voix"></button><button class="btn petit" id="cf-essai">🔊 Essayer</button>'
+        : '<span class="mute">Pas disponible sur ce navigateur.</span>'}</div></div>
+      <p class="mute" style="font-size:13px;margin:0 0 10px">Un bouton « Écouter » lit la question et les réponses. Il n'apparaît pas pour les questions de lecture : là, c'est toi qui lis !</p>
+      <div class="ligne-reglage"><span>Sons</span><div class="options-examen"><button class="puce cf-sons" role="switch" id="cf-sons"></button></div></div>
+      <div class="apercu-texte" aria-hidden="true"><b>Aperçu</b><p>Léa achète 3 cahiers à 2,50 € chacun. Combien paie-t-elle ?</p></div>
+    </section>
     <section class="carte">
       <p class="etape-titre">🔑 Code de sauvegarde</p>
       <p class="mute" style="margin:0 0 10px;font-size:14px">Ta progression est gardée sur cet appareil. Pour la retrouver ailleurs, copie ce code et colle-le sur l'autre appareil (« J'ai un code de sauvegarde »).</p>
@@ -1049,7 +1079,23 @@ function afficherReglages() {
   const rafraichirAva = () => { $('.apercu-joueur .pastille-ava', el).outerHTML = ava(joueur, 64); };
   $$('.grille-avatars button', el).forEach((b) => b.onclick = () => { $$('.grille-avatars button', el).forEach((x) => x.classList.toggle('sel', x === b)); joueur = store.modifier((j) => { j.avatar = b.dataset.a; }); rafraichirAva(); });
   $$('.couleurs button', el).forEach((b) => b.onclick = () => { $$('.couleurs button', el).forEach((x) => x.classList.toggle('sel', x === b)); joueur = store.modifier((j) => { j.couleur = b.dataset.c; }); rafraichirAva(); });
-  $('#retour-accueil', el).onclick = afficherAccueil;
+  const majConfort = () => {
+    const c = confortDe(joueur);
+    $$('.cf-taille', el).forEach((b) => { b.classList.toggle('sel', b.dataset.v === c.taille); b.setAttribute('aria-checked', String(b.dataset.v === c.taille)); });
+    $$('.cf-espace', el).forEach((b) => { b.classList.toggle('sel', b.dataset.v === c.espace); b.setAttribute('aria-checked', String(b.dataset.v === c.espace)); });
+    for (const [id, on] of [['#cf-voix', c.voix], ['#cf-sons', c.sons]]) { const b = $(id, el); if (!b) continue; b.classList.toggle('sel', on); b.setAttribute('aria-checked', String(on)); b.textContent = on ? '✔ Activée' : 'Désactivée'; }
+    const s = $('#cf-sons', el); s.textContent = c.sons ? '🔊 Activés' : '🔇 Coupés';
+    if ($('#cf-essai', el)) $('#cf-essai', el).hidden = !c.voix;
+    appliquerConfort(joueur);
+  };
+  const changer = (cle, v) => { joueur = store.modifier((j) => { j.confort = { ...confortDe(j), [cle]: v }; }); majConfort(); };
+  $$('.cf-taille', el).forEach((b) => b.onclick = () => changer('taille', b.dataset.v));
+  $$('.cf-espace', el).forEach((b) => b.onclick = () => changer('espace', b.dataset.v));
+  $('#cf-voix', el)?.addEventListener('click', () => { changer('voix', !confortDe(joueur).voix); if (!confortDe(joueur).voix) taire(); });
+  $('#cf-sons', el).onclick = () => { changer('sons', !confortDe(joueur).sons); sons.juste(); };
+  $('#cf-essai', el)?.addEventListener('click', () => parler('Bonjour ! Je lis les questions à voix haute. Léa achète 3 cahiers à 2,50 euros chacun. Combien paie-t-elle ?'));
+  majConfort();
+  $('#retour-accueil', el).onclick = () => { taire(); afficherAccueil(); };
   $('#changer', el).onclick = () => { store.deconnecter(); afficherConnexion(); };
   $('#r-parents', el).onclick = () => afficherParents(afficherReglages);
   $('#copier', el).onclick = async () => {

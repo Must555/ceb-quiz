@@ -581,3 +581,30 @@ a.btn { text-decoration:none; }
   .nav-q button { min-width:34px; height:34px; }
   .livret-reel .pied-quiz .btn { font-size:16px; padding:13px 8px; }
 }
+
+/* ---------- Confort de lecture (Mon style) ---------- */
+/* Taille : agrandit les écrans de travail (questions, résultats, fiches), pas la navigation. */
+:root[data-taille="grand"] :is(.quiz, .pied-quiz .in, .retour, .resultat, .revue-reel, .modal, .reglages .apercu-texte) { zoom:1.15; }
+:root[data-taille="tres-grand"] :is(.quiz, .pied-quiz .in, .retour, .resultat, .revue-reel, .modal, .reglages .apercu-texte) { zoom:1.3; }
+/* Espacement aéré : lettres, mots et lignes plus espacés (aide les lecteurs fragiles). */
+:root[data-espace="aere"] :is(.question, .rep, .opt, .texte-trous, .retour, .modal, .revue, .entracte, .apercu-texte) { letter-spacing:.04em; word-spacing:.14em; line-height:1.75; }
+:root[data-espace="aere"] .question h2 { line-height:1.6; }
+.confort .ligne-reglage { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 12px; padding:8px 0; border-top:var(--bord); }
+.confort .ligne-reglage:first-of-type { border-top:0; }
+.confort .ligne-reglage > span { font-weight:700; }
+.apercu-texte { margin-top:10px; padding:12px 14px; border-radius:12px; background:var(--panel2); border:var(--bord); }
+.apercu-texte p { margin:4px 0 0; font-size:19px; font-weight:700; }
+.btn-voix { margin:2px 0 6px; }
+.btn-voix.lit { background:var(--mat-sel); border-color:var(--accent); }
+.voix-off { font-size:13px; color:var(--mute); font-weight:700; margin:2px 0 6px; }
+.puce-son { margin-left:auto; width:36px; height:32px; border-radius:999px; background:var(--panel); border:var(--bord); font-size:16px; }
+
+/* ---------- Zoom des documents ---------- */
+.doc img { cursor:zoom-in; }
+.zoom-fond { position:fixed; inset:0; z-index:60; display:flex; flex-direction:column; background:rgba(15,18,25,.92); }
+.zoom-outils { display:flex; align-items:center; justify-content:center; gap:10px; padding:10px 12px calc(10px + env(safe-area-inset-top, 0px)); flex-wrap:wrap; }
+.zoom-outils .btn { min-width:48px; }
+.zoom-outils .btn:disabled { opacity:.4; }
+.zoom-niveau { color:#fff; font-family:var(--titre); font-weight:800; min-width:64px; text-align:center; }
+.zoom-boite { flex:1; overflow:auto; padding:0 8px 16px; -webkit-overflow-scrolling:touch; }
+.zoom-boite img { display:block; width:100%; max-width:none; margin:0 auto; background:#fff; border-radius:8px; }
