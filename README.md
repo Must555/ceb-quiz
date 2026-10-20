@@ -1,12 +1,13 @@
 # CEB Quiz
 
 Site d'entraînement au CEB (Certificat d'Études de Base, FWB) pour les élèves de 6e primaire.
-HTML/CSS/JavaScript natif, sans dépendance ni étape de build. Publié automatiquement sur
-Netlify (https://ceb-quiz-bruxelles.netlify.app) à chaque push sur `main`.
+HTML/CSS/JavaScript natif, sans dépendance ni étape de build. En ligne sur **https://missionceb.be**
+(GitHub Pages, branche `main`, publié automatiquement à chaque push ; domaine chez Infomaniak, fichier `CNAME`).
+Ne pas changer d'adresse : la progression des enfants est enregistrée dans le navigateur, liée à l'adresse du site.
 
 ## Arborescence
 - `index.html` : l'application Mission CEB (connexion par pseudo, accueil, quiz, résultat, réglages)
-- `css/app.css` : styles, 3 ambiances au choix (Néon, Pop, Sunset)
+- `css/app.css` : styles, 3 ambiances au choix (Cahier, Tableau, Lecture)
 - `js/app/` : application (`app.js` écrans, `store.js` sauvegarde locale, `progression.js` XP/niveaux/série/défis/badges, `coach.js` points faibles et révisions, `question-ui.js` affichage des 10 types)
 - `data/fiches.json` : 35 fiches Rappel ; chaque question pointe vers sa fiche (champ `fiche`)
 - `assets/` : pages de portfolio utilisées par les examens
