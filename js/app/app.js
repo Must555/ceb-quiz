@@ -1,5 +1,5 @@
 // Mission CEB — application (écrans : connexion, accueil, quiz, résultat, réglages).
-import { chargerDonnees, QuizSession, estJouable } from '../engine/index.js';
+import { chargerDonnees, QuizSession, estJouable, ExamenReel, bonneReponseLisible, reponseEleveLisible } from '../engine/index.js';
 import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
@@ -24,7 +24,7 @@ const OUPS = ['Pas tout à fait…', 'Presque !', 'Oups !', 'Pas grave, on appre
 
 let donnees = null;
 let joueur = null;
-const choix = { mode: 'entrainement', matiere: '', source: 'melange', examen: null, examenChrono: false, livret: null, cible: null };
+const choix = { mode: 'entrainement', matiere: '', source: 'melange', examen: null, examenMode: 'libre', livret: null, cible: null };
 // D'où viennent les questions de l'entraînement : vrais CEB, questions nouvelles (générées) ou un mélange à parts égales.
 const SOURCES = [['melange', '⚖️ Les deux'], ['ceb', '📜 Vrais CEB'], ['nouvelles', '✨ Nouvelles questions']];
 function poidsSource(source, matiere) {
@@ -248,6 +248,7 @@ function afficherAccueil() {
           </div>
         </section>
 
+        ${blocReprise()}
         ${blocCoach()}
 
         <section class="carte">
@@ -274,11 +275,17 @@ function afficherAccueil() {
             <button class="puce ex" data-ex="${e.id}" ${e.statut === 'a_encoder' ? 'disabled title="Bientôt disponible"' : ''}>${e.annee}${e.referentiel === 'tronc_commun' ? ' TC' : e.annee === 2026 ? ' SO' : ''}${e.statut === 'a_encoder' ? ' 🔒' : ''}</button>`).join('')}
           </div>
           <div class="options-examen">
-            <button class="puce chr" data-chr="0">🧘 Sans chrono</button>
-            <button class="puce chr" data-chr="1">⏱️ Chronométré</button>
+            <button class="puce chr" data-chr="libre">🧘 Sans chrono</button>
+            <button class="puce chr" data-chr="chrono">⏱️ Chronométré</button>
+            <button class="puce chr" data-chr="reel">🎯 Examen réel</button>
           </div>
-          <h3 class="section-titre" style="margin-top:16px">📚 Quel livret ?</h3>
-          <div class="livrets" id="choix-livret"><p class="mute">Chargement…</p></div>
+          <div class="info-reel" id="info-reel" hidden>
+            <p><b>Comme le jour du CEB.</b> Tu passes les livrets un par un, chacun avec son chrono. Aucune correction avant la fin : dans un livret, tu peux revenir sur tes réponses. Entre deux livrets, tu peux faire une pause et reprendre plus tard.</p>
+          </div>
+          <div id="bloc-livrets">
+            <h3 class="section-titre" style="margin-top:16px">📚 Quel livret ?</h3>
+            <div class="livrets" id="choix-livret"><p class="mute">Chargement…</p></div>
+          </div>
           <p class="mute" style="font-size:13px;margin:10px 0 0">Les questions à faire sur papier (tracés, dessins) sont retirées ici. Pour t'entraîner sur papier, avec des tracés : <a href="imprimer.html">imprime un examen 🖨️</a>.</p>
         </section>
 
@@ -319,10 +326,12 @@ function afficherAccueil() {
     $$('.puce.src', el).forEach((b) => { const ok = b.dataset.src === choix.source; b.classList.toggle('sel', ok); b.setAttribute('aria-checked', String(ok)); });
     $('.sources', el).hidden = choix.mode !== 'entrainement';
     $$('.puce.ex', el).forEach((b) => b.classList.toggle('sel', b.dataset.ex === choix.examen));
-    $$('.puce.chr', el).forEach((b) => b.classList.toggle('sel', (b.dataset.chr === '1') === choix.examenChrono));
+    $$('.puce.chr', el).forEach((b) => b.classList.toggle('sel', b.dataset.chr === choix.examenMode));
+    $('#info-reel', el).hidden = choix.examenMode !== 'reel';
+    $('#bloc-livrets', el).hidden = choix.examenMode === 'reel';
     $('#bloc-examen', el).hidden = choix.mode !== 'examen';
     $('#bloc-matieres', el).hidden = choix.mode === 'examen' || choix.mode === 'defi';
-    $('#lancer', el).textContent = { entrainement: 'Lancer la mission →', defi: 'Relever le défi 🏆', examen: 'Commencer l\'examen 📝', chrono: 'Top chrono ! ⏱️' }[choix.mode];
+    $('#lancer', el).textContent = { entrainement: 'Lancer la mission →', defi: 'Relever le défi 🏆', examen: choix.examenMode === 'reel' ? 'Commencer l\'examen réel 🎯' : 'Commencer l\'examen 📝', chrono: 'Top chrono ! ⏱️' }[choix.mode];
   };
   $$('.mode', el).forEach((b) => b.onclick = () => { choix.mode = b.dataset.mode; majChoix(); });
   $$('.matiere', el).forEach((b) => b.onclick = () => { choix.matiere = b.dataset.mat; majChoix(); });
@@ -341,7 +350,8 @@ function afficherAccueil() {
     $$('.livret', zone).forEach((b) => b.onclick = () => { choix.livret = b.dataset.l ? Number(b.dataset.l) : null; majLivrets(); });
   }
   majLivrets();
-  $$('.puce.chr', el).forEach((b) => b.onclick = () => { choix.examenChrono = b.dataset.chr === '1'; majChoix(); });
+  $$('.puce.chr', el).forEach((b) => b.onclick = () => { choix.examenMode = b.dataset.chr; majChoix(); });
+  brancherReprise(el);
   $$('[data-aller="reglages"]', el).forEach((b) => b.onclick = afficherReglages);
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
   $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
@@ -394,10 +404,12 @@ async function lancerPartie() {
   } else if (modeJeu === 'defi') {
     // Même défi toute la journée pour ce joueur (graine = date + joueur), sans tenir compte de l'historique.
     session = new QuizSession({ ...base, historique: [] }, { nbQuestions: 10, seed: `${store.aujourdhui()}|${joueur.id}` });
+  } else if (choix.examenMode === 'reel') {
+    return lancerExamenReel(choix.examen);
   } else {
     examen = await examenCharge(choix.examen);
     session = new QuizSession({ examen }, { mode: 'examen', livrets: choix.livret ? [choix.livret] : null });
-    if (choix.examenChrono) session.o.dureeSecondes = Math.max(120, session.o.nbQuestions * 90);
+    if (choix.examenMode === 'chrono') session.o.dureeSecondes = Math.max(120, session.o.nbQuestions * 90);
   }
   partie = { session, modeJeu, examen, fini: false };
   afficherQuiz();
@@ -554,6 +566,336 @@ function afficherResultat(resume, res) {
     joueur = store.joueurActif();
     lancerPartie();
   };
+}
+
+// ============================================================ Examen réel
+// Livret par livret, chrono par livret, aucune correction avant la fin, pause possible entre deux livrets.
+// L'état est gardé dans le joueur (`examenReel`) à chaque réponse : fermer la page ne perd rien,
+// mais le chrono d'un livret ouvert continue de tourner (comme en classe).
+let reel = null; // { er, examen, timer, ui, sauvTimer }
+const EMOJI_MAT = { fr: '📖', ma: '🔢', hg: '🌍', sc: '🔬' };
+const minutes = (s) => `${Math.round(s / 60)} min`;
+const pts = (x) => (Math.round(x * 10) / 10).toLocaleString('fr-BE');
+const horlogeTxt = (t) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+const nomExamen = (id) => { const e = donnees.examens.find((x) => x.id === id); return e ? `CEB ${e.annee}${e.referentiel === 'tronc_commun' ? ' tronc commun' : e.annee === 2026 ? ' socles' : ''}` : id; };
+
+// Petite boîte de confirmation (renvoie une promesse : true = oui).
+function confirmer(titre, texte, oui = 'Oui', non = 'Annuler') {
+  return new Promise((ok) => {
+    const fond = document.createElement('div');
+    fond.className = 'modal-fond';
+    fond.innerHTML = `<div class="modal carte" role="dialog" aria-modal="true" aria-labelledby="conf-titre">
+      <h2 id="conf-titre">${titre}</h2><p>${texte}</p>
+      <div class="modal-actions"><button class="btn" data-r="0">${non}</button><button class="btn btn-cta" data-r="1">${oui}</button></div></div>`;
+    document.body.append(fond);
+    $$('[data-r]', fond).forEach((b) => b.onclick = () => { fond.remove(); ok(b.dataset.r === '1'); });
+    $('[data-r="1"]', fond).focus();
+  });
+}
+
+function blocReprise() {
+  const e = joueur.examenReel;
+  if (!e) return '';
+  const total = e.total ?? '?';
+  const ouvert = e.debuts?.[e.ordre?.[e.courant]] != null && e.fins?.[e.ordre?.[e.courant]] == null;
+  return `<section class="carte reprise-reel">
+    <h3 class="section-titre">${ouvert ? '⏱️ Ton livret est en cours' : '⏸️ Ton examen réel t\'attend'}</h3>
+    <p>${esc(nomExamen(e.examenId))} · livret ${Math.min(e.courant + 1, total)} sur ${total}${ouvert ? ' · le chrono tourne !' : ''}</p>
+    <div class="actions"><button class="btn btn-cta" id="reprendre-reel">Reprendre ▶</button><button class="btn" id="abandon-reel">Abandonner</button></div>
+  </section>`;
+}
+function brancherReprise(el) {
+  $('#reprendre-reel', el)?.addEventListener('click', reprendreExamenReel);
+  $('#abandon-reel', el)?.addEventListener('click', async () => {
+    if (!await confirmer('Abandonner l\'examen ?', 'Tes réponses seront effacées et l\'examen ne sera pas corrigé.', 'Abandonner', 'Garder')) return;
+    joueur = store.modifier((j) => { delete j.examenReel; });
+    afficherAccueil();
+  });
+}
+
+function sauverReel() {
+  clearTimeout(reel.sauvTimer); reel.sauvTimer = null;
+  const etat = { ...reel.er.toJSON(), total: reel.er.livrets.length, ordre: reel.er.livrets.map((l) => l.n) };
+  joueur = store.modifier((j) => { j.examenReel = etat; });
+}
+const sauverBientot = () => { clearTimeout(reel.sauvTimer); reel.sauvTimer = setTimeout(sauverReel, 800); };
+
+// Temps passé dans un livret fermé : compté le jour même pour l'espace parents.
+function compterLivret(l) {
+  const er = reel.er;
+  const s = Math.max(0, Math.floor(((er.fins[l.n] ?? 0) - (er.debuts[l.n] ?? 0)) / 1000));
+  joueur = store.modifier((j) => { const jr = (j.jours[store.aujourdhui()] ??= jourDe(j)); jr.secondes = (jr.secondes ?? 0) + s; });
+}
+
+async function lancerExamenReel(id) {
+  if (joueur.examenReel) {
+    const meme = joueur.examenReel.examenId === id;
+    if (!await confirmer(meme ? 'Recommencer cet examen ?' : 'Un examen est déjà en cours',
+      `Tu as un examen réel en cours (${esc(nomExamen(joueur.examenReel.examenId))}). Si tu en commences un nouveau, il sera effacé.`,
+      'Commencer le nouveau', 'Garder l\'ancien')) return afficherAccueil();
+  }
+  const examen = await examenCharge(id);
+  reel = { er: new ExamenReel(examen), examen };
+  sauverReel();
+  afficherEntracte();
+}
+
+async function reprendreExamenReel() {
+  const e = joueur.examenReel;
+  try {
+    const examen = await examenCharge(e.examenId);
+    reel = { er: ExamenReel.depuis(examen, e), examen };
+  } catch {
+    joueur = store.modifier((j) => { delete j.examenReel; });
+    toast('Cet examen ne peut pas être repris. Recommence-le depuis l\'accueil.');
+    return afficherAccueil();
+  }
+  // Un livret dont le temps s'est écoulé pendant l'absence est fermé à la reprise.
+  const fermes = reel.er.livrets.filter((l) => reel.er.fins[l.n] != null && e.fins?.[l.n] == null);
+  fermes.forEach(compterLivret);
+  sauverReel();
+  if (reel.er.livretOuvert()) return afficherLivret();
+  afficherEntracte(fermes.length ? { tempsEcoule: fermes.at(-1) } : {});
+}
+
+// Écran entre deux livrets (et avant le premier).
+function afficherEntracte({ rendu = null, tempsEcoule = null } = {}) {
+  clearInterval(reel.timer);
+  const er = reel.er;
+  if (er.estTermine()) return finirExamenReel();
+  const l = er.livret;
+  const fini = rendu ?? tempsEcoule;
+  const ligne = (x, i) => {
+    const etat = i < er.courant ? 'fait' : i === er.courant ? 'suivant' : 'apres';
+    const info = etat === 'fait' ? `${er.nbRepondues(x)} / ${x.questions.length} réponses` : `${x.questions.length} questions · ${minutes(x.dureeSecondes)}`;
+    return `<li class="${etat}"><span class="e">${etat === 'fait' ? '✅' : etat === 'suivant' ? '▶️' : EMOJI_MAT[x.matiere] ?? '📄'}</span><div><b>Livret ${x.n} · ${esc(x.titre)}</b><small>${info}</small></div></li>`;
+  };
+  $('#ecran-quiz').innerHTML = `<div class="quiz entracte">
+    <div class="quiz-haut"><button class="fermer" id="quitter" aria-label="Revenir à l'accueil">✕</button><h1>🎯 ${esc(nomExamen(reel.examen.id))}</h1></div>
+    ${tempsEcoule ? `<section class="carte annonce temps"><b>⏰ Temps écoulé pour le livret ${tempsEcoule.n}</b><p>Comme au CEB, le livret est ramassé. Tes réponses sont gardées.</p></section>`
+      : rendu ? `<section class="carte annonce"><b>✅ Livret ${rendu.n} rendu</b><p>Bravo ! Tu peux souffler un peu avant le suivant.</p></section>` : ''}
+    <section class="carte">
+      <small class="sur">${fini ? 'Livret suivant' : 'Premier livret'}</small>
+      <h2>${EMOJI_MAT[l.matiere] ?? '📄'} Livret ${l.n} · ${esc(l.titre)}</h2>
+      <p class="infos-livret"><span>📝 ${l.questions.length} questions</span><span>⏱️ ${minutes(l.dureeSecondes)}</span></p>
+      ${l.part < 1 ? `<p class="mute">Au CEB, ce livret dure ${l.dureeOfficielle} min. Ici, les questions à faire sur papier sont retirées, donc tu as ${minutes(l.dureeSecondes)}.</p>` : ''}
+      <ul class="regles">
+        <li>Le chrono démarre quand tu ouvres le livret et ne s'arrête plus.</li>
+        <li>Pas de correction maintenant : tu verras tout à la fin de l'examen.</li>
+        <li>Tu peux revenir sur tes réponses tant que le livret est ouvert.</li>
+      </ul>
+    </section>
+    <section class="carte"><h3 class="section-titre">🗂️ Tes livrets</h3><ol class="suivi-livrets">${er.livrets.map(ligne).join('')}</ol></section>
+    <div class="actions">
+      <button class="btn btn-cta" id="ouvrir-livret">Ouvrir le livret ${l.n} ⏱️</button>
+      <button class="btn" id="pause-reel">⏸️ Reprendre plus tard</button>
+    </div>
+  </div>`;
+  montrer('ecran-quiz');
+  const auRevoir = () => { sauverReel(); toast('Ton examen est gardé : reprends-le depuis l\'accueil.'); afficherAccueil(); };
+  $('#quitter').onclick = auRevoir;
+  $('#pause-reel').onclick = auRevoir;
+  $('#ouvrir-livret').onclick = () => {
+    if (etatTemps(joueur, store.reglagesParents()).atteint) return afficherPause();
+    er.ouvrirLivret();
+    sauverReel();
+    afficherLivret();
+  };
+}
+
+// Livret en cours : questions, navigation libre, chrono.
+function afficherLivret() {
+  const er = reel.er;
+  const l = er.livret;
+  $('#ecran-quiz').innerHTML = `
+    <div class="quiz livret-reel">
+      <div class="quiz-haut">
+        <button class="fermer" id="quitter" aria-label="Quitter le livret">✕</button>
+        <div class="barre"><i id="r-prog"></i></div>
+        <span class="chrono-reel" id="r-chrono" role="timer"></span>
+      </div>
+      <p class="origine-livret">Livret ${l.n} · ${esc(l.titre)}</p>
+      <nav class="nav-q" id="r-nav" aria-label="Questions du livret">${l.questions.map((_, i) => `<button data-i="${i}" aria-label="Question ${i + 1}">${i + 1}</button>`).join('')}</nav>
+      <section class="question" id="q-zone"></section>
+    </div>
+    <div class="pied-quiz" id="pied"><div class="in">
+      <button class="btn" id="r-prec">← Précédente</button>
+      <button class="btn btn-cta" id="r-suiv">Suivante →</button>
+    </div></div>`;
+  montrer('ecran-quiz');
+  $$('#r-nav button').forEach((b) => b.onclick = () => allerQuestion(+b.dataset.i));
+  $('#r-prec').onclick = () => allerQuestion(er.position - 1);
+  $('#r-suiv').onclick = () => (er.position >= l.questions.length - 1 ? rendreLivretReel() : allerQuestion(er.position + 1));
+  $('#quitter').onclick = async () => {
+    if (!await confirmer('Quitter le livret ?', 'Tes réponses sont gardées, mais <b>le chrono continue de tourner</b>, comme en classe. Reviens vite le terminer depuis l\'accueil.', 'Quitter', 'Rester')) return;
+    sauverReel(); clearInterval(reel.timer); afficherAccueil();
+  };
+  clearInterval(reel.timer);
+  reel.timer = setInterval(tickReel, 500);
+  tickReel();
+  allerQuestion(er.position);
+}
+
+function tickReel() {
+  const er = reel.er;
+  const l = er.livret;
+  if (er.fermerSiTempsEcoule()) { compterLivret(l); sauverReel(); return afficherEntracte({ tempsEcoule: l }); }
+  const t = er.tempsRestant();
+  const c = $('#r-chrono');
+  if (!c) return;
+  c.textContent = `⏱️ ${horlogeTxt(t)}`;
+  c.classList.toggle('urgent', t <= 60);
+  c.setAttribute('aria-label', `Temps restant : ${Math.ceil(t / 60)} minute${t > 60 ? 's' : ''}`);
+}
+
+function majNavReel() {
+  const er = reel.er;
+  const l = er.livret;
+  $$('#r-nav button').forEach((b, i) => {
+    b.classList.toggle('ok', er.aRepondu(l.questions[i]));
+    b.classList.toggle('cur', i === er.position);
+    b.toggleAttribute('aria-current', i === er.position);
+  });
+  $('#r-prog').style.width = `${Math.round((er.nbRepondues() / l.questions.length) * 100)}%`;
+  $('#r-prec').disabled = er.position === 0;
+  $('#r-suiv').textContent = er.position >= l.questions.length - 1 ? 'Rendre le livret ✔' : 'Suivante →';
+}
+
+function allerQuestion(i) {
+  const er = reel.er;
+  if (reel.sauvTimer) sauverReel();
+  const q = er.aller(i);
+  if (!q) return tickReel();
+  const docs = (q.documents ?? []).map((id) => reel.examen.documents?.find((d) => d.id === id)).filter(Boolean);
+  $('#q-zone').innerHTML = `
+    <p class="origine">Question ${esc(q.numero)}</p>
+    <h2>${esc(q.enonce)}</h2>
+    ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
+    ${docs.map((d, k) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${k === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
+      <figure class="doc" id="doc-${d.id}" ${k === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page}</figcaption></figure>`).join('')}
+    <div id="q-saisie">${rendreSaisie(q).replace('puis compare-la avec la réponse modèle.', 'tu la compareras avec la réponse modèle à la fin.')}</div>`;
+  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  let ui = null; // reste nul pendant la remise des réponses déjà données
+  const noter = () => { if (!ui) return; if (er.noter(q.id, ui.lire())) { sauverBientot(); majNavReel(); } else tickReel(); };
+  const branche = brancher($('#q-saisie'), q, { onPret: noter, onValider: () => $('#r-suiv').click() });
+  branche.restaurer(er.reponses[q.id]);
+  ui = branche;
+  majNavReel();
+}
+
+async function rendreLivretReel() {
+  const er = reel.er;
+  const l = er.livret;
+  if (reel.sauvTimer) sauverReel();
+  const reste = l.questions.length - er.nbRepondues();
+  if (!await confirmer(`Rendre le livret ${l.n} ?`,
+    `${reste ? `Il te reste <b>${reste} question${reste > 1 ? 's' : ''} sans réponse</b>. ` : 'Tu as répondu à toutes les questions. '}Une fois rendu, tu ne pourras plus le modifier.`,
+    'Rendre le livret', 'Continuer')) return;
+  if (!er.livretOuvert()) return tickReel();
+  er.rendreLivret();
+  compterLivret(l);
+  sauverReel();
+  afficherEntracte({ rendu: l });
+}
+
+function finirExamenReel() {
+  clearInterval(reel.timer);
+  const er = reel.er;
+  const resume = er.resume();
+  let res = null;
+  joueur = store.modifier((j) => {
+    // Statistiques sur les seules questions répondues. Le temps a déjà été compté livret par livret
+    // (le bon jour) : on ne le recompte pas.
+    const avant = j.sessions.length;
+    res = enregistrerSession(j, { ...er.resumeStats(), dureeSecondes: 0 }, 'examen');
+    const s = j.sessions.length > avant ? j.sessions.at(-1) : null; // rien d'enregistré si aucune réponse
+    if (s?.reel) Object.assign(s, { dureeSecondes: resume.dureeSecondes, questions: resume.questions, bonnes: resume.bonnes, details: undefined });
+    delete j.examenReel;
+  });
+  afficherBilanReel(resume, res);
+}
+
+function afficherBilanReel(resume, res) {
+  const er = reel.er;
+  const pct = resume.pourcentage;
+  const [emoji, titre] = pct >= 80 ? ['🏆', 'Examen brillant !'] : pct >= 60 ? ['🎓', 'Examen réussi !'] : pct >= 50 ? ['💪', 'Pas loin du but !'] : ['🌱', 'Tu sais maintenant quoi travailler'];
+  const mats = ['fr', 'ma', 'hg', 'sc'].filter((m) => resume.parMatiere[m]?.max);
+  const barre = (p) => `<div class="barre seuil"><i style="width:${p}%"></i><span class="repere" style="left:${CEB.seuilMatiere}%"></span></div>`;
+  const absents = (reel.examen.livrets ?? []).filter((l) => !er.livrets.some((x) => x.n === l.n)).map((l) => l.titre);
+  const recompenses = [
+    ...(res.niveauApres > res.niveauAvant ? [{ e: '⚡', t: `Niveau ${res.niveauApres} atteint !` }] : []),
+    ...res.nouveauxBadges.map((b) => ({ e: b.e, t: `Nouveau badge : ${b.nom}` })),
+  ];
+  $('#ecran-resultat').innerHTML = `<div class="resultat bilan-reel">
+    <div class="grand-emoji">${emoji}</div>
+    <h1>${titre}</h1>
+    <div><div class="score-grand">${pct} %</div><p class="mute" style="margin:4px 0 0">${pts(resume.points)} points sur ${resume.max} · ${resume.repondues} réponses sur ${resume.questions} · ${minutes(resume.dureeSecondes)}</p></div>
+    <div class="gains">
+      <div><b>+${res.xpSession + res.xpDefis}</b><small>XP</small></div>
+      <div><b>+${res.gemmes}</b><small>💎 gemmes</small></div>
+      <div><b>${resume.bonnes}</b><small>✔ bonnes</small></div>
+    </div>
+    ${recompenses.length ? `<div class="recompenses">${recompenses.map((r) => `<div class="recompense"><span class="e">${r.e}</span><div><b>${esc(r.t)}</b></div></div>`).join('')}</div>` : ''}
+    <section class="carte par-domaine"><h3 style="margin-bottom:4px">Par matière</h3>
+      <p class="mute" style="margin:0 0 12px;font-size:13px">Repère du CEB : au moins ${CEB.seuilMatiere} % dans chaque matière (le trait) et ${CEB.seuilMoyenne} % en moyenne. C'est indicatif : à l'écran, il manque les livrets sur papier.</p>
+      ${mats.map((m) => { const v = resume.parMatiere[m]; return `
+      <div class="ligne"><span>${EMOJI_MAT[m]} ${NOM_MAT[m]}</span><b>${v.pourcentage} % ${v.pourcentage >= CEB.seuilMatiere ? '✔' : '⚠️'}</b>${barre(v.pourcentage)}</div>`; }).join('')}
+    </section>
+    <section class="carte par-domaine"><h3 style="margin-bottom:12px">Par livret</h3>
+      ${er.livrets.map((l) => { const v = resume.parLivret[l.n]; return `
+      <div class="ligne"><span>Livret ${l.n} · ${esc(l.titre)}</span><b>${v?.max ? `${v.pourcentage} %` : '—'}</b><div class="barre"><i style="width:${v?.pourcentage ?? 0}%"></i></div></div>`; }).join('')}
+      ${absents.length ? `<p class="mute" style="font-size:13px;margin:4px 0 0">Non proposés à l'écran : ${absents.map(esc).join(', ')}. Pour ceux-là, <a href="imprimer.html">imprime un examen 🖨️</a>.</p>` : ''}
+      ${er.livrets.some((l) => l.dureeEstimee) ? '<p class="mute" style="font-size:12px;margin:6px 0 0">Durées des livrets établies d\'après le CEB 2026, à vérifier pour les autres années.</p>' : ''}
+    </section>
+    <div class="actions">
+      <button class="btn btn-cta" id="voir-revue">🔍 Revoir mes réponses</button>
+      <button class="btn" id="accueil">🏠 Accueil</button>
+    </div>
+  </div>`;
+  montrer('ecran-resultat');
+  if (pct >= 60) setTimeout(() => confettis(), 200);
+  $('#accueil').onclick = afficherAccueil;
+  $('#voir-revue').onclick = () => afficherRevueReel(resume, res, true);
+}
+
+// Revue question par question, après la correction.
+function afficherRevueReel(resume, res, erreursSeules) {
+  const lignes = reel.er.correction();
+  const garder = (r) => !erreursSeules || r.correct !== true;
+  const nbErreurs = lignes.filter((r) => r.correct === false).length;
+  const carte = (r) => {
+    const q = r.q;
+    const etat = r.correct === true ? 'juste' : r.correct === false ? (r.score > 0 ? 'partiel' : 'faux') : 'ouvert';
+    const badge = { juste: '✔ Juste', partiel: `◐ En partie (${pts(r.score)}/${r.max})`, faux: r.repondu ? '✘ Faux' : '✘ Pas de réponse', ouvert: '✍️ À comparer' }[etat];
+    const ta = reponseEleveLisible(q, r.reponse);
+    const fiche = donnees.fiches[q.fiche];
+    return `<article class="carte revue ${etat}">
+      <p class="origine">Livret ${r.livret} · question ${esc(q.numero)} <span class="badge-revue">${badge}</span></p>
+      <h3>${esc(q.enonce)}</h3>
+      <p><b>Ta réponse :</b> <span class="pre">${ta == null ? '<i>aucune</i>' : esc(ta)}</span></p>
+      ${etat !== 'juste' ? `<p class="bonne"><b>${q.type === 'ouverte' ? 'Réponse modèle' : 'Bonne réponse'} :</b> <span class="pre">${esc(bonneReponseLisible(q))}</span></p>` : ''}
+      ${q.explication && etat !== 'juste' ? `<p>💡 ${esc(q.explication)}</p>` : ''}
+      ${fiche && etat !== 'juste' ? `<button class="btn petit btn-fiche" data-f="${esc(q.fiche)}">📘 Revoir la règle : ${esc(fiche.titre)}</button>` : ''}
+    </article>`;
+  };
+  const parLivret = reel.er.livrets.map((l) => {
+    const items = lignes.filter((r) => r.livret === l.n && garder(r));
+    return items.length ? `<h2 class="titre-livret">Livret ${l.n} · ${esc(l.titre)}</h2>${items.map(carte).join('')}` : '';
+  }).join('');
+  $('#ecran-resultat').innerHTML = `<div class="revue-reel">
+    <div class="quiz-haut"><button class="fermer" id="retour-bilan" aria-label="Retour au bilan">←</button><h1>🔍 Mes réponses</h1></div>
+    <div class="options-examen" role="radiogroup" aria-label="Questions affichées">
+      <button class="puce${erreursSeules ? ' sel' : ''}" role="radio" aria-checked="${erreursSeules}" data-filtre="1">À revoir (${nbErreurs + lignes.filter((r) => r.correct === null).length})</button>
+      <button class="puce${erreursSeules ? '' : ' sel'}" role="radio" aria-checked="${!erreursSeules}" data-filtre="0">Toutes (${lignes.length})</button>
+    </div>
+    ${parLivret || '<p class="carte">Aucune erreur : tout est juste ! 🏆</p>'}
+    <div class="actions"><button class="btn" id="retour-bilan2">← Retour au bilan</button><button class="btn btn-cta" id="accueil">🏠 Accueil</button></div>
+  </div>`;
+  montrer('ecran-resultat');
+  $$('[data-filtre]').forEach((b) => b.onclick = () => afficherRevueReel(resume, res, b.dataset.filtre === '1'));
+  $$('.btn-fiche').forEach((b) => b.onclick = () => ouvrirFiche(b.dataset.f));
+  $('#retour-bilan').onclick = $('#retour-bilan2').onclick = () => afficherBilanReel(resume, res);
+  $('#accueil').onclick = afficherAccueil;
 }
 
 // ============================================================ Coach

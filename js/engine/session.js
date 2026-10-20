@@ -250,3 +250,20 @@ export function bonneReponseLisible(q) {
     default: return '';
   }
 }
+
+// Réponse de l'élève en clair (revue de l'examen réel). `null` = pas de réponse.
+export function reponseEleveLisible(q, r) {
+  const vide = r == null || r === '' || (Array.isArray(r) && r.every((x) => x == null || x === ''));
+  if (vide) return null;
+  const tiret = (x) => (x == null || x === '' ? '—' : x);
+  switch (q.type) {
+    case 'qcm': return tiret(q.choix?.[r]);
+    case 'qcm_multi': return [].concat(r).map((i) => q.choix?.[i]).join(' ; ');
+    case 'vrai_faux': return r ? 'Vrai' : 'Faux';
+    case 'trous': return [].concat(r).map(tiret).join(' / ');
+    case 'grille': return q.lignes.map((l, i) => `${l} → ${tiret(q.colonnes[[].concat(r)[i]])}`).join('\n');
+    case 'ordre': return [].concat(r).map((i) => q.elements[i]).join(' → ');
+    case 'association': return [].concat(r).map(([g, d]) => `${q.gauche[g]} ↔ ${q.droite[d]}`).join('\n');
+    default: return String(r);
+  }
+}

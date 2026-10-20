@@ -91,6 +91,22 @@ export function brancher(zone, q, { onPret, onValider }) {
         default: return null;
       }
     },
+    // Remet une réponse déjà donnée (examen réel : l'enfant revient sur une question du livret).
+    restaurer(rep) {
+      if (rep == null) return;
+      const clic = (sel) => zone.querySelector(sel)?.click();
+      const remplir = (el, v) => { if (!el) return; el.value = v ?? ''; el.dispatchEvent(new Event('input')); };
+      switch (q.type) {
+        case 'qcm': clic(`.rep[data-i="${rep}"]`); break;
+        case 'vrai_faux': clic(`.rep[data-v="${rep ? 1 : 0}"]`); break;
+        case 'qcm_multi': case 'ordre': [].concat(rep).forEach((i) => clic(`.rep[data-i="${i}"]`)); break;
+        case 'grille': [].concat(rep).forEach((c, l) => { if (c != null) clic(`.opt[data-l="${l}"][data-c="${c}"]`); }); break;
+        case 'numerique': case 'texte_court': case 'ouverte': remplir(zone.querySelector('#saisie'), rep); break;
+        case 'trous': [...zone.querySelectorAll('.trou')].forEach((x, k) => remplir(x, [].concat(rep)[k])); break;
+        case 'association': for (const [g, d] of [].concat(rep)) remplir(zone.querySelector(`select[data-i="${g}"]`), String(d)); break;
+        default: break;
+      }
+    },
     // Après correction : colore les bonnes / mauvaises réponses et bloque la saisie.
     montrerCorrection() {
       zone.querySelectorAll('button, input, select, textarea').forEach((el) => { el.disabled = true; });

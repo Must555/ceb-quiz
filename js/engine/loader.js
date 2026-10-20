@@ -49,10 +49,15 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
 
   verifierIdsUniques([...banque, ...modeles]);
 
+  // Durées officielles des livrets (mode « Examen réel ») : chargées une fois, facultatives.
+  let durees = null;
+  const chargerDurees = () => (durees ??= fetchJson(base + 'examens/durees-livrets.json').catch(() => null));
+
   const chargerExamen = async (id) => {
     const meta = indexExamens.examens.find((e) => e.id === id);
     if (!meta) throw new Error(`Examen inconnu : ${id}`);
     const ex = await fetchJson(base + meta.fichier);
+    appliquerDurees(ex, await chargerDurees());
     const matiereDuLivret = Object.fromEntries((ex.livrets ?? []).map((l) => [l.n, l.matiere]));
     ex.questions = ex.questions.map((q) => ({
       source: 'examen', referentiel: ex.referentiel, annee: ex.annee,
@@ -89,6 +94,19 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
     chargerExamen,
     questionsExamens,
   };
+}
+
+// Donne à chaque livret sa durée officielle (minutes) : `duree` du fichier d'examen s'il existe,
+// sinon la première règle de durees-livrets.json dont le motif correspond à l'intitulé.
+export function appliquerDurees(ex, durees) {
+  for (const l of ex.livrets ?? []) {
+    if (l.duree != null) { l.dureeSource ??= 'examen'; continue; }
+    if (!durees) continue;
+    const r = (durees.regles ?? []).find((x) => new RegExp(x.motif, 'u').test(l.titre ?? ''));
+    l.duree = r?.minutes ?? durees.defaut ?? null;
+    l.dureeSource = r ? (durees.statut === 'a_verifier' ? 'estimee' : 'officielle') : 'defaut';
+  }
+  return ex;
 }
 
 function verifierIdsUniques(items) {

@@ -1,0 +1,18 @@
+{
+ "remarque": "Durée officielle de chaque livret (minutes), utilisée par le mode « Examen réel ». Valeurs relevées dans la circulaire d'organisation du CEB 2026 (point 4.2, « Planning de l'épreuve ») et appliquées à toutes les années selon l'intitulé du livret (décision du 20/10/2026). L'extraction du tableau était peu fiable : À VÉRIFIER dans les circulaires de chaque année. Pour corriger une année précise, ajouter \"duree\" (minutes) au livret dans le fichier de l'examen : il prime sur ces règles. La première règle dont le motif correspond à l'intitulé s'applique.",
+ "source": "Circulaire FWB 2026 (gallilex 53181) — à vérifier",
+ "statut": "a_verifier",
+ "regles": [
+  { "motif": "^Écouter", "minutes": 40 },
+  { "motif": "^Écrire", "minutes": 65 },
+  { "motif": "^Lire", "minutes": 65 },
+  { "motif": "Géométrie|Solides et figures", "minutes": 65 },
+  { "motif": "Grandeurs", "minutes": 75 },
+  { "motif": "historique et géographique", "minutes": 75 },
+  { "motif": "scientifique", "minutes": 75 },
+  { "motif": "Arithmétique 1|Nombres 1|Nombres et opérations 1", "minutes": 40 },
+  { "motif": "Arithmétique 2|Nombres 2|Nombres et opérations 2", "minutes": 50 },
+  { "motif": "^Nombres et opérations$", "minutes": 90 }
+ ],
+ "defaut": 50
+}
