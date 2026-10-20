@@ -13,7 +13,7 @@
    aucune écriture cursive. Pensée pour les enfants qui se fatiguent vite à lire. */
 [data-theme="lecture"] {
   --manuscrit: var(--texte);
-  --fond:#f8f3e6; --deco: none;
+  --fond:#f8f3e6; --deco: radial-gradient(120% 80% at 50% 0%, #fdfaf2 0%, rgba(253,250,242,0) 65%), linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(120,95,40,.05) 100%);
   --panel:#fffcf4; --panel2:#f3ecdb; --ligne:#e0d6bf; --txt:#1f2430; --mute:#545a66;
   --accent:#2b5797; --accent-txt:#fff; --prog:#2b5797; --or:#8a5d00;
   --hero:#fffcf4; --hero-txt:#1f2430; --hero-accent:#2b5797;
@@ -26,10 +26,11 @@
 /* Cahier : page Seyès (lignes bleues, marge rouge), stylo bleu et surligneur jaune. */
 [data-theme="cahier"] {
   --fond:#fdfdfa; --deco:
-    linear-gradient(90deg, transparent 64px, rgba(214,72,72,.55) 64px, rgba(214,72,72,.55) 66px, transparent 66px),
-    repeating-linear-gradient(180deg, transparent 0 31px, #c3d0ea 31px 32px),
-    repeating-linear-gradient(180deg, transparent 0 7px, #e7edf8 7px 8px),
-    repeating-linear-gradient(90deg, transparent 0 31px, #edf1f9 31px 32px);
+    radial-gradient(130% 70% at 50% 0%, rgba(255,255,255,.75), rgba(255,255,255,0) 70%),
+    linear-gradient(90deg, transparent 64px, rgba(214,72,72,.38) 64px, rgba(214,72,72,.38) 65.5px, transparent 65.5px),
+    repeating-linear-gradient(180deg, transparent 0 31px, #ccd8ee 31px 32px),
+    repeating-linear-gradient(180deg, transparent 0 7px, #eef2fa 7px 8px),
+    repeating-linear-gradient(90deg, transparent 0 31px, rgba(237,241,249,.55) 31px 32px);
   --panel:#ffffff; --panel2:#f4f7fc; --ligne:#cbd6ec; --txt:#1c2333; --mute:#566078;
   --accent:#1c3faa; --accent-txt:#fff; --prog:#1c3faa; --or:#9a5b00;
   --hero:#ffffff; --hero-txt:#1c2333; --hero-accent:#1c3faa;
@@ -42,7 +43,7 @@
 /* Tableau : tableau vert de la classe, craie blanche et craie jaune. */
 [data-theme="tableau"] {
   --juste: #8bd88f; --faux: #ffb3aa;
-  --fond:#1e3a2f; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E"), radial-gradient(120% 90% at 50% 30%, rgba(255,255,255,.05), transparent 60%), radial-gradient(140% 100% at 50% 50%, transparent 60%, rgba(0,0,0,.28) 100%);
+  --fond:#1e3a2f; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E"), radial-gradient(120% 90% at 50% 30%, rgba(255,255,255,.05), transparent 60%), radial-gradient(140% 100% at 50% 50%, transparent 62%, rgba(0,0,0,.18) 100%);
   --panel:rgba(255,255,255,.045); --panel2:rgba(255,255,255,.08); --ligne:rgba(240,237,226,.22); --txt:#f2efe4; --mute:#cbd8ce;
   --accent:#f3d36b; --accent-txt:#1e3a2f; --prog:#f3d36b; --or:#f3d36b;
   --hero:rgba(0,0,0,.16); --hero-txt:#f2efe4; --hero-accent:#f3d36b;
@@ -56,7 +57,7 @@
 /* ---------- Base ---------- */
 * { box-sizing:border-box; }
 html, body { margin:0; overflow-x:clip; }
-body { background:var(--deco), var(--fond); color:var(--txt); font-family:var(--texte); min-height:100vh; -webkit-tap-highlight-color:transparent; }
+body { background:var(--deco), var(--fond); background-attachment:fixed; color:var(--txt); font-family:var(--texte); min-height:100vh; -webkit-tap-highlight-color:transparent; }
 h1, h2, h3 { font-family:var(--titre); margin:0; line-height:1.12; letter-spacing:-.01em; }
 button { font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
 button:disabled { cursor:default; }
@@ -500,7 +501,7 @@ a.btn { text-decoration:none; }
 [data-theme="tableau"] .hero { border:2px solid rgba(242,239,228,.35); }
 [data-theme="tableau"] .collection div.obtenu, [data-theme="cahier"] .collection div.obtenu, [data-theme="lecture"] .collection div.obtenu { background:linear-gradient(135deg,#f3d36b,#e3a43c); }
 .niv-badge { color:var(--accent-txt); border-color:rgba(255,255,255,.55); }
-[data-theme="cahier"] .side { background:#fdfdfa; border-right:2px solid rgba(214,72,72,.55); }
+[data-theme="cahier"] .side { background:#fdfdfa; border-right:2px solid rgba(214,72,72,.38); }
 [data-theme="tableau"] .side { background:rgba(0,0,0,.12); }
 [data-theme="tableau"] :is(.rep.juste, .rep.faux) .lettre { color:#14261f; }
 /* Lecture : texte plus grand, interlignes et espacement des mots plus larges, pas d'effets. */
