@@ -648,3 +648,8 @@ a.btn { text-decoration:none; }
   .cartes-jeu .recto h2 { font-size:24px; }
   .navbas button { font-size:10.5px; }
 }
+
+/* ---------- Signaler une erreur ---------- */
+.lien-signaler { font-size:13px; color:var(--mute); font-weight:700; margin-top:6px; padding:4px 0; background:none; border:0; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+.lien-signaler:hover { color:var(--txt); }
+.retour .lien-signaler { display:inline-block; }

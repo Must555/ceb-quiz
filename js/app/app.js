@@ -6,6 +6,7 @@ import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
 import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, sons, ouvrirZoom } from './confort.js';
 import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
+import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -516,13 +517,16 @@ function valider(passer) {
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const titre = ok ? `${pick(BRAVO)} ${r.serie >= 3 ? `🔥 ${r.serie} d'affilée` : '✅'}` : passer ? 'Voici la réponse 👇' : ouverte ? '✍️ Compare avec la réponse modèle' : partielle ? `En partie juste (${r.detail})` : pick(OUPS);
   const montrerBonne = !ok && !['qcm', 'vrai_faux', 'qcm_multi', 'grille'].includes(q.type);
+  const donnee = passer ? null : reponseEleveLisible(q, partie.ui.lire());
   $('#retour').innerHTML = `${r.xpGagne ? `<span class="xp-gagne">+${r.xpGagne} XP</span>` : ''}<b>${titre}</b>
     ${r.remarque && !ok && !passer && !ouverte ? `<p>${esc(r.remarque)}</p>` : ''}
     ${montrerBonne ? `<p class="bonne">${q.type === 'ouverte' ? 'Réponse modèle' : 'Réponse'} : ${esc(r.bonneReponse)}</p>` : ''}
     ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}
-    ${!ok && !ouverte && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}`;
+    ${!ok && !ouverte && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}
+    <button class="lien lien-signaler" id="signaler">⚑ Signaler une erreur</button>`;
   $('#retour').hidden = false;
   $('#voir-regle')?.addEventListener('click', () => ouvrirFiche(q.fiche));
+  $('#signaler').onclick = () => ouvrirSignalement({ q, reponseDonnee: donnee, bonneReponse: r.bonneReponse ?? bonneReponseLisible(q), page: `quiz (${partie.modeJeu})` });
   $('#passer').hidden = true;
   const bv = $('#valider');
   bv.disabled = false;
@@ -586,6 +590,37 @@ function afficherResultat(resume, res) {
     joueur = store.joueurActif();
     lancerPartie();
   };
+}
+
+// ============================================================ Signaler une erreur
+// Ouvre la messagerie avec un message pré-rempli (rien n'est envoyé sans l'enfant ou le parent).
+function ouvrirSignalement(contexte) {
+  const fond = document.createElement('div');
+  fond.className = 'modal-fond';
+  fond.innerHTML = `<div class="modal carte" role="dialog" aria-modal="true" aria-labelledby="sig-titre">
+    <small class="sur">Aide-nous à corriger</small>
+    <h2 id="sig-titre">⚑ Signaler une erreur</h2>
+    <p>Tu penses qu'une réponse, une question ou une fiche est fausse ? Demande à un adulte de t'aider : un e-mail va s'ouvrir, prêt à envoyer à <b>${ADRESSE_SIGNALEMENT}</b>.</p>
+    <label class="etape-titre" for="sig-texte">Qu'est-ce qui ne va pas ?</label>
+    <textarea class="champ" id="sig-texte" rows="3" maxlength="500" placeholder="Ex. : la bonne réponse devrait être 24, car…"></textarea>
+    <p class="mute" style="font-size:13px;margin:8px 0 0">Seuls la question et ton commentaire sont envoyés : jamais ton pseudo ni ta progression.</p>
+    <div class="modal-actions"><button class="btn" data-sig="copier">📋 Copier le message</button><button class="btn" data-sig="annuler">Annuler</button><a class="btn btn-cta" data-sig="envoyer" href="#">✉️ Ouvrir ma messagerie</a></div>
+    <p class="mute" id="sig-info" style="font-size:13px;margin:8px 0 0" aria-live="polite"></p>
+  </div>`;
+  document.body.append(fond);
+  const message = () => messageSignalement({ ...contexte, commentaire: $('#sig-texte', fond).value });
+  const fermer = () => { fond.remove(); document.removeEventListener('keydown', echap); };
+  const echap = (e) => { if (e.key === 'Escape') fermer(); };
+  document.addEventListener('keydown', echap);
+  const envoyer = $('[data-sig="envoyer"]', fond);
+  envoyer.onclick = () => { envoyer.href = lienMailto(message()); setTimeout(() => { $('#sig-info', fond).textContent = 'Si rien ne s\'ouvre, utilise « Copier le message » et colle-le dans un e-mail à ' + ADRESSE_SIGNALEMENT + '.'; }, 800); };
+  $('[data-sig="annuler"]', fond).onclick = fermer;
+  $('[data-sig="copier"]', fond).onclick = async () => {
+    const m = message(); const texte = `À : ${ADRESSE_SIGNALEMENT}\nObjet : ${m.sujet}\n\n${m.corps}`;
+    try { await navigator.clipboard.writeText(texte); $('#sig-info', fond).textContent = `Message copié ✔ Colle-le dans un e-mail à ${ADRESSE_SIGNALEMENT}.`; }
+    catch { $('#sig-texte', fond).insertAdjacentHTML('afterend', `<textarea class="champ" readonly rows="6" style="margin-top:8px;font-size:12px">${esc(texte)}</textarea>`); }
+  };
+  $('#sig-texte', fond).focus();
 }
 
 // ============================================================ Examen réel
@@ -898,6 +933,7 @@ function afficherRevueReel(resume, res, erreursSeules) {
       ${etat !== 'juste' ? `<p class="bonne"><b>${q.type === 'ouverte' ? 'Réponse modèle' : 'Bonne réponse'} :</b> <span class="pre">${esc(bonneReponseLisible(q))}</span></p>` : ''}
       ${q.explication && etat !== 'juste' ? `<p>💡 ${esc(q.explication)}</p>` : ''}
       ${fiche && etat !== 'juste' ? `<button class="btn petit btn-fiche" data-f="${esc(q.fiche)}">📘 Revoir la règle : ${esc(fiche.titre)}</button>` : ''}
+      <p><button class="lien lien-signaler" data-signaler="${esc(q.id)}">⚑ Signaler une erreur</button></p>
     </article>`;
   };
   const parLivret = reel.er.livrets.map((l) => {
@@ -916,6 +952,10 @@ function afficherRevueReel(resume, res, erreursSeules) {
   montrer('ecran-resultat');
   $$('[data-filtre]').forEach((b) => b.onclick = () => afficherRevueReel(resume, res, b.dataset.filtre === '1'));
   $$('.btn-fiche').forEach((b) => b.onclick = () => ouvrirFiche(b.dataset.f));
+  $$('[data-signaler]').forEach((b) => b.onclick = () => {
+    const r = lignes.find((x) => x.q.id === b.dataset.signaler);
+    ouvrirSignalement({ q: r.q, reponseDonnee: reponseEleveLisible(r.q, r.reponse) ?? '(aucune)', bonneReponse: bonneReponseLisible(r.q), page: 'revue de l\'examen réel' });
+  });
   $('#retour-bilan').onclick = $('#retour-bilan2').onclick = () => afficherBilanReel(resume, res);
   $('#accueil').onclick = afficherAccueil;
 }
@@ -1129,6 +1169,7 @@ function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel',
     <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
     <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
     ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
+    <p style="margin:0"><button class="lien lien-signaler" id="fiche-signaler">⚑ Signaler une erreur dans cette fiche</button></p>
     <div class="modal-actions">${confortDe(joueur).voix && voixDisponible() ? '<button class="btn" id="fiche-voix" aria-pressed="false">🔊 Écouter</button>' : ''}${papier ? `<a class="btn" href="imprimer.html?mode=fiche&notions=${encodeURIComponent(id)}">🖨️ Fiche papier</a>` : ''}${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
   </div>`;
   const fermer = () => { taire(); fond.remove(); document.removeEventListener('keydown', echap); };
@@ -1137,6 +1178,7 @@ function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel',
   fond.addEventListener('click', (e) => { if (e.target === fond) fermer(); });
   document.body.append(fond);
   $('#fiche-fermer', fond).onclick = fermer;
+  $('#fiche-signaler', fond).onclick = () => { fermer(); ouvrirSignalement({ fiche: f, page: 'fiche Rappel' }); };
   brancherBoutonVoix($('#fiche-voix', fond), () => [f.titre, ...f.regle, `Exemple : ${f.exemple}`, f.astuce ? `Astuce : ${f.astuce}` : ''].filter(Boolean).join('. '));
   $('#fiche-cta', fond)?.addEventListener('click', () => { fermer(); onCta?.(); });
   ($('#fiche-cta', fond) ?? $('#fiche-fermer', fond)).focus();
@@ -1464,7 +1506,7 @@ function blocComprendre() {
         <li><b>Coach</b> : il repère les notions fragiles, les fait revenir (révision espacée) et propose des missions ciblées.</li>
         <li><b>Papier</b> : examens blancs et fiches ciblées à imprimer, avec corrigé séparé et questions de tracé.</li>
       </ul>
-      <p class="mute">Les réponses des examens officiels ont été établies par l'équipe Mission CEB (les corrigés officiels n'étaient pas disponibles) : en cas de doute, fiez-vous au corrigé de l'école.</p></details>
+      <p class="mute">Les réponses des examens officiels ont été établies par l'équipe Mission CEB (les corrigés officiels n'étaient pas disponibles) : en cas de doute, fiez-vous au corrigé de l'école. Une erreur ? Le lien « ⚑ Signaler une erreur » (après chaque réponse et dans les fiches) prépare un e-mail à <b>${ADRESSE_SIGNALEMENT}</b>.</p></details>
     <p class="mute p-sources">Sources : <a href="https://ligue-enseignement.be/education-enseignement/articles/breves/ceb-ce1d-et-cess-de-juin-2027-les-dates-et-infos-pratiques-des-epreuves" target="_blank" rel="noopener">Ligue de l'Enseignement</a> · <a href="https://exercices-ceb.be/ceb-2027" target="_blank" rel="noopener">exercices-ceb.be</a> · <a href="https://www.bruxelles-j.be/etudier-se-former/enseignement-secondaire/le-ceb-le-certificat-detude-de-base/" target="_blank" rel="noopener">Bruxelles-J</a> · <a href="https://www.enseignement.be" target="_blank" rel="noopener">enseignement.be</a></p>
   </section>`;
 }
