@@ -10,6 +10,7 @@ import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.
 import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
 import { AVATARS, avatarDe, emojiAvatar, imgAvatar } from './avatars.js';
 import { ic } from './icones.js';
+import { observer as illustrerEmojis } from './illustrer.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -53,6 +54,7 @@ let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
 async function demarrer() {
+  illustrerEmojis(); // emojis restants → icônes illustrées, partout où ils s'affichent
   appliquerTheme(store.joueurActif()?.theme ?? 'cahier');
   try {
     donnees = await chargerDonnees({ base: 'data/' });

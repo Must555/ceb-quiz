@@ -703,3 +703,7 @@ a.btn { text-decoration:none; }
 
 /* Tableau : les couleurs juste / faux sont claires (craie) → texte foncé dessus. */
 [data-theme="tableau"] :is(.rep.juste .lettre, .rep.faux .lettre, .puces-etat .chrono.urgent, .chrono-reel.urgent) { color:#14261f; }
+
+/* ---------- Emojis remplacés à l'affichage (js/app/illustrer.js) ---------- */
+.emo { display:inline-block; width:1.2em; height:1.2em; object-fit:contain; vertical-align:-.22em; }
+.pi { display:inline-block; width:1em; height:1em; vertical-align:-.14em; background-color:currentColor; -webkit-mask:var(--pi) center / contain no-repeat; mask:var(--pi) center / contain no-repeat; }

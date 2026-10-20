@@ -12,6 +12,14 @@ import { fileURLToPath } from 'node:url';
 import { chargerDonnees } from '../js/engine/index.js';
 import { exercicesParNotion } from '../js/app/cartes.js';
 import { ADRESSE_SIGNALEMENT } from '../js/app/signaler.js';
+import { FLUENT, PICTOS } from '../js/app/emojis-dispo.js';
+import { readFileSync } from 'node:fs';
+
+// Emoji → icône Fluent 3D (comme dans l'application) ; l'emoji reste en texte de remplacement.
+// Signes d'interface : pictogramme Phosphor intégré (SVG, couleur du texte).
+const picto = (n) => readFileSync(new URL(`assets/ui/pictos/${n}.svg`, RACINE), 'utf8').replace('<svg ', '<svg class="pi" aria-hidden="true" ');
+const emo = (e) => (PICTOS[e] ? picto(PICTOS[e]) : FLUENT[e] ? `<img class="emo" src="../assets/emoji/${FLUENT[e]}.webp" alt="${e}" width="36" height="36">` : e);
+const icMat = (id) => `<img class="ic" src="../assets/ui/${id}.webp" alt="" width="40" height="40">`;
 
 const RACINE = new URL('../', import.meta.url);
 const SITE = 'https://missionceb.be/';
@@ -61,7 +69,7 @@ function tete({ titre, description, chemin, type = 'article', jsonld = null }) {
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>\n` : ''}</head>
 <body>
 <header class="haut"><a class="marque" href="../"><img src="../assets/icones/logo-128.png" width="44" height="44" alt=""><span>Mission CEB<small>Réussis ton CEB en jouant</small></span></a>
-<a class="btn-jouer" href="../">Jouer ▶</a></header>
+<a class="btn-jouer" href="../">Jouer ${picto('play')}</a></header>
 <main>`;
 }
 
@@ -89,27 +97,27 @@ function pageFiche(f, voisines, nbEx) {
   return `${tete({ titre, description, chemin: `fiches/${f.id}.html`, jsonld })}
 <nav class="fil" aria-label="Fil d'Ariane"><a href="./">Fiches</a> › <a href="./#${f.matiere}">${m.nom}</a> › <span>${esc(f.titre)}</span></nav>
 <article class="fiche">
-<p class="sur">${m.e} Fiche de révision · ${m.nom} · CEB 6e primaire</p>
-<h1><span aria-hidden="true">${f.e}</span> ${esc(f.titre)}</h1>
+<p class="sur">${icMat(f.matiere)} Fiche de révision · ${m.nom} · CEB 6e primaire</p>
+<h1>${emo(f.e)} ${esc(f.titre)}</h1>
 <h2>La règle</h2>
 <ul class="regle">
 ${f.regle.map((r) => `<li>${esc(r)}</li>`).join('\n')}
 </ul>
 <div class="encart"><h2>Exemple</h2><p>${esc(f.exemple)}</p></div>
-${f.astuce ? `<div class="encart astuce"><h2>💡 Astuce</h2><p>${esc(f.astuce)}</p></div>` : ''}
+${f.astuce ? `<div class="encart astuce"><h2><img class="ic" src="../assets/ui/astuce.webp" alt="" width="40" height="40"> Astuce</h2><p>${esc(f.astuce)}</p></div>` : ''}
 </article>
 <section class="agir">
 <h2>Et maintenant, entraîne-toi !</h2>
 <div class="boutons">
-${nbEx ? `<a class="btn btn-cta" href="../?fiche=${encodeURIComponent(f.id)}">🎯 S'entraîner sur cette notion</a>` : `<a class="btn btn-cta" href="../">🎯 S'entraîner au CEB</a>`}
-<a class="btn" href="../imprimer.html?mode=fiche&amp;notions=${encodeURIComponent(f.id)}">🖨️ Fiche d'exercices à imprimer</a>
+${nbEx ? `<a class="btn btn-cta" href="../?fiche=${encodeURIComponent(f.id)}">${emo('🎯')} S'entraîner sur cette notion</a>` : `<a class="btn btn-cta" href="../">${emo('🎯')} S'entraîner au CEB</a>`}
+<a class="btn" href="../imprimer.html?mode=fiche&amp;notions=${encodeURIComponent(f.id)}">${emo('🖨️')} Fiche d'exercices à imprimer</a>
 </div>
 <p class="mute">${nbEx ? 'Des questions toujours nouvelles sur cette notion, corrigées tout de suite, avec la règle en cas d\'erreur.' : 'Questions du CEB et exercices corrigés tout de suite.'} Gratuit, sans compte.</p>
 </section>
 <section class="voisines">
 <h2>Autres fiches de ${m.long}</h2>
 <ul>
-${voisines.map((v) => `<li><a href="${v.id}.html"><span aria-hidden="true">${v.e}</span> ${esc(v.titre)}</a></li>`).join('\n')}
+${voisines.map((v) => `<li><a href="${v.id}.html">${emo(v.e)} ${esc(v.titre)}</a></li>`).join('\n')}
 </ul>
 </section>
 ${pied(signaler)}`;
@@ -119,13 +127,13 @@ function pageIndex(parMatiere, nbFiches) {
   const titre = 'Fiches de révision du CEB : français, maths, histoire-géo, sciences | Mission CEB';
   const description = `Les ${nbFiches} règles à connaître pour le CEB (6e primaire, Fédération Wallonie-Bruxelles), expliquées simplement avec un exemple et une astuce. Gratuit.`;
   return `${tete({ titre, description, chemin: 'fiches/', type: 'website' })}
-<h1>📘 Fiches de révision du CEB</h1>
+<h1><img class="ic" src="../assets/ui/fiches.webp" alt="" width="48" height="48"> Fiches de révision du CEB</h1>
 <p class="intro">Toutes les règles à connaître pour le CEB, en ${nbFiches} fiches courtes : la règle, un exemple et une astuce. Chaque fiche mène à des exercices corrigés tout de suite.</p>
-<nav class="sommaire" aria-label="Matières">${Object.entries(MATIERES).map(([id, m]) => `<a href="#${id}">${m.e} ${m.nom}</a>`).join('')}</nav>
+<nav class="sommaire" aria-label="Matières">${Object.entries(MATIERES).map(([id, m]) => `<a href="#${id}">${icMat(id)} ${m.nom}</a>`).join('')}</nav>
 ${Object.entries(MATIERES).map(([id, m]) => `<section class="matiere" id="${id}">
-<h2>${m.e} ${m.nom} <small>${parMatiere[id].length} fiches</small></h2>
+<h2>${icMat(id)} ${m.nom} <small>${parMatiere[id].length} fiches</small></h2>
 <ul class="liste">
-${parMatiere[id].map((f) => `<li><a href="${f.id}.html"><span aria-hidden="true">${f.e}</span> ${esc(f.titre)}</a></li>`).join('\n')}
+${parMatiere[id].map((f) => `<li><a href="${f.id}.html">${emo(f.e)} ${esc(f.titre)}</a></li>`).join('\n')}
 </ul>
 </section>`).join('\n')}
 ${pied(`mailto:${ADRESSE_SIGNALEMENT}?subject=${encodeURIComponent('[Mission CEB] Erreur signalée')}`)}`;
@@ -157,7 +165,7 @@ ${[SITE, `${SITE}fiches/`, ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].m
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [
     'index.html', 'imprimer.html', 'manifest.webmanifest',
-    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/avatars/')), ...(await lireDossier('assets/ui/')),
+    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/avatars/')), ...(await lireDossier('assets/ui/')), ...(await lireDossier('assets/emoji/')),
   ].filter((p) => !/(^|\/)\./.test(p)).sort();
   const h = createHash('sha256');
   for (const p of coeur) { h.update(p); h.update(await readFile(new URL(p, RACINE))); }
