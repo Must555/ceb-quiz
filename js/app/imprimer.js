@@ -1,4 +1,5 @@
 // Page « Examen papier » : tirage, aperçu et impression de l'examen puis du corrigé.
+import { emojiAvatar } from './avatars.js';
 import { chargerDonnees, bonneReponseLisible } from '../engine/index.js';
 import { FORMATS, FICHE, composerExamen, composerFiche, nouveauCode, lireCode } from '../engine/papier.js';
 import * as store from './store.js';
@@ -253,7 +254,7 @@ function initFiche(notionsUrl, idJoueur) {
   const sel = $('#pf-joueur');
   if (joueurs.length) {
     $('#pf-joueur-bloc').hidden = false;
-    sel.innerHTML = joueurs.map((j) => `<option value="${j.id}" ${j.id === joueurFiche?.id ? 'selected' : ''}>${esc(j.avatar)} ${esc(j.pseudo)}</option>`).join('');
+    sel.innerHTML = joueurs.map((j) => `<option value="${j.id}" ${j.id === joueurFiche?.id ? 'selected' : ''}>${esc(emojiAvatar(j.avatar))} ${esc(j.pseudo)}</option>`).join('');
     sel.onchange = () => {
       joueurFiche = joueurs.find((j) => j.id === sel.value) ?? null;
       notionsChoisies = preselection();

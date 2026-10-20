@@ -8,13 +8,13 @@ import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voix
 import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
 import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
 import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
+import { AVATARS, avatarDe, emojiAvatar, imgAvatar } from './avatars.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const racine = document.documentElement;
 
-const AVATARS = ['🦊', '🐺', '🐯', '🦁', '🐼', '🐨', '🐸', '🐙', '🦈', '🐲', '🦅', '🦄', '🤖', '👾', '🧑‍🚀', '🥷'];
 const COULEURS = ['#ffcf99', '#a7f3d0', '#bfdbfe', '#f5d0fe', '#fecaca', '#fde68a'];
 const MATIERES = [
   { id: 'fr', e: '📖', nom: 'Français', sous: 'Lire, grammaire, conjugaison' },
@@ -142,7 +142,9 @@ function confettis(n = 80) {
     document.body.append(c); setTimeout(() => c.remove(), 4200);
   }
 }
-const ava = (j, taille = 44) => `<span class="pastille-ava" style="width:${taille}px;height:${taille}px;font-size:${Math.round(taille * .56)}px;background:${j.couleur}">${j.avatar}</span>`;
+// Portrait du joueur dans un rond ; la couleur choisie forme l'anneau autour.
+const ava = (j, taille = 44) => `<span class="pastille-ava${avatarDe(j.avatar).img ? ' a-img' : ''}" style="width:${taille}px;height:${taille}px;font-size:${Math.round(taille * .56)}px;background:${j.couleur};--anneau:${j.couleur}">${imgAvatar(j.avatar)}</span>`;
+const boutonAvatar = (a, sel) => `<button data-a="${a.id}" class="${sel ? 'sel' : ''}" aria-label="${a.nom}" title="${a.nom}" aria-pressed="${sel}">${imgAvatar(a.id)}</button>`;
 const nomDomaine = (id) => donnees.catalogue.matieres.flatMap((m) => m.domaines).find((d) => d.id === id)?.nom ?? id;
 
 // ============================================================ Connexion
@@ -150,7 +152,7 @@ function afficherConnexion(forcerCreation = false) {
   const joueurs = store.listeJoueurs();
   const el = $('#ecran-connexion');
   const creation = forcerCreation || joueurs.length === 0;
-  const nouveau = { avatar: AVATARS[0], couleur: COULEURS[0], theme: ambiance(racine.dataset.theme) };
+  const nouveau = { avatar: AVATARS[0].id, couleur: COULEURS[0], theme: ambiance(racine.dataset.theme) };
 
   el.innerHTML = `<div class="connexion"><div class="connexion-boite">
     <div class="marque"><span class="pastille"><img src="assets/icones/logo-128.png" alt="" width="64" height="64"></span><div>Mission CEB<small>RÉUSSIS TON CEB EN JOUANT</small></div></div>
@@ -178,7 +180,7 @@ function afficherConnexion(forcerCreation = false) {
         <p class="mute" style="font-size:13px;margin:6px 0 0">Invente un pseudo : évite ton nom de famille.</p>
         <p class="erreur" id="err-pseudo"></p>
         <p class="etape-titre">2. Ton avatar</p>
-        <div class="grille-avatars">${AVATARS.map((a, i) => `<button data-a="${a}" class="${i === 0 ? 'sel' : ''}" aria-label="Avatar ${a}">${a}</button>`).join('')}</div>
+        <div class="grille-avatars">${AVATARS.map((a, i) => boutonAvatar(a, i === 0)).join('')}</div>
         <p class="etape-titre" style="margin-top:14px">Couleur de fond</p>
         <div class="couleurs">${COULEURS.map((c, i) => `<button data-c="${c}" class="${i === 0 ? 'sel' : ''}" style="background:${c}" aria-label="Couleur ${i + 1}"></button>`).join('')}</div>
         <p class="etape-titre" style="margin-top:16px">3. Ton ambiance</p>
@@ -205,7 +207,7 @@ function afficherConnexion(forcerCreation = false) {
     const p = $('#pseudo', el).value.trim() || 'Ton pseudo';
     $('#apercu', el).innerHTML = `${ava({ avatar: nouveau.avatar, couleur: nouveau.couleur }, 56)}<div><b style="font-family:var(--titre);font-size:20px">${esc(p)}</b><div class="mute">Niveau 1 · Recrue</div></div>`;
   };
-  $$('.grille-avatars button', el).forEach((b) => b.onclick = () => { $$('.grille-avatars button', el).forEach((x) => x.classList.toggle('sel', x === b)); nouveau.avatar = b.dataset.a; majApercu(); });
+  $$('.grille-avatars button', el).forEach((b) => b.onclick = () => { $$('.grille-avatars button', el).forEach((x) => { x.classList.toggle('sel', x === b); x.setAttribute('aria-pressed', String(x === b)); }); nouveau.avatar = b.dataset.a; majApercu(); });
   $$('.couleurs button', el).forEach((b) => b.onclick = () => { $$('.couleurs button', el).forEach((x) => x.classList.toggle('sel', x === b)); nouveau.couleur = b.dataset.c; majApercu(); });
   brancherAmbiances(el, (t) => { nouveau.theme = t; });
   $('#pseudo', el).oninput = majApercu;
@@ -1338,7 +1340,7 @@ function afficherReglages() {
     <section class="carte">
       <div class="apercu-joueur" style="margin-bottom:14px">${ava(joueur, 64)}<div><b style="font-family:var(--titre);font-size:22px">${esc(joueur.pseudo)}</b><div class="mute">Niveau ${niveau(joueur.xp).n} · ${niveau(joueur.xp).titre}</div></div></div>
       <p class="etape-titre">Avatar</p>
-      <div class="grille-avatars">${AVATARS.map((a) => `<button data-a="${a}" class="${a === joueur.avatar ? 'sel' : ''}">${a}</button>`).join('')}</div>
+      <div class="grille-avatars">${AVATARS.map((a) => boutonAvatar(a, a.id === joueur.avatar)).join('')}</div>
       <p class="etape-titre" style="margin-top:14px">Couleur de fond</p>
       <div class="couleurs">${COULEURS.map((c) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}"></button>`).join('')}</div>
     </section>
@@ -1375,7 +1377,7 @@ function afficherReglages() {
   montrer('ecran-reglages');
   brancherAmbiances(el, (t) => { joueur = store.modifier((j) => { j.theme = t; }); });
   const rafraichirAva = () => { $('.apercu-joueur .pastille-ava', el).outerHTML = ava(joueur, 64); };
-  $$('.grille-avatars button', el).forEach((b) => b.onclick = () => { $$('.grille-avatars button', el).forEach((x) => x.classList.toggle('sel', x === b)); joueur = store.modifier((j) => { j.avatar = b.dataset.a; }); rafraichirAva(); });
+  $$('.grille-avatars button', el).forEach((b) => b.onclick = () => { $$('.grille-avatars button', el).forEach((x) => { x.classList.toggle('sel', x === b); x.setAttribute('aria-pressed', String(x === b)); }); joueur = store.modifier((j) => { j.avatar = b.dataset.a; }); rafraichirAva(); });
   $$('.couleurs button', el).forEach((b) => b.onclick = () => { $$('.couleurs button', el).forEach((x) => x.classList.toggle('sel', x === b)); joueur = store.modifier((j) => { j.couleur = b.dataset.c; }); rafraichirAva(); });
   const majConfort = () => {
     const c = confortDe(joueur);
@@ -1423,7 +1425,7 @@ function afficherParents(retour) {
   const joueurs = store.listeJoueurs();
   const id = afficherParents.enfant && joueurs.some((j) => j.id === afficherParents.enfant) ? afficherParents.enfant : (joueur?.id ?? joueurs[0]?.id);
   const enfant = id ? store.joueurParId(id) : null;
-  const onglets = joueurs.map((j) => `<button class="puce${j.id === id ? ' sel' : ''}" data-enfant="${j.id}">${j.avatar} ${esc(j.pseudo)}</button>`).join('');
+  const onglets = joueurs.map((j) => `<button class="puce${j.id === id ? ' sel' : ''}" data-enfant="${j.id}">${emojiAvatar(j.avatar)} ${esc(j.pseudo)}</button>`).join('');
   const jRestants = Math.max(0, joursEntre(store.aujourdhui(), CEB.debut));
 
   el.innerHTML = `<div class="parents">

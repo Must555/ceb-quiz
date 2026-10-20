@@ -157,7 +157,7 @@ ${[SITE, `${SITE}fiches/`, ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].m
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [
     'index.html', 'imprimer.html', 'manifest.webmanifest',
-    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')),
+    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/avatars/')),
   ].filter((p) => !/(^|\/)\./.test(p)).sort();
   const h = createHash('sha256');
   for (const p of coeur) { h.update(p); h.update(await readFile(new URL(p, RACINE))); }

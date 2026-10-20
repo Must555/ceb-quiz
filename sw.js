@@ -5,13 +5,31 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = 'bb68b21c7da5';
+const VERSION = '91605bf88656';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
 const POLICES = 'polices-v1';
 const FICHIERS = [
  "./",
+ "assets/avatars/01-renard.webp",
+ "assets/avatars/02-loup.webp",
+ "assets/avatars/03-tigre.webp",
+ "assets/avatars/04-lion.webp",
+ "assets/avatars/05-panda.webp",
+ "assets/avatars/06-koala.webp",
+ "assets/avatars/07-grenouille.webp",
+ "assets/avatars/08-pieuvre.webp",
+ "assets/avatars/09-requin.webp",
+ "assets/avatars/10-dragon.webp",
+ "assets/avatars/11-aigle.webp",
+ "assets/avatars/12-licorne.webp",
+ "assets/avatars/13-robot.webp",
+ "assets/avatars/14-extraterrestre.webp",
+ "assets/avatars/15-astronaute.webp",
+ "assets/avatars/16-ninja.webp",
+ "assets/avatars/17-astronaute-fille.webp",
+ "assets/avatars/18-ninja-fille.webp",
  "assets/icones/apple-touch-icon.png",
  "assets/icones/favicon-32.png",
  "assets/icones/favicon-48.png",
@@ -67,6 +85,7 @@ const FICHIERS = [
  "imprimer.html",
  "index.html",
  "js/app/app.js",
+ "js/app/avatars.js",
  "js/app/cartes.js",
  "js/app/coach.js",
  "js/app/confort.js",
