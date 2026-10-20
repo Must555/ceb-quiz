@@ -20,7 +20,12 @@ test('une page par fiche, avec titre, description, lien d\'entraînement et cano
   assert.ok(pages.length >= 190, String(pages.length));
   for (const p of pages) {
     const h = out[p];
-    assert.match(h, /<title>[^<]+ — fiche de révision CEB/);
+    const titre = h.match(/<title>([^<]+)<\/title>/)[1].replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    assert.ok(titre.length <= 60, `${p} : titre de ${titre.length} caractères (Google coupe après ~60) : ${titre}`);
+    assert.match(titre, / – Fiche CEB/);
+    const desc = h.match(/<meta name="description" content="([^"]+)">/)[1].replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+    assert.ok(desc.length >= 100 && desc.length <= 160, `${p} : description de ${desc.length} caractères`);
+    assert.match(h, /"@type":"BreadcrumbList"/);
     assert.match(h, /<meta name="description" content="[^"]{40,260}">/);
     assert.match(h, new RegExp(`<link rel="canonical" href="https://missionceb.be/${p}">`));
     assert.match(h, /href="\.\.\/(\?fiche=|")/);

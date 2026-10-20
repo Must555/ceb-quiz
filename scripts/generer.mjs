@@ -24,11 +24,38 @@ const icMat = (id) => `<img class="ic" src="../assets/ui/${id}.webp" alt="" widt
 const RACINE = new URL('../', import.meta.url);
 const SITE = 'https://missionceb.be/';
 const MATIERES = {
-  fr: { nom: 'Français', e: '📖', long: 'français' },
-  ma: { nom: 'Mathématiques', e: '📐', long: 'mathématiques' },
-  hg: { nom: 'Histoire-géographie', e: '🌍', long: 'histoire-géographie' },
-  sc: { nom: 'Sciences', e: '🧪', long: 'sciences' },
+  fr: { nom: 'Français', e: '📖', long: 'français', court: 'français' },
+  ma: { nom: 'Mathématiques', e: '📐', long: 'mathématiques', court: 'maths' },
+  hg: { nom: 'Histoire-géographie', e: '🌍', long: 'histoire-géographie', court: 'histoire-géo' },
+  sc: { nom: 'Sciences', e: '🧪', long: 'sciences', court: 'sciences' },
 };
+export const MAX_TITRE = 60;
+
+// Titre pour Google (≤ 60 caractères, sinon il est coupé dans les résultats) :
+// « <notion> – Fiche CEB <matière> », en raccourcissant d'abord la parenthèse, puis la notion.
+export function titreGoogle(titre, matiere) {
+  const suite = ` – Fiche CEB ${MATIERES[matiere].court}`;
+  const essais = [titre, titre.replace(/\s*\([^)]*\)\s*/g, ' ').trim(), ` – Fiche CEB`];
+  for (const t of essais.slice(0, 2)) if ((t + suite).length <= MAX_TITRE) return t + suite;
+  const court = essais[1];
+  if ((court + ' – Fiche CEB').length <= MAX_TITRE) return court + ' – Fiche CEB';
+  return couper(court, MAX_TITRE - ' – Fiche CEB'.length) + ' – Fiche CEB';
+}
+
+// Description (140-158 caractères) : la règle, puis ce qu'on y gagne.
+export function descriptionGoogle(f) {
+  const fin = ' Exemple, astuce et exercices corrigés gratuits.';
+  const place = 158 - fin.length;
+  // Des phrases entières tant qu'elles tiennent ; sinon la première, coupée proprement à un mot.
+  const phrases = f.regle.join(' ').replace(/\s+/g, ' ').trim().match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g).map((x) => x.trim());
+  let texte = '';
+  for (const ph of phrases) { const t = texte ? `${texte} ${ph}` : ph; if (t.length > place) break; texte = t; }
+  if (!texte) texte = couper(phrases[0], place);
+  // Trop court pour Google : on annonce la notion en tête (« Les cours d'eau : un cours d'eau naît… »).
+  if ((texte + fin).length < 110 && `${f.titre} : ${texte}`.length <= place) texte = `${f.titre} : ${texte[0].toLowerCase()}${texte.slice(1)}`;
+  if (!/[.!?…]$/.test(texte)) texte += '.';
+  return texte + fin;
+}
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const couper = (s, n) => { const t = String(s).replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t; };
@@ -57,6 +84,7 @@ function tete({ titre, description, chemin, type = 'article', jsonld = null }) {
 <meta name="theme-color" content="#1f4e96">
 <meta property="og:type" content="${type}">
 <meta property="og:site_name" content="Mission CEB">
+<meta name="application-name" content="Mission CEB">
 <meta property="og:locale" content="fr_BE">
 <meta property="og:url" content="${SITE}${chemin}">
 <meta property="og:title" content="${esc(titre)}">
@@ -84,16 +112,27 @@ const pied = (lienSignaler) => `</main>
 
 function pageFiche(f, voisines, nbEx) {
   const m = MATIERES[f.matiere];
-  const titre = `${f.titre} — fiche de révision CEB (${m.long}) | Mission CEB`;
-  const description = couper(`${f.titre} : ${f.regle.join(' ')} Fiche de révision pour le CEB, 6e primaire.`, 158);
+  const titre = titreGoogle(f.titre, f.matiere);
+  const description = descriptionGoogle(f);
   const sujet = `[Mission CEB] Erreur signalée — fiche « ${f.titre} »`;
   const signaler = `mailto:${ADRESSE_SIGNALEMENT}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(`Bonjour,\n\nJe pense avoir trouvé une erreur dans la fiche « ${f.titre} » (${f.id}).\n\nCommentaire : `)}`;
-  const jsonld = {
-    '@context': 'https://schema.org', '@type': 'LearningResource', name: f.titre, description,
-    inLanguage: 'fr-BE', learningResourceType: 'Fiche de révision', educationalLevel: '6e primaire (CEB)',
-    about: m.nom, isAccessibleForFree: true, url: `${SITE}fiches/${f.id}.html`,
-    publisher: { '@type': 'Organization', name: 'Mission CEB', url: SITE },
-  };
+  // Fil d'Ariane (Google affiche « Mission CEB › Fiches › Mathématiques » au lieu de l'adresse) + ressource.
+  const jsonld = [
+    {
+      '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Mission CEB', item: SITE },
+        { '@type': 'ListItem', position: 2, name: 'Fiches', item: `${SITE}fiches/` },
+        { '@type': 'ListItem', position: 3, name: m.nom, item: `${SITE}fiches/#${f.matiere}` },
+        { '@type': 'ListItem', position: 4, name: f.titre },
+      ],
+    },
+    {
+      '@context': 'https://schema.org', '@type': 'LearningResource', name: f.titre, description,
+      inLanguage: 'fr-BE', learningResourceType: 'Fiche de révision', educationalLevel: '6e primaire (CEB)',
+      about: m.nom, isAccessibleForFree: true, url: `${SITE}fiches/${f.id}.html`,
+      publisher: { '@type': 'Organization', name: 'Mission CEB', url: SITE },
+    },
+  ];
   return `${tete({ titre, description, chemin: `fiches/${f.id}.html`, jsonld })}
 <nav class="fil" aria-label="Fil d'Ariane"><a href="./">Fiches</a> › <a href="./#${f.matiere}">${m.nom}</a> › <span>${esc(f.titre)}</span></nav>
 <article class="fiche">
@@ -124,8 +163,8 @@ ${pied(signaler)}`;
 }
 
 function pageIndex(parMatiere, nbFiches) {
-  const titre = 'Fiches de révision du CEB : français, maths, histoire-géo, sciences | Mission CEB';
-  const description = `Les ${nbFiches} règles à connaître pour le CEB (6e primaire, Fédération Wallonie-Bruxelles), expliquées simplement avec un exemple et une astuce. Gratuit.`;
+  const titre = 'Fiches de révision du CEB : toutes les règles';
+  const description = `Les ${nbFiches} règles à connaître pour le CEB en français, maths, histoire-géo et sciences, expliquées simplement. Exemples et exercices gratuits.`;
   return `${tete({ titre, description, chemin: 'fiches/', type: 'website' })}
 <h1><img class="ic" src="../assets/ui/fiches.webp" alt="" width="48" height="48"> Fiches de révision du CEB</h1>
 <p class="intro">Toutes les règles à connaître pour le CEB, en ${nbFiches} fiches courtes : la règle, un exemple et une astuce. Chaque fiche mène à des exercices corrigés tout de suite.</p>
