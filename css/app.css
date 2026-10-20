@@ -33,7 +33,7 @@
   --panel:#ffffff; --panel2:#f4f7fc; --ligne:#cbd6ec; --txt:#1c2333; --mute:#566078;
   --accent:#1c3faa; --accent-txt:#fff; --prog:#1c3faa; --or:#9a5b00;
   --hero:#ffffff; --hero-txt:#1c2333; --hero-accent:#1c3faa;
-  --m1:#2451c4; --m2:#c96a12; --m3:#1d7f55; --m4:#c2362c; --m5:#6a3fb5; --m-txt:#fff;
+  --m1:#2451c4; --m2:#a8530a; --m3:#18704a; --m4:#c2362c; --m5:#6a3fb5; --m-txt:#fff;
   --mat:#ffffff; --mat-sel:#fff3a0;
   --cta:#1c3faa; --cta-txt:#fff; --cta-ombre:0 3px 0 #10276f;
   --bord:1px solid var(--ligne); --bord-fort:2px solid #b9c7e4; --ombre:0 1px 2px rgba(28,35,51,.06), 0 6px 16px rgba(28,35,51,.06); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
@@ -41,9 +41,9 @@
 }
 /* Tableau : tableau vert de la classe, craie blanche et craie jaune. */
 [data-theme="tableau"] {
-  --juste: #8bd88f; --faux: #ff9a8f;
+  --juste: #8bd88f; --faux: #ffb3aa;
   --fond:#1e3a2f; --deco: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E"), radial-gradient(120% 90% at 50% 30%, rgba(255,255,255,.05), transparent 60%), radial-gradient(140% 100% at 50% 50%, transparent 60%, rgba(0,0,0,.28) 100%);
-  --panel:rgba(255,255,255,.045); --panel2:rgba(255,255,255,.08); --ligne:rgba(240,237,226,.22); --txt:#f2efe4; --mute:#b6c6ba;
+  --panel:rgba(255,255,255,.045); --panel2:rgba(255,255,255,.08); --ligne:rgba(240,237,226,.22); --txt:#f2efe4; --mute:#cbd8ce;
   --accent:#f3d36b; --accent-txt:#1e3a2f; --prog:#f3d36b; --or:#f3d36b;
   --hero:rgba(0,0,0,.16); --hero-txt:#f2efe4; --hero-accent:#f3d36b;
   --m1:#9cc4e8; --m2:#f2bd86; --m3:#a9dcb6; --m4:#f2a7a7; --m5:#c9b6ef; --m-txt:#14261f;
@@ -156,9 +156,9 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .mode:disabled { opacity:.5; filter:grayscale(.5); }
 .mode .e { font-size:34px; display:block; margin-bottom:10px; }
 .mode b { font-family:var(--titre); font-size:19px; font-weight:800; display:block; }
-.mode small { display:block; opacity:.92; font-size:13px; margin-top:2px; line-height:1.35; }
+.mode small { display:block; opacity:1; font-size:13px; margin-top:2px; line-height:1.35; }
 .m1 { background:var(--m1); } .m2 { background:var(--m2); } .m3 { background:var(--m3); } .m4 { background:var(--m4); }
-.etiq { position:absolute; top:10px; right:10px; background:rgba(0,0,0,.28); color:#fff; font-size:11px; font-weight:800; padding:3px 8px; border-radius:999px; }
+.etiq { position:absolute; top:10px; right:10px; background:rgba(0,0,0,.5); color:#fff; font-size:11px; font-weight:800; padding:3px 8px; border-radius:999px; }
 .matieres { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
 .matiere { border-radius:16px; padding:14px 12px; text-align:left; background:var(--mat); border:var(--bord); transition:transform .15s; }
 .matiere:hover { transform:translateY(-3px); }
@@ -178,7 +178,7 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .livret { display:flex; flex-direction:column; align-items:flex-start; gap:2px; text-align:left; padding:10px 12px; border-radius:14px; border:var(--bord-fort); background:var(--panel2); color:inherit; font:inherit; cursor:pointer; }
 .livret .e { font-size:20px; }
 .livret b { font-size:14px; line-height:1.25; }
-.livret small { opacity:.75; font-size:12px; }
+.livret small { opacity:.9; font-size:12px; }
 .livret.sel { border-color:var(--accent); background:var(--mat-sel); }
 .go { display:flex; justify-content:center; }
 .go .btn-cta { font-size:22px; padding:16px 52px; }
@@ -499,7 +499,7 @@ a.btn { text-decoration:none; }
 [data-theme="tableau"] body { box-shadow:inset 0 0 0 10px #7a5a37, inset 0 0 0 12px #5d4227; }
 [data-theme="tableau"] .hero { border:2px solid rgba(242,239,228,.35); }
 [data-theme="tableau"] .collection div.obtenu, [data-theme="cahier"] .collection div.obtenu, [data-theme="lecture"] .collection div.obtenu { background:linear-gradient(135deg,#f3d36b,#e3a43c); }
-.niv-badge { color:#1c2333; }
+.niv-badge { color:var(--accent-txt); border-color:rgba(255,255,255,.55); }
 [data-theme="cahier"] .side { background:#fdfdfa; border-right:2px solid rgba(214,72,72,.55); }
 [data-theme="tableau"] .side { background:rgba(0,0,0,.12); }
 [data-theme="tableau"] :is(.rep.juste, .rep.faux) .lettre { color:#14261f; }
@@ -700,3 +700,6 @@ a.btn { text-decoration:none; }
 .f-mat .ic, .section-titre .ic { width:24px; height:24px; vertical-align:-.3em; }
 .suivi-livrets .e .ic, .entracte h2 .ic { width:28px; height:28px; vertical-align:middle; }
 .par-domaine .ic { width:22px; height:22px; vertical-align:-.3em; }
+
+/* Tableau : les couleurs juste / faux sont claires (craie) → texte foncé dessus. */
+[data-theme="tableau"] :is(.rep.juste .lettre, .rep.faux .lettre, .puces-etat .chrono.urgent, .chrono-reel.urgent) { color:#14261f; }
