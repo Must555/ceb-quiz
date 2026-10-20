@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /maquettes/
+Disallow: /relecture/
 Disallow: /moteur.html
 
 Sitemap: https://missionceb.be/sitemap.xml

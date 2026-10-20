@@ -326,6 +326,41 @@ function exemplesMatiere(modeles, m, n = 5) {
   return out;
 }
 
+// ---------------------------------------------------------------- corrigés à relire (enseignant)
+// Pages imprimables, non référencées (noindex + robots.txt) : toutes les réponses établies par Mission CEB.
+function pageRelecture(ex) {
+  const nom = nomExamen(ex);
+  const qs = ex.questions.filter((q) => q.numerisable !== false && (q.reponse != null || q.type === 'ouverte'));
+  const aVerifier = qs.filter((q) => !q.corrigeVerifie).length;
+  const lisible = (q) => { try { return bonneReponseLisible(q); } catch { return ''; } };
+  const parLivret = (ex.livrets ?? []).map((l) => ({ l, qs: qs.filter((q) => q.livret === l.n) })).filter((x) => x.qs.length);
+  return `<!doctype html>
+<html lang="fr-BE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Relecture du corrigé — ${esc(nom)} | Mission CEB</title>
+<style>
+body { font:14px/1.45 'Atkinson Hyperlegible', Arial, sans-serif; color:#111; margin:24px auto; max-width:900px; padding:0 16px; }
+h1 { font-size:22px; margin:0 0 4px; } h2 { font-size:17px; margin:22px 0 6px; border-bottom:2px solid #111; padding-bottom:3px; break-after:avoid; }
+.intro { color:#444; margin:0 0 14px; } .intro b { color:#111; }
+table { width:100%; border-collapse:collapse; } td, th { border:1px solid #bbb; padding:5px 7px; vertical-align:top; text-align:left; }
+th { background:#f1f1f1; font-size:12px; } tr { break-inside:avoid; }
+td.n { width:44px; font-weight:700; white-space:nowrap; } td.rep { width:28%; white-space:pre-line; } td.ok { width:150px; font-size:12px; color:#444; }
+.choix { color:#555; font-size:12px; display:block; margin-top:3px; } .verif { color:#1a7a3c; font-weight:700; }
+.case { display:inline-block; width:11px; height:11px; border:1.5px solid #333; vertical-align:-2px; margin-right:4px; }
+.imprimer { float:right; font:700 14px Arial; padding:8px 14px; border-radius:8px; border:0; background:#1d3f9e; color:#fff; cursor:pointer; }
+@media print { .imprimer { display:none; } body { margin:0; } }
+</style></head><body>
+<button class="imprimer" onclick="print()">Imprimer</button>
+<h1>Relecture du corrigé — ${esc(nom)}</h1>
+<p class="intro">${qs.length} questions corrigées par Mission CEB, dont <b>${aVerifier} à vérifier</b> (les autres, marquées « vérifiée », ont déjà été relues). Pour chaque ligne : cochez OK, ou écrivez la bonne réponse. Le questionnaire et le portfolio officiels sont publiés par la FWB sur enseignement.be. Renvoi : missionceb@outlook.be.</p>
+${parLivret.map(({ l, qs: liste }) => `<h2>Livret ${l.n} · ${esc(l.titre)}</h2>
+<table><thead><tr><th>Question</th><th>Énoncé (résumé)</th><th>Réponse du site</th><th>Votre avis</th></tr></thead><tbody>
+${liste.map((q) => `<tr><td class="n">${esc(q.numero)}</td><td>${esc(couper(q.enonce, 260))}${q.choix ? `<span class="choix">${q.choix.map((c, i) => `${'ABCDEFGH'[i]}. ${esc(couper(c, 60))}`).join(' · ')}</span>` : ''}</td><td class="rep">${q.type === 'ouverte' ? '<i>Réponse modèle :</i> ' : ''}${esc(couper(lisible(q), 400))}</td><td class="ok">${q.corrigeVerifie ? '<span class="verif">✓ vérifiée</span>' : '<span class="case"></span>OK<br><span class="case"></span>À corriger :<br>…………………'}</td></tr>`).join('\n')}
+</tbody></table>`).join('\n')}
+</body></html>
+`;
+}
+
 // Renvoie { chemin: contenu } pour tous les fichiers générés.
 export async function generer() {
   const lireTexte = async (c) => readFile(new URL(c, RACINE), 'utf8');
@@ -351,6 +386,7 @@ export async function generer() {
   out['examens/index.html'] = pageExamens(examens);
   for (const m of Object.keys(MATIERES)) out[`exercices/${SLUG[m]}.html`] = pageExercices(m, parMatiere[m], exemplesMatiere(donnees.modeles, m));
   out['exercices/index.html'] = pageExercicesIndex(parMatiere);
+  for (const ex of examens) out[`relecture/${slugExamen(ex)}.html`] = pageRelecture(ex);
   out['ceb-2027/index.html'] = pageCeb2027();
   out['reviser-le-ceb/index.html'] = pageReviser();
   out['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>
@@ -360,7 +396,7 @@ ${[SITE, `${SITE}ceb-2027/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}rev
   ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc></url>`).join('\n')}
 </urlset>
 `;
-  out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /moteur.html\n\nSitemap: ${SITE}sitemap.xml\n`;
+  out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /relecture/\nDisallow: /moteur.html\n\nSitemap: ${SITE}sitemap.xml\n`;
 
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [
@@ -379,7 +415,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const out = await generer();
   await mkdir(new URL('fiches/', RACINE), { recursive: true });
   for (const ancien of await readdir(new URL('fiches/', RACINE))) if (!out[`fiches/${ancien}`]) await rm(new URL(`fiches/${ancien}`, RACINE));
-  for (const d of ['examens/', 'exercices/', 'ceb-2027/', 'reviser-le-ceb/']) await mkdir(new URL(d, RACINE), { recursive: true });
+  for (const d of ['examens/', 'exercices/', 'ceb-2027/', 'reviser-le-ceb/', 'relecture/']) await mkdir(new URL(d, RACINE), { recursive: true });
   for (const [p, c] of Object.entries(out)) await writeFile(new URL(p, RACINE), c);
   console.log(`${Object.keys(out).length} fichiers générés (${Object.keys(out).filter((p) => p.startsWith('fiches/')).length} pages de fiches).`);
 }
