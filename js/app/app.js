@@ -5,6 +5,7 @@ import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from
 import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
 import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, sons, ouvrirZoom } from './confort.js';
+import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -223,6 +224,7 @@ function afficherAccueil() {
       <nav class="nav">
         <button class="actif"><span>🏠</span>Accueil</button>
         <button data-aller="progres"><span>📊</span>Progrès</button>
+        <button data-aller="fiches"><span>📘</span>Fiches</button>
         <a class="nav-lien" href="imprimer.html"><span>🖨️</span>Examen papier</a>
         <button class="bientot" data-bientot><span>🏅</span>Collection</button>
         <button data-aller="reglages"><span>🎨</span>Mon style</button>
@@ -324,6 +326,7 @@ function afficherAccueil() {
   <nav class="navbas">
     <button class="actif"><span>🏠</span>Accueil</button>
     <button data-aller="progres"><span>📊</span>Progrès</button>
+    <button data-aller="fiches"><span>📘</span>Fiches</button>
     <button data-aller="reglages"><span>🎨</span>Mon style</button>
     <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
   </nav>`;
@@ -366,6 +369,7 @@ function afficherAccueil() {
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
   $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
   $$('[data-aller="progres"]', el).forEach((b) => b.onclick = afficherProgres);
+  $$('[data-aller="fiches"]', el).forEach((b) => b.onclick = afficherFiches);
   $$('[data-aller="parents"]', el).forEach((b) => b.onclick = () => afficherParents(afficherAccueil));
   brancherCoach(el);
   $('#lancer', el).onclick = lancerPartie;
@@ -916,6 +920,156 @@ function afficherRevueReel(resume, res, erreursSeules) {
   $('#accueil').onclick = afficherAccueil;
 }
 
+// ============================================================ Bibliothèque des fiches + cartes-mémoire
+const filtreFiches = { matiere: '', texte: '', statut: '' };
+let exParNotion = null;
+const nbExercices = (id) => (exParNotion ??= exercicesParNotion(donnees.banque, donnees.modeles))[id] ?? 0;
+// Fiche ouverte depuis la bibliothèque : « S'entraîner » seulement s'il existe des exercices sur la notion.
+const ouvrirFicheBiblio = (id) => ouvrirFiche(id, {
+  titreHaut: 'Ma fiche', papier: true,
+  ...(nbExercices(id) ? { cta: '🎯 M\'entraîner sur cette notion', onCta: () => lancerCible(id, false) } : {}),
+});
+
+function afficherFiches() {
+  const el = $('#ecran-fiches');
+  const dues = cartesDues(joueur).filter((id) => donnees.fiches[id]);
+  const STATS = [['', 'Toutes'], ['fragile', `${STATUTS.fragile.e} À retravailler`], ['progres', `${STATUTS.progres.e} En progrès`], ['maitrise', `${STATUTS.maitrise.e} Maîtrisées`], ['decouverte', `${STATUTS.decouverte.e} À découvrir`]];
+  el.innerHTML = `<div class="progres biblio">
+    <p><button class="btn" id="retour-accueil">← Accueil</button></p>
+    <h1>📘 Mes fiches</h1>
+    <p class="mute" style="margin:0">Toutes les règles à connaître pour le CEB, au même endroit.</p>
+    <section class="carte cartes-memoire">
+      <div class="cm-tete"><span class="cm-e" aria-hidden="true">🃏</span><div>
+        <h3>Cartes-mémoire</h3>
+        <p class="mute">Lis le titre, retrouve la règle dans ta tête, puis retourne la carte. ${dues.length ? `<b>${dues.length} carte${dues.length > 1 ? 's' : ''} à revoir aujourd'hui.</b>` : 'Les cartes que tu ne savais pas reviennent les jours suivants.'}</p>
+      </div></div>
+      <div class="actions"><button class="btn btn-cta" id="cm-jour">🃏 Mes cartes du jour</button><button class="btn" id="cm-selection">Réviser cette sélection</button></div>
+    </section>
+    <section class="carte filtres-fiches">
+      <label class="recherche"><span aria-hidden="true">🔎</span><input class="champ" id="f-texte" type="search" placeholder="Chercher une règle (ex. participe, aire, siècle…)" autocomplete="off" value="${esc(filtreFiches.texte)}" aria-label="Chercher une fiche"></label>
+      <div class="options-examen" role="radiogroup" aria-label="Matière">${[...MATIERES].sort((a, b) => !!a.id - !!b.id).map((m) => `<button class="puce f-mat" role="radio" data-v="${m.id}">${m.id ? `${m.e} ${m.nom}` : 'Toutes'}</button>`).join('')}</div>
+      <div class="options-examen" role="radiogroup" aria-label="Où j'en suis">${STATS.map(([id, nom]) => `<button class="puce f-st" role="radio" data-v="${id}">${nom}</button>`).join('')}</div>
+    </section>
+    <p class="mute" id="f-compte" aria-live="polite"></p>
+    <div class="grille-fiches" id="f-liste"></div>
+  </div>`;
+  montrer('ecran-fiches');
+  const liste = () => filtrerFiches(donnees.fiches, { ...filtreFiches, j: joueur });
+  const maj = () => {
+    $$('.f-mat', el).forEach((b) => { const ok = b.dataset.v === filtreFiches.matiere; b.classList.toggle('sel', ok); b.setAttribute('aria-checked', String(ok)); });
+    $$('.f-st', el).forEach((b) => { const ok = b.dataset.v === filtreFiches.statut; b.classList.toggle('sel', ok); b.setAttribute('aria-checked', String(ok)); });
+    const fs = liste();
+    $('#f-compte', el).textContent = `${fs.length} fiche${fs.length > 1 ? 's' : ''}`;
+    $('#f-liste', el).innerHTML = fs.length ? fs.map((f) => {
+      const m = maitrise(joueur, f.id); const st = STATUTS[m.statut];
+      return `<button class="fiche-tuile st-${m.statut}" data-f="${f.id}"><span class="e" aria-hidden="true">${f.e}</span>
+        <span class="t"><b>${esc(f.titre)}</b><small>${NOM_MAT[f.matiere] ?? ''} · ${st.e} ${st.nom}${m.n ? ` · ${Math.round(m.m * 100)} %` : ''}${carteDue(joueur, f.id) ? ' · 🃏 à revoir' : ''}</small></span></button>`;
+    }).join('') : '<p class="carte">Aucune fiche ne correspond. Essaie un autre mot 🔎</p>';
+    $$('.fiche-tuile', el).forEach((b) => b.onclick = () => ouvrirFicheBiblio(b.dataset.f));
+    $('#cm-selection', el).disabled = !fs.length;
+  };
+  $('#retour-accueil', el).onclick = afficherAccueil;
+  $('#f-texte', el).oninput = (e) => { filtreFiches.texte = e.target.value; maj(); };
+  $$('.f-mat', el).forEach((b) => b.onclick = () => { filtreFiches.matiere = b.dataset.v; maj(); });
+  $$('.f-st', el).forEach((b) => b.onclick = () => { filtreFiches.statut = b.dataset.v; maj(); });
+  $('#cm-jour', el).onclick = () => lancerCartes(null);
+  $('#cm-selection', el).onclick = () => lancerCartes(liste().map((f) => f.id));
+  maj();
+}
+
+let cartes = null; // { file, i, retourne, savait, revoir, debut }
+function lancerCartes(ids) {
+  if (etatTemps(joueur, store.reglagesParents()).atteint) return afficherPause();
+  const file = paquet(joueur, donnees.fiches, { ids });
+  if (!file.length) return toast('Aucune carte à réviser ici.');
+  cartes = { file, i: 0, retourne: false, savait: 0, revoir: [], repasse: new Set(), debut: Date.now() };
+  afficherCarte();
+}
+
+function afficherCarte() {
+  const c = cartes;
+  if (c.i >= c.file.length) return finirCartes();
+  const f = donnees.fiches[c.file[c.i]];
+  const voix = confortDe(joueur).voix && voixDisponible();
+  $('#ecran-quiz').innerHTML = `<div class="quiz cartes-jeu">
+    <div class="quiz-haut">
+      <button class="fermer" id="quitter" aria-label="Arrêter les cartes">✕</button>
+      <div class="barre"><i style="width:${Math.round((c.i / c.file.length) * 100)}%"></i></div>
+      <span class="compteur">${c.i + 1} / ${c.file.length}</span>
+    </div>
+    <div class="carte-flip${c.retourne ? ' retournee' : ''}" id="carte">
+      <section class="carte face recto" aria-hidden="${c.retourne}">
+        <small class="sur">${NOM_MAT[f.matiere] ?? ''}${c.repasse.has(f.id) ? ' · deuxième passage' : ''}</small>
+        <div class="cm-grand-e" aria-hidden="true">${f.e}</div>
+        <h2>${esc(f.titre)}</h2>
+        <p class="mute">Que dit la règle ? Pense à ta réponse (tu peux la dire à voix haute), puis retourne la carte.</p>
+      </section>
+      <section class="carte face verso" aria-hidden="${!c.retourne}">
+        <small class="sur">${f.e} ${esc(f.titre)}</small>
+        <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+        <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
+        ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
+        ${voix ? '<button class="btn petit btn-voix" id="btn-voix" aria-pressed="false">🔊 Écouter</button>' : ''}
+      </section>
+    </div>
+  </div>
+  <div class="pied-quiz"><div class="in">${c.retourne
+    ? '<button class="btn" id="c-revoir">↺ À revoir</button><button class="btn btn-cta" id="c-savais">✔ Je savais</button>'
+    : '<button class="btn btn-cta" id="c-retourner">🔄 Retourner la carte</button>'}</div></div>`;
+  montrer('ecran-quiz');
+  taire();
+  brancherBoutonVoix($('#btn-voix'), () => [f.titre, ...f.regle, `Exemple : ${f.exemple}`, f.astuce ? `Astuce : ${f.astuce}` : ''].filter(Boolean).join('. '));
+  const retourner = () => { c.retourne = true; afficherCarte(); $('#c-savais')?.focus(); };
+  const repondre = (savait) => {
+    joueur = store.modifier((j) => { noterCarte(j, f.id, savait); });
+    if (savait) { c.savait++; sons.juste(); } else {
+      if (!c.revoir.includes(f.id)) c.revoir.push(f.id);
+      // Une carte ratée repasse une fois en fin de paquet.
+      if (!c.repasse.has(f.id)) { c.repasse.add(f.id); c.file.push(f.id); }
+    }
+    c.i++; c.retourne = false; afficherCarte();
+  };
+  $('#carte').onclick = (e) => { if (!c.retourne && !e.target.closest('button')) retourner(); };
+  $('#c-retourner')?.addEventListener('click', retourner);
+  $('#c-savais')?.addEventListener('click', () => repondre(true));
+  $('#c-revoir')?.addEventListener('click', () => repondre(false));
+  $('#quitter').onclick = () => finirCartes();
+  ($('#c-retourner') ?? $('#c-savais')).focus();
+}
+
+function finirCartes() {
+  const c = cartes;
+  taire();
+  const vues = Math.min(c.i, c.file.length);
+  // Temps de jeu (espace parents) et petite récompense : 1 XP par carte passée.
+  joueur = store.modifier((j) => {
+    const jr = (j.jours[store.aujourdhui()] ??= jourDe(j));
+    jr.secondes = (jr.secondes ?? 0) + Math.round((Date.now() - c.debut) / 1000);
+    j.xp += vues;
+  });
+  if (!vues) return afficherFiches();
+  const encore = c.revoir.filter((id) => donnees.fiches[id]);
+  $('#ecran-resultat').innerHTML = `<div class="resultat">
+    <div class="grand-emoji">🃏</div>
+    <h1>${encore.length ? 'Bien révisé !' : 'Tout su, bravo !'}</h1>
+    <div class="gains">
+      <div><b>${vues}</b><small>cartes</small></div>
+      <div><b>${c.savait}</b><small>✔ je savais</small></div>
+      <div><b>+${vues}</b><small>XP</small></div>
+    </div>
+    ${encore.length ? `<section class="carte par-domaine"><h3 style="margin-bottom:6px">↺ À revoir demain</h3>
+      <p class="mute" style="margin:0 0 10px;font-size:14px">Ces cartes reviendront demain. Pour mieux les retenir, entraîne-toi sur des questions.</p>
+      ${encore.map((id) => { const f = donnees.fiches[id]; return `<div class="ligne-revoir"><span>${f.e} ${esc(f.titre)}</span>${nbExercices(id) ? `<button class="btn petit" data-cible="${id}">🎯 S'entraîner</button>` : ''}</div>`; }).join('')}
+    </section>` : ''}
+    <div class="actions"><button class="btn btn-cta" id="vers-fiches">📘 Mes fiches</button><button class="btn" id="accueil">🏠 Accueil</button></div>
+  </div>`;
+  montrer('ecran-resultat');
+  if (!encore.length && vues >= 5) { setTimeout(() => confettis(50), 200); sons.fanfare(); }
+  $('#vers-fiches').onclick = afficherFiches;
+  $('#accueil').onclick = afficherAccueil;
+  $$('[data-cible]').forEach((b) => b.onclick = () => lancerCible(b.dataset.cible, true));
+}
+
 // ============================================================ Coach
 function blocCoach() {
   const pret = coachPret(joueur);
@@ -962,7 +1116,7 @@ function lancerCible(notion, avecRappel) {
   } else demarrer();
 }
 
-function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel' } = {}) {
+function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel', papier = false } = {}) {
   const f = donnees.fiches[id];
   if (!f) return;
   const m = maitrise(joueur, id);
@@ -975,7 +1129,7 @@ function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel' 
     <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
     <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
     ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
-    <div class="modal-actions">${confortDe(joueur).voix && voixDisponible() ? '<button class="btn" id="fiche-voix" aria-pressed="false">🔊 Écouter</button>' : ''}${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
+    <div class="modal-actions">${confortDe(joueur).voix && voixDisponible() ? '<button class="btn" id="fiche-voix" aria-pressed="false">🔊 Écouter</button>' : ''}${papier ? `<a class="btn" href="imprimer.html?mode=fiche&notions=${encodeURIComponent(id)}">🖨️ Fiche papier</a>` : ''}${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
   </div>`;
   const fermer = () => { taire(); fond.remove(); document.removeEventListener('keydown', echap); };
   const echap = (e) => { if (e.key === 'Escape' && !document.querySelector('.zoom-fond')) fermer(); };
