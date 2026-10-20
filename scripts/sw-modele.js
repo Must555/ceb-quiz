@@ -13,7 +13,9 @@ const POLICES = 'polices-v1';
 const FICHIERS = __FICHIERS__;
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(COEUR).then((c) => c.addAll(FICHIERS.map((f) => new Request(f, { cache: 'reload' })))));
+  // Prend la main tout de suite : sinon une ancienne version reste active tant qu'un onglet est ouvert
+  // (et continue d'afficher l'ancienne page d'accueil).
+  e.waitUntil(caches.open(COEUR).then((c) => c.addAll(FICHIERS.map((f) => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {
@@ -59,6 +61,10 @@ self.addEventListener('fetch', (e) => {
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
   if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
+  // Page d'accueil (vitrine) : toujours la version en ligne, la copie ne sert que hors ligne.
+  if (req.mode === 'navigate' && (chemin === '' || chemin === 'index.html')) {
+    return e.respondWith(fetch(req).catch(() => caches.match('index.html', { cacheName: COEUR }).then((r) => r ?? Response.error())));
+  }
   if (req.mode === 'navigate') {
     // Pages du site (accueil, app/, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
     const page = chemin === '' ? 'index.html' : chemin.endsWith('/') ? `${chemin}index.html` : chemin;
