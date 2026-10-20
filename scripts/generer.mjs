@@ -81,7 +81,7 @@ function tete({ titre, description, chemin, type = 'article', jsonld = null }) {
 <link rel="canonical" href="${SITE}${chemin}">
 <link rel="icon" href="../assets/icones/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="../assets/icones/apple-touch-icon.png">
-<meta name="theme-color" content="#1f4e96">
+<meta name="theme-color" content="#10245e">
 <meta property="og:type" content="${type}">
 <meta property="og:site_name" content="Mission CEB">
 <meta name="application-name" content="Mission CEB">
@@ -92,19 +92,20 @@ function tete({ titre, description, chemin, type = 'article', jsonld = null }) {
 <meta property="og:image" content="${SITE}assets/icones/partage.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/fiches.css">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>\n` : ''}</head>
 <body>
-<header class="haut"><a class="marque" href="../"><img src="../assets/icones/logo-128.png" width="44" height="44" alt=""><span>Mission CEB<small>Réussis ton CEB en jouant</small></span></a>
-<a class="btn-jouer" href="../">Jouer ${picto('play')}</a></header>
+<header class="haut${type === 'website' ? ' grand' : ''}"><div class="barre-haut"><a class="marque" href="../"><img src="../assets/icones/logo-128.png" width="44" height="44" alt="">Mission CEB</a>
+<nav class="menu" aria-label="Menu principal"><a href="../">Accueil</a><a href="./">Fiches</a><a href="../imprimer.html">Examens papier</a></nav>
+<a class="btn-jouer" href="../app/">Jouer gratuitement</a></div>${type === 'website' ? '<!--heros-->' : ''}</header>
 <main>`;
 }
 
 const pied = (lienSignaler) => `</main>
 <footer class="pied">
 <p><b>Mission CEB</b> : entraînement gratuit au CEB (Certificat d'Études de Base, Fédération Wallonie-Bruxelles), sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p>
-<p><a href="../">Ouvrir l'application</a> · <a href="./">Toutes les fiches</a> · <a href="${esc(lienSignaler)}">Signaler une erreur</a></p>
+<p><a href="../">Accueil</a> · <a href="../app/">Ouvrir l'application</a> · <a href="./">Toutes les fiches</a> · <a href="${esc(lienSignaler)}">Signaler une erreur</a></p>
 </footer>
 </body>
 </html>
@@ -148,7 +149,7 @@ ${f.astuce ? `<div class="encart astuce"><h2><img class="ic" src="../assets/ui/a
 <section class="agir">
 <h2>Et maintenant, entraîne-toi !</h2>
 <div class="boutons">
-${nbEx ? `<a class="btn btn-cta" href="../?fiche=${encodeURIComponent(f.id)}">${emo('🎯')} S'entraîner sur cette notion</a>` : `<a class="btn btn-cta" href="../">${emo('🎯')} S'entraîner au CEB</a>`}
+${nbEx ? `<a class="btn btn-cta" href="../app/?fiche=${encodeURIComponent(f.id)}">${emo('🎯')} S'entraîner sur cette notion</a>` : `<a class="btn btn-cta" href="../app/">${emo('🎯')} S'entraîner au CEB</a>`}
 <a class="btn" href="../imprimer.html?mode=fiche&amp;notions=${encodeURIComponent(f.id)}">${emo('🖨️')} Fiche d'exercices à imprimer</a>
 </div>
 <p class="mute">${nbEx ? 'Des questions toujours nouvelles sur cette notion, corrigées tout de suite, avec la règle en cas d\'erreur.' : 'Questions du CEB et exercices corrigés tout de suite.'} Gratuit, sans compte.</p>
@@ -165,16 +166,31 @@ ${pied(signaler)}`;
 function pageIndex(parMatiere, nbFiches) {
   const titre = 'Fiches de révision du CEB : toutes les règles';
   const description = `Les ${nbFiches} règles à connaître pour le CEB en français, maths, histoire-géo et sciences, expliquées simplement. Exemples et exercices gratuits.`;
-  return `${tete({ titre, description, chemin: 'fiches/', type: 'website' })}
-<h1><img class="ic" src="../assets/ui/fiches.webp" alt="" width="48" height="48"> Fiches de révision du CEB</h1>
-<p class="intro">Toutes les règles à connaître pour le CEB, en ${nbFiches} fiches courtes : la règle, un exemple et une astuce. Chaque fiche mène à des exercices corrigés tout de suite.</p>
-<nav class="sommaire" aria-label="Matières">${Object.entries(MATIERES).map(([id, m]) => `<a href="#${id}">${icMat(id)} ${m.nom}</a>`).join('')}</nav>
+  const SOUS = { fr: 'Lire, grammaire, conjugaison, orthographe', ma: 'Nombres, grandeurs, géométrie, données', hg: 'Repères, cartes, Belgique et monde', sc: 'Vivant, matière, énergie' };
+  const heros = `<div class="heros"><p class="sur">Fiches de révision</p><h1>Toutes les règles du CEB, expliquées simplement</h1>
+<p class="intro">${nbFiches} fiches courtes : la règle, un exemple, une astuce, puis des exercices corrigés tout de suite.</p>
+<label class="recherche"><span class="sr">Chercher une fiche</span><input id="cherche" type="search" placeholder="Chercher une règle : participe, aire, siècle…" autocomplete="off"></label></div>`;
+  return `${tete({ titre, description, chemin: 'fiches/', type: 'website' }).replace('<!--heros-->', heros)}
+<nav class="cartes-mat" aria-label="Matières">${Object.entries(MATIERES).map(([id, m]) => `<a class="carte-mat" href="#${id}"><img src="../assets/ui/${id}.webp" alt="" width="88" height="88"><b>${{ fr: 'Français', ma: 'Maths', hg: 'Histoire-géo', sc: 'Sciences' }[id]}</b><small>${SOUS[id]}</small><span>${parMatiere[id].length} fiches →</span></a>`).join('')}</nav>
+<p class="aucun" id="aucun" hidden>Aucune fiche ne correspond. Essaie un autre mot.</p>
 ${Object.entries(MATIERES).map(([id, m]) => `<section class="matiere" id="${id}">
-<h2>${icMat(id)} ${m.nom} <small>${parMatiere[id].length} fiches</small></h2>
+<h2><img src="../assets/ui/${id}.webp" alt="" width="44" height="44"> ${m.nom} <small>${parMatiere[id].length} fiches</small></h2>
 <ul class="liste">
-${parMatiere[id].map((f) => `<li><a href="${f.id}.html">${emo(f.e)} ${esc(f.titre)}</a></li>`).join('\n')}
+${parMatiere[id].map((f) => `<li data-texte="${esc([f.titre, ...f.regle].join(' ').toLowerCase().normalize('NFD').replace(/\p{M}/gu, ''))}"><a href="${f.id}.html">${emo(f.e)}<span>${esc(f.titre)}</span></a></li>`).join('\n')}
 </ul>
 </section>`).join('\n')}
+<script>
+  // Recherche instantanée (sans accents) dans les titres et les règles.
+  const champ = document.getElementById('cherche'), aucun = document.getElementById('aucun');
+  champ.addEventListener('input', () => {
+    const mots = champ.value.toLowerCase().normalize('NFD').replace(/\\p{M}/gu, '').split(/\\s+/).filter(Boolean);
+    let n = 0;
+    document.querySelectorAll('.liste li').forEach((li) => { const ok = mots.every((m) => li.dataset.texte.includes(m)); li.hidden = !ok; n += ok; });
+    document.querySelectorAll('section.matiere').forEach((s) => { s.hidden = !s.querySelector('li:not([hidden])'); });
+    document.querySelector('.cartes-mat').hidden = mots.length > 0;
+    aucun.hidden = n > 0;
+  });
+</script>
 ${pied(`mailto:${ADRESSE_SIGNALEMENT}?subject=${encodeURIComponent('[Mission CEB] Erreur signalée')}`)}`;
 }
 
@@ -203,7 +219,7 @@ ${[SITE, `${SITE}fiches/`, ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].m
 
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [
-    'index.html', 'imprimer.html', 'manifest.webmanifest',
+    'index.html', 'app/index.html', 'imprimer.html', 'manifest.webmanifest',
     ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/avatars/')), ...(await lireDossier('assets/ui/')), ...(await lireDossier('assets/emoji/')),
   ].filter((p) => !/(^|\/)\./.test(p)).sort();
   const h = createHash('sha256');

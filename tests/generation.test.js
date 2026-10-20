@@ -28,7 +28,7 @@ test('une page par fiche, avec titre, description, lien d\'entraînement et cano
     assert.match(h, /"@type":"BreadcrumbList"/);
     assert.match(h, /<meta name="description" content="[^"]{40,260}">/);
     assert.match(h, new RegExp(`<link rel="canonical" href="https://missionceb.be/${p}">`));
-    assert.match(h, /href="\.\.\/(\?fiche=|")/);
+    assert.match(h, /href="\.\.\/app\/(\?fiche=|")/);
     assert.ok(!/undefined|null/.test(h.replace(/<script type="application\/ld\+json">.*?<\/script>/s, '')), p);
   }
   assert.equal((out['sitemap.xml'].match(/<loc>/g) ?? []).length, pages.length + 2);

@@ -5,13 +5,14 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = '708ab0c2f9f7';
+const VERSION = 'ef278c20a59d';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
 const POLICES = 'polices-v1';
 const FICHIERS = [
  "./",
+ "app/index.html",
  "assets/avatars/01-renard.webp",
  "assets/avatars/02-loup.webp",
  "assets/avatars/03-tigre.webp",
@@ -108,6 +109,7 @@ const FICHIERS = [
  "assets/emoji/1f4e6.webp",
  "assets/emoji/1f4f0.webp",
  "assets/emoji/1f500.webp",
+ "assets/emoji/1f512.webp",
  "assets/emoji/1f517.webp",
  "assets/emoji/1f520.webp",
  "assets/emoji/1f522.webp",
@@ -378,8 +380,8 @@ self.addEventListener('fetch', (e) => {
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
   if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
   if (req.mode === 'navigate') {
-    // L'application (index.html, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
-    const page = chemin === '' || chemin === 'index.html' ? 'index.html' : chemin;
+    // Pages du site (accueil, app/, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
+    const page = chemin === '' ? 'index.html' : chemin.endsWith('/') ? `${chemin}index.html` : chemin;
     return e.respondWith(caches.match(page, { ignoreSearch: true, cacheName: COEUR }).then((r) => r ?? reseauDabord(req, PAGES)));
   }
   e.respondWith(copieDabord(req, COEUR));

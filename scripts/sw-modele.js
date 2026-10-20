@@ -60,8 +60,8 @@ self.addEventListener('fetch', (e) => {
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
   if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
   if (req.mode === 'navigate') {
-    // L'application (index.html, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
-    const page = chemin === '' || chemin === 'index.html' ? 'index.html' : chemin;
+    // Pages du site (accueil, app/, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
+    const page = chemin === '' ? 'index.html' : chemin.endsWith('/') ? `${chemin}index.html` : chemin;
     return e.respondWith(caches.match(page, { ignoreSearch: true, cacheName: COEUR }).then((r) => r ?? reseauDabord(req, PAGES)));
   }
   e.respondWith(copieDabord(req, COEUR));

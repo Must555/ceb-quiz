@@ -1,18 +1,20 @@
 <!doctype html>
-<html lang="fr" data-theme="cahier">
+<html lang="fr-BE">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mission CEB — Réussis ton CEB en jouant</title>
 <meta name="description" content="Entraîne-toi gratuitement au CEB : questions illimitées, vrais examens 2015-2026, fiches de révision et défis entre amis. Sans compte et sans publicité.">
-<meta name="theme-color" content="#fdfdfa">
+<script>
+  // Anciens liens (défi entre amis, fiche) partagés avant le déménagement de l'application : on les y renvoie.
+  if (/[?&](defi|fiche)=/.test(location.search)) location.replace('app/' + location.search);
+</script>
+<link rel="canonical" href="https://missionceb.be/">
 <link rel="icon" href="assets/icones/favicon.ico" sizes="16x16 32x32 48x48">
-<link rel="icon" type="image/png" href="assets/icones/favicon-48.png" sizes="48x48">
 <link rel="apple-touch-icon" href="assets/icones/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="apple-mobile-web-app-title" content="Mission CEB">
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="canonical" href="https://missionceb.be/">
+<meta name="theme-color" content="#10245e">
+<meta name="application-name" content="Mission CEB">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mission CEB">
 <meta property="og:locale" content="fr_BE">
@@ -22,28 +24,337 @@
 <meta property="og:image" content="https://missionceb.be/assets/icones/partage.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mission CEB : une fusée qui décolle, entourée de livres, d'un globe et d'un microscope">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="application-name" content="Mission CEB">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mission CEB","alternateName":"missionceb.be","url":"https://missionceb.be/","inLanguage":"fr-BE"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Playwrite+BE+WAL:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css">
-<script>
-  // Applique l'ambiance du dernier joueur avant l'affichage (évite un flash de couleurs).
-  try { const s = JSON.parse(localStorage.getItem('missionceb.v1')); const t = s && s.actif && s.joueurs[s.actif] && s.joueurs[s.actif].theme; if (t) document.documentElement.dataset.theme = ({ neon: 'tableau', pop: 'cahier', sunset: 'cahier', parchemin: 'lecture' })[t] || t; } catch (e) {}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --nuit:#10245e; --bleu:#1d3f9e; --bleu-v:#2f6fe0; --ciel:#cfe0ff; --ciel2:#eaf2ff;
+  --soleil:#f6c445; --soleil-f:#e0a40f; --vert:#1f8a5b; --corail:#e8624f;
+  --txt:#16203a; --mute:#55607a; --panel:#fff; --ligne:#dbe4f5; --fond:#f7f9fe;
+  --r:22px; --titre:'Baloo 2', 'Atkinson Hyperlegible', system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--fond); color:var(--txt); font:18px/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; overflow-x:clip; }
+a { color:inherit; }
+img { display:block; max-width:100%; }
+.conteneur { max-width:1160px; margin:0 auto; padding:0 20px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; font:800 18px/1 var(--titre); padding:16px 26px; border-radius:16px; text-decoration:none; border:0; cursor:pointer; transition:transform .15s, box-shadow .15s; }
+.btn:hover { transform:translateY(-2px); }
+.btn-soleil { background:var(--soleil); color:#1d1a0b; box-shadow:0 4px 0 var(--soleil-f), 0 12px 28px rgba(246,196,69,.35); }
+.btn-clair { background:rgba(255,255,255,.14); color:#fff; box-shadow:inset 0 0 0 2px rgba(255,255,255,.55); }
+.btn-bleu { background:var(--bleu); color:#fff; box-shadow:0 4px 0 #0f2a72; }
+.sur { font:700 14px/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#2459cc; }
+h1, h2, h3 { font-family:var(--titre); line-height:1.08; margin:0; }
+h2 { font-size:clamp(30px, 4vw, 44px); font-weight:800; margin:8px 0 14px; }
+.intro { color:var(--mute); max-width:640px; margin:0 0 34px; font-size:19px; }
+
+/* ---------- En-tête ---------- */
+.haut { position:absolute; inset:0 0 auto; z-index:5; background-color:#0f2360; background-color:transparent; }
+.haut .conteneur { display:flex; align-items:center; gap:18px; height:78px; }
+.marque { display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font:800 22px/1 var(--titre); }
+.marque img { width:46px; height:46px; border-radius:13px; box-shadow:0 4px 14px rgba(0,0,0,.25); }
+.menu { display:flex; gap:4px; margin-left:auto; }
+.menu a { color:#e6eeff; text-decoration:none; font-weight:700; font-size:16px; padding:10px 12px; border-radius:10px; }
+.menu a:hover { background:rgba(255,255,255,.12); color:#fff; }
+.haut .btn { padding:12px 18px; font-size:16px; }
+
+/* ---------- Héros ---------- */
+.heros { position:relative; color:#fff; padding:130px 0 110px; overflow:hidden;
+  background:radial-gradient(900px 500px at 78% 40%, rgba(120,170,255,.45), transparent 60%), radial-gradient(700px 400px at 10% 110%, rgba(246,196,69,.18), transparent 60%), linear-gradient(170deg, #0d1f55 0%, #1a3d99 55%, #3a7be8 100%); }
+.heros::before { content:''; position:absolute; inset:0; background-image:radial-gradient(1.5px 1.5px at 12% 20%, #fff, transparent), radial-gradient(1px 1px at 30% 65%, #fff, transparent), radial-gradient(1.5px 1.5px at 55% 15%, #fff, transparent), radial-gradient(1px 1px at 88% 12%, #fff, transparent), radial-gradient(1.2px 1.2px at 70% 70%, #fff, transparent), radial-gradient(1px 1px at 20% 85%, #fff, transparent); opacity:.6; }
+.heros .vague { position:absolute; left:0; right:0; bottom:-1px; height:90px; background:var(--fond); clip-path:ellipse(70% 100% at 50% 100%); }
+.heros .conteneur { position:relative; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:40px; }
+.heros h1 { font-size:clamp(40px, 6vw, 70px); font-weight:800; letter-spacing:-.01em; }
+.heros h1 span { color:var(--soleil); }
+.heros .sous { font-size:21px; color:#dbe6ff; margin:18px 0 28px; max-width:540px; }
+.actions { display:flex; flex-wrap:wrap; gap:12px; }
+.garanties { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:26px; font-weight:700; font-size:15px; color:#cfdcff; list-style:none; padding:0; }
+.garanties li::before { content:'✓'; color:var(--soleil); font-weight:800; margin-right:6px; }
+.scene { position:relative; width:100%; aspect-ratio:1; max-width:500px; margin-left:auto; }
+.scene .planete { position:absolute; inset:9%; border-radius:50%; background:radial-gradient(circle at 35% 30%, #ffffff33, transparent 55%), radial-gradient(circle, #5d93f0 0%, #2a5bc7 70%); box-shadow:inset -30px -40px 80px rgba(10,25,80,.55), 0 30px 80px rgba(0,0,0,.3); }
+.scene .fusee { position:absolute; left:22%; top:14%; width:56%; border-radius:26%; box-shadow:0 30px 60px rgba(0,0,0,.35); animation:flotte 6s ease-in-out infinite; }
+.scene .ava { position:absolute; width:22%; border-radius:50%; border:5px solid #fff; box-shadow:0 12px 30px rgba(0,0,0,.3); background:var(--ciel); animation:flotte 7s ease-in-out infinite; }
+.scene .a1 { left:0; top:58%; animation-delay:-2s; } .scene .a2 { right:0; top:8%; animation-delay:-4s; } .scene .a3 { right:6%; bottom:2%; width:19%; animation-delay:-1s; }
+.compte { position:absolute; left:-2%; top:6%; z-index:2; background:#fff; color:var(--txt); border-radius:18px; padding:12px 16px; box-shadow:0 16px 40px rgba(0,0,0,.25); font-weight:700; font-size:14px; line-height:1.25; animation:flotte 8s ease-in-out infinite; }
+.compte b { display:block; font:800 30px/1 var(--titre); color:var(--bleu); }
+@keyframes flotte { 50% { transform:translateY(-12px); } }
+@media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+
+/* ---------- Sections ---------- */
+section.bloc { padding:84px 0; }
+.etapes { display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; counter-reset:e; }
+.etape { background:var(--panel); border:1px solid var(--ligne); border-radius:var(--r); padding:26px; position:relative; box-shadow:0 10px 30px rgba(29,63,158,.06); }
+.etape::before { counter-increment:e; content:counter(e); position:absolute; top:-16px; left:24px; width:36px; height:36px; border-radius:50%; background:var(--soleil); color:#1d1a0b; font:800 18px/36px var(--titre); text-align:center; box-shadow:0 3px 0 var(--soleil-f); }
+.etape img { width:92px; height:92px; object-fit:contain; margin:6px 0 10px; }
+.etape h3 { font-size:24px; margin-bottom:6px; }
+.etape p { margin:0; color:var(--mute); font-size:17px; }
+
+.modes { display:grid; grid-template-columns:repeat(5, 1fr); gap:14px; }
+.mode { border-radius:var(--r); padding:22px 16px; color:#fff; text-align:center; text-decoration:none; transition:transform .15s; }
+.mode:hover { transform:translateY(-4px); }
+.mode img { width:84px; height:84px; object-fit:contain; margin:0 auto 10px; filter:drop-shadow(0 6px 8px rgba(0,0,0,.2)); }
+.mode b { display:block; font:800 21px/1.1 var(--titre); }
+.mode small { display:block; opacity:.95; font-size:14px; margin-top:6px; line-height:1.35; }
+.m1 { background:#2552c4 linear-gradient(160deg,#2f6fe0,#1d3f9e); } .m2 { background:#a85a0a linear-gradient(160deg,#c46a0e,#9a4f06); } .m3 { background:#1a7a56 linear-gradient(160deg,#219066,#146b49); } .m4 { background:#bd382d linear-gradient(160deg,#d9483b,#a92b22); } .m5 { background:#6643b2 linear-gradient(160deg,#7b52c9,#5a359f); }
+
+.examens { background:linear-gradient(120deg, var(--nuit), var(--bleu)); color:#fff; border-radius:32px; padding:44px; display:grid; grid-template-columns:1.2fr 1fr; gap:30px; align-items:center; }
+.examens h2 { color:#fff; }
+.examens p { color:#d9e3ff; margin:0 0 22px; }
+.annees { display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; }
+.annees span { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:12px 6px; text-align:center; font:800 20px/1 var(--titre); }
+.annees span.tc { background:var(--soleil); color:#1d1a0b; border-color:var(--soleil); }
+
+.matieres { display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; }
+.matiere { background:var(--panel); border:1px solid var(--ligne); border-radius:var(--r); padding:22px; text-decoration:none; transition:transform .15s, box-shadow .15s; display:flex; flex-direction:column; }
+.matiere:hover { transform:translateY(-4px); box-shadow:0 18px 40px rgba(29,63,158,.12); }
+.matiere img { width:96px; height:96px; object-fit:contain; margin-bottom:10px; }
+.matiere b { font:800 23px/1.1 var(--titre); }
+.matiere small { color:var(--mute); font-size:15px; margin:6px 0 12px; }
+.matiere .lien { margin-top:auto; color:var(--bleu-v); font-weight:700; font-size:15px; }
+
+.parents { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+.atouts { list-style:none; padding:0; margin:0 0 26px; display:grid; gap:14px; }
+.atouts li { display:flex; gap:14px; align-items:flex-start; background:var(--panel); border:1px solid var(--ligne); border-radius:18px; padding:16px 18px; }
+.atouts li img { width:44px; height:44px; flex:none; object-fit:contain; }
+.atouts b { display:block; }
+.atouts span { color:var(--mute); font-size:16px; }
+.carte-bilan { background:var(--panel); border-radius:28px; padding:26px; box-shadow:0 30px 70px rgba(29,63,158,.16); border:1px solid var(--ligne); }
+.carte-bilan .tete { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+.carte-bilan .tete img { width:54px; height:54px; border-radius:50%; border:3px solid #ffd2a6; }
+.carte-bilan .tete b { font:800 20px/1.1 var(--titre); display:block; }
+.barres { display:flex; align-items:flex-end; gap:10px; height:120px; margin:6px 0 14px; padding-bottom:6px; border-bottom:2px solid var(--ligne); }
+.barres i { flex:1; background:linear-gradient(180deg,#5b8ff0,#1d3f9e); border-radius:8px 8px 3px 3px; }
+.jours { display:flex; gap:10px; font-size:13px; color:var(--mute); } .jours span { flex:1; text-align:center; }
+.ligne-mat { display:grid; grid-template-columns:110px 1fr 46px; gap:10px; align-items:center; font-size:15px; margin-top:10px; }
+.ligne-mat .jauge { height:10px; border-radius:99px; background:#e8eefb; position:relative; overflow:hidden; } .ligne-mat .jauge i { position:absolute; inset:0 auto 0 0; border-radius:99px; background:var(--vert); }
+.ligne-mat b { text-align:right; }
+
+.chiffres { display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; text-align:center; }
+.chiffres div { background:var(--panel); border:1px solid var(--ligne); border-radius:var(--r); padding:26px 12px; }
+.chiffres b { display:block; font:800 46px/1 var(--titre); color:var(--bleu); }
+.chiffres span { color:var(--mute); font-size:16px; }
+
+.faq { max-width:820px; margin:0 auto; }
+.faq details { background:var(--panel); border:1px solid var(--ligne); border-radius:18px; padding:4px 22px; margin-bottom:12px; }
+.faq summary { cursor:pointer; font:800 20px/1.3 var(--titre); padding:16px 0; list-style:none; display:flex; justify-content:space-between; gap:12px; }
+.faq summary::after { content:'+'; color:var(--bleu-v); font-size:26px; line-height:1; }
+.faq details[open] summary::after { content:'–'; }
+.faq p { margin:0 0 18px; color:var(--mute); }
+
+.final { text-align:center; color:#fff; background:radial-gradient(600px 300px at 50% 0%, rgba(120,170,255,.4), transparent 70%), linear-gradient(170deg, #0d1f55, #1d3f9e); padding:80px 0; }
+.final h2 { color:#fff; }
+.final p { color:#d9e3ff; margin:0 auto 28px; max-width:560px; }
+.final .avas { display:flex; justify-content:center; margin-bottom:22px; }
+.final .avas img { width:64px; height:64px; border-radius:50%; border:4px solid #fff; margin:0 -8px; background:var(--ciel); }
+footer { background:#0b1a47; color:#b9c6e8; padding:34px 0; font-size:15px; }
+footer .conteneur { display:flex; flex-wrap:wrap; gap:14px 28px; justify-content:space-between; }
+footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
+
+/* Bandeau « joueur qui revient » (affiché par le script si un joueur existe sur l'appareil) */
+.retour-joueur { display:none; align-items:center; gap:12px; background:#fff; color:var(--txt); border-radius:18px; padding:10px 12px 10px 10px; margin-bottom:22px; width:fit-content; box-shadow:0 14px 34px rgba(0,0,0,.25); }
+.retour-joueur.visible { display:flex; }
+.retour-joueur img { width:44px; height:44px; border-radius:50%; background:var(--ciel); }
+.retour-joueur .btn { padding:11px 16px; font-size:16px; }
+
+@media (max-width: 980px) {
+  .menu { display:none; }
+  .heros { padding:110px 0 100px; }
+  .heros .conteneur, .examens, .parents { grid-template-columns:1fr; }
+  .scene { max-width:380px; margin:10px auto 0; }
+  .modes { grid-template-columns:repeat(2, 1fr); } .modes .mode:last-child { grid-column:1 / -1; }
+  .matieres, .chiffres { grid-template-columns:repeat(2, 1fr); }
+  .etapes { grid-template-columns:1fr; gap:30px; }
+}
+@media (max-width: 560px) {
+  .annees span { font-size:17px; padding:11px 2px; }
+  body { font-size:17px; }
+  .haut .btn span { display:none; }
+  .heros .sous { font-size:18px; }
+  .actions .btn { flex:1 1 100%; }
+  section.bloc { padding:60px 0; }
+  .examens { padding:28px 22px; border-radius:24px; }
+  .chiffres b { font-size:36px; }
+  .ligne-mat { grid-template-columns:90px 1fr 40px; }
+}
+</style>
 </head>
 <body>
-  <section class="ecran" id="ecran-connexion"><div style="display:grid;place-items:center;min-height:100vh"><img src="assets/icones/logo-128.png" width="96" height="96" alt="Mission CEB" style="border-radius:22px"></div></section>
-  <section class="ecran" id="ecran-accueil" hidden></section>
-  <section class="ecran" id="ecran-quiz" hidden></section>
-  <section class="ecran" id="ecran-resultat" hidden></section>
-  <section class="ecran" id="ecran-reglages" hidden></section>
-  <section class="ecran" id="ecran-progres" hidden></section>
-  <section class="ecran" id="ecran-fiches" hidden></section>
-  <section class="ecran" id="ecran-parents" hidden></section>
-  <noscript><p style="padding:24px">Mission CEB a besoin de JavaScript pour fonctionner.</p></noscript>
-  <script type="module" src="js/app/app.js"></script>
+<header class="haut">
+  <div class="conteneur">
+    <a class="marque" href="#"><img src="assets/icones/logo-128.png" alt="">Mission CEB</a>
+    <nav class="menu" aria-label="Menu principal"><a href="#fonctionnement">Comment ça marche</a><a href="#fiches">Fiches</a><a href="#examens">Examens</a><a href="#parents">Parents</a><a href="#faq">Questions</a></nav>
+    <a class="btn btn-soleil" href="app/">Jouer <span>gratuitement</span></a>
+  </div>
+</header>
+
+<main>
+<section class="heros">
+  <div class="conteneur">
+    <div>
+      <div class="retour-joueur" id="retour-joueur"><img id="rj-ava" alt="" src="assets/avatars/02-loup.webp"><div><small>Content de te revoir,</small><br><b id="rj-nom">Léa</b></div><a class="btn btn-bleu" href="app/">Continuer ma mission ▶</a></div>
+      <h1>Prépare ton CEB<br>comme une <span>mission</span>.</h1>
+      <p class="sous">Des questions toujours nouvelles, les vrais examens du CEB de 2015 à 2026 et un coach qui t'aide sur tes points faibles. Dix minutes par jour suffisent.</p>
+      <div class="actions">
+        <a class="btn btn-soleil" href="app/">Je suis élève : je commence</a>
+        <a class="btn btn-clair" href="#parents">Je suis parent</a>
+      </div>
+      <ul class="garanties"><li>100 % gratuit</li><li>Sans compte ni e-mail</li><li>Sans publicité</li><li>Aligné sur le tronc commun</li></ul>
+    </div>
+    <div class="scene" aria-hidden="true">
+      <div class="planete"></div>
+      <img class="fusee" src="assets/icones/icone-512.png" alt="">
+      <img class="ava a1" src="assets/avatars/01-renard.webp" alt="">
+      <img class="ava a2" src="assets/avatars/17-astronaute-fille.webp" alt="">
+      <img class="ava a3" src="assets/avatars/13-robot.webp" alt="">
+      <div class="compte">CEB 2027 dans<b id="jours">244 jours</b>lundi 21 juin</div>
+    </div>
+  </div>
+  <div class="vague"></div>
+</section>
+
+<section class="bloc" id="fonctionnement">
+  <div class="conteneur">
+    <p class="sur">Comment ça marche</p>
+    <h2>Trois étapes, et c'est parti</h2>
+    <p class="intro">Pas d'inscription : un pseudo suffit. La progression reste sur ton appareil.</p>
+    <div class="etapes">
+      <div class="etape"><img src="assets/avatars/02-loup.webp" alt="" style="border-radius:50%;background:var(--ciel)"><h3>Choisis ton avatar</h3><p>Un pseudo, un personnage, une ambiance : cahier, tableau ou lecture confortable.</p></div>
+      <div class="etape"><img src="assets/ui/entrainement.webp" alt=""><h3>Joue 10 questions par jour</h3><p>Français, maths, histoire-géo et sciences. Jamais deux fois la même question dans une partie.</p></div>
+      <div class="etape"><img src="assets/ui/astuce.webp" alt=""><h3>Le coach te fait progresser</h3><p>Il repère tes erreurs, te montre la règle et te repose la notion quelques jours plus tard.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" style="padding-top:0">
+  <div class="conteneur">
+    <p class="sur">Cinq façons de jouer</p>
+    <h2>Il y a toujours un mode qui donne envie</h2>
+    <div class="modes">
+      <a class="mode m1" href="app/"><img src="assets/ui/entrainement.webp" alt=""><b>Entraînement</b><small>La difficulté s'adapte à toi</small></a>
+      <a class="mode m2" href="app/"><img src="assets/ui/defi.webp" alt=""><b>Défi du jour</b><small>10 questions, une fois par jour</small></a>
+      <a class="mode m3" href="app/"><img src="assets/ui/examen.webp" alt=""><b>Examen réel</b><small>Livret par livret, chronométré</small></a>
+      <a class="mode m4" href="app/"><img src="assets/ui/chrono.webp" alt=""><b>Chrono</b><small>3 minutes, un maximum de points</small></a>
+      <a class="mode m5" href="app/"><img src="assets/ui/amis.webp" alt=""><b>Défi entre amis</b><small>Les mêmes questions, par lien</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="examens" style="padding-top:0">
+  <div class="conteneur">
+    <div class="examens">
+      <div>
+        <p class="sur" style="color:var(--soleil)">Les vrais examens</p>
+        <h2>Tous les CEB depuis 2015</h2>
+        <p>Les épreuves officielles de la Fédération Wallonie-Bruxelles, avec leurs documents. À l'écran comme le jour J, ou à imprimer avec un corrigé séparé.</p>
+        <a class="btn btn-soleil" href="app/">Passer un examen blanc</a>
+      </div>
+      <div class="annees"><span>2015</span><span>2016</span><span>2017</span><span>2018</span><span>2019</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span><span class="tc">2026 TC</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="fiches" style="padding-top:0">
+  <div class="conteneur">
+    <p class="sur">Fiches de révision</p>
+    <h2>Toutes les règles du CEB, expliquées simplement</h2>
+    <p class="intro">193 fiches courtes : la règle, un exemple, une astuce, puis des exercices corrigés tout de suite.</p>
+    <div class="matieres">
+      <a class="matiere" href="fiches/#fr"><img src="assets/ui/fr.webp" alt=""><b>Français</b><small>Lire, grammaire, conjugaison, orthographe</small><span class="lien">58 fiches →</span></a>
+      <a class="matiere" href="fiches/#ma"><img src="assets/ui/ma.webp" alt=""><b>Maths</b><small>Nombres, grandeurs, géométrie, données</small><span class="lien">55 fiches →</span></a>
+      <a class="matiere" href="fiches/#hg"><img src="assets/ui/hg.webp" alt=""><b>Histoire-géo</b><small>Repères, cartes, Belgique et monde</small><span class="lien">38 fiches →</span></a>
+      <a class="matiere" href="fiches/#sc"><img src="assets/ui/sc.webp" alt=""><b>Sciences</b><small>Vivant, matière, énergie</small><span class="lien">42 fiches →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="parents" style="background:linear-gradient(180deg,var(--fond),#eaf1ff)">
+  <div class="conteneur parents">
+    <div>
+      <p class="sur">Pour les parents</p>
+      <h2>Vous suivez, sans surveiller</h2>
+      <ul class="atouts">
+        <li><img src="assets/ui/progres.webp" alt=""><div><b>Un bilan clair chaque semaine</b><span>Temps passé, réussite par matière, points faibles et repère CEB.</span></div></li>
+        <li><img src="assets/ui/chrono.webp" alt=""><div><b>Une limite de temps, si vous le souhaitez</b><span>De 15 à 90 minutes par jour, protégée par un code parent.</span></div></li>
+        <li><img src="assets/ui/papier.webp" alt=""><div><b>Un plan de révision jusqu'au CEB</b><span>Semaine par semaine, avec des fiches à imprimer.</span></div></li>
+        <li><img src="assets/emoji/1f512.webp" alt=""><div><b>Aucune donnée envoyée</b><span>Pas de compte, pas de publicité : tout reste sur l'appareil de l'enfant.</span></div></li>
+      </ul>
+      <a class="btn btn-bleu" href="app/">Découvrir l'espace parents</a>
+    </div>
+    <div class="carte-bilan" aria-hidden="true">
+      <div class="tete"><img src="assets/avatars/18-ninja-fille.webp" alt=""><div><b>Léa · cette semaine</b><small style="color:var(--mute)">5 jours actifs · 1 h 20</small></div></div>
+      <div class="barres"><i style="height:45%"></i><i style="height:70%"></i><i style="height:30%"></i><i style="height:85%"></i><i style="height:60%"></i><i style="height:0"></i><i style="height:95%"></i></div>
+      <div class="jours"><span>lu</span><span>ma</span><span>me</span><span>je</span><span>ve</span><span>sa</span><span>di</span></div>
+      <div class="ligne-mat"><span>Français</span><div class="jauge"><i style="width:72%"></i></div><b>72 %</b></div>
+      <div class="ligne-mat"><span>Maths</span><div class="jauge"><i style="width:64%"></i></div><b>64 %</b></div>
+      <div class="ligne-mat"><span>Histoire-géo</span><div class="jauge"><i style="width:58%;background:var(--soleil-f)"></i></div><b>58 %</b></div>
+      <div class="ligne-mat"><span>Sciences</span><div class="jauge"><i style="width:80%"></i></div><b>80 %</b></div>
+      <p style="margin:14px 0 0;font-size:13px;color:var(--mute)">Exemple de bilan (données fictives).</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc">
+  <div class="conteneur">
+    <div class="chiffres">
+      <div><b>12</b><span>examens officiels</span></div>
+      <div><b>193</b><span>fiches de révision</span></div>
+      <div><b>222</b><span>familles de questions</span></div>
+      <div><b>0 €</b><span>pour toujours</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="faq" style="padding-top:0">
+  <div class="conteneur">
+    <p class="sur" style="text-align:center">Questions fréquentes</p>
+    <h2 style="text-align:center;margin-bottom:28px">Vous vous demandez peut-être…</h2>
+    <div class="faq">
+      <details open><summary>C'est vraiment gratuit ?</summary><p>Oui. Mission CEB est gratuit, sans abonnement, sans publicité et sans achat dans l'application.</p></details>
+      <details><summary>Faut-il créer un compte ?</summary><p>Non. L'enfant choisit un pseudo et un avatar. Sa progression est enregistrée dans le navigateur de l'appareil ; un code de sauvegarde permet de la retrouver sur un autre appareil.</p></details>
+      <details><summary>Le contenu correspond-il au CEB 2027 ?</summary><p>Le CEB 2027 porte sur les référentiels du tronc commun. Les questions et les fiches suivent ces référentiels, et l'examen 2026 « tronc commun » est proposé en entier.</p></details>
+      <details><summary>Ça marche sur tablette et sans internet ?</summary><p>Oui, sur ordinateur, tablette et téléphone. Après une première visite, Mission CEB fonctionne aussi hors ligne et peut être ajouté à l'écran d'accueil comme une application.</p></details>
+      <details><summary>Qui a fait Mission CEB ?</summary><p>Un projet indépendant, non affilié à la Fédération Wallonie-Bruxelles. Une erreur ? Écrivez à missionceb@outlook.be.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="conteneur">
+    <div class="avas" aria-hidden="true"><img src="assets/avatars/01-renard.webp" alt=""><img src="assets/avatars/12-licorne.webp" alt=""><img src="assets/avatars/15-astronaute.webp" alt=""><img src="assets/avatars/10-dragon.webp" alt=""><img src="assets/avatars/18-ninja-fille.webp" alt=""></div>
+    <h2>Prêt pour ta première mission ?</h2>
+    <p>Choisis ton avatar et réponds à tes 10 premières questions. Ça prend deux minutes.</p>
+    <a class="btn btn-soleil" href="app/">Commencer gratuitement</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="conteneur">
+    <div><b style="color:#fff">Mission CEB</b> · Entraînement gratuit au CEB (Fédération Wallonie-Bruxelles)</div>
+    <nav><a href="app/">Jouer</a><a href="fiches/">Fiches</a><a href="imprimer.html">Examens papier</a><a href="mailto:missionceb@outlook.be">Contact</a></nav>
+  </div>
+</footer>
+
+<script>
+  // Compte à rebours jusqu'au CEB 2027 (lundi 21 juin 2027).
+  const j = Math.ceil((new Date('2027-06-21T08:00:00') - new Date()) / 864e5);
+  if (j > 0) document.getElementById('jours').textContent = `${j} jours`;
+  // Joueur qui revient : bouton direct vers sa mission.
+  try {
+    const s = JSON.parse(localStorage.getItem('missionceb.v1'));
+    const jr = s && s.actif && s.joueurs[s.actif];
+    if (jr) {
+      document.getElementById('rj-nom').textContent = jr.pseudo;
+      const AV = { '🦊':'01-renard','🐺':'02-loup','🐯':'03-tigre','🦁':'04-lion','🐼':'05-panda','🐨':'06-koala','🐸':'07-grenouille','🐙':'08-pieuvre','🦈':'09-requin','🐲':'10-dragon','🦅':'11-aigle','🦄':'12-licorne','🤖':'13-robot','👾':'14-extraterrestre','🧑‍🚀':'15-astronaute','👩‍🚀':'17-astronaute-fille','🥷':'16-ninja','ninja-fille':'18-ninja-fille' };
+      const img = document.getElementById('rj-ava');
+      if (AV[jr.avatar]) img.src = `assets/avatars/${AV[jr.avatar]}.webp`; else img.remove();
+      document.getElementById('retour-joueur').classList.add('visible');
+    }
+  } catch (e) {}
+</script>
 </body>
 </html>

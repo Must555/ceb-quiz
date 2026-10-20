@@ -4,9 +4,9 @@
    ============================================================ */
 :root {
   --texte: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
-  --titre: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --titre: 'Baloo 2', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif; /* même police de titres que la page d'accueil */
   --manuscrit: 'Playwrite BE WAL', 'Segoe Script', cursive;   /* écriture scolaire belge */
-  --r: 14px;
+  --r: 18px;
   --juste: #2e7d32; --faux: #b3261e;
 }
 /* Lecture : confort de lecture — fond crème uni (moins d'éblouissement), texte plus grand et plus aéré,
@@ -708,3 +708,10 @@ a.btn { text-decoration:none; }
 /* ---------- Emojis remplacés à l'affichage (js/app/illustrer.js) ---------- */
 .emo { display:inline-block; width:1.2em; height:1.2em; object-fit:contain; vertical-align:-.22em; }
 .pi { display:inline-block; width:1em; height:1em; vertical-align:-.14em; background-color:currentColor; -webkit-mask:var(--pi) center / contain no-repeat; mask:var(--pi) center / contain no-repeat; }
+
+/* ---------- Harmonisation avec la page d'accueil ---------- */
+/* Lecture (confort, moins de fatigue) : on garde Atkinson Hyperlegible partout, y compris les titres. */
+[data-theme="lecture"] { --titre: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif; }
+.carte { border-radius:20px; }
+.btn { border-radius:16px; }
+.mode, .matiere { border-radius:20px; }
