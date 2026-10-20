@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /maquettes/
+Disallow: /moteur.html
+
+Sitemap: https://missionceb.be/sitemap.xml

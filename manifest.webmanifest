@@ -1,0 +1,21 @@
+{
+ "name": "Mission CEB — Réussis ton CEB en jouant",
+ "short_name": "Mission CEB",
+ "description": "Entraînement au CEB (Fédération Wallonie-Bruxelles) : questions illimitées, vrais examens 2015-2026, fiches, cartes-mémoire et défis entre amis. Gratuit, sans compte.",
+ "lang": "fr-BE",
+ "dir": "ltr",
+ "id": "./",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#1d4a9e",
+ "theme_color": "#1f4e96",
+ "categories": ["education", "kids"],
+ "icons": [
+  { "src": "assets/icones/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+  { "src": "assets/icones/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+  { "src": "assets/icones/icone-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+  { "src": "assets/icones/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+ ]
+}

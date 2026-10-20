@@ -102,7 +102,7 @@ function questionCorrige(q) {
 // ------------------------------------------------------------------ page
 function entete(titre, sousTitre) {
   return `<div class="entete">
-    <div class="marque"><span class="pastille">🚀</span><div><b>Mission CEB</b><small>${esc(titre)}</small></div></div>
+    <div class="marque"><span class="pastille"><img src="assets/icones/logo-128.png" alt="" width="64" height="64"></span><div><b>Mission CEB</b><small>${esc(titre)}</small></div></div>
     <div class="code-bloc"><small>Code</small><b>${examen.code}</b></div>
   </div>
   <p class="sous-titre">${sousTitre}</p>`;

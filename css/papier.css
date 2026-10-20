@@ -154,3 +154,7 @@ main { padding: 8px 16px 40px; }
 }
 
 .figure-q svg { max-width: 120mm; height: auto; }
+
+/* Logo Mission CEB */
+.pastille { background: none; overflow: hidden; }
+.pastille img { width: 100%; height: 100%; display: block; }

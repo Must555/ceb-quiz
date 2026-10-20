@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Site d'entraînement au CEB (FWB) — HTML/CSS/JS natif, sans dépendance.",
   "scripts": {
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "generer": "node scripts/generer.mjs"
   }
 }

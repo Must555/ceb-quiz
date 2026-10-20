@@ -671,3 +671,11 @@ a.btn { text-decoration:none; }
 .duel small { color:var(--mute); }
 .duel .vs { font-family:var(--titre); font-weight:900; color:var(--mute); }
 .niveau-change { font-weight:800; margin-top:6px !important; }
+
+/* ---------- Logo (icône Mission CEB) ---------- */
+.marque .pastille { background:none; overflow:hidden; padding:0; }
+.pastille img { width:100%; height:100%; display:block; border-radius:inherit; }
+
+/* ---------- Mise à jour (hors ligne) ---------- */
+.bandeau-maj { position:fixed; left:50%; transform:translateX(-50%); bottom:calc(84px + env(safe-area-inset-bottom)); z-index:55; width:min(560px, calc(100% - 24px)); display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:12px 14px; border-radius:16px; background:var(--modal); color:var(--txt); border:var(--bord-fort); border-color:var(--accent); box-shadow:0 10px 30px rgba(0,0,0,.25); font-weight:700; }
+.bandeau-maj span { flex:1 1 220px; }

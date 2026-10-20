@@ -46,6 +46,7 @@ async function examenCharge(id) { return (cacheExamens[id] ??= donnees.chargerEx
 // Questions jouables à l'écran d'un examen, éventuellement pour un seul livret.
 const jouables = (ex, livret = null) => ex.questions.filter((q) => q.numerisable !== false && estJouable(q) && (livret == null || q.livret === livret));
 const NOM_MAT = { fr: 'Français', ma: 'Maths', hg: 'Histoire-géo', sc: 'Sciences' };
+let ficheDemandee = null; // ?fiche=… : arrivée depuis une page fiche publique
 let defiRecu = null; // défi reçu par lien (?defi=…), en attente d'être relevé
 let partie = null; // { session, modeJeu, ui, timer, config }
 
@@ -63,6 +64,9 @@ async function demarrer() {
   // Examen blanc proposé par défaut : le plus récent du tronc commun (le CEB 2027 porte sur ces référentiels).
   const dispo = donnees.examens.filter((e) => e.statut !== 'a_encoder');
   choix.examen = (dispo.findLast((e) => e.referentiel === 'tronc_commun') ?? dispo.at(-1))?.id ?? null;
+  // Arrivée depuis une page fiche publique (missionceb.be/fiches/…) : la fiche s'ouvre à l'accueil.
+  const ficheParam = new URL(location.href).searchParams.get('fiche');
+  if (ficheParam && donnees.fiches[ficheParam]) { ficheDemandee = ficheParam; history.replaceState(null, '', location.pathname); }
   // Défi entre amis reçu par lien : on le garde en mémoire et on nettoie l'adresse.
   const code = new URL(location.href).searchParams.get('defi');
   if (code) {
@@ -74,6 +78,35 @@ async function demarrer() {
   // Documents du portfolio : un toucher les ouvre en grand (zoom).
   document.addEventListener('click', (e) => { const img = e.target.closest?.('.doc img'); if (img) ouvrirZoom(img.src, img.alt); });
   joueur ? afficherAccueil() : afficherConnexion();
+  installerHorsLigne();
+}
+
+// Hors ligne : le service worker garde une copie du site. Quand une nouvelle version est publiée,
+// elle se télécharge en arrière-plan et un bandeau propose de l'utiliser (jamais de rechargement imposé).
+function installerHorsLigne() {
+  if (!('serviceWorker' in navigator) || !(location.protocol === 'https:' || location.hostname === 'localhost')) return;
+  // On recharge seulement quand l'enfant a demandé la mise à jour (pas à la toute première installation).
+  let majDemandee = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (majDemandee) { majDemandee = false; location.reload(); } });
+  const proposer = (sw) => {
+    if (document.querySelector('.bandeau-maj')) return;
+    const b = document.createElement('div');
+    b.className = 'bandeau-maj'; b.setAttribute('role', 'status');
+    b.innerHTML = '<span>✨ Une nouvelle version de Mission CEB est prête.</span><button class="btn btn-cta petit">Mettre à jour</button><button class="btn petit" aria-label="Plus tard">Plus tard</button>';
+    const [maj, plusTard] = b.querySelectorAll('button');
+    maj.onclick = () => { maj.disabled = true; majDemandee = true; sw.postMessage('MISE_A_JOUR'); };
+    plusTard.onclick = () => b.remove();
+    document.body.append(b);
+  };
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    if (reg.waiting && navigator.serviceWorker.controller) proposer(reg.waiting);
+    reg.addEventListener('updatefound', () => {
+      const sw = reg.installing;
+      sw?.addEventListener('statechange', () => { if (sw.state === 'installed' && navigator.serviceWorker.controller) proposer(sw); });
+    });
+    // Vérifie s'il y a une mise à jour quand l'enfant revient sur l'onglet.
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+  }).catch(() => { /* pas de hors-ligne : le site marche quand même */ });
 }
 
 // Bouton « Écouter » (lecture à voix haute), si le joueur l'a activée. Jamais pour une question de lecture.
@@ -120,7 +153,7 @@ function afficherConnexion(forcerCreation = false) {
   const nouveau = { avatar: AVATARS[0], couleur: COULEURS[0], theme: ambiance(racine.dataset.theme) };
 
   el.innerHTML = `<div class="connexion"><div class="connexion-boite">
-    <div class="marque"><span class="pastille">🚀</span><div>Mission CEB<small>RÉUSSIS TON CEB EN JOUANT</small></div></div>
+    <div class="marque"><span class="pastille"><img src="assets/icones/logo-128.png" alt="" width="64" height="64"></span><div>Mission CEB<small>RÉUSSIS TON CEB EN JOUANT</small></div></div>
     ${!creation ? `
       <section class="carte">
         <h1 style="margin-bottom:12px">Qui joue ? 👋</h1>
@@ -230,7 +263,7 @@ function afficherAccueil() {
 
   $('#ecran-accueil').innerHTML = `<div class="app">
     <aside class="side">
-      <div class="marque"><span class="pastille">🚀</span><div>Mission CEB<small>SAISON 2027</small></div></div>
+      <div class="marque"><span class="pastille"><img src="assets/icones/logo-128.png" alt="" width="64" height="64"></span><div>Mission CEB<small>SAISON 2027</small></div></div>
       <nav class="nav">
         <button class="actif"><span>🏠</span>Accueil</button>
         <button data-aller="progres"><span>📊</span>Progrès</button>
@@ -386,7 +419,8 @@ function afficherAccueil() {
   $$('[data-aller="fiches"]', el).forEach((b) => b.onclick = afficherFiches);
   $$('[data-aller="parents"]', el).forEach((b) => b.onclick = () => afficherParents(afficherAccueil));
   brancherCoach(el);
-  $('#lancer', el).onclick = lancerPartie;
+  $('#lancer', el).onclick = () => lancerPartie();
+  if (ficheDemandee) { const id = ficheDemandee; ficheDemandee = null; setTimeout(() => ouvrirFicheBiblio(id), 50); }
   majChoix();
 }
 
@@ -1045,7 +1079,7 @@ function afficherFiches() {
   el.innerHTML = `<div class="progres biblio">
     <p><button class="btn" id="retour-accueil">← Accueil</button></p>
     <h1>📘 Mes fiches</h1>
-    <p class="mute" style="margin:0">Toutes les règles à connaître pour le CEB, au même endroit.</p>
+    <p class="mute" style="margin:0">Toutes les règles à connaître pour le CEB, au même endroit. <a href="fiches/">Version web à partager</a></p>
     <section class="carte cartes-memoire">
       <div class="cm-tete"><span class="cm-e" aria-hidden="true">🃏</span><div>
         <h3>Cartes-mémoire</h3>
