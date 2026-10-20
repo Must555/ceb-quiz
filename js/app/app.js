@@ -7,6 +7,7 @@ import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach
 import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, sons, ouvrirZoom } from './confort.js';
 import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
 import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
+import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -45,6 +46,7 @@ async function examenCharge(id) { return (cacheExamens[id] ??= donnees.chargerEx
 // Questions jouables à l'écran d'un examen, éventuellement pour un seul livret.
 const jouables = (ex, livret = null) => ex.questions.filter((q) => q.numerisable !== false && estJouable(q) && (livret == null || q.livret === livret));
 const NOM_MAT = { fr: 'Français', ma: 'Maths', hg: 'Histoire-géo', sc: 'Sciences' };
+let defiRecu = null; // défi reçu par lien (?defi=…), en attente d'être relevé
 let partie = null; // { session, modeJeu, ui, timer, config }
 
 // ============================================================ Démarrage
@@ -61,6 +63,13 @@ async function demarrer() {
   // Examen blanc proposé par défaut : le plus récent du tronc commun (le CEB 2027 porte sur ces référentiels).
   const dispo = donnees.examens.filter((e) => e.statut !== 'a_encoder');
   choix.examen = (dispo.findLast((e) => e.referentiel === 'tronc_commun') ?? dispo.at(-1))?.id ?? null;
+  // Défi entre amis reçu par lien : on le garde en mémoire et on nettoie l'adresse.
+  const code = new URL(location.href).searchParams.get('defi');
+  if (code) {
+    defiRecu = decoderDefi(code);
+    history.replaceState(null, '', location.pathname);
+    if (!defiRecu) setTimeout(() => toast('Ce lien de défi est abîmé : demande à ton ami de te le renvoyer.'), 400);
+  }
   joueur = store.joueurActif();
   // Documents du portfolio : un toucher les ouvre en grand (zoom).
   document.addEventListener('click', (e) => { const img = e.target.closest?.('.doc img'); if (img) ouvrirZoom(img.src, img.alt); });
@@ -251,6 +260,7 @@ function afficherAccueil() {
       </header>
 
       <div class="col-gauche">
+        ${blocDefiRecu()}
         <section class="carte hero">
           <div class="hero-visuel">${ava(joueur, 140).replace('pastille-ava', 'pastille-ava grand-ava')}<span class="niv-badge">NIV. ${nv.n}</span></div>
           <div>
@@ -271,6 +281,7 @@ function afficherAccueil() {
             <button class="mode m2" data-mode="defi" ${defiFait ? 'disabled' : ''}><span class="etiq">${defiFait ? 'Fait ✔' : '1× / jour'}</span><span class="e">🏆</span><b>Défi du jour</b><small>${defiFait ? 'Reviens demain pour un nouveau défi' : '10 questions de toutes les matières'}</small></button>
             <button class="mode m3" data-mode="examen" ${examensDispo.length ? '' : 'disabled'}><span class="e">📝</span><b>Examen blanc</b><small>Les vraies questions du CEB</small></button>
             <button class="mode m4" data-mode="chrono"><span class="etiq">3 min</span><span class="e">⏱️</span><b>Chrono</b><small>Un maximum de bonnes réponses</small></button>
+            <button class="mode m5 mode-large" data-mode="amis"><span class="e">⚔️</span><span><b>Défi entre amis</b><small>Joue 10 questions, puis envoie le lien : ton ami aura exactement les mêmes</small></span></button>
           </div>
         </section>
 
@@ -345,7 +356,7 @@ function afficherAccueil() {
     $('#bloc-livrets', el).hidden = choix.examenMode === 'reel';
     $('#bloc-examen', el).hidden = choix.mode !== 'examen';
     $('#bloc-matieres', el).hidden = choix.mode === 'examen' || choix.mode === 'defi';
-    $('#lancer', el).textContent = { entrainement: 'Lancer la mission →', defi: 'Relever le défi 🏆', examen: choix.examenMode === 'reel' ? 'Commencer l\'examen réel 🎯' : 'Commencer l\'examen 📝', chrono: 'Top chrono ! ⏱️' }[choix.mode];
+    $('#lancer', el).textContent = { entrainement: 'Lancer la mission →', defi: 'Relever le défi 🏆', examen: choix.examenMode === 'reel' ? 'Commencer l\'examen réel 🎯' : 'Commencer l\'examen 📝', chrono: 'Top chrono ! ⏱️', amis: 'Lancer le défi ⚔️' }[choix.mode];
   };
   $$('.mode', el).forEach((b) => b.onclick = () => { choix.mode = b.dataset.mode; majChoix(); });
   $$('.matiere', el).forEach((b) => b.onclick = () => { choix.matiere = b.dataset.mat; majChoix(); });
@@ -366,6 +377,8 @@ function afficherAccueil() {
   majLivrets();
   $$('.puce.chr', el).forEach((b) => b.onclick = () => { choix.examenMode = b.dataset.chr; majChoix(); });
   brancherReprise(el);
+  $('#relever-defi', el)?.addEventListener('click', () => lancerPartie({ defi: defiRecu }));
+  $('#ignorer-defi', el)?.addEventListener('click', () => { defiRecu = null; afficherAccueil(); });
   $$('[data-aller="reglages"]', el).forEach((b) => b.onclick = afficherReglages);
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
   $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
@@ -403,22 +416,30 @@ function afficherPause() {
   $('#pause-ok', fond).focus();
 }
 
-async function lancerPartie() {
+async function lancerPartie({ defi = null } = {}) {
   if (etatTemps(joueur, store.reglagesParents()).atteint) return afficherPause();
-  const modeJeu = choix.mode;
+  const modeJeu = defi ? 'amis' : choix.mode;
   let examen = null;
   const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique };
   let session;
   if (modeJeu === 'entrainement') {
     const coach = poidsCoach(joueur), src = poidsSource(choix.source, choix.matiere);
-    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null, poids: (c) => coach(c) * src(c) });
+    session = new QuizSession(base, { nbQuestions: 10, matieres: choix.matiere ? [choix.matiere] : null, poids: (c) => coach(c) * src(c), adaptatif: true });
   } else if (modeJeu === 'cible') {
-    session = new QuizSession(base, { nbQuestions: 10, maxParModele: 5, poids: poidsCoach(joueur, { mode: 'cible', notion: choix.cible }) });
+    session = new QuizSession(base, { nbQuestions: 10, maxParModele: 5, poids: poidsCoach(joueur, { mode: 'cible', notion: choix.cible }), adaptatif: true, niveauDepart: 1 });
   } else if (modeJeu === 'chrono') {
     session = new QuizSession(base, { nbQuestions: 200, dureeSecondes: 180, matieres: choix.matiere ? [choix.matiere] : null, difficulteMax: 2 });
   } else if (modeJeu === 'defi') {
     // Même défi toute la journée pour ce joueur (graine = date + joueur), sans tenir compte de l'historique.
     session = new QuizSession({ ...base, historique: [] }, { nbQuestions: 10, seed: `${store.aujourdhui()}|${joueur.id}` });
+  } else if (modeJeu === 'amis') {
+    // Même graine + mêmes options = mêmes questions pour les deux amis (ni coach, ni historique).
+    const d = defi ? { graine: defi.graine, matiere: defi.matiere, recu: defi } : { graine: nouvelleGraine(), matiere: choix.matiere, recu: null };
+    if (defi) defiRecu = null;
+    session = new QuizSession({ ...base, historique: [] }, optionsDefi(d));
+    partie = { session, modeJeu, examen: null, fini: false, defi: d };
+    afficherQuiz();
+    return questionSuivante();
   } else if (choix.examenMode === 'reel') {
     return lancerExamenReel(choix.examen);
   } else {
@@ -439,7 +460,7 @@ function afficherQuiz() {
         <div class="barre"><i id="q-prog" style="width:0%"></i></div>
         <span class="compteur" id="q-compteur"></span>
       </div>
-      <div class="puces-etat"><span class="serie-flamme" id="q-serie">🔥 0</span><span id="q-xp">⭐ 0 XP</span><span class="chrono" id="q-chrono" hidden></span><button class="puce-son" id="q-son"></button></div>
+      <div class="puces-etat"><span class="serie-flamme" id="q-serie">🔥 0</span><span id="q-xp">⭐ 0 XP</span><span class="chrono" id="q-chrono" hidden></span><span id="q-niveau" hidden></span><button class="puce-son" id="q-son"></button></div>
       <section class="question" id="q-zone"></section>
     </div>
     <div class="pied-quiz" id="pied"><div class="retour" id="retour" hidden></div>
@@ -475,6 +496,9 @@ function majEtat() {
   $('#q-compteur').textContent = chrono ? `${e.bonnes} ✔` : `${e.index} / ${e.total}`;
   $('#q-serie').textContent = `🔥 ${e.serie}`;
   $('#q-xp').textContent = `⭐ ${e.xp} XP`;
+  const nv = $('#q-niveau');
+  nv.hidden = e.niveau == null;
+  if (e.niveau != null) { nv.textContent = `🎚️ Niveau ${e.niveau}`; nv.title = 'La difficulté s\'adapte : 3 bonnes réponses d\'affilée font monter, 2 erreurs d\'affilée font descendre.'; }
 }
 
 function questionSuivante() {
@@ -523,6 +547,7 @@ function valider(passer) {
     ${montrerBonne ? `<p class="bonne">${q.type === 'ouverte' ? 'Réponse modèle' : 'Réponse'} : ${esc(r.bonneReponse)}</p>` : ''}
     ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}
     ${!ok && !ouverte && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}
+    ${r.niveau && r.niveau.apres !== r.niveau.avant ? `<p class="niveau-change">${r.niveau.apres > r.niveau.avant ? `🚀 Niveau ${r.niveau.apres} : tu es en forme, on corse un peu !` : `🌱 Niveau ${r.niveau.apres} : on reprend en douceur.`}</p>` : ''}
     <button class="lien lien-signaler" id="signaler">⚑ Signaler une erreur</button>`;
   $('#retour').hidden = false;
   $('#voir-regle')?.addEventListener('click', () => ouvrirFiche(q.fiche));
@@ -577,18 +602,61 @@ function afficherResultat(resume, res) {
       <div class="recompense" style="animation-delay:${.2 + i * .15}s"><span class="e">${r.e}</span><div><b>${esc(r.t)}</b><small>${esc(r.s)}</small></div></div>`).join('')}</div>` : ''}
     ${domaines.length ? `<section class="carte par-domaine"><h3 style="margin-bottom:12px">Détail</h3>${domaines.map(([d, v]) => `
       <div class="ligne"><span>${esc(nomDomaine(d))}</span><b>${v.bonnes}/${v.posees}</b><div class="barre"><i style="width:${Math.round((v.bonnes / v.posees) * 100)}%"></i></div></div>`).join('')}</section>` : ''}
+    ${partie.defi ? blocDefiResultat(resume) : ''}
     <div class="actions">
-      <button class="btn btn-cta" id="rejouer">${partie.modeJeu === 'defi' ? 'Nouvelle mission' : partie.modeJeu === 'cible' ? 'Encore une mission ciblée' : 'Rejouer'} 🔁</button>
+      <button class="btn btn-cta" id="rejouer">${partie.modeJeu === 'defi' ? 'Nouvelle mission' : partie.modeJeu === 'cible' ? 'Encore une mission ciblée' : partie.modeJeu === 'amis' ? 'Nouveau défi' : 'Rejouer'} 🔁</button>
       <button class="btn" id="accueil">🏠 Accueil</button>
     </div>
   </div>`;
   montrer('ecran-resultat');
-  if (pct >= 70 || res.nouveauxBadges.length || res.niveauApres > res.niveauAvant) { setTimeout(() => confettis(), 200); sons.fanfare(); }
+  const gagneDefi = partie.defi?.recu && comparer({ bonnes: resume.bonnes, secondes: resume.dureeSecondes }, partie.defi.recu) === 'gagne';
+  if (gagneDefi || pct >= 70 || res.nouveauxBadges.length || res.niveauApres > res.niveauAvant) { setTimeout(() => confettis(), 200); sons.fanfare(); }
   $('#accueil').onclick = afficherAccueil;
+  if (partie.defi) brancherDefiResultat();
   $('#rejouer').onclick = () => {
     if (partie.modeJeu === 'defi') choix.mode = 'entrainement';
+    if (partie.modeJeu === 'amis') choix.mode = 'amis';
     joueur = store.joueurActif();
     lancerPartie();
+  };
+}
+
+// ============================================================ Défi entre amis
+const NOM_MAT_DEFI = { '': 'toutes les matières', fr: 'français', ma: 'maths', hg: 'histoire-géo', sc: 'sciences' };
+const duree = (s) => (s == null ? '' : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`);
+const empreinte = () => empreinteDonnees(donnees.banque, donnees.modeles);
+
+function blocDefiRecu() {
+  const d = defiRecu;
+  if (!d) return '';
+  return `<section class="carte defi-recu">
+    <h3 class="section-titre">⚔️ ${esc(d.pseudo)} te défie !</h3>
+    <p>${NB_QUESTIONS_DEFI} questions de <b>${NOM_MAT_DEFI[d.matiere]}</b>. Score à battre : <b>${d.bonnes} / ${d.total}</b>${d.secondes != null ? ` en ${duree(d.secondes)}` : ''}.</p>
+    ${d.empreinte && d.empreinte !== empreinte() ? '<p class="mute" style="font-size:13px">Le site a changé depuis la création du défi : quelques questions peuvent être différentes.</p>' : ''}
+    <div class="actions"><button class="btn btn-cta" id="relever-defi">Relever le défi ⚔️</button><button class="btn" id="ignorer-defi">Plus tard</button></div>
+  </section>`;
+}
+
+function blocDefiResultat(resume) {
+  const d = partie.defi;
+  const moi = { bonnes: resume.bonnes, secondes: resume.dureeSecondes };
+  const verdict = d.recu ? comparer(moi, d.recu) : null;
+  const titre = { gagne: `🏆 Tu bats ${esc(d.recu?.pseudo)} !`, perdu: `💪 ${esc(d.recu?.pseudo)} gagne cette fois`, egalite: '🤝 Égalité parfaite !' }[verdict] ?? '⚔️ À ton ami de jouer !';
+  partie.lienDefi = lienDefi({ graine: d.graine, matiere: d.matiere, pseudo: joueur.pseudo, bonnes: resume.bonnes, total: resume.questions, secondes: resume.dureeSecondes, empreinte: empreinte() }, location.href);
+  return `<section class="carte defi-resultat">
+    <h3>${titre}</h3>
+    ${d.recu ? `<div class="duel"><div><b>Toi</b><span>${moi.bonnes} / ${resume.questions}</span><small>${duree(moi.secondes)}</small></div><div class="vs">VS</div><div><b>${esc(d.recu.pseudo)}</b><span>${d.recu.bonnes} / ${d.recu.total}</span><small>${duree(d.recu.secondes)}</small></div></div>` : ''}
+    <p>${d.recu ? `Renvoie ton score à ${esc(d.recu.pseudo)}, ou défie un autre ami avec les mêmes questions :` : 'Envoie ce lien à un ami : il aura exactement les mêmes questions et verra ton score.'}</p>
+    <div class="actions">${navigator.share ? '<button class="btn btn-cta" id="partager-defi">📤 Envoyer le défi</button>' : ''}<button class="btn" id="copier-defi">📋 Copier le lien</button></div>
+    <p class="mute" style="font-size:13px;margin:8px 0 0">Le lien contient seulement ton pseudo et ton score. Envoie-le à des amis que tu connais.</p>
+  </section>`;
+}
+function brancherDefiResultat() {
+  const lien = partie.lienDefi;
+  $('#partager-defi')?.addEventListener('click', () => navigator.share({ title: 'Mission CEB : défi !', text: `${joueur.pseudo} te défie sur Mission CEB ⚔️ Fais mieux que moi !`, url: lien }).catch(() => {}));
+  $('#copier-defi').onclick = async () => {
+    try { await navigator.clipboard.writeText(lien); toast('Lien copié ! Colle-le dans un message 📋'); }
+    catch { $('#copier-defi').insertAdjacentHTML('afterend', `<textarea class="champ" readonly rows="3" style="margin-top:8px;font-size:12px">${esc(lien)}</textarea>`); }
   };
 }
 

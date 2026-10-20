@@ -17,7 +17,7 @@
   --panel:#fffcf4; --panel2:#f3ecdb; --ligne:#e0d6bf; --txt:#1f2430; --mute:#545a66;
   --accent:#2b5797; --accent-txt:#fff; --prog:#2b5797; --or:#8a5d00;
   --hero:#fffcf4; --hero-txt:#1f2430; --hero-accent:#2b5797;
-  --m1:#2b5797; --m2:#9a6418; --m3:#2e6a4f; --m4:#8e3a46; --m-txt:#fff;
+  --m1:#2b5797; --m2:#9a6418; --m3:#2e6a4f; --m4:#8e3a46; --m5:#5b4a8a; --m-txt:#fff;
   --mat:#fffcf4; --mat-sel:#e9eef8;
   --cta:#2b5797; --cta-txt:#fff; --cta-ombre:0 3px 0 #1b3b6b;
   --bord:1px solid var(--ligne); --bord-fort:2px solid #d3c7aa; --ombre:0 1px 2px rgba(60,50,30,.05); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.16);
@@ -33,7 +33,7 @@
   --panel:#ffffff; --panel2:#f4f7fc; --ligne:#cbd6ec; --txt:#1c2333; --mute:#566078;
   --accent:#1c3faa; --accent-txt:#fff; --prog:#1c3faa; --or:#9a5b00;
   --hero:#ffffff; --hero-txt:#1c2333; --hero-accent:#1c3faa;
-  --m1:#2451c4; --m2:#c96a12; --m3:#1d7f55; --m4:#c2362c; --m-txt:#fff;
+  --m1:#2451c4; --m2:#c96a12; --m3:#1d7f55; --m4:#c2362c; --m5:#6a3fb5; --m-txt:#fff;
   --mat:#ffffff; --mat-sel:#fff3a0;
   --cta:#1c3faa; --cta-txt:#fff; --cta-ombre:0 3px 0 #10276f;
   --bord:1px solid var(--ligne); --bord-fort:2px solid #b9c7e4; --ombre:0 1px 2px rgba(28,35,51,.06), 0 6px 16px rgba(28,35,51,.06); --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
@@ -46,7 +46,7 @@
   --panel:rgba(255,255,255,.045); --panel2:rgba(255,255,255,.08); --ligne:rgba(240,237,226,.22); --txt:#f2efe4; --mute:#b6c6ba;
   --accent:#f3d36b; --accent-txt:#1e3a2f; --prog:#f3d36b; --or:#f3d36b;
   --hero:rgba(0,0,0,.16); --hero-txt:#f2efe4; --hero-accent:#f3d36b;
-  --m1:#9cc4e8; --m2:#f2bd86; --m3:#a9dcb6; --m4:#f2a7a7; --m-txt:#14261f;
+  --m1:#9cc4e8; --m2:#f2bd86; --m3:#a9dcb6; --m4:#f2a7a7; --m5:#c9b6ef; --m-txt:#14261f;
   --mat:rgba(255,255,255,.045); --mat-sel:rgba(243,211,107,.16);
   --cta:#f3d36b; --cta-txt:#1e3a2f; --cta-ombre:0 3px 0 #b39532;
   --bord:1.5px solid var(--ligne); --bord-fort:2px solid rgba(240,237,226,.32); --ombre:none; --ombre-bouton:inset 0 -3px 0 rgba(0,0,0,.18);
@@ -653,3 +653,21 @@ a.btn { text-decoration:none; }
 .lien-signaler { font-size:13px; color:var(--mute); font-weight:700; margin-top:6px; padding:4px 0; background:none; border:0; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
 .lien-signaler:hover { color:var(--txt); }
 .retour .lien-signaler { display:inline-block; }
+
+/* ---------- Défi entre amis + niveau adaptatif ---------- */
+.m5 { background:var(--m5); }
+.mode-large { grid-column:1 / -1; display:flex; align-items:center; gap:14px; }
+.mode-large .e { margin:0; font-size:30px; }
+.defi-recu { border:var(--bord-fort); border-color:var(--m5); background:color-mix(in srgb, var(--m5) 12%, var(--panel)); }
+.defi-recu p { margin:0 0 10px; }
+.defi-recu .actions { justify-content:flex-start; }
+.defi-resultat { text-align:left; border:var(--bord-fort); border-color:var(--m5); }
+.defi-resultat h3 { font-size:20px; font-weight:900; margin-bottom:10px; }
+.defi-resultat .actions { justify-content:flex-start; }
+.duel { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:10px; margin:0 0 12px; text-align:center; }
+.duel > div:not(.vs) { background:var(--panel2); border:var(--bord); border-radius:14px; padding:10px 6px; }
+.duel b { display:block; font-size:15px; overflow-wrap:anywhere; }
+.duel span { display:block; font-family:var(--titre); font-weight:900; font-size:26px; }
+.duel small { color:var(--mute); }
+.duel .vs { font-family:var(--titre); font-weight:900; color:var(--mute); }
+.niveau-change { font-weight:800; margin-top:6px !important; }

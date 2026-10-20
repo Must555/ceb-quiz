@@ -31,7 +31,12 @@ const PAR_DEFAUT = {
   // Pondération personnalisée (coach) : fonction (questionOuModele) => poids ≥ 0.
   // 0 = jamais tiré ; 5 = cinq fois plus de chances. N'affecte jamais l'anti-répétition.
   poids: null,
+  // Difficulté adaptative : 3 bonnes réponses d'affilée → niveau supérieur, 2 erreurs d'affilée →
+  // niveau inférieur. Les questions proches du niveau visé sortent plus souvent (jamais exclusivement).
+  adaptatif: false,
+  niveauDepart: 2,
 };
+const ECART_POIDS = [1, 0.3, 0.08]; // poids selon l'écart entre la difficulté et le niveau visé
 
 // Jouable à l'écran : un corrigé automatique, ou une question ouverte avec réponse modèle (autoévaluation).
 export const estJouable = (q) => q.reponse != null || (q.type === 'ouverte' && !!q.reponseModele);
@@ -52,6 +57,9 @@ export class QuizSession {
     this.meilleureSerie = 0;
     this.xp = 0;
     this.debut = null;
+    this.niveau = Math.min(this.o.difficulteMax, Math.max(1, this.o.niveauDepart));
+    this.suiteJustes = 0;
+    this.suiteFautes = 0;
 
     if (this.o.mode === 'examen') {
       if (!examen) throw new Error('Le mode examen demande un examen.');
@@ -127,7 +135,9 @@ export class QuizSession {
     const fixes = this.banque.filter((q) => !this.dejaPosee(q) && !(eviterHistorique && this.historique.has(q.id)));
     const modeles = this.modeles.filter((m) =>
       (this.parModele.get(m.id) ?? 0) < this.o.maxParModele && !this.epuises.has(m.id));
-    const poids = this.o.poids ?? (() => 1);
+    const poidsBase = this.o.poids ?? (() => 1);
+    // Sans difficulté connue (vraies questions du CEB), la question reste neutre.
+    const poids = this.o.adaptatif ? (c) => poidsBase(c) * (c.difficulte == null ? 1 : this.poidsNiveau(c.difficulte)) : poidsBase;
     let candidats = [
       ...fixes.map((item) => ({ item, modele: false, w: poids(item) })),
       // `poids` propre au modèle (ex. 0.4 pour une notion hors P6 ou facultative) : il sort moins souvent.
@@ -151,7 +161,11 @@ export class QuizSession {
       for (let k = 0; k < 6; k++) {
         const v = genererVariante(modele, this.rng, exclure);
         if (!v) break;
-        if (this.accepteVariante(v)) { q = v; break; }
+        if (!this.accepteVariante(v)) continue;
+        q ??= v;
+        // Adaptatif : une famille qui mêle plusieurs niveaux rejoue pour s'approcher du niveau visé.
+        if (!this.o.adaptatif || v.difficulte == null || Math.abs(v.difficulte - this.niveau) === 0) { q = v; break; }
+        if (Math.abs(v.difficulte - this.niveau) < Math.abs((q.difficulte ?? this.niveau) - this.niveau)) q = v;
       }
       if (!q || this.dejaPosee(q)) {
         // Modèle épuisé pour cette session : on le retire du tirage.
@@ -182,6 +196,7 @@ export class QuizSession {
       if (res.score > 0) xpGagne = Math.round(10 * (res.score / res.max)); // crédit partiel
     }
     this.xp += xpGagne;
+    const niveau = this.ajusterNiveau(res.correct);
 
     const entree = {
       questionId: q.id, modeleId: q.modeleId ?? null, domaine: q.domaine, notion: q.fiche ?? q.domaine,
@@ -189,7 +204,19 @@ export class QuizSession {
     };
     this.reponses.push(entree);
     this.courante = null;
-    return { ...entree, explication: q.explication, bonneReponse: bonneReponseLisible(q), serie: this.serie };
+    return { ...entree, explication: q.explication, bonneReponse: bonneReponseLisible(q), serie: this.serie, niveau };
+  }
+
+  poidsNiveau(d) { return ECART_POIDS[Math.min(ECART_POIDS.length - 1, Math.abs(d - this.niveau))]; }
+
+  // Renvoie { avant, apres } : `apres !== avant` quand le niveau change.
+  ajusterNiveau(correct) {
+    const avant = this.niveau;
+    if (!this.o.adaptatif || correct === null) return { avant, apres: avant };
+    if (correct) { this.suiteJustes++; this.suiteFautes = 0; } else { this.suiteFautes++; this.suiteJustes = 0; }
+    if (this.suiteJustes >= 3 && this.niveau < this.o.difficulteMax) { this.niveau++; this.suiteJustes = 0; }
+    if (this.suiteFautes >= 2 && this.niveau > 1) { this.niveau--; this.suiteFautes = 0; }
+    return { avant, apres: this.niveau };
   }
 
   passer() { return this.repondre(null); }
@@ -202,6 +229,7 @@ export class QuizSession {
       bonnes: this.reponses.filter((r) => r.correct === true).length,
       serie: this.serie,
       xp: this.xp,
+      niveau: this.o.adaptatif ? this.niveau : null,
       tempsRestant: this.tempsRestant(),
       terminee: this.estTerminee(),
     };
