@@ -58,7 +58,7 @@ self.addEventListener('fetch', (e) => {
   if (url.origin !== self.location.origin) return;
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
-  if (chemin.startsWith('assets/') && !chemin.startsWith('assets/icones/')) return e.respondWith(copieDabord(req, IMAGES));
+  if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
   if (req.mode === 'navigate') {
     // L'application (index.html, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
     const page = chemin === '' || chemin === 'index.html' ? 'index.html' : chemin;

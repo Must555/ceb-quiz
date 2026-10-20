@@ -9,6 +9,7 @@ import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNo
 import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
 import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
 import { AVATARS, avatarDe, emojiAvatar, imgAvatar } from './avatars.js';
+import { ic } from './icones.js';
 import { CEB, LIMITES, hashPin, pinValide, verifierPin, etatTemps, bilanSemaine, indicateurCEB, planRevision, joursEntre, jourCourt, dateLongue } from './parents.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -17,10 +18,10 @@ const racine = document.documentElement;
 
 const COULEURS = ['#ffcf99', '#a7f3d0', '#bfdbfe', '#f5d0fe', '#fecaca', '#fde68a'];
 const MATIERES = [
-  { id: 'fr', e: '📖', nom: 'Français', sous: 'Lire, grammaire, conjugaison' },
-  { id: 'ma', e: '📐', nom: 'Maths', sous: 'Nombres, grandeurs, géométrie' },
-  { id: 'hg', e: '🌍', nom: 'Histoire-Géo', sous: 'Repères, cartes, Belgique' },
-  { id: 'sc', e: '🧪', nom: 'Sciences', sous: 'Vivant, matière, énergie' },
+  { id: 'fr', e: ic('fr'), nom: 'Français', sous: 'Lire, grammaire, conjugaison' },
+  { id: 'ma', e: ic('ma'), nom: 'Maths', sous: 'Nombres, grandeurs, géométrie' },
+  { id: 'hg', e: ic('hg'), nom: 'Histoire-Géo', sous: 'Repères, cartes, Belgique' },
+  { id: 'sc', e: ic('sc'), nom: 'Sciences', sous: 'Vivant, matière, énergie' },
   { id: '', e: '🔀', nom: 'Mix', sous: 'Toutes les matières' },
 ];
 const BRAVO = ['Bien joué !', 'Excellent !', 'Parfait !', 'Trop fort !', 'Exactement !', 'Bravo !', 'Yes !'];
@@ -267,12 +268,12 @@ function afficherAccueil() {
     <aside class="side">
       <div class="marque"><span class="pastille"><img src="assets/icones/logo-128.png" alt="" width="64" height="64"></span><div>Mission CEB<small>SAISON 2027</small></div></div>
       <nav class="nav">
-        <button class="actif"><span>🏠</span>Accueil</button>
-        <button data-aller="progres"><span>📊</span>Progrès</button>
-        <button data-aller="fiches"><span>📘</span>Fiches</button>
-        <a class="nav-lien" href="imprimer.html"><span>🖨️</span>Examen papier</a>
-        <button class="bientot" data-bientot><span>🏅</span>Collection</button>
-        <button data-aller="reglages"><span>🎨</span>Mon style</button>
+        <button class="actif"><span>${ic('accueil')}</span>Accueil</button>
+        <button data-aller="progres"><span>${ic('progres')}</span>Progrès</button>
+        <button data-aller="fiches"><span>${ic('fiches')}</span>Fiches</button>
+        <a class="nav-lien" href="imprimer.html"><span>${ic('papier')}</span>Examen papier</a>
+        <button class="bientot" data-bientot><span>${ic('badges')}</span>Collection</button>
+        <button data-aller="reglages"><span>${ic('style')}</span>Mon style</button>
         <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
         <button data-aller="parents"><span>👪</span>Parents</button>
       </nav>
@@ -286,10 +287,10 @@ function afficherAccueil() {
       <header class="top">
         <div class="salut"><h1>Salut ${esc(joueur.pseudo)} 👋</h1><p>${phrase}</p>${blocTemps()}</div>
         <div class="stats">
-          <div class="stat"><span class="i">⭐</span><div><b>${joueur.xp.toLocaleString('fr-BE')}</b><small>XP</small></div></div>
-          <div class="stat"><span class="i">🔥</span><div><b>${serie}</b><small>jour${serie > 1 ? 's' : ''}</small></div></div>
-          <div class="stat"><span class="i">🏅</span><div><b>${nbBadges}</b><small>badge${nbBadges > 1 ? 's' : ''}</small></div></div>
-          <div class="stat"><span class="i">💎</span><div><b>${joueur.gemmes}</b><small>gemmes</small></div></div>
+          <div class="stat"><span class="i">${ic('xp')}</span><div><b>${joueur.xp.toLocaleString('fr-BE')}</b><small>XP</small></div></div>
+          <div class="stat"><span class="i">${ic('serie')}</span><div><b>${serie}</b><small>jour${serie > 1 ? 's' : ''}</small></div></div>
+          <div class="stat"><span class="i">${ic('badges')}</span><div><b>${nbBadges}</b><small>badge${nbBadges > 1 ? 's' : ''}</small></div></div>
+          <div class="stat"><span class="i">${ic('gemmes')}</span><div><b>${joueur.gemmes}</b><small>gemmes</small></div></div>
           <div class="stat stat-ava"><button data-aller="reglages" aria-label="Mon avatar">${ava(joueur, 42)}</button></div>
         </div>
       </header>
@@ -312,11 +313,11 @@ function afficherAccueil() {
         <section class="carte">
           <h3 class="section-titre">🎮 Mode de jeu</h3>
           <div class="modes">
-            <button class="mode m1" data-mode="entrainement"><span class="e">🎲</span><b>Entraînement</b><small>10 questions au hasard, jamais deux fois la même</small></button>
-            <button class="mode m2" data-mode="defi" ${defiFait ? 'disabled' : ''}><span class="etiq">${defiFait ? 'Fait ✔' : '1× / jour'}</span><span class="e">🏆</span><b>Défi du jour</b><small>${defiFait ? 'Reviens demain pour un nouveau défi' : '10 questions de toutes les matières'}</small></button>
-            <button class="mode m3" data-mode="examen" ${examensDispo.length ? '' : 'disabled'}><span class="e">📝</span><b>Examen blanc</b><small>Les vraies questions du CEB</small></button>
-            <button class="mode m4" data-mode="chrono"><span class="etiq">3 min</span><span class="e">⏱️</span><b>Chrono</b><small>Un maximum de bonnes réponses</small></button>
-            <button class="mode m5 mode-large" data-mode="amis"><span class="e">⚔️</span><span><b>Défi entre amis</b><small>Joue 10 questions, puis envoie le lien : ton ami aura exactement les mêmes</small></span></button>
+            <button class="mode m1" data-mode="entrainement"><span class="e">${ic('entrainement')}</span><b>Entraînement</b><small>10 questions au hasard, jamais deux fois la même</small></button>
+            <button class="mode m2" data-mode="defi" ${defiFait ? 'disabled' : ''}><span class="etiq">${defiFait ? 'Fait ✔' : '1× / jour'}</span><span class="e">${ic('defi')}</span><b>Défi du jour</b><small>${defiFait ? 'Reviens demain pour un nouveau défi' : '10 questions de toutes les matières'}</small></button>
+            <button class="mode m3" data-mode="examen" ${examensDispo.length ? '' : 'disabled'}><span class="e">${ic('examen')}</span><b>Examen blanc</b><small>Les vraies questions du CEB</small></button>
+            <button class="mode m4" data-mode="chrono"><span class="etiq">3 min</span><span class="e">${ic('chrono')}</span><b>Chrono</b><small>Un maximum de bonnes réponses</small></button>
+            <button class="mode m5 mode-large" data-mode="amis"><span class="e">${ic('amis')}</span><span><b>Défi entre amis</b><small>Joue 10 questions, puis envoie le lien : ton ami aura exactement les mêmes</small></span></button>
           </div>
         </section>
 
@@ -371,10 +372,10 @@ function afficherAccueil() {
     </main>
   </div>
   <nav class="navbas">
-    <button class="actif"><span>🏠</span>Accueil</button>
-    <button data-aller="progres"><span>📊</span>Progrès</button>
-    <button data-aller="fiches"><span>📘</span>Fiches</button>
-    <button data-aller="reglages"><span>🎨</span>Mon style</button>
+    <button class="actif"><span>${ic('accueil')}</span>Accueil</button>
+    <button data-aller="progres"><span>${ic('progres')}</span>Progrès</button>
+    <button data-aller="fiches"><span>${ic('fiches')}</span>Fiches</button>
+    <button data-aller="reglages"><span>${ic('style')}</span>Mon style</button>
     <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
   </nav>`;
   montrer('ecran-accueil');
@@ -581,7 +582,7 @@ function valider(passer) {
   $('#retour').innerHTML = `${r.xpGagne ? `<span class="xp-gagne">+${r.xpGagne} XP</span>` : ''}<b>${titre}</b>
     ${r.remarque && !ok && !passer && !ouverte ? `<p>${esc(r.remarque)}</p>` : ''}
     ${montrerBonne ? `<p class="bonne">${q.type === 'ouverte' ? 'Réponse modèle' : 'Réponse'} : ${esc(r.bonneReponse)}</p>` : ''}
-    ${q.explication ? `<p>💡 ${esc(q.explication)}</p>` : ''}
+    ${q.explication ? `<p>${ic('astuce', 'ic-txt')} ${esc(q.explication)}</p>` : ''}
     ${!ok && !ouverte && donnees.fiches[q.fiche] ? `<p><button class="btn btn-fiche" id="voir-regle">📘 Revoir la règle : ${esc(donnees.fiches[q.fiche].titre)}</button></p>` : ''}
     ${r.niveau && r.niveau.apres !== r.niveau.avant ? `<p class="niveau-change">${r.niveau.apres > r.niveau.avant ? `🚀 Niveau ${r.niveau.apres} : tu es en forme, on corse un peu !` : `🌱 Niveau ${r.niveau.apres} : on reprend en douceur.`}</p>` : ''}
     <button class="lien lien-signaler" id="signaler">⚑ Signaler une erreur</button>`;
@@ -732,7 +733,7 @@ function ouvrirSignalement(contexte) {
 // L'état est gardé dans le joueur (`examenReel`) à chaque réponse : fermer la page ne perd rien,
 // mais le chrono d'un livret ouvert continue de tourner (comme en classe).
 let reel = null; // { er, examen, timer, ui, sauvTimer }
-const EMOJI_MAT = { fr: '📖', ma: '🔢', hg: '🌍', sc: '🔬' };
+const EMOJI_MAT = { fr: ic('fr'), ma: ic('ma'), hg: ic('hg'), sc: ic('sc') };
 const minutes = (s) => `${Math.round(s / 60)} min`;
 const pts = (x) => (Math.round(x * 10) / 10).toLocaleString('fr-BE');
 const horlogeTxt = (t) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
@@ -1035,7 +1036,7 @@ function afficherRevueReel(resume, res, erreursSeules) {
       <h3>${esc(q.enonce)}</h3>
       <p><b>Ta réponse :</b> <span class="pre">${ta == null ? '<i>aucune</i>' : esc(ta)}</span></p>
       ${etat !== 'juste' ? `<p class="bonne"><b>${q.type === 'ouverte' ? 'Réponse modèle' : 'Bonne réponse'} :</b> <span class="pre">${esc(bonneReponseLisible(q))}</span></p>` : ''}
-      ${q.explication && etat !== 'juste' ? `<p>💡 ${esc(q.explication)}</p>` : ''}
+      ${q.explication && etat !== 'juste' ? `<p>${ic('astuce', 'ic-txt')} ${esc(q.explication)}</p>` : ''}
       ${fiche && etat !== 'juste' ? `<button class="btn petit btn-fiche" data-f="${esc(q.fiche)}">📘 Revoir la règle : ${esc(fiche.titre)}</button>` : ''}
       <p><button class="lien lien-signaler" data-signaler="${esc(q.id)}">⚑ Signaler une erreur</button></p>
     </article>`;
@@ -1152,7 +1153,7 @@ function afficherCarte() {
         <small class="sur">${f.e} ${esc(f.titre)}</small>
         <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
         <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
-        ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
+        ${f.astuce ? `<div class="encart astuce"><b>${ic('astuce', 'ic-txt')} Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
         ${voix ? '<button class="btn petit btn-voix" id="btn-voix" aria-pressed="false">🔊 Écouter</button>' : ''}
       </section>
     </div>
@@ -1272,7 +1273,7 @@ function ouvrirFiche(id, { cta = null, onCta = null, titreHaut = 'Fiche Rappel',
     ${m.n ? `<p class="mute" style="margin:0 0 10px">${STATUTS[m.statut].e} ${STATUTS[m.statut].nom} · ${Math.round(m.m * 100)} % sur tes ${m.n} dernière${m.n > 1 ? 's' : ''} réponse${m.n > 1 ? 's' : ''}</p>` : ''}
     <ul class="regle">${f.regle.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
     <div class="encart"><b>Exemple</b><p>${esc(f.exemple)}</p></div>
-    ${f.astuce ? `<div class="encart astuce"><b>💡 Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
+    ${f.astuce ? `<div class="encart astuce"><b>${ic('astuce', 'ic-txt')} Astuce</b><p>${esc(f.astuce)}</p></div>` : ''}
     <p style="margin:0"><button class="lien lien-signaler" id="fiche-signaler">⚑ Signaler une erreur dans cette fiche</button></p>
     <div class="modal-actions">${confortDe(joueur).voix && voixDisponible() ? '<button class="btn" id="fiche-voix" aria-pressed="false">🔊 Écouter</button>' : ''}${papier ? `<a class="btn" href="imprimer.html?mode=fiche&notions=${encodeURIComponent(id)}">🖨️ Fiche papier</a>` : ''}${cta ? `<button class="btn btn-cta" id="fiche-cta">${esc(cta)}</button>` : ''}<button class="btn" id="fiche-fermer">Fermer</button></div>
   </div>`;

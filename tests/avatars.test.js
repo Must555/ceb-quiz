@@ -18,3 +18,12 @@ test('les joueurs existants gardent leur avatar (l\'emoji devient le portrait)',
   assert.equal(imgAvatar('🙃'), '🙃', 'avatar inconnu : l\'emoji reste affiché');
   assert.match(imgAvatar('🐺'), /assets\/avatars\/02-loup\.webp/);
 });
+
+test('icônes illustrées : chaque fichier existe et reste léger', async () => {
+  const { ICONES } = await import('../js/app/icones.js');
+  const { stat } = await import('node:fs/promises');
+  for (const n of ICONES) {
+    const s = await stat(new URL(`../assets/ui/${n}.webp`, import.meta.url));
+    assert.ok(s.size < 15000, `${n} : ${s.size} octets`);
+  }
+});

@@ -5,7 +5,7 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = 'a52b236edaa8';
+const VERSION = 'b7ef243b5164';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
@@ -40,6 +40,25 @@ const FICHIERS = [
  "assets/icones/icone-maskable-512.png",
  "assets/icones/logo-128.png",
  "assets/icones/partage.jpg",
+ "assets/ui/accueil.webp",
+ "assets/ui/amis.webp",
+ "assets/ui/astuce.webp",
+ "assets/ui/badges.webp",
+ "assets/ui/chrono.webp",
+ "assets/ui/defi.webp",
+ "assets/ui/entrainement.webp",
+ "assets/ui/examen.webp",
+ "assets/ui/fiches.webp",
+ "assets/ui/fr.webp",
+ "assets/ui/gemmes.webp",
+ "assets/ui/hg.webp",
+ "assets/ui/ma.webp",
+ "assets/ui/papier.webp",
+ "assets/ui/progres.webp",
+ "assets/ui/sc.webp",
+ "assets/ui/serie.webp",
+ "assets/ui/style.webp",
+ "assets/ui/xp.webp",
  "css/app.css",
  "css/fiches.css",
  "css/papier.css",
@@ -90,6 +109,7 @@ const FICHIERS = [
  "js/app/coach.js",
  "js/app/confort.js",
  "js/app/defi-amis.js",
+ "js/app/icones.js",
  "js/app/imprimer.js",
  "js/app/parents.js",
  "js/app/progression.js",
@@ -168,7 +188,7 @@ self.addEventListener('fetch', (e) => {
   if (url.origin !== self.location.origin) return;
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
-  if (chemin.startsWith('assets/') && !chemin.startsWith('assets/icones/')) return e.respondWith(copieDabord(req, IMAGES));
+  if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
   if (req.mode === 'navigate') {
     // L'application (index.html, imprimer.html) vient de la copie de la version installée : code et page restent assortis.
     const page = chemin === '' || chemin === 'index.html' ? 'index.html' : chemin;
