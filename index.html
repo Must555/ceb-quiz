@@ -105,8 +105,8 @@ section.bloc { padding:84px 0; }
 .examens h2 { color:#fff; }
 .examens p { color:#d9e3ff; margin:0 0 22px; }
 .annees { display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; }
-.annees span { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:12px 6px; text-align:center; font:800 20px/1 var(--titre); }
-.annees span.tc { background:var(--soleil); color:#1d1a0b; border-color:var(--soleil); }
+.annees a { color:#fff; text-decoration:none; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:12px 6px; text-align:center; font:800 20px/1 var(--titre); }
+.annees a.tc { background:var(--soleil); color:#1d1a0b; border-color:var(--soleil); } .annees a:hover { background:rgba(255,255,255,.22); }
 
 .matieres { display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; }
 .matiere { background:var(--panel); border:1px solid var(--ligne); border-radius:var(--r); padding:22px; text-decoration:none; transition:transform .15s, box-shadow .15s; display:flex; flex-direction:column; }
@@ -170,7 +170,7 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
   .etapes { grid-template-columns:1fr; gap:30px; }
 }
 @media (max-width: 560px) {
-  .annees span { font-size:17px; padding:11px 2px; }
+  .annees a { font-size:17px; padding:11px 2px; }
   body { font-size:17px; }
   .haut .btn span { display:none; }
   .heros .sous { font-size:18px; }
@@ -250,9 +250,9 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
         <p class="sur" style="color:var(--soleil)">Les vrais examens</p>
         <h2>Tous les CEB depuis 2015</h2>
         <p>Les épreuves officielles de la Fédération Wallonie-Bruxelles, avec leurs documents. À l'écran comme le jour J, ou à imprimer avec un corrigé séparé.</p>
-        <a class="btn btn-soleil" href="app/">Passer un examen blanc</a>
+        <div class="actions"><a class="btn btn-soleil" href="app/">Passer un examen blanc</a><a class="btn btn-clair" href="examens/">Voir les examens par année</a></div>
       </div>
-      <div class="annees"><span>2015</span><span>2016</span><span>2017</span><span>2018</span><span>2019</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span><span class="tc">2026 TC</span></div>
+      <div class="annees"><a href="examens/ceb-2015.html">2015</a><a href="examens/ceb-2016.html">2016</a><a href="examens/ceb-2017.html">2017</a><a href="examens/ceb-2018.html">2018</a><a href="examens/ceb-2019.html">2019</a><a href="examens/ceb-2021.html">2021</a><a href="examens/ceb-2022.html">2022</a><a href="examens/ceb-2023.html">2023</a><a href="examens/ceb-2024.html">2024</a><a href="examens/ceb-2025.html">2025</a><a href="examens/ceb-2026-so.html">2026</a><a class="tc" href="examens/ceb-2026-tc.html">2026 TC</a></div>
     </div>
   </div>
 </section>
@@ -315,7 +315,7 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
     <div class="faq">
       <details open><summary>C'est vraiment gratuit ?</summary><p>Oui. Mission CEB est gratuit, sans abonnement, sans publicité et sans achat dans l'application.</p></details>
       <details><summary>Faut-il créer un compte ?</summary><p>Non. L'enfant choisit un pseudo et un avatar. Sa progression est enregistrée dans le navigateur de l'appareil ; un code de sauvegarde permet de la retrouver sur un autre appareil.</p></details>
-      <details><summary>Le contenu correspond-il au CEB 2027 ?</summary><p>Le CEB 2027 porte sur les référentiels du tronc commun. Les questions et les fiches suivent ces référentiels, et l'examen 2026 « tronc commun » est proposé en entier.</p></details>
+      <details><summary>Le contenu correspond-il au CEB 2027 ?</summary><p>Le CEB 2027 porte sur les référentiels du tronc commun. Les questions et les fiches suivent ces référentiels, et l'examen 2026 « tronc commun » est proposé en entier. Dates et conditions de réussite : voir <a href="ceb-2027/">notre guide du CEB 2027</a>.</p></details>
       <details><summary>Ça marche sur tablette et sans internet ?</summary><p>Oui, sur ordinateur, tablette et téléphone. Après une première visite, Mission CEB fonctionne aussi hors ligne et peut être ajouté à l'écran d'accueil comme une application.</p></details>
       <details><summary>Qui a fait Mission CEB ?</summary><p>Un projet indépendant, non affilié à la Fédération Wallonie-Bruxelles. Une erreur ? Écrivez à missionceb@outlook.be.</p></details>
     </div>
@@ -335,7 +335,7 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
 <footer>
   <div class="conteneur">
     <div><b style="color:#fff">Mission CEB</b> · Entraînement gratuit au CEB (Fédération Wallonie-Bruxelles)</div>
-    <nav><a href="app/">Jouer</a><a href="fiches/">Fiches</a><a href="imprimer.html">Examens papier</a><a href="mailto:missionceb@outlook.be">Contact</a></nav>
+    <nav><a href="app/">Jouer</a><a href="exercices/">Exercices</a><a href="fiches/">Fiches</a><a href="examens/">Anciens examens</a><a href="ceb-2027/">CEB 2027</a><a href="reviser-le-ceb/">Bien réviser</a><a href="imprimer.html">Examens papier</a><a href="mailto:missionceb@outlook.be">Contact</a></nav>
   </div>
 </footer>
 
