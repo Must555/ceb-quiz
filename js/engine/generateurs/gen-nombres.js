@@ -200,7 +200,7 @@ const nombresLettres = famille([
       const t = s.split(''); [t[i], t[i + 1]] = [t[i + 1], t[i]];
       if (t[0] !== '0') variantes.push(Number(t.join('')));
     }
-    variantes.push(n * 10, Math.floor(n / 10), n + 10 ** (s.length - 1 - rng.int(0, 1)), Number(s.replace(/0/, '')) || n + 1);
+    variantes.push(n * 10, n + 10 ** (s.length - 1 - rng.int(0, 1)), n + 1, Number(s.replace(/0/, '')) || n + 10);
     const fausses = rng.shuffle(dedoublonner(variantes).filter((v) => v !== n && v > 0)).map(enLettres);
     const c = qcm(rng, enLettres(n), fausses);
     if (!c) return null;
@@ -275,7 +275,11 @@ const valeurPosition = famille([
     if (!ps.length) return null;
     const p = rng.pick(ps);
     const d = nb.chiffres[p];
-    const autres = Object.keys(RANGS).map(Number).filter((x) => x !== p && Math.abs(x - p) <= 3);
+    // Distracteurs : uniquement des rangs présents dans le nombre (la vraie confusion à travailler),
+    // jamais des dixièmes pour un nombre entier ni des milliers pour 964.
+    const presents = Object.keys(nb.chiffres).map(Number);
+    if (presents.length < 4) return null;
+    const autres = presents.filter((x) => x !== p);
     const c = qcm(rng, `${d} ${RANGS[p].pl}`, rng.shuffle(autres).map((x) => `${d} ${RANGS[x].pl}`));
     if (!c) return null;
     return {
@@ -485,6 +489,12 @@ const comparerDecimaux = famille([
     if (!vals) return null;
     const max = rng.next() < 0.5;
     const bon = max ? Math.max(...vals) : Math.min(...vals);
+    // Le piège doit jouer : la stratégie fautive (comparer les parties décimales comme des entiers,
+    // « 18,907 > 18,79 car 907 > 79 ») doit donner une autre réponse que la bonne.
+    const naif = (m) => { const [e, d = ''] = fmt(m / 1000).split(','); return [Number(e.replace(/\s/g, '')), Number(d || 0)]; };
+    const cmpNaif = (a, b) => { const [ea, da] = naif(a); const [eb, db] = naif(b); return ea - eb || da - db; };
+    const triNaif = [...vals].sort(cmpNaif);
+    if ((max ? triNaif[triNaif.length - 1] : triNaif[0]) === bon) return null;
     const c = qcm(rng, aff(bon), vals.filter((v) => v !== bon).map(aff));
     if (!c) return null;
     return {
@@ -553,7 +563,7 @@ const intercaler = famille([
     const B = A + pas;
     const bon = A + rng.int(1, 9) * (pas / 10);
     const ent = Math.floor(A / 1000);
-    const fausses = [A - rng.int(1, 9) * pas / 10, B + rng.int(1, 9) * pas / 10, ent * 1000 + (A % 1000) / 10 + rng.int(1, 9), A + 10 * pas + rng.int(1, 9) * pas / 10]
+    const fausses = [A - rng.int(1, 9) * pas / 10, B + rng.int(1, 9) * pas / 10, ent * 1000 + (A % 1000) / 10 + rng.int(1, 9), rng.pick([A, B])] // la borne elle-même n'est pas « comprise entre »
       .filter((x) => x > 0 && (x <= A || x >= B) && x % 1 === 0);
     const c = qcm(rng, aff(bon), fausses.map(aff));
     if (!c) return null;
@@ -698,8 +708,9 @@ const suites = famille([
     const fausses = [
       S.op === '+' ? `− ${fmt(S.s)}` : S.op === '−' ? `+ ${fmt(S.s)}` : S.op === '×' ? `: ${S.s}` : `× ${S.s}`,
       d > 0 ? `+ ${fmt(d)}` : `− ${fmt(-d)}`,
-      S.op === '+' || S.op === '−' ? '× 2' : `+ ${fmt(Math.abs(d))}`,
-      `${S.op === '−' ? '−' : '+'} ${fmt(r(S.s * 2))}`,
+      // Distracteurs voisins : même opération avec un autre pas (jamais « × 2 » pour une suite de + 0,1).
+      S.op === '+' || S.op === '−' ? `${S.op} ${fmt(r(S.s / 2))}` : `+ ${fmt(Math.abs(d))}`,
+      S.op === '+' || S.op === '−' ? `${S.op} ${fmt(r(S.s * 2))}` : `${S.op} ${fmt(r(S.s * 10))}`,
       S.op === '+' || S.op === '−' ? `${S.op} ${fmt(r(S.s * 10))}` : `× ${S.s + 1}`,
     ].filter((x) => x !== S.regle);
     const c = qcm(rng, S.regle, fausses);
@@ -716,6 +727,8 @@ const suites = famille([
 // FRACTIONS
 // ---------------------------------------------------------------------------
 const fr = (n, d) => `${n}/${d}`;
+// Garde un seul candidat par valeur : deux distracteurs égaux (2/3 et 4/6) trahiraient qu'aucun n'est la bonne réponse.
+const uniquesEnValeur = (cands) => cands.filter((x, i) => cands.findIndex((y) => y[0] * x[1] === x[0] * y[1]) === i);
 const lesFr = (n, d) => (n > 1 ? `les ${n}/${d}` : `${n}/${d}`);
 function fractionIrreductible(rng, dMax = 12) {
   for (let i = 0; i < 50; i++) {
@@ -744,7 +757,7 @@ const fractionsEquivalentes = famille([
     const k = rng.int(2, 6);
     const cands = [[a + k, b + k], [a * k, b * (k + 1)], [a * k + 1, b * k], [b, a], [a * (k + 1), b * k], [a + 1, b + 1], [a * k, b + k], [a * 2, b * 3]]
       .filter((x) => fracOk(x) && !egales(x, [a, b]));
-    const c = qcm(rng, fr(a * k, b * k), cands.map((x) => fr(...x)));
+    const c = qcm(rng, fr(a * k, b * k), uniquesEnValeur(cands).map((x) => fr(...x)));
     if (!c) return null;
     return {
       ...c, difficulte: 2,
@@ -758,7 +771,7 @@ const fractionsEquivalentes = famille([
     const f = rng.pick(range(2, k - 1).filter((x) => k % x === 0));
     const cands = [[a * k / f, b * k / f], [a + 1, b], [a, b + 1], [b, a], [a * k / f, b * k], [a + 2, b + 1]]
       .filter((x) => fracOk(x) && x[0] !== x[1] && !(x[0] === a && x[1] === b) && !(x[0] === a * k && x[1] === b * k));
-    const c = qcm(rng, fr(a, b), cands.map((x) => fr(...x)));
+    const c = qcm(rng, fr(a, b), uniquesEnValeur(cands).map((x) => fr(...x)));
     if (!c) return null;
     return {
       ...c, difficulte: 2,
@@ -919,7 +932,7 @@ const fracDecPct = famille([
     const p = r(f.v * 100);
     const cands = [[1, p], [p, 10], [f.d, f.n], [f.n, f.d + 1], [f.n + 1, f.d], [1, f.d], [p, 1000]]
       .filter((x) => fracOk(x) && !egales(x, [f.n, f.d]));
-    const c = qcm(rng, fr(f.n, f.d), cands.map((x) => fr(...x)));
+    const c = qcm(rng, fr(f.n, f.d), uniquesEnValeur(cands).map((x) => fr(...x)));
     if (!c) return null;
     return {
       ...c, difficulte: 2,
@@ -934,11 +947,14 @@ const fracDecPct = famille([
     const formes = [{ t: fmt(f.v) }, { t: `${fmt(p)} %` }, { t: fr(f.n, f.d) }];
     const cible = rng.pick(formes);
     const bonne = rng.pick(formes.filter((x) => x !== cible));
+    // Erreurs de conversion typiques, écrites dans la même notation que la bonne réponse
+    // (sinon on reconnaît la bonne réponse à sa forme).
+    const genre = (t) => (t.includes('%') ? 'pct' : t.includes('/') ? 'frac' : 'dec');
     const fausses = [
-      { t: `${fmt(f.n)} %`, v: f.n / 100 }, { t: fmt(r(f.n / 10)), v: r(f.n / 10) }, { t: `${fmt(r(p / 10))} %`, v: r(p / 1000) },
-      { t: fr(f.d, f.n), v: f.d / f.n }, { t: fmt(r(f.v * 10)), v: r(f.v * 10) }, { t: `${fmt(f.d)} %`, v: f.d / 100 },
-      { t: fmt(r(f.v + 1)), v: r(f.v + 1) },
-    ].filter((x) => Math.abs(x.v - f.v) > 1e-9 && x.t !== cible.t).map((x) => x.t);
+      { t: `${fmt(f.n)} %`, v: f.n / 100 }, { t: `${fmt(r(p / 10))} %`, v: r(p / 1000) }, { t: `${fmt(r(p * 10))} %`, v: r(p / 10) },
+      { t: fmt(r(f.n / 10)), v: r(f.n / 10) }, { t: fmt(r(f.v * 10)), v: r(f.v * 10) }, { t: fmt(r(f.v / 10)), v: r(f.v / 10) },
+      { t: fr(f.d, f.n), v: f.d / f.n }, { t: fr(p, 10), v: p / 10 }, { t: fr(f.n, f.d * 10), v: f.n / (f.d * 10) },
+    ].filter((x) => Math.abs(x.v - f.v) > 1e-9 && x.t !== cible.t && genre(x.t) === genre(bonne.t) && nbDecimales(x.v) <= 4).map((x) => x.t);
     const c = qcm(rng, bonne.t, fausses);
     if (!c) return null;
     return {
@@ -1046,9 +1062,9 @@ const additionFractions = famille([
     const a = rng.int(1, d - 1); const b = rng.int(1, d - 1);
     if (plus ? a + b >= d : a <= b) return null;
     const res = plus ? a + b : a - b;
-    const cands = plus ? [[a + b, d + d], [a * b, d], [a + b + 1, d], [Math.abs(a - b), d], [a + b, d * d]]
+    const cands = plus ? [[a + b, d + d], [a + b + 1, d], [Math.abs(a - b), d], [a + b, d - 1], [a + b - 1, d]]
       : [[res, d + d], [a + b, d], [res + 1, d], [res, d - 1], [res, 0]];
-    const c = qcm(rng, fr(res, d), cands.filter((x) => fracOk(x) && !egales(x, [res, d])).map((x) => fr(...x)));
+    const c = qcm(rng, fr(res, d), uniquesEnValeur(cands.filter((x) => fracOk(x) && !egales(x, [res, d]) && !egales(x, [a, d]) && !egales(x, [b, d]))).map((x) => fr(...x)));
     if (!c) return null;
     return {
       ...c, difficulte: 2,
@@ -1065,7 +1081,7 @@ const additionFractions = famille([
     const mange = rng.next() < 0.5;
     const res = mange ? a + b : d - a - b;
     const cands = [[a + b, d + d], [mange ? d - a - b : a + b, d], [res + 1, d], [res, d + 1], [res - 1, d]];
-    const c = qcm(rng, fr(res, d), cands.filter((x) => fracOk(x) && !egales(x, [res, d])).map((x) => fr(...x)));
+    const c = qcm(rng, fr(res, d), uniquesEnValeur(cands.filter((x) => fracOk(x) && !egales(x, [res, d]) && !egales(x, [a, d]) && !egales(x, [b, d]))).map((x) => fr(...x)));
     if (!c) return null;
     return {
       ...c, difficulte: 2,
@@ -1539,9 +1555,9 @@ const termeManquant = famille([
       () => { const n = rng.int(12, 80); const k = rng.pick([6, 12, 24]); return { e: `Un livreur transporte ${n} casiers de ${k} bouteilles. Quel calcul permet de trouver le nombre de bouteilles ?`, bon: `${n} × ${k}`, f: [`${n} + ${k}`, `${n} : ${k}`, `${n} − ${k}`] }; },
       () => { const b = rng.int(15, 40); const a = rng.int(3, 9); return { e: `Au basket, ${P.n} a marqué ${a} points de moins que ${P.il === 'elle' ? 'sa coéquipière' : 'son coéquipier'}, qui en a marqué ${b}. Quel calcul donne le nombre de points ${/^[AEIOUÉH]/.test(P.n) ? "d'" : 'de '}${P.n} ?`, bon: `${b} − ${a}`, f: [`${b} + ${a}`, `${b} × ${a}`, `${b} : ${a}`] }; },
       () => { const k = rng.int(3, 8); const n = k * rng.int(6, 25); return { e: `${n} billes sont partagées équitablement entre ${k} enfants. Quel calcul donne le nombre de billes par enfant ?`, bon: `${n} : ${k}`, f: [`${n} × ${k}`, `${n} − ${k}`, `${n} + ${k}`] }; },
-      () => { const n = rng.int(120, 400); const k = rng.int(20, n - 20); return { e: `Un livre a ${n} pages. ${P.n} en a déjà lu ${k}. Quel calcul donne le nombre de pages qui restent à lire ?`, bon: `${n} − ${k}`, f: [`${n} + ${k}`, `${k} − ${n}`, `${n} : ${k}`] }; },
+      () => { const n = rng.int(120, 400); const k = rng.int(20, n - 20); return { e: `Un livre a ${n} pages. ${P.n} en a déjà lu ${k}. Quel calcul donne le nombre de pages qui restent à lire ?`, bon: `${n} − ${k}`, f: [`${n} + ${k}`, `${n} × ${k}`, `${n} : ${k}`] }; },
       () => { const n = rng.int(2, 9); const p = decimal(rng, 1.5, 9.5, 1); const s = rng.int(8, 30); return { e: `${P.n} achète ${n} cahiers à ${eur(p)} pièce et un sac à ${s} €. Quel calcul donne le prix total ?`, bon: `(${n} × ${fmt(p)}) + ${s}`, f: [`${n} × (${fmt(p)} + ${s})`, `${n} + ${fmt(p)} + ${s}`, `(${n} + ${fmt(p)}) × ${s}`] }; },
-      () => { const k = rng.pick([4, 5, 6, 8]); const g = rng.int(40, 120); const f = k * rng.int(Math.ceil((g + 40) / k), Math.floor((g + 120) / k)) - g; return { e: `Une école compte ${g} garçons et ${f} filles, répartis en ${k} groupes égaux. Quel calcul donne le nombre d'élèves par groupe ?`, bon: `(${g} + ${f}) : ${k}`, f: [`${g} + (${f} : ${k})`, `(${g} + ${f}) × ${k}`, `(${g} − ${f}) : ${k}`] }; },
+      () => { const k = rng.pick([4, 5, 6, 8]); const g = rng.int(40, 120); const f = k * rng.int(Math.ceil((g + 40) / k), Math.floor((g + 120) / k)) - g; return { e: `Une école compte ${g} garçons et ${f} filles, répartis en ${k} groupes égaux. Quel calcul donne le nombre d'élèves par groupe ?`, bon: `(${g} + ${f}) : ${k}`, f: [`${g} + (${f} : ${k})`, `(${g} + ${f}) × ${k}`, `${g} + ${f} : ${k}`] }; },
       () => { const t = rng.int(100, 300); const d = rng.int(20, 90); return { e: `Un train transporte ${t} voyageurs. À la gare, ${d} personnes descendent et ${d + rng.int(5, 30)} montent. Quel calcul donne le nombre de voyageurs dans le train ?`, bon: null, t, d }; },
     ])();
     if (!cas.bon) {
@@ -1940,6 +1956,7 @@ const REALISTES = [
   ['aire', "L'aire d'une feuille A4 est d'environ", 600, 'cm²'], ['aire', "L'aire d'un timbre-poste est d'environ", 6, 'cm²'],
   ['aire', "L'aire d'une classe est d'environ", 60, 'm²'], ['aire', "L'aire de la forêt de Soignes est d'environ", 4400, 'ha'],
 ];
+const ECHELLES_UNITES = { masse: ['mg', 'cg', 'dg', 'g', 'dag', 'hg', 'kg', 't'], longueur: ['mm', 'cm', 'dm', 'm', 'dam', 'hm', 'km'], capacite: ['ml', 'cl', 'dl', 'l', 'dal', 'hl'] };
 const UNITES_REALISTES = { masse: ['mg', 'g', 'kg', 't'], longueur: ['mm', 'cm', 'm', 'km'], capacite: ['ml', 'cl', 'l', 'hl'], duree: ['s', 'min', 'h', 'jours'], aire: ['cm²', 'm²', 'ha', 'km²'] };
 // Volumes et capacités d'objets courants (valeurs arrondies, ordre de grandeur).
 const VOLUMES_REALISTES = [
@@ -1960,7 +1977,15 @@ const CAPACITES_LITRES = [
 const mesuresRealistes = famille([
   forme((rng) => {
     const [g, phrase, v, u] = rng.pick(REALISTES);
-    const choix = UNITES_REALISTES[g];
+    // 4 unités voisines sur l'échelle complète (comme au CEB : « 280… mg, g, kg, dg »), et non
+    // toujours les mêmes 4 unités, qui donnaient « 12 mg » pour un autobus.
+    const echelle = ECHELLES_UNITES[g] ?? UNITES_REALISTES[g];
+    const iu = echelle.indexOf(u);
+    let choix = UNITES_REALISTES[g];
+    if (iu >= 0 && echelle.length > 4) {
+      const debut = Math.max(0, Math.min(echelle.length - 4, iu - rng.int(1, 2)));
+      choix = rng.shuffle(echelle.slice(debut, debut + 4));
+    }
     return {
       type: 'qcm', choix, reponse: choix.indexOf(u), difficulte: 1,
       enonce: `${phrase} ${fmt(v)}…`,
@@ -1969,7 +1994,7 @@ const mesuresRealistes = famille([
   }, 2),
   forme((rng) => {
     const [g, phrase, v, u] = rng.pick(REALISTES.filter(([, p]) => /d'environ$/.test(p)));
-    const fausses = [r(v * 10), r(v / 10), r(v * 100), r(v * 1000), r(v / 100)].filter((x) => x >= 0.1 && nbDecimales(x) <= 2).map((x) => `${fmt(x)} ${u}`);
+    const fausses = [r(v * 10), r(v / 10), r(v * 100), r(v / 100)].filter((x) => x >= 0.1 && nbDecimales(x) <= 2).map((x) => `${fmt(x)} ${u}`); // ordres de grandeur voisins (×10, ×100), pas ×1000
     const c = qcm(rng, `${fmt(v)} ${u}`, fausses);
     if (!c) return null;
     const debut = phrase.replace(/ est d'environ$/, '');
@@ -1992,7 +2017,7 @@ const mesuresRealistes = famille([
   // Volumes et capacités : la valeur la plus vraisemblable.
   forme((rng) => {
     const [phrase, v, u] = rng.pick([...VOLUMES_REALISTES, ...CAPACITES_LITRES].filter(([p]) => /d'environ$/.test(p)));
-    const fausses = [r(v * 10), r(v / 10), r(v * 100), r(v * 1000), r(v / 100)].filter((x) => x >= 0.1 && nbDecimales(x) <= 2).map((x) => `${fmt(x)} ${u}`);
+    const fausses = [r(v * 10), r(v / 10), r(v * 100), r(v / 100)].filter((x) => x >= 0.1 && nbDecimales(x) <= 2).map((x) => `${fmt(x)} ${u}`); // ordres de grandeur voisins (×10, ×100), pas ×1000
     const c = qcm(rng, `${fmt(v)} ${u}`, fausses);
     if (!c) return null;
     return {
@@ -2220,8 +2245,11 @@ const cercle = famille([
       ['La surface à l\'intérieur d\'un cercle s\'appelle…', 'le disque'],
     ];
     const [e, bon] = rng.pick(items);
-    const tous = ['le rayon', 'le diamètre', 'le centre', 'la circonférence', 'un compas', 'le disque', 'une équerre', 'la diagonale'];
-    const c = qcm(rng, bon, rng.shuffle(tous.filter((x) => x !== bon)));
+    // Distracteurs de la même nature : des parties du cercle pour une notion, des instruments pour un instrument.
+    const notions = ['le rayon', 'le diamètre', 'le centre', 'la circonférence', 'le disque', 'la corde'];
+    const instruments = ['un compas', 'une équerre', 'une règle graduée', 'un rapporteur'];
+    const pool = bon === 'un compas' ? instruments : notions;
+    const c = qcm(rng, bon, rng.shuffle(pool.filter((x) => x !== bon)));
     return {
       ...c, difficulte: 1,
       enonce: e,
@@ -2363,6 +2391,8 @@ const durees = famille([
     const paires = [];
     for (let a = 0; a < 4; a++) for (let b = a + 1; b < 4; b++) paires.push([a, b]);
     if (paires.filter(([a, b]) => pool[a][1] + pool[b][1] + trajet === dispo).length !== 1) return null;
+    // Au moins deux mauvaises paires proches (à 15 min près) : on doit calculer, pas seulement estimer.
+    if (paires.filter(([a, b]) => Math.abs(pool[a][1] + pool[b][1] + trajet - dispo) > 0 && Math.abs(pool[a][1] + pool[b][1] + trajet - dispo) <= 15).length < 2) return null;
     const txt = ([a, b]) => `${majusculeN(pool[a][0])} et ${pool[b][0]}`;
     const bonne = txt([Math.min(i, j), Math.max(i, j)]);
     const c = qcm(rng, bonne, rng.shuffle(paires.filter(([a, b]) => !(a === Math.min(i, j) && b === Math.max(i, j)))).map(txt));
@@ -2625,7 +2655,10 @@ const pourcentages = famille([
   }),
   forme((rng) => {
     const cas = rng.pick([[50, 'la moitié'], [25, 'le quart'], [75, 'les trois quarts'], [10, 'le dixième'], [20, 'le cinquième'], [100, 'le tout']]);
-    const c = qcm(rng, cas[1], ['la moitié', 'le quart', 'les trois quarts', 'le dixième', 'le cinquième', 'le tout', 'le tiers'].filter((x) => x !== cas[1]));
+    // Les fractions les plus proches en valeur : « le tout » pour 10 % s'éliminerait sans réfléchir.
+    const FR_PCT = [['la moitié', 50], ['le quart', 25], ['les trois quarts', 75], ['le dixième', 10], ['le cinquième', 20], ['le tout', 100], ['le tiers', 33.3], ['le vingtième', 5], ['les deux tiers', 66.7]];
+    const proches = FR_PCT.filter(([t]) => t !== cas[1]).sort((x, y) => Math.abs(x[1] - cas[0]) - Math.abs(y[1] - cas[0])).slice(0, 3).map(([t]) => t);
+    const c = qcm(rng, cas[1], proches);
     return {
       ...c, difficulte: 1,
       enonce: `Prendre ${cas[0]} % d'une quantité, c'est prendre…`,
@@ -3043,7 +3076,7 @@ function enonceCalcul(rng, P) {
 const ENONCES_CALCUL = [
   { calc: (a, b, c) => `(${a} × ${b}) + ${c}`, e: (P, a, b, c) => `${P.n} achète ${a} paquets de ${b} images. Son ami lui en donne encore ${c}. Combien d'images a-t-${P.il} ?` },
   { calc: (a, b, c) => `(${a} × ${b}) − ${c}`, e: (P, a, b, c) => `${P.n} achète ${a} paquets de ${b} images. ${P.il === 'elle' ? 'Elle' : 'Il'} en donne ${c} à son ami. Combien lui en reste-t-il ?` },
-  { calc: (a, b, c) => `(${a} + ${b}) × ${c}`, e: (P, a, b, c) => `Un club compte ${a} filles et ${b} garçons. Chaque membre reçoit ${c} images. Combien d'images faut-il ?` },
+  { calc: (a, b, c) => `(${a} + ${b}) × ${c}`, e: (P, a, b, c) => `${P.n} achète ${a} paquets d'images rouges et ${b} paquets d'images bleues. Chaque paquet contient ${c} images. Combien d'images a-t-${P.il} ?` },
   { calc: (a, b, c) => `${a} × (${b} + ${c})`, e: (P, a, b, c) => `${P.n} achète ${a} pochettes. Chaque pochette contient ${b} images et ${c} autocollants. Combien d'objets a-t-${P.il} en tout ?` },
   { calc: (a, b, c) => `${a} + (${b} × ${c})`, e: (P, a, b, c) => `${P.n} a déjà ${a} images. ${P.il === 'elle' ? 'Elle' : 'Il'} achète ${b} paquets de ${c} images. Combien d'images a-t-${P.il} maintenant ?` },
   { calc: (a, b, c) => `(${a} + ${b}) : ${c}`, e: (P, a, b, c) => `${P.n} a ${a} images et en reçoit ${b}. ${P.il === 'elle' ? 'Elle' : 'Il'} les range dans un album, ${c} par page. Combien de pages remplit-${P.il} ?` },

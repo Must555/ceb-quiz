@@ -104,9 +104,16 @@ const FORMES = {
       const acc = [...bonnes, ...liste(it[`${forme.champ}_accepte`]).map(aff)];
       return { ...base, type: 'texte_court', reponse: acc, souple: forme.souple ?? true };
     }
-    const faux = forme.distracteurs
+    let faux = forme.distracteurs
       ? liste(it[forme.distracteurs]).map(aff)
       : rng.shuffle(valeursDe(modele, forme, items));
+    // Valeurs numériques (axes, faces, arêtes…) : les plus proches de la bonne réponse,
+    // pour éviter « 8 axes » pour un triangle.
+    const num = (v) => Number(String(v).replace(',', '.'));
+    if (!forme.distracteurs && faux.every((v) => !Number.isNaN(num(v))) && !Number.isNaN(num(bonnes[0]))) {
+      const b = num(bonnes[0]);
+      faux = [...faux].sort((x, y) => Math.abs(num(x) - b) - Math.abs(num(y) - b) || rng.next() - 0.5);
+    }
     const distracteurs = [...new Set(faux)].filter((v) => !bonnes.includes(v)).slice(0, (forme.choix ?? 4) - 1);
     if (distracteurs.length < 1) return null;
     const choix = forme.ordreFixe
