@@ -1,0 +1,10 @@
+/* Polices hébergées sur le site (plus de passage par Google Fonts : affichage plus rapide, aucune donnée envoyée).
+   Les polices « … secours » imitent la taille des vraies polices pendant leur chargement : le texte ne bouge pas quand elles arrivent. */
+@font-face { font-family:'Baloo 2'; src:url(../assets/polices/baloo-2.woff2) format('woff2'); font-weight:400 800; font-style:normal; font-display:swap; }
+@font-face { font-family:'Atkinson Hyperlegible'; src:url(../assets/polices/atkinson-400-normal.woff2) format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Atkinson Hyperlegible'; src:url(../assets/polices/atkinson-700-normal.woff2) format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Atkinson Hyperlegible'; src:url(../assets/polices/atkinson-400-italic.woff2) format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Playwrite BE WAL'; src:url(../assets/polices/playwrite-300.woff2) format('woff2'); font-weight:300; font-display:swap; }
+@font-face { font-family:'Playwrite BE WAL'; src:url(../assets/polices/playwrite-400.woff2) format('woff2'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Baloo 2 secours'; src:local('Arial Bold'), local('Arial-BoldMT'), local('Roboto Bold'), local('Roboto-Bold'), local('Helvetica Bold'); font-weight:400 900; size-adjust:94%; ascent-override:114.7%; descent-override:55.8%; line-gap-override:0%; }
+@font-face { font-family:'Atkinson secours'; src:local('Arial'), local('ArialMT'), local('Roboto'), local('Roboto-Regular'), local('Helvetica'); size-adjust:98.6%; ascent-override:96.4%; descent-override:29.4%; line-gap-override:0%; }

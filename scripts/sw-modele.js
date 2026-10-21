@@ -9,7 +9,6 @@ const VERSION = '__VERSION__';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
-const POLICES = 'polices-v1';
 const FICHIERS = __FICHIERS__;
 
 self.addEventListener('install', (e) => {
@@ -20,7 +19,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('activate', (e) => {
   e.waitUntil((async () => {
-    for (const nom of await caches.keys()) if (nom.startsWith('coeur-') && nom !== COEUR) await caches.delete(nom);
+    for (const nom of await caches.keys()) if ((nom.startsWith('coeur-') && nom !== COEUR) || nom === 'polices-v1') await caches.delete(nom); // polices-v1 : ancienne copie des polices Google
     await self.clients.claim();
   })());
 });
@@ -55,8 +54,6 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  // Polices Google : gardées après la première visite.
-  if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') return e.respondWith(copieDabord(req, POLICES));
   if (url.origin !== self.location.origin) return;
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));

@@ -26,28 +26,28 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mission CEB","alternateName":"missionceb.be","url":"https://missionceb.be/","inLanguage":"fr-BE"}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/polices/baloo-2.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/polices/atkinson-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/polices.css">
 <style>
 :root {
   --nuit:#10245e; --bleu:#1d3f9e; --bleu-v:#2f6fe0; --ciel:#cfe0ff; --ciel2:#eaf2ff;
   --soleil:#f6c445; --soleil-f:#e0a40f; --vert:#1f8a5b; --corail:#e8624f;
   --txt:#16203a; --mute:#55607a; --panel:#fff; --ligne:#dbe4f5; --fond:#f7f9fe;
-  --r:22px; --titre:'Baloo 2', 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --r:22px; --titre:'Baloo 2','Baloo 2 secours', 'Atkinson Hyperlegible','Atkinson secours', system-ui, sans-serif;
   color-scheme: light;
 }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { margin:0; background:var(--fond); color:var(--txt); font:18px/1.6 'Atkinson Hyperlegible', system-ui, sans-serif; overflow-x:clip; }
+body { margin:0; background:var(--fond); color:var(--txt); font:18px/1.6 'Atkinson Hyperlegible','Atkinson secours', system-ui, sans-serif; overflow-x:clip; }
 a { color:inherit; }
-img { display:block; max-width:100%; }
+img { display:block; max-width:100%; height:auto; }
 .conteneur { max-width:1160px; margin:0 auto; padding:0 20px; }
 .btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; font:800 18px/1 var(--titre); padding:16px 26px; border-radius:16px; text-decoration:none; border:0; cursor:pointer; transition:transform .15s, box-shadow .15s; }
 .btn:hover { transform:translateY(-2px); }
 .btn-soleil { background:var(--soleil); color:#1d1a0b; box-shadow:0 4px 0 var(--soleil-f), 0 12px 28px rgba(246,196,69,.35); }
 .btn-clair { background:rgba(255,255,255,.14); color:#fff; box-shadow:inset 0 0 0 2px rgba(255,255,255,.55); }
 .btn-bleu { background:var(--bleu); color:#fff; box-shadow:0 4px 0 #0f2a72; }
-.sur { font:700 14px/1 'Atkinson Hyperlegible', system-ui, sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#2459cc; }
+.sur { font:700 14px/1 'Atkinson Hyperlegible','Atkinson secours', system-ui, sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#2459cc; }
 h1, h2, h3 { font-family:var(--titre); line-height:1.08; margin:0; }
 h2 { font-size:clamp(30px, 4vw, 44px); font-weight:800; margin:8px 0 14px; }
 .intro { color:var(--mute); max-width:640px; margin:0 0 34px; font-size:19px; }
@@ -185,7 +185,7 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
 <body>
 <header class="haut">
   <div class="conteneur">
-    <a class="marque" href="#"><img src="assets/icones/logo-128.png" alt="">Mission CEB</a>
+    <a class="marque" href="#"><img width="96" height="96" src="assets/icones/logo-96.webp" alt="">Mission CEB</a>
     <nav class="menu" aria-label="Menu principal"><a href="#fonctionnement">Comment ça marche</a><a href="#fiches">Fiches</a><a href="#examens">Examens</a><a href="#parents">Parents</a><a href="#faq">Questions</a></nav>
     <a class="btn btn-soleil" href="app/">Jouer <span>gratuitement</span></a>
   </div>
@@ -195,7 +195,22 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
 <section class="heros">
   <div class="conteneur">
     <div>
-      <div class="retour-joueur" id="retour-joueur"><img id="rj-ava" alt="" src="assets/avatars/02-loup.webp"><div><small>Content de te revoir,</small><br><b id="rj-nom">Léa</b></div><a class="btn btn-bleu" href="app/">Continuer ma mission ▶</a></div>
+      <div class="retour-joueur" id="retour-joueur"><img width="320" height="320" id="rj-ava" alt="" src="assets/avatars/02-loup.webp"><div><small>Content de te revoir,</small><br><b id="rj-nom">Léa</b></div><a class="btn btn-bleu" href="app/">Continuer ma mission ▶</a></div>
+      <script>
+  // Affiché ici, avant le premier dessin de la page : rien ne bouge ensuite.
+  // Joueur qui revient : bouton direct vers sa mission.
+  try {
+    const s = JSON.parse(localStorage.getItem('missionceb.v1'));
+    const jr = s && s.actif && s.joueurs[s.actif];
+    if (jr) {
+      document.getElementById('rj-nom').textContent = jr.pseudo;
+      const AV = { '🦊':'01-renard','🐺':'02-loup','🐯':'03-tigre','🦁':'04-lion','🐼':'05-panda','🐨':'06-koala','🐸':'07-grenouille','🐙':'08-pieuvre','🦈':'09-requin','🐲':'10-dragon','🦅':'11-aigle','🦄':'12-licorne','🤖':'13-robot','👾':'14-extraterrestre','🧑‍🚀':'15-astronaute','👩‍🚀':'17-astronaute-fille','🥷':'16-ninja','ninja-fille':'18-ninja-fille' };
+      const img = document.getElementById('rj-ava');
+      if (AV[jr.avatar]) img.src = `assets/avatars/${AV[jr.avatar]}.webp`; else img.remove();
+      document.getElementById('retour-joueur').classList.add('visible');
+    }
+  } catch (e) {}
+</script>
       <h1>Prépare ton CEB<br>comme une <span>mission</span>.</h1>
       <p class="sous">Des questions toujours nouvelles, les vrais examens du CEB de 2015 à 2026 et un coach qui t'aide sur tes points faibles. Dix minutes par jour suffisent.</p>
       <div class="actions">
@@ -206,11 +221,15 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
     </div>
     <div class="scene" aria-hidden="true">
       <div class="planete"></div>
-      <img class="fusee" src="assets/icones/icone-512.png" alt="">
-      <img class="ava a1" src="assets/avatars/01-renard.webp" alt="">
-      <img class="ava a2" src="assets/avatars/17-astronaute-fille.webp" alt="">
-      <img class="ava a3" src="assets/avatars/13-robot.webp" alt="">
-      <div class="compte">CEB 2027 dans<b id="jours">244 jours</b>lundi 21 juin</div>
+      <img width="400" height="400" class="fusee" src="assets/icones/fusee-400.webp" fetchpriority="high" alt="">
+      <img width="320" height="320" class="ava a1" src="assets/avatars/01-renard.webp" alt="">
+      <img width="320" height="320" class="ava a2" src="assets/avatars/17-astronaute-fille.webp" alt="">
+      <img width="320" height="320" class="ava a3" src="assets/avatars/13-robot.webp" alt="">
+      <div class="compte">CEB 2027 dans<b id="jours">244 jours</b><script>
+  // Compte à rebours jusqu'au CEB 2027 (lundi 21 juin 2027).
+  const j = Math.ceil((new Date('2027-06-21T08:00:00') - new Date()) / 864e5);
+  if (j > 0) document.getElementById('jours').textContent = `${j} jours`;
+</script>lundi 21 juin</div>
     </div>
   </div>
   <div class="vague"></div>
@@ -222,9 +241,9 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
     <h2>Trois étapes, et c'est parti</h2>
     <p class="intro">Pas d'inscription : un pseudo suffit. La progression reste sur ton appareil.</p>
     <div class="etapes">
-      <div class="etape"><img src="assets/avatars/02-loup.webp" alt="" style="border-radius:50%;background:var(--ciel)"><h3>Choisis ton avatar</h3><p>Un pseudo, un personnage, une ambiance : cahier, tableau ou lecture confortable.</p></div>
-      <div class="etape"><img src="assets/ui/entrainement.webp" alt=""><h3>Joue 10 questions par jour</h3><p>Français, maths, histoire-géo et sciences. Jamais deux fois la même question dans une partie.</p></div>
-      <div class="etape"><img src="assets/ui/astuce.webp" alt=""><h3>Le coach te fait progresser</h3><p>Il repère tes erreurs, te montre la règle et te repose la notion quelques jours plus tard.</p></div>
+      <div class="etape"><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/02-loup.webp" alt="" style="border-radius:50%;background:var(--ciel)"><h3>Choisis ton avatar</h3><p>Un pseudo, un personnage, une ambiance : cahier, tableau ou lecture confortable.</p></div>
+      <div class="etape"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/entrainement.webp" alt=""><h3>Joue 10 questions par jour</h3><p>Français, maths, histoire-géo et sciences. Jamais deux fois la même question dans une partie.</p></div>
+      <div class="etape"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/astuce.webp" alt=""><h3>Le coach te fait progresser</h3><p>Il repère tes erreurs, te montre la règle et te repose la notion quelques jours plus tard.</p></div>
     </div>
   </div>
 </section>
@@ -234,11 +253,11 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
     <p class="sur">Cinq façons de jouer</p>
     <h2>Il y a toujours un mode qui donne envie</h2>
     <div class="modes">
-      <a class="mode m1" href="app/"><img src="assets/ui/entrainement.webp" alt=""><b>Entraînement</b><small>La difficulté s'adapte à toi</small></a>
-      <a class="mode m2" href="app/"><img src="assets/ui/defi.webp" alt=""><b>Défi du jour</b><small>10 questions, une fois par jour</small></a>
-      <a class="mode m3" href="app/"><img src="assets/ui/examen.webp" alt=""><b>Examen réel</b><small>Livret par livret, chronométré</small></a>
-      <a class="mode m4" href="app/"><img src="assets/ui/chrono.webp" alt=""><b>Chrono</b><small>3 minutes, un maximum de points</small></a>
-      <a class="mode m5" href="app/"><img src="assets/ui/amis.webp" alt=""><b>Défi entre amis</b><small>Les mêmes questions, par lien</small></a>
+      <a class="mode m1" href="app/"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/entrainement.webp" alt=""><b>Entraînement</b><small>La difficulté s'adapte à toi</small></a>
+      <a class="mode m2" href="app/"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/defi.webp" alt=""><b>Défi du jour</b><small>10 questions, une fois par jour</small></a>
+      <a class="mode m3" href="app/"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/examen.webp" alt=""><b>Examen réel</b><small>Livret par livret, chronométré</small></a>
+      <a class="mode m4" href="app/"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/chrono.webp" alt=""><b>Chrono</b><small>3 minutes, un maximum de points</small></a>
+      <a class="mode m5" href="app/"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/amis.webp" alt=""><b>Défi entre amis</b><small>Les mêmes questions, par lien</small></a>
     </div>
   </div>
 </section>
@@ -263,10 +282,10 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
     <h2>Toutes les règles du CEB, expliquées simplement</h2>
     <p class="intro">193 fiches courtes : la règle, un exemple, une astuce, puis des exercices corrigés tout de suite.</p>
     <div class="matieres">
-      <a class="matiere" href="fiches/#fr"><img src="assets/ui/fr.webp" alt=""><b>Français</b><small>Lire, grammaire, conjugaison, orthographe</small><span class="lien">58 fiches →</span></a>
-      <a class="matiere" href="fiches/#ma"><img src="assets/ui/ma.webp" alt=""><b>Maths</b><small>Nombres, grandeurs, géométrie, données</small><span class="lien">55 fiches →</span></a>
-      <a class="matiere" href="fiches/#hg"><img src="assets/ui/hg.webp" alt=""><b>Histoire-géo</b><small>Repères, cartes, Belgique et monde</small><span class="lien">38 fiches →</span></a>
-      <a class="matiere" href="fiches/#sc"><img src="assets/ui/sc.webp" alt=""><b>Sciences</b><small>Vivant, matière, énergie</small><span class="lien">42 fiches →</span></a>
+      <a class="matiere" href="fiches/#fr"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/fr.webp" alt=""><b>Français</b><small>Lire, grammaire, conjugaison, orthographe</small><span class="lien">58 fiches →</span></a>
+      <a class="matiere" href="fiches/#ma"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/ma.webp" alt=""><b>Maths</b><small>Nombres, grandeurs, géométrie, données</small><span class="lien">55 fiches →</span></a>
+      <a class="matiere" href="fiches/#hg"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/hg.webp" alt=""><b>Histoire-géo</b><small>Repères, cartes, Belgique et monde</small><span class="lien">38 fiches →</span></a>
+      <a class="matiere" href="fiches/#sc"><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/sc.webp" alt=""><b>Sciences</b><small>Vivant, matière, énergie</small><span class="lien">42 fiches →</span></a>
     </div>
   </div>
 </section>
@@ -277,15 +296,15 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
       <p class="sur">Pour les parents</p>
       <h2>Vous suivez, sans surveiller</h2>
       <ul class="atouts">
-        <li><img src="assets/ui/progres.webp" alt=""><div><b>Un bilan clair chaque semaine</b><span>Temps passé, réussite par matière, points faibles et repère CEB.</span></div></li>
-        <li><img src="assets/ui/chrono.webp" alt=""><div><b>Une limite de temps, si vous le souhaitez</b><span>De 15 à 90 minutes par jour, protégée par un code parent.</span></div></li>
-        <li><img src="assets/ui/papier.webp" alt=""><div><b>Un plan de révision jusqu'au CEB</b><span>Semaine par semaine, avec des fiches à imprimer.</span></div></li>
-        <li><img src="assets/emoji/1f512.webp" alt=""><div><b>Aucune donnée envoyée</b><span>Pas de compte, pas de publicité : tout reste sur l'appareil de l'enfant.</span></div></li>
+        <li><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/progres.webp" alt=""><div><b>Un bilan clair chaque semaine</b><span>Temps passé, réussite par matière, points faibles et repère CEB.</span></div></li>
+        <li><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/chrono.webp" alt=""><div><b>Une limite de temps, si vous le souhaitez</b><span>De 15 à 90 minutes par jour, protégée par un code parent.</span></div></li>
+        <li><img loading="lazy" decoding="async" width="128" height="128" src="assets/ui/papier.webp" alt=""><div><b>Un plan de révision jusqu'au CEB</b><span>Semaine par semaine, avec des fiches à imprimer.</span></div></li>
+        <li><img loading="lazy" decoding="async" width="72" height="72" src="assets/emoji/1f512.webp" alt=""><div><b>Aucune donnée envoyée</b><span>Pas de compte, pas de publicité : tout reste sur l'appareil de l'enfant.</span></div></li>
       </ul>
       <a class="btn btn-bleu" href="app/">Découvrir l'espace parents</a>
     </div>
     <div class="carte-bilan" aria-hidden="true">
-      <div class="tete"><img src="assets/avatars/18-ninja-fille.webp" alt=""><div><b>Léa · cette semaine</b><small style="color:var(--mute)">5 jours actifs · 1 h 20</small></div></div>
+      <div class="tete"><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/18-ninja-fille.webp" alt=""><div><b>Léa · cette semaine</b><small style="color:var(--mute)">5 jours actifs · 1 h 20</small></div></div>
       <div class="barres"><i style="height:45%"></i><i style="height:70%"></i><i style="height:30%"></i><i style="height:85%"></i><i style="height:60%"></i><i style="height:0"></i><i style="height:95%"></i></div>
       <div class="jours"><span>lu</span><span>ma</span><span>me</span><span>je</span><span>ve</span><span>sa</span><span>di</span></div>
       <div class="ligne-mat"><span>Français</span><div class="jauge"><i style="width:72%"></i></div><b>72 %</b></div>
@@ -324,7 +343,7 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
 
 <section class="final">
   <div class="conteneur">
-    <div class="avas" aria-hidden="true"><img src="assets/avatars/01-renard.webp" alt=""><img src="assets/avatars/12-licorne.webp" alt=""><img src="assets/avatars/15-astronaute.webp" alt=""><img src="assets/avatars/10-dragon.webp" alt=""><img src="assets/avatars/18-ninja-fille.webp" alt=""></div>
+    <div class="avas" aria-hidden="true"><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/01-renard.webp" alt=""><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/12-licorne.webp" alt=""><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/15-astronaute.webp" alt=""><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/10-dragon.webp" alt=""><img loading="lazy" decoding="async" width="320" height="320" src="assets/avatars/18-ninja-fille.webp" alt=""></div>
     <h2>Prêt pour ta première mission ?</h2>
     <p>Choisis ton avatar et réponds à tes 10 premières questions. Ça prend deux minutes.</p>
     <a class="btn btn-soleil" href="app/">Commencer gratuitement</a>
@@ -339,22 +358,6 @@ footer a { color:#e6eeff; text-decoration:none; margin-right:18px; }
   </div>
 </footer>
 
-<script>
-  // Compte à rebours jusqu'au CEB 2027 (lundi 21 juin 2027).
-  const j = Math.ceil((new Date('2027-06-21T08:00:00') - new Date()) / 864e5);
-  if (j > 0) document.getElementById('jours').textContent = `${j} jours`;
-  // Joueur qui revient : bouton direct vers sa mission.
-  try {
-    const s = JSON.parse(localStorage.getItem('missionceb.v1'));
-    const jr = s && s.actif && s.joueurs[s.actif];
-    if (jr) {
-      document.getElementById('rj-nom').textContent = jr.pseudo;
-      const AV = { '🦊':'01-renard','🐺':'02-loup','🐯':'03-tigre','🦁':'04-lion','🐼':'05-panda','🐨':'06-koala','🐸':'07-grenouille','🐙':'08-pieuvre','🦈':'09-requin','🐲':'10-dragon','🦅':'11-aigle','🦄':'12-licorne','🤖':'13-robot','👾':'14-extraterrestre','🧑‍🚀':'15-astronaute','👩‍🚀':'17-astronaute-fille','🥷':'16-ninja','ninja-fille':'18-ninja-fille' };
-      const img = document.getElementById('rj-ava');
-      if (AV[jr.avatar]) img.src = `assets/avatars/${AV[jr.avatar]}.webp`; else img.remove();
-      document.getElementById('retour-joueur').classList.add('visible');
-    }
-  } catch (e) {}
-</script>
+
 </body>
 </html>

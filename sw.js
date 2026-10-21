@@ -5,11 +5,10 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = '085e54ea7a73';
+const VERSION = 'b408fc5f9943';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
-const POLICES = 'polices-v1';
 const FICHIERS = [
  "./",
  "app/index.html",
@@ -199,12 +198,20 @@ const FICHIERS = [
  "assets/icones/favicon-32.png",
  "assets/icones/favicon-48.png",
  "assets/icones/favicon.ico",
+ "assets/icones/fusee-400.webp",
  "assets/icones/icone-192.png",
  "assets/icones/icone-512.png",
  "assets/icones/icone-maskable-192.png",
  "assets/icones/icone-maskable-512.png",
  "assets/icones/logo-128.png",
+ "assets/icones/logo-96.webp",
  "assets/icones/partage.jpg",
+ "assets/polices/atkinson-400-italic.woff2",
+ "assets/polices/atkinson-400-normal.woff2",
+ "assets/polices/atkinson-700-normal.woff2",
+ "assets/polices/baloo-2.woff2",
+ "assets/polices/playwrite-300.woff2",
+ "assets/polices/playwrite-400.woff2",
  "assets/ui/accueil.webp",
  "assets/ui/amis.webp",
  "assets/ui/astuce.webp",
@@ -250,6 +257,7 @@ const FICHIERS = [
  "css/app.css",
  "css/fiches.css",
  "css/papier.css",
+ "css/polices.css",
  "data/banque/francais.json",
  "data/banque/histgeo.json",
  "data/banque/maths.json",
@@ -340,7 +348,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('activate', (e) => {
   e.waitUntil((async () => {
-    for (const nom of await caches.keys()) if (nom.startsWith('coeur-') && nom !== COEUR) await caches.delete(nom);
+    for (const nom of await caches.keys()) if ((nom.startsWith('coeur-') && nom !== COEUR) || nom === 'polices-v1') await caches.delete(nom); // polices-v1 : ancienne copie des polices Google
     await self.clients.claim();
   })());
 });
@@ -375,8 +383,6 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  // Polices Google : gardées après la première visite.
-  if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') return e.respondWith(copieDabord(req, POLICES));
   if (url.origin !== self.location.origin) return;
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));

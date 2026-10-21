@@ -91,12 +91,12 @@ function tete({ titre, description, chemin, type = 'article', jsonld = null }) {
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:image" content="${SITE}assets/icones/partage.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="../assets/polices/baloo-2.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../assets/polices/atkinson-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/polices.css">
 <link rel="stylesheet" href="../css/fiches.css">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>\n` : ''}</head>
 <body>
-<header class="haut${type === 'website' ? ' grand' : ''}"><div class="barre-haut"><a class="marque" href="../"><img src="../assets/icones/logo-128.png" width="44" height="44" alt="">Mission CEB</a>
+<header class="haut${type === 'website' ? ' grand' : ''}"><div class="barre-haut"><a class="marque" href="../"><img src="../assets/icones/logo-96.webp" width="44" height="44" alt="">Mission CEB</a>
 <nav class="menu" aria-label="Menu principal"><a href="../">Accueil</a><a href="../fiches/">Fiches</a><a href="../examens/">Examens</a><a href="../exercices/">Exercices</a><a href="../ceb-2027/">CEB 2027</a></nav>
 <a class="btn-jouer" href="../app/">Jouer gratuitement</a></div>${type === 'website' ? '<!--heros-->' : ''}</header>
 <main>`;
@@ -401,7 +401,7 @@ ${[SITE, `${SITE}ceb-2027/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}rev
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [
     'index.html', 'app/index.html', 'imprimer.html', 'manifest.webmanifest',
-    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/avatars/')), ...(await lireDossier('assets/ui/')), ...(await lireDossier('assets/emoji/')),
+    ...(await lireDossier('css/')), ...(await lireDossier('js/')), ...(await lireDossier('data/')), ...(await lireDossier('assets/icones/')), ...(await lireDossier('assets/polices/')), ...(await lireDossier('assets/avatars/')), ...(await lireDossier('assets/ui/')), ...(await lireDossier('assets/emoji/')),
   ].filter((p) => !/(^|\/)\./.test(p)).sort();
   const h = createHash('sha256');
   for (const p of coeur) { h.update(p); h.update(await readFile(new URL(p, RACINE))); }
