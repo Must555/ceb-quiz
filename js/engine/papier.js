@@ -105,7 +105,8 @@ export function composerExamen(donnees, code) {
       session.passer();
       if (!nouveau(q)) continue;
       const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier));
-      if (docs.length > 2 || (docs.length && docsVus.size + docs.length > maxDocs)) continue; // pas de texte de 4 pages
+      // 2 pages de portfolio au plus par question, même si certaines sont déjà imprimées (pas de texte de 4 pages).
+      if ((q.docsResolus?.length ?? 0) > 2 || (docs.length && docsVus.size + docs.length > maxDocs)) continue;
       docs.forEach((d) => docsVus.add(d.fichier));
       retenir(q);
       questions.push({ ...q }); // copie : les questions de la banque sont partagées

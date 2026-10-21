@@ -3,7 +3,7 @@
  "annee": 2025,
  "referentiel": "socles",
  "titre": "CEB 2025",
- "source": "FWB, épreuve externe commune 2025 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "source": "FWB, épreuve externe commune 2025 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
  "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
@@ -12,70 +12,80 @@
    "titre": "Écouter",
    "date": "2025-06-23",
    "points": 20,
-   "audio": null
+   "audio": null,
+   "duree": 40
   },
   {
    "n": 2,
    "matiere": "fr",
    "titre": "Écrire",
    "date": "2025-06-23",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 3,
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2025-06-23",
-   "points": 40
+   "points": 40,
+   "duree": 65
   },
   {
    "n": 4,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2025-06-24",
-   "points": 55
+   "points": 55,
+   "duree": 75
   },
   {
    "n": 5,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2025-06-24",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "ma",
    "titre": "Nombres et opérations 1",
    "date": "2025-06-26",
-   "points": 33
+   "points": 33,
+   "duree": 40
   },
   {
    "n": 7,
    "matiere": "ma",
    "titre": "Nombres et opérations 2",
    "date": "2025-06-26",
-   "points": 37
+   "points": 37,
+   "duree": 50
   },
   {
    "n": 8,
    "matiere": "fr",
    "titre": "Lire — texte informatif",
    "date": "2025-06-26",
-   "points": 30
+   "points": 30,
+   "duree": 65
   },
   {
    "n": 9,
    "matiere": "fr",
    "titre": "Lire — texte fictionnel",
    "date": "2025-06-27",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 10,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2025-06-27",
-   "points": 60
+   "points": 60,
+   "duree": 75
   }
  ],
  "documents": [
@@ -324,7 +334,7 @@
    "type": "qcm",
    "enonce": "Observe le plan de l'école. Lors d'un exercice incendie, les élèves de la classe de 6e année (H8 – I8) sortent en I7 et rejoignent le point de rassemblement (N4) par le chemin le plus court. Par quelles cases passent-ils ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "plan-ecole"
@@ -374,7 +384,7 @@
    "type": "qcm_multi",
    "enonce": "Sur le plan de l'école, coche toutes les cases qu'occupe le potager.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "plan-ecole"
@@ -405,7 +415,7 @@
    "type": "trous",
    "enonce": "Théo construit une pyramide à base carrée.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-solides",
    "texte": "Avec des bâtonnets (les arêtes) et des boules (les sommets), il lui faut {1} bâtonnets et {2} boules.  ·  Avec des figures en carton (les faces), il lui faut {3} carré et {4} triangles.",
    "reponse": [
@@ -509,18 +519,32 @@
    "numero": "9",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Complète les propriétés et le nom de ces solides (exemple : le parallélépipède rectangle a 6 faces, 12 arêtes, 8 sommets).",
-   "points": 3,
-   "corrigeVerifie": false,
+   "enonce": "Complète les propriétés et le nom précis de ces solides (exemple : le parallélépipède rectangle a 6 faces, 12 arêtes, 8 sommets).",
+   "points": 5,
+   "corrigeVerifie": true,
    "fiche": "ma-solides",
-   "texte": "Un solide qui a 5 faces, 8 arêtes et 5 sommets est une {1}.  ·  Un prisme droit à base triangulaire a {2} faces, {3} arêtes et {4} sommets.",
+   "texte": "Solide à 5 faces, 8 arêtes et 5 sommets\nnom précis : {1}\n\nSolide dont les 6 faces sont des carrés\nfaces : {2}\narêtes : {3}\nsommets : {4}\nnom précis : {5}\n\nPrisme droit à base triangulaire\nfaces : {6}\narêtes : {7}\nsommets : {8}",
    "reponse": [
     [
      "pyramide à base carrée",
      "pyramide a base carree",
-     "pyramide à base carrée (ou quadrangulaire)",
      "pyramide à base quadrangulaire",
-     "pyramide"
+     "pyramide droite",
+     "pyramide droite à base carrée",
+     "pyramide régulière à base carrée"
+    ],
+    [
+     "6"
+    ],
+    [
+     "12"
+    ],
+    [
+     "8"
+    ],
+    [
+     "cube",
+     "le cube"
     ],
     [
      "5"
@@ -532,7 +556,7 @@
      "6"
     ]
    ],
-   "explication": "5 faces, 8 arêtes, 5 sommets : la pyramide à base carrée. Le prisme droit à base triangulaire a 2 triangles + 3 rectangles = 5 faces, 3 + 3 + 3 = 9 arêtes et 3 + 3 = 6 sommets."
+   "explication": "5 faces, 8 arêtes, 5 sommets : la pyramide à base carrée (écrire seulement « pyramide » ne suffit pas). Le cube a 6 faces, 12 arêtes, 8 sommets. Le prisme droit à base triangulaire a 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets. (Dans l'épreuve, il fallait aussi retrouver le numéro des solides sur un dessin.)"
   },
   {
    "id": "ceb-2025-l3-q10",
@@ -619,7 +643,7 @@
    "type": "trous",
    "enonce": "Complète l'unité de chaque grandeur par le préfixe qui convient (kilo, hecto, déca, déci, centi, milli).",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "3 litres : 10 = 3 {1}litres  ·  3 grammes × 10 = 3 {2}grammes  ·  3 ares : 100 = 3 {3}ares  ·  2 mètres : 100 = 2 {4}mètres  ·  5 mètres × 1 000 = 5 {5}mètres",
    "reponse": [
@@ -651,7 +675,7 @@
    "type": "trous",
    "enonce": "Crumble pour 4 personnes : 3 pommes, 50 g de sucre roux, 100 g de poudre d'amandes, 100 g de beurre. Complète le tableau.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "texte": "Pour 2 personnes : 1,5 pomme, {1} g de sucre, {2} g d'amandes, {3} g de beurre.  ·  Pour {4} personnes : {5} pommes, {6} g de sucre, 300 g d'amandes, 300 g de beurre.  ·  Pour {7} personnes : {8} pommes, 450 g de sucre, 900 g d'amandes, {9} g de beurre.",
    "reponse": [
@@ -693,7 +717,7 @@
    "type": "trous",
    "enonce": "GPS de la Grand-Place au Cinquantenaire (durée depuis le départ) : Rue de la Colline 1 min, Rue du Marché aux Herbes 2 min, Place d'Espagne 3 min, Rue du Cardinal Mercier 5 min, Rue des Colonies 7 min, Rue de la Loi 10 min, Avenue John Kennedy 39 min, Cinquantenaire 46 min. Le piéton quitte la Grand-Place à 17 h 55.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "texte": "À 18 h 05, il arrive {1}.  ·  Il arrive au Cinquantenaire à {2} h {3}.",
    "reponse": [
@@ -719,7 +743,7 @@
    "type": "qcm",
    "enonce": "GPS de la Grand-Place au Cinquantenaire (durée depuis le départ) : Rue de la Colline 1 min, Rue du Marché aux Herbes 2 min, Place d'Espagne 3 min, Rue du Cardinal Mercier 5 min, Rue des Colonies 7 min, Rue de la Loi 10 min, Avenue John Kennedy 39 min, Cinquantenaire 46 min. Un autre piéton quitte la Grand-Place à 14 h 02. Quel horaire est correct ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "choix": [
     "Cardinal Mercier 14 h 07 · Rue de la Loi 14 h 17 · Cinquantenaire 14 h 48",
@@ -738,7 +762,7 @@
    "type": "numerique",
    "enonce": "Parking de la gare de Liège. Voyageur en train : du lundi au vendredi 2,30 € par heure, weekends et jours fériés 1,15 € par heure (non-voyageur : 2,98 € par heure). Toute heure entamée est payée entièrement. Le dimanche 11 mai, M. Durand prend le train ; il entre à 07 h 02 et sort à 11 h 50. Combien paie-t-il ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-monnaie",
    "unite": "€",
    "reponse": 5.75,
@@ -774,7 +798,7 @@
    "type": "grille",
    "enonce": "Les liquides emportés en cabine doivent être dans des contenants de 100 ml maximum. Peux-tu emporter ces contenants ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "lignes": [
     "Une bouteille de 0,12 l",
@@ -802,7 +826,7 @@
    "type": "qcm",
    "enonce": "Coche la masse la plus légère.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "1,5 g",
@@ -822,7 +846,7 @@
    "type": "texte_court",
    "enonce": "Paul mange 1/3 d'une tablette de chocolat. Ensuite, Marie mange 1/4 du reste. Quelle fraction de la tablette de départ reste-t-il ? (exemple : 2/5)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions",
    "reponse": [
     "1/2",
@@ -841,7 +865,7 @@
    "type": "numerique",
    "enonce": "Avec le contenu d'un flacon de parfum de 75 ml, on peut recharger 15 fois un vaporisateur. Quelle est la capacité du vaporisateur ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "unite": "ml",
    "reponse": 5,
@@ -855,7 +879,7 @@
    "type": "grille",
    "enonce": "Un parallélépipède mesure 2 m de longueur, 1 m de hauteur et 1 m de profondeur. Que devient son volume ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-volumes",
    "lignes": [
     "Si on double sa longueur…",
@@ -891,7 +915,7 @@
    "type": "numerique",
    "enonce": "Ventes de pommes d'amour pendant la semaine : lundi 26, mardi 35, mercredi 17, jeudi 19, vendredi 34, samedi 53, dimanche 61. Combien en a-t-on vendu en moyenne par jour ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-moyenne",
    "reponse": 35,
    "explication": "Total : 26 + 35 + 17 + 19 + 34 + 53 + 61 = 245. Moyenne : 245 : 7 = 35."
@@ -915,7 +939,7 @@
    "type": "qcm",
    "enonce": "Pour traiter 45 m² d'allée, il faut 6 litres de désherbant. Combien faut-il pour 135 m² ? Quel tableau (litres | m²) correspond à la situation ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "choix": [
     "6 | 45 puis 135 | ?",
@@ -956,7 +980,7 @@
    "type": "numerique",
    "enonce": "Les 25 élèves de la classe ont tous voté pour élire leur délégué. Fatima a obtenu 32 % des votes. Combien d'élèves ont voté pour elle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "reponse": 8,
    "explication": "32 % de 25 : 25 × 32 : 100 = 8 élèves (ou 4 % par élève : 32 : 4 = 8)."
@@ -969,7 +993,7 @@
    "type": "numerique",
    "enonce": "Dans une classe de 25 élèves, 3 élèves ont voté pour Mauro. Quel pourcentage des élèves cela représente-t-il ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "unite": "%",
    "reponse": 12,
@@ -983,7 +1007,7 @@
    "type": "trous",
    "enonce": "Combien paie un client qui achète 45 kg de pommes de terre ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "texte": "Chez Dallas (28 € le sac de 15 kg) : {1} €  ·  Chez Foucart (5 € le sac de 2,5 kg) : {2} €",
    "reponse": [
@@ -1004,7 +1028,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux grandeurs équivalentes.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "250 l",
@@ -1027,7 +1051,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux grandeurs équivalentes.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "12 hm",
@@ -1050,7 +1074,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux grandeurs équivalentes.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "15 g",
@@ -1073,7 +1097,7 @@
    "type": "trous",
    "enonce": "Nourriture pour UN animal : dauphin 215 kg de maquereaux pour 20 jours ; phoque 135 kg de crustacés pour 30 jours ; murène 6 kg de poulpes pour 15 jours. Complète la commande pour 60 jours.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "texte": "{1} kg de maquereaux pour 4 dauphins  ·  {2} kg de crustacés pour 3 phoques  ·  {3} kg de poulpes pour 1 murène",
    "reponse": [
@@ -1098,7 +1122,7 @@
    "type": "qcm",
    "enonce": "Pour mesurer une même distance, des élèves ont reporté des bâtons : Samuel 18 fois, Amélie 24 fois, Sébastien 53 fois, Nicole 15 fois. Qui a utilisé le plus long bâton ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "Samuel",
@@ -1117,7 +1141,7 @@
    "type": "texte_court",
    "enonce": "Calcule : 2 3/4 − 1 2/8 = ? (exemple : 2 1/3)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-addition",
    "reponse": [
     "1 1/2",
@@ -1160,7 +1184,7 @@
    "type": "numerique",
    "enonce": "Playlist de Mia : 3 min 10 s, 4 min 13 s, 2 min 55 s, 3 min 43 s et 3 min 23 s. Complète : la durée totale est de 17 min … s.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "unite": "s",
    "reponse": 24,
@@ -1198,7 +1222,7 @@
    "type": "qcm",
    "enonce": "Observe les œuvres d'art A à G. Ce sont toutes des…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "oeuvres-1",
@@ -1221,7 +1245,7 @@
    "type": "qcm",
    "enonce": "Pendant quelle période conventionnelle Pieter Brueghel a-t-il peint La Fenaison (vers 1565) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "oeuvres-1"
@@ -1244,7 +1268,7 @@
    "type": "qcm",
    "enonce": "En quel siècle Seurat a-t-il peint Une baignade à Asnières (œuvre E, vers 1884) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "documents": [
     "oeuvres-2"
@@ -1268,7 +1292,7 @@
    "type": "qcm",
    "enonce": "L'œuvre B (Les Joueurs d'échecs) nous renseigne sur des activités de l'Humain pour…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "oeuvres-1"
@@ -1282,7 +1306,7 @@
     "se distraire"
    ],
    "reponse": 5,
-   "explication": "Jouer aux échecs est un loisir : se distraire."
+   "explication": "Jouer aux échecs est un loisir : se distraire. Le corrigé officiel accepte aussi « se vêtir » (on voit les vêtements de l'époque)."
   },
   {
    "id": "ceb-2025-l5-q2e",
@@ -1292,7 +1316,7 @@
    "type": "qcm_multi",
    "enonce": "L'œuvre G (Le Déjeuner sur l'herbe de Monet) nous renseigne sur des activités de l'Humain pour… (coche les trois propositions correctes)",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "oeuvres-2"
@@ -1320,7 +1344,7 @@
    "type": "association",
    "enonce": "Dans quel pays est conservée chaque œuvre ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "oeuvres-1",
@@ -1362,7 +1386,7 @@
    "type": "qcm",
    "enonce": "L'Europe et l'Amérique sont séparées par…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "choix": [
     "une forêt",
@@ -1400,9 +1424,9 @@
    "type": "ouverte",
    "enonce": "Une élève affirme : « Le cours d'eau présent sur cette photo (le canal de Bruxelles) est un élément naturel du paysage. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
-   "reponseModele": "Un canal a été creusé et aménagé par l'homme : c'est un élément construit, pas naturel."
+   "reponseModele": "Un canal a été creusé et aménagé par l'homme : c'est un élément construit, pas naturel. (Dire que « l'eau est naturelle », ou parler des routes et des maisons, ne répond pas.)"
   },
   {
    "id": "ceb-2025-l5-q4a",
@@ -1412,7 +1436,7 @@
    "type": "qcm",
    "enonce": "Vauban, architecte militaire français, est né en 1633 et mort en 1707. Pendant quelle période conventionnelle a-t-il vécu ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "choix": [
     "Préhistoire",
@@ -1432,7 +1456,7 @@
    "type": "qcm_multi",
    "enonce": "Sur une ligne du temps allant du 14e au 19e siècle, quels siècles faut-il colorier pour la vie de Vauban (1633 – 1707) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
     "14e s.",
@@ -1446,7 +1470,7 @@
     3,
     4
    ],
-   "explication": "1633 est au 17e siècle (1601-1700) et 1707 au 18e siècle (1701-1800)."
+   "explication": "1633 est au 17e siècle (1601-1700) et 1707 au 18e siècle (1701-1800). Dans l'épreuve, il fallait placer précisément la naissance (vers 1633) et la mort (vers 1707) sur la ligne du temps."
   },
   {
    "id": "ceb-2025-l5-q4c",
@@ -1455,8 +1479,8 @@
    "domaine": "hg.geographie",
    "type": "grille",
    "enonce": "Observe la carte des citadelles. Coche la proposition correcte.",
-   "points": 3,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
     "citadelles-1",
@@ -1486,7 +1510,7 @@
    "type": "qcm",
    "enonce": "Givet est une ville qui se situe…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "citadelles-1"
@@ -1508,7 +1532,7 @@
    "type": "qcm",
    "enonce": "Photos de Dinant : la voie de communication la plus visible est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "dinant"
@@ -1529,7 +1553,7 @@
    "type": "qcm",
    "enonce": "Photos de Dinant : le réseau routier est constitué principalement…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "dinant"
@@ -1550,7 +1574,7 @@
    "type": "qcm",
    "enonce": "Photos de Dinant : ce paysage est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "dinant"
@@ -1571,7 +1595,7 @@
    "type": "texte_court",
    "enonce": "Écris un élément naturel du paysage visible sur les photos de Dinant.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "dinant"
@@ -1607,7 +1631,7 @@
    "type": "qcm",
    "enonce": "Photo du pays de Herve : les espaces non bâtis sont…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "herve"
@@ -1627,7 +1651,7 @@
    "type": "qcm",
    "enonce": "Photo du pays de Herve : les espaces non bâtis montrent principalement…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "herve"
@@ -1648,7 +1672,7 @@
    "type": "qcm",
    "enonce": "Photo du pays de Herve : ce paysage est plutôt…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "herve"
@@ -1669,7 +1693,7 @@
    "type": "texte_court",
    "enonce": "Écris le nom d'un élément qui montre que l'homme a aménagé les limites des prairies au pays de Herve.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "herve"
@@ -1697,7 +1721,7 @@
    "type": "grille",
    "enonce": "Les documents du portfolio sur les Expositions universelles permettent-ils de dire que c'est vrai ou faux ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "expo-1",
@@ -1714,11 +1738,11 @@
     "On ne peut pas le savoir"
    ],
    "reponse": [
-    0,
+    2,
     1,
     2
    ],
-   "explication": "« Depuis 1851… » et la carte place 1851 à Londres : vrai. L'Atomium est cité comme une trace laissée dans le paysage : il existe toujours, donc faux. Rien ne parle de crème glacée."
+   "explication": "Selon le corrigé officiel, les documents du portfolio ne permettent pas d'affirmer que la première Exposition universelle a eu lieu au Royaume-Uni en 1851. L'Atomium est cité comme une trace laissée dans le paysage : il existe toujours, donc c'est faux. Rien ne parle de crème glacée."
   },
   {
    "id": "ceb-2025-l5-q6b",
@@ -1751,7 +1775,7 @@
    "type": "texte_court",
    "enonce": "Quel est le nom de la zone verte située en D3 – D4 sur le plan de l'Expo 58 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "expo-1",
@@ -1774,7 +1798,7 @@
    "type": "qcm",
    "enonce": "Parmi ces pavillons, lequel représente un pays qui ne fait pas partie de l'Union européenne actuelle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "expo-1"
@@ -1796,7 +1820,7 @@
    "type": "qcm",
    "enonce": "Dans quel siècle se situe l'année 1958 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
     "18e siècle",
@@ -1805,7 +1829,7 @@
     "21e siècle"
    ],
    "reponse": 2,
-   "explication": "Le 20e siècle va de 1901 à 2000."
+   "explication": "Le 20e siècle va de 1901 à 2000. Dans l'épreuve, il fallait placer 1958 sur deux lignes du temps (années et siècles)."
   },
   {
    "id": "ceb-2025-l5-q6g",
@@ -1815,7 +1839,7 @@
    "type": "trous",
    "enonce": "Observe la carte des villes hôtes des Expositions universelles.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "villes-1",
@@ -1841,7 +1865,7 @@
    "type": "ouverte",
    "enonce": "Un élève affirme : « L'Exposition universelle a été organisée au moins une fois sur chaque continent. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "villes-1",
@@ -1857,7 +1881,7 @@
    "type": "grille",
    "enonce": "Situe ces Expositions universelles par rapport aux évènements de notre histoire.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "documents": [
     "villes-1"
@@ -1887,7 +1911,7 @@
    "type": "grille",
    "enonce": "Sandra Kim a représenté la Belgique en 1986, Montaigne l'Australie en 2021 et Samira Saïd le Maroc en 1980. Sur quel continent se trouve chaque pays ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "lignes": [
     "Belgique",
@@ -1916,7 +1940,7 @@
    "type": "grille",
    "enonce": "Au cours de quel siècle chaque artiste a-t-il participé au Concours Eurovision ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "lignes": [
     "Sandra Kim (1986)",
@@ -1957,7 +1981,7 @@
    "type": "ouverte",
    "enonce": "L'auteur de la coupure de presse « Le Concours Eurovision de la Chanson depuis 2015 » n'a pas indiqué le pays gagnant en 2023. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "eurovision-2"
@@ -1972,7 +1996,7 @@
    "type": "ouverte",
    "enonce": "L'Ukraine a gagné l'Eurovision en 2022 mais n'a pas pu l'organiser en 2023. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "eurovision-2"
    ],
@@ -1985,8 +2009,8 @@
    "domaine": "hg.histoire",
    "type": "qcm_multi",
    "enonce": "Quelles sont les deux années où la Belgique s'est retrouvée à la 5e place du Concours Eurovision ?",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "documents": [
     "eurovision-1"
@@ -2051,7 +2075,7 @@
    "type": "ouverte",
    "enonce": "Une élève affirme : « C'est lors de l'arrivée des Romains dans nos régions que le Traité de Rome a été signé. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "reponseModele": "Les Romains arrivent dans nos régions vers 57 av. J.-C. (Antiquité) ; le Traité de Rome est signé en 1957 (Époque contemporaine)."
   },
@@ -2063,7 +2087,7 @@
    "type": "ouverte",
    "enonce": "Une élève affirme : « Le premier homme dans l'espace a eu lieu durant les Temps modernes. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "reponseModele": "Le premier homme dans l'espace (Gagarine) date de 1961 : c'est l'Époque contemporaine, pas les Temps modernes (1492-1789)."
   },
@@ -2086,7 +2110,7 @@
    "type": "grille",
    "enonce": "Estime le résultat de chaque opération.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "lignes": [
     "19,5 × 7 donne un résultat… que 140",
@@ -2111,7 +2135,7 @@
    "type": "trous",
    "enonce": "Complète par le nombre qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "{1} est le tiers de 33.  ·  {2} est le double de 17.  ·  {3} est le quart de 32.",
    "reponse": [
@@ -2135,7 +2159,7 @@
    "type": "trous",
    "enonce": "Complète les opérations.",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "3,06 + {1} = 10  ·  7 014 : 7 = {2}  ·  2 × 2 × 2 × 2 = {3}  ·  10 000 − {4} = 520  ·  1,6 : 8 = {5}",
    "reponse": [
@@ -2168,7 +2192,7 @@
    "type": "qcm",
    "enonce": "Quelle opération donne 4,2 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "7 × 0,6",
@@ -2187,7 +2211,7 @@
    "type": "qcm",
    "enonce": "Quelle opération donne 4 800 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "0,8 × 600",
@@ -2217,7 +2241,7 @@
    "type": "trous",
    "enonce": "Complète les égalités.",
    "points": 7,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "texte": "7 888 + 4 565 = 8 000 + {1}  ·  29,7 × 20 = 297 × {2}  ·  4 × 18 × 45 = 45 × 18 × {3}  ·  9 600 : 40 = 960 : {4}  ·  156 × 9 = 1 560 − {5}  ·  25 × 3 × 12 × {6} = 0  ·  0,63 : 1 = {7}",
    "reponse": [
@@ -2254,7 +2278,7 @@
    "type": "trous",
    "enonce": "Complète les décompositions.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "5 323 = ({1} × 1 000) + ({2} × 100) + ({3} × 10) + ({4} × 1)  ·  {5} = (5 × 100 000) + (7 × 1 000) + (2 × 100) + (1 × 10) + (4 × 1)  ·  2,065 = (2 × {6}) + (6 × {7}) + (5 × {8})",
    "reponse": [
@@ -2300,21 +2324,38 @@
   {
    "id": "ceb-2025-l6-q10",
    "livret": 6,
-   "numero": "10",
+   "numero": "10a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
    "enonce": "0,625, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
     "3/4",
     "5/8",
-    "12/20",
-    "36/48"
+    "12/20"
    ],
    "reponse": 1,
-   "explication": "5/8 = 5 : 8 = 0,625. 3/4 = 0,75 ; 12/20 = 0,6 ; 36/48 = 0,75."
+   "explication": "5/8 = 5 : 8 = 0,625. 3/4 = 0,75 ; 12/20 = 0,6."
+  },
+  {
+   "id": "ceb-2025-l6-q10b",
+   "livret": 6,
+   "numero": "10b",
+   "domaine": "ma.arithmetique",
+   "type": "qcm",
+   "enonce": "36/48, c'est…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "choix": [
+    "3/4",
+    "0,36",
+    "6/12"
+   ],
+   "reponse": 0,
+   "explication": "36/48 se simplifie en divisant par 12 : 3/4. Attention : 36/48 n'est pas 0,36 (ce serait 36/100), et 6/12 = 1/2."
   },
   {
    "id": "ceb-2025-l7-q1a",
@@ -2324,7 +2365,7 @@
    "type": "numerique",
    "enonce": "Écris en chiffres : douze unités quatre-vingt-sept millièmes.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": 12.087,
    "explication": "12 unités et 87 millièmes : 12,087."
@@ -2337,7 +2378,7 @@
    "type": "numerique",
    "enonce": "Écris en chiffres : douze-mille-huit-cent-septante unités deux dixièmes.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": 12870.2,
    "explication": "12 870 unités et 2 dixièmes : 12 870,2."
@@ -2350,12 +2391,13 @@
    "type": "texte_court",
    "enonce": "Écris en lettres le nombre 0,03.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": [
     "trois centièmes",
     "zéro unité trois centièmes",
-    "3 centièmes"
+    "3 centièmes",
+    "trente millièmes"
    ],
    "explication": "0,03 : le 3 est au rang des centièmes, on lit « trois centièmes »."
   },
@@ -2367,16 +2409,15 @@
    "type": "texte_court",
    "enonce": "Écris en lettres le nombre 1 037,12 (exemple : mille-deux-cent-quatre-vingt-sept unités deux centièmes).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": [
     "mille-trente-sept unités douze centièmes",
     "mille trente-sept unités douze centièmes",
     "mille trente sept unités douze centièmes",
-    "mille-trente-sept unités et douze centièmes",
-    "mille-trente-sept virgule douze"
+    "mille-trente-sept unités et douze centièmes"
    ],
-   "explication": "1 037 unités et 12 centièmes : mille-trente-sept unités douze centièmes."
+   "explication": "1 037 unités et 12 centièmes : mille-trente-sept unités douze centièmes. On n'écrit pas « virgule » : on nomme les unités et les centièmes."
   },
   {
    "id": "ceb-2025-l7-q3",
@@ -2397,7 +2438,7 @@
    "type": "qcm",
    "enonce": "Tarif de l'exposition — entrée par groupe (min. 15 personnes) : moins de 16 ans 6 €, adulte 8 € ; une entrée gratuite pour l'accompagnant. Boutique : livre 32 €, album illustré 24 €, T-shirt 20 €, tasse 6 €, poster 5 €, guide de visite 10 €. Une classe de 18 élèves visite l'exposition avec son instituteur, qui achète en plus deux albums illustrés et un poster. Quelle résolution convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
     "18 × 6 = 108 ; 2 × 32 = 64 ; 1 × 5 = 5 ; total 177 €",
@@ -2415,7 +2456,7 @@
    "type": "qcm",
    "enonce": "Tarif de l'exposition — entrée par groupe (min. 15 personnes) : moins de 16 ans 6 €, adulte 8 € ; une entrée gratuite pour l'accompagnant. Boutique : livre 32 €, album illustré 24 €, T-shirt 20 €, tasse 6 €, poster 5 €, guide de visite 10 €. Une classe de 21 élèves visite l'exposition avec son instituteur, qui achète deux tasses et un guide de visite. Quelle résolution convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
     "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 10 = 10 ; total 148 €",
@@ -2433,7 +2474,7 @@
    "type": "numerique",
    "enonce": "Un hôtel accueille des adultes et des enfants. Le premier étage est occupé par 37 adultes et 13 enfants. Le deuxième étage accueille 45 vacanciers. Au total, 63 adultes séjournent sur les deux étages. Combien d'enfants séjournent au deuxième étage ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "unite": "enfants",
    "reponse": 19,
@@ -2447,7 +2488,7 @@
    "type": "grille",
    "enonce": "Écris le signe qui convient.",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "lignes": [
     "3/5 … 0,35",
@@ -2478,7 +2519,7 @@
    "type": "numerique",
    "enonce": "Le compteur de la voiture indique 22 585 km au départ et 22 744 km à l'arrivée. Combien de kilomètres a-t-elle parcourus ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "unite": "km",
    "reponse": 159,
@@ -2503,7 +2544,7 @@
    "type": "qcm",
    "enonce": "Un enfant a calculé : 36 988 : 28 = 1 322. Son résultat est-il correct ? (vérifie avec une multiplication)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "choix": [
     "Oui",
@@ -2520,7 +2561,7 @@
    "type": "qcm",
    "enonce": "Voici une division écrite : 5 863,88 : 7 = 837,69. Première étape : 58 − 56 = 2 ; … dernière étape : 68 − 63 = 5. Le nombre 56 soustrait à la première étape, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "choix": [
     "56 centaines",
@@ -2539,7 +2580,7 @@
    "type": "qcm",
    "enonce": "Voici une division écrite : 5 863,88 : 7 = 837,69. Première étape : 58 − 56 = 2 ; … dernière étape : 68 − 63 = 5. Le reste 5 de la dernière étape, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "choix": [
     "5 dizaines",
@@ -2591,7 +2632,7 @@
    "type": "trous",
    "enonce": "Complète chaque calcul réciproque par le signe et le nombre qui manquent (exemple : − 25).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "texte": "92 528 + 4 301 = 96 829 donc 96 829 {1} = 92 528  ·  125 × 42 = 5 250 donc 5 250 {2} = 125  ·  45 620 − 7 535 = 38 085 donc 38 085 {3} = 45 620",
    "reponse": [
@@ -2629,7 +2670,7 @@
    "type": "trous",
    "enonce": "Julien décompose : 238 : 7 = (210 : 7) + (28 : 7) = 34. Fais comme lui.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "486 : 9 = ({1} : 9) + ({2} : 9) = 54  ·  438 : 6 = ({3} : 6) + ({4} : 6) = 73  ·  1,76 : 8 = ({5} : 8) + ({6} : 8) = 0,22",
    "reponse": [
@@ -2663,7 +2704,7 @@
    "type": "ordre",
    "enonce": "Classe ces fractions par ordre décroissant (de la plus grande à la plus petite).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "elements": [
     "6/5",
@@ -2687,7 +2728,7 @@
    "type": "qcm",
    "enonce": "Quel est le nombre le plus grand ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "5,011",
@@ -2706,7 +2747,7 @@
    "type": "qcm",
    "enonce": "Quel est le nombre le plus petit ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "0,876",
@@ -2725,7 +2766,7 @@
    "type": "qcm",
    "enonce": "Texte « Question de mémoire ». Quelle est l'intention dominante de l'auteure ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "memoire-1",
@@ -2750,7 +2791,7 @@
    "type": "ouverte",
    "enonce": "D'après le texte, que fait le cerveau lorsqu'il traite les informations durant le sommeil ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-3"
    ],
@@ -2764,14 +2805,16 @@
    "type": "texte_court",
    "enonce": "D'après le texte, quel autre nom est donné à la mémoire des sensations ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-2"
    ],
    "reponse": [
     "la mémoire perceptive",
     "mémoire perceptive",
-    "perceptive"
+    "perceptive",
+    "mémoire des sens",
+    "la mémoire des sens"
    ],
    "explication": "« On l'appelle mémoire perceptive, celle des sensations. »"
   },
@@ -2780,20 +2823,16 @@
    "livret": 8,
    "numero": "3",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Lilly dit : « Pour apprendre facilement une leçon, il faut la répéter de nombreuses fois. » D'après le texte, a-t-elle raison ?",
+   "type": "ouverte",
+   "enonce": "Lilly dit : « Pour apprendre facilement une leçon, il faut la répéter de nombreuses fois. » D'après le texte, a-t-elle raison ? Coche « Lilly a raison » ou « Lilly a tort », puis justifie ta réponse à l'aide du texte.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "memoire-3"
    ],
-   "choix": [
-    "Lilly a raison.",
-    "Lilly a tort."
-   ],
-   "reponse": 1,
-   "explication": "Le texte dit : « si une leçon est répétée mécaniquement, même mille fois, elle ne sera jamais apprise. » Il faut d'abord la comprendre."
+   "explication": "Le texte dit : « si une leçon est répétée mécaniquement, même mille fois, elle ne sera jamais apprise. » Il faut d'abord la comprendre.",
+   "reponseModele": "Les deux réponses sont acceptées si la justification est cohérente avec le texte. Lilly a tort : une leçon répétée mécaniquement, même mille fois, ne sera jamais apprise ; il faut d'abord la comprendre. Ou Lilly a raison : répéter aide à retenir, à condition de comprendre ce qu'on répète. Sans justification, pas de point."
   },
   {
    "id": "ceb-2025-l8-q4",
@@ -2803,7 +2842,7 @@
    "type": "texte_court",
    "enonce": "La mémoire a plusieurs utilités essentielles chez les animaux. Écris-en une (un verbe suffit).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-4"
    ],
@@ -2827,7 +2866,7 @@
    "type": "grille",
    "enonce": "D'après le texte, quel système de mémoire est principalement activé ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-1",
     "memoire-2",
@@ -2859,11 +2898,11 @@
    "type": "ouverte",
    "enonce": "Écris une façon d'améliorer sa mémoire citée dans le texte.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Utiliser des moyens mnémotechniques, répéter (relire), comprendre ce qu'on apprend (résumé, mots-clés, schémas, tableaux), bien dormir, bien manger et boire."
+   "reponseModele": "Utiliser des moyens mnémotechniques ; répéter en comprenant ce qu'on apprend (résumé, mots-clés, schémas, tableaux) ; bien dormir ; bien se nourrir. Répéter sans comprendre ne suffit pas."
   },
   {
    "id": "ceb-2025-l8-q7",
@@ -2884,7 +2923,7 @@
    "type": "ouverte",
    "enonce": "Concernant la mémoire, pourquoi est-il important de bien dormir ? Écris deux raisons citées dans le texte.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-3"
    ],
@@ -2898,7 +2937,7 @@
    "type": "grille",
    "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "memoire-1",
@@ -2929,7 +2968,7 @@
    "type": "qcm",
    "enonce": "À quelle condition un geai déplace-t-il sa nourriture lorsqu'il a été observé par un autre geai ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-4"
    ],
@@ -2961,7 +3000,7 @@
    "type": "grille",
    "enonce": "Dans quel bloc d'idées du texte pourrais-tu ajouter ces informations ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "memoire-1",
     "memoire-2",
@@ -2993,7 +3032,7 @@
    "type": "qcm",
    "enonce": "Dans quel livre pourrais-tu aussi trouver ce texte ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "choix": [
     "Les mémoires d'un âne exceptionnel",
@@ -3007,12 +3046,12 @@
   {
    "id": "ceb-2025-l8-q14",
    "livret": 8,
-   "numero": "14",
+   "numero": "15",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
    "enonce": "« Tu sais que l'ortie est une plante qui pique […] parce que tu en as fait l'expérience dans le passé. » Par quel mot peut-on remplacer « parce que » sans changer le sens ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "choix": [
     "malgré que",
@@ -3026,12 +3065,12 @@
   {
    "id": "ceb-2025-l8-q15",
    "livret": 8,
-   "numero": "15",
+   "numero": "14",
    "domaine": "fr.conjugaison",
    "type": "trous",
    "enonce": "« Un geai se souvient aussi si un autre geai l'a observé pendant qu'il cachait ses réserves. Si c'est le cas, il déplacera la nourriture, de crainte d'être volé. Mais il ne le fera que s'il a lui-même été voleur dans le passé. Sinon, il ne soupçonnera pas celui qui l'a regardé d'être un éventuel voleur. »",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "texte": "« a observé » est au {1} de l'indicatif ; autre verbe au même temps : {2}.  ·  « déplacera » est au {3} de l'indicatif ; autre verbe au même temps : {4}.",
    "reponse": [
@@ -3068,7 +3107,7 @@
    "type": "qcm",
    "enonce": "« C'est une faculté essentielle de ton cerveau, au centre de ta vie. » Par quel mot peut-on remplacer « faculté » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-synonymes",
    "choix": [
     "facilité",
@@ -3084,21 +3123,43 @@
    "livret": 8,
    "numero": "17",
    "domaine": "fr.lire",
-   "type": "texte_court",
-   "enonce": "Dans le bloc « Les formidables capacités des éléphants », recopie un mot (autre que « éléphants » et « ils ») que l'auteure utilise pour les désigner.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "type": "trous",
+   "enonce": "Dans le bloc « Les formidables capacités des éléphants », recopie deux mots (autres que « éléphants ») que l'auteure utilise pour les désigner.",
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "memoire-4"
    ],
    "reponse": [
-    "mammifères",
-    "ces mammifères",
-    "mammifere",
-    "ces mammiferes"
+    [
+     "mammifères",
+     "ces mammifères",
+     "mammifere",
+     "ces mammiferes",
+     "ils",
+     "leur",
+     "les",
+     "eux",
+     "qu'",
+     "que"
+    ],
+    [
+     "mammifères",
+     "ces mammifères",
+     "mammifere",
+     "ces mammiferes",
+     "ils",
+     "leur",
+     "les",
+     "eux",
+     "qu'",
+     "que"
+    ]
    ],
-   "explication": "« La mémoire de ces mammifères est exceptionnelle. » L'auteure utilise aussi le pronom « ils »."
+   "explication": "L'auteure désigne les éléphants par « ces mammifères » et par des pronoms : ils, leur, les, eux, qu'.",
+   "souple": true,
+   "texte": "1er mot : {1}\n2e mot : {2}"
   },
   {
    "id": "ceb-2025-l8-q18",
@@ -3108,7 +3169,7 @@
    "type": "grille",
    "enonce": "Quelle est la structure de chaque phrase ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sujet-complements",
    "lignes": [
     "Ce que tu manges est le carburant de ton corps.",
@@ -3135,7 +3196,7 @@
    "type": "texte_court",
    "enonce": "Écris un mot de la même famille que « sensation » (exemple : création → créatif, créer).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "reponse": [
     "sensationnel",
@@ -3160,7 +3221,7 @@
    "type": "qcm",
    "enonce": "Tu veux commander le livre d'où est extrait le texte. Quelle référence est exacte et complète ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "memoire-4"
@@ -3182,7 +3243,7 @@
    "type": "qcm",
    "enonce": "Conte « Une bonne idée ». Dans quel livre est-il le plus probable de trouver ce texte ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "bonne-idee-1",
@@ -3206,7 +3267,7 @@
    "type": "ouverte",
    "enonce": "Que doit contenir le livre commandé par le roi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-1"
    ],
@@ -3220,7 +3281,7 @@
    "type": "qcm",
    "enonce": "Quel résumé correspond le mieux à cette histoire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-1",
@@ -3230,7 +3291,7 @@
    "choix": [
     "Un roi commande un livre sur le bonheur pour sa fille au plus sage du royaume ; c'est un marchand de tissus qui remplira cette mission.",
     "Un marchand doit rédiger un livre pour que la fille d'un roi trouve le bonheur ; il rencontre des personnes aux quatre coins du globe et remet lui-même le livre terminé au palais.",
-    "Un roi veut offrir à sa fille un livre sur le bonheur, écrit et corrigé par plusieurs personnes au cours d'un long voyage ; quand la princesse le reçoit, il ne contient plus que quelques conseils qu'elle appliquera.",
+    "Un roi veut offrir à sa fille un livre sur le bonheur, écrit et corrigé par plusieurs personnes au cours d'un long voyage ; quand la princesse le reçoit, il ne contient plus qu'un seul conseil qu'elle appliquera.",
     "Une princesse reçoit un livre sur le bonheur plein de ratures et de pages déchirées ; comme elle n'a lu aucun conseil, elle va se promener dans les jardins."
    ],
    "reponse": 2,
@@ -3244,11 +3305,11 @@
    "type": "ouverte",
    "enonce": "Que fait le marchand pour rédiger son livre ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-2"
    ],
-   "reponseModele": "Il consulte tous les sages qu'il peut rencontrer (environ 234), prend des notes pendant plus de neuf ans et écrit un livre de 972 pages."
+   "reponseModele": "Il consulte tous les sages qu'il peut rencontrer (environ 234), prend des notes pendant plus de neuf ans et écrit un livre de 972 pages. (Il faut parler de sa rencontre avec les sages.)"
   },
   {
    "id": "ceb-2025-l9-q5",
@@ -3258,7 +3319,7 @@
    "type": "qcm",
    "enonce": "Quelle est l'intention principale de l'auteur ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "choix": [
     "Informer le lecteur sur la manière de rédiger un livre pour trouver le bonheur.",
@@ -3277,7 +3338,7 @@
    "type": "trous",
    "enonce": "Réponds en t'aidant du texte.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-1",
     "bonne-idee-2",
@@ -3308,7 +3369,7 @@
    "type": "qcm",
    "enonce": "Qu'éprouve le marchand quand le roi lui annonce un châtiment terrible en cas d'échec ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-1"
@@ -3320,7 +3381,7 @@
     "de l'impatience"
    ],
    "reponse": 1,
-   "explication": "« Le marchand s'inclina en tremblant sous cette menace. »"
+   "explication": "« Le marchand s'inclina en tremblant sous cette menace. » Dans l'épreuve, il fallait aussi recopier la phrase qui le prouve : « Le marchand s'inclina en tremblant sous cette menace. »"
   },
   {
    "id": "ceb-2025-l9-q8",
@@ -3330,7 +3391,7 @@
    "type": "ouverte",
    "enonce": "Que veut dire l'auteur avec cette phrase du charretier : « J'accorde au monde toute l'attention qu'il mérite et je profite de mon cheminement au lieu d'avoir seulement mon but en vue » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-3"
    ],
@@ -3344,7 +3405,7 @@
    "type": "ouverte",
    "enonce": "Quelle est l'intention du marchand avant de rencontrer le roi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-1"
    ],
@@ -3358,13 +3419,13 @@
    "type": "ouverte",
    "enonce": "Une élève dit : « Le titre aurait pu être Des bonnes idées. » A-t-elle raison ? Justifie.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-1",
     "bonne-idee-2",
     "bonne-idee-3"
    ],
-   "reponseModele": "Oui : plusieurs personnages ont une bonne idée (le roi, le marchand, l'aviatrice, le navigateur, le charretier et la princesse)."
+   "reponseModele": "Les deux réponses sont acceptées avec une justification cohérente. Oui : plusieurs personnages ont une bonne idée (le roi, le marchand, l'aviatrice, le navigateur, le charretier, la princesse) ; l'expression « de bonnes idées » revient trois fois. Non : la seule vraie bonne idée est le conseil final."
   },
   {
    "id": "ceb-2025-l9-q11",
@@ -3374,7 +3435,7 @@
    "type": "qcm",
    "enonce": "Au sujet du roi, l'auteur écrit : « […] il eut quand même, enfin, une bonne idée. » Que veut-il faire comprendre ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "choix": [
     "que le roi avait cette bonne idée depuis longtemps",
@@ -3393,7 +3454,7 @@
    "type": "qcm",
    "enonce": "Selon l'auteur, pour trouver le bonheur, il faut…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-3"
@@ -3415,7 +3476,7 @@
    "type": "ordre",
    "enonce": "Remets ces moments de l'histoire du marchand dans l'ordre.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-1",
@@ -3446,7 +3507,7 @@
    "type": "qcm",
    "enonce": "À la fin, pourquoi la princesse décide-t-elle d'aller se promener dans les jardins du palais ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-3"
@@ -3468,7 +3529,7 @@
    "type": "grille",
    "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "bonne-idee-1",
@@ -3502,7 +3563,7 @@
    "type": "ouverte",
    "enonce": "Pourquoi le livre remis à la princesse ne contient-il que quelques lignes ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "bonne-idee-1",
     "bonne-idee-2",
@@ -3517,8 +3578,8 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "« J'ai la certitude de m'être préparée comme j'ai pu, et j'avance, car avoir peur ne m'est d'aucun secours. » Qui est « Je » ?",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 0.5,
+   "corrigeVerifie": true,
    "fiche": "fr-accords",
    "documents": [
     "bonne-idee-2"
@@ -3537,8 +3598,8 @@
    "domaine": "fr.orthographe",
    "type": "texte_court",
    "enonce": "« J'ai la certitude de m'être préparée comme j'ai pu, et j'avance, car avoir peur ne m'est d'aucun secours. » Recopie le mot qui montre que « Je » est une femme.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 0.5,
+   "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
    "reponse": [
     "préparée"
@@ -3554,7 +3615,7 @@
    "type": "texte_court",
    "enonce": "« — Oui… Je n'avais que ces quelques lignes à lire […]. Alors, comme le soleil jouait dehors avec les fleurs des cerisiers, elle décida d'aller se promener dans les jardins du palais. » Quel mot (organisateur textuel) relie les deux parties de cet extrait ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "reponse": [
     "alors"
@@ -3569,7 +3630,7 @@
    "type": "qcm",
    "enonce": "« Frappée alors d'une bonne idée, notre aviatrice intrépide prit une plume d'aigle. » · « Illuminé alors par une bonne idée, le vaillant navigateur se saisit d'une plume de cygne. » · « Caressé alors par une bonne idée, notre indolent charretier attrapa une plume d'oie. » Quelle est la particularité d'écriture de l'auteur ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-phrases",
    "choix": [
     "Il emploie toujours le même vocabulaire.",
@@ -3588,7 +3649,7 @@
    "type": "texte_court",
    "enonce": "« Excellent stratagème pour s'évaporer quelque part dans un pays lointain ! » Écris un mot qui a le même sens que « stratagème ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-synonymes",
    "reponse": [
     "ruse",
@@ -3617,7 +3678,7 @@
    "type": "qcm",
    "enonce": "« J'aimerais parfois que tu ailles plus vite, mais au fond la lenteur est dans ta nature. Alors, je prends le temps d'observer […] » Ici, « alors » sert à…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "choix": [
     "renforcer un choix (Il ne se rend pas compte du danger ou alors il est fou.)",
@@ -3636,7 +3697,7 @@
    "type": "qcm",
    "enonce": "« J'aimerais parfois que tu ailles plus vite, mais au fond, la lenteur est dans ta nature. » Quel sens a le mot « nature » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
     "Tout ce qui existe sur Terre et qui n'est pas fabriqué par les humains.",
@@ -3655,7 +3716,7 @@
    "type": "trous",
    "enonce": "« Il décida alors de confier le précieux manuscrit à une aviatrice qui s'apprêtait à s'envoler jusqu'au royaume qui attendait si ardemment de revoir notre ancien marchand. » Écris la classe de ces mots (nom, pronom, verbe, adverbe, déterminant, adjectif, mot de liaison).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
    "texte": "précieux : {1}  ·  ardemment : {2}",
    "reponse": [
@@ -3679,7 +3740,7 @@
    "type": "qcm",
    "enonce": "« Il confia le manuscrit à un charretier. » a la structure : Sujet – Verbe – Complément direct – Complément indirect. Quelle phrase a la même structure ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sujet-complements",
    "choix": [
     "J'accorde au monde toute l'attention qu'il mérite.",
@@ -3698,7 +3759,7 @@
    "type": "trous",
    "enonce": "Écris un mot de la même famille (exemple : illuminé → illumination).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "texte": "cheminement → {1}  ·  édenté → {2}",
    "reponse": [
@@ -3730,7 +3791,7 @@
    "type": "trous",
    "enonce": "Le roi dit au marchand : « Je veux que tu rédiges un livre qui contiendra pour ma fille tout ce qui pourrait l'aider à trouver le bonheur. » Remplace chaque mot par le personnage qu'il désigne.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "bonne-idee-1"
@@ -3748,11 +3809,17 @@
     ],
     [
      "la princesse",
-     "princesse"
+     "princesse",
+     "la fille du roi",
+     "sa fille",
+     "la fille"
     ],
     [
      "la princesse",
-     "princesse"
+     "princesse",
+     "la fille du roi",
+     "sa fille",
+     "la fille"
     ]
    ],
    "explication": "Le roi parle (« Je ») au marchand (« tu ») ; sa fille, c'est la princesse, et « l' » reprend « ma fille »."
@@ -3765,7 +3832,7 @@
    "type": "trous",
    "enonce": "Écris l'organe humain qui correspond au sens le plus développé de l'animal.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "texte": "Ours — odorat : {1}  ·  Chouette — ouïe : {2}",
    "reponse": [
@@ -3790,7 +3857,7 @@
    "type": "trous",
    "enonce": "Sur une photo, on a bandé les yeux d'un enfant et on pose sa main sur les poils d'une brosse.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "texte": "On l'a privé du sens de la {1}.  ·  On stimule le sens du {2}.",
    "reponse": [
@@ -3825,7 +3892,7 @@
    "type": "qcm",
    "enonce": "Qui a raison ? Emma : « Tous les œufs de la poule donnent des poussins si elle est accompagnée d'un coq. » Lucas : « La poule est fécondée par un coq et, après 21 jours, elle pond un œuf qui contient un poussin. » Élise : « Pour qu'un œuf donne un poussin, il faut que la poule soit fécondée par un coq et qu'elle couve l'œuf durant 21 jours. »",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-reproduction",
    "documents": [
     "poule"
@@ -3846,12 +3913,12 @@
    "type": "ouverte",
    "enonce": "Un élève affirme : « Tous les animaux sont ovipares. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-reproduction",
    "documents": [
     "poule"
    ],
-   "reponseModele": "Certains animaux ne pondent pas d'œufs : les mammifères (chien, vache, humain…) sont vivipares, leurs petits se développent dans le ventre de la mère."
+   "reponseModele": "Certains animaux ne pondent pas d'œufs : les mammifères (chien, vache, humain…) sont vivipares, leurs petits se développent dans le ventre de la mère. (Dire seulement « c'est faux » ou « la plupart pondent » ne suffit pas.)"
   },
   {
    "id": "ceb-2025-l10-q2d",
@@ -3886,7 +3953,7 @@
    "type": "ouverte",
    "enonce": "Des élèves soulèvent une charge avec 1, 2 puis 4 portions de corde (poulies) et mesurent la force avec un pèse-bagage. Quelle question se posent-ils ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "poulies-1",
     "poulies-3",
@@ -3902,7 +3969,7 @@
    "type": "trous",
    "enonce": "D'après les expériences, quelle force de traction faut-il pour soulever une charge de 60 kg ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "poulies-4"
    ],
@@ -3928,7 +3995,7 @@
    "type": "trous",
    "enonce": "Écris le nom de l'appareil du corps humain.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "texte": "L'appareil {1} assure l'absorption, la dégradation, l'assimilation et le stockage.  ·  L'appareil {2} assure la protection et le toucher.",
    "reponse": [
@@ -3952,7 +4019,7 @@
    "type": "qcm",
    "enonce": "Dans quelle proposition tous les éléments font-ils partie de l'appareil digestif ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "choix": [
     "L'œsophage, les alvéoles pulmonaires, les intestins",
@@ -3971,7 +4038,7 @@
    "type": "qcm",
    "enonce": "Dans quelle proposition tous les éléments font-ils partie de l'appareil respiratoire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "choix": [
     "L'œsophage, les alvéoles pulmonaires, les intestins",
@@ -3990,7 +4057,7 @@
    "type": "grille",
    "enonce": "Lors de quelle fonction interviennent ces organes ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "lignes": [
     "Les alvéoles pulmonaires",
@@ -4018,7 +4085,7 @@
    "type": "ouverte",
    "enonce": "Une élève affirme : « La trachée-artère intervient dans l'absorption, la dégradation, l'assimilation et le stockage des aliments. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "reponseModele": "La trachée-artère fait partie de l'appareil respiratoire : elle conduit l'air vers les poumons, pas les aliments."
   },
@@ -4030,7 +4097,7 @@
    "type": "ouverte",
    "enonce": "Un élève affirme : « Les os du squelette et les articulations interviennent dans les fonctions de toucher. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "reponseModele": "Le toucher est assuré par la peau. Les os et les articulations servent au soutien, à la protection et au mouvement du corps."
   },
@@ -4042,7 +4109,7 @@
    "type": "qcm_multi",
    "enonce": "Élément 1 : un saïga (se déplace, se reproduit, se nourrit, pousse des cris, meurt, dort, respire). Élément 2 : une améthyste (aucune de ces caractéristiques). Élément 3 : un rhododendron (se reproduit, se nourrit, meurt, respire). Coche le ou les éléments vivants.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "choix": [
     "Élément 1 : le saïga",
@@ -4089,7 +4156,7 @@
    "type": "grille",
    "enonce": "Un générateur produit le courant électrique, un récepteur l'utilise. Classe les éléments photographiés.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "electricite"
@@ -4118,7 +4185,7 @@
    "type": "qcm",
    "enonce": "Les isolateurs d'un pylône électrique empêchent le courant de passer dans le pylône puis dans le sol. Pourquoi les fabrique-t-on en verre plutôt qu'en métal ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "isolateur"
@@ -4140,7 +4207,7 @@
    "type": "qcm_multi",
    "enonce": "Bulletin météo : « Demain matin, de larges bancs de brouillard se formeront dans la région namuroise. La région de Bastogne connaitra de fortes chutes de neige. » De quelles étapes du cycle de l'eau parle-t-on ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "choix": [
     "évaporation",
@@ -4163,7 +4230,7 @@
    "type": "trous",
    "enonce": "Écris l'état de l'eau qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "texte": "La rosée est de l'eau à l'état {1}.  ·  Les grêlons sont de l'eau à l'état {2}.  ·  Après évaporation, l'eau est à l'état {3}.",
    "reponse": [
@@ -4198,7 +4265,7 @@
    "type": "trous",
    "enonce": "Complète avec fusion, sublimation, solidification, vaporisation ou condensation.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "texte": "Le passage de l'état solide à l'état liquide s'appelle la {1}.  ·  De liquide à gazeux : la {2}.  ·  De liquide à solide : la {3}.",
    "reponse": [
@@ -4223,7 +4290,7 @@
    "type": "ordre",
    "enonce": "Expérience avec de l'eau, de l'huile d'olive et du sel. Remets les étapes dans l'ordre.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-melanges",
    "elements": [
     "Après quelques secondes, des gouttelettes d'huile remontent de la « boule ».",
@@ -4249,7 +4316,7 @@
    "type": "ouverte",
    "enonce": "Des élèves lâchent un ballon gonflé le long d'une corde (paille) et mesurent la distance parcourue. Quelle question se posent-ils ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "ballons-1",
     "ballons-2",
@@ -4265,7 +4332,7 @@
    "type": "grille",
    "enonce": "D'après les tableaux 1 et 2, de manière générale, que devient la distance parcourue par le ballon ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "ballons-4"
    ],
@@ -4293,8 +4360,8 @@
    "domaine": "sc.energie",
    "type": "ouverte",
    "enonce": "D'après les tableaux, quels sont les trois éléments qui font varier la distance parcourue par le ballon ?",
-   "points": 2,
-   "corrigeVerifie": false,
+   "points": 3,
+   "corrigeVerifie": true,
    "documents": [
     "ballons-4"
    ],
@@ -4308,7 +4375,7 @@
    "type": "trous",
    "enonce": "Sans lubrifiant (tableau 1), une donnée ne semble pas réaliste. Complète : « Les élèves ont rencontré un souci technique avec la corde de … et … d'air. »",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "ballons-4"
    ],
@@ -4359,7 +4426,7 @@
    "type": "qcm",
    "enonce": "Avec lubrifiant (tableau 2), dans quelles conditions le ballon parcourt-il la plus grande distance ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "ballons-4"
    ],
@@ -4372,5 +4439,6 @@
    "reponse": 2,
    "explication": "La plus grande distance (1 305 mm) est obtenue avec le plus d'air (20,8 l) et la corde la plus fine (1 mm)."
   }
- ]
+ ],
+ "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2025), comparé question par question le 21/10/2026."
 }

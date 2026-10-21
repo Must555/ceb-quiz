@@ -17,6 +17,7 @@ function reponseParfaite(q) {
     case 'numerique': return String([].concat(q.reponse)[0]).replace('.', ',');
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);
+    case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
     case 'ouverte': return 'ma réponse';
     default: return q.reponse;
   }

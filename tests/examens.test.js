@@ -18,6 +18,7 @@ function parfaite(q) {
     case 'numerique': return String([].concat(q.reponse)[0]);
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);
+    case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
     default: return q.reponse;
   }
 }
@@ -45,10 +46,11 @@ for (const meta of dispo) {
       jouables++;
       if (q.type === 'qcm') assert.ok(q.reponse >= 0 && q.reponse < q.choix.length, `réponse hors choix : ${ctx}`);
       if (q.type === 'qcm_multi') assert.ok(q.reponse.every((i) => i >= 0 && i < q.choix.length), ctx);
-      if (q.type === 'grille') { assert.equal(q.reponse.length, q.lignes.length, ctx); assert.ok(q.reponse.every((c) => c >= 0 && c < q.colonnes.length), ctx); }
+      if (q.type === 'grille') { assert.equal(q.reponse.length, q.lignes.length, ctx); assert.ok(q.reponse.every((c) => [].concat(c).length > 0 && [].concat(c).every((k) => k >= 0 && k < q.colonnes.length)), ctx); }
       if (q.type === 'ordre') assert.deepEqual([...q.reponse].sort((a, b) => a - b), q.elements.map((_, i) => i), ctx);
       if (q.type === 'association') assert.ok(q.reponse.every(([g, d]) => g < q.gauche.length && d < q.droite.length), ctx);
       if (q.type === 'trous') assert.equal((q.texte.match(/\{\d+\}/g) ?? []).length, q.reponse.length, `nombre de trous : ${ctx}`);
+      if (q.differentes) assert.equal(new Set(q.reponse.map((r) => [].concat(r)[0])).size, q.reponse.length, `réponses modèles identiques : ${ctx}`);
       if (q.type !== 'ouverte') {
         const r = corriger(q, parfaite(q));
         assert.equal(r.correct, true, `le corrigé ne se valide pas lui-même : ${ctx}`);

@@ -271,7 +271,7 @@ export function bonneReponseLisible(q) {
     case 'numerique': return `${formatNombre(q.reponse)}${q.unite ? ' ' + q.unite : ''}`;
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]).join(' / ');
-    case 'grille': return q.lignes.map((l, i) => `${l} → ${q.colonnes[q.reponse[i]]}`).join('\n');
+    case 'grille': return q.lignes.map((l, i) => `${l} → ${[].concat(q.reponse[i]).map((c) => q.colonnes[c]).join(' ou ')}`).join('\n');
     case 'ordre': return q.reponse.map((i) => q.elements[i]).join(' → ');
     case 'association': return q.reponse.map(([g, d]) => `${q.gauche[g]} ↔ ${q.droite[d]}`).join('\n');
     case 'ouverte': return q.reponseModele ?? '';
