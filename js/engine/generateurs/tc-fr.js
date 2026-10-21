@@ -163,7 +163,7 @@ function frConjComposes(modele, rng) {
     };
   }
   // temps : reconnaître le temps
-  const q = qcm(rng, T.nom, ['pqp', 'fa', 'cp', 'fp', 'pc', 'pa'].map((x) => TEMPS_C[x].nom), { prio: t === 'pa' ? ['plus-que-parfait'] : [] });
+  const q = qcm(rng, T.nom, ['pqp', 'fa', 'cp', 'fp', 'pc', 'pa'].filter((x) => t === 'fp' || x !== 'fp').map((x) => TEMPS_C[x].nom), { prio: t === 'pa' ? ['plus-que-parfait'] : [] });
   return {
     _signature: sig, ...q,
     enonce: `Dans la phrase « ${complete} », à quel temps est conjugué le verbe « ${formes[0]} » ?`,
@@ -477,7 +477,9 @@ function frFonctionsGN(modele, rng) {
   if (forme === 'trouver') {
     const u = rng.pick(cibles.filter((x) => x.code !== 'AT'));
     if (!u || groupes.filter((x) => x.code === u.code && x.nom === u.nom).length !== 1) return null;
-    const autres = groupes.filter((x) => x !== u).map((x) => x.mot);
+    // Même nature que la bonne réponse : des adjectifs pour « quel adjectif est épithète »,
+    // des groupes pour « quel groupe est complément du nom ».
+    const autres = groupes.filter((x) => x !== u && (u.code === 'EP' ? ['EP', 'AT'].includes(x.code) : x.code !== 'EP' && x.code !== 'AT')).map((x) => x.mot);
     const q = qcm(rng, u.mot, autres);
     if (!q) return null;
     const quoi = u.code === 'EP' ? `quel adjectif est épithète du nom « ${u.nom} »` : `quel groupe est complément du nom « ${u.nom} »`;
@@ -556,13 +558,13 @@ function frPredicat(modele, rng) {
   }
   if (forme === 'sujet') {
     const pool = [p, cp ? aff(cp) : null, suite ? `${s} ${v}` : null, suite ? v : null].filter(Boolean);
-    const q = qcm(rng, aff(s), pool);
+    const q = qcm(rng, aff(s), pool.map(aff));
     if (!q) return null;
     return { _signature: `sujet|${i}`, ...q, enonce: `${phrase}, quel est le groupe sujet ?`, explication: explS };
   }
   if (forme === 'cp') {
     if (!cp) return null;
-    const q = qcm(rng, aff(cp), [aff(s), p, suite ? v : null, suite || null].filter(Boolean));
+    const q = qcm(rng, aff(cp), [aff(s), p, suite ? v : null, suite || null].filter(Boolean).map(aff));
     if (!q) return null;
     return { _signature: `cp|${i}`, ...q, enonce: `${phrase}, quel groupe est le complément de phrase (on peut le déplacer ou le supprimer) ?`, explication: explCP };
   }
@@ -1643,12 +1645,13 @@ function frParticipePresent(modele, rng) {
   // radical / terminaison (pas les verbes en -ger : « mange- » ou « mang- » + « -eant » se défendent tous deux)
   if (/ger$/.test(v)) return null;
   const rad = ppr.slice(0, -3);
-  const decoupe = (r) => `radical « ${r}- » + terminaison « -${ppr.slice(r.length)} »`;
-  const pool = [ppr.slice(0, -4), ppr.slice(0, -2), ppr.slice(0, -5)].filter((r) => r.length >= 1 && r !== rad).map(decoupe);
-  const q = qcm(rng, decoupe(rad), pool);
+  // Distracteurs : le radical lu sur l'infinitif (entendr-), un radical tronqué ou trop long : la vraie hésitation.
+  const inf = v.replace(/(er|ir|re|oir)$/, '');
+  const pool = [inf, v.replace(/e?r$/, ''), rad.slice(0, -1), ppr.slice(0, -2)].filter((r) => r && r.length >= 2 && r !== rad).map((r) => `${r}-`);
+  const q = qcm(rng, `${rad}-`, pool);
   if (!q) return null;
-  return { _signature: `radical|${v}`, ...q, enonce: `Comment se découpe le participe présent « ${ppr} » (verbe ${v}) ?`,
-    explication: `${maj(decoupe(rad))} : tous les participes présents se terminent par -ant. ${explPPR(v)}` };
+  return { _signature: `radical|${v}`, ...q, enonce: `Dans le participe présent « ${ppr} » (verbe ${v}), quel est le radical ?`,
+    explication: `${ppr} = radical « ${rad}- » + terminaison « -ant » : tous les participes présents se terminent par -ant. ${explPPR(v)}` };
 }
 
 // ═════════════════════════ 16. Le champ lexical ═════════════════════════
@@ -1994,7 +1997,7 @@ const SUJETS_RECH = [
 ];
 const deX = (x) => (x.startsWith('les ') ? `des ${x.slice(4)}` : x.startsWith('le ') ? `du ${x.slice(3)}` : `de ${x}`);
 const FIABLES = [(s) => `une encyclopédie pour la jeunesse, article « ${s} », mise à jour cette année`, (s) => `le site d'un musée, page « ${s} »`, (s) => `un livre documentaire sur ${s}, écrit par un spécialiste`];
-const PAS_FIABLES = [(s) => `un message anonyme sur un forum : « Je crois avoir lu un truc sur ${s}… »`, (s) => `une publicité : « Achetez notre jeu sur ${s} ! »`, (s) => `le blog d'un inconnu, sans date ni auteur, qui parle ${deX(s)}`, (s) => `une vidéo de blagues sur ${s}`];
+const PAS_FIABLES = [(s) => `un site internet sur ${s}, sans nom d'auteur ni date`, (s) => `la page d'un magasin qui vend des jeux sur ${s}`, (s) => `le blog d'un passionné qui parle ${deX(s)}, sans citer ses sources`, (s) => `un message sur un forum qui parle ${deX(s)}, écrit par un inconnu`];
 function frSources(modele, rng) {
   const i = rng.int(0, SUJETS_RECH.length - 1);
   const [sujet, titre] = SUJETS_RECH[i];
@@ -2014,19 +2017,19 @@ function frSources(modele, rng) {
     if (!q) return null;
     return { _signature: `fiable|${i}|${kF}|${q.choix.slice().sort().join('|')}`, ...q,
       enonce: `Pour un exposé sur ${sujet}, quelle source est la plus fiable ?`,
-      explication: `${maj(bon)} : on connaît l'auteur ou l'organisme, l'information est vérifiée et datée. Un message anonyme, une publicité ou une vidéo de blagues ne sont pas des sources sûres.` };
+      explication: `${maj(bon)} : on connaît l'auteur ou l'organisme, l'information est vérifiée et datée. Un site sans auteur ni date, un forum, un blog sans sources ou un magasin qui veut vendre ne sont pas des sources sûres.` };
   }
   // date : l'information la plus récente
   const quoi = rng.pick([['les horaires actuels des bus de ta ville', 'Les horaires changent souvent'], ["les heures d'ouverture actuelles de la bibliothèque", "Les heures d'ouverture peuvent changer"],
     ['les prix actuels des places de cinéma', 'Les prix changent souvent'], ['le classement actuel de ton équipe de football', 'Le classement change après chaque match']]);
   // L'année « actuelle » est donnée dans l'énoncé : le document le plus récent est de cette année-là.
   const maintenant = rng.int(2022, 2026);
-  const annees = rng.shuffle([maintenant, maintenant - 2, maintenant - 4, maintenant - 7]);
+  const annees = rng.shuffle([maintenant, maintenant - 1, maintenant - 3, maintenant - 6]);
   const docs = annees.map((a) => `un document daté de ${a}`);
   const recent = Math.max(...annees);
   const q = qcmFixe(docs[annees.indexOf(recent)], docs);
   return { _signature: `date|${quoi[0]}|${annees.join(',')}`, ...q,
-    enonce: `Nous sommes en ${maintenant}. Tu cherches ${quoi[0]}. Plusieurs documents en parlent. Lequel choisis-tu ?`,
+    enonce: `Tu cherches ${quoi[0]}. Plusieurs documents en parlent. Lequel choisis-tu ?`,
     explication: `${quoi[1]} : il faut le document le plus récent (${recent}). Regarde toujours la date d'un document.` };
 }
 

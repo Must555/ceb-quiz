@@ -463,7 +463,7 @@
     "les architectes",
     "le verre, l'acier et le fer",
     "les matériaux favoris",
-    "le hasard"
+    "l'acier et le fer"
    ],
    "reponse": 1,
    "explication": "Ils combinaient le verre, l'acier et le fer."
@@ -483,9 +483,9 @@
    ],
    "choix": [
     "voulaient s'opposer aux idées de l'époque, les bouleverser et davantage rêver.",
-    "voulaient peindre ce qu'ils voyaient.",
-    "avaient besoin de verre et d'acier.",
-    "voulaient faire de la bande dessinée."
+    "voulaient peindre la réalité exactement comme ils la voyaient, sans rien imaginer.",
+    "voulaient construire des maisons en verre et en acier, comme les architectes Art nouveau.",
+    "voulaient raconter les aventures de héros dans des magazines, comme Hergé."
    ],
    "reponse": 0,
    "explication": "C'est ce que dit le texte."
@@ -2334,10 +2334,10 @@
     "juge-3"
    ],
    "choix": [
-    "Le juge généreux fait payer les villageois et donne l'argent au marchand, qui l'invite à déjeuner.",
-    "Le juge fait frapper un rocher ; les villageois paient pour le spectacle et l'argent est offert au marchand.",
+    "Le juge fait payer une pièce à chaque villageois pour aider le jeune marchand ; le voleur est attrapé parce que les gardes l'ont vu prendre l'argent.",
+    "Le juge interroge un rocher pour amuser la foule ; les villageois paient pour le spectacle et l'argent est offert au jeune marchand.",
     "Le juge se fait passer pour fou afin que les villageois paient une amende d'une pièce ; le coupable est attrapé car sa pièce porte des traces d'huile.",
-    "Le juge trouve une astuce ; sachant qu'il va être découvert, le voleur se dénonce."
+    "Le juge fait semblant d'accuser un rocher ; sachant qu'il va être découvert, le voleur se dénonce et rend sa pièce huilée."
    ],
    "reponse": 2,
    "explication": "Le voleur ne se dénonce pas : c'est l'huile sur sa pièce qui le trahit."
@@ -3500,7 +3500,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
-    "A : 49 biscuits",
+    "A : 17 × 12 = 204 ; 204 : 4 = 51 ; 51 − 2 = 49",
     "B : 17 × 4 = 68 ; 12 × 2 = 24 ; 68 − 24 = 44",
     "C : 68 + 24 = 92",
     "D : (4 × 17) − (1 × 12) = 56"

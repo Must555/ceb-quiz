@@ -19,6 +19,7 @@ function parfaite(q) {
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);
     case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
+    case 'qcm': return [].concat(q.reponse)[0];
     default: return q.reponse;
   }
 }
@@ -44,7 +45,7 @@ for (const meta of dispo) {
       for (const d of q.documents ?? []) assert.ok(docs.has(d), `document ${d} manquant : ${ctx}`);
       if (q.numerisable === false || !estJouable(q)) continue;
       jouables++;
-      if (q.type === 'qcm') assert.ok(q.reponse >= 0 && q.reponse < q.choix.length, `réponse hors choix : ${ctx}`);
+      if (q.type === 'qcm') assert.ok([].concat(q.reponse).every((r) => r >= 0 && r < q.choix.length), `réponse hors choix : ${ctx}`);
       if (q.type === 'qcm_multi') assert.ok(q.reponse.every((i) => i >= 0 && i < q.choix.length), ctx);
       if (q.type === 'grille') { assert.equal(q.reponse.length, q.lignes.length, ctx); assert.ok(q.reponse.every((c) => [].concat(c).length > 0 && [].concat(c).every((k) => k >= 0 && k < q.colonnes.length)), ctx); }
       if (q.type === 'ordre') assert.deepEqual([...q.reponse].sort((a, b) => a - b), q.elements.map((_, i) => i), ctx);

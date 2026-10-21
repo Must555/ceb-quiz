@@ -19,6 +19,7 @@ function reponseParfaite(q) {
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);
     case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
     case 'ouverte': return 'ma réponse';
+    case 'qcm': return [].concat(q.reponse)[0];
     default: return q.reponse;
   }
 }

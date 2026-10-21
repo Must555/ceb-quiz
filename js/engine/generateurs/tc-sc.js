@@ -219,7 +219,7 @@ function expRefroid(rng, support) {
       demarche: {
         enonce: 'Pour que la comparaison entre les pots soit juste, qu\'est-ce qui doit être pareil pour tous les pots ?',
         bonne: 'La quantité d\'eau et sa température de départ.',
-        faux: ['Le matériau autour du pot.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'],
+        faux: ['Le matériau autour du pot.', 'Seulement la quantité d\'eau : sa température de départ peut changer.', 'La température de l\'eau à la fin.'],
         pourquoi: 'Dans une expérience juste, on ne change qu\'une seule chose à la fois (ici, le matériau autour du pot). Tout le reste doit être identique.',
         fiche: 'sc-demarche',
       },
@@ -262,7 +262,7 @@ function expGlacon(rng, support) {
       demarche: {
         enonce: 'Pour que l\'expérience soit juste, qu\'est-ce qui doit être pareil pour tous les pots ?',
         bonne: 'La taille des glaçons et l\'endroit où sont posés les pots.',
-        faux: ['Le matériau autour du pot.', 'Rien : on peut tout changer.', 'La durée de fonte.'],
+        faux: ['Le matériau autour du pot.', 'Seulement la taille des glaçons : les pots peuvent être dans des pièces différentes.', 'La durée de fonte.'],
         pourquoi: 'On ne change qu\'une seule chose à la fois : le matériau. Les glaçons doivent être identiques et les pots placés dans la même pièce.',
         fiche: 'sc-demarche',
       },
@@ -291,10 +291,10 @@ function expSoleil(rng, support) {
     cause = {
       enonce: `Pourquoi l'eau de la bouteille noire se réchauffe-t-elle plus que celle de la bouteille blanche${series.length === 3 ? ' posée au soleil' : ''} ?`,
       bonne: 'La bouteille noire absorbe davantage la lumière du Soleil ; la blanche en renvoie une grande partie.',
-      faux: ['La bouteille noire contient plus d\'eau.', 'Le noir produit de la chaleur tout seul, même dans l\'obscurité.', 'La bouteille blanche fabrique du froid.'],
+      faux: ['La bouteille noire contient plus d\'eau.', 'Le noir attire l\'air chaud qui se trouve autour de la bouteille.', 'Le blanc garde l\'eau au frais, comme un frigo.'],
       pourquoi: 'La lumière absorbée par la bouteille est transformée en énergie thermique (chaleur). Une surface noire absorbe plus de lumière qu\'une surface blanche.',
     };
-    demarche = { faux: ['La couleur des bouteilles.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'],
+    demarche = { faux: ['La couleur des bouteilles.', 'Seulement la quantité d\'eau : sa température de départ peut être différente.', 'La température de l\'eau à la fin.'],
       teste: series.length === 3 ? 'la couleur (bouteilles noire et blanche au soleil) ou l\'endroit (deux bouteilles blanches, au soleil et à l\'ombre)' : 'la couleur de la bouteille' };
   } else {
     series = [{ nom: 'Au soleil', v: courbe(T0 + rng.int(20, 25), 0.02) }, { nom: 'À l\'ombre', v: courbe(T0 + rng.int(4, 6), 0.02) }];
@@ -302,10 +302,10 @@ function expSoleil(rng, support) {
     cause = {
       enonce: 'Pourquoi l\'eau de la bouteille au soleil devient-elle plus chaude ?',
       bonne: 'La lumière du Soleil est absorbée par la bouteille et l\'eau, et transformée en énergie thermique.',
-      faux: ['L\'ombre fabrique du froid qui refroidit l\'autre bouteille.', 'La bouteille au soleil contient plus d\'eau.', 'Au soleil, l\'eau se transforme en dioxygène.'],
+      faux: ['L\'air est plus chaud au soleil ; la lumière, elle, ne joue aucun rôle.', 'La bouteille au soleil contient plus d\'eau.', 'À l\'ombre, l\'eau s\'évapore et emporte sa chaleur.'],
       pourquoi: 'L\'énergie lumineuse du Soleil se transforme en énergie thermique quand elle est absorbée : l\'eau se réchauffe. À l\'ombre, elle reçoit beaucoup moins de lumière.',
     };
-    demarche = { faux: ['L\'endroit où on pose la bouteille.', 'Rien : on peut tout changer.', 'La température de l\'eau à la fin.'], teste: 'l\'endroit (soleil ou ombre)' };
+    demarche = { faux: ['L\'endroit où on pose la bouteille.', 'Seulement la quantité d\'eau : sa température de départ peut être différente.', 'La température de l\'eau à la fin.'], teste: 'l\'endroit (soleil ou ombre)' };
   }
   if (series.some((x) => !x.v)) return null;
   const max = Math.max(...series.flatMap((s) => s.v));
@@ -359,13 +359,13 @@ function expPouls(rng) {
       cause: {
         enonce: `Pourquoi le rythme cardiaque de ${p} augmente-t-il pendant la course ?`,
         bonne: 'Ses muscles travaillent plus : ils ont besoin de plus de dioxygène et de nutriments, que le sang leur apporte.',
-        faux: ['Son cœur doit digérer plus vite le repas.', 'Son cœur fabrique du dioxygène pour les muscles.', 'Le sang devient plus lourd pendant la course.'],
+        faux: ['Ses muscles rejettent moins de dioxyde de carbone.', 'Son cœur fabrique du dioxygène pour les muscles.', 'Le sang devient plus épais pendant la course.'],
         pourquoi: 'Pendant l\'effort, les muscles consomment plus de dioxygène et de nutriments et rejettent plus de dioxyde de carbone. Le cœur bat plus vite pour faire circuler le sang plus vite.',
       },
       conclusion: {
         enonce: 'Que montre la fin du graphique, après la course ?',
         bonne: 'Au repos, le rythme cardiaque redescend peu à peu jusqu\'à sa valeur de départ.',
-        faux: ['Le cœur s\'arrête de battre pour se reposer.', 'Le rythme cardiaque reste élevé toute la journée.', 'Le rythme cardiaque continue à monter.'],
+        faux: ['Au repos, le rythme cardiaque descend bien en dessous de sa valeur de départ.', 'Le rythme cardiaque reste élevé toute la journée.', 'Le rythme cardiaque continue à monter.'],
         pourquoi: 'Quand l\'effort s\'arrête, les muscles ont de nouveau moins besoin de dioxygène : le cœur ralentit progressivement et revient à son rythme de repos.',
       },
     },
@@ -425,7 +425,7 @@ function expGermination(rng, support) {
       demarche: {
         enonce: 'Pour que l\'expérience soit juste, qu\'est-ce qui doit être pareil dans les trois boîtes ?',
         bonne: 'Le nombre et la sorte de graines, et l\'humidité du coton.',
-        faux: ['La température.', 'Rien : on peut tout changer.', 'Le nombre de graines germées.'],
+        faux: ['La température.', 'Seulement le nombre de graines : le coton peut être plus ou moins mouillé.', 'Le nombre de graines germées.'],
         pourquoi: 'On veut savoir si la température a un effet : c\'est la seule chose qui change. Tout le reste reste identique.',
         fiche: 'sc-demarche',
       },
@@ -607,13 +607,13 @@ export function genererEffort(modele, rng) {
   if (forme === 'pourquoi') {
     const QS = [
       { e: `${maj(sport)}, le cœur de ${p} bat beaucoup plus vite qu'au repos. Pourquoi ?`, b: 'Ses muscles ont besoin de plus de dioxygène et de nutriments : le sang doit les apporter plus vite.',
-        f: ['Son cœur a besoin de se reposer.', 'Son cœur doit digérer plus vite le repas.', 'Le sang devient plus lourd pendant l\'effort.', 'Son cœur fabrique du dioxygène.'],
+        f: ['Ses muscles rejettent moins de dioxyde de carbone.', 'Son cœur fabrique du dioxygène pour les muscles.', 'Le sang devient plus épais pendant l\'effort.', 'Son cœur a besoin de plus d\'air que d\'habitude.'],
         x: 'Pendant l\'effort, les muscles travaillent davantage. Le sang leur apporte dioxygène et nutriments et emporte le dioxyde de carbone : le cœur bat plus vite pour accélérer la circulation.' },
       { e: `${maj(sport)}, ${p} respire plus vite et plus fort. Pourquoi ?`, b: 'Pour faire entrer plus de dioxygène dans le sang et rejeter plus de dioxyde de carbone.',
-        f: ['Pour refroidir ses poumons.', 'Pour faire entrer plus d\'air dans son estomac.', 'Pour rejeter plus de dioxygène.', 'Parce que ses poumons rapetissent pendant l\'effort.'],
+        f: ['Pour refroidir ses poumons.', 'Pour rejeter plus de dioxygène.', 'Pour faire entrer plus de dioxyde de carbone dans ses muscles.', 'Pour que son cœur reçoive directement de l\'air.'],
         x: 'Les muscles en effort consomment plus de dioxygène et produisent plus de dioxyde de carbone. La ventilation augmente pour les échanges avec le sang dans les alvéoles des poumons.' },
       { e: `Pourquoi ${p} mesure-t-${e} son rythme cardiaque 3 fois avant de calculer la moyenne ?`, b: 'Pour obtenir un résultat plus fiable, car une seule mesure peut contenir une erreur.',
-        f: ['Pour que son cœur batte plus vite.', 'Parce qu\'un chronomètre ne marche qu\'une fois sur trois.', 'Pour obtenir le plus grand nombre possible.'],
+        f: ['Pour garder ensuite la plus grande des trois mesures.', 'Parce que le cœur bat plus vite à chaque nouvelle mesure.', 'Pour que la moyenne soit plus grande qu\'une seule mesure.'],
         x: 'En science, on répète une mesure et on fait la moyenne : les petites erreurs (un battement oublié, un départ trop tard) se compensent.' },
       { e: `Après la course, ${p} se repose 10 minutes et reprend son pouls. Que va-t-${e} constater ?`, b: 'Son rythme cardiaque est redescendu vers sa valeur de repos.',
         f: ['Son rythme cardiaque est encore plus rapide qu\'à la fin de la course.', 'Son cœur ne bat plus du tout.', 'Son rythme cardiaque est devenu plus lent que jamais.'],
@@ -635,7 +635,7 @@ export function genererEffort(modele, rng) {
       { e: 'Comment appelle-t-on les mouvements de l\'air qui entre et sort des poumons (inspiration et expiration) ?', b: 'La ventilation', f: ['Le rythme cardiaque', 'La circulation', 'La digestion', 'L\'absorption'] },
       { e: 'Dans quelle unité exprime-t-on le rythme cardiaque ?', b: 'En battements par minute', f: ['En degrés', 'En litres', 'En kilomètres par heure', 'En mouvements par seconde'] },
       { e: 'Quel instrument faut-il pour mesurer le rythme cardiaque en comptant ses battements ?', b: 'Un chronomètre', f: ['Un thermomètre', 'Une balance', 'Un mètre ruban', 'Une loupe'] },
-      { e: 'Où peut-on facilement sentir son pouls avec deux doigts ?', b: 'Au poignet ou sur le côté du cou', f: ['Au bout du nez', 'Sur le genou', 'Sur l\'ongle', 'Sur le coude'] },
+      { e: 'Où peut-on facilement sentir son pouls avec deux doigts ?', b: 'Au poignet ou sur le côté du cou', f: ['Sur le front', 'Sur le ventre', 'Sur le genou', 'Sur le dos de la main'] },
       { e: 'Que compte-t-on pour mesurer la ventilation ?', b: 'Le nombre de fois où la poitrine se soulève en une minute', f: ['Le nombre de battements du cœur en une minute', 'Le nombre de pas en une minute', 'Le nombre de fois où l\'on avale en une minute'] },
     ];
     const Q = rng.pick(QS);
@@ -1019,7 +1019,7 @@ export function genererAttributs(modele, rng) {
     { e: 'Un caniche et un saint-bernard sont très différents. Pourquoi sont-ils pourtant de la même espèce ?', b: 'Ils peuvent avoir ensemble des chiots, qui seront eux-mêmes féconds.',
       f: ['Parce qu\'ils ont tous les deux des poils.', 'Parce qu\'ils vivent tous les deux avec l\'être humain.', 'Parce qu\'ils mangent la même nourriture.'] },
     { e: 'Le lapin et le lièvre se ressemblent beaucoup. Ils ne peuvent pas avoir de petits ensemble. Que peut-on dire ?', b: 'Ce sont deux espèces différentes.',
-      f: ['C\'est la même espèce, car ils se ressemblent.', 'Le lièvre est le mâle du lapin.', 'Le lapin est le petit du lièvre.'] },
+      f: ['C\'est la même espèce, car ils se ressemblent.', 'Ce sont deux races de la même espèce.', 'On ne peut rien dire : il faudrait d\'abord comparer leur taille.'] },
     { cl: true, e: 'Dans une classification scientifique, sur quoi se base-t-on pour regrouper les animaux ?', b: 'Sur les attributs qu\'ils partagent (ce qu\'ils ont).',
       f: ['Sur l\'endroit où ils vivent.', 'Sur leur façon de se déplacer.', 'Sur leur taille.', 'Sur ce qu\'ils mangent.'] },
     { cl: true, e: 'À quoi sert la classification phylogénétique des animaux ?', b: 'À montrer les liens de parenté entre les espèces.',
@@ -1085,15 +1085,15 @@ const QCMS = [
   { e: 'Où le dioxygène de l\'air passe-t-il dans le sang ?', b: 'Dans les alvéoles des poumons', f: ['Dans la trachée', 'Dans le cœur', 'Dans l\'estomac'], x: 'Les alvéoles sont entourées de petits vaisseaux sanguins.' },
   { e: 'Quel système transporte le dioxygène et les nutriments jusqu\'aux muscles ?', b: 'Le système circulatoire', f: ['Le système respiratoire', 'Le système digestif', 'Le squelette'], x: 'Le sang, poussé par le cœur dans les vaisseaux, transporte tout dans le corps.' },
   { e: 'Par où le dioxyde de carbone produit par les muscles quitte-t-il le corps ?', b: 'Par les poumons, à l\'expiration', f: ['Par les reins, dans l\'urine', 'Par l\'intestin', 'Par le cœur'], x: 'Le sang l\'apporte aux poumons ; il est rejeté avec l\'air expiré.' },
-  { e: 'Quels organes débarrassent le sang de certains déchets, évacués dans l\'urine ?', b: 'Les reins', f: ['Les poumons', 'Le cœur', 'L\'estomac'], x: 'Les reins filtrent le sang.' },
-  { e: 'Quels vaisseaux transportent le sang du cœur vers les muscles ?', b: 'Les artères', f: ['Les veines', 'Les bronches', 'L\'œsophage'], x: 'Artères : du cœur vers les organes.' },
-  { e: 'Quels vaisseaux ramènent le sang des muscles vers le cœur ?', b: 'Les veines', f: ['Les artères', 'Les bronches', 'La trachée'], x: 'Veines : des organes vers le cœur.' },
+  { e: 'Quels organes débarrassent le sang de certains déchets, évacués dans l\'urine ?', b: 'Les reins', f: ['La vessie', 'Le foie', 'L\'intestin grêle'], x: 'Les reins filtrent le sang ; la vessie, elle, ne fait que stocker l\'urine.' },
+  { e: 'Quels vaisseaux transportent le sang du cœur vers les muscles ?', b: 'Les artères', f: ['Les veines', 'Les nerfs', 'Les tendons'], x: 'Artères : du cœur vers les organes.' },
+  { e: 'Quels vaisseaux ramènent le sang des muscles vers le cœur ?', b: 'Les veines', f: ['Les artères', 'Les nerfs', 'Les tendons'], x: 'Veines : des organes vers le cœur.' },
   { e: 'Quel organe pompe le sang dans tout le corps ?', b: 'Le cœur', f: ['Les poumons', 'Le foie', 'L\'estomac'], x: 'Le cœur est un muscle qui se contracte sans arrêt.' },
-  { e: 'Quel muscle en forme de dôme, situé sous les poumons, s\'abaisse à l\'inspiration ?', b: 'Le diaphragme', f: ['Le cœur', 'L\'œsophage', 'Le biceps'], x: 'En s\'abaissant, il agrandit la cage thoracique : l\'air entre.' },
+  { e: 'Quel muscle en forme de dôme, situé sous les poumons, s\'abaisse à l\'inspiration ?', b: 'Le diaphragme', f: ['Le cœur', 'L\'estomac', 'Les abdominaux'], x: 'En s\'abaissant, il agrandit la cage thoracique : l\'air entre.' },
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le pancréas', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le foie', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
-  { e: 'Dans quelle partie du tube digestif de l\'eau est-elle absorbée, juste avant l\'anus ?', b: 'Dans le côlon', f: ['Dans l\'œsophage', 'Dans la bouche', 'Dans la trachée'], x: 'Le côlon (gros intestin) absorbe encore de l\'eau ; les restes sont évacués par l\'anus.' },
-  { e: 'Quel conduit amène l\'air jusqu\'aux bronches ?', b: 'La trachée', f: ['L\'œsophage', 'L\'artère', 'L\'intestin grêle'], x: 'Nez ou bouche → trachée → bronches → alvéoles des poumons.' },
+  { e: 'Dans quelle partie du tube digestif de l\'eau est-elle absorbée, juste avant l\'anus ?', b: 'Dans le côlon', f: ['Dans l\'estomac', 'Dans l\'intestin grêle', 'Dans l\'œsophage'], x: 'Le côlon (gros intestin) absorbe encore de l\'eau ; les restes sont évacués par l\'anus.' },
+  { e: 'Quel conduit amène l\'air jusqu\'aux bronches ?', b: 'La trachée', f: ['L\'œsophage', 'Les alvéoles', 'Les fosses nasales'], x: 'Nez ou bouche → trachée → bronches → alvéoles des poumons.' },
   { e: 'Que transporte le sang qui revient des muscles vers les poumons ?', b: 'Du dioxyde de carbone à rejeter', f: ['Des aliments non digérés', 'De l\'urine', 'De l\'air pur'], x: 'Les muscles produisent du dioxyde de carbone ; le sang l\'emporte jusqu\'aux poumons.' },
 ];
 const SITUATIONS = [
@@ -1187,7 +1187,7 @@ const VPARTS = {
   membrane: { modele: 'la membrane en caoutchouc', ligne: 'La membrane en caoutchouc', organe: 'le diaphragme' },
 };
 const VCLES = Object.keys(VPARTS);
-const ORG_EXTRA = ['le cœur', 'l\'estomac', 'l\'œsophage'];
+const ORG_EXTRA = ['le cœur', 'les fosses nasales']; // organes du thorax ou de la respiration, absents du modèle
 const CORRESP = 'Dans ce modèle : la bouteille représente la cage thoracique, la membrane le diaphragme, les ballons les poumons, le tube la trachée et les branches du Y les bronches.';
 
 function figureVentilation(etat, lettres) {
@@ -1301,8 +1301,8 @@ export function genererVentilation(modele, rng) {
     const bonne = tire ? 'Le volume à l\'intérieur de la bouteille augmente : l\'air extérieur entre dans les ballons par le tube.'
       : 'Le volume à l\'intérieur de la bouteille diminue : l\'air des ballons est chassé par le tube.';
     const faux = tire
-      ? ['La membrane souffle de l\'air dans les ballons.', 'Les ballons fabriquent de l\'air.', 'L\'air entre dans les ballons par le fond de la bouteille.', 'Le volume à l\'intérieur de la bouteille diminue.']
-      : ['La membrane aspire l\'air des ballons.', 'L\'air des ballons se transforme en eau.', 'Le volume à l\'intérieur de la bouteille augmente.', 'Les ballons laissent passer l\'air à travers leur paroi.'];
+      ? ['La membrane souffle de l\'air dans les ballons.', 'Le caoutchouc de la membrane pousse l\'air vers les ballons.', 'L\'air entre dans les ballons par le fond de la bouteille.', 'Le volume à l\'intérieur de la bouteille diminue.']
+      : ['La membrane aspire l\'air des ballons.', 'L\'air des ballons passe dans la bouteille, autour des ballons.', 'Le volume à l\'intérieur de la bouteille augmente.', 'Les ballons laissent passer l\'air à travers leur paroi.'];
     const f = rng.shuffle(faux).slice(0, 3);
     const r = qcm(rng, bonne, f);
     return { ...r, enonce: `${intro} Quand ${p} ${tire ? 'tire la membrane vers le bas, les ballons se gonflent' : 'pousse la membrane vers le haut, les ballons se dégonflent'}. Pourquoi ?`,
@@ -1316,14 +1316,14 @@ export function genererVentilation(modele, rng) {
     if (sens === 'modeleTire' || sens === 'modelePousse') {
       const t = sens === 'modeleTire';
       const bonne = t ? contracte : relache;
-      const r = qcm(rng, bonne, rng.shuffle([t ? relache : contracte, 'Il pousse les aliments vers l\'estomac.', 'Il fait battre le cœur plus vite.', 'Il ne bouge pas : seuls les poumons bougent.']).slice(0, 3));
+      const r = qcm(rng, bonne, rng.shuffle([t ? relache : contracte, 'Il se contracte et remonte : l\'air entre (inspiration).', 'Il se relâche et s\'abaisse : l\'air sort (expiration).', 'Il ne bouge pas : seuls les poumons bougent.']).slice(0, 3));
       return { ...r, enonce: `${intro} ${p} ${verbeP(t ? 'tire' : 'pousse')}. Dans le corps, que fait le diaphragme pour produire le même effet ?`,
         explication: `${bonne} La membrane du modèle représente le diaphragme, un muscle en forme de dôme placé sous les poumons.`,
         _signature: `reel|${sens}|${r.choix.slice().sort().join('|')}`, cleContenu: `reel|${sens}|${triee(r.choix)}` };
     }
     const bas = sens === 'corpsBas';
     const bonne = bas ? 'La tirer vers le bas.' : 'La pousser vers le haut.';
-    const r = qcm(rng, bonne, rng.shuffle([bas ? 'La pousser vers le haut.' : 'La tirer vers le bas.', 'Serrer la bouteille avec les mains.', 'Retirer le bouchon de la bouteille.']).slice(0, 3));
+    const r = qcm(rng, bonne, rng.shuffle([bas ? 'La pousser vers le haut.' : 'La tirer vers le bas.', 'Souffler dans le tube sans toucher la membrane.', 'Pincer le tube pour bloquer l\'air.']).slice(0, 3));
     return { ...r, enonce: `${intro} Dans le corps, le diaphragme ${bas ? 's\'abaisse' : 'remonte'}. Que doit faire ${p} avec la membrane pour imiter ce mouvement ?`,
       explication: `${bonne} La membrane représente le diaphragme. ${bas ? 'Quand il s\'abaisse, la cage thoracique s\'agrandit et l\'air entre : c\'est l\'inspiration.' : 'Quand il remonte, la cage thoracique diminue et l\'air sort : c\'est l\'expiration.'}`,
       _signature: `reel|${sens}|${triee(r.choix)}`, cleContenu: `reel|${sens}|${triee(r.choix)}` };
@@ -1376,7 +1376,7 @@ const CTX_DEM = [
     effet: (v) => `le refroidissement de l'eau chaude (à ${v.T} °C au départ)`, mesure: 'la température de l\'eau après 30 minutes',
     f: [{ nom: 'le matériau autour du pot', col: 'Autour du pot', v: ['rien', 'laine'], ph: ['sans rien autour du pot', 'pot entouré de laine'], temoin: true, q: 'la laine autour d\'un pot ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans rien autour', 'un pot d\'eau chaude entouré d\'une écharpe en laine'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans couvercle', 'un pot d\'eau chaude fermé par un couvercle'] },
-      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 mL', '400 mL'], ph: ['200 mL d\'eau', '400 mL d\'eau'] }],
+      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 ml', '400 ml'], ph: ['200 ml d\'eau', '400 ml d\'eau'] }],
     fait: (rng, v) => `Après 30 minutes, l'eau du pot entouré de laine est à ${rng.int(42, v.T - 12)} °C.`,
     hyp: () => ['Je pense que la laine va ralentir le refroidissement de l\'eau.', 'Peut-être qu\'un couvercle garde l\'eau chaude plus longtemps.'],
     jug: () => ['L\'écharpe en laine rouge est la plus belle.', 'Mesurer des températures, c\'est amusant.'] },
@@ -1395,10 +1395,10 @@ const CTX_DEM = [
     hyp: () => ['Je pense que le sucre se dissout plus vite dans l\'eau chaude.', 'Peut-être que le sucre en poudre se dissout plus vite que le sucre en morceau.'],
     jug: () => ['Le sucre en morceau est plus joli que le sucre en poudre.', 'L\'eau sucrée, c\'est délicieux.'] },
   { id: 'evap', dom: 'sc.matiere', tire: (rng) => ({ V: rng.pick([100, 150, 200]) }),
-    effet: (v) => `l'évaporation de ${v.V} mL d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
+    effet: (v) => `l'évaporation de ${v.V} ml d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
     f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre', 'assiette'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient d\'eau fermé par un couvercle'] }],
-    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} mL d'eau dans le verre étroit.`,
+    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} ml d'eau dans le verre étroit.`,
     hyp: () => ['Je pense que l\'eau s\'évapore plus vite dans une assiette large que dans un verre.', 'Peut-être que l\'eau s\'évapore plus vite près du radiateur.'],
     jug: () => ['L\'assiette bleue est la plus belle de la cuisine.', 'Cette expérience est trop longue, c\'est nul.'] },
   { id: 'bougie', dom: 'sc.matiere', tire: () => ({}),
@@ -1492,7 +1492,7 @@ export function genererDemarche(modele, rng) {
   }
   if (forme === 'garder') {
     const t = rng.int(0, 2); const o = rng.pick([0, 1, 2].filter((i) => i !== t));
-    const r = qcm(rng, maj(c.f[o].nom), [maj(c.f[t].nom), maj(c.mesure), 'Rien : on peut tout changer']);
+    const r = qcm(rng, maj(c.f[o].nom), [maj(c.f[t].nom), maj(c.mesure), `${maj(c.f[t].nom)} et ${c.f[o].nom}`]);
     const autres = [0, 1, 2].filter((i) => i !== t).map((i) => c.f[i].nom);
     return { ...base, ...r, fiche: 'sc-demarche',
       enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. Qu'est-ce qui doit rester identique dans ses deux montages ?`,
@@ -1501,11 +1501,14 @@ export function genererDemarche(modele, rng) {
   }
   if (forme === 'mesure') {
     const t = rng.int(0, 2);
-    const faux = rng.shuffle(CTX_DEM.filter((x) => x.id !== c.id && x.mesure !== c.mesure)).slice(0, 3).map((x) => maj(x.mesure));
+    // Fausses réponses crédibles (contre-expertise, point 24) : les facteurs de la MÊME expérience,
+    // celui qu'on fait varier et ceux qu'on garde identiques ; jamais une mesure d'une autre expérience.
+    const faux = c.f.map((f) => maj(f.nom));
     const r = qcm(rng, maj(c.mesure), faux);
+    const gardes = c.f.filter((_, i) => i !== t).map((f) => f.nom);
     return { ...base, ...r, fiche: 'sc-demarche',
       enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. Que doit-${pr(p)} mesurer ou observer à la fin de l'expérience ?`,
-      explication: `Pour connaître l'effet sur ${c.effet(v)}, on mesure ${c.mesure} dans chaque montage, puis on compare.`,
+      explication: `Pour connaître l'effet sur ${c.effet(v)}, on mesure ${c.mesure} dans chaque montage, puis on compare. ${maj(c.f[t].nom)}, c'est ce qu'on fait varier ; ${listeEt(gardes)} restent identiques : ce ne sont pas des résultats à mesurer.`,
       _signature: `mes|${c.id}|${t}|${triee(faux)}`, cleContenu: `mes|${c.id}|${t}|${triee(faux)}` };
   }
   if (forme === 'temoin') {
@@ -1570,11 +1573,11 @@ const SIT_CHALEUR = [
 ];
 const CHALEUR_QCM = [
   { e: (p) => `${p} touche, dans la même pièce, une rampe en métal et une planche en bois. Les deux sont à la même température, mais le métal semble plus froid. Pourquoi ?`,
-    b: 'Le métal est un bon conducteur thermique : il emporte plus vite la chaleur de la main.', f: ['Le métal fabrique du froid.', 'Le métal est toujours plus froid que le bois.', 'Le bois produit de la chaleur.'] },
+    b: 'Le métal est un bon conducteur thermique : il emporte plus vite la chaleur de la main.', f: ['Le métal fabrique du froid.', 'Le métal est toujours plus froid que le bois.', 'Le bois est un bon conducteur thermique : il réchauffe la main.'] },
   { e: (p) => `${p} tient un glaçon dans sa main : le glaçon fond. Pourquoi ?`,
-    b: 'La chaleur passe de la main, plus chaude, vers le glaçon, plus froid.', f: ['Le froid du glaçon passe dans la main.', 'Le glaçon produit de la chaleur.', 'La main fabrique de l\'eau.'] },
+    b: 'La chaleur passe de la main, plus chaude, vers le glaçon, plus froid.', f: ['Le froid du glaçon passe dans la main.', 'La chaleur passe du glaçon vers la main.', 'Le glaçon fond tout seul : la main n\'y est pour rien.'] },
   { e: (p) => `${p} a froid aux mains en hiver. Que se passe-t-il ?`,
-    b: 'Ses mains perdent de la chaleur, qui passe vers l\'air plus froid.', f: ['Le froid de l\'air entre dans ses mains.', 'Ses mains fabriquent du froid.', 'L\'air froid lui donne de la chaleur.'] },
+    b: 'Ses mains perdent de la chaleur, qui passe vers l\'air plus froid.', f: ['Le froid de l\'air entre dans ses mains.', 'Son sang devient froid et refroidit ses mains de l\'intérieur.', 'L\'air froid lui donne de la chaleur.'] },
   { e: () => 'Quand s\'arrête le passage de la chaleur entre deux objets qui se touchent ?', b: 'Quand les deux objets ont la même température.',
     f: ['Quand l\'objet chaud est devenu le plus froid des deux.', 'Jamais : la chaleur passe sans fin.', 'Quand l\'objet froid est devenu le plus chaud des deux.'] },
   { e: () => 'Dans quel sens la chaleur (l\'énergie thermique) passe-t-elle toujours ?', b: 'D\'une matière chaude vers une matière plus froide.',
@@ -1639,12 +1642,15 @@ export function genererTransfert(modele, rng) {
     let T1; let T2;
     do { T1 = rng.int(9, 18) * 5; T2 = rng.int(2, 6) * 5; } while ((T1 + T2) % 2 || T1 - T2 < 30);
     const V = rng.pick([100, 150, 200, 250, 300]); const m = (T1 + T2) / 2;
-    const d = rng.pick([5, 10, 15].filter((x) => x !== T2));
-    const choix = [m, T1 + T2, T1 + d, Math.max(0, T2 - d)].map(deg);
-    const r = qcm(rng, deg(m), choix.slice(1));
-    return { ...r, enonce: `${p} verse ${V} mL d'eau à ${deg(T1)} et ${V} mL d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
+    // Pièges : la somme et la différence (erreurs d'élève) et une valeur entre les deux
+    // températures mais pas au milieu (oubli que les quantités sont égales).
+    const q = Math.max(5, Math.round((T1 - T2) / 4 / 5) * 5);
+    const pieges = [...new Set([T1 + T2, T1 - T2, rng.pick([m + q, m - q])])].filter((x) => x !== m && x > 0);
+    if (pieges.length < 3) pieges.push(pieges.includes(m + q) ? m - q : m + q);
+    const r = qcm(rng, deg(m), [...new Set(pieges)].filter((x) => x !== m).slice(0, 3).map(deg));
+    return { ...r, enonce: `${p} verse ${V} ml d'eau à ${deg(T1)} et ${V} ml d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
       explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) ÷ 2 = ${m} °C. Les températures ne s'additionnent pas.`,
-      _signature: `mel|${T1}|${T2}|${V}|${d}`, cleContenu: `mel|${T1}|${T2}|${V}` };
+      _signature: `mel|${T1}|${T2}|${V}|${triee(r.choix)}`, cleContenu: `mel|${T1}|${T2}|${V}` };
   }
   if (forme === 'courbe') {
     const E = figureEquilibre(rng); if (!E) return null;
@@ -1652,7 +1658,7 @@ export function genererTransfert(modele, rng) {
     const [nA, nB] = ['Courbe A', 'Courbe B'];
     const series = inv ? [{ nom: nA, v: E.bol }, { nom: nB, v: E.tasse }] : [{ nom: nA, v: E.tasse }, { nom: nB, v: E.bol }];
     const fig = svgCourbes({ titre: 'Température de l\'eau', xs: E.xs, series, xTitre: 'Temps (min)', yTitre: 'Température (°C)', yMin: 0, yMax: Math.ceil((E.T1 + 1) / 10) * 10, yPas: 5, yEtiq: 10 });
-    const ctx = `${p} pose une tasse contenant ${E.V1} mL d'eau à ${deg(E.T1)} dans un bol contenant ${E.V2} mL d'eau à ${deg(E.T2)}. Le bol est placé dans une boîte en polystyrène. ${maj(pr(p))} mesure la température des deux eaux toutes les 2 minutes.`;
+    const ctx = `${p} pose une tasse contenant ${E.V1} ml d'eau à ${deg(E.T1)} dans un bol contenant ${E.V2} ml d'eau à ${deg(E.T2)}. Le bol est placé dans une boîte en polystyrène. ${maj(pr(p))} mesure la température des deux eaux toutes les 2 minutes.`;
     const sig = `${E.T1}|${E.T2}|${E.k}|${E.V1}|${E.tasse.join(',')}|${inv}`;
     const q = rng.pick(['laquelle', 'finale', 'gain', 'perte', 'conclusion']);
     const nomTasse = inv ? nB : nA; const nomBol = inv ? nA : nB;
@@ -1676,7 +1682,7 @@ export function genererTransfert(modele, rng) {
         _signature: `cg|${sig}|${q}`, cleContenu: `cg|${sig}|${q}` };
     }
     const r = qcm(rng, 'La chaleur passe de l\'eau de la tasse vers l\'eau du bol, jusqu\'à ce qu\'elles aient la même température.',
-      ['Le froid de l\'eau du bol passe dans la tasse jusqu\'à ce qu\'elle gèle.', 'L\'eau de la tasse devient plus froide que l\'eau du bol.', 'Chaque eau garde sa température de départ.']);
+      ['Le froid de l\'eau du bol passe dans l\'eau de la tasse.', 'L\'eau de la tasse devient plus froide que l\'eau du bol.', 'Chaque eau garde sa température de départ.']);
     return { ...r, figure: fig, enonce: `${ctx} Que montre ce graphique ?`,
       explication: `L'eau de la tasse (${deg(E.T1)}) se refroidit et l'eau du bol (${deg(E.T2)}) se réchauffe ; les deux courbes se rejoignent à ${deg(E.Te)}. La chaleur passe du chaud vers le froid jusqu'à l'équilibre des températures.`,
       _signature: `cc|${sig}|${triee(r.choix)}`, cleContenu: `cc|${sig}` };
@@ -1695,7 +1701,7 @@ export function genererTransfert(modele, rng) {
 const ECO_SITUATIONS = [
   { e: (f) => `La famille ${f} remplace ses vieilles fenêtres à simple vitrage par du double vitrage. Pourquoi cela permet-il d'économiser de l'énergie ?`,
     b: 'La couche d\'air (ou de gaz) entre les deux vitres est un isolant : la chaleur de la maison s\'échappe moins.',
-    f: ['Le double vitrage produit de la chaleur.', 'Le double vitrage empêche le froid d\'entrer dans la maison.', 'Le double vitrage laisse passer plus de vent.'] },
+    f: ['Le double vitrage produit de la chaleur.', 'Le double vitrage empêche le froid d\'entrer dans la maison.', 'Le double vitrage laisse entrer plus de soleil.'] },
   { e: (f) => `La famille ${f} pose une épaisse couche de laine de roche sous son toit. Pourquoi ?`,
     b: 'La laine de roche est un isolant : elle ralentit les pertes de chaleur par le toit.',
     f: ['La laine de roche produit de la chaleur.', 'La laine de roche est un bon conducteur thermique.', 'La laine de roche aspire le froid de la maison.'] },
@@ -1704,25 +1710,25 @@ const ECO_SITUATIONS = [
     f: ['Les rideaux réchauffent la pièce en produisant de la chaleur.', 'Les volets empêchent le froid d\'entrer.', 'C\'est seulement pour que les voisins ne voient pas à l\'intérieur.'] },
   { e: (f) => `La famille ${f} baisse son thermostat de 21 °C à 19 °C. Pourquoi est-ce une économie d'énergie ?`,
     b: 'Plus la maison est chaude par rapport à l\'extérieur, plus elle perd de chaleur : en chauffant un peu moins, on consomme moins.',
-    f: ['À 19 °C, le chauffage produit plus de chaleur.', 'À 19 °C, le froid n\'entre plus dans la maison.', 'Cela ne change rien à la consommation.'] },
+    f: ['À 19 °C, la chaudière s\'arrête complètement.', 'À 19 °C, le froid n\'entre plus dans la maison.', 'Cela ne change rien à la consommation.'] },
   { e: (f) => `En hiver, la famille ${f} aère en ouvrant grand les fenêtres 5 minutes, plutôt que de les laisser entrouvertes toute la journée. Pourquoi ?`,
     b: 'L\'air est vite renouvelé, mais les murs et les meubles n\'ont pas le temps de se refroidir : on perd moins de chaleur.',
-    f: ['Les fenêtres entrouvertes laissent entrer de la chaleur.', 'Ouvrir grand les fenêtres produit de la chaleur.', 'Il ne faut jamais aérer en hiver.'] },
+    f: ['Quand les fenêtres sont grandes ouvertes, le froid n\'a pas le temps d\'entrer.', 'Une fenêtre entrouverte renouvelle l\'air plus vite qu\'une fenêtre grande ouverte.', 'Aérer longtemps réchauffe les murs.'] },
   { e: (f) => `La famille ${f} ferme toujours la porte entre le salon chauffé et le garage froid. Pourquoi ?`,
     b: 'La porte fermée ralentit le passage de la chaleur du salon vers le garage, plus froid : on chauffe seulement la pièce utilisée.',
-    f: ['Pour que le froid du garage ne passe pas dans le salon.', 'Pour que le garage se réchauffe plus vite.', 'Une porte fermée produit de la chaleur.'] },
+    f: ['Pour que le froid du garage ne passe pas dans le salon.', 'Pour que le garage se réchauffe plus vite.', 'Pour que la chaleur du garage reste dans le garage.'] },
   { e: (p) => `${p} met un couvercle sur la casserole pour faire bouillir l'eau des pâtes. Pourquoi ?`,
     b: 'La chaleur s\'échappe moins : l\'eau bout plus vite et on utilise moins d\'énergie.',
-    f: ['Le couvercle produit de la chaleur.', 'Le couvercle empêche le froid d\'entrer dans la casserole.', 'Le couvercle fait bouillir l\'eau à plus de 100 °C.'], enfant: true },
+    f: ['Le métal du couvercle chauffe l\'eau par le dessus.', 'Le couvercle empêche le froid d\'entrer dans la casserole.', 'Le couvercle fait bouillir l\'eau à plus de 100 °C.'], enfant: true },
   { e: (p) => `${p} emporte son thé dans une bouteille isotherme (thermos). Pourquoi le thé reste-t-il chaud longtemps ?`,
     b: 'Les deux parois de la bouteille sont séparées par du vide (ou de l\'air) qui laisse très mal passer la chaleur.',
-    f: ['La bouteille isotherme produit de la chaleur.', 'La bouteille est en métal, un bon conducteur thermique.', 'Le thé fabrique sa propre chaleur.'], enfant: true },
+    f: ['La bouteille isotherme produit de la chaleur.', 'La bouteille est en métal, un bon conducteur thermique.', 'Le bouchon empêche le froid d\'entrer dans la bouteille.'], enfant: true },
   { e: (p) => `${p} met ses boissons dans une glacière en polystyrène pour le pique-nique. Pourquoi restent-elles fraîches ?`,
     b: 'Le polystyrène est un isolant : il ralentit le passage de la chaleur de l\'air vers les boissons.',
     f: ['Le polystyrène produit du froid.', 'Le polystyrène est un bon conducteur thermique.', 'Le polystyrène attire le froid de l\'air.'], enfant: true },
   { e: (p) => `En hiver, ${p} porte plusieurs couches de vêtements (t-shirt, pull, veste). Pourquoi a-t-${pr(p)} plus chaud ?`,
     b: 'Entre les couches, de l\'air reste emprisonné : c\'est un bon isolant, la chaleur du corps s\'échappe moins.',
-    f: ['Chaque vêtement produit de la chaleur.', 'Les vêtements empêchent le froid d\'entrer dans le corps.', 'Les vêtements serrés font battre le cœur plus vite.'], enfant: true },
+    f: ['Chaque vêtement produit de la chaleur.', 'Les vêtements empêchent le froid d\'entrer dans le corps.', 'Les vêtements serrés font circuler le sang plus vite.'], enfant: true },
   { e: () => 'En hiver, les oiseaux gonflent leurs plumes. Pourquoi ?',
     b: 'Ils emprisonnent de l\'air entre les plumes : cet air isole et leur corps perd moins de chaleur.',
     f: ['Les plumes gonflées produisent de la chaleur.', 'Pour paraître plus gros et faire peur au froid.', 'Les plumes gonflées laissent mieux sortir la chaleur.'] },
@@ -1742,9 +1748,9 @@ const GESTES_BONS = [
   'Baisser le chauffage la nuit et quand on part', 'Poser un boudin sous la porte d\'entrée', 'Isoler les murs', 'Fermer la porte d\'entrée rapidement en hiver',
 ];
 const GESTES_MAUVAIS = [
-  'Laisser une fenêtre entrouverte toute la journée avec le chauffage allumé', 'Chauffer la maison à 25 °C', 'Laisser la porte du garage froid ouverte sur le salon',
-  'Couvrir le radiateur avec du linge et des meubles', 'Laisser les volets ouverts toute la nuit en hiver', 'Chauffer les pièces où personne ne va jamais',
-  'Laisser la porte d\'entrée ouverte en hiver', 'Garder des fenêtres à simple vitrage qui laissent passer l\'air',
+  'Laisser une fenêtre entrouverte toute la journée avec le chauffage allumé', 'Monter le chauffage à 23 °C plutôt que de mettre un pull', 'Laisser la porte de la cave ouverte pour que l\'air circule',
+  'Couvrir le radiateur avec du linge et des meubles', 'Laisser les volets ouverts toute la nuit en hiver', 'Laisser le chauffage de sa chambre allumé pendant qu\'on est à l\'école',
+  'Aérer en laissant la fenêtre basculée pendant des heures', 'Garder des fenêtres à simple vitrage qui laissent passer l\'air',
 ];
 const ISOLANTS = ['de la laine', 'du polystyrène', 'du liège', 'du feutre (un tissu épais)'];
 const CONDUCTEURS = ['de l\'aluminium', 'du cuivre', 'du fer', 'de l\'acier'];
@@ -1823,7 +1829,7 @@ export function genererEconomie(modele, rng) {
 
 // ================================================================ 11. INSTRUMENTS DE MESURE ET UNITÉS
 // Grandeurs du primaire (P4-P6). Le dynamomètre et le newton ne sont vus qu'en S1 : exclus.
-const UN = { '°C': 'en degrés Celsius (°C)', g: 'en grammes (g)', kg: 'en kilogrammes (kg)', s: 'en secondes (s)', min: 'en minutes (min)', mL: 'en millilitres (mL)', L: 'en litres (L)', mm: 'en millimètres (mm)', cm: 'en centimètres (cm)' };
+const UN = { '°C': 'en degrés Celsius (°C)', g: 'en grammes (g)', kg: 'en kilogrammes (kg)', s: 'en secondes (s)', min: 'en minutes (min)', ml: 'en millilitres (ml)', l: 'en litres (l)', mm: 'en millimètres (mm)', cm: 'en centimètres (cm)' };
 const GRANDEURS = {
   temp: { sert: 'à mesurer une température', instr: ['un thermomètre'], unites: ['°C'], ctx: [
     { t: 'la température de l\'eau du bain de son petit frère', u: '°C', v: [35, 39] }, { t: 'la température de l\'air dans la classe', u: '°C', v: [18, 23] },
@@ -1837,14 +1843,17 @@ const GRANDEURS = {
     { t: 'le temps que met un glaçon pour fondre complètement', u: 'min', v: [15, 60] }, { t: 'le temps de sa course de 60 mètres', u: 's', v: [9, 15] },
     { t: 'le temps que met un morceau de sucre pour se dissoudre', u: 's', v: [30, 180] }, { t: 'le temps pendant lequel une bougie reste allumée sous un bocal', u: 's', v: [5, 30] },
     { t: 'le temps que met l\'eau d\'une casserole pour bouillir', u: 'min', v: [5, 12] }] },
-  volume: { sert: 'à mesurer un volume de liquide', instr: ['un verre gradué', 'une éprouvette graduée'], unites: ['mL', 'L'], ctx: [
-    { t: 'le volume de lait pour une pâte à crêpes', u: 'mL', v: [5, 10], k: 50 }, { t: 'le volume d\'eau versé dans chaque pot de l\'expérience', u: 'mL', v: [2, 6], k: 50 },
-    { t: 'le volume d\'eau resté dans un verre après trois jours', u: 'mL', v: [4, 18], k: 5 }, { t: 'le volume d\'huile pour une recette', u: 'mL', v: [2, 6], k: 10 }] },
+  volume: { sert: 'à mesurer un volume de liquide', instr: ['un verre gradué', 'une éprouvette graduée'], unites: ['ml', 'l'], ctx: [
+    { t: 'le volume de lait pour une pâte à crêpes', u: 'ml', v: [5, 10], k: 50 }, { t: 'le volume d\'eau versé dans chaque pot de l\'expérience', u: 'ml', v: [2, 6], k: 50 },
+    { t: 'le volume d\'eau resté dans un verre après trois jours', u: 'ml', v: [4, 18], k: 5 }, { t: 'le volume d\'huile pour une recette', u: 'ml', v: [2, 6], k: 10 }] },
   pluie: { sert: 'à mesurer la quantité de pluie tombée', instr: ['un pluviomètre'], unites: ['mm'], ctx: [
     { t: 'la quantité de pluie tombée pendant la nuit', u: 'mm', v: [2, 25] }, { t: 'la quantité de pluie tombée pendant un orage', u: 'mm', v: [5, 40] }] },
   longueur: { sert: 'à mesurer une longueur', instr: ['un mètre ruban'], unites: ['cm'], ctx: [
     { t: 'la hauteur d\'un plant de haricot', u: 'cm', v: [5, 40] }, { t: 'la longueur d\'un ver de terre', u: 'cm', v: [6, 20] }, { t: 'la taille d\'un élève de sa classe', u: 'cm', v: [135, 160] }] },
 };
+// Pour « écrire le résultat » : unités de la même grandeur (le piège est l'échelle, pas la grandeur).
+// La température n'a qu'une unité au primaire : pas de question d'écriture pour elle.
+const UNITES_SOEURS = { longueur: ['mm', 'cm', 'm', 'km'], masse: ['mg', 'g', 'kg', 't'], duree: ['s', 'min', 'h', 'j'], volume: ['ml', 'cl', 'dl', 'l'], pluie: ['mm', 'cm', 'm', 'ml'] };
 // Grandeurs qu'on ne propose jamais ensemble (sinon deux réponses défendables).
 const CONFLITS = { masse: ['volume'], volume: ['masse', 'pluie'], pluie: ['volume', 'longueur'], longueur: ['pluie'] };
 const compatibles = (g) => Object.keys(GRANDEURS).filter((x) => x !== g && !(CONFLITS[g] ?? []).includes(x));
@@ -1903,11 +1912,11 @@ function figBalance(affiche, objet) {
 const valeurCtx = (rng, c) => rng.int(c.v[0], c.v[1]) * (c.k ?? 1);
 
 export function genererMesures(modele, rng) {
-  const forme = rng.pick(['instrument', 'instrument', 'unite', 'unite', 'ecriture', 'ecriture', 'grandeur', 'grille', 'thermo', 'thermo', 'eprouvette', 'pluvio', 'chrono', 'balance']);
+  const forme = rng.pick(['instrument', 'instrument', 'ecriture', 'ecriture', 'ecriture', 'grandeur', 'grille', 'thermo', 'thermo', 'eprouvette', 'pluvio', 'chrono', 'balance']);
   const p = rng.pick(ENFANTS);
   const G = Object.keys(GRANDEURS);
   if (forme === 'instrument' || forme === 'unite' || forme === 'ecriture') {
-    const g = rng.pick(G); const c = rng.pick(GRANDEURS[g].ctx); const autres = rng.shuffle(compatibles(g)).slice(0, 3);
+    const g = rng.pick(forme === 'ecriture' ? Object.keys(UNITES_SOEURS) : G); const c = rng.pick(GRANDEURS[g].ctx); const autres = rng.shuffle(compatibles(g)).slice(0, 3);
     const instr = rng.pick(GRANDEURS[g].instr);
     if (forme === 'instrument') {
       const faux = autres.map((x) => rng.pick(GRANDEURS[x].instr));
@@ -1925,7 +1934,8 @@ export function genererMesures(modele, rng) {
     }
     const val = valeurCtx(rng, c);
     const bonne = `${fmt(val)} ${c.u}`;
-    const faux = autres.map((x) => `${fmt(val)} ${rng.pick(GRANDEURS[x].unites)}`);
+    // Pièges : unités de la même grandeur, à une autre échelle (13 mm, 13 m, 13 km pour un ver de 13 cm).
+    const faux = rng.shuffle(UNITES_SOEURS[g].filter((u) => u !== c.u)).slice(0, 3).map((u) => `${fmt(val)} ${u}`);
     const r = qcm(rng, bonne, faux);
     return { ...r, enonce: `Avec ${instr}, ${p} mesure ${c.t}. L'instrument indique ${fmt(val)}. Comment écrire correctement le résultat ?`,
       explication: `${maj(instr)} sert ${GRANDEURS[g].sert} : le résultat s'écrit ${bonne}. Un nombre sans la bonne unité ne veut rien dire en sciences.`,
@@ -1968,7 +1978,7 @@ export function genererMesures(modele, rng) {
     const [max, pas, etiq] = pl ? rng.pick([[40, 1, 5], [60, 2, 10], [30, 1, 5]]) : rng.pick([[100, 5, 20], [100, 2, 10], [250, 10, 50], [500, 20, 100], [200, 5, 50]]);
     const n = Math.round(max / pas); let k = rng.int(2, n - 1);
     if (rng.next() < 0.8 && ((k * pas) % etiq === 0)) k += 1;
-    const val = k * pas; const u = pl ? 'mm' : 'mL';
+    const val = k * pas; const u = pl ? 'mm' : 'ml';
     const instr = pl ? 'ce pluviomètre' : rng.pick(['cette éprouvette graduée', 'ce verre gradué']);
     return { type: 'numerique', reponse: val, unite: u, figure: figEprouvette(max, pas, etiq, val, u, pl),
       enonce: pl ? `Après une averse, ${p} lit le niveau de l'eau dans le pluviomètre de l'école. Combien de millimètres de pluie sont tombés ?`

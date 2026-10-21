@@ -692,7 +692,6 @@
      "revetement": "des plumes",
      "respiration": "avec des poumons",
      "pattes": 2,
-     "regime": "omnivore",
      "hiver": "en continuant à chercher sa nourriture",
      "info_hiver": "Elle reste chez nous et cherche des graines ; les mangeoires l'aident à passer l'hiver.",
      "classe_accepte": [
@@ -1204,7 +1203,6 @@
      "squelette": "invertébré",
      "pattes": 6,
      "respiration": "avec des trachées",
-     "regime": "herbivore",
      "reproduction": "ovipare",
      "info": "Elle se nourrit de nectar et de pollen.",
      "classe_accepte": [
@@ -1231,7 +1229,6 @@
      "squelette": "invertébré",
      "pattes": 6,
      "respiration": "avec des trachées",
-     "regime": "herbivore",
      "reproduction": "ovipare",
      "classe_accepte": [
       "insectes"
@@ -1941,7 +1938,7 @@
   },
   {
    "id": "chaines",
-   "description": "Chaînes alimentaires vérifiées (la flèche = « est mangé par »).",
+   "description": "Chaînes alimentaires vérifiées (la flèche = « est mangé par »). « milieu » : terre ou eau ; les pièges du maillon manquant viennent de l'autre milieu, pour qu'ils soient vraiment faux.",
    "cle": "nom",
    "phrases": {},
    "items": [
@@ -1951,7 +1948,8 @@
       "l'herbe",
       "le lapin",
       "le renard"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine02",
@@ -1960,7 +1958,8 @@
       "la chenille",
       "la mésange",
       "l'épervier"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine03",
@@ -1968,7 +1967,8 @@
       "la salade",
       "la limace",
       "le hérisson"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine04",
@@ -1976,7 +1976,8 @@
       "les glands",
       "le mulot",
       "la chouette"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine05",
@@ -1985,7 +1986,8 @@
       "la daphnie",
       "l'épinoche",
       "le brochet"
-     ]
+     ],
+     "milieu": "eau"
     },
     {
      "nom": "chaine06",
@@ -1994,7 +1996,8 @@
       "le criquet",
       "la grenouille",
       "le héron"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine07",
@@ -2002,7 +2005,8 @@
       "l'herbe",
       "la vache",
       "l'être humain"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine08",
@@ -2010,7 +2014,8 @@
       "l'herbe",
       "le zèbre",
       "le lion"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine09",
@@ -2018,7 +2023,8 @@
       "les feuilles d'acacia",
       "la girafe",
       "le lion"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine10",
@@ -2026,7 +2032,8 @@
       "le rosier",
       "le puceron",
       "la coccinelle"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine11",
@@ -2035,7 +2042,8 @@
       "le plancton animal",
       "le hareng",
       "le phoque"
-     ]
+     ],
+     "milieu": "eau"
     },
     {
      "nom": "chaine12",
@@ -2043,7 +2051,8 @@
       "les lentilles d'eau",
       "le canard",
       "le renard"
-     ]
+     ],
+     "milieu": "eau"
     },
     {
      "nom": "chaine13",
@@ -2051,7 +2060,8 @@
       "la laitue",
       "l'escargot",
       "la grive"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine14",
@@ -2059,7 +2069,8 @@
       "le blé",
       "le mulot",
       "la buse"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine15",
@@ -2067,7 +2078,8 @@
       "l'herbe",
       "le chevreuil",
       "le loup"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine16",
@@ -2075,7 +2087,8 @@
       "les graines de tournesol",
       "la mésange",
       "l'épervier"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine17",
@@ -2083,7 +2096,8 @@
       "les baies du sorbier",
       "le merle",
       "l'épervier"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine18",
@@ -2091,7 +2105,8 @@
       "le maïs",
       "la poule",
       "le renard"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine19",
@@ -2099,7 +2114,8 @@
       "l'herbe",
       "le mouton",
       "le loup"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine20",
@@ -2108,7 +2124,8 @@
       "la chenille",
       "la mésange",
       "l'épervier"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine21",
@@ -2116,7 +2133,8 @@
       "le trèfle",
       "le lapin",
       "la buse"
-     ]
+     ],
+     "milieu": "terre"
     },
     {
      "nom": "chaine22",
@@ -2124,7 +2142,26 @@
       "les pissenlits",
       "le lapin",
       "le renard"
-     ]
+     ],
+     "milieu": "terre"
+    },
+    {
+     "nom": "chaine23",
+     "maillons": [
+      "les algues microscopiques",
+      "la moule",
+      "l'étoile de mer"
+     ],
+     "milieu": "eau"
+    },
+    {
+     "nom": "chaine24",
+     "maillons": [
+      "les algues",
+      "la crevette",
+      "le cabillaud"
+     ],
+     "milieu": "eau"
     }
    ]
   },
@@ -2136,36 +2173,44 @@
    "items": [
     {
      "nom": "le dytique",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la larve de libellule",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le nénuphar",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la lentille d'eau",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la daphnie",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la limnée",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le gerris",
      "milieu": "la mare",
-     "info": "Cet insecte glisse à la surface de l'eau."
+     "info": "Cet insecte glisse à la surface de l'eau.",
+     "eau": "oui"
     },
     {
      "nom": "le têtard",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le chevreuil",
@@ -2209,39 +2254,48 @@
     {
      "nom": "le hareng",
      "milieu": "la mer",
-     "decomp": "non"
+     "decomp": "non",
+     "eau": "oui"
     },
     {
      "nom": "le phoque",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le crabe",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "la moule",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "l'étoile de mer",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "la méduse",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le requin",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le dauphin",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le cabillaud",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le ver de terre",
@@ -2398,7 +2452,7 @@
     },
     {
      "nom": "la fleur",
-     "role": "permettre la reproduction de la plante"
+     "role": "produire les graines, grâce au pollen"
     },
     {
      "nom": "le fruit",
@@ -2406,7 +2460,7 @@
     },
     {
      "nom": "la graine",
-     "role": "donner naissance à une nouvelle plante"
+     "role": "germer pour donner une nouvelle plante"
     },
     {
      "nom": "le bourgeon",
@@ -2771,9 +2825,9 @@
      "nom": "De quoi une graine a-t-elle besoin pour germer ?",
      "rep": "d'eau, d'air et de chaleur",
      "faux": [
-      "de lumière et de sel",
-      "d'engrais et de lumière",
-      "de terre et de lumière"
+      "de terre et de lumière",
+      "d'eau et de lumière seulement",
+      "d'eau, de terre et d'engrais"
      ],
      "pourquoi": "Une graine peut germer sur du coton humide, sans terre : il lui faut de l'eau, de l'air et une température suffisante."
     },
@@ -3179,7 +3233,8 @@
     {
      "nom": "la bouche",
      "role": "broyer les aliments et les mélanger à la salive",
-     "fait": "fait"
+     "fait": "fait",
+     "appareil": "l'appareil digestif"
     },
     {
      "nom": "les glandes salivaires",
@@ -3256,7 +3311,8 @@
     {
      "nom": "le diaphragme",
      "role": "s'abaisser à l'inspiration pour agrandir la cage thoracique (c'est un muscle placé sous les poumons)",
-     "fait": "fait"
+     "fait": "fait",
+     "appareil": "l'appareil respiratoire"
     },
     {
      "nom": "le cœur",
@@ -3715,7 +3771,7 @@
      "pourquoi": "Entre 6 et 12 ans environ, les dents de lait tombent et les dents définitives les remplacent."
     },
     {
-     "nom": "Se brosser les dents une fois par semaine suffit.",
+     "nom": "Se brosser les dents une fois par jour, le soir, suffit.",
      "verite": false,
      "pourquoi": "Il faut se brosser les dents au moins deux fois par jour, pendant deux minutes."
     },
@@ -3778,9 +3834,9 @@
      "nom": "Combien de temps faut-il se brosser les dents ?",
      "rep": "environ 2 minutes",
      "faux": [
-      "environ 10 secondes",
-      "environ 20 minutes",
-      "environ 1 heure"
+      "environ 30 secondes",
+      "environ 1 minute",
+      "environ 5 minutes"
      ],
      "pourquoi": "Deux minutes, au moins deux fois par jour, en brossant toutes les faces des dents."
     }
@@ -4460,9 +4516,9 @@
      "nom": "Qu'est-ce qui fait évaporer l'eau des mers ?",
      "rep": "la chaleur du Soleil",
      "faux": [
-      "le vent seul",
-      "la Lune",
-      "le sel de la mer"
+      "le vent qui souffle sur la mer",
+      "le froid de la nuit",
+      "les vagues qui remuent l'eau"
      ],
      "pourquoi": "Le Soleil chauffe l'eau, qui s'évapore ; le vent peut accélérer l'évaporation, mais l'énergie vient du Soleil."
     },
@@ -5240,9 +5296,9 @@
      "nom": "Que veut dire « PMC » ?",
      "rep": "Plastiques, Métaux et Cartons à boissons",
      "faux": [
-      "Papiers, Magazines et Cartons",
-      "Piles, Médicaments et Chimiques",
-      "Pots, Marmites et Cuillères"
+      "Papiers, Métaux et Cartons",
+      "Plastiques, Magazines et Conserves",
+      "Plastiques, Métaux et Cartons de déménagement"
      ],
      "pourquoi": "Le sac PMC reçoit les emballages en plastique, les emballages en métal et les cartons à boissons."
     }
@@ -5420,7 +5476,7 @@
      "faux": [
       "environ 21 %",
       "environ 50 %",
-      "environ 100 %"
+      "environ 90 %"
      ],
      "pourquoi": "Le diazote représente environ 78 % de l'air."
     },
@@ -5430,7 +5486,7 @@
      "faux": [
       "le diazote",
       "le dioxyde de carbone",
-      "l'hélium"
+      "la vapeur d'eau"
      ],
      "pourquoi": "Nous inspirons le dioxygène et rejetons du dioxyde de carbone."
     }
@@ -5692,7 +5748,7 @@
      "faux": [
       "La flamme produit du dioxygène.",
       "La cire fond et coule sur le verre.",
-      "Le verre fabrique de l'eau quand il chauffe."
+      "La vapeur vient de l'air de la pièce, pas de la bougie."
      ],
      "pourquoi": "La vapeur d'eau produite par la combustion se condense sur le verre froid : c'est la buée.",
      "bougie": "oui"
@@ -5702,7 +5758,7 @@
      "rep": "Elle n'a plus assez de dioxygène.",
      "faux": [
       "Elle n'a plus de cire.",
-      "Le bocal souffle sur la flamme.",
+      "Elle n'a plus assez de diazote.",
       "Il y a trop de dioxygène dans le bocal."
      ],
      "pourquoi": "Sans assez de dioxygène (le comburant), la combustion s'arrête.",
@@ -5724,8 +5780,8 @@
      "rep": "La combustion libère de l'énergie thermique.",
      "faux": [
       "La bougie absorbe la chaleur de l'air.",
-      "La flamme produit du froid.",
-      "Le thermomètre fabrique de la chaleur."
+      "La flamme produit de la lumière, mais pas de chaleur.",
+      "Seule la lumière de la flamme fait monter le thermomètre."
      ],
      "pourquoi": "L'énergie chimique de la cire est transformée en énergie thermique (chaleur) lors de la combustion.",
      "bougie": "oui"
@@ -5747,7 +5803,7 @@
      "faux": [
       "Le grand bocal est plus chaud.",
       "Le petit bocal contient plus de dioxygène.",
-      "Le grand bocal fabrique de l'air."
+      "Dans le grand bocal, la fumée met plus de temps à étouffer la flamme."
      ],
      "pourquoi": "La flamme a besoin de dioxygène : plus il y a d'air, plus elle dure.",
      "bougie": "oui"
@@ -6810,9 +6866,9 @@
      "pourquoi": "Mercure, Vénus, la Terre et Mars sont des planètes telluriques."
     },
     {
-     "nom": "Le Soleil est la plus petite étoile de l'Univers.",
+     "nom": "Le Soleil est la plus grande étoile de l'Univers.",
      "verite": false,
-     "pourquoi": "Le Soleil est une étoile de taille moyenne ; il nous paraît très grand parce qu'il est proche de nous."
+     "pourquoi": "Le Soleil est une étoile de taille moyenne ; il nous paraît plus grand que les autres parce qu'il est beaucoup plus proche de nous."
     },
     {
      "nom": "Le Soleil est beaucoup plus grand que la Terre.",

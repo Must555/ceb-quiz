@@ -5278,8 +5278,8 @@
      "nom": "un roi",
      "feminin": "une reine",
      "faux": [
-      "une roine",
-      "une roiesse"
+      "une princesse",
+      "une duchesse"
      ],
      "cat": "nom",
      "regle": "Féminin particulier : une reine.",
@@ -5290,8 +5290,8 @@
      "nom": "un empereur",
      "feminin": "une impératrice",
      "faux": [
-      "une empereuse",
-      "une emperesse"
+      "une reine",
+      "une duchesse"
      ],
      "cat": "nom",
      "regle": "Féminin particulier : une impératrice.",
@@ -5338,8 +5338,8 @@
      "nom": "un coq",
      "feminin": "une poule",
      "faux": [
-      "une coquine",
-      "une coqesse"
+      "une cane",
+      "une dinde"
      ],
      "cat": "nom",
      "regle": "Le féminin est un autre mot : une poule.",
@@ -5350,8 +5350,8 @@
      "nom": "un cheval",
      "feminin": "une jument",
      "faux": [
-      "une chevale",
-      "une chevalière"
+      "une ânesse",
+      "une vache"
      ],
      "cat": "nom",
      "regle": "Le féminin est un autre mot : une jument.",
@@ -5362,8 +5362,8 @@
      "nom": "un taureau",
      "feminin": "une vache",
      "faux": [
-      "une taurelle",
-      "une taurine"
+      "une jument",
+      "une brebis"
      ],
      "cat": "nom",
      "regle": "Le féminin est un autre mot : une vache.",
@@ -5374,8 +5374,8 @@
      "nom": "un oncle",
      "feminin": "une tante",
      "faux": [
-      "une oncle",
-      "une onclesse"
+      "une nièce",
+      "une cousine"
      ],
      "cat": "nom",
      "regle": "Le féminin est un autre mot : une tante.",
@@ -12259,7 +12259,32 @@
      "poisson": "poissons",
      "sentiment": "sentiments"
     }
-   }
+   },
+   "groupes": [
+    [
+     "arbre",
+     "fleur",
+     "fruit",
+     "légume"
+    ],
+    [
+     "insecte",
+     "oiseau",
+     "poisson"
+    ],
+    [
+     "meuble",
+     "outil",
+     "instrument de musique",
+     "vêtement",
+     "moyen de transport"
+    ],
+    [
+     "métier",
+     "sport",
+     "sentiment"
+    ]
+   ]
   },
   {
    "id": "fr-sens-mots",

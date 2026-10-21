@@ -295,7 +295,7 @@
    "titre": "Le système solaire",
    "regle": [
     "Le Soleil est une étoile ; 8 planètes tournent autour de lui.",
-    "Dans l'ordre : Mercure, Vénus, la Terre, Mars (rocheuses), Jupiter, Saturne, Uranus, Neptune (géantes gazeuses).",
+    "Dans l'ordre : Mercure, Vénus, la Terre, Mars (rocheuses), Jupiter, Saturne, Uranus, Neptune (planètes géantes : Jupiter et Saturne sont gazeuses, Uranus et Neptune sont des « géantes de glace »).",
     "Un satellite tourne autour d'une planète : la Lune est le satellite de la Terre."
    ],
    "exemple": "Jupiter est la plus grande planète ; Mercure est la plus proche du Soleil.",
@@ -423,7 +423,7 @@
    "e": "🫀",
    "titre": "Digestion, respiration, circulation : ensemble",
    "regle": [
-    "Digestif : bouche → œsophage → estomac → intestin grêle → côlon → anus (glandes annexes : glandes salivaires, pancréas, foie). Les nutriments passent dans le sang au niveau de l'intestin grêle ; le côlon (gros intestin) absorbe encore de l'eau.",
+    "Digestif : bouche → œsophage → estomac → intestin grêle → côlon → anus (glandes annexes : glandes salivaires, pancréas, foie). Les nutriments passent dans le sang au niveau de l'intestin grêle ; le côlon (la plus grande partie du gros intestin) absorbe encore de l'eau.",
     "Respiratoire : nez ou bouche → trachée → bronches → alvéoles des poumons. Dans les alvéoles, le dioxygène passe dans le sang et le dioxyde de carbone en sort.",
     "Circulatoire : le cœur pompe le sang ; les artères partent du cœur, les veines y reviennent. Le sang transporte dioxygène, nutriments, dioxyde de carbone et déchets.",
     "Le dioxyde de carbone est rejeté par les poumons ; d'autres déchets sont filtrés par les reins et évacués dans l'urine.",

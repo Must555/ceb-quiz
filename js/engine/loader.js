@@ -28,7 +28,7 @@ export async function chargerDonnees({ base = 'data/', fetchJson = fetchNavigate
     if (!m.base) return m;
     const b = bases[m.base];
     if (!b) { console.warn(`Base de faits inconnue : ${m.base} (${m.id})`); return null; }
-    return { cle: b.cle, ...m, items: [...(b.items ?? []), ...(m.items ?? [])], phrases: { ...(b.phrases ?? {}), ...(m.phrases ?? {}) } };
+    return { cle: b.cle, groupes: b.groupes, ...m, items: [...(b.items ?? []), ...(m.items ?? [])], phrases: { ...(b.phrases ?? {}), ...(m.phrases ?? {}) } };
   };
 
   const banque = banques.filter(Boolean).flatMap((f) =>

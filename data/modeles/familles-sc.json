@@ -339,6 +339,12 @@
      "enonce": "Comment chaque animal passe-t-il l'hiver ?",
      "explication": "{liste}. Hiberner : dormir profondément (mammifères). S'engourdir : le corps se refroidit avec l'air (reptiles, amphibiens, insectes…)."
     }
+   ],
+   "incompatibles": [
+    [
+     "en hibernant",
+     "en s'engourdissant (vie ralentie)"
+    ]
    ]
   },
   {
@@ -515,7 +521,10 @@
      "sorte": "attribut",
      "champ": "milieu",
      "enonce": "Dans quel milieu trouve-t-on {cle} ?",
-     "explication": "On trouve {cle} dans {valeur}. {info}"
+     "explication": "On trouve {cle} dans {valeur}. {info}",
+     "filtre": {
+      "eau": "oui"
+     }
     },
     {
      "sorte": "lequel",
@@ -905,13 +914,43 @@
      "sorte": "attribut",
      "champ": "role",
      "enonce": "Quel est le rôle de cet organe : {cle} ?",
-     "explication": "{Cle} → {valeur}."
+     "explication": "{Cle} → {valeur}.",
+     "voisinsPar": "appareil",
+     "groupes": [
+      [
+       "l'appareil locomoteur",
+       "le système nerveux"
+      ],
+      [
+       "l'appareil digestif",
+       "l'appareil excréteur (urinaire)"
+      ],
+      [
+       "l'appareil respiratoire",
+       "l'appareil circulatoire"
+      ]
+     ]
     },
     {
      "sorte": "lequel",
      "champ": "role",
      "enonce": "Quel organe a pour rôle de {valeur} ?",
-     "explication": "{Cle} → {valeur}."
+     "explication": "{Cle} → {valeur}.",
+     "voisinsPar": "appareil",
+     "groupes": [
+      [
+       "l'appareil locomoteur",
+       "le système nerveux"
+      ],
+      [
+       "l'appareil digestif",
+       "l'appareil excréteur (urinaire)"
+      ],
+      [
+       "l'appareil respiratoire",
+       "l'appareil circulatoire"
+      ]
+     ]
     },
     {
      "sorte": "association",
@@ -1980,7 +2019,7 @@
      "sorte": "attribut",
      "champ": "type",
      "enonce": "Quel type de planète est {cle} ?",
-     "explication": "{Cle} est une planète {valeur}. Les 4 premières sont rocheuses (telluriques), les 4 dernières sont des géantes gazeuses."
+     "explication": "{Cle} est une planète {valeur}. Les 4 premières sont rocheuses (telluriques) ; les 4 dernières sont des planètes géantes : Jupiter et Saturne sont gazeuses, Uranus et Neptune sont aujourd'hui appelées « géantes de glace »."
     },
     {
      "sorte": "intrus",

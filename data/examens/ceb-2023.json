@@ -3846,7 +3846,7 @@
    "numero": "7e",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Coche les trois éléments qui font varier le débit expiratoire de pointe moyen chez les adultes.",
+   "enonce": "D'après le tableau, coche les trois éléments qui font varier le débit expiratoire de pointe moyen chez les adultes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -3857,8 +3857,8 @@
     "l'âge",
     "la taille",
     "le sexe (homme ou femme)",
-    "la couleur des yeux",
-    "le poids du spiromètre"
+    "le poids de la personne",
+    "le nombre de litres d'air expiré par minute"
    ],
    "reponse": [
     0,

@@ -24,8 +24,8 @@ const maj = (s) => s.replace(/^([«\s]*)(\p{L})/u, (_, a, b) => a + b.toUpperCas
 
 // ---------------------------------------------------------------- histoire : événements
 const siecleDe = (a) => Math.floor((a - 1) / 100) + 1;
-const nomSiecle = (s) => (s === 1 ? 'Ier siècle' : `${romain(s)}e siècle`);
-const ordinal = (s) => (s === 1 ? '1er' : `${s}e`);
+// Le CEB écrit les siècles en chiffres arabes (« 19e siècle ») ; on montre aussi la notation romaine.
+const nomSiecle = (s) => (s === 1 ? '1er siècle (Ier)' : `${s}e siècle (${romain(s)}e)`);
 
 function evenements(modele, rng) {
   const q = evenementsBrut(modele, rng);
@@ -55,7 +55,7 @@ function evenementsBrut(modele, rng) {
         type: 'qcm',
         enonce: `${maj(e.nom)} : ${e.date}. En quel siècle cet événement a-t-il eu lieu ?`,
         choix, reponse: choix.indexOf(nomSiecle(s)),
-        explication: `Le ${nomSiecle(s)} (${ordinal(s)} siècle) va de ${(s - 1) * 100 + 1} à ${s * 100}.${astuce}`,
+        explication: `Le ${nomSiecle(s)} va de ${(s - 1) * 100 + 1} à ${s * 100}.${astuce}`,
       };
     }
     case 'siecle_lequel': {

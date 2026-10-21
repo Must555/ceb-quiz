@@ -149,6 +149,8 @@ const ROLES = ['producteur', 'consommateur primaire', 'consommateur secondaire',
 const RANG = ['', '1er', '2e', '3e'];
 const ecrireChaine = (m) => m.join(' → ');
 
+const PIEGES_DOUTEUX = ["l'être humain", 'le héron', 'le canard'];
+
 function chaine(modele, forme, rng) {
   const chaines = itemsDe(modele, forme, ['maillons']);
   const ch = rng.pick(chaines);
@@ -185,12 +187,20 @@ function chaine(modele, forme, rng) {
       cleContenu: `qui|${ch.nom}|${i}`,
     };
   }
-  // Maillon manquant. Distracteurs impossibles : des végétaux si l'on cherche un animal,
-  // des animaux prédateurs si l'on cherche le végétal.
+  // (Le héron mange aussi des poissons, le canard aussi des graines : jamais en piège.)
+  // Maillon manquant. Pièges du même rôle (un végétal pour le producteur, un animal pour
+  // un mangeur) mais venant de l'autre milieu (terre / eau) : vraiment faux, sans être farfelus.
+  // On écarte aussi tout être vivant qui suit le même maillon ou précède le même mangeur
+  // dans une autre chaîne (le lapin entre l'herbe et le loup serait juste).
   const i = rng.int(0, m.length - 1);
-  const autres = chaines.filter((c) => c !== ch);
-  const pool = i === 0 ? autres.map((c) => c.maillons[c.maillons.length - 1]) : autres.map((c) => c.maillons[0]);
-  const faux = rng.shuffle([...new Set(pool)].filter((x) => !m.includes(x))).slice(0, 3);
+  const autres = chaines.filter((c) => c !== ch && (c.milieu ?? 'terre') !== (ch.milieu ?? 'terre'));
+  const rang = (c) => (i === 0 ? [0] : i === m.length - 1 ? [c.maillons.length - 1] : c.maillons.map((_, k) => k).slice(1, -1));
+  const valide = (x) => chaines.some((c) => c.maillons.some((y, k) => y === x
+    && ((i > 0 && c.maillons[k - 1] === m[i - 1]) || (i < m.length - 1 && c.maillons[k + 1] === m[i + 1]))));
+  const memeMilieu = new Set(chaines.filter((c) => (c.milieu ?? 'terre') === (ch.milieu ?? 'terre')).flatMap((c) => c.maillons));
+  const pool = autres.flatMap((c) => rang(c).map((k) => c.maillons[k]))
+    .filter((x) => !memeMilieu.has(x) && !PIEGES_DOUTEUX.includes(x));
+  const faux = rng.shuffle([...new Set(pool)].filter((x) => !m.includes(x) && !valide(x))).slice(0, 3);
   if (faux.length < 3) return null;
   const choix = rng.shuffle([m[i], ...faux].map(majuscule));
   const trou = m.map((x, k) => (k === i ? '?' : x));

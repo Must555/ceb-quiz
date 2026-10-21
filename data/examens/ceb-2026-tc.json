@@ -2328,7 +2328,7 @@
       "numero": "A11",
       "domaine": "ma.arithmetique",
       "type": "qcm",
-      "enonce": "Une classe de 26 élèves de 10 ans et 3 adultes visite un parc. Tarif groupe scolaire : enfant 19 €, adulte 28 €, 1 adulte gratuit pour 15 entrées enfants payantes. Quelle résolution est correcte ?",
+      "enonce": "Une classe de 26 élèves de 10 ans et 3 adultes visite un parc animalier. Tarifs par personne : entrée individuelle adulte 39 €, enfant (3 à 11 ans) 33 € ; groupe (minimum 20 personnes) adulte 30 €, enfant 24 € ; groupe scolaire adulte 28 €, enfant 19 €, 1 adulte gratuit pour 15 entrées enfants payantes. Quelle résolution permet de calculer le cout total des entrées ?",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-monnaie",

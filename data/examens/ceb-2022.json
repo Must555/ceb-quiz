@@ -3461,22 +3461,41 @@
    "livret": 9,
    "numero": "7d",
    "domaine": "sc.matiere",
-   "type": "qcm_multi",
-   "enonce": "L'eau se présente à l'état liquide. Quels sont ses deux autres états ?",
+   "type": "trous",
+   "enonce": "L'eau se présente à l'état liquide. Elle peut se présenter sous deux autres états. Écris le nom de ces deux autres états.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
-   "choix": [
-    "solide",
-    "gazeux",
-    "mou",
-    "humide"
-   ],
    "reponse": [
-    0,
-    1
+    [
+     "solide",
+     "gazeux",
+     "glace",
+     "vapeur",
+     "de la glace",
+     "de la vapeur",
+     "la glace",
+     "la vapeur d'eau",
+     "vapeur d'eau",
+     "gazeuse"
+    ],
+    [
+     "gazeux",
+     "solide",
+     "glace",
+     "vapeur",
+     "de la glace",
+     "de la vapeur",
+     "la glace",
+     "la vapeur d'eau",
+     "vapeur d'eau",
+     "gazeuse"
+    ]
    ],
-   "explication": "Glace (solide) et vapeur d'eau (gazeux)."
+   "explication": "Glace (solide) et vapeur d'eau (gazeux).",
+   "differentes": true,
+   "souple": true,
+   "texte": "L'état {1}\nL'état {2}"
   },
   {
    "id": "ceb-2022-l9-q7e",

@@ -258,8 +258,9 @@ const aires = famille([
       return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La même aire que le rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `Un triangle a la même base (${L} cm) et la même hauteur (${l} cm) qu'un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du triangle ?`, explication: `Le triangle occupe la moitié du rectangle : ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm², la moitié de ${L * l} cm².` };
     }
     if (sorte === 'losange') {
-      const bonne = 'La moitié de l\'aire du rectangle';
-      return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La même aire que le rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On dessine un losange dans un rectangle de ${L} cm sur ${l} cm : ses sommets sont les milieux des côtés du rectangle. Quelle est l'aire du losange ?`, explication: `Les diagonales du losange mesurent ${L} cm et ${l} cm. Aire = ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm² : c'est la moitié de l'aire du rectangle (${L * l} cm²).` };
+      const A = L * l;
+      const bonne = `${fmt(A / 2)} cm²`;
+      return { ...qcm(rng, bonne, [`${fmt(A)} cm²`, `${fmt(A / 4)} cm²`, `${fmt(2 * (L + l))} cm²`]), difficulte: 2, enonce: `On dessine un losange dans un rectangle de ${L} cm sur ${l} cm : ses sommets sont les milieux des côtés du rectangle. Quelle est l'aire du losange ?`, explication: `Les diagonales du losange mesurent ${L} cm et ${l} cm. Aire = ${L} × ${l} : 2 = ${fmt(L * l / 2)} cm² : c'est la moitié de l'aire du rectangle (${L * l} cm²).` };
     }
     const bonne = 'La même aire que le rectangle';
     return { ...qcm(rng, bonne, ['Le double de l\'aire du rectangle', 'La moitié de l\'aire du rectangle', 'Le quart de l\'aire du rectangle']), difficulte: 2, enonce: `On découpe un triangle d'un côté d'un parallélogramme et on le recolle de l'autre côté : on obtient un rectangle de ${L} cm sur ${l} cm. Quelle est l'aire du parallélogramme ?`, explication: `Découper et recoller ne change pas l'aire : le parallélogramme a la même aire que le rectangle, ${L} × ${l} = ${L * l} cm² (base × hauteur).` };
@@ -1261,10 +1262,10 @@ const mouvements = famille([
     }
     const Q = [
       ['Quel mouvement change la taille de la figure ?', rng.pick(['Un agrandissement', 'Une réduction']), ['Un glissement', 'Un retournement', 'Un pivotement'], 'Seuls l\'agrandissement et la réduction changent la taille ; glisser, retourner et pivoter la conservent.'],
-      ['Avec un calque, on fait tourner la figure autour d\'un point. Quel est ce mouvement ?', 'Un pivotement', ['Un glissement', 'Un retournement', 'Un agrandissement'], 'Tourner autour d\'un point, c\'est pivoter.'],
-      ['On retourne le calque comme une page de livre. Quel est ce mouvement ?', 'Un retournement', ['Un glissement', 'Un pivotement', 'Une réduction'], 'Retourner le calque donne une image en miroir : c\'est un retournement.'],
-      ['On déplace le calque en ligne droite, sans le tourner. Quel est ce mouvement ?', 'Un glissement', ['Un retournement', 'Un pivotement', 'Un agrandissement'], 'Déplacer sans tourner ni retourner : c\'est un glissement.'],
-      ['Quel mouvement donne une image « en miroir » de la figure ?', 'Un retournement', ['Un glissement', 'Un pivotement', 'Un agrandissement'], 'Le retournement (symétrie) donne l\'image dans un miroir.'],
+      ['Avec un calque, on fait tourner la figure autour d\'un point. Quel est ce mouvement ?', 'Un pivotement', ['Un glissement', 'Un retournement', 'Un glissement suivi d\'un retournement'], 'Tourner autour d\'un point, c\'est pivoter.'],
+      ['On retourne le calque comme une page de livre. Quel est ce mouvement ?', 'Un retournement', ['Un glissement', 'Un pivotement', 'Un pivotement d\'un demi-tour'], 'Retourner le calque donne une image en miroir : c\'est un retournement.'],
+      ['On déplace le calque en ligne droite, sans le tourner. Quel est ce mouvement ?', 'Un glissement', ['Un retournement', 'Un pivotement', 'Un pivotement d\'un demi-tour'], 'Déplacer sans tourner ni retourner : c\'est un glissement.'],
+      ['Quel mouvement donne une image « en miroir » de la figure ?', 'Un retournement', ['Un glissement', 'Un pivotement', 'Un pivotement d\'un demi-tour'], 'Le retournement (symétrie) donne l\'image dans un miroir.'],
     ];
     const [e, b, f, x] = rng.pick(Q);
     return { ...qcm(rng, b, f, 4, 3), difficulte: 1, enonce: e, explication: x };
@@ -1324,6 +1325,16 @@ const perimetreConstant = famille([
     const action = surLargeur ? `On raccourcit sa longueur de ${k} cm et on allonge sa largeur de ${k} cm` : `On allonge sa longueur de ${k} cm et on raccourcit sa largeur de ${k} cm`;
     const quoi = rng.pick(['perimetre', 'aire', 'aireNum']);
     const base = `Un rectangle mesure ${L} cm sur ${l} cm. ${action}.`;
+    if (quoi === 'perimetre' && rng.next() < 0.5) {
+      // Pour que la réponse ne soit pas toujours « il reste le même » : on change de quantités différentes.
+      const j = rng.pick([1, 2, 3].filter((x) => x !== k && x < l));
+      if (!j) return null;
+      const L2 = L + k; const l2 = l - j; const p1 = 2 * (L + l); const p2 = 2 * (L2 + l2);
+      const bonneP = p2 > p1 ? 'Il augmente' : 'Il diminue';
+      return { ...qcm(rng, bonneP, ['Il reste le même', p2 > p1 ? 'Il diminue' : 'Il augmente']), difficulte: 2,
+        enonce: `Un rectangle mesure ${L} cm sur ${l} cm. On allonge sa longueur de ${k} cm et on raccourcit sa largeur de ${j} cm. Que devient son périmètre ?`,
+        explication: `On ajoute ${k} cm d'un côté mais on n'enlève que ${j} cm de l'autre (ou l'inverse) : ${L2} + ${l2} = ${L2 + l2} au lieu de ${L + l}. Le périmètre passe de ${p1} cm à ${p2} cm.` };
+    }
     if (quoi === 'perimetre') {
       return { ...qcm(rng, 'Il reste le même', ['Il augmente', 'Il diminue']), difficulte: 2, enonce: `${base} Que devient son périmètre ?`, explication: `Ce qu'on ajoute d'un côté, on l'enlève de l'autre : ${nL} + ${nl} = ${L} + ${l} = ${L + l}. Le périmètre reste (${L} + ${l}) × 2 = ${2 * (L + l)} cm.` };
     }
@@ -1417,7 +1428,10 @@ const vocabulaireOperations = famille([
   forme((rng) => {
     const [def, mot] = rng.pick(MOTS_RESULTAT);
     // « Le reste » se dit parfois du résultat d'une soustraction : on l'écarte comme distracteur dans ce cas.
-    const q = qcm(rng, majuscule(mot), MOTS_RESULTAT.map((x) => majuscule(x[1])).filter((x) => x !== majuscule(mot) && !(mot === 'la différence' && x === 'Le reste')), 4, 3);
+    // Même nombre (singulier/pluriel) que la bonne réponse : sinon « Les termes » se devine à l'accord.
+    const pluriel = (m) => /^les /i.test(m);
+    const forme2 = (m) => (pluriel(mot) && !pluriel(m) ? m.replace(/^(le|la) /, 'les ').replace(/^(les \S+?)(?<!s)( |$)/, '$1s$2') : !pluriel(mot) && pluriel(m) ? m.replace(/^les (\S+?)s\b/, (_, w) => `le ${w}`) : m);
+    const q = qcm(rng, majuscule(mot), [...new Set(MOTS_RESULTAT.map((x) => majuscule(forme2(x[1]))))].filter((x) => x !== majuscule(mot) && !(mot === 'la différence' && x === 'Le reste')), 4, 3);
     return { ...q, difficulte: 1, enonce: `Comment appelle-t-on ${def} ?`, explication: `${majuscule(def)} : ${mot}. Addition → termes, somme ; soustraction → termes, différence ; multiplication → facteurs, produit ; division → dividende, diviseur, quotient, reste.` };
   }),
 ]);
@@ -1814,7 +1828,7 @@ const achatsPromos = famille([
     }
     const d = Math.abs(vente - revient); const d2 = Math.abs(vente - achat);
     const bonne = `${gain ? 'Un bénéfice' : 'Une perte'} de ${eur(d / 100)}`;
-    const fausses = [`${gain ? 'Une perte' : 'Un bénéfice'} de ${eur(d / 100)}`, `${vente > achat ? 'Un bénéfice' : 'Une perte'} de ${eur(d2 / 100)}`, `Un bénéfice de ${eur(vente / 100)}`, `${gain ? 'Un bénéfice' : 'Une perte'} de ${eur((d + 2 * frais) / 100)}`];
+    const fausses = [`${gain ? 'Une perte' : 'Un bénéfice'} de ${eur(d / 100)}`, `${vente > achat ? 'Un bénéfice' : 'Une perte'} de ${eur(d2 / 100)}`, `${gain ? 'Un bénéfice' : 'Une perte'} de ${eur((d + 2 * frais) / 100)}`];
     const c = qcm(rng, bonne, fausses);
     if (!c) return null;
     return {
@@ -2219,7 +2233,7 @@ const solidesFaces = famille([
     const sol = solideAuHasard(rng, [3, 5, 6, 8]);
     const lat = sol.sorte === 'prisme' ? 'des rectangles' : 'des triangles';
     if (rng.next() < 0.5) {
-      const c = qcm(rng, lat, ['des rectangles', 'des triangles', `des ${NOMS_BASES[sol.n][1]}s`, 'des carrés', 'des disques']);
+      const c = qcm(rng, lat, ['des rectangles', 'des triangles', `des ${NOMS_BASES[sol.n][1]}s`, 'des trapèzes', 'des losanges']);
       return {
         ...c, difficulte: 2,
         enonce: 'Quelle est la forme des faces latérales de ce solide (les faces qui ne sont pas des bases) ?',
@@ -2385,12 +2399,12 @@ const symbolesGeo = famille([
   forme((rng) => {
     const [A, B] = deuxLettres(rng, LETTRES_PTS); const [d, e] = deuxLettres(rng, LETTRES_DR);
     const cas = rng.pick([
-      { e: `Que désigne l'écriture [${A}${B}] ?`, b: `Le segment dont les extrémités sont les points ${A} et ${B}`, f: [`Le point ${A}${B}`, `La droite ${A.toLowerCase()}${B.toLowerCase()}`, `Les points ${A} et ${B} sont parallèles`], x: `[${A}${B}] désigne le segment d'extrémités ${A} et ${B} : les crochets montrent que le trait s'arrête en ${A} et en ${B}.` },
-      { e: `Que signifie l'écriture ${d} // ${e} ?`, b: `La droite ${d} est parallèle à la droite ${e}.`, f: [`La droite ${d} est perpendiculaire à la droite ${e}.`, `Les droites ${d} et ${e} se coupent.`, `La droite ${d} est la moitié de la droite ${e}.`], x: 'Le symbole // signifie « est parallèle à » : les deux droites ont la même direction et ne se coupent jamais.' },
-      { e: `Que signifie l'écriture ${d} ⊥ ${e} ?`, b: `La droite ${d} est perpendiculaire à la droite ${e}.`, f: [`La droite ${d} est parallèle à la droite ${e}.`, `La droite ${d} est plus longue que la droite ${e}.`, `Les droites ${d} et ${e} ne se coupent jamais.`], x: 'Le symbole ⊥ signifie « est perpendiculaire à » : les deux droites se coupent en formant un angle droit.' },
+      { e: `Que désigne l'écriture [${A}${B}] ?`, b: `Le segment dont les extrémités sont les points ${A} et ${B}`, f: [`La droite qui passe par les points ${A} et ${B}`, `La demi-droite d'origine ${A} qui passe par ${B}`, `La longueur du segment qui relie ${A} et ${B}`], x: `[${A}${B}] désigne le segment d'extrémités ${A} et ${B} : les crochets montrent que le trait s'arrête en ${A} et en ${B}.` },
+      { e: `Que signifie l'écriture ${d} // ${e} ?`, b: `La droite ${d} est parallèle à la droite ${e}.`, f: [`La droite ${d} est perpendiculaire à la droite ${e}.`, `Les droites ${d} et ${e} se coupent.`, `Les droites ${d} et ${e} sont confondues.`], x: 'Le symbole // signifie « est parallèle à » : les deux droites ont la même direction et ne se coupent jamais.' },
+      { e: `Que signifie l'écriture ${d} ⊥ ${e} ?`, b: `La droite ${d} est perpendiculaire à la droite ${e}.`, f: [`La droite ${d} est parallèle à la droite ${e}.`, `Les droites ${d} et ${e} se coupent, sans former d'angle droit.`, `Les droites ${d} et ${e} sont confondues.`], x: 'Le symbole ⊥ signifie « est perpendiculaire à » : les deux droites se coupent en formant un angle droit.' },
       { e: `Comment écrit-on « la droite ${d} est parallèle à la droite ${e} » ?`, b: `${d} // ${e}`, f: [`${d} ⊥ ${e}`, `[${d}${e}]`, `${d} = ${e}`], x: '« Est parallèle à » s\'écrit avec le symbole //.' },
       { e: `Comment écrit-on « la droite ${d} est perpendiculaire à la droite ${e} » ?`, b: `${d} ⊥ ${e}`, f: [`${d} // ${e}`, `[${d}${e}]`, `${d} = ${e}`], x: '« Est perpendiculaire à » s\'écrit avec le symbole ⊥.' },
-      { e: `Comment écrit-on « le segment d'extrémités ${A} et ${B} » ?`, b: `[${A}${B}]`, f: [`${A} // ${B}`, `${A} ⊥ ${B}`, `${A.toLowerCase()}${B.toLowerCase()}`], x: `Un segment s'écrit avec des crochets et les noms de ses deux extrémités : [${A}${B}].` },
+      { e: `Comment écrit-on « le segment d'extrémités ${A} et ${B} » ?`, b: `[${A}${B}]`, f: [`(${A}${B})`, `[${A}${B})`, `${A}${B}`], x: `Un segment s'écrit avec des crochets et les noms de ses deux extrémités : [${A}${B}].` },
       { e: `Sur une figure, on lit « ${A} » et « ${d} ». Que désignent-ils ?`, b: `${A} est un point et ${d} est une droite.`, f: [`${A} est une droite et ${d} est un point.`, `${A} et ${d} sont deux points.`, `${A} et ${d} sont deux droites.`], x: 'On nomme un point par une lettre majuscule (A) et une droite par une lettre minuscule (a).' },
     ]);
     return { ...qcm(rng, cas.b, cas.f), difficulte: 1, enonce: cas.e, explication: cas.x };
@@ -2517,7 +2531,7 @@ const symbolesGeo = famille([
     P[(k + 1) % 4] = [S[0] + choixV[0] * lb, S[1] + choixV[1] * lb];
     const Pc = cadrer(P, 320, 200, 36);
     const bonne = `L'angle en ${noms[k]} est un angle droit.`;
-    const q = qcm(rng, bonne, [`Les côtés qui partent de ${noms[k]} ont la même longueur.`, `L'angle en ${noms[k]} est plus petit qu'un angle droit.`, `Le côté [${noms[k]}${noms[(k + 1) % 4]}] est parallèle au côté [${noms[(k + 3) % 4]}${noms[k]}].`]);
+    const q = qcm(rng, bonne, [`Les côtés qui partent de ${noms[k]} ont la même longueur.`, `L'angle en ${noms[k]} est plus petit qu'un angle droit.`, `L'angle en ${noms[k]} est plus grand qu'un angle droit.`]);
     return {
       ...q, difficulte: 1,
       enonce: `Que signifie le petit carré dessiné en ${noms[k]} ?`,
