@@ -116,8 +116,6 @@
       "elle",
       "ils",
       "elles",
-      "nous",
-      "vous",
       "le",
       "la",
       "les",
@@ -125,7 +123,24 @@
       "leur"
      ],
      "enonce": "Dans la phrase « {cle} », quel pronom peut remplacer « {groupe} » ?",
-     "explication": "{resultat} {note}"
+     "explication": "{resultat} {note}",
+     "groupes": [
+      [
+       "il",
+       "elle",
+       "ils",
+       "elles"
+      ],
+      [
+       "le",
+       "la",
+       "les"
+      ],
+      [
+       "lui",
+       "leur"
+      ]
+     ]
     }
    ]
   },
@@ -471,7 +486,8 @@
      "champ": "famille",
      "avec": "derive",
      "enonce": "De quel mot vient « {cle} » ?",
-     "explication": "« {cle} » est de la famille du mot « {valeur} »."
+     "explication": "« {cle} » est de la famille du mot « {valeur} ».",
+     "proches": "graphie"
     },
     {
      "sorte": "intrus",
@@ -553,7 +569,8 @@
      "champ": "base",
      "difficulte": 1,
      "enonce": "Quel est le mot de base de « {cle} » ?",
-     "explication": "« {cle} » est formé à partir de « {valeur} » et du {sorte} « {affixe} »."
+     "explication": "« {cle} » est formé à partir de « {valeur} » et du {sorte} « {affixe} ».",
+     "proches": "graphie"
     },
     {
      "sorte": "attribut",
@@ -574,23 +591,6 @@
      ],
      "ordreFixe": true,
      "enonce": "Dans le mot « {cle} », pourquoi écrit-on le préfixe « {affixe} » ?",
-     "explication": "« {cle} » = {affixe} + {base}. On écrit {valeur}."
-    },
-    {
-     "sorte": "attribut",
-     "champ": "graphie",
-     "filtre": {
-      "affixe": [
-       "en-",
-       "em-"
-      ]
-     },
-     "valeurs": [
-      "en- devant les autres lettres",
-      "em- devant m, b ou p"
-     ],
-     "ordreFixe": true,
-     "enonce": "Le verbe « {cle} » vient du mot « {base} » (mettre dans). Pourquoi écrit-on le préfixe « {affixe} » ?",
      "explication": "« {cle} » = {affixe} + {base}. On écrit {valeur}."
     },
     {
