@@ -12,63 +12,72 @@
    "titre": "Écouter",
    "date": "2023-06-26",
    "points": 20,
-   "audio": null
+   "audio": null,
+   "duree": 40
   },
   {
    "n": 2,
    "matiere": "fr",
    "titre": "Écrire",
    "date": "2023-06-26",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 3,
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2023-06-26",
-   "points": 40
+   "points": 40,
+   "duree": 65
   },
   {
    "n": 4,
    "matiere": "fr",
    "titre": "Lire — texte informatif",
    "date": "2023-06-27",
-   "points": 30
+   "points": 30,
+   "duree": 65
   },
   {
    "n": 5,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2023-06-27",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2023-06-29",
-   "points": 55
+   "points": 55,
+   "duree": 75
   },
   {
    "n": 7,
    "matiere": "fr",
    "titre": "Lire — texte fictionnel",
    "date": "2023-06-29",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 8,
    "matiere": "ma",
    "titre": "Nombres et opérations",
    "date": "2023-06-30",
-   "points": 70
+   "points": 70,
+   "duree": 75
   },
   {
    "n": 9,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2023-06-30",
-   "points": 60
+   "points": 60,
+   "duree": 75
   }
  ],
  "documents": [

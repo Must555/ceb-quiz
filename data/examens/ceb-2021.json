@@ -12,63 +12,72 @@
    "titre": "Écouter",
    "date": "2021-06-17",
    "points": 20,
-   "audio": null
+   "audio": null,
+   "duree": 40
   },
   {
    "n": 2,
    "matiere": "fr",
    "titre": "Écrire",
    "date": "2021-06-17",
-   "points": 40
+   "points": 40,
+   "duree": 60
   },
   {
    "n": 3,
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2021-06-17",
-   "points": 50
+   "points": 50,
+   "duree": 60
   },
   {
    "n": 4,
    "matiere": "fr",
    "titre": "Lire — texte informatif",
    "date": "2021-06-18",
-   "points": 40
+   "points": 40,
+   "duree": 75
   },
   {
    "n": 5,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2021-06-18",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2021-06-21",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 7,
    "matiere": "fr",
    "titre": "Lire — texte fictionnel",
    "date": "2021-06-21",
-   "points": 40
+   "points": 40,
+   "duree": 75
   },
   {
    "n": 8,
    "matiere": "ma",
    "titre": "Nombres et opérations",
    "date": "2021-06-22",
-   "points": 80
+   "points": 80,
+   "duree": 75
   },
   {
    "n": 9,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2021-06-22",
-   "points": 60
+   "points": 60,
+   "duree": 75
   }
  ],
  "documents": [

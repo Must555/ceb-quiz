@@ -12,70 +12,80 @@
    "titre": "Écouter",
    "date": "2024-06-24",
    "points": 20,
-   "audio": null
+   "audio": null,
+   "duree": 40
   },
   {
    "n": 2,
    "matiere": "fr",
    "titre": "Écrire",
    "date": "2024-06-24",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 3,
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2024-06-24",
-   "points": 40
+   "points": 40,
+   "duree": 65
   },
   {
    "n": 4,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2024-06-25",
-   "points": 55
+   "points": 55,
+   "duree": 75
   },
   {
    "n": 5,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2024-06-25",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "ma",
    "titre": "Nombres et opérations 1",
    "date": "2024-06-27",
-   "points": 36
+   "points": 36,
+   "duree": 40
   },
   {
    "n": 7,
    "matiere": "ma",
    "titre": "Nombres et opérations 2",
    "date": "2024-06-27",
-   "points": 34
+   "points": 34,
+   "duree": 50
   },
   {
    "n": 8,
    "matiere": "fr",
    "titre": "Lire — texte informatif",
    "date": "2024-06-27",
-   "points": 30
+   "points": 30,
+   "duree": 65
   },
   {
    "n": 9,
    "matiere": "fr",
    "titre": "Lire — texte fictionnel",
    "date": "2024-06-28",
-   "points": 35
+   "points": 35,
+   "duree": 65
   },
   {
    "n": 10,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2024-06-28",
-   "points": 60
+   "points": 60,
+   "duree": 75
   }
  ],
  "documents": [

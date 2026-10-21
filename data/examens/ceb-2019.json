@@ -12,7 +12,8 @@
    "titre": "Écouter",
    "date": "2019-06-17",
    "points": 25,
-   "audio": null
+   "audio": null,
+   "duree": 30
   },
   {
    "n": 2,
@@ -26,49 +27,56 @@
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2019-06-17",
-   "points": 50
+   "points": 50,
+   "duree": 60
   },
   {
    "n": 4,
    "matiere": "ma",
    "titre": "Nombres et opérations",
    "date": "2019-06-18",
-   "points": 80
+   "points": 80,
+   "duree": 75
   },
   {
    "n": 5,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2019-06-18",
-   "points": 60
+   "points": 60,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "fr",
    "titre": "Lire — texte informatif",
    "date": "2019-06-20",
-   "points": 25
+   "points": 25,
+   "duree": 50
   },
   {
    "n": 7,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2019-06-20",
-   "points": 65
+   "points": 65,
+   "duree": 75
   },
   {
    "n": 8,
    "matiere": "fr",
    "titre": "Lire — texte fictionnel",
    "date": "2019-06-21",
-   "points": 30
+   "points": 30,
+   "duree": 60
   },
   {
    "n": 9,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2019-06-21",
-   "points": 60
+   "points": 60,
+   "duree": 75
   }
  ],
  "documents": [

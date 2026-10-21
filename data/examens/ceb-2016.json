@@ -11,28 +11,32 @@
    "matiere": "fr",
    "titre": "Lire-écrire 1 — conte",
    "date": "2016-06-16",
-   "points": 40
+   "points": 40,
+   "duree": 50
   },
   {
    "n": 2,
    "matiere": "fr",
    "titre": "Écrire",
    "date": "2016-06-16",
-   "points": 30
+   "points": 30,
+   "duree": 60
   },
   {
    "n": 3,
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2016-06-16",
-   "points": 30
+   "points": 30,
+   "duree": 75
   },
   {
    "n": 4,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2016-06-17",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 5,
@@ -40,35 +44,40 @@
    "titre": "Écouter-écrire",
    "date": "2016-06-17",
    "points": 30,
-   "audio": null
+   "audio": null,
+   "duree": 60
   },
   {
    "n": 6,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2016-06-20",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 7,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2016-06-20",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 8,
    "matiere": "ma",
    "titre": "Nombres et opérations",
    "date": "2016-06-21",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 9,
    "matiere": "fr",
    "titre": "Lire-écrire 2 — texte documentaire",
    "date": "2016-06-21",
-   "points": 20
+   "points": 20,
+   "duree": 50
   }
  ],
  "documents": [

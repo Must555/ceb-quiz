@@ -3,7 +3,7 @@
  "annee": 2015,
  "referentiel": "socles",
  "titre": "CEB 2015",
- "source": "FWB, épreuve externe commune 2015 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "source": "FWB, épreuve externe commune 2015 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
  "remarque": "Le texte écouté du livret 1 (« Histoire d'ordre ») figure dans le portfolio : ses questions sont jouables en lecture. Les questions qui reposent sur des figures (tracés, schémas, cartes à compléter) sont gardées en mode papier.",
  "livrets": [
   {
@@ -25,49 +25,56 @@
    "matiere": "ma",
    "titre": "Solides et figures",
    "date": "2015-06-15",
-   "points": 30
+   "points": 30,
+   "duree": 75
   },
   {
    "n": 4,
    "matiere": "fr",
    "titre": "Lire-écrire 1 — Le Petit Prince",
    "date": "2015-06-16",
-   "points": 40
+   "points": 40,
+   "duree": 50
   },
   {
    "n": 5,
    "matiere": "sc",
    "titre": "Éveil — Initiation scientifique",
    "date": "2015-06-16",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 6,
    "matiere": "hg",
    "titre": "Éveil — Formation historique et géographique",
    "date": "2015-06-18",
-   "points": 50
+   "points": 50,
+   "duree": 75
   },
   {
    "n": 7,
    "matiere": "ma",
    "titre": "Nombres et opérations",
    "date": "2015-06-18",
-   "points": 30
+   "points": 30,
+   "duree": 75
   },
   {
    "n": 8,
    "matiere": "ma",
    "titre": "Grandeurs",
    "date": "2015-06-19",
-   "points": 30
+   "points": 30,
+   "duree": 75
   },
   {
    "n": 9,
    "matiere": "fr",
    "titre": "Lire-écrire 2 — La communication",
    "date": "2015-06-19",
-   "points": 50
+   "points": 50,
+   "duree": 75
   }
  ],
  "documents": [
@@ -291,7 +298,7 @@
    "type": "qcm",
    "enonce": "« Histoire d'ordre » : quelle est l'intention dominante de l'auteur ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "ordre-1",
@@ -314,7 +321,7 @@
    "type": "qcm",
    "enonce": "Qui est le narrateur de cette histoire ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
@@ -337,7 +344,7 @@
    "type": "qcm",
    "enonce": "« J'attrape la grippe pendant le congé d'hiver. Je me casse le pied pendant les vacances d'été. » Que faut-il comprendre ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
@@ -360,7 +367,7 @@
    "type": "trous",
    "enonce": "La garde-robe des parents.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
@@ -380,7 +387,7 @@
      "hiver"
     ]
    ],
-   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie."
+   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)"
   },
   {
    "id": "ceb-2015-l1-q5",
@@ -390,7 +397,7 @@
    "type": "qcm",
    "enonce": "Quel est le problème de la petite sœur ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
@@ -413,7 +420,7 @@
    "type": "texte_court",
    "enonce": "Comment la petite sœur a-t-elle rangé les livres de Jean-Jacques ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-2"
@@ -433,7 +440,7 @@
    "type": "ouverte",
    "enonce": "Que découvre Jean-Jacques ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
@@ -446,21 +453,17 @@
    "livret": 1,
    "numero": "9",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Cette histoire est-elle vraisemblable ?",
+   "type": "ouverte",
+   "enonce": "Cette histoire est-elle vraisemblable ? Coche « vraisemblable » ou « invraisemblable » et justifie.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ordre-1",
     "ordre-2"
    ],
-   "choix": [
-    "Vraisemblable : cela pourrait arriver dans une vraie famille.",
-    "Invraisemblable : cela ne peut pas arriver."
-   ],
-   "reponse": 0,
-   "explication": "Rien de magique : une petite sœur peut vraiment ranger ainsi."
+   "explication": "Rien de magique : une petite sœur peut vraiment ranger ainsi.",
+   "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible."
   },
   {
    "id": "ceb-2015-l1-q8",
@@ -503,7 +506,7 @@
    "type": "qcm",
    "enonce": "Un quadrilatère qui a 4 côtés isométriques est…",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "choix": [
     "toujours un carré.",
@@ -521,7 +524,7 @@
    "type": "qcm",
    "enonce": "Un quadrilatère qui a 2 paires de côtés parallèles est…",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "choix": [
     "toujours un losange.",
@@ -671,7 +674,7 @@
    "type": "qcm",
    "enonce": "Le Petit Prince : quelle est l'intention dominante de l'auteur ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "prince-1",
@@ -694,7 +697,7 @@
    "type": "qcm",
    "enonce": "Cette histoire est-elle réelle ou imaginaire ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1",
@@ -715,7 +718,7 @@
    "type": "ouverte",
    "enonce": "Pour le renard, que signifie « apprivoiser » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "prince-1"
@@ -730,7 +733,7 @@
    "type": "trous",
    "enonce": "« Les hommes, dit le renard, ils ont des fusils et ils chassent. C'est bien gênant ! »",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
@@ -758,7 +761,7 @@
    "type": "trous",
    "enonce": "Sur la planète du petit prince, il n'y a ni chasseurs ni poules.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
@@ -782,7 +785,7 @@
    "type": "qcm",
    "enonce": "Un monde parfait pour le renard serait un monde…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
@@ -804,7 +807,7 @@
    "type": "qcm",
    "enonce": "« C'est une chose trop oubliée, dit le renard. » Le renard regrette-t-il qu'« apprivoiser » soit oublié ? Quel mot le montre ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "prince-1"
@@ -825,7 +828,7 @@
    "type": "qcm_multi",
    "enonce": "« Je crois qu'elle m'a apprivoisé… — C'est possible, dit le renard. » Quels mots montrent le doute ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "prince-1"
@@ -845,12 +848,12 @@
   {
    "id": "ceb-2015-l4-q10",
    "livret": 4,
-   "numero": "10",
+   "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "« Je connaîtrai un bruit de pas qui sera différent de tous les autres. » Cela veut dire…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-2"
@@ -867,12 +870,12 @@
   {
    "id": "ceb-2015-l4-q11",
    "livret": 4,
-   "numero": "11",
+   "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Pourquoi le renard dit-il que sa vie est monotone ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-2"
@@ -887,7 +890,7 @@
    "type": "ouverte",
    "enonce": "« Ils dansent le jeudi avec les filles du village. Alors, le jeudi est jour merveilleux ! » Pourquoi ? Si on remplace « le jeudi » par « un jeudi », le sens est-il le même ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-2"
@@ -902,7 +905,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles leçons de vie peut-on tirer de cette histoire ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1",
@@ -918,7 +921,7 @@
     0,
     3
    ],
-   "explication": "« Il faut être très patient » ; « il n'existe point de marchands d'amis »."
+   "explication": "« Il faut être très patient » ; « il n'existe point de marchands d'amis ». Le corrigé accepte plusieurs paires de leçons de vie justes."
   },
   {
    "id": "ceb-2015-l4-q14",
@@ -928,7 +931,7 @@
    "type": "ouverte",
    "enonce": "Écris à l'indicatif présent : « C'est alors qu'apparut le renard. — Bonjour, dit le renard. — Bonjour, répondit poliment le petit prince, qui se retourna mais ne vit rien. »",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "reponseModele": "C'est alors qu'apparait le renard. — Bonjour, dit le renard. — Bonjour, répond poliment le petit prince, qui se retourne mais ne voit rien."
   },
@@ -940,7 +943,7 @@
    "type": "grille",
    "enonce": "Type et forme des phrases.",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-phrases",
    "lignes": [
     "Je m'ennuie donc un peu.",
@@ -972,7 +975,7 @@
    "type": "trous",
    "enonce": "Complète (exemple : ma vie est monotone → la monotonie de la vie).",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "texte": "Je suis tellement triste → la {1} du petit prince  ·  Le renard est patient → la {2} du renard  ·  Le bruit est différent → la {3} de bruit  ·  Le blé est inutile → l'{4} du blé",
    "reponse": [
@@ -1001,7 +1004,7 @@
    "type": "grille",
    "enonce": "Propositions coordonnées, juxtaposées ou subordonnées ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-fonctions",
    "lignes": [
     "Je chasse les poules, les hommes me chassent.",
@@ -1063,7 +1066,7 @@
    "type": "grille",
    "enonce": "Régime du renard (graphiques) : proportionnellement…",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-regimes",
    "documents": [
     "renard"
@@ -1081,7 +1084,7 @@
     1,
     0
    ],
-   "explication": "En hiver, les mammifères forment presque tout le régime."
+   "explication": "En hiver, les mammifères forment presque tout le régime. (Dans l'épreuve, une troisième ligne demandait « autant ».)"
   },
   {
    "id": "ceb-2015-l5-q1b",
@@ -1091,7 +1094,7 @@
    "type": "grille",
    "enonce": "Quelle saison ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-regimes",
    "documents": [
     "renard"
@@ -1120,7 +1123,7 @@
    "type": "qcm",
    "enonce": "Deux glaçons identiques, l'un entouré d'une écharpe en laine (pièce à 20 °C). Lequel fondra entièrement le premier ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-1"
@@ -1131,7 +1134,7 @@
     "Ils fondront à la même vitesse"
    ],
    "reponse": 0,
-   "explication": "La laine isole : elle freine l'arrivée de la chaleur de la pièce vers le glaçon."
+   "explication": "La laine isole : elle freine l'arrivée de la chaleur de la pièce vers le glaçon. (Question non notée dans l'épreuve : elle prépare la suivante.)"
   },
   {
    "id": "ceb-2015-l5-q5",
@@ -1141,7 +1144,7 @@
    "type": "trous",
    "enonce": "Expérience 2 : l'eau chaude.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-2"
@@ -1168,7 +1171,7 @@
    "type": "qcm",
    "enonce": "Quel constat ? L'écharpe en laine…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-2"
@@ -1190,7 +1193,7 @@
    "type": "qcm_multi",
    "enonce": "Quels sont les deux matériaux isolants cités ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "isolants"
@@ -1214,15 +1217,16 @@
    "domaine": "sc.matiere",
    "type": "grille",
    "enonce": "L'isolant conserve une température intérieure…",
-   "points": 2,
-   "corrigeVerifie": false,
+   "points": 3,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "isolants"
    ],
    "lignes": [
     "Un repas chaud à emporter",
-    "Une boite pour transporter la crème glacée"
+    "Une boite pour transporter la crème glacée",
+    "De la laine en panneau pour isoler la toiture d'une maison"
    ],
    "colonnes": [
     "plus élevée que l'extérieur",
@@ -1230,9 +1234,13 @@
    ],
    "reponse": [
     0,
-    1
+    1,
+    [
+     0,
+     1
+    ]
    ],
-   "explication": "Garder le chaud au chaud et le froid au froid."
+   "explication": "Garder le chaud au chaud et le froid au froid. La laine isole dans les deux sens : elle garde la maison plus chaude en hiver et plus fraîche en été."
   },
   {
    "id": "ceb-2015-l5-q8",
@@ -1242,7 +1250,7 @@
    "type": "ouverte",
    "enonce": "Le glaçon a fondu moins vite sur l'assiette 2 parce que…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-1"
@@ -1257,7 +1265,7 @@
    "type": "ouverte",
    "enonce": "En quoi le dispositif de la bouteille facilite-t-il le travail du jardinier ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "documents": [
     "tomate"
@@ -1272,7 +1280,7 @@
    "type": "grille",
    "enonce": "Prévisions météo : quel jour ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "meteo-1"
@@ -1302,7 +1310,7 @@
    "type": "trous",
    "enonce": "Dimanche, pour l'ensemble de la Belgique, les températures varieront…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "meteo-1"
@@ -1326,7 +1334,7 @@
    "type": "qcm",
    "enonce": "Quel jour éviterais-tu pour une journée en Ardenne ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "meteo-1"
@@ -1337,7 +1345,7 @@
     "dimanche"
    ],
    "reponse": 1,
-   "explication": "Samedi : averses en Ardenne."
+   "explication": "Samedi : averses en Ardenne. (Dans l'épreuve, il fallait justifier : la pluie, la température ou ses variations.)"
   },
   {
    "id": "ceb-2015-l5-q13",
@@ -1347,7 +1355,7 @@
    "type": "qcm_multi",
    "enonce": "Dans un bulletin météo, sous quelles autres formes que la pluie l'eau peut-elle se présenter ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "choix": [
     "neige",
@@ -1371,7 +1379,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles sont les trois fonctions du système circulatoire ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "documents": [
     "sang"
@@ -1400,7 +1408,7 @@
    "type": "qcm",
    "enonce": "Au niveau de quel organe les nutriments passent-ils dans le sang ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "choix": [
     "poumons",
@@ -1421,7 +1429,7 @@
    "type": "qcm",
    "enonce": "On remplit un flacon d'eau jusqu'au trait, on le met au congélateur. Que constate-t-on ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "choix": [
     "La glace occupe un volume plus grand que l'eau liquide.",
@@ -1439,7 +1447,7 @@
    "type": "trous",
    "enonce": "Nomme les changements d'état.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "texte": "Liquide → solide (au congélateur) : {1}  ·  Solide → liquide (à température ambiante) : {2}",
    "reponse": [
@@ -1460,7 +1468,7 @@
    "type": "grille",
    "enonce": "L'hélice tourne-t-elle quand on ajoute cet objet au circuit ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "objets"
@@ -1648,12 +1656,12 @@
   {
    "id": "ceb-2015-l6-q2",
    "livret": 6,
-   "numero": "2",
+   "numero": "3",
    "domaine": "hg.histoire",
    "type": "qcm",
    "enonce": "Marcel Ladril a-t-il écrit ce qu'il a vécu lui-même ou ce que quelqu'un lui a raconté ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ladril-1"
@@ -1669,12 +1677,12 @@
   {
    "id": "ceb-2015-l6-q3",
    "livret": 6,
-   "numero": "3",
+   "numero": "2",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
    "enonce": "Quelles villes faisaient partie de l'Allemagne en 1914 et font aujourd'hui partie de la Belgique ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-belgique",
    "documents": [
     "cartes"
@@ -1700,7 +1708,7 @@
    "type": "texte_court",
    "enonce": "« Au revoir Marcelle et Gabriel. » Pour Marcel, qui sont-ils ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ladril-1",
@@ -1723,7 +1731,7 @@
    "type": "grille",
    "enonce": "Quel document le prouve ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ladril-1",
@@ -1743,10 +1751,13 @@
    ],
    "reponse": [
     0,
-    3,
+    [
+     2,
+     3
+    ],
     4
    ],
-   "explication": "C : message du 6/8/1914 ; F : aquarelle faite au camp en mai 1917 ; G : mort en 1949."
+   "explication": "C : message du 6/8/1914 ; F : aquarelle faite au camp en mai 1917 ; G : mort en 1949. Pour 1917, les documents E et F conviennent tous les deux."
   },
   {
    "id": "ceb-2015-l6-q5b",
@@ -1755,20 +1766,17 @@
    "domaine": "hg.histoire",
    "type": "trous",
    "enonce": "Les enfants de Marcel Ladril.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 0.5,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ladril-1",
     "ladril-2"
    ],
-   "texte": "Enfant né pendant sa captivité : {1}  ·  Enfant absent de la photo de 1915 : {2}",
+   "texte": "Enfant né pendant sa captivité : {1}",
    "reponse": [
     [
      "Samuel"
-    ],
-    [
-     "Marie"
     ]
    ],
    "explication": "Samuel naît en 1915 ; Marie naît en 1919, après la photo."
@@ -1781,7 +1789,7 @@
    "type": "qcm",
    "enonce": "Le carnet (document D) dit : « Jeudi 24 septembre, aujourd'hui 29 ans ». Marcel est né en 1885. Quelle année ?",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "documents": [
     "ladril-2"
@@ -1804,13 +1812,14 @@
    "type": "grille",
    "enonce": "Arbre généalogique : qui a vécu… ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "documents": [
     "ladril-2"
    ],
    "lignes": [
     "au 20e siècle uniquement",
+    "au 19e et au 20e siècle",
     "au 20e et au 21e siècle",
     "le premier vol d'un homme dans l'espace (1961)"
    ],
@@ -1822,6 +1831,10 @@
    ],
    "reponse": [
     2,
+    [
+     0,
+     3
+    ],
     1,
     1
    ],
@@ -1835,7 +1848,7 @@
    "type": "grille",
    "enonce": "Nature des traces du passé.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ladril-1",
@@ -1901,12 +1914,12 @@
   {
    "id": "ceb-2015-l6-q9",
    "livret": 6,
-   "numero": "9",
+   "numero": "8",
    "domaine": "hg.geographie",
    "type": "grille",
    "enonce": "Malmedy et Eupen.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-langues",
    "lignes": [
     "Province de Malmedy et d'Eupen",
@@ -1936,7 +1949,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles capitales de la culture n'appartiennent pas à un pays de l'Union européenne ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "mons-2"
@@ -1959,26 +1972,26 @@
    "numero": "16",
    "domaine": "hg.histoire",
    "type": "numerique",
-   "enonce": "L'exposition Van Gogh est ouverte tous les jours sauf le lundi. Le 1er mai 2015 est un vendredi. Combien de jours est-elle ouverte en mai 2015 ?",
+   "enonce": "L'exposition Van Gogh est ouverte tous les jours sauf le lundi, jusqu'au 17 mai 2015. Le 1er mai 2015 est un vendredi. Combien de jours est-elle encore ouverte en mai 2015 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "documents": [
     "mons-2"
    ],
-   "reponse": 27,
+   "reponse": 15,
    "unite": "jours",
-   "explication": "31 jours − 4 lundis (4, 11, 18, 25) = 27 jours."
+   "explication": "Jours d'ouverture : du 1er au 3, du 5 au 10 et du 12 au 17 mai (les lundis 4 et 11 sont fermés) : 3 + 6 + 6 = 15 jours."
   },
   {
    "id": "ceb-2015-l6-q17a",
    "livret": 6,
-   "numero": "17a",
+   "numero": "18a",
    "domaine": "hg.histoire",
    "type": "qcm",
    "enonce": "Combien de temps dure l'exposition Atopolis (13 juin - 18 octobre 2015) ?",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "documents": [
     "mons-2"
@@ -1994,12 +2007,12 @@
   {
    "id": "ceb-2015-l6-q17b",
    "livret": 6,
-   "numero": "17b",
+   "numero": "18b",
    "domaine": "hg.histoire",
    "type": "numerique",
    "enonce": "Combien d'expositions de la liste peux-tu visiter pendant les vacances d'été 2015 (juillet-aout) ?",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "documents": [
     "mons-2"
@@ -2010,12 +2023,12 @@
   {
    "id": "ceb-2015-l6-q18a",
    "livret": 6,
-   "numero": "18a",
+   "numero": "17",
    "domaine": "hg.histoire",
    "type": "trous",
    "enonce": "Dates des expositions.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "documents": [
     "mons-2"
@@ -2053,7 +2066,7 @@
    "type": "texte_court",
    "enonce": "En quelle année Bruxelles a-t-elle été capitale européenne de la culture ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "documents": [
     "mons-2"
@@ -2091,7 +2104,7 @@
   {
    "id": "ceb-2015-l6-q8",
    "livret": 6,
-   "numero": "8",
+   "numero": "9",
    "domaine": "hg.histoire",
    "type": "ouverte",
    "enonce": "Distance Theux - Liège.",
@@ -2215,7 +2228,7 @@
    "type": "numerique",
    "enonce": "Calcule : 48 × 5",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 240,
    "tolerance": 0.0001,
@@ -2229,7 +2242,7 @@
    "type": "numerique",
    "enonce": "Calcule : 700 × 70",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 49000,
    "tolerance": 0.0001,
@@ -2243,7 +2256,7 @@
    "type": "numerique",
    "enonce": "Calcule : 128 + 587 + 113 + 172",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 1000,
    "tolerance": 0.0001,
@@ -2257,7 +2270,7 @@
    "type": "numerique",
    "enonce": "Calcule : 4 × 250 × 0 × 20",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
@@ -2271,7 +2284,7 @@
    "type": "numerique",
    "enonce": "Calcule : 100 000 − 587",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 99413,
    "tolerance": 0.0001,
@@ -2285,7 +2298,7 @@
    "type": "numerique",
    "enonce": "Calcule : 998 + 587",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 1585,
    "tolerance": 0.0001,
@@ -2299,7 +2312,7 @@
    "type": "numerique",
    "enonce": "Calcule : 366 : 6",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 61,
    "tolerance": 0.0001,
@@ -2313,7 +2326,7 @@
    "type": "numerique",
    "enonce": "Calcule : 0,72 : 1",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 0.72,
    "tolerance": 0.0001,
@@ -2327,7 +2340,7 @@
    "type": "numerique",
    "enonce": "Calcule : 7 603 − 399",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 7204,
    "tolerance": 0.0001,
@@ -2341,7 +2354,7 @@
    "type": "numerique",
    "enonce": "Calcule : 150 % de 600",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 900,
    "tolerance": 0.0001,
@@ -2373,16 +2386,13 @@
    "domaine": "ma.arithmetique",
    "type": "trous",
    "enonce": "Figures de carrés : 1, 4, 9, … 25 (figure 5).",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-suites",
-   "texte": "Figure 4 : {1} carrés  ·  Figure 6 : {2} carrés  ·  Figure 10 : {3} carrés",
+   "texte": "Figure 4 : {1} carrés  ·  Figure 10 : {2} carrés",
    "reponse": [
     [
      "16"
-    ],
-    [
-     "36"
     ],
     [
      "100"
@@ -2398,7 +2408,7 @@
    "type": "texte_court",
    "enonce": "Nombre mystère : entre 28 et 29, 4 chiffres, centièmes = 7, dixièmes = unités.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "reponse": [
     "28,87"
@@ -2413,7 +2423,7 @@
    "type": "numerique",
    "enonce": "Chaque livre est vendu 12 €. La 1re classe a encaissé 168 €, la 2e 288 €. Combien de livres vendus en tout ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "reponse": 38,
    "unite": "livres",
@@ -2427,7 +2437,7 @@
    "type": "ordre",
    "enonce": "Range du plus petit au plus grand.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "elements": [
     "2 500",
@@ -2453,7 +2463,7 @@
    "type": "trous",
    "enonce": "Complète : 1,2 = …",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "1,2 × {1}  ·  12 × {2}  ·  120 × {3}  ·  6 × {4}  ·  0,6 × {5}  ·  0,06 × {6}",
    "reponse": [
@@ -2486,7 +2496,7 @@
    "type": "qcm_multi",
    "enonce": "Quels poulets pèsent entre 1,3 kg et 1,4 kg ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "1,304 kg",
@@ -2510,7 +2520,7 @@
    "type": "trous",
    "enonce": "Pyramide d'additions : en bas 121, ?, 600 ; au milieu 380, ? ; en haut ?.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "Case du bas : {1}  ·  Case du milieu : {2}  ·  Sommet : {3}",
    "reponse": [
@@ -2535,7 +2545,7 @@
    "type": "qcm",
    "enonce": "3 452 + 6 798 devient 3 458 + 6 792 (on échange les chiffres des unités). Le résultat…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "choix": [
     "augmente.",
@@ -2553,7 +2563,7 @@
    "type": "qcm",
    "enonce": "3 452 + 6 798 devient 3 425 + 6 798. Le résultat…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "choix": [
     "augmente.",
@@ -2637,12 +2647,14 @@
    "type": "trous",
    "enonce": "Complète par l'unité qui convient.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
    "texte": "pommes de terre 5 {1}  ·  citrons 500 {2}  ·  rôti 1,250 {3}  ·  lessive 3,5 {4}  ·  cadre 25 {5}  ·  canette 33 {6} à 60 {7}  ·  attente 15 {8}",
    "reponse": [
     [
-     "kg"
+     "kg",
+     "€",
+     "euros"
     ],
     [
      "g"
@@ -2652,7 +2664,10 @@
     ],
     [
      "l",
-     "L"
+     "L",
+     "€",
+     "euros",
+     "litres"
     ],
     [
      "€",
@@ -2683,7 +2698,7 @@
    "type": "trous",
    "enonce": "Thé noir : 90-100 °C, 5 min, 12 g/l. Tisanes aux herbes et aux fruits, thé rouge : 95-100 °C, 10 min, 20 g/l.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "texte": "Infusion du thé noir : {1} min  ·  Température maximale pour la tisane aux herbes : {2} °C  ·  Thé rouge pour 250 ml : {3} g  ·  Eau pour 30 g de tisane aux fruits : {4} l",
    "reponse": [
@@ -2710,7 +2725,7 @@
    "type": "trous",
    "enonce": "Cocktail de 3 l : 1/2 de jus de pomme, 3/10 de jus d'ananas, 2/10 de sirop.",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions",
    "texte": "Pomme : {1} l  ·  Ananas : {2} l  ·  Sirop : {3} l",
    "reponse": [
@@ -2734,7 +2749,7 @@
    "type": "trous",
    "enonce": "1 tasse = 20 cuillères ; 1 bouteille = 4 tasses ; 1 seau = 5 bouteilles.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "{1} cuillères pour 1 tasse  ·  {2} tasses pour 2 bouteilles  ·  {3} tasses pour 1 seau  ·  40 tasses remplissent {4} seaux",
    "reponse": [
@@ -2761,7 +2776,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles propositions expriment une grandeur ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "Le prix de la voiture",
@@ -2789,7 +2804,7 @@
    "type": "qcm",
    "enonce": "Qui a vécu le plus longtemps ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "choix": [
     "Marie Curie (1867-1934)",
@@ -2808,12 +2823,12 @@
    "type": "numerique",
    "enonce": "Un avion vole à 30 561 pieds. 1 pied = 0,305 m. Quelle est son altitude en mètres ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "reponse": 9321.105,
-   "tolerance": 0.01,
+   "tolerance": 0.2,
    "unite": "m",
-   "explication": "30 561 × 0,305 = 9 321,105 m."
+   "explication": "30 561 × 0,305 = 9 321,105 m. On accepte aussi la réponse arrondie : 9 321 m."
   },
   {
    "id": "ceb-2015-l8-q2",
@@ -2911,7 +2926,7 @@
    "type": "qcm",
    "enonce": "Quelle est l'intention dominante de l'auteure du texte sur la communication ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "comm-1",
@@ -2930,12 +2945,12 @@
   {
    "id": "ceb-2015-l9-q2",
    "livret": 9,
-   "numero": "2",
+   "numero": "3",
    "domaine": "fr.lire",
    "type": "texte_court",
    "enonce": "Pour l'auteure, parler, ce n'est pas répéter des mots ; parler, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1"
@@ -2950,12 +2965,12 @@
   {
    "id": "ceb-2015-l9-q3",
    "livret": 9,
-   "numero": "3",
+   "numero": "2",
    "domaine": "fr.lire",
    "type": "texte_court",
    "enonce": "Les individus communiquent s'ils produisent des messages compréhensibles et s'ils…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1"
@@ -2974,7 +2989,7 @@
    "type": "qcm",
    "enonce": "« Les animaux n'utilisent pas une langue pour se faire comprendre. » Quel sens a « langue » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "comm-1"
@@ -2995,7 +3010,7 @@
    "type": "qcm_multi",
    "enonce": "Quels intertitres pourraient remplacer « A. Les langages des animaux » ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "comm-1"
@@ -3020,7 +3035,7 @@
    "type": "grille",
    "enonce": "Dans quelle partie placer ces phrases ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "comm-1",
@@ -3051,7 +3066,7 @@
    "type": "trous",
    "enonce": "Complète le tableau (animal, action, but).",
    "points": 3.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1"
@@ -3074,7 +3089,7 @@
      "pieuvres"
     ]
    ],
-   "explication": "Voir la partie A."
+   "explication": "Voir la partie A. (Dans l'épreuve, le tableau comptait 7 éléments à compléter.)"
   },
   {
    "id": "ceb-2015-l9-q10",
@@ -3084,7 +3099,7 @@
    "type": "trous",
    "enonce": "Complète (exemple : les moineaux pépient → le pépiement → pépier).",
    "points": 3.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "texte": "Les loups hurlent → le {1} → {2}  ·  Les {3} rugissent → le {4} → {5}  ·  Les chats {6} → le {7} → miauler",
    "reponse": [
@@ -3120,7 +3135,7 @@
    "type": "texte_court",
    "enonce": "Recopie la définition du mot « dingos ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "comm-1"
@@ -3140,7 +3155,7 @@
    "type": "grille",
    "enonce": "Un sportif : de quel type de communication s'agit-il ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-3"
@@ -3173,7 +3188,7 @@
    "type": "texte_court",
    "enonce": "Pourquoi les diks diks portent-ils ce nom ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1"
@@ -3188,12 +3203,12 @@
   {
    "id": "ceb-2015-l9-q15",
    "livret": 9,
-   "numero": "15",
+   "numero": "16",
    "domaine": "fr.lire",
    "type": "qcm_multi",
    "enonce": "Sans tenir compte des humains, on constate que certains animaux…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1"
@@ -3216,12 +3231,12 @@
   {
    "id": "ceb-2015-l9-q16",
    "livret": 9,
-   "numero": "16",
+   "numero": "15",
    "domaine": "fr.lire",
    "type": "grille",
    "enonce": "D'après le texte, vrai ou faux ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-2"
@@ -3252,7 +3267,7 @@
    "type": "texte_court",
    "enonce": "« Gestes, mimiques, changements de position et déplacements se combinent souvent entre eux. Souvent aussi, ils s'ajoutent à la communication verbale. » « ils » remplace…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "comm-3"
@@ -3271,7 +3286,7 @@
    "type": "ouverte",
    "enonce": "Réécris avec « vous » : « Quand tu veux obtenir une permission de tes parents, par exemple, tu ne leur parles pas de loin en tirant la tête : tu t'approches d'eux et tu souris. »",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "reponseModele": "Quand vous voulez obtenir une permission de vos parents, par exemple, vous ne leur parlez pas de loin en tirant la tête : vous vous approchez d'eux et vous souriez."
   },
@@ -3283,12 +3298,12 @@
    "type": "trous",
    "enonce": "Complète : temps et infinitif.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "comm-3"
    ],
-   "texte": "« avons vu » : {1}, infinitif {2}  ·  « communiquaient » : {3}, infinitif {4}  ·  « lève » : présent, infinitif {5}",
+   "texte": "« avons vu » : {1}, infinitif {2}  ·  « communiquaient » : {3}, infinitif {4}  ·  « lève » : présent, infinitif {5}  ·  « songe » est au mode {6}",
    "reponse": [
     [
      "passé composé",
@@ -3305,9 +3320,14 @@
     ],
     [
      "lever"
+    ],
+    [
+     "impératif",
+     "imperatif",
+     "l'impératif"
     ]
    ],
-   "explication": "passé composé de voir ; imparfait de communiquer ; lever."
+   "explication": "passé composé de voir ; imparfait de communiquer ; lever. « songe » est ici à l'impératif (c'est un ordre, sans sujet exprimé)."
   },
   {
    "id": "ceb-2015-l9-q20",
@@ -3317,7 +3337,7 @@
    "type": "texte_court",
    "enonce": "« Tu cours à la rencontre de quelqu'un pour lui manifester ta joie de le revoir. » Avec « tes parents » : Tu cours à la rencontre de tes parents pour…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-pronoms",
    "documents": [
     "comm-3"
@@ -3336,7 +3356,7 @@
    "type": "ouverte",
    "enonce": "Quelle est la différence fondamentale entre les hommes et les animaux ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "comm-1",
@@ -3400,5 +3420,6 @@
    "corrigeVerifie": false,
    "numerisable": false
   }
- ]
+ ],
+ "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2015), comparé question par question le 21/10/2026."
 }

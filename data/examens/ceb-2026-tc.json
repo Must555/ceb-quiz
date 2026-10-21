@@ -12,70 +12,80 @@
       "titre": "Écouter",
       "date": "2026-06-18",
       "points": 25,
-      "audio": null
+      "audio": null,
+      "duree": 40
     },
     {
       "n": 2,
       "matiere": "fr",
       "titre": "Écrire",
       "date": "2026-06-18",
-      "points": 35
+      "points": 35,
+      "duree": 65
     },
     {
       "n": 3,
       "matiere": "ma",
       "titre": "Géométrie",
       "date": "2026-06-18",
-      "points": 40
+      "points": 40,
+      "duree": 65
     },
     {
       "n": 4,
       "matiere": "ma",
       "titre": "Grandeurs",
       "date": "2026-06-19",
-      "points": 60
+      "points": 60,
+      "duree": 75
     },
     {
       "n": 5,
       "matiere": "hg",
       "titre": "Formation historique et géographique",
       "date": "2026-06-19",
-      "points": 50
+      "points": 50,
+      "duree": 75
     },
     {
       "n": 6,
       "matiere": "fr",
       "titre": "Lire 1",
       "date": "2026-06-22",
-      "points": 30
+      "points": 30,
+      "duree": 65
     },
     {
       "n": 7,
       "matiere": "ma",
       "titre": "Arithmétique 1",
       "date": "2026-06-22",
-      "points": 27
+      "points": 27,
+      "duree": 40
     },
     {
       "n": 8,
       "matiere": "ma",
       "titre": "Arithmétique 2 et traitement de données",
       "date": "2026-06-22",
-      "points": 38
+      "points": 38,
+      "duree": 50
     },
     {
       "n": 9,
       "matiere": "sc",
       "titre": "Initiation scientifique",
       "date": "2026-06-23",
-      "points": 50
+      "points": 50,
+      "duree": 75
     },
     {
       "n": 10,
       "matiere": "fr",
       "titre": "Lire 2",
       "date": "2026-06-23",
-      "points": 30
+      "points": 30,
+      "duree": 65
     }
   ],
   "documents": [
