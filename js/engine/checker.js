@@ -72,9 +72,19 @@ export function corriger(question, reponseEleve) {
     }
     case 'trous': {
       // reponse = [[formes acceptées case 1], [case 2], ...]
-      const bons = question.reponse.filter((acc, i) =>
-        comparerTexte(reponseEleve[i] ?? '', [].concat(acc), question.souple !== false).ok).length;
-      return partiel(bons, question.reponse.length, max);
+      // differentes : true → « écris-en deux » : une même réponse répétée ne compte qu'une fois.
+      const vues = new Set();
+      let repetee = false;
+      const bons = question.reponse.filter((acc, i) => {
+        const ok = comparerTexte(reponseEleve[i] ?? '', [].concat(acc), question.souple !== false).ok;
+        if (!ok || !question.differentes) return ok;
+        const cle = normaliserTexte(reponseEleve[i]).replace(/^(le |la |les |l'|un |une |des )/, '').replace(/s$/, '');
+        if (vues.has(cle)) { repetee = true; return false; }
+        vues.add(cle);
+        return true;
+      }).length;
+      const res = partiel(bons, question.reponse.length, max);
+      return repetee ? { ...res, remarque: 'Il faut des réponses différentes.' } : res;
     }
     case 'grille': {
       // reponse = index de colonne attendu pour chaque ligne, ou liste des colonnes acceptées

@@ -50,6 +50,7 @@ for (const meta of dispo) {
       if (q.type === 'ordre') assert.deepEqual([...q.reponse].sort((a, b) => a - b), q.elements.map((_, i) => i), ctx);
       if (q.type === 'association') assert.ok(q.reponse.every(([g, d]) => g < q.gauche.length && d < q.droite.length), ctx);
       if (q.type === 'trous') assert.equal((q.texte.match(/\{\d+\}/g) ?? []).length, q.reponse.length, `nombre de trous : ${ctx}`);
+      if (q.differentes) assert.equal(new Set(q.reponse.map((r) => [].concat(r)[0])).size, q.reponse.length, `réponses modèles identiques : ${ctx}`);
       if (q.type !== 'ouverte') {
         const r = corriger(q, parfaite(q));
         assert.equal(r.correct, true, `le corrigé ne se valide pas lui-même : ${ctx}`);

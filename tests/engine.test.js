@@ -196,6 +196,11 @@ test('correction : cas particuliers', () => {
   assert.deepEqual([corriger(grille, [0, 1, 0]).score, corriger(grille, [0, 1, 0]).correct], [2, false]);
   // Une grille laissée vide ne rapporte aucun point (null ne vaut pas « colonne 0 »).
   assert.equal(corriger(grille, [null, null, null]).score, 0);
+  // « Écris-en deux » : la même réponse répétée ne compte qu'une fois (CEB 2023, L4 Q3).
+  const deux = { type: 'trous', differentes: true, points: 1, reponse: [['acrobatie', 'jonglerie'], ['acrobatie', 'jonglerie']] };
+  assert.equal(corriger(deux, ['acrobatie', 'jonglerie']).correct, true);
+  assert.deepEqual([corriger(deux, ['acrobatie', "l'acrobatie"]).correct, corriger(deux, ['acrobatie', 'acrobaties']).score], [false, 0.5]);
+  assert.match(corriger(deux, ['Acrobatie', 'acrobatie']).remarque, /différentes/);
   // Le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne (ex. extincteurs, CEB 2026).
   const grilleMulti = { type: 'grille', reponse: [3, [1, 2, 3, 4], [0, 1, 2, 3]], points: 3 };
   assert.equal(corriger(grilleMulti, [3, 4, 0]).score, 3);
