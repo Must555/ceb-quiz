@@ -3,7 +3,7 @@
  "annee": 2024,
  "referentiel": "socles",
  "titre": "CEB 2024",
- "source": "FWB, épreuve externe commune 2024 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "source": "FWB, épreuve externe commune 2024 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
  "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
@@ -317,7 +317,7 @@
    "type": "qcm",
    "enonce": "Plan de l'avion : un couple veut deux sièges libres côte à côte en classe économique, le plus près possible des toilettes (WC) situées à l'arrière. Quels sièges ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "avion"
@@ -339,7 +339,7 @@
    "type": "qcm",
    "enonce": "Plan de l'avion : une famille veut 5 sièges libres sur la même rangée en classe économique. Quelle rangée choisir ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "avion"
@@ -361,7 +361,7 @@
    "type": "texte_court",
    "enonce": "Plan de l'avion : un homme d'affaires veut un siège côté couloir, à la dernière rangée de la première classe. Quel siège ? (exemple : 3A)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "avion"
@@ -404,7 +404,7 @@
    "type": "trous",
    "enonce": "Exemple : pour être un triangle, il faut et il suffit d'être un polygone à 3 côtés. Complète selon le même principe.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "texte": "Pour être un {1}, il faut et il suffit d'être un polygone à 4 côtés isométriques.  ·  Pour être un {2}, il faut et il suffit d'être un polygone à 3 côtés dont 2 sont isométriques.  ·  Pour être un {3}, il faut et il suffit d'être un polygone à 4 côtés avec 4 angles droits.",
    "reponse": [
@@ -550,7 +550,7 @@
    "type": "qcm",
    "enonce": "Émilie dicte : « Trace 2 droites parallèles a et b. Trace 2 autres droites parallèles c et d, sécantes aux droites a et b mais non perpendiculaires à elles. » Quelle figure obtient-on ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "choix": [
     "un trapèze (non parallélogramme)",
@@ -569,7 +569,7 @@
    "type": "qcm",
    "enonce": "Le dessin montre un rectangle ABCD, ses deux diagonales et un cercle de centre E (milieu de [BC]) qui passe par B et C. Quel programme permet de le construire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-cercle",
    "choix": [
     "Rectangle ABCD, diagonales [AC] et [BD], E milieu de [BC], cercle de centre E et de rayon [BC].",
@@ -588,7 +588,7 @@
    "type": "trous",
    "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Complète avec une information de l'emballage.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "Température : {1}  ·  Durée : {2}",
    "reponse": [
@@ -596,7 +596,11 @@
      "170 °C",
      "170°C",
      "170 degrés",
-     "170 °c"
+     "170 °c",
+     "170°",
+     "170 degrés Celsius",
+     "170 degres",
+     "170 degrés celsius"
     ],
     [
      "8 min",
@@ -614,14 +618,13 @@
    "type": "trous",
    "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. De quel type de grandeur s'agit-il ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "360 g : {1}  ·  4,99 € : {2}",
    "reponse": [
     [
      "masse",
-     "la masse",
-     "poids"
+     "la masse"
     ],
     [
      "coût",
@@ -633,7 +636,7 @@
      "cout"
     ]
    ],
-   "explication": "Les grammes mesurent une masse ; les euros un coût (un prix)."
+   "explication": "Les grammes mesurent une masse ; les euros un coût (un prix). Attention : on parle de masse, pas de « poids »."
   },
   {
    "id": "ceb-2024-l4-q2",
@@ -655,7 +658,9 @@
    "enonce": "Lis le chronomètre et trace les aiguilles pour 6 min 28 s.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "neutralisee": true,
+   "remarque": "Question neutralisée par le correctif officiel (0 point)."
   },
   {
    "id": "ceb-2024-l4-q4",
@@ -676,7 +681,7 @@
    "type": "numerique",
    "enonce": "Une douche dure 8 minutes. Un pommeau classique consomme 15 l d'eau par minute, un pommeau économique 6 l par minute. Combien de litres d'eau économise-t-on avec le pommeau économique ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "unite": "l",
    "reponse": 72,
@@ -701,7 +706,7 @@
    "type": "numerique",
    "enonce": "Un compteur indique qu'il reste 648 heures avant l'ouverture des Jeux Olympiques. Combien de jours cela fait-il ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "unite": "jours",
    "reponse": 27,
@@ -748,7 +753,7 @@
    "type": "qcm",
    "enonce": "1 litre, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "10 centilitres",
@@ -767,7 +772,7 @@
    "type": "qcm",
    "enonce": "1 mètre, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "0,1 kilomètre",
@@ -786,7 +791,7 @@
    "type": "qcm",
    "enonce": "1 gramme, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "0,001 kilogramme",
@@ -805,7 +810,7 @@
    "type": "numerique",
    "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Chaque croquette contient 40 % de crevettes. Quelle est la masse de crevettes dans une seule croquette ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "unite": "g",
    "reponse": 24,
@@ -819,7 +824,7 @@
    "type": "qcm_multi",
    "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Quelles classes seront à la mer le premier samedi d'octobre (5 octobre) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "choix": [
     "P3",
@@ -841,7 +846,7 @@
    "type": "qcm",
    "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. À quelle date 3 classes seront-elles à la mer en même temps ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "choix": [
     "Le 25 septembre",
@@ -860,7 +865,7 @@
    "type": "qcm",
    "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Les P3 vont habituellement à la piscine le lundi. Quelle date le directeur doit-il annuler ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "choix": [
     "Le lundi 23 septembre",
@@ -879,7 +884,7 @@
    "type": "numerique",
    "enonce": "Un parallélépipède rectangle a un volume de 60 m³. Sa base mesure 5 m sur 4 m. Quelle est sa hauteur ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-volumes",
    "unite": "m",
    "reponse": 3,
@@ -893,7 +898,7 @@
    "type": "trous",
    "enonce": "Avec des bouteilles recyclées, on fabrique des oreillers : 3 oreillers demandent 36 bouteilles. Complète.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "texte": "10 oreillers : {1} bouteilles  ·  {2} oreillers : 60 bouteilles",
    "reponse": [
@@ -914,7 +919,7 @@
    "type": "numerique",
    "enonce": "Sur 2 500 élèves interrogés, 87 % ont répondu OUI à la question « Votre cartable est-il trop lourd ? ». Combien d'élèves ont répondu OUI ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "reponse": 2175,
    "explication": "1 % de 2 500 = 25. 87 × 25 = 2 175 élèves."
@@ -937,8 +942,8 @@
    "domaine": "ma.grandeurs",
    "type": "numerique",
    "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Combien de minutes a-t-elle pour changer de train à Liège ?",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "unite": "min",
    "reponse": 14,
@@ -952,7 +957,7 @@
    "type": "qcm",
    "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Quelle est la durée totale du trajet ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "choix": [
     "104 min",
@@ -982,7 +987,7 @@
    "type": "trous",
    "enonce": "Pour carreler une terrasse, il faut 32 dalles carrées de 40 cm de côté. Combien faudrait-il de dalles avec un autre format ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
    "texte": "Dalles de 20 cm × 40 cm : {1}  ·  Dalles de 80 cm × 40 cm : {2}  ·  Dalles de 80 cm × 80 cm : {3}",
    "reponse": [
@@ -1006,7 +1011,7 @@
    "type": "numerique",
    "enonce": "Ordures ménagères en Wallonie (kg par habitant) : 2015 : 152 ; 2016 : 150,8 ; 2017 : 147,4 ; 2018 : 145,1 ; 2019 : 144,9 ; 2020 : 142 ; 2021 : 141,9 ; 2022 : 140,7. Quelle est la quantité moyenne ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-moyenne",
    "unite": "kg/hab.",
    "reponse": 145.6,
@@ -1031,7 +1036,7 @@
    "type": "grille",
    "enonce": "À quelle période historique conventionnelle se rapporte chaque trace du passé ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "traces"
@@ -1063,7 +1068,7 @@
    "type": "grille",
    "enonce": "À quel évènement historique se rapporte chaque trace ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "documents": [
     "traces"
@@ -1093,7 +1098,7 @@
    "type": "qcm",
    "enonce": "La trace 5 (« Appel au Peuple » de 1830, affiche imprimée) est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "traces"
@@ -1115,7 +1120,7 @@
    "type": "qcm",
    "enonce": "La trace 5 nous renseigne sur une manière dont les gens…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "traces"
@@ -1138,7 +1143,7 @@
    "type": "qcm",
    "enonce": "Un hypocauste de villa romaine est un système de chauffage par le sol. Il nous renseigne sur une technique que l'Humain utilisait pour…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "choix": [
     "s'instruire",
@@ -1158,7 +1163,7 @@
    "type": "qcm",
    "enonce": "À quelle période conventionnelle se rapporte l'hypocauste de villa romaine ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "choix": [
     "Préhistoire",
@@ -1178,7 +1183,7 @@
    "type": "ouverte",
    "enonce": "Un élève affirme : « Le lancer du disque existe depuis très longtemps. Des traces prouvent qu'il est apparu au Moyen Âge. » Pourtant, le Discobole de Myron date du 5e siècle avant J.-C. Pourquoi l'élève a-t-il tort ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "reponseModele": "Le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité : le lancer du disque existait donc bien avant le Moyen Âge."
   },
@@ -1204,7 +1209,7 @@
    "type": "qcm",
    "enonce": "Le document 5 (affiche des J.O. de Stockholm 1912) est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "jo-1"
@@ -1226,7 +1231,7 @@
    "type": "qcm",
    "enonce": "Dans quel siècle se situe l'année 1912 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
     "18e siècle",
@@ -1245,7 +1250,7 @@
    "type": "grille",
    "enonce": "Pierre de Coubertin est né en 1863 et mort en 1937. Situe ces évènements par rapport à sa vie.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "lignes": [
     "La guerre 14-18",
@@ -1272,7 +1277,7 @@
    "type": "grille",
    "enonce": "Dans quel document se trouve la réponse à chaque question ?",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "jo-2"
@@ -1307,7 +1312,7 @@
    "type": "qcm",
    "enonce": "Le document C (Charlotte Cooper, championne olympique en 1900, en longue robe avec sa raquette) est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "jo-2"
@@ -1329,7 +1334,7 @@
    "type": "qcm",
    "enonce": "Le document C nous renseigne sur la manière dont certaines athlètes…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "jo-2"
@@ -1351,13 +1356,13 @@
    "type": "trous",
    "enonce": "Observe la carte des attributions des J.O. d'été.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "attributions-1",
     "attributions-2"
    ],
-   "texte": "Le continent où les J.O. ont été le plus souvent organisés : {1}.  ·  Un autre continent qui les a accueillis plus de deux fois : {2}.",
+   "texte": "Le continent où les J.O. ont été le plus souvent organisés : {1}.\nUn continent qui les a accueillis plus de deux fois : {2}.",
    "reponse": [
     [
      "Europe",
@@ -1369,7 +1374,11 @@
      "Asie",
      "l'Asie",
      "Amérique du Nord",
-     "l'Amérique du Nord"
+     "l'Amérique du Nord",
+     "Europe",
+     "l'Europe",
+     "Amérique du Sud",
+     "l'Amérique du Sud"
     ]
    ],
    "explication": "L'Europe a accueilli le plus de J.O. L'Amérique (États-Unis, Canada, Mexique, Brésil) et l'Asie (Tokyo, Séoul, Pékin) les ont accueillis plus de deux fois. L'Océanie seulement deux fois."
@@ -1382,7 +1391,7 @@
    "type": "ouverte",
    "enonce": "Une élève affirme : « Les J.O. d'été se sont déroulés sur tous les continents ! » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "attributions-1",
@@ -1398,7 +1407,7 @@
    "type": "grille",
    "enonce": "Observe la carte des aéroports. Quelle direction a prise chaque délégation ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
     "aeroports"
@@ -1429,7 +1438,7 @@
    "type": "ouverte",
    "enonce": "Un élève affirme : « Pour aller aux J.O. de Sydney, l'avion des athlètes belges a survolé seulement deux continents. » C'est faux. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "aeroports"
@@ -1444,7 +1453,7 @@
    "type": "trous",
    "enonce": "Graphique des médailles de Tokyo 2020. Un tableau reprend : Japon (or 27, argent 14, bronze 17) ; un pays X (or 10, argent 12, bronze 14) ; Canada (or 7, argent 7, bronze ?).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "medailles"
@@ -1473,7 +1482,7 @@
    "type": "qcm",
    "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été se déroulent généralement…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "choix": [
     "deux fois par an",
@@ -1492,7 +1501,7 @@
    "type": "qcm",
    "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été durent environ…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "choix": [
     "une semaine",
@@ -1511,7 +1520,7 @@
    "type": "qcm",
    "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. de Pékin se sont déroulés 8 ans après ceux de…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-frise",
    "choix": [
     "Rio de Janeiro",
@@ -1530,7 +1539,7 @@
    "type": "grille",
    "enonce": "Jesse Owens (États-Unis, J.O. 1936), Bianca Buitendag (Afrique du Sud, J.O. 2020), Hermann Weingärtner (Allemagne, J.O. 1896). Sur quel continent se trouve le pays de chaque athlète ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "lignes": [
     "Jesse Owens",
@@ -1559,7 +1568,7 @@
    "type": "grille",
    "enonce": "À quel siècle chaque athlète a-t-il été médaillé ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "lignes": [
     "Jesse Owens (1936)",
@@ -1586,7 +1595,7 @@
    "type": "trous",
    "enonce": "Les oiseaux migrateurs préfèrent survoler les terres. Coucou gris : Belgique → Suisse → Italie → Libye → Tchad → République centrafricaine → RD Congo. Hirondelle rustique : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Sénégal. Cigogne noire : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Mali → Burkina Faso → Togo. Écris le numéro du trajet sur la carte.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "migrations"
@@ -1624,7 +1633,7 @@
    "type": "qcm",
    "enonce": "Photo n°1 : un terrain sec, rocailleux, avec très peu de végétation. Quel milieu « naturel » représente-t-elle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
    "documents": [
     "paysages"
@@ -1647,7 +1656,7 @@
    "type": "grille",
    "enonce": "Chaque photographie est-elle prise au sol ou vue du ciel ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "paysages"
@@ -1674,7 +1683,7 @@
    "type": "trous",
    "enonce": "Écris le numéro de la photographie dont le paysage est surtout caractérisé par…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "paysages"
@@ -1685,7 +1694,8 @@
      "2"
     ],
     [
-     "1"
+     "1",
+     "4"
     ]
    ],
    "explication": "Photo 2 : une forêt. Photo 1 : un sol presque nu."
@@ -1698,7 +1708,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux caractéristiques dominantes du paysage de la photo n°4 (une grand-place de ville).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "paysages"
@@ -1725,7 +1735,7 @@
    "type": "grille",
    "enonce": "La forêt est un milieu à la végétation abondante. Est-ce un atout ou une contrainte pour l'Humain ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
    "lignes": [
     "Elle rend possible la préservation de nombreuses espèces animales et végétales.",
@@ -1749,7 +1759,7 @@
    "type": "grille",
    "enonce": "Observe les photos A (un village), B (une grande ville) et C (des champs). Quelle photo correspond à chaque affirmation ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "documents": [
     "espace"
@@ -1779,7 +1789,7 @@
    "type": "qcm",
    "enonce": "47 × 9,9 donne un nombre…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "plus petit que 470",
@@ -1797,7 +1807,7 @@
    "type": "trous",
    "enonce": "Complète les opérations pour obtenir 2 400, puis 24, puis 2,4.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "texte": "2 400 = 4 × {1} = {2} × 8 = {3} + 600 = {4} : 20  ·  24 = 4 × {5} = {6} × 8 = {7} + 6 = {8} : 20  ·  2,4 = 4 × {9} = {10} × 8 = {11} + 0,6 = {12} : 20",
    "reponse": [
@@ -1849,8 +1859,8 @@
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
    "enonce": "Coche les deux décompositions qui donnent le même résultat que 15 × 45.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "choix": [
     "(5 × 45) + (5 × 45)",
@@ -1872,8 +1882,8 @@
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
    "enonce": "Coche les deux décompositions qui donnent le même résultat que 880 : 20.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "choix": [
     "(800 : 20) + (80 : 20)",
@@ -1896,7 +1906,7 @@
    "type": "qcm",
    "enonce": "Quelle opération permet de vérifier 886 432 : 4 = 221 608 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "choix": [
     "886 432 − 221 608",
@@ -1915,7 +1925,7 @@
    "type": "trous",
    "enonce": "Complète les suites.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-suites",
    "texte": "840 → +70 → {1} → +70 → {2} → +70 → {3}  ·  1 080 → +90 → {4} → +90 → {5} → +90 → {6}",
    "reponse": [
@@ -1952,7 +1962,7 @@
    "type": "trous",
    "enonce": "Arbre de décomposition : 15 000 = 7 500 + 7 500 ; 7 500 = 3 750 + 3 750 ; 3 750 = 1 250 + 1 250 + 1 250.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "15 000 = {1} × 3 750  ·  15 000 = (6 × 1 250) + {2}",
    "reponse": [
@@ -1961,7 +1971,13 @@
     ],
     [
      "7500",
-     "7 500"
+     "7 500",
+     "3750 + 3750",
+     "3 750 + 3 750",
+     "6 × 1250",
+     "6 × 1 250",
+     "6 x 1250",
+     "6 x 1 250"
     ]
    ],
    "explication": "15 000 contient 4 fois 3 750. 6 × 1 250 = 7 500, il manque 7 500."
@@ -1974,7 +1990,7 @@
    "type": "qcm",
    "enonce": "Quelle opération a un résultat estimé le plus proche de 500 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "1,5 × 493",
@@ -1993,7 +2009,7 @@
    "type": "trous",
    "enonce": "Complète les opérations.",
    "points": 6,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "9 × 67,2 = ({1} × 67,2) − 67,2  ·  4 × 50 × 3 = {2} × 200  ·  760 : 0,1 = 760 × {3}  ·  6 498 − 379 = 6 500 − {4}  ·  856 + 1 397 = 860 + {5}  ·  2,88 + 25,73 + 14,12 + 7,27 = 17 + {6}",
    "reponse": [
@@ -2007,14 +2023,20 @@
      "10"
     ],
     [
-     "381"
+     "381",
+     "379 + 2"
     ],
     [
      "1393",
-     "1 393"
+     "1 393",
+     "1397 − 4",
+     "1 397 − 4",
+     "1397 - 4",
+     "1 397 - 4"
     ],
     [
-     "33"
+     "33",
+     "25,73 + 7,27"
     ]
    ],
    "explication": "9 fois = 10 fois − 1 fois. 4 × 50 = 200. Diviser par 0,1 = multiplier par 10. On ajoute 2 aux deux termes d'une soustraction. On déplace 4 d'un terme à l'autre. 2,88 + 14,12 = 17 et 25,73 + 7,27 = 33."
@@ -2027,7 +2049,7 @@
    "type": "qcm",
    "enonce": "25/10, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
     "2,05",
@@ -2046,7 +2068,7 @@
    "type": "qcm",
    "enonce": "32/16, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
     "32,16",
@@ -2065,7 +2087,7 @@
    "type": "qcm",
    "enonce": "14,65, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
     "1 465/10",
@@ -2083,7 +2105,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les trois opérations qui donnent le même résultat que 12,5 × 48.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "choix": [
     "25 × 24",
@@ -2108,21 +2130,27 @@
    "type": "trous",
    "enonce": "Complète.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "texte": "1 = 10 × {1} = 2 × {2}  ·  10 = 0,2 × {3} = 4 × {4}",
    "reponse": [
     [
-     "0,1"
+     "0,1",
+     "1/10"
     ],
     [
-     "0,5"
+     "0,5",
+     "1/2",
+     "5/10"
     ],
     [
      "50"
     ],
     [
-     "2,5"
+     "2,5",
+     "5/2",
+     "25/10",
+     "2 et demi"
     ]
    ],
    "explication": "10 × 0,1 = 1 ; 2 × 0,5 = 1 ; 0,2 × 50 = 10 ; 4 × 2,5 = 10."
@@ -2146,7 +2174,7 @@
    "type": "qcm",
    "enonce": "12 × 8, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "choix": [
     "12 × 2 × 2",
@@ -2164,7 +2192,7 @@
    "type": "qcm",
    "enonce": "3 600 : 40, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "choix": [
     "3 600 : 10 × 4",
@@ -2193,7 +2221,7 @@
    "type": "qcm_multi",
    "enonce": "Coche tous les multiples de 8 compris entre 1 et 37.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
    "choix": [
     "8",
@@ -2221,7 +2249,7 @@
    "type": "texte_court",
    "enonce": "Écris un nombre impair qui est diviseur de 18.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
    "reponse": [
     "1",
@@ -2249,7 +2277,7 @@
    "type": "grille",
    "enonce": "Complète par le signe qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "lignes": [
     "5/4 … 1",
@@ -2276,7 +2304,7 @@
    "type": "trous",
    "enonce": "Place une virgule dans le nombre 2 4 5 6 8 1 pour que…",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "le nombre contienne 245 unités entières : {1}  ·  le « 2 » occupe le rang des dizaines de mille : {2}  ·  le « 8 » occupe le rang des centièmes : {3}",
    "reponse": [
@@ -2288,11 +2316,10 @@
      "24 568,1"
     ],
     [
-     "2456,81",
-     "2 456,81"
+     "245,681"
     ]
    ],
-   "explication": "245,681 ; 24 568,1 (2 dizaines de mille) ; 2 456,81 (8 centièmes)."
+   "explication": "a) 245 unités entières : 245,681. b) Le 2 aux dizaines de mille : 24 568,1. c) Le 8 aux centièmes : 245,681 (6 dixièmes, 8 centièmes, 1 millième)."
   },
   {
    "id": "ceb-2024-l7-q6",
@@ -2302,7 +2329,7 @@
    "type": "numerique",
    "enonce": "7 adultes et 16 enfants viennent au gouter. On prévoit 4 verres par enfant et 3 verres par adulte. Une bouteille de jus remplit 6 verres. Combien de bouteilles faut-il acheter au minimum ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "unite": "bouteilles",
    "reponse": 15,
@@ -2316,7 +2343,7 @@
    "type": "trous",
    "enonce": "Écris ces nombres en chiffres.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "Quatre millions sept-cent-soixante-neuf-mille-trois-cents : {1}  ·  Sept millions quatre-vingt-mille-vingt-quatre : {2}  ·  Cinq-mille-septante-trois unités douze millièmes : {3}",
    "reponse": [
@@ -2343,7 +2370,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les deux nombres équivalents.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
     "septante-cinq dixièmes",
@@ -2367,7 +2394,7 @@
    "type": "qcm",
    "enonce": "Dans le nombre 721 546,03, le « 2 » représente le rang des…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "choix": [
     "dizaines",
@@ -2387,19 +2414,35 @@
    "type": "trous",
    "enonce": "Exemple : 9 300 000 s'écrit aussi 9,3 millions et se dit « 9 millions 300 mille ». Complète.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
-   "texte": "6,08 millions s'écrit en unités {1}.  ·  33 003 000 s'écrit {2} millions.",
+   "texte": "6,08 millions\ns'écrit en unités : {1}\nse dit : {2}\n\n33 003 000\ns'écrit en millions : {3}\nse dit : {4}",
    "reponse": [
     [
      "6080000",
      "6 080 000"
     ],
     [
+     "6 millions 80 mille",
+     "6 millions 80 000",
+     "six millions quatre-vingt mille",
+     "six millions quatre-vingts mille",
+     "6 millions quatre-vingt mille",
+     "six millions 80 mille"
+    ],
+    [
      "33,003"
+    ],
+    [
+     "33 millions 3 mille",
+     "33 millions 3 000",
+     "trente-trois millions trois mille",
+     "trente trois millions trois mille",
+     "33 millions trois mille"
     ]
    ],
-   "explication": "6,08 millions = 6 080 000. 33 003 000 = 33,003 millions (33 millions 3 mille)."
+   "explication": "6,08 millions = 6 080 000. 33 003 000 = 33,003 millions (33 millions 3 mille).",
+   "souple": true
   },
   {
    "id": "ceb-2024-l7-q11",
@@ -2420,7 +2463,7 @@
    "type": "numerique",
    "enonce": "Un chocolatier a produit autant de pralines de chacun de ces 6 gouts : praliné, fraise, caramel, vanille, lait, moka. En tout, 1 560 pralines. Combien de pralines à la fraise ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "reponse": 260,
    "explication": "1 560 : 6 = 260."
@@ -2433,7 +2476,7 @@
    "type": "qcm",
    "enonce": "L'école a acheté 18 boites de 5 paquets de feuilles. Les 2 classes maternelles reçoivent 3 paquets chacune. Le reste est partagé entre les 6 classes primaires. Quelle résolution convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
     "18 × 5 = 90 ; 90 − 2 = 88 ; 88 : 8 = 11",
@@ -2452,7 +2495,7 @@
    "type": "trous",
    "enonce": "Complète le nombre 2 3 7 _ par un chiffre.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-divisibilite",
    "texte": "multiple de 2 mais pas de 5 : 237{1}  ·  multiple de 5 mais pas de 2 : 237{2}  ·  ni multiple de 2 ni de 5 : 237{3}",
    "reponse": [
@@ -2482,7 +2525,7 @@
    "type": "grille",
    "enonce": "Place chaque nombre dans la bonne colonne.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "lignes": [
     "83,98",
@@ -2511,7 +2554,7 @@
    "type": "trous",
    "enonce": "Le texte « À propos du chocolat » occupe les pages 3 à 7 du portfolio. Quelle page présente…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "choco-1",
@@ -2539,7 +2582,7 @@
    "type": "grille",
    "enonce": "Dans quelle partie du texte se trouvent ces informations ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "choco-1",
@@ -2575,7 +2618,7 @@
    "type": "ouverte",
    "enonce": "Comment les cabosses sont-elles récoltées ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-2"
    ],
@@ -2589,7 +2632,7 @@
    "type": "ouverte",
    "enonce": "En quoi consiste la phase de fermentation des fèves de cacao ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-2"
    ],
@@ -2603,7 +2646,7 @@
    "type": "grille",
    "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "choco-1",
@@ -2635,7 +2678,7 @@
    "type": "trous",
    "enonce": "Réponds en te référant au texte.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-1",
     "choco-2",
@@ -2649,18 +2692,20 @@
      "l'équateur",
      "equateur",
      "l'equateur",
-     "équateur"
+     "équateur",
+     "pays au climat chaud et humide",
+     "des pays proches de l'équateur"
     ],
     [
      "sucrée et légèrement acide",
      "sucrée et acide",
-     "sucree et legerement acide",
-     "sucrée",
-     "acidulée"
+     "sucree et legerement acide"
     ],
     [
      "fermentation",
-     "phase de fermentation"
+     "phase de fermentation",
+     "la première étape",
+     "première étape"
     ],
     [
      "séchage",
@@ -2668,7 +2713,7 @@
      "séchage au soleil"
     ]
    ],
-   "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête."
+   "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête. La pulpe est à la fois sucrée ET légèrement acide : une seule des deux saveurs ne suffit pas."
   },
   {
    "id": "ceb-2024-l8-q7",
@@ -2678,7 +2723,7 @@
    "type": "texte_court",
    "enonce": "D'après le texte, quelle étape se situe entre le « séchage des fèves au soleil » et l'« expédition des fèves dans les chocolateries » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-2"
    ],
@@ -2701,7 +2746,7 @@
    "type": "ouverte",
    "enonce": "Cite un bénéfice que Didier retire de ses « voyages cacao ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-2"
    ],
@@ -2715,7 +2760,7 @@
    "type": "qcm",
    "enonce": "La consommation de chocolat doit rester « modérée ». Cela signifie qu'elle doit rester…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-synonymes",
    "choix": [
     "régulière",
@@ -2734,7 +2779,7 @@
    "type": "ouverte",
    "enonce": "Écris une raison pour laquelle la culture intensive du cacaoyer a des effets négatifs sur l'environnement.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-4"
    ],
@@ -2745,21 +2790,16 @@
    "livret": 8,
    "numero": "11",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Manon dit : « Le chocolat, c'est bon pour la santé ! » Qu'en penses-tu d'après le texte ?",
+   "type": "ouverte",
+   "enonce": "Manon dit : « Le chocolat, c'est bon pour la santé ! » Qu'en penses-tu d'après le texte ? Coche « Manon a raison », « Manon a tort » ou « Manon a raison et tort à la fois », puis justifie à l'aide du texte.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "choco-4"
    ],
-   "choix": [
-    "Manon a raison.",
-    "Manon a tort.",
-    "Manon a raison et tort à la fois."
-   ],
-   "reponse": 2,
-   "explication": "Le chocolat donne de l'énergie et diminue le stress, mais sa consommation doit rester modérée."
+   "explication": "Le chocolat donne de l'énergie et diminue le stress, mais sa consommation doit rester modérée.",
+   "reponseModele": "Meilleure réponse : Manon a raison et tort à la fois. Le chocolat apporte des bienfaits (par exemple pour le moral, le cœur ou l'énergie), mais sa consommation doit rester modérée. On accepte aussi « raison » justifié par un bienfait, ou « tort » justifié par le fait qu'il n'est pas bon d'en manger trop. Sans justification, pas de point."
   },
   {
    "id": "ceb-2024-l8-q12",
@@ -2769,7 +2809,7 @@
    "type": "qcm",
    "enonce": "Quelle caractéristique permet de dire avec certitude que « Truffes au chocolat » est une recette ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "choco-5"
@@ -2792,7 +2832,7 @@
    "type": "grille",
    "enonce": "Page 7 : quelle est l'intention principale des auteurs ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "choco-5"
@@ -2832,7 +2872,7 @@
    "type": "qcm",
    "enonce": "Pourquoi conseille-t-on de conserver les truffes au chocolat dans un récipient fermé ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "choco-5"
@@ -2854,7 +2894,7 @@
    "type": "ouverte",
    "enonce": "D'après le texte, écris un bienfait de la consommation de chocolat.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "choco-4"
    ],
@@ -2868,7 +2908,7 @@
    "type": "qcm",
    "enonce": "« La cabosse est mure environ quatre à cinq mois après la floraison. » Dans quelle partie pourrais-tu ajouter cette information ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "choco-1",
@@ -2885,7 +2925,7 @@
     "Envie de chocolat ?"
    ],
    "reponse": 0,
-   "explication": "La cabosse, fruit du cacaoyer, est décrite dans « D'où vient le chocolat ? »."
+   "explication": "La cabosse, fruit du cacaoyer, est décrite dans « D'où vient le chocolat ? ». Le corrigé officiel accepte aussi « Comment fabrique-t-on le chocolat ? »."
   },
   {
    "id": "ceb-2024-l8-q18",
@@ -2895,16 +2935,16 @@
    "type": "texte_court",
    "enonce": "« Le cacaoyer est l'arbre qui produit les fruits à l'intérieur desquels se trouvent des graines appelées fèves de cacao. Celles-ci interviennent dans la fabrication du chocolat. » Recopie un mot ou groupe de mots qui désigne les « graines ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "reponse": [
     "fèves de cacao",
-    "fèves",
     "celles-ci",
     "les fèves de cacao",
-    "feves de cacao"
+    "feves de cacao",
+    "se"
    ],
-   "explication": "Les graines sont appelées « fèves de cacao », puis reprises par « celles-ci »."
+   "explication": "Les graines sont appelées « fèves de cacao », puis reprises par « celles-ci ». « fèves » seul ne suffit pas : il faut « fèves de cacao » (ou le pronom « celles-ci », « se »)."
   },
   {
    "id": "ceb-2024-l8-q19",
@@ -2914,7 +2954,7 @@
    "type": "qcm",
    "enonce": "« … si l'on veut limiter les effets négatifs d'une production intensive du chocolat… » Quel sens a « effets » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
     "Vêtements et objets personnels.",
@@ -2933,7 +2973,7 @@
    "type": "qcm",
    "enonce": "Dans quelle phrase « production » a-t-il le même sens que dans « une production intensive du chocolat » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
     "Le frottement entraine la production de la chaleur.",
@@ -2952,31 +2992,32 @@
    "type": "trous",
    "enonce": "Écris un mot de la même famille (exemple : producteurs → production, produit, produire).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "texte": "dégustation → {1}  ·  tranchant → {2}",
    "reponse": [
     [
      "déguster",
      "dégustateur",
-     "dégustatrice",
-     "degustation",
      "deguster",
      "gout",
      "goût",
      "gouter",
-     "goûter"
+     "goûter",
+     "dégout",
+     "dégoût",
+     "dégoutant",
+     "dégoûtant"
     ],
     [
      "trancher",
      "tranche",
-     "tranchée",
-     "tranchage",
-     "tranches",
-     "tranchoir"
+     "tranchoir",
+     "trancheur",
+     "trancheuse"
     ]
    ],
-   "explication": "Dégustation → déguster, dégustateur. Tranchant → trancher, une tranche."
+   "explication": "Dégustation → déguster, dégustateur. Tranchant → trancher, une tranche. On n'accepte ni le mot donné, ni le même mot au féminin ou au pluriel."
   },
   {
    "id": "ceb-2024-l9-q1",
@@ -2986,7 +3027,7 @@
    "type": "qcm",
    "enonce": "Récit « Avec le cœur ». Quel résumé correspond le mieux à cette histoire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1",
@@ -3010,7 +3051,7 @@
    "type": "qcm",
    "enonce": "« Mes enfants, j'avais pensé vous donner un texte à apprendre et à déclamer devant toute la classe mais j'ai changé d'avis… » Nico s'était tout de suite senti rassuré, car…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1"
@@ -3032,7 +3073,7 @@
    "type": "qcm",
    "enonce": "Dans quel état est Nico quand Madame Lampion annonce qu'il faut écrire un poème ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1"
@@ -3054,7 +3095,7 @@
    "type": "ouverte",
    "enonce": "« Le lundi matin, des cernes sous les yeux, Nico cherchait son amie Nour du regard. » Pourquoi Nico a-t-il des cernes ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-1"
    ],
@@ -3068,7 +3109,7 @@
    "type": "qcm",
    "enonce": "Pourquoi Nour demande-t-elle à Nico de lui raconter son dernier cauchemar ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1"
@@ -3085,12 +3126,12 @@
   {
    "id": "ceb-2024-l9-q6",
    "livret": 9,
-   "numero": "6",
+   "numero": "7",
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Lola dit : « Nour et Nico sont simplement amis. » Solan répond : « Non ! Nico est amoureux de Nour ! » Qui a raison ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1",
@@ -3102,17 +3143,17 @@
     "Solan"
    ],
    "reponse": 1,
-   "explication": "« Voilà comment Nour et lui étaient devenus amis. À vrai dire, peut-être même un peu plus que ça… Du moins pour Nico. »"
+   "explication": "« Voilà comment Nour et lui étaient devenus amis. À vrai dire, peut-être même un peu plus que ça… Du moins pour Nico. » Dans l'épreuve, il fallait justifier par un élément du texte (« peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant »)."
   },
   {
    "id": "ceb-2024-l9-q7",
    "livret": 9,
-   "numero": "7",
+   "numero": "6",
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Écris un élément du texte qui prouve que Nour aime rédiger.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-1"
    ],
@@ -3137,7 +3178,7 @@
    "type": "ouverte",
    "enonce": "La première fois, Nico demande à Nour : « Ça parle de vaches, ton bouquin ? » Qu'est-ce qui l'amène à poser cette question ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-2"
    ],
@@ -3151,7 +3192,7 @@
    "type": "ouverte",
    "enonce": "« Son rire était le plus beau du monde aux oreilles de Nico, mais à cet instant, il lui faisait juste saigner le cœur. » Pourquoi ce rire le rend-il triste ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-2"
    ],
@@ -3165,7 +3206,7 @@
    "type": "qcm",
    "enonce": "« Jamais Nico n'aurait avoué à Nour qu'il ne parvenait pas à écrire parce que, en vérité, c'était à cause d'elle. » C'est à cause de Nour, car…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-2"
@@ -3187,7 +3228,7 @@
    "type": "ouverte",
    "enonce": "Pourquoi Nico souhaite-t-il que son poème soit magnifique ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-2"
    ],
@@ -3201,7 +3242,7 @@
    "type": "texte_court",
    "enonce": "« Il en plaça la pointe sur l'angoissante immensité de la page blanche de son cahier. On aurait dit un désert de neige occupé à le narguer… » Recopie l'expression à laquelle l'auteur compare la page blanche.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-2"
@@ -3221,7 +3262,7 @@
    "type": "grille",
    "enonce": "Le texte permet-il de dire que c'est vrai ou faux ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1",
@@ -3255,7 +3296,7 @@
    "type": "ordre",
    "enonce": "Remets ces actions de Nour dans l'ordre chronologique.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-1",
@@ -3284,7 +3325,7 @@
    "type": "ouverte",
    "enonce": "Le texte a pour titre « Avec le cœur ». Explique ce choix.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "coeur-1",
     "coeur-2",
@@ -3300,7 +3341,7 @@
    "type": "qcm",
    "enonce": "Quelle phrase correspond le mieux à l'histoire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "choix": [
     "Au fil des jours et des semaines, l'amour rend aveugle.",
@@ -3319,7 +3360,7 @@
    "type": "qcm",
    "enonce": "Quelle est l'intention principale de l'auteur ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "choix": [
     "Informer le lecteur sur la manière de rédiger une poésie.",
@@ -3338,7 +3379,7 @@
    "type": "texte_court",
    "enonce": "« Nico s'était tout de suite senti rassuré. Puis elle avait poursuivi, enroulant son collier autour de son doigt… » Quel mot sert à relier les deux phrases ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "reponse": [
     "puis"
@@ -3352,8 +3393,8 @@
    "domaine": "fr.lire",
    "type": "grille",
    "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée.",
-   "points": 2,
-   "corrigeVerifie": false,
+   "points": 1,
+   "corrigeVerifie": true,
    "fiche": "fr-accords",
    "documents": [
     "coeur-2"
@@ -3380,7 +3421,7 @@
    "type": "texte_court",
    "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée. Recopie le mot qui prouve qu'il parle à une fille.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
    "reponse": [
     "provoquée"
@@ -3396,7 +3437,7 @@
    "type": "qcm",
    "enonce": "« J'ai beaucoup aimé ton texte. » Qui parle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "coeur-3"
@@ -3415,25 +3456,26 @@
    "livret": 9,
    "numero": "22",
    "domaine": "fr.grammaire",
-   "type": "qcm_multi",
-   "enonce": "« Cela ne faisait que quelques mois qu'il la connaissait. Nour était arrivée en cours d'année dans leur classe, suite à un déménagement. La première fois qu'il lui avait adressé la parole, elle se tenait assise… » Coche les mots (autres que « elle ») qui désignent Nour.",
+   "type": "trous",
+   "enonce": "« Cela ne faisait que quelques mois qu'il la connaissait. Nour était arrivée en cours d'année dans leur classe, suite à un déménagement. La première fois qu'il lui avait adressé la parole, elle se tenait assise contre le même mur décrépi… » Le pronom « elle » désigne Nour. Recopie deux autres mots (pas « Nour ») qui désignent Nour.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
-   "choix": [
-    "il",
-    "la",
-    "Nour",
-    "leur",
-    "lui",
-    "déménagement"
-   ],
    "reponse": [
-    1,
-    2,
-    4
+    [
+     "la",
+     "lui",
+     "se"
+    ],
+    [
+     "la",
+     "lui",
+     "se"
+    ]
    ],
-   "explication": "« la » (qu'il la connaissait), « Nour » et « lui » (il lui avait adressé la parole) désignent Nour. « il » désigne Nico."
+   "explication": "« la » (il la connaissait), « lui » (il lui avait adressé la parole) et « se » (elle se tenait) désignent Nour.",
+   "souple": true,
+   "texte": "1er mot : {1}\n2e mot : {2}"
   },
   {
    "id": "ceb-2024-l9-q23",
@@ -3443,7 +3485,7 @@
    "type": "trous",
    "enonce": "« Lorsqu'il se réveillerait le lendemain, son devoir ne serait pas fait et il se ridiculiserait devant Nour. Pour couronner le tout, voilà que le chien de son cauchemar avait décidé de revenir rôder dans sa tête endormie… » Écris la classe des mots (nom, pronom, verbe, déterminant, adjectif, mot de liaison).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
    "texte": "devoir : {1}  ·  et : {2}  ·  sa : {3}",
    "reponse": [
@@ -3472,7 +3514,7 @@
    "type": "qcm",
    "enonce": "« J'ai mes raisons. » a la structure : Sujet – Verbe – Complément direct du verbe. Quelle phrase a la même structure ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sujet-complements",
    "choix": [
     "Aucun mot ne venait.",
@@ -3489,14 +3531,12 @@
    "numero": "25",
    "domaine": "fr.conjugaison",
    "type": "grille",
-   "enonce": "« Ça, je l'avais terminé vendredi soir ! Là, j'écrivais juste pour le plaisir… Raconte-moi ton dernier cauchemar, ça me donnera peut-être des idées. — Ça m'étonnerait. » À quel temps sont ces verbes ?",
+   "enonce": "« — Ouh là ! Non ! Ça, je l'avais terminé vendredi soir ! Là, j'écrivais juste pour le plaisir… — Ça m'étonnerait, c'est un rêve complètement stupide. » À quel temps sont les verbes « avais terminé » et « étonnerait » ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "lignes": [
     "avais terminé",
-    "écrivais",
-    "donnera",
     "m'étonnerait"
    ],
    "colonnes": [
@@ -3507,8 +3547,6 @@
    ],
    "reponse": [
     1,
-    0,
-    2,
     3
    ],
    "explication": "avais terminé : plus-que-parfait (auxiliaire à l'imparfait). écrivais : imparfait. donnera : futur simple. étonnerait : conditionnel présent."
@@ -3521,7 +3559,7 @@
    "type": "qcm",
    "enonce": "« Parlez de ce que vous voulez, pourvu que ça vienne du cœur. » Par quoi peut-on remplacer « pourvu que » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "choix": [
     "afin que",
@@ -3540,7 +3578,7 @@
    "type": "qcm",
    "enonce": "« Celui-ci m'a surtout l'air un peu dans la lune, mais avec un bon fond tout de même. » Quel sens a le mot « fond » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
     "La partie la plus basse de quelque chose.",
@@ -3581,7 +3619,7 @@
    "type": "qcm_multi",
    "enonce": "Coche les noms des sens de l'être humain.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "choix": [
     "Odorat",
@@ -3605,7 +3643,7 @@
    "type": "ordre",
    "enonce": "Expérience sur les effets de la chaleur sur l'air. Remets les étapes dans l'ordre.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-air",
    "documents": [
     "experience-air"
@@ -3636,7 +3674,7 @@
    "type": "trous",
    "enonce": "Écris le nom de ces étapes du cycle de l'eau (ruissèlement, transpiration, condensation, évaporation, solidification, congélation, précipitations).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "texte": "L'eau de la fonte des glaces forme des cours d'eau : {1}.  ·  L'eau des nuages tombe sous forme de pluie, de neige ou de grêle : {2}.  ·  La vapeur d'eau se transforme en gouttelettes pour former des nuages : {3}.",
    "reponse": [
@@ -3704,7 +3742,7 @@
    "type": "grille",
    "enonce": "Un des rôles des os est de protéger certains organes. Par quoi sont-ils protégés ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "lignes": [
     "La moelle épinière",
@@ -3752,7 +3790,7 @@
    "type": "qcm",
    "enonce": "Comment s'appelle le passage de l'eau de l'état liquide à l'état solide ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "choix": [
     "Solidification",
@@ -3770,7 +3808,7 @@
    "type": "grille",
    "enonce": "À quel état est l'aluminium sur chaque photo ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "lignes": [
     "Photo 1 : des brindilles d'aluminium placées au-dessus d'une flamme",
@@ -3811,7 +3849,7 @@
    "type": "grille",
    "enonce": "Bulletin : mardi 25/06 vent de 4 km/h ; jeudi 27/06 vent de sud-ouest ; vendredi 28/06 précipitations de 15 mm. Quel instrument a servi ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "meteo"
@@ -3843,7 +3881,7 @@
    "type": "trous",
    "enonce": "Complète à l'aide du bulletin météorologique.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "meteo"
@@ -3867,7 +3905,7 @@
    "type": "qcm",
    "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Les besoins énergétiques sont…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "documents": [
     "sante"
@@ -3889,7 +3927,7 @@
    "type": "qcm",
    "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "documents": [
     "sante"
@@ -3911,7 +3949,7 @@
    "type": "qcm",
    "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "documents": [
     "sante"
@@ -3933,7 +3971,7 @@
    "type": "qcm_multi",
    "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Quelles sont les deux variables qui influencent les besoins énergétiques ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "documents": [
     "sante"
@@ -3970,7 +4008,7 @@
    "type": "qcm",
    "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 60 minutes, quel sport fait dépenser le plus de kcal ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "choix": [
     "Le tennis",
@@ -3989,7 +4027,7 @@
    "type": "qcm",
    "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 15 minutes d'activité, la dépense énergétique…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "choix": [
     "est plus importante en yoga qu'en équitation.",
@@ -4008,7 +4046,7 @@
    "type": "trous",
    "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "texte": "Après 60 min, le sport qui fait dépenser autant que le tennis : {1}.  ·  60 min de crawl font dépenser {2} kcal.",
    "reponse": [
@@ -4017,14 +4055,13 @@
      "natation brasse",
      "la brasse",
      "brasse",
-     "natation (brasse)",
-     "la natation"
+     "natation (brasse)"
     ],
     [
      "680"
     ]
    ],
-   "explication": "Tennis et brasse : 408 kcal chacun. Crawl : 680 kcal."
+   "explication": "Tennis et brasse : 408 kcal chacun. Crawl : 680 kcal. « La natation » seul ne suffit pas : il faut préciser la brasse."
   },
   {
    "id": "ceb-2024-l10-q11a",
@@ -4048,7 +4085,7 @@
    "type": "grille",
    "enonce": "D'après le tableau des dents, quel est le régime alimentaire de ces animaux ? (Le furet a des canines longues, pointues et recourbées et des molaires en forme de scie ; le cerf a des incisives larges, plates et en forme de bêche et des molaires aplaties.)",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-regimes",
    "documents": [
     "dents"
@@ -4066,7 +4103,7 @@
     0,
     1
    ],
-   "explication": "Canines longues et recourbées : carnivore. Incisives en bêche et molaires plates, sans canines : herbivore."
+   "explication": "Canines longues et recourbées : carnivore. Incisives en bêche et molaires plates, sans canines : herbivore. (Dans l'épreuve, il fallait aussi classer le hérisson : omnivore.)"
   },
   {
    "id": "ceb-2024-l10-q12a",
@@ -4076,7 +4113,7 @@
    "type": "qcm_multi",
    "enonce": "Pour comparer les deux expériences sur l'eau du vase, coche les trois conditions à respecter.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "fleurs"
@@ -4104,7 +4141,7 @@
    "type": "ouverte",
    "enonce": "Hypothèses : l'eau du vase s'évapore / l'eau est absorbée par les fleurs. Quelle conclusion tirent les élèves des deux expériences ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "fleurs"
@@ -4119,7 +4156,7 @@
    "type": "ouverte",
    "enonce": "Expérience 2 : une bouteille en verre remplie d'eau passe 12 h au congélateur. Expérience 3 : un litre d'eau bout dans une casserole. Écris une question que les élèves auraient pu se poser avant chaque expérience.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
     "liquides"
@@ -4134,7 +4171,7 @@
    "type": "qcm",
    "enonce": "Deux montages : dans le premier, la lampe LED est reliée aux batteries par des câbles ; dans le second, le circuit passe par un verre d'eau salée. La lampe s'allume dans les deux cas. Quelle question les élèves se posaient-ils ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "electricite"
@@ -4157,9 +4194,10 @@
    "type": "ouverte",
    "enonce": "La lampe reste éteinte avec une cuillère en plastique, en bois ou en porcelaine ; elle s'allume avec une cuillère en fer, en argent ou en étain. Quelle conclusion ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "reponseModele": "Les métaux (fer, argent, étain) sont conducteurs d'électricité ; le plastique, le bois et la porcelaine sont des isolants."
   }
- ]
+ ],
+ "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2024), comparé question par question le 21/10/2026."
 }
