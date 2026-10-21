@@ -1366,18 +1366,52 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2016-l4-q4",
+   "id": "ceb-2016-l4-q4a",
    "livret": 4,
-   "numero": "4",
+   "numero": "4a",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Compare les documents A et B.",
-   "points": 4,
-   "corrigeVerifie": false,
+   "enonce": "En comparant les documents A et B : écris une différence qui concerne la manière de cultiver le sol.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-modes-vie",
    "documents": [
     "modevie"
    ],
-   "numerisable": false
+   "reponseModele": "Traction animale (bœuf) sur le document A / machines motorisées (tracteur) sur le document B. Un seul des deux éléments suffit.",
+   "explication": "Autrefois on labourait avec des bœufs ; aujourd'hui on utilise un tracteur."
+  },
+  {
+   "id": "ceb-2016-l4-q4b",
+   "livret": 4,
+   "numero": "4b",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Écris un élément commun à ces deux paysages, caractéristique du mode de vie des gens.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "modevie"
+   ],
+   "reponseModele": "Une maison / un château où l'on habite ; des cultures / des champs ; « les gens travaillent (dans les champs) ». Sont aussi acceptés : vivre ou habiter dans un château, les gens font le même métier.",
+   "explication": "Dans les deux documents, des gens habitent un château et travaillent la terre."
+  },
+  {
+   "id": "ceb-2016-l4-q4c",
+   "livret": 4,
+   "numero": "4c",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Écris deux éléments du paysage du document B qui n'apparaissent pas sur le document A.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "modevie"
+   ],
+   "reponseModele": "Deux éléments parmi : tracteur, poteau électrique, antenne de télévision, forêts, arbres. « Maison » est accepté si elle n'a pas été utilisée en 4b. (1 point par élément.)",
+   "explication": "Le document B est récent : on y voit des objets modernes comme un tracteur, un poteau électrique ou une antenne."
   },
   {
    "id": "ceb-2016-l4-q5a",
@@ -1705,23 +1739,28 @@
    "numero": "6",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Lave-linge : L 60 × l 50 × H 85 cm ; capacité 5 kg ; eau 48 l par cycle ; 550 €.",
+   "enonce": "Lave-linge : L 60 × l 50 × H 85 cm ; capacité 5 kg ; eau 48 l par cycle ; 550 €. Écris la mesure ET son unité.",
    "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "Hauteur : {1} cm  ·  Quantité maximale de linge : {2} kg  ·  Eau consommée par lavage : {3} l",
+   "texte": "Hauteur du lave-linge : {1}  ·  Quantité maximale de linge : {2}  ·  Eau consommée par lavage complet : {3}",
    "reponse": [
     [
-     "85"
+     "85 cm",
+     "85cm"
     ],
     [
-     "5"
+     "5 kg",
+     "5kg"
     ],
     [
-     "48"
+     "48 litres",
+     "48 litre",
+     "48 l",
+     "48l"
     ]
    ],
-   "explication": "Lecture de la publicité."
+   "explication": "Lecture de la publicité : 85 cm ; 5 kg ; 48 litres. Il faut écrire la mesure et son unité."
   },
   {
    "id": "ceb-2016-l6-q8",
@@ -1795,29 +1834,38 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Attention aux unités.",
+   "enonce": "Complète le tableau en faisant bien attention aux unités de mesure. Écris la mesure ET son unité quand elle n'est pas déjà écrite.",
    "points": 2.5,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "18 sachets de 500 g : {1} kg  ·  60 km/h pendant 20 min : {2} km  ·  Verres de 25 cl dans 1,5 l : {3} verres  ·  Pâté dans une boite de 1/4 kg qui pèse 45 g vide : {4} g  ·  De 6 h 57 à 7 h 39 : {5} min",
+   "texte": "18 sachets de 500 g : ils pèsent en tout {1} kg  ·  60 km/h pendant 20 min : il parcourt {2}  ·  Verres de 25 cl avec une bouteille de 1,5 l : on remplit {3} verres  ·  Pâté dans une boite de 1/4 kg qui pèse 45 g vide : une masse de pâté de {4}  ·  De 6 h 57 à 7 h 39 : je vais attendre {5}",
    "reponse": [
     [
      "9"
     ],
     [
-     "20"
+     "20 km",
+     "20km",
+     "20 kilomètres"
     ],
     [
      "6"
     ],
     [
-     "205"
+     "205 g",
+     "205g",
+     "205 gr",
+     "205gr",
+     "205 grammes"
     ],
     [
-     "42"
+     "42 min",
+     "42min",
+     "42'",
+     "42 minutes"
     ]
    ],
-   "explication": "9 kg ; 20 km ; 6 verres ; 250 − 45 = 205 g ; 42 min."
+   "explication": "9 kg ; 20 km ; 6 verres ; 250 − 45 = 205 g ; 42 min. Sans l'unité (km, g, min), la réponse n'est pas complète."
   },
   {
    "id": "ceb-2016-l6-q18",
@@ -1973,68 +2021,123 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2016-l7-q1a",
+   "id": "ceb-2016-l7-q1-pic",
    "livret": 7,
-   "numero": "1a",
+   "numero": "1",
    "domaine": "sc.vivant",
-   "type": "grille",
-   "enonce": "Quel squelette ?",
-   "points": 2,
+   "type": "qcm_multi",
+   "enonce": "Classification des animaux : coche toutes les croix possibles pour le pic épeiche. (Exemple de l'épreuve : l'araignée = squelette externe + 8 pattes articulées.)",
+   "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "classif"
    ],
-   "lignes": [
-    "pic épeiche",
-    "chevreuil",
-    "écureuil",
-    "scarabée"
-   ],
-   "colonnes": [
+   "choix": [
     "Squelette interne d'os",
-    "Squelette externe"
-   ],
-   "reponse": [
-    0,
-    0,
-    0,
-    1
-   ],
-   "explication": "Oiseau et mammifères : os ; insecte : squelette externe."
-  },
-  {
-   "id": "ceb-2016-l7-q1b",
-   "livret": 7,
-   "numero": "1b",
-   "domaine": "sc.vivant",
-   "type": "grille",
-   "enonce": "Quels membres ?",
-   "points": 2,
-   "corrigeVerifie": true,
-   "fiche": "sc-classification",
-   "documents": [
-    "classif"
-   ],
-   "lignes": [
-    "pic épeiche",
-    "chevreuil",
-    "écureuil",
-    "scarabée"
-   ],
-   "colonnes": [
+    "Squelette externe",
     "4 pattes",
     "2 pattes et 2 ailes",
     "6 pattes articulées",
-    "8 pattes articulées"
+    "8 pattes articulées",
+    "Poils et mamelles",
+    "Plumes"
+   ],
+   "reponse": [
+    0,
+    3,
+    7
+   ],
+   "explication": "Le pic épeiche est un oiseau : squelette interne d'os, 2 pattes et 2 ailes, des plumes."
+  },
+  {
+   "id": "ceb-2016-l7-q1-chevreuil",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Classification des animaux : coche toutes les croix possibles pour le chevreuil. (Exemple de l'épreuve : l'araignée = squelette externe + 8 pattes articulées.)",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "choix": [
+    "Squelette interne d'os",
+    "Squelette externe",
+    "4 pattes",
+    "2 pattes et 2 ailes",
+    "6 pattes articulées",
+    "8 pattes articulées",
+    "Poils et mamelles",
+    "Plumes"
+   ],
+   "reponse": [
+    0,
+    2,
+    6
+   ],
+   "explication": "Le chevreuil est un mammifère : squelette interne d'os, 4 pattes, des poils et des mamelles."
+  },
+  {
+   "id": "ceb-2016-l7-q1-ecureuil",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Classification des animaux : coche toutes les croix possibles pour l'écureuil. (Exemple de l'épreuve : l'araignée = squelette externe + 8 pattes articulées.)",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "choix": [
+    "Squelette interne d'os",
+    "Squelette externe",
+    "4 pattes",
+    "2 pattes et 2 ailes",
+    "6 pattes articulées",
+    "8 pattes articulées",
+    "Poils et mamelles",
+    "Plumes"
+   ],
+   "reponse": [
+    0,
+    2,
+    6
+   ],
+   "explication": "L'écureuil est un mammifère : squelette interne d'os, 4 pattes, des poils et des mamelles."
+  },
+  {
+   "id": "ceb-2016-l7-q1-scarabee",
+   "livret": 7,
+   "numero": "1",
+   "domaine": "sc.vivant",
+   "type": "qcm_multi",
+   "enonce": "Classification des animaux : coche toutes les croix possibles pour le scarabée. (Exemple de l'épreuve : l'araignée = squelette externe + 8 pattes articulées.)",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "choix": [
+    "Squelette interne d'os",
+    "Squelette externe",
+    "4 pattes",
+    "2 pattes et 2 ailes",
+    "6 pattes articulées",
+    "8 pattes articulées",
+    "Poils et mamelles",
+    "Plumes"
    ],
    "reponse": [
     1,
-    0,
-    0,
-    2
+    4
    ],
-   "explication": "Le pic est un oiseau, le scarabée un insecte (6 pattes)."
+   "explication": "Le scarabée est un insecte : squelette externe, 6 pattes articulées."
   },
   {
    "id": "ceb-2016-l7-q2b",
@@ -2423,23 +2526,33 @@
    "livret": 7,
    "numero": "12a",
    "domaine": "sc.energie",
-   "type": "qcm",
-   "enonce": "La lampe baladeuse ne s'allume pas. Quelle proposition ne peut PAS être une cause de la panne ?",
-   "points": 1,
+   "type": "grille",
+   "enonce": "La lampe baladeuse ne s'allume pas. Pour chaque proposition, dis si elle peut être une cause de la panne.",
+   "points": 2.5,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "lampe"
    ],
-   "choix": [
+   "lignes": [
     "Un fil est mal attaché à l'intérieur de la fiche.",
     "L'ampoule ne fonctionne plus.",
-    "Les deux fils sont mal attachés dans le support.",
-    "Un fil est mal attaché dans le support.",
+    "Les deux fils sont mal attachés dans le support de l'ampoule.",
+    "Un fil est mal attaché dans le support de l'ampoule.",
     "Le cordon d'alimentation est trop long."
    ],
-   "reponse": 4,
-   "explication": "La longueur du cordon n'empêche pas le courant de passer."
+   "colonnes": [
+    "Cause possible",
+    "Pas une cause"
+   ],
+   "reponse": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "explication": "Une panne vient d'un fil mal attaché ou d'une ampoule hors d'usage. La longueur du cordon n'empêche pas le courant de passer."
   },
   {
    "id": "ceb-2016-l7-q13",
@@ -2503,17 +2616,61 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2016-l7-q8",
+   "id": "ceb-2016-l7-q8a",
    "livret": 7,
-   "numero": "8",
+   "numero": "8a",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Classe les thermomètres et lis les températures.",
-   "points": 3,
-   "corrigeVerifie": false,
+   "type": "grille",
+   "enonce": "Classe les thermomètres n° 2, n° 3, n° 4 et n° 5 dans le tableau à double entrée.",
+   "points": 4,
+   "corrigeVerifie": true,
    "documents": [
     "thermo"
    ],
+   "lignes": [
+    "Thermomètre n° 2",
+    "Thermomètre n° 3",
+    "Thermomètre n° 4",
+    "Thermomètre n° 5"
+   ],
+   "colonnes": [
+    "Affichage en °C et °F",
+    "Affichage en °C uniquement",
+    "Graduation à +110 °C"
+   ],
+   "reponse": [
+    0,
+    1,
+    1,
+    [
+     1,
+     2
+    ]
+   ],
+   "explication": "Le n° 2 affiche des °C et des °F. Les n° 3 et n° 4 affichent seulement des °C. Le n° 5 a une graduation qui monte jusqu'à +110 °C (il affiche aussi seulement des °C : les deux cases sont acceptées)."
+  },
+  {
+   "id": "ceb-2016-l7-q8b",
+   "livret": 7,
+   "numero": "8b",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Lis la température en degrés Celsius sur le thermomètre de gauche et colorie la hauteur atteinte par le liquide dans le thermomètre de droite.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "reponseModele": "La température lue est 19 °C : on colore jusqu'au trait de 19 °C (un trait uniquement à 19 °C est accepté).",
+   "numerisable": false
+  },
+  {
+   "id": "ceb-2016-l7-q8c",
+   "livret": 7,
+   "numero": "8c",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Quelle température indique le thermomètre de l'énoncé ? Écris-la en °C et en °F.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "reponseModele": "20 °C et 68 °F.",
    "numerisable": false
   },
   {
@@ -2960,33 +3117,6 @@
    "explication": "Multiples communs de 6 et 8 : 24, 48, 72."
   },
   {
-   "id": "ceb-2016-l8-q14",
-   "livret": 8,
-   "numero": "15",
-   "domaine": "ma.arithmetique",
-   "type": "grille",
-   "enonce": "Compare.",
-   "points": 1.5,
-   "corrigeVerifie": true,
-   "fiche": "ma-decimaux",
-   "lignes": [
-    "quarante-trois centièmes … quatre unités et trois dixièmes",
-    "un huitième … 0,125",
-    "1,20 … un vingtième"
-   ],
-   "colonnes": [
-    "<",
-    "=",
-    ">"
-   ],
-   "reponse": [
-    0,
-    1,
-    2
-   ],
-   "explication": "0,43 < 4,3 ; 1/8 = 0,125 ; 1/20 = 0,05."
-  },
-  {
    "id": "ceb-2016-l8-q15",
    "livret": 8,
    "numero": "14",
@@ -3015,6 +3145,37 @@
     1
    ],
    "explication": "778 dizaines = 7 780 = 20 × 389."
+  },
+  {
+   "id": "ceb-2016-l8-q14",
+   "livret": 8,
+   "numero": "15",
+   "domaine": "ma.arithmetique",
+   "type": "grille",
+   "enonce": "Compare : complète en indiquant <, = ou >.",
+   "points": 2.5,
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "lignes": [
+    "quarante-trois centièmes … quatre unités et trois dixièmes",
+    "753/100 … 75,3",
+    "un huitième … 0,125",
+    "2,5 … 1/4",
+    "1,20 … un vingtième"
+   ],
+   "colonnes": [
+    "<",
+    "=",
+    ">"
+   ],
+   "reponse": [
+    0,
+    0,
+    1,
+    2,
+    2
+   ],
+   "explication": "0,43 < 4,3 ; 753/100 = 7,53 < 75,3 ; 1/8 = 0,125 ; 2,5 > 1/4 (0,25) ; 1,20 > 1/20 (0,05)."
   },
   {
    "id": "ceb-2016-l8-q16",
