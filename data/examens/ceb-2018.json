@@ -609,21 +609,6 @@
    "reponseModele": "Il sentirait l'odeur humaine ; il serait délaissé par les siens (mis en quarantaine), donc condamné à mort."
   },
   {
-   "id": "ceb-2018-l1-q15",
-   "livret": 1,
-   "numero": "16",
-   "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Le faon abandonné n'est pas sans défense. Recopie une idée du texte qui le prouve.",
-   "points": 1,
-   "corrigeVerifie": true,
-   "fiche": "fr-inferences",
-   "documents": [
-    "faon-2"
-   ],
-   "reponseModele": "Son pelage se fond dans les couleurs naturelles ; il est inodore ; sa mère le défendrait contre un renard ; elle reste dans le voisinage."
-  },
-  {
    "id": "ceb-2018-l1-q16",
    "livret": 1,
    "numero": "15",
@@ -644,32 +629,55 @@
    "explication": "« De nouveau » relie la deuxième et la troisième phrase."
   },
   {
+   "id": "ceb-2018-l1-q15",
+   "livret": 1,
+   "numero": "16",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Le faon abandonné n'est pas sans défense. Recopie une idée du texte qui le prouve.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "faon-2"
+   ],
+   "reponseModele": "Son pelage se fond dans les couleurs naturelles ; il n'est repérable que de très près ; il est inodore ; sa mère le défendrait contre un renard."
+  },
+  {
    "id": "ceb-2018-l1-q17",
    "livret": 1,
    "numero": "17",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Complète le tableau des temps (extrait : commença, s'était immobilisé, faisait, obligeait, avança, jeta, avait compris, redoublait…).",
+   "enonce": "Complète le tableau avec les verbes de l'extrait (commença, s'était immobilisé, faisait, obligeait, jeta, avança, avait compris…) : le temps de la conjugaison, puis un autre verbe de l'extrait conjugué au même temps.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "faon-2"
    ],
-   "texte": "« commença » est au {1} (comme « avança »)  ·  « s'était immobilisé » est au plus-que-parfait (comme « avait {2} »)  ·  « faisait » est à l'{3}",
+   "texte": "« commença » → temps : {1}  ·  autre verbe de l'extrait au même temps : {2}\n« s'était immobilisé » → plus-que-parfait  ·  autre verbe de l'extrait au même temps : {3}\n« faisait » → temps : {4}  ·  autre verbe au même temps : « obligeait »",
    "reponse": [
     [
      "passé simple",
      "passe simple"
     ],
     [
-     "compris"
+     "jeta",
+     "avança",
+     "il jeta",
+     "il avança"
     ],
     [
-     "imparfait"
+     "avait compris",
+     "elle avait compris"
+    ],
+    [
+     "imparfait",
+     "l'imparfait"
     ]
    ],
-   "explication": "commença : passé simple ; avait compris : plus-que-parfait ; faisait : imparfait. (Dans l'épreuve, il fallait aussi trouver d'autres verbes au passé simple : jeta, avança.)"
+   "explication": "commença, jeta et avança sont au passé simple ; s'était immobilisé et avait compris sont au plus-que-parfait ; faisait et obligeait sont à l'imparfait."
   },
   {
    "id": "ceb-2018-l1-q18",
@@ -1083,11 +1091,11 @@
    "numero": "6",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Change l'unité pour rendre la grandeur 10 fois plus grande (45 ml, 82 dl, 0,98 l), puis 100 fois plus petite (63 hl, 25 dal, 8,75 l).",
+   "enonce": "Change l'unité de mesure (l'étalon) : a) pour rendre la grandeur 10 fois plus grande ; b) pour rendre la grandeur 100 fois plus petite.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "10 fois plus grande :\n45 {1}\n82 {2}\n0,98 {3}\n\n100 fois plus petite :\n63 {4}\n25 {5}\n8,75 {6}",
+   "texte": "a) 10 fois plus grande :\n45 ml → 45 {1}\n82 dl → 82 {2}\n0,98 l → 0,98 {3}\n\nb) 100 fois plus petite :\n63 hl → 63 {4}\n25 dal → 25 {5}\n8,75 l → 8,75 {6}",
    "reponse": [
     [
      "cl"
@@ -1168,34 +1176,63 @@
    "numero": "14a",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Le mercredi 27 juin, le soleil se lève à 05:31 et se couche à 22:00. Combien de temps entre le lever et le coucher ?",
-   "points": 2,
+   "enonce": "Observe les deux pages de calendrier : mercredi 16 mai, soleil : lever 05:52, coucher 21:27 ; mercredi 27 juin, soleil : lever 05:31, coucher 22:00. Réponds pour le mercredi 27 juin.",
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
-   "texte": "{1} h {2} min",
+   "texte": "Le soleil se lève à : {1}\nLe soleil se couche à : {2}\nTemps écoulé entre le lever et le coucher du soleil : {3}",
    "reponse": [
     [
-     "16"
+     "05:31",
+     "5:31",
+     "05h31",
+     "5h31",
+     "05 h 31",
+     "5 h 31",
+     "5h31min",
+     "5 h 31 min",
+     "05h31min"
     ],
     [
-     "29"
+     "22:00",
+     "22h00",
+     "22h",
+     "22 h",
+     "22 h 00",
+     "22:00:00"
+    ],
+    [
+     "16 h 29 min",
+     "16h29",
+     "16 h 29",
+     "16h29min",
+     "16 h 29 minutes",
+     "16 heures 29 minutes",
+     "16 heures 29"
     ]
    ],
-   "explication": "De 5 h 31 à 21 h 31 : 16 h ; + 29 min jusqu'à 22 h."
+   "explication": "Le 27 juin, le soleil se lève à 05:31 et se couche à 22:00. De 5 h 31 à 21 h 31 : 16 h ; plus 29 min jusqu'à 22 h : 16 h 29 min."
   },
   {
    "id": "ceb-2018-l4-q14b",
    "livret": 4,
    "numero": "14b",
    "domaine": "ma.grandeurs",
-   "type": "numerique",
+   "type": "texte_court",
    "enonce": "Combien de jours du mercredi 16 mai au mercredi 27 juin inclus ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
-   "reponse": 43,
-   "unite": "jours",
-   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43. Le corrigé accepte aussi 41 ou 42 jours (selon qu'on compte les jours inclus ou non)."
+   "reponse": [
+    "43",
+    "43 jours",
+    "42",
+    "42 jours",
+    "41",
+    "41 jours"
+   ],
+   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43 jours (inclus). Le corrigé accepte aussi 41 ou 42 jours.",
+   "souple": true
   },
   {
    "id": "ceb-2018-l4-q15a",
@@ -1402,22 +1439,33 @@
    "livret": 5,
    "numero": "1a",
    "domaine": "sc.vivant",
-   "type": "qcm",
-   "enonce": "Expérience 1 : pot A dans la classe (chaleur), pot B à l'extérieur (chutes de température). Quelle condition l'expérience fait-elle varier ?",
-   "points": 1,
+   "type": "grille",
+   "enonce": "Observe les dispositifs d'expériences. Quelle(s) condition(s) de la germination des graines l'expérience 1 met-elle en évidence ? Pour chaque proposition, dis si elle est correcte (à entourer) ou incorrecte (à barrer).",
+   "points": 5,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "germ-1"
    ],
-   "choix": [
-    "La présence de terre",
-    "La présence d'eau et de lumière",
-    "La présence de lumière",
-    "La présence de chaleur"
+   "reponse": [
+    1,
+    1,
+    1,
+    0,
+    1
    ],
-   "reponse": 3,
-   "explication": "Seule la température change entre A et B."
+   "explication": "Dans l'expérience 1, seule la température change entre le pot A (dans la classe) et le pot B (à l'extérieur) : la condition mise en évidence est la présence de chaleur.",
+   "lignes": [
+    "Présence de terre",
+    "Présence d'eau et de lumière",
+    "Présence de lumière",
+    "Présence de chaleur",
+    "Présence de terre et de lumière"
+   ],
+   "colonnes": [
+    "Correcte (à entourer)",
+    "Incorrecte (à barrer)"
+   ]
   },
   {
    "id": "ceb-2018-l5-q1b",
@@ -1463,22 +1511,54 @@
    "livret": 5,
    "numero": "1e",
    "domaine": "sc.vivant",
-   "type": "qcm",
-   "enonce": "D'après les résultats (A, B, C, D germent ; E sans eau ne germe pas), quelle condition est indispensable à la germination ?",
-   "points": 1,
+   "type": "trous",
+   "enonce": "Un élève de la classe utilise les résultats de ces expériences pour faire germer des graines de potiron. Cite les deux conditions indispensables pour que ces graines germent.",
+   "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
+    "germ-1",
+    "germ-2",
     "germ-3"
    ],
-   "choix": [
-    "L'eau",
-    "La terre",
-    "La lumière",
-    "L'obscurité"
-   ],
-   "reponse": 0,
-   "explication": "Seul le pot sans eau n'a pas germé. (L'épreuve demandait deux conditions : l'eau et la chaleur.)"
+   "explication": "Il faut de la chaleur (expérience 1) et de l'eau (expérience 4 : sans eau, la graine ne germe pas). La terre et la lumière ne sont pas indispensables.",
+   "texte": "1re condition : {1}\n2e condition : {2}",
+   "souple": true,
+   "differentes": true,
+   "reponse": [
+    [
+     "chaleur",
+     "la chaleur",
+     "de la chaleur",
+     "eau",
+     "l'eau",
+     "de l'eau",
+     "humidité",
+     "l'humidité",
+     "de l'humidité",
+     "arrosage",
+     "l'arrosage",
+     "pluie",
+     "la pluie",
+     "de la pluie"
+    ],
+    [
+     "eau",
+     "l'eau",
+     "de l'eau",
+     "humidité",
+     "l'humidité",
+     "de l'humidité",
+     "arrosage",
+     "l'arrosage",
+     "pluie",
+     "la pluie",
+     "de la pluie",
+     "chaleur",
+     "la chaleur",
+     "de la chaleur"
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l5-q4b",
@@ -2227,6 +2307,31 @@
    "explication": "La vue (le soleil), l'odorat et la danse."
   },
   {
+   "id": "ceb-2018-l6-q13b",
+   "livret": 6,
+   "numero": "13b",
+   "domaine": "fr.lire",
+   "type": "texte_court",
+   "enonce": "Écris un autre moyen cité dans le texte et utilisé par les abeilles pour communiquer et s'orienter.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "documents": [
+    "abeilles-2"
+   ],
+   "reponse": [
+    "le sens de l'orientation",
+    "sens de l'orientation",
+    "l'orientation",
+    "le pouvoir de se reconnaitre entre elles",
+    "pouvoir de se reconnaitre entre elles",
+    "se reconnaitre entre elles",
+    "se reconnaître entre elles",
+    "la reconnaissance entre elles"
+   ],
+   "souple": true,
+   "explication": "Le texte cite aussi le sens de l'orientation ou le pouvoir de se reconnaitre entre elles."
+  },
+  {
    "id": "ceb-2018-l6-q14",
    "livret": 6,
    "numero": "14",
@@ -2466,26 +2571,40 @@
    "livret": 7,
    "numero": "4d",
    "domaine": "hg.geographie",
-   "type": "qcm_multi",
-   "enonce": "Sur quels continents se trouvent les pays qui comptent plus de 20 % d'enfants au travail ?",
+   "type": "trous",
+   "enonce": "Selon la Carte des enfants au travail dans le monde, certains pays comptent plus de 20 % d'enfants au travail. Écris le nom de deux continents où ces pays se situent.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "enfants-3"
    ],
-   "choix": [
-    "Afrique",
-    "Asie",
-    "Europe",
-    "Océanie",
-    "Amérique du Nord"
-   ],
    "reponse": [
-    0,
-    1
+    [
+     "Afrique",
+     "l'Afrique",
+     "Asie",
+     "l'Asie",
+     "Amérique",
+     "l'Amérique",
+     "Amérique du Sud",
+     "Amérique du Nord"
+    ],
+    [
+     "Asie",
+     "l'Asie",
+     "Afrique",
+     "l'Afrique",
+     "Amérique",
+     "l'Amérique",
+     "Amérique du Sud",
+     "Amérique du Nord"
+    ]
    ],
-   "explication": "Afrique (nombreux pays) et Asie (Népal…). Le corrigé officiel accepte aussi « Amérique »."
+   "explication": "Afrique (nombreux pays) et Asie (Népal…). Le corrigé accepte aussi « Amérique ».",
+   "souple": true,
+   "differentes": true,
+   "texte": "1er continent : {1}\n2e continent : {2}"
   },
   {
    "id": "ceb-2018-l7-q5",
@@ -3182,12 +3301,15 @@
    "fiche": "ma-problemes",
    "choix": [
     "(102 : 4) − 24 − 6",
-    "(102 − 24 − 6) × 4",
+    "(¼ × 102) − (¼ × 24) − (¼ × 6)",
     "(102 : 4) − 24 + 6",
     "(102 − 24 − 6) : 4"
    ],
-   "reponse": 3,
-   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 30) : 4 = 18 €. Le corrigé accepte aussi l'écriture (1/4 × 102) − (1/4 × 24) − (1/4 × 6)."
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 24 − 6) : 4 = 18 €. L'écriture (¼ × 102) − (¼ × 24) − (¼ × 6) donne le même résultat : le corrigé accepte les deux."
   },
   {
    "id": "ceb-2018-l8-q6",
@@ -3199,16 +3321,27 @@
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "24 × 38 = (24 × 40) − (24 × {1})  ·  192 : 12 = (120 : 12) + ({2} : 12)",
+   "texte": "24 × 38 = (24 × 40) − ( {1} × {2} )\n192 : 12 = (120 : {3}) + ( {4} : {5} )",
    "reponse": [
     [
+     "24",
      "2"
     ],
     [
+     "2",
+     "24"
+    ],
+    [
+     "12"
+    ],
+    [
      "72"
+    ],
+    [
+     "12"
     ]
    ],
-   "explication": "38 = 40 − 2 ; 192 = 120 + 72."
+   "explication": "38 = 40 − 2, donc 24 × 38 = (24 × 40) − (24 × 2). 192 = 120 + 72, donc 192 : 12 = (120 : 12) + (72 : 12)."
   },
   {
    "id": "ceb-2018-l8-q7",
@@ -3282,24 +3415,44 @@
    "numero": "11",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Complète les droites graduées.",
+   "enonce": "Complète les cases vides de ces droites graduées.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-droite-graduee",
-   "texte": "30 ; 45 ; {1} ; 75 ; 90  ·  125 ; 250 ; 375 ; {2} ; 625  ·  5,6 ; 5,8 ; {3} ; 6,2 ; 6,4",
+   "texte": "a)  {1} ; 30 ; 45 ; {2} ; 75 ; 90 ; 105 ; 120 ; {3}\nb)  125 ; 250 ; 375 ; {4} ; 625 ; {5} ; {6} ; 1 000\nc)  5,6 ; 5,8 ; {7} ; 6,2 ; 6,4 ; {8} ; 6,8 ; 7 ; {9}",
    "reponse": [
     [
+     "15"
+    ],
+    [
      "60"
+    ],
+    [
+     "135"
     ],
     [
      "500"
     ],
     [
+     "750"
+    ],
+    [
+     "875"
+    ],
+    [
      "6",
      "6,0"
+    ],
+    [
+     "6,6",
+     "6.6"
+    ],
+    [
+     "7,2",
+     "7.2"
     ]
    ],
-   "explication": "Pas de 15, de 125 et de 0,2. (Dans l'épreuve, chaque droite avait plusieurs cases : 15, 60, 135 ; 500, 750, 875 ; 6 ; 6,6 ; 7,2.)"
+   "explication": "a) on avance de 15 en 15 ; b) de 125 en 125 ; c) de 0,2 en 0,2."
   },
   {
    "id": "ceb-2018-l8-q12",
@@ -3484,11 +3637,36 @@
    "livret": 8,
    "numero": "10",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Nombre total d'étoiles.",
+   "type": "trous",
+   "enonce": "Observe la figure des étoiles (livret 8). Combien y a-t-il d'étoiles en tout ? Écris aussi l'opération qui te permet de donner le nombre total d'étoiles.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "texte": "En tout, il y a {1} étoiles.\nOpération : {2}",
+   "souple": true,
+   "reponse": [
+    [
+     "136"
+    ],
+    [
+     "8 x 17",
+     "17 x 8",
+     "8x17",
+     "17x8",
+     "8 × 17",
+     "17 × 8",
+     "8×17",
+     "17×8",
+     "8*17",
+     "17*8",
+     "8+8+8+8+8+8+8+8+8+8+8+8+8+8+8+8+8",
+     "17+17+17+17+17+17+17+17",
+     "8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8 + 8",
+     "17 + 17 + 17 + 17 + 17 + 17 + 17 + 17"
+    ]
+   ],
+   "explication": "8 × 17 = 136 étoiles (ou 17 × 8, ou 17 + 17 + … huit fois).",
+   "numerisable": false,
+   "remarque": "La figure n'est que dans le livret : question pour la version papier."
   },
   {
    "id": "ceb-2018-l8-q14",
