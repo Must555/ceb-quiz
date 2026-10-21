@@ -14,7 +14,8 @@ const J0 = '2026-10-05';
 function reponse(q, juste) {
   if (!juste) return q.type === 'qcm' ? (q.reponse + 1) % q.choix.length : q.type === 'vrai_faux' ? !q.reponse : 'zzz';
   switch (q.type) {
-    case 'qcm': case 'vrai_faux': case 'qcm_multi': case 'grille': case 'ordre': case 'association': return q.reponse;
+    case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
+    case 'qcm': case 'vrai_faux': case 'qcm_multi': case 'ordre': case 'association': return q.reponse;
     case 'numerique': return String(q.reponse);
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);

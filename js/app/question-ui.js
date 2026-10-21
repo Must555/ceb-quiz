@@ -19,7 +19,7 @@ export function rendreSaisie(q) {
       return `<input class="champ" id="saisie" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Écris ta réponse">`;
     case 'trous': {
       let n = 0;
-      return `<p class="texte-trous">${esc(q.texte).replace(/\{\d+\}/g, () => `<input class="champ trou" data-k="${n++}" type="text" autocomplete="off" spellcheck="false" aria-label="Case ${n}">`)}</p>`;
+      return `<p class="texte-trous">${esc(q.texte).replace(/\{\d+\}/g, () => `<input class="champ trou" data-k="${n++}" type="text" autocomplete="off" spellcheck="false" aria-label="Case ${n}">`).replace(/\n/g, '<br>')}</p>`;
     }
     case 'grille':
       return `<div class="grille-rep">${q.lignes.map((l, i) => `
@@ -114,7 +114,7 @@ export function brancher(zone, q, { onPret, onValider }) {
       if (q.type === 'vrai_faux') reps.forEach((b) => b.classList.add((b.dataset.v === '1') === q.reponse ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'qcm_multi') reps.forEach((b) => b.classList.add(q.reponse.includes(+b.dataset.i) ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'grille') zone.querySelectorAll('.opt').forEach((o) => {
-        const ok = q.reponse[+o.dataset.l] === +o.dataset.c;
+        const ok = [].concat(q.reponse[+o.dataset.l]).includes(+o.dataset.c);
         o.classList.add(ok ? 'juste' : o.classList.contains('sel') ? 'faux' : 'eteint');
       });
     },

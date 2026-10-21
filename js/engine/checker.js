@@ -77,8 +77,9 @@ export function corriger(question, reponseEleve) {
       return partiel(bons, question.reponse.length, max);
     }
     case 'grille': {
-      // reponse = index de colonne attendu pour chaque ligne
-      const bons = question.reponse.filter((col, i) => estRempli(reponseEleve[i]) && Number(reponseEleve[i]) === col).length;
+      // reponse = index de colonne attendu pour chaque ligne, ou liste des colonnes acceptées
+      // (le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne).
+      const bons = question.reponse.filter((col, i) => estRempli(reponseEleve[i]) && [].concat(col).includes(Number(reponseEleve[i]))).length;
       return partiel(bons, question.reponse.length, max);
     }
     case 'ordre': {

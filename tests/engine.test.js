@@ -13,7 +13,8 @@ const donnees = await chargerDonnees({ base: 'data/', fetchJson });
 // Donne la bonne réponse telle qu'un élève la saisirait.
 function reponseParfaite(q) {
   switch (q.type) {
-    case 'qcm': case 'vrai_faux': case 'qcm_multi': case 'grille': case 'ordre': case 'association': return q.reponse;
+    case 'grille': return q.reponse.map((c) => [].concat(c)[0]);
+    case 'qcm': case 'vrai_faux': case 'qcm_multi': case 'ordre': case 'association': return q.reponse;
     case 'numerique': return String(q.reponse).replace('.', ',');
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]);
@@ -195,6 +196,10 @@ test('correction : cas particuliers', () => {
   assert.deepEqual([corriger(grille, [0, 1, 0]).score, corriger(grille, [0, 1, 0]).correct], [2, false]);
   // Une grille laissée vide ne rapporte aucun point (null ne vaut pas « colonne 0 »).
   assert.equal(corriger(grille, [null, null, null]).score, 0);
+  // Le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne (ex. extincteurs, CEB 2026).
+  const grilleMulti = { type: 'grille', reponse: [3, [1, 2, 3, 4], [0, 1, 2, 3]], points: 3 };
+  assert.equal(corriger(grilleMulti, [3, 4, 0]).score, 3);
+  assert.deepEqual([corriger(grilleMulti, [3, 0, 4]).score, corriger(grilleMulti, [3, 0, 4]).correct], [1, false]);
   const ordre = { type: 'ordre', reponse: [0, 1, 2] };
   assert.equal(corriger(ordre, [undefined, null, '']).score, 0);
 });

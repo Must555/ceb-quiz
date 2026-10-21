@@ -3,7 +3,7 @@
   "annee": 2026,
   "referentiel": "tronc_commun",
   "titre": "CEB 2026 — Référentiels du Tronc commun",
-  "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+  "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
   "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio du récit. Certaines questions reposent sur des figures du questionnaire que nous n'avons pas : elles sont omises ou gardées en mode papier.",
   "livrets": [
     {
@@ -374,26 +374,24 @@
       "type": "trous",
       "enonce": "Observe cette photo de cyclistes qui terminent une course. Trois coureurs ont déjà franchi la ligne d'arrivée avant Tim. Complète.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "texte": "Tim est en {1} position. Jonas se trouve 8 places derrière Romain, qui est en douzième position : Jonas est en {2} position.",
       "reponse": [
         [
           "quatrième",
           "4e",
           "4ème",
-          "4",
           "quatrieme"
         ],
         [
           "vingtième",
           "20e",
           "20ème",
-          "20",
           "vingtieme"
         ]
       ],
       "souple": true,
-      "explication": "3 coureurs sont devant Tim, donc Tim est 4e. Romain est 12e ; 8 places derrière : 12 + 8 = 20e."
+      "explication": "3 coureurs sont devant Tim, donc Tim est 4e. Romain est 12e ; 8 places derrière : 12 + 8 = 20e. Attention : écrire seulement « 4 » ou « 20 » ne suffit pas, il faut un nombre ordinal (4e, quatrième)."
     },
     {
       "id": "ceb-2026-tc-l3-q19",
@@ -401,16 +399,16 @@
       "numero": "19",
       "domaine": "ma.geometrie",
       "type": "grille",
-      "enonce": "Pour chaque solide, indique si la propriété est vraie.",
+      "enonce": "Pour chaque solide, indique s'il possède la propriété. (Dans l'épreuve, le parallélépipède rectangle est donné en exemple : il les possède toutes.)",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "lignes": [
-        "Parallélépipède rectangle : il a des faces parallèles",
         "Prisme droit à base triangulaire : il a des faces parallèles",
+        "Prisme droit à base triangulaire : ses faces latérales sont perpendiculaires aux bases",
+        "Prisme droit à base triangulaire : il a des faces isométriques (superposables)",
         "Pyramide à base carrée : elle a des faces parallèles",
-        "Parallélépipède rectangle : faces latérales perpendiculaires à la (aux) base(s)",
-        "Prisme droit à base triangulaire : faces latérales perpendiculaires aux bases",
-        "Pyramide à base carrée : faces latérales perpendiculaires à la base"
+        "Pyramide à base carrée : ses faces latérales sont perpendiculaires à la base",
+        "Pyramide à base carrée : elle a des faces isométriques (superposables)"
       ],
       "colonnes": [
         "Oui",
@@ -419,49 +417,70 @@
       "reponse": [
         0,
         0,
+        0,
         1,
-        0,
-        0,
-        1
+        1,
+        0
       ],
-      "explication": "Le parallélépipède et le prisme droit ont deux bases parallèles et des faces latérales perpendiculaires aux bases. La pyramide n'a qu'une base et ses faces latérales sont inclinées."
+      "explication": "Le prisme droit a deux bases triangulaires parallèles et superposables, et ses faces latérales sont perpendiculaires aux bases. La pyramide n'a qu'une base ; ses faces latérales sont inclinées (ni parallèles, ni perpendiculaires à la base), mais ses 4 triangles sont superposables : elle a des faces isométriques."
     },
     {
       "id": "ceb-2026-tc-l4-q1",
       "livret": 4,
       "numero": "1",
       "domaine": "ma.grandeurs",
-      "type": "association",
-      "enonce": "Observe ces panneaux routiers. Associe chaque panneau à la grandeur qu'il indique.",
+      "type": "trous",
+      "enonce": "Observe ces panneaux routiers. Pour chaque panneau, écris la grandeur, la mesure et l'unité de mesure en toutes lettres.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
-      "gauche": [
-        "STOP 150 m",
-        "P 30 MIN.",
-        "3,5 t max"
-      ],
-      "droite": [
-        "Longueur",
-        "Durée",
-        "Masse",
-        "Capacité"
-      ],
       "reponse": [
         [
-          0,
-          0
+          "longueur",
+          "distance",
+          "la longueur",
+          "la distance"
         ],
         [
-          1,
-          1
+          "150"
         ],
         [
-          2,
-          2
+          "mètre",
+          "mètres",
+          "metre",
+          "le mètre"
+        ],
+        [
+          "durée",
+          "temps",
+          "la durée",
+          "le temps"
+        ],
+        [
+          "30"
+        ],
+        [
+          "minute",
+          "minutes",
+          "la minute"
+        ],
+        [
+          "masse",
+          "la masse"
+        ],
+        [
+          "3,5",
+          "3.5"
+        ],
+        [
+          "tonne",
+          "tonnes",
+          "la tonne"
         ]
       ],
-      "explication": "150 m est une longueur, 30 min une durée, 3,5 t une masse (en tonnes)."
+      "explication": "150 m : longueur (ou distance), 150, mètre. 30 min : durée (ou temps), 30, minute. 3,5 t : masse, 3,5, tonne. Attention : le poids d'un camion se mesure en masse.",
+      "texte": "Panneau STOP 150 m\ngrandeur : {1}\nmesure : {2}\nunité : {3}\n\nPanneau P 30 MIN.\ngrandeur : {4}\nmesure : {5}\nunité : {6}\n\nPanneau 3,5 t max\ngrandeur : {7}\nmesure : {8}\nunité : {9}",
+      "souple": true
     },
     {
       "id": "ceb-2026-tc-l4-q2",
@@ -471,7 +490,7 @@
       "type": "numerique",
       "enonce": "Un agriculteur utilise 80 kilogrammes de graines pour ensemencer 4 hectares de terre. Combien de kilogrammes de graines faut-il pour 10 hectares ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-proportionnalite",
       "unite": "kg",
       "reponse": 200,
@@ -485,7 +504,7 @@
       "type": "texte_court",
       "enonce": "Une montre indique 09:47 au départ d'un trajet et 11:12 à l'arrivée. Combien de temps a duré le trajet ? (exemple : 2 h 10)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-durees",
       "reponse": [
         "1 h 25",
@@ -506,7 +525,7 @@
       "type": "qcm",
       "enonce": "La masse d'un smartphone est d'environ 280…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "mg",
@@ -525,7 +544,7 @@
       "type": "qcm",
       "enonce": "La capacité d'une gourde est d'environ 0,7…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "dl",
@@ -544,7 +563,7 @@
       "type": "qcm",
       "enonce": "La taille d'une fourmi est d'environ 7…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "mm",
@@ -563,7 +582,7 @@
       "type": "numerique",
       "enonce": "Olivia a rempli d'eau un aquarium de 60 cm de long, 25 cm de large et 40 cm de haut aux 3/4 de sa capacité. Combien de litres d'eau a-t-elle utilisés ? (1 litre = 1 dm³)",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-volumes",
       "unite": "l",
       "reponse": 45,
@@ -577,7 +596,7 @@
       "type": "grille",
       "enonce": "Coche la grandeur évoquée par chaque situation.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "lignes": [
         "Lors d'une course à pied, les coureurs ont parcouru 5 tours de piste.",
         "Au cinéma, une famille achète trois boissons, un paquet de popcorn et un paquet de bonbons.",
@@ -606,7 +625,7 @@
       "type": "texte_court",
       "enonce": "On met un gâteau dans le four à 16 h 45. Il doit cuire 70 minutes, puis refroidir 20 minutes. À partir de quelle heure pourra-t-on le déguster ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-durees",
       "reponse": [
         "18 h 15",
@@ -625,7 +644,7 @@
       "type": "ordre",
       "enonce": "Classe ces objets du plus fin au plus épais.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "elements": [
         "Une pièce de monnaie de 2 €",
         "Une page du livret CEB",
@@ -648,7 +667,7 @@
       "type": "trous",
       "enonce": "Calcule.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-pourcentages",
       "texte": "150 % de 500 € = {1} €  ·  5 % de 75 € = {2} €",
       "reponse": [
@@ -671,7 +690,7 @@
       "type": "trous",
       "enonce": "Convertis les mesures suivantes.",
       "points": 5,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "texte": "5 m³ = {1} dm³  ·  10 min = {2} s  ·  2 t = {3} kg  ·  16 km = {4} hm  ·  3,5 l = {5} dl",
       "reponse": [
@@ -704,7 +723,7 @@
       "type": "trous",
       "enonce": "Une voiture consomme en moyenne 6 litres d'essence pour parcourir 100 kilomètres. Complète.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-proportionnalite",
       "texte": "1 000 km → {1} litres  ·  25 km → {2} litres  ·  {3} km → 1,2 litre",
       "reponse": [
@@ -730,7 +749,7 @@
       "type": "qcm",
       "enonce": "Quelle grandeur est 100 fois plus grande que 3 mg ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "300 cg",
@@ -749,7 +768,7 @@
       "type": "qcm",
       "enonce": "Quelle grandeur est 10 fois plus grande que 0,45 dal ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "0,45 kl",
@@ -768,7 +787,7 @@
       "type": "qcm",
       "enonce": "Le périmètre d'un polygone se calcule ainsi : 5 × 2,5 cm = 12,5 cm. Ce polygone est un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "choix": [
         "losange",
@@ -787,7 +806,7 @@
       "type": "qcm",
       "enonce": "Le périmètre d'un polygone se calcule ainsi : (4 cm + 7 cm) × 2 = 22 cm. Ce polygone est un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "choix": [
         "triangle scalène",
@@ -806,7 +825,7 @@
       "type": "numerique",
       "enonce": "Une famille de 2 adultes et 2 enfants de 11 ans et 6 ans fait l'aller-retour Liège-Maastricht en bateau le même jour. Observe le tarif. Combien paie la famille au total ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-pourcentages",
       "documents": [
         "croisiere"
@@ -823,7 +842,7 @@
       "type": "numerique",
       "enonce": "Observe la carte. Calcule, en kilomètres, la distance réelle en ligne droite entre Liège et Maastricht.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-echelle",
       "documents": [
         "croisiere"
@@ -835,16 +854,16 @@
     {
       "id": "ceb-2026-tc-l4-q24",
       "livret": 4,
-      "numero": "24",
+      "numero": "23",
       "domaine": "ma.grandeurs",
       "type": "numerique",
       "enonce": "Écris sous forme de nombre décimal : 1 kg et 1/2 kg = ? kg",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-fractions",
       "unite": "kg",
       "reponse": 1.5,
-      "explication": "1/2 kg = 0,5 kg. 1 + 0,5 = 1,5 kg."
+      "explication": "1/2 kg = 0,5 kg. 1 + 0,5 = 1,5 kg. (Dans l'épreuve, c'est la 2e ligne de la question 23.)"
     },
     {
       "id": "ceb-2026-tc-l4-q26",
@@ -854,7 +873,7 @@
       "type": "grille",
       "enonce": "Quelle grandeur faut-il calculer pour chaque action ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "lignes": [
         "Repeindre un mur",
@@ -881,7 +900,7 @@
       "type": "qcm",
       "enonce": "Trois emballages : A = 125 g pour 2,60 € ; B = 200 g pour 3,90 € ; C = 125 g pour 2,80 €. Quel produit est le moins cher au kilogramme ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "choix": [
         "A",
@@ -899,7 +918,7 @@
       "type": "qcm",
       "enonce": "Dans quelle phrase est exprimée une durée ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-durees",
       "choix": [
         "Au coup de sifflet, les coureurs démarrent.",
@@ -918,7 +937,7 @@
       "type": "numerique",
       "enonce": "La distance par voie navigable entre deux ports est de 33 kilomètres. Il faut 2 h 30 pour faire ce trajet en bateau. Quelle est la vitesse moyenne du bateau ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-vitesse",
       "unite": "km/h",
       "reponse": 13.2,
@@ -932,7 +951,7 @@
       "type": "ouverte",
       "enonce": "Écris la formule du calcul de l'aire d'un carré et d'un triangle.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "reponseModele": "Carré : côté × côté. Triangle : (base × hauteur) ÷ 2."
     },
@@ -944,7 +963,7 @@
       "type": "trous",
       "enonce": "Dans le portfolio, tu trouves la couverture et 3 pages d'un manuel d'histoire. À l'aide de la table des matières et de l'index, écris un numéro de page où trouver chaque information.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "documents": [
         "merov-tdm",
@@ -961,7 +980,9 @@
         ],
         [
           "19",
-          "26"
+          "26",
+          "32",
+          "17"
         ]
       ],
       "souple": true,
@@ -987,7 +1008,7 @@
       "type": "qcm",
       "enonce": "Dans le cimetière mérovingien de Vieuxville, on a retrouvé de nombreuses tombes datant du 5e au 7e siècle. Durant quelle période conventionnelle ont-elles été réalisées ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "choix": [
         "Préhistoire",
@@ -1006,7 +1027,7 @@
       "type": "trous",
       "enonce": "Lis la page « Des rites funéraires ». Écris la lettre de l'extrait (A, B, C ou D) qui permet d'affirmer chaque phrase.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "merov-rites"
@@ -1034,7 +1055,7 @@
       "type": "trous",
       "enonce": "Sur une frise chronologique (An 1, 1492, 2026), les lettres A à E correspondent aux cinq périodes conventionnelles, dans l'ordre. Complète.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "texte": "A = {1}  ·  E = {2}  ·  Date du passage de la période B à la période C : {3}",
       "reponse": [
@@ -1060,7 +1081,7 @@
       "type": "grille",
       "enonce": "Coche la date qui correspond à chaque fait marquant de l'histoire.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "lignes": [
         "La Révolution française",
@@ -1089,7 +1110,7 @@
       "type": "qcm",
       "enonce": "Observe la carte de la diffusion du christianisme. Au cours de quelle période conventionnelle le christianisme est-il apparu dans nos régions ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "documents": [
         "christianisme"
@@ -1111,7 +1132,7 @@
       "type": "qcm",
       "enonce": "Quel moment clé peut expliquer une large diffusion du christianisme dans le monde ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "documents": [
         "christianisme"
@@ -1133,11 +1154,11 @@
       "type": "ouverte",
       "enonce": "Observe les deux photos de classes (vers 1920 et en 2026). Écris trois points communs qui montrent qu'il s'agit bien d'une classe, puis un objet de la classe de 2026 qu'on ne voit pas sur la photo de 1920.",
       "points": 4,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "classes"
       ],
-      "reponseModele": "Points communs : des bancs ou des tables d'élèves, un tableau, un enseignant, des élèves assis… Objet présent seulement en 2026 : par exemple un tableau interactif, un ordinateur ou un écran."
+      "reponseModele": "a) Trois éléments présents sur les deux photos, parmi : le tableau, les bancs, le bureau, le professeur (l'instituteur, l'enseignant), les élèves, les cartes de géographie. b) Un objet présent seulement en 2026 : le tableau blanc, la télévision ou le tableau interactif (TBI), un écran, un ordinateur, des tablettes, un pot à crayons. Pas accepté en a) : le TBI ou le tableau noir (pas sur les deux photos), « Monsieur »."
     },
     {
       "id": "ceb-2026-tc-l5-q9",
@@ -1147,7 +1168,7 @@
       "type": "qcm",
       "enonce": "Un élève fait un travail sur l'immigration italienne en Belgique après 1945. Quel document traite réellement de l'immigration italienne en Belgique ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "recherche-1",
         "recherche-2"
@@ -1169,7 +1190,7 @@
       "type": "trous",
       "enonce": "Observe la carte de la population dans le monde (attention : le nord est à gauche).",
       "points": 4,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-globe",
       "documents": [
         "population"
@@ -1203,7 +1224,7 @@
       "type": "trous",
       "enonce": "Observe la carte des zones thermiques et sa légende.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-globe",
       "documents": [
         "zones"
@@ -1211,10 +1232,14 @@
       "texte": "La zone tempérée est la zone {1}  ·  La zone chaude est la zone {2}",
       "reponse": [
         [
-          "2"
+          "2",
+          "jaune",
+          "la zone jaune"
         ],
         [
-          "3"
+          "3",
+          "rose",
+          "la zone rose"
         ]
       ],
       "souple": true,
@@ -1228,7 +1253,7 @@
       "type": "trous",
       "enonce": "Écris le nom de l'océan désigné par chaque lettre sur la carte des zones thermiques.",
       "points": 4,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-globe",
       "documents": [
         "zones"
@@ -1261,7 +1286,7 @@
       "type": "ouverte",
       "enonce": "Un élève affirme : « Sur la carte, la lettre B désigne l'océan Atlantique qui sépare l'Amérique de l'Asie. » Cette affirmation n'est pas correcte. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-globe",
       "documents": [
         "zones"
@@ -1276,7 +1301,7 @@
       "type": "grille",
       "enonce": "Sur la carte des zones thermiques (nord à gauche), comment s'appellent les lignes imaginaires F et G ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-globe",
       "documents": [
         "zones"
@@ -1319,7 +1344,7 @@
       "type": "grille",
       "enonce": "Lis les informations sur l'effet de serre. Quel gaz à effet de serre est produit par chaque activité ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-energie",
       "documents": [
         "effet-serre-1",
@@ -1350,7 +1375,7 @@
       "type": "ouverte",
       "enonce": "Une élève affirme : « Ma famille participe à la lutte contre le réchauffement climatique parce qu'elle a remplacé les déplacements en voiture thermique par des déplacements à vélo. » C'est correct. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-energie",
       "documents": [
         "effet-serre-1"
@@ -1365,7 +1390,7 @@
       "type": "grille",
       "enonce": "Densité de population (hab./km²) : Anvers 686, Flandre orientale 564, Namur 138, Hainaut 358. Quel symbole de la légende faut-il mettre pour chaque province ?",
       "points": 4,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-densite",
       "lignes": [
         "Anvers (686)",
@@ -1395,7 +1420,7 @@
       "type": "trous",
       "enonce": "Lis l'article sur les empreintes digitales. Complète.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "empreintes-4"
@@ -1412,11 +1437,14 @@
         [
           "Cosinus",
           "Cosinus n°255",
-          "le magazine Cosinus"
+          "le magazine Cosinus",
+          "Magazine Cosinus",
+          "magazine Cosinus n°255",
+          "Cosinus N°255"
         ]
       ],
       "souple": true,
-      "explication": "Ces informations se trouvent dans la source, à la fin de l'article : Annalisa Plaitano, Cosinus n°255, janvier 2023."
+      "explication": "Ces informations se trouvent dans la source, à la fin de l'article : Annalisa Plaitano, Cosinus n°255, janvier 2023. Pour la date, il faut le mois et l'année."
     },
     {
       "id": "ceb-2026-tc-l6-q2",
@@ -1426,7 +1454,7 @@
       "type": "qcm",
       "enonce": "« C'est un chemin qui tourne toujours, mais au lieu de rester au même endroit, il s'éloigne de plus en plus du centre, comme la coquille d'un escargot. » De quel motif d'empreinte s'agit-il ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-2"
       ],
@@ -1446,7 +1474,7 @@
       "type": "grille",
       "enonce": "Dans quel bloc d'informations de l'article trouves-tu chaque renseignement ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-1",
         "empreintes-2",
@@ -1481,11 +1509,11 @@
       "type": "ouverte",
       "enonce": "Un élève affirme : « Les humains ne sont pas les seuls à avoir des empreintes digitales. » C'est correct. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-2"
       ],
-      "reponseModele": "L'article dit que les chimpanzés, les pékans et les koalas ont aussi des empreintes digitales."
+      "reponseModele": "Certains animaux ont aussi des empreintes digitales, comme les chimpanzés, les pékans et les koalas. (Écrire « les animaux » ou « tous les animaux » ne suffit pas : ce n'est vrai que pour certains.)"
     },
     {
       "id": "ceb-2026-tc-l6-q5",
@@ -1495,7 +1523,7 @@
       "type": "ouverte",
       "enonce": "Écris deux méthodes qui pourraient être destructives, utilisées pour révéler des traces.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-3"
       ],
@@ -1509,7 +1537,7 @@
       "type": "trous",
       "enonce": "« La police scientifique fait une distinction entre les traces et les empreintes. Les premières sont celles laissées par un malfaiteur sur une surface, alors que les secondes sont celles récoltées directement par les policiers. » Que remplacent les mots « premières » et « secondes » ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "texte": "premières : {1}  ·  secondes : {2}",
       "reponse": [
@@ -1533,12 +1561,15 @@
       "type": "trous",
       "enonce": "« Chaque être humain en possède plusieurs… que vous pouvez contempler au bout de vos doigts. » À quelle classe appartient chaque mot ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-classes-mots",
       "texte": "possède : {1}  ·  vous : {2}  ·  vos : {3}",
       "reponse": [
         [
-          "verbe"
+          "verbe",
+          "verbe d'action",
+          "verbe conjugué",
+          "verbe conjugue"
         ],
         [
           "pronom",
@@ -1562,7 +1593,7 @@
       "type": "qcm_multi",
       "enonce": "« Certaines traces sont « en positif », c'est-à-dire qu'elles apportent cette matière sur une surface, tandis que d'autres sont « en négatif », comme quand on creuse une empreinte sur de la cire. » Quels sont les deux mots antonymes ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "choix": [
         "positif",
@@ -1585,13 +1616,17 @@
       "type": "trous",
       "enonce": "« Les minuties sont donc des petites altérations du motif global. C'est grâce à elles que l'on peut comparer les empreintes digitales. C'est sur la base des minuties que se fait la comparaison entre deux ou plusieurs empreintes pour voir si elles appartiennent à la même personne. » Que remplace chaque « elles » ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "texte": "1er « elles » : {1}  ·  2e « elles » : {2}",
       "reponse": [
         [
           "les minuties",
-          "minuties"
+          "minuties",
+          "des petites altérations",
+          "des altérations",
+          "les petites altérations",
+          "altérations"
         ],
         [
           "les empreintes",
@@ -1611,7 +1646,7 @@
       "type": "ouverte",
       "enonce": "Aujourd'hui, les empreintes digitales sont utilisées dans plusieurs situations. Écris-en une.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-4"
       ],
@@ -1625,7 +1660,7 @@
       "type": "grille",
       "enonce": "Pour chaque phrase, que permet de dire le texte ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "empreintes-1",
@@ -1658,7 +1693,7 @@
       "type": "qcm",
       "enonce": "« Alphonse Bertillon était l'un des précurseurs de la criminologie (7). » Le numéro entre parenthèses sert à indiquer…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-4"
       ],
@@ -1679,7 +1714,7 @@
       "type": "qcm",
       "enonce": "Dans la phrase « Au cours de notre vie, nos empreintes digitales ne changent pas », quel est le groupe complément circonstanciel de phrase ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-sujet-complements",
       "choix": [
         "Au cours de notre vie",
@@ -1695,20 +1730,29 @@
       "livret": 6,
       "numero": "15",
       "domaine": "fr.grammaire",
-      "type": "qcm",
-      "enonce": "« Découvrons en détail ces traces étonnantes… » À quel mode est le verbe « Découvrons » ?",
-      "points": 1,
-      "corrigeVerifie": false,
+      "type": "grille",
+      "enonce": "À quel mode est conjugué chaque verbe souligné ?",
+      "points": 3,
+      "corrigeVerifie": true,
       "fiche": "fr-modes",
-      "choix": [
+      "reponse": [
+        3,
+        1,
+        4
+      ],
+      "explication": "« étalées » est un participe (passé), employé comme un adjectif. « Découvrons » : pas de sujet, une invitation : impératif. « remarquer » est à l'infinitif après « peut ».",
+      "lignes": [
+        "« On peut utiliser différents types de poudres étalées à l'aide d'un pinceau. » : étalées",
+        "« Découvrons en détail ces traces étonnantes… » : Découvrons",
+        "« On peut remarquer des détails. » : remarquer"
+      ],
+      "colonnes": [
         "Indicatif",
         "Impératif",
         "Subjonctif",
         "Participe",
         "Infinitif"
-      ],
-      "reponse": 1,
-      "explication": "Pas de sujet exprimé, une invitation à faire quelque chose : c'est l'impératif."
+      ]
     },
     {
       "id": "ceb-2026-tc-l6-q16",
@@ -1718,7 +1762,7 @@
       "type": "trous",
       "enonce": "Écris le nom au départ duquel est construit chaque mot dérivé (exemple : scientifique → science).",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "texte": "criminel → {1}  ·  digital → {2}",
       "reponse": [
@@ -1743,7 +1787,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 128 − (14 : 2)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 121,
       "explication": "On calcule d'abord la parenthèse : 14 : 2 = 7. Puis 128 − 7 = 121."
@@ -1756,7 +1800,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : (6 × 6) + (9 × 3) + (5 × 0) + (4 × 5)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 83,
       "explication": "36 + 27 + 0 + 20 = 83."
@@ -1769,7 +1813,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 86 × 3",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 258,
       "explication": "80 × 3 = 240 ; 6 × 3 = 18 ; 240 + 18 = 258."
@@ -1782,7 +1826,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 10 050 : 2",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 5025,
       "explication": "10 000 : 2 = 5 000 ; 50 : 2 = 25 ; total 5 025."
@@ -1795,7 +1839,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 211 + 85 + 89 + 45",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 430,
       "explication": "211 + 89 = 300 ; 85 + 45 = 130 ; 300 + 130 = 430."
@@ -1808,7 +1852,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 300 × 218",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 65400,
       "explication": "3 × 218 = 654, puis × 100 = 65 400."
@@ -1821,7 +1865,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 2,25 − 0,55",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1.7,
       "explication": "2,25 − 0,55 = 1,70 = 1,7."
@@ -1834,7 +1878,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 8,5 × 9",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 76.5,
       "explication": "8 × 9 = 72 ; 0,5 × 9 = 4,5 ; 72 + 4,5 = 76,5."
@@ -1847,7 +1891,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 25 × 30",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 750,
       "explication": "30 = 15 × 2, donc 375 × 2 = 750."
@@ -1860,7 +1904,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 2,5 × 15",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 37.5,
       "explication": "2,5 est 10 fois plus petit que 25 : 375 : 10 = 37,5."
@@ -1873,7 +1917,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 25 × 7,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 187.5,
       "explication": "7,5 est la moitié de 15 : 375 : 2 = 187,5."
@@ -1886,7 +1930,7 @@
       "type": "numerique",
       "enonce": "34,8 × 2,6 : le calcul sans virgule donne 9 048. Écris le résultat correct avec sa virgule.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 90.48,
       "explication": "Il y a 1 chiffre après la virgule dans 34,8 et 1 dans 2,6 : 2 chiffres en tout. 9 048 → 90,48."
@@ -1899,7 +1943,7 @@
       "type": "numerique",
       "enonce": "Dans le nombre 5 478,301, quel chiffre représente les dizaines ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 7,
       "explication": "5 478,301 : 5 milliers, 4 centaines, 7 dizaines, 8 unités."
@@ -1912,7 +1956,7 @@
       "type": "numerique",
       "enonce": "Dans le nombre 5 478,301, quel chiffre représente les millièmes ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1,
       "explication": "Après la virgule : 3 dixièmes, 0 centième, 1 millième."
@@ -1925,7 +1969,7 @@
       "type": "numerique",
       "enonce": "Sören achète un cadre de lit à 344,99 €, une garde-robe à 1 042 € et un bureau à 285,50 €. Quel est le montant total ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "unite": "€",
       "reponse": 1672.49,
@@ -1939,7 +1983,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres : « dix-huit unités trente-sept millièmes ».",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 18.037,
       "explication": "37 millièmes = 0,037. Donc 18,037."
@@ -1952,7 +1996,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 4,2 × 0,1",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 0.42,
       "explication": "× 0,1 revient à diviser par 10."
@@ -1965,7 +2009,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 4,2 × 0,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 2.1,
       "explication": "× 0,5 revient à prendre la moitié."
@@ -1978,7 +2022,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 64 : 0,1",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 640,
       "explication": "Diviser par 0,1 revient à multiplier par 10."
@@ -1991,7 +2035,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 64 : 0,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 128,
       "explication": "Diviser par 0,5 revient à multiplier par 2."
@@ -2004,7 +2048,7 @@
       "type": "qcm",
       "enonce": "Marie achète 5 géraniums à 1,50 €, 10 pétunias à 3 €, 5 surfinias à 2 € et 5 bégonias à 2 €. Quelle opération donne la somme qu'elle dépense ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "choix": [
         "25 × 5",
@@ -2023,7 +2067,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 36 019 + 4 572 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "36 500",
@@ -2042,7 +2086,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 152 × 49 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "750",
@@ -2061,7 +2105,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 40 300 − 18 008 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "12 000",
@@ -2080,7 +2124,7 @@
       "type": "numerique",
       "enonce": "Complète : 376 + 18 = … + 20",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 374,
       "explication": "376 + 18 = 394. 394 − 20 = 374."
@@ -2093,7 +2137,7 @@
       "type": "numerique",
       "enonce": "Complète : (39 + 17) + 13 = … + 30",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 39,
       "explication": "17 + 13 = 30, donc il reste 39."
@@ -2106,7 +2150,7 @@
       "type": "qcm",
       "enonce": "Quelle est la seule égalité correcte ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "choix": [
         "450 : 20 = (450 : 10) + (450 : 2)",
@@ -2125,7 +2169,7 @@
       "type": "qcm",
       "enonce": "« 13,9 > 12,308 » se lit…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "12,308 est plus grand que 13,9.",
@@ -2144,7 +2188,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de l'Espagne : quarante-huit millions cinquante-neuf-mille-sept-cent-septante-sept.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 48059777,
       "explication": "48 millions, 59 milliers, 777 : 48 059 777."
@@ -2157,7 +2201,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de la Belgique : onze millions sept-cent-cinquante-quatre-mille-quatre.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 11754004,
       "explication": "11 millions, 754 milliers, 4 unités : 11 754 004."
@@ -2170,7 +2214,7 @@
       "type": "qcm",
       "enonce": "Un tableau contient des nombres rangés de 0,75 à 0,95. Lequel de ces nombres peut y être inscrit ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "0,1",
@@ -2189,7 +2233,7 @@
       "type": "numerique",
       "enonce": "Lors d'un match Belgique-Norvège, 12 500 enfants sont dans les gradins. La Norvège est encouragée par 3 650 enfants et 23 700 adultes. La Belgique est encouragée par 26 650 supporters. Combien de supporters adultes encouragent la Belgique ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 17800,
       "explication": "Enfants pour la Belgique : 12 500 − 3 650 = 8 850. Adultes pour la Belgique : 26 650 − 8 850 = 17 800."
     },
@@ -2199,13 +2243,13 @@
       "numero": "A8b",
       "domaine": "ma.arithmetique",
       "type": "numerique",
-      "enonce": "Un compteur d'eau affiche 0306,580 m³. Quelle est la partie entière du nombre de m³ consommés ?",
+      "enonce": "Un compteur d'eau affiche 03060,580 m³. Écris la partie entière du nombre de m³ d'eau consommée.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "unite": "m³",
-      "reponse": 306,
-      "explication": "La partie entière est avant la virgule : 0306 = 306 (le zéro de gauche ne change rien)."
+      "reponse": 3060,
+      "explication": "La partie entière est la partie avant la virgule : 03060 = 3 060 (le zéro de gauche ne change rien). Attention à ne pas oublier le dernier 0 avant la virgule : il compte !"
     },
     {
       "id": "ceb-2026-tc-l8-qA9a",
@@ -2215,7 +2259,7 @@
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 50 · 100 · 200 · 400 · … · 1 600",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 800,
       "explication": "On multiplie par 2 à chaque fois : 400 × 2 = 800."
     },
@@ -2227,7 +2271,7 @@
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 1,57 · … · 0,97 · 0,67 · 0,37 · 0,07",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1.27,
       "explication": "On retire 0,3 à chaque fois : 1,57 − 0,3 = 1,27."
@@ -2240,7 +2284,7 @@
       "type": "qcm",
       "enonce": "Un joueur de basket a inscrit 5 points de moins que son équipier qui en a marqué 21. Quelle opération permet de trouver ses points ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Addition",
         "Soustraction",
@@ -2258,7 +2302,7 @@
       "type": "qcm",
       "enonce": "Un livreur transporte 72 casiers de 12 bouteilles d'un litre. Quelle opération permet de trouver la quantité d'eau transportée ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Addition",
         "Soustraction",
@@ -2276,7 +2320,7 @@
       "type": "qcm",
       "enonce": "Une classe de 26 élèves de 10 ans et 3 adultes visite un parc. Tarif groupe scolaire : enfant 19 €, adulte 28 €, 1 adulte gratuit pour 15 entrées enfants payantes. Quelle résolution est correcte ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "choix": [
         "26 × 19 = 494 ; 3 × 39 = 117 ; total 611 €",
@@ -2295,7 +2339,7 @@
       "type": "ordre",
       "enonce": "Range ces nombres du plus grand au plus petit.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "elements": [
         "12,045",
@@ -2321,7 +2365,7 @@
       "type": "trous",
       "enonce": "Dans la division 1 475 : 12 = 122 reste 11, comment s'appellent les nombres 1 475 et 11 ? (12 est le diviseur, 122 le quotient)",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "texte": "1 475 est le {1}  ·  11 est le {2}",
       "reponse": [
@@ -2343,7 +2387,7 @@
       "type": "vrai_faux",
       "enonce": "Vérifie avec la calculatrice : 38,3 × (4,6 + 245) = 9 559,68. Ce résultat est-il correct ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": true,
       "explication": "4,6 + 245 = 249,6 ; 38,3 × 249,6 = 9 559,68. C'est correct."
@@ -2356,7 +2400,7 @@
       "type": "numerique",
       "enonce": "Vérifie avec la calculatrice : (9 135 : 145) − 50,25 = 22,75. Ce résultat est faux : écris le résultat correct.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "reponse": 12.75,
       "explication": "9 135 : 145 = 63 ; 63 − 50,25 = 12,75."
@@ -2369,7 +2413,7 @@
       "type": "association",
       "enonce": "Retrouve le numéro de GSM de chacun. Indices : le numéro de Léa contient au moins deux fois le chiffre 7 ; Tom et Carine ont le préfixe 0422 ; la somme des deux derniers chiffres du numéro de Mehdi est 10 ; le dernier chiffre du numéro de Carine est impair.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "gauche": [
         "0422 / 87 17 46",
         "0431 / 71 12 78",
@@ -2410,7 +2454,7 @@
       "type": "trous",
       "enonce": "Complète la phrase.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "texte": "Le sang va du cœur aux organes par les {1} et il retourne des organes au cœur par les {2}.",
       "reponse": [
@@ -2433,9 +2477,9 @@
       "type": "ouverte",
       "enonce": "Une élève affirme : « Tous les déchets transportés par le sang sont évacués au niveau des poumons. » C'est faux. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
-      "reponseModele": "Les poumons n'évacuent que le dioxyde de carbone ; les autres déchets sont filtrés par les reins et évacués dans l'urine."
+      "reponseModele": "Certains déchets transportés par le sang sont filtrés par les reins et évacués dans l'urine (les poumons, eux, n'évacuent que le dioxyde de carbone). Une réponse qui parle du système digestif est fausse."
     },
     {
       "id": "ceb-2026-tc-l9-q5",
@@ -2445,7 +2489,7 @@
       "type": "trous",
       "enonce": "Dans un dispositif qui illustre la respiration, un ballon se gonfle puis se dégonfle. Complète (aspiration, expiration, inspiration, oxygénation).",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "texte": "Le ballon se gonfle : cela illustre l'{1}.  ·  Le ballon se dégonfle : cela illustre l'{2}.",
       "reponse": [
@@ -2467,7 +2511,7 @@
       "type": "qcm",
       "enonce": "Dans le monde du vivant, une espèce est un ensemble de vivants pouvant…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "choix": [
         "respirer et se nourrir.",
@@ -2486,7 +2530,7 @@
       "type": "trous",
       "enonce": "Complète avec : arbre, attribut, espèce, état, classification, ressemblance.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "texte": "Un caractère par lequel les organismes diffèrent ou se ressemblent est un {1}.  ·  Un système emboîté d'organismes regroupés est une {2}.",
       "reponse": [
@@ -2508,7 +2552,7 @@
       "type": "qcm",
       "enonce": "Observe la collection 2. Quel attribut permet de distinguer les actinoptérygiens des autres animaux de ce classement ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-2"
@@ -2530,7 +2574,7 @@
       "type": "qcm",
       "enonce": "Observe la collection 2. Quel attribut permet de distinguer les insectes des autres animaux de ce classement ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-2"
@@ -2552,7 +2596,7 @@
       "type": "qcm",
       "enonce": "Observe la collection 2. Quel attribut permet de distinguer les annélides des autres animaux de ce classement ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-2"
@@ -2574,7 +2618,7 @@
       "type": "association",
       "enonce": "Dans quel ensemble faut-il placer le rougegorge et le lombric ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "gauche": [
         "Rougegorge",
@@ -2606,12 +2650,12 @@
       "type": "ouverte",
       "enonce": "Observe la collection 3. Note tous les attributs partagés utilisés pour classer les mammifères, les insectes et les oiseaux (exemple : actinoptérygiens = yeux, bouche, squelette interne, nageoires rayonnées).",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-3"
       ],
-      "reponseModele": "Mammifères : yeux, bouche, squelette interne, 4 membres, poils, mamelles, oreilles avec pavillon. Insectes : yeux, bouche, squelette externe, 1 paire d'antennes, 3 paires de pattes, ailes. Oiseaux : yeux, bouche, squelette interne, 4 membres, plumes."
+      "reponseModele": "Mammifères : yeux, bouche, squelette interne, 4 membres, poils, mamelles, oreilles avec pavillon. Insectes : yeux, bouche, squelette externe, 1 paire d'antennes, 3 paires de pattes, ailes. Oiseaux : yeux, bouche, squelette interne, 4 membres, plumes. Une liste incomplète ne rapporte pas le point."
     },
     {
       "id": "ceb-2026-tc-l9-q11a",
@@ -2621,7 +2665,7 @@
       "type": "qcm",
       "enonce": "Collection 1. Quel animal a : 1 squelette interne, 4 membres, des mamelles, des poils ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-1"
@@ -2645,7 +2689,7 @@
       "type": "qcm",
       "enonce": "Collection 1. Quel animal a : 2 yeux, 4 membres, des plumes, 1 squelette interne ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "documents": [
         "classif-1"
@@ -2669,7 +2713,7 @@
       "type": "trous",
       "enonce": "Trois expériences avec une bougie : A (la bougie s'éteint sous une cloche en verre), B (de la buée apparaît sur une plaque en verre froide), C (le thermomètre au-dessus de la flamme monte). Complète chaque conclusion.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "texte": "A : il faut du {1} pour que la bougie brûle.  ·  B : la combustion libère de la {2}.  ·  C : la combustion libère de la {3}.",
       "reponse": [
@@ -2706,7 +2750,7 @@
       "type": "qcm_multi",
       "enonce": "Dans une chaudière à gaz, la combustion du gaz naturel nécessite du dioxygène. Que libère cette combustion ? (3 réponses)",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "choix": [
         "De la vapeur d'eau",
@@ -2731,7 +2775,7 @@
       "type": "qcm",
       "enonce": "Un feu s'est déclaré dans la cuisine. Après avoir coupé le gaz, quel moyen permet de l'éteindre en toute sécurité ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "choix": [
         "Jeter de l'eau sur la poêle.",
@@ -2750,7 +2794,7 @@
       "type": "grille",
       "enonce": "Quel type de phénomène est-ce ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-phenomenes",
       "lignes": [
         "L'évaporation de l'eau : l'eau change simplement d'état.",
@@ -2778,7 +2822,7 @@
       "type": "qcm_multi",
       "enonce": "Quelles sont les deux ressources d'énergie non renouvelables ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-energie",
       "choix": [
         "Lumière du Soleil",
@@ -2801,7 +2845,7 @@
       "type": "trous",
       "enonce": "Situations : 1 la laine pour un pull ; 2 le liège en construction ; 3 l'acier pour des radiateurs ; 4 le bois pour des portes et des châssis. Écris un numéro.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-energie",
       "texte": "Une situation où la matière est un bon isolant thermique : {1}  ·  Une situation où la matière est un bon conducteur thermique : {2}",
       "reponse": [
@@ -2825,13 +2869,13 @@
       "type": "ouverte",
       "enonce": "Quel facteur influence la durée de combustion de la flamme dans l'expérience 1 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "documents": [
         "bougies-1",
         "bougies-2"
       ],
-      "reponseModele": "Le volume du récipient (la quantité d'air, donc de dioxygène, disponible)."
+      "reponseModele": "La quantité d'air (de dioxygène) contenue dans le récipient. On accepte aussi : le volume ou la taille du récipient."
     },
     {
       "id": "ceb-2026-tc-l9-q19a",
@@ -2841,7 +2885,7 @@
       "type": "trous",
       "enonce": "Expérience 1 : complète le tableau à l'aide du graphique.",
       "points": 4,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "documents": [
         "bougies-1",
@@ -2874,7 +2918,7 @@
       "type": "ouverte",
       "enonce": "Quel facteur influence la durée de combustion de la flamme dans l'expérience 2 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "documents": [
         "bougies-3",
@@ -2890,7 +2934,7 @@
       "type": "qcm",
       "enonce": "Lors de l'expérience 3, la grande bougie s'éteint parce qu'il n'y a plus de dioxygène dans le haut du bocal. Quel serait donc le bon réflexe en cas d'incendie ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "documents": [
         "bougies-5"
@@ -2909,22 +2953,42 @@
       "livret": 9,
       "numero": "22",
       "domaine": "sc.matiere",
-      "type": "qcm",
-      "enonce": "L'huile de la friteuse prend feu (feu de classe F). Quel dispositif faut-il utiliser ?",
-      "points": 1,
-      "corrigeVerifie": false,
+      "type": "grille",
+      "enonce": "Lis le document « Éteindre un incendie ». Pour chaque situation, choisis un dispositif qui permet d'éteindre le feu. (Exemple donné dans l'épreuve : le réchaud à gaz prend feu → extincteur à poudre.)",
+      "points": 3,
+      "corrigeVerifie": true,
       "fiche": "sc-combustion",
       "documents": [
         "extincteurs"
       ],
-      "choix": [
+      "reponse": [
+        3,
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "explication": "Friteuse = huile de cuisson (classe F) : seul l'extincteur à mousse de graisse convient. Papiers (classe A) : poudre, mousse, mousse de graisse ou dévidoir. Essence (classe B) : CO₂, poudre, mousse ou mousse de graisse (jamais d'eau, donc pas le dévidoir).",
+      "lignes": [
+        "L'huile de la friteuse prend feu.",
+        "Une poubelle à papiers prend feu.",
+        "Le bidon d'essence pour la tondeuse prend feu."
+      ],
+      "colonnes": [
         "Extincteur CO₂",
+        "Extincteur à poudre",
         "Extincteur à mousse",
         "Extincteur à mousse de graisse",
         "Dévidoir"
-      ],
-      "reponse": 2,
-      "explication": "Seul l'extincteur à mousse de graisse convient aux feux de classe F (huiles et graisses de cuisson)."
+      ]
     },
     {
       "id": "ceb-2026-tc-l10-q1",
@@ -2934,7 +2998,7 @@
       "type": "grille",
       "enonce": "Quelle est l'intention dominante de l'auteur pour chaque texte ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "eiffel",
@@ -2964,11 +3028,11 @@
       "type": "ouverte",
       "enonce": "Gabrielle Petit a plusieurs activités en tant qu'espionne. Écris-en une.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
-      "reponseModele": "Observer les mouvements des troupes allemandes ; transmettre les renseignements aux Anglais ; écrire des messages cachés dans des cartes postales."
+      "reponseModele": "Une idée parmi : observer les mouvements des troupes allemandes ; transmettre les renseignements aux Anglais ; écrire des messages sur de fins morceaux de papier."
     },
     {
       "id": "ceb-2026-tc-l10-q3",
@@ -2978,7 +3042,7 @@
       "type": "trous",
       "enonce": "Lis le texte sur Gabrielle Petit.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -3002,7 +3066,7 @@
       "type": "grille",
       "enonce": "Dans quel bloc d'informations du texte sur Gabrielle Petit insérerais-tu chaque renseignement ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -3030,11 +3094,11 @@
       "type": "ouverte",
       "enonce": "Écris deux raisons pour lesquelles c'était « dur » d'être une espionne, selon Gabrielle Petit.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
-      "reponseModele": "Personne ne savait qu'elle était une espionne ; elle changeait souvent d'identité."
+      "reponseModele": "Deux idées qui expliquent le danger : elle risquait d'être repérée, arrêtée, de perdre la vie ; elle devait garder sa mission secrète (personne ne savait qu'elle était espionne, elle changeait souvent d'identité). Dire seulement que c'était difficile ou risqué ne suffit pas."
     },
     {
       "id": "ceb-2026-tc-l10-q7",
@@ -3044,11 +3108,11 @@
       "type": "ouverte",
       "enonce": "D'après le texte, pour quelle raison la tour Eiffel est-elle une prouesse technique pour l'époque ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "eiffel"
       ],
-      "reponseModele": "Elle a été montée en seulement deux ans et elle est devenue le plus haut édifice du monde."
+      "reponseModele": "Une idée parmi : sa hauteur (le plus haut édifice du monde), la rapidité de sa construction (montée en deux ans), l'avancée architecturale. Écrire seulement « c'est un exploit technique » ne suffit pas."
     },
     {
       "id": "ceb-2026-tc-l10-q8",
@@ -3058,7 +3122,7 @@
       "type": "qcm",
       "enonce": "Gustave Eiffel a choisi le fer pour sa tour car le fer est…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "eiffel"
       ],
@@ -3079,7 +3143,7 @@
       "type": "texte_court",
       "enonce": "Dans le texte « L'inimitable tour Eiffel », recopie un mot qui désigne « poètes, écrivains et peintres ».",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "documents": [
         "eiffel"
@@ -3087,7 +3151,9 @@
       "reponse": [
         "artistes",
         "les artistes",
-        "artiste"
+        "artiste",
+        "ils",
+        "de nombreux artistes"
       ],
       "souple": true,
       "explication": "« De nombreux artistes sont particulièrement réticents… » : les poètes, écrivains et peintres sont des artistes."
@@ -3100,7 +3166,7 @@
       "type": "qcm",
       "enonce": "Dans le texte « Au top : le grand nettoyage », quel est l'objectif du grand nettoyage ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nettoyage"
       ],
@@ -3121,11 +3187,11 @@
       "type": "ouverte",
       "enonce": "Relis la blague n° 2 (une chenille et un millepatte). Écris une raison pour laquelle cette blague est imaginaire.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
-      "reponseModele": "Des animaux ne parlent pas et ne vont pas au café."
+      "reponseModele": "Une raison liée à l'imaginaire : une chenille et un millepatte ne parlent pas, ne vont pas au café ; un millepatte ne sait pas lire, ne s'essuie pas les pieds (il n'a pas de « pieds »)."
     },
     {
       "id": "ceb-2026-tc-l10-q13",
@@ -3133,9 +3199,9 @@
       "numero": "13",
       "domaine": "fr.grammaire",
       "type": "trous",
-      "enonce": "« – Alors, et ce premier bulletin, tu me le montres ? Il lui répond, tout fier… » Que remplacent les pronoms ?",
+      "enonce": "« – Alors, et ce premier bulletin, tu me le montres ? Il lui répond, tout fier : – C'est mon ami Colin qui l'a. Je le lui ai prêté : il voulait faire peur à son père ! » Quel mot ou groupe de mots remplacent « le » (dans « tu me le montres ») et « lui » (dans « Je le lui ai prêté ») ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "documents": [
         "blagues"
@@ -3144,20 +3210,22 @@
       "reponse": [
         [
           "ce premier bulletin",
+          "ce premier bulletin de Tom",
           "le premier bulletin",
+          "le premier bulletin de Tom",
           "le bulletin",
           "bulletin"
         ],
         [
-          "son père",
-          "le père",
-          "le père de Tom",
-          "au père de Tom",
-          "à son père"
+          "mon ami Colin",
+          "Colin",
+          "mon ami",
+          "qui",
+          "son ami Colin"
         ]
       ],
       "souple": true,
-      "explication": "« le » reprend « ce premier bulletin ». « lui » : Tom répond à son père."
+      "explication": "« le » reprend « ce premier bulletin » (de Tom). Dans « Je le lui ai prêté », Tom parle de son ami : « lui » reprend « mon ami Colin »."
     },
     {
       "id": "ceb-2026-tc-l10-q15a",
@@ -3166,8 +3234,8 @@
       "domaine": "fr.lire",
       "type": "qcm",
       "enonce": "Dans la blague n° 1, qui dit : « Alors, et ce premier bulletin, tu me le montres ? »",
-      "points": 1,
-      "corrigeVerifie": false,
+      "points": 0.5,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -3187,8 +3255,8 @@
       "domaine": "fr.lire",
       "type": "qcm",
       "enonce": "Et à qui parle-t-il ?",
-      "points": 1,
-      "corrigeVerifie": false,
+      "points": 0.5,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -3209,7 +3277,7 @@
       "type": "qcm",
       "enonce": "Dans la blague n° 3 (l'oiseau migrateur), quel procédé l'auteur utilise-t-il pour faire sourire ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -3230,7 +3298,7 @@
       "type": "qcm",
       "enonce": "Quel est le message de l'affiche « Jouer aide à grandir » ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nettoyage"
       ],
@@ -3251,7 +3319,7 @@
       "type": "grille",
       "enonce": "Définitions de « résistance » : 1 capacité à endurer la fatigue ; 2 action de s'opposer à quelqu'un ou à quelque chose ; 3 capacité d'un matériau à résister à des forces ; 4 conducteur qui dégage de la chaleur. Quel sens a le mot dans chaque phrase ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "lignes": [
         "Gabrielle Petit est un symbole de la résistance.",
@@ -3277,7 +3345,7 @@
       "type": "grille",
       "enonce": "Chaque phrase exprime-t-elle un fait ou une opinion ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "lignes": [
         "La tour Eiffel est monstrueuse.",
@@ -3303,7 +3371,7 @@
       "type": "qcm",
       "enonce": "« Jouer aide à grandir. » À quel mode est le verbe « Jouer » ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-modes",
       "choix": [
         "Impératif",
@@ -3322,7 +3390,7 @@
       "type": "qcm",
       "enonce": "« Un oiseau qui ne se gratte que d'un seul côté. » À quel mode est le verbe « gratte » ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-modes",
       "choix": [
         "Impératif",
@@ -3333,5 +3401,6 @@
       "reponse": 3,
       "explication": "« se gratte » est conjugué au présent de l'indicatif (il se gratte)."
     }
-  ]
+  ],
+  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2026, référentiels du tronc commun), comparé question par question le 21/10/2026."
 }
