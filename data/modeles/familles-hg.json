@@ -131,7 +131,8 @@
       "repere": true
      },
      "enonce": "Quelle est la date de cet événement : {cle} ?",
-     "explication": "{valeur} : {cle}. {info}"
+     "explication": "{valeur} : {cle}. {info}",
+     "voisinsPar": "periode"
     },
     {
      "sorte": "association",
@@ -233,7 +234,25 @@
      "sorte": "lequel",
      "champ": "periode",
      "enonce": "Lequel de ces éléments est typique de la vie {valeurPhrase} ?",
-     "explication": "{Cle} : période « {valeur} ». {info}"
+     "explication": "{Cle} : période « {valeur} ». {info}",
+     "groupes": [
+      [
+       "Préhistoire",
+       "Antiquité"
+      ],
+      [
+       "Antiquité",
+       "Moyen Âge"
+      ],
+      [
+       "Moyen Âge",
+       "Temps modernes"
+      ],
+      [
+       "Temps modernes",
+       "Époque contemporaine"
+      ]
+     ]
     },
     {
      "sorte": "intrus",
@@ -296,7 +315,25 @@
      "sorte": "lequel",
      "champ": "periode",
      "enonce": "Lequel de ces personnages a joué un rôle important {valeurPhrase} ?",
-     "explication": "{Cle}, {role} ({quand}) : période « {valeur} »."
+     "explication": "{Cle}, {role} ({quand}) : période « {valeur} ».",
+     "groupes": [
+      [
+       "Préhistoire",
+       "Antiquité"
+      ],
+      [
+       "Antiquité",
+       "Moyen Âge"
+      ],
+      [
+       "Moyen Âge",
+       "Temps modernes"
+      ],
+      [
+       "Temps modernes",
+       "Époque contemporaine"
+      ]
+     ]
     },
     {
      "sorte": "intrus",
@@ -321,14 +358,16 @@
      "sorte": "attribut",
      "champ": "role",
      "enonce": "Qui était {cle} ?",
-     "explication": "{Cle} était {valeur} ({quand})."
+     "explication": "{Cle} était {valeur} ({quand}).",
+     "voisinsPar": "periode"
     },
     {
      "sorte": "attribut",
      "champ": "nom",
      "cle": "role",
      "enonce": "Qui était {cle} ?",
-     "explication": "{Cle} : c'était {valeur} ({quand})."
+     "explication": "{Cle} : c'était {valeur} ({quand}).",
+     "voisinsPar": "periode"
     },
     {
      "sorte": "association",
@@ -471,7 +510,8 @@
      ],
      "difficulte": 3,
      "enonce": "Laquelle de ces provinces a une frontière avec {valeur} ?",
-     "explication": "{Cle} touche {valeur}."
+     "explication": "{Cle} touche {valeur}.",
+     "voisinsPar": "region"
     }
    ]
   },
@@ -490,7 +530,8 @@
      "explication": "{Cle} se trouve dans {valeurPhrase} ({region}).",
      "avec": [
       "provinceDistincte"
-     ]
+     ],
+     "voisinsPar": "region"
     },
     {
      "sorte": "grille",
@@ -748,6 +789,56 @@
      "explication": "La capitale {de} est {valeur}.",
      "avec": [
       "capitaleDistincte"
+     ],
+     "groupes": [
+      [
+       "Stockholm",
+       "Oslo",
+       "Helsinki",
+       "Copenhague",
+       "Reykjavik",
+       "Tallinn",
+       "Riga",
+       "Vilnius"
+      ],
+      [
+       "Paris",
+       "Bruxelles",
+       "Amsterdam",
+       "Luxembourg",
+       "Londres",
+       "Dublin",
+       "Berlin"
+      ],
+      [
+       "Rome",
+       "Madrid",
+       "Lisbonne",
+       "Athènes",
+       "La Valette",
+       "Nicosie",
+       "Tirana"
+      ],
+      [
+       "Berlin",
+       "Vienne",
+       "Berne",
+       "Prague",
+       "Varsovie",
+       "Budapest",
+       "Bratislava",
+       "Ljubljana",
+       "Zagreb"
+      ],
+      [
+       "Bucarest",
+       "Sofia",
+       "Belgrade",
+       "Zagreb",
+       "Tirana",
+       "Athènes",
+       "Budapest"
+      ]
      ]
     },
     {

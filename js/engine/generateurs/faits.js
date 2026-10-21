@@ -132,6 +132,14 @@ const FORMES = {
     if (!forme.distracteurs && faux.every((v) => !Number.isNaN(num(v))) && !Number.isNaN(num(bonnes[0]))) {
       const b = num(bonnes[0]);
       faux = [...faux].sort((x, y) => Math.abs(num(x) - b) - Math.abs(num(y) - b) || rng.next() - 0.5);
+    } else if (!forme.distracteurs && forme.voisinsPar) {
+      // voisinsPar : distracteurs pris d'abord chez les éléments qui partagent ce champ
+      // (même période pour un personnage, même Région pour une ville…).
+      const cle = forme.voisinsPar; const ref = liste(it[cle]).map(aff);
+      const g = groupesDe(modele, forme);
+      const proche = (x) => liste(x[cle]).map(aff).some((w) => ref.includes(w) || memeGroupe(g, w, ref[0]));
+      const vals = (l) => rng.shuffle(l.filter((x) => x !== it).flatMap((x) => liste(x[forme.champ]).map(aff)));
+      faux = [...vals(items.filter(proche)), ...vals(items.filter((x) => !proche(x)))];
     } else if (!forme.distracteurs && (groupesDe(modele, forme) || forme.proches === 'graphie')) {
       faux = trierParProximite(rng, faux, { valeur: bonnes[0], mot: nomDe(modele, forme, it) }, { groupes: groupesDe(modele, forme), graphie: forme.proches === 'graphie' });
     }
@@ -154,8 +162,10 @@ const FORMES = {
     const g = groupesDe(modele, forme);
     let pool = sans.filter((x) => nomDe(modele, forme, x) !== nomDe(modele, forme, bon));
     // Distracteurs d'une catégorie voisine d'abord (un légume pour « un fruit », pas une trottinette).
-    if (g) {
-      const voisins = pool.filter((x) => liste(x[forme.champ]).map(aff).some((w) => memeGroupe(g, w, v)));
+    if (g || forme.voisinsPar) {
+      const voisins = pool.filter((x) => (forme.voisinsPar
+        ? liste(x[forme.voisinsPar]).map(aff).some((w) => liste(bon[forme.voisinsPar]).map(aff).includes(w))
+        : liste(x[forme.champ]).map(aff).some((w) => memeGroupe(g, w, v))));
       if (voisins.length >= (forme.choix ?? 4) - 1) pool = voisins;
     }
     const autres = tirerDistincts(rng, pool, (forme.choix ?? 4) - 1, (x) => nomDe(modele, forme, x));

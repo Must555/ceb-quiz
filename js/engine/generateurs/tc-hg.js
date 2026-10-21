@@ -482,7 +482,7 @@ const POURQUOI_MIGR = [
     ko: ['L\'agriculture', 'La pêche en mer du Nord', 'Le tourisme', 'L\'informatique'],
     expl: 'L\'accord belgo-italien de 1946 envoie des travailleurs italiens dans les charbonnages (mines de charbon) belges.' },
   { q: 'En 1946, la Belgique et l\'Italie signent un accord. Que reçoit l\'Italie en échange des travailleurs envoyés en Belgique ?', ok: 'Du charbon vendu à bas prix',
-    ko: ['Du chocolat', 'Des terres en Belgique', 'Du pétrole', 'Des bateaux de pêche'],
+    ko: ['De l\'acier pour ses usines', 'Du blé pour nourrir sa population', 'Des machines agricoles', 'De l\'argent pour reconstruire ses routes'],
     expl: 'C\'est l\'accord « des hommes contre du charbon » : l\'Italie envoie des mineurs, la Belgique lui vend du charbon à bas prix.' },
   { q: 'Quel pays a signé le premier accord avec la Belgique pour lui envoyer des travailleurs, en 1946 ?', ok: 'L\'Italie',
     ko: ['Le Maroc', 'La Turquie', 'L\'Espagne', 'La Grèce'],
@@ -519,7 +519,7 @@ const CAZIER = [
     ko: ['Liège', 'Gand', 'Anvers', 'Arlon'],
     expl: 'Le Bois du Cazier se trouve à Marcinelle, une commune fusionnée avec Charleroi, dans le Hainaut.' },
   { q: 'Que nous apprend la catastrophe du Bois du Cazier sur le travail des immigrés dans les années 1950 ?', ok: 'Les mineurs immigrés faisaient un travail très dur et dangereux.',
-    ko: ['Les immigrés travaillaient surtout dans les bureaux.', 'Les mines étaient très sûres à cette époque.', 'Les immigrés ne travaillaient pas dans les mines.'],
+    ko: ['Les mineurs immigrés étaient mieux payés que les mineurs belges.', 'Seuls des Italiens travaillaient dans les mines belges.', 'Les mineurs immigrés travaillaient surtout à la surface, loin du danger.'],
     expl: 'Au fond des mines, le travail était épuisant et dangereux (incendies, coups de grisou, maladies des poumons). Beaucoup de mineurs étaient des immigrés.' },
   { q: 'Qu\'est devenu aujourd\'hui le site du Bois du Cazier ?', ok: 'Un lieu de mémoire et un musée, inscrit au patrimoine mondial de l\'UNESCO',
     ko: ['Une mine de charbon encore en activité', 'Un aéroport', 'Une gare de chemin de fer'],
@@ -541,7 +541,8 @@ const APPORTS_MIGR = {
     'Des associations et des fêtes culturelles',
     'De nouveaux mots et d\'autres langues entendues dans les rues',
   ],
-  ko: ['Les chaussées romaines', 'Le beffroi de Bruges', 'Les monastères du Haut Moyen Âge', 'Les châteaux forts', 'Les villas gallo-romaines'],
+  // Des traditions belges anciennes, antérieures aux migrations de l'après-guerre : plausibles, mais pas des apports de ces migrations.
+  ko: ['Le carnaval de Binche et ses Gilles', 'Les frites et les moules', 'La gaufre de Liège', 'Le folklore des géants de la ducasse d\'Ath', 'Les dialectes wallons'],
 };
 const OBSTACLES = [
   'ne pas parler la langue du pays (français ou néerlandais)',
@@ -723,10 +724,10 @@ const IMPACTS = {
     'Les colonisateurs prennent les terres, l\'or et l\'argent des peuples colonisés.',
   ],
   ko: [
-    'Les peuples colonisés deviennent plus riches que les Européens.',
-    'Les Européens adoptent la langue des Aztèques.',
+    'Les peuples colonisés reçoivent les mêmes droits que les colons européens.',
+    'Les maladies venues d\'Europe n\'atteignent pas les peuples d\'Amérique.',
     'Les peuples colonisés gardent leurs terres et leurs lois.',
-    'Les Amérindiens partent coloniser l\'Europe.',
+    'Les peuples colonisés choisissent librement de travailler pour les Européens.',
     'Les Européens découvrent la pomme de terre et le cacao.',
   ],
 };
@@ -1278,7 +1279,7 @@ const ORDRES_POP = [
     ko: ['Environ 3', 'Environ 5', 'Environ 6'],
     expl: 'Environ 10 % de l\'humanité vit en Europe, soit environ 1 personne sur 10.' },
   { q: 'Aujourd\'hui, quelle part de la population mondiale vit en zone urbaine (villes et agglomérations) ?', ok: 'Plus de la moitié',
-    ko: ['Environ 1 personne sur 10', 'Environ un quart', 'Presque personne'],
+    ko: ['Environ un quart', 'Environ un tiers', 'Environ trois quarts'],
     expl: 'Depuis le début du 21e siècle, plus de la moitié des humains vivent en zone urbaine (dans les villes et leurs agglomérations), et cette part augmente encore.' },
   { q: 'En dehors de l\'Antarctique, quel continent compte le moins d\'habitants ?', ok: 'L\'Océanie',
     ko: ['L\'Asie', 'L\'Afrique', 'L\'Europe', 'L\'Amérique'],
@@ -1297,22 +1298,22 @@ const ORDRES_POP = [
     expl: 'Densité = nombre d\'habitants ÷ superficie (en km²). Un pays peut avoir beaucoup d\'habitants mais une faible densité s\'il est très grand.' },
 ];
 const LIEUX = [
-  { t: 'le Sahara', ou: 'au Sahara', p: false, c: 'Il fait très chaud et il y a très peu d\'eau (désert chaud).' },
-  { t: 'la Sibérie', ou: 'en Sibérie', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
-  { t: 'l\'Amazonie', ou: 'en Amazonie', p: false, c: 'C\'est une immense forêt dense, chaude et humide, difficile à traverser et à défricher.' },
-  { t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes, aux pentes raides, où il fait froid et où l\'on cultive peu.' },
-  { t: 'l\'Antarctique', ou: 'en Antarctique', p: false, c: 'C\'est un continent couvert de glace, glacial toute l\'année.' },
-  { t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'C\'est une région recouverte d\'une épaisse calotte de glace.' },
-  { t: 'le centre de l\'Australie', ou: 'au centre de l\'Australie', p: false, c: 'C\'est une région très sèche (aride), avec très peu de pluie.' },
-  { t: 'le Grand Nord canadien', ou: 'dans le Grand Nord canadien', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
-  { t: 'la vallée et le delta du Nil', ou: 'dans la vallée et le delta du Nil', p: true, c: 'L\'eau du fleuve permet de cultiver des terres fertiles au milieu du désert.' },
-  { t: 'la plaine du Gange, en Inde', ou: 'dans la plaine du Gange, en Inde', p: true, c: 'C\'est une grande plaine fertile, arrosée par un fleuve et par les pluies de la mousson.' },
-  { t: 'l\'est de la Chine', ou: 'dans l\'est de la Chine', p: true, c: 'On y trouve des plaines fertiles, de grands fleuves et un long littoral.' },
-  { t: 'l\'île de Java, en Indonésie', ou: 'sur l\'île de Java, en Indonésie', p: true, c: 'Les sols volcaniques y sont fertiles et le climat chaud et humide convient au riz.' },
-  { t: 'le Bangladesh', ou: 'au Bangladesh', p: true, c: 'C\'est un immense delta fertile, très favorable à la culture du riz.' },
-  { t: 'l\'Europe de l\'Ouest', ou: 'en Europe de l\'Ouest', p: true, c: 'Le climat y est tempéré, avec des plaines, des fleuves et de nombreuses villes.' },
-  { t: 'les côtes du Japon', ou: 'sur les côtes du Japon', p: true, c: 'Les plaines du littoral accueillent des ports et de très grandes villes.' },
-  { t: 'la côte est des États-Unis', ou: 'sur la côte est des États-Unis', p: true, c: 'Le littoral offre des ports et de grandes villes ouvertes au commerce.' },
+  { fam: 'sec', t: 'le Sahara', ou: 'au Sahara', p: false, c: 'Il fait très chaud et il y a très peu d\'eau (désert chaud).' },
+  { fam: 'froid', t: 'la Sibérie', ou: 'en Sibérie', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
+  { fam: 'foret', t: 'l\'Amazonie', ou: 'en Amazonie', p: false, c: 'C\'est une immense forêt dense, chaude et humide, difficile à traverser et à défricher.' },
+  { fam: 'montagne', t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes, aux pentes raides, où il fait froid et où l\'on cultive peu.' },
+  { fam: 'glace', t: 'l\'Antarctique', ou: 'en Antarctique', p: false, c: 'C\'est un continent couvert de glace, glacial toute l\'année.' },
+  { fam: 'glace', t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'C\'est une région recouverte d\'une épaisse calotte de glace.' },
+  { fam: 'sec', t: 'le centre de l\'Australie', ou: 'au centre de l\'Australie', p: false, c: 'C\'est une région très sèche (aride), avec très peu de pluie.' },
+  { fam: 'froid', t: 'le Grand Nord canadien', ou: 'dans le Grand Nord canadien', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
+  { fam: 'desert-fleuve', t: 'la vallée et le delta du Nil', ou: 'dans la vallée et le delta du Nil', p: true, c: 'L\'eau du fleuve permet de cultiver des terres fertiles au milieu du désert.' },
+  { fam: 'fleuve mousson', t: 'la plaine du Gange, en Inde', ou: 'dans la plaine du Gange, en Inde', p: true, c: 'C\'est une grande plaine fertile, arrosée par un fleuve et par les pluies de la mousson.' },
+  { fam: 'fleuve littoral plaine', t: 'l\'est de la Chine', ou: 'dans l\'est de la Chine', p: true, c: 'On y trouve des plaines fertiles, de grands fleuves et un long littoral.' },
+  { fam: 'volcan', t: 'l\'île de Java, en Indonésie', ou: 'sur l\'île de Java, en Indonésie', p: true, c: 'Les sols volcaniques y sont fertiles et le climat chaud et humide convient au riz.' },
+  { fam: 'fleuve delta', t: 'le Bangladesh', ou: 'au Bangladesh', p: true, c: 'C\'est un immense delta fertile, très favorable à la culture du riz.' },
+  { fam: 'tempere plaine fleuve', t: 'l\'Europe de l\'Ouest', ou: 'en Europe de l\'Ouest', p: true, c: 'Le climat y est tempéré, avec des plaines, des fleuves et de nombreuses villes.' },
+  { fam: 'littoral', t: 'les côtes du Japon', ou: 'sur les côtes du Japon', p: true, c: 'Les plaines du littoral accueillent des ports et de très grandes villes.' },
+  { fam: 'littoral', t: 'la côte est des États-Unis', ou: 'sur la côte est des États-Unis', p: true, c: 'Le littoral offre des ports et de grandes villes ouvertes au commerce.' },
 ];
 const PAYS_POP = [
   { nom: 'la Russie', pop: 144e6, sup: 17100000 },
@@ -1353,7 +1354,12 @@ const population = famille('po', [
   // Cause
   [3, (rng) => {
     const l = rng.pick(LIEUX);
-    const q = qcm(rng, l.c, LIEUX.filter((x) => x.p !== l.p).map((x) => x.c));
+    // Une raison « contraire » (raisonnement) et deux raisons du même sens mais propres à d'autres régions
+    // (connaissance du lieu) ; jamais une région au profil semblable (fam), qui rendrait deux réponses justes.
+    const autreFam = (x) => !x.fam.split(' ').some((f) => l.fam.split(' ').includes(f));
+    const memes = rng.shuffle(LIEUX.filter((x) => x !== l && x.p === l.p && autreFam(x))).slice(0, 2).map((x) => x.c);
+    const contraires = rng.shuffle(LIEUX.filter((x) => x.p !== l.p)).slice(0, 3 - memes.length).map((x) => x.c);
+    const q = qcm(rng, l.c, [...memes, ...contraires]);
     return {
       ...q,
       enonce: `Pourquoi y a-t-il ${l.p ? 'beaucoup' : 'très peu'} d'habitants ${l.ou} ?`,
@@ -2938,7 +2944,7 @@ const MODIFS_VA = {
     appl(sc) { sc.autoroute = sc.rangRiviere === 3 ? 1 : 2; return true; } },
 };
 const PERMANENT_VA = ['Le tracé de la rivière'];
-const FAUX_VA = ['La rivière a changé de tracé.', 'La route principale a disparu.', 'Le village a été entièrement détruit.'];
+const FAUX_VA = ['La rivière a changé de tracé.', 'La route principale a disparu.'];
 
 function avantApres(rng, nbMod) {
   const avant = sceneVA(rng);
@@ -3081,10 +3087,11 @@ const EQUITABLE = {
     'Les enfants des cultivateurs vont à l\'école au lieu de travailler dans les plantations.',
     'Une partie de l\'argent sert à construire un puits ou une école dans le village des producteurs.',
     'Les producteurs de café se regroupent en coopérative et décident ensemble.'],
-  ko: ['Le café est acheté au prix le plus bas possible, même si le cultivateur ne peut pas en vivre.',
-    'Des enfants travaillent toute la journée dans les plantations de cacao.',
-    'L\'intermédiaire garde presque tout le bénéfice et le producteur reçoit très peu.',
-    'Les ouvriers travaillent sans contrat, sans pause et sans protection.'],
+  // Des situations qui « sonnent bien » mais ne garantissent pas un commerce équitable (bio, local, prix du marché…).
+  ko: ['Le chocolat porte un label bio, mais le cultivateur est payé au prix le plus bas.',
+    'Le prix payé au cultivateur change chaque jour, selon les marchés mondiaux.',
+    'Le chocolat est fabriqué en Belgique avec du cacao acheté au prix le plus bas.',
+    'Un grand magasin fixe seul le prix qu\'il paie aux cultivateurs de café.'],
 };
 const ALTERNATIVES = {
   ok: ['Acheter un vélo d\'occasion dans un magasin de seconde main', 'Faire réparer son grille-pain dans un « repair café »',

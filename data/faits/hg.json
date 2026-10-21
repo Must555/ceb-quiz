@@ -205,7 +205,6 @@
     {
      "nom": "l'invention de l'imprimerie à caractères mobiles par Gutenberg",
      "annee": 1450,
-     "periode": "Moyen Âge",
      "date": "vers 1450",
      "approx": true,
      "repere": true,
@@ -1044,7 +1043,6 @@
     },
     {
      "nom": "Gutenberg",
-     "periode": "Moyen Âge",
      "role": "l'inventeur de l'imprimerie à caractères mobiles",
      "quand": "vers 1450"
     },
@@ -1919,7 +1917,7 @@
      "provinceDistincte": true
     },
     {
-     "nom": "Saint-Nicolas",
+     "nom": "Saint-Nicolas (Sint-Niklaas)",
      "region": "Région flamande",
      "langue": "le néerlandais",
      "provinceQ": "Flandre orientale",
@@ -4625,7 +4623,7 @@
      "ko": [
       "Le Premier ministre",
       "Le président de la République",
-      "Le bourgmestre de Bruxelles"
+      "Le président de la Chambre"
      ],
      "expl": "La Belgique est une monarchie constitutionnelle : le roi est le chef de l'État. Le Premier ministre dirige le gouvernement fédéral."
     },
@@ -4748,8 +4746,7 @@
      "ok": "L'Allemagne",
      "ko": [
       "La France",
-      "Les Pays-Bas",
-      "Le Royaume-Uni"
+      "Les Pays-Bas"
      ],
      "expl": "L'Allemagne est à l'est, près de la province de Liège."
     },
@@ -5289,10 +5286,9 @@
      "q": "Comment s'appelle l'instrument qui indique le nord ?",
      "ok": "La boussole",
      "ko": [
-      "Le thermomètre",
+      "La rose des vents",
       "Le baromètre",
-      "La loupe",
-      "Le pluviomètre"
+      "Le rapporteur"
      ],
      "expl": "L'aiguille aimantée de la boussole se tourne vers le nord."
     },
@@ -5520,9 +5516,9 @@
      "q": "Qu'est-ce qu'une carte thématique ?",
      "ok": "Une carte qui présente un sujet précis (le climat, la densité de population, le relief…)",
      "ko": [
-      "Une carte qui montre seulement les routes",
-      "Une carte dessinée à la main",
-      "Une carte sans légende"
+      "Une carte qui montre les pays et leurs capitales",
+      "Une carte qui sert à se repérer dans les rues d'une ville",
+      "Une carte qui montre toutes les routes d'un pays"
      ],
      "expl": "Une carte thématique traite d'un thème : son titre et sa légende disent lequel."
     },
