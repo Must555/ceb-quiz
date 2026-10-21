@@ -2173,36 +2173,44 @@
    "items": [
     {
      "nom": "le dytique",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la larve de libellule",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le nénuphar",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la lentille d'eau",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la daphnie",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "la limnée",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le gerris",
      "milieu": "la mare",
-     "info": "Cet insecte glisse à la surface de l'eau."
+     "info": "Cet insecte glisse à la surface de l'eau.",
+     "eau": "oui"
     },
     {
      "nom": "le têtard",
-     "milieu": "la mare"
+     "milieu": "la mare",
+     "eau": "oui"
     },
     {
      "nom": "le chevreuil",
@@ -2246,39 +2254,48 @@
     {
      "nom": "le hareng",
      "milieu": "la mer",
-     "decomp": "non"
+     "decomp": "non",
+     "eau": "oui"
     },
     {
      "nom": "le phoque",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le crabe",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "la moule",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "l'étoile de mer",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "la méduse",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le requin",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le dauphin",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le cabillaud",
-     "milieu": "la mer"
+     "milieu": "la mer",
+     "eau": "oui"
     },
     {
      "nom": "le ver de terre",

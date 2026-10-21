@@ -635,7 +635,7 @@ export function genererEffort(modele, rng) {
       { e: 'Comment appelle-t-on les mouvements de l\'air qui entre et sort des poumons (inspiration et expiration) ?', b: 'La ventilation', f: ['Le rythme cardiaque', 'La circulation', 'La digestion', 'L\'absorption'] },
       { e: 'Dans quelle unité exprime-t-on le rythme cardiaque ?', b: 'En battements par minute', f: ['En degrés', 'En litres', 'En kilomètres par heure', 'En mouvements par seconde'] },
       { e: 'Quel instrument faut-il pour mesurer le rythme cardiaque en comptant ses battements ?', b: 'Un chronomètre', f: ['Un thermomètre', 'Une balance', 'Un mètre ruban', 'Une loupe'] },
-      { e: 'Où peut-on facilement sentir son pouls avec deux doigts ?', b: 'Au poignet ou sur le côté du cou', f: ['Au bout du nez', 'Sur le genou', 'Sur l\'ongle', 'Sur le coude'] },
+      { e: 'Où peut-on facilement sentir son pouls avec deux doigts ?', b: 'Au poignet ou sur le côté du cou', f: ['Sur le front', 'Sur le ventre', 'Sur le genou', 'Sur le dos de la main'] },
       { e: 'Que compte-t-on pour mesurer la ventilation ?', b: 'Le nombre de fois où la poitrine se soulève en une minute', f: ['Le nombre de battements du cœur en une minute', 'Le nombre de pas en une minute', 'Le nombre de fois où l\'on avale en une minute'] },
     ];
     const Q = rng.pick(QS);
@@ -1748,9 +1748,9 @@ const GESTES_BONS = [
   'Baisser le chauffage la nuit et quand on part', 'Poser un boudin sous la porte d\'entrée', 'Isoler les murs', 'Fermer la porte d\'entrée rapidement en hiver',
 ];
 const GESTES_MAUVAIS = [
-  'Laisser une fenêtre entrouverte toute la journée avec le chauffage allumé', 'Chauffer la maison à 25 °C', 'Laisser la porte du garage froid ouverte sur le salon',
-  'Couvrir le radiateur avec du linge et des meubles', 'Laisser les volets ouverts toute la nuit en hiver', 'Chauffer les pièces où personne ne va jamais',
-  'Laisser la porte d\'entrée ouverte en hiver', 'Garder des fenêtres à simple vitrage qui laissent passer l\'air',
+  'Laisser une fenêtre entrouverte toute la journée avec le chauffage allumé', 'Monter le chauffage à 23 °C plutôt que de mettre un pull', 'Laisser la porte de la cave ouverte pour que l\'air circule',
+  'Couvrir le radiateur avec du linge et des meubles', 'Laisser les volets ouverts toute la nuit en hiver', 'Laisser le chauffage de sa chambre allumé pendant qu\'on est à l\'école',
+  'Aérer en laissant la fenêtre basculée pendant des heures', 'Garder des fenêtres à simple vitrage qui laissent passer l\'air',
 ];
 const ISOLANTS = ['de la laine', 'du polystyrène', 'du liège', 'du feutre (un tissu épais)'];
 const CONDUCTEURS = ['de l\'aluminium', 'du cuivre', 'du fer', 'de l\'acier'];

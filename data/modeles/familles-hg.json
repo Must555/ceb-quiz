@@ -864,6 +864,56 @@
      "explication": "{Cle} est la capitale {de}.",
      "avec": [
       "capitaleDistincte"
+     ],
+     "groupes": [
+      [
+       "Suède",
+       "Norvège",
+       "Finlande",
+       "Danemark",
+       "Islande",
+       "Estonie",
+       "Lettonie",
+       "Lituanie"
+      ],
+      [
+       "France",
+       "Belgique",
+       "Pays-Bas",
+       "Luxembourg",
+       "Royaume-Uni",
+       "Irlande",
+       "Allemagne"
+      ],
+      [
+       "Italie",
+       "Espagne",
+       "Portugal",
+       "Grèce",
+       "Malte",
+       "Chypre",
+       "Albanie"
+      ],
+      [
+       "Allemagne",
+       "Autriche",
+       "Suisse",
+       "Tchéquie",
+       "Pologne",
+       "Hongrie",
+       "Slovaquie",
+       "Slovénie",
+       "Croatie"
+      ],
+      [
+       "Roumanie",
+       "Bulgarie",
+       "Serbie",
+       "Croatie",
+       "Albanie",
+       "Grèce",
+       "Hongrie"
+      ]
      ]
     },
     {

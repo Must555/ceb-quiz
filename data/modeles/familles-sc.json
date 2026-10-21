@@ -521,7 +521,10 @@
      "sorte": "attribut",
      "champ": "milieu",
      "enonce": "Dans quel milieu trouve-t-on {cle} ?",
-     "explication": "On trouve {cle} dans {valeur}. {info}"
+     "explication": "On trouve {cle} dans {valeur}. {info}",
+     "filtre": {
+      "eau": "oui"
+     }
     },
     {
      "sorte": "lequel",
