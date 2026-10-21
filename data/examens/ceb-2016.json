@@ -3,7 +3,7 @@
  "annee": 2016,
  "referentiel": "socles",
  "titre": "CEB 2016",
- "source": "FWB, épreuve externe commune 2016 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "source": "FWB, épreuve externe commune 2016 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
  "remarque": "Partie « Écouter » du livret 5 non encodée : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Seules les deux questions d'écriture du livret 5 sont reprises.",
  "livrets": [
   {
@@ -222,7 +222,7 @@
    "type": "qcm",
    "enonce": "Quelle est l'intention dominante de l'auteur du conte ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "meule-1",
@@ -245,7 +245,7 @@
    "type": "qcm",
    "enonce": "Cette histoire est-elle réelle ou imaginaire ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1",
@@ -256,7 +256,7 @@
     "Imaginaire : une meule magique tourne toute seule et produit du sel."
    ],
    "reponse": 1,
-   "explication": "L'auteur dit lui-même que son explication n'est pas scientifique ; la meule est magique."
+   "explication": "L'auteur dit lui-même que son explication n'est pas scientifique ; la meule est magique. (Dans l'épreuve, il fallait justifier : la meule est magique, elle tourne toute seule et produit du sel.)"
   },
   {
    "id": "ceb-2016-l1-q3",
@@ -266,7 +266,7 @@
    "type": "ordre",
    "enonce": "Remets les actions dans l'ordre de l'histoire.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1",
@@ -296,7 +296,7 @@
    "type": "qcm_multi",
    "enonce": "« …recueillir ces vieilles histoires qu'autrefois les gens de la campagne racontaient à la veillée, et dont certaines se sont transmises de génération en génération. » Quels mots indiquent que ces histoires sont anciennes ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "meule-1"
@@ -323,7 +323,7 @@
    "type": "qcm_multi",
    "enonce": "Pourquoi le récit a-t-il sans doute subi quelques modifications ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1"
@@ -349,7 +349,7 @@
    "type": "trous",
    "enonce": "« D'une traduction à l'autre, il est possible que le récit ait subi quelques modifications, mais […] l'histoire est bien celle de la vieille Chinoise. » Classe des mots.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
    "documents": [
     "meule-1"
@@ -386,7 +386,7 @@
    "type": "qcm",
    "enonce": "Le frère cadet trouve une meule. Quelle définition convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "meule-1",
@@ -409,7 +409,7 @@
    "type": "ordre",
    "enonce": "Range ces intertitres dans l'ordre du texte.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "meule-1",
@@ -437,7 +437,7 @@
    "type": "qcm",
    "enonce": "La réponse apportée par l'auteur est-elle une explication scientifique ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1"
@@ -457,7 +457,7 @@
    "type": "qcm",
    "enonce": "Qui prononce : « Oui, mon frère. Bien, mon frère. Comme tu voudras, mon frère » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1"
@@ -478,7 +478,7 @@
    "type": "grille",
    "enonce": "Quel personnage désigne chaque mot ?",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "meule-1"
@@ -512,7 +512,7 @@
    "type": "grille",
    "enonce": "Qui reçoit quoi à la mort du père ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1"
@@ -543,7 +543,7 @@
    "type": "qcm",
    "enonce": "« Il emporte quand même sa trouvaille. « Mon pauvre mari, gémit sa femme… » » Sa femme, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "meule-1"
@@ -565,7 +565,7 @@
    "type": "qcm",
    "enonce": "« Il emporte quand même sa trouvaille. » Sa trouvaille, c'est…",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "meule-1"
@@ -586,7 +586,7 @@
    "type": "ouverte",
    "enonce": "La meule produit du sel. Le cadet l'utilise pour… tandis que l'ainé compte l'utiliser pour…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1",
@@ -602,7 +602,7 @@
    "type": "texte_court",
    "enonce": "Qu'aurait dû faire le frère ainé pour que la mer ne devienne pas salée ? Il aurait dû…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1",
@@ -622,30 +622,39 @@
    "livret": 1,
    "numero": "18",
    "domaine": "fr.lire",
-   "type": "qcm_multi",
-   "enonce": "Quels organisateurs textuels du texte expriment le temps ?",
+   "type": "trous",
+   "enonce": "Recopie deux organisateurs textuels du texte qui expriment le temps.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "documents": [
     "meule-1",
     "meule-2"
    ],
-   "choix": [
-    "Il y a quelques mois de cela",
-    "Il y a très longtemps de cela",
-    "À la mort du père",
-    "Un matin",
-    "Par la fenêtre",
-    "Comment vivre avec rien du tout ?"
-   ],
+   "explication": "Organisateurs de temps du texte : il y a quelques mois de cela, il y a très longtemps de cela, à la mort du père, un matin, avant de commencer, le temps de changer de paragraphe, à peine déposée par terre.",
+   "souple": true,
+   "differentes": true,
+   "texte": "1er organisateur : {1}\n2e organisateur : {2}",
    "reponse": [
-    0,
-    1,
-    2,
-    3
-   ],
-   "explication": "Ils situent l'action dans le temps."
+    [
+     "Il y a quelques mois de cela",
+     "Il y a très longtemps de cela",
+     "À la mort du père",
+     "Un matin",
+     "Avant de commencer",
+     "Le temps de changer de paragraphe",
+     "À peine déposée par terre"
+    ],
+    [
+     "Un matin",
+     "Il y a quelques mois de cela",
+     "Il y a très longtemps de cela",
+     "À la mort du père",
+     "Avant de commencer",
+     "Le temps de changer de paragraphe",
+     "À peine déposée par terre"
+    ]
+   ]
   },
   {
    "id": "ceb-2016-l1-q19",
@@ -655,7 +664,7 @@
    "type": "trous",
    "enonce": "Complète le tableau (exemple : j'exerce → exercer, indicatif présent, 1re personne).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "meule-1"
@@ -695,7 +704,7 @@
    "type": "trous",
    "enonce": "« À peine a-t-elle fini sa phrase, au moment même où son époux pose l'objet sur le sol, la meule se met à tourner toute seule. Elle tourne, tourne et voici qu'en sort du sel ! » Écris le sujet.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-fonctions",
    "documents": [
     "meule-1"
@@ -726,7 +735,7 @@
    "type": "texte_court",
    "enonce": "« L'ainé apprend que son frère a échappé à la misère et qu'il vit désormais heureux. » Recopie le mot qui indique que le frère vit heureux depuis la découverte de la meule.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "meule-2"
@@ -745,7 +754,7 @@
    "type": "ouverte",
    "enonce": "Avec tes mots : d'après ce texte, l'eau de la mer est salée car…",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "meule-1",
@@ -794,7 +803,7 @@
    "type": "qcm",
    "enonce": "Pourquoi ce solide est-il un polyèdre ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-solides",
    "choix": [
     "Il a 9 arêtes.",
@@ -813,7 +822,7 @@
    "type": "trous",
    "enonce": "Qui suis-je ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "texte": "Quadrilatère aux côtés isométriques, angles pas tous égaux : un {1}  ·  Polygone régulier à trois angles : un {2}  ·  Polygone à quatre angles égaux et diagonales perpendiculaires : un {3}",
    "reponse": [
@@ -839,7 +848,7 @@
    "type": "trous",
    "enonce": "Combien de faces de chaque type pour construire ces solides ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-solides",
    "texte": "Cube : {1} carrés  ·  Pyramide à base carrée : {2} carré et {3} triangles  ·  Prisme droit à base triangulaire : {4} rectangles et {5} triangles",
    "reponse": [
@@ -1060,7 +1069,7 @@
    "type": "qcm",
    "enonce": "Document A : château de Lusignan, enluminure de 1412-1414. Quelle période conventionnelle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "modevie"
@@ -1082,7 +1091,7 @@
    "type": "ouverte",
    "enonce": "Écris deux indices du document A qui montrent qu'il s'agit du Moyen Âge.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "modevie"
@@ -1097,7 +1106,7 @@
    "type": "qcm",
    "enonce": "La forêt de Soignes se situe…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
     "renards"
@@ -1150,7 +1159,7 @@
    "type": "qcm",
    "enonce": "Élevage, agriculture, villa romaine, maisons en torchis, braies, esclaves, plusieurs dieux : au temps…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "choix": [
     "des chasseurs-cueilleurs",
@@ -1169,7 +1178,7 @@
    "type": "qcm_multi",
    "enonce": "Au Moyen Âge dans nos régions, comment se loge-t-on et s'habille-t-on ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "choix": [
     "villa romaine",
@@ -1187,7 +1196,7 @@
     4,
     5
    ],
-   "explication": "Châteaux forts et chaumières ; laine et sabots."
+   "explication": "Châteaux forts et chaumières ; laine et sabots. Le corrigé accepte aussi « villa romaine »."
   },
   {
    "id": "ceb-2016-l4-q9",
@@ -1197,7 +1206,7 @@
    "type": "qcm",
    "enonce": "Quel continent n'apparait pas sur le planisphère de Martellus (1490) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "martellus"
@@ -1219,7 +1228,7 @@
    "type": "trous",
    "enonce": "Une voie romaine reliait Cambrai à Cologne. Dans quels pays se trouvent-elles aujourd'hui ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-europe",
    "texte": "Cambrai se situe en {1}  ·  Cologne se situe en {2}",
    "reponse": [
@@ -1240,7 +1249,7 @@
    "type": "trous",
    "enonce": "La grande voie romaine de Reims à Trèves passait par une ville belge actuelle.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-provinces",
    "texte": "Cette ville : {1}  ·  Province : {2}",
    "reponse": [
@@ -1262,7 +1271,7 @@
    "type": "qcm",
    "enonce": "Les jardins d'Annevoie ont été conçus au 18e siècle, c'est-à-dire…",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
     "entre 1699 et 1799.",
@@ -1280,7 +1289,7 @@
    "type": "qcm_multi",
    "enonce": "Le document A (gravure de Théodore de Bry, 1528-1598, montrant l'arrivée de Colomb en 1492) est…",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "haiti"
@@ -1309,7 +1318,7 @@
    "type": "qcm_multi",
    "enonce": "Christophe Colomb arrive en Amérique en 1492. Qui a vécu à la même époque ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-personnages",
    "choix": [
     "Marco Polo (13e-14e siècles)",
@@ -1474,7 +1483,7 @@
    "type": "ouverte",
    "enonce": "Réécris ces idées en deux ou trois phrases, avec des connecteurs et sans répétitions : Le caméléon a deux gros yeux. Le caméléon a des yeux capables de mouvements indépendants. Le caméléon peut surveiller les proies de tous les côtés. On pensait que le caméléon change de couleur pour se camoufler. On sait que le caméléon change surtout de couleur selon ses émotions.",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "reponseModele": "Le caméléon a deux gros yeux capables de mouvements indépendants : il peut donc surveiller ses proies de tous les côtés. On pensait qu'il changeait de couleur pour se camoufler, mais on sait aujourd'hui qu'il en change surtout selon ses émotions."
   },
@@ -1486,7 +1495,7 @@
    "type": "ouverte",
    "enonce": "Réécris à l'imparfait, avec « des sorciers » et « les caméléons » : « Dans une forêt tropicale, un sorcier cueille des plantes et prépare des remèdes pour guérir les membres de sa tribu. Il capture tous les animaux pour créer une potion magique. Le caméléon a tellement peur qu'il change de couleur, se cache dans le paysage et ainsi disparait aux yeux de son poursuivant. »",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "reponseModele": "Autrefois, dans une forêt tropicale, des sorciers cueillaient des plantes et préparaient des remèdes pour guérir les membres de leur tribu. Ils capturaient tous les animaux pour créer une potion magique. Les caméléons avaient tellement peur qu'ils changeaient de couleur, se cachaient dans le paysage et ainsi disparaissaient aux yeux de leurs poursuivants."
   },
@@ -1498,7 +1507,7 @@
    "type": "qcm_multi",
    "enonce": "Pour exprimer une capacité, quelles sont les deux unités possibles ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "m²",
@@ -1521,7 +1530,7 @@
    "type": "qcm_multi",
    "enonce": "Pour exprimer une aire, quelles sont les deux unités possibles ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "cm²",
@@ -1544,7 +1553,7 @@
    "type": "qcm_multi",
    "enonce": "Pour exprimer une masse, quelles sont les deux unités possibles ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "m²",
@@ -1567,7 +1576,7 @@
    "type": "qcm_multi",
    "enonce": "Pour exprimer une vitesse, quelles sont les deux unités possibles ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "m/s",
@@ -1590,7 +1599,7 @@
    "type": "trous",
    "enonce": "Complète par l'unité qui convient.",
    "points": 3.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
    "texte": "Une canette contient 33 {1}  ·  Une banane pèse 150 {2}  ·  Il fait −7 {3}  ·  Un aquarium de classe : 40 {4}  ·  Un TGV roule à 300 {5}  ·  Une porte mesure 200 {6}  ·  Un match de football dure 90 {7}",
    "reponse": [
@@ -1631,7 +1640,7 @@
    "type": "grille",
    "enonce": "Choisis la bonne mesure.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
    "lignes": [
     "La longueur d'une piscine olympique",
@@ -1661,7 +1670,7 @@
    "type": "grille",
    "enonce": "Quelle est la plus grande capacité ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "lignes": [
     "4 canettes de 25 cl  ou  3 bouteilles de 1/2 l",
@@ -1689,7 +1698,7 @@
    "type": "trous",
    "enonce": "Lave-linge : L 60 × l 50 × H 85 cm ; capacité 5 kg ; eau 48 l par cycle ; 550 €.",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "Hauteur : {1} cm  ·  Quantité maximale de linge : {2} kg  ·  Eau consommée par lavage : {3} l",
    "reponse": [
@@ -1713,7 +1722,7 @@
    "type": "numerique",
    "enonce": "Le compteur passe de 126 392 km à 127 042 km. Combien de km a-t-il parcourus ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "reponse": 650,
    "unite": "km",
@@ -1725,9 +1734,9 @@
    "numero": "11",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un aquarium mesure 50 cm × 20 cm × 30 cm. Combien de litres contient-il ?",
+   "enonce": "Un aquarium a une base de 50 cm sur 20 cm ; l'eau y atteint une hauteur de 30 cm. Combien de litres d'eau contient-il ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-volumes",
    "reponse": 30,
    "unite": "l",
@@ -1741,7 +1750,7 @@
    "type": "numerique",
    "enonce": "Mario prend 3 fois par jour une cuillerée de 5 ml de sirop. La bouteille contient 120 ml. Combien de jours dure le traitement ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "reponse": 8,
    "unite": "jours",
@@ -1755,7 +1764,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles mesures sont égales à 5 m ?",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
     "1/2 dam",
@@ -1779,7 +1788,7 @@
    "type": "trous",
    "enonce": "Attention aux unités.",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "18 sachets de 500 g : {1} kg  ·  60 km/h pendant 20 min : {2} km  ·  Verres de 25 cl dans 1,5 l : {3} verres  ·  Pâté dans une boite de 1/4 kg qui pèse 45 g vide : {4} g  ·  De 6 h 57 à 7 h 39 : {5} min",
    "reponse": [
@@ -1809,7 +1818,7 @@
    "type": "texte_court",
    "enonce": "Calcule : 1/2 + 1/3",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-addition",
    "reponse": [
     "5/6"
@@ -1824,7 +1833,7 @@
    "type": "texte_court",
    "enonce": "Anaïs dépense le tiers de ses économies, puis le quart de ce qui lui reste. Quelle fraction de ses économies lui reste-t-il ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions",
    "reponse": [
     "1/2",
@@ -1841,7 +1850,7 @@
    "type": "numerique",
    "enonce": "Une bande blanche = 10 bandes grises = 6 bandes hachurées. Combien de bandes hachurées pour 25 bandes grises ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "reponse": 15,
    "unite": "bandes",
@@ -1855,7 +1864,7 @@
    "type": "qcm",
    "enonce": "Il faut 2 l de peinture pour 20 m². Quel tableau correspond à la question « Combien pour 90 m² ? »",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "choix": [
     "Superficie : ? et 90 — Peinture : 2 et 20",
@@ -1962,7 +1971,7 @@
    "type": "grille",
    "enonce": "Quel squelette ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "classif"
@@ -1993,7 +2002,7 @@
    "type": "grille",
    "enonce": "Quels membres ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "classif"
@@ -2026,7 +2035,7 @@
    "type": "qcm_multi",
    "enonce": "Quels caractères le chat, la souris et le mouton ont-ils en commun ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "choix": [
     "yeux, bouche",
@@ -2052,7 +2061,7 @@
    "type": "texte_court",
    "enonce": "Écris le nom d'un autre animal ayant les mêmes caractères que le chat, la souris et le mouton.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "reponse": [
     "chien",
@@ -2073,9 +2082,32 @@
     "hérisson",
     "sanglier",
     "cerf",
-    "éléphant"
+    "éléphant",
+    "lièvre",
+    "girafe",
+    "zèbre",
+    "singe",
+    "chameau",
+    "âne",
+    "castor",
+    "taupe",
+    "chauve-souris",
+    "kangourou",
+    "panda",
+    "furet",
+    "blaireau",
+    "mulot",
+    "loutre",
+    "phoque",
+    "mammifère",
+    "humain",
+    "l'homme",
+    "gorille",
+    "hippopotame",
+    "rhinocéros",
+    "chat sauvage"
    ],
-   "explication": "Tout mammifère à quatre pattes."
+   "explication": "Tout mammifère à quatre pattes. Tout mammifère convient (sauf le chat, la souris, le mouton, et les cétacés comme la baleine)."
   },
   {
    "id": "ceb-2016-l7-q3",
@@ -2085,7 +2117,7 @@
    "type": "ouverte",
    "enonce": "Expérience 1 : roues à 5 et à 9 pales. Quelle question les élèves se sont-ils posée ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "roues-1"
@@ -2100,7 +2132,7 @@
    "type": "qcm",
    "enonce": "Même quantité d'eau, entonnoir à 30 cm (photo 1) ou à 50 cm (photo 2) : où la roue fait-elle le plus de tours ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "roues-2"
@@ -2111,7 +2143,7 @@
     "Pareil"
    ],
    "reponse": 1,
-   "explication": "Environ 11 tours à 50 cm contre 7,5 à 30 cm."
+   "explication": "Environ 11 tours à 50 cm contre 7,5 à 30 cm. (Question non notée dans l'épreuve : elle prépare la suivante.)"
   },
   {
    "id": "ceb-2016-l7-q4b",
@@ -2121,7 +2153,7 @@
    "type": "qcm",
    "enonce": "Si une même quantité d'eau tombe de plus haut…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "roues-2"
@@ -2142,7 +2174,7 @@
    "type": "qcm",
    "enonce": "Pourquoi les élèves ont-ils fait trois essais ?",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "roues-2"
@@ -2163,7 +2195,7 @@
    "type": "qcm",
    "enonce": "Hypothèse : la roue fera plus de tours si la taille du trou de l'entonnoir augmente. Quel choix permet de la vérifier ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "roues-1",
@@ -2186,7 +2218,7 @@
    "type": "grille",
    "enonce": "Engrenages fermés : correct ou incorrect ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "lignes": [
     "Avec un nombre pair de roues, il ne fonctionne pas.",
@@ -2214,7 +2246,7 @@
    "type": "grille",
    "enonce": "Engrenage ouvert A-B-C-D : A tourne dans le sens des aiguilles d'une montre, D dans le sens inverse. Que fait D… ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "lignes": [
     "si on supprime C et que D s'emboite à B",
@@ -2242,7 +2274,7 @@
    "type": "qcm",
    "enonce": "Feuilles aplaties, simples, alternes, à bord lobé : l'arbre est un…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "cle"
@@ -2265,7 +2297,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles sont les caractéristiques des feuilles de bouleau dans la clé ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "cle"
@@ -2295,7 +2327,7 @@
    "type": "grille",
    "enonce": "Quels os protègent ces organes ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "lignes": [
     "Le cœur",
@@ -2321,7 +2353,7 @@
    "type": "ordre",
    "enonce": "Remets les étapes de l'expérience dans l'ordre.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "dilat"
@@ -2382,7 +2414,7 @@
    "type": "qcm",
    "enonce": "La lampe baladeuse ne s'allume pas. Quelle proposition ne peut PAS être une cause de la panne ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "documents": [
     "lampe"
@@ -2405,7 +2437,7 @@
    "type": "grille",
    "enonce": "La peau : correct ou incorrect ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "lignes": [
     "Elle nous permet de ressentir par le toucher.",
@@ -2414,7 +2446,8 @@
     "Elle est une barrière contre certains microbes.",
     "Elle est le principal organe du toucher.",
     "Elle est le premier organe de l'odorat.",
-    "Elle protège l'intérieur du corps des rayons du soleil."
+    "Elle protège l'intérieur du corps des rayons du soleil.",
+    "Elle participe à la respiration."
    ],
    "colonnes": [
     "Correct",
@@ -2427,6 +2460,7 @@
     0,
     0,
     1,
+    0,
     0
    ],
    "explication": "L'odorat, c'est le nez."
@@ -2542,7 +2576,7 @@
    "type": "numerique",
    "enonce": "Calcule : 8 000 − 475",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 7525,
    "tolerance": 0.0001,
@@ -2556,7 +2590,7 @@
    "type": "numerique",
    "enonce": "Calcule : 311 + 195 + 89 + 205",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 800,
    "tolerance": 0.0001,
@@ -2570,7 +2604,7 @@
    "type": "numerique",
    "enonce": "Calcule : 728 : 8",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 91,
    "tolerance": 0.0001,
@@ -2584,7 +2618,7 @@
    "type": "numerique",
    "enonce": "Calcule : 440 × 0,25",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 110,
    "tolerance": 0.0001,
@@ -2598,7 +2632,7 @@
    "type": "numerique",
    "enonce": "Calcule : les deux tiers de 630",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 420,
    "tolerance": 0.0001,
@@ -2612,7 +2646,7 @@
    "type": "numerique",
    "enonce": "Calcule : 7 027 − 198",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 6829,
    "tolerance": 0.0001,
@@ -2626,7 +2660,7 @@
    "type": "numerique",
    "enonce": "Calcule : 28,55 + 2,99",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 31.54,
    "tolerance": 0.0001,
@@ -2640,7 +2674,7 @@
    "type": "numerique",
    "enonce": "Calcule : 5 × 230 × 0 × 12",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
@@ -2654,7 +2688,7 @@
    "type": "numerique",
    "enonce": "Calcule : 37 × 1,1",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 40.7,
    "tolerance": 0.0001,
@@ -2668,7 +2702,7 @@
    "type": "numerique",
    "enonce": "Calcule : 200 % de 67",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 134,
    "tolerance": 0.0001,
@@ -2682,7 +2716,7 @@
    "type": "qcm",
    "enonce": "7 920 : 800 ; 1,5 × 6,6 ; 68 − 58,1 ; 3,475 + 6,425 donnent le même résultat. Quelle est l'estimation la plus proche ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "1",
@@ -2701,7 +2735,7 @@
    "type": "qcm",
    "enonce": "Estime 6,8 × 3,17.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "6 < … < 10",
@@ -2720,7 +2754,7 @@
    "type": "trous",
    "enonce": "Écris en chiffres.",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "soixante-quatre-mille-six-cent-soixante-quatre : {1}  ·  soixante-mille-quatre-cents unités quatre centièmes : {2}  ·  soixante-quatre-mille-soixante-quatre : {3}",
    "reponse": [
@@ -2747,7 +2781,7 @@
    "type": "trous",
    "enonce": "Place la virgule dans 53820691.",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "texte": "2 = 2 dizaines : {1}  ·  2 = 2 millièmes : {2}  ·  2 = 2 unités de mille : {3}",
    "reponse": [
@@ -2773,7 +2807,7 @@
    "type": "qcm",
    "enonce": "Comment se lit 187 536 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "choix": [
     "cent-dix-huit-mille-cinq-cent-trente-six",
@@ -2792,7 +2826,7 @@
    "type": "trous",
    "enonce": "Ticket : chips 1,04 € ; savon 0,89 € ; lait 1,25 € ; gaufrette 0,78 € ; mozzarella 0,94 € ; poulet 9,75 € ; lessive 10,45 €.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "texte": "L'article le moins cher : {1}  ·  Le plus cher : {2}  ·  Le plus proche de 10 € : {3}",
    "reponse": [
@@ -2819,7 +2853,7 @@
    "type": "qcm_multi",
    "enonce": "Quels articles coutent moins de 1 € ?",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "choix": [
     "Chips",
@@ -2843,7 +2877,7 @@
    "type": "trous",
    "enonce": "Avec les chiffres 1, 2, 3, 4, 5, 6 (une seule fois chacun) :",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "le plus grand nombre entier : {1}  ·  le nombre le plus proche de 341 526 (et différent) : {2}",
    "reponse": [
@@ -2866,7 +2900,7 @@
    "type": "trous",
    "enonce": "Complète pour obtenir 1.",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "1 = 0,675 + {1}  ·  1 = 0,50 × {2}  ·  1 = 0,951 + {3}  ·  1 = 8 × {4}  ·  1 = 1/2 de {5}",
    "reponse": [
@@ -2897,7 +2931,7 @@
    "type": "trous",
    "enonce": "Marita avance de 6 cases, Tony de 8 cases, sur un plateau de 80 cases.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
    "texte": "Première case commune : {1}  ·  Autres cases communes : {2} et {3}",
    "reponse": [
@@ -2916,12 +2950,12 @@
   {
    "id": "ceb-2016-l8-q14",
    "livret": 8,
-   "numero": "14",
+   "numero": "15",
    "domaine": "ma.arithmetique",
    "type": "grille",
    "enonce": "Compare.",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "lignes": [
     "quarante-trois centièmes … quatre unités et trois dixièmes",
@@ -2943,12 +2977,12 @@
   {
    "id": "ceb-2016-l8-q15",
    "livret": 8,
-   "numero": "15",
+   "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "grille",
    "enonce": "389 × 23 : le produit partiel 778 (dizaines) correspond à…",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "lignes": [
     "20 × 389",
@@ -2978,7 +3012,7 @@
    "type": "grille",
    "enonce": "660 : 15 = ? Quelles décompositions sont correctes ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "lignes": [
     "(660 : 30) : 2",
@@ -3006,7 +3040,7 @@
    "type": "grille",
    "enonce": "12 × 25 = ? Quelles décompositions sont correctes ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "lignes": [
     "(4 × 25) + (4 × 25) + (4 × 25)",
@@ -3034,7 +3068,7 @@
    "type": "trous",
    "enonce": "Complète les égalités.",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "76,4 + 83,9 = {1} + 84  ·  792 : 8 = (800 : 8) − ({2} : 8)  ·  4 × 7 × 25 = {3} × 100  ·  128 : 16 = 64 : {4}  ·  805 − {5} = 800 − 242",
    "reponse": [
@@ -3064,7 +3098,7 @@
    "type": "grille",
    "enonce": "Quelle opération correspond à chaque situation ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "lignes": [
     "Pierre partage 4 paquets de 12 biscuits entre 3 enfants.",
@@ -3096,7 +3130,7 @@
    "type": "numerique",
    "enonce": "28 garçons dans l'école. 1re classe : 14 filles et 13 garçons. 2e classe : 26 élèves. Combien de filles dans la 2e classe ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "reponse": 11,
    "unite": "filles",
@@ -3110,7 +3144,7 @@
    "type": "ouverte",
    "enonce": "Cartes de 2, 3 et 4 : obtiens 20 avec au moins une carte de chaque sorte (autre que 3 × 4 + 2 × 3 + 1 × 2). Écris les trois autres possibilités.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "reponseModele": "(2 × 4) + (2 × 3) + (3 × 2) = 20 ; (1 × 4) + (2 × 3) + (5 × 2) = 20 ; (1 × 4) + (4 × 3) + (2 × 2) = 20."
   },
@@ -3165,8 +3199,8 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Quelle est l'intention dominante de l'auteur du texte documentaire ?",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 0.5,
+   "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
     "sel-1",
@@ -3189,8 +3223,8 @@
    "domaine": "fr.lire",
    "type": "texte_court",
    "enonce": "Quel est le nom scientifique de notre sel de cuisine ?",
-   "points": 0.5,
-   "corrigeVerifie": false,
+   "points": 1,
+   "corrigeVerifie": true,
    "documents": [
     "sel-1"
    ],
@@ -3208,7 +3242,7 @@
    "type": "qcm_multi",
    "enonce": "Le chlorure de sodium nait d'une réaction chimique entre deux éléments. Lesquels ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "sel-1"
    ],
@@ -3233,7 +3267,7 @@
    "type": "ordre",
    "enonce": "Range dans l'ordre chronologique du texte.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "sel-1",
@@ -3264,7 +3298,7 @@
    "type": "trous",
    "enonce": "« En tombant sur la Terre, ces pluies acides ont « grignoté » les roches de la croute terrestre et ont notamment arraché de fines particules de sels de sodium. »",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "sel-1"
@@ -3298,7 +3332,7 @@
    "type": "grille",
    "enonce": "Dans quelle partie du texte (A à E) placer ces phrases ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "sel-1",
@@ -3330,7 +3364,7 @@
    "type": "trous",
    "enonce": "Complète (exemple : le grignotage / grignoter).",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "texte": "{1} / former  ·  {2} / refroidir  ·  la naissance / {3}",
    "reponse": [
@@ -3357,7 +3391,7 @@
    "type": "grille",
    "enonce": "Quelle est la structure de chaque phrase ?",
    "points": 1.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-fonctions",
    "documents": [
     "sel-1",
@@ -3390,7 +3424,7 @@
    "type": "texte_court",
    "enonce": "Quel nom l'auteur utilise-t-il pour désigner autrement la Terre ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "sel-1",
@@ -3412,7 +3446,7 @@
    "type": "texte_court",
    "enonce": "Quel nom désigne la quantité de sel contenue dans l'eau ? « La … de l'eau »",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "documents": [
     "sel-2"
@@ -3432,7 +3466,7 @@
    "type": "qcm_multi",
    "enonce": "Quels mots n'appartiennent PAS à la famille de « sel » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "choix": [
     "salinité",
@@ -3456,7 +3490,7 @@
    "type": "qcm",
    "enonce": "L'eau de pluie n'a pas un gout salé, car…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "sel-2"
@@ -3478,7 +3512,7 @@
    "type": "qcm",
    "enonce": "L'eau des mers tempérées est … salée que celle des mers tropicales.",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "sel-2"
@@ -3496,21 +3530,29 @@
    "livret": 9,
    "numero": "16",
    "domaine": "fr.lire",
-   "type": "qcm",
+   "type": "grille",
    "enonce": "« Là, les sels de sodium se sont mélangés au chlore… » « Là » pourrait être remplacé par…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "documents": [
     "sel-1"
    ],
-   "choix": [
+   "explication": "« Là » renvoie à la mer. « À ce moment-là » et « À cet endroit-là » sont tous deux acceptés.",
+   "lignes": [
+    "« Là » pourrait être remplacé par…"
+   ],
+   "colonnes": [
     "À ce moment-là.",
     "De cette manière-là.",
     "À cet endroit-là."
    ],
-   "reponse": 2,
-   "explication": "« Là » renvoie à la mer."
+   "reponse": [
+    [
+     0,
+     2
+    ]
+   ]
   },
   {
    "id": "ceb-2016-l9-q3",
@@ -3534,5 +3576,6 @@
    "corrigeVerifie": false,
    "numerisable": false
   }
- ]
+ ],
+ "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2016), comparé question par question le 21/10/2026."
 }

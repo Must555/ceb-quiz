@@ -5,7 +5,7 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = 'f46d6962c954';
+const VERSION = 'a5e56375304d';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
