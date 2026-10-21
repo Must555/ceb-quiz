@@ -433,7 +433,7 @@
    "numero": "9",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "« Ces deux magazines appartenaient à des maisons d'édition qui publiaient des livres… » Recopie le complément indirect du verbe « appartenaient ».",
+   "enonce": "« Ces deux magazines appartenaient à des maisons d'édition qui publiaient des livres avec les aventures de certains héros… » Recopie le groupe complément indirect du verbe « appartenaient ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-fonctions",
@@ -441,10 +441,10 @@
     "art-2"
    ],
    "reponse": [
-    "à des maisons d'édition",
-    "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros"
+    "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros",
+    "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros de BD"
    ],
-   "explication": "Appartenir à quelque chose : « à des maisons d'édition »."
+   "explication": "Appartenir à quelque chose : le complément est tout le groupe « à des maisons d'édition qui publiaient des livres avec les aventures de certains héros ». Il faut souligner le groupe en entier."
   },
   {
    "id": "ceb-2017-l1-q10",
@@ -2113,13 +2113,14 @@
      "coupable"
     ],
     [
-     "pièce"
+     "pièce",
+     "piece"
     ],
     [
      "huile"
     ]
    ],
-   "explication": "Huile, argent, fou, rocher, pièce, coupable, huile."
+   "explication": "Huile, argent, fou, rocher, pièce, coupable, pièce, huile (huile et pièce sont utilisées deux fois)."
   },
   {
    "id": "ceb-2017-l6-q8",
@@ -2287,7 +2288,10 @@
    "reponse": [
     "Or un matin",
     "or un matin",
-    "Or un matin, alors que le juge Su Dungpo se délectait"
+    "Or un matin, alors que le juge Su Dungpo se délectait",
+    "Or un matin alors que le juge Su Dungpo se délectait à l'idée de faire frire une belle anguille dans cette bonne huile",
+    "alors que le juge Su Dungpo se délectait à l'idée de faire frire une belle anguille dans cette bonne huile",
+    "alors que le juge Su Dungpo se délectait"
    ],
    "explication": "« Or » introduit l'élément perturbateur. L'organisateur complet est « Or un matin » : « Or » seul ne suffit pas."
   },
@@ -2629,10 +2633,20 @@
    "documents": [
     "stimulus"
    ],
-   "texte": "Le contact, la peau : le {1}  ·  Les odeurs, le nez : l'{2}  ·  Les ondes sonores, l'{3} : l'{4}  ·  La lumière, l'{5} : la {6}  ·  Les substances dissoutes, la langue : le {7}",
+   "texte": "Le contact, la peau : le {1}  ·  {2}, le nez : l'{3}  ·  Les ondes sonores, l'{4} : l'{5}  ·  La lumière, l'{6} : la {7}  ·  Les substances dissoutes, la langue : le {8}",
    "reponse": [
     [
      "toucher"
+    ],
+    [
+     "odeur",
+     "l'odeur",
+     "odeurs",
+     "les odeurs",
+     "parfum",
+     "parfums",
+     "senteur",
+     "senteurs"
     ],
     [
      "odorat"
@@ -2657,7 +2671,7 @@
      "goût"
     ]
    ],
-   "explication": "Toucher, odorat, oreille/ouïe, œil/vue, goût."
+   "explication": "Toucher (la peau), odeur (le nez : l'odorat), ondes sonores (l'oreille : l'ouïe), lumière (l'œil : la vue), substances dissoutes (la langue : le goût)."
   },
   {
    "id": "ceb-2017-l7-q7a",
