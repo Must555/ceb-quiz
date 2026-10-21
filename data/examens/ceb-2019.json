@@ -1673,21 +1673,33 @@
    "livret": 5,
    "numero": "7b",
    "domaine": "sc.energie",
-   "type": "texte_court",
-   "enonce": "Bulletin météo du 17 janvier 2019 : à quelle heure le soleil se couchera-t-il ?",
-   "points": 1,
+   "type": "trous",
+   "enonce": "Observe le bulletin météo du 17 janvier 2019. Complète les informations demandées.",
+   "points": 2,
    "corrigeVerifie": true,
    "documents": [
     "meteo"
    ],
+   "texte": "Température maximale prévue à Tournai : {1}\nHeure à laquelle le soleil se couchera : {2}",
    "reponse": [
-    "17h08",
-    "17 h 08",
-    "17:08",
-    "17h 08",
-    "17 h08"
+    [
+     "8 °C",
+     "8°C",
+     "8 °",
+     "8°",
+     "8",
+     "8 degrés",
+     "8 ° C"
+    ],
+    [
+     "17h08",
+     "17 h 08",
+     "17:08",
+     "17h 08",
+     "17 h08"
+    ]
    ],
-   "explication": "« Coucher : 17h08 ». (Dans l'épreuve, on demandait aussi la température maximale prévue à Tournai : 8 °C.)"
+   "explication": "À Tournai, on lit « 2 °C / 8 °C » : la température maximale est la plus haute des deux, 8 °C. Et en bas de la carte : « Coucher : 17h08 »."
   },
   {
    "id": "ceb-2019-l5-q8a",
@@ -2008,8 +2020,8 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "La réponse se trouve-t-elle dans le texte ?",
-   "points": 3,
+   "enonce": "La réponse à la question se trouve-t-elle dans le texte ?",
+   "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
@@ -2020,8 +2032,7 @@
    ],
    "lignes": [
     "Quels sont les pays où l'on ne bénéficie pas encore de temps de loisir aujourd'hui ?",
-    "Quelles sont les activités de loisir pratiquées collectivement ?",
-    "Pourquoi est-il important d'avoir des loisirs ?"
+    "Quelles sont les activités de loisir pratiquées collectivement ?"
    ],
    "colonnes": [
     "Oui",
@@ -2029,10 +2040,39 @@
    ],
    "reponse": [
     1,
-    1,
-    0
+    1
    ],
-   "explication": "Aucun pays n'est cité. Les activités collectives : « Quelles activités pour occuper le temps de loisir ? ». L'importance : « Enfin, pour conclure… ». Le texte ne parle pas des activités pratiquées collectivement (le tableau de données ne le dit pas non plus). (Dans l'épreuve, il fallait aussi écrire l'intertitre pour la réponse « oui » : « Enfin, pour conclure… ».)"
+   "explication": "Aucun pays n'est cité, et le texte ne parle pas des activités pratiquées collectivement (le tableau de données ne le dit pas non plus). Le texte ne contient pas ces deux réponses."
+  },
+  {
+   "id": "ceb-2019-l6-q2b",
+   "livret": 6,
+   "numero": "2",
+   "domaine": "fr.lire",
+   "type": "trous",
+   "enonce": "Question : « Pourquoi est-il important d'avoir des loisirs ? » La réponse se trouve-t-elle dans le texte ? Si oui, écris l'intertitre sous lequel tu la trouves.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "loisir-1",
+    "loisir-2",
+    "loisir-3",
+    "loisir-4"
+   ],
+   "texte": "La réponse est dans le texte (oui / non) : {1}\nIntertitre : {2}",
+   "reponse": [
+    [
+     "oui"
+    ],
+    [
+     "Enfin, pour conclure…",
+     "Enfin, pour conclure",
+     "Enfin pour conclure",
+     "Enfin, pour conclure..."
+    ]
+   ],
+   "explication": "Oui : la réponse se trouve dans la dernière partie du texte, sous l'intertitre « Enfin, pour conclure… »."
   },
   {
    "id": "ceb-2019-l6-q3",
@@ -2110,7 +2150,7 @@
   {
    "id": "ceb-2019-l6-q6",
    "livret": 6,
-   "numero": "6",
+   "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm_multi",
    "enonce": "Quelles activités augmentent avec l'âge (de 11 à 17 ans) ?",
@@ -2136,7 +2176,7 @@
   {
    "id": "ceb-2019-l6-q7",
    "livret": 6,
-   "numero": "7",
+   "numero": "6",
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Explique avec deux éléments du texte pourquoi l'inactivité est parfois nécessaire.",
@@ -2150,7 +2190,7 @@
   {
    "id": "ceb-2019-l6-q8",
    "livret": 6,
-   "numero": "8",
+   "numero": "7",
    "domaine": "fr.lire",
    "type": "grille",
    "enonce": "D'après le texte…",
@@ -2318,13 +2358,19 @@
     ],
     [
      "passé composé",
-     "passe compose"
+     "passe compose",
+     "indicatif passé composé",
+     "passé composé de l'indicatif",
+     "passé composé indicatif"
     ],
     [
      "toucher"
     ],
     [
-     "imparfait"
+     "imparfait",
+     "indicatif imparfait",
+     "imparfait de l'indicatif",
+     "imparfait indicatif"
     ]
    ],
    "explication": "se battre au passé composé ; toucher à l'imparfait. Il faut écrire l'infinitif complet : « se battre »."
@@ -3091,7 +3137,8 @@
     "des marchands",
     "des gens grossiers",
     "des gens aussi grossiers",
-    "gens grossiers"
+    "gens grossiers",
+    "gens aussi grossiers"
    ],
    "explication": "« des marchands qui crient pour attirer la clientèle »."
   },
@@ -3159,17 +3206,24 @@
    "reponse": [
     [
      "passé simple",
-     "passe simple"
+     "passe simple",
+     "indicatif passé simple",
+     "passé simple de l'indicatif",
+     "indicatif passe simple"
     ],
     [
      "pourrais",
      "je pourrais",
+     "pouvoir",
      "rendrais",
      "je m'y rendrais",
-     "m'y rendrais"
+     "m'y rendrais",
+     "rendre",
+     "se rendre",
+     "s'y rendre"
     ]
    ],
-   "explication": "accéda : passé simple. Conditionnel présent : pourrais, rendrais, courraient."
+   "explication": "accéda : passé simple (comme « retrouva »). Conditionnel présent : pourrais ou rendrais (comme « courraient »)."
   },
   {
    "id": "ceb-2019-l8-q13",
@@ -3247,7 +3301,7 @@
      "s'"
     ]
    ],
-   "explication": "« se » (se retrouva), « elle » (autour d'elle) et « lui » (il lui fallait) désignent la vieille dame. « leur » désigne les domestiques.",
+   "explication": "Quatre pronoms désignent la vieille dame : « se » (se retrouva), « elle » (autour d'elle), « lui » (il lui fallait) et « s' » (s'exprimer). « leur » désigne les domestiques.",
    "souple": true,
    "differentes": true,
    "texte": "1er pronom : {1}\n2e pronom : {2}"
@@ -3561,7 +3615,7 @@
     1,
     0
    ],
-   "explication": "On voit du charbon sur tous les continents ; aucun symbole d'uranium en Amérique du Sud."
+   "explication": "Sur la carte : du charbon sur plusieurs continents (vrai), l'or n'est pas le minerai le plus exploité en Europe (faux), pas d'uranium en Amérique du Sud (faux), le cuivre se trouve surtout en Amérique (vrai)."
   },
   {
    "id": "ceb-2019-l9-q9",
@@ -3720,8 +3774,8 @@
    "livret": 9,
    "numero": "12c",
    "domaine": "hg.histoire",
-   "type": "grille",
-   "enonce": "Le livret du mineur : vrai ou faux ?",
+   "type": "trous",
+   "enonce": "Le livret du mineur : pour chaque phrase, écris vrai ou faux, puis le numéro de l'indice (de 1 à 5) qui t'a permis de répondre. Exemple : « Ce livret est le deuxième que ce mineur a complété. » → vrai, indice 1.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3729,21 +3783,40 @@
     "livret-1",
     "livret-2"
    ],
-   "lignes": [
-    "Le mineur est sorti du « St Albert – Section de Péronnes » le 19 aout 1914.",
-    "Si le titulaire ne sait pas écrire, il trace une croix à la place de sa signature.",
-    "Une mine de charbon portait le nom de « Puits Sainte-Barbe »."
-   ],
-   "colonnes": [
-    "Vrai",
-    "Faux"
-   ],
+   "texte": "1. Le mineur est sorti du « St Albert – Section de Péronnes » le 19 aout 1914. {1} · indice n° {2}\n2. Si le titulaire ne sait pas écrire, il trace une croix à la place de sa signature. {3} · indice n° {4}\n3. Une mine de charbon portait le nom de « Puits Sainte-Barbe ». {5} · indice n° {6}",
    "reponse": [
-    0,
-    1,
-    0
+    [
+     "vrai"
+    ],
+    [
+     "5",
+     "n°5",
+     "n° 5",
+     "indice 5",
+     "indice n°5"
+    ],
+    [
+     "faux"
+    ],
+    [
+     "2",
+     "n°2",
+     "n° 2",
+     "indice 2",
+     "indice n°2"
+    ],
+    [
+     "vrai"
+    ],
+    [
+     "3",
+     "n°3",
+     "n° 3",
+     "indice 3",
+     "indice n°3"
+    ]
    ],
-   "explication": "« Sorti le dix-neuf aout 1914 » (indice 5). La signature est remplacée par celle de deux témoins (indice 2). Le cachet « Puits Ste-Barbe » (indice 3). (Dans l'épreuve, il fallait aussi donner le numéro de l'indice : 5, 2 et 3.)"
+   "explication": "1. Vrai : « sorti le dix-neuf aout 1914 » (indice 5). 2. Faux : la signature est remplacée par celle de deux témoins (indice 2). 3. Vrai : le cachet « Puits Ste-Barbe » (indice 3)."
   },
   {
    "id": "ceb-2019-l9-q13b",
@@ -3848,7 +3921,9 @@
    "enonce": "Roues horaires : journée d'un enfant mineur (1860) et de Lucie (2019).",
    "points": 5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Les roues horaires du livret ne sont pas dans nos documents : question gardée en mode papier. Corrigé officiel : a) nuit de l'enfant de la mine en rouge, de 21 h à 4 h ; b) nuit de Lucie en bleu, de 21 h à 7 h 15 ; c) faux, faux, vrai.",
+   "reponseModele": "a) rouge : de 21 h à 4 h ; b) bleu : de 21 h à 7 h 15 ; c) faux ; faux ; vrai."
   },
   {
    "id": "ceb-2019-l9-q13a",
