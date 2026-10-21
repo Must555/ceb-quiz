@@ -304,7 +304,7 @@ const APPORTS_ROMAINS = [
   'les thermes (bains publics)', 'les maisons en pierre avec un toit de tuiles', 'les mosaïques', 'les dieux romains comme Jupiter et Mercure',
 ];
 const APPORTS_CELTES = [
-  'le tonneau en bois', 'les braies (une sorte de pantalon)', 'la déesse Épona, protectrice des chevaux', 'la cotte de mailles',
+  'le tonneau en bois', 'les braies (une sorte de pantalon, adoptée surtout par les soldats romains)', 'la déesse Épona, protectrice des chevaux', 'la cotte de mailles',
 ];
 const COL_ECHANGES = ['Apport des Romains aux Celtes', 'Apport des Celtes aux Romains'];
 
@@ -1277,9 +1277,9 @@ const ORDRES_POP = [
   { q: 'Sur 10 habitants de la Terre, environ combien vivent en Europe ?', ok: 'Environ 1',
     ko: ['Environ 3', 'Environ 5', 'Environ 6'],
     expl: 'Environ 10 % de l\'humanité vit en Europe, soit environ 1 personne sur 10.' },
-  { q: 'Aujourd\'hui, quelle part de la population mondiale vit en ville ?', ok: 'Plus de la moitié',
+  { q: 'Aujourd\'hui, quelle part de la population mondiale vit en zone urbaine (villes et agglomérations) ?', ok: 'Plus de la moitié',
     ko: ['Environ 1 personne sur 10', 'Environ un quart', 'Presque personne'],
-    expl: 'Depuis le début du XXIe siècle, plus de la moitié des humains vivent en ville, et cette part augmente encore.' },
+    expl: 'Depuis le début du 21e siècle, plus de la moitié des humains vivent en zone urbaine (dans les villes et leurs agglomérations), et cette part augmente encore.' },
   { q: 'En dehors de l\'Antarctique, quel continent compte le moins d\'habitants ?', ok: 'L\'Océanie',
     ko: ['L\'Asie', 'L\'Afrique', 'L\'Europe', 'L\'Amérique'],
     expl: 'L\'Océanie (Australie, Nouvelle-Zélande, îles du Pacifique) compte environ 45 millions d\'habitants : c\'est le continent habité le moins peuplé.' },

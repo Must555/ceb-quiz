@@ -2207,7 +2207,7 @@ const cercle = famille([
       type: 'numerique', unite: 'cm²', difficulte: 3,
       enonce: `Un disque a un ${donne} de ${donne === 'rayon' ? rr : 2 * rr} cm. Calcule son aire avec π ≈ 3,14.`,
       reponse: res,
-      explication: `Aire du disque = rayon × rayon × 3,14.${donne === 'diamètre' ? ` Rayon = ${2 * rr} : 2 = ${rr} cm.` : ''} ${rr} × ${rr} × 3,14 = ${fmt(res)} cm².`,
+      explication: `Aire du disque = rayon × rayon × 3,14.${donne === 'diamètre' ? ` Rayon = ${2 * rr} : 2 = ${rr} cm.` : ''} ${rr} × ${rr} × 3,14 = ${fmt(res)} cm². (L'aire du disque n'est plus au programme de 6e primaire : elle sert pour les anciens CEB.)`,
     };
   }),
   forme((rng) => {

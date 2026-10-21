@@ -1980,7 +1980,7 @@
      "sorte": "attribut",
      "champ": "type",
      "enonce": "Quel type de planète est {cle} ?",
-     "explication": "{Cle} est une planète {valeur}. Les 4 premières sont rocheuses (telluriques), les 4 dernières sont des géantes gazeuses."
+     "explication": "{Cle} est une planète {valeur}. Les 4 premières sont rocheuses (telluriques) ; les 4 dernières sont des planètes géantes : Jupiter et Saturne sont gazeuses, Uranus et Neptune sont aujourd'hui appelées « géantes de glace »."
     },
     {
      "sorte": "intrus",

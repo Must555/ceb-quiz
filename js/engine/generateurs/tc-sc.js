@@ -1376,7 +1376,7 @@ const CTX_DEM = [
     effet: (v) => `le refroidissement de l'eau chaude (à ${v.T} °C au départ)`, mesure: 'la température de l\'eau après 30 minutes',
     f: [{ nom: 'le matériau autour du pot', col: 'Autour du pot', v: ['rien', 'laine'], ph: ['sans rien autour du pot', 'pot entouré de laine'], temoin: true, q: 'la laine autour d\'un pot ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans rien autour', 'un pot d\'eau chaude entouré d\'une écharpe en laine'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle ralentit le refroidissement de l\'eau chaude', desc: ['un pot d\'eau chaude sans couvercle', 'un pot d\'eau chaude fermé par un couvercle'] },
-      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 mL', '400 mL'], ph: ['200 mL d\'eau', '400 mL d\'eau'] }],
+      { nom: 'la quantité d\'eau', col: 'Eau', v: ['200 ml', '400 ml'], ph: ['200 ml d\'eau', '400 ml d\'eau'] }],
     fait: (rng, v) => `Après 30 minutes, l'eau du pot entouré de laine est à ${rng.int(42, v.T - 12)} °C.`,
     hyp: () => ['Je pense que la laine va ralentir le refroidissement de l\'eau.', 'Peut-être qu\'un couvercle garde l\'eau chaude plus longtemps.'],
     jug: () => ['L\'écharpe en laine rouge est la plus belle.', 'Mesurer des températures, c\'est amusant.'] },
@@ -1395,10 +1395,10 @@ const CTX_DEM = [
     hyp: () => ['Je pense que le sucre se dissout plus vite dans l\'eau chaude.', 'Peut-être que le sucre en poudre se dissout plus vite que le sucre en morceau.'],
     jug: () => ['Le sucre en morceau est plus joli que le sucre en poudre.', 'L\'eau sucrée, c\'est délicieux.'] },
   { id: 'evap', dom: 'sc.matiere', tire: (rng) => ({ V: rng.pick([100, 150, 200]) }),
-    effet: (v) => `l'évaporation de ${v.V} mL d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
+    effet: (v) => `l'évaporation de ${v.V} ml d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
     f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre', 'assiette'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient d\'eau fermé par un couvercle'] }],
-    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} mL d'eau dans le verre étroit.`,
+    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} ml d'eau dans le verre étroit.`,
     hyp: () => ['Je pense que l\'eau s\'évapore plus vite dans une assiette large que dans un verre.', 'Peut-être que l\'eau s\'évapore plus vite près du radiateur.'],
     jug: () => ['L\'assiette bleue est la plus belle de la cuisine.', 'Cette expérience est trop longue, c\'est nul.'] },
   { id: 'bougie', dom: 'sc.matiere', tire: () => ({}),
@@ -1501,11 +1501,14 @@ export function genererDemarche(modele, rng) {
   }
   if (forme === 'mesure') {
     const t = rng.int(0, 2);
-    const faux = rng.shuffle(CTX_DEM.filter((x) => x.id !== c.id && x.mesure !== c.mesure)).slice(0, 3).map((x) => maj(x.mesure));
+    // Fausses réponses crédibles (contre-expertise, point 24) : les facteurs de la MÊME expérience,
+    // celui qu'on fait varier et ceux qu'on garde identiques ; jamais une mesure d'une autre expérience.
+    const faux = c.f.map((f) => maj(f.nom));
     const r = qcm(rng, maj(c.mesure), faux);
+    const gardes = c.f.filter((_, i) => i !== t).map((f) => f.nom);
     return { ...base, ...r, fiche: 'sc-demarche',
       enonce: `${p} veut savoir si ${c.f[t].nom} a une influence sur ${c.effet(v)}. Que doit-${pr(p)} mesurer ou observer à la fin de l'expérience ?`,
-      explication: `Pour connaître l'effet sur ${c.effet(v)}, on mesure ${c.mesure} dans chaque montage, puis on compare.`,
+      explication: `Pour connaître l'effet sur ${c.effet(v)}, on mesure ${c.mesure} dans chaque montage, puis on compare. ${maj(c.f[t].nom)}, c'est ce qu'on fait varier ; ${listeEt(gardes)} restent identiques : ce ne sont pas des résultats à mesurer.`,
       _signature: `mes|${c.id}|${t}|${triee(faux)}`, cleContenu: `mes|${c.id}|${t}|${triee(faux)}` };
   }
   if (forme === 'temoin') {
@@ -1642,7 +1645,7 @@ export function genererTransfert(modele, rng) {
     const d = rng.pick([5, 10, 15].filter((x) => x !== T2));
     const choix = [m, T1 + T2, T1 + d, Math.max(0, T2 - d)].map(deg);
     const r = qcm(rng, deg(m), choix.slice(1));
-    return { ...r, enonce: `${p} verse ${V} mL d'eau à ${deg(T1)} et ${V} mL d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
+    return { ...r, enonce: `${p} verse ${V} ml d'eau à ${deg(T1)} et ${V} ml d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
       explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) ÷ 2 = ${m} °C. Les températures ne s'additionnent pas.`,
       _signature: `mel|${T1}|${T2}|${V}|${d}`, cleContenu: `mel|${T1}|${T2}|${V}` };
   }
@@ -1652,7 +1655,7 @@ export function genererTransfert(modele, rng) {
     const [nA, nB] = ['Courbe A', 'Courbe B'];
     const series = inv ? [{ nom: nA, v: E.bol }, { nom: nB, v: E.tasse }] : [{ nom: nA, v: E.tasse }, { nom: nB, v: E.bol }];
     const fig = svgCourbes({ titre: 'Température de l\'eau', xs: E.xs, series, xTitre: 'Temps (min)', yTitre: 'Température (°C)', yMin: 0, yMax: Math.ceil((E.T1 + 1) / 10) * 10, yPas: 5, yEtiq: 10 });
-    const ctx = `${p} pose une tasse contenant ${E.V1} mL d'eau à ${deg(E.T1)} dans un bol contenant ${E.V2} mL d'eau à ${deg(E.T2)}. Le bol est placé dans une boîte en polystyrène. ${maj(pr(p))} mesure la température des deux eaux toutes les 2 minutes.`;
+    const ctx = `${p} pose une tasse contenant ${E.V1} ml d'eau à ${deg(E.T1)} dans un bol contenant ${E.V2} ml d'eau à ${deg(E.T2)}. Le bol est placé dans une boîte en polystyrène. ${maj(pr(p))} mesure la température des deux eaux toutes les 2 minutes.`;
     const sig = `${E.T1}|${E.T2}|${E.k}|${E.V1}|${E.tasse.join(',')}|${inv}`;
     const q = rng.pick(['laquelle', 'finale', 'gain', 'perte', 'conclusion']);
     const nomTasse = inv ? nB : nA; const nomBol = inv ? nA : nB;
@@ -1823,7 +1826,7 @@ export function genererEconomie(modele, rng) {
 
 // ================================================================ 11. INSTRUMENTS DE MESURE ET UNITÉS
 // Grandeurs du primaire (P4-P6). Le dynamomètre et le newton ne sont vus qu'en S1 : exclus.
-const UN = { '°C': 'en degrés Celsius (°C)', g: 'en grammes (g)', kg: 'en kilogrammes (kg)', s: 'en secondes (s)', min: 'en minutes (min)', mL: 'en millilitres (mL)', L: 'en litres (L)', mm: 'en millimètres (mm)', cm: 'en centimètres (cm)' };
+const UN = { '°C': 'en degrés Celsius (°C)', g: 'en grammes (g)', kg: 'en kilogrammes (kg)', s: 'en secondes (s)', min: 'en minutes (min)', ml: 'en millilitres (ml)', l: 'en litres (l)', mm: 'en millimètres (mm)', cm: 'en centimètres (cm)' };
 const GRANDEURS = {
   temp: { sert: 'à mesurer une température', instr: ['un thermomètre'], unites: ['°C'], ctx: [
     { t: 'la température de l\'eau du bain de son petit frère', u: '°C', v: [35, 39] }, { t: 'la température de l\'air dans la classe', u: '°C', v: [18, 23] },
@@ -1837,9 +1840,9 @@ const GRANDEURS = {
     { t: 'le temps que met un glaçon pour fondre complètement', u: 'min', v: [15, 60] }, { t: 'le temps de sa course de 60 mètres', u: 's', v: [9, 15] },
     { t: 'le temps que met un morceau de sucre pour se dissoudre', u: 's', v: [30, 180] }, { t: 'le temps pendant lequel une bougie reste allumée sous un bocal', u: 's', v: [5, 30] },
     { t: 'le temps que met l\'eau d\'une casserole pour bouillir', u: 'min', v: [5, 12] }] },
-  volume: { sert: 'à mesurer un volume de liquide', instr: ['un verre gradué', 'une éprouvette graduée'], unites: ['mL', 'L'], ctx: [
-    { t: 'le volume de lait pour une pâte à crêpes', u: 'mL', v: [5, 10], k: 50 }, { t: 'le volume d\'eau versé dans chaque pot de l\'expérience', u: 'mL', v: [2, 6], k: 50 },
-    { t: 'le volume d\'eau resté dans un verre après trois jours', u: 'mL', v: [4, 18], k: 5 }, { t: 'le volume d\'huile pour une recette', u: 'mL', v: [2, 6], k: 10 }] },
+  volume: { sert: 'à mesurer un volume de liquide', instr: ['un verre gradué', 'une éprouvette graduée'], unites: ['ml', 'l'], ctx: [
+    { t: 'le volume de lait pour une pâte à crêpes', u: 'ml', v: [5, 10], k: 50 }, { t: 'le volume d\'eau versé dans chaque pot de l\'expérience', u: 'ml', v: [2, 6], k: 50 },
+    { t: 'le volume d\'eau resté dans un verre après trois jours', u: 'ml', v: [4, 18], k: 5 }, { t: 'le volume d\'huile pour une recette', u: 'ml', v: [2, 6], k: 10 }] },
   pluie: { sert: 'à mesurer la quantité de pluie tombée', instr: ['un pluviomètre'], unites: ['mm'], ctx: [
     { t: 'la quantité de pluie tombée pendant la nuit', u: 'mm', v: [2, 25] }, { t: 'la quantité de pluie tombée pendant un orage', u: 'mm', v: [5, 40] }] },
   longueur: { sert: 'à mesurer une longueur', instr: ['un mètre ruban'], unites: ['cm'], ctx: [
@@ -1968,7 +1971,7 @@ export function genererMesures(modele, rng) {
     const [max, pas, etiq] = pl ? rng.pick([[40, 1, 5], [60, 2, 10], [30, 1, 5]]) : rng.pick([[100, 5, 20], [100, 2, 10], [250, 10, 50], [500, 20, 100], [200, 5, 50]]);
     const n = Math.round(max / pas); let k = rng.int(2, n - 1);
     if (rng.next() < 0.8 && ((k * pas) % etiq === 0)) k += 1;
-    const val = k * pas; const u = pl ? 'mm' : 'mL';
+    const val = k * pas; const u = pl ? 'mm' : 'ml';
     const instr = pl ? 'ce pluviomètre' : rng.pick(['cette éprouvette graduée', 'ce verre gradué']);
     return { type: 'numerique', reponse: val, unite: u, figure: figEprouvette(max, pas, etiq, val, u, pl),
       enonce: pl ? `Après une averse, ${p} lit le niveau de l'eau dans le pluviomètre de l'école. Combien de millimètres de pluie sont tombés ?`
