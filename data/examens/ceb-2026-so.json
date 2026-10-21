@@ -3,7 +3,7 @@
   "annee": 2026,
   "referentiel": "socles",
   "titre": "CEB 2026 — Socles de compétences",
-  "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+  "source": "FWB, épreuve externe commune 2026 — socles (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
   "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (photos, schémas, grilles) sont omises ou gardées en mode papier.",
   "livrets": [
     {
@@ -292,25 +292,30 @@
       "type": "trous",
       "enonce": "Complète les phrases (exemple : un rectangle possède 4 angles droits).",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
       "texte": "Un trapèze rectangle possède 2 angles {1}.  ·  Un triangle isocèle possède 2 côtés {2}.  ·  Dans un rectangle, les côtés opposés sont {3}.",
       "reponse": [
         [
-          "droits"
+          "droits",
+          "de même amplitude"
         ],
         [
           "isométriques",
           "égaux",
           "de même longueur",
-          "isometriques"
+          "isometriques",
+          "de même mesure"
         ],
         [
           "parallèles",
           "isométriques",
           "égaux",
           "parallèles et isométriques",
-          "paralleles"
+          "paralleles",
+          "égaux 2 à 2",
+          "égaux deux à deux",
+          "parallèles et égaux"
         ]
       ],
       "souple": true,
@@ -324,7 +329,7 @@
       "type": "qcm",
       "enonce": "Tous mes côtés sont isométriques. Je suis un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
       "choix": [
         "parallélogramme",
@@ -343,7 +348,7 @@
       "type": "qcm",
       "enonce": "Je n'ai qu'une seule paire de côtés parallèles. Je suis un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
       "choix": [
         "parallélogramme",
@@ -362,7 +367,7 @@
       "type": "qcm",
       "enonce": "Tous mes angles sont de même amplitude. Je suis un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
       "choix": [
         "parallélogramme",
@@ -381,7 +386,7 @@
       "type": "qcm",
       "enonce": "Je n'ai qu'un seul angle droit. Je suis un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
       "choix": [
         "rectangle",
@@ -400,7 +405,7 @@
       "type": "trous",
       "enonce": "Le développement d'un solide montre 4 faces triangulaires (c'est une pyramide à base triangulaire). Complète.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "texte": "Ce solide possède 4 faces, {1} arêtes et {2} sommets.",
       "reponse": [
         [
@@ -418,37 +423,58 @@
       "livret": 4,
       "numero": "1",
       "domaine": "ma.grandeurs",
-      "type": "association",
-      "enonce": "Observe ces panneaux routiers. Associe chaque panneau à la grandeur qu'il indique.",
+      "type": "trous",
+      "enonce": "Observe ces panneaux routiers. Pour chaque panneau, écris la grandeur, la mesure et l'unité de mesure en toutes lettres.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
-      "gauche": [
-        "STOP 150 m",
-        "P 30 MIN.",
-        "3,5 t max"
-      ],
-      "droite": [
-        "Longueur",
-        "Durée",
-        "Masse",
-        "Capacité"
-      ],
       "reponse": [
         [
-          0,
-          0
+          "longueur",
+          "distance",
+          "la longueur",
+          "la distance"
         ],
         [
-          1,
-          1
+          "150"
         ],
         [
-          2,
-          2
+          "mètre",
+          "mètres",
+          "metre",
+          "le mètre"
+        ],
+        [
+          "durée",
+          "temps",
+          "la durée",
+          "le temps"
+        ],
+        [
+          "30"
+        ],
+        [
+          "minute",
+          "minutes",
+          "la minute"
+        ],
+        [
+          "masse",
+          "la masse"
+        ],
+        [
+          "3,5",
+          "3.5"
+        ],
+        [
+          "tonne",
+          "tonnes",
+          "la tonne"
         ]
       ],
-      "explication": "150 m est une longueur, 30 min une durée, 3,5 t une masse (en tonnes)."
+      "explication": "150 m : longueur (ou distance), 150, mètre. 30 min : durée (ou temps), 30, minute. 3,5 t : masse, 3,5, tonne. Attention : le poids d'un camion se mesure en masse.",
+      "texte": "Panneau STOP 150 m\ngrandeur : {1}\nmesure : {2}\nunité : {3}\n\nPanneau P 30 MIN.\ngrandeur : {4}\nmesure : {5}\nunité : {6}\n\nPanneau 3,5 t max\ngrandeur : {7}\nmesure : {8}\nunité : {9}",
+      "souple": true
     },
     {
       "id": "ceb-2026-so-l4-q2",
@@ -458,7 +484,7 @@
       "type": "numerique",
       "enonce": "Un agriculteur utilise 80 kilogrammes de graines pour ensemencer 4 hectares de terre. Combien de kilogrammes de graines faut-il pour 10 hectares ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-proportionnalite",
       "unite": "kg",
       "reponse": 200,
@@ -472,7 +498,7 @@
       "type": "texte_court",
       "enonce": "Une montre indique 09:47 au départ d'un trajet et 11:12 à l'arrivée. Combien de temps a duré le trajet ? (exemple : 2 h 10)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-durees",
       "reponse": [
         "1 h 25",
@@ -493,7 +519,7 @@
       "type": "qcm",
       "enonce": "La masse d'un smartphone est d'environ 280…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "mg",
@@ -512,7 +538,7 @@
       "type": "qcm",
       "enonce": "La capacité d'une gourde est d'environ 0,7…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "dl",
@@ -531,7 +557,7 @@
       "type": "qcm",
       "enonce": "La taille d'une fourmi est d'environ 7…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "mm",
@@ -550,7 +576,7 @@
       "type": "numerique",
       "enonce": "Olivia a rempli d'eau un aquarium de 60 cm de long, 25 cm de large et 40 cm de haut aux 3/4 de sa capacité. Combien de litres d'eau a-t-elle utilisés ? (1 litre = 1 dm³)",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-volumes",
       "unite": "l",
       "reponse": 45,
@@ -564,7 +590,7 @@
       "type": "grille",
       "enonce": "Coche la grandeur évoquée par chaque situation.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "lignes": [
         "Lors d'une course à pied, les coureurs ont parcouru 5 tours de piste.",
         "Au cinéma, une famille achète trois boissons, un paquet de popcorn et un paquet de bonbons.",
@@ -593,7 +619,7 @@
       "type": "texte_court",
       "enonce": "On met un gâteau dans le four à 16 h 45. Il doit cuire 70 minutes, puis refroidir 20 minutes. À partir de quelle heure pourra-t-on le déguster ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-durees",
       "reponse": [
         "18 h 15",
@@ -612,7 +638,7 @@
       "type": "ordre",
       "enonce": "Classe ces objets du plus fin au plus épais.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "elements": [
         "Une pièce de monnaie de 2 €",
         "Une page du livret CEB",
@@ -635,7 +661,7 @@
       "type": "trous",
       "enonce": "Calcule.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-pourcentages",
       "texte": "150 % de 500 € = {1} €  ·  5 % de 75 € = {2} €",
       "reponse": [
@@ -658,7 +684,7 @@
       "type": "trous",
       "enonce": "Convertis les mesures suivantes.",
       "points": 5,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "texte": "5 m³ = {1} dm³  ·  10 min = {2} s  ·  2 t = {3} kg  ·  16 km = {4} hm  ·  3,5 l = {5} dl",
       "reponse": [
@@ -691,7 +717,7 @@
       "type": "trous",
       "enonce": "Une voiture consomme en moyenne 6 litres d'essence pour parcourir 100 kilomètres. Complète.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-proportionnalite",
       "texte": "1 000 km → {1} litres  ·  25 km → {2} litres  ·  {3} km → 1,2 litre",
       "reponse": [
@@ -717,7 +743,7 @@
       "type": "qcm",
       "enonce": "Quelle grandeur est 100 fois plus grande que 3 mg ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "300 cg",
@@ -736,7 +762,7 @@
       "type": "qcm",
       "enonce": "Quelle grandeur est 10 fois plus grande que 0,45 dal ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "choix": [
         "0,45 kl",
@@ -755,7 +781,7 @@
       "type": "qcm",
       "enonce": "Le périmètre d'un polygone se calcule ainsi : 5 × 2,5 cm = 12,5 cm. Ce polygone est un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "choix": [
         "losange",
@@ -774,7 +800,7 @@
       "type": "qcm",
       "enonce": "Le périmètre d'un polygone se calcule ainsi : (4 cm + 7 cm) × 2 = 22 cm. Ce polygone est un…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
       "choix": [
         "triangle scalène",
@@ -793,7 +819,7 @@
       "type": "numerique",
       "enonce": "Florentin a fait 15 456, 13 961, 14 785, 12 050, 9 220, 18 782 et 8 916 pas du lundi au dimanche (total : 93 170 pas). Combien de pas a-t-il faits en moyenne chaque jour ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-moyenne",
       "reponse": 13310,
       "unite": "pas",
@@ -807,7 +833,7 @@
       "type": "numerique",
       "enonce": "Tarif du bateau Liège-Maastricht, par trajet : adulte 12 €, enfant de 12 à 18 ans 9 €, enfant de moins de 12 ans 6 € ; –10 % sur le total pour un aller-retour le même jour. Une famille de 2 adultes et 2 enfants de 11 ans et 6 ans fait l'aller-retour en bateau. Combien paie-t-elle au total ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-pourcentages",
       "unite": "€",
       "reponse": 64.8,
@@ -821,7 +847,7 @@
       "type": "numerique",
       "enonce": "Altitude maximale des massifs montagneux en France : Alpes 4 808 m, Pyrénées 3 298 m, Massif central 1 886 m, Jura 1 720 m, Vosges 1 424 m. Combien de massifs ont une altitude maximale supérieure à 2 000 m ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 2,
       "explication": "Seuls les Alpes (4 808 m) et les Pyrénées (3 298 m) dépassent 2 000 m."
     },
@@ -833,7 +859,7 @@
       "type": "trous",
       "enonce": "Complète chaque expression par le bon préfixe (déca, déci, hecto, kilo, centi, milli).",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-conversions",
       "texte": "Un {1}mètre équivaut à 100 m.  ·  Un {2}gramme équivaut à 0,001 g.  ·  Un {3}litre équivaut à 10 ml.",
       "reponse": [
@@ -858,7 +884,7 @@
       "type": "association",
       "enonce": "La nature des documents : associe chaque trace du passé à sa nature.",
       "points": 5,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nature-1",
         "nature-2"
@@ -900,7 +926,7 @@
           4
         ]
       ],
-      "explication": "Une image peinte dans un manuscrit est une enluminure. Une sculpture qui ressort d'un fond est un bas-relief. Renoir peint ; 2025 : une photographie ; Boizot a réalisé une statuette : une sculpture."
+      "explication": "Une image peinte dans un manuscrit est une enluminure. Une sculpture qui ressort d'un fond est un bas-relief. Renoir peint ; 2025 : une photographie ; Boizot a réalisé une statuette : une sculpture. Le corrigé officiel accepte aussi « monument » pour le document 5."
     },
     {
       "id": "ceb-2026-so-l5-q1b",
@@ -910,7 +936,7 @@
       "type": "grille",
       "enonce": "Coche la période conventionnelle de chaque document.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "documents": [
         "nature-1",
@@ -943,7 +969,7 @@
       "type": "texte_court",
       "enonce": "Tous ces documents traitent d'un même thème. Lequel ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nature-1",
         "nature-2"
@@ -972,7 +998,7 @@
       "type": "qcm_multi",
       "enonce": "« La première enceinte de Bruxelles remonte au début du 13e siècle. Les premiers habitants s'installent autour d'un château fort construit au 10e siècle sur une île de la Senne. Pour se protéger, ils construisent une enceinte faite de terre et de pierres, longue de 4 km, avec une quarantaine de tours et 7 portes. » Photo : la tour Anneessens, à Bruxelles, vestige de la première enceinte. Coche les trois informations que tu peux lire ou voir.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Les matériaux utilisés pour la construction de cette enceinte.",
         "La durée de construction du château fort.",
@@ -996,7 +1022,7 @@
       "type": "trous",
       "enonce": "En Belgique, le solstice d'hiver (vers le 21 décembre) est la journée la plus courte, le solstice d'été (vers le 21 juin) la plus longue ; aux équinoxes (vers le 21 mars et le 21 septembre), le jour dure environ 12 heures. Écris la date qui convient : 26 juin, 12 septembre, 18 décembre ou 14 février.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "texte": "Lever 8 h 40, coucher 16 h 37 (jour de 7 h 57) : {1}  ·  Lever 5 h 30, coucher 22 h 00 (jour de 16 h 30) : {2}  ·  Lever 7 h 13, coucher 20 h 04 (jour de 12 h 51) : {3}",
       "reponse": [
         [
@@ -1021,12 +1047,12 @@
       "type": "trous",
       "enonce": "Lis les fiches sur les Carolingiens et complète l'arbre généalogique de Charlemagne (742 - 814).",
       "points": 5,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-dates-cles",
       "documents": [
         "carolingiens"
       ],
-      "texte": "Son père Pépin le Bref : ({1} - {2})  ·  Son fils qui lui succède : {3} (778 - 840)  ·  Né en 795, mort en 855 : {4}  ·  Charles le Chauve : ({5} - {6})  ·  Son frère, né en 751, mort en 771 : {7}",
+      "texte": "Son père Pépin le Bref : ({1} - {2})\nSon fils qui lui succède : {3} ({4} - {5})\nNé en 795, mort en 855 : {6}\nCharles le Chauve : ({7} - {8})\nSon frère, né en 751, mort en 771 : {9}",
       "reponse": [
         [
           "714"
@@ -1038,6 +1064,12 @@
           "Louis le Pieux",
           "Louis Ier",
           "Louis 1er"
+        ],
+        [
+          "778"
+        ],
+        [
+          "840"
         ],
         [
           "Lothaire",
@@ -1057,7 +1089,7 @@
         ]
       ],
       "souple": true,
-      "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne."
+      "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne. « Louis » seul ne suffit pas : il faut « Louis le Pieux » (ou Louis Ier)."
     },
     {
       "id": "ceb-2026-so-l5-q4c",
@@ -1067,7 +1099,7 @@
       "type": "ouverte",
       "enonce": "Un élève affirme : « Charlemagne aurait pu rencontrer Charles le Chauve. » C'est faux. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-dates-cles",
       "documents": [
         "carolingiens"
@@ -1082,7 +1114,7 @@
       "type": "trous",
       "enonce": "La vie de Charlemagne (742 - 814) s'étend sur deux siècles. Lesquels ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-siecles",
       "documents": [
         "carolingiens"
@@ -1115,7 +1147,7 @@
       "type": "qcm",
       "enonce": "Charlemagne a vécu au Moyen Âge. Quel événement a eu lieu pendant cette période ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
       "choix": [
         "L'arrivée des Vikings dans nos régions.",
@@ -1134,7 +1166,7 @@
       "type": "trous",
       "enonce": "Observe les cartes de la construction de l'Union européenne. Écris le nom d'un pays…",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "ue"
       ],
@@ -1172,8 +1204,8 @@
       "domaine": "hg.geographie",
       "type": "qcm_multi",
       "enonce": "Coche les deux pays qui, en 2013, ne font pas partie de l'Union européenne.",
-      "points": 1,
-      "corrigeVerifie": false,
+      "points": 2,
+      "corrigeVerifie": true,
       "documents": [
         "ue"
       ],
@@ -1198,7 +1230,7 @@
       "type": "texte_court",
       "enonce": "Carte du nombre d'habitants par commune : écris le nom d'une ville wallonne de 50 000 à 75 000 habitants, située plutôt à l'ouest de Namur.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-belgique",
       "documents": [
         "communes"
@@ -1217,7 +1249,7 @@
       "type": "qcm",
       "enonce": "Arlon est…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-belgique",
       "documents": [
         "communes"
@@ -1238,7 +1270,7 @@
       "type": "trous",
       "enonce": "Écris le nom de deux villes belges de plus de 100 000 habitants situées en dehors de la Région wallonne.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-belgique",
       "documents": [
         "communes"
@@ -1252,14 +1284,14 @@
           "Bruxelles"
         ],
         [
-          "Anvers",
           "Gand",
+          "Anvers",
           "Bruges",
           "Bruxelles"
         ]
       ],
       "souple": true,
-      "explication": "Anvers, Gand, Bruges (Flandre) et Bruxelles (Région de Bruxelles-Capitale) dépassent 100 000 habitants."
+      "explication": "Anvers, Gand, Bruges (Flandre) et Bruxelles (Région de Bruxelles-Capitale) dépassent 100 000 habitants. Il faut deux villes différentes."
     },
     {
       "id": "ceb-2026-so-l5-q6d",
@@ -1269,7 +1301,7 @@
       "type": "texte_court",
       "enonce": "Écris le nom d'une ville de plus de 100 000 habitants située dans la province de Hainaut.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-belgique",
       "documents": [
         "communes"
@@ -1288,7 +1320,7 @@
       "type": "texte_court",
       "enonce": "Écris le nom d'une ville de moins de 25 000 habitants située dans la province de Luxembourg.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-belgique",
       "documents": [
         "communes"
@@ -1323,7 +1355,7 @@
       "type": "trous",
       "enonce": "Lis l'article sur les empreintes digitales. Complète.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "empreintes-4"
@@ -1354,7 +1386,7 @@
       "type": "qcm",
       "enonce": "« C'est un chemin qui tourne toujours, mais au lieu de rester au même endroit, il s'éloigne de plus en plus du centre, comme la coquille d'un escargot. » De quel motif d'empreinte s'agit-il ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-2"
       ],
@@ -1374,7 +1406,7 @@
       "type": "grille",
       "enonce": "Dans quel bloc d'informations de l'article trouves-tu chaque renseignement ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-1",
         "empreintes-2",
@@ -1409,7 +1441,7 @@
       "type": "ouverte",
       "enonce": "Un élève affirme : « Les humains ne sont pas les seuls à avoir des empreintes digitales. » C'est correct. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-2"
       ],
@@ -1423,7 +1455,7 @@
       "type": "ouverte",
       "enonce": "Écris deux méthodes qui pourraient être destructives, utilisées pour révéler des traces.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-3"
       ],
@@ -1437,7 +1469,7 @@
       "type": "trous",
       "enonce": "« La police scientifique fait une distinction entre les traces et les empreintes. Les premières sont celles laissées par un malfaiteur sur une surface, alors que les secondes sont celles récoltées directement par les policiers. » Que remplacent les mots « premières » et « secondes » ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "texte": "premières : {1}  ·  secondes : {2}",
       "reponse": [
@@ -1461,7 +1493,7 @@
       "type": "trous",
       "enonce": "« Chaque être humain en possède plusieurs… que vous pouvez contempler au bout de vos doigts. » À quelle classe appartient chaque mot ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-classes-mots",
       "texte": "possède : {1}  ·  vous : {2}  ·  vos : {3}",
       "reponse": [
@@ -1490,7 +1522,7 @@
       "type": "qcm_multi",
       "enonce": "« Certaines traces sont « en positif », c'est-à-dire qu'elles apportent cette matière sur une surface, tandis que d'autres sont « en négatif », comme quand on creuse une empreinte sur de la cire. » Quels sont les deux mots antonymes ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "choix": [
         "positif",
@@ -1513,13 +1545,17 @@
       "type": "trous",
       "enonce": "« Les minuties sont donc des petites altérations du motif global. C'est grâce à elles que l'on peut comparer les empreintes digitales. C'est sur la base des minuties que se fait la comparaison entre deux ou plusieurs empreintes pour voir si elles appartiennent à la même personne. » Que remplace chaque « elles » ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "texte": "1er « elles » : {1}  ·  2e « elles » : {2}",
       "reponse": [
         [
           "les minuties",
-          "minuties"
+          "minuties",
+          "des petites altérations",
+          "des altérations",
+          "les petites altérations",
+          "altérations"
         ],
         [
           "les empreintes",
@@ -1539,7 +1575,7 @@
       "type": "ouverte",
       "enonce": "Aujourd'hui, les empreintes digitales sont utilisées dans plusieurs situations. Écris-en une.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-4"
       ],
@@ -1553,7 +1589,7 @@
       "type": "grille",
       "enonce": "Pour chaque phrase, que permet de dire le texte ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "empreintes-1",
@@ -1586,7 +1622,7 @@
       "type": "qcm",
       "enonce": "« Alphonse Bertillon était l'un des précurseurs de la criminologie (7). » Le numéro entre parenthèses sert à indiquer…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "empreintes-4"
       ],
@@ -1607,7 +1643,7 @@
       "type": "qcm",
       "enonce": "« Depuis des milliers d'années, les êtres humains utilisent traces et empreintes. » Structure : complément de phrase + sujet + verbe + complément direct du verbe. Quelle phrase a la même structure ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-sujet-complements",
       "choix": [
         "Pour révéler les traces, on peut utiliser différents types de poudres.",
@@ -1626,7 +1662,7 @@
       "type": "grille",
       "enonce": "À quel temps de l'indicatif est conjugué chaque verbe ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-conjugaison-temps-simples",
       "lignes": [
         "Il a d'abord rejeté les empreintes digitales.",
@@ -1655,18 +1691,24 @@
       "type": "trous",
       "enonce": "Écris le nom au départ duquel est construit chaque mot dérivé (exemple : scientifique → science).",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "texte": "criminel → {1}  ·  digital → {2}",
       "reponse": [
         [
           "crime",
-          "le crime"
+          "le crime",
+          "criminalité",
+          "criminologie",
+          "criminaliste"
         ],
         [
           "doigt",
           "le doigt",
-          "doigts"
+          "doigts",
+          "digitale",
+          "doigté",
+          "digitalisation"
         ]
       ],
       "souple": true,
@@ -1680,7 +1722,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 128 − (14 : 2)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 121,
       "explication": "On calcule d'abord la parenthèse : 14 : 2 = 7. Puis 128 − 7 = 121."
@@ -1693,7 +1735,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : (6 × 6) + (9 × 3) + (5 × 0) + (4 × 5)",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 83,
       "explication": "36 + 27 + 0 + 20 = 83."
@@ -1706,7 +1748,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 86 × 3",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 258,
       "explication": "80 × 3 = 240 ; 6 × 3 = 18 ; 240 + 18 = 258."
@@ -1719,7 +1761,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 10 050 : 2",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 5025,
       "explication": "10 000 : 2 = 5 000 ; 50 : 2 = 25 ; total 5 025."
@@ -1732,7 +1774,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 211 + 85 + 89 + 45",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 430,
       "explication": "211 + 89 = 300 ; 85 + 45 = 130 ; 300 + 130 = 430."
@@ -1745,7 +1787,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 300 × 218",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 65400,
       "explication": "3 × 218 = 654, puis × 100 = 65 400."
@@ -1758,7 +1800,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 2,25 − 0,55",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1.7,
       "explication": "2,25 − 0,55 = 1,70 = 1,7."
@@ -1771,7 +1813,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 8,5 × 9",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 76.5,
       "explication": "8 × 9 = 72 ; 0,5 × 9 = 4,5 ; 72 + 4,5 = 76,5."
@@ -1784,7 +1826,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 25 × 30",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 750,
       "explication": "30 = 15 × 2, donc 375 × 2 = 750."
@@ -1797,7 +1839,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 2,5 × 15",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 37.5,
       "explication": "2,5 est 10 fois plus petit que 25 : 375 : 10 = 37,5."
@@ -1810,7 +1852,7 @@
       "type": "numerique",
       "enonce": "Sachant que 25 × 15 = 375, calcule : 25 × 7,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 187.5,
       "explication": "7,5 est la moitié de 15 : 375 : 2 = 187,5."
@@ -1823,7 +1865,7 @@
       "type": "numerique",
       "enonce": "34,8 × 2,6 : le calcul sans virgule donne 9 048. Écris le résultat correct avec sa virgule.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 90.48,
       "explication": "Il y a 1 chiffre après la virgule dans 34,8 et 1 dans 2,6 : 2 chiffres en tout. 9 048 → 90,48."
@@ -1836,7 +1878,7 @@
       "type": "numerique",
       "enonce": "Dans le nombre 5 478,301, quel chiffre représente les dizaines ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 7,
       "explication": "5 478,301 : 5 milliers, 4 centaines, 7 dizaines, 8 unités."
@@ -1849,7 +1891,7 @@
       "type": "numerique",
       "enonce": "Dans le nombre 5 478,301, quel chiffre représente les millièmes ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1,
       "explication": "Après la virgule : 3 dixièmes, 0 centième, 1 millième."
@@ -1862,7 +1904,7 @@
       "type": "numerique",
       "enonce": "Sören achète un cadre de lit à 344,99 €, une garde-robe à 1 042 € et un bureau à 285,50 €. Quel est le montant total ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "unite": "€",
       "reponse": 1672.49,
@@ -1876,7 +1918,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres : « dix-huit unités trente-sept millièmes ».",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 18.037,
       "explication": "37 millièmes = 0,037. Donc 18,037."
@@ -1889,7 +1931,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 4,2 × 0,1",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 0.42,
       "explication": "× 0,1 revient à diviser par 10."
@@ -1902,7 +1944,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 4,2 × 0,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 2.1,
       "explication": "× 0,5 revient à prendre la moitié."
@@ -1915,7 +1957,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 64 : 0,1",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 640,
       "explication": "Diviser par 0,1 revient à multiplier par 10."
@@ -1928,7 +1970,7 @@
       "type": "numerique",
       "enonce": "Effectue le calcul : 64 : 0,5",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 128,
       "explication": "Diviser par 0,5 revient à multiplier par 2."
@@ -1941,7 +1983,7 @@
       "type": "qcm",
       "enonce": "Marie achète 5 géraniums à 1,50 €, 10 pétunias à 3 €, 5 surfinias à 2 € et 5 bégonias à 2 €. Quelle opération donne la somme qu'elle dépense ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "choix": [
         "25 × 5",
@@ -1960,7 +2002,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 36 019 + 4 572 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "36 500",
@@ -1979,7 +2021,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 152 × 49 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "750",
@@ -1998,7 +2040,7 @@
       "type": "qcm",
       "enonce": "Quelle est l'estimation la plus proche de 40 300 − 18 008 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "12 000",
@@ -2017,7 +2059,7 @@
       "type": "trous",
       "enonce": "Complète pour obtenir 1 à chaque fois.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "texte": "1 = 0,45 + {1}  ·  1 = {2} × 0,25  ·  1 = 0,10 + {3} + 0,70",
       "reponse": [
@@ -2046,7 +2088,7 @@
       "type": "qcm_multi",
       "enonce": "Dans une grille de nombres, trouve les trois paires dont la somme est égale à 10 (exemple : 4,1 et 5,9).",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "1,3 et 8,7",
@@ -2071,7 +2113,7 @@
       "type": "qcm",
       "enonce": "Quelle opération donne le même résultat que 8 × 1,5 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "(8 × 1) + (8 × 5)",
@@ -2090,7 +2132,7 @@
       "type": "trous",
       "enonce": "Décompose 0,36 en parts égales.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "texte": "0,36 = 3 × {1}  ·  0,36 = 9 × {2}",
       "reponse": [
@@ -2114,7 +2156,7 @@
       "type": "qcm",
       "enonce": "« 13,9 > 12,308 » se lit…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "12,308 est plus grand que 13,9.",
@@ -2133,7 +2175,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de l'Espagne : quarante-huit millions cinquante-neuf-mille-sept-cent-septante-sept.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 48059777,
       "explication": "48 millions, 59 milliers, 777 : 48 059 777."
@@ -2146,7 +2188,7 @@
       "type": "numerique",
       "enonce": "Écris en chiffres le nombre d'habitants de la Belgique : onze millions sept-cent-cinquante-quatre-mille-quatre.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 11754004,
       "explication": "11 millions, 754 milliers, 4 unités : 11 754 004."
@@ -2159,7 +2201,7 @@
       "type": "qcm",
       "enonce": "Un tableau contient des nombres rangés de 0,75 à 0,95. Lequel de ces nombres peut y être inscrit ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "choix": [
         "0,1",
@@ -2178,7 +2220,7 @@
       "type": "numerique",
       "enonce": "Lors d'un match Belgique-Norvège, 12 500 enfants sont dans les gradins. La Norvège est encouragée par 3 650 enfants et 23 700 adultes. La Belgique est encouragée par 26 650 supporters. Combien de supporters adultes encouragent la Belgique ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 17800,
       "explication": "Enfants pour la Belgique : 12 500 − 3 650 = 8 850. Adultes pour la Belgique : 26 650 − 8 850 = 17 800."
     },
@@ -2188,13 +2230,13 @@
       "numero": "8b",
       "domaine": "ma.arithmetique",
       "type": "numerique",
-      "enonce": "Un compteur d'eau affiche 0306,580 m³. Quelle est la partie entière du nombre de m³ consommés ?",
+      "enonce": "Un compteur d'eau affiche 03060,580 m³. Écris la partie entière du nombre de m³ d'eau consommée.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "unite": "m³",
-      "reponse": 306,
-      "explication": "La partie entière est avant la virgule : 0306 = 306 (le zéro de gauche ne change rien)."
+      "reponse": 3060,
+      "explication": "La partie entière est la partie avant la virgule : 03060 = 3 060 (le zéro de gauche ne change rien). Attention à ne pas oublier le dernier 0 avant la virgule : il compte !"
     },
     {
       "id": "ceb-2026-so-l8-q9a",
@@ -2204,7 +2246,7 @@
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 50 · 100 · 200 · 400 · … · 1 600",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 800,
       "explication": "On multiplie par 2 à chaque fois : 400 × 2 = 800."
     },
@@ -2216,7 +2258,7 @@
       "type": "numerique",
       "enonce": "Complète la suite en respectant la régularité : 1,57 · … · 0,97 · 0,67 · 0,37 · 0,07",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 1.27,
       "explication": "On retire 0,3 à chaque fois : 1,57 − 0,3 = 1,27."
@@ -2229,7 +2271,7 @@
       "type": "qcm",
       "enonce": "Un joueur de basket a inscrit 5 points de moins que son équipier qui en a marqué 21. Quelle opération permet de trouver ses points ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Addition",
         "Soustraction",
@@ -2247,7 +2289,7 @@
       "type": "qcm",
       "enonce": "Un livreur transporte 72 casiers de 12 bouteilles d'un litre. Quelle opération permet de trouver la quantité d'eau transportée ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Addition",
         "Soustraction",
@@ -2265,7 +2307,7 @@
       "type": "qcm",
       "enonce": "Une classe de 26 élèves de 10 ans et 3 adultes visite un parc. Tarif groupe scolaire : enfant 19 €, adulte 28 €, 1 adulte gratuit pour 15 entrées enfants payantes. Quelle résolution est correcte ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-monnaie",
       "choix": [
         "26 × 19 = 494 ; 3 × 39 = 117 ; total 611 €",
@@ -2284,7 +2326,7 @@
       "type": "qcm",
       "enonce": "Quel nombre est équivalent à 1,25 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-fractions",
       "choix": [
         "3/4",
@@ -2303,7 +2345,7 @@
       "type": "qcm",
       "enonce": "Quel nombre est équivalent à 0,375 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-fractions",
       "choix": [
         "1/3",
@@ -2322,7 +2364,7 @@
       "type": "qcm",
       "enonce": "Quel nombre est équivalent à 4 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-fractions",
       "choix": [
         "40 dixièmes",
@@ -2341,7 +2383,7 @@
       "type": "numerique",
       "enonce": "Des constructions de carrés : construction 1 = 3 carrés, 2 = 6 carrés, 3 = 10 carrés, 4 = 15 carrés. Combien de carrés contiendra la construction 5 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "reponse": 21,
       "explication": "On ajoute 3, puis 4, puis 5… donc 15 + 6 = 21."
     },
@@ -2353,7 +2395,7 @@
       "type": "qcm",
       "enonce": "Quel nombre n'est pas un multiple de 4 ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "choix": [
         "3 520",
@@ -2372,7 +2414,7 @@
       "type": "association",
       "enonce": "Associe chaque situation à l'opération qui la résout. A : 110 + (25 × 10) · B : (110 + 10) × 25 · C : (110 − 25) : 10 · D : (110 + 10) : 25",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "gauche": [
         "110 élèves et 10 parents font une excursion à 25 € par personne. Prix total ?",
         "Un élève a 110 vignettes et reçoit 25 sachets de 10 vignettes. Combien en a-t-il ?",
@@ -2408,7 +2450,7 @@
       "type": "qcm_multi",
       "enonce": "Quels sont les deux nombres à la fois impairs et multiples de 3 ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "choix": [
         "112",
@@ -2431,7 +2473,7 @@
       "type": "qcm",
       "enonce": "4 539 : 63 = 72 reste 3. Quelle opération permet de vérifier cette division ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-division",
       "choix": [
         "(3 + 72) × 63",
@@ -2450,7 +2492,7 @@
       "type": "grille",
       "enonce": "On verse du liquide dans le tube 1 d'un récipient qui relie 5 tubes de tailles différentes (vases communicants). Vrai ou faux ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "vases"
       ],
@@ -2478,7 +2520,7 @@
       "type": "qcm_multi",
       "enonce": "« Vendredi, dans le centre du pays, on prévoit de la pluie qui laissera plus tard la place à des averses de pluie abondantes. En Haute Belgique, des chutes de neige sont attendues en fin de journée. » Quelles trois icônes faudrait-il dessiner sur la carte ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "meteo"
       ],
@@ -2505,7 +2547,7 @@
       "type": "trous",
       "enonce": "Comme chez l'Homme, les organes des animaux forment des appareils. Écris le nom de l'appareil auquel appartient chaque organe.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "texte": "Le crâne : appareil {1}  ·  Le cœur : appareil {2}  ·  Le poumon : appareil {3}",
       "reponse": [
@@ -2535,7 +2577,7 @@
       "type": "ouverte",
       "enonce": "Une élève affirme : « L'appareil digestif du pigeon possède les mêmes organes que celui de l'Homme. » C'est faux. Pourquoi ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "reponseModele": "Le pigeon possède un jabot et un gésier, que l'Homme n'a pas."
     },
@@ -2547,7 +2589,7 @@
       "type": "ordre",
       "enonce": "Remets les étapes du cycle de vie de la libellule dans l'ordre, en commençant par les œufs.",
       "points": 5,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "elements": [
         "Libellule adulte",
@@ -2579,7 +2621,7 @@
       "type": "qcm_multi",
       "enonce": "Quels sont les deux animaux qui subissent aussi des métamorphoses au cours de leur vie ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-classification",
       "choix": [
         "La grenouille",
@@ -2602,7 +2644,7 @@
       "type": "trous",
       "enonce": "Dans la nature, on trouve l'eau à l'état liquide. Sous quels deux autres états peut-on la trouver ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-phenomenes",
       "texte": "{1} et {2}",
       "reponse": [
@@ -2632,7 +2674,7 @@
       "type": "qcm",
       "enonce": "1 litre d'eau pèse 1 000 g, 1 litre d'huile 835 g et 1 litre de lait 1 020 g. Dans l'eau, l'huile remonte au-dessus. On verse du lait et de l'huile dans un bocal et on attend une heure. Qu'observe-t-on ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "sc-phenomenes",
       "choix": [
         "L'huile au-dessus du lait",
@@ -2650,7 +2692,7 @@
       "type": "qcm",
       "enonce": "Sur un tubercule de pomme de terre, de petites pousses apparaissent. Qu'est-ce que c'est ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "choix": [
         "Des graines qui sortent de l'intérieur du tubercule.",
         "Des fleurs qui sortent pour que la pomme de terre devienne une plante.",
@@ -2668,7 +2710,7 @@
       "type": "grille",
       "enonce": "Quelle est l'intention dominante de l'auteur pour chaque texte ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "eiffel",
@@ -2698,7 +2740,7 @@
       "type": "ouverte",
       "enonce": "Gabrielle Petit a plusieurs activités en tant qu'espionne. Écris-en une.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -2712,7 +2754,7 @@
       "type": "trous",
       "enonce": "Lis le texte sur Gabrielle Petit.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -2736,7 +2778,7 @@
       "type": "grille",
       "enonce": "Dans quel bloc d'informations du texte sur Gabrielle Petit insérerais-tu chaque renseignement ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -2764,7 +2806,7 @@
       "type": "ouverte",
       "enonce": "Écris deux raisons pour lesquelles c'était « dur » d'être une espionne, selon Gabrielle Petit.",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "gabrielle"
       ],
@@ -2778,7 +2820,7 @@
       "type": "ouverte",
       "enonce": "D'après le texte, pour quelle raison la tour Eiffel est-elle une prouesse technique pour l'époque ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "eiffel"
       ],
@@ -2792,7 +2834,7 @@
       "type": "qcm",
       "enonce": "Gustave Eiffel a choisi le fer pour sa tour car le fer est…",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "eiffel"
       ],
@@ -2813,7 +2855,7 @@
       "type": "texte_court",
       "enonce": "Dans le texte « L'inimitable tour Eiffel », recopie un mot qui désigne « poètes, écrivains et peintres ».",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "documents": [
         "eiffel"
@@ -2821,7 +2863,9 @@
       "reponse": [
         "artistes",
         "les artistes",
-        "artiste"
+        "artiste",
+        "ils",
+        "de nombreux artistes"
       ],
       "souple": true,
       "explication": "« De nombreux artistes sont particulièrement réticents… » : les poètes, écrivains et peintres sont des artistes."
@@ -2834,7 +2878,7 @@
       "type": "qcm",
       "enonce": "Dans le texte « Au top : le grand nettoyage », quel est l'objectif du grand nettoyage ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nettoyage"
       ],
@@ -2855,7 +2899,7 @@
       "type": "ouverte",
       "enonce": "Relis la blague n° 2 (une chenille et un millepatte). Écris une raison pour laquelle cette blague est imaginaire.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -2867,9 +2911,9 @@
       "numero": "13",
       "domaine": "fr.grammaire",
       "type": "trous",
-      "enonce": "« – Alors, et ce premier bulletin, tu me le montres ? Il lui répond, tout fier… » Que remplacent les pronoms ?",
+      "enonce": "« – Alors, et ce premier bulletin, tu me le montres ? Il lui répond, tout fier : – C'est mon ami Colin qui l'a. Je le lui ai prêté : il voulait faire peur à son père ! » Quel mot ou groupe de mots remplacent « le » (dans « tu me le montres ») et « lui » (dans « Je le lui ai prêté ») ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-pronoms",
       "documents": [
         "blagues"
@@ -2878,20 +2922,22 @@
       "reponse": [
         [
           "ce premier bulletin",
+          "ce premier bulletin de Tom",
           "le premier bulletin",
+          "le premier bulletin de Tom",
           "le bulletin",
           "bulletin"
         ],
         [
-          "son père",
-          "le père",
-          "le père de Tom",
-          "au père de Tom",
-          "à son père"
+          "mon ami Colin",
+          "Colin",
+          "mon ami",
+          "qui",
+          "son ami Colin"
         ]
       ],
       "souple": true,
-      "explication": "« le » reprend « ce premier bulletin ». « lui » : Tom répond à son père."
+      "explication": "« le » reprend « ce premier bulletin » (de Tom). Dans « Je le lui ai prêté », Tom parle de son ami : « lui » reprend « mon ami Colin »."
     },
     {
       "id": "ceb-2026-so-l10-q15a",
@@ -2900,8 +2946,8 @@
       "domaine": "fr.lire",
       "type": "qcm",
       "enonce": "Dans la blague n° 1, qui dit : « Alors, et ce premier bulletin, tu me le montres ? »",
-      "points": 1,
-      "corrigeVerifie": false,
+      "points": 0.5,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -2921,8 +2967,8 @@
       "domaine": "fr.lire",
       "type": "qcm",
       "enonce": "Et à qui parle-t-il ?",
-      "points": 1,
-      "corrigeVerifie": false,
+      "points": 0.5,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -2943,7 +2989,7 @@
       "type": "qcm",
       "enonce": "Dans la blague n° 3 (l'oiseau migrateur), quel procédé l'auteur utilise-t-il pour faire sourire ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "blagues"
       ],
@@ -2964,7 +3010,7 @@
       "type": "qcm",
       "enonce": "Quel est le message de l'affiche « Jouer aide à grandir » ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "nettoyage"
       ],
@@ -2985,7 +3031,7 @@
       "type": "grille",
       "enonce": "Définitions de « résistance » : 1 capacité à endurer la fatigue ; 2 action de s'opposer à quelqu'un ou à quelque chose ; 3 capacité d'un matériau à résister à des forces ; 4 conducteur qui dégage de la chaleur. Quel sens a le mot dans chaque phrase ?",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-vocabulaire",
       "lignes": [
         "Gabrielle Petit est un symbole de la résistance.",
@@ -3011,7 +3057,7 @@
       "type": "grille",
       "enonce": "En te basant sur les textes du portfolio, que peux-tu dire ?",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-lire-intention",
       "documents": [
         "nettoyage"
@@ -3041,7 +3087,7 @@
       "type": "qcm",
       "enonce": "« Gabrielle Petit ne grandit pas dans sa famille. » À quel temps de l'indicatif est le verbe ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-conjugaison-temps-simples",
       "choix": [
         "Imparfait",
@@ -3060,7 +3106,7 @@
       "type": "qcm",
       "enonce": "« Je le lui ai prêté. » À quel temps de l'indicatif est le verbe ?",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "fr-passe-compose",
       "choix": [
         "Imparfait",
@@ -3071,5 +3117,6 @@
       "reponse": 3,
       "explication": "« ai prêté » : auxiliaire avoir au présent + participe passé = passé composé."
     }
-  ]
+  ],
+  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2026, socles de compétences), comparé question par question le 21/10/2026."
 }
