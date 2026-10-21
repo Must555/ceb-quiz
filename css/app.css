@@ -3,8 +3,8 @@
    3 ambiances au choix : Cahier (défaut), Tableau, Lecture (confort de lecture)
    ============================================================ */
 :root {
-  --texte: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
-  --titre: 'Baloo 2', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif; /* même police de titres que la page d'accueil */
+  --texte: 'Atkinson Hyperlegible','Atkinson secours', 'Segoe UI', system-ui, sans-serif;
+  --titre: 'Baloo 2','Baloo 2 secours', 'Atkinson Hyperlegible','Atkinson secours', 'Segoe UI', system-ui, sans-serif; /* même police de titres que la page d'accueil */
   --manuscrit: 'Playwrite BE WAL', 'Segoe Script', cursive;   /* écriture scolaire belge */
   --r: 18px;
   --juste: #2e7d32; --faux: #b3261e;
@@ -711,7 +711,7 @@ a.btn { text-decoration:none; }
 
 /* ---------- Harmonisation avec la page d'accueil ---------- */
 /* Lecture (confort, moins de fatigue) : on garde Atkinson Hyperlegible partout, y compris les titres. */
-[data-theme="lecture"] { --titre: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif; }
+[data-theme="lecture"] { --titre: 'Atkinson Hyperlegible','Atkinson secours', 'Segoe UI', system-ui, sans-serif; }
 .carte { border-radius:20px; }
 .btn { border-radius:16px; }
 .mode, .matiere { border-radius:20px; }
