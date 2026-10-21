@@ -2889,9 +2889,9 @@
    ],
    "choix": [
     "Parce que le chocolat prend les odeurs qui l'entourent.",
-    "Parce que le chocolat fond à la lumière.",
-    "Pour que les enfants ne les mangent pas.",
-    "Pour qu'elles durcissent plus vite."
+    "Parce que le chocolat a besoin d'humidité pour rester bon.",
+    "Pour que le cacao ne colle pas aux doigts.",
+    "Pour qu'elles restent bien au chaud."
    ],
    "reponse": 0,
    "explication": "« Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. »"
@@ -3979,7 +3979,7 @@
    "numero": "10a4",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Quelles sont les deux variables qui influencent les besoins énergétiques ?",
+   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. D'après ce graphique, quelles sont les deux variables qui influencent les besoins énergétiques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -3989,9 +3989,9 @@
    "choix": [
     "l'âge",
     "le sexe (fille ou garçon)",
-    "la taille des bâtons",
-    "le pays",
-    "la saison"
+    "le nombre de kilocalories (kcal)",
+    "l'année où les mesures ont été faites",
+    "le sport pratiqué"
    ],
    "reponse": [
     0,

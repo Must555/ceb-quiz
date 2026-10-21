@@ -49,7 +49,8 @@ export function corriger(question, reponseEleve) {
 
   switch (question.type) {
     case 'qcm': {
-      const ok = Number(reponseEleve) === question.reponse;
+      // reponse peut être une liste quand le corrigé officiel accepte plusieurs propositions.
+      const ok = reponseEleve != null && reponseEleve !== '' && [].concat(question.reponse).includes(Number(reponseEleve));
       return { correct: ok, score: ok ? max : 0, max };
     }
     case 'vrai_faux': {

@@ -342,8 +342,8 @@
    "choix": [
     "I7 – I6 – I5 – I4 – J4 – K4 – L4 – M4 – N4",
     "I7 – J7 – K7 – L7 – M7 – N7 – N6 – N5 – N4",
-    "I7 – I6 – I5 – I4 – I3 – I2 – J2 – K2 – N4",
-    "I7 – H7 – H6 – H5 – H4 – J4 – K4 – M4 – N4"
+    "I7 – I6 – I5 – I4 – I3 – I2 – J2 – K2 – L2 – M2 – N2 – N3 – N4",
+    "I7 – H7 – H6 – H5 – H4 – I4 – J4 – K4 – L4 – M4 – N4"
    ],
    "reponse": 0,
    "explication": "On suit le couloir gris de la colonne I jusqu'en I4, puis on remonte le couloir jusqu'à l'entrée 1 (K4 – L4) et on sort vers M4 et N4. La salle de gymnastique bloque le passage direct."

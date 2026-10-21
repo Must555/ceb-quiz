@@ -80,7 +80,7 @@ function questionExamen(q, avecDocs, docsDejaImprimes) {
 // ------------------------------------------------------------------ rendu du corrigé
 function reponseCorrige(q) {
   if (q.type === 'trace') return `<p>${esc(q.reponseTexte)}</p><div class="figure solution">${q.solution}</div>`;
-  if (q.type === 'qcm') return `<p><b>${LETTRES[q.reponse]}.</b> ${esc(q.choix[q.reponse])}</p>`;
+  if (q.type === 'qcm') return `<p>${[].concat(q.reponse).map((i) => `<b>${LETTRES[i]}.</b> ${esc(q.choix[i])}`).join(' ou ')}</p>`;
   if (q.type === 'qcm_multi') return `<p>${q.reponse.map((i) => `<b>${LETTRES[i]}.</b> ${esc(q.choix[i])}`).join(' · ')}</p>`;
   if (q.type === 'association') return `<p>${q.reponse.map(([g, d]) => `${g + 1} → <b>${LETTRES[d]}</b>`).join(' · ')}</p>`;
   if (q.type === 'trous') return `<p>${q.reponse.map((r, i) => `(${i + 1}) <b>${esc([].concat(r)[0])}</b>`).join(' · ')}</p>`;

@@ -110,7 +110,7 @@ export function brancher(zone, q, { onPret, onValider }) {
     // Après correction : colore les bonnes / mauvaises réponses et bloque la saisie.
     montrerCorrection() {
       zone.querySelectorAll('button, input, select, textarea').forEach((el) => { el.disabled = true; });
-      if (q.type === 'qcm') reps.forEach((b) => b.classList.add(+b.dataset.i === q.reponse ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
+      if (q.type === 'qcm') reps.forEach((b) => b.classList.add([].concat(q.reponse).includes(+b.dataset.i) ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'vrai_faux') reps.forEach((b) => b.classList.add((b.dataset.v === '1') === q.reponse ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'qcm_multi') reps.forEach((b) => b.classList.add(q.reponse.includes(+b.dataset.i) ? 'juste' : b.classList.contains('sel') ? 'faux' : 'eteint'));
       if (q.type === 'grille') zone.querySelectorAll('.opt').forEach((o) => {

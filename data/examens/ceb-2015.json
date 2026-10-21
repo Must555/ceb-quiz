@@ -794,7 +794,7 @@
     "sans chasseurs et avec des poules.",
     "avec des chasseurs et des poules.",
     "sans chasseurs et sans poules.",
-    "avec des amis et sans renards."
+    "avec des chasseurs et sans poules."
    ],
    "reponse": 0,
    "explication": "Il veut être tranquille et avoir à manger."
@@ -1352,24 +1352,53 @@
    "livret": 5,
    "numero": "13",
    "domaine": "sc.matiere",
-   "type": "qcm_multi",
-   "enonce": "Dans un bulletin météo, sous quelles autres formes que la pluie l'eau peut-elle se présenter ?",
+   "type": "trous",
+   "enonce": "Dans d'autres bulletins météo, l'eau peut se présenter sous d'autres formes que la pluie. Écris-en deux.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
-   "choix": [
-    "neige",
-    "grêle",
-    "brouillard",
-    "sable",
-    "vent"
-   ],
    "reponse": [
-    0,
-    1,
-    2
+    [
+     "brouillard",
+     "givre",
+     "verglas",
+     "neige",
+     "grêlons",
+     "grêle",
+     "rosée",
+     "brume",
+     "nuage",
+     "nuages",
+     "grésil",
+     "crachin",
+     "glace",
+     "vapeur",
+     "vapeur d'eau",
+     "flocons"
+    ],
+    [
+     "neige",
+     "grêlons",
+     "grêle",
+     "rosée",
+     "brume",
+     "nuage",
+     "nuages",
+     "grésil",
+     "crachin",
+     "glace",
+     "vapeur",
+     "vapeur d'eau",
+     "flocons",
+     "brouillard",
+     "givre",
+     "verglas"
+    ]
    ],
-   "explication": "Neige, grêle, brouillard (ou givre, verglas…)."
+   "explication": "Réponses acceptées par le corrigé officiel : brouillard, givre, verglas, neige, grêle (grêlons), rosée, brume, nuage, grésil, crachin. Pas « pluie ».",
+   "souple": true,
+   "differentes": true,
+   "texte": "L'eau peut se présenter sous forme de {1}\nL'eau peut se présenter sous forme de {2}"
   },
   {
    "id": "ceb-2015-l5-q14",

@@ -2190,11 +2190,14 @@
    ],
    "choix": [
     "Parce que le premier essai rate toujours.",
-    "Parce qu'un seul essai n'est pas suffisant pour valider les résultats.",
-    "Parce que la roue doit chauffer."
+    "Parce qu'ils veulent faire une moyenne des résultats obtenus.",
+    "Parce qu'ils pensent qu'un seul essai n'est pas suffisant pour valider les résultats de cette expérience."
    ],
-   "reponse": 1,
-   "explication": "On répète une mesure pour vérifier qu'elle est fiable."
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Deux propositions sont correctes (le corrigé officiel accepte l'une ou l'autre) : on répète une mesure pour faire une moyenne et pour vérifier que le résultat est fiable."
   },
   {
    "id": "ceb-2016-l7-q5",

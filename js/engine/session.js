@@ -265,7 +265,7 @@ export class QuizSession {
 
 export function bonneReponseLisible(q) {
   switch (q.type) {
-    case 'qcm': return q.choix[q.reponse];
+    case 'qcm': return [].concat(q.reponse).map((i) => q.choix[i]).join(' ou ');
     case 'qcm_multi': return q.reponse.map((i) => q.choix[i]).join(' ; ');
     case 'vrai_faux': return q.reponse ? 'Vrai' : 'Faux';
     case 'numerique': return `${formatNombre(q.reponse)}${q.unite ? ' ' + q.unite : ''}`;
