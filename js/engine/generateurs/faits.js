@@ -83,6 +83,11 @@ function valeursDe(modele, forme, items) {
 //   proches: 'graphie' dans la forme : mots qui ressemblent au mot de l'énoncé (dossard → dos, dent, doux…).
 function groupesDe(modele, forme) { return forme.groupes ?? modele.groupes ?? null; }
 function memeGroupe(groupes, a, b) { return !!groupes && groupes.some((g) => g.includes(a) && g.includes(b)); }
+// Valeurs trop proches pour un enfant (hiberner / s'engourdir) : jamais l'une comme piège de l'autre.
+function incompatible(modele, forme, a, b) {
+  const p = forme.incompatibles ?? modele.incompatibles;
+  return a !== b && !!p && p.some((g) => g.includes(a) && g.includes(b));
+}
 function ressemblance(a, b) {
   a = String(a).toLowerCase(); b = String(b).toLowerCase();
   let best = 0;
@@ -97,9 +102,9 @@ function trierParProximite(rng, valeurs, ref, { groupes, graphie } = {}) {
   return rng.shuffle([...valeurs]).sort((x, y) => score(y) - score(x));
 }
 
-function tirerDistincts(rng, items, n, cleFn) {
+function tirerDistincts(rng, items, n, cleFn, { garderOrdre = false } = {}) {
   const out = []; const vus = new Set();
-  for (const it of rng.shuffle(items)) {
+  for (const it of (garderOrdre ? items : rng.shuffle(items))) {
     const k = cleFn(it);
     if (vus.has(k)) continue;
     vus.add(k); out.push(it);
@@ -143,7 +148,7 @@ const FORMES = {
     } else if (!forme.distracteurs && (groupesDe(modele, forme) || forme.proches === 'graphie')) {
       faux = trierParProximite(rng, faux, { valeur: bonnes[0], mot: nomDe(modele, forme, it) }, { groupes: groupesDe(modele, forme), graphie: forme.proches === 'graphie' });
     }
-    const distracteurs = [...new Set(faux)].filter((v) => !bonnes.includes(v)).slice(0, (forme.choix ?? 4) - 1);
+    const distracteurs = [...new Set(faux)].filter((v) => !bonnes.includes(v) && !bonnes.some((b) => incompatible(modele, forme, v, b))).slice(0, (forme.choix ?? 4) - 1);
     if (distracteurs.length < 1) return null;
     const choix = forme.ordreFixe
       ? valeursDe(modele, forme, items).filter((v) => v === bonnes[0] || distracteurs.includes(v))
@@ -160,15 +165,19 @@ const FORMES = {
     if (!avec.length || sans.length < 2) return null;
     const bon = rng.pick(avec);
     const g = groupesDe(modele, forme);
-    let pool = sans.filter((x) => nomDe(modele, forme, x) !== nomDe(modele, forme, bon));
-    // Distracteurs d'une catégorie voisine d'abord (un légume pour « un fruit », pas une trottinette).
+    let pool = sans.filter((x) => nomDe(modele, forme, x) !== nomDe(modele, forme, bon)
+      && !liste(x[forme.champ]).map(aff).some((w) => incompatible(modele, forme, w, v)));
+    // Distracteurs d'une catégorie voisine d'abord (un légume pour « un fruit », pas une trottinette),
+    // puis, s'il n'y en a pas assez, d'une catégorie adjacente (groupes), puis le reste.
+    let autres;
     if (g || forme.voisinsPar) {
-      const voisins = pool.filter((x) => (forme.voisinsPar
-        ? liste(x[forme.voisinsPar]).map(aff).some((w) => liste(bon[forme.voisinsPar]).map(aff).includes(w))
-        : liste(x[forme.champ]).map(aff).some((w) => memeGroupe(g, w, v))));
-      if (voisins.length >= (forme.choix ?? 4) - 1) pool = voisins;
-    }
-    const autres = tirerDistincts(rng, pool, (forme.choix ?? 4) - 1, (x) => nomDe(modele, forme, x));
+      const refV = forme.voisinsPar ? liste(bon[forme.voisinsPar]).map(aff) : [v];
+      const valsDe = (x) => liste(x[forme.voisinsPar ?? forme.champ]).map(aff);
+      const score = (x) => (forme.voisinsPar && valsDe(x).some((w) => refV.includes(w)) ? 2 : 0)
+        + (valsDe(x).some((w) => refV.some((r) => memeGroupe(g, w, r))) ? 1 : 0);
+      const ordonne = rng.shuffle([...pool]).sort((a, b) => score(b) - score(a));
+      autres = tirerDistincts(rng, ordonne, (forme.choix ?? 4) - 1, (x) => nomDe(modele, forme, x), { garderOrdre: true });
+    } else autres = tirerDistincts(rng, pool, (forme.choix ?? 4) - 1, (x) => nomDe(modele, forme, x));
     if (!autres) return null;
     const choixItems = rng.shuffle([bon, ...autres]);
     const choix = choixItems.map((x) => majuscule(nomDe(modele, forme, x)));
@@ -185,7 +194,8 @@ const FORMES = {
     const valeurs = valeursDe(modele, forme, items);
     const v = rng.pick(valeurs);
     const avec = items.filter((it) => liste(it[forme.champ]).map(aff).includes(v));
-    const sans = items.filter((it) => !liste(it[forme.champ]).map(aff).includes(v));
+    const sans = items.filter((it) => !liste(it[forme.champ]).map(aff).includes(v)
+      && !liste(it[forme.champ]).map(aff).some((w) => incompatible(modele, forme, w, v)));
     const n = (forme.choix ?? 4) - 1;
     const groupe = tirerDistincts(rng, avec, n, (x) => nomDe(modele, forme, x));
     if (!groupe || !sans.length) return null;
@@ -212,7 +222,7 @@ const FORMES = {
     const vrai = rng.next() < 0.5;
     let v = bonnes[0];
     if (!vrai) {
-      const autres = valeursDe(modele, forme, items).filter((x) => !bonnes.includes(x));
+      const autres = valeursDe(modele, forme, items).filter((x) => !bonnes.includes(x) && !bonnes.some((b) => incompatible(modele, forme, x, b)));
       if (!autres.length) return null;
       v = rng.pick(autres);
     }
