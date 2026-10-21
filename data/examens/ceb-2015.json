@@ -930,7 +930,7 @@
    "domaine": "fr.conjugaison",
    "type": "ouverte",
    "enonce": "Écris à l'indicatif présent : « C'est alors qu'apparut le renard. — Bonjour, dit le renard. — Bonjour, répondit poliment le petit prince, qui se retourna mais ne vit rien. »",
-   "points": 2,
+   "points": 5,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "reponseModele": "C'est alors qu'apparait le renard. — Bonjour, dit le renard. — Bonjour, répond poliment le petit prince, qui se retourne mais ne voit rien."
@@ -942,7 +942,7 @@
    "domaine": "fr.grammaire",
    "type": "grille",
    "enonce": "Type et forme des phrases.",
-   "points": 5,
+   "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-phrases",
    "lignes": [
@@ -1073,6 +1073,7 @@
    ],
    "lignes": [
     "en automne, le renard mange … d'oiseaux qu'au printemps.",
+    "en été, le renard mange … de fruits et de graines qu'en automne.",
     "en hiver, le renard mange … de mammifères qu'en automne."
    ],
    "colonnes": [
@@ -1082,9 +1083,10 @@
    ],
    "reponse": [
     1,
+    2,
     0
    ],
-   "explication": "En hiver, les mammifères forment presque tout le régime. (Dans l'épreuve, une troisième ligne demandait « autant ».)"
+   "explication": "Compare les parts des graphiques : moins d'oiseaux en automne qu'au printemps, autant de fruits et de graines en été qu'en automne, et plus de mammifères en hiver (ils forment presque tout le régime)."
   },
   {
    "id": "ceb-2015-l5-q1b",
@@ -1142,26 +1144,72 @@
    "numero": "5",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Expérience 2 : l'eau chaude.",
-   "points": 3,
+   "enonce": "Expérience 2 : l'eau chaude (compte rendu).",
+   "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-2"
    ],
-   "texte": "Température de départ : {1} °C  ·  Récipient 2 après 30 minutes : {2} °C  ·  Durée de l'expérience : {3} minutes",
+   "texte": "a) Température de l'eau au moment où l'expérience a commencé : {1} °C\nb) Que signifie le « 0 » dans la première colonne du tableau ? {2}\nc) Récipient 2 après 30 minutes : {3} °C\nd) Durée de l'expérience : {4}",
    "reponse": [
     [
-     "60"
+     "60",
+     "60°",
+     "60°c",
+     "60 °c",
+     "60 degrés",
+     "60 degres"
     ],
     [
-     "43,7"
+     "0 minute",
+     "0 minutes",
+     "0 min",
+     "0 mn",
+     "temps 0",
+     "temps 0 min",
+     "temps 0 minute",
+     "temps 0 minutes",
+     "le temps 0",
+     "temps zéro",
+     "zéro minute",
+     "début",
+     "le début",
+     "au début",
+     "début de l'expérience",
+     "le début de l'expérience",
+     "au début de l'expérience",
+     "départ",
+     "le départ",
+     "au départ",
+     "départ de l'expérience",
+     "le départ de l'expérience",
+     "le moment du départ",
+     "le moment où l'expérience a commencé",
+     "quand l'expérience commence"
     ],
     [
-     "60"
+     "43,7",
+     "43.7",
+     "43,7°",
+     "43,7°c",
+     "43,7 °c",
+     "43,7 degrés",
+     "43,7 degres"
+    ],
+    [
+     "60",
+     "60 min",
+     "60 minutes",
+     "60 minute",
+     "60min",
+     "1h",
+     "1 h",
+     "1 heure"
     ]
    ],
-   "explication": "Lecture du tableau (0 = début de l'expérience)."
+   "explication": "a) 60 °C au départ. b) Le « 0 » de la première colonne, c'est le début de l'expérience (0 minute). c) 43,7 °C après 30 minutes. d) L'expérience a duré 60 minutes, soit 1 h.",
+   "souple": true
   },
   {
    "id": "ceb-2015-l5-q5e",
@@ -1180,7 +1228,8 @@
     "a réchauffé l'eau.",
     "a ralenti le refroidissement de l'eau.",
     "a empêché l'eau de se refroidir.",
-    "n'a eu aucun effet."
+    "n'a eu aucun effet.",
+    "a ralenti le réchauffement de l'eau."
    ],
    "reponse": 1,
    "explication": "L'eau entourée de laine refroidit, mais plus lentement."
@@ -1909,36 +1958,114 @@
    "numero": "7",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "La carte-lettre (document H).",
+   "enonce": "La carte-lettre (document H) : réponds, puis relève l'indice (la preuve) sur le document.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "carte-lettre"
    ],
-   "texte": "Pays d'expédition : {1}  ·  Province : {2}  ·  Auteur : {3}  ·  Roi des Belges à l'époque : {4}",
+   "texte": "De quel pays ce document a-t-il été expédié ? {1}  ·  Indice relevé sur le document : {2}\nDe quelle province ? {3}  ·  Indice : {4}\nQui a écrit cette carte-lettre ? {5}  ·  Indice : {6}\nQui était le roi des Belges à l'époque ? {7}  ·  Indice : {8}",
    "reponse": [
     [
-     "Belgique"
+     "Belgique",
+     "la Belgique",
+     "Pays d'Europe",
+     "Europe"
+    ],
+    [
+     "le cachet",
+     "cachet",
+     "le timbre",
+     "timbre",
+     "le tampon",
+     "tampon",
+     "Liège sur le cachet",
+     "Luik sur le cachet",
+     "Liège",
+     "Liege",
+     "Luik",
+     "Belgique sur le timbre",
+     "België sur le timbre",
+     "Belgique",
+     "België",
+     "le cachet de Liège",
+     "le timbre belge",
+     "le timbre et le cachet"
     ],
     [
      "Liège",
      "Liege",
-     "province de Liège"
+     "province de Liège",
+     "la province de Liège"
+    ],
+    [
+     "le cachet",
+     "cachet",
+     "le timbre",
+     "timbre",
+     "le tampon",
+     "tampon",
+     "Liège sur le cachet",
+     "Luik sur le cachet",
+     "Liège",
+     "Liege",
+     "Luik",
+     "le cachet de Liège"
     ],
     [
      "Marcel Ladril",
      "Marcel",
-     "son mari"
+     "Monsieur Ladril",
+     "M. Ladril",
+     "Ladril",
+     "Monsieur Marcel Ladril",
+     "son mari",
+     "un homme"
+    ],
+    [
+     "le nom et l'adresse de l'expéditeur",
+     "nom et adresse de l'expéditeur",
+     "le nom de l'expéditeur",
+     "l'adresse de l'expéditeur",
+     "l'expéditeur",
+     "expéditeur",
+     "c'est écrit sur les pointillés",
+     "sur les pointillés",
+     "les pointillés",
+     "c'est écrit au-dessous de la page",
+     "au-dessous de la page",
+     "en dessous de la page",
+     "Marcel Ladril",
+     "Marcel"
     ],
     [
      "Albert Ier",
      "Albert 1er",
+     "Albert I",
+     "Albert 1",
      "Albert",
-     "Albert I"
+     "le roi Albert",
+     "le roi Albert Ier",
+     "le roi chevalier",
+     "roi chevalier"
+    ],
+    [
+     "la date du cachet",
+     "date du cachet",
+     "la date",
+     "le timbre",
+     "timbre",
+     "la photo d'Albert Ier",
+     "la photo",
+     "la photo du roi",
+     "la photo d'Albert",
+     "le portrait d'Albert Ier",
+     "l'effigie d'Albert Ier"
     ]
    ],
-   "explication": "Timbre belge à l'effigie d'Albert Ier, cachet de Liège, signé Marcel Ladril."
+   "explication": "Pays et province : le cachet (Liège) et le timbre belge. Auteur : le nom et l'adresse de l'expéditeur, Marcel Ladril. Roi : Albert Ier, que montrent le timbre et la date du cachet (1914).",
+   "souple": true
   },
   {
    "id": "ceb-2015-l6-q9",
@@ -2217,15 +2344,57 @@
    "numerisable": false
   },
   {
+   "id": "ceb-2015-l6-q19a",
+   "livret": 6,
+   "numero": "19a",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Plan de Mons (livret, page 16) : tu vas tracer un itinéraire. Sur le plan, le point de départ de l'itinéraire se situe…",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "hg-orientation",
+   "choix": [
+    "au nord de la Grand-Place",
+    "au sud de la Grand-Place",
+    "à l'est de la Grand-Place",
+    "à l'ouest de la Grand-Place"
+   ],
+   "reponse": 1,
+   "explication": "Sur le plan, le nord est indiqué par la flèche N : le point de DÉPART est au sud de la Grand-Place.",
+   "numerisable": false,
+   "remarque": "Le plan de Mons est dans le livret (page 16), pas dans le portfolio : question pour la version papier."
+  },
+  {
    "id": "ceb-2015-l6-q19",
    "livret": 6,
-   "numero": "19",
+   "numero": "19b",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Itinéraire sur le plan de Mons.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "enonce": "Trace en rouge l'itinéraire sur le plan de Mons. Positionne ton crayon sur le point de départ. Tu te diriges vers le nord jusqu'au croisement de la rue Notre-Dame et de la rue des Fripiers. Là, tu tournes à droite vers la rue de Houdain et tu marches jusqu'au bout de la rue du Hautbois. Au bout de la rue du Hautbois, tu te diriges vers l'est, tu prends la 2e à gauche et tu marches jusqu'au prochain carrefour.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "L'itinéraire est divisé en 2 tronçons, chacun correctement tracé (½ pt par tronçon) : du point de départ jusqu'au bout de la rue du Hautbois, puis vers l'est (2e rue à gauche) jusqu'au carrefour. On arrive face au bâtiment de la RTBF."
+  },
+  {
+   "id": "ceb-2015-l6-q19c",
+   "livret": 6,
+   "numero": "19c",
+   "domaine": "hg.geographie",
+   "type": "texte_court",
+   "enonce": "Plan de Mons : si tu respectes cet itinéraire, tu arrives face au bâtiment de la … (écris son nom).",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "hg-orientation",
+   "reponse": [
+    "RTBF",
+    "la RTBF",
+    "R.T.B.F."
+   ],
+   "souple": true,
+   "explication": "L'itinéraire se termine face à la RTBF.",
+   "numerisable": false,
+   "remarque": "Le plan de Mons est dans le livret (page 16), pas dans le portfolio : question pour la version papier."
   },
   {
    "id": "ceb-2015-l6-q20",
@@ -3100,25 +3269,61 @@
    "documents": [
     "comm-1"
    ],
-   "texte": "L'abeille danse pour signaler qu'elle a trouvé des {1}  ·  La marmotte guette et {2} pour avertir d'un danger  ·  Les {3} laissent une odeur pour marquer leur territoire  ·  Les {4} changent de couleur pour séduire",
+   "texte": "L'abeille danse pour {1}\nLa marmotte guette et {2} pour {3}\n{4} laissent une odeur pour {5}\n{6} {7} pour séduire.",
    "reponse": [
     [
-     "fleurs"
+     "signaler qu'elle a trouvé des fleurs",
+     "signaler qu'elle a trouvé des fleurs.",
+     "signaler la présence de fleurs",
+     "signaler des fleurs",
+     "indiquer qu'elle a trouvé des fleurs",
+     "indiquer où sont les fleurs",
+     "prévenir qu'elle a trouvé des fleurs",
+     "dire qu'elle a trouvé des fleurs"
     ],
     [
      "siffle"
     ],
     [
+     "avertir les autres d'un danger",
+     "avertir d'un danger",
+     "avertir les autres du danger",
+     "avertir ses congénères d'un danger",
+     "prévenir les autres d'un danger",
+     "alerter les autres d'un danger",
+     "signaler un danger"
+    ],
+    [
+     "Les diks diks mâles",
      "diks diks",
      "diks-diks",
      "dik dik",
-     "diks diks mâles"
+     "dik-dik",
+     "diks diks mâles",
+     "les diks diks",
+     "les diks-diks",
+     "les diks diks mâles"
     ],
     [
-     "pieuvres"
+     "marquer leur territoire",
+     "marquer son territoire",
+     "marquer le territoire"
+    ],
+    [
+     "La pieuvre",
+     "Les pieuvres",
+     "pieuvre",
+     "pieuvres",
+     "la pieuvre",
+     "une pieuvre"
+    ],
+    [
+     "change de couleur",
+     "changent de couleur"
     ]
    ],
-   "explication": "Voir la partie A. (Dans l'épreuve, le tableau comptait 7 éléments à compléter.)"
+   "explication": "L'abeille danse pour signaler qu'elle a trouvé des fleurs ; la marmotte guette et siffle pour avertir les autres d'un danger ; les diks diks mâles laissent une odeur pour marquer leur territoire ; les pieuvres changent de couleur pour séduire.",
+   "souple": true
   },
   {
    "id": "ceb-2015-l9-q10",
@@ -3325,38 +3530,105 @@
    "numero": "19",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Complète : temps et infinitif.",
+   "enonce": "Complète le tableau (verbe conjugué, mode, temps, personne, infinitif). Exemple : « disposent » : indicatif, présent, 3e p. pl., disposer.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "comm-3"
    ],
-   "texte": "« avons vu » : {1}, infinitif {2}  ·  « communiquaient » : {3}, infinitif {4}  ·  « lève » : présent, infinitif {5}  ·  « songe » est au mode {6}",
+   "texte": "« avons vu » (indicatif) : temps {1}, personne {2}, infinitif {3}\n« communiquaient » (indicatif) : temps {4}, personne {5}, infinitif {6}\n« songe » : mode {7}, temps {8}, personne {9}, infinitif {10}\n« lève » (indicatif) : temps {11}, personne {12}, infinitif {13}",
    "reponse": [
     [
      "passé composé",
+     "le passé composé",
      "passe compose"
+    ],
+    [
+     "1re p. pl.",
+     "1re p. pl",
+     "1re pers. pl.",
+     "1re personne du pluriel",
+     "1re personne pluriel",
+     "1ère personne du pluriel",
+     "1ère p. pl.",
+     "1ère personne pluriel",
+     "1e p. pl.",
+     "nous"
     ],
     [
      "voir"
     ],
     [
-     "imparfait"
+     "imparfait",
+     "l'imparfait"
+    ],
+    [
+     "3e p. pl.",
+     "3e p. pl",
+     "3e pers. pl.",
+     "3e personne du pluriel",
+     "3e personne pluriel",
+     "3ème personne du pluriel",
+     "3ème p. pl.",
+     "3ème personne pluriel",
+     "ils",
+     "elles",
+     "ils/elles"
     ],
     [
      "communiquer"
     ],
     [
-     "lever"
-    ],
-    [
      "impératif",
      "imperatif",
-     "l'impératif"
+     "l'impératif",
+     "l'imperatif"
+    ],
+    [
+     "présent",
+     "present",
+     "le présent"
+    ],
+    [
+     "2e p. s.",
+     "2e p. s",
+     "2e p. sing.",
+     "2e pers. sing.",
+     "2e personne du singulier",
+     "2e personne singulier",
+     "2ème personne du singulier",
+     "2ème p. s.",
+     "tu"
+    ],
+    [
+     "songer"
+    ],
+    [
+     "présent",
+     "present",
+     "le présent"
+    ],
+    [
+     "3e p. s.",
+     "3e p. s",
+     "3e p. sing.",
+     "3e pers. sing.",
+     "3e personne du singulier",
+     "3e personne singulier",
+     "3ème personne du singulier",
+     "3ème p. s.",
+     "il",
+     "elle",
+     "il/elle",
+     "on"
+    ],
+    [
+     "lever"
     ]
    ],
-   "explication": "passé composé de voir ; imparfait de communiquer ; lever. « songe » est ici à l'impératif (c'est un ordre, sans sujet exprimé)."
+   "explication": "avons vu : passé composé, 1re personne du pluriel, voir ; communiquaient : imparfait, 3e personne du pluriel, communiquer ; « songe » est ici à l'impératif présent (c'est un ordre), 2e personne du singulier, songer ; lève : présent de l'indicatif, 3e personne du singulier, lever.",
+   "souple": true
   },
   {
    "id": "ceb-2015-l9-q20",
@@ -3401,7 +3673,7 @@
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Le paragraphe reprend-il tout le schéma phonatoire ?",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -3412,7 +3684,7 @@
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Aides de l'auteure à la compréhension.",
-   "points": 2,
+   "points": 4,
    "corrigeVerifie": false,
    "numerisable": false
   },
