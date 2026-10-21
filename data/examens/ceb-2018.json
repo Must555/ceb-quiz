@@ -3,7 +3,7 @@
  "annee": 2018,
  "referentiel": "socles",
  "titre": "CEB 2018",
- "source": "FWB, épreuve externe commune 2018 (questionnaire + portfolio). Réponses établies par l'équipe Mission CEB, à vérifier avec le corrigé officiel.",
+ "source": "FWB, épreuve externe commune 2018 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
  "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Le livret « Solides et figures » repose entièrement sur des tracés : il reste en mode papier.",
  "livrets": [
   {
@@ -271,7 +271,7 @@
    "type": "qcm",
    "enonce": "Quel résumé correspond à l'histoire ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -294,7 +294,7 @@
    "type": "ordre",
    "enonce": "Remets les actions dans l'ordre de l'histoire.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -324,7 +324,7 @@
    "type": "qcm",
    "enonce": "L'auteur de cette histoire est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "faon-1",
@@ -347,7 +347,7 @@
    "type": "qcm",
    "enonce": "« Il pensa que son effort était désormais inutile. » Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -370,7 +370,7 @@
    "type": "qcm",
    "enonce": "« Les chevreuils avaient entendu ou senti son approche. » C'est l'approche…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "faon-1",
@@ -394,7 +394,7 @@
    "type": "qcm_multi",
    "enonce": "« L'homme se promenait… il était prêt à fixer n'importe quoi, simplement parce qu'il faisait beau, que l'on était revenu au printemps, qu'il respirait un air encore mouillé de rosée. » Quels pronoms désignent l'homme ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-pronoms",
    "documents": [
     "faon-1"
@@ -419,7 +419,7 @@
    "type": "trous",
    "enonce": "« La mère réclamait son petit, lui enjoignait de la rejoindre… » Que remplacent les pronoms ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-pronoms",
    "documents": [
     "faon-1"
@@ -428,14 +428,10 @@
    "reponse": [
     [
      "son petit",
-     "le faon",
-     "petit",
-     "faon"
+     "le faon"
     ],
     [
-     "la mère",
-     "mère",
-     "sa mère"
+     "la mère"
     ]
    ],
    "explication": "La mère demande à son petit de la rejoindre, elle."
@@ -448,7 +444,7 @@
    "type": "trous",
    "enonce": "« Et le bébé chevreuil voulut obéir. Il déplia ses jambes… Elles se révélèrent trop faibles. » Que remplacent les pronoms ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-pronoms",
    "documents": [
     "faon-1"
@@ -457,19 +453,18 @@
    "reponse": [
     [
      "le bébé chevreuil",
-     "le faon",
-     "bébé chevreuil",
-     "faon"
+     "le faon"
     ],
     [
      "ses pattes",
      "les pattes",
-     "pattes",
      "ses jambes",
-     "jambes"
+     "les pattes du bébé chevreuil",
+     "les jambes du bébé chevreuil",
+     "les jambes"
     ]
    ],
-   "explication": "Le bébé chevreuil ; ses pattes (jambes)."
+   "explication": "Le bébé chevreuil ; ses pattes (jambes). Il faut écrire le déterminant : « ses pattes », « le bébé chevreuil »."
   },
   {
    "id": "ceb-2018-l1-q9",
@@ -479,7 +474,7 @@
    "type": "qcm",
    "enonce": "La mère a abandonné son faon…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -502,7 +497,7 @@
    "type": "qcm",
    "enonce": "« Au simple déclic, la frayeur du faon redoubla. » Le déclic, c'est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "faon-1",
@@ -525,7 +520,7 @@
    "type": "texte_court",
    "enonce": "« le photographe braqua son objectif sur le chétif animal » : remplace « braqua » par un verbe de même sens.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-synonymes",
    "documents": [
     "faon-1",
@@ -536,7 +531,8 @@
     "dirigea",
     "orienta",
     "tourna",
-    "visa"
+    "visa",
+    "fixa"
    ],
    "explication": "braquer = pointer, diriger."
   },
@@ -548,7 +544,7 @@
    "type": "texte_court",
    "enonce": "Écris un indice du texte qui montre que le faon est tout jeune.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -561,7 +557,13 @@
     "presque poisseux",
     "ses pattes trop faibles",
     "il est né depuis une heure",
-    "né depuis une heure"
+    "né depuis une heure",
+    "yeux voilés",
+    "ses yeux voilés",
+    "bébé chevreuil",
+    "force à peine naissante",
+    "une heure de vie",
+    "pattes faibles"
    ],
    "explication": "« né à peine d'une heure ainsi que l'indiquait son poil encore humide, presque poisseux »."
   },
@@ -572,8 +574,8 @@
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Comment l'homme a-t-il envie de réagir après la photo ? Comment réagit-il en réalité ?",
-   "points": 1,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -589,7 +591,7 @@
    "type": "ouverte",
    "enonce": "« Ne touchez jamais un jeune animal. » Écris deux raisons citées par l'auteur.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -600,12 +602,12 @@
   {
    "id": "ceb-2018-l1-q15",
    "livret": 1,
-   "numero": "15",
+   "numero": "16",
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Le faon abandonné n'est pas sans défense. Recopie une idée du texte qui le prouve.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-2"
@@ -615,12 +617,12 @@
   {
    "id": "ceb-2018-l1-q16",
    "livret": 1,
-   "numero": "16",
+   "numero": "15",
    "domaine": "fr.grammaire",
    "type": "texte_court",
    "enonce": "« Le photographe s'éloigna un peu pour que le petit animal reprenne quelque confiance. De nouveau, l'appel se fit entendre… » Recopie les mots qui enchainent ces deux phrases.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "documents": [
     "faon-1",
@@ -640,7 +642,7 @@
    "type": "trous",
    "enonce": "Complète le tableau des temps (extrait : commença, s'était immobilisé, faisait, obligeait, avança, jeta, avait compris, redoublait…).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "faon-2"
@@ -658,7 +660,7 @@
      "imparfait"
     ]
    ],
-   "explication": "commença : passé simple ; avait compris : plus-que-parfait ; faisait : imparfait."
+   "explication": "commença : passé simple ; avait compris : plus-que-parfait ; faisait : imparfait. (Dans l'épreuve, il fallait aussi trouver d'autres verbes au passé simple : jeta, avança.)"
   },
   {
    "id": "ceb-2018-l1-q18",
@@ -668,23 +670,25 @@
    "type": "texte_court",
    "enonce": "« Il serait alors délaissé par les siens. » Remplace « les siens » par un groupe nominal de même sens.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "faon-1",
     "faon-2"
    ],
    "reponse": [
-    "sa mère",
     "sa famille",
     "les chevreuils",
     "les autres chevreuils",
     "son troupeau",
     "sa harde",
-    "ses parents",
-    "le troupeau"
+    "le troupeau",
+    "les animaux de son espèce",
+    "les animaux de son groupe",
+    "sa troupe",
+    "son groupe"
    ],
-   "explication": "« les siens » = sa famille, sa mère, les autres chevreuils."
+   "explication": "« Les siens », ce sont les animaux de son espèce, de son groupe, de sa famille (les chevreuils). Pas seulement « sa mère »."
   },
   {
    "id": "ceb-2018-l1-q19",
@@ -694,7 +698,7 @@
    "type": "qcm",
    "enonce": "« né à peine d'une heure ainsi que l'indiquait son poil… » Quel mot de liaison peut remplacer « ainsi que » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "documents": [
     "faon-1",
@@ -716,7 +720,7 @@
    "type": "qcm",
    "enonce": "Quel est un synonyme de « gracieux » ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-synonymes",
    "documents": [
     "faon-1",
@@ -740,7 +744,7 @@
    "type": "trous",
    "enonce": "« Maladroitement, […] le faon jeta un coup d'œil en direction de l'homme qui faisait tout pour conserver une attitude rassurante. » Classe des mots.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
    "documents": [
     "faon-1",
@@ -768,7 +772,7 @@
    "type": "qcm",
    "enonce": "« Il sifflota, satisfait de sa pleine liberté, du sentiment qu'il avait d'être son maître. » Quel adjectif pourrait qualifier l'homme ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -791,7 +795,7 @@
    "type": "ouverte",
    "enonce": "« Là-bas, comme si elle avait compris que son petit lui revenait, la mère redoublait ses appels. » Qu'est-ce que ressent la mère ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-2"
@@ -806,7 +810,7 @@
    "type": "qcm_multi",
    "enonce": "Quels titres auraient pu convenir (deux réponses) ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "faon-1",
@@ -864,7 +868,7 @@
    "domaine": "ma.geometrie",
    "type": "ouverte",
    "enonce": "Construis un carré de 4 cm de côté.",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -1019,7 +1023,7 @@
    "type": "qcm",
    "enonce": "Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "choix": [
     "Nicolas",
@@ -1027,7 +1031,7 @@
     "Ils ont colorié la même surface"
    ],
    "reponse": 1,
-   "explication": "3/5 = 6/10 < 7/10."
+   "explication": "3/5 = 6/10 < 7/10. (Dans l'épreuve, il fallait justifier en comparant les fractions : 3/5 = 6/10, et 6/10 < 7/10.)"
   },
   {
    "id": "ceb-2018-l4-q4b",
@@ -1037,7 +1041,7 @@
    "type": "numerique",
    "enonce": "36 élèves : la moitié préfère la confiserie, le tiers la menuiserie, le reste la balade en forêt. Combien d'élèves ont préféré la balade ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions",
    "reponse": 6,
    "unite": "élèves",
@@ -1051,7 +1055,7 @@
    "type": "trous",
    "enonce": "Le périmètre de chaque figure mesure 18 cm. Donne la longueur des côtés.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
    "texte": "Triangle équilatéral : côtés de {1} cm  ·  Losange : côtés de {2} cm",
    "reponse": [
@@ -1070,29 +1074,32 @@
    "numero": "6",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Change l'unité pour rendre la grandeur 10 fois plus grande (63 hl, 25 dal, 8,75 l) puis 100 fois plus petite (82 dl, 0,98 l).",
-   "points": 5,
-   "corrigeVerifie": false,
+   "enonce": "Change l'unité pour rendre la grandeur 10 fois plus grande (45 ml, 82 dl, 0,98 l), puis 100 fois plus petite (63 hl, 25 dal, 8,75 l).",
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "63 {1}  ·  25 {2}  ·  8,75 {3}  ·  82 {4}  ·  0,98 {5}",
+   "texte": "10 fois plus grande :\n45 {1}\n82 {2}\n0,98 {3}\n\n100 fois plus petite :\n63 {4}\n25 {5}\n8,75 {6}",
    "reponse": [
     [
-     "kl"
+     "cl"
     ],
     [
-     "hl"
+     "l"
     ],
     [
      "dal"
     ],
     [
-     "ml"
+     "l"
+    ],
+    [
+     "dl"
     ],
     [
      "cl"
     ]
    ],
-   "explication": "10 fois plus grand : unité juste au-dessus. 100 fois plus petit : deux unités en dessous (dl → ml, l → cl)."
+   "explication": "10 fois plus grande : on monte d'une unité (ml → cl, dl → l, l → dal). 100 fois plus petite : on descend de deux unités (hl → l, dal → dl, l → cl)."
   },
   {
    "id": "ceb-2018-l4-q7",
@@ -1102,7 +1109,7 @@
    "type": "numerique",
    "enonce": "Une caisse a un fond de 54 cm sur 36 cm. Quelle hauteur minimale (en cm) faut-il pour y ranger 270 cubes de 6 cm d'arête ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-volumes",
    "reponse": 30,
    "unite": "cm",
@@ -1116,7 +1123,7 @@
    "type": "trous",
    "enonce": "Le compteur d'eau affiche 0 0 0 3 9 6 7 et le « 9 » désigne les hectolitres. Place les chiffres dans l'abaque.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "texte": "kl : {1}  ·  hl : 9  ·  dal : {2}  ·  l : {3}",
    "reponse": [
@@ -1140,7 +1147,7 @@
    "type": "numerique",
    "enonce": "La plus grande longueur de la salle mesure 1 268 cm. Combien de banquettes entières de 1 m peut-on aligner ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "reponse": 12,
    "unite": "banquettes",
@@ -1154,7 +1161,7 @@
    "type": "trous",
    "enonce": "Le mercredi 27 juin, le soleil se lève à 05:31 et se couche à 22:00. Combien de temps entre le lever et le coucher ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "texte": "{1} h {2} min",
    "reponse": [
@@ -1175,11 +1182,11 @@
    "type": "numerique",
    "enonce": "Combien de jours du mercredi 16 mai au mercredi 27 juin inclus ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "reponse": 43,
    "unite": "jours",
-   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43."
+   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43. Le corrigé accepte aussi 41 ou 42 jours (selon qu'on compte les jours inclus ou non)."
   },
   {
    "id": "ceb-2018-l4-q15a",
@@ -1189,7 +1196,7 @@
    "type": "trous",
    "enonce": "Il est 12:08. Je dois retrouver Arthur à 14h40. Combien de temps reste-t-il ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-durees",
    "texte": "{1} h {2} min",
    "reponse": [
@@ -1209,10 +1216,10 @@
    "domaine": "ma.grandeurs",
    "type": "trous",
    "enonce": "Milkshake pour 8 personnes : 4 boules de glace, 1 l de lait, 2 cuillerées de sirop. Complète.",
-   "points": 4,
-   "corrigeVerifie": false,
+   "points": 2,
+   "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
-   "texte": "12 personnes : {1} boules, {2} l de lait, {3} cuillerées  ·  1,25 l de lait : {4} personnes",
+   "texte": "12 personnes : {1} boules, {2} l de lait, {3} cuillerées\n1,25 l de lait : {4} personnes, {5} boules, {6} cuillerées",
    "reponse": [
     [
      "6"
@@ -1225,6 +1232,12 @@
     ],
     [
      "10"
+    ],
+    [
+     "5"
+    ],
+    [
+     "2,5"
     ]
    ],
    "explication": "12 = 8 × 1,5 : tout × 1,5. 1,25 l = 1 l × 1,25 : 8 × 1,25 = 10 personnes."
@@ -1237,7 +1250,7 @@
    "type": "grille",
    "enonce": "Quel objet correspond à chaque encadrement ?",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
    "lignes": [
     "0,8 t < … < 1,5 t",
@@ -1270,7 +1283,7 @@
    "type": "numerique",
    "enonce": "Un aquarium cubique de 40 cm de côté est rempli sur 30 cm. Il faut 2 ml d'« Algue Stop » par litre. Combien de ml faut-il ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-volumes",
    "reponse": 96,
    "unite": "ml",
@@ -1383,7 +1396,7 @@
    "type": "qcm",
    "enonce": "Expérience 1 : pot A dans la classe (chaleur), pot B à l'extérieur (chutes de température). Quelle condition l'expérience fait-elle varier ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "germ-1"
@@ -1405,7 +1418,7 @@
    "type": "qcm",
    "enonce": "Les élèves veulent savoir si les graines germent uniquement au contact de la terre. Quelle expérience ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "germ-1",
@@ -1429,7 +1442,7 @@
    "type": "ouverte",
    "enonce": "Rédige la question que les élèves se sont posée avant l'expérience 3 (pot D dans l'obscurité).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
     "germ-2"
@@ -1456,7 +1469,7 @@
     "Un sac noir"
    ],
    "reponse": 0,
-   "explication": "Seul le pot sans eau n'a pas germé."
+   "explication": "Seul le pot sans eau n'a pas germé. (L'épreuve demandait deux conditions : l'eau et la chaleur.)"
   },
   {
    "id": "ceb-2018-l5-q4b",
@@ -1466,7 +1479,7 @@
    "type": "qcm_multi",
    "enonce": "Cycle de l'eau dans le milieu naturel : coche les deux affirmations correctes.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "choix": [
     "La totalité de l'eau de pluie aboutit dans la nappe phréatique.",
@@ -1488,7 +1501,7 @@
    "type": "ouverte",
    "enonce": "Pourquoi l'utilisation des herbicides est-elle déconseillée, parfois interdite ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "documents": [
     "cycle",
@@ -1504,7 +1517,7 @@
    "type": "ordre",
    "enonce": "Remets les photos de l'expérience dans l'ordre (glaçons qui fondent puis eau chauffée).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
     "etats"
@@ -1533,7 +1546,7 @@
    "type": "qcm_multi",
    "enonce": "Sur la photo E, il y a de la glace et de l'eau liquide. Quels états ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
     "etats"
@@ -1557,7 +1570,7 @@
    "type": "qcm",
    "enonce": "Glace et eau liquide mélangées (photo E) : à quelle température ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
     "etats"
@@ -1580,7 +1593,7 @@
    "type": "qcm",
    "enonce": "L'eau bout (photo B) : à quelle température ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
     "etats"
@@ -1603,7 +1616,7 @@
    "type": "qcm",
    "enonce": "Glace sortie du congélateur, relevés toutes les 10 min : −5,5 °C (que de la glace), −2 °C (que de la glace), puis la glace fond à 0 °C, beaucoup puis un peu de glace (température stable), enfin tout est fondu à 1,5 °C. Quel tableau convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-etats",
    "choix": [
     "−5,5 ; −2 ; 0 ; 1,5 ; 1,5 ; 5",
@@ -1622,17 +1635,13 @@
    "type": "trous",
    "enonce": "Clé de détermination des champignons : complète.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "champi"
    ],
-   "texte": "Pas de distinction pied/chapeau, en forme de boule : {1}  ·  en forme de coupe : {2}  ·  Lamelles, pas d'anneau : {3}  ·  Anneau, pas de volve : {4}  ·  Volve, chapeau blanc : {5}  ·  Volve, chapeau orangé : {6}",
+   "texte": "Pas de distinction pied/chapeau, en forme de coupe : {1}\nLamelles, pas d'anneau : {2}\nAnneau, pas de volve : {3}\nVolve, chapeau blanc : {4}",
    "reponse": [
-    [
-     "vesse de loup",
-     "la vesse de loup"
-    ],
     [
      "pézize",
      "pezize"
@@ -1646,12 +1655,9 @@
     [
      "amanite ovoïde",
      "amanite ovoide"
-    ],
-    [
-     "oronge"
     ]
    ],
-   "explication": "Vesse de loup, pézize, tricholome, pratelle, amanite ovoïde, oronge (le cèpe n'a pas de lamelles)."
+   "explication": "Vesse de loup, pézize, tricholome, pratelle, amanite ovoïde, oronge (le cèpe n'a pas de lamelles). (Dans la clé officielle, le cèpe est donné en exemple.)"
   },
   {
    "id": "ceb-2018-l5-q9a",
@@ -1661,7 +1667,7 @@
    "type": "grille",
    "enonce": "La circulation du sang : vrai ou faux ?",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "lignes": [
     "Notre appareil circulatoire est un appareil fermé.",
@@ -1691,7 +1697,7 @@
    "type": "qcm_multi",
    "enonce": "« Quand tu fais du sport, le cœur envoie plus de sang vers les muscles » parce que…",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "choix": [
     "les muscles ont besoin de plus d'oxygène qu'au repos.",
@@ -1712,7 +1718,7 @@
    "type": "grille",
    "enonce": "Quel type d'articulation ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "lignes": [
     "L'épaule",
@@ -1802,7 +1808,7 @@
    "type": "qcm",
    "enonce": "Un de tes cinq sens peut être perturbé par une illusion d'optique. Lequel ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "choix": [
     "la vue",
@@ -1832,7 +1838,7 @@
    "domaine": "sc.matiere",
    "type": "ouverte",
    "enonce": "Complète le schéma du cycle de l'eau.",
-   "points": 4,
+   "points": 1,
    "corrigeVerifie": false,
    "documents": [
     "cycle"
@@ -1947,7 +1953,7 @@
    "type": "trous",
    "enonce": "Arbre : « L'abeille peut remplir plusieurs missions » → oui : {1}. Non → « Elle pond » → oui : {2} ; non : {3}.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "abeilles-1",
@@ -1980,7 +1986,7 @@
    "type": "grille",
    "enonce": "Les ouvrières : quelle fonction ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "abeilles-1",
     "abeilles-2"
@@ -2009,7 +2015,7 @@
    "type": "ouverte",
    "enonce": "Lorsqu'un ennemi est tué, de quelles deux façons les abeilles s'en débarrassent-elles ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "abeilles-2"
    ],
@@ -2023,7 +2029,7 @@
    "type": "grille",
    "enonce": "Dans quelle partie du texte pourrait-on placer ces phrases ? (A fonctionner, B durer, C communiquer)",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "abeilles-1",
@@ -2040,7 +2046,10 @@
    ],
    "reponse": [
     2,
-    1
+    [
+     1,
+     0
+    ]
    ],
    "explication": "Retrouver la ruche : communiquer / s'orienter (C). La fécondation de la reine : durer (B)."
   },
@@ -2052,7 +2061,7 @@
    "type": "qcm",
    "enonce": "« …chacune d'elles a une mission bien précise à remplir sans empiéter sur celle des autres catégories. » « celle » désigne…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "abeilles-1"
@@ -2074,7 +2083,7 @@
    "type": "qcm_multi",
    "enonce": "« Les mâles ou faux bourdons… Ce sont de véritables rois fainéants ou rentiers… celles-ci les tuent en hiver. » Quels mots désignent les mâles ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "documents": [
     "abeilles-1"
@@ -2101,7 +2110,7 @@
    "type": "qcm_multi",
    "enonce": "Quelles phrases ont la même structure que « Les butineuses ont le rôle le plus noble de la ruche » (sujet – verbe – CD) ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-fonctions",
    "choix": [
     "Les ouvrières sont des abeilles femelles atrophiées.",
@@ -2123,7 +2132,7 @@
    "type": "qcm",
    "enonce": "« Ceux-ci comprennent de petites loges en forme d'hexagone. » Dans quelle phrase « comprendre » a-t-il le même sens ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "abeilles-1"
@@ -2145,7 +2154,7 @@
    "type": "ouverte",
    "enonce": "Écris avec précision ce qu'est la « gelée royale ».",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "abeilles-1"
    ],
@@ -2159,7 +2168,7 @@
    "type": "grille",
    "enonce": "Dans quelle partie du texte trouver l'information ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "abeilles-1",
@@ -2189,8 +2198,8 @@
    "domaine": "fr.lire",
    "type": "qcm_multi",
    "enonce": "Quels moyens les abeilles utilisent-elles pour communiquer et s'orienter ?",
-   "points": 3,
-   "corrigeVerifie": false,
+   "points": 1,
+   "corrigeVerifie": true,
    "documents": [
     "abeilles-2"
    ],
@@ -2216,7 +2225,7 @@
    "type": "ouverte",
    "enonce": "Écris un titre plus précis que « Les abeilles ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "abeilles-1",
     "abeilles-2"
@@ -2253,7 +2262,7 @@
    "type": "grille",
    "enonce": "Carte du front fin 1914 : vrai ou faux ?",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "guerre-2"
@@ -2281,8 +2290,8 @@
    "domaine": "hg.histoire",
    "type": "qcm_multi",
    "enonce": "À la fin de 1914, la Belgique…",
-   "points": 2,
-   "corrigeVerifie": false,
+   "points": 1,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "guerre-2"
@@ -2307,13 +2316,15 @@
    "type": "texte_court",
    "enonce": "À quelle date l'armistice de la Première Guerre mondiale a-t-il été signé ? (jour mois année)",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "reponse": [
     "11 novembre 1918",
     "11/11/1918",
     "11-11-1918",
-    "11.11.1918"
+    "11.11.1918",
+    "11/11/18",
+    "11 novembre 18"
    ],
    "explication": "Le 11 novembre 1918."
   },
@@ -2325,7 +2336,7 @@
    "type": "qcm_multi",
    "enonce": "Le document 1 (monument aux martyrs de Spontin) est la photo…",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "spontin-1"
@@ -2351,7 +2362,7 @@
    "type": "grille",
    "enonce": "Les plaques (documents 2, 3 et 4) permettent-elles de dire que… ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "spontin-1",
@@ -2370,11 +2381,14 @@
    ],
    "reponse": [
     0,
-    2,
+    [
+     2,
+     1
+    ],
     1,
     0
    ],
-   "explication": "Plus de 40 noms ; la façon dont ils sont morts n'est pas indiquée ; « Martyrs du 23 aout 1914 » ; Gabrielle Poncin avait 8 ans."
+   "explication": "Plus de 40 noms ; la façon dont ils sont morts n'est pas indiquée ; « Martyrs du 23 aout 1914 » ; Gabrielle Poncin avait 8 ans. Pour « toutes fusillées », le corrigé accepte aussi « c'est faux » (une victime est tombée à l'Yser, une autre est décédée à Rennes)."
   },
   {
    "id": "ceb-2018-l7-q2c",
@@ -2384,7 +2398,7 @@
    "type": "ouverte",
    "enonce": "Ernest Lottin, Antoine Résimont et Joseph Pierroux ne sont pas morts en même temps que les autres. Pourquoi ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "spontin-2"
@@ -2399,7 +2413,7 @@
    "type": "grille",
    "enonce": "Le travail des enfants en Belgique : fait certain ou pas ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "enfants-1",
@@ -2431,7 +2445,7 @@
    "type": "ouverte",
    "enonce": "En 1914, pourquoi certains parents continuent-ils à envoyer leurs enfants travailler ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
    "documents": [
     "enfants-1"
@@ -2446,7 +2460,7 @@
    "type": "qcm_multi",
    "enonce": "Sur quels continents se trouvent les pays qui comptent plus de 20 % d'enfants au travail ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
     "enfants-3"
@@ -2462,7 +2476,7 @@
     0,
     1
    ],
-   "explication": "Afrique (nombreux pays) et Asie (Népal…)."
+   "explication": "Afrique (nombreux pays) et Asie (Népal…). Le corrigé officiel accepte aussi « Amérique »."
   },
   {
    "id": "ceb-2018-l7-q5",
@@ -2472,7 +2486,7 @@
    "type": "grille",
    "enonce": "Quelle période conventionnelle illustre chaque document ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "lignes": [
     "Dolmens de Wéris",
@@ -2505,7 +2519,7 @@
    "type": "texte_court",
    "enonce": "Sur la carte de Ciney de 1777, quelles constructions forment les côtés du pentagone rose ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "ciney"
@@ -2517,7 +2531,17 @@
     "les murailles",
     "murailles",
     "les fortifications",
-    "fortifications"
+    "fortifications",
+    "les murs",
+    "murs",
+    "des murs",
+    "les enceintes",
+    "enceinte",
+    "l'enceinte",
+    "le chemin de ronde",
+    "chemin de ronde",
+    "les remparts et les tours",
+    "remparts et tours"
    ],
    "explication": "Les remparts (le plan actuel garde des noms de rues « Rempart… »)."
   },
@@ -2529,7 +2553,7 @@
    "type": "qcm",
    "enonce": "En quel siècle se situe l'année 1777 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
     "17e siècle",
@@ -2537,7 +2561,7 @@
     "19e siècle"
    ],
    "reponse": 1,
-   "explication": "1701 à 1800 : 18e siècle."
+   "explication": "1701 à 1800 : 18e siècle. (Dans l'épreuve, il fallait aussi placer 1777 sur une ligne du temps graduée de 1400 à 2100.)"
   },
   {
    "id": "ceb-2018-l7-q8c",
@@ -2545,17 +2569,17 @@
    "numero": "8c",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Le paysage à l'avant-plan de la photographie (champs, prairies, bois) est…",
+   "enonce": "Le paysage que tu vois à l'avant-plan de la photographie est…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "choix": [
     "un paysage rural.",
     "un paysage industriel.",
     "un paysage urbain."
    ],
-   "reponse": 0,
-   "explication": "Champs et prairies : paysage rural."
+   "reponse": 2,
+   "explication": "À l'avant-plan, on voit surtout une surface bâtie : c'est un paysage urbain."
   },
   {
    "id": "ceb-2018-l7-q9a",
@@ -2565,7 +2589,7 @@
    "type": "trous",
    "enonce": "Plan de la Région de Bruxelles-Capitale : complète par au nord, au sud, à l'est ou à l'ouest.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
     "bruxelles"
@@ -2634,7 +2658,7 @@
    "type": "qcm",
    "enonce": "Carte de la Wallonie : quelle légende convient ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "wallonie"
@@ -2656,7 +2680,7 @@
    "type": "qcm",
    "enonce": "Quel titre convient à cette carte ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "wallonie"
@@ -2678,7 +2702,7 @@
    "type": "qcm_multi",
    "enonce": "Pourquoi les branches de ces arbres ont-elles poussé en oblique ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-climats",
    "choix": [
     "Elles se sont tournées vers le soleil.",
@@ -2701,7 +2725,7 @@
    "type": "grille",
    "enonce": "Pour les cultures, la haie est-elle un atout ou une contrainte ?",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "lignes": [
     "En cas de pluies abondantes, elle ralentit le ruissèlement et les coulées de boue.",
@@ -2795,7 +2819,7 @@
    "domaine": "hg.histoire",
    "type": "ouverte",
    "enonce": "Complète la grille horaire de la semaine.",
-   "points": 3,
+   "points": 2,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -2857,7 +2881,7 @@
    "type": "numerique",
    "enonce": "Calcule : 84 : 7",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 12,
    "tolerance": 0.0001,
@@ -2871,7 +2895,7 @@
    "type": "numerique",
    "enonce": "Calcule : … + 24,5 = 43,7",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 19.2,
    "tolerance": 0.0001,
@@ -2885,7 +2909,7 @@
    "type": "numerique",
    "enonce": "Calcule : 26,98 + 8,52",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 35.5,
    "tolerance": 0.0001,
@@ -2899,7 +2923,7 @@
    "type": "numerique",
    "enonce": "Calcule : 100 000 − 2",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 99998,
    "tolerance": 0.0001,
@@ -2913,7 +2937,7 @@
    "type": "numerique",
    "enonce": "Calcule : 18 × 3,2 × 0",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
@@ -2927,7 +2951,7 @@
    "type": "numerique",
    "enonce": "Calcule : 60 % de 186 000",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 111600,
    "tolerance": 0.0001,
@@ -2941,7 +2965,7 @@
    "type": "numerique",
    "enonce": "Calcule : … × 700 = 42",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 0.06,
    "tolerance": 0.0001,
@@ -2955,7 +2979,7 @@
    "type": "numerique",
    "enonce": "Calcule : 8 031 − 295",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 7736,
    "tolerance": 0.0001,
@@ -2969,7 +2993,7 @@
    "type": "numerique",
    "enonce": "Calcule : 648 × 0,125",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 81,
    "tolerance": 0.0001,
@@ -2983,7 +3007,7 @@
    "type": "numerique",
    "enonce": "Calcule : 2 240 + 330 + 1 760 + … = 7 000",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "reponse": 2670,
    "tolerance": 0.0001,
@@ -2997,7 +3021,7 @@
    "type": "qcm",
    "enonce": "Quel nombre est le plus proche de 17 × 10,09 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "200",
@@ -3017,7 +3041,7 @@
    "type": "qcm",
    "enonce": "Quel nombre est le plus proche de 41 × 0,8 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "320",
@@ -3037,7 +3061,7 @@
    "type": "qcm",
    "enonce": "Quel nombre est le plus proche de 250 × 108 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "choix": [
     "25 000",
@@ -3057,7 +3081,7 @@
    "type": "numerique",
    "enonce": "Effectue : 6 854 + 2 377 + 106",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "reponse": 9337,
    "tolerance": 0.0001,
@@ -3071,7 +3095,7 @@
    "type": "numerique",
    "enonce": "Effectue : 252 × 3,4",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "reponse": 856.8,
    "tolerance": 0.0001,
@@ -3085,7 +3109,7 @@
    "type": "numerique",
    "enonce": "Effectue : 2 143,7 − 236,5",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "reponse": 1907.2,
    "tolerance": 0.0001,
@@ -3099,7 +3123,7 @@
    "type": "trous",
    "enonce": "329,02 × 34 = 11 186,68 (produits partiels : 1 316,08 et 9 870,6). Complète sans calculer.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "texte": "329,02 × 30 = {1}  ·  329,02 × 4 = {2}  ·  11 186,68 : 34 = {3}",
    "reponse": [
@@ -3126,7 +3150,7 @@
    "type": "qcm",
    "enonce": "Sachant que 329,02 × 34 = 11 186,68, combien vaut 329,02 × 35 ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "choix": [
     "11 186,68 + 35",
@@ -3145,7 +3169,7 @@
    "type": "qcm",
    "enonce": "4 menus identiques + 2 bouteilles de jus à 12 € + 3 thés à 2 € = 102 €. Quelle opération donne le prix d'un menu ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
     "(102 : 4) − 24 − 6",
@@ -3154,7 +3178,7 @@
     "(102 − 24 − 6) : 4"
    ],
    "reponse": 3,
-   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 30) : 4 = 18 €."
+   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 30) : 4 = 18 €. Le corrigé accepte aussi l'écriture (1/4 × 102) − (1/4 × 24) − (1/4 × 6)."
   },
   {
    "id": "ceb-2018-l8-q6",
@@ -3164,7 +3188,7 @@
    "type": "trous",
    "enonce": "Complète.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "24 × 38 = (24 × 40) − (24 × {1})  ·  192 : 12 = (120 : 12) + ({2} : 12)",
    "reponse": [
@@ -3185,7 +3209,7 @@
    "type": "trous",
    "enonce": "Complète.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "texte": "Ajoute 2 centièmes à 4 573,169 → {1}  ·  Ajoute 3 unités de mille à 125 678,058 → {2}",
    "reponse": [
@@ -3208,7 +3232,7 @@
    "type": "qcm",
    "enonce": "9 627 : 21 = 458, reste 9. Quel calcul permet de vérifier ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-division",
    "choix": [
     "458 × 21",
@@ -3227,7 +3251,7 @@
    "type": "trous",
    "enonce": "Pyramide de produits : chaque case est le produit des deux cases en dessous. En bas : 5, ?, 4. Au milieu : ?, 24.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "Case du bas au milieu : {1}  ·  Case du milieu à gauche : {2}  ·  Sommet : {3}",
    "reponse": [
@@ -3251,7 +3275,7 @@
    "type": "trous",
    "enonce": "Complète les droites graduées.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-droite-graduee",
    "texte": "30 ; 45 ; {1} ; 75 ; 90  ·  125 ; 250 ; 375 ; {2} ; 625  ·  5,6 ; 5,8 ; {3} ; 6,2 ; 6,4",
    "reponse": [
@@ -3266,7 +3290,7 @@
      "6,0"
     ]
    ],
-   "explication": "Pas de 15, de 125 et de 0,2."
+   "explication": "Pas de 15, de 125 et de 0,2. (Dans l'épreuve, chaque droite avait plusieurs cases : 15, 60, 135 ; 500, 750, 875 ; 6 ; 6,6 ; 7,2.)"
   },
   {
    "id": "ceb-2018-l8-q12",
@@ -3276,7 +3300,7 @@
    "type": "texte_court",
    "enonce": "Place une virgule dans 67003 pour lire « soixante-sept unités et trois millièmes ».",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "reponse": [
     "67,003"
@@ -3291,11 +3315,12 @@
    "type": "texte_court",
    "enonce": "Écris « septante centièmes » en chiffres.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "reponse": [
     "0,70",
-    "0,7"
+    "0,7",
+    "70/100"
    ],
    "explication": "70 centièmes = 0,70."
   },
@@ -3307,7 +3332,7 @@
    "type": "trous",
    "enonce": "Écris le signe manquant.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-operations",
    "texte": "Si 218,051 = 973,204 − 755,153 alors 755,153 {1} 218,051 = 973,204  ·  Si 62,3 × 7,1 = 442,33 alors 442,33 {2} 7,1 = 62,3",
    "reponse": [
@@ -3330,7 +3355,7 @@
    "type": "qcm",
    "enonce": "Nombres triangulaires : 1 + 3 = 4 ; 3 + 6 = 9 ; 6 + 10 = 16 ; 10 + 15 = 25 ; 15 + 21 = 36. Tous les résultats sont…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-suites",
    "choix": [
     "des nombres pairs.",
@@ -3349,7 +3374,7 @@
    "type": "ordre",
    "enonce": "Classe dans l'ordre croissant.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "elements": [
     "7,23",
@@ -3373,7 +3398,7 @@
    "type": "ordre",
    "enonce": "Classe dans l'ordre croissant.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "elements": [
     "2/10",
@@ -3397,7 +3422,7 @@
    "type": "ordre",
    "enonce": "Classe dans l'ordre croissant.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "elements": [
     "0,74",
@@ -3421,7 +3446,7 @@
    "type": "grille",
    "enonce": "Quelle opération correspond à chaque situation ?",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "lignes": [
     "Je partage 3 paquets de 15 biscuits entre 5 enfants.",
@@ -3489,5 +3514,6 @@
    "corrigeVerifie": false,
    "numerisable": false
   }
- ]
+ ],
+ "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2018), comparé question par question le 21/10/2026."
 }
