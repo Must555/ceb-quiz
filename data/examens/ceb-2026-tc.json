@@ -4,7 +4,7 @@
   "referentiel": "tronc_commun",
   "titre": "CEB 2026 — Référentiels du Tronc commun",
   "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
-  "remarque": "Certaines questions reposent sur des figures du questionnaire que nous n'avons pas : elles sont omises ou gardées en mode papier.",
+  "remarque": "Les questions de tracé, de construction ou de coloriage sur une figure du livret sont gardées en mode papier (à faire sur le livret, avec tes instruments) ; toutes les autres se jouent à l'écran. Livret 5 : 48 points sur 50, car la question 10 ne figure ni dans le questionnaire ni dans le corrigé disponibles.",
   "livrets": [
     {
       "n": 1,
@@ -45,8 +45,9 @@
       "matiere": "hg",
       "titre": "Formation historique et géographique",
       "date": "2026-06-19",
-      "points": 50,
-      "duree": 75
+      "points": 48,
+      "duree": 75,
+      "remarque": "Le questionnaire et le correctif officiels sautent la question 10 (pages 10-11 absentes) : le livret est noté ici sur 48 au lieu de 50."
     },
     {
       "n": 6,
@@ -440,6 +441,186 @@
       "titre": "Photo de cyclistes à l'arrivée d'une course (question 13)",
       "fichier": "assets/2026-tc/liv3-p11.webp",
       "alt": "Photo en noir et blanc de cyclistes qui terminent une course, avec la ligne d'arrivée ; Tim, Max et Romain sont désignés par une flèche."
+    },
+    {
+      "id": "liv3-p02",
+      "source": "livret",
+      "livret": 3,
+      "page": 2,
+      "titre": "Carte au trésor (question 1)",
+      "fichier": "assets/2026-tc/liv3-p02.webp",
+      "alt": "Carte d'une île dessinée sur un quadrillage (colonnes A à I, lignes 1 à 8) avec trois pierres précieuses, un bateau, une rose des vents et des monstres marins ; en dessous, un petit modèle de zone de cases dont la case E6."
+    },
+    {
+      "id": "liv3-p04",
+      "source": "livret",
+      "livret": 3,
+      "page": 4,
+      "titre": "Grille de bataille navale (question 4)",
+      "fichier": "assets/2026-tc/liv3-p04.webp",
+      "alt": "Grille de 10 colonnes (A à J) et 10 lignes (1 à 10) : des cases grises représentent des bateaux, les cases blanches de l'eau."
+    },
+    {
+      "id": "liv3-p06",
+      "source": "livret",
+      "livret": 3,
+      "page": 6,
+      "titre": "Deux triangles (question 7)",
+      "fichier": "assets/2026-tc/liv3-p06.webp",
+      "alt": "Un cercle de centre A, puis deux triangles dessinés côte à côte."
+    },
+    {
+      "id": "liv3-p09",
+      "source": "livret",
+      "livret": 3,
+      "page": 9,
+      "titre": "Un disque et une frise de fleurs (questions 10 et 11)",
+      "fichier": "assets/2026-tc/liv3-p09.webp",
+      "alt": "Un disque gris avec trois points A, B et C sur son bord, un point O à l'intérieur et deux segments tracés : [AC] et [BO] ; plus bas, une frise de fleurs alignées le long d'une ligne, avec la fleur A et la fleur A' repérées."
+    },
+    {
+      "id": "liv3-p13",
+      "source": "livret",
+      "livret": 3,
+      "page": 13,
+      "titre": "Assemblage de 5 cubes et empreintes (question 15)",
+      "fichier": "assets/2026-tc/liv3-p13.webp",
+      "alt": "Un assemblage de 5 cubes dessiné en perspective, l'empreinte qu'il laisse dans cette position, puis cinq empreintes numérotées de 1 à 5."
+    },
+    {
+      "id": "liv3-p15",
+      "source": "livret",
+      "livret": 3,
+      "page": 15,
+      "titre": "Une figure et son image (question 18)",
+      "fichier": "assets/2026-tc/liv3-p15.webp",
+      "alt": "Deux dessins d'un personnage composé de formes noires : la figure A et la figure A'."
+    },
+    {
+      "id": "liv3-p17",
+      "source": "livret",
+      "livret": 3,
+      "page": 17,
+      "titre": "Éléments du plan (question 20)",
+      "fichier": "assets/2026-tc/liv3-p17.webp",
+      "alt": "Des droites repérées par des lettres minuscules (a, b, c, d, e, g), un point C, un point A et un point B ; en dessous, un cadre qui liste les éléments à utiliser pour compléter les lignes."
+    },
+    {
+      "id": "liv3-p18",
+      "source": "livret",
+      "livret": 3,
+      "page": 18,
+      "titre": "Un solide et quatre développements (question 21)",
+      "fichier": "assets/2026-tc/liv3-p18.webp",
+      "alt": "Photo d'un solide, puis quatre développements numérotés de 1 à 4."
+    },
+    {
+      "id": "liv3-p19",
+      "source": "livret",
+      "livret": 3,
+      "page": 19,
+      "titre": "Un montage de cubes et quatre observateurs (question 22)",
+      "fichier": "assets/2026-tc/liv3-p19.webp",
+      "alt": "Un montage de cubes noirs, blancs et gris vu en perspective, entouré de quatre observateurs : Déborah, Aneka, Carla et Bruno, chacun regardant le montage."
+    },
+    {
+      "id": "liv4-p05",
+      "source": "livret",
+      "livret": 4,
+      "page": 5,
+      "titre": "Rectangles A, B et C sur quadrillage (question 6)",
+      "fichier": "assets/2026-tc/liv4-p05.webp",
+      "alt": "Un quadrillage sur lequel sont tracés un rectangle A, une figure B inachevée (deux côtés dessinés) et un rectangle C."
+    },
+    {
+      "id": "liv4-p07",
+      "source": "livret",
+      "livret": 4,
+      "page": 7,
+      "titre": "Un trapèze (question 8)",
+      "fichier": "assets/2026-tc/liv4-p07.webp",
+      "alt": "Un trapèze dessiné en gris avec ses dimensions indiquées en centimètres : 5 cm, 4 cm, 6,4 cm et 10 cm."
+    },
+    {
+      "id": "liv4-p08",
+      "source": "livret",
+      "livret": 4,
+      "page": 8,
+      "titre": "Composition de triangles identiques (question 9)",
+      "fichier": "assets/2026-tc/liv4-p08.webp",
+      "alt": "Un grand rectangle de 18 m sur 15 m, rempli de cinq triangles identiques."
+    },
+    {
+      "id": "liv4-p10",
+      "source": "livret",
+      "livret": 4,
+      "page": 10,
+      "titre": "Quatre récipients (question 12)",
+      "fichier": "assets/2026-tc/liv4-p10.webp",
+      "alt": "Quatre récipients gradués, numérotés de 1 à 4, remplis de liquide à des hauteurs différentes."
+    },
+    {
+      "id": "liv4-p13",
+      "source": "livret",
+      "livret": 4,
+      "page": 13,
+      "titre": "Polygones et fractions (questions 18 et 19)",
+      "fichier": "assets/2026-tc/liv4-p13.webp",
+      "alt": "En haut, le calcul du périmètre de deux polygones ; en dessous, un tableau d'opérations montrant des disques partagés en parts égales dont certaines sont grisées, avec deux cases à compléter par opération : Résultat et Fraction simplifiée."
+    },
+    {
+      "id": "liv4-p15",
+      "source": "livret",
+      "livret": 4,
+      "page": 15,
+      "titre": "Parties grisées d'un carré unité (question 22)",
+      "fichier": "assets/2026-tc/liv4-p15.webp",
+      "alt": "Un exemple de carré unité quadrillé dont une partie est grisée, puis deux autres carrés quadrillés a) et b) dont une partie est grisée."
+    },
+    {
+      "id": "liv4-p16",
+      "source": "livret",
+      "livret": 4,
+      "page": 16,
+      "titre": "Le tableau de la question 23 et cinq figures (question 24)",
+      "fichier": "assets/2026-tc/liv4-p16.webp",
+      "alt": "Un tableau à compléter avec des grandeurs fractionnées, puis cinq figures numérotées de 1 à 5 (un disque, un rectangle quadrillé, un rectangle à bandes, un pentagone, une bande de triangles), chacune avec une partie grisée."
+    },
+    {
+      "id": "liv4-p17",
+      "source": "livret",
+      "livret": 4,
+      "page": 17,
+      "titre": "Un solide et un tableau (questions 25 et 26)",
+      "fichier": "assets/2026-tc/liv4-p17.webp",
+      "alt": "Un solide dessiné en perspective ; en dessous, un tableau qui associe des actions à une grandeur et à une unité de mesure."
+    },
+    {
+      "id": "liv5-p07",
+      "source": "livret",
+      "livret": 5,
+      "page": 7,
+      "titre": "La frise chronologique de la question 7",
+      "fichier": "assets/2026-tc/liv5-p07.webp",
+      "alt": "Une page du livret avec les questions 7 a, b et c et, en bas, une frise chronologique de cinq périodes numérotées de 1 à 5, repérée par les dates An 1, 1492 et 2026, avec une étiquette à compléter."
+    },
+    {
+      "id": "liv5-p16",
+      "source": "livret",
+      "livret": 5,
+      "page": 16,
+      "titre": "Une vue aérienne de Baulers en 2021 (question 17)",
+      "fichier": "assets/2026-tc/liv5-p16.webp",
+      "alt": "Vue aérienne en noir et blanc d'une zone de Baulers en 2021 : routes, bâtiments, champs et un plan d'eau ; une croix blanche est tracée sur un endroit de l'image."
+    },
+    {
+      "id": "liv6-p08",
+      "source": "livret",
+      "livret": 6,
+      "page": 8,
+      "titre": "Des traces de pas sur un sol (question 12)",
+      "fichier": "assets/2026-tc/liv6-p08.webp",
+      "alt": "Photo en noir et blanc de plusieurs traces de semelles de chaussures sur un sol carrelé ; en dessous, la question 12 et la question 13."
     }
   ],
   "questions": [
@@ -880,6 +1061,44 @@
       "numerisable": false
     },
     {
+      "id": "ceb-2026-tc-l3-q1a",
+      "livret": 3,
+      "numero": "1a",
+      "domaine": "ma.geometrie",
+      "type": "texte_court",
+      "enonce": "Observe la carte du livret (page 2). Écris les coordonnées d'une case où se trouve une pierre précieuse (une lettre et un chiffre).",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "liv3-p02"
+      ],
+      "reponse": [
+        "E2",
+        "D5",
+        "G7",
+        "2E",
+        "5D",
+        "7G",
+        "E 2",
+        "D 5",
+        "G 7"
+      ],
+      "explication": "Les pierres précieuses sont en E2, D5 et G7. On lit d'abord la colonne (la lettre), puis la ligne (le chiffre)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q1b",
+      "livret": 3,
+      "numero": "1b",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Voici la zone où chercher une 4e pierre précieuse (un modèle de six cases dont la case E6). Colorie cette zone dans le quadrillage de la carte.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question de coloriage sur le quadrillage de la carte : gardée en mode papier.",
+      "reponseModele": "Les cases D6, D7, E6, F6, F5 et G5 sont coloriées (ou identifiées autrement, par exemple par des croix). Tout ou rien."
+    },
+    {
       "id": "ceb-2026-tc-l3-q2",
       "livret": 3,
       "numero": "2",
@@ -887,9 +1106,46 @@
       "type": "ouverte",
       "enonce": "Trace un triangle isocèle dont la base mesure 10 cm. Sois précis et utilise tes instruments.",
       "points": 1,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
-      "numerisable": false
+      "numerisable": false,
+      "reponseModele": "Voir le gabarit officiel : un triangle isocèle dont la base mesure 10 cm est tracé correctement. Tout ou rien.",
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q3",
+      "livret": 3,
+      "numero": "3",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Achève cette frise en traçant la quatrième figure et en respectant le pivotement. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-mouvements",
+      "numerisable": false,
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments).",
+      "reponseModele": "Voir le gabarit officiel : la quatrième figure respecte le pivotement de la frise. Pour obtenir le point, le carré doit aussi être grisé. Tout ou rien."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q4",
+      "livret": 3,
+      "numero": "4",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Observe la grille de bataille navale du livret (page 4). Les cases grises représentent des bateaux et les cases blanches de l'eau. Coche les coordonnées de la case qui permet de toucher un bateau.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "liv3-p04"
+      ],
+      "choix": [
+        "A9",
+        "D2",
+        "E5",
+        "G6"
+      ],
+      "reponse": 2,
+      "explication": "La case E5 est grise : c'est la colonne E, ligne 5, et elle fait partie d'un bateau. A9, D2 et G6 sont des cases d'eau."
     },
     {
       "id": "ceb-2026-tc-l3-q5",
@@ -899,8 +1155,10 @@
       "type": "ouverte",
       "enonce": "Au départ de A', trace le dessin donné en doublant toutes ses dimensions.",
       "points": 1,
-      "corrigeVerifie": false,
-      "numerisable": false
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "reponseModele": "Voir le gabarit officiel : le dessin est tracé en doublant toutes ses dimensions (on ne sanctionne pas l'élève qui ne part pas du point A'). Tout ou rien.",
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments)."
     },
     {
       "id": "ceb-2026-tc-l3-q6",
@@ -910,8 +1168,54 @@
       "type": "ouverte",
       "enonce": "Trace un hexagone régulier inscrit dans un cercle de centre A.",
       "points": 1,
-      "corrigeVerifie": false,
-      "numerisable": false
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "reponseModele": "Voir le gabarit officiel : un hexagone régulier est correctement inscrit dans le cercle de centre A. Tout ou rien.",
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q7",
+      "livret": 3,
+      "numero": "7",
+      "domaine": "ma.geometrie",
+      "type": "trous",
+      "enonce": "Observe les deux triangles du livret (page 6). Trouve une caractéristique commune à ces deux triangles selon leurs angles. Complète la phrase.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-angles",
+      "documents": [
+        "liv3-p06"
+      ],
+      "texte": "Ils ont chacun 2 {1}.",
+      "reponse": [
+        [
+          "angles aigus",
+          "des angles aigus",
+          "angle aigu",
+          "aigus",
+          "angles aigu",
+          "angles inférieurs à 90°",
+          "angles inférieurs à 90 degrés",
+          "angles plus petits qu'un angle droit",
+          "angles plus petits que l'angle droit",
+          "angles de moins de 90°"
+        ]
+      ],
+      "explication": "Chaque triangle a deux angles plus petits qu'un angle droit : ce sont des angles aigus. On accepte toute formulation qui parle d'angles aigus (inférieurs à 90°)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q8",
+      "livret": 3,
+      "numero": "8",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Trace l'image de cet assemblage par rapport à l'axe de symétrie a. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-symetrie",
+      "numerisable": false,
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments).",
+      "reponseModele": "Voir le gabarit officiel : l'image de l'assemblage par rapport à l'axe a est tracée correctement. Tout ou rien."
     },
     {
       "id": "ceb-2026-tc-l3-q9",
@@ -921,8 +1225,64 @@
       "type": "ouverte",
       "enonce": "Voici le carré ABCD. Trace un triangle isocèle CDE de base [CD] dont la hauteur mesure 4 cm. À partir du sommet E, trace le cercle de centre E dont le diamètre mesure 6 cm.",
       "points": 2,
-      "corrigeVerifie": false,
-      "numerisable": false
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "reponseModele": "Voir le gabarit officiel : 1 point si le triangle isocèle CDE (base [CD], hauteur 4 cm) est correctement tracé ; 1 point si le cercle de centre E (diamètre 6 cm) est correctement tracé. On ne sanctionne pas l'absence de la lettre E.",
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q10",
+      "livret": 3,
+      "numero": "10",
+      "domaine": "ma.geometrie",
+      "type": "trous",
+      "enonce": "Observe le disque du livret (page 9). Complète ces phrases.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-cercle",
+      "documents": [
+        "liv3-p09"
+      ],
+      "texte": "Le segment [AC] représente un {1} du disque.\nLe segment [BO] représente un {2} du disque.\nLe point O est le {3} du disque.",
+      "reponse": [
+        [
+          "diamètre",
+          "un diamètre",
+          "axe de symétrie",
+          "un axe de symétrie",
+          "l'axe de symétrie"
+        ],
+        [
+          "rayon",
+          "un rayon"
+        ],
+        [
+          "centre",
+          "le centre"
+        ]
+      ],
+      "explication": "[AC] passe par le centre et joint deux points du bord : c'est un diamètre. [BO] joint le centre au bord : c'est un rayon. O est le centre du disque (pas « le milieu »)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q11",
+      "livret": 3,
+      "numero": "11",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Observe la frise du livret (page 9). Quels mouvements sont effectués pour passer de la fleur A à la fleur A' ? Coche la réponse correcte.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-mouvements",
+      "documents": [
+        "liv3-p09"
+      ],
+      "choix": [
+        "Un retournement et un pivotement",
+        "Un glissement et un pivotement",
+        "Un glissement et un retournement"
+      ],
+      "reponse": 2,
+      "explication": "La fleur A' est la fleur A déplacée le long de la frise (glissement) puis renversée de l'autre côté de la ligne, comme dans un miroir (retournement). Elle n'a pas pivoté."
     },
     {
       "id": "ceb-2026-tc-l3-q12",
@@ -932,14 +1292,16 @@
       "type": "ouverte",
       "enonce": "Trace un losange dont la grande diagonale [BD] est donnée et dont la petite diagonale [AC] mesure 4 cm. Écris les lettres A et C, puis trace un triangle équilatéral de base [DA].",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
-      "numerisable": false
+      "numerisable": false,
+      "reponseModele": "Voir le gabarit officiel : 1 point pour le losange correctement tracé (petite diagonale [AC] de 4 cm) ; 1 point pour les lettres A et C correctement placées (peu importe l'ordre, mais en majuscules) ; 1 point pour le triangle équilatéral de base [DA] correctement tracé.",
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments)."
     },
     {
       "id": "ceb-2026-tc-l3-q13",
       "livret": 3,
-      "numero": "13",
+      "numero": "13a",
       "domaine": "ma.geometrie",
       "type": "trous",
       "enonce": "Observe cette photo de cyclistes qui terminent une course. Trois coureurs ont déjà franchi la ligne d'arrivée avant Tim. Écris la position à laquelle se trouve chaque cycliste au moment où cette photo a été prise. Exemple : Max est en neuvième position de la course.",
@@ -965,6 +1327,127 @@
       "documents": [
         "liv3-p11"
       ]
+    },
+    {
+      "id": "ceb-2026-tc-l3-q13b",
+      "livret": 3,
+      "numero": "13b",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Sur la photo de cyclistes du livret (page 11), place une flèche au-dessus de Remco, qui se trouve 3 places devant Max.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question à faire en plaçant une flèche sur la photo du livret : gardée en mode papier.",
+      "reponseModele": "Une flèche est placée au-dessus du cycliste qui est 3 places devant Max (le sixième de la course, puisque Max est neuvième). 1 point."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q14",
+      "livret": 3,
+      "numero": "14",
+      "domaine": "ma.geometrie",
+      "type": "grille",
+      "enonce": "Complète le tableau : pour chaque ligne, choisis le quadrilatère qui correspond parmi rectangle, trapèze, losange et carré. (Exemple du livret : le parallélogramme a les diagonales FAUX et les médianes FAUX.)",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-diagonales-medianes",
+      "lignes": [
+        "Les diagonales sont des axes de symétrie : VRAI. Les médianes sont des axes de symétrie : FAUX.",
+        "Les diagonales sont des axes de symétrie : VRAI. Les médianes sont des axes de symétrie : VRAI.",
+        "Les diagonales sont des axes de symétrie : FAUX. Les médianes sont des axes de symétrie : FAUX."
+      ],
+      "colonnes": [
+        "Rectangle",
+        "Trapèze",
+        "Losange",
+        "Carré"
+      ],
+      "reponse": [
+        2,
+        3,
+        1
+      ],
+      "explication": "Le losange a ses diagonales comme axes de symétrie, mais pas ses médianes. Le carré a les deux. Le trapèze (comme le parallélogramme de l'exemple) n'a ni l'un ni l'autre ; le rectangle, lui, n'a que ses médianes."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q15",
+      "livret": 3,
+      "numero": "15",
+      "domaine": "ma.geometrie",
+      "type": "qcm_multi",
+      "enonce": "Observe l'assemblage de 5 cubes du livret (page 13) et l'empreinte qu'il laisse dans cette position. Déposé autrement, cet assemblage laissera d'autres empreintes. Parmi les cinq propositions numérotées de 1 à 5, entoure les deux autres empreintes possibles.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-assemblages-cubes",
+      "documents": [
+        "liv3-p13"
+      ],
+      "choix": [
+        "Empreinte 1",
+        "Empreinte 2",
+        "Empreinte 3",
+        "Empreinte 4",
+        "Empreinte 5"
+      ],
+      "reponse": [
+        1,
+        4
+      ],
+      "explication": "Les empreintes possibles sont les numéros 2 (un seul carré) et 5 (deux carrés l'un au-dessus de l'autre). Imagine l'assemblage posé sur chacune de ses faces : tu verras quelles empreintes il laisse."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q16",
+      "livret": 3,
+      "numero": "16",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Trace une hauteur relative à la base [AB] dans chacune des figures suivantes (deux figures données dans le livret). Sois précis et utilise tes instruments.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-quadrilateres",
+      "numerisable": false,
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments).",
+      "reponseModele": "Voir le gabarit officiel : 1 point par hauteur correctement tracée, relative à la base [AB]. On ne sanctionne pas une hauteur tracée à l'extérieur du trapèze."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q17",
+      "livret": 3,
+      "numero": "17",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Achève le développement du cube. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-developpements",
+      "numerisable": false,
+      "remarque": "Question de tracé ou de coloriage : gardée en mode papier (à faire sur le livret avec tes instruments).",
+      "reponseModele": "Voir le gabarit officiel : le développement du cube est correctement achevé. 1 point."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q18",
+      "livret": 3,
+      "numero": "18",
+      "domaine": "ma.geometrie",
+      "type": "qcm_multi",
+      "enonce": "Observe la figure A et son image A' dans le livret (page 15). Coche les deux mouvements effectués pour passer de la figure A à son image A'.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-mouvements",
+      "documents": [
+        "liv3-p15"
+      ],
+      "choix": [
+        "Agrandissement",
+        "Glissement",
+        "Pivotement",
+        "Réduction",
+        "Retournement"
+      ],
+      "reponse": [
+        1,
+        3
+      ],
+      "explication": "A' est plus petite que A (réduction) et elle est placée plus loin dans la même position, sans être tournée ni retournée (glissement). Tout ou rien : il faut les deux bonnes cases."
     },
     {
       "id": "ceb-2026-tc-l3-q19",
@@ -996,6 +1479,94 @@
         0
       ],
       "explication": "Le prisme droit a deux bases triangulaires parallèles et superposables, et ses faces latérales sont perpendiculaires aux bases. La pyramide n'a qu'une base ; ses faces latérales sont inclinées (ni parallèles, ni perpendiculaires à la base), mais ses 4 triangles sont superposables : elle a des faces isométriques."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q20",
+      "livret": 3,
+      "numero": "20",
+      "domaine": "ma.geometrie",
+      "type": "trous",
+      "enonce": "Observe les éléments du plan du livret (page 17). Complète chaque ligne à l'aide d'un des éléments suivants : A | B | C | a | b | c | d | e | g | [AB] | // | ⊥. (Pour un symbole, tu peux aussi l'écrire en toutes lettres.)",
+      "points": 5,
+      "corrigeVerifie": true,
+      "fiche": "ma-symboles-geo",
+      "documents": [
+        "liv3-p17"
+      ],
+      "texte": "Le point {1} se situe sur la même droite que le point B.\nLe seul segment de droite identifié se nomme {2}.\nc {3} g\nb {4} g\ne ⊥ {5}",
+      "reponse": [
+        [
+          "A"
+        ],
+        [
+          "[AB]",
+          "AB"
+        ],
+        [
+          "⊥",
+          "perpendiculaire",
+          "perpendiculaires",
+          "perp"
+        ],
+        [
+          "//",
+          "||",
+          "parallèle",
+          "parallèles"
+        ],
+        [
+          "a"
+        ]
+      ],
+      "explication": "A et B sont sur la droite e. Le seul segment tracé entre deux points nommés est [AB]. c est perpendiculaire à g (⊥), b est parallèle à g (//) et e est perpendiculaire à la droite a. Les lettres des points s'écrivent en majuscule (A, B) et celles des droites en minuscule (a)."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q21",
+      "livret": 3,
+      "numero": "21",
+      "domaine": "ma.geometrie",
+      "type": "qcm",
+      "enonce": "Observe le solide du livret (page 18). Entoure le développement possible de ce solide : choisis parmi les quatre développements numérotés de 1 à 4.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-developpements",
+      "documents": [
+        "liv3-p18"
+      ],
+      "choix": [
+        "Développement 1",
+        "Développement 2",
+        "Développement 3",
+        "Développement 4"
+      ],
+      "reponse": 2,
+      "explication": "Le solide est un prisme droit à base triangulaire : son développement est fait de 3 rectangles et de 2 triangles. Seul le développement 3 se replie pour donner ce solide."
+    },
+    {
+      "id": "ceb-2026-tc-l3-q22",
+      "livret": 3,
+      "numero": "22",
+      "domaine": "ma.geometrie",
+      "type": "qcm_multi",
+      "enonce": "Observe le montage de plusieurs cubes du livret (page 19) et la position des quatre observateurs. Que peut voir chaque observateur ? Coche les deux propositions correctes.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-assemblages-cubes",
+      "documents": [
+        "liv3-p19"
+      ],
+      "choix": [
+        "Carla peut voir un cube noir à droite d'un cube blanc.",
+        "Bruno peut voir un cube blanc à gauche d'un cube gris.",
+        "Aneka peut voir un cube noir en dessous d'un cube gris.",
+        "Déborah peut voir un cube noir au-dessus d'un cube gris.",
+        "Carla peut voir un cube gris à droite d'un autre cube gris."
+      ],
+      "reponse": [
+        1,
+        3
+      ],
+      "explication": "Bruno voit un cube blanc à gauche d'un cube gris, et Déborah voit un cube noir au-dessus d'un cube gris."
     },
     {
       "id": "ceb-2026-tc-l4-q1",
@@ -1162,6 +1733,41 @@
       "explication": "Volume : 6 dm × 2,5 dm × 4 dm = 60 dm³ = 60 l. Les 3/4 : 60 ÷ 4 × 3 = 45 l."
     },
     {
+      "id": "ceb-2026-tc-l4-q6a",
+      "livret": 4,
+      "numero": "6a",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe les tracés du livret (page 5). Achève la figure B afin d'obtenir un rectangle de même périmètre que le rectangle A.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-perimetres",
+      "numerisable": false,
+      "remarque": "Question de tracé sur le quadrillage du livret : gardée en mode papier.",
+      "reponseModele": "Le rectangle B a une longueur de 7 cases et une largeur de 2 cases. On ne sanctionne pas un tracé imprécis (dessin à main levée accepté). 1 point."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q6b",
+      "livret": 4,
+      "numero": "6b",
+      "domaine": "ma.grandeurs",
+      "type": "qcm",
+      "enonce": "Observe les tracés du livret (page 5). Coche la proposition correcte.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-perimetres",
+      "documents": [
+        "liv4-p05"
+      ],
+      "choix": [
+        "L'aire du rectangle A est plus grande que l'aire du rectangle C.",
+        "L'aire du rectangle A est égale à l'aire du rectangle C.",
+        "L'aire du rectangle A est plus petite que l'aire du rectangle C."
+      ],
+      "reponse": 2,
+      "explication": "Le rectangle A compte 6 carreaux sur 3 : 18 carreaux. Le rectangle C compte 5 carreaux sur 4 : 20 carreaux. L'aire de A est plus petite que celle de C."
+    },
+    {
       "id": "ceb-2026-tc-l4-q7",
       "livret": 4,
       "numero": "7",
@@ -1189,6 +1795,40 @@
         4
       ],
       "explication": "Des tours de piste : une longueur. Des achats : un coût. Un parquet couvre une surface : une aire."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q8",
+      "livret": 4,
+      "numero": "8",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "enonce": "Calcule l'aire du trapèze du livret (page 7).",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-formules",
+      "documents": [
+        "liv4-p07"
+      ],
+      "unite": "cm²",
+      "reponse": 30,
+      "explication": "Aire d'un trapèze = (grande base + petite base) × hauteur ÷ 2 = (10 + 5) × 4 ÷ 2 = 30 cm². Le côté oblique de 6,4 cm ne sert pas au calcul."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q9",
+      "livret": 4,
+      "numero": "9",
+      "domaine": "ma.grandeurs",
+      "type": "numerique",
+      "enonce": "Observe la composition réalisée avec des triangles identiques (livret, page 8). Calcule l'aire d'un triangle.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-formules",
+      "documents": [
+        "liv4-p08"
+      ],
+      "unite": "m²",
+      "reponse": 27,
+      "explication": "Le grand rectangle de 18 m sur 15 m a pour aire 18 × 15 = 270 m². Il est entièrement rempli par 10 triangles identiques : 270 ÷ 10 = 27 m²."
     },
     {
       "id": "ceb-2026-tc-l4-q10",
@@ -1231,6 +1871,30 @@
         2
       ],
       "explication": "Page (0,1 mm) < carte d'identité (moins de 1 mm) < pièce de 2 € (environ 2 mm) < dictionnaire."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q12",
+      "livret": 4,
+      "numero": "12",
+      "domaine": "ma.grandeurs",
+      "type": "trous",
+      "enonce": "Observe les quatre récipients du livret (page 10). Complète les propositions suivantes par le numéro du récipient qui convient.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-pourcentages",
+      "documents": [
+        "liv4-p10"
+      ],
+      "texte": "Le récipient {1} est rempli à 25 % de sa capacité.\nLe récipient {2} est rempli à 37,5 % de sa capacité.",
+      "reponse": [
+        [
+          "2"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "explication": "Les récipients sont gradués en 8 parts égales : 25 % = 2 parts sur 8 et 37,5 % = 3 parts sur 8. Le récipient 2 est rempli à 25 % ; le récipient 1 est rempli à 37,5 %."
     },
     {
       "id": "ceb-2026-tc-l4-q13",
@@ -1353,6 +2017,42 @@
       "explication": "0,45 dal × 10 = 4,5 dal = 45 l."
     },
     {
+      "id": "ceb-2026-tc-l4-q17",
+      "livret": 4,
+      "numero": "17",
+      "domaine": "ma.grandeurs",
+      "type": "trous",
+      "enonce": "Écris l'unité de temps qui convient pour chaque situation. (Exemple du livret : la durée entre 2 coupes du monde de football → année.)",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-durees",
+      "texte": "La durée d'une récréation : {1}\nLa durée des études primaires : {2}\nLa durée des vacances de printemps : {3}",
+      "reponse": [
+        [
+          "minute",
+          "minutes",
+          "min",
+          "heure",
+          "heures",
+          "h"
+        ],
+        [
+          "année",
+          "années",
+          "an",
+          "ans"
+        ],
+        [
+          "jour",
+          "jours",
+          "semaine",
+          "semaines"
+        ]
+      ],
+      "souple": true,
+      "explication": "Une récréation dure quelques minutes. Les études primaires durent plusieurs années. Les vacances de printemps durent des jours, ou deux semaines."
+    },
+    {
       "id": "ceb-2026-tc-l4-q18a",
       "livret": 4,
       "numero": "18a",
@@ -1391,6 +2091,96 @@
       "explication": "Deux longueurs différentes, chacune deux fois : les côtés opposés sont égaux deux à deux. C'est un parallélogramme."
     },
     {
+      "id": "ceb-2026-tc-l4-q19a",
+      "livret": 4,
+      "numero": "19a",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Observe les représentations de fractions du livret (page 13). Additionne les parties grisées et simplifie le résultat obtenu. Première opération (deux disques) : écris le résultat, puis la fraction simplifiée.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions-addition",
+      "documents": [
+        "liv4-p13"
+      ],
+      "texte": "Résultat : {1}\nFraction simplifiée : {2}",
+      "reponse": [
+        [
+          "6/8",
+          "6 / 8",
+          "6 /8",
+          "6/ 8",
+          "12/16",
+          "12 / 16",
+          "12 /16",
+          "12/ 16",
+          "9/12",
+          "9 / 12",
+          "9 /12",
+          "9/ 12",
+          "15/20",
+          "15 / 20",
+          "15 /20",
+          "15/ 20"
+        ],
+        [
+          "3/4",
+          "3 / 4",
+          "3 /4",
+          "3/ 4"
+        ]
+      ],
+      "souple": true,
+      "explication": "Les parties grisées additionnées donnent 6/8. On simplifie en divisant le numérateur et le dénominateur par 2 : 3/4. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q19b",
+      "livret": 4,
+      "numero": "19b",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Observe les représentations de fractions du livret (page 13). Additionne les parties grisées et simplifie le résultat obtenu. Deuxième opération (trois disques) : écris le résultat, puis la fraction simplifiée.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions-addition",
+      "documents": [
+        "liv4-p13"
+      ],
+      "texte": "Résultat : {1}\nFraction simplifiée : {2}",
+      "reponse": [
+        [
+          "8/12",
+          "8 / 12",
+          "8 /12",
+          "8/ 12",
+          "16/24",
+          "16 / 24",
+          "16 /24",
+          "16/ 24",
+          "24/36",
+          "24 / 36",
+          "24 /36",
+          "24/ 36"
+        ],
+        [
+          "4/6",
+          "4 / 6",
+          "4 /6",
+          "4/ 6",
+          "2/3",
+          "2 / 3",
+          "2 /3",
+          "2/ 3",
+          "6/9",
+          "6 / 9",
+          "6 /9",
+          "6/ 9"
+        ]
+      ],
+      "souple": true,
+      "explication": "Les parties grisées additionnées donnent 8/12. On simplifie : 4/6, ou 2/3 en simplifiant au maximum. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat."
+    },
+    {
       "id": "ceb-2026-tc-l4-q20",
       "livret": 4,
       "numero": "20",
@@ -1425,18 +2215,159 @@
       "explication": "Échelle 1/400 000 : 1 cm = 400 000 cm = 4 km. 6,5 cm × 4 = 26 km."
     },
     {
+      "id": "ceb-2026-tc-l4-q22a",
+      "livret": 4,
+      "numero": "22a",
+      "domaine": "ma.grandeurs",
+      "type": "trous",
+      "enonce": "Observe l'exemple (la partie grisée correspond à 0,4 ou 40 % de l'unité), puis la figure a) du livret (page 15). Complète la phrase par un nombre décimal et un pourcentage.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fraction-decimal-pourcent",
+      "documents": [
+        "liv4-p15"
+      ],
+      "texte": "La partie grisée correspond à {1} ou {2} % de l'unité.",
+      "reponse": [
+        [
+          "0,7",
+          "0.7",
+          "0,70",
+          "0.70"
+        ],
+        [
+          "70",
+          "70 %",
+          "70%"
+        ]
+      ],
+      "souple": true,
+      "explication": "La partie grisée occupe 7 colonnes sur 10 : 7/10 = 0,7 = 70 %."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q22b",
+      "livret": 4,
+      "numero": "22b",
+      "domaine": "ma.grandeurs",
+      "type": "trous",
+      "enonce": "Observe l'exemple (la partie grisée correspond à 0,4 ou 40 % de l'unité), puis la figure b) du livret (page 15). Complète la phrase par un nombre décimal et un pourcentage.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fraction-decimal-pourcent",
+      "documents": [
+        "liv4-p15"
+      ],
+      "texte": "La partie grisée correspond à {1} ou {2} % de l'unité.",
+      "reponse": [
+        [
+          "0,23",
+          "0.23"
+        ],
+        [
+          "23",
+          "23 %",
+          "23%"
+        ]
+      ],
+      "souple": true,
+      "explication": "Le grand carré compte 100 petits carreaux. 2 lignes entières de 10 carreaux et 3 carreaux de la ligne suivante sont grisés : 23 carreaux sur 100 = 0,23 = 23 %."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q23a",
+      "livret": 4,
+      "numero": "23a",
+      "domaine": "ma.grandeurs",
+      "type": "texte_court",
+      "enonce": "Complète le tableau (grandeur fractionnée ↔ nombre décimal) : écris la fraction qui correspond à 0,75 l. Écris-la sous la forme 3/4.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions",
+      "reponse": [
+        "3/4",
+        "3 / 4",
+        "3 /4",
+        "3/ 4",
+        "6/8",
+        "6 / 8",
+        "6 /8",
+        "6/ 8",
+        "9/12",
+        "9 / 12",
+        "9 /12",
+        "9/ 12",
+        "12/16",
+        "12 / 16",
+        "12 /16",
+        "12/ 16",
+        "15/20",
+        "15 / 20",
+        "15 /20",
+        "15/ 20",
+        "75/100",
+        "75 / 100",
+        "75 /100",
+        "75/ 100",
+        "3/4 l",
+        "3/4l"
+      ],
+      "souple": true,
+      "explication": "0,75 = 75/100 = 3/4. Donc 0,75 l = 3/4 l. On accepte toute fraction équivalente."
+    },
+    {
       "id": "ceb-2026-tc-l4-q24",
       "livret": 4,
-      "numero": "23",
+      "numero": "23b",
       "domaine": "ma.grandeurs",
       "type": "numerique",
-      "enonce": "Écris sous forme de nombre décimal : 1 kg et 1/2 kg = ? kg",
+      "enonce": "Complète le tableau (grandeur fractionnée ↔ nombre décimal) : écris sous forme de nombre décimal « 1 kg et 1/2 kg ».",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-fractions",
       "unite": "kg",
       "reponse": 1.5,
-      "explication": "1/2 kg = 0,5 kg. 1 + 0,5 = 1,5 kg. (Dans l'épreuve, c'est la 2e ligne de la question 23.)"
+      "explication": "1/2 kg = 0,5 kg. 1 + 0,5 = 1,5 kg."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q24b",
+      "livret": 4,
+      "numero": "24",
+      "domaine": "ma.grandeurs",
+      "type": "qcm_multi",
+      "enonce": "Chacune de ces figures vaut 1 (livret, page 16). Entoure les deux figures dont la partie grisée représente 1/5.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions",
+      "documents": [
+        "liv4-p16"
+      ],
+      "choix": [
+        "Figure 1",
+        "Figure 2",
+        "Figure 3",
+        "Figure 4",
+        "Figure 5"
+      ],
+      "reponse": [
+        1,
+        4
+      ],
+      "explication": "Dans la figure 2, 3 cases sur 15 sont grisées : 3/15 = 1/5. Dans la figure 5, 2 triangles sur 10 sont grisés : 2/10 = 1/5."
+    },
+    {
+      "id": "ceb-2026-tc-l4-q25",
+      "livret": 4,
+      "numero": "25",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe le solide du livret (page 17). Écris la formule qui permet de calculer son volume.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-volumes",
+      "documents": [
+        "liv4-p17"
+      ],
+      "reponseModele": "c × c × c (ou L × l × h, ou c³, ou aire de la base × hauteur). Il faut une formule avec des lettres, pas un calcul avec des nombres. Majuscules et minuscules sont acceptées.",
+      "explication": "Un cube a ses trois dimensions égales : son volume est côté × côté × côté."
     },
     {
       "id": "ceb-2026-tc-l4-q26",
@@ -1569,9 +2500,11 @@
       "type": "ouverte",
       "enonce": "Sur une frise de l'an 1 à 900, trace un trait bleu pour le début de la romanisation dans nos régions, puis un trait rouge pour la date du sacre de Charlemagne (800).",
       "points": 2,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "fiche": "hg-periodes",
-      "numerisable": false
+      "numerisable": false,
+      "reponseModele": "a) Un trait bleu placé entre les deux lignes bleues du gabarit, au tout début de l'Antiquité (tolérance : entre -75 et -50). 1 point. b) Un trait rouge placé à l'an 800 sur la frise (sacre de Charlemagne). 1 point.",
+      "remarque": "Question de traits à tracer sur une frise du livret : gardée en mode papier (à faire sur le livret)."
     },
     {
       "id": "ceb-2026-tc-l5-q3",
@@ -1718,6 +2651,30 @@
       ],
       "reponse": 2,
       "explication": "Du 16e au 19e siècle, les Européens colonisent l'Amérique, l'Afrique et l'Océanie : le christianisme s'y répand (en jaune sur la carte)."
+    },
+    {
+      "id": "ceb-2026-tc-l5-q7c",
+      "livret": 5,
+      "numero": "7c",
+      "domaine": "hg.histoire",
+      "type": "qcm",
+      "enonce": "Voici une frise chronologique (livret, page 7). Situe l'apparition du christianisme à Moscou : choisis le numéro de la période à écrire dans l'étiquette « Diffusion du christianisme à Moscou ».",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-periodes",
+      "documents": [
+        "liv5-p07",
+        "christianisme"
+      ],
+      "choix": [
+        "Période 1",
+        "Période 2",
+        "Période 3",
+        "Période 4",
+        "Période 5"
+      ],
+      "reponse": 2,
+      "explication": "Sur la carte, le christianisme arrive à Moscou au Moyen Âge, entre 476 et 1492 : c'est la période 3 de la frise."
     },
     {
       "id": "ceb-2026-tc-l5-q8",
@@ -1910,6 +2867,32 @@
       "fiche": "hg-paysages",
       "reponseModele": "1 point si tu as repéré un même endroit sur les deux photos. Puis 2 points pour la description (1 point par date), par exemple : une route en 1994 → une route avec un rond-point en 2006 ; ou une prairie, un terrain ou un bois en 1994 → des constructions (bâtiments) en 2006. La description n'est pas sanctionnée si elle ne correspond pas à l'endroit que tu as choisi.",
       "explication": "Compare les deux photos au même endroit : ce qui était vert ou libre est souvent devenu construit."
+    },
+    {
+      "id": "ceb-2026-tc-l5-q17",
+      "livret": 5,
+      "numero": "17",
+      "domaine": "hg.geographie",
+      "type": "qcm",
+      "enonce": "Observe les différentes vues prises par un satellite (portfolio, page 13) et la vue de Baulers en 2021 (livret, page 16), sur laquelle un élève a tracé une croix. Elle correspond à un changement de l'occupation du sol par rapport à une vue du même endroit datant de 1994. Coche la proposition qui convient : l'humain a modifié l'occupation du sol en…",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-paysages",
+      "documents": [
+        "liv5-p16",
+        "baulers"
+      ],
+      "choix": [
+        "construisant des bâtiments.",
+        "construisant des voiries (rues, chemins).",
+        "plantant des arbres, des haies.",
+        "enlevant des arbres, des haies."
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "À l'endroit de la croix, l'humain a construit : on accepte « construisant des bâtiments » ou « construisant des voiries (rues, chemins) ». « Planter des arbres, des haies » n'est pas accepté, car cela ne correspond pas à l'endroit marqué par la croix."
     },
     {
       "id": "ceb-2026-tc-l5-q18",
@@ -2259,6 +3242,21 @@
         1
       ],
       "explication": "Le texte ne donne aucun chiffre sur les cambrioleurs. Il dit que les membres d'une famille ont un dessin proche (vrai) et que le fœtus a des empreintes dès le quatrième mois (donc « cinquième » est faux)."
+    },
+    {
+      "id": "ceb-2026-tc-l6-q12",
+      "livret": 6,
+      "numero": "12",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Observe la photo du livret (page 8). Cette trace est « en positif ». Écris pour quelle raison.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "liv6-p08"
+      ],
+      "reponseModele": "Toute idée liée au fait d'apporter de la matière sur une surface. Par exemple : la trace est faite avec de la terre sur le carrelage ; la chaussure a laissé une trace de boue sur le sol.",
+      "explication": "Une trace « en positif » apporte de la matière sur une surface (ici de la boue ou de la terre sur le sol), contrairement à une trace « en négatif » qui creuse la matière."
     },
     {
       "id": "ceb-2026-tc-l6-q13",
