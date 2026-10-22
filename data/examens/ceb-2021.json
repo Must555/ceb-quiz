@@ -629,10 +629,15 @@
    "numero": "18a",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Écris les coordonnées des cases où le stationnement coute le plus cher.",
+   "enonce": "Observe le plan de stationnement. Écris les coordonnées (lettre + chiffre) des cases où le stationnement coute le plus cher.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-monnaie",
+   "documents": [
+    "parking"
+   ],
+   "reponseModele": "C5, C6 et D5 (1 point, tout ou rien : il faut les trois cases).",
+   "explication": "Les cases bleues sont les plus chères : 1 € par heure."
   },
   {
    "id": "ceb-2021-l3-q18c",
@@ -640,10 +645,15 @@
    "numero": "18c",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Écris les cases du chemin le plus court de la place de la Libération à la Grand Place.",
+   "enonce": "Observe le plan de stationnement. Écris les cases du chemin le plus court pour aller de la place de la Libération à la Grand Place.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-monnaie",
+   "documents": [
+    "parking"
+   ],
+   "reponseModele": "A3, A4, B4, C4, C5 (la case de départ A2 peut manquer). 1 point, tout ou rien.",
+   "explication": "Compte les cases une à une en suivant les rues du quadrillage."
   },
   {
    "id": "ceb-2021-l3-q19",
@@ -1278,11 +1288,13 @@
    "type": "ouverte",
    "enonce": "Choisis la peinture d'élève faite à la manière de Folon et justifie.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "mg-2"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "a) Il fallait choisir la deuxième proposition (1 pt). b) Ta justification doit parler d'un bonhomme, d'un chapeau ou d'éléments de la nature, comme chez Folon (1 pt). Toute idée allant dans ce sens est acceptée.",
+   "explication": "Folon dessine de petits bonshommes à chapeau et des éléments de la nature (arbre, oiseau)."
   },
   {
    "id": "ceb-2021-l5-q1",
@@ -2386,8 +2398,10 @@
    "type": "ouverte",
    "enonce": "Écris le pourcentage et la fraction de charge des batteries.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Les batteries sont chargées aux trois quarts : 75 % (1 pt) et 3/4 (1 pt). Toute représentation de 3/4 est acceptée.",
+   "explication": "75 % = 75/100 = 3/4."
   },
   {
    "id": "ceb-2021-l6-q14",
@@ -2519,7 +2533,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Argument de Brigitte : « Les oiseaux seraient bien dans la cuisine. » La grand-mère est-elle d'accord ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2527,11 +2541,26 @@
    ],
    "choix": [
     "Oui",
-    "Non : « Les oiseaux sont bien dans les arbres ! […] dans le ciel, quand ils volent. »",
-    "Non : « Il n'est pas question d'avoir un chat dans la maison. »"
+    "Non"
    ],
    "reponse": 1,
-   "explication": "Pour la grand-mère, les oiseaux sont bien en liberté."
+   "explication": "Relis ce que répond la grand-mère. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2021-l7-q4-j",
+   "livret": 7,
+   "numero": "4 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Voici un argument utilisé par Brigitte pour convaincre sa grand-mère : Les oiseaux seraient bien dans la cuisine. La grand-mère est-elle d'accord avec cet argument ? ». Justifie ta réponse avec un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "gm-1"
+   ],
+   "reponseModele": "Elle dit que les oiseaux sont bien dans les arbres ou dans le ciel, quand ils volent. Toute idée liée à la nécessité de laisser les oiseaux en liberté est acceptée. (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
+   "explication": "La grand-mère pense que la place des oiseaux est dehors, en liberté."
   },
   {
    "id": "ceb-2021-l7-q5",
@@ -2592,7 +2621,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Un lecteur a compris : « Brigitte a froid dans le dos car il ne fait pas chaud dans la pièce. » A-t-il bien compris ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-expressions",
    "documents": [
@@ -2600,10 +2629,26 @@
    ],
    "choix": [
     "Oui",
-    "Non : « La température n'était pas en cause » ; elle a froid dans le dos parce qu'elle a peur d'être mal jugée."
+    "Non"
    ],
    "reponse": 1,
-   "explication": "« Avoir froid dans le dos », c'est avoir peur."
+   "explication": "Relis la phrase qui explique pourquoi Brigitte a froid dans le dos. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2021-l7-q8-j",
+   "livret": 7,
+   "numero": "8 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Un lecteur a compris : Brigitte a froid dans le dos, car il ne fait pas chaud dans la pièce où elle se trouve. A-t-il bien compris ce que l'auteur veut dire ? ». Justifie ta réponse avec un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "gm-2"
+   ],
+   "reponseModele": "Le texte dit que « la température n'était pas en cause » (accepté aussi : elle avait froid dans le dos car elle allait être mal jugée, ou parce qu'elle avait peur d'être jugée). Refusé : « choquée », « fâchée », « mal à l'aise ». (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
+   "explication": "« Avoir froid dans le dos » veut dire ici avoir peur, pas avoir froid."
   },
   {
    "id": "ceb-2021-l7-q9",
@@ -4273,8 +4318,10 @@
    "type": "ouverte",
    "enonce": "Donne un attribut qui distingue ces animaux de l'épeire.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Par exemple : le moustique et le gloméris n'ont pas 4 paires de pattes articulées ; ou ils n'ont pas de chélicères ; ou ils portent des antennes. Toute formulation dans ce sens est acceptée (pas besoin de phrase). 1 point.",
+   "explication": "L'épeire a 4 paires de pattes, des chélicères et pas d'antennes."
   },
   {
    "id": "ceb-2021-l9-q7e",

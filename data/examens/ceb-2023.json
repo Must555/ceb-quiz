@@ -384,8 +384,11 @@
    "type": "ouverte",
    "enonce": "Écris le nom de la figure (triangle … …).",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Un triangle rectangle scalène (ou : scalène rectangle). « Triangle rectangle quelconque » est refusé. 1 point.",
+   "explication": "Il a un angle droit et ses trois côtés ont des longueurs différentes.",
+   "remarque": "Question appuyée sur la figure du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2023-l3-q7",
@@ -840,6 +843,24 @@
     2
    ],
    "explication": "Une date de l'histoire ; une information sur la formation."
+  },
+  {
+   "id": "ceb-2023-l4-q12",
+   "livret": 4,
+   "numero": "12",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Un élève pense que, sur une affiche publicitaire de cirque, « C'est impossible que ce spectacle soit présenté en Belgique ! ». D'après le texte, a-t-il raison ? Entoure OUI ou NON et justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "cirque-2"
+   ],
+   "numerisable": false,
+   "remarque": "Question appuyée sur l'affiche publicitaire du livret que nous n'avons pas : gardée en mode papier.",
+   "reponseModele": "Tout ou rien (1 point) : il faut que la justification soit cohérente avec ta réponse. OUI : les spectacles avec animaux sauvages sont interdits en Belgique (le mot « sauvages » est exigé). NON : c'est possible si l'affiche date d'avant 2014 (avant l'interdiction).",
+   "explication": "Depuis 2014, la Belgique interdit les numéros qui mettent en scène des animaux sauvages."
   },
   {
    "id": "ceb-2023-l4-q13",
@@ -2334,8 +2355,11 @@
    "type": "ouverte",
    "enonce": "Calcule l'aire du tapis posé sur le carrelage.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "1 point pour l'opération (par exemple 80 × 50, ou 20 + 20 + 20 + 20 = 80 et 20 + 20 + 10 = 50, ou 10 × 400…) et 1 point pour la réponse : 4 000 cm² ou 0,4 m² (le nombre ET l'unité).",
+   "explication": "Aire du rectangle = longueur × largeur.",
+   "remarque": "Question appuyée sur le plan du tapis du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2023-l6-q11",
@@ -2345,8 +2369,11 @@
    "type": "ouverte",
    "enonce": "Combien de boites A et B peut-on placer dans la caissette ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "40 boites A et 20 boites B (2 points : 1 par réponse).",
+   "explication": "Compare les dimensions de la caissette et celles de chaque boite.",
+   "remarque": "Question appuyée sur les dessins des boites du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2023-l6-q13",
@@ -2629,7 +2656,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Quel sentiment éprouve Cassie quand son frère annonce qu'il veut la machine à écrire ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2642,7 +2669,23 @@
     "d'impatience"
    ],
    "reponse": 2,
-   "explication": "« Mais c'est trop injuste, pourquoi il l'aurait ? » Dans l'épreuve, il fallait aussi justifier par le texte : « Mais c'est trop injuste, pourquoi il l'aurait ? »"
+   "explication": "Relis ce que dit Cassie quand Jules annonce qu'il veut la machine. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2023-l7-q12a-j",
+   "livret": 7,
+   "numero": "12a (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Quel sentiment éprouve Cassie quand son frère annonce qu'il veut la machine à écrire ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-1"
+   ],
+   "reponseModele": "« Mais c'est trop injuste, pourquoi il l'aurait ? » ou « C'est moi qui veux être écrivain, pas lui ! » ou toute idée allant dans ce sens, avec au minimum l'idée d'injustice (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
+   "explication": "Cassie trouve injuste que ce soit son frère qui ait la machine : c'est elle qui veut être écrivain."
   },
   {
    "id": "ceb-2023-l7-q12b",
@@ -2651,7 +2694,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Quel sentiment éprouve Cassie quand son frère lui donne la machine à écrire ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2664,7 +2707,23 @@
     "d'impatience"
    ],
    "reponse": 0,
-   "explication": "« Comme je restais bouche bée » : elle est étonnée. Dans l'épreuve, il fallait aussi justifier par le texte : « Et comme je restais bouche bée… »"
+   "explication": "Relis comment Cassie réagit quand Jules lui donne la machine. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2023-l7-q12b-j",
+   "livret": 7,
+   "numero": "12b (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Quel sentiment éprouve Cassie quand son frère lui donne la machine à écrire ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-3"
+   ],
+   "reponseModele": "« Et comme je restais bouche bée… » (il a sorti les bonbons de sous son lit) ou toute idée allant dans ce sens, avec au minimum l'idée d'étonnement (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
+   "explication": "« Rester bouche bée » veut dire être tellement surpris qu'on ne sait plus quoi dire."
   },
   {
    "id": "ceb-2023-l7-q13",
@@ -2748,7 +2807,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Louise : « À la fin, Jules veut que sa sœur disparaisse. » Sami : « Non ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2759,7 +2818,23 @@
     "Sami"
    ],
    "reponse": 1,
-   "explication": "Jules plaisante : il donne la machine à sa sœur et lui propose de partager les bonbons. Dans l'épreuve, il fallait justifier : Jules veut en réalité donner la machine à sa sœur (il se doutait qu'elle était le génie)."
+   "explication": "Relis la fin de l'histoire pour comprendre ce que Jules veut vraiment. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2023-l7-q17-j",
+   "livret": 7,
+   "numero": "17 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Louise : « À la fin, Jules veut que sa sœur disparaisse. » Sami : « Non ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "genie-3"
+   ],
+   "reponseModele": "Une idée au choix : Jules veut que la machine (et le Génie) disparaisse chez sa sœur ; Jules veut donner la machine à écrire à sa sœur ; Jules se doutait que sa sœur était le génie ; Jules ne le pense pas vraiment car il aime sa sœur. Refusé : « Jules veut que sa sœur soit heureuse » ; « Jules ne veut pas que la machine disparaisse avec sa sœur » ; « Ils se réconcilient à la fin ». (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
+   "explication": "Jules plaisante : il donne la machine à sa sœur, qu'il aime."
   },
   {
    "id": "ceb-2023-l7-q18",
@@ -3608,8 +3683,11 @@
    "type": "ouverte",
    "enonce": "Calcule le nombre d'agrafes dans une barrette.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "1 point pour l'opération 1 080 : 12 ; 1 point pour la réponse : une réglette contient 90 agrafes (uniquement cette réponse).",
+   "explication": "On partage le nombre total d'agrafes en parts égales.",
+   "remarque": "Question appuyée sur l'illustration du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2023-l8-q20a",
@@ -4066,19 +4144,15 @@
    "livret": 9,
    "numero": "8c",
    "domaine": "sc.matiere",
-   "type": "qcm",
-   "enonce": "Un élève affirme : « Tout ce qui est en bois flotte sur l'eau. » A-t-il raison ?",
+   "type": "ouverte",
+   "enonce": "Un élève affirme : « Tout ce qui est en bois flotte sur l'eau. » A-t-il raison ? Réponds par oui ou par non, puis justifie ta réponse à l'aide des expériences.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "flottaison-2"
    ],
-   "choix": [
-    "Oui, tous les bois flottent.",
-    "Non : la boule en bois d'azobé coule dans l'eau douce."
-   ],
-   "reponse": 1,
-   "explication": "L'azobé est un bois très dense : il coule dans l'eau douce. Le corrigé officiel accepte aussi « oui » si on explique que dans l'eau salée, le bois d'azobé peut flotter."
+   "explication": "L'azobé est un bois très dense : il coule dans l'eau douce mais peut flotter dans l'eau salée.",
+   "reponseModele": "Tu peux répondre OUI ou NON, à condition que ta justification soit cohérente avec ta réponse (1 point). OUI : il faut faire référence à la nature de l'eau (par exemple : dans l'eau salée, le bois d'azobé peut flotter). NON : la boule d'azobé coule (dans l'eau douce). Refusé : « ça dépend de la taille, du poids ou de la forme du bois » ; « d'autres matières (frigolite, éponge) flottent »."
   },
   {
    "id": "ceb-2023-l9-q9a",
@@ -4254,14 +4328,27 @@
    "domaine": "sc.energie",
    "type": "qcm",
    "enonce": "Un tableau classe comme bons conducteurs : le tuyau en cuivre, le clou en fer, la mine de crayon en graphite et l'eau salée ; comme mauvais : le bois sec, l'élastique en caoutchouc, la gomme. Les objets métalliques sont-ils les seuls bons conducteurs ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
    "choix": [
     "Oui",
-    "Non : la mine de crayon (graphite) et l'eau salée conduisent aussi l'électricité."
+    "Non"
    ],
    "reponse": 1,
+   "explication": "Regarde les matériaux classés comme bons conducteurs dans le tableau. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2023-l9-q11c-j",
+   "livret": 9,
+   "numero": "11c (justification)",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Un tableau classe des matériaux en bons et mauvais conducteurs. Les objets métalliques sont-ils les seuls bons conducteurs ? ». Justifie ta réponse.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
+   "reponseModele": "L'eau salée et/ou la mine de crayon (le graphite) conduisent aussi le courant sans être en métal (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
    "explication": "Le graphite et l'eau salée ne sont pas des métaux, mais ils conduisent le courant."
   }
  ],

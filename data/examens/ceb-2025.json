@@ -455,8 +455,11 @@
    "type": "ouverte",
    "enonce": "Le devoir de Lucas : écris le nom précis de la figure barrée et colorie un parallélogramme (non rectangle).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Un trapèze rectangle (« trapèze droit » ou simplement « trapèze » sont refusés). b) Colorier le parallélogramme non rectangle (la forme oblique au centre).",
+   "explication": "Un trapèze rectangle a deux côtés parallèles et un angle droit.",
+   "remarque": "Question appuyée sur le devoir de Lucas du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l3-q4",
@@ -611,8 +614,11 @@
    "type": "ouverte",
    "enonce": "Tableau des caractéristiques des triangles : écris le nom précis de chaque triangle.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Dans l'ordre des cases : triangle équilatéral (acutangle) ; triangle scalène rectangle ; triangle isocèle acutangle ; triangle scalène obtusangle. L'ordre des mots est libre. 1 point par case.",
+   "explication": "Un triangle se nomme avec la longueur de ses côtés (équilatéral, isocèle, scalène) et la mesure de ses angles (acutangle, rectangle, obtusangle).",
+   "remarque": "Question appuyée sur le tableau du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l3-q15",
@@ -633,8 +639,11 @@
    "type": "ouverte",
    "enonce": "Jules a trié six figures en deux groupes. Coche la raison de chaque tri.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Premier tri : « a au moins un angle droit ». Second tri : « a au moins deux côtés isométriques » (de même longueur). 1 point par raison.",
+   "explication": "Cherche ce que les figures d'un même groupe ont en commun.",
+   "remarque": "Question appuyée sur les figures du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l4-q1",
@@ -905,8 +914,11 @@
    "type": "ouverte",
    "enonce": "Graphique des ventes de pommes d'amour par âge : quelle catégorie achète le moins ? Les moins de 10 ans achètent-ils le plus ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) La catégorie des 30-39 ans achète le moins (1 point). b) Faux : les moins de 10 ans n'achètent pas le plus (1 point).",
+   "explication": "Cherche le plus petit et le plus grand bâton du graphique.",
+   "remarque": "Question appuyée sur le graphique du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l4-q13",
@@ -2937,10 +2949,17 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Quel est le système de mémoire dominant utilisé dans la situation illustrée ? Justifie avec le texte.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "enonce": "Observe l'illustration. Quel est le système de mémoire dominant utilisé dans la situation illustrée ? Coche une seule case (mémoire de travail, procédurale, sémantique, perceptive ou épisodique) et justifie avec le texte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "fiche": "fr-inferences",
+   "documents": [
+    "memoire-2"
+   ],
+   "reponseModele": "Mémoire épisodique (1 point, tout ou rien ; une seule case cochée). Justification possible : c'est la mémoire des souvenirs personnels / des épisodes de ta vie ; ou : c'est la mémoire qui fait voyager dans le temps en pensée ; ou : parce que tu connais les épisodes qui font ton passé, tu peux imaginer l'avenir et faire des projets ; ou toute description de l'illustration en lien avec ces idées.",
+   "explication": "La mémoire épisodique est la mémoire de ton histoire.",
+   "remarque": "Question appuyée sur l'illustration du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l8-q8",
@@ -3016,8 +3035,13 @@
    "type": "ouverte",
    "enonce": "Les éléphants ont une mémoire épisodique : vrai ou faux ? Justifie avec un élément du texte.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "memoire-4"
+   ],
+   "reponseModele": "Réponse : vrai (si tu as écrit faux, ce n'est pas sanctionné : seule la justification compte). Justification attendue, avec la notion de « souvenir vécu » : les éléphants sont capables de reconnaître d'autres éléphants qu'ils ont croisés durant leur vie ; ou ils identifient des hommes qui leur sont familiers ou qu'ils ont connus dans le passé ; ou ils peuvent mémoriser les points d'eau qu'ils connaissent. 1 point.",
+   "explication": "La mémoire épisodique, c'est se souvenir de ce qu'on a vécu."
   },
   {
    "id": "ceb-2025-l8-q12",
@@ -3394,7 +3418,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Qu'éprouve le marchand quand le roi lui annonce un châtiment terrible en cas d'échec ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -3407,7 +3431,23 @@
     "de l'impatience"
    ],
    "reponse": 1,
-   "explication": "« Le marchand s'inclina en tremblant sous cette menace. » Dans l'épreuve, il fallait aussi recopier la phrase qui le prouve : « Le marchand s'inclina en tremblant sous cette menace. »"
+   "explication": "Relis la réaction du marchand quand le roi le menace. Justifie ensuite en recopiant la phrase du texte sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2025-l9-q7-j",
+   "livret": 9,
+   "numero": "7 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Qu'éprouve le marchand quand le roi lui annonce un châtiment terrible en cas d'échec ? ». Justifie ta réponse : recopie la phrase du texte qui le prouve.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "bonne-idee-1"
+   ],
+   "reponseModele": "« Le marchand s'inclina en tremblant sous cette menace. » (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.) Refusé : « Il avait peur d'échouer » ; « Sinon, attends-toi à un châtiment terrible. »",
+   "explication": "« En tremblant » montre la peur du marchand."
   },
   {
    "id": "ceb-2025-l9-q8",
@@ -3954,8 +3994,11 @@
    "type": "ouverte",
    "enonce": "Schéma du cycle de vie du geai des chênes : à quoi correspondent les étiquettes C et D ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "C : l'incubation ; D : l'éclosion (1 point chacun).",
+   "explication": "L'incubation est le temps où l'œuf est couvé ; l'éclosion est la naissance du poussin.",
+   "remarque": "Question appuyée sur le schéma du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2025-l10-q2e",

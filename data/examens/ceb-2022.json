@@ -439,8 +439,11 @@
    "type": "ouverte",
    "enonce": "Nomme les polygones formés par les réglettes.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Un triangle isocèle acutangle (1 pt). b) Un triangle équilatéral OU un triangle acutangle (1 pt). c) Ce polygone est un pentagone (1 pt).",
+   "explication": "Compte les côtés et regarde les angles et les longueurs des côtés.",
+   "remarque": "Question appuyée sur les assemblages de réglettes du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q2d",
@@ -474,8 +477,11 @@
    "type": "ouverte",
    "enonce": "Robot Thymio : écris les cases du chemin le plus court et réponds par vrai ou faux.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Chemin le plus court : G5, F5, F4, E4, D4, D5, D6, D7 (1 pt ; G5 peut être écrite une seconde fois). b) VRAI, FAUX, FAUX (1 pt chacun).",
+   "explication": "Suis les cases grisées une à une, sans revenir en arrière.",
+   "remarque": "Question appuyée sur le plan du robot Thymio du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q6",
@@ -485,8 +491,11 @@
    "type": "ouverte",
    "enonce": "Retrouve le critère de classement des polygones.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Un critère au choix : les hexagones / 6 côtés ou 6 angles / plus de 5 côtés ou plus de 5 angles / plus de 4 côtés ou plus de 4 angles (1 pt). b) Un critère au choix : les quadrilatères / les trapèzes / 4 côtés / 4 angles (1 pt).",
+   "explication": "Cherche ce que les polygones du tableau « OUI » ont tous en commun.",
+   "remarque": "Question appuyée sur les dessins de polygones du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q7",
@@ -713,7 +722,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Une élève dit : « Il n'y a que la liseuse qui permet de lire des livres numériques. » D'après le texte ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -722,9 +731,26 @@
    ],
    "choix": [
     "Vrai",
-    "Faux : on peut aussi lire sur un ordinateur, un smartphone ou une tablette."
+    "Faux"
    ],
    "reponse": 1,
+   "explication": "Le texte cite plusieurs supports pour lire un livre numérique. Justifie maintenant ta réponse sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2022-l4-q7-j",
+   "livret": 4,
+   "numero": "7 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Une élève dit : Il n'y a que la liseuse qui permet de lire des livres numériques. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "num-1",
+    "num-3"
+   ],
+   "reponseModele": "On peut lire un livre numérique avec un ordinateur, un smartphone ou une tablette (au moins un de ces éléments). Accepté aussi : « Il existe d'autres supports pour lire un livre numérique. »",
    "explication": "Le texte cite l'ordinateur, le smartphone, la tablette et la liseuse."
   },
   {
@@ -1006,22 +1032,61 @@
    "livret": 4,
    "numero": "9",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Recopie le mot du texte qui donne la signification de chaque pictogramme.",
+   "type": "trous",
+   "enonce": "Dans le texte « Le livre numérique », chaque pictogramme a une signification. Recopie le mot du texte qui donne la signification de chaque pictogramme.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-paratexte",
+   "documents": [
+    "num-3"
+   ],
+   "texte": "Le pictogramme du pouce vers le bas signifie : {1}  ·  Le pictogramme du pouce vers le haut signifie : {2}",
+   "reponse": [
+    [
+     "Inconvénient",
+     "Inconvénients",
+     "Inconvénient(s)",
+     "un inconvénient",
+     "des inconvénients"
+    ],
+    [
+     "Avantage",
+     "Avantages",
+     "Avantage(s)",
+     "un avantage",
+     "des avantages"
+    ]
+   ],
+   "explication": "Le pouce vers le bas annonce les inconvénients, le pouce vers le haut les avantages."
   },
   {
    "id": "ceb-2022-l4-q19",
    "livret": 4,
    "numero": "19",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Indique la fonction des mots soulignés dans trois phrases.",
+   "type": "grille",
+   "enonce": "Indique la fonction du groupe de mots entre crochets dans chaque phrase.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-sujet-complements",
+   "lignes": [
+    "Plus de la moitié des lecteurs interrogés ont recours [aux deux versions].",
+    "Tu dois [le] télécharger sur Internet.",
+    "Pour eux, [le livre numérique] n'offre pas le même ressenti."
+   ],
+   "colonnes": [
+    "(Groupe) sujet",
+    "Complément direct du verbe",
+    "Complément indirect du verbe",
+    "Complément circonstanciel (de phrase)",
+    "Attribut du sujet"
+   ],
+   "reponse": [
+    2,
+    1,
+    0
+   ],
+   "explication": "« ont recours à » : complément indirect ; « le » (= le livre) répond à « télécharger quoi ? » : complément direct ; « le livre numérique » fait l'action : sujet."
   },
   {
    "id": "ceb-2022-l5-q1",
@@ -1647,11 +1712,30 @@
    "livret": 5,
    "numero": "8f",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Écris la date de la cérémonie de clôture.",
+   "type": "trous",
+   "enonce": "Lis les informations sur le Festival olympique de la jeunesse. Écris la date complète de la cérémonie de clôture du festival, en respectant le format de cet exemple : la date de la fête nationale belge est le jeudi 21 juillet 2022.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "festival"
+   ],
+   "texte": "La cérémonie de clôture a lieu le {1} {2} {3} {4}.",
+   "reponse": [
+    [
+     "samedi"
+    ],
+    [
+     "30"
+    ],
+    [
+     "juillet"
+    ],
+    [
+     "2022"
+    ]
+   ],
+   "explication": "La cérémonie de clôture est le samedi 30 juillet 2022."
   },
   {
    "id": "ceb-2022-l5-q11",
@@ -2373,7 +2457,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Un enfant dit : « Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. » D'après le texte ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2382,9 +2466,26 @@
    ],
    "choix": [
     "Vrai",
-    "Faux : il ne comprenait rien à la définition du dictionnaire."
+    "Faux"
    ],
    "reponse": 1,
+   "explication": "Relis le passage où Théophile cherche dans le dictionnaire. Justifie maintenant ta réponse sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2022-l7-q6-j",
+   "livret": 7,
+   "numero": "6 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Un enfant dit : Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "bonheur-2",
+    "bonheur-3"
+   ],
+   "reponseModele": "Il ne comprend rien à cette définition ; ou : toutes les réponses ne sont pas dans les livres. Toute reformulation dans ce sens est acceptée (par exemple : il n'a pas trouvé ce qu'il voulait).",
    "explication": "« Je ne comprenais rien à cette définition. […] J'étais dégoûté. »"
   },
   {
@@ -3943,8 +4044,11 @@
    "type": "ouverte",
    "enonce": "Écris le sens lié à chaque illustration.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Il fallait écrire le nom du sens sur chaque étiquette du chaton : l'ouïe (l'oreille), l'odorat (le nez), le toucher (la patte). 1 point par bon sens.",
+   "explication": "Les cinq sens : la vue, l'ouïe, l'odorat, le goût et le toucher.",
+   "remarque": "Question appuyée sur les illustrations du livret (chaton) que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l9-q3",

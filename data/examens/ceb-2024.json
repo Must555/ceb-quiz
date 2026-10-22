@@ -403,8 +403,11 @@
    "type": "ouverte",
    "enonce": "Écris le nom précis (2 mots) de chaque triangle dessiné.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Un triangle isocèle acutangle et un triangle scalène rectangle (1 point par triangle, tout ou rien). « Triangle quelconque » à la place de « scalène » est refusé.",
+   "explication": "Regarde les longueurs des côtés (isocèle, scalène) puis les angles (acutangle, rectangle).",
+   "remarque": "Question appuyée sur les triangles dessinés dans le livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l3-q4",
@@ -1634,8 +1637,11 @@
    "type": "ouverte",
    "enonce": "Lis le calendrier des périodes de migration : quel oiseau part en septembre ? Combien de temps dure l'absence du chardonneret ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "L'oiseau qui commence sa migration en septembre : l'hirondelle rustique (1 point). Le chardonneret est absent environ 5 mois (1 point).",
+   "explication": "Dans le calendrier, la période de migration de chaque oiseau est colorée dans une autre couleur que la présence en Belgique.",
+   "remarque": "Question appuyée sur le calendrier des migrations du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l5-q4a",
@@ -3197,7 +3203,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Lola dit : « Nour et Nico sont simplement amis. » Solan répond : « Non ! Nico est amoureux de Nour ! » Qui a raison ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -3210,7 +3216,25 @@
     "Solan"
    ],
    "reponse": 1,
-   "explication": "« Voilà comment Nour et lui étaient devenus amis. À vrai dire, peut-être même un peu plus que ça… Du moins pour Nico. » Dans l'épreuve, il fallait justifier par un élément du texte (« peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant »)."
+   "explication": "Relis ce que le texte dit de la relation entre Nour et Nico. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2024-l9-q6-j",
+   "livret": 9,
+   "numero": "7 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Lola dit : Nour et Nico sont simplement amis. Solan répond : Non ! Nico est amoureux de Nour ! Qui a raison ? ». Justifie ton choix à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "reponseModele": "« …peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant » (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
+   "explication": "Le texte laisse entendre que, pour Nico, c'est plus que de l'amitié."
   },
   {
    "id": "ceb-2024-l9-q7",
@@ -3696,8 +3720,11 @@
    "type": "ouverte",
    "enonce": "Écris le nom du sens lié à l'organe désigné par la flèche sur la photo.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "L'ouïe (1 point).",
+   "explication": "Le sens lié à l'oreille.",
+   "remarque": "Question appuyée sur la photo du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q1c",
@@ -3790,11 +3817,14 @@
    "type": "ouverte",
    "enonce": "Tableau de classification : écris le nom de l'animal qui correspond aux attributs cochés.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "classification"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "De haut en bas : l'aselle (aquatique), l'épinoche, le ragondin, le triton (à crête). 1 point par ligne du tableau.",
+   "explication": "Retrouve, parmi les animaux de la collection du portfolio, celui qui possède tous les attributs cochés.",
+   "remarque": "Le tableau aux attributs cochés est dans le livret et non dans le portfolio : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q5",
@@ -3867,8 +3897,11 @@
    "type": "ouverte",
    "enonce": "Photo d'un lac de montagne : écris les états de l'eau observés.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Photo 1 : l'eau à l'état gazeux (de gaz). Photo 2 : l'eau à l'état liquide. (1 point par état.)",
+   "explication": "Les états de l'eau : solide (glace), liquide, gazeux (vapeur).",
+   "remarque": "Question appuyée sur la photo du lac du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q8b",
