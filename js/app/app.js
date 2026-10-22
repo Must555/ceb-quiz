@@ -554,7 +554,7 @@ function rendreDocs(docs) {
         <button class="btn btn-cta ecoute-btn" data-doc="${d.id}">▶️ Écouter le texte</button>
         <p class="ecoute-info mute"></p></div>`
     : `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
+      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>${d.source === 'livret' ? `Livret ${d.livret}, page ${d.page}` : `Portfolio, page ${d.page}`} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
 }
 function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
   $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });

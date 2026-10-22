@@ -1,0 +1,210 @@
+{
+ "description": "Documents officiels de chaque CEB : lien vers enseignement.be (FWB) et copie de secours dans archives/ (au cas où le lien officiel ne marche plus).",
+ "baseOfficielle": "https://www.enseignement.be/fileadmin/portail_age/uploads/parcours_apprentissage/maternel_primaire_ordinaire/evaluation/CEB_standard/{annee}/",
+ "examens": {
+  "ceb-2015": {
+   "annee": 2015,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2015_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2015_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2015_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2016": {
+   "annee": 2016,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2016_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2016_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2016_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2017": {
+   "annee": 2017,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2017_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2017_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2017_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2018": {
+   "annee": 2018,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2018_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2018_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2018_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2019": {
+   "annee": 2019,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2019_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2019_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2019_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2021": {
+   "annee": 2021,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2021_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2021_CEB_portfolio_.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2021_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2022": {
+   "annee": 2022,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2022_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2022_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2022_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2023": {
+   "annee": 2023,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2023_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2023_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2023_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2024": {
+   "annee": 2024,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2024_CEB_questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2024_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2024_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2025": {
+   "annee": 2025,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2025_CEB_Questionnaire.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2025_CEB_portfolio.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2025_CEB_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2026-so": {
+   "annee": 2026,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2026_CEB_SO_quest.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2026_CEB_SO_port.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2026_CEB_SO_correction.pdf"
+    }
+   ]
+  },
+  "ceb-2026-tc": {
+   "annee": 2026,
+   "documents": [
+    {
+     "type": "questionnaire",
+     "fichier": "2026_CEB_TC_quest.pdf"
+    },
+    {
+     "type": "portfolio",
+     "fichier": "2026_CEB_TC_port.pdf"
+    },
+    {
+     "type": "correction",
+     "fichier": "2026_CEB_TC_correction.pdf"
+    }
+   ]
+  }
+ }
+}

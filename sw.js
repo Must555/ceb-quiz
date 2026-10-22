@@ -5,7 +5,7 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = 'f1641d811d77';
+const VERSION = '37edd5c9bbb2';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
@@ -297,6 +297,7 @@ const FICHIERS = [
  "data/modeles/tc-hg.json",
  "data/modeles/tc-ma.json",
  "data/modeles/tc-sc.json",
+ "data/telechargements.json",
  "imprimer.html",
  "index.html",
  "js/app/app.js",
