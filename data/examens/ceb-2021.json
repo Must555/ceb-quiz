@@ -325,7 +325,7 @@
    "domaine": "ma.geometrie",
    "type": "trous",
    "enonce": "Une pyramide à base triangulaire : complète.",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
    "texte": "Nombre de faces : {1}  ·  Nombre d'arêtes : {2}  ·  Nombre de sommets : {3}",
@@ -340,7 +340,8 @@
      "4"
     ]
    ],
-   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets."
+   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets.",
+   "remarque": "L'entourage de la pyramide à base triangulaire (1 pt) est une fiche à part (3c2) : il se fait sur des dessins du livret que nous n'avons pas. Ici : 1 pt tout ou rien pour les trois nombres ; le corrigé ne sanctionne pas en cascade."
   },
   {
    "id": "ceb-2021-l3-q13a",
@@ -443,6 +444,18 @@
    "numerisable": false
   },
   {
+   "id": "ceb-2021-l3-q3c2",
+   "livret": 3,
+   "numero": "3c (entourage)",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Entoure la représentation du dé en forme de pyramide à base triangulaire parmi les propositions.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false,
+   "remarque": "Choix entre quatre dessins du livret (cône, pyramide à base triangulaire, pyramide à base carrée, pyramide à base hexagonale) que nous n'avons pas : non numérisable. Réponse officielle : le deuxième dessin, la pyramide à base triangulaire."
+  },
+  {
    "id": "ceb-2021-l3-q3d",
    "livret": 3,
    "numero": "3d",
@@ -467,13 +480,27 @@
   {
    "id": "ceb-2021-l3-q5",
    "livret": 3,
-   "numero": "5",
+   "numero": "5a",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un carré et un non-polygone.",
+   "enonce": "En utilisant tes instruments, trace un carré. Le segment [CD] sera un des côtés.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Corrigé : carré de 5 cm de côté dont [CD] est un côté (tolérance 1 mm). Tracé sur le dessin du livret : non numérisable."
+  },
+  {
+   "id": "ceb-2021-l3-q5b",
+   "livret": 3,
+   "numero": "5b",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "Trace un non-polygone. Le segment [EF] sera un côté.",
+   "points": 1,
+   "corrigeVerifie": false,
+   "numerisable": false,
+   "neutralisee": true,
+   "remarque": "Question neutralisée par le correctif officiel (0 point) : la notion de non-polygone ne fait pas partie des essentiels. L'épreuve vaut donc 49 points et non 50."
   },
   {
    "id": "ceb-2021-l3-q6",
@@ -678,7 +705,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Voici une aquarelle aux couleurs pastel où flotte un petit bonhomme à chapeau. Elle a été réalisée par…",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "documents": [
     "mg-2"
@@ -690,7 +717,9 @@
     "Mathilde de Toscane"
    ],
    "reponse": 1,
-   "explication": "Couleurs pastel, petits bonshommes à chapeau : c'est le style de Folon."
+   "explication": "Couleurs pastel, petits bonshommes à chapeau : c'est le style de Folon.",
+   "numerisable": false,
+   "remarque": "L'image du livret manque ; décrite en mots, elle donnait la réponse : question pour la version papier."
   },
   {
    "id": "ceb-2021-l4-q3",
@@ -801,7 +830,7 @@
    ],
    "lignes": [
     "Cet inventeur dispose à Dinant d'un espace qui lui est consacré.",
-    "La collerette du Gille se porte aux épaules.",
+    "La collerette du Gille se porte aux épaules. Elle est réalisée à partir de ruban plissé blanc.",
     "Cet artiste a déposé plus de 500 œuvres dans la ferme du Château de La Hulpe."
    ],
    "colonnes": [
@@ -1109,8 +1138,8 @@
    "numero": "21",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Réponds en te servant du miniguide.",
-   "points": 4,
+   "enonce": "Réponds en te servant du miniguide (21a, 21b et 21c).",
+   "points": 3,
    "corrigeVerifie": true,
    "documents": [
     "mg-0",
@@ -1121,37 +1150,65 @@
     "mg-5",
     "mg-6"
    ],
-   "texte": "L'Atomium a été construit pour l'{1} de 1958.  ·  Les deux héros les plus populaires des marionnettes liégeoises : {2} et {3}.  ·  Les moines qui ont construit l'abbaye d'Orval étaient {4}.",
+   "texte": "À l'occasion de quel évènement l'Atomium a-t-il été construit ? {1}  ·  Quels sont les noms des deux héros les plus populaires du théâtre de marionnettes liégeois ? {2}  ·  Quelle est la nationalité des moines qui ont construit l'abbaye d'Orval ? {3}",
    "reponse": [
     [
-     "Exposition universelle",
+     "l'exposition universelle",
      "exposition universelle",
-     "Exposition internationale",
-     "Expo 58",
+     "l'exposition universelle de 1958",
+     "exposition universelle de 1958",
+     "l'exposition internationale",
+     "exposition internationale",
+     "l'expo 58",
+     "expo 58",
      "expo"
     ],
     [
-     "Tchantchès",
-     "Tchantches",
-     "Nanesse"
+     "Tchantchès et Nanesse",
+     "Tchantchès, Nanesse",
+     "Tchantchès + Nanesse",
+     "Tchantchès - Nanesse",
+     "Tchantchès / Nanesse",
+     "Tchantchès & Nanesse",
+     "Tchantchès Nanesse",
+     "Tchantches et Nanesse",
+     "Tchantches, Nanesse",
+     "Tchantches + Nanesse",
+     "Tchantches - Nanesse",
+     "Tchantches / Nanesse",
+     "Tchantches & Nanesse",
+     "Tchantches Nanesse",
+     "Nanesse et Tchantchès",
+     "Nanesse, Tchantchès",
+     "Nanesse + Tchantchès",
+     "Nanesse - Tchantchès",
+     "Nanesse / Tchantchès",
+     "Nanesse & Tchantchès",
+     "Nanesse Tchantchès",
+     "Nanesse et Tchantches",
+     "Nanesse, Tchantches",
+     "Nanesse + Tchantches",
+     "Nanesse - Tchantches",
+     "Nanesse / Tchantches",
+     "Nanesse & Tchantches",
+     "Nanesse Tchantches"
     ],
     [
-     "Nanesse",
-     "Tchantchès",
-     "Tchantches"
-    ],
-    [
+     "italienne",
      "italiens",
-     "Italiens",
-     "italien"
+     "italien",
+     "des moines italiens",
+     "moines italiens",
+     "des italiens",
+     "la nationalité italienne"
     ]
    ],
-   "explication": "Exposition universelle de 1958 ; Tchantchès et Nanesse ; des moines italiens."
+   "explication": "L'Atomium a été construit pour l'exposition universelle de 1958. Les deux héros les plus populaires sont Tchantchès et Nanesse. Les moines qui ont construit l'abbaye d'Orval étaient italiens."
   },
   {
    "id": "ceb-2021-l4-q21b",
    "livret": 4,
-   "numero": "21b",
+   "numero": "21d",
    "domaine": "fr.lire",
    "type": "qcm_multi",
    "enonce": "Adolphe Sax a perfectionné des instruments déjà existants. Lesquels ?",
@@ -1170,7 +1227,8 @@
     0,
     2
    ],
-   "explication": "« il perfectionne des instruments déjà existants comme la clarinette ou la flute de pan ». Le saxophone, il l'a inventé."
+   "explication": "« il perfectionne des instruments déjà existants comme la clarinette ou la flute de pan ». Le saxophone, il l'a inventé.",
+   "remarque": "Officiellement 21d : « Adolphe Sax a perfectionné des instruments de musique. Écris-en deux. » (exiger la clarinette et la flute de pan). Ici en QCM ; avec 21a, 21b et 21c, la question 21 vaut 4 points."
   },
   {
    "id": "ceb-2021-l4-q22",
@@ -1207,9 +1265,10 @@
    "domaine": "fr.lire",
    "type": "ouverte",
    "enonce": "Identifie le personnage de la photo.",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "QCM du livret sur une photo que nous n'avons pas (propositions : un moine de l'abbaye d'Orval ; un compositeur de musique ; un montreur de marionnettes ; un artiste peintre connu) : non numérisable. Réponse officielle : un compositeur de musique. Les réponses 2a et 2b forment un seul point officiel, tout ou rien pour les deux (0,5 + 0,5 chez nous)."
   },
   {
    "id": "ceb-2021-l4-q9",
@@ -1260,15 +1319,13 @@
    "numero": "2a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "À quelle période conventionnelle appartient chaque trace ?",
+   "enonce": "À quelle période conventionnelle appartient chaque image ? (Les images B, la capsule Apollo : époque contemporaine, et C, le casque celte : Antiquité, sont déjà données.)",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "lignes": [
-    "Tapisserie de Bayeux représentant l'attaque d'un château (11e siècle)",
-    "Gravure d'un atelier d'imprimerie (16e siècle)",
-    "Capsule Apollo de retour de la Lune (20e siècle)",
-    "Casque celte (4e siècle avant J.-C.)"
+    "Image A : gravure représentant un atelier d'imprimerie (16e siècle)",
+    "Image D : extrait de la tapisserie de Bayeux représentant l'attaque d'un château (11e siècle)"
    ],
    "colonnes": [
     "Préhistoire",
@@ -1278,15 +1335,13 @@
     "Époque contemporaine"
    ],
    "reponse": [
-    2,
     [
      3,
      2
     ],
-    4,
-    1
+    2
    ],
-   "explication": "11e s. : Moyen Âge ; 16e s. : Temps modernes ; 20e s. : époque contemporaine ; avant J.-C. (après l'écriture) : Antiquité. Pour la gravure de l'imprimerie, le corrigé accepte aussi le Moyen Âge."
+   "explication": "16e siècle : Temps modernes (le corrigé accepte aussi le Moyen Âge pour la gravure). 11e siècle : Moyen Âge."
   },
   {
    "id": "ceb-2021-l5-q2b",
@@ -1422,7 +1477,7 @@
    "numero": "5c",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Regarde les cartes 1 et 2. On peut aller…",
+   "enonce": "Regarde les cartes 1 et 2. On peut aller… Pour chaque ligne, dis si c'est vrai ou faux et indique la ou les cartes qui permettent de l'affirmer.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-transports",
@@ -1436,15 +1491,19 @@
     "en train, ou en car par l'autoroute, de Charleroi à Liège."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux"
+    "Vrai : carte 1",
+    "Vrai : carte 2",
+    "Vrai : cartes 1 et 2",
+    "Faux : carte 1",
+    "Faux : carte 2",
+    "Faux : cartes 1 et 2"
    ],
    "reponse": [
+    3,
     1,
-    0,
-    0
+    2
    ],
-   "explication": "Bruxelles-Liège, c'est l'A3 (l'A27 est près de Verviers et Malmedy). La ligne Liège-Namur-Dinant existe. Charleroi-Liège : train ou autoroute A15. (Dans l'épreuve, il fallait aussi indiquer la carte qui permet de l'affirmer : carte 1 pour l'autoroute A27, carte 2 pour le train.)"
+   "explication": "Bruxelles-Liège, c'est l'A3 (l'A27 est près de Verviers et Malmedy) : faux, et la carte 1 (routes) le montre. Liège-Namur-Dinant en train : vrai, la carte 2 (chemin de fer) le montre. Charleroi-Liège : train (carte 2) ou autoroute A15 (carte 1) : vrai, avec les deux cartes."
   },
   {
    "id": "ceb-2021-l5-q6a",
@@ -1507,7 +1566,7 @@
    "numero": "8",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Rue de Courcelles : quelle photo permet de le voir ?",
+   "enonce": "Observe les deux photos de la rue de Courcelles. Quelle(s) photo(s) permet(tent) de voir chaque information ?",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -1516,10 +1575,10 @@
    ],
    "lignes": [
     "L'Homme se déplace grâce à des véhicules tirés par des animaux.",
+    "La rue est équipée d'éclairage public.",
     "Des emplacements sont réservés au stationnement des automobiles.",
-    "Le nom de la rue a changé.",
-    "Un éclairage public est installé dans la rue.",
-    "Une zone est réservée aux piétons."
+    "La rue présente une zone pour les piétons.",
+    "Le nom de la rue a changé."
    ],
    "colonnes": [
     "La photo ancienne",
@@ -1530,11 +1589,12 @@
    "reponse": [
     0,
     1,
-    3,
     1,
-    2
+    2,
+    3
    ],
-   "explication": "Charrette à cheval sur l'ancienne ; voitures garées sur la récente ; aucun nom de rue n'est visible."
+   "explication": "Charrette à cheval sur la photo ancienne ; lampadaire et voitures garées sur la photo récente ; des trottoirs pour les piétons se voient sur les deux photos ; aucun nom de rue n'est visible.",
+   "remarque": "Le correctif officiel neutralise cette question dans la version V1 (Arial 20) seulement (0 point)."
   },
   {
    "id": "ceb-2021-l5-q10c",
@@ -1574,10 +1634,11 @@
     "une reproduction d'un monument.",
     "une photographie.",
     "un document audiovisuel original.",
+    "un document audiovisuel reconstitué.",
     "un document écrit original.",
     "un document écrit reconstitué."
    ],
-   "reponse": 4,
+   "reponse": 5,
    "explication": "C'est un texte, refait à l'identique en 2020 : un document écrit reconstitué."
   },
   {
@@ -1923,11 +1984,116 @@
     ],
     [
      "20 °C",
-     "34 °C",
      "20°C",
-     "34°C",
      "20 °c",
-     "34 °c"
+     "20°c",
+     "20 °",
+     "20°",
+     "20 degrés",
+     "21 °C",
+     "21°C",
+     "21 °c",
+     "21°c",
+     "21 °",
+     "21°",
+     "21 degrés",
+     "22 °C",
+     "22°C",
+     "22 °c",
+     "22°c",
+     "22 °",
+     "22°",
+     "22 degrés",
+     "23 °C",
+     "23°C",
+     "23 °c",
+     "23°c",
+     "23 °",
+     "23°",
+     "23 degrés",
+     "24 °C",
+     "24°C",
+     "24 °c",
+     "24°c",
+     "24 °",
+     "24°",
+     "24 degrés",
+     "25 °C",
+     "25°C",
+     "25 °c",
+     "25°c",
+     "25 °",
+     "25°",
+     "25 degrés",
+     "26 °C",
+     "26°C",
+     "26 °c",
+     "26°c",
+     "26 °",
+     "26°",
+     "26 degrés",
+     "27 °C",
+     "27°C",
+     "27 °c",
+     "27°c",
+     "27 °",
+     "27°",
+     "27 degrés",
+     "28 °C",
+     "28°C",
+     "28 °c",
+     "28°c",
+     "28 °",
+     "28°",
+     "28 degrés",
+     "29 °C",
+     "29°C",
+     "29 °c",
+     "29°c",
+     "29 °",
+     "29°",
+     "29 degrés",
+     "30 °C",
+     "30°C",
+     "30 °c",
+     "30°c",
+     "30 °",
+     "30°",
+     "30 degrés",
+     "31 °C",
+     "31°C",
+     "31 °c",
+     "31°c",
+     "31 °",
+     "31°",
+     "31 degrés",
+     "32 °C",
+     "32°C",
+     "32 °c",
+     "32°c",
+     "32 °",
+     "32°",
+     "32 degrés",
+     "33 °C",
+     "33°C",
+     "33 °c",
+     "33°c",
+     "33 °",
+     "33°",
+     "33 degrés",
+     "34 °C",
+     "34°C",
+     "34 °c",
+     "34°c",
+     "34 °",
+     "34°",
+     "34 degrés",
+     "entre 20 °C et 34 °C",
+     "entre 20°C et 34°C",
+     "entre 20 et 34 °C",
+     "entre 20 et 34°C",
+     "entre 20° et 34°",
+     "entre 20 et 34"
     ],
     [
      "8 jours",
@@ -1938,7 +2104,7 @@
      "du 16 juin 2020 au 24 juin 2020"
     ]
    ],
-   "explication": "Capacité : 72 l, 100 l ou 100 ml ; longueur : 60, 30 ou 40 cm ; masse : 250 g ; température : 20 °C ou 34 °C. Pour la température, toute valeur de 20 à 34 °C indiquée dans le document convient."
+   "explication": "Capacité : 72 l, 100 l ou 100 ml ; longueur : 60, 30 ou 40 cm ; masse : 250 g ; durée : 8 jours ou 9 jours (du 16 au 24 juin) ; température : toute valeur de 20 à 34 °C indiquée dans le document convient."
   },
   {
    "id": "ceb-2021-l6-q6a",
@@ -2880,8 +3046,7 @@
      "La grand-mere aux oiseaux"
     ],
     [
-     "Georges Coulonges",
-     "Coulonges"
+     "Georges Coulonges"
     ]
    ],
    "explication": "Georges Coulonges, La grand-mère aux oiseaux, Pocket, 1996."
@@ -3164,7 +3329,7 @@
    "domaine": "ma.arithmetique",
    "type": "trous",
    "enonce": "Complète.",
-   "points": 4,
+   "points": 7,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
    "texte": "10 = {1} − 90  ·  10 = 300 : {2}  ·  10 = {3} × 1/5  ·  100 = {4} − 22  ·  100 = 55,55 + {5}  ·  100 = 1 200 : {6}  ·  100 = 1/4 de {7}",
@@ -3254,28 +3419,85 @@
    "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Complète en gardant le même résultat (compensation).",
+   "enonce": "Complète les opérations afin de garder le même résultat, en appliquant les principes de compensation.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "0,5 × 6 = 1 × {1}  ·  10 000 : 125 = {2} : 1 000  ·  2 765 − 621 = {3} − 600  ·  79,6 + 12,7 = 80 + {4}",
+   "texte": "Premier terme : × 2 ; second terme : {1}\n0,5 × 6 = 1 × {2}  ·  Premier terme : {3} ; second terme : × 8\n10 000 : 125 = {4} : 1 000  ·  Premier terme : {5} ; second terme : − 21\n2 765 − 621 = {6} − 600  ·  Premier terme : + 0,4 ; second terme : {7}\n79,6 + 12,7 = 80 + {8}",
    "reponse": [
     [
+     ": 2",
+     ":2",
+     "÷ 2",
+     "÷2",
+     "/ 2",
+     "/2",
+     "divisé par 2",
+     "diviser par 2"
+    ],
+    [
      "3"
+    ],
+    [
+     "× 8",
+     "×8",
+     "x 8",
+     "x8",
+     "* 8",
+     "*8",
+     "fois 8",
+     "multiplié par 8",
+     "multiplier par 8"
     ],
     [
      "80000",
      "80 000"
     ],
     [
+     "− 21",
+     "−21",
+     "- 21",
+     "-21",
+     "– 21",
+     "–21",
+     "moins 21",
+     "retirer 21",
+     "enlever 21",
+     "soustraire 21"
+    ],
+    [
      "2744",
      "2 744"
     ],
     [
-     "12,3"
+     "− 0,4",
+     "−0,4",
+     "- 0,4",
+     "-0,4",
+     "– 0,4",
+     "–0,4",
+     "moins 0,4",
+     "retirer 0,4",
+     "enlever 0,4",
+     "soustraire 0,4",
+     "− 0.4",
+     "−0.4",
+     "- 0.4",
+     "-0.4",
+     "– 0.4",
+     "–0.4",
+     "moins 0.4",
+     "retirer 0.4",
+     "enlever 0.4",
+     "soustraire 0.4"
+    ],
+    [
+     "12,3",
+     "12.3"
     ]
    ],
-   "explication": "× 2 et : 2 ; les deux termes × 8 ; on retire 21 aux deux termes ; + 0,4 et − 0,4. (Dans l'épreuve, il fallait aussi écrire l'opération de compensation : : 2, × 8, − 21, − 0,4.)"
+   "explication": "0,5 × 6 : on multiplie un terme par 2 et on divise l'autre par 2 → 1 × 3. 10 000 : 125 : on multiplie les deux termes par 8 → 80 000 : 1 000. 2 765 − 621 : on retire 21 aux deux termes → 2 744 − 600. 79,6 + 12,7 : on ajoute 0,4 à un terme et on le retire à l'autre → 80 + 12,3.",
+   "remarque": "Officiel : 1 pt tout ou rien par opération (les deux éléments). Ici, chaque réponse vaut un demi-point."
   },
   {
    "id": "ceb-2021-l8-q16",
@@ -3451,7 +3673,8 @@
    "enonce": "Abaque : écris le nombre et ajoute des jetons.",
    "points": 6,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Toute la question repose sur l'abaque du livret, que nous n'avons pas : non numérisable. Officiel (6 pts) : 4a, 1 pt tout ou rien : 4 103,92 ; quatre-mille-cent-trois unités (et) nonante-deux centièmes (ne pas accepter « virgule ») ; 4b, 2 x 1 pt : 4 113,92 et 4 104,02 ; 4c, 3 x 1 pt : trois lignes de jetons à dessiner (réponse libre correspondant à la situation demandée)."
   },
   {
    "id": "ceb-2021-l8-q5",
@@ -3556,7 +3779,7 @@
    "numero": "2a",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Quelle expérience teste chaque hypothèse ?",
+   "enonce": "Pour chaque hypothèse, quelle expérience l'a testée, et que permet-elle de dire : vrai ou faux ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -3571,16 +3794,19 @@
     "Pour se développer, une plante a besoin de lumière."
    ],
    "colonnes": [
-    "Expérience A (arrosage)",
-    "Expérience B (lumière)",
-    "Expérience C (sels minéraux)"
+    "Expérience A : vrai",
+    "Expérience A : faux",
+    "Expérience B : vrai",
+    "Expérience B : faux",
+    "Expérience C : vrai",
+    "Expérience C : faux"
    ],
    "reponse": [
-    2,
+    4,
     0,
-    1
+    2
    ],
-   "explication": "A compare arrosé / non arrosé ; B lumière / obscurité ; C avec / sans sels minéraux. (Dans l'épreuve, il fallait aussi dire si l'expérience permet de dire que c'est vrai : oui pour les trois.)"
+   "explication": "A compare arrosé / non arrosé ; B lumière / obscurité ; C avec / sans sels minéraux. Pour les trois hypothèses, l'expérience permet de dire que c'est vrai."
   },
   {
    "id": "ceb-2021-l9-q2b",
@@ -3784,7 +4010,7 @@
    "numero": "8b",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Les expériences valident-elles l'affirmation ?",
+   "enonce": "Pour chaque affirmation, quelle expérience a été réalisée et valide-t-elle l'affirmation ? (Valider : confirmer que l'affirmation est vraie.)",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-ecosystemes",
@@ -3799,17 +4025,25 @@
     "Les cloportes meurent quand la terre est sèche."
    ],
    "colonnes": [
-    "Oui",
-    "Non",
-    "On ne sait pas"
+    "Expérience 1 : oui",
+    "Expérience 1 : non",
+    "Expérience 1 : on ne sait pas",
+    "Expérience 2 : oui",
+    "Expérience 2 : non",
+    "Expérience 2 : on ne sait pas",
+    "Expérience 3 : oui",
+    "Expérience 3 : non",
+    "Expérience 3 : on ne sait pas",
+    "Aucune expérience : on ne sait pas"
    ],
    "reponse": [
+    3,
+    7,
     0,
-    1,
-    0,
-    2
+    9
    ],
-   "explication": "Exp. 2 : tous du côté obscur. Tous restent vivants à la lumière. Exp. 1 : 5 côté glaçons, 1 côté chaud. Aucune expérience ne teste la terre sèche. (Dans l'épreuve, il fallait aussi indiquer l'expérience réalisée : 2, 3, 1, aucune.)"
+   "explication": "Exp. 2 : tous les cloportes vont du côté obscur, donc oui. Exp. 3 : tous restent vivants à la lumière, donc non. Exp. 1 : 5 cloportes côté glaçons, 1 côté chaud, donc oui. Aucune expérience ne teste la terre sèche : on ne sait pas.",
+   "remarque": "Officiel : 1 pt tout ou rien par ligne (expérience ET validation). Pour la dernière ligne, le corrigé accepte « aucune » seul, mais pas « on ne sait pas » seul."
   },
   {
    "id": "ceb-2021-l9-q8c",

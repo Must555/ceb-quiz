@@ -215,6 +215,32 @@
       "numerisable": false
     },
     {
+      "id": "ceb-2026-so-l3-q1a",
+      "livret": 3,
+      "numero": "1a",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Observe cette carte. Écris les coordonnées d'une case où se trouve une pierre précieuse.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question appuyée sur la carte du livret (quadrillage avec pierres précieuses) que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "E2 ou D5 ou G7 (on ne sanctionne pas l'élève qui écrit d'abord le chiffre ; si plusieurs coordonnées sont écrites, elles doivent toutes être correctes)."
+    },
+    {
+      "id": "ceb-2026-so-l3-q1b",
+      "livret": 3,
+      "numero": "1b",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Voici la zone où chercher une 4e pierre précieuse. Colorie cette zone dans le quadrillage de la carte.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question de coloriage sur la carte du livret et sur une zone modèle que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Les cases D6, D7, E6, F6, F5 et G5 sont coloriées (ou identifiées autrement, par exemple par des croix). Tout ou rien."
+    },
+    {
       "id": "ceb-2026-so-l3-q2",
       "livret": 3,
       "numero": "2",
@@ -225,6 +251,33 @@
       "corrigeVerifie": false,
       "fiche": "ma-quadrilateres",
       "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l3-q3",
+      "livret": 3,
+      "numero": "3",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Achève cette frise en traçant la quatrième figure et en respectant la régularité. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-mouvements",
+      "numerisable": false,
+      "remarque": "Tracé sur une frise du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Voir le gabarit officiel : la quatrième figure respecte la régularité de la frise et le carré est grisé. Tout ou rien."
+    },
+    {
+      "id": "ceb-2026-so-l3-q4",
+      "livret": 3,
+      "numero": "4",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Observe cette grille. Les cases grises représentent des bateaux et les cases blanches de l'eau. Coche les coordonnées de la case qui permet de toucher un bateau : A9, D2, E5 ou G6.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Choix à faire sur la grille de bataille navale du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "E5 (0 si plusieurs cases cochées)."
     },
     {
       "id": "ceb-2026-so-l3-q5",
@@ -249,6 +302,34 @@
       "numerisable": false
     },
     {
+      "id": "ceb-2026-so-l3-q7",
+      "livret": 3,
+      "numero": "7",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Observe ces deux triangles. Trouve une caractéristique commune à ces deux triangles selon leurs angles. Complète la phrase : « Ils ont chacun 2 … ».",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-angles",
+      "numerisable": false,
+      "remarque": "Question appuyée sur deux triangles du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Ils ont chacun deux angles aigus. On accepte toute formulation en rapport avec la notion d'aigu (inférieur à 90 degrés, plus petit qu'un angle droit…). Tout ou rien."
+    },
+    {
+      "id": "ceb-2026-so-l3-q8",
+      "livret": 3,
+      "numero": "8",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Trace l'image de cet assemblage par rapport à l'axe de symétrie a. Sois précis et utilise tes instruments.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-symetrie",
+      "numerisable": false,
+      "remarque": "Tracé sur un assemblage du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Voir le gabarit officiel : l'image de l'assemblage par rapport à l'axe a est tracée correctement. Tout ou rien."
+    },
+    {
       "id": "ceb-2026-so-l3-q9",
       "livret": 3,
       "numero": "9",
@@ -258,6 +339,20 @@
       "points": 2,
       "corrigeVerifie": false,
       "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l3-q10",
+      "livret": 3,
+      "numero": "10",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Observe ce disque. Complète ces phrases : le segment [AC] représente un … du disque ; le segment [BO] représente un … du disque ; le point O est le … du disque.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-cercle",
+      "numerisable": false,
+      "remarque": "Question appuyée sur le disque du livret (points A, B, C et O) que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "[AC] : un diamètre (on accepte « axe de symétrie »). [BO] : un rayon. O : le centre (on n'accepte pas « milieu »). 1 point par réponse."
     },
     {
       "id": "ceb-2026-so-l3-q11",
@@ -272,6 +367,34 @@
       "numerisable": false
     },
     {
+      "id": "ceb-2026-so-l3-q12a",
+      "livret": 3,
+      "numero": "12a",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Entoure les trois bâtonnets nécessaires pour construire un triangle équilatéral.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-triangles",
+      "numerisable": false,
+      "remarque": "Choix à faire parmi les bâtonnets du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Parmi les bâtonnets du livret, de haut en bas : le 3e, le 5e et le 6e (trois bâtonnets de même longueur). Tout ou rien."
+    },
+    {
+      "id": "ceb-2026-so-l3-q12b",
+      "livret": 3,
+      "numero": "12b",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Entoure les quatre bâtonnets nécessaires pour construire un parallélogramme.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-quadrilateres",
+      "numerisable": false,
+      "remarque": "Choix à faire parmi les bâtonnets du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Parmi les bâtonnets du livret, de haut en bas : les 2e et 3e, puis les 7e et 8e (deux paires de bâtonnets de même longueur). Tout ou rien."
+    },
+    {
       "id": "ceb-2026-so-l3-q13",
       "livret": 3,
       "numero": "13",
@@ -281,6 +404,20 @@
       "points": 1,
       "corrigeVerifie": false,
       "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l3-q14",
+      "livret": 3,
+      "numero": "14",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Complète chaque case de l'arbre par le numéro d'une figure. Un exemple t'est donné. Figures qui sont des triangles : OUI / NON ; figures qui ont au moins 2 côtés isométriques : OUI / NON.",
+      "points": 4,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les huit figures numérotées du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "De haut en bas : triangles avec au moins 2 côtés isométriques : 6 ou 3 ; triangle sans 2 côtés isométriques : 4 (le 1 est donné en exemple) ; non-triangles avec au moins 2 côtés isométriques : 2 ou 7 ; non-triangles sans 2 côtés isométriques : 5 ou 8. 1 point par ligne (si plusieurs réponses sont écrites, elles doivent toutes être correctes)."
     },
     {
       "id": "ceb-2026-so-l3-q15",
@@ -293,6 +430,47 @@
       "corrigeVerifie": false,
       "fiche": "ma-quadrilateres",
       "numerisable": false
+    },
+    {
+      "id": "ceb-2026-so-l3-q16",
+      "livret": 3,
+      "numero": "16",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Observe cette figure. Coche la proposition correcte : les côtés [AB] et [AD] sont parallèles ; perpendiculaires ; sécants ; de longueurs différentes.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-quadrilateres",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la figure ABCD du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Les côtés [AB] et [AD] sont sécants."
+    },
+    {
+      "id": "ceb-2026-so-l3-q17",
+      "livret": 3,
+      "numero": "17",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Entoure le dessin qui a au moins un axe de symétrie.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-symetrie",
+      "numerisable": false,
+      "remarque": "Choix à faire parmi quatre dessins du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "La bouteille (les trois autres dessins du livret n'ont pas d'axe de symétrie). 0 si plusieurs dessins sont entourés."
+    },
+    {
+      "id": "ceb-2026-so-l3-q18",
+      "livret": 3,
+      "numero": "18",
+      "domaine": "ma.geometrie",
+      "type": "ouverte",
+      "enonce": "Dans ce jeu vidéo, les personnages se déplacent dans le sens de leur flèche. Le personnage 1 change de sens de déplacement à chaque fois qu'il descend d'un étage. Le personnage 2 change de sens de déplacement uniquement lorsqu'il descend d'un étage sur une planche noire. Pour chaque personnage, trace son chemin jusqu'à la lettre de la case où il arrive à la fin de son déplacement.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Tracé dans le labyrinthe du livret (étages, planches, lettres A à D) que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Le personnage 1 arrive à la lettre B ; le personnage 2 arrive à la lettre D. 1 point par tracé."
     },
     {
       "id": "ceb-2026-so-l3-q19",
@@ -593,6 +771,34 @@
       "explication": "Volume : 6 dm × 2,5 dm × 4 dm = 60 dm³ = 60 l. Les 3/4 : 60 ÷ 4 × 3 = 45 l."
     },
     {
+      "id": "ceb-2026-so-l4-q6a",
+      "livret": 4,
+      "numero": "6a",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe ces tracés. Achève la figure B afin d'obtenir un rectangle de même périmètre que le rectangle A.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-perimetre-constant",
+      "numerisable": false,
+      "remarque": "Tracé sur le quadrillage du livret (rectangles A, B et C) que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Le rectangle B a une longueur de 7 cases et une largeur de 2 cases (on ne sanctionne pas un tracé peu précis ; on accepte le dessin à main levée)."
+    },
+    {
+      "id": "ceb-2026-so-l4-q6b",
+      "livret": 4,
+      "numero": "6b",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe ces tracés (rectangles A, B et C). Coche la proposition correcte : l'aire du rectangle A est plus grande que l'aire du rectangle C ; égale à l'aire du rectangle C ; plus petite que l'aire du rectangle C.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-perimetres",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les rectangles A et C du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "L'aire du rectangle A est plus petite que l'aire du rectangle C (0 si plusieurs cases cochées)."
+    },
+    {
       "id": "ceb-2026-so-l4-q7",
       "livret": 4,
       "numero": "7",
@@ -620,6 +826,34 @@
         4
       ],
       "explication": "Des tours de piste : une longueur. Des achats : un coût. Un parquet couvre une surface : une aire."
+    },
+    {
+      "id": "ceb-2026-so-l4-q8",
+      "livret": 4,
+      "numero": "8",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Calcule l'aire de ce trapèze. Complète la phrase : « L'aire du trapèze vaut … cm². »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-formules",
+      "numerisable": false,
+      "remarque": "Question appuyée sur le trapèze coté du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "L'aire du trapèze vaut 30 cm²."
+    },
+    {
+      "id": "ceb-2026-so-l4-q9",
+      "livret": 4,
+      "numero": "9",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe cette composition réalisée avec des triangles identiques. Calcule l'aire d'un triangle. Complète la phrase : « L'aire d'un triangle vaut … m². »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-aires-formules",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la composition de triangles du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "L'aire d'un triangle vaut 27 m²."
     },
     {
       "id": "ceb-2026-so-l4-q10",
@@ -662,6 +896,20 @@
         2
       ],
       "explication": "Page (0,1 mm) < carte d'identité (moins de 1 mm) < pièce de 2 € (environ 2 mm) < dictionnaire."
+    },
+    {
+      "id": "ceb-2026-so-l4-q12",
+      "livret": 4,
+      "numero": "12",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Observe ces différents récipients (numérotés de 1 à 4). Complète : le récipient … est rempli à 25 % de sa capacité ; le récipient … est rempli à 37,5 % de sa capacité.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-pourcentages",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les quatre récipients du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Le récipient 2 est rempli à 25 % de sa capacité ; le récipient 1 est rempli à 37,5 % de sa capacité. 1 point par réponse."
     },
     {
       "id": "ceb-2026-so-l4-q13",
@@ -784,6 +1032,52 @@
       "explication": "0,45 dal × 10 = 4,5 dal = 45 l."
     },
     {
+      "id": "ceb-2026-so-l4-q17",
+      "livret": 4,
+      "numero": "17",
+      "domaine": "ma.grandeurs",
+      "type": "trous",
+      "enonce": "Écris l'unité de temps qui convient pour chaque situation (exemple : la durée entre 2 coupes du monde de football → année).",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-durees",
+      "texte": "La durée d'une récréation : {1}\nLa durée des études primaires : {2}\nLa durée des vacances de printemps : {3}",
+      "reponse": [
+        [
+          "minute",
+          "minutes",
+          "min",
+          "la minute",
+          "heure",
+          "heures",
+          "h",
+          "une heure",
+          "l'heure"
+        ],
+        [
+          "année",
+          "années",
+          "an",
+          "ans",
+          "l'année",
+          "l'an",
+          "une année"
+        ],
+        [
+          "jour",
+          "jours",
+          "semaine",
+          "semaines",
+          "le jour",
+          "la semaine",
+          "un jour",
+          "une semaine"
+        ]
+      ],
+      "souple": true,
+      "explication": "Une récréation dure quelques minutes (l'heure est aussi acceptée). Les études primaires durent six années. Les vacances de printemps durent quelques jours, deux semaines."
+    },
+    {
       "id": "ceb-2026-so-l4-q18a",
       "livret": 4,
       "numero": "18a",
@@ -820,6 +1114,20 @@
       ],
       "reponse": 3,
       "explication": "Deux longueurs différentes, chacune deux fois : les côtés opposés sont égaux deux à deux. C'est un parallélogramme."
+    },
+    {
+      "id": "ceb-2026-so-l4-q19",
+      "livret": 4,
+      "numero": "19",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Voici des représentations de fractions. Additionne les parties grisées.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions-addition",
+      "numerisable": false,
+      "remarque": "Question appuyée sur des disques partagés du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Première ligne : 6/8. Deuxième ligne : 8/12. On accepte toutes les fractions équivalentes. 1 point par résultat."
     },
     {
       "id": "ceb-2026-so-l4-q20",
@@ -862,6 +1170,33 @@
       "explication": "Seuls les Alpes (4 808 m) et les Pyrénées (3 298 m) dépassent 2 000 m."
     },
     {
+      "id": "ceb-2026-so-l4-q22b",
+      "livret": 4,
+      "numero": "22b",
+      "domaine": "ma.donnees",
+      "type": "ouverte",
+      "enonce": "Observe le graphique « Altitude maximale de massifs montagneux en France ». À quel massif appartient chacune de ces altitudes maximales ? Complète le tableau pour 4 808 m, 1 720 m et 1 424 m (exemple : 3 298 m → Pyrénées).",
+      "points": 3,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question appuyée sur le graphique à barres du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "4 808 m : Alpes ; 1 720 m : Jura ; 1 424 m : Vosges. 1 point par réponse."
+    },
+    {
+      "id": "ceb-2026-so-l4-q23",
+      "livret": 4,
+      "numero": "23",
+      "domaine": "ma.grandeurs",
+      "type": "ouverte",
+      "enonce": "Colorie, dans chaque carré, la partie demandée : 25 % de l'aire du premier carré ; 4/5 de l'aire du second carré.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-fraction-decimal-pourcent",
+      "numerisable": false,
+      "remarque": "Coloriage sur deux carrés du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "25 % (un quart) de l'aire du premier carré sont coloriés ; 4/5 de l'aire du second carré sont coloriés. 1 point par carré."
+    },
+    {
       "id": "ceb-2026-so-l4-q24",
       "livret": 4,
       "numero": "24",
@@ -885,6 +1220,20 @@
       ],
       "souple": true,
       "explication": "hecto = 100 ; milli = 0,001 ; centi = 0,01 (1 cl = 10 ml)."
+    },
+    {
+      "id": "ceb-2026-so-l4-q25",
+      "livret": 4,
+      "numero": "25",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe ce disque. Coche la proposition qui représente la partie grisée : trois quarts ; 1/3 ; 6/3 ; la moitié.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-fractions",
+      "numerisable": false,
+      "remarque": "Question appuyée sur le disque partagé du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "La moitié (0 si plusieurs cases cochées)."
     },
     {
       "id": "ceb-2026-so-l5-q1a",
@@ -1102,6 +1451,23 @@
       "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne. « Louis » seul ne suffit pas : il faut « Louis le Pieux » (ou Louis Ier)."
     },
     {
+      "id": "ceb-2026-so-l5-q4b",
+      "livret": 5,
+      "numero": "4b",
+      "domaine": "hg.histoire",
+      "type": "ouverte",
+      "enonce": "Sur la ligne du temps, colorie toute la durée de la vie de Charlemagne (742 - 814).",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-frise",
+      "documents": [
+        "carolingiens"
+      ],
+      "numerisable": false,
+      "remarque": "Coloriage sur la ligne du temps du livret (graduée de 700 à 900) que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "La ligne du temps est coloriée de 742 à 814 (seuil de tolérance : 2 mm)."
+    },
+    {
       "id": "ceb-2026-so-l5-q4c",
       "livret": 5,
       "numero": "4c",
@@ -1233,6 +1599,40 @@
       "explication": "La Suisse et la Norvège ne sont pas membres de l'Union européenne."
     },
     {
+      "id": "ceb-2026-so-l5-q5c",
+      "livret": 5,
+      "numero": "5c",
+      "domaine": "hg.histoire",
+      "type": "ouverte",
+      "enonce": "La Belgique fait partie de l'UE. Colorie sur la ligne du temps (de 1950 à 2020) toute la durée de son appartenance à l'UE, depuis 1958 jusqu'à aujourd'hui.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-frise",
+      "documents": [
+        "ue"
+      ],
+      "numerisable": false,
+      "remarque": "Coloriage sur la ligne du temps du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "La ligne du temps est coloriée de 1958 à 2026 : on exige la précision à l'année près."
+    },
+    {
+      "id": "ceb-2026-so-l5-q5d",
+      "livret": 5,
+      "numero": "5d",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "La ligne du temps représente la durée d'adhésion d'un pays à l'UE. Écris le nom de ce pays.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-europe",
+      "documents": [
+        "ue"
+      ],
+      "numerisable": false,
+      "remarque": "Question appuyée sur la ligne du temps du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Un pays au choix parmi : Autriche, Suède ou Finlande."
+    },
+    {
       "id": "ceb-2026-so-l5-q6a",
       "livret": 5,
       "numero": "6a",
@@ -1346,16 +1746,79 @@
       "explication": "Bastogne, Libramont et La Roche-en-Ardenne sont de petites villes de la province de Luxembourg."
     },
     {
+      "id": "ceb-2026-so-l5-q7a",
+      "livret": 5,
+      "numero": "7a",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "Coche tous les éléments qui correspondent à ce que tu vois sur le paysage. Les espaces non bâtis sont : nombreux, peu nombreux, des champs cultivés. Les espaces bâtis : sont surtout des maisons d'habitation, sont essentiellement des usines, montrent des fermes et des hangars agricoles. Le réseau routier est constitué principalement : d'autoroutes, de rues bordées de maisons, de petites routes de campagne.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "hg-paysages",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la photo de paysage du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Espaces non bâtis : peu nombreux. Espaces bâtis : surtout des maisons d'habitation. Réseau routier : des rues bordées de maisons. 1 point par groupe (0 si plusieurs cases cochées dans un groupe)."
+    },
+    {
+      "id": "ceb-2026-so-l5-q7b",
+      "livret": 5,
+      "numero": "7b",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "Coche la proposition correcte. Ce paysage est plutôt : un paysage rural, un paysage urbain, un paysage industriel.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "hg-paysages",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la photo de paysage du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Un paysage urbain (0 si plusieurs cases cochées)."
+    },
+    {
       "id": "ceb-2026-so-l5-q8",
       "livret": 5,
       "numero": "8",
       "domaine": "hg.geographie",
       "type": "ouverte",
       "enonce": "Sur deux planisphères, situe l'Asie, l'Afrique, l'Océanie, l'océan Atlantique et l'océan Pacifique.",
-      "points": 10,
+      "points": 5,
       "corrigeVerifie": false,
       "fiche": "hg-globe",
-      "numerisable": false
+      "numerisable": false,
+      "remarque": "Barème officiel : 5 × 1 point, une étiquette (numéro) par continent ou océan à placer sur le bon planisphère."
+    },
+    {
+      "id": "ceb-2026-so-l5-q9a",
+      "livret": 5,
+      "numero": "9a",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "Tu es à Namur. À quelle voie prendras-tu le train pour aller à Houyet sans changer de train ? À quelle voie prendras-tu le train pour aller à Mons sans changer de train ? Écris le numéro de la voie.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "hg-cartes",
+      "documents": [
+        "train"
+      ],
+      "numerisable": false,
+      "remarque": "Il faut lire le panneau d'affichage de la gare de Namur (photo du livret) que nous n'avons pas, en plus de la carte du portfolio : gardée en mode papier.",
+      "reponseModele": "Pour Houyet : la voie 6. Pour Mons : la voie 7. 1 point par réponse."
+    },
+    {
+      "id": "ceb-2026-so-l5-q9b",
+      "livret": 5,
+      "numero": "9b",
+      "domaine": "hg.geographie",
+      "type": "ouverte",
+      "enonce": "Coche la proposition correcte. Les trains à la voie 4 prendront plutôt la direction du nord, du sud, de l'ouest ou de l'est. Le train à la voie 6 prendra plutôt la direction du nord, du sud, de l'ouest ou de l'est.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "hg-orientation",
+      "documents": [
+        "train"
+      ],
+      "numerisable": false,
+      "remarque": "Il faut lire le panneau d'affichage de la gare de Namur (photo du livret) que nous n'avons pas, en plus de la carte du portfolio : gardée en mode papier.",
+      "reponseModele": "Voie 4 : vers l'est. Voie 6 : vers le sud. 1 point par réponse (0 si plusieurs cases cochées)."
     },
     {
       "id": "ceb-2026-so-l6-q1",
@@ -1623,6 +2086,22 @@
         1
       ],
       "explication": "Le texte ne donne aucun chiffre sur les cambrioleurs. Il dit que les membres d'une famille ont un dessin proche (vrai) et que le fœtus a des empreintes dès le quatrième mois (donc « cinquième » est faux)."
+    },
+    {
+      "id": "ceb-2026-so-l6-q12",
+      "livret": 6,
+      "numero": "12",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Cette trace est « en positif ». Écris pour quelle raison.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "empreintes-3"
+      ],
+      "numerisable": false,
+      "remarque": "La trace est une photo du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Toute idée liée au fait d'apporter de la matière sur une surface. Exemples : la trace est faite avec de la terre sur le carrelage ; la chaussure a laissé une trace de boue sur le sol."
     },
     {
       "id": "ceb-2026-so-l6-q13",
@@ -2178,6 +2657,20 @@
       "explication": "Le signe > se lit « est plus grand que ». 13 unités > 12 unités."
     },
     {
+      "id": "ceb-2026-so-l8-q2",
+      "livret": 8,
+      "numero": "2",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Écris le nombre qui convient dans chaque case, sur chacune des deux droites graduées.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "numerisable": false,
+      "remarque": "Question appuyée sur deux droites graduées agrandies du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Première droite (entre 7 860 et 7 870) : 7 867. Seconde droite (entre 15 et 16) : 14,2. 1 point par réponse."
+    },
+    {
       "id": "ceb-2026-so-l8-q3a",
       "livret": 8,
       "numero": "3a",
@@ -2204,6 +2697,20 @@
       "explication": "11 millions, 754 milliers, 4 unités : 11 754 004."
     },
     {
+      "id": "ceb-2026-so-l8-q4a",
+      "livret": 8,
+      "numero": "4a",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Complète les deux cases blanches du tableau (grille de nombres décimaux).",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-decimaux",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la grille de nombres du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Les deux cases blanches contiennent 0,68 et 1. 1 point par réponse."
+    },
+    {
       "id": "ceb-2026-so-l8-q4b",
       "livret": 8,
       "numero": "4b",
@@ -2223,6 +2730,93 @@
       "explication": "Seul 0,8 (= 0,80) est compris entre 0,75 et 0,95."
     },
     {
+      "id": "ceb-2026-so-l8-q5",
+      "livret": 8,
+      "numero": "5",
+      "domaine": "ma.arithmetique",
+      "type": "texte_court",
+      "enonce": "Observe cette addition : 45 693 + 21 427 = 67 120. Écris une opération réciproque pour vérifier le résultat du calcul ci-dessus.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-operations",
+      "reponse": [
+        "67 120 - 21 427",
+        "67 120 - 21 427 = 45 693",
+        "67 120 - 21 427=45 693",
+        "67 120 - 45 693",
+        "67 120 - 45 693 = 21 427",
+        "67 120 - 45 693=21 427",
+        "67 120 – 21 427",
+        "67 120 – 21 427 = 45 693",
+        "67 120 – 21 427=45 693",
+        "67 120 – 45 693",
+        "67 120 – 45 693 = 21 427",
+        "67 120 – 45 693=21 427",
+        "67 120 − 21 427",
+        "67 120 − 21 427 = 45 693",
+        "67 120 − 21 427=45 693",
+        "67 120 − 45 693",
+        "67 120 − 45 693 = 21 427",
+        "67 120 − 45 693=21 427",
+        "67 120-21 427",
+        "67 120-21 427 = 45 693",
+        "67 120-21 427=45 693",
+        "67 120-45 693",
+        "67 120-45 693 = 21 427",
+        "67 120-45 693=21 427",
+        "67 120–21 427",
+        "67 120–21 427 = 45 693",
+        "67 120–21 427=45 693",
+        "67 120–45 693",
+        "67 120–45 693 = 21 427",
+        "67 120–45 693=21 427",
+        "67 120−21 427",
+        "67 120−21 427 = 45 693",
+        "67 120−21 427=45 693",
+        "67 120−45 693",
+        "67 120−45 693 = 21 427",
+        "67 120−45 693=21 427",
+        "67120 - 21427",
+        "67120 - 21427 = 45693",
+        "67120 - 21427=45693",
+        "67120 - 45693",
+        "67120 - 45693 = 21427",
+        "67120 - 45693=21427",
+        "67120 – 21427",
+        "67120 – 21427 = 45693",
+        "67120 – 21427=45693",
+        "67120 – 45693",
+        "67120 – 45693 = 21427",
+        "67120 – 45693=21427",
+        "67120 − 21427",
+        "67120 − 21427 = 45693",
+        "67120 − 21427=45693",
+        "67120 − 45693",
+        "67120 − 45693 = 21427",
+        "67120 − 45693=21427",
+        "67120-21427",
+        "67120-21427 = 45693",
+        "67120-21427=45693",
+        "67120-45693",
+        "67120-45693 = 21427",
+        "67120-45693=21427",
+        "67120–21427",
+        "67120–21427 = 45693",
+        "67120–21427=45693",
+        "67120–45693",
+        "67120–45693 = 21427",
+        "67120–45693=21427",
+        "67120−21427",
+        "67120−21427 = 45693",
+        "67120−21427=45693",
+        "67120−45693",
+        "67120−45693 = 21427",
+        "67120−45693=21427"
+      ],
+      "souple": true,
+      "explication": "On vérifie une addition par une soustraction : 67 120 − 21 427 = 45 693 (ou 67 120 − 45 693 = 21 427)."
+    },
+    {
       "id": "ceb-2026-so-l8-q6",
       "livret": 8,
       "numero": "6",
@@ -2233,6 +2827,88 @@
       "corrigeVerifie": true,
       "reponse": 17800,
       "explication": "Enfants pour la Belgique : 12 500 − 3 650 = 8 850. Adultes pour la Belgique : 26 650 − 8 850 = 17 800."
+    },
+    {
+      "id": "ceb-2026-so-l8-q7",
+      "livret": 8,
+      "numero": "7",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Observe cette décomposition : 61 526 = 60 000 + 1 000 + 500 + 20 + 6. Décompose de la même manière les nombres suivants.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-numeration",
+      "texte": "16 026 = {1}  ·  37,023 = {2}",
+      "reponse": [
+        [
+          "10 000 + 6 000 + 0 + 20 + 6",
+          "10 000 + 6 000 + 000 + 20 + 6",
+          "10 000 + 6 000 + 20 + 6",
+          "10 000 +6 000 +0 +20 +6",
+          "10 000 +6 000 +000 +20 +6",
+          "10 000 +6 000 +20 +6",
+          "10 000+ 6 000+ 0+ 20+ 6",
+          "10 000+ 6 000+ 000+ 20+ 6",
+          "10 000+ 6 000+ 20+ 6",
+          "10 000+6 000+0+20+6",
+          "10 000+6 000+000+20+6",
+          "10 000+6 000+20+6",
+          "10000 + 6000 + 0 + 20 + 6",
+          "10000 + 6000 + 000 + 20 + 6",
+          "10000 + 6000 + 20 + 6",
+          "10000 +6000 +0 +20 +6",
+          "10000 +6000 +000 +20 +6",
+          "10000 +6000 +20 +6",
+          "10000+ 6000+ 0+ 20+ 6",
+          "10000+ 6000+ 000+ 20+ 6",
+          "10000+ 6000+ 20+ 6",
+          "10000+6000+0+20+6",
+          "10000+6000+000+20+6",
+          "10000+6000+20+6"
+        ],
+        [
+          "30 + 7 + 0 + 0,02 + 0,003",
+          "30 + 7 + 0 + 0.02 + 0.003",
+          "30 + 7 + 0,0 + 0,02 + 0,003",
+          "30 + 7 + 0,02 + 0,003",
+          "30 + 7 + 0.0 + 0.02 + 0.003",
+          "30 + 7 + 0.02 + 0.003",
+          "30 +7 +0 +0,02 +0,003",
+          "30 +7 +0 +0.02 +0.003",
+          "30 +7 +0,0 +0,02 +0,003",
+          "30 +7 +0,02 +0,003",
+          "30 +7 +0.0 +0.02 +0.003",
+          "30 +7 +0.02 +0.003",
+          "30+ 7+ 0+ 0,02+ 0,003",
+          "30+ 7+ 0+ 0.02+ 0.003",
+          "30+ 7+ 0,0+ 0,02+ 0,003",
+          "30+ 7+ 0,02+ 0,003",
+          "30+ 7+ 0.0+ 0.02+ 0.003",
+          "30+ 7+ 0.02+ 0.003",
+          "30+7+0+0,02+0,003",
+          "30+7+0+0.02+0.003",
+          "30+7+0,0+0,02+0,003",
+          "30+7+0,02+0,003",
+          "30+7+0.0+0.02+0.003",
+          "30+7+0.02+0.003"
+        ]
+      ],
+      "souple": true,
+      "explication": "16 026 = 10 000 + 6 000 + 20 + 6 (il n'y a pas de centaines). 37,023 = 30 + 7 + 0,02 + 0,003 (il n'y a pas de dixièmes)."
+    },
+    {
+      "id": "ceb-2026-so-l8-q8a",
+      "livret": 8,
+      "numero": "8a",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe ce compteur d'eau (03060,580 m³). Barre les zéros que l'on peut supprimer sans modifier la valeur du nombre affiché sur ce compteur.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-decimaux",
+      "numerisable": false,
+      "remarque": "Barrage sur la photo du compteur du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Le zéro tout à gauche (avant le 3) et le zéro tout à droite (après le 8) sont barrés : 03060,580 = 3060,58. Les autres zéros ne peuvent pas être supprimés. Tout ou rien."
     },
     {
       "id": "ceb-2026-so-l8-q8b",
@@ -2327,6 +3003,34 @@
       ],
       "reponse": 3,
       "explication": "26 enfants payants → 1 adulte gratuit (on n'atteint pas 30). On paie 26 × 19 € et 2 adultes × 28 € : 494 + 56 = 550 €."
+    },
+    {
+      "id": "ceb-2026-so-l8-q12a",
+      "livret": 8,
+      "numero": "12a",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe ces droites. Écris sous quelle tache se trouve le nombre 4 600.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les droites graduées et les taches A à E du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "C (on accepte que la lettre C soit mise en évidence sur la droite numérique plutôt que recopiée)."
+    },
+    {
+      "id": "ceb-2026-so-l8-q12b",
+      "livret": 8,
+      "numero": "12b",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe ces droites. Coche le nombre qui est caché sous la tache E : 1 640, 1 840, 2 040 ou 2 400.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les droites graduées et la tache E du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "1 840 (0 si plusieurs cases cochées)."
     },
     {
       "id": "ceb-2026-so-l8-q13a",
@@ -2476,6 +3180,52 @@
       "explication": "Impairs : 123, 181, 159. Multiples de 3 (somme des chiffres divisible par 3) : 123 (6) et 159 (15). 181 (10) ne l'est pas."
     },
     {
+      "id": "ceb-2026-so-l8-q18",
+      "livret": 8,
+      "numero": "18",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Complète les opérations avec les signes qui conviennent : + , − , × , : , =",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "ma-egalites",
+      "texte": "54 {1} 27 {2} 27\n96 {3} 8 {4} 12\n20 {5} 34 {6} 10 {7} 4",
+      "reponse": [
+        [
+          "−",
+          "-",
+          "–"
+        ],
+        [
+          "="
+        ],
+        [
+          ":",
+          "÷",
+          "/"
+        ],
+        [
+          "="
+        ],
+        [
+          "="
+        ],
+        [
+          "−",
+          "-",
+          "–"
+        ],
+        [
+          "−",
+          "-",
+          "–"
+        ]
+      ],
+      "souple": true,
+      "explication": "54 − 27 = 27 ; 96 : 8 = 12 ; 20 = 34 − 10 − 4.",
+      "champsCourts": true
+    },
+    {
       "id": "ceb-2026-so-l8-q19",
       "livret": 8,
       "numero": "19",
@@ -2493,6 +3243,32 @@
       ],
       "reponse": 2,
       "explication": "Quotient × diviseur + reste = dividende : 72 × 63 + 3 = 4 536 + 3 = 4 539."
+    },
+    {
+      "id": "ceb-2026-so-l9-q1a",
+      "livret": 9,
+      "numero": "1a",
+      "domaine": "sc.matiere",
+      "type": "ouverte",
+      "enonce": "Observe le schéma d'un siphon. Coche les deux arrosoirs qui ne peuvent pas être remplis complètement.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question appuyée sur le schéma du siphon et sur les quatre arrosoirs du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Le 2e et le 3e arrosoirs (en partant de la gauche). 1 point par arrosoir ; −1 point par réponse excédentaire."
+    },
+    {
+      "id": "ceb-2026-so-l9-q1b",
+      "livret": 9,
+      "numero": "1b",
+      "domaine": "sc.matiere",
+      "type": "ouverte",
+      "enonce": "Observe les photos suivantes : une partie du tuyau a été cachée. Pour chaque photo, entoure le numéro (1, 2 ou 3) qui indique où arrive le niveau de l'eau.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "numerisable": false,
+      "remarque": "Question appuyée sur les deux photos du tuyau du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Première photo : le niveau 1. Deuxième photo : le niveau 3. 1 point par photo."
     },
     {
       "id": "ceb-2026-so-l9-q1c",
@@ -2523,6 +3299,123 @@
       "explication": "Dans des vases communicants, le liquide se répartit et atteint le même niveau dans tous les tubes, quelle que soit leur forme."
     },
     {
+      "id": "ceb-2026-so-l9-q2a1",
+      "livret": 9,
+      "numero": "2a (1/5)",
+      "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "Observe les cartes météorologiques. Coche chaque jour pour lequel cette information est exacte : « Le vent soufflera de 3 à 4 bf. »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi"
+      ],
+      "reponse": [
+        1,
+        2
+      ],
+      "explication": "Il faut lire les cartes jour par jour : mardi et mercredi."
+    },
+    {
+      "id": "ceb-2026-so-l9-q2a2",
+      "livret": 9,
+      "numero": "2a (2/5)",
+      "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "Observe les cartes météorologiques. Coche chaque jour pour lequel cette information est exacte : « Des chutes de neige sont attendues dans le sud du pays. »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi"
+      ],
+      "reponse": [
+        3
+      ],
+      "explication": "Il faut lire les cartes jour par jour : jeudi."
+    },
+    {
+      "id": "ceb-2026-so-l9-q2a3",
+      "livret": 9,
+      "numero": "2a (3/5)",
+      "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "Observe les cartes météorologiques. Coche chaque jour pour lequel cette information est exacte : « Les températures afficheront 8 °C à la côte. »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi"
+      ],
+      "reponse": [
+        0,
+        1
+      ],
+      "explication": "Il faut lire les cartes jour par jour : lundi et mardi."
+    },
+    {
+      "id": "ceb-2026-so-l9-q2a4",
+      "livret": 9,
+      "numero": "2a (4/5)",
+      "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "Observe les cartes météorologiques. Coche chaque jour pour lequel cette information est exacte : « Des giboulées de neige fondante sont prévues dans l'est de la Belgique. »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi"
+      ],
+      "reponse": [
+        1
+      ],
+      "explication": "Il faut lire les cartes jour par jour : mardi."
+    },
+    {
+      "id": "ceb-2026-so-l9-q2a5",
+      "livret": 9,
+      "numero": "2a (5/5)",
+      "domaine": "sc.energie",
+      "type": "qcm_multi",
+      "enonce": "Observe les cartes météorologiques. Coche chaque jour pour lequel cette information est exacte : « Un vent du nord soufflera sur la Belgique. »",
+      "points": 1,
+      "corrigeVerifie": true,
+      "documents": [
+        "meteo"
+      ],
+      "choix": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi"
+      ],
+      "reponse": [
+        3
+      ],
+      "explication": "Il faut lire les cartes jour par jour : jeudi."
+    },
+    {
       "id": "ceb-2026-so-l9-q2b",
       "livret": 9,
       "numero": "2b",
@@ -2548,6 +3441,20 @@
         5
       ],
       "explication": "Le bulletin parle de pluie, d'averses de pluie abondantes et de chutes de neige."
+    },
+    {
+      "id": "ceb-2026-so-l9-q3",
+      "livret": 9,
+      "numero": "3",
+      "domaine": "sc.vivant",
+      "type": "ouverte",
+      "enonce": "Entoure le nom d'un animal de ton choix (poule, cheval, chien, coccinelle ou abeille) puis coche, dans la clé de détermination, toutes les étiquettes qui caractérisent cet animal.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "sc-attributs",
+      "numerisable": false,
+      "remarque": "Question appuyée sur la clé de détermination du livret (étiquettes à cocher) que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "3 points : 1 par ligne qui caractérise l'animal choisi. Poule : yeux, bouche ; squelette interne ; 4 membres ; plumes. Cheval ou chien : yeux, bouche ; squelette interne ; 4 membres ; mamelles, poils, oreilles avec pavillon. Coccinelle : yeux, bouche ; squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; élytres. Abeille : yeux, bouche ; squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; constriction abdominale."
     },
     {
       "id": "ceb-2026-so-l9-q4a",
@@ -2580,6 +3487,20 @@
       "explication": "Le crâne fait partie du squelette (appareil locomoteur). Le cœur fait circuler le sang (appareil circulatoire). Le poumon sert à respirer (appareil respiratoire)."
     },
     {
+      "id": "ceb-2026-so-l9-q4b",
+      "livret": 9,
+      "numero": "4b",
+      "domaine": "sc.vivant",
+      "type": "ouverte",
+      "enonce": "Le chat possède un appareil digestif proche de celui de l'Homme. Pour chaque schéma, complète les étiquettes en choisissant parmi les noms d'organes : A le foie, B le côlon (gros intestin), C le pancréas, D l'intestin grêle, E l'estomac, F l'œsophage, G l'anus. Écris les lettres au bon endroit.",
+      "points": 4,
+      "corrigeVerifie": true,
+      "fiche": "sc-corps-humain",
+      "numerisable": false,
+      "remarque": "Question appuyée sur les deux schémas (chat et Homme) du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Chat : F (l'œsophage) et E (l'estomac) ; Homme : A (le foie) et E (l'estomac). Les étiquettes D (intestin grêle, chat), G (anus) et B (côlon, Homme) sont déjà placées. 1 point par lettre."
+    },
+    {
       "id": "ceb-2026-so-l9-q4c",
       "livret": 9,
       "numero": "4c",
@@ -2590,6 +3511,20 @@
       "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "reponseModele": "Le pigeon possède un jabot et un gésier, que l'Homme n'a pas."
+    },
+    {
+      "id": "ceb-2026-so-l9-q5",
+      "livret": 9,
+      "numero": "5",
+      "domaine": "sc.vivant",
+      "type": "ouverte",
+      "enonce": "Observe le schéma de l'aile du pigeon. Sur le schéma, colorie les différentes parties de l'aile de la chauve-souris en respectant la légende des couleurs : la main : rouge ; l'avant-bras : bleu ; le bras : noir ; l'épaule : jaune.",
+      "points": 4,
+      "corrigeVerifie": true,
+      "fiche": "sc-attributs",
+      "numerisable": false,
+      "remarque": "Coloriage sur les schémas d'ailes du livret que nous n'avons pas : gardé en mode papier.",
+      "reponseModele": "Les os de l'aile sont coloriés : la main en rouge, l'avant-bras en bleu, le bras en noir, l'épaule en jaune. 1 point par partie ; seul le coloriage des os est comptabilisé."
     },
     {
       "id": "ceb-2026-so-l9-q6a",
@@ -2647,6 +3582,20 @@
       "explication": "Le têtard devient grenouille ; la chenille devient papillon. Ce sont des métamorphoses."
     },
     {
+      "id": "ceb-2026-so-l9-q7a",
+      "livret": 9,
+      "numero": "7a",
+      "domaine": "sc.matiere",
+      "type": "ouverte",
+      "enonce": "Sur le schéma du cycle de l'eau, écris les mots suivants dans les étiquettes : ruissèlement, précipitations, infiltration, condensation, évaporation.",
+      "points": 5,
+      "corrigeVerifie": true,
+      "fiche": "sc-cycle-eau",
+      "numerisable": false,
+      "remarque": "Question appuyée sur le schéma du cycle de l'eau du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Condensation (au niveau du nuage), précipitations (la pluie qui tombe du nuage), évaporation (au-dessus de la mer), ruissèlement (sur la pente, vers la mer) et infiltration (dans le sol). 1 point par étiquette ; on ne sanctionne pas l'orthographe."
+    },
+    {
       "id": "ceb-2026-so-l9-q7b",
       "livret": 9,
       "numero": "7b",
@@ -2675,6 +3624,20 @@
       ],
       "souple": true,
       "explication": "L'eau peut être solide (glace, neige, grêle), liquide ou gazeuse (vapeur d'eau)."
+    },
+    {
+      "id": "ceb-2026-so-l9-q8",
+      "livret": 9,
+      "numero": "8",
+      "domaine": "sc.matiere",
+      "type": "ouverte",
+      "enonce": "Écris le nom de la forme météorologique de l'eau qui apparait sur chacune des photos (exemple : la grêle).",
+      "points": 4,
+      "corrigeVerifie": true,
+      "fiche": "sc-cycle-eau",
+      "numerisable": false,
+      "remarque": "Question appuyée sur quatre photos du livret que nous n'avons pas : gardée en mode papier.",
+      "reponseModele": "Nuage ; brume ou brouillard ; pluie ou averse ; neige. 1 point par photo."
     },
     {
       "id": "ceb-2026-so-l9-q9",
@@ -2823,6 +3786,35 @@
       "reponseModele": "Personne ne savait qu'elle était une espionne ; elle changeait souvent d'identité."
     },
     {
+      "id": "ceb-2026-so-l10-q6",
+      "livret": 10,
+      "numero": "6",
+      "domaine": "fr.grammaire",
+      "type": "trous",
+      "enonce": "Écris la classe du mot souligné pour chacune des phrases suivantes : « Gabrielle Petit prend des risques. » et « Elle effectue de petits métiers domestiques. »",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "fr-classes-mots",
+      "texte": "« Petit » (Gabrielle Petit prend des risques.) : {1}  ·  « petits » (de petits métiers domestiques) : {2}",
+      "reponse": [
+        [
+          "nom propre",
+          "nom (propre)",
+          "un nom propre",
+          "nom"
+        ],
+        [
+          "adjectif",
+          "adjectif qualificatif",
+          "adjectif (qualificatif)",
+          "un adjectif",
+          "un adjectif qualificatif"
+        ]
+      ],
+      "souple": true,
+      "explication": "« Petit » dans « Gabrielle Petit » est un nom propre (on n'écrit pas « nom de famille » : ce n'est pas une classe de mots). « petits » accompagne le nom « métiers » : c'est un adjectif (qualificatif)."
+    },
+    {
       "id": "ceb-2026-so-l10-q7",
       "livret": 10,
       "numero": "7",
@@ -2916,6 +3908,21 @@
       "reponseModele": "Des animaux ne parlent pas et ne vont pas au café."
     },
     {
+      "id": "ceb-2026-so-l10-q12",
+      "livret": 10,
+      "numero": "12",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Dans la BD, Nelson demande à Julie : « C'est quoi ta praline favorite ? » Dans quel but pose-t-il cette question ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "blagues"
+      ],
+      "reponseModele": "Toute idée liée au fait qu'il a l'intention de manger toutes les pralines sauf une. Exemples : « Afin de manger toutes les autres pralines. » ; « Pour ne lui en laisser qu'une seule. » On n'accepte pas « Pour lui laisser sa praline préférée » seul (il n'est pas mentionné qu'il mange toutes les autres)."
+    },
+    {
       "id": "ceb-2026-so-l10-q13",
       "livret": 10,
       "numero": "13",
@@ -2948,6 +3955,21 @@
       ],
       "souple": true,
       "explication": "« le » reprend « ce premier bulletin » (de Tom). Dans « Je le lui ai prêté », Tom parle de son ami : « lui » reprend « mon ami Colin »."
+    },
+    {
+      "id": "ceb-2026-so-l10-q14",
+      "livret": 10,
+      "numero": "14",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Dans la blague n° 1, pour quelle raison le père de Colin aurait-il peur ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "blagues"
+      ],
+      "reponseModele": "Toute idée liée au fait que les résultats du bulletin de Tom sont mauvais. Exemples : « Parce que le bulletin de Tom est catastrophique. » ; « Car il pensera que c'est Colin qui a eu de mauvaises notes alors que c'est Tom. »"
     },
     {
       "id": "ceb-2026-so-l10-q15a",

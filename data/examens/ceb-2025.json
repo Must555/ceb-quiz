@@ -520,7 +520,7 @@
    "domaine": "ma.geometrie",
    "type": "trous",
    "enonce": "Complète les propriétés et le nom précis de ces solides (exemple : le parallélépipède rectangle a 6 faces, 12 arêtes, 8 sommets).",
-   "points": 5,
+   "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
    "texte": "Solide à 5 faces, 8 arêtes et 5 sommets\nnom précis : {1}\n\nSolide dont les 6 faces sont des carrés\nfaces : {2}\narêtes : {3}\nsommets : {4}\nnom précis : {5}\n\nPrisme droit à base triangulaire\nfaces : {6}\narêtes : {7}\nsommets : {8}",
@@ -556,7 +556,8 @@
      "6"
     ]
    ],
-   "explication": "5 faces, 8 arêtes, 5 sommets : la pyramide à base carrée (écrire seulement « pyramide » ne suffit pas). Le cube a 6 faces, 12 arêtes, 8 sommets. Le prisme droit à base triangulaire a 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets. (Dans l'épreuve, il fallait aussi retrouver le numéro des solides sur un dessin.)"
+   "explication": "5 faces, 8 arêtes, 5 sommets : la pyramide à base carrée (écrire seulement « pyramide » ne suffit pas). Le cube a 6 faces, 12 arêtes, 8 sommets. Le prisme droit à base triangulaire a 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets.",
+   "remarque": "Dans l'épreuve (6 pts), il fallait aussi écrire le numéro de deux solides (5 et 7) sur un dessin du livret absent de nos images : ces 2 cases ne sont pas reprises."
   },
   {
    "id": "ceb-2025-l3-q10",
@@ -1305,8 +1306,11 @@
     "produire",
     "se distraire"
    ],
-   "reponse": 5,
-   "explication": "Jouer aux échecs est un loisir : se distraire. Le corrigé officiel accepte aussi « se vêtir » (on voit les vêtements de l'époque)."
+   "reponse": [
+    5,
+    3
+   ],
+   "explication": "Jouer aux échecs est un loisir : se distraire. Le corrigé officiel ne sanctionne pas « se vêtir » (on voit les vêtements de l'époque)."
   },
   {
    "id": "ceb-2025-l5-q2e",
@@ -1766,6 +1770,23 @@
    ],
    "reponse": 1,
    "explication": "Le hall d'accueil est en A1, tout en haut du plan ; l'Atomium est plus bas (en B2 – B3). Le nord étant vers le haut, l'Atomium est plutôt au sud."
+  },
+  {
+   "id": "ceb-2025-l5-q6c",
+   "livret": 5,
+   "numero": "6c",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Observe les quatre plans de l'Expo 58 (numérotés 1 à 4). Les sections étrangères sont représentées en noir sur le plan numéro… ; la section belge est représentée en noir sur le plan numéro…",
+   "points": 2,
+   "corrigeVerifie": true,
+   "documents": [
+    "expo-1",
+    "expo-2"
+   ],
+   "numerisable": false,
+   "remarque": "Les quatre plans numérotés 1 à 4 sont dans le livret, pas dans le portfolio : ils ne sont pas dans nos images, la question ne peut pas être jouée à l'écran.",
+   "reponseModele": "Sections étrangères : plan n° 4. Section belge : plan n° 1 (1 point par réponse)."
   },
   {
    "id": "ceb-2025-l5-q6d",
@@ -2415,7 +2436,13 @@
     "mille-trente-sept unités douze centièmes",
     "mille trente-sept unités douze centièmes",
     "mille trente sept unités douze centièmes",
-    "mille-trente-sept unités et douze centièmes"
+    "mille-trente-sept unités et douze centièmes",
+    "mille-trente-sept douze centièmes",
+    "mille trente-sept douze centièmes",
+    "mille trente sept douze centièmes",
+    "mille-trente-sept et douze centièmes",
+    "mille trente-sept unités et douze centièmes",
+    "mille trente sept unités et douze centièmes"
    ],
    "explication": "1 037 unités et 12 centièmes : mille-trente-sept unités douze centièmes. On n'écrit pas « virgule » : on nomme les unités et les centièmes."
   },
@@ -3141,25 +3168,24 @@
      "leur",
      "les",
      "eux",
-     "qu'",
-     "que"
+     "qu'"
     ],
     [
+     "ils",
      "mammifères",
      "ces mammifères",
      "mammifere",
      "ces mammiferes",
-     "ils",
      "leur",
      "les",
      "eux",
-     "qu'",
-     "que"
+     "qu'"
     ]
    ],
    "explication": "L'auteure désigne les éléphants par « ces mammifères » et par des pronoms : ils, leur, les, eux, qu'.",
    "souple": true,
-   "texte": "1er mot : {1}\n2e mot : {2}"
+   "texte": "1er mot : {1}\n2e mot : {2}",
+   "differentes": true
   },
   {
    "id": "ceb-2025-l8-q18",

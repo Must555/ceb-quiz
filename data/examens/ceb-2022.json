@@ -282,7 +282,7 @@
    "page": 31,
    "titre": "Crée ton carré potager",
    "fichier": "assets/2022/pdf31.webp",
-   "alt": "Bac carré de 1 m de côté, terreau sur 20 cm, fraisiers plantés tous les 20 cm à 20 cm des bords."
+   "alt": "Bac carré de 1 m de côté et de 20 cm de hauteur, sac de terreau de 40 L, jeune plant de fraisier qui occupe un carré de 20 cm de côté."
   },
   {
    "id": "bonheur-1",
@@ -331,8 +331,8 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Combien de faces de chaque type faut-il pour construire ces solides ?",
-   "points": 4,
+   "enonce": "Combien de faces de chaque type faut-il pour construire ces solides ? (Cube, prisme droit à base hexagonale, pyramide à base carrée.)",
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
    "texte": "Cube : {1} carrés  ·  Prisme droit à base hexagonale : {2} hexagones et {3} rectangles  ·  Pyramide à base carrée : {4} carré et {5} triangles",
@@ -353,7 +353,29 @@
      "4"
     ]
    ],
-   "explication": "Le cube a 6 faces carrées. Le prisme hexagonal : 2 bases hexagonales et 6 faces latérales. La pyramide : 1 base carrée et 4 triangles. (Dans l'épreuve, il fallait aussi compléter le parallélépipède rectangle : 2 carrés et 4 rectangles, ou 6 rectangles.)"
+   "explication": "Le cube a 6 faces carrées. Le prisme hexagonal : 2 bases hexagonales et 6 faces latérales rectangulaires. La pyramide : 1 base carrée et 4 triangles."
+  },
+  {
+   "id": "ceb-2022-l3-q4p",
+   "livret": 3,
+   "numero": "4",
+   "domaine": "ma.geometrie",
+   "type": "texte_court",
+   "enonce": "Quelles faces faut-il pour construire un parallélépipède rectangle ? (Écris le nombre de faces de chaque type.)",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "souple": true,
+   "reponse": [
+    "2 carrés et 4 rectangles",
+    "4 rectangles et 2 carrés",
+    "2 carrés + 4 rectangles",
+    "4 rectangles + 2 carrés",
+    "2 carrés, 4 rectangles",
+    "4 rectangles, 2 carrés",
+    "6 rectangles"
+   ],
+   "explication": "Deux possibilités : 2 carrés et 4 rectangles (si deux faces sont des carrés), ou 6 rectangles."
   },
   {
    "id": "ceb-2022-l3-q13",
@@ -419,6 +441,19 @@
    "points": 3,
    "corrigeVerifie": false,
    "numerisable": false
+  },
+  {
+   "id": "ceb-2022-l3-q2d",
+   "livret": 3,
+   "numero": "2d",
+   "domaine": "ma.geometrie",
+   "type": "ouverte",
+   "enonce": "L'espace intérieur délimité par ces réglettes ne forme pas un polygone. Écris ce qui justifie cette affirmation.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "remarque": "Question appuyée sur une figure du livret (assemblage de réglettes) que nous n'avons pas : gardée en mode papier.",
+   "reponseModele": "Tous les côtés ne sont pas tracés à la latte / il y a un côté arrondi / un côté n'est pas droit."
   },
   {
    "id": "ceb-2022-l3-q3",
@@ -1274,14 +1309,14 @@
    "numero": "8a",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Tableau des pays organisateurs du Festival olympique de la jeunesse européenne (1991 : Belgique ; 1993 et 2013 : Pays-Bas ; 2022 : Slovaquie…).",
+   "enonce": "Grâce au tableau « Pays organisateurs » du portfolio, retrouve ces pays du Festival olympique de la jeunesse européenne.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "festival"
    ],
-   "texte": "Premier pays organisateur : {1}  ·  Pays organisateur en 2022 : {2}  ·  Pays qui l'a organisé deux fois : {3}",
+   "texte": "Premier pays organisateur : {1}  ·  Pays qui organise le festival cette année (2022) : {2}  ·  Pays qui l'a organisé deux fois depuis sa création : {3}",
    "reponse": [
     [
      "Belgique",
@@ -1297,7 +1332,8 @@
      "Pays Bas"
     ]
    ],
-   "explication": "Belgique en 1991, Slovaquie en 2022, Pays-Bas en 1993 et 2013."
+   "explication": "Belgique en 1991, Slovaquie en 2022, Pays-Bas en 1993 et 2013.",
+   "remarque": "Dans l'épreuve, l'élève repasse les frontières de ces trois pays sur une carte ; ici il écrit leur nom."
   },
   {
    "id": "ceb-2022-l5-q8b",
@@ -1359,8 +1395,8 @@
    "livret": 5,
    "numero": "9a1",
    "domaine": "hg.geographie",
-   "type": "qcm_multi",
-   "enonce": "Sur la carte, le milieu n°5 est une forêt en Russie (au-delà de l'Oural) et le n°8 une forêt en Amérique du Sud. Coche les continents.",
+   "type": "grille",
+   "enonce": "Situe les milieux naturels n°5 et n°8 illustrés dans le portfolio. Coche le continent de chacun.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -1368,19 +1404,26 @@
     "milieux-1",
     "milieux-2"
    ],
-   "choix": [
+   "reponse": [
+    [
+     3,
+     4
+    ],
+    1
+   ],
+   "explication": "Le n°5 est une forêt de Russie : le corrigé accepte l'Europe ou l'Asie. Le n°8 est une forêt d'Amérique du Sud : Amérique.",
+   "lignes": [
+    "Milieu naturel n°5",
+    "Milieu naturel n°8"
+   ],
+   "colonnes": [
     "Afrique",
     "Amérique",
     "Antarctique",
     "Asie",
     "Europe",
     "Océanie"
-   ],
-   "reponse": [
-    1,
-    3
-   ],
-   "explication": "Le n°5 est en Asie, le n°8 en Amérique."
+   ]
   },
   {
    "id": "ceb-2022-l5-q9a2",
@@ -1388,7 +1431,7 @@
    "numero": "9a2",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Le milieu n°6 est un désert en Australie et le n°7 un désert au sud-ouest de l'Afrique. Coche les continents.",
+   "enonce": "Situe les milieux naturels n°6 et n°7 illustrés dans le portfolio. Coche les continents.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -1825,7 +1868,7 @@
    "numero": "11b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Observe le schéma du carré potager (bac carré de 1 m de côté) : chaque jeune plant de fraisier a besoin d'un carré de 20 cm de côté. Combien de fraisiers peut-on planter dans ce bac ?",
+   "enonce": "Dans ce même bac à base carrée (1 m de côté), le jardinier souhaite planter des fraisiers en respectant les instructions du portfolio : chaque jeune plant occupe un carré de 20 cm de côté. Combien de fraisiers peut-il planter dans le bac ?",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -1936,7 +1979,7 @@
   {
    "id": "ceb-2022-l6-q17",
    "livret": 6,
-   "numero": "17",
+   "numero": "17a",
    "domaine": "ma.grandeurs",
    "type": "trous",
    "enonce": "Une feuille A3 vaut la moitié d'une A2, une A4 la moitié d'une A3, une A5 la moitié d'une A4. Complète par une fraction.",
@@ -1958,6 +2001,141 @@
     ]
    ],
    "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Donc A4 = 1/4 de A2 ; 2 A5 = 1 A4 = 1/2 de A3 ; 3 A5 = 3/8 de A2."
+  },
+  {
+   "id": "ceb-2022-l6-q17b",
+   "livret": 6,
+   "numero": "17b",
+   "domaine": "ma.grandeurs",
+   "type": "texte_court",
+   "enonce": "Tu dois recouvrir complètement une feuille A2 avec des feuilles de 2 formats différents. Écris une composition possible, sur le modèle « 2 A3 et 5 A5 » (nombre de feuilles de chaque format).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "souple": true,
+   "reponse": [
+    "1 A3 et 2 A4",
+    "1 feuille A3 et 2 feuille A4",
+    "1 feuille A3 et 2 feuilles A4",
+    "1 feuille(s) A3 et 2 feuille(s) A4",
+    "1 A3 + 2 A4",
+    "1 feuille A3 + 2 feuille A4",
+    "1 feuille A3 + 2 feuilles A4",
+    "1 feuille(s) A3 + 2 feuille(s) A4",
+    "1 A3, 2 A4",
+    "1 feuille A3, 2 feuille A4",
+    "1 feuille A3, 2 feuilles A4",
+    "1 feuille(s) A3, 2 feuille(s) A4",
+    "2 A4 et 1 A3",
+    "2 feuille A4 et 1 feuille A3",
+    "2 feuilles A4 et 1 feuille A3",
+    "2 feuille(s) A4 et 1 feuille(s) A3",
+    "2 A4 + 1 A3",
+    "2 feuille A4 + 1 feuille A3",
+    "2 feuilles A4 + 1 feuille A3",
+    "2 feuille(s) A4 + 1 feuille(s) A3",
+    "2 A4, 1 A3",
+    "2 feuille A4, 1 feuille A3",
+    "2 feuilles A4, 1 feuille A3",
+    "2 feuille(s) A4, 1 feuille(s) A3",
+    "1 A3 et 4 A5",
+    "1 feuille A3 et 4 feuille A5",
+    "1 feuille A3 et 4 feuilles A5",
+    "1 feuille(s) A3 et 4 feuille(s) A5",
+    "1 A3 + 4 A5",
+    "1 feuille A3 + 4 feuille A5",
+    "1 feuille A3 + 4 feuilles A5",
+    "1 feuille(s) A3 + 4 feuille(s) A5",
+    "1 A3, 4 A5",
+    "1 feuille A3, 4 feuille A5",
+    "1 feuille A3, 4 feuilles A5",
+    "1 feuille(s) A3, 4 feuille(s) A5",
+    "4 A5 et 1 A3",
+    "4 feuille A5 et 1 feuille A3",
+    "4 feuilles A5 et 1 feuille A3",
+    "4 feuille(s) A5 et 1 feuille(s) A3",
+    "4 A5 + 1 A3",
+    "4 feuille A5 + 1 feuille A3",
+    "4 feuilles A5 + 1 feuille A3",
+    "4 feuille(s) A5 + 1 feuille(s) A3",
+    "4 A5, 1 A3",
+    "4 feuille A5, 1 feuille A3",
+    "4 feuilles A5, 1 feuille A3",
+    "4 feuille(s) A5, 1 feuille(s) A3",
+    "1 A4 et 6 A5",
+    "1 feuille A4 et 6 feuille A5",
+    "1 feuille A4 et 6 feuilles A5",
+    "1 feuille(s) A4 et 6 feuille(s) A5",
+    "1 A4 + 6 A5",
+    "1 feuille A4 + 6 feuille A5",
+    "1 feuille A4 + 6 feuilles A5",
+    "1 feuille(s) A4 + 6 feuille(s) A5",
+    "1 A4, 6 A5",
+    "1 feuille A4, 6 feuille A5",
+    "1 feuille A4, 6 feuilles A5",
+    "1 feuille(s) A4, 6 feuille(s) A5",
+    "6 A5 et 1 A4",
+    "6 feuille A5 et 1 feuille A4",
+    "6 feuilles A5 et 1 feuille A4",
+    "6 feuille(s) A5 et 1 feuille(s) A4",
+    "6 A5 + 1 A4",
+    "6 feuille A5 + 1 feuille A4",
+    "6 feuilles A5 + 1 feuille A4",
+    "6 feuille(s) A5 + 1 feuille(s) A4",
+    "6 A5, 1 A4",
+    "6 feuille A5, 1 feuille A4",
+    "6 feuilles A5, 1 feuille A4",
+    "6 feuille(s) A5, 1 feuille(s) A4",
+    "2 A4 et 4 A5",
+    "2 feuille A4 et 4 feuille A5",
+    "2 feuilles A4 et 4 feuilles A5",
+    "2 feuille(s) A4 et 4 feuille(s) A5",
+    "2 A4 + 4 A5",
+    "2 feuille A4 + 4 feuille A5",
+    "2 feuilles A4 + 4 feuilles A5",
+    "2 feuille(s) A4 + 4 feuille(s) A5",
+    "2 A4, 4 A5",
+    "2 feuille A4, 4 feuille A5",
+    "2 feuilles A4, 4 feuilles A5",
+    "2 feuille(s) A4, 4 feuille(s) A5",
+    "4 A5 et 2 A4",
+    "4 feuille A5 et 2 feuille A4",
+    "4 feuilles A5 et 2 feuilles A4",
+    "4 feuille(s) A5 et 2 feuille(s) A4",
+    "4 A5 + 2 A4",
+    "4 feuille A5 + 2 feuille A4",
+    "4 feuilles A5 + 2 feuilles A4",
+    "4 feuille(s) A5 + 2 feuille(s) A4",
+    "4 A5, 2 A4",
+    "4 feuille A5, 2 feuille A4",
+    "4 feuilles A5, 2 feuilles A4",
+    "4 feuille(s) A5, 2 feuille(s) A4",
+    "3 A4 et 2 A5",
+    "3 feuille A4 et 2 feuille A5",
+    "3 feuilles A4 et 2 feuilles A5",
+    "3 feuille(s) A4 et 2 feuille(s) A5",
+    "3 A4 + 2 A5",
+    "3 feuille A4 + 2 feuille A5",
+    "3 feuilles A4 + 2 feuilles A5",
+    "3 feuille(s) A4 + 2 feuille(s) A5",
+    "3 A4, 2 A5",
+    "3 feuille A4, 2 feuille A5",
+    "3 feuilles A4, 2 feuilles A5",
+    "3 feuille(s) A4, 2 feuille(s) A5",
+    "2 A5 et 3 A4",
+    "2 feuille A5 et 3 feuille A4",
+    "2 feuilles A5 et 3 feuilles A4",
+    "2 feuille(s) A5 et 3 feuille(s) A4",
+    "2 A5 + 3 A4",
+    "2 feuille A5 + 3 feuille A4",
+    "2 feuilles A5 + 3 feuilles A4",
+    "2 feuille(s) A5 + 3 feuille(s) A4",
+    "2 A5, 3 A4",
+    "2 feuille A5, 3 feuille A4",
+    "2 feuilles A5, 3 feuilles A4",
+    "2 feuille(s) A5, 3 feuille(s) A4"
+   ],
+   "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Par exemple : 1 A3 et 2 A4 (4 + 4 = 8 A5), ou 1 A3 et 4 A5, ou 1 A4 et 6 A5, ou 2 A4 et 4 A5, ou 3 A4 et 2 A5."
   },
   {
    "id": "ceb-2022-l6-q18",
@@ -3122,12 +3300,12 @@
    "numero": "22",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "Pour effectuer 1 369,8 : 0,45, on transforme le diviseur en 45. Quel dividende faut-il écrire pour garder le même quotient ?",
+   "enonce": "Voici une division écrite : 13 698 : 4,5. Pour l'effectuer, on transforme le diviseur en 45. Quel dividende faut-il écrire pour que les quotients des deux opérations soient équivalents ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
    "reponse": 136980,
-   "explication": "Pour passer de 0,45 à 45, on multiplie par 100. On multiplie donc aussi le dividende par 100 : 1 369,8 × 100 = 136 980."
+   "explication": "Pour passer de 4,5 à 45, on multiplie le diviseur par 10. On multiplie donc aussi le dividende par 10 : 13 698 × 10 = 136 980."
   },
   {
    "id": "ceb-2022-l8-q23",
@@ -3336,22 +3514,20 @@
    "numero": "2b",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Écris le nom de l'appareil auquel appartient chaque organe.",
+   "enonce": "Écris le nom de l'appareil correspondant à la partie du corps indiquée sur chaque illustration (un poisson et un squelette de lapin).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
-   "texte": "Le cœur : appareil {1}  ·  Le crâne : appareil {2}",
+   "texte": "Le cœur du poisson : l'appareil {1}  ·  Le crâne du lapin : l'appareil {2}",
    "reponse": [
     [
      "circulatoire"
     ],
     [
-     "locomoteur",
-     "squelettique",
-     "osseux"
+     "locomoteur"
     ]
    ],
-   "explication": "Le cœur appartient à l'appareil circulatoire ; le crâne est un os du squelette (appareil locomoteur)."
+   "explication": "Le cœur appartient à l'appareil circulatoire ; le crâne fait partie du squelette, appareil locomoteur."
   },
   {
    "id": "ceb-2022-l9-q4c",
@@ -3359,7 +3535,7 @@
    "numero": "4c",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Clé de détermination : quelle couleur de fleurs ont ces plantes du littoral ?",
+   "enonce": "Clé de détermination : dans quelle branche de la couleur des fleurs se place chaque plante du littoral ? (Aide-toi des pages sur la flore et sur la clé du portfolio.)",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -3368,22 +3544,23 @@
     "cle"
    ],
    "lignes": [
-    "Chou marin (fleurs blanches de quatre pétales)",
-    "Laiche des sables (épis lâches)",
-    "Oyat (épis très serrés)"
+    "Chou marin",
+    "Laiche des sables",
+    "Oyat"
    ],
    "colonnes": [
     "blanches",
     "roses",
     "jaunes",
-    "autres (épis)"
+    "autres"
    ],
    "reponse": [
     0,
     3,
     3
    ],
-   "explication": "Le chou marin a des fleurs blanches à 4 pétales. La laiche et l'oyat ont des fleurs en épis (« autres »)."
+   "explication": "Le chou marin a des fleurs blanches à 4 pétales. La laiche des sables et l'oyat ont des fleurs en épis : ils se rangent dans « autres ».",
+   "remarque": "Dans l'épreuve, l'élève écrit le nom de chaque plante dans les cadres de la clé circulaire (la bette maritime ne doit pas être sanctionnée) ; ici il choisit la branche."
   },
   {
    "id": "ceb-2022-l9-q4d",
@@ -3391,7 +3568,7 @@
    "numero": "4d",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Liseron des dunes (grandes fleurs roses en forme d'entonnoir, feuilles arrondies). Coche ses trois caractéristiques d'après la clé.",
+   "enonce": "Liseron des dunes (milieu : premières dunes). Coche ses trois caractéristiques d'après la clé de détermination du portfolio.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -3420,28 +3597,39 @@
    "numero": "6b",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Graphique Natagora 2021 des oiseaux les plus observés.",
-   "points": 2,
+   "enonce": "Graphique Natagora 2021 des oiseaux les plus observés : transfère les données du graphique circulaire dans le graphique en bâtonnets, puis nomme deux oiseaux (un bâtonnet mesure 6 % et un autre 20 %).",
+   "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "oiseaux-2"
    ],
-   "texte": "Moineau domestique : {1} %  ·  Mésange bleue : {2} %",
+   "texte": "Moineau domestique : {1} %  ·  Mésange bleue : {2} %  ·  Oiseau du bâtonnet de 6 % : {3}  ·  Oiseau du bâtonnet de 20 % : {4}",
    "reponse": [
     [
      "32"
     ],
     [
      "16"
+    ],
+    [
+     "rougegorge",
+     "le rougegorge"
+    ],
+    [
+     "mésange charbonnière",
+     "mesange charbonniere",
+     "la mésange charbonnière"
     ]
    ],
-   "explication": "Le moineau domestique (vert) : 32 % ; la mésange bleue (rose) : 16 %. (Dans l'épreuve, il fallait aussi écrire le nom de deux oiseaux : le rougegorge et la mésange charbonnière.)"
+   "explication": "Le moineau domestique (vert) : 32 % ; la mésange bleue (rose) : 16 %. 6 % : le rougegorge (orange) ; 20 % : la mésange charbonnière (brun).",
+   "souple": true,
+   "remarque": "Dans l'épreuve, l'élève trace les bâtonnets du moineau (jusque 32) et de la mésange bleue (jusque 16) ; ici il écrit les valeurs."
   },
   {
    "id": "ceb-2022-l9-q7c",
    "livret": 9,
-   "numero": "7c",
+   "numero": "7c1",
    "domaine": "sc.energie",
    "type": "qcm",
    "enonce": "Prévisions : samedi littoral 1/4 °C, centre 1/3 °C, sud −3/−1 °C ; dimanche 8/11, 12/15, 3/9 °C ; lundi 12/15, 14/16, 6/10 °C. Quel jour les températures varieront-elles de 3 à 15 degrés ?",
@@ -3454,7 +3642,7 @@
     "Lundi"
    ],
    "reponse": 1,
-   "explication": "Dimanche : de 3 °C (sud) à 15 °C (centre). (Dans l'épreuve, deux autres prévisions étaient demandées : « nébulosité variable et orages » → dimanche ; « brumes matinales puis temps sec » → lundi.)"
+   "explication": "Dimanche : de 3 °C (sud) à 15 °C (centre)."
   },
   {
    "id": "ceb-2022-l9-q7d",
@@ -3498,12 +3686,35 @@
    "texte": "L'état {1}\nL'état {2}"
   },
   {
+   "id": "ceb-2022-l9-q7e1",
+   "livret": 9,
+   "numero": "7e1",
+   "domaine": "sc.matiere",
+   "type": "trous",
+   "enonce": "Observe les deux photos : après une averse, une table de jardin est recouverte d'eau ; plus tard dans la journée, elle est sèche alors qu'elle n'a pas été essuyée. Écris le nom des états de l'eau observés.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "souple": true,
+   "texte": "L'eau est passée de l'état {1} à l'état {2}.",
+   "reponse": [
+    [
+     "liquide"
+    ],
+    [
+     "gazeux",
+     "gazeuse"
+    ]
+   ],
+   "explication": "L'eau de la table est liquide ; en séchant, elle devient de la vapeur d'eau, c'est-à-dire de l'eau à l'état gazeux."
+  },
+  {
    "id": "ceb-2022-l9-q7e",
    "livret": 9,
-   "numero": "7e",
+   "numero": "7e2",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Après une averse, une table de jardin est couverte d'eau. Plus tard, elle est sèche sans avoir été essuyée. Quel changement d'état ?",
+   "enonce": "Observe les deux photos : après une averse, une table de jardin est recouverte d'eau ; plus tard dans la journée, elle est sèche alors qu'elle n'a pas été essuyée. Coche le nom du changement d'état observé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -3513,7 +3724,7 @@
     "Évaporation"
    ],
    "reponse": 2,
-   "explication": "L'eau liquide est passée à l'état gazeux : évaporation. L'eau passe de l'état liquide à l'état gazeux."
+   "explication": "L'eau liquide est devenue de la vapeur d'eau, sans que la table soit essuyée : c'est l'évaporation."
   },
   {
    "id": "ceb-2022-l9-q8a",
@@ -3761,6 +3972,19 @@
    "numerisable": false
   },
   {
+   "id": "ceb-2022-l9-q4b",
+   "livret": 9,
+   "numero": "4b",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "À l'aide du tableau des attributs (A oursin, B troque, C coque), écris la lettre sous l'illustration de chaque animal.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "remarque": "Les trois photos (livret) ne sont pas dans nos documents : gardée en mode papier. Tout ou rien.",
+   "reponseModele": "Coques : C ; oursin : A ; bigorneau : B."
+  },
+  {
    "id": "ceb-2022-l9-q5",
    "livret": 9,
    "numero": "5",
@@ -3809,6 +4033,32 @@
    "points": 3,
    "corrigeVerifie": false,
    "numerisable": false
+  },
+  {
+   "id": "ceb-2022-l9-q7c2",
+   "livret": 9,
+   "numero": "7c2",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "La nébulosité sera variable et des orages secoueront certaines régions du pays. À quel jour (samedi, dimanche ou lundi) correspond cette prévision ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "remarque": "Il faut lire les icônes du tableau de prévisions de l'IRM (livret), que nous n'avons pas : gardée en mode papier.",
+   "reponseModele": "Dimanche."
+  },
+  {
+   "id": "ceb-2022-l9-q7c3",
+   "livret": 9,
+   "numero": "7c3",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Après quelques brumes matinales, le temps sera généralement sec sur tout le pays. À quel jour (samedi, dimanche ou lundi) correspond cette prévision ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "remarque": "Il faut lire les icônes du tableau de prévisions de l'IRM (livret), que nous n'avons pas : gardée en mode papier.",
+   "reponseModele": "Lundi."
   },
   {
    "id": "ceb-2022-l9-q10c",
