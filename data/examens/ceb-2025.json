@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2025",
  "source": "FWB, épreuve externe commune 2025 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2025-06-23",
    "points": 20,
    "audio": null,
-   "duree": 40
+   "duree": 40,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -312,9 +313,411 @@
    "titre": "Une bonne idée (3)",
    "fichier": "assets/2025/pdf34.webp",
    "alt": "Le charretier, la princesse et la fin du conte. Kamel Benaouda, Une bonne idée, Gallimard Jeunesse, 2020."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Graine de scientifique : être astronaute, le témoignage de Florence Poutriquet (podcast)",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Au printemps 2021, l’Agence spatiale européenne a annoncé une nouvelle promotion d’astronautes. Elle a donc lancé un appel à candidatures auprès de tous les Européens. Pour poser sa candidature, il fallait tout simplement être ingénieur, médecin, pilote ou scientifique ; avoir moins de 50 ans et 3 ans d’expérience dans le monde du travail. C’est ainsi que de très nombreuses personnes en Europe ont eu le droit de postuler."
+    },
+    {
+     "lecteur": 1,
+     "texte": "J’ai moi-même postulé pour être astronaute et, même si je n’ai pas été retenue, ce fut une aventure extraordinaire."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pour poser sa candidature, la toute première étape consistait à aller chez un médecin pour vérifier que l’on était suffisamment en forme. Ensuite, il fallait aller sur Internet et s’inscrire."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Vers la fin du mois de juin 2021, l’Agence spatiale européenne a annoncé qu’il y avait environ 23 000 candidats et candidates pour ne retenir que 6 astronautes à la fin ! Je dois t’avouer qu’à ce moment-là, je me suis dit que c’était chouette d’avoir posé ma candidature. Au moins, j’aurais rêvé quelques mois."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Mais quelle ne fut pas ma surprise quand, durant l’été 2021, j’ai reçu un mail m’annonçant que j’étais invitée à passer les premiers tests. Seulement 6 candidats sur 100 étaient invités à ces tests-là. C’est très sélectif."
+    },
+    {
+     "lecteur": 1,
+     "texte": "J’ai donc pris l’avion pour aller en Allemagne, à Hambourg, passer des tests un peu comme ceux des pilotes de ligne. Toute la journée, j’ai réalisé des tests de maths, de physique, des tests en anglais, des tests un peu bizarres, des questions sur moi-même, et cetera. J’ai rencontré des hommes et des femmes qui venaient de toute l’Europe ce jour-là. Puis, comme cela s’étendait sur de nombreux mois, j’ai attendu très longtemps mes résultats. J’ignorais si j’avais réussi ou pas. Comme on est comparés les uns aux autres, c’est difficile de savoir…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Mais au mois de janvier 2022, j’ai appris que j’avais réussi et que je passais à l’étape suivante. Je ne te raconte pas la danse de la joie dans mon salon ! Je faisais partie des 400 finalistes. 400 sur 23 000, c’était juste incroyable pour moi !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "L’étape suivante consistait en une évaluation psychologique. C’est une étape très importante de la sélection, car elle permet à l’Agence spatiale de s’assurer que les astronautes pourront vivre ensemble dans l’espace et qu’ils seront capables de rester calmes si une situation devenait très dangereuse. Eh oui… L’espace est un environnement très complexe. Il faut des gens capables de maitriser leurs nerfs et leurs émotions pour pouvoir gérer des situations difficiles. J’ai donc pris le train, fin janvier, pour aller à nouveau en Allemagne au Centre européen des astronautes. Il se situe à Cologne. Durant cette journée, j’ai rencontré des psychologues, des astronautes et des personnes des ressources humaines qui m’ont interrogée sur les raisons qui me poussaient à devenir astronaute. Ils ont testé mes capacités à rester calme dans des moments très stressants. Je n’ai pas trop le droit de raconter ce qui s’est passé exactement, mais sache que c’était une journée très intense où j’ai appris beaucoup sur moi-même."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Puis, c’est reparti pour plusieurs mois d’attente. À la fin du mois de mars, j’ai reçu le mail que j’attendais tant : « Bravo, vous avez réussi l’évaluation psychologique ! »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Je ne sais pas si tu te rends compte ! Ça voulait dire que j’avais réussi l’évaluation technique et l’évaluation psychologique. L’Agence spatiale considérait que je pourrais être astronaute un jour. Seules 90 personnes en Europe étaient arrivées à cette étape-là. Je dois t’avouer que c’était tellement improbable que je n’en revenais pas moi-même. Quelle fierté !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "La nouvelle étape, c’était l’évaluation médicale. Une semaine complète de tests médicaux au cours de laquelle on a examiné mon corps sous toutes les coutures. J’ai partagé cette aventure avec sept autres personnes venues de toute l’Europe."
+    },
+    {
+     "lecteur": 1,
+     "texte": "En ce qui me concerne, au mois de septembre, j’ai appris que j’étais éliminée. Je ne sais pas bien pourquoi, mais je suppose que ma vue n’était pas suffisamment bonne."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Les derniers candidats restants, une quarantaine, ont dû passer encore deux entretiens au cours desquels ils ont été testés afin de voir pourquoi ils voulaient devenir astronautes."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Finalement, dix-sept personnes ont été sélectionnées :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "\u0007cinq, dont la Française Sophie Adenot et le Belge Raphaël Liégeois, pour devenir des astronautes de carrière ;"
+    },
+    {
+     "lecteur": 1,
+     "texte": "\u0007un pour être ce que l’Agence spatiale européenne appelle un parastronaute, c’est-à-dire un astronaute avec un handicap ;"
+    },
+    {
+     "lecteur": 1,
+     "texte": "\u0007et onze personnes pour constituer une réserve d’astronautes qui ne sont appelés par l’Agence que si l’on a besoin d’eux."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pour conclure cet épisode, je crois qu’il est important que tu réalises qu’il faut croire en ses rêves. Quand j’étais petite, je voulais être astronaute et jamais je n’aurais imaginé qu’un jour, je mettrais les pieds dans les locaux du Centre européen des astronautes. Pourtant, grâce à cette candidature, j’ai pu rencontrer des astronautes comme Thomas Pesquet, Franck De Winne et d’autres encore. J’ai pu visiter le Centre européen des astronautes, entrer dans un module de la station spatiale, rencontrer des personnes extraordinaires venues de toute l’Europe… Bref, c’était une aventure exceptionnelle à vivre et je ne regrette rien."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Je suis très heureuse d’avoir partagé mon aventure avec toi."
+    },
+    {
+     "lecteur": 1,
+     "texte": "À très bientôt pour un nouvel épisode de Graine de scientifique, le podcast des petits curieux."
+    }
+   ],
+   "source": "Correctif officiel CEB 2025, support du Savoir écouter"
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2025-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Ce que tu viens d'entendre est…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "un compte rendu d'une sélection pour devenir astronaute.",
+    "un exposé sur le recrutement des astronautes.",
+    "une interview d'une scientifique qui espérait être astronaute.",
+    "un témoignage d'une candidate astronaute."
+   ],
+   "reponse": 3,
+   "explication": "Florence Poutriquet raconte à la première personne (« je ») ce qu'elle a vécu : c'est un témoignage."
+  },
+  {
+   "id": "ceb-2025-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'information est-elle donnée dans le podcast ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Le pays où se situe le Centre européen des astronautes",
+    "Le nombre de femmes sélectionnées pour être astronaute"
+   ],
+   "colonnes": [
+    "L'information est donnée",
+    "L'information n'est pas donnée"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "Le Centre européen des astronautes est en Allemagne, à Cologne. Mais on ne dit jamais combien de femmes ont été sélectionnées."
+  },
+  {
+   "id": "ceb-2025-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Qu'a appris Florence Poutriquet au cours de sa journée d'évaluation psychologique ? Elle a appris…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "à vaincre sa peur.",
+    "à découvrir qui elle est.",
+    "à repérer les pièges dans les questions.",
+    "à mieux connaitre les autres candidats."
+   ],
+   "reponse": 1,
+   "explication": "Elle dit avoir « appris beaucoup sur elle-même » durant cette journée."
+  },
+  {
+   "id": "ceb-2025-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Florence Poutriquet cite des expériences qu'elle a eu la chance de vivre. Coche l'expérience qu'elle ne cite pas.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Se rendre au Centre européen des astronautes.",
+    "Rencontrer des astronautes.",
+    "Vivre une journée dans l'espace.",
+    "Découvrir d'autres candidats européens.",
+    "Entrer dans un module de la station spatiale."
+   ],
+   "reponse": 2,
+   "explication": "Elle est allée au Centre, a rencontré des astronautes, a visité un module de la station et a rencontré des candidats. Mais elle n'a pas passé de journée dans l'espace."
+  },
+  {
+   "id": "ceb-2025-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici cinq moments du parcours de sélection racontés par Florence Poutriquet. Remets-les dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Subir des tests médicaux au Centre européen des astronautes.",
+    "Présenter des épreuves de connaissances techniques (maths, physique, anglais…).",
+    "Se rendre chez le médecin pour vérifier son état de forme.",
+    "Passer une évaluation psychologique.",
+    "S'inscrire sur Internet."
+   ],
+   "reponse": [
+    2,
+    4,
+    1,
+    3,
+    0
+   ],
+   "explication": "D'abord le médecin, puis l'inscription sur Internet, les épreuves techniques, l'évaluation psychologique et enfin les tests médicaux."
+  },
+  {
+   "id": "ceb-2025-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Complète cette phrase par une information donnée dans le podcast. Lors des tests psychologiques, les candidats doivent montrer qu'ils sont capables de…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Une information parmi : vivre avec d'autres personnes dans l'espace ; rester calme (si une situation devient dangereuse) ; maitriser leurs nerfs ou leurs émotions (pour gérer des situations difficiles). Toute reformulation allant dans ce sens est acceptée.",
+   "explication": "L'Agence spatiale veut s'assurer que les astronautes pourront vivre ensemble et rester calmes face au danger."
+  },
+  {
+   "id": "ceb-2025-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "L'Agence spatiale a sélectionné un parastronaute. Explique ce qu'est un parastronaute.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "C'est un astronaute avec un handicap (physique). Toute reformulation allant dans ce sens est acceptée.",
+   "explication": "Florence explique que l'Agence appelle parastronaute un astronaute avec un handicap."
+  },
+  {
+   "id": "ceb-2025-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Le podcast permet-il de dire que c'est vrai ou faux ?",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Déjà lorsqu'elle était enfant, Florence Poutriquet avait envie de devenir astronaute.",
+    "Florence Poutriquet a fait partie de l'équipe de l'Agence spatiale européenne.",
+    "Florence Poutriquet exerce le métier d'ingénieure.",
+    "La réserve d'astronautes est composée de tous les candidats non retenus."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    1
+   ],
+   "explication": "Elle dit : « Quand j'étais petite, je voulais être astronaute ». Elle n'a pas été retenue, donc elle n'a pas fait partie de l'équipe. Son métier n'est pas donné. La réserve n'est composée que de onze personnes sélectionnées, pas de tous les non retenus."
+  },
+  {
+   "id": "ceb-2025-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Après quelle étape de la sélection Florence Poutriquet apprend-elle qu'elle a été éliminée ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Après l'évaluation médicale. Toute reformulation allant dans ce sens est acceptée. Ce n'est pas bon : « en septembre 2022 ».",
+   "explication": "C'est après la semaine de tests médicaux qu'elle apprend, en septembre, qu'elle est éliminée."
+  },
+  {
+   "id": "ceb-2025-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quel sentiment dominant éprouve Florence Poutriquet tout au long de ce podcast ? Elle éprouve surtout…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "de la satisfaction.",
+    "du désespoir.",
+    "du mécontentement.",
+    "de l'admiration."
+   ],
+   "reponse": 0,
+   "explication": "Elle est fière et heureuse de son aventure, même si elle n'a pas été retenue : elle ne regrette rien."
+  },
+  {
+   "id": "ceb-2025-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pour quelle raison Florence Poutriquet pense-t-elle avoir été éliminée ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "À cause de sa vue (elle suppose que sa vue n'était pas suffisamment bonne). Toute reformulation allant dans ce sens est acceptée.",
+   "explication": "Elle dit : « Je suppose que ma vue n'était pas suffisamment bonne »."
+  },
+  {
+   "id": "ceb-2025-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quel message essentiel veut nous faire passer Florence Poutriquet ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Tout arrive à celui qui est capable d'attendre.",
+    "La rencontre de personnes extraordinaires est une vraie richesse.",
+    "Il faut toujours oser croire en ses rêves.",
+    "Dans la vie, il ne faut jamais rien regretter."
+   ],
+   "reponse": 2,
+   "explication": "Pour conclure, elle dit qu'il faut croire en ses rêves."
+  },
+  {
+   "id": "ceb-2025-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "En enregistrant ce podcast, Florence Poutriquet a voulu principalement…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "expliquer son parcours de sélection pour espérer devenir astronaute.",
+    "décrire le Centre européen des astronautes.",
+    "donner des consignes pour devenir astronaute.",
+    "donner du plaisir en racontant une histoire d'astronautes."
+   ],
+   "reponse": 0,
+   "explication": "Elle raconte, étape après étape, comment s'est déroulée sa sélection."
+  },
+  {
+   "id": "ceb-2025-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque résumé, indique s'il correspond à l'entretien que tu viens d'entendre. Premier résumé : « Dans ce podcast, une candidate raconte les différentes sélections auxquelles elle a participé afin de devenir astronaute. Malheureusement, elle n'a pas été retenue. Elle garde toutefois un très bon souvenir de cette expérience. » Deuxième résumé : « Dans ce podcast, une candidate témoigne de son aventure dans un parcours de sélection pour devenir astronaute. Elle veut faire comprendre qu'il est important de croire en ses rêves. » Troisième résumé : « Dans ce podcast, à travers l'expérience vécue par une candidate au poste d'astronaute de l'Agence spatiale européenne, on apprend que les épreuves de sélection sont assez difficiles car l'espace est un environnement stressant. »",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Premier résumé",
+    "Deuxième résumé",
+    "Troisième résumé"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    0,
+    0,
+    1
+   ],
+   "explication": "Les deux premiers résumés reprennent bien l'essentiel (le parcours, l'échec, le souvenir, le message de croire en ses rêves). Le troisième insiste sur la difficulté des épreuves, qui n'est pas le sujet du podcast."
+  },
   {
    "id": "ceb-2025-l2-q1",
    "livret": 2,

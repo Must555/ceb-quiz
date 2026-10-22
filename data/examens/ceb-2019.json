@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2019",
  "source": "FWB, épreuve externe commune 2019 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2019-06-17",
    "points": 25,
    "audio": null,
-   "duree": 30
+   "duree": 30,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -331,9 +332,613 @@
    "titre": "La vieille dans la bouteille (3)",
    "fichier": "assets/2019/pdf40.webp",
    "alt": "Elle veut régner sur le monde entier et se retrouve dans sa bouteille. Françoise Rachmuhl, 15 contes d'Europe, Flammarion Jeunesse, 2013."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Dressage mutuel (Pierre Gripari, Histoire du prince Pipo)",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "À peine guéri, le prince Pipo s’occupe de son nouvel ami le petit cheval rouge. Il apprend à le nourrir, à le soigner, l’habitue peu à peu à se laisser conduire. Tout cela dure un an. Au bout d’un an, Pipo le cheval est un cheval adulte. Le prince Pipo, lui, n’est encore qu’un tout jeune homme."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Un beau matin, Pipo le prince se lève et dit : « Aujourd’hui, je vais apprendre à monter à cheval. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Il va chercher Pipo le cheval à l’écurie, l’emmène dans le parc et monte sur son dos. Mais Pipo le cheval n’aime pas ça. D’une ruade, il envoie son jeune maitre rouler à terre. Le prince Pipo se relève et recommence. Le cheval rouge le rejette à terre une fois, deux fois, dix fois… mais le prince est patient."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Chaque fois qu’il tombe, il se relève, chaque fois il remonte, et chaque fois qu’il remonte il se tient mieux en selle, de sorte qu’à midi, c’est bel et bien à cheval qu’il rentre au château pour le déjeuner."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pendant le repas, à table, son père lui demande :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Alors, Pipo, qu’est-ce que tu as fait ce matin ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ce matin, dit le prince, j’ai appris à mon cheval à se laisser monter ! »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Au même moment, dans l’écurie, la jument blanche, qui est la mère de Pipo le cheval, demande à son poulain :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Qu’est-ce que tu as fait, ce matin, mon fils ? »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Et Pipo le cheval, tout en mâchant une bouchée de foin, répond négligemment :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« J’ai appris au petit prince à se tenir en selle. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "(J’ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler. Mais ils ne parlent que très rarement, et quand ils sont bien sûrs que nul ne les écoute.)"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le matin du second jour, le prince Pipo se dit en se levant :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Aujourd’hui, je vais me faire obéir de mon cheval. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Il va chercher Pipo le cheval à l’écurie, il l’emmène dans le parc, et là, il entreprend de le faire aller, venir, s’arrêter, repartir, avancer, reculer, tourner à gauche, à droite… Cela ne va pas tout seul ! Le cheval, au début, n’en veut faire qu’à sa tête : il court au lieu de marcher, marche au lieu de trotter, recule au lieu d’avancer, avance au lieu de s’arrêter, s’arrête au lieu de tourner… une fois ou deux il tente encore de jeter le prince à terre… Mais Pipo est têtu. Sans se lasser, il recommence chaque exercice, de sorte que, avant midi, le cheval lui obéit au doigt et à l’œil."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pendant le déjeuner, son père lui demande :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Alors, Pipo, qu’est-ce que tu as fait, ce matin ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ce matin, dit le prince, j’ai appris à mon cheval à se laisser conduire. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "À l’écurie, cependant, la jument blanche demande à son fils :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Qu’est-ce que tu as fait, ce matin ? »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Et Pipo le cheval répond fièrement :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Ce matin, j’ai appris à mon maitre à conduire un cheval. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le troisième jour, le prince Pipo se lève en se disant :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Ce matin, je veux devenir un cavalier accompli ! »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Il va chercher Pipo, monte sur son dos et cette fois le fait courir à travers bois, traverser des fourrés, franchir d’un bond des haies, des fossés, des ruisseaux, des troncs d’arbres abattus…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "C’est une rude matinée, car Pipo le cheval n’est pas toujours d’humeur à faire ce qu’on lui ordonne. Quelquefois il prend peur, tourne bride, se cabre. Une fois, il s’emballe et fonce comme un fou parmi les branches basses. Une fois même il jette son cavalier dans la rivière."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Mais le prince Pipo s’obstine plus que jamais. Griffé, plein d’écorchures, trempé comme une soupe, il ne s’avoue jamais vaincu. À midi, il peut tout exiger de sa monture. Il revient au château, change de vêtements et va se mettre à table. Le roi son père lui demande :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Alors, Pipo, qu’est-ce que tu as fait ce matin ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ce matin, répond-il, j’ai appris à mon cheval tout ce qu’un cheval doit savoir. » Cependant qu’à l’écurie la jument blanche interroge son fils :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Qu’est-ce que tu as fait, ce matin ? »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Et Pipo le cheval, frappant le sol du sabot, dit avec orgueil :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Ce matin, j’ai fait du prince un cavalier digne de moi ! »"
+    }
+   ],
+   "source": "Correctif officiel CEB 2019, support du Savoir écouter"
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2019-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "L'auteur a probablement écrit cette histoire en vue…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "de divertir en racontant une histoire qui finit bien.",
+    "d'informer sur les dangers de l'équitation.",
+    "de persuader que l'équitation est un excellent sport.",
+    "de suggérer d'acheter des livres qui parlent de chevaux."
+   ],
+   "reponse": 0,
+   "explication": "C'est une histoire amusante qui se termine bien : l'auteur veut surtout divertir."
+  },
+  {
+   "id": "ceb-2019-l1-q2a",
+   "livret": 1,
+   "numero": "2a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris le résumé de l'histoire. Complète : « C'est l'histoire d'un prince qui… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le prince veut dresser son cheval pour pouvoir le monter (idée de dresser son cheval, monter à cheval ou devenir un cavalier). Ce n'est pas bon : « apprendre à son cheval à lui obéir ».",
+   "explication": "Le prince Pipo veut dresser son cheval pour pouvoir le monter."
+  },
+  {
+   "id": "ceb-2019-l1-q2b",
+   "livret": 1,
+   "numero": "2b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris le résumé de l'histoire. Complète : « Malheureusement, … »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le cheval n'obéit pas. Idée d'essais, d'erreurs, d'échecs ou de difficultés. On accepte aussi : le cheval n'aime pas ça, le cheval est têtu, le cheval n'en fait qu'à sa tête.",
+   "explication": "Au début, le cheval résiste : il jette le prince à terre et n'en fait qu'à sa tête."
+  },
+  {
+   "id": "ceb-2019-l1-q2c",
+   "livret": 1,
+   "numero": "2c",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris le résumé de l'histoire. Complète : « Finalement, … »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "L'un et l'autre sont convaincus qu'ils se sont dressés mutuellement. Il faut l'idée de réussite et l'idée de mutualité (chacun dresse l'autre).",
+   "explication": "À la fin, le prince et le cheval sont chacun persuadés d'avoir dressé l'autre."
+  },
+  {
+   "id": "ceb-2019-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici des phrases prononcées par Pipo le cheval. Remets-les dans l'ordre de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Ce matin, j'ai fait du prince un cavalier digne de moi.",
+    "J'ai appris au petit prince à se tenir en selle.",
+    "Ce matin, j'ai appris à mon maitre à conduire un cheval."
+   ],
+   "reponse": [
+    1,
+    2,
+    0
+   ],
+   "explication": "Le premier jour, le cheval a appris au prince à se tenir en selle ; le deuxième, à conduire un cheval ; le troisième, il a fait de lui un cavalier digne de lui."
+  },
+  {
+   "id": "ceb-2019-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Coche la phrase qui prouve que l'histoire est imaginaire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-reel-imaginaire",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "J'ai appris à mon cheval à se laisser monter.",
+    "J'ai appris au petit prince à se tenir en selle.",
+    "Aujourd'hui, je vais me faire obéir de mon cheval.",
+    "Ce matin, je veux devenir un cavalier accompli."
+   ],
+   "reponse": 1,
+   "explication": "C'est le cheval qui parle : dans la réalité, un cheval ne parle pas."
+  },
+  {
+   "id": "ceb-2019-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Coche l'idée qui se dégage de cette histoire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Pour un dressage réussi, il vaut mieux attendre un an.",
+    "Pour un dressage réussi, il vaut mieux disposer d'un grand parc.",
+    "Pour un dressage réussi, il vaut mieux s'entrainer avec ténacité.",
+    "Pour un dressage réussi, il vaut mieux être le fils d'un roi."
+   ],
+   "reponse": 2,
+   "explication": "Le prince et le cheval recommencent sans se lasser : la ténacité (la persévérance) mène à la réussite."
+  },
+  {
+   "id": "ceb-2019-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Complète la phrase. Un trait de caractère commun au cheval et au prince est qu'ils sont…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Persévérants, têtus ou acharnés (ou tout autre synonyme). Ce n'est pas bon : amis, satisfaits.",
+   "explication": "Le prince et le cheval sont têtus : aucun des deux ne se laisse décourager."
+  },
+  {
+   "id": "ceb-2019-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Explique le problème que le prince rencontre avec son cheval au début de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le cheval n'aime pas se laisser monter, il envoie son jeune maitre rouler à terre, il n'obéit pas, il n'écoute pas, il est têtu. On accepte aussi : le prince ne sait pas monter à cheval.",
+   "explication": "Au début, le cheval jette le prince à terre : il ne veut pas se laisser monter."
+  },
+  {
+   "id": "ceb-2019-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Dans l'histoire que tu viens d'entendre, cette information a-t-elle été donnée ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "La mère de Pipo le cheval est une jument blanche.",
+    "Le prince emmène son cheval dans le parc puis dans les bois."
+   ],
+   "colonnes": [
+    "a été donnée",
+    "n'a pas été donnée"
+   ],
+   "reponse": [
+    0,
+    0
+   ],
+   "explication": "Les deux informations sont dans l'histoire : la mère de Pipo est une jument blanche, et le prince emmène son cheval dans le parc, puis le fait courir à travers bois."
+  },
+  {
+   "id": "ceb-2019-l1-q9a",
+   "livret": 1,
+   "numero": "9a",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Qui dit ces phrases ? « J'ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler. Mais ils ne parlent que très rarement, et quand ils sont bien sûrs que nul ne les écoute. »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-narrateur",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "le prince Pipo",
+    "Pipo le cheval",
+    "le narrateur",
+    "le roi"
+   ],
+   "reponse": 2,
+   "explication": "Le narrateur s'adresse directement à ceux qui écoutent l'histoire."
+  },
+  {
+   "id": "ceb-2019-l1-q9b",
+   "livret": 1,
+   "numero": "9b",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "À qui le narrateur s'adresse-t-il quand il dit : « J'ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler » ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-narrateur",
+   "documents": [
+    "ecoute"
+   ],
+   "reponse": [
+    "à l'auditeur",
+    "à l'auditeur",
+    "aux auditeurs",
+    "à l'auditoire",
+    "au récepteur",
+    "au lecteur",
+    "aux lecteurs",
+    "à nous",
+    "aux élèves",
+    "aux enfants",
+    "à ceux qui écoutent",
+    "à celui qui écoute",
+    "à celui qui l'écoute",
+    "à ceux qui l'écoutent"
+   ],
+   "explication": "Le narrateur parle à ceux qui écoutent l'histoire : il dit « vous »."
+  },
+  {
+   "id": "ceb-2019-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le roi s'intéresse à son fils. Explique ce qui permet de le dire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Chaque jour, il demande à son fils ce qu'il a fait le matin. Toute idée allant dans ce sens est acceptée.",
+   "explication": "Chaque jour, à table, le roi demande à son fils : « Qu'est-ce que tu as fait ce matin ? »"
+  },
+  {
+   "id": "ceb-2019-l1-q11a",
+   "livret": 1,
+   "numero": "11a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le prince Pipo est têtu, déterminé. Écris une idée qui permet de le dire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Sans se lasser, Pipo recommence chaque exercice ; il s'obstine plus que jamais ; il ne s'avoue jamais vaincu ; il ne laisse jamais tomber ; il réessaie chaque fois qu'il rate. Il faut l'idée de répétition. Ce n'est pas bon : « tous les matins, il monte à cheval » ou « il ne se laisse pas faire ».",
+   "explication": "Le prince tombe, se relève et recommence sans cesse : il est têtu et déterminé."
+  },
+  {
+   "id": "ceb-2019-l1-q11b",
+   "livret": 1,
+   "numero": "11b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pipo le cheval est souvent têtu. Écris une idée qui permet de le dire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le cheval le rejette une fois, deux fois, dix fois… ; au début, le cheval n'en fait qu'à sa tête. Ce n'est pas bon : « il n'obéit pas », « il fait exprès de faire tomber Pipo », « il ne veut pas se laisser monter ».",
+   "explication": "Le cheval n'en fait qu'à sa tête : il court au lieu de marcher, recule au lieu d'avancer…"
+  },
+  {
+   "id": "ceb-2019-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "« Ce matin, je veux devenir un cavalier accompli. » Cela veut dire que le prince veut devenir un cavalier…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "patient.",
+    "expérimenté.",
+    "courageux.",
+    "audacieux."
+   ],
+   "reponse": 1,
+   "explication": "Un cavalier accompli est un cavalier parfait, qui a de l'expérience."
+  },
+  {
+   "id": "ceb-2019-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "« Et Pipo le cheval, frappant le sol du sabot, dit avec orgueil : « Ce matin, j'ai fait du prince un cavalier digne de moi ! » » Quel mot pourrait remplacer « orgueil » sans changer le sens de la phrase ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-synonymes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "amabilité",
+    "fierté",
+    "humour",
+    "modestie",
+    "gentillesse"
+   ],
+   "reponse": 1,
+   "explication": "L'orgueil est un sentiment de fierté."
+  },
+  {
+   "id": "ceb-2019-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quelle expression fait comprendre que le cheval écoute son maitre ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Il s'obstine plus que jamais.",
+    "Il n'en fait qu'à sa tête.",
+    "Il lui obéit au doigt et à l'œil.",
+    "Il répond négligemment."
+   ],
+   "reponse": 2,
+   "explication": "Obéir « au doigt et à l'œil » veut dire obéir immédiatement, au moindre signe."
+  },
+  {
+   "id": "ceb-2019-l1-q15a",
+   "livret": 1,
+   "numero": "15a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris une information du texte indispensable à la compréhension de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Toute information qui illustre l'apprentissage (apprendre à monter à cheval), l'apprentissage mutuel, la persévérance ou l'obstination (par exemple : le prince tombe et recommence chaque fois).",
+   "explication": "Une information indispensable est une information sans laquelle on ne comprend pas l'histoire : le dressage, la persévérance."
+  },
+  {
+   "id": "ceb-2019-l1-q15b",
+   "livret": 1,
+   "numero": "15b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris une information du texte qui n'est pas indispensable à la compréhension de l'histoire.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Toute information qui ne sert pas l'objectif du prince (devenir un cavalier accompli) ni celui du cheval (faire du prince un cavalier accompli). Exemples : la jument est blanche, l'histoire se déroule dans un parc.",
+   "explication": "Une information non indispensable est un détail qu'on pourrait enlever sans perdre le fil, comme la couleur de la jument."
+  },
+  {
+   "id": "ceb-2019-l1-q16",
+   "livret": 1,
+   "numero": "16",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "À la fin de l'histoire, on peut dire que…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "seul le cheval est tout à fait satisfait.",
+    "seul le prince est tout à fait satisfait.",
+    "le prince et le cheval sont satisfaits.",
+    "le prince et le cheval ne sont pas satisfaits."
+   ],
+   "reponse": 2,
+   "explication": "Le prince et le cheval sont tous les deux fiers de ce qu'ils ont fait."
+  },
+  {
+   "id": "ceb-2019-l1-q17a",
+   "livret": 1,
+   "numero": "17a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "À la fin de l'histoire, le prince et le cheval rapportent chacun leur version des faits. Complète : « Le prince Pipo dit à son père… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…qu'il a appris à son cheval tout ce qu'un cheval doit savoir. On accepte aussi : qu'il a appris à son cheval à obéir.",
+   "explication": "Le prince dit : « J'ai appris à mon cheval tout ce qu'un cheval doit savoir »."
+  },
+  {
+   "id": "ceb-2019-l1-q17b",
+   "livret": 1,
+   "numero": "17b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "À la fin de l'histoire, le prince et le cheval rapportent chacun leur version des faits. Complète : « Pipo le cheval dit à sa mère… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…qu'il a fait du prince un cavalier (digne de lui). Toute idée allant dans ce sens est acceptée.",
+   "explication": "Le cheval dit : « J'ai fait du prince un cavalier digne de moi »."
+  },
+  {
+   "id": "ceb-2019-l1-q18",
+   "livret": 1,
+   "numero": "18",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Explique pourquoi l'auteur a choisi le titre « Dressage mutuel ».",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le prince et le cheval veulent se dresser l'un l'autre. On accepte aussi : parce qu'ils se dressent mutuellement. L'idée de « mutualité » (l'un et l'autre, chacun) est indispensable.",
+   "explication": "Le prince dresse le cheval et le cheval dresse le prince : le dressage est mutuel."
+  },
   {
    "id": "ceb-2019-l2-q1",
    "livret": 2,
