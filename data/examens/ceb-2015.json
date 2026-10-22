@@ -11,7 +11,8 @@
    "matiere": "fr",
    "titre": "Écouter-écrire (texte « Histoire d'ordre »)",
    "date": "2015-06-15",
-   "points": 20
+   "points": 20,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -78,6 +79,50 @@
   }
  ],
  "documents": [
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Histoire d’ordre (Jean-Jacques Bienclasser)",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Histoire d’ordre."
+    },
+    {
+     "lecteur": 1,
+     "texte": "« Une place pour chaque chose et chaque chose à sa place » : ça, c’est le refrain de maman. « Agir avec ordre et méthode » : ça c’est le refrain de papa. Ils étaient faits pour se rencontrer, ces deux-là et ils s’entendent à merveille. Ce sont les champions du rangement, les plus farouches adversaires du laisser-aller et de l’improvisation. La liste des courses ? Jamais à la dernière minute. Les itinéraires de voyage ? Toujours établis un mois à l’avance. On fait ce qu’on a prévu de faire : on part à temps pour arriver à l’heure et on arrive à l’heure pour ne pas faire attendre. On ne reporte pas au lendemain ce qui doit être accompli le jour même. On ne fait pas passer l’essentiel après l’accessoire : le travail après le loisir, le devoir après le plaisir… Une place pour chaque chose et chaque chose à sa place ! Toujours agir avec ordre et méthode !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Avec des parents pareils, pas étonnant que je sois comme je suis : un garçon ordonné, soigneux, sérieux, ponctuel, méthodique. Mes cahiers ? Toujours en ordre. Mes leçons ? Toujours apprises. Les mots d’excuse pour arrivée tardive ou pour devoir non fait ? Connais pas. J’attrape la grippe pendant le congé d’hiver. Je me casse le pied en jouant au foot pendant les vacances d’été !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Mais ce n’est pas de moi que je veux vous parler. Ni de mes parents. C’est de ma petite sœur. Vous êtes étonné ? Vous vous demandez pourquoi quelqu’un d’aussi ordonné que moi n’a pas commencé par le commencement, je veux dire : par ma petite sœur, puisque c’est d’elle que je vais vous parler. Réfléchissez ! Avant ma petite sœur, il y avait mes parents, et il y avait moi. Moi entre mes parents et ma petite sœur. Donc j’ai commencé par mes parents, j’ai continué par moi et maintenant j’en viens à ma petite sœur. D’ailleurs il était indispensable que je vous dise ce que je vous ai dit pour que vous compreniez bien ce qui va suivre."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ma petite sœur est aussi quelqu’un d’ordonné et de méthodique, comme papa. C’est aussi quelqu’un qui met chaque chose à sa place, comme maman. Mais elle a un ordre et une méthode bien à elle, elle a un sens du rangement très personnel. Un sens du rangement que nous trouvons déconcertant. C’est un mot que j’ai appris hier en lisant le dictionnaire (je suis à la lettre « d » et je compte bien arriver à « z » avant le C.E.B). « Déconcertant » veut dire surprenant, déroutant, troublant, dérangeant. Ma petite sœur a un sens du rangement dérangeant. Ma petite sœur a un ordre qui fait désordre. Vous allez comprendre ce que je veux dire."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Papa range ses vêtements dans la partie gauche de la garde-robe : à gauche de la partie gauche, ses vêtements d’été, et à droite, ses vêtements d’hiver. Maman range donc ses vêtements dans la partie droite de la garde-robe : comme ceux de papa, les vêtements d’été de maman sont à gauche de la partie droite, et ses vêtements d’hiver, à droite. Un dimanche, alors que mes parents faisaient des mots croisés, ma petite sœur est montée dans leur chambre et a rangé leurs vêtements à sa façon. Elle a été punie pour avoir mis du désordre. Elle a trouvé la punition tout à fait injuste. Elle est venue se plaindre à moi : « Hein Zean-Zacques que z’était mieux comme moi z’avais ranzé ? Z’avais mis les bleus enzemble, les verts enzemble, les bruns enzemble, les gris enzemble… » (elle zozote un peu, ma petite sœur). Je lui ai dit que ce n’était pas une mauvaise idée."
+    },
+    {
+     "lecteur": 1,
+     "texte": "J’aurais mieux fait de me taire : le dimanche suivant, en rentrant d’avoir été jouer au foot (sans attraper la grippe et sans me casser le pied), j’ai retrouvé mes livres, que je classe par sujets, rangés par ordre alphabétique. Ma petite sœur venait d’apprendre l’ordre alphabétique. « Hein Zean-Zacques que z’est mieux comme moi z’ai ranzé ? » J’adore ma petite sœur : je n’ai pas voulu lui causer du chagrin en la contredisant."
+    },
+    {
+     "lecteur": 1,
+     "texte": "J’aurais peut-être mieux fait de le faire : peu de temps après, ce sont mes CD qu’elle a remis en ordre. Dans un certain ordre. Dans un ordre auquel je n’aurais jamais pensé. « Hein Zean-Zacques que z’est mieux comme moi z’ai ranzé ? D’abord zeux que t’écoutes tout le temps et, tout au bout, les zeux que t’écoutes zamais, les zeux de mamy avec Zacques Brel et Zilbert Bécaud. »"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le sens du rangement de ma petite sœur est déconcertant, mais il me semble que, grâce à elle, je suis en train de découvrir quelque chose..."
+    }
+   ],
+   "source": "Portfolio officiel CEB 2015, pages 29 et 30 (texte de l’enregistrement du Savoir écouter)"
+  },
   {
    "id": "forts",
    "page": 4,
@@ -294,15 +339,14 @@
    "id": "ceb-2015-l1-q1",
    "livret": 1,
    "numero": "1",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "qcm",
    "enonce": "« Histoire d'ordre » : quelle est l'intention dominante de l'auteur ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "choix": [
     "Donner du plaisir",
@@ -311,23 +355,20 @@
     "Informer"
    ],
    "reponse": 0,
-   "explication": "C'est une histoire amusante.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "C'est une histoire amusante."
   },
   {
    "id": "ceb-2015-l1-q2",
    "livret": 1,
    "numero": "2",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "qcm",
    "enonce": "Qui est le narrateur de cette histoire ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "choix": [
     "On ne peut pas le dire.",
@@ -336,23 +377,20 @@
     "Un autre personnage."
    ],
    "reponse": 1,
-   "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques."
   },
   {
    "id": "ceb-2015-l1-q3",
    "livret": 1,
    "numero": "3",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "qcm",
    "enonce": "« J'attrape la grippe pendant le congé d'hiver. Je me casse le pied pendant les vacances d'été. » Que faut-il comprendre ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "choix": [
     "Il est vraiment malade pendant les vacances.",
@@ -361,23 +399,20 @@
     "Il aime être malade pendant les vacances."
    ],
    "reponse": 1,
-   "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !"
   },
   {
    "id": "ceb-2015-l1-q4",
    "livret": 1,
    "numero": "4",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "trous",
    "enonce": "La garde-robe des parents.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "texte": "Partie gauche : vêtements de {1} ; à gauche de chaque partie : vêtements d'{2} ; à droite : vêtements d'{3}",
    "reponse": [
@@ -393,23 +428,20 @@
      "hiver"
     ]
    ],
-   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)"
   },
   {
    "id": "ceb-2015-l1-q5",
    "livret": 1,
    "numero": "5",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "qcm",
    "enonce": "Quel est le problème de la petite sœur ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "choix": [
     "Elle range les choses ailleurs.",
@@ -418,106 +450,90 @@
     "Elle range les choses autrement."
    ],
    "reponse": 3,
-   "explication": "« Elle a un ordre et une méthode bien à elle. »",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "« Elle a un ordre et une méthode bien à elle. »"
   },
   {
    "id": "ceb-2015-l1-q6",
    "livret": 1,
    "numero": "6",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "texte_court",
    "enonce": "Comment la petite sœur a-t-elle rangé les livres de Jean-Jacques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-2"
+    "ecoute"
    ],
    "reponse": [
     "par ordre alphabétique",
     "dans l'ordre alphabétique",
     "ordre alphabétique"
    ],
-   "explication": "« rangés par ordre alphabétique ».",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "« rangés par ordre alphabétique »."
   },
   {
    "id": "ceb-2015-l1-q7",
    "livret": 1,
    "numero": "7",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "ouverte",
    "enonce": "Que découvre Jean-Jacques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
-   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes."
   },
   {
    "id": "ceb-2015-l1-q9",
    "livret": 1,
    "numero": "9",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "ouverte",
    "enonce": "Cette histoire est-elle vraisemblable ? Coche « vraisemblable » ou « invraisemblable » et justifie.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "explication": "Rien de magique : une petite sœur peut vraiment ranger ainsi.",
-   "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible."
   },
   {
    "id": "ceb-2015-l1-q8",
    "livret": 1,
    "numero": "8",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "ouverte",
    "enonce": "Écris le résumé de l'histoire en deux ou trois phrases (pas plus). Précise deux choses : la situation habituelle des parents et de Jean-Jacques, et le « problème provoqué » par la petite sœur. Tu peux commencer par : « C'est l'histoire d'une petite fille… »",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "reponseModele": "Ton résumé doit dire deux choses (1 point chacune). 1) La situation habituelle : les parents et Jean-Jacques sont très ordonnés, chacun range ses affaires à sa manière. 2) Le problème provoqué : la petite sœur modifie leurs rangements (elle range les choses autrement). Exemple : « C'est l'histoire d'une petite fille dont les parents et le frère sont très ordonnés. Mais la fille modifie leurs rangements. » Il faut que ces deux idées soient dans tes deux ou trois phrases.",
-   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude."
   },
   {
    "id": "ceb-2015-l1-q10",
    "livret": 1,
    "numero": "10",
-   "domaine": "fr.lire",
+   "domaine": "fr.ecouter",
    "type": "ouverte",
    "enonce": "Donne un exemple de rangement réalisable de deux manières différentes. Pense à la géométrie (les figures), à la conjugaison (les verbes), aux rangs dans la cour de l'école, aux activités de gymnastique… Écris : « Je choisis de ranger des … », puis la première manière de les ranger, puis la deuxième manière.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ordre-1",
-    "ordre-2"
+    "ecoute"
    ],
    "reponseModele": "Il faut ranger absolument la MÊME collection d'objets de deux manières différentes : premier rangement (1 point) et deuxième rangement (1 point). Si les objets ne sont pas les mêmes dans les deux rangements, c'est 0. Exemple : « Je choisis de ranger des figures géométriques. Première manière : par nombre de côtés (les triangles, puis les carrés…). Deuxième manière : par couleur (les rouges, puis les bleues…). »",
-   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons.",
-   "numerisable": false,
-   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
+   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons."
   },
   {
    "id": "ceb-2015-l2-q1",
