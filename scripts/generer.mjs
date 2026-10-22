@@ -210,6 +210,18 @@ const blocJouer = (texte, lien = '../app/', bouton = 'Commencer gratuitement') =
 function nomExamen(ex) { return ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} (tronc commun)` : ex.annee === 2026 ? `CEB ${ex.annee} (socles)` : `CEB ${ex.annee}`; }
 function slugExamen(ex) { return ex.id.replace(/^ceb-/, 'ceb-'); }
 
+// Documents officiels : lien vers enseignement.be (FWB) + copie de secours hébergée dans archives/.
+let TELE = null;
+const NOM_DOC = { questionnaire: 'Questionnaire (livrets de questions)', portfolio: 'Portfolio (documents)', correction: 'Consignes de passation et correction' };
+function blocTelechargements(ex) {
+  const t = TELE?.examens?.[ex.id];
+  if (!t) return '';
+  const base = TELE.baseOfficielle.replace('{annee}', t.annee);
+  return `<section class="matiere"><h2>Télécharger les documents officiels</h2>
+<p>Publiés par la Fédération Wallonie-Bruxelles. Le lien « officiel » ouvre le fichier sur enseignement.be ; la « copie » est gardée par Mission CEB, au cas où le lien officiel ne marcherait plus.${ex.annee === 2021 ? ' L\'épreuve 2020 ayant été annulée, le CEB 2021 a repris les documents préparés pour 2020 : ils portent la mention « CEB2020 ».' : ''}</p>
+<ul class="telechargements">${t.documents.map((d) => `<li><b>${NOM_DOC[d.type]}</b> <a class="btn" href="${base}${d.fichier}" rel="noopener">📄 Officiel (PDF)</a> <a class="btn" href="../archives/${d.fichier}" download>💾 Copie</a></li>`).join('')}</ul></section>`;
+}
+
 function pageExamen(ex, tous) {
   const nom = nomExamen(ex);
   const livrets = livretsReels(ex);
@@ -227,6 +239,7 @@ function pageExamen(ex, tous) {
 <div class="tableau"><table><thead><tr><th>N°</th><th>Intitulé</th><th>Matière</th><th>Date</th><th class="pts">Points</th><th>En ligne</th></tr></thead><tbody>
 ${(ex.livrets ?? []).map(ligne).join('\n')}
 </tbody></table></div></section>
+${blocTelechargements(ex)}
 <section class="agir"><h2>Refaire le ${esc(nom)}</h2><div class="boutons"><a class="btn btn-cta" href="../app/?examen=${encodeURIComponent(ex.id)}">Passer cet examen en ligne</a><a class="btn" href="../imprimer.html">Imprimer un examen blanc</a></div>
 <p class="mute">${jouables} questions corrigées tout de suite, avec les documents du portfolio. Mode « Examen réel » : livret par livret, chronométré, correction à la fin. Le questionnaire officiel et son portfolio sont publiés par la Fédération Wallonie-Bruxelles sur <a href="https://www.enseignement.be" style="color:#fff">enseignement.be</a>.</p></section>
 <section class="voisines"><h2>Les autres CEB</h2><ul>${autres.map((x) => `<li><a href="${slugExamen(x)}.html">${esc(nomExamen(x))}</a></li>`).join('')}</ul></section>`;
@@ -382,6 +395,7 @@ export async function generer() {
   const examens = [];
   for (const meta of (await lireJson('data/examens/index.json')).examens.filter((e) => e.statut !== 'a_encoder')) examens.push(await donnees.chargerExamen(meta.id));
   examens.sort((a, b) => a.annee - b.annee || (a.referentiel === 'tronc_commun') - (b.referentiel === 'tronc_commun'));
+  TELE = await lireJson('data/telechargements.json');
   for (const ex of examens) out[`examens/${slugExamen(ex)}.html`] = pageExamen(ex, examens);
   out['examens/index.html'] = pageExamens(examens);
   for (const m of Object.keys(MATIERES)) out[`exercices/${SLUG[m]}.html`] = pageExercices(m, parMatiere[m], exemplesMatiere(donnees.modeles, m));
