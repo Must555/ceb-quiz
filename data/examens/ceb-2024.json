@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2024",
  "source": "FWB, épreuve externe commune 2024 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui demandent un tracé, un coloriage ou un découpage sur le livret sont gardées en mode papier ; les autres s'appuient sur les pages du livret, jointes en image, ou ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -400,6 +400,249 @@
     }
    ],
    "source": "Correctif officiel CEB 2024, support du Savoir écouter"
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Deux triangles à nommer",
+   "fichier": "assets/2024/liv3-p04.webp",
+   "alt": "Deux triangles dessinés l'un au-dessus de l'autre, chacun suivi de « Triangle » et de deux lignes à compléter. En haut de la page, la question 2 (une suite de figures sur un quadrillage)."
+  },
+  {
+   "id": "liv3-p10",
+   "source": "livret",
+   "livret": 3,
+   "page": 10,
+   "titre": "Treize figures numérotées et premier tableau",
+   "fichier": "assets/2024/liv3-p10.webp",
+   "alt": "Treize figures numérotées de 1 à 13 (polygones et figures à bords courbes), puis un tableau à deux lignes (« 1 et seulement 1 angle droit », « 2 et seulement 2 angles droits ») et deux colonnes (« Polygone », « Non polygone »)."
+  },
+  {
+   "id": "liv3-p11",
+   "source": "livret",
+   "livret": 3,
+   "page": 11,
+   "titre": "Tableau des côtés isométriques",
+   "fichier": "assets/2024/liv3-p11.webp",
+   "alt": "Tableau à compléter : lignes « Tous les côtés isométriques » et « Pas de côtés isométriques », colonnes « Triangle », « Quadrilatère » et « Hexagone » (la dernière case est noircie). En bas de la page, la question 10 : deux côtés d'un parallélogramme à compléter."
+  },
+  {
+   "id": "liv3-p12",
+   "source": "livret",
+   "livret": 3,
+   "page": 12,
+   "titre": "Trois solides A, B et C",
+   "fichier": "assets/2024/liv3-p12.webp",
+   "alt": "Trois solides A, B et C dessinés en perspective, avec leurs arêtes cachées en pointillés, et trois phrases à compléter « … faces, … sommets, … arêtes »."
+  },
+  {
+   "id": "liv3-p13",
+   "source": "livret",
+   "livret": 3,
+   "page": 13,
+   "titre": "Classement de solides",
+   "fichier": "assets/2024/liv3-p13.webp",
+   "alt": "Arbre de classement des solides (polyèdre ou non polyèdre, prisme droit, pyramide ; base triangulaire, carrée ou hexagonale) avec les numéros 1 à 4, puis neuf solides dessinés sur deux rangées (quatre en haut, cinq en bas), chacun avec un cercle vide dessous."
+  },
+  {
+   "id": "liv3-p16",
+   "source": "livret",
+   "livret": 3,
+   "page": 16,
+   "titre": "Une figure en T, agrandie et réduite",
+   "fichier": "assets/2024/liv3-p16.webp",
+   "alt": "Une figure en forme de T sur un quadrillage, puis cinq autres figures en T de tailles différentes : en haut à gauche, en haut à droite, au milieu à gauche, en bas au centre et en bas à droite."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "Aires de trois figures",
+   "fichier": "assets/2024/liv4-p09.webp",
+   "alt": "Trois figures grisées A, B et C tracées sur un quadrillage dont un carreau mesure 1 cm sur 1 cm."
+  },
+  {
+   "id": "liv4-p11",
+   "source": "livret",
+   "livret": 4,
+   "page": 11,
+   "titre": "Un bocal de bonbons",
+   "fichier": "assets/2024/liv4-p11.webp",
+   "alt": "Photo d'un bocal rempli de bonbons, avec l'étiquette « 180 bonbons aux fruits » et la mention « La masse d'un bonbon est de : 2,4 g »."
+  },
+  {
+   "id": "liv4-p18",
+   "source": "livret",
+   "livret": 4,
+   "page": 18,
+   "titre": "Cinq figures en parties grisées",
+   "fichier": "assets/2024/liv4-p18.webp",
+   "alt": "Cinq figures partagées en parties égales dont certaines sont grisées : une croix (en haut à gauche), un rectangle quadrillé (en haut au centre), un rectangle à bandes (en haut à droite), un disque en secteurs (en bas à gauche) et une figure faite de triangles (en bas à droite). En haut de la page : la question 16 sur un pourcentage."
+  },
+  {
+   "id": "liv4-p20",
+   "source": "livret",
+   "livret": 4,
+   "page": 20,
+   "titre": "Choix musicaux par catégorie d'âge",
+   "fichier": "assets/2024/liv4-p20.webp",
+   "alt": "Diagramme en bâtons « Répartition des choix musicaux par catégorie d'âge » : nombre de votes (de 0 à 40) pour le classique, le rock, le rap, la variété française et le R&B, chez les ados, les jeunes et les adultes ; trois phrases à compléter sous le graphique."
+  },
+  {
+   "id": "liv4-p23",
+   "source": "livret",
+   "livret": 4,
+   "page": 23,
+   "titre": "Les préfixes des unités",
+   "fichier": "assets/2024/liv4-p23.webp",
+   "alt": "Les préfixes déca, déci, hecto, kilo, centi et milli ; une porte (200 … mètres), une tasse (25 … litres) et une brique de jus (2 … litres)."
+  },
+  {
+   "id": "liv5-p06",
+   "source": "livret",
+   "livret": 5,
+   "page": 6,
+   "titre": "Carte du monde des J.O.",
+   "fichier": "assets/2024/liv5-p06.webp",
+   "alt": "Carte du monde avec cinq étiquettes vides, chacune reliée à un lieu : en Europe du Nord, en Europe de l'Ouest, en Amérique centrale, en Asie de l'Est et en Australie. Sous la carte, la question 2b."
+  },
+  {
+   "id": "liv5-p16",
+   "source": "livret",
+   "livret": 5,
+   "page": 16,
+   "titre": "Calendrier des migrations d'oiseaux",
+   "fichier": "assets/2024/liv5-p16.webp",
+   "alt": "Calendrier annuel (de janvier à décembre) de quatre oiseaux : hirondelle rustique, coucou gris, martinet noir et chardonneret élégant. Les périodes de présence en Belgique sont en blanc, les périodes de migration et de présence ailleurs dans le monde en noir."
+  },
+  {
+   "id": "liv6-p10",
+   "source": "livret",
+   "livret": 6,
+   "page": 10,
+   "titre": "Tableau de multiplication",
+   "fichier": "assets/2024/liv6-p10.webp",
+   "alt": "Tableau de multiplication : lignes 900, 90, 9, 0,9 et 0,09 ; colonnes 0,07, 0,7, 7, 70 et 700. Plusieurs cases sont remplies, trois cases blanches sont à compléter."
+  },
+  {
+   "id": "liv7-p02",
+   "source": "livret",
+   "livret": 7,
+   "page": 2,
+   "titre": "Les gradins",
+   "fichier": "assets/2024/liv7-p02.webp",
+   "alt": "Dessin de gradins : de nombreuses rangées de sièges, séparées en trois blocs."
+  },
+  {
+   "id": "liv7-p03",
+   "source": "livret",
+   "livret": 7,
+   "page": 3,
+   "titre": "Trois droites graduées",
+   "fichier": "assets/2024/liv7-p03.webp",
+   "alt": "Trois droites graduées avec des nombres donnés et une case à compléter sur chacune (la deuxième et la troisième avec un agrandissement de la graduation). En haut de la page : la question 2 (multiples et diviseurs)."
+  },
+  {
+   "id": "liv7-p08",
+   "source": "livret",
+   "livret": 7,
+   "page": 8,
+   "titre": "Une division et une soustraction à compléter",
+   "fichier": "assets/2024/liv7-p08.webp",
+   "alt": "Une division posée en potence (diviseur 8, quotient 436, reste 1, dividende masqué) et une soustraction posée dont le premier terme est à retrouver."
+  },
+  {
+   "id": "liv8-p08",
+   "source": "livret",
+   "livret": 8,
+   "page": 8,
+   "titre": "Cinq photos d'une recette",
+   "fichier": "assets/2024/liv8-p08.webp",
+   "alt": "Cinq photos de différentes étapes de la préparation de truffes au chocolat : deux en haut, une au milieu, deux en bas."
+  },
+  {
+   "id": "liv9-p05",
+   "source": "livret",
+   "livret": 9,
+   "page": 5,
+   "titre": "Quatre illustrations",
+   "fichier": "assets/2024/liv9-p05.webp",
+   "alt": "Quatre illustrations d'une jeune fille devant un mur fissuré : assise sur un banc en train d'écrire (en haut à gauche), debout appuyée au mur en lisant (en haut à droite), assise par terre en lisant (en bas à gauche), debout avec un livre à la main (en bas à droite)."
+  },
+  {
+   "id": "liv10-p02",
+   "source": "livret",
+   "livret": 10,
+   "page": 2,
+   "titre": "Julia et les cinq sens",
+   "fichier": "assets/2024/liv10-p02.webp",
+   "alt": "Photo en noir et blanc d'un bébé, Julia, allongé sur le ventre ; une flèche désigne un de ses organes. Trois questions (a, b, c) sur les cinq sens."
+  },
+  {
+   "id": "liv10-p05",
+   "source": "livret",
+   "livret": 10,
+   "page": 5,
+   "titre": "Tableau de classification du vivant",
+   "fichier": "assets/2024/liv10-p05.webp",
+   "alt": "Tableau (présenté en largeur) : une colonne « Être vivant » et des colonnes d'attributs (squelette externe, squelette interne, coquille spiralée…). La ligne exemple « Argyronète » est remplie ; quatre lignes vides portent chacune une croix."
+  },
+  {
+   "id": "liv10-p06",
+   "source": "livret",
+   "livret": 10,
+   "page": 6,
+   "titre": "Cycle de vie de la méduse",
+   "fichier": "assets/2024/liv10-p06.webp",
+   "alt": "Schéma circulaire du cycle de vie de la méduse : sur le cercle intérieur, les étiquettes « Œuf », 2, 3, 4, 5 et 6 ; sur le cercle extérieur, les étiquettes A, B, C et D."
+  },
+  {
+   "id": "liv10-p07",
+   "source": "livret",
+   "livret": 10,
+   "page": 7,
+   "titre": "Cycle de vie du hanneton",
+   "fichier": "assets/2024/liv10-p07.webp",
+   "alt": "Schéma circulaire du cycle de vie du hanneton : quatre dessins d'étapes de sa vie numérotés de 1 à 4 et deux étiquettes, A et B, sur le cercle extérieur."
+  },
+  {
+   "id": "liv10-p08",
+   "source": "livret",
+   "livret": 10,
+   "page": 8,
+   "titre": "Quatre appareils du corps humain",
+   "fichier": "assets/2024/liv10-p08.webp",
+   "alt": "Quatre silhouettes humaines numérotées de 1 à 4, chacune montrant les organes d'un appareil du corps humain."
+  },
+  {
+   "id": "liv10-p10",
+   "source": "livret",
+   "livret": 10,
+   "page": 10,
+   "titre": "Un lac de montagne",
+   "fichier": "assets/2024/liv10-p10.webp",
+   "alt": "Photo en noir et blanc d'un lac de montagne avec un voilier. Le numéro 1 est placé dans le ciel, au-dessus des montagnes ; le numéro 2 est placé sur le lac."
+  },
+  {
+   "id": "liv10-p17",
+   "source": "livret",
+   "livret": 10,
+   "page": 17,
+   "titre": "Deux crânes",
+   "fichier": "assets/2024/liv10-p17.webp",
+   "alt": "Deux crânes vus de profil, l'un au-dessus de l'autre, chacun avec une étiquette vide à sa droite."
+  },
+  {
+   "id": "liv10-p18",
+   "source": "livret",
+   "livret": 10,
+   "page": 18,
+   "titre": "Les dents de six animaux",
+   "fichier": "assets/2024/liv10-p18.webp",
+   "alt": "Tableau (présenté en largeur) de la dentition de six animaux : lynx, sanglier, mouton, hérisson, furet et cerf. Une croix indique la forme de leurs incisives, de leurs canines et de leurs molaires et prémolaires."
   }
  ],
  "questions": [
@@ -820,14 +1063,30 @@
    "livret": 3,
    "numero": "3",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Écris le nom précis (2 mots) de chaque triangle dessiné.",
+   "type": "trous",
+   "enonce": "Observe les deux triangles dessinés dans le livret (page 4). Écris le nom précis (2 mots) de chaque triangle.",
    "points": 2,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "Un triangle isocèle acutangle et un triangle scalène rectangle (1 point par triangle, tout ou rien). « Triangle quelconque » à la place de « scalène » est refusé.",
-   "explication": "Regarde les longueurs des côtés (isocèle, scalène) puis les angles (acutangle, rectangle).",
-   "remarque": "Question appuyée sur les triangles dessinés dans le livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "ma-triangles",
+   "documents": [
+    "liv3-p04"
+   ],
+   "texte": "Triangle du haut : triangle {1}\nTriangle du bas : triangle {2}",
+   "reponse": [
+    [
+     "isocèle acutangle",
+     "acutangle isocèle",
+     "isocele acutangle",
+     "acutangle isocele"
+    ],
+    [
+     "scalène rectangle",
+     "rectangle scalène",
+     "scalene rectangle",
+     "rectangle scalene"
+    ]
+   ],
+   "explication": "Regarde les longueurs des côtés (isocèle, scalène) puis les angles (acutangle, rectangle). « Quelconque » ne remplace pas « scalène »."
   },
   {
    "id": "ceb-2024-l3-q4",
@@ -899,15 +1158,71 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2024-l3-q9",
+   "id": "ceb-2024-l3-q9a",
    "livret": 3,
-   "numero": "9",
+   "numero": "9a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Classe les figures numérotées selon leurs angles droits et leurs côtés isométriques.",
-   "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Observe les figures numérotées du livret (page 10). Écris dans chaque case du tableau le numéro d'une figure qui convient.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p10"
+   ],
+   "texte": "1 et seulement 1 angle droit  →  polygone : {1}  ·  non polygone : {2}\n2 et seulement 2 angles droits  →  polygone : {3}  ·  non polygone : {4}",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "11"
+    ],
+    [
+     "1",
+     "6"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "Un polygone n'a que des côtés droits ; une figure à bord courbe n'est pas un polygone. Figure 5 : un seul angle droit ; figure 11 : un angle droit et un bord courbe ; figures 1 et 6 : deux angles droits ; figure 2 : deux angles droits et un bord courbe."
+  },
+  {
+   "id": "ceb-2024-l3-q9b",
+   "livret": 3,
+   "numero": "9b",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Observe les figures numérotées du livret (page 10) et le tableau de la page 11. Écris dans chaque case du tableau le numéro d'une figure qui convient.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p10",
+    "liv3-p11"
+   ],
+   "texte": "Tous les côtés isométriques  →  triangle : {1}  ·  quadrilatère : {2}  ·  hexagone : {3}\nPas de côtés isométriques  →  triangle : {4}  ·  quadrilatère : {5}",
+   "reponse": [
+    [
+     "7"
+    ],
+    [
+     "4"
+    ],
+    [
+     "3"
+    ],
+    [
+     "5"
+    ],
+    [
+     "13"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "Triangle équilatéral : 7 ; losange : 4 ; hexagone régulier : 3. Sans aucun côté de même longueur : le triangle 5 et le quadrilatère 13."
   },
   {
    "id": "ceb-2024-l3-q10",
@@ -925,22 +1240,84 @@
    "livret": 3,
    "numero": "11",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Compte les faces, sommets et arêtes des solides A, B et C.",
+   "type": "trous",
+   "enonce": "Observe les solides A, B et C du livret (page 12). Complète les phrases par les nombres qui conviennent.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p12"
+   ],
+   "texte": "Solide A : {1} faces, {2} sommets, {3} arêtes\nSolide B : {4} faces, {5} sommets, {6} arêtes\nSolide C : {7} faces, {8} sommets, {9} arêtes",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "8"
+    ],
+    [
+     "12"
+    ],
+    [
+     "7"
+    ],
+    [
+     "10"
+    ],
+    [
+     "15"
+    ],
+    [
+     "7"
+    ],
+    [
+     "10"
+    ],
+    [
+     "15"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "Solide A (cube) : 6 faces, 8 sommets, 12 arêtes. Les solides B et C ont chacun 7 faces, 10 sommets et 15 arêtes."
   },
   {
    "id": "ceb-2024-l3-q12",
    "livret": 3,
    "numero": "12",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Place chaque solide dans le classement (polyèdre, prisme, pyramide…).",
+   "type": "grille",
+   "enonce": "Observe le classement et les neuf solides du livret (page 13). Dans le livret, il fallait écrire chaque numéro sous le solide qui convient (certains solides n'ont pas de numéro). Sous quel solide faut-il écrire chaque numéro ? Les solides sont comptés de gauche à droite dans chaque rangée.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p13"
+   ],
+   "lignes": [
+    "Numéro 1",
+    "Numéro 2",
+    "Numéro 3",
+    "Numéro 4"
+   ],
+   "colonnes": [
+    "En haut, 1er",
+    "En haut, 2e",
+    "En haut, 3e",
+    "En haut, 4e",
+    "En bas, 1er",
+    "En bas, 2e",
+    "En bas, 3e",
+    "En bas, 4e",
+    "En bas, 5e"
+   ],
+   "reponse": [
+    2,
+    1,
+    5,
+    3
+   ],
+   "explication": "1 : prisme droit à base triangulaire ; 2 : prisme droit à base hexagonale ; 3 : pyramide à base carrée ; 4 : un solide qui n'est pas un polyèdre (le cylindre)."
   },
   {
    "id": "ceb-2024-l3-q14",
@@ -958,11 +1335,30 @@
    "livret": 3,
    "numero": "15",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure l'agrandissement et la réduction de la figure.",
+   "type": "grille",
+   "enonce": "Observe la figure en T du livret (page 16) et les cinq figures dessinées en dessous. Dans le livret, il fallait entourer deux figures. Laquelle est l'agrandissement de la figure du haut ? Laquelle en est la réduction ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-echelle",
+   "documents": [
+    "liv3-p16"
+   ],
+   "lignes": [
+    "L'agrandissement",
+    "La réduction"
+   ],
+   "colonnes": [
+    "En haut à gauche",
+    "En haut à droite",
+    "Au milieu à gauche",
+    "En bas au centre",
+    "En bas à droite"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Dans un agrandissement ou une réduction, toutes les longueurs sont multipliées par le même nombre : la figure en haut à droite est 1,5 fois plus grande, celle en haut à gauche est deux fois plus petite."
   },
   {
    "id": "ceb-2024-l3-q16",
@@ -1152,11 +1548,28 @@
    "livret": 4,
    "numero": "8",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Écris l'aire des figures A, B et C tracées dans le quadrillage.",
+   "type": "trous",
+   "enonce": "Observe les trois figures A, B et C tracées dans le quadrillage du livret (page 9) : un carreau mesure 1 cm sur 1 cm. Écris la mesure de l'aire de chacune.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv4-p09"
+   ],
+   "texte": "Aire de la figure A = {1} cm²\nAire de la figure B = {2} cm²\nAire de la figure C = {3} cm²",
+   "reponse": [
+    [
+     "4"
+    ],
+    [
+     "6"
+    ],
+    [
+     "4"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "Compte les carreaux entiers, puis assemble les demi-carreaux : A = 4 cm², B = 6 cm², C = 4 cm²."
   },
   {
    "id": "ceb-2024-l4-q9",
@@ -1174,11 +1587,17 @@
    "livret": 4,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule la masse totale des bonbons du récipient (un bonbon pèse 2,4 g).",
+   "type": "numerique",
+   "enonce": "Observe le bocal du livret (page 11) : il contient 180 bonbons et la masse d'un bonbon est de 2,4 g. Calcule la masse totale des bonbons contenus dans ce bocal. Exprime ta réponse en kilogramme.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-conversions",
+   "documents": [
+    "liv4-p11"
+   ],
+   "unite": "kg",
+   "reponse": 0.432,
+   "explication": "180 × 2,4 g = 432 g, soit 0,432 kg."
   },
   {
    "id": "ceb-2024-l4-q11a",
@@ -1364,11 +1783,23 @@
    "livret": 4,
    "numero": "17",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Barre la figure dont la partie grisée représente une fraction différente des autres.",
+   "type": "qcm",
+   "enonce": "Observe les cinq figures du livret (page 18). Dans le livret, il fallait barrer la figure où la partie grisée représente une fraction différente de celle des quatre autres. Quelle est cette figure ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p18"
+   ],
+   "choix": [
+    "La croix (en haut à gauche)",
+    "Le rectangle quadrillé (en haut au centre)",
+    "Le rectangle à bandes (en haut à droite)",
+    "Le disque (en bas à gauche)",
+    "La figure faite de triangles (en bas à droite)"
+   ],
+   "reponse": 3,
+   "explication": "Quatre figures ont la même fraction grisée ; le disque en a une autre."
   },
   {
    "id": "ceb-2024-l4-q18a",
@@ -1404,15 +1835,69 @@
    "explication": "De 16:17 à 17:17 : 60 min, puis 4 min jusqu'à 17:21 : 64 min."
   },
   {
-   "id": "ceb-2024-l4-q19",
+   "id": "ceb-2024-l4-q19a",
    "livret": 4,
-   "numero": "19",
+   "numero": "19a",
    "domaine": "ma.donnees",
-   "type": "ouverte",
-   "enonce": "Lis le graphique des styles de musique par âge et complète les phrases.",
-   "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "numerique",
+   "enonce": "Observe le graphique du livret (page 20) : 100 ados (12-17 ans), 100 jeunes (18-25 ans) et 100 adultes (26 ans et +) ont répondu à une enquête sur le style de musique qu'ils écoutent. Complète : le nombre d'adultes qui écoutent de la musique classique est de … sur 100.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv4-p20"
+   ],
+   "reponse": 20,
+   "explication": "Dans le groupe « Classique », le bâtonnet des adultes (le plus foncé) monte jusqu'à 20."
+  },
+  {
+   "id": "ceb-2024-l4-q19b",
+   "livret": 4,
+   "numero": "19b",
+   "domaine": "ma.donnees",
+   "type": "qcm_multi",
+   "enonce": "Observe le graphique du livret (page 20). Deux types de musique obtiennent le même résultat chez les ados (12-17 ans). Lesquels ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv4-p20"
+   ],
+   "choix": [
+    "Classique",
+    "Rock",
+    "Rap",
+    "Variété française",
+    "R&B"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Chez les ados, le classique et la variété française ont tous deux 11 votes."
+  },
+  {
+   "id": "ceb-2024-l4-q19c",
+   "livret": 4,
+   "numero": "19c",
+   "domaine": "ma.donnees",
+   "type": "texte_court",
+   "enonce": "Observe le graphique du livret (page 20). Lors de cette enquête, moins de 10 jeunes sur 100 (18-25 ans) écoutent … Quel style de musique ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv4-p20"
+   ],
+   "reponse": [
+    "classique",
+    "musique classique",
+    "la musique classique",
+    "de la musique classique",
+    "le classique",
+    "du classique"
+   ],
+   "explication": "Chez les jeunes, seul le classique est sous les 10 votes (5)."
   },
   {
    "id": "ceb-2024-l4-q20",
@@ -1457,11 +1942,29 @@
    "livret": 4,
    "numero": "22",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Complète l'unité de chaque grandeur avec le préfixe adéquat (déca, déci, hecto, kilo, centi, milli).",
+   "type": "trous",
+   "enonce": "Observe le livret (page 23). Complète l'unité de mesure de chaque grandeur avec le préfixe adéquat (déca, déci, hecto, kilo, centi ou milli). Certains préfixes peuvent être utilisés plusieurs fois ; tu ne dois pas tous les utiliser.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-conversions",
+   "documents": [
+    "liv4-p23"
+   ],
+   "texte": "La porte : 200 {1}mètres\nLa tasse : 25 {2}litres\nLa brique de jus : 2 {3}litres",
+   "reponse": [
+    [
+     "centi"
+    ],
+    [
+     "centi"
+    ],
+    [
+     "déci",
+     "deci"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "Une porte mesure environ 200 centimètres (2 m), une tasse contient environ 25 centilitres et une petite brique de jus 2 décilitres (20 cl). « cm », « cl » et « dl » ne sont pas des préfixes."
   },
   {
    "id": "ceb-2024-l5-q1a",
@@ -1627,14 +2130,37 @@
    "livret": 5,
    "numero": "2a",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Écris le numéro des villes organisatrices des J.O. dans les étiquettes de la carte.",
+   "type": "grille",
+   "enonce": "Observe la carte du monde du livret (page 6) et les documents 1 à 5 sur les J.O. d'été (portfolio, page 12). Dans le livret, il fallait écrire le numéro des villes organisatrices dans les étiquettes correspondantes. Quel numéro faut-il écrire dans chaque étiquette ?",
    "points": 5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
    "documents": [
+    "liv5-p06",
     "jo-1"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette reliée à l'Europe du Nord",
+    "Étiquette reliée à l'Europe de l'Ouest",
+    "Étiquette reliée à l'Amérique centrale",
+    "Étiquette reliée à l'Asie de l'Est",
+    "Étiquette reliée à l'Australie"
+   ],
+   "colonnes": [
+    "Document 1",
+    "Document 2",
+    "Document 3",
+    "Document 4",
+    "Document 5"
+   ],
+   "reponse": [
+    4,
+    0,
+    2,
+    3,
+    1
+   ],
+   "explication": "Document 5 : Stockholm (Suède) ; 1 : Paris ; 3 : Mexico ; 4 : Séoul ; 2 : Melbourne."
   },
   {
    "id": "ceb-2024-l5-q2b",
@@ -2050,18 +2576,46 @@
    "explication": "Le trajet 3 passe par l'Italie, la Libye et le Tchad. Le trajet 1 finit au Sénégal. Le trajet 2 finit au Togo."
   },
   {
-   "id": "ceb-2024-l5-q3b",
+   "id": "ceb-2024-l5-q3b1",
    "livret": 5,
-   "numero": "3b",
+   "numero": "3b1",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Lis le calendrier des périodes de migration : quel oiseau part en septembre ? Combien de temps dure l'absence du chardonneret ?",
-   "points": 2,
+   "type": "texte_court",
+   "enonce": "Lis le calendrier annuel des périodes de migration d'oiseaux (livret, page 16). Écris le nom de l'oiseau qui commence sa migration au départ de la Belgique en septembre.",
+   "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "L'oiseau qui commence sa migration en septembre : l'hirondelle rustique (1 point). Le chardonneret est absent environ 5 mois (1 point).",
-   "explication": "Dans le calendrier, la période de migration de chaque oiseau est colorée dans une autre couleur que la présence en Belgique.",
-   "remarque": "Question appuyée sur le calendrier des migrations du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "hg-documents",
+   "documents": [
+    "liv5-p16"
+   ],
+   "reponse": [
+    "hirondelle rustique",
+    "l'hirondelle rustique",
+    "hirondelle",
+    "l'hirondelle"
+   ],
+   "explication": "Dans la colonne de septembre (S), seule la ligne de l'hirondelle rustique passe du blanc au noir."
+  },
+  {
+   "id": "ceb-2024-l5-q3b2",
+   "livret": 5,
+   "numero": "3b2",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Lis le calendrier du livret (page 16). Quelle est la durée des périodes de migration et de présence ailleurs dans le monde du chardonneret élégant ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "liv5-p16"
+   ],
+   "choix": [
+    "Environ 5 semaines",
+    "Environ 5 mois",
+    "Environ 7 mois"
+   ],
+   "reponse": 1,
+   "explication": "Pour le chardonneret, les cases noires couvrent environ deux mois et demi au début de l'année et deux mois et demi à la fin : environ 5 mois."
   },
   {
    "id": "ceb-2024-l5-q4a",
@@ -2611,11 +3165,29 @@
    "livret": 6,
    "numero": "12",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases blanches du tableau de multiplication (0,07 ; 0,7 ; 7 ; 70 ; 700).",
+   "type": "trous",
+   "enonce": "Observe le tableau de multiplication du livret (page 10). Écris le nombre qui convient dans chacune des cases blanches.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv6-p10"
+   ],
+   "texte": "Ligne 90, colonne 0,7 : {1}\nLigne 0,9, colonne 0,07 : {2}\nLigne 0,09, colonne 700 : {3}",
+   "reponse": [
+    [
+     "63"
+    ],
+    [
+     "0,063",
+     "0.063"
+    ],
+    [
+     "63"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "90 × 0,7 = 63 ; 0,9 × 0,07 = 0,063 ; 0,09 × 700 = 63."
   },
   {
    "id": "ceb-2024-l6-q13a",
@@ -2658,11 +3230,17 @@
    "livret": 7,
    "numero": "1",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Calcule le nombre de places assises des gradins (photo).",
+   "type": "numerique",
+   "enonce": "Observe les gradins du livret (page 2). Calcule le nombre de places assises que compte l'ensemble de ces gradins.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-operations",
+   "documents": [
+    "liv7-p02"
+   ],
+   "unite": "places",
+   "reponse": 156,
+   "explication": "Il y a 12 rangées de 3 + 7 + 3 = 13 sièges : 12 × 13 = 156 places."
   },
   {
    "id": "ceb-2024-l7-q2a",
@@ -2714,11 +3292,31 @@
    "livret": 7,
    "numero": "3",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases de la droite graduée.",
+   "type": "trous",
+   "enonce": "Observe les trois droites graduées du livret (page 3). Complète chaque case avec le nombre qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-droite-graduee",
+   "documents": [
+    "liv7-p03"
+   ],
+   "texte": "a) {1}\nb) {2}\nc) {3}",
+   "reponse": [
+    [
+     "10,2",
+     "10.2"
+    ],
+    [
+     "5,4",
+     "5.4"
+    ],
+    [
+     "7,04",
+     "7.04"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "a) chaque graduation vaut 0,2 ; b) l'agrandissement est gradué de 0,1 en 0,1 à partir de 5 ; c) il est gradué de 0,01 en 0,01 à partir de 7."
   },
   {
    "id": "ceb-2024-l7-q4",
@@ -2900,11 +3498,27 @@
    "livret": 7,
    "numero": "11",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Retrouve le dividende de la division et le premier terme de la soustraction.",
+   "type": "trous",
+   "enonce": "Observe la division et la soustraction du livret (page 8). a) Écris le dividende de cette division. b) Écris le premier terme de cette soustraction.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-operations",
+   "documents": [
+    "liv7-p08"
+   ],
+   "texte": "a) Dividende : {1}\nb) Premier terme : {2}",
+   "reponse": [
+    [
+     "3489",
+     "3 489"
+    ],
+    [
+     "2220",
+     "2 220"
+    ]
+   ],
+   "champsCourts": true,
+   "explication": "a) dividende = diviseur × quotient + reste : 8 × 436 + 1 = 3 489. b) 1 982 + 238 = 2 220."
   },
   {
    "id": "ceb-2024-l7-q12",
@@ -3331,11 +3945,24 @@
    "livret": 8,
    "numero": "14",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Barre la photo de l'étape qui n'apparait pas dans la recette.",
+   "type": "qcm",
+   "enonce": "Voici cinq photos du livret (page 8) qui illustrent différentes étapes de la préparation des truffes au chocolat. Dans le livret, il fallait barrer la photo de l'étape qui n'apparait pas dans la recette. Laquelle est-ce ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "liv8-p08",
+    "choco-5"
+   ],
+   "choix": [
+    "Photo 1 (en haut à gauche)",
+    "Photo 2 (en haut à droite)",
+    "Photo 3 (au milieu)",
+    "Photo 4 (en bas à gauche)",
+    "Photo 5 (en bas à droite)"
+   ],
+   "reponse": 3,
+   "explication": "Compare chaque photo aux étapes de la recette : le sucre n'en fait pas partie."
   },
   {
    "id": "ceb-2024-l8-q15",
@@ -3675,11 +4302,25 @@
    "livret": 9,
    "numero": "8",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Coche l'illustration du moment où Nico parle à Nour pour la première fois.",
+   "type": "qcm",
+   "enonce": "Observe les quatre illustrations du livret (page 5). Dans le livret, il fallait cocher celle qui correspond le mieux au moment où Nico parle à Nour pour la première fois. Laquelle est-ce ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "liv9-p05",
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "choix": [
+    "Illustration 1 (en haut à gauche)",
+    "Illustration 2 (en haut à droite)",
+    "Illustration 3 (en bas à gauche)",
+    "Illustration 4 (en bas à droite)"
+   ],
+   "reponse": 2,
+   "explication": "Au moment où Nico lui parle, Nour est assise par terre, plongée dans son livre de Prévert."
   },
   {
    "id": "ceb-2024-l9-q9",
@@ -4137,14 +4778,21 @@
    "livret": 10,
    "numero": "1b",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Écris le nom du sens lié à l'organe désigné par la flèche sur la photo.",
+   "type": "texte_court",
+   "enonce": "Observe la photo de Julia dans le livret (page 2). Un organe est désigné par une flèche sur la photo. Écris le nom du sens lié à cet organe.",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "L'ouïe (1 point).",
-   "explication": "Le sens lié à l'oreille.",
-   "remarque": "Question appuyée sur la photo du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv10-p02"
+   ],
+   "reponse": [
+    "l'ouïe",
+    "ouïe",
+    "l'ouie",
+    "ouie"
+   ],
+   "explication": "La flèche désigne l'oreille : le sens lié à l'oreille est l'ouïe."
   },
   {
    "id": "ceb-2024-l10-q1c",
@@ -4234,43 +4882,140 @@
    "livret": 10,
    "numero": "4",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Tableau de classification : écris le nom de l'animal qui correspond aux attributs cochés.",
+   "type": "trous",
+   "enonce": "Observe la collection d'êtres vivants (portfolio, page 23) et le tableau du livret (page 5). Dans le tableau, écris le nom de l'animal correspondant aux attributs marqués par une croix, pour chacune des quatre lignes vides (de haut en bas, sous la ligne « Argyronète »).",
    "points": 4,
    "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
+    "liv10-p05",
     "classification"
    ],
-   "numerisable": false,
-   "reponseModele": "De haut en bas : l'aselle (aquatique), l'épinoche, le ragondin, le triton (à crête). 1 point par ligne du tableau.",
-   "explication": "Retrouve, parmi les animaux de la collection du portfolio, celui qui possède tous les attributs cochés.",
-   "remarque": "Le tableau aux attributs cochés est dans le livret et non dans le portfolio : gardée en mode papier."
+   "texte": "1re ligne vide : {1}\n2e ligne vide : {2}\n3e ligne vide : {3}\n4e ligne vide : {4}",
+   "reponse": [
+    [
+     "aselle aquatique",
+     "l'aselle aquatique",
+     "aselle",
+     "l'aselle",
+     "aselle (aquatique)",
+     "l'aselle (aquatique)"
+    ],
+    [
+     "épinoche",
+     "l'épinoche"
+    ],
+    [
+     "ragondin",
+     "le ragondin"
+    ],
+    [
+     "triton à crête",
+     "le triton à crête",
+     "triton",
+     "le triton",
+     "triton (à crête)",
+     "triton crêté"
+    ]
+   ],
+   "explication": "Aselle : 2 paires d'antennes ; épinoche : nageoires à rayons ; triton : 4 doigts à la main ; ragondin : poils et mamelles."
   },
   {
-   "id": "ceb-2024-l10-q5",
+   "id": "ceb-2024-l10-q5a",
    "livret": 10,
-   "numero": "5",
+   "numero": "5a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Schémas du cycle de vie de la méduse et du hanneton : retrouve les étiquettes.",
-   "points": 6,
-   "corrigeVerifie": false,
+   "type": "grille",
+   "enonce": "Observe le schéma du cycle de vie de la méduse (livret, page 6 ; portfolio, page 24). À quoi correspondent les étiquettes 2 et 4 ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
    "documents": [
-    "meduse",
+    "liv10-p06",
+    "meduse"
+   ],
+   "lignes": [
+    "L'étiquette 2 correspond…",
+    "L'étiquette 4 correspond…"
+   ],
+   "colonnes": [
+    "à l'éphyrule",
+    "au strobile",
+    "au polype",
+    "à la planule"
+   ],
+   "reponse": [
+    3,
+    1
+   ],
+   "explication": "Après l'œuf vient la planule (2) ; le polype se transforme ensuite en strobile (4), qui libère des éphyrules."
+  },
+  {
+   "id": "ceb-2024-l10-q5b",
+   "livret": 10,
+   "numero": "5b",
+   "domaine": "sc.vivant",
+   "type": "grille",
+   "enonce": "Observe le schéma du cycle de vie du hanneton (livret, page 7), proche de celui du papillon (portfolio, page 25). Quelle étiquette (un numéro ou une lettre) correspond à chaque proposition ?",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "liv10-p07",
     "papillon"
    ],
-   "numerisable": false
+   "lignes": [
+    "La métamorphose du hanneton porte l'étiquette…",
+    "La pupe du hanneton porte l'étiquette…",
+    "La reproduction du hanneton porte l'étiquette…",
+    "Le hanneton adulte porte l'étiquette…"
+   ],
+   "colonnes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "A",
+    "B"
+   ],
+   "reponse": [
+    5,
+    2,
+    4,
+    3
+   ],
+   "explication": "La métamorphose (B) est le passage de la larve à l'adulte ; la pupe est le dessin 3 ; l'adulte est le dessin 4 ; la reproduction (A) mène de l'adulte aux œufs."
   },
   {
    "id": "ceb-2024-l10-q6",
    "livret": 10,
    "numero": "6",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Schémas de quatre appareils du corps humain : lequel est circulatoire, respiratoire, digestif ?",
+   "type": "grille",
+   "enonce": "Observe les schémas de quatre appareils du livret (page 8). Quel schéma correspond à chaque proposition ?",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv10-p08"
+   ],
+   "lignes": [
+    "L'appareil circulatoire est le schéma…",
+    "L'appareil respiratoire est le schéma…",
+    "Transformer les aliments en éléments qui pourront être assimilés par notre organisme est la fonction de l'appareil…"
+   ],
+   "colonnes": [
+    "numéro 1",
+    "numéro 2",
+    "numéro 3",
+    "numéro 4"
+   ],
+   "reponse": [
+    1,
+    2,
+    3
+   ],
+   "explication": "Le cœur et les vaisseaux : appareil circulatoire (2) ; les poumons : appareil respiratoire (3) ; l'estomac et les intestins : appareil digestif (4)."
   },
   {
    "id": "ceb-2024-l10-q7a",
@@ -4314,14 +5059,28 @@
    "livret": 10,
    "numero": "8a",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Photo d'un lac de montagne : écris les états de l'eau observés.",
+   "type": "trous",
+   "enonce": "Observe cette photo d'un lac de montagne (livret, page 10). Écris le nom des états de l'eau que tu observes aux endroits 1 et 2.",
    "points": 2,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "Photo 1 : l'eau à l'état gazeux (de gaz). Photo 2 : l'eau à l'état liquide. (1 point par état.)",
-   "explication": "Les états de l'eau : solide (glace), liquide, gazeux (vapeur).",
-   "remarque": "Question appuyée sur la photo du lac du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "sc-etats",
+   "documents": [
+    "liv10-p10"
+   ],
+   "texte": "1 : eau à l'état {1}\n2 : eau à l'état {2}",
+   "reponse": [
+    [
+     "gazeux",
+     "gazeuse",
+     "gaz",
+     "de gaz",
+     "gazeux (de gaz)"
+    ],
+    [
+     "liquide"
+    ]
+   ],
+   "explication": "Les états de l'eau : solide (glace), liquide, gazeux (vapeur). L'eau du lac est liquide ; dans l'air (1), l'eau est à l'état gazeux."
   },
   {
    "id": "ceb-2024-l10-q8b",
@@ -4369,18 +5128,64 @@
    "explication": "Les brindilles sont encore solides ; fondu, l'aluminium est liquide ; refroidi, il redevient solide."
   },
   {
-   "id": "ceb-2024-l10-q9a",
+   "id": "ceb-2024-l10-q9a1",
    "livret": 10,
-   "numero": "9a",
+   "numero": "9a1",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Complète la tendance générale de chaque journée du bulletin météo à l'aide de la légende.",
-   "points": 2,
-   "corrigeVerifie": false,
+   "type": "qcm",
+   "enonce": "Observe le bulletin météorologique (portfolio, page 26). À l'aide de la légende, quelle est la tendance générale de la journée du mardi 25/06 ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
    "documents": [
     "meteo"
    ],
-   "numerisable": false
+   "choix": [
+    "Ensoleillé ou peu nuageux",
+    "Nuageux, mais sec",
+    "Très nuageux, mais sec",
+    "Temps couvert, mais sec",
+    "Nuageux, averses possibles",
+    "Très nuageux, parfois une averse",
+    "Nuageux avec averses",
+    "Nuageux, averses fréquentes",
+    "Très nuageux avec averses",
+    "Très nuageux avec averses fréquentes ou intenses",
+    "Temps couvert avec averses intenses",
+    "Orages"
+   ],
+   "reponse": 11,
+   "explication": "Le symbole du mardi (nuage sombre avec pluie et éclair) correspond à « Orages » dans la légende."
+  },
+  {
+   "id": "ceb-2024-l10-q9a2",
+   "livret": 10,
+   "numero": "9a2",
+   "domaine": "sc.energie",
+   "type": "qcm",
+   "enonce": "Observe le bulletin météorologique (portfolio, page 26). À l'aide de la légende, quelle est la tendance générale de la journée du jeudi 27/06 ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "meteo"
+   ],
+   "choix": [
+    "Ensoleillé ou peu nuageux",
+    "Nuageux, mais sec",
+    "Très nuageux, mais sec",
+    "Temps couvert, mais sec",
+    "Nuageux, averses possibles",
+    "Très nuageux, parfois une averse",
+    "Nuageux avec averses",
+    "Nuageux, averses fréquentes",
+    "Très nuageux avec averses",
+    "Très nuageux avec averses fréquentes ou intenses",
+    "Temps couvert avec averses intenses",
+    "Orages"
+   ],
+   "reponse": 9,
+   "explication": "Le symbole du jeudi (un peu de soleil derrière un gros nuage sombre avec beaucoup de pluie) correspond à « Très nuageux avec averses fréquentes ou intenses »."
   },
   {
    "id": "ceb-2024-l10-q9b",
@@ -4612,14 +5417,29 @@
    "livret": 10,
    "numero": "11a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète les étiquettes du schéma (omnivore, herbivore, carnivore).",
+   "type": "grille",
+   "enonce": "Observe les deux crânes du livret (page 17) et le tableau des dents du portfolio (page 28). À l'aide des informations, quel mot faut-il écrire dans chaque étiquette ?",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-regimes",
    "documents": [
+    "liv10-p17",
     "dents"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette du crâne du haut",
+    "Étiquette du crâne du bas"
+   ],
+   "colonnes": [
+    "Omnivore",
+    "Herbivore",
+    "Carnivore"
+   ],
+   "reponse": [
+    2,
+    0
+   ],
+   "explication": "Le crâne du haut a de longues canines pointues et recourbées : carnivore. Le crâne du bas a des incisives larges, de petites canines et des molaires à petites bosses (comme les dents humaines) : omnivore."
   },
   {
    "id": "ceb-2024-l10-q11b",
@@ -4627,14 +5447,16 @@
    "numero": "11b",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "D'après le tableau des dents, quel est le régime alimentaire de ces animaux ? (Le furet a des canines longues, pointues et recourbées et des molaires en forme de scie ; le cerf a des incisives larges, plates et en forme de bêche et des molaires aplaties.)",
-   "points": 2,
+   "enonce": "En fonction du tableau des dents du livret (page 18), quel est le régime alimentaire de chaque animal ? (Le lynx est carnivore, le sanglier est omnivore et le mouton est herbivore.)",
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-regimes",
    "documents": [
+    "liv10-p18",
     "dents"
    ],
    "lignes": [
+    "Hérisson",
     "Furet",
     "Cerf"
    ],
@@ -4644,10 +5466,11 @@
     "Omnivore"
    ],
    "reponse": [
+    2,
     0,
     1
    ],
-   "explication": "Canines longues et recourbées : carnivore. Incisives en bêche et molaires plates, sans canines : herbivore. (Dans l'épreuve, il fallait aussi classer le hérisson : omnivore.)"
+   "explication": "Compare chaque animal à ceux dont le régime est donné : le hérisson a les mêmes dents que le sanglier (omnivore), le furet les mêmes que le lynx (carnivore) et le cerf les mêmes que le mouton (herbivore)."
   },
   {
    "id": "ceb-2024-l10-q12a",
