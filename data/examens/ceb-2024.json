@@ -610,7 +610,10 @@
      "170°",
      "170 degrés Celsius",
      "170 degres",
-     "170 degrés celsius"
+     "170 degrés celsius",
+     "170 °",
+     "170 degrés C",
+     "170 degrés c"
     ],
     [
      "8 min",
@@ -639,11 +642,10 @@
     [
      "coût",
      "le coût",
+     "cout",
+     "le cout",
      "prix",
-     "le prix",
-     "valeur",
-     "monnaie",
-     "cout"
+     "le prix"
     ]
    ],
    "explication": "Les grammes mesurent une masse ; les euros un coût (un prix). Attention : on parle de masse, pas de « poids »."
@@ -1987,7 +1989,15 @@
      "6 × 1250",
      "6 × 1 250",
      "6 x 1250",
-     "6 x 1 250"
+     "6 x 1 250",
+     "(6 × 1250)",
+     "(6 × 1 250)",
+     "6 fois 1250",
+     "6 fois 1 250",
+     "(6 x 1250)",
+     "(6 x 1 250)",
+     "3750+3750",
+     "3 750+3 750"
     ]
    ],
    "explication": "15 000 contient 4 fois 3 750. 6 × 1 250 = 7 500, il manque 7 500."
@@ -2146,12 +2156,16 @@
    "reponse": [
     [
      "0,1",
-     "1/10"
+     "1/10",
+     "0.1",
+     "10/100"
     ],
     [
      "0,5",
      "1/2",
-     "5/10"
+     "5/10",
+     "0.5",
+     "10/20"
     ],
     [
      "50"
@@ -2160,7 +2174,8 @@
      "2,5",
      "5/2",
      "25/10",
-     "2 et demi"
+     "2 et demi",
+     "2.5"
     ]
    ],
    "explication": "10 × 0,1 = 1 ; 2 × 0,5 = 1 ; 0,2 × 50 = 10 ; 4 × 2,5 = 10."
@@ -2704,23 +2719,45 @@
      "l'equateur",
      "équateur",
      "pays au climat chaud et humide",
-     "des pays proches de l'équateur"
+     "des pays proches de l'équateur",
+     "dans un pays au climat chaud et humide",
+     "pays au climat chaud et humide",
+     "sous un climat chaud et humide",
+     "des régions proches de l'équateur",
+     "pays proches de l'équateur"
     ],
     [
      "sucrée et légèrement acide",
      "sucrée et acide",
-     "sucree et legerement acide"
+     "sucree et legerement acide",
+     "à la fois sucrée et légèrement acide",
+     "sucrée et légèrement acide",
+     "sucré et légèrement acide",
+     "à la fois sucré et légèrement acide",
+     "légèrement acide et sucrée"
     ],
     [
      "fermentation",
      "phase de fermentation",
      "la première étape",
-     "première étape"
+     "première étape",
+     "durant la fermentation",
+     "pendant la fermentation",
+     "durant la première étape"
     ],
     [
      "séchage",
      "sechage",
-     "séchage au soleil"
+     "séchage au soleil",
+     "le séchage",
+     "séchage des fèves",
+     "au soleil",
+     "en exposant les fèves au soleil",
+     "exposer les fèves au soleil",
+     "en les faisant sécher",
+     "en faisant sécher les fèves",
+     "faire sécher les fèves",
+     "sécher les fèves"
     ]
    ],
    "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête. La pulpe est à la fois sucrée ET légèrement acide : une seule des deux saveurs ne suffit pas."
@@ -2934,8 +2971,11 @@
     "Le chocolat, stop ou encore ?",
     "Envie de chocolat ?"
    ],
-   "reponse": 0,
-   "explication": "La cabosse, fruit du cacaoyer, est décrite dans « D'où vient le chocolat ? ». Le corrigé officiel accepte aussi « Comment fabrique-t-on le chocolat ? »."
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "La cabosse, fruit du cacaoyer, est décrite dans « D'où vient le chocolat ? » ; la récolte et le traitement sont aussi expliqués dans « Comment fabrique-t-on le chocolat ? ». Les deux réponses sont acceptées."
   },
   {
    "id": "ceb-2024-l8-q18",
@@ -3017,14 +3057,31 @@
      "dégout",
      "dégoût",
      "dégoutant",
-     "dégoûtant"
+     "dégoûtant",
+     "déguste",
+     "dégusté",
+     "dégustons",
+     "dégustez",
+     "dégustent",
+     "dégustait",
+     "goute",
+     "goûte",
+     "goutez",
+     "goutons",
+     "goûté",
+     "gouté"
     ],
     [
      "trancher",
      "tranche",
      "tranchoir",
      "trancheur",
-     "trancheuse"
+     "trancheuse",
+     "tranché",
+     "tranchons",
+     "tranchez",
+     "tranchent",
+     "tranchait"
     ]
    ],
    "explication": "Dégustation → déguster, dégustateur. Tranchant → trancher, une tranche. On n'accepte ni le mot donné, ni le même mot au féminin ou au pluriel."
@@ -3424,20 +3481,40 @@
    "explication": "« il » montre que c'est un garçon qui parle ; « provoquée » (féminin) montre qu'il parle à une fille."
   },
   {
+   "id": "ceb-2024-l9-q20a",
+   "livret": 9,
+   "numero": "20a",
+   "domaine": "fr.orthographe",
+   "type": "texte_court",
+   "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée. Recopie le mot de l'extrait qui prouve qui parle.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-accords",
+   "reponse": [
+    "il",
+    "« il »"
+   ],
+   "souple": false,
+   "explication": "Le pronom « il » prouve que celui qui parle est un garçon.",
+   "documents": [
+    "coeur-2"
+   ]
+  },
+  {
    "id": "ceb-2024-l9-q20b",
    "livret": 9,
    "numero": "20b",
    "domaine": "fr.orthographe",
    "type": "texte_court",
-   "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée. Recopie le mot qui prouve qu'il parle à une fille.",
-   "points": 1,
+   "enonce": "« Ça parle de vaches, ton bouquin ? » l'avait-il gentiment provoquée. Recopie le mot de l'extrait qui prouve à qui il parle.",
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
    "reponse": [
     "provoquée"
    ],
    "souple": false,
-   "explication": "Le participe « provoquée » s'accorde avec « l' » (Nour), qui est féminin."
+   "explication": "Le participe « provoquée » s'accorde avec « l' » (Nour), qui est féminin : il parle à une fille."
   },
   {
    "id": "ceb-2024-l9-q21",
@@ -3478,14 +3555,15 @@
      "se"
     ],
     [
-     "la",
      "lui",
+     "la",
      "se"
     ]
    ],
-   "explication": "« la » (il la connaissait), « lui » (il lui avait adressé la parole) et « se » (elle se tenait) désignent Nour.",
+   "explication": "« la » (il la connaissait), « lui » (il lui avait adressé la parole) et « se » (elle se tenait) désignent Nour. Deux mots différents suffisent.",
    "souple": true,
-   "texte": "1er mot : {1}\n2e mot : {2}"
+   "texte": "1er mot : {1}\n2e mot : {2}",
+   "differentes": true
   },
   {
    "id": "ceb-2024-l9-q23",
@@ -3559,7 +3637,7 @@
     1,
     3
    ],
-   "explication": "avais terminé : plus-que-parfait (auxiliaire à l'imparfait). écrivais : imparfait. donnera : futur simple. étonnerait : conditionnel présent."
+   "explication": "avais terminé : plus-que-parfait (auxiliaire à l'imparfait + participe passé). m'étonnerait : conditionnel présent."
   },
   {
    "id": "ceb-2024-l9-q26",
@@ -3896,16 +3974,19 @@
    "documents": [
     "meteo"
    ],
-   "texte": "Jeudi 27/06, la donnée « sud-ouest » est la {1} du vent.  ·  Vendredi 28/06, la quantité de précipitations est de {2} mm.",
+   "texte": "Jeudi 27/06, la donnée « sud-ouest » est la {1} du vent.  ·  Vendredi 28/06, la quantité de précipitations est de {2}.",
    "reponse": [
     [
-     "direction"
+     "direction",
+     "la direction"
     ],
     [
-     "15"
+     "15 mm",
+     "15mm",
+     "15 millimètres"
     ]
    ],
-   "explication": "SO = sud-ouest : une direction. Vendredi : 15 mm de pluie."
+   "explication": "SO = sud-ouest : une direction. Vendredi : 15 mm de pluie (n'oublie pas l'unité)."
   },
   {
    "id": "ceb-2024-l10-q10a1",
