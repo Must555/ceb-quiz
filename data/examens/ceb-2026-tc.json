@@ -430,7 +430,16 @@
       "page": 7,
       "titre": "Les robinets imaginés par Jules et par Nina (question 11)",
       "fichier": "assets/2026-tc/liv1-p07.webp",
-      "alt": "Deux enfants imaginent chacun un robinet dans une bulle de pensée. Jules (à gauche) imagine un robinet moderne en métal chromé à poignée carrée. Nina (à droite) imagine un robinet ancien à tête en croix à quatre branches, avec un long bec courbe."
+      "alt": "Deux enfants, Jules et Nina, imaginent chacun un robinet dans une bulle de pensée ; leur prénom est écrit sous chaque enfant."
+    },
+    {
+      "id": "liv3-p11",
+      "source": "livret",
+      "livret": 3,
+      "page": 11,
+      "titre": "Photo de cyclistes à l'arrivée d'une course (question 13)",
+      "fichier": "assets/2026-tc/liv3-p11.webp",
+      "alt": "Photo en noir et blanc de cyclistes qui terminent une course, avec la ligne d'arrivée ; Tim, Max et Romain sont désignés par une flèche."
     }
   ],
   "questions": [
@@ -933,7 +942,7 @@
       "numero": "13",
       "domaine": "ma.geometrie",
       "type": "trous",
-      "enonce": "Observe cette photo de cyclistes qui terminent une course. Trois coureurs ont déjà franchi la ligne d'arrivée avant Tim. Complète.",
+      "enonce": "Observe cette photo de cyclistes qui terminent une course. Trois coureurs ont déjà franchi la ligne d'arrivée avant Tim. Écris la position à laquelle se trouve chaque cycliste au moment où cette photo a été prise. Exemple : Max est en neuvième position de la course.",
       "points": 2,
       "corrigeVerifie": true,
       "texte": "Tim est en {1} position. Jonas se trouve 8 places derrière Romain, qui est en douzième position : Jonas est en {2} position.",
@@ -952,7 +961,10 @@
         ]
       ],
       "souple": true,
-      "explication": "3 coureurs sont devant Tim, donc Tim est 4e. Romain est 12e ; 8 places derrière : 12 + 8 = 20e. Attention : écrire seulement « 4 » ou « 20 » ne suffit pas, il faut un nombre ordinal (4e, quatrième)."
+      "explication": "3 coureurs sont devant Tim, donc Tim est 4e. Romain est 12e ; 8 places derrière : 12 + 8 = 20e. Attention : écrire seulement « 4 » ou « 20 » ne suffit pas, il faut un nombre ordinal (4e, quatrième).",
+      "documents": [
+        "liv3-p11"
+      ]
     },
     {
       "id": "ceb-2026-tc-l3-q19",
