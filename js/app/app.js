@@ -550,7 +550,7 @@ function majEtat() {
 // max : nombre d'écoutes permises (2 à l'examen, comme à l'épreuve ; illimité à l'entraînement).
 function rendreDocs(docs) {
   return docs.map((d, i) => d.type === 'ecoute'
-    ? `<div class="ecoute" data-doc="${d.id}"><p class="ecoute-titre">🎧 ${esc(d.titre)}</p>
+    ? `<div class="ecoute" data-doc="${d.id}"><p class="ecoute-titre">🎧 Texte à écouter</p>
         <button class="btn btn-cta ecoute-btn" data-doc="${d.id}">▶️ Écouter le texte</button>
         <p class="ecoute-info mute"></p></div>`
     : `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
@@ -975,7 +975,8 @@ function allerQuestion(i) {
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${rendreDocs(docs)}
     <div id="q-saisie">${rendreSaisie(q).replace('puis compare-la avec la réponse modèle.', 'tu la compareras avec la réponse modèle à la fin.')}</div>`;
-  reel.ecoutes = reel.ecoutes ?? {};
+  // Écoutes comptées par examen (2 au plus, comme à l'épreuve).
+  if (reel.ecoutes?.examen !== reel.examen.id) reel.ecoutes = { examen: reel.examen.id };
   brancherDocs(docs, { compteur: reel.ecoutes, max: 2 });
   taire(); brancherBoutonVoix($('#btn-voix'), () => texteAVoix(q));
   let ui = null; // reste nul pendant la remise des réponses déjà données
