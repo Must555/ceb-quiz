@@ -298,6 +298,285 @@
    "titre": "Quatre caméléons qui détendent leur langue",
    "fichier": "assets/2016/liv5-p08.webp",
    "alt": "Quatre dessins d'un caméléon sur une branche, la langue tendue, numérotés de 1 à 4. Sous les dessins, la question 11."
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Huit figures et l'arbre de classement",
+   "fichier": "assets/2016/liv3-p04.webp",
+   "alt": "Huit figures planes numérotées de 1 à 8. Dessous, un arbre de classement à trois colonnes (figures qui sont des quadrilatères, figures qui ont au moins un angle droit, numéros des figures) à compléter ; le numéro 1 est déjà placé."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Cinq solides de la vie courante",
+   "fichier": "assets/2016/liv3-p06.webp",
+   "alt": "Cinq objets de la vie courante, chacun avec le dessin d'un solide numéroté de 1 à 5, huit étiquettes de noms de solides en haut de la page et un cadre vide sous chaque solide."
+  },
+  {
+   "id": "liv3-p09",
+   "source": "livret",
+   "livret": 3,
+   "page": 9,
+   "titre": "Papier tramé et pyramide qui pivote",
+   "fichier": "assets/2016/liv3-p09.webp",
+   "alt": "En haut, un papier tramé avec un segment tracé. En bas, cinq photos d'une pyramide à base carrée qu'on fait pivoter ; des lettres sont écrites sur ses faces et deux pastilles blanches sont vides sur la quatrième photo."
+  },
+  {
+   "id": "liv3-p10",
+   "source": "livret",
+   "livret": 3,
+   "page": 10,
+   "titre": "Quatre pliages",
+   "fichier": "assets/2016/liv3-p10.webp",
+   "alt": "Quatre photos numérotées de 1 à 4 montrant chacune une forme en papier quadrillé pliée, avec le pli visible."
+  },
+  {
+   "id": "liv4-p08",
+   "source": "livret",
+   "livret": 4,
+   "page": 8,
+   "titre": "Plan de la villa gallo-romaine de Malagne",
+   "fichier": "assets/2016/liv4-p08.webp",
+   "alt": "Plan des vestiges d'un bâtiment d'habitation, avec des numéros de 1 à 7 sur les différentes parties, et la légende correspondante."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "Photo aérienne des vestiges de la villa",
+   "fichier": "assets/2016/liv4-p09.webp",
+   "alt": "Photo aérienne en noir et blanc des vestiges de la villa ; trois pastilles repérées A, B et C sont placées sur la photo."
+  },
+  {
+   "id": "liv4-p14",
+   "source": "livret",
+   "livret": 4,
+   "page": 14,
+   "titre": "Six documents sur deux villes",
+   "fichier": "assets/2016/liv4-p14.webp",
+   "alt": "Six documents numérotés de 1 à 6 : deux photos aériennes du 21e siècle, deux cartes du 21e siècle et deux cartes du 17e siècle, représentant deux villes."
+  },
+  {
+   "id": "liv4-p16",
+   "source": "livret",
+   "livret": 4,
+   "page": 16,
+   "titre": "La « Gaule Belgique » à l'époque romaine",
+   "fichier": "assets/2016/liv4-p16.webp",
+   "alt": "Carte avec des villes, des fleuves, les frontières de la Belgique actuelle, des grandes chaussées romaines et des voies romaines secondaires."
+  },
+  {
+   "id": "liv4-p18",
+   "source": "livret",
+   "livret": 4,
+   "page": 18,
+   "titre": "L'hypocauste (schémas)",
+   "fichier": "assets/2016/liv4-p18.webp",
+   "alt": "Deux schémas d'un hypocauste avec des mots de légende reliés par des traits : tubuli, piscine chaude, suspensura, pilettes, praefurnium."
+  },
+  {
+   "id": "liv4-p19",
+   "source": "livret",
+   "livret": 4,
+   "page": 19,
+   "titre": "Photo des vestiges d'un hypocauste",
+   "fichier": "assets/2016/liv4-p19.webp",
+   "alt": "Photo de vestiges d'un hypocauste avec quatre repères A, B, C et D, et un tableau de quatre mots à compléter (tubuli, pilettes, suspensura, praefurnium)."
+  },
+  {
+   "id": "liv4-p20",
+   "source": "livret",
+   "livret": 4,
+   "page": 20,
+   "titre": "Observation d'un paysage",
+   "fichier": "assets/2016/liv4-p20.webp",
+   "alt": "Photographie en noir et blanc d'un paysage, séparée en deux plans : l'arrière-plan en haut et l'avant-plan en bas."
+  },
+  {
+   "id": "liv6-p05",
+   "source": "livret",
+   "livret": 6,
+   "page": 5,
+   "titre": "Six images avec une mesure",
+   "fichier": "assets/2016/liv6-p05.webp",
+   "alt": "Dix étiquettes de grandeurs, puis six images numérotées de 1 à 6 (un manteau, un réfrigérateur, une voiture, un conteneur, une baignoire, un tas de bûches), chacune accompagnée d'une mesure avec son unité."
+  },
+  {
+   "id": "liv6-p07",
+   "source": "livret",
+   "livret": 6,
+   "page": 7,
+   "titre": "Quatre crayons",
+   "fichier": "assets/2016/liv6-p07.webp",
+   "alt": "Quatre emplacements de crayons A, B, C et D sur un fond de lignes horizontales ; A, B et C sont dessinés, D est seulement indiqué par un pointillé."
+  },
+  {
+   "id": "liv6-p10",
+   "source": "livret",
+   "livret": 6,
+   "page": 10,
+   "titre": "Un polygone coté",
+   "fichier": "assets/2016/liv6-p10.webp",
+   "alt": "Polygone gris formé d'un rectangle et de deux triangles, avec quatre mesures indiquées en centimètres."
+  },
+  {
+   "id": "liv6-p12",
+   "source": "livret",
+   "livret": 6,
+   "page": 12,
+   "titre": "Une construction de cubes",
+   "fichier": "assets/2016/liv6-p12.webp",
+   "alt": "Dessin en perspective d'une construction de cubes identiques empilés en forme de pavé."
+  },
+  {
+   "id": "liv6-p15",
+   "source": "livret",
+   "livret": 6,
+   "page": 15,
+   "titre": "Fractions de figures",
+   "fichier": "assets/2016/liv6-p15.webp",
+   "alt": "Trois carrés partiellement grisés numérotés de 1 à 3, puis trois figures (un losange, un rectangle, un hexagone) à colorier."
+  },
+  {
+   "id": "liv6-p16",
+   "source": "livret",
+   "livret": 6,
+   "page": 16,
+   "titre": "Un rectangle quadrillé",
+   "fichier": "assets/2016/liv6-p16.webp",
+   "alt": "En haut, l'addition de deux fractions avec une zone de travail ; en bas, un rectangle quadrillé dont certaines cases sont grisées."
+  },
+  {
+   "id": "liv7-p04",
+   "source": "livret",
+   "livret": 7,
+   "page": 4,
+   "titre": "Tableau de caractères d'animaux",
+   "fichier": "assets/2016/liv7-p04.webp",
+   "alt": "Tableau à double entrée : six animaux (libellule, chat, pigeon, souris, fourmi, mouton) et leurs caractères marqués d'une croix."
+  },
+  {
+   "id": "liv7-p05",
+   "source": "livret",
+   "livret": 7,
+   "page": 5,
+   "titre": "Classement des animaux par caractères",
+   "fichier": "assets/2016/liv7-p05.webp",
+   "alt": "Schéma de boîtes emboîtées pour classer les animaux, avec trois étiquettes vides repérées 1, 2 et 3, puis deux questions sur les mammifères."
+  },
+  {
+   "id": "liv7-p11",
+   "source": "livret",
+   "livret": 7,
+   "page": 11,
+   "titre": "Feuilles d'un arbre à identifier",
+   "fichier": "assets/2016/liv7-p11.webp",
+   "alt": "Photo d'un rameau de feuilles à identifier avec la clé de détermination."
+  },
+  {
+   "id": "liv7-p13",
+   "source": "livret",
+   "livret": 7,
+   "page": 13,
+   "titre": "Un thermomètre en °C et en °F",
+   "fichier": "assets/2016/liv7-p13.webp",
+   "alt": "Thermomètre mural gradué en degrés Celsius d'un côté et en degrés Fahrenheit de l'autre, avec deux étiquettes à compléter."
+  },
+  {
+   "id": "liv7-p14",
+   "source": "livret",
+   "livret": 7,
+   "page": 14,
+   "titre": "Des objets et le principe des leviers",
+   "fichier": "assets/2016/liv7-p14.webp",
+   "alt": "Trois photos (un presse-ail, un arrache-clou, un emporte-pièce), puis quatre photos numérotées de 1 à 4 (des tenailles, un tuba de plongée, des pailles, une pince coupante)."
+  },
+  {
+   "id": "liv7-p15",
+   "source": "livret",
+   "livret": 7,
+   "page": 15,
+   "titre": "Classer des objets : pivot, objet, force",
+   "fichier": "assets/2016/liv7-p15.webp",
+   "alt": "Quatre images numérotées de 1 à 4 (un sécateur, une pince de cuisine, un presse-ail, un enfant qui soulève une pierre avec une barre) et un tableau à trois colonnes."
+  },
+  {
+   "id": "liv7-p16",
+   "source": "livret",
+   "livret": 7,
+   "page": 16,
+   "titre": "Squelettes humain et de lapin",
+   "fichier": "assets/2016/liv7-p16.webp",
+   "alt": "Deux squelettes (humain et lapin) avec des étiquettes en cercle reliées par des traits : certaines portent un numéro de 1 à 6, dix sont vides et repérées par les lettres A à J ; une légende numérotée est donnée."
+  },
+  {
+   "id": "liv7-p21",
+   "source": "livret",
+   "livret": 7,
+   "page": 21,
+   "titre": "Les éléments de la lampe démontée",
+   "fichier": "assets/2016/liv7-p21.webp",
+   "alt": "Quatre photos des éléments de la lampe démontée (la fiche, l'interrupteur, le support de l'ampoule, l'ampoule testée dans une autre lampe) et une liste de cinq propositions."
+  },
+  {
+   "id": "liv8-p07",
+   "source": "livret",
+   "livret": 8,
+   "page": 7,
+   "titre": "Une grille de nombres décimaux",
+   "fichier": "assets/2016/liv8-p07.webp",
+   "alt": "Grille de nombres décimaux comportant deux cases en gras repérées A et B, avec les questions 4 et 6 de part et d'autre."
+  },
+  {
+   "id": "liv8-p08",
+   "source": "livret",
+   "livret": 8,
+   "page": 8,
+   "titre": "Un tableau de nombres",
+   "fichier": "assets/2016/liv8-p08.webp",
+   "alt": "Tableau de nombres de cinq lignes et cinq colonnes avec cinq cases en gras repérées de A à E, sous une question de lecture de nombre."
+  },
+  {
+   "id": "liv8-p12",
+   "source": "livret",
+   "livret": 8,
+   "page": 12,
+   "titre": "Des abaques",
+   "fichier": "assets/2016/liv8-p12.webp",
+   "alt": "Un abaque donné en exemple (colonnes CM, DM, UM, C, D, U, d, c avec des jetons), puis deux abaques a et b."
+  },
+  {
+   "id": "liv8-p18",
+   "source": "livret",
+   "livret": 8,
+   "page": 18,
+   "titre": "Les gaufres vendues",
+   "fichier": "assets/2016/liv8-p18.webp",
+   "alt": "Diagramme en barres du nombre de gaufres vendues du lundi au vendredi."
+  },
+  {
+   "id": "liv9-p03",
+   "source": "livret",
+   "livret": 9,
+   "page": 3,
+   "titre": "Extrait sur le sel",
+   "fichier": "assets/2016/liv9-p03.webp",
+   "alt": "Questions 1 à 3 du livret, dont un court extrait encadré à propos du nom scientifique du sel."
+  },
+  {
+   "id": "liv9-p06",
+   "source": "livret",
+   "livret": 9,
+   "page": 6,
+   "titre": "Extrait sur les volcans et l'érosion",
+   "fichier": "assets/2016/liv9-p06.webp",
+   "alt": "Un tableau à compléter et un extrait en trois paragraphes sur les éruptions volcaniques et les pluies acides."
   }
  ],
  "questions": [
@@ -1139,22 +1418,108 @@
    "livret": 3,
    "numero": "3",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Place les figures dans l'arbre.",
+   "type": "grille",
+   "enonce": "Observe les huit figures du livret (page 4). Le numéro 1 est déjà placé dans l'arbre. Pour chacune des figures 2 à 8, choisis la place qui convient dans l'arbre.",
    "points": 3.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p04"
+   ],
+   "lignes": [
+    "Figure 2",
+    "Figure 3",
+    "Figure 4",
+    "Figure 5",
+    "Figure 6",
+    "Figure 7",
+    "Figure 8"
+   ],
+   "colonnes": [
+    "Quadrilatère, avec au moins 1 angle droit",
+    "Quadrilatère, sans angle droit",
+    "Pas un quadrilatère, avec au moins 1 angle droit",
+    "Pas un quadrilatère, sans angle droit"
+   ],
+   "reponse": [
+    0,
+    2,
+    2,
+    3,
+    0,
+    3,
+    1
+   ],
+   "explication": "Figures 2 et 6 : quadrilatères avec un angle droit ; figure 8 : quadrilatère sans angle droit ; figures 3 et 4 : pas des quadrilatères, avec un angle droit ; figures 5 et 7 : ni quadrilatères ni angle droit (comme la figure 1)."
   },
   {
    "id": "ceb-2016-l3-q5",
    "livret": 3,
-   "numero": "5",
+   "numero": "5a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme les solides et trouve les polyèdres.",
-   "points": 3.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "grille",
+   "enonce": "Certains objets de la vie courante ressemblent à des solides géométriques (livret, page 6). Pour chaque solide représenté, choisis le nom qui lui convient. Tu ne peux utiliser qu'une seule fois chaque étiquette.",
+   "points": 2.5,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p06"
+   ],
+   "lignes": [
+    "Solide 1",
+    "Solide 2",
+    "Solide 3",
+    "Solide 4",
+    "Solide 5"
+   ],
+   "colonnes": [
+    "cône",
+    "pyramide",
+    "cylindre",
+    "prisme à base rectangulaire",
+    "sphère",
+    "cube",
+    "tétraèdre",
+    "parallélépipède rectangle"
+   ],
+   "reponse": [
+    0,
+    [
+     5,
+     7
+    ],
+    2,
+    7,
+    4
+   ],
+   "differentes": true,
+   "explication": "Solide 1 : cône ; solide 2 : cube (parallélépipède rectangle accepté si l'étiquette n'est pas déjà utilisée) ; solide 3 : cylindre ; solide 4 : parallélépipède rectangle ; solide 5 : sphère."
+  },
+  {
+   "id": "ceb-2016-l3-q5b",
+   "livret": 3,
+   "numero": "5b",
+   "domaine": "ma.geometrie",
+   "type": "qcm_multi",
+   "enonce": "Certains solides représentés dans la question précédente (livret, page 6) sont des polyèdres. Choisis leur numéro.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p06"
+   ],
+   "choix": [
+    "Solide 1",
+    "Solide 2",
+    "Solide 3",
+    "Solide 4",
+    "Solide 5"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "Les polyèdres ont toutes leurs faces planes : ce sont le solide 2 (cube) et le solide 4 (parallélépipède rectangle)."
   },
   {
    "id": "ceb-2016-l3-q6",
@@ -1205,22 +1570,55 @@
    "livret": 3,
    "numero": "11",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Lettres de la pyramide qui pivote.",
+   "type": "trous",
+   "enonce": "On fait pivoter de manière régulière une pyramide à base carrée. Sur chacune de ses faces, on a écrit une lettre (livret, page 9, en bas). Écris les lettres qui manquent sur la quatrième photo.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p09"
+   ],
+   "texte": "Première pastille blanche : {1}  ·  Deuxième pastille blanche : {2}",
+   "reponse": [
+    [
+     "E"
+    ],
+    [
+     "D"
+    ]
+   ],
+   "explication": "En pivotant, on voit successivement D-A, A-T, T-E, puis E-D, puis D-A : les lettres manquantes sont E et D."
   },
   {
    "id": "ceb-2016-l3-q12",
    "livret": 3,
    "numero": "12",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Pliages : axes de symétrie ?",
+   "type": "grille",
+   "enonce": "On a effectué des pliages (livret, page 10). Le pli correspond-il à un axe de symétrie ? Pour chaque photo, choisis ta réponse.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p10"
+   ],
+   "lignes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "explication": "Le pli est un axe de symétrie sur les photos 1, 2 et 4, mais pas sur la photo 3."
   },
   {
    "id": "ceb-2016-l3-q13",
@@ -1481,7 +1879,10 @@
      "Allemagne"
     ]
    ],
-   "explication": "Cambrai : nord de la France ; Cologne : Allemagne."
+   "explication": "Cambrai : nord de la France ; Cologne : Allemagne.",
+   "documents": [
+    "liv4-p16"
+   ]
   },
   {
    "id": "ceb-2016-l4-q11d",
@@ -1503,7 +1904,10 @@
      "province de Luxembourg"
     ]
    ],
-   "explication": "Arlon (Orolaunum), chef-lieu de la province de Luxembourg."
+   "explication": "Arlon (Orolaunum), chef-lieu de la province de Luxembourg.",
+   "documents": [
+    "liv4-p16"
+   ]
   },
   {
    "id": "ceb-2016-l4-q14c",
@@ -1667,22 +2071,70 @@
    "livret": 4,
    "numero": "7",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Villa gallo-romaine de Malagne : plan et photo.",
+   "type": "grille",
+   "enonce": "Observe le plan (livret, page 8) et la photo aérienne (livret, page 9) des vestiges de la villa gallo-romaine de Malagne. Dans chacune des pastilles blanches de la photographie, repérées par une lettre, écris le numéro correspondant du plan.",
    "points": 1.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-vues-aeriennes",
+   "documents": [
+    "liv4-p08",
+    "liv4-p09"
+   ],
+   "lignes": [
+    "Pastille A",
+    "Pastille B",
+    "Pastille C"
+   ],
+   "colonnes": [
+    "1 · Caves",
+    "2 · Salles de réception",
+    "3 · Cuisine",
+    "4 · Latrines (toilettes)",
+    "5 · Thermes (bains)",
+    "6 · Galerie",
+    "7 · Salles de chauffe"
+   ],
+   "reponse": [
+    5,
+    1,
+    0
+   ],
+   "explication": "Pastille A : 6 (galerie) ; pastille B : 2 (salle de réception) ; pastille C : 1 (caves)."
   },
   {
    "id": "ceb-2016-l4-q10",
    "livret": 4,
    "numero": "10",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Classe les photos et cartes de Charleroi et Namur.",
+   "type": "grille",
+   "enonce": "Observe les six documents du livret (page 14). Écris le numéro de chaque document dans la case qui convient du tableau. Exemple donné dans le tableau : la photo aérienne de Charleroi est le document 1 et celle de Namur le document 2.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-vues-aeriennes",
+   "documents": [
+    "liv4-p14"
+   ],
+   "lignes": [
+    "Carte historique de Charleroi",
+    "Carte historique de Namur",
+    "Carte actuelle de Charleroi",
+    "Carte actuelle de Namur"
+   ],
+   "colonnes": [
+    "Document 1",
+    "Document 2",
+    "Document 3",
+    "Document 4",
+    "Document 5",
+    "Document 6"
+   ],
+   "reponse": [
+    3,
+    5,
+    4,
+    2
+   ],
+   "explication": "Cartes historiques (17e siècle) : Charleroi = document 4, Namur = document 6. Cartes actuelles (21e siècle) : Charleroi = document 5, Namur = document 3."
   },
   {
    "id": "ceb-2016-l4-q11ab",
@@ -1700,33 +2152,542 @@
    "livret": 4,
    "numero": "11e",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Ville sur la Meuse traversée par la voie Bavay – Mande-Sainte-Marie.",
+   "type": "texte_court",
+   "enonce": "Observe la carte de la « Gaule Belgique » à l'époque romaine (livret, page 16). La voie secondaire « Bavay — Mande-Sainte-Marie » passait par une ville située sur la Meuse. Écris le nom de cette ville.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
+   "documents": [
+    "liv4-p16"
+   ],
+   "reponse": [
+    "Dinant"
+   ],
+   "explication": "La voie secondaire de Bavay à Mande-Sainte-Marie traversait la Meuse à Dinant."
   },
   {
    "id": "ceb-2016-l4-q12",
    "livret": 4,
    "numero": "12",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Légende de l'hypocauste.",
+   "type": "grille",
+   "enonce": "Observe les schémas de l'hypocauste (livret, page 18), puis compare la photo des vestiges d'un hypocauste (livret, page 19) avec ces deux schémas. Pour chaque mot de la légende, choisis la lettre de la photo qui convient.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-gallo-romains-francs",
+   "documents": [
+    "liv4-p18",
+    "liv4-p19"
+   ],
+   "lignes": [
+    "tubuli",
+    "pilettes",
+    "suspensura",
+    "praefurnium"
+   ],
+   "colonnes": [
+    "Lettre A",
+    "Lettre B",
+    "Lettre C",
+    "Lettre D"
+   ],
+   "reponse": [
+    3,
+    1,
+    2,
+    0
+   ],
+   "explication": "Tubuli : D ; pilettes : B ; suspensura : C ; praefurnium : A."
   },
   {
    "id": "ceb-2016-l4-q13",
    "livret": 4,
-   "numero": "13",
+   "numero": "13a",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Observation d'un paysage.",
-   "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm",
+   "enonce": "Observe la photographie de ce paysage (livret, page 20). Ce paysage est…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv4-p20"
+   ],
+   "choix": [
+    "industriel",
+    "rural",
+    "urbain"
+   ],
+   "reponse": 1,
+   "explication": "Des prairies, des clôtures et une forêt au loin : c'est un paysage rural."
+  },
+  {
+   "id": "ceb-2016-l4-q13b",
+   "livret": 4,
+   "numero": "13b",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Observe le paysage du livret (page 20). Choisis les éléments du tableau qui conviennent pour caractériser ce paysage.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv4-p20"
+   ],
+   "lignes": [
+    "À l'avant-plan, tu vois…",
+    "À l'arrière-plan, tu vois…"
+   ],
+   "colonnes": [
+    "une forêt",
+    "un désert",
+    "une montagne",
+    "une mer",
+    "une prairie"
+   ],
+   "reponse": [
+    4,
+    0
+   ],
+   "explication": "À l'avant-plan on voit une prairie ; à l'arrière-plan, une forêt."
+  },
+  {
+   "id": "ceb-2016-l4-q13c",
+   "livret": 4,
+   "numero": "13c",
+   "domaine": "hg.histoire",
+   "type": "trous",
+   "enonce": "Des traces de l'activité humaine sont visibles sur cette photographie de paysage (livret, page 20). Écris deux éléments qui le montrent.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv4-p20"
+   ],
+   "texte": "Premier élément : {1}  ·  Deuxième élément : {2}",
+   "reponse": [
+    [
+     "route",
+     "chemin",
+     "le route",
+     "la route",
+     "les route",
+     "un route",
+     "une route",
+     "des route",
+     "l'route",
+     "routes",
+     "le routes",
+     "la routes",
+     "les routes",
+     "un routes",
+     "une routes",
+     "des routes",
+     "l'routes",
+     "le chemin",
+     "la chemin",
+     "les chemin",
+     "un chemin",
+     "une chemin",
+     "des chemin",
+     "l'chemin",
+     "chemins",
+     "le chemins",
+     "la chemins",
+     "les chemins",
+     "un chemins",
+     "une chemins",
+     "des chemins",
+     "l'chemins",
+     "sentier",
+     "le sentier",
+     "la sentier",
+     "les sentier",
+     "un sentier",
+     "une sentier",
+     "des sentier",
+     "l'sentier",
+     "clôture",
+     "poteau",
+     "le clôture",
+     "la clôture",
+     "les clôture",
+     "un clôture",
+     "une clôture",
+     "des clôture",
+     "l'clôture",
+     "clôtures",
+     "le clôtures",
+     "la clôtures",
+     "les clôtures",
+     "un clôtures",
+     "une clôtures",
+     "des clôtures",
+     "l'clôtures",
+     "le poteau",
+     "la poteau",
+     "les poteau",
+     "un poteau",
+     "une poteau",
+     "des poteau",
+     "l'poteau",
+     "poteaux",
+     "le poteaux",
+     "la poteaux",
+     "les poteaux",
+     "un poteaux",
+     "une poteaux",
+     "des poteaux",
+     "l'poteaux",
+     "barrière",
+     "le barrière",
+     "la barrière",
+     "les barrière",
+     "un barrière",
+     "une barrière",
+     "des barrière",
+     "l'barrière",
+     "barrières",
+     "le barrières",
+     "la barrières",
+     "les barrières",
+     "un barrières",
+     "une barrières",
+     "des barrières",
+     "l'barrières",
+     "fil barbelé",
+     "le fil barbelé",
+     "la fil barbelé",
+     "les fil barbelé",
+     "un fil barbelé",
+     "une fil barbelé",
+     "des fil barbelé",
+     "l'fil barbelé",
+     "fils barbelés",
+     "le fils barbelés",
+     "la fils barbelés",
+     "les fils barbelés",
+     "un fils barbelés",
+     "une fils barbelés",
+     "des fils barbelés",
+     "l'fils barbelés",
+     "barbelé",
+     "le barbelé",
+     "la barbelé",
+     "les barbelé",
+     "un barbelé",
+     "une barbelé",
+     "des barbelé",
+     "l'barbelé",
+     "barbelés",
+     "le barbelés",
+     "la barbelés",
+     "les barbelés",
+     "un barbelés",
+     "une barbelés",
+     "des barbelés",
+     "l'barbelés",
+     "fil de fer barbelé",
+     "le fil de fer barbelé",
+     "la fil de fer barbelé",
+     "les fil de fer barbelé",
+     "un fil de fer barbelé",
+     "une fil de fer barbelé",
+     "des fil de fer barbelé",
+     "l'fil de fer barbelé",
+     "grillage",
+     "le grillage",
+     "la grillage",
+     "les grillage",
+     "un grillage",
+     "une grillage",
+     "des grillage",
+     "l'grillage",
+     "grillages",
+     "le grillages",
+     "la grillages",
+     "les grillages",
+     "un grillages",
+     "une grillages",
+     "des grillages",
+     "l'grillages",
+     "prairie",
+     "le prairie",
+     "la prairie",
+     "les prairie",
+     "un prairie",
+     "une prairie",
+     "des prairie",
+     "l'prairie",
+     "prairies",
+     "le prairies",
+     "la prairies",
+     "les prairies",
+     "un prairies",
+     "une prairies",
+     "des prairies",
+     "l'prairies",
+     "champ",
+     "le champ",
+     "la champ",
+     "les champ",
+     "un champ",
+     "une champ",
+     "des champ",
+     "l'champ",
+     "champs",
+     "le champs",
+     "la champs",
+     "les champs",
+     "un champs",
+     "une champs",
+     "des champs",
+     "l'champs",
+     "barrière électrique",
+     "le barrière électrique",
+     "la barrière électrique",
+     "les barrière électrique",
+     "un barrière électrique",
+     "une barrière électrique",
+     "des barrière électrique",
+     "l'barrière électrique",
+     "fils électriques",
+     "le fils électriques",
+     "la fils électriques",
+     "les fils électriques",
+     "un fils électriques",
+     "une fils électriques",
+     "des fils électriques",
+     "l'fils électriques",
+     "fil électrique",
+     "le fil électrique",
+     "la fil électrique",
+     "les fil électrique",
+     "un fil électrique",
+     "une fil électrique",
+     "des fil électrique",
+     "l'fil électrique",
+     "clôture électrique",
+     "le clôture électrique",
+     "la clôture électrique",
+     "les clôture électrique",
+     "un clôture électrique",
+     "une clôture électrique",
+     "des clôture électrique",
+     "l'clôture électrique"
+    ],
+    [
+     "chemin",
+     "route",
+     "le route",
+     "la route",
+     "les route",
+     "un route",
+     "une route",
+     "des route",
+     "l'route",
+     "routes",
+     "le routes",
+     "la routes",
+     "les routes",
+     "un routes",
+     "une routes",
+     "des routes",
+     "l'routes",
+     "le chemin",
+     "la chemin",
+     "les chemin",
+     "un chemin",
+     "une chemin",
+     "des chemin",
+     "l'chemin",
+     "chemins",
+     "le chemins",
+     "la chemins",
+     "les chemins",
+     "un chemins",
+     "une chemins",
+     "des chemins",
+     "l'chemins",
+     "sentier",
+     "le sentier",
+     "la sentier",
+     "les sentier",
+     "un sentier",
+     "une sentier",
+     "des sentier",
+     "l'sentier",
+     "clôture",
+     "poteau",
+     "le clôture",
+     "la clôture",
+     "les clôture",
+     "un clôture",
+     "une clôture",
+     "des clôture",
+     "l'clôture",
+     "clôtures",
+     "le clôtures",
+     "la clôtures",
+     "les clôtures",
+     "un clôtures",
+     "une clôtures",
+     "des clôtures",
+     "l'clôtures",
+     "le poteau",
+     "la poteau",
+     "les poteau",
+     "un poteau",
+     "une poteau",
+     "des poteau",
+     "l'poteau",
+     "poteaux",
+     "le poteaux",
+     "la poteaux",
+     "les poteaux",
+     "un poteaux",
+     "une poteaux",
+     "des poteaux",
+     "l'poteaux",
+     "barrière",
+     "le barrière",
+     "la barrière",
+     "les barrière",
+     "un barrière",
+     "une barrière",
+     "des barrière",
+     "l'barrière",
+     "barrières",
+     "le barrières",
+     "la barrières",
+     "les barrières",
+     "un barrières",
+     "une barrières",
+     "des barrières",
+     "l'barrières",
+     "fil barbelé",
+     "le fil barbelé",
+     "la fil barbelé",
+     "les fil barbelé",
+     "un fil barbelé",
+     "une fil barbelé",
+     "des fil barbelé",
+     "l'fil barbelé",
+     "fils barbelés",
+     "le fils barbelés",
+     "la fils barbelés",
+     "les fils barbelés",
+     "un fils barbelés",
+     "une fils barbelés",
+     "des fils barbelés",
+     "l'fils barbelés",
+     "barbelé",
+     "le barbelé",
+     "la barbelé",
+     "les barbelé",
+     "un barbelé",
+     "une barbelé",
+     "des barbelé",
+     "l'barbelé",
+     "barbelés",
+     "le barbelés",
+     "la barbelés",
+     "les barbelés",
+     "un barbelés",
+     "une barbelés",
+     "des barbelés",
+     "l'barbelés",
+     "fil de fer barbelé",
+     "le fil de fer barbelé",
+     "la fil de fer barbelé",
+     "les fil de fer barbelé",
+     "un fil de fer barbelé",
+     "une fil de fer barbelé",
+     "des fil de fer barbelé",
+     "l'fil de fer barbelé",
+     "grillage",
+     "le grillage",
+     "la grillage",
+     "les grillage",
+     "un grillage",
+     "une grillage",
+     "des grillage",
+     "l'grillage",
+     "grillages",
+     "le grillages",
+     "la grillages",
+     "les grillages",
+     "un grillages",
+     "une grillages",
+     "des grillages",
+     "l'grillages",
+     "prairie",
+     "le prairie",
+     "la prairie",
+     "les prairie",
+     "un prairie",
+     "une prairie",
+     "des prairie",
+     "l'prairie",
+     "prairies",
+     "le prairies",
+     "la prairies",
+     "les prairies",
+     "un prairies",
+     "une prairies",
+     "des prairies",
+     "l'prairies",
+     "champ",
+     "le champ",
+     "la champ",
+     "les champ",
+     "un champ",
+     "une champ",
+     "des champ",
+     "l'champ",
+     "champs",
+     "le champs",
+     "la champs",
+     "les champs",
+     "un champs",
+     "une champs",
+     "des champs",
+     "l'champs",
+     "barrière électrique",
+     "le barrière électrique",
+     "la barrière électrique",
+     "les barrière électrique",
+     "un barrière électrique",
+     "une barrière électrique",
+     "des barrière électrique",
+     "l'barrière électrique",
+     "fils électriques",
+     "le fils électriques",
+     "la fils électriques",
+     "les fils électriques",
+     "un fils électriques",
+     "une fils électriques",
+     "des fils électriques",
+     "l'fils électriques",
+     "fil électrique",
+     "le fil électrique",
+     "la fil électrique",
+     "les fil électrique",
+     "un fil électrique",
+     "une fil électrique",
+     "des fil électrique",
+     "l'fil électrique",
+     "clôture électrique",
+     "le clôture électrique",
+     "la clôture électrique",
+     "les clôture électrique",
+     "un clôture électrique",
+     "une clôture électrique",
+     "des clôture électrique",
+     "l'clôture électrique"
+    ]
+   ],
+   "differentes": true,
+   "explication": "Deux éléments au choix : un chemin ou une route, une clôture ou des poteaux, du fil barbelé, une prairie (un champ). Les poteaux électriques ne comptent pas."
   },
   {
    "id": "ceb-2016-l4-q14ab",
@@ -2526,20 +3487,79 @@
    "livret": 6,
    "numero": "5",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Associe chaque image à une grandeur.",
+   "type": "grille",
+   "enonce": "Observe les six images du livret (page 5) : voici des étiquettes de grandeurs. Pour chaque image, choisis l'étiquette qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-ordres-grandeur",
+   "documents": [
+    "liv6-p05"
+   ],
+   "lignes": [
+    "Image 1",
+    "Image 2",
+    "Image 3",
+    "Image 4",
+    "Image 5",
+    "Image 6"
+   ],
+   "colonnes": [
+    "masse",
+    "capacité",
+    "aire",
+    "volume",
+    "durée",
+    "température",
+    "longueur",
+    "amplitude",
+    "vitesse",
+    "coût (prix)"
+   ],
+   "reponse": [
+    9,
+    6,
+    8,
+    0,
+    [
+     1,
+     3
+    ],
+    3
+   ],
+   "explication": "Image 1 : coût (prix) ; image 2 : longueur ; image 3 : vitesse ; image 4 : masse ; image 5 : capacité ou volume ; image 6 : volume (le stère)."
   },
   {
    "id": "ceb-2016-l6-q7",
    "livret": 6,
-   "numero": "7",
+   "numero": "7a",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Observe les crayons du livret (page 7). Complète : si le crayon A mesure 20 cm, le crayon B mesure … cm et le crayon C mesure … cm.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-proportionnalite",
+   "documents": [
+    "liv6-p07"
+   ],
+   "texte": "Le crayon B mesure {1} cm  ·  Le crayon C mesure {2} cm",
+   "reponse": [
+    [
+     "10"
+    ],
+    [
+     "24"
+    ]
+   ],
+   "explication": "Le crayon B mesure 10 cm et le crayon C mesure 24 cm."
+  },
+  {
+   "id": "ceb-2016-l6-q7b",
+   "livret": 6,
+   "numero": "7b",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Longueur des crayons.",
-   "points": 3,
+   "enonce": "Si le crayon A mesure 20 cm, dessine un crayon D qui mesure 16 cm.",
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -2559,33 +3579,95 @@
    "livret": 6,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aire du polygone.",
+   "type": "numerique",
+   "enonce": "Calcule, en cm², l'aire de ce polygone (livret, page 10).",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-formules",
+   "documents": [
+    "liv6-p10"
+   ],
+   "reponse": 24,
+   "unite": "cm²",
+   "explication": "Rectangle : 4 × 5 = 20 cm² ; deux triangles : 2 × (2 × 2 ÷ 2) = 4 cm² ; total : 24 cm²."
   },
   {
    "id": "ceb-2016-l6-q12",
    "livret": 6,
    "numero": "12",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Masse de la construction de cubes.",
+   "type": "numerique",
+   "enonce": "Chaque cube de cette construction (livret, page 12) pèse 250 grammes. Combien pèse cette construction au total ?",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv6-p12"
+   ],
+   "reponse": 7500,
+   "unite": "g",
+   "explication": "5 × 2 × 3 = 30 cubes ; 30 × 250 g = 7 500 g."
   },
   {
    "id": "ceb-2016-l6-q16",
    "livret": 6,
    "numero": "16",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Colorie les fractions.",
+   "type": "trous",
+   "enonce": "Observe les trois carrés du livret (page 15). À quelle fraction du carré les parties grisées correspondent-elles ? Complète (écris chaque fraction sous la forme 2/5).",
    "points": 1.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv6-p15"
+   ],
+   "texte": "Figure 1 : {1}  ·  Figure 2 : {2}  ·  Figure 3 : {3}",
+   "reponse": [
+    [
+     "1/4",
+     "1 / 4",
+     "2/8",
+     "2 / 8",
+     "3/12",
+     "3 / 12",
+     "4/16",
+     "4 / 16",
+     "5/20",
+     "5 / 20",
+     "6/24",
+     "6 / 24",
+     "7/28",
+     "7 / 28",
+     "8/32",
+     "8 / 32",
+     "25/100"
+    ],
+    [
+     "3/8",
+     "3 / 8",
+     "6/16",
+     "6 / 16",
+     "9/24",
+     "9 / 24",
+     "12/32",
+     "12 / 32",
+     "15/40",
+     "15 / 40",
+     "18/48",
+     "18 / 48"
+    ],
+    [
+     "3/16",
+     "3 / 16",
+     "6/32",
+     "6 / 32",
+     "9/48",
+     "9 / 48",
+     "12/64",
+     "12 / 64"
+    ]
+   ],
+   "explication": "Figure 1 : 1/4 ; figure 2 : 3/8 ; figure 3 : 3/16 (ou une fraction équivalente)."
   },
   {
    "id": "ceb-2016-l6-q17",
@@ -2593,21 +3675,30 @@
    "numero": "17",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Fractions du carré.",
+   "enonce": "Colorie, dans les figures du livret (page 15), les portions demandées : 3/4 du losange, 5/12 du rectangle et 1/3 de l'hexagone.",
    "points": 1.5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "documents": [
+    "liv6-p15"
+   ]
   },
   {
    "id": "ceb-2016-l6-q19",
    "livret": 6,
    "numero": "19",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Pourcentage grisé du rectangle.",
+   "type": "numerique",
+   "enonce": "Quel pourcentage de l'aire de ce rectangle est grisé (livret, page 16) ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "documents": [
+    "liv6-p16"
+   ],
+   "reponse": 25,
+   "unite": "%",
+   "explication": "15 cases grisées sur 60 : 15/60 = 1/4 = 25 %."
   },
   {
    "id": "ceb-2016-l7-q1-pic",
@@ -3184,25 +4275,56 @@
    "livret": 7,
    "numero": "2a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète les étiquettes de la classification.",
+   "type": "grille",
+   "enonce": "Observe le tableau (livret, page 4) et le classement (livret, page 5). Ils ont classé ces animaux par caractère(s). Écris le nom complet de chaque caractère manquant dans les étiquettes vides, repérées par un numéro.",
    "points": 1.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "liv7-p04",
+    "liv7-p05"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3"
+   ],
+   "colonnes": [
+    "yeux, bouche",
+    "squelette interne d'os",
+    "squelette externe",
+    "4 pattes",
+    "2 pattes et 2 ailes",
+    "6 pattes articulées",
+    "poils et mamelles"
+   ],
+   "reponse": [
+    2,
+    4,
+    5
+   ],
+   "explication": "Étiquette 1 : squelette externe ; étiquette 2 : 2 pattes et 2 ailes (le pigeon) ; étiquette 3 : 6 pattes articulées (fourmi, libellule)."
   },
   {
    "id": "ceb-2016-l7-q7c",
    "livret": 7,
    "numero": "7c",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Trouve le nom de l'arbre avec la clé.",
+   "type": "texte_court",
+   "enonce": "Utilise la clé de détermination pour chercher le nom de l'arbre auquel appartiennent les feuilles de la photo (livret, page 11). Écris le nom de l'arbre.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
-    "cle"
+    "cle",
+    "liv7-p11"
    ],
-   "numerisable": false
+   "reponse": [
+    "sorbier",
+    "un sorbier",
+    "le sorbier"
+   ],
+   "explication": "Feuilles composées, à bord denté, alternes : c'est un sorbier."
   },
   {
    "id": "ceb-2016-l7-q8a",
@@ -3255,21 +4377,33 @@
    "livret": 7,
    "numero": "8c",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Quelle température indique le thermomètre de l'énoncé ? Écris-la en °C et en °F.",
+   "type": "trous",
+   "enonce": "Chez nous, on mesure la température en degrés Celsius ; dans certains pays, en degrés Fahrenheit. Quelle température indique le thermomètre du livret (page 13) ? Écris cette température en °C et en °F.",
    "points": 1,
    "corrigeVerifie": true,
-   "reponseModele": "20 °C et 68 °F.",
-   "numerisable": false
+   "fiche": "sc-chaleur",
+   "documents": [
+    "liv7-p13"
+   ],
+   "texte": "{1} °C  ·  {2} °F",
+   "reponse": [
+    [
+     "20"
+    ],
+    [
+     "68"
+    ]
+   ],
+   "explication": "Le thermomètre indique 20 °C, soit 68 °F."
   },
   {
    "id": "ceb-2016-l7-q9",
    "livret": 7,
-   "numero": "9",
+   "numero": "9a",
    "domaine": "sc.energie",
    "type": "ouverte",
-   "enonce": "Leviers : pivot et classement.",
-   "points": 4.5,
+   "enonce": "Sur chacun des objets du livret (page 14), dessine un point rouge sur le pivot : le presse-ail, l'arrache-clou et l'emporte-pièce.",
+   "points": 1.5,
    "corrigeVerifie": false,
    "documents": [
     "leviers"
@@ -3277,15 +4411,111 @@
    "numerisable": false
   },
   {
+   "id": "ceb-2016-l7-q9b",
+   "livret": 7,
+   "numero": "9b",
+   "domaine": "sc.energie",
+   "type": "qcm_multi",
+   "enonce": "Observe les photos du livret (page 14). Choisis les objets qui ne fonctionnent pas selon le principe des leviers dans leur utilisation habituelle.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "leviers",
+    "liv7-p14"
+   ],
+   "choix": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Les tenailles et la pince coupante sont des leviers ; le tuba de plongée (photo 2) et les pailles (photo 3) n'en sont pas."
+  },
+  {
+   "id": "ceb-2016-l7-q9c",
+   "livret": 7,
+   "numero": "9c",
+   "domaine": "sc.energie",
+   "type": "grille",
+   "enonce": "Observe les quatre images du livret (page 15). Classe les objets dans le tableau : pour chaque objet, choisis la case adéquate.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "leviers",
+    "liv7-p15"
+   ],
+   "lignes": [
+    "Objet 1",
+    "Objet 2",
+    "Objet 3",
+    "Objet 4"
+   ],
+   "colonnes": [
+    "Le pivot se situe entre l'objet et la force.",
+    "L'objet se situe entre le pivot et la force.",
+    "La force se situe entre le pivot et l'objet."
+   ],
+   "reponse": [
+    0,
+    2,
+    1,
+    0
+   ],
+   "explication": "Pivot au milieu : objets 1 et 4 ; objet au milieu : objet 3 ; force au milieu : objet 2."
+  },
+  {
    "id": "ceb-2016-l7-q10a",
    "livret": 7,
    "numero": "10a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Légende des squelettes.",
+   "type": "grille",
+   "enonce": "Observe les squelettes internes d'os (livret, page 16). Écris les numéros de la légende dans les étiquettes correspondantes. Certaines étiquettes resteront vides. Les étiquettes vides du livret sont repérées par les lettres A à J : pour chacune, choisis le numéro de la légende, ou « vide ».",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv7-p16"
+   ],
+   "lignes": [
+    "Étiquette A",
+    "Étiquette B",
+    "Étiquette C",
+    "Étiquette D",
+    "Étiquette E",
+    "Étiquette F",
+    "Étiquette G",
+    "Étiquette H",
+    "Étiquette I",
+    "Étiquette J"
+   ],
+   "colonnes": [
+    "1 · crâne",
+    "2 · fémur",
+    "3 · humérus",
+    "4 · cage thoracique",
+    "5 · omoplate",
+    "6 · vertèbre",
+    "Étiquette laissée vide"
+   ],
+   "reponse": [
+    4,
+    2,
+    3,
+    6,
+    6,
+    6,
+    0,
+    5,
+    6,
+    1
+   ],
+   "explication": "Squelette humain : A = 5 (omoplate), B = 3 (humérus), C = 4 (cage thoracique), D, E et F restent vides. Squelette du lapin : G = 1 (crâne), H = 6 (vertèbre), J = 2 (fémur), I reste vide."
   },
   {
    "id": "ceb-2016-l7-q10c",
@@ -3303,14 +4533,24 @@
    "livret": 7,
    "numero": "12b",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Trouve la cause de la panne sur les photos.",
+   "type": "qcm",
+   "enonce": "Pour la réparer, l'élève démonte la lampe. Observe les photos des différents éléments (livret, page 21). Choisis la seule cause de cette panne.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
    "documents": [
-    "lampe"
+    "lampe",
+    "liv7-p21"
    ],
-   "numerisable": false
+   "choix": [
+    "Un fil est mal attaché à l'intérieur de la fiche.",
+    "L'ampoule ne fonctionne plus.",
+    "Les deux fils sont mal attachés dans le support de l'ampoule.",
+    "Un fil est mal attaché dans le support de l'ampoule.",
+    "Le cordon d'alimentation est trop long."
+   ],
+   "reponse": 3,
+   "explication": "Sur la photo du support de l'ampoule, un fil n'est pas attaché."
   },
   {
    "id": "ceb-2016-l7-q14",
@@ -3915,44 +5155,108 @@
    "livret": 8,
    "numero": "5",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases de la grille de nombres.",
+   "type": "trous",
+   "enonce": "Écris les nombres qui doivent se situer dans les cases en gras de la grille (livret, page 7). Les deux cases en gras sont repérées par les lettres A et B.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv8-p07"
+   ],
+   "texte": "Case A : {1}  ·  Case B : {2}",
+   "reponse": [
+    [
+     "0,16",
+     "0.16"
+    ],
+    [
+     "0,44",
+     "0.44"
+    ]
+   ],
+   "explication": "Les nombres se suivent de 0,01 en 0,01 : la case A contient 0,16 et la case B 0,44."
   },
   {
    "id": "ceb-2016-l8-q8",
    "livret": 8,
    "numero": "8",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Nombres manquants dans le tableau.",
+   "type": "trous",
+   "enonce": "Place les nombres manquants dans les cases en gras du tableau (livret, page 8). Les cinq cases en gras sont repérées par les lettres A à E.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-suites",
+   "documents": [
+    "liv8-p08"
+   ],
+   "texte": "Case A : {1}  ·  Case B : {2}  ·  Case C : {3}  ·  Case D : {4}  ·  Case E : {5}",
+   "reponse": [
+    [
+     "400"
+    ],
+    [
+     "240"
+    ],
+    [
+     "490"
+    ],
+    [
+     "400"
+    ],
+    [
+     "640"
+    ]
+   ],
+   "explication": "A = 400 ; B = 240 ; C = 490 ; D = 400 ; E = 640."
   },
   {
    "id": "ceb-2016-l8-q13",
    "livret": 8,
-   "numero": "13",
+   "numero": "13a",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Nombres représentés dans l'abaque.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "numerique",
+   "enonce": "Écris en chiffres le nombre représenté dans l'abaque a (livret, page 12).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-numeration",
+   "documents": [
+    "liv8-p12"
+   ],
+   "reponse": 318041.5,
+   "explication": "3 centaines de mille, 1 dizaine de mille, 8 unités de mille, 4 dizaines, 1 unité et 5 dixièmes : 318 041,5."
+  },
+  {
+   "id": "ceb-2016-l8-q13b",
+   "livret": 8,
+   "numero": "13b",
+   "domaine": "ma.arithmetique",
+   "type": "numerique",
+   "enonce": "Sur l'abaque b du livret (page 12), ajoute un jeton dans la colonne des centaines. Quel nombre obtiens-tu ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-numeration",
+   "documents": [
+    "liv8-p12"
+   ],
+   "reponse": 546024.26,
+   "explication": "On ajoute 100 au nombre 545 924,26 : 546 024,26."
   },
   {
    "id": "ceb-2016-l8-q21",
    "livret": 8,
    "numero": "21",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Moyenne des gaufres vendues (graphique).",
+   "type": "numerique",
+   "enonce": "Afin de financer un voyage scolaire, une classe a décidé de vendre des gaufres pendant 5 jours. Chaque jour, un élève a noté la quantité de gaufres vendues (graphique du livret, page 18). Combien de gaufres la classe a-t-elle vendues en moyenne par jour ?",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv8-p18"
+   ],
+   "reponse": 9,
+   "unite": "gaufres",
+   "explication": "13 + 8 + 10 + 5 + 9 = 45 gaufres en 5 jours ; 45 ÷ 5 = 9 gaufres par jour en moyenne."
   },
   {
    "id": "ceb-2016-l9-q1",
@@ -4321,22 +5625,76 @@
    "livret": 9,
    "numero": "3",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Souligne tout ce qui désigne le sel.",
+   "type": "qcm_multi",
+   "enonce": "Dans l'extrait du livret (page 3), choisis tout ce qui désigne « le sel ». Sois complet.",
    "points": 1.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-reprises",
+   "documents": [
+    "liv9-p03"
+   ],
+   "choix": [
+    "Cette réaction chimique",
+    "chlorure de sodium",
+    "Un bien drôle de nom",
+    "ces petits grains blancs présents dans toutes les cuisines du monde",
+    "le sel",
+    "les repas"
+   ],
+   "reponse": [
+    1,
+    3,
+    4
+   ],
+   "explication": "Le sel est désigné par « chlorure de sodium », « ces petits grains blancs présents dans toutes les cuisines du monde » et « le sel »."
   },
   {
    "id": "ceb-2016-l9-q9",
    "livret": 9,
-   "numero": "9",
+   "numero": "9a",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Souligne ce qui enchaine les paragraphes.",
+   "type": "qcm",
+   "enonce": "Dans l'extrait du livret (page 6), choisis ce qui sert à enchaîner le premier paragraphe et le deuxième paragraphe.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "liv9-p06"
+   ],
+   "choix": [
+    "Les volcans",
+    "ces violentes éruptions",
+    "les températures",
+    "la vapeur d'eau",
+    "ces pluies acides",
+    "les roches de la croûte terrestre"
+   ],
+   "reponse": 1,
+   "explication": "« Ces violentes éruptions » reprend ce qui a été dit dans le paragraphe précédent (« Lorsque ces violentes éruptions ont pris fin » est aussi accepté)."
+  },
+  {
+   "id": "ceb-2016-l9-q9b",
+   "livret": 9,
+   "numero": "9b",
+   "domaine": "fr.lire",
+   "type": "qcm",
+   "enonce": "Dans l'extrait du livret (page 6), choisis ce qui sert à enchaîner le deuxième paragraphe et le troisième paragraphe.",
+   "points": 0,
+   "corrigeVerifie": true,
+   "fiche": "fr-connecteurs",
+   "documents": [
+    "liv9-p06"
+   ],
+   "choix": [
+    "Les volcans",
+    "ces violentes éruptions",
+    "les températures",
+    "la vapeur d'eau",
+    "ces pluies acides",
+    "les roches de la croûte terrestre"
+   ],
+   "reponse": 4,
+   "explication": "« Ces pluies acides » reprend la fin du paragraphe précédent. Cette partie n'est pas comptée dans le corrigé officiel."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2016), comparé question par question le 21/10/2026."
