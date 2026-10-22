@@ -671,11 +671,19 @@
    "livret": 1,
    "numero": "10",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Recopie le groupe nominal qui désigne Tintin.",
+   "type": "texte_court",
+   "enonce": "Relis la partie du texte « Des dizaines de héros de BD ». Dans la phrase « Aujourd'hui, … est un des personnages de bande dessinée les plus connus dans le monde. », recopie le groupe nominal complet qui désigne Tintin.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-reprises",
+   "documents": [
+    "art-1",
+    "art-2"
+   ],
+   "reponse": [
+    "le héros créé par Hergé"
+   ],
+   "explication": "Pour désigner Tintin sans répéter son nom, l'auteur écrit « le héros créé par Hergé ». Il faut recopier le groupe nominal en entier."
   },
   {
    "id": "ceb-2017-l2-q1",
@@ -1447,7 +1455,7 @@
    "domaine": "hg.histoire",
    "type": "trous",
    "enonce": "Carte d'identité d'étranger (document 1).",
-   "points": 2,
+   "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
@@ -1868,10 +1876,15 @@
    "numero": "1c",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Écris une question à propos de la peinture.",
+   "enonce": "Observe la photographie de la page 15 du portfolio. Écris une question que tu te poses à propos de ce que tu vois sur ce document.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "peinture"
+   ],
+   "reponseModele": "Toute question cohérente avec le document est acceptée (1 point) : sur l'intention de l'auteur, les outils utilisés, le contenu de la peinture… Exemples : « Avec quoi les hommes préhistoriques ont-ils peint ? » ; « Pourquoi ont-ils dessiné ces animaux ? » ; « Quels sont ces animaux ? » Une question indirecte ou un simple « ? » à la fin sont acceptés ; l'orthographe et la syntaxe ne sont pas pénalisées. Une affirmation n'est pas une question.",
+   "explication": "Poser une question sur un document, c'est une façon de le questionner comme le fait l'historien."
   },
   {
    "id": "ceb-2017-l5-q1d",
@@ -1889,14 +1902,18 @@
    "livret": 5,
    "numero": "4a2",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Année de naissance du titulaire.",
-   "points": 1,
-   "corrigeVerifie": false,
+   "type": "texte_court",
+   "enonce": "Observe la carte d'identité d'étranger (document 1). En quelle année le titulaire du document est-il né ?",
+   "points": 0.5,
+   "corrigeVerifie": true,
    "documents": [
     "refugies-1"
    ],
-   "numerisable": false
+   "fiche": "hg-sources",
+   "reponse": [
+    "1879"
+   ],
+   "explication": "Sur la carte, la date de naissance est le 28 février 1879. On ne demande que l'année."
   },
   {
    "id": "ceb-2017-l5-q6a",
@@ -2585,7 +2602,23 @@
     4,
     5
    ],
-   "explication": "Tous : les herbivores meurent de faim, puis les carnivores qui les mangent. (Dans l'épreuve, il fallait expliquer : le monde animal dépend du monde végétal.)"
+   "explication": "Tous disparaissent : les herbivores n'ont plus rien à manger, puis les carnivores qui les mangent. Explique ensuite pourquoi."
+  },
+  {
+   "id": "ceb-2017-l7-q4b-j",
+   "livret": 7,
+   "numero": "4b (justification)",
+   "domaine": "sc.vivant",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Quels animaux disparaitront s'il n'y a plus aucun végétal ? ». Explique ta réponse par une phrase courte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "sc-chaines",
+   "documents": [
+    "chaine"
+   ],
+   "reponseModele": "Une phrase courte qui dit que le monde animal dépend du monde végétal (1 point). Exemples : « Le monde animal dépend du végétal. » ; « Sans plantes, les herbivores n'ont plus à manger, et les carnivores n'ont plus d'herbivores à manger. » ; « Tous les animaux de la chaine dépendent des plantes pour se nourrir. »",
+   "explication": "Au début de chaque chaine alimentaire, il y a une plante : sans elle, toute la chaine s'effondre."
   },
   {
    "id": "ceb-2017-l7-q5",
@@ -2828,10 +2861,16 @@
    "numero": "1b",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Écris une autre hypothèse.",
+   "enonce": "Trois hypothèses ont été testées : « Le vent favorise plus l'évaporation de l'eau que la chaleur après 24 h. » ; « Si on laisse un verre d'eau sur une table de la classe pendant 24 h, c'est la même quantité d'eau qui s'évaporera que si on place ce verre dans un frigo. » ; « La chaleur favorise l'évaporation de l'eau. » Écris une hypothèse différente de ces trois hypothèses, que l'expérience pourrait vérifier.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-faits-hypotheses",
+   "documents": [
+    "evap-1",
+    "evap-2"
+   ],
+   "reponseModele": "Toute hypothèse cohérente avec l'expérience est acceptée (1 point). Exemples : « Le froid ne favorise pas l'évaporation. » ; « Le vent favorise l'évaporation. » ; « Un verre d'eau devant un ventilateur se vide plus vite que sur une table. » Refusés : un facteur qui n'est pas dans l'expérience (le soleil, la pelouse) et une simple question de mesure du type « combien de cl en x minutes ? ».",
+   "explication": "Une hypothèse est une réponse possible, à vérifier avec l'expérience (radiateur, table, frigo, ventilateur)."
   },
   {
    "id": "ceb-2017-l7-q1d",
@@ -3609,10 +3648,12 @@
    "numero": "18",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Écris un énoncé pour 17 × 25 = 425.",
+   "enonce": "Voici l'opération finale d'un problème : 17 × 25 = 425. Les unités ne sont pas mentionnées. Écris un énoncé de problème qui peut correspondre à cette opération.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "reponseModele": "Toute situation qui correspond à 17 × 25 est acceptée. Un énoncé complet (une situation ET une question) vaut 2 points ; une situation seule vaut 1 point. L'orthographe et la ponctuation ne sont pas pénalisées. Exemple : « Un cinéma a 17 rangées de 25 sièges. Combien de sièges y a-t-il en tout ? » (17 rangées de 25 sièges, c'est bien 17 × 25 = 425.) Attention : la multiplication doit être la bonne (17 groupes de 25, ou 25 groupes de 17).",
+   "explication": "Pense à des paquets égaux : 17 paquets de 25, ou 25 paquets de 17."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2017), comparé question par question le 21/10/2026."

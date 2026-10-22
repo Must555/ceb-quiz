@@ -1509,7 +1509,7 @@
    "numero": "3c",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "La salamandre a, comme le triton, la peau nue et 4 doigts aux pattes antérieures. Elle est plus proche…",
+   "enonce": "D'après le tableau, la salamandre (yeux et bouche, squelette interne d'os, 4 membres, peau nue, 4 doigts aux pattes antérieures) est plus proche…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -1521,7 +1521,49 @@
     "du lézard"
    ],
    "reponse": 0,
-   "explication": "Peau nue et 4 doigts aux pattes avant : comme le triton (amphibiens). (Dans l'épreuve, il fallait justifier : peau nue et 4 doigts aux pattes antérieures.)"
+   "explication": "Comme le triton, la salamandre a la peau nue et 4 doigts aux pattes antérieures (le lézard a des écailles et 5 doigts). Écris ensuite les deux attributs qui justifient ta réponse."
+  },
+  {
+   "id": "ceb-2019-l5-q3c-j",
+   "livret": 5,
+   "numero": "3c (justification)",
+   "domaine": "sc.vivant",
+   "type": "trous",
+   "enonce": "Tu as répondu à la question « D'après le tableau, la salamandre est plus proche du triton ou du lézard ? ». Écris les deux attributs qui justifient ta réponse.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "classif"
+   ],
+   "differentes": true,
+   "souple": true,
+   "texte": "Premier attribut : {1}\nDeuxième attribut : {2}",
+   "reponse": [
+    [
+     "peau nue",
+     "une peau nue",
+     "la peau nue",
+     "4 doigts aux pattes antérieures",
+     "quatre doigts aux pattes antérieures",
+     "4 doigts aux pattes avant",
+     "4 doigts aux pattes de devant",
+     "4 doigts aux pattes antérieures.",
+     "4 doigts"
+    ],
+    [
+     "4 doigts aux pattes antérieures",
+     "quatre doigts aux pattes antérieures",
+     "4 doigts aux pattes avant",
+     "4 doigts aux pattes de devant",
+     "4 doigts aux pattes antérieures.",
+     "4 doigts",
+     "peau nue",
+     "une peau nue",
+     "la peau nue"
+    ]
+   ],
+   "explication": "La salamandre a la peau nue et 4 doigts aux pattes antérieures, comme le triton ; le lézard a des écailles et 5 doigts."
   },
   {
    "id": "ceb-2019-l5-q4c",
@@ -1908,14 +1950,22 @@
    "livret": 5,
    "numero": "4b",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Que représente le récipient de récupération ?",
+   "type": "qcm",
+   "enonce": "Dans l'expérience réalisée en classe pour illustrer le cycle de l'eau, l'eau s'infiltre à travers un mélange de gravier et de terre, puis est recueillie dans un récipient de récupération. Dans cette expérience, le récipient de récupération représente…",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "eau-1"
    ],
-   "numerisable": false
+   "fiche": "sc-cycle-eau",
+   "choix": [
+    "une station d'épuration.",
+    "un cours d'eau.",
+    "une station de captage.",
+    "une nappe phréatique."
+   ],
+   "reponse": 3,
+   "explication": "L'eau qui traverse le sol (gravier et terre) est retenue sous terre : c'est une nappe phréatique."
   },
   {
    "id": "ceb-2019-l5-q5a",
@@ -1955,14 +2005,25 @@
    "livret": 5,
    "numero": "7a",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Étiquettes du bulletin météo.",
+   "type": "trous",
+   "enonce": "Observe le bulletin météo (portfolio, page 10). Écris le numéro de l'étiquette (1, 2, 3 ou 4) qui désigne :",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "meteo"
    ],
-   "numerisable": false
+   "fiche": "sc-phenomenes",
+   "souple": true,
+   "texte": "la direction du vent : {1}\nla vitesse du vent : {2}",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "3"
+    ]
+   ],
+   "explication": "L'étiquette 2 est la flèche de la rose des vents (direction) ; l'étiquette 3 indique « 60 km/h » (vitesse)."
   },
   {
    "id": "ceb-2019-l5-q7c",
@@ -3701,6 +3762,22 @@
    "explication": "Aujourd'hui, Ixelles est couverte de rues et de maisons : urbaine. (Dans l'épreuve, il fallait justifier : il y a beaucoup de maisons d'habitation.)"
   },
   {
+   "id": "ceb-2019-l9-q8a-j",
+   "livret": 9,
+   "numero": "8a (justification)",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Ixelles était rurale au 18e siècle. En 2019, cette région est… ». Justifie ta réponse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "regions"
+   ],
+   "reponseModele": "« Il y a beaucoup de maisons d'habitation » ou toute formulation allant dans ce sens (1 point).",
+   "explication": "Une région urbaine se reconnait à ses nombreuses maisons et à ses rues."
+  },
+  {
    "id": "ceb-2019-l9-q8b",
    "livret": 9,
    "numero": "8b",
@@ -3720,6 +3797,22 @@
    ],
    "reponse": 0,
    "explication": "Chiny (Gaume) reste entourée de forêts et de champs : rurale. (Dans l'épreuve, il fallait justifier : il y a des bois et des champs, peu de maisons.)"
+  },
+  {
+   "id": "ceb-2019-l9-q8b-j",
+   "livret": 9,
+   "numero": "8b (justification)",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Chiny était rurale au 18e siècle. En 2019, cette région est… ». Justifie ta réponse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "regions"
+   ],
+   "reponseModele": "« Il y a des bois et des champs » ou « Il y a peu de maisons (d'habitation) », ou toute formulation allant dans ce sens (1 point).",
+   "explication": "Une région rurale se reconnait à ses champs, ses bois et ses rares maisons."
   },
   {
    "id": "ceb-2019-l9-q12a",
@@ -3919,7 +4012,7 @@
    "domaine": "hg.histoire",
    "type": "ouverte",
    "enonce": "Roues horaires : journée d'un enfant mineur (1860) et de Lucie (2019).",
-   "points": 5,
+   "points": 3,
    "corrigeVerifie": false,
    "numerisable": false,
    "remarque": "Les roues horaires du livret ne sont pas dans nos documents : question gardée en mode papier. Corrigé officiel : a) nuit de l'enfant de la mine en rouge, de 21 h à 4 h ; b) nuit de Lucie en bleu, de 21 h à 7 h 15 ; c) faux, faux, vrai.",

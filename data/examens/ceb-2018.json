@@ -1039,7 +1039,7 @@
    "domaine": "ma.grandeurs",
    "type": "qcm",
    "enonce": "Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ?",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "choix": [
@@ -1048,7 +1048,20 @@
     "Ils ont colorié la même surface"
    ],
    "reponse": 1,
-   "explication": "3/5 = 6/10 < 7/10. (Dans l'épreuve, il fallait justifier en comparant les fractions : 3/5 = 6/10, et 6/10 < 7/10.)"
+   "explication": "3/5 = 6/10, et 6/10 est plus petit que 7/10 : Laura a colorié la plus grande surface. Justifie ensuite en comparant les fractions."
+  },
+  {
+   "id": "ceb-2018-l4-q2-j",
+   "livret": 4,
+   "numero": "2 (justification)",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ? ». Justifie ta réponse en comparant les fractions.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions-comparer",
+   "reponseModele": "Il faut comparer les deux fractions, par exemple en les mettant au même dénominateur (1 point). Exemple : « 3/5 = 6/10 et 6/10 est plus petit que 7/10, donc Laura a colorié la plus grande surface. » Une autre méthode juste qui compare bien les deux fractions est aussi acceptée.",
+   "explication": "Pour comparer 3/5 et 7/10, on écrit 3/5 en dixièmes : 3/5 = 6/10."
   },
   {
    "id": "ceb-2018-l4-q4b",
@@ -1987,24 +2000,28 @@
    "numero": "10c",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Question pour dessiner le biceps.",
+   "enonce": "Un élève a dessiné un schéma des os du bras et de l'avant-bras. Voici son schéma incomplet. Il veut y dessiner les muscles. Pour cela, il doit se poser différentes questions. Écris une question que cet élève pourrait se poser pour dessiner le muscle biceps.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "reponseModele": "Une question sur la place ou l'attache du muscle (1 point). Exemples : « Où se trouve ce muscle ? » ; « Comment ce muscle est-il attaché (aux os) ? » ; toute formulation dans ce sens. On ne sanctionne pas l'erreur de grammaire.",
+   "explication": "Pour dessiner un muscle, il faut savoir où il est et à quels os il est attaché (par des tendons)."
   },
   {
    "id": "ceb-2018-l5-q11c",
    "livret": 5,
    "numero": "11c",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Température du matin du 9 mars.",
+   "type": "numerique",
+   "enonce": "Lis le graphique « Migration des batraciens à Lasne ». Quelle température (en °C) faisait-il au matin du 9 mars ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "batra"
    ],
-   "numerisable": false
+   "fiche": "ma-donnees",
+   "reponse": 4,
+   "explication": "La ligne bleue (température du matin) est à 4 °C le 9 mars."
   },
   {
    "id": "ceb-2018-l5-q12",
@@ -2906,10 +2923,11 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Graphique : seul pays avec plus de victimes civiles que militaires.",
+   "enonce": "Lis le graphique des pertes humaines de la Première Guerre mondiale (civils morts et soldats morts). Écris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "Belgique (1 point). Sur le graphique « Pertes humaines de la Première Guerre mondiale », c'est le seul pays dont la barre des civils morts dépasse celle des soldats morts."
   },
   {
    "id": "ceb-2018-l7-q4c",
@@ -2931,14 +2949,60 @@
    "livret": 7,
    "numero": "4e",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Deux pays européens où le travail des enfants n'a pas disparu.",
+   "type": "trous",
+   "enonce": "Selon la Carte des enfants au travail dans le monde, écris le nom de deux pays européens où le travail des enfants de moins de quatorze ans n'a pas encore totalement disparu.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "enfants-3"
    ],
-   "numerisable": false
+   "fiche": "hg-europe",
+   "differentes": true,
+   "souple": true,
+   "texte": "Premier pays : {1}\nDeuxième pays : {2}",
+   "reponse": [
+    [
+     "Italie",
+     "l'Italie",
+     "Portugal",
+     "le Portugal",
+     "Albanie",
+     "l'Albanie",
+     "Macédoine",
+     "la Macédoine",
+     "Serbie",
+     "la Serbie",
+     "Monténégro",
+     "le Monténégro",
+     "Bosnie",
+     "la Bosnie",
+     "Bosnie-Herzégovine",
+     "la Bosnie-Herzégovine",
+     "Turquie",
+     "la Turquie"
+    ],
+    [
+     "Portugal",
+     "le Portugal",
+     "Italie",
+     "l'Italie",
+     "Albanie",
+     "l'Albanie",
+     "Macédoine",
+     "la Macédoine",
+     "Serbie",
+     "la Serbie",
+     "Monténégro",
+     "le Monténégro",
+     "Bosnie",
+     "la Bosnie",
+     "Bosnie-Herzégovine",
+     "la Bosnie-Herzégovine",
+     "Turquie",
+     "la Turquie"
+    ]
+   ],
+   "explication": "Sur la carte, des enfants travaillent encore au Portugal, en Italie et dans plusieurs pays des Balkans (Albanie, Macédoine, Serbie, Monténégro, Bosnie). Le corrigé accepte aussi la Turquie."
   },
   {
    "id": "ceb-2018-l7-q6",
@@ -2988,7 +3052,8 @@
    "documents": [
     "bruxelles"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "Saint-Gilles (1 point). C'est la commune coloriée en noir sur le plan de la Région de Bruxelles-Capitale du livret."
   },
   {
    "id": "ceb-2018-l7-q13",
