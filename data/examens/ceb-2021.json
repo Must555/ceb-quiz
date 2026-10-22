@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2021",
  "source": "FWB, épreuve externe commune préparée pour 2020 et utilisée en 2021 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Les livrets portent la mention « CEB 2020 » : l'épreuve préparée pour 2020 (annulée à cause de la crise sanitaire) a été utilisée en 2021 ; les dates des livrets sont donc approximatives.",
+ "remarque": "Les images des livrets de questions sont jointes aux questions qui s'appuient sur une figure, une photo, un plan, un tableau ou un graphique ; les lettres et numéros rouges ajoutés sur ces images repèrent les dessins, les figures ou les étiquettes à choisir. Restent en mode papier les questions de tracé, de coloriage, de découpage, de reproduction ou de rédaction. Les livrets portent la mention « CEB 2020 » : l'épreuve préparée pour 2020 (annulée à cause de la crise sanitaire) a été utilisée en 2021 ; les dates des livrets sont donc approximatives.",
  "livrets": [
   {
    "n": 1,
@@ -385,6 +385,357 @@
    "titre": "Cinq poupées (question 8)",
    "fichier": "assets/2021/liv1-p04.webp",
    "alt": "Cinq photos de poupées en noir et blanc, de gauche à droite : un baigneur en body et bonnet, une marionnette à fils, une poupée blonde en gilet sans manche, une poupée en veste à carreaux et culotte avec un petit chapeau, une poupée de chiffon aux couettes. Au-dessus, les questions 7 et 9."
+  },
+  {
+   "id": "liv3-p02",
+   "source": "livret",
+   "livret": 3,
+   "page": 2,
+   "titre": "Plateau de jeu et six vues",
+   "fichier": "assets/2021/liv3-p02.webp",
+   "alt": "Un plateau de jeu vu du dessus avec un joueur à gauche, un joueur à droite et un observateur en bas ; la vue de l'observateur ; puis deux rangées de trois plateaux en perspective, numérotés de 1 à 3 et de 4 à 6."
+  },
+  {
+   "id": "liv3-p03",
+   "source": "livret",
+   "livret": 3,
+   "page": 3,
+   "titre": "Six polygones et un arbre de classement",
+   "fichier": "assets/2021/liv3-p03.webp",
+   "alt": "Six polygones numérotés de 1 à 6 (un carré penché, un quadrilatère, un rectangle, un pentagone, un triangle, un quadrilatère à côtés parallèles) et un arbre de classement à huit cases ; le polygone 1 est déjà placé et les cases libres sont repérées par les lettres A à E."
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Des dés particuliers",
+   "fichier": "assets/2021/liv3-p04.webp",
+   "alt": "Une photo de sept dés à jouer de formes différentes, numérotés de 1 à 7 ; la photo d'un dé ; trois développements de solides repérés par les lettres A, B et C."
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Dé en pyramide et dé à faces régulières",
+   "fichier": "assets/2021/liv3-p05.webp",
+   "alt": "La photo d'un dé en forme de pyramide, quatre dessins de solides numérotés de 1 à 4 ; la photo d'un autre dé et sa représentation en perspective."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Un quadrilatère entre deux parallèles",
+   "fichier": "assets/2021/liv3-p06.webp",
+   "alt": "Deux droites parallèles en pointillés et un quadrilatère grisé dessiné entre elles."
+  },
+  {
+   "id": "liv3-p09",
+   "source": "livret",
+   "livret": 3,
+   "page": 9,
+   "titre": "Géoplan : figures A, B et C",
+   "fichier": "assets/2021/liv3-p09.webp",
+   "alt": "Une planche à clous (géoplan) sur laquelle sont tendus trois élastiques formant les figures A, B et C."
+  },
+  {
+   "id": "liv3-p14",
+   "source": "livret",
+   "livret": 3,
+   "page": 14,
+   "titre": "Une figure découpée en triangles",
+   "fichier": "assets/2021/liv3-p14.webp",
+   "alt": "Une figure géométrique à huit triangles numérotés de 1 à 8."
+  },
+  {
+   "id": "liv3-p17",
+   "source": "livret",
+   "livret": 3,
+   "page": 17,
+   "titre": "Six solides à classer",
+   "fichier": "assets/2021/liv3-p17.webp",
+   "alt": "Six cadres numérotés de 1 à 6 ; chacun montre la photo d'un objet et le dessin du solide correspondant ; sous les cadres, un tableau de classement des solides."
+  },
+  {
+   "id": "liv4-p03",
+   "source": "livret",
+   "livret": 4,
+   "page": 3,
+   "titre": "Un portrait et une œuvre",
+   "fichier": "assets/2021/liv4-p03.webp",
+   "alt": "Un portrait gravé en noir et blanc d'un homme barbu à nœud papillon, puis une œuvre en gris montrant une forme ailée aux pattes rayées ; chacune est suivie de quatre propositions à cocher."
+  },
+  {
+   "id": "liv4-p07",
+   "source": "livret",
+   "livret": 4,
+   "page": 7,
+   "titre": "Quatre peintures d'élèves",
+   "fichier": "assets/2021/liv4-p07.webp",
+   "alt": "Quatre peintures d'élèves numérotées de 1 à 4 : des cercles concentriques, un personnage coiffé d'un chapeau, des lignes noires croisées et un visage."
+  },
+  {
+   "id": "liv5-p06",
+   "source": "livret",
+   "livret": 5,
+   "page": 6,
+   "titre": "Des grandes découvertes",
+   "fichier": "assets/2021/liv5-p06.webp",
+   "alt": "Quatre découvertes avec leur date et leur auteur : la machine à vapeur, la première carte du monde, la découverte des Amériques et « La vis aérienne »."
+  },
+  {
+   "id": "liv5-p07",
+   "source": "livret",
+   "livret": 5,
+   "page": 7,
+   "titre": "Lignes du temps",
+   "fichier": "assets/2021/liv5-p07.webp",
+   "alt": "Plusieurs lignes du temps graduées ; trois d'entre elles, repérées par les lettres A, B et C, sont proposées pour la question b ; une dernière ligne est graduée de –57 à 1789."
+  },
+  {
+   "id": "liv5-p09",
+   "source": "livret",
+   "livret": 5,
+   "page": 9,
+   "titre": "Trois traces du passé photographiées",
+   "fichier": "assets/2021/liv5-p09.webp",
+   "alt": "Un tableau avec trois photographies numérotées de 1 à 3 : un grand ensemble de sphères reliées, une grande sculpture dans une rue et une œuvre en gris ; à droite, une colonne vide pour la nature de la trace."
+  },
+  {
+   "id": "liv5-p12",
+   "source": "livret",
+   "livret": 5,
+   "page": 12,
+   "titre": "Liège : documents et photo aérienne",
+   "fichier": "assets/2021/liv5-p12.webp",
+   "alt": "Un tableau à cocher, une liste de mots et une photo aérienne de la Meuse avec deux étiquettes repérées 1 et 2, reliées par des flèches."
+  },
+  {
+   "id": "liv5-p14",
+   "source": "livret",
+   "livret": 5,
+   "page": 14,
+   "titre": "Abbaye de Villers-la-Ville : vue aérienne",
+   "fichier": "assets/2021/liv5-p14.webp",
+   "alt": "Une vue aérienne des ruines d'une abbaye avec six bâtiments numérotés de 1 à 6 et une légende qui donne le nom de chaque numéro."
+  },
+  {
+   "id": "liv5-p15",
+   "source": "livret",
+   "livret": 5,
+   "page": 15,
+   "titre": "Abbaye de Villers-la-Ville : maquette et plan",
+   "fichier": "assets/2021/liv5-p15.webp",
+   "alt": "Une maquette de l'abbaye au 12e siècle, avec une étiquette marquée 1 et une étiquette blanche repérée A, et un plan du lieu en 2020 avec deux étiquettes blanches repérées B et C."
+  },
+  {
+   "id": "liv5-p17",
+   "source": "livret",
+   "livret": 5,
+   "page": 17,
+   "titre": "Carte d'Europe et carnavals",
+   "fichier": "assets/2021/liv5-p17.webp",
+   "alt": "Une carte d'Europe avec six numéros (1 à 6) et une lettre A placés sur des pays, et un tableau à compléter."
+  },
+  {
+   "id": "liv5-p18",
+   "source": "livret",
+   "livret": 5,
+   "page": 18,
+   "titre": "Deux planisphères",
+   "fichier": "assets/2021/liv5-p18.webp",
+   "alt": "Deux planisphères comportant chacun cinq étiquettes blanches repérées par des lettres : A à E sur le premier et F à J sur le second."
+  },
+  {
+   "id": "liv5-p19",
+   "source": "livret",
+   "livret": 5,
+   "page": 19,
+   "titre": "Planisphère des océans",
+   "fichier": "assets/2021/liv5-p19.webp",
+   "alt": "Un planisphère comportant trois étiquettes blanches repérées K, L et M, placées sur des océans."
+  },
+  {
+   "id": "liv5-p20",
+   "source": "livret",
+   "livret": 5,
+   "page": 20,
+   "titre": "Calendrier de reproduction",
+   "fichier": "assets/2021/liv5-p20.webp",
+   "alt": "Un calendrier de juillet à juin pour cinq animaux sauvages (cerf, chevreuil, daim, sanglier, mouflon) : des cases grises pour les périodes d'accouplement et des cases noires pour les mises bas."
+  },
+  {
+   "id": "liv6-p02",
+   "source": "livret",
+   "livret": 6,
+   "page": 2,
+   "titre": "Un viaduc et ses poteaux d'éclairage",
+   "fichier": "assets/2021/liv6-p02.webp",
+   "alt": "Une photo d'un viaduc bordé de poteaux d'éclairage, avec un poteau A, un poteau B et une flèche qui indique 25 m entre deux poteaux."
+  },
+  {
+   "id": "liv6-p09",
+   "source": "livret",
+   "livret": 6,
+   "page": 9,
+   "titre": "Batteries à différents niveaux de charge",
+   "fichier": "assets/2021/liv6-p09.webp",
+   "alt": "Quatre batteries partiellement chargées, numérotées de 1 à 4, avec des cadres à compléter, puis une autre batterie et deux représentations à colorier."
+  },
+  {
+   "id": "liv6-p12",
+   "source": "livret",
+   "livret": 6,
+   "page": 12,
+   "titre": "Deux arbres et une personne",
+   "fichier": "assets/2021/liv6-p12.webp",
+   "alt": "Deux grandes photos d'arbres, Arbre 1 et Arbre 2, avec au pied de chacun une personne et la mention « environ 2 m »."
+  },
+  {
+   "id": "liv6-p18",
+   "source": "livret",
+   "livret": 6,
+   "page": 18,
+   "titre": "Seringue, balle et rouleau",
+   "fichier": "assets/2021/liv6-p18.webp",
+   "alt": "Trois photos : une seringue graduée remplie de liquide, une balle serrée dans un pied à coulisse, un rouleau de ruban à mesurer."
+  },
+  {
+   "id": "liv8-p09",
+   "source": "livret",
+   "livret": 8,
+   "page": 9,
+   "titre": "Un parking vu du dessus",
+   "fichier": "assets/2021/liv8-p09.webp",
+   "alt": "Une photo d'un grand parking vu du dessus, partagé en espaces de voitures ; l'un des espaces est encadré et désigné par une flèche."
+  },
+  {
+   "id": "liv8-p11",
+   "source": "livret",
+   "livret": 8,
+   "page": 11,
+   "titre": "Rouleaux de tickets",
+   "fichier": "assets/2021/liv8-p11.webp",
+   "alt": "Deux photos de trois rouleaux de tickets (Musée, Bateau, Duo), à l'ouverture et à la fermeture, avec les numéros des tickets visibles."
+  },
+  {
+   "id": "liv8-p14",
+   "source": "livret",
+   "livret": 8,
+   "page": 14,
+   "titre": "Une caissette de clémentines",
+   "fichier": "assets/2021/liv8-p14.webp",
+   "alt": "Une caissette de clémentines avec son étiquette « Poids net : 1500 g », et une clémentine posée sur une balance."
+  },
+  {
+   "id": "liv8-p19",
+   "source": "livret",
+   "livret": 8,
+   "page": 19,
+   "titre": "Deux tables de décimaux",
+   "fichier": "assets/2021/liv8-p19.webp",
+   "alt": "Deux tables, l'une d'addition, l'autre de multiplication, de nombres décimaux : certaines cases sont noires, certaines complétées, neuf cases blanches sont repérées par les lettres A à I ; puis un tableau de produits."
+  },
+  {
+   "id": "liv9-p04",
+   "source": "livret",
+   "livret": 9,
+   "page": 4,
+   "titre": "Trois cycles de vie",
+   "fichier": "assets/2021/liv9-p04.webp",
+   "alt": "Trois représentations de cycles de vie en cercle, numérotées de 1 à 3, avec des étiquettes (sevrage, allaitement, âge adulte, accouplement, gestation, mise bas) rangées dans des ordres différents."
+  },
+  {
+   "id": "liv9-p06",
+   "source": "livret",
+   "livret": 9,
+   "page": 6,
+   "titre": "Quatre schémas du corps humain",
+   "fichier": "assets/2021/liv9-p06.webp",
+   "alt": "Quatre silhouettes humaines A, B, C et D montrant chacune un appareil du corps ; deux cadres à compléter."
+  },
+  {
+   "id": "liv9-p07",
+   "source": "livret",
+   "livret": 9,
+   "page": 7,
+   "titre": "Trois publicités",
+   "fichier": "assets/2021/liv9-p07.webp",
+   "alt": "Trois produits de santé (un flacon, une boite et un tube) avec leur nom, leur usage et des cases à cocher."
+  },
+  {
+   "id": "liv9-p08",
+   "source": "livret",
+   "livret": 9,
+   "page": 8,
+   "titre": "Pelote et os de rongeurs",
+   "fichier": "assets/2021/liv9-p08.webp",
+   "alt": "La photo d'une pelote de réjection, des restes d'os et cinq photos d'os numérotées de 1 à 5 avec leur nom."
+  },
+  {
+   "id": "liv9-p09",
+   "source": "livret",
+   "livret": 9,
+   "page": 9,
+   "titre": "Squelettes à compléter",
+   "fichier": "assets/2021/liv9-p09.webp",
+   "alt": "Un squelette de rongeur avec huit étiquettes (la 1 est donnée, sept autres sont repérées de A à G), un squelette humain avec les lettres P, S et M, et un squelette de cerf avec trois étiquettes repérées H, I et J."
+  },
+  {
+   "id": "liv9-p12",
+   "source": "livret",
+   "livret": 9,
+   "page": 12,
+   "titre": "Un classement d'animaux",
+   "fichier": "assets/2021/liv9-p12.webp",
+   "alt": "Un classement dessiné sur une feuille quadrillée avec les attributs plumes et bec, poils, crocs et sabots ; en dessous, la photo d'un crâne dont les crocs sont indiqués."
+  },
+  {
+   "id": "liv9-p13",
+   "source": "livret",
+   "livret": 9,
+   "page": 13,
+   "titre": "Tableau, acarien, moustique et gloméris",
+   "fichier": "assets/2021/liv9-p13.webp",
+   "alt": "Un tableau à double entrée (belette en exemple, pic épeiche, loir gris, sanglier), la photo d'un acarien, puis la photo d'un moustique et celle d'un gloméris."
+  },
+  {
+   "id": "liv9-p14",
+   "source": "livret",
+   "livret": 9,
+   "page": 14,
+   "titre": "Attributs du cloporte, du carabe et du gloméris",
+   "fichier": "assets/2021/liv9-p14.webp",
+   "alt": "Un tableau qui donne des attributs du cloporte, du carabe violet et du gloméris."
+  },
+  {
+   "id": "liv9-p15",
+   "source": "livret",
+   "livret": 9,
+   "page": 15,
+   "titre": "Ensembles emboités à compléter",
+   "fichier": "assets/2021/liv9-p15.webp",
+   "alt": "Un diagramme d'ensembles emboités où cinq étiquettes blanches sont repérées par les lettres A à E."
+  },
+  {
+   "id": "liv9-p19",
+   "source": "livret",
+   "livret": 9,
+   "page": 19,
+   "titre": "Un circuit électrique",
+   "fichier": "assets/2021/liv9-p19.webp",
+   "alt": "Un circuit électrique qui comprend une ampoule, une pile et cinq objets reliés par des fils ; quatre propositions suivent."
+  },
+  {
+   "id": "liv9-p22",
+   "source": "livret",
+   "livret": 9,
+   "page": 22,
+   "titre": "Une fusée : tableau des essais",
+   "fichier": "assets/2021/liv9-p22.webp",
+   "alt": "Un tableau qui indique, pour des quantités de bicarbonate et de vinaigre, si la fusée décolle ou non, puis deux situations à compléter."
   }
  ],
  "questions": [
@@ -806,10 +1157,13 @@
    "numero": "3c",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Une pyramide à base triangulaire : complète.",
+   "enonce": "Toujours pour la pyramide à base triangulaire (livret, page 5), complète les propositions.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
+   "documents": [
+    "liv3-p05"
+   ],
    "texte": "Nombre de faces : {1}  ·  Nombre d'arêtes : {2}  ·  Nombre de sommets : {3}",
    "reponse": [
     [
@@ -822,8 +1176,7 @@
      "4"
     ]
    ],
-   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets.",
-   "remarque": "L'entourage de la pyramide à base triangulaire (1 pt) est une fiche à part (3c2) : il se fait sur des dessins du livret que nous n'avons pas. Ici : 1 pt tout ou rien pour les trois nombres ; le corrigé ne sanctionne pas en cascade."
+   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets."
   },
   {
    "id": "ceb-2021-l3-q13a",
@@ -886,78 +1239,173 @@
    "livret": 3,
    "numero": "1",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Que voient les joueurs 1 et 2 du plateau de jeu ?",
+   "type": "trous",
+   "enonce": "Observe le plateau de jeu et les six plateaux vus en perspective (livret, page 2), numérotés de 1 à 6. Que voit le joueur 1 ? Que voit le joueur 2 ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-representations",
+   "documents": [
+    "liv3-p02"
+   ],
+   "texte": "Le joueur 1 voit le plateau n° {1} (1, 2 ou 3)  ·  Le joueur 2 voit le plateau n° {2} (4, 5 ou 6)",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "5"
+    ]
+   ],
+   "explication": "Le joueur 1 voit le plateau 3 et le joueur 2 le plateau 5. Pour t'aider : repère un pion facile à suivre et imagine-le quand tu changes de côté autour du plateau."
   },
   {
    "id": "ceb-2021-l3-q2",
    "livret": 3,
    "numero": "2",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Place les polygones dans l'arbre de classement.",
+   "type": "grille",
+   "enonce": "Observe les six polygones du livret (page 3). Dans l'arbre de classement, il faut écrire le numéro de chaque polygone dans la case qui convient ; le polygone 1 est déjà placé et les cases libres sont repérées par les lettres A à E. Pour chaque polygone, choisis la case où il faut écrire son numéro.",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p03"
+   ],
+   "lignes": [
+    "Polygone 2",
+    "Polygone 3",
+    "Polygone 4",
+    "Polygone 5",
+    "Polygone 6"
+   ],
+   "colonnes": [
+    "Case A",
+    "Case B",
+    "Case C",
+    "Case D",
+    "Case E"
+   ],
+   "reponse": [
+    2,
+    0,
+    3,
+    4,
+    1
+   ],
+   "explication": "Le 3 (rectangle) est un quadrilatère aux angles égaux mais aux côtés pas tous égaux : case A. Le 6 (losange) a les côtés égaux mais pas les angles : case B. Le 2 est un quadrilatère sans régularité : case C. Le 4 (pentagone régulier) n'est pas un quadrilatère mais a angles et côtés égaux : case D. Le 5 (triangle) n'a ni angles ni côtés égaux : case E."
   },
   {
    "id": "ceb-2021-l3-q3a",
    "livret": 3,
    "numero": "3a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le dé qui a le plus de faces.",
+   "type": "qcm",
+   "enonce": "Observe les dés à jouer de la photo (livret, page 4), numérotés de 1 à 7. Lequel possède le plus de faces ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p04"
+   ],
+   "choix": [
+    "Dé 1",
+    "Dé 2",
+    "Dé 3",
+    "Dé 4",
+    "Dé 5",
+    "Dé 6",
+    "Dé 7"
+   ],
+   "reponse": 6,
+   "explication": "C'est le dé 7 : il a 20 faces triangulaires."
   },
   {
    "id": "ceb-2021-l3-q3b",
    "livret": 3,
    "numero": "3b",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le développement du dé.",
+   "type": "qcm",
+   "enonce": "Observe le dé photographié (livret, page 4, question 3b). Quel est le seul développement possible de ce solide parmi les propositions A, B et C ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-developpements",
+   "documents": [
+    "liv3-p04"
+   ],
+   "choix": [
+    "Développement A",
+    "Développement B",
+    "Développement C"
+   ],
+   "reponse": 0,
+   "explication": "Ce dé a des faces triangulaires : seul le développement A est fait de triangles. Les développements B et C contiennent des pentagones ou des carrés."
   },
   {
    "id": "ceb-2021-l3-q3c2",
    "livret": 3,
    "numero": "3c (entourage)",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure la représentation du dé en forme de pyramide à base triangulaire parmi les propositions.",
+   "type": "qcm",
+   "enonce": "Observe le dé en forme de pyramide à base triangulaire (livret, page 5). Quelle représentation de ce solide faut-il choisir parmi les dessins 1 à 4 ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false,
-   "remarque": "Choix entre quatre dessins du livret (cône, pyramide à base triangulaire, pyramide à base carrée, pyramide à base hexagonale) que nous n'avons pas : non numérisable. Réponse officielle : le deuxième dessin, la pyramide à base triangulaire."
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p05"
+   ],
+   "choix": [
+    "Dessin 1",
+    "Dessin 2",
+    "Dessin 3",
+    "Dessin 4"
+   ],
+   "reponse": 1,
+   "explication": "C'est le dessin 2 : une pyramide dont la base est un triangle (4 faces triangulaires). Le dessin 1 est un cône, le 3 une pyramide à base carrée et le 4 une pyramide à base hexagonale."
   },
   {
    "id": "ceb-2021-l3-q3d",
    "livret": 3,
    "numero": "3d",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme les polygones réguliers qui forment ce dé.",
+   "type": "trous",
+   "enonce": "Observe la représentation du dé à douze faces (livret, page 5). Toutes ses faces sont identiques : ce sont des polygones réguliers. Écris leur nom.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p05"
+   ],
+   "texte": "Ces polygones réguliers sont des {1}",
+   "reponse": [
+    [
+     "pentagones",
+     "pentagone",
+     "des pentagones",
+     "pentagones réguliers"
+    ]
+   ],
+   "explication": "Chaque face a 5 côtés et 5 angles égaux : ce sont des pentagones réguliers."
   },
   {
    "id": "ceb-2021-l3-q4",
    "livret": 3,
    "numero": "4",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme le quadrilatère tracé entre deux parallèles.",
+   "type": "texte_court",
+   "enonce": "Observe le quadrilatère tracé entre deux droites parallèles (livret, page 6). Écris son nom en deux mots : ce quadrilatère est un …",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p06"
+   ],
+   "reponse": [
+    "trapèze rectangle",
+    "un trapèze rectangle",
+    "trapèze scalène",
+    "un trapèze scalène"
+   ],
+   "explication": "Il a deux côtés parallèles (un trapèze) et deux angles droits : c'est un trapèze rectangle. On accepte aussi « trapèze scalène »."
   },
   {
    "id": "ceb-2021-l3-q5",
@@ -1000,11 +1448,42 @@
    "livret": 3,
    "numero": "7",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Géoplan : côtés perpendiculaires, axe de symétrie, somme des angles.",
+   "type": "trous",
+   "enonce": "Observe le géoplan et les figures A, B et C (livret, page 9). Complète le tableau.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p09"
+   ],
+   "texte": "Les deux figures qui possèdent au moins deux côtés perpendiculaires : {1}  ·  La figure qui possède au moins un axe de symétrie : {2}  ·  La figure dont la somme des angles est de 180° : {3}",
+   "reponse": [
+    [
+     "A, C",
+     "A,C",
+     "A C",
+     "A et C",
+     "A-C",
+     "A - C",
+     "A; C",
+     "A;C",
+     "C, A",
+     "C,A",
+     "C A",
+     "C et A",
+     "C-A",
+     "C - A",
+     "C; A",
+     "C;A"
+    ],
+    [
+     "A"
+    ],
+    [
+     "C"
+    ]
+   ],
+   "explication": "A (rectangle) et C (triangle rectangle) ont des angles droits, donc des côtés perpendiculaires. Seul le rectangle A a des axes de symétrie. La somme des angles d'un triangle vaut 180° : c'est la figure C."
   },
   {
    "id": "ceb-2021-l3-q8",
@@ -1044,11 +1523,234 @@
    "livret": 3,
    "numero": "11",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Trouve les triangles scalènes acutangles, isocèle acutangle, scalènes obtusangles.",
+   "type": "trous",
+   "enonce": "Observe la figure géométrique du livret (page 14), faite de huit triangles numérotés.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-triangles",
+   "documents": [
+    "liv3-p14"
+   ],
+   "texte": "Numéros de tous les triangles scalènes acutangles : {1}  ·  Numéro d'un triangle isocèle acutangle : {2}  ·  Numéros de tous les triangles scalènes obtusangles : {3}",
+   "reponse": [
+    [
+     "1, 2, 4, 5",
+     "1,2,4,5",
+     "1 2 4 5",
+     "1 et 2 et 4 et 5",
+     "1-2-4-5",
+     "1 - 2 - 4 - 5",
+     "1; 2; 4; 5",
+     "1;2;4;5",
+     "1, 2, 5, 4",
+     "1,2,5,4",
+     "1 2 5 4",
+     "1 et 2 et 5 et 4",
+     "1-2-5-4",
+     "1 - 2 - 5 - 4",
+     "1; 2; 5; 4",
+     "1;2;5;4",
+     "1, 4, 2, 5",
+     "1,4,2,5",
+     "1 4 2 5",
+     "1 et 4 et 2 et 5",
+     "1-4-2-5",
+     "1 - 4 - 2 - 5",
+     "1; 4; 2; 5",
+     "1;4;2;5",
+     "1, 4, 5, 2",
+     "1,4,5,2",
+     "1 4 5 2",
+     "1 et 4 et 5 et 2",
+     "1-4-5-2",
+     "1 - 4 - 5 - 2",
+     "1; 4; 5; 2",
+     "1;4;5;2",
+     "1, 5, 2, 4",
+     "1,5,2,4",
+     "1 5 2 4",
+     "1 et 5 et 2 et 4",
+     "1-5-2-4",
+     "1 - 5 - 2 - 4",
+     "1; 5; 2; 4",
+     "1;5;2;4",
+     "1, 5, 4, 2",
+     "1,5,4,2",
+     "1 5 4 2",
+     "1 et 5 et 4 et 2",
+     "1-5-4-2",
+     "1 - 5 - 4 - 2",
+     "1; 5; 4; 2",
+     "1;5;4;2",
+     "2, 1, 4, 5",
+     "2,1,4,5",
+     "2 1 4 5",
+     "2 et 1 et 4 et 5",
+     "2-1-4-5",
+     "2 - 1 - 4 - 5",
+     "2; 1; 4; 5",
+     "2;1;4;5",
+     "2, 1, 5, 4",
+     "2,1,5,4",
+     "2 1 5 4",
+     "2 et 1 et 5 et 4",
+     "2-1-5-4",
+     "2 - 1 - 5 - 4",
+     "2; 1; 5; 4",
+     "2;1;5;4",
+     "2, 4, 1, 5",
+     "2,4,1,5",
+     "2 4 1 5",
+     "2 et 4 et 1 et 5",
+     "2-4-1-5",
+     "2 - 4 - 1 - 5",
+     "2; 4; 1; 5",
+     "2;4;1;5",
+     "2, 4, 5, 1",
+     "2,4,5,1",
+     "2 4 5 1",
+     "2 et 4 et 5 et 1",
+     "2-4-5-1",
+     "2 - 4 - 5 - 1",
+     "2; 4; 5; 1",
+     "2;4;5;1",
+     "2, 5, 1, 4",
+     "2,5,1,4",
+     "2 5 1 4",
+     "2 et 5 et 1 et 4",
+     "2-5-1-4",
+     "2 - 5 - 1 - 4",
+     "2; 5; 1; 4",
+     "2;5;1;4",
+     "2, 5, 4, 1",
+     "2,5,4,1",
+     "2 5 4 1",
+     "2 et 5 et 4 et 1",
+     "2-5-4-1",
+     "2 - 5 - 4 - 1",
+     "2; 5; 4; 1",
+     "2;5;4;1",
+     "4, 1, 2, 5",
+     "4,1,2,5",
+     "4 1 2 5",
+     "4 et 1 et 2 et 5",
+     "4-1-2-5",
+     "4 - 1 - 2 - 5",
+     "4; 1; 2; 5",
+     "4;1;2;5",
+     "4, 1, 5, 2",
+     "4,1,5,2",
+     "4 1 5 2",
+     "4 et 1 et 5 et 2",
+     "4-1-5-2",
+     "4 - 1 - 5 - 2",
+     "4; 1; 5; 2",
+     "4;1;5;2",
+     "4, 2, 1, 5",
+     "4,2,1,5",
+     "4 2 1 5",
+     "4 et 2 et 1 et 5",
+     "4-2-1-5",
+     "4 - 2 - 1 - 5",
+     "4; 2; 1; 5",
+     "4;2;1;5",
+     "4, 2, 5, 1",
+     "4,2,5,1",
+     "4 2 5 1",
+     "4 et 2 et 5 et 1",
+     "4-2-5-1",
+     "4 - 2 - 5 - 1",
+     "4; 2; 5; 1",
+     "4;2;5;1",
+     "4, 5, 1, 2",
+     "4,5,1,2",
+     "4 5 1 2",
+     "4 et 5 et 1 et 2",
+     "4-5-1-2",
+     "4 - 5 - 1 - 2",
+     "4; 5; 1; 2",
+     "4;5;1;2",
+     "4, 5, 2, 1",
+     "4,5,2,1",
+     "4 5 2 1",
+     "4 et 5 et 2 et 1",
+     "4-5-2-1",
+     "4 - 5 - 2 - 1",
+     "4; 5; 2; 1",
+     "4;5;2;1",
+     "5, 1, 2, 4",
+     "5,1,2,4",
+     "5 1 2 4",
+     "5 et 1 et 2 et 4",
+     "5-1-2-4",
+     "5 - 1 - 2 - 4",
+     "5; 1; 2; 4",
+     "5;1;2;4",
+     "5, 1, 4, 2",
+     "5,1,4,2",
+     "5 1 4 2",
+     "5 et 1 et 4 et 2",
+     "5-1-4-2",
+     "5 - 1 - 4 - 2",
+     "5; 1; 4; 2",
+     "5;1;4;2",
+     "5, 2, 1, 4",
+     "5,2,1,4",
+     "5 2 1 4",
+     "5 et 2 et 1 et 4",
+     "5-2-1-4",
+     "5 - 2 - 1 - 4",
+     "5; 2; 1; 4",
+     "5;2;1;4",
+     "5, 2, 4, 1",
+     "5,2,4,1",
+     "5 2 4 1",
+     "5 et 2 et 4 et 1",
+     "5-2-4-1",
+     "5 - 2 - 4 - 1",
+     "5; 2; 4; 1",
+     "5;2;4;1",
+     "5, 4, 1, 2",
+     "5,4,1,2",
+     "5 4 1 2",
+     "5 et 4 et 1 et 2",
+     "5-4-1-2",
+     "5 - 4 - 1 - 2",
+     "5; 4; 1; 2",
+     "5;4;1;2",
+     "5, 4, 2, 1",
+     "5,4,2,1",
+     "5 4 2 1",
+     "5 et 4 et 2 et 1",
+     "5-4-2-1",
+     "5 - 4 - 2 - 1",
+     "5; 4; 2; 1",
+     "5;4;2;1"
+    ],
+    [
+     "3",
+     "7"
+    ],
+    [
+     "6, 8",
+     "6,8",
+     "6 8",
+     "6 et 8",
+     "6-8",
+     "6 - 8",
+     "6; 8",
+     "6;8",
+     "8, 6",
+     "8,6",
+     "8 6",
+     "8 et 6",
+     "8-6",
+     "8 - 6",
+     "8; 6",
+     "8;6"
+    ]
+   ],
+   "explication": "Scalènes acutangles : 1, 2, 4 et 5. Isocèles acutangles : 3 ou 7. Scalènes obtusangles : 6 et 8."
   },
   {
    "id": "ceb-2021-l3-q12",
@@ -1066,11 +1768,72 @@
    "livret": 3,
    "numero": "14",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Classe les solides : prismes, pyramides, non-polyèdres.",
+   "type": "trous",
+   "enonce": "Observe les six solides à classer (livret, page 17). Écris le numéro de chaque solide dans une case du tableau : deux numéros pour les prismes, deux pour les pyramides et deux pour les non polyèdres.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p17"
+   ],
+   "texte": "Prismes : {1}  ·  Pyramides : {2}  ·  Non polyèdres : {3}",
+   "reponse": [
+    [
+     "3, 5",
+     "3,5",
+     "3 5",
+     "3 et 5",
+     "3-5",
+     "3 - 5",
+     "3; 5",
+     "3;5",
+     "5, 3",
+     "5,3",
+     "5 3",
+     "5 et 3",
+     "5-3",
+     "5 - 3",
+     "5; 3",
+     "5;3"
+    ],
+    [
+     "4, 6",
+     "4,6",
+     "4 6",
+     "4 et 6",
+     "4-6",
+     "4 - 6",
+     "4; 6",
+     "4;6",
+     "6, 4",
+     "6,4",
+     "6 4",
+     "6 et 4",
+     "6-4",
+     "6 - 4",
+     "6; 4",
+     "6;4"
+    ],
+    [
+     "1, 2",
+     "1,2",
+     "1 2",
+     "1 et 2",
+     "1-2",
+     "1 - 2",
+     "1; 2",
+     "1;2",
+     "2, 1",
+     "2,1",
+     "2 1",
+     "2 et 1",
+     "2-1",
+     "2 - 1",
+     "2; 1",
+     "2;1"
+    ]
+   ],
+   "explication": "Prismes : 3 et 5. Pyramides : 4 et 6. Non polyèdres (solides à surface courbe) : 1 (cylindre) et 2 (cône)."
   },
   {
    "id": "ceb-2021-l3-q15",
@@ -1196,10 +1959,11 @@
    "numero": "2b",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Voici une aquarelle aux couleurs pastel où flotte un petit bonhomme à chapeau. Elle a été réalisée par…",
+   "enonce": "Observe l'œuvre reproduite dans le livret (page 3, question 2b). Voici une œuvre réalisée par…",
    "points": 0.5,
    "corrigeVerifie": true,
    "documents": [
+    "liv4-p03",
     "mg-2"
    ],
    "choix": [
@@ -1209,9 +1973,7 @@
     "Mathilde de Toscane"
    ],
    "reponse": 1,
-   "explication": "Couleurs pastel, petits bonshommes à chapeau : c'est le style de Folon.",
-   "numerisable": false,
-   "remarque": "L'image du livret manque ; décrite en mots, elle donnait la réponse : question pour la version papier."
+   "explication": "Couleurs pastel, petits bonshommes et silhouettes qui flottent : c'est le style de Jean-Michel Folon. Les réponses 2a et 2b forment un seul point officiel, tout ou rien pour les deux."
   },
   {
    "id": "ceb-2021-l4-q3",
@@ -1755,12 +2517,22 @@
    "livret": 4,
    "numero": "2a",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Identifie le personnage de la photo.",
+   "type": "qcm",
+   "enonce": "Observe le portrait du livret (page 3, question 2a). Ce personnage est…",
    "points": 0.5,
-   "corrigeVerifie": false,
-   "numerisable": false,
-   "remarque": "QCM du livret sur une photo que nous n'avons pas (propositions : un moine de l'abbaye d'Orval ; un compositeur de musique ; un montreur de marionnettes ; un artiste peintre connu) : non numérisable. Réponse officielle : un compositeur de musique. Les réponses 2a et 2b forment un seul point officiel, tout ou rien pour les deux (0,5 + 0,5 chez nous)."
+   "corrigeVerifie": true,
+   "documents": [
+    "liv4-p03",
+    "mg-6"
+   ],
+   "choix": [
+    "un moine de l'abbaye d'Orval",
+    "un compositeur de musique",
+    "un montreur de marionnettes",
+    "un artiste peintre connu"
+   ],
+   "reponse": 1,
+   "explication": "Le portrait est celui d'Adolphe Sax, compositeur et créateur d'instruments (page 9 du miniguide)."
   },
   {
    "id": "ceb-2021-l4-q9",
@@ -1768,14 +2540,14 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Choisis la peinture d'élève faite à la manière de Folon et justifie.",
+   "enonce": "Observe les quatre peintures d'élèves du livret (page 7), numérotées de 1 à 4. a) Choisis celle qui a été réalisée à la manière de Jean-Michel Folon. b) Justifie ton choix à l'aide d'un élément du texte.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
-    "mg-2"
+    "mg-2",
+    "liv4-p07"
    ],
-   "numerisable": false,
-   "reponseModele": "a) Il fallait choisir la deuxième proposition (1 pt). b) Ta justification doit parler d'un bonhomme, d'un chapeau ou d'éléments de la nature, comme chez Folon (1 pt). Toute idée allant dans ce sens est acceptée.",
+   "reponseModele": "a) Il fallait choisir la peinture 2 (1 pt). b) Ta justification doit parler d'un bonhomme, d'un chapeau ou d'éléments de la nature, comme chez Folon (1 pt). Toute idée allant dans ce sens est acceptée.",
    "explication": "Folon dessine de petits bonshommes à chapeau et des éléments de la nature (arbre, oiseau)."
   },
   {
@@ -2251,11 +3023,22 @@
    "livret": 5,
    "numero": "3b",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Coche la ligne du temps où situer les 4 dates.",
+   "type": "qcm",
+   "enonce": "Observe les quatre découvertes et leurs dates (livret, page 6), puis les lignes du temps A, B et C (page 7). Quelle ligne du temps permet de situer les 4 dates des découvertes ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-frise",
+   "documents": [
+    "liv5-p06",
+    "liv5-p07"
+   ],
+   "choix": [
+    "Ligne A",
+    "Ligne B",
+    "Ligne C"
+   ],
+   "reponse": 2,
+   "explication": "Les dates vont de 1487 à 1769. La ligne A s'arrête au 15e siècle et la ligne B commence en 1600 : seule la ligne C (de 1500 à 1800) permet de situer les quatre dates."
   },
   {
    "id": "ceb-2021-l5-q3c",
@@ -2273,25 +3056,63 @@
    "livret": 5,
    "numero": "4",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Nature des traces du passé photographiées.",
+   "type": "grille",
+   "enonce": "Observe les trois photographies du livret (page 9), numérotées de 1 à 3. Pour chaque photo, choisis dans la liste le mot qui donne la nature de la trace du passé photographiée.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "liv5-p09"
+   ],
+   "lignes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3"
+   ],
+   "colonnes": [
+    "Monument",
+    "Peinture",
+    "Sculpture",
+    "Document écrit",
+    "Graphique"
+   ],
+   "reponse": [
+    0,
+    [
+     2,
+     0
+    ],
+    1
+   ],
+   "explication": "La photo 1 montre l'Atomium : un monument. La photo 2 montre une sculpture (on accepte aussi « monument »). La photo 3 est une peinture."
   },
   {
    "id": "ceb-2021-l5-q6c",
    "livret": 5,
    "numero": "6c",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Place « affluent » et « confluent ».",
+   "type": "grille",
+   "enonce": "L'Ourthe se jette dans la Meuse à Liège. Observe la photo aérienne du livret (page 12) : deux étiquettes, repérées 1 et 2, sont à compléter. Pour chaque étiquette, choisis le mot à y écrire (tu peux te servir de ton dictionnaire).",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-cours-eau",
    "documents": [
-    "liege"
+    "liege",
+    "liv5-p12"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2"
+   ],
+   "colonnes": [
+    "affluent",
+    "confluent"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Le confluent est l'endroit où deux cours d'eau se rejoignent (étiquette 1). L'affluent est le cours d'eau qui se jette dans un autre : ici l'Ourthe (étiquette 2)."
   },
   {
    "id": "ceb-2021-l5-q6d",
@@ -2309,66 +3130,150 @@
    "livret": 5,
    "numero": "7",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Abbaye de Villers-la-Ville : reporte les numéros sur la maquette et le plan.",
+   "type": "trous",
+   "enonce": "Observe la vue aérienne des ruines de l'abbaye de Villers-la-Ville (livret, page 14), puis la maquette et le plan (page 15). Il faut recopier, dans les étiquettes blanches de la maquette et du plan, les numéros correspondants de la photo aérienne. Les étiquettes blanches sont repérées par les lettres A, B et C.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-vues-aeriennes",
+   "documents": [
+    "liv5-p14",
+    "liv5-p15"
+   ],
+   "texte": "Étiquette A : n° {1}  ·  Étiquette B : n° {2}  ·  Étiquette C : n° {3}",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "3"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "L'étiquette A désigne le bâtiment 5 (le réfectoire), l'étiquette B le bâtiment 3 (la brasserie) et l'étiquette C le bâtiment 2 (le cloitre)."
   },
   {
    "id": "ceb-2021-l5-q9a",
    "livret": 5,
    "numero": "9a",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Situe les carnavals de Nice, Cologne et Venise sur la carte.",
+   "type": "trous",
+   "enonce": "En Europe, plusieurs carnavals célèbres se déroulent tous les ans : celui de Venise en Italie, celui de Cologne en Allemagne et celui de Nice en France. Observe la carte d'Europe du livret (page 17) et écris le numéro qui situe chaque carnaval.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-europe",
+   "documents": [
+    "liv5-p17"
+   ],
+   "texte": "Le carnaval de Nice : n° {1}  ·  Le carnaval de Cologne : n° {2}  ·  Le carnaval de Venise : n° {3}",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "1"
+    ],
+    [
+     "4"
+    ]
+   ],
+   "explication": "Nice est dans le sud-est de la France (5), Cologne dans l'ouest de l'Allemagne (1) et Venise dans le nord-est de l'Italie (4)."
   },
   {
    "id": "ceb-2021-l5-q9b",
    "livret": 5,
    "numero": "9b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Nomme le pays A sur la carte d'Europe.",
+   "type": "texte_court",
+   "enonce": "Observe la carte d'Europe du livret (page 17) : écris le nom du pays désigné par la lettre A.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-europe",
+   "documents": [
+    "liv5-p17"
+   ],
+   "reponse": [
+    "Portugal",
+    "le Portugal",
+    "au Portugal"
+   ],
+   "explication": "La lettre A désigne le pays situé à l'ouest de l'Espagne : le Portugal."
   },
   {
    "id": "ceb-2021-l5-q9c",
    "livret": 5,
    "numero": "9c",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Situe les continents et les océans sur les planisphères.",
+   "type": "trous",
+   "enonce": "Il existe des carnavals sur d'autres continents. Observe les planisphères du livret (pages 18 et 19) : leurs étiquettes blanches sont repérées par des lettres. Sur le premier planisphère (étiquettes A à E), il faut écrire 1 pour l'Amérique et 2 pour l'Asie ; sur le deuxième (étiquettes F à J), 2 pour l'Asie et 3 pour l'Afrique ; sur le troisième (page 19, étiquettes K à M), A pour l'océan Atlantique et P pour l'océan Pacifique. Pour chacun, écris la lettre de l'étiquette qui convient.",
    "points": 6,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-planisphere",
+   "documents": [
+    "liv5-p18",
+    "liv5-p19"
+   ],
+   "texte": "Premier planisphère : Amérique → étiquette {1}  ·  Asie → étiquette {2}  ·  Deuxième planisphère : Asie → étiquette {3}  ·  Afrique → étiquette {4}  ·  Troisième planisphère : océan Atlantique → étiquette {5}  ·  océan Pacifique → étiquette {6}",
+   "reponse": [
+    [
+     "C"
+    ],
+    [
+     "B"
+    ],
+    [
+     "F"
+    ],
+    [
+     "I"
+    ],
+    [
+     "K"
+    ],
+    [
+     "L"
+    ]
+   ],
+   "explication": "Premier planisphère : l'Amérique est l'étiquette C et l'Asie l'étiquette B. Deuxième : l'Asie est l'étiquette F et l'Afrique l'étiquette I. Troisième : l'océan Atlantique est l'étiquette K et l'océan Pacifique l'étiquette L."
   },
   {
    "id": "ceb-2021-l5-q10a",
    "livret": 5,
    "numero": "10a",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Calendrier : un animal qui peut s'accoupler en janvier.",
+   "type": "texte_court",
+   "enonce": "Observe le calendrier des périodes de reproduction d'animaux sauvages (livret, page 20). Écris le nom d'un animal qui peut s'accoupler en janvier.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "documents": [
+    "liv5-p20"
+   ],
+   "reponse": [
+    "sanglier",
+    "le sanglier",
+    "un sanglier"
+   ],
+   "explication": "Les cases grises de janvier ne concernent que le sanglier."
   },
   {
    "id": "ceb-2021-l5-q10b",
    "livret": 5,
    "numero": "10b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Calendrier : l'animal dont la gestation est la plus longue.",
+   "type": "texte_court",
+   "enonce": "Observe le calendrier des périodes de reproduction d'animaux sauvages (livret, page 20). Écris le nom de l'animal dont la durée de gestation est la plus longue.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "documents": [
+    "liv5-p20"
+   ],
+   "reponse": [
+    "chevreuil",
+    "le chevreuil",
+    "un chevreuil"
+   ],
+   "explication": "La gestation dure du mois d'accouplement (case grise) au mois de mise bas (case noire) : c'est chez le chevreuil que cette durée est la plus longue."
   },
   {
    "id": "ceb-2021-l6-q2",
@@ -2855,22 +3760,49 @@
    "livret": 6,
    "numero": "1",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule la distance entre deux poteaux du viaduc.",
+   "type": "numerique",
+   "enonce": "Observe la photo du viaduc (livret, page 2). Sur ce viaduc, la distance entre deux poteaux d'éclairage est de 25 m. Calcule la distance entre le poteau A et le poteau B.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv6-p02"
+   ],
+   "reponse": 325,
+   "unite": "m",
+   "explication": "Il y a 13 intervalles de 25 m entre le poteau A et le poteau B : 13 × 25 = 325 m."
   },
   {
    "id": "ceb-2021-l6-q11",
    "livret": 6,
    "numero": "11",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Colorie la même charge de batterie.",
+   "type": "trous",
+   "enonce": "Observe les quatre batteries du livret (page 9), numérotées de 1 à 4. Écris le pourcentage de charge des batteries 1 et 2, puis la fraction de charge des batteries 3 et 4.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "documents": [
+    "liv6-p09"
+   ],
+   "texte": "Batterie 1 : {1} %  ·  Batterie 2 : {2} %  ·  Batterie 3 : {3} (fraction)  ·  Batterie 4 : {4} (fraction)",
+   "reponse": [
+    [
+     "50"
+    ],
+    [
+     "75"
+    ],
+    [
+     "2/5",
+     "2 / 5"
+    ],
+    [
+     "7/8",
+     "7 / 8"
+    ]
+   ],
+   "explication": "La batterie 1 est à moitié chargée : 50 %. La batterie 2 a 3 cases pleines sur 4 : 75 %. La batterie 3 a 2 cases pleines sur 5 : 2/5. La batterie 4 a 7 cases pleines sur 8 : 7/8."
   },
   {
    "id": "ceb-2021-l6-q12",
@@ -2878,23 +3810,52 @@
    "numero": "12",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Écris le pourcentage et la fraction de charge des batteries.",
+   "enonce": "Observe la représentation de la charge d'une batterie (livret, page 9). Colorie la même charge pour les deux autres représentations.",
    "points": 2,
    "corrigeVerifie": true,
+   "fiche": "ma-fractions",
    "numerisable": false,
-   "reponseModele": "Les batteries sont chargées aux trois quarts : 75 % (1 pt) et 3/4 (1 pt). Toute représentation de 3/4 est acceptée.",
-   "explication": "75 % = 75/100 = 3/4."
+   "reponseModele": "La batterie est chargée aux trois quarts (3/4 = 75 %) : colorie trois quarts de chaque représentation. Toute forme de représentation de 3/4 est acceptée.",
+   "explication": "75 % = 75/100 = 3/4.",
+   "remarque": "Coloriage sur le dessin du livret : question laissée en version papier."
   },
   {
    "id": "ceb-2021-l6-q14",
    "livret": 6,
    "numero": "14",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Estime la hauteur des deux arbres.",
+   "type": "trous",
+   "enonce": "La personne présente sur la photo mesure un peu moins de 2 mètres. Observe les deux arbres du livret (page 12) et estime leur hauteur.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-estimation",
+   "documents": [
+    "liv6-p12"
+   ],
+   "texte": "La hauteur de l'arbre 1 est d'environ {1} m  ·  La hauteur de l'arbre 2 est d'environ {2} m",
+   "reponse": [
+    [
+     "9",
+     "10",
+     "11",
+     "9 m",
+     "10 m",
+     "11 m"
+    ],
+    [
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "16 m",
+     "17 m",
+     "18 m",
+     "19 m",
+     "20 m"
+    ]
+   ],
+   "explication": "On compare chaque arbre à la personne (environ 2 m) : l'arbre 1 mesure environ 10 m et l'arbre 2 environ 18 m. On accepte de 9 à 11 m pour l'arbre 1 et de 16 à 20 m pour l'arbre 2."
   },
   {
    "id": "ceb-2021-l6-q16",
@@ -2912,11 +3873,32 @@
    "livret": 6,
    "numero": "18",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Lis la mesure de la seringue, de la balle et du rouleau.",
+   "type": "trous",
+   "enonce": "Observe les trois photos du livret (page 18) et lis chaque mesure. Les propositions du livret sont indiquées entre parenthèses.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "documents": [
+    "liv6-p18"
+   ],
+   "texte": "a) Quantité de liquide contenu dans la seringue : {1} (30 ml, 35 ml, 40 ml ou 50 ml)  ·  b) Diamètre de la balle : {2} (0 cm, 0,4 cm, 2,5 cm ou 4 cm)  ·  c) Contour du rouleau : environ {3} (6 cm, 34 cm, 40 cm ou 46 cm)",
+   "reponse": [
+    [
+     "35 ml",
+     "35",
+     "35ml"
+    ],
+    [
+     "4 cm",
+     "4",
+     "4cm"
+    ],
+    [
+     "34 cm",
+     "34",
+     "34cm"
+    ]
+   ],
+   "explication": "La seringue contient 35 ml, la balle mesure 4 cm de diamètre et le contour du rouleau mesure environ 34 cm."
   },
   {
    "id": "ceb-2021-l6-q19",
@@ -4219,44 +5201,102 @@
    "livret": 8,
    "numero": "9",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Compte les voitures du parking.",
+   "type": "numerique",
+   "enonce": "Observe la photo du parking (livret, page 9). Chaque espace est occupé par le même nombre de voitures. Calcule le nombre total de voitures stockées sur ce parking.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-operations",
+   "documents": [
+    "liv8-p09"
+   ],
+   "reponse": 1120,
+   "explication": "Le parking compte 7 × 5 = 35 espaces, et un espace contient 8 × 4 = 32 voitures : 35 × 32 = 1 120 voitures."
   },
   {
    "id": "ceb-2021-l8-q11",
    "livret": 8,
    "numero": "11",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Rouleaux de tickets : nombre de visiteurs du musée.",
+   "type": "numerique",
+   "enonce": "À l'office du tourisme de Liège, on vend des tickets pour différentes activités. Observe les rouleaux de tickets à l'ouverture et à la fermeture le samedi 8 juin (livret, page 11). Les tickets « Musée » donnent accès au Musée de la Vie wallonne, les tickets « Bateau » à la promenade en bateau sur la Meuse et les tickets « Duo » aux deux activités. Calcule le nombre de personnes qui ont pu visiter le musée le samedi 8 juin.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv8-p11"
+   ],
+   "reponse": 212,
+   "explication": "Tickets « Musée » : 1 020 − 890 = 130 personnes. Tickets « Duo » : 4 098 − 4 016 = 82 personnes. Au total : 130 + 82 = 212 personnes ont pu visiter le musée."
   },
   {
    "id": "ceb-2021-l8-q15",
    "livret": 8,
    "numero": "15",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Nombre de clémentines dans la caissette.",
+   "type": "numerique",
+   "enonce": "Observe les photos du livret (page 14). Si on considère que toutes les clémentines ont la même masse, calcule le nombre total de clémentines présentes dans cette caissette. (Le poids net est le poids des clémentines sans la caisse.)",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-division",
+   "documents": [
+    "liv8-p14"
+   ],
+   "reponse": 20,
+   "explication": "Une clémentine pèse 75 g et le poids net est de 1 500 g : 1 500 : 75 = 20 clémentines."
   },
   {
    "id": "ceb-2021-l8-q22",
    "livret": 8,
    "numero": "22",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète la table d'addition des décimaux.",
+   "type": "trous",
+   "enonce": "Observe les deux tables du livret (page 19) : une table d'addition et une table de multiplication de nombres décimaux. Les cases blanches à compléter sont repérées par des lettres : A à E dans la table d'addition, F à I dans la table de multiplication. Écris le nombre à placer dans chaque case.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv8-p19"
+   ],
+   "texte": "A : {1}  ·  B : {2}  ·  C : {3}  ·  D : {4}  ·  E : {5}  ·  F : {6}  ·  G : {7}  ·  H : {8}  ·  I : {9}",
+   "reponse": [
+    [
+     "1,1",
+     "1.1"
+    ],
+    [
+     "0,7",
+     "0.7"
+    ],
+    [
+     "1,1",
+     "1.1"
+    ],
+    [
+     "1,5",
+     "1.5"
+    ],
+    [
+     "1,9",
+     "1.9"
+    ],
+    [
+     "1,6",
+     "1.6"
+    ],
+    [
+     "3,2",
+     "3.2"
+    ],
+    [
+     "1,6",
+     "1.6"
+    ],
+    [
+     "3,2",
+     "3.2"
+    ]
+   ],
+   "explication": "Table d'addition : A = 0,1 + 1 = 1,1 ; B = 0,3 + 0,4 = 0,7 ; C = 0,7 + 0,4 = 1,1 ; D = 0,7 + 0,8 = 1,5 ; E = 0,9 + 1 = 1,9. Table de multiplication : F = 0,1 × 16 = 1,6 ; G = 0,1 × 32 = 3,2 ; H = 0,4 × 4 = 1,6 ; I = 0,4 × 8 = 3,2."
   },
   {
    "id": "ceb-2021-l8-q23",
@@ -4629,6 +5669,9 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
+   "documents": [
+    "liv9-p19"
+   ],
    "choix": [
     "une fourchette en fer",
     "une paire de ciseaux en fer",
@@ -4742,44 +5785,136 @@
    "livret": 9,
    "numero": "3a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Coche la représentation du cycle de vie du cerf.",
+   "type": "qcm",
+   "enonce": "Observe les trois représentations de cycles de vie du livret (page 4), numérotées de 1 à 3. Laquelle correspond au cycle de vie du cerf ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
+   "documents": [
+    "liv9-p04"
+   ],
+   "choix": [
+    "Représentation 1",
+    "Représentation 2",
+    "Représentation 3"
+   ],
+   "reponse": 2,
+   "explication": "Chez le cerf, le cycle suit cet ordre : accouplement, gestation, mise bas, allaitement, sevrage, puis âge adulte. C'est la représentation 3."
   },
   {
    "id": "ceb-2021-l9-q4",
    "livret": 9,
    "numero": "4",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Associe les organes aux appareils et les publicités aux schémas.",
+   "type": "grille",
+   "enonce": "Observe les quatre schémas du livret (page 6). a) Associe la trachée et l'artère pulmonaire à l'appareil auquel elles appartiennent. b) Observe les trois publicités de la page 7 : en te basant sur les schémas, indique pour chacune le schéma qu'elle concerne, ou « aucun des quatre schémas ».",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv9-p06",
+    "liv9-p07"
+   ],
+   "lignes": [
+    "La trachée",
+    "L'artère pulmonaire",
+    "Zarepouss (contre la chute des cheveux)",
+    "Zacoulplu (contre les saignements)",
+    "Zapasmal (contre les douleurs articulaires)"
+   ],
+   "colonnes": [
+    "Schéma A",
+    "Schéma B",
+    "Schéma C",
+    "Schéma D",
+    "Aucun des quatre schémas"
+   ],
+   "reponse": [
+    3,
+    2,
+    4,
+    2,
+    0
+   ],
+   "explication": "La trachée fait partie de l'appareil respiratoire (D) et l'artère pulmonaire de l'appareil circulatoire (C). Zarepouss (cheveux) ne concerne aucun des schémas ; Zacoulplu (saignements) concerne le schéma C (le sang) ; Zapasmal (articulations) concerne le schéma A (appareil locomoteur)."
   },
   {
    "id": "ceb-2021-l9-q5",
    "livret": 9,
    "numero": "5",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Place les os du rongeur et les fonctions du squelette.",
+   "type": "trous",
+   "enonce": "Observe les os numérotés de 1 à 5 (livret, page 8). a) Il faut les situer sur le squelette du rongeur (page 9) en écrivant leur numéro dans les étiquettes ; le numéro 1 est donné, des étiquettes resteront vides, et les étiquettes à compléter sont repérées par les lettres A à G. Pour chaque os, écris la lettre de l'étiquette où il faut écrire son numéro. b) Sur le squelette du cerf, il faut écrire dans chaque case la lettre de la fonction de l'appareil locomoteur : protection (P), support (S) ou mobilité (M). Pour chaque étiquette repérée H, I ou J, écris la lettre P, S ou M.",
    "points": 7,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv9-p08",
+    "liv9-p09"
+   ],
+   "texte": "Os 2 : étiquette {1}  ·  Os 3 : étiquette {2}  ·  Os 4 : étiquette {3}  ·  Os 5 : étiquette {4}  ·  Cerf, étiquette H : {5}  ·  Cerf, étiquette I : {6}  ·  Cerf, étiquette J : {7}",
+   "reponse": [
+    [
+     "A"
+    ],
+    [
+     "F"
+    ],
+    [
+     "E"
+    ],
+    [
+     "C"
+    ],
+    [
+     "P"
+    ],
+    [
+     "S"
+    ],
+    [
+     "M"
+    ]
+   ],
+   "explication": "Os 2 (vertèbres) : étiquette A, sur la colonne. Os 3 (tibia et péroné) : étiquette F, sur la jambe. Os 4 (fémur) : étiquette E, sur la cuisse. Os 5 (omoplate) : étiquette C, sur l'épaule. Chez le cerf, le crâne protège (P), les os de la patte arrière soutiennent (S) et ceux de la patte avant permettent le mouvement (M)."
   },
   {
    "id": "ceb-2021-l9-q7a",
    "livret": 9,
    "numero": "7a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète le tableau de classement des animaux de la forêt.",
+   "type": "trous",
+   "enonce": "Observe le classement des élèves (livret, page 12) et le tableau à double entrée (page 13) : l'exemple de la belette est donné. Pour chaque animal du tableau, écris les attributs (sabots, crocs, poils) pour lesquels il faut placer une croix, ou « aucun ».",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
+   "documents": [
+    "foret",
+    "liv9-p12",
+    "liv9-p13"
+   ],
+   "texte": "Pic épeiche : {1}  ·  Loir gris : {2}  ·  Sanglier : {3}",
+   "reponse": [
+    [
+     "aucun",
+     "aucune",
+     "aucune croix",
+     "rien"
+    ],
+    [
+     "poils",
+     "les poils"
+    ],
+    [
+     "sabots et poils",
+     "poils et sabots",
+     "sabots, poils",
+     "poils, sabots",
+     "sabots,poils",
+     "poils,sabots"
+    ]
+   ],
+   "explication": "Le pic épeiche a des plumes et un bec : aucune croix. Le loir gris a des poils. Le sanglier a des poils et des sabots. Aucun de ces animaux n'a de crocs."
   },
   {
    "id": "ceb-2021-l9-q7b",
@@ -4798,10 +5933,14 @@
    "numero": "7c",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Donne un attribut qui distingue ces animaux de l'épeire.",
+   "enonce": "Observe le moustique et le gloméris du livret (page 13). Ils ne peuvent pas être classés avec l'épeire diadème. Écris un attribut (critère) qui te permet de le dire.",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
+   "fiche": "sc-attributs",
+   "documents": [
+    "jardin",
+    "liv9-p13"
+   ],
    "reponseModele": "Par exemple : le moustique et le gloméris n'ont pas 4 paires de pattes articulées ; ou ils n'ont pas de chélicères ; ou ils portent des antennes. Toute formulation dans ce sens est acceptée (pas besoin de phrase). 1 point.",
    "explication": "L'épeire a 4 paires de pattes, des chélicères et pas d'antennes."
   },
@@ -4810,33 +5949,80 @@
    "livret": 9,
    "numero": "7e",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Place le gloméris, le trombidion et l'oxychilus dans les ensembles.",
+   "type": "trous",
+   "enonce": "Lis le tableau de la page 14 du livret et le portfolio. Où faut-il placer le gloméris, le trombidion et l'oxychilus dans les ensembles emboités de la page 15 ? Un animal ne peut pas être écrit plusieurs fois et des étiquettes resteront vides. Les étiquettes blanches sont repérées par les lettres A à E : pour chaque animal, écris la lettre de l'étiquette où il faut écrire son nom.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-ensembles-emboites",
+   "documents": [
+    "jardin",
+    "ensembles",
+    "liv9-p14",
+    "liv9-p15"
+   ],
+   "texte": "Gloméris : étiquette {1}  ·  Trombidion : étiquette {2}  ·  Oxychilus : étiquette {3}",
+   "reponse": [
+    [
+     "C"
+    ],
+    [
+     "D"
+    ],
+    [
+     "E"
+    ]
+   ],
+   "explication": "Le gloméris a au moins une paire de pattes sur tous ses segments : étiquette C. Le trombidion (un acarien) a 4 paires de pattes : étiquette D. L'oxychilus (un escargot) a un pied plat et des tentacules : étiquette E."
   },
   {
    "id": "ceb-2021-l9-q9c",
    "livret": 9,
    "numero": "9c",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Barre la vérification incorrecte.",
+   "type": "qcm",
+   "enonce": "Tu as réalisé le montage du livret (page 19) : l'ampoule du circuit ne s'allume pas, un objet empêche le courant électrique de passer. Que pourrais-tu faire pour vérifier que cet objet empêche le courant de passer ? Je vérifie si l'ampoule s'allume quand… Choisis la proposition incorrecte.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
+   "documents": [
+    "liv9-p19"
+   ],
+   "choix": [
+    "je retire l'objet et referme le circuit",
+    "je change l'objet de place dans le circuit",
+    "je remplace l'objet par un fil de fer dans le circuit",
+    "je fais un circuit électrique uniquement avec cet objet"
+   ],
+   "reponse": 1,
+   "explication": "Changer l'objet de place ne change rien : le courant doit toujours le traverser. Les trois autres vérifications permettent de savoir si l'objet bloque le courant."
   },
   {
    "id": "ceb-2021-l9-q12a",
    "livret": 9,
    "numero": "12a",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Fusée : lis le tableau des décollages.",
+   "type": "grille",
+   "enonce": "Observe le tableau des essais de la fusée (livret, page 22). En te servant des données du tableau, choisis la proposition correcte pour chacune des deux situations.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-lire-donnees",
+   "documents": [
+    "liv9-p22"
+   ],
+   "lignes": [
+    "Avec 20 ml de vinaigre et 4 g de bicarbonate…",
+    "Avec 20 ml de vinaigre et 6 g de bicarbonate…"
+   ],
+   "colonnes": [
+    "la fusée décolle",
+    "la fusée ne décolle pas",
+    "on ne peut pas dire si la fusée va décoller"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Avec 20 ml de vinaigre et 4 g de bicarbonate, le tableau montre que la fusée décolle. Avec 6 g, on n'a pas fait d'essai : on ne peut pas le dire."
   },
   {
    "id": "ceb-2021-l9-q12b",
