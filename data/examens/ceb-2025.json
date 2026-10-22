@@ -401,6 +401,267 @@
     }
    ],
    "source": "Correctif officiel CEB 2025, support du Savoir écouter"
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Trois développements et le devoir de Lucas",
+   "fichier": "assets/2025/liv3-p05.webp",
+   "alt": "Trois cadres numérotés de 1 à 3, chacun contenant un développement de solide (figures planes dessinées). En dessous : le devoir de Lucas, un dessin de quadrilatères dont une figure est barrée."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Pliage de Zoé et quatre flocons",
+   "fichier": "assets/2025/liv3-p06.webp",
+   "alt": "Un papier plié en pointe dont une partie est hachurée, puis quatre flocons découpés numérotés de 1 à 4."
+  },
+  {
+   "id": "liv3-p12",
+   "source": "livret",
+   "livret": 3,
+   "page": 12,
+   "titre": "Terrain de football quadrillé",
+   "fichier": "assets/2025/liv3-p12.webp",
+   "alt": "Quadrillage d'un terrain de football (colonnes A à N, lignes 1 à 9) avec les joueurs X1 à X4, Y1 à Y4 et un ballon, puis deux séries de flèches de déplacement pour les joueurs X3 et Y4."
+  },
+  {
+   "id": "liv3-p17",
+   "source": "livret",
+   "livret": 3,
+   "page": 17,
+   "titre": "Tableau des caractéristiques des triangles",
+   "fichier": "assets/2025/liv3-p17.webp",
+   "alt": "Tableau des caractéristiques de quatre triangles (longueur des côtés et angles) ; la première colonne, à compléter par le nom précis de chaque triangle, a quatre lignes numérotées de 1 à 4."
+  },
+  {
+   "id": "liv3-p18",
+   "source": "livret",
+   "livret": 3,
+   "page": 18,
+   "titre": "Le découpage de Léana",
+   "fichier": "assets/2025/liv3-p18.webp",
+   "alt": "En haut, une feuille découpée en forme de flocon ; en bas, sa représentation dessinée (contour du flocon) ; une phrase à compléter sur les axes de symétrie."
+  },
+  {
+   "id": "liv3-p19",
+   "source": "livret",
+   "livret": 3,
+   "page": 19,
+   "titre": "Deux groupes de figures (Jules)",
+   "fichier": "assets/2025/liv3-p19.webp",
+   "alt": "Deux cadres : le groupe A et le groupe B, chacun avec trois figures noires ; puis des propositions à cocher."
+  },
+  {
+   "id": "liv4-p07",
+   "source": "livret",
+   "livret": 4,
+   "page": 7,
+   "titre": "Disques à colorier et pelouse",
+   "fichier": "assets/2025/liv4-p07.webp",
+   "alt": "En haut, trois disques divisés en parts égales (question 5) ; en dessous, une forme grise appelée « Pelouse » et un étalon de 100 m²."
+  },
+  {
+   "id": "liv4-p12",
+   "source": "livret",
+   "livret": 4,
+   "page": 12,
+   "titre": "Graphique des ventes de pommes d'amour",
+   "fichier": "assets/2025/liv4-p12.webp",
+   "alt": "Diagramme en bâtons : pourcentage des ventes de pommes d'amour selon la catégorie d'âge des clients, puis cinq cases de catégories d'âge à cocher et une question vrai ou faux."
+  },
+  {
+   "id": "liv4-p14",
+   "source": "livret",
+   "livret": 4,
+   "page": 14,
+   "titre": "Surface hachurée",
+   "fichier": "assets/2025/liv4-p14.webp",
+   "alt": "Un rectangle hachuré de 8 cm sur 5 cm dans lequel est dessiné un cercle blanc."
+  },
+  {
+   "id": "liv4-p17",
+   "source": "livret",
+   "livret": 4,
+   "page": 17,
+   "titre": "Montre et panneau de la gare",
+   "fichier": "assets/2025/liv4-p17.webp",
+   "alt": "Une montre à aiguilles et un panneau d'affichage de gare indiquant « VERVIERS 11:21 L5 »."
+  },
+  {
+   "id": "liv4-p22",
+   "source": "livret",
+   "livret": 4,
+   "page": 22,
+   "titre": "Clés USB et carrés grisés",
+   "fichier": "assets/2025/liv4-p22.webp",
+   "alt": "Quatre clés USB (F, E, D, G) avec une barre qui montre l'espace utilisé et l'espace libre ; en dessous, deux carrés partiellement grisés, numérotés 1 et 2, chacun suivi d'une fraction à écrire."
+  },
+  {
+   "id": "liv4-p23",
+   "source": "livret",
+   "livret": 4,
+   "page": 23,
+   "titre": "Rectangle grisé et playlist",
+   "fichier": "assets/2025/liv4-p23.webp",
+   "alt": "Un rectangle partiellement grisé suivi d'une fraction à écrire, puis le tableau de la playlist de Mia (question 26)."
+  },
+  {
+   "id": "liv5-p14",
+   "source": "livret",
+   "livret": 5,
+   "page": 14,
+   "titre": "Quatre plans de l'Expo 58",
+   "fichier": "assets/2025/liv5-p14.webp",
+   "alt": "Quatre plans de l'Expo 58 numérotés de 1 à 4, chacun avec des bâtiments en noir ; deux séries de propositions à cocher."
+  },
+  {
+   "id": "liv5-p20",
+   "source": "livret",
+   "livret": 5,
+   "page": 20,
+   "titre": "Carte de l'Europe en 1987",
+   "fichier": "assets/2025/liv5-p20.webp",
+   "alt": "Carte de l'Europe en 1987 : les pays participants sont en blanc, certains éléments sont désignés par les lettres A, B, C, D, E, W, X, Y et Z ; trois lignes à compléter."
+  },
+  {
+   "id": "liv6-p02",
+   "source": "livret",
+   "livret": 6,
+   "page": 2,
+   "titre": "Décomposition de 0,64",
+   "fichier": "assets/2025/liv6-p02.webp",
+   "alt": "Arbre de décomposition du nombre 0,64 avec trois cases vides repérées par les lettres A, B et C ; en bas de la page, la question 2 (estimations)."
+  },
+  {
+   "id": "liv6-p04",
+   "source": "livret",
+   "livret": 6,
+   "page": 4,
+   "titre": "Tableau de multiplication",
+   "fichier": "assets/2025/liv6-p04.webp",
+   "alt": "Questions 5 (opérations à cocher) et 6 : un tableau de multiplication dont trois cases blanches sont repérées par les lettres A, B et C."
+  },
+  {
+   "id": "liv6-p06",
+   "source": "livret",
+   "livret": 6,
+   "page": 6,
+   "titre": "Décompositions et égalités à comparer",
+   "fichier": "assets/2025/liv6-p06.webp",
+   "alt": "Tableau de décompositions de nombres (question 8), puis l'expression 62 × 2,5 et quatre expressions à comparer, chacune avec une case où écrire = ou ≠ (question 9)."
+  },
+  {
+   "id": "liv7-p03",
+   "source": "livret",
+   "livret": 7,
+   "page": 3,
+   "titre": "Cinq cartons d'œufs",
+   "fichier": "assets/2025/liv7-p03.webp",
+   "alt": "Photo de cinq cartons d'œufs empilés ; celui du dessus est incomplet."
+  },
+  {
+   "id": "liv7-p09",
+   "source": "livret",
+   "livret": 7,
+   "page": 9,
+   "titre": "Étiquettes « Multiples de »",
+   "fichier": "assets/2025/liv7-p09.webp",
+   "alt": "Trois ensembles qui se chevauchent, contenant les nombres 15, 35, 21, 70, 20, 28 et 12, avec trois étiquettes « Multiples de … » repérées par les lettres A, B et C ; en bas de la page, la question 9 (une division)."
+  },
+  {
+   "id": "liv7-p11",
+   "source": "livret",
+   "livret": 7,
+   "page": 11,
+   "titre": "Cinq compteurs de vues",
+   "fichier": "assets/2025/liv7-p11.webp",
+   "alt": "Cinq compteurs de vues repérés par les lettres A à E, avec une ligne pour écrire les nombres par ordre croissant."
+  },
+  {
+   "id": "liv7-p12",
+   "source": "livret",
+   "livret": 7,
+   "page": 12,
+   "titre": "Boites de dossards",
+   "fichier": "assets/2025/liv7-p12.webp",
+   "alt": "Huit boites de dossards (A à H) dont certaines étiquettes sont cachées ou à compléter, et un tableau avec les dossards 326 et 1 451."
+  },
+  {
+   "id": "liv7-p13",
+   "source": "livret",
+   "livret": 7,
+   "page": 13,
+   "titre": "Deux droites graduées",
+   "fichier": "assets/2025/liv7-p13.webp",
+   "alt": "Deux droites graduées avec deux cases vides repérées par les lettres A et B ; en bas de la page, la question 14 (calculs réciproques)."
+  },
+  {
+   "id": "liv8-p05",
+   "source": "livret",
+   "livret": 8,
+   "page": 5,
+   "titre": "Illustration d'un système de mémoire",
+   "fichier": "assets/2025/liv8-p05.webp",
+   "alt": "Une jeune fille allongée qui rêve, avec une bulle de pensée montrant des personnes sur une plage ; cinq propositions de systèmes de mémoire à cocher et une ligne pour justifier."
+  },
+  {
+   "id": "liv10-p04",
+   "source": "livret",
+   "livret": 10,
+   "page": 4,
+   "titre": "Trois schémas du cycle de vie de la poule",
+   "fichier": "assets/2025/liv10-p04.webp",
+   "alt": "Trois schémas en cycle, numérotés de 1 à 3, composés des mêmes étiquettes (éclosion, incubation, croissance, accouplement, fécondation, ponte) rangées dans des ordres différents."
+  },
+  {
+   "id": "liv10-p06",
+   "source": "livret",
+   "livret": 10,
+   "page": 6,
+   "titre": "Cycle de vie du geai des chênes",
+   "fichier": "assets/2025/liv10-p06.webp",
+   "alt": "Schéma circulaire du cycle de vie du geai des chênes avec les étiquettes A, B, C, D, E et « Ponte » ; deux séries de propositions à cocher."
+  },
+  {
+   "id": "liv10-p07",
+   "source": "livret",
+   "livret": 10,
+   "page": 7,
+   "titre": "Cycle de vie du ténébrion meunier",
+   "fichier": "assets/2025/liv10-p07.webp",
+   "alt": "Schéma du cycle de vie du ténébrion meunier avec des étiquettes numérotées de 1 à 5 et des étiquettes lettrées de A à D ; des questions à compléter."
+  },
+  {
+   "id": "liv10-p17",
+   "source": "livret",
+   "livret": 10,
+   "page": 17,
+   "titre": "Étape finale d'une expérience",
+   "fichier": "assets/2025/liv10-p17.webp",
+   "alt": "Photo d'un aquarium recouvert d'un film plastique avec un bol, de l'eau chaude et des glaçons (légendes sur la photo) ; six questions à cocher et trois phrases à compléter."
+  },
+  {
+   "id": "liv10-p22",
+   "source": "livret",
+   "livret": 10,
+   "page": 22,
+   "titre": "Graphique des distances avec lubrifiant",
+   "fichier": "assets/2025/liv10-p22.webp",
+   "alt": "Diagramme en bâtons : distance parcourue par un ballon avec lubrifiant selon le diamètre de la corde (1 à 4 mm) et le volume d'air injecté (5,2 à 20,8 l)."
+  },
+  {
+   "id": "liv10-p23",
+   "source": "livret",
+   "livret": 10,
+   "page": 23,
+   "titre": "Tableau 2 incomplet",
+   "fichier": "assets/2025/liv10-p23.webp",
+   "alt": "Tableau 2 des distances parcourues avec lubrifiant, dont trois cases sont vides, puis des propositions à cocher (question g)."
   }
  ],
  "questions": [
@@ -756,14 +1017,21 @@
    "livret": 3,
    "numero": "1b",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Suis les instructions du directeur sur le plan de l'école et écris le nom du local où le nouvel enseignant doit se rendre.",
+   "type": "texte_court",
+   "enonce": "Observe le plan de l'école. Suis les instructions données par le directeur à un nouvel enseignant : « En sortant de mon bureau (D1), tournez à gauche. Avancez et prenez le couloir de gauche. Avancez et prenez le couloir sur votre droite. Le local se trouve à gauche. » Écris le nom du local où il doit se rendre.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
    "documents": [
     "plan-ecole"
    ],
-   "numerisable": false
+   "reponse": [
+    "salle de gymnastique",
+    "la salle de gymnastique",
+    "salle de gym",
+    "la salle de gym"
+   ],
+   "explication": "Suis le trajet sur le plan, couloir après couloir : le local indiqué est la salle de gymnastique."
   },
   {
    "id": "ceb-2025-l3-q1c",
@@ -844,11 +1112,21 @@
    "livret": 3,
    "numero": "2c",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Coche le développement qui permet de construire la pyramide à base carrée.",
+   "type": "qcm",
+   "enonce": "Théo voudrait construire une pyramide à base carrée. Observe les trois développements numérotés du livret (page 5). Coche le développement qui permet de construire cette pyramide.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-developpements",
+   "documents": [
+    "liv3-p05"
+   ],
+   "choix": [
+    "Développement 1",
+    "Développement 2",
+    "Développement 3"
+   ],
+   "reponse": 2,
+   "explication": "C'est le développement 3 : un carré (la base) entouré de 4 triangles (les faces)."
   },
   {
    "id": "ceb-2025-l3-q3",
@@ -862,18 +1140,29 @@
    "numerisable": false,
    "reponseModele": "a) Un trapèze rectangle (« trapèze droit » ou simplement « trapèze » sont refusés). b) Colorier le parallélogramme non rectangle (la forme oblique au centre).",
    "explication": "Un trapèze rectangle a deux côtés parallèles et un angle droit.",
-   "remarque": "Question appuyée sur le devoir de Lucas du livret que nous n'avons pas : gardée en mode papier."
+   "remarque": "Question à colorier sur le dessin du devoir de Lucas : gardée en mode papier (la partie a, écrire le nom de la figure, ne se joue pas seule)."
   },
   {
    "id": "ceb-2025-l3-q4",
    "livret": 3,
    "numero": "4",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Zoé découpe la partie hachurée de son pliage et déplie son papier. Coche ce qu'elle obtient.",
+   "type": "qcm",
+   "enonce": "Zoé a réalisé le pliage du livret (page 6). Elle découpe la partie hachurée et déplie son papier. Observe les quatre flocons numérotés et coche ce qu'elle obtient.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p06"
+   ],
+   "choix": [
+    "Flocon 1",
+    "Flocon 2",
+    "Flocon 3",
+    "Flocon 4"
+   ],
+   "reponse": 3,
+   "explication": "C'est le flocon 4 : le motif découpé dans le papier plié se répète dans chacune des parts quand on déplie."
   },
   {
    "id": "ceb-2025-l3-q5",
@@ -913,11 +1202,26 @@
    "livret": 3,
    "numero": "8",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Terrain de football : écris les coordonnées des joueurs X3 et Y4 après leur déplacement.",
+   "type": "trous",
+   "enonce": "Observe le terrain de football du livret (page 12). Les équipes X et Y sont formées. Lors d'une phase de jeu, les joueurs X3 et Y4 se déplacent : X3 fait ↓ ↓ → → et Y4 fait ↑ ← ↑ →. Écris les coordonnées de la case où chacun de ces joueurs se situe à la fin du déplacement indiqué.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
+   "documents": [
+    "liv3-p12"
+   ],
+   "texte": "X3 : {1}\nY4 : {2}",
+   "reponse": [
+    [
+     "G4",
+     "4G"
+    ],
+    [
+     "F5",
+     "5F"
+    ]
+   ],
+   "explication": "Pars de la case du joueur et avance case par case, flèche après flèche : X3 arrive en G4 et Y4 en F5."
   },
   {
    "id": "ceb-2025-l3-q9",
@@ -1014,39 +1318,95 @@
    "livret": 3,
    "numero": "14",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Tableau des caractéristiques des triangles : écris le nom précis de chaque triangle.",
+   "type": "trous",
+   "enonce": "Observe le tableau des caractéristiques des triangles du livret (page 17). Écris le nom précis de chacun des triangles dans la première colonne du tableau (lignes numérotées de 1 à 4). Les mots déjà imprimés dans le tableau ne sont pas à recopier.",
    "points": 4,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "Dans l'ordre des cases : triangle équilatéral (acutangle) ; triangle scalène rectangle ; triangle isocèle acutangle ; triangle scalène obtusangle. L'ordre des mots est libre. 1 point par case.",
-   "explication": "Un triangle se nomme avec la longueur de ses côtés (équilatéral, isocèle, scalène) et la mesure de ses angles (acutangle, rectangle, obtusangle).",
-   "remarque": "Question appuyée sur le tableau du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "ma-triangles",
+   "documents": [
+    "liv3-p17"
+   ],
+   "texte": "Ligne 1 : Triangle {1} acutangle\nLigne 2 : Triangle scalène {2}\nLigne 3 : Triangle {3}\nLigne 4 : Triangle {4}",
+   "reponse": [
+    [
+     "équilatéral",
+     "équilatéral acutangle",
+     "acutangle équilatéral"
+    ],
+    [
+     "rectangle",
+     "scalène rectangle",
+     "rectangle scalène"
+    ],
+    [
+     "isocèle acutangle",
+     "acutangle isocèle"
+    ],
+    [
+     "scalène obtusangle",
+     "obtusangle scalène"
+    ]
+   ],
+   "explication": "Un triangle se nomme avec la longueur de ses côtés (équilatéral, isocèle, scalène) et la mesure de ses angles (acutangle, rectangle, obtusangle)."
   },
   {
    "id": "ceb-2025-l3-q15",
    "livret": 3,
    "numero": "15",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Combien d'axes de symétrie a le dessin découpé par Léana ?",
+   "type": "numerique",
+   "enonce": "Léana a réalisé le pliage et le découpage du livret (page 18). Observe sa représentation. Complète la phrase : ce dessin a … axes de symétrie.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p18"
+   ],
+   "unite": "axes de symétrie",
+   "reponse": 6,
+   "explication": "Le dessin se superpose à lui-même en le pliant suivant 6 droites différentes : il a 6 axes de symétrie."
   },
   {
-   "id": "ceb-2025-l3-q16",
+   "id": "ceb-2025-l3-q16a",
    "livret": 3,
-   "numero": "16",
+   "numero": "16a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Jules a trié six figures en deux groupes. Coche la raison de chaque tri.",
-   "points": 2,
+   "type": "qcm",
+   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Coche la proposition correcte : Jules a rassemblé les figures du groupe A parce que chaque figure de ce groupe…",
+   "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "Premier tri : « a au moins un angle droit ». Second tri : « a au moins deux côtés isométriques » (de même longueur). 1 point par raison.",
-   "explication": "Cherche ce que les figures d'un même groupe ont en commun.",
-   "remarque": "Question appuyée sur les figures du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p19"
+   ],
+   "choix": [
+    "a au moins un angle droit.",
+    "a deux côtés parallèles.",
+    "est un quadrilatère."
+   ],
+   "reponse": 0,
+   "explication": "Cherche ce que les trois figures du groupe A ont en commun : chacune a au moins un angle droit."
+  },
+  {
+   "id": "ceb-2025-l3-q16b",
+   "livret": 3,
+   "numero": "16b",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Coche la proposition correcte : Jules a rassemblé les figures du groupe B parce que chaque figure de ce groupe…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p19"
+   ],
+   "choix": [
+    "a une paire de côtés parallèles.",
+    "a au moins deux côtés isométriques.",
+    "a uniquement des angles aigus."
+   ],
+   "reponse": 1,
+   "explication": "Chaque figure du groupe B a au moins deux côtés de même longueur (isométriques)."
   },
   {
    "id": "ceb-2025-l4-q1",
@@ -1197,11 +1557,18 @@
    "livret": 4,
    "numero": "6",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Estime la superficie de la pelouse à l'aide de l'étalon de 100 m².",
+   "type": "numerique",
+   "enonce": "Estime la superficie de la pelouse à l'aide de l'étalon de 100 m² (livret, page 7). Complète la phrase : la superficie de la pelouse est environ de …",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv4-p07"
+   ],
+   "unite": "m²",
+   "reponse": 800,
+   "tolerance": 100,
+   "explication": "On estime combien de fois l'étalon de 100 m² « rentre » dans la pelouse : environ 8 fois, soit environ 800 m² (on accepte de 700 à 900 m²)."
   },
   {
    "id": "ceb-2025-l4-q7",
@@ -1310,18 +1677,43 @@
    "explication": "Volume = 2 × 1 × 1 = 2 m³. Longueur doublée : 4 × 1 × 1 = 4 m³ (double). Hauteur et profondeur doublées : 2 × 2 × 2 = 8 m³ (4 fois plus)."
   },
   {
-   "id": "ceb-2025-l4-q12",
+   "id": "ceb-2025-l4-q12a",
    "livret": 4,
-   "numero": "12",
+   "numero": "12a",
    "domaine": "ma.donnees",
-   "type": "ouverte",
-   "enonce": "Graphique des ventes de pommes d'amour par âge : quelle catégorie achète le moins ? Les moins de 10 ans achètent-ils le plus ?",
-   "points": 2,
+   "type": "qcm",
+   "enonce": "Un confiseur a réalisé une étude sur la vente de pommes d'amour lors d'une fête foraine. Observe le graphique du livret (page 12). Parmi les propositions ci-dessous, quelle est la catégorie d'âge des clients qui achètent le moins de pommes d'amour ?",
+   "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "a) La catégorie des 30-39 ans achète le moins (1 point). b) Faux : les moins de 10 ans n'achètent pas le plus (1 point).",
-   "explication": "Cherche le plus petit et le plus grand bâton du graphique.",
-   "remarque": "Question appuyée sur le graphique du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv4-p12"
+   ],
+   "choix": [
+    "10-19 ans",
+    "20-29 ans",
+    "30-39 ans",
+    "40-49 ans",
+    "50-59 ans"
+   ],
+   "reponse": 2,
+   "explication": "Parmi ces cinq catégories, le plus petit bâton du graphique est celui des 30-39 ans."
+  },
+  {
+   "id": "ceb-2025-l4-q12b",
+   "livret": 4,
+   "numero": "12b",
+   "domaine": "ma.donnees",
+   "type": "vrai_faux",
+   "enonce": "Observe le graphique du livret (page 12). « Ce sont les personnes de moins de 10 ans qui achètent le plus de pommes d'amour. » Vrai ou faux ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv4-p12"
+   ],
+   "reponse": false,
+   "explication": "C'est faux : les moins de 10 ans ont un petit bâton ; le plus grand est celui des 10-19 ans."
   },
   {
    "id": "ceb-2025-l4-q13",
@@ -1341,11 +1733,18 @@
    "livret": 4,
    "numero": "14",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule l'aire de la surface hachurée (dessin de 8 cm sur 5 cm).",
+   "type": "numerique",
+   "enonce": "Observe le dessin du livret (page 14). Calcule l'aire de la surface hachurée.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-formules",
+   "documents": [
+    "liv4-p14"
+   ],
+   "unite": "cm²",
+   "reponse": 20.375,
+   "tolerance": 0.076,
+   "explication": "Rectangle : 8 × 5 = 40 cm². Disque de diamètre 5 cm (rayon 2,5 cm) : 3,14 × 2,5 × 2,5 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm² (on accepte de 20,3 à 20,4)."
   },
   {
    "id": "ceb-2025-l4-q15",
@@ -1382,11 +1781,17 @@
    "livret": 4,
    "numero": "17",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule la durée d'attente de Sacha avant le départ de son train pour Verviers (montre et panneau d'affichage).",
+   "type": "numerique",
+   "enonce": "Sacha arrive à la gare pour prendre le train à destination de Verviers. Lis les informations sur sa montre et le panneau d'affichage (livret, page 17). Calcule la durée de son attente jusqu'au départ du train.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-durees",
+   "documents": [
+    "liv4-p17"
+   ],
+   "unite": "min",
+   "reponse": 32,
+   "explication": "La montre indique 10 h 49 et le train part à 11 h 21 : 11 h 21 − 10 h 49 = 32 minutes."
   },
   {
    "id": "ceb-2025-l4-q18a",
@@ -1575,22 +1980,63 @@
    "livret": 4,
    "numero": "24",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Coche la clé USB où les données occupent 1/6 de la capacité.",
+   "type": "qcm",
+   "enonce": "Voici ce qui s'affiche sur l'écran de l'ordinateur lorsque l'on insère des clés USB (livret, page 22). Coche la proposition où les données occupent 1/6 de la capacité de la clé.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p22"
+   ],
+   "choix": [
+    "Clé USB (F)",
+    "Clé USB (E)",
+    "Clé USB (D)",
+    "Clé USB (G)"
+   ],
+   "reponse": 1,
+   "explication": "Il faut que la partie foncée (espace utilisé) soit 1 part sur 6 de la barre : c'est la clé E."
   },
   {
    "id": "ceb-2025-l4-q25",
    "livret": 4,
    "numero": "25",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Écris la fraction qui correspond à la partie grise de chaque carré et du rectangle.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Observe les figures du livret (pages 22 et 23). Écris la fraction qui correspond à la partie grise de chaque carré (carrés numérotés 1 et 2) et du rectangle.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p22",
+    "liv4-p23"
+   ],
+   "texte": "Carré 1 : {1}\nCarré 2 : {2}\nRectangle : {3}",
+   "reponse": [
+    [
+     "1/2",
+     "2/4",
+     "3/6",
+     "4/8",
+     "5/10",
+     "6/12"
+    ],
+    [
+     "3/4",
+     "6/8",
+     "9/12",
+     "12/16"
+    ],
+    [
+     "1/2",
+     "2/4",
+     "3/6",
+     "4/8",
+     "5/10",
+     "6/12"
+    ]
+   ],
+   "explication": "Carré 1 : la partie grise est la moitié (1/2). Carré 2 : la partie blanche est 1 quart, donc le gris est 3/4. Rectangle : le gris occupe la moitié (1/2). Les fractions équivalentes sont acceptées."
   },
   {
    "id": "ceb-2025-l4-q26",
@@ -2191,17 +2637,31 @@
    "livret": 5,
    "numero": "6c",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Observe les quatre plans de l'Expo 58 (numérotés 1 à 4). Les sections étrangères sont représentées en noir sur le plan numéro… ; la section belge est représentée en noir sur le plan numéro…",
+   "type": "grille",
+   "enonce": "Observe les quatre plans de l'Expo 58 du livret (page 14), numérotés de 1 à 4. Coche la proposition correcte pour chaque phrase.",
    "points": 2,
    "corrigeVerifie": true,
+   "fiche": "hg-sources",
    "documents": [
     "expo-1",
-    "expo-2"
+    "expo-2",
+    "liv5-p14"
    ],
-   "numerisable": false,
-   "remarque": "Les quatre plans numérotés 1 à 4 sont dans le livret, pas dans le portfolio : ils ne sont pas dans nos images, la question ne peut pas être jouée à l'écran.",
-   "reponseModele": "Sections étrangères : plan n° 4. Section belge : plan n° 1 (1 point par réponse)."
+   "lignes": [
+    "Les sections étrangères sont représentées en noir sur le plan numéro…",
+    "La section belge est représentée en noir sur le plan numéro…"
+   ],
+   "colonnes": [
+    "Plan 1",
+    "Plan 2",
+    "Plan 3",
+    "Plan 4"
+   ],
+   "reponse": [
+    3,
+    0
+   ],
+   "explication": "Les sections étrangères sont en noir sur le plan 4 ; la section belge, la plus grande, est en noir sur le plan 1."
   },
   {
    "id": "ceb-2025-l5-q6d",
@@ -2400,14 +2860,28 @@
    "livret": 5,
    "numero": "7b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Carte de l'Europe en 1987 : écris la lettre du pays organisateur, d'un pays limitrophe de la Belgique et de l'océan Atlantique.",
+   "type": "trous",
+   "enonce": "Observe cette carte de l'Europe en 1987 (livret, page 20). Les pays ayant participé au Concours Eurovision de la Chanson en 1987 sont représentés en blanc. Certains éléments de la carte ont été désignés par une lettre. Écris la lettre qui désigne…",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
    "documents": [
-    "eurovision-1"
+    "eurovision-1",
+    "liv5-p20"
    ],
-   "numerisable": false
+   "texte": "le pays organisateur en 1987 : {1}\nun pays limitrophe de la Belgique : {2}\nl'océan Atlantique : {3}",
+   "reponse": [
+    [
+     "B"
+    ],
+    [
+     "C"
+    ],
+    [
+     "X"
+    ]
+   ],
+   "explication": "Le pays organisateur en 1987 est la Belgique (B) ; l'Allemagne (C) est un pays limitrophe de la Belgique ; l'océan Atlantique est la lettre X, à l'ouest."
   },
   {
    "id": "ceb-2025-l5-q7c",
@@ -2532,11 +3006,30 @@
    "livret": 6,
    "numero": "1",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases vides de la décomposition du nombre 0,64.",
+   "type": "trous",
+   "enonce": "Observe cette décomposition du nombre 0,64 (livret, page 2). Complète les cases vides (cases A, B et C).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv6-p02"
+   ],
+   "texte": "Case A : {1}\nCase B : {2}\nCase C : {3}",
+   "reponse": [
+    [
+     "0,26",
+     "0.26"
+    ],
+    [
+     "0,16",
+     "0.16"
+    ],
+    [
+     "0,18",
+     "0.18"
+    ]
+   ],
+   "explication": "0,64 − 0,38 = 0,26 (case A) ; 0,26 − 0,10 = 0,16 (case B) ; 0,38 − 0,08 − 0,12 = 0,18 (case C)."
   },
   {
    "id": "ceb-2025-l6-q2",
@@ -2663,11 +3156,30 @@
    "livret": 6,
    "numero": "6",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases blanches du tableau de multiplication (0,05 ; 0,06 ; 0,07 ; 0,08 × 2, 3, 4, 5).",
+   "type": "trous",
+   "enonce": "Complète les cases blanches dans le tableau du livret (page 4), repérées par les lettres A, B et C.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv6-p04"
+   ],
+   "texte": "Case A : {1}\nCase B : {2}\nCase C : {3}",
+   "reponse": [
+    [
+     "0,25",
+     "0.25"
+    ],
+    [
+     "0,12",
+     "0.12"
+    ],
+    [
+     "0,28",
+     "0.28"
+    ]
+   ],
+   "explication": "Case A : 0,05 × 5 = 0,25. Case B : 0,06 × 2 = 0,12. Case C : 0,07 × 4 = 0,28."
   },
   {
    "id": "ceb-2025-l6-q7",
@@ -2751,11 +3263,31 @@
    "livret": 6,
    "numero": "9",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète chaque case par le signe qui convient (expressions équivalentes à 62 × 2,5).",
+   "type": "grille",
+   "enonce": "Observe le livret (page 6). Complète chaque case par le signe qui convient (= ou ≠) entre 62 × 2,5 et chacune des expressions.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-egalites",
+   "documents": [
+    "liv6-p06"
+   ],
+   "lignes": [
+    "(62 × 2) + (62 × 0,5)",
+    "(62 : 5) : 2",
+    "(60 × 2) + (2 × 0,5)",
+    "(62 : 4) × 10"
+   ],
+   "colonnes": [
+    "=",
+    "≠"
+   ],
+   "reponse": [
+    0,
+    1,
+    1,
+    0
+   ],
+   "explication": "62 × 2,5 = 155. (62 × 2) + (62 × 0,5) = 124 + 31 = 155 ; (62 : 5) : 2 = 6,2 ; (60 × 2) + (2 × 0,5) = 121 ; (62 : 4) × 10 = 155."
   },
   {
    "id": "ceb-2025-l6-q10",
@@ -2866,11 +3398,17 @@
    "livret": 7,
    "numero": "3",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Calcule le nombre d'œufs dans les cinq cartons de la photo.",
+   "type": "numerique",
+   "enonce": "Observe la photo de ces cinq cartons d'œufs (livret, page 3). Quatre cartons d'œufs sont complets et celui du dessus est incomplet. Calcule le nombre total d'œufs dans ces cinq cartons.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv7-p03"
+   ],
+   "unite": "œufs",
+   "reponse": 138,
+   "explication": "Un carton complet contient 5 × 6 = 30 œufs : 4 × 30 = 120. Le carton du dessus contient 3 rangées de 6 œufs, soit 18. Total : 120 + 18 = 138."
   },
   {
    "id": "ceb-2025-l7-q4a",
@@ -2972,11 +3510,27 @@
    "livret": 7,
    "numero": "8",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète chaque étiquette « Multiples de … » (nombres 70, 20, 28, 35, 12, 15, 21).",
+   "type": "trous",
+   "enonce": "Observe les trois ensembles du livret (page 9). Complète chaque étiquette par le nombre qui convient (étiquettes A, B et C).",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-multiples-diviseurs",
+   "documents": [
+    "liv7-p09"
+   ],
+   "texte": "Étiquette A : multiples de {1}\nÉtiquette B : multiples de {2}\nÉtiquette C : multiples de {3}",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "7"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "Étiquette A : 15, 35, 70 et 20 sont des multiples de 5. Étiquette B : 35, 70, 21 et 28 sont des multiples de 7. Étiquette C : 70, 20, 28 et 12 sont des multiples de 2."
   },
   {
    "id": "ceb-2025-l7-q9",
@@ -3038,33 +3592,87 @@
    "livret": 7,
    "numero": "11",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Écris les nombres de vues des compteurs par ordre croissant.",
+   "type": "ordre",
+   "enonce": "Voici des compteurs qui affichent les nombres de vues sur différents sites Internet (livret, page 11). Écris ces nombres par ordre croissant : classe les compteurs du plus petit nombre au plus grand.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-numeration",
+   "documents": [
+    "liv7-p11"
+   ],
+   "elements": [
+    "Compteur A",
+    "Compteur B",
+    "Compteur C",
+    "Compteur D",
+    "Compteur E"
+   ],
+   "reponse": [
+    0,
+    3,
+    2,
+    4,
+    1
+   ],
+   "explication": "A : 3 107 ; D : 3 701 ; C : 13 017 ; E : 17 030 ; B : 300 371. Les zéros devant le nombre ne comptent pas."
   },
   {
    "id": "ceb-2025-l7-q12",
    "livret": 7,
    "numero": "12",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Dossards rangés par boites de 500 : complète les numéros de la boite G et trouve la boite des dossards 326 et 1 451.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Les dossards utilisés pour une course à pied sont rangés dans des boites. Chaque boite contient 500 dossards. Observe les boites du livret (page 12). Complète les phrases.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "ma-numeration",
+   "documents": [
+    "liv7-p12"
+   ],
+   "texte": "La boite G contient les dossards des numéros {1} à {2}.\nLe dossard 326 se trouve dans la boite {3}.\nLe dossard 1 451 se trouve dans la boite {4}.",
+   "reponse": [
+    [
+     "3001",
+     "3 001"
+    ],
+    [
+     "3500",
+     "3 500"
+    ],
+    [
+     "A"
+    ],
+    [
+     "C"
+    ]
+   ],
+   "explication": "Les boites se suivent de 500 en 500 : A (1 à 500), B (501 à 1 000), C (1 001 à 1 500) … F (2 501 à 3 000), G (3 001 à 3 500). Le dossard 326 est dans la boite A et le 1 451 dans la boite C."
   },
   {
    "id": "ceb-2025-l7-q13",
    "livret": 7,
    "numero": "13",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Écris le nombre qui convient dans chaque case vide (droite graduée entre 16 et 17).",
+   "type": "trous",
+   "enonce": "Observe les deux droites graduées du livret (page 13). Écris le nombre qui convient dans chaque case vide (cases A et B).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-droite-graduee",
+   "documents": [
+    "liv7-p13"
+   ],
+   "texte": "Case A : {1}\nCase B : {2}",
+   "reponse": [
+    [
+     "16,2",
+     "16.2"
+    ],
+    [
+     "16,1",
+     "16.1"
+    ]
+   ],
+   "explication": "Entre 16 et 17, il y a 5 intervalles égaux : on avance de 0,2 à chaque graduation, la case A vaut 16,2. Entre 16 et 16,5, il y a aussi 5 intervalles égaux, de 0,1 chacun : la case B vaut 16,1."
   },
   {
    "id": "ceb-2025-l7-q14",
@@ -3352,17 +3960,16 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Observe l'illustration. Quel est le système de mémoire dominant utilisé dans la situation illustrée ? Coche une seule case (mémoire de travail, procédurale, sémantique, perceptive ou épisodique) et justifie avec le texte.",
+   "enonce": "Observe l'illustration du livret (page 5). Quel est le système de mémoire dominant utilisé dans cette situation ? Choisis une seule proposition (mémoire de travail, procédurale, sémantique, perceptive ou épisodique), puis justifie ton choix en te servant du texte.",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
    "fiche": "fr-inferences",
    "documents": [
-    "memoire-2"
+    "memoire-2",
+    "liv8-p05"
    ],
    "reponseModele": "Mémoire épisodique (1 point, tout ou rien ; une seule case cochée). Justification possible : c'est la mémoire des souvenirs personnels / des épisodes de ta vie ; ou : c'est la mémoire qui fait voyager dans le temps en pensée ; ou : parce que tu connais les épisodes qui font ton passé, tu peux imaginer l'avenir et faire des projets ; ou toute description de l'illustration en lien avec ces idées.",
-   "explication": "La mémoire épisodique est la mémoire de ton histoire.",
-   "remarque": "Question appuyée sur l'illustration du livret que nous n'avons pas : gardée en mode papier."
+   "explication": "La mémoire épisodique est la mémoire de ton histoire."
   },
   {
    "id": "ceb-2025-l8-q8",
@@ -4344,14 +4951,22 @@
    "livret": 10,
    "numero": "2a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Coche le schéma simplifié qui correspond au cycle de vie de la poule.",
+   "type": "qcm",
+   "enonce": "Le cycle de vie de la poule. Observe les trois schémas simplifiés du livret (page 4). Coche le schéma qui lui correspond.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
    "documents": [
-    "poule"
+    "poule",
+    "liv10-p04"
    ],
-   "numerisable": false
+   "choix": [
+    "Schéma 1",
+    "Schéma 2",
+    "Schéma 3"
+   ],
+   "reponse": 1,
+   "explication": "Chez la poule : accouplement, fécondation, ponte, incubation, éclosion, croissance. C'est le schéma 2."
   },
   {
    "id": "ceb-2025-l10-q2b",
@@ -4394,28 +5009,59 @@
    "livret": 10,
    "numero": "2d",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Schéma du cycle de vie du geai des chênes : à quoi correspondent les étiquettes C et D ?",
+   "type": "grille",
+   "enonce": "Observe le schéma du livret (page 6). Il représente le cycle de vie du geai des chênes. Coche la proposition correcte pour chaque étiquette.",
    "points": 2,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "C : l'incubation ; D : l'éclosion (1 point chacun).",
-   "explication": "L'incubation est le temps où l'œuf est couvé ; l'éclosion est la naissance du poussin.",
-   "remarque": "Question appuyée sur le schéma du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "sc-reproduction",
+   "documents": [
+    "poule",
+    "liv10-p06"
+   ],
+   "lignes": [
+    "L'étiquette C correspond à…",
+    "L'étiquette D correspond à…"
+   ],
+   "colonnes": [
+    "l'accouplement",
+    "l'incubation",
+    "l'éclosion",
+    "la croissance"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Après la ponte, l'œuf est couvé : c'est l'incubation (C). Puis le poussin sort de l'œuf : c'est l'éclosion (D)."
   },
   {
    "id": "ceb-2025-l10-q2e",
    "livret": 10,
    "numero": "2e",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Schéma du cycle de vie du ténébrion meunier : retrouve les étiquettes de la larve, de la nymphose et des œufs.",
+   "type": "trous",
+   "enonce": "Voici le schéma du cycle de vie du ténébrion meunier (livret, page 7). Il est proche de celui du papillon. Écris la lettre ou le chiffre de l'étiquette qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-metamorphoses",
    "documents": [
-    "papillon"
+    "papillon",
+    "liv10-p07"
    ],
-   "numerisable": false
+   "texte": "La larve du ténébrion meunier porte l'étiquette {1}.\nLa nymphose du ténébrion meunier porte l'étiquette {2}.\nLes œufs du ténébrion adulte portent l'étiquette {3}.",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "A",
+     "a"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "Larve : étiquette 3 ; nymphose : étiquette A ; œufs : étiquette 2."
   },
   {
    "id": "ceb-2025-l10-q3a",
@@ -4723,11 +5369,28 @@
    "livret": 10,
    "numero": "7c",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Observe l'étape finale de l'expérience (aquarium, eau chaude, bol de glaçons, film plastique) et coche les trois questions que l'on peut se poser.",
+   "type": "qcm_multi",
+   "enonce": "Observe attentivement l'étape finale d'une expérience (livret, page 17). Coche les trois questions que l'on peut se poser en rapport avec cette expérience.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "documents": [
+    "liv10-p17"
+   ],
+   "choix": [
+    "Quels sont les différents états de l'eau ?",
+    "L'eau est-elle un bon conducteur électrique ?",
+    "Quelles sont les étapes du cycle de l'eau ?",
+    "Pour quelle raison le plastique est-il un bon isolant thermique ?",
+    "Comment l'eau passe-t-elle de l'état solide à l'état liquide ?",
+    "L'eau se dilate-t-elle en passant de l'état liquide à l'état solide ?"
+   ],
+   "reponse": [
+    0,
+    2,
+    4
+   ],
+   "explication": "L'expérience montre l'eau sous plusieurs états (glace, eau, vapeur) et son passage de l'un à l'autre : c'est le cycle de l'eau."
   },
   {
    "id": "ceb-2025-l10-q7d",
@@ -4881,14 +5544,33 @@
    "livret": 10,
    "numero": "9f",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Complète les trois données manquantes du tableau 2 à partir du graphique.",
+   "type": "trous",
+   "enonce": "Voici le graphique des résultats obtenus à partir des données du tableau 2 (livret, page 22). Trois données sont manquantes dans le tableau 2 (livret, page 23). Complète-le à partir du graphique. Les résultats sont arrondis aux multiples de 5.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-lire-donnees",
    "documents": [
-    "ballons-4"
+    "ballons-4",
+    "liv10-p22",
+    "liv10-p23"
    ],
-   "numerisable": false
+   "texte": "5,2 l d'air et corde de 2 mm : {1} mm\n10,4 l d'air et corde de 4 mm : {2} mm\n15,6 l d'air et corde de 1 mm : {3} mm",
+   "reponse": [
+    [
+     "650"
+    ],
+    [
+     "715",
+     "720"
+    ],
+    [
+     "1105",
+     "1110",
+     "1 105",
+     "1 110"
+    ]
+   ],
+   "explication": "On lit la hauteur du bâton correspondant : 650 mm ; environ 715 ou 720 mm ; environ 1 105 ou 1 110 mm."
   },
   {
    "id": "ceb-2025-l10-q9g",
