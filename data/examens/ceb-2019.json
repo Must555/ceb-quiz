@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2019",
  "source": "FWB, épreuve externe commune 2019 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions du questionnaire qui reposent sur une figure sont jouables à l'écran grâce aux images des pages du livret ; seules restent sur papier celles qui demandent un tracé, un coloriage ou un découpage (et la production écrite).",
  "livrets": [
   {
    "n": 1,
@@ -332,6 +332,474 @@
    "titre": "La vieille dans la bouteille (3)",
    "fichier": "assets/2019/pdf40.webp",
    "alt": "Elle veut régner sur le monde entier et se retrouve dans sa bouteille. Françoise Rachmuhl, 15 contes d'Europe, Flammarion Jeunesse, 2013."
+  },
+  {
+   "id": "liv3-p02",
+   "source": "livret",
+   "livret": 3,
+   "page": 2,
+   "titre": "Une maison et quatre plans",
+   "fichier": "assets/2019/liv3-p02.webp",
+   "alt": "Une maison dessinée en perspective et quatre plans vus de dessus, numérotés de 1 à 4."
+  },
+  {
+   "id": "liv3-p03",
+   "source": "livret",
+   "livret": 3,
+   "page": 3,
+   "titre": "Quatre figures à nommer",
+   "fichier": "assets/2019/liv3-p03.webp",
+   "alt": "Quatre figures géométriques planes numérotées de 1 à 4, une liste de huit noms et quatre phrases à compléter."
+  },
+  {
+   "id": "liv3-p07",
+   "source": "livret",
+   "livret": 3,
+   "page": 7,
+   "titre": "Deux solides",
+   "fichier": "assets/2019/liv3-p07.webp",
+   "alt": "Deux solides dessinés en perspective, repérés par les lettres A et B, et deux lignes à compléter."
+  },
+  {
+   "id": "liv3-p08",
+   "source": "livret",
+   "livret": 3,
+   "page": 8,
+   "titre": "Cinq bandelettes",
+   "fichier": "assets/2019/liv3-p08.webp",
+   "alt": "Cinq bandelettes de formes différentes repérées par les lettres A à E, puis le dessin de deux bandelettes superposées avec une partie grisée."
+  },
+  {
+   "id": "liv3-p09",
+   "source": "livret",
+   "livret": 3,
+   "page": 9,
+   "titre": "Deux bandelettes à superposer",
+   "fichier": "assets/2019/liv3-p09.webp",
+   "alt": "Deux bandelettes repérées A et B, quatre propositions à cocher, puis une phrase à compléter."
+  },
+  {
+   "id": "liv3-p10",
+   "source": "livret",
+   "livret": 3,
+   "page": 10,
+   "titre": "Une construction géométrique",
+   "fichier": "assets/2019/liv3-p10.webp",
+   "alt": "Trois étapes d'une construction géométrique et quatre constructions numérotées de 1 à 4."
+  },
+  {
+   "id": "liv3-p13",
+   "source": "livret",
+   "livret": 3,
+   "page": 13,
+   "titre": "Un vitrage et son plan",
+   "fichier": "assets/2019/liv3-p13.webp",
+   "alt": "Une photo d'un vitrage et son plan, avec des vitres repérées par les lettres A à G."
+  },
+  {
+   "id": "liv3-p20",
+   "source": "livret",
+   "livret": 3,
+   "page": 20,
+   "titre": "Une collection de solides",
+   "fichier": "assets/2019/liv3-p20.webp",
+   "alt": "Quatorze solides numérotés de 1 à 14."
+  },
+  {
+   "id": "liv4-p05",
+   "source": "livret",
+   "livret": 4,
+   "page": 5,
+   "titre": "Trois chiffres et une droite graduée",
+   "fichier": "assets/2019/liv4-p05.webp",
+   "alt": "Trois cartes portant les chiffres 4, 5 et 1, puis une droite graduée avec trois cases blanches repérées A, B et C."
+  },
+  {
+   "id": "liv4-p06",
+   "source": "livret",
+   "livret": 4,
+   "page": 6,
+   "titre": "Décomposer en parts égales",
+   "fichier": "assets/2019/liv4-p06.webp",
+   "alt": "Un exemple de décomposition du nombre 18 en parts égales, puis un tableau à compléter dont les lignes sont repérées par les lettres A à F ; une case contient 4,8."
+  },
+  {
+   "id": "liv4-p07",
+   "source": "livret",
+   "livret": 4,
+   "page": 7,
+   "titre": "Douze casiers de bouteilles",
+   "fichier": "assets/2019/liv4-p07.webp",
+   "alt": "Douze casiers de bouteilles photographiés vus du dessus, rangés en quatre rangées de trois."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "La cible",
+   "fichier": "assets/2019/liv4-p09.webp",
+   "alt": "Les scores d'Olivia (102) et de Sam (98) avant le dernier lancer, et une cible de fléchettes numérotée sur laquelle une flèche est plantée."
+  },
+  {
+   "id": "liv4-p14",
+   "source": "livret",
+   "livret": 4,
+   "page": 14,
+   "titre": "Décomposition du nombre 10",
+   "fichier": "assets/2019/liv4-p14.webp",
+   "alt": "Un arbre de décomposition du nombre 10 avec des cases vides repérées par les lettres A à G."
+  },
+  {
+   "id": "liv4-p16",
+   "source": "livret",
+   "livret": 4,
+   "page": 16,
+   "titre": "Les boites de feuilles",
+   "fichier": "assets/2019/liv4-p16.webp",
+   "alt": "Deux boites de papier de la marque Belpapy sur lesquelles on lit « A4 / 80g » et « 5 × 500 feuilles »."
+  },
+  {
+   "id": "liv4-p18",
+   "source": "livret",
+   "livret": 4,
+   "page": 18,
+   "titre": "Une table de multiplication",
+   "fichier": "assets/2019/liv4-p18.webp",
+   "alt": "Une égalité « 26 × 48 = 1 248 » avec trois cases à compléter, puis une table de multiplication dont les cases blanches sont repérées par les lettres A à L."
+  },
+  {
+   "id": "liv5-p02",
+   "source": "livret",
+   "livret": 5,
+   "page": 2,
+   "titre": "Trois schémas du corps humain",
+   "fichier": "assets/2019/liv5-p02.webp",
+   "alt": "Trois schémas du corps humain repérés par les lettres A, B et C, chacun avec une étiquette « L'appareil … » à compléter."
+  },
+  {
+   "id": "liv5-p03",
+   "source": "livret",
+   "livret": 5,
+   "page": 3,
+   "titre": "Situations et schéma à étiqueter",
+   "fichier": "assets/2019/liv5-p03.webp",
+   "alt": "Un tableau à croix (situations en lignes, schémas A à C en colonnes) et un schéma du corps humain avec trois étiquettes vides numérotées de 1 à 3."
+  },
+  {
+   "id": "liv5-p04",
+   "source": "livret",
+   "livret": 5,
+   "page": 4,
+   "titre": "Photos du cycle de vie du pommier",
+   "fichier": "assets/2019/liv5-p04.webp",
+   "alt": "Six photos repérées par les lettres A à F, illustrant des étapes du cycle de vie du pommier."
+  },
+  {
+   "id": "liv5-p05",
+   "source": "livret",
+   "livret": 5,
+   "page": 5,
+   "titre": "Le cycle de vie du pommier à compléter",
+   "fichier": "assets/2019/liv5-p05.webp",
+   "alt": "Un schéma circulaire avec six cadres repérés par les lettres A à F ; le cadre E est déjà rempli, les autres sont vides."
+  },
+  {
+   "id": "liv5-p07",
+   "source": "livret",
+   "livret": 5,
+   "page": 7,
+   "titre": "Des étapes du cycle de la capucine",
+   "fichier": "assets/2019/liv5-p07.webp",
+   "alt": "Deux cadres vides numérotés 1 et 2, chacun entre deux photos de capucine, et cinq étapes de cycle de vie repérées par les lettres A à E."
+  },
+  {
+   "id": "liv5-p09",
+   "source": "livret",
+   "livret": 5,
+   "page": 9,
+   "titre": "Tableau des attributs (grenouille)",
+   "fichier": "assets/2019/liv5-p09.webp",
+   "alt": "Un tableau des attributs du triton, du lézard et de la salamandre, avec une ligne vide pour la grenouille, puis des propositions à cocher."
+  },
+  {
+   "id": "liv5-p10",
+   "source": "livret",
+   "livret": 5,
+   "page": 10,
+   "titre": "Tableau des attributs (triton et salamandre)",
+   "fichier": "assets/2019/liv5-p10.webp",
+   "alt": "Un tableau des attributs du triton et de la salamandre."
+  },
+  {
+   "id": "liv5-p11",
+   "source": "livret",
+   "livret": 5,
+   "page": 11,
+   "titre": "Des ensembles emboités",
+   "fichier": "assets/2019/liv5-p11.webp",
+   "alt": "Des ensembles emboités portant des titres et onze étiquettes vides numérotées de 1 à 11."
+  },
+  {
+   "id": "liv5-p12",
+   "source": "livret",
+   "livret": 5,
+   "page": 12,
+   "titre": "Une expérience sur le cycle de l'eau",
+   "fichier": "assets/2019/liv5-p12.webp",
+   "alt": "Le schéma d'une expérience : un ballon chauffé, un système de refroidissement, un mélange de gravier et de terre et un récipient de récupération. Deux étiquettes vides sont numérotées 1 et 2."
+  },
+  {
+   "id": "liv5-p14",
+   "source": "livret",
+   "livret": 5,
+   "page": 14,
+   "titre": "Les états de l'eau",
+   "fichier": "assets/2019/liv5-p14.webp",
+   "alt": "Trois photos illustrant l'état solide, l'état liquide et l'état gazeux de l'eau, et deux étiquettes vides numérotées 1 et 2."
+  },
+  {
+   "id": "liv5-p16",
+   "source": "livret",
+   "livret": 5,
+   "page": 16,
+   "titre": "Graphique de l'évaporation",
+   "fichier": "assets/2019/liv5-p16.webp",
+   "alt": "Un graphique en barres des quantités d'eau restantes (en cl) pour les bouteilles A, B, C et D des dispositifs expérimentaux 1, 2 et 3."
+  },
+  {
+   "id": "liv5-p17",
+   "source": "livret",
+   "livret": 5,
+   "page": 17,
+   "titre": "Trois récipients",
+   "fichier": "assets/2019/liv5-p17.webp",
+   "alt": "Des propositions à cocher, puis trois récipients de formes différentes repérés par les lettres A, B et C, sous un soleil."
+  },
+  {
+   "id": "liv5-p18",
+   "source": "livret",
+   "livret": 5,
+   "page": 18,
+   "titre": "Vent de force (photo 1)",
+   "fichier": "assets/2019/liv5-p18.webp",
+   "alt": "Une photo numérotée 1 avec une case « Vent de force : … » à compléter."
+  },
+  {
+   "id": "liv5-p19",
+   "source": "livret",
+   "livret": 5,
+   "page": 19,
+   "titre": "Vent de force (photos 2 à 4)",
+   "fichier": "assets/2019/liv5-p19.webp",
+   "alt": "Trois photos numérotées 2, 3 et 4, chacune avec une case « Vent de force : … »."
+  },
+  {
+   "id": "liv5-p22",
+   "source": "livret",
+   "livret": 5,
+   "page": 22,
+   "titre": "Une veilleuse hibou",
+   "fichier": "assets/2019/liv5-p22.webp",
+   "alt": "Une boite à chaussures percée en forme de hibou, puis quatre représentations de montages électriques (une pile, des ampoules et des fils) numérotées de 1 à 4."
+  },
+  {
+   "id": "liv6-p09",
+   "source": "livret",
+   "livret": 6,
+   "page": 9,
+   "titre": "Des groupes de mots soulignés",
+   "fichier": "assets/2019/liv6-p09.webp",
+   "alt": "Une phrase dont un verbe est souligné ; cinq cadres de fonctions grammaticales ; un tableau avec deux phrases dont un groupe de mots est souligné."
+  },
+  {
+   "id": "liv7-p06",
+   "source": "livret",
+   "livret": 7,
+   "page": 6,
+   "titre": "Une échelle dépliée",
+   "fichier": "assets/2019/liv7-p06.webp",
+   "alt": "Une photo d'une échelle dépliée contre un mur, une étiquette avec des informations (hauteurs, poids, charge maximale) et trois affirmations à cocher Vrai ou Faux."
+  },
+  {
+   "id": "liv7-p08",
+   "source": "livret",
+   "livret": 7,
+   "page": 8,
+   "titre": "Deux jauges d'essence",
+   "fichier": "assets/2019/liv7-p08.webp",
+   "alt": "Deux jauges de réservoir d'essence, avec quatre fractions et quatre pourcentages proposés."
+  },
+  {
+   "id": "liv7-p09",
+   "source": "livret",
+   "livret": 7,
+   "page": 9,
+   "titre": "Une jauge d'essence (3)",
+   "fichier": "assets/2019/liv7-p09.webp",
+   "alt": "Une jauge de réservoir d'essence graduée de 0 à 1 avec une graduation 1/2, une zone de calcul et le début de la question suivante."
+  },
+  {
+   "id": "liv7-p10",
+   "source": "livret",
+   "livret": 7,
+   "page": 10,
+   "titre": "Un losange dans un rectangle",
+   "fichier": "assets/2019/liv7-p10.webp",
+   "alt": "Des propositions de comparaison de mesures, puis un rectangle contenant un losange grisé."
+  },
+  {
+   "id": "liv7-p12",
+   "source": "livret",
+   "livret": 7,
+   "page": 12,
+   "titre": "La balance et les ingrédients",
+   "fichier": "assets/2019/liv7-p12.webp",
+   "alt": "Un bol de farine posé sur une balance électronique, et trois ingrédients : du beurre, du sucre et des sachets de sucre vanillé."
+  },
+  {
+   "id": "liv7-p14",
+   "source": "livret",
+   "livret": 7,
+   "page": 14,
+   "titre": "Le relief de la 18e étape",
+   "fichier": "assets/2019/liv7-p14.webp",
+   "alt": "Le profil d'altitude de la 18e étape d'un Tour de France, avec les noms, les altitudes et les distances des villes et des cols."
+  },
+  {
+   "id": "liv7-p17",
+   "source": "livret",
+   "livret": 7,
+   "page": 17,
+   "titre": "Quatre figures dans un quadrillage",
+   "fichier": "assets/2019/liv7-p17.webp",
+   "alt": "Quatre figures numérotées de 1 à 4 tracées dans un quadrillage."
+  },
+  {
+   "id": "liv7-p18",
+   "source": "livret",
+   "livret": 7,
+   "page": 18,
+   "titre": "Le plan du jardin",
+   "fichier": "assets/2019/liv7-p18.webp",
+   "alt": "Le plan d'un terrain avec une maison, une allée et de la pelouse ; plusieurs longueurs sont indiquées."
+  },
+  {
+   "id": "liv7-p19",
+   "source": "livret",
+   "livret": 7,
+   "page": 19,
+   "titre": "La clôture du jardin",
+   "fichier": "assets/2019/liv7-p19.webp",
+   "alt": "Le plan du terrain avec une partie en pointillés où installer une clôture, et un panneau de clôture dont les dimensions sont indiquées."
+  },
+  {
+   "id": "liv7-p22",
+   "source": "livret",
+   "livret": 7,
+   "page": 22,
+   "titre": "Lire des instruments de mesure",
+   "fichier": "assets/2019/liv7-p22.webp",
+   "alt": "Un exemple de mesure d'un angle (35°), puis trois instruments de mesure, chacun avec une étiquette vide numérotée de 1 à 3."
+  },
+  {
+   "id": "liv7-p24",
+   "source": "livret",
+   "livret": 7,
+   "page": 24,
+   "titre": "Deux palettes de boites",
+   "fichier": "assets/2019/liv7-p24.webp",
+   "alt": "Deux palettes chargées de boites de carton empilées."
+  },
+  {
+   "id": "liv9-p02",
+   "source": "livret",
+   "livret": 9,
+   "page": 2,
+   "titre": "Lignes du temps (1 et 2)",
+   "fichier": "assets/2019/liv9-p02.webp",
+   "alt": "Deux lignes du temps numérotées 1 et 2, graduées en millions d'années."
+  },
+  {
+   "id": "liv9-p03",
+   "source": "livret",
+   "livret": 9,
+   "page": 3,
+   "titre": "Lignes du temps (3 et 4)",
+   "fichier": "assets/2019/liv9-p03.webp",
+   "alt": "Deux autres lignes du temps numérotées 3 et 4, l'une graduée en années, l'autre en millions d'années avec un agrandissement."
+  },
+  {
+   "id": "liv9-p11",
+   "source": "livret",
+   "livret": 9,
+   "page": 11,
+   "titre": "Une carte du monde à étiquettes",
+   "fichier": "assets/2019/liv9-p11.webp",
+   "alt": "Une carte du monde avec six étiquettes carrées repérées par les lettres A à F, reliées à des flèches, et cinq étiquettes rondes numérotées de 1 à 5."
+  },
+  {
+   "id": "liv9-p12",
+   "source": "livret",
+   "livret": 9,
+   "page": 12,
+   "titre": "Un tableau et un graphique sur le cuivre",
+   "fichier": "assets/2019/liv9-p12.webp",
+   "alt": "Un tableau Vrai ou Faux et un graphique en barres sur l'utilisation du cuivre dans l'industrie (pourcentages)."
+  },
+  {
+   "id": "liv9-p13",
+   "source": "livret",
+   "livret": 9,
+   "page": 13,
+   "titre": "Quatre photos d'utilisations du cuivre",
+   "fichier": "assets/2019/liv9-p13.webp",
+   "alt": "Quatre photos repérées par les lettres A à D, avec une case sous chacune pour écrire un numéro ; le numéro 1 est déjà écrit sous l'une d'elles."
+  },
+  {
+   "id": "liv9-p14",
+   "source": "livret",
+   "livret": 9,
+   "page": 14,
+   "titre": "Un paysage",
+   "fichier": "assets/2019/liv9-p14.webp",
+   "alt": "Une photo d'un paysage avec trois repères numérotés 1, 2 et 3 reliés par des flèches."
+  },
+  {
+   "id": "liv9-p15",
+   "source": "livret",
+   "livret": 9,
+   "page": 15,
+   "titre": "Caractériser un paysage",
+   "fichier": "assets/2019/liv9-p15.webp",
+   "alt": "Des propositions à cocher, puis trois repères numérotés de 1 à 3 à associer à des composantes du paysage repérées par les lettres A à I."
+  },
+  {
+   "id": "liv9-p20",
+   "source": "livret",
+   "livret": 9,
+   "page": 20,
+   "titre": "Deux journées de travail",
+   "fichier": "assets/2019/liv9-p20.webp",
+   "alt": "Une roue horaire de 24 heures pour la journée d'un enfant travaillant à la mine vers 1860, avec deux disques repérés A et B, et la liste des horaires de la journée scolaire de Lucie en 2019."
+  },
+  {
+   "id": "liv9-p24",
+   "source": "livret",
+   "livret": 9,
+   "page": 24,
+   "titre": "Le mode de vie des gens dans nos régions",
+   "fichier": "assets/2019/liv9-p24.webp",
+   "alt": "Un tableau dont les colonnes sont des périodes de l'histoire et les lignes quatre aspects du mode de vie ; quelques cases sont numérotées de 1 à 5."
+  },
+  {
+   "id": "liv9-p26",
+   "source": "livret",
+   "livret": 9,
+   "page": 26,
+   "titre": "La rose des vents",
+   "fichier": "assets/2019/liv9-p26.webp",
+   "alt": "Une rose des vents avec quatre étiquettes : l'une porte déjà un nom, les trois autres sont vides et numérotées de 1 à 3."
   },
   {
    "id": "ecoute",
@@ -1024,22 +1492,59 @@
    "livret": 3,
    "numero": "1",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le plan qui correspond à la maison.",
+   "type": "qcm",
+   "enonce": "Observe la maison du livret (page 2). Voici quatre plans, numérotés de 1 à 4 : choisis celui qui correspond à cette maison.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-representations",
+   "documents": [
+    "liv3-p02"
+   ],
+   "choix": [
+    "Plan 1",
+    "Plan 2",
+    "Plan 3",
+    "Plan 4"
+   ],
+   "reponse": 2,
+   "explication": "C'est le plan 3 : c'est le seul dont les trois parties (corps principal, garage, annexe) ont la même position et les mêmes proportions que sur le dessin de la maison."
   },
   {
    "id": "ceb-2019-l3-q2",
    "livret": 3,
    "numero": "2",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme les figures 1 à 4.",
+   "type": "grille",
+   "enonce": "Observe les quatre figures du livret (page 3), numérotées de 1 à 4. Pour chaque figure, choisis dans la liste le nom qui complète la phrase « La figure … est un … ».",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p03"
+   ],
+   "lignes": [
+    "Figure 1",
+    "Figure 2",
+    "Figure 3",
+    "Figure 4"
+   ],
+   "colonnes": [
+    "triangle rectangle",
+    "cerf-volant",
+    "pentagone régulier",
+    "trapèze isocèle",
+    "triangle isocèle",
+    "triangle obtusangle",
+    "pentagone",
+    "trapèze rectangle"
+   ],
+   "reponse": [
+    7,
+    6,
+    4,
+    1
+   ],
+   "explication": "Figure 1 : trapèze rectangle (deux côtés parallèles et deux angles droits) ; figure 2 : pentagone (5 côtés, pas tous égaux) ; figure 3 : triangle isocèle ; figure 4 : cerf-volant."
   },
   {
    "id": "ceb-2019-l3-q3",
@@ -1061,40 +1566,161 @@
    "enonce": "Croix sur les planches nécessaires pour construire la boite.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Plusieurs réponses correctes (deux planches au choix parmi trois planches identiques) : gardée en mode papier."
   },
   {
    "id": "ceb-2019-l3-q5",
    "livret": 3,
    "numero": "5",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Compte les faces, sommets et arêtes des solides A et B.",
+   "type": "trous",
+   "enonce": "Observe les deux solides A et B du livret (page 7). Complète le nombre de faces, de sommets et d'arêtes de chacun.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p07"
+   ],
+   "texte": "Solide A : {1} face(s) – {2} sommet(s) – {3} arête(s)\nSolide B : {4} face(s) – {5} sommet(s) – {6} arête(s)",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "5"
+    ],
+    [
+     "8"
+    ],
+    [
+     "6"
+    ],
+    [
+     "8"
+    ],
+    [
+     "12"
+    ]
+   ],
+   "explication": "Solide A (pyramide à base carrée) : 5 faces, 5 sommets, 8 arêtes. Solide B (tronc de pyramide) : 6 faces, 8 sommets, 12 arêtes."
   },
   {
-   "id": "ceb-2019-l3-q6",
+   "id": "ceb-2019-l3-q6a",
    "livret": 3,
-   "numero": "6",
+   "numero": "6a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Bandelettes superposées : quel quadrilatère ?",
-   "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "texte_court",
+   "enonce": "Observe les cinq bandelettes du livret (page 8), repérées par les lettres A à E. Sur le dessin, on a superposé les bandelettes C et E. Quel quadrilatère obtient-on dans la partie grisée ? Écris son nom.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p08"
+   ],
+   "reponse": [
+    "parallélogramme",
+    "un parallélogramme",
+    "trapèze",
+    "un trapèze"
+   ],
+   "explication": "La partie grisée a deux paires de côtés parallèles : c'est un parallélogramme (on accepte aussi « trapèze »)."
+  },
+  {
+   "id": "ceb-2019-l3-q6b",
+   "livret": 3,
+   "numero": "6b",
+   "domaine": "ma.geometrie",
+   "type": "qcm",
+   "enonce": "Observe les bandelettes A et B du livret (page 9). En les superposant, quel quadrilatère peut-on obtenir ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p09"
+   ],
+   "choix": [
+    "Un losange",
+    "Un carré",
+    "Un trapèze",
+    "Un parallélogramme"
+   ],
+   "reponse": 2,
+   "explication": "Les bords de la bandelette A sont parallèles, ceux de la bandelette B ne le sont pas : on obtient un trapèze."
+  },
+  {
+   "id": "ceb-2019-l3-q6c",
+   "livret": 3,
+   "numero": "6c",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Observe les cinq bandelettes du livret (page 8), repérées par les lettres A à E. Complète en choisissant chaque fois 2 bandelettes.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p08"
+   ],
+   "texte": "Pour faire apparaître un carré, il faut croiser les bandelettes {1}\nPour faire apparaître un rectangle strict, il faut croiser les bandelettes {2}",
+   "reponse": [
+    [
+     "A et C",
+     "A, C",
+     "A C",
+     "AC",
+     "A-C",
+     "C et A",
+     "C, A",
+     "C A",
+     "CA",
+     "C-A"
+    ],
+    [
+     "A et E",
+     "A, E",
+     "A E",
+     "AE",
+     "A-E",
+     "E et A",
+     "E, A",
+     "E A",
+     "EA",
+     "E-A",
+     "C et E",
+     "C, E",
+     "C E",
+     "CE",
+     "C-E",
+     "E et C",
+     "E, C",
+     "E C",
+     "EC",
+     "E-C"
+    ]
+   ],
+   "explication": "Un carré apparait avec les bandelettes A et C ; un rectangle strict avec A et E ou avec C et E."
   },
   {
    "id": "ceb-2019-l3-q7",
    "livret": 3,
    "numero": "7",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Coche la construction qui correspond aux consignes.",
+   "type": "qcm",
+   "enonce": "Voici trois étapes d'une construction géométrique. Étape 1 : tracer un rectangle. Étape 2 : tracer les médianes de ce rectangle. Étape 3 : tracer le cercle ayant pour centre le point d'intersection des médianes et passant par les sommets du rectangle. Observe les quatre constructions du livret (page 10), numérotées de 1 à 4 : choisis celle qui correspond à ces consignes.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-diagonales-medianes",
+   "documents": [
+    "liv3-p10"
+   ],
+   "choix": [
+    "Construction 1",
+    "Construction 2",
+    "Construction 3",
+    "Construction 4"
+   ],
+   "reponse": 1,
+   "explication": "C'est la construction 2 : le rectangle est partagé en quatre par ses médianes et le cercle passe par ses quatre sommets."
   },
   {
    "id": "ceb-2019-l3-q8",
@@ -1125,22 +1751,97 @@
    "livret": 3,
    "numero": "10a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme les figures du vitrage.",
+   "type": "trous",
+   "enonce": "Observe la photo et le plan du vitrage du livret (page 13), dont les vitres sont repérées par les lettres A à G. Le vitrage est composé de deux figures géométriques différentes : nomme-les.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p13"
+   ],
+   "texte": "Première figure : {1}\nDeuxième figure : {2}",
+   "differentes": true,
+   "reponse": [
+    [
+     "trapèze",
+     "trapèzes",
+     "trapèze rectangle",
+     "trapèzes rectangles",
+     "rectangle",
+     "rectangles"
+    ],
+    [
+     "rectangle",
+     "rectangles",
+     "trapèze",
+     "trapèzes",
+     "trapèze rectangle",
+     "trapèzes rectangles"
+    ]
+   ],
+   "explication": "Le vitrage est fait de trapèzes (rectangles) et de rectangles."
   },
   {
    "id": "ceb-2019-l3-q10b",
    "livret": 3,
    "numero": "10b",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Écris la lettre d'une figure à deux paires de côtés parallèles.",
+   "type": "texte_court",
+   "enonce": "Observe le plan du vitrage du livret (page 13). Écris la lettre d'une figure qui possède deux paires de côtés parallèles.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-quadrilateres",
+   "documents": [
+    "liv3-p13"
+   ],
+   "reponse": [
+    "C",
+    "la figure C",
+    "figure C",
+    "D",
+    "la figure D",
+    "figure D",
+    "F",
+    "la figure F",
+    "figure F",
+    "C et D",
+    "C, D",
+    "C D",
+    "C et F",
+    "C, F",
+    "C F",
+    "D et C",
+    "D, C",
+    "D C",
+    "D et F",
+    "D, F",
+    "D F",
+    "F et C",
+    "F, C",
+    "F C",
+    "F et D",
+    "F, D",
+    "F D",
+    "C et D et F",
+    "C, D, F",
+    "C D F",
+    "C et F et D",
+    "C, F, D",
+    "C F D",
+    "D et C et F",
+    "D, C, F",
+    "D C F",
+    "D et F et C",
+    "D, F, C",
+    "D F C",
+    "F et C et D",
+    "F, C, D",
+    "F C D",
+    "F et D et C",
+    "F, D, C",
+    "F D C"
+   ],
+   "explication": "Les vitres C, D et F sont des rectangles : elles ont deux paires de côtés parallèles (une seule lettre suffit)."
   },
   {
    "id": "ceb-2019-l3-q11",
@@ -1184,7 +1885,8 @@
    "enonce": "Plan du domaine de Wégimont : coordonnées et itinéraire.",
    "points": 5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Plan du domaine : il faut tracer une croix et un itinéraire en rouge : gardée en mode papier."
   },
   {
    "id": "ceb-2019-l3-q15",
@@ -1198,15 +1900,113 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2019-l3-q16",
+   "id": "ceb-2019-l3-q16a",
    "livret": 3,
-   "numero": "16",
+   "numero": "16a",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Pyramides, non-polyèdres, solides à faces quadrilatères.",
-   "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm_multi",
+   "enonce": "Observe cette collection de solides (livret, page 20), numérotés de 1 à 14. Choisis toutes les pyramides.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p20"
+   ],
+   "choix": [
+    "Solide 1",
+    "Solide 2",
+    "Solide 3",
+    "Solide 4",
+    "Solide 5",
+    "Solide 6",
+    "Solide 7",
+    "Solide 8",
+    "Solide 9",
+    "Solide 10",
+    "Solide 11",
+    "Solide 12",
+    "Solide 13",
+    "Solide 14"
+   ],
+   "reponse": [
+    2,
+    4,
+    5,
+    13
+   ],
+   "explication": "Une pyramide a une base et des faces triangulaires qui se rejoignent en un sommet : ce sont les solides 3, 5, 6 et 14."
+  },
+  {
+   "id": "ceb-2019-l3-q16b",
+   "livret": 3,
+   "numero": "16b",
+   "domaine": "ma.geometrie",
+   "type": "qcm_multi",
+   "enonce": "Observe cette collection de solides (livret, page 20), numérotés de 1 à 14. Choisis tous les non-polyèdres.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p20"
+   ],
+   "choix": [
+    "Solide 1",
+    "Solide 2",
+    "Solide 3",
+    "Solide 4",
+    "Solide 5",
+    "Solide 6",
+    "Solide 7",
+    "Solide 8",
+    "Solide 9",
+    "Solide 10",
+    "Solide 11",
+    "Solide 12",
+    "Solide 13",
+    "Solide 14"
+   ],
+   "reponse": [
+    0,
+    8,
+    10
+   ],
+   "explication": "Un non-polyèdre a au moins une face courbe : la boule (1), le cône (9) et le cylindre (11)."
+  },
+  {
+   "id": "ceb-2019-l3-q16c",
+   "livret": 3,
+   "numero": "16c",
+   "domaine": "ma.geometrie",
+   "type": "qcm_multi",
+   "enonce": "Observe cette collection de solides (livret, page 20), numérotés de 1 à 14. Choisis tous les solides dont toutes les faces sont des quadrilatères.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p20"
+   ],
+   "choix": [
+    "Solide 1",
+    "Solide 2",
+    "Solide 3",
+    "Solide 4",
+    "Solide 5",
+    "Solide 6",
+    "Solide 7",
+    "Solide 8",
+    "Solide 9",
+    "Solide 10",
+    "Solide 11",
+    "Solide 12",
+    "Solide 13",
+    "Solide 14"
+   ],
+   "reponse": [
+    3,
+    6,
+    11
+   ],
+   "explication": "Les solides 4, 7 et 12 (deux pavés et un cube) ont toutes leurs faces en forme de quadrilatère."
   },
   {
    "id": "ceb-2019-l3-q17ab",
@@ -1926,95 +2726,267 @@
    "enonce": "Calcul mental dicté.",
    "points": 5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Calcul mental dicté oralement (opérations non imprimées dans le livret) : gardé en mode papier."
   },
   {
    "id": "ceb-2019-l4-q4",
    "livret": 4,
    "numero": "4",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Avec les chiffres donnés : plus grand nombre, plus petit décimal…",
+   "type": "trous",
+   "enonce": "En utilisant tous les chiffres des trois cartes du livret (page 5) : a) écris le plus grand nombre entier possible ; b) écris le plus petit nombre à virgule possible ; c) écris un nombre où le 1 occupe le rang des dixièmes.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv4-p05"
+   ],
+   "texte": "a) {1}\nb) {2}\nc) {3}",
+   "reponse": [
+    [
+     "541"
+    ],
+    [
+     "1,45",
+     "1.45"
+    ],
+    [
+     "45,1",
+     "54,1",
+     "4,15",
+     "5,14",
+     "45.1",
+     "54.1",
+     "4.15",
+     "5.14"
+    ]
+   ],
+   "explication": "a) 541 ; b) 1,45 ; c) 45,1 ou 54,1 ou 4,15 ou 5,14 : le 1 est bien au rang des dixièmes."
   },
   {
    "id": "ceb-2019-l4-q5",
    "livret": 4,
    "numero": "5",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète la droite graduée.",
+   "type": "trous",
+   "enonce": "Observe la droite graduée du livret (page 5). Les trois cases blanches sont repérées par les lettres A, B et C (de gauche à droite) : complète-les.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-droite-graduee",
+   "documents": [
+    "liv4-p05"
+   ],
+   "texte": "Case A : {1}   ·   Case B : {2}   ·   Case C : {3}",
+   "reponse": [
+    [
+     "1,4",
+     "1.4"
+    ],
+    [
+     "2,25",
+     "2.25"
+    ],
+    [
+     "3,1",
+     "3.1"
+    ]
+   ],
+   "explication": "Entre deux nombres entiers, il y a 10 graduations : chacune vaut 0,1. Case A : 1,4 ; case B : 2,25 ; case C : 3,1."
   },
   {
    "id": "ceb-2019-l4-q7",
    "livret": 4,
    "numero": "7",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Décompose en parts égales.",
+   "type": "trous",
+   "enonce": "Observe l'exemple du livret (page 6) : on a décomposé le nombre 18 en parts égales. Complète chaque case du tableau suivant selon le même principe ; les lignes sont repérées par les lettres A à F (de haut en bas) : écris le nombre qui complète les cases de chaque ligne.",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-operations",
+   "documents": [
+    "liv4-p06"
+   ],
+   "texte": "Ligne A : {1}\nLigne B : {2}\nLigne C : {3}\nLigne D : {4}\nLigne E : {5}\nLigne F : {6}",
+   "reponse": [
+    [
+     "9,6",
+     "9.6"
+    ],
+    [
+     "4,8",
+     "4.8"
+    ],
+    [
+     "2,4",
+     "2.4"
+    ],
+    [
+     "1,6",
+     "1.6"
+    ],
+    [
+     "1,2",
+     "1.2"
+    ],
+    [
+     "9,6",
+     "9.6"
+    ]
+   ],
+   "explication": "Chaque ligne partage 9,6 en parts égales : 9,6 ; 2 × 4,8 ; 4 × 2,4 ; 6 × 1,6 ; 8 × 1,2 ; 9,6."
   },
   {
    "id": "ceb-2019-l4-q8",
    "livret": 4,
    "numero": "8",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Compte les bouteilles des douze casiers.",
+   "type": "numerique",
+   "enonce": "Observe les douze casiers du livret (page 7) : calcule le nombre total de bouteilles qu'ils contiennent.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv4-p07"
+   ],
+   "reponse": 228,
+   "unite": "bouteilles",
+   "explication": "Chaque casier compte 24 emplacements dont 5 sont vides : 24 − 5 = 19 bouteilles par casier, puis 19 × 12 = 228 bouteilles."
   },
   {
    "id": "ceb-2019-l4-q10",
    "livret": 4,
    "numero": "10",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Cible : combien de points Sam a-t-il marqués ?",
+   "type": "numerique",
+   "enonce": "Sam et Olivia lancent des balles sur une cible. Avant le dernier lancer, Olivia a 102 points et Sam 98 points. Olivia joue : observe, sur la cible du livret (page 9), les points qu'elle a obtenus. À son tour, Sam joue et marque. Il s'exclame : « Nous avons le même total ! » Combien de points Sam vient-il de marquer à ce lancer ?",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv4-p09"
+   ],
+   "reponse": 19,
+   "unite": "points",
+   "explication": "Olivia a marqué 15 points : elle a 102 + 15 = 117. Sam a 98 : il lui faut 117 − 98 = 19 points."
   },
   {
    "id": "ceb-2019-l4-q17",
    "livret": 4,
    "numero": "17",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Décomposition du nombre 10.",
+   "type": "trous",
+   "enonce": "Complète chaque case de cette décomposition du nombre 10 (livret, page 14). Les cases vides sont repérées par les lettres A à G (de haut en bas, de gauche à droite).",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv4-p14"
+   ],
+   "texte": "A : {1}   ·   B : {2}   ·   C : {3}\nD : {4}   ·   E : {5}   ·   F : {6}   ·   G : {7}",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "3,8",
+     "3.8"
+    ],
+    [
+     "1,3",
+     "1.3"
+    ],
+    [
+     "2"
+    ],
+    [
+     "1,2",
+     "1.2"
+    ],
+    [
+     "0,7",
+     "0.7"
+    ],
+    [
+     "1"
+    ]
+   ],
+   "explication": "Chaque case est la somme des deux cases situées en dessous : 10 = 7 + 3 ; 7 = 3,8 + 3,2 ; 3 = 1,7 + 1,3 ; 3,8 = 2 + 1,8 ; 3,2 = 1,2 + 2 ; 1,7 = 0,7 + 1 ; 1,3 = 0,3 + 1."
   },
   {
    "id": "ceb-2019-l4-q21",
    "livret": 4,
    "numero": "21",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Journaux de classe : combien peut-on en réaliser ?",
+   "type": "numerique",
+   "enonce": "Le journal de notre classe est composé de 25 feuilles. Monsieur le directeur nous a donné deux boites entières de feuilles. Sur les boites (livret, page 16), on peut lire des informations. Calcule le nombre de journaux que nous pourrons réaliser en utilisant toutes les feuilles de ces boites.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv4-p16"
+   ],
+   "reponse": 200,
+   "unite": "journaux",
+   "explication": "2 boites de 5 × 500 feuilles, c'est 5 000 feuilles ; 5 000 : 25 = 200 journaux."
   },
   {
    "id": "ceb-2019-l4-q23",
    "livret": 4,
    "numero": "24",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète la table de multiplication.",
+   "type": "trous",
+   "enonce": "Observe la table de multiplication du livret (page 18) : les cases blanches sont repérées par les lettres A à L (A est la case blanche de la première ligne ; les autres se lisent de gauche à droite, ligne par ligne). Complète-les.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-operations",
+   "documents": [
+    "liv4-p18"
+   ],
+   "texte": "Première ligne : A {1}\nLigne du 7 : B {2}   ·   C {3}   ·   D {4}   ·   E {5}\nLigne du 70 : F {6}   ·   G {7}   ·   H {8}   ·   I {9}\nLigne du 0,7 : J {10}   ·   K {11}   ·   L {12}",
+   "reponse": [
+    [
+     "6"
+    ],
+    [
+     "21"
+    ],
+    [
+     "42"
+    ],
+    [
+     "63"
+    ],
+    [
+     "2,1",
+     "2.1"
+    ],
+    [
+     "210"
+    ],
+    [
+     "420"
+    ],
+    [
+     "630"
+    ],
+    [
+     "21"
+    ],
+    [
+     "2,1",
+     "2.1"
+    ],
+    [
+     "6,3",
+     "6.3"
+    ],
+    [
+     "0,21",
+     "0.21"
+    ]
+   ],
+   "explication": "Comme 0,7 × 6 = 4,2, la case A est 6. Colonne 3 : 21, 210, 2,1 ; colonne 6 : 42, 420, 4,2 ; colonne 9 : 63, 630, 6,3 ; colonne 0,3 : 2,1, 21, 0,21."
   },
   {
    "id": "ceb-2019-l5-q1b",
@@ -2469,86 +3441,247 @@
    "livret": 5,
    "numero": "1a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Nomme les appareils des schémas A, B et C.",
+   "type": "grille",
+   "enonce": "Observe les trois schémas du livret (page 2), repérés par les lettres A, B et C. Pour chaque schéma, choisis le nom de l'appareil du corps humain qui complète l'étiquette « L'appareil … ».",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-appareils",
+   "documents": [
+    "liv5-p02"
+   ],
+   "lignes": [
+    "Schéma A",
+    "Schéma B",
+    "Schéma C"
+   ],
+   "colonnes": [
+    "Respiratoire",
+    "Digestif",
+    "Locomoteur",
+    "Circulatoire"
+   ],
+   "reponse": [
+    3,
+    0,
+    1
+   ],
+   "explication": "A : l'appareil circulatoire (cœur et vaisseaux) ; B : l'appareil respiratoire (poumons) ; C : l'appareil digestif."
   },
   {
    "id": "ceb-2019-l5-q1c",
    "livret": 5,
    "numero": "1c",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète les étiquettes des organes.",
+   "type": "grille",
+   "enonce": "Observe le schéma de la page 3 du livret : trois étiquettes vides, numérotées de 1 à 3, sont reliées à un organe par une flèche. Pour chaque étiquette, choisis le nom de l'organe à y écrire.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-appareils",
+   "documents": [
+    "liv5-p03"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3"
+   ],
+   "colonnes": [
+    "Œsophage",
+    "Estomac",
+    "Foie",
+    "Intestin grêle",
+    "Gros intestin",
+    "Rectum",
+    "Anus"
+   ],
+   "reponse": [
+    0,
+    3,
+    [
+     5,
+     6
+    ]
+   ],
+   "explication": "Étiquette 1 : l'œsophage ; étiquette 2 : l'intestin grêle ; étiquette 3 : le rectum (on accepte aussi l'anus)."
   },
   {
    "id": "ceb-2019-l5-q2a",
    "livret": 5,
    "numero": "2a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète le cycle de vie du pommier.",
+   "type": "grille",
+   "enonce": "Observe le schéma du cycle de vie du haricot (portfolio, page 2) et les photos A à F du cycle de vie du pommier (livret, page 4). Sur le schéma du livret (page 5), il fallait compléter le cycle de vie du pommier en écrivant le nom des étapes ; une réponse est donnée (E). Pour chaque lettre, choisis le nom de l'étape.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
    "documents": [
-    "cycle-1"
+    "cycle-1",
+    "liv5-p04",
+    "liv5-p05"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étape A",
+    "Étape B",
+    "Étape C",
+    "Étape D",
+    "Étape F"
+   ],
+   "colonnes": [
+    "Dispersion des graines",
+    "Germination des graines",
+    "Croissance de la plante",
+    "Floraison",
+    "Formation des fruits et des graines"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Les graines sont dispersées (A), elles germent (B), la plante croit (C), puis fleurit (D) ; après la pollinisation et la fécondation (E), les fruits et les graines se forment (F)."
   },
   {
    "id": "ceb-2019-l5-q2c",
    "livret": 5,
    "numero": "2c",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Étapes du cycle de la capucine.",
+   "type": "grille",
+   "enonce": "Observe les photos de la capucine (livret, page 7). Dans chaque cadre vide, repéré par un numéro, il fallait écrire la lettre correspondant à l'étape du cycle de vie de cette plante. Pour chaque cadre, choisis l'étape qui convient.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
    "documents": [
-    "cycle-2"
+    "liv5-p07",
+    "cycle-2",
+    "cycle-1"
    ],
-   "numerisable": false
+   "lignes": [
+    "Cadre 1",
+    "Cadre 2"
+   ],
+   "colonnes": [
+    "A – Dispersion des graines",
+    "B – Floraison",
+    "C – Germination",
+    "D – Pollinisation et fécondation",
+    "E – Formation du fruit"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Cadre 1 : la plante fleurit (B, floraison) ; cadre 2 : les graines germent (C, germination)."
   },
   {
    "id": "ceb-2019-l5-q3b",
    "livret": 5,
    "numero": "3b",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète le tableau pour la grenouille.",
+   "type": "qcm_multi",
+   "enonce": "Observe le tableau du livret (page 9) : il fallait le compléter pour la grenouille en traçant toutes les croix possibles (tu peux t'aider des photos et du squelette du portfolio, page 4). Quels attributs la grenouille possède-t-elle ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
-    "classif"
+    "classif",
+    "liv5-p09"
    ],
-   "numerisable": false
+   "choix": [
+    "Yeux, bouche",
+    "Squelette interne d'os",
+    "Squelette externe",
+    "4 pattes",
+    "2 pattes, 2 ailes",
+    "Écailles",
+    "Peau nue",
+    "4 doigts aux pattes antérieures",
+    "5 doigts aux pattes antérieures"
+   ],
+   "reponse": [
+    0,
+    1,
+    3,
+    6,
+    7
+   ],
+   "explication": "La grenouille a des yeux et une bouche, un squelette interne d'os, 4 pattes, une peau nue et 4 doigts aux pattes antérieures."
   },
   {
    "id": "ceb-2019-l5-q3d",
    "livret": 5,
    "numero": "3d",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Place le triton et la salamandre dans les ensembles.",
+   "type": "grille",
+   "enonce": "Observe les ensembles emboités du livret (page 11) : onze étiquettes vides sont numérotées de 1 à 11. Où faut-il placer le triton et la salamandre ? Un animal ne peut pas être écrit plusieurs fois, des étiquettes resteront vides et tu peux t'aider du tableau de la page 10.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-ensembles-emboites",
+   "documents": [
+    "classif",
+    "liv5-p10",
+    "liv5-p11"
+   ],
+   "lignes": [
+    "Le triton",
+    "La salamandre"
+   ],
+   "colonnes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4",
+    "Étiquette 5",
+    "Étiquette 6",
+    "Étiquette 7",
+    "Étiquette 8",
+    "Étiquette 9",
+    "Étiquette 10",
+    "Étiquette 11"
+   ],
+   "reponse": [
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "explication": "Le triton et la salamandre ont une peau nue et une queue : ils vont dans le cadre « Queue », sous « Peau nue » (étiquettes 3 et 4, dans n'importe quel ordre)."
   },
   {
    "id": "ceb-2019-l5-q4a",
    "livret": 5,
    "numero": "4a",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Complète le schéma du cycle de l'eau en classe.",
+   "type": "grille",
+   "enonce": "Observe l'expérience réalisée dans une classe pour illustrer le cycle de l'eau (livret, page 12) : deux étiquettes vides sont repérées 1 et 2. Complète-les en utilisant deux termes de la liste.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-cycle-eau",
+   "documents": [
+    "eau-1",
+    "liv5-p12"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2"
+   ],
+   "colonnes": [
+    "infiltration",
+    "évaporation",
+    "précipitation",
+    "ruissèlement",
+    "condensation"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "L'eau chauffée dans le ballon s'évapore (étiquette 1) ; les gouttes qui tombent après le refroidissement figurent les précipitations (étiquette 2)."
   },
   {
    "id": "ceb-2019-l5-q4b",
@@ -2577,11 +3710,30 @@
    "livret": 5,
    "numero": "5a",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Nomme les changements d'état.",
+   "type": "grille",
+   "enonce": "Observe les trois photos du livret (page 14) qui illustrent différentes formes d'eau dans l'environnement. Complète les deux étiquettes vides, repérées 1 et 2, en utilisant deux termes de la liste (tu peux te servir de ton dictionnaire).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "documents": [
+    "liv5-p14"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2"
+   ],
+   "colonnes": [
+    "solidification",
+    "évaporation",
+    "sublimation",
+    "fusion",
+    "condensation"
+   ],
+   "reponse": [
+    0,
+    1
+   ],
+   "explication": "De l'état liquide à l'état solide : solidification (étiquette 1). De l'état liquide à l'état gazeux : évaporation (étiquette 2)."
   },
   {
    "id": "ceb-2019-l5-q6b",
@@ -2589,21 +3741,39 @@
    "numero": "6b",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Lis le graphique de l'évaporation.",
+   "enonce": "Observe les dispositifs expérimentaux (portfolio, pages 7 à 9) et le graphique des quantités d'eau restantes (livret, page 16). Lis le graphique et écris les deux conditions de l'expérience qui influencent l'évaporation.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "documents": [
+    "liv5-p16",
+    "evap-1",
+    "evap-2",
+    "evap-3"
+   ],
+   "reponseModele": "La surface de contact avec l'air et la température (1 point pour chaque condition).",
+   "explication": "Les bouteilles du dispositif 1 ne diffèrent que par la surface de contact et celles du dispositif 2 que par la température ; la hauteur (dispositif 3) ne change rien."
   },
   {
    "id": "ceb-2019-l5-q6e",
    "livret": 5,
    "numero": "6e",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Choisis le récipient pour récupérer le sel.",
+   "type": "qcm",
+   "enonce": "On veut récupérer le sel contenu dans 1 litre d'eau de mer le plus rapidement possible. Dans quel récipient du livret (page 17) va-t-on verser le litre d'eau de mer ? Choisis le récipient le plus adéquat.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "documents": [
+    "liv5-p17"
+   ],
+   "choix": [
+    "Récipient A",
+    "Récipient B",
+    "Récipient C"
+   ],
+   "reponse": 2,
+   "explication": "Le récipient C est le plus large : l'eau y a la plus grande surface de contact avec l'air et s'évapore le plus vite, ce qui laisse le sel."
   },
   {
    "id": "ceb-2019-l5-q7a",
@@ -2635,25 +3805,56 @@
    "livret": 5,
    "numero": "7c",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Force du vent (Beaufort) sur les photos.",
+   "type": "trous",
+   "enonce": "Observe l'échelle de Beaufort (portfolio, page 11) et les quatre photos du livret (pages 18 et 19), numérotées de 1 à 4. Pour chaque photo, écris un nombre de 0 à 12 exprimant la force du vent en Beaufort qui correspond aux effets illustrés.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
    "documents": [
-    "beaufort"
+    "beaufort",
+    "liv5-p18",
+    "liv5-p19"
    ],
-   "numerisable": false
+   "texte": "Photo 1 : vent de force {1}\nPhoto 2 : vent de force {2}\nPhoto 3 : vent de force {3}\nPhoto 4 : vent de force {4}",
+   "reponse": [
+    [
+     "0",
+     "1"
+    ],
+    [
+     "10"
+    ],
+    [
+     "6"
+    ],
+    [
+     "11",
+     "12"
+    ]
+   ],
+   "explication": "Photo 1 : la fumée s'élève presque verticalement (force 0 ou 1) ; photo 2 : un arbre déraciné (force 10) ; photo 3 : un parapluie retourné (force 6) ; photo 4 : des maisons détruites (force 11 ou 12)."
   },
   {
    "id": "ceb-2019-l5-q9a",
    "livret": 5,
    "numero": "9a",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Barre le montage incorrect.",
+   "type": "qcm",
+   "enonce": "Des élèves ont réalisé une « veilleuse hibou » dans le couvercle d'une boite à chaussures : ils ont dessiné le hibou et découpé les yeux pour laisser passer la lumière. Quels montages pourraient se cacher derrière le couvercle (livret, page 22) pour que la veilleuse s'allume ? Trois représentations sont correctes : choisis la représentation incorrecte.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
+   "documents": [
+    "liv5-p22"
+   ],
+   "choix": [
+    "Représentation 1",
+    "Représentation 2",
+    "Représentation 3",
+    "Représentation 4"
+   ],
+   "reponse": 2,
+   "explication": "Dans la représentation 3, le circuit n'est pas fermé comme il faut : les ampoules ne peuvent pas s'allumer."
   },
   {
    "id": "ceb-2019-l6-q1",
@@ -3061,11 +4262,30 @@
    "livret": 6,
    "numero": "16",
    "domaine": "fr.grammaire",
-   "type": "ouverte",
-   "enonce": "Indique la fonction des groupes soulignés.",
+   "type": "grille",
+   "enonce": "Pour chaque phrase du livret (page 9), indique la fonction du groupe de mots souligné.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-fonctions",
+   "documents": [
+    "liv6-p09"
+   ],
+   "lignes": [
+    "« Au fil du temps, les êtres humains ont occupé leur temps de loisir par différentes activités […]. » – groupe souligné : « leur temps de loisir »",
+    "« Au fil du temps, les êtres humains ont occupé leur temps de loisir par différentes activités […]. » – groupe souligné : « par différentes activités »"
+   ],
+   "colonnes": [
+    "(groupe) sujet",
+    "complément direct du verbe",
+    "complément indirect du verbe",
+    "complément circonstanciel",
+    "attribut du sujet"
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "« leur temps de loisir » répond à « ont occupé quoi ? » : complément direct du verbe. « par différentes activités » dit de quelle manière : complément circonstanciel."
   },
   {
    "id": "ceb-2019-l7-q1",
@@ -3445,22 +4665,90 @@
    "livret": 7,
    "numero": "4a",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "L'échelle dépliée : vrai ou faux ?",
+   "type": "grille",
+   "enonce": "Observe la photo de cette échelle dépliée et l'étiquette qui comprend des informations sur cette échelle (livret, page 6). Pour chaque affirmation, dis si elle est vraie ou fausse.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-ordres-grandeur",
+   "documents": [
+    "liv7-p06"
+   ],
+   "lignes": [
+    "On peut ranger cette échelle dépliée dans un garage de 4 m 50 de longueur et de 2 m 50 de hauteur.",
+    "Du sol à la corniche, ce mur mesure plus de 5 m.",
+    "Deux hommes de 80 kg peuvent grimper ensemble sur cette échelle."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    1
+   ],
+   "explication": "Dépliée, l'échelle mesure au plus 3,36 m de long et 2,35 m de haut : elle rentre dans le garage. Elle atteint la corniche, donc le mur mesure moins de 5 m. Deux hommes de 80 kg pèsent 160 kg, plus que les 150 kg maximum."
   },
   {
-   "id": "ceb-2019-l7-q5",
+   "id": "ceb-2019-l7-q5a",
    "livret": 7,
-   "numero": "5",
+   "numero": "5a",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Jauges d'essence : fraction, pourcentage, distance restante.",
-   "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm",
+   "enonce": "Observe la première jauge d'un réservoir d'essence du livret (page 8). Il reste de l'essence dans ce réservoir : choisis la fraction qui représente ce qu'il reste.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "documents": [
+    "liv7-p08"
+   ],
+   "choix": [
+    "1/2",
+    "1/4",
+    "1/5",
+    "1/3"
+   ],
+   "reponse": 1,
+   "explication": "L'aiguille indique le quart du réservoir : il reste 1/4."
+  },
+  {
+   "id": "ceb-2019-l7-q5b",
+   "livret": 7,
+   "numero": "5b",
+   "domaine": "ma.grandeurs",
+   "type": "qcm",
+   "enonce": "Observe la deuxième jauge d'un réservoir d'essence du livret (page 8). Il manque de l'essence pour que le réservoir soit plein : choisis le pourcentage qui représente ce qu'il manque.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "documents": [
+    "liv7-p08"
+   ],
+   "choix": [
+    "25 %",
+    "75 %",
+    "10 %",
+    "40 %"
+   ],
+   "reponse": 0,
+   "explication": "L'aiguille indique les trois quarts du réservoir : il manque un quart, soit 25 %."
+  },
+  {
+   "id": "ceb-2019-l7-q5c",
+   "livret": 7,
+   "numero": "5c",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Observe la jauge d'un réservoir d'essence du livret (page 9). Lorsque son réservoir est plein, cette voiture peut parcourir au maximum 960 km. Compte tenu de l'indication de cette jauge, combien de km cette voiture peut-elle encore parcourir au maximum ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv7-p09"
+   ],
+   "reponse": 120,
+   "unite": "km",
+   "explication": "L'aiguille indique 1/8 du réservoir : 960 : 8 = 120 km."
   },
   {
    "id": "ceb-2019-l7-q6",
@@ -3478,66 +4766,158 @@
    "livret": 7,
    "numero": "8",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Quelle fraction du rectangle représente le losange ?",
+   "type": "texte_court",
+   "enonce": "Compare les aires de ces figures (livret, page 10). À quelle fraction du rectangle le losange grisé correspond-il ? Écris la fraction sous la forme « a/b ».",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv7-p10"
+   ],
+   "reponse": [
+    "1/4",
+    "1 / 4",
+    "un quart",
+    "¼"
+   ],
+   "explication": "Le losange occupe le quart du rectangle : 1/4."
   },
   {
    "id": "ceb-2019-l7-q10",
    "livret": 7,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Qu'indiquera la balance ?",
+   "type": "numerique",
+   "enonce": "Elsa prépare des gaufres. Elle a déjà pesé la farine (balance du livret, page 12). Qu'indiquera la balance lorsqu'Elsa aura ajouté les ingrédients suivants : du beurre (1/4 kg), du sucre (375 g) et du sucre vanillé (2 × 10 g) ? Écris le nombre de grammes.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-conversions",
+   "documents": [
+    "liv7-p12"
+   ],
+   "reponse": 1145,
+   "unite": "g",
+   "explication": "Farine 500 g + beurre 250 g + sucre 375 g + sucre vanillé 20 g = 1 145 g."
   },
   {
    "id": "ceb-2019-l7-q13c",
    "livret": 7,
    "numero": "13c",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Distance entre le col d'Izoard et Briançon.",
+   "type": "numerique",
+   "enonce": "Voici le relief de la 18e étape d'un Tour de France (livret, page 14). Calcule la distance (en km) entre le Col d'Izoard et Briançon.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv7-p14"
+   ],
+   "reponse": 19,
+   "unite": "km",
+   "explication": "Le Col d'Izoard est au km 133 et Briançon au km 152 : 152 − 133 = 19 km."
   },
   {
    "id": "ceb-2019-l7-q15",
    "livret": 7,
    "numero": "15",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aires du rectangle, du losange, du trapèze et du triangle.",
+   "type": "trous",
+   "enonce": "Observe les quatre figures tracées dans le quadrillage du livret (page 17), numérotées de 1 à 4. Complète : utilise le quadrillage ou les formules.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-formules",
+   "documents": [
+    "liv7-p17"
+   ],
+   "texte": "Aire du rectangle 1 en cm² = {1}\nAire du losange 2 en cm² = {2}\nAire du trapèze 3 en cm² = {3}\nAire du triangle 4 en cm² = {4}",
+   "reponse": [
+    [
+     "12",
+     "12 cm²"
+    ],
+    [
+     "9",
+     "9 cm²"
+    ],
+    [
+     "10",
+     "10 cm²"
+    ],
+    [
+     "14",
+     "14 cm²"
+    ]
+   ],
+   "explication": "Rectangle : 12 cm² ; losange : 9 cm² ; trapèze : 10 cm² ; triangle : 14 cm²."
   },
   {
-   "id": "ceb-2019-l7-q16",
+   "id": "ceb-2019-l7-q16a",
    "livret": 7,
-   "numero": "16",
+   "numero": "16a",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aire de la pelouse et nombre de panneaux de clôture.",
-   "points": 8,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "numerique",
+   "enonce": "Observe le plan du livret (page 18). Calcule l'aire de la pelouse (en m²).",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv7-p18"
+   ],
+   "reponse": 896,
+   "unite": "m²",
+   "explication": "Terrain entier : 50 × 22 = 1 100 m². On retire la maison (18 × 10 = 180 m²) et l'allée (4 × 6 = 24 m²) : 1 100 − 180 − 24 = 896 m²."
+  },
+  {
+   "id": "ceb-2019-l7-q16b",
+   "livret": 7,
+   "numero": "16b",
+   "domaine": "ma.grandeurs",
+   "type": "numerique",
+   "enonce": "Le propriétaire a l'intention d'installer une clôture sur la partie en pointillés (livret, page 19). Voici un des panneaux utilisés. Calcule le nombre de panneaux nécessaires pour installer cette clôture.",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv7-p19"
+   ],
+   "reponse": 36,
+   "unite": "panneaux",
+   "explication": "La clôture longe 50 m + 22 m = 72 m ; chaque panneau mesure 2 m de large : 72 : 2 = 36 panneaux."
   },
   {
    "id": "ceb-2019-l7-q19",
    "livret": 7,
    "numero": "19",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Lis les mesures sur les instruments.",
+   "type": "trous",
+   "enonce": "Observe l'exemple du livret (page 22), puis lis la mesure indiquée par chaque instrument. Dans chacune des trois étiquettes vides, repérées 1 à 3, écris la mesure et l'étalon (l'unité de mesure).",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-ordres-grandeur",
+   "documents": [
+    "liv7-p22"
+   ],
+   "texte": "Étiquette 1 : {1}\nÉtiquette 2 : {2}\nÉtiquette 3 : {3}",
+   "reponse": [
+    [
+     "10 min",
+     "10 minutes",
+     "10min",
+     "10 Min"
+    ],
+    [
+     "65 ml",
+     "65ml",
+     "65 mL"
+    ],
+    [
+     "28 °C",
+     "28°C",
+     "28 degrés",
+     "28 degrés Celsius"
+    ]
+   ],
+   "explication": "Le sablier indique 10 minutes (étiquette 1), l'éprouvette 65 ml (étiquette 2) et le thermomètre 28 °C (étiquette 3)."
   },
   {
    "id": "ceb-2019-l7-q20",
@@ -3555,11 +4935,17 @@
    "livret": 7,
    "numero": "21",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Combien de boites sur les palettes ?",
+   "type": "numerique",
+   "enonce": "Observe les deux palettes du livret (page 24). Combien y a-t-il de boites sur les deux palettes ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv7-p24"
+   ],
+   "reponse": 54,
+   "unite": "boites",
+   "explication": "Chaque palette porte 3 × 3 × 3 = 27 boites ; sur deux palettes : 27 × 2 = 54 boites."
   },
   {
    "id": "ceb-2019-l8-q1",
@@ -4540,110 +5926,343 @@
    "livret": 9,
    "numero": "1a",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Coche les lignes du temps où représenter le carbonifère.",
+   "type": "qcm_multi",
+   "enonce": "Lis le document (portfolio, page 20) et observe les lignes du temps du livret (pages 2 et 3), numérotées de 1 à 4. Coche les trois lignes du temps sur lesquelles tu pourrais représenter la période du carbonifère.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-frise",
    "documents": [
-    "charbon-1"
+    "charbon-1",
+    "liv9-p02",
+    "liv9-p03"
    ],
-   "numerisable": false
+   "choix": [
+    "Ligne 1",
+    "Ligne 2",
+    "Ligne 3",
+    "Ligne 4"
+   ],
+   "reponse": [
+    0,
+    1,
+    3
+   ],
+   "explication": "Le carbonifère commence il y a environ 360 millions d'années et dure 60 millions d'années : il tient sur les lignes graduées en millions d'années qui couvrent cette période (1, 2 et 4). La ligne 3 est graduée en années après J.-C."
   },
   {
    "id": "ceb-2019-l9-q5a",
    "livret": 9,
    "numero": "5a",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Place les gisements sur la carte du monde.",
+   "type": "grille",
+   "enonce": "Observe les trois gisements numérotés de 1 à 3 (portfolio, page 25) et la carte du monde du livret (page 11). Il fallait placer les gisements sur la carte en écrivant leur numéro dans les étiquettes carrées. Pour chaque gisement, choisis l'étiquette carrée (repérée par une lettre) qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "hg-planisphere",
    "documents": [
-    "gis-1"
+    "gis-1",
+    "liv9-p11"
    ],
-   "numerisable": false
+   "lignes": [
+    "Gisement 1",
+    "Gisement 2",
+    "Gisement 3"
+   ],
+   "colonnes": [
+    "Carré A",
+    "Carré B",
+    "Carré C",
+    "Carré D",
+    "Carré E",
+    "Carré F"
+   ],
+   "reponse": [
+    5,
+    2,
+    3
+   ],
+   "explication": "Gisement 1 (or, Australie) : carré F ; gisement 2 (diamant, Sibérie) : carré C ; gisement 3 (uranium, Niger) : carré D."
   },
   {
    "id": "ceb-2019-l9-q5b",
    "livret": 9,
    "numero": "5b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Situe les océans Atlantique et Pacifique.",
+   "type": "grille",
+   "enonce": "Sur la carte du monde du livret (page 11), il fallait tracer une croix dans les étiquettes rondes (numérotées de 1 à 5) : en bleu pour situer l'océan Atlantique, en rouge pour situer l'océan Pacifique. Pour chaque océan, choisis l'étiquette ronde qui convient.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-planisphere",
+   "documents": [
+    "liv9-p11"
+   ],
+   "lignes": [
+    "Océan Atlantique",
+    "Océan Pacifique"
+   ],
+   "colonnes": [
+    "Cercle 1",
+    "Cercle 2",
+    "Cercle 3",
+    "Cercle 4",
+    "Cercle 5"
+   ],
+   "reponse": [
+    1,
+    [
+     0,
+     4
+    ]
+   ],
+   "explication": "L'Atlantique est entre l'Amérique et l'Europe-Afrique (cercle 2). Le Pacifique est de part et d'autre de la carte : cercle 1 ou cercle 5 (les deux sont acceptés)."
   },
   {
    "id": "ceb-2019-l9-q5d",
    "livret": 9,
    "numero": "5d",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Classe les utilisations du cuivre.",
+   "type": "ordre",
+   "enonce": "Observe le graphique « Utilisation du cuivre dans l'industrie » (livret, page 12) et les quatre photos du livret (page 13), repérées par les lettres A à D. Classe ces photos de l'utilisation la plus importante à l'utilisation la moins importante (la photo B porte déjà le n° 1).",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "liv9-p12",
+    "liv9-p13"
+   ],
+   "elements": [
+    "Photo A",
+    "Photo B",
+    "Photo C",
+    "Photo D"
+   ],
+   "reponse": [
+    1,
+    0,
+    3,
+    2
+   ],
+   "explication": "Électricité et électronique (photo B) : 42 % ; construction (photo A) : 28 % ; transports (photo D) : 12 % ; autres utilisations, comme la monnaie (photo C) : 9 %."
   },
   {
-   "id": "ceb-2019-l9-q6",
+   "id": "ceb-2019-l9-q6a",
    "livret": 9,
-   "numero": "6",
+   "numero": "6a",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Un paysage : photo au sol ou aérienne, caractéristiques, composantes.",
-   "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm",
+   "enonce": "Observe ce paysage (livret, page 14). Choisis la proposition qui caractérise le mieux la photo.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-vues-aeriennes",
+   "documents": [
+    "liv9-p14"
+   ],
+   "choix": [
+    "Photo au sol",
+    "Photo aérienne"
+   ],
+   "reponse": 1,
+   "explication": "La photo est prise d'en haut : c'est une photo aérienne."
   },
   {
-   "id": "ceb-2019-l9-q7",
+   "id": "ceb-2019-l9-q6b",
    "livret": 9,
-   "numero": "7",
+   "numero": "6b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Des terrils : altitude et localisation sur la carte.",
-   "points": 2,
-   "corrigeVerifie": false,
+   "type": "qcm_multi",
+   "enonce": "Le paysage que tu vois sur la photo (livret, page 14) est… Choisis les trois propositions correctes.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv9-p14"
+   ],
+   "choix": [
+    "peu humanisé",
+    "très humanisé",
+    "rural",
+    "urbain",
+    "industriel"
+   ],
+   "reponse": [
+    1,
+    3,
+    4
+   ],
+   "explication": "On voit une ville, des usines, des routes et des voies ferrées : un paysage très humanisé, urbain et industriel."
+  },
+  {
+   "id": "ceb-2019-l9-q6c",
+   "livret": 9,
+   "numero": "6c",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Associe les numéros de la photo (livret, page 14) aux composantes du paysage (livret, page 15) : pour chaque numéro, choisis la lettre de la composante qui convient.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv9-p14",
+    "liv9-p15"
+   ],
+   "lignes": [
+    "Repère 1",
+    "Repère 2",
+    "Repère 3"
+   ],
+   "colonnes": [
+    "A – Champ cultivé",
+    "B – Prairie",
+    "C – Espace boisé",
+    "D – Cours d'eau",
+    "E – Route",
+    "F – Chemin de fer",
+    "G – Usine",
+    "H – Maisons d'habitation",
+    "I – Parking"
+   ],
+   "reponse": [
+    7,
+    2,
+    6
+   ],
+   "explication": "Repère 1 : des maisons d'habitation (H) ; repère 2 : un espace boisé (C) ; repère 3 : une usine (G)."
+  },
+  {
+   "id": "ceb-2019-l9-q7a",
+   "livret": 9,
+   "numero": "7a",
+   "domaine": "hg.geographie",
+   "type": "numerique",
+   "enonce": "Complète, en t'aidant de la carte du portfolio (page 32) : au sommet du terril Albert 1er, l'altitude est de … mètres.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
    "documents": [
     "terrils"
    ],
-   "numerisable": false
+   "reponse": 209,
+   "unite": "m",
+   "explication": "La carte indique 209 m au sommet du terril Albert 1er."
   },
   {
-   "id": "ceb-2019-l9-q11",
+   "id": "ceb-2019-l9-q7b",
    "livret": 9,
-   "numero": "11",
-   "domaine": "hg.histoire",
+   "numero": "7b",
+   "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Roues horaires : journée d'un enfant mineur (1860) et de Lucie (2019).",
-   "points": 3,
+   "enonce": "Observe la carte des environs de Châtelet (livret, page 16) : trace une croix à l'endroit où se trouve un terril.",
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false,
-   "remarque": "Les roues horaires du livret ne sont pas dans nos documents : question gardée en mode papier. Corrigé officiel : a) nuit de l'enfant de la mine en rouge, de 21 h à 4 h ; b) nuit de Lucie en bleu, de 21 h à 7 h 15 ; c) faux, faux, vrai.",
-   "reponseModele": "a) rouge : de 21 h à 4 h ; b) bleu : de 21 h à 7 h 15 ; c) faux ; faux ; vrai."
+   "remarque": "Question de tracé sur une carte : gardée en mode papier. Corrigé officiel : une croix dans la zone entourée (le terril)."
+  },
+  {
+   "id": "ceb-2019-l9-q11ab",
+   "livret": 9,
+   "numero": "11ab",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Roue horaire : colorie le plus précisément possible la durée de la nuit de repos de l'enfant travaillant à la mine vers 1860 (en rouge, grand disque A) et celle de Lucie en 2019 (en bleu, petit disque B).",
+   "points": 2,
+   "corrigeVerifie": false,
+   "numerisable": false,
+   "remarque": "Coloriage d'une durée sur une roue horaire : gardé en mode papier. Corrigé officiel : a) nuit de l'enfant de la mine en rouge, de 21 h à 4 h ; b) nuit de Lucie en bleu, de 21 h à 7 h 15.",
+   "reponseModele": "a) rouge : de 21 h à 4 h ; b) bleu : de 21 h à 7 h 15."
+  },
+  {
+   "id": "ceb-2019-l9-q11c",
+   "livret": 9,
+   "numero": "11c",
+   "domaine": "hg.histoire",
+   "type": "grille",
+   "enonce": "Observe la roue horaire de l'enfant travaillant à la mine vers 1860 et la journée scolaire de Lucie, élève de 6e primaire en 2019 (livret, page 20). Pour chaque affirmation, dis si elle est vraie ou fausse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "liv9-p20"
+   ],
+   "lignes": [
+    "En 1860, un enfant passe 14 heures dans la mine.",
+    "Le temps passé entre le coucher et le lever pour un enfant travaillant dans la mine en 1860 et pour Lucie est identique.",
+    "La pause de midi de Lucie est plus longue que celle de l'enfant travaillant dans la mine."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    1,
+    0
+   ],
+   "explication": "L'enfant descend à 6 h et remonte à 17 h : 11 heures dans la mine. Il dort de 21 h à 4 h (7 h), Lucie de 21 h à 7 h 15 (10 h 15). La pause de midi de Lucie dure 1 h 30, celle de l'enfant 1 h."
   },
   {
    "id": "ceb-2019-l9-q13a",
    "livret": 9,
    "numero": "13a",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Place les affirmations dans le tableau du mode de vie.",
+   "type": "grille",
+   "enonce": "Observe le tableau du livret (page 24) dont certaines cases sont numérotées de 1 à 5 ; un exemple est donné (case 3 : « L'Homme décore les parois des grottes »). Pour chaque affirmation, choisis le numéro de la case qui lui correspond.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-modes-vie",
+   "documents": [
+    "liv9-p24"
+   ],
+   "lignes": [
+    "L'Homme imprime les premiers livres.",
+    "L'Homme fabrique des outils en pierre taillée.",
+    "L'Homme communique via Internet.",
+    "L'Homme utilise le vaccin contre la rage et des antibiotiques."
+   ],
+   "colonnes": [
+    "Case 1",
+    "Case 2",
+    "Case 3",
+    "Case 4",
+    "Case 5"
+   ],
+   "reponse": [
+    3,
+    1,
+    4,
+    0
+   ],
+   "explication": "Les premiers livres : le temps des découvertes, l'Homme communique (case 4). Les outils en pierre taillée : les chasseurs-cueilleurs, l'Homme utilise des techniques (case 2). Internet : le temps des sociétés industrielles, l'Homme communique (case 5). Le vaccin : l'Homme se nourrit et se soigne, à l'époque industrielle (case 1)."
   },
   {
    "id": "ceb-2019-l9-q14",
    "livret": 9,
    "numero": "14",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Complète la rose des vents.",
+   "type": "grille",
+   "enonce": "Complète les étiquettes de la rose des vents du livret (page 26) par les points cardinaux : l'étiquette « EST » est déjà remplie ; pour chacune des trois étiquettes vides, repérées de 1 à 3, choisis le point cardinal.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-orientation",
+   "documents": [
+    "liv9-p26"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3"
+   ],
+   "colonnes": [
+    "Nord",
+    "Est",
+    "Sud",
+    "Ouest"
+   ],
+   "reponse": [
+    2,
+    3,
+    0
+   ],
+   "explication": "À partir de l'Est, dans le sens des aiguilles d'une montre, on trouve le Sud (étiquette 1), l'Ouest (étiquette 2) puis le Nord (étiquette 3)."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2019), comparé question par question le 21/10/2026."
