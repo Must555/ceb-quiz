@@ -621,6 +621,87 @@
       "titre": "Des traces de pas sur un sol (question 12)",
       "fichier": "assets/2026-tc/liv6-p08.webp",
       "alt": "Photo en noir et blanc de plusieurs traces de semelles de chaussures sur un sol carrelé ; en dessous, la question 12 et la question 13."
+    },
+    {
+      "id": "liv8-p02",
+      "source": "livret",
+      "livret": 8,
+      "page": 2,
+      "titre": "Droites graduées à zoomer (question 2)",
+      "fichier": "assets/2026-tc/liv8-p02.webp",
+      "alt": "Deux droites graduées, chacune agrandie par un zoom en dix intervalles, avec une case vide sous une graduation."
+    },
+    {
+      "id": "liv8-p03",
+      "source": "livret",
+      "livret": 8,
+      "page": 3,
+      "titre": "Graphique des habitants et tableau de nombres (questions 3 et 4)",
+      "fichier": "assets/2026-tc/liv8-p03.webp",
+      "alt": "Un graphique en barres des habitants de six pays d'Europe avec deux cases à compléter, et un tableau de nombres décimaux avec deux cases blanches."
+    },
+    {
+      "id": "liv8-p05",
+      "source": "livret",
+      "livret": 8,
+      "page": 5,
+      "titre": "Compteur d'eau (question 8)",
+      "fichier": "assets/2026-tc/liv8-p05.webp",
+      "alt": "Un compteur d'eau dont l'affichage comporte huit chiffres et une virgule ; quatre zéros sont numérotés de 1 à 4, de gauche à droite."
+    },
+    {
+      "id": "liv8-p08",
+      "source": "livret",
+      "livret": 8,
+      "page": 8,
+      "titre": "Droites graduées avec taches (question 12)",
+      "fichier": "assets/2026-tc/liv8-p08.webp",
+      "alt": "Deux droites graduées sur lesquelles des taches cachent des graduations."
+    },
+    {
+      "id": "liv8-p12",
+      "source": "livret",
+      "livret": 8,
+      "page": 12,
+      "titre": "Six boites de jeux et arbre de classement (traitement de données, question 1)",
+      "fichier": "assets/2026-tc/liv8-p12.webp",
+      "alt": "Six boites de jeux étiquetées de A à F, et un arbre de classement dont les quatre cases vides à droite sont numérotées de 1 à 4."
+    },
+    {
+      "id": "liv8-p14",
+      "source": "livret",
+      "livret": 8,
+      "page": 14,
+      "titre": "Ensembles : sport, musique, mouvement de jeunesse (traitement de données, question 3)",
+      "fichier": "assets/2026-tc/liv8-p14.webp",
+      "alt": "Trois ensembles qui se recoupent (sport, musique, mouvement de jeunesse) avec des prénoms d'enfants placés dedans ou dehors."
+    },
+    {
+      "id": "liv9-p02",
+      "source": "livret",
+      "livret": 9,
+      "page": 2,
+      "titre": "Schéma de la circulation sanguine (question 1)",
+      "fichier": "assets/2026-tc/liv9-p02.webp",
+      "alt": "Schéma de la circulation du sang entre les poumons, le cœur et les organes, avec quatre vaisseaux repérés par les lettres A à D."
+    },
+    {
+      "id": "liv9-p03",
+      "source": "livret",
+      "livret": 9,
+      "page": 3,
+      "titre": "Liens entre les systèmes circulatoire, digestif et respiratoire (question 2)",
+      "fichier": "assets/2026-tc/liv9-p03.webp",
+      "alt": "Schéma de la circulation avec cinq étiquettes rondes numérotées de 1 à 5."
+    },
+    {
+      "id": "liv9-p05",
+      "source": "livret",
+      "livret": 9,
+      "page": 5,
+      "titre": "Les poumons (question 4)",
+      "fichier": "assets/2026-tc/liv9-p05.webp",
+      "alt": "Schéma des poumons avec un agrandissement, et trois étiquettes vides numérotées de 1 à 3."
     }
   ],
   "questions": [
@@ -3754,6 +3835,38 @@
       "explication": "Le signe > se lit « est plus grand que ». 13 unités > 12 unités."
     },
     {
+      "id": "ceb-2026-tc-l8-qA2a",
+      "livret": 8,
+      "numero": "A2a",
+      "domaine": "ma.arithmetique",
+      "type": "numerique",
+      "enonce": "Observe la première droite graduée du livret (page 2) : la droite du bas est un agrandissement de la droite du haut. Écris le nombre qui convient dans la case.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "documents": [
+        "liv8-p02"
+      ],
+      "reponse": 7867,
+      "explication": "Entre 7 860 et 7 870, il y a 10 petits intervalles : chacun vaut 1. La case est sur la 7e graduation après 7 860 : 7 867."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA2b",
+      "livret": 8,
+      "numero": "A2b",
+      "domaine": "ma.arithmetique",
+      "type": "numerique",
+      "enonce": "Observe la deuxième droite graduée du livret (page 2) : la droite du bas est un agrandissement de la droite du haut. Écris le nombre qui convient dans la case.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "documents": [
+        "liv8-p02"
+      ],
+      "reponse": 14.2,
+      "explication": "La droite du bas va de 14 à 15 en 10 intervalles : chacun vaut 0,1. La case est sur la 2e graduation après 14 : 14,2."
+    },
+    {
       "id": "ceb-2026-tc-l8-qA3a",
       "livret": 8,
       "numero": "A3a",
@@ -3764,7 +3877,10 @@
       "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 48059777,
-      "explication": "48 millions, 59 milliers, 777 : 48 059 777."
+      "explication": "48 millions, 59 milliers, 777 : 48 059 777.",
+      "documents": [
+        "liv8-p03"
+      ]
     },
     {
       "id": "ceb-2026-tc-l8-qA3b",
@@ -3777,7 +3893,40 @@
       "corrigeVerifie": true,
       "fiche": "ma-decimaux",
       "reponse": 11754004,
-      "explication": "11 millions, 754 milliers, 4 unités : 11 754 004."
+      "explication": "11 millions, 754 milliers, 4 unités : 11 754 004.",
+      "documents": [
+        "liv8-p03"
+      ]
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA4a",
+      "livret": 8,
+      "numero": "A4a",
+      "domaine": "ma.arithmetique",
+      "type": "trous",
+      "enonce": "Observe le tableau de nombres du livret (page 3). Complète les deux cases blanches.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-decimaux",
+      "documents": [
+        "liv8-p03"
+      ],
+      "texte": "Case blanche du haut : {1}  ·  Case blanche du bas : {2}",
+      "reponse": [
+        [
+          "0,68",
+          "0.68"
+        ],
+        [
+          "1",
+          "1,0",
+          "1,00",
+          "1.0",
+          "1.00"
+        ]
+      ],
+      "souple": true,
+      "explication": "Dans une ligne, on ajoute 0,01 en allant vers la droite (0,84 ; 0,85 ; 0,86). Dans une colonne, on ajoute 0,1 en descendant (0,75 ; 0,85 ; 0,95). Haut : 0,75 − 0,1 = 0,65, puis 3 cases à droite : 0,68. Bas : 0,95 + 5 × 0,01 = 1."
     },
     {
       "id": "ceb-2026-tc-l8-qA4b",
@@ -3785,7 +3934,7 @@
       "numero": "A4b",
       "domaine": "ma.arithmetique",
       "type": "qcm",
-      "enonce": "Un tableau contient des nombres rangés de 0,75 à 0,95. Lequel de ces nombres peut y être inscrit ?",
+      "enonce": "Observe le tableau de nombres du livret (page 3). Coche, parmi ces 4 propositions, le seul nombre qui peut être inscrit dans le tableau.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-decimaux",
@@ -3796,7 +3945,169 @@
         "1,2"
       ],
       "reponse": 2,
-      "explication": "Seul 0,8 (= 0,80) est compris entre 0,75 et 0,95."
+      "explication": "Les nombres du tableau vont de 0,61 à 1,10 : 0,8 (= 0,80) s'y trouve, au bout de la ligne de 0,75 (0,75 + 0,05). 0,1 et 0,54 sont trop petits, 1,2 est trop grand.",
+      "documents": [
+        "liv8-p03"
+      ]
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA5",
+      "livret": 8,
+      "numero": "A5",
+      "domaine": "ma.arithmetique",
+      "type": "texte_court",
+      "enonce": "Observe cette addition : 45 693 + 21 427 = 67 120. Écris une opération réciproque pour vérifier le résultat de ce calcul.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-operations",
+      "souple": true,
+      "explication": "L'opération réciproque d'une addition est une soustraction : on retire un des termes du total et on doit retrouver l'autre : 67 120 − 21 427 = 45 693 (ou 67 120 − 45 693 = 21 427).",
+      "reponse": [
+        "67 120 - 21 427",
+        "67 120 - 21 427 = 45 693",
+        "67 120 - 21 427 = 45693",
+        "67 120 - 21427",
+        "67 120 - 21427 = 45 693",
+        "67 120 - 21427 = 45693",
+        "67 120 - 45 693",
+        "67 120 - 45 693 = 21 427",
+        "67 120 - 45 693 = 21427",
+        "67 120 - 45693",
+        "67 120 - 45693 = 21 427",
+        "67 120 - 45693 = 21427",
+        "67 120 – 21 427",
+        "67 120 – 21 427 = 45 693",
+        "67 120 – 21 427 = 45693",
+        "67 120 – 21427",
+        "67 120 – 21427 = 45 693",
+        "67 120 – 21427 = 45693",
+        "67 120 – 45 693",
+        "67 120 – 45 693 = 21 427",
+        "67 120 – 45 693 = 21427",
+        "67 120 – 45693",
+        "67 120 – 45693 = 21 427",
+        "67 120 – 45693 = 21427",
+        "67 120 − 21 427",
+        "67 120 − 21 427 = 45 693",
+        "67 120 − 21 427 = 45693",
+        "67 120 − 21427",
+        "67 120 − 21427 = 45 693",
+        "67 120 − 21427 = 45693",
+        "67 120 − 45 693",
+        "67 120 − 45 693 = 21 427",
+        "67 120 − 45 693 = 21427",
+        "67 120 − 45693",
+        "67 120 − 45693 = 21 427",
+        "67 120 − 45693 = 21427",
+        "67 120-21 427",
+        "67 120-21 427=45 693",
+        "67 120-21 427=45693",
+        "67 120-21427",
+        "67 120-21427=45 693",
+        "67 120-21427=45693",
+        "67 120-45 693",
+        "67 120-45 693=21 427",
+        "67 120-45 693=21427",
+        "67 120-45693",
+        "67 120-45693=21 427",
+        "67 120-45693=21427",
+        "67 120–21 427",
+        "67 120–21 427=45 693",
+        "67 120–21 427=45693",
+        "67 120–21427",
+        "67 120–21427=45 693",
+        "67 120–21427=45693",
+        "67 120–45 693",
+        "67 120–45 693=21 427",
+        "67 120–45 693=21427",
+        "67 120–45693",
+        "67 120–45693=21 427",
+        "67 120–45693=21427",
+        "67 120−21 427",
+        "67 120−21 427=45 693",
+        "67 120−21 427=45693",
+        "67 120−21427",
+        "67 120−21427=45 693",
+        "67 120−21427=45693",
+        "67 120−45 693",
+        "67 120−45 693=21 427",
+        "67 120−45 693=21427",
+        "67 120−45693",
+        "67 120−45693=21 427",
+        "67 120−45693=21427",
+        "67120 - 21 427",
+        "67120 - 21 427 = 45 693",
+        "67120 - 21 427 = 45693",
+        "67120 - 21427",
+        "67120 - 21427 = 45 693",
+        "67120 - 21427 = 45693",
+        "67120 - 45 693",
+        "67120 - 45 693 = 21 427",
+        "67120 - 45 693 = 21427",
+        "67120 - 45693",
+        "67120 - 45693 = 21 427",
+        "67120 - 45693 = 21427",
+        "67120 – 21 427",
+        "67120 – 21 427 = 45 693",
+        "67120 – 21 427 = 45693",
+        "67120 – 21427",
+        "67120 – 21427 = 45 693",
+        "67120 – 21427 = 45693",
+        "67120 – 45 693",
+        "67120 – 45 693 = 21 427",
+        "67120 – 45 693 = 21427",
+        "67120 – 45693",
+        "67120 – 45693 = 21 427",
+        "67120 – 45693 = 21427",
+        "67120 − 21 427",
+        "67120 − 21 427 = 45 693",
+        "67120 − 21 427 = 45693",
+        "67120 − 21427",
+        "67120 − 21427 = 45 693",
+        "67120 − 21427 = 45693",
+        "67120 − 45 693",
+        "67120 − 45 693 = 21 427",
+        "67120 − 45 693 = 21427",
+        "67120 − 45693",
+        "67120 − 45693 = 21 427",
+        "67120 − 45693 = 21427",
+        "67120-21 427",
+        "67120-21 427=45 693",
+        "67120-21 427=45693",
+        "67120-21427",
+        "67120-21427=45 693",
+        "67120-21427=45693",
+        "67120-45 693",
+        "67120-45 693=21 427",
+        "67120-45 693=21427",
+        "67120-45693",
+        "67120-45693=21 427",
+        "67120-45693=21427",
+        "67120–21 427",
+        "67120–21 427=45 693",
+        "67120–21 427=45693",
+        "67120–21427",
+        "67120–21427=45 693",
+        "67120–21427=45693",
+        "67120–45 693",
+        "67120–45 693=21 427",
+        "67120–45 693=21427",
+        "67120–45693",
+        "67120–45693=21 427",
+        "67120–45693=21427",
+        "67120−21 427",
+        "67120−21 427=45 693",
+        "67120−21 427=45693",
+        "67120−21427",
+        "67120−21427=45 693",
+        "67120−21427=45693",
+        "67120−45 693",
+        "67120−45 693=21 427",
+        "67120−45 693=21427",
+        "67120−45693",
+        "67120−45693=21 427",
+        "67120−45693=21427"
+      ]
     },
     {
       "id": "ceb-2026-tc-l8-qA6",
@@ -3811,6 +4122,57 @@
       "explication": "Enfants pour la Belgique : 12 500 − 3 650 = 8 850. Adultes pour la Belgique : 26 650 − 8 850 = 17 800."
     },
     {
+      "id": "ceb-2026-tc-l8-qA7a",
+      "livret": 8,
+      "numero": "A7a",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe cette décomposition : 61 526 = 60 000 + 1 000 + 500 + 20 + 6. Décompose de la même manière le nombre 16 026.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-numeration",
+      "reponseModele": "10 000 + 6 000 + 20 + 6 (le « + 0 » des centaines est facultatif : on accepte aussi « + 000 »).",
+      "explication": "Chaque chiffre garde sa valeur de position : 1 dizaine de mille, 6 unités de mille, 0 centaine, 2 dizaines, 6 unités."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA7b",
+      "livret": 8,
+      "numero": "A7b",
+      "domaine": "ma.arithmetique",
+      "type": "ouverte",
+      "enonce": "Observe cette décomposition : 61 526 = 60 000 + 1 000 + 500 + 20 + 6. Décompose de la même manière le nombre 37,023.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-numeration",
+      "reponseModele": "30 + 7 + 0,02 + 0,003 (le « + 0 » des dixièmes est facultatif : on accepte aussi « + 0,0 »).",
+      "explication": "3 dizaines, 7 unités, 0 dixième, 2 centièmes, 3 millièmes : 30 + 7 + 0,02 + 0,003."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA8a",
+      "livret": 8,
+      "numero": "A8a",
+      "domaine": "ma.arithmetique",
+      "type": "qcm_multi",
+      "enonce": "Observe le compteur d'eau du livret (page 5). Les quatre zéros de l'affichage sont numérotés de 1 à 4, de gauche à droite (numérotation ajoutée sur le site). Quels zéros peut-on supprimer sans modifier la valeur du nombre affiché ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-decimaux",
+      "documents": [
+        "liv8-p05"
+      ],
+      "choix": [
+        "Zéro 1",
+        "Zéro 2",
+        "Zéro 3",
+        "Zéro 4"
+      ],
+      "reponse": [
+        0,
+        3
+      ],
+      "explication": "Le zéro tout à gauche (avant le 3) et le zéro tout à droite (après le 8, dans les décimales) ne changent pas la valeur : 03 060,580 = 3 060,58. Les deux autres zéros tiennent la place des centaines et des unités : on ne peut pas les enlever."
+    },
+    {
       "id": "ceb-2026-tc-l8-qA8b",
       "livret": 8,
       "numero": "A8b",
@@ -3822,7 +4184,10 @@
       "fiche": "ma-decimaux",
       "unite": "m³",
       "reponse": 3060,
-      "explication": "La partie entière est la partie avant la virgule : 03060 = 3 060 (le zéro de gauche ne change rien). Attention à ne pas oublier le dernier 0 avant la virgule : il compte !"
+      "explication": "La partie entière est la partie avant la virgule : 03060 = 3 060 (le zéro de gauche ne change rien). Attention à ne pas oublier le dernier 0 avant la virgule : il compte !",
+      "documents": [
+        "liv8-p05"
+      ]
     },
     {
       "id": "ceb-2026-tc-l8-qA9a",
@@ -3905,6 +4270,50 @@
       "explication": "26 enfants payants → 1 adulte gratuit (on n'atteint pas 30). On paie 26 × 19 € et 2 adultes × 28 € : 494 + 56 = 550 €."
     },
     {
+      "id": "ceb-2026-tc-l8-qA12a",
+      "livret": 8,
+      "numero": "A12a",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "Observe la première droite graduée du livret (page 8). Sous quelle tache se trouve le nombre 4 600 ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "documents": [
+        "liv8-p08"
+      ],
+      "choix": [
+        "Tache A",
+        "Tache B",
+        "Tache C",
+        "Tache D"
+      ],
+      "reponse": 2,
+      "explication": "De 3 250 à 3 500, il y a 2 intervalles : chaque graduation vaut 125. 4 500 est la 8e graduation après 3 500, 4 625 la suivante : 4 600 est juste avant 4 625, sous la tache C."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qA12b",
+      "livret": 8,
+      "numero": "A12b",
+      "domaine": "ma.arithmetique",
+      "type": "qcm",
+      "enonce": "Observe la deuxième droite graduée du livret (page 8). Coche le nombre qui est caché sous la tache E.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-droite-graduee",
+      "documents": [
+        "liv8-p08"
+      ],
+      "choix": [
+        "1 640",
+        "1 840",
+        "2 040",
+        "2 400"
+      ],
+      "reponse": 1,
+      "explication": "De 2 200 à 3 800, il y a 8 intervalles : 1 600 : 8 = 200 par graduation. La tache E est entre 1 800 et 2 000 : seul 1 840 convient."
+    },
+    {
       "id": "ceb-2026-tc-l8-qA13",
       "livret": 8,
       "numero": "A13",
@@ -3979,6 +4388,186 @@
       "explication": "9 135 : 145 = 63 ; 63 − 50,25 = 12,75."
     },
     {
+      "id": "ceb-2026-tc-l8-qD1",
+      "livret": 8,
+      "numero": "D1",
+      "domaine": "ma.donnees",
+      "type": "grille",
+      "enonce": "Observe les informations des six boites de jeux (A à F) du livret (page 12). Complète chaque case de l'arbre par la lettre d'un jeu qui convient. Toutes les lettres ne sont pas utilisées.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p12"
+      ],
+      "lignes": [
+        "Case 1",
+        "Case 2",
+        "Case 3",
+        "Case 4"
+      ],
+      "colonnes": [
+        "Jeu A",
+        "Jeu B",
+        "Jeu C",
+        "Jeu D",
+        "Jeu E",
+        "Jeu F"
+      ],
+      "reponse": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "explication": "Case 1 : un jeu qui se joue seul et en ligne : A ou E. Case 2 : seul et hors ligne : C ou F. Case 3 : à plusieurs et en ligne : B. Case 4 : à plusieurs et hors ligne : D."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD2",
+      "livret": 8,
+      "numero": "D2",
+      "domaine": "ma.donnees",
+      "type": "ouverte",
+      "enonce": "Voici la répartition du nombre de filles et de garçons par année dans une école (P1 à P6) : filles 10, 8, 14, 13, 10, 11 ; garçons 9, 7, 11, 7, 12, 15. Un graphique représente ces données, mais deux bâtonnets n'ont pas été tracés. Trace, avec précision et en respectant la légende, les deux bâtonnets manquants.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "ma-donnees",
+      "numerisable": false,
+      "reponseModele": "Bâtonnet des garçons de P3 : hauteur 11, hachuré. Bâtonnet des filles de P5 : hauteur 10, noirci. Les deux bâtonnets doivent être tracés précisément et légendés correctement (on ne sanctionne pas si la légende n'est pas exactement respectée mais s'en rapproche)."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3a1",
+      "livret": 8,
+      "numero": "D3a1",
+      "domaine": "ma.donnees",
+      "type": "numerique",
+      "enonce": "Observe les ensembles du livret (page 14) : les enfants y sont placés en fonction de l'activité ou des activités qu'ils pratiquent. Combien d'enfants se sont inscrits en musique ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "reponse": 7,
+      "explication": "Dans l'ensemble « Musique » : Célia, Keelan, Younès, Noura, Shan, Léa et Zoé, soit 7 enfants (ceux qui sont aussi dans un autre ensemble comptent aussi)."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3a2",
+      "livret": 8,
+      "numero": "D3a2",
+      "domaine": "ma.donnees",
+      "type": "numerique",
+      "enonce": "Observe les ensembles du livret (page 14). Combien d'enfants pratiquent un sport et font de la musique, mais ne font pas partie d'un mouvement de jeunesse ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "reponse": 0,
+      "explication": "Les enfants qui sont à la fois en sport et en musique (Noura et Shan) font aussi partie du mouvement de jeunesse : il n'y en a donc aucun en dehors de ce mouvement."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3a3",
+      "livret": 8,
+      "numero": "D3a3",
+      "domaine": "ma.donnees",
+      "type": "ouverte",
+      "enonce": "Observe les ensembles du livret (page 14). Pourquoi Micheline apparait-elle en dehors des trois ensembles ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "reponseModele": "Parce qu'elle ne pratique aucune activité (ni sport, ni musique, ni mouvement de jeunesse). On accepte toute idée allant dans ce sens.",
+      "explication": "Un enfant qui est en dehors de tous les ensembles ne fait aucune des trois activités."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3a4",
+      "livret": 8,
+      "numero": "D3a4",
+      "domaine": "ma.donnees",
+      "type": "texte_court",
+      "enonce": "Observe les ensembles du livret (page 14). Quels enfants se sont inscrits dans les trois activités ? Écris leurs prénoms.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "souple": true,
+      "reponse": [
+        "Shan et Noura",
+        "Noura et Shan",
+        "Shan, Noura",
+        "Noura, Shan",
+        "Shan Noura",
+        "Noura Shan",
+        "Shan + Noura",
+        "Noura + Shan"
+      ],
+      "explication": "Il faut être dans la partie commune aux trois ensembles : ce sont Noura et Shan."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3a5",
+      "livret": 8,
+      "numero": "D3a5",
+      "domaine": "ma.donnees",
+      "type": "texte_court",
+      "enonce": "Observe les ensembles du livret (page 14). À quelle(s) activité(s) Evy s'est-elle inscrite ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "souple": true,
+      "reponse": [
+        "sport et mouvement de jeunesse",
+        "mouvement de jeunesse et sport",
+        "le sport et le mouvement de jeunesse",
+        "sport, mouvement de jeunesse",
+        "mouvement de jeunesse, sport",
+        "sport + mouvement de jeunesse",
+        "mouvement de jeunesse + sport",
+        "sport et un mouvement de jeunesse",
+        "le sport et un mouvement de jeunesse"
+      ],
+      "explication": "Evy est dans l'ensemble « Sport » et dans l'ensemble « Mouvement de jeunesse », mais pas dans « Musique »."
+    },
+    {
+      "id": "ceb-2026-tc-l8-qD3b",
+      "livret": 8,
+      "numero": "D3b",
+      "domaine": "ma.donnees",
+      "type": "qcm",
+      "enonce": "Observe les ensembles du livret (page 14). Coche l'activité qui regroupe le plus d'enfants.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "ma-representations",
+      "documents": [
+        "liv8-p14"
+      ],
+      "choix": [
+        "Sport",
+        "Mouvement de jeunesse",
+        "Musique"
+      ],
+      "reponse": 2,
+      "explication": "Sport : 5 enfants. Mouvement de jeunesse : 5 enfants. Musique : 7 enfants. C'est la musique."
+    },
+    {
       "id": "ceb-2026-tc-l8-qD4",
       "livret": 8,
       "numero": "D4",
@@ -4020,6 +4609,34 @@
       "explication": "Préfixe 0422 : Tom et Carine ; Carine finit par un chiffre impair (71), donc Tom a 87 17 46. Mehdi : 7 + 3 = 10 → 0414. Léa : 0431 / 71 12 78 (deux fois le 7)."
     },
     {
+      "id": "ceb-2026-tc-l9-q1a",
+      "livret": 9,
+      "numero": "1a",
+      "domaine": "sc.vivant",
+      "type": "trous",
+      "enonce": "Observe le schéma de la circulation sanguine du livret (page 2). Complète par les lettres du schéma qui conviennent.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "sc-corps-humain",
+      "documents": [
+        "liv9-p02"
+      ],
+      "texte": "Transport du sang riche en dioxygène (O₂) : {1} et {2}",
+      "reponse": [
+        [
+          "B",
+          "D"
+        ],
+        [
+          "D",
+          "B"
+        ]
+      ],
+      "differentes": true,
+      "souple": true,
+      "explication": "Le sang qui sort des poumons est riche en dioxygène : il revient au cœur par le vaisseau B, puis le cœur l'envoie vers les organes par le vaisseau D. Le sang pauvre en dioxygène revient des organes (C) et repart vers les poumons (A)."
+    },
+    {
       "id": "ceb-2026-tc-l9-q1b",
       "livret": 9,
       "numero": "1b",
@@ -4040,7 +4657,40 @@
         ]
       ],
       "souple": true,
-      "explication": "Artères : du cœur vers les organes. Veines : des organes vers le cœur."
+      "explication": "Artères : du cœur vers les organes. Veines : des organes vers le cœur.",
+      "documents": [
+        "liv9-p02"
+      ]
+    },
+    {
+      "id": "ceb-2026-tc-l9-q2",
+      "livret": 9,
+      "numero": "2",
+      "domaine": "sc.vivant",
+      "type": "grille",
+      "enonce": "Observe le schéma du livret (page 3) qui représente les liens entre les systèmes circulatoire, digestif et respiratoire. Ses cinq étiquettes rondes sont numérotées de 1 à 5 (numérotation ajoutée sur le site). Pour chaque lettre, indique dans quelle étiquette il faut l'écrire. Des étiquettes resteront vides.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "sc-liens-systemes",
+      "documents": [
+        "liv9-p03"
+      ],
+      "lignes": [
+        "Lettre A : un organe où s'opèrent les échanges gazeux entre le système circulatoire et le système respiratoire.",
+        "Lettre B : un organe où s'opèrent les échanges de nutriments entre le système circulatoire et le système digestif."
+      ],
+      "colonnes": [
+        "Étiquette 1",
+        "Étiquette 2",
+        "Étiquette 3",
+        "Étiquette 4",
+        "Étiquette 5"
+      ],
+      "reponse": [
+        0,
+        4
+      ],
+      "explication": "Les échanges gazeux (dioxygène, dioxyde de carbone) se font dans les poumons : étiquette 1. Les nutriments passent des intestins vers le sang : étiquette 5."
     },
     {
       "id": "ceb-2026-tc-l9-q3",
@@ -4053,6 +4703,38 @@
       "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
       "reponseModele": "Certains déchets transportés par le sang sont filtrés par les reins et évacués dans l'urine (les poumons, eux, n'évacuent que le dioxyde de carbone). Une réponse qui parle du système digestif est fausse."
+    },
+    {
+      "id": "ceb-2026-tc-l9-q4",
+      "livret": 9,
+      "numero": "4",
+      "domaine": "sc.vivant",
+      "type": "grille",
+      "enonce": "Observe le schéma des poumons du livret (page 5). Ses trois étiquettes vides sont numérotées de 1 à 3 (numérotation ajoutée sur le site). Pour chaque étiquette, choisis le mot qui convient.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "sc-corps-humain",
+      "documents": [
+        "liv9-p05"
+      ],
+      "lignes": [
+        "Étiquette 1",
+        "Étiquette 2",
+        "Étiquette 3"
+      ],
+      "colonnes": [
+        "Alvéoles",
+        "Bronche",
+        "Diaphragme",
+        "Œsophage",
+        "Trachée"
+      ],
+      "reponse": [
+        4,
+        1,
+        0
+      ],
+      "explication": "L'air passe par la trachée, qui se sépare en bronches ; celles-ci se ramifient jusqu'aux alvéoles, de minuscules sacs où se font les échanges gazeux."
     },
     {
       "id": "ceb-2026-tc-l9-q5",
@@ -4484,6 +5166,23 @@
       "explication": "On lit la hauteur des bâtonnets (5 s et 8 s) et les volumes écrits sous le graphique (400 ml et 2 800 ml)."
     },
     {
+      "id": "ceb-2026-tc-l9-q19b",
+      "livret": 9,
+      "numero": "19b",
+      "domaine": "sc.vivant",
+      "type": "ouverte",
+      "enonce": "Expérience 1 : sur le graphique des résultats, un bâtonnet n'a pas été tracé. Trace ce bâtonnet dans le graphique (durée de la combustion en fonction du volume du récipient).",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "sc-combustion",
+      "numerisable": false,
+      "documents": [
+        "bougies-1",
+        "bougies-2"
+      ],
+      "reponseModele": "Le bâtonnet manquant est celui du récipient 5 (1 900 ml) : sa hauteur est de 48 secondes (on accepte une hauteur de 4,7 cm à 4,9 cm sur le graphique du livret)."
+    },
+    {
       "id": "ceb-2026-tc-l9-q20",
       "livret": 9,
       "numero": "20",
@@ -4674,6 +5373,35 @@
       "reponseModele": "Deux idées qui expliquent le danger : elle risquait d'être repérée, arrêtée, de perdre la vie ; elle devait garder sa mission secrète (personne ne savait qu'elle était espionne, elle changeait souvent d'identité). Dire seulement que c'était difficile ou risqué ne suffit pas."
     },
     {
+      "id": "ceb-2026-tc-l10-q6",
+      "livret": 10,
+      "numero": "6",
+      "domaine": "fr.grammaire",
+      "type": "trous",
+      "enonce": "Écris la classe du mot souligné pour chacune des phrases suivantes : « Gabrielle Petit prend des risques. » et « Elle effectue de petits métiers domestiques. »",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "fr-classes-mots",
+      "texte": "« Petit » (Gabrielle Petit prend des risques.) : {1}  ·  « petits » (de petits métiers domestiques) : {2}",
+      "reponse": [
+        [
+          "nom propre",
+          "nom (propre)",
+          "un nom propre",
+          "nom"
+        ],
+        [
+          "adjectif",
+          "adjectif qualificatif",
+          "adjectif (qualificatif)",
+          "un adjectif",
+          "un adjectif qualificatif"
+        ]
+      ],
+      "souple": true,
+      "explication": "« Petit » dans « Gabrielle Petit » est un nom propre (on n'écrit pas « nom de famille » : ce n'est pas une classe de mots). « petits » accompagne le nom « métiers » : c'est un adjectif (qualificatif)."
+    },
+    {
       "id": "ceb-2026-tc-l10-q7",
       "livret": 10,
       "numero": "7",
@@ -4767,6 +5495,22 @@
       "reponseModele": "Une raison liée à l'imaginaire : une chenille et un millepatte ne parlent pas, ne vont pas au café ; un millepatte ne sait pas lire, ne s'essuie pas les pieds (il n'a pas de « pieds »)."
     },
     {
+      "id": "ceb-2026-tc-l10-q12",
+      "livret": 10,
+      "numero": "12",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Dans la BD, Nelson demande à Julie : « C'est quoi ta praline favorite ? » Dans quel but pose-t-il cette question ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "blagues"
+      ],
+      "reponseModele": "Toute idée liée au fait qu'il a l'intention de manger toutes les pralines sauf une. Exemples : « Afin de manger toutes les autres pralines. » ; « Pour laisser à Julie sa praline préférée et manger toutes les autres. » ; « Pour ne lui en laisser qu'une seule. » On n'accepte pas « Pour lui laisser sa praline préférée » seul (il n'est pas mentionné qu'il mange toutes les autres).",
+      "explication": "Nelson veut savoir quelle praline Julie préfère pour pouvoir manger toutes les autres."
+    },
+    {
       "id": "ceb-2026-tc-l10-q13",
       "livret": 10,
       "numero": "13",
@@ -4799,6 +5543,22 @@
       ],
       "souple": true,
       "explication": "« le » reprend « ce premier bulletin » (de Tom). Dans « Je le lui ai prêté », Tom parle de son ami : « lui » reprend « mon ami Colin »."
+    },
+    {
+      "id": "ceb-2026-tc-l10-q14",
+      "livret": 10,
+      "numero": "14",
+      "domaine": "fr.lire",
+      "type": "ouverte",
+      "enonce": "Dans la blague n° 1, pour quelle raison le père de Colin aurait-il peur ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "blagues"
+      ],
+      "reponseModele": "Toute idée liée au fait que les résultats du bulletin de Tom sont mauvais. Exemples : « Parce que le bulletin de Tom est catastrophique. » ; « Car il pensera que c'est Colin qui a eu de mauvaises notes alors que c'est Tom. » ; « Car le bulletin de Tom est mauvais et il l'a prêté à un copain pour faire croire à son père qu'il a de mauvaises notes. »",
+      "explication": "Tom a prêté son bulletin à Colin : le père de Colin croira que son fils a de très mauvaises notes."
     },
     {
       "id": "ceb-2026-tc-l10-q15a",
