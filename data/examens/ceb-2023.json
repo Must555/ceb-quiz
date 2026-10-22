@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2023",
  "source": "FWB, épreuve externe commune 2023 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2023-06-26",
    "points": 20,
    "audio": null,
-   "duree": 40
+   "duree": 40,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -318,9 +319,533 @@
    "titre": "Le Génie de la Machine à Écrire (3)",
    "fichier": "assets/2023/pdf35.webp",
    "alt": "Deuxième et troisième vœux ; Jules donne la machine à Cassie."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Un roi, pourquoi cela ? (conte de Joël Smets)",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Parmi les conteuses et les conteurs qui ont transmis les contes depuis qu’on a l’usage de la parole, il y a mon grand-père : Joseph. Joseph était conteur au pays de Herve, rien que pour le plaisir. Le pays de Herve, pays de collines, de prairies et de vergers. Vergers portant poires et pommes qu’on pressera et cuira en sirop. Prairies où broutent paisiblement les vaches dont le lait donnera un savoureux fromage. « Le meilleur des fromages ! », affirmait mon grand-père. Et mon grand-père avait l’habitude d’avoir raison. D’ailleurs, aujourd’hui encore, je suis bien d’accord avec lui, mais on ne va pas en faire un fromage…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ainsi donc, mon grand-père Joseph racontait souvent l’histoire que voici."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Au plus profond de la forêt s’épanouit un chêne majestueux, un arbre vigoureux avec ses racines bien plantées jusqu’au cœur de la terre, avec son tronc qui traverse le monde où nous vivons, avec ses branches qui s’élancent jusqu’à accrocher les nuages. Il est là, le chêne, comme un pont entre la terre et le ciel, comme un roi en son royaume. Quand tombent les pluies vivifiantes du printemps, chaque goutte murmure de bien belles paroles au chêne. Des paroles comme :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ô chêne, qu’il est doux et délicieux de glisser sur chacune de tes feuilles, de ruisseler le long de ton écorce, de nourrir la plus fine de tes racines. Tu es le plus bel arbre de la forêt !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Quand s’allongent les journées d’été, quand le soleil brulant est bien planté dans le ciel, il s’échange un dialogue d’amour…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Lumière, chaleur… chaleur, lumière… dit le soleil."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ombre, fraicheur… fraicheur, ombre… répond l’arbre."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Quand arrivent les tempêtes de l’automne arrachant les feuilles par paquets, le vent puissant de l’est tourbillonne. Il dit au chêne :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Ô chêne, moi qui souffle depuis la Chine lointaine, jamais je n’ai vu d’arbre plus beau que toi. Tu es le roi de la forêt, tu es le chêne-roi !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Alors, mettez-vous à la place de cet arbre qui entend de si belles paroles, de si beaux compliments. Il ne reste pas de bois, il croit en ces compliments, il se gonfle d’orgueil et proclame aux quatre horizons :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Je suis le roi de la forêt ! C’est moi le chêne-roi !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Un oiseau avec une drôle de petite huppe jaune or sur la tête, on dirait une couronne, est posé sur une branche au sommet de l’arbre. Il pépie :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Tsst tsst tsst… toi, gros balourd, tu te prends pour le roi… mais sais-tu t’envoler dans le vent comme je le fais, moi ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "À l’idée de s’envoler dans le vent, le chêne se souvient d’une autre histoire, l’histoire du chêne et du roseau, la célèbre fable de Jean de La Fontaine. Il se souvient comme il a été ridiculisé dans cette histoire et reconnait :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Tu es un oiseau vif et malin, tu es le petit roi des oiseaux, tu es le roitelet !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "À son tour, l’oiseau se gonfle d’orgueil, vole en tous sens en proclamant aux quatre horizons :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Place ! Place ! Je suis le petit roi des oiseaux, je suis le roitelet !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Dans son vol désordonné, le roitelet heurte une fleur à la couleur de crème vanille et au parfum de dessert. Celle-ci dit :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Tsst tsst tsst… toi, tu te prends pour le roi… mais sais-tu parfumer comme je le fais moi ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "L’oiseau regarde la fleur et lui déclare :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "C’est vrai, tu es une belle fleur. Tu es la reine, la reine des prés !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "À son tour, la fleur se gonfle d’orgueil. Se redressant sur sa tige, elle proclame aux quatre horizons :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "La reine, je suis la reine des prés !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Mais une drôle de petite voix cachée dans l’herbe coasse :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Tsst tsst tsst… moi, je suis verte comme le chêne et je sais chanter comme le roitelet !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Et, au bord de l’étang, tout le chœur des grenouilles de reprendre d’une seule voix :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "C’est vrai, tu es notre petite reine, la grenouille rainette…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pour conclure cette histoire, mon grand-père disait :"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Riche ou pauvre, grand ou petit, faible ou puissant, chacune et chacun de nous a ses qualités… il ne sert à rien de se prendre pour la reine, il ne sert à rien de se prendre pour le roi…"
+    }
+   ],
+   "source": "Correctif officiel CEB 2023, support du Savoir écouter"
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2023-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici quatre moments du conte. Remets-les dans l'ordre de leur apparition dans le conte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Les grenouilles proclament en chœur que la rainette est leur petite reine.",
+    "Le chêne se souvient qu'il a été ridiculisé dans une célèbre histoire de Jean de La Fontaine.",
+    "L'oiseau complimente la fleur et lui dit qu'elle est la reine des prés.",
+    "Les gouttes des pluies vivifiantes murmurent des compliments au chêne."
+   ],
+   "reponse": [
+    3,
+    1,
+    2,
+    0
+   ],
+   "explication": "Dans le conte : la pluie complimente le chêne, le chêne se souvient de la fable, l'oiseau complimente la fleur, et à la fin les grenouilles proclament leur petite reine."
+  },
+  {
+   "id": "ceb-2023-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Voici une phrase extraite du conte : « Il est là, le chêne, comme un pont entre la terre et le ciel […] ». Explique ce que cela signifie.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Le chêne est majestueux (grand), comme s'il reliait la terre au ciel. Ou : il est important, impressionnant, imposant, monumental. On accepte toute idée de grandeur, de force, de robustesse. Ce n'est pas bon : « il touche la terre et le ciel », « il va jusqu'au ciel » ou « il est le roi de la forêt ».",
+   "explication": "La comparaison avec un pont qui relie la terre et le ciel montre que le chêne est immense, fort et imposant."
+  },
+  {
+   "id": "ceb-2023-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quelle photo correspond à l'oiseau dont on parle dans l'histoire ? Il a une drôle de petite huppe jaune or sur la tête. (Quatre photos d'oiseaux dans le livret : en haut à gauche, en haut à droite, en bas à gauche, en bas à droite.)",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "La photo en haut à gauche",
+    "La photo en haut à droite",
+    "La photo en bas à gauche",
+    "La photo en bas à droite"
+   ],
+   "reponse": 1,
+   "explication": "Le roitelet est l'oiseau à la petite huppe jaune or, qui ressemble à une couronne.",
+   "numerisable": false,
+   "remarque": "Les photos du livret manquent : question pour la version papier."
+  },
+  {
+   "id": "ceb-2023-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Voici quatre personnages évoqués dans le conte : A la petite grenouille, B la petite fleur, C le petit oiseau, D le grand arbre. Pour chaque nom, indique le personnage qui lui correspond.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Le chêne-roi",
+    "La rainette",
+    "La reine des prés",
+    "Le roitelet"
+   ],
+   "colonnes": [
+    "A : la petite grenouille",
+    "B : la petite fleur",
+    "C : le petit oiseau",
+    "D : le grand arbre"
+   ],
+   "reponse": [
+    3,
+    0,
+    1,
+    2
+   ],
+   "explication": "Le chêne-roi est le grand arbre, la rainette la petite grenouille, la reine des prés la fleur, et le roitelet le petit oiseau."
+  },
+  {
+   "id": "ceb-2023-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quel est le trait de caractère commun à la grenouille, à la fleur, à l'oiseau et à l'arbre ? Ils sont tous les quatre…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "envieux.",
+    "têtus.",
+    "agressifs.",
+    "prétentieux."
+   ],
+   "reponse": 3,
+   "explication": "Tous se gonflent d'orgueil et se prennent pour un roi ou une reine : ils sont prétentieux."
+  },
+  {
+   "id": "ceb-2023-l1-q6a",
+   "livret": 1,
+   "numero": "6a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Dans ce conte, que sait faire la fleur que l'oiseau ne sait pas faire ? Écris un élément entendu.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "La fleur sait parfumer (ou diffuser une bonne odeur, sentir le parfum). Ce n'est pas bon : seulement « l'odeur ».",
+   "explication": "La fleur dit à l'oiseau : « mais sais-tu parfumer comme je le fais, moi ? »"
+  },
+  {
+   "id": "ceb-2023-l1-q6b",
+   "livret": 1,
+   "numero": "6b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Dans ce conte, que sait faire la grenouille que la fleur ne sait pas faire ? Écris un élément entendu.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "La grenouille sait chanter (comme le roitelet) ; on accepte aussi coasser. Ce n'est pas bon : sauter, bouger, nager, se déplacer, car ce n'est pas dit dans le conte.",
+   "explication": "La petite voix dans l'herbe dit : « je sais chanter comme le roitelet ! »"
+  },
+  {
+   "id": "ceb-2023-l1-q7a",
+   "livret": 1,
+   "numero": "7a",
+   "domaine": "fr.ecouter",
+   "type": "trous",
+   "enonce": "Qui prononce cette phrase du conte, et à qui s'adresse-t-il ? « Toi, gros balourd, tu te prends pour le roi… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "texte": "Le personnage qui parle est {1}. Il parle {2}.",
+   "souple": true,
+   "reponse": [
+    [
+     "l'oiseau",
+     "oiseau",
+     "le roitelet",
+     "roitelet",
+     "le petit oiseau",
+     "un oiseau"
+    ],
+    [
+     "au chêne",
+     "chêne",
+     "à l'arbre",
+     "arbre",
+     "au chêne-roi",
+     "le chêne",
+     "à un chêne",
+     "au grand arbre"
+    ]
+   ],
+   "explication": "C'est l'oiseau à la huppe jaune (le roitelet) qui se moque du chêne qui se prend pour le roi."
+  },
+  {
+   "id": "ceb-2023-l1-q7b",
+   "livret": 1,
+   "numero": "7b",
+   "domaine": "fr.ecouter",
+   "type": "trous",
+   "enonce": "Qui prononce cette phrase du conte, et à qui s'adresse-t-il ? « Tu es la reine, la reine des prés ! »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "texte": "Le personnage qui parle est {1}. Il parle {2}.",
+   "souple": true,
+   "reponse": [
+    [
+     "l'oiseau",
+     "oiseau",
+     "le roitelet",
+     "roitelet",
+     "le petit oiseau",
+     "un oiseau"
+    ],
+    [
+     "à la fleur",
+     "la fleur",
+     "fleur",
+     "à la reine des prés",
+     "la reine des prés",
+     "reine des prés",
+     "à la petite fleur"
+    ]
+   ],
+   "explication": "C'est l'oiseau qui complimente la fleur et la nomme reine des prés."
+  },
+  {
+   "id": "ceb-2023-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Chacun à leur tour, des personnages se gonflent d'orgueil. Cela veut dire que ces personnages…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "grossissent à vue d'œil.",
+    "se sentent fiers et supérieurs.",
+    "s'expriment avec émotion.",
+    "font des compliments aux autres."
+   ],
+   "reponse": 1,
+   "explication": "« Se gonfler d'orgueil » veut dire devenir très fier de soi, se croire supérieur aux autres."
+  },
+  {
+   "id": "ceb-2023-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Après avoir entendu la conclusion de ce conte, on peut dire que…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "celui qui est admiré des autres devrait se prendre pour un roi ou pour une reine.",
+    "chacun a des qualités qui lui permettent de se croire supérieur aux autres.",
+    "tout le monde devrait se prendre pour un roi ou pour une reine.",
+    "personne ne devrait se prendre pour un roi ou pour une reine."
+   ],
+   "reponse": 3,
+   "explication": "Le grand-père conclut qu'il ne sert à rien de se prendre pour la reine ou pour le roi : chacun a ses qualités, mais personne n'est supérieur."
+  },
+  {
+   "id": "ceb-2023-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Le texte que tu as entendu permet-il de dire que c'est vrai ou faux ?",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Le conte que tu as entendu a déjà été souvent raconté.",
+    "Les quatre saisons sont citées dans ce conte.",
+    "Le chêne se souvient d'une histoire où l'on s'est moqué de lui."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Joseph racontait souvent cette histoire. On entend le printemps, l'été et l'automne, mais pas l'hiver. Le chêne se souvient de la fable où il a été ridiculisé."
+  },
+  {
+   "id": "ceb-2023-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "L'écoute de ce conte permet de…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "se distraire avec une histoire poétique.",
+    "s'informer sur la vie du conteur Joseph.",
+    "comprendre comment on devient roi ou reine.",
+    "découvrir l'histoire du chêne et du roseau."
+   ],
+   "reponse": 0,
+   "explication": "C'est un conte poétique et plaisant, qui fait aussi réfléchir : il sert d'abord à se distraire."
+  },
+  {
+   "id": "ceb-2023-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux spécialités du pays de Herve citées dans l'introduction du conte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Le fromage",
+    "La charcuterie",
+    "La bière",
+    "Le sirop",
+    "La confiture"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "L'introduction parle du fromage et du sirop (de poires et de pommes) du pays de Herve."
+  },
+  {
+   "id": "ceb-2023-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Voici un extrait du conte : « Il ne reste pas de bois, il croit en ces compliments, il se gonfle d'orgueil et proclame aux quatre horizons : « Je suis le roi de la forêt ! C'est moi le chêne-roi ! » » Dans cet extrait, que signifie l'expression « Il ne reste pas de bois » ? Cela signifie que le chêne…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-expressions",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "est énervé par les compliments qu'il entend.",
+    "est sensible aux compliments qu'il entend.",
+    "est indifférent aux compliments qu'il entend.",
+    "est contrarié par les compliments qu'il entend."
+   ],
+   "reponse": 1,
+   "explication": "« Ne pas rester de bois » veut dire se laisser toucher : le chêne est sensible aux compliments, il les croit et se gonfle d'orgueil."
+  },
+  {
+   "id": "ceb-2023-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque résumé, indique s'il correspond au conte que tu viens d'entendre. Premier résumé : « Dans ce conte, l'auteur parle d'un chêne, d'un oiseau, d'une fleur, d'une grenouille. Toutes et tous se prennent pour un roi, se prennent pour une reine ce qui est inutile car chacun a ses qualités. » Deuxième résumé : « Dans ce conte, l'auteur parle d'un chêne, d'un oiseau, d'une fleur, d'une grenouille. Certains se prennent pour un roi ou pour une reine, d'autres pas car c'est inutile. En effet, chacun a ses qualités. » Troisième résumé : « Dans la vie, chacun a ses qualités et il est inutile de se prendre pour un roi ou pour une reine. C'est ce que ce conte tente d'expliquer en racontant l'histoire d'un chêne, d'un oiseau, d'une fleur et d'une grenouille. »",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Premier résumé",
+    "Deuxième résumé",
+    "Troisième résumé"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Les quatre personnages se prennent tous pour un roi ou une reine (le deuxième résumé est faux). Les premier et troisième résument bien le conte."
+  },
   {
    "id": "ceb-2023-l2-q1",
    "livret": 2,
