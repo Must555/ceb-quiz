@@ -205,6 +205,10 @@ test('correction : cas particuliers', () => {
   const grilleMulti = { type: 'grille', reponse: [3, [1, 2, 3, 4], [0, 1, 2, 3]], points: 3 };
   assert.equal(corriger(grilleMulti, [3, 4, 0]).score, 3);
   assert.deepEqual([corriger(grilleMulti, [3, 0, 4]).score, corriger(grilleMulti, [3, 0, 4]).correct], [1, false]);
+  // Grille « deux propositions différentes » : la même colonne sur deux lignes ne compte qu'une fois (CEB 2017, L1 Q3).
+  const grilleDiff = { type: 'grille', differentes: true, reponse: [[2, 3, 5], [3, 2, 5]], points: 2 };
+  assert.equal(corriger(grilleDiff, [2, 5]).score, 2);
+  assert.deepEqual([corriger(grilleDiff, [2, 2]).score, corriger(grilleDiff, [2, 2]).correct], [1, false]);
   const ordre = { type: 'ordre', reponse: [0, 1, 2] };
   assert.equal(corriger(ordre, [undefined, null, '']).score, 0);
 });

@@ -90,7 +90,15 @@ export function corriger(question, reponseEleve) {
     case 'grille': {
       // reponse = index de colonne attendu pour chaque ligne, ou liste des colonnes acceptées
       // (le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne).
-      const bons = question.reponse.filter((col, i) => estRempli(reponseEleve[i]) && [].concat(col).includes(Number(reponseEleve[i]))).length;
+      // differentes : true → une même colonne choisie sur deux lignes ne compte qu'une fois.
+      const vus = new Set();
+      const bons = question.reponse.filter((col, i) => {
+        const ok = estRempli(reponseEleve[i]) && [].concat(col).includes(Number(reponseEleve[i]));
+        if (!ok || !question.differentes) return ok;
+        if (vus.has(Number(reponseEleve[i]))) return false;
+        vus.add(Number(reponseEleve[i]));
+        return true;
+      }).length;
       return partiel(bons, question.reponse.length, max);
     }
     case 'ordre': {

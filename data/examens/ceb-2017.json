@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2017",
  "source": "FWB, épreuve externe commune 2017 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui demandent un tracé, un coloriage, un découpage ou de placer des éléments sur une ligne du temps ou une carte sont gardées en mode papier. Les figures du livret (photos, schémas, tableaux, graphiques) sont jointes en images (pages du livret) pour jouer les autres à l'écran ; quand il faut choisir parmi plusieurs figures, elles portent des repères numérotés.",
  "livrets": [
   {
    "n": 1,
@@ -249,6 +249,294 @@
    "titre": "Le juge interroge un rocher (3)",
    "fichier": "assets/2017/pdf26.webp",
    "alt": "Le sac est retrouvé ; le juge partage une anguille avec l'enfant. Contes chinois, L'école des loisirs, 2002."
+  },
+  {
+   "id": "liv1-p04",
+   "source": "livret",
+   "livret": 1,
+   "page": 4,
+   "titre": "Photos de la maison de Victor Horta",
+   "fichier": "assets/2017/liv1-p04.webp",
+   "alt": "Trois photos de la maison de Victor Horta, puis un extrait de texte dont six groupes de mots sont encadrés."
+  },
+  {
+   "id": "liv1-p05",
+   "source": "livret",
+   "livret": 1,
+   "page": 5,
+   "titre": "Un extrait sur la réputation de la Belgique",
+   "fichier": "assets/2017/liv1-p05.webp",
+   "alt": "Un court extrait de texte encadré sur la réputation de la Belgique."
+  },
+  {
+   "id": "liv3-p03",
+   "source": "livret",
+   "livret": 3,
+   "page": 3,
+   "titre": "Un cube, une pyramide et un tétraèdre",
+   "fichier": "assets/2017/liv3-p03.webp",
+   "alt": "Un tableau à compléter avec trois polyèdres dessinés : un cube, une pyramide à base carrée et un tétraèdre ; un sommet est entouré sur chaque dessin."
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Un développement et quatre parallélépipèdes",
+   "fichier": "assets/2017/liv3-p04.webp",
+   "alt": "Le développement d'un parallélépipède rectangle dont les faces ont des motifs différents, et quatre parallélépipèdes numérotés de 1 à 4."
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Deux cubes coupés en deux",
+   "fichier": "assets/2017/liv3-p05.webp",
+   "alt": "Deux cubes coupés par un plan, avec quatre propositions écrites sous chacun."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Un diagramme en arbre à compléter",
+   "fichier": "assets/2017/liv3-p06.webp",
+   "alt": "Cinq étiquettes de critères, puis un diagramme en arbre de figures géométriques avec deux cadres vides numérotés 1 et 2."
+  },
+  {
+   "id": "liv3-p07",
+   "source": "livret",
+   "livret": 3,
+   "page": 7,
+   "titre": "Quatre figures sur un quadrillage",
+   "fichier": "assets/2017/liv3-p07.webp",
+   "alt": "Quatre figures A, B, C et D dessinées sur un quadrillage, et un tableau à compléter."
+  },
+  {
+   "id": "liv3-p09",
+   "source": "livret",
+   "livret": 3,
+   "page": 9,
+   "titre": "Quatre constructions",
+   "fichier": "assets/2017/liv3-p09.webp",
+   "alt": "Un énoncé de construction et quatre constructions numérotées de 1 à 4."
+  },
+  {
+   "id": "liv4-p06",
+   "source": "livret",
+   "livret": 4,
+   "page": 6,
+   "titre": "Recouvrir une surface ; quatre représentations",
+   "fichier": "assets/2017/liv4-p06.webp",
+   "alt": "Deux formes rectangulaires grises, puis quatre grilles de petits carrés noirs, gris et blancs numérotées de 1 à 4."
+  },
+  {
+   "id": "liv4-p07",
+   "source": "livret",
+   "livret": 4,
+   "page": 7,
+   "titre": "Un parallélépipède rectangle et ses dimensions",
+   "fichier": "assets/2017/liv4-p07.webp",
+   "alt": "Un parallélépipède rectangle dont les sommets sont nommés par des lettres, avec trois dimensions indiquées."
+  },
+  {
+   "id": "liv4-p08",
+   "source": "livret",
+   "livret": 4,
+   "page": 8,
+   "titre": "Un terrain en bordure de rue",
+   "fichier": "assets/2017/liv4-p08.webp",
+   "alt": "Le plan d'un terrain dessiné le long de la rue du Bonivent, avec plusieurs longueurs indiquées en mètres."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "Un cercle dans un carré",
+   "fichier": "assets/2017/liv4-p09.webp",
+   "alt": "Un carré dans lequel est dessiné un cercle de 8 cm de diamètre ; une partie est grisée dans un coin."
+  },
+  {
+   "id": "liv4-p10",
+   "source": "livret",
+   "livret": 4,
+   "page": 10,
+   "titre": "Un hexagone partagé en quatre parties",
+   "fichier": "assets/2017/liv4-p10.webp",
+   "alt": "Un hexagone partagé en quatre parties nommées A, B, C et D."
+  },
+  {
+   "id": "liv4-p12",
+   "source": "livret",
+   "livret": 4,
+   "page": 12,
+   "titre": "La recette d'une boisson et quatre éprouvettes",
+   "fichier": "assets/2017/liv4-p12.webp",
+   "alt": "La recette d'une boisson (quatre ingrédients et leurs quantités) et quatre éprouvettes graduées, avec une étiquette vide numérotée de 1 à 4 sous chacune."
+  },
+  {
+   "id": "liv4-p15",
+   "source": "livret",
+   "livret": 4,
+   "page": 15,
+   "titre": "Quatre pesées",
+   "fichier": "assets/2017/liv4-p15.webp",
+   "alt": "Quatre balances à plateaux portant chacune deux masses nommées parmi A, B, C et D."
+  },
+  {
+   "id": "liv4-p16",
+   "source": "livret",
+   "livret": 4,
+   "page": 16,
+   "titre": "Le prix des classeurs",
+   "fichier": "assets/2017/liv4-p16.webp",
+   "alt": "Un graphique : le prix en euros selon le nombre de classeurs, de 0 à 10 classeurs."
+  },
+  {
+   "id": "liv4-p17",
+   "source": "livret",
+   "livret": 4,
+   "page": 17,
+   "titre": "Un tableau à compléter",
+   "fichier": "assets/2017/liv4-p17.webp",
+   "alt": "Un tableau à compléter avec le nombre de classeurs et le prix à payer."
+  },
+  {
+   "id": "liv5-p12",
+   "source": "livret",
+   "livret": 5,
+   "page": 12,
+   "titre": "Des photos et des dessins de vallées",
+   "fichier": "assets/2017/liv5-p12.webp",
+   "alt": "Trois photos numérotées de 1 à 3 et trois dessins de vallées nommés A, B et C."
+  },
+  {
+   "id": "liv6-p09",
+   "source": "livret",
+   "livret": 6,
+   "page": 9,
+   "titre": "Une phrase et quatre lignes du temps",
+   "fichier": "assets/2017/liv6-p09.webp",
+   "alt": "Une phrase dont trois passages sont repérés par les lettres A, B et C, puis quatre lignes du temps numérotées de 1 à 4."
+  },
+  {
+   "id": "liv7-p03",
+   "source": "livret",
+   "livret": 7,
+   "page": 3,
+   "titre": "Un tableau et quatre situations de linge",
+   "fichier": "assets/2017/liv7-p03.webp",
+   "alt": "Un tableau à compléter, puis quatre dessins numérotés de 1 à 4 montrant du linge sur un fil."
+  },
+  {
+   "id": "liv7-p06",
+   "source": "livret",
+   "livret": 7,
+   "page": 6,
+   "titre": "L'ébullition de l'eau",
+   "fichier": "assets/2017/liv7-p06.webp",
+   "alt": "Deux photos d'une casserole sur un feu avec un thermomètre et un chronomètre, et un graphique de la température de l'eau selon la durée."
+  },
+  {
+   "id": "liv7-p08",
+   "source": "livret",
+   "livret": 7,
+   "page": 8,
+   "titre": "Le schéma d'une chaine alimentaire",
+   "fichier": "assets/2017/liv7-p08.webp",
+   "alt": "Un schéma de sept êtres vivants reliés par des flèches « est mangé par », et un tableau à compléter avec un exemple."
+  },
+  {
+   "id": "liv7-p11",
+   "source": "livret",
+   "livret": 7,
+   "page": 11,
+   "titre": "Un tableau et deux photos",
+   "fichier": "assets/2017/liv7-p11.webp",
+   "alt": "Un tableau à compléter, puis deux photos numérotées 1 et 2, chacune avec une ligne pour écrire."
+  },
+  {
+   "id": "liv7-p17",
+   "source": "livret",
+   "livret": 7,
+   "page": 17,
+   "titre": "La clé des plantes vertes",
+   "fichier": "assets/2017/liv7-p17.webp",
+   "alt": "Un schéma d'ensembles emboités avec cinq étiquettes vides numérotées de 1 à 5."
+  },
+  {
+   "id": "liv7-p18",
+   "source": "livret",
+   "livret": 7,
+   "page": 18,
+   "titre": "Quatre montages électriques",
+   "fichier": "assets/2017/liv7-p18.webp",
+   "alt": "Quatre photos numérotées de 1 à 4 de montages électriques avec une pile, une ampoule et un objet intégré au circuit."
+  },
+  {
+   "id": "liv7-p19",
+   "source": "livret",
+   "livret": 7,
+   "page": 19,
+   "titre": "Le tri des montages",
+   "fichier": "assets/2017/liv7-p19.webp",
+   "alt": "Un tri à compléter avec quatre étiquettes vides repérées par les lettres A à D."
+  },
+  {
+   "id": "liv7-p20",
+   "source": "livret",
+   "livret": 7,
+   "page": 20,
+   "titre": "Situations dangereuses (1)",
+   "fichier": "assets/2017/liv7-p20.webp",
+   "alt": "Un énoncé et deux dessins numérotés 1 et 2."
+  },
+  {
+   "id": "liv7-p21",
+   "source": "livret",
+   "livret": 7,
+   "page": 21,
+   "titre": "Situations dangereuses (2)",
+   "fichier": "assets/2017/liv7-p21.webp",
+   "alt": "Quatre dessins numérotés de 3 à 6."
+  },
+  {
+   "id": "liv8-p07",
+   "source": "livret",
+   "livret": 8,
+   "page": 7,
+   "titre": "Des comptages et une droite graduée",
+   "fichier": "assets/2017/liv8-p07.webp",
+   "alt": "Des exercices sur les nombres, dont une droite graduée avec quatre cases vides numérotées de 1 à 4."
+  },
+  {
+   "id": "liv8-p08",
+   "source": "livret",
+   "livret": 8,
+   "page": 8,
+   "titre": "Un arbre de décomposition",
+   "fichier": "assets/2017/liv8-p08.webp",
+   "alt": "Un arbre de cases reliées par des pointillés, avec 0,75 en haut, et quatre cases vides repérées par des numéros de 1 à 4."
+  },
+  {
+   "id": "liv8-p09",
+   "source": "livret",
+   "livret": 8,
+   "page": 9,
+   "titre": "Des nombres dans un diagramme",
+   "fichier": "assets/2017/liv8-p09.webp",
+   "alt": "Un cadre contenant deux cercles qui se coupent, « Multiples de 5 » et « Multiples de 8 », avec des nombres placés, et quatre zones repérées par les lettres A à D."
+  },
+  {
+   "id": "liv8-p13",
+   "source": "livret",
+   "livret": 8,
+   "page": 13,
+   "titre": "Des points noirs cachés par un nuage",
+   "fichier": "assets/2017/liv8-p13.webp",
+   "alt": "Un cadre rempli de points noirs régulièrement espacés, en partie cachés par un nuage gris."
   },
   {
    "id": "ecoute",
@@ -660,7 +948,7 @@
    "domaine": "fr.lire",
    "type": "grille",
    "enonce": "Sous quel intertitre placer chaque phrase ?",
-   "points": 3,
+   "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
@@ -763,22 +1051,72 @@
    "livret": 1,
    "numero": "3",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Colorie les deux propositions qui prouvent que la maison est Art nouveau.",
+   "type": "grille",
+   "enonce": "Voici des photos de la maison de Victor Horta (livret, page 4). Cette maison est de style Art nouveau. Dans l'extrait du livret, choisis deux propositions encadrées différentes qui te prouvent que cette maison est de style Art nouveau.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "liv1-p04"
+   ],
+   "lignes": [
+    "Première proposition",
+    "Deuxième proposition"
+   ],
+   "colonnes": [
+    "des bâtiments agréables à regarder",
+    "Les architectes Art nouveau",
+    "de grandes fenêtres en façade",
+    "une verrière sur le toit",
+    "la lumière",
+    "des lignes courbes qui rappellent la végétation"
+   ],
+   "reponse": [
+    [
+     2,
+     3,
+     5
+    ],
+    [
+     3,
+     2,
+     5
+    ]
+   ],
+   "explication": "Le texte cite trois éléments propres à l'Art nouveau : de grandes fenêtres en façade, une verrière sur le toit et des lignes courbes. Deux au choix suffisent.",
+   "differentes": true
   },
   {
    "id": "ceb-2017-l1-q6",
    "livret": 1,
    "numero": "6",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Souligne ce qui contribue à la réputation de la Belgique.",
-   "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm_multi",
+   "enonce": "Souligne dans cet extrait (livret, page 5) ce qui contribue à créer la réputation de la Belgique.",
+   "points": 5,
+   "corrigeVerifie": true,
+   "fiche": "fr-groupe-nominal",
+   "documents": [
+    "liv1-p05"
+   ],
+   "choix": [
+    "L'Art nouveau",
+    "la bande dessinée",
+    "le surréalisme",
+    "notre pays",
+    "ses frontières",
+    "le cinéma",
+    "la littérature",
+    "la Belgique"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    5,
+    6
+   ],
+   "explication": "Ce qui contribue à la réputation de la Belgique : l'Art nouveau, la bande dessinée, le surréalisme, le cinéma et la littérature. « Notre pays », « ses frontières » et « la Belgique » ne sont pas ce qui crée la réputation."
   },
   {
    "id": "ceb-2017-l1-q12",
@@ -850,7 +1188,10 @@
      "6"
     ]
    ],
-   "explication": "Cube 6-8-12 ; pyramide carrée 5-5-8 ; tétraèdre 4-4-6."
+   "explication": "Cube 6-8-12 ; pyramide carrée 5-5-8 ; tétraèdre 4-4-6.",
+   "documents": [
+    "liv3-p03"
+   ]
   },
   {
    "id": "ceb-2017-l3-q13a",
@@ -893,55 +1234,144 @@
    "livret": 3,
    "numero": "3b",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Faces attachées au sommet entouré.",
-   "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Observe ces polyèdres (livret, page 3) : un sommet est entouré sur chaque dessin. Complète la dernière ligne du tableau : combien de faces s'attachent au sommet entouré ?",
+   "points": 0,
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p03"
+   ],
+   "texte": "Cube : {1} faces  ·  Pyramide à base carrée : {2} faces  ·  Tétraèdre : {3} faces",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "4"
+    ],
+    [
+     "3"
+    ]
+   ],
+   "souple": true,
+   "explication": "Au sommet entouré : 3 faces pour le cube, 4 pour la pyramide à base carrée, 3 pour le tétraèdre. Cette ligne n'a pas de point propre au corrigé officiel (elle compte dans les colonnes du tableau)."
   },
   {
    "id": "ceb-2017-l3-q4",
    "livret": 3,
    "numero": "4",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le parallélépipède du développement.",
-   "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm",
+   "enonce": "Voici le développement d'un parallélépipède rectangle (livret, page 4). Parmi les quatre parallélépipèdes numérotés de 1 à 4, lequel correspond à ce développement ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-developpements",
+   "documents": [
+    "liv3-p04"
+   ],
+   "choix": [
+    "Parallélépipède 1",
+    "Parallélépipède 2",
+    "Parallélépipède 3",
+    "Parallélépipède 4"
+   ],
+   "reponse": 1,
+   "explication": "C'est le parallélépipède 2 : en pliant le développement, on retrouve les motifs de ses faces."
   },
   {
    "id": "ceb-2017-l3-q5",
    "livret": 3,
    "numero": "5",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Coupe d'un cube : que obtient-on ?",
+   "type": "grille",
+   "enonce": "On coupe un cube en deux comme sur chacun des deux dessins (livret, page 5). Pour chaque coupe, choisis ce qu'on obtient.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p05"
+   ],
+   "lignes": [
+    "Coupe a)",
+    "Coupe b)"
+   ],
+   "colonnes": [
+    "deux pyramides à base carrée",
+    "deux parallélépipèdes rectangles",
+    "deux prismes à base triangulaire",
+    "deux cubes"
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Une coupe parallèle à une face donne deux parallélépipèdes rectangles ; une coupe qui passe par deux arêtes opposées donne deux prismes à base triangulaire."
   },
   {
    "id": "ceb-2017-l3-q6",
    "livret": 3,
    "numero": "6",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Critères du diagramme en arbre.",
+   "type": "grille",
+   "enonce": "Dans le diagramme en arbre (livret, page 6), on a classé des figures géométriques selon deux critères. Quels sont ces critères ? Complète les deux cadres numérotés 1 et 2 en choisissant parmi les étiquettes.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-representations",
+   "documents": [
+    "liv3-p06"
+   ],
+   "lignes": [
+    "Cadre 1",
+    "Cadre 2"
+   ],
+   "colonnes": [
+    "Figures qui sont des polygones réguliers",
+    "Figures qui sont des quadrilatères",
+    "Figures dont tous les angles sont droits",
+    "Figures qui sont des triangles",
+    "Figures qui ont au moins un angle droit"
+   ],
+   "reponse": [
+    1,
+    4
+   ],
+   "explication": "Cadre 1 : « Figures qui sont des quadrilatères » (carré, rectangle, trapèzes). Cadre 2 : « Figures qui ont au moins un angle droit »."
   },
   {
    "id": "ceb-2017-l3-q7",
    "livret": 3,
    "numero": "7",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nombre d'axes de symétrie des figures.",
+   "type": "grille",
+   "enonce": "Combien d'axe(s) de symétrie chaque figure possède-t-elle (livret, page 7) ?",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p07"
+   ],
+   "lignes": [
+    "Figure A",
+    "Figure B",
+    "Figure C",
+    "Figure D"
+   ],
+   "colonnes": [
+    "0 axe",
+    "1 axe",
+    "2 axes",
+    "3 axes",
+    "4 axes",
+    "une infinité d'axes"
+   ],
+   "reponse": [
+    1,
+    0,
+    2,
+    5
+   ],
+   "explication": "A (triangle rectangle isocèle) : 1 axe ; B (parallélogramme) : 0 ; C (hexagone) : 2 ; D (disque) : une infinité."
   },
   {
    "id": "ceb-2017-l3-q8",
@@ -950,7 +1380,7 @@
    "domaine": "ma.geometrie",
    "type": "ouverte",
    "enonce": "Agrandis la figure.",
-   "points": 1,
+   "points": 2,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -959,11 +1389,22 @@
    "livret": 3,
    "numero": "9",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure la construction qui correspond à l'énoncé.",
-   "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "qcm",
+   "enonce": "Observe l'énoncé et les quatre constructions numérotées de 1 à 4 (livret, page 9). Quelle construction correspond à l'énoncé ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-symboles-geo",
+   "documents": [
+    "liv3-p09"
+   ],
+   "choix": [
+    "Construction 1",
+    "Construction 2",
+    "Construction 3",
+    "Construction 4"
+   ],
+   "reponse": 1,
+   "explication": "C'est la construction 2 : AC = BC, la droite d passe par C perpendiculairement à [AB] et la droite e, parallèle à d, passe par B."
   },
   {
    "id": "ceb-2017-l3-q10",
@@ -1337,66 +1778,162 @@
    "livret": 4,
    "numero": "6",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Combien de fois utiliser l'autre forme ?",
+   "type": "numerique",
+   "enonce": "Pour recouvrir une surface, on a utilisé 21 fois la première forme du livret (page 6). Pour recouvrir la même surface, combien de fois faudrait-il utiliser la deuxième forme ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p06"
+   ],
+   "reponse": 7,
+   "unite": "fois",
+   "explication": "La deuxième forme couvre trois fois plus que la première : 21 : 3 = 7 fois."
   },
   {
    "id": "ceb-2017-l4-q7",
    "livret": 4,
    "numero": "7",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Représentation des sports choisis.",
+   "type": "qcm",
+   "enonce": "Pour organiser une journée sportive, on a demandé aux 24 élèves d'une classe de choisir un sport : pour 1/4 des élèves, ce sera la natation ; pour 2/3 des élèves, le football ; pour les autres élèves, l'athlétisme. Parmi les quatre représentations numérotées de 1 à 4 (livret, page 6), laquelle correspond à cette situation ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p06"
+   ],
+   "choix": [
+    "Représentation 1",
+    "Représentation 2",
+    "Représentation 3",
+    "Représentation 4"
+   ],
+   "reponse": 1,
+   "explication": "1/4 de 24 = 6 élèves (natation), 2/3 de 24 = 16 élèves (football) et il reste 2 élèves pour l'athlétisme : c'est la représentation 2."
   },
   {
    "id": "ceb-2017-l4-q8ab",
    "livret": 4,
    "numero": "8ab",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Périmètre et aire des faces.",
+   "type": "trous",
+   "enonce": "Voici un parallélépipède rectangle et ses dimensions (livret, page 7). Calcule le périmètre de la face ABCD et l'aire de la face CBEF.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv4-p07"
+   ],
+   "texte": "Le périmètre de la face ABCD mesure : {1}\nL'aire de la face CBEF mesure : {2}",
+   "reponse": [
+    [
+     "220 cm",
+     "220cm",
+     "22 dm",
+     "22dm",
+     "2,2 m",
+     "2.2 m",
+     "2,2m",
+     "2.2m"
+    ],
+    [
+     "1200 cm²",
+     "1200 cm2",
+     "1200cm²",
+     "1200cm2",
+     "1 200 cm²",
+     "1 200 cm2",
+     "12 dm²",
+     "12 dm2",
+     "12dm²",
+     "12dm2",
+     "0,12 m²",
+     "0,12 m2",
+     "0.12 m²",
+     "0.12 m2"
+    ]
+   ],
+   "souple": true,
+   "explication": "Face ABCD : 80 cm sur 30 cm, périmètre 2 × (80 + 30) = 220 cm (ou 22 dm). Face CBEF : 30 cm sur 40 cm, aire 30 × 40 = 1 200 cm². Il faut écrire le nombre et l'unité."
   },
   {
    "id": "ceb-2017-l4-q9",
    "livret": 4,
    "numero": "9",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Prix du terrain à 70 € le m².",
+   "type": "numerique",
+   "enonce": "Le terrain représenté dans le livret (page 8) est vendu à 70 € le m². Quel est son prix ?",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-formules",
+   "documents": [
+    "liv4-p08"
+   ],
+   "reponse": 87500,
+   "unite": "€",
+   "explication": "Aire du terrain : base 25 m × hauteur 50 m = 1 250 m². Prix : 1 250 × 70 = 87 500 €."
   },
   {
    "id": "ceb-2017-l4-q10",
    "livret": 4,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aire de la partie grisée.",
+   "type": "numerique",
+   "enonce": "Calcule l'aire de la partie grisée (livret, page 9).",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-cercle",
+   "documents": [
+    "liv4-p09"
+   ],
+   "reponse": 3.44,
+   "tolerance": 0.011,
+   "unite": "cm²",
+   "explication": "Le carré a 8 cm de côté : (8 × 8 − 3,14 × 4 × 4) : 4 = (64 − 50,24) : 4 = 3,44 cm². Avec π = 3,1416 on trouve 3,43 cm², accepté aussi."
   },
   {
    "id": "ceb-2017-l4-q11",
    "livret": 4,
    "numero": "11",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Fractions de l'hexagone.",
+   "type": "trous",
+   "enonce": "Observe l'hexagone partagé en quatre parties A, B, C et D (livret, page 10). Complète par une fraction.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p10"
+   ],
+   "texte": "L'aire de A représente {1} de l'aire de l'hexagone.\nL'aire de B représente {2} de l'aire de l'hexagone.\nL'aire de C représente {3} de l'aire de l'hexagone.\nL'aire de D représente {4} de l'aire de l'hexagone.",
+   "reponse": [
+    [
+     "1/2",
+     "2/4",
+     "3/6",
+     "4/8",
+     "6/12"
+    ],
+    [
+     "1/12",
+     "2/24",
+     "3/36"
+    ],
+    [
+     "1/4",
+     "2/8",
+     "3/12",
+     "6/24"
+    ],
+    [
+     "1/6",
+     "2/12",
+     "3/18",
+     "4/24"
+    ]
+   ],
+   "souple": true,
+   "explication": "A = 1/2 ; B = 1/12 ; C = 1/4 ; D = 1/6 (ou des fractions équivalentes)."
   },
   {
    "id": "ceb-2017-l4-q12",
@@ -1425,33 +1962,117 @@
    "livret": 4,
    "numero": "14a",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Éprouvettes : ingrédients.",
-   "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "grille",
+   "enonce": "Pour réaliser cette boisson (recette du livret, page 12), on verse d'abord chaque ingrédient dans une éprouvette. Pour chaque éprouvette (étiquette numérotée de 1 à 4), choisis l'ingrédient qui correspond à la quantité proposée.",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p12"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4"
+   ],
+   "colonnes": [
+    "eau gazeuse",
+    "jus d'orange",
+    "jus de raisin",
+    "sirop de grenadine"
+   ],
+   "reponse": [
+    3,
+    0,
+    2,
+    1
+   ],
+   "explication": "Éprouvette 1 : sirop de grenadine (1/20 l) ; 2 : eau gazeuse (3/5 l) ; 3 : jus de raisin (3/10 l) ; 4 : jus d'orange (1/4 l)."
   },
   {
    "id": "ceb-2017-l4-q17",
    "livret": 4,
    "numero": "17",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Classe les masses sur les balances.",
+   "type": "ordre",
+   "enonce": "Observe les quatre pesées (livret, page 15). Classe les masses A, B, C, D de la plus légère à la plus lourde.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-logique",
+   "documents": [
+    "liv4-p15"
+   ],
+   "elements": [
+    "Masse A",
+    "Masse B",
+    "Masse C",
+    "Masse D"
+   ],
+   "reponse": [
+    3,
+    2,
+    0,
+    1
+   ],
+   "explication": "D < C < A < B."
   },
   {
    "id": "ceb-2017-l4-q18",
    "livret": 4,
    "numero": "18",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Graphique des classeurs.",
-   "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Observe le graphique du prix des classeurs (livret, page 16) et réponds.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "ma-proportionnalite",
+   "documents": [
+    "liv4-p16"
+   ],
+   "texte": "J'achète 3 classeurs, je paie {1} euros.\nJ'ai payé 12 euros, j'ai acheté {2} classeur(s).",
+   "reponse": [
+    [
+     "9"
+    ],
+    [
+     "4"
+    ]
+   ],
+   "souple": true,
+   "explication": "Un classeur coute 3 euros : 3 classeurs coutent 9 euros et 12 euros achètent 4 classeurs."
+  },
+  {
+   "id": "ceb-2017-l4-q18b",
+   "livret": 4,
+   "numero": "18b",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Complète le tableau en te servant du graphique (livret, pages 16 et 17).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-proportionnalite",
+   "documents": [
+    "liv4-p16",
+    "liv4-p17"
+   ],
+   "texte": "Pour 1 classeur, le prix à payer est de {1} euros.\nPour un prix à payer de 15 euros, on achète {2} classeurs.\nPour 13 classeurs, le prix à payer est de {3} euros.\nPour un prix à payer de 63 euros, on achète {4} classeurs.",
+   "reponse": [
+    [
+     "3"
+    ],
+    [
+     "5"
+    ],
+    [
+     "39"
+    ],
+    [
+     "21"
+    ]
+   ],
+   "souple": true,
+   "explication": "1 classeur : 3 euros ; 15 euros : 5 classeurs ; 13 classeurs : 39 euros ; 63 euros : 21 classeurs (13 et 63 sortent du graphique, qui s'arrête à 10 classeurs)."
   },
   {
    "id": "ceb-2017-l5-q1a",
@@ -2048,11 +2669,30 @@
    "livret": 5,
    "numero": "7",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Associe photos et dessins de vallées.",
+   "type": "grille",
+   "enonce": "Voici des photos et des dessins de vallées dont le relief est différent (livret, page 12). Choisis le dessin qui correspond à chaque photo.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-eau-relief",
+   "documents": [
+    "liv5-p12"
+   ],
+   "lignes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3"
+   ],
+   "colonnes": [
+    "Dessin A",
+    "Dessin B",
+    "Dessin C"
+   ],
+   "reponse": [
+    1,
+    2,
+    0
+   ],
+   "explication": "Photo 1 : dessin B ; photo 2 : dessin C ; photo 3 : dessin A."
   },
   {
    "id": "ceb-2017-l5-q8",
@@ -2498,11 +3138,22 @@
    "livret": 6,
    "numero": "14",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Entoure la ligne du temps qui correspond à la phrase.",
+   "type": "qcm",
+   "enonce": "Observe la phrase et les quatre lignes du temps numérotées de 1 à 4 (livret, page 9). Quelle ligne du temps correspond à cette phrase ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-temps-composes",
+   "documents": [
+    "liv6-p09"
+   ],
+   "choix": [
+    "Ligne du temps 1",
+    "Ligne du temps 2",
+    "Ligne du temps 3",
+    "Ligne du temps 4"
+   ],
+   "reponse": 2,
+   "explication": "C'est la ligne 3 : C (le coupable a lancé la pièce), puis A (la sapèque tombe dans le panier), puis B (le juge pointe son doigt). « Venait de » marque ce qui vient de se passer juste avant."
   },
   {
    "id": "ceb-2017-l7-q1a",
@@ -2991,22 +3642,56 @@
    "livret": 7,
    "numero": "1d",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Où le linge sèchera-t-il le plus vite ?",
+   "type": "qcm",
+   "enonce": "Observe les 4 situations numérotées de 1 à 4 (livret, page 3). Dans laquelle le linge séchera-t-il le plus vite ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-etats",
+   "documents": [
+    "liv7-p03"
+   ],
+   "choix": [
+    "Situation 1",
+    "Situation 2",
+    "Situation 3",
+    "Situation 4"
+   ],
+   "reponse": 0,
+   "explication": "Situation 1 : le soleil (chaleur) et le vent favorisent l'évaporation de l'eau du linge."
   },
   {
    "id": "ceb-2017-l7-q3ab",
    "livret": 7,
    "numero": "3ab",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Lis le graphique de l'eau qui chauffe.",
+   "type": "trous",
+   "enonce": "Lis le graphique des températures de l'eau qui chauffe (livret, page 6).",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-lire-donnees",
+   "documents": [
+    "liv7-p06"
+   ],
+   "texte": "Après 4 minutes, la température de l'eau est de {1} °C.\nAprès 16 minutes, la température de l'eau est de {2} °C.\nAprès 20 minutes, la température de l'eau est de {3} °C.\nAprès 24 minutes, la température de l'eau est de {4} °C.\nL'eau atteint la température de 78 °C après {5} minutes.",
+   "reponse": [
+    [
+     "46"
+    ],
+    [
+     "100"
+    ],
+    [
+     "100"
+    ],
+    [
+     "100"
+    ],
+    [
+     "10"
+    ]
+   ],
+   "souple": true,
+   "explication": "Lecture du graphique : 46 °C à 4 min ; 100 °C à 16, 20 et 24 min ; 78 °C à 10 min."
   },
   {
    "id": "ceb-2017-l7-q4a",
@@ -3014,13 +3699,16 @@
    "numero": "4a",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Écris deux chaines alimentaires.",
+   "enonce": "Observe le schéma de la chaine alimentaire (livret, page 8). Écris deux chaines alimentaires complètes contenues dans ce schéma. Ces chaines peuvent compter moins d'animaux que dans l'exemple.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-chaines",
    "documents": [
-    "chaine"
+    "chaine",
+    "liv7-p08"
    ],
-   "numerisable": false
+   "reponseModele": "Deux chaines au choix, écrites de la nourriture vers le mangeur et complètes, de l'herbe jusqu'au dernier animal : herbe, criquet, musaraigne, hibou ; ou herbe, lapin, renard ; ou herbe, lapin, hibou. 1 point par chaine juste.",
+   "explication": "Suis les flèches « est mangé par » en partant de l'herbe."
   },
   {
    "id": "ceb-2017-l7-q4c",
@@ -3038,11 +3726,30 @@
    "livret": 7,
    "numero": "6b",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Sens le plus stimulé sur les photos.",
+   "type": "trous",
+   "enonce": "Pour chacune des deux photos numérotées (livret, page 11), écris le sens qui est le plus stimulé selon la situation.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "stimulus",
+    "liv7-p11"
+   ],
+   "texte": "Photo 1 : {1}\nPhoto 2 : {2}",
+   "reponse": [
+    [
+     "l'ouïe",
+     "ouïe",
+     "l'ouie",
+     "ouie"
+    ],
+    [
+     "le toucher",
+     "toucher"
+    ]
+   ],
+   "souple": true,
+   "explication": "Photo 1 (micro) : l'ouïe ; photo 2 (poignée de main) : le toucher."
   },
   {
    "id": "ceb-2017-l7-q8c",
@@ -3063,39 +3770,109 @@
    "livret": 7,
    "numero": "10",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Place les plantes vertes dans la clé.",
+   "type": "grille",
+   "enonce": "Observe les cinq espèces de plantes vertes décrites dans le portfolio. Recopie le nom complet de ces 5 plantes dans les étiquettes vides numérotées de 1 à 5 (livret, page 17).",
    "points": 2.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
-    "plantes"
+    "plantes",
+    "liv7-p17"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4",
+    "Étiquette 5"
+   ],
+   "colonnes": [
+    "Polypode commun",
+    "Laitue de mer",
+    "Pommier",
+    "Polytric",
+    "Pin noir"
+   ],
+   "reponse": [
+    1,
+    3,
+    0,
+    4,
+    2
+   ],
+   "explication": "1 : laitue de mer (plante aquatique) ; 2 : polytric (terrestre à tige, feuilles sans nervures) ; 3 : polypode commun (feuilles composées en fronde) ; 4 : pin noir (aiguilles et cônes) ; 5 : pommier (fleurs)."
   },
   {
    "id": "ceb-2017-l7-q11",
    "livret": 7,
    "numero": "11",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Tri des montages électriques.",
+   "type": "grille",
+   "enonce": "Observe les montages électriques (livret, page 18). Complète le tri de la page 19 : choisis le numéro de la photo qui convient dans chaque étiquette vide, repérée par une lettre de A à D.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
    "documents": [
-    "circuit-1"
+    "circuit-1",
+    "liv7-p18",
+    "liv7-p19"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette A",
+    "Étiquette B",
+    "Étiquette C",
+    "Étiquette D"
+   ],
+   "colonnes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4"
+   ],
+   "reponse": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    2,
+    3
+   ],
+   "explication": "Les photos 1 et 2 (A et B, dans un ordre quelconque) : l'objet n'est pas un bon conducteur. Photo 3 (C) : bon conducteur et circuit fermé, l'ampoule brille. Photo 4 (D) : bon conducteur mais circuit non fermé.",
+   "differentes": true
   },
   {
    "id": "ceb-2017-l7-q12b",
    "livret": 7,
    "numero": "12b",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Situations dangereuses.",
+   "type": "qcm_multi",
+   "enonce": "Voici six situations que tu pourrais vivre (livret, pages 20 et 21). Certaines sont dangereuses. Choisis les situations qui présentent un risque identique à celui qui est décrit dans le mode d'emploi du sèche-cheveux.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-electricite",
+   "documents": [
+    "circuit-2",
+    "liv7-p20",
+    "liv7-p21"
+   ],
+   "choix": [
+    "Situation 1",
+    "Situation 2",
+    "Situation 3",
+    "Situation 4",
+    "Situation 5",
+    "Situation 6"
+   ],
+   "reponse": [
+    0,
+    3,
+    5
+   ],
+   "explication": "Le risque : l'eau conduit l'électricité. Situations 1 (bain), 4 (sol mouillé près d'une prise) et 6 (radio près du bain)."
   },
   {
    "id": "ceb-2017-l8-q1a",
@@ -3706,33 +4483,109 @@
    "livret": 8,
    "numero": "8",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les cases de la droite graduée.",
-   "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "type": "trous",
+   "enonce": "Complète les cases de la droite graduée (livret, page 7), numérotées de 1 à 4.",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "ma-droite-graduee",
+   "documents": [
+    "liv8-p07"
+   ],
+   "texte": "Case 1 : {1}\nCase 2 : {2}\nCase 3 : {3}\nCase 4 : {4}",
+   "reponse": [
+    [
+     "3,5",
+     "3.5"
+    ],
+    [
+     "3,75",
+     "3.75"
+    ],
+    [
+     "4",
+     "4,0",
+     "4.0",
+     "4,00"
+    ],
+    [
+     "4,12",
+     "4.12"
+    ]
+   ],
+   "souple": true,
+   "explication": "Les cases valent 3,5 ; 3,75 ; 4 et 4,12."
   },
   {
    "id": "ceb-2017-l8-q9",
    "livret": 8,
    "numero": "9",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Arbre de décomposition de 0,75.",
+   "type": "trous",
+   "enonce": "Un nombre a été décomposé en parts équivalentes puis recomposé (livret, page 8). Complète l'arbre : écris le nombre de chacune des cases numérotées de 1 à 4 (à l'épreuve, il fallait compléter toutes les cases de l'arbre).",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fraction-decimal-pourcent",
+   "documents": [
+    "liv8-p08"
+   ],
+   "texte": "Case 1 : {1}\nCase 2 : {2}\nCase 3 : {3}\nCase 4 : {4}",
+   "reponse": [
+    [
+     "0,25",
+     "0.25",
+     "1/4"
+    ],
+    [
+     "0,125",
+     "0.125",
+     "1/8"
+    ],
+    [
+     "0,375",
+     "0.375",
+     "3/8"
+    ],
+    [
+     "0,75",
+     "0.75",
+     "3/4"
+    ]
+   ],
+   "souple": true,
+   "explication": "0,75 en trois parts : 0,25 chacune ; chaque 0,25 en deux : 0,125 ; on regroupe trois 0,125 : 0,375 ; deux fois 0,375 redonnent 0,75."
   },
   {
    "id": "ceb-2017-l8-q11b",
    "livret": 8,
    "numero": "11b",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Place 72, 123, 340, 720 dans le diagramme.",
+   "type": "grille",
+   "enonce": "Dans le cadre du livret (page 9), quatre zones sont repérées par une lettre de A à D. Écris, à l'endroit qui convient dans le cadre, les nombres 72, 123, 340 et 720 : indique la zone de chacun.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-multiples-diviseurs",
+   "documents": [
+    "liv8-p09"
+   ],
+   "lignes": [
+    "72",
+    "123",
+    "340",
+    "720"
+   ],
+   "colonnes": [
+    "Zone A",
+    "Zone B",
+    "Zone C",
+    "Zone D"
+   ],
+   "reponse": [
+    2,
+    1,
+    0,
+    3
+   ],
+   "explication": "72 est multiple de 8 seulement (zone C) ; 123 n'est multiple ni de 5 ni de 8 (zone B) ; 340 est multiple de 5 seulement (zone A) ; 720 est multiple de 5 et de 8 (zone D)."
   },
   {
    "id": "ceb-2017-l8-q12",
@@ -3750,11 +4603,17 @@
    "livret": 8,
    "numero": "17",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Nombre de points noirs.",
+   "type": "numerique",
+   "enonce": "Ce cadre est rempli, de manière régulière, de points noirs (livret, page 13). Combien y a-t-il de points noirs en tout, y compris ceux cachés par le nuage gris ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv8-p13"
+   ],
+   "reponse": 121,
+   "unite": "points",
+   "explication": "Il y a 11 rangées de 11 points : 11 × 11 = 121. À l'épreuve, le calcul écrit rapportait le 2e point."
   },
   {
    "id": "ceb-2017-l8-q18",
