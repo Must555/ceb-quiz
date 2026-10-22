@@ -1041,7 +1041,7 @@
       "points": 3,
       "corrigeVerifie": true,
       "fiche": "ma-durees",
-      "texte": "La durée d'une récréation : {1}  ·  La durée des études primaires : {2}  ·  La durée des vacances de printemps : {3}",
+      "texte": "La durée d'une récréation : {1}\nLa durée des études primaires : {2}\nLa durée des vacances de printemps : {3}",
       "reponse": [
         [
           "minute",
@@ -3189,7 +3189,7 @@
       "points": 3,
       "corrigeVerifie": true,
       "fiche": "ma-egalites",
-      "texte": "54 {1} 27 {2} 27  ·  96 {3} 8 {4} 12  ·  20 {5} 34 {6} 10 {7} 4",
+      "texte": "54 {1} 27 {2} 27\n96 {3} 8 {4} 12\n20 {5} 34 {6} 10 {7} 4",
       "reponse": [
         [
           "−",
@@ -3222,7 +3222,8 @@
         ]
       ],
       "souple": true,
-      "explication": "54 − 27 = 27 ; 96 : 8 = 12 ; 20 = 34 − 10 − 4."
+      "explication": "54 − 27 = 27 ; 96 : 8 = 12 ; 20 = 34 − 10 − 4.",
+      "champsCourts": true
     },
     {
       "id": "ceb-2026-so-l8-q19",

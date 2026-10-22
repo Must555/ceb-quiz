@@ -239,6 +239,7 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .saisie-ligne .unite { font-family:var(--titre); font-weight:800; font-size:20px; }
 .texte-trous { font-size:19px; line-height:2.4; }
 .texte-trous .trou { width:150px; display:inline-block; padding:6px 10px; font-size:17px; }
+.texte-trous .trou.court { width:64px; text-align:center; } /* un signe, un chiffre */
 .grille-rep { display:flex; flex-direction:column; gap:10px; }
 .grille-ligne { background:var(--panel); border:var(--bord); border-radius:14px; padding:12px; }
 .grille-ligne p { margin:0 0 8px; font-weight:600; }
