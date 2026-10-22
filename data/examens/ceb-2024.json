@@ -444,7 +444,7 @@
    "page": 13,
    "titre": "Classement de solides",
    "fichier": "assets/2024/liv3-p13.webp",
-   "alt": "Arbre de classement des solides (polyèdre ou non polyèdre, prisme droit, pyramide ; base triangulaire, carrée ou hexagonale) avec les numéros 1 à 4, puis neuf solides dessinés sur deux rangées (quatre en haut, cinq en bas), chacun avec un cercle vide dessous."
+   "alt": "Arbre de classement des solides (polyèdre ou non polyèdre, prisme droit, pyramide ; base triangulaire, carrée ou hexagonale) avec les numéros 1 à 4, puis neuf solides dessinés, repérés par les lettres A à I."
   },
   {
    "id": "liv3-p16",
@@ -453,7 +453,7 @@
    "page": 16,
    "titre": "Une figure en T, agrandie et réduite",
    "fichier": "assets/2024/liv3-p16.webp",
-   "alt": "Une figure en forme de T sur un quadrillage, puis cinq autres figures en T de tailles différentes : en haut à gauche, en haut à droite, au milieu à gauche, en bas au centre et en bas à droite."
+   "alt": "Une figure en forme de T sur un quadrillage, puis cinq autres figures en T de tailles différentes, numérotées de 1 à 5."
   },
   {
    "id": "liv4-p09",
@@ -480,7 +480,7 @@
    "page": 18,
    "titre": "Cinq figures en parties grisées",
    "fichier": "assets/2024/liv4-p18.webp",
-   "alt": "Cinq figures partagées en parties égales dont certaines sont grisées : une croix (en haut à gauche), un rectangle quadrillé (en haut au centre), un rectangle à bandes (en haut à droite), un disque en secteurs (en bas à gauche) et une figure faite de triangles (en bas à droite). En haut de la page : la question 16 sur un pourcentage."
+   "alt": "Cinq figures partagées en parties égales dont certaines sont grisées, numérotées de 1 à 5. En haut de la page : la question 16 sur un pourcentage."
   },
   {
    "id": "liv4-p20",
@@ -507,7 +507,7 @@
    "page": 6,
    "titre": "Carte du monde des J.O.",
    "fichier": "assets/2024/liv5-p06.webp",
-   "alt": "Carte du monde avec cinq étiquettes vides, chacune reliée à un lieu : en Europe du Nord, en Europe de l'Ouest, en Amérique centrale, en Asie de l'Est et en Australie. Sous la carte, la question 2b."
+   "alt": "Carte du monde avec cinq étiquettes, repérées par les lettres A à E, chacune reliée à un lieu. Sous la carte, la question 2b."
   },
   {
    "id": "liv5-p16",
@@ -561,7 +561,7 @@
    "page": 8,
    "titre": "Cinq photos d'une recette",
    "fichier": "assets/2024/liv8-p08.webp",
-   "alt": "Cinq photos de différentes étapes de la préparation de truffes au chocolat : deux en haut, une au milieu, deux en bas."
+   "alt": "Cinq photos numérotées de 1 à 5 montrant des étapes de la préparation de truffes au chocolat."
   },
   {
    "id": "liv9-p05",
@@ -570,7 +570,7 @@
    "page": 5,
    "titre": "Quatre illustrations",
    "fichier": "assets/2024/liv9-p05.webp",
-   "alt": "Quatre illustrations d'une jeune fille devant un mur fissuré : assise sur un banc en train d'écrire (en haut à gauche), debout appuyée au mur en lisant (en haut à droite), assise par terre en lisant (en bas à gauche), debout avec un livre à la main (en bas à droite)."
+   "alt": "Quatre illustrations numérotées de 1 à 4 d'une jeune fille devant un mur fissuré."
   },
   {
    "id": "liv10-p02",
@@ -1287,7 +1287,7 @@
    "numero": "12",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe le classement et les neuf solides du livret (page 13). Dans le livret, il fallait écrire chaque numéro sous le solide qui convient (certains solides n'ont pas de numéro). Sous quel solide faut-il écrire chaque numéro ? Les solides sont comptés de gauche à droite dans chaque rangée.",
+   "enonce": "Observe le classement et les neuf solides du livret (page 13), repérés par les lettres A à I. Dans le livret, il fallait écrire chaque numéro du classement sous le solide qui convient (certains solides n'ont pas de numéro). Quel solide correspond à chaque numéro ?",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1301,15 +1301,15 @@
     "Numéro 4"
    ],
    "colonnes": [
-    "En haut, 1er",
-    "En haut, 2e",
-    "En haut, 3e",
-    "En haut, 4e",
-    "En bas, 1er",
-    "En bas, 2e",
-    "En bas, 3e",
-    "En bas, 4e",
-    "En bas, 5e"
+    "Solide A",
+    "Solide B",
+    "Solide C",
+    "Solide D",
+    "Solide E",
+    "Solide F",
+    "Solide G",
+    "Solide H",
+    "Solide I"
    ],
    "reponse": [
     2,
@@ -1317,7 +1317,7 @@
     5,
     3
    ],
-   "explication": "1 : prisme droit à base triangulaire ; 2 : prisme droit à base hexagonale ; 3 : pyramide à base carrée ; 4 : un solide qui n'est pas un polyèdre (le cylindre)."
+   "explication": "1 : prisme droit à base triangulaire (C) ; 2 : prisme droit à base hexagonale (B) ; 3 : pyramide à base carrée (F) ; 4 : un solide qui n'est pas un polyèdre, le cylindre (D)."
   },
   {
    "id": "ceb-2024-l3-q14",
@@ -1336,7 +1336,7 @@
    "numero": "15",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe la figure en T du livret (page 16) et les cinq figures dessinées en dessous. Dans le livret, il fallait entourer deux figures. Laquelle est l'agrandissement de la figure du haut ? Laquelle en est la réduction ?",
+   "enonce": "Observe la figure en T du haut de la page 16 du livret, puis les cinq figures numérotées de 1 à 5. Laquelle est l'agrandissement de la figure du haut ? Laquelle en est la réduction ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-echelle",
@@ -1348,17 +1348,17 @@
     "La réduction"
    ],
    "colonnes": [
-    "En haut à gauche",
-    "En haut à droite",
-    "Au milieu à gauche",
-    "En bas au centre",
-    "En bas à droite"
+    "Figure 1",
+    "Figure 2",
+    "Figure 3",
+    "Figure 4",
+    "Figure 5"
    ],
    "reponse": [
     1,
     0
    ],
-   "explication": "Dans un agrandissement ou une réduction, toutes les longueurs sont multipliées par le même nombre : la figure en haut à droite est 1,5 fois plus grande, celle en haut à gauche est deux fois plus petite."
+   "explication": "Dans un agrandissement ou une réduction, toutes les longueurs sont multipliées par le même nombre : la figure 2 est 1,5 fois plus grande, la figure 1 est deux fois plus petite."
   },
   {
    "id": "ceb-2024-l3-q16",
@@ -1784,7 +1784,7 @@
    "numero": "17",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Observe les cinq figures du livret (page 18). Dans le livret, il fallait barrer la figure où la partie grisée représente une fraction différente de celle des quatre autres. Quelle est cette figure ?",
+   "enonce": "Observe les cinq figures numérotées de 1 à 5 (livret, page 18). Dans laquelle la partie grisée représente-t-elle une fraction différente de celle des quatre autres ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -1792,14 +1792,14 @@
     "liv4-p18"
    ],
    "choix": [
-    "La croix (en haut à gauche)",
-    "Le rectangle quadrillé (en haut au centre)",
-    "Le rectangle à bandes (en haut à droite)",
-    "Le disque (en bas à gauche)",
-    "La figure faite de triangles (en bas à droite)"
+    "Figure 1",
+    "Figure 2",
+    "Figure 3",
+    "Figure 4",
+    "Figure 5"
    ],
    "reponse": 3,
-   "explication": "Quatre figures ont la même fraction grisée ; le disque en a une autre."
+   "explication": "Les figures 1, 2, 3 et 5 ont la même fraction grisée ; la figure 4 (le disque) en a une autre."
   },
   {
    "id": "ceb-2024-l4-q18a",
@@ -2131,7 +2131,7 @@
    "numero": "2a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe la carte du monde du livret (page 6) et les documents 1 à 5 sur les J.O. d'été (portfolio, page 12). Dans le livret, il fallait écrire le numéro des villes organisatrices dans les étiquettes correspondantes. Quel numéro faut-il écrire dans chaque étiquette ?",
+   "enonce": "Observe la carte du monde du livret (page 6) et les documents 1 à 5 sur les J.O. d'été (portfolio, page 12). Les étiquettes de la carte portent les lettres A à E. Quel numéro de document faut-il écrire dans chaque étiquette ?",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -2140,11 +2140,11 @@
     "jo-1"
    ],
    "lignes": [
-    "Étiquette reliée à l'Europe du Nord",
-    "Étiquette reliée à l'Europe de l'Ouest",
-    "Étiquette reliée à l'Amérique centrale",
-    "Étiquette reliée à l'Asie de l'Est",
-    "Étiquette reliée à l'Australie"
+    "Étiquette A",
+    "Étiquette B",
+    "Étiquette C",
+    "Étiquette D",
+    "Étiquette E"
    ],
    "colonnes": [
     "Document 1",
@@ -3946,7 +3946,7 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Voici cinq photos du livret (page 8) qui illustrent différentes étapes de la préparation des truffes au chocolat. Dans le livret, il fallait barrer la photo de l'étape qui n'apparait pas dans la recette. Laquelle est-ce ?",
+   "enonce": "Voici cinq photos numérotées du livret (page 8) qui illustrent différentes étapes de la préparation des truffes au chocolat. Dans le livret, il fallait barrer la photo de l'étape qui n'apparait pas dans la recette. Laquelle est-ce ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3955,11 +3955,11 @@
     "choco-5"
    ],
    "choix": [
-    "Photo 1 (en haut à gauche)",
-    "Photo 2 (en haut à droite)",
-    "Photo 3 (au milieu)",
-    "Photo 4 (en bas à gauche)",
-    "Photo 5 (en bas à droite)"
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4",
+    "Photo 5"
    ],
    "reponse": 3,
    "explication": "Compare chaque photo aux étapes de la recette : le sucre n'en fait pas partie."
@@ -4303,7 +4303,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Observe les quatre illustrations du livret (page 5). Dans le livret, il fallait cocher celle qui correspond le mieux au moment où Nico parle à Nour pour la première fois. Laquelle est-ce ?",
+   "enonce": "Observe les quatre illustrations numérotées du livret (page 5). Dans le livret, il fallait cocher celle qui correspond le mieux au moment où Nico parle à Nour pour la première fois. Laquelle est-ce ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4314,13 +4314,13 @@
     "coeur-3"
    ],
    "choix": [
-    "Illustration 1 (en haut à gauche)",
-    "Illustration 2 (en haut à droite)",
-    "Illustration 3 (en bas à gauche)",
-    "Illustration 4 (en bas à droite)"
+    "Illustration 1",
+    "Illustration 2",
+    "Illustration 3",
+    "Illustration 4"
    ],
    "reponse": 2,
-   "explication": "Au moment où Nico lui parle, Nour est assise par terre, plongée dans son livre de Prévert."
+   "explication": "Au moment où Nico lui parle, Nour est assise par terre, plongée dans son livre de Prévert : c'est l'illustration 3."
   },
   {
    "id": "ceb-2024-l9-q9",

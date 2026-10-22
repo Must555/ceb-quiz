@@ -297,7 +297,7 @@
    "page": 8,
    "titre": "Quatre caméléons qui détendent leur langue",
    "fichier": "assets/2016/liv5-p08.webp",
-   "alt": "Quatre dessins d'un caméléon sur une branche, la langue tendue : en haut à gauche, la langue est fine et pointue ; en haut à droite, elle se termine par un renflement en forme de massue ; en bas à gauche, elle se termine en crochet ; en bas à droite, elle se termine en fourche. Sous les dessins, la question 11."
+   "alt": "Quatre dessins d'un caméléon sur une branche, la langue tendue, numérotés de 1 à 4. Sous les dessins, la question 11."
   }
  ],
  "questions": [
@@ -2003,7 +2003,7 @@
    "numero": "10",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Le texte décrit la forme de la langue du caméléon. Quel dessin montre le caméléon quand il détend sa langue ?",
+   "enonce": "Le texte décrit la forme de la langue du caméléon. Observe les quatre dessins numérotés du livret (page 8). Quel dessin montre le caméléon quand il détend sa langue ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -2012,13 +2012,13 @@
     "liv5-p08"
    ],
    "choix": [
-    "Le dessin en haut à gauche",
-    "Le dessin en haut à droite",
-    "Le dessin en bas à gauche",
-    "Le dessin en bas à droite"
+    "Dessin 1",
+    "Dessin 2",
+    "Dessin 3",
+    "Dessin 4"
    ],
    "reponse": 1,
-   "explication": "Le texte dit que l'extrémité de la langue a une forme de massue : c'est le dessin en haut à droite."
+   "explication": "Le texte dit que l'extrémité de la langue a une forme de massue : c'est le dessin 2."
   },
   {
    "id": "ceb-2016-l5-q11",
