@@ -1338,13 +1338,15 @@
       "numero": "16",
       "domaine": "hg.geographie",
       "type": "ouverte",
-      "enonce": "Sur les photos aériennes de Baulers (1994 et 2006), trace une croix rouge à un même endroit où l'occupation du sol a changé, puis décris cette occupation aux deux dates.",
+      "enonce": "Observe les photos aériennes de Baulers (1994 et 2006). Choisis un même endroit où l'occupation du sol a changé entre les deux photos et indique où il se trouve (dans l'épreuve, tu y traces une croix rouge). Décris ensuite ce qu'il y a à cet endroit en 1994, puis en 2006.",
       "points": 3,
-      "corrigeVerifie": false,
+      "corrigeVerifie": true,
       "documents": [
         "baulers"
       ],
-      "numerisable": false
+      "fiche": "hg-paysages",
+      "reponseModele": "1 point si tu as repéré un même endroit sur les deux photos. Puis 2 points pour la description (1 point par date), par exemple : une route en 1994 → une route avec un rond-point en 2006 ; ou une prairie, un terrain ou un bois en 1994 → des constructions (bâtiments) en 2006. La description n'est pas sanctionnée si elle ne correspond pas à l'endroit que tu as choisi.",
+      "explication": "Compare les deux photos au même endroit : ce qui était vert ou libre est souvent devenu construit."
     },
     {
       "id": "ceb-2026-tc-l5-q18",

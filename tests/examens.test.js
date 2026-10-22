@@ -32,7 +32,10 @@ for (const meta of dispo) {
     assert.equal(ex.id, meta.id);
     const livrets = new Set(ex.livrets.map((l) => l.n));
     const docs = new Map(ex.documents.map((d) => [d.id, d]));
-    for (const d of ex.documents) await access(new URL('../' + d.fichier, import.meta.url)); // l'image existe
+    for (const d of ex.documents) {
+      if (d.type === 'ecoute') { assert.ok(d.segments?.length && d.segments.every((x) => x.texte?.trim()), `texte à écouter vide : ${d.id}`); continue; }
+      await access(new URL('../' + d.fichier, import.meta.url)); // l'image existe
+    }
     const ids = new Set();
     let jouables = 0;
     for (const q of ex.questions) {

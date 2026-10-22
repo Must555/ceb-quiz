@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2018",
  "source": "FWB, épreuve externe commune 2018 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Le livret « Solides et figures » repose entièrement sur des tracés : il reste en mode papier.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Le livret « Solides et figures » repose entièrement sur des tracés : il reste en mode papier.",
  "livrets": [
   {
    "n": 1,
@@ -77,7 +77,8 @@
    "date": "2018-06-21",
    "points": 20,
    "audio": null,
-   "duree": 35
+   "duree": 35,
+   "ecoute": "ecoute"
   }
  ],
  "documents": [
@@ -269,6 +270,58 @@
    "titre": "Les abeilles (2)",
    "fichier": "assets/2018/pdf29.webp",
    "alt": "Développement de la larve, défense de la ruche, propolis ; communication par la vue, l'odorat et la danse."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Le python n’a pas sa place au salon !",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Le python n’a pas sa place au salon !"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le python, le boa ou d’autres reptiles ne sont d’aucune utilité dans une maison. Ils ne peuvent pas servir de jouets. Cependant, aujourd’hui dans notre pays, de nombreuses personnes possèdent dans leur salon des animaux exotiques tels que des caméléons, des perroquets, des iguanes ou des serpents."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Détenir ce genre d’animaux est pourtant contraire à leur respect, car on peut mettre leur vie en danger et déséquilibrer l’écosystème, c’est-à-dire l’équilibre de la nature."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Voici quelques points auxquels il est opportun de prêter attention."
+    },
+    {
+     "lecteur": 1,
+     "texte": "D’abord les serpents importés dans notre pays vont de la petite couleuvre au python. Ce dernier est le plus gros. En captivité, cet animal peut dépasser quatre mètres. Ceux qui l’adoptent le considèrent souvent comme une mascotte tant il parait gentil. C’est ainsi oublier qu’il a une force extraordinaire ! Imaginez qu’un jour, alors qu’il est enroulé autour de votre cou, il devienne nerveux…"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Il y a aussi des serpents qui s’échappent. Souvent, on les a déposés dans un petit bocal en plastique en pensant qu’ils ne pourraient pas en sortir, mais c’est une grave erreur. De plus, quelques propriétaires changent d’avis et vont alors les abandonner dans un bois, un parc ou le long d’un cours d’eau. Quand le python se retrouve en liberté dans un endroit qui n’est pas le sien, sa vie est en danger. En effet, pendant l’hiver dans notre pays, les serpents risquent de mourir de froid. Et pendant l’été, certaines personnes les voyant sur la voie publique n’hésitent pas à les tuer, tellement ils font peur."
+    },
+    {
+     "lecteur": 1,
+     "texte": "De plus, parmi les « acheteurs » d’animaux exotiques, certains sont des collectionneurs tandis que d’autres sont des amateurs."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Les premiers disposent souvent d’informations précises quant aux besoins des animaux protégés et ils se les procurent dans des élevages ou des réserves reconnues."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Par contre, les amateurs, apparemment les plus nombreux, ne tiennent compte que de leur envie. Ils n’hésitent pas à s’approvisionner dans des magasins ou chez des particuliers peu recommandables et placent, le plus souvent, ces animaux dans des conditions pénibles. La plupart de ces serpents souffriront et mourront faute de soins adéquats."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Enfin, dans leur milieu d’origine, les serpents sont indispensables à l’écosystème. Ils se nourrissent de rongeurs et les empêchent ainsi de se reproduire. Par contre, en leur absence, les rongeurs vont se multiplier, détruire des récoltes et toutes sortes de plantations. Ces petits animaux peuvent aussi être contagieux et entrainer des maladies pour d’autres espèces."
+    },
+    {
+     "lecteur": 1,
+     "texte": "À Bruxelles, la détention d’animaux sauvages est interdite. En Wallonie, elle est soumise à un permis que peu de citoyens demandent. Des mesures devraient être prises afin de permettre aux serpents de remplir leur mission au sein de la nature au lieu de se retrouver entre une cheminée et la télévision d’un salon."
+    }
+   ],
+   "source": "Correctif officiel CEB 2018, support du Savoir écouter"
   }
  ],
  "questions": [
@@ -1039,7 +1092,7 @@
    "domaine": "ma.grandeurs",
    "type": "qcm",
    "enonce": "Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ?",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "choix": [
@@ -1048,7 +1101,20 @@
     "Ils ont colorié la même surface"
    ],
    "reponse": 1,
-   "explication": "3/5 = 6/10 < 7/10. (Dans l'épreuve, il fallait justifier en comparant les fractions : 3/5 = 6/10, et 6/10 < 7/10.)"
+   "explication": "3/5 = 6/10, et 6/10 est plus petit que 7/10 : Laura a colorié la plus grande surface. Justifie ensuite en comparant les fractions."
+  },
+  {
+   "id": "ceb-2018-l4-q2-j",
+   "livret": 4,
+   "numero": "2 (justification)",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Nicolas colorie les 3/5 d'un rectangle, Laura les 7/10 d'un rectangle identique. Qui a colorié la plus grande surface ? ». Justifie ta réponse en comparant les fractions.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions-comparer",
+   "reponseModele": "Il faut comparer les deux fractions, par exemple en les mettant au même dénominateur (1 point). Exemple : « 3/5 = 6/10 et 6/10 est plus petit que 7/10, donc Laura a colorié la plus grande surface. » Une autre méthode juste qui compare bien les deux fractions est aussi acceptée.",
+   "explication": "Pour comparer 3/5 et 7/10, on écrit 3/5 en dixièmes : 3/5 = 6/10."
   },
   {
    "id": "ceb-2018-l4-q4b",
@@ -1987,24 +2053,28 @@
    "numero": "10c",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Question pour dessiner le biceps.",
+   "enonce": "Un élève a dessiné un schéma des os du bras et de l'avant-bras. Voici son schéma incomplet. Il veut y dessiner les muscles. Pour cela, il doit se poser différentes questions. Écris une question que cet élève pourrait se poser pour dessiner le muscle biceps.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "reponseModele": "Une question sur la place ou l'attache du muscle (1 point). Exemples : « Où se trouve ce muscle ? » ; « Comment ce muscle est-il attaché (aux os) ? » ; toute formulation dans ce sens. On ne sanctionne pas l'erreur de grammaire.",
+   "explication": "Pour dessiner un muscle, il faut savoir où il est et à quels os il est attaché (par des tendons)."
   },
   {
    "id": "ceb-2018-l5-q11c",
    "livret": 5,
    "numero": "11c",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Température du matin du 9 mars.",
+   "type": "numerique",
+   "enonce": "Lis le graphique « Migration des batraciens à Lasne ». Quelle température (en °C) faisait-il au matin du 9 mars ?",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "batra"
    ],
-   "numerisable": false
+   "fiche": "ma-donnees",
+   "reponse": 4,
+   "explication": "La ligne bleue (température du matin) est à 4 °C le 9 mars."
   },
   {
    "id": "ceb-2018-l5-q12",
@@ -2906,10 +2976,11 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Graphique : seul pays avec plus de victimes civiles que militaires.",
+   "enonce": "Lis le graphique des pertes humaines de la Première Guerre mondiale (civils morts et soldats morts). Écris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "Belgique (1 point). Sur le graphique « Pertes humaines de la Première Guerre mondiale », c'est le seul pays dont la barre des civils morts dépasse celle des soldats morts."
   },
   {
    "id": "ceb-2018-l7-q4c",
@@ -2931,14 +3002,60 @@
    "livret": 7,
    "numero": "4e",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Deux pays européens où le travail des enfants n'a pas disparu.",
+   "type": "trous",
+   "enonce": "Selon la Carte des enfants au travail dans le monde, écris le nom de deux pays européens où le travail des enfants de moins de quatorze ans n'a pas encore totalement disparu.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "enfants-3"
    ],
-   "numerisable": false
+   "fiche": "hg-europe",
+   "differentes": true,
+   "souple": true,
+   "texte": "Premier pays : {1}\nDeuxième pays : {2}",
+   "reponse": [
+    [
+     "Italie",
+     "l'Italie",
+     "Portugal",
+     "le Portugal",
+     "Albanie",
+     "l'Albanie",
+     "Macédoine",
+     "la Macédoine",
+     "Serbie",
+     "la Serbie",
+     "Monténégro",
+     "le Monténégro",
+     "Bosnie",
+     "la Bosnie",
+     "Bosnie-Herzégovine",
+     "la Bosnie-Herzégovine",
+     "Turquie",
+     "la Turquie"
+    ],
+    [
+     "Portugal",
+     "le Portugal",
+     "Italie",
+     "l'Italie",
+     "Albanie",
+     "l'Albanie",
+     "Macédoine",
+     "la Macédoine",
+     "Serbie",
+     "la Serbie",
+     "Monténégro",
+     "le Monténégro",
+     "Bosnie",
+     "la Bosnie",
+     "Bosnie-Herzégovine",
+     "la Bosnie-Herzégovine",
+     "Turquie",
+     "la Turquie"
+    ]
+   ],
+   "explication": "Sur la carte, des enfants travaillent encore au Portugal, en Italie et dans plusieurs pays des Balkans (Albanie, Macédoine, Serbie, Monténégro, Bosnie). Le corrigé accepte aussi la Turquie."
   },
   {
    "id": "ceb-2018-l7-q6",
@@ -2988,7 +3105,8 @@
    "documents": [
     "bruxelles"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "Saint-Gilles (1 point). C'est la commune coloriée en noir sur le plan de la Région de Bruxelles-Capitale du livret."
   },
   {
    "id": "ceb-2018-l7-q13",
@@ -3700,6 +3818,306 @@
    "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l9-q1",
+   "livret": 9,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Coche la case qui correspond à l'avis de l'auteur.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Chacun est libre de posséder ou d'adopter un animal exotique.",
+    "L'adoption d'animaux exotiques est autorisée mais à certaines conditions.",
+    "Il faut encourager l'adoption d'animaux exotiques.",
+    "Il est déconseillé de posséder ou d'adopter des animaux exotiques."
+   ],
+   "reponse": 3,
+   "explication": "L'auteur dit que détenir ces animaux est contraire à leur respect et met leur vie en danger : il le déconseille."
+  },
+  {
+   "id": "ceb-2018-l9-q2",
+   "livret": 9,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Complète les phrases. En hiver, le serpent en liberté est en danger car… En été, le serpent en liberté est en danger car…",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "En hiver : il risque de mourir de froid. En été : il risque d'être tué par des passants (qui ont peur de lui). Toute phrase qui va dans le sens de chaque réponse est acceptée. 1 point par phrase.",
+   "explication": "Dans notre pays, le serpent peut mourir de froid l'hiver, et l'été des passants qui ont peur peuvent le tuer."
+  },
+  {
+   "id": "ceb-2018-l9-q3",
+   "livret": 9,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'auteur distingue les amateurs des collectionneurs. Trace une croix dans les cases qui conviennent : le document contient-il cette information ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "La couleuvre est un serpent.",
+    "Les caméléons sont des animaux exotiques."
+   ],
+   "colonnes": [
+    "Le document contient cette information.",
+    "Le document ne contient pas cette information."
+   ],
+   "reponse": [
+    0,
+    0
+   ],
+   "explication": "Le texte cite la petite couleuvre parmi les serpents importés, et les caméléons parmi les animaux exotiques."
+  },
+  {
+   "id": "ceb-2018-l9-q4",
+   "livret": 9,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Coche deux caractéristiques qui qualifient les amateurs.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Ils achètent les serpents dans des élevages spécialisés.",
+    "Ils s'approvisionnent chez des particuliers peu recommandables.",
+    "Ils ignorent les besoins des serpents.",
+    "Ils connaissent les besoins des serpents."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "Les amateurs ne tiennent compte que de leur envie : ils achètent chez des particuliers peu recommandables. Ce sont les collectionneurs qui connaissent les besoins des animaux."
+  },
+  {
+   "id": "ceb-2018-l9-q5",
+   "livret": 9,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "L'auteur nomme d'autres serpents que le python. Écris deux noms d'autres serpents que le python.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "souple": true,
+   "reponse": [
+    "boa et couleuvre",
+    "couleuvre et boa",
+    "boa, couleuvre",
+    "couleuvre, boa",
+    "boa - couleuvre",
+    "couleuvre - boa",
+    "boa et la couleuvre",
+    "le boa et la couleuvre",
+    "la couleuvre et le boa",
+    "boa couleuvre",
+    "couleuvre boa",
+    "boa et couleuvres",
+    "couleuvres et boa"
+   ],
+   "explication": "Le texte parle du boa et de la couleuvre."
+  },
+  {
+   "id": "ceb-2018-l9-q6",
+   "livret": 9,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Coche l'affirmation correcte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Un python est plus gros qu'une couleuvre.",
+    "Une couleuvre est plus grosse qu'un python.",
+    "Un python est aussi gros qu'une couleuvre."
+   ],
+   "reponse": 0,
+   "explication": "Les serpents vont de la petite couleuvre au python, qui est le plus gros."
+  },
+  {
+   "id": "ceb-2018-l9-q7",
+   "livret": 9,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "L'auteur parle d'une grave erreur. À quoi fait-il allusion ? Coche l'affirmation correcte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Considérer le python comme une mascotte.",
+    "Croire que les serpents ne pourront pas s'échapper d'un bocal.",
+    "Abandonner les serpents dans un bois ou un parc.",
+    "Effrayer les passants qui n'hésiteront pas à tuer les serpents."
+   ],
+   "reponse": 1,
+   "explication": "L'auteur dit qu'on dépose parfois les serpents dans un petit bocal en pensant qu'ils ne pourront pas en sortir : « c'est une grave erreur »."
+  },
+  {
+   "id": "ceb-2018-l9-q8",
+   "livret": 9,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris deux éléments qui expliquent pourquoi il est important que les rongeurs ne se reproduisent pas (trop).",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Une idée de destruction des récoltes (et des plantations) et une idée de contagion (ils peuvent rendre malades d'autres espèces). 1 point par idée.",
+   "explication": "Quand il y a trop de rongeurs, ils détruisent des récoltes et des plantations, et ils peuvent transmettre des maladies à d'autres espèces."
+  },
+  {
+   "id": "ceb-2018-l9-q9",
+   "livret": 9,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris ce que font certains propriétaires des serpents quand ils veulent s'en séparer.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Ils les abandonnent (dans un bois, un parc ou le long d'un cours d'eau). Toute idée d'abandon est acceptée.",
+   "explication": "Certains propriétaires changent d'avis et abandonnent leur serpent dans la nature."
+  },
+  {
+   "id": "ceb-2018-l9-q10",
+   "livret": 9,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux dégâts que les rongeurs peuvent causer.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "S'attaquer aux humains.",
+    "Polluer les eaux des rivières et des lacs.",
+    "Provoquer des maladies chez d'autres espèces.",
+    "Détruire des récoltes et des plantations."
+   ],
+   "reponse": [
+    2,
+    3
+   ],
+   "explication": "Sans serpents, les rongeurs se multiplient, détruisent des récoltes et peuvent entrainer des maladies chez d'autres espèces."
+  },
+  {
+   "id": "ceb-2018-l9-q11",
+   "livret": 9,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "L'auteur parle d'équilibre de la nature. Écris le mot employé par l'auteur et qui a le même sens qu'équilibre de la nature.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "ecoute"
+   ],
+   "souple": true,
+   "reponse": [
+    "écosystème",
+    "l'écosystème",
+    "un écosystème",
+    "ecosysteme",
+    "l'ecosysteme"
+   ],
+   "explication": "L'auteur dit : « l'écosystème, c'est-à-dire l'équilibre de la nature »."
+  },
+  {
+   "id": "ceb-2018-l9-q12",
+   "livret": 9,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Des passants rencontrent un serpent sur la voie publique. Écris comment ils risquent de réagir, puis pourquoi ils risquent de réagir ainsi.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Comment : ils risquent de le tuer. Pourquoi : parce qu'ils ont peur (toute idée de peur). Attention : on n'accepte pas d'autres interprétations comme « Il parait méchant ». 1 point par réponse.",
+   "explication": "Certains passants n'hésitent pas à tuer le serpent, tellement il leur fait peur."
+  },
+  {
+   "id": "ceb-2018-l9-q13",
+   "livret": 9,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "Lorsqu'ils achètent un python, les propriétaires le considèrent souvent comme… Complète la phrase.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "souple": true,
+   "reponse": [
+    "une mascotte",
+    "mascotte",
+    "un jouet",
+    "jouet",
+    "une mascotte.",
+    "un jouet."
+   ],
+   "explication": "Ils le considèrent souvent comme une mascotte (un jouet), tant il parait gentil."
+  },
+  {
+   "id": "ceb-2018-l9-q14",
+   "livret": 9,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le titre de cet article est : « Le python n'a pas sa place au salon ! ». Écris deux éléments développés par l'auteur et qui expliquent le choix de ce titre.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Deux idées liées au texte, par exemple : le python contribue à l'équilibre de la nature ; le python n'est pas un jouet, un animal de compagnie, une mascotte ; le python risque de mourir (en été, en hiver, par manque de soins) ; le python peut devenir dangereux ; sa place est dans la nature ; il n'est pas fait pour vivre dans une maison. Il faut deux éléments, sinon 0 point.",
+   "explication": "Le titre dit que le python n'est pas à sa place dans un salon : il y est en danger, il peut être dangereux, et il est utile dans la nature."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2018), comparé question par question le 21/10/2026."

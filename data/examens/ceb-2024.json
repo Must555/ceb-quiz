@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2024",
  "source": "FWB, épreuve externe commune 2024 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2024-06-24",
    "points": 20,
    "audio": null,
-   "duree": 40
+   "duree": 40,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -291,9 +292,428 @@
    "titre": "L'électricité",
    "fichier": "assets/2024/pdf31.webp",
    "alt": "Deux montages avec 2 batteries, une lampe LED, des câbles et de l'eau salée."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Interview de Thibaut Quintens, créateur de jeux de société",
+   "segments": [
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Bonjour Thibaut Quintens. Vous êtes créateur, éditeur et distributeur de jeux de société. Merci à vous d’avoir accepté de répondre à nos questions. Pour commencer, quelles sont les qualités nécessaires pour être un créateur de jeux de société ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Selon moi, une première qualité pour être créateur de jeux de société, c’est d’être empathique, en d’autres termes, de pouvoir se mettre à la place de quelqu’un d’autre. Quand on développe un jeu, on le fait pour répondre à un besoin créatif personnel, mais on le fait surtout parce qu’on a envie que le jeu se retrouve dans les mains d’autres personnes."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Une deuxième qualité nécessaire : avoir un bon esprit d’analyse, car lors de la création, il y a toute une série de directions à prendre, de chemins à tenter. En fait, c’est un peu comme dans la vie… si une expérience ne marche pas, je vais devoir prendre une autre direction après avoir analysé et tenté de comprendre pourquoi cela ne fonctionne pas."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "L’observation est aussi une qualité indispensable. Lorsque vous testez un jeu, il faut pouvoir observer son déroulement et les réactions des joueurs afin de vérifier s’il fonctionne vraiment."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Et enfin, il y a une dernière qualité qui me semble importante lorsqu’on crée un jeu, c’est d’accepter de faire une erreur. D’ailleurs, je n’appelle pas cela des erreurs, mais plutôt des expériences. La force d’un créateur, c’est de pouvoir se remettre en question et, parfois, de tout reprendre à zéro."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Et selon vous, c’est quoi un bon jeu de société ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Je pourrais vous dire qu’un bon jeu de société, c’est un jeu qui se vend très bien. Mais, pour moi, c’est avant tout un jeu qui donne du plaisir. Pour avoir ce plaisir, il faut que le jeu soit proposé au bon moment aux bonnes personnes. J’ai parfois eu le meilleur des jeux entre les mains et pourtant ce même jeu ne fonctionnait plus à un autre moment de la journée ou avec d’autres joueurs."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Lorsque vous créez un jeu de société, par quelles étapes passez-vous ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Tout d’abord, je pars d’une idée ou d’un thème qui va évoluer. Je concrétise mon projet de départ pour pouvoir l’expérimenter moi-même, parfois juste avec des petits bouts de papier. Ensuite, je réalise un prototype, c’est-à-dire un premier exemplaire du jeu. Je le teste auprès de ma famille, puis auprès de professionnels du jeu et auprès de gens que je rencontre dans des festivals de jeux de société. C’est aussi une façon de me faire connaitre."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Quand le jeu a été suffisamment testé, c’est le moment de collaborer avec un éditeur qui va prendre en charge la partie artistique du jeu, par exemple la création de la boite et la production d’un matériel particulier. Moi, j’ai toujours édité mes propres jeux. J’adore ça !"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Finalement, il ne reste plus qu’à faire connaitre le jeu et à le distribuer dans les magasins."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Est-ce que les jeux de société ont tous le même objectif ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Je pense que tous les jeux ont un objectif principal, celui de donner du plaisir, mais tous les jeux ne se ressemblent pas, car ils ne visent pas tous la même chose. C’est d’ailleurs pourquoi il existe de nombreuses catégories de jeux de société."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Et bien justement, quelles sont les différentes catégories de jeu de société ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Les jeux de société, on peut les répertorier par type, comme par exemple, les jeux éducatifs, les jeux de hasard, les jeux créatifs ou encore les jeux de rôle dans lesquels on se met dans la peau d’un personnage. Les jeux peuvent être rangés en fonction du matériel utilisé, en fonction des compétences qu’il faut mobiliser comme la mémoire, la logique, la stratégie… Il y a aussi les jeux de compétition, mais moi, j’apprécie particulièrement les jeux de coopération où nous ne jouons pas les uns contre les autres, mais où nous jouons ensemble contre le jeu."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Dans les ludothèques, on utilise différentes classifications, car un jeu peut appartenir à une ou plusieurs catégories."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Pour ma part, je réalise des classements très personnels. Je les range par expérience de jeu, par thème, en fonction du nombre de joueurs ou de leur âge. Je les classe parfois selon la durée d’une partie ou encore selon le moment idéal pour jouer."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Et voici déjà la dernière question avant de nous quitter. Vous avez écrit un jour que « le jeu de société est une invitation à rencontrer l’autre ». Qu’est-ce que ça signifie pour vous ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Il y a deux moyens de communication universelle dans le monde : le jeu et la musique. Mais il y a une petite différence. Si je joue de la guitare, je ne peux pas forcément dire : « Tiens, vas-y, joue » et donner la guitare. Par contre, avec le jeu, en quelques minutes de présentation ou d’explication des règles, tout le monde est sur un même pied d’égalité et la partie peut commencer."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Thibaut Quintens",
+     "texte": "Le jeu crée alors un moment de pause qu’on partage avec un autre et qu’on se donne à soi-même. Lorsqu’on est pris par le jeu, plus rien à part le moment présent n’a d’importance. Moi, ce que j’aime beaucoup dans le jeu, c’est qu’il favorise la découverte de l’autre au cours d’une partie. C’est ce moment que j’appelle « une invitation à rencontrer l’autre »."
+    }
+   ],
+   "source": "Correctif officiel CEB 2024, support du Savoir écouter"
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2024-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Ce que tu viens d'écouter est…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "un débat",
+    "une interview",
+    "un conte",
+    "une conférence"
+   ],
+   "reponse": 1,
+   "explication": "Un journaliste pose des questions et une seule personne y répond : c'est une interview (un entretien)."
+  },
+  {
+   "id": "ceb-2024-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Qui est interrogé dans cet entretien ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Un responsable d'une ludothèque",
+    "Un présentateur d'une émission télévisée",
+    "Un auteur de jeux de société",
+    "Un vendeur dans un magasin de jeux de société"
+   ],
+   "reponse": 2,
+   "explication": "Au début, le journaliste présente Thibaut Quintens comme créateur, éditeur et distributeur de jeux de société : il invente des jeux, c'est un auteur de jeux."
+  },
+  {
+   "id": "ceb-2024-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Thibaut répond à des questions sur ses différents métiers de créateur, d'éditeur et de distributeur de jeux de société. D'autres questions auraient pu lui être posées. Écris une autre question en rapport avec un de ses métiers.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-phrases",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Une question sur son métier de créateur, d'éditeur ou de distributeur de jeux, par exemple : « Comment trouvez-vous l'inspiration pour créer un jeu ? », « Combien de temps faut-il pour créer un jeu ? », « Comment distribuez-vous vos jeux ? » ou « Peut-on créer un jeu sans éditeur ? ». Attention : ce n'est pas bon si la question a déjà été posée dans l'entretien (qualités d'un créateur, bon jeu, étapes de création, objectif des jeux, catégories, « invitation à rencontrer l'autre »), ni si elle parle de la vie personnelle de Thibaut.",
+   "explication": "La question doit parler d'un de ses métiers et ne pas répéter une question déjà posée dans l'entretien."
+  },
+  {
+   "id": "ceb-2024-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'information est-elle donnée durant l'entretien ?",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "La durée de conception d'un jeu de société",
+    "Les différents métiers de Thibaut dans le domaine du jeu de société",
+    "La formation à suivre pour devenir créateur de jeux de société"
+   ],
+   "colonnes": [
+    "L'information est donnée durant l'entretien",
+    "L'information n'est pas donnée durant l'entretien"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "Thibaut parle de ses métiers (créateur, éditeur, distributeur). Il ne dit rien du temps qu'il faut pour créer un jeu ni de la formation à suivre."
+  },
+  {
+   "id": "ceb-2024-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Les informations entendues permettent de dire qu'un bon créateur de jeux doit notamment…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "comprendre ce que l'autre ressent",
+    "maitriser les outils numériques",
+    "être un bon dessinateur",
+    "faire preuve de curiosité"
+   ],
+   "reponse": 0,
+   "explication": "Thibaut cite l'empathie : se mettre à la place de quelqu'un d'autre. Il ne parle ni d'outils numériques, ni de dessin, ni de curiosité."
+  },
+  {
+   "id": "ceb-2024-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Thibaut dit que, pour lui, un créateur de jeux doit pouvoir…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "ignorer les erreurs",
+    "se servir de ses erreurs",
+    "éviter les erreurs",
+    "parler de ses erreurs"
+   ],
+   "reponse": 1,
+   "explication": "Pour Thibaut, les erreurs sont des expériences : il faut accepter de se remettre en question, analyser et prendre une autre direction."
+  },
+  {
+   "id": "ceb-2024-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Cite une façon qui permet à Thibaut de se faire connaitre.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Il se fait connaitre en testant ses jeux dans des festivals de jeux de société (idée de lieu), ou auprès de gens qu'il rencontre, de professionnels du jeu (idée de rencontre). Ce n'est pas bon : auprès de sa famille.",
+   "explication": "Après sa famille, il teste ses jeux auprès de professionnels et de gens rencontrés dans des festivals : c'est aussi une façon de se faire connaitre."
+  },
+  {
+   "id": "ceb-2024-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Qu'est-ce que Thibaut apprécie particulièrement dans les jeux de coopération ? Écris ta réponse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "On ne joue pas les uns contre les autres : on joue ensemble contre le jeu (on combat le jeu). Ce n'est pas assez de dire seulement « on joue ensemble » ou « en équipe ».",
+   "explication": "Dans un jeu de coopération, personne ne joue contre les autres : tout le monde joue ensemble contre le jeu."
+  },
+  {
+   "id": "ceb-2024-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Tu veux écrire un article sur les bienfaits des jeux de société. Coche une information qui pourra te servir et que tu as entendue dans l'entretien.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Les jeux de société permettent de faire ce que l'on aime.",
+    "Il existe des concours de jeux de société.",
+    "Les jeux de société permettent de s'offrir un moment de pause.",
+    "Les festivals de jeux sont des lieux de rencontre entre amateurs de jeux de société."
+   ],
+   "reponse": 2,
+   "explication": "Thibaut dit que le jeu crée un moment de pause qu'on partage avec l'autre et qu'on se donne à soi-même. Les autres phrases ne sont pas dites dans l'entretien."
+  },
+  {
+   "id": "ceb-2024-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici quatre étapes de la création d'un jeu de société selon Thibaut. Remets-les dans l'ordre chronologique.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Il édite le jeu.",
+    "Il part d'une idée, d'un thème.",
+    "Il teste le jeu.",
+    "Il réalise un premier exemplaire du jeu."
+   ],
+   "reponse": [
+    1,
+    3,
+    2,
+    0
+   ],
+   "explication": "Il part d'une idée, réalise un prototype (un premier exemplaire), le teste, puis le jeu est édité."
+  },
+  {
+   "id": "ceb-2024-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Un élève pense : « Le jeu, c'est exactement comme la musique. Ils permettent tous les deux de communiquer de la même manière avec tout le monde. » D'après ce que tu viens d'entendre, a-t-il raison ? Réponds OUI ou NON, puis justifie à l'aide d'un élément de l'entretien.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "NON, il y a une différence. Avec le jeu, en quelques minutes d'explication des règles, tout le monde est sur un pied d'égalité et la partie peut commencer. Avec la musique, on ne peut pas jouer tout de suite : si Thibaut joue de la guitare, il ne peut pas forcément dire « Tiens, vas-y, joue » et donner la guitare. (Un seul de ces éléments suffit.)",
+   "explication": "Thibaut compare le jeu et la musique mais voit une différence : le jeu s'apprend en quelques minutes, un instrument non."
+  },
+  {
+   "id": "ceb-2024-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Parmi les sujets ci-dessous, coche celui qui est abordé durant l'entretien.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "L'évolution des jeux de société dans le temps",
+    "La formation des créateurs de jeux de société",
+    "L'utilisation des jeux de société en classe",
+    "Le but poursuivi par tous les jeux de société"
+   ],
+   "reponse": 3,
+   "explication": "Thibaut dit que tous les jeux ont un objectif principal : donner du plaisir."
+  },
+  {
+   "id": "ceb-2024-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'entretien permet-il de dire que c'est vrai ou faux ?",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Thibaut crée des jeux à partir d'objets ramenés de ses voyages.",
+    "Thibaut participe à des festivals de jeux de société.",
+    "Un bon jeu fonctionne toujours, peu importe les personnes ou le moment.",
+    "Thibaut joue de la guitare."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    2,
+    0,
+    1,
+    2
+   ],
+   "explication": "Il teste ses jeux dans des festivals. Un bon jeu peut ne plus fonctionner à un autre moment ou avec d'autres joueurs : c'est faux. Il ne parle pas de voyages, et il ne dit pas qu'il joue de la guitare (c'est seulement un exemple)."
+  },
+  {
+   "id": "ceb-2024-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque résumé, indique s'il correspond à l'entretien que tu viens d'entendre. Premier résumé : « Dans cet entretien, Thibaut Quintens raconte son parcours professionnel et explique comment il crée des jeux. Il termine en donnant quelques caractéristiques des jeux de société. » Deuxième résumé : « Dans cet entretien, Thibaut Quintens explique quelles sont les qualités nécessaires à un créateur de jeux mais aussi ce qu'est un bon jeu de société. Il donne également les étapes de la création d'un jeu et quelques classifications de jeu. »",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Premier résumé",
+    "Deuxième résumé"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Thibaut ne raconte pas son parcours. Le deuxième résumé reprend dans l'ordre les sujets de l'entretien : qualités, bon jeu, étapes de création, catégories."
+  },
   {
    "id": "ceb-2024-l2-q1",
    "livret": 2,
@@ -403,8 +823,11 @@
    "type": "ouverte",
    "enonce": "Écris le nom précis (2 mots) de chaque triangle dessiné.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Un triangle isocèle acutangle et un triangle scalène rectangle (1 point par triangle, tout ou rien). « Triangle quelconque » à la place de « scalène » est refusé.",
+   "explication": "Regarde les longueurs des côtés (isocèle, scalène) puis les angles (acutangle, rectangle).",
+   "remarque": "Question appuyée sur les triangles dessinés dans le livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l3-q4",
@@ -1634,8 +2057,11 @@
    "type": "ouverte",
    "enonce": "Lis le calendrier des périodes de migration : quel oiseau part en septembre ? Combien de temps dure l'absence du chardonneret ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "L'oiseau qui commence sa migration en septembre : l'hirondelle rustique (1 point). Le chardonneret est absent environ 5 mois (1 point).",
+   "explication": "Dans le calendrier, la période de migration de chaque oiseau est colorée dans une autre couleur que la présence en Belgique.",
+   "remarque": "Question appuyée sur le calendrier des migrations du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l5-q4a",
@@ -3197,7 +3623,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Lola dit : « Nour et Nico sont simplement amis. » Solan répond : « Non ! Nico est amoureux de Nour ! » Qui a raison ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -3210,7 +3636,25 @@
     "Solan"
    ],
    "reponse": 1,
-   "explication": "« Voilà comment Nour et lui étaient devenus amis. À vrai dire, peut-être même un peu plus que ça… Du moins pour Nico. » Dans l'épreuve, il fallait justifier par un élément du texte (« peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant »)."
+   "explication": "Relis ce que le texte dit de la relation entre Nour et Nico. Justifie ensuite sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2024-l9-q6-j",
+   "livret": 9,
+   "numero": "7 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Lola dit : Nour et Nico sont simplement amis. Solan répond : Non ! Nico est amoureux de Nour ! Qui a raison ? ». Justifie ton choix à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "coeur-1",
+    "coeur-2",
+    "coeur-3"
+   ],
+   "reponseModele": "« …peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant » (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
+   "explication": "Le texte laisse entendre que, pour Nico, c'est plus que de l'amitié."
   },
   {
    "id": "ceb-2024-l9-q7",
@@ -3696,8 +4140,11 @@
    "type": "ouverte",
    "enonce": "Écris le nom du sens lié à l'organe désigné par la flèche sur la photo.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "L'ouïe (1 point).",
+   "explication": "Le sens lié à l'oreille.",
+   "remarque": "Question appuyée sur la photo du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q1c",
@@ -3790,11 +4237,14 @@
    "type": "ouverte",
    "enonce": "Tableau de classification : écris le nom de l'animal qui correspond aux attributs cochés.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "classification"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "reponseModele": "De haut en bas : l'aselle (aquatique), l'épinoche, le ragondin, le triton (à crête). 1 point par ligne du tableau.",
+   "explication": "Retrouve, parmi les animaux de la collection du portfolio, celui qui possède tous les attributs cochés.",
+   "remarque": "Le tableau aux attributs cochés est dans le livret et non dans le portfolio : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q5",
@@ -3867,8 +4317,11 @@
    "type": "ouverte",
    "enonce": "Photo d'un lac de montagne : écris les états de l'eau observés.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Photo 1 : l'eau à l'état gazeux (de gaz). Photo 2 : l'eau à l'état liquide. (1 point par état.)",
+   "explication": "Les états de l'eau : solide (glace), liquide, gazeux (vapeur).",
+   "remarque": "Question appuyée sur la photo du lac du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2024-l10-q8b",

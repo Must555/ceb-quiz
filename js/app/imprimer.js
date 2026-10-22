@@ -57,16 +57,20 @@ const origine = (q) => (q.source === 'examen'
 function documents(q, avecDocs) {
   const docs = q.docsResolus ?? [];
   if (!docs.length) return '';
-  if (!avecDocs) return `<p class="doc-ref">📄 Document : portfolio du CEB ${q.annee}, page ${docs.map((d) => d.page).join(', ')}.</p>`;
-  return docs.map((d) => `<figure class="doc"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}"><figcaption>Portfolio du CEB ${q.annee}, page ${d.page} — ${esc(d.titre)}</figcaption></figure>`).join('');
+  if (!avecDocs && !docs.some((d) => d.type === 'ecoute')) return `<p class="doc-ref">📄 Document : portfolio du CEB ${q.annee}, page ${docs.map((d) => d.page).join(', ')}.</p>`;
+  return docs.map((d) => (d.type === 'ecoute'
+    // Livret « Écouter » : sur papier, un adulte lit le texte (deux fois, comme à l'épreuve).
+    ? `<section class="doc doc-ecoute"><p><b>🎧 Texte à lire à voix haute par un adulte</b> (deux lectures ; l'enfant ne le lit pas) — ${esc(d.titre)}</p>${d.segments.map((x) => `<p>${x.qui ? `<b>${esc(x.qui)} :</b> ` : ''}${esc(x.texte)}</p>`).join('')}</section>`
+    : `<figure class="doc"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}"><figcaption>Portfolio du CEB ${q.annee}, page ${d.page} — ${esc(d.titre)}</figcaption></figure>`)).join('');
 }
 
 function questionExamen(q, avecDocs, docsDejaImprimes) {
   // Un document partagé par plusieurs questions n'est imprimé qu'une fois.
-  const nouveaux = (q.docsResolus ?? []).filter((d) => !docsDejaImprimes.has(d.fichier));
-  nouveaux.forEach((d) => docsDejaImprimes.add(d.fichier));
+  const cle = (d) => d.fichier ?? `ecoute:${d.id}`;
+  const nouveaux = (q.docsResolus ?? []).filter((d) => !docsDejaImprimes.has(cle(d)));
+  nouveaux.forEach((d) => docsDejaImprimes.add(cle(d)));
   const dejaVu = (q.docsResolus ?? []).length && !nouveaux.length;
-  const blocDocs = dejaVu ? `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.page).join(', ')}).</p>`
+  const blocDocs = dejaVu ? (q.docsResolus.some((d) => d.type === 'ecoute') ? '<p class="doc-ref">🎧 Réponds d\'après le texte entendu.</p>' : `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.page).join(', ')}).</p>`)
     : documents({ ...q, docsResolus: nouveaux }, avecDocs);
   return `<article class="question${q.type === 'trace' ? ' q-trace' : ''}${nouveaux.length && avecDocs ? ' avec-doc' : ''}">
     <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce)}</p><span class="bareme">… / ${q.pointsPapier}</span></header>

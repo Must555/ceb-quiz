@@ -262,10 +262,27 @@
    ],
    "choix": [
     "Réelle",
-    "Imaginaire : une meule magique tourne toute seule et produit du sel."
+    "Imaginaire"
    ],
    "reponse": 1,
-   "explication": "L'auteur dit lui-même que son explication n'est pas scientifique ; la meule est magique. (Dans l'épreuve, il fallait justifier : la meule est magique, elle tourne toute seule et produit du sel.)"
+   "explication": "L'auteur dit lui-même que son explication n'est pas scientifique ; la meule est magique. Justifie ensuite ta réponse."
+  },
+  {
+   "id": "ceb-2016-l1-q2-j",
+   "livret": 1,
+   "numero": "2 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Cette histoire est-elle réelle ou imaginaire ? ». Justifie ta réponse avec tes mots.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-reel-imaginaire",
+   "documents": [
+    "meule-1",
+    "meule-2"
+   ],
+   "reponseModele": "Tout élément qui montre que l'histoire est inventée (de fiction) est accepté (2 points). Exemples : la meule est magique ; elle se met à tourner toute seule ; elle produit du sel ; l'auteur dit lui-même : « Il doit bien y avoir une explication scientifique : celle que voici ne l'est pas. »",
+   "explication": "Une meule qui tourne toute seule et fabrique du sel au fond de la mer, cela n'existe pas : c'est un conte."
   },
   {
    "id": "ceb-2016-l1-q3",
@@ -776,22 +793,160 @@
    "livret": 1,
    "numero": "14a",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Indique si les mots soulignés renvoient au mari, à la femme ou aux deux.",
+   "type": "grille",
+   "enonce": "Observe cet extrait : « Il emporte quand même sa trouvaille. « Si seulement [j'] avais un peu de grain à moudre ! », [se] dit-[il] avec tristesse. Il emporte quand même sa trouvaille. « Mon pauvre mari, gémit sa femme, que veux-[tu] que [nous] fassions d'une meule ? » À peine a-t-[elle] fini sa phrase… » Pour chaque mot entre crochets, indique s'il renvoie au mari, à la femme ou aux deux.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-reprises",
+   "documents": [
+    "meule-1",
+    "meule-2"
+   ],
+   "lignes": [
+    "j'",
+    "se",
+    "il (dit-il)",
+    "tu",
+    "nous",
+    "elle"
+   ],
+   "colonnes": [
+    "Au mari (M)",
+    "À sa femme (F)",
+    "Aux deux (MF)"
+   ],
+   "reponse": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    1
+   ],
+   "explication": "Le mari parle de lui (j', se, il) et sa femme lui parle (tu) ; « nous » les réunit tous les deux ; « elle » est sa femme."
   },
   {
    "id": "ceb-2016-l1-q15",
    "livret": 1,
    "numero": "15",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Complète le schéma de la meule magique.",
+   "type": "trous",
+   "enonce": "Le cadet emporte un objet magique trouvé dans le sable. Complète ce schéma à l'aide d'informations relevées dans le texte : un objet fabrique quelque chose qui sera échangé contre cinq produits (donne cinq produits différents).",
    "points": 3.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "meule-1",
+    "meule-2"
+   ],
+   "differentes": true,
+   "souple": true,
+   "texte": "Un objet : {1}  fabrique  {2}  qui sera échangé contre des produits : {3}, {4}, {5}, {6}, {7}",
+   "reponse": [
+    [
+     "une meule",
+     "la meule",
+     "meule",
+     "la petite meule",
+     "une meule magique"
+    ],
+    [
+     "du sel",
+     "sel",
+     "le sel"
+    ],
+    [
+     "de la nourriture",
+     "nourriture",
+     "la nourriture",
+     "des vêtements",
+     "vêtements",
+     "les vêtements",
+     "des matériaux",
+     "matériaux",
+     "les matériaux",
+     "des chaussures",
+     "chaussures",
+     "les chaussures",
+     "des tuiles",
+     "tuiles",
+     "les tuiles",
+     "ce qui leur fait défaut"
+    ],
+    [
+     "des vêtements",
+     "vêtements",
+     "les vêtements",
+     "des matériaux",
+     "matériaux",
+     "les matériaux",
+     "des chaussures",
+     "chaussures",
+     "les chaussures",
+     "des tuiles",
+     "tuiles",
+     "les tuiles",
+     "de la nourriture",
+     "nourriture",
+     "la nourriture",
+     "ce qui leur fait défaut"
+    ],
+    [
+     "des matériaux",
+     "matériaux",
+     "les matériaux",
+     "des chaussures",
+     "chaussures",
+     "les chaussures",
+     "des tuiles",
+     "tuiles",
+     "les tuiles",
+     "de la nourriture",
+     "nourriture",
+     "la nourriture",
+     "des vêtements",
+     "vêtements",
+     "les vêtements",
+     "ce qui leur fait défaut"
+    ],
+    [
+     "des chaussures",
+     "chaussures",
+     "les chaussures",
+     "des tuiles",
+     "tuiles",
+     "les tuiles",
+     "de la nourriture",
+     "nourriture",
+     "la nourriture",
+     "des vêtements",
+     "vêtements",
+     "les vêtements",
+     "des matériaux",
+     "matériaux",
+     "les matériaux",
+     "ce qui leur fait défaut"
+    ],
+    [
+     "des tuiles",
+     "tuiles",
+     "les tuiles",
+     "de la nourriture",
+     "nourriture",
+     "la nourriture",
+     "des vêtements",
+     "vêtements",
+     "les vêtements",
+     "des matériaux",
+     "matériaux",
+     "les matériaux",
+     "des chaussures",
+     "chaussures",
+     "les chaussures",
+     "ce qui leur fait défaut"
+    ]
+   ],
+   "explication": "La meule fabrique du sel ; le cadet l'échange contre de la nourriture, des vêtements, des matériaux (pour la maison), des chaussures, des tuiles."
   },
   {
    "id": "ceb-2016-l2-q1",
@@ -1357,13 +1512,15 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Comment on produisait la nourriture (document A).",
+   "enonce": "Observe le document A de la page 14 du portfolio. Écris un élément que tu vois sur le document A qui te permet de dire comment l'humain « produisait » une partie de sa nourriture à cette époque.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "modevie"
    ],
-   "numerisable": false
+   "fiche": "hg-documents",
+   "reponseModele": "Toute réponse qui a trait à l'agriculture, à la vigne ou à l'élevage est acceptée (1 point). Exemples : un paysan qui laboure avec une charrue tirée par un bœuf ; des gens qui travaillent dans les vignes ; des champs cultivés ; un bœuf (l'élevage).",
+   "explication": "Sur le document A, on voit un paysan, un bœuf et une charrue, des vignes : la nourriture vient de la terre et des animaux."
   },
   {
    "id": "ceb-2016-l4-q4a",
@@ -1510,13 +1667,15 @@
    "numero": "15b",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Compare les éléments des documents A et B.",
+   "enonce": "Compare les documents A et B de la page 17 du portfolio (une plage d'Haïti à deux époques). Complète chaque case du tableau en écrivant deux éléments que tu vois sur ces documents : pour le document A, deux éléments naturels du paysage, puis deux éléments apportés par l'humain ; pour le document B, deux éléments naturels du paysage, puis deux éléments apportés par l'humain.",
    "points": 4,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "haiti"
    ],
-   "numerisable": false
+   "fiche": "hg-documents",
+   "reponseModele": "Chaque élément juste vaut ½ point (4 cases × 2 éléments). Éléments naturels, document A : mer, herbe, arbres, ciel, terre, côte, sable… Éléments naturels, document B : mer, ciel, côte, sable, arbres, rochers, montagne… Éléments apportés par l'humain, document A : bateau, armes, armures, croix, vêtements, bijoux… Éléments apportés par l'humain, document B : bateau, vêtements, chaussures, coussins, essuies (serviettes)…",
+   "explication": "Sur chaque document, distingue ce que la nature a fait (mer, ciel, arbres) de ce que les gens ont apporté (bateaux, vêtements, objets)."
   },
   {
    "id": "ceb-2016-l5-q14",
@@ -1761,6 +1920,19 @@
     ]
    ],
    "explication": "Lecture de la publicité : 85 cm ; 5 kg ; 48 litres. Il faut écrire la mesure et son unité."
+  },
+  {
+   "id": "ceb-2016-l6-q6b",
+   "livret": 6,
+   "numero": "6b",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Observe la publicité du lave-linge PROPTOU 2G26 (L 60 × l 50 × H 85 cm, 550 €, consommation d'énergie 0,95 kW par cycle, capacité 5 kg, consommation d'eau 48 litres par cycle…). Complète deux lignes du tableau en écrivant la QUESTION qui correspond à chaque réponse. Question 4 : réponse « 550 € ». Question 5 : réponse « 60 cm ».",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-vocabulaire-operations",
+   "reponseModele": "Question 4 (½ point) : toute question où apparait la notion de prix. Exemple : « Quel est le prix du lave-linge ? » Question 5 (½ point) : toute question où apparait la notion de longueur. Exemple : « Quelle est la longueur du lave-linge ? » On ne tient pas compte de l'orthographe ni de la syntaxe.",
+   "explication": "550 € est le prix ; 60 cm est la longueur (L 60) : la question doit demander cette grandeur."
   },
   {
    "id": "ceb-2016-l6-q8",

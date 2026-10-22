@@ -471,10 +471,16 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Écris le résumé de l'histoire en deux ou trois phrases.",
+   "enonce": "Écris le résumé de l'histoire en deux ou trois phrases (pas plus). Précise deux choses : la situation habituelle des parents et de Jean-Jacques, et le « problème provoqué » par la petite sœur. Tu peux commencer par : « C'est l'histoire d'une petite fille… »",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ordre-1",
+    "ordre-2"
+   ],
+   "reponseModele": "Ton résumé doit dire deux choses (1 point chacune). 1) La situation habituelle : les parents et Jean-Jacques sont très ordonnés, chacun range ses affaires à sa manière. 2) Le problème provoqué : la petite sœur modifie leurs rangements (elle range les choses autrement). Exemple : « C'est l'histoire d'une petite fille dont les parents et le frère sont très ordonnés. Mais la fille modifie leurs rangements. » Il faut que ces deux idées soient dans tes deux ou trois phrases.",
+   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude."
   },
   {
    "id": "ceb-2015-l1-q10",
@@ -482,10 +488,16 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Donne un exemple de rangement réalisable de deux manières.",
+   "enonce": "Donne un exemple de rangement réalisable de deux manières différentes. Pense à la géométrie (les figures), à la conjugaison (les verbes), aux rangs dans la cour de l'école, aux activités de gymnastique… Écris : « Je choisis de ranger des … », puis la première manière de les ranger, puis la deuxième manière.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ordre-1",
+    "ordre-2"
+   ],
+   "reponseModele": "Il faut ranger absolument la MÊME collection d'objets de deux manières différentes : premier rangement (1 point) et deuxième rangement (1 point). Si les objets ne sont pas les mêmes dans les deux rangements, c'est 0. Exemple : « Je choisis de ranger des figures géométriques. Première manière : par nombre de côtés (les triangles, puis les carrés…). Deuxième manière : par couleur (les rouges, puis les bleues…). »",
+   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons."
   },
   {
    "id": "ceb-2015-l2-q1",
@@ -696,7 +708,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Cette histoire est-elle réelle ou imaginaire ?",
-   "points": 1.5,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -705,10 +717,27 @@
    ],
    "choix": [
     "Réelle",
-    "Imaginaire : un renard parle avec un petit prince venu d'une autre planète."
+    "Imaginaire"
    ],
    "reponse": 1,
-   "explication": "Un renard qui parle, un enfant venu d'une autre planète."
+   "explication": "Un renard qui parle, un enfant venu d'une autre planète : l'histoire est inventée. Justifie ensuite ta réponse."
+  },
+  {
+   "id": "ceb-2015-l4-q2-j",
+   "livret": 4,
+   "numero": "2 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Cette histoire est-elle réelle ou imaginaire ? ». Justifie ta réponse avec tes mots.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-reel-imaginaire",
+   "documents": [
+    "prince-1",
+    "prince-2"
+   ],
+   "reponseModele": "Tout élément qui montre que l'histoire est inventée (imaginaire) est accepté. Exemples : un renard et un garçon qui se parlent (un dialogue) ; un petit prince venu d'une autre planète ; un renard qui parle comme une personne. Tout ou rien (1 point).",
+   "explication": "Dans la vraie vie, les renards ne parlent pas et personne ne vient d'une autre planète."
   },
   {
    "id": "ceb-2015-l4-q3",
@@ -1031,21 +1060,40 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Indique R, P ou RP sous les pronoms soulignés.",
+   "enonce": "Dans cet extrait, neuf pronoms sont entre crochets. Écris R s'il renvoie au renard, P s'il renvoie au petit prince, RP s'il renvoie au renard et au petit prince. « Bien sûr, dit le renard. […] Je ne suis pour toi qu'un renard semblable à cent mille renards. Mais, si [tu] [m']apprivoises, [nous] aurons besoin [l'un] de [l'autre]. [Tu] seras pour [moi] unique au monde. [Je] serai pour [toi] unique au monde… » (Exemple : dans la 1re phrase, « Je » = R et « toi » = P.)",
    "points": 4.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-pronoms",
+   "documents": [
+    "prince-1",
+    "prince-2"
+   ],
+   "reponseModele": "tu = P ; m' = R ; nous = RP ; l'un = R (ou P) ; l'autre = P (ou R) : si l'un est R, l'autre est P, et inversement ; Tu = P ; moi = R ; Je = R ; toi = P. Chaque pronom juste vaut ½ point (9 pronoms).",
+   "explication": "Celui qui parle est le renard (je, moi, m') ; celui à qui il parle est le petit prince (tu, toi). « Nous » les réunit tous les deux."
   },
   {
    "id": "ceb-2015-l4-q18",
    "livret": 4,
    "numero": "18",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Qui énonce ces débuts de phrases ?",
+   "type": "texte_court",
+   "enonce": "Voici des débuts de phrases du texte : « C'est alors qu'apparut le renard… », « Mais après réflexion, il ajouta… », « Le renard parut très intrigué… ». Qui les énonce (qui raconte) ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-narrateur",
+   "documents": [
+    "prince-1",
+    "prince-2"
+   ],
+   "reponse": [
+    "l'auteur narrateur",
+    "le narrateur",
+    "l'auteur",
+    "Saint-Exupéry",
+    "Saint Exupéry",
+    "Antoine de Saint-Exupéry"
+   ],
+   "explication": "Ces phrases ne sont pas dites par un personnage : c'est celui qui raconte l'histoire, le narrateur (l'auteur)."
   },
   {
    "id": "ceb-2015-l4-q19",
@@ -1382,7 +1430,7 @@
    "domaine": "sc.energie",
    "type": "qcm",
    "enonce": "Quel jour éviterais-tu pour une journée en Ardenne ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
@@ -1394,7 +1442,23 @@
     "dimanche"
    ],
    "reponse": 1,
-   "explication": "Samedi : averses en Ardenne. (Dans l'épreuve, il fallait justifier : la pluie, la température ou ses variations.)"
+   "explication": "Samedi : averses en Ardenne et températures plus basses (14 à 18 °C)."
+  },
+  {
+   "id": "ceb-2015-l5-q12c-j",
+   "livret": 5,
+   "numero": "12c (justification)",
+   "domaine": "sc.energie",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Quel jour éviterais-tu pour passer une journée en Ardenne ? ». Explique ton choix.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "meteo-1"
+   ],
+   "reponseModele": "Toute justification en rapport avec la pluie, la température ou la variation de température est acceptée. Exemples : « Il y aura des averses (de la pluie) en Ardenne. » ; « Il fera plus frais : 14 à 18 °C. » ; « Le temps change : nuageux puis averses. » Tout ou rien.",
+   "explication": "Dans le tableau, l'Ardenne a des averses et la température la plus basse le samedi."
   },
   {
    "id": "ceb-2015-l5-q13",
@@ -1586,14 +1650,29 @@
    "livret": 5,
    "numero": "2",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Range les aliments du blaireau.",
+   "type": "ordre",
+   "enonce": "Observe le graphique du régime alimentaire du blaireau en automne (portfolio). Range les aliments, du moins consommé au plus consommé.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "blaireau"
    ],
-   "numerisable": false
+   "fiche": "sc-regimes",
+   "elements": [
+    "Lombrics",
+    "Fruits charnus",
+    "Glands",
+    "Céréales",
+    "Grenouilles, crapauds"
+   ],
+   "reponse": [
+    1,
+    3,
+    2,
+    4,
+    0
+   ],
+   "explication": "Fruits charnus 5 %, céréales 10 %, glands 13 %, grenouilles et crapauds 27 %, lombrics 45 %."
   },
   {
    "id": "ceb-2015-l5-q3",
@@ -1615,10 +1694,15 @@
    "numero": "4b",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Explique ton choix pour les glaçons.",
+   "enonce": "Tu as répondu à la question « À ton avis, quel glaçon sera entièrement fondu le premier ? ». Explique ton choix.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-materiaux",
+   "documents": [
+    "echarpe-1"
+   ],
+   "reponseModele": "Cette question n'a pas de points dans le corrigé officiel : elle sert à dire ce que tu penses avant l'expérience. Une bonne explication : « La laine est un isolant : elle freine la chaleur de la pièce, donc le glaçon entouré de l'écharpe fond plus lentement ; le glaçon seul fond le premier. » Si tu avais pensé autre chose (par exemple que la laine réchauffe le glaçon), ce n'est pas grave : la question 8 te montre ce qui se passe vraiment.",
+   "explication": "La laine ne réchauffe pas : elle isole, elle ralentit l'arrivée de la chaleur."
   },
   {
    "id": "ceb-2015-l5-q9",
@@ -1692,14 +1776,46 @@
    "livret": 5,
    "numero": "20",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Tris des solutions pour déplacer le tonneau.",
+   "type": "trous",
+   "enonce": "Observe les six dessins du portfolio (page 26). Voici deux façons de trier les solutions dessinées par des élèves. Tri n° 1 : on déplace le tonneau sans se servir de roues, uniquement en tirant. Tri n° 2 : on déplace le tonneau en se servant de roues ; choisis la caractéristique parmi : uniquement en poussant, uniquement en tirant, en poussant et en tirant, uniquement en soulevant (le dessin 1 est dans « OUI », les dessins 4 et 5 dans « NON »).",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "tonneau"
    ],
-   "numerisable": false
+   "fiche": "sc-effort",
+   "differentes": true,
+   "souple": true,
+   "texte": "Tri n° 1, réponse OUI : dessin n° {1}\nTri n° 1, réponse NON (deux dessins) : dessins n° {2}\nTri n° 2, caractéristique : {3}",
+   "reponse": [
+    [
+     "2"
+    ],
+    [
+     "3 et 6",
+     "6 et 3",
+     "3, 6",
+     "6, 3",
+     "3,6",
+     "6,3",
+     "3 6",
+     "6 3",
+     "3-6",
+     "6-3",
+     "3/6",
+     "6/3",
+     "3 et 6.",
+     "les dessins 3 et 6",
+     "dessins 3 et 6"
+    ],
+    [
+     "en poussant et en tirant",
+     "poussant et tirant",
+     "en poussant et tirant",
+     "uniquement en poussant et en tirant"
+    ]
+   ],
+   "explication": "Sans roues et uniquement en tirant : dessin 2 (3 et 6 ne conviennent pas : on pousse). Avec roues : le dessin 1 se pousse et se tire, 4 et 5 seulement se poussent."
   },
   {
    "id": "ceb-2015-l6-q1",
@@ -2237,11 +2353,20 @@
    "livret": 6,
    "numero": "5c",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Prénom absent de la photo B.",
+   "type": "texte_court",
+   "enonce": "Observe la photo B et l'arbre généalogique (document G). Écris le prénom de l'enfant de Marcel Ladril qui n'apparait pas sur le document B.",
    "points": 0.5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "ladril-1",
+    "ladril-2"
+   ],
+   "reponse": [
+    "Marie",
+    "Marie Ladril"
+   ],
+   "explication": "La photo date de 1915 ; Marie n'est née qu'en 1919. (On ne pénalise pas si « Ladril » apparait.)"
   },
   {
    "id": "ceb-2015-l6-q6",
@@ -2249,13 +2374,15 @@
    "numero": "6",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Indice que H date de la Première Guerre mondiale.",
+   "enonce": "Le document H (la carte-lettre) a été écrit durant la Première Guerre mondiale. Écris un indice qui le montre.",
    "points": 0.5,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "carte-lettre"
    ],
-   "numerisable": false
+   "fiche": "hg-sources",
+   "reponseModele": "Un seul indice suffit (½ point). Acceptés : la date « 1914 » ; « Liège 1914 » ; le cachet ou le tampon ; l'écusson ; le rond au milieu du cachet.",
+   "explication": "Le cachet de la poste porte la date d'août 1914 : la guerre venait de commencer."
   },
   {
    "id": "ceb-2015-l6-q8",
@@ -2274,13 +2401,15 @@
    "numero": "10",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Deux éléments d'un paysage rural.",
+   "enonce": "Écris deux éléments caractéristiques d'un paysage rural, que tu vois sur la photo.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "rural"
    ],
-   "numerisable": false
+   "fiche": "hg-paysages",
+   "reponseModele": "Deux éléments parmi (1 point chacun) : des prairies ou des pâtures ; une ferme ; une grange ; un village ; une petite route (une seule route, route étroite) ; peu de maisons ; de la boue, un marécage ; ou la négation d'une caractéristique de la ville (par exemple : il n'y a pas de building). Les vaches ou le bétail sont acceptés. Refusés : « il fait beau », « des bâtiments », « c'est la campagne ».",
+   "explication": "Un paysage rural, c'est la campagne : des champs, des fermes, peu de maisons."
   },
   {
    "id": "ceb-2015-l6-q11",
@@ -3415,6 +3544,22 @@
    "explication": "Voir la partie D."
   },
   {
+   "id": "ceb-2015-l9-q13b",
+   "livret": 9,
+   "numero": "13b",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Voici une autre situation de communication : « Tu es allé voir un film au cinéma avec un ami. Tu n'as pas apprécié ce film. Comment le fais-tu comprendre à ton ami ? » Complète : « Tu … . C'est une mimique. » et « Tu … . C'est une communication verbale. »",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "comm-3"
+   ],
+   "reponseModele": "Mimique (1 point) : un mouvement du visage. Exemple : « Tu fais une grimace. » Communication verbale (1 point) : avec des mots. Exemple : « Tu lui dis que tu n'as pas aimé ce film. »",
+   "explication": "Une mimique, c'est une expression du visage ; la communication verbale utilise des mots."
+  },
+  {
    "id": "ceb-2015-l9-q14",
    "livret": 9,
    "numero": "14",
@@ -3671,33 +3816,107 @@
    "livret": 9,
    "numero": "8",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Le paragraphe reprend-il tout le schéma phonatoire ?",
+   "type": "texte_court",
+   "enonce": "Observe le schéma de l'appareil phonatoire et relis le paragraphe qui s'y rapporte (partie B). Ce paragraphe ne reprend pas toutes les informations du schéma. Écris le nom d'un élément du schéma qui n'est pas cité dans le paragraphe.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "comm-2"
+   ],
+   "reponse": [
+    "épiglotte",
+    "l'épiglotte",
+    "trachée",
+    "la trachée"
+   ],
+   "explication": "Le paragraphe parle de la langue, du palais, des dents, des cordes vocales et du larynx, mais pas de l'épiglotte ni de la trachée."
   },
   {
    "id": "ceb-2015-l9-q9",
    "livret": 9,
-   "numero": "9",
+   "numero": "9a",
+   "domaine": "fr.lire",
+   "type": "grille",
+   "enonce": "Relis la partie A « Les langages des animaux ». Que fait l'auteure pour aider le lecteur à comprendre le texte ? Pour chaque proposition, choisis oui ou non.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "comm-1"
+   ],
+   "lignes": [
+    "L'auteure donne des exemples.",
+    "L'auteure place des illustrations.",
+    "L'auteure ajoute des définitions.",
+    "L'auteure écrit certains mots autrement (en italique)."
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "explication": "Dans cette partie, l'auteure donne des exemples, place des illustrations, ajoute des définitions et écrit certains mots en italique."
+  },
+  {
+   "id": "ceb-2015-l9-q9b",
+   "livret": 9,
+   "numero": "9b",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Aides de l'auteure à la compréhension.",
-   "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "enonce": "Relis la partie B « Les langages des êtres humains ». L'auteure aide le lecteur à comprendre en donnant des exemples, en écrivant en italique, en reformulant… Recopie un exemple et un mot écrit en italique.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "comm-2"
+   ],
+   "reponseModele": "Un exemple au choix (1 point) : la main pour dire « Au revoir » ; le doigt sur la bouche ; un chien muni d'une laisse ; un feu rouge ; les moineaux pépient ; les lions rugissent ; les loups hurlent ; les chouettes hululent ; les poules caquètent. Un mot en italique (1 point) : langages, langues ou articulés.",
+   "explication": "Les mots en italique sont des mots importants que l'auteure veut mettre en évidence."
   },
   {
    "id": "ceb-2015-l9-q11",
    "livret": 9,
    "numero": "11",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Qui pose la question et à qui ?",
+   "type": "trous",
+   "enonce": "Relis cette phrase de la partie D « La communication non verbale des êtres humains » : « Que fais-tu parfois pour signifier que tu ne peux pas répondre à une question qu'on te pose ? » Complète. Sois précis.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "comm-3"
+   ],
+   "souple": true,
+   "texte": "Qui pose cette question ? {1}\nÀ qui cette question est-elle posée ? {2}",
+   "reponse": [
+    [
+     "l'auteure",
+     "l'auteur",
+     "Adèle Wanson",
+     "Adele Wanson",
+     "Wanson",
+     "l'auteure du texte",
+     "l'auteure, Adèle Wanson"
+    ],
+    [
+     "au lecteur",
+     "le lecteur",
+     "à celui qui lit",
+     "celui qui lit",
+     "à moi",
+     "au lecteur du texte",
+     "à celui qui lit le texte",
+     "à la lectrice",
+     "aux lecteurs"
+    ]
+   ],
+   "explication": "C'est l'auteure (Adèle Wanson) qui s'adresse directement à celui qui lit : « tu »."
   },
   {
    "id": "ceb-2015-l9-q21",
@@ -3715,11 +3934,35 @@
    "livret": 9,
    "numero": "22",
    "domaine": "fr.grammaire",
-   "type": "ouverte",
-   "enonce": "Analyse de la phrase.",
+   "type": "grille",
+   "enonce": "Analyse la phrase : « Pour signaler qu'elle a trouvé des fleurs, une abeille fait une sorte de danse que comprennent les autres abeilles. » Indique la fonction de chaque groupe.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-fonctions",
+   "documents": [
+    "comm-1"
+   ],
+   "lignes": [
+    "Pour signaler qu'elle a trouvé des fleurs",
+    "une abeille",
+    "fait",
+    "une sorte de danse que comprennent les autres abeilles"
+   ],
+   "colonnes": [
+    "Sujet",
+    "Verbe",
+    "Complément direct du verbe",
+    "Complément indirect du verbe",
+    "Complément circonstanciel",
+    "Attribut du sujet"
+   ],
+   "reponse": [
+    4,
+    0,
+    1,
+    2
+   ],
+   "explication": "Qui fait la danse ? une abeille (sujet). Elle fait quoi ? une sorte de danse (complément direct). « Pour signaler… » peut être déplacé ou supprimé : complément circonstanciel."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2015), comparé question par question le 21/10/2026."

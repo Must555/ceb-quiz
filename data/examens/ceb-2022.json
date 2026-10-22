@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2022",
  "source": "FWB, épreuve externe commune 2022 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2022-06-16",
    "points": 20,
    "audio": null,
-   "duree": 40
+   "duree": 40,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -311,9 +312,437 @@
    "titre": "Cinq, six bonheurs (4)",
    "fichier": "assets/2022/pdf35.webp",
    "alt": "La neige et la découverte du bonheur. Jean-Marc Mathis, Thierry Magnier, 2015."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Interview de Philippe Geluck, créateur du Chat",
+   "segments": [
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Philippe Geluck, personnalité belge reconnue, a aimablement accepté de participer à un entretien mené par les personnes qui ont conçu cette épreuve. Il nous parle de son parcours et de son personnage fétiche : « Le Chat »."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Bonjour Monsieur Geluck. Nous vous remercions de nous accorder cet entretien. Pour commencer, pourriez-vous vous présenter aux enfants en quelques mots ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Je m’appelle Philippe Geluck, je suis né à Bruxelles en 1954, je suis le créateur et l’auteur du Chat et j’ai pratiqué tout au long de ma vie différents métiers tels que comédien, animateur radio et animateur télé. Parallèlement, j’ai toujours dessiné et je n’ai jamais arrêté."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "À quel âge avez-vous commencé à créer des BD ? Qu’est-ce qui vous a donné envie de réaliser des BD ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "La première BD que j’ai réellement dessinée c’est à l’âge de 8 ou 9 ans. Ça s’appelait : « Les aventures d’Auguste ». J’en ai créé trois. Évidemment, ça n’a jamais été publié, ce sont des bricolages que je faisais pour moi à la maison. Puis, j’ai commencé à faire des dessins d’humour pour faire marrer ma famille. Et puis, des gens ont découvert ces dessins et ont eu envie de les publier. J’avais 16 ans à ce moment-là. Après ça, j’ai fait beaucoup d’expositions, avec des dessins à l’aquarelle et à l’encre de Chine, représentant des scènes humoristiques. En 1983, le journal « Le Soir » cherchait un dessinateur. C’est moi qui ai été choisi. J’avais inventé le Chat qui a plu et, avec ce Chat, je me suis mis à illustrer des articles chaque semaine dans le journal. J’ai ensuite été publié dans « À SUIVRE » qui était un magazine de bandes dessinées, et c’est là que je me suis mis à faire des planches de BD. Des planches de BD, ce sont des pages entières alors que, jusqu’à présent, je faisais des dessins isolés et des strips. Un strip, c’est une petite bande en trois cases, petite « bande » qui va d’ailleurs donner son nom à la bande dessinée … c’est donc de là que ça vient."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Pourquoi avez-vous choisi un chat ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Ça, c’est une histoire qui remonte à mon carton de mariage où je nous avais représentés, ma femme et moi, sous forme de chats pour remercier les amis de nous avoir fait des cadeaux. J’aurais pu choisir des lapins, des chiens et puis, on a choisi des chats parce qu’on trouvait que cela nous ressemblait. En plus, on avait un chat que l’on aimait beaucoup. Lorsque j’ai inventé Le Chat, trois ans plus tard, j’ai repensé à ma femme et moi dessinés comme cela. J’ai simplement pris le mâle, je l’ai mis debout, je lui ai mis un manteau et une cravate et je l’ai fait parler. Et voilà, Le Chat était né."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Quelles sont les caractéristiques du « Chat de Geluck » ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Première caractéristique, il parle au lecteur qu’il regarde dans les yeux car il s’adresse à lui, directement. Deuxième caractéristique, il peut parfois être très intelligent et dire des choses qu’auraient pu dire de grands philosophes. Troisième caractéristique, il peut être parfois très très bête et dire des choses, comme nous disons tous quand on veut faire rire les copains. Il n’a peur de rien, il a un avis sur tout et … surtout, il veut faire rire ses lecteurs."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Le « Chat » est-il toujours « comique » ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Ah ben justement, je disais juste avant qu’il veut toujours faire rire ses lecteurs, mais ce n’est pas tout à fait vrai. Parfois, il veut les émouvoir, il veut les faire réfléchir, il veut les épater, il veut les surprendre, mais il faut bien reconnaitre que la plupart du temps, c’est à travers le rire qu’il y parvient. Je crois qu’on peut faire rire pour faire réfléchir, on peut faire rire pour surprendre, et on peut faire rire pour émouvoir. Pour moi, un dessin vraiment réussi, c’est un dessin qui fait d’abord rire, ensuite réfléchir, et au bout du compte qui provoque une émotion."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Où puisez-vous votre inspiration pour créer vos histoires du « Chat » ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Dans ma tête. Voilà un endroit où naissent les gags. Je n’ai aucune idée de comment ils naissent. Je sais parfois d’où ils viennent : d’un fait divers, de l’actualité, de la lecture d’un journal, de l’écoute d’une émission de radio, d’une phrase que j’entends à la gare, dans le train, n’importe où, et que je transforme dans ma tête pour en faire un gag. Mais je n’ai pas de recette. C’est-à-dire que je ne sais pas comment fabriquer un gag."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Quand le chat n’habite pas vos albums, où vit-il ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Voilà une question rigolote. Je ne peux pas vous révéler l’endroit où il vit exactement, ni vous donner son adresse ou son numéro de téléphone parce qu’il y a tellement de gens qui iraient lui rendre visite qu’il n’aurait plus de temps à me consacrer. Sa vie privée est sacrée donc je ne peux pas vous le dire ! Mais, je vais vous révéler un secret : en fait, il y a un endroit où personne ne peut aller et où se trouve Le Chat. Là où il vit, c'est dans ma tête. Et j’espère que là où il va continuer à vivre longtemps, c'est dans la vôtre !"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Philippe Geluck",
+     "texte": "Voilà, merci pour toutes ces excellentes questions !"
+    },
+    {
+     "lecteur": 1,
+     "qui": "Journaliste",
+     "texte": "Merci à vous, Philippe Geluck, pour le temps que vous nous avez consacré."
+    }
+   ],
+   "source": "Correctif officiel CEB 2022, support du Savoir écouter"
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2022-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Ce que tu viens d'entendre est principalement…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "une histoire.",
+    "une explication sur les BD.",
+    "un compte-rendu d'une visite.",
+    "une interview d'une personnalité.",
+    "un exposé sur la vie du Chat."
+   ],
+   "reponse": 3,
+   "explication": "Une personne pose des questions et Philippe Geluck y répond : c'est une interview (un entretien)."
+  },
+  {
+   "id": "ceb-2022-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Qui interroge Philippe Geluck durant cet entretien ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Un élève d'une classe de 6e année",
+    "Un auteur célèbre de bande dessinée",
+    "Un animateur de radio",
+    "Une personne qui a conçu cette épreuve"
+   ],
+   "reponse": 3,
+   "explication": "Au début, on dit que Philippe Geluck a accepté un entretien mené par les personnes qui ont conçu l'épreuve."
+  },
+  {
+   "id": "ceb-2022-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici cinq moments de la vie de Philippe Geluck. Remets-les dans l'ordre chronologique de sa vie.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "J'ai réellement dessiné ma première BD à l'âge de 8 ou 9 ans.",
+    "J'ai été choisi par le journal Le Soir.",
+    "Je suis né en 1954.",
+    "J'ai inventé le personnage du Chat.",
+    "Des gens ont voulu publier mes dessins d'humour."
+   ],
+   "reponse": [
+    2,
+    0,
+    4,
+    3,
+    1
+   ],
+   "explication": "Il naît en 1954, dessine sa première BD à 8 ou 9 ans, puis des gens veulent publier ses dessins (à 16 ans). En 1983, Le Soir le choisit et il invente le Chat."
+  },
+  {
+   "id": "ceb-2022-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'information est-elle donnée durant l'entretien ?",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "La manière dont Le Chat s'adresse au lecteur",
+    "Le lieu où Philippe Geluck a exposé ses dessins humoristiques",
+    "L'origine du nom « bande dessinée »"
+   ],
+   "colonnes": [
+    "L'information est donnée durant l'entretien",
+    "L'information n'est pas donnée durant l'entretien"
+   ],
+   "reponse": [
+    0,
+    1,
+    0
+   ],
+   "explication": "Le Chat parle au lecteur en le regardant dans les yeux, et le mot « bande » vient des strips. Mais Philippe Geluck ne dit pas où il a exposé ses dessins."
+  },
+  {
+   "id": "ceb-2022-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Une élève affirme : « Le Chat de Geluck fait rire… et seulement rire ! » A-t-elle raison ? Réponds OUI ou NON, puis justifie à l'aide d'un élément de l'entretien.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "NON. Le Chat veut aussi émouvoir, faire réfléchir, épater ou surprendre (au moins une de ces idées). Ne pas répondre : enjoindre, faire la leçon, faire la morale, persuader. On accepte aussi OUI avec la justification : il veut les faire rire, mais en fait, après, on est ému et on réfléchit. La justification doit correspondre à la réponse choisie (oui ou non).",
+   "explication": "Philippe Geluck dit que Le Chat veut presque toujours faire rire, mais aussi émouvoir, faire réfléchir, épater ou surprendre."
+  },
+  {
+   "id": "ceb-2022-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Un timbre reproduit un dessin du Chat de Philippe Geluck. S'agit-il d'un strip ou d'un dessin isolé ? Justifie à l'aide d'un élément de l'entretien.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "numerisable": false,
+   "reponseModele": "Un dessin isolé : il s'agit d'un seul dessin (en une case) et pas de trois. Ou : un strip, c'est une petite bande en trois cases.",
+   "explication": "Un strip est une petite bande en trois cases ; un dessin isolé est un seul dessin."
+  },
+  {
+   "id": "ceb-2022-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Tu veux expliquer pourquoi Philippe Geluck a choisi un chat comme personnage. Coche l'information dont tu as besoin.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Philippe Geluck dessine depuis l'âge de 8 ans.",
+    "Philippe Geluck a repensé à son carton de mariage.",
+    "Philippe Geluck aime réaliser des dessins d'humour.",
+    "Philippe Geluck a exercé différents métiers."
+   ],
+   "reponse": 1,
+   "explication": "Il a repensé à son carton de mariage, où sa femme et lui étaient dessinés en chats : c'est l'origine du choix du chat."
+  },
+  {
+   "id": "ceb-2022-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pour quelle raison Les Aventures d'Auguste n'ont-elles jamais été publiées ? Écris ta réponse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "C'étaient des bricolages qu'il faisait pour lui, à la maison. On accepte aussi : il était trop (très) jeune ou trop petit, il n'avait que 8 ans, ou c'était son passe-temps.",
+   "explication": "Ces BD étaient des bricolages faits pour lui, à la maison, quand il avait 8 ou 9 ans."
+  },
+  {
+   "id": "ceb-2022-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "L'entretien permet-il de dire que c'est vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Philippe Geluck dessine Le Chat depuis qu'il est enfant.",
+    "Philippe Geluck a une recette pour créer un gag."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    1,
+    1
+   ],
+   "explication": "Il a inventé Le Chat en 1983, à l'âge adulte (enfant, il dessinait d'autres BD). Et il dit qu'il n'a pas de recette pour fabriquer un gag."
+  },
+  {
+   "id": "ceb-2022-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "À la fin de l'entretien, Philippe Geluck nous révèle un secret sur Le Chat. Écris ce secret.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Il y a un endroit où personne ne peut aller et où se trouve Le Chat : dans la tête de Philippe Geluck. Ou : il espère que Le Chat continuera à vivre longtemps dans la tête de tous. (Ou toute idée allant dans ce sens.)",
+   "explication": "Le secret : Le Chat vit dans la tête de Philippe Geluck, et il espère qu'il vivra aussi longtemps dans la nôtre."
+  },
+  {
+   "id": "ceb-2022-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Avec humour, Philippe Geluck dit qu'il ne peut pas donner l'adresse et le numéro de téléphone du Chat car, selon lui…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Le Chat déménage trop souvent.",
+    "Le Chat a droit à une vie privée.",
+    "Le Chat déteste être dérangé.",
+    "Le Chat deviendrait célèbre."
+   ],
+   "reponse": 1,
+   "explication": "Il dit que la vie privée du Chat est sacrée : trop de gens iraient lui rendre visite."
+  },
+  {
+   "id": "ceb-2022-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Parmi ces quatre questions, une seule n'a pas été posée à Philippe Geluck. Choisis cette question.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Quel autre animal auriez-vous pu choisir comme héros ?",
+    "À quel âge avez-vous commencé à créer des BD ?",
+    "Le Chat est-il toujours comique ?",
+    "Pourriez-vous vous présenter aux enfants en quelques mots ?"
+   ],
+   "reponse": 0,
+   "explication": "On ne lui a pas demandé quel autre animal il aurait pu choisir. Il explique seulement pourquoi il a choisi un chat."
+  },
+  {
+   "id": "ceb-2022-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Pour Philippe Geluck, un dessin vraiment réussi doit d'abord…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "émouvoir ses lecteurs.",
+    "faire rire ses lecteurs.",
+    "faire réfléchir ses lecteurs.",
+    "surprendre ses lecteurs."
+   ],
+   "reponse": 1,
+   "explication": "Pour lui, un dessin réussi fait d'abord rire, ensuite réfléchir, et au bout du compte provoque une émotion."
+  },
+  {
+   "id": "ceb-2022-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Cet entretien permet…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "de prendre du plaisir en découvrant les gags du Chat.",
+    "de découvrir qui est Le Chat de Philippe Geluck.",
+    "de s'informer sur la manière dont Le Chat fait réfléchir les lecteurs.",
+    "d'apprendre les techniques de construction d'une BD."
+   ],
+   "reponse": 1,
+   "explication": "Philippe Geluck présente son parcours et son personnage : l'entretien sert à découvrir qui est Le Chat."
+  },
+  {
+   "id": "ceb-2022-l1-q15",
+   "livret": 1,
+   "numero": "15",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque résumé, indique s'il correspond à l'entretien que tu viens d'entendre. Premier résumé : « Dans cet entretien, Philippe Geluck explique comment il est devenu dessinateur et pourquoi il veut que Le Chat soit toujours comique. » Deuxième résumé : « Dans cet entretien, Philippe Geluck explique comment est né Le Chat, les intentions qu'il poursuit en créant ses gags. Il parle aussi de lui et des différents métiers qu'il a exercés tout au long de sa vie. » Troisième résumé : « Dans cet entretien, Philippe Geluck répond à des questions qui concernent uniquement son personnage fétiche : Le Chat. »",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Premier résumé",
+    "Deuxième résumé",
+    "Troisième résumé"
+   ],
+   "colonnes": [
+    "Oui",
+    "Non"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "Le Chat ne veut pas toujours être comique (premier résumé faux), et l'entretien parle aussi de Philippe Geluck lui-même (troisième résumé faux). Le deuxième résume bien l'entretien."
+  },
   {
    "id": "ceb-2022-l2-q1",
    "livret": 2,
@@ -439,8 +868,11 @@
    "type": "ouverte",
    "enonce": "Nomme les polygones formés par les réglettes.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Un triangle isocèle acutangle (1 pt). b) Un triangle équilatéral OU un triangle acutangle (1 pt). c) Ce polygone est un pentagone (1 pt).",
+   "explication": "Compte les côtés et regarde les angles et les longueurs des côtés.",
+   "remarque": "Question appuyée sur les assemblages de réglettes du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q2d",
@@ -474,8 +906,11 @@
    "type": "ouverte",
    "enonce": "Robot Thymio : écris les cases du chemin le plus court et réponds par vrai ou faux.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Chemin le plus court : G5, F5, F4, E4, D4, D5, D6, D7 (1 pt ; G5 peut être écrite une seconde fois). b) VRAI, FAUX, FAUX (1 pt chacun).",
+   "explication": "Suis les cases grisées une à une, sans revenir en arrière.",
+   "remarque": "Question appuyée sur le plan du robot Thymio du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q6",
@@ -485,8 +920,11 @@
    "type": "ouverte",
    "enonce": "Retrouve le critère de classement des polygones.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "a) Un critère au choix : les hexagones / 6 côtés ou 6 angles / plus de 5 côtés ou plus de 5 angles / plus de 4 côtés ou plus de 4 angles (1 pt). b) Un critère au choix : les quadrilatères / les trapèzes / 4 côtés / 4 angles (1 pt).",
+   "explication": "Cherche ce que les polygones du tableau « OUI » ont tous en commun.",
+   "remarque": "Question appuyée sur les dessins de polygones du livret que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l3-q7",
@@ -713,7 +1151,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Une élève dit : « Il n'y a que la liseuse qui permet de lire des livres numériques. » D'après le texte ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -722,9 +1160,26 @@
    ],
    "choix": [
     "Vrai",
-    "Faux : on peut aussi lire sur un ordinateur, un smartphone ou une tablette."
+    "Faux"
    ],
    "reponse": 1,
+   "explication": "Le texte cite plusieurs supports pour lire un livre numérique. Justifie maintenant ta réponse sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2022-l4-q7-j",
+   "livret": 4,
+   "numero": "7 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Une élève dit : Il n'y a que la liseuse qui permet de lire des livres numériques. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "num-1",
+    "num-3"
+   ],
+   "reponseModele": "On peut lire un livre numérique avec un ordinateur, un smartphone ou une tablette (au moins un de ces éléments). Accepté aussi : « Il existe d'autres supports pour lire un livre numérique. »",
    "explication": "Le texte cite l'ordinateur, le smartphone, la tablette et la liseuse."
   },
   {
@@ -1006,22 +1461,61 @@
    "livret": 4,
    "numero": "9",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Recopie le mot du texte qui donne la signification de chaque pictogramme.",
+   "type": "trous",
+   "enonce": "Dans le texte « Le livre numérique », chaque pictogramme a une signification. Recopie le mot du texte qui donne la signification de chaque pictogramme.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-paratexte",
+   "documents": [
+    "num-3"
+   ],
+   "texte": "Le pictogramme du pouce vers le bas signifie : {1}  ·  Le pictogramme du pouce vers le haut signifie : {2}",
+   "reponse": [
+    [
+     "Inconvénient",
+     "Inconvénients",
+     "Inconvénient(s)",
+     "un inconvénient",
+     "des inconvénients"
+    ],
+    [
+     "Avantage",
+     "Avantages",
+     "Avantage(s)",
+     "un avantage",
+     "des avantages"
+    ]
+   ],
+   "explication": "Le pouce vers le bas annonce les inconvénients, le pouce vers le haut les avantages."
   },
   {
    "id": "ceb-2022-l4-q19",
    "livret": 4,
    "numero": "19",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Indique la fonction des mots soulignés dans trois phrases.",
+   "type": "grille",
+   "enonce": "Indique la fonction du groupe de mots entre crochets dans chaque phrase.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-sujet-complements",
+   "lignes": [
+    "Plus de la moitié des lecteurs interrogés ont recours [aux deux versions].",
+    "Tu dois [le] télécharger sur Internet.",
+    "Pour eux, [le livre numérique] n'offre pas le même ressenti."
+   ],
+   "colonnes": [
+    "(Groupe) sujet",
+    "Complément direct du verbe",
+    "Complément indirect du verbe",
+    "Complément circonstanciel (de phrase)",
+    "Attribut du sujet"
+   ],
+   "reponse": [
+    2,
+    1,
+    0
+   ],
+   "explication": "« ont recours à » : complément indirect ; « le » (= le livre) répond à « télécharger quoi ? » : complément direct ; « le livre numérique » fait l'action : sujet."
   },
   {
    "id": "ceb-2022-l5-q1",
@@ -1647,11 +2141,30 @@
    "livret": 5,
    "numero": "8f",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Écris la date de la cérémonie de clôture.",
+   "type": "trous",
+   "enonce": "Lis les informations sur le Festival olympique de la jeunesse. Écris la date complète de la cérémonie de clôture du festival, en respectant le format de cet exemple : la date de la fête nationale belge est le jeudi 21 juillet 2022.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "festival"
+   ],
+   "texte": "La cérémonie de clôture a lieu le {1} {2} {3} {4}.",
+   "reponse": [
+    [
+     "samedi"
+    ],
+    [
+     "30"
+    ],
+    [
+     "juillet"
+    ],
+    [
+     "2022"
+    ]
+   ],
+   "explication": "La cérémonie de clôture est le samedi 30 juillet 2022."
   },
   {
    "id": "ceb-2022-l5-q11",
@@ -2373,7 +2886,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "Un enfant dit : « Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. » D'après le texte ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
@@ -2382,9 +2895,26 @@
    ],
    "choix": [
     "Vrai",
-    "Faux : il ne comprenait rien à la définition du dictionnaire."
+    "Faux"
    ],
    "reponse": 1,
+   "explication": "Relis le passage où Théophile cherche dans le dictionnaire. Justifie maintenant ta réponse sur la fiche suivante."
+  },
+  {
+   "id": "ceb-2022-l7-q6-j",
+   "livret": 7,
+   "numero": "6 (justification)",
+   "domaine": "fr.lire",
+   "type": "ouverte",
+   "enonce": "Tu as répondu à la question « Un enfant dit : Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "bonheur-2",
+    "bonheur-3"
+   ],
+   "reponseModele": "Il ne comprend rien à cette définition ; ou : toutes les réponses ne sont pas dans les livres. Toute reformulation dans ce sens est acceptée (par exemple : il n'a pas trouvé ce qu'il voulait).",
    "explication": "« Je ne comprenais rien à cette définition. […] J'étais dégoûté. »"
   },
   {
@@ -3943,8 +4473,11 @@
    "type": "ouverte",
    "enonce": "Écris le sens lié à chaque illustration.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "numerisable": false,
+   "reponseModele": "Il fallait écrire le nom du sens sur chaque étiquette du chaton : l'ouïe (l'oreille), l'odorat (le nez), le toucher (la patte). 1 point par bon sens.",
+   "explication": "Les cinq sens : la vue, l'ouïe, l'odorat, le goût et le toucher.",
+   "remarque": "Question appuyée sur les illustrations du livret (chaton) que nous n'avons pas : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l9-q3",
