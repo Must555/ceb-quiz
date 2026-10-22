@@ -322,6 +322,294 @@
     }
    ],
    "source": "Correctif officiel CEB 2018, support du Savoir écouter"
+  },
+  {
+   "id": "liv1-p15",
+   "source": "livret",
+   "livret": 1,
+   "page": 15,
+   "titre": "Trois croquis de paysage",
+   "fichier": "assets/2018/liv1-p15.webp",
+   "alt": "Trois croquis de paysage numérotés de 1 à 3, avec des arbres et un relief différent."
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Le développement d'un solide",
+   "fichier": "assets/2018/liv3-p04.webp",
+   "alt": "Le développement d'un solide, dessiné à plat."
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Un cube et cinq développements",
+   "fichier": "assets/2018/liv3-p05.webp",
+   "alt": "Un cube dont trois faces visibles portent un soleil, un flocon et un nuage, et cinq développements numérotés de 1 à 5."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Sept modèles à comparer",
+   "fichier": "assets/2018/liv3-p06.webp",
+   "alt": "Une figure sur quadrillage grisé, puis sept modèles dessinés sur un quadrillage, numérotés de 1 à 7."
+  },
+  {
+   "id": "liv3-p08",
+   "source": "livret",
+   "livret": 3,
+   "page": 8,
+   "titre": "Huit figures",
+   "fichier": "assets/2018/liv3-p08.webp",
+   "alt": "Huit figures géométriques numérotées de 1 à 8."
+  },
+  {
+   "id": "liv3-p12",
+   "source": "livret",
+   "livret": 3,
+   "page": 12,
+   "titre": "Quatre tracés dans un quadrillage",
+   "fichier": "assets/2018/liv3-p12.webp",
+   "alt": "Quatre tracés numérotés de 1 à 4 dans un quadrillage, avec des points nommés A à G."
+  },
+  {
+   "id": "liv3-p13",
+   "source": "livret",
+   "livret": 3,
+   "page": 13,
+   "titre": "Une construction vue par un personnage",
+   "fichier": "assets/2018/liv3-p13.webp",
+   "alt": "Une construction en blocs, un personnage qui l'observe et quatre dessins numérotés de 1 à 4."
+  },
+  {
+   "id": "liv3-p14",
+   "source": "livret",
+   "livret": 3,
+   "page": 14,
+   "titre": "Quatre figures A à D",
+   "fichier": "assets/2018/liv3-p14.webp",
+   "alt": "Quatre figures grises nommées A, B, C et D."
+  },
+  {
+   "id": "liv3-p16",
+   "source": "livret",
+   "livret": 3,
+   "page": 16,
+   "titre": "Boîte de construction et deux solides",
+   "fichier": "assets/2018/liv3-p16.webp",
+   "alt": "Le contenu d'une boîte de construction (boules de pâte et bâtonnets longs, moyens et courts), un tableau à compléter et deux solides, A et B."
+  },
+  {
+   "id": "liv4-p03",
+   "source": "livret",
+   "livret": 4,
+   "page": 3,
+   "titre": "Fractions de bandes",
+   "fichier": "assets/2018/liv4-p03.webp",
+   "alt": "Des bandes rectangulaires à colorier, puis deux bandes partiellement grisées, numérotées 1 et 2."
+  },
+  {
+   "id": "liv4-p05",
+   "source": "livret",
+   "livret": 4,
+   "page": 5,
+   "titre": "Fractions d'un disque",
+   "fichier": "assets/2018/liv4-p05.webp",
+   "alt": "Un disque partagé en huit secteurs égaux, dont certains sont grisés."
+  },
+  {
+   "id": "liv4-p06",
+   "source": "livret",
+   "livret": 4,
+   "page": 6,
+   "titre": "Quatre représentations d'une situation",
+   "fichier": "assets/2018/liv4-p06.webp",
+   "alt": "Quatre grilles de petits carrés de couleurs différentes, numérotées de 1 à 4."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "Aire de cinq figures",
+   "fichier": "assets/2018/liv4-p09.webp",
+   "alt": "Cinq figures grisées nommées A à E sur un quadrillage, avec un petit carré qui représente 1 unité."
+  },
+  {
+   "id": "liv4-p11",
+   "source": "livret",
+   "livret": 4,
+   "page": 11,
+   "titre": "Une figure en pourcentage et des trajets",
+   "fichier": "assets/2018/liv4-p11.webp",
+   "alt": "Une figure quadrillée dont certains carrés sont grisés, et une liste de cinq distances."
+  },
+  {
+   "id": "liv4-p16",
+   "source": "livret",
+   "livret": 4,
+   "page": 16,
+   "titre": "Un téléphone et une horloge",
+   "fichier": "assets/2018/liv4-p16.webp",
+   "alt": "Un téléphone et une horloge à aiguilles."
+  },
+  {
+   "id": "liv5-p04",
+   "source": "livret",
+   "livret": 5,
+   "page": 4,
+   "titre": "Quatre situations d'arrosage",
+   "fichier": "assets/2018/liv5-p04.webp",
+   "alt": "Quatre situations avec des graines de lentille dans un bol, numérotées de 1 à 4."
+  },
+  {
+   "id": "liv5-p06",
+   "source": "livret",
+   "livret": 5,
+   "page": 6,
+   "titre": "Le cycle de l'eau à compléter",
+   "fichier": "assets/2018/liv5-p06.webp",
+   "alt": "Un schéma du cycle de l'eau avec quatre étiquettes vides numérotées de 1 à 4 et une liste de cinq termes."
+  },
+  {
+   "id": "liv5-p08",
+   "source": "livret",
+   "livret": 5,
+   "page": 8,
+   "titre": "L'alimentation des nappes phréatiques",
+   "fichier": "assets/2018/liv5-p08.webp",
+   "alt": "Un schéma d'un arbre sous la pluie avec des flèches numérotées ou marquées d'une lettre de A à D, et une légende de six phrases."
+  },
+  {
+   "id": "liv5-p10",
+   "source": "livret",
+   "livret": 5,
+   "page": 10,
+   "titre": "La croissance du haricot et du blé",
+   "fichier": "assets/2018/liv5-p10.webp",
+   "alt": "Deux graphiques en bâtonnets : hauteur de la tige du haricot selon la date, hauteur de la tige du blé selon l'apport d'eau."
+  },
+  {
+   "id": "liv5-p19",
+   "source": "livret",
+   "livret": 5,
+   "page": 19,
+   "titre": "Cinq photos de sportives",
+   "fichier": "assets/2018/liv5-p19.webp",
+   "alt": "Cinq photos numérotées de 1 à 5 montrant des sportives avec le bras entouré."
+  },
+  {
+   "id": "liv5-p22",
+   "source": "livret",
+   "livret": 5,
+   "page": 22,
+   "titre": "Le cycle de vie de la grenouille",
+   "fichier": "assets/2018/liv5-p22.webp",
+   "alt": "Un cycle avec une étiquette donnée (Ponte des œufs) et cinq étiquettes vides numérotées de 1 à 5."
+  },
+  {
+   "id": "liv5-p24",
+   "source": "livret",
+   "livret": 5,
+   "page": 24,
+   "titre": "Circuits électriques 1 et 2",
+   "fichier": "assets/2018/liv5-p24.webp",
+   "alt": "Deux montages électriques numérotés 1 et 2 : pile, ampoule, fils et plaque."
+  },
+  {
+   "id": "liv5-p25",
+   "source": "livret",
+   "livret": 5,
+   "page": 25,
+   "titre": "Circuits électriques 3 et 4",
+   "fichier": "assets/2018/liv5-p25.webp",
+   "alt": "Deux montages électriques numérotés 3 et 4 : pile, ampoule, fils et plaque."
+  },
+  {
+   "id": "liv6-p03",
+   "source": "livret",
+   "livret": 6,
+   "page": 3,
+   "titre": "Six couvertures de livres",
+   "fichier": "assets/2018/liv6-p03.webp",
+   "alt": "Six couvertures de livres numérotées de 1 à 6."
+  },
+  {
+   "id": "liv6-p09",
+   "source": "livret",
+   "livret": 6,
+   "page": 9,
+   "titre": "Quatre flèches autour d'un rayon de ruche",
+   "fichier": "assets/2018/liv6-p09.webp",
+   "alt": "Une photo d'un rayon de ruche entouré de quatre flèches numérotées de 1 à 4."
+  },
+  {
+   "id": "liv7-p05",
+   "source": "livret",
+   "livret": 7,
+   "page": 5,
+   "titre": "Pertes humaines de la Première Guerre mondiale",
+   "fichier": "assets/2018/liv7-p05.webp",
+   "alt": "Graphique en barres : civils morts et soldats morts pour six pays."
+  },
+  {
+   "id": "liv7-p12",
+   "source": "livret",
+   "livret": 7,
+   "page": 12,
+   "titre": "Une photographie de paysage",
+   "fichier": "assets/2018/liv7-p12.webp",
+   "alt": "Une photographie aérienne d'une ville, avec l'avant-plan et l'arrière-plan indiqués, et un tableau de cases à entourer."
+  },
+  {
+   "id": "liv7-p15",
+   "source": "livret",
+   "livret": 7,
+   "page": 15,
+   "titre": "Plan de la Région de Bruxelles-Capitale",
+   "fichier": "assets/2018/liv7-p15.webp",
+   "alt": "Un plan des communes de la Région de Bruxelles-Capitale, dont une est coloriée en noir."
+  },
+  {
+   "id": "liv7-p20",
+   "source": "livret",
+   "livret": 7,
+   "page": 20,
+   "titre": "Schéma de deux cours d'eau",
+   "fichier": "assets/2018/liv7-p20.webp",
+   "alt": "Un schéma de deux cours d'eau avec quatre numéros, et trois légendes A, B et C."
+  },
+  {
+   "id": "liv7-p21",
+   "source": "livret",
+   "livret": 7,
+   "page": 21,
+   "titre": "Photo satellite d'un cours d'eau",
+   "fichier": "assets/2018/liv7-p21.webp",
+   "alt": "Une photo satellite avec une partie entourée."
+  },
+  {
+   "id": "liv8-p11",
+   "source": "livret",
+   "livret": 8,
+   "page": 11,
+   "titre": "Des étoiles",
+   "fichier": "assets/2018/liv8-p11.webp",
+   "alt": "Un cadre rempli d'étoiles grises."
+  },
+  {
+   "id": "liv8-p14",
+   "source": "livret",
+   "livret": 8,
+   "page": 14,
+   "titre": "Décomposer 0,54",
+   "fichier": "assets/2018/liv8-p14.webp",
+   "alt": "Un arbre de décomposition à compléter, avec 0,54 en haut."
   }
  ],
  "questions": [
@@ -903,11 +1191,21 @@
    "livret": 1,
    "numero": "25",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Entoure le croquis qui représente le paysage de l'histoire.",
+   "type": "qcm",
+   "enonce": "Observe les trois croquis du livret (page 15), numérotés de 1 à 3. Entoure le croquis qui représente le paysage de cette histoire.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "liv1-p15"
+   ],
+   "choix": [
+    "Croquis 1",
+    "Croquis 2",
+    "Croquis 3"
+   ],
+   "reponse": 2,
+   "explication": "Le paysage de l'histoire est une vallée creuse avec des arbres sur les deux versants : c'est le croquis 3."
   },
   {
    "id": "ceb-2018-l2-q1",
@@ -947,33 +1245,75 @@
    "livret": 3,
    "numero": "3",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nombre de faces, arêtes et sommets du solide développé.",
+   "type": "trous",
+   "enonce": "Voici le développement d'un solide (livret, page 4). Complète : combien ce solide possède-t-il de faces, d'arêtes et de sommets ?",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-developpements",
+   "documents": [
+    "liv3-p04"
+   ],
+   "texte": "Ce solide possède {1} faces, {2} arêtes, {3} sommets.",
+   "reponse": [
+    [
+     "5"
+    ],
+    [
+     "8"
+    ],
+    [
+     "5"
+    ]
+   ],
+   "explication": "C'est une pyramide à base carrée : 5 faces (1 carré et 4 triangles), 8 arêtes (4 à la base et 4 latérales) et 5 sommets."
   },
   {
    "id": "ceb-2018-l3-q4",
    "livret": 3,
    "numero": "4",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le développement du cube.",
+   "type": "qcm",
+   "enonce": "Observe le cube et les cinq développements numérotés de 1 à 5 (livret, page 5). Entoure le développement qui correspond à ce cube.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-developpements",
+   "documents": [
+    "liv3-p05"
+   ],
+   "choix": [
+    "Développement 1",
+    "Développement 2",
+    "Développement 3",
+    "Développement 4",
+    "Développement 5"
+   ],
+   "reponse": 1,
+   "explication": "Sur le cube, le soleil est devant, le flocon à droite et le nuage au-dessus : seul le développement 2 respecte ces positions."
   },
   {
    "id": "ceb-2018-l3-q5",
    "livret": 3,
    "numero": "5",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Entoure le modèle réduit en respectant les proportions.",
+   "type": "qcm",
+   "enonce": "Observe (livret, page 6) les sept modèles numérotés de 1 à 7. Entoure le modèle qui a été réduit en respectant les proportions.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-proportionnalite",
+   "documents": [
+    "liv3-p06"
+   ],
+   "choix": [
+    "Modèle 1",
+    "Modèle 2",
+    "Modèle 3",
+    "Modèle 4",
+    "Modèle 5",
+    "Modèle 6",
+    "Modèle 7"
+   ],
+   "reponse": 1,
+   "explication": "Le modèle mesure 14 carreaux de long et 10 de haut (roues comprises). Le modèle 2 mesure 7 carreaux sur 5 : toutes les longueurs, fenêtres et roues comprises, sont divisées par 2."
   },
   {
    "id": "ceb-2018-l3-q6",
@@ -989,13 +1329,72 @@
   {
    "id": "ceb-2018-l3-q7",
    "livret": 3,
-   "numero": "7",
+   "numero": "7a",
+   "domaine": "ma.geometrie",
+   "type": "trous",
+   "enonce": "Observe les huit figures numérotées de 1 à 8 (livret, page 8). Complète avec les numéros des figures.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p08"
+   ],
+   "texte": "2 polygones irréguliers : n° {1} et n° {2}\n2 quadrilatères : n° {3} et n° {4}\n2 hexagones : n° {5} et n° {6}",
+   "reponse": [
+    [
+     "1",
+     "2",
+     "4",
+     "5",
+     "7",
+     "8"
+    ],
+    [
+     "1",
+     "2",
+     "4",
+     "5",
+     "7",
+     "8"
+    ],
+    [
+     "1",
+     "7",
+     "8"
+    ],
+    [
+     "1",
+     "7",
+     "8"
+    ],
+    [
+     "2",
+     "3",
+     "5"
+    ],
+    [
+     "2",
+     "3",
+     "5"
+    ]
+   ],
+   "explication": "Polygones irréguliers possibles : 1, 2, 4, 5, 7, 8 (pas les figures régulières 3 et 6). Quadrilatères : 1, 7, 8. Hexagones : 2, 3, 5. Chaque ligne demande deux numéros différents."
+  },
+  {
+   "id": "ceb-2018-l3-q7b",
+   "livret": 3,
+   "numero": "7b",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Classe les huit figures et donne deux propriétés communes.",
-   "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "enonce": "Les figures 3 et 6 (livret, page 8) ont plusieurs propriétés géométriques communes. Écris deux de ces propriétés.",
+   "points": 2,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p08"
+   ],
+   "reponseModele": "Par exemple : tous les côtés ont la même longueur ; tous les angles ont la même mesure ; ce sont des polygones réguliers (1 point par propriété correcte).",
+   "explication": "La figure 3 est un hexagone régulier et la figure 6 un triangle équilatéral : ce sont deux polygones réguliers.",
+   "corrigeVerifie": true
   },
   {
    "id": "ceb-2018-l3-q8",
@@ -1035,33 +1434,79 @@
    "livret": 3,
    "numero": "11",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Retrouve le tracé qui contient les trois figures.",
+   "type": "qcm",
+   "enonce": "Observe les quatre tracés numérotés de 1 à 4 dans le quadrillage (livret, page 12). Un seul tracé comprend les trois figures suivantes : un rectangle ABDC ; un trapèze isocèle EFBA ; un triangle équilatéral AGC. Entoure le numéro qui correspond à ce tracé.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p12"
+   ],
+   "choix": [
+    "Tracé 1",
+    "Tracé 2",
+    "Tracé 3",
+    "Tracé 4"
+   ],
+   "reponse": 2,
+   "explication": "Seul le tracé 3 contient le rectangle ABDC, le trapèze isocèle EFBA et le triangle équilatéral AGC."
   },
   {
    "id": "ceb-2018-l3-q12",
    "livret": 3,
    "numero": "12",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Que verrait le personnage ?",
+   "type": "qcm",
+   "enonce": "Observe la construction et le personnage (livret, page 13). Si tu l'observais comme le personnage, que verrais-tu ? Entoure le bon dessin parmi les quatre dessins numérotés de 1 à 4.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-representations",
+   "documents": [
+    "liv3-p13"
+   ],
+   "choix": [
+    "Dessin 1",
+    "Dessin 2",
+    "Dessin 3",
+    "Dessin 4"
+   ],
+   "reponse": 2,
+   "explication": "C'est le dessin 3 qui correspond à la vue du personnage."
   },
   {
    "id": "ceb-2018-l3-q13",
    "livret": 3,
    "numero": "13",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Classe les figures selon leur nombre d'axes de symétrie.",
+   "type": "grille",
+   "enonce": "Observe les figures A, B, C et D (livret, page 14). Classe-les selon leur nombre d'axes de symétrie maximum.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p14"
+   ],
+   "lignes": [
+    "Figure A",
+    "Figure B",
+    "Figure C",
+    "Figure D"
+   ],
+   "colonnes": [
+    "aucun axe",
+    "1 axe",
+    "2 axes",
+    "4 axes",
+    "6 axes",
+    "une infinité d'axes"
+   ],
+   "reponse": [
+    5,
+    2,
+    3,
+    1
+   ],
+   "explication": "A (le disque) : une infinité d'axes ; B : 2 axes ; C (le carré) : 4 axes ; D : 1 axe."
   },
   {
    "id": "ceb-2018-l3-q14",
@@ -1080,10 +1525,15 @@
    "numero": "15",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Pièces nécessaires pour construire les solides.",
+   "enonce": "Voici le contenu d'une boîte de construction de solides (livret, page 16). Tu veux construire les deux solides A et B. Écris le nombre de pièces nécessaires pour réaliser ces constructions : boules (sommets), bâtonnets longs, moyens et courts, pour chaque solide.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-solides",
+   "documents": [
+    "liv3-p16"
+   ],
+   "reponseModele": "Solide A : 5 boules et 8 bâtonnets, soit 4 longs + 4 moyens, ou 4 longs + 4 courts, ou 4 moyens + 4 courts. Solide B : 12 boules et 18 bâtonnets, soit 12 longs + 6 moyens, ou 12 longs + 6 courts, ou 12 moyens + 6 courts. (1 point par solide.)",
+   "explication": "Une pyramide à base carrée a 5 sommets et 8 arêtes ; un prisme à base hexagonale a 12 sommets et 18 arêtes."
   },
   {
    "id": "ceb-2018-l4-q2",
@@ -1404,22 +1854,87 @@
   {
    "id": "ceb-2018-l4-q1",
    "livret": 4,
-   "numero": "1",
+   "numero": "1a",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Colorie et écris des fractions.",
-   "points": 4,
+   "enonce": "Si la bande grisée vaut 1, colorie la fraction demandée : 2/3 et 5/12.",
+   "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "fiche": "ma-fractions"
+  },
+  {
+   "id": "ceb-2018-l4-q1b",
+   "livret": 4,
+   "numero": "1b",
+   "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Si la bande entièrement grisée vaut 1, quelle fraction représente la partie grisée de chacune des deux barres numérotées 1 et 2 (livret, page 3) ? Écris-la.",
+   "points": 2,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p03"
+   ],
+   "texte": "Barre 1 : {1}\nBarre 2 : {2}",
+   "reponse": [
+    [
+     "5/6",
+     "10/12",
+     "15/18",
+     "20/24"
+    ],
+    [
+     "1/4",
+     "2/8",
+     "3/12",
+     "4/16",
+     "5/20"
+    ]
+   ],
+   "souple": true,
+   "explication": "Barre 1 : 5/6 ; barre 2 : 1/4 (ou des fractions équivalentes).",
+   "corrigeVerifie": true
   },
   {
    "id": "ceb-2018-l4-q3",
    "livret": 4,
    "numero": "3",
    "domaine": "ma.grandeurs",
+   "type": "trous",
+   "enonce": "Observe le disque (livret, page 5). Complète : quelle fraction du disque représente la surface grisée, la surface non grisée ? Écris ensuite une fraction équivalente à celle de la partie grisée (pas la même fraction).",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p05"
+   ],
+   "texte": "Surface grisée : {1} du disque\nSurface non grisée : {2} du disque\nFraction équivalente à la partie grisée : {3}",
+   "reponse": [
+    [
+     "3/8"
+    ],
+    [
+     "5/8"
+    ],
+    [
+     "6/16",
+     "9/24",
+     "12/32",
+     "15/40",
+     "30/80"
+    ]
+   ],
+   "souple": true,
+   "explication": "3 secteurs sur 8 sont grisés : 3/8 ; il reste 5/8. Une fraction équivalente à 3/8 : 6/16, 9/24… (la fraction 3/8 elle-même est refusée)."
+  },
+  {
+   "id": "ceb-2018-l4-q3c",
+   "livret": 4,
+   "numero": "3c",
+   "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Fractions du disque.",
-   "points": 4,
+   "enonce": "Colorie un quart du disque complet dans la partie non grisée.",
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -1428,11 +1943,22 @@
    "livret": 4,
    "numero": "4a",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Entoure la représentation de la situation.",
+   "type": "qcm",
+   "enonce": "Observe la situation décrite (livret, page 6) : 36 élèves ; la moitié a préféré la confiserie locale, le tiers la menuiserie de la région, le reste la balade en forêt. Entoure la représentation qui correspond à la situation décrite, parmi les quatre numérotées de 1 à 4.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv4-p06"
+   ],
+   "choix": [
+    "Représentation 1",
+    "Représentation 2",
+    "Représentation 3",
+    "Représentation 4"
+   ],
+   "reponse": 1,
+   "explication": "Sur 36 élèves : 18 (la moitié), 12 (le tiers) et 6 pour le reste. Chaque petit carré vaut 2 élèves : la représentation 2 convient."
   },
   {
    "id": "ceb-2018-l4-q5b",
@@ -1440,21 +1966,47 @@
    "numero": "5b",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Dimensions possibles d'un rectangle de 18 cm de périmètre.",
+   "enonce": "Le périmètre de la figure mesure 18 cm. Écris des dimensions possibles des côtés pour un rectangle strict.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-perimetre-constant",
+   "reponseModele": "Toute longueur et toute largeur dont la somme fait 9 cm, avec deux dimensions différentes : par exemple 6 cm et 3 cm, ou 5 cm et 4 cm. 4,5 cm et 4,5 cm est refusé (c'est un carré, pas un rectangle strict).",
+   "explication": "Le périmètre est 2 × (longueur + largeur) : longueur + largeur = 9 cm."
   },
   {
    "id": "ceb-2018-l4-q8",
    "livret": 4,
    "numero": "8",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aire des cinq figures.",
+   "type": "trous",
+   "enonce": "Observe l'aire de chaque figure grisée (livret, page 9). Le petit carré représente 1 unité. Écris l'aire des cinq figures.",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv4-p09"
+   ],
+   "texte": "Figure A : {1} unité(s)\nFigure B : {2} unité(s)\nFigure C : {3} unité(s)\nFigure D : {4} unité(s)\nFigure E : {5} unité(s)",
+   "reponse": [
+    [
+     "14"
+    ],
+    [
+     "20"
+    ],
+    [
+     "2,5",
+     "2.5"
+    ],
+    [
+     "8"
+    ],
+    [
+     "8"
+    ]
+   ],
+   "souple": true,
+   "explication": "A = 14 ; B = 20 ; C = 2,5 ; D = 8 ; E = 8 unités."
   },
   {
    "id": "ceb-2018-l4-q9",
@@ -1472,33 +2024,71 @@
    "livret": 4,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Pourcentage de la figure grisé.",
+   "type": "numerique",
+   "enonce": "Quel pourcentage de la figure a été grisé ? Observe la figure du livret (page 11).",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-pourcentages",
+   "documents": [
+    "liv4-p11"
+   ],
+   "reponse": 20,
+   "unite": "%",
+   "explication": "20 % de la figure sont grisés."
   },
   {
    "id": "ceb-2018-l4-q11",
    "livret": 4,
    "numero": "11",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Trajets de Marc et Justine.",
+   "type": "trous",
+   "enonce": "Pour aller à l'école, Marc emprunte le trajet le plus long et Justine le plus court. Les trajets possibles (livret, page 11) sont : 3 km, 30 dam, 300 m, 0,3 hm, 30 m. Quel trajet effectuera chaque enfant ?",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-conversions",
+   "documents": [
+    "liv4-p11"
+   ],
+   "texte": "Marc parcourt {1}\nJustine parcourt {2}",
+   "reponse": [
+    [
+     "3 km",
+     "3km"
+    ],
+    [
+     "30 m",
+     "30m",
+     "0,3 hm",
+     "0,3hm",
+     "0.3 hm"
+    ]
+   ],
+   "souple": true,
+   "explication": "3 km = 3 000 m est le plus long ; 30 m est le plus court (30 dam, 300 m et 0,3 hm valent tous 300 m)."
   },
   {
    "id": "ceb-2018-l4-q15b",
    "livret": 4,
    "numero": "15b",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Durée restante sur l'horloge.",
+   "type": "trous",
+   "enonce": "Je dois retrouver Arthur à 14h40 à l'arrêt du bus. Un peu plus tard, je regarde l'horloge (livret, page 16). Combien de temps reste-t-il avant de retrouver Arthur ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-durees",
+   "documents": [
+    "liv4-p16"
+   ],
+   "texte": "Il reste {1} h {2} min avant de retrouver Arthur.",
+   "reponse": [
+    [
+     "1"
+    ],
+    [
+     "45"
+    ]
+   ],
+   "explication": "L'horloge indique 12 h 55 : de 12 h 55 à 14 h 40, il reste 1 h 45 min."
   },
   {
    "id": "ceb-2018-l5-q1a",
@@ -1980,25 +2570,55 @@
    "livret": 5,
    "numero": "1d",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Choisis la situation à comparer pour prouver que l'arrosage est nécessaire.",
+   "type": "qcm",
+   "enonce": "Les élèves veulent prouver que l'arrosage est nécessaire pour faire germer des graines de lentille. Observe les quatre situations numérotées de 1 à 4 (livret, page 4). Pour prouver que l'arrosage est nécessaire, les élèves doivent comparer la situation n° 1 avec quelle autre situation ?",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-plantes",
+   "documents": [
+    "liv5-p04"
+   ],
+   "choix": [
+    "Situation 2",
+    "Situation 3",
+    "Situation 4"
+   ],
+   "reponse": 2,
+   "explication": "Pour tester un seul facteur, on compare la situation 1 (arrosée) à une situation identique mais sans arrosage : la situation 4."
   },
   {
    "id": "ceb-2018-l5-q2",
    "livret": 5,
    "numero": "2",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Complète le schéma du cycle de l'eau.",
+   "type": "grille",
+   "enonce": "Complète les étiquettes vides du schéma (livret, page 6), numérotées de 1 à 4, en utilisant quatre termes de la liste.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
-    "cycle"
+    "liv5-p06"
    ],
-   "numerisable": false
+   "fiche": "sc-cycle-eau",
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4"
+   ],
+   "colonnes": [
+    "solidification",
+    "évaporation",
+    "condensation",
+    "précipitations",
+    "ruissèlement"
+   ],
+   "reponse": [
+    3,
+    1,
+    4,
+    2
+   ],
+   "explication": "1 : précipitations ; 2 : évaporation ; 3 : ruissèlement ; 4 : condensation. « Solidification » n'est pas utilisé."
   },
   {
    "id": "ceb-2018-l5-q3",
@@ -2019,33 +2639,96 @@
    "livret": 5,
    "numero": "4a",
    "domaine": "sc.matiere",
-   "type": "ouverte",
-   "enonce": "Place les légendes des flèches du cycle de l'eau.",
+   "type": "grille",
+   "enonce": "Les flèches représentent une partie du cycle de l'eau dans le milieu naturel. Observe le schéma (livret, page 8). Écris le numéro de la légende dans chaque étiquette vide, repérée par une lettre de A à D. Deux exemples sont donnés (1 et 6).",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-cycle-eau",
+   "documents": [
+    "liv5-p08"
+   ],
+   "lignes": [
+    "Étiquette A",
+    "Étiquette B",
+    "Étiquette C",
+    "Étiquette D"
+   ],
+   "colonnes": [
+    "1. L'eau tombe sous forme de pluie.",
+    "2. L'eau s'évapore du sol.",
+    "3. L'eau absorbée par la plante s'évapore par les feuilles.",
+    "4. L'eau du sol est absorbée par les plantes.",
+    "5. L'eau ruissèle sur le sol.",
+    "6. L'eau s'infiltre jusqu'à la nappe phréatique."
+   ],
+   "reponse": [
+    2,
+    1,
+    4,
+    3
+   ],
+   "explication": "A : légende 3 ; B : légende 2 ; C : légende 5 ; D : légende 4."
   },
   {
    "id": "ceb-2018-l5-q5",
    "livret": 5,
    "numero": "5",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Croissance du blé et du haricot : lis les graphiques.",
+   "type": "grille",
+   "enonce": "Pour répondre, lis les deux graphiques (livret, page 10). Pour chaque phrase, indique si un graphique montre que c'est vrai, que c'est faux, ou si aucun graphique ne permet de le dire.",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-donnees",
+   "documents": [
+    "liv5-p10"
+   ],
+   "lignes": [
+    "C'est avec un apport d'eau de 40 ml par jour que le plant de blé se développe le mieux.",
+    "Entre le 20 nov. et le 25 nov., la tige du plant de haricot a grandi de 8 cm.",
+    "Sans eau, le plant de blé n'a pas poussé.",
+    "Le premier jour des relevés de mesure, le plant de haricot a atteint la hauteur de 4 cm.",
+    "Les plants de haricot et de blé ont besoin de la même quantité d'eau pour se développer."
+   ],
+   "colonnes": [
+    "Un graphique montre que c'est vrai",
+    "Un graphique montre que c'est faux",
+    "Aucun graphique ne permet de le dire"
+   ],
+   "reponse": [
+    1,
+    0,
+    0,
+    0,
+    2
+   ],
+   "explication": "Le blé pousse le mieux avec 20 ml (faux pour 40 ml) ; le haricot passe de 4 à 12 cm (+ 8 cm) ; sans eau, le blé n'a pas poussé ; le 20 nov., le haricot mesure 4 cm ; aucun graphique ne compare les besoins en eau des deux plantes."
   },
   {
    "id": "ceb-2018-l5-q10b",
    "livret": 5,
    "numero": "10b",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Biceps contracté ou non.",
+   "type": "qcm_multi",
+   "enonce": "Observe les cinq photos numérotées de 1 à 5 (livret, page 19). Entoure les photos sur lesquelles le biceps est contracté.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv5-p19"
+   ],
+   "choix": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4",
+    "Photo 5"
+   ],
+   "reponse": [
+    0,
+    1,
+    2
+   ],
+   "explication": "Le biceps est contracté sur les photos 1, 2 et 3 ; il ne l'est pas sur les photos 4 et 5."
   },
   {
    "id": "ceb-2018-l5-q10c",
@@ -2081,28 +2764,64 @@
    "livret": 5,
    "numero": "12",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète le cycle de vie de la grenouille.",
+   "type": "grille",
+   "enonce": "Complète les étiquettes du cycle de vie de la grenouille (livret, page 22). Les étiquettes vides sont numérotées de 1 à 5 ; « Ponte des œufs » est donné.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
+    "liv5-p22",
     "grenouille"
    ],
-   "numerisable": false
+   "fiche": "sc-metamorphoses",
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4",
+    "Étiquette 5"
+   ],
+   "colonnes": [
+    "grenouille adulte",
+    "têtard avec pattes arrière et pattes avant",
+    "têtard avec pattes arrière",
+    "têtard sans patte",
+    "œufs"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "explication": "Œufs → têtard sans patte → têtard avec pattes arrière → têtard avec pattes arrière et avant → grenouille adulte."
   },
   {
    "id": "ceb-2018-l5-q14",
    "livret": 5,
    "numero": "14",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Circuits où l'ampoule peut s'allumer.",
+   "type": "qcm_multi",
+   "enonce": "Pour composer les montages électriques numérotés de 1 à 4 (livret, pages 24 et 25), on a utilisé le même matériel que celui du portfolio. Entoure les schémas du circuit où l'ampoule peut s'allumer.",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
+    "liv5-p24",
+    "liv5-p25",
     "circuit"
    ],
-   "numerisable": false
+   "fiche": "sc-electricite",
+   "choix": [
+    "Circuit 1",
+    "Circuit 2",
+    "Circuit 3",
+    "Circuit 4"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "L'ampoule peut s'allumer dans les circuits 1 et 4 (circuits fermés) ; dans les circuits 2 et 3, le circuit est ouvert."
   },
   {
    "id": "ceb-2018-l6-q2",
@@ -2421,22 +3140,46 @@
    "livret": 6,
    "numero": "1",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Entoure la couverture de livre qui pourrait contenir le texte.",
+   "type": "qcm",
+   "enonce": "Observe les six couvertures de livres numérotées de 1 à 6 (livret, page 3). Entoure la couverture du livre qui pourrait contenir le texte Les abeilles.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "liv6-p03"
+   ],
+   "choix": [
+    "Couverture 1",
+    "Couverture 2",
+    "Couverture 3",
+    "Couverture 4",
+    "Couverture 5",
+    "Couverture 6"
+   ],
+   "reponse": 4,
+   "explication": "Un texte informatif sur les abeilles pourrait se trouver dans une encyclopédie du monde vivant : la couverture 5."
   },
   {
    "id": "ceb-2018-l6-q11",
    "livret": 6,
    "numero": "11",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Entoure la flèche du sens de construction d'un rayon.",
+   "type": "qcm",
+   "enonce": "« Grâce à la cire sécrétée par leurs glandes, les abeilles cirières fabriquent ces rayons. Débutant au plafond de la ruche auquel elles fixent les premières écailles de cire, elles poursuivent le déploiement des rayons à la verticale. » Observe les quatre flèches numérotées de 1 à 4 (livret, page 9). Entoure la flèche qui montre le sens de construction d'un rayon de ruche.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "liv6-p09"
+   ],
+   "choix": [
+    "Flèche 1",
+    "Flèche 2",
+    "Flèche 3",
+    "Flèche 4"
+   ],
+   "reponse": 1,
+   "explication": "Les abeilles commencent au plafond et construisent vers le bas : c'est la flèche 2."
   },
   {
    "id": "ceb-2018-l7-q1b",
@@ -2975,27 +3718,58 @@
    "livret": 7,
    "numero": "3",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Lis le graphique des pertes humaines de la Première Guerre mondiale (civils morts et soldats morts). Écris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
+   "type": "texte_court",
+   "enonce": "Lis le graphique « Pertes humaines de la Première Guerre mondiale » (livret, page 5). Écris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false,
-   "reponseModele": "Belgique (1 point). Sur le graphique « Pertes humaines de la Première Guerre mondiale », c'est le seul pays dont la barre des civils morts dépasse celle des soldats morts."
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "liv7-p05"
+   ],
+   "reponse": [
+    "Belgique",
+    "la Belgique"
+   ],
+   "souple": true,
+   "explication": "La Belgique est le seul pays dont la barre des civils morts dépasse celle des soldats morts."
   },
   {
    "id": "ceb-2018-l7-q4c",
    "livret": 7,
    "numero": "4c",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Classe les photos 1 à 5 par siècle et par lieu.",
+   "type": "grille",
+   "enonce": "Dans le tableau, indique où chaque photo (portfolio, pages 20 et 21) se place : photos 1 à 5, par siècle (19e, 20e ou 21e) et en Belgique ou ailleurs dans le monde.",
    "points": 2,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
     "enfants-1",
     "enfants-2"
    ],
-   "numerisable": false
+   "fiche": "hg-siecles",
+   "lignes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3",
+    "Photo 4",
+    "Photo 5"
+   ],
+   "colonnes": [
+    "En Belgique, 19e siècle",
+    "En Belgique, 20e siècle",
+    "En Belgique, 21e siècle",
+    "Ailleurs dans le monde, 19e siècle",
+    "Ailleurs dans le monde, 20e siècle",
+    "Ailleurs dans le monde, 21e siècle"
+   ],
+   "reponse": [
+    0,
+    1,
+    2,
+    5,
+    5
+   ],
+   "explication": "Photo 1 : Herstal, 1899 (19e) ; photo 2 : Engis, 1904 (20e) ; photo 3 : Belgique, 2017 (21e) ; photos 4 (Népal, 2011) et 5 (Inde, 2011) : ailleurs, 21e siècle."
   },
   {
    "id": "ceb-2018-l7-q4e",
@@ -3085,39 +3859,151 @@
   {
    "id": "ceb-2018-l7-q8ab",
    "livret": 7,
-   "numero": "8ab",
+   "numero": "8a",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Paysage : limite très bâti / peu bâti et composantes.",
-   "points": 3,
+   "enonce": "Avec un crayon de couleur rouge, trace la limite entre l'espace qui est « très bâti » et l'espace « peu bâti » sur la photographie.",
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q8b1",
+   "livret": 7,
+   "numero": "8b (avant-plan)",
+   "domaine": "hg.geographie",
+   "type": "qcm_multi",
+   "enonce": "Observe la photographie (livret, page 12). Entoure les cases qui correspondent à ce que tu vois À L'AVANT-PLAN.",
+   "points": 1,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv7-p12"
+   ],
+   "choix": [
+    "des espaces boisés",
+    "des prairies",
+    "une surface bâtie",
+    "des remparts",
+    "des autoroutes"
+   ],
+   "reponse": [
+    0,
+    2,
+    3
+   ],
+   "explication": "À l'avant-plan : des espaces boisés, une surface bâtie et des remparts.",
+   "corrigeVerifie": true
+  },
+  {
+   "id": "ceb-2018-l7-q8b2",
+   "livret": 7,
+   "numero": "8b (arrière-plan)",
+   "domaine": "hg.geographie",
+   "type": "grille",
+   "enonce": "Observe la photographie (livret, page 12). Pour chaque élément, indique si tu le vois À L'ARRIÈRE-PLAN.",
+   "points": 1,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv7-p12"
+   ],
+   "lignes": [
+    "des espaces boisés",
+    "des prairies",
+    "une surface bâtie",
+    "des remparts",
+    "des autoroutes"
+   ],
+   "colonnes": [
+    "On le voit",
+    "On ne le voit pas"
+   ],
+   "reponse": [
+    0,
+    0,
+    [
+     0,
+     1
+    ],
+    1,
+    1
+   ],
+   "explication": "À l'arrière-plan : des espaces boisés et des prairies (le corrigé accepte aussi une surface bâtie).",
+   "corrigeVerifie": true
   },
   {
    "id": "ceb-2018-l7-q9b",
    "livret": 7,
    "numero": "9b",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Nomme la commune coloriée en noir.",
+   "type": "texte_court",
+   "enonce": "Écris le nom de la commune coloriée en noir sur la carte (livret, page 15).",
    "points": 1,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
    "documents": [
-    "bruxelles"
+    "liv7-p15"
    ],
-   "numerisable": false,
-   "reponseModele": "Saint-Gilles (1 point). C'est la commune coloriée en noir sur le plan de la Région de Bruxelles-Capitale du livret."
+   "fiche": "hg-cartes",
+   "reponse": [
+    "Saint-Gilles",
+    "Saint Gilles"
+   ],
+   "souple": true,
+   "explication": "La commune coloriée en noir est Saint-Gilles."
   },
   {
    "id": "ceb-2018-l7-q13",
    "livret": 7,
-   "numero": "13",
+   "numero": "13a",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Cours d'eau : sens de l'écoulement et légende.",
-   "points": 3,
+   "enonce": "Sur le schéma représentant deux cours d'eau, trace une flèche en bleu pour indiquer le sens de l'écoulement de l'eau.",
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
+  },
+  {
+   "id": "ceb-2018-l7-q13b",
+   "livret": 7,
+   "numero": "13b",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "Observe le schéma de deux cours d'eau (livret, page 20). Entoure la légende qui correspond au schéma. Sers-toi de ton dictionnaire.",
+   "points": 1,
+   "fiche": "hg-cours-eau",
+   "documents": [
+    "liv7-p20"
+   ],
+   "choix": [
+    "Légende A",
+    "Légende B",
+    "Légende C"
+   ],
+   "reponse": 2,
+   "explication": "1 : source ; 2 : affluent ; 3 : confluent ; 4 : embouchure. C'est la légende C.",
+   "corrigeVerifie": true
+  },
+  {
+   "id": "ceb-2018-l7-q13c",
+   "livret": 7,
+   "numero": "13c",
+   "domaine": "hg.histoire",
+   "type": "qcm",
+   "enonce": "À quel numéro du schéma de la page 20 la partie entourée sur la photo (livret, page 21) correspond-elle ?",
+   "points": 1,
+   "fiche": "hg-cours-eau",
+   "documents": [
+    "liv7-p20",
+    "liv7-p21"
+   ],
+   "choix": [
+    "n°1",
+    "n°2",
+    "n°3",
+    "n°4"
+   ],
+   "reponse": 3,
+   "explication": "La photo montre l'arrivée d'un fleuve dans la mer : une embouchure, le n°4.",
+   "corrigeVerifie": true
   },
   {
    "id": "ceb-2018-l8-q1a",
@@ -3756,7 +4642,7 @@
    "numero": "10",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Observe la figure des étoiles (livret 8). Combien y a-t-il d'étoiles en tout ? Écris aussi l'opération qui te permet de donner le nombre total d'étoiles.",
+   "enonce": "Observe la figure des étoiles (livret, page 11). Combien y a-t-il d'étoiles en tout ? Écris aussi l'opération qui te permet de donner le nombre total d'étoiles.",
    "points": 2,
    "corrigeVerifie": true,
    "texte": "En tout, il y a {1} étoiles.\nOpération : {2}",
@@ -3783,8 +4669,9 @@
     ]
    ],
    "explication": "8 × 17 = 136 étoiles (ou 17 × 8, ou 17 + 17 + … huit fois).",
-   "numerisable": false,
-   "remarque": "La figure n'est que dans le livret : question pour la version papier."
+   "documents": [
+    "liv8-p11"
+   ]
   },
   {
    "id": "ceb-2018-l8-q14",
@@ -3803,10 +4690,15 @@
    "numero": "15",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Décompose 0,54 en parts égales.",
+   "enonce": "Complète chaque case de l'arbre (livret, page 14) pour décomposer le nombre 0,54 en parts égales.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv8-p14"
+   ],
+   "reponseModele": "Les trois cases du milieu contiennent 0,18 (0,54 = 3 × 0,18). Les neuf cases du bas contiennent 0,06 (0,18 = 3 × 0,06). (1 point par ligne.)",
+   "explication": "0,54 : 3 = 0,18 ; 0,18 : 3 = 0,06."
   },
   {
    "id": "ceb-2018-l8-q17a",
