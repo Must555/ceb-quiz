@@ -311,7 +311,9 @@
     "Informer"
    ],
    "reponse": 0,
-   "explication": "C'est une histoire amusante."
+   "explication": "C'est une histoire amusante.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q2",
@@ -334,7 +336,9 @@
     "Un autre personnage."
    ],
    "reponse": 1,
-   "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques."
+   "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q3",
@@ -357,7 +361,9 @@
     "Il aime être malade pendant les vacances."
    ],
    "reponse": 1,
-   "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !"
+   "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q4",
@@ -387,7 +393,9 @@
      "hiver"
     ]
    ],
-   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)"
+   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q5",
@@ -410,7 +418,9 @@
     "Elle range les choses autrement."
    ],
    "reponse": 3,
-   "explication": "« Elle a un ordre et une méthode bien à elle. »"
+   "explication": "« Elle a un ordre et une méthode bien à elle. »",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q6",
@@ -430,7 +440,9 @@
     "dans l'ordre alphabétique",
     "ordre alphabétique"
    ],
-   "explication": "« rangés par ordre alphabétique »."
+   "explication": "« rangés par ordre alphabétique ».",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q7",
@@ -446,7 +458,9 @@
     "ordre-1",
     "ordre-2"
    ],
-   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes."
+   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q9",
@@ -463,7 +477,9 @@
     "ordre-2"
    ],
    "explication": "Rien de magique : une petite sœur peut vraiment ranger ainsi.",
-   "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible."
+   "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q8",
@@ -480,7 +496,9 @@
     "ordre-2"
    ],
    "reponseModele": "Ton résumé doit dire deux choses (1 point chacune). 1) La situation habituelle : les parents et Jean-Jacques sont très ordonnés, chacun range ses affaires à sa manière. 2) Le problème provoqué : la petite sœur modifie leurs rangements (elle range les choses autrement). Exemple : « C'est l'histoire d'une petite fille dont les parents et le frère sont très ordonnés. Mais la fille modifie leurs rangements. » Il faut que ces deux idées soient dans tes deux ou trois phrases.",
-   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude."
+   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l1-q10",
@@ -497,7 +515,9 @@
     "ordre-2"
    ],
    "reponseModele": "Il faut ranger absolument la MÊME collection d'objets de deux manières différentes : premier rangement (1 point) et deuxième rangement (1 point). Si les objets ne sont pas les mêmes dans les deux rangements, c'est 0. Exemple : « Je choisis de ranger des figures géométriques. Première manière : par nombre de côtés (les triangles, puis les carrés…). Deuxième manière : par couleur (les rouges, puis les bleues…). »",
-   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons."
+   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons.",
+   "numerisable": false,
+   "remarque": "Livret « Écouter » : le texte « Histoire d'ordre » (enregistrement officiel) nous manque ; sans lui, la question est réservée à la version papier."
   },
   {
    "id": "ceb-2015-l2-q1",
