@@ -326,6 +326,258 @@
       "titre": "Les robinets imaginés par Jules et par Nina (question 11)",
       "fichier": "assets/2026-so/liv1-p07.webp",
       "alt": "Deux enfants imaginent chacun un robinet dans une bulle de pensée. Jules (à gauche) imagine un robinet moderne en métal chromé à poignée carrée. Nina (à droite) imagine un robinet ancien à tête en croix à quatre branches, avec un long bec courbe."
+    },
+    {
+      "id": "liv3-p02",
+      "source": "livret",
+      "livret": 3,
+      "page": 2,
+      "titre": "Carte au trésor (livret 3, page 2)",
+      "fichier": "assets/2026-so/liv3-p02.webp",
+      "alt": "Carte d'une île dessinée sur un quadrillage (colonnes A à I, lignes 1 à 8) avec trois pierres précieuses, un bateau, une rose des vents et des monstres marins ; en dessous, un petit modèle de zone de cases dont la case E6."
+    },
+    {
+      "id": "liv3-p04",
+      "source": "livret",
+      "livret": 3,
+      "page": 4,
+      "titre": "Grille de bataille navale (livret 3, page 4)",
+      "fichier": "assets/2026-so/liv3-p04.webp",
+      "alt": "Grille de 10 colonnes (A à J) et 10 lignes (1 à 10) : des cases grises représentent des bateaux, les cases blanches de l'eau."
+    },
+    {
+      "id": "liv3-p06",
+      "source": "livret",
+      "livret": 3,
+      "page": 6,
+      "titre": "Deux triangles (livret 3, page 6)",
+      "fichier": "assets/2026-so/liv3-p06.webp",
+      "alt": "Un cercle de centre A, puis deux triangles dessinés côte à côte."
+    },
+    {
+      "id": "liv3-p09",
+      "source": "livret",
+      "livret": 3,
+      "page": 9,
+      "titre": "Un disque (livret 3, page 9)",
+      "fichier": "assets/2026-so/liv3-p09.webp",
+      "alt": "Un disque gris avec trois points A, B et C sur son bord, son centre O, et deux segments tracés : [AC] et [BO]."
+    },
+    {
+      "id": "liv3-p11",
+      "source": "livret",
+      "livret": 3,
+      "page": 11,
+      "titre": "Les bâtonnets (livret 3, page 11)",
+      "fichier": "assets/2026-so/liv3-p11.webp",
+      "alt": "Deux séries de bâtonnets de longueurs différentes : sept bâtonnets numérotés de 1 à 7 pour la question a), huit bâtonnets repérés par les lettres A à H pour la question b)."
+    },
+    {
+      "id": "liv3-p13",
+      "source": "livret",
+      "livret": 3,
+      "page": 13,
+      "titre": "Huit figures et un arbre de classement (livret 3, page 13)",
+      "fichier": "assets/2026-so/liv3-p13.webp",
+      "alt": "Huit figures numérotées de 1 à 8, avec des codages de côtés et d'angles, et un arbre de classement à compléter dont un exemple est donné."
+    },
+    {
+      "id": "liv3-p15",
+      "source": "livret",
+      "livret": 3,
+      "page": 15,
+      "titre": "Une figure ABCD et quatre dessins (livret 3, page 15)",
+      "fichier": "assets/2026-so/liv3-p15.webp",
+      "alt": "Une figure à quatre sommets A, B, C et D, puis quatre dessins numérotés de 1 à 4."
+    },
+    {
+      "id": "liv4-p05",
+      "source": "livret",
+      "livret": 4,
+      "page": 5,
+      "titre": "Trois tracés sur un quadrillage (livret 4, page 5)",
+      "fichier": "assets/2026-so/liv4-p05.webp",
+      "alt": "Un quadrillage avec trois tracés : un rectangle A, une figure B inachevée et un rectangle C."
+    },
+    {
+      "id": "liv4-p07",
+      "source": "livret",
+      "livret": 4,
+      "page": 7,
+      "titre": "Un trapèze (livret 4, page 7)",
+      "fichier": "assets/2026-so/liv4-p07.webp",
+      "alt": "Un trapèze rectangle dont les mesures sont indiquées : 5 cm, 4 cm, 6,4 cm et 10 cm."
+    },
+    {
+      "id": "liv4-p08",
+      "source": "livret",
+      "livret": 4,
+      "page": 8,
+      "titre": "Une composition de triangles (livret 4, page 8)",
+      "fichier": "assets/2026-so/liv4-p08.webp",
+      "alt": "Un rectangle de 18 m sur 15 m découpé en triangles identiques."
+    },
+    {
+      "id": "liv4-p10",
+      "source": "livret",
+      "livret": 4,
+      "page": 10,
+      "titre": "Quatre récipients (livret 4, page 10)",
+      "fichier": "assets/2026-so/liv4-p10.webp",
+      "alt": "Quatre récipients gradués numérotés de 1 à 4, remplis de liquide à des niveaux différents."
+    },
+    {
+      "id": "liv4-p13",
+      "source": "livret",
+      "livret": 4,
+      "page": 13,
+      "titre": "Des fractions représentées (livret 4, page 13)",
+      "fichier": "assets/2026-so/liv4-p13.webp",
+      "alt": "Tableau d'additions de fractions représentées par des disques partagés dont certaines parts sont grisées."
+    },
+    {
+      "id": "liv4-p16",
+      "source": "livret",
+      "livret": 4,
+      "page": 16,
+      "titre": "Altitude maximale de massifs montagneux (livret 4, page 16)",
+      "fichier": "assets/2026-so/liv4-p16.webp",
+      "alt": "Graphique à barres « Altitude maximale de massifs montagneux en France » (Massif central, Jura, Alpes, Pyrénées, Vosges) et tableau à compléter."
+    },
+    {
+      "id": "liv4-p18",
+      "source": "livret",
+      "livret": 4,
+      "page": 18,
+      "titre": "Un disque partagé (livret 4, page 18)",
+      "fichier": "assets/2026-so/liv4-p18.webp",
+      "alt": "Un disque partagé en parts dont certaines sont grisées."
+    },
+    {
+      "id": "liv5-p08",
+      "source": "livret",
+      "livret": 5,
+      "page": 8,
+      "titre": "La construction de l'Union européenne : questions (livret 5, page 8)",
+      "fichier": "assets/2026-so/liv5-p08.webp",
+      "alt": "Questions sur l'Union européenne avec deux lignes du temps graduées de 1950 à 2020, dont la seconde porte une partie grisée."
+    },
+    {
+      "id": "liv5-p10",
+      "source": "livret",
+      "livret": 5,
+      "page": 10,
+      "titre": "Un paysage (livret 5, page 10)",
+      "fichier": "assets/2026-so/liv5-p10.webp",
+      "alt": "Photographie aérienne d'un paysage."
+    },
+    {
+      "id": "liv5-p14",
+      "source": "livret",
+      "livret": 5,
+      "page": 14,
+      "titre": "Panneau d'affichage de la gare de Namur (livret 5, page 14)",
+      "fichier": "assets/2026-so/liv5-p14.webp",
+      "alt": "Photographie d'un panneau des départs de la gare de Namur : heure, destination, nature, voie et remarque."
+    },
+    {
+      "id": "liv6-p08",
+      "source": "livret",
+      "livret": 6,
+      "page": 8,
+      "titre": "Une trace sur le sol (livret 6, page 8)",
+      "fichier": "assets/2026-so/liv6-p08.webp",
+      "alt": "Photographie d'empreintes de pas laissées sur un sol carrelé."
+    },
+    {
+      "id": "liv8-p02",
+      "source": "livret",
+      "livret": 8,
+      "page": 2,
+      "titre": "Deux droites graduées agrandies (livret 8, page 2)",
+      "fichier": "assets/2026-so/liv8-p02.webp",
+      "alt": "Deux droites graduées, chacune avec un agrandissement : 7 860 et 7 870 sont indiqués sur la première, 15 et 16 sur la seconde ; une case vide est reliée à une graduation de chaque agrandissement."
+    },
+    {
+      "id": "liv8-p03",
+      "source": "livret",
+      "livret": 8,
+      "page": 3,
+      "titre": "Habitants des pays d'Europe et grille de nombres (livret 8, page 3)",
+      "fichier": "assets/2026-so/liv8-p03.webp",
+      "alt": "Graphique à barres du nombre d'habitants de quelques pays d'Europe en 2023, puis un tableau de nombres décimaux avec deux cases blanches."
+    },
+    {
+      "id": "liv8-p05",
+      "source": "livret",
+      "livret": 8,
+      "page": 5,
+      "titre": "Le compteur d'eau (livret 8, page 5)",
+      "fichier": "assets/2026-so/liv8-p05.webp",
+      "alt": "Photo d'un compteur d'eau en m³ ; quatre des chiffres zéro de l'affichage sont repérés par les lettres A, B, C et D."
+    },
+    {
+      "id": "liv8-p08",
+      "source": "livret",
+      "livret": 8,
+      "page": 8,
+      "titre": "Des droites graduées avec des taches (livret 8, page 8)",
+      "fichier": "assets/2026-so/liv8-p08.webp",
+      "alt": "Deux droites graduées dont certaines graduations sont cachées par des taches repérées par les lettres A à E."
+    },
+    {
+      "id": "liv9-p02",
+      "source": "livret",
+      "livret": 9,
+      "page": 2,
+      "titre": "Siphon, arrosoirs et tuyau (livret 9, page 2)",
+      "fichier": "assets/2026-so/liv9-p02.webp",
+      "alt": "Schéma d'un siphon sous un lavabo ; quatre arrosoirs repérés par les lettres A à D ; photo E d'un tuyau transparent tenu par deux mains, avec trois niveaux numérotés de 1 à 3 d'un côté."
+    },
+    {
+      "id": "liv9-p03",
+      "source": "livret",
+      "livret": 9,
+      "page": 3,
+      "titre": "Le tuyau, deuxième photo (livret 9, page 3)",
+      "fichier": "assets/2026-so/liv9-p03.webp",
+      "alt": "Photo F du même tuyau, avec trois niveaux numérotés de 1 à 3 de l'autre côté ; en dessous, un récipient en verre contenant cinq tubes."
+    },
+    {
+      "id": "liv9-p05",
+      "source": "livret",
+      "livret": 9,
+      "page": 5,
+      "titre": "La clé de détermination (livret 9, page 5)",
+      "fichier": "assets/2026-so/liv9-p05.webp",
+      "alt": "Liste de cinq animaux et clé de détermination à étiquettes : neuf étiquettes à cocher, numérotées de 1 à 9."
+    },
+    {
+      "id": "liv9-p07",
+      "source": "livret",
+      "livret": 9,
+      "page": 7,
+      "titre": "L'appareil digestif du chat et de l'Homme (livret 9, page 7)",
+      "fichier": "assets/2026-so/liv9-p07.webp",
+      "alt": "Deux schémas de l'appareil digestif, d'un chat et d'un être humain, avec quatre cases vides numérotées de 1 à 4 et une liste de sept organes repérés par les lettres A à G."
+    },
+    {
+      "id": "liv9-p12",
+      "source": "livret",
+      "livret": 9,
+      "page": 12,
+      "titre": "Le cycle de l'eau (livret 9, page 12)",
+      "fichier": "assets/2026-so/liv9-p12.webp",
+      "alt": "Schéma du cycle de l'eau avec cinq étiquettes vides numérotées de 1 à 5 et la liste des mots à y placer."
+    },
+    {
+      "id": "liv9-p13",
+      "source": "livret",
+      "livret": 9,
+      "page": 13,
+      "titre": "Les formes météorologiques de l'eau (livret 9, page 13)",
+      "fichier": "assets/2026-so/liv9-p13.webp",
+      "alt": "Cinq photos de formes météorologiques de l'eau : la première est donnée en exemple (la grêle), les quatre autres sont numérotées de 1 à 4."
     }
   ],
   "questions": [
@@ -770,13 +1022,25 @@
       "livret": 3,
       "numero": "1a",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Observe cette carte. Écris les coordonnées d'une case où se trouve une pierre précieuse.",
+      "type": "texte_court",
+      "enonce": "Observe la carte du livret (page 2). Écris les coordonnées d'une case où se trouve une pierre précieuse (une lettre et un chiffre).",
       "points": 1,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Question appuyée sur la carte du livret (quadrillage avec pierres précieuses) que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "E2 ou D5 ou G7 (on ne sanctionne pas l'élève qui écrit d'abord le chiffre ; si plusieurs coordonnées sont écrites, elles doivent toutes être correctes)."
+      "documents": [
+        "liv3-p02"
+      ],
+      "reponse": [
+        "E2",
+        "D5",
+        "G7",
+        "2E",
+        "5D",
+        "7G",
+        "E 2",
+        "D 5",
+        "G 7"
+      ],
+      "explication": "Les pierres précieuses sont en E2, D5 et G7. On lit d'abord la colonne (la lettre), puis la ligne (le chiffre)."
     },
     {
       "id": "ceb-2026-so-l3-q1b",
@@ -822,13 +1086,21 @@
       "livret": 3,
       "numero": "4",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Observe cette grille. Les cases grises représentent des bateaux et les cases blanches de l'eau. Coche les coordonnées de la case qui permet de toucher un bateau : A9, D2, E5 ou G6.",
+      "type": "qcm",
+      "enonce": "Observe la grille de bataille navale du livret (page 4). Les cases grises représentent des bateaux et les cases blanches de l'eau. Coche les coordonnées de la case qui permet de toucher un bateau.",
       "points": 1,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Choix à faire sur la grille de bataille navale du livret que nous n'avons pas : gardé en mode papier.",
-      "reponseModele": "E5 (0 si plusieurs cases cochées)."
+      "documents": [
+        "liv3-p04"
+      ],
+      "choix": [
+        "A9",
+        "D2",
+        "E5",
+        "G6"
+      ],
+      "reponse": 2,
+      "explication": "La case E5 est grise : c'est la colonne E, ligne 5, et elle fait partie d'un bateau. A9, D2 et G6 sont des cases d'eau."
     },
     {
       "id": "ceb-2026-so-l3-q5",
@@ -857,14 +1129,30 @@
       "livret": 3,
       "numero": "7",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Observe ces deux triangles. Trouve une caractéristique commune à ces deux triangles selon leurs angles. Complète la phrase : « Ils ont chacun 2 … ».",
+      "type": "trous",
+      "enonce": "Observe les deux triangles du livret (page 6). Trouve une caractéristique commune à ces deux triangles selon leurs angles. Complète la phrase.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-angles",
-      "numerisable": false,
-      "remarque": "Question appuyée sur deux triangles du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Ils ont chacun deux angles aigus. On accepte toute formulation en rapport avec la notion d'aigu (inférieur à 90 degrés, plus petit qu'un angle droit…). Tout ou rien."
+      "documents": [
+        "liv3-p06"
+      ],
+      "texte": "Ils ont chacun 2 {1}.",
+      "reponse": [
+        [
+          "angles aigus",
+          "des angles aigus",
+          "angle aigu",
+          "aigus",
+          "angles aigu",
+          "angles inférieurs à 90°",
+          "angles inférieurs à 90 degrés",
+          "angles plus petits qu'un angle droit",
+          "angles plus petits que l'angle droit",
+          "angles de moins de 90°"
+        ]
+      ],
+      "explication": "Chaque triangle a deux angles plus petits qu'un angle droit : ce sont des angles aigus. On accepte toute formulation qui parle d'angles aigus (inférieurs à 90°)."
     },
     {
       "id": "ceb-2026-so-l3-q8",
@@ -896,14 +1184,33 @@
       "livret": 3,
       "numero": "10",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Observe ce disque. Complète ces phrases : le segment [AC] représente un … du disque ; le segment [BO] représente un … du disque ; le point O est le … du disque.",
+      "type": "trous",
+      "enonce": "Observe le disque du livret (page 9). Complète ces phrases.",
       "points": 3,
       "corrigeVerifie": true,
       "fiche": "ma-cercle",
-      "numerisable": false,
-      "remarque": "Question appuyée sur le disque du livret (points A, B, C et O) que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "[AC] : un diamètre (on accepte « axe de symétrie »). [BO] : un rayon. O : le centre (on n'accepte pas « milieu »). 1 point par réponse."
+      "documents": [
+        "liv3-p09"
+      ],
+      "texte": "Le segment [AC] représente un {1} du disque.\nLe segment [BO] représente un {2} du disque.\nLe point O est le {3} du disque.",
+      "reponse": [
+        [
+          "diamètre",
+          "un diamètre",
+          "axe de symétrie",
+          "un axe de symétrie",
+          "l'axe de symétrie"
+        ],
+        [
+          "rayon",
+          "un rayon"
+        ],
+        [
+          "centre",
+          "le centre"
+        ]
+      ],
+      "explication": "[AC] passe par le centre et joint deux points du bord : c'est un diamètre. [BO] joint le centre au bord : c'est un rayon. O est le centre du disque (pas « le milieu »)."
     },
     {
       "id": "ceb-2026-so-l3-q11",
@@ -922,28 +1229,60 @@
       "livret": 3,
       "numero": "12a",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Entoure les trois bâtonnets nécessaires pour construire un triangle équilatéral.",
+      "type": "qcm_multi",
+      "enonce": "Observe les bâtonnets du livret (page 11, question a). Coche les trois bâtonnets nécessaires pour construire un triangle équilatéral.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-triangles",
-      "numerisable": false,
-      "remarque": "Choix à faire parmi les bâtonnets du livret que nous n'avons pas : gardé en mode papier.",
-      "reponseModele": "Parmi les bâtonnets du livret, de haut en bas : le 3e, le 5e et le 6e (trois bâtonnets de même longueur). Tout ou rien."
+      "documents": [
+        "liv3-p11"
+      ],
+      "choix": [
+        "Bâtonnet 1",
+        "Bâtonnet 2",
+        "Bâtonnet 3",
+        "Bâtonnet 4",
+        "Bâtonnet 5",
+        "Bâtonnet 6",
+        "Bâtonnet 7"
+      ],
+      "reponse": [
+        2,
+        4,
+        5
+      ],
+      "explication": "Un triangle équilatéral a trois côtés de même longueur : il faut les trois bâtonnets identiques, les bâtonnets 3, 5 et 6."
     },
     {
       "id": "ceb-2026-so-l3-q12b",
       "livret": 3,
       "numero": "12b",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Entoure les quatre bâtonnets nécessaires pour construire un parallélogramme.",
+      "type": "qcm_multi",
+      "enonce": "Observe les bâtonnets du livret (page 11, question b). Coche les quatre bâtonnets nécessaires pour construire un parallélogramme.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
-      "numerisable": false,
-      "remarque": "Choix à faire parmi les bâtonnets du livret que nous n'avons pas : gardé en mode papier.",
-      "reponseModele": "Parmi les bâtonnets du livret, de haut en bas : les 2e et 3e, puis les 7e et 8e (deux paires de bâtonnets de même longueur). Tout ou rien."
+      "documents": [
+        "liv3-p11"
+      ],
+      "choix": [
+        "Bâtonnet A",
+        "Bâtonnet B",
+        "Bâtonnet C",
+        "Bâtonnet D",
+        "Bâtonnet E",
+        "Bâtonnet F",
+        "Bâtonnet G",
+        "Bâtonnet H"
+      ],
+      "reponse": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "explication": "Un parallélogramme a ses côtés opposés de même longueur : il faut deux paires de bâtonnets identiques, les bâtonnets B et H (même longueur), puis C et G (même longueur)."
     },
     {
       "id": "ceb-2026-so-l3-q13",
@@ -961,14 +1300,34 @@
       "livret": 3,
       "numero": "14",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Complète chaque case de l'arbre par le numéro d'une figure. Un exemple t'est donné. Figures qui sont des triangles : OUI / NON ; figures qui ont au moins 2 côtés isométriques : OUI / NON.",
+      "type": "trous",
+      "enonce": "Observe les huit figures du livret (page 13). Complète chaque case de l'arbre par le numéro d'une figure. Le numéro 1 est déjà placé en exemple : c'est un triangle sans côtés isométriques.",
       "points": 4,
       "corrigeVerifie": true,
       "fiche": "ma-representations",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les huit figures numérotées du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "De haut en bas : triangles avec au moins 2 côtés isométriques : 6 ou 3 ; triangle sans 2 côtés isométriques : 4 (le 1 est donné en exemple) ; non-triangles avec au moins 2 côtés isométriques : 2 ou 7 ; non-triangles sans 2 côtés isométriques : 5 ou 8. 1 point par ligne (si plusieurs réponses sont écrites, elles doivent toutes être correctes)."
+      "documents": [
+        "liv3-p13"
+      ],
+      "texte": "Triangle avec au moins 2 côtés isométriques : figure {1}\nTriangle sans 2 côtés isométriques (autre que la figure 1) : figure {2}\nPas un triangle, avec au moins 2 côtés isométriques : figure {3}\nPas un triangle, sans 2 côtés isométriques : figure {4}",
+      "reponse": [
+        [
+          "3",
+          "6"
+        ],
+        [
+          "4"
+        ],
+        [
+          "2",
+          "7"
+        ],
+        [
+          "5",
+          "8"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Triangles avec au moins 2 côtés isométriques : 3 ou 6. Triangle sans côtés isométriques (autre que le 1) : 4. Non-triangles avec au moins 2 côtés isométriques : 2 ou 7. Non-triangles sans côtés isométriques : 5 ou 8."
     },
     {
       "id": "ceb-2026-so-l3-q15",
@@ -987,28 +1346,44 @@
       "livret": 3,
       "numero": "16",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Observe cette figure. Coche la proposition correcte : les côtés [AB] et [AD] sont parallèles ; perpendiculaires ; sécants ; de longueurs différentes.",
+      "type": "qcm",
+      "enonce": "Observe la figure du livret (page 15). Coche la proposition correcte.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-quadrilateres",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la figure ABCD du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Les côtés [AB] et [AD] sont sécants."
+      "documents": [
+        "liv3-p15"
+      ],
+      "choix": [
+        "Les côtés [AB] et [AD] sont parallèles.",
+        "Les côtés [AB] et [AD] sont perpendiculaires.",
+        "Les côtés [AB] et [AD] sont sécants.",
+        "Les côtés [AB] et [AD] sont de longueurs différentes."
+      ],
+      "reponse": 2,
+      "explication": "Les côtés [AB] et [AD] partent du même sommet A : ils se coupent en A, ils sont sécants."
     },
     {
       "id": "ceb-2026-so-l3-q17",
       "livret": 3,
       "numero": "17",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Entoure le dessin qui a au moins un axe de symétrie.",
+      "type": "qcm",
+      "enonce": "Observe les quatre dessins du livret (page 15). Quel dessin a au moins un axe de symétrie ?",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-symetrie",
-      "numerisable": false,
-      "remarque": "Choix à faire parmi quatre dessins du livret que nous n'avons pas : gardé en mode papier.",
-      "reponseModele": "La bouteille (les trois autres dessins du livret n'ont pas d'axe de symétrie). 0 si plusieurs dessins sont entourés."
+      "documents": [
+        "liv3-p15"
+      ],
+      "choix": [
+        "Dessin 1",
+        "Dessin 2",
+        "Dessin 3",
+        "Dessin 4"
+      ],
+      "reponse": 2,
+      "explication": "C'est le dessin 3 : on peut le plier en deux de façon que les deux moitiés se superposent. Les trois autres dessins n'ont pas d'axe de symétrie."
     },
     {
       "id": "ceb-2026-so-l3-q18",
@@ -1340,14 +1715,21 @@
       "livret": 4,
       "numero": "6b",
       "domaine": "ma.grandeurs",
-      "type": "ouverte",
-      "enonce": "Observe ces tracés (rectangles A, B et C). Coche la proposition correcte : l'aire du rectangle A est plus grande que l'aire du rectangle C ; égale à l'aire du rectangle C ; plus petite que l'aire du rectangle C.",
+      "type": "qcm",
+      "enonce": "Observe les tracés du livret (page 5) : rectangles A, B et C. Coche la proposition correcte.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-aires-perimetres",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les rectangles A et C du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "L'aire du rectangle A est plus petite que l'aire du rectangle C (0 si plusieurs cases cochées)."
+      "documents": [
+        "liv4-p05"
+      ],
+      "choix": [
+        "L'aire du rectangle A est plus grande que l'aire du rectangle C.",
+        "L'aire du rectangle A est égale à l'aire du rectangle C.",
+        "L'aire du rectangle A est plus petite que l'aire du rectangle C."
+      ],
+      "reponse": 2,
+      "explication": "Le rectangle A mesure 6 carreaux sur 3, soit 18 carreaux. Le rectangle C mesure 5 carreaux sur 5, soit 25 carreaux. L'aire de A est plus petite que celle de C."
     },
     {
       "id": "ceb-2026-so-l4-q7",
@@ -1383,28 +1765,34 @@
       "livret": 4,
       "numero": "8",
       "domaine": "ma.grandeurs",
-      "type": "ouverte",
-      "enonce": "Calcule l'aire de ce trapèze. Complète la phrase : « L'aire du trapèze vaut … cm². »",
+      "type": "numerique",
+      "enonce": "Observe le trapèze du livret (page 7). Calcule son aire en cm².",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-aires-formules",
-      "numerisable": false,
-      "remarque": "Question appuyée sur le trapèze coté du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "L'aire du trapèze vaut 30 cm²."
+      "documents": [
+        "liv4-p07"
+      ],
+      "unite": "cm²",
+      "reponse": 30,
+      "explication": "Aire d'un trapèze = (petite base + grande base) × hauteur ÷ 2 = (5 + 10) × 4 ÷ 2 = 30 cm²."
     },
     {
       "id": "ceb-2026-so-l4-q9",
       "livret": 4,
       "numero": "9",
       "domaine": "ma.grandeurs",
-      "type": "ouverte",
-      "enonce": "Observe cette composition réalisée avec des triangles identiques. Calcule l'aire d'un triangle. Complète la phrase : « L'aire d'un triangle vaut … m². »",
+      "type": "numerique",
+      "enonce": "Observe la composition réalisée avec des triangles identiques (livret page 8). Calcule l'aire d'un triangle en m².",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-aires-formules",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la composition de triangles du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "L'aire d'un triangle vaut 27 m²."
+      "documents": [
+        "liv4-p08"
+      ],
+      "unite": "m²",
+      "reponse": 27,
+      "explication": "Le rectangle mesure 18 m sur 15 m : 18 × 15 = 270 m². Il est formé de 10 triangles identiques : 270 ÷ 10 = 27 m²."
     },
     {
       "id": "ceb-2026-so-l4-q10",
@@ -1453,14 +1841,27 @@
       "livret": 4,
       "numero": "12",
       "domaine": "ma.grandeurs",
-      "type": "ouverte",
-      "enonce": "Observe ces différents récipients (numérotés de 1 à 4). Complète : le récipient … est rempli à 25 % de sa capacité ; le récipient … est rempli à 37,5 % de sa capacité.",
+      "type": "trous",
+      "enonce": "Observe les quatre récipients du livret (page 10). Complète les propositions par le numéro du récipient qui convient.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "ma-pourcentages",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les quatre récipients du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Le récipient 2 est rempli à 25 % de sa capacité ; le récipient 1 est rempli à 37,5 % de sa capacité. 1 point par réponse."
+      "documents": [
+        "liv4-p10"
+      ],
+      "texte": "Le récipient {1} est rempli à 25 % de sa capacité.\nLe récipient {2} est rempli à 37,5 % de sa capacité.",
+      "reponse": [
+        [
+          "2",
+          "récipient 2"
+        ],
+        [
+          "1",
+          "récipient 1"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "25 % = 1/4 de la capacité : c'est le récipient 2. 37,5 % = 3/8 de la capacité : c'est le récipient 1."
     },
     {
       "id": "ceb-2026-so-l4-q13",
@@ -1671,14 +2072,63 @@
       "livret": 4,
       "numero": "19",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Voici des représentations de fractions. Additionne les parties grisées.",
+      "type": "trous",
+      "enonce": "Observe les représentations de fractions du livret (page 13). Additionne les parties grisées de chaque ligne. Écris chaque résultat sous la forme d'une fraction, par exemple 3/5.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "ma-fractions-addition",
-      "numerisable": false,
-      "remarque": "Question appuyée sur des disques partagés du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Première ligne : 6/8. Deuxième ligne : 8/12. On accepte toutes les fractions équivalentes. 1 point par résultat."
+      "documents": [
+        "liv4-p13"
+      ],
+      "texte": "Première ligne : {1}\nDeuxième ligne : {2}",
+      "reponse": [
+        [
+          "3/4",
+          "3 / 4",
+          "6/8",
+          "6 / 8",
+          "9/12",
+          "9 / 12",
+          "12/16",
+          "12 / 16",
+          "15/20",
+          "15 / 20",
+          "18/24",
+          "18 / 24",
+          "21/28",
+          "21 / 28",
+          "24/32",
+          "24 / 32",
+          "27/36",
+          "27 / 36",
+          "30/40",
+          "30 / 40"
+        ],
+        [
+          "2/3",
+          "2 / 3",
+          "4/6",
+          "4 / 6",
+          "6/9",
+          "6 / 9",
+          "8/12",
+          "8 / 12",
+          "10/15",
+          "10 / 15",
+          "12/18",
+          "12 / 18",
+          "14/21",
+          "14 / 21",
+          "16/24",
+          "16 / 24",
+          "18/27",
+          "18 / 27",
+          "20/30",
+          "20 / 30"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Première ligne : 6/8 (ou 3/4). Deuxième ligne : 8/12 (ou 2/3). Toutes les fractions équivalentes sont acceptées."
     },
     {
       "id": "ceb-2026-so-l4-q20",
@@ -1725,13 +2175,29 @@
       "livret": 4,
       "numero": "22b",
       "domaine": "ma.donnees",
-      "type": "ouverte",
-      "enonce": "Observe le graphique « Altitude maximale de massifs montagneux en France ». À quel massif appartient chacune de ces altitudes maximales ? Complète le tableau pour 4 808 m, 1 720 m et 1 424 m (exemple : 3 298 m → Pyrénées).",
+      "type": "trous",
+      "enonce": "Observe le graphique « Altitude maximale de massifs montagneux en France » du livret (page 16). À quel massif appartient chacune de ces altitudes maximales ?",
       "points": 3,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Question appuyée sur le graphique à barres du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "4 808 m : Alpes ; 1 720 m : Jura ; 1 424 m : Vosges. 1 point par réponse."
+      "documents": [
+        "liv4-p16"
+      ],
+      "texte": "4 808 m : {1}\n1 720 m : {2}\n1 424 m : {3}",
+      "reponse": [
+        [
+          "Alpes",
+          "les Alpes"
+        ],
+        [
+          "Jura",
+          "le Jura"
+        ],
+        [
+          "Vosges",
+          "les Vosges"
+        ]
+      ],
+      "explication": "On lit la hauteur de chaque barre : 4 808 m pour les Alpes, 1 720 m pour le Jura, 1 424 m pour les Vosges."
     },
     {
       "id": "ceb-2026-so-l4-q23",
@@ -1777,14 +2243,22 @@
       "livret": 4,
       "numero": "25",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Observe ce disque. Coche la proposition qui représente la partie grisée : trois quarts ; 1/3 ; 6/3 ; la moitié.",
+      "type": "qcm",
+      "enonce": "Observe le disque du livret (page 18). Coche la proposition qui représente la partie grisée.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-fractions",
-      "numerisable": false,
-      "remarque": "Question appuyée sur le disque partagé du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "La moitié (0 si plusieurs cases cochées)."
+      "documents": [
+        "liv4-p18"
+      ],
+      "choix": [
+        "Trois quarts",
+        "1/3",
+        "6/3",
+        "La moitié"
+      ],
+      "reponse": 3,
+      "explication": "Le disque est partagé en 6 parts égales et 3 sont grisées : 3/6 = la moitié."
     },
     {
       "id": "ceb-2026-so-l5-q1a",
@@ -2171,17 +2645,24 @@
       "livret": 5,
       "numero": "5d",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "La ligne du temps représente la durée d'adhésion d'un pays à l'UE. Écris le nom de ce pays.",
+      "type": "texte_court",
+      "enonce": "Observe la ligne du temps du livret (page 8, question d). Elle représente la durée d'adhésion d'un pays à l'UE. Écris le nom de ce pays.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "hg-europe",
       "documents": [
-        "ue"
+        "ue",
+        "liv5-p08"
       ],
-      "numerisable": false,
-      "remarque": "Question appuyée sur la ligne du temps du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Un pays au choix parmi : Autriche, Suède ou Finlande."
+      "reponse": [
+        "Autriche",
+        "l'Autriche",
+        "Suède",
+        "la Suède",
+        "Finlande",
+        "la Finlande"
+      ],
+      "explication": "La partie grisée commence en 1995 : l'Autriche, la Suède et la Finlande sont entrées dans l'UE cette année-là."
     },
     {
       "id": "ceb-2026-so-l5-q6a",
@@ -2301,28 +2782,52 @@
       "livret": 5,
       "numero": "7a",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Coche tous les éléments qui correspondent à ce que tu vois sur le paysage. Les espaces non bâtis sont : nombreux, peu nombreux, des champs cultivés. Les espaces bâtis : sont surtout des maisons d'habitation, sont essentiellement des usines, montrent des fermes et des hangars agricoles. Le réseau routier est constitué principalement : d'autoroutes, de rues bordées de maisons, de petites routes de campagne.",
+      "type": "qcm_multi",
+      "enonce": "Observe la photo du paysage du livret (page 10). Coche, pour chacun des trois groupes, l'élément qui correspond à ce que tu vois : les espaces non bâtis, les espaces bâtis et le réseau routier (une réponse par groupe).",
       "points": 3,
       "corrigeVerifie": true,
       "fiche": "hg-paysages",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la photo de paysage du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Espaces non bâtis : peu nombreux. Espaces bâtis : surtout des maisons d'habitation. Réseau routier : des rues bordées de maisons. 1 point par groupe (0 si plusieurs cases cochées dans un groupe)."
+      "documents": [
+        "liv5-p10"
+      ],
+      "choix": [
+        "Espaces non bâtis : nombreux",
+        "Espaces non bâtis : peu nombreux",
+        "Espaces non bâtis : des champs cultivés",
+        "Espaces bâtis : surtout des maisons d'habitation",
+        "Espaces bâtis : essentiellement des usines",
+        "Espaces bâtis : des fermes et des hangars agricoles",
+        "Réseau routier : des autoroutes",
+        "Réseau routier : des rues bordées de maisons",
+        "Réseau routier : de petites routes de campagne"
+      ],
+      "reponse": [
+        1,
+        3,
+        7
+      ],
+      "explication": "Sur la photo, on voit peu d'espaces non bâtis, surtout des maisons d'habitation, et des rues bordées de maisons : c'est un paysage de ville."
     },
     {
       "id": "ceb-2026-so-l5-q7b",
       "livret": 5,
       "numero": "7b",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Coche la proposition correcte. Ce paysage est plutôt : un paysage rural, un paysage urbain, un paysage industriel.",
+      "type": "qcm",
+      "enonce": "Observe la photo du paysage du livret (page 10). Ce paysage est plutôt…",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "hg-paysages",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la photo de paysage du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Un paysage urbain (0 si plusieurs cases cochées)."
+      "documents": [
+        "liv5-p10"
+      ],
+      "choix": [
+        "un paysage rural",
+        "un paysage urbain",
+        "un paysage industriel"
+      ],
+      "reponse": 1,
+      "explication": "Beaucoup de maisons, de rues et peu d'espaces non bâtis : c'est un paysage urbain."
     },
     {
       "id": "ceb-2026-so-l5-q8",
@@ -2342,34 +2847,58 @@
       "livret": 5,
       "numero": "9a",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Tu es à Namur. À quelle voie prendras-tu le train pour aller à Houyet sans changer de train ? À quelle voie prendras-tu le train pour aller à Mons sans changer de train ? Écris le numéro de la voie.",
+      "type": "trous",
+      "enonce": "Observe le panneau d'affichage de la gare de Namur (livret page 14) et la carte du portfolio. Tu es à Namur. Écris le numéro de la voie.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "hg-cartes",
       "documents": [
-        "train"
+        "train",
+        "liv5-p14"
       ],
-      "numerisable": false,
-      "remarque": "Il faut lire le panneau d'affichage de la gare de Namur (photo du livret) que nous n'avons pas, en plus de la carte du portfolio : gardée en mode papier.",
-      "reponseModele": "Pour Houyet : la voie 6. Pour Mons : la voie 7. 1 point par réponse."
+      "texte": "Voie du train pour aller à Houyet sans changer de train : {1}\nVoie du train pour aller à Mons sans changer de train : {2}",
+      "reponse": [
+        [
+          "6",
+          "voie 6"
+        ],
+        [
+          "7",
+          "voie 7"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Pour Houyet, le train Dinant-Bertrix passe par Houyet : voie 6. Pour Mons, le train vers Charleroi-Central et Tournai : voie 7."
     },
     {
       "id": "ceb-2026-so-l5-q9b",
       "livret": 5,
       "numero": "9b",
       "domaine": "hg.geographie",
-      "type": "ouverte",
-      "enonce": "Coche la proposition correcte. Les trains à la voie 4 prendront plutôt la direction du nord, du sud, de l'ouest ou de l'est. Le train à la voie 6 prendra plutôt la direction du nord, du sud, de l'ouest ou de l'est.",
+      "type": "grille",
+      "enonce": "Observe le panneau d'affichage de la gare de Namur (livret page 14) et la carte du portfolio. Coche la direction correcte pour chaque train.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "hg-orientation",
       "documents": [
-        "train"
+        "train",
+        "liv5-p14"
       ],
-      "numerisable": false,
-      "remarque": "Il faut lire le panneau d'affichage de la gare de Namur (photo du livret) que nous n'avons pas, en plus de la carte du portfolio : gardée en mode papier.",
-      "reponseModele": "Voie 4 : vers l'est. Voie 6 : vers le sud. 1 point par réponse (0 si plusieurs cases cochées)."
+      "lignes": [
+        "Les trains à la voie 4 prendront plutôt la direction…",
+        "Le train à la voie 6 prendra plutôt la direction…"
+      ],
+      "colonnes": [
+        "du nord",
+        "du sud",
+        "de l'ouest",
+        "de l'est"
+      ],
+      "reponse": [
+        3,
+        1
+      ],
+      "explication": "Le train de la voie 4 va vers Huy, à l'est de Namur. Le train de la voie 6 va vers Dinant, au sud de Namur."
     },
     {
       "id": "ceb-2026-so-l6-q1",
@@ -2644,15 +3173,15 @@
       "numero": "12",
       "domaine": "fr.lire",
       "type": "ouverte",
-      "enonce": "Cette trace est « en positif ». Écris pour quelle raison.",
+      "enonce": "Observe la trace sur la photo du livret (page 8). Cette trace est « en positif ». Écris pour quelle raison.",
       "points": 1,
       "corrigeVerifie": true,
       "documents": [
-        "empreintes-3"
+        "empreintes-3",
+        "liv6-p08"
       ],
-      "numerisable": false,
-      "remarque": "La trace est une photo du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Toute idée liée au fait d'apporter de la matière sur une surface. Exemples : la trace est faite avec de la terre sur le carrelage ; la chaussure a laissé une trace de boue sur le sol."
+      "reponseModele": "Toute idée liée au fait d'apporter de la matière sur une surface. Exemples : la trace est faite avec de la terre sur le carrelage ; la chaussure a laissé une trace de boue sur le sol.",
+      "explication": "Une trace en positif est faite en apportant de la matière (boue, poussière, encre…) sur une surface."
     },
     {
       "id": "ceb-2026-so-l6-q13",
@@ -3212,14 +3741,27 @@
       "livret": 8,
       "numero": "2",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Écris le nombre qui convient dans chaque case, sur chacune des deux droites graduées.",
+      "type": "trous",
+      "enonce": "Observe les deux droites graduées du livret (page 2). Écris le nombre qui convient dans chaque case.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "ma-droite-graduee",
-      "numerisable": false,
-      "remarque": "Question appuyée sur deux droites graduées agrandies du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Première droite (entre 7 860 et 7 870) : 7 867. Seconde droite (entre 15 et 16) : 14,2. 1 point par réponse."
+      "documents": [
+        "liv8-p02"
+      ],
+      "texte": "Nombre de la case de la première droite : {1}\nNombre de la case de la seconde droite : {2}",
+      "reponse": [
+        [
+          "7867",
+          "7 867"
+        ],
+        [
+          "14,2",
+          "14.2"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Première droite : l'agrandissement va de 7 860 à 7 870 en 10 graduations de 1 ; la case est à la 7e graduation : 7 867. Seconde droite : l'agrandissement va de 14 à 15 en 10 graduations de 0,1 ; la case est à la 2e graduation : 14,2."
     },
     {
       "id": "ceb-2026-so-l8-q3a",
@@ -3252,14 +3794,30 @@
       "livret": 8,
       "numero": "4a",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Complète les deux cases blanches du tableau (grille de nombres décimaux).",
+      "type": "trous",
+      "enonce": "Observe la grille de nombres du livret (page 3, question 4). Complète les deux cases blanches du tableau.",
       "points": 2,
       "corrigeVerifie": true,
       "fiche": "ma-decimaux",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la grille de nombres du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Les deux cases blanches contiennent 0,68 et 1. 1 point par réponse."
+      "documents": [
+        "liv8-p03"
+      ],
+      "texte": "Case blanche du haut : {1}\nCase blanche du bas : {2}",
+      "reponse": [
+        [
+          "0,68",
+          "0.68"
+        ],
+        [
+          "1",
+          "1,0",
+          "1,00",
+          "1.0",
+          "1.00"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Dans une ligne, on avance de 0,01 par case (0,84 ; 0,85 ; 0,86) ; dans une colonne, de 0,1 par case (0,75 ; 0,85 ; 0,95). On trouve 0,68 dans la case du haut et 1 dans la case du bas."
     },
     {
       "id": "ceb-2026-so-l8-q4b",
@@ -3452,14 +4010,25 @@
       "livret": 8,
       "numero": "8a",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Observe ce compteur d'eau (03060,580 m³). Barre les zéros que l'on peut supprimer sans modifier la valeur du nombre affiché sur ce compteur.",
+      "type": "qcm_multi",
+      "enonce": "Observe le compteur d'eau du livret (page 5) : il affiche 03060,580 m³. Quels zéros peut-on supprimer sans modifier la valeur du nombre affiché ? Coche tous ceux qui conviennent.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-decimaux",
-      "numerisable": false,
-      "remarque": "Barrage sur la photo du compteur du livret que nous n'avons pas : gardé en mode papier.",
-      "reponseModele": "Le zéro tout à gauche (avant le 3) et le zéro tout à droite (après le 8) sont barrés : 03060,580 = 3060,58. Les autres zéros ne peuvent pas être supprimés. Tout ou rien."
+      "documents": [
+        "liv8-p05"
+      ],
+      "choix": [
+        "Zéro A",
+        "Zéro B",
+        "Zéro C",
+        "Zéro D"
+      ],
+      "reponse": [
+        0,
+        3
+      ],
+      "explication": "Le zéro A (tout à gauche) et le zéro D (tout à droite) ne changent pas la valeur : 03060,580 = 3060,58. Les zéros B et C ne peuvent pas être supprimés."
     },
     {
       "id": "ceb-2026-so-l8-q8b",
@@ -3560,28 +4129,42 @@
       "livret": 8,
       "numero": "12a",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Observe ces droites. Écris sous quelle tache se trouve le nombre 4 600.",
+      "type": "texte_court",
+      "enonce": "Observe les droites graduées du livret (page 8, question a). Écris sous quelle tache (A, B, C ou D) se trouve le nombre 4 600.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-droite-graduee",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les droites graduées et les taches A à E du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "C (on accepte que la lettre C soit mise en évidence sur la droite numérique plutôt que recopiée)."
+      "documents": [
+        "liv8-p08"
+      ],
+      "reponse": [
+        "C",
+        "tache C",
+        "la tache C"
+      ],
+      "explication": "De 3 250 à 3 500, il y a 250 en deux graduations : chaque graduation vaut 125. On compte les graduations jusqu'à 4 600 : on arrive sous la tache C."
     },
     {
       "id": "ceb-2026-so-l8-q12b",
       "livret": 8,
       "numero": "12b",
       "domaine": "ma.arithmetique",
-      "type": "ouverte",
-      "enonce": "Observe ces droites. Coche le nombre qui est caché sous la tache E : 1 640, 1 840, 2 040 ou 2 400.",
+      "type": "qcm",
+      "enonce": "Observe la droite graduée du livret (page 8, question b). Coche le nombre qui est caché sous la tache E.",
       "points": 1,
       "corrigeVerifie": true,
       "fiche": "ma-droite-graduee",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les droites graduées et la tache E du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "1 840 (0 si plusieurs cases cochées)."
+      "documents": [
+        "liv8-p08"
+      ],
+      "choix": [
+        "1 640",
+        "1 840",
+        "2 040",
+        "2 400"
+      ],
+      "reponse": 1,
+      "explication": "Entre 2 200 et 3 800, il y a 8 intervalles : chaque graduation vaut 200. En reculant depuis 2 200, on trouve 2 000 puis 1 800 ; la tache E est juste après 1 800 : c'est 1 840."
     },
     {
       "id": "ceb-2026-so-l8-q13a",
@@ -3800,26 +4383,52 @@
       "livret": 9,
       "numero": "1a",
       "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Observe le schéma d'un siphon. Coche les deux arrosoirs qui ne peuvent pas être remplis complètement.",
+      "type": "qcm_multi",
+      "enonce": "Observe le schéma d'un siphon du livret (page 2). Coche les deux arrosoirs qui ne peuvent pas être remplis complètement.",
       "points": 2,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Question appuyée sur le schéma du siphon et sur les quatre arrosoirs du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Le 2e et le 3e arrosoirs (en partant de la gauche). 1 point par arrosoir ; −1 point par réponse excédentaire."
+      "documents": [
+        "liv9-p02"
+      ],
+      "choix": [
+        "Arrosoir A",
+        "Arrosoir B",
+        "Arrosoir C",
+        "Arrosoir D"
+      ],
+      "reponse": [
+        1,
+        2
+      ],
+      "explication": "Comme dans le siphon (vases communicants), l'eau ne monte que jusqu'à la hauteur du bec. Les arrosoirs B et C ont un bec plus bas que le haut du réservoir : ils ne peuvent pas être remplis complètement."
     },
     {
       "id": "ceb-2026-so-l9-q1b",
       "livret": 9,
       "numero": "1b",
       "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Observe les photos suivantes : une partie du tuyau a été cachée. Pour chaque photo, entoure le numéro (1, 2 ou 3) qui indique où arrive le niveau de l'eau.",
+      "type": "grille",
+      "enonce": "Observe les photos E et F du livret (pages 2 et 3) : une partie du tuyau a été cachée. Pour chaque photo, indique le niveau (1, 2 ou 3) où arrive le niveau de l'eau.",
       "points": 2,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Question appuyée sur les deux photos du tuyau du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Première photo : le niveau 1. Deuxième photo : le niveau 3. 1 point par photo."
+      "documents": [
+        "liv9-p02",
+        "liv9-p03"
+      ],
+      "lignes": [
+        "Photo E (page 2 du livret)",
+        "Photo F (page 3 du livret)"
+      ],
+      "colonnes": [
+        "Niveau 1",
+        "Niveau 2",
+        "Niveau 3"
+      ],
+      "reponse": [
+        0,
+        2
+      ],
+      "explication": "Dans un tuyau en U, l'eau est au même niveau dans les deux branches : sur la photo E, le niveau 1 ; sur la photo F, le niveau 3."
     },
     {
       "id": "ceb-2026-so-l9-q1c",
@@ -3999,13 +4608,15 @@
       "numero": "3",
       "domaine": "sc.vivant",
       "type": "ouverte",
-      "enonce": "Entoure le nom d'un animal de ton choix (poule, cheval, chien, coccinelle ou abeille) puis coche, dans la clé de détermination, toutes les étiquettes qui caractérisent cet animal.",
+      "enonce": "Choisis un animal parmi : poule, cheval, chien, coccinelle ou abeille. Dans la clé de détermination du livret (page 5), la case « Yeux, bouche » est déjà cochée. Écris les numéros des étiquettes qui caractérisent l'animal que tu as choisi (une étiquette par ligne de la clé).",
       "points": 3,
       "corrigeVerifie": true,
       "fiche": "sc-attributs",
-      "numerisable": false,
-      "remarque": "Question appuyée sur la clé de détermination du livret (étiquettes à cocher) que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "3 points : 1 par ligne qui caractérise l'animal choisi. Poule : yeux, bouche ; squelette interne ; 4 membres ; plumes. Cheval ou chien : yeux, bouche ; squelette interne ; 4 membres ; mamelles, poils, oreilles avec pavillon. Coccinelle : yeux, bouche ; squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; élytres. Abeille : yeux, bouche ; squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; constriction abdominale."
+      "documents": [
+        "liv9-p05"
+      ],
+      "reponseModele": "1 point par ligne qui caractérise l'animal choisi. Poule : 1, 3, 6 (squelette interne ; 4 membres ; plumes). Cheval ou chien : 1, 3, 7 (squelette interne ; 4 membres ; mamelles, poils, oreilles avec pavillon). Coccinelle : 2, 5, 8 (squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; élytres). Abeille : 2, 5, 9 (squelette externe ; 3 paires de pattes articulées, 1 paire d'antennes, ailes ; constriction abdominale).",
+      "explication": "On suit la clé ligne par ligne : squelette interne ou externe, puis le type de membres, puis un caractère propre à l'animal."
     },
     {
       "id": "ceb-2026-so-l9-q4a",
@@ -4042,14 +4653,41 @@
       "livret": 9,
       "numero": "4b",
       "domaine": "sc.vivant",
-      "type": "ouverte",
-      "enonce": "Le chat possède un appareil digestif proche de celui de l'Homme. Pour chaque schéma, complète les étiquettes en choisissant parmi les noms d'organes : A le foie, B le côlon (gros intestin), C le pancréas, D l'intestin grêle, E l'estomac, F l'œsophage, G l'anus. Écris les lettres au bon endroit.",
+      "type": "trous",
+      "enonce": "Le chat possède un appareil digestif proche de celui de l'Homme. Observe les deux schémas du livret (page 7). Pour chaque case numérotée de 1 à 4, écris la lettre de l'organe qui convient parmi : A le foie, B le côlon (gros intestin), C le pancréas, D l'intestin grêle, E l'estomac, F l'œsophage, G l'anus.",
       "points": 4,
       "corrigeVerifie": true,
       "fiche": "sc-corps-humain",
-      "numerisable": false,
-      "remarque": "Question appuyée sur les deux schémas (chat et Homme) du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Chat : F (l'œsophage) et E (l'estomac) ; Homme : A (le foie) et E (l'estomac). Les étiquettes D (intestin grêle, chat), G (anus) et B (côlon, Homme) sont déjà placées. 1 point par lettre."
+      "documents": [
+        "liv9-p07"
+      ],
+      "texte": "Case 1 (schéma du chat) : {1}\nCase 2 (schéma du chat) : {2}\nCase 3 (schéma de l'Homme) : {3}\nCase 4 (schéma de l'Homme) : {4}",
+      "reponse": [
+        [
+          "F",
+          "l'œsophage",
+          "l'oesophage",
+          "œsophage",
+          "oesophage"
+        ],
+        [
+          "E",
+          "l'estomac",
+          "estomac"
+        ],
+        [
+          "A",
+          "le foie",
+          "foie"
+        ],
+        [
+          "E",
+          "l'estomac",
+          "estomac"
+        ]
+      ],
+      "champsCourts": true,
+      "explication": "Chez le chat : le tube long qui descend de la bouche est l'œsophage (F) et le sac plus bas est l'estomac (E). Chez l'Homme : le grand organe foncé à gauche est le foie (A) et la poche à droite est l'estomac (E)."
     },
     {
       "id": "ceb-2026-so-l9-q4c",
@@ -4137,14 +4775,42 @@
       "livret": 9,
       "numero": "7a",
       "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Sur le schéma du cycle de l'eau, écris les mots suivants dans les étiquettes : ruissèlement, précipitations, infiltration, condensation, évaporation.",
+      "type": "trous",
+      "enonce": "Observe le schéma du cycle de l'eau du livret (page 12). Écris dans chaque étiquette numérotée le mot qui convient parmi : ruissèlement, précipitations, infiltration, condensation, évaporation.",
       "points": 5,
       "corrigeVerifie": true,
       "fiche": "sc-cycle-eau",
-      "numerisable": false,
-      "remarque": "Question appuyée sur le schéma du cycle de l'eau du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Condensation (au niveau du nuage), précipitations (la pluie qui tombe du nuage), évaporation (au-dessus de la mer), ruissèlement (sur la pente, vers la mer) et infiltration (dans le sol). 1 point par étiquette ; on ne sanctionne pas l'orthographe."
+      "documents": [
+        "liv9-p12"
+      ],
+      "texte": "Étiquette 1 : {1}\nÉtiquette 2 : {2}\nÉtiquette 3 : {3}\nÉtiquette 4 : {4}\nÉtiquette 5 : {5}",
+      "reponse": [
+        [
+          "condensation",
+          "la condensation"
+        ],
+        [
+          "précipitations",
+          "précipitation",
+          "les précipitations",
+          "la précipitation"
+        ],
+        [
+          "évaporation",
+          "l'évaporation"
+        ],
+        [
+          "ruissèlement",
+          "ruissellement",
+          "le ruissèlement",
+          "le ruissellement"
+        ],
+        [
+          "infiltration",
+          "l'infiltration"
+        ]
+      ],
+      "explication": "Condensation : la vapeur forme les nuages. Précipitations : la pluie tombe du nuage. Évaporation : l'eau de la mer monte en vapeur. Ruissèlement : l'eau coule sur la pente. Infiltration : l'eau pénètre dans le sol."
     },
     {
       "id": "ceb-2026-so-l9-q7b",
@@ -4181,14 +4847,49 @@
       "livret": 9,
       "numero": "8",
       "domaine": "sc.matiere",
-      "type": "ouverte",
-      "enonce": "Écris le nom de la forme météorologique de l'eau qui apparait sur chacune des photos (exemple : la grêle).",
+      "type": "trous",
+      "enonce": "Observe les photos du livret (page 13). Écris le nom de la forme météorologique de l'eau qui apparait sur chacune des photos 1 à 4 (la photo de la grêle est donnée en exemple).",
       "points": 4,
       "corrigeVerifie": true,
       "fiche": "sc-cycle-eau",
-      "numerisable": false,
-      "remarque": "Question appuyée sur quatre photos du livret que nous n'avons pas : gardée en mode papier.",
-      "reponseModele": "Nuage ; brume ou brouillard ; pluie ou averse ; neige. 1 point par photo."
+      "documents": [
+        "liv9-p13"
+      ],
+      "texte": "Photo 1 : {1}\nPhoto 2 : {2}\nPhoto 3 : {3}\nPhoto 4 : {4}",
+      "reponse": [
+        [
+          "nuage",
+          "un nuage",
+          "le nuage",
+          "nuages",
+          "des nuages",
+          "les nuages"
+        ],
+        [
+          "brume",
+          "la brume",
+          "brouillard",
+          "le brouillard",
+          "un brouillard",
+          "du brouillard",
+          "de la brume"
+        ],
+        [
+          "pluie",
+          "la pluie",
+          "de la pluie",
+          "averse",
+          "une averse",
+          "l'averse",
+          "des averses"
+        ],
+        [
+          "neige",
+          "la neige",
+          "de la neige"
+        ]
+      ],
+      "explication": "Photo 1 : des nuages (gouttelettes d'eau). Photo 2 : de la brume ou du brouillard. Photo 3 : de la pluie (une averse). Photo 4 : de la neige."
     },
     {
       "id": "ceb-2026-so-l9-q9",
