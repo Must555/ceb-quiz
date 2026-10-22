@@ -4,7 +4,7 @@
   "referentiel": "tronc_commun",
   "titre": "CEB 2026 — Référentiels du Tronc commun",
   "source": "FWB, épreuve externe commune 2026 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
-  "remarque": "Livret 1 (Écouter) non encodé : il nécessite l'enregistrement audio du récit. Certaines questions reposent sur des figures du questionnaire que nous n'avons pas : elles sont omises ou gardées en mode papier.",
+  "remarque": "Certaines questions reposent sur des figures du questionnaire que nous n'avons pas : elles sont omises ou gardées en mode papier.",
   "livrets": [
     {
       "n": 1,
@@ -13,7 +13,8 @@
       "date": "2026-06-18",
       "points": 25,
       "audio": null,
-      "duree": 40
+      "duree": 40,
+      "ecoute": "ecoute"
     },
     {
       "n": 2,
@@ -305,9 +306,559 @@
       "titre": "Nelson (BD) et « Rions un peu ! »",
       "fichier": "assets/2026-tc/pdf39.webp",
       "alt": "Bande dessinée et trois blagues numérotées."
+    },
+    {
+      "id": "ecoute",
+      "type": "ecoute",
+      "titre": "Tom et son aquarium",
+      "segments": [
+        {
+          "lecteur": 1,
+          "texte": "Comme tous les soirs quand il rentre de l’école, Tom actionne l’interrupteur et l’aquarium s’illumine. Il contemple les poissons de toutes sortes qui vont et viennent sur le fond, les algues vertes qui s’agitent sous les remous, le jet de petites bulles qui s’échappent du sol, derrière quelques galets."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tom observe son aquarium un long moment. Il est heureux et calme. C’est lui qui a créé ce petit monde aquatique. Patiemment, il a réalisé peu à peu son rêve. Économisant son argent de poche, il a d’abord acheté l’aquarium vide. Il n’est pas immense, plutôt petit même, mais cela lui suffit, et puis un gros aquarium était beaucoup trop cher."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Il a ensuite acheté le décor et disposé comme un artiste le sable, les rochers et les plantes. Il a recommencé plusieurs fois jusqu’à en être pleinement satisfait : ici, un morceau d’ardoise grise, plus loin, quelques gros éclats de marbre rose. Il a aussi habilement disposé quelques plantes d’eau douce."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Enfin, peu à peu, il a acheté quelques poissons dont il a appris les noms étranges : des néons cardinalis, petits et vifs, lumineux en haut, et rouges en bas, des barbus cerises, rouges avec une ligne brunâtre les traversant tout le long du corps, des barbus rayés…"
+        },
+        {
+          "lecteur": 1,
+          "texte": "Ce soir-là, comme chaque fois, le spectacle est merveilleux : les algues s’agitent, les bulles d’air s’élèvent, les poissons nagent et virevoltent. Petit monde à part, magique, unique, qu’il a créé, exactement comme il le voulait."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tout à l’heure, un copain de la classe doit passer : Ronald. Il n’est pas venu depuis longtemps. Tom ne lui a pas encore montré son aquarium."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Lorsque la sonnerie de la porte retentit, Tom se précipite et ouvre. Ronald s’avance et repère l’aquarium de suite."
+        },
+        {
+          "lecteur": 1,
+          "texte": "— Tiens, c’est nouveau, ça !"
+        },
+        {
+          "lecteur": 1,
+          "texte": "Après avoir jeté un regard rapide et distrait sur l’aquarium, Ronald raconte :"
+        },
+        {
+          "lecteur": 1,
+          "texte": "— L’autre jour, j’étais chez des amis. Il y avait un aquarium magnifique, immense, qui prenait presque le quart de la pièce. Extraordinaire ! Une quantité de poissons incroyable. C’est un aquarium énorme, rien à voir avec le tien !"
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tom baisse les yeux et ne sait pas quoi répondre. Il écoute les explications de Ronald qui décrit avec de grands gestes l’immense aquarium qu’il a pu voir. Maintenant, Tom a presque honte de son aquarium, si petit, si ordinaire comparé à celui qu’on lui décrit, splendide."
+        },
+        {
+          "lecteur": 1,
+          "texte": "C’est avec soulagement qu’il raccompagne Ronald à la porte peu de temps après."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tom est triste. C’est avec la gorge serrée qu’il rentre dans sa chambre, seul, et retrouve son aquarium illuminé. Il s’approche et le regarde : son aquarium n’est plus le même. Il l’observe avec de nouveaux yeux."
+        },
+        {
+          "lecteur": 1,
+          "texte": "C’est un petit aquarium bon marché posé sur un meuble trop étroit. Il est petit, trop petit, et comporte trop peu de plantes, trop de rochers, trop peu de poissons…"
+        },
+        {
+          "lecteur": 1,
+          "texte": "Triste, le cœur serré, Tom actionne le petit interrupteur et l’aquarium s’éteint. Maintenant, quand il rentre le soir, il ne s’approche plus aussi souvent de son aquarium. Il l’oublie peu à peu. Les vitres commencent à se couvrir de petites algues vertes qu’il n’a pas pris le soin d’enlever avec la raclette."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Ce samedi, Tom est allé chez sa grand-mère qui vit dans une petite maison entourée de beaux rosiers. Il aime la voir de temps à autre. Il aime aussi retrouver l’atmosphère calme de la vieille maison, le charme du jardin."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tout est d’un autre âge, les meubles, les lampes, les ustensiles familiers, la radio… jusqu’au robinet d’eau froide que Tom actionne en ce moment afin de remplir un bol pour laver des fraises. C’est un curieux robinet qui doit être très ancien. On l’ouvre en tournant la partie haute composée de quatre petites branches. Au centre, il y a une pastille de faïence blanche sur laquelle est inscrit “Froid”."
+        },
+        {
+          "lecteur": 1,
+          "texte": "— Ferme bien le robinet, tu sais qu’il goutte ! lance sa grand-mère."
+        },
+        {
+          "lecteur": 1,
+          "texte": "— Oui, je sais, répond Tom."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Effectivement, il faut forcer un peu pour le fermer, sinon le vieux robinet laisse tomber pendant des heures des petites gouttes les unes après les autres. C’est du gaspillage, lui a expliqué sa grand-mère."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Tom vient de poser son bol sur la table."
+        },
+        {
+          "lecteur": 1,
+          "texte": "— Dis mamie, pourquoi ne changes-tu pas ton robinet ? Il est tellement vieux !"
+        },
+        {
+          "lecteur": 1,
+          "texte": "— Et pourquoi le changer, Tom ? Parce qu’il est vieux, parce qu’il n’est pas parfait ? Tout ce qu’il y a dans cette maison est ancien et je m’y suis habituée. Crois-tu que je serais plus heureuse si je remplaçais tout ce qu’il y a autour de moi par du neuf ? Non, je ne le crois pas !"
+        },
+        {
+          "lecteur": 1,
+          "texte": "De retour chez lui, Tom a allumé son aquarium et brusquement, quelque chose est arrivé en lui, quelque chose de très clair, comme cette lumière qui illumine l’eau transparente devant lui."
+        },
+        {
+          "lecteur": 1,
+          "texte": "Sa grand-mère est contente de ce qu’elle possède et Tom sait parfaitement que si elle avait un nouveau robinet, une nouvelle radio… elle n’en serait pas pour autant plus heureuse. C’est vrai, c’est elle-même qui l’a dit ! Ce n’est pas parce qu’on aura plus grand, plus gros, plus neuf, plus cher qu’on en sera plus heureux ! C’est comme s’il entendait sa grand-mère le lui dire. En tout cas, c’est ça qu’elle a essayé de lui faire comprendre tout à l’heure, il en est sûr."
+        },
+        {
+          "lecteur": 1,
+          "texte": "De nouveau, Tom s’installe devant la vitre de son aquarium, l’air réjoui. Non, maintenant plus personne ne pourra lui enlever ce petit monde aquatique, car c’est lui qui l’a créé, qui l’a installé peu à peu en économisant…"
+        },
+        {
+          "lecteur": 1,
+          "texte": "Finalement, Tom est doublement heureux, d’abord parce qu’il a retrouvé son bel aquarium, et ensuite parce qu’il a compris comment ne plus se laisser confisquer son bonheur."
+        }
+      ],
+      "source": "Correctif officiel CEB 2026, support du Savoir écouter"
+    },
+    {
+      "id": "liv1-p07",
+      "source": "livret",
+      "livret": 1,
+      "page": 7,
+      "titre": "Les robinets imaginés par Jules et par Nina (question 11)",
+      "fichier": "assets/2026-tc/liv1-p07.webp",
+      "alt": "Deux enfants imaginent chacun un robinet dans une bulle de pensée. Jules (à gauche) imagine un robinet moderne en métal chromé à poignée carrée. Nina (à droite) imagine un robinet ancien à tête en croix à quatre branches, avec un long bec courbe."
     }
   ],
   "questions": [
+    {
+      "id": "ceb-2026-tc-l1-q1",
+      "livret": 1,
+      "numero": "1",
+      "domaine": "fr.ecouter",
+      "type": "qcm",
+      "enonce": "Le narrateur de cette histoire est…",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-narrateur",
+      "documents": [
+        "ecoute"
+      ],
+      "choix": [
+        "Tom.",
+        "Ronald.",
+        "la grand-mère.",
+        "l'auteur."
+      ],
+      "reponse": 3,
+      "explication": "Le narrateur ne fait pas partie de l'histoire : il la raconte de l'extérieur en parlant de « Tom » et de « il ». C'est donc l'auteur."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q2",
+      "livret": 1,
+      "numero": "2",
+      "domaine": "fr.ecouter",
+      "type": "ordre",
+      "enonce": "Voici cinq idées du récit. Remets-les dans l'ordre chronologique.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-organisateurs",
+      "documents": [
+        "ecoute"
+      ],
+      "elements": [
+        "Ronald décrit l'aquarium de ses amis.",
+        "La grand-mère de Tom est contente de ce qu'elle possède.",
+        "Tom rentre dans sa chambre, la gorge serrée.",
+        "Tom s'émerveille face à son petit aquarium.",
+        "Plus personne ne pourra enlever à Tom ce petit monde aquatique."
+      ],
+      "reponse": [
+        3,
+        0,
+        2,
+        1,
+        4
+      ],
+      "explication": "Tom admire d'abord son aquarium, puis Ronald décrit le sien, Tom rentre triste, sa grand-mère lui parle de bonheur, et enfin Tom retrouve sa joie."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q3",
+      "livret": 1,
+      "numero": "3",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Au début de l'histoire, quelle est l'habitude de Tom quand il rentre de l'école ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Il regarde (contemple, observe) son aquarium, ou il allume son aquarium. Ce n'est pas bon : « il s'occupe de son aquarium », car le texte ne le dit pas.",
+      "explication": "Tout de suite en rentrant, Tom allume l'interrupteur et contemple ses poissons."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q4",
+      "livret": 1,
+      "numero": "4",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Pour quelle raison Tom a-t-il recommencé plusieurs fois à disposer les rochers, le sable et les plantes ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Pour avoir un beau résultat, le plus beau possible : il voulait être pleinement satisfait, que ce soit comme il le souhaitait.",
+      "explication": "Tom recommence jusqu'à être pleinement satisfait : il veut que son décor soit parfait."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q5",
+      "livret": 1,
+      "numero": "5",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Tu as entendu cet extrait : « C'est lui qui a créé ce petit monde aquatique. » Que désigne l'auteur par « ce petit monde aquatique » ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-reprises",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "L'aquarium (de Tom). Toute formulation qui parle de l'aquarium de Tom est bonne.",
+      "explication": "« Ce petit monde aquatique » reprend le mot « aquarium » avec d'autres mots."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q6",
+      "livret": 1,
+      "numero": "6",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Qu'est-ce qui peut expliquer que lorsque Ronald sonne à la porte, Tom se précipite pour lui ouvrir ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Tom a hâte de lui montrer son aquarium, ou il est content de revoir un ami qui n'est pas venu depuis longtemps. Ce n'est pas assez de dire seulement « il est excité ».",
+      "explication": "Ronald n'était pas venu depuis longtemps et n'avait pas encore vu l'aquarium : Tom est impatient de le lui montrer."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q7",
+      "livret": 1,
+      "numero": "7",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Pour quelle raison Tom est-il soulagé de raccompagner Ronald à la porte ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Parce que Tom est triste, déçu, vexé ou a honte à cause de ce que Ronald a dit, ou parce qu'il n'a plus envie d'écouter son ami. On accepte aussi : Ronald critique son aquarium.",
+      "explication": "Ronald a comparé le petit aquarium de Tom à un énorme aquarium. Tom est blessé et n'a plus envie de l'écouter."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q8",
+      "livret": 1,
+      "numero": "8",
+      "domaine": "fr.ecouter",
+      "type": "qcm_multi",
+      "enonce": "Coche les deux propositions correctes.",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "choix": [
+        "Tom est satisfait de son aquarium au début de l'histoire.",
+        "Ronald trouve l'aquarium de Tom plus beau que celui de ses amis.",
+        "Tom a économisé son argent de poche pour acheter l'aquarium.",
+        "Tom abandonne complètement son aquarium à la fin de l'histoire.",
+        "Tous les objets que la grand-mère de Tom possède sont modernes."
+      ],
+      "reponse": [
+        0,
+        2
+      ],
+      "explication": "Au début, Tom est heureux de son aquarium et il l'a payé avec son argent de poche. Ronald préfère l'aquarium de ses amis, Tom retrouve son aquarium à la fin et les objets de sa grand-mère sont anciens."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q9",
+      "livret": 1,
+      "numero": "9",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Tu as entendu cet extrait : « Tom actionne le petit interrupteur et l'aquarium s'éteint. » Pour quelle raison Tom éteint-il la lumière à ce moment-là ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Parce qu'il est triste ou déçu, ou parce qu'il trouve son aquarium trop petit, trop ordinaire, qu'il a honte de son aquarium ou qu'il ne veut plus le voir.",
+      "explication": "Depuis la visite de Ronald, Tom trouve son aquarium trop petit et ne veut plus le voir."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q10",
+      "livret": 1,
+      "numero": "10",
+      "domaine": "fr.ecouter",
+      "type": "texte_court",
+      "enonce": "Dans l'histoire entendue, on parle de néons cardinalis et de barbus cerise. De quoi s'agit-il ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "souple": true,
+      "reponse": [
+        "des poissons",
+        "poissons",
+        "ce sont des poissons",
+        "des poissons d'aquarium",
+        "ce sont des poissons d'aquarium",
+        "des poissons d'eau douce",
+        "de poissons"
+      ],
+      "explication": "Ce sont les noms étranges de poissons que Tom a achetés pour son aquarium."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q11",
+      "livret": 1,
+      "numero": "11",
+      "domaine": "fr.ecouter",
+      "type": "texte_court",
+      "enonce": "Ces deux enfants imaginent le robinet de la grand-mère de Tom. Écris le prénom de l'enfant qui imagine le robinet comme décrit dans l'histoire entendue.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute",
+        "liv1-p07"
+      ],
+      "souple": true,
+      "reponse": [
+        "Nina"
+      ],
+      "explication": "Le robinet de la grand-mère est ancien, avec une partie haute à quatre petites branches : c'est celui que Nina imagine."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q12",
+      "livret": 1,
+      "numero": "12",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Dans quel but faut-il forcer un peu pour fermer le robinet chez la grand-mère de Tom ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Pour qu'il ne goutte pas (qu'il ne coule pas, ne fuie pas), ou pour ne pas gaspiller l'eau. Ce n'est pas bon de dire seulement « parce qu'il est vieux ».",
+      "explication": "Si on ne force pas, le vieux robinet laisse tomber des gouttes pendant des heures : c'est du gaspillage."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q13",
+      "livret": 1,
+      "numero": "13",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Explique ce que signifie « Tout est d'un autre âge » chez la grand-mère de Tom.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-expressions",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Tout est ancien, vieux, démodé : les meubles, les lampes, les ustensiles, la radio, le robinet appartiennent à une autre époque.",
+      "explication": "« D'un autre âge » veut dire qui date d'une autre époque : ici, tout est ancien."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q14",
+      "livret": 1,
+      "numero": "14",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Dans l'histoire entendue, pour quelle raison la grand-mère de Tom ne remplace-t-elle pas tout ce qui est ancien dans sa maison ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Parce qu'elle se contente de ce qu'elle a, ou parce que le neuf ne la rendrait pas plus heureuse (ça marche bien, ça ne sert à rien de changer). On accepte aussi : elle y est habituée. Ce n'est pas bon : « elle aime les objets anciens ».",
+      "explication": "La grand-mère est contente de ce qu'elle possède et pense que du neuf ne la rendrait pas plus heureuse."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q15",
+      "livret": 1,
+      "numero": "15",
+      "domaine": "fr.ecouter",
+      "type": "grille",
+      "enonce": "Pour chaque proposition, indique si c'est vrai ou faux.",
+      "points": 3,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "lignes": [
+        "Au début de l'histoire, Tom montre du contentement par rapport à son aquarium.",
+        "Ronald montre son enthousiasme par rapport à l'aquarium de Tom.",
+        "La grand-mère de Tom attache de l'importance à la simplicité."
+      ],
+      "colonnes": [
+        "Vrai",
+        "Faux"
+      ],
+      "reponse": [
+        0,
+        1,
+        0
+      ],
+      "explication": "Tom est heureux et calme devant son aquarium. Ronald jette un regard rapide et distrait sur l'aquarium de Tom, il n'est pas enthousiaste. La grand-mère se contente de ses vieux objets : elle aime la simplicité."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q16",
+      "livret": 1,
+      "numero": "16",
+      "domaine": "fr.ecouter",
+      "type": "qcm",
+      "enonce": "Quel message l'auteur veut-il nous faire passer ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "choix": [
+        "Le courage porte ses fruits.",
+        "Le bonheur dépend du regard que l'on porte sur les choses.",
+        "L'amitié n'a pas de frontière.",
+        "Les grands-parents ont toujours raison."
+      ],
+      "reponse": 1,
+      "explication": "Tom est heureux de son aquarium, puis malheureux quand il le compare, puis heureux de nouveau : le bonheur dépend du regard qu'on porte sur ce qu'on a."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q17",
+      "livret": 1,
+      "numero": "17",
+      "domaine": "fr.ecouter",
+      "type": "trous",
+      "enonce": "Quels personnages ont prononcé les paroles suivantes ?",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "texte": "« Il y avait un aquarium magnifique, immense, qui prenait presque le quart de la pièce ! » a été dit par {1}  ·  « Tout ce qu'il y a dans cette maison est ancien et je m'y suis habituée. » a été dit par {2}",
+      "reponse": [
+        [
+          "Ronald",
+          "un copain",
+          "un copain de classe",
+          "un ami",
+          "le copain de Tom",
+          "l'ami de Tom",
+          "son copain",
+          "son ami",
+          "celui qui vient chez Tom"
+        ],
+        [
+          "la grand-mère de Tom",
+          "la grand-mère",
+          "la mamie",
+          "mamie",
+          "la grand-maman",
+          "grand-mère",
+          "sa grand-mère"
+        ]
+      ],
+      "explication": "C'est Ronald qui décrit l'énorme aquarium vu chez des amis ; c'est la grand-mère de Tom qui parle de sa maison ancienne."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q18",
+      "livret": 1,
+      "numero": "18",
+      "domaine": "fr.ecouter",
+      "type": "ouverte",
+      "enonce": "Quel sentiment Tom éprouve-t-il à la fin de l'histoire ?",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "reponseModele": "Toute idée de bonheur, de contentement : il est content, doublement heureux, fier, satisfait de son aquarium.",
+      "explication": "À la fin, Tom est doublement heureux : il a retrouvé son bel aquarium et compris comment garder son bonheur."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q19",
+      "livret": 1,
+      "numero": "19",
+      "domaine": "fr.ecouter",
+      "type": "ordre",
+      "enonce": "Tout au long de l'histoire, les émotions ou sentiments vécus par Tom évoluent. Remets-les dans leur ordre d'apparition.",
+      "points": 1,
+      "corrigeVerifie": true,
+      "fiche": "fr-organisateurs",
+      "documents": [
+        "ecoute"
+      ],
+      "elements": [
+        "Tom est doublement heureux.",
+        "Tom a presque honte de son aquarium.",
+        "Tom est triste.",
+        "Tom est pleinement satisfait de son aquarium."
+      ],
+      "reponse": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "explication": "Tom est d'abord satisfait, il a presque honte après la visite de Ronald, puis il est triste, et enfin doublement heureux."
+    },
+    {
+      "id": "ceb-2026-tc-l1-q20",
+      "livret": 1,
+      "numero": "20",
+      "domaine": "fr.ecouter",
+      "type": "grille",
+      "enonce": "Pour chaque résumé, indique s'il correspond au récit que tu viens d'entendre. Premier résumé : « Tom adore son petit aquarium et passe des heures à l'observer. Un jour, son ami Ronald lui décrit un aquarium gigantesque qu'il a vu chez des amis. Tom trouve alors le sien trop petit et n'en prend plus soin. Heureusement, sa tante, qui vit dans une maison ancienne et charmante, lui apprend que le bonheur ne se trouve pas dans les choses matérielles. De retour chez lui, Tom retrouve sa passion pour son aquarium et la joie de l'avoir créé lui-même. » Deuxième résumé : « Tom est impatient de montrer son nouvel aquarium à son copain. Quand celui-ci arrive, il regarde à peine son aquarium car les poissons ne l'intéressent pas. Il a d'ailleurs déjà vu d'autres aquariums bien plus extraordinaires. Tom s'en moque ! Quelques jours plus tard, Tom rend visite à sa grand-mère et celle-ci lui dit qu'il peut être fier de l'aquarium qu'il a confectionné lui-même en économisant petit à petit. »",
+      "points": 2,
+      "corrigeVerifie": true,
+      "fiche": "fr-inferences",
+      "documents": [
+        "ecoute"
+      ],
+      "lignes": [
+        "Premier résumé",
+        "Deuxième résumé"
+      ],
+      "colonnes": [
+        "Oui",
+        "Non"
+      ],
+      "reponse": [
+        1,
+        1
+      ],
+      "explication": "Dans le premier résumé, la personne qui vit dans une maison ancienne est la grand-mère de Tom, pas sa tante. Dans le deuxième, Ronald ne dit pas que les poissons ne l'intéressent pas, Tom ne s'en moque pas (il est triste) et la grand-mère ne le félicite pas : les deux résumés sont faux."
+    },
     {
       "id": "ceb-2026-tc-l2-q1",
       "livret": 2,

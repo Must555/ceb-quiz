@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2016",
  "source": "FWB, épreuve externe commune 2016 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Partie « Écouter » du livret 5 non encodée : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Seules les deux questions d'écriture du livret 5 sont reprises.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Livret 5 : la partie « Écouter » (texte « Le caméléon » lu par la voix du navigateur) et les deux questions d'écriture sont reprises.",
  "livrets": [
   {
    "n": 1,
@@ -45,7 +45,8 @@
    "date": "2016-06-17",
    "points": 30,
    "audio": null,
-   "duree": 60
+   "duree": 60,
+   "ecoute": "ecoute"
   },
   {
    "n": 6,
@@ -220,6 +221,83 @@
    "titre": "Pourquoi l'eau de mer est-elle salée ? (documentaire, 3)",
    "fichier": "assets/2016/pdf21.webp",
    "alt": "Le cycle de l'eau ; les marais salants. Marcel Detable."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Le caméléon (Bianca Mouflet)",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Le caméléon"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Qu’est-ce qu’un caméléon ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le caméléon est un reptile qui appartient à l’ordre des lézards. Il existe environ 200 espèces de caméléons. La plupart d’entre elles vivent en Afrique, surtout sur l’ile de Madagascar, les autres vivant dans l’extrême sud de l’Europe, au Moyen-Orient et en Asie du Sud."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le corps de ce lézard est recouvert d’écailles rigides qui ne grandissent pas avec lui et il doit donc muer et se débarrasser de sa peau devenue trop petite à mesure que sa taille augmente."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pourquoi est-ce un animal particulier ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "On a longtemps pensé que le caméléon changeait de couleur pour se camoufler en s’adaptant à celle de son environnement. La robe marron est en effet celle des caméléons nains qui sont plutôt terrestres tandis que la robe verte, jaune ou bleue est davantage celle des espèces arboricoles."
+    },
+    {
+     "lecteur": 1,
+     "texte": "En fait, des études récentes indiquent qu’il change aussi de couleur en fonction de ses émotions. Les couleurs sombres marquent notamment la colère et l’agressivité. En période de reproduction, les couleurs claires et variées des mâles leur permettent d’attirer les femelles."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Les caméléons qui vivent dans des zones forestières sont dotés d’une longue queue qui peut s'enrouler sur elle-même, et qui est souvent utilisée pour assurer une meilleure prise aux branches. Ceux qui vivent dans les plaines broussailleuses présentent en général une queue bien plus petite et moins mobile."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Comment se reproduit-il ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "L’animal est généralement ovipare et la femelle pond de 20 à 30 œufs qu’elle enterre dans le sol. Cependant, quelques espèces sont ovovivipares. Cela signifie que les œufs éclosent dans le ventre de la femelle. Quoi qu’il en soit, dès sa naissance, le caméléon arboricole est capable de grimper dans un arbre et de trouver sa nourriture de manière autonome."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Comment chasse-t-il ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Sa technique de chasse est particulière. Sa couleur mimétique lui permettant de se fondre dans le paysage, il se tient immobile et il attend ainsi qu’une proie passe près de lui. Seuls ses yeux bougent. En effet, ceux-ci sont très mobiles : ils peuvent se mouvoir dans toutes les directions et indépendamment l’un de l’autre. Quand un insecte se pose à bonne distance, tout va très vite. La gueule du caméléon s’entrouvre. Sa langue se détend et, comme son extrémité a une forme de massue, il frappe la cible de façon foudroyante."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Assommée, la victime se trouve engluée dans un mucus collant qui permet au caméléon de la soulever et de la ramener jusqu’à sa gueule. Ses proies préférées sont les araignées, les sauterelles et les criquets."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Par quels dangers est-il menacé ?"
+    },
+    {
+     "lecteur": 1,
+     "texte": "Les principaux prédateurs du caméléon sont les serpents et les rapaces. Un autre ennemi menace également cet animal : c’est l’homme. D’une part, il détruit les espaces verts où le caméléon vit et, d’autre part, il le capture pour le vendre aux zoos et aux animaleries. Heureusement, une loi en interdit la vente et protège ces lézards si singuliers."
+    }
+   ],
+   "source": "Correctif officiel CEB 2016, support du Savoir écouter"
+  },
+  {
+   "id": "liv5-p08",
+   "source": "livret",
+   "livret": 5,
+   "page": 8,
+   "titre": "Quatre caméléons qui détendent leur langue",
+   "fichier": "assets/2016/liv5-p08.webp",
+   "alt": "Quatre dessins d'un caméléon sur une branche, la langue tendue : en haut à gauche, la langue est fine et pointue ; en haut à droite, elle se termine par un renflement en forme de massue ; en bas à gauche, elle se termine en crochet ; en bas à droite, elle se termine en fourche. Sous les dessins, la question 11."
   }
  ],
  "questions": [
@@ -1676,6 +1754,345 @@
    "fiche": "hg-documents",
    "reponseModele": "Chaque élément juste vaut ½ point (4 cases × 2 éléments). Éléments naturels, document A : mer, herbe, arbres, ciel, terre, côte, sable… Éléments naturels, document B : mer, ciel, côte, sable, arbres, rochers, montagne… Éléments apportés par l'humain, document A : bateau, armes, armures, croix, vêtements, bijoux… Éléments apportés par l'humain, document B : bateau, vêtements, chaussures, coussins, essuies (serviettes)…",
    "explication": "Sur chaque document, distingue ce que la nature a fait (mer, ciel, arbres) de ce que les gens ont apporté (bateaux, vêtements, objets)."
+  },
+  {
+   "id": "ceb-2016-l5-q1",
+   "livret": 5,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de l'auteur de ce texte ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Donner du plaisir, distraire l'auditeur.",
+    "Persuader, convaincre l'auditeur.",
+    "Enjoindre, faire agir l'auditeur.",
+    "Informer, apporter des informations à l'auditeur."
+   ],
+   "reponse": 3,
+   "explication": "Le texte explique comment vit le caméléon : l'auteur veut informer."
+  },
+  {
+   "id": "ceb-2016-l5-q2",
+   "livret": 5,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque partie du monde, indique si on en parle dans le texte.",
+   "points": 2.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Asie",
+    "Afrique",
+    "Amérique",
+    "Europe",
+    "Océanie"
+   ],
+   "colonnes": [
+    "On en parle",
+    "On n'en parle pas"
+   ],
+   "reponse": [
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "explication": "Le texte cite l'Afrique et Madagascar, l'extrême sud de l'Europe, le Moyen-Orient et l'Asie du Sud. Il ne dit rien de l'Amérique ni de l'Océanie."
+  },
+  {
+   "id": "ceb-2016-l5-q3",
+   "livret": 5,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le caméléon conserve les mêmes écailles toute sa vie. Réponds OUI ou NON, puis justifie ton choix.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "NON. Il se débarrasse de sa peau en grandissant, il mue (toute idée allant dans ce sens).",
+   "explication": "Ses écailles sont rigides et ne grandissent pas : le caméléon mue et se débarrasse de sa peau devenue trop petite."
+  },
+  {
+   "id": "ceb-2016-l5-q4",
+   "livret": 5,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "trous",
+   "enonce": "Complète les phrases avec les mots suivants : marrons | sombres | claires | vertes.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "texte": "Chez les caméléons, les couleurs {1} attirent les femelles. Chez les caméléons, les couleurs {2} expriment la colère.",
+   "reponse": [
+    [
+     "claires"
+    ],
+    [
+     "sombres"
+    ]
+   ],
+   "explication": "Les couleurs claires et variées des mâles attirent les femelles ; les couleurs sombres marquent la colère et l'agressivité."
+  },
+  {
+   "id": "ceb-2016-l5-q5a",
+   "livret": 5,
+   "numero": "5a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le caméléon est bien adapté au milieu où il vit. Complète : « Grâce à sa queue, le caméléon des régions forestières… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…peut s'agripper aux branches (toute idée allant dans ce sens : avoir une meilleure prise sur les branches).",
+   "explication": "Sa longue queue s'enroule et lui assure une meilleure prise aux branches."
+  },
+  {
+   "id": "ceb-2016-l5-q5b",
+   "livret": 5,
+   "numero": "5b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Le caméléon est bien adapté au milieu où il vit. Complète : « Grâce à sa couleur, un caméléon… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…se fond (peut se cacher) dans le paysage (toute idée allant dans ce sens).",
+   "explication": "Sa couleur lui permet de se fondre dans le paysage et de se camoufler."
+  },
+  {
+   "id": "ceb-2016-l5-q6",
+   "livret": 5,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Complète cette phrase avec le mot qui convient : « Les caméléons sont généralement… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "ovipares",
+    "ovovivipares"
+   ],
+   "reponse": 0,
+   "explication": "L'animal est généralement ovipare : la femelle pond des œufs qu'elle enterre. Seules quelques espèces sont ovovivipares."
+  },
+  {
+   "id": "ceb-2016-l5-q7a",
+   "livret": 5,
+   "numero": "7a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Dès sa naissance, le jeune caméléon arboricole sait faire deux choses. Écris la première : « Il… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Il grimpe dans les arbres (toute idée allant dans ce sens). L'autre chose à trouver est dans la question 7b.",
+   "explication": "Dès sa naissance, le caméléon arboricole est capable de grimper dans un arbre."
+  },
+  {
+   "id": "ceb-2016-l5-q7b",
+   "livret": 5,
+   "numero": "7b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Dès sa naissance, le jeune caméléon arboricole sait faire deux choses. Écris la seconde : « Il… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Il trouve sa nourriture de manière autonome (toute idée allant dans ce sens : il se nourrit seul).",
+   "explication": "Il est aussi capable de trouver sa nourriture tout seul."
+  },
+  {
+   "id": "ceb-2016-l5-q8",
+   "livret": 5,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "trous",
+   "enonce": "Complète selon les informations du texte.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "texte": "Le caméléon est mangé par les {1} et les {2}.",
+   "reponse": [
+    [
+     "serpents",
+     "rapaces",
+     "serpent",
+     "rapace"
+    ],
+    [
+     "rapaces",
+     "serpents",
+     "rapace",
+     "serpent"
+    ]
+   ],
+   "differentes": true,
+   "explication": "Les principaux prédateurs du caméléon sont les serpents et les rapaces."
+  },
+  {
+   "id": "ceb-2016-l5-q9a",
+   "livret": 5,
+   "numero": "9a",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Un autre prédateur, l'homme, menace le caméléon, même s'il ne le mange pas. Complète avec une explication entendue dans le texte : « L'homme est un danger pour le caméléon car il… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…détruit les espaces verts où le caméléon vit. (L'autre explication est dans la question 9b.)",
+   "explication": "L'homme détruit les espaces verts où vit le caméléon."
+  },
+  {
+   "id": "ceb-2016-l5-q9b",
+   "livret": 5,
+   "numero": "9b",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Un autre prédateur, l'homme, menace le caméléon, même s'il ne le mange pas. Complète avec une deuxième explication entendue dans le texte : « L'homme est un danger pour le caméléon car il… »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "…le capture (pour le vendre aux zoos et aux animaleries).",
+   "explication": "L'homme capture le caméléon pour le vendre aux zoos et aux animaleries."
+  },
+  {
+   "id": "ceb-2016-l5-q10",
+   "livret": 5,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Le texte décrit la forme de la langue du caméléon. Quel dessin montre le caméléon quand il détend sa langue ?",
+   "points": 0.5,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "liv5-p08"
+   ],
+   "choix": [
+    "Le dessin en haut à gauche",
+    "Le dessin en haut à droite",
+    "Le dessin en bas à gauche",
+    "Le dessin en bas à droite"
+   ],
+   "reponse": 1,
+   "explication": "Le texte dit que l'extrémité de la langue a une forme de massue : c'est le dessin en haut à droite."
+  },
+  {
+   "id": "ceb-2016-l5-q11",
+   "livret": 5,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pour se nourrir, le caméléon chasse. Comment agit-il ? Écris trois actions successives manquantes entre : « Le caméléon est immobile et repère une proie. Seuls ses yeux bougent. » et « Le caméléon avale sa victime. »",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Trois actions, dans l'ordre du texte, à choisir parmi : sa gueule s'entrouvre ; sa langue se détend ; il frappe sa victime ; il soulève sa victime ; il ramène la victime jusqu'à sa gueule. Toute suite chronologique cohérente est acceptée.",
+   "explication": "Il ouvre la gueule, détend sa langue et frappe sa proie, puis la soulève et la ramène à sa gueule."
+  },
+  {
+   "id": "ceb-2016-l5-q12",
+   "livret": 5,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Coche ce que mange le caméléon d'après le texte (les autres animaux ne font pas partie de son menu).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "sauterelle",
+    "lézard",
+    "rongeur",
+    "criquet",
+    "araignée"
+   ],
+   "reponse": [
+    0,
+    3,
+    4
+   ],
+   "explication": "Ses proies préférées sont les araignées, les sauterelles et les criquets. Le texte ne parle ni de lézards ni de rongeurs comme proies."
+  },
+  {
+   "id": "ceb-2016-l5-q13",
+   "livret": 5,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Pour chaque information, indique si le texte la contient.",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Des écailles couvrent le corps du caméléon.",
+    "Le caméléon vit cinq ans.",
+    "Chaque caméléon mâle défend son territoire contre les autres mâles.",
+    "Les doigts des pattes des caméléons forment une sorte de pince."
+   ],
+   "colonnes": [
+    "Le texte contient cette information",
+    "Le texte ne contient pas cette information"
+   ],
+   "reponse": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "explication": "Le texte parle des écailles rigides. Il ne dit rien de la durée de vie, du territoire des mâles ni des doigts en pince."
   },
   {
    "id": "ceb-2016-l5-q14",

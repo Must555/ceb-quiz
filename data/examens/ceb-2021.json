@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2021",
  "source": "FWB, épreuve externe commune préparée pour 2020 et utilisée en 2021 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Les livrets portent la mention « CEB 2020 » : l'épreuve préparée pour 2020 (annulée à cause de la crise sanitaire) a été utilisée en 2021 ; les dates des livrets sont donc approximatives.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran. Les livrets portent la mention « CEB 2020 » : l'épreuve préparée pour 2020 (annulée à cause de la crise sanitaire) a été utilisée en 2021 ; les dates des livrets sont donc approximatives.",
  "livrets": [
   {
    "n": 1,
@@ -13,7 +13,8 @@
    "date": "2021-06-17",
    "points": 20,
    "audio": null,
-   "duree": 40
+   "duree": 40,
+   "ecoute": "ecoute"
   },
   {
    "n": 2,
@@ -304,9 +305,490 @@
    "titre": "Plan de stationnement",
    "fichier": "assets/2021/pdf34.webp",
    "alt": "Quadrillage A-H / 1-9 ; tarifs : vert 0,5 €/h, orange 0,8 €/h, bleu 1 €/h."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Une visite au Musée de la Vie wallonne",
+   "segments": [
+    {
+     "lecteur": 1,
+     "texte": "Bonjour, je m’appelle Julie. Bienvenue au Musée de la Vie wallonne. Aujourd’hui, je vous propose une courte visite de l’espace réservé aux jouets, et plus particulièrement de ceux que l’on donnait aux enfants il y a une centaine d’années."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Avant de commencer la visite, je voudrais vous expliquer la différence entre un jeu et un jouet. Dans un jeu, il y a des règles bien précises à respecter alors qu’avec le jouet, c’est l’imagination de l’enfant qui est surtout sollicitée et importante."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Commençons notre visite. Au début du siècle dernier, il y avait des jouets réservés exclusivement aux filles et des jouets pour les garçons. Tiens, pourquoi cette différence ? Eh bien, tout simplement, parce qu’à l’époque, il fallait apprendre aux filles à être des ménagères et aux garçons à être des hommes forts, courageux, pour pouvoir se battre et défendre leur pays. Heureusement, aujourd’hui, ce n’est plus le cas. Les filles et les garçons peuvent choisir librement leurs jouets."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Nous allons commencer par les jouets qui étaient destinés aux filles."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Le premier jouet que je vous demande d’observer est une poupée en porcelaine. Ce sont en fait les parties visibles de la tête, du corps et des membres qui sont réalisées en porcelaine. Les autres parties sont fabriquées dans d’autres matériaux ou simplement en tissu. Vous remarquerez les très beaux vêtements à la mode de l’époque. Il faut savoir que ces poupées étaient très couteuses et très fragiles. Quand on les abimait, on pouvait les déposer dans ce que l’on appelait « un hôpital pour poupées » afin de les faire réparer."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Dans les familles où l’on ne pouvait pas acheter ces poupées, les petites filles avaient ce que l’on appelle un poupard. Le poupard c’est le deuxième objet dont je vais vous parler. Il s’agit d’une poupée rudimentaire en bois. Soit on l’achetait, soit c’était le père ou le grandpère qui le fabriquait. Le poupard est rudimentaire, parce qu’on ne voit ni les bras ni les jambes. En fait, il représente toujours un bébé emmailloté. Vous remarquerez que celui que vous avez sous les yeux est peint, ce qui arrivait parfois."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Les jouets que je vous propose maintenant étaient destinés aux garçons."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Tout d’abord, les jouets militaires. On voit ici une scène de la Première Guerre mondiale. Les soldats sont fabriqués en plâtre, mais ils pouvaient également être réalisés dans d’autres matériaux comme le plomb ou parfois l’étain."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Voici un autre objet. C’est un train qui est réalisé en tôle émaillée. Ce train est mécanique. Regardez, au niveau de la locomotive, on distingue une clé que l’on tournait pour remonter le mécanisme et ainsi faire avancer le train. Cela explique à quel point le jouet est en lien avec l’évolution de la société. En effet, à un moment donné, les moyens de transport prennent de plus en plus d’importance et progressivement, on les reproduit aussi en miniatures et en jouets. C’est alors qu’on commence à voir des jouets animés qui bougent (tout) seuls, sans que l’enfant n’ait besoin d’agir. Il suffit juste de les remonter."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Poursuivons maintenant notre visite avec des jeux et plus spécifiquement des jeux d’adresse."
+    },
+    {
+     "lecteur": 1,
+     "texte": "En voici un que vous connaissez certainement et que l’on trouve encore parfois dans les cours de récréation aujourd’hui. Eh oui, ce sont des billes. Ce type de jeu existait déjà dans l’Antiquité, mais, à l’époque, on utilisait des petits cailloux ou des noyaux de fruits. Il y a cent ans, les enfants jouaient avec des billes en terre, souvent de l’argile d’ailleurs, qui étaient peintes. Parfois, elles étaient fabriquées en porcelaine ou en métal. Actuellement, elles sont en verre."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Pour terminer notre visite, voici un jeu un peu moins connu aujourd’hui : il s’agit du diabolo. Ce jeu est issu de la culture chinoise. Autrefois, le diabolo était fabriqué en fer, comme celui que vous voyez. Actuellement, le fer est remplacé par du plastique ou mieux encore, du caoutchouc. Le diabolo, utilisé par les jongleurs, est un véritable jeu d’adresse."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Alors ici, il s’agit d’actionner deux baguettes reliées par une ficelle de manière à faire rouler le diabolo sur cette ficelle. Après beaucoup d’entrainement, on pourra projeter le diabolo en l’air et le rattraper sur la ficelle. À propos, savez-vous pourquoi on a donné à ce jeu le nom de « diabolo » ? Eh bien ! Simplement parce qu’il s’agit d’un jeu de mots. En fait, lorsqu’il tourne dans les airs, on a un peu l’impression de voir les cornes d’un diable."
+    },
+    {
+     "lecteur": 1,
+     "texte": "Voilà, notre visite est maintenant terminée. J’espère que vous aurez pris du plaisir à découvrir ces quelques trésors d’autrefois et, si vous le souhaitez, je vous invite à poursuivre l’exploration de cet espace réservé aux jeux et aux jouets. Je vous remercie pour votre écoute attentive. Bonne découverte à tous !"
+    }
+   ],
+   "source": "Correctif officiel CEB 2021, support du Savoir écouter"
+  },
+  {
+   "id": "musee",
+   "page": 35,
+   "titre": "Au Musée de la Vie wallonne (illustrations de la visite)",
+   "fichier": "assets/2021/pdf35.webp",
+   "alt": "Les objets de la visite, reliés par des flèches qui indiquent le sens de la visite : poupée en porcelaine, poupard en bois peint, soldats en plâtre (scène de la Première Guerre mondiale), train mécanique en tôle émaillée, billes, diabolo avec ses deux baguettes. Au centre, une guide et un guide du musée tiennent un petit train et un diabolo. La page est imprimée à l'envers de la lecture : les photos sont tournées d'un quart de tour."
+  },
+  {
+   "id": "liv1-p04",
+   "source": "livret",
+   "livret": 1,
+   "page": 4,
+   "titre": "Cinq poupées (question 8)",
+   "fichier": "assets/2021/liv1-p04.webp",
+   "alt": "Cinq photos de poupées en noir et blanc, de gauche à droite : un baigneur en body et bonnet, une marionnette à fils, une poupée blonde en gilet sans manche, une poupée en veste à carreaux et culotte avec un petit chapeau, une poupée de chiffon aux couettes. Au-dessus, les questions 7 et 9."
   }
  ],
  "questions": [
+  {
+   "id": "ceb-2021-l1-q1",
+   "livret": 1,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Lors de la visite, qui parle ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-narrateur",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "choix": [
+    "Un spécialiste des jouets actuels",
+    "Un guide du Musée de la Vie wallonne",
+    "Un visiteur du Musée de la Vie wallonne",
+    "Un journaliste spécialiste des jeux anciens"
+   ],
+   "reponse": 1,
+   "explication": "La personne qui parle accueille les visiteurs (« Bienvenue au Musée de la Vie wallonne ») et leur présente les objets : c'est un guide du musée."
+  },
+  {
+   "id": "ceb-2021-l1-q2",
+   "livret": 1,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Voici quatre étapes de la visite. Remets-les dans l'ordre de la visite.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "La présentation de jouets réservés autrefois aux garçons",
+    "L'explication de la différence entre un jeu et un jouet",
+    "La présentation de jeux d'adresse",
+    "La présentation de jouets réservés autrefois aux filles"
+   ],
+   "reponse": [
+    1,
+    3,
+    0,
+    2
+   ],
+   "explication": "Le guide explique d'abord la différence entre un jeu et un jouet, puis présente les jouets des filles, ceux des garçons et, pour terminer, les jeux d'adresse."
+  },
+  {
+   "id": "ceb-2021-l1-q3",
+   "livret": 1,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "La visite que tu viens de vivre se déroule avec certitude dans un musée. Coche la proposition qui confirme que l'on est bien dans un musée.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "choix": [
+    "C'est là que je peux jouer avec les jeux anciens présentés.",
+    "C'est là que se trouvent les jouets présentés lors de notre visite.",
+    "C'est là que l'on répare des jouets anciens.",
+    "C'est là que les jouets étaient fabriqués il y a cent ans."
+   ],
+   "reponse": 1,
+   "explication": "Un musée conserve et expose des objets : ici, les jouets anciens que le guide nous montre."
+  },
+  {
+   "id": "ceb-2021-l1-q4",
+   "livret": 1,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Au cours de la visite, cette information a-t-elle été donnée ?",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "lignes": [
+    "La manière de jouer au diabolo",
+    "Le nom de la ville où se situe le musée",
+    "La durée de la visite guidée"
+   ],
+   "colonnes": [
+    "a été donnée",
+    "n'a pas été donnée"
+   ],
+   "reponse": [
+    0,
+    1,
+    1
+   ],
+   "explication": "Le guide explique comment on actionne les deux baguettes et la ficelle du diabolo. Mais il ne dit ni dans quelle ville se trouve le musée, ni combien de temps dure la visite."
+  },
+  {
+   "id": "ceb-2021-l1-q5",
+   "livret": 1,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "D'après la définition donnée lors de la visite, les objets ci-dessous sont-ils des jeux ou des jouets ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "lignes": [
+    "Des petites voitures",
+    "Des dés"
+   ],
+   "colonnes": [
+    "Jeu",
+    "Jouet"
+   ],
+   "reponse": [
+    1,
+    0
+   ],
+   "explication": "Dans un jeu, il y a des règles précises à respecter (les dés). Avec un jouet, c'est l'imagination de l'enfant qui compte (les petites voitures)."
+  },
+  {
+   "id": "ceb-2021-l1-q6",
+   "livret": 1,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Écris deux façons de se procurer un poupard au début du siècle dernier.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "reponseModele": "Les deux idées sont nécessaires : on l'achetait ; et il était fabriqué par le père ou le grand-père (on accepte aussi « en le faisant soi-même », ou que seul le père ou le grand-père soit écrit).",
+   "explication": "Le guide dit : « Soit on l'achetait, soit c'était le père ou le grand-père qui le fabriquait. »"
+  },
+  {
+   "id": "ceb-2021-l1-q7",
+   "livret": 1,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pourquoi dit-on que le poupard est une poupée rudimentaire ? Explique avec tes mots.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-sens-mots",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "On ne voit ni les bras ni les jambes ; c'est un bébé emmailloté (enveloppé) ; c'est une poupée « basique » (toute explication qui fait référence à l'idée de « rudimentaire »). Ce n'est pas bon : « une poupée pour les pauvres ».",
+   "explication": "Rudimentaire veut dire très simple, sans détails : le poupard est un bébé de bois emmailloté, sans bras ni jambes visibles."
+  },
+  {
+   "id": "ceb-2021-l1-q8",
+   "livret": 1,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quelle poupée correspond le plus à celle décrite durant la visite ? Coche la photo qui correspond à cette poupée (photos numérotées de 1 à 5, de gauche à droite).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "liv1-p04"
+   ],
+   "choix": [
+    "Photo 1 (le baigneur)",
+    "Photo 2 (la marionnette)",
+    "Photo 3 (la poupée blonde)",
+    "Photo 4 (la poupée en veste à carreaux)",
+    "Photo 5 (la poupée de chiffon)"
+   ],
+   "reponse": 3,
+   "explication": "Les photos sont en noir et blanc : ce sont les vêtements qui aident. Le guide parle de « très beaux vêtements à la mode de l'époque » : c'est la quatrième poupée."
+  },
+  {
+   "id": "ceb-2021-l1-q9",
+   "livret": 1,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Au début du 20e siècle, certaines parties des poupées étaient parfois fabriquées en porcelaine. Écris un inconvénient de ce matériau.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "reponseModele": "La porcelaine était fragile OU coûteuse (toute idée allant dans le sens de la fragilité ou du coût du matériau).",
+   "explication": "Le guide explique que ces poupées étaient très couteuses et très fragiles : on les réparait dans « un hôpital pour poupées »."
+  },
+  {
+   "id": "ceb-2021-l1-q10",
+   "livret": 1,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "Avec ta classe, tu organises une exposition sur les moyens de transport du début du siècle dernier. De quel jouet présenté vas-tu parler ? Écris le nom de ce jouet.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponse": [
+    "train",
+    "le train",
+    "un train",
+    "train mécanique",
+    "le train mécanique",
+    "un train mécanique",
+    "train en tôle émaillée",
+    "le train en tôle émaillée",
+    "train en métal",
+    "le train en métal",
+    "train en tôle",
+    "le train en tôle"
+   ],
+   "explication": "Parmi les jouets présentés, seul le train est un moyen de transport : c'est un train mécanique en tôle émaillée."
+  },
+  {
+   "id": "ceb-2021-l1-q11",
+   "livret": 1,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "Lis cette information : « Certains jeux sont issus de cultures différentes de la nôtre. » Écris le nom d'un jeu ou d'un jouet présenté qui correspond à cette information.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponse": [
+    "diabolo",
+    "le diabolo",
+    "un diabolo",
+    "les diabolos",
+    "le jeu du diabolo"
+   ],
+   "explication": "Le diabolo est issu de la culture chinoise."
+  },
+  {
+   "id": "ceb-2021-l1-q12",
+   "livret": 1,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "La visite permet-elle de dire que c'est vrai ou faux ?",
+   "points": 2,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "lignes": [
+    "Le jouet est en lien avec l'évolution de la société.",
+    "Le poupard est apparu en 1920."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le savoir"
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Le guide dit que le jouet est en lien avec l'évolution de la société. En revanche, il ne donne jamais la date d'apparition du poupard."
+  },
+  {
+   "id": "ceb-2021-l1-q13",
+   "livret": 1,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Lors de la visite, on parle du diabolo. Pour quelle raison a-t-on donné ce nom de « diabolo » ? Écris ta réponse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "reponseModele": "Quand le diabolo tourne ou est lancé en l'air, on a l'impression de voir les cornes d'un diable. Il faut l'expression « cornes d'un diable » dans l'explication.",
+   "explication": "C'est un jeu de mots : lorsqu'il tourne dans les airs, le diabolo fait penser aux cornes d'un diable."
+  },
+  {
+   "id": "ceb-2021-l1-q14",
+   "livret": 1,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Tu veux jouer au diabolo. Coche les deux informations nécessaires pour jouer à ce jeu d'adresse.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "choix": [
+    "Le diabolo est un jeu un peu moins connu aujourd'hui.",
+    "Le diabolo est fabriqué en plastique ou en caoutchouc.",
+    "Le diabolo est projeté en l'air.",
+    "Le diabolo est un jeu issu de la culture chinoise.",
+    "Le diabolo roule sur une ficelle reliée à deux baguettes."
+   ],
+   "reponse": [
+    2,
+    4
+   ],
+   "explication": "Pour jouer, il faut savoir comment on fait : faire rouler le diabolo sur la ficelle reliée à deux baguettes, puis le projeter en l'air. Le reste est une information sur le jeu, pas sur la manière d'y jouer."
+  },
+  {
+   "id": "ceb-2021-l1-q15",
+   "livret": 1,
+   "numero": "15",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "D'après la visite, une de ces informations est incorrecte. Laquelle ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "choix": [
+    "Aujourd'hui, les diabolos sont fabriqués en plastique.",
+    "Aujourd'hui, les diabolos sont utilisés par des jongleurs.",
+    "Aujourd'hui, les diabolos sont fabriqués en caoutchouc.",
+    "Aujourd'hui, les diabolos sont toujours fabriqués en fer."
+   ],
+   "reponse": 3,
+   "explication": "Autrefois, le diabolo était en fer ; aujourd'hui, le fer est remplacé par du plastique ou du caoutchouc."
+  },
+  {
+   "id": "ceb-2021-l1-q16",
+   "livret": 1,
+   "numero": "16",
+   "domaine": "fr.ecouter",
+   "type": "texte_court",
+   "enonce": "À quelle catégorie de jeux appartient le diabolo ? Écris le nom de cette catégorie.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-generique",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "reponse": [
+    "jeu d'adresse",
+    "jeux d'adresse",
+    "un jeu d'adresse",
+    "le jeu d'adresse",
+    "les jeux d'adresse",
+    "jeu d'agilité",
+    "jeux d'agilité",
+    "un jeu d'agilité"
+   ],
+   "explication": "Le guide dit que le diabolo est « un véritable jeu d'adresse »."
+  },
+  {
+   "id": "ceb-2021-l1-q17",
+   "livret": 1,
+   "numero": "17",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Cette visite me permet de…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute",
+    "musee"
+   ],
+   "choix": [
+    "prendre conscience des dangers de certains jouets.",
+    "découvrir une belle histoire sur le Musée de la Vie wallonne.",
+    "comprendre l'importance de respecter les règles des jeux.",
+    "m'informer sur certains jouets utilisés autrefois."
+   ],
+   "reponse": 3,
+   "explication": "Le guide présente des jouets et des jeux d'il y a cent ans : l'intention est d'informer."
+  },
   {
    "id": "ceb-2021-l2-q1",
    "livret": 2,
