@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2022",
  "source": "FWB, épreuve externe commune 2022 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur une figure du livret sont jouables avec l'image de la page du livret ; seules restent sur papier celles qui demandent un tracé, un coloriage ou d'écrire dans un dessin ou un tableau.",
  "livrets": [
   {
    "n": 1,
@@ -405,6 +405,375 @@
     }
    ],
    "source": "Correctif officiel CEB 2022, support du Savoir écouter"
+  },
+  {
+   "id": "liv1-p04",
+   "source": "livret",
+   "livret": 1,
+   "page": 4,
+   "titre": "Le timbre du Chat",
+   "fichier": "assets/2022/liv1-p04.webp",
+   "alt": "Un timbre-poste reproduisant un dessin du Chat de Philippe Geluck, avec deux bulles de texte."
+  },
+  {
+   "id": "liv3-p03",
+   "source": "livret",
+   "livret": 3,
+   "page": 3,
+   "titre": "Le wagon de train vu du dessus",
+   "fichier": "assets/2022/liv3-p03.webp",
+   "alt": "Plan vu du dessus de l'intérieur d'un wagon : des personnes assises de part et d'autre de l'allée, Christine en bas de l'image et neuf vignettes numérotées de 1 à 9 près des personnes."
+  },
+  {
+   "id": "liv3-p04",
+   "source": "livret",
+   "livret": 3,
+   "page": 4,
+   "titre": "Réglettes : un rectangle et un triangle",
+   "fichier": "assets/2022/liv3-p04.webp",
+   "alt": "Un assemblage de quatre réglettes (déjà nommé « rectangle ») et, en dessous, un assemblage de trois réglettes dont l'espace intérieur est colorié."
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Réglettes : trois réglettes et un polygone",
+   "fichier": "assets/2022/liv3-p05.webp",
+   "alt": "Trois réglettes de même longueur, puis un assemblage de réglettes qui délimite un polygone."
+  },
+  {
+   "id": "liv3-p06",
+   "source": "livret",
+   "livret": 3,
+   "page": 6,
+   "titre": "Un assemblage de réglettes",
+   "fichier": "assets/2022/liv3-p06.webp",
+   "alt": "Un assemblage de réglettes délimitant un espace intérieur gris clair."
+  },
+  {
+   "id": "liv3-p08",
+   "source": "livret",
+   "livret": 3,
+   "page": 8,
+   "titre": "Le plan du robot Thymio",
+   "fichier": "assets/2022/liv3-p08.webp",
+   "alt": "Un quadrillage dont les colonnes sont repérées de A à J et les lignes de 1 à 7, sur lequel un chemin gris forme plusieurs boucles ; le point A (robot, case G5) et le point B sont marqués."
+  },
+  {
+   "id": "liv3-p09",
+   "source": "livret",
+   "livret": 3,
+   "page": 9,
+   "titre": "Dix polygones à classer",
+   "fichier": "assets/2022/liv3-p09.webp",
+   "alt": "Dix polygones numérotés de 1 à 10 et deux tableaux de classement OUI / NON dont le critère est à écrire."
+  },
+  {
+   "id": "liv3-p11",
+   "source": "livret",
+   "livret": 3,
+   "page": 11,
+   "titre": "Trois tracés et trois programmes",
+   "fichier": "assets/2022/liv3-p11.webp",
+   "alt": "Trois figures repérées A, B et C, faites d'un losange et d'un disque, et trois programmes de construction écrits en face de cases vides."
+  },
+  {
+   "id": "liv3-p15",
+   "source": "livret",
+   "livret": 3,
+   "page": 15,
+   "titre": "Deux dessins et leurs axes de symétrie",
+   "fichier": "assets/2022/liv3-p15.webp",
+   "alt": "Deux dessins circulaires numérotés 1 et 2, chacun avec une case de réponse en dessous."
+  },
+  {
+   "id": "liv3-p16",
+   "source": "livret",
+   "livret": 3,
+   "page": 16,
+   "titre": "Un cube et un premier assemblage",
+   "fichier": "assets/2022/liv3-p16.webp",
+   "alt": "Photo d'un cube en bois seul, puis photo d'un premier assemblage de cubes en bois."
+  },
+  {
+   "id": "liv3-p17",
+   "source": "livret",
+   "livret": 3,
+   "page": 17,
+   "titre": "Deux autres assemblages de cubes",
+   "fichier": "assets/2022/liv3-p17.webp",
+   "alt": "Photos d'un deuxième et d'un troisième assemblage de cubes en bois, disposés sur plusieurs rangées."
+  },
+  {
+   "id": "liv5-p08",
+   "source": "livret",
+   "livret": 5,
+   "page": 8,
+   "titre": "Deux châteaux et quatre plans",
+   "fichier": "assets/2022/liv5-p08.webp",
+   "alt": "Deux photos de châteaux repérées A et B, puis quatre plans de châteaux numérotés de 1 à 4."
+  },
+  {
+   "id": "liv5-p09",
+   "source": "livret",
+   "livret": 5,
+   "page": 9,
+   "titre": "La rénovation du château et trois lignes du temps",
+   "fichier": "assets/2022/liv5-p09.webp",
+   "alt": "Trois photos du château repérées A, B et C, puis trois lignes du temps numérotées de 1 à 3 entre 1933 et 1939, sur lesquelles les trois lettres sont placées dans un ordre différent."
+  },
+  {
+   "id": "liv5-p13",
+   "source": "livret",
+   "livret": 5,
+   "page": 13,
+   "titre": "Photo du centre de Binche",
+   "fichier": "assets/2022/liv5-p13.webp",
+   "alt": "Photo aérienne en noir et blanc du centre de Binche : une grande place avec des voitures stationnées et des bâtiments."
+  },
+  {
+   "id": "liv5-p18",
+   "source": "livret",
+   "livret": 5,
+   "page": 18,
+   "titre": "Le calendrier des compétitions",
+   "fichier": "assets/2022/liv5-p18.webp",
+   "alt": "Tableau « Calendrier prévisionnel de certaines compétitions sportives en Slovaquie en juillet 2022 » (du dimanche 24 au vendredi 29, plus un jour suivant) avec des ronds, des triangles et des carrés, et la légende."
+  },
+  {
+   "id": "liv5-p24",
+   "source": "livret",
+   "livret": 5,
+   "page": 24,
+   "titre": "Les attractions touristiques naturelles",
+   "fichier": "assets/2022/liv5-p24.webp",
+   "alt": "Carte de la Wallonie avec des points de taille différente (nombre d'attractions touristiques naturelles) et carte politique de la Belgique avec ses provinces."
+  },
+  {
+   "id": "liv6-p03",
+   "source": "livret",
+   "livret": 6,
+   "page": 3,
+   "titre": "Deux brocs gradués",
+   "fichier": "assets/2022/liv6-p03.webp",
+   "alt": "Deux brocs gradués en ml et en litres, remplis à des hauteurs différentes : jus d'orange seul, puis jus d'orange et jus d'ananas."
+  },
+  {
+   "id": "liv6-p05",
+   "source": "livret",
+   "livret": 6,
+   "page": 5,
+   "titre": "L'écran du four",
+   "fichier": "assets/2022/liv6-p05.webp",
+   "alt": "Le bandeau d'un four dont l'écran affiche l'heure et la date."
+  },
+  {
+   "id": "liv6-p06",
+   "source": "livret",
+   "livret": 6,
+   "page": 6,
+   "titre": "Quatre représentations de fractions",
+   "fichier": "assets/2022/liv6-p06.webp",
+   "alt": "Quatre représentations numérotées de 1 à 4 avec une partie grisée : une bande, un tableau de carrés, un assemblage d'hexagones et un disque."
+  },
+  {
+   "id": "liv6-p09",
+   "source": "livret",
+   "livret": 6,
+   "page": 9,
+   "titre": "Cinq figures sur un quadrillage",
+   "fichier": "assets/2022/liv6-p09.webp",
+   "alt": "Cinq figures grisées, nommées de A à E, tracées sur un quadrillage dont les carreaux mesurent 1 cm de côté."
+  },
+  {
+   "id": "liv6-p14",
+   "source": "livret",
+   "livret": 6,
+   "page": 14,
+   "titre": "Un trajet de A à B",
+   "fichier": "assets/2022/liv6-p14.webp",
+   "alt": "Un trajet de A à B tracé sur un quadrillage, puis trois autres trajets numérotés de 1 à 3."
+  },
+  {
+   "id": "liv6-p16",
+   "source": "livret",
+   "livret": 6,
+   "page": 16,
+   "titre": "Deux transformations d'une figure",
+   "fichier": "assets/2022/liv6-p16.webp",
+   "alt": "Deux séries de photos (a puis b) : une figure de départ et une figure d'arrivée faites de pièces de puzzle, avec un tableau Aire / Périmètre à cocher."
+  },
+  {
+   "id": "liv6-p19",
+   "source": "livret",
+   "livret": 6,
+   "page": 19,
+   "titre": "Une boite de sorbet",
+   "fichier": "assets/2022/liv6-p19.webp",
+   "alt": "Couvercle d'une boite de sorbet à la fraise portant des indications chiffrées."
+  },
+  {
+   "id": "liv7-p07",
+   "source": "livret",
+   "livret": 7,
+   "page": 7,
+   "titre": "Quatre croquis des traces de pas",
+   "fichier": "assets/2022/liv7-p07.webp",
+   "alt": "Quatre croquis numérotés de 1 à 4 montrant un bois, des traces de pas et trois maisons repérées T, F et M, avec la légende des lettres."
+  },
+  {
+   "id": "liv8-p07",
+   "source": "livret",
+   "livret": 8,
+   "page": 7,
+   "titre": "Les sièges et le train",
+   "fichier": "assets/2022/liv8-p07.webp",
+   "alt": "Photo d'un ensemble de sièges, dessin d'un wagon, puis dessin d'un train composé de plusieurs wagons."
+  },
+  {
+   "id": "liv8-p13",
+   "source": "livret",
+   "livret": 8,
+   "page": 13,
+   "titre": "Arbre de décomposition de 42",
+   "fichier": "assets/2022/liv8-p13.webp",
+   "alt": "Arbre de décomposition du nombre 42 avec des cases grises remplies et six cases vides numérotées de 1 à 6."
+  },
+  {
+   "id": "liv8-p15",
+   "source": "livret",
+   "livret": 8,
+   "page": 15,
+   "titre": "La salle de réception",
+   "fichier": "assets/2022/liv8-p15.webp",
+   "alt": "Plan d'une salle avec des tables rectangulaires, rondes et ovales ; une table ronde porte le nombre 6 et une table rectangulaire le nombre 12."
+  },
+  {
+   "id": "liv8-p16",
+   "source": "livret",
+   "livret": 8,
+   "page": 16,
+   "titre": "Deux droites graduées",
+   "fichier": "assets/2022/liv8-p16.webp",
+   "alt": "Deux droites graduées avec des cases blanches numérotées de 1 à 4 et des cases grises contenant des nombres."
+  },
+  {
+   "id": "liv8-p17",
+   "source": "livret",
+   "livret": 8,
+   "page": 17,
+   "titre": "Le mur aux hiboux",
+   "fichier": "assets/2022/liv8-p17.webp",
+   "alt": "Un mur décoré de motifs de hiboux, en partie caché par un miroir rond et un meuble."
+  },
+  {
+   "id": "liv8-p19",
+   "source": "livret",
+   "livret": 8,
+   "page": 19,
+   "titre": "Un tableau en escalier",
+   "fichier": "assets/2022/liv8-p19.webp",
+   "alt": "Tableau en escalier de cases dont certaines contiennent des nombres ; trois cases grisées sont numérotées de 1 à 3."
+  },
+  {
+   "id": "liv9-p02",
+   "source": "livret",
+   "livret": 9,
+   "page": 2,
+   "titre": "Le chaton et ses sens",
+   "fichier": "assets/2022/liv9-p02.webp",
+   "alt": "Un chaton entouré de quatre gros plans de parties de son corps ; le premier porte l'exemple « la vue » et trois étiquettes vides sont numérotées de 1 à 3."
+  },
+  {
+   "id": "liv9-p05",
+   "source": "livret",
+   "livret": 9,
+   "page": 5,
+   "titre": "Les schémas de la digestion",
+   "fichier": "assets/2022/liv9-p05.webp",
+   "alt": "Liste de six organes repérés par les lettres A à F, un schéma du corps humain et un schéma de chat avec des étiquettes numérotées de 1 à 4 ; deux exemples sont déjà donnés."
+  },
+  {
+   "id": "liv9-p06",
+   "source": "livret",
+   "livret": 9,
+   "page": 6,
+   "titre": "Le tableau des attributs",
+   "fichier": "assets/2022/liv9-p06.webp",
+   "alt": "Tableau croisant cinq animaux du littoral (homard, moule, bigorneau, étrille, étoile de mer) et leurs attributs."
+  },
+  {
+   "id": "liv9-p07",
+   "source": "livret",
+   "livret": 9,
+   "page": 7,
+   "titre": "Le classement des animaux",
+   "fichier": "assets/2022/liv9-p07.webp",
+   "alt": "Cinq animaux du littoral classés en trois groupes, chaque groupe étant introduit par une étiquette vide numérotée de 1 à 3."
+  },
+  {
+   "id": "liv9-p08",
+   "source": "livret",
+   "livret": 9,
+   "page": 8,
+   "titre": "Trois animaux à reconnaître",
+   "fichier": "assets/2022/liv9-p08.webp",
+   "alt": "Tableau des attributs de trois animaux (A oursin, B troque, C coque) et trois photos numérotées de 1 à 3."
+  },
+  {
+   "id": "liv9-p11",
+   "source": "livret",
+   "livret": 9,
+   "page": 11,
+   "titre": "Les cycles de vie à compléter",
+   "fichier": "assets/2022/liv9-p11.webp",
+   "alt": "Trois schémas circulaires de cycles de vie avec des cases vides numérotées de 1 à 8 ; trois photos sont déjà placées (H, I et D)."
+  },
+  {
+   "id": "liv9-p12",
+   "source": "livret",
+   "livret": 9,
+   "page": 12,
+   "titre": "La clé de détermination des oiseaux",
+   "fichier": "assets/2022/liv9-p12.webp",
+   "alt": "Clé de détermination en arbre : critères sur le plumage, le bec et la tête menant aux noms de cinq oiseaux, avec trois pastilles vides."
+  },
+  {
+   "id": "liv9-p14",
+   "source": "livret",
+   "livret": 9,
+   "page": 14,
+   "titre": "Trois bulletins météo et la légende",
+   "fichier": "assets/2022/liv9-p14.webp",
+   "alt": "Trois bulletins météorologiques numérotés de 1 à 3 et la légende des icônes météo."
+  },
+  {
+   "id": "liv9-p15",
+   "source": "livret",
+   "livret": 9,
+   "page": 15,
+   "titre": "Trois cartes météo",
+   "fichier": "assets/2022/liv9-p15.webp",
+   "alt": "Trois cartes de la Belgique repérées par les lettres A, B et C, avec des icônes, des températures et les vents."
+  },
+  {
+   "id": "liv9-p16",
+   "source": "livret",
+   "livret": 9,
+   "page": 16,
+   "titre": "Une carte météo à lire",
+   "fichier": "assets/2022/liv9-p16.webp",
+   "alt": "Carte météo de la Belgique avec des icônes, des températures et les vents (côte, centre, sud)."
+  },
+  {
+   "id": "liv9-p17",
+   "source": "livret",
+   "livret": 9,
+   "page": 17,
+   "titre": "Les prévisions de l'IRM",
+   "fichier": "assets/2022/liv9-p17.webp",
+   "alt": "Tableau des prévisions météo pour le littoral, le centre et le sud, de samedi à lundi, avec des icônes et des températures."
   }
  ],
  "questions": [
@@ -533,14 +902,14 @@
    "numero": "6",
    "domaine": "fr.ecouter",
    "type": "ouverte",
-   "enonce": "Un timbre reproduit un dessin du Chat de Philippe Geluck. S'agit-il d'un strip ou d'un dessin isolé ? Justifie à l'aide d'un élément de l'entretien.",
+   "enonce": "Observe le timbre du livret (page 4). Il reproduit un dessin du Chat de Philippe Geluck. S'agit-il d'un strip ou d'un dessin isolé ? Justifie à l'aide d'un élément de l'entretien.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
-    "ecoute"
+    "ecoute",
+    "liv1-p04"
    ],
-   "numerisable": false,
    "reponseModele": "Un dessin isolé : il s'agit d'un seul dessin (en une case) et pas de trois. Ou : un strip, c'est une petite bande en trois cases.",
    "explication": "Un strip est une petite bande en trois cases ; un dessin isolé est un seul dessin."
   },
@@ -854,25 +1223,76 @@
    "livret": 3,
    "numero": "1",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Place les amis de Christine dans le wagon.",
+   "type": "grille",
+   "enonce": "Observe l'intérieur du wagon de train (livret, page 3). Christine cherche à retrouver des amis. Place-toi dans la position de Christine et choisis le prénom à écrire dans chaque vignette numérotée de 1 à 9 : deux vignettes resteront vides. Respecte les informations suivantes : Martin est assis à gauche de l'allée en face d'Emma. Il n'y a personne assis sur le siège derrière lui. Nassim joue aux cartes avec ses 3 copains. Il est assis côté fenêtre. Julien est à sa gauche. Amin est à droite, côté allée. Il est assis en face de Léo et dos à Lucie.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "documents": [
+    "liv3-p03"
+   ],
+   "lignes": [
+    "Vignette 1",
+    "Vignette 2",
+    "Vignette 3",
+    "Vignette 4",
+    "Vignette 5",
+    "Vignette 6",
+    "Vignette 7",
+    "Vignette 8",
+    "Vignette 9"
+   ],
+   "colonnes": [
+    "Martin",
+    "Emma",
+    "Nassim",
+    "Julien",
+    "Amin",
+    "Léo",
+    "Lucie",
+    "Vignette vide"
+   ],
+   "reponse": [
+    5,
+    0,
+    7,
+    4,
+    7,
+    1,
+    6,
+    2,
+    3
+   ],
+   "explication": "Martin et Emma (vignettes 2 et 6) sont à gauche de l'allée ; Léo, Amin et Lucie (vignettes 1, 4 et 7) sont à droite, côté allée ; Nassim et Julien (vignettes 8 et 9) jouent aux cartes. Les vignettes 3 et 5 restent vides."
   },
   {
    "id": "ceb-2022-l3-q2",
    "livret": 3,
    "numero": "2",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Nomme les polygones formés par les réglettes.",
+   "type": "trous",
+   "enonce": "Observe les assemblages de réglettes du livret (pages 4 et 5) et écris le nom des polygones.",
    "points": 3,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "a) Un triangle isocèle acutangle (1 pt). b) Un triangle équilatéral OU un triangle acutangle (1 pt). c) Ce polygone est un pentagone (1 pt).",
-   "explication": "Compte les côtés et regarde les angles et les longueurs des côtés.",
-   "remarque": "Question appuyée sur les assemblages de réglettes du livret que nous n'avons pas : gardée en mode papier."
+   "fiche": "ma-triangles",
+   "documents": [
+    "liv3-p04",
+    "liv3-p05"
+   ],
+   "explication": "a) Le triangle a deux côtés de même longueur et trois angles aigus : isocèle acutangle. b) Trois réglettes de même longueur forment un triangle équilatéral (on accepte aussi triangle acutangle). c) Le polygone a cinq côtés : c'est un pentagone.",
+   "texte": "a) L'espace intérieur délimité par ces trois réglettes forme un triangle {1} (2 mots).  ·  b) Avec ces trois réglettes de même longueur, on peut construire un {2} (2 mots).  ·  c) Le polygone construit sur la dernière photo est un {3} (un seul mot).",
+   "reponse": [
+    [
+     "isocèle acutangle",
+     "acutangle isocèle"
+    ],
+    [
+     "triangle équilatéral",
+     "triangle acutangle"
+    ],
+    [
+     "pentagone"
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l3-q2d",
@@ -880,11 +1300,13 @@
    "numero": "2d",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "L'espace intérieur délimité par ces réglettes ne forme pas un polygone. Écris ce qui justifie cette affirmation.",
+   "enonce": "L'espace intérieur délimité par ces réglettes (livret, page 6) ne forme pas un polygone. Écris ce qui justifie cette affirmation.",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "remarque": "Question appuyée sur une figure du livret (assemblage de réglettes) que nous n'avons pas : gardée en mode papier.",
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p06"
+   ],
    "reponseModele": "Tous les côtés ne sont pas tracés à la latte / il y a un côté arrondi / un côté n'est pas droit."
   },
   {
@@ -903,14 +1325,65 @@
    "livret": 3,
    "numero": "5",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Robot Thymio : écris les cases du chemin le plus court et réponds par vrai ou faux.",
-   "points": 4,
+   "type": "texte_court",
+   "enonce": "Le robot Thymio est programmé pour suivre le chemin grisé sans le quitter. Sur le plan du livret (page 8), le robot se situe au point A en case G5. Il doit se déplacer du point A jusqu'au point B. Écris les coordonnées de toutes les cases par lesquelles il va passer s'il emprunte le chemin le plus court : G5, … (sépare les cases par des virgules).",
+   "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "a) Chemin le plus court : G5, F5, F4, E4, D4, D5, D6, D7 (1 pt ; G5 peut être écrite une seconde fois). b) VRAI, FAUX, FAUX (1 pt chacun).",
-   "explication": "Suis les cases grisées une à une, sans revenir en arrière.",
-   "remarque": "Question appuyée sur le plan du robot Thymio du livret que nous n'avons pas : gardée en mode papier."
+   "documents": [
+    "liv3-p08"
+   ],
+   "explication": "Le chemin le plus court passe par G5, F5, F4, E4, D4, D5, D6 puis D7 (il est inutile de repasser en G5).",
+   "souple": true,
+   "reponse": [
+    "G5, F5, F4, E4, D4, D5, D6, D7",
+    "G5,F5,F4,E4,D4,D5,D6,D7",
+    "G5 F5 F4 E4 D4 D5 D6 D7",
+    "G5-F5-F4-E4-D4-D5-D6-D7",
+    "G5 - F5 - F4 - E4 - D4 - D5 - D6 - D7",
+    "G5; F5; F4; E4; D4; D5; D6; D7",
+    "G5 → F5 → F4 → E4 → D4 → D5 → D6 → D7",
+    "G5->F5->F4->E4->D4->D5->D6->D7",
+    "G5 ; F5 ; F4 ; E4 ; D4 ; D5 ; D6 ; D7",
+    "G5 – F5 – F4 – E4 – D4 – D5 – D6 – D7",
+    "F5, F4, E4, D4, D5, D6, D7",
+    "F5,F4,E4,D4,D5,D6,D7",
+    "F5 F4 E4 D4 D5 D6 D7",
+    "F5-F4-E4-D4-D5-D6-D7",
+    "F5 - F4 - E4 - D4 - D5 - D6 - D7",
+    "F5; F4; E4; D4; D5; D6; D7",
+    "F5 → F4 → E4 → D4 → D5 → D6 → D7",
+    "F5->F4->E4->D4->D5->D6->D7",
+    "F5 ; F4 ; E4 ; D4 ; D5 ; D6 ; D7",
+    "F5 – F4 – E4 – D4 – D5 – D6 – D7"
+   ]
+  },
+  {
+   "id": "ceb-2022-l3-q5b",
+   "livret": 3,
+   "numero": "5b",
+   "domaine": "ma.geometrie",
+   "type": "grille",
+   "enonce": "Observe le plan du robot Thymio (livret, page 8). Coche VRAI ou FAUX pour chaque proposition.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "documents": [
+    "liv3-p08"
+   ],
+   "lignes": [
+    "La route effectue un virage en case I2",
+    "Il y a un croisement de chemins en G3",
+    "Le robot peut fonctionner en case J4"
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    0,
+    1,
+    1
+   ],
+   "explication": "Il y a bien un virage en I2. Il n'y a pas de croisement en G3 (le croisement est en G5). La case J4 est en dehors du chemin grisé : le robot n'y fonctionne pas."
   },
   {
    "id": "ceb-2022-l3-q6",
@@ -918,13 +1391,15 @@
    "numero": "6",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Retrouve le critère de classement des polygones.",
+   "enonce": "Observe les dix polygones numérotés du livret (page 9). a) On a classé ces polygones dans un premier tableau (OUI : 4 et 5 ; NON : 1, 2, 3, 6, 7, 8, 9 et 10). Écris le critère qui a permis ce classement. b) On a classé ces polygones d'une autre façon (OUI : 1, 2, 7, 8 et 10 ; NON : 3, 4, 5, 6 et 9). Écris le critère qui a permis ce classement.",
    "points": 2,
    "corrigeVerifie": true,
-   "numerisable": false,
+   "fiche": "ma-polygones",
+   "documents": [
+    "liv3-p09"
+   ],
    "reponseModele": "a) Un critère au choix : les hexagones / 6 côtés ou 6 angles / plus de 5 côtés ou plus de 5 angles / plus de 4 côtés ou plus de 4 angles (1 pt). b) Un critère au choix : les quadrilatères / les trapèzes / 4 côtés / 4 angles (1 pt).",
-   "explication": "Cherche ce que les polygones du tableau « OUI » ont tous en commun.",
-   "remarque": "Question appuyée sur les dessins de polygones du livret que nous n'avons pas : gardée en mode papier."
+   "explication": "Cherche ce que les polygones du tableau « OUI » ont tous en commun."
   },
   {
    "id": "ceb-2022-l3-q7",
@@ -942,11 +1417,39 @@
    "livret": 3,
    "numero": "8",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Associe chaque programme de construction à son tracé.",
+   "type": "association",
+   "enonce": "Observe les trois tracés A, B et C du livret (page 11). Retrouve le programme de construction qui correspond à chaque tracé.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-cercle",
+   "documents": [
+    "liv3-p11"
+   ],
+   "gauche": [
+    "On a tracé un losange de 2,5 cm de côté. On a tracé un disque qui a comme centre le milieu d'un côté et comme diamètre la mesure d'un côté.",
+    "On a tracé un losange de 2,5 cm de côté. On a tracé un disque dont le diamètre est la petite diagonale du losange.",
+    "On a tracé un losange de 2,5 cm de côté. On a tracé un disque qui a comme centre un des sommets du losange et comme rayon la moitié de la mesure du côté."
+   ],
+   "droite": [
+    "Tracé A",
+    "Tracé B",
+    "Tracé C"
+   ],
+   "reponse": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "explication": "Le premier programme correspond au tracé C, le deuxième au tracé B et le troisième au tracé A."
   },
   {
    "id": "ceb-2022-l3-q9",
@@ -975,22 +1478,52 @@
    "livret": 3,
    "numero": "11",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Écris le nombre d'axes de symétrie des dessins.",
+   "type": "trous",
+   "enonce": "Écris le nombre d'axes de symétrie que possède chacun des deux dessins du livret (page 15).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p15"
+   ],
+   "texte": "Dessin 1 : {1} axe(s) de symétrie  ·  Dessin 2 : {2} axe(s) de symétrie",
+   "reponse": [
+    [
+     "1"
+    ],
+    [
+     "2"
+    ]
+   ],
+   "explication": "Le dessin 1 a un seul axe de symétrie (la verticale). Le dessin 2 en a deux : les deux diagonales."
   },
   {
    "id": "ceb-2022-l3-q12",
    "livret": 3,
    "numero": "12",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Compte les faces de cubes visibles dans chaque assemblage.",
+   "type": "trous",
+   "enonce": "Observe le cube et les trois assemblages de cubes du livret (pages 16 et 17). En tournant autour d'un cube et sans y toucher, Pauline affirme que seules cinq faces du cube sont visibles. Écris le nombre de faces de cubes visibles que Pauline peut compter en tournant autour de chaque assemblage.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-assemblages-cubes",
+   "documents": [
+    "liv3-p16",
+    "liv3-p17"
+   ],
+   "texte": "Premier assemblage : {1} faces visibles  ·  Deuxième assemblage : {2} faces visibles  ·  Troisième assemblage : {3} faces visibles",
+   "reponse": [
+    [
+     "14"
+    ],
+    [
+     "25"
+    ],
+    [
+     "38"
+    ]
+   ],
+   "explication": "On compte les faces du dessus et toutes les faces latérales visibles, mais pas celles du dessous : 14, 25 et 38 faces."
   },
   {
    "id": "ceb-2022-l3-q14",
@@ -2075,22 +2608,50 @@
    "livret": 5,
    "numero": "4a",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Associe chaque château à son plan.",
+   "type": "grille",
+   "enonce": "Voici des photos de deux châteaux dont la construction a débuté durant une même période historique : A, Lavaux-Sainte-Anne (début des travaux en 1244) et B, Rochefort (début des travaux en 1155). Associe chaque château à son plan : choisis, pour chaque château, le plan numéroté de 1 à 4 (livret, page 8).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "liv5-p08"
+   ],
+   "lignes": [
+    "Château A (Lavaux-Sainte-Anne)",
+    "Château B (Rochefort)"
+   ],
+   "colonnes": [
+    "Plan 1",
+    "Plan 2",
+    "Plan 3",
+    "Plan 4"
+   ],
+   "reponse": [
+    0,
+    3
+   ],
+   "explication": "Le château A correspond au plan 1 et le château B au plan 4."
   },
   {
    "id": "ceb-2022-l5-q4c",
    "livret": 5,
    "numero": "4c",
    "domaine": "hg.histoire",
-   "type": "ouverte",
-   "enonce": "Coche la ligne du temps de la rénovation du château.",
+   "type": "qcm",
+   "enonce": "Le château de Lavaux-Sainte-Anne a été rénové au 20e siècle, dans les années trente. Voici des photos de cette rénovation (A, B et C, livret page 9). Coche la ligne du temps qui représente l'évolution de cette rénovation.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-frise",
+   "documents": [
+    "liv5-p09"
+   ],
+   "choix": [
+    "Ligne du temps 1",
+    "Ligne du temps 2",
+    "Ligne du temps 3"
+   ],
+   "reponse": 2,
+   "explication": "C'est la ligne du temps 3 : la photo C (le château en ruine) est la plus ancienne, puis vient la photo B, puis la photo A (le château rénové)."
   },
   {
    "id": "ceb-2022-l5-q6",
@@ -2098,10 +2659,134 @@
    "numero": "6",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Binche : colorie les rues le long des remparts et compare la carte Ferraris au plan de 2020 ; observe la photo.",
-   "points": 10,
+   "enonce": "Binche : sur le plan de 2020, colorie en bleu toutes les rues qui longent les remparts ; puis compare la carte Ferraris et le plan de 2020 en coloriant la rue de la Régence et l'avenue Charles Deliège (carte Ferraris) et la route N90 (plan de 2020).",
+   "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Coloriage sur plan : gardée en mode papier (les questions c et d, sur la photo, sont jouables)."
+  },
+  {
+   "id": "ceb-2022-l5-q6c1",
+   "livret": 5,
+   "numero": "6c1",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : les espaces non bâtis sont…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "nombreux.",
+    "peu nombreux."
+   ],
+   "reponse": 1,
+   "explication": "Sur la photo, les bâtiments occupent presque tout l'espace : les espaces non bâtis sont peu nombreux."
+  },
+  {
+   "id": "ceb-2022-l5-q6c2",
+   "livret": 5,
+   "numero": "6c2",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : les espaces bâtis montrent principalement…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "des usines.",
+    "des fermes.",
+    "des maisons."
+   ],
+   "reponse": 2,
+   "explication": "On voit surtout des maisons et des immeubles autour de la place."
+  },
+  {
+   "id": "ceb-2022-l5-q6c3",
+   "livret": 5,
+   "numero": "6c3",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : le réseau routier est constitué principalement…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "d'autoroutes.",
+    "de rues bordées de bâtiments.",
+    "de routes bordées de champs."
+   ],
+   "reponse": 1,
+   "explication": "Ce sont des rues bordées de bâtiments."
+  },
+  {
+   "id": "ceb-2022-l5-q6d1",
+   "livret": 5,
+   "numero": "6d1",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "très humanisé.",
+    "peu humanisé."
+   ],
+   "reponse": 0,
+   "explication": "Le paysage est très humanisé : il est presque entièrement construit."
+  },
+  {
+   "id": "ceb-2022-l5-q6d2",
+   "livret": 5,
+   "numero": "6d2",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est plutôt constitué…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "d'éléments naturels.",
+    "d'éléments humains."
+   ],
+   "reponse": 1,
+   "explication": "Les éléments humains (bâtiments, rues, voitures) dominent."
+  },
+  {
+   "id": "ceb-2022-l5-q6d3",
+   "livret": 5,
+   "numero": "6d3",
+   "domaine": "hg.geographie",
+   "type": "qcm",
+   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est plutôt…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-paysages",
+   "documents": [
+    "liv5-p13"
+   ],
+   "choix": [
+    "un paysage rural.",
+    "un paysage urbain.",
+    "un paysage industriel."
+   ],
+   "reponse": 1,
+   "explication": "C'est un paysage urbain : il s'agit du centre d'une ville."
   },
   {
    "id": "ceb-2022-l5-q7b",
@@ -2119,11 +2804,47 @@
    "livret": 5,
    "numero": "8d",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Complète le calendrier des compétitions.",
+   "type": "grille",
+   "enonce": "Observe le calendrier prévisionnel des compétitions sportives en Slovaquie (livret, page 18) : certaines journées de compétitions n'apparaissent pas. Complète le tableau en respectant la légende. Le badminton : les finales se tiennent le lendemain des qualifications. La natation : deux jours de qualifications dès le dimanche, suivis de deux jours de repos avant deux jours de finales. Choisis, pour chaque case à compléter, le jour qui convient.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-documents",
+   "documents": [
+    "liv5-p18"
+   ],
+   "lignes": [
+    "Badminton : jour des finales",
+    "Natation : 1er jour de qualifications",
+    "Natation : 2e jour de qualifications",
+    "Natation : 1er jour de finales",
+    "Natation : 2e jour de finales"
+   ],
+   "colonnes": [
+    "Di. 24",
+    "Lu. 25",
+    "Ma. 26",
+    "Me. 27",
+    "Je. 28",
+    "Ve. 29",
+    "Jour suivant (colonne « … »)"
+   ],
+   "reponse": [
+    3,
+    0,
+    [
+     1,
+     2
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ]
+   ],
+   "explication": "Badminton : qualifications le lundi et le mardi, donc finales le mercredi 27. Natation : qualifications dimanche et lundi, repos mardi et mercredi, finales jeudi et vendredi. Le corrigé accepte aussi des qualifications le dimanche et le mardi, avec des finales le vendredi et le jour suivant."
   },
   {
    "id": "ceb-2022-l5-q8e",
@@ -2171,11 +2892,34 @@
    "livret": 5,
    "numero": "11",
    "domaine": "hg.geographie",
-   "type": "ouverte",
-   "enonce": "Lis les cartes des attractions touristiques naturelles.",
+   "type": "grille",
+   "enonce": "Observe les deux cartes du livret (page 24). Pour chaque affirmation, coche la proposition correcte.",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "hg-cartes",
+   "documents": [
+    "liv5-p24"
+   ],
+   "lignes": [
+    "La province du Brabant wallon compte le plus d'attractions naturelles.",
+    "Il y a au moins sept attractions naturelles en province de Liège.",
+    "Il n'y a pas d'attraction naturelle en Région de Bruxelles-Capitale.",
+    "C'est dans la province de Namur qu'il y a le plus d'attractions naturelles.",
+    "La province de Hainaut compte plus d'attractions naturelles que la province de Luxembourg."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux",
+    "On ne peut pas le dire"
+   ],
+   "reponse": [
+    1,
+    1,
+    2,
+    0,
+    0
+   ],
+   "explication": "Le plus gros point est en province de Namur, donc le Brabant wallon n'est pas en tête. Les points de la province de Liège totalisent moins de sept attractions. La carte de Wallonie ne dit rien de la Région de Bruxelles-Capitale. Le Hainaut compte plus de points que le Luxembourg."
   },
   {
    "id": "ceb-2022-l6-q2",
@@ -2682,88 +3426,193 @@
    "livret": 6,
    "numero": "1",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Complète les étiquettes des bouteilles de jus.",
+   "type": "trous",
+   "enonce": "Observe les deux photos du livret (page 3) et complète chaque étiquette.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-volumes",
+   "documents": [
+    "liv6-p03"
+   ],
+   "texte": "Jus d'orange : {1} ml  ·  Jus d'orange et jus d'ananas : {2} ml",
+   "reponse": [
+    [
+     "350",
+     "350 ml"
+    ],
+    [
+     "600",
+     "600 ml"
+    ]
+   ],
+   "explication": "Le niveau est à 350 ml pour le jus d'orange seul, puis à 600 ml quand on ajoute le jus d'ananas."
   },
   {
    "id": "ceb-2022-l6-q3",
    "livret": 6,
    "numero": "3",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule l'heure de sortie du gâteau du four.",
+   "type": "trous",
+   "enonce": "Un gâteau doit rester 40 minutes dans le four. Voici ce qu'indique l'écran au moment où on le met dans le four (livret, page 5). Calcule l'heure à laquelle on devra le sortir du four.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-durees",
+   "documents": [
+    "liv6-p05"
+   ],
+   "texte": "On sortira le gâteau du four à {1} h {2} min.",
+   "reponse": [
+    [
+     "9",
+     "09"
+    ],
+    [
+     "36"
+    ]
+   ],
+   "explication": "8 h 56 + 40 min = 9 h 36."
   },
   {
    "id": "ceb-2022-l6-q4",
    "livret": 6,
    "numero": "4",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Entoure la représentation où la partie grisée vaut 3/8.",
+   "type": "qcm",
+   "enonce": "Choisis la représentation où la partie grisée vaut 3/8 (livret, page 6).",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-fractions",
+   "documents": [
+    "liv6-p06"
+   ],
+   "choix": [
+    "Représentation 1",
+    "Représentation 2",
+    "Représentation 3",
+    "Représentation 4"
+   ],
+   "reponse": 1,
+   "explication": "C'est la représentation 2 : 12 carreaux grisés sur 32, ce qui vaut 3/8."
   },
   {
    "id": "ceb-2022-l6-q9",
    "livret": 6,
    "numero": "9",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Estime la masse de ton livret.",
+   "type": "qcm",
+   "enonce": "Estime la masse du livret CEB 2022 – Grandeurs. À l'épreuve, il fallait le soupeser : c'est un livret de 20 pages au format A4, agrafé. Mon livret pèse environ…",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-estimation",
+   "choix": [
+    "5 grammes.",
+    "50 grammes.",
+    "500 grammes."
+   ],
+   "reponse": 1,
+   "explication": "Un livret de 10 feuilles A4 pèse environ 50 grammes."
   },
   {
    "id": "ceb-2022-l6-q10",
    "livret": 6,
    "numero": "10",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Écris l'aire des cinq figures du quadrillage.",
+   "type": "trous",
+   "enonce": "Écris la mesure de l'aire des cinq figures tracées dans le quadrillage du livret (page 9).",
    "points": 5,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv6-p09"
+   ],
+   "texte": "Aire de la figure A = {1} cm²  ·  figure B = {2} cm²  ·  figure C = {3} cm²  ·  figure D = {4} cm²  ·  figure E = {5} cm²",
+   "reponse": [
+    [
+     "8"
+    ],
+    [
+     "6"
+    ],
+    [
+     "3"
+    ],
+    [
+     "4"
+    ],
+    [
+     "6"
+    ]
+   ],
+   "explication": "A : 8 cm² ; B : 6 cm² ; C : 3 cm² ; D : 4 cm² ; E : 6 cm²."
   },
   {
    "id": "ceb-2022-l6-q14",
    "livret": 6,
    "numero": "14",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Coche le trajet de même longueur.",
+   "type": "qcm",
+   "enonce": "Voici un trajet pour se rendre du point A au point B (livret, page 14). Coche le trajet qui a la même longueur.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv6-p14"
+   ],
+   "choix": [
+    "Trajet 1",
+    "Trajet 2",
+    "Trajet 3"
+   ],
+   "reponse": 2,
+   "explication": "C'est le trajet 3, qui a la même longueur que le trajet donné."
   },
   {
    "id": "ceb-2022-l6-q16",
    "livret": 6,
    "numero": "16",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Aire et périmètre augmentent-ils ou diminuent-ils ?",
+   "type": "grille",
+   "enonce": "Observe les transformations du livret (page 16) et coche les cases adéquates du tableau : dans chaque transformation, l'aire et le périmètre augmentent-ils ou diminuent-ils ?",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-aires-perimetres",
+   "documents": [
+    "liv6-p16"
+   ],
+   "lignes": [
+    "a) Aire",
+    "a) Périmètre",
+    "b) Aire",
+    "b) Périmètre"
+   ],
+   "colonnes": [
+    "Augmente",
+    "Diminue"
+   ],
+   "reponse": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "explication": "En a), l'aire diminue et le périmètre augmente. En b), l'aire et le périmètre diminuent."
   },
   {
    "id": "ceb-2022-l6-q20",
    "livret": 6,
    "numero": "20",
    "domaine": "ma.grandeurs",
-   "type": "ouverte",
-   "enonce": "Calcule le nombre de boites de sorbet.",
+   "type": "numerique",
+   "enonce": "Observe ce couvercle d'une boite de sorbet (livret, page 19). Calcule le nombre de boites nécessaires pour réaliser des coupes de 3 boules pour 25 personnes. Je dois acheter … boites de sorbet.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-division",
+   "documents": [
+    "liv6-p19"
+   ],
+   "unite": "boites",
+   "reponse": 4,
+   "explication": "25 × 3 = 75 boules ; une boite contient 20 boules ; 75 : 20 = 3,75 : il faut 4 boites."
   },
   {
    "id": "ceb-2022-l7-q1",
@@ -3302,11 +4151,26 @@
    "livret": 7,
    "numero": "11",
    "domaine": "fr.lire",
-   "type": "ouverte",
-   "enonce": "Coche le croquis des traces de pas de Théophile dans la neige.",
+   "type": "qcm",
+   "enonce": "Sur les croquis du livret (page 7), observe les traces de pas de Théophile dans la neige et l'emplacement des maisons (T : maison de Théophile, F : maison de Fabien, M : maison de la grand-mère). Coche le croquis qui correspond au texte.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "bonheur-1",
+    "bonheur-2",
+    "bonheur-3",
+    "bonheur-4",
+    "liv7-p07"
+   ],
+   "choix": [
+    "Croquis 1",
+    "Croquis 2",
+    "Croquis 3",
+    "Croquis 4"
+   ],
+   "reponse": 3,
+   "explication": "C'est le croquis 4 : les traces de pas de Théophile partent du bois et ramènent à sa maison, et la maison de la grand-mère se trouve de l'autre côté de la route."
   },
   {
    "id": "ceb-2022-l8-q1",
@@ -3933,66 +4797,163 @@
    "livret": 8,
    "numero": "8",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Calcule le nombre de voyageurs du train.",
+   "type": "numerique",
+   "enonce": "Sur cet ensemble de sièges, on peut installer 4 voyageurs. Dans un wagon, on a installé 18 fois cet ensemble de sièges. Calcule le nombre total de voyageurs qui peuvent s'asseoir dans le train représenté au livret (page 7). Ne compte pas le conducteur.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv8-p07"
+   ],
+   "unite": "voyageurs",
+   "reponse": 432,
+   "explication": "Un wagon accueille 4 × 18 = 72 voyageurs ; le train compte 6 wagons : 72 × 6 = 432 voyageurs."
   },
   {
    "id": "ceb-2022-l8-q15",
    "livret": 8,
    "numero": "15",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète l'arbre de décomposition de 42.",
+   "type": "trous",
+   "enonce": "Complète chaque case vide de cette décomposition du nombre 42 (livret, page 13).",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv8-p13"
+   ],
+   "texte": "Case 1 : {1}  ·  Case 2 : {2}  ·  Case 3 : {3}  ·  Case 4 : {4}  ·  Case 5 : {5}  ·  Case 6 : {6}",
+   "reponse": [
+    [
+     "4"
+    ],
+    [
+     "7,6",
+     "7.6"
+    ],
+    [
+     "28,2",
+     "28.2"
+    ],
+    [
+     "0,69",
+     "0.69"
+    ],
+    [
+     "1,8",
+     "1.8"
+    ],
+    [
+     "42"
+    ]
+   ],
+   "explication": "42 = 38 + 4 ; 38 = 7,6 + 30,4 ; 30,4 = 28,2 + 2,2 ; 0,7 = 0,01 + 0,69 ; 3,3 = 1,8 + 1,5 ; la somme de toutes les cases de droite est 42."
   },
   {
    "id": "ceb-2022-l8-q18",
    "livret": 8,
    "numero": "18",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Calcule le nombre de personnes à chaque table ovale.",
+   "type": "numerique",
+   "enonce": "On a réparti 220 convives dans la salle du livret (page 15). On a placé 12 personnes autour de chaque table rectangulaire et 6 personnes autour de chaque table ronde. Calcule le nombre de personnes que l'on a placées autour de chaque table ovale.",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv8-p15"
+   ],
+   "unite": "personnes",
+   "reponse": 8,
+   "explication": "8 tables rectangulaires : 8 × 12 = 96 ; 10 tables rondes : 10 × 6 = 60 ; il reste 220 − 156 = 64 convives pour les 8 tables ovales : 64 : 8 = 8 personnes par table."
   },
   {
    "id": "ceb-2022-l8-q20",
    "livret": 8,
    "numero": "20",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Complète les droites graduées.",
+   "type": "trous",
+   "enonce": "Complète les cases blanches de ces deux droites graduées (livret, page 16).",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-droite-graduee",
+   "documents": [
+    "liv8-p16"
+   ],
+   "texte": "Case 1 : {1}  ·  Case 2 : {2}  ·  Case 3 : {3}  ·  Case 4 : {4}",
+   "reponse": [
+    [
+     "17,99",
+     "17.99"
+    ],
+    [
+     "18"
+    ],
+    [
+     "1875",
+     "1 875"
+    ],
+    [
+     "2250",
+     "2 250"
+    ]
+   ],
+   "explication": "Sur la première droite, le pas est de 0,01 : 17,99 puis 18. Sur la seconde, le pas est de 125 : 1 875 et 2 250."
   },
   {
    "id": "ceb-2022-l8-q21",
    "livret": 8,
    "numero": "21",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Compte les motifs du mur.",
+   "type": "numerique",
+   "enonce": "Observe le mur de cette chambre (livret, page 17). Calcule le nombre de motifs (hiboux) qui composent ce mur. Prends aussi en compte ceux que tu ne vois pas.",
    "points": 2,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "ma-problemes",
+   "documents": [
+    "liv8-p17"
+   ],
+   "unite": "motifs (hiboux)",
+   "reponse": 88,
+   "explication": "Le mur compte 11 colonnes de 8 hiboux : 11 × 8 = 88 motifs."
   },
   {
    "id": "ceb-2022-l8-q24",
    "livret": 8,
    "numero": "24",
    "domaine": "ma.arithmetique",
+   "type": "trous",
+   "enonce": "Complète les trois cases grisées du tableau du livret (page 19).",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "ma-calcul-mental",
+   "documents": [
+    "liv8-p19"
+   ],
+   "texte": "Case grisée 1 : {1}  ·  Case grisée 2 : {2}  ·  Case grisée 3 : {3}",
+   "reponse": [
+    [
+     "66"
+    ],
+    [
+     "63"
+    ],
+    [
+     "110"
+    ]
+   ],
+   "explication": "C'est un tableau de multiplication : 11 × 6 = 66 ; 7 × 9 = 63 ; 11 × 10 = 110."
+  },
+  {
+   "id": "ceb-2022-l8-q24b",
+   "livret": 8,
+   "numero": "24b",
+   "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Complète le tableau de multiplication.",
-   "points": 5,
+   "enonce": "Écris le nombre 72 dans les deux cases qui conviennent dans le tableau du livret (page 19).",
+   "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "remarque": "Placer un nombre dans un tableau : gardée en mode papier."
   },
   {
    "id": "ceb-2022-l9-q2a",
@@ -4470,128 +5431,316 @@
    "livret": 9,
    "numero": "1",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Écris le sens lié à chaque illustration.",
+   "type": "trous",
+   "enonce": "Nous faisons appel à nos sens dans la vie de tous les jours. Les animaux utilisent aussi leurs sens. Écris le nom du sens lié à chaque illustration du livret (page 2) : un exemple est donné (la vue).",
    "points": 3,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "reponseModele": "Il fallait écrire le nom du sens sur chaque étiquette du chaton : l'ouïe (l'oreille), l'odorat (le nez), le toucher (la patte). 1 point par bon sens.",
-   "explication": "Les cinq sens : la vue, l'ouïe, l'odorat, le goût et le toucher.",
-   "remarque": "Question appuyée sur les illustrations du livret (chaton) que nous n'avons pas : gardée en mode papier."
+   "fiche": "sc-corps-humain",
+   "documents": [
+    "liv9-p02"
+   ],
+   "explication": "L'étiquette 1 est l'ouïe (l'oreille), la 2 le toucher (la patte) et la 3 l'odorat (le nez).",
+   "texte": "Étiquette 1 : {1}  ·  Étiquette 2 : {2}  ·  Étiquette 3 : {3}",
+   "reponse": [
+    [
+     "l'ouïe",
+     "ouïe",
+     "l'audition",
+     "audition"
+    ],
+    [
+     "le toucher",
+     "toucher"
+    ],
+    [
+     "l'odorat",
+     "odorat"
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l9-q3",
    "livret": 9,
    "numero": "3",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète les étiquettes de l'appareil digestif.",
+   "type": "grille",
+   "enonce": "Pour chaque schéma du livret (page 5), complète les étiquettes numérotées en choisissant parmi les noms d'organes proposés. Choisis, pour chaque étiquette, la lettre qui convient (deux exemples sont donnés : A et B).",
    "points": 4,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-appareils",
+   "documents": [
+    "liv9-p05"
+   ],
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4"
+   ],
+   "colonnes": [
+    "A : le foie",
+    "B : le gros intestin (côlon)",
+    "C : le pancréas",
+    "D : l'intestin grêle",
+    "E : l'estomac",
+    "F : l'œsophage"
+   ],
+   "reponse": [
+    2,
+    3,
+    5,
+    4
+   ],
+   "explication": "Étiquette 1 : le pancréas (C) ; étiquette 2 : l'intestin grêle (D) ; étiquette 3 : l'œsophage (F) ; étiquette 4 : l'estomac (E)."
   },
   {
    "id": "ceb-2022-l9-q4a",
    "livret": 9,
    "numero": "4a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète l'arbre de classification des animaux du littoral.",
+   "type": "grille",
+   "enonce": "Voici des animaux que tu peux trouver au bord de la mer. Des élèves ont recherché leurs attributs et ont complété le tableau du livret (page 6). Ils ont classé ces animaux d'après leurs attributs (page 7). Pour chaque étiquette vide numérotée de 1 à 3, choisis le nom complet de l'attribut du tableau qu'il faut y écrire.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
-    "littoral-1"
+    "littoral-1",
+    "liv9-p06",
+    "liv9-p07"
    ],
-   "numerisable": false
+   "lignes": [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3"
+   ],
+   "colonnes": [
+    "bouche",
+    "squelette externe, pattes articulées, 2 paires d'antennes",
+    "abdomen replié en dessous du corps",
+    "2 valves",
+    "spiralée (enroulée)",
+    "squelette dans la peau, pieds à ventouses"
+   ],
+   "reponse": [
+    1,
+    4,
+    5
+   ],
+   "explication": "Le homard et l'étrille ont un squelette externe, des pattes articulées et 2 paires d'antennes ; le bigorneau a une coquille spiralée ; l'étoile de mer a le squelette dans la peau et des pieds à ventouses."
   },
   {
    "id": "ceb-2022-l9-q4b",
    "livret": 9,
    "numero": "4b",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "À l'aide du tableau des attributs (A oursin, B troque, C coque), écris la lettre sous l'illustration de chaque animal.",
+   "type": "grille",
+   "enonce": "À l'aide du tableau des attributs du livret (page 8 : A oursin, B troque, C coque), retrouve l'animal d'après ses attributs. Choisis la lettre qui correspond à l'animal de chaque illustration.",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "remarque": "Les trois photos (livret) ne sont pas dans nos documents : gardée en mode papier. Tout ou rien.",
-   "reponseModele": "Coques : C ; oursin : A ; bigorneau : B."
+   "fiche": "sc-classification",
+   "documents": [
+    "liv9-p08"
+   ],
+   "lignes": [
+    "Photo 1",
+    "Photo 2",
+    "Photo 3"
+   ],
+   "colonnes": [
+    "A : oursin",
+    "B : troque",
+    "C : coque"
+   ],
+   "reponse": [
+    2,
+    0,
+    1
+   ],
+   "explication": "La photo 1 montre des coques (C), la photo 2 un oursin (A) et la photo 3 une troque (B)."
   },
   {
    "id": "ceb-2022-l9-q5",
    "livret": 9,
    "numero": "5",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Complète les cycles de vie du cormoran, de la crevette et de la roussette.",
+   "type": "trous",
+   "enonce": "Pour chaque animal, complète son cycle de vie : écris la lettre de la photo du portfolio (page 8) qui convient dans chaque case numérotée du livret (page 11). Certaines cases sont déjà complétées.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-reproduction",
    "documents": [
-    "cycles"
+    "cycles",
+    "liv9-p11"
    ],
-   "numerisable": false
+   "texte": "Cycle de la photo H : case 1 : {1}, case 2 : {2}  ·  Cycle de la photo I : case 3 : {3}, case 4 : {4}, case 5 : {5}  ·  Cycle de la photo D : case 6 : {6}, case 7 : {7}, case 8 : {8}",
+   "reponse": [
+    [
+     "A"
+    ],
+    [
+     "J"
+    ],
+    [
+     "B"
+    ],
+    [
+     "F"
+    ],
+    [
+     "E"
+    ],
+    [
+     "K"
+    ],
+    [
+     "C"
+    ],
+    [
+     "G"
+    ]
+   ],
+   "explication": "Roussette : œuf (J), juvénile (H), adulte (A). Cormoran : œufs (E), poussins (F), juvénile (B), adulte (I). Crevette : œufs (K), nauplius (G), mysis (D), crevette (C)."
   },
   {
    "id": "ceb-2022-l9-q6a",
    "livret": 9,
    "numero": "6a",
    "domaine": "sc.vivant",
-   "type": "ouverte",
-   "enonce": "Nomme les oiseaux grâce à la clé de détermination et trace les bâtonnets.",
+   "type": "grille",
+   "enonce": "Voici une clé de détermination (livret, page 12) pour t'aider à nommer des oiseaux illustrés dans le portfolio. Écris la lettre de chaque oiseau dans la pastille correspondante : choisis, pour chaque oiseau, la lettre de sa photo.",
    "points": 3,
-   "corrigeVerifie": false,
+   "corrigeVerifie": true,
+   "fiche": "sc-classification",
    "documents": [
-    "oiseaux-1"
+    "oiseaux-1",
+    "liv9-p12"
    ],
-   "numerisable": false
+   "lignes": [
+    "Moineau domestique",
+    "Moineau friquet",
+    "Mésange charbonnière"
+   ],
+   "colonnes": [
+    "Oiseau A",
+    "Oiseau B",
+    "Oiseau C",
+    "Oiseau D",
+    "Oiseau E",
+    "Oiseau F",
+    "Oiseau G",
+    "Oiseau H"
+   ],
+   "reponse": [
+    3,
+    5,
+    0
+   ],
+   "explication": "Le moineau domestique est l'oiseau D, le moineau friquet l'oiseau F et la mésange charbonnière l'oiseau A."
   },
   {
    "id": "ceb-2022-l9-q7a",
    "livret": 9,
    "numero": "7a",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Associe chaque carte météo à son bulletin.",
+   "type": "grille",
+   "enonce": "Voici trois prévisions météorologiques (livret, page 14). Pour chaque carte de la page suivante (cartes A, B et C), écris dans l'étiquette ronde le numéro du bulletin météorologique qui convient.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "liv9-p14",
+    "liv9-p15"
+   ],
+   "lignes": [
+    "Carte A",
+    "Carte B",
+    "Carte C"
+   ],
+   "colonnes": [
+    "Bulletin 1",
+    "Bulletin 2",
+    "Bulletin 3"
+   ],
+   "reponse": [
+    2,
+    0,
+    1
+   ],
+   "explication": "La carte A (averses, vent) correspond au bulletin 3, la carte B (brouillard) au bulletin 1 et la carte C (nuages, vent de 15 à 35 km/h) au bulletin 2."
   },
   {
    "id": "ceb-2022-l9-q7b",
    "livret": 9,
    "numero": "7b",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Lis la carte météo : vrai ou faux ?",
+   "type": "grille",
+   "enonce": "Observe le bulletin météo du livret (page 16). Tu peux t'aider de la légende des icônes de la page 14. Coche vrai ou faux pour chaque proposition.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "liv9-p16",
+    "liv9-p14"
+   ],
+   "lignes": [
+    "Il y aura des rafales de vent de plus de 55 km/h à la côte.",
+    "Nous aurons un temps sec en région namuroise.",
+    "Les températures afficheront 11 °C à la pointe sud de la Belgique."
+   ],
+   "colonnes": [
+    "Vrai",
+    "Faux"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "Le vent à la côte va de 30 à 55 km/h : pas de rafales au-delà. À Namur, l'icône indique un temps couvert mais sec. Au sud, il fera 12 °C à 14 °C."
   },
   {
    "id": "ceb-2022-l9-q7c2",
    "livret": 9,
    "numero": "7c2",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "La nébulosité sera variable et des orages secoueront certaines régions du pays. À quel jour (samedi, dimanche ou lundi) correspond cette prévision ?",
+   "type": "qcm",
+   "enonce": "Observe le tableau de prévisions de l'IRM (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « La nébulosité sera variable et des orages secoueront certaines régions du pays. » ?",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "remarque": "Il faut lire les icônes du tableau de prévisions de l'IRM (livret), que nous n'avons pas : gardée en mode papier.",
-   "reponseModele": "Dimanche."
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "liv9-p17",
+    "liv9-p14"
+   ],
+   "choix": [
+    "Samedi",
+    "Dimanche",
+    "Lundi"
+   ],
+   "reponse": 1,
+   "explication": "Des orages (icône d'orage) n'apparaissent que le dimanche."
   },
   {
    "id": "ceb-2022-l9-q7c3",
    "livret": 9,
    "numero": "7c3",
    "domaine": "sc.energie",
-   "type": "ouverte",
-   "enonce": "Après quelques brumes matinales, le temps sera généralement sec sur tout le pays. À quel jour (samedi, dimanche ou lundi) correspond cette prévision ?",
+   "type": "qcm",
+   "enonce": "Observe le tableau de prévisions de l'IRM (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « Après quelques brumes matinales, le temps sera généralement sec sur tout le pays. » ?",
    "points": 1,
    "corrigeVerifie": true,
-   "numerisable": false,
-   "remarque": "Il faut lire les icônes du tableau de prévisions de l'IRM (livret), que nous n'avons pas : gardée en mode papier.",
-   "reponseModele": "Lundi."
+   "fiche": "sc-phenomenes",
+   "documents": [
+    "liv9-p17",
+    "liv9-p14"
+   ],
+   "choix": [
+    "Samedi",
+    "Dimanche",
+    "Lundi"
+   ],
+   "reponse": 2,
+   "explication": "Le lundi, le brouillard du matin laisse place à un temps sec sur tout le pays."
   },
   {
    "id": "ceb-2022-l9-q10c",
