@@ -4,7 +4,7 @@
  "referentiel": "socles",
  "titre": "CEB 2017",
  "source": "FWB, épreuve externe commune 2017 (questionnaire + portfolio). Réponses vérifiées sur le correctif officiel de la FWB.",
- "remarque": "Livret « Écouter » non encodé : il nécessite l'enregistrement audio. Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
+ "remarque": "Les questions qui reposent sur des figures du questionnaire (schémas, graphiques, tracés) sont gardées en mode papier ; quelques-unes ont été reformulées pour être jouables à l'écran.",
  "livrets": [
   {
    "n": 1,
@@ -77,7 +77,8 @@
    "date": "2017-06-20",
    "points": 20,
    "audio": null,
-   "duree": 35
+   "duree": 35,
+   "ecoute": "ecoute"
   }
  ],
  "documents": [
@@ -248,6 +249,119 @@
    "titre": "Le juge interroge un rocher (3)",
    "fichier": "assets/2017/pdf26.webp",
    "alt": "Le sac est retrouvé ; le juge partage une anguille avec l'enfant. Contes chinois, L'école des loisirs, 2002."
+  },
+  {
+   "id": "ecoute",
+   "type": "ecoute",
+   "titre": "Interview de Julie Morelle, présentatrice du journal télévisé",
+   "segments": [
+    {
+     "lecteur": 1,
+     "qui": "Présentation",
+     "texte": "Gaston est un élève de 6e année qui doit réaliser un article pour le journal de son école. Son article a pour thème la communication des informations."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Présentation",
+     "texte": "Il rencontre Julie MORELLE qui est présentatrice du journal télévisé à la RTBF. Julie MORELLE est licenciée en communication, information et journalisme. Elle accepte de recevoir Gaston sur son lieu de travail."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "Bonjour Julie Morelle. Merci de m’accueillir et de m’accorder un peu de temps pour répondre à quelques questions. Vous êtes présentatrice du journal télévisé. Qu’est-ce qui vous a poussé à exercer cette fonction ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Quand j’étais jeune, je voulais plutôt être comédienne parce que c’était mon rêve et je faisais beaucoup de théâtre. J’ai décidé de faire des études qui me permettraient d’aborder différentes disciplines, juste pour satisfaire ma curiosité. C’est vraiment cette curiosité qui a fait que je suis devenue journaliste. C’est aussi l’envie d’être « dans le monde »."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "Cette volonté d’ouverture sur le monde, c’est quelque chose que vous vivez dans les journaux télévisés ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Effectivement, le but du journal télévisé, c’est vraiment d’expliquer ce qui a fait l’actualité de la journée, mais aussi plus largement, ce qui fait l’actualité du moment. Dans un journal, il y a vraiment trois types de séquences."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "D’abord, il y a l’actualité qui se passe le jour même. Imaginons un gros accident, comme, par exemple, un incendie dans une entreprise. Dès qu’on est au courant de ce scoop, on envoie des équipes sur place pour filmer, récolter des renseignements et confronter les différentes sources d’informations. C’est donc une actualité qui a lieu le jour même et qui est imprévue."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Ensuite, il y a l’actualité qui se passe le jour même, mais qui, elle, est prévue. Par exemple, un conseil des ministres. Là, on sait que cela va arriver tous les vendredis. On n’en connait pas exactement les détails et on ne sait pas nécessairement de quoi ils vont parler puisque les collaborateurs des ministres envoient leur planning, en général, la veille ou le matin même."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Enfin, il y a des choses qui ne se passent pas le jour même, mais qui se déroulent dans la société et que l’on estime important d’aborder dans un journal télévisé. Par exemple, on se rend compte qu’il y a de plus en plus de vols dans les habitations. Eh bien… on va aller à la rencontre de la police ou de personnes qui installent des systèmes d’alarme, etc."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "D’abord vous récoltez des informations et ensuite… comment procédez-vous pour les présenter ? Quand on vous regarde à la télévision, on ne vous voit pas lire de papier."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Les séquences que je lis, je les écris durant l’après-midi et au moment du journal, elles défilent sur un ordinateur. On appelle ça un « prompteur ». Techniquement, c’est un écran transparent qui est disposé devant une caméra. Quand je regarde cette caméra, le texte défile sous mes yeux, ce qui donne l’impression que je sors tout par cœur, mais ce n’est pas du tout le cas ! Ce sont des textes que moi, j’ai écrits l’après-midi, en fonction des différentes informations que j’ai récoltées sur le sujet, en fonction des discussions que j’ai eues avec des journalistes."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "Et donc, cela veut dire que votre présence au studio dépasse largement le temps de présentation du journal télévisé."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Bien sûr ! C’est vrai que l’on pourrait croire que le présentateur est juste là au moment où se déroule le journal en direct et qu’il lit le texte que d’autres lui ont écrit. Dans mon cas, le journal a lieu à 19 h 30 sur la RTBF. Moi, j’arrive à 8 h du matin. Et directement, on a les premières réunions de rédaction durant lesquelles on évoque les différents sujets qui seront traités. Et donc, la journée commence très tôt."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "Construire un J.T., voilà qui demande certainement des règles précises pour organiser l’ensemble des infos. Pouvez-vous m’en parler ?"
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Il y a toute une série de choses qui évoluent au cours de la journée. Dès lors, on examine continuellement quels sont les faits qui sont importants et ceux qui le sont moins puis on les classe. Ce classement est très subjectif puisque c’est ce que nous avons décidé de présenter. Si quelqu’un d’autre avait réalisé le journal, ce jour-là, à notre place, peut-être aurait-il fait d’autres choix."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Il y a aussi les évènements qui se passent près de chez nous et ceux qui se passent loin de chez nous."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Les évènements qui nous concernent le plus, on a tendance à les placer en début de journal. Par contre, l’élection du président américain, c’est quelque chose qui se passe loin de chez nous, mais qui a évidemment un impact sur le fonctionnement du monde. Il est donc évident que, ce jour-là, ce sera l’information qui figurera en tête de journal."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Il y a aussi des sujets qui, typiquement, arrivent en fin de journal. C’est le cas du sport. Par exemple, le résumé d’un match entre le Standard et Anderlecht. Par contre, imaginons que les Diables Rouges gagnent leur premier match à l’Euro 2016, et bien, cette information ouvrira le journal."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Donc, tout cela est très subjectif car chaque journaliste pose ses choix."
+    },
+    {
+     "lecteur": 2,
+     "qui": "Julie Morelle",
+     "texte": "Notre intention, c’est qu’au final, le téléspectateur comprenne et retienne un maximum d’informations présentées."
+    },
+    {
+     "lecteur": 1,
+     "qui": "Gaston",
+     "texte": "Merci Julie Morelle."
+    }
+   ],
+   "source": "Correctif officiel CEB 2017, support du Savoir écouter"
   }
  ],
  "questions": [
@@ -3654,6 +3768,367 @@
    "fiche": "ma-problemes",
    "reponseModele": "Toute situation qui correspond à 17 × 25 est acceptée. Un énoncé complet (une situation ET une question) vaut 2 points ; une situation seule vaut 1 point. L'orthographe et la ponctuation ne sont pas pénalisées. Exemple : « Un cinéma a 17 rangées de 25 sièges. Combien de sièges y a-t-il en tout ? » (17 rangées de 25 sièges, c'est bien 17 × 25 = 425.) Attention : la multiplication doit être la bonne (17 groupes de 25, ou 25 groupes de 17).",
    "explication": "Pense à des paquets égaux : 17 paquets de 25, ou 25 paquets de 17."
+  },
+  {
+   "id": "ceb-2017-l9-q1",
+   "livret": 9,
+   "numero": "1",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Quelle est l'intention dominante de la personne qui réalise l'interview ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-types-textes",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Donner du plaisir aux auditeurs.",
+    "Persuader les auditeurs de l'importance du JT.",
+    "Informer les auditeurs sur la réalisation d'un JT.",
+    "Enjoindre aux auditeurs de regarder tous les JT."
+   ],
+   "reponse": 2,
+   "explication": "Gaston pose des questions pour apprendre à ses auditeurs comment on fabrique un journal télévisé : il veut les informer."
+  },
+  {
+   "id": "ceb-2017-l9-q2",
+   "livret": 9,
+   "numero": "2",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Le texte entendu met en présence deux personnes qui se parlent. Coche les deux propositions correctes.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Julie Morelle interroge un élève.",
+    "Un élève interroge Julie Morelle.",
+    "Julie Morelle accueille un élève pour réaliser cette interview.",
+    "Un élève accueille Julie Morelle pour réaliser cette interview."
+   ],
+   "reponse": [
+    1,
+    2
+   ],
+   "explication": "C'est Gaston, un élève, qui pose les questions, et Julie Morelle qui le reçoit sur son lieu de travail."
+  },
+  {
+   "id": "ceb-2017-l9-q3",
+   "livret": 9,
+   "numero": "3",
+   "domaine": "fr.ecouter",
+   "type": "trous",
+   "enonce": "Complète ces phrases à l'aide de mots différents.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "texte": "Julie Morelle a un diplôme en {1}  ·  Chaque soir, lors du journal télévisé, Julie Morelle exerce la fonction de {2}",
+   "reponse": [
+    [
+     "communication",
+     "information",
+     "journalisme",
+     "communication, information et journalisme",
+     "communication information et journalisme",
+     "information et journalisme",
+     "communication et information",
+     "communication et journalisme",
+     "information, communication et journalisme"
+    ],
+    [
+     "présentatrice",
+     "présentatrice du journal télévisé",
+     "présentatrice du journal",
+     "présentatrice du JT"
+    ]
+   ],
+   "explication": "Elle est licenciée en communication, information et journalisme (un seul de ces mots suffit) et elle est présentatrice du journal télévisé."
+  },
+  {
+   "id": "ceb-2017-l9-q4",
+   "livret": 9,
+   "numero": "4",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Julie Morelle cite trois types de séquences différentes. Lesquelles ? Écris-les.",
+   "points": 3,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "1) L'actualité du jour même qui est imprévue (un fait imprévu : un scoop, un gros accident, un incendie). 2) L'actualité du jour même qui est prévue (un conseil des ministres). 3) Des choses estimées importantes qui ne se passent pas le jour même (de plus en plus de vols dans les habitations). 1 point par type ; l'ordre n'a pas d'importance.",
+   "explication": "Il y a trois sortes de séquences : l'actualité imprévue du jour, l'actualité prévue du jour, et les sujets importants qui ne datent pas du jour même."
+  },
+  {
+   "id": "ceb-2017-l9-q5",
+   "livret": 9,
+   "numero": "5",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Numérote les phrases dans l'ordre chronologique des faits : remets-les dans l'ordre.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Les journalistes sont avertis de l'incendie.",
+    "Les journalistes filment les lieux et récoltent des renseignements.",
+    "Une équipe de journalistes se rend sur les lieux de l'incendie.",
+    "Un incendie se déclare dans une entreprise."
+   ],
+   "reponse": [
+    3,
+    0,
+    2,
+    1
+   ],
+   "explication": "D'abord l'incendie se déclare, puis les journalistes sont avertis, une équipe se rend sur place et enfin elle filme et récolte des renseignements."
+  },
+  {
+   "id": "ceb-2017-l9-q6",
+   "livret": 9,
+   "numero": "6",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "Pour présenter le JT, Julie Morelle regarde la caméra et…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "récite un texte qu'elle a appris par cœur.",
+    "lit un texte qui défile devant ses yeux.",
+    "récite un texte qui lui parvient par des écouteurs.",
+    "lit le texte qui apparait à la télévision."
+   ],
+   "reponse": 1,
+   "explication": "Le texte défile sur un écran transparent devant la caméra : elle le lit, elle ne l'a pas appris par cœur."
+  },
+  {
+   "id": "ceb-2017-l9-q7",
+   "livret": 9,
+   "numero": "7",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "La journaliste s'aide d'un appareil spécifique pour présenter le JT. Coche le nom de cet appareil.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Un haut-parleur.",
+    "Un projecteur.",
+    "Un prompteur.",
+    "Un décodeur."
+   ],
+   "reponse": 2,
+   "explication": "L'appareil qui fait défiler le texte devant la caméra s'appelle un prompteur."
+  },
+  {
+   "id": "ceb-2017-l9-q8",
+   "livret": 9,
+   "numero": "8",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Complète selon les informations entendues. L'élection d'un président américain est importante parce que…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Parce que cela a un impact sur le fonctionnement du monde (ou toute phrase qui va dans ce sens).",
+   "explication": "Même si elle se passe loin de chez nous, cette élection a des conséquences sur le monde entier : c'est pourquoi elle ouvre le journal."
+  },
+  {
+   "id": "ceb-2017-l9-q9",
+   "livret": 9,
+   "numero": "9",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "Coche les deux propositions qui pourraient modifier l'ordre du JT.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Une naissance au sein de la famille royale belge.",
+    "Un accrochage entre deux cyclistes dans un village.",
+    "Un tremblement de terre.",
+    "Une défaite sportive d'un club de football amateur."
+   ],
+   "reponse": [
+    0,
+    2
+   ],
+   "explication": "Un évènement très important ou qui touche beaucoup de gens (une naissance royale, un tremblement de terre) peut passer en tête du journal."
+  },
+  {
+   "id": "ceb-2017-l9-q10",
+   "livret": 9,
+   "numero": "10",
+   "domaine": "fr.ecouter",
+   "type": "ordre",
+   "enonce": "Numérote les cases dans l'ordre chronologique : remets les étapes dans l'ordre.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-organisateurs",
+   "documents": [
+    "ecoute"
+   ],
+   "elements": [
+    "Rédiger le texte du JT.",
+    "Organiser les informations.",
+    "Présenter le JT.",
+    "Récolter les informations."
+   ],
+   "reponse": [
+    3,
+    1,
+    0,
+    2
+   ],
+   "explication": "On récolte les informations, on les organise, on rédige le texte, puis on présente le JT."
+  },
+  {
+   "id": "ceb-2017-l9-q11",
+   "livret": 9,
+   "numero": "11",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Au journal télévisé, quelle proposition est exacte dans chaque cadre ? Pour chaque ligne, indique si elle est exacte.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Les informations rapportent tout ce qui se passe dans le monde.",
+    "L'équipe de rédaction choisit ce qu'elle veut fournir comme information.",
+    "L'équipe de rédaction ordonne définitivement les informations en début de journée."
+   ],
+   "colonnes": [
+    "Exact",
+    "Pas exact"
+   ],
+   "reponse": [
+    1,
+    0,
+    1
+   ],
+   "explication": "Le journal ne rapporte pas tout : l'équipe choisit les informations et les réorganise tout au long de la journée."
+  },
+  {
+   "id": "ceb-2017-l9-q12",
+   "livret": 9,
+   "numero": "12",
+   "domaine": "fr.ecouter",
+   "type": "grille",
+   "enonce": "Au cours de l'interview, ce renseignement a-t-il été donné ?",
+   "points": 4,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "lignes": [
+    "Il y a trois types de séquences dans un journal télévisé.",
+    "Les textes écrits l'après-midi par la journaliste sont corrigés par un collègue.",
+    "Dès que le JT est terminé, il y a une dernière réunion de la rédaction.",
+    "Le JT de 19 h 30 présenté par Julie Morelle dure toujours 30 minutes."
+   ],
+   "colonnes": [
+    "A été donné",
+    "N'a pas été donné"
+   ],
+   "reponse": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "explication": "Seuls les trois types de séquences sont expliqués. Julie Morelle ne parle ni de correction par un collègue, ni de réunion après le JT, ni de la durée du journal."
+  },
+  {
+   "id": "ceb-2017-l9-q13",
+   "livret": 9,
+   "numero": "13",
+   "domaine": "fr.ecouter",
+   "type": "qcm_multi",
+   "enonce": "De quoi est-il question dans l'interview ? Coche les deux propositions correctes. Il est question…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "de la vie de la présentatrice du journal télévisé.",
+    "de la réalisation d'un journal télévisé.",
+    "du tournage d'un feuilleton télévisé.",
+    "de la présentation d'un journal télévisé."
+   ],
+   "reponse": [
+    1,
+    3
+   ],
+   "explication": "L'interview parle de la fabrication d'un JT et de sa présentation. (Le corrigé officiel tolère aussi la vie de la présentatrice : 2 ou 3 choix possibles parmi les trois bonnes propositions.)"
+  },
+  {
+   "id": "ceb-2017-l9-q14",
+   "livret": 9,
+   "numero": "14",
+   "domaine": "fr.ecouter",
+   "type": "ouverte",
+   "enonce": "Pour rédiger son article à propos de la communication des informations, Gaston a eu raison de choisir Julie Morelle parce que…",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "reponseModele": "Toute idée de professionnalisme ou de goût du métier. Par exemple : elle explique avec précision son métier ; elle fournit beaucoup d'exemples ; elle parle de son métier avec passion.",
+   "explication": "Julie Morelle connait très bien son métier, l'explique avec précision et des exemples, et en parle avec passion."
+  },
+  {
+   "id": "ceb-2017-l9-q15",
+   "livret": 9,
+   "numero": "15",
+   "domaine": "fr.ecouter",
+   "type": "qcm",
+   "enonce": "D'après Julie Morelle, quel est le but d'un journaliste qui présente un journal télévisé ?",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "fr-inferences",
+   "documents": [
+    "ecoute"
+   ],
+   "choix": [
+    "Apprendre aux téléspectateurs ce qui s'est passé uniquement aujourd'hui.",
+    "Étonner les téléspectateurs en leur présentant des faits extraordinaires.",
+    "Permettre aux téléspectateurs de comprendre les événements importants du moment.",
+    "Persuader les téléspectateurs que tout ce qu'ils voient à la télévision est vrai.",
+    "Dire aux téléspectateurs ce qu'ils doivent faire étant donné ce qui se passe."
+   ],
+   "reponse": 2,
+   "explication": "Elle conclut que son intention est que le téléspectateur comprenne et retienne un maximum d'informations importantes."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2017), comparé question par question le 21/10/2026."
