@@ -43,7 +43,8 @@ test('une durée écrite dans le fichier d\'examen prime sur les règles', () =>
 test('la durée à l\'écran est réduite en proportion des points jouables', async () => {
   const ex = await donnees.chargerExamen('ceb-2026-tc');
   const livrets = livretsReels(ex);
-  assert.ok(!livrets.some((l) => l.n === 1), 'Écouter (non encodé) n\'est pas proposé');
+  assert.ok(!livrets.some((l) => l.n === 2), 'Écrire (rédaction sur papier) n\'est pas proposé');
+  assert.ok(livrets.some((l) => l.n === 1), 'Écouter (texte lu à voix haute) est proposé');
   for (const l of livrets) {
     assert.ok(l.dureeSecondes <= l.dureeOfficielle * 60, `livret ${l.n}`);
     assert.ok(l.dureeSecondes >= 5 * 60, `livret ${l.n}`);
