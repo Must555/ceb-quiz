@@ -104,15 +104,15 @@ export function composerExamen(donnees, code) {
       if (!q) break;
       session.passer();
       if (!nouveau(q)) continue;
-      const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier));
+      const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier ?? 'ecoute:' + d.id));
       // 2 pages de portfolio au plus par question, même si certaines sont déjà imprimées (pas de texte de 4 pages).
       if ((q.docsResolus?.length ?? 0) > 2 || (docs.length && docsVus.size + docs.length > maxDocs)) continue;
-      docs.forEach((d) => docsVus.add(d.fichier));
+      docs.forEach((d) => docsVus.add(d.fichier ?? 'ecoute:' + d.id));
       retenir(q);
       questions.push({ ...q }); // copie : les questions de la banque sont partagées
     }
     // Ordre de lecture : par domaine (comme dans un vrai livret), questions d'un même document côte à côte.
-    const cleDoc = (q) => q.docsResolus?.[0]?.fichier ?? '';
+    const cleDoc = (q) => (q.docsResolus?.[0]?.fichier ?? (q.docsResolus?.[0] ? 'ecoute:' + q.docsResolus[0].id : ''));
     questions.sort((a, b) => rangDomaine(a.domaine) - rangDomaine(b.domaine) || cleDoc(a).localeCompare(cleDoc(b)));
     if (sec.traces) {
       for (const t of tirerTraces(rng, sec.traces, idsVus)) { retenir(t); questions.push(t); }
@@ -178,9 +178,9 @@ export function composerFiche(donnees, code, notions) {
     const familles = rngN.shuffle(donnees.modeles.filter((m) => notionsDe(m).includes(notion)));
     const accepter = (q) => {
       if (!q || q.fiche !== notion || idsVus.has(q.id) || contenus.has(cleContenu(q))) return false;
-      const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier));
+      const docs = (q.docsResolus ?? []).filter((d) => !docsVus.has(d.fichier ?? 'ecoute:' + d.id));
       if (docs.length > 1 || (docs.length && docsVus.size >= 3)) return false;
-      docs.forEach((d) => docsVus.add(d.fichier));
+      docs.forEach((d) => docsVus.add(d.fichier ?? 'ecoute:' + d.id));
       idsVus.add(q.id); contenus.add(cleContenu(q));
       questions.push({ ...q });
       return true;

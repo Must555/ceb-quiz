@@ -4,7 +4,7 @@ import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
-import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, sons, ouvrirZoom } from './confort.js';
+import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, lireSegments, sons, ouvrirZoom } from './confort.js';
 import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
 import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
 import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
@@ -545,6 +545,41 @@ function majEtat() {
   if (e.niveau != null) { nv.textContent = `🎚️ Niveau ${e.niveau}`; nv.title = 'La difficulté s\'adapte : 3 bonnes réponses d\'affilée font monter, 2 erreurs d\'affilée font descendre.'; }
 }
 
+
+// Documents d'une question : images du portfolio, ou texte à écouter (livret « Écouter »).
+// max : nombre d'écoutes permises (2 à l'examen, comme à l'épreuve ; illimité à l'entraînement).
+function rendreDocs(docs) {
+  return docs.map((d, i) => d.type === 'ecoute'
+    ? `<div class="ecoute" data-doc="${d.id}"><p class="ecoute-titre">🎧 ${esc(d.titre)}</p>
+        <button class="btn btn-cta ecoute-btn" data-doc="${d.id}">▶️ Écouter le texte</button>
+        <p class="ecoute-info mute"></p></div>`
+    : `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
+      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
+}
+function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
+  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  $$('.ecoute-btn').forEach((b) => {
+    const d = docs.find((x) => x.id === b.dataset.doc);
+    const info = b.parentElement.querySelector('.ecoute-info');
+    const deja = () => (compteur ? compteur[d.id] ?? 0 : 0);
+    const maj = (lit = false) => {
+      const reste = max - deja();
+      b.textContent = lit ? '⏹️ Arrêter' : '▶️ Écouter le texte';
+      b.disabled = !lit && reste <= 0;
+      info.textContent = !voixDisponible() ? 'Ton appareil ne sait pas lire à voix haute : demande à un adulte de te lire le texte.'
+        : max === Infinity ? 'Tu peux l\'écouter autant de fois que tu veux.'
+        : reste > 0 ? `Écoutes restantes : ${reste} sur ${max} (comme à l'épreuve).` : 'Tu as utilisé tes deux écoutes.';
+    };
+    maj();
+    b.onclick = () => {
+      if (b.textContent.startsWith('⏹️')) { taire(); return maj(false); }
+      if (compteur) compteur[d.id] = deja() + 1;
+      if (!lireSegments(d.segments, { onFin: () => maj(false) })) return maj(false);
+      maj(true);
+    };
+  });
+}
+
 function questionSuivante() {
   const q = partie.session.suivante();
   if (!q) return terminerPartie(false);
@@ -556,10 +591,9 @@ function questionSuivante() {
     ${boutonVoix(q)}
     <h2>${esc(q.enonce)}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
-    ${docs.map((d, i) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('')}
+    ${rendreDocs(docs)}
     <div id="q-saisie">${rendreSaisie(q)}</div>`;
-  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  brancherDocs(docs);
   taire(); brancherBoutonVoix($('#btn-voix'), () => texteAVoix(q));
   const pied = $('#pied');
   pied.className = 'pied-quiz';
@@ -939,10 +973,10 @@ function allerQuestion(i) {
     ${boutonVoix(q)}
     <h2>${esc(q.enonce)}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
-    ${docs.map((d, k) => `<button class="btn doc-btn" data-doc="${d.id}">📄 ${k === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${k === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>Portfolio, page ${d.page} · 🔍 touche pour agrandir</figcaption></figure>`).join('')}
+    ${rendreDocs(docs)}
     <div id="q-saisie">${rendreSaisie(q).replace('puis compare-la avec la réponse modèle.', 'tu la compareras avec la réponse modèle à la fin.')}</div>`;
-  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  reel.ecoutes = reel.ecoutes ?? {};
+  brancherDocs(docs, { compteur: reel.ecoutes, max: 2 });
   taire(); brancherBoutonVoix($('#btn-voix'), () => texteAVoix(q));
   let ui = null; // reste nul pendant la remise des réponses déjà données
   const noter = () => { if (!ui) return; if (er.noter(q.id, ui.lire())) { sauverBientot(); majNavReel(); } else tickReel(); };

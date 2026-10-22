@@ -55,6 +55,33 @@ export function parler(texte, { onFin } = {}) {
 }
 export function taire() { if (voixDisponible()) speechSynthesis.cancel(); }
 
+// ---------------------------------------------------------------- livrets « Écouter »
+// Le texte officiel est lu par la voix du navigateur, segment par segment. Deux lecteurs
+// (interview) : deux voix françaises si l'appareil en a deux, sinon une hauteur différente.
+function voixFrancaises() {
+  const v = speechSynthesis.getVoices().filter((x) => x.lang?.startsWith('fr'));
+  const ordre = (x) => (x.lang === 'fr-BE' ? 0 : x.lang === 'fr-FR' ? 1 : 2);
+  return v.sort((a, b) => ordre(a) - ordre(b));
+}
+export function lireSegments(segments, { onFin } = {}) {
+  if (!voixDisponible()) return false;
+  speechSynthesis.cancel();
+  const voix = voixFrancaises();
+  segments.forEach((seg, i) => {
+    const u = new SpeechSynthesisUtterance(seg.texte);
+    const k = (seg.lecteur ?? 1) - 1;
+    const v = voix[k % Math.max(1, voix.length)] ?? null;
+    if (v) u.voice = v;
+    u.lang = v?.lang ?? 'fr-BE';
+    u.rate = 0.9;
+    if (k > 0 && voix.length < 2) u.pitch = 0.8;
+    if (i === segments.length - 1) u.onend = () => onFin?.();
+    u.onerror = (e) => { if (e.error !== 'interrupted' && e.error !== 'canceled') onFin?.(); };
+    speechSynthesis.speak(u);
+  });
+  return true;
+}
+
 // Bouton « Écouter » : bascule lecture / arrêt.
 export function brancherBoutonVoix(bouton, obtenirTexte) {
   if (!bouton) return;
