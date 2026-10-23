@@ -1,6 +1,6 @@
 // Affichage d'une question et lecture de la réponse de l'enfant, pour les 10 types.
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const LETTRES = 'ABCDEFGH';
+const LETTRES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 // Renvoie le HTML de la zone de réponse.
 export function rendreSaisie(q) {

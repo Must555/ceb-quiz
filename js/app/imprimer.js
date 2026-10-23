@@ -8,7 +8,7 @@ import { esc } from './question-ui.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-const LETTRES = 'ABCDEFGHIJ';
+const LETTRES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const case_ = '<span class="case" aria-hidden="true"></span>';
 
 let donnees = null;

@@ -19,7 +19,7 @@ export function appliquerConfort(j, racine = document.documentElement) {
 export const peutLireAVoixHaute = (q) => !/^fr\.(lire|ecouter)/.test(q?.domaine ?? '');
 export const voixDisponible = () => typeof window !== 'undefined' && 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 
-const LETTRES = 'ABCDEFGH';
+const LETTRES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // Texte prononcé pour une question : énoncé puis propositions, sans emoji ni blancs typographiques.
 export function texteAVoix(q) {
   const propre = (s) => String(s ?? '')
