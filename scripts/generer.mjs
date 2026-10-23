@@ -44,7 +44,7 @@ export function titreGoogle(titre, matiere) {
 
 // Description (140-158 caractères) : la règle, puis ce qu'on y gagne.
 export function descriptionGoogle(f) {
-  const fin = ' Exemple, astuce et exercices corrigés gratuits.';
+  const fin = ' Exemple, astuce et exercices corrigés tout de suite.';
   const place = 158 - fin.length;
   // Des phrases entières tant qu'elles tiennent ; sinon la première, coupée proprement à un mot.
   const phrases = f.regle.join(' ').replace(/\s+/g, ' ').trim().match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g).map((x) => x.trim());
@@ -98,13 +98,13 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <body>
 <header class="haut${type === 'website' ? ' grand' : ''}"><div class="barre-haut"><a class="marque" href="../"><img src="../assets/icones/logo-96.webp" width="44" height="44" alt="">Mission CEB</a>
 <nav class="menu" aria-label="Menu principal"><a href="../">Accueil</a><a href="../fiches/">Fiches</a><a href="../examens/">Examens</a><a href="../exercices/">Exercices</a><a href="../ceb-2027/">CEB 2027</a></nav>
-<a class="btn-jouer" href="../app/">Jouer gratuitement</a></div>${type === 'website' ? '<!--heros-->' : ''}</header>
+<a class="btn-jouer" href="../app/">Jouer</a></div>${type === 'website' ? '<!--heros-->' : ''}</header>
 <main>`;
 }
 
 const pied = (lienSignaler) => `</main>
 <footer class="pied">
-<p><b>Mission CEB</b> : entraînement gratuit au CEB (Certificat d'Études de Base, Fédération Wallonie-Bruxelles), sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p>
+<p><b>Mission CEB</b> : entraînement au CEB (Certificat d'Études de Base, Fédération Wallonie-Bruxelles), sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p>
 <p><a href="../">Accueil</a> · <a href="../app/">Ouvrir l'application</a> · <a href="../fiches/">Fiches</a> · <a href="../examens/">Anciens examens</a> · <a href="../exercices/">Exercices</a> · <a href="../ceb-2027/">CEB 2027</a> · <a href="../reviser-le-ceb/">Bien réviser</a> · <a href="${esc(lienSignaler)}">Signaler une erreur</a></p>
 </footer>
 </body>
@@ -152,7 +152,7 @@ ${f.astuce ? `<div class="encart astuce"><h2><img class="ic" src="../assets/ui/a
 ${nbEx ? `<a class="btn btn-cta" href="../app/?fiche=${encodeURIComponent(f.id)}">${emo('🎯')} S'entraîner sur cette notion</a>` : `<a class="btn btn-cta" href="../app/">${emo('🎯')} S'entraîner au CEB</a>`}
 <a class="btn" href="../imprimer.html?mode=fiche&amp;notions=${encodeURIComponent(f.id)}">${emo('🖨️')} Fiche d'exercices à imprimer</a>
 </div>
-<p class="mute">${nbEx ? 'Des questions toujours nouvelles sur cette notion, corrigées tout de suite, avec la règle en cas d\'erreur.' : 'Questions du CEB et exercices corrigés tout de suite.'} Gratuit, sans compte.</p>
+<p class="mute">${nbEx ? 'Des questions toujours nouvelles sur cette notion, corrigées tout de suite, avec la règle en cas d\'erreur.' : 'Questions du CEB et exercices corrigés tout de suite.'} Sans compte.</p>
 </section>
 <section class="voisines">
 <h2>Autres fiches de ${m.long}</h2>
@@ -165,7 +165,7 @@ ${pied(signaler)}`;
 
 function pageIndex(parMatiere, nbFiches) {
   const titre = 'Fiches de révision du CEB : toutes les règles';
-  const description = `Les ${nbFiches} règles à connaître pour le CEB en français, maths, histoire-géo et sciences, expliquées simplement. Exemples et exercices gratuits.`;
+  const description = `Les ${nbFiches} règles à connaître pour le CEB en français, maths, histoire-géo et sciences, expliquées simplement. Exemples et exercices corrigés.`;
   const SOUS = { fr: 'Lire, grammaire, conjugaison, orthographe', ma: 'Nombres, grandeurs, géométrie, données', hg: 'Repères, cartes, Belgique et monde', sc: 'Vivant, matière, énergie' };
   const heros = `<div class="heros"><p class="sur">Fiches de révision</p><h1>Toutes les règles du CEB, expliquées simplement</h1>
 <p class="intro">${nbFiches} fiches courtes : la règle, un exemple, une astuce, puis des exercices corrigés tout de suite.</p>
@@ -205,7 +205,7 @@ const filAriane = (items) => ({ '@context': 'https://schema.org', '@type': 'Brea
 const heros = (sur, h1, intro, extra = '') => `<div class="heros"><p class="sur">${sur}</p><h1>${h1}</h1><p class="intro">${intro}</p>${extra}</div>`;
 const pageSimple = ({ titre, description, chemin, ariane, h, corps }) =>
   `${tete({ titre, description, chemin, type: 'website', jsonld: [filAriane(ariane)] }).replace('<!--heros-->', h)}\n${corps}\n${pied(MAILTO)}`;
-const blocJouer = (texte, lien = '../app/', bouton = 'Commencer gratuitement') => `<section class="agir"><h2>${texte}</h2><div class="boutons"><a class="btn btn-cta" href="${lien}">${bouton}</a><a class="btn" href="../imprimer.html">Imprimer un examen blanc</a></div><p class="mute">Gratuit, sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p></section>`;
+const blocJouer = (texte, lien = '../app/', bouton = 'Commencer') => `<section class="agir"><h2>${texte}</h2><div class="boutons"><a class="btn btn-cta" href="${lien}">${bouton}</a><a class="btn" href="../imprimer.html">Imprimer un examen blanc</a></div><p class="mute">Sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p></section>`;
 
 function nomExamen(ex) { return ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} (tronc commun)` : ex.annee === 2026 ? `CEB ${ex.annee} (socles)` : `CEB ${ex.annee}`; }
 function slugExamen(ex) { return ex.id.replace(/^ceb-/, 'ceb-'); }
@@ -228,7 +228,7 @@ function pageExamen(ex, tous) {
   const jouables = livrets.reduce((s, l) => s + l.questions.length, 0);
   const jours = [...new Set((ex.livrets ?? []).map((l) => l.date).filter(Boolean))].sort();
   const titre = ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} tronc commun : l'examen en ligne` : ex.annee === 2026 ? `CEB ${ex.annee} socles : l'examen en ligne` : `CEB ${ex.annee} : l'examen complet en ligne`;
-  const description = `Le ${nom} livret par livret : matières, dates, durées et ${jouables} questions à refaire en ligne, corrigées tout de suite. Gratuit, sans compte.`;
+  const description = `Le ${nom} livret par livret : matières, dates, durées et ${jouables} questions à refaire en ligne, corrigées tout de suite.`;
   const ligne = (l) => {
     const r = livrets.find((x) => x.n === l.n);
     return `<tr><td>${l.n}</td><td>${esc(l.titre)}</td><td>${NOM_MAT_COURT[l.matiere] ?? ''}</td><td class="nw">${l.date ? (() => { const d = new Date(l.date + 'T12:00:00'); return `${JOURS[d.getDay()].slice(0, 3)}. ${d.getDate()}/${String(d.getMonth() + 1).padStart(2, '0')}`; })() : '—'}</td><td class="pts">${l.points ?? '—'}</td><td>${r ? `${r.questions.length}` : '<span class="papier">papier</span>'}</td></tr>`;
@@ -255,14 +255,14 @@ function pageExamens(tous) {
 <ul class="regle"><li>On découvre la forme des questions et des livrets, et le rythme de l'épreuve.</li><li>On repère les matières à retravailler : le bilan indique le score par livret et par matière.</li><li>Le jour J, le stress baisse : on sait à quoi s'attendre.</li></ul>
 <p>Le CEB 2027 porte sur les référentiels du <b>tronc commun</b> : commencez par le <a href="ceb-2026-tc.html">CEB 2026 tronc commun</a>, puis les années précédentes pour vous entraîner davantage.</p></section>
 ${blocJouer('Prêt pour un examen blanc ?', '../app/', 'Passer un examen en ligne')}`;
-  return pageSimple({ titre: 'Anciens examens du CEB 2015-2026 en ligne', description: 'Tous les CEB depuis 2015 à refaire en ligne, livret par livret, avec correction immédiate et bilan par matière. Le CEB 2026 tronc commun en entier. Gratuit.',
+  return pageSimple({ titre: 'Anciens examens du CEB 2015-2026 en ligne', description: 'Tous les CEB depuis 2015 à refaire en ligne, livret par livret, avec correction immédiate et bilan par matière. Le CEB 2026 tronc commun en entier.',
     chemin: 'examens/', ariane: [['Mission CEB', SITE], ['Examens']], h: heros('Anciens examens', 'Tous les CEB depuis 2015, à refaire en ligne', 'Les épreuves officielles, avec leurs documents, corrigées tout de suite. À l\'écran comme le jour J, ou sur papier.'), corps });
 }
 
 function pageExercices(m, fiches, exemples) {
   const M = MATIERES[m];
-  const titre = `Exercices CEB ${M.court} gratuits, corrigés`;
-  const description = `Exercices de ${M.long} pour le CEB : questions toujours nouvelles, corrigées tout de suite, et la règle à revoir. ${fiches.length} fiches. Gratuit.`;
+  const titre = `Exercices CEB ${M.court} corrigés`;
+  const description = `Exercices de ${M.long} pour le CEB : questions toujours nouvelles, corrigées tout de suite, et la règle à revoir. ${fiches.length} fiches.`;
   const ex = exemples.map((q, i) => `<details class="exemple"><summary><span class="num">${i + 1}</span>${esc(q.enonce)}${q.choix ? `<span class="choix">${q.choix.map((c) => esc(c)).join(' · ')}</span>` : ''}</summary><p><b>Réponse :</b> ${esc(bonneReponseLisible(q))}${q.explication ? `<br>${esc(q.explication)}` : ''}</p></details>`).join('\n');
   const corps = `<section class="matiere"><h2>Quelques exemples de questions</h2><p class="mute-t">Dans l'application, ces questions changent à chaque partie (nombres, mots, contextes) : l'enfant ne retombe jamais sur la même.</p>
 ${ex}</section>
@@ -282,7 +282,7 @@ function pageExercicesIndex(parMatiere) {
 <li><b>Un coach</b> qui repère les notions fragiles et les fait revenir quelques jours plus tard.</li>
 <li><b>Les vraies questions du CEB</b> de 2015 à 2026, mélangées aux exercices si on le souhaite.</li></ul></section>
 ${blocJouer('Dix minutes par jour suffisent')}`;
-  return pageSimple({ titre: 'Exercices pour le CEB gratuits et corrigés', description: 'Exercices gratuits pour préparer le CEB en français, maths, histoire-géo et sciences : questions toujours nouvelles, corrigées tout de suite, sans compte.',
+  return pageSimple({ titre: 'Exercices corrigés pour le CEB', description: 'Exercices pour préparer le CEB en français, maths, histoire-géo et sciences : questions toujours nouvelles, corrigées tout de suite, sans compte.',
     chemin: 'exercices/', ariane: [['Mission CEB', SITE], ['Exercices']], h: heros('Exercices pour le CEB', 'S\'entraîner au CEB, matière par matière', 'Français, maths, histoire-géo et sciences : choisis une matière et réponds à 10 questions.'), corps });
 }
 
@@ -297,7 +297,7 @@ ${JOURS27.map(([d, m]) => `<tr><td>${dateLongue(d)}</td><td>${m}</td></tr>`).joi
 <p class="mute-t">Informations à vérifier auprès de l'école et sur enseignement.be : seules les communications officielles de la Fédération Wallonie-Bruxelles font foi.</p></section>
 <section class="matiere"><h2>Par où commencer ?</h2><ul class="regle"><li><a href="../reviser-le-ceb/">Un plan de révision en 8 semaines</a></li><li><a href="../exercices/">Des exercices par matière</a></li><li><a href="../fiches/">Les 193 fiches de révision</a></li><li><a href="../examens/">Les anciens examens depuis 2015</a></li></ul></section>
 ${blocJouer('Commencer à réviser dès aujourd\'hui')}`;
-  return pageSimple({ titre: 'CEB 2027 : dates, matières et réussite', description: 'CEB 2027 : les dates (21 au 25 juin 2027), les matières de chaque jour, le tronc commun et les seuils de réussite. Avec des exercices gratuits pour s\'entraîner.',
+  return pageSimple({ titre: 'CEB 2027 : dates, matières et réussite', description: 'CEB 2027 : les dates (21 au 25 juin 2027), les matières de chaque jour, le tronc commun et les seuils de réussite. Avec des exercices pour s\'entraîner.',
     chemin: 'ceb-2027/', ariane: [['Mission CEB', SITE], ['CEB 2027']],
     h: heros('Le guide', 'CEB 2027 : tout ce qu\'il faut savoir', 'Dates, matières, tronc commun et conditions de réussite, résumés pour les parents et les élèves.', '<p class="compte-a-rebours">Plus que <b id="jours">quelques</b> jours</p><script>{const j=Math.ceil((new Date("2027-06-21T08:00:00")-new Date())/864e5);if(j>0)document.getElementById("jours").textContent=j}</script>'), corps });
 }
@@ -318,7 +318,7 @@ function pageReviser() {
 <li><b>S'entraîner aussi sur papier</b> : le jour J, on écrit, on trace et on lit des documents.</li>
 <li><b>Garder confiance</b> : le CEB vérifie ce qu'on a appris en primaire, rien de plus.</li></ul></section>
 ${blocJouer('Commencer le plan aujourd\'hui')}`;
-  return pageSimple({ titre: 'Bien réviser le CEB : plan en 8 semaines', description: 'Comment s\'entraîner pour le CEB : un plan de révision en 8 semaines, des conseils simples et des exercices gratuits en français, maths et éveil.',
+  return pageSimple({ titre: 'Bien réviser le CEB : plan en 8 semaines', description: 'Comment s\'entraîner pour le CEB : un plan de révision en 8 semaines, des conseils simples et des exercices corrigés en français, maths et éveil.',
     chemin: 'reviser-le-ceb/', ariane: [['Mission CEB', SITE], ['Bien réviser le CEB']],
     h: heros('Le guide', 'Comment bien réviser le CEB', 'Un plan simple en 8 semaines et quelques conseils qui font la différence.'), corps });
 }
