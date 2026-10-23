@@ -970,7 +970,8 @@
     0,
     1
    ],
-   "explication": "Deux langues pour un même lieu : pays bizarre. La BD existait aux États-Unis. Les tableaux : Magritte."
+   "explication": "Deux langues pour un même lieu : pays bizarre. La BD existait aux États-Unis. Les tableaux : Magritte.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l1-q17",
@@ -1084,7 +1085,8 @@
     ]
    ],
    "explication": "Le texte cite trois éléments propres à l'Art nouveau : de grandes fenêtres en façade, une verrière sur le toit et des lignes courbes. Deux au choix suffisent.",
-   "differentes": true
+   "differentes": true,
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l1-q6",
@@ -1191,6 +1193,23 @@
    "explication": "Cube 6-8-12 ; pyramide carrée 5-5-8 ; tétraèdre 4-4-6.",
    "documents": [
     "liv3-p03"
+   ],
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8
+    ]
    ]
   },
   {
@@ -1724,7 +1743,25 @@
      "5"
     ]
    ],
-   "explication": "Pour 12 : × 2. Pour 15 : × 2,5 (ou pour 3 personnes × 5)."
+   "explication": "Pour 12 : × 2. Pour 15 : × 2,5 (ou pour 3 personnes × 5).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l4-q16",
@@ -2072,7 +2109,8 @@
     ]
    ],
    "souple": true,
-   "explication": "1 classeur : 3 euros ; 15 euros : 5 classeurs ; 13 classeurs : 39 euros ; 63 euros : 21 classeurs (13 et 63 sortent du graphique, qui s'arrête à 10 classeurs)."
+   "explication": "1 classeur : 3 euros ; 15 euros : 5 classeurs ; 13 classeurs : 39 euros ; 63 euros : 21 classeurs (13 et 63 sortent du graphique, qui s'arrête à 10 classeurs).",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l5-q1a",
@@ -3224,7 +3262,25 @@
      "6"
     ]
    ],
-   "explication": "Lecture du graphique en bâtonnets."
+   "explication": "Lecture du graphique en bâtonnets.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l7-q2a",
@@ -3567,7 +3623,8 @@
      "1947"
     ]
    ],
-   "explication": "38,8 °C en juin 1947."
+   "explication": "38,8 °C en juin 1947.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l7-q9",
@@ -3691,7 +3748,14 @@
     ]
    ],
    "souple": true,
-   "explication": "Lecture du graphique : 46 °C à 4 min ; 100 °C à 16, 20 et 24 min ; 78 °C à 10 min."
+   "explication": "Lecture du graphique : 46 °C à 4 min ; 100 °C à 16, 20 et 24 min ; 78 °C à 10 min.",
+   "groupes": [
+    [
+     1,
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l7-q4a",
@@ -4235,7 +4299,19 @@
      "59,01"
     ]
    ],
-   "explication": "On avance de 1, puis de 0,01."
+   "explication": "On avance de 1, puis de 0,01.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l8-q10",
@@ -4325,7 +4401,13 @@
      "160"
     ]
    ],
-   "explication": "5 de plus = reste 5 ; dividende : 10 ; diviseur × 10 ; 48 = 16 × 3 donc 480 : 3 = 160."
+   "explication": "5 de plus = reste 5 ; dividende : 10 ; diviseur × 10 ; 48 = 16 × 3 donc 480 : 3 = 160.",
+   "groupes": [
+    [
+     1,
+     2
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l8-q14",
@@ -4407,7 +4489,17 @@
      "+"
     ]
    ],
-   "explication": "2,5 = 10 : 4 ; retirer 9,7, c'est retirer 10 et rajouter 0,3."
+   "explication": "2,5 = 10 : 4 ; retirer 9,7, c'est retirer 10 et rajouter 0,3.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l8-q19",
@@ -4431,7 +4523,8 @@
      "2"
     ]
    ],
-   "explication": "7 352 − 5 071 = 2 281."
+   "explication": "7 352 − 5 071 = 2 281.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l8-q20",
@@ -4708,7 +4801,8 @@
      "présentatrice du JT"
     ]
    ],
-   "explication": "Elle est licenciée en communication, information et journalisme (un seul de ces mots suffit) et elle est présentatrice du journal télévisé."
+   "explication": "Elle est licenciée en communication, information et journalisme (un seul de ces mots suffit) et elle est présentatrice du journal télévisé.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l9-q4",
@@ -4892,7 +4986,8 @@
     0,
     1
    ],
-   "explication": "Le journal ne rapporte pas tout : l'équipe choisit les informations et les réorganise tout au long de la journée."
+   "explication": "Le journal ne rapporte pas tout : l'équipe choisit les informations et les réorganise tout au long de la journée.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2017-l9-q12",
