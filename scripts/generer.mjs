@@ -105,7 +105,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 const pied = (lienSignaler) => `</main>
 <footer class="pied">
 <p><b>Mission CEB</b> : entraînement au CEB (Certificat d'Études de Base, Fédération Wallonie-Bruxelles), sans compte et sans publicité. La progression reste sur l'appareil de l'enfant.</p>
-<p><a href="../">Accueil</a> · <a href="../app/">Ouvrir l'application</a> · <a href="../fiches/">Fiches</a> · <a href="../examens/">Anciens examens</a> · <a href="../exercices/">Exercices</a> · <a href="../ceb-2027/">CEB 2027</a> · <a href="../reviser-le-ceb/">Bien réviser</a> · <a href="${esc(lienSignaler)}">Signaler une erreur</a></p>
+<p><a href="../">Accueil</a> · <a href="../app/">Ouvrir l'application</a> · <a href="../fiches/">Fiches</a> · <a href="../examens/">Anciens examens</a> · <a href="../exercices/">Exercices</a> · <a href="../ceb-2027/">CEB 2027</a> · <a href="../reviser-le-ceb/">Bien réviser</a> · <a href="../enseignants/">Enseignants</a> · <a href="${esc(lienSignaler)}">Signaler une erreur</a></p>
 </footer>
 </body>
 </html>
@@ -325,6 +325,33 @@ ${blocJouer('Commencer à réviser dès aujourd\'hui')}`;
   return `${tete({ titre: `CEB ${C.annee} : dates, matières et réussite`, description, chemin: 'ceb-2027/', type: 'website', jsonld: [filAriane([['Mission CEB', SITE], [`CEB ${C.annee}`]]), pageLd, faqLd] }).replace('<!--heros-->', h)}\n${corps}\n${pied(MAILTO)}`;
 }
 
+// Page « Pour les enseignants » : le kit pour les écoles (affiche, billets, QR, lien à copier).
+export function pageEnseignants() {
+  const lienHtml = '<a href="https://missionceb.be/">Mission CEB : s\'entraîner au CEB en ligne</a>';
+  const corps = `<section class="matiere"><h2>Mission CEB en bref</h2><p>Un site pour s'entraîner au CEB, en classe ou à la maison : les <b>examens officiels de 2015 à 2026</b> livret par livret, des <b>questions toujours nouvelles</b> dans les quatre matières, et une <b>fiche</b> pour revoir la règle après chaque erreur. Les questions et les fiches suivent les référentiels du <b>tronc commun</b>, comme le CEB 2027.</p>
+<ul class="regle"><li><b>Aucun compte</b> : l'élève choisit un pseudo, c'est tout.</li><li><b>Aucune donnée envoyée</b> : la progression reste dans le navigateur de l'appareil. Rien à déclarer, rien à faire signer aux parents.</li><li><b>Sans publicité</b>, sans achat dans l'application. Gratuit pour les élèves et pour les écoles.</li><li>Fonctionne sur <b>tablette, ordinateur, tableau interactif</b> et téléphone, même hors ligne une fois ouvert.</li></ul></section>
+<section class="matiere"><h2>En classe</h2><ul class="regle">
+<li><b>Examens blancs sur papier</b> : <a href="../imprimer.html">la page « Examen papier »</a> compose un examen complet, court ou par matière, avec son corrigé. Chaque examen a un <b>code</b> : le même code redonne exactement le même examen et le même corrigé, pour toute la classe.</li>
+<li><b>Fiches ciblées</b> : une à quatre notions au choix, avec le rappel de la règle et des exercices du plus facile au plus difficile, à imprimer.</li>
+<li><b>Anciens CEB</b> : <a href="../examens/">chaque examen depuis 2015</a>, livret par livret, à projeter ou à faire en salle informatique. Les documents officiels (questionnaire, portfolio, consignes de passation et correction) sont téléchargeables sur chaque page.</li>
+<li><b>Défi de classe</b> : un élève lance un défi et partage le lien ; tous ceux qui l'ouvrent reçoivent les mêmes questions.</li>
+<li><b>Mode « Examen réel »</b> : livret par livret, chronométré aux durées officielles, correction à la fin.</li></ul></section>
+<section class="matiere"><h2>Le kit à imprimer</h2><ul class="telechargements">
+<li><span class="kit-txt"><b>Affiche A4</b> pour la classe ou le couloir, avec QR code.</span><a class="btn" href="../assets/kit/affiche-mission-ceb.pdf" download>📄 Affiche (PDF)</a></li>
+<li><span class="kit-txt"><b>Billets pour le journal de classe</b> : 4 billets par feuille, à découper et à coller, pour prévenir les parents.</span><a class="btn" href="../assets/kit/billets-journal-de-classe.pdf" download>📄 Billets (PDF)</a></li>
+<li><span class="kit-txt"><b>QR code seul</b>, pour un document de l'école.</span><a class="btn" href="../assets/kit/qr-missionceb.png" download>🖼️ PNG</a> <a class="btn" href="../assets/kit/qr-missionceb.svg" download>🖼️ SVG</a></li></ul></section>
+<section class="matiere"><h2>Mettre un lien sur le site de l'école</h2><p>Dans une page « Liens utiles » ou « 6e primaire », il suffit d'ajouter l'adresse <b>https://missionceb.be/</b>. Pour un site web, voici le lien prêt à copier :</p>
+<pre class="code-lien"><code>${esc(lienHtml)}</code></pre>
+<p>Pour un courriel ou une lettre aux parents : « Pour préparer le CEB à la maison, votre enfant peut s'entraîner sur missionceb.be (vrais examens du CEB, exercices corrigés, sans compte et sans publicité). »</p></section>
+<section class="matiere"><h2>Une erreur, une idée ?</h2><p>Chaque question a un bouton « Signaler une erreur ». Pour une remarque d'enseignant (une réponse discutable, une notion qui manque, un usage en classe à faciliter), écrivez à <a href="mailto:${ADRESSE_SIGNALEMENT}">${ADRESSE_SIGNALEMENT}</a>.</p></section>
+${blocJouer('Essayer comme un élève')}`;
+  const ld = { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Mission CEB pour les enseignants', url: `${SITE}enseignants/`, inLanguage: 'fr-BE', audience: { '@type': 'EducationalAudience', educationalRole: 'teacher' } };
+  const titre = 'Mission CEB pour les enseignants et les écoles';
+  const description = 'Préparer le CEB en classe : examens blancs imprimables avec corrigé, anciens CEB livret par livret, fiches ciblées, affiche et billets pour les parents. Sans compte.';
+  const h = heros('Pour les enseignants', 'Mission CEB en classe', 'Examens blancs, fiches à imprimer, anciens CEB à projeter, et un kit pour prévenir les parents.');
+  return `${tete({ titre, description, chemin: 'enseignants/', type: 'website', jsonld: [filAriane([['Mission CEB', SITE], ['Enseignants']]), ld] }).replace('<!--heros-->', h)}\n${corps}\n${pied(MAILTO)}`;
+}
+
 function pageReviser() {
   const PLAN = [
     ['Semaines 1 et 2', 'Faire le point', 'Un examen blanc complet (le CEB 2026 tronc commun) pour repérer les matières fragiles. Puis 10 questions par jour en entraînement.'],
@@ -427,9 +454,10 @@ export async function generer() {
   const CEB27 = await lireJson('data/ceb-2027.json');
   out['ceb-2027/index.html'] = pageCeb2027(CEB27);
   out['reviser-le-ceb/index.html'] = pageReviser();
+  out['enseignants/index.html'] = pageEnseignants();
   out['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[SITE, `${SITE}ceb-2027/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}reviser-le-ceb/`, `${SITE}fiches/`,
+${[SITE, `${SITE}ceb-2027/`, `${SITE}enseignants/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}reviser-le-ceb/`, `${SITE}fiches/`,
   ...examens.map((ex) => `${SITE}examens/${slugExamen(ex)}.html`), ...Object.values(SLUG).map((x) => `${SITE}exercices/${x}.html`),
   ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc>${u === `${SITE}ceb-2027/` ? `<lastmod>${CEB27.miseAJour}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
@@ -453,7 +481,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const out = await generer();
   await mkdir(new URL('fiches/', RACINE), { recursive: true });
   for (const ancien of await readdir(new URL('fiches/', RACINE))) if (!out[`fiches/${ancien}`]) await rm(new URL(`fiches/${ancien}`, RACINE));
-  for (const d of ['examens/', 'exercices/', 'ceb-2027/', 'reviser-le-ceb/', 'relecture/']) await mkdir(new URL(d, RACINE), { recursive: true });
+  for (const d of ['examens/', 'exercices/', 'ceb-2027/', 'reviser-le-ceb/', 'enseignants/', 'relecture/']) await mkdir(new URL(d, RACINE), { recursive: true });
   for (const [p, c] of Object.entries(out)) await writeFile(new URL(p, RACINE), c);
   console.log(`${Object.keys(out).length} fichiers générés (${Object.keys(out).filter((p) => p.startsWith('fiches/')).length} pages de fiches).`);
 }

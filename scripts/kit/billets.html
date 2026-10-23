@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<title>Mission CEB — billets pour le journal de classe</title>
+<!-- Source de assets/kit/billets-journal-de-classe.pdf (rendu : node scripts/kit/rendre.mjs). 4 billets A6 par feuille A4, à découper. -->
+<link rel="stylesheet" href="../../css/polices.css">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 210mm; height: 297mm; font-family: 'Atkinson Hyperlegible', sans-serif; color: #10245e; background: #fff; }
+  .feuille { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; width: 210mm; height: 297mm; }
+  .billet { padding: 8mm 8mm 7mm; border: 0.3mm dashed #8a96b8; display: flex; flex-direction: column; }
+  .marque { display: flex; align-items: center; gap: 2.5mm; font: 800 6mm/1 'Baloo 2', sans-serif; }
+  .marque img { width: 9mm; height: 9mm; border-radius: 2mm; }
+  p { font-size: 4.4mm; line-height: 1.45; margin: 5mm 0 0; color: #1d2b55; }
+  ul { font-size: 4.3mm; line-height: 1.45; margin: 3mm 0 0; padding-left: 5mm; color: #1d2b55; }
+  .bas { margin-top: auto; display: flex; align-items: center; gap: 4mm; }
+  .bas img { width: 30mm; height: 30mm; flex: none; }
+  .url { font: 800 6.4mm/1 'Baloo 2', sans-serif; display: block; }
+  .bas small { font-size: 3.5mm; color: #3a4a78; display: block; margin-top: 1.5mm; line-height: 1.3; }
+</style>
+</head>
+<body>
+<div class="feuille">
+<!--billet-->
+<div class="billet">
+  <div class="marque"><img src="../../assets/icones/logo-128.png" alt="">Mission CEB</div>
+  <p>Chers parents, pour préparer le CEB à la maison, votre enfant peut s'entraîner sur <b>missionceb.be</b> :</p>
+  <ul>
+    <li>les vrais examens du CEB depuis 2015 ;</li>
+    <li>des exercices corrigés tout de suite, avec la règle à revoir ;</li>
+    <li>un espace parents pour suivre ses progrès.</li>
+  </ul>
+  <p>Dix minutes par jour suffisent.</p>
+  <div class="bas"><img src="../../assets/kit/qr-missionceb.svg" alt=""><div><span class="url">missionceb.be</span><small>Sans compte et sans publicité. Aucune donnée ne quitte l'appareil.</small></div></div>
+</div>
+<!--/billet-->
+</div>
+<script>
+  // Quatre fois le même billet (un seul à maintenir).
+  const f = document.querySelector('.feuille'), b = f.querySelector('.billet');
+  for (let i = 0; i < 3; i++) f.appendChild(b.cloneNode(true));
+</script>
+</body>
+</html>
