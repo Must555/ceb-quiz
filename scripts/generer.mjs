@@ -190,16 +190,21 @@ export function exemplesFiche(modeles, id, n = 4) {
   return out.sort((a, b) => (a.difficulte ?? 2) - (b.difficulte ?? 2));
 }
 
+// Question officielle qui se comprend sans le portfolio ni le texte du livret.
+function autonome(q) {
+  if (q.numerisable === false || !estJouable(q) || !TYPES_PAGE.has(q.type)) return false;
+  if (q.documents?.length || q.figure || q.enonce.length < 35 || q.enonce.length > 320) return false;
+  if (/^(fr\.lire|fr\.ecouter)/.test(q.domaine ?? '')) return false;
+  if (DEICTIQUE.test(`${q.enonce} ${q.texte ?? ''} ${(q.choix ?? []).join(' ')}`)) return false;
+  const r = lisible(q); return !!r && r.length <= 200;
+}
+
 export function officiellesParFiche(examens) {
   const parFiche = {}, annees = {};
   for (const ex of examens) for (const q of ex.questions) {
     if (!q.fiche) continue;
     (annees[q.fiche] ??= new Map()).set(ex.id, ex);
-    if (q.numerisable === false || !estJouable(q) || !TYPES_PAGE.has(q.type)) continue;
-    if (q.documents?.length || q.figure || q.enonce.length < 35 || q.enonce.length > 320) continue;
-    if (/^(fr\.lire|fr\.ecouter)/.test(q.domaine ?? '')) continue;
-    if (DEICTIQUE.test(`${q.enonce} ${q.texte ?? ''} ${(q.choix ?? []).join(' ')}`)) continue;
-    const r = lisible(q); if (!r || r.length > 200) continue;
+    if (!autonome(q)) continue;
     (parFiche[q.fiche] ??= []).push({ ex, q });
   }
   const choisies = {};
@@ -298,7 +303,29 @@ function blocTelechargements(ex) {
 <ul class="telechargements">${t.documents.map((d) => `<li><b>${NOM_DOC[d.type]}</b> <a class="btn" href="${base}${d.fichier}" rel="noopener">📄 Officiel (PDF)</a> <a class="btn" href="../archives/${d.fichier}" download>💾 Copie</a></li>`).join('')}</ul></section>`;
 }
 
-function pageExamen(ex, tous) {
+// Détail de chaque livret : durée, notions travaillées (liens vers les fiches), aperçu de 2 questions avec la réponse du corrigé.
+function blocLivrets(ex, fiches) {
+  const blocs = (ex.livrets ?? []).map((l) => {
+    const qs = ex.questions.filter((q) => q.livret === l.n);
+    const compte = new Map();
+    for (const q of qs) if (q.fiche && fiches[q.fiche]) compte.set(q.fiche, (compte.get(q.fiche) ?? 0) + 1);
+    const notions = [...compte.entries()].sort((a, b) => b[1] - a[1] || fiches[a[0]].titre.localeCompare(fiches[b[0]].titre, 'fr')).slice(0, 6).map(([id]) => fiches[id]);
+    const vus = new Set();
+    const apercu = qs.filter((q) => { if (!autonome(q)) return false; const c = normaliserTexte(q.enonce); if (vus.has(c)) return false; vus.add(c); return true; })
+      .sort((a, b) => (b.corrigeVerifie === true) - (a.corrigeVerifie === true)).slice(0, 2);
+    const infos = [NOM_MAT_COURT[l.matiere] ?? "", l.duree ? `${l.duree} minutes` : "", l.points ? `${l.points} points` : ""].filter(Boolean).join(' · ');
+    const papier = !livretsReels(ex).some((x) => x.n === l.n);
+    return `<details class="livret"><summary><b>Livret ${l.n} · ${esc(l.titre)}</b><span>${esc(infos)}</span></summary>
+${notions.length ? `<p><b>Notions travaillées :</b> ${notions.map((f) => `<a href="../fiches/${f.id}.html">${esc(f.titre)}</a>`).join(' · ')}</p>` : ''}
+${papier ? `<p class="mute-t">${l.ecoute || /écouter/i.test(l.titre) ? 'Livret d\'écoute : à l\'épreuve, le texte est lu à voix haute.' : 'Livret à faire sur papier (rédaction, tracés) : voir le questionnaire officiel ci-dessous.'}</p>` : ''}
+${apercu.length ? `<p class="mute-t">Deux questions de ce livret, avec la réponse du corrigé :</p>\n${apercu.map((q, i) => questionStatique(q, i, `<span class="source-ceb">Question ${esc(String(q.numero))}</span>`)).join('\n')}` : ''}
+</details>`;
+  }).join('\n');
+  return `<section class="matiere"><h2>Le détail des livrets</h2><p class="mute-t">Ouvre un livret pour voir ce qu'il évalue et quelques-unes de ses questions.</p>
+${blocs}</section>`;
+}
+
+function pageExamen(ex, tous, fiches = {}) {
   const nom = nomExamen(ex);
   const livrets = livretsReels(ex);
   const jouables = livrets.reduce((s, l) => s + l.questions.length, 0);
@@ -315,6 +342,7 @@ function pageExamen(ex, tous) {
 <div class="tableau"><table><thead><tr><th>N°</th><th>Intitulé</th><th>Matière</th><th>Date</th><th class="pts">Points</th><th>En ligne</th></tr></thead><tbody>
 ${(ex.livrets ?? []).map(ligne).join('\n')}
 </tbody></table></div></section>
+${blocLivrets(ex, fiches)}
 ${blocTelechargements(ex)}
 <section class="agir"><h2>Refaire le ${esc(nom)}</h2><div class="boutons"><a class="btn btn-cta" href="../app/?examen=${encodeURIComponent(ex.id)}">Passer cet examen en ligne</a><a class="btn" href="../imprimer.html">Imprimer un examen blanc</a></div>
 <p class="mute">${jouables} questions corrigées tout de suite, avec les documents du portfolio. Mode « Examen réel » : livret par livret, chronométré, correction à la fin. Le questionnaire officiel et son portfolio sont publiés par la Fédération Wallonie-Bruxelles sur <a href="https://www.enseignement.be" style="color:#fff">enseignement.be</a>.</p></section>
@@ -524,7 +552,7 @@ export async function generer() {
   out['fiches/index.html'] = pageIndex(parMatiere, fiches.length);
   // Pages « recherche » : examens par année, exercices par matière, guides.
   TELE = await lireJson('data/telechargements.json');
-  for (const ex of examens) out[`examens/${slugExamen(ex)}.html`] = pageExamen(ex, examens);
+  for (const ex of examens) out[`examens/${slugExamen(ex)}.html`] = pageExamen(ex, examens, donnees.fiches);
   out['examens/index.html'] = pageExamens(examens);
   for (const m of Object.keys(MATIERES)) out[`exercices/${SLUG[m]}.html`] = pageExercices(m, parMatiere[m], exemplesMatiere(donnees.modeles, m));
   out['exercices/index.html'] = pageExercicesIndex(parMatiere);
