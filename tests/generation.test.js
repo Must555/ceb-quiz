@@ -29,7 +29,7 @@ test('une page par fiche, avec titre, description, lien d\'entraînement et cano
     assert.match(h, /<meta name="description" content="[^"]{40,260}">/);
     assert.match(h, new RegExp(`<link rel="canonical" href="https://missionceb.be/${p}">`));
     assert.match(h, /href="\.\.\/app\/(\?fiche=|")/);
-    assert.ok(!/undefined|null/.test(h.replace(/<script type="application\/ld\+json">.*?<\/script>/s, '')), p);
+    assert.ok(!/\bundefined\b|\bnull\b|\bNaN\b/.test(h.replace(/<script type="application\/ld\+json">.*?<\/script>/s, '')), p);
   }
   // Chaque adresse du plan du site correspond à un fichier publié.
   for (const [, u] of out['sitemap.xml'].matchAll(/<loc>https:\/\/missionceb\.be\/([^<]*)<\/loc>/g)) {
