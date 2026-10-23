@@ -209,6 +209,16 @@ test('correction : cas particuliers', () => {
   const grilleDiff = { type: 'grille', differentes: true, reponse: [[2, 3, 5], [3, 2, 5]], points: 2 };
   assert.equal(corriger(grilleDiff, [2, 5]).score, 2);
   assert.deepEqual([corriger(grilleDiff, [2, 2]).score, corriger(grilleDiff, [2, 2]).correct], [1, false]);
+  // Barème « tout ou rien » du correctif officiel, sur toute la question ou par groupe de cases.
+  const tor = { type: 'grille', toutOuRien: true, reponse: [0, 1, 1], points: 2 };
+  assert.deepEqual([corriger(tor, [0, 1, 1]).score, corriger(tor, [0, 1, 0]).score], [2, 0]);
+  assert.match(corriger(tor, [0, 1, 0]).remarque, /tout juste/);
+  const torTrous = { type: 'trous', toutOuRien: true, reponse: [['a'], ['b']], points: 1 };
+  assert.equal(corriger(torTrous, ['a', 'x']).score, 0);
+  const grp = { type: 'grille', groupes: [[0, 1], [2, 3]], reponse: [0, 0, 1, 1], points: 2 };
+  assert.deepEqual([corriger(grp, [0, 0, 1, 0]).score, corriger(grp, [0, 1, 1, 0]).score, corriger(grp, [0, 0, 1, 1]).score], [1, 0, 2]);
+  const grpPoids = { type: 'trous', groupes: [[0, 1]], pointsGroupes: [2, 1], reponse: [['a'], ['b'], ['c']], points: 3 };
+  assert.deepEqual([corriger(grpPoids, ['a', 'b', 'x']).score, corriger(grpPoids, ['a', 'x', 'c']).score], [2, 1]);
   const ordre = { type: 'ordre', reponse: [0, 1, 2] };
   assert.equal(corriger(ordre, [undefined, null, '']).score, 0);
 });

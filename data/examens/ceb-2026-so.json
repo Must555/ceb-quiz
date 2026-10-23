@@ -1588,7 +1588,24 @@
       ],
       "explication": "150 m : longueur (ou distance), 150, mètre. 30 min : durée (ou temps), 30, minute. 3,5 t : masse, 3,5, tonne. Attention : le poids d'un camion se mesure en masse.",
       "texte": "Panneau STOP 150 m\ngrandeur : {1}\nmesure : {2}\nunité : {3}\n\nPanneau P 30 MIN.\ngrandeur : {4}\nmesure : {5}\nunité : {6}\n\nPanneau 3,5 t max\ngrandeur : {7}\nmesure : {8}\nunité : {9}",
-      "souple": true
+      "souple": true,
+      "groupes": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ]
     },
     {
       "id": "ceb-2026-so-l4-q2",
@@ -2473,7 +2490,22 @@
         ]
       ],
       "souple": true,
-      "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne. « Louis » seul ne suffit pas : il faut « Louis le Pieux » (ou Louis Ier)."
+      "explication": "Pépin le Bref (714-768) ; Louis le Pieux, fils et successeur de Charlemagne ; Lothaire Ier (795-855), Charles le Chauve (826-877) et Louis le Germanique sont les fils de Louis le Pieux ; Carloman Ier est le frère de Charlemagne. « Louis » seul ne suffit pas : il faut « Louis le Pieux » (ou Louis Ier).",
+      "groupes": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ]
+      ]
     },
     {
       "id": "ceb-2026-so-l5-q4b",
@@ -2538,7 +2570,8 @@
         ]
       ],
       "souple": true,
-      "explication": "742 est au 8e siècle (701-800) ; 814 est au 9e siècle (801-900)."
+      "explication": "742 est au 8e siècle (701-800) ; 814 est au 9e siècle (801-900).",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-so-l5-q4e",
@@ -4357,7 +4390,22 @@
       ],
       "souple": true,
       "explication": "54 − 27 = 27 ; 96 : 8 = 12 ; 20 = 34 − 10 − 4.",
-      "champsCourts": true
+      "champsCourts": true,
+      "groupes": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ]
     },
     {
       "id": "ceb-2026-so-l8-q19",

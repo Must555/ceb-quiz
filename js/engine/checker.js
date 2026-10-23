@@ -76,15 +76,15 @@ export function corriger(question, reponseEleve) {
       // differentes : true → « écris-en deux » : une même réponse répétée ne compte qu'une fois.
       const vues = new Set();
       let repetee = false;
-      const bons = question.reponse.filter((acc, i) => {
+      const oks = question.reponse.map((acc, i) => {
         const ok = comparerTexte(reponseEleve[i] ?? '', [].concat(acc), question.souple !== false).ok;
         if (!ok || !question.differentes) return ok;
         const cle = normaliserTexte(reponseEleve[i]).replace(/^(le |la |les |l'|un |une |des )/, '').replace(/s$/, '');
         if (vues.has(cle)) { repetee = true; return false; }
         vues.add(cle);
         return true;
-      }).length;
-      const res = partiel(bons, question.reponse.length, max);
+      });
+      const res = noter(oks, question, max);
       return repetee ? { ...res, remarque: 'Il faut des réponses différentes.' } : res;
     }
     case 'grille': {
@@ -92,14 +92,14 @@ export function corriger(question, reponseEleve) {
       // (le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne).
       // differentes : true → une même colonne choisie sur deux lignes ne compte qu'une fois.
       const vus = new Set();
-      const bons = question.reponse.filter((col, i) => {
+      const oks = question.reponse.map((col, i) => {
         const ok = estRempli(reponseEleve[i]) && [].concat(col).includes(Number(reponseEleve[i]));
         if (!ok || !question.differentes) return ok;
         if (vus.has(Number(reponseEleve[i]))) return false;
         vus.add(Number(reponseEleve[i]));
         return true;
-      }).length;
-      return partiel(bons, question.reponse.length, max);
+      });
+      return noter(oks, question, max);
     }
     case 'ordre': {
       const bons = question.reponse.filter((v, i) => estRempli(reponseEleve[i]) && Number(reponseEleve[i]) === v).length;
@@ -110,7 +110,8 @@ export function corriger(question, reponseEleve) {
       // reponse = [[g, d], ...] ; l'élève fournit aussi des paires
       const attendu = new Set(question.reponse.map(([g, d]) => `${g}-${d}`));
       const bons = reponseEleve.filter(([g, d]) => attendu.has(`${g}-${d}`)).length;
-      return partiel(bons, question.reponse.length, max);
+      const res = partiel(bons, question.reponse.length, max);
+      return question.toutOuRien && !res.correct ? { ...res, score: 0 } : res;
     }
     case 'ouverte':
       // Correction par l'élève à l'aide de reponseModele (ou par un adulte).
@@ -118,6 +119,23 @@ export function corriger(question, reponseEleve) {
     default:
       throw new Error(`Type de question inconnu : ${question.type}`);
   }
+}
+
+// Barème du correctif : toutOuRien → tous les points ou aucun ; groupes = [[0, 1], [2, 3]] → chaque
+// groupe de cases est noté « tout ou rien » (les cases hors groupe comptent seules) ; pointsGroupes
+// donne le poids de chaque groupe (sinon parts égales).
+function noter(oks, question, max) {
+  const bons = oks.filter(Boolean).length;
+  const base = partiel(bons, oks.length, max);
+  const avis = bons > 0 && !base.correct ? { remarque: `${bons} case${bons > 1 ? 's' : ''} sur ${oks.length} juste${bons > 1 ? 's' : ''}, mais à l'épreuve il faut tout juste pour avoir les points.` } : {};
+  if (question.toutOuRien) return base.correct ? base : { ...base, score: 0, ...avis };
+  if (!question.groupes) return base;
+  const dans = new Set(question.groupes.flat());
+  const groupes = [...question.groupes, ...oks.map((_, i) => i).filter((i) => !dans.has(i)).map((i) => [i])];
+  const poids = question.pointsGroupes ?? groupes.map(() => max / groupes.length);
+  const score = groupes.reduce((t, g, k) => t + (g.every((i) => oks[i]) ? poids[k] ?? 0 : 0), 0);
+  const arrondi = Math.round(score * 100) / 100;
+  return arrondi < base.score ? { ...base, score: arrondi, remarque: 'Certains groupes ne comptent que s\'ils sont entièrement justes, comme à l\'épreuve.' } : { ...base, score: arrondi };
 }
 
 function partiel(bons, total, max) {
