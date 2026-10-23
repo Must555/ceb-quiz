@@ -118,3 +118,19 @@ th { font-size:14px; color:var(--mute); }
 .code-lien { background:var(--panel2); border:1px solid var(--ligne); border-radius:12px; padding:12px 14px; overflow-x:auto; white-space:pre-wrap; word-break:break-all; font-size:14px; }
 .telechargements .kit-txt { flex:1 1 260px; } .telechargements .kit-txt b { flex:none; }
 @media (prefers-color-scheme: dark) { .telechargements .btn + .btn { color:#cfe0ff; box-shadow:inset 0 0 0 2px #8fb0ff; } }
+/* Fiches enrichies : exercices corrigés et vraies questions du CEB. */
+.exemple .texte-trous { display:block; font-weight:400; margin:6px 0 0 36px; padding:8px 12px; border-left:3px solid var(--ligne); }
+.exemple .source-ceb { display:block; font-weight:700; font-size:13px; color:var(--mute); margin:6px 0 0 36px; }
+.exemple summary i { font-weight:400; color:var(--mute); }
+.dans-ceb { font-size:15px; color:var(--mute); margin:0 0 18px; line-height:1.7; }
+.exemple .choix-liste { display:flex; flex-wrap:wrap; gap:6px 8px; }
+.exemple .choix-liste .ch { display:inline-block; padding:3px 10px; border:1px solid var(--ligne); border-radius:10px; background:var(--panel); }
+/* Pages d'examens : détail des livrets. */
+.livret { border:1px solid var(--ligne); border-radius:14px; padding:2px 14px; margin:0 0 10px; }
+.livret > summary { cursor:pointer; padding:12px 0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 12px; }
+.livret > summary span { color:var(--mute); font-size:15px; }
+.livret[open] > summary { border-bottom:1px solid var(--ligne); margin-bottom:10px; }
+.livret > p { margin:0 0 10px; }
+.livret > summary { list-style:none; position:relative; padding-right:28px; } .livret > summary::-webkit-details-marker { display:none; }
+.livret > summary::after { content:'+'; position:absolute; right:2px; top:10px; font:800 20px/1 var(--titre); color:var(--bleu-v); }
+.livret[open] > summary::after { content:'−'; }
