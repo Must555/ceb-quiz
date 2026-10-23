@@ -52,3 +52,19 @@ test('séance : ce qui a été vu aux séries précédentes ne revient pas tant 
   assert.equal(tout.length, 150);
   assert.deepEqual(doublons(tout).map((q) => q.enonce.slice(0, 80)), []);
 });
+
+test('« remettre dans l\'ordre » : la question ne s\'affiche jamais déjà dans le bon ordre', async () => {
+  const { sansOrdreDonne } = await import('../js/engine/session.js');
+  const { genererVariante, createRng } = await import('../js/engine/index.js');
+  const ordres = banque.filter((q) => q.type === 'ordre');
+  for (const m of donnees.modeles) {
+    const rng = createRng(`ordre|${m.id}`);
+    for (let k = 0; k < 20; k++) { const v = genererVariante(m, rng); if (v?.type === 'ordre') ordres.push(v); }
+  }
+  assert.ok(ordres.length > 40);
+  for (const q of ordres) {
+    const vue = sansOrdreDonne(q);
+    assert.ok(!vue.reponse.every((x, i) => x === i), q.id);
+    assert.deepEqual(vue.reponse.map((i) => vue.elements[i]), q.reponse.map((i) => q.elements[i]), q.id);
+  }
+});

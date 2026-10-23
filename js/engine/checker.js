@@ -58,7 +58,9 @@ export function corriger(question, reponseEleve) {
       return { correct: ok, score: ok ? max : 0, max };
     }
     case 'qcm_multi': {
-      const choisis = [...new Set(reponseEleve.map(Number))];
+      // aussiAcceptes : propositions que le corrigé officiel tolère (ni exigées ni pénalisées).
+      const tolerees = (question.aussiAcceptes ?? []).filter((i) => !question.reponse.includes(i));
+      const choisis = [...new Set(reponseEleve.map(Number))].filter((i) => !tolerees.includes(i));
       const ok = memeEnsemble(choisis, question.reponse);
       if (ok) return { correct: true, score: max, max };
       // parProposition : chaque proposition compte, qu'elle doive être cochée ou laissée (« 5 x ½ pt »).
