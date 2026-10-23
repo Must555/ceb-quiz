@@ -1385,7 +1385,7 @@ function afficherReglages() {
       <p class="etape-titre">Avatar</p>
       <div class="grille-avatars">${AVATARS.map((a) => boutonAvatar(a, a.id === joueur.avatar)).join('')}</div>
       <p class="etape-titre" style="margin-top:14px">Couleur de fond</p>
-      <div class="couleurs">${COULEURS.map((c) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}"></button>`).join('')}</div>
+      <div class="couleurs">${COULEURS.map((c, i) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}" aria-label="Couleur ${i + 1}"></button>`).join('')}</div>
     </section>
     <section class="carte confort">
       <p class="etape-titre">👓 Confort de lecture</p>

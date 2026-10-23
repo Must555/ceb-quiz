@@ -1522,7 +1522,7 @@
    "numero": "5b",
    "domaine": "ma.geometrie",
    "type": "qcm_multi",
-   "enonce": "Certains solides représentés dans la question précédente (livret, page 6) sont des polyèdres. Choisis leur numéro.",
+   "enonce": "Certains solides représentés (livret, page 6) sont des polyèdres. Choisis leur numéro.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -3960,7 +3960,7 @@
     "Pareil"
    ],
    "reponse": 1,
-   "explication": "Environ 11 tours à 50 cm contre 7,5 à 30 cm. (Question non notée dans l'épreuve : elle prépare la suivante.)"
+   "explication": "Environ 11 tours à 50 cm contre 7,5 à 30 cm. (À l'épreuve, cette question n'était pas notée.)"
   },
   {
    "id": "ceb-2016-l7-q4b",

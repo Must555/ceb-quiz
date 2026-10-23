@@ -1803,7 +1803,7 @@
     "Ils fondront à la même vitesse"
    ],
    "reponse": 0,
-   "explication": "La laine isole : elle freine l'arrivée de la chaleur de la pièce vers le glaçon. (Question non notée dans l'épreuve : elle prépare la suivante.)",
+   "explication": "La laine isole : elle freine l'arrivée de la chaleur de la pièce vers le glaçon. (À l'épreuve, cette question n'était pas notée.)",
    "remarque": "Question non cotée à l'épreuve : c'est ton avis avant l'expérience, vérifié ensuite."
   },
   {
@@ -6153,11 +6153,11 @@
    "numero": "1",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Complète par l'unité qui convient.",
+   "enonce": "Complète le texte par l'unité qui convient.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
-   "texte": "pommes de terre 5 {1}  ·  citrons 500 {2}  ·  rôti 1,250 {3}  ·  lessive 3,5 {4}  ·  cadre 25 {5}  ·  canette 33 {6} à 60 {7}  ·  attente 15 {8}",
+   "texte": "Hier, j'ai accompagné ma grand-mère au supermarché. Nous avons acheté :\n– un sac de pommes de terre de 5 {1}\n– un filet de citrons de 500 {2}\n– un rôti de bœuf de 1,250 {3}\n– un bidon de lessive liquide de 3,5 {4}.\nNous avons admiré un cadre au prix de 25 {5} mais nous ne l'avons pas acheté.\nAu rayon boissons, nous avons choisi une canette de limonade de 33 {6} qui coutait 60 {7}.\nArrivées à la caisse, nous avons attendu 15 {8} car une cliente avait oublié son portefeuille !",
    "reponse": [
     [
      "kg",
