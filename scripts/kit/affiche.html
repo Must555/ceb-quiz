@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr-BE">
+<head>
+<meta charset="utf-8">
+<title>Mission CEB — affiche A4</title>
+<!-- Source de assets/kit/affiche-mission-ceb.pdf (rendu : node scripts/kit/rendre.mjs). Pensée pour une imprimante couleur ou noir et blanc. -->
+<link rel="stylesheet" href="../../css/polices.css">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 210mm; height: 297mm; font-family: 'Atkinson Hyperlegible', sans-serif; color: #10245e; background: #fff; }
+  .page { height: 297mm; padding: 16mm 16mm 12mm; display: flex; flex-direction: column; border: 3mm solid #10245e; }
+  .marque { display: flex; align-items: center; gap: 4mm; font: 800 9mm/1 'Baloo 2', sans-serif; }
+  .marque img { width: 16mm; height: 16mm; border-radius: 4mm; }
+  h1 { font: 800 21mm/0.95 'Baloo 2', sans-serif; margin: 12mm 0 6mm; letter-spacing: -0.3mm; }
+  h1 em { font-style: normal; background: linear-gradient(transparent 60%, #f6c445 60%, #f6c445 86%, transparent 86%); }
+  .intro { font-size: 6.2mm; line-height: 1.4; margin: 0 0 8mm; color: #1d2b55; }
+  ul { list-style: none; padding: 0; margin: 0 0 8mm; display: grid; gap: 4mm; }
+  li { font-size: 6mm; display: flex; gap: 4mm; align-items: baseline; }
+  li b { flex: none; display: inline-grid; place-items: center; width: 8mm; height: 8mm; border-radius: 50%; background: #10245e; color: #fff; font-size: 4.6mm; }
+  .bas { margin-top: auto; display: flex; align-items: center; gap: 10mm; border-top: 0.6mm dashed #10245e; padding-top: 9mm; }
+  .bas img.qr { width: 62mm; height: 62mm; }
+  .bas p { margin: 0; font-size: 6mm; line-height: 1.35; }
+  .url { display: block; font: 800 12mm/1.1 'Baloo 2', sans-serif; margin-top: 3mm; }
+  .garanties { font-size: 4.6mm; color: #3a4a78; margin-top: 4mm; }
+  .fusee { position: absolute; right: 18mm; top: 34mm; width: 46mm; opacity: .95; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="marque"><img src="../../assets/icones/logo-128.png" alt="">Mission CEB</div>
+  <img class="fusee" src="../../assets/icones/fusee-400.webp" alt="">
+  <h1>Prépare<br>ton CEB<br>comme une <em>mission</em>.</h1>
+  <p class="intro">Pour s'entraîner au CEB en classe ou à la maison, sur tablette, ordinateur ou téléphone.</p>
+  <ul>
+    <li><b>1</b><span>Les <strong>vrais examens du CEB</strong> de 2015 à 2026, livret par livret.</span></li>
+    <li><b>2</b><span>Des <strong>questions toujours nouvelles</strong>, corrigées tout de suite.</span></li>
+    <li><b>3</b><span>Une <strong>fiche</strong> pour revoir chaque règle après une erreur.</span></li>
+    <li><b>4</b><span>Aligné sur le <strong>tronc commun</strong>, comme le CEB 2027.</span></li>
+  </ul>
+  <div class="bas">
+    <img class="qr" src="../../assets/kit/qr-missionceb.svg" alt="QR code vers missionceb.be">
+    <p>Scanne le code ou tape l'adresse :<span class="url">missionceb.be</span><span class="garanties">Gratuit · Sans compte · Sans publicité</span></p>
+  </div>
+</div>
+</body>
+</html>
