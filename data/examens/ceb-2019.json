@@ -1603,7 +1603,19 @@
      "12"
     ]
    ],
-   "explication": "Solide A (pyramide à base carrée) : 5 faces, 5 sommets, 8 arêtes. Solide B (tronc de pyramide) : 6 faces, 8 sommets, 12 arêtes."
+   "explication": "Solide A (pyramide à base carrée) : 5 faces, 5 sommets, 8 arêtes. Solide B (tronc de pyramide) : 6 faces, 8 sommets, 12 arêtes.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l3-q6a",
@@ -1779,7 +1791,8 @@
      "trapèzes rectangles"
     ]
    ],
-   "explication": "Le vitrage est fait de trapèzes (rectangles) et de rectangles."
+   "explication": "Le vitrage est fait de trapèzes (rectangles) et de rectangles.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2019-l3-q10b",
@@ -2244,7 +2257,21 @@
      "38"
     ]
    ],
-   "explication": "Pour 37,46, les entiers qui l'encadrent sont 37 et 38."
+   "explication": "Pour 37,46, les entiers qui l'encadrent sont 37 et 38.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l4-q9",
@@ -2800,22 +2827,18 @@
    "numero": "7",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Observe l'exemple du livret (page 6) : on a décomposé le nombre 18 en parts égales. Complète chaque case du tableau suivant selon le même principe ; les lignes sont repérées par les lettres A à F (de haut en bas) : écris le nombre qui complète les cases de chaque ligne.",
+   "enonce": "Observe l'exemple du livret (page 6) : on a décomposé le nombre 18 en parts égales. Complète le tableau suivant selon le même principe (la ligne B est donnée : 4,8 dans l'une de ses deux cases). Les lignes sont repérées par les lettres A à F : écris le nombre qui va dans chaque case de la ligne.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "documents": [
     "liv4-p06"
    ],
-   "texte": "Ligne A : {1}\nLigne B : {2}\nLigne C : {3}\nLigne D : {4}\nLigne E : {5}\nLigne F : {6}",
+   "texte": "Ligne A : {1}\nLigne C : {2}\nLigne D : {3}\nLigne E : {4}\nLigne F : {5}",
    "reponse": [
     [
      "9,6",
      "9.6"
-    ],
-    [
-     "4,8",
-     "4.8"
     ],
     [
      "2,4",
@@ -2834,7 +2857,7 @@
      "9.6"
     ]
    ],
-   "explication": "Chaque ligne partage 9,6 en parts égales : 9,6 ; 2 × 4,8 ; 4 × 2,4 ; 6 × 1,6 ; 8 × 1,2 ; 9,6."
+   "explication": "La ligne B montre deux parts de 4,8 : le nombre de départ est 9,6. Puis 4 × 2,4 ; 6 × 1,6 ; 8 × 1,2 ; et 9,6 en entier sur la dernière ligne."
   },
   {
    "id": "ceb-2019-l4-q8",
@@ -2911,7 +2934,19 @@
      "1"
     ]
    ],
-   "explication": "Chaque case est la somme des deux cases situées en dessous : 10 = 7 + 3 ; 7 = 3,8 + 3,2 ; 3 = 1,7 + 1,3 ; 3,8 = 2 + 1,8 ; 3,2 = 1,2 + 2 ; 1,7 = 0,7 + 1 ; 1,3 = 0,3 + 1."
+   "explication": "Chaque case est la somme des deux cases situées en dessous : 10 = 7 + 3 ; 7 = 3,8 + 3,2 ; 3 = 1,7 + 1,3 ; 3,8 = 2 + 1,8 ; 3,2 = 1,2 + 2 ; 1,7 = 0,7 + 1 ; 1,3 = 0,3 + 1.",
+   "groupes": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5,
+     6
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l4-q21",
@@ -2986,7 +3021,29 @@
      "0.21"
     ]
    ],
-   "explication": "Comme 0,7 × 6 = 4,2, la case A est 6. Colonne 3 : 21, 210, 2,1 ; colonne 6 : 42, 420, 4,2 ; colonne 9 : 63, 630, 6,3 ; colonne 0,3 : 2,1, 21, 0,21."
+   "explication": "Comme 0,7 × 6 = 4,2, la case A est 6. Colonne 3 : 21, 210, 2,1 ; colonne 6 : 42, 420, 4,2 ; colonne 9 : 63, 630, 6,3 ; colonne 0,3 : 2,1, 21, 0,21.",
+   "groupes": [
+    [
+     1,
+     5,
+     9
+    ],
+    [
+     0,
+     2,
+     6
+    ],
+    [
+     3,
+     7,
+     10
+    ],
+    [
+     4,
+     8,
+     11
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l5-q1b",
@@ -3052,7 +3109,21 @@
      "vue"
     ]
    ],
-   "explication": "Gustatif / goût ; olfactif / odorat ; visuel / vue."
+   "explication": "Gustatif / goût ; olfactif / odorat ; visuel / vue.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l5-q3a",
@@ -3540,7 +3611,8 @@
     3,
     4
    ],
-   "explication": "Les graines sont dispersées (A), elles germent (B), la plante croit (C), puis fleurit (D) ; après la pollinisation et la fécondation (E), les fruits et les graines se forment (F)."
+   "explication": "Les graines sont dispersées (A), elles germent (B), la plante croit (C), puis fleurit (D) ; après la pollinisation et la fécondation (E), les fruits et les graines se forment (F).",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2019-l5-q2c",
@@ -3939,7 +4011,8 @@
      "Enfin, pour conclure..."
     ]
    ],
-   "explication": "Oui : la réponse se trouve dans la dernière partie du texte, sous l'intertitre « Enfin, pour conclure… »."
+   "explication": "Oui : la réponse se trouve dans la dernière partie du texte, sous l'intertitre « Enfin, pour conclure… ».",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2019-l6-q3",
@@ -4240,7 +4313,17 @@
      "imparfait indicatif"
     ]
    ],
-   "explication": "se battre au passé composé ; toucher à l'imparfait. Il faut écrire l'infinitif complet : « se battre »."
+   "explication": "se battre au passé composé ; toucher à l'imparfait. Il faut écrire l'infinitif complet : « se battre ».",
+   "groupes": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l6-q15",
@@ -5900,7 +5983,21 @@
      "indice n°3"
     ]
    ],
-   "explication": "1. Vrai : « sorti le dix-neuf aout 1914 » (indice 5). 2. Faux : la signature est remplacée par celle de deux témoins (indice 2). 3. Vrai : le cachet « Puits Ste-Barbe » (indice 3)."
+   "explication": "1. Vrai : « sorti le dix-neuf aout 1914 » (indice 5). 2. Faux : la signature est remplacée par celle de deux témoins (indice 2). 3. Vrai : le cachet « Puits Ste-Barbe » (indice 3).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2019-l9-q13b",
@@ -6197,7 +6294,8 @@
     1,
     0
    ],
-   "explication": "L'enfant descend à 6 h et remonte à 17 h : 11 heures dans la mine. Il dort de 21 h à 4 h (7 h), Lucie de 21 h à 7 h 15 (10 h 15). La pause de midi de Lucie dure 1 h 30, celle de l'enfant 1 h."
+   "explication": "L'enfant descend à 6 h et remonte à 17 h : 11 heures dans la mine. Il dort de 21 h à 4 h (7 h), Lucie de 21 h à 7 h 15 (10 h 15). La pause de midi de Lucie dure 1 h 30, celle de l'enfant 1 h.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2019-l9-q13a",
@@ -6262,7 +6360,8 @@
     3,
     0
    ],
-   "explication": "À partir de l'Est, dans le sens des aiguilles d'une montre, on trouve le Sud (étiquette 1), l'Ouest (étiquette 2) puis le Nord (étiquette 3)."
+   "explication": "À partir de l'Est, dans le sens des aiguilles d'une montre, on trouve le Sud (étiquette 1), l'Ouest (étiquette 2) puis le Nord (étiquette 3).",
+   "toutOuRien": true
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2019), comparé question par question le 21/10/2026."

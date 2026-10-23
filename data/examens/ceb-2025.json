@@ -1114,7 +1114,17 @@
      "quatre"
     ]
    ],
-   "explication": "Une pyramide à base carrée a 8 arêtes (4 autour de la base, 4 qui montent au sommet), 5 sommets et 5 faces : 1 carré et 4 triangles."
+   "explication": "Une pyramide à base carrée a 8 arêtes (4 autour de la base, 4 qui montent au sommet), 5 sommets et 5 faces : 1 carré et 4 triangles.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l3-q2c",
@@ -1284,6 +1294,18 @@
    "explication": "Le solide n° 5 est la pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets (écrire seulement « pyramide » ne suffit pas). Le solide n° 1 est le cube : 6 faces, 12 arêtes, 8 sommets. Le solide n° 7 est le prisme droit à base triangulaire : 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets.",
    "documents": [
     "liv3-p13"
+   ],
+   "groupes": [
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     7,
+     8,
+     9
+    ]
    ]
   },
   {
@@ -1497,7 +1519,24 @@
      "900"
     ]
    ],
-   "explication": "Pour 2 personnes, on divise tout par 2. 300 g d'amandes, c'est 3 fois 100 g : 3 × 4 = 12 personnes, 3 × 3 = 9 pommes, 3 × 50 = 150 g de sucre. 450 g de sucre, c'est 9 fois 50 g : 9 × 4 = 36 personnes, 9 × 3 = 27 pommes, 9 × 100 = 900 g de beurre."
+   "explication": "Pour 2 personnes, on divise tout par 2. 300 g d'amandes, c'est 3 fois 100 g : 3 × 4 = 12 personnes, 3 × 3 = 9 pommes, 3 × 50 = 150 g de sucre. 450 g de sucre, c'est 9 fois 50 g : 9 × 4 = 36 personnes, 9 × 3 = 27 pommes, 9 × 100 = 900 g de beurre.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l4-q3a",
@@ -1523,7 +1562,13 @@
      "41"
     ]
    ],
-   "explication": "17 h 55 + 10 min = 18 h 05 : c'est la rue de la Loi. 17 h 55 + 46 min = 18 h 41."
+   "explication": "17 h 55 + 10 min = 18 h 05 : c'est la rue de la Loi. 17 h 55 + 46 min = 18 h 41.",
+   "groupes": [
+    [
+     1,
+     2
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l4-q3b",
@@ -3059,7 +3104,13 @@
      "0.18"
     ]
    ],
-   "explication": "0,64 − 0,38 = 0,26 (case A) ; 0,26 − 0,10 = 0,16 (case B) ; 0,38 − 0,08 − 0,12 = 0,18 (case C)."
+   "explication": "0,64 − 0,38 = 0,26 (case A) ; 0,26 − 0,10 = 0,16 (case B) ; 0,38 − 0,08 − 0,12 = 0,18 (case C).",
+   "groupes": [
+    [
+     0,
+     1
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l6-q2",
@@ -3286,7 +3337,20 @@
      "0,001"
     ]
    ],
-   "explication": "5 323 = 5 milliers, 3 centaines, 2 dizaines, 3 unités. 500 000 + 7 000 + 200 + 10 + 4 = 507 214. 2,065 = 2 unités, 6 centièmes (0,01), 5 millièmes (0,001)."
+   "explication": "5 323 = 5 milliers, 3 centaines, 2 dizaines, 3 unités. 500 000 + 7 000 + 200 + 10 + 4 = 507 214. 2,065 = 2 unités, 6 centièmes (0,01), 5 millièmes (0,001).",
+   "groupes": [
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     5,
+     6,
+     7
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l6-q9",
@@ -3676,7 +3740,13 @@
      "C"
     ]
    ],
-   "explication": "Les boites se suivent de 500 en 500 : A (1 à 500), B (501 à 1 000), C (1 001 à 1 500) … F (2 501 à 3 000), G (3 001 à 3 500). Le dossard 326 est dans la boite A et le 1 451 dans la boite C."
+   "explication": "Les boites se suivent de 500 en 500 : A (1 à 500), B (501 à 1 000), C (1 001 à 1 500) … F (2 501 à 3 000), G (3 001 à 3 500). Le dossard 326 est dans la boite A et le 1 451 dans la boite C.",
+   "groupes": [
+    [
+     0,
+     1
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l7-q13",
@@ -3774,7 +3844,21 @@
      "0,16"
     ]
    ],
-   "explication": "On choisit un multiple facile du diviseur : 486 = 450 + 36 (50 + 4) ; 438 = 420 + 18 (70 + 3) ; 1,76 = 1,6 + 0,16 (0,2 + 0,02)."
+   "explication": "On choisit un multiple facile du diviseur : 486 = 450 + 36 (50 + 4) ; 438 = 420 + 18 (70 + 3) ; 1,76 = 1,6 + 0,16 (0,2 + 0,02).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l7-q16",

@@ -1507,7 +1507,13 @@
     1,
     0
    ],
-   "explication": "« ne… pas » : négative ; « ? » : interrogative ; « regarde ! » : impérative."
+   "explication": "« ne… pas » : négative ; « ? » : interrogative ; « regarde ! » : impérative.",
+   "groupes": [
+    [
+     0,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l4-q16",
@@ -1945,7 +1951,8 @@
      "22"
     ]
    ],
-   "explication": "Minimum 13 °C, maximum 22 °C (Campine)."
+   "explication": "Minimum 13 °C, maximum 22 °C (Campine).",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2015-l5-q12c",
@@ -2441,7 +2448,24 @@
     1,
     5
    ],
-   "explication": "Grenouille : œufs (E), têtard (I), têtard avec pattes (B puis J) ; poule : œuf (M), poussin qui éclôt (L), poussin (F), poule (G) ; papillon : œuf (A), chenille (C), chrysalide (H), papillon (D)."
+   "explication": "Grenouille : œufs (E), têtard (I), têtard avec pattes (B puis J) ; poule : œuf (M), poussin qui éclôt (L), poussin (F), poule (G) ; papillon : œuf (A), chenille (C), chrysalide (H), papillon (D).",
+   "groupes": [
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l5-q20",
@@ -2883,7 +2907,27 @@
     2,
     3
    ],
-   "explication": "Toutes deux en province de Liège et en Région wallonne ; Malmedy est francophone, Eupen germanophone."
+   "explication": "Toutes deux en province de Liège et en Région wallonne ; Malmedy est francophone, Eupen germanophone.",
+   "groupes": [
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "pointsGroupes": [
+    1,
+    0.5,
+    0.5,
+    1
+   ]
   },
   {
    "id": "ceb-2015-l6-q13b",
@@ -3000,7 +3044,17 @@
      "17 janvier"
     ]
    ],
-   "explication": "Lecture du document Mons 2015."
+   "explication": "Lecture du document Mons 2015.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l6-q15b",
@@ -3175,7 +3229,27 @@
     1,
     2
    ],
-   "explication": "Le document A date du début du 20e siècle : sous 1900. Le document B date du début du 21e siècle : sous 2000."
+   "explication": "Le document A date du début du 20e siècle : sous 1900. Le document B date du début du 21e siècle : sous 2000.",
+   "groupes": [
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ]
+   ],
+   "pointsGroupes": [
+    0,
+    0.5,
+    0.5,
+    0
+   ]
   },
   {
    "id": "ceb-2015-l6-q12b",
@@ -5311,7 +5385,8 @@
      "1 239"
     ]
    ],
-   "explication": "380 − 121 = 259 ; 259 + 600 = 859 ; 380 + 859 = 1 239."
+   "explication": "380 − 121 = 259 ; 259 + 600 = 859 ; 380 + 859 = 1 239.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2015-l7-q15a",
@@ -5493,7 +5568,8 @@
      "10"
     ]
    ],
-   "explication": "4 870 ÷ 487 = 10, et 10 − 7 = 3 : 3 + 7 = 10 puis 10 × 487 = 4 870."
+   "explication": "4 870 ÷ 487 = 10, et 10 − 7 = 3 : 3 + 7 = 10 puis 10 × 487 = 4 870.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2015-l7-q14",
@@ -6417,7 +6493,30 @@
     ]
    ],
    "explication": "avons vu : passé composé, 1re personne du pluriel, voir ; communiquaient : imparfait, 3e personne du pluriel, communiquer ; « songe » est ici à l'impératif présent (c'est un ordre), 2e personne du singulier, songer ; lève : présent de l'indicatif, 3e personne du singulier, lever.",
-   "souple": true
+   "souple": true,
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8,
+     9
+    ],
+    [
+     10,
+     11,
+     12
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l9-q20",

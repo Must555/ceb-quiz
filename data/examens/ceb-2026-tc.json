@@ -1559,7 +1559,19 @@
         1,
         0
       ],
-      "explication": "Le prisme droit a deux bases triangulaires parallèles et superposables, et ses faces latérales sont perpendiculaires aux bases. La pyramide n'a qu'une base ; ses faces latérales sont inclinées (ni parallèles, ni perpendiculaires à la base), mais ses 4 triangles sont superposables : elle a des faces isométriques."
+      "explication": "Le prisme droit a deux bases triangulaires parallèles et superposables, et ses faces latérales sont perpendiculaires aux bases. La pyramide n'a qu'une base ; ses faces latérales sont inclinées (ni parallèles, ni perpendiculaires à la base), mais ses 4 triangles sont superposables : elle a des faces isométriques.",
+      "groupes": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ]
     },
     {
       "id": "ceb-2026-tc-l3-q20",
@@ -1705,7 +1717,24 @@
       ],
       "explication": "150 m : longueur (ou distance), 150, mètre. 30 min : durée (ou temps), 30, minute. 3,5 t : masse, 3,5, tonne. Attention : le poids d'un camion se mesure en masse.",
       "texte": "Panneau STOP 150 m\ngrandeur : {1}\nmesure : {2}\nunité : {3}\n\nPanneau P 30 MIN.\ngrandeur : {4}\nmesure : {5}\nunité : {6}\n\nPanneau 3,5 t max\ngrandeur : {7}\nmesure : {8}\nunité : {9}",
-      "souple": true
+      "souple": true,
+      "groupes": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ]
     },
     {
       "id": "ceb-2026-tc-l4-q2",
@@ -2212,7 +2241,8 @@
         ]
       ],
       "souple": true,
-      "explication": "Les parties grisées additionnées donnent 6/8. On simplifie en divisant le numérateur et le dénominateur par 2 : 3/4. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat."
+      "explication": "Les parties grisées additionnées donnent 6/8. On simplifie en divisant le numérateur et le dénominateur par 2 : 3/4. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat.",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l4-q19b",
@@ -2259,7 +2289,8 @@
         ]
       ],
       "souple": true,
-      "explication": "Les parties grisées additionnées donnent 8/12. On simplifie : 4/6, ou 2/3 en simplifiant au maximum. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat."
+      "explication": "Les parties grisées additionnées donnent 8/12. On simplifie : 4/6, ou 2/3 en simplifiant au maximum. On accepte toute fraction équivalente pour le résultat, mais la fraction simplifiée doit avoir un dénominateur plus petit que celui du résultat.",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l4-q20",
@@ -2323,7 +2354,8 @@
         ]
       ],
       "souple": true,
-      "explication": "La partie grisée occupe 7 colonnes sur 10 : 7/10 = 0,7 = 70 %."
+      "explication": "La partie grisée occupe 7 colonnes sur 10 : 7/10 = 0,7 = 70 %.",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l4-q22b",
@@ -2351,7 +2383,8 @@
         ]
       ],
       "souple": true,
-      "explication": "Le grand carré compte 100 petits carreaux. 2 lignes entières de 10 carreaux et 3 carreaux de la ligne suivante sont grisés : 23 carreaux sur 100 = 0,23 = 23 %."
+      "explication": "Le grand carré compte 100 petits carreaux. 2 lignes entières de 10 carreaux et 3 carreaux de la ligne suivante sont grisés : 23 carreaux sur 100 = 0,23 = 23 %.",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l4-q23a",
@@ -4430,7 +4463,8 @@
           3
         ]
       ],
-      "explication": "Case 1 : un jeu qui se joue seul et en ligne : A ou E. Case 2 : seul et hors ligne : C ou F. Case 3 : à plusieurs et en ligne : B. Case 4 : à plusieurs et hors ligne : D."
+      "explication": "Case 1 : un jeu qui se joue seul et en ligne : A ou E. Case 2 : seul et hors ligne : C ou F. Case 3 : à plusieurs et en ligne : B. Case 4 : à plusieurs et hors ligne : D.",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l8-qD2",
@@ -4606,7 +4640,8 @@
           3
         ]
       ],
-      "explication": "Préfixe 0422 : Tom et Carine ; Carine finit par un chiffre impair (71), donc Tom a 87 17 46. Mehdi : 7 + 3 = 10 → 0414. Léa : 0431 / 71 12 78 (deux fois le 7)."
+      "explication": "Préfixe 0422 : Tom et Carine ; Carine finit par un chiffre impair (71), donc Tom a 87 17 46. Mehdi : 7 + 3 = 10 → 0414. Léa : 0431 / 71 12 78 (deux fois le 7).",
+      "toutOuRien": true
     },
     {
       "id": "ceb-2026-tc-l9-q1a",
