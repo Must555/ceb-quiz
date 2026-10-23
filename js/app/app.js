@@ -1481,7 +1481,7 @@ function afficherParents(retour) {
     </header>
     <section class="carte p-rebours">
       <div><small class="sur">CEB ${CEB.annee}</small><b>${jRestants ? `J − ${jRestants}` : 'C\'est parti !'}</b></div>
-      <p>${jRestants ? `Encore <b>${jRestants} jours</b> (environ ${Math.floor(jRestants / 7)} semaines) avant le lundi 21 juin ${CEB.annee}.` : 'Le CEB a commencé ou est terminé.'} Épreuves le matin : ${CEB.jours.map((d) => `${d.jour} (${d.matiere.toLowerCase()})`).join(', ')}.</p>
+      <p>${jRestants ? `Encore <b>${jRestants} jours</b> (environ ${Math.floor(jRestants / 7)} semaines) avant le ${CEB.jours[0].jour.toLowerCase()} ${CEB.annee}.` : 'Le CEB a commencé ou est terminé.'} Épreuves le matin : ${CEB.jours.map((d) => `${d.jour} (${d.matiere.toLowerCase()})`).join(', ')}.</p>
     </section>
     ${joueurs.length > 1 ? `<div class="p-enfants no-print" role="tablist" aria-label="Enfant">${onglets}</div>` : ''}
     ${enfant ? blocsEnfant(enfant, reglages) : '<section class="carte"><p>Aucun joueur sur cet appareil pour l\'instant. Le bilan apparaîtra dès que votre enfant aura créé son joueur et joué une première partie.</p></section>'}
