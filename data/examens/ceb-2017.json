@@ -3331,7 +3331,7 @@
    "domaine": "sc.matiere",
    "type": "numerique",
    "enonce": "Si on continue à chauffer l'eau qui bout pendant 5 minutes, quelle sera sa température (°C) ?",
-   "points": 1,
+   "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "reponse": 100,

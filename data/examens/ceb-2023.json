@@ -2994,6 +2994,22 @@
    "explication": "10 h 30 + 1 h = 11 h 30. 14 h + 2 h 30 = 16 h 30."
   },
   {
+   "id": "ceb-2023-l6-q2b-pique",
+   "livret": 6,
+   "numero": "2b (piquenique)",
+   "domaine": "ma.grandeurs",
+   "type": "ouverte",
+   "enonce": "Dans l'agenda du mercredi 16 aout (livret, page 4), colorie la case qui désigne la durée du piquenique (de 13h à 14h).",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "ma-durees",
+   "documents": [
+    "geocaching"
+   ],
+   "numerisable": false,
+   "reponseModele": "La case de 13 h à 14 h est coloriée."
+  },
+  {
    "id": "ceb-2023-l6-q3a",
    "livret": 6,
    "numero": "3a",
@@ -4039,7 +4055,7 @@
    "domaine": "fr.lire",
    "type": "qcm",
    "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Qui est « Je » ?",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-accords",
    "choix": [
@@ -4056,14 +4072,14 @@
    "domaine": "fr.orthographe",
    "type": "texte_court",
    "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Recopie le mot qui montre que « Je » est une fille.",
-   "points": 1,
+   "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
    "reponse": [
     "retournée"
    ],
    "souple": false,
-   "explication": "Avec l'auxiliaire être, le participe passé « retournée » s'accorde avec le sujet féminin."
+   "explication": "Avec l'auxiliaire être, le participe passé « retournée » s'accorde avec le sujet féminin. (Dans l'épreuve, la case cochée et ce mot comptent ensemble 1 point, tout ou rien.)"
   },
   {
    "id": "ceb-2023-l7-q20",

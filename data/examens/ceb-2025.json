@@ -430,6 +430,15 @@
    "alt": "Quadrillage d'un terrain de football (colonnes A à N, lignes 1 à 9) avec les joueurs X1 à X4, Y1 à Y4 et un ballon, puis deux séries de flèches de déplacement pour les joueurs X3 et Y4."
   },
   {
+   "id": "liv3-p13",
+   "source": "livret",
+   "livret": 3,
+   "page": 13,
+   "titre": "Sept solides numérotés",
+   "fichier": "assets/2025/liv3-p13.webp",
+   "alt": "Sept solides transparents numérotés : 1 un cube, 2 un cylindre, 3 un parallélépipède rectangle, 4 une sphère, 5 une pyramide à base carrée, 6 un cône, 7 un prisme droit à base triangulaire."
+  },
+  {
    "id": "liv3-p17",
    "source": "livret",
    "livret": 3,
@@ -1171,7 +1180,7 @@
    "domaine": "ma.geometrie",
    "type": "ouverte",
    "enonce": "Reproduis la composition en respectant l'agrandissement du quadrillage.",
-   "points": 2,
+   "points": 1,
    "corrigeVerifie": false,
    "numerisable": false
   },
@@ -1229,12 +1238,15 @@
    "numero": "9",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Complète les propriétés et le nom précis de ces solides (exemple : le parallélépipède rectangle a 6 faces, 12 arêtes, 8 sommets).",
-   "points": 4,
+   "enonce": "Observe les solides numérotés (livret, page 13) et complète le tableau (exemple : le solide n° 3, le parallélépipède rectangle, a 6 faces, 12 arêtes et 8 sommets).",
+   "points": 6,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
-   "texte": "Solide à 5 faces, 8 arêtes et 5 sommets\nnom précis : {1}\n\nSolide dont les 6 faces sont des carrés\nfaces : {2}\narêtes : {3}\nsommets : {4}\nnom précis : {5}\n\nPrisme droit à base triangulaire\nfaces : {6}\narêtes : {7}\nsommets : {8}",
+   "texte": "Solide à 5 faces, 8 arêtes et 5 sommets\nnuméro du solide : {1}\nnom précis : {2}\n\nSolide n° 1\nfaces : {3}\narêtes : {4}\nsommets : {5}\nnom précis : {6}\n\nPrisme droit à base triangulaire\nnuméro du solide : {7}\nfaces : {8}\narêtes : {9}\nsommets : {10}",
    "reponse": [
+    [
+     "5"
+    ],
     [
      "pyramide à base carrée",
      "pyramide a base carree",
@@ -1257,6 +1269,9 @@
      "le cube"
     ],
     [
+     "7"
+    ],
+    [
      "5"
     ],
     [
@@ -1266,8 +1281,10 @@
      "6"
     ]
    ],
-   "explication": "5 faces, 8 arêtes, 5 sommets : la pyramide à base carrée (écrire seulement « pyramide » ne suffit pas). Le cube a 6 faces, 12 arêtes, 8 sommets. Le prisme droit à base triangulaire a 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets.",
-   "remarque": "Dans l'épreuve (6 pts), il fallait aussi écrire le numéro de deux solides (5 et 7) sur un dessin du livret absent de nos images : ces 2 cases ne sont pas reprises."
+   "explication": "Le solide n° 5 est la pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets (écrire seulement « pyramide » ne suffit pas). Le solide n° 1 est le cube : 6 faces, 12 arêtes, 8 sommets. Le solide n° 7 est le prisme droit à base triangulaire : 2 triangles + 3 rectangles = 5 faces, 9 arêtes et 6 sommets.",
+   "documents": [
+    "liv3-p13"
+   ]
   },
   {
    "id": "ceb-2025-l3-q10",
@@ -2709,6 +2726,19 @@
    "explication": "La Suisse n'est pas membre de l'Union européenne."
   },
   {
+   "id": "ceb-2025-l5-q6f1",
+   "livret": 5,
+   "numero": "6f (ligne du temps des années)",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Sur la ligne du temps graduée de 1940 à 2020, trace un trait pour indiquer l'année 1958.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-siecles",
+   "numerisable": false,
+   "reponseModele": "Un trait placé sur 1958, entre 1950 et 1960."
+  },
+  {
    "id": "ceb-2025-l5-q6f",
    "livret": 5,
    "numero": "6f",
@@ -2725,7 +2755,7 @@
     "21e siècle"
    ],
    "reponse": 2,
-   "explication": "Le 20e siècle va de 1901 à 2000. Dans l'épreuve, il fallait placer 1958 sur deux lignes du temps (années et siècles)."
+   "explication": "Le 20e siècle va de 1901 à 2000."
   },
   {
    "id": "ceb-2025-l5-q6g",
