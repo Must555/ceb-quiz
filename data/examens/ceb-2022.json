@@ -1151,7 +1151,17 @@
      "4"
     ]
    ],
-   "explication": "Le cube a 6 faces carrées. Le prisme hexagonal : 2 bases hexagonales et 6 faces latérales rectangulaires. La pyramide : 1 base carrée et 4 triangles."
+   "explication": "Le cube a 6 faces carrées. Le prisme hexagonal : 2 bases hexagonales et 6 faces latérales rectangulaires. La pyramide : 1 base carrée et 4 triangles.",
+   "groupes": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l3-q4p",
@@ -1262,7 +1272,29 @@
     2,
     3
    ],
-   "explication": "Martin et Emma (vignettes 2 et 6) sont à gauche de l'allée ; Léo, Amin et Lucie (vignettes 1, 4 et 7) sont à droite, côté allée ; Nassim et Julien (vignettes 8 et 9) jouent aux cartes. Les vignettes 3 et 5 restent vides."
+   "explication": "Martin et Emma (vignettes 2 et 6) sont à gauche de l'allée ; Léo, Amin et Lucie (vignettes 1, 4 et 7) sont à droite, côté allée ; Nassim et Julien (vignettes 8 et 9) jouent aux cartes. Les vignettes 3 et 5 restent vides.",
+   "groupes": [
+    [
+     1,
+     5
+    ],
+    [
+     0,
+     3,
+     6
+    ],
+    [
+     7,
+     8
+    ]
+   ],
+   "pointsGroupes": [
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
   },
   {
    "id": "ceb-2022-l3-q2",
@@ -2019,7 +2051,8 @@
      "des avantages"
     ]
    ],
-   "explication": "Le pouce vers le bas annonce les inconvénients, le pouce vers le haut les avantages."
+   "explication": "Le pouce vers le bas annonce les inconvénients, le pouce vers le haut les avantages.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2022-l4-q19",
@@ -2450,7 +2483,8 @@
     "Asie",
     "Europe",
     "Océanie"
-   ]
+   ],
+   "toutOuRien": true
   },
   {
    "id": "ceb-2022-l5-q9a2",
@@ -2885,7 +2919,8 @@
      "2022"
     ]
    ],
-   "explication": "La cérémonie de clôture est le samedi 30 juillet 2022."
+   "explication": "La cérémonie de clôture est le samedi 30 juillet 2022.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2022-l5-q11",
@@ -4307,7 +4342,18 @@
      "0,1"
     ]
    ],
-   "explication": "21 × 3 = 63 = 7 × 9. 458,901 : 5 dizaines, 8 unités, 1 millième. 795,2 = 790 + 5,2. Pour 458,901, le corrigé accepte aussi (0,001 × 1) … (1 × 8)."
+   "explication": "21 × 3 = 63 = 7 × 9. 458,901 : 5 dizaines, 8 unités, 1 millième. 795,2 = 790 + 5,2. Pour 458,901, le corrigé accepte aussi (0,001 × 1) … (1 × 8).",
+   "groupes": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l8-q4a",
@@ -4662,7 +4708,21 @@
      "0,08"
     ]
    ],
-   "explication": "Quand un facteur est multiplié par 10, l'autre est divisé par 10."
+   "explication": "Quand un facteur est multiplié par 10, l'autre est divisé par 10.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l8-q19",
@@ -4847,7 +4907,14 @@
      "42"
     ]
    ],
-   "explication": "42 = 38 + 4 ; 38 = 7,6 + 30,4 ; 30,4 = 28,2 + 2,2 ; 0,7 = 0,01 + 0,69 ; 3,3 = 1,8 + 1,5 ; la somme de toutes les cases de droite est 42."
+   "explication": "42 = 38 + 4 ; 38 = 7,6 + 30,4 ; 30,4 = 28,2 + 2,2 ; 0,7 = 0,01 + 0,69 ; 3,3 = 1,8 + 1,5 ; la somme de toutes les cases de droite est 42.",
+   "groupes": [
+    [
+     2,
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l8-q18",
@@ -4897,7 +4964,17 @@
      "2 250"
     ]
    ],
-   "explication": "Sur la première droite, le pas est de 0,01 : 17,99 puis 18. Sur la seconde, le pas est de 125 : 1 875 et 2 250."
+   "explication": "Sur la première droite, le pas est de 0,01 : 17,99 puis 18. Sur la seconde, le pas est de 125 : 1 875 et 2 250.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l8-q21",
@@ -4997,7 +5074,24 @@
      "bronchite"
     ]
    ],
-   "explication": "Le cœur et les artères font circuler le sang (infarctus) ; l'estomac et le suc gastrique digèrent (indigestion) ; les poumons captent l'oxygène (bronchite)."
+   "explication": "Le cœur et les artères font circuler le sang (infarctus) ; l'estomac et le suc gastrique digèrent (indigestion) ; les poumons captent l'oxygène (bronchite).",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l9-q2b",
@@ -5556,7 +5650,8 @@
     0,
     1
    ],
-   "explication": "La photo 1 montre des coques (C), la photo 2 un oursin (A) et la photo 3 une troque (B)."
+   "explication": "La photo 1 montre des coques (C), la photo 2 un oursin (A) et la photo 3 une troque (B).",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2022-l9-q5",
@@ -5599,7 +5694,23 @@
      "G"
     ]
    ],
-   "explication": "Roussette : œuf (J), juvénile (H), adulte (A). Cormoran : œufs (E), poussins (F), juvénile (B), adulte (I). Crevette : œufs (K), nauplius (G), mysis (D), crevette (C)."
+   "explication": "Roussette : œuf (J), juvénile (H), adulte (A). Cormoran : œufs (E), poussins (F), juvénile (B), adulte (I). Crevette : œufs (K), nauplius (G), mysis (D), crevette (C).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     5,
+     6,
+     7
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l9-q6a",
