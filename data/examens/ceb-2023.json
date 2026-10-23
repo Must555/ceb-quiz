@@ -209,6 +209,14 @@
    "alt": "Carte : Bruxelles (1), Cointe (2), Chaudfontaine (3), Mageroy (4) près d'Arlon, Vieuxville (5) ; provinces de Namur, Liège et Luxembourg."
   },
   {
+   "id": "caches-double",
+   "page": 18,
+   "pageFin": 19,
+   "titre": "Des caches en Wallonie",
+   "fichier": "assets/2023/pdf18-19.webp",
+   "alt": "Carte : Hainaut, Brabant wallon, caches de Braine-le-Château (8), Waterloo (7), Spiennes (6) ; Carte : Bruxelles (1), Cointe (2), Chaudfontaine (3), Mageroy (4) près d'Arlon, Vieuxville (5) ; provinces de Namur, Liège et Luxembourg."
+  },
+  {
    "id": "tresors-1",
    "page": 20,
    "titre": "Les trésors (1 à 3)",
@@ -2082,8 +2090,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
-    "caches-1",
-    "caches-2"
+    "caches-double"
    ],
    "lignes": [
     "La province de Liège se trouve … de la province de Hainaut.",
@@ -2114,7 +2121,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-cours-eau",
    "documents": [
-    "caches-2"
+    "caches-double"
    ],
    "texte": "De la cache n°5 (Vieuxville) à la cache n°2 (Cointe, Liège), ils suivent l'{1}.  ·  De Liège à Namur, ils suivent la {2}.",
    "reponse": [
@@ -2348,7 +2355,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-provinces",
    "documents": [
-    "caches-2"
+    "caches-double"
    ],
    "reponse": [
     "Liège",

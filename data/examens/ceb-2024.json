@@ -196,6 +196,14 @@
    "alt": "Carte de l'Europe de l'Est, de l'Asie et de l'Océanie avec les années des J.O."
   },
   {
+   "id": "attributions-double",
+   "page": 16,
+   "pageFin": 17,
+   "titre": "Attributions des J.O. d'été",
+   "fichier": "assets/2024/pdf16-17.webp",
+   "alt": "Carte des Amériques et de l'Europe de l'Ouest avec les années des J.O ; Carte de l'Europe de l'Est, de l'Asie et de l'Océanie avec les années des J.O."
+  },
+  {
    "id": "migrations",
    "page": 18,
    "titre": "Trajets migratoires d'oiseaux",
@@ -2358,8 +2366,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "attributions-1",
-    "attributions-2"
+    "attributions-double"
    ],
    "texte": "Le continent où les J.O. ont été le plus souvent organisés : {1}.\nUn continent qui les a accueillis plus de deux fois : {2}.",
    "reponse": [
@@ -2393,8 +2400,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "attributions-1",
-    "attributions-2"
+    "attributions-double"
    ],
    "reponseModele": "Aucun J.O. d'été n'a été organisé en Afrique (ni en Antarctique)."
   },
