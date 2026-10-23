@@ -1,6 +1,6 @@
 // Affichage d'une question et lecture de la réponse de l'enfant, pour les 10 types.
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const LETTRES = 'ABCDEFGH';
+const LETTRES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 // Renvoie le HTML de la zone de réponse.
 export function rendreSaisie(q) {
@@ -23,7 +23,7 @@ export function rendreSaisie(q) {
     }
     case 'grille':
       return `<div class="grille-rep">${q.lignes.map((l, i) => `
-        <div class="grille-ligne"><p>${esc(l)}</p><div class="grille-opts">${q.colonnes.map((c, k) =>
+        <div class="grille-ligne"><p>${esc(l)}</p><div class="grille-opts">${(q.colonnesParLigne?.[i] ?? q.colonnes).map((c, k) =>
           `<button class="opt" data-l="${i}" data-c="${k}">${esc(c)}</button>`).join('')}</div></div>`).join('')}</div>`;
     case 'ordre':
       return `<p class="consigne">Touche les éléments dans le bon ordre</p>

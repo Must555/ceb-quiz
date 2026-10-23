@@ -8,7 +8,7 @@ import { esc } from './question-ui.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-const LETTRES = 'ABCDEFGHIJ';
+const LETTRES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const case_ = '<span class="case" aria-hidden="true"></span>';
 
 let donnees = null;
@@ -33,6 +33,7 @@ function zoneReponse(q) {
     case 'trous':
       return `<p class="trous">${esc(q.texte ?? '').replace(/\{\d+\}/g, '<span class="trou"></span>').replace(/\n/g, '<br>')}</p>`;
     case 'grille':
+      if (q.colonnesParLigne) return `<ul class="choix">${q.lignes.map((l, i) => `<li>${esc(l)} : ${q.colonnesParLigne[i].map((c) => `<span class="case"></span> ${esc(c)}`).join(' &nbsp; ')}</li>`).join('')}</ul>`;
       return `<table class="grille"><thead><tr><th></th>${q.colonnes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead>
         <tbody>${q.lignes.map((l) => `<tr><td>${esc(l)}</td>${q.colonnes.map(() => `<td class="c">${case_}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
     case 'ordre':

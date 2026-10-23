@@ -2261,7 +2261,8 @@
     3,
     5
    ],
-   "explication": "On voit un pique-nique (s'alimenter), des vêtements de l'époque (se vêtir) et un moment de détente en plein air (se distraire)."
+   "explication": "On voit un pique-nique (s'alimenter), des vêtements de l'époque (se vêtir) et un moment de détente en plein air (se distraire).",
+   "parReponse": true
   },
   {
    "id": "ceb-2025-l5-q2f",
@@ -2880,14 +2881,17 @@
    "numero": "7a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Sandra Kim a représenté la Belgique en 1986, Montaigne l'Australie en 2021 et Samira Saïd le Maroc en 1980. Sur quel continent se trouve chaque pays ?",
-   "points": 2,
+   "enonce": "Sandra Kim a représenté la Belgique en 1986, Montaigne l'Australie en 2021 et Samira Saïd le Maroc en 1980 au Concours Eurovision. Comme dans le tableau de l'épreuve (pays × siècle de participation), place chaque artiste : choisis le continent de son pays, puis le siècle de sa participation. Chaque artiste rapporte 1 point si le continent ET le siècle sont justes.",
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "lignes": [
-    "Belgique",
-    "Australie",
-    "Maroc"
+    "Sandra Kim (Belgique) — continent",
+    "Sandra Kim — siècle de participation",
+    "Montaigne (Australie) — continent",
+    "Montaigne — siècle de participation",
+    "Samira Saïd (Maroc) — continent",
+    "Samira Saïd — siècle de participation"
    ],
    "colonnes": [
     "Europe",
@@ -2898,37 +2902,65 @@
    ],
    "reponse": [
     0,
-    4,
-    3
-   ],
-   "explication": "La Belgique est en Europe, l'Australie en Océanie et le Maroc en Afrique."
-  },
-  {
-   "id": "ceb-2025-l5-q7a2",
-   "livret": 5,
-   "numero": "7a2",
-   "domaine": "hg.histoire",
-   "type": "grille",
-   "enonce": "Au cours de quel siècle chaque artiste a-t-il participé au Concours Eurovision ?",
-   "points": 1,
-   "corrigeVerifie": true,
-   "fiche": "hg-siecles",
-   "lignes": [
-    "Sandra Kim (1986)",
-    "Montaigne (2021)",
-    "Samira Saïd (1980)"
-   ],
-   "colonnes": [
-    "19e siècle",
-    "20e siècle",
-    "21e siècle"
-   ],
-   "reponse": [
     1,
+    4,
     2,
+    3,
     1
    ],
-   "explication": "1980 et 1986 sont au 20e siècle (1901-2000), 2021 au 21e siècle."
+   "explication": "Belgique : Europe, 20e siècle (1986) ; Australie : Océanie, 21e siècle (2021) ; Maroc : Afrique, 20e siècle (1980).",
+   "colonnesParLigne": [
+    [
+     "Europe",
+     "Amérique",
+     "Asie",
+     "Afrique",
+     "Océanie"
+    ],
+    [
+     "19e siècle",
+     "20e siècle",
+     "21e siècle"
+    ],
+    [
+     "Europe",
+     "Amérique",
+     "Asie",
+     "Afrique",
+     "Océanie"
+    ],
+    [
+     "19e siècle",
+     "20e siècle",
+     "21e siècle"
+    ],
+    [
+     "Europe",
+     "Amérique",
+     "Asie",
+     "Afrique",
+     "Océanie"
+    ],
+    [
+     "19e siècle",
+     "20e siècle",
+     "21e siècle"
+    ]
+   ],
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2025-l5-q7b",
@@ -3012,7 +3044,8 @@
     0,
     3
    ],
-   "explication": "Le tableau du Matin indique 5e place : 1958 et 1984."
+   "explication": "Le tableau du Matin indique 5e place : 1958 et 1984.",
+   "parReponse": true
   },
   {
    "id": "ceb-2025-l5-q8a",
@@ -5378,7 +5411,8 @@
     1,
     4
    ],
-   "explication": "Les plantes ne voient pas et ne se déplacent pas. Tous les vivants respirent, se nourrissent, grandissent, se reproduisent, naissent et meurent."
+   "explication": "Les plantes ne voient pas et ne se déplacent pas. Tous les vivants respirent, se nourrissent, grandissent, se reproduisent, naissent et meurent.",
+   "parReponse": true
   },
   {
    "id": "ceb-2025-l10-q6a",
@@ -5452,7 +5486,8 @@
     1,
     2
    ],
-   "explication": "Le brouillard, ce sont de fines gouttelettes : la vapeur d'eau se condense. La neige qui tombe est une précipitation."
+   "explication": "Le brouillard, ce sont de fines gouttelettes : la vapeur d'eau se condense. La neige qui tombe est une précipitation.",
+   "parReponse": true
   },
   {
    "id": "ceb-2025-l10-q7b",
@@ -5504,7 +5539,8 @@
     2,
     4
    ],
-   "explication": "L'expérience montre l'eau sous plusieurs états (glace, eau, vapeur) et son passage de l'un à l'autre : c'est le cycle de l'eau."
+   "explication": "L'expérience montre l'eau sous plusieurs états (glace, eau, vapeur) et son passage de l'un à l'autre : c'est le cycle de l'eau.",
+   "parReponse": true
   },
   {
    "id": "ceb-2025-l10-q7d",

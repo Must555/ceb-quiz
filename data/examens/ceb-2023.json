@@ -2848,13 +2848,15 @@
    "numero": "8a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Situe ces astronomes dans le temps.",
-   "points": 1,
+   "enonce": "Situe ces deux astronomes dans le temps et dans l'espace, comme dans le tableau de l'épreuve (période × lieu) : Georges Lemaître, astronome belge, développe en 1927 la théorie de l'« atome primitif » ; Abu Mahmud Al-Khujandi construit un observatoire en Iran au 10e siècle. Pour chacun, choisis la période, puis le lieu. Chaque astronome rapporte 1 point s'il est bien placé dans la période ET le lieu.",
+   "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "lignes": [
-    "Georges Lemaître, astronome belge, développe en 1927 la théorie de l'« atome primitif »",
-    "Abu Mahmud Al-Khujandi construit un observatoire en Iran au 10e siècle"
+    "Georges Lemaître — période",
+    "Georges Lemaître — lieu",
+    "Abu Mahmud Al-Khujandi — période",
+    "Abu Mahmud Al-Khujandi — lieu"
    ],
    "colonnes": [
     "Préhistoire",
@@ -2865,33 +2867,45 @@
    ],
    "reponse": [
     4,
-    2
-   ],
-   "explication": "1927 : Époque contemporaine. Le 10e siècle : Moyen Âge."
-  },
-  {
-   "id": "ceb-2023-l5-q8a2",
-   "livret": 5,
-   "numero": "8a2",
-   "domaine": "hg.geographie",
-   "type": "grille",
-   "enonce": "Et où ?",
-   "points": 1,
-   "corrigeVerifie": true,
-   "fiche": "hg-continents",
-   "lignes": [
-    "Georges Lemaître (Belgique)",
-    "Al-Khujandi (Iran, en Asie)"
-   ],
-   "colonnes": [
-    "En Europe",
-    "Ailleurs dans le monde"
-   ],
-   "reponse": [
     0,
+    2,
     1
    ],
-   "explication": "La Belgique est en Europe ; l'Iran en Asie."
+   "explication": "Lemaître : 1927, Époque contemporaine, en Europe (la Belgique). Al-Khujandi : 10e siècle, Moyen Âge, ailleurs dans le monde (l'Iran, en Asie).",
+   "colonnesParLigne": [
+    [
+     "Préhistoire",
+     "Antiquité",
+     "Moyen Âge",
+     "Temps modernes",
+     "Époque contemporaine"
+    ],
+    [
+     "En Europe",
+     "Ailleurs dans le monde"
+    ],
+    [
+     "Préhistoire",
+     "Antiquité",
+     "Moyen Âge",
+     "Temps modernes",
+     "Époque contemporaine"
+    ],
+    [
+     "En Europe",
+     "Ailleurs dans le monde"
+    ]
+   ],
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2023-l5-q8b",
@@ -3658,7 +3672,8 @@
     2,
     3
    ],
-   "explication": "Le livret mesure 297 mm sur 210 mm : il passe dans l'enveloppe 3 (365 × 280 mm) et dans l'enveloppe 4 (229 × 324 mm), qui sont plus grandes dans les deux dimensions."
+   "explication": "Le livret mesure 297 mm sur 210 mm : il passe dans l'enveloppe 3 (365 × 280 mm) et dans l'enveloppe 4 (229 × 324 mm), qui sont plus grandes dans les deux dimensions.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l7-q1",
@@ -4814,7 +4829,8 @@
     0,
     2
    ],
-   "explication": "Prix + monnaie rendue = somme donnée ; somme donnée − monnaie rendue = prix."
+   "explication": "Prix + monnaie rendue = somme donnée ; somme donnée − monnaie rendue = prix.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l8-q21",
@@ -4837,7 +4853,8 @@
     0,
     1
    ],
-   "explication": "3/12 = 0,25 et 7/10 = 0,7. 6/5 = 1,2 ; 45/50 = 0,9 ; 10/100 = 0,1."
+   "explication": "3/12 = 0,25 et 7/10 = 0,7. 6/5 = 1,2 ; 45/50 = 0,9 ; 10/100 = 0,1.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l8-q22",
@@ -4888,7 +4905,8 @@
     1,
     3
    ],
-   "explication": "56 × 25 = 1 400 = 56 × 20 + 56 × 5 = 5 600 : 4."
+   "explication": "56 × 25 = 1 400 = 56 × 20 + 56 × 5 = 5 600 : 4.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l8-q2",
@@ -5286,7 +5304,8 @@
     1,
     2
    ],
-   "explication": "Comme le doryphore, la coccinelle est un insecte (squelette externe, 6 pattes, antennes) avec des élytres."
+   "explication": "Comme le doryphore, la coccinelle est un insecte (squelette externe, 6 pattes, antennes) avec des élytres.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q4c",
@@ -5386,7 +5405,8 @@
     3,
     4
    ],
-   "explication": "Les poissons respirent par les branchies, la grenouille aussi par la peau, les mammifères par les poumons."
+   "explication": "Les poissons respirent par les branchies, la grenouille aussi par la peau, les mammifères par les poumons.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q7a",
@@ -5525,7 +5545,8 @@
     1,
     2
    ],
-   "explication": "Le tableau varie selon l'âge, la taille et le sexe."
+   "explication": "Le tableau varie selon l'âge, la taille et le sexe.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q8a",
@@ -5671,7 +5692,8 @@
     0,
     2
    ],
-   "explication": "Chauffé, le liquide se dilate et monte ; refroidi, il se contracte et descend."
+   "explication": "Chauffé, le liquide se dilate et monte ; refroidi, il se contracte et descend.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q10b",
@@ -5698,7 +5720,8 @@
     1,
     3
    ],
-   "explication": "Dilatation à la chaleur, contraction au froid."
+   "explication": "Dilatation à la chaleur, contraction au froid.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q10c",
@@ -5720,7 +5743,8 @@
     1,
     2
    ],
-   "explication": "La route se dilate à la chaleur ; en hiver, le béton se contracte et le joint s'écarte. L'éponge et le champignon changent à cause de l'eau, pas de la température."
+   "explication": "La route se dilate à la chaleur ; en hiver, le béton se contracte et le joint s'écarte. L'éponge et le champignon changent à cause de l'eau, pas de la température.",
+   "parReponse": true
   },
   {
    "id": "ceb-2023-l9-q11a",

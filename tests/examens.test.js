@@ -50,7 +50,7 @@ for (const meta of dispo) {
       jouables++;
       if (q.type === 'qcm') assert.ok([].concat(q.reponse).every((r) => r >= 0 && r < q.choix.length), `réponse hors choix : ${ctx}`);
       if (q.type === 'qcm_multi') assert.ok(q.reponse.every((i) => i >= 0 && i < q.choix.length), ctx);
-      if (q.type === 'grille') { assert.equal(q.reponse.length, q.lignes.length, ctx); assert.ok(q.reponse.every((c) => [].concat(c).length > 0 && [].concat(c).every((k) => k >= 0 && k < q.colonnes.length)), ctx); }
+      if (q.type === 'grille') { assert.equal(q.reponse.length, q.lignes.length, ctx); if (q.colonnesParLigne) assert.equal(q.colonnesParLigne.length, q.lignes.length, `colonnesParLigne : ${ctx}`); assert.ok(q.reponse.every((c, i) => [].concat(c).length > 0 && [].concat(c).every((k) => k >= 0 && k < (q.colonnesParLigne?.[i] ?? q.colonnes).length)), ctx); }
       if (q.type === 'ordre') assert.deepEqual([...q.reponse].sort((a, b) => a - b), q.elements.map((_, i) => i), ctx);
       if (q.type === 'association') assert.ok(q.reponse.every(([g, d]) => g < q.gauche.length && d < q.droite.length), ctx);
       if (q.type === 'trous') assert.equal((q.texte.match(/\{\d+\}/g) ?? []).length, q.reponse.length, `nombre de trous : ${ctx}`);

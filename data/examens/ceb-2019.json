@@ -3149,7 +3149,8 @@
     2,
     4
    ],
-   "explication": "Le triton a une peau nue et 4 doigts aux pattes antérieures ; le lézard a des écailles et 5 doigts."
+   "explication": "Le triton a une peau nue et 4 doigts aux pattes antérieures ; le lézard a des écailles et 5 doigts.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l5-q3c",
@@ -3505,7 +3506,8 @@
     7,
     8
    ],
-   "explication": "Les métaux (fer, aluminium, cuivre) sont conducteurs."
+   "explication": "Les métaux (fer, aluminium, cuivre) sont conducteurs.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l5-q1a",
@@ -5251,7 +5253,8 @@
     0,
     2
    ],
-   "explication": "Ne pas remercier, ne pas penser à la fée : c'est l'ingratitude."
+   "explication": "Ne pas remercier, ne pas penser à la fée : c'est l'ingratitude.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l8-q9",
@@ -5322,7 +5325,8 @@
     0,
     3
    ],
-   "explication": "Bougonner = grogner, râler."
+   "explication": "Bougonner = grogner, râler.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l8-q12",
@@ -5585,7 +5589,8 @@
     0,
     4
    ],
-   "explication": "Le bassin de Campine s'étend dans le Limbourg et jusque dans la province d'Anvers."
+   "explication": "Le bassin de Campine s'étend dans le Limbourg et jusque dans la province d'Anvers.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l9-q3a",
@@ -6044,7 +6049,8 @@
     1,
     3
    ],
-   "explication": "Le carbonifère commence il y a environ 360 millions d'années et dure 60 millions d'années : il tient sur les lignes graduées en millions d'années qui couvrent cette période (1, 2 et 4). La ligne 3 est graduée en années après J.-C."
+   "explication": "Le carbonifère commence il y a environ 360 millions d'années et dure 60 millions d'années : il tient sur les lignes graduées en millions d'années qui couvrent cette période (1, 2 et 4). La ligne 3 est graduée en années après J.-C.",
+   "parReponse": true
   },
   {
    "id": "ceb-2019-l9-q5a",

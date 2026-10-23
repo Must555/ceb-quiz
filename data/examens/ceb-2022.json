@@ -1294,7 +1294,8 @@
     1,
     0,
     0
-   ]
+   ],
+   "exclusif": true
   },
   {
    "id": "ceb-2022-l3-q2",
@@ -4559,7 +4560,8 @@
     3,
     4
    ],
-   "explication": "2,32 et 5/2 = 2,5. (2/3 ≈ 0,67 ; 3/2 = 1,5 ; 3,2 > 3.)"
+   "explication": "2,32 et 5/2 = 2,5. (2/3 ≈ 0,67 ; 3/2 = 1,5 ; 3,2 > 3.)",
+   "parReponse": true
   },
   {
    "id": "ceb-2022-l8-q13a",
@@ -5174,7 +5176,8 @@
     2,
     4
    ],
-   "explication": "Fleurs roses, pétales soudés en tube (entonnoir), feuilles rondes."
+   "explication": "Fleurs roses, pétales soudés en tube (entonnoir), feuilles rondes.",
+   "parReponse": true
   },
   {
    "id": "ceb-2022-l9-q6b",
@@ -5424,7 +5427,8 @@
     1,
     4
    ],
-   "explication": "L'isolation ralentit les échanges de chaleur."
+   "explication": "L'isolation ralentit les échanges de chaleur.",
+   "parReponse": true
   },
   {
    "id": "ceb-2022-l9-q9c",
