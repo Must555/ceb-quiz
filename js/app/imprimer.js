@@ -74,7 +74,7 @@ function questionExamen(q, avecDocs, docsDejaImprimes) {
   const blocDocs = dejaVu ? (q.docsResolus.some((d) => d.type === 'ecoute') ? '<p class="doc-ref">🎧 Réponds d\'après le texte entendu.</p>' : `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.pageFin ? `${d.page}-${d.pageFin}` : d.page).join(', ')}).</p>`)
     : documents({ ...q, docsResolus: nouveaux }, avecDocs);
   return `<article class="question${q.type === 'trace' ? ' q-trace' : ''}${nouveaux.length && avecDocs ? ' avec-doc' : ''}">
-    <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce)}</p><span class="bareme">… / ${q.pointsPapier}</span></header>
+    <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce).replace(/\n/g, '<br>')}</p><span class="bareme">… / ${q.pointsPapier}</span></header>
     ${origine(q) ? `<p class="origine">${esc(origine(q))}</p>` : ''}
     ${blocDocs}
     ${q.figure && q.type !== 'trace' ? `<div class="figure figure-q">${q.figure}</div>` : ''}
@@ -98,7 +98,7 @@ function reponseCorrige(q) {
 function questionCorrige(q) {
   const fiche = donnees.fiches[q.fiche];
   return `<article class="question corrige">
-    <header><span class="num">${q.numeroPapier}</span><p class="enonce court">${esc(q.enonce)}</p><span class="bareme">${q.pointsPapier} pt${q.pointsPapier > 1 ? 's' : ''}</span></header>
+    <header><span class="num">${q.numeroPapier}</span><p class="enonce court">${esc(q.enonce).replace(/\n/g, '<br>')}</p><span class="bareme">${q.pointsPapier} pt${q.pointsPapier > 1 ? 's' : ''}</span></header>
     ${reponseCorrige(q)}
     ${q.explication ? `<p class="explication">💡 ${esc(q.explication)}</p>` : ''}
     ${fiche ? `<p class="fiche">À revoir en cas d'erreur : « ${esc(fiche.titre)} »</p>` : ''}

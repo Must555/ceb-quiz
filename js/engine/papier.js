@@ -8,7 +8,7 @@
 // (même id, même énoncé), y compris d'une matière à l'autre.
 
 import { createRng } from './random.js';
-import { QuizSession, estJouable } from './session.js';
+import { QuizSession, estJouable, sansOrdreDonne } from './session.js';
 import { genererVariante } from './generator.js';
 import { normaliserTexte } from './format.js';
 import { tirerTraces } from './traces.js';
@@ -182,7 +182,7 @@ export function composerFiche(donnees, code, notions) {
       if (docs.length > 1 || (docs.length && docsVus.size >= 3)) return false;
       docs.forEach((d) => docsVus.add(d.fichier ?? 'ecoute:' + d.id));
       idsVus.add(q.id); contenus.add(cleContenu(q));
-      questions.push({ ...q });
+      questions.push(sansOrdreDonne({ ...q }));
       return true;
     };
     let actives = [...familles];

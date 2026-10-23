@@ -24,6 +24,19 @@ const calculerCleVisible = (q) => 'v|' + [q.enonce, q.texte ?? '', q.figure ?? '
   ...[q.choix, q.lignes, q.elements, q.gauche, q.droite].map((a) => (a ?? []).map((x) => normaliserTexte(String(x))).sort().join('/'))]
   .map((x) => normaliserTexte(String(x))).join('|');
 
+// Une question « remettre dans l'ordre » ne s'affiche jamais déjà dans le bon ordre : si l'ordre des données
+// est l'ordre juste, on mélange (de façon reproductible, d'après l'id) et on recalcule la réponse.
+const estIdentite = (r) => Array.isArray(r) && r.every((x, i) => x === i);
+export function sansOrdreDonne(q) {
+  if (q.type !== 'ordre' || !estIdentite(q.reponse) || q.elements.length < 2) return q;
+  const rng = createRng(`ordre|${q.id ?? q.enonce}`);
+  const n = q.elements.length;
+  let perm;
+  do { perm = rng.shuffle([...Array(n).keys()]); } while (estIdentite(perm) || (n > 2 && perm.every((x, i) => x === n - 1 - i)));
+  // perm[k] = indice d'origine affiché en position k ; la réponse liste les positions dans l'ordre juste.
+  return { ...q, elements: perm.map((i) => q.elements[i]), reponse: q.reponse.map((i) => perm.indexOf(i)) };
+}
+
 // Colonnes d'une ligne de grille : `colonnesParLigne` quand chaque ligne a ses propres choix (ex. continent puis siècle).
 export const colonnesDe = (q, i) => q.colonnesParLigne?.[i] ?? q.colonnes;
 
@@ -125,8 +138,9 @@ export class QuizSession {
     if (this.courante) return this.courante; // on ne saute pas une question sans y répondre
     if (this.estTerminee()) return null;
 
-    const q = this.o.mode === 'examen' ? this.tirerExamen() : this.tirerAleatoire();
-    if (!q) return null; // plus aucune question neuve disponible pour ces filtres
+    const tiree = this.o.mode === 'examen' ? this.tirerExamen() : this.tirerAleatoire();
+    if (!tiree) return null; // plus aucune question neuve disponible pour ces filtres
+    const q = sansOrdreDonne(tiree);
     this.vus.add(q.id);
     this.contenus.add(normaliserTexte(q.cleContenu ?? q.enonce));
     this.contenus.add(cleVisible(q));

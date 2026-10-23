@@ -592,7 +592,7 @@ function questionSuivante() {
   $('#q-zone').innerHTML = `
     <p class="origine">${esc(origine)}</p>
     ${boutonVoix(q)}
-    <h2>${esc(q.enonce)}</h2>
+    <h2>${esc(q.enonce).replace(/\n/g, '<br>')}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${rendreDocs(docs)}
     <div id="q-saisie">${rendreSaisie(q)}</div>`;
@@ -977,7 +977,7 @@ function allerQuestion(i) {
   $('#q-zone').innerHTML = `
     <p class="origine">Question ${esc(q.numero)}</p>
     ${boutonVoix(q)}
-    <h2>${esc(q.enonce)}</h2>
+    <h2>${esc(q.enonce).replace(/\n/g, '<br>')}</h2>
     ${q.figure && q.type !== 'trace' ? `<figure class="figure-q">${q.figure}</figure>` : ''}
     ${rendreDocs(docs)}
     <div id="q-saisie">${rendreSaisie(q).replace('puis compare-la avec la réponse modèle.', 'tu la compareras avec la réponse modèle à la fin.')}</div>`;
@@ -1081,7 +1081,7 @@ function afficherRevueReel(resume, res, erreursSeules) {
     const fiche = donnees.fiches[q.fiche];
     return `<article class="carte revue ${etat}">
       <p class="origine">Livret ${r.livret} · question ${esc(q.numero)} <span class="badge-revue">${badge}</span></p>
-      <h3>${esc(q.enonce)}</h3>
+      <h3>${esc(q.enonce).replace(/\n/g, '<br>')}</h3>
       <p><b>Ta réponse :</b> <span class="pre">${ta == null ? '<i>aucune</i>' : esc(ta)}</span></p>
       ${etat !== 'juste' ? `<p class="bonne"><b>${q.type === 'ouverte' ? 'Réponse modèle' : 'Bonne réponse'} :</b> <span class="pre">${esc(bonneReponseLisible(q))}</span></p>` : ''}
       ${q.explication && etat !== 'juste' ? `<p>${ic('astuce', 'ic-txt')} ${esc(q.explication)}</p>` : ''}
