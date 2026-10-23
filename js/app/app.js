@@ -554,7 +554,7 @@ function rendreDocs(docs) {
         <button class="btn btn-cta ecoute-btn" data-doc="${d.id}">▶️ Écouter le texte</button>
         <p class="ecoute-info mute"></p></div>`
     : `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>${d.source === 'livret' ? `Livret ${d.livret}, page ${d.page}` : `Portfolio, page ${d.page}`} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
+      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>${d.source === 'livret' ? `Livret ${d.livret}, page ${d.page}` : `Portfolio, ${d.pageFin ? `pages ${d.page}-${d.pageFin}` : `page ${d.page}`}`} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
 }
 function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
   $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
@@ -1653,7 +1653,7 @@ function blocComprendre() {
         <li><b>Coach</b> : il repère les notions fragiles, les fait revenir (révision espacée) et propose des missions ciblées.</li>
         <li><b>Papier</b> : examens blancs et fiches ciblées à imprimer, avec corrigé séparé et questions de tracé.</li>
       </ul>
-      <p class="mute">Les réponses des examens officiels ont été établies par l'équipe Mission CEB (les corrigés officiels n'étaient pas disponibles) : en cas de doute, fiez-vous au corrigé de l'école. Une erreur ? Le lien « ⚑ Signaler une erreur » (après chaque réponse et dans les fiches) prépare un e-mail à <b>${ADRESSE_SIGNALEMENT}</b>.</p></details>
+      <p class="mute">Les réponses et les barèmes des examens officiels suivent les corrigés publiés par la Fédération Wallonie-Bruxelles. À l'écran, la démarche écrite d'un calcul n'est pas notée. Une erreur ? Le lien « ⚑ Signaler une erreur » (après chaque réponse et dans les fiches) prépare un e-mail à <b>${ADRESSE_SIGNALEMENT}</b>.</p></details>
     <p class="mute p-sources">Sources : <a href="https://ligue-enseignement.be/education-enseignement/articles/breves/ceb-ce1d-et-cess-de-juin-2027-les-dates-et-infos-pratiques-des-epreuves" target="_blank" rel="noopener">Ligue de l'Enseignement</a> · <a href="https://exercices-ceb.be/ceb-2027" target="_blank" rel="noopener">exercices-ceb.be</a> · <a href="https://www.bruxelles-j.be/etudier-se-former/enseignement-secondaire/le-ceb-le-certificat-detude-de-base/" target="_blank" rel="noopener">Bruxelles-J</a> · <a href="https://www.enseignement.be" target="_blank" rel="noopener">enseignement.be</a></p>
   </section>`;
 }

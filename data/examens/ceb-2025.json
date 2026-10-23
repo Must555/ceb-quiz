@@ -154,6 +154,14 @@
    "alt": "Suite de la carte : Liège, Arlon, citadelles de Huy, Liège et Dinant."
   },
   {
+   "id": "citadelles-double",
+   "page": 10,
+   "pageFin": 11,
+   "titre": "L'architecture militaire",
+   "fichier": "assets/2025/pdf10-11.webp",
+   "alt": "Carte de Wallonie avec Wavre, Mons, les citadelles de Namur et de Givet ; Suite de la carte : Liège, Arlon, citadelles de Huy, Liège et Dinant."
+  },
+  {
    "id": "dinant",
    "page": 12,
    "titre": "Des paysages : Dinant",
@@ -196,6 +204,14 @@
    "alt": "Plan de l'Expo 58 (colonnes A à D, lignes 1 à 4) avec la légende des sections."
   },
   {
+   "id": "expo-double",
+   "page": 16,
+   "pageFin": 17,
+   "titre": "Des Expositions universelles",
+   "fichier": "assets/2025/pdf16-17.webp",
+   "alt": "Texte sur les Expositions universelles et l'Expo 58, liste des pavillons numérotés de 1 à 13, début du plan ; Plan de l'Expo 58 (colonnes A à D, lignes 1 à 4) avec la légende des sections."
+  },
+  {
    "id": "villes-1",
    "page": 18,
    "titre": "Villes hôtes des Expositions universelles (1)",
@@ -208,6 +224,14 @@
    "titre": "Villes hôtes des Expositions universelles (2)",
    "fichier": "assets/2025/pdf19.webp",
    "alt": "Carte de l'Europe, de l'Asie et de l'Océanie avec les années des expositions (dont Bruxelles 1897, 1910, 1935, 1958)."
+  },
+  {
+   "id": "villes-double",
+   "page": 18,
+   "pageFin": 19,
+   "titre": "Villes hôtes des Expositions universelles",
+   "fichier": "assets/2025/pdf18-19.webp",
+   "alt": "Carte de l'Amérique et de l'Europe de l'Ouest avec les années des expositions ; Carte de l'Europe, de l'Asie et de l'Océanie avec les années des expositions (dont Bruxelles 1897, 1910, 1935, 1958)."
   },
   {
    "id": "poule",
@@ -2411,8 +2435,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
-    "citadelles-1",
-    "citadelles-2"
+    "citadelles-double"
    ],
    "lignes": [
     "La ville de Dinant se situe… de Namur.",
@@ -2441,7 +2464,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
-    "citadelles-1"
+    "citadelles-double"
    ],
    "choix": [
     "aux Pays-Bas",
@@ -2653,7 +2676,7 @@
    "fiche": "hg-sources",
    "documents": [
     "expo-1",
-    "villes-1"
+    "villes-double"
    ],
    "lignes": [
     "La première Exposition universelle a eu lieu au Royaume-Uni en 1851.",
@@ -2683,8 +2706,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
    "documents": [
-    "expo-1",
-    "expo-2"
+    "expo-double"
    ],
    "choix": [
     "au nord",
@@ -2706,8 +2728,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
-    "expo-1",
-    "expo-2",
+    "expo-double",
     "liv5-p14"
    ],
    "lignes": [
@@ -2737,8 +2758,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
-    "expo-1",
-    "expo-2"
+    "expo-double"
    ],
    "reponse": [
     "Jardins français du Belvédère",
@@ -2814,8 +2834,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "villes-1",
-    "villes-2"
+    "villes-double"
    ],
    "texte": "La France a accueilli l'Exposition universelle {1} fois.  ·  Le continent qui l'a accueillie le plus souvent est l'{2}.",
    "reponse": [
@@ -2840,8 +2859,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "villes-1",
-    "villes-2"
+    "villes-double"
    ],
    "reponseModele": "Aucune Exposition universelle n'a eu lieu en Afrique (ni en Antarctique)."
   },
@@ -2856,7 +2874,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "documents": [
-    "villes-1"
+    "villes-double"
    ],
    "lignes": [
     "Montréal (1967) a eu lieu… l'indépendance de la Belgique (1830).",

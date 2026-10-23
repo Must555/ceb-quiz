@@ -216,6 +216,14 @@
    "alt": "Photos : 5 forêt (Russie, Asie), 6 désert (Australie), 7 désert (Afrique du Sud-Ouest)."
   },
   {
+   "id": "milieux-double",
+   "page": 20,
+   "pageFin": 21,
+   "titre": "Des milieux naturels",
+   "fichier": "assets/2022/pdf20-21.webp",
+   "alt": "Carte du monde et photos numérotées : 1 montagnes (Amérique du Nord), 2 mer, 3 côte, 4 montagne (Europe), 8 forêt (Amérique du Sud) ; Photos : 5 forêt (Russie, Asie), 6 désert (Australie), 7 désert (Afrique du Sud-Ouest)."
+  },
+  {
    "id": "enluminures",
    "page": 22,
    "titre": "Des enluminures",
@@ -270,6 +278,14 @@
    "titre": "Europe politique (est)",
    "fichier": "assets/2022/pdf29.webp",
    "alt": "Carte politique du centre et de l'est de l'Europe."
+  },
+  {
+   "id": "europe-double",
+   "page": 28,
+   "pageFin": 29,
+   "titre": "Europe politique",
+   "fichier": "assets/2022/pdf28-29.webp",
+   "alt": "Carte politique de l'Europe : pays et capitales."
   },
   {
    "id": "festival",
@@ -2408,8 +2424,7 @@
    "fiche": "hg-europe",
    "documents": [
     "festival",
-    "europe-1",
-    "europe-2"
+    "europe-double"
    ],
    "reponse": [
     [
@@ -2462,8 +2477,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "milieux-1",
-    "milieux-2"
+    "milieux-double"
    ],
    "reponse": [
     [
@@ -2498,7 +2512,7 @@
    "corrigeVerifie": true,
    "fiche": "hg-continents",
    "documents": [
-    "milieux-2"
+    "milieux-double"
    ],
    "choix": [
     "Afrique",

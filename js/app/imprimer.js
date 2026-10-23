@@ -58,11 +58,11 @@ const origine = (q) => (q.source === 'examen'
 function documents(q, avecDocs) {
   const docs = q.docsResolus ?? [];
   if (!docs.length) return '';
-  if (!avecDocs && !docs.some((d) => d.type === 'ecoute')) return `<p class="doc-ref">📄 Document : ${docs.map((d) => (d.source === 'livret' ? `livret ${d.livret}, page ${d.page}` : `portfolio, page ${d.page}`)).join(' ; ')} du CEB ${q.annee}.</p>`;
+  if (!avecDocs && !docs.some((d) => d.type === 'ecoute')) return `<p class="doc-ref">📄 Document : ${docs.map((d) => (d.source === 'livret' ? `livret ${d.livret}, page ${d.page}` : `portfolio, ${d.pageFin ? `pages ${d.page}-${d.pageFin}` : `page ${d.page}`}`)).join(' ; ')} du CEB ${q.annee}.</p>`;
   return docs.map((d) => (d.type === 'ecoute'
     // Livret « Écouter » : sur papier, un adulte lit le texte (deux fois, comme à l'épreuve).
     ? `<section class="doc doc-ecoute"><p><b>🎧 Texte à lire à voix haute par un adulte</b> (deux lectures ; l'enfant ne le lit pas) — ${esc(d.titre)}</p>${d.segments.map((x) => `<p>${x.qui ? `<b>${esc(x.qui)} :</b> ` : ''}${esc(x.texte)}</p>`).join('')}</section>`
-    : `<figure class="doc"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}"><figcaption>${d.source === 'livret' ? `Livret ${d.livret} du CEB ${q.annee}, page ${d.page}` : `Portfolio du CEB ${q.annee}, page ${d.page}`} — ${esc(d.titre)}</figcaption></figure>`)).join('');
+    : `<figure class="doc"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}"><figcaption>${d.source === 'livret' ? `Livret ${d.livret} du CEB ${q.annee}, page ${d.page}` : `Portfolio du CEB ${q.annee}, ${d.pageFin ? `pages ${d.page}-${d.pageFin}` : `page ${d.page}`}`} — ${esc(d.titre)}</figcaption></figure>`)).join('');
 }
 
 function questionExamen(q, avecDocs, docsDejaImprimes) {
@@ -71,7 +71,7 @@ function questionExamen(q, avecDocs, docsDejaImprimes) {
   const nouveaux = (q.docsResolus ?? []).filter((d) => !docsDejaImprimes.has(cle(d)));
   nouveaux.forEach((d) => docsDejaImprimes.add(cle(d)));
   const dejaVu = (q.docsResolus ?? []).length && !nouveaux.length;
-  const blocDocs = dejaVu ? (q.docsResolus.some((d) => d.type === 'ecoute') ? '<p class="doc-ref">🎧 Réponds d\'après le texte entendu.</p>' : `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.page).join(', ')}).</p>`)
+  const blocDocs = dejaVu ? (q.docsResolus.some((d) => d.type === 'ecoute') ? '<p class="doc-ref">🎧 Réponds d\'après le texte entendu.</p>' : `<p class="doc-ref">📄 Utilise le document de la question précédente (portfolio, page ${q.docsResolus.map((d) => d.pageFin ? `${d.page}-${d.pageFin}` : d.page).join(', ')}).</p>`)
     : documents({ ...q, docsResolus: nouveaux }, avecDocs);
   return `<article class="question${q.type === 'trace' ? ' q-trace' : ''}${nouveaux.length && avecDocs ? ' avec-doc' : ''}">
     <header><span class="num">${q.numeroPapier}</span><p class="enonce">${esc(q.enonce)}</p><span class="bareme">… / ${q.pointsPapier}</span></header>
