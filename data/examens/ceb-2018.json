@@ -3502,7 +3502,20 @@
     "19e siècle"
    ],
    "reponse": 1,
-   "explication": "1701 à 1800 : 18e siècle. (Dans l'épreuve, il fallait aussi placer 1777 sur une ligne du temps graduée de 1400 à 2100.)"
+   "explication": "1701 à 1800 : 18e siècle."
+  },
+  {
+   "id": "ceb-2018-l7-q7d1",
+   "livret": 7,
+   "numero": "7d (1re ligne)",
+   "domaine": "hg.histoire",
+   "type": "ouverte",
+   "enonce": "Sur la ligne du temps graduée de 1400 à 2100, trace un trait pour indiquer l'année 1777.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-siecles",
+   "numerisable": false,
+   "reponseModele": "Un trait entre 1700 et 1800, juste avant la graduation 1800."
   },
   {
    "id": "ceb-2018-l7-q8c",
@@ -3843,12 +3856,28 @@
    "numerisable": false
   },
   {
-   "id": "ceb-2018-l7-q7bc",
+   "id": "ceb-2018-l7-q7b",
    "livret": 7,
-   "numero": "7bc",
+   "numero": "7b",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Colorie les rues et la place de Ciney.",
+   "enonce": "Sur le plan de Ciney de 2017, colorie en rouge les rues qui correspondent au pentagone rose de la carte de 1777.",
+   "points": 1,
+   "corrigeVerifie": true,
+   "fiche": "hg-sources",
+   "documents": [
+    "ciney"
+   ],
+   "numerisable": false,
+   "reponseModele": "Les rues « parallèles » à l'ancien tracé des remparts (qui dessinent le pentagone), avec la place Monseu en pointillé."
+  },
+  {
+   "id": "ceb-2018-l7-q7bc",
+   "livret": 7,
+   "numero": "7c",
+   "domaine": "hg.geographie",
+   "type": "ouverte",
+   "enonce": "Sur la carte Ferraris de 1777, colorie en bleu l'emplacement de la rue du Condroz actuelle et de la rue du Centre actuelle, puis trace une croix bleue à l'emplacement actuel de la place Monseu.",
    "points": 2,
    "corrigeVerifie": false,
    "documents": [

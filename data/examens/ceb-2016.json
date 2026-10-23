@@ -3923,7 +3923,7 @@
    "domaine": "sc.energie",
    "type": "qcm",
    "enonce": "Même quantité d'eau, entonnoir à 30 cm (photo 1) ou à 50 cm (photo 2) : où la roue fait-elle le plus de tours ?",
-   "points": 1,
+   "points": 0,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
@@ -4823,7 +4823,7 @@
    "domaine": "ma.arithmetique",
    "type": "trous",
    "enonce": "Ticket : chips 1,04 € ; savon 0,89 € ; lait 1,25 € ; gaufrette 0,78 € ; mozzarella 0,94 € ; poulet 9,75 € ; lessive 10,45 €.",
-   "points": 2,
+   "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "texte": "L'article le moins cher : {1}  ·  Le plus cher : {2}  ·  Le plus proche de 10 € : {3}",
@@ -5531,7 +5531,7 @@
    "domaine": "fr.vocabulaire",
    "type": "qcm_multi",
    "enonce": "Quels mots n'appartiennent PAS à la famille de « sel » ?",
-   "points": 1,
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
    "choix": [
