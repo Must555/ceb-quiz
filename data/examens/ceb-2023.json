@@ -858,7 +858,8 @@
     1,
     2
    ],
-   "explication": "Le chêne-roi est le grand arbre, la rainette la petite grenouille, la reine des prés la fleur, et le roitelet le petit oiseau."
+   "explication": "Le chêne-roi est le grand arbre, la rainette la petite grenouille, la reine des prés la fleur, et le roitelet le petit oiseau.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l1-q5",
@@ -949,7 +950,8 @@
      "au grand arbre"
     ]
    ],
-   "explication": "C'est l'oiseau à la huppe jaune (le roitelet) qui se moque du chêne qui se prend pour le roi."
+   "explication": "C'est l'oiseau à la huppe jaune (le roitelet) qui se moque du chêne qui se prend pour le roi.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l1-q7b",
@@ -985,7 +987,8 @@
      "à la petite fleur"
     ]
    ],
-   "explication": "C'est l'oiseau qui complimente la fleur et la nomme reine des prés."
+   "explication": "C'est l'oiseau qui complimente la fleur et la nomme reine des prés.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l1-q8",
@@ -1600,7 +1603,8 @@
     ]
    ],
    "explication": "« Ils présentent des numéros d'acrobatie, de jonglerie, de domptage… »",
-   "differentes": true
+   "differentes": true,
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l4-q4",
@@ -1899,7 +1903,8 @@
     ]
    ],
    "explication": "« Ils touchent à toutes les disciplines : acrobatie, jonglerie, trapèze… »",
-   "differentes": true
+   "differentes": true,
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l4-q15",
@@ -2656,7 +2661,21 @@
    ],
    "explication": "« Fait prisonnier le 28 mai 1940 » (extrait 2). « Le retour s'effectua par train spécial » (extrait 5). « Entre 15 et 30 degrés sous zéro » en janvier 1945 (extrait 3). Les trois affirmations sont vraies : extrait 2, extrait 5 et extrait 3.",
    "souple": true,
-   "texte": "Le soldat Jules Hannecart a été fait prisonnier le 28 mai 1940.\nvrai ou faux : {1}  extrait n° {2}\n\nÀ la libération, au départ de Mol, les Montois sont rentrés chez eux en train.\nvrai ou faux : {3}  extrait n° {4}\n\nLes prisonniers ont souffert du froid durant l'hiver 45.\nvrai ou faux : {5}  extrait n° {6}"
+   "texte": "Le soldat Jules Hannecart a été fait prisonnier le 28 mai 1940.\nvrai ou faux : {1}  extrait n° {2}\n\nÀ la libération, au départ de Mol, les Montois sont rentrés chez eux en train.\nvrai ou faux : {3}  extrait n° {4}\n\nLes prisonniers ont souffert du froid durant l'hiver 45.\nvrai ou faux : {5}  extrait n° {6}",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2023-l5-q6d1",
@@ -3091,7 +3110,21 @@
      "9"
     ]
    ],
-   "explication": "160 pas = 480 : 3, donc 6 : 3 = 2 min et 12 : 3 = 4 kcal. 24 min = 4 × 6 min : 1 920 pas, 48 kcal. 18 kcal = 1,5 × 12 : 720 pas, 9 min."
+   "explication": "160 pas = 480 : 3, donc 6 : 3 = 2 min et 12 : 3 = 4 kcal. 24 min = 4 × 6 min : 1 920 pas, 48 kcal. 18 kcal = 1,5 × 12 : 720 pas, 9 min.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2023-l6-q6",
@@ -3146,7 +3179,8 @@
      "07"
     ]
    ],
-   "explication": "La petite aiguille est sur le 9 et la grande aiguille indique 7 minutes : 9 h 07 (on accepte aussi 21 h 07)."
+   "explication": "La petite aiguille est sur le 9 et la grande aiguille indique 7 minutes : 9 h 07 (on accepte aussi 21 h 07).",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2023-l6-q7c",
@@ -5729,7 +5763,24 @@
     0,
     1
    ],
-   "explication": "Un générateur fournit le courant (panneau solaire, piles) ; un récepteur l'utilise (moteur, ampoules) ; un fil de connexion relie les éléments entre eux."
+   "explication": "Un générateur fournit le courant (panneau solaire, piles) ; un récepteur l'utilise (moteur, ampoules) ; un fil de connexion relie les éléments entre eux.",
+   "groupes": [
+    [
+     0,
+     3,
+     6
+    ],
+    [
+     1,
+     4,
+     8
+    ],
+    [
+     2,
+     5,
+     7
+    ]
+   ]
   },
   {
    "id": "ceb-2023-l9-q11b",
