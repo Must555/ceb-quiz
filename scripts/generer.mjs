@@ -229,7 +229,15 @@ function questionStatique(q, i, source = '') {
   const puce = q.type === 'qcm_multi' ? '☐' : '○';
   const choix = q.choix?.length ? `<span class="choix choix-liste">${q.choix.map((c) => `<span class="ch">${puce} ${esc(c)}</span>`).join('')}</span>` : '';
   const multi = q.type === 'qcm_multi' ? ' <i>(plusieurs réponses)</i>' : '';
-  return `<details class="exemple"><summary><span class="num">${i + 1}</span>${esc(q.enonce).replace(/\n/g, '<br>')}${multi}${texte}${choix}${source}</summary><p><b>Réponse :</b> ${esc(lisible(q))}${q.explication ? `<br>${esc(q.explication)}` : ''}</p></details>`;
+  // Réponse libre à plusieurs bonnes réponses : on montre aussi quelques autres réponses acceptées.
+  let aussi = '';
+  if (q.type === 'texte_court' && Array.isArray(q.reponse) && q.reponse.length > 1) {
+    const base = (x) => normaliserTexte(String(x)).replace(/^(un|une|le|la|les|l)\s+/, '');
+    const vus = new Set([base(q.reponse[0])]), autres = [];
+    for (const r of q.reponse.slice(1)) { const b = base(r); if (!vus.has(b)) { vus.add(b); autres.push(r); } }
+    if (autres.length) aussi = ` <span class="mute-t">(aussi accepté : ${autres.slice(0, 3).map((x) => esc(String(x))).join(', ')}${autres.length > 3 ? '…' : ''})</span>`;
+  }
+  return `<details class="exemple"><summary><span class="num">${i + 1}</span>${esc(q.enonce).replace(/\n/g, '<br>')}${multi}${texte}${choix}${source}</summary><p><b>Réponse :</b> ${esc(lisible(q))}${aussi}${q.explication ? `<br>${esc(q.explication)}` : ''}</p></details>`;
 }
 
 function blocsEnrichis({ exemples, officielles, annees }) {
