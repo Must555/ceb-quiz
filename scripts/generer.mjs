@@ -286,20 +286,43 @@ ${blocJouer('Dix minutes par jour suffisent')}`;
     chemin: 'exercices/', ariane: [['Mission CEB', SITE], ['Exercices']], h: heros('Exercices pour le CEB', 'S\'entraîner au CEB, matière par matière', 'Français, maths, histoire-géo et sciences : choisis une matière et réponds à 10 questions.'), corps });
 }
 
-function pageCeb2027() {
-  const JOURS27 = [['2027-06-21', 'Français'], ['2027-06-22', 'Mathématiques'], ['2027-06-24', 'Sciences'], ['2027-06-25', 'Formation historique et géographique']];
-  const corps = `<section class="matiere"><h2>Les dates du CEB 2027</h2><div class="tableau"><table><thead><tr><th>Jour</th><th>Matière</th></tr></thead><tbody>
-${JOURS27.map(([d, m]) => `<tr><td>${dateLongue(d)}</td><td>${m}</td></tr>`).join('')}</tbody></table></div>
-<p>Les épreuves ont lieu le matin, dans l'école de l'élève, avec les mêmes questions dans toutes les écoles de la Fédération Wallonie-Bruxelles.</p></section>
-<section class="matiere"><h2>Ce qui change : le tronc commun</h2><p>Le CEB 2027 évalue les attendus des nouveaux <b>référentiels du tronc commun</b>. En 2026, deux épreuves existaient (socles et tronc commun) ; l'épreuve 2026 « tronc commun » est donc le meilleur modèle pour s'entraîner. Les livrets portent des intitulés nouveaux, par exemple « Géométrie », « Arithmétique » ou « Traitement de données » en mathématiques.</p>
+// Page CEB 2027 : tout vient de data/ceb-2027.json (source unique, à mettre à jour le jour de la circulaire).
+const dateCourte = (iso) => { const d = new Date(iso + 'T12:00:00'); return `${d.getDate()} ${MOIS[d.getMonth()]} ${d.getFullYear()}`; };
+export function pageCeb2027(C) {
+  const confirme = C.statut === 'confirme';
+  const src = C.source || {};
+  const nomSource = [src.intitule || 'la circulaire officielle', src.numero ? `n° ${src.numero}` : '', src.date ? `du ${dateCourte(src.date)}` : ''].filter(Boolean).join(' ');
+  const statut = confirme
+    ? `<div class="encart statut-ok"><h2>✅ Informations officielles</h2><p>Confirmées par ${src.url ? `<a href="${esc(src.url)}" rel="noopener">${esc(nomSource)}</a>` : esc(nomSource)}. Mise à jour du ${dateCourte(C.miseAJour)}.</p></div>`
+    : `<div class="encart statut-attente"><h2>⏳ Dates annoncées, en attente de la circulaire</h2><p>La Fédération Wallonie-Bruxelles publie chaque année une circulaire qui fixe officiellement le calendrier et l'organisation du CEB. Dès sa parution, cette page est mise à jour. Dernière mise à jour : ${dateCourte(C.miseAJour)}.</p></div>`;
+  const avecLivrets = C.jours.some((j) => j.livrets);
+  const premier = C.jours[0].date, dernier = C.jours.at(-1).date;
+  const du = `du ${new Date(premier + 'T12:00:00').getDate()} au ${dateCourte(dernier)}`;
+  const s = C.seuils;
+  const echec = `En cas d'échec, le jury de l'école peut encore accorder le CEB en tenant compte du dossier de l'élève. Un élève sans CEB entre quand même en 1re secondaire, avec un accompagnement renforcé.`;
+  const FAQ = [
+    [`Quand a lieu le CEB ${C.annee} ?`, `${confirme ? 'Le' : 'Selon les dates annoncées, le'} CEB ${C.annee} a lieu ${du}, le matin : ${C.jours.map((j) => `${JOURS[new Date(j.date + 'T12:00:00').getDay()]} ${j.matiere.toLowerCase()}`).join(', ')}.`],
+    [`Que faut-il pour réussir le CEB ${C.annee} ?`, `Au moins ${s.matiere} % dans chaque matière (français, mathématiques, sciences, formation historique et géographique) et au moins ${s.moyenne} % de moyenne. Ce seuil a été fixé par ${s.base}.`],
+    ['Que se passe-t-il si mon enfant n\'obtient pas son CEB ?', echec],
+    [`Sur quoi porte le CEB ${C.annee} ?`, `Sur les attendus des référentiels du tronc commun. L'épreuve 2026 « tronc commun » est le meilleur modèle pour s'entraîner.`],
+    ...(C.resultats ? [[`Quand connaîtra-t-on les résultats du CEB ${C.annee} ?`, `Les résultats sont communiqués le ${dateCourte(C.resultats)}.`]] : []),
+  ];
+  const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQ.map(([q, r]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: r } })) };
+  const pageLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: `CEB ${C.annee} : dates, matières et réussite`, url: `${SITE}ceb-2027/`, inLanguage: 'fr-BE', dateModified: C.miseAJour, ...(confirme && src.url ? { citation: src.url } : {}) };
+  const corps = `<section class="matiere"><h2>Les dates du CEB ${C.annee}</h2>${statut}<div class="tableau"><table><thead><tr><th>Jour</th><th>Matière</th>${avecLivrets ? '<th>Livrets</th>' : ''}</tr></thead><tbody>
+${C.jours.map((j) => `<tr><td>${dateLongue(j.date)}</td><td>${j.matiere}</td>${avecLivrets ? `<td>${esc(j.livrets || '')}</td>` : ''}</tr>`).join('')}</tbody></table></div>
+<p>Les épreuves ont lieu le matin, dans l'école de l'élève, avec les mêmes questions dans toutes les écoles de la Fédération Wallonie-Bruxelles.${C.resultats ? ` Résultats communiqués le <b>${dateCourte(C.resultats)}</b>.` : ''}</p>
+${(C.complements || []).map((t) => `<p>${t}</p>`).join('\n')}</section>
+<section class="matiere"><h2>Ce qui change : le tronc commun</h2><p>Le CEB ${C.annee} évalue les attendus des nouveaux <b>référentiels du tronc commun</b>. En 2026, deux épreuves existaient (socles et tronc commun) ; l'épreuve 2026 « tronc commun » est donc le meilleur modèle pour s'entraîner. Les livrets portent des intitulés nouveaux, par exemple « Géométrie », « Arithmétique » ou « Traitement de données » en mathématiques.</p>
 <p><a href="../examens/ceb-2026-tc.html">Voir le CEB 2026 tronc commun livret par livret →</a></p></section>
-<section class="matiere"><h2>Comment réussir le CEB ?</h2><p>Il faut au moins <b>50 % dans chaque matière</b> (français, mathématiques, sciences, formation historique et géographique) <b>et</b> au moins <b>60 % de moyenne</b>. Ce seuil a été relevé par un décret du 19 mars 2026. En cas d'échec, le jury de l'école peut encore accorder le CEB en tenant compte du dossier de l'élève, et un élève sans CEB entre quand même en 1re secondaire, avec un accompagnement renforcé.</p>
-<p class="mute-t">Informations à vérifier auprès de l'école et sur enseignement.be : seules les communications officielles de la Fédération Wallonie-Bruxelles font foi.</p></section>
-<section class="matiere"><h2>Par où commencer ?</h2><ul class="regle"><li><a href="../reviser-le-ceb/">Un plan de révision en 8 semaines</a></li><li><a href="../exercices/">Des exercices par matière</a></li><li><a href="../fiches/">Les 193 fiches de révision</a></li><li><a href="../examens/">Les anciens examens depuis 2015</a></li></ul></section>
+<section class="matiere"><h2>Comment réussir le CEB ?</h2><p>Il faut au moins <b>${s.matiere} % dans chaque matière</b> (français, mathématiques, sciences, formation historique et géographique) <b>et</b> au moins <b>${s.moyenne} % de moyenne</b>. Ce seuil a été fixé par ${s.base}. ${echec}</p>
+<p class="mute-t">Seules les communications officielles de la Fédération Wallonie-Bruxelles (enseignement.be) et de l'école font foi.</p></section>
+<section class="matiere"><h2>Questions fréquentes</h2>${FAQ.map(([q, r]) => `<details class="exemple faq"><summary>${esc(q)}</summary><p>${esc(r)}</p></details>`).join('\n')}</section>
+<section class="matiere"><h2>Par où commencer ?</h2><ul class="regle"><li><a href="../reviser-le-ceb/">Un plan de révision en 8 semaines</a></li><li><a href="../exercices/">Des exercices par matière</a></li><li><a href="../fiches/">Les fiches de révision</a></li><li><a href="../examens/">Les anciens examens depuis 2015</a></li></ul></section>
 ${blocJouer('Commencer à réviser dès aujourd\'hui')}`;
-  return pageSimple({ titre: 'CEB 2027 : dates, matières et réussite', description: 'CEB 2027 : les dates (21 au 25 juin 2027), les matières de chaque jour, le tronc commun et les seuils de réussite. Avec des exercices pour s\'entraîner.',
-    chemin: 'ceb-2027/', ariane: [['Mission CEB', SITE], ['CEB 2027']],
-    h: heros('Le guide', 'CEB 2027 : tout ce qu\'il faut savoir', 'Dates, matières, tronc commun et conditions de réussite, résumés pour les parents et les élèves.', '<p class="compte-a-rebours">Plus que <b id="jours">quelques</b> jours</p><script>{const j=Math.ceil((new Date("2027-06-21T08:00:00")-new Date())/864e5);if(j>0)document.getElementById("jours").textContent=j}</script>'), corps });
+  const description = `CEB ${C.annee} : les dates (${du}), les matières de chaque jour, le tronc commun et les seuils de réussite. Avec des exercices pour s'entraîner.`;
+  const h = heros('Le guide', `CEB ${C.annee} : tout ce qu'il faut savoir`, 'Dates, matières, tronc commun et conditions de réussite, résumés pour les parents et les élèves.', `<p class="compte-a-rebours">Plus que <b id="jours">quelques</b> jours</p><script>{const j=Math.ceil((new Date("${premier}T08:00:00")-new Date())/864e5);if(j>0)document.getElementById("jours").textContent=j}</script>`);
+  return `${tete({ titre: `CEB ${C.annee} : dates, matières et réussite`, description, chemin: 'ceb-2027/', type: 'website', jsonld: [filAriane([['Mission CEB', SITE], [`CEB ${C.annee}`]]), pageLd, faqLd] }).replace('<!--heros-->', h)}\n${corps}\n${pied(MAILTO)}`;
 }
 
 function pageReviser() {
@@ -401,13 +424,14 @@ export async function generer() {
   for (const m of Object.keys(MATIERES)) out[`exercices/${SLUG[m]}.html`] = pageExercices(m, parMatiere[m], exemplesMatiere(donnees.modeles, m));
   out['exercices/index.html'] = pageExercicesIndex(parMatiere);
   for (const ex of examens) out[`relecture/${slugExamen(ex)}.html`] = pageRelecture(ex);
-  out['ceb-2027/index.html'] = pageCeb2027();
+  const CEB27 = await lireJson('data/ceb-2027.json');
+  out['ceb-2027/index.html'] = pageCeb2027(CEB27);
   out['reviser-le-ceb/index.html'] = pageReviser();
   out['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${[SITE, `${SITE}ceb-2027/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}reviser-le-ceb/`, `${SITE}fiches/`,
   ...examens.map((ex) => `${SITE}examens/${slugExamen(ex)}.html`), ...Object.values(SLUG).map((x) => `${SITE}exercices/${x}.html`),
-  ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc></url>`).join('\n')}
+  ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc>${u === `${SITE}ceb-2027/` ? `<lastmod>${CEB27.miseAJour}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `;
   out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /relecture/\nDisallow: /moteur.html\n\nSitemap: ${SITE}sitemap.xml\n`;

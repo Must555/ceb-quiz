@@ -1,0 +1,21 @@
+{
+ "_aide": "Source unique des informations du CEB 2027 (page /ceb-2027/). Le jour de la circulaire : mettre statut à \"confirme\", remplir source, corriger les dates/livrets si besoin, changer miseAJour, puis npm run generer et npm test (le test signale index.html et js/app/parents.js s'ils ne suivent pas).",
+ "annee": 2027,
+ "statut": "annonce",
+ "miseAJour": "2026-10-23",
+ "source": {
+  "intitule": null,
+  "numero": null,
+  "date": null,
+  "url": null
+ },
+ "jours": [
+  { "date": "2027-06-21", "matiere": "Français", "livrets": null },
+  { "date": "2027-06-22", "matiere": "Mathématiques", "livrets": null },
+  { "date": "2027-06-24", "matiere": "Sciences", "livrets": null },
+  { "date": "2027-06-25", "matiere": "Formation historique et géographique", "livrets": null }
+ ],
+ "seuils": { "matiere": 50, "moyenne": 60, "base": "un décret du 19 mars 2026" },
+ "resultats": null,
+ "complements": []
+}

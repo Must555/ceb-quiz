@@ -5,7 +5,7 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = 'd74e6d02c364';
+const VERSION = '12f92020f7a6';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
@@ -263,6 +263,7 @@ const FICHIERS = [
  "data/banque/maths.json",
  "data/banque/sciences.json",
  "data/catalogue.json",
+ "data/ceb-2027.json",
  "data/examens/ceb-2015.json",
  "data/examens/ceb-2016.json",
  "data/examens/ceb-2017.json",
