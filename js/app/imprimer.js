@@ -31,7 +31,7 @@ function zoneReponse(q) {
     case 'texte_court':
       return '<p class="ligne-rep">Réponse : <span class="pointilles long"></span></p>';
     case 'trous':
-      return `<p class="trous">${esc(q.texte ?? '').replace(/\{\d+\}/g, '<span class="trou"></span>').replace(/\n/g, '<br>')}</p>`;
+      return `<p class="trous">${esc(q.texte ?? '').replace(/\{\d+\}/g, '<span class="trou"></span>').replace(/ {2}· {2}|\n/g, '<br>')}</p>`;
     case 'grille':
       if (q.colonnesParLigne) return `<ul class="choix">${q.lignes.map((l, i) => `<li>${esc(l)} : ${q.colonnesParLigne[i].map((c) => `<span class="case"></span> ${esc(c)}`).join(' &nbsp; ')}</li>`).join('')}</ul>`;
       return `<table class="grille"><thead><tr><th></th>${q.colonnes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead>

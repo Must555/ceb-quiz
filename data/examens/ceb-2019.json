@@ -936,6 +936,24 @@
     }
    ],
    "source": "Correctif officiel CEB 2019, support du Savoir écouter"
+  },
+  {
+   "id": "liv9-p06",
+   "source": "livret",
+   "livret": 9,
+   "page": 6,
+   "titre": "Lithographie : la Société John Cockerill",
+   "fichier": "assets/2019/liv9-p06.webp",
+   "alt": "Lithographie vers 1850 de l'établissement de la Société John Cockerill, avec des lettres de A à O et leur légende : A charbonnage, B cokerie, C hauts fourneaux, D atelier de construction de locomotives, E Meuse, F bateau à vapeur, G pont de Seraing, H château, I habitations, J bureaux, K atelier de construction mécanique, L ligne de chemin de fer Liège–Namur, M fonderie, N canal, O fabrique de fer."
+  },
+  {
+   "id": "liv3-p21",
+   "source": "livret",
+   "livret": 3,
+   "page": 21,
+   "titre": "Un quadrillage",
+   "fichier": "assets/2019/liv3-p21.webp",
+   "alt": "Quadrillage vide de 15 colonnes (A à O) et 15 lignes (1 à 15), avec les cases à noircir : (J,4), (M,5), (N,8), (M,11), (J,12)."
   }
  ],
  "questions": [
@@ -1485,7 +1503,10 @@
     "8,I",
     "(8,I)"
    ],
-   "explication": "Le centre est à égale distance (4 cases) de J4, N8 et J12 : c'est la case (J,8)."
+   "explication": "Le centre est à égale distance (4 cases) de J4, N8 et J12 : c'est la case (J,8).",
+   "documents": [
+    "liv3-p21"
+   ]
   },
   {
    "id": "ceb-2019-l3-q1",
@@ -3238,7 +3259,7 @@
    "numero": "4d",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Même tableau : vrai ou faux ?",
+   "enonce": "On verse 50 cm³ d'eau sur trois terres et on mesure l'eau recueillie. Terre argileuse : 40 cm³ en 9 min ; terre tourbée : 47 cm³ en 2 min ; terre sablonneuse : 49 cm³ en 2 min. Ces affirmations sont-elles vraies ou fausses ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -5598,7 +5619,7 @@
    "numero": "3a",
    "domaine": "hg.geographie",
    "type": "texte_court",
-   "enonce": "Lithographie du complexe Cockerill (vers 1850). Écris un repère de la légende qui montre que ce lieu est en Région wallonne.",
+   "enonce": "Observe la lithographie et sa légende (livret, page 6). Ce lieu se situe actuellement en Région wallonne. Écris un indice (repère spatial) de la légende qui te permet de l'affirmer.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cours-eau",
@@ -5613,7 +5634,10 @@
     "Liège",
     "Namur"
    ],
-   "explication": "La Meuse, le pont de Seraing ou la ligne Liège–Namur."
+   "explication": "La Meuse, le pont de Seraing ou la ligne Liège–Namur.",
+   "documents": [
+    "liv9-p06"
+   ]
   },
   {
    "id": "ceb-2019-l9-q3b",

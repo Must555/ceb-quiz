@@ -3459,7 +3459,7 @@
    "numero": "3c",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Graphique de l'eau qui chauffe (ébullition vers 16 min, puis palier) : que montre-t-il ?",
+   "enonce": "Lis le graphique des températures de l'eau qui chauffe (livret, page 6). Que montre-t-il ?",
    "points": 2.5,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -3481,7 +3481,10 @@
     0,
     0
    ],
-   "explication": "Le graphique montre un palier à 100 °C ; il ne dit rien des autres casseroles ni du refroidissement."
+   "explication": "Le graphique montre un palier à 100 °C ; il ne dit rien des autres casseroles ni du refroidissement.",
+   "documents": [
+    "liv7-p06"
+   ]
   },
   {
    "id": "ceb-2017-l7-q3d",
@@ -3489,13 +3492,16 @@
    "numero": "3d",
    "domaine": "sc.matiere",
    "type": "numerique",
-   "enonce": "Si on continue à chauffer l'eau qui bout pendant 5 minutes, quelle sera sa température (°C) ?",
+   "enonce": "D'après le graphique (livret, page 6), si on continue à chauffer l'eau qui bout pendant 5 minutes de plus, quelle sera sa température (°C) ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "reponse": 100,
    "unite": "°C",
-   "explication": "L'eau qui bout reste à 100 °C."
+   "explication": "L'eau qui bout reste à 100 °C.",
+   "documents": [
+    "liv7-p06"
+   ]
   },
   {
    "id": "ceb-2017-l7-q4b",

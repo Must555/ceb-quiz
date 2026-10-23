@@ -754,6 +754,15 @@
    "titre": "Une fusée : tableau des essais",
    "fichier": "assets/2021/liv9-p22.webp",
    "alt": "Un tableau qui indique, pour des quantités de bicarbonate et de vinaigre, si la fusée décolle ou non, puis deux situations à compléter."
+  },
+  {
+   "id": "liv5-p03",
+   "source": "livret",
+   "livret": 5,
+   "page": 3,
+   "titre": "La table des matières d'un atlas",
+   "fichier": "assets/2021/liv5-p03.webp",
+   "alt": "Table des matières d'un atlas. Belgique : régions 1, communautés 1, provinces 2, relief 3, hydrographie 4, utilisation du sol 5, climat 5, population 6, routes 6, chemin de fer 7, voies navigables 7, population 14, routes 15, chemin de fer 16, voies navigables 16. Europe : relief 8-9, cours d'eau 10, Union européenne 11-12, zone euro 13. Monde : monde politique 17-18, continents et océans 19-20, relief 21, grands cours d'eau 22, milieux naturels 23, climat 24, densité 25, grandes villes 26, migrations 26, richesse 26, principaux gisements 27, réserves de pétrole 28, fuseaux horaires 29."
   }
  ],
  "questions": [
@@ -2594,7 +2603,7 @@
    "numero": "1",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Voici des pages d'un atlas : Europe relief 8-9, Europe cours d'eau 10, Union européenne 11-12, zone euro 13, monde climat 24, monde milieux naturels 23, monde relief 21. Écris la page où tu trouveras la carte utile.",
+   "enonce": "Voici la table des matières d'un atlas (livret, page 3). Tu cherches des informations dans cet atlas. Pour chaque recherche, écris le numéro de la (des) page(s) où tu trouveras la carte utile.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -2615,7 +2624,10 @@
      "13"
     ]
    ],
-   "explication": "Relief de l'Europe : 8-9 ; climats du monde : 24 ; zone euro : 13."
+   "explication": "Relief de l'Europe : 8-9 ; climats du monde : 24 ; zone euro : 13.",
+   "documents": [
+    "liv5-p03"
+   ]
   },
   {
    "id": "ceb-2021-l5-q2a",
