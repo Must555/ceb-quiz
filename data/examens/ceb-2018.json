@@ -1018,7 +1018,17 @@
      "l'imparfait"
     ]
    ],
-   "explication": "commença, jeta et avança sont au passé simple ; s'était immobilisé et avait compris sont au plus-que-parfait ; faisait et obligeait sont à l'imparfait."
+   "explication": "commença, jeta et avança sont au passé simple ; s'était immobilisé et avait compris sont au plus-que-parfait ; faisait et obligeait sont à l'imparfait.",
+   "groupes": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l1-q18",
@@ -1378,7 +1388,21 @@
      "5"
     ]
    ],
-   "explication": "Polygones irréguliers possibles : 1, 2, 4, 5, 7, 8 (pas les figures régulières 3 et 6). Quadrilatères : 1, 7, 8. Hexagones : 2, 3, 5. Chaque ligne demande deux numéros différents."
+   "explication": "Polygones irréguliers possibles : 1, 2, 4, 5, 7, 8 (pas les figures régulières 3 et 6). Quadrilatères : 1, 7, 8. Hexagones : 2, 3, 5. Chaque ligne demande deux numéros différents.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l3-q7b",
@@ -1632,7 +1656,19 @@
      "cl"
     ]
    ],
-   "explication": "10 fois plus grande : on monte d'une unité (ml → cl, dl → l, l → dal). 100 fois plus petite : on descend de deux unités (hl → l, dal → dl, l → cl)."
+   "explication": "10 fois plus grande : on monte d'une unité (ml → cl, dl → l, l → dal). 100 fois plus petite : on descend de deux unités (hl → l, dal → dl, l → cl).",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l4-q7",
@@ -1670,7 +1706,8 @@
      "7"
     ]
    ],
-   "explication": "Chaque chiffre vaut 10 fois moins que celui de gauche : 3 kl, 9 hl, 6 dal, 7 l."
+   "explication": "Chaque chiffre vaut 10 fois moins que celui de gauche : 3 kl, 9 hl, 6 dal, 7 l.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l4-q13",
@@ -1769,7 +1806,8 @@
      "32"
     ]
    ],
-   "explication": "De 12 h 08 à 14 h 08 : 2 h ; + 32 min."
+   "explication": "De 12 h 08 à 14 h 08 : 2 h ; + 32 min.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l4-q16",
@@ -1802,7 +1840,19 @@
      "2,5"
     ]
    ],
-   "explication": "12 = 8 × 1,5 : tout × 1,5. 1,25 l = 1 l × 1,25 : 8 × 1,25 = 10 personnes."
+   "explication": "12 = 8 × 1,5 : tout × 1,5. 1,25 l = 1 l × 1,25 : 8 × 1,25 = 10 personnes.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l4-q17",
@@ -2088,7 +2138,8 @@
      "45"
     ]
    ],
-   "explication": "L'horloge indique 12 h 55 : de 12 h 55 à 14 h 40, il reste 1 h 45 min."
+   "explication": "L'horloge indique 12 h 55 : de 12 h 55 à 14 h 40, il reste 1 h 45 min.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l5-q1a",
@@ -2618,7 +2669,8 @@
     4,
     2
    ],
-   "explication": "1 : précipitations ; 2 : évaporation ; 3 : ruissèlement ; 4 : condensation. « Solidification » n'est pas utilisé."
+   "explication": "1 : précipitations ; 2 : évaporation ; 3 : ruissèlement ; 4 : condensation. « Solidification » n'est pas utilisé.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l5-q3",
@@ -2794,7 +2846,8 @@
     3,
     4
    ],
-   "explication": "Œufs → têtard sans patte → têtard avec pattes arrière → têtard avec pattes arrière et avant → grenouille adulte."
+   "explication": "Œufs → têtard sans patte → têtard avec pattes arrière → têtard avec pattes arrière et avant → grenouille adulte.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l5-q14",
@@ -3450,7 +3503,8 @@
     3,
     4
    ],
-   "explication": "Dans l'ordre chronologique."
+   "explication": "Dans l'ordre chronologique.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l7-q7a",
@@ -3782,7 +3836,18 @@
     5,
     5
    ],
-   "explication": "Photo 1 : Herstal, 1899 (19e) ; photo 2 : Engis, 1904 (20e) ; photo 3 : Belgique, 2017 (21e) ; photos 4 (Népal, 2011) et 5 (Inde, 2011) : ailleurs, 21e siècle."
+   "explication": "Photo 1 : Herstal, 1899 (19e) ; photo 2 : Engis, 1904 (20e) ; photo 3 : Belgique, 2017 (21e) ; photos 4 (Népal, 2011) et 5 (Inde, 2011) : ailleurs, 21e siècle.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l7-q4e",
@@ -3957,7 +4022,8 @@
     1
    ],
    "explication": "À l'arrière-plan : des espaces boisés et des prairies (le corrigé accepte aussi une surface bâtie).",
-   "corrigeVerifie": true
+   "corrigeVerifie": true,
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l7-q9b",
@@ -4374,7 +4440,18 @@
      "12"
     ]
    ],
-   "explication": "38 = 40 − 2, donc 24 × 38 = (24 × 40) − (24 × 2). 192 = 120 + 72, donc 192 : 12 = (120 : 12) + (72 : 12)."
+   "explication": "38 = 40 − 2, donc 24 × 38 = (24 × 40) − (24 × 2). 192 = 120 + 72, donc 192 : 12 = (120 : 12) + (72 : 12).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l8-q7",
@@ -4440,7 +4517,8 @@
      "720"
     ]
    ],
-   "explication": "24 = 6 × 4 ; 5 × 6 = 30 ; 30 × 24 = 720."
+   "explication": "24 = 6 × 4 ; 5 × 6 = 30 ; 30 × 24 = 720.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2018-l8-q11",
@@ -4485,7 +4563,24 @@
      "7.2"
     ]
    ],
-   "explication": "a) on avance de 15 en 15 ; b) de 125 en 125 ; c) de 0,2 en 0,2."
+   "explication": "a) on avance de 15 en 15 ; b) de 125 en 125 ; c) de 0,2 en 0,2.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8
+    ]
+   ]
   },
   {
    "id": "ceb-2018-l8-q12",
