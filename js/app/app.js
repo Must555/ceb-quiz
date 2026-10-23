@@ -460,11 +460,14 @@ function afficherPause() {
   $('#pause-ok', fond).focus();
 }
 
+// Questions vues pendant la séance (par joueur, en mémoire seulement : rien n'est enregistré).
+const vusSeance = new Map();
+
 async function lancerPartie({ defi = null } = {}) {
   if (etatTemps(joueur, store.reglagesParents()).atteint) return afficherPause();
   const modeJeu = defi ? 'amis' : choix.mode;
   let examen = null;
-  const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique };
+  const base = { banque: donnees.banque, modeles: donnees.modeles, historique: joueur.historique, vusSeance: [...(vusSeance.get(joueur.id) ?? [])] };
   let session;
   if (modeJeu === 'entrainement') {
     const coach = poidsCoach(joueur), src = poidsSource(choix.source, choix.matiere);
@@ -475,12 +478,12 @@ async function lancerPartie({ defi = null } = {}) {
     session = new QuizSession(base, { nbQuestions: 200, dureeSecondes: 180, matieres: choix.matiere ? [choix.matiere] : null, difficulteMax: 2 });
   } else if (modeJeu === 'defi') {
     // Même défi toute la journée pour ce joueur (graine = date + joueur), sans tenir compte de l'historique.
-    session = new QuizSession({ ...base, historique: [] }, { nbQuestions: 10, seed: `${store.aujourdhui()}|${joueur.id}` });
+    session = new QuizSession({ ...base, historique: [], vusSeance: [] }, { nbQuestions: 10, seed: `${store.aujourdhui()}|${joueur.id}` });
   } else if (modeJeu === 'amis') {
     // Même graine + mêmes options = mêmes questions pour les deux amis (ni coach, ni historique).
     const d = defi ? { graine: defi.graine, matiere: defi.matiere, recu: defi } : { graine: nouvelleGraine(), matiere: choix.matiere, recu: null };
     if (defi) defiRecu = null;
-    session = new QuizSession({ ...base, historique: [] }, optionsDefi(d));
+    session = new QuizSession({ ...base, historique: [], vusSeance: [] }, optionsDefi(d));
     partie = { session, modeJeu, examen: null, fini: false, defi: d };
     afficherQuiz();
     return questionSuivante();
@@ -649,6 +652,9 @@ function terminerPartie(abandon) {
   partie.fini = true;
   clearInterval(partie.timer);
   const resume = partie.session.resume();
+  // Anti-répétition sur toute la séance : ce que l'enfant vient de voir ne revient pas aux séries suivantes.
+  if (partie.modeJeu !== 'examen' && partie.modeJeu !== 'defi' && partie.modeJeu !== 'amis') { const s = vusSeance.get(joueur.id) ?? new Set(); resume.visiblesVus.forEach((k) => s.add(k)); vusSeance.set(joueur.id, s); }
+  delete resume.visiblesVus;
   let res = null;
   joueur = store.modifier((j) => { res = enregistrerSession(j, resume, partie.modeJeu); });
   if (abandon && resume.questions === 0) return afficherAccueil();
@@ -1385,7 +1391,7 @@ function afficherReglages() {
       <p class="etape-titre">Avatar</p>
       <div class="grille-avatars">${AVATARS.map((a) => boutonAvatar(a, a.id === joueur.avatar)).join('')}</div>
       <p class="etape-titre" style="margin-top:14px">Couleur de fond</p>
-      <div class="couleurs">${COULEURS.map((c) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}"></button>`).join('')}</div>
+      <div class="couleurs">${COULEURS.map((c, i) => `<button data-c="${c}" class="${c === joueur.couleur ? 'sel' : ''}" style="background:${c}" aria-label="Couleur ${i + 1}"></button>`).join('')}</div>
     </section>
     <section class="carte confort">
       <p class="etape-titre">👓 Confort de lecture</p>

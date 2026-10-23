@@ -2146,7 +2146,7 @@ function solideAuHasard(rng, ns = [3, 4, 5, 6, 8]) {
   const { S, F } = prismeOuPyramide(sorte, n, R, H, rot);
   const figure = figureSolide(S, F, { lacet, tangage, fill: rng.pick(FONDS), ecartMin: 16 });
   if (!figure) return solideAuHasard(rng, ns);
-  return { sorte, n, H, figure, cle: `${sorte}|${n}|${H}|${rot.toFixed(2)}|${lacet}|${tangage}` };
+  return { sorte, n, H, figure, cle: `${sorte}|${n}` };
 }
 const nomSolide = (sorte, n) => `${sorte === 'prisme' ? 'le prisme droit' : 'la pyramide'} à base ${NOMS_BASES[n][0]}`;
 
