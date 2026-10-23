@@ -1077,7 +1077,17 @@
      "imparfait"
     ]
    ],
-   "explication": "tenir, permettre, se nommer, raconter (imparfait)."
+   "explication": "tenir, permettre, se nommer, raconter (imparfait).",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2016-l1-q20",
@@ -1389,7 +1399,17 @@
      "2"
     ]
    ],
-   "explication": "Cube 6 carrés ; pyramide 1 + 4 ; prisme triangulaire 3 rectangles + 2 triangles."
+   "explication": "Cube 6 carrés ; pyramide 1 + 4 ; prisme triangulaire 3 rectangles + 2 triangles.",
+   "groupes": [
+    [
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2016-l3-q1",
@@ -4515,7 +4535,33 @@
     6,
     1
    ],
-   "explication": "Squelette humain : A = 5 (omoplate), B = 3 (humérus), C = 4 (cage thoracique), D, E et F restent vides. Squelette du lapin : G = 1 (crâne), H = 6 (vertèbre), J = 2 (fémur), I reste vide."
+   "explication": "Squelette humain : A = 5 (omoplate), B = 3 (humérus), C = 4 (cage thoracique), D, E et F restent vides. Squelette du lapin : G = 1 (crâne), H = 6 (vertèbre), J = 2 (fémur), I reste vide.",
+   "groupes": [
+    [
+     3
+    ],
+    [
+     4
+    ],
+    [
+     5
+    ],
+    [
+     8
+    ]
+   ],
+   "pointsGroupes": [
+    0,
+    0,
+    0,
+    0,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ]
   },
   {
    "id": "ceb-2016-l7-q10c",
@@ -5207,7 +5253,8 @@
      "640"
     ]
    ],
-   "explication": "A = 400 ; B = 240 ; C = 490 ; D = 400 ; E = 640."
+   "explication": "A = 400 ; B = 240 ; C = 490 ; D = 400 ; E = 640.",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2016-l8-q13",
