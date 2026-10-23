@@ -2826,7 +2826,8 @@
     1,
     3
    ],
-   "explication": "Une grande ville : urbain et très humanisé."
+   "explication": "Une grande ville : urbain et très humanisé.",
+   "parReponse": true
   },
   {
    "id": "ceb-2021-l5-q8",
@@ -5442,7 +5443,8 @@
     3,
     4
    ],
-   "explication": "Les expériences montrent les besoins : eau, sels minéraux et lumière."
+   "explication": "Les expériences montrent les besoins : eau, sels minéraux et lumière.",
+   "parReponse": true
   },
   {
    "id": "ceb-2021-l9-q3b",
@@ -5566,7 +5568,8 @@
     3,
     4
    ],
-   "explication": "Tout être vivant naît, grandit, se nourrit, se reproduit et meurt."
+   "explication": "Tout être vivant naît, grandit, se nourrit, se reproduit et meurt.",
+   "parReponse": true
   },
   {
    "id": "ceb-2021-l9-q7d",
@@ -5677,7 +5680,8 @@
     1,
     2
    ],
-   "explication": "Ils vont vers l'obscurité et vers le froid."
+   "explication": "Ils vont vers l'obscurité et vers le froid.",
+   "parReponse": true
   },
   {
    "id": "ceb-2021-l9-q9a",
@@ -5748,7 +5752,8 @@
     0,
     3
    ],
-   "explication": "En gelant, l'eau augmente de volume."
+   "explication": "En gelant, l'eau augmente de volume.",
+   "parReponse": true
   },
   {
    "id": "ceb-2021-l9-q10b",

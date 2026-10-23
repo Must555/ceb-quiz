@@ -971,23 +971,29 @@
   {
    "id": "ceb-2015-l3-q5",
    "livret": 3,
-   "numero": "5 (angles)",
+   "numero": "5",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe les six figures du livret (page 7). À l'épreuve, il fallait placer chaque figure dans une seule case du tableau : une ligne (les angles droits) et une colonne (les côtés de même longueur). Pour chaque figure, choisis d'abord la ligne du tableau.",
-   "points": 1.5,
+   "enonce": "Observe les six figures du livret (page 7) et leurs codages. À l'épreuve, il fallait placer chaque figure dans une seule case du tableau : une ligne (les angles droits) et une colonne (les côtés de même longueur). Pour chaque figure, choisis d'abord la ligne (angles droits), puis la colonne (côtés de même longueur). Une figure rapporte ½ point si les deux choix sont justes.",
+   "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
    "documents": [
     "liv3-p07"
    ],
    "lignes": [
-    "Figure 1",
-    "Figure 2",
-    "Figure 3",
-    "Figure 4",
-    "Figure 5",
-    "Figure 6"
+    "Figure 1 — angles droits",
+    "Figure 1 — côtés de même longueur",
+    "Figure 2 — angles droits",
+    "Figure 2 — côtés de même longueur",
+    "Figure 3 — angles droits",
+    "Figure 3 — côtés de même longueur",
+    "Figure 4 — angles droits",
+    "Figure 4 — côtés de même longueur",
+    "Figure 5 — angles droits",
+    "Figure 5 — côtés de même longueur",
+    "Figure 6 — angles droits",
+    "Figure 6 — côtés de même longueur"
    ],
    "colonnes": [
     "Aucun angle droit",
@@ -997,50 +1003,119 @@
    ],
    "reponse": [
     3,
-    0,
-    0,
-    0,
     2,
-    3
-   ],
-   "explication": "Figures 1 et 6 : 4 angles droits ; figure 5 : seulement 2 angles droits ; figures 2, 3 et 4 : aucun angle droit."
-  },
-  {
-   "id": "ceb-2015-l3-q5b",
-   "livret": 3,
-   "numero": "5 (côtés)",
-   "domaine": "ma.geometrie",
-   "type": "grille",
-   "enonce": "Observe les six figures du livret (page 7) et leurs codages. Pour chaque figure, choisis maintenant la colonne du tableau (les côtés de même longueur).",
-   "points": 1.5,
-   "corrigeVerifie": true,
-   "fiche": "ma-quadrilateres",
-   "documents": [
-    "liv3-p07"
-   ],
-   "lignes": [
-    "Figure 1",
-    "Figure 2",
-    "Figure 3",
-    "Figure 4",
-    "Figure 5",
-    "Figure 6"
-   ],
-   "colonnes": [
-    "Aucun côté de même longueur",
-    "Seulement 2 côtés de même longueur",
-    "2 paires de côtés de même longueur",
-    "4 côtés de même longueur"
-   ],
-   "reponse": [
-    2,
+    0,
     1,
+    0,
+    2,
+    0,
     2,
     2,
     0,
+    3,
     2
    ],
-   "explication": "D'après le corrigé : figures 1, 3, 4 et 6 : 2 paires de côtés de même longueur ; figure 2 : seulement 2 côtés ; figure 5 : aucun côté de même longueur."
+   "explication": "Figures 1 et 6 : 4 angles droits ; figure 5 : seulement 2 angles droits ; figures 2, 3 et 4 : aucun angle droit. Côtés : figures 1, 3, 4 et 6 : 2 paires de côtés de même longueur ; figure 2 : seulement 2 côtés ; figure 5 : aucun côté de même longueur.",
+   "colonnesParLigne": [
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ],
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ],
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ],
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ],
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ],
+    [
+     "Aucun angle droit",
+     "Seulement 1 angle droit",
+     "Seulement 2 angles droits",
+     "4 angles droits"
+    ],
+    [
+     "Aucun côté de même longueur",
+     "Seulement 2 côtés de même longueur",
+     "2 paires de côtés de même longueur",
+     "4 côtés de même longueur"
+    ]
+   ],
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     10,
+     11
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l3-q6",
@@ -1385,7 +1460,8 @@
     0,
     2
    ],
-   "explication": "« Je crois » et « c'est possible » expriment un doute."
+   "explication": "« Je crois » et « c'est possible » expriment un doute.",
+   "parReponse": true
   },
   {
    "id": "ceb-2015-l4-q10",
@@ -2071,7 +2147,8 @@
     4,
     6
    ],
-   "explication": "Le sang distribue nutriments et oxygène et emporte les déchets."
+   "explication": "Le sang distribue nutriments et oxygène et emporte les déchets.",
+   "parReponse": true
   },
   {
    "id": "ceb-2015-l5-q15a",
@@ -2952,7 +3029,8 @@
     1,
     3
    ],
-   "explication": "Stavanger : Norvège ; Istanbul : Turquie."
+   "explication": "Stavanger : Norvège ; Istanbul : Turquie.",
+   "parProposition": true
   },
   {
    "id": "ceb-2015-l6-q16",
@@ -6072,7 +6150,8 @@
     0,
     2
    ],
-   "explication": "Ils communiquent (langage) sans parler (langue)."
+   "explication": "Ils communiquent (langage) sans parler (langue).",
+   "parReponse": true
   },
   {
    "id": "ceb-2015-l9-q6",

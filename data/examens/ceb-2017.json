@@ -994,7 +994,8 @@
     2,
     3
    ],
-   "explication": "Après le verbe être : « un pays surréaliste », « très couteux », « plus possibles ». « désignent la même ville » : CD."
+   "explication": "Après le verbe être : « un pays surréaliste », « très couteux », « plus possibles ». « désignent la même ville » : CD.",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l1-q18",
@@ -1118,7 +1119,8 @@
     5,
     6
    ],
-   "explication": "Ce qui contribue à la réputation de la Belgique : l'Art nouveau, la bande dessinée, le surréalisme, le cinéma et la littérature. « Notre pays », « ses frontières » et « la Belgique » ne sont pas ce qui crée la réputation."
+   "explication": "Ce qui contribue à la réputation de la Belgique : l'Art nouveau, la bande dessinée, le surréalisme, le cinéma et la littérature. « Notre pays », « ses frontières » et « la Belgique » ne sont pas ce qui crée la réputation.",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l1-q12",
@@ -1156,11 +1158,11 @@
    "numero": "3",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Complète : faces, sommets et arêtes.",
+   "enonce": "Complète le tableau : faces, sommets et arêtes de chaque solide, et nombre de faces qui s'attachent au sommet entouré (livret, page 3).",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
-   "texte": "Cube : {1} faces, {2} sommets, {3} arêtes  ·  Pyramide à base carrée : {4} faces, {5} sommets, {6} arêtes  ·  Tétraèdre : {7} faces, {8} sommets, {9} arêtes",
+   "texte": "Cube : {1} faces, {2} sommets, {3} arêtes, {4} faces au sommet entouré  ·  Pyramide à base carrée : {5} faces, {6} sommets, {7} arêtes, {8} faces au sommet entouré  ·  Tétraèdre : {9} faces, {10} sommets, {11} arêtes, {12} faces au sommet entouré",
    "reponse": [
     [
      "6"
@@ -1172,6 +1174,9 @@
      "12"
     ],
     [
+     "3"
+    ],
+    [
      "5"
     ],
     [
@@ -1187,10 +1192,16 @@
      "4"
     ],
     [
+     "4"
+    ],
+    [
      "6"
+    ],
+    [
+     "3"
     ]
    ],
-   "explication": "Cube 6-8-12 ; pyramide carrée 5-5-8 ; tétraèdre 4-4-6.",
+   "explication": "Cube : 6 faces, 8 sommets, 12 arêtes ; pyramide à base carrée : 5-5-8 ; tétraèdre : 4-4-6. Au sommet entouré : 3 faces pour le cube, 4 pour la pyramide, 3 pour le tétraèdre. À l'épreuve, chaque colonne (un solide, ses 4 réponses) est notée tout ou rien : 1 point par solide.",
    "documents": [
     "liv3-p03"
    ],
@@ -1198,17 +1209,20 @@
     [
      0,
      1,
-     2
+     2,
+     3
     ],
     [
-     3,
      4,
-     5
+     5,
+     6,
+     7
     ],
     [
-     6,
-     7,
-     8
+     8,
+     9,
+     10,
+     11
     ]
    ]
   },
@@ -1247,34 +1261,6 @@
    "points": 3,
    "corrigeVerifie": false,
    "numerisable": false
-  },
-  {
-   "id": "ceb-2017-l3-q3b",
-   "livret": 3,
-   "numero": "3b",
-   "domaine": "ma.geometrie",
-   "type": "trous",
-   "enonce": "Observe ces polyèdres (livret, page 3) : un sommet est entouré sur chaque dessin. Complète la dernière ligne du tableau : combien de faces s'attachent au sommet entouré ?",
-   "points": 0,
-   "corrigeVerifie": true,
-   "fiche": "ma-solides",
-   "documents": [
-    "liv3-p03"
-   ],
-   "texte": "Cube : {1} faces  ·  Pyramide à base carrée : {2} faces  ·  Tétraèdre : {3} faces",
-   "reponse": [
-    [
-     "3"
-    ],
-    [
-     "4"
-    ],
-    [
-     "3"
-    ]
-   ],
-   "souple": true,
-   "explication": "Au sommet entouré : 3 faces pour le cube, 4 pour la pyramide à base carrée, 3 pour le tétraèdre. Cette ligne n'a pas de point propre au corrigé officiel (elle compte dans les colonnes du tableau)."
   },
   {
    "id": "ceb-2017-l3-q4",
@@ -2138,7 +2124,8 @@
     1,
     2
    ],
-   "explication": "On reconnait des chevaux, des aurochs et des rhinocéros."
+   "explication": "On reconnait des chevaux, des aurochs et des rhinocéros.",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l5-q1e",
@@ -2307,7 +2294,8 @@
     3,
     4
    ],
-   "explication": "Carte « non travailleur » ; la Belgique est occupée depuis 1940."
+   "explication": "Carte « non travailleur » ; la Belgique est occupée depuis 1940.",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l5-q4d",
@@ -2820,7 +2808,8 @@
     0,
     1
    ],
-   "explication": "« la meilleure huile du marché » ; « il apportait le plus grand soin à son huile, aussi tout le monde venait lui en acheter »."
+   "explication": "« la meilleure huile du marché » ; « il apportait le plus grand soin à son huile, aussi tout le monde venait lui en acheter ».",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l6-q4",
@@ -2929,7 +2918,21 @@
      "huile"
     ]
    ],
-   "explication": "Huile, argent, fou, rocher, pièce, coupable, pièce, huile (huile et pièce sont utilisées deux fois)."
+   "explication": "Huile, argent, fou, rocher, pièce, coupable, pièce, huile (huile et pièce sont utilisées deux fois).",
+   "paliers": [
+    [
+     3,
+     1
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     8,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2017-l6-q8",
@@ -3021,7 +3024,8 @@
     0,
     1
    ],
-   "explication": "« fou », « esprit dérangé »."
+   "explication": "« fou », « esprit dérangé ».",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l6-q12",
@@ -3574,7 +3578,8 @@
     1,
     2
    ],
-   "explication": "Il reste 16,5 % d'oxygène : il n'est pas tout consommé."
+   "explication": "Il reste 16,5 % d'oxygène : il n'est pas tout consommé.",
+   "parProposition": true
   },
   {
    "id": "ceb-2017-l7-q8a",
@@ -3936,7 +3941,8 @@
     3,
     5
    ],
-   "explication": "Le risque : l'eau conduit l'électricité. Situations 1 (bain), 4 (sol mouillé près d'une prise) et 6 (radio près du bain)."
+   "explication": "Le risque : l'eau conduit l'électricité. Situations 1 (bain), 4 (sol mouillé près d'une prise) et 6 (radio près du bain).",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l8-q1a",
@@ -4336,7 +4342,8 @@
     1,
     6
    ],
-   "explication": "1,02 et 1/2 ne valent pas 1,2."
+   "explication": "1,02 et 1/2 ne valent pas 1,2.",
+   "parReponse": true
   },
   {
    "id": "ceb-2017-l8-q11a",

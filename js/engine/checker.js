@@ -60,7 +60,13 @@ export function corriger(question, reponseEleve) {
     case 'qcm_multi': {
       const choisis = [...new Set(reponseEleve.map(Number))];
       const ok = memeEnsemble(choisis, question.reponse);
-      if (!question.parReponse || ok) return { correct: ok, score: ok ? max : 0, max };
+      if (ok) return { correct: true, score: max, max };
+      // parProposition : chaque proposition compte, qu'elle doive être cochée ou laissée (« 5 x ½ pt »).
+      if (question.parProposition) {
+        const bien = question.choix.filter((_, i) => choisis.includes(i) === question.reponse.includes(i)).length;
+        return { correct: false, score: Math.round((bien / question.choix.length) * max * 100) / 100, max, detail: `${bien}/${question.choix.length}` };
+      }
+      if (!question.parReponse) return { correct: false, score: 0, max };
       // parReponse : « 1 pt par bonne réponse, −1 pt par réponse en trop » (jamais en dessous de 0).
       const bons = choisis.filter((i) => question.reponse.includes(i)).length;
       const trop = choisis.length - bons;

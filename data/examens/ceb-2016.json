@@ -696,7 +696,8 @@
     1,
     2
    ],
-   "explication": "« vieilles », « autrefois », « de génération en génération »."
+   "explication": "« vieilles », « autrefois », « de génération en génération ».",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l1-q5",
@@ -1809,7 +1810,8 @@
     3,
     4
    ],
-   "explication": "L'Empire entoure la Méditerranée ; il ne couvre ni l'Allemagne entière, ni le nord et l'est de l'Europe."
+   "explication": "L'Empire entoure la Méditerranée ; il ne couvre ni l'Allemagne entière, ni le nord et l'est de l'Europe.",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l4-q8a",
@@ -1856,7 +1858,8 @@
     4,
     5
    ],
-   "explication": "Châteaux forts et chaumières ; laine et sabots. Le corrigé accepte aussi « villa romaine »."
+   "explication": "Châteaux forts et chaumières ; laine et sabots. Le corrigé accepte aussi « villa romaine ».",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l4-q9",
@@ -1974,7 +1977,8 @@
     3,
     6
    ],
-   "explication": "De Bry est né en 1528, bien après 1492 : il n'a pas vu la scène."
+   "explication": "De Bry est né en 1528, bien après 1492 : il n'a pas vu la scène.",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l4-q15c",
@@ -3396,7 +3400,8 @@
     1,
     4
    ],
-   "explication": "1/2 dam = 5 m ; 0,005 km = 5 m ; 500 cm = 5 m. 5 000 dm = 500 m ; 50 mm = 5 cm."
+   "explication": "1/2 dam = 5 m ; 0,005 km = 5 m ; 500 cm = 5 m. 5 000 dm = 500 m ; 50 mm = 5 cm.",
+   "parProposition": true
   },
   {
    "id": "ceb-2016-l6-q15",
@@ -4132,7 +4137,8 @@
     2,
     3
    ],
-   "explication": "Aplaties, simples, alternes, à bord denté."
+   "explication": "Aplaties, simples, alternes, à bord denté.",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l7-q10b",
@@ -5593,7 +5599,8 @@
     2,
     4
    ],
-   "explication": "« saluer » (salut) et « saleté » (sale) n'ont rien à voir avec le sel."
+   "explication": "« saluer » (salut) et « saleté » (sale) n'ont rien à voir avec le sel.",
+   "parProposition": true
   },
   {
    "id": "ceb-2016-l9-q14",
@@ -5693,7 +5700,8 @@
     3,
     4
    ],
-   "explication": "Le sel est désigné par « chlorure de sodium », « ces petits grains blancs présents dans toutes les cuisines du monde » et « le sel »."
+   "explication": "Le sel est désigné par « chlorure de sodium », « ces petits grains blancs présents dans toutes les cuisines du monde » et « le sel ».",
+   "parReponse": true
   },
   {
    "id": "ceb-2016-l9-q9",

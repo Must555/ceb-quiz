@@ -860,7 +860,8 @@
         0,
         2
       ],
-      "explication": "Au début, Tom est heureux de son aquarium et il l'a payé avec son argent de poche. Ronald préfère l'aquarium de ses amis, Tom retrouve son aquarium à la fin et les objets de sa grand-mère sont anciens."
+      "explication": "Au début, Tom est heureux de son aquarium et il l'a payé avec son argent de poche. Ronald préfère l'aquarium de ses amis, Tom retrouve son aquarium à la fin et les objets de sa grand-mère sont anciens.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l1-q9",
@@ -1474,7 +1475,8 @@
         1,
         4
       ],
-      "explication": "Les empreintes possibles sont les numéros 2 (un seul carré) et 5 (deux carrés l'un au-dessus de l'autre). Imagine l'assemblage posé sur chacune de ses faces : tu verras quelles empreintes il laisse."
+      "explication": "Les empreintes possibles sont les numéros 2 (un seul carré) et 5 (deux carrés l'un au-dessus de l'autre). Imagine l'assemblage posé sur chacune de ses faces : tu verras quelles empreintes il laisse.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l3-q16",
@@ -1659,7 +1661,8 @@
         1,
         3
       ],
-      "explication": "Bruno voit un cube blanc à gauche d'un cube gris, et Déborah voit un cube noir au-dessus d'un cube gris."
+      "explication": "Bruno voit un cube blanc à gauche d'un cube gris, et Déborah voit un cube noir au-dessus d'un cube gris.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l4-q1",
@@ -2465,7 +2468,8 @@
         1,
         4
       ],
-      "explication": "Dans la figure 2, 3 cases sur 15 sont grisées : 3/15 = 1/5. Dans la figure 5, 2 triangles sur 10 sont grisés : 2/10 = 1/5."
+      "explication": "Dans la figure 2, 3 cases sur 15 sont grisées : 3/15 = 1/5. Dans la figure 5, 2 triangles sur 10 sont grisés : 2/10 = 1/5.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l4-q25",
@@ -5055,7 +5059,8 @@
         3,
         5
       ],
-      "explication": "Une combustion libère de la chaleur (énergie thermique), de la vapeur d'eau et du dioxyde de carbone."
+      "explication": "Une combustion libère de la chaleur (énergie thermique), de la vapeur d'eau et du dioxyde de carbone.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l9-q14",
@@ -5125,7 +5130,8 @@
         1,
         4
       ],
-      "explication": "Le gaz naturel et le pétrole se forment en millions d'années : ils s'épuisent."
+      "explication": "Le gaz naturel et le pétrole se forment en millions d'années : ils s'épuisent.",
+      "parReponse": true
     },
     {
       "id": "ceb-2026-tc-l9-q17",

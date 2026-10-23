@@ -222,6 +222,8 @@ test('correction : cas particuliers', () => {
   // Barèmes du correctif : réponse en trop pénalisée, élément placé deux fois, paliers.
   const multi = { type: 'qcm_multi', parReponse: true, choix: ['a', 'b', 'c', 'd'], reponse: [0, 1, 2], points: 3 };
   assert.deepEqual([corriger(multi, [0, 1]).score, corriger(multi, [0, 1, 3]).score, corriger(multi, [0, 3]).score, corriger(multi, [0, 1, 2]).score], [2, 1, 0, 3]);
+  const prop = { type: 'qcm_multi', parProposition: true, choix: ['a', 'b', 'c', 'd'], reponse: [0, 1], points: 2 };
+  assert.deepEqual([corriger(prop, [0]).score, corriger(prop, [0, 2]).score, corriger(prop, [0, 1]).score], [1.5, 1, 2]);
   const excl = { type: 'grille', exclusif: true, reponse: [0, 1, 2, 2], points: 2 };
   assert.equal(corriger(excl, [0, 1, 2, 2]).score, 2);
   assert.equal(corriger(excl, [0, 0, 2, 2]).score, 0);
