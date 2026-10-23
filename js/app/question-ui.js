@@ -19,7 +19,7 @@ export function rendreSaisie(q) {
       return `<input class="champ" id="saisie" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Écris ta réponse">`;
     case 'trous': {
       let n = 0;
-      return `<p class="texte-trous">${esc(q.texte).replace(/\{\d+\}/g, () => `<input class="champ trou${q.champsCourts ? ' court' : ''}" data-k="${n++}" type="text" autocomplete="off" spellcheck="false" aria-label="Case ${n}">`).replace(/\n/g, '<br>')}</p>`;
+      return `<p class="texte-trous">${esc(q.texte).replace(/\{\d+\}/g, () => `<input class="champ trou${q.champsCourts ? ' court' : ''}" data-k="${n++}" type="text" autocomplete="off" spellcheck="false" aria-label="Case ${n}">`).replace(/ {2}· {2}|\n/g, '<br>')}</p>`;
     }
     case 'grille':
       return `<div class="grille-rep">${q.lignes.map((l, i) => `

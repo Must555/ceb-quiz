@@ -610,6 +610,24 @@
    "titre": "Décomposer 0,54",
    "fichier": "assets/2018/liv8-p14.webp",
    "alt": "Un arbre de décomposition à compléter, avec 0,54 en haut."
+  },
+  {
+   "id": "liv7-p18",
+   "source": "livret",
+   "livret": 7,
+   "page": 18,
+   "titre": "Des arbres penchés",
+   "fichier": "assets/2018/liv7-p18.webp",
+   "alt": "Deux photos d'arbres isolés dont les branches ont toutes poussé du même côté, en oblique."
+  },
+  {
+   "id": "liv5-p20",
+   "source": "livret",
+   "livret": 5,
+   "page": 20,
+   "titre": "Le schéma incomplet d'un bras",
+   "fichier": "assets/2018/liv5-p20.webp",
+   "alt": "Dessin des os du bras et de l'avant-bras, sans les muscles."
   }
  ],
  "questions": [
@@ -2799,7 +2817,10 @@
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "reponseModele": "Une question sur la place ou l'attache du muscle (1 point). Exemples : « Où se trouve ce muscle ? » ; « Comment ce muscle est-il attaché (aux os) ? » ; toute formulation dans ce sens. On ne sanctionne pas l'erreur de grammaire.",
-   "explication": "Pour dessiner un muscle, il faut savoir où il est et à quels os il est attaché (par des tendons)."
+   "explication": "Pour dessiner un muscle, il faut savoir où il est et à quels os il est attaché (par des tendons).",
+   "documents": [
+    "liv5-p20"
+   ]
   },
   {
    "id": "ceb-2018-l5-q11c",
@@ -3585,7 +3606,7 @@
    "numero": "8c",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Le paysage que tu vois à l'avant-plan de la photographie est…",
+   "enonce": "Observe la photographie (livret, page 12). Le paysage que tu vois à l'avant-plan de la photographie est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -3595,7 +3616,10 @@
     "un paysage urbain."
    ],
    "reponse": 2,
-   "explication": "À l'avant-plan, on voit surtout une surface bâtie : c'est un paysage urbain."
+   "explication": "À l'avant-plan, on voit surtout une surface bâtie : c'est un paysage urbain.",
+   "documents": [
+    "liv7-p12"
+   ]
   },
   {
    "id": "ceb-2018-l7-q9a",
@@ -3716,7 +3740,7 @@
    "numero": "12a",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Pourquoi les branches de ces arbres ont-elles poussé en oblique ?",
+   "enonce": "Observe les deux photos (livret, page 18). Pourquoi les branches de ces arbres ont-elles poussé en oblique ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-climats",
@@ -3731,7 +3755,10 @@
     1,
     4
    ],
-   "explication": "Le vent dominant, fort et toujours dans le même sens, couche les arbres."
+   "explication": "Le vent dominant, fort et toujours dans le même sens, couche les arbres.",
+   "documents": [
+    "liv7-p18"
+   ]
   },
   {
    "id": "ceb-2018-l7-q12b",

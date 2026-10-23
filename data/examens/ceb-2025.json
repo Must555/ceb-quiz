@@ -695,6 +695,15 @@
    "titre": "Tableau 2 incomplet",
    "fichier": "assets/2025/liv10-p23.webp",
    "alt": "Tableau 2 des distances parcourues avec lubrifiant, dont trois cases sont vides, puis des propositions à cocher (question g)."
+  },
+  {
+   "id": "liv5-p02",
+   "source": "livret",
+   "livret": 5,
+   "page": 2,
+   "titre": "La table des matières d'un miniguide",
+   "fichier": "assets/2025/liv5-p02.webp",
+   "alt": "Table des matières d'un miniguide sur Bruxelles. Comment y aller ? En avion, en train, en bus 2. Avant-propos : nos dix coups de cœur 3, itinéraires conseillés 5. Bruxelles utile : achats 6, budget 8, climat 9, moyens de transport 10. La région de Bruxelles-Capitale : plan de la ville 11, où dormir ? 12, où manger ? 13, où sortir ? 14. Histoire, culture et gastronomie : histoire de la ville de Bruxelles 17, patrimoine culturel et personnages célèbres bruxellois 18, spécialités culinaires bruxelloises 19."
   }
  ],
  "questions": [
@@ -2144,7 +2153,7 @@
    "numero": "1",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Table des matières d'un miniguide sur Bruxelles : En avion, en train, en bus p. 2 · Nos dix coups de cœur p. 3 · Itinéraires conseillés p. 5 · Achats p. 6 · Budget p. 8 · Climat p. 9 · Moyens de transport p. 10 · Plan de la ville p. 11 · Où dormir ? p. 12 · Où manger ? p. 13 · Où sortir ? p. 14 · Histoire de la ville de Bruxelles p. 17 · Patrimoine culturel et personnages célèbres p. 18 · Spécialités culinaires p. 19. À quelle page commence la rubrique où tu trouveras l'information ?",
+   "enonce": "Voici la table des matières d'un miniguide de voyage sur Bruxelles (livret, page 2). Pour chaque recherche, écris le numéro de la page où commence la rubrique qui contient l'information.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2160,7 +2169,10 @@
      "13"
     ]
    ],
-   "explication": "La fondation : « Histoire de la ville » (p. 17). Un hôtel : « Où dormir ? » (p. 12). Déguster des moules : « Où manger ? » (p. 13)."
+   "explication": "La fondation : « Histoire de la ville » (p. 17). Un hôtel : « Où dormir ? » (p. 12). Déguster des moules : « Où manger ? » (p. 13).",
+   "documents": [
+    "liv5-p02"
+   ]
   },
   {
    "id": "ceb-2025-l5-q2a",

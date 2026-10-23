@@ -790,6 +790,15 @@
    "titre": "Les prévisions de l'IRM",
    "fichier": "assets/2022/liv9-p17.webp",
    "alt": "Tableau des prévisions météo pour le littoral, le centre et le sud, de samedi à lundi, avec des icônes et des températures."
+  },
+  {
+   "id": "liv5-p03",
+   "source": "livret",
+   "livret": 5,
+   "page": 3,
+   "titre": "La table des matières d'un manuel d'histoire",
+   "fichier": "assets/2022/liv5-p03.webp",
+   "alt": "Table des matières. La Préhistoire, le temps des chasseurs-cueilleurs 2 : se nourrir 3, armes et outils en pierre 4, se loger 6. La Préhistoire, le temps des premiers agriculteurs-éleveurs 7 : villages 8, outils et techniques pour travailler le sol 9, débuts de la métallurgie 11, élevage 12. L'Antiquité, le temps des Gallo-Romains 13 : organisations dans les campagnes 14, commerce 16, villa romaine 18, premiers écrits 19. Le Moyen Âge, le temps des seigneurs, des ecclésiastiques, des paysans et des bourgeois 21 : le seigneur, homme d'arme 22 ; l'ecclésiastique, homme d'Église 24 ; le paysan, homme de la terre 25 ; le bourgeois, homme de la ville 26."
   }
  ],
  "questions": [
@@ -2106,7 +2115,7 @@
    "numero": "1",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Table des matières d'un manuel : chasseurs-cueilleurs p. 2 (se nourrir 3, outils en pierre 4, se loger 6) ; premiers agriculteurs-éleveurs p. 7 (villages 8, travailler le sol 9, débuts de la métallurgie 11, élevage 12) ; Gallo-Romains p. 13 (campagnes 14, commerce 16, villa 18, premiers écrits 19) ; Moyen Âge p. 21 (seigneur 22, ecclésiastique 24, paysan, homme de la terre 25, bourgeois, homme de la ville 26). À quelle page trouveras-tu l'information ?",
+   "enonce": "Voici la table des matières d'un manuel d'histoire (livret, page 3). Pour chaque recherche, écris le numéro de la page où tu trouveras l'information.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2122,7 +2131,10 @@
      "26"
     ]
    ],
-   "explication": "Le paysan travaille la terre (p. 25) ; la métallurgie (p. 11) ; le bourgeois vit en ville (p. 26)."
+   "explication": "Le paysan travaille la terre (p. 25) ; la métallurgie (p. 11) ; le bourgeois vit en ville (p. 26).",
+   "documents": [
+    "liv5-p03"
+   ]
   },
   {
    "id": "ceb-2022-l5-q2a",
