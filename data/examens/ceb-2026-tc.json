@@ -443,6 +443,15 @@
       "alt": "Photo en noir et blanc de cyclistes qui terminent une course, avec la ligne d'arrivée ; Tim, Max et Romain sont désignés par une flèche."
     },
     {
+      "id": "liv3-p11b",
+      "source": "livret",
+      "livret": 3,
+      "page": 11,
+      "titre": "Photo de cyclistes à l'arrivée, coureurs numérotés (question 13b)",
+      "fichier": "assets/2026-tc/liv3-p11b.webp",
+      "alt": "Photo en noir et blanc de cyclistes qui terminent une course, avec la ligne d'arrivée ; Tim, Max et Romain sont désignés par une flèche et onze coureurs sont repérés par un numéro de 1 à 11."
+    },
+    {
       "id": "liv3-p02",
       "source": "livret",
       "livret": 3,
@@ -1415,13 +1424,28 @@
       "livret": 3,
       "numero": "13b",
       "domaine": "ma.geometrie",
-      "type": "ouverte",
-      "enonce": "Sur la photo de cyclistes du livret (page 11), place une flèche au-dessus de Remco, qui se trouve 3 places devant Max.",
+      "type": "qcm",
+      "enonce": "Observe la photo de cyclistes du livret (page 11). Remco se trouve 3 places devant Max. Sur la photo, les coureurs ont été repérés par des numéros (ce ne sont pas des positions dans la course). Quel coureur est Remco ?",
       "points": 1,
       "corrigeVerifie": true,
-      "numerisable": false,
-      "remarque": "Question à faire en plaçant une flèche sur la photo du livret : gardée en mode papier.",
-      "reponseModele": "Une flèche est placée au-dessus du cycliste qui est 3 places devant Max (le sixième de la course, puisque Max est neuvième). 1 point."
+      "choix": [
+        "Coureur 1",
+        "Coureur 2",
+        "Coureur 3",
+        "Coureur 4",
+        "Coureur 5",
+        "Coureur 6",
+        "Coureur 7",
+        "Coureur 8",
+        "Coureur 9",
+        "Coureur 10",
+        "Coureur 11"
+      ],
+      "reponse": 3,
+      "documents": [
+        "liv3-p11b"
+      ],
+      "explication": "Max est neuvième ; 3 places devant lui, on trouve le sixième de la course. Sur la photo, c'est le coureur numéroté 4. À l'épreuve, il fallait placer une flèche au-dessus de ce coureur."
     },
     {
       "id": "ceb-2026-tc-l3-q14",

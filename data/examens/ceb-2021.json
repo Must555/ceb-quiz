@@ -450,6 +450,15 @@
    "alt": "Une figure géométrique à huit triangles numérotés de 1 à 8."
   },
   {
+   "id": "liv3-p15",
+   "source": "livret",
+   "livret": 3,
+   "page": 15,
+   "titre": "Six figures numérotées de 1 à 6",
+   "fichier": "assets/2021/liv3-p15.webp",
+   "alt": "Six figures géométriques planes dessinées en contour, numérotées de 1 à 6."
+  },
+  {
    "id": "liv3-p17",
    "source": "livret",
    "livret": 3,
@@ -637,6 +646,15 @@
    "titre": "Deux tables de décimaux",
    "fichier": "assets/2021/liv8-p19.webp",
    "alt": "Deux tables, l'une d'addition, l'autre de multiplication, de nombres décimaux : certaines cases sont noires, certaines complétées, neuf cases blanches sont repérées par les lettres A à I ; puis un tableau de produits."
+  },
+  {
+   "id": "liv8-p19b",
+   "source": "livret",
+   "livret": 8,
+   "page": 19,
+   "titre": "Tableau de produits (cases repérées par une lettre et un numéro)",
+   "fichier": "assets/2021/liv8-p19b.webp",
+   "alt": "Tableau de cinq lignes et cinq colonnes de produits de deux nombres ; les colonnes sont repérées par les lettres A à E, les lignes par les numéros 1 à 5 ; une case est grisée."
   },
   {
    "id": "liv9-p04",
@@ -1759,11 +1777,29 @@
    "livret": 3,
    "numero": "12",
    "domaine": "ma.geometrie",
-   "type": "ouverte",
-   "enonce": "Colorie les figures qui ont au moins deux axes de symétrie.",
+   "type": "qcm_multi",
+   "enonce": "Observe les six figures du livret (page 15). Choisis les trois figures qui possèdent au moins deux axes de symétrie.",
    "points": 3,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "choix": [
+    "Figure 1",
+    "Figure 2",
+    "Figure 3",
+    "Figure 4",
+    "Figure 5",
+    "Figure 6"
+   ],
+   "reponse": [
+    0,
+    3,
+    5
+   ],
+   "parReponse": true,
+   "fiche": "ma-symetrie",
+   "documents": [
+    "liv3-p15"
+   ],
+   "explication": "Le cercle (1), le losange (4) et le pentagone régulier (6) ont au moins deux axes de symétrie. À l'épreuve : 1 point par figure juste, 1 point en moins par figure en trop."
   },
   {
    "id": "ceb-2021-l3-q14",
@@ -5345,11 +5381,46 @@
    "livret": 8,
    "numero": "23",
    "domaine": "ma.arithmetique",
-   "type": "ouverte",
-   "enonce": "Colorie les produits égaux au produit grisé.",
+   "type": "qcm_multi",
+   "enonce": "Observe le tableau du livret (page 19, sous la question 23). Choisis les 3 cases dont le produit est égal à celui de l'opération grisée.",
    "points": 1,
-   "corrigeVerifie": false,
-   "numerisable": false
+   "corrigeVerifie": true,
+   "choix": [
+    "Case A1",
+    "Case B1",
+    "Case C1",
+    "Case D1",
+    "Case E1",
+    "Case A2",
+    "Case B2",
+    "Case C2",
+    "Case D2",
+    "Case E2",
+    "Case A3",
+    "Case B3",
+    "Case C3",
+    "Case E3",
+    "Case A4",
+    "Case B4",
+    "Case C4",
+    "Case D4",
+    "Case E4",
+    "Case A5",
+    "Case B5",
+    "Case C5",
+    "Case D5",
+    "Case E5"
+   ],
+   "reponse": [
+    9,
+    16,
+    20
+   ],
+   "fiche": "ma-decimaux",
+   "documents": [
+    "liv8-p19b"
+   ],
+   "explication": "7 × 0,6 = 4,2. On trouve aussi 4,2 avec 70 × 0,06 (case E2), 0,7 × 6 (case C4) et 0,07 × 60 (case B5). À l'épreuve, il faut les trois cases pour avoir le point."
   },
   {
    "id": "ceb-2021-l9-q1",
