@@ -1187,7 +1187,17 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Un polygone n'a que des côtés droits ; une figure à bord courbe n'est pas un polygone. Figure 5 : un seul angle droit ; figure 11 : un angle droit et un bord courbe ; figures 1 et 6 : deux angles droits ; figure 2 : deux angles droits et un bord courbe."
+   "explication": "Un polygone n'a que des côtés droits ; une figure à bord courbe n'est pas un polygone. Figure 5 : un seul angle droit ; figure 11 : un angle droit et un bord courbe ; figures 1 et 6 : deux angles droits ; figure 2 : deux angles droits et un bord courbe.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l3-q9b",
@@ -1222,7 +1232,18 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Triangle équilatéral : 7 ; losange : 4 ; hexagone régulier : 3. Sans aucun côté de même longueur : le triangle 5 et le quadrilatère 13."
+   "explication": "Triangle équilatéral : 7 ; losange : 4 ; hexagone régulier : 3. Sans aucun côté de même longueur : le triangle 5 et le quadrilatère 13.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l3-q10",
@@ -1279,7 +1300,24 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Solide A (cube) : 6 faces, 8 sommets, 12 arêtes. Les solides B et C ont chacun 7 faces, 10 sommets et 15 arêtes."
+   "explication": "Solide A (cube) : 6 faces, 8 sommets, 12 arêtes. Les solides B et C ont chacun 7 faces, 10 sommets et 15 arêtes.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     8
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l3-q12",
@@ -2842,7 +2880,29 @@
      "48"
     ]
    ],
-   "explication": "2 400 : 600 × 4, 300 × 8, 1 800 + 600, 48 000 : 20. On divise ensuite par 100 puis par 1 000."
+   "explication": "2 400 : 600 × 4, 300 × 8, 1 800 + 600, 48 000 : 20. On divise ensuite par 100 puis par 1 000.",
+   "groupes": [
+    [
+     0,
+     4,
+     8
+    ],
+    [
+     1,
+     5,
+     9
+    ],
+    [
+     2,
+     6,
+     10
+    ],
+    [
+     3,
+     7,
+     11
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l6-q3a",
@@ -2944,7 +3004,19 @@
      "1 350"
     ]
    ],
-   "explication": "On ajoute 70 : 910, 980, 1 050. On ajoute 90 : 1 170, 1 260, 1 350."
+   "explication": "On ajoute 70 : 910, 980, 1 050. On ajoute 90 : 1 170, 1 260, 1 350.",
+   "groupes": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l6-q6",
@@ -3491,7 +3563,17 @@
     ]
    ],
    "explication": "6,08 millions = 6 080 000. 33 003 000 = 33,003 millions (33 millions 3 mille).",
-   "souple": true
+   "souple": true,
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l7-q11",
