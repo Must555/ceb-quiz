@@ -629,6 +629,58 @@
    "titre": "Phrases à analyser",
    "fichier": "assets/2015/liv9-p11.webp",
    "alt": "Extrait de page avec un encadré de deux phrases dont certains verbes sont soulignés, puis une phrase à analyser."
+  },
+  {
+   "id": "liv5-p09",
+   "source": "livret",
+   "livret": 5,
+   "page": 9,
+   "titre": "L'écharpe : 3e étape",
+   "fichier": "assets/2015/liv5-p09.webp",
+   "alt": "Photo de la 3e étape de l'expérience : les assiettes 1 et 2 et l'écharpe ouverte."
+  },
+  {
+   "id": "liv5-p19",
+   "source": "livret",
+   "livret": 5,
+   "page": 19,
+   "titre": "Les trois flacons",
+   "fichier": "assets/2015/liv5-p19.webp",
+   "alt": "Trois photos de flacons numérotés 1, 2 et 3 avec leurs légendes, et en dessous les flacons reliés par deux flèches."
+  },
+  {
+   "id": "liv7-p05",
+   "source": "livret",
+   "livret": 7,
+   "page": 5,
+   "titre": "Les figures 1 à 6",
+   "fichier": "assets/2015/liv7-p05.webp",
+   "alt": "Six figures numérotées de 1 à 6 avec leurs légendes."
+  },
+  {
+   "id": "liv7-p13",
+   "source": "livret",
+   "livret": 7,
+   "page": 13,
+   "titre": "Les murs de briques",
+   "fichier": "assets/2015/liv7-p13.webp",
+   "alt": "Un mur de briques donné en exemple, avec des bulles qui expliquent les calculs, et un mur de briques à compléter."
+  },
+  {
+   "id": "liv8-p13",
+   "source": "livret",
+   "livret": 8,
+   "page": 13,
+   "titre": "Cuillère, tasse, bouteille, seau",
+   "fichier": "assets/2015/liv8-p13.webp",
+   "alt": "Dessins d'une cuillère, d'une tasse, d'une bouteille et d'un seau reliés par des flèches « x 20 », « x 4 » et « x 5 »."
+  },
+  {
+   "id": "carte-belgique",
+   "page": 3,
+   "titre": "Carte de la Belgique",
+   "fichier": "assets/2015/pdf03.webp",
+   "alt": "Carte de la Belgique avec ses provinces, Liège, Theux et une échelle graphique de 0 à 20 km."
   }
  ],
  "questions": [
@@ -670,8 +722,8 @@
    "choix": [
     "On ne peut pas le dire.",
     "Jean-Jacques, personnage de l'histoire.",
-    "La petite sœur.",
-    "Un autre personnage."
+    "La charmante petite sœur de Jean-Jacques.",
+    "Un autre personnage de l'histoire."
    ],
    "reponse": 1,
    "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques."
@@ -682,7 +734,7 @@
    "numero": "3",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "« J'attrape la grippe pendant le congé d'hiver. Je me casse le pied pendant les vacances d'été. » Que faut-il comprendre ?",
+   "enonce": "Quand Jean-Jacques dit : « J'attrape la grippe pendant le congé d'hiver. Je me casse le pied au foot pendant les vacances d'été. » Que doit-on comprendre ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -690,10 +742,10 @@
     "ecoute"
    ],
    "choix": [
-    "Il est vraiment malade pendant les vacances.",
-    "Il essaye de ne pas être malade ou blessé pendant les périodes d'école.",
-    "Il essaye de ne pas être malade pendant les vacances.",
-    "Il aime être malade pendant les vacances."
+    "Jean-Jacques est vraiment malade et blessé durant les vacances.",
+    "Jean-Jacques essaye de ne pas être malade ou blessé durant les périodes d'école.",
+    "Jean-Jacques essaye de ne pas être malade ou blessé durant les vacances.",
+    "Jean-Jacques aime être malade ou blessé durant les vacances."
    ],
    "reponse": 1,
    "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !"
@@ -704,14 +756,14 @@
    "numero": "4",
    "domaine": "fr.ecouter",
    "type": "trous",
-   "enonce": "La garde-robe des parents.",
+   "enonce": "Complète le schéma de l'armoire des parents en indiquant la partie de maman et la partie de papa, et les types de vêtements rangés.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "ecoute"
    ],
-   "texte": "Partie gauche : vêtements de {1} ; à gauche de chaque partie : vêtements d'{2} ; à droite : vêtements d'{3}",
+   "texte": "GARDE-ROBE\nPartie de gauche : partie de {1} — vêtements d'{2} (à gauche) · vêtements d'{3} (à droite)\nPartie de droite : partie de {4} — vêtements d'{5} (à gauche) · vêtements d'{6} (à droite)",
    "reponse": [
     [
      "papa",
@@ -723,9 +775,32 @@
     ],
     [
      "hiver"
+    ],
+    [
+     "maman",
+     "Maman"
+    ],
+    [
+     "été",
+     "ete"
+    ],
+    [
+     "hiver"
     ]
    ],
-   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)"
+   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)",
+   "groupes": [
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     2,
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2015-l1-q5",
@@ -741,10 +816,10 @@
     "ecoute"
    ],
    "choix": [
-    "Elle range les choses ailleurs.",
-    "Elle ne range pas.",
-    "Elle dérange tout.",
-    "Elle range les choses autrement."
+    "Elle range les choses des membres de la famille ailleurs.",
+    "Elle ne range pas les choses des membres de la famille.",
+    "Elle dérange toutes les choses des membres de la famille.",
+    "Elle range les choses des membres de la famille autrement."
    ],
    "reponse": 3,
    "explication": "« Elle a un ordre et une méthode bien à elle. »"
@@ -755,7 +830,7 @@
    "numero": "6",
    "domaine": "fr.ecouter",
    "type": "texte_court",
-   "enonce": "Comment la petite sœur a-t-elle rangé les livres de Jean-Jacques ?",
+   "enonce": "Jean-Jacques range ses livres par sujets. Comment sa petite sœur a-t-elle rangé les livres de Jean-Jacques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -775,7 +850,7 @@
    "numero": "7",
    "domaine": "fr.ecouter",
    "type": "ouverte",
-   "enonce": "Que découvre Jean-Jacques ?",
+   "enonce": "« Le sens du rangement de ma petite sœur est déconcertant, mais grâce à elle, je découvre quelque chose… » Que découvre Jean-Jacques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -790,7 +865,7 @@
    "numero": "9",
    "domaine": "fr.ecouter",
    "type": "ouverte",
-   "enonce": "Cette histoire est-elle vraisemblable ? Coche « vraisemblable » ou « invraisemblable » et justifie.",
+   "enonce": "Cette histoire est-elle vraisemblable ? Écris « vraisemblable » ou « invraisemblable » et justifie.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -974,7 +1049,7 @@
    "numero": "5",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe les six figures du livret (page 7) et leurs codages. À l'épreuve, il fallait placer chaque figure dans une seule case du tableau : une ligne (les angles droits) et une colonne (les côtés de même longueur). Pour chaque figure, choisis d'abord la ligne (angles droits), puis la colonne (côtés de même longueur). Une figure rapporte ½ point si les deux choix sont justes.",
+   "enonce": "Observe les six figures du livret (page 7) et leurs codages. À l'épreuve, il fallait placer le numéro de chaque figure dans une seule case du tableau. Pour chaque figure, choisis d'abord la ligne (angles droits), puis la colonne (côtés de même longueur).",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
@@ -1009,11 +1084,17 @@
     0,
     2,
     0,
-    2,
+    [
+     2,
+     3
+    ],
     2,
     0,
     3,
-    2
+    [
+     2,
+     3
+    ]
    ],
    "explication": "Figures 1 et 6 : 4 angles droits ; figure 5 : seulement 2 angles droits ; figures 2, 3 et 4 : aucun angle droit. Côtés : figures 1, 3, 4 et 6 : 2 paires de côtés de même longueur ; figure 2 : seulement 2 côtés ; figure 5 : aucun côté de même longueur.",
    "colonnesParLigne": [
@@ -1333,7 +1414,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Pour le renard, que signifie « apprivoiser » ?",
+   "enonce": "Dans le dictionnaire, « apprivoiser » veut dire rendre docile un animal. Dans ce texte, pour le renard, que signifie « apprivoiser » ? Explique clairement ce que le renard veut dire par ce mot.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -1348,14 +1429,14 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "« Les hommes, dit le renard, ils ont des fusils et ils chassent. C'est bien gênant ! »",
+   "enonce": "« − Les hommes, dit le renard, ils ont des fusils et ils chassent. C'est bien gênant ! Ils élèvent aussi des poules. C'est leur seul intérêt. » Complète.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
    ],
-   "texte": "C'est gênant pour {1}, parce que {2}",
+   "texte": "C'est gênant\n– pour qui ? {1}\n– pour quelle raison ? {2}",
    "reponse": [
     [
      "le renard",
@@ -1376,45 +1457,62 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Sur la planète du petit prince, il n'y a ni chasseurs ni poules.",
+   "enonce": "« − Il y a des chasseurs sur cette planète-là ? − Non. − Ça, c'est intéressant ! Et des poules ? − Non. − Rien n'est parfait, soupira le renard. » Complète.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
    ],
-   "texte": "Ce qui est intéressant : il n'y a pas de {1} (pour le renard)  ·  Ce qui n'est pas parfait : il n'y a pas de {2} (pour le renard)",
+   "texte": "Sur la planète d'où provient le petit prince,\nqu'est-ce qui est intéressant ? {1}  ·  pour qui ? {2}\nqu'est-ce qui n'est pas parfait ? {3}  ·  pour qui ? {4}",
    "reponse": [
     [
-     "chasseurs"
+     "il n'y a pas de chasseurs",
+     "qu'il n'y a pas de chasseurs",
+     "le fait qu'il n'y a pas de chasseurs",
+     "pas de chasseurs",
+     "il n'y a pas de chasseur",
+     "l'absence de chasseurs"
     ],
     [
-     "poules"
+     "pour le renard",
+     "le renard",
+     "renard",
+     "au renard"
+    ],
+    [
+     "il n'y a pas de poules",
+     "qu'il n'y a pas de poules",
+     "le fait qu'il n'y a pas de poules",
+     "pas de poules",
+     "il n'y a pas de poule",
+     "l'absence de poules"
+    ],
+    [
+     "pour le renard",
+     "le renard",
+     "renard",
+     "au renard"
     ]
    ],
-   "explication": "Pas de chasseurs : parfait ; pas de poules : dommage."
+   "explication": "Pas de chasseurs : parfait ; pas de poules : dommage.",
+   "souple": true
   },
   {
    "id": "ceb-2015-l4-q6",
    "livret": 4,
    "numero": "6",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Un monde parfait pour le renard serait un monde…",
+   "type": "ouverte",
+   "enonce": "Que serait un monde parfait selon le renard ? Complète : « Un monde parfait pour le renard serait un monde où … et où … »",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "prince-1"
    ],
-   "choix": [
-    "sans chasseurs et avec des poules.",
-    "avec des chasseurs et des poules.",
-    "sans chasseurs et sans poules.",
-    "avec des chasseurs et sans poules."
-   ],
-   "reponse": 0,
-   "explication": "Il veut être tranquille et avoir à manger."
+   "explication": "Il veut être tranquille et avoir à manger.",
+   "reponseModele": "Un monde où il n'y a pas de chasseurs (1 point) et où il y a des poules (1 point)."
   },
   {
    "id": "ceb-2015-l4-q7",
@@ -1422,7 +1520,7 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« C'est une chose trop oubliée, dit le renard. » Le renard regrette-t-il qu'« apprivoiser » soit oublié ? Quel mot le montre ?",
+   "enonce": "« − Non, dit le petit prince. Je cherche des amis. Qu'est-ce que signifie « apprivoiser » ? − C'est une chose trop oubliée, dit le renard. Ça signifie « créer des liens… » » Le renard regrette-t-il qu'« apprivoiser » soit oublié ? Quel mot de l'extrait le montre ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -1443,7 +1541,7 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "« Je crois qu'elle m'a apprivoisé… — C'est possible, dit le renard. » Quels mots montrent le doute ?",
+   "enonce": "« − Je commence à comprendre, dit le petit prince. Il y a une fleur… Je crois qu'elle m'a apprivoisé… − C'est possible, dit le renard. On voit sur la Terre toutes sortes de choses… » Choisis les deux mots qui montrent que le petit prince et le renard doutent de ce qu'ils disent.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -1469,7 +1567,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Je connaîtrai un bruit de pas qui sera différent de tous les autres. » Cela veut dire…",
+   "enonce": "« Mais si tu m'apprivoises, ma vie sera comme ensoleillée. Je connaîtrai un bruit de pas qui sera différent de tous les autres. Les autres pas me font rentrer sous terre. Le tien m'appellera hors du terrier, comme une musique. » Que signifie la phrase « Je connaîtrai un bruit de pas qui sera différent de tous les autres » ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1477,10 +1575,10 @@
     "prince-2"
    ],
    "choix": [
-    "Le renard a une ouïe très fine.",
-    "Il reconnaitra le bruit familier des pas de son ami.",
-    "Il connaitra la pointure du petit prince.",
-    "Le petit prince marchera sur la pointe des pieds."
+    "Le renard a une ouïe plus fine que les humains et les autres animaux.",
+    "Le renard reconnaitra le bruit habituel, familier que fait son ami en marchant.",
+    "Le renard connaitra la pointure exacte des chaussures du petit prince.",
+    "Le renard sait que le petit prince marchera prudemment sur la pointe des pieds."
    ],
    "reponse": 1,
    "explication": "Le pas de l'ami sera unique."
@@ -1491,7 +1589,7 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Pourquoi le renard dit-il que sa vie est monotone ?",
+   "enonce": "« Ma vie est monotone. Je chasse les poules, les hommes me chassent. Toutes les poules se ressemblent, et tous les hommes se ressemblent. Je m'ennuie donc un peu. » Pour quelle raison le renard dit-il que sa vie est monotone ? Explique avec tes mots.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1506,7 +1604,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Ils dansent le jeudi avec les filles du village. Alors, le jeudi est jour merveilleux ! » Pourquoi ? Si on remplace « le jeudi » par « un jeudi », le sens est-il le même ?",
+   "enonce": "Relis : « Il y a un rite, par exemple, chez mes chasseurs. Ils dansent le jeudi avec les filles du village. Alors, le jeudi est jour merveilleux ! » a) Complète : « Pour le renard, le jeudi est jour merveilleux parce que … » b) Si on remplace « le » jeudi par « un » jeudi, la phrase a-t-elle le même sens ? Réponds oui ou non et justifie avec tes mots.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1573,37 +1671,31 @@
    "numero": "15",
    "domaine": "fr.grammaire",
    "type": "grille",
-   "enonce": "Type et forme des phrases.",
+   "enonce": "Voici des phrases du texte. Pour chaque phrase, choisis son type et sa forme. Exemple : « Je ne mange pas de pain. » est de type déclaratif, forme négative.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-phrases",
    "lignes": [
-    "Je m'ennuie donc un peu.",
-    "Et puis, regarde !",
-    "Tu vois là-bas les champs de blé ?",
-    "Je ne mange pas de pain.",
-    "Le blé pour moi est inutile."
+    "A. Je m'ennuie donc un peu.",
+    "B. Et puis, regarde !",
+    "C. Tu vois là-bas les champs de blé ?",
+    "E. Le blé pour moi est inutile."
    ],
    "colonnes": [
-    "Déclarative affirmative",
-    "Déclarative négative",
-    "Interrogative affirmative",
-    "Impérative affirmative"
+    "Déclaratif, forme affirmative",
+    "Déclaratif, forme négative",
+    "Interrogatif, forme affirmative",
+    "Interrogatif, forme négative",
+    "Impératif, forme affirmative",
+    "Impératif, forme négative"
    ],
    "reponse": [
     0,
-    3,
+    4,
     2,
-    1,
     0
    ],
-   "explication": "« ne… pas » : négative ; « ? » : interrogative ; « regarde ! » : impérative.",
-   "groupes": [
-    [
-     0,
-     4
-    ]
-   ]
+   "explication": "« ne… pas » : négative ; « ? » : interrogative ; « regarde ! » : impérative."
   },
   {
    "id": "ceb-2015-l4-q16",
@@ -1640,7 +1732,7 @@
    "numero": "17",
    "domaine": "fr.grammaire",
    "type": "grille",
-   "enonce": "Propositions coordonnées, juxtaposées ou subordonnées ?",
+   "enonce": "Chaque phrase contient 2 propositions. Choisis parmi les mots suivants : coordonnées, juxtaposées, subordonnées.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "fr-fonctions",
@@ -1686,7 +1778,7 @@
    "numero": "18",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Voici des débuts de phrases du texte : « C'est alors qu'apparut le renard… », « Mais après réflexion, il ajouta… », « Le renard parut très intrigué… ». Qui les énonce (qui raconte) ?",
+   "enonce": "Voici des débuts de phrases du texte, situées à la première ligne de différents paragraphes : « C'est alors qu'apparut le renard… », « Mais après réflexion, il ajouta… », « Le renard parut très intrigué… ». Qui les énonce ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-narrateur",
@@ -1710,7 +1802,7 @@
    "numero": "19",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Mais tu as des cheveux couleur d'or. Alors, ce sera merveilleux quand tu m'auras apprivoisé ! » Observe les trois lignes du temps du livret (page 11). Coche la ligne du temps correspondant à cet extrait du texte.",
+   "enonce": "« Mais tu as des cheveux couleur d'or. Alors, ce sera merveilleux quand tu m'auras apprivoisé ! » Observe les trois lignes du temps du livret (page 11). Choisis la ligne du temps correspondant à cet extrait du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-temps-composes",
@@ -1731,7 +1823,7 @@
    "numero": "1a",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Régime du renard (graphiques) : proportionnellement…",
+   "enonce": "Le régime alimentaire du renard roux varie selon les saisons. Compare les graphiques. Choisis ce qui convient pour chaque affirmation. Proportionnellement,…",
    "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "sc-regimes",
@@ -1761,7 +1853,7 @@
    "numero": "1b",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Quelle saison ?",
+   "enonce": "Le régime alimentaire du renard roux varie selon les saisons. Choisis la saison qui convient.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-regimes",
@@ -1769,8 +1861,8 @@
     "renard"
    ],
    "lignes": [
-    "Le renard ne mange aucun insecte ni aucun oiseau.",
-    "Le renard mange proportionnellement le plus d'insectes."
+    "Le renard ne mange aucun insecte, ni aucun oiseau.",
+    "Proportionnellement, le renard mange plus d'insectes en cette saison que pendant les trois autres saisons."
    ],
    "colonnes": [
     "Printemps",
@@ -1790,7 +1882,7 @@
    "numero": "4a",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Deux glaçons identiques, l'un entouré d'une écharpe en laine (pièce à 20 °C). Lequel fondra entièrement le premier ?",
+   "enonce": "Observe les photos des deux premières étapes de l'expérience 1 : les glaçons. À ton avis, quel glaçon sera entièrement fondu le premier ?",
    "points": 0,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
@@ -1798,9 +1890,9 @@
     "echarpe-1"
    ],
    "choix": [
-    "Celui de l'assiette 1 (sans écharpe)",
-    "Celui de l'assiette 2 (avec l'écharpe)",
-    "Ils fondront à la même vitesse"
+    "Le glaçon sur l'assiette 1",
+    "Le glaçon sur l'assiette 2 entourée d'une écharpe en laine de mouton",
+    "Aucun des deux, car les deux glaçons fondront à la même vitesse"
    ],
    "reponse": 0,
    "explication": "La laine isole : elle freine l'arrivée de la chaleur de la pièce vers le glaçon. (À l'épreuve, cette question n'était pas notée.)",
@@ -1812,14 +1904,14 @@
    "numero": "5",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Expérience 2 : l'eau chaude (compte rendu).",
+   "enonce": "Observe le compte rendu de l'expérience 2 : l'eau chaude, puis réponds aux questions.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "echarpe-2"
    ],
-   "texte": "a) Température de l'eau au moment où l'expérience a commencé : {1} °C\nb) Que signifie le « 0 » dans la première colonne du tableau ? {2}\nc) Récipient 2 après 30 minutes : {3} °C\nd) Durée de l'expérience : {4}",
+   "texte": "a) Quelle était la température de l'eau dans chacun des récipients au moment où l'expérience a commencé ? {1} °C\nb) Que signifie le « 0 » (zéro) dans la première colonne du tableau ? {2}\nc) Quelle était la température de l'eau dans le récipient 2 après 30 minutes ? {3} °C\nd) Combien de temps l'expérience a-t-elle duré ? {4}",
    "reponse": [
     [
      "60",
@@ -1885,7 +1977,7 @@
    "numero": "5e",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Quel constat ? L'écharpe en laine…",
+   "enonce": "Observe le compte rendu de l'expérience 2 : l'eau chaude. Quel constat peut-on tirer de cette expérience ? L'écharpe en laine…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
@@ -1907,25 +1999,44 @@
    "livret": 5,
    "numero": "6",
    "domaine": "sc.matiere",
-   "type": "qcm_multi",
-   "enonce": "Quels sont les deux matériaux isolants cités ?",
+   "type": "trous",
+   "enonce": "Lis les informations sur les matériaux isolants. On parle de deux matériaux isolants. Écris leur nom.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
     "isolants"
    ],
-   "choix": [
-    "la laine de mouton",
-    "le polystyrène expansé (frigolite)",
-    "le métal",
-    "le verre"
-   ],
    "reponse": [
-    0,
-    1
+    [
+     "laine",
+     "la laine",
+     "laine de mouton",
+     "la laine de mouton",
+     "laine en panneau",
+     "polystyrène",
+     "polystyrène expansé",
+     "le polystyrène expansé",
+     "frigolite",
+     "la frigolite"
+    ],
+    [
+     "polystyrène",
+     "polystyrène expansé",
+     "le polystyrène expansé",
+     "frigolite",
+     "la frigolite",
+     "laine",
+     "la laine",
+     "laine de mouton",
+     "la laine de mouton",
+     "laine en panneau"
+    ]
    ],
-   "explication": "Laine de mouton et frigolite."
+   "explication": "Laine de mouton et frigolite.",
+   "texte": "{1}\n{2}",
+   "differentes": true,
+   "souple": true
   },
   {
    "id": "ceb-2015-l5-q7",
@@ -1933,7 +2044,7 @@
    "numero": "7",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "L'isolant conserve une température intérieure…",
+   "enonce": "Le but de l'isolant est de conserver plus longtemps une température intérieure qui est plus élevée que la température de l'extérieur, ou qui est plus basse que la température de l'extérieur. À quoi sert l'isolant dans chacune des situations illustrées dans le portfolio (page 18) ? Exemple : un bac pour conserver le poisson au frais → une température plus basse que celle de l'extérieur.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
@@ -1943,19 +2054,17 @@
    "lignes": [
     "Un repas chaud à emporter",
     "Une boite pour transporter la crème glacée",
-    "De la laine en panneau pour isoler la toiture d'une maison"
+    "Laine en panneau pour isoler la toiture d'une maison"
    ],
    "colonnes": [
-    "plus élevée que l'extérieur",
-    "plus basse que l'extérieur"
+    "Plus élevée que celle de l'extérieur",
+    "Plus basse que celle de l'extérieur",
+    "Les deux (plus élevée et plus basse)"
    ],
    "reponse": [
     0,
     1,
-    [
-     0,
-     1
-    ]
+    2
    ],
    "explication": "Garder le chaud au chaud et le froid au froid. La laine isole dans les deux sens : elle garde la maison plus chaude en hiver et plus fraîche en été."
   },
@@ -1965,12 +2074,13 @@
    "numero": "8",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Le glaçon a fondu moins vite sur l'assiette 2 parce que…",
+   "enonce": "Résultat final de l'expérience 1 : les glaçons. Regarde ce que l'on découvre quand on enlève l'écharpe au moment où le glaçon de l'assiette 1 est entièrement fondu. Explique le résultat de cette expérience en complétant la phrase : « Le glaçon a fondu moins vite sur l'assiette 2 parce que… »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-materiaux",
    "documents": [
-    "echarpe-1"
+    "echarpe-1",
+    "liv5-p09"
    ],
    "reponseModele": "…l'écharpe en laine est un isolant : elle a empêché la chaleur de la pièce d'atteindre rapidement le glaçon."
   },
@@ -1980,7 +2090,7 @@
    "numero": "10",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "En quoi le dispositif de la bouteille facilite-t-il le travail du jardinier ?",
+   "enonce": "Un jardinier s'est inspiré du cycle de l'eau et a construit un dispositif pour cultiver des plants de tomates. En quoi ce dispositif facilite-t-il le travail du jardinier ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -1995,7 +2105,7 @@
    "numero": "12a",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Prévisions météo : quel jour ?",
+   "enonce": "Utilise le tableau des prévisions météo du portfolio. Pour l'ensemble de la Belgique, à quel jour correspond chacune des prévisions suivantes ?",
    "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -2004,8 +2114,8 @@
    ],
    "lignes": [
     "Les températures varieront de 14 à 21 degrés.",
-    "Nébulosité variable avec averses ; temps sec sur la côte.",
-    "Temps sec en matinée puis averses orageuses ; le sud épargné."
+    "La nébulosité sera variable avec des averses de pluie. Le temps devrait rester sec sur la région côtière.",
+    "La nébulosité sera variable et le temps restera sec en matinée. Ensuite arriveront des averses, éventuellement orageuses. Le sud du pays devrait être épargné par la pluie."
    ],
    "colonnes": [
     "vendredi",
@@ -2190,18 +2300,16 @@
    "livret": 5,
    "numero": "17a",
    "domaine": "sc.matiere",
-   "type": "qcm",
-   "enonce": "On remplit un flacon d'eau jusqu'au trait, on le met au congélateur. Que constate-t-on ?",
+   "type": "ouverte",
+   "enonce": "Observe l'expérience décrite ci-dessous. 1. On verse de l'eau dans un flacon jusqu'au trait et on visse le bouchon. 2. On place le flacon durant 4 heures dans le congélateur puis on le retire. 3. On le laisse à température ambiante jusqu'à ce que la glace soit entièrement fondue. Écris un constat qu'on peut faire en observant les trois moments de cette expérience.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
-   "choix": [
-    "La glace occupe un volume plus grand que l'eau liquide.",
-    "La glace occupe un volume plus petit.",
-    "Le volume ne change pas."
-   ],
-   "reponse": 0,
-   "explication": "En gelant, l'eau augmente de volume."
+   "explication": "En gelant, l'eau augmente de volume.",
+   "reponseModele": "Toute idée de dilatation / contraction (en gelant, l'eau prend plus de place : le niveau monte au-dessus du trait) ou de retour à la situation de départ (même niveau à la fin). « Ça redevient la même chose » sans préciser : ½ point.",
+   "documents": [
+    "liv5-p19"
+   ]
   },
   {
    "id": "ceb-2015-l5-q17b",
@@ -2209,11 +2317,11 @@
    "numero": "17b",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Nomme les changements d'état.",
+   "enonce": "Expérience : 1. On verse de l'eau dans un flacon jusqu'au trait et on visse le bouchon. 2. On place le flacon durant 4 heures dans le congélateur puis on le retire. 3. On le laisse à température ambiante jusqu'à ce que la glace soit entièrement fondue. Sur chaque flèche, écris le nom qui désigne le passage d'un état à l'autre. Choisis parmi : vaporisation, solidification, évaporation, fusion, ébullition.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
-   "texte": "Liquide → solide (au congélateur) : {1}  ·  Solide → liquide (à température ambiante) : {2}",
+   "texte": "Flèche du flacon 1 au flacon 2 : {1}  ·  Flèche du flacon 2 au flacon 3 : {2}",
    "reponse": [
     [
      "solidification"
@@ -2222,7 +2330,10 @@
      "fusion"
     ]
    ],
-   "explication": "Solidification puis fusion."
+   "explication": "Solidification puis fusion.",
+   "documents": [
+    "liv5-p19"
+   ]
   },
   {
    "id": "ceb-2015-l5-q19",
@@ -3100,8 +3211,8 @@
    ],
    "choix": [
     "Il a écrit ce qu'il a vécu.",
-    "Ce que quelqu'un lui a raconté.",
-    "Rien ne permet de le savoir."
+    "Il a écrit ce que quelqu'un lui a raconté.",
+    "Rien ne me permet de le savoir."
    ],
    "reponse": 0,
    "explication": "Il écrit à sa femme depuis le front puis comme prisonnier."
@@ -3111,26 +3222,28 @@
    "livret": 6,
    "numero": "2",
    "domaine": "hg.geographie",
-   "type": "qcm_multi",
-   "enonce": "Quelles villes faisaient partie de l'Allemagne en 1914 et font aujourd'hui partie de la Belgique ?",
+   "type": "trous",
+   "enonce": "Compare les deux cartes pour trouver le nom de deux villes qui faisaient partie de l'Allemagne en 1914 et qui font aujourd'hui partie de la Belgique. Écris leur nom.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-belgique",
    "documents": [
     "cartes"
    ],
-   "choix": [
-    "Eupen",
-    "Malmedy",
-    "Arlon",
-    "Verviers",
-    "Aix-la-Chapelle"
-   ],
    "reponse": [
-    0,
-    1
+    [
+     "Eupen",
+     "Malmedy"
+    ],
+    [
+     "Malmedy",
+     "Eupen"
+    ]
    ],
-   "explication": "Eupen et Malmedy sont devenues belges après la Première Guerre mondiale."
+   "explication": "Eupen et Malmedy sont devenues belges après la Première Guerre mondiale.",
+   "texte": "{1}\n{2}",
+   "differentes": true,
+   "souple": true
   },
   {
    "id": "ceb-2015-l6-q4",
@@ -3138,7 +3251,7 @@
    "numero": "4",
    "domaine": "hg.histoire",
    "type": "texte_court",
-   "enonce": "« Au revoir Marcelle et Gabriel. » Pour Marcel, qui sont-ils ?",
+   "enonce": "Dans le document C, Marcel Ladril a écrit : « Au revoir Marcelle et Gabriel ». Pour lui, qui sont Marcelle et Gabriel ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3151,7 +3264,9 @@
     "mes enfants",
     "leurs enfants",
     "son fils et sa fille",
-    "sa fille et son fils"
+    "sa fille et son fils",
+    "ses fils",
+    "ce sont ses enfants"
    ],
    "explication": "Ses deux enfants (arbre généalogique)."
   },
@@ -3161,7 +3276,7 @@
    "numero": "5a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Quel document le prouve ?",
+   "enonce": "Dans quel(s) document(s) trouve-t-on la preuve des trois affirmations ci-dessous ? Choisis un document qui convient pour chaque affirmation.",
    "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3170,11 +3285,13 @@
     "ladril-2"
    ],
    "lignes": [
-    "Marcel est prisonnier en aout 1914.",
-    "Marcel était toujours prisonnier en 1917.",
-    "Marcel a aussi vécu la Seconde Guerre mondiale."
+    "Marcel LADRIL est prisonnier en aout 1914.",
+    "Marcel LADRIL était toujours prisonnier en 1917.",
+    "Marcel LADRIL a également vécu durant la Seconde Guerre mondiale."
    ],
    "colonnes": [
+    "A",
+    "B",
     "C",
     "D",
     "E",
@@ -3182,12 +3299,12 @@
     "G"
    ],
    "reponse": [
-    0,
+    2,
     [
-     2,
-     3
+     4,
+     5
     ],
-    4
+    6
    ],
    "explication": "C : message du 6/8/1914 ; F : aquarelle faite au camp en mai 1917 ; G : mort en 1949. Pour 1917, les documents E et F conviennent tous les deux."
   },
@@ -3197,7 +3314,7 @@
    "numero": "5b",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Les enfants de Marcel Ladril.",
+   "enonce": "Un troisième enfant est né pendant que Marcel Ladril était prisonnier en Allemagne. Écris son prénom.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3205,7 +3322,7 @@
     "ladril-1",
     "ladril-2"
    ],
-   "texte": "Enfant né pendant sa captivité : {1}",
+   "texte": "Prénom : {1}",
    "reponse": [
     [
      "Samuel"
@@ -3219,7 +3336,7 @@
    "numero": "5d",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Le carnet (document D) dit : « Jeudi 24 septembre, aujourd'hui 29 ans ». Marcel est né en 1885. Quelle année ?",
+   "enonce": "Le document D est daté du 24 septembre, mais on n'y voit pas l'année. De quelle année s'agit-il ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -3242,7 +3359,7 @@
    "numero": "5e",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Arbre généalogique : qui a vécu… ?",
+   "enonce": "En observant le document G, choisis le prénom et le nom d'une personne qui :",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
@@ -3250,16 +3367,16 @@
     "ladril-2"
    ],
    "lignes": [
-    "au 20e siècle uniquement",
-    "au 19e et au 20e siècle",
-    "au 20e et au 21e siècle",
-    "le premier vol d'un homme dans l'espace (1961)"
+    "a vécu au 20e siècle uniquement ;",
+    "a vécu au 19e siècle et au 20e siècle ;",
+    "a vécu au 20e siècle et au 21e siècle ;",
+    "a vécu le premier vol d'un homme dans l'espace."
    ],
    "colonnes": [
-    "Marie Thiry (1881-1956)",
-    "Marie Ladril (1919-2011)",
-    "Gabriel Ladril (1913-1933)",
-    "Marcel Ladril (1885-1949)"
+    "Marie THIRY",
+    "Marie LADRIL",
+    "Gabriel LADRIL",
+    "Marcel LADRIL"
    ],
    "reponse": [
     2,
@@ -3278,7 +3395,7 @@
    "numero": "5f",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Nature des traces du passé.",
+   "enonce": "Identifie la nature de ces traces du passé. Pour chaque document (B, C, E, F), choisis la colonne qui convient.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3287,21 +3404,26 @@
     "ladril-2"
    ],
    "lignes": [
-    "Document B (Mme Ladril et ses enfants, 1915)",
-    "Document C (message)",
-    "Document E (hommage aux prisonniers)",
-    "Document F (aquarelle)"
+    "Document B",
+    "Document C",
+    "Document E",
+    "Document F"
    ],
    "colonnes": [
     "Monument",
     "Document écrit",
     "Photographie",
-    "Peinture"
+    "Peinture",
+    "Sculpture",
+    "Document audiovisuel"
    ],
    "reponse": [
     2,
     1,
-    0,
+    [
+     0,
+     4
+    ],
     3
    ],
    "explication": "Photo, texte, monument, aquarelle."
@@ -3312,7 +3434,7 @@
    "numero": "7",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "La carte-lettre (document H) : réponds, puis relève l'indice (la preuve) sur le document.",
+   "enonce": "Complète le tableau en observant le document H : pour chaque question, écris la réponse puis l'indice (la preuve) relevé sur le document. Exemple : Cette carte-lettre a-t-elle été envoyée à un homme ou à une femme ? Réponse : à une femme. Indice : le nom du destinataire, Madame Marcel Ladril.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3426,50 +3548,48 @@
    "livret": 6,
    "numero": "8",
    "domaine": "hg.geographie",
-   "type": "grille",
-   "enonce": "Malmedy et Eupen.",
+   "type": "trous",
+   "enonce": "Complète le tableau pour ces deux villes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-langues",
-   "lignes": [
-    "Province de Malmedy et d'Eupen",
-    "Communauté de Malmedy",
-    "Communauté d'Eupen",
-    "Région des deux villes"
-   ],
-   "colonnes": [
-    "Liège",
-    "française",
-    "germanophone",
-    "wallonne"
-   ],
    "reponse": [
-    0,
-    1,
-    2,
-    3
-   ],
-   "explication": "Toutes deux en province de Liège et en Région wallonne ; Malmedy est francophone, Eupen germanophone.",
-   "groupes": [
     [
-     0
+     "Liège",
+     "Liege",
+     "province de Liège"
     ],
     [
-     1
+     "française",
+     "francaise",
+     "Communauté française",
+     "FWB",
+     "CF",
+     "Fédération Wallonie-Bruxelles"
     ],
     [
-     2
+     "wallonne",
+     "Wallonie",
+     "Région wallonne"
     ],
     [
-     3
+     "Liège",
+     "Liege",
+     "province de Liège"
+    ],
+    [
+     "germanophone",
+     "Communauté germanophone"
+    ],
+    [
+     "wallonne",
+     "Wallonie",
+     "Région wallonne"
     ]
    ],
-   "pointsGroupes": [
-    1,
-    0.5,
-    0.5,
-    1
-   ]
+   "explication": "Toutes deux en province de Liège et en Région wallonne ; Malmedy est francophone, Eupen germanophone.",
+   "texte": "Ville de MALMEDY — Pays : Belgique · Province : {1} · Communauté (française, flamande, germanophone) : {2} · Région : {3}\nVille d'EUPEN — Pays : Belgique · Province : {4} · Communauté (française, flamande, germanophone) : {5} · Région : {6}",
+   "souple": true
   },
   {
    "id": "ceb-2015-l6-q13b",
@@ -3503,11 +3623,12 @@
    "numero": "16",
    "domaine": "hg.histoire",
    "type": "numerique",
-   "enonce": "L'exposition Van Gogh est ouverte tous les jours sauf le lundi, jusqu'au 17 mai 2015. Le 1er mai 2015 est un vendredi. Combien de jours est-elle encore ouverte en mai 2015 ?",
+   "enonce": "Voici une page du calendrier du mois de mai 2015 (livret, page 14). Utilise le document « Mons 2015 : quelques grandes expositions ». À l'épreuve, il fallait colorier tous les jours d'ouverture de l'exposition Van Gogh au Borinage au mois de mai 2015. Combien de jours l'exposition est-elle ouverte en mai 2015 ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "documents": [
+    "liv6-p14",
     "mons-2"
    ],
    "reponse": 15,
@@ -3520,7 +3641,7 @@
    "numero": "18a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Combien de temps dure l'exposition Atopolis (13 juin - 18 octobre 2015) ?",
+   "enonce": "Utilise le document « Mons 2015 : quelques grandes expositions ». Combien de temps durera l'exposition Atopolis ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -3557,7 +3678,7 @@
    "numero": "17",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Dates des expositions.",
+   "enonce": "Voici un extrait du calendrier des expositions de Mons 2015. Comme dans l'exemple (Verlaine, cellule 252 : du 17 octobre 2015 au 24 janvier 2016), écris la date de début et la date de fin de l'exposition Mons Superstar et de l'exposition L'Homme, le Dragon et la Mort.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -3659,12 +3780,12 @@
    "numero": "9",
    "domaine": "hg.histoire",
    "type": "numerique",
-   "enonce": "Marcel LADRIL habitait la commune de Theux. Observe la carte du portfolio (page 3). Quelle est la distance à vol d'oiseau qui sépare Theux de Liège ?",
+   "enonce": "Marcel Ladril habitait la commune de Theux. Observe la carte du portfolio. Quelle est la distance à vol d'oiseau qui sépare Theux de Liège ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
-    "cartes"
+    "carte-belgique"
    ],
    "reponse": 20,
    "unite": "km",
@@ -3812,6 +3933,15 @@
    "reponse": [
     [
      "table",
+     "chaise",
+     "armoire",
+     "nappe",
+     "assiette",
+     "vaisselle",
+     "ustensiles de cuisine",
+     "ustensile de cuisine",
+     "casserole",
+     "cuisinière",
      "tables",
      "le table",
      "le tables",
@@ -3827,7 +3957,6 @@
      "les tables",
      "des table",
      "des tables",
-     "chaise",
      "chaises",
      "le chaise",
      "le chaises",
@@ -3843,7 +3972,6 @@
      "les chaises",
      "des chaise",
      "des chaises",
-     "armoire",
      "armoires",
      "le armoire",
      "le armoires",
@@ -3859,7 +3987,6 @@
      "les armoires",
      "des armoire",
      "des armoires",
-     "nappe",
      "nappes",
      "le nappe",
      "le nappes",
@@ -3875,7 +4002,6 @@
      "les nappes",
      "des nappe",
      "des nappes",
-     "assiette",
      "assiettes",
      "le assiette",
      "le assiettes",
@@ -3891,7 +4017,6 @@
      "les assiettes",
      "des assiette",
      "des assiettes",
-     "vaisselle",
      "vaisselles",
      "le vaisselle",
      "le vaisselles",
@@ -3907,7 +4032,6 @@
      "les vaisselles",
      "des vaisselle",
      "des vaisselles",
-     "ustensile de cuisine",
      "ustensile de cuisines",
      "le ustensile de cuisine",
      "le ustensile de cuisines",
@@ -3923,7 +4047,6 @@
      "les ustensile de cuisines",
      "des ustensile de cuisine",
      "des ustensile de cuisines",
-     "ustensiles de cuisine",
      "ustensiles de cuisines",
      "le ustensiles de cuisine",
      "le ustensiles de cuisines",
@@ -3939,7 +4062,6 @@
      "les ustensiles de cuisines",
      "des ustensiles de cuisine",
      "des ustensiles de cuisines",
-     "casserole",
      "casseroles",
      "le casserole",
      "le casseroles",
@@ -3955,7 +4077,6 @@
      "les casseroles",
      "des casserole",
      "des casseroles",
-     "cuisinière",
      "cuisinières",
      "le cuisinière",
      "le cuisinières",
@@ -3974,6 +4095,15 @@
     ],
     [
      "chaise",
+     "table",
+     "armoire",
+     "nappe",
+     "assiette",
+     "vaisselle",
+     "ustensiles de cuisine",
+     "ustensile de cuisine",
+     "casserole",
+     "cuisinière",
      "chaises",
      "le chaise",
      "le chaises",
@@ -3989,7 +4119,6 @@
      "les chaises",
      "des chaise",
      "des chaises",
-     "table",
      "tables",
      "le table",
      "le tables",
@@ -4005,7 +4134,6 @@
      "les tables",
      "des table",
      "des tables",
-     "armoire",
      "armoires",
      "le armoire",
      "le armoires",
@@ -4021,7 +4149,6 @@
      "les armoires",
      "des armoire",
      "des armoires",
-     "nappe",
      "nappes",
      "le nappe",
      "le nappes",
@@ -4037,7 +4164,6 @@
      "les nappes",
      "des nappe",
      "des nappes",
-     "assiette",
      "assiettes",
      "le assiette",
      "le assiettes",
@@ -4053,7 +4179,6 @@
      "les assiettes",
      "des assiette",
      "des assiettes",
-     "vaisselle",
      "vaisselles",
      "le vaisselle",
      "le vaisselles",
@@ -4069,7 +4194,6 @@
      "les vaisselles",
      "des vaisselle",
      "des vaisselles",
-     "ustensile de cuisine",
      "ustensile de cuisines",
      "le ustensile de cuisine",
      "le ustensile de cuisines",
@@ -4085,7 +4209,6 @@
      "les ustensile de cuisines",
      "des ustensile de cuisine",
      "des ustensile de cuisines",
-     "ustensiles de cuisine",
      "ustensiles de cuisines",
      "le ustensiles de cuisine",
      "le ustensiles de cuisines",
@@ -4101,7 +4224,6 @@
      "les ustensiles de cuisines",
      "des ustensiles de cuisine",
      "des ustensiles de cuisines",
-     "casserole",
      "casseroles",
      "le casserole",
      "le casseroles",
@@ -4117,7 +4239,6 @@
      "les casseroles",
      "des casserole",
      "des casseroles",
-     "cuisinière",
      "cuisinières",
      "le cuisinière",
      "le cuisinières",
@@ -4136,6 +4257,15 @@
     ],
     [
      "armoire",
+     "table",
+     "chaise",
+     "nappe",
+     "assiette",
+     "vaisselle",
+     "ustensiles de cuisine",
+     "ustensile de cuisine",
+     "casserole",
+     "cuisinière",
      "armoires",
      "le armoire",
      "le armoires",
@@ -4151,7 +4281,6 @@
      "les armoires",
      "des armoire",
      "des armoires",
-     "table",
      "tables",
      "le table",
      "le tables",
@@ -4167,7 +4296,6 @@
      "les tables",
      "des table",
      "des tables",
-     "chaise",
      "chaises",
      "le chaise",
      "le chaises",
@@ -4183,7 +4311,6 @@
      "les chaises",
      "des chaise",
      "des chaises",
-     "nappe",
      "nappes",
      "le nappe",
      "le nappes",
@@ -4199,7 +4326,6 @@
      "les nappes",
      "des nappe",
      "des nappes",
-     "assiette",
      "assiettes",
      "le assiette",
      "le assiettes",
@@ -4215,7 +4341,6 @@
      "les assiettes",
      "des assiette",
      "des assiettes",
-     "vaisselle",
      "vaisselles",
      "le vaisselle",
      "le vaisselles",
@@ -4231,7 +4356,6 @@
      "les vaisselles",
      "des vaisselle",
      "des vaisselles",
-     "ustensile de cuisine",
      "ustensile de cuisines",
      "le ustensile de cuisine",
      "le ustensile de cuisines",
@@ -4247,7 +4371,6 @@
      "les ustensile de cuisines",
      "des ustensile de cuisine",
      "des ustensile de cuisines",
-     "ustensiles de cuisine",
      "ustensiles de cuisines",
      "le ustensiles de cuisine",
      "le ustensiles de cuisines",
@@ -4263,7 +4386,6 @@
      "les ustensiles de cuisines",
      "des ustensiles de cuisine",
      "des ustensiles de cuisines",
-     "casserole",
      "casseroles",
      "le casserole",
      "le casseroles",
@@ -4279,7 +4401,6 @@
      "les casseroles",
      "des casserole",
      "des casseroles",
-     "cuisinière",
      "cuisinières",
      "le cuisinière",
      "le cuisinières",
@@ -4317,6 +4438,25 @@
    "reponse": [
     [
      "micro-ondes",
+     "four à micro-ondes",
+     "frigo",
+     "frigidaire",
+     "réfrigérateur",
+     "hotte",
+     "TV",
+     "télévision",
+     "lave-vaisselle",
+     "grille-pain",
+     "boite à pain",
+     "boîte à pain",
+     "évier",
+     "cuisinière électrique",
+     "bouilloire électrique",
+     "bouilloire",
+     "four",
+     "luminaire",
+     "lampe",
+     "congélateur",
      "micro-ondess",
      "le micro-ondes",
      "le micro-ondess",
@@ -4332,7 +4472,6 @@
      "les micro-ondess",
      "des micro-ondes",
      "des micro-ondess",
-     "four à micro-ondes",
      "four à micro-ondess",
      "le four à micro-ondes",
      "le four à micro-ondess",
@@ -4372,7 +4511,6 @@
      "les micro ondess",
      "des micro ondes",
      "des micro ondess",
-     "frigo",
      "frigos",
      "le frigo",
      "le frigos",
@@ -4388,7 +4526,6 @@
      "les frigos",
      "des frigo",
      "des frigos",
-     "réfrigérateur",
      "réfrigérateurs",
      "le réfrigérateur",
      "le réfrigérateurs",
@@ -4404,7 +4541,6 @@
      "les réfrigérateurs",
      "des réfrigérateur",
      "des réfrigérateurs",
-     "frigidaire",
      "frigidaires",
      "le frigidaire",
      "le frigidaires",
@@ -4420,7 +4556,6 @@
      "les frigidaires",
      "des frigidaire",
      "des frigidaires",
-     "hotte",
      "hottes",
      "le hotte",
      "le hottes",
@@ -4436,7 +4571,6 @@
      "les hottes",
      "des hotte",
      "des hottes",
-     "TV",
      "TVs",
      "le TV",
      "le TVs",
@@ -4468,7 +4602,6 @@
      "les télés",
      "des télé",
      "des télés",
-     "télévision",
      "télévisions",
      "le télévision",
      "le télévisions",
@@ -4484,7 +4617,6 @@
      "les télévisions",
      "des télévision",
      "des télévisions",
-     "lave-vaisselle",
      "lave-vaisselles",
      "le lave-vaisselle",
      "le lave-vaisselles",
@@ -4500,7 +4632,6 @@
      "les lave-vaisselles",
      "des lave-vaisselle",
      "des lave-vaisselles",
-     "grille-pain",
      "grille-pains",
      "le grille-pain",
      "le grille-pains",
@@ -4516,7 +4647,6 @@
      "les grille-pains",
      "des grille-pain",
      "des grille-pains",
-     "boîte à pain",
      "boîte à pains",
      "le boîte à pain",
      "le boîte à pains",
@@ -4532,7 +4662,6 @@
      "les boîte à pains",
      "des boîte à pain",
      "des boîte à pains",
-     "évier",
      "éviers",
      "le évier",
      "le éviers",
@@ -4548,7 +4677,6 @@
      "les éviers",
      "des évier",
      "des éviers",
-     "cuisinière électrique",
      "cuisinière électriques",
      "le cuisinière électrique",
      "le cuisinière électriques",
@@ -4564,7 +4692,6 @@
      "les cuisinière électriques",
      "des cuisinière électrique",
      "des cuisinière électriques",
-     "bouilloire électrique",
      "bouilloire électriques",
      "le bouilloire électrique",
      "le bouilloire électriques",
@@ -4580,7 +4707,6 @@
      "les bouilloire électriques",
      "des bouilloire électrique",
      "des bouilloire électriques",
-     "bouilloire",
      "bouilloires",
      "le bouilloire",
      "le bouilloires",
@@ -4596,7 +4722,6 @@
      "les bouilloires",
      "des bouilloire",
      "des bouilloires",
-     "four",
      "fours",
      "le four",
      "le fours",
@@ -4612,7 +4737,6 @@
      "les fours",
      "des four",
      "des fours",
-     "luminaire",
      "luminaires",
      "le luminaire",
      "le luminaires",
@@ -4628,7 +4752,6 @@
      "les luminaires",
      "des luminaire",
      "des luminaires",
-     "congélateur",
      "congélateurs",
      "le congélateur",
      "le congélateurs",
@@ -4647,6 +4770,25 @@
     ],
     [
      "frigo",
+     "frigidaire",
+     "réfrigérateur",
+     "micro-ondes",
+     "four à micro-ondes",
+     "hotte",
+     "TV",
+     "télévision",
+     "lave-vaisselle",
+     "grille-pain",
+     "boite à pain",
+     "boîte à pain",
+     "évier",
+     "cuisinière électrique",
+     "bouilloire électrique",
+     "bouilloire",
+     "four",
+     "luminaire",
+     "lampe",
+     "congélateur",
      "frigos",
      "le frigo",
      "le frigos",
@@ -4662,7 +4804,6 @@
      "les frigos",
      "des frigo",
      "des frigos",
-     "four à micro-ondes",
      "four à micro-ondess",
      "le four à micro-ondes",
      "le four à micro-ondess",
@@ -4678,7 +4819,6 @@
      "les four à micro-ondess",
      "des four à micro-ondes",
      "des four à micro-ondess",
-     "micro-ondes",
      "micro-ondess",
      "le micro-ondes",
      "le micro-ondess",
@@ -4695,21 +4835,13 @@
      "des micro-ondes",
      "des micro-ondess",
      "micro-onde",
-     "micro-ondes",
      "le micro-onde",
-     "le micro-ondes",
      "la micro-onde",
-     "la micro-ondes",
      "l'micro-onde",
-     "l'micro-ondes",
      "un micro-onde",
-     "un micro-ondes",
      "une micro-onde",
-     "une micro-ondes",
      "les micro-onde",
-     "les micro-ondes",
      "des micro-onde",
-     "des micro-ondes",
      "micro ondes",
      "micro ondess",
      "le micro ondes",
@@ -4726,7 +4858,6 @@
      "les micro ondess",
      "des micro ondes",
      "des micro ondess",
-     "réfrigérateur",
      "réfrigérateurs",
      "le réfrigérateur",
      "le réfrigérateurs",
@@ -4742,7 +4873,6 @@
      "les réfrigérateurs",
      "des réfrigérateur",
      "des réfrigérateurs",
-     "frigidaire",
      "frigidaires",
      "le frigidaire",
      "le frigidaires",
@@ -4758,7 +4888,6 @@
      "les frigidaires",
      "des frigidaire",
      "des frigidaires",
-     "hotte",
      "hottes",
      "le hotte",
      "le hottes",
@@ -4774,7 +4903,6 @@
      "les hottes",
      "des hotte",
      "des hottes",
-     "TV",
      "TVs",
      "le TV",
      "le TVs",
@@ -4806,7 +4934,6 @@
      "les télés",
      "des télé",
      "des télés",
-     "télévision",
      "télévisions",
      "le télévision",
      "le télévisions",
@@ -4822,7 +4949,6 @@
      "les télévisions",
      "des télévision",
      "des télévisions",
-     "lave-vaisselle",
      "lave-vaisselles",
      "le lave-vaisselle",
      "le lave-vaisselles",
@@ -4838,7 +4964,6 @@
      "les lave-vaisselles",
      "des lave-vaisselle",
      "des lave-vaisselles",
-     "grille-pain",
      "grille-pains",
      "le grille-pain",
      "le grille-pains",
@@ -4854,7 +4979,6 @@
      "les grille-pains",
      "des grille-pain",
      "des grille-pains",
-     "boîte à pain",
      "boîte à pains",
      "le boîte à pain",
      "le boîte à pains",
@@ -4870,7 +4994,6 @@
      "les boîte à pains",
      "des boîte à pain",
      "des boîte à pains",
-     "évier",
      "éviers",
      "le évier",
      "le éviers",
@@ -4886,7 +5009,6 @@
      "les éviers",
      "des évier",
      "des éviers",
-     "cuisinière électrique",
      "cuisinière électriques",
      "le cuisinière électrique",
      "le cuisinière électriques",
@@ -4902,7 +5024,6 @@
      "les cuisinière électriques",
      "des cuisinière électrique",
      "des cuisinière électriques",
-     "bouilloire électrique",
      "bouilloire électriques",
      "le bouilloire électrique",
      "le bouilloire électriques",
@@ -4918,7 +5039,6 @@
      "les bouilloire électriques",
      "des bouilloire électrique",
      "des bouilloire électriques",
-     "bouilloire",
      "bouilloires",
      "le bouilloire",
      "le bouilloires",
@@ -4934,7 +5054,6 @@
      "les bouilloires",
      "des bouilloire",
      "des bouilloires",
-     "four",
      "fours",
      "le four",
      "le fours",
@@ -4950,7 +5069,6 @@
      "les fours",
      "des four",
      "des fours",
-     "luminaire",
      "luminaires",
      "le luminaire",
      "le luminaires",
@@ -4966,7 +5084,6 @@
      "les luminaires",
      "des luminaire",
      "des luminaires",
-     "congélateur",
      "congélateurs",
      "le congélateur",
      "le congélateurs",
@@ -4985,6 +5102,25 @@
     ],
     [
      "hotte",
+     "micro-ondes",
+     "four à micro-ondes",
+     "frigo",
+     "frigidaire",
+     "réfrigérateur",
+     "TV",
+     "télévision",
+     "lave-vaisselle",
+     "grille-pain",
+     "boite à pain",
+     "boîte à pain",
+     "évier",
+     "cuisinière électrique",
+     "bouilloire électrique",
+     "bouilloire",
+     "four",
+     "luminaire",
+     "lampe",
+     "congélateur",
      "hottes",
      "le hotte",
      "le hottes",
@@ -5000,7 +5136,6 @@
      "les hottes",
      "des hotte",
      "des hottes",
-     "four à micro-ondes",
      "four à micro-ondess",
      "le four à micro-ondes",
      "le four à micro-ondess",
@@ -5016,7 +5151,6 @@
      "les four à micro-ondess",
      "des four à micro-ondes",
      "des four à micro-ondess",
-     "micro-ondes",
      "micro-ondess",
      "le micro-ondes",
      "le micro-ondess",
@@ -5033,21 +5167,13 @@
      "des micro-ondes",
      "des micro-ondess",
      "micro-onde",
-     "micro-ondes",
      "le micro-onde",
-     "le micro-ondes",
      "la micro-onde",
-     "la micro-ondes",
      "l'micro-onde",
-     "l'micro-ondes",
      "un micro-onde",
-     "un micro-ondes",
      "une micro-onde",
-     "une micro-ondes",
      "les micro-onde",
-     "les micro-ondes",
      "des micro-onde",
-     "des micro-ondes",
      "micro ondes",
      "micro ondess",
      "le micro ondes",
@@ -5064,7 +5190,6 @@
      "les micro ondess",
      "des micro ondes",
      "des micro ondess",
-     "frigo",
      "frigos",
      "le frigo",
      "le frigos",
@@ -5080,7 +5205,6 @@
      "les frigos",
      "des frigo",
      "des frigos",
-     "réfrigérateur",
      "réfrigérateurs",
      "le réfrigérateur",
      "le réfrigérateurs",
@@ -5096,7 +5220,6 @@
      "les réfrigérateurs",
      "des réfrigérateur",
      "des réfrigérateurs",
-     "frigidaire",
      "frigidaires",
      "le frigidaire",
      "le frigidaires",
@@ -5112,7 +5235,6 @@
      "les frigidaires",
      "des frigidaire",
      "des frigidaires",
-     "TV",
      "TVs",
      "le TV",
      "le TVs",
@@ -5144,7 +5266,6 @@
      "les télés",
      "des télé",
      "des télés",
-     "télévision",
      "télévisions",
      "le télévision",
      "le télévisions",
@@ -5160,7 +5281,6 @@
      "les télévisions",
      "des télévision",
      "des télévisions",
-     "lave-vaisselle",
      "lave-vaisselles",
      "le lave-vaisselle",
      "le lave-vaisselles",
@@ -5176,7 +5296,6 @@
      "les lave-vaisselles",
      "des lave-vaisselle",
      "des lave-vaisselles",
-     "grille-pain",
      "grille-pains",
      "le grille-pain",
      "le grille-pains",
@@ -5192,7 +5311,6 @@
      "les grille-pains",
      "des grille-pain",
      "des grille-pains",
-     "boîte à pain",
      "boîte à pains",
      "le boîte à pain",
      "le boîte à pains",
@@ -5208,7 +5326,6 @@
      "les boîte à pains",
      "des boîte à pain",
      "des boîte à pains",
-     "évier",
      "éviers",
      "le évier",
      "le éviers",
@@ -5224,7 +5341,6 @@
      "les éviers",
      "des évier",
      "des éviers",
-     "cuisinière électrique",
      "cuisinière électriques",
      "le cuisinière électrique",
      "le cuisinière électriques",
@@ -5240,7 +5356,6 @@
      "les cuisinière électriques",
      "des cuisinière électrique",
      "des cuisinière électriques",
-     "bouilloire électrique",
      "bouilloire électriques",
      "le bouilloire électrique",
      "le bouilloire électriques",
@@ -5256,7 +5371,6 @@
      "les bouilloire électriques",
      "des bouilloire électrique",
      "des bouilloire électriques",
-     "bouilloire",
      "bouilloires",
      "le bouilloire",
      "le bouilloires",
@@ -5272,7 +5386,6 @@
      "les bouilloires",
      "des bouilloire",
      "des bouilloires",
-     "four",
      "fours",
      "le four",
      "le fours",
@@ -5288,7 +5401,6 @@
      "les fours",
      "des four",
      "des fours",
-     "luminaire",
      "luminaires",
      "le luminaire",
      "le luminaires",
@@ -5304,7 +5416,6 @@
      "les luminaires",
      "des luminaire",
      "des luminaires",
-     "congélateur",
      "congélateurs",
      "le congélateur",
      "le congélateurs",
@@ -5758,18 +5869,19 @@
    "livret": 7,
    "numero": "2",
    "domaine": "ma.arithmetique",
-   "type": "qcm",
-   "enonce": "Livre 50,50 €, clé USB 28,99 €, CD 19,40 €, écran 148,50 €, disque dur 87,10 €. Estime le total.",
+   "type": "texte_court",
+   "enonce": "Au magasin d'informatique, tu veux acheter : un livre à 50,50 euros, une clé USB à 28,99 euros, une boite de CD à 19,40 euros, un écran à 148,50 euros et un disque dur externe à 87,10 euros. Estime très rapidement ce que coutera cet achat. Écris un nombre à 3 chiffres qui se termine par zéro (en euros).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
-   "choix": [
-    "230",
+   "reponse": [
+    "300",
+    "310",
+    "320",
     "330",
-    "430",
-    "530"
+    "340",
+    "350"
    ],
-   "reponse": 1,
    "explication": "50 + 30 + 20 + 150 + 85 ≈ 335."
   },
   {
@@ -5778,11 +5890,11 @@
    "numero": "3",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Figures de carrés : 1, 4, 9, … 25 (figure 5).",
+   "enonce": "Observe la suite de figures. Figure 1 : 1 carré grisé ; figure 2 : 4 carrés grisés ; figure 3 : 9 carrés grisés ; figure 5 : 25 carrés grisés. a) Combien de carrés grisés contiendra la figure 4 ? b) Combien de carrés grisés contiendra la figure 10 ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-suites",
-   "texte": "Figure 4 : {1} carrés  ·  Figure 10 : {2} carrés",
+   "texte": "a) La figure 4 contiendra {1} carrés grisés.  ·  b) La figure 10 contiendra {2} carrés grisés.",
    "reponse": [
     [
      "16"
@@ -5791,7 +5903,10 @@
      "100"
     ]
    ],
-   "explication": "Figure n : n × n carrés."
+   "explication": "Figure n : n × n carrés.",
+   "documents": [
+    "liv7-p05"
+   ]
   },
   {
    "id": "ceb-2015-l7-q4",
@@ -5799,7 +5914,7 @@
    "numero": "4",
    "domaine": "ma.arithmetique",
    "type": "texte_court",
-   "enonce": "Nombre mystère : entre 28 et 29, 4 chiffres, centièmes = 7, dixièmes = unités.",
+   "enonce": "Retrouve le nombre mystère. Le nombre mystère est compris entre 28 et 29. Il est composé de quatre chiffres. Le chiffre des centièmes est 7. Le chiffre des dixièmes est le même que celui des unités. Écris ce nombre.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-decimaux",
@@ -5814,7 +5929,7 @@
    "numero": "7",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "Chaque livre est vendu 12 €. La 1re classe a encaissé 168 €, la 2e 288 €. Combien de livres vendus en tout ?",
+   "enonce": "Deux classes, l'une de 15 élèves et l'autre de 18 élèves, réalisent des livres. Le cout de fabrication d'un livre est de 5,25 €. Chaque livre est vendu 12 €. Après la vente, chaque classe compte l'argent contenu dans sa caisse : la première classe a encaissé 168 € ; la seconde classe a encaissé 288 €. Quel est le nombre total de livres vendus par les deux classes réunies ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -5828,16 +5943,16 @@
    "numero": "8",
    "domaine": "ma.arithmetique",
    "type": "ordre",
-   "enonce": "Range du plus petit au plus grand.",
+   "enonce": "Ordonne ces nombres du plus petit au plus grand. (À l'épreuve, il fallait aussi les écrire en chiffres.)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "elements": [
-    "2 500",
-    "2 105",
-    "1 205",
-    "5 102",
-    "1 502"
+    "deux-mille-cinq-cents",
+    "deux-mille-cent-cinq",
+    "mille-deux-cent-cinq",
+    "cinq-mille-cent-deux",
+    "mille-cinq-cent-deux"
    ],
    "reponse": [
     2,
@@ -5854,11 +5969,11 @@
    "numero": "9",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Complète : 1,2 = …",
+   "enonce": "Complète les opérations.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "1,2 × {1}  ·  12 × {2}  ·  120 × {3}  ·  6 × {4}  ·  0,6 × {5}  ·  0,06 × {6}",
+   "texte": "1,2 = 1,2 × {1}\n1,2 = 12 × {2}\n1,2 = 120 × {3}\n1,2 = 6 × {4}\n1,2 = 0,6 × {5}\n1,2 = 0,06 × {6}",
    "reponse": [
     [
      "1"
@@ -5893,15 +6008,15 @@
    "fiche": "ma-decimaux",
    "choix": [
     "1,304 kg",
-    "1,386 kg",
-    "1,285 kg",
-    "1,430 kg",
+    "1,035 kg",
     "1,408 kg",
-    "1,035 kg"
+    "1,430 kg",
+    "1,285 kg",
+    "1,386 kg"
    ],
    "reponse": [
     0,
-    1
+    5
    ],
    "explication": "1,304 et 1,386."
   },
@@ -5911,11 +6026,11 @@
    "numero": "11",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Pyramide d'additions : en bas 121, ?, 600 ; au milieu 380, ? ; en haut ?.",
+   "enonce": "Le nombre contenu dans chaque brique vaut la somme des nombres qui se trouvent dans les deux briques juste en dessous. Exemple : en bas 5, 2 et 4 ; au milieu 7 et 6 ; en haut 13 (13 = 7 + 6 ; 6 = 2 + 4 ; 5 = 7 − 2). Complète les cases du mur : en bas 121, … et 600 ; au milieu 380 et … ; en haut ….",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "Case du bas : {1}  ·  Case du milieu : {2}  ·  Sommet : {3}",
+   "texte": "Brique du bas (au milieu) : {1}  ·  Brique du milieu (à droite) : {2}  ·  Brique du haut : {3}",
    "reponse": [
     [
      "259"
@@ -5929,7 +6044,10 @@
     ]
    ],
    "explication": "380 − 121 = 259 ; 259 + 600 = 859 ; 380 + 859 = 1 239.",
-   "toutOuRien": true
+   "toutOuRien": true,
+   "documents": [
+    "liv7-p13"
+   ]
   },
   {
    "id": "ceb-2015-l7-q15a",
@@ -5937,14 +6055,14 @@
    "numero": "15a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "3 452 + 6 798 devient 3 458 + 6 792 (on échange les chiffres des unités). Le résultat…",
+   "enonce": "Voici une addition et cette addition modifiée. Addition de départ : 3 452 + 6 798. Addition modifiée : 3 458 + 6 792. Que devient le résultat après cette permutation de deux chiffres ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "choix": [
-    "augmente.",
-    "reste identique.",
-    "diminue."
+    "Le résultat de l'addition augmente.",
+    "Le résultat de l'addition reste identique.",
+    "Le résultat de l'addition diminue."
    ],
    "reponse": 1,
    "explication": "+6 d'un côté, −6 de l'autre."
@@ -5955,14 +6073,14 @@
    "numero": "15b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "3 452 + 6 798 devient 3 425 + 6 798. Le résultat…",
+   "enonce": "Voici une addition et cette addition modifiée. Addition de départ : 3 452 + 6 798. Addition modifiée : 3 425 + 6 798. Que devient le résultat après cette permutation de deux chiffres ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "choix": [
-    "augmente.",
-    "reste identique.",
-    "diminue."
+    "Le résultat de l'addition augmente.",
+    "Le résultat de l'addition reste identique.",
+    "Le résultat de l'addition diminue."
    ],
    "reponse": 2,
    "explication": "3 425 < 3 452."
@@ -6120,7 +6238,7 @@
    "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Observe cet arbre de calcul (livret, page 16). Que devient le résultat final si on remplace 4 par 5 ? Coche la proposition correcte.",
+   "enonce": "Observe cet arbre de calcul (livret, page 16). Que devient le résultat final si on remplace 4 par 5 ? Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
@@ -6161,21 +6279,33 @@
    "reponse": [
     [
      "kg",
+     "kilos",
+     "kilo",
+     "kilogrammes",
+     "kilogramme",
      "€",
      "euros"
     ],
     [
-     "g"
+     "g",
+     "grammes",
+     "gramme",
+     "gr"
     ],
     [
-     "kg"
+     "kg",
+     "kilo",
+     "kilos",
+     "kilogrammes",
+     "kilogramme"
     ],
     [
      "l",
      "L",
+     "litres",
+     "litre",
      "€",
-     "euros",
-     "litres"
+     "euros"
     ],
     [
      "€",
@@ -6183,17 +6313,21 @@
      "euro"
     ],
     [
-     "cl"
+     "cl",
+     "centilitres",
+     "centilitre"
     ],
     [
      "cents",
      "c",
+     "eurocentimes",
      "centimes",
      "cent"
     ],
     [
      "min",
-     "minutes"
+     "minutes",
+     "minute"
     ]
    ],
    "explication": "kg, g, kg, l, €, cl, cents, min."
@@ -6204,11 +6338,11 @@
    "numero": "3",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Thé noir : 90-100 °C, 5 min, 12 g/l. Tisanes aux herbes et aux fruits, thé rouge : 95-100 °C, 10 min, 20 g/l.",
+   "enonce": "POUR BIEN PRÉPARER VOTRE THÉ… (température de l'eau ; temps d'infusion ; quantité de thé pour 1 litre d'eau)\nThé noir : 90 – 100 °C ; 5 min ; 12 g\nThé vert : 75 – 80 °C ; 3 min ; 12 g\nThé blanc : 75 – 80 °C ; 7 min ; 12 g\nThé rouge : 95 – 100 °C ; 10 min ; 20 g\nTisane aux fruits : 95 – 100 °C ; 10 min ; 20 g\nTisane aux herbes : 95 – 100 °C ; 10 min ; 20 g",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
-   "texte": "Infusion du thé noir : {1} min  ·  Température maximale pour la tisane aux herbes : {2} °C  ·  Thé rouge pour 250 ml : {3} g  ·  Eau pour 30 g de tisane aux fruits : {4} l",
+   "texte": "a) Combien de temps le thé noir doit-il infuser ? {1} min\nb) À quelle température maximale doit-on faire chauffer l'eau pour préparer une tisane aux herbes ? {2} °C\nc) Quelle quantité de thé rouge doit-on mettre dans 250 ml d'eau ? {3} g\nd) Quelle quantité d'eau doit-on prévoir pour 30 g de tisane aux fruits ? {4} l",
    "reponse": [
     [
      "5"
@@ -6231,20 +6365,28 @@
    "numero": "5",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Cocktail de 3 l : 1/2 de jus de pomme, 3/10 de jus d'ananas, 2/10 de sirop.",
+   "enonce": "Cocktail exotique : 1/2 de jus de pomme, 3/10 de jus d'ananas, 2/10 de sirop de framboise. On prépare 3 litres de ce cocktail exotique. Calcule, en litres, la quantité nécessaire de chaque ingrédient.",
    "points": 1.5,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
-   "texte": "Pomme : {1} l  ·  Ananas : {2} l  ·  Sirop : {3} l",
+   "texte": "Il faudra : {1} litre(s) de jus de pomme  ·  {2} litre(s) de jus d'ananas  ·  {3} litre(s) de sirop de framboise",
    "reponse": [
     [
-     "1,5"
+     "1,5",
+     "15/10",
+     "3/2",
+     "1.5"
     ],
     [
-     "0,9"
+     "0,9",
+     "9/10",
+     "0.9"
     ],
     [
-     "0,6"
+     "0,6",
+     "6/10",
+     "3/5",
+     "0.6"
     ]
    ],
    "explication": "3 : 2 ; 3 × 0,3 ; 3 × 0,2."
@@ -6255,11 +6397,11 @@
    "numero": "10",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "1 tasse = 20 cuillères ; 1 bouteille = 4 tasses ; 1 seau = 5 bouteilles.",
+   "enonce": "On compare la capacité de 4 récipients (dessin du livret, page 13). Complète. Si je me sers du matériel présenté :",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "{1} cuillères pour 1 tasse  ·  {2} tasses pour 2 bouteilles  ·  {3} tasses pour 1 seau  ·  40 tasses remplissent {4} seaux",
+   "texte": "il faudra {1} cuillère(s) d'eau pour remplir 1 tasse  ·  il faudra {2} tasse(s) d'eau pour remplir 2 bouteilles  ·  il faudra {3} tasse(s) d'eau pour remplir 1 seau  ·  avec 40 tasses d'eau, on remplira {4} seau(x)",
    "reponse": [
     [
      "20"
@@ -6274,7 +6416,10 @@
      "2"
     ]
    ],
-   "explication": "4 × 5 = 20 tasses par seau."
+   "explication": "4 × 5 = 20 tasses par seau.",
+   "documents": [
+    "liv8-p13"
+   ]
   },
   {
    "id": "ceb-2015-l8-q11",
@@ -6282,7 +6427,7 @@
    "numero": "11",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Quelles propositions expriment une grandeur ?",
+   "enonce": "Parmi les propositions ci-dessous, quelles sont celles qui expriment une grandeur ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -6291,9 +6436,9 @@
     "La durée de garantie",
     "Le type de carburant",
     "La longueur de la voiture",
-    "La marque",
+    "La marque de la voiture",
     "Le poids de la voiture",
-    "La capacité du réservoir"
+    "La capacité du réservoir d'essence"
    ],
    "reponse": [
     0,
@@ -6329,7 +6474,7 @@
    "numero": "14",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un avion vole à 30 561 pieds. 1 pied = 0,305 m. Quelle est son altitude en mètres ?",
+   "enonce": "Dans le monde de l'aviation, l'unité de longueur utilisée pour exprimer l'altitude est le pied. Un avion vole à une altitude de 30 561 pieds. 1 pied correspond à 0,305 m. Calcule, en mètres, l'altitude à laquelle vole cet avion.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -6538,7 +6683,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Pour l'auteure, parler, ce n'est pas répéter des mots ; parler, c'est…",
+   "enonce": "« Les animaux parlent-ils ? Non, ils ne parlent pas. Et les perroquets alors ? Certains perroquets sont capables de répéter des mots ou de courtes phrases qu'ils ont entendus, mais pas de créer des phrases qui ont du sens. Les animaux ne parlent pas. Les animaux n'utilisent pas une langue pour se faire comprendre. » Complète. Pour l'auteure, parler, ce n'est pas répéter des mots ou de courtes phrases ; parler, c'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -6548,7 +6693,9 @@
    "reponse": [
     "créer des phrases qui ont du sens",
     "creer des phrases qui ont du sens",
-    "faire des phrases qui ont du sens"
+    "faire des phrases qui ont du sens",
+    "utiliser une langue",
+    "utiliser une langue pour se faire comprendre"
    ],
    "explication": "« …mais pas de créer des phrases qui ont du sens »."
   },
@@ -6558,7 +6705,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Les individus communiquent s'ils produisent des messages compréhensibles et s'ils…",
+   "enonce": "« Lorsque des individus vivent en groupe, ils doivent pouvoir produire des messages compréhensibles par les autres et comprendre les messages produits par les autres. Autrement dit, ils doivent être capables de communiquer. » Complète. Selon l'auteure, les individus communiquent si, à la fois, ils produisent des messages compréhensibles par les autres et ils…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -6567,7 +6714,8 @@
    ],
    "reponse": [
     "comprennent les messages produits par les autres",
-    "comprennent les messages des autres"
+    "comprennent les messages des autres",
+    "comprennent les messages produits"
    ],
    "explication": "Il faut produire et comprendre."
   },
@@ -6577,7 +6725,7 @@
    "numero": "4",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Les animaux n'utilisent pas une langue pour se faire comprendre. » Quel sens a « langue » ?",
+   "enonce": "Au 2e paragraphe, l'auteure écrit : « Les animaux n'utilisent pas une langue pour se faire comprendre. » Voici trois définitions du mot « langue ». Quelle lettre correspond au sens que le mot « langue » a dans cette phrase ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -6585,9 +6733,9 @@
     "comm-1"
    ],
    "choix": [
-    "A. Organe mobile situé dans la bouche.",
-    "B. Système de signes verbaux appartenant à un ensemble de personnes.",
-    "C. Façon spéciale de parler."
+    "A. LANGUE : organe mobile situé dans la bouche, il sert à la déglutition, à la parole. Exemple : un muscle de la langue.",
+    "B. LANGUE : système de signes verbaux appartenant à un ensemble de personnes. Exemple : la langue chinoise.",
+    "C. LANGUE : façon spéciale de parler. Exemple : la langue des ados."
    ],
    "reponse": 1,
    "explication": "Une langue comme le français ou le chinois."
@@ -6598,7 +6746,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Quels intertitres pourraient remplacer « A. Les langages des animaux » ?",
+   "enonce": "Choisis les deux intertitres qui pourraient remplacer l'intertitre A « Les langages des animaux ».",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -6624,7 +6772,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans quelle partie placer ces phrases ?",
+   "enonce": "Dans quelle partie du texte (A – B – C – D) pourrais-tu placer les phrases suivantes ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -6638,10 +6786,10 @@
     "À l'âge adulte, tu utiliseras entre 3 000 et 12 000 mots."
    ],
    "colonnes": [
-    "A. Animaux",
-    "B. Êtres humains",
-    "C. Communication verbale",
-    "D. Non verbale"
+    "A",
+    "B",
+    "C",
+    "D"
    ],
    "reponse": [
     0,
@@ -6780,7 +6928,7 @@
    "numero": "13",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Un sportif : de quel type de communication s'agit-il ?",
+   "enonce": "Voici des exemples de communication. Pour chacun, choisis s'il s'agit d'un geste, d'une mimique, d'un déplacement ou d'une communication verbale.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -6788,7 +6936,7 @@
     "comm-3"
    ],
    "lignes": [
-    "Il monte sur le podium.",
+    "Le sportif monte sur le podium.",
     "Il sourit.",
     "Il montre sa médaille au public.",
     "Il remercie son entraineur et sa famille."
@@ -6849,7 +6997,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Sans tenir compte des humains, on constate que certains animaux…",
+   "enonce": "Choisis les trois propositions correctes. Sans tenir compte des êtres humains, on constate que…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -6857,12 +7005,12 @@
     "comm-1"
    ],
    "choix": [
-    "peuvent communiquer entre eux.",
-    "peuvent parler entre eux.",
-    "utilisent un langage.",
-    "utilisent une langue.",
-    "utilisent une communication verbale.",
-    "utilisent une communication non verbale."
+    "certains animaux peuvent communiquer entre eux.",
+    "certains animaux peuvent parler entre eux.",
+    "certains animaux utilisent un langage.",
+    "certains animaux utilisent une langue.",
+    "certains animaux utilisent une communication verbale.",
+    "certains animaux utilisent une communication non verbale."
    ],
    "reponse": [
     0,
@@ -6885,10 +7033,10 @@
     "comm-2"
    ],
    "lignes": [
-    "Avant l'écriture, les hommes ne communiquent qu'en se parlant.",
-    "Après l'écriture, les hommes ne communiquent qu'en se parlant.",
-    "Avant l'écriture, les hommes communiquent aussi sans se parler.",
-    "Après l'écriture, les hommes communiquent aussi sans se parler."
+    "Avant l'invention de l'écriture, les hommes ne communiquent qu'en se parlant.",
+    "Après l'invention de l'écriture, les hommes ne communiquent qu'en se parlant.",
+    "Avant l'invention de l'écriture, les hommes communiquent aussi sans se parler.",
+    "Après l'invention de l'écriture, les hommes communiquent aussi sans se parler."
    ],
    "colonnes": [
     "Vrai",
@@ -6908,7 +7056,7 @@
    "numero": "17",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Gestes, mimiques, changements de position et déplacements se combinent souvent entre eux. Souvent aussi, ils s'ajoutent à la communication verbale. » « ils » remplace…",
+   "enonce": "« Gestes, mimiques, changements de position et déplacements se combinent souvent entre eux. Souvent aussi, ils s'ajoutent à la communication verbale (c'est-à-dire à l'aide d'une langue) pour signifier quelque chose. » Sois précis : « ils » remplace…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -6939,15 +7087,19 @@
    "numero": "19",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Complète le tableau (verbe conjugué, mode, temps, personne, infinitif). Exemple : « disposent » : indicatif, présent, 3e p. pl., disposer.",
+   "enonce": "« Nous avons vu que les êtres humains communiquaient parfois entre eux au moyen de gestes. Songe à l'agent de police qui lève la main pour arrêter les automobilistes. Mais les êtres humains disposent d'autres moyens de communication non verbale […] » Complète le tableau. Exemple : « disposent » : mode indicatif, temps présent, 3e personne du pluriel, infinitif disposer.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "comm-3"
    ],
-   "texte": "« avons vu » (indicatif) : temps {1}, personne {2}, infinitif {3}\n« communiquaient » (indicatif) : temps {4}, personne {5}, infinitif {6}\n« songe » : mode {7}, temps {8}, personne {9}, infinitif {10}\n« lève » (indicatif) : temps {11}, personne {12}, infinitif {13}",
+   "texte": "« avons vu » : mode {1}, temps {2}, personne {3}, infinitif {4}\n« communiquaient » : mode {5}, temps {6}, personne {7}, infinitif {8}\n« songe » : mode {9}, temps {10}, personne {11}, infinitif {12}\n« lève » : mode {13}, temps {14}, personne {15}, infinitif {16}",
    "reponse": [
+    [
+     "indicatif",
+     "l'indicatif"
+    ],
     [
      "passé composé",
      "le passé composé",
@@ -6958,15 +7110,16 @@
      "1re p. pl",
      "1re pers. pl.",
      "1re personne du pluriel",
-     "1re personne pluriel",
      "1ère personne du pluriel",
-     "1ère p. pl.",
-     "1ère personne pluriel",
      "1e p. pl.",
      "nous"
     ],
     [
      "voir"
+    ],
+    [
+     "indicatif",
+     "l'indicatif"
     ],
     [
      "imparfait",
@@ -6977,13 +7130,9 @@
      "3e p. pl",
      "3e pers. pl.",
      "3e personne du pluriel",
-     "3e personne pluriel",
      "3ème personne du pluriel",
-     "3ème p. pl.",
-     "3ème personne pluriel",
      "ils",
-     "elles",
-     "ils/elles"
+     "elles"
     ],
     [
      "communiquer"
@@ -6991,8 +7140,7 @@
     [
      "impératif",
      "imperatif",
-     "l'impératif",
-     "l'imperatif"
+     "l'impératif"
     ],
     [
      "présent",
@@ -7003,15 +7151,16 @@
      "2e p. s.",
      "2e p. s",
      "2e p. sing.",
-     "2e pers. sing.",
      "2e personne du singulier",
-     "2e personne singulier",
      "2ème personne du singulier",
-     "2ème p. s.",
      "tu"
     ],
     [
      "songer"
+    ],
+    [
+     "indicatif",
+     "l'indicatif"
     ],
     [
      "présent",
@@ -7022,15 +7171,10 @@
      "3e p. s.",
      "3e p. s",
      "3e p. sing.",
-     "3e pers. sing.",
      "3e personne du singulier",
-     "3e personne singulier",
      "3ème personne du singulier",
-     "3ème p. s.",
      "il",
-     "elle",
-     "il/elle",
-     "on"
+     "elle"
     ],
     [
      "lever"
@@ -7042,23 +7186,26 @@
     [
      0,
      1,
-     2
+     2,
+     3
     ],
     [
-     3,
      4,
-     5
-    ],
-    [
+     5,
      6,
-     7,
-     8,
-     9
+     7
     ],
     [
+     8,
+     9,
      10,
-     11,
-     12
+     11
+    ],
+    [
+     12,
+     13,
+     14,
+     15
     ]
    ]
   },
@@ -7104,7 +7251,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Observe le schéma de l'appareil phonatoire et relis le paragraphe qui s'y rapporte (partie B). Ce paragraphe ne reprend pas toutes les informations du schéma. Écris le nom d'un élément du schéma qui n'est pas cité dans le paragraphe.",
+   "enonce": "Observe le schéma de l'appareil phonatoire et relis le paragraphe qui s'y rapporte (partie B). Ce paragraphe reprend-il toutes les informations du schéma ? Justifie par un élément du schéma : écris un élément du schéma qui n'est pas cité dans le paragraphe, ou « tous » s'il ne manque rien.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -7186,8 +7333,9 @@
      "l'auteure",
      "l'auteur",
      "Adèle Wanson",
-     "Adele Wanson",
+     "A. Wanson",
      "Wanson",
+     "Adele Wanson",
      "l'auteure du texte",
      "l'auteure, Adèle Wanson"
     ],
@@ -7195,8 +7343,9 @@
      "au lecteur",
      "le lecteur",
      "à celui qui lit",
-     "celui qui lit",
      "à moi",
+     "moi",
+     "celui qui lit",
      "au lecteur du texte",
      "à celui qui lit le texte",
      "à la lectrice",
