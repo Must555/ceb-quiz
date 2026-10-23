@@ -117,6 +117,7 @@ export function enregistrerSession(j, resume, modeJeu, jour = aujourdhui()) {
 
   const s = { ...resume, modeJeu, date: new Date().toISOString() };
   delete s.idsVus;
+  delete s.visiblesVus;
   j.sessions.push(s);
 
   // Badges

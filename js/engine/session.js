@@ -3,7 +3,8 @@
 // RÈGLE ABSOLUE : au cours d'une même session, une question ne revient jamais.
 // Trois verrous le garantissent :
 //   1. `vus` : ids déjà posés (questions de la banque ET variantes générées) ;
-//   2. `contenus` : énoncés normalisés déjà posés (deux ids différents mais même texte = doublon) ;
+//   2. `contenus` : énoncés normalisés déjà posés (deux ids différents mais même texte = doublon),
+//      et ce que l'enfant voit (texte, choix, dessin, documents, sans l'ordre d'affichage : `cleVisible`) ;
 //   3. les modèles sont limités en nombre de variantes par session et jamais tirés deux fois de suite,
 //      pour éviter une impression de répétition (« encore un calcul de soldes ! »).
 //
@@ -14,6 +15,14 @@ import { createRng } from './random.js';
 import { genererVariante } from './generator.js';
 import { corriger } from './checker.js';
 import { normaliserTexte, formatNombre } from './format.js';
+
+// Ce que l'enfant voit, sans l'ordre d'affichage : deux questions identiques à l'écran sont la même question,
+// même si leurs clés internes diffèrent (prénom non affiché, ordre des propositions, numéro de forme…).
+const memoVisible = new WeakMap();
+export const cleVisible = (q) => { let k = memoVisible.get(q); if (k == null) { k = calculerCleVisible(q); memoVisible.set(q, k); } return k; };
+const calculerCleVisible = (q) => 'v|' + [q.enonce, q.texte ?? '', q.figure ?? '', ...(q.documents ?? []),
+  ...[q.choix, q.lignes, q.elements, q.gauche, q.droite].map((a) => (a ?? []).map((x) => normaliserTexte(String(x))).sort().join('/'))]
+  .map((x) => normaliserTexte(String(x))).join('|');
 
 // Colonnes d'une ligne de grille : `colonnesParLigne` quand chaque ligne a ses propres choix (ex. continent puis siècle).
 export const colonnesDe = (q, i) => q.colonnesParLigne?.[i] ?? q.colonnes;
@@ -45,10 +54,13 @@ const ECART_POIDS = [1, 0.3, 0.08]; // poids selon l'écart entre la difficulté
 export const estJouable = (q) => q.reponse != null || (q.type === 'ouverte' && !!q.reponseModele);
 
 export class QuizSession {
-  constructor({ banque = [], modeles = [], historique = [], examen = null }, options = {}) {
+  constructor({ banque = [], modeles = [], historique = [], vusSeance = [], examen = null }, options = {}) {
     this.o = { ...PAR_DEFAUT, ...options };
     this.rng = createRng(this.o.seed ?? Date.now());
     this.historique = new Set(historique);
+    // Questions déjà vues pendant cette séance (séries précédentes), telles que l'enfant les a vues (cleVisible).
+    this.vusSeance = new Set(vusSeance);
+    this.visiblesPoses = [];
     this.vus = new Set();
     this.contenus = new Set();
     this.parModele = new Map();
@@ -105,7 +117,7 @@ export class QuizSession {
 
   // --- Tirage -------------------------------------------------------------
   dejaPosee(q) {
-    return this.vus.has(q.id) || this.contenus.has(normaliserTexte(q.cleContenu ?? q.enonce));
+    return this.vus.has(q.id) || this.contenus.has(normaliserTexte(q.cleContenu ?? q.enonce)) || this.contenus.has(cleVisible(q));
   }
 
   suivante() {
@@ -117,6 +129,8 @@ export class QuizSession {
     if (!q) return null; // plus aucune question neuve disponible pour ces filtres
     this.vus.add(q.id);
     this.contenus.add(normaliserTexte(q.cleContenu ?? q.enonce));
+    this.contenus.add(cleVisible(q));
+    this.visiblesPoses.push(cleVisible(q));
     this.courante = q;
     return q;
   }
@@ -135,7 +149,7 @@ export class QuizSession {
   }
 
   tirerDansPool(eviterHistorique) {
-    const fixes = this.banque.filter((q) => !this.dejaPosee(q) && !(eviterHistorique && this.historique.has(q.id)));
+    const fixes = this.banque.filter((q) => !this.dejaPosee(q) && !(eviterHistorique && (this.historique.has(q.id) || this.vusSeance.has(cleVisible(q)))));
     const modeles = this.modeles.filter((m) =>
       (this.parModele.get(m.id) ?? 0) < this.o.maxParModele && !this.epuises.has(m.id));
     const poidsBase = this.o.poids ?? (() => 1);
@@ -170,7 +184,7 @@ export class QuizSession {
         if (!this.o.adaptatif || v.difficulte == null || Math.abs(v.difficulte - this.niveau) === 0) { q = v; break; }
         if (Math.abs(v.difficulte - this.niveau) < Math.abs((q.difficulte ?? this.niveau) - this.niveau)) q = v;
       }
-      if (!q || this.dejaPosee(q)) {
+      if (!q || this.dejaPosee(q) || (eviterHistorique && this.vusSeance.has(cleVisible(q)))) {
         // Modèle épuisé pour cette session : on le retire du tirage.
         if (!q && !eviterHistorique) this.epuises.add(modele.id);
         candidats = candidats.filter((x) => x !== c);
@@ -260,6 +274,7 @@ export class QuizSession {
       dureeSecondes: this.tempsEcoule(),
       parDomaine,
       idsVus: [...this.vus], // à ajouter à l'historique de l'enfant
+      visiblesVus: [...this.visiblesPoses], // à retenir pour la suite de la séance (sans l'enregistrer)
       // Détail question par question (pour le coach : maîtrise par notion, révisions)
       details: this.reponses.map((r) => ({ questionId: r.questionId, modeleId: r.modeleId, domaine: r.domaine, notion: r.notion, correct: r.correct, ratio: r.max ? (r.score ?? 0) / r.max : 0 })),
     };
