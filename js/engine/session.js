@@ -15,6 +15,9 @@ import { genererVariante } from './generator.js';
 import { corriger } from './checker.js';
 import { normaliserTexte, formatNombre } from './format.js';
 
+// Colonnes d'une ligne de grille : `colonnesParLigne` quand chaque ligne a ses propres choix (ex. continent puis siècle).
+export const colonnesDe = (q, i) => q.colonnesParLigne?.[i] ?? q.colonnes;
+
 const PAR_DEFAUT = {
   mode: 'entrainement',   // 'entrainement' | 'examen'
   nbQuestions: 10,
@@ -271,7 +274,7 @@ export function bonneReponseLisible(q) {
     case 'numerique': return `${formatNombre(q.reponse)}${q.unite ? ' ' + q.unite : ''}`;
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]).join(' / ');
-    case 'grille': return q.lignes.map((l, i) => `${l} → ${[].concat(q.reponse[i]).map((c) => q.colonnes[c]).join(' ou ')}`).join('\n');
+    case 'grille': return q.lignes.map((l, i) => `${l} → ${[].concat(q.reponse[i]).map((c) => colonnesDe(q, i)[c]).join(' ou ')}`).join('\n');
     case 'ordre': return q.reponse.map((i) => q.elements[i]).join(' → ');
     case 'association': return q.reponse.map(([g, d]) => `${q.gauche[g]} ↔ ${q.droite[d]}`).join('\n');
     case 'ouverte': return q.reponseModele ?? '';
@@ -289,7 +292,7 @@ export function reponseEleveLisible(q, r) {
     case 'qcm_multi': return [].concat(r).map((i) => q.choix?.[i]).join(' ; ');
     case 'vrai_faux': return r ? 'Vrai' : 'Faux';
     case 'trous': return [].concat(r).map(tiret).join(' / ');
-    case 'grille': return q.lignes.map((l, i) => `${l} → ${tiret(q.colonnes[[].concat(r)[i]])}`).join('\n');
+    case 'grille': return q.lignes.map((l, i) => `${l} → ${tiret(colonnesDe(q, i)[[].concat(r)[i]])}`).join('\n');
     case 'ordre': return [].concat(r).map((i) => q.elements[i]).join(' → ');
     case 'association': return [].concat(r).map(([g, d]) => `${q.gauche[g]} ↔ ${q.droite[d]}`).join('\n');
     default: return String(r);

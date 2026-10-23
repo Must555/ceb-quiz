@@ -58,8 +58,14 @@ export function corriger(question, reponseEleve) {
       return { correct: ok, score: ok ? max : 0, max };
     }
     case 'qcm_multi': {
-      const ok = memeEnsemble(reponseEleve.map(Number), question.reponse);
-      return { correct: ok, score: ok ? max : 0, max };
+      const choisis = [...new Set(reponseEleve.map(Number))];
+      const ok = memeEnsemble(choisis, question.reponse);
+      if (!question.parReponse || ok) return { correct: ok, score: ok ? max : 0, max };
+      // parReponse : « 1 pt par bonne réponse, −1 pt par réponse en trop » (jamais en dessous de 0).
+      const bons = choisis.filter((i) => question.reponse.includes(i)).length;
+      const trop = choisis.length - bons;
+      const score = Math.round((Math.max(0, bons - trop) / question.reponse.length) * max * 100) / 100;
+      return { correct: false, score, max, detail: `${bons}/${question.reponse.length}`, ...(trop ? { remarque: 'Une réponse en trop retire un point, comme à l\'épreuve.' } : {}) };
     }
     case 'numerique': {
       const n = parseNombre(reponseEleve);
@@ -84,7 +90,7 @@ export function corriger(question, reponseEleve) {
         vues.add(cle);
         return true;
       });
-      const res = noter(oks, question, max);
+      const res = noter(oks, question, max, reponseEleve);
       return repetee ? { ...res, remarque: 'Il faut des réponses différentes.' } : res;
     }
     case 'grille': {
@@ -99,7 +105,7 @@ export function corriger(question, reponseEleve) {
         vus.add(Number(reponseEleve[i]));
         return true;
       });
-      return noter(oks, question, max);
+      return noter(oks, question, max, reponseEleve);
     }
     case 'ordre': {
       const bons = question.reponse.filter((v, i) => estRempli(reponseEleve[i]) && Number(reponseEleve[i]) === v).length;
@@ -124,9 +130,23 @@ export function corriger(question, reponseEleve) {
 // Barème du correctif : toutOuRien → tous les points ou aucun ; groupes = [[0, 1], [2, 3]] → chaque
 // groupe de cases est noté « tout ou rien » (les cases hors groupe comptent seules) ; pointsGroupes
 // donne le poids de chaque groupe (sinon parts égales).
-function noter(oks, question, max) {
+function noter(oks, question, max, reponseEleve) {
   const bons = oks.filter(Boolean).length;
   const base = partiel(bons, oks.length, max);
+  // exclusif : « 0 point si un même élément est placé à deux endroits » (les colonnes que le corrigé
+  // emploie plusieurs fois, comme « laissée vide », peuvent se répéter).
+  if (question.exclusif && reponseEleve) {
+    const attendu = question.reponse.map((r) => [].concat(r)[0]);
+    const vus = new Map();
+    reponseEleve.forEach((v) => { if (v != null && v !== '') vus.set(String(v), (vus.get(String(v)) ?? 0) + 1); });
+    const double = [...vus].some(([v, n]) => n > 1 && attendu.filter((a) => String(a) === v).length < n);
+    if (double) return { ...base, correct: false, score: 0, remarque: 'Un même élément est placé à deux endroits : à l\'épreuve, cela donne 0 point.' };
+  }
+  // paliers : [[nombre de cases justes, points], …] (ex. 3 à 5 mots justes = 1 pt, 6 ou 7 = 2 pts, 8 = 3 pts).
+  if (question.paliers) {
+    const pts = question.paliers.filter(([n]) => bons >= n).reduce((m, [, p]) => Math.max(m, p), 0);
+    return { ...base, score: pts };
+  }
   const avis = bons > 0 && !base.correct ? { remarque: `${bons} case${bons > 1 ? 's' : ''} sur ${oks.length} juste${bons > 1 ? 's' : ''}, mais à l'épreuve il faut tout juste pour avoir les points.` } : {};
   if (question.toutOuRien) return base.correct ? base : { ...base, score: 0, ...avis };
   if (!question.groupes) return base;

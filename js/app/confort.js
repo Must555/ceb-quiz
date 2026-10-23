@@ -32,7 +32,7 @@ export function texteAVoix(q) {
   if (q.type === 'qcm' || q.type === 'qcm_multi') q.choix.forEach((c, i) => morceaux.push(`${LETTRES[i]} : ${propre(c)}`));
   if (q.type === 'vrai_faux') morceaux.push('Vrai ou faux ?');
   if (q.type === 'ordre') morceaux.push(...q.elements.map(propre));
-  if (q.type === 'grille') q.lignes.forEach((l) => morceaux.push(`${propre(l)} : ${q.colonnes.map(propre).join(' ou ')} ?`));
+  if (q.type === 'grille') q.lignes.forEach((l, i) => morceaux.push(`${propre(l)} : ${(q.colonnesParLigne?.[i] ?? q.colonnes).map(propre).join(' ou ')} ?`));
   if (q.type === 'association') morceaux.push(...q.gauche.map(propre));
   return morceaux.filter(Boolean).join('. ').replace(/([.?!:])\./g, '$1');
 }

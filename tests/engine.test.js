@@ -219,6 +219,14 @@ test('correction : cas particuliers', () => {
   assert.deepEqual([corriger(grp, [0, 0, 1, 0]).score, corriger(grp, [0, 1, 1, 0]).score, corriger(grp, [0, 0, 1, 1]).score], [1, 0, 2]);
   const grpPoids = { type: 'trous', groupes: [[0, 1]], pointsGroupes: [2, 1], reponse: [['a'], ['b'], ['c']], points: 3 };
   assert.deepEqual([corriger(grpPoids, ['a', 'b', 'x']).score, corriger(grpPoids, ['a', 'x', 'c']).score], [2, 1]);
+  // Barèmes du correctif : réponse en trop pénalisée, élément placé deux fois, paliers.
+  const multi = { type: 'qcm_multi', parReponse: true, choix: ['a', 'b', 'c', 'd'], reponse: [0, 1, 2], points: 3 };
+  assert.deepEqual([corriger(multi, [0, 1]).score, corriger(multi, [0, 1, 3]).score, corriger(multi, [0, 3]).score, corriger(multi, [0, 1, 2]).score], [2, 1, 0, 3]);
+  const excl = { type: 'grille', exclusif: true, reponse: [0, 1, 2, 2], points: 2 };
+  assert.equal(corriger(excl, [0, 1, 2, 2]).score, 2);
+  assert.equal(corriger(excl, [0, 0, 2, 2]).score, 0);
+  const pal = { type: 'trous', paliers: [[3, 1], [6, 2], [8, 3]], reponse: Array.from({ length: 8 }, (_, i) => [String(i)]), points: 3 };
+  assert.deepEqual([corriger(pal, ['0', '1', 'x', 'x', 'x', 'x', 'x', 'x']).score, corriger(pal, ['0', '1', '2', '3', 'x', 'x', 'x', 'x']).score, corriger(pal, ['0', '1', '2', '3', '4', '5', '6', 'x']).score], [0, 1, 2]);
   const ordre = { type: 'ordre', reponse: [0, 1, 2] };
   assert.equal(corriger(ordre, [undefined, null, '']).score, 0);
 });
