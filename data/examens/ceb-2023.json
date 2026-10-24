@@ -766,6 +766,123 @@
    "titre": "Neuf éléments de circuits électriques",
    "fichier": "assets/2023/liv9-p20.webp",
    "alt": "Photo de neuf éléments utilisés pour réaliser des circuits électriques, chacun repéré par un numéro de 1 à 9."
+  },
+  {
+   "id": "liv3-p05",
+   "source": "livret",
+   "livret": 3,
+   "page": 5,
+   "titre": "Le carré A et le triangle B",
+   "fichier": "assets/2023/liv3-p05.webp",
+   "alt": "Un carré A et un triangle équilatéral B."
+  },
+  {
+   "id": "liv3-p11",
+   "source": "livret",
+   "livret": 3,
+   "page": 11,
+   "titre": "La porte et sa représentation",
+   "fichier": "assets/2023/liv3-p11.webp",
+   "alt": "Photo d'une porte vitrée et sa représentation : un parallélogramme A au centre et un triangle B en bas."
+  },
+  {
+   "id": "liv5-p04",
+   "source": "livret",
+   "livret": 5,
+   "page": 4,
+   "titre": "Belgique - Rivières et bassins hydrographiques",
+   "fichier": "assets/2023/liv5-p04.webp",
+   "alt": "Carte de Belgique avec les rivières, les bassins hydrographiques, les villes principales, une légende et une échelle."
+  },
+  {
+   "id": "liv5-p06",
+   "source": "livret",
+   "livret": 5,
+   "page": 6,
+   "titre": "Deux traces du passé",
+   "fichier": "assets/2023/liv5-p06.webp",
+   "alt": "Tableau avec deux photos : un astrolabe et un bas-relief de pierre. Liste de mots : objet, peinture, sculpture, document écrit."
+  },
+  {
+   "id": "liv5-p07",
+   "source": "livret",
+   "livret": 5,
+   "page": 7,
+   "titre": "Trois trésors et cinq repères",
+   "fichier": "assets/2023/liv5-p07.webp",
+   "alt": "Photos d'un silex, d'un soldat et d'un astrolabe. Étiquettes : A le temps des sociétés industrielles ; B le temps des Gallo-Romains ; C le temps des grands domaines et du développement des villes ; D le temps des chasseurs-cueilleurs ; E le temps des grandes découvertes techniques et géographiques."
+  },
+  {
+   "id": "liv5-p13",
+   "source": "livret",
+   "livret": 5,
+   "page": 13,
+   "titre": "Costumes et ligne du temps",
+   "fichier": "assets/2023/liv5-p13.webp",
+   "alt": "Photos du costume n°2 et du costume n°4, et une ligne du temps graduée de 1900 à 2020 de dix en dix ans."
+  },
+  {
+   "id": "liv5-p18",
+   "source": "livret",
+   "livret": 5,
+   "page": 18,
+   "titre": "L'arbre généalogique",
+   "fichier": "assets/2023/liv5-p18.webp",
+   "alt": "Arbre de Gérard Barthélemy : son père Edmond Barthélemy, sa mère ; son frère (prénom à compléter), sa belle-sœur Mathilde Hayot, son épouse Aline Laloux ; une nièce (prénom à compléter), sa nièce Geneviève, son neveu Michel, sa fille Marie-Claire."
+  },
+  {
+   "id": "liv5-p20",
+   "source": "livret",
+   "livret": 5,
+   "page": 20,
+   "titre": "Personnages de l'astronomie",
+   "fichier": "assets/2023/liv5-p20.webp",
+   "alt": "Fiches A (Ptolémée, en Haute-Égypte, vers 100-vers 168), B (Edwin Powell Hubble, astronome américain, 1889-1953) et C (Copernic, Polonais, 1473-1543), placées dans un tableau période × lieu : A Antiquité, ailleurs dans le monde ; B époque contemporaine, ailleurs dans le monde ; C Temps modernes, en Europe."
+  },
+  {
+   "id": "liv6-p04",
+   "source": "livret",
+   "livret": 6,
+   "page": 4,
+   "titre": "Calendriers de l'été 2023",
+   "fichier": "assets/2023/liv6-p04.webp",
+   "alt": "Calendriers de juin 2023 (le 1er est un jeudi), juillet 2023 (le 1er est un samedi) et aout 2023 (le 1er est un mardi)."
+  },
+  {
+   "id": "liv6-p18",
+   "source": "livret",
+   "livret": 6,
+   "page": 18,
+   "titre": "L'abat-jour",
+   "fichier": "assets/2023/liv6-p18.webp",
+   "alt": "Un abat-jour cylindrique vu de côté et vu du dessous : son diamètre mesure 50 cm."
+  },
+  {
+   "id": "liv8-p07",
+   "source": "livret",
+   "livret": 8,
+   "page": 7,
+   "titre": "Tables et chaises",
+   "fichier": "assets/2023/liv8-p07.webp",
+   "alt": "1 table : 4 chaises ; 2 tables jointes : 6 chaises ; 3 tables jointes : 8 chaises."
+  },
+  {
+   "id": "liv9-p19",
+   "source": "livret",
+   "livret": 9,
+   "page": 19,
+   "titre": "Quatre situations",
+   "fichier": "assets/2023/liv9-p19.webp",
+   "alt": "Photos : une éponge mouillée puis sèche ; une route qui se déforme et se soulève un été chaud ; les peignes d'un joint de chaussée, plus écartés en hiver qu'en été ; un champignon déshydraté puis hydraté."
+  },
+  {
+   "id": "liv9-p21",
+   "source": "livret",
+   "livret": 9,
+   "page": 21,
+   "titre": "Le montage électrique",
+   "fichier": "assets/2023/liv9-p21.webp",
+   "alt": "Interrupteur sur « 0 » : le courant ne peut pas circuler ; sur « I » : il peut circuler. Photo du montage (batteries, moteur, hélice, interrupteur) et arbre : batteries déchargées ou chargées, puis circuit fermé ou ouvert."
   }
  ],
  "questions": [
@@ -818,7 +935,7 @@
    "numero": "3",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Quelle photo du livret (page 4) correspond à l'oiseau dont on parle dans l'histoire ? Coche la proposition correcte.",
+   "enonce": "Quelle photo du livret (page 4) correspond à l'oiseau dont on parle dans l'histoire ? Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1061,9 +1178,9 @@
     "Le chêne se souvient d'une histoire où l'on s'est moqué de lui."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte que tu as entendu permet de dire que c'est VRAI",
+    "Le texte que tu as entendu permet de dire que c'est FAUX",
+    "Le texte que tu as entendu ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -1100,7 +1217,7 @@
    "numero": "12",
    "domaine": "fr.ecouter",
    "type": "qcm_multi",
-   "enonce": "Coche les deux spécialités du pays de Herve citées dans l'introduction du conte.",
+   "enonce": "Choisis les deux spécialités du pays de Herve citées dans l'introduction du conte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1406,7 +1523,7 @@
    "numero": "15a",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe le matériel proposé (bâtonnets de bois et boules de plasticine) et les quatre solides du livret (page 16). Coche le solide que tu peux construire en utilisant tous les éléments du matériel proposé.",
+   "enonce": "Observe le matériel proposé (bâtonnets de bois et boules de plasticine) et les quatre solides du livret (page 16). Choisis le solide que tu peux construire en utilisant tous les éléments du matériel proposé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1428,7 +1545,7 @@
    "numero": "15b",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe le solide présenté et les trois lots de matériel du livret (page 17). Coche le matériel nécessaire pour construire le solide présenté. Tous les éléments doivent être utilisés.",
+   "enonce": "Observe le solide présenté et les trois lots de matériel du livret (page 17). Choisis le matériel nécessaire pour construire le solide présenté. Tous les éléments doivent être utilisés.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1459,22 +1576,16 @@
    "livret": 3,
    "numero": "3",
    "domaine": "ma.geometrie",
-   "type": "trous",
-   "enonce": "Un carré et un triangle équilatéral sont des polygones réguliers. Complète.",
+   "type": "ouverte",
+   "enonce": "Observe le carré A et le triangle équilatéral B. Complète la phrase : « Les figures A et B sont des polygones réguliers… parce que … et parce que … »",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
-   "texte": "Ce sont des polygones réguliers parce que tous leurs {1} sont isométriques (de même longueur) et parce que tous leurs {2} sont isométriques (de même amplitude).",
-   "reponse": [
-    [
-     "côtés",
-     "cotes"
-    ],
-    [
-     "angles"
-    ]
-   ],
-   "explication": "Un polygone régulier a tous ses côtés de même longueur et tous ses angles de même amplitude."
+   "explication": "Un polygone régulier a tous ses côtés de même longueur et tous ses angles de même amplitude.",
+   "reponseModele": "… parce qu'elles ont tous leurs angles de même amplitude et parce qu'elles ont tous leurs côtés de même longueur (isométriques). Ou toute formulation allant dans ce sens ; l'ordre des deux propositions n'est pas important.",
+   "documents": [
+    "liv3-p05"
+   ]
   },
   {
    "id": "ceb-2023-l3-q9a",
@@ -1495,7 +1606,7 @@
    "numero": "9b",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Une porte est représentée par un parallélogramme A et un triangle B. Complète.",
+   "enonce": "Voici la photo d'une porte. Observe la représentation de cette porte. Sur cette représentation, complète les phrases.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-angles",
@@ -1508,7 +1619,10 @@
      "180"
     ]
    ],
-   "explication": "La somme des angles d'un quadrilatère vaut 360° ; celle d'un triangle 180°."
+   "explication": "La somme des angles d'un quadrilatère vaut 360° ; celle d'un triangle 180°.",
+   "documents": [
+    "liv3-p11"
+   ]
   },
   {
    "id": "ceb-2023-l4-q1",
@@ -1516,7 +1630,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Texte « Tous en piste ! ». Dans quelle partie se trouvent les réponses à ces questions ?",
+   "enonce": "Dans quelle partie du document se trouvent les réponses aux questions suivantes ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -1533,10 +1647,10 @@
     "Qui a eu l'idée d'organiser des spectacles de chevaux ?"
    ],
    "colonnes": [
-    "L'histoire du cirque en Europe",
-    "Le cirque traditionnel",
-    "Le cirque contemporain",
-    "Les écoles de cirque"
+    "L'histoire du cirque en Europe (pages 2 et 3)",
+    "Une comparaison entre deux types de cirques : le cirque traditionnel (page 4)",
+    "Une comparaison entre deux types de cirques : le cirque contemporain (page 5)",
+    "Les écoles de cirque : pour qui ? pour quoi ? (page 6)"
    ],
    "reponse": [
     0,
@@ -1579,7 +1693,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Au Moyen Âge, les saltimbanques proposaient différents numéros. Écris-en deux.",
+   "enonce": "Au Moyen Âge, des saltimbanques proposaient différents numéros. Écris-en deux cités dans le texte.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -1620,13 +1734,13 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Dans les années septante, de jeunes artistes renouvèlent les arts du cirque… » Pourquoi ont-ils imaginé cette nouvelle forme de cirque ?",
+   "enonce": "Dans le cadre 4, on peut lire : « Ainsi, dans les années septante, de jeunes artistes renouvèlent les arts du cirque pour aboutir à ce qu'on appelle actuellement : « le cirque contemporain ». » Écris pourquoi de jeunes artistes ont imaginé cette nouvelle forme de cirque.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "cirque-2"
    ],
-   "reponseModele": "Parce que, dès 1950, le public montrait moins d'intérêt pour le cirque traditionnel (notamment à cause de la télévision)."
+   "reponseModele": "Le public montre moins d'intérêt pour le cirque traditionnel (dès 1950, notamment parce qu'il regarde de plus en plus la télévision). Ou : le cirque souhaite attirer plus de (nouveaux) spectateurs. Ou toute idée allant dans ce sens. Ce n'est pas bon : seulement « à cause de la télévision » (réponse incomplète)."
   },
   {
    "id": "ceb-2023-l4-q5",
@@ -1634,7 +1748,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Pourquoi les numéros avec des animaux sauvages sont-ils interdits en Belgique ?",
+   "enonce": "Pour quelle raison les numéros qui mettent en scène des animaux sauvages sont-ils interdits en Belgique ? Écris ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -1648,15 +1762,15 @@
    "numero": "6",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« Chaque numéro est construit de la même manière : tout au long de sa prestation, l'artiste cherche à provoquer une émotion de plus en plus forte chez le spectateur. » « sa prestation », c'est la prestation…",
+   "enonce": "« Chaque numéro est construit de la même manière : tout au long de sa prestation, l'artiste cherche à provoquer une émotion de plus en plus forte chez le spectateur. De plus, grâce aux cuivres (trompette, saxophone…) et aux percussions (tambour, cymbales…), la musique entretient le suspense et souligne les exploits. » « sa prestation », c'est la prestation…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
    "choix": [
-    "du spectateur",
-    "du numéro",
-    "de l'artiste",
-    "de la musique"
+    "du spectateur.",
+    "du numéro.",
+    "de l'artiste.",
+    "de la musique."
    ],
    "reponse": 2,
    "explication": "« sa » renvoie à l'artiste qui présente son numéro."
@@ -1667,7 +1781,7 @@
    "numero": "7",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« Les artistes de cirque doivent être à la fois athlètes, comédiens, danseurs… Chacun d'eux joue un rôle dans l'histoire. » Cela veut dire que…",
+   "enonce": "« Pour réaliser ce type de spectacle, les artistes de cirque doivent être à la fois athlètes, comédiens, danseurs… Chacun d'eux joue un rôle dans l'histoire tout en présentant un numéro. » « Chacun d'eux joue un rôle », cela veut dire que…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -1686,7 +1800,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Le spectacle du cirque traditionnel cherche à provoquer des réactions. Écris-en deux citées dans le texte.",
+   "enonce": "Le spectacle du cirque traditionnel cherche à provoquer des réactions auprès du public. Écris deux réactions citées dans le texte.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -1741,9 +1855,9 @@
     "La piste d'un cirque traditionnel est circulaire."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -1784,7 +1898,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans quelle partie du texte pourrais-tu ajouter ces informations ?",
+   "enonce": "Voici des informations qui ne se trouvent pas dans le texte. À quelle partie du texte pourrais-tu les ajouter ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -1802,7 +1916,7 @@
    "colonnes": [
     "L'histoire du cirque en Europe",
     "Une comparaison entre deux types de cirques",
-    "Les écoles de cirque"
+    "Les écoles de cirque : pour qui ? pour quoi ?"
    ],
    "reponse": [
     0,
@@ -1816,7 +1930,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Observe l'illustration du livret (page 7) : un élève regarde une affiche publicitaire de cirque et pense « C'est impossible que ce spectacle soit présenté en Belgique ! ». D'après le texte, a-t-il raison ? Entoure OUI ou NON et justifie ta réponse à l'aide d'un élément du texte.",
+   "enonce": "Observe l'illustration du livret (page 7) : un élève regarde une affiche publicitaire de cirque et pense « C'est impossible que ce spectacle soit présenté en Belgique ! ». D'après le texte, a-t-il raison ? Choisis OUI ou NON et justifie ta réponse à l'aide d'un élément du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1941,7 +2055,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "numerique",
-   "enonce": "Combien y a-t-il de paragraphes dans le cadre 4 de « L'histoire du cirque en Europe » (celui qui commence par « Au 20e siècle ») ?",
+   "enonce": "Combien y a-t-il de paragraphes dans le cadre 4 de la partie « L'histoire du cirque en Europe » ? Écris ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -1957,7 +2071,7 @@
    "numero": "18",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "Recopie un organisateur textuel qui introduit un paragraphe du cadre 3 (celui sur Philip Astley).",
+   "enonce": "Recopie un organisateur textuel qui introduit un paragraphe du cadre 3 de la partie « L'histoire du cirque en Europe ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -1979,7 +2093,7 @@
    "numero": "17",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "« L'idéal est de commencer dans une école de cirque amateur. Pour ceux qui se destinent à devenir artistes professionnels, certaines écoles secondaires organisent une option spécifique. Ensuite, ces jeunes ont la possibilité de poursuivre leur formation… » Quel mot relie deux phrases ?",
+   "enonce": "« L'idéal est de commencer dans une école de cirque amateur. Pour ceux qui se destinent à devenir artistes professionnels de cirque, certaines écoles secondaires organisent une option spécifique. Ensuite, ces jeunes ont la possibilité de poursuivre leur formation à l'École Supérieure des Arts du Cirque de Bruxelles. » Dans cet extrait, écris le mot qui sert à relier deux phrases.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -1994,7 +2108,7 @@
    "numero": "20",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Ils rendent la représentation à la fois fantastique et insolite. » Par quel mot peut-on remplacer « insolite » ?",
+   "enonce": "« Les costumes, la musique, les décors, les jeux de lumière et les accessoires font l'objet d'une véritable recherche. Ils donnent une harmonie au spectacle et rendent la représentation à la fois fantastique et insolite. » Par quel mot peut-on remplacer « insolite » sans changer le sens de la phrase ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -2013,7 +2127,7 @@
    "numero": "19",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« Là, ils présentent des numéros d'acrobatie. » a la structure : Complément circonstanciel – Sujet – Verbe – Complément direct. Quelle phrase a la même structure ?",
+   "enonce": "Voici une phrase du texte : « Là, ils présentent des numéros d'acrobatie, de jonglerie, de domptage… » Voici la structure de cette phrase : Complément circonstanciel – (Groupe) Sujet – Verbe – Complément direct du verbe. Choisis la phrase qui a la même structure.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sujet-complements",
@@ -2032,15 +2146,15 @@
    "numero": "21",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Ils touchent à toutes les disciplines : acrobatie, jonglerie, trapèze… » Quel sens a « toucher à » ?",
+   "enonce": "« Ils touchent à toutes les disciplines : acrobatie, jonglerie, trapèze… » Voici quatre sens du verbe « toucher à ». Choisis celui qui correspond à l'extrait.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
-    "Porter la main sur…",
-    "Être en contact avec quelque chose.",
-    "Apporter des modifications.",
-    "Faire l'expérience de…"
+    "Porter la main sur… Exemple : Ne touche pas à ce vase, il est fragile.",
+    "Être en contact avec quelque chose. Exemple : Le jardin de cette maison touche à la forêt.",
+    "Apporter des modifications. Exemple : Il vaut mieux ne plus toucher à ce dessin.",
+    "Faire l'expérience de… Exemple : Elle touche à tous les instruments."
    ],
    "reponse": 3,
    "explication": "Les enfants essaient toutes les disciplines."
@@ -2116,20 +2230,23 @@
    "numero": "1b",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Kim, Sacha et Sami suivent des cours d'eau pour aller d'une cache à l'autre (Vieuxville est au bord de l'Ourthe).",
+   "enonce": "Kim, Sacha et Sami partent à la recherche de quelques caches à travers la Wallonie. Ils utilisent différents moyens de communication. Observe la carte « Belgique – Rivières et bassins hydrographiques » (livret, page 4) et la carte des caches.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-cours-eau",
    "documents": [
-    "caches-double"
+    "caches-double",
+    "liv5-p04"
    ],
-   "texte": "De la cache n°5 (Vieuxville) à la cache n°2 (Cointe, Liège), ils suivent l'{1}.  ·  De Liège à Namur, ils suivent la {2}.",
+   "texte": "Écris le nom du cours d'eau proche de la cache n°5 qu'ils suivent pour se rendre près de la cache n°2 : {1}  ·  Au départ de Liège, ils décident de se rendre à Namur. Écris le nom du cours d'eau qu'ils suivent : {2}",
    "reponse": [
     [
-     "Ourthe"
+     "Ourthe",
+     "l'Ourthe"
     ],
     [
-     "Meuse"
+     "Meuse",
+     "la Meuse"
     ]
    ],
    "explication": "L'Ourthe coule de Vieuxville jusqu'à Liège. Liège et Namur sont toutes deux sur la Meuse."
@@ -2170,7 +2287,7 @@
    "numero": "1d",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "À quelle période conventionnelle se rapporte chaque trésor ?",
+   "enonce": "Chaque trésor peut être associé à une période conventionnelle. Choisis le nom de cette période pour les trésors suivants.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -2179,8 +2296,8 @@
     "tresors-2"
    ],
    "lignes": [
-    "Trésor n°2 : astrolabe nautique du 16e siècle",
-    "Trésor n°5 : fibule du 6e siècle (cimetière mérovingien)"
+    "Trésor n°2",
+    "Trésor n°5"
    ],
    "colonnes": [
     "Préhistoire",
@@ -2201,17 +2318,18 @@
    "numero": "1e",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Quelle est la nature de chacune de ces traces du passé photographiées ?",
+   "enonce": "Dans le tableau (livret, page 6), indique la nature des traces du passé photographiées. Complète avec les mots de la liste : objet, peinture, sculpture, document écrit.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "tresors-1",
-    "tresors-2"
+    "tresors-2",
+    "liv5-p06"
    ],
    "lignes": [
-    "Trésor n°2 : l'astrolabe",
-    "Trésor n°4 : la moissonneuse des Trévires"
+    "1re photo (l'astrolabe)",
+    "2e photo (la moissonneuse des Trévires)"
    ],
    "colonnes": [
     "objet",
@@ -2231,18 +2349,19 @@
    "numero": "1f",
    "domaine": "hg.histoire",
    "type": "association",
-   "enonce": "Associe chaque trésor au repère de temps qui lui correspond.",
+   "enonce": "Associe chaque trésor au repère de temps qui lui correspond d'après les informations du portfolio.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "tresors-1",
-    "tresors-2"
+    "tresors-2",
+    "liv5-p07"
    ],
    "gauche": [
-    "Trésor 2 : astrolabe nautique (16e s.)",
-    "Trésor 3 : photo d'un soldat (20e s.)",
-    "Trésor 6 : silex taillé d'un nomade (vers 7 000 av. J.-C.)"
+    "Trésor 2 : l'astrolabe",
+    "Trésor 3 : la photo d'un soldat",
+    "Trésor 6 : le silex"
    ],
    "droite": [
     "Le temps des sociétés industrielles",
@@ -2273,7 +2392,7 @@
    "numero": "2a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Photo A (une rue de Liège depuis la colline de Cointe) et photo B (une prairie près de Vieuxville) : quel type de photo ?",
+   "enonce": "Voici deux photographies prises durant la recherche des caches. Photo A : photo prise depuis la colline de Cointe. Photo B : photo prise dans la région de Vieuxville. Choisis la proposition qui correspond le mieux à chaque photo.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2281,12 +2400,12 @@
     "decouverte"
    ],
    "lignes": [
-    "Photo A",
-    "Photo B"
+    "La photo A est une…",
+    "La photo B est une…"
    ],
    "colonnes": [
-    "Photo au sol",
-    "Photo aérienne"
+    "photo au sol.",
+    "photo aérienne."
    ],
    "reponse": [
     0,
@@ -2440,7 +2559,7 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Les documents sur les moissons permettent-ils de dire que c'est vrai ou faux ?",
+   "enonce": "Les moissons (moisson : travail agricole qui consiste à récolter les céréales). Observe les documents. Pour chaque proposition, choisis la case qui convient.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2449,16 +2568,16 @@
     "moissons-2"
    ],
    "lignes": [
-    "La mécanisation des outils nécessite malgré tout parfois l'utilisation des animaux.",
+    "La mécanisation des outils nécessite malgré tout l'utilisation des animaux.",
     "Les moissons sont réalisées uniquement lors de journées ensoleillées.",
     "De tout temps, les moissons sont uniquement réalisées par des hommes.",
     "Des machines agricoles motorisées sont utilisées à l'époque contemporaine.",
     "Les moissons étaient déjà réalisées en 10 000 avant J.-C."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Les documents permettent de dire que c'est VRAI",
+    "Les documents permettent de dire que c'est FAUX",
+    "Rien sur les documents ne permet de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -2475,7 +2594,7 @@
    "numero": "4a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "De quel continent proviennent ces costumes du Manneken-Pis ?",
+   "enonce": "De quel continent proviennent ces costumes illustrés dans le portfolio ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2483,16 +2602,16 @@
     "manneken"
    ],
    "lignes": [
-    "Costume n°1 : bourgeoisie anglaise (Royaume-Uni)",
-    "Costume n°3 : costume traditionnel d'Argentine"
+    "Le costume n°1 provient…",
+    "Le costume n°3 provient…"
    ],
    "colonnes": [
-    "Afrique",
-    "Amérique",
-    "Antarctique",
-    "Asie",
-    "Europe",
-    "Océanie"
+    "d'Afrique.",
+    "d'Amérique.",
+    "d'Antarctique.",
+    "d'Asie.",
+    "d'Europe.",
+    "d'Océanie."
    ],
    "reponse": [
     4,
@@ -2505,22 +2624,38 @@
    "livret": 5,
    "numero": "4b",
    "domaine": "hg.histoire",
-   "type": "qcm",
-   "enonce": "Le costume n°2 a été offert le 09/01/1931 et le costume n°4 le 01/07/2019. Entre quels repères de la ligne du temps faut-il les placer ?",
+   "type": "grille",
+   "enonce": "Situe sur la ligne du temps les dates auxquelles les costumes ont été offerts au Manneken-Pis (ligne du temps graduée de 1900 à 2020). Pour chaque costume, choisis l'intervalle qui convient.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
    "documents": [
-    "manneken"
+    "manneken",
+    "liv5-p13"
    ],
-   "choix": [
-    "n°2 entre 1920 et 1930 ; n°4 entre 2000 et 2010",
-    "n°2 entre 1930 et 1940 ; n°4 entre 2010 et 2020",
-    "n°2 entre 1930 et 1940 ; n°4 après 2020",
-    "n°2 entre 1910 et 1920 ; n°4 entre 2010 et 2020"
+   "reponse": [
+    3,
+    11
    ],
-   "reponse": 1,
-   "explication": "1931 est juste après 1930 ; 2019 est juste avant 2020."
+   "explication": "1931 est juste après 1930 ; 2019 est juste avant 2020.",
+   "lignes": [
+    "Costume n°2",
+    "Costume n°4"
+   ],
+   "colonnes": [
+    "entre 1900 et 1910",
+    "entre 1910 et 1920",
+    "entre 1920 et 1930",
+    "entre 1930 et 1940",
+    "entre 1940 et 1950",
+    "entre 1950 et 1960",
+    "entre 1960 et 1970",
+    "entre 1970 et 1980",
+    "entre 1980 et 1990",
+    "entre 1990 et 2000",
+    "entre 2000 et 2010",
+    "entre 2010 et 2020"
+   ]
   },
   {
    "id": "ceb-2023-l5-q4c",
@@ -2557,7 +2692,7 @@
    "numero": "5",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Pour chaque proposition, quelle carte faut-il ajouter à celle qui est donnée ? (carte 1 : provinces ; carte 2 : densité de population ; carte 3 : régions naturelles et agriculture ; carte 4 : industries)",
+   "enonce": "Voici des propositions formulées par des élèves. Quelles cartes leur ont permis de formuler ces propositions ? La première carte t'est donnée, retrouve la suivante. Exemple : « C'est en province de Hainaut que l'on trouve le plus de cimenteries. » → carte 1 et carte 4.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -2566,10 +2701,10 @@
     "cartes-2"
    ],
    "lignes": [
-    "Carte 1 et … : le Luxembourg est la province avec la densité de population la plus basse.",
-    "Carte 2 et … : l'élevage porcin se pratique dans des provinces plus peuplées que l'élevage bovin.",
-    "Carte 3 et … : la zone côtière et les polders sont les seules régions avec une industrie alimentaire liée au poisson.",
-    "Carte 4 et … : la sidérurgie et la métallurgie se sont développées autour de Charleroi et Liège, à forte densité de population."
+    "Carte 1 et … : Le Luxembourg est la province de Belgique avec la densité de population la plus basse.",
+    "Carte 2 et … : L'élevage porcin se pratique dans des provinces plus peuplées que celles où l'on pratique l'élevage bovin.",
+    "Carte 3 et … : La zone côtière et les polders sont les seules régions en Belgique où l'on trouve une industrie alimentaire liée au poisson.",
+    "Carte 4 et … : La sidérurgie et la métallurgie se sont développées autour des villes de Charleroi et de Liège qui ont une forte densité de population."
    ],
    "colonnes": [
     "carte 1",
@@ -2591,7 +2726,7 @@
    "numero": "6a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Les documents « Une période trouble » (Stalag I A, 1940-1945 ; faire-part de 1945) se rapportent à quel siècle ?",
+   "enonce": "Une période trouble. Choisis, sur la ligne du temps, le siècle correspondant aux évènements présents sur les documents.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
@@ -2600,13 +2735,14 @@
     "trouble-2"
    ],
    "choix": [
+    "16e siècle",
     "17e siècle",
     "18e siècle",
     "19e siècle",
     "20e siècle",
     "21e siècle"
    ],
-   "reponse": 3,
+   "reponse": 4,
    "explication": "1940-1945 : 20e siècle."
   },
   {
@@ -2639,7 +2775,7 @@
    "numero": "6c",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "D'après les extraits de l'article sur Jules Hannecart, écris si c'est vrai ou faux, et le numéro de l'extrait qui le prouve.",
+   "enonce": "Pour chaque phrase, écris vrai ou faux, puis le numéro de l'extrait de l'article sur Jules Hannecart qui t'a permis de répondre. Pour t'aider, des extraits sont entourés en rouge dans le portfolio. Exemple : « Il y a eu 600 rescapés lors de la libération du Stalag 1A. » → vrai, extrait n° 4.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2690,14 +2826,14 @@
    "numero": "6d1",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Faire-part de décès de Gérard Barthélemy, prisonnier politique (extrait 6).",
+   "enonce": "Le fairepart de décès de Gérard Barthélemy (extrait n°6) a été envoyé à la famille, aux amis et connaissances du défunt afin de les avertir de sa mort. Le fairepart annonce le décès de GÉRARD BARTHÉLEMY, prisonnier politique (personne privée de liberté à cause de ses idées ou opinions politiques sans avoir commis d'infraction). Réponds aux questions.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
     "trouble-2"
    ],
-   "texte": "Il est décédé en {1}.  ·  Le faire-part a été rédigé en {2}.",
+   "texte": "Quand est-il décédé ? (mois et année) {1}  ·  Quand le fairepart a-t-il été rédigé ? (mois et année) {2}",
    "reponse": [
     [
      "mars 1944",
@@ -2722,7 +2858,7 @@
    "numero": "6d2",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Le faire-part est écrit plus d'un an après le décès. Coche les deux explications possibles. Sa famille…",
+   "enonce": "Le faire-part est écrit plus d'un an après le décès. Choisis les deux explications possibles. Sa famille…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2772,13 +2908,14 @@
    "numero": "6f",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Complète l'arbre généalogique de Gérard Barthélemy grâce au faire-part (son frère est marié à Mathilde Hayot ; ses neveu et nièces sont Françoise, Geneviève et Michel).",
+   "enonce": "Écris, dans les cases restées blanches, les informations manquantes de cette partie de l'arbre généalogique de Gérard Barthélemy (extrait n°6, livret page 18).",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
-    "trouble-2"
+    "trouble-2",
+    "liv5-p18"
    ],
-   "texte": "Son frère : {1} Barthélemy  ·  Sa nièce (autre que Geneviève) : {2} Barthélemy",
+   "texte": "Son frère : {1} BARTHÉLEMY  ·  Sa nièce : {2} BARTHÉLEMY",
    "reponse": [
     [
      "Louis"
@@ -2796,7 +2933,7 @@
    "numero": "7a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Dans l'hémisphère nord, quel jour est…",
+   "enonce": "Complète le tableau suivant pour l'hémisphère nord (jour : moment entre le lever et le coucher du soleil).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-terre-mouvements",
@@ -2805,8 +2942,8 @@
     "saisons-2"
    ],
    "lignes": [
-    "le jour le plus long ?",
-    "le jour le plus court ?"
+    "Jour le plus long",
+    "Jour le plus court"
    ],
    "colonnes": [
     "Équinoxe d'automne",
@@ -2826,7 +2963,7 @@
    "numero": "7b",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Les informations permettent-elles de dire que c'est vrai ou faux ?",
+   "enonce": "Complète le tableau en t'aidant des informations du portfolio.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-terre-mouvements",
@@ -2839,9 +2976,9 @@
     "Lors du solstice d'été chez nous, c'est l'hiver à Buenos Aires (hémisphère sud)."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Les informations permettent de dire que c'est VRAI",
+    "Les informations permettent de dire que c'est FAUX",
+    "Rien dans les informations ne permet de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -2855,7 +2992,7 @@
    "numero": "8a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Situe ces deux astronomes dans le temps et dans l'espace, comme dans le tableau de l'épreuve (période × lieu) : Georges Lemaître, astronome belge, développe en 1927 la théorie de l'« atome primitif » ; Abu Mahmud Al-Khujandi construit un observatoire en Iran au 10e siècle. Pour chacun, choisis la période, puis le lieu. Chaque astronome rapporte 1 point s'il est bien placé dans la période ET le lieu.",
+   "enonce": "Voici quelques personnages marquants de l'histoire de l'astronomie, déjà placés dans un tableau (période × lieu) : Ptolémée, en Haute-Égypte (vers 100-vers 168) : Antiquité, ailleurs dans le monde ; Edwin Powell Hubble, astronome américain (1889-1953) : époque contemporaine, ailleurs dans le monde ; Copernic, Polonais (1473-1543) : Temps modernes, en Europe. Situe ces autres personnages dans le tableau : D. Georges Lemaître, astronome belge, développe en 1927 sa théorie de « l'atome primitif » qui sera à l'origine de l'expression « bigbang ». E. Abu Mahmud Al-Khujandi, astronome perse (Asie), construit un observatoire à Ray, en Iran au 10e siècle. Pour chacun, choisis la période, puis le lieu.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -2912,6 +3049,9 @@
      2,
      3
     ]
+   ],
+   "documents": [
+    "liv5-p20"
    ]
   },
   {
@@ -2920,18 +3060,18 @@
    "numero": "8b",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Isaac Newton présente son télescope en 1672. Situe ces évènements par rapport à cette date.",
+   "enonce": "Isaac Newton, astronome anglais, présente son télescope à la société royale d'astronomie en 1672. Situe des évènements marquants de notre histoire par rapport à cette date de présentation.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "lignes": [
-    "L'invention de l'imprimerie (vers 1450)",
-    "La signature du Traité de Rome (1957)"
+    "L'invention de l'imprimerie a eu lieu…",
+    "La signature du Traité de Rome a eu lieu…"
    ],
    "colonnes": [
-    "avant",
-    "durant",
-    "après"
+    "avant la présentation du télescope d'Isaac Newton.",
+    "durant la présentation du télescope d'Isaac Newton.",
+    "après la présentation du télescope d'Isaac Newton."
    ],
    "reponse": [
     0,
@@ -2965,11 +3105,11 @@
    "numero": "1",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Un parcours de géocaching compte 78 km. Complète le tableau.",
+   "enonce": "Un parcours complet de géocaching dans une région compte 78 km de marche. Pendant plusieurs semaines, des enfants sont partis à la découverte des caches. Complète le tableau (pourcentage du parcours réalisé et kilomètres parcourus).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
-   "texte": "Nora : 10 % = {1} km  ·  Jules : {2} % = 39 km  ·  Arthur : 30 % = {3} km  ·  Saïd : 70 % = {4} km",
+   "texte": "Nora : {1} km parcourus pour 10 % du parcours réalisé  ·  Jules : 39 km parcourus pour {2} % du parcours réalisé  ·  Arthur : {3} km parcourus pour 30 % du parcours réalisé  ·  Saïd : {4} km parcourus pour 70 % du parcours réalisé",
    "reponse": [
     [
      "7,8"
@@ -2991,16 +3131,21 @@
    "livret": 6,
    "numero": "2a",
    "domaine": "ma.grandeurs",
-   "type": "numerique",
-   "enonce": "Nous sommes le jeudi 29 juin 2023. L'excursion est prévue le mercredi 16 aout 2023. Combien de jours doit-on encore attendre ?",
+   "type": "texte_court",
+   "enonce": "Nora a programmé une excursion à Arlon pour une journée de géocaching. Nous sommes le jeudi 29 juin 2023 et la sortie est prévue le mercredi 16 aout 2023. Calcule le nombre de jours qui séparent le jeudi 29 juin et la date de l'excursion de Nora. Complète : « Nora doit encore attendre … jours avant son départ en excursion. »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "documents": [
-    "geocaching"
+    "geocaching",
+    "liv6-p04"
    ],
-   "unite": "jours",
-   "reponse": 48,
+   "reponse": [
+    "48",
+    "47",
+    "48 jours",
+    "47 jours"
+   ],
    "explication": "Il reste 1 jour en juin (le 30), 31 jours en juillet et 16 jours en aout : 1 + 31 + 16 = 48. Le corrigé officiel accepte aussi 47 (les jours qui séparent les deux dates)."
   },
   {
@@ -3009,7 +3154,7 @@
    "numero": "2b",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "« Nous devons être à Arlon à 10h30. La chasse au trésor commencera une heure après notre arrivée. Notre piquenique est prévu de 13h à 14h. Le jeu se termine deux heures trente après la fin du piquenique. »",
+   "enonce": "Voici le message que Nora a reçu pour l'organisation de sa journée de géocaching : « Hello Nora, voici les informations nécessaires pour notre journée du 16 aout. Nous devons être à Arlon à 10h30. La chasse au trésor commencera une heure après notre arrivée à Arlon. Notre piquenique est prévu de 13h à 14h. Le jeu se termine deux heures trente après la fin du piquenique. » Écris l'heure du début de la chasse au trésor et celle de la fin du jeu.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -3167,7 +3312,7 @@
    "numero": "7a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Louna est née le 16 septembre 2007. Quel âge aura-t-elle en juillet 2023 ?",
+   "enonce": "Le géocaching est aussi possible dans les grandes villes. Pour s'y déplacer plus facilement, on peut louer des vélos électriques si on a plus de 16 ans. Louna est née le 16 septembre 2007. Calcule son âge pour savoir si elle pourra louer un vélo durant le mois de juillet 2023. Complète : « Louna aura … ans au mois de juillet 2023. »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -3323,14 +3468,17 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un abat-jour cylindrique a un diamètre de 50 cm. Quelle longueur de ruban faut-il pour en faire exactement le tour ? (prends π = 3,14)",
+   "enonce": "Observe cet abat-jour cylindrique suspendu au plafond : vu du dessous, son diamètre mesure 50 cm. Elsa souhaite entourer l'abat-jour avec un ruban. Calcule la longueur exacte du ruban qu'Elsa doit préparer pour entourer complètement cet abat-jour.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-cercle",
    "unite": "cm",
-   "reponse": 157,
+   "reponse": 157.5,
    "explication": "Circonférence = diamètre × 3,14 = 50 × 3,14 = 157 cm. Avec une valeur de π plus précise, on accepte jusqu'à 158 cm.",
-   "tolerance": 1
+   "tolerance": 0.5,
+   "documents": [
+    "liv6-p18"
+   ]
   },
   {
    "id": "ceb-2023-l6-q20a",
@@ -3661,7 +3809,7 @@
    "numero": "19",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Le livret CEB Grandeurs est au format A4 : 21 cm sur 29,7 cm (à l'épreuve, il fallait le mesurer). Observe les enveloppes du livret (page 22). Coche les deux modèles dans lesquels tu pourrais glisser ce livret sans le plier.",
+   "enonce": "Le livret CEB Grandeurs est au format A4 : 21 cm sur 29,7 cm (à l'épreuve, il fallait le mesurer). Observe les enveloppes du livret (page 22). Choisis les deux modèles dans lesquels tu pourrais glisser ce livret sans le plier.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -3688,7 +3836,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Récit « Le Génie de la Machine à Écrire ». Quel résumé correspond le mieux à cette histoire ?",
+   "enonce": "Récit « Le Génie de la Machine à Écrire ». Choisis le résumé qui correspond le mieux à cette histoire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3698,10 +3846,10 @@
     "genie-3"
    ],
    "choix": [
-    "Un frère et une sœur se disputent une machine à écrire. La sœur invente un Génie pour la récupérer. Finalement, le frère fait disparaitre la machine et la sœur.",
-    "Un frère et une sœur se disputent une machine à écrire. La sœur invente une stratégie pour récupérer cette machine gagnée par le frère. Finalement, celui-ci la lui cède.",
-    "Un frère et une sœur se disputent une machine à écrire. Le frère crée un Génie qui réalise ses vœux. Finalement, il décide de se débarrasser de la machine.",
-    "Un frère et une sœur se disputent une machine à écrire. Le frère la gagne et découvre, grâce à sa sœur, qu'elle est magique. Finalement, ils se la partagent."
+    "C'est l'histoire d'un frère et d'une sœur qui se disputent une machine à écrire. La sœur invente un Génie pour récupérer celle-ci. Finalement, le frère fait disparaitre la machine et la sœur.",
+    "C'est l'histoire d'un frère et d'une sœur qui se disputent une machine à écrire. La sœur invente une stratégie pour récupérer cette machine gagnée par le frère. Finalement, celui-ci la lui cèdera.",
+    "C'est l'histoire d'un frère et d'une sœur qui se disputent une machine à écrire. Le frère crée un Génie qui va réaliser ses vœux. Finalement, il décide de se débarrasser de la machine.",
+    "C'est l'histoire d'un frère et d'une sœur qui se disputent une machine à écrire. Le frère gagne cette machine et découvre, grâce à sa sœur, qu'elle est magique. Finalement, les deux enfants se partagent la machine."
    ],
    "reponse": 1,
    "explication": "Cassie invente le Génie pour récupérer la machine ; à la fin, Jules la lui donne."
@@ -3712,7 +3860,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Qui est la narratrice de ce texte ?",
+   "enonce": "Qui est le narrateur ou la narratrice dans ce texte ? C'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3722,10 +3870,10 @@
     "genie-3"
    ],
    "choix": [
-    "Papa",
-    "Jules",
-    "Maman",
-    "Cassie"
+    "Papa.",
+    "Jules.",
+    "Maman.",
+    "Cassie."
    ],
    "reponse": 3,
    "explication": "Cassie raconte : « mon petit frère Jules »."
@@ -3761,7 +3909,7 @@
    "numero": "5",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« — Waouh ! s'est exclamé mon petit frère Jules, 8 ans, mon châtiment sur cette terre. » Que veut dire Cassie ?",
+   "enonce": "« — Waouh ! s'est exclamé mon petit frère Jules, 8 ans, mon châtiment sur cette terre. » Dans ce texte, que veut dire Cassie en utilisant l'expression « mon châtiment sur cette terre » ? Cassie veut dire…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -3780,7 +3928,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Explique comment Cassie fait pour résoudre son problème (elle veut la machine que son frère a obtenue), puis comment le problème est résolu à la fin.",
+   "enonce": "Complète. La première explication t'est donnée. Le problème de Cassie au début de l'histoire : Cassie veut la machine à écrire que son frère a obtenue. Explique comment Cassie fait pour résoudre ce problème, puis comment le problème est résolu à la fin de l'histoire.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -3788,7 +3936,7 @@
     "genie-2",
     "genie-3"
    ],
-   "reponseModele": "Elle fait croire à Jules qu'un Génie habite la machine et réalise ses vœux. À la fin, Jules lui donne la machine à écrire."
+   "reponseModele": "Pour résoudre le problème : elle crée le Génie de la machine à écrire (ou elle utilise la machine en cachette dans la chambre de son frère, ou elle joue un mauvais tour à son frère avec la machine). À la fin : Jules donne la machine à sa sœur (ou Cassie reçoit la machine, ou Jules lui donne son dernier souhait). Ce n'est pas bon : « elle exauce des vœux », « elle fait une blague / peur à son frère », « ils se réconcilient », « ils partagent les bonbons / la machine », « le génie a exaucé les trois vœux »."
   },
   {
    "id": "ceb-2023-l7-q7",
@@ -3796,13 +3944,13 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Je me suis approchée de la machine, le cœur battant. » Pourquoi Cassie a-t-elle le cœur battant ?",
+   "enonce": "« Le lendemain, de retour de l'école, j'ai profité que Jules était à son cours de judo pour entrer dans sa chambre. Je me suis approchée de la machine, le cœur battant. Et là, sous le texte que j'avais écrit la veille, j'ai lu ces phrases […] » Explique pour quelle raison elle a « le cœur battant ».",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "genie-2"
    ],
-   "reponseModele": "Elle est impatiente et nerveuse de découvrir si Jules a cru au Génie et a répondu à son message."
+   "reponseModele": "Elle est impatiente (de voir s'il y a une réponse). Ou : elle a peur, elle stresse (qu'il n'y ait pas de réponse, de ce qu'elle va lire, de se faire surprendre par son frère). Ou toute idée allant dans ce sens. Ce n'est pas bon : « elle a le cœur qui bat », « elle aime la machine à écrire »."
   },
   {
    "id": "ceb-2023-l7-q8",
@@ -3831,7 +3979,7 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Il en avait tiré la couette pour cacher le monticule sucré. » Que désigne « le monticule sucré » ?",
+   "enonce": "« J'espérais lire sur son visage le trouble et l'éblouissement ; mais non. Il était sur son lit, il en avait tiré la couette pour cacher le monticule sucré, et il faisait semblant de lire. » Écris ce que désigne « le monticule sucré ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -3907,7 +4055,7 @@
    "numero": "12a",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Quel sentiment éprouve Cassie quand son frère annonce qu'il veut la machine à écrire ?",
+   "enonce": "Quel sentiment éprouve Cassie quand son frère annonce qu'il veut la machine à écrire ? Cassie éprouve un sentiment…",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3915,10 +4063,10 @@
     "genie-1"
    ],
    "choix": [
-    "d'étonnement",
-    "de fierté",
-    "d'injustice",
-    "d'impatience"
+    "d'étonnement.",
+    "de fierté.",
+    "d'injustice.",
+    "d'impatience."
    ],
    "reponse": 2,
    "explication": "Relis ce que dit Cassie quand Jules annonce qu'il veut la machine. Justifie ensuite sur la fiche suivante."
@@ -3945,7 +4093,7 @@
    "numero": "12b",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Quel sentiment éprouve Cassie quand son frère lui donne la machine à écrire ?",
+   "enonce": "Quel sentiment éprouve Cassie quand son frère lui donne la machine à écrire ? Cassie éprouve un sentiment…",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3953,10 +4101,10 @@
     "genie-3"
    ],
    "choix": [
-    "d'étonnement",
-    "de fierté",
-    "d'injustice",
-    "d'impatience"
+    "d'étonnement.",
+    "de fierté.",
+    "d'injustice.",
+    "d'impatience."
    ],
    "reponse": 0,
    "explication": "Relis comment Cassie réagit quand Jules lui donne la machine. Justifie ensuite sur la fiche suivante."
@@ -3998,9 +4146,9 @@
     "C'est Cassie qui écrit les trois vœux."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -4015,13 +4163,13 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Pourquoi Jules signe-t-il son dernier message « ton ex-maître » ?",
+   "enonce": "Pour quelle raison Jules signe-t-il son dernier message : « ton ex-maître » ? Écris ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "genie-3"
    ],
-   "reponseModele": "Parce qu'il donne la machine (et donc le Génie) à sa sœur : il n'en est plus le maître."
+   "reponseModele": "Parce que Jules ne sera plus le maitre de la machine à écrire (il sera son ancien maitre, il n'aura plus la machine, il va la donner à sa sœur, il veut que la machine disparaisse avec sa sœur, Cassie sera le nouveau maitre). Accepté aussi : parce que c'était son dernier vœu. Ce n'est pas bon : « parce que Jules est le dernier maitre », « parce que le génie doit disparaitre »."
   },
   {
    "id": "ceb-2023-l7-q15",
@@ -4058,7 +4206,7 @@
    "numero": "17",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Louise : « À la fin, Jules veut que sa sœur disparaisse. » Sami : « Non ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ?",
+   "enonce": "Louise : « À la fin de l'histoire, Jules veut que sa sœur disparaisse. » Sami : « Non ! Tu n'as pas compris ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4066,8 +4214,8 @@
     "genie-3"
    ],
    "choix": [
-    "Louise",
-    "Sami"
+    "Louise a raison.",
+    "Sami a raison."
    ],
    "reponse": 1,
    "explication": "Relis la fin de l'histoire pour comprendre ce que Jules veut vraiment. Justifie ensuite sur la fiche suivante."
@@ -4078,7 +4226,7 @@
    "numero": "17 (justification)",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Louise : « À la fin, Jules veut que sa sœur disparaisse. » Sami : « Non ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "enonce": "Louise : « À la fin de l'histoire, Jules veut que sa sœur disparaisse. » Sami : « Non ! Tu n'as pas compris ! Ce n'est pas ce que Jules veut réellement. » Qui a raison ? Justifie ton choix à l'aide d'un élément du texte.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4094,7 +4242,7 @@
    "numero": "18",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Le « Génie de la Machine à Écrire » existe-t-il vraiment dans cette histoire ? Justifie.",
+   "enonce": "Le « Génie de la Machine à Écrire » existe-t-il vraiment dans cette histoire ? Réponds OUI ou NON et justifie ton choix.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -4102,7 +4250,7 @@
     "genie-2",
     "genie-3"
    ],
-   "reponseModele": "Non : c'est Cassie qui l'a inventé et qui écrit ses messages pour récupérer la machine."
+   "reponseModele": "Les deux réponses sont acceptées si la justification est cohérente. OUI : c'est Cassie (la sœur de Jules) qui est le Génie de la machine à écrire ; le génie est un personnage créé par Cassie. NON : c'est Cassie qui a inventé le génie ; un génie, cela n'existe pas : c'est Cassie le Génie. Ce n'est pas bon : « il y avait peut-être vraiment un bon génie dans la machine », « la magie, ça n'existe pas »."
   },
   {
    "id": "ceb-2023-l7-q19a",
@@ -4127,7 +4275,7 @@
    "numero": "19b",
    "domaine": "fr.orthographe",
    "type": "texte_court",
-   "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Recopie le mot qui montre que « Je » est une fille.",
+   "enonce": "« Je suis retournée dans ma chambre en courant, et j'ai attendu. » Qui est « Je » dans cet extrait : Jules ou Cassie ? Recopie le mot de l'extrait qui justifie ta réponse.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
@@ -4268,15 +4416,15 @@
    "numero": "25",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Quand je pense que ça fait huit ans que je te supporte ! » Quel sens a « supporter » ?",
+   "enonce": "« J'ai arraché la feuille et je la lui ai mise sous le nez : — Espèce d'ingrat ! Minable ! Quand je pense que ça fait huit ans que je te supporte ! » Voici quatre sens du verbe « supporter ». Choisis celui qui correspond à l'extrait.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
-    "Soutenir (porter pour empêcher de tomber)",
-    "Résister à quelque chose sans faiblir",
-    "Tolérer la présence, l'attitude de quelqu'un",
-    "Encourager un candidat ou une équipe"
+    "Soutenir : porter par-dessous pour empêcher de tomber. Exemple : L'épaisse couche de glace supporte mon poids.",
+    "Résister : résister à quelque chose sans faiblir. Exemple : Il supporte la chaleur.",
+    "Tolérer : tolérer la présence, l'attitude de quelqu'un. Exemple : Il supporte la mauvaise humeur de quelqu'un.",
+    "Encourager : soutenir un candidat ou une équipe. Exemple : Il supporte une équipe sportive."
    ],
    "reponse": 2,
    "explication": "Cassie « tolère » son petit frère depuis huit ans."
@@ -4287,7 +4435,7 @@
    "numero": "26",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« C'est la raison pour laquelle je suis sortie de mes gonds lorsque j'ai lu… » L'expression « sortir de ses gonds » veut dire…",
+   "enonce": "« C'est la raison pour laquelle je suis sortie de mes gonds lorsque j'ai lu, le troisième jour : « Bravo, Génie. Voici mon dernier vœu : que tu disparaisses avec ma sœur […] ». » L'expression « sortir de ses gonds » veut dire…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-expressions",
@@ -4306,7 +4454,7 @@
    "numero": "27",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Quelle est l'intention dominante de l'auteure ?",
+   "enonce": "Quelle est l'intention dominante de l'auteur ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
@@ -4325,7 +4473,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Coche, parmi les objets du livret (page 3), la machine à écrire qui correspond à celle décrite dans l'histoire.",
+   "enonce": "Choisis, parmi les objets du livret (page 3), la machine à écrire qui correspond à celle décrite dans l'histoire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4347,7 +4495,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Observe les quatre couvertures de livres du livret (page 9). Dans quel livre pourrais-tu trouver l'histoire « Le Génie de la Machine à Écrire » ? Coche la proposition correcte.",
+   "enonce": "Observe les quatre couvertures de livres du livret (page 9). Dans quel livre pourrais-tu trouver l'histoire « Le Génie de la Machine à Écrire » ? Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-paratexte",
@@ -4527,11 +4675,11 @@
    "numero": "7",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "1 table : 4 chaises ; 2 tables jointes : 6 chaises ; 3 tables jointes : 8 chaises.",
+   "enonce": "Observe les tables, les chaises et la manière dont elles sont disposées (livret, page 7) : 1 table, 4 chaises ; 2 tables jointes, 6 chaises ; 3 tables jointes, 8 chaises. Calcule le nombre de chaises qu'on pourra placer si on joint 7 tables comme ci-dessus, puis le nombre de tables qu'il faudra joindre si on veut placer 20 chaises.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-suites",
-   "texte": "Avec 7 tables jointes, on place {1} chaises.  ·  Pour placer 20 chaises, il faut joindre {2} tables.",
+   "texte": "Si on joint 7 tables, on pourra placer {1} chaises.  ·  Pour placer 20 chaises, il faudra joindre {2} tables.",
    "reponse": [
     [
      "16"
@@ -4540,7 +4688,10 @@
      "9"
     ]
    ],
-   "explication": "Chaque table ajoutée apporte 2 chaises : chaises = 2 × tables + 2. 7 tables : 16 chaises. 20 chaises : (20 − 2) : 2 = 9 tables."
+   "explication": "Chaque table ajoutée apporte 2 chaises : chaises = 2 × tables + 2. 7 tables : 16 chaises. 20 chaises : (20 − 2) : 2 = 9 tables.",
+   "documents": [
+    "liv8-p07"
+   ]
   },
   {
    "id": "ceb-2023-l8-q8",
@@ -4651,7 +4802,7 @@
    "numero": "13a",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Le nombre 12 est… (coche toutes les bonnes réponses)",
+   "enonce": "Le nombre 12 est… (choisis toutes les bonnes réponses)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -4672,7 +4823,7 @@
    "numero": "13b",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Le nombre 72 est… (coche toutes les bonnes réponses)",
+   "enonce": "Le nombre 72 est… (choisis toutes les bonnes réponses)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -4694,7 +4845,7 @@
    "numero": "13c",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Le nombre 87 est… (coche toutes les bonnes réponses)",
+   "enonce": "Le nombre 87 est… (choisis toutes les bonnes réponses)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -4715,7 +4866,7 @@
    "numero": "13d",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Le nombre 33 est… (coche toutes les bonnes réponses)",
+   "enonce": "Le nombre 33 est… (choisis toutes les bonnes réponses)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -4738,7 +4889,7 @@
    "numero": "13e",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Le nombre 17 est… (coche toutes les bonnes réponses)",
+   "enonce": "Le nombre 17 est… (choisis toutes les bonnes réponses)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -4822,7 +4973,7 @@
    "numero": "20b",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Pain au chocolat 1,25 € pièce (×3), croissant 1,20 €, tarte 19,50 € : total 24,45 €. Jean-Pierre donne 25 € et on lui rend 0,55 €. Coche les deux opérations qui vérifient la transaction.",
+   "enonce": "Pain au chocolat 1,25 € pièce (×3), croissant 1,20 €, tarte 19,50 € : total 24,45 €. Jean-Pierre donne 25 € et on lui rend 0,55 €. Choisis les deux opérations qui vérifient la transaction.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-monnaie",
@@ -4845,7 +4996,7 @@
    "numero": "21",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux fractions comprises entre 0,2 et 0,8.",
+   "enonce": "Choisis les deux fractions comprises entre 0,2 et 0,8.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
@@ -4897,7 +5048,7 @@
    "numero": "25",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux opérations dont le résultat est égal à 56 × 25.",
+   "enonce": "Choisis les deux opérations dont le résultat est égal à 56 × 25.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -5025,7 +5176,7 @@
    "numero": "15",
    "domaine": "ma.arithmetique",
    "type": "grille",
-   "enonce": "Observe les deux droites graduées du livret (page 12), numérotées 1 et 2. Les nombres sont-ils bien placés sur ces droites graduées ? Coche OUI ou NON pour chaque droite.",
+   "enonce": "Observe les deux droites graduées du livret (page 12), numérotées 1 et 2. Les nombres sont-ils bien placés sur ces droites graduées ? Choisis OUI ou NON pour chaque droite.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-droite-graduee",
@@ -5059,7 +5210,7 @@
    "documents": [
     "liv8-p14"
    ],
-   "reponseModele": "1 point pour l'opération 1 080 : 12 ; 1 point pour la réponse : une réglette contient 90 agrafes (uniquement cette réponse).",
+   "reponseModele": "1 point pour l'opération (1 080 : 12, ou toute opération en cohérence avec la situation) ; 1 point pour la réponse : une barrette contient 90 agrafes (uniquement cette réponse).",
    "explication": "On partage le nombre total d'agrafes de la boite en 12 parts égales : 1 080 : 12 = 90."
   },
   {
@@ -5118,7 +5269,7 @@
    "numero": "24",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Observe les quatre segments gradués du livret (page 19), numérotés de 1 à 4. Sur quel segment gradué le nombre 4,62 est-il bien placé ? Entoure la proposition correcte.",
+   "enonce": "Observe les quatre segments gradués du livret (page 19), numérotés de 1 à 4. Sur quel segment gradué le nombre 4,62 est-il bien placé ? Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-droite-graduee",
@@ -5268,21 +5419,19 @@
    "livret": 9,
    "numero": "4a",
    "domaine": "sc.vivant",
-   "type": "qcm",
-   "enonce": "D'après l'arbre, quel animal possède des yeux, une bouche, un squelette interne, 4 membres, des poils et des molaires sécantes ?",
+   "type": "texte_court",
+   "enonce": "Utilise l'arbre pour répondre à la question. Quel est l'animal décrit ? Écris le nom de cet animal. Cet animal possède : des yeux, une bouche ; un squelette interne, 4 membres, des poils ; des molaires sécantes.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
     "ferme-2"
    ],
-   "choix": [
-    "le cheval",
-    "le lapin",
+   "reponse": [
     "le chat",
-    "la fourmi"
+    "chat",
+    "un chat"
    ],
-   "reponse": 2,
    "explication": "Les molaires sécantes (qui coupent la viande) sont celles du chat."
   },
   {
@@ -5291,7 +5440,7 @@
    "numero": "4b",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Des élèves classent la coccinelle avec le doryphore. Coche tous les attributs de la coccinelle repris dans l'arbre.",
+   "enonce": "Des élèves classent la coccinelle avec le doryphore. Choisis tous les attributs de la coccinelle repris dans l'arbre.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5352,15 +5501,15 @@
    "numero": "5a",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Masse et fréquence cardiaque au repos : girafe 900 kg / 65 ; éléphant 3 000 kg / 35 ; homme 78 kg / 70 ; chat 4 kg / 130 ; souris 0,040 kg / 500 battements par minute. Quelle affirmation est correcte ?",
+   "enonce": "Voici un tableau qui indique la masse et la fréquence cardiaque moyenne au repos de différents mammifères adultes : girafe, 900 kg, 65 battements par minute ; éléphant, 3 000 kg, 35 ; homme, 78 kg, 70 ; chat, 4 kg, 130 ; souris, 0,040 kg, 500. D'après le tableau, choisis l'affirmation correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "choix": [
-    "Plus la taille est petite, plus la fréquence est basse.",
-    "Plus la taille est grande, plus la fréquence est basse.",
-    "Plus la masse est petite, plus la fréquence est basse.",
-    "Plus la masse est petite, plus la fréquence est élevée."
+    "Plus la taille du mammifère est petite, plus la fréquence cardiaque est basse.",
+    "Plus la taille du mammifère est grande, plus la fréquence cardiaque est basse.",
+    "Plus la masse du mammifère est petite, plus la fréquence cardiaque est basse.",
+    "Plus la masse du mammifère est petite, plus la fréquence cardiaque est élevée."
    ],
    "reponse": 3,
    "explication": "Le tableau donne des masses : la souris (la plus légère) a le cœur le plus rapide, l'éléphant (le plus lourd) le plus lent. (La girafe, plus grande que l'homme mais plus légère que l'éléphant, montre que c'est la masse qui compte ici.)"
@@ -5395,7 +5544,7 @@
    "numero": "6",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Selon les êtres vivants, où le sang charge-t-il l'oxygène et décharge-t-il le gaz carbonique ? Coche les trois propositions correctes.",
+   "enonce": "Les êtres vivants respirent. Ils captent l'oxygène et rejettent le gaz carbonique dans le milieu où ils vivent : dans l'air ou dans l'eau. C'est le sang qui se charge du transport de ces deux gaz dans le corps. Choisis les trois propositions correctes. Selon les êtres vivants, l'endroit d'échange où le sang charge l'oxygène et décharge le gaz carbonique peut être :",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
@@ -5484,7 +5633,7 @@
    "numero": "7d",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Tableau 2 (débit moyen des adultes). Coche la bonne proposition.",
+   "enonce": "Tableau 2 (débit moyen des adultes). Choisis la bonne proposition.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -5512,7 +5661,7 @@
    "numero": "7d2",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "À âge et taille identiques, que peut-on dire du débit expiratoire moyen de la femme et de l'homme ?",
+   "enonce": "Lis le tableau de la page 11 du portfolio. Si on compare le débit expiratoire moyen de la femme et de l'homme, on peut affirmer qu'à âge et taille moyenne identiques…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -5520,9 +5669,9 @@
     "debit-2"
    ],
    "choix": [
-    "Ils ont une capacité identique.",
-    "La femme a une plus grande capacité que l'homme.",
-    "L'homme a une plus grande capacité que la femme."
+    "la femme et l'homme ont une capacité d'expiration moyenne identique.",
+    "la femme a une plus grande capacité d'expiration moyenne que l'homme.",
+    "l'homme a une plus grande capacité d'expiration moyenne que la femme."
    ],
    "reponse": 2,
    "explication": "À 20 ans et 160 cm : 547 l/min pour l'homme, 425 pour la femme."
@@ -5532,28 +5681,38 @@
    "livret": 9,
    "numero": "7e",
    "domaine": "sc.vivant",
-   "type": "qcm_multi",
-   "enonce": "D'après le tableau, coche les trois éléments qui font varier le débit expiratoire de pointe moyen chez les adultes.",
+   "type": "trous",
+   "enonce": "D'après le tableau de la page 11 du portfolio, écris les trois éléments qui font varier le débit expiratoire de pointe moyen chez les adultes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "documents": [
     "debit-2"
    ],
-   "choix": [
-    "l'âge",
-    "la taille",
-    "le sexe (homme ou femme)",
-    "le poids de la personne",
-    "le nombre de litres d'air expiré par minute"
-   ],
    "reponse": [
-    0,
-    1,
-    2
+    [
+     "l'âge",
+     "âge",
+     "l'age",
+     "age"
+    ],
+    [
+     "la taille",
+     "taille"
+    ],
+    [
+     "le sexe",
+     "sexe",
+     "le genre",
+     "genre",
+     "homme et femme",
+     "l'homme et la femme",
+     "être un homme ou une femme"
+    ]
    ],
    "explication": "Le tableau varie selon l'âge, la taille et le sexe.",
-   "parReponse": true
+   "texte": "{1}  ·  {2}  ·  {3}",
+   "differentes": true
   },
   {
    "id": "ceb-2023-l9-q8a",
@@ -5561,13 +5720,13 @@
    "numero": "8a",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Expérience 1 : neuf objets sont déposés sur l'eau ; certains flottent, d'autres coulent. Quelle question les élèves se posaient-ils ?",
+   "enonce": "Des élèves ont réalisé des expériences sur la flottaison. Quelle question les élèves ont-ils pu se poser avant de réaliser l'expérience 1 du portfolio ? Écris-la.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "flottaison-1"
    ],
-   "reponseModele": "Quels objets flottent et quels objets coulent ? (La matière d'un objet influence-t-elle sa flottaison ?)"
+   "reponseModele": "Quelle matière flotte ou coule ? (ou toute question allant en ce sens). Ce n'est pas bon : « Est-ce que les objets lourds coulent ? », « Quels sont les objets plus lourds et plus légers ? »."
   },
   {
    "id": "ceb-2023-l9-q8b",
@@ -5575,7 +5734,7 @@
    "numero": "8b",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Quelle expérience teste chaque variable ? (1 : neuf objets de matières différentes ; 2 : une boule d'azobé dans l'eau douce puis salée ; 3 : une boite de métal posée à plat, à la verticale ou écrasée)",
+   "enonce": "Des élèves ont réalisé des expériences sur la flottaison. Quelles expériences les élèves ont-ils réalisées pour tenter d'identifier des variables qui influencent la flottaison d'un objet ? Choisis la case correcte pour chaque variable.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
@@ -5607,11 +5766,13 @@
    "numero": "8c",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Un élève affirme : « Tout ce qui est en bois flotte sur l'eau. » A-t-il raison ? Réponds par oui ou par non, puis justifie ta réponse à l'aide des expériences.",
+   "enonce": "Voici une affirmation d'un élève après la réalisation des expériences sur la flottaison : « Tout ce qui est en bois flotte sur l'eau. » Cette affirmation est-elle correcte ? Réponds par oui ou par non, puis justifie ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
-    "flottaison-2"
+    "flottaison-1",
+    "flottaison-2",
+    "flottaison-3"
    ],
    "explication": "L'azobé est un bois très dense : il coule dans l'eau douce mais peut flotter dans l'eau salée.",
    "reponseModele": "Tu peux répondre OUI ou NON, à condition que ta justification soit cohérente avec ta réponse (1 point). OUI : il faut faire référence à la nature de l'eau (par exemple : dans l'eau salée, le bois d'azobé peut flotter). NON : la boule d'azobé coule (dans l'eau douce). Refusé : « ça dépend de la taille, du poids ou de la forme du bois » ; « d'autres matières (frigolite, éponge) flottent »."
@@ -5622,7 +5783,7 @@
    "numero": "9a",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Schéma du cycle de l'eau : A (au niveau des nuages), B (la pluie qui tombe), C (la rivière qui coule vers la mer). Utilise : infiltration, évaporation, précipitations, ruissèlement, condensation.",
+   "enonce": "Observe le cycle de l'eau. À quel phénomène correspondent les lettres A, B et C sur le schéma du cycle de l'eau ? Écris tes réponses en utilisant les termes de la liste suivante : infiltration, évaporation, précipitations, ruissèlement, condensation.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -5651,7 +5812,7 @@
    "numero": "9b",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Expérience 1 : de l'eau traverse un filtre contenant de la terre et du gravier. Expérience 2 : après deux jours, il manque de l'eau dans le récipient ouvert. Quelle étape du cycle chaque expérience illustre-t-elle ? (D : l'eau qui pénètre dans le sol ; E : l'eau qui monte de la mer vers le ciel)",
+   "enonce": "Observe ces deux expériences et le schéma du cycle de l'eau. Expérience 1 : on place un entonnoir muni d'un filtre en papier au-dessus d'un récipient. Après y avoir mis un mélange de terre et de gravier, on y verse de l'eau. Expérience 2 : on remplit deux récipients identiques de la même quantité d'eau. L'un est fermé, l'autre est ouvert. Après deux jours, on observe la quantité d'eau dans les récipients. Quelle étape du cycle de l'eau chaque expérience illustre-t-elle ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -5663,11 +5824,11 @@
     "Expérience 2"
    ],
    "colonnes": [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E"
+    "l'étape A",
+    "l'étape B",
+    "l'étape C",
+    "l'étape D",
+    "l'étape E"
    ],
    "reponse": [
     3,
@@ -5681,7 +5842,7 @@
    "numero": "10a",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Un récipient d'eau colorée, fermé par un bouchon traversé d'un tube : au frigo, le niveau baisse ; dans l'eau chaude, il monte. Coche les deux propositions correctes.",
+   "enonce": "Deux phénomènes naturels. En te basant sur l'expérience du portfolio, quelles propositions peux-tu formuler ? Choisis les deux réponses correctes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5736,7 +5897,7 @@
    "numero": "10c",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Dans quelles situations observe-t-on aussi la dilatation et la contraction dues à la température ?",
+   "enonce": "Dans une expérience, un liquide augmente de volume quand il est chauffé et diminue de volume quand il est refroidi. On peut observer ces phénomènes liés aux variations de température dans d'autres situations. Choisis les deux situations où l'on peut observer ces phénomènes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5751,7 +5912,10 @@
     2
    ],
    "explication": "La route se dilate à la chaleur ; en hiver, le béton se contracte et le joint s'écarte. L'éponge et le champignon changent à cause de l'eau, pas de la température.",
-   "parReponse": true
+   "parReponse": true,
+   "documents": [
+    "liv9-p19"
+   ]
   },
   {
    "id": "ceb-2023-l9-q11a",
@@ -5819,7 +5983,7 @@
    "numero": "11b",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Un circuit avec un moteur, une hélice et un interrupteur. Dans quel cas l'hélice tournera-t-elle ?",
+   "enonce": "Les élèves ont réalisé un montage électrique (un moteur avec une hélice) en y ajoutant un interrupteur. Pour que le courant électrique circule, il faut que le circuit soit fermé. L'interrupteur est sur « 0 » : le courant électrique ne peut pas circuler. L'interrupteur est sur « I » : le courant électrique peut circuler. Dans quel cas l'hélice tournera-t-elle ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
@@ -5830,7 +5994,10 @@
     "Batteries chargées, circuit ouvert"
    ],
    "reponse": 2,
-   "explication": "Il faut une source d'énergie (batteries chargées) et un circuit fermé (interrupteur sur « I »)."
+   "explication": "Il faut une source d'énergie (batteries chargées) et un circuit fermé (interrupteur sur « I »).",
+   "documents": [
+    "liv9-p21"
+   ]
   },
   {
    "id": "ceb-2023-l9-q11c",
