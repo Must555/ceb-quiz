@@ -651,6 +651,78 @@
    "titre": "Les dents de six animaux",
    "fichier": "assets/2024/liv10-p18.webp",
    "alt": "Tableau (présenté en largeur) de la dentition de six animaux : lynx, sanglier, mouton, hérisson, furet et cerf. Une croix indique la forme de leurs incisives, de leurs canines et de leurs molaires et prémolaires."
+  },
+  {
+   "id": "liv3-p18",
+   "source": "livret",
+   "livret": 3,
+   "page": 18,
+   "titre": "Le dessin à construire",
+   "fichier": "assets/2024/liv3-p18.webp",
+   "alt": "Un rectangle ABCD avec ses deux diagonales [AC] et [BD], le point E au milieu de [BC] et un cercle de centre E qui passe par B et C."
+  },
+  {
+   "id": "liv4-p02",
+   "source": "livret",
+   "livret": 4,
+   "page": 2,
+   "titre": "L'emballage de croquettes",
+   "fichier": "assets/2024/liv4-p02.webp",
+   "alt": "Emballage « Miamm – Croquettes de crevettes » : prix 4,99 € (promo), 40 % de crevettes, 6 pièces, cuisson 8 min à 170 °C, 360 g, à consommer avant le 25/07/2024."
+  },
+  {
+   "id": "liv4-p13",
+   "source": "livret",
+   "livret": 4,
+   "page": 13,
+   "titre": "La boite de croquettes",
+   "fichier": "assets/2024/liv4-p13.webp",
+   "alt": "Emballage « Miamm – Croquettes de crevettes » : 40 % de crevettes, 6 pièces, 8 min à 170 °C, 360 g."
+  },
+  {
+   "id": "liv4-p15",
+   "source": "livret",
+   "livret": 4,
+   "page": 15,
+   "titre": "Calendrier septembre-novembre 2024",
+   "fichier": "assets/2024/liv4-p15.webp",
+   "alt": "Calendriers de septembre 2024 (le 1er est un dimanche), octobre 2024 (le 1er est un mardi) et novembre 2024 (le 1er est un vendredi, Toussaint ; le 11, Armistice de 1918). Les samedis et dimanches sont grisés."
+  },
+  {
+   "id": "liv5-p04",
+   "source": "livret",
+   "livret": 5,
+   "page": 4,
+   "titre": "Hypocauste de villa romaine",
+   "fichier": "assets/2024/liv5-p04.webp",
+   "alt": "Photo des restes d'un hypocauste de villa romaine : de petits piliers de briques soutiennent un sol."
+  },
+  {
+   "id": "liv5-p05",
+   "source": "livret",
+   "livret": 5,
+   "page": 5,
+   "titre": "Deux traces du lancer du disque",
+   "fichier": "assets/2024/liv5-p05.webp",
+   "alt": "Le discobole (athlète lançant le disque), Myron, 5e siècle avant J.-C. ; Daniel Ståhl, médaille d'or, J.O. de Tokyo 2020."
+  },
+  {
+   "id": "liv10-p11",
+   "source": "livret",
+   "livret": 10,
+   "page": 11,
+   "titre": "L'aluminium en trois photos",
+   "fichier": "assets/2024/liv10-p11.webp",
+   "alt": "Photo 1 : des brindilles d'aluminium sont placées au-dessus d'une flamme. Photo 2 : l'aluminium fondu est versé dans un moule. Photo 3 : l'aluminium a refroidi et forme un petit lingot."
+  },
+  {
+   "id": "liv10-p14",
+   "source": "livret",
+   "livret": 10,
+   "page": 14,
+   "titre": "Dépenses énergétiques de quelques sports",
+   "fichier": "assets/2024/liv10-p14.webp",
+   "alt": "Pour une personne de 70 kg, pour 15 minutes et 60 minutes d'activité : handball 187 et 748 kcal ; équitation 51 et 204 ; judo 153 et 612 ; natation (brasse) 102 et 408 ; natation (crawl) 170 et 680 ; golf 60 et 240 ; tennis de table 51 et 204 ; tennis 102 et 408 ; yoga 26 et 102."
   }
  ],
  "questions": [
@@ -825,7 +897,7 @@
    "numero": "9",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Tu veux écrire un article sur les bienfaits des jeux de société. Coche une information qui pourra te servir et que tu as entendue dans l'entretien.",
+   "enonce": "Tu veux écrire un article sur les bienfaits des jeux de société. Choisis une information qui pourra te servir et que tu as entendue dans l'entretien.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -890,7 +962,7 @@
    "numero": "12",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Parmi les sujets ci-dessous, coche celui qui est abordé durant l'entretien.",
+   "enonce": "Parmi les sujets ci-dessous, choisis celui qui est abordé durant l'entretien.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -928,7 +1000,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas le savoir"
+    "L'entretien ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     2,
@@ -996,7 +1068,7 @@
    "numero": "1b",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Plan de l'avion : un couple veut deux sièges libres côte à côte en classe économique, le plus près possible des toilettes (WC) situées à l'arrière. Quels sièges ?",
+   "enonce": "Observe le plan de cet avion. Les sièges noircis sont ceux qui sont déjà réservés. Par exemple, en première classe, les sièges 2A, 2B et 2C qui sont sur une même rangée ne sont plus disponibles. Un couple veut réserver deux sièges côte à côte en classe économique et le plus près possible des toilettes (WC). Quels sont les numéros et lettres de ces sièges ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -1018,7 +1090,7 @@
    "numero": "1c",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Plan de l'avion : une famille veut 5 sièges libres sur la même rangée en classe économique. Quelle rangée choisir ?",
+   "enonce": "Observe le plan de cet avion. Les sièges noircis sont ceux qui sont déjà réservés. Par exemple, en première classe, les sièges 2A, 2B et 2C qui sont sur une même rangée ne sont plus disponibles. Une famille veut réserver 5 sièges en classe économique sur la même rangée. Sur quelle rangée se trouvent ces 5 sièges ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -1040,7 +1112,7 @@
    "numero": "1d",
    "domaine": "ma.geometrie",
    "type": "texte_court",
-   "enonce": "Plan de l'avion : un homme d'affaires veut un siège côté couloir, à la dernière rangée de la première classe. Quel siège ? (exemple : 3A)",
+   "enonce": "Observe le plan de cet avion. Les sièges noircis sont ceux qui sont déjà réservés. Par exemple, en première classe, les sièges 2A, 2B et 2C qui sont sur une même rangée ne sont plus disponibles. Un homme d'affaires veut réserver un siège côté couloir, à la dernière rangée de la première classe. Écris le numéro et la lettre de ce siège.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -1051,7 +1123,11 @@
     "7C",
     "7D",
     "7 C",
-    "7 D"
+    "7 D",
+    "C7",
+    "D7",
+    "C 7",
+    "D 7"
    ],
    "explication": "La dernière rangée de première classe est la 7. Côté couloir : C ou D, tous deux libres."
   },
@@ -1333,7 +1409,7 @@
    "numero": "12",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe le classement et les neuf solides du livret (page 13), repérés par les lettres A à I. Dans le livret, il fallait écrire chaque numéro du classement sous le solide qui convient (certains solides n'ont pas de numéro). Quel solide correspond à chaque numéro ?",
+   "enonce": "Observe le classement ci-dessous (livret, page 13). Sous quel solide faut-il écrire chaque numéro ? Certains solides n'auront pas de numéro. Les solides sont repérés par les lettres A à I.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1423,7 +1499,7 @@
    "numero": "13",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Émilie dicte : « Trace 2 droites parallèles a et b. Trace 2 autres droites parallèles c et d, sécantes aux droites a et b mais non perpendiculaires à elles. » Quelle figure obtient-on ?",
+   "enonce": "Émilie dicte le tracé suivant à son copain Jean-Luc : « Trace 2 droites parallèles a et b. Trace 2 autres droites parallèles c et d qui sont sécantes aux droites a et b mais non perpendiculaires aux droites a et b. » Quelle figure Émilie a-t-elle voulu faire tracer à Jean-Luc ? La figure tracée est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
@@ -1442,18 +1518,21 @@
    "numero": "17",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Le dessin montre un rectangle ABCD, ses deux diagonales et un cercle de centre E (milieu de [BC]) qui passe par B et C. Quel programme permet de le construire ?",
+   "enonce": "Lis ces quatre programmes de construction. Choisis le programme qui permet de construire ce dessin.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-cercle",
    "choix": [
-    "Rectangle ABCD, diagonales [AC] et [BD], E milieu de [BC], cercle de centre E et de rayon [BC].",
-    "Rectangle ABCD, médianes [AC] et [BD], E milieu de [BC], cercle de centre E et de diamètre [BC].",
-    "Rectangle ABCD, diagonales [AC] et [BD], E milieu de [BC], cercle de centre E et de diamètre [BC].",
-    "Rectangle ABCD, médianes [AC] et [BD], E milieu de [BC], cercle de centre E et de rayon [EC]."
+    "Programme 1 : Trace un rectangle ABCD. Trace les diagonales [AC] et [BD]. Marque le point E milieu de [BC]. Trace un cercle de centre E et de rayon [BC].",
+    "Programme 2 : Trace un rectangle ABCD. Trace les médianes [AC] et [BD]. Marque le point E milieu de [BC]. Trace un cercle de centre E et de diamètre [BC].",
+    "Programme 3 : Trace un rectangle ABCD. Trace les diagonales [AC] et [BD]. Marque le point E milieu de [BC]. Trace un cercle de centre E et de diamètre [BC].",
+    "Programme 4 : Trace un rectangle ABCD. Trace les médianes [AC] et [BD]. Marque le point E milieu de [BC]. Trace un cercle de centre E et de rayon [EC]."
    ],
    "reponse": 2,
-   "explication": "[AC] et [BD] relient des sommets opposés : ce sont des diagonales, pas des médianes. Le cercle passe par B et C avec E au milieu : [BC] est son diamètre."
+   "explication": "[AC] et [BD] relient des sommets opposés : ce sont des diagonales, pas des médianes. Le cercle passe par B et C avec E au milieu : [BC] est son diamètre.",
+   "documents": [
+    "liv3-p18"
+   ]
   },
   {
    "id": "ceb-2024-l4-q1a",
@@ -1461,7 +1540,7 @@
    "numero": "1a",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Complète avec une information de l'emballage.",
+   "enonce": "Observe cet emballage. Complète chaque ligne du tableau avec une information présente sur cet emballage (le nombre et l'unité de mesure).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1486,7 +1565,10 @@
      "8min"
     ]
    ],
-   "explication": "La température de cuisson est 170 °C et la durée 8 minutes."
+   "explication": "La température de cuisson est 170 °C et la durée 8 minutes.",
+   "documents": [
+    "liv4-p02"
+   ]
   },
   {
    "id": "ceb-2024-l4-q1b",
@@ -1494,7 +1576,7 @@
    "numero": "1b",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. De quel type de grandeur s'agit-il ?",
+   "enonce": "Observe cet emballage. Voici des informations prélevées sur l'emballage. Écris de quel type de grandeur il s'agit.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1513,7 +1595,10 @@
      "le prix"
     ]
    ],
-   "explication": "Les grammes mesurent une masse ; les euros un coût (un prix). Attention : on parle de masse, pas de « poids »."
+   "explication": "Les grammes mesurent une masse ; les euros un coût (un prix). Attention : on parle de masse, pas de « poids ».",
+   "documents": [
+    "liv4-p02"
+   ]
   },
   {
    "id": "ceb-2024-l4-q2",
@@ -1556,7 +1641,7 @@
    "numero": "5",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Une douche dure 8 minutes. Un pommeau classique consomme 15 l d'eau par minute, un pommeau économique 6 l par minute. Combien de litres d'eau économise-t-on avec le pommeau économique ?",
+   "enonce": "Consommation d'eau avec un pommeau classique : 15 l d'eau par minute. Consommation d'eau avec un pommeau économique : 6 l d'eau par minute. Une personne prend une douche de 8 minutes. Calcule la quantité d'eau qu'elle économisera si elle remplace son pommeau de douche classique par un pommeau de douche économique.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -1581,7 +1666,7 @@
    "numero": "7",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un compteur indique qu'il reste 648 heures avant l'ouverture des Jeux Olympiques. Combien de jours cela fait-il ?",
+   "enonce": "Un compteur numérique décompte les heures restantes avant l'ouverture des Jeux Olympiques d'été de Paris. Voici ce qu'il indique : « OUVERTURE DES JEUX OLYMPIQUES DANS 00648 HEURES ». Calcule le nombre de jours restants avant l'ouverture des Jeux Olympiques.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -1708,13 +1793,16 @@
    "numero": "12",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Emballage de croquettes de crevettes : 6 pièces, 360 g, cuisson 8 min à 170 °C, 40 % de crevettes, prix 4,99 €, à consommer avant le 25/07/2024. Chaque croquette contient 40 % de crevettes. Quelle est la masse de crevettes dans une seule croquette ?",
+   "enonce": "Observe cette boite de croquettes de crevettes. Comme indiqué sur l'emballage, chaque croquette contient 40 % de crevettes. Calcule la masse de crevettes contenues dans une seule croquette.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
    "unite": "g",
    "reponse": 24,
-   "explication": "Une croquette : 360 g : 6 = 60 g. 40 % de 60 g : 60 × 40 : 100 = 24 g."
+   "explication": "Une croquette : 360 g : 6 = 60 g. 40 % de 60 g : 60 × 40 : 100 = 24 g.",
+   "documents": [
+    "liv4-p13"
+   ]
   },
   {
    "id": "ceb-2024-l4-q13a",
@@ -1722,7 +1810,7 @@
    "numero": "13a",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Quelles classes seront à la mer le premier samedi d'octobre (5 octobre) ?",
+   "enonce": "Une école organisera des classes de mer pour les classes de la 3e primaire (P3) à la 6e primaire (P6). Voici leurs dates de départ et de retour : P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Utilise le calendrier. Choisis toutes les classes qui se trouveront à la mer le premier samedi du mois d'octobre.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -1736,7 +1824,10 @@
     0,
     3
    ],
-   "explication": "Le 5 octobre : P3 (jusqu'au 6/10) et P6 (jusqu'au 11/10). P5 est rentrée le 4/10, P4 le 27/09."
+   "explication": "Le 5 octobre : P3 (jusqu'au 6/10) et P6 (jusqu'au 11/10). P5 est rentrée le 4/10, P4 le 27/09.",
+   "documents": [
+    "liv4-p15"
+   ]
   },
   {
    "id": "ceb-2024-l4-q13b",
@@ -1744,7 +1835,7 @@
    "numero": "13b",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. À quelle date 3 classes seront-elles à la mer en même temps ?",
+   "enonce": "Une école organisera des classes de mer pour les classes de la 3e primaire (P3) à la 6e primaire (P6). Voici leurs dates de départ et de retour : P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Utilise le calendrier. À quelle date 3 classes se trouveront-elles en même temps à la mer ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -1755,7 +1846,10 @@
     "Le 9 octobre"
    ],
    "reponse": 1,
-   "explication": "Du 30/09 au 04/10, P3, P5 et P6 sont toutes à la mer. Le 25/09 : P4 et P5 ; le 6/10 : P3 et P6 ; le 9/10 : P6."
+   "explication": "Du 30/09 au 04/10, P3, P5 et P6 sont toutes à la mer. Le 25/09 : P4 et P5 ; le 6/10 : P3 et P6 ; le 9/10 : P6.",
+   "documents": [
+    "liv4-p15"
+   ]
   },
   {
    "id": "ceb-2024-l4-q13c",
@@ -1763,7 +1857,7 @@
    "numero": "13c",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Classes de mer (calendrier 2024 : le lundi 30 septembre, le mardi 1er octobre, le samedi 5 octobre…) — P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Les P3 vont habituellement à la piscine le lundi. Quelle date le directeur doit-il annuler ?",
+   "enonce": "Une école organisera des classes de mer pour les classes de la 3e primaire (P3) à la 6e primaire (P6). Voici leurs dates de départ et de retour : P3 : du 30/09 au 06/10 ; P4 : du 20/09 au 27/09 ; P5 : du 23/09 au 04/10 ; P6 : du 30/09 au 11/10. Utilise le calendrier. Les élèves de P3 vont habituellement à la piscine le lundi. Quelle date le directeur devra-t-il annuler pour les P3 ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -1774,7 +1868,10 @@
     "Le lundi 14 octobre"
    ],
    "reponse": 1,
-   "explication": "Les P3 sont à la mer du 30/09 au 06/10 : le seul lundi de cette période est le 30 septembre."
+   "explication": "Les P3 sont à la mer du 30/09 au 06/10 : le seul lundi de cette période est le 30 septembre.",
+   "documents": [
+    "liv4-p15"
+   ]
   },
   {
    "id": "ceb-2024-l4-q14",
@@ -1782,7 +1879,7 @@
    "numero": "14",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un parallélépipède rectangle a un volume de 60 m³. Sa base mesure 5 m sur 4 m. Quelle est sa hauteur ?",
+   "enonce": "Voici un parallélépipède rectangle dont la base mesure 5 m sur 4 m. Le volume de ce parallélépipède rectangle est de 60 m³. Calcule la hauteur de ce parallélépipède.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-volumes",
@@ -1796,11 +1893,11 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Avec des bouteilles recyclées, on fabrique des oreillers : 3 oreillers demandent 36 bouteilles. Complète.",
+   "enonce": "En recyclant des bouteilles en plastique, on peut fabriquer du tissu. Ce tissu s'appelle du polyester recyclé. Voici un exemple de ce que l'on peut réaliser : 3 oreillers réalisés demandent 36 bouteilles (exemple). Complète le tableau.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
-   "texte": "10 oreillers : {1} bouteilles  ·  {2} oreillers : 60 bouteilles",
+   "texte": "Oreillers : 10 pièces réalisées → {1} bouteilles nécessaires  ·  Oreillers : {2} pièces réalisées → 60 bouteilles nécessaires",
    "reponse": [
     [
      "120"
@@ -1817,7 +1914,7 @@
    "numero": "16",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Sur 2 500 élèves interrogés, 87 % ont répondu OUI à la question « Votre cartable est-il trop lourd ? ». Combien d'élèves ont répondu OUI ?",
+   "enonce": "Un organisme a réalisé une enquête sur le bienêtre à l'école. Sur les 2 500 élèves interrogés, 87 % ont répondu OUI à la question « Votre cartable est-il trop lourd ? ». Calcule le nombre d'élèves qui ont répondu OUI à cette question.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
@@ -1853,7 +1950,7 @@
    "numero": "18a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Combien de minutes a-t-elle pour changer de train à Liège ?",
+   "enonce": "Émilie se rend en train de Waremme à Verviers. À Liège, elle doit changer de train. Voici le détail de son trajet : 16:17 Waremme, départ voie 2 (n° de train : S44 8490) ; 16:49 Liège-Guillemins, arrivée voie 2 ; 17:03 Liège-Guillemins, départ voie 1 (n° de train : IC 514) ; 17:21 Verviers-Central, arrivée voie 3. Calcule la durée dont elle dispose pour changer de train à Liège.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -1867,7 +1964,7 @@
    "numero": "18b",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Trajet d'Émilie : départ de Waremme à 16:17, arrivée à Liège-Guillemins à 16:49 ; départ de Liège à 17:03, arrivée à Verviers-Central à 17:21. Quelle est la durée totale du trajet ?",
+   "enonce": "Émilie se rend en train de Waremme à Verviers. À Liège, elle doit changer de train. Voici le détail de son trajet : 16:17 Waremme, départ voie 2 (n° de train : S44 8490) ; 16:49 Liège-Guillemins, arrivée voie 2 ; 17:03 Liège-Guillemins, départ voie 1 (n° de train : IC 514) ; 17:21 Verviers-Central, arrivée voie 3. Quelle est la durée totale du trajet d'Émilie pour aller de Waremme à Verviers ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -1951,11 +2048,11 @@
    "numero": "20",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Pour carreler une terrasse, il faut 32 dalles carrées de 40 cm de côté. Combien faudrait-il de dalles avec un autre format ?",
+   "enonce": "Pour carreler une terrasse, un carreleur a utilisé 32 dalles carrées de 40 cm de côté (exemple : format 40 cm × 40 cm → 32 dalles). De quelle quantité de dalles aurait-il eu besoin s'il avait utilisé un autre format ? Complète le tableau.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
-   "texte": "Dalles de 20 cm × 40 cm : {1}  ·  Dalles de 80 cm × 40 cm : {2}  ·  Dalles de 80 cm × 80 cm : {3}",
+   "texte": "Format 20 cm × 40 cm : {1} dalles  ·  Format 40 cm × 80 cm : {2} dalles  ·  Format 80 cm × 80 cm : {3} dalles",
    "reponse": [
     [
      "64"
@@ -1975,7 +2072,7 @@
    "numero": "21",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Ordures ménagères en Wallonie (kg par habitant) : 2015 : 152 ; 2016 : 150,8 ; 2017 : 147,4 ; 2018 : 145,1 ; 2019 : 144,9 ; 2020 : 142 ; 2021 : 141,9 ; 2022 : 140,7. Quelle est la quantité moyenne ?",
+   "enonce": "Voici la quantité d'ordures ménagères exprimée en kilogrammes par habitant (kg/hab.), entre 2015 et 2022, en Wallonie : 2015 : 152 ; 2016 : 150,8 ; 2017 : 147,4 ; 2018 : 145,1 ; 2019 : 144,9 ; 2020 : 142 ; 2021 : 141,9 ; 2022 : 140,7. Calcule la quantité moyenne d'ordures ménagères collectées par habitant durant cette période en Wallonie.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-moyenne",
@@ -2080,7 +2177,7 @@
    "numero": "1c1",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "La trace 5 (« Appel au Peuple » de 1830, affiche imprimée) est…",
+   "enonce": "La trace 5 est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2125,7 +2222,7 @@
    "numero": "1d1",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Un hypocauste de villa romaine est un système de chauffage par le sol. Il nous renseigne sur une technique que l'Humain utilisait pour…",
+   "enonce": "Observe le document suivant : « Hypocauste de villa romaine ». Cette trace du passé nous renseigne sur le mode de vie des gens dans nos régions à une époque déterminée. Cette trace du passé nous renseigne sur une technique que l'Humain utilisait pour…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
@@ -2137,7 +2234,10 @@
     "se loger"
    ],
    "reponse": 4,
-   "explication": "Chauffer sa maison, c'est une question de logement."
+   "explication": "Chauffer sa maison, c'est une question de logement.",
+   "documents": [
+    "liv5-p04"
+   ]
   },
   {
    "id": "ceb-2024-l5-q1d2",
@@ -2145,7 +2245,7 @@
    "numero": "1d2",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "À quelle période conventionnelle se rapporte l'hypocauste de villa romaine ?",
+   "enonce": "Observe le document suivant : « Hypocauste de villa romaine ». À quelle période historique conventionnelle la technique présente sur le document se rapporte-t-elle ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -2157,7 +2257,10 @@
     "Époque contemporaine"
    ],
    "reponse": 1,
-   "explication": "Les villas romaines datent de l'Antiquité."
+   "explication": "Les villas romaines datent de l'Antiquité.",
+   "documents": [
+    "liv5-p04"
+   ]
   },
   {
    "id": "ceb-2024-l5-q1e",
@@ -2165,11 +2268,14 @@
    "numero": "1e",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Un élève affirme : « Le lancer du disque existe depuis très longtemps. Des traces prouvent qu'il est apparu au Moyen Âge. » Pourtant, le Discobole de Myron date du 5e siècle avant J.-C. Pourquoi l'élève a-t-il tort ?",
+   "enonce": "Observe les traces du passé suivantes : « Le discobole (athlète lançant le disque), Myron, 5e siècle avant J.-C. » et « Daniel Ståhl, médaille d'or, J.O. de Tokyo 2020 ». Voici ce qu'affirme cet élève : « L'activité sportive du lancer du disque existe depuis très longtemps. Des traces de cette activité prouvent qu'elle est apparue au Moyen Âge. » Cette affirmation n'est pas correcte. Écris la raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
-   "reponseModele": "Le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité : le lancer du disque existait donc bien avant le Moyen Âge."
+   "reponseModele": "Le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité : le lancer du disque existait donc bien avant le Moyen Âge.",
+   "documents": [
+    "liv5-p05"
+   ]
   },
   {
    "id": "ceb-2024-l5-q2a",
@@ -2214,7 +2320,7 @@
    "numero": "2b",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Le document 5 (affiche des J.O. de Stockholm 1912) est…",
+   "enonce": "Le document 5 est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2255,19 +2361,19 @@
    "numero": "2d",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Pierre de Coubertin est né en 1863 et mort en 1937. Situe ces évènements par rapport à sa vie.",
+   "enonce": "Pierre de Coubertin, président du Comité International Olympique. Né en 1863, mort en 1937. Situe des évènements marquants de notre histoire par rapport à la vie de Pierre de Coubertin.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "lignes": [
-    "La guerre 14-18",
-    "La signature du Traité de Rome (1957)",
-    "L'indépendance de la Belgique (1830)"
+    "La guerre 14-18 a eu lieu…",
+    "La signature du Traité de Rome a eu lieu…",
+    "L'indépendance de la Belgique a eu lieu…"
    ],
    "colonnes": [
-    "avant sa naissance",
-    "pendant sa vie",
-    "après sa mort"
+    "avant la naissance de Pierre de Coubertin",
+    "durant la vie de Pierre de Coubertin",
+    "après la mort de Pierre de Coubertin"
    ],
    "reponse": [
     1,
@@ -2317,7 +2423,7 @@
    "numero": "2e2",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Le document C (Charlotte Cooper, championne olympique en 1900, en longue robe avec sa raquette) est…",
+   "enonce": "Le document C est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2410,7 +2516,7 @@
    "numero": "2h",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe la carte des aéroports. Quelle direction a prise chaque délégation ?",
+   "enonce": "Lors des Jeux Olympiques (J.O.) modernes d'été, les athlètes prennent régulièrement l'avion. Choisis la réponse correcte en t'aidant de la carte.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -2418,15 +2524,15 @@
     "aeroports"
    ],
    "lignes": [
-    "De Bruxelles à Los Angeles (1984)",
-    "De Bruxelles à Tokyo (2021)",
-    "De Tokyo à Sydney (2000)"
+    "Pour se rendre à Los Angeles en 1984, au départ de Bruxelles, la délégation belge a pris la direction…",
+    "Pour se rendre à Tokyo en 2021, au départ de Bruxelles, la délégation belge a pris la direction…",
+    "Pour se rendre à Sydney en 2000, au départ de Tokyo, la délégation japonaise a pris la direction…"
    ],
    "colonnes": [
-    "nord",
-    "ouest",
-    "est",
-    "sud"
+    "du nord",
+    "de l'ouest",
+    "de l'est",
+    "du sud"
    ],
    "reponse": [
     1,
@@ -2441,7 +2547,7 @@
    "numero": "2i",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Un élève affirme : « Pour aller aux J.O. de Sydney, l'avion des athlètes belges a survolé seulement deux continents. » C'est faux. Pourquoi ?",
+   "enonce": "Observe la carte. Voici ce qu'affirme cet élève : « Pour se rendre aux Jeux Olympiques (J.O.) de Sydney, l'avion de la délégation des athlètes belges a survolé seulement deux continents différents ! » Cette affirmation n'est pas correcte. Écris la raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2456,14 +2562,14 @@
    "numero": "2j",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Graphique des médailles de Tokyo 2020. Un tableau reprend : Japon (or 27, argent 14, bronze 17) ; un pays X (or 10, argent 12, bronze 14) ; Canada (or 7, argent 7, bronze ?).",
+   "enonce": "Observe le graphique. On a placé certaines données du graphique dans le tableau suivant : Japon (or 27, argent 14, bronze 17) ; pays à trouver (or 10, argent 12, bronze 14) ; Canada (or 7, argent 7, bronze à trouver). Écris, dans les cases blanches, les données manquantes. Réponds ensuite à la question en t'aidant des données du graphique.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "documents": [
     "medailles"
    ],
-   "texte": "Le pays X est {1}.  ·  Médailles de bronze du Canada : {2}.  ·  Pays de l'Union européenne qui a gagné le plus de médailles de bronze : {3}.",
+   "texte": "Le pays à trouver est {1}.  ·  Médailles de bronze du Canada : {2}.  ·  Le pays de l'Union européenne qui a gagné le plus de médailles de bronze : {3}.",
    "reponse": [
     [
      "les Pays-Bas",
@@ -2473,8 +2579,8 @@
      "10"
     ],
     [
-     "les Pays-Bas",
-     "Pays-Bas"
+     "Pays-Bas",
+     "les Pays-Bas"
     ]
    ],
    "explication": "Les Pays-Bas ont 10 médailles d'or, 12 d'argent et 14 de bronze (la France en a 11 de bronze). Le Canada a 10 médailles de bronze."
@@ -2485,7 +2591,7 @@
    "numero": "2k1",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été se déroulent généralement…",
+   "enonce": "Voici des renseignements sur six éditions consécutives des Jeux Olympiques (J.O.) d'été (pays organisateur – ville – année – dates – nombre d'épreuves) : États-Unis, Atlanta, 1996, du 19/07 au 05/08, 271 ; Australie, Sydney, 2000, du 15/09 au 01/10, 300 ; Grèce, Athènes, 2004, du 13/08 au 29/08, 301 ; Chine, Pékin, 2008, du 08/08 au 24/08, 302 ; Royaume-Uni, Londres, 2012, du 27/07 au 12/08, 302 ; Brésil, Rio de Janeiro, 2016, du 05/08 au 21/08, 306. En t'aidant des informations du tableau, choisis la proposition qui convient. Les Jeux Olympiques (J.O.) d'été se déroulent généralement…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -2504,7 +2610,7 @@
    "numero": "2k2",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. d'été durent environ…",
+   "enonce": "Voici des renseignements sur six éditions consécutives des Jeux Olympiques (J.O.) d'été (pays organisateur – ville – année – dates – nombre d'épreuves) : États-Unis, Atlanta, 1996, du 19/07 au 05/08, 271 ; Australie, Sydney, 2000, du 15/09 au 01/10, 300 ; Grèce, Athènes, 2004, du 13/08 au 29/08, 301 ; Chine, Pékin, 2008, du 08/08 au 24/08, 302 ; Royaume-Uni, Londres, 2012, du 27/07 au 12/08, 302 ; Brésil, Rio de Janeiro, 2016, du 05/08 au 21/08, 306. En t'aidant des informations du tableau, choisis la proposition qui convient. Les Jeux Olympiques (J.O.) d'été durent environ…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -2523,7 +2629,7 @@
    "numero": "2k3",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "J.O. d'été : Atlanta 1996 (du 19/07 au 05/08), Sydney 2000 (15/09 au 01/10), Athènes 2004 (13/08 au 29/08), Pékin 2008 (08/08 au 24/08), Londres 2012 (27/07 au 12/08), Rio de Janeiro 2016 (05/08 au 21/08). Les J.O. de Pékin se sont déroulés 8 ans après ceux de…",
+   "enonce": "Voici des renseignements sur six éditions consécutives des Jeux Olympiques (J.O.) d'été (pays organisateur – ville – année – dates – nombre d'épreuves) : États-Unis, Atlanta, 1996, du 19/07 au 05/08, 271 ; Australie, Sydney, 2000, du 15/09 au 01/10, 300 ; Grèce, Athènes, 2004, du 13/08 au 29/08, 301 ; Chine, Pékin, 2008, du 08/08 au 24/08, 302 ; Royaume-Uni, Londres, 2012, du 27/07 au 12/08, 302 ; Brésil, Rio de Janeiro, 2016, du 05/08 au 21/08, 306. En t'aidant des informations du tableau, choisis la proposition qui convient. Les Jeux Olympiques (J.O.) de Pékin se sont déroulés 8 ans après ceux de…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -2542,7 +2648,7 @@
    "numero": "2l",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Jesse Owens (États-Unis, J.O. 1936), Bianca Buitendag (Afrique du Sud, J.O. 2020), Hermann Weingärtner (Allemagne, J.O. 1896). Comme dans le tableau de l'épreuve (athlète × siècle de la médaille), place chaque athlète : choisis le continent de son pays, puis le siècle où il a été médaillé. Chaque athlète rapporte 1 point si le continent ET le siècle sont justes.",
+   "enonce": "Voici des athlètes médaillés aux Jeux Olympiques (J.O.) : A. Jesse Owens, États-Unis d'Amérique, médaillé aux J.O. de 1936 ; B. Bianca Buitendag, Afrique du Sud, médaillée aux J.O. de 2020 ; C. Hermann Weingärtner, Allemagne, médaillé aux J.O. de 1896. Pour chaque athlète, choisis son continent (athlète européen(ne), américain(e), océanien(ne), africain(e) ou asiatique), puis le siècle où il ou elle a été médaillé(e).",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2629,7 +2735,7 @@
    "numero": "3a",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Les oiseaux migrateurs préfèrent survoler les terres. Coucou gris : Belgique → Suisse → Italie → Libye → Tchad → République centrafricaine → RD Congo. Hirondelle rustique : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Sénégal. Cigogne noire : Belgique → Gibraltar → Maroc → Algérie → Mauritanie → Mali → Burkina Faso → Togo. Écris le numéro du trajet sur la carte.",
+   "enonce": "À la fin de l'été, certains oiseaux se rassemblent et emmagasinent de grandes réserves d'énergie pour quitter la Belgique et migrer vers le sud. Les oiseaux migrateurs ne choisissent pas la trajectoire la plus courte mais la plus sûre. Ils préfèrent survoler les terres que les mers. Trajets migratoires de certains oiseaux : Coucou gris : Belgique → Suisse → Italie → Libye (Afrique) → Tchad (Afrique) → République Centrafricaine (Afrique) → République Démocratique du Congo (Afrique). Hirondelle rustique : Belgique → Gibraltar (Europe) → Maroc (Afrique) → Algérie (Afrique) → Mauritanie (Afrique) → Sénégal (Afrique). Cigogne noire : Belgique → Gibraltar (Europe) → Maroc (Afrique) → Algérie (Afrique) → Mauritanie (Afrique) → Mali (Afrique) → Burkina Faso (Afrique) → Togo (Afrique). En t'aidant de la carte, écris le numéro du trajet migratoire de chaque oiseau.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -2698,7 +2804,7 @@
    "numero": "4a",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Photo n°1 : un terrain sec, rocailleux, avec très peu de végétation. Quel milieu « naturel » représente-t-elle ?",
+   "enonce": "Observe les photographies de paysages. Le milieu « naturel » illustré par la photographie n°1 représente…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
@@ -2721,7 +2827,7 @@
    "numero": "4b",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Chaque photographie est-elle prise au sol ou vue du ciel ?",
+   "enonce": "Observe les photographies de paysages. Choisis la proposition qui caractérise le mieux chaque photographie.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2729,8 +2835,8 @@
     "paysages"
    ],
    "lignes": [
-    "Photo n°2 (la forêt)",
-    "Photo n°4 (la grand-place)"
+    "la photographie n° 2",
+    "la photographie n° 4"
    ],
    "colonnes": [
     "Photographie au sol",
@@ -2773,7 +2879,7 @@
    "numero": "4d",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Coche les deux caractéristiques dominantes du paysage de la photo n°4 (une grand-place de ville).",
+   "enonce": "En t'aidant des photographies, choisis les deux caractéristiques dominantes pour le paysage de la photo n°4.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2801,13 +2907,13 @@
    "numero": "4e",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "La forêt est un milieu à la végétation abondante. Est-ce un atout ou une contrainte pour l'Humain ?",
+   "enonce": "La forêt est un milieu caractérisé par l'exubérance (l'abondance) de sa végétation qui présente des atouts (avantages) et contraintes (inconvénients) pour l'Humain. Pour chaque proposition, choisis la colonne qui convient.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
    "lignes": [
-    "Elle rend possible la préservation de nombreuses espèces animales et végétales.",
-    "Elle rend possible la réduction des gaz à effet de serre."
+    "L'exubérance de sa végétation rend possible la préservation de nombreuses espèces animales et végétales.",
+    "L'exubérance de sa végétation rend possible la réduction des gaz à effets de serre."
    ],
    "colonnes": [
     "Atout",
@@ -2825,7 +2931,7 @@
    "numero": "4f",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe les photos A (un village), B (une grande ville) et C (des champs). Quelle photo correspond à chaque affirmation ?",
+   "enonce": "Observe les trois photographies qui montrent que l'Humain organise son espace. Pour chaque affirmation, choisis la colonne qui convient.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2948,7 +3054,7 @@
    "numero": "3a",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux décompositions qui donnent le même résultat que 15 × 45.",
+   "enonce": "Choisis les deux décompositions qui donnent le même résultat que 15 × 45.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -2972,7 +3078,7 @@
    "numero": "3b",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux décompositions qui donnent le même résultat que 880 : 20.",
+   "enonce": "Choisis les deux décompositions qui donnent le même résultat que 880 : 20.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -3064,7 +3170,7 @@
    "numero": "6",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Arbre de décomposition : 15 000 = 7 500 + 7 500 ; 7 500 = 3 750 + 3 750 ; 3 750 = 1 250 + 1 250 + 1 250.",
+   "enonce": "Observe cet arbre de décomposition du nombre 15 000 : 15 000 se décompose en 7 500 et 7 500 ; chaque 7 500 se décompose en 3 750 et 3 750 ; chaque 3 750 se décompose en 1 250, 1 250 et 1 250. Complète les opérations.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -3078,18 +3184,33 @@
      "7 500",
      "3750 + 3750",
      "3 750 + 3 750",
+     "3750+3750",
+     "3 750+3 750",
+     "2 × 3750",
+     "2 × 3 750",
+     "2 x 3750",
+     "2 x 3 750",
+     "3750 × 2",
+     "3 750 × 2",
+     "3750 x 2",
+     "3 750 x 2",
      "6 × 1250",
      "6 × 1 250",
      "6 x 1250",
      "6 x 1 250",
      "(6 × 1250)",
      "(6 × 1 250)",
-     "6 fois 1250",
-     "6 fois 1 250",
      "(6 x 1250)",
      "(6 x 1 250)",
-     "3750+3750",
-     "3 750+3 750"
+     "1250 × 6",
+     "1 250 × 6",
+     "1250 x 6",
+     "1 250 x 6",
+     "6 fois 1250",
+     "6 fois 1 250",
+     "1250 + 1250 + 1250 + 1250 + 1250 + 1250",
+     "1 250 + 1 250 + 1 250 + 1 250 + 1 250 + 1 250",
+     "1250+1250+1250+1250+1250+1250"
     ]
    ],
    "explication": "15 000 contient 4 fois 3 750. 6 × 1 250 = 7 500, il manque 7 500."
@@ -3136,7 +3257,10 @@
     ],
     [
      "381",
-     "379 + 2"
+     "379 + 2",
+     "379+2",
+     "2 + 379",
+     "2+379"
     ],
     [
      "1393",
@@ -3144,11 +3268,18 @@
      "1397 − 4",
      "1 397 − 4",
      "1397 - 4",
-     "1 397 - 4"
+     "1 397 - 4",
+     "1397-4",
+     "1397−4",
+     "1 397-4",
+     "1 397−4"
     ],
     [
      "33",
-     "25,73 + 7,27"
+     "25,73 + 7,27",
+     "25,73+7,27",
+     "7,27 + 25,73",
+     "7,27+25,73"
     ]
    ],
    "explication": "9 fois = 10 fois − 1 fois. 4 × 50 = 200. Diviser par 0,1 = multiplier par 10. On ajoute 2 aux deux termes d'une soustraction. On déplace 4 d'un terme à l'autre. 2,88 + 14,12 = 17 et 25,73 + 7,27 = 33."
@@ -3215,7 +3346,7 @@
    "numero": "10",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les trois opérations qui donnent le même résultat que 12,5 × 48.",
+   "enonce": "Choisis les trois opérations qui donnent le même résultat que 12,5 × 48.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -3361,7 +3492,7 @@
    "numero": "2a",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche tous les multiples de 8 compris entre 1 et 37.",
+   "enonce": "Choisis tous les multiples de 8 compris entre 1 et 37.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
@@ -3489,7 +3620,7 @@
    "numero": "6",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "7 adultes et 16 enfants viennent au gouter. On prévoit 4 verres par enfant et 3 verres par adulte. Une bouteille de jus remplit 6 verres. Combien de bouteilles faut-il acheter au minimum ?",
+   "enonce": "Demain, 7 adultes et 16 enfants participeront à un gouter d'anniversaire. On doit acheter des bouteilles de jus de fruits. On prévoit de servir 4 verres par enfant et 3 verres par adulte. Avec une bouteille de jus de fruits, on peut remplir 6 verres. Calcule le nombre minimum de bouteilles de jus de fruits que l'on devra acheter.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -3530,20 +3661,20 @@
    "numero": "8",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux nombres équivalents.",
+   "enonce": "Choisis les deux nombres équivalents.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
    "choix": [
-    "septante-cinq dixièmes",
-    "7,05",
-    "0,075",
-    "trois quarts",
+    "100/75",
     "75/100",
-    "100/75"
+    "0,075",
+    "septante-cinq dixièmes",
+    "trois quarts",
+    "7,05"
    ],
    "reponse": [
-    3,
+    1,
     4
    ],
    "explication": "Trois quarts = 0,75 = 75/100. Septante-cinq dixièmes = 7,5."
@@ -3649,7 +3780,7 @@
    "numero": "12",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "Un chocolatier a produit autant de pralines de chacun de ces 6 gouts : praliné, fraise, caramel, vanille, lait, moka. En tout, 1 560 pralines. Combien de pralines à la fraise ?",
+   "enonce": "Un chocolatier a produit une même quantité de pralines de chacun des gouts suivants : praliné, fraise, caramel, vanille, lait, moka. En tout, il a réalisé 1 560 pralines. Calcule le nombre de pralines à la fraise qu'il a produites.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -3662,15 +3793,15 @@
    "numero": "13",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "L'école a acheté 18 boites de 5 paquets de feuilles. Les 2 classes maternelles reçoivent 3 paquets chacune. Le reste est partagé entre les 6 classes primaires. Quelle résolution convient ?",
+   "enonce": "La direction de l'école a acheté 18 boites de 5 paquets de feuilles. Les 2 classes maternelles recevront 3 paquets chacune. Les autres paquets seront répartis équitablement entre les 6 classes primaires. Combien de paquets de feuilles recevra chaque classe primaire ? Choisis la résolution qui convient.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
-    "18 × 5 = 90 ; 90 − 2 = 88 ; 88 : 8 = 11",
-    "18 − 6 = 12 ; 12 : 6 = 2 ; 2 × 5 = 10",
-    "18 × 5 = 90 ; 90 − 6 = 84 ; 84 : 6 = 14",
-    "5 × 18 = 90 ; 90 − 6 = 84 ; 84 − 6 = 78"
+    "Résolution 1 : 18 × 5 = 90 ; 90 – 2 = 88 ; 88 : 8 = 11. Chaque classe primaire recevra 11 paquets de feuilles.",
+    "Résolution 2 : 18 – 6 = 12 ; 12 : 6 = 2 ; 2 × 5 = 10. Chaque classe primaire recevra 10 paquets de feuilles.",
+    "Résolution 3 : 18 × 5 = 90 ; 90 – 6 = 84 ; 84 : 6 = 14. Chaque classe primaire recevra 14 paquets de feuilles.",
+    "Résolution 4 : 5 × 18 = 90 ; 90 – 6 = 84 ; 84 – 6 = 78. Chaque classe primaire recevra 78 paquets de feuilles."
    ],
    "reponse": 2,
    "explication": "90 paquets, moins 2 × 3 = 6 pour les maternelles : 84 paquets, partagés en 6 : 14 paquets."
@@ -3681,11 +3812,11 @@
    "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Complète le nombre 2 3 7 _ par un chiffre.",
+   "enonce": "Complète chaque nombre du tableau par un chiffre afin qu'il réponde aux critères attendus. Case déjà remplie : est multiple de 2 et est multiple de 5 → 2370.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-divisibilite",
-   "texte": "multiple de 2 mais pas de 5 : 237{1}  ·  multiple de 5 mais pas de 2 : 237{2}  ·  ni multiple de 2 ni de 5 : 237{3}",
+   "texte": "Est multiple de 2, n'est pas multiple de 5 : 237{1}  ·  N'est pas multiple de 2, est multiple de 5 : 237{2}  ·  N'est pas multiple de 2, n'est pas multiple de 5 : 237{3}",
    "reponse": [
     [
      "2",
@@ -3818,7 +3949,7 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "En quoi consiste la phase de fermentation des fèves de cacao ?",
+   "enonce": "En quoi consiste le traitement des fèves de cacao lors de la phase de fermentation ? Complète la phrase : « Les fèves de cacao sont … et … ».",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -3850,7 +3981,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas le savoir"
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -3864,7 +3995,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Réponds en te référant au texte.",
+   "enonce": "Réponds aux questions suivantes en te référant au texte.",
    "points": 4,
    "corrigeVerifie": true,
    "documents": [
@@ -3874,53 +4005,56 @@
     "choco-4",
     "choco-5"
    ],
-   "texte": "On cultive le cacaoyer dans des régions proches de {1}.  ·  La pulpe autour des fèves est {2}.  ·  Les fèves deviennent brunes pendant la {3}.  ·  La fermentation est arrêtée par le {4}.",
+   "texte": "Où cultive-t-on le cacaoyer ? {1}  ·  Quel gout a la pulpe qui entoure les fèves de cacao ? {2}  ·  À quelle étape les fèves de cacao deviennent-elles brunes ? {3}  ·  Comment le processus de fermentation est-il arrêté ? {4}",
    "reponse": [
     [
-     "l'équateur",
-     "equateur",
-     "l'equateur",
-     "équateur",
-     "pays au climat chaud et humide",
-     "des pays proches de l'équateur",
+     "dans différentes régions proches de l'équateur",
+     "dans des régions proches de l'équateur",
+     "régions proches de l'équateur",
+     "proches de l'équateur",
+     "près de l'équateur",
+     "dans des pays proches de l'équateur",
+     "pays proches de l'équateur",
+     "dans un pays chaud et humide",
      "dans un pays au climat chaud et humide",
-     "pays au climat chaud et humide",
-     "sous un climat chaud et humide",
-     "des régions proches de l'équateur",
-     "pays proches de l'équateur"
+     "dans des pays au climat chaud et humide",
+     "sous un climat chaud et humide"
     ],
     [
-     "sucrée et légèrement acide",
-     "sucrée et acide",
-     "sucree et legerement acide",
-     "à la fois sucrée et légèrement acide",
-     "sucrée et légèrement acide",
-     "sucré et légèrement acide",
      "à la fois sucré et légèrement acide",
-     "légèrement acide et sucrée"
+     "sucré et légèrement acide",
+     "sucrée et légèrement acide",
+     "à la fois sucrée et légèrement acide",
+     "sucré et acide",
+     "sucrée et acide",
+     "légèrement acide et sucrée",
+     "un gout sucré et légèrement acide"
     ],
     [
-     "fermentation",
-     "phase de fermentation",
-     "la première étape",
-     "première étape",
      "durant la fermentation",
      "pendant la fermentation",
-     "durant la première étape"
+     "la fermentation",
+     "fermentation",
+     "à la fermentation",
+     "lors de la fermentation",
+     "durant la première étape",
+     "la première étape",
+     "première étape",
+     "à l'étape de la fermentation"
     ],
     [
-     "séchage",
-     "sechage",
-     "séchage au soleil",
-     "le séchage",
-     "séchage des fèves",
-     "au soleil",
      "en exposant les fèves au soleil",
-     "exposer les fèves au soleil",
-     "en les faisant sécher",
      "en faisant sécher les fèves",
+     "par le séchage",
+     "le séchage",
+     "séchage",
+     "séchage au soleil",
+     "en les faisant sécher",
+     "en les exposant au soleil",
+     "exposer les fèves au soleil",
      "faire sécher les fèves",
-     "sécher les fèves"
+     "sécher les fèves",
+     "au soleil"
     ]
    ],
    "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête. La pulpe est à la fois sucrée ET légèrement acide : une seule des deux saveurs ne suffit pas."
@@ -4001,7 +4135,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Manon dit : « Le chocolat, c'est bon pour la santé ! » Qu'en penses-tu d'après le texte ? Coche « Manon a raison », « Manon a tort » ou « Manon a raison et tort à la fois », puis justifie à l'aide du texte.",
+   "enonce": "Manon dit : « Le chocolat, c'est bon pour la santé ! » Qu'en penses-tu d'après le texte ? Choisis « Manon a raison », « Manon a tort » ou « Manon a raison et tort à la fois », puis justifie à l'aide du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4069,7 +4203,7 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Voici cinq photos numérotées du livret (page 8) qui illustrent différentes étapes de la préparation des truffes au chocolat. Dans le livret, il fallait barrer la photo de l'étape qui n'apparait pas dans la recette. Laquelle est-ce ?",
+   "enonce": "Voici cinq photos qui illustrent différentes étapes de la préparation des truffes au chocolat (livret, page 8). Quelle photo montre l'étape qui n'apparait pas dans la recette ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4092,22 +4226,16 @@
    "livret": 8,
    "numero": "15",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Pourquoi conseille-t-on de conserver les truffes au chocolat dans un récipient fermé ?",
+   "type": "ouverte",
+   "enonce": "Pour quelle raison conseille-t-on d'emballer les truffes au chocolat dans un récipient fermé ? Écris ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
     "choco-5"
    ],
-   "choix": [
-    "Parce que le chocolat prend les odeurs qui l'entourent.",
-    "Parce que le chocolat a besoin d'humidité pour rester bon.",
-    "Pour que le cacao ne colle pas aux doigts.",
-    "Pour qu'elles restent bien au chaud."
-   ],
-   "reponse": 0,
-   "explication": "« Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. »"
+   "explication": "« Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. »",
+   "reponseModele": "Parce que le chocolat s'imprègne des odeurs qui l'entourent. Ce n'est pas bon : « parce que le chocolat n'aime ni la chaleur ni l'humidité »."
   },
   {
    "id": "ceb-2024-l8-q16",
@@ -4129,7 +4257,7 @@
    "numero": "17",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« La cabosse est mure environ quatre à cinq mois après la floraison. » Dans quelle partie pourrais-tu ajouter cette information ?",
+   "enonce": "Voici une information qui ne se trouve pas dans le texte : « La cabosse est mure environ quatre à cinq mois après la floraison. » Dans quelle partie du texte pourrais-tu l'ajouter ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -4143,7 +4271,7 @@
    "choix": [
     "D'où vient le chocolat ?",
     "Comment fabrique-t-on le chocolat ?",
-    "Propos recueillis auprès de Didier, un artisan-chocolatier",
+    "Propos recueillis auprès de Didier, artisan-chocolatier",
     "Le chocolat, stop ou encore ?",
     "Envie de chocolat ?"
    ],
@@ -4178,15 +4306,15 @@
    "numero": "19",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« … si l'on veut limiter les effets négatifs d'une production intensive du chocolat… » Quel sens a « effets » ?",
+   "enonce": "« Ces constats amènent les spécialistes à dire que, si l'on veut limiter les effets négatifs d'une production intensive du chocolat, il est nécessaire que notre consommation évolue dans les prochaines années. » Voici quatre sens du mot « effet(s) ». Choisis celui qui correspond le mieux au sens du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
-    "Vêtements et objets personnels.",
-    "Procédés qui créent des images qui n'existent pas dans la réalité.",
-    "Ce que produit quelque chose.",
-    "Impression produite sur quelqu'un."
+    "Vêtements et objets personnels. Exemple : Il rangea ses effets dans la valise.",
+    "Procédés qui permettent de créer des images qui n'existent pas dans la réalité. Exemple : Les effets spéciaux de ce film sont réussis.",
+    "Ce que produit quelque chose. Exemple : Le médicament a eu un effet immédiat.",
+    "Impression produite sur quelqu'un. Exemple : Votre remarque a fait mauvais effet."
    ],
    "reponse": 2,
    "explication": "Les effets de la production, ce sont ses conséquences : ce qu'elle produit."
@@ -4197,7 +4325,7 @@
    "numero": "20",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "Dans quelle phrase « production » a-t-il le même sens que dans « une production intensive du chocolat » ?",
+   "enonce": "« Ces constats amènent les spécialistes à dire que, si l'on veut limiter les effets négatifs d'une production intensive du chocolat, il est nécessaire que notre consommation évolue dans les prochaines années. » Choisis la phrase dans laquelle le mot « production » a le même sens que dans l'extrait ci-dessus.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -4216,11 +4344,11 @@
    "numero": "21",
    "domaine": "fr.vocabulaire",
    "type": "trous",
-   "enonce": "Écris un mot de la même famille (exemple : producteurs → production, produit, produire).",
+   "enonce": "Écris un autre mot de la même famille. Exemple : « Selon les producteurs » → (la) production OU (le) produit OU produire.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
-   "texte": "dégustation → {1}  ·  tranchant → {2}",
+   "texte": "Un chocolat qui est bon à la dégustation → {1}  ·  Un outil tranchant → {2}",
    "reponse": [
     [
      "déguster",
@@ -4268,7 +4396,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Récit « Avec le cœur ». Quel résumé correspond le mieux à cette histoire ?",
+   "enonce": "Quel résumé correspond le mieux à l'histoire « Avec le cœur » ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4278,10 +4406,10 @@
     "coeur-3"
    ],
    "choix": [
-    "Un garçon paniqué par un devoir d'écriture questionne son amie ; sur ses conseils, il écrit un texte sur son dernier cauchemar et le lit devant la classe.",
-    "Un garçon doit écrire un poème ; son amie lui lit un poème de Prévert pour l'inspirer ; le matin, il l'écrit d'une traite et reçoit des félicitations.",
-    "Un garçon angoissé par un devoir d'écriture suit le conseil de son amie et questionne le chien de son rêve ; il trouve l'inspiration et lit sa poésie devant la classe.",
-    "Un garçon est paniqué car son amie le traite de cancre ; il questionne le chien de ses rêves, trouve l'inspiration et lit son poème."
+    "C'est l'histoire d'un garçon qui est paniqué à l'idée de réaliser un devoir d'écriture. Comme il n'a pas d'idées, il décide de questionner son amie. Sur ses conseils, il écrit un texte à propos de son dernier cauchemar. Finalement, il lit son poème devant la classe.",
+    "C'est l'histoire d'un garçon qui doit écrire un poème. Son amie lui lit un poème de Prévert pour l'aider à trouver l'inspiration. Le matin, il l'écrit d'une traite. Quand il lit son texte devant la classe, il reçoit des félicitations.",
+    "C'est l'histoire d'un garçon qui est angoissé à l'idée de réaliser un devoir d'écriture. Sur les conseils de son amie, il questionne le chien de son rêve. Grâce à lui, il trouve l'inspiration et, finalement, il lit sa poésie devant la classe.",
+    "C'est l'histoire d'un garçon qui doit réaliser un devoir d'écriture. Il est paniqué, car son amie le qualifie de cancre. Finalement, il questionne le chien de ses rêves. Il trouve l'inspiration et lit son poème devant la classe."
    ],
    "reponse": 2,
    "explication": "Nico écrit sur le conseil du chien de son rêve, pas sur son cauchemar ; Nour ne le traite pas de cancre et ne lui lit pas Prévert pour ce devoir."
@@ -4394,7 +4522,7 @@
    "numero": "7 (justification)",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Lola dit : Nour et Nico sont simplement amis. Solan répond : Non ! Nico est amoureux de Nour ! Qui a raison ? ». Justifie ton choix à l'aide d'un élément du texte.",
+   "enonce": "Lola dit : « Nour et Nico sont simplement amis. » Solan répond : « Non ! Nico est amoureux de Nour ! » Écris le nom de l'élève qui a raison, puis justifie ta réponse à l'aide d'un élément du texte.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4465,7 +4593,7 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Son rire était le plus beau du monde aux oreilles de Nico, mais à cet instant, il lui faisait juste saigner le cœur. » Pourquoi ce rire le rend-il triste ?",
+   "enonce": "Au début de la page 20, l'auteur écrit ceci : « Nour esquissa un sourire qu'elle tenta de retenir puis finit par éclater de rire. En d'autres circonstances, son rire était le plus beau du monde aux oreilles de Nico, mais à cet instant, il lui faisait juste saigner le cœur. » Écris pour quelle raison son rire lui faisait saigner le cœur (le rendait triste).",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -4515,7 +4643,7 @@
    "numero": "13",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Il en plaça la pointe sur l'angoissante immensité de la page blanche de son cahier. On aurait dit un désert de neige occupé à le narguer… » Recopie l'expression à laquelle l'auteur compare la page blanche.",
+   "enonce": "« Il en plaça la pointe sur l'angoissante immensité de la page blanche de son cahier. On aurait dit un désert de neige occupé à le narguer avec, de temps en temps, le visage de Nour planant par-dessus, tel un fantôme. » À quoi l'auteur compare-t-il l'« immensité de la page blanche » ? Recopie l'expression utilisée par l'auteur.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4553,7 +4681,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas le savoir"
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -4652,7 +4780,7 @@
    "numero": "19",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "« Nico s'était tout de suite senti rassuré. Puis elle avait poursuivi, enroulant son collier autour de son doigt… » Quel mot sert à relier les deux phrases ?",
+   "enonce": "« Nico s'était tout de suite senti rassuré. Puis elle avait poursuivi, enroulant son collier autour de son doigt : « Non, ce poème, vous allez plutôt l'écrire vous-même ! » » Quel mot sert à enchainer (relier) les deux phrases ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -4752,7 +4880,7 @@
    "numero": "22",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Cela ne faisait que quelques mois qu'il la connaissait. Nour était arrivée en cours d'année dans leur classe, suite à un déménagement. La première fois qu'il lui avait adressé la parole, elle se tenait assise contre le même mur décrépi… » Le pronom « elle » désigne Nour. Recopie deux autres mots (pas « Nour ») qui désignent Nour.",
+   "enonce": "« Cela ne faisait que quelques mois qu'il la connaissait. Nour était arrivée en cours d'année dans leur classe, suite à un déménagement. La première fois qu'il lui avait adressé la parole, elle se tenait assise contre le même mur décrépi et lisait un recueil de poèmes de Prévert. » Dans l'extrait, le pronom « elle » désigne « Nour ». Recopie deux autres mots qui désignent Nour.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -4779,7 +4907,7 @@
    "numero": "23",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Lorsqu'il se réveillerait le lendemain, son devoir ne serait pas fait et il se ridiculiserait devant Nour. Pour couronner le tout, voilà que le chien de son cauchemar avait décidé de revenir rôder dans sa tête endormie… » Écris la classe des mots (nom, pronom, verbe, déterminant, adjectif, mot de liaison).",
+   "enonce": "« Lorsqu'il se réveillerait le lendemain, son devoir ne serait pas fait et il se ridiculiserait devant Nour. Pour couronner le tout, voilà que le chien de son cauchemar avait justement décidé de revenir rôder dans sa tête endormie… » Écris la classe des mots « devoir », « et » et « sa » de cet extrait. Choisis parmi les classes de mots suivantes : nom, pronom, verbe, déterminant, adjectif, mot de liaison.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
@@ -4827,7 +4955,7 @@
    "numero": "25",
    "domaine": "fr.conjugaison",
    "type": "grille",
-   "enonce": "« — Ouh là ! Non ! Ça, je l'avais terminé vendredi soir ! Là, j'écrivais juste pour le plaisir… — Ça m'étonnerait, c'est un rêve complètement stupide. » À quel temps sont les verbes « avais terminé » et « étonnerait » ?",
+   "enonce": "« — Ouh là ! Non ! Ça, je l'avais terminé vendredi soir ! Là, j'écrivais juste pour le plaisir… Une histoire de vampire. D'ailleurs, raconte-moi ton dernier cauchemar, ça me donnera peut-être des idées. — Ça m'étonnerait, c'est un rêve complètement stupide. » Quel est le temps verbal (temps de la conjugaison) des verbes « avais terminé » et « étonnerait » ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
@@ -4872,15 +5000,15 @@
    "numero": "27",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Celui-ci m'a surtout l'air un peu dans la lune, mais avec un bon fond tout de même. » Quel sens a le mot « fond » ?",
+   "enonce": "« C'est un mauvais élève. Enfin, celui-ci m'a surtout l'air un peu dans la lune, mais avec un bon fond tout de même. » Voici quatre sens du mot « fond ». Choisis celui qui correspond le mieux au sens du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
-    "La partie la plus basse de quelque chose.",
-    "L'endroit le plus reculé.",
-    "Ce sur quoi se détachent des motifs.",
-    "Nature profonde d'une personne."
+    "La partie la plus basse, la plus profonde de quelque chose. Exemple : Le fond de ma tasse.",
+    "L'endroit le plus reculé, le plus éloigné. Exemple : Le fond de la classe.",
+    "Ce sur quoi se détachent des motifs. Exemple : Une robe à pois verts sur fond jaune.",
+    "Nature profonde d'une personne. Exemple : Zoé est parfois moqueuse, mais elle a un fond gentil."
    ],
    "reponse": 3,
    "explication": "Avoir « un bon fond », c'est être gentil au fond de soi."
@@ -4923,7 +5051,7 @@
    "numero": "1c",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Coche les noms des sens de l'être humain.",
+   "enonce": "Choisis les noms des sens de l'être humain.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -4947,7 +5075,7 @@
    "numero": "2",
    "domaine": "sc.matiere",
    "type": "ordre",
-   "enonce": "Expérience sur les effets de la chaleur sur l'air. Remets les étapes dans l'ordre.",
+   "enonce": "Des élèves ont réalisé une expérience pour mettre en évidence les effets de la chaleur sur l'air. Remets les étapes de cette expérience dans l'ordre chronologique.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-air",
@@ -4955,7 +5083,7 @@
     "experience-air"
    ],
    "elements": [
-    "Voici le matériel nécessaire.",
+    "Voici le matériel nécessaire pour réaliser l'expérience.",
     "De l'eau colorée est versée dans une assiette.",
     "De l'eau chaude est versée dans une bouteille.",
     "L'eau chaude est retirée de la bouteille.",
@@ -4978,11 +5106,11 @@
    "numero": "3",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Écris le nom de ces étapes du cycle de l'eau (ruissèlement, transpiration, condensation, évaporation, solidification, congélation, précipitations).",
+   "enonce": "Quelques étapes du cycle de l'eau sont décrites ci-dessous. Écris leur nom en choisissant parmi les mots suivants : ruissèlement, transpiration, condensation, évaporation, solidification, congélation, précipitations.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
-   "texte": "L'eau de la fonte des glaces forme des cours d'eau : {1}.  ·  L'eau des nuages tombe sous forme de pluie, de neige ou de grêle : {2}.  ·  La vapeur d'eau se transforme en gouttelettes pour former des nuages : {3}.",
+   "texte": "L'eau de la fonte des glaces forme des cours d'eau : {1}.  ·  L'eau des nuages tombe sur terre sous forme de pluie, de neige ou de grêle : {2}.  ·  La vapeur d'eau se transforme en minuscules gouttelettes d'eau pour former des nuages : {3}.",
    "reponse": [
     [
      "ruissèlement",
@@ -5102,12 +5230,42 @@
     "B"
    ],
    "reponse": [
-    5,
-    2,
+    3,
+    1,
     4,
     3
    ],
-   "explication": "La métamorphose (B) est le passage de la larve à l'adulte ; la pupe est le dessin 3 ; l'adulte est le dessin 4 ; la reproduction (A) mène de l'adulte aux œufs."
+   "explication": "La métamorphose (B) est le passage de la larve à l'adulte ; la pupe est le dessin 3 ; l'adulte est le dessin 4 ; la reproduction (A) mène de l'adulte aux œufs.",
+   "colonnesParLigne": [
+    [
+     "1",
+     "2",
+     "A",
+     "B"
+    ],
+    [
+     "1",
+     "3",
+     "A",
+     "B"
+    ],
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "A",
+     "B"
+    ],
+    [
+     "1",
+     "2",
+     "3",
+     "4",
+     "A",
+     "B"
+    ]
+   ]
   },
   {
    "id": "ceb-2024-l10-q6",
@@ -5229,14 +5387,14 @@
    "numero": "8c",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "À quel état est l'aluminium sur chaque photo ?",
+   "enonce": "Observe ces 3 photos. Choisis l'état de la matière qui convient pour chaque photo.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "lignes": [
-    "Photo 1 : des brindilles d'aluminium placées au-dessus d'une flamme",
-    "Photo 2 : l'aluminium fondu versé dans un moule",
-    "Photo 3 : l'aluminium refroidi forme un petit lingot"
+    "Photo 1 (des brindilles d'aluminium sont placées au-dessus d'une flamme) : l'aluminium est à l'état…",
+    "Photo 2 (l'aluminium fondu est versé dans un moule) : l'aluminium est à l'état…",
+    "Photo 3 (l'aluminium a refroidi et forme un petit lingot) : l'aluminium est à l'état…"
    ],
    "colonnes": [
     "solide",
@@ -5248,7 +5406,10 @@
     1,
     0
    ],
-   "explication": "Les brindilles sont encore solides ; fondu, l'aluminium est liquide ; refroidi, il redevient solide."
+   "explication": "Les brindilles sont encore solides ; fondu, l'aluminium est liquide ; refroidi, il redevient solide.",
+   "documents": [
+    "liv10-p11"
+   ]
   },
   {
    "id": "ceb-2024-l10-q9a1",
@@ -5316,7 +5477,7 @@
    "numero": "9b",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Bulletin : mardi 25/06 vent de 4 km/h ; jeudi 27/06 vent de sud-ouest ; vendredi 28/06 précipitations de 15 mm. Quel instrument a servi ?",
+   "enonce": "Complète le tableau en t'aidant du bulletin météorologique et des instruments de mesure. Exemple : lundi 24/06, température minimale : 23 °C, température maximale : 29 °C → thermomètre. Quel instrument a été utilisé pour chaque donnée ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
@@ -5324,9 +5485,9 @@
     "meteo"
    ],
    "lignes": [
-    "Vitesse du vent (mardi)",
-    "Direction du vent (jeudi)",
-    "Quantité de précipitations (vendredi)"
+    "Mardi 25/06 — Vitesse du vent : 4 km/h",
+    "Jeudi 27/06 — … : sud-ouest",
+    "Vendredi 28/06 — Quantité de précipitations : …"
    ],
    "colonnes": [
     "pluviomètre",
@@ -5348,16 +5509,18 @@
    "numero": "9c",
    "domaine": "sc.energie",
    "type": "trous",
-   "enonce": "Complète à l'aide du bulletin météorologique.",
+   "enonce": "Complète le tableau en t'aidant du bulletin météorologique.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
    "documents": [
     "meteo"
    ],
-   "texte": "Jeudi 27/06, la donnée « sud-ouest » est la {1} du vent.  ·  Vendredi 28/06, la quantité de précipitations est de {2}.",
+   "texte": "Jeudi 27/06 : {1} : sud-ouest  ·  Vendredi 28/06 : Quantité de précipitations : {2}",
    "reponse": [
     [
+     "direction du vent",
+     "la direction du vent",
      "direction",
      "la direction"
     ],
@@ -5375,7 +5538,7 @@
    "numero": "10a1",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Les besoins énergétiques sont…",
+   "enonce": "Lis le graphique (portfolio, page 27). Les données du graphique nous renseignent sur le fait que les besoins énergétiques sont…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -5383,7 +5546,7 @@
     "sante"
    ],
    "choix": [
-    "les plus élevés après 70 ans.",
+    "les plus élevés chez les personnes de plus de 70 ans.",
     "les plus élevés à l'adolescence.",
     "les plus élevés à l'âge adulte.",
     "les plus élevés chez l'enfant."
@@ -5397,7 +5560,7 @@
    "numero": "10a2",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
+   "enonce": "Lis le graphique (portfolio, page 27). Les données du graphique nous renseignent sur le fait que…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -5405,10 +5568,10 @@
     "sante"
    ],
    "choix": [
-    "les femmes adultes ont des besoins plus élevés que les hommes.",
-    "les femmes de plus de 70 ans ont les mêmes besoins que les hommes.",
-    "les filles de 3 ans ont des besoins plus élevés que les garçons.",
-    "les filles de 16 ans ont des besoins moins élevés que les garçons du même âge."
+    "les femmes à l'âge adulte ont des besoins énergétiques plus élevés que les hommes du même âge.",
+    "les femmes de plus de 70 ans ont les mêmes besoins énergétiques que les hommes du même âge.",
+    "les filles de 3 ans ont des besoins énergétiques plus élevés que les garçons du même âge.",
+    "les filles de 16 ans ont des besoins énergétiques moins élevés que les garçons du même âge."
    ],
    "reponse": 3,
    "explication": "À 16 ans : 2 400 kcal pour les filles, 3 000 pour les garçons."
@@ -5419,7 +5582,7 @@
    "numero": "10a3",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. Le graphique montre que…",
+   "enonce": "Lis le graphique (portfolio, page 27). Les données du graphique nous renseignent sur le fait que…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -5427,10 +5590,10 @@
     "sante"
    ],
    "choix": [
-    "en vieillissant, les besoins augmentent.",
-    "les besoins de l'homme augmentent toute sa vie.",
-    "chez l'homme et la femme, les besoins augmentent entre 3 ans et l'adolescence puis diminuent.",
-    "les besoins des filles diminuent toute leur vie."
+    "tant chez l'homme que chez la femme, en vieillissant les besoins énergétiques augmentent.",
+    "comme pour la femme, les besoins énergétiques de l'homme augmentent durant toute sa vie.",
+    "chez l'homme et chez la femme, les besoins énergétiques augmentent entre 3 ans et l'adolescence puis diminuent.",
+    "comme pour les garçons, les besoins énergétiques des filles diminuent tout au long de leur vie."
    ],
    "reponse": 2,
    "explication": "Les bâtons montent jusqu'à 16 ans, puis redescendent."
@@ -5441,7 +5604,7 @@
    "numero": "10a4",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Graphique des besoins énergétiques moyens (kcal) : fille/garçon à 3 ans 1 200/1 200 ; à 10 ans 2 100/2 200 ; à 16 ans 2 400/3 000 ; adultes 30-60 ans 2 000/2 600 ; plus de 70 ans 1 500/1 900. D'après ce graphique, quelles sont les deux variables qui influencent les besoins énergétiques ?",
+   "enonce": "Lis le graphique (portfolio, page 27). Quelles sont les deux variables qui influencent les besoins énergétiques ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -5479,7 +5642,7 @@
    "numero": "10b2",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 60 minutes, quel sport fait dépenser le plus de kcal ?",
+   "enonce": "Les activités sportives sont un excellent moyen de maintenir sa forme physique. Voici un tableau reprenant les dépenses énergétiques moyennes de quelques sports pour une personne de 70 kg (pour 15 minutes / 60 minutes d'activité) : handball 187 kcal / 748 kcal ; équitation 51 kcal / 204 kcal ; judo 153 kcal / 612 kcal ; natation (brasse) 102 kcal / 408 kcal ; natation (crawl) 170 kcal / 680 kcal ; golf 60 kcal / 240 kcal ; tennis de table 51 kcal / 204 kcal ; tennis 102 kcal / 408 kcal ; yoga 26 kcal / 102 kcal. Après 60 minutes d'activité, quel est le sport qui permet de dépenser le plus de kcal ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
@@ -5490,7 +5653,10 @@
     "Le yoga"
    ],
    "reponse": 2,
-   "explication": "Handball : 748 kcal, le plus grand nombre."
+   "explication": "Handball : 748 kcal, le plus grand nombre.",
+   "documents": [
+    "liv10-p14"
+   ]
   },
   {
    "id": "ceb-2024-l10-q10b3",
@@ -5498,18 +5664,21 @@
    "numero": "10b3",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal. Après 15 minutes d'activité, la dépense énergétique…",
+   "enonce": "Les activités sportives sont un excellent moyen de maintenir sa forme physique. Voici un tableau reprenant les dépenses énergétiques moyennes de quelques sports pour une personne de 70 kg (pour 15 minutes / 60 minutes d'activité) : handball 187 kcal / 748 kcal ; équitation 51 kcal / 204 kcal ; judo 153 kcal / 612 kcal ; natation (brasse) 102 kcal / 408 kcal ; natation (crawl) 170 kcal / 680 kcal ; golf 60 kcal / 240 kcal ; tennis de table 51 kcal / 204 kcal ; tennis 102 kcal / 408 kcal ; yoga 26 kcal / 102 kcal. Après quinze minutes d'activité, la dépense énergétique…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
    "choix": [
-    "est plus importante en yoga qu'en équitation.",
-    "est plus importante en tennis de table qu'en équitation.",
-    "est moins importante en yoga qu'en tennis de table.",
-    "est moins importante en brasse qu'en équitation."
+    "est plus importante en pratiquant du yoga que de l'équitation.",
+    "est plus importante en pratiquant du tennis de table que de l'équitation.",
+    "est moins importante en pratiquant du yoga que du tennis de table.",
+    "est moins importante en pratiquant la brasse que de l'équitation."
    ],
    "reponse": 2,
-   "explication": "Yoga 26 kcal < tennis de table 51 kcal. Tennis de table et équitation sont égaux (51)."
+   "explication": "Yoga 26 kcal < tennis de table 51 kcal. Tennis de table et équitation sont égaux (51).",
+   "documents": [
+    "liv10-p14"
+   ]
   },
   {
    "id": "ceb-2024-l10-q10b4",
@@ -5517,11 +5686,11 @@
    "numero": "10b4",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Dépenses énergétiques moyennes (personne de 70 kg), pour 15 min / 60 min : handball 187/748 ; équitation 51/204 ; judo 153/612 ; brasse 102/408 ; crawl 170/680 ; golf 60/240 ; tennis de table 51/204 ; tennis 102/408 ; yoga 26/102 kcal.",
+   "enonce": "Les activités sportives sont un excellent moyen de maintenir sa forme physique. Voici un tableau reprenant les dépenses énergétiques moyennes de quelques sports pour une personne de 70 kg (pour 15 minutes / 60 minutes d'activité) : handball 187 kcal / 748 kcal ; équitation 51 kcal / 204 kcal ; judo 153 kcal / 612 kcal ; natation (brasse) 102 kcal / 408 kcal ; natation (crawl) 170 kcal / 680 kcal ; golf 60 kcal / 240 kcal ; tennis de table 51 kcal / 204 kcal ; tennis 102 kcal / 408 kcal ; yoga 26 kcal / 102 kcal. Réponds aux questions suivantes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-alimentation",
-   "texte": "Après 60 min, le sport qui fait dépenser autant que le tennis : {1}.  ·  60 min de crawl font dépenser {2} kcal.",
+   "texte": "Après 60 minutes d'activité, quel est le sport qui entraine une dépense énergétique moyenne égale à celle du tennis ? {1}  ·  Combien de kcal sont dépensées après la pratique de 60 minutes de crawl ? {2} kcal",
    "reponse": [
     [
      "la natation (brasse)",
@@ -5534,7 +5703,10 @@
      "680"
     ]
    ],
-   "explication": "Tennis et brasse : 408 kcal chacun. Crawl : 680 kcal. « La natation » seul ne suffit pas : il faut préciser la brasse."
+   "explication": "Tennis et brasse : 408 kcal chacun. Crawl : 680 kcal. « La natation » seul ne suffit pas : il faut préciser la brasse.",
+   "documents": [
+    "liv10-p14"
+   ]
   },
   {
    "id": "ceb-2024-l10-q11a",
@@ -5602,7 +5774,7 @@
    "numero": "12a",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Pour comparer les deux expériences sur l'eau du vase, coche les trois conditions à respecter.",
+   "enonce": "Des élèves remarquent que le niveau d'eau d'un vase dans lequel se trouvent des tulipes diminue au fil des jours. Certains élèves émettent l'hypothèse que l'eau du vase s'évapore petit à petit. D'autres élèves émettent l'hypothèse que l'eau est absorbée par les fleurs. Ils réalisent deux expériences. Pour que les élèves puissent comparer les expériences et en tirer des conclusions, ils ont respecté certaines conditions. Choisis les trois propositions correctes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -5612,10 +5784,10 @@
    "choix": [
     "Réaliser chaque expérience dans un même endroit de la classe.",
     "Utiliser une même quantité d'eau dans chaque éprouvette.",
-    "Éclairer les éprouvettes jour et nuit.",
-    "Placer des tulipes de la même couleur.",
+    "Éclairer les éprouvettes, jour et nuit.",
+    "Placer des tulipes de la même couleur dans les éprouvettes.",
     "Respecter la même durée pour les deux expériences.",
-    "Arroser la tulipe chaque jour."
+    "Arroser la tulipe chaque jour pour qu'elle ne fane pas."
    ],
    "reponse": [
     0,
@@ -5631,7 +5803,7 @@
    "numero": "12b",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Hypothèses : l'eau du vase s'évapore / l'eau est absorbée par les fleurs. Quelle conclusion tirent les élèves des deux expériences ?",
+   "enonce": "Des élèves remarquent que le niveau d'eau d'un vase dans lequel se trouvent des tulipes diminue au fil des jours. Certains élèves émettent l'hypothèse que l'eau du vase s'évapore petit à petit. D'autres élèves émettent l'hypothèse que l'eau est absorbée par les fleurs. Ils réalisent deux expériences. Quelle conclusion tirent-ils par rapport aux deux hypothèses posées et aux observations réalisées après les deux expériences ? Écris la conclusion.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -5646,7 +5818,7 @@
    "numero": "13",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Expérience 2 : une bouteille en verre remplie d'eau passe 12 h au congélateur. Expérience 3 : un litre d'eau bout dans une casserole. Écris une question que les élèves auraient pu se poser avant chaque expérience.",
+   "enonce": "Trois expériences avec des liquides ont été réalisées. Voici des questions que des élèves se sont posées AVANT de réaliser l'expérience 1 : « Est-ce que tous les liquides se mélangent entre eux ? », « Que se passe-t-il quand on mélange du lait écrémé avec de l'huile d'olive ? », « La couleur du lait écrémé va-t-elle changer ? ». Quelles questions les élèves auraient-ils pu se poser avant de réaliser les expériences 2 et 3 ? Écris une question en relation avec chacune de ces expériences.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5661,7 +5833,7 @@
    "numero": "14a",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Deux montages : dans le premier, la lampe LED est reliée aux batteries par des câbles ; dans le second, le circuit passe par un verre d'eau salée. La lampe s'allume dans les deux cas. Quelle question les élèves se posaient-ils ?",
+   "enonce": "Des élèves réalisent deux montages électriques simples. La lampe LED s'allume dans les deux montages. Quelle est la seule question que les élèves se sont posée en rapport avec les deux montages, avant de les réaliser ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
@@ -5684,7 +5856,7 @@
    "numero": "14b",
    "domaine": "sc.energie",
    "type": "ouverte",
-   "enonce": "La lampe reste éteinte avec une cuillère en plastique, en bois ou en porcelaine ; elle s'allume avec une cuillère en fer, en argent ou en étain. Quelle conclusion ?",
+   "enonce": "Les élèves remplacent ensuite l'eau salée par des cuillères en différentes matières. Suivant les cas, la lampe LED s'allume ou reste éteinte. Ils classent leurs observations dans un tableau. Lampe LED éteinte : une cuillère en plastique, une cuillère en bois, une cuillère en porcelaine. Lampe LED allumée : une cuillère en fer, une cuillère en argent, une cuillère en étain. Écris la conclusion tirée par les élèves au terme de leurs observations.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
