@@ -704,6 +704,78 @@
    "titre": "La table des matières d'un miniguide",
    "fichier": "assets/2025/liv5-p02.webp",
    "alt": "Table des matières d'un miniguide sur Bruxelles. Comment y aller ? En avion, en train, en bus 2. Avant-propos : nos dix coups de cœur 3, itinéraires conseillés 5. Bruxelles utile : achats 6, budget 8, climat 9, moyens de transport 10. La région de Bruxelles-Capitale : plan de la ville 11, où dormir ? 12, où manger ? 13, où sortir ? 14. Histoire, culture et gastronomie : histoire de la ville de Bruxelles 17, patrimoine culturel et personnages célèbres bruxellois 18, spécialités culinaires bruxelloises 19."
+  },
+  {
+   "id": "liv5-p06",
+   "source": "livret",
+   "livret": 5,
+   "page": 6,
+   "titre": "Carte muette de l'Europe",
+   "fichier": "assets/2025/liv5-p06.webp",
+   "alt": "Carte de l'Europe avec des cases reliées à des pays : case 1 (Pays-Bas), case grise E (Royaume-Uni), case 2 (France), case 3 (Italie), case 4 (Espagne), case 5 (Suède), case 6 (République tchèque), case 7 (Autriche), case 8 (Grèce)."
+  },
+  {
+   "id": "liv4-p09",
+   "source": "livret",
+   "livret": 4,
+   "page": 9,
+   "titre": "La tablette de chocolat",
+   "fichier": "assets/2025/liv4-p09.webp",
+   "alt": "Une tablette de chocolat de 24 carrés (6 colonnes et 4 rangées)."
+  },
+  {
+   "id": "liv5-p07",
+   "source": "livret",
+   "livret": 5,
+   "page": 7,
+   "titre": "Piste de ski du Mont des Brumes",
+   "fichier": "assets/2025/liv5-p07.webp",
+   "alt": "Photo prise en Belgique : des skieurs sur une piste enneigée, au pied d'une grande forêt de sapins."
+  },
+  {
+   "id": "liv5-p08",
+   "source": "livret",
+   "livret": 5,
+   "page": 8,
+   "titre": "Canal de Bruxelles",
+   "fichier": "assets/2025/liv5-p08.webp",
+   "alt": "Photo du canal de Bruxelles, aux berges droites en pierre, bordé d'immeubles et d'une tour."
+  },
+  {
+   "id": "liv5-p19",
+   "source": "livret",
+   "livret": 5,
+   "page": 19,
+   "titre": "Planisphère",
+   "fichier": "assets/2025/liv5-p19.webp",
+   "alt": "Carte du monde avec trois étiquettes : Belgique, Maroc et Australie."
+  },
+  {
+   "id": "liv7-p10",
+   "source": "livret",
+   "livret": 7,
+   "page": 10,
+   "titre": "La division écrite",
+   "fichier": "assets/2025/liv7-p10.webp",
+   "alt": "Division posée : 5 863,88 : 7 = 837,69. Le premier nombre soustrait, 56, est entouré, ainsi que le dernier reste, 5."
+  },
+  {
+   "id": "liv10-p03",
+   "source": "livret",
+   "livret": 10,
+   "page": 3,
+   "titre": "L'enfant aux yeux bandés",
+   "fichier": "assets/2025/liv10-p03.webp",
+   "alt": "Photo d'une enfant aux yeux bandés qui touche les poils d'une brosse."
+  },
+  {
+   "id": "liv10-p08",
+   "source": "livret",
+   "livret": 10,
+   "page": 8,
+   "titre": "Trois montages de poulies",
+   "fichier": "assets/2025/liv10-p08.webp",
+   "alt": "En haut à gauche : une poulie fixe, la charge de 60 kg pend d'un côté de la corde. En haut à droite : une poulie fixe et une poulie mobile qui porte la charge de 60 kg. En bas : un montage de plusieurs poulies qui porte la charge de 60 kg. Chaque main tient la corde, avec une étiquette vide."
   }
  ],
  "questions": [
@@ -784,7 +856,7 @@
    "numero": "4",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Florence Poutriquet cite des expériences qu'elle a eu la chance de vivre. Coche l'expérience qu'elle ne cite pas.",
+   "enonce": "Florence Poutriquet cite des expériences qu'elle a eu la chance de vivre. Choisis l'expérience qu'elle ne cite pas.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -882,9 +954,9 @@
     "La réserve d'astronautes est composée de tous les candidats non retenus."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le podcast permet de dire que c'est VRAI",
+    "Le podcast permet de dire que c'est FAUX",
+    "Le podcast ne permet pas de dire que c'est VRAI ou FAUX"
    ],
    "reponse": [
     0,
@@ -1037,21 +1109,68 @@
    "livret": 3,
    "numero": "1a",
    "domaine": "ma.geometrie",
-   "type": "qcm",
-   "enonce": "Observe le plan de l'école. Lors d'un exercice incendie, les élèves de la classe de 6e année (H8 – I8) sortent en I7 et rejoignent le point de rassemblement (N4) par le chemin le plus court. Par quelles cases passent-ils ?",
+   "type": "texte_court",
+   "enonce": "Observe le plan de cette école. Lors d'un exercice incendie, les élèves qui occupent la classe de 6e année (H8 – I8) doivent se regrouper au point de rassemblement marqué sur le plan par le sigle vert. Ils doivent suivre le chemin le plus court. Complète les coordonnées de toutes les cases par lesquelles ils vont passer, à la suite de I7 (sépare-les par des tirets).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "documents": [
     "plan-ecole"
    ],
-   "choix": [
+   "reponse": [
+    "I6 – I5 – I4 – J4 – K4 – L4 – M4 – N4",
+    "I6 – I5 – I4 – J4 – K4 – L4 – M4",
+    "I6-I5-I4-J4-K4-L4-M4-N4",
+    "I6-I5-I4-J4-K4-L4-M4",
+    "I6 - I5 - I4 - J4 - K4 - L4 - M4 - N4",
+    "I6 - I5 - I4 - J4 - K4 - L4 - M4",
+    "I6 I5 I4 J4 K4 L4 M4 N4",
+    "I6 I5 I4 J4 K4 L4 M4",
+    "I6, I5, I4, J4, K4, L4, M4, N4",
+    "I6, I5, I4, J4, K4, L4, M4",
     "I7 – I6 – I5 – I4 – J4 – K4 – L4 – M4 – N4",
-    "I7 – J7 – K7 – L7 – M7 – N7 – N6 – N5 – N4",
-    "I7 – I6 – I5 – I4 – I3 – I2 – J2 – K2 – L2 – M2 – N2 – N3 – N4",
-    "I7 – H7 – H6 – H5 – H4 – I4 – J4 – K4 – L4 – M4 – N4"
+    "I7-I6-I5-I4-J4-K4-L4-M4-N4",
+    "I7 - I6 - I5 - I4 - J4 - K4 - L4 - M4 - N4",
+    "I7 – I6 – I5 – I4 – J4 – K4 – L4 – M4",
+    "I6–I5–I4–J4–K4–L4–M4–N4",
+    "I6–I5–I4–J4–K4–L4–M4",
+    "I7–I6–I5–I4–J4–K4–L4–M4–N4",
+    "I7–I6–I5–I4–J4–K4–L4–M4",
+    "I7 - I6 - I5 - I4 - J4 - K4 - L4 - M4",
+    "I7-I6-I5-I4-J4-K4-L4-M4",
+    "I7 I6 I5 I4 J4 K4 L4 M4 N4",
+    "I7 I6 I5 I4 J4 K4 L4 M4",
+    "I7, I6, I5, I4, J4, K4, L4, M4, N4",
+    "I7, I6, I5, I4, J4, K4, L4, M4",
+    "I6,I5,I4,J4,K4,L4,M4,N4",
+    "I6,I5,I4,J4,K4,L4,M4",
+    "I7,I6,I5,I4,J4,K4,L4,M4,N4",
+    "I7,I6,I5,I4,J4,K4,L4,M4",
+    "I6 ; I5 ; I4 ; J4 ; K4 ; L4 ; M4 ; N4",
+    "I6 ; I5 ; I4 ; J4 ; K4 ; L4 ; M4",
+    "I7 ; I6 ; I5 ; I4 ; J4 ; K4 ; L4 ; M4 ; N4",
+    "I7 ; I6 ; I5 ; I4 ; J4 ; K4 ; L4 ; M4",
+    "I6;I5;I4;J4;K4;L4;M4;N4",
+    "I6;I5;I4;J4;K4;L4;M4",
+    "I7;I6;I5;I4;J4;K4;L4;M4;N4",
+    "I7;I6;I5;I4;J4;K4;L4;M4",
+    "I6/I5/I4/J4/K4/L4/M4/N4",
+    "I6/I5/I4/J4/K4/L4/M4",
+    "I7/I6/I5/I4/J4/K4/L4/M4/N4",
+    "I7/I6/I5/I4/J4/K4/L4/M4",
+    "I6 / I5 / I4 / J4 / K4 / L4 / M4 / N4",
+    "I6 / I5 / I4 / J4 / K4 / L4 / M4",
+    "I7 / I6 / I5 / I4 / J4 / K4 / L4 / M4 / N4",
+    "I7 / I6 / I5 / I4 / J4 / K4 / L4 / M4",
+    "I6 → I5 → I4 → J4 → K4 → L4 → M4 → N4",
+    "I6 → I5 → I4 → J4 → K4 → L4 → M4",
+    "I7 → I6 → I5 → I4 → J4 → K4 → L4 → M4 → N4",
+    "I7 → I6 → I5 → I4 → J4 → K4 → L4 → M4",
+    "I6→I5→I4→J4→K4→L4→M4→N4",
+    "I6→I5→I4→J4→K4→L4→M4",
+    "I7→I6→I5→I4→J4→K4→L4→M4→N4",
+    "I7→I6→I5→I4→J4→K4→L4→M4"
    ],
-   "reponse": 0,
    "explication": "On suit le couloir gris de la colonne I jusqu'en I4, puis on remonte le couloir jusqu'à l'entrée 1 (K4 – L4) et on sort vers M4 et N4. La salle de gymnastique bloque le passage direct."
   },
   {
@@ -1095,7 +1214,7 @@
    "numero": "1d",
    "domaine": "ma.geometrie",
    "type": "qcm_multi",
-   "enonce": "Sur le plan de l'école, coche toutes les cases qu'occupe le potager.",
+   "enonce": "Sur le plan de l'école, choisis toutes les cases qu'occupe le potager.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -1126,7 +1245,7 @@
    "numero": "2",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Théo construit une pyramide à base carrée.",
+   "enonce": "Théo voudrait construire une pyramide à base carrée.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1165,7 +1284,7 @@
    "numero": "2c",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Théo voudrait construire une pyramide à base carrée. Observe les trois développements numérotés du livret (page 5). Coche le développement qui permet de construire cette pyramide.",
+   "enonce": "Théo voudrait construire une pyramide à base carrée. Observe les trois développements numérotés du livret (page 5). Choisis le développement qui permet de construire cette pyramide.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-developpements",
@@ -1200,7 +1319,7 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Zoé a réalisé le pliage du livret (page 6). Elle découpe la partie hachurée et déplie son papier. Observe les quatre flocons numérotés et coche ce qu'elle obtient.",
+   "enonce": "Zoé a réalisé le pliage du livret (page 6). Elle découpe la partie hachurée et déplie son papier. Observe les quatre flocons numérotés et choisis ce qu'elle obtient.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-symetrie",
@@ -1444,7 +1563,7 @@
    "numero": "16a",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Coche la proposition correcte : Jules a rassemblé les figures du groupe A parce que chaque figure de ce groupe…",
+   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Choisis la proposition correcte : Jules a rassemblé les figures du groupe A parce que chaque figure de ce groupe…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-polygones",
@@ -1465,7 +1584,7 @@
    "numero": "16b",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Coche la proposition correcte : Jules a rassemblé les figures du groupe B parce que chaque figure de ce groupe…",
+   "enonce": "Jules a trié six figures de cette façon (livret, page 19). Choisis la proposition correcte : Jules a rassemblé les figures du groupe B parce que chaque figure de ce groupe…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-polygones",
@@ -1486,7 +1605,7 @@
    "numero": "1",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Complète l'unité de chaque grandeur par le préfixe qui convient (kilo, hecto, déca, déci, centi, milli).",
+   "enonce": "Complète l'unité de mesure de chaque grandeur par le préfixe adéquat (kilo, hecto, déca, déci, centi, milli). Certains préfixes peuvent être utilisés plusieurs fois. Tu ne dois pas les utiliser tous.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1518,11 +1637,11 @@
    "numero": "2",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Crumble pour 4 personnes : 3 pommes, 50 g de sucre roux, 100 g de poudre d'amandes, 100 g de beurre. Complète le tableau.",
+   "enonce": "Voici les ingrédients pour réaliser un crumble pommes-amandes. Ingrédients pour 4 personnes : 3 pommes, 50 g de sucre roux, 100 g de poudre d'amandes, 100 g de beurre. Complète le tableau (exemple : 4 personnes → 3 pommes, 50 g de sucre roux, 100 g de poudre d'amandes, 100 g de beurre).",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
-   "texte": "Pour 2 personnes : 1,5 pomme, {1} g de sucre, {2} g d'amandes, {3} g de beurre.  ·  Pour {4} personnes : {5} pommes, {6} g de sucre, 300 g d'amandes, 300 g de beurre.  ·  Pour {7} personnes : {8} pommes, 450 g de sucre, 900 g d'amandes, {9} g de beurre.",
+   "texte": "2 personnes : 1,5 pomme, {1} g de sucre roux, {2} g de poudre d'amandes, {3} g de beurre  ·  {4} personnes : {5} pommes, {6} g de sucre roux, 300 g de poudre d'amandes, 300 g de beurre  ·  {7} personnes : {8} pommes, 450 g de sucre roux, 900 g de poudre d'amandes, {9} g de beurre",
    "reponse": [
     [
      "25"
@@ -1577,11 +1696,11 @@
    "numero": "3a",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "GPS de la Grand-Place au Cinquantenaire (durée depuis le départ) : Rue de la Colline 1 min, Rue du Marché aux Herbes 2 min, Place d'Espagne 3 min, Rue du Cardinal Mercier 5 min, Rue des Colonies 7 min, Rue de la Loi 10 min, Avenue John Kennedy 39 min, Cinquantenaire 46 min. Le piéton quitte la Grand-Place à 17 h 55.",
+   "enonce": "Voici l'itinéraire indiqué sur le GPS d'un piéton qui veut se rendre de la Grand-Place au Cinquantenaire à Bruxelles (distance parcourue depuis le départ – durée depuis le départ – lieu) : 0 km – 00 h 00 – Grand-Place ; 0,1 km – 00 h 01 – Rue de la Colline ; 0,2 km – 00 h 02 – Rue du Marché aux Herbes ; 0,3 km – 00 h 03 – Place d'Espagne ; 0,4 km – 00 h 05 – Rue du Cardinal Mercier ; 0,5 km – 00 h 07 – Rue des Colonies ; 0,7 km – 00 h 10 – Rue de la Loi ; 2,6 km – 00 h 39 – Avenue John Kennedy ; 3,1 km – 00 h 46 – Cinquantenaire. Le piéton quitte la Grand-Place à 17 h 55. Complète le tableau (lieu – heure d'arrivée estimée).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
-   "texte": "À 18 h 05, il arrive {1}.  ·  Il arrive au Cinquantenaire à {2} h {3}.",
+   "texte": "Grand-Place : 17 h 55  ·  {1} : 18 h 05  ·  Cinquantenaire : {2} h {3}",
    "reponse": [
     [
      "rue de la Loi",
@@ -1609,15 +1728,15 @@
    "numero": "3b",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "GPS de la Grand-Place au Cinquantenaire (durée depuis le départ) : Rue de la Colline 1 min, Rue du Marché aux Herbes 2 min, Place d'Espagne 3 min, Rue du Cardinal Mercier 5 min, Rue des Colonies 7 min, Rue de la Loi 10 min, Avenue John Kennedy 39 min, Cinquantenaire 46 min. Un autre piéton quitte la Grand-Place à 14 h 02. Quel horaire est correct ?",
+   "enonce": "Voici l'itinéraire indiqué sur le GPS d'un piéton qui veut se rendre de la Grand-Place au Cinquantenaire à Bruxelles (distance parcourue depuis le départ – durée depuis le départ – lieu) : 0 km – 00 h 00 – Grand-Place ; 0,1 km – 00 h 01 – Rue de la Colline ; 0,2 km – 00 h 02 – Rue du Marché aux Herbes ; 0,3 km – 00 h 03 – Place d'Espagne ; 0,4 km – 00 h 05 – Rue du Cardinal Mercier ; 0,5 km – 00 h 07 – Rue des Colonies ; 0,7 km – 00 h 10 – Rue de la Loi ; 2,6 km – 00 h 39 – Avenue John Kennedy ; 3,1 km – 00 h 46 – Cinquantenaire. Un autre piéton quitte la Grand-Place à 14 h 02. Choisis le tableau qui correspond à l'horaire de son itinéraire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
    "choix": [
-    "Cardinal Mercier 14 h 07 · Rue de la Loi 14 h 17 · Cinquantenaire 14 h 48",
-    "Cardinal Mercier 14 h 07 · Avenue John Kennedy 14 h 39 · Cinquantenaire 14 h 48",
-    "Cardinal Mercier 14 h 07 · Avenue John Kennedy 14 h 41 · Cinquantenaire 14 h 48",
-    "Cardinal Mercier 14 h 05 · Place d'Espagne 14 h 07 · Cinquantenaire 14 h 48"
+    "Grand-Place 14 h 02 · Rue du Cardinal Mercier 14 h 07 · Rue de la Loi 14 h 17 · Cinquantenaire 14 h 48",
+    "Grand-Place 14 h 02 · Rue du Cardinal Mercier 14 h 07 · Avenue John Kennedy 14 h 39 · Cinquantenaire 14 h 48",
+    "Grand-Place 14 h 02 · Rue du Cardinal Mercier 14 h 07 · Avenue John Kennedy 14 h 41 · Cinquantenaire 14 h 48",
+    "Grand-Place 14 h 02 · Rue du Cardinal Mercier 14 h 05 · Place d'Espagne 14 h 07 · Cinquantenaire 14 h 48"
    ],
    "reponse": 2,
    "explication": "14 h 02 + 5 min = 14 h 07 ; + 39 min = 14 h 41 ; + 46 min = 14 h 48. Rue de la Loi serait à 14 h 12, pas 14 h 17."
@@ -1628,7 +1747,7 @@
    "numero": "4",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Parking de la gare de Liège. Voyageur en train : du lundi au vendredi 2,30 € par heure, weekends et jours fériés 1,15 € par heure (non-voyageur : 2,98 € par heure). Toute heure entamée est payée entièrement. Le dimanche 11 mai, M. Durand prend le train ; il entre à 07 h 02 et sort à 11 h 50. Combien paie-t-il ?",
+   "enonce": "Observe le tarif pour le stationnement d'une voiture dans le parking de la gare de Liège. GARE DE LIÈGE – TARIF PARKING. Du lundi au vendredi : voyageur en train 2,30 € par heure ; non-voyageur en train 2,98 € par heure. Weekends et jours fériés : voyageur en train 1,15 € par heure ; non-voyageur en train 2,98 € par heure. Toute heure entamée est payée dans son entièreté. Le dimanche 11 mai, Monsieur Durand a décidé de prendre le train pour rendre visite à sa maman. Il a laissé sa voiture au parking de la gare. Observe son ticket de parking : « Liège Gare P1 – 11/05/25 – Entrée : 07 h 02 – Sortie : 11 h 50 ». Calcule le prix que Monsieur Durand a payé. Complète la phrase : Monsieur Durand a payé…",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-monnaie",
@@ -1671,15 +1790,15 @@
    "numero": "7",
    "domaine": "ma.grandeurs",
    "type": "grille",
-   "enonce": "Les liquides emportés en cabine doivent être dans des contenants de 100 ml maximum. Peux-tu emporter ces contenants ?",
+   "enonce": "Voici la consigne donnée par une compagnie aérienne : « Les liquides emportés en cabine doivent être contenus dans des contenants de 100 ml maximum. » Peux-tu emporter les contenants suivants en cabine ?",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "lignes": [
-    "Une bouteille de 0,12 l",
+    "Une boisson fraise-banane de 0,12 l",
+    "Un écran solaire de 60 ml",
     "Un dentifrice de 7 cl",
-    "Une crème solaire de 60 ml",
-    "Un sirop de 1 dl"
+    "Un sirop contre la toux sèche de 1 dl"
    ],
    "colonnes": [
     "Oui",
@@ -1699,7 +1818,7 @@
    "numero": "8",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Coche la masse la plus légère.",
+   "enonce": "Choisis la masse la plus légère.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1719,7 +1838,7 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "texte_court",
-   "enonce": "Paul mange 1/3 d'une tablette de chocolat. Ensuite, Marie mange 1/4 du reste. Quelle fraction de la tablette de départ reste-t-il ? (exemple : 2/5)",
+   "enonce": "Deux enfants se partagent cette tablette de chocolat. Paul mange 1/3 de cette tablette. Ensuite, Marie mange 1/4 du reste de cette tablette. Quelle fraction de la tablette de départ reste-t-il ? Complète la phrase : il reste … de la tablette de chocolat. (exemple d'écriture : 2/5)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -1730,7 +1849,10 @@
     "6/12",
     "12/24"
    ],
-   "explication": "Après Paul, il reste 2/3. Marie mange 1/4 de 2/3 = 2/12 = 1/6. Il reste 2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2."
+   "explication": "Après Paul, il reste 2/3. Marie mange 1/4 de 2/3 = 2/12 = 1/6. Il reste 2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2.",
+   "documents": [
+    "liv4-p09"
+   ]
   },
   {
    "id": "ceb-2025-l4-q10",
@@ -1816,12 +1938,13 @@
    "numero": "13",
    "domaine": "ma.donnees",
    "type": "numerique",
-   "enonce": "Ventes de pommes d'amour pendant la semaine : lundi 26, mardi 35, mercredi 17, jeudi 19, vendredi 34, samedi 53, dimanche 61. Combien en a-t-on vendu en moyenne par jour ?",
+   "enonce": "Voici le relevé des ventes de pommes d'amour durant la semaine de fête : lundi 26, mardi 35, mercredi 17, jeudi 19, vendredi 34, samedi 53, dimanche 61. Combien de pommes d'amour le confiseur a-t-il vendues en moyenne par jour durant cette fête foraine ? Complète la phrase : le confiseur a vendu en moyenne … pommes d'amour par jour.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-moyenne",
    "reponse": 35,
-   "explication": "Total : 26 + 35 + 17 + 19 + 34 + 53 + 61 = 245. Moyenne : 245 : 7 = 35."
+   "explication": "Total : 26 + 35 + 17 + 19 + 34 + 53 + 61 = 245. Moyenne : 245 : 7 = 35.",
+   "unite": "pommes d'amour"
   },
   {
    "id": "ceb-2025-l4-q14",
@@ -1837,8 +1960,8 @@
     "liv4-p14"
    ],
    "unite": "cm²",
-   "reponse": 20.375,
-   "tolerance": 0.076,
+   "reponse": 20.35,
+   "tolerance": 0.0501,
    "explication": "Rectangle : 8 × 5 = 40 cm². Disque de diamètre 5 cm (rayon 2,5 cm) : 3,14 × 2,5 × 2,5 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm² (on accepte de 20,3 à 20,4)."
   },
   {
@@ -1847,15 +1970,15 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Pour traiter 45 m² d'allée, il faut 6 litres de désherbant. Combien faut-il pour 135 m² ? Quel tableau (litres | m²) correspond à la situation ?",
+   "enonce": "Pour traiter une allée en gravier de 45 m², il faut pulvériser 6 litres de désherbant bio. Quelle quantité de désherbant bio faut-il pulvériser pour traiter une surface de 135 m² ? Choisis le tableau qui correspond à cette situation (colonne de gauche : quantité de désherbant en litres ; colonne de droite : superficie à traiter en m²).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "choix": [
-    "6 | 45 puis 135 | ?",
-    "45 | 6 puis ? | 135",
-    "6 | 45 puis ? | 135",
-    "? | 45 puis 6 | 135"
+    "1re ligne : 6 | 45 — 2e ligne : 135 | ?",
+    "1re ligne : 45 | 6 — 2e ligne : ? | 135",
+    "1re ligne : 6 | 45 — 2e ligne : ? | 135",
+    "1re ligne : ? | 45 — 2e ligne : 6 | 135"
    ],
    "reponse": 2,
    "explication": "Les litres vont dans la colonne des litres et les m² dans celle des m² : 6 l pour 45 m², ? l pour 135 m². (Réponse : 18 l.)"
@@ -1942,7 +2065,7 @@
    "numero": "20a",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux grandeurs équivalentes.",
+   "enonce": "Choisis les deux grandeurs équivalentes.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1965,7 +2088,7 @@
    "numero": "20b",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux grandeurs équivalentes.",
+   "enonce": "Choisis les deux grandeurs équivalentes.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1988,7 +2111,7 @@
    "numero": "20c",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux grandeurs équivalentes.",
+   "enonce": "Choisis les deux grandeurs équivalentes.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -2011,7 +2134,7 @@
    "numero": "21",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Nourriture pour UN animal : dauphin 215 kg de maquereaux pour 20 jours ; phoque 135 kg de crustacés pour 30 jours ; murène 6 kg de poulpes pour 15 jours. Complète la commande pour 60 jours.",
+   "enonce": "Observe le tableau de la quantité de nourriture pour UN animal : dauphin : 215 kg de maquereaux pour 20 jours ; phoque : 135 kg de crustacés pour 30 jours ; raie manta : 90 kg de plancton pour 12 jours ; murène : 6 kg de poulpes pour 15 jours. Les responsables d'un centre animalier souhaitent commander de la nourriture pour nourrir 4 dauphins, 3 phoques et 1 murène pendant 60 jours. Complète le bon de commande pour 60 jours.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -2036,7 +2159,7 @@
    "numero": "22",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Pour mesurer une même distance, des élèves ont reporté des bâtons : Samuel 18 fois, Amélie 24 fois, Sébastien 53 fois, Nicole 15 fois. Qui a utilisé le plus long bâton ?",
+   "enonce": "Pour mesurer une même distance, des élèves ont utilisé des bâtons de longueurs différentes. Observe le résultat de leur mesurage (nombre de reports du bâton) : Samuel 18, Amélie 24, Sébastien 53, Nicole 15. Lequel de ces élèves a utilisé le plus long bâton ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -2076,7 +2199,7 @@
    "numero": "24",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Voici ce qui s'affiche sur l'écran de l'ordinateur lorsque l'on insère des clés USB (livret, page 22). Coche la proposition où les données occupent 1/6 de la capacité de la clé.",
+   "enonce": "Voici ce qui s'affiche sur l'écran de l'ordinateur lorsque l'on insère des clés USB (livret, page 22). Choisis la proposition où les données occupent 1/6 de la capacité de la clé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -2139,13 +2262,16 @@
    "numero": "26",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Playlist de Mia : 3 min 10 s, 4 min 13 s, 2 min 55 s, 3 min 43 s et 3 min 23 s. Complète : la durée totale est de 17 min … s.",
+   "enonce": "Mia a enregistré la playlist suivante sur son téléphone portable (livret, page 23) : Angelo, « Balance ta veste », 3 min 10 s ; White M, « Sur mon autoroute », 4 min 13 s ; Adults United, « On gribouille sur les murs », 2 min 55 s ; Tarzan, « Tout va bien », 3 min 43 s ; Gérard Piquette, « J'adore ma gourde », 3 min 23 s. Complète la phrase : la durée totale de la playlist est de 17 min … s.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
    "unite": "s",
    "reponse": 24,
-   "explication": "Minutes : 3 + 4 + 2 + 3 + 3 = 15 min. Secondes : 10 + 13 + 55 + 43 + 23 = 144 s = 2 min 24 s. Total : 17 min 24 s."
+   "explication": "Minutes : 3 + 4 + 2 + 3 + 3 = 15 min. Secondes : 10 + 13 + 55 + 43 + 23 = 144 s = 2 min 24 s. Total : 17 min 24 s.",
+   "documents": [
+    "liv4-p23"
+   ]
   },
   {
    "id": "ceb-2025-l5-q1",
@@ -2180,7 +2306,7 @@
    "numero": "2a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Observe les œuvres d'art A à G. Ce sont toutes des…",
+   "enonce": "Observe les œuvres d'art A à G. Ces œuvres d'art sont des traces du passé qui nous renseignent sur le mode de vie des gens à une époque déterminée. Identifie la nature de ces traces du passé. Toutes ces œuvres d'art sont des…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2202,22 +2328,18 @@
    "livret": 5,
    "numero": "2b",
    "domaine": "hg.histoire",
-   "type": "qcm",
-   "enonce": "Pendant quelle période conventionnelle Pieter Brueghel a-t-il peint La Fenaison (vers 1565) ?",
+   "type": "texte_court",
+   "enonce": "Écris le nom de la période conventionnelle durant laquelle Pieter Brueghel a réalisé l'œuvre D.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "documents": [
     "oeuvres-1"
    ],
-   "choix": [
-    "Préhistoire",
-    "Antiquité",
-    "Moyen Âge",
+   "reponse": [
     "Temps modernes",
-    "Époque contemporaine"
+    "les Temps modernes"
    ],
-   "reponse": 3,
    "explication": "Les Temps modernes vont de 1492 à 1789 : 1565 en fait partie."
   },
   {
@@ -2226,7 +2348,7 @@
    "numero": "2c",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "En quel siècle Seurat a-t-il peint Une baignade à Asnières (œuvre E, vers 1884) ?",
+   "enonce": "Situe l'œuvre E dans le temps. Choisis le siècle correct.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
@@ -2277,7 +2399,7 @@
    "numero": "2e",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "L'œuvre G (Le Déjeuner sur l'herbe de Monet) nous renseigne sur des activités de l'Humain pour… (coche les trois propositions correctes)",
+   "enonce": "L'œuvre G (Le Déjeuner sur l'herbe de Monet) nous renseigne sur des activités de l'Humain pour… (choisis les trois propositions correctes)",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
@@ -2306,13 +2428,14 @@
    "numero": "2f",
    "domaine": "hg.geographie",
    "type": "association",
-   "enonce": "Dans quel pays est conservée chaque œuvre ?",
+   "enonce": "Situe sur la carte les pays où sont conservées les œuvres A, C et F (aide-toi du portfolio). Pour chaque œuvre, choisis le numéro de la case qui convient. Un exemple t'est donné : l'œuvre E est dans la case grise. Des cases resteront vides.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-europe",
    "documents": [
     "oeuvres-1",
-    "oeuvres-2"
+    "oeuvres-2",
+    "liv5-p06"
    ],
    "gauche": [
     "A : Barques de pêche aux Saintes-Maries",
@@ -2320,11 +2443,14 @@
     "F : Le Repas de noce"
    ],
    "droite": [
-    "Pays-Bas",
-    "France",
-    "Autriche",
-    "Italie",
-    "République tchèque"
+    "Case 1",
+    "Case 2",
+    "Case 3",
+    "Case 4",
+    "Case 5",
+    "Case 6",
+    "Case 7",
+    "Case 8"
    ],
    "reponse": [
     [
@@ -2337,10 +2463,10 @@
     ],
     [
      2,
-     2
+     6
     ]
    ],
-   "explication": "A est au musée Van Gogh aux Pays-Bas, C au musée des Beaux-Arts en France, F au musée d'Histoire de l'art en Autriche."
+   "explication": "A est conservée aux Pays-Bas (case 1), C en France (case 2) et F en Autriche (case 7)."
   },
   {
    "id": "ceb-2025-l5-q3a",
@@ -2367,7 +2493,7 @@
    "numero": "3b",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Une photo montre la piste de ski du Mont des Brumes, en province de Liège. Quel milieu naturel y voit-on ?",
+   "enonce": "Observe cette photo prise en Belgique : « Piste de ski du Mont des Brumes en Province de Liège ». Choisis le milieu naturel visible sur la photo.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
@@ -2378,7 +2504,10 @@
     "Forêt"
    ],
    "reponse": 3,
-   "explication": "La Belgique n'a pas de montagne : la piste est tracée au milieu d'une forêt, sur une colline de l'Ardenne liégeoise."
+   "explication": "La Belgique n'a pas de montagne : la piste est tracée au milieu d'une forêt, sur une colline de l'Ardenne liégeoise.",
+   "documents": [
+    "liv5-p07"
+   ]
   },
   {
    "id": "ceb-2025-l5-q3c",
@@ -2386,11 +2515,14 @@
    "numero": "3c",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Une élève affirme : « Le cours d'eau présent sur cette photo (le canal de Bruxelles) est un élément naturel du paysage. » C'est faux. Pourquoi ?",
+   "enonce": "Observe cette photo : « Canal de Bruxelles ». Voici ce qu'affirme cette élève : « Le cours d'eau présent sur cette photo est un élément naturel du paysage. » Cette affirmation n'est pas correcte. Écris la raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
-   "reponseModele": "Un canal a été creusé et aménagé par l'homme : c'est un élément construit, pas naturel. (Dire que « l'eau est naturelle », ou parler des routes et des maisons, ne répond pas.)"
+   "reponseModele": "Un canal a été creusé et aménagé par l'homme : c'est un élément construit, pas naturel. (Dire que « l'eau est naturelle », ou parler des routes et des maisons, ne répond pas.)",
+   "documents": [
+    "liv5-p08"
+   ]
   },
   {
    "id": "ceb-2025-l5-q4a",
@@ -2398,7 +2530,7 @@
    "numero": "4a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Vauban, architecte militaire français, est né en 1633 et mort en 1707. Pendant quelle période conventionnelle a-t-il vécu ?",
+   "enonce": "Sébastien Le Prestre, marquis de Vauban, dit Vauban, est français. Il est né le 1er mai 1633 et mort le 30 mars 1707. Ingénieur, architecte militaire, urbaniste, il est spécialisé dans l'art de mener des sièges lors de l'attaque, de la défense de villes ou de places fortes. Il conçoit et améliore une centaine de places fortes. Quelle est la période historique conventionnelle durant laquelle Vauban a vécu ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -2418,7 +2550,7 @@
    "numero": "4b",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Sur une ligne du temps allant du 14e au 19e siècle, quels siècles faut-il colorier pour la vie de Vauban (1633 – 1707) ?",
+   "enonce": "Sébastien Le Prestre, marquis de Vauban, dit Vauban, est français. Il est né le 1er mai 1633 et mort le 30 mars 1707. Ingénieur, architecte militaire, urbaniste, il est spécialisé dans l'art de mener des sièges lors de l'attaque, de la défense de villes ou de places fortes. Il conçoit et améliore une centaine de places fortes. Sur une ligne du temps allant du 14e au 19e siècle, dans quels siècles se situe la période durant laquelle Vauban a vécu ? (À l'épreuve, il fallait colorier cette période sur la ligne du temps.)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
@@ -2442,7 +2574,7 @@
    "numero": "4c",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe la carte des citadelles. Coche la proposition correcte.",
+   "enonce": "Observe la carte des citadelles. Choisis la proposition correcte.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -2570,17 +2702,36 @@
     "fleuve",
     "la rivière",
     "rivière",
+    "une rivière",
     "l'eau",
+    "eau",
+    "de l'eau",
+    "un cours d'eau",
+    "cours d'eau",
     "le rocher",
     "rocher",
+    "les rochers",
+    "rochers",
+    "des rochers",
     "la falaise",
     "falaise",
+    "les falaises",
+    "falaises",
+    "des falaises",
     "la roche",
-    "les rochers",
     "les arbres",
     "arbres",
-    "la végétation",
+    "des arbres",
+    "les bois",
+    "bois",
+    "des bois",
     "la forêt",
+    "forêt",
+    "les forêts",
+    "forêts",
+    "des forêts",
+    "la végétation",
+    "végétation",
     "la colline",
     "le relief"
    ],
@@ -2667,10 +2818,24 @@
     "une haie",
     "haie",
     "des haies",
+    "les haies d'arbres",
+    "des haies d'arbres",
+    "haies d'arbres",
+    "les haies d'arbustes",
+    "des haies d'arbustes",
+    "haies d'arbustes",
     "les clôtures",
     "clôtures",
+    "des clôtures",
     "une clôture",
+    "clôture",
     "les barrières",
+    "barrières",
+    "des barrières",
+    "les grillages",
+    "grillages",
+    "des grillages",
+    "un grillage",
     "les rangées d'arbres",
     "des rangées d'arbres"
    ],
@@ -2682,23 +2847,22 @@
    "numero": "6a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Les documents du portfolio sur les Expositions universelles permettent-ils de dire que c'est vrai ou faux ?",
+   "enonce": "Observe les documents du portfolio « Des Expositions universelles » (pages 16-17). Pour chaque affirmation, choisis la case qui convient.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
-    "expo-1",
-    "villes-double"
+    "expo-double"
    ],
    "lignes": [
-    "La première Exposition universelle a eu lieu au Royaume-Uni en 1851.",
+    "La première exposition universelle a eu lieu au Royaume-Uni en 1851.",
     "L'Atomium a été détruit après l'Expo 58.",
-    "À l'Expo 58, la crème glacée 3 tons entre deux gaufres fait son apparition."
+    "À l'Expo 58, la crème glacée 3 tons (brun-blanc-rose, en référence au drapeau belge) entre deux gaufres fait son apparition."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Les documents permettent de dire que c'est VRAI",
+    "Les documents permettent de dire que c'est FAUX",
+    "Rien dans les documents ne permet de dire que c'est vrai ou faux"
    ],
    "reponse": [
     2,
@@ -2713,7 +2877,7 @@
    "numero": "6b",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Sur le plan de l'Expo 58, l'Atomium (4) se situe plutôt… du hall d'accueil (1).",
+   "enonce": "Observe le plan de l'Expo 58. L'Atomium se situe plutôt… du hall d'accueil.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -2735,7 +2899,7 @@
    "numero": "6c",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe les quatre plans de l'Expo 58 du livret (page 14), numérotés de 1 à 4. Coche la proposition correcte pour chaque phrase.",
+   "enonce": "Observe les quatre plans de l'Expo 58 du livret (page 14), numérotés de 1 à 4. Choisis la proposition correcte pour chaque phrase.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2776,7 +2940,9 @@
     "Jardins français du Belvédère",
     "les Jardins français du Belvédère",
     "jardins français",
+    "les jardins français",
     "jardins du Belvédère",
+    "les jardins du Belvédère",
     "le Belvédère"
    ],
    "explication": "Le numéro 13 correspond aux Jardins français du Belvédère."
@@ -2787,7 +2953,7 @@
    "numero": "6e",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Parmi ces pavillons, lequel représente un pays qui ne fait pas partie de l'Union européenne actuelle ?",
+   "enonce": "Parmi ces 4 numéros de pavillons, choisis celui qui représente le pays ne faisant pas partie de l'Union européenne actuelle.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-europe",
@@ -2795,10 +2961,10 @@
     "expo-1"
    ],
    "choix": [
-    "8 (France)",
-    "9 (Suisse)",
-    "10 (Espagne)",
-    "11 (Portugal)"
+    "8",
+    "9",
+    "10",
+    "11"
    ],
    "reponse": 1,
    "explication": "La Suisse n'est pas membre de l'Union européenne."
@@ -2881,7 +3047,7 @@
    "numero": "6i",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Situe ces Expositions universelles par rapport aux évènements de notre histoire.",
+   "enonce": "Situe différentes Expositions universelles par rapport aux évènements marquants de notre histoire. Choisis la proposition correcte.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
@@ -2889,9 +3055,9 @@
     "villes-double"
    ],
    "lignes": [
-    "Montréal (1967) a eu lieu… l'indépendance de la Belgique (1830).",
-    "Port-au-Prince (1949-1950) a eu lieu… le premier voyage de l'homme dans l'espace (1961).",
-    "Melbourne (1880) a eu lieu… la Première Guerre mondiale (1914-1918)."
+    "L'Exposition universelle de Montréal (2) a eu lieu… l'indépendance de la Belgique.",
+    "L'Exposition universelle de Port-au-Prince (4) a eu lieu… le premier voyage de l'homme dans l'espace.",
+    "L'Exposition universelle de Melbourne (5) a eu lieu… la Première Guerre mondiale."
    ],
    "colonnes": [
     "avant",
@@ -2911,7 +3077,7 @@
    "numero": "7a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Sandra Kim a représenté la Belgique en 1986, Montaigne l'Australie en 2021 et Samira Saïd le Maroc en 1980 au Concours Eurovision. Comme dans le tableau de l'épreuve (pays × siècle de participation), place chaque artiste : choisis le continent de son pays, puis le siècle de sa participation. Chaque artiste rapporte 1 point si le continent ET le siècle sont justes.",
+   "enonce": "Voici des artistes qui ont participé au Concours Eurovision de la Chanson : A. Sandra Kim, représentante de la Belgique en 1986 ; B. Montaigne, représentante de l'Australie en 2021 ; C. Samira Saïd, représentante du Maroc en 1980. Observe la carte. Place chaque artiste dans la case du tableau qui convient : choisis le continent du pays représenté, puis le siècle de sa participation.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2990,6 +3156,9 @@
      4,
      5
     ]
+   ],
+   "documents": [
+    "liv5-p19"
    ]
   },
   {
@@ -3041,7 +3210,7 @@
    "numero": "7d",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "L'Ukraine a gagné l'Eurovision en 2022 mais n'a pas pu l'organiser en 2023. Pourquoi ?",
+   "enonce": "L'Ukraine a remporté le Concours Eurovision en 2022, mais elle n'a pas pu l'organiser en 2023. C'est le Royaume-Uni qui l'a organisé à sa place. Écris la raison.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -3133,7 +3302,7 @@
    "numero": "8c",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Une élève affirme : « Le premier homme dans l'espace a eu lieu durant les Temps modernes. » C'est faux. Pourquoi ?",
+   "enonce": "Voici ce qu'affirme cette élève : « Le premier homme dans l'espace est un évènement marquant de notre histoire qui a eu lieu durant les Temps modernes (temps des grandes découvertes techniques et géographiques). » Cette affirmation n'est pas correcte. Écris la raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -3532,7 +3701,7 @@
    "numero": "2b",
    "domaine": "ma.arithmetique",
    "type": "texte_court",
-   "enonce": "Écris en lettres le nombre 1 037,12 (exemple : mille-deux-cent-quatre-vingt-sept unités deux centièmes).",
+   "enonce": "Écris en lettres le nombre 1 037,12.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-numeration",
@@ -3573,14 +3742,14 @@
    "numero": "4a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Tarif de l'exposition — entrée par groupe (min. 15 personnes) : moins de 16 ans 6 €, adulte 8 € ; une entrée gratuite pour l'accompagnant. Boutique : livre 32 €, album illustré 24 €, T-shirt 20 €, tasse 6 €, poster 5 €, guide de visite 10 €. Une classe de 18 élèves visite l'exposition avec son instituteur, qui achète en plus deux albums illustrés et un poster. Quelle résolution convient ?",
+   "enonce": "Observe le tarif affiché à l'entrée d'une exposition. DROIT D'ENTRÉE — Entrée individuelle : adulte 14 € ; enfant de moins de 16 ans 10 € ; enfant de moins de 5 ans gratuit. Entrée par groupe (min. 15 personnes) : adulte 8 € ; enfant de moins de 16 ans 6 € ; enfant de moins de 5 ans gratuit. Une entrée gratuite pour l'accompagnant d'un groupe de minimum 15 personnes. BOUTIQUE DE L'EXPO : livre 32 € ; album illustré 24 € ; T-shirt 20 € ; tasse 6 € ; poster 5 € ; guide de visite 10 €. Voici un problème qui a été posé à des élèves (exemple) : « Une classe de 21 élèves de 6e primaire visite l'exposition avec leur instituteur. Lors de la visite, en plus des tickets d'entrée, l'instituteur achète un album illustré et deux posters. Combien va-t-il payer au total ? » Ils ont posé les opérations suivantes pour résoudre ce problème correctement : 21 × 6 = 126 ; 1 × 24 = 24 ; 2 × 5 = 10 ; 126 + 24 + 10 = 160. Il va payer 160 €. Nouvelle situation : une classe de 18 élèves de 6e primaire visite l'exposition avec leur instituteur. Lors de la visite, en plus des tickets d'entrée, l'instituteur achète deux albums illustrés et un poster. Combien va-t-il payer au total ? Choisis la résolution qui convient.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
-    "18 × 6 = 108 ; 2 × 32 = 64 ; 1 × 5 = 5 ; total 177 €",
-    "18 × 10 = 180 ; 2 × 24 = 48 ; 1 × 5 = 5 ; total 233 €",
-    "18 × 6 = 108 ; 2 × 24 = 48 ; 1 × 5 = 5 ; total 161 €"
+    "18 × 6 = 108 ; 2 × 32 = 64 ; 1 × 5 = 5 ; 108 + 64 + 5 = 177. Il va payer 177 €.",
+    "18 × 10 = 180 ; 2 × 24 = 48 ; 1 × 5 = 5 ; 180 + 48 + 5 = 233. Il va payer 233 €.",
+    "18 × 6 = 108 ; 2 × 24 = 48 ; 1 × 5 = 5 ; 108 + 48 + 5 = 161. Il va payer 161 €."
    ],
    "reponse": 2,
    "explication": "Tarif de groupe enfant (6 €), l'instituteur entre gratuitement, un album coûte 24 € (32 € est le prix du livre)."
@@ -3591,14 +3760,14 @@
    "numero": "4b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Tarif de l'exposition — entrée par groupe (min. 15 personnes) : moins de 16 ans 6 €, adulte 8 € ; une entrée gratuite pour l'accompagnant. Boutique : livre 32 €, album illustré 24 €, T-shirt 20 €, tasse 6 €, poster 5 €, guide de visite 10 €. Une classe de 21 élèves visite l'exposition avec son instituteur, qui achète deux tasses et un guide de visite. Quelle résolution convient ?",
+   "enonce": "Observe le tarif affiché à l'entrée d'une exposition. DROIT D'ENTRÉE — Entrée individuelle : adulte 14 € ; enfant de moins de 16 ans 10 € ; enfant de moins de 5 ans gratuit. Entrée par groupe (min. 15 personnes) : adulte 8 € ; enfant de moins de 16 ans 6 € ; enfant de moins de 5 ans gratuit. Une entrée gratuite pour l'accompagnant d'un groupe de minimum 15 personnes. BOUTIQUE DE L'EXPO : livre 32 € ; album illustré 24 € ; T-shirt 20 € ; tasse 6 € ; poster 5 € ; guide de visite 10 €. Voici un problème qui a été posé à des élèves (exemple) : « Une classe de 21 élèves de 6e primaire visite l'exposition avec leur instituteur. Lors de la visite, en plus des tickets d'entrée, l'instituteur achète un album illustré et deux posters. Combien va-t-il payer au total ? » Ils ont posé les opérations suivantes pour résoudre ce problème correctement : 21 × 6 = 126 ; 1 × 24 = 24 ; 2 × 5 = 10 ; 126 + 24 + 10 = 160. Il va payer 160 €. Nouvelle situation : une classe de 21 élèves de 6e primaire visite l'exposition avec leur instituteur. Lors de la visite, en plus des tickets d'entrée, l'instituteur achète deux tasses et un guide de visite. Combien va-t-il payer au total ? Choisis la résolution qui convient.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "choix": [
-    "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 10 = 10 ; total 148 €",
-    "21 × 6 = 126 ; 2 × 5 = 10 ; 1 × 10 = 10 ; total 146 €",
-    "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 32 = 32 ; total 170 €"
+    "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 10 = 10 ; 126 + 12 + 10 = 148. Il va payer 148 €.",
+    "21 × 6 = 126 ; 2 × 5 = 10 ; 1 × 10 = 10 ; 126 + 10 + 10 = 146. Il va payer 146 €.",
+    "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 32 = 32 ; 126 + 12 + 32 = 170. Il va payer 170 €."
    ],
    "reponse": 0,
    "explication": "Une tasse coûte 6 € et le guide de visite 10 €."
@@ -3695,7 +3864,7 @@
    "numero": "9",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Un enfant a calculé : 36 988 : 28 = 1 322. Son résultat est-il correct ? (vérifie avec une multiplication)",
+   "enonce": "Voici une division réalisée par un enfant : 36 988 : 28 = 1 322. Vérifie si le résultat obtenu est correct. Le résultat de l'opération de départ est-il correct ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -3712,7 +3881,7 @@
    "numero": "10a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Voici une division écrite : 5 863,88 : 7 = 837,69. Première étape : 58 − 56 = 2 ; … dernière étape : 68 − 63 = 5. Le nombre 56 soustrait à la première étape, c'est…",
+   "enonce": "Voici une division écrite (livret, page 10). Observe le nombre entouré « 56 ». 56, c'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -3723,7 +3892,10 @@
     "56 centièmes"
    ],
    "reponse": 0,
-   "explication": "On partage d'abord 58 centaines : 7 × 8 centaines = 56 centaines."
+   "explication": "On partage d'abord 58 centaines : 7 × 8 centaines = 56 centaines.",
+   "documents": [
+    "liv7-p10"
+   ]
   },
   {
    "id": "ceb-2025-l7-q10b",
@@ -3731,7 +3903,7 @@
    "numero": "10b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Voici une division écrite : 5 863,88 : 7 = 837,69. Première étape : 58 − 56 = 2 ; … dernière étape : 68 − 63 = 5. Le reste 5 de la dernière étape, c'est…",
+   "enonce": "Voici une division écrite (livret, page 10). Observe le nombre entouré « 5 » (le dernier reste). 5, c'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -3742,7 +3914,10 @@
     "5 centièmes"
    ],
    "reponse": 3,
-   "explication": "La dernière étape porte sur les centièmes (68 centièmes − 63 centièmes) : il reste 5 centièmes."
+   "explication": "La dernière étape porte sur les centièmes (68 centièmes − 63 centièmes) : il reste 5 centièmes.",
+   "documents": [
+    "liv7-p10"
+   ]
   },
   {
    "id": "ceb-2025-l7-q11",
@@ -3856,7 +4031,12 @@
      "- 4 301",
      "−4301",
      "−4 301",
-     "-4 301"
+     "− 4301",
+     "-4 301",
+     "– 4 301",
+     "–4301",
+     "–4 301",
+     "– 4301"
     ],
     [
      ": 42",
@@ -3881,11 +4061,11 @@
    "numero": "15",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Julien décompose : 238 : 7 = (210 : 7) + (28 : 7) = 34. Fais comme lui.",
+   "enonce": "Observe comment Julien a décomposé le nombre 238 pour trouver plus facilement la solution au calcul : 238 = 210 + 28, donc 238 : 7 = (210 : 7) + (28 : 7) = 30 + 4 = 34. Décompose les nombres suivants en imitant Julien.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "486 : 9 = ({1} : 9) + ({2} : 9) = 54  ·  438 : 6 = ({3} : 6) + ({4} : 6) = 73  ·  1,76 : 8 = ({5} : 8) + ({6} : 8) = 0,22",
+   "texte": "486 : 9 = ({1} : 9) + ({2} : 9) = 50 + 4 = 54  ·  438 : 6 = ({3} : 6) + ({4} : 6) = 70 + 3 = 73  ·  1,76 : 8 = ({5} : 8) + ({6} : 8) = 0,2 + 0,02 = 0,22",
    "reponse": [
     [
      "450"
@@ -4022,7 +4202,7 @@
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Il rejoue ce qu'on a fait et appris (il révise), il trie les informations : il garde celles qui sont utiles et élimine les autres."
+   "reponseModele": "Il trie les informations : il garde les informations utiles (pour le futur) et élimine les informations inutiles. Une de ces idées suffit."
   },
   {
    "id": "ceb-2025-l8-q2b",
@@ -4051,7 +4231,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Lilly dit : « Pour apprendre facilement une leçon, il faut la répéter de nombreuses fois. » D'après le texte, a-t-elle raison ? Coche « Lilly a raison » ou « Lilly a tort », puis justifie ta réponse à l'aide du texte.",
+   "enonce": "Lilly dit : « Pour apprendre facilement une leçon, il faut la répéter de nombreuses fois. » D'après le texte, a-t-elle raison ? Choisis « Lilly a raison » ou « Lilly a tort », puis justifie ta réponse à l'aide du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4066,24 +4246,15 @@
    "livret": 8,
    "numero": "4",
    "domaine": "fr.lire",
-   "type": "texte_court",
-   "enonce": "La mémoire a plusieurs utilités essentielles chez les animaux. Écris-en une (un verbe suffit).",
+   "type": "ouverte",
+   "enonce": "La mémoire a plusieurs utilités essentielles chez les animaux. Écris une utilité.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "memoire-4"
    ],
-   "reponse": [
-    "communiquer",
-    "se nourrir",
-    "mieux se nourrir",
-    "survivre",
-    "se protéger",
-    "se protéger des prédateurs",
-    "se protéger des animaux prédateurs",
-    "nourrir leurs petits"
-   ],
-   "explication": "« Elle sert à communiquer, à mieux se nourrir, à survivre ou à se protéger d'animaux prédateurs. »"
+   "explication": "« Elle sert à communiquer, à mieux se nourrir, à survivre ou à se protéger d'animaux prédateurs. »",
+   "reponseModele": "Une utilité parmi : communiquer ; mieux se nourrir ; survivre ; se protéger d'animaux prédateurs. Sont aussi acceptés : différencier des voix, identifier une menace, reconnaitre d'autres animaux, retrouver sa nourriture (points d'eau), apprendre aux autres, mémoriser des cachettes, se souvenir de ce qu'il reste dans chaque réserve, se souvenir s'il a été observé par un autre animal. Une réponse en trop qui est fausse fait perdre le point."
   },
   {
    "id": "ceb-2025-l8-q5",
@@ -4160,7 +4331,7 @@
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Pendant le sommeil, le cerveau rejoue et révise ce qu'on a appris ; il trie les informations, garde les utiles et élimine les autres."
+   "reponseModele": "Deux raisons parmi : le cerveau rejoue ce que tu as fait et appris lorsque tu étais éveillé ; il révise ; les (circuits de) neurones qui ont été activés sont réactivés ; il trie les informations ; il garde les informations utiles (pour le futur) ; il élimine les informations qui ne sont pas utiles."
   },
   {
    "id": "ceb-2025-l8-q9",
@@ -4183,9 +4354,9 @@
     "Dans la mémoire sémantique, les souvenirs sont très vite oubliés."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est VRAI ou FAUX"
    ],
    "reponse": [
     0,
@@ -4198,21 +4369,15 @@
    "livret": 8,
    "numero": "10",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "À quelle condition un geai déplace-t-il sa nourriture lorsqu'il a été observé par un autre geai ?",
+   "type": "ouverte",
+   "enonce": "À quelle condition un geai déplace-t-il sa nourriture lorsqu'il a été observé par un autre geai ? Écris cette condition.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "memoire-4"
    ],
-   "choix": [
-    "S'il a lui-même été voleur dans le passé.",
-    "Si la nourriture risque d'être avariée.",
-    "Si l'hiver approche.",
-    "Si l'autre geai est plus grand que lui."
-   ],
-   "reponse": 0,
-   "explication": "« Il ne le fera que s'il a lui-même été voleur dans le passé. »"
+   "explication": "« Il ne le fera que s'il a lui-même été voleur dans le passé. »",
+   "reponseModele": "S'il a (déjà) été voleur lui-même (dans le passé)."
   },
   {
    "id": "ceb-2025-l8-q11",
@@ -4236,7 +4401,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans quel bloc d'idées du texte pourrais-tu ajouter ces informations ?",
+   "enonce": "Voici deux informations qui ne se trouvent pas dans le texte. À quel endroit du texte (dans quel bloc d'idées) pourrais-tu les ajouter ?",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -4257,7 +4422,10 @@
     "Une mémoire de ton histoire"
    ],
    "reponse": [
-    1,
+    [
+     1,
+     3
+    ],
     3
    ],
    "explication": "Marcher est un geste devenu automatique (mémoire procédurale). Le gout est lié aux sens (mémoire perceptive)."
@@ -4287,7 +4455,7 @@
    "numero": "15",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Tu sais que l'ortie est une plante qui pique […] parce que tu en as fait l'expérience dans le passé. » Par quel mot peut-on remplacer « parce que » sans changer le sens ?",
+   "enonce": "Voici une phrase du texte : « Tu sais que l'ortie est une plante qui pique et qu'un tissu de soie est doux sur la peau parce que tu en as fait l'expérience dans le passé. » Par quel mot peut-on remplacer « parce que » sans changer le sens de la phrase ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -4343,7 +4511,7 @@
    "numero": "16",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« C'est une faculté essentielle de ton cerveau, au centre de ta vie. » Par quel mot peut-on remplacer « faculté » ?",
+   "enonce": "« Dans toutes ces situations, tu fais appel à ta mémoire. Tu t'en sers tous les jours, à chaque instant. C'est une faculté essentielle de ton cerveau, au centre de ta vie. » Par quel mot peut-on remplacer « faculté » sans changer le sens de la phrase ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -4413,11 +4581,11 @@
     "Les geais buissonniers appartiennent à la famille des corvidés."
    ],
    "colonnes": [
-    "A : Sujet – Verbe – CI du verbe",
-    "B : CC – Sujet – Verbe – CI du verbe",
-    "C : Sujet – Verbe – Attribut du sujet",
-    "D : Sujet – CD – Verbe – CI du verbe",
-    "E : CC – Sujet – Verbe – CD du verbe"
+    "A : (Groupe) Sujet – Verbe – Complément indirect du verbe",
+    "B : Complément circonstanciel (ou complément de phrase) – (Groupe) Sujet – Verbe – Complément indirect du verbe",
+    "C : (Groupe) Sujet – Verbe – Attribut du sujet",
+    "D : (Groupe) Sujet – Complément direct du verbe – Verbe – Complément indirect du verbe",
+    "E : Complément circonstanciel (ou complément de phrase) – (Groupe) Sujet – Verbe – Complément direct du verbe"
    ],
    "reponse": [
     2,
@@ -4488,12 +4656,12 @@
     "bonne-idee-3"
    ],
    "choix": [
-    "Histoires pour se distraire et réfléchir",
     "Conseils pour écrire des histoires",
     "Les métiers d'autrefois",
+    "Histoires pour se distraire et réfléchir",
     "Les grandes batailles d'autrefois"
    ],
-   "reponse": 0,
+   "reponse": 2,
    "explication": "Ce conte amuse et fait réfléchir au bonheur : il a sa place dans un recueil d'histoires."
   },
   {
@@ -4526,10 +4694,10 @@
     "bonne-idee-3"
    ],
    "choix": [
-    "Un roi commande un livre sur le bonheur pour sa fille au plus sage du royaume ; c'est un marchand de tissus qui remplira cette mission.",
-    "Un marchand doit rédiger un livre pour que la fille d'un roi trouve le bonheur ; il rencontre des personnes aux quatre coins du globe et remet lui-même le livre terminé au palais.",
-    "Un roi veut offrir à sa fille un livre sur le bonheur, écrit et corrigé par plusieurs personnes au cours d'un long voyage ; quand la princesse le reçoit, il ne contient plus qu'un seul conseil qu'elle appliquera.",
-    "Une princesse reçoit un livre sur le bonheur plein de ratures et de pages déchirées ; comme elle n'a lu aucun conseil, elle va se promener dans les jardins."
+    "C'est l'histoire d'un livre sur le bonheur commandé par un roi. Ce dernier souhaite l'offrir à sa fille et demande au plus sage du royaume de s'en charger. C'est un marchand de tissus qui remplira cette mission.",
+    "C'est l'histoire d'un marchand qui doit rédiger un livre pour que la fille d'un roi trouve le bonheur. Pour avoir de bonnes idées, il décide de rencontrer des personnes aux quatre coins du globe. Il parvient ainsi à remettre le livre terminé au palais.",
+    "C'est l'histoire d'un roi qui veut offrir à sa fille un livre sur le bonheur. Celui-ci est écrit et corrigé par plusieurs personnes au cours d'un long voyage. Finalement, lorsque le livre est remis à la princesse, il ne contient plus qu'un seul conseil qu'elle appliquera.",
+    "C'est l'histoire d'une princesse qui attend un livre sur le bonheur. Lorsqu'elle reçoit le manuscrit, elle constate qu'il ne contient que des ratures et des pages déchirées. Comme elle n'a pas lu de conseils, elle décide alors de se promener dans les jardins du palais."
    ],
    "reponse": 2,
    "explication": "Le marchand n'est pas sage et ne remet pas le livre lui-même ; la princesse lit bien quelques lignes. Le 3e résumé suit toute l'histoire."
@@ -4581,7 +4749,7 @@
     "bonne-idee-2",
     "bonne-idee-3"
    ],
-   "texte": "Avant la naissance de sa fille, le roi passait son temps à {1}.  ·  Celui qui dépose finalement le livre au palais est le {2}.",
+   "texte": "Avant la naissance de sa fille, quelle était l'occupation principale du roi ? {1}  ·  Qui dépose finalement le livre au palais ? {2}",
    "reponse": [
     [
      "faire la guerre",
@@ -4604,7 +4772,7 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Qu'éprouve le marchand quand le roi lui annonce un châtiment terrible en cas d'échec ?",
+   "enonce": "Qu'éprouve le marchand quand le roi lui annonce ce qui lui arrivera en cas d'échec de la mission ? Le marchand éprouve…",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4626,7 +4794,7 @@
    "numero": "7 (justification)",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Qu'éprouve le marchand quand le roi lui annonce un châtiment terrible en cas d'échec ? ». Justifie ta réponse : recopie la phrase du texte qui le prouve.",
+   "enonce": "Tu as répondu à la question « Qu'éprouve le marchand quand le roi lui annonce ce qui lui arrivera en cas d'échec de la mission ? ». Écris un élément du texte qui l'indique.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4705,7 +4873,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Selon l'auteur, pour trouver le bonheur, il faut…",
+   "enonce": "Voici quatre conseils pour être heureux. Choisis celui qui correspond le mieux à la morale de l'histoire. Selon l'auteur, pour trouver le bonheur, il faut…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4796,9 +4964,9 @@
     "Le roi prend connaissance du livre avant de le remettre à la princesse."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est VRAI ou FAUX"
    ],
    "reponse": [
     2,
@@ -4822,7 +4990,7 @@
     "bonne-idee-2",
     "bonne-idee-3"
    ],
-   "reponseModele": "Parce que l'aviatrice, le navigateur puis le charretier ont raturé ou arraché tous les passages qui ne leur plaisaient pas."
+   "reponseModele": "Plusieurs personnes (l'aviatrice, le navigateur, le charretier) ont supprimé les parties du livre qui ne leur convenaient pas ; ou : des pages ont été barrées, raturées, déchirées ; ou : il ne reste plus que quelques conseils. Accepté aussi : il faut peu de choses pour trouver le bonheur."
   },
   {
    "id": "ceb-2025-l9-q17a",
@@ -4866,7 +5034,7 @@
    "numero": "18",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "« — Oui… Je n'avais que ces quelques lignes à lire […]. Alors, comme le soleil jouait dehors avec les fleurs des cerisiers, elle décida d'aller se promener dans les jardins du palais. » Quel mot (organisateur textuel) relie les deux parties de cet extrait ?",
+   "enonce": "« — Oui… Je n'avais que ces quelques lignes à lire : Apprends à accueillir avec autant de sérénité les moments de rires et de larmes. Ton cœur sait déjà tout ce qui te rendra heureuse. Alors, comme le soleil jouait dehors avec les fleurs des cerisiers, elle décida d'aller se promener dans les jardins du palais. » Écris le mot (l'organisateur textuel) utilisé pour relier les deux parties de cet extrait.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -4900,7 +5068,7 @@
    "numero": "20",
    "domaine": "fr.vocabulaire",
    "type": "texte_court",
-   "enonce": "« Excellent stratagème pour s'évaporer quelque part dans un pays lointain ! » Écris un mot qui a le même sens que « stratagème ».",
+   "enonce": "« Il affirma que pour trouver la réponse à une telle requête, il lui faudrait voyager aux quatre coins du globe pour rencontrer les sages du monde entier. Excellent stratagème pour s'évaporer quelque part dans un pays lointain ! » Écris un mot qui a le même sens que « stratagème ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -4911,13 +5079,19 @@
     "une astuce",
     "plan",
     "un plan",
+    "moyen",
+    "un moyen",
+    "idée",
+    "une idée",
     "subterfuge",
     "tactique",
     "manœuvre",
     "manoeuvre",
     "stratégie",
+    "une stratégie",
     "combine",
     "truc",
+    "un truc",
     "piège",
     "feinte"
    ],
@@ -4929,15 +5103,15 @@
    "numero": "21",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« J'aimerais parfois que tu ailles plus vite, mais au fond la lenteur est dans ta nature. Alors, je prends le temps d'observer […] » Ici, « alors » sert à…",
+   "enonce": "« J'aimerais parfois que tu ailles plus vite, mais au fond la lenteur est dans ta nature. Alors, je prends le temps d'observer, de sentir ce qui se trouve autour de moi […] » Dans cet extrait, le mot « alors » est utilisé pour…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
    "choix": [
-    "renforcer un choix (Il ne se rend pas compte du danger ou alors il est fou.)",
-    "annoncer un moment dans le temps (Je n'étais alors qu'une toute petite fille.)",
-    "renforcer une interrogation (Et alors ? Qu'est-ce ça peut te faire ?)",
-    "annoncer une conséquence (J'aime le poisson, alors j'en mange.)"
+    "renforcer un choix (exemple : Il ne se rend pas compte du danger ou alors il est fou.)",
+    "annoncer un moment dans le temps (exemple : Je n'étais alors qu'une toute petite fille.)",
+    "renforcer une interrogation (exemple : J'ai plus de bonbons que toi. Et alors ? Qu'est-ce ça peut te faire ?)",
+    "annoncer une conséquence (exemple : J'aime le poisson, alors j'en mange.)"
    ],
    "reponse": 3,
    "explication": "L'âne est lent, donc le charretier prend son temps : c'est une conséquence."
@@ -5021,7 +5195,8 @@
      "cheminer",
      "acheminer",
      "cheminot",
-     "chemins"
+     "chemins",
+     "cheminée"
     ],
     [
      "dent",
@@ -5031,7 +5206,11 @@
      "édenter",
      "dents",
      "dentier",
-     "denture"
+     "denture",
+     "denté",
+     "dentifrice",
+     "dentelé",
+     "dentelée"
     ]
    ],
    "explication": "Cheminement vient de « chemin » ; édenté vient de « dent » (sans dents)."
@@ -5108,11 +5287,11 @@
    "numero": "1b",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Sur une photo, on a bandé les yeux d'un enfant et on pose sa main sur les poils d'une brosse.",
+   "enonce": "Observe la photo. Réponds aux questions suivantes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
-   "texte": "On l'a privé du sens de la {1}.  ·  On stimule le sens du {2}.",
+   "texte": "De quel sens a-t-on privé cet enfant ? Le sens de la {1}.  ·  Quel sens a-t-on stimulé en plaçant la main de l'enfant en contact avec les poils de la brosse ? Le sens du {2}.",
    "reponse": [
     [
      "vue"
@@ -5121,7 +5300,10 @@
      "toucher"
     ]
    ],
-   "explication": "Les yeux bandés : il ne peut plus voir (la vue). La main sur la brosse : le toucher."
+   "explication": "Les yeux bandés : il ne peut plus voir (la vue). La main sur la brosse : le toucher.",
+   "documents": [
+    "liv10-p03"
+   ]
   },
   {
    "id": "ceb-2025-l10-q2a",
@@ -5129,7 +5311,7 @@
    "numero": "2a",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Le cycle de vie de la poule. Observe les trois schémas simplifiés du livret (page 4). Coche le schéma qui lui correspond.",
+   "enonce": "Le cycle de vie de la poule. Observe les trois schémas simplifiés du livret (page 4). Choisis le schéma qui lui correspond.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-reproduction",
@@ -5151,7 +5333,7 @@
    "numero": "2b",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Qui a raison ? Emma : « Tous les œufs de la poule donnent des poussins si elle est accompagnée d'un coq. » Lucas : « La poule est fécondée par un coq et, après 21 jours, elle pond un œuf qui contient un poussin. » Élise : « Pour qu'un œuf donne un poussin, il faut que la poule soit fécondée par un coq et qu'elle couve l'œuf durant 21 jours. »",
+   "enonce": "Lis ce qu'affirment ces trois élèves. Emma : « Tous les œufs de la poule vont donner des poussins lorsqu'elle est accompagnée d'un coq. » Lucas : « Pour avoir un poussin, il faut que la poule soit fécondée par un coq et, après 21 jours, elle pond un œuf qui contient un poussin. » Élise : « Pour qu'un œuf donne un poussin, il faut que la poule soit fécondée par un coq et qu'elle couve l'œuf durant 21 jours. » Choisis le prénom de l'élève qui a raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-reproduction",
@@ -5187,7 +5369,7 @@
    "numero": "2d",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Observe le schéma du livret (page 6). Il représente le cycle de vie du geai des chênes. Coche la proposition correcte pour chaque étiquette.",
+   "enonce": "Observe le schéma du livret (page 6). Il représente le cycle de vie du geai des chênes. Choisis la proposition correcte pour chaque étiquette.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-reproduction",
@@ -5246,11 +5428,12 @@
    "numero": "3a",
    "domaine": "sc.energie",
    "type": "ouverte",
-   "enonce": "Des élèves soulèvent une charge avec 1, 2 puis 4 portions de corde (poulies) et mesurent la force avec un pèse-bagage. Quelle question se posent-ils ?",
+   "enonce": "Des élèves souhaitent répondre à une question en réalisant les expériences 1 à 3. Écris la question.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "poulies-1",
+    "poulies-2",
     "poulies-3",
     "poulies-4"
    ],
@@ -5262,13 +5445,17 @@
    "numero": "3b",
    "domaine": "sc.energie",
    "type": "trous",
-   "enonce": "D'après les expériences, quelle force de traction faut-il pour soulever une charge de 60 kg ?",
+   "enonce": "Observe les trois montages (livret, page 8). Complète les étiquettes en tenant compte des expériences 1 à 3.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
-    "poulies-4"
+    "poulies-1",
+    "poulies-2",
+    "poulies-3",
+    "poulies-4",
+    "liv10-p08"
    ],
-   "texte": "Avec 1 portion de corde : {1} kg  ·  avec 2 portions : {2} kg  ·  avec 4 portions : {3} kg",
+   "texte": "Montage en haut à gauche : {1} kg  ·  montage en haut à droite : {2} kg  ·  montage du bas : {3} kg",
    "reponse": [
     [
      "60"
@@ -5402,7 +5589,7 @@
    "numero": "5a",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Élément 1 : un saïga (se déplace, se reproduit, se nourrit, pousse des cris, meurt, dort, respire). Élément 2 : une améthyste (aucune de ces caractéristiques). Élément 3 : un rhododendron (se reproduit, se nourrit, meurt, respire). Coche le ou les éléments vivants.",
+   "enonce": "Des élèves lisent le tableau suivant dans un manuel scolaire. Ce tableau présente trois éléments aux noms peu connus et certaines de leurs caractéristiques. Élément 1 : un saïga ; élément 2 : une améthyste ; élément 3 : un rhododendron. Se déplace : élément 1. Se reproduit : éléments 1 et 3. Parle : aucun. Se nourrit : éléments 1 et 3. Pousse des cris : élément 1. Meurt : éléments 1 et 3. Vole : aucun. Dort : élément 1. Respire : éléments 1 et 3. En t'aidant des informations du tableau, choisis le ou les éléments vivants.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5423,7 +5610,7 @@
    "numero": "5b",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Coche les deux mots qui ne se rapportent pas à tous les êtres vivants.",
+   "enonce": "Choisis les deux mots qui ne se rapportent pas à tous les êtres vivants.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5450,7 +5637,7 @@
    "numero": "6a",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Un générateur produit le courant électrique, un récepteur l'utilise. Classe les éléments photographiés.",
+   "enonce": "Un circuit électrique est une boucle composée de plusieurs éléments : un générateur électrique qui produit un courant électrique ; un récepteur électrique qui utilise ce courant électrique ; des câbles de connexion qui relient le générateur au récepteur. Classe les éléments photographiés.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
@@ -5458,9 +5645,9 @@
     "electricite"
    ],
    "lignes": [
-    "Photo 1 : un train électrique",
-    "Photo 2 : la centrale gaz-vapeur de Seraing",
-    "Photo 3 : des panneaux solaires sur une maison"
+    "Photo 1",
+    "Photo 2 (centrale gaz-vapeur de Seraing)",
+    "Photo 3"
    ],
    "colonnes": [
     "Générateur",
@@ -5501,7 +5688,7 @@
    "numero": "7a",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Bulletin météo : « Demain matin, de larges bancs de brouillard se formeront dans la région namuroise. La région de Bastogne connaitra de fortes chutes de neige. » De quelles étapes du cycle de l'eau parle-t-on ?",
+   "enonce": "Lis cet extrait de bulletin météo : « Demain matin, de larges bancs de brouillard se formeront dans la région namuroise. La région de Bastogne, quant à elle, connaitra de fortes chutes de neige durant toute la journée. » Voici le nom de différentes étapes du cycle de l'eau dans la nature. Choisis les deux étapes dont il est question dans l'extrait de bulletin météo.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -5549,7 +5736,7 @@
    "numero": "7c",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Observe attentivement l'étape finale d'une expérience (livret, page 17). Coche les trois questions que l'on peut se poser en rapport avec cette expérience.",
+   "enonce": "Observe attentivement l'étape finale d'une expérience (livret, page 17). Choisis les trois questions que l'on peut se poser en rapport avec cette expérience.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5603,7 +5790,7 @@
    "numero": "8",
    "domaine": "sc.matiere",
    "type": "ordre",
-   "enonce": "Expérience avec de l'eau, de l'huile d'olive et du sel. Remets les étapes dans l'ordre.",
+   "enonce": "Voici le matériel nécessaire pour réaliser une expérience concernant les mélanges : un récipient vide, une cuillère, de l'eau à température ambiante, de l'huile d'olive à température ambiante, du sel. Remets les étapes de cette expérience dans l'ordre chronologique.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-melanges",
@@ -5629,13 +5816,13 @@
    "numero": "9a",
    "domaine": "sc.energie",
    "type": "ouverte",
-   "enonce": "Des élèves lâchent un ballon gonflé le long d'une corde (paille) et mesurent la distance parcourue. Quelle question se posent-ils ?",
+   "enonce": "Des élèves souhaitent répondre à une question en réalisant cette expérience. Écris la question.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "ballons-1",
     "ballons-2",
-    "ballons-4"
+    "ballons-3"
    ],
    "reponseModele": "Quels éléments (quantité d'air, diamètre de la corde, lubrifiant) font varier la distance parcourue par le ballon ?"
   },
@@ -5757,21 +5944,42 @@
    "livret": 10,
    "numero": "9g",
    "domaine": "sc.energie",
-   "type": "qcm",
-   "enonce": "Avec lubrifiant (tableau 2), dans quelles conditions le ballon parcourt-il la plus grande distance ?",
+   "type": "grille",
+   "enonce": "Observe le graphique des résultats avec lubrifiant (livret, page 22). Choisis les propositions correctes.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
-    "ballons-4"
+    "liv10-p22"
    ],
-   "choix": [
-    "5,2 l d'air et la corde de 4 mm",
-    "20,8 l d'air et la corde de 4 mm",
-    "20,8 l d'air et la corde de 1 mm",
-    "5,2 l d'air et la corde de 1 mm"
+   "reponse": [
+    3,
+    0
    ],
-   "reponse": 2,
-   "explication": "La plus grande distance (1 305 mm) est obtenue avec le plus d'air (20,8 l) et la corde la plus fine (1 mm)."
+   "explication": "La plus grande distance (1 305 mm) est obtenue avec le plus d'air (20,8 l) et la corde la plus fine (1 mm).",
+   "lignes": [
+    "Le ballon parcourt la plus grande distance lorsqu'on y injecte…",
+    "… et que l'on utilise la corde de…"
+   ],
+   "colonnes": [
+    "5,2 l d'air",
+    "10,4 l d'air",
+    "15,6 l d'air",
+    "20,8 l d'air"
+   ],
+   "colonnesParLigne": [
+    [
+     "5,2 l d'air",
+     "10,4 l d'air",
+     "15,6 l d'air",
+     "20,8 l d'air"
+    ],
+    [
+     "1 mm de diamètre",
+     "2 mm de diamètre",
+     "3 mm de diamètre",
+     "4 mm de diamètre"
+    ]
+   ]
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2025), comparé question par question le 21/10/2026."
