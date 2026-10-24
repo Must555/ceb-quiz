@@ -68,3 +68,16 @@ test('« remettre dans l\'ordre » : la question ne s\'affiche jamais déjà dan
     assert.deepEqual(vue.reponse.map((i) => vue.elements[i]), q.reponse.map((i) => q.elements[i]), q.id);
   }
 });
+
+test('qcm_multi : propositions tolérées par le corrigé (aussiAcceptes, nbAChoisir)', async () => {
+  const { corriger } = await import('../js/engine/index.js');
+  const q = { type: 'qcm_multi', choix: ['a', 'b', 'c', 'd', 'e'], reponse: [0, 2, 3], aussiAcceptes: [1], nbAChoisir: 3, points: 1 };
+  assert.ok(corriger(q, [0, 2, 3]).correct);
+  assert.ok(corriger(q, [0, 1, 2]).correct);
+  assert.ok(corriger(q, [0, 1, 2, 3]).correct);
+  assert.ok(!corriger(q, [0, 2, 4]).correct);
+  assert.ok(!corriger(q, [1, 2]).correct);
+  const sans = { ...q, nbAChoisir: undefined };
+  assert.ok(corriger(sans, [0, 1, 2, 3]).correct);
+  assert.ok(!corriger(sans, [0, 1, 2]).correct);
+});

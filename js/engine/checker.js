@@ -60,8 +60,12 @@ export function corriger(question, reponseEleve) {
     case 'qcm_multi': {
       // aussiAcceptes : propositions que le corrigé officiel tolère (ni exigées ni pénalisées).
       const tolerees = (question.aussiAcceptes ?? []).filter((i) => !question.reponse.includes(i));
-      const choisis = [...new Set(reponseEleve.map(Number))].filter((i) => !tolerees.includes(i));
-      const ok = memeEnsemble(choisis, question.reponse);
+      const tous = [...new Set(reponseEleve.map(Number))];
+      const choisis = tous.filter((i) => !tolerees.includes(i));
+      // nbAChoisir (« Choisis trois… ») : n'importe quel choix de ce nombre parmi les bonnes et les tolérées est juste.
+      const nb = question.nbAChoisir;
+      const ok = memeEnsemble(choisis, question.reponse)
+        || (nb != null && tous.length === nb && tous.every((i) => question.reponse.includes(i) || tolerees.includes(i)));
       if (ok) return { correct: true, score: max, max };
       // parProposition : chaque proposition compte, qu'elle doive être cochée ou laissée (« 5 x ½ pt »).
       if (question.parProposition) {
