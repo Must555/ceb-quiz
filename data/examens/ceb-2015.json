@@ -704,7 +704,7 @@
     "Informer"
    ],
    "reponse": 0,
-   "explication": "C'est une histoire amusante."
+   "explication": "C'est une histoire inventée et drôle, racontée pour amuser : la petite sœur qui zozote (« Hein Zean-Zacques… ») et des parents ordonnés à l'excès. Le texte ne donne pas d'informations à apprendre (informer), ne cherche pas à convaincre (persuader) et ne donne pas d'ordres (enjoindre)."
   },
   {
    "id": "ceb-2015-l1-q2",
@@ -726,7 +726,7 @@
     "Un autre personnage de l'histoire."
    ],
    "reponse": 1,
-   "explication": "« Hein Zean-Zacques… » : le narrateur est Jean-Jacques."
+   "explication": "Celui qui raconte dit « je » et fait partie de l'histoire : « Avec des parents pareils, pas étonnant que je sois comme je suis ». Sa petite sœur s'adresse à lui en l'appelant « Hein Zean-Zacques… » : le narrateur est donc Jean-Jacques."
   },
   {
    "id": "ceb-2015-l1-q3",
@@ -748,7 +748,7 @@
     "Jean-Jacques aime être malade ou blessé durant les vacances."
    ],
    "reponse": 1,
-   "explication": "Même ses maladies sont « bien rangées » : jamais pendant l'école !"
+   "explication": "Jean-Jacques est si ordonné que même ses maladies et ses blessures arrivent au « bon » moment : pendant les congés, jamais pendant l'école. C'est pour cela qu'il ne connait pas « les mots d'excuse pour arrivée tardive ou pour devoir non fait »."
   },
   {
    "id": "ceb-2015-l1-q4",
@@ -788,7 +788,7 @@
      "hiver"
     ]
    ],
-   "explication": "Papa à gauche, maman à droite ; été à gauche, hiver à droite dans chaque partie. (Le corrigé officiel ne reproduit pas la grille de cette question.)",
+   "explication": "Le texte dit : « Papa range ses vêtements dans la partie gauche de la garde-robe : à gauche […] ses vêtements d'été, et à droite, ses vêtements d'hiver. » Maman utilise la partie droite et range « comme ceux de papa » : l'été à gauche, l'hiver à droite.",
    "groupes": [
     [
      0,
@@ -822,7 +822,7 @@
     "Elle range les choses des membres de la famille autrement."
    ],
    "reponse": 3,
-   "explication": "« Elle a un ordre et une méthode bien à elle. »"
+   "explication": "La petite sœur range bien les choses, mais pas comme les autres : « elle a un ordre et une méthode bien à elle ». Elle classe les vêtements par couleur, les livres par ordre alphabétique, les CD selon qu'on les écoute souvent ou jamais. Elle ne dérange donc pas tout et elle ne range pas « ailleurs »."
   },
   {
    "id": "ceb-2015-l1-q6",
@@ -842,7 +842,7 @@
     "dans l'ordre alphabétique",
     "ordre alphabétique"
    ],
-   "explication": "« rangés par ordre alphabétique »."
+   "explication": "Jean-Jacques raconte : « j'ai retrouvé mes livres, que je classe par sujets, rangés par ordre alphabétique. Ma petite sœur venait d'apprendre l'ordre alphabétique. »"
   },
   {
    "id": "ceb-2015-l1-q7",
@@ -857,7 +857,8 @@
    "documents": [
     "ecoute"
    ],
-   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes."
+   "reponseModele": "Qu'on peut ranger les mêmes choses de plusieurs manières différentes.",
+   "explication": "Une bonne réponse dit qu'on peut ranger les mêmes objets de plusieurs manières différentes. L'histoire le montre trois fois : les vêtements rangés par couleur, les livres par ordre alphabétique et les CD selon qu'on les écoute souvent ou jamais."
   },
   {
    "id": "ceb-2015-l1-q9",
@@ -872,7 +873,7 @@
    "documents": [
     "ecoute"
    ],
-   "explication": "Rien de magique : une petite sœur peut vraiment ranger ainsi.",
+   "explication": "Les deux réponses sont possibles si tu les justifies. Vraisemblable : rien de magique, une petite sœur peut vraiment ranger ainsi et une dispute entre frère et sœur peut arriver dans une vraie famille. Invraisemblable : il faut une preuve du texte, par exemple qu'on ne peut pas choisir quand on tombe malade.",
    "reponseModele": "Les deux réponses sont acceptées avec une justification. Vraisemblable : une dispute entre frère et sœur, cela peut arriver dans une vraie famille. Invraisemblable : avec une justification tirée du texte qui montre que c'est impossible."
   },
   {
@@ -889,7 +890,7 @@
     "ecoute"
    ],
    "reponseModele": "Ton résumé doit dire deux choses (1 point chacune). 1) La situation habituelle : les parents et Jean-Jacques sont très ordonnés, chacun range ses affaires à sa manière. 2) Le problème provoqué : la petite sœur modifie leurs rangements (elle range les choses autrement). Exemple : « C'est l'histoire d'une petite fille dont les parents et le frère sont très ordonnés. Mais la fille modifie leurs rangements. » Il faut que ces deux idées soient dans tes deux ou trois phrases.",
-   "explication": "Un bon résumé dit comment c'est d'habitude, puis ce qui dérange l'habitude."
+   "explication": "Un résumé garde seulement l'essentiel, en deux ou trois phrases. Il doit contenir deux idées : d'abord la situation habituelle (les parents et Jean-Jacques sont très ordonnés), puis le problème (la petite sœur change leurs rangements à sa façon). Les détails, comme les couleurs ou les CD, ne sont pas nécessaires."
   },
   {
    "id": "ceb-2015-l1-q10",
@@ -905,7 +906,7 @@
     "ecoute"
    ],
    "reponseModele": "Il faut ranger absolument la MÊME collection d'objets de deux manières différentes : premier rangement (1 point) et deuxième rangement (1 point). Si les objets ne sont pas les mêmes dans les deux rangements, c'est 0. Exemple : « Je choisis de ranger des figures géométriques. Première manière : par nombre de côtés (les triangles, puis les carrés…). Deuxième manière : par couleur (les rouges, puis les bleues…). »",
-   "explication": "C'est l'idée de l'histoire : les mêmes choses peuvent être rangées de plusieurs façons."
+   "explication": "Il faut garder exactement les mêmes objets et les ranger de deux façons différentes, comme la petite sœur avec les vêtements de ses parents. Par exemple, des figures géométriques : d'abord selon leur nombre de côtés, puis selon leur couleur. Si les objets changent d'un rangement à l'autre, la réponse ne convient pas."
   },
   {
    "id": "ceb-2015-l2-q1",
@@ -916,7 +917,8 @@
    "enonce": "Jean-Jacques range à son tour les affaires de sa petite sœur d'une autre manière pour lui faire comprendre qu'on peut ranger autrement. Raconte (avec au moins deux répliques de dialogue) : comment elle range, comment il range, comment elle réagit, ce qu'elle doit comprendre.",
    "points": 50,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un bon texte est raconté par Jean-Jacques, en « je ». Il dit comment la petite sœur range ses affaires, comment Jean-Jacques les range autrement, comment elle réagit et ce qu'elle doit comprendre à la fin. Il contient au moins deux répliques de dialogue bien ponctuées, des mots variés, des liens entre les phrases et des verbes au bon temps."
   },
   {
    "id": "ceb-2015-l3-q10a",
@@ -934,7 +936,7 @@
     "jamais un carré."
    ],
    "reponse": 1,
-   "explication": "C'est un losange, qui est un carré seulement si ses angles sont droits."
+   "explication": "Un quadrilatère qui a 4 côtés isométriques est un losange. Il devient un carré seulement s'il a aussi 4 angles droits. Certains losanges sont des carrés, d'autres non : c'est donc « parfois » un carré, pas « toujours » ni « jamais »."
   },
   {
    "id": "ceb-2015-l3-q10b",
@@ -952,7 +954,7 @@
     "jamais un losange."
    ],
    "reponse": 1,
-   "explication": "C'est un parallélogramme ; il est un losange si ses côtés sont isométriques."
+   "explication": "Un quadrilatère qui a 2 paires de côtés parallèles est un parallélogramme. C'est un losange seulement si ses 4 côtés ont la même longueur. Un rectangle allongé, par exemple, a 2 paires de côtés parallèles mais n'est pas un losange : c'est donc « parfois »."
   },
   {
    "id": "ceb-2015-l3-q1",
@@ -960,10 +962,11 @@
    "numero": "1",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un triangle équilatéral, un trapèze isocèle, un carré.",
+   "enonce": "En utilisant avec précision les instruments qui conviennent : a) trace un triangle équilatéral ; le segment [AB] est un de ses côtés. b) Trace un trapèze isocèle ; voici sa hauteur h. c) Trace un carré ; le segment [EF] est une de ses médianes.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Les 3 côtés mesurent comme [AB] : avec le compas ouvert de la longueur AB, trace un arc depuis A puis depuis B ; leur croisement est le 3e sommet. b) Les 2 bases sont parallèles, perpendiculaires à la hauteur, et les 2 autres côtés ont la même longueur. c) Une médiane relie les milieux de 2 côtés opposés : elle a la longueur du côté, et E et F sont les milieux de 2 côtés."
   },
   {
    "id": "ceb-2015-l3-q2",
@@ -971,10 +974,11 @@
    "numero": "2",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Diagonales et cercle dans un rectangle.",
+   "enonce": "Dans le rectangle ABCD du livret : trace les diagonales [AD] et [BC] ; place O, le point d'intersection des diagonales [AD] et [BC] ; trace le cercle de centre O et de rayon [OB].",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les diagonales d'un rectangle ont la même longueur et se coupent en leur milieu O. Donc O est à la même distance des 4 sommets : le cercle de centre O et de rayon [OB] passe par les 4 sommets du rectangle."
   },
   {
    "id": "ceb-2015-l3-q3",
@@ -982,10 +986,11 @@
    "numero": "3",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Construis le rectangle de 4 cm sur 9 cm.",
+   "enonce": "Le rectangle du livret est tracé à main levée : un côté mesure 4 cm et la diagonale mesure 9 cm. Avec tes instruments, construis ce rectangle en respectant les indications de mesure.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Attention, 9 cm est la longueur de la diagonale, pas d'un côté. Trace le côté de 4 cm, puis une perpendiculaire à une de ses extrémités. Depuis l'autre extrémité, ouvre le compas à 9 cm : l'arc coupe la perpendiculaire au 3e sommet. Termine le rectangle avec l'équerre."
   },
   {
    "id": "ceb-2015-l3-q4",
@@ -1012,7 +1017,7 @@
      "2"
     ]
    ],
-   "explication": "Le cercle (figure 7) n'est pas un polygone ; la figure 9 a six côtés (hexagone) ; la figure 2, avec ses cinq côtés et ses cinq angles égaux, est un polygone régulier (pentagone)."
+   "explication": "La figure 7 est un cercle : un polygone est fermé par des segments de droite, pas par une ligne courbe. La figure 9 a 6 côtés : c'est un hexagone. La figure 2 a 5 côtés de même longueur et 5 angles de même amplitude : c'est un polygone régulier (un pentagone régulier)."
   },
   {
    "id": "ceb-2015-l3-q4b",
@@ -1041,7 +1046,7 @@
     0,
     0
    ],
-   "explication": "La figure 5 a quatre côtés ; la figure 3 est symétrique par rapport à une de ses diagonales ; un pentagone a cinq diagonales."
+   "explication": "Vrai : la figure 5 a 4 côtés, c'est donc un quadrilatère, même si elle est creusée. Vrai : la figure 3 se plie en deux parties superposables le long d'une de ses diagonales. Vrai : de chaque sommet du pentagone partent 2 diagonales, 5 × 2 = 10, et chaque diagonale est comptée deux fois : 10 : 2 = 5."
   },
   {
    "id": "ceb-2015-l3-q5",
@@ -1096,7 +1101,7 @@
      3
     ]
    ],
-   "explication": "Figures 1 et 6 : 4 angles droits ; figure 5 : seulement 2 angles droits ; figures 2, 3 et 4 : aucun angle droit. Côtés : figures 1, 3, 4 et 6 : 2 paires de côtés de même longueur ; figure 2 : seulement 2 côtés ; figure 5 : aucun côté de même longueur.",
+   "explication": "Les mêmes petits traits indiquent des côtés de même longueur ; les angles droits se vérifient avec l'équerre. Figure 1 : rectangle, 4 angles droits, 2 paires de côtés. Figure 2 : aucun angle droit, 2 côtés égaux. Figure 3 : aucun angle droit, 2 paires. Figure 4 : losange, aucun angle droit, 4 côtés égaux (2 paires accepté). Figure 5 : 2 angles droits, aucun côté égal. Figure 6 : carré, 4 angles droits, 4 côtés égaux (2 paires accepté).",
    "colonnesParLigne": [
     [
      "Aucun angle droit",
@@ -1219,7 +1224,7 @@
     "Le segment [AB] se confondra avec le segment [AE]"
    ],
    "reponse": 3,
-   "explication": "En repliant, B vient rejoindre F : le segment [AB] se confond avec [AF]."
+   "explication": "Quand on replie les trois triangles des coins, les sommets F, B et D se rejoignent au sommet du tétraèdre. Le segment [AB] (triangle de droite) et le segment [AF] (triangle de gauche) partent tous les deux de A et vont vers ce même sommet : ils se collent pour former une seule arête."
   },
   {
    "id": "ceb-2015-l3-q7",
@@ -1250,7 +1255,7 @@
     0,
     1
    ],
-   "explication": "[KG] est un demi-côté du petit carré et [DK] une demi-diagonale du grand : pas isométriques. F est le milieu de [KC] et [AC] est une diagonale. [CF] est un rayon, pas un diamètre."
+   "explication": "[KG] est un côté du petit carré, donc la moitié du côté du grand carré ; [DK] est la moitié d'une diagonale du grand carré, plus longue : ils ne sont pas isométriques. Les petits traits montrent que F est au milieu de [KC]. [AC] relie deux sommets opposés : c'est une diagonale. F est le centre du petit cercle et C est sur ce cercle : [CF] est un rayon, pas un diamètre."
   },
   {
    "id": "ceb-2015-l3-q8",
@@ -1258,10 +1263,11 @@
    "numero": "8",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace la figure déplacée dans le quadrillage.",
+   "enonce": "Trace, à l'aide de ta latte, la figure grisée dans le quadrillage du bas en respectant le déplacement effectué. Colorie en bleu la figure obtenue.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les repères montrent le déplacement : la croix passe de C3 à E4 et le rond barré de E5 à G6, soit 2 cases vers la droite et 1 case vers le bas. Chaque sommet de la figure doit glisser exactement de la même façon : la figure garde sa forme, sa taille et son orientation."
   },
   {
    "id": "ceb-2015-l3-q9",
@@ -1288,7 +1294,7 @@
      "12"
     ]
    ],
-   "explication": "Le développement comprend 6 faces (2 carrés et 4 trapèzes) : le solide a 6 faces, 8 sommets et 12 arêtes."
+   "explication": "Le développement contient 6 faces : un petit carré, un grand carré et 4 trapèzes. Une fois monté, le petit carré est en haut et le grand en bas : 4 sommets en haut + 4 en bas = 8 sommets. Les arêtes : 4 autour du petit carré, 4 autour du grand et 4 sur les côtés, soit 12 arêtes."
   },
   {
    "id": "ceb-2015-l3-q11",
@@ -1296,10 +1302,11 @@
    "numero": "11",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Repasse un trapèze rectangle et un trapèze isocèle.",
+   "enonce": "Repasse, à la latte et en rouge, les traits pour faire apparaitre la figure demandée : a) un trapèze rectangle ; b) un trapèze isocèle.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un trapèze a une paire de côtés parallèles. a) Un trapèze rectangle a en plus 2 angles droits : un des côtés non parallèles est perpendiculaire aux bases. b) Un trapèze isocèle a ses 2 côtés non parallèles de même longueur : il a un axe de symétrie qui passe par le milieu des deux bases."
   },
   {
    "id": "ceb-2015-l3-q12",
@@ -1334,7 +1341,7 @@
     0,
     1
    ],
-   "explication": "Avec 2 triangles et 3 rectangles, on construit un prisme droit à base triangulaire. Il n'y a pas assez de carrés pour un cube, ni de triangles pour une pyramide, et le cône et le cylindre demandent des surfaces courbes."
+   "explication": "Les 2 triangles et les 3 rectangles forment un prisme droit à base triangulaire : 2 triangles pour les bases et 3 rectangles pour les faces latérales. Le cube demande 6 carrés (il n'y en a que 4), la pyramide à base carrée 4 triangles (il n'y en a que 2) et le parallélépipède rectangle 6 faces rectangulaires bien assorties. Le cône et le cylindre ont une surface courbe, et le cylindre demande 2 disques."
   },
   {
    "id": "ceb-2015-l3-q13",
@@ -1342,10 +1349,11 @@
    "numero": "13",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Assemble les triangles en quadrilatères.",
+   "enonce": "Découpe les 6 triangles (livret, page 21). Assemble ces triangles deux à deux de manière à obtenir 3 quadrilatères non superposables. Colle ces quadrilatères dans le tableau, à la place qui convient : « quadrilatère(s) avec axe(s) de symétrie » ou « quadrilatère(s) sans axe de symétrie ».",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "En collant deux triangles identiques par un même côté, on obtient soit un cerf-volant, qui a un axe de symétrie (le côté commun), soit un parallélogramme, qui n'a pas d'axe de symétrie. Pour vérifier, imagine qu'on plie la figure : s'il existe un pli où les deux moitiés se superposent exactement, il y a un axe."
   },
   {
    "id": "ceb-2015-l4-q1",
@@ -1368,7 +1376,7 @@
     "Informer"
    ],
    "reponse": 0,
-   "explication": "C'est un récit."
+   "explication": "C'est un récit inventé, un conte, que l'on lit pour le plaisir : la rencontre d'un petit prince venu d'une autre planète et d'un renard qui parle. L'auteur ne cherche pas à nous apprendre des informations, à nous convaincre ou à nous donner des ordres."
   },
   {
    "id": "ceb-2015-l4-q2",
@@ -1389,7 +1397,7 @@
     "Imaginaire"
    ],
    "reponse": 1,
-   "explication": "Un renard qui parle, un enfant venu d'une autre planète : l'histoire est inventée. Justifie ensuite ta réponse."
+   "explication": "L'histoire est imaginaire : dans la réalité, un renard ne discute pas avec un enfant, et le petit prince dit qu'il vient d'« une autre planète ». Ces éléments de fiction montrent que l'auteur a inventé cette histoire."
   },
   {
    "id": "ceb-2015-l4-q2-j",
@@ -1406,7 +1414,7 @@
     "prince-2"
    ],
    "reponseModele": "Tout élément qui montre que l'histoire est inventée (imaginaire) est accepté. Exemples : un renard et un garçon qui se parlent (un dialogue) ; un petit prince venu d'une autre planète ; un renard qui parle comme une personne. Tout ou rien (1 point).",
-   "explication": "Dans la vraie vie, les renards ne parlent pas et personne ne vient d'une autre planète."
+   "explication": "Une bonne justification cite un élément qui ne peut pas exister dans la vraie vie : un renard qui parle comme une personne, un dialogue entre un renard et un garçon, ou un petit prince venu d'une autre planète (« Sur une autre planète ? — Oui. »)."
   },
   {
    "id": "ceb-2015-l4-q3",
@@ -1421,7 +1429,8 @@
    "documents": [
     "prince-1"
    ],
-   "reponseModele": "« Créer des liens » : devenir ami, avoir besoin l'un de l'autre, être unique l'un pour l'autre."
+   "reponseModele": "« Créer des liens » : devenir ami, avoir besoin l'un de l'autre, être unique l'un pour l'autre.",
+   "explication": "Le renard le dit lui-même : apprivoiser « signifie créer des liens ». Une bonne réponse explique cette idée : devenir amis, avoir besoin l'un de l'autre, être « unique au monde » l'un pour l'autre. Il ne s'agit plus de rendre un animal docile."
   },
   {
    "id": "ceb-2015-l4-q4",
@@ -1449,7 +1458,7 @@
      "les chasseurs le chassent"
     ]
    ],
-   "explication": "Les hommes chassent le renard."
+   "explication": "C'est le renard qui parle : c'est gênant pour lui. La raison est dans la phrase précédente : les hommes « ont des fusils et ils chassent ». Ils chassent les renards, donc il est en danger."
   },
   {
    "id": "ceb-2015-l4-q5",
@@ -1495,7 +1504,7 @@
      "au renard"
     ]
    ],
-   "explication": "Pas de chasseurs : parfait ; pas de poules : dommage.",
+   "explication": "Le renard s'exclame « Ça, c'est intéressant ! » juste après avoir appris qu'il n'y a pas de chasseurs : là-bas, personne ne le chasserait. Mais il soupire « Rien n'est parfait » quand il apprend qu'il n'y a pas de poules non plus : il n'aurait rien à manger. Les deux fois, c'est pour le renard.",
    "souple": true
   },
   {
@@ -1511,7 +1520,7 @@
    "documents": [
     "prince-1"
    ],
-   "explication": "Il veut être tranquille et avoir à manger.",
+   "explication": "Il faut réunir les deux idées de la question 5 : un monde parfait pour le renard serait un monde où il n'y a pas de chasseurs (personne ne le chasse) et où il y a des poules (il peut les chasser pour manger).",
    "reponseModele": "Un monde où il n'y a pas de chasseurs (1 point) et où il y a des poules (1 point)."
   },
   {
@@ -1533,7 +1542,7 @@
     "Non : « oubliée »"
    ],
    "reponse": 0,
-   "explication": "« trop » exprime un regret."
+   "explication": "Oui, le renard le regrette. Il dit que c'est une chose « trop oubliée » : le mot « trop » montre qu'il trouve dommage qu'on ait oublié ce que veut dire « apprivoiser ». Le mot « oubliée » seul dit seulement que c'est oublié, sans montrer de regret."
   },
   {
    "id": "ceb-2015-l4-q9",
@@ -1558,7 +1567,7 @@
     0,
     2
    ],
-   "explication": "« Je crois » et « c'est possible » expriment un doute.",
+   "explication": "« Je crois » montre que le petit prince n'est pas sûr que la fleur l'a apprivoisé. « C'est possible » montre que le renard n'en est pas sûr non plus. « Commence » parle du début de la compréhension, pas d'un doute.",
    "parReponse": true
   },
   {
@@ -1581,7 +1590,7 @@
     "Le renard sait que le petit prince marchera prudemment sur la pointe des pieds."
    ],
    "reponse": 1,
-   "explication": "Le pas de l'ami sera unique."
+   "explication": "Quand ils seront amis, le renard reconnaitra le pas du petit prince parmi tous les autres, comme on reconnait la façon de marcher de quelqu'un qu'on connait bien. Les pas des autres le font fuir dans son terrier, celui de son ami l'appellera « comme une musique »."
   },
   {
    "id": "ceb-2015-l4-q11",
@@ -1596,7 +1605,8 @@
    "documents": [
     "prince-2"
    ],
-   "reponseModele": "Chaque jour se ressemble : il chasse les poules, les hommes le chassent, toutes les poules et tous les hommes se ressemblent ; il s'ennuie."
+   "reponseModele": "Chaque jour se ressemble : il chasse les poules, les hommes le chassent, toutes les poules et tous les hommes se ressemblent ; il s'ennuie.",
+   "explication": "Une vie monotone, c'est une vie où c'est toujours la même chose. Une bonne réponse dit que tous les jours se ressemblent pour le renard : il chasse les poules, les hommes le chassent, et « toutes les poules se ressemblent, et tous les hommes se ressemblent ». Il s'ennuie."
   },
   {
    "id": "ceb-2015-l4-q12",
@@ -1611,7 +1621,8 @@
    "documents": [
     "prince-2"
    ],
-   "reponseModele": "Le jeudi, les chasseurs dansent et ne chassent pas : le renard est tranquille. Non : « le jeudi » veut dire tous les jeudis, « un jeudi » un seul jeudi."
+   "reponseModele": "Le jeudi, les chasseurs dansent et ne chassent pas : le renard est tranquille. Non : « le jeudi » veut dire tous les jeudis, « un jeudi » un seul jeudi.",
+   "explication": "a) Le jeudi, les chasseurs dansent avec les filles du village : ils ne chassent donc pas, et le renard est tranquille. Dire seulement « ils dansent » ne suffit pas. b) Non : « le jeudi » veut dire chaque jeudi, toutes les semaines (c'est un rite), alors que « un jeudi » désignerait un seul jeudi."
   },
   {
    "id": "ceb-2015-l4-q13",
@@ -1627,7 +1638,7 @@
     "prince-1",
     "prince-2"
    ],
-   "explication": "Trois leçons sont justes : « il faut être très patient » (l'amitié demande de l'attention, du temps et de la patience) ; l'amitié se construit au jour le jour ; « il n'existe point de marchands d'amis » (elle ne se vend pas et ne s'achète pas). Deux réponses justes différentes suffisent : 1 point chacune.",
+   "explication": "Trois leçons sont justes. La patience : « Il faut être très patient ». Le jour au jour : « chaque jour, tu pourras t'asseoir un peu plus près ». L'amitié ne s'achète pas : « il n'existe point de marchands d'amis ». Le texte ne dit jamais qu'il faut être tout le temps ensemble ou qu'on peut tout faire.",
    "lignes": [
     "Première leçon de vie",
     "Deuxième leçon de vie"
@@ -1663,7 +1674,8 @@
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
-   "reponseModele": "C'est alors qu'apparait le renard. — Bonjour, dit le renard. — Bonjour, répond poliment le petit prince, qui se retourne mais ne voit rien."
+   "reponseModele": "C'est alors qu'apparait le renard. — Bonjour, dit le renard. — Bonjour, répond poliment le petit prince, qui se retourne mais ne voit rien.",
+   "explication": "Les verbes au passé simple deviennent au présent : apparut → apparait (ou apparaît), répondit → répond, se retourna → se retourne, vit → voit. « Dit » ne change pas : au présent, il s'écrit aussi « il dit ». Il faut le « t » de la 3e personne à apparait, voit et dit."
   },
   {
    "id": "ceb-2015-l4-q15",
@@ -1695,7 +1707,7 @@
     2,
     0
    ],
-   "explication": "« ne… pas » : négative ; « ? » : interrogative ; « regarde ! » : impérative."
+   "explication": "A finit par un point et ne contient pas de négation : déclarative affirmative. B donne un ordre avec le verbe « regarde » et finit par « ! » : impérative affirmative. C pose une question et finit par « ? » : interrogative affirmative. E affirme un fait, sans « ne… pas » : déclarative affirmative (« inutile » n'est pas une négation)."
   },
   {
    "id": "ceb-2015-l4-q16",
@@ -1724,7 +1736,7 @@
      "inutilite"
     ]
    ],
-   "explication": "tristesse, patience, différence, inutilité."
+   "explication": "On remplace l'adjectif par le nom de la même famille qui exprime la qualité : triste → la tristesse, patient → la patience, différent → la différence, inutile → l'inutilité. Attention à l'orthographe : « patience » et « différence » s'écrivent avec « ence », comme « patient » et « différent » avec « ent »."
   },
   {
    "id": "ceb-2015-l4-q17",
@@ -1753,7 +1765,7 @@
     0,
     2
    ],
-   "explication": "Virgule : juxtaposées ; « et » : coordonnées ; « quand », « que » : subordonnées."
+   "explication": "1) Les deux propositions sont séparées par une virgule, sans mot de liaison : juxtaposées. 2) « quand » introduit une proposition qui dépend de l'autre : subordonnée. 3) « et » relie deux propositions de même niveau : coordonnées. 4) « qu'» (que) introduit une proposition qui complète « Je crois » : subordonnée."
   },
   {
    "id": "ceb-2015-l4-q8",
@@ -1770,7 +1782,7 @@
     "prince-2"
    ],
    "reponseModele": "tu = P ; m' = R ; nous = RP ; l'un = R (ou P) ; l'autre = P (ou R) : si l'un est R, l'autre est P, et inversement ; Tu = P ; moi = R ; Je = R ; toi = P. Chaque pronom juste vaut ½ point (9 pronoms).",
-   "explication": "Celui qui parle est le renard (je, moi, m') ; celui à qui il parle est le petit prince (tu, toi). « Nous » les réunit tous les deux."
+   "explication": "Le renard parle au petit prince. Les pronoms de la personne qui parle (je, m', moi) renvoient au renard : R. Ceux de la personne à qui il parle (tu, toi) renvoient au petit prince : P. « Nous » réunit les deux : RP. Pour « l'un » et « l'autre », si l'un est R, l'autre est P, et inversement."
   },
   {
    "id": "ceb-2015-l4-q18",
@@ -1794,7 +1806,7 @@
     "Saint Exupéry",
     "Antoine de Saint-Exupéry"
    ],
-   "explication": "Ces phrases ne sont pas dites par un personnage : c'est celui qui raconte l'histoire, le narrateur (l'auteur)."
+   "explication": "Ces phrases ne sont pas entre tirets : aucun personnage ne les prononce. C'est la voix de celui qui raconte l'histoire, le narrateur (ici l'auteur, Antoine de Saint-Exupéry), qui présente l'arrivée du renard et ce que font les personnages."
   },
   {
    "id": "ceb-2015-l4-q19",
@@ -1815,7 +1827,7 @@
     "Ligne du temps 3"
    ],
    "reponse": 2,
-   "explication": "C'est la ligne 3 : « auras apprivoisé » (futur antérieur) a lieu avant « sera » (futur), alors que « as » (présent) est placé à part."
+   "explication": "« Tu as des cheveux couleur d'or » est vrai maintenant et le restera : « as » couvre toute la ligne. Ensuite, le renard sera d'abord apprivoisé (« auras apprivoisé », futur antérieur), et seulement après ce sera merveilleux (« sera », futur). Sur la ligne 3, « auras apprivoisé » vient bien avant « sera »."
   },
   {
    "id": "ceb-2015-l5-q1a",
@@ -1874,7 +1886,7 @@
     3,
     1
    ],
-   "explication": "Hiver : mammifères et fruits seulement. Été : grosse part d'insectes."
+   "explication": "Hiver : le graphique n'a que deux couleurs, le bleu des mammifères et le vert des fruits et graines, sans la part noire des insectes ni la part orange des oiseaux. Été : c'est le graphique où la part noire des insectes est la plus grande."
   },
   {
    "id": "ceb-2015-l5-q4a",
@@ -1968,7 +1980,7 @@
      "1 heure"
     ]
    ],
-   "explication": "a) 60 °C au départ. b) Le « 0 » de la première colonne, c'est le début de l'expérience (0 minute). c) 43,7 °C après 30 minutes. d) L'expérience a duré 60 minutes, soit 1 h.",
+   "explication": "a) Ligne « 0 » du tableau : 60 °C dans les deux récipients. b) La colonne s'appelle « Temps en minutes » : 0, c'est le début de l'expérience. c) Ligne « 30 », colonne du récipient 2 : 43,7 °C. d) La dernière ligne est à 60 minutes, soit 1 heure.",
    "souple": true
   },
   {
@@ -1992,7 +2004,7 @@
     "a ralenti le réchauffement de l'eau."
    ],
    "reponse": 1,
-   "explication": "L'eau entourée de laine refroidit, mais plus lentement."
+   "explication": "Les deux eaux ont refroidi, donc l'écharpe n'a pas réchauffé l'eau et ne l'a pas empêchée de refroidir. Mais après 60 minutes, l'eau entourée de l'écharpe (récipient 1) est encore à 48,4 °C, contre 35,9 °C sans écharpe : elle a refroidi plus lentement."
   },
   {
    "id": "ceb-2015-l5-q6",
@@ -2033,7 +2045,7 @@
      "laine en panneau"
     ]
    ],
-   "explication": "Laine de mouton et frigolite.",
+   "explication": "Le document présente deux exemples : la laine de mouton (exemple 1), utilisée en panneaux pour isoler les maisons, et le polystyrène expansé, aussi appelé frigolite (exemple 2), utilisé pour les boites qui gardent les aliments au chaud ou au frais.",
    "texte": "{1}\n{2}",
    "differentes": true,
    "souple": true
@@ -2066,7 +2078,7 @@
     1,
     2
    ],
-   "explication": "Garder le chaud au chaud et le froid au froid. La laine isole dans les deux sens : elle garde la maison plus chaude en hiver et plus fraîche en été."
+   "explication": "Le repas chaud doit rester plus chaud que l'air extérieur : plus élevée. La crème glacée doit rester plus froide : plus basse. La laine du toit sert dans les deux cas : elle garde « la chaleur à l'intérieur de la maison en hiver, mais également la fraicheur en été »."
   },
   {
    "id": "ceb-2015-l5-q8",
@@ -2082,7 +2094,8 @@
     "echarpe-1",
     "liv5-p09"
    ],
-   "reponseModele": "…l'écharpe en laine est un isolant : elle a empêché la chaleur de la pièce d'atteindre rapidement le glaçon."
+   "reponseModele": "…l'écharpe en laine est un isolant : elle a empêché la chaleur de la pièce d'atteindre rapidement le glaçon.",
+   "explication": "Une bonne réponse dit que la laine est un isolant : elle freine le passage de la chaleur de la pièce vers le glaçon, qui fond donc plus lentement. Attention, l'écharpe ne refroidit pas le glaçon et ne le réchauffe pas non plus : elle ralentit seulement l'échange de chaleur."
   },
   {
    "id": "ceb-2015-l5-q10",
@@ -2097,7 +2110,8 @@
    "documents": [
     "tomate"
    ],
-   "reponseModele": "Il ne doit plus arroser : l'eau s'évapore, se condense sur la bouteille et retombe goutte à goutte sur la terre."
+   "reponseModele": "Il ne doit plus arroser : l'eau s'évapore, se condense sur la bouteille et retombe goutte à goutte sur la terre.",
+   "explication": "Une bonne réponse dit que le jardinier n'a plus besoin d'arroser lui-même : l'arrosage se fait tout seul. Sous le soleil, l'eau du gobelet s'évapore, se condense sur la grande bouteille, puis ruisselle en gouttes jusqu'à la terre, au pied du plant de tomate."
   },
   {
    "id": "ceb-2015-l5-q12a",
@@ -2127,7 +2141,7 @@
     1,
     0
    ],
-   "explication": "Samedi : 14 à 21 °C et averses sauf à la côte. Vendredi : averses orageuses au nord, Ardenne et Lorraine épargnées."
+   "explication": "1) Samedi : la plus basse température est 14 °C (Ardenne, Lorraine) et la plus haute 21 °C (Campine, Lorraine). 2) Samedi : il y a des averses partout, sauf à la côte. 3) Vendredi : des nuages et du soleil, puis des averses, orageuses en Campine, mais l'Ardenne et la Lorraine, au sud, n'ont pas de pluie."
   },
   {
    "id": "ceb-2015-l5-q12b",
@@ -2151,7 +2165,7 @@
      "22"
     ]
    ],
-   "explication": "Minimum 13 °C, maximum 22 °C (Campine).",
+   "explication": "Dans la colonne du dimanche, on cherche la plus petite et la plus grande température de toutes les régions : la plus basse est 13 °C (centre, Ardenne, Lorraine) et la plus haute 22 °C (Campine).",
    "toutOuRien": true
   },
   {
@@ -2173,7 +2187,7 @@
     "dimanche"
    ],
    "reponse": 1,
-   "explication": "Samedi : averses en Ardenne et températures plus basses (14 à 18 °C)."
+   "explication": "Sur la ligne de l'Ardenne, le samedi est le seul jour avec des averses : le temps devient nuageux puis pluvieux. C'est aussi le jour où il y fera le moins chaud l'après-midi : 18 °C au maximum."
   },
   {
    "id": "ceb-2015-l5-q12c-j",
@@ -2189,7 +2203,7 @@
     "meteo-1"
    ],
    "reponseModele": "Toute justification en rapport avec la pluie, la température ou la variation de température est acceptée. Exemples : « Il y aura des averses (de la pluie) en Ardenne. » ; « Il fera plus frais : 14 à 18 °C. » ; « Le temps change : nuageux puis averses. » Tout ou rien.",
-   "explication": "Dans le tableau, l'Ardenne a des averses et la température la plus basse le samedi."
+   "explication": "Une bonne explication s'appuie sur le tableau : samedi, il y aura des averses en Ardenne, ou il fera plus frais (14 °C à 18 °C), ou le temps changera (soleil et nuages, puis pluie). Une seule de ces raisons suffit."
   },
   {
    "id": "ceb-2015-l5-q13",
@@ -2197,7 +2211,7 @@
    "numero": "13",
    "domaine": "sc.matiere",
    "type": "trous",
-   "enonce": "Dans d'autres bulletins météo, l'eau peut se présenter sous d'autres formes que la pluie. Écris-en deux.",
+   "enonce": "Dans les prévisions météo illustrées dans le portfolio, l'eau est présente, notamment, sous forme de pluie. Dans d'autres bulletins météo, l'eau peut se présenter sous d'autres formes. Écris-en deux.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2239,7 +2253,7 @@
      "verglas"
     ]
    ],
-   "explication": "Réponses acceptées par le corrigé officiel : brouillard, givre, verglas, neige, grêle (grêlons), rosée, brume, nuage, grésil, crachin. Pas « pluie ».",
+   "explication": "La météo annonce l'eau sous d'autres formes que la pluie : solide (neige, grêle ou grêlons, givre, verglas, grésil) ou en très fines gouttelettes (brouillard, brume, nuages, rosée, crachin). « Pluie » ne compte pas, puisqu'elle est déjà dans la question.",
    "souple": true,
    "differentes": true,
    "texte": "L'eau peut se présenter sous forme de {1}\nL'eau peut se présenter sous forme de {2}"
@@ -2271,7 +2285,7 @@
     4,
     6
    ],
-   "explication": "Le sang distribue nutriments et oxygène et emporte les déchets.",
+   "explication": "Le portfolio dit que le sang « distribue ainsi les nutriments et l'oxygène » et qu'il « débarrasse les organes de leurs déchets ». Digérer est le rôle du système digestif, maintenir le corps debout et protéger les organes celui du squelette ; transformer l'oxygène n'est pas un transport : le sang, lui, transporte.",
    "parReponse": true
   },
   {
@@ -2293,7 +2307,7 @@
     "cœur"
    ],
    "reponse": 1,
-   "explication": "Dans l'intestin grêle."
+   "explication": "Après la digestion, les aliments sont transformés en nutriments. Ils traversent la paroi de l'intestin grêle et passent dans le sang, qui les transporte vers tous les organes. L'estomac, lui, ne fait que commencer la digestion."
   },
   {
    "id": "ceb-2015-l5-q17a",
@@ -2305,7 +2319,7 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
-   "explication": "En gelant, l'eau augmente de volume.",
+   "explication": "Une bonne réponse parle du volume : dans le flacon 2, la glace monte au-dessus du trait, car l'eau prend plus de place en gelant. Ou bien elle dit qu'à la fin, quand la glace a fondu, l'eau revient au même niveau, au trait. Dire seulement « ça redevient la même chose » ne suffit pas.",
    "reponseModele": "Toute idée de dilatation / contraction (en gelant, l'eau prend plus de place : le niveau monte au-dessus du trait) ou de retour à la situation de départ (même niveau à la fin). « Ça redevient la même chose » sans préciser : ½ point.",
    "documents": [
     "liv5-p19"
@@ -2330,7 +2344,7 @@
      "fusion"
     ]
    ],
-   "explication": "Solidification puis fusion.",
+   "explication": "Du flacon 1 au flacon 2, l'eau liquide devient de la glace au congélateur : c'est une solidification. Du flacon 2 au flacon 3, la glace redevient liquide à température ambiante : c'est une fusion. Évaporation, vaporisation et ébullition concernent le passage de liquide à gaz.",
    "documents": [
     "liv5-p19"
    ]
@@ -2864,13 +2878,14 @@
    "numero": "3",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Graphique en bâtonnets du blaireau.",
+   "enonce": "Utilise les données du graphique circulaire du blaireau en automne (portfolio, page 15) pour compléter le graphique en bâtonnets du livret : achève le tracé des bâtonnets et colorie-les.",
    "points": 2,
    "corrigeVerifie": false,
    "documents": [
     "blaireau"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Chaque bâtonnet doit monter jusqu'au pourcentage lu sur le graphique circulaire : lombrics 45 % (déjà tracé), grenouilles et crapauds 27 %, glands 13 %, fruits charnus 5 % et céréales 10 %. Sur l'axe, un trait vaut 10 % : 27 % s'arrête un peu avant le trait de 30 %."
   },
   {
    "id": "ceb-2015-l5-q4b",
@@ -2923,7 +2938,7 @@
     2,
     0
    ],
-   "explication": "1 : les gouttes qui tombent sont des précipitations ; 2 : la vapeur se transforme en eau sur le couvercle (condensation) ; 3 : l'eau s'enfonce dans le sol (infiltration) ; 4 : l'eau coule sur la butte (ruissèlement)."
+   "explication": "1 : des gouttes tombent du couvercle vers le sol, comme la pluie : précipitations. 2 : sous le couvercle refroidi par les glaçons, la vapeur redevient des gouttelettes : condensation. 3 : l'eau s'enfonce dans la terre : infiltration. 4 : l'eau coule le long de la pierre : ruissèlement."
   },
   {
    "id": "ceb-2015-l5-q11",
@@ -2954,7 +2969,7 @@
     3,
     0
    ],
-   "explication": "Le dimanche : de 13 à 22 degrés, sans pluie (carte 1). Le samedi : de 14 à 21 degrés, avec des averses (carte 4)."
+   "explication": "Dans le tableau, le dimanche n'a pas de pluie et les températures vont de 13 à 22 degrés (côte 15°/20°, Campine 14°/22°…) : c'est la carte 1. Le samedi a des averses partout sauf à la côte, avec 16°/19° à la côte et 14°/18° en Ardenne : c'est la carte 4. La carte 2 montre vendredi ; la carte 3, avec 12°, ne correspond à aucun jour."
   },
   {
    "id": "ceb-2015-l5-q15bc",
@@ -2984,7 +2999,7 @@
     1,
     0
    ],
-   "explication": "Le sang s'enrichit en oxygène dans les poumons (point 1), puis le cœur le propulse vers les organes (point 2)."
+   "explication": "Le point 1 est dans les poumons : c'est là que le sang prend l'oxygène de l'air et devient rouge sur le schéma en couleur. Le point 2 est à la sortie du cœur : le cœur envoie ce sang enrichi en oxygène vers les organes, par la grande circulation."
   },
   {
    "id": "ceb-2015-l5-q15c",
@@ -3016,7 +3031,7 @@
     0,
     1
    ],
-   "explication": "Les artères (A) partent du cœur vers les organes : P et R. Les veines (V) ramènent le sang vers le cœur : Q et S."
+   "explication": "On regarde le sens de la flèche, pas la couleur. P va du cœur vers les poumons : artère (A), même si le sang y est bleu. Q revient des poumons vers le cœur : veine (V). R part du cœur vers les organes : artère (A). S ramène le sang des organes vers le cœur : veine (V)."
   },
   {
    "id": "ceb-2015-l5-q16",
@@ -3051,7 +3066,7 @@
     1,
     1
    ],
-   "explication": "Un doigt blessé qui saigne (photo 3) et une prise de sang (photo 4) concernent le sang et ses vaisseaux."
+   "explication": "Photo 3 : le pouce bandé est taché de sang, la blessure a touché des vaisseaux sanguins. Photo 4 : une prise de sang se fait dans une veine du bras. Les autres photos concernent la peau (crème solaire), les os (bras en écharpe), l'oreille et les réflexes (marteau sur le genou)."
   },
   {
    "id": "ceb-2015-l5-q18",
@@ -3101,7 +3116,7 @@
     1,
     5
    ],
-   "explication": "Grenouille : œufs (E), têtard (I), têtard avec pattes (B puis J) ; poule : œuf (M), poussin qui éclôt (L), poussin (F), poule (G) ; papillon : œuf (A), chenille (C), chrysalide (H), papillon (D).",
+   "explication": "Grenouille, en partant de l'adulte K : œufs E (case 2), têtard sans pattes I (case 4), têtard à pattes arrière B (case 3), têtard à quatre pattes J (case 1). Poule : œuf M, poussin qui sort de l'œuf L (case 7), poussin F (case 6), poule G (case 5). Papillon : œuf A, chenille C, chrysalide H (case 9), papillon D (case 8).",
    "groupes": [
     [
      0,
@@ -3164,7 +3179,7 @@
      "uniquement en poussant et en tirant"
     ]
    ],
-   "explication": "Sans roues et uniquement en tirant : dessin 2 (3 et 6 ne conviennent pas : on pousse). Avec roues : le dessin 1 se pousse et se tire, 4 et 5 seulement se poussent."
+   "explication": "Tri 1 : sans roues et uniquement en tirant, c'est le dessin 2. Dans les dessins 3 et 6, il n'y a pas de roues mais on pousse le tonneau, donc NON. Tri 2 : dans le dessin 1, un enfant pousse et l'autre tire, alors que dans les dessins 4 et 5 on pousse seulement : la caractéristique est « en poussant et en tirant »."
   },
   {
    "id": "ceb-2015-l6-q1",
@@ -3194,7 +3209,7 @@
     "fort de Hollogne",
     "fort de Flémalle"
    ],
-   "explication": "Rive gauche (ouest) : Pontisse, Liers, Lantin, Loncin, Hollogne, Flémalle."
+   "explication": "La rive gauche est celle qu'on a à sa gauche quand on regarde dans le sens où coule le fleuve. Ici, la Meuse vient du sud-ouest (Flémalle) et part vers le nord : la rive gauche est le côté ouest et nord-ouest de la carte. Les forts de ce côté sont Flémalle, Hollogne, Loncin, Lantin, Liers et Pontisse."
   },
   {
    "id": "ceb-2015-l6-q2",
@@ -3215,7 +3230,7 @@
     "Rien ne me permet de le savoir."
    ],
    "reponse": 0,
-   "explication": "Il écrit à sa femme depuis le front puis comme prisonnier."
+   "explication": "Marcel écrit lui-même, en disant « je », ce qui lui arrive : « Nous sommes toujours dans les environs de Jupille » (document A), « Je suis prisonnier de guerre des Allemands » (document C). Ce sont des témoignages de ce qu'il a vécu."
   },
   {
    "id": "ceb-2015-l6-q3",
@@ -3240,7 +3255,7 @@
      "Eupen"
     ]
    ],
-   "explication": "Eupen et Malmedy sont devenues belges après la Première Guerre mondiale.",
+   "explication": "Sur la carte de 1914, la frontière passe à l'ouest d'Eupen et de Malmedy : ces deux villes sont du côté allemand. Sur la carte d'aujourd'hui, elles sont en Belgique, dans la province de Liège. Elles sont devenues belges après la Première Guerre mondiale.",
    "texte": "{1}\n{2}",
    "differentes": true,
    "souple": true
@@ -3268,7 +3283,7 @@
     "ses fils",
     "ce sont ses enfants"
    ],
-   "explication": "Ses deux enfants (arbre généalogique)."
+   "explication": "Ce sont ses enfants. Le texte d'introduction dit que Marcel habite « avec sa femme Marie et leurs deux enfants Marcelle et Gabriel », et on les retrouve dans l'arbre généalogique (document G). Répondre seulement « des enfants » ne suffit pas."
   },
   {
    "id": "ceb-2015-l6-q5a",
@@ -3306,7 +3321,7 @@
     ],
     6
    ],
-   "explication": "C : message du 6/8/1914 ; F : aquarelle faite au camp en mai 1917 ; G : mort en 1949. Pour 1917, les documents E et F conviennent tous les deux."
+   "explication": "Aout 1914 : le document C, daté du 6.8.14, dit « Je suis prisonnier de guerre des Allemands ». 1917 : le monument E a été fait au camp par des prisonniers en 1916-1917, et l'aquarelle F a été peinte au camp en mai 1917 (E ou F). Seconde Guerre mondiale (1939-1945) : l'arbre G montre que Marcel est mort en 1949."
   },
   {
    "id": "ceb-2015-l6-q5b",
@@ -3328,7 +3343,7 @@
      "Samuel"
     ]
    ],
-   "explication": "Samuel naît en 1915 ; Marie naît en 1919, après la photo."
+   "explication": "Marcel est prisonnier depuis aout 1914 et l'est encore en 1917. Dans l'arbre généalogique, Samuel est né en 1915 : pendant sa captivité. Marcelle (1911) et Gabriel (1913) sont nés avant la guerre, Marie (1919) après."
   },
   {
    "id": "ceb-2015-l6-q5d",
@@ -3351,7 +3366,7 @@
     "1918"
    ],
    "reponse": 0,
-   "explication": "1885 + 29 = 1914."
+   "explication": "Marcel écrit le 24 septembre : « aujourd'hui 29 ans ». L'arbre généalogique indique qu'il est né en 1885. 1885 + 29 = 1914 : il fête ses 29 ans en septembre 1914, peu après être devenu prisonnier."
   },
   {
    "id": "ceb-2015-l6-q5e",
@@ -3387,7 +3402,7 @@
     1,
     1
    ],
-   "explication": "Gabriel : 1913-1933. Marie Ladril meurt en 2011, après 1961."
+   "explication": "Le 20e siècle va de 1901 à 2000. Gabriel (1913-1933) n'a vécu qu'au 20e siècle. Marie Thiry (née en 1881) et Marcel (né en 1885) sont nés au 19e siècle et morts au 20e. Marie Ladril (1919-2011) a vécu au 20e et au 21e siècle, et elle était vivante en 1961, lors du premier vol d'un homme dans l'espace."
   },
   {
    "id": "ceb-2015-l6-q5f",
@@ -3426,7 +3441,7 @@
     ],
     3
    ],
-   "explication": "Photo, texte, monument, aquarelle."
+   "explication": "B est une photographie de la famille. C est un document écrit : un message à la main. E est un monument (accepté aussi : sculpture) construit en hommage aux prisonniers morts. F est une peinture : une aquarelle peinte par Marcel au camp."
   },
   {
    "id": "ceb-2015-l6-q7",
@@ -3540,7 +3555,7 @@
      "l'effigie d'Albert Ier"
     ]
    ],
-   "explication": "Pays et province : le cachet (Liège) et le timbre belge. Auteur : le nom et l'adresse de l'expéditeur, Marcel Ladril. Roi : Albert Ier, que montrent le timbre et la date du cachet (1914).",
+   "explication": "Pays : le timbre porte « BELGIE » et « BELGIQUE ». Province : le cachet de la poste indique « LIÈGE – LUIK ». Auteur : dans la case « Nom et adresse de l'expéditeur », on lit Marcel Ladril. Roi : le timbre montre le roi Albert Ier, qui régnait en 1914, l'année du cachet.",
    "souple": true
   },
   {
@@ -3587,7 +3602,7 @@
      "Région wallonne"
     ]
    ],
-   "explication": "Toutes deux en province de Liège et en Région wallonne ; Malmedy est francophone, Eupen germanophone.",
+   "explication": "Sur la carte du portfolio, Malmedy et Eupen sont toutes les deux dans la province de Liège, dans la partie rose de la Région wallonne. Eupen est dans la zone hachurée de la Communauté germanophone ; Malmedy est en dehors de cette zone, dans la Communauté française.",
    "texte": "Ville de MALMEDY — Pays : Belgique · Province : {1} · Communauté (française, flamande, germanophone) : {2} · Région : {3}\nVille d'EUPEN — Pays : Belgique · Province : {4} · Communauté (française, flamande, germanophone) : {5} · Région : {6}",
    "souple": true
   },
@@ -3614,7 +3629,7 @@
     1,
     3
    ],
-   "explication": "Stavanger : Norvège ; Istanbul : Turquie.",
+   "explication": "Dans la liste du portfolio, Stavanger est en Norvège et Istanbul en Turquie. Sur la carte de l'Europe, ces deux pays sont en gris foncé, avec les pays qui ne sont pas membres de l'Union européenne. Madrid (Espagne) et Porto (Portugal) sont, eux, dans l'Union européenne.",
    "parProposition": true
   },
   {
@@ -3654,7 +3669,7 @@
     "environ 4 mois"
    ],
    "reponse": 2,
-   "explication": "De mi-juin à mi-octobre : environ 4 mois."
+   "explication": "Atopolis est ouverte du 13 juin au 18 octobre 2015, donc à peu près de la mi-juin à la mi-octobre. On compte les mois : mi-juin → mi-juillet → mi-aout → mi-septembre → mi-octobre, cela fait environ 4 mois."
   },
   {
    "id": "ceb-2015-l6-q17b",
@@ -3670,7 +3685,7 @@
     "mons-2"
    ],
    "reponse": 1,
-   "explication": "Seule Atopolis est ouverte en juillet et en aout."
+   "explication": "Les vacances d'été vont de juillet à fin aout. Van Gogh se termine le 17 mai et Mons Superstar le 12 avril ; Verlaine et L'Homme, le Dragon et la Mort commencent en octobre. Seule Atopolis (du 13 juin au 18 octobre) est ouverte en juillet et en aout."
   },
   {
    "id": "ceb-2015-l6-q18a",
@@ -3708,7 +3723,7 @@
      "17 janvier"
     ]
    ],
-   "explication": "Lecture du document Mons 2015.",
+   "explication": "Dans le document « Mons 2015 : quelques grandes expositions », on lit : Mons Superstar « du 24 janvier 2015 au 12 avril 2015 » et L'Homme, le Dragon et la Mort « du 18 octobre 2015 au 17 janvier 2016 ». Attention, cette exposition se termine l'année suivante.",
    "groupes": [
     [
      0,
@@ -3736,7 +3751,7 @@
    "reponse": [
     "2000"
    ],
-   "explication": "En 2000."
+   "explication": "Dans la liste des capitales européennes de la culture, Bruxelles (Belgique) apparait à l'année 2000, avec huit autres villes d'Europe désignées cette année-là."
   },
   {
    "id": "ceb-2015-l6-q5c",
@@ -3756,7 +3771,7 @@
     "Marie",
     "Marie Ladril"
    ],
-   "explication": "La photo date de 1915 ; Marie n'est née qu'en 1919. (On ne pénalise pas si « Ladril » apparait.)"
+   "explication": "La photo B montre Mme Ladril et ses trois enfants en 1915 : Marcelle, Gabriel et le bébé Samuel. Dans l'arbre généalogique, Marie est née en 1919 : elle n'était pas encore née au moment de la photo."
   },
   {
    "id": "ceb-2015-l6-q6",
@@ -3772,7 +3787,7 @@
    ],
    "fiche": "hg-sources",
    "reponseModele": "Un seul indice suffit (½ point). Acceptés : la date « 1914 » ; « Liège 1914 » ; le cachet ou le tampon ; l'écusson ; le rond au milieu du cachet.",
-   "explication": "Le cachet de la poste porte la date d'août 1914 : la guerre venait de commencer."
+   "explication": "Le cachet de la poste porte la date « 5 VIII 1914 », c'est-à-dire le 5 aout 1914. La Première Guerre mondiale a duré de 1914 à 1918, et l'Allemagne a attaqué la Belgique au début du mois d'aout 1914 : la carte a donc été écrite pendant la guerre."
   },
   {
    "id": "ceb-2015-l6-q8",
@@ -3789,7 +3804,7 @@
    ],
    "reponse": 20,
    "unite": "km",
-   "explication": "Sur la carte, Theux est à environ une longueur d'échelle de Liège : 20 km à vol d'oiseau."
+   "explication": "On mesure avec la latte la distance entre Liège et Theux sur la carte, puis on la compare à l'échelle graphique : elle est à peu près égale au segment qui représente 20 km. « À vol d'oiseau » veut dire en ligne droite, sans suivre les routes."
   },
   {
    "id": "ceb-2015-l6-q10",
@@ -3805,7 +3820,7 @@
    ],
    "fiche": "hg-paysages",
    "reponseModele": "Deux éléments parmi (1 point chacun) : des prairies ou des pâtures ; une ferme ; une grange ; un village ; une petite route (une seule route, route étroite) ; peu de maisons ; de la boue, un marécage ; ou la négation d'une caractéristique de la ville (par exemple : il n'y a pas de building). Les vaches ou le bétail sont acceptés. Refusés : « il fait beau », « des bâtiments », « c'est la campagne ».",
-   "explication": "Un paysage rural, c'est la campagne : des champs, des fermes, peu de maisons."
+   "explication": "Une bonne réponse cite deux choses visibles sur la photo et typiques de la campagne : des prairies, des vaches, une ferme ou une grange, une petite route étroite, peu de maisons, de la boue. Des réponses trop vagues comme « des bâtiments », « il fait beau » ou « c'est la campagne » ne suffisent pas."
   },
   {
    "id": "ceb-2015-l6-q11",
@@ -3893,7 +3908,7 @@
     1,
     2
    ],
-   "explication": "Le document A date du début du 20e siècle : sous 1900. Le document B date du début du 21e siècle : sous 2000.",
+   "explication": "La cuisine A est du début du 20e siècle : on la place près de 1900 (étiquette 2). La cuisine B est du début du 21e siècle : on la place près de 2000 (étiquette 3). Les étiquettes sous 1800 et 2100 restent vides.",
    "groupes": [
     [
      0
@@ -4418,7 +4433,7 @@
      "des cuisinières"
     ]
    ],
-   "explication": "Parmi les éléments communs : table, chaise, armoire, nappe, assiettes, vaisselle, ustensiles de cuisine (casserole, cuisinière acceptées)."
+   "explication": "On cherche des objets visibles dans les deux cuisines : une table avec une nappe, des chaises, une armoire, des assiettes ou de la vaisselle, des ustensiles de cuisine. Le mot « meubles » est trop vague : il faut nommer l'objet."
   },
   {
    "id": "ceb-2015-l6-q12c",
@@ -5433,7 +5448,7 @@
      "des congélateurs"
     ]
    ],
-   "explication": "Absents de la cuisine ancienne : micro-ondes, frigo, hotte, télévision, lave-vaisselle, grille-pain, boîte à pain, évier, cuisinière électrique, bouilloire électrique, four, luminaire, congélateur…"
+   "explication": "La cuisine B contient des appareils électriques qui n'existent pas dans la cuisine A : micro-ondes, frigo, hotte, télévision, lave-vaisselle, grille-pain, bouilloire électrique, cuisinière électrique. On y voit aussi une boite à pain et un évier."
   },
   {
    "id": "ceb-2015-l6-q13a",
@@ -5517,7 +5532,7 @@
     1,
     7
    ],
-   "explication": "Italie : case I ; Pays-Bas : case E ; Irlande : case C ; Suède : case B ; France : case H."
+   "explication": "Italie : la botte qui s'avance dans la mer Méditerranée (I). Pays-Bas : au nord de la Belgique, au bord de la mer du Nord (E). Irlande : l'ile à l'ouest de la Grande-Bretagne (C). Suède : à l'ouest de la mer Baltique, en Scandinavie (B). France : au sud de la Belgique (H)."
   },
   {
    "id": "ceb-2015-l6-q14b",
@@ -5604,7 +5619,7 @@
     "mons-2"
    ],
    "reponse": 1992,
-   "explication": "L'étiquette vide correspond à 1992 : Madrid fut capitale européenne de la culture cette année-là."
+   "explication": "Entre 1985 et 2015, il y a 30 ans et 30 graduations : une graduation vaut 1 an. L'étiquette vide est placée 7 graduations après 1985 : 1985 + 7 = 1992."
   },
   {
    "id": "ceb-2015-l6-q15v",
@@ -5623,7 +5638,7 @@
    "reponse": [
     "Madrid"
    ],
-   "explication": "En 1992 : Madrid."
+   "explication": "Dans la liste des capitales européennes de la culture du portfolio, on lit à l'année 1992 : « Madrid (Espagne) »."
   },
   {
    "id": "ceb-2015-l6-q19a",
@@ -5645,7 +5660,7 @@
     "à l'ouest de la Grand-Place"
    ],
    "reponse": 1,
-   "explication": "Sur le plan, le nord est indiqué par la flèche N : le point de DÉPART est au sud de la Grand-Place."
+   "explication": "Attention, sur ce plan la flèche du nord ne pointe pas vers le haut de la page mais vers le haut à droite. Le sud est donc en bas à gauche, et c'est là que se trouve le point de départ par rapport à la Grand-Place."
   },
   {
    "id": "ceb-2015-l6-q19",
@@ -5657,7 +5672,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "numerisable": false,
-   "reponseModele": "L'itinéraire est divisé en 2 tronçons, chacun correctement tracé (½ pt par tronçon) : du point de départ jusqu'au bout de la rue du Hautbois, puis vers l'est (2e rue à gauche) jusqu'au carrefour. On arrive face au bâtiment de la RTBF."
+   "reponseModele": "L'itinéraire est divisé en 2 tronçons, chacun correctement tracé (½ pt par tronçon) : du point de départ jusqu'au bout de la rue du Hautbois, puis vers l'est (2e rue à gauche) jusqu'au carrefour. On arrive face au bâtiment de la RTBF.",
+   "explication": "Il faut d'abord trouver le nord avec la flèche N (vers le haut à droite du plan). Le tracé a deux parties : du départ jusqu'au bout de la rue du Hautbois, en passant par la rue Notre-Dame et la rue de Houdain, puis vers l'est jusqu'à la 2e rue à gauche et le carrefour suivant, face à la RTBF."
   },
   {
    "id": "ceb-2015-l6-q19c",
@@ -5678,7 +5694,7 @@
     "R.T.B.F."
    ],
    "souple": true,
-   "explication": "L'itinéraire se termine face à la RTBF."
+   "explication": "En suivant les consignes sur le plan, on arrive à la fin de l'itinéraire face au bâtiment marqué « rtbf », près de la rue du Gouvernement."
   },
   {
    "id": "ceb-2015-l6-q20",
@@ -5719,10 +5735,11 @@
    "numero": "21",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Situe l'océan Atlantique sur trois planisphères.",
+   "enonce": "Situe l'océan Atlantique : écris « océan Atlantique » sur les trois planisphères du livret : a) planisphère centré sur l'Europe ; b) planisphère centré sur l'Amérique ; c) planisphère centré sur l'Asie.",
    "points": 1.5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "L'océan Atlantique se trouve entre les Amériques, à l'ouest, et l'Europe et l'Afrique, à l'est. Sur le planisphère centré sur l'Europe, il est à gauche de l'Europe ; centré sur l'Amérique, il est à droite de l'Amérique ; centré sur l'Asie, il est coupé en deux, sur les bords gauche et droit de la carte."
   },
   {
    "id": "ceb-2015-l7-q1a",
@@ -5736,7 +5753,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 240,
    "tolerance": 0.0001,
-   "explication": "48 × 10 : 2."
+   "explication": "Multiplier par 5, c'est multiplier par 10 puis diviser par 2 : 48 × 10 = 480, puis 480 : 2 = 240."
   },
   {
    "id": "ceb-2015-l7-q1b",
@@ -5750,7 +5767,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 49000,
    "tolerance": 0.0001,
-   "explication": "Résultat : 49000."
+   "explication": "On calcule d'abord 7 × 7 = 49. Puis on ajoute les zéros : deux zéros pour 700 et un zéro pour 70, soit trois zéros en tout : 700 × 70 = 49 000."
   },
   {
    "id": "ceb-2015-l7-q1c",
@@ -5764,7 +5781,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 1000,
    "tolerance": 0.0001,
-   "explication": "128 + 172 = 300 ; 587 + 113 = 700."
+   "explication": "On regroupe les nombres qui font des centaines entières : 128 + 172 = 300 et 587 + 113 = 700. Ensuite, 300 + 700 = 1 000."
   },
   {
    "id": "ceb-2015-l7-q1d",
@@ -5778,7 +5795,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
-   "explication": "Résultat : 0."
+   "explication": "Dans une multiplication, dès qu'un des facteurs vaut 0, le produit vaut 0. Inutile de calculer 4 × 250 × 20 : avec le × 0, le résultat est 0."
   },
   {
    "id": "ceb-2015-l7-q1e",
@@ -5792,7 +5809,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 99413,
    "tolerance": 0.0001,
-   "explication": "Résultat : 99413."
+   "explication": "On enlève d'abord un nombre rond : 100 000 − 600 = 99 400. On a enlevé 13 de trop (600 − 587 = 13), on les rajoute : 99 400 + 13 = 99 413. Vérification : 99 413 + 587 = 100 000."
   },
   {
    "id": "ceb-2015-l7-q1f",
@@ -5806,7 +5823,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 1585,
    "tolerance": 0.0001,
-   "explication": "1 000 + 587 − 2."
+   "explication": "998, c'est 1 000 − 2. On calcule 1 000 + 587 = 1 587, puis on retire les 2 ajoutés en trop : 1 587 − 2 = 1 585."
   },
   {
    "id": "ceb-2015-l7-q1g",
@@ -5820,7 +5837,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 61,
    "tolerance": 0.0001,
-   "explication": "Résultat : 61."
+   "explication": "On décompose 366 en 360 + 6 : 360 : 6 = 60 et 6 : 6 = 1. Donc 366 : 6 = 60 + 1 = 61. Vérification : 61 × 6 = 366."
   },
   {
    "id": "ceb-2015-l7-q1h",
@@ -5834,7 +5851,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 0.72,
    "tolerance": 0.0001,
-   "explication": "Résultat : 0,72."
+   "explication": "Diviser un nombre par 1 ne le change pas : 0,72 : 1 = 0,72. Attention à ne pas confondre avec une division par 10 ou par 100."
   },
   {
    "id": "ceb-2015-l7-q1i",
@@ -5848,7 +5865,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 7204,
    "tolerance": 0.0001,
-   "explication": "7 603 − 400 + 1."
+   "explication": "399, c'est 400 − 1. On calcule 7 603 − 400 = 7 203, puis on rajoute le 1 enlevé en trop : 7 203 + 1 = 7 204."
   },
   {
    "id": "ceb-2015-l7-q1j",
@@ -5862,7 +5879,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 900,
    "tolerance": 0.0001,
-   "explication": "600 + 300."
+   "explication": "150 %, c'est 100 % + 50 %. 100 % de 600, c'est 600 ; 50 % de 600, c'est la moitié, 300. Donc 150 % de 600 = 600 + 300 = 900."
   },
   {
    "id": "ceb-2015-l7-q2",
@@ -5882,7 +5899,7 @@
     "340",
     "350"
    ],
-   "explication": "50 + 30 + 20 + 150 + 85 ≈ 335."
+   "explication": "On arrondit chaque prix : 50 + 30 + 20 + 150 + 90 = 340 €. Le total exact (334,49 €) est proche : toute estimation de 300 à 350 € convient. Pour estimer vite, on ne calcule pas les centimes."
   },
   {
    "id": "ceb-2015-l7-q3",
@@ -5903,7 +5920,7 @@
      "100"
     ]
    ],
-   "explication": "Figure n : n × n carrés.",
+   "explication": "Chaque figure est un carré : la figure 2 a 2 rangées de 2 (2 × 2 = 4), la figure 3 a 3 rangées de 3 (3 × 3 = 9). La figure 4 aura donc 4 × 4 = 16 carrés grisés et la figure 10, 10 × 10 = 100 carrés grisés.",
    "documents": [
     "liv7-p05"
    ]
@@ -5921,7 +5938,7 @@
    "reponse": [
     "28,87"
    ],
-   "explication": "28,_7 avec le chiffre des dixièmes = 8 : 28,87."
+   "explication": "Entre 28 et 29, le nombre commence par 28 (2 dizaines, 8 unités). Avec quatre chiffres, il s'écrit 28,_ _. Le chiffre des centièmes est 7 : 28,_7. Le chiffre des dixièmes est le même que celui des unités, 8 : 28,87."
   },
   {
    "id": "ceb-2015-l7-q7",
@@ -5961,7 +5978,7 @@
     0,
     3
    ],
-   "explication": "1 205 < 1 502 < 2 105 < 2 500 < 5 102."
+   "explication": "En chiffres : mille-deux-cent-cinq = 1 205, mille-cinq-cent-deux = 1 502, deux-mille-cent-cinq = 2 105, deux-mille-cinq-cents = 2 500, cinq-mille-cent-deux = 5 102. On compare d'abord les milliers, puis les centaines : 1 205 < 1 502 < 2 105 < 2 500 < 5 102."
   },
   {
    "id": "ceb-2015-l7-q9",
@@ -5994,7 +6011,7 @@
      "20"
     ]
    ],
-   "explication": "Diviser par 10, 100… ou chercher le facteur manquant."
+   "explication": "1,2 × 1 = 1,2. 12 × 0,1 = 1,2 (12 : 10). 120 × 0,01 = 1,2 (120 : 100). 6 × 0,2 = 1,2 (6 × 2 = 12, puis : 10). 0,6 × 2 = 1,2. 0,06 × 20 = 1,2 (0,06 × 2 = 0,12, puis × 10)."
   },
   {
    "id": "ceb-2015-l7-q10",
@@ -6018,7 +6035,7 @@
     0,
     5
    ],
-   "explication": "1,304 et 1,386."
+   "explication": "Il faut un poids plus grand que 1,300 kg et plus petit que 1,400 kg : 1,304 kg et 1,386 kg conviennent. 1,408 et 1,430 dépassent 1,400 ; 1,285 est sous 1,300. Attention à 1,035 kg : son chiffre des dixièmes est 0, il est donc bien sous 1,3."
   },
   {
    "id": "ceb-2015-l7-q11",
@@ -6065,7 +6082,7 @@
     "Le résultat de l'addition diminue."
    ],
    "reponse": 1,
-   "explication": "+6 d'un côté, −6 de l'autre."
+   "explication": "Le 2 et le 8 des unités ont été échangés : 3 452 devient 3 458 (6 de plus) et 6 798 devient 6 792 (6 de moins). Ce qu'on ajoute d'un côté, on l'enlève de l'autre : la somme reste 10 250."
   },
   {
    "id": "ceb-2015-l7-q15b",
@@ -6083,7 +6100,7 @@
     "Le résultat de l'addition diminue."
    ],
    "reponse": 2,
-   "explication": "3 425 < 3 452."
+   "explication": "Seul le premier nombre change : 3 452 devient 3 425, il diminue de 27 (le 5 des dizaines devient 2). Le deuxième nombre, 6 798, ne change pas : la somme diminue donc aussi de 27."
   },
   {
    "id": "ceb-2015-l7-q5",
@@ -6135,7 +6152,7 @@
    "reponse": [
     "Jo"
    ],
-   "explication": "Jo pratique les trois sports."
+   "explication": "Dans le diagramme, Jo est placé au centre, dans la partie commune aux trois cercles : il pratique le football, le basketball et le tennis. Les autres enfants sont dans deux cercles au maximum."
   },
   {
    "id": "ceb-2015-l7-q6",
@@ -6149,7 +6166,8 @@
    "numerisable": false,
    "documents": [
     "liv7-p08"
-   ]
+   ],
+   "explication": "Chaque ligne contient les multiples de son premier nombre, jusqu'à son carré : la ligne de 5 va de 5 à 25, la ligne de 8 de 8 à 64. 20 = 5 × 4 se place dans la ligne de 5 (4e case), ou 20 = 10 × 2 dans la ligne de 10 (2e case). 64 = 8 × 8 se place à la dernière case de la ligne de 8."
   },
   {
    "id": "ceb-2015-l7-q6b",
@@ -6165,7 +6183,7 @@
     "liv7-p08"
    ],
    "reponse": 99,
-   "explication": "Le nombre de la case grisée est 99."
+   "explication": "La case grisée est dans la ligne de 11, qui contient les multiples de 11 (11, 22, 33… 77 en 7e case). Elle est à la 9e case : 11 × 9 = 99."
   },
   {
    "id": "ceb-2015-l7-q12",
@@ -6205,7 +6223,7 @@
      "15.40"
     ]
    ],
-   "explication": "Entre 15 et 16, la droite est graduée au dixième : 15 ; 15,4 ; 16. La dernière case, sur la droite graduée au centième, est 15,4."
+   "explication": "La 2e droite agrandit l'intervalle de 15 à 16, partagé en 10 dixièmes : A = 15, C = 16, et B, 4 graduations après A, vaut 15,4. La 3e droite agrandit l'intervalle de 15,3 à 15,4 en centièmes : de 15,32 à 15,36, il y a 4 graduations, donc D, 4 graduations après 15,36, vaut 15,40, soit 15,4."
   },
   {
    "id": "ceb-2015-l7-q13",
@@ -6229,7 +6247,7 @@
      "10"
     ]
    ],
-   "explication": "4 870 ÷ 487 = 10, et 10 − 7 = 3 : 3 + 7 = 10 puis 10 × 487 = 4 870.",
+   "explication": "On part du résultat final : B × 487 = 4 870, donc B = 4 870 : 487 = 10. Ensuite A + 7 = 10, donc A = 3. Vérification : 3 + 7 = 10 et 10 × 487 = 4 870.",
    "toutOuRien": true
   },
   {
@@ -6260,10 +6278,11 @@
    "numero": "16",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Décompose 96 000.",
+   "enonce": "Le nombre 27 000 a été décomposé en parts équivalentes puis recomposé (27 000 → 3 × 9 000 → 9 × 3 000 → 3 × 9 000 → 27 000). Décompose le nombre 96 000 en parts équivalentes et recompose-le : complète chaque case de l'arbre du livret.",
    "points": 1.5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On partage chaque nombre en deux parts égales : 96 000 = 48 000 + 48 000, puis chaque 48 000 = 24 000 + 24 000, puis chaque 24 000 = 12 000 + 12 000 (8 parts). On recompose ensuite en sens inverse : 12 000 + 12 000 + 12 000 + 12 000 = 48 000, et 48 000 + 48 000 = 96 000."
   },
   {
    "id": "ceb-2015-l8-q1",
@@ -6330,7 +6349,7 @@
      "minute"
     ]
    ],
-   "explication": "kg, g, kg, l, €, cl, cents, min."
+   "explication": "On choisit l'unité qui donne une quantité réaliste. Pommes de terre : 5 kg (5 g, c'est trop peu). Citrons : 500 g. Rôti : 1,250 kg. Lessive : 3,5 l. Cadre : 25 €. Canette : 33 cl (une canette ne contient pas 33 l). Prix de la canette : 60 cents. Attente : 15 min. Pour le sac et le bidon, un prix en € a aussi du sens."
   },
   {
    "id": "ceb-2015-l8-q3",
@@ -6357,7 +6376,7 @@
      "1,5"
     ]
    ],
-   "explication": "250 ml = 1/4 l : 20 : 4 = 5 g ; 30 g = 1,5 × 20 g : 1,5 l."
+   "explication": "a) Ligne « Thé noir », colonne du temps : 5 min. b) Tisane aux herbes : 95 – 100 °C, le maximum est 100 °C. c) Le thé rouge demande 20 g pour 1 l ; 250 ml, c'est le quart d'un litre : 20 : 4 = 5 g. d) La tisane aux fruits demande 20 g pour 1 l ; 30 g = 20 g + 10 g, donc 1 l + 0,5 l = 1,5 l."
   },
   {
    "id": "ceb-2015-l8-q5",
@@ -6389,7 +6408,7 @@
      "0.6"
     ]
    ],
-   "explication": "3 : 2 ; 3 × 0,3 ; 3 × 0,2."
+   "explication": "On prend chaque fraction de 3 litres. Pomme : 1/2 de 3 l = 3 : 2 = 1,5 l. Ananas : 3/10 de 3 l = 3 × 3 : 10 = 0,9 l. Framboise : 2/10 de 3 l = 2 × 3 : 10 = 0,6 l. Vérification : 1,5 + 0,9 + 0,6 = 3 l."
   },
   {
    "id": "ceb-2015-l8-q10",
@@ -6416,7 +6435,7 @@
      "2"
     ]
    ],
-   "explication": "4 × 5 = 20 tasses par seau.",
+   "explication": "Le dessin indique : 1 tasse = 20 cuillères, 1 bouteille = 4 tasses, 1 seau = 5 bouteilles. Donc 2 bouteilles = 2 × 4 = 8 tasses ; 1 seau = 5 × 4 = 20 tasses ; et 40 tasses = 40 : 20 = 2 seaux.",
    "documents": [
     "liv8-p13"
    ]
@@ -6447,7 +6466,7 @@
     5,
     6
    ],
-   "explication": "Une grandeur se mesure."
+   "explication": "Une grandeur, c'est ce qu'on peut mesurer et exprimer avec un nombre et une unité : le prix (en €), la durée de garantie (en années), la longueur (en m), le poids (en kg), la capacité du réservoir (en l). Le type de carburant et la marque ne se mesurent pas."
   },
   {
    "id": "ceb-2015-l8-q12",
@@ -6466,7 +6485,7 @@
     "Charlemagne (742-814)"
    ],
    "reponse": 1,
-   "explication": "67, 76, 35 et 72 ans."
+   "explication": "On calcule l'âge de chacun à sa mort (année de mort − année de naissance) : Marie Curie 1934 − 1867 = 67 ans ; Einstein 1955 − 1879 = 76 ans ; Mozart 1791 − 1756 = 35 ans ; Charlemagne 814 − 742 = 72 ans. Einstein a vécu le plus longtemps."
   },
   {
    "id": "ceb-2015-l8-q14",
@@ -6481,7 +6500,7 @@
    "reponse": 9321.105,
    "tolerance": 0.2,
    "unite": "m",
-   "explication": "30 561 × 0,305 = 9 321,105 m. On accepte aussi la réponse arrondie : 9 321 m."
+   "explication": "Chaque pied vaut 0,305 m, on multiplie donc : 30 561 × 0,305. On peut décomposer : 30 561 × 0,3 = 9 168,3 et 30 561 × 0,005 = 152,805 ; 9 168,3 + 152,805 = 9 321,105 m. La réponse arrondie, 9 321 m, est aussi acceptée."
   },
   {
    "id": "ceb-2015-l8-q2",
@@ -6498,7 +6517,7 @@
    ],
    "reponse": 28,
    "unite": "carrés",
-   "explication": "En assemblant les morceaux de carrés, l'aire du triangle vaut 28 carrés."
+   "explication": "Le triangle a une base de 8 carrés et une hauteur de 7 carrés. Il occupe la moitié du rectangle de 8 sur 7 qui l'entoure : 8 × 7 = 56, puis 56 : 2 = 28 carrés. On peut aussi assembler les morceaux de carrés coupés deux par deux."
   },
   {
    "id": "ceb-2015-l8-q4",
@@ -6515,7 +6534,7 @@
    ],
    "reponse": 301,
    "unite": "cubes",
-   "explication": "Le solide complet contient 8 × 8 × 5 = 320 cubes ; il y en a déjà 19 : 320 − 19 = 301 cubes à ajouter."
+   "explication": "Le solide complet mesure 8 cubes de long, 8 de large et 5 de haut : 8 × 8 × 5 = 320 cubes. Il y en a déjà 19 (deux rangées de 8 qui partagent le cube du coin, soit 15, plus 4 cubes empilés au-dessus) : 320 − 19 = 301 cubes à ajouter."
   },
   {
    "id": "ceb-2015-l8-q6",
@@ -6545,7 +6564,7 @@
      "16"
     ]
    ],
-   "explication": "B est un carré de 4 m de côté : périmètre 16 m, aire 16 m². E est la moitié d'un carré de 8 m : 32 m². C a la même aire que B : 16 m²."
+   "explication": "Les traits de codage montrent que B est un carré de 4 m de côté (la moitié de 8 m) : périmètre 4 × 4 = 16 m et aire 4 × 4 = 16 m². E est la moitié du carré de 8 m coupé par sa diagonale : 8 × 8 : 2 = 32 m². C est un triangle de base 8 m (le côté vertical) et de hauteur 4 m : 8 × 4 : 2 = 16 m²."
   },
   {
    "id": "ceb-2015-l8-q7",
@@ -6562,7 +6581,7 @@
    ],
    "reponse": 210,
    "unite": "cm",
-   "explication": "La ficelle fait 8 fois l'arête : 8 × 20 = 160 cm ; avec les 50 cm de la boucle : 160 + 50 = 210 cm."
+   "explication": "La ficelle fait deux tours du cube. Chaque tour passe sur 4 faces et mesure 4 × 20 = 80 cm ; deux tours : 80 × 2 = 160 cm. On ajoute les 50 cm prévus pour les boucles du nœud : 160 + 50 = 210 cm."
   },
   {
    "id": "ceb-2015-l8-q8",
@@ -6570,10 +6589,11 @@
    "numero": "8",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Colorie 30 %.",
+   "enonce": "a) Colorie, en bleu, 30 % de la première figure (livret, page 11). b) Colorie, en bleu, 30 % de la seconde figure.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "30 %, c'est 30 carrés sur 100. a) La figure compte 10 × 10 = 100 carrés : on en colorie 30. b) La figure compte 15 × 10 = 150 carrés : 10 % de 150 = 15, donc 30 % = 15 × 3 = 45 carrés."
   },
   {
    "id": "ceb-2015-l8-q9",
@@ -6607,7 +6627,7 @@
      "0,4"
     ]
    ],
-   "explication": "La croix compte 5 carrés : la première partie grisée en représente 1 (soit 1/5) ; la seconde en représente 2 (soit 2/5)."
+   "explication": "La croix est faite de 5 carrés identiques. Première figure : la moitié du carré du haut + la moitié du carré de droite = 1 carré, soit 1/5. Deuxième figure : le carré du bas entier + la moitié du carré du centre + la moitié du carré de droite = 2 carrés, soit 2/5."
   },
   {
    "id": "ceb-2015-l8-q13",
@@ -6675,7 +6695,7 @@
     "Informer"
    ],
    "reponse": 3,
-   "explication": "C'est un texte documentaire."
+   "explication": "C'est un texte documentaire : il explique comment communiquent les animaux et les êtres humains, avec des parties titrées (A, B, C, D), des exemples, des notes de définition et un schéma. L'auteure veut nous apprendre des choses, pas nous raconter une histoire, nous convaincre ou nous donner des ordres."
   },
   {
    "id": "ceb-2015-l9-q2",
@@ -6697,7 +6717,7 @@
     "utiliser une langue",
     "utiliser une langue pour se faire comprendre"
    ],
-   "explication": "« …mais pas de créer des phrases qui ont du sens »."
+   "explication": "L'auteure oppose deux choses : les perroquets peuvent « répéter des mots ou de courtes phrases », « mais pas créer des phrases qui ont du sens ». Parler, c'est donc créer des phrases qui ont du sens, c'est-à-dire utiliser une langue pour se faire comprendre."
   },
   {
    "id": "ceb-2015-l9-q3",
@@ -6717,7 +6737,7 @@
     "comprennent les messages des autres",
     "comprennent les messages produits"
    ],
-   "explication": "Il faut produire et comprendre."
+   "explication": "Le texte pose deux conditions reliées par « et » : les individus doivent « produire des messages compréhensibles par les autres et comprendre les messages produits par les autres ». Communiquer, c'est faire les deux : envoyer des messages et comprendre ceux des autres."
   },
   {
    "id": "ceb-2015-l9-q4",
@@ -6738,7 +6758,7 @@
     "C. LANGUE : façon spéciale de parler. Exemple : la langue des ados."
    ],
    "reponse": 1,
-   "explication": "Une langue comme le français ou le chinois."
+   "explication": "Dans cette phrase, « langue » désigne un ensemble de mots partagés par des personnes, comme le français ou le chinois : c'est le sens B. Les animaux ont bien une langue dans la bouche (sens A), mais ils n'ont pas de langue pour se parler."
   },
   {
    "id": "ceb-2015-l9-q5",
@@ -6763,7 +6783,7 @@
     0,
     2
    ],
-   "explication": "Ils communiquent (langage) sans parler (langue).",
+   "explication": "La partie A dit que les animaux « ne parlent pas » et n'utilisent pas « une langue », « mais ils communiquent » et « utilisent divers langages ». Les deux bons intertitres disent la même chose : ils communiquent, par un langage, mais ne parlent pas et n'ont pas de langue.",
    "parReponse": true
   },
   {
@@ -6795,7 +6815,7 @@
     0,
     2
    ],
-   "explication": "Un langage animal ; les mots d'une langue."
+   "explication": "L'éléphant qui ouvre ses oreilles envoie un signal à d'autres animaux : c'est un exemple de langage animal, partie A. Les mots que tu utiliseras adulte appartiennent à ta langue : c'est la communication verbale des êtres humains, partie C."
   },
   {
    "id": "ceb-2015-l9-q7",
@@ -6900,7 +6920,7 @@
      "miaulement"
     ]
    ],
-   "explication": "hurlement, hurler ; lions, rugissement, rugir ; miaulent, miaulement."
+   "explication": "On forme le nom avec le suffixe « -ement » : hurler → le hurlement, rugir → le rugissement, miauler → le miaulement. Les lions rugissent et les loups hurlent, comme le dit la partie B. Au présent, « les chats miaulent » prend « -ent », car le sujet est au pluriel."
   },
   {
    "id": "ceb-2015-l9-q12",
@@ -6920,7 +6940,7 @@
     "chiens sauvages d'Australie",
     "Les dingos sont des chiens sauvages d'Australie."
    ],
-   "explication": "Note 2 du texte."
+   "explication": "Le petit chiffre 2 après « dingos » renvoie à une note en bas de la page : « Les dingos sont des chiens sauvages d'Australie. » Attention à l'orthographe : « chiens » et « sauvages » prennent un « s », car il y a plusieurs dingos."
   },
   {
    "id": "ceb-2015-l9-q13",
@@ -6953,7 +6973,7 @@
     2,
     3
    ],
-   "explication": "Voir la partie D."
+   "explication": "Monter sur le podium, c'est se déplacer : un déplacement. Sourire, c'est une expression du visage : une mimique. Montrer sa médaille avec la main, c'est un geste. Remercier avec des mots, c'est une communication verbale, qui utilise une langue."
   },
   {
    "id": "ceb-2015-l9-q13b",
@@ -6969,7 +6989,7 @@
     "comm-3"
    ],
    "reponseModele": "Mimique (1 point) : un mouvement du visage. Exemple : « Tu fais une grimace. » Communication verbale (1 point) : avec des mots. Exemple : « Tu lui dis que tu n'as pas aimé ce film. »",
-   "explication": "Une mimique, c'est une expression du visage ; la communication verbale utilise des mots."
+   "explication": "Une bonne réponse donne deux façons de faire comprendre qu'on n'a pas aimé le film. Une mimique est une expression du visage : « Tu fais une grimace. » Une communication verbale utilise des mots : « Tu lui dis que tu n'as pas aimé ce film. »"
   },
   {
    "id": "ceb-2015-l9-q14",
@@ -6989,7 +7009,7 @@
     "du bruit qu'ils font quand ils sont en danger",
     "le bruit qu'ils font en danger"
    ],
-   "explication": "Note 1 du texte."
+   "explication": "Le petit chiffre 1 après « diks diks » renvoie à une note en bas de la page : leur nom « vient du bruit qu'ils font lorsqu'ils sont en danger »."
   },
   {
    "id": "ceb-2015-l9-q15",
@@ -7017,7 +7037,7 @@
     2,
     5
    ],
-   "explication": "Ils communiquent par un langage non verbal, sans langue."
+   "explication": "La partie A dit que les animaux « communiquent » et « utilisent divers langages » : des signaux, des danses, des odeurs, des couleurs. Mais ils « ne parlent pas » et « n'utilisent pas une langue » : leur communication n'est donc pas verbale, elle est non verbale."
   },
   {
    "id": "ceb-2015-l9-q16",
@@ -7048,7 +7068,7 @@
     0,
     0
    ],
-   "explication": "Ils communiquaient « surtout » en se parlant, mais aussi par gestes et signaux."
+   "explication": "Le texte dit qu'avant l'écriture, les hommes communiquaient « surtout » en se parlant : « surtout » ne veut pas dire « seulement ». Avant comme après l'écriture, ils utilisent aussi des gestes et des signaux (la main pour dire « Au revoir », le feu rouge). Les phrases avec « ne… qu'en se parlant » sont donc fausses."
   },
   {
    "id": "ceb-2015-l9-q17",
@@ -7067,7 +7087,7 @@
     "gestes, mimiques, changements de position et déplacements",
     "les gestes, les mimiques, les changements de position et les déplacements"
    ],
-   "explication": "Tout le groupe sujet de la phrase précédente."
+   "explication": "« Ils » reprend tout le groupe sujet de la phrase précédente : « Gestes, mimiques, changements de position et déplacements ». Ce sont eux qui « s'ajoutent à la communication verbale ». Il faut citer les quatre éléments, pas seulement un."
   },
   {
    "id": "ceb-2015-l9-q18",
@@ -7079,7 +7099,8 @@
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
-   "reponseModele": "Quand vous voulez obtenir une permission de vos parents, par exemple, vous ne leur parlez pas de loin en tirant la tête : vous vous approchez d'eux et vous souriez."
+   "reponseModele": "Quand vous voulez obtenir une permission de vos parents, par exemple, vous ne leur parlez pas de loin en tirant la tête : vous vous approchez d'eux et vous souriez.",
+   "explication": "On remplace « tu » par « vous » et on accorde tout ce qui en dépend : tes → vos, veux → voulez, parles → parlez, t'approches → vous approchez, souris → souriez. Au présent, les verbes avec « vous » se terminent par « -ez ». « Leur » et « eux » ne changent pas : ils désignent les parents."
   },
   {
    "id": "ceb-2015-l9-q19",
@@ -7226,7 +7247,7 @@
     "leur manifester ta joie de les revoir",
     "leur manifester ta joie de les revoir."
    ],
-   "explication": "lui → leur ; le → les."
+   "explication": "« Lui » et « le » désignaient une seule personne (« quelqu'un »). Avec « tes parents », il y a plusieurs personnes : « lui » devient « leur » (ce pronom placé devant le verbe ne prend jamais de « s ») et « le » devient « les »."
   },
   {
    "id": "ceb-2015-l9-q23",
@@ -7243,7 +7264,8 @@
     "comm-2",
     "comm-3"
    ],
-   "reponseModele": "Les hommes utilisent une langue (communication verbale, sons articulés) ; les animaux communiquent sans langue."
+   "reponseModele": "Les hommes utilisent une langue (communication verbale, sons articulés) ; les animaux communiquent sans langue.",
+   "explication": "Une bonne réponse dit que les êtres humains utilisent une langue (ils parlent avec des sons articulés), alors que les animaux communiquent mais ne parlent pas. Le texte le dit : la communication verbale « est le propre des êtres humains »."
   },
   {
    "id": "ceb-2015-l9-q8",
@@ -7295,7 +7317,7 @@
     0,
     0
    ],
-   "explication": "Dans cette partie, l'auteure donne des exemples, place des illustrations, ajoute des définitions et écrit certains mots en italique."
+   "explication": "Dans la partie A, l'auteure donne des exemples (l'abeille, la marmotte, les diks diks, les dingos, les pieuvres), place des photos à côté, ajoute des définitions en bas de page (notes 1 et 2) et écrit certains mots en italique, comme « langue » et « langages »."
   },
   {
    "id": "ceb-2015-l9-q9b",
@@ -7311,7 +7333,7 @@
     "comm-2"
    ],
    "reponseModele": "Un exemple au choix (1 point) : la main pour dire « Au revoir » ; le doigt sur la bouche ; un chien muni d'une laisse ; un feu rouge ; les moineaux pépient ; les lions rugissent ; les loups hurlent ; les chouettes hululent ; les poules caquètent. Un mot en italique (1 point) : langages, langues ou articulés.",
-   "explication": "Les mots en italique sont des mots importants que l'auteure veut mettre en évidence."
+   "explication": "Une bonne réponse recopie un exemple de la partie B, comme « la main pour dire Au revoir », « un feu rouge » ou « les lions rugissent », et un mot écrit en italique, qui est un mot important : « langages », « langues » ou « articulés »."
   },
   {
    "id": "ceb-2015-l9-q11",
@@ -7384,7 +7406,7 @@
     2,
     3
    ],
-   "explication": "« ils » fait utiliser ; « tous les animaux de leur espèce » comprennent ; « Gestes, mimiques, changements de position et déplacements » se combinent."
+   "explication": "Pour trouver le sujet, on demande « Qui est-ce qui… ? ». Qui utilise des signaux ? « ils » (les animaux). Qui comprend ? « tous les animaux de leur espèce » : ici le sujet est placé après le verbe. Qui se combine ? « Gestes, mimiques, changements de position et déplacements »."
   },
   {
    "id": "ceb-2015-l9-q22",
@@ -7419,7 +7441,7 @@
     1,
     2
    ],
-   "explication": "Qui fait la danse ? une abeille (sujet). Elle fait quoi ? une sorte de danse (complément direct). « Pour signaler… » peut être déplacé ou supprimé : complément circonstanciel."
+   "explication": "Qui est-ce qui fait ? « une abeille » : sujet. « fait » : verbe. Elle fait quoi ? « une sorte de danse que comprennent les autres abeilles » : complément direct du verbe, sans préposition. « Pour signaler qu'elle a trouvé des fleurs » dit dans quel but ; on peut le déplacer ou le supprimer : complément circonstanciel."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2015), comparé question par question le 21/10/2026."

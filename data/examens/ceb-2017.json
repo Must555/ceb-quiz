@@ -737,7 +737,7 @@
     "Informer."
    ],
    "reponse": 3,
-   "explication": "Le texte explique des faits : il informe."
+   "explication": "Le texte donne des faits et des explications sur l'Art nouveau, la bande dessinée et le surréalisme en Belgique (dates, noms, raisons) : l'auteur veut informer. Il ne cherche pas à amuser, à convaincre ni à donner un ordre (enjoindre)."
   },
   {
    "id": "ceb-2017-l1-q2",
@@ -786,7 +786,7 @@
      "vases"
     ]
    ],
-   "explication": "Le texte cite : en façade, sur les rampes d'escalier, les lustres et les vases (trois suffisent).",
+   "explication": "Le texte dit que ce style « apparaissait en façade, mais aussi à l'intérieur comme les rampes d'escalier, les lustres, les vases ». Il y a donc quatre endroits possibles : la façade, les rampes d'escalier, les lustres et les vases ; trois suffisent.",
    "souple": true,
    "differentes": true,
    "texte": "1. {1}\n2. {2}\n3. {3}"
@@ -804,7 +804,8 @@
    "documents": [
     "art-2"
    ],
-   "reponseModele": "Construire ces maisons coutait très cher ; avec la Première Guerre mondiale, ces dépenses n'étaient plus possibles."
+   "reponseModele": "Construire ces maisons coutait très cher ; avec la Première Guerre mondiale, ces dépenses n'étaient plus possibles.",
+   "explication": "Une bonne réponse donne les deux raisons du texte : fabriquer ces maisons « était très couteux », et la Première Guerre mondiale a commencé (« Avec la guerre, ces dépenses n'étaient plus possibles »)."
   },
   {
    "id": "ceb-2017-l1-q5",
@@ -828,7 +829,7 @@
      "dessinateur"
     ]
    ],
-   "explication": "Horta a imaginé des maisons ; Hergé a créé Tintin."
+   "explication": "Le texte dit que Victor Horta et d'autres architectes « ont imaginé des maisons » : Horta est architecte. Hergé a créé Tintin, un héros de bande dessinée : il est dessinateur."
   },
   {
    "id": "ceb-2017-l1-q7a",
@@ -850,7 +851,7 @@
     "après"
    ],
    "reponse": 1,
-   "explication": "Les deux se développent dans les années 1920."
+   "explication": "Le texte dit que la bande dessinée « commença à se développer en Belgique dans les années 1920 » et que c'est « dans les années 1920 également » que le surréalisme est apparu : les deux se développent en même temps."
   },
   {
    "id": "ceb-2017-l1-q7b",
@@ -872,7 +873,7 @@
     "après"
    ],
    "reponse": 0,
-   "explication": "Art nouveau : fin du 19e siècle ; surréalisme : années 1920."
+   "explication": "L'Art nouveau apparait « dès la fin du 19e siècle » et disparait au début de la Première Guerre mondiale. Le surréalisme n'apparait que dans les années 1920, après la guerre : l'Art nouveau s'est donc développé avant."
   },
   {
    "id": "ceb-2017-l1-q8",
@@ -890,7 +891,7 @@
    "reponse": [
     "les aventures de Tintin"
    ],
-   "explication": "Qui est-ce qui sont nées ? « les aventures de Tintin » (sujet inversé)."
+   "explication": "Pour trouver le sujet, on pose la question « Qu'est-ce qui sont nées ? » : ce sont « les aventures de Tintin ». Ici, le sujet est placé après le verbe (sujet inversé) ; « la presse » est l'endroit où elles sont nées, pas le sujet."
   },
   {
    "id": "ceb-2017-l1-q9",
@@ -909,7 +910,7 @@
     "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros",
     "à des maisons d'édition qui publiaient des livres avec les aventures de certains héros de BD"
    ],
-   "explication": "Appartenir à quelque chose : le complément est tout le groupe « à des maisons d'édition qui publiaient des livres avec les aventures de certains héros ». Il faut souligner le groupe en entier."
+   "explication": "On dit « appartenir à quelque chose » : le complément indirect commence par « à ». Il comprend tout le groupe « à des maisons d'édition qui publiaient des livres avec les aventures de certains héros », car la partie « qui publiaient… » complète le nom « maisons d'édition »."
   },
   {
    "id": "ceb-2017-l1-q10",
@@ -931,7 +932,7 @@
     "l'acier et le fer"
    ],
    "reponse": 1,
-   "explication": "Ils combinaient le verre, l'acier et le fer."
+   "explication": "« qu' » est un pronom relatif : il reprend ce qui est juste avant lui. On peut dire : « ils combinaient le verre, l'acier et le fer ». Ce ne sont pas « les architectes » : eux sont repris par « ils », ce sont eux qui combinent."
   },
   {
    "id": "ceb-2017-l1-q11",
@@ -946,7 +947,7 @@
    "documents": [
     "art-2"
    ],
-   "explication": "C'est ce que dit le texte.",
+   "explication": "Une bonne réponse reprend l'idée du texte : après la guerre, certains artistes « voulaient s'opposer aux idées de l'époque, les bouleverser et davantage rêver ». Il n'est pas nécessaire d'écrire une phrase complète.",
    "reponseModele": "…voulaient s'opposer aux idées de l'époque, les bouleverser et davantage rêver (tout énoncé allant dans ce sens ; la phrase complète n'est pas exigée)."
   },
   {
@@ -969,7 +970,7 @@
     "ses toiles montrent le ciel et les étoiles."
    ],
    "reponse": 1,
-   "explication": "Une énigme est difficile à comprendre."
+   "explication": "Une énigme est une chose difficile à comprendre, qu'on cherche à deviner. Le texte explique que Magritte peignait des choses « qui n'existaient pas, ensemble, dans la réalité » : c'est pourquoi ses toiles « intriguent »."
   },
   {
    "id": "ceb-2017-l1-q14",
@@ -996,7 +997,7 @@
     "nichaient",
     "disposaient"
    ],
-   "explication": "intégrer = inclure, insérer, mettre. L'accord en -aient n'est pas exigé."
+   "explication": "« Intégrer », c'est faire entrer une chose dans un ensemble. On peut le remplacer par un verbe de même sens, comme incluaient, inséraient, mettaient, plaçaient ou installaient : la phrase garde alors le même sens."
   },
   {
    "id": "ceb-2017-l1-q15",
@@ -1027,7 +1028,7 @@
     0,
     1
    ],
-   "explication": "Deux langues pour un même lieu : pays bizarre. La BD existait aux États-Unis. Les tableaux : Magritte.",
+   "explication": "1re phrase : un même lieu qui porte deux noms selon la langue, comme Lille et Rijssel, va sous « Un pays bizarre ? ». 2e phrase : la BD « existait déjà […] aux États-Unis », c'est la partie « Des dizaines de héros de BD ». 3e phrase : des tableaux étranges, c'est la partie sur Magritte.",
    "toutOuRien": true
   },
   {
@@ -1051,7 +1052,7 @@
     2,
     3
    ],
-   "explication": "Après le verbe être : « un pays surréaliste », « très couteux », « plus possibles ». « désignent la même ville » : CD.",
+   "explication": "Un attribut du sujet suit un verbe d'état (être, paraitre, devenir…) et dit comment est le sujet : « un pays surréaliste », « très couteux », « plus possibles ». Dans « désignent la même ville », le verbe n'est pas un verbe d'état : « la même ville » est un complément direct du verbe.",
    "parReponse": true
   },
   {
@@ -1087,7 +1088,7 @@
     "cinéaste",
     "cinéastes"
    ],
-   "explication": "Le paragraphe parle de la bande dessinée."
+   "explication": "Ce paragraphe parle de la bande dessinée : les magazines Spirou et Tintin donnaient envie « à d'autres dessinateurs, plus jeunes, de faire de la bande dessinée ». Ces artistes sont donc des dessinateurs (auteurs) de BD."
   },
   {
    "id": "ceb-2017-l1-q16",
@@ -1113,7 +1114,7 @@
      "des dizaines de héros de BD"
     ]
    ],
-   "explication": "« le héros créé par Hergé » : le déterminant « le » montre le singulier.",
+   "explication": "Au singulier : « le héros créé par Hergé », car le déterminant « le » et « créé » sans -s montrent qu'il n'y a qu'un héros. Au pluriel : « certains héros » ou « des dizaines de héros ». Le mot « héros » ne change pas : c'est le déterminant qui montre le nombre.",
    "texte": "singulier : {1}\npluriel : {2}"
   },
   {
@@ -1153,7 +1154,7 @@
      5
     ]
    ],
-   "explication": "Le texte cite trois éléments propres à l'Art nouveau : de grandes fenêtres en façade, une verrière sur le toit et des lignes courbes. Deux au choix suffisent.",
+   "explication": "Les photos montrent de grandes fenêtres, une verrière et des formes courbes. Dans l'extrait, trois propositions décrivent ces éléments propres à l'Art nouveau : « de grandes fenêtres en façade », « une verrière sur le toit » et « des lignes courbes qui rappellent la végétation ». « La lumière » et « des bâtiments agréables à regarder » sont des buts, pas des éléments de la construction.",
    "differentes": true,
    "toutOuRien": true
   },
@@ -1187,7 +1188,7 @@
     5,
     6
    ],
-   "explication": "Ce qui contribue à la réputation de la Belgique : l'Art nouveau, la bande dessinée, le surréalisme, le cinéma et la littérature. « Notre pays », « ses frontières » et « la Belgique » ne sont pas ce qui crée la réputation.",
+   "explication": "L'extrait dit que l'Art nouveau, la bande dessinée et le surréalisme, « avec le cinéma, la littérature », contribuent à créer la réputation de la Belgique : ce sont les cinq groupes à choisir. « Notre pays » et « la Belgique » désignent le pays lui-même, et « ses frontières » n'est pas ce qui le rend célèbre.",
    "parReponse": true
   },
   {
@@ -1207,7 +1208,7 @@
    "reponse": [
     "le héros créé par Hergé"
    ],
-   "explication": "Pour désigner Tintin sans répéter son nom, l'auteur écrit « le héros créé par Hergé ». Il faut recopier le groupe nominal en entier."
+   "explication": "Deux groupes sont déjà soulignés : « Tintin » et « un des personnages de bande dessinée les plus connus dans le monde ». Un autre groupe nominal désigne Tintin sans le nommer : « le héros créé par Hergé ». Il faut le recopier en entier, avec « créé par Hergé »."
   },
   {
    "id": "ceb-2017-l2-q1",
@@ -1218,7 +1219,8 @@
    "enonce": "« Le vase de Tante Gertrude » : raconte par écrit, de manière humoristique, l'histoire d'une bande dessinée sans texte, pour un lecteur qui ne la connait pas (paragraphes, connecteurs, temps verbaux adéquats).",
    "points": 30,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un bon récit présente les personnages (Tante Gertrude, le neveu, la nièce, le chat Poussy) et le vase, puis raconte toutes les étapes : la tante apporte un vase, Poussy saute de la table et le vase se brise, la tante repart, Poussy, inquiet, est appelé et il est surpris de voir ses maitres ravis et de recevoir une récompense. Le texte est organisé en paragraphes, avec des connecteurs, des temps du passé bien choisis, et il cherche à faire sourire."
   },
   {
    "id": "ceb-2017-l3-q3",
@@ -1269,7 +1271,7 @@
      "3"
     ]
    ],
-   "explication": "Cube : 6 faces, 8 sommets, 12 arêtes ; pyramide à base carrée : 5-5-8 ; tétraèdre : 4-4-6. Au sommet entouré : 3 faces pour le cube, 4 pour la pyramide, 3 pour le tétraèdre. À l'épreuve, chaque colonne (un solide, ses 4 réponses) est notée tout ou rien : 1 point par solide.",
+   "explication": "Cube : 6 faces carrées, 8 sommets, 12 arêtes, et 3 faces se rejoignent à chaque sommet. Pyramide à base carrée : la base + 4 triangles = 5 faces ; 4 sommets de la base + la pointe = 5 sommets ; 4 + 4 = 8 arêtes ; à la pointe entourée, les 4 triangles se rejoignent. Tétraèdre : 4 faces triangulaires, 4 sommets, 6 arêtes et 3 faces à chaque sommet.",
    "documents": [
     "liv3-p03"
    ],
@@ -1306,7 +1308,7 @@
    "fiche": "ma-triangles",
    "reponse": 180,
    "unite": "°",
-   "explication": "Toujours 180°."
+   "explication": "Dans tous les triangles, quelle que soit leur forme, la somme des trois angles vaut 180°. Par exemple, dans un triangle équilatéral, chaque angle mesure 60° et 60 + 60 + 60 = 180."
   },
   {
    "id": "ceb-2017-l3-q1",
@@ -1317,7 +1319,8 @@
    "enonce": "Trace la figure après rotation.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "La figure grisée fait un quart de tour dans le sens des aiguilles d'une montre : la barre verticale de droite devient la barre du bas et les deux bras deviennent verticaux. Le disque et l'étoile tournent avec la figure : l'étoile, au bout de la barre, arrive en bas à droite (case E6) et le disque reste au milieu de la figure."
   },
   {
    "id": "ceb-2017-l3-q2",
@@ -1325,10 +1328,11 @@
    "numero": "2",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Codage des triangles équilatéral, rectangle, isocèle.",
+   "enonce": "Place des signes mathématiques sur ces triangles dessinés à main levée pour montrer qu'il s'agit d'un triangle équilatéral, d'un triangle rectangle et d'un triangle isocèle.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Pour l'équilatéral, on marque les trois côtés du même signe (un petit trait) : ils ont la même longueur. Pour le triangle rectangle, on dessine le petit carré de l'angle droit. Pour l'isocèle, on marque seulement deux côtés du même signe."
   },
   {
    "id": "ceb-2017-l3-q4",
@@ -1350,7 +1354,7 @@
     "Parallélépipède 4"
    ],
    "reponse": 1,
-   "explication": "C'est le parallélépipède 2 : en pliant le développement, on retrouve les motifs de ses faces."
+   "explication": "Dans le développement, la face à losanges touche la face gris clair, et la face pointillée est un des deux petits bouts. Le parallélépipède 2 montre bien ces trois faces côte à côte. Le 1 est impossible : la face à petits carrés et la face à losanges sont opposées, elles ne peuvent pas se toucher."
   },
   {
    "id": "ceb-2017-l3-q5",
@@ -1379,7 +1383,7 @@
     1,
     2
    ],
-   "explication": "Une coupe parallèle à une face donne deux parallélépipèdes rectangles ; une coupe qui passe par deux arêtes opposées donne deux prismes à base triangulaire."
+   "explication": "a) La coupe est parallèle aux faces du dessus et du dessous : on obtient deux parallélépipèdes rectangles moins hauts que le cube. b) La coupe passe par deux arêtes opposées, en suivant la diagonale du dessus et du dessous : chaque morceau a deux faces triangulaires, ce sont deux prismes à base triangulaire."
   },
   {
    "id": "ceb-2017-l3-q6",
@@ -1409,7 +1413,7 @@
     1,
     4
    ],
-   "explication": "Cadre 1 : « Figures qui sont des quadrilatères » (carré, rectangle, trapèzes). Cadre 2 : « Figures qui ont au moins un angle droit »."
+   "explication": "Cadre 1 : les figures du « oui » (carré, rectangle, trapèzes) ont 4 côtés, les autres non : ce sont des quadrilatères. Cadre 2 : le carré, le rectangle, le trapèze rectangle, le triangle rectangle et la « maison » ont au moins un angle droit, pas les autres. « Tous les angles droits » ne va pas, à cause du trapèze rectangle."
   },
   {
    "id": "ceb-2017-l3-q7",
@@ -1444,7 +1448,7 @@
     2,
     5
    ],
-   "explication": "A (triangle rectangle isocèle) : 1 axe ; B (parallélogramme) : 0 ; C (hexagone) : 2 ; D (disque) : une infinité."
+   "explication": "A est un triangle rectangle aux deux côtés de l'angle droit égaux : 1 axe, qui passe par l'angle droit. B est un parallélogramme sans angle droit : aucun axe. C est un hexagone qui n'est pas régulier : 2 axes, un vertical et un horizontal. D est un cercle : tout diamètre est un axe, il y en a une infinité."
   },
   {
    "id": "ceb-2017-l3-q8",
@@ -1452,10 +1456,11 @@
    "numero": "8",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Agrandis la figure.",
+   "enonce": "Agrandis la figure grisée du livret (page 8). Un côté est tracé. Achève cette figure en utilisant ta latte.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le côté déjà tracé mesure 14 carreaux alors que la base de la figure grisée en mesure 7 : la figure est agrandie 2 fois. Chaque côté doit donc être 2 fois plus long (1 carreau devient 2 carreaux) et les angles droits restent droits."
   },
   {
    "id": "ceb-2017-l3-q9",
@@ -1477,7 +1482,7 @@
     "Construction 4"
    ],
    "reponse": 1,
-   "explication": "C'est la construction 2 : AC = BC, la droite d passe par C perpendiculairement à [AB] et la droite e, parallèle à d, passe par B."
+   "explication": "Dans la construction 2, les codes montrent AC = BC ; la droite d passe par C et coupe [AB] à angle droit ; la droite e passe par B et est parallèle à d. Dans la 4, ce sont AB et AC qui sont égaux ; dans la 1, e coupe d (elles ne sont pas parallèles) ; dans la 3, rien ne montre que AC = BC."
   },
   {
    "id": "ceb-2017-l3-q10",
@@ -1485,10 +1490,11 @@
    "numero": "10",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Tracés dans des cercles.",
+   "enonce": "Trace avec tes instruments en respectant chaque consigne : un hexagone régulier dont tous les sommets se trouvent sur le cercle ; le cercle dont le centre est le point C et dont le rayon mesure 2 cm ; un triangle rectangle dont les 3 sommets se trouvent sur le cercle ; le carré dont 1 sommet est le point A et les 3 autres sont sur le cercle.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Hexagone régulier : on reporte le rayon au compas 6 fois sur le cercle et on relie les points. Cercle de centre C : on pique le compas en C avec une ouverture de 2 cm. Triangle rectangle : si un côté du triangle est un diamètre du cercle, l'angle opposé est toujours droit. Carré : on trace le diamètre qui part de A, puis le diamètre perpendiculaire ; leurs 4 extrémités sont les sommets."
   },
   {
    "id": "ceb-2017-l3-q11",
@@ -1496,10 +1502,11 @@
    "numero": "11",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace carré, rectangle, triangle rectangle et parallélogramme.",
+   "enonce": "Dans le quadrillage, au départ des côtés déjà dessinés, trace avec tes instruments : le carré dont a est un côté ; un rectangle strict dont b est une largeur ; un triangle rectangle dont c est une base ; un parallélogramme strict dont d est une base.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Carré : 4 côtés de même longueur que a et 4 angles droits (à l'équerre). Rectangle strict : 4 angles droits, mais la longueur doit être différente de la largeur b, sinon c'est un carré. Triangle rectangle : un angle droit tracé à l'équerre à une extrémité de c. Parallélogramme strict : côtés opposés parallèles et de même longueur, sans angle droit et avec deux côtés voisins de longueurs différentes."
   },
   {
    "id": "ceb-2017-l3-q12",
@@ -1507,10 +1514,11 @@
    "numero": "12",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un triangle de 5, 6 et 8 cm.",
+   "enonce": "Trace, avec tes instruments, un triangle dont les côtés mesurent 5 cm, 6 cm et 8 cm.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On trace d'abord le côté de 8 cm. Puis, au compas, on trace un arc de 5 cm de rayon depuis une extrémité et un arc de 6 cm depuis l'autre. Le point où les deux arcs se croisent est le troisième sommet ; il reste à le relier aux deux extrémités."
   },
   {
    "id": "ceb-2017-l3-q13bc",
@@ -1518,10 +1526,11 @@
    "numero": "13bc",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Nature du triangle et hauteur.",
+   "enonce": "Observe le triangle ABC du livret (page 13). Complète : en considérant les côtés, cette figure est un triangle … ; en considérant les angles, cette figure est un triangle … Puis trace en bleu la hauteur qui passe par le point A.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les trois côtés ont des longueurs différentes : le triangle est scalène. L'angle en B est plus grand qu'un angle droit : le triangle est obtusangle. La hauteur issue de A part de A et tombe perpendiculairement sur le côté [BC] ; comme l'angle B est obtus, il faut prolonger [BC] et la hauteur tombe en dehors du triangle."
   },
   {
    "id": "ceb-2017-l3-q14",
@@ -1537,7 +1546,8 @@
    "documents": [
     "liv3-p15"
    ],
-   "reponseModele": "Un parcours conforme : de la place de la Victoire à la place du Palais de Justice par la rue du Palais, puis à droite vers la place de l'Abattoir et l'avenue E. Mullendorf, jusqu'à la place d'Arles. 1 pt."
+   "reponseModele": "Un parcours conforme : de la place de la Victoire à la place du Palais de Justice par la rue du Palais, puis à droite vers la place de l'Abattoir et l'avenue E. Mullendorf, jusqu'à la place d'Arles. 1 pt.",
+   "explication": "Depuis la place de la Victoire, on suit la rue du Palais jusqu'à la place du Palais de Justice. On tourne à droite vers la place de l'Abattoir, puis on suit l'avenue E. Mullendorf qui descend jusqu'à la place d'Arles."
   },
   {
    "id": "ceb-2017-l3-q14a",
@@ -1583,7 +1593,7 @@
    ],
    "souple": true,
    "toutOuRien": true,
-   "explication": "Après la place de l'Abattoir, l'avenue E. Mullendorf mène à la place d'Arles, dans la case J8 (colonne J, ligne 8). Les coordonnées peuvent s'écrire dans l'ordre J, 8 ou 8, J."
+   "explication": "Après la place de l'Abattoir, l'avenue E. Mullendorf mène à la place d'Arles. Pour ses coordonnées, on lit la lettre de la colonne en haut (J) et le numéro de la ligne à gauche (8) : case J8, qu'on peut aussi écrire 8, J."
   },
   {
    "id": "ceb-2017-l3-q14b",
@@ -1622,7 +1632,7 @@
     ]
    ],
    "souple": true,
-   "explication": "La place du Palais de Justice est dans la case G3 (colonne G, ligne 3)."
+   "explication": "Le point de la place du Palais de Justice se trouve dans la colonne G (lettre lue en haut) et dans la ligne 3 (numéro lu à gauche) : case G3."
   },
   {
    "id": "ceb-2017-l3-q15",
@@ -1630,10 +1640,11 @@
    "numero": "15",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Développement d'un prisme à base triangulaire.",
+   "enonce": "Complète un des développements de la page suivante du livret pour obtenir un prisme à base triangulaire. Découpe-le et colle-le.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un prisme à base triangulaire a 5 faces : 2 triangles identiques (les bases) et 3 rectangles. Dans le développement, les 3 rectangles sont côte à côte et un triangle est attaché de chaque côté de cette bande, pour qu'en pliant ils ferment les deux bouts."
   },
   {
    "id": "ceb-2017-l4-q1",
@@ -1661,7 +1672,7 @@
      "10"
     ]
    ],
-   "explication": "Une raquette pèse environ 300 g et mesure 70 cm ; un terrain de tennis fait environ 10 m de large et 200 m² (en simple)."
+   "explication": "Une raquette de tennis est légère : environ 300 g (300 kg serait le poids d'une moto), et elle mesure environ 70 cm. Un terrain de tennis mesure environ 10 m de large ; sa surface se compte donc en m² : environ 200 m²."
   },
   {
    "id": "ceb-2017-l4-q2",
@@ -1690,7 +1701,7 @@
     2,
     0
    ],
-   "explication": "1 dal = 10 l ; 2 400 cg = 24 g ; 3 dam² = 300 m² ; 1,1 cg = 0,011 g."
+   "explication": "On écrit les deux mesures dans la même unité. 57,2 dal = 572 l, donc 57,2 l < 57,2 dal. 2 400 cg = 24 000 mg, donc 240 mg < 2 400 cg. 3 dam² = 300 m² = 30 000 dm², donc 3 dam² > 30 dm². 1,1 g = 110 cg, donc 1,1 cg < 1,1 g."
   },
   {
    "id": "ceb-2017-l4-q3a",
@@ -1712,7 +1723,7 @@
     1,
     2
    ],
-   "explication": "1,75 m : une table ou un adulte."
+   "explication": "175 cm = 1,75 m : c'est la taille d'un adulte ou la longueur d'une table. Une marche d'escalier ou un évier ne mesurent que quelques dizaines de centimètres."
   },
   {
    "id": "ceb-2017-l4-q3b",
@@ -1733,7 +1744,7 @@
    "reponse": [
     0
    ],
-   "explication": "Un enfant court 100 m en environ 15 s."
+   "explication": "15 secondes, c'est très court : c'est à peu près le temps qu'il faut pour courir 100 m. Cuire un poulet prend environ une heure, un journal télévisé dure environ une demi-heure et une chanson dure quelques minutes."
   },
   {
    "id": "ceb-2017-l4-q3c",
@@ -1755,7 +1766,7 @@
     0,
     2
    ],
-   "explication": "Un bébé à la naissance pèse environ 3 kg ; un petit sac de pommes de terre aussi."
+   "explication": "3 kg, c'est la masse d'un bébé à la naissance ou d'un sac de pommes de terre. Une feuille de papier ne pèse que quelques grammes et une télécommande quelques centaines de grammes au plus."
   },
   {
    "id": "ceb-2017-l4-q4",
@@ -1791,7 +1802,7 @@
      "/100"
     ]
    ],
-   "explication": "5 dm = 50 cm ; 50 : 100 = 0,5. 30 mm² = 0,3 cm² ; × 10 = 3. 0,2 m³ = 200 dm³ ; : 100 = 2."
+   "explication": "Il faut comparer des grandeurs dans la même unité. 5 dm = 50 cm, et 50 cm → 0,5 cm : on divise par 100 (de même, 5 dam = 50 m → 0,5 m). 30 mm² = 0,3 cm², et 0,3 cm² → 3 cm² : on multiplie par 10. 0,2 m³ = 200 dm³, et 200 dm³ → 2 dm³ : on divise par 100."
   },
   {
    "id": "ceb-2017-l4-q5",
@@ -1832,7 +1843,7 @@
    "fiche": "ma-volumes",
    "reponse": 96000,
    "unite": "cm³",
-   "explication": "80 × 40 × 30 = 96 000 cm³ (96 dm³)."
+   "explication": "Le volume d'un parallélépipède rectangle = longueur × largeur × hauteur : 80 × 40 = 3 200, puis 3 200 × 30 = 96 000 cm³ (soit 96 dm³)."
   },
   {
    "id": "ceb-2017-l4-q14b",
@@ -1851,7 +1862,7 @@
     "24/20",
     "1,20"
    ],
-   "explication": "12/20 + 5/20 + 6/20 + 1/20 = 24/20 = 1,2 l.",
+   "explication": "On met les fractions au même dénominateur, 20 : 3/5 = 12/20 ; 1/4 = 5/20 ; 3/10 = 6/20 ; et 1/20. Total : 12 + 5 + 6 + 1 = 24/20 l = 1,2 l. En nombres décimaux : 0,6 + 0,25 + 0,3 + 0,05 = 1,2 l.",
    "documents": [
     "liv4-p12"
    ]
@@ -1893,7 +1904,7 @@
      "5"
     ]
    ],
-   "explication": "Pour 12 : × 2. Pour 15 : × 2,5 (ou pour 3 personnes × 5).",
+   "explication": "De 6 à 12 personnes, on multiplie par 2 : sucre 360 g, œufs 4. Farine pour 6 : 675 g pour 15, c'est 45 g par personne, donc 45 × 6 = 270 g, et 540 g pour 12. Beurre : 180 g pour 12, donc 90 g pour 6. Pour 15 personnes, on multiplie les quantités pour 6 par 2,5 : sucre 450 g, beurre 225 g, œufs 5.",
    "groupes": [
     [
      0,
@@ -1930,7 +1941,7 @@
     "2 récipients identiques contiennent 5 litres en tout. Combien de litres contiendront 3 récipients ?"
    ],
    "reponse": 2,
-   "explication": "2 kg → 3 € ; 1 kg → 1,50 € ; 5 kg → 7,50 €.",
+   "explication": "Dans la résolution, 2 correspond à 3 ; on divise les deux par 2 (1 → 1,5), puis on multiplie par 5 (5 → 7,5). C'est le problème des pommes : 2 kg coutent 3 €, 1 kg coute 1,50 € et 5 kg coutent 7,50 €. Le trajet n'est pas proportionnel au nombre de personnes, et dans les deux autres problèmes les nombres ne se correspondent pas de cette façon.",
    "documents": [
     "liv4-p14"
    ]
@@ -1947,7 +1958,7 @@
    "fiche": "ma-pourcentages",
    "reponse": 20,
    "unite": "%",
-   "explication": "La proportion ne change pas : toujours 20 %."
+   "explication": "Chaque pot contient 20 % de noisettes, c'est-à-dire 20 g de noisettes pour 100 g de pâte. En mélangeant 5 pots, il y a 5 fois plus de noisettes mais aussi 5 fois plus de pâte : la proportion reste 20 %, et pas 5 × 20 = 100 %."
   },
   {
    "id": "ceb-2017-l4-q20",
@@ -1961,7 +1972,7 @@
    "fiche": "ma-aires-perimetres",
    "reponse": 9792,
    "unite": "pierres",
-   "explication": "272 × 2 = 544 m² ; 544 × 18 = 9 792 pierres."
+   "explication": "D'abord l'aire du mur : 272 × 2 = 544 m². Il faut 18 pierres pour chaque m² : 544 × 18 = 9 792 pierres."
   },
   {
    "id": "ceb-2017-l4-q6",
@@ -1978,7 +1989,7 @@
    ],
    "reponse": 7,
    "unite": "fois",
-   "explication": "La deuxième forme couvre trois fois plus que la première : 21 : 3 = 7 fois."
+   "explication": "La deuxième forme est faite de 3 carrés identiques à la première : elle couvre 3 fois plus de surface. Il en faut donc 3 fois moins : 21 : 3 = 7 fois."
   },
   {
    "id": "ceb-2017-l4-q7",
@@ -2000,7 +2011,7 @@
     "Représentation 4"
    ],
    "reponse": 1,
-   "explication": "1/4 de 24 = 6 élèves (natation), 2/3 de 24 = 16 élèves (football) et il reste 2 élèves pour l'athlétisme : c'est la représentation 2."
+   "explication": "1/4 de 24 = 24 : 4 = 6 élèves pour la natation ; 2/3 de 24 = (24 : 3) × 2 = 16 élèves pour le football ; il reste 24 − 6 − 16 = 2 élèves pour l'athlétisme. La représentation 2 montre bien 16 cases grises, 6 cases noires et 2 cases blanches."
   },
   {
    "id": "ceb-2017-l4-q8ab",
@@ -2062,7 +2073,7 @@
    ],
    "reponse": 87500,
    "unite": "€",
-   "explication": "Aire du terrain : base 25 m × hauteur 50 m = 1 250 m². Prix : 1 250 × 70 = 87 500 €."
+   "explication": "Le terrain est un parallélogramme : son aire = base × hauteur. La base mesure 25 m et la hauteur 50 m (mesurée à angle droit) : 25 × 50 = 1 250 m². Prix : 1 250 × 70 = 87 500 €. Les 55 m (côté penché) et les 75 m (longueur de la rue) ne servent pas au calcul."
   },
   {
    "id": "ceb-2017-l4-q10",
@@ -2080,7 +2091,7 @@
    "reponse": 3.44,
    "tolerance": 0.011,
    "unite": "cm²",
-   "explication": "Le carré a 8 cm de côté : (8 × 8 − 3,14 × 4 × 4) : 4 = (64 − 50,24) : 4 = 3,44 cm². Avec π = 3,1416 on trouve 3,43 cm², accepté aussi."
+   "explication": "Le carré a 8 cm de côté, comme le diamètre du cercle ; le rayon mesure donc 4 cm. Aire du carré : 8 × 8 = 64 cm². Aire du disque : 3,14 × 4 × 4 = 50,24 cm². Il reste 64 − 50,24 = 13,76 cm², partagés en 4 coins identiques : 13,76 : 4 = 3,44 cm² (environ 3,43 cm² avec π = 3,1416)."
   },
   {
    "id": "ceb-2017-l4-q11",
@@ -2123,7 +2134,7 @@
     ]
    ],
    "souple": true,
-   "explication": "A = 1/2 ; B = 1/12 ; C = 1/4 ; D = 1/6 (ou des fractions équivalentes)."
+   "explication": "L'hexagone régulier se partage en 6 triangles équilatéraux identiques. A est limitée par la diagonale qui relie deux sommets opposés : c'est la moitié, 1/2. D est un de ces triangles : 1/6. B est la moitié d'un triangle : 1/12. C est le reste : 1/2 − 1/6 − 1/12 = 6/12 − 2/12 − 1/12 = 3/12 = 1/4."
   },
   {
    "id": "ceb-2017-l4-q12",
@@ -2131,10 +2142,11 @@
    "numero": "12",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Trace le segment complet.",
+   "enonce": "Voici les 3/5 d'un segment (livret, page 11). Trace le segment complet.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le segment donné représente les 3/5 du segment complet : il mesure 6 cm, donc 1/5 mesure 6 : 3 = 2 cm. Le segment complet (5/5) mesure 5 × 2 = 10 cm."
   },
   {
    "id": "ceb-2017-l4-q13",
@@ -2142,10 +2154,11 @@
    "numero": "13",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Trace le rectangle entier.",
+   "enonce": "Voici 1/4 d'un rectangle (livret, page 11). Trace le rectangle en entier sur ce quadrillage.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le triangle gris est la moitié d'un carré de 3 carreaux sur 3 : il couvre 4,5 carreaux. Le rectangle entier est 4 fois plus grand : 4 × 4,5 = 18 carreaux, par exemple un rectangle de 6 carreaux sur 3 qui contient le triangle. Plusieurs rectangles sont possibles."
   },
   {
    "id": "ceb-2017-l4-q14a",
@@ -2178,7 +2191,7 @@
     2,
     1
    ],
-   "explication": "Éprouvette 1 : sirop de grenadine (1/20 l) ; 2 : eau gazeuse (3/5 l) ; 3 : jus de raisin (3/10 l) ; 4 : jus d'orange (1/4 l)."
+   "explication": "On écrit chaque quantité en dixièmes de litre : 1/20 = 0,5/10 ; 3/5 = 6/10 ; 3/10 ; 1/4 = 2,5/10. L'éprouvette 1, presque vide (une demi-graduation), contient le sirop de grenadine ; la 2, remplie jusqu'à 6, l'eau gazeuse ; la 3, jusqu'à 3, le jus de raisin ; la 4, jusqu'à 2,5, le jus d'orange."
   },
   {
    "id": "ceb-2017-l4-q17",
@@ -2205,7 +2218,7 @@
     0,
     1
    ],
-   "explication": "D < C < A < B."
+   "explication": "Le plateau le plus lourd descend. 1re balance : B est plus lourd que A. 2e : B est plus lourd que C. 3e : C est plus lourd que D. 4e : A est plus lourd que C. D est donc la plus légère, puis C, puis A, et B est la plus lourde."
   },
   {
    "id": "ceb-2017-l4-q18",
@@ -2230,7 +2243,7 @@
     ]
    ],
    "souple": true,
-   "explication": "Un classeur coute 3 euros : 3 classeurs coutent 9 euros et 12 euros achètent 4 classeurs."
+   "explication": "Sur le graphique, la droite passe par le point 1 classeur → 3 euros : un classeur coute 3 euros. Pour 3 classeurs, on lit 9 euros (3 × 3). Pour 12 euros, on lit 4 classeurs (12 : 3 = 4)."
   },
   {
    "id": "ceb-2017-l4-q18b",
@@ -2262,7 +2275,7 @@
     ]
    ],
    "souple": true,
-   "explication": "1 classeur : 3 euros ; 15 euros : 5 classeurs ; 13 classeurs : 39 euros ; 63 euros : 21 classeurs (13 et 63 sortent du graphique, qui s'arrête à 10 classeurs).",
+   "explication": "Le prix est proportionnel au nombre de classeurs : chacun coute 3 euros. Pour 15 euros : 15 : 3 = 5 classeurs ; pour 13 classeurs : 13 × 3 = 39 euros ; pour 63 euros : 63 : 3 = 21 classeurs. Pour 13 et 21 classeurs, le graphique s'arrête à 10 : il faut calculer.",
    "toutOuRien": true
   },
   {
@@ -2291,7 +2304,7 @@
     1,
     2
    ],
-   "explication": "On reconnait des chevaux, des aurochs et des rhinocéros.",
+   "explication": "Sur la peinture, on reconnait des chevaux (têtes avec une crinière, à droite), des aurochs (grands bovins aux cornes recourbées, à gauche) et des rhinocéros laineux (avec leurs cornes, en bas à droite). On ne voit ni mammouth (trompe et défenses) ni mégalocéros (immenses bois).",
    "parReponse": true
   },
   {
@@ -2314,7 +2327,7 @@
     "Préhistoire"
    ],
    "reponse": 3,
-   "explication": "Avant l'invention de l'écriture : Préhistoire."
+   "explication": "Les peintures datent de −35 000 à −25 000, bien avant l'invention de l'écriture (vers −3 000) : c'est la Préhistoire. L'Antiquité ne commence qu'avec l'écriture."
   },
   {
    "id": "ceb-2017-l5-q2",
@@ -2344,7 +2357,7 @@
     2,
     3
    ],
-   "explication": "Dans l'ordre chronologique."
+   "explication": "Dans nos régions, l'Antiquité commence avec la conquête de la Gaule par les Romains (vers 50 av. J.-C.) ; le Moyen Âge avec l'installation des Francs (5e siècle) ; les Temps modernes avec l'invention de l'imprimerie par Gutenberg (vers 1450) ; l'Époque contemporaine avec la Déclaration des droits de l'homme rédigée pendant la Révolution française, en 1789."
   },
   {
    "id": "ceb-2017-l5-q3",
@@ -2373,7 +2386,7 @@
     3,
     4
    ],
-   "explication": "Avant J.-C. après l'écriture : Antiquité ; 16e siècle : Temps modernes ; 2013 : époque contemporaine."
+   "explication": "Le bas-relief égyptien (entre 200 et 54 av. J.-C.) date d'après l'invention de l'écriture : Antiquité. La Joconde (1503-1506), peinte au début du 16e siècle, appartient aux Temps modernes. Le ballet de 2013 appartient à l'Époque contemporaine, qui commence en 1789."
   },
   {
    "id": "ceb-2017-l5-q4a",
@@ -2404,7 +2417,7 @@
      "Lustin"
     ]
    ],
-   "explication": "Hayot Alphonse Louis, né à Lustin, nationalité belge."
+   "explication": "Sur la 3e partie de la carte, on lit « Nom : HAYOT », « Né le 28. 2. 1879 à Lustin (Belg.) » et « Nationalité : Belge ». Hayot est le nom de famille ; Alphonse Louis sont ses prénoms."
   },
   {
    "id": "ceb-2017-l5-q4b",
@@ -2433,7 +2446,7 @@
     1,
     0
    ],
-   "explication": "Un timbre de 100 francs ; valable du 10 mai 1944 au 9 mai 1945 ; « carte d'identité d'étranger ». (Dans l'épreuve, il fallait aussi donner le numéro de l'indice : 2, 6 et 2 ou 4.)"
+   "explication": "Le document n'est pas gratuit : le cachet du haut porte « 100 francs ». Il n'est pas valable à vie : « Carte valable du 10 mai 1944 au 9 mai 1945 », donc un an. Il est destiné aux étrangers : son titre est « Carte d'identité d'étranger »."
   },
   {
    "id": "ceb-2017-l5-q4c",
@@ -2461,7 +2474,7 @@
     3,
     4
    ],
-   "explication": "Carte « non travailleur » ; la Belgique est occupée depuis 1940.",
+   "explication": "La carte est française et son titulaire est belge : il a quitté la Belgique, occupée par les troupes allemandes depuis 1940 (document 2). Il fuit la guerre parce qu'il n'est plus en sécurité dans son pays. Il ne travaille pas en France (« Non travailleur ») et n'est pas en vacances.",
    "parReponse": true
   },
   {
@@ -2484,7 +2497,7 @@
     "un étranger en séjour illégal."
    ],
    "reponse": 1,
-   "explication": "Il a fui la guerre et séjourne légalement en France."
+   "explication": "Une personne qui quitte son pays pour fuir la guerre et qui reçoit une carte de séjour dans un autre pays est un réfugié. Il n'est pas en séjour illégal, puisqu'il a une carte officielle, et il n'est ni prisonnier ni touriste."
   },
   {
    "id": "ceb-2017-l5-q4e",
@@ -2507,7 +2520,7 @@
     "une épidémie de grippe."
    ],
    "reponse": 2,
-   "explication": "Dans les deux cas, la guerre."
+   "explication": "La photo 1 montre des personnes qui partent vers la zone libre, en France, en 1940, quand le pays est occupé ; la photo 2 montre des réfugiés qui arrivent en Hongrie en 2016. À deux époques différentes, ces personnes fuient la guerre dans leur pays."
   },
   {
    "id": "ceb-2017-l5-q5a",
@@ -2554,7 +2567,7 @@
     8,
     3
    ],
-   "explication": "5 : réseau ferroviaire ; 7 : plan routier ; 3 : empire de Charlemagne ; 6 : carte touristique ; 9 : fuseaux horaires ; 4 : métro. Pour la visite touristique, le corrigé accepte aussi le plan du métro."
+   "explication": "Train dans la région bruxelloise : le réseau ferroviaire (doc 5). De Binche à Mons en voiture : le plan routier de la région (doc 7). Charlemagne : la carte de son empire (doc 3). Visite avec loisirs : la carte touristique de Hotton (doc 6), qui montre les attractions ; le plan du métro (doc 4) est aussi accepté. Décalage horaire : les fuseaux horaires (doc 9). Métro : le plan du métro de Bruxelles (doc 4)."
   },
   {
    "id": "ceb-2017-l5-q5b",
@@ -2576,7 +2589,7 @@
     "Une carte des océans"
    ],
    "reponse": 1,
-   "explication": "A = anticyclone, D = dépression : carte météo."
+   "explication": "Les lignes courbes portent des nombres comme 1 000 ou 1 010 : ce sont des valeurs de pression de l'air. A signifie anticyclone (beau temps) et D dépression (mauvais temps), et la légende parle du sens de rotation des vents : c'est une carte météorologique."
   },
   {
    "id": "ceb-2017-l5-q6b",
@@ -2602,7 +2615,7 @@
     0,
     1
    ],
-   "explication": "Le canal Albert relie Anvers à Liège, puis on remonte la Meuse jusqu'à Namur."
+   "explication": "Sur la carte, Anvers est reliée à Liège par le canal Albert, une voie pour les grands bateaux. À Liège, on prend la Meuse jusqu'à Namur. La Sambre et l'Escaut ne passent pas par Liège."
   },
   {
    "id": "ceb-2017-l5-q6c",
@@ -2633,7 +2646,7 @@
     0,
     0
    ],
-   "explication": "Le nord du pays (plat) est bien mieux équipé ; l'Ardenne n'en a pas."
+   "explication": "Dans la légende, les voies de plus de 1 500 t sont en trait épais. On en voit beaucoup au nord, en Flandre (canal Albert, Escaut, canaux autour de Gand), moins en Wallonie, et pas seulement au centre du pays. En Haute Belgique (Ardenne, au sud-est), il n'y en a aucune."
   },
   {
    "id": "ceb-2017-l5-q9",
@@ -2653,7 +2666,7 @@
     "le signal de Botrange",
     "signal de Botrange"
    ],
-   "explication": "Le signal de Botrange (Hautes Fagnes) : 694 + 6 = 700 m. (Dans l'épreuve, il fallait aussi placer une croix sur la carte, dans les Hautes Fagnes, à l'est.)"
+   "explication": "D'après la carte des altitudes, le point le plus haut de Belgique est Botrange, dans les Hautes Fagnes, à 694 m. Avec l'escalier de 6 m, on arrive à 694 + 6 = 700 m : c'est le signal de Botrange."
   },
   {
    "id": "ceb-2017-l5-q10a",
@@ -2674,7 +2687,7 @@
     "En Haute Belgique"
    ],
    "reponse": 2,
-   "explication": "L'Ardenne et les Hautes Fagnes reçoivent 1 400 à 1 500 mm."
+   "explication": "La carte des précipitations montre les couleurs les plus foncées (1 300 à 1 500 mm par an) au sud-est, dans l'Ardenne et les Hautes Fagnes. La carte des altitudes montre que ces régions font partie de la Haute Belgique."
   },
   {
    "id": "ceb-2017-l5-q10b",
@@ -2695,7 +2708,7 @@
     "En Haute Belgique"
    ],
    "reponse": 1,
-   "explication": "Bruxelles est en Moyenne Belgique."
+   "explication": "Bruxelles se trouve au centre du pays, au sud de la limite de la Basse Belgique : elle est en Moyenne Belgique, entre la Basse Belgique au nord et la Haute Belgique au sud-est."
   },
   {
    "id": "ceb-2017-l5-q10c",
@@ -2726,7 +2739,7 @@
     0,
     0
    ],
-   "explication": "Plus on monte, plus il pleut ; l'est (Ardenne) est plus arrosé que l'ouest."
+   "explication": "1 : incorrect, c'est l'inverse : plus le relief est élevé, plus il pleut. 2 : incorrect, l'est (Ardenne, Hautes Fagnes) reçoit plus de pluie que l'ouest. 3 : correct, les Hautes Fagnes ont la couleur la plus foncée (1 400 à 1 500 mm). 4 : correct, le Littoral reçoit environ 700 à 800 mm, moins que la Lorraine belge, au sud, plus arrosée."
   },
   {
    "id": "ceb-2017-l5-q11a",
@@ -2763,7 +2776,7 @@
     3,
     4
    ],
-   "explication": "Voir la page 23 du portfolio."
+   "explication": "On relie chaque lettre au texte du portfolio. A, au sud-est de l'Afrique : la route de l'Inde en contournant l'Afrique (Vasco de Gama). B, aux Caraïbes : l'ile de San Salvador (Colomb). C, à la pointe sud de l'Amérique : le détroit de Magellan. D, au Canada : Cartier. E, sur la côte de l'Amérique du Sud : le nouveau continent abordé par Vespucci."
   },
   {
    "id": "ceb-2017-l5-q11b",
@@ -2786,7 +2799,7 @@
     "Amerigo Vespucci"
    ],
    "reponse": 3,
-   "explication": "Seul Cartier est encore vivant en 1535."
+   "explication": "Pour connaitre une découverte de 1535, il faut être vivant en 1535. Magellan meurt en 1521, Colomb vers 1506, Vasco de Gama vers 1524 et Vespucci en 1512. Seul Jacques Cartier (1491-1557) vit encore en 1535."
   },
   {
    "id": "ceb-2017-l5-q1b",
@@ -2802,7 +2815,8 @@
    ],
    "numerisable": false,
    "neutralisee": true,
-   "remarque": "Question supprimée par le correctif officiel (0 point)."
+   "remarque": "Question supprimée par le correctif officiel (0 point).",
+   "explication": "L'animal dessiné est un rhinocéros laineux, reconnaissable à ses cornes et à son corps massif. Il ne vit plus à l'état sauvage en Europe : le portfolio dit qu'il « a disparu vers 8 000 avant J.-C. »."
   },
   {
    "id": "ceb-2017-l5-q1c",
@@ -2818,7 +2832,7 @@
     "peinture"
    ],
    "reponseModele": "Toute question cohérente avec le document est acceptée (1 point) : sur l'intention de l'auteur, les outils utilisés, le contenu de la peinture… Exemples : « Avec quoi les hommes préhistoriques ont-ils peint ? » ; « Pourquoi ont-ils dessiné ces animaux ? » ; « Quels sont ces animaux ? » Une question indirecte ou un simple « ? » à la fin sont acceptés ; l'orthographe et la syntaxe ne sont pas pénalisées. Une affirmation n'est pas une question.",
-   "explication": "Poser une question sur un document, c'est une façon de le questionner comme le fait l'historien."
+   "explication": "Une bonne réponse est une vraie question (elle se termine par « ? ») sur ce que montre le document : les animaux peints, les outils ou les couleurs utilisés, ou la raison pour laquelle les hommes préhistoriques ont peint. Une phrase qui affirme quelque chose ne convient pas."
   },
   {
    "id": "ceb-2017-l5-q1d",
@@ -2826,10 +2840,11 @@
    "numero": "1d",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Colorie la durée d'occupation de la grotte.",
+   "enonce": "La grotte de Vallon-Pont-d'Arc a été occupée par des humains de −35 000 à −25 000 ans environ. Colorie cette durée sur la ligne du temps.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "La grotte est occupée de −35 000 à −25 000 : sur la ligne du temps, on colorie la partie entre ces deux dates, du milieu de l'intervalle −40 000 / −30 000 jusqu'au milieu de l'intervalle −30 000 / −20 000. Cela représente 10 000 ans."
   },
   {
    "id": "ceb-2017-l5-q4a2",
@@ -2855,13 +2870,14 @@
    "numero": "6a",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Repasse les voies de Namur à Anvers par Bruxelles.",
+   "enonce": "Sur la carte des voies navigables (page 20 du portfolio), repasse en bleu les voies navigables empruntées pour aller de Namur à Anvers en passant par la région de Bruxelles.",
    "points": 1,
    "corrigeVerifie": false,
    "documents": [
     "voies"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "De Namur, on suit la Sambre jusqu'à Charleroi, puis le canal Charleroi-Bruxelles jusqu'à Bruxelles, et enfin le canal de Willebroek et l'Escaut jusqu'à Anvers."
   },
   {
    "id": "ceb-2017-l5-q7",
@@ -2891,7 +2907,7 @@
     2,
     0
    ],
-   "explication": "Photo 1 : dessin B ; photo 2 : dessin C ; photo 3 : dessin A."
+   "explication": "La photo 3 montre des montagnes aux pentes très raides autour de l'eau : dessin A. La photo 1 montre un petit ruisseau dans un terrain presque plat, à peine creusé : dessin B (vallée en plaine). La photo 2 montre une vallée creusée dans un plateau, avec des versants aux pentes variables : dessin C."
   },
   {
    "id": "ceb-2017-l5-q8",
@@ -2912,13 +2928,14 @@
    "numero": "11cde",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Durées de vie des explorateurs sur la ligne du temps.",
+   "enonce": "Aide-toi du portfolio (page 23). Complète la ligne du temps par le nom de deux explorateurs : écris leur nom sur la durée de vie qui leur correspond. Écris le nom du navigateur dont la durée de vie est coloriée sur la deuxième ligne du temps. Colorie la durée de vie d'A. Vespucci (1454-1512) sur la troisième ligne du temps.",
    "points": 4,
    "corrigeVerifie": false,
    "documents": [
     "explo"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "c) On compare chaque barre aux dates du portfolio : celle de 1480 à 1521 est la vie de Magellan, celle d'environ 1451 à 1506 celle de Colomb. d) La part coloriée va de la fin du 15e siècle au milieu du 16e siècle : c'est Cartier (1491-1557). e) Pour Vespucci (1454-1512), on colorie du milieu du 15e siècle jusqu'au tout début du 16e siècle."
   },
   {
    "id": "ceb-2017-l6-q1",
@@ -2942,7 +2959,7 @@
     "Informer."
    ],
    "reponse": 0,
-   "explication": "C'est un conte."
+   "explication": "C'est un conte : une histoire inventée, avec un juge malin, un rocher qu'on interroge et une fin heureuse. L'auteur veut donner du plaisir au lecteur ; il ne cherche ni à informer, ni à convaincre, ni à donner des ordres."
   },
   {
    "id": "ceb-2017-l6-q2",
@@ -2956,7 +2973,8 @@
    "documents": [
     "juge-1"
    ],
-   "reponseModele": "parler avec les gens de la ville et s'informer des injustices à réparer."
+   "reponseModele": "parler avec les gens de la ville et s'informer des injustices à réparer.",
+   "explication": "La réponse se trouve dans la 1re phrase du conte : au marché, le juge peut acheter des légumes et des poissons, « mais aussi parler avec les gens de la ville et s'informer des injustices à réparer ». Il faut donner ces deux buts."
   },
   {
    "id": "ceb-2017-l6-q3",
@@ -2981,7 +2999,7 @@
     0,
     1
    ],
-   "explication": "« la meilleure huile du marché » ; « il apportait le plus grand soin à son huile, aussi tout le monde venait lui en acheter ».",
+   "explication": "Le texte dit que Goutte du Rocher « vendait la meilleure huile du marché » et qu'il « apportait le plus grand soin à son huile, aussi tout le monde venait lui en acheter ». Le texte ne parle pas du prix, et le juge n'oblige personne à acheter.",
    "parReponse": true
   },
   {
@@ -2997,7 +3015,8 @@
    "documents": [
     "juge-1"
    ],
-   "reponseModele": "Le juge pense que la maladie de ses parents s'est aggravée ; en réalité, on lui a volé son sac d'économies."
+   "reponseModele": "Le juge pense que la maladie de ses parents s'est aggravée ; en réalité, on lui a volé son sac d'économies.",
+   "explication": "Le juge demande : « la maladie de tes parents s'est aggravée ? » : c'est ce qu'il pense. En réalité, le garçon s'est endormi contre le rocher et, à son réveil, « mon sac d'économies avait disparu ». Une bonne réponse donne ces deux raisons."
   },
   {
    "id": "ceb-2017-l6-q5",
@@ -3005,7 +3024,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "ordre",
-   "enonce": "Remets les faits dans l'ordre chronologique.",
+   "enonce": "Remets les faits de l'histoire dans l'ordre chronologique.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3030,7 +3049,7 @@
     4,
     5
    ],
-   "explication": "Le vol a lieu pendant le sommeil de l'enfant, avant l'arrivée du juge."
+   "explication": "D'abord le vol, pendant que le garçon dort ; puis le juge le trouve en larmes ; il fait battre le rocher ; la foule se moque, alors il condamne chacun à une amende d'une sapèque ; il reconnait la pièce huileuse et les gardes arrêtent le voleur ; enfin, le sac est retrouvé sous le foin de sa hotte."
   },
   {
    "id": "ceb-2017-l6-q6",
@@ -3045,7 +3064,8 @@
    "documents": [
     "juge-2"
    ],
-   "reponseModele": "Deux buts : constater si la pièce porte des traces d'huile (si elle est poisseuse) ; identifier, trouver le voleur."
+   "reponseModele": "Deux buts : constater si la pièce porte des traces d'huile (si elle est poisseuse) ; identifier, trouver le voleur.",
+   "explication": "Une bonne réponse donne deux buts : vérifier si la pièce porte des traces d'huile (le juge la trouve « poisseuse ») et ainsi trouver le voleur, puisque Goutte du Rocher imbibe d'huile chaque pièce qu'il reçoit."
   },
   {
    "id": "ceb-2017-l6-q7",
@@ -3091,7 +3111,7 @@
      "huile"
     ]
    ],
-   "explication": "Huile, argent, fou, rocher, pièce, coupable, pièce, huile (huile et pièce sont utilisées deux fois).",
+   "explication": "Goutte du Rocher vend de l'huile et son argent a été volé. Le juge fait semblant d'être fou en accusant un rocher. La foule se moque, il exige de chacun une pièce. Le coupable est découvert, car la pièce qu'il a jetée sentait l'huile. « Huile » et « pièce » servent deux fois ; « anguille » ne sert pas.",
    "paliers": [
     [
      3,
@@ -3127,7 +3147,7 @@
     "le juge interroge tous les gens du village."
    ],
    "reponse": 1,
-   "explication": "Un rocher ne peut pas parler !"
+   "explication": "Un interrogatoire, c'est poser des questions à quelqu'un pour savoir la vérité. Ici, le juge crie sur un rocher et le fait battre pour qu'il avoue (« Petit vaurien de rocher […] c'est toi qui as pris l'argent ! ») : c'est curieux, car un rocher ne parle pas."
   },
   {
    "id": "ceb-2017-l6-q9",
@@ -3149,7 +3169,7 @@
     "Goutte du Rocher battait le rocher avec les gardes du juge."
    ],
    "reponse": 1,
-   "explication": "« Assister à » = être présent, regarder."
+   "explication": "« Assister à » quelque chose veut dire y être présent et regarder, sans y participer (à ne pas confondre avec « assister quelqu'un », qui veut dire l'aider). « Perplexe » veut dire qu'il ne comprend pas ce qui se passe."
   },
   {
    "id": "ceb-2017-l6-q10",
@@ -3171,7 +3191,7 @@
     "stupide"
    ],
    "reponse": 2,
-   "explication": "Clairvoyant = qui voit clair, lucide."
+   "explication": "« Clairvoyant » veut dire « qui voit clair », qui comprend bien les choses : c'est le mot qui montre que le juge est lucide. « Fou », « dérangé » et « stupide » disent au contraire qu'il ne sait pas ce qu'il fait."
   },
   {
    "id": "ceb-2017-l6-q11",
@@ -3197,7 +3217,7 @@
     0,
     1
    ],
-   "explication": "« fou », « esprit dérangé ».",
+   "explication": "« Le juge est devenu fou » et « son esprit est dérangé » disent que le juge a perdu la raison. « Il a besoin de repos » est un conseil, pas une description de sa folie, et « un juge aussi clairvoyant » dit au contraire qu'il est lucide.",
    "parReponse": true
   },
   {
@@ -3228,7 +3248,7 @@
     1,
     0
    ],
-   "explication": "La foule demande ; Goutte du Rocher confirme ; le juge explique."
+   "explication": "« Qu'est-ce que c'est ? demanda-t-on de toutes parts » : c'est la foule. « C'est bien vrai, confirma Goutte du Rocher » : c'est le garçon. « Et notre petit vendeur d'huile en imbibe chaque pièce » : la phrase continue par « ajouta Su Dongpo », c'est le juge."
   },
   {
    "id": "ceb-2017-l6-q13",
@@ -3236,7 +3256,7 @@
    "numero": "13",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "Écris le groupe sujet.",
+   "enonce": "Écris le sujet du verbe souligné dans chaque phrase : « – Petit vaurien de rocher, criait Su Dongpo, c'est toi qui as pris l'argent ! » (verbe « as pris ») ; « – L'huile de sésame que vend Goutte du Rocher, bien sûr ! » (verbe « vend »).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-fonctions",
@@ -3256,7 +3276,7 @@
      "Goutte du Rocher"
     ]
    ],
-   "explication": "« qui » (mis pour toi) ; le sujet de « vend » est inversé : Goutte du Rocher."
+   "explication": "Qui est-ce qui « as pris » l'argent ? C'est « toi » (repris par le pronom « qui ») : le verbe « as » s'accorde avec « toi ». Qui est-ce qui « vend » l'huile ? C'est « Goutte du Rocher », un sujet placé après le verbe (sujet inversé)."
   },
   {
    "id": "ceb-2017-l6-q15",
@@ -3284,7 +3304,7 @@
     "alors que le juge Su Dungpo se délectait à l'idée de faire frire une belle anguille dans cette bonne huile",
     "alors que le juge Su Dungpo se délectait"
    ],
-   "explication": "« Or » introduit l'élément perturbateur. L'organisateur complet est « Or un matin » : « Or » seul ne suffit pas."
+   "explication": "Le premier paragraphe décrit la vie habituelle du marchand. Le second commence par « Or un matin » : cet organisateur indique le moment où un évènement inattendu arrive et change l'histoire. « Or » seul ne suffit pas, il faut aussi « un matin »."
   },
   {
    "id": "ceb-2017-l6-q16",
@@ -3311,7 +3331,7 @@
     2,
     3
    ],
-   "explication": "meilleure, Elle, parfumée (dense est pareil au masculin). Le corrigé attend les marques précises : le « e » final de « meilleure » et de « parfumée », et le pronom « Elle »."
+   "explication": "Le « e » final de « meilleure » et de « parfumée » marque le féminin (au masculin : meilleur, parfumé), et le pronom « Elle » reprend « huile ». « Dense » s'écrit de la même façon au masculin, et « du marché » ou « était » ne dépendent pas du genre d'« huile »."
   },
   {
    "id": "ceb-2017-l6-q17",
@@ -3335,7 +3355,7 @@
     "C'est l'histoire d'un juge qui aime les anguilles à l'huile. Le marchand d'huile constate qu'un voleur a dérobé ses économies. Le juge trouve une astuce pour que chaque villageois lui présente une pièce de monnaie. Sachant qu'il va être découvert, le voleur se dénonce et avoue son forfait."
    ],
    "reponse": 2,
-   "explication": "Le voleur ne se dénonce pas : c'est l'huile sur sa pièce qui le trahit."
+   "explication": "Le 3e résumé reprend les étapes importantes : le vol des économies, le juge qui se fait passer pour fou pour obtenir une pièce de chaque villageois, et le voleur trahi par l'huile sur sa pièce. Dans le dernier, le voleur ne se dénonce pas ; dans le 2e, l'argent de l'amende n'est pas offert au marchand."
   },
   {
    "id": "ceb-2017-l6-q18",
@@ -3351,7 +3371,8 @@
     "juge-2",
     "juge-3"
    ],
-   "reponseModele": "Il a retrouvé le voleur et rendu au jeune marchand l'argent qui devait servir à soigner ses parents."
+   "reponseModele": "Il a retrouvé le voleur et rendu au jeune marchand l'argent qui devait servir à soigner ses parents.",
+   "explication": "Une bonne réponse parle du vol : on avait volé les économies de Goutte du Rocher, qui devaient servir à soigner ses parents. Le juge a trouvé le voleur et lui a fait rendre l'argent."
   },
   {
    "id": "ceb-2017-l6-q14",
@@ -3373,7 +3394,7 @@
     "Ligne du temps 4"
    ],
    "reponse": 2,
-   "explication": "C'est la ligne 3 : C (le coupable a lancé la pièce), puis A (la sapèque tombe dans le panier), puis B (le juge pointe son doigt). « Venait de » marque ce qui vient de se passer juste avant."
+   "explication": "« Venait de » montre une action qui s'est passée juste avant une autre. L'homme a d'abord lancé la pièce (C, « venait de la lancer »), puis elle est tombée dans le panier (A, « venait de tomber »), et à ce moment le juge pointe son doigt (B, « pointa ») : C, A, B, c'est la ligne 3."
   },
   {
    "id": "ceb-2017-l7-q1a",
@@ -3403,7 +3424,7 @@
     1,
     0
    ],
-   "explication": "Ventilateur : −12 mm, radiateur : −5 mm. Table : −1 mm, frigo : 0. Radiateur (−5) > table (−1)."
+   "explication": "Après 24 h, l'eau devant le ventilateur est passée de 30 à 18 mm (12 mm évaporés), sur le radiateur de 30 à 25 mm (5 mm) : le vent fait plus évaporer que la chaleur. Sur la table, il manque 1 mm et dans le frigo 0 mm : ce n'est pas la même quantité. Le radiateur (5 mm) fait plus évaporer que la table (1 mm) : la chaleur favorise l'évaporation."
   },
   {
    "id": "ceb-2017-l7-q1c",
@@ -3445,7 +3466,7 @@
      "6"
     ]
    ],
-   "explication": "Lecture du graphique en bâtonnets.",
+   "explication": "Chaque endroit a deux bâtonnets : le premier après 24 h, le second après 48 h. On lit leur hauteur sur l'axe gradué en mm : radiateur 25 et 20 ; table 29 et 28 ; frigo 30 et 29 ; ventilateur 18 et 6. Il faut la mesure exacte.",
    "groupes": [
     [
      0,
@@ -3495,7 +3516,7 @@
     2,
     2
    ],
-   "explication": "Rien n'est testé entre 30 et 40 g, ni avec de l'eau chaude."
+   "explication": "À l'étape 3, les 30 g de sel sont tous dissous : c'est vrai. À l'étape 4, avec 40 g, il reste du sel au fond : c'est faux. On ajoute le sel 10 g par 10 g, donc on n'a jamais essayé 35 g, et l'eau est toujours à 20 °C, jamais chauffée : l'expérience ne permet pas de montrer ces deux affirmations."
   },
   {
    "id": "ceb-2017-l7-q2b",
@@ -3510,7 +3531,8 @@
    "documents": [
     "sel"
    ],
-   "reponseModele": "« Peut-on dissoudre autant de sucre qu'on le veut dans 1 dl d'eau ? »"
+   "reponseModele": "« Peut-on dissoudre autant de sucre qu'on le veut dans 1 dl d'eau ? »",
+   "explication": "Une bonne réponse est une question, comme celle de l'expérience avec le sel, mais avec le sucre : par exemple « Peut-on dissoudre autant de sucre qu'on le veut dans 1 dl d'eau ? » ou « Le sucre va-t-il se dissoudre aussi ? »."
   },
   {
    "id": "ceb-2017-l7-q2c",
@@ -3531,7 +3553,7 @@
     "ajouter uniquement du sel dans le verre."
    ],
    "reponse": 1,
-   "explication": "On ne change qu'une chose : la quantité d'eau."
+   "explication": "Pour vérifier une hypothèse, on ne change qu'une seule chose à la fois. On veut savoir si davantage d'eau dissout le sel qui reste : on ajoute seulement de l'eau à 20 °C. Si on ajoutait aussi du sel, on ne pourrait plus savoir d'où vient le résultat."
   },
   {
    "id": "ceb-2017-l7-q3c",
@@ -3561,7 +3583,7 @@
     0,
     0
    ],
-   "explication": "Le graphique montre un palier à 100 °C ; il ne dit rien des autres casseroles ni du refroidissement.",
+   "explication": "À partir de 16 minutes, la courbe devient plate à 100 °C : une fois que l'eau bout, sa température n'augmente plus, elle reste stable, et ici l'eau bout à 100 °C. Le graphique ne montre pas qu'il faut « toujours » 16 minutes (cela dépend de la casserole, du feu…), ni ce qui se passe quand on arrête de chauffer, car on n'a pas arrêté.",
    "documents": [
     "liv7-p06"
    ]
@@ -3578,7 +3600,7 @@
    "fiche": "sc-etats",
    "reponse": 100,
    "unite": "°C",
-   "explication": "L'eau qui bout reste à 100 °C.",
+   "explication": "Sur le graphique, de 16 à 24 minutes, l'eau qui bout reste à 100 °C. Si on continue à chauffer 5 minutes de plus, elle restera à 100 °C : l'eau qui bout ne devient pas plus chaude, elle se transforme en vapeur.",
    "documents": [
     "liv7-p06"
    ]
@@ -3613,7 +3635,7 @@
     4,
     5
    ],
-   "explication": "Tous disparaissent : les herbivores n'ont plus rien à manger, puis les carnivores qui les mangent. Explique ensuite pourquoi."
+   "explication": "Le criquet et le lapin mangent de l'herbe : sans végétal, ils meurent. Ensuite, le merle, la musaraigne, le renard et le hibou n'ont plus d'animaux à manger : tous les animaux du schéma disparaissent."
   },
   {
    "id": "ceb-2017-l7-q4b-j",
@@ -3629,7 +3651,7 @@
     "chaine"
    ],
    "reponseModele": "Une phrase courte qui dit que le monde animal dépend du monde végétal (1 point). Exemples : « Le monde animal dépend du végétal. » ; « Sans plantes, les herbivores n'ont plus à manger, et les carnivores n'ont plus d'herbivores à manger. » ; « Tous les animaux de la chaine dépendent des plantes pour se nourrir. »",
-   "explication": "Au début de chaque chaine alimentaire, il y a une plante : sans elle, toute la chaine s'effondre."
+   "explication": "Une bonne phrase dit que tous les animaux dépendent des végétaux : sans plantes, les herbivores n'ont plus rien à manger, puis les carnivores n'ont plus d'herbivores à manger."
   },
   {
    "id": "ceb-2017-l7-q5",
@@ -3662,7 +3684,7 @@
     3,
     4
    ],
-   "explication": "Cœur : circulatoire ; bronches : respiratoire ; estomac : digestif ; os : locomoteur ; peau : tégumentaire."
+   "explication": "Le soufle au cœur touche le cœur, qui fait circuler le sang : appareil circulatoire. La bronchite touche les bronches : appareil respiratoire. L'indigestion touche l'estomac : appareil digestif. Le tibia est un os de la jambe : appareil locomoteur. L'exéma est une maladie de la peau : appareil tégumentaire."
   },
   {
    "id": "ceb-2017-l7-q6a",
@@ -3715,7 +3737,7 @@
      "goût"
     ]
    ],
-   "explication": "Toucher (la peau), odeur (le nez : l'odorat), ondes sonores (l'oreille : l'ouïe), lumière (l'œil : la vue), substances dissoutes (la langue : le goût)."
+   "explication": "Chaque organe des sens reçoit un stimulus : la peau sent le contact (le toucher), le nez sent les odeurs (l'odorat), l'oreille capte les ondes sonores (l'ouïe), l'œil capte la lumière (la vue) et la langue reconnait les substances dissoutes (le gout)."
   },
   {
    "id": "ceb-2017-l7-q7a",
@@ -3742,7 +3764,7 @@
     2,
     1
    ],
-   "explication": "On consomme de l'oxygène et on rejette du gaz carbonique.",
+   "explication": "Dans le tableau, l'oxygène passe de 21 % dans l'air inspiré à 16,50 % dans l'air expiré : il y en a moins. Le gaz carbonique passe de 0,03 % à 4,53 % : il y en a plus. L'azote reste à 78 % : il y en a autant.",
    "documents": [
     "liv7-p12"
    ]
@@ -3767,7 +3789,7 @@
     1,
     2
    ],
-   "explication": "Il reste 16,5 % d'oxygène : il n'est pas tout consommé.",
+   "explication": "Le corps utilise une partie de l'oxygène (21 % → 16,50 %) et rejette du gaz carbonique (0,03 % → 4,53 %). L'azote ne change pas (78 %) : il n'est pas consommé. Il reste 16,50 % d'oxygène dans l'air expiré : tout l'oxygène n'est donc pas consommé.",
    "parProposition": true,
    "documents": [
     "liv7-p12"
@@ -3794,7 +3816,7 @@
     "Le record de chaleur des mois de janvier à juin depuis 1901."
    ],
    "reponse": 2,
-   "explication": "19,2 ; 16,3 ; 17,8 ; 15 ; 16,2 ; 15 : les jours avec précipitations."
+   "explication": "Les bâtonnets valent environ 19, 16, 18, 15, 16 et 15 : ce sont les nombres de la ligne « Nombre moyen de jours avec précipitations » du tableau (19,2 ; 16,3 ; 17,8 ; 15 ; 16,2 ; 15). L'ensoleillement, lui, se compte en heures, et les températures en °C."
   },
   {
    "id": "ceb-2017-l7-q8b",
@@ -3821,7 +3843,7 @@
      "1947"
     ]
    ],
-   "explication": "38,8 °C en juin 1947.",
+   "explication": "Dans la ligne « Record de température maximale depuis 1901 », le plus grand nombre est 38,8 °C, dans la colonne de juin ; juste en dessous, la ligne « Année du record » indique 1947.",
    "toutOuRien": true
   },
   {
@@ -3853,7 +3875,7 @@
     0,
     2
    ],
-   "explication": "Anémomètre, baromètre, girouette, pluviomètre."
+   "explication": "L'anémomètre mesure la vitesse du vent ; le pluviomètre recueille la pluie et mesure la quantité tombée en mm ; la girouette tourne pour indiquer d'où vient le vent ; le baromètre mesure la pression de l'air. Le thermomètre mesure la température : il ne sert pas ici."
   },
   {
    "id": "ceb-2017-l7-q12a",
@@ -3876,7 +3898,7 @@
     "L'eau salée est un conducteur d'électricité",
     "L'eau salée est un bon conducteur d'électricité"
    ],
-   "explication": "La LED s'allume quand les fils plongent dans l'eau."
+   "explication": "Dans l'expérience, la LED s'allume quand les extrémités des deux fils plongent dans l'eau : le courant passe à travers l'eau. Cela confirme la phrase du mode d'emploi : « L'eau est un conducteur d'électricité »."
   },
   {
    "id": "ceb-2017-l7-q1b",
@@ -3893,7 +3915,7 @@
     "evap-2"
    ],
    "reponseModele": "Toute hypothèse cohérente avec l'expérience est acceptée (1 point). Exemples : « Le froid ne favorise pas l'évaporation. » ; « Le vent favorise l'évaporation. » ; « Un verre d'eau devant un ventilateur se vide plus vite que sur une table. » Refusés : un facteur qui n'est pas dans l'expérience (le soleil, la pelouse) et une simple question de mesure du type « combien de cl en x minutes ? ».",
-   "explication": "Une hypothèse est une réponse possible, à vérifier avec l'expérience (radiateur, table, frigo, ventilateur)."
+   "explication": "Une bonne hypothèse est une réponse possible que cette expérience peut vérifier avec les quatre endroits testés (radiateur, table, frigo, ventilateur), par exemple « le froid ne favorise pas l'évaporation » ou « le vent favorise l'évaporation ». Une hypothèse sur le soleil ou sur un élément absent de l'expérience ne convient pas."
   },
   {
    "id": "ceb-2017-l7-q1d",
@@ -3915,7 +3937,7 @@
     "Situation 4"
    ],
    "reponse": 0,
-   "explication": "Situation 1 : le soleil (chaleur) et le vent favorisent l'évaporation de l'eau du linge."
+   "explication": "Le linge sèche quand son eau s'évapore, et la chaleur et le vent favorisent l'évaporation. Dans la situation 1, il y a à la fois du soleil et du vent. La 2 a du soleil sans vent, la 4 du vent sans soleil, et dans la 3 il fait froid malgré le soleil."
   },
   {
    "id": "ceb-2017-l7-q3ab",
@@ -3949,7 +3971,7 @@
     ]
    ],
    "souple": true,
-   "explication": "Lecture du graphique : 46 °C à 4 min ; 100 °C à 16, 20 et 24 min ; 78 °C à 10 min.",
+   "explication": "On part de la durée sur l'axe du bas, on monte jusqu'à la croix, puis on lit la température à gauche : 46 °C à 4 minutes ; 100 °C à 16, 20 et 24 minutes, car la courbe devient plate. Pour 78 °C, on fait l'inverse : on part de la température et on descend vers la durée : 10 minutes.",
    "groupes": [
     [
      1,
@@ -3973,7 +3995,7 @@
     "liv7-p08"
    ],
    "reponseModele": "Deux chaines au choix, écrites de la nourriture vers le mangeur et complètes, de l'herbe jusqu'au dernier animal : herbe, criquet, musaraigne, hibou ; ou herbe, lapin, renard ; ou herbe, lapin, hibou. 1 point par chaine juste.",
-   "explication": "Suis les flèches « est mangé par » en partant de l'herbe."
+   "explication": "On part de l'herbe et on suit les flèches « est mangé par » jusqu'au dernier animal : herbe → criquet → musaraigne → hibou, herbe → lapin → renard, ou herbe → lapin → hibou. Une chaine est complète si elle commence par la plante et va jusqu'au dernier mangeur."
   },
   {
    "id": "ceb-2017-l7-q4c",
@@ -3981,10 +4003,11 @@
    "numero": "4c",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Trace les flèches de la chaine.",
+   "enonce": "Complète les relations de la chaine alimentaire (feuilles, chenille, grenouille, couleuvre) : trace toutes les flèches « est mangé par… » qui unissent chaque animal à sa nourriture.",
    "points": 1.5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "La chenille mange les feuilles, la grenouille mange la chenille et la couleuvre mange la grenouille. On trace donc les flèches feuilles → chenille → grenouille → couleuvre, chaque flèche allant de la nourriture vers celui qui la mange."
   },
   {
    "id": "ceb-2017-l7-q6b",
@@ -4014,7 +4037,7 @@
     ]
    ],
    "souple": true,
-   "explication": "Photo 1 (micro) : l'ouïe ; photo 2 (poignée de main) : le toucher."
+   "explication": "Sur la photo 1, la personne tient un micro : c'est le son qui compte, donc l'ouïe. Sur la photo 2, deux mains se serrent : c'est un contact avec la peau, donc le toucher."
   },
   {
    "id": "ceb-2017-l7-q8c",
@@ -4022,13 +4045,14 @@
    "numero": "8c",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Complète le graphique de l'ensoleillement.",
+   "enonce": "Complète le graphique en bâtonnets « Ensoleillement moyen » (livret, page 15) à l'aide du tableau de la page 22 du portfolio. Utilise ta latte.",
    "points": 1.5,
    "corrigeVerifie": false,
    "documents": [
     "meteo"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On lit les heures d'ensoleillement dans le tableau du portfolio : 59 en janvier, 159 en avril et 191 en mai. Avec la latte, on trace chaque bâtonnet jusqu'à sa valeur sur l'axe gradué de 0 à 250 heures."
   },
   {
    "id": "ceb-2017-l7-q10",
@@ -4106,7 +4130,7 @@
     2,
     3
    ],
-   "explication": "Les photos 1 et 2 (A et B, dans un ordre quelconque) : l'objet n'est pas un bon conducteur. Photo 3 (C) : bon conducteur et circuit fermé, l'ampoule brille. Photo 4 (D) : bon conducteur mais circuit non fermé.",
+   "explication": "Le bois n'est pas un bon conducteur : avec la pince à linge en bois (photos 1 et 2), l'ampoule ne s'allume pas ; ces photos vont en A et B. L'attache-trombone en acier est un bon conducteur : sur la photo 3, le circuit est fermé et l'ampoule brille (C) ; sur la photo 4, le circuit n'est pas fermé (D).",
    "differentes": true
   },
   {
@@ -4137,7 +4161,7 @@
     3,
     5
    ],
-   "explication": "Le risque : l'eau conduit l'électricité. Situations 1 (bain), 4 (sol mouillé près d'une prise) et 6 (radio près du bain).",
+   "explication": "Le danger du mode d'emploi, c'est l'eau qui conduit l'électricité. Situation 1 : un radiateur électrique branché près de la baignoire. Situation 4 : on touche une prise avec le sol mouillé. Situation 6 : une radio branchée à côté du bain. Les situations 2, 3 et 5 présentent d'autres risques, sans eau.",
    "parReponse": true
   },
   {
@@ -4152,7 +4176,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 71,
    "tolerance": 0.0001,
-   "explication": "Résultat : 71."
+   "explication": "On divise par morceaux : 63 : 9 = 7 (pour 630), puis 9 : 9 = 1. Donc 639 : 9 = 71. Vérification : 71 × 9 = 639."
   },
   {
    "id": "ceb-2017-l8-q1b",
@@ -4166,7 +4190,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 27.5,
    "tolerance": 0.0001,
-   "explication": "Résultat : 27,5."
+   "explication": "On additionne d'abord les parties décimales : 0,98 + 0,52 = 1,50. Puis les entiers : 19 + 7 = 26. Enfin, 26 + 1,5 = 27,5."
   },
   {
    "id": "ceb-2017-l8-q1c",
@@ -4180,7 +4204,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
-   "explication": "Multiplier par 0 donne 0."
+   "explication": "Dès qu'un des nombres d'une multiplication vaut 0, le résultat vaut 0 : inutile de calculer 16 × 2,3."
   },
   {
    "id": "ceb-2017-l8-q1d",
@@ -4194,7 +4218,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 21.1,
    "tolerance": 0.0001,
-   "explication": "38,6 − 17,5 = 21,1."
+   "explication": "Pour trouver le nombre manquant d'une addition, on fait une soustraction : 38,6 − 17,5 = 21,1. Vérification : 21,1 + 17,5 = 38,6."
   },
   {
    "id": "ceb-2017-l8-q1e",
@@ -4208,7 +4232,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 33000,
    "tolerance": 0.0001,
-   "explication": "44 000 : 4 × 3 = 33 000."
+   "explication": "75 %, c'est les 3/4. Le quart de 44 000 est 44 000 : 4 = 11 000 ; les trois quarts valent 11 000 × 3 = 33 000."
   },
   {
    "id": "ceb-2017-l8-q1f",
@@ -4222,7 +4246,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 7,
    "tolerance": 0.0001,
-   "explication": "8,4 : 1,2 = 7."
+   "explication": "Pour trouver le nombre manquant d'une multiplication, on fait une division : 8,4 : 1,2 = 84 : 12 = 7. Vérification : 7 × 1,2 = 8,4."
   },
   {
    "id": "ceb-2017-l8-q1g",
@@ -4236,7 +4260,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 199520,
    "tolerance": 0.0001,
-   "explication": "Résultat : 199520."
+   "explication": "On enlève d'abord 500 : 200 000 − 500 = 199 500. On a enlevé 20 de trop, on les rajoute : 199 500 + 20 = 199 520."
   },
   {
    "id": "ceb-2017-l8-q1h",
@@ -4264,7 +4288,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 111,
    "tolerance": 0.0001,
-   "explication": "0,125 = 1/8 ; 888 : 8 = 111."
+   "explication": "0,125 = 1/8 : multiplier par 0,125 revient à diviser par 8. 888 : 8 = 111 (8 : 8 = 1, trois fois)."
   },
   {
    "id": "ceb-2017-l8-q1j",
@@ -4278,7 +4302,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 4734,
    "tolerance": 0.0001,
-   "explication": "Résultat : 4734."
+   "explication": "On enlève 300, plus facile : 5 032 − 300 = 4 732. On a enlevé 2 de trop, on les rajoute : 4 732 + 2 = 4 734."
   },
   {
    "id": "ceb-2017-l8-q2a",
@@ -4297,7 +4321,7 @@
     "50 000"
    ],
    "reponse": 2,
-   "explication": "70 000 − 30 000 = 40 000."
+   "explication": "On arrondit : 70 095 ≈ 70 000 et 29 003 ≈ 29 000. 70 000 − 29 000 = 41 000 : l'estimation la plus proche est 40 000."
   },
   {
    "id": "ceb-2017-l8-q2b",
@@ -4316,7 +4340,7 @@
     "55 000"
    ],
    "reponse": 2,
-   "explication": "45 000 + 7 600 ≈ 52 600."
+   "explication": "On arrondit : 45 048 ≈ 45 000 et 7 602 ≈ 7 600. 45 000 + 7 600 = 52 600 : l'estimation la plus proche est 52 000."
   },
   {
    "id": "ceb-2017-l8-q2c",
@@ -4335,7 +4359,7 @@
     "45 000"
    ],
    "reponse": 3,
-   "explication": "900 × 50 = 45 000."
+   "explication": "898 est presque 900 : 900 × 50, c'est la moitié de 900 × 100 = 90 000, donc 45 000. 4 500 serait 10 fois trop petit."
   },
   {
    "id": "ceb-2017-l8-q2d",
@@ -4354,7 +4378,7 @@
     "4 000"
    ],
    "reponse": 1,
-   "explication": "24 000 : 60 = 400."
+   "explication": "On arrondit : 24 059 ≈ 24 000 et 61 ≈ 60. 24 000 : 60 = 2 400 : 6 = 400."
   },
   {
    "id": "ceb-2017-l8-q3a",
@@ -4373,7 +4397,7 @@
     "407,98 + 0,197"
    ],
    "reponse": 1,
-   "explication": "3 500 : 7 = 500."
+   "explication": "3 499 ≈ 3 500 et 7,1 ≈ 7 : 3 500 : 7 = 500. Les autres opérations donnent environ 20 000, 110 et 408."
   },
   {
    "id": "ceb-2017-l8-q3b",
@@ -4392,7 +4416,7 @@
     "3,994 + 1,989"
    ],
    "reponse": 2,
-   "explication": "12 : 3 = 4."
+   "explication": "11,9 ≈ 12 et 12 : 3 = 4. Les autres opérations donnent environ 0,04, 104 et 6."
   },
   {
    "id": "ceb-2017-l8-q4",
@@ -4411,7 +4435,7 @@
     "(413 : 34) − 5"
    ],
    "reponse": 1,
-   "explication": "Quotient × diviseur + reste = dividende."
+   "explication": "Dans une division, dividende = quotient × diviseur + reste. On vérifie donc avec (34 × 12) + 5 = 408 + 5 = 413 : on retrouve bien le nombre de départ."
   },
   {
    "id": "ceb-2017-l8-q5",
@@ -4440,7 +4464,7 @@
      "1 015 953"
     ]
    ],
-   "explication": "1 812 centièmes = 18,12."
+   "explication": "35 000 unités et 27 millièmes : 35 000,027 (le 7 est au rang des millièmes, il faut donc un 0 aux dixièmes). 1 812 centièmes = 1 812 : 100 = 18,12. Un million et 15 953 : 1 015 953 (un 0 au rang des centaines de mille)."
   },
   {
    "id": "ceb-2017-l8-q6",
@@ -4467,7 +4491,7 @@
      "20 538,609"
     ]
    ],
-   "explication": "Il faut 4 chiffres avant la virgule, puis 3 chiffres après la virgule."
+   "explication": "Le chiffre des unités est juste avant la virgule. Pour que 2 soit le chiffre des unités de mille, il faut 4 chiffres avant la virgule : 2 053,8609. Pour que 9 soit le chiffre des millièmes, il doit être le 3e après la virgule : 20 538,609. Pour que 6 soit le chiffre des dixièmes, il est juste après la virgule : 20 538,609 aussi."
   },
   {
    "id": "ceb-2017-l8-q7",
@@ -4504,7 +4528,7 @@
      "59,01"
     ]
    ],
-   "explication": "On avance de 1, puis de 0,01.",
+   "explication": "a) On avance de 1 : après 799 998 viennent 799 999, puis 800 000 et 800 001. b) On avance de 0,01 : avant 59,02, il y a 59,01, avant encore 59 (59,00), et avant encore 58,99.",
    "groupes": [
     [
      0,
@@ -4541,7 +4565,7 @@
     1,
     6
    ],
-   "explication": "1,02 et 1/2 ne valent pas 1,2.",
+   "explication": "1,2 = 12/10 = 1 200/1 000 = 1,200, et 6/5 = 6 : 5 = 1,2. Par contre, 1,02 vaut 1 unité et 2 centièmes (pas 2 dixièmes), et 1/2 = 0,5 : ce sont les deux intrus.",
    "parReponse": true
   },
   {
@@ -4561,7 +4585,7 @@
      7
     ]
    ],
-   "explication": "24, 56, 104 (40 et 160 sont aussi multiples de 5). 24, 56 et 104 conviennent : un seul suffit.",
+   "explication": "Les multiples de 8 du cadre sont 24, 40, 56, 104 et 160. Mais 40 et 160 finissent par 0 : ils sont aussi multiples de 5. Il reste 24, 56 ou 104 ; un seul suffit.",
    "lignes": [
     "Un multiple de 8 qui n'est pas multiple de 5 :"
    ],
@@ -4612,7 +4636,7 @@
      "160"
     ]
    ],
-   "explication": "5 de plus = reste 5 ; dividende : 10 ; diviseur × 10 ; 48 = 16 × 3 donc 480 : 3 = 160.",
+   "explication": "On sait que 16 × 480 = 7 680, donc le reste est 0. 7 685 a 5 de plus : même quotient, 480, et reste 5. 768 est 10 fois plus petit : quotient 48. Diviser par 160, 10 fois plus grand, donne aussi 48. 48 = 16 × 3 : le quotient est 3 fois plus petit, 480 : 3 = 160.",
    "groupes": [
     [
      1,
@@ -4640,7 +4664,7 @@
      "163,28"
     ]
    ],
-   "explication": ": 10 et : 100."
+   "explication": "31,4 est 10 fois plus petit que 314 : le produit est 10 fois plus petit, 16 328 : 10 = 1 632,8. 0,52 est 100 fois plus petit que 52 : 16 328 : 100 = 163,28."
   },
   {
    "id": "ceb-2017-l8-q15",
@@ -4668,7 +4692,7 @@
     0,
     1
    ],
-   "explication": "15 = 10 + 5 = 5 × 3 (et pas 10 × 5)."
+   "explication": "15 = 10 + 5, donc 43 × 15 = (43 × 10) + (43 × 5). 15 = 5 × 3, donc 43 × 15 = 43 × 5 × 3. Par contre, 10 × 5 = 50 et pas 15, et (43 + 10) + (43 + 5) est une addition qui donne 101, alors que 43 × 15 = 645."
   },
   {
    "id": "ceb-2017-l8-q16",
@@ -4700,7 +4724,7 @@
      "+"
     ]
    ],
-   "explication": "2,5 = 10 : 4 ; retirer 9,7, c'est retirer 10 et rajouter 0,3.",
+   "explication": "2,5 = 10 : 4, donc 2,5 × 72 = (10 × 72) : 4 = 720 : 4 = 180. Retirer 9,7, c'est retirer 10 puis rajouter les 0,3 enlevés en trop : (874 − 10) + 0,3 = 864,3.",
    "groupes": [
     [
      0,
@@ -4734,7 +4758,7 @@
      "2"
     ]
    ],
-   "explication": "7 352 − 5 071 = 2 281.",
+   "explication": "On commence par les unités : ? − 1 = 1, donc 2. Dizaines : ? − 7 = 8, il faut emprunter : 15 − 7 = 8, le chiffre est 5. Centaines : avec la retenue, 3 − 1 = 2, et 2 − ? = 2, donc 0. Milliers : 7 − 5 = 2. Vérification : 7 352 − 5 071 = 2 281.",
    "toutOuRien": true
   },
   {
@@ -4754,7 +4778,7 @@
     "Résolution D : Nombre de biscuits restants : (4 × 17) - (1 × 12) = 56"
    ],
    "reponse": 1,
-   "explication": "68 − 24 = 44 biscuits."
+   "explication": "On calcule d'abord les biscuits achetés : 17 × 4 = 68, puis ceux qui ont été mangés : 12 × 2 = 24. Il reste 68 − 24 = 44 biscuits : c'est la résolution B. A et D utilisent de mauvais calculs, et C additionne au lieu de soustraire."
   },
   {
    "id": "ceb-2017-l8-q21",
@@ -4768,7 +4792,7 @@
    "fiche": "ma-pourcentages",
    "reponse": 208,
    "unite": "places",
-   "explication": "200 + 320 = 520 places ; 40 % libres : 520 × 0,4 = 208."
+   "explication": "Places : 2 × 100 = 200 et 4 × 80 = 320, soit 520 places. Si 60 % sont occupées, 40 % sont libres : 520 × 40 : 100 = 208 places. On peut aussi calculer les places occupées, 520 × 60 : 100 = 312, puis 520 − 312 = 208."
   },
   {
    "id": "ceb-2017-l8-q22",
@@ -4780,7 +4804,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
-   "reponseModele": "6 × 25 = 150 ; 150 − 4 = 146 ; 146 × 5 = 730."
+   "reponseModele": "6 × 25 = 150 ; 150 − 4 = 146 ; 146 × 5 = 730.",
+   "explication": "Une solution : 6 × 25 = 150 ; 150 − 4 = 146 ; 146 × 5 = 730. Il en existe beaucoup d'autres, par exemple 4 × 25 = 100 ; 100 × 7 = 700 ; 6 × 5 = 30 ; 700 + 30 = 730. Chaque étape doit être juste et chaque nombre n'est utilisé qu'une fois."
   },
   {
    "id": "ceb-2017-l8-q8",
@@ -4817,7 +4842,7 @@
     ]
    ],
    "souple": true,
-   "explication": "Les cases valent 3,5 ; 3,75 ; 4 et 4,12."
+   "explication": "Entre 3,6 et 3,9, il y a 3 dixièmes ; chaque petite graduation vaut 0,01. Case 1 : un dixième avant 3,6, donc 3,5. Case 2 : au milieu entre 3,7 et 3,8, donc 3,75. Case 3 : un dixième après 3,9, donc 4. Case 4 : 2 petites graduations après 4,1, donc 4,12."
   },
   {
    "id": "ceb-2017-l8-q9",
@@ -4856,7 +4881,7 @@
     ]
    ],
    "souple": true,
-   "explication": "0,75 en trois parts : 0,25 chacune ; chaque 0,25 en deux : 0,125 ; on regroupe trois 0,125 : 0,375 ; deux fois 0,375 redonnent 0,75."
+   "explication": "On partage 0,75 en trois parts égales : 0,75 : 3 = 0,25. Chaque 0,25 est partagé en deux : 0,125. On regroupe trois parts de 0,125 : 3 × 0,125 = 0,375. Enfin, 0,375 + 0,375 = 0,75 : on retrouve le nombre de départ."
   },
   {
    "id": "ceb-2017-l8-q11b",
@@ -4889,7 +4914,7 @@
     0,
     3
    ],
-   "explication": "72 est multiple de 8 seulement (zone C) ; 123 n'est multiple ni de 5 ni de 8 (zone B) ; 340 est multiple de 5 seulement (zone A) ; 720 est multiple de 5 et de 8 (zone D)."
+   "explication": "72 = 8 × 9 et ne finit ni par 0 ni par 5 : multiple de 8 seulement (zone C). 340 finit par 0, mais 340 : 8 = 42,5 : multiple de 5 seulement (zone A). 720 = 8 × 90 et finit par 0 : multiple des deux (zone D). 123 n'est multiple ni de 5 ni de 8 (zone B)."
   },
   {
    "id": "ceb-2017-l8-q12",
@@ -4897,10 +4922,11 @@
    "numero": "12",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Parcours de multiples.",
+   "enonce": "Parcours de multiples : trouve le chemin qui va de la ligne 1 à la ligne 7 du tableau du livret (page 10). On se déplace d'une case à une case voisine, mais pas en diagonale. Sur tout le parcours, les nombres doivent être multiples d'un même nombre autre que 1. Colorie le chemin.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les nombres du chemin sont tous des multiples de 7 : 14, 77, 42, 63, 21, 70, 84, 49, 28 et 105. Chaque case touche la suivante par un côté, de la ligne 1 jusqu'à la ligne 7."
   },
   {
    "id": "ceb-2017-l8-q17",
@@ -4917,7 +4943,7 @@
    ],
    "reponse": 121,
    "unite": "points",
-   "explication": "Il y a 11 rangées de 11 points : 11 × 11 = 121. À l'épreuve, le calcul écrit rapportait le 2e point."
+   "explication": "Les points sont rangés régulièrement : la ligne du haut compte 11 points et la colonne de gauche aussi. Il y a donc 11 lignes de 11 points : 11 × 11 = 121 points, y compris ceux cachés par le nuage."
   },
   {
    "id": "ceb-2017-l8-q18",
@@ -4930,7 +4956,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "reponseModele": "Toute situation qui correspond à 17 × 25 est acceptée. Un énoncé complet (une situation ET une question) vaut 2 points ; une situation seule vaut 1 point. L'orthographe et la ponctuation ne sont pas pénalisées. Exemple : « Un cinéma a 17 rangées de 25 sièges. Combien de sièges y a-t-il en tout ? » (17 rangées de 25 sièges, c'est bien 17 × 25 = 425.) Attention : la multiplication doit être la bonne (17 groupes de 25, ou 25 groupes de 17).",
-   "explication": "Pense à des paquets égaux : 17 paquets de 25, ou 25 paquets de 17."
+   "explication": "Une bonne réponse décrit une situation avec 17 groupes de 25 (ou 25 groupes de 17) et pose une question, par exemple : « Un professeur achète 17 livres à 25 € chacun. Combien paie-t-il en tout ? ». Sans question, l'énoncé n'est pas complet."
   },
   {
    "id": "ceb-2017-l9-q1",
@@ -5029,7 +5055,7 @@
     "ecoute"
    ],
    "reponseModele": "1) L'actualité du jour même qui est imprévue (un fait imprévu : un scoop, un gros accident, un incendie). 2) L'actualité du jour même qui est prévue (un conseil des ministres). 3) Des choses estimées importantes qui ne se passent pas le jour même (de plus en plus de vols dans les habitations). 1 point par type ; l'ordre n'a pas d'importance.",
-   "explication": "Il y a trois sortes de séquences : l'actualité imprévue du jour, l'actualité prévue du jour, et les sujets importants qui ne datent pas du jour même."
+   "explication": "Une bonne réponse donne les trois sortes de séquences : l'actualité imprévue du jour même (« un incendie dans une entreprise »), l'actualité prévue du jour même (« un conseil des ministres ») et des sujets jugés importants qui ne se passent pas le jour même (« de plus en plus de vols dans les habitations »). L'ordre n'a pas d'importance."
   },
   {
    "id": "ceb-2017-l9-q5",
@@ -5056,7 +5082,7 @@
     2,
     1
    ],
-   "explication": "D'abord l'incendie se déclare, puis les journalistes sont avertis, une équipe se rend sur place et enfin elle filme et récolte des renseignements."
+   "explication": "Julie Morelle dit : « Dès qu'on est au courant de ce scoop, on envoie des équipes sur place pour filmer, récolter des renseignements ». Il faut donc d'abord l'incendie, puis les journalistes sont avertis, une équipe se rend sur place et enfin elle filme et récolte des renseignements."
   },
   {
    "id": "ceb-2017-l9-q6",
@@ -5100,7 +5126,7 @@
     "Un décodeur."
    ],
    "reponse": 2,
-   "explication": "L'appareil qui fait défiler le texte devant la caméra s'appelle un prompteur."
+   "explication": "Julie Morelle explique que ses textes défilent sur un écran transparent placé devant la caméra : « On appelle ça un prompteur ». Un projecteur ou un haut-parleur ne font pas défiler de texte."
   },
   {
    "id": "ceb-2017-l9-q8",
@@ -5141,7 +5167,7 @@
     0,
     2
    ],
-   "explication": "Un évènement très important ou qui touche beaucoup de gens (une naissance royale, un tremblement de terre) peut passer en tête du journal."
+   "explication": "Julie Morelle explique que les évènements qui nous concernent le plus ou qui ont un grand impact ouvrent le journal, comme une victoire des Diables Rouges. Une naissance dans la famille royale belge ou un tremblement de terre sont de tels évènements ; un accrochage entre deux cyclistes ou la défaite d'un club amateur sont trop peu importants."
   },
   {
    "id": "ceb-2017-l9-q10",
@@ -5168,7 +5194,7 @@
     0,
     2
    ],
-   "explication": "On récolte les informations, on les organise, on rédige le texte, puis on présente le JT."
+   "explication": "Julie Morelle raconte sa journée : on récolte d'abord les informations (réunions dès 8 h, équipes envoyées sur place), on les classe selon leur importance, elle écrit ses textes l'après-midi, puis elle présente le JT à 19 h 30."
   },
   {
    "id": "ceb-2017-l9-q11",
@@ -5197,7 +5223,7 @@
     0,
     1
    ],
-   "explication": "Le journal ne rapporte pas tout : l'équipe choisit les informations et les réorganise tout au long de la journée.",
+   "explication": "Le journal ne rapporte pas tout : l'équipe choisit, et Julie Morelle dit que ce classement « est très subjectif puisque c'est ce que nous avons décidé de présenter ». Les informations ne sont pas classées une fois pour toutes le matin : « il y a toute une série de choses qui évoluent au cours de la journée ».",
    "toutOuRien": true
   },
   {
@@ -5254,7 +5280,7 @@
     1,
     3
    ],
-   "explication": "L'interview parle de la réalisation d'un JT et de sa présentation. Le corrigé officiel tolère aussi « de la vie de la présentatrice » : la choisir en plus ne retire pas de point.",
+   "explication": "Julie Morelle explique comment on prépare un JT (récolter, classer, écrire les informations) et comment elle le présente (le prompteur). Choisir aussi « la vie de la présentatrice » est accepté, car elle parle un peu de son parcours ; il n'est jamais question d'un feuilleton.",
    "aussiAcceptes": [
     0
    ]
