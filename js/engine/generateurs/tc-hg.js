@@ -1295,7 +1295,7 @@ const ORDRES_POP = [
     expl: 'Les littoraux et les vallées des fleuves offrent de l\'eau, des terres fertiles, des plaines et des ports : on y trouve beaucoup d\'habitants et de grandes villes.' },
   { q: 'Qu\'est-ce que la densité de population ?', ok: 'Le nombre moyen d\'habitants par km²',
     ko: ['Le nombre total d\'habitants d\'un pays', 'La superficie d\'un pays', 'Le nombre de villes d\'un pays'],
-    expl: 'Densité = nombre d\'habitants ÷ superficie (en km²). Un pays peut avoir beaucoup d\'habitants mais une faible densité s\'il est très grand.' },
+    expl: 'Densité = nombre d\'habitants : superficie (en km²). Un pays peut avoir beaucoup d\'habitants mais une faible densité s\'il est très grand.' },
 ];
 const LIEUX = [
   { fam: 'sec', t: 'le Sahara', ou: 'au Sahara', p: false, c: 'Il fait très chaud et il y a très peu d\'eau (désert chaud).' },
@@ -2579,7 +2579,7 @@ const peuplementBe = famille('pb', [
       enonce: `Population au 1er janvier 2024 (Statbel) :\n${donnees}\n${sorte === 'peuple' ? 'Quelle province compte le plus d\'habitants ?' : sorte === 'dense' ? 'Quelle province a la plus forte densité de population ?' : 'Quelle province a la plus faible densité de population ?'}`,
       explication: sorte === 'peuple'
         ? `On compare le nombre total d'habitants : ${bon.nom} en a le plus. (Densités : ${dens}.)`
-        : `Densité = nombre d'habitants ÷ superficie. ${dens}. ${sorte === 'dense' ? 'La plus forte' : 'La plus faible'} : ${bon.nom}.`,
+        : `Densité = nombre d'habitants : superficie. ${dens}. ${sorte === 'dense' ? 'La plus forte' : 'La plus faible'} : ${bon.nom}.`,
       _signature: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`, cleContenu: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`,
       difficulte: sorte === 'peuple' ? 1 : 3,
     };

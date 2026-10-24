@@ -513,7 +513,7 @@
     "Pour trouver l'opération, elle doit marcher pour toutes les flèches, pas seulement pour une.",
     "Situation de proportionnalité : on passe toujours d'un ensemble à l'autre en multipliant par le même nombre. Avec « + 3 », ce n'est pas de la proportionnalité."
    ],
-   "exemple": "Cahiers → prix : 2 → 3 € ; 5 → 7,50 €. Prix d'un cahier : 3 : 2 = 1,50 €. Pour 8 cahiers : 8 × 1,50 = 12 €.",
+   "exemple": "Cahiers → prix : 2 → 3 € ; 5 → 7,50 €. Prix d'un cahier = 3 : 2 = 1,50 €. Pour 8 cahiers : 8 × 1,50 = 12 €.",
    "astuce": "Pour remonter une flèche, fais l'opération inverse : × 4 devient : 4, + 3 devient − 3."
   },
   {

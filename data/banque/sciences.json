@@ -127,13 +127,13 @@
       "difficulte": 1,
       "enonce": "De l'huile prend feu dans une poêle. Que faut-il faire, après avoir coupé le gaz ?",
       "choix": [
-        "Étendre une couverture humide sur la poêle.",
+        "Couvrir la poêle avec un couvercle ou une couverture anti-feu.",
         "Jeter de l'eau dessus.",
         "Souffler sur les flammes.",
         "Ouvrir la fenêtre."
       ],
       "reponse": 0,
-      "explication": "La couverture humide prive le feu de dioxygène. Jamais d'eau sur de l'huile en feu : ça projette l'huile brûlante !",
+      "explication": "Le couvercle (ou la couverture anti-feu) prive le feu de dioxygène. Jamais d'eau sur de l'huile en feu : ça projette l'huile brûlante !",
       "fiche": "sc-combustion"
     },
     {
@@ -141,7 +141,7 @@
       "domaine": "sc.energie",
       "type": "qcm_multi",
       "difficulte": 1,
-      "enonce": "Coche les deux ressources d'énergie non renouvelables.",
+      "enonce": "Choisis les deux ressources d'énergie non renouvelables.",
       "choix": [
         "Gaz naturel",
         "Pétrole",

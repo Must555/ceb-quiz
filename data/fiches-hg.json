@@ -320,10 +320,10 @@
     "Espaces très peuplés : vallée du Nil, Asie du Sud et de l'Est (Inde, Chine, Bangladesh, Java), Europe de l'Ouest, littoraux.",
     "Espaces presque vides : déserts (Sahara), régions très froides (Sibérie, Antarctique), hautes montagnes (Himalaya), forêt dense (Amazonie).",
     "Le relief, l'eau, le climat et la proximité de la mer expliquent ces différences.",
-    "Densité = habitants ÷ superficie. Un pays très peuplé n'est pas forcément très dense (la Russie a plus d'habitants que le Japon, mais elle est bien moins dense)."
+    "Densité = habitants : superficie. Un pays très peuplé n'est pas forcément très dense (la Russie a plus d'habitants que le Japon, mais elle est bien moins dense)."
    ],
    "exemple": "Presque tous les Égyptiens vivent dans la vallée et le delta du Nil, au milieu du désert.",
-   "astuce": "Pour comparer des densités, calcule toujours habitants ÷ km² : ne regarde pas seulement le nombre d'habitants."
+   "astuce": "Pour comparer des densités, calcule toujours habitants : km² : ne regarde pas seulement le nombre d'habitants."
   },
   {
    "id": "hg-planisphere",
@@ -404,7 +404,7 @@
     "En 2024 : Belgique ≈ 11,8 millions d'habitants ; Région flamande ≈ 6,8 ; Région wallonne ≈ 3,7 ; Région de Bruxelles-Capitale ≈ 1,2 million.",
     "Espaces très peuplés : l'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège).",
     "Espaces peu peuplés : l'Ardenne, la Famenne, les Hautes Fagnes.",
-    "Densité = habitants ÷ km². La province d'Anvers est la plus peuplée ; celle de Luxembourg la moins peuplée et la moins dense."
+    "Densité = habitants : km². La province d'Anvers est la plus peuplée ; celle de Luxembourg la moins peuplée et la moins dense."
    ],
    "exemple": "Bruxelles-Capitale : environ 1,2 million d'habitants sur 162 km², soit plus de 7 000 habitants par km².",
    "astuce": "Une grande population ne veut pas dire une forte densité : compare toujours avec la superficie."

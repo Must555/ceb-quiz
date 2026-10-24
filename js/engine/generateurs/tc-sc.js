@@ -571,12 +571,12 @@ export function genererEffort(modele, rng) {
     if (forme === 'moyPouls') {
       return { type: 'numerique', reponse: m * 4, unite: 'battements par minute', difficulte: 3,
         enonce: `${p} compte ses battements de cœur pendant 15 secondes, ${moment}. ${maj(e)} recommence 3 fois et trouve ${vals.join(', ')} battements. Quel est son rythme cardiaque moyen, en battements par minute ?`,
-        explication: `Moyenne sur 15 s : (${vals.join(' + ')}) ÷ 3 = ${somme} ÷ 3 = ${m}. Sur 1 minute (4 × 15 s) : ${m} × 4 = ${m * 4} battements par minute.`, _signature: `moyP|${vals.join(',')}` };
+        explication: `Moyenne sur 15 s : (${vals.join(' + ')}) : 3 = ${somme} : 3 = ${m}. Sur 1 minute (4 × 15 s) : ${m} × 4 = ${m * 4} battements par minute.`, _signature: `moyP|${vals.join(',')}` };
     }
     const unite = pouls ? 'battements par minute' : 'mouvements par minute';
     return { type: 'numerique', reponse: m, unite,
       enonce: `Pour avoir un résultat fiable, ${p} mesure 3 fois ${pouls ? 'son rythme cardiaque' : 'sa ventilation'} ${moment} : ${vals.join(', ')} ${unite}. Quelle est la moyenne de ces 3 mesures ?`,
-      explication: `Moyenne = somme des mesures ÷ nombre de mesures = (${vals.join(' + ')}) ÷ 3 = ${somme} ÷ 3 = ${m} ${unite}.`, _signature: `moy|${pouls}|${apres}|${vals.join(',')}` };
+      explication: `Moyenne = somme des mesures : nombre de mesures = (${vals.join(' + ')}) : 3 = ${somme} : 3 = ${m} ${unite}.`, _signature: `moy|${pouls}|${apres}|${vals.join(',')}` };
   }
   if (forme === 'hausse') {
     const pouls = rng.next() < 0.6;
@@ -593,7 +593,7 @@ export function genererEffort(modele, rng) {
     const fig = svgTableau({ titre: elider(pouls ? `Rythme cardiaque de ${p} (battements/min)` : `Ventilation de ${p} (mouvements/min)`),
       entetes: ['', 'Mesure 1', 'Mesure 2', 'Mesure 3'], lignes: [['Au repos', ...rep.v.map(String)], ['Après l\'effort', ...eff.v.map(String)]] });
     const q = rng.pick(['repos', 'effort', 'diff']);
-    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) ÷ 3 = ${o.v[0] + o.v[1] + o.v[2]} ÷ 3 = ${o.m} ${unite}.`;
+    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) : 3 = ${o.v[0] + o.v[1] + o.v[2]} : 3 = ${o.m} ${unite}.`;
     if (q === 'diff') {
       return { type: 'numerique', reponse: eff.m - rep.m, unite, figure: fig, difficulte: 3,
         enonce: `${p} a mesuré 3 fois ${pouls ? 'son rythme cardiaque' : 'sa ventilation'} au repos, puis 3 fois après l'effort. Calcule la moyenne de chaque ligne du tableau. De combien la moyenne après l'effort dépasse-t-elle la moyenne au repos ?`,
@@ -1649,7 +1649,7 @@ export function genererTransfert(modele, rng) {
     if (pieges.length < 3) pieges.push(pieges.includes(m + q) ? m - q : m + q);
     const r = qcm(rng, deg(m), [...new Set(pieges)].filter((x) => x !== m).slice(0, 3).map(deg));
     return { ...r, enonce: `${p} verse ${V} ml d'eau à ${deg(T1)} et ${V} ml d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
-      explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) ÷ 2 = ${m} °C. Les températures ne s'additionnent pas.`,
+      explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) : 2 = ${m} °C. Les températures ne s'additionnent pas.`,
       _signature: `mel|${T1}|${T2}|${V}|${triee(r.choix)}`, cleContenu: `mel|${T1}|${T2}|${V}` };
   }
   if (forme === 'courbe') {
@@ -1816,7 +1816,7 @@ export function genererEconomie(modele, rng) {
     if (q === 'mois' && gain % 12) return null;
     if (q === 'mois') {
       return { type: 'numerique', reponse: gain / 12, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)}. En moyenne, combien de ${C.u} économise-t-elle par mois ?`,
-        explication: `Économie par an : ${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. Par mois : ${fmt(gain)} ÷ 12 = ${fmt(gain / 12)} ${C.u}. Une maison mieux isolée perd moins de chaleur : elle consomme moins.`,
+        explication: `Économie par an : ${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. Par mois : ${fmt(gain)} : 12 = ${fmt(gain / 12)} ${C.u}. Une maison mieux isolée perd moins de chaleur : elle consomme moins.`,
         _signature: `cm|${C.u}|${avant}|${apres}|${trav}`, cleContenu: `cm|${C.u}|${avant}|${apres}` };
     }
     return { type: 'numerique', reponse: gain, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)} par an. Combien de ${C.u} économise-t-elle chaque année ?`,
@@ -2001,7 +2001,7 @@ export function genererMesures(modele, rng) {
   const kg = grammes / 1000;
   return { type: 'numerique', reponse: enG ? kg : grammes, unite: enG ? 'kg' : 'g', figure: figBalance(enG ? `${fmt(grammes)} g` : `${fmt(kg)} kg`, lib),
     enonce: `${p} pèse ${objet} sur une balance. Quelle est la masse ${enG ? 'en kilogrammes (kg)' : 'en grammes (g)'} ?`,
-    explication: `1 kg = 1 000 g. ${enG ? `${fmt(grammes)} g = ${fmt(grammes)} ÷ 1 000 = ${fmt(kg)} kg.` : `${fmt(kg)} kg = ${fmt(kg)} × 1 000 = ${fmt(grammes)} g.`}`,
+    explication: `1 kg = 1 000 g. ${enG ? `${fmt(grammes)} g = ${fmt(grammes)} : 1 000 = ${fmt(kg)} kg.` : `${fmt(kg)} kg = ${fmt(kg)} × 1 000 = ${fmt(grammes)} g.`}`,
     _signature: `bal|${lib}|${grammes}|${enG}`, cleContenu: `bal|${grammes}|${enG}` };
 }
 

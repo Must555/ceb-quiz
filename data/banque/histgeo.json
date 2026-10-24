@@ -151,7 +151,7 @@
       "enonce": "Une province a 1 000 000 d'habitants et une superficie de 5 000 km². Quelle est sa densité de population (en habitants par km²) ?",
       "reponse": 200,
       "unite": "hab./km²",
-      "explication": "Densité = nombre d'habitants ÷ superficie = 1 000 000 ÷ 5 000 = 200 habitants par km².",
+      "explication": "Densité = nombre d'habitants : superficie = 1 000 000 : 5 000 = 200 habitants par km².",
       "fiche": "hg-densite"
     },
     {

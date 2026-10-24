@@ -74,7 +74,7 @@
       "enonce": "{p.nom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-{p.pr} payer ?",
       "reponse": "prix - prix * remise / 100",
       "unite": "€",
-      "explication": "{remise} % de {prix} € = {prix} × {remise} ÷ 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €.",
+      "explication": "{remise} % de {prix} € = {prix} × {remise} : 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €.",
       "fiche": "ma-pourcentages"
     },
     {
@@ -106,7 +106,7 @@
       "enonce": "Calcule {p} % de {n} €.",
       "reponse": "n * p / 100",
       "unite": "€",
-      "explication": "{p} % de {n}, c'est {n} × {p} ÷ 100 = {=n * p / 100} €.",
+      "explication": "{p} % de {n}, c'est {n} × {p} : 100 = {=n * p / 100} €.",
       "fiche": "ma-pourcentages"
     },
     {
@@ -188,7 +188,7 @@
       "enonce": "Un triangle a une base de {b} cm et une hauteur de {h} cm. Quelle est son aire ?",
       "reponse": "b * h / 2",
       "unite": "cm²",
-      "explication": "Aire du triangle = (base × hauteur) ÷ 2 = ({b} × {h}) ÷ 2 = {=b * h / 2} cm².",
+      "explication": "Aire du triangle = (base × hauteur) : 2 = ({b} × {h}) : 2 = {=b * h / 2} cm².",
       "fiche": "ma-aires-perimetres"
     },
     {
@@ -494,7 +494,7 @@
       ],
       "enonce": "Il y a {q} {chose}. Combien font les {num}/{den} de ces {chose} ?",
       "reponse": "q / den * num",
-      "explication": "On partage en {den} : {q} ÷ {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}.",
+      "explication": "On partage en {den} : {q} : {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}.",
       "fiche": "ma-fractions"
     },
     {
@@ -578,7 +578,7 @@
       ],
       "enonce": "{ctx.a} {x} {ctx.u1}, {ctx.b} {=a} {ctx.u2}. Combien en faut-il pour {y} {ctx.u1} ?",
       "reponse": "r",
-      "explication": "Pour 1 {ctx.u1s} : {=a} ÷ {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}.",
+      "explication": "Pour 1 {ctx.u1s} : {=a} : {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}.",
       "fiche": "ma-proportionnalite"
     },
     {
@@ -655,7 +655,7 @@
       "enonce": "{veh.nom} parcourt {=d} km en {t.txt}. Quelle est sa vitesse moyenne en km/h ?",
       "reponse": "v",
       "unite": "km/h",
-      "explication": "Vitesse = distance ÷ durée = {=d} km ÷ {=t_h} h = {=v} km/h.",
+      "explication": "Vitesse = distance : durée = {=d} km : {=t_h} h = {=v} km/h.",
       "fiche": "ma-vitesse"
     },
     {
@@ -721,7 +721,7 @@
       ],
       "enonce": "On range {n} {objet} {g}. Combien de groupes complets peut-on faire ?",
       "reponse": "floor(n / g)",
-      "explication": "{n} ÷ {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}.",
+      "explication": "{n} : {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}.",
       "fiche": "ma-division"
     },
     {
@@ -760,7 +760,7 @@
       ],
       "enonce": "{p} a obtenu {a}/20, {b}/20 et {c}/20 à trois interrogations. Quelle est sa moyenne sur 20 ?",
       "reponse": "(a + b + c) / 3",
-      "explication": "Moyenne = somme ÷ nombre de notes = ({a} + {b} + {c}) ÷ 3 = {=a + b + c} ÷ 3 = {=(a + b + c) / 3}.",
+      "explication": "Moyenne = somme : nombre de notes = ({a} + {b} + {c}) : 3 = {=a + b + c} : 3 = {=(a + b + c) / 3}.",
       "fiche": "ma-moyenne"
     },
     {

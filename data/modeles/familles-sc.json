@@ -1618,7 +1618,7 @@
      "enonce": "Un récipient fermé contient {a.volume} litres d'air. Sachant que l'air contient environ 21 % de dioxygène, combien de litres de dioxygène ce récipient contient-il environ ?",
      "reponse": "a_volume * 21 / 100",
      "unite": "litres",
-     "explication": "21 % de {a.volume} litres = {a.volume} × 21 ÷ 100 = {=a_volume * 21 / 100} litres.",
+     "explication": "21 % de {a.volume} litres = {a.volume} × 21 : 100 = {=a_volume * 21 / 100} litres.",
      "difficulte": 3
     },
     {
@@ -1628,7 +1628,7 @@
      "enonce": "Une cuve contient {a.volume} litres d'air. Sachant que l'air contient environ 78 % de diazote, combien de litres de diazote la cuve contient-elle environ ?",
      "reponse": "a_volume * 78 / 100",
      "unite": "litres",
-     "explication": "78 % de {a.volume} litres = {a.volume} × 78 ÷ 100 = {=a_volume * 78 / 100} litres.",
+     "explication": "78 % de {a.volume} litres = {a.volume} × 78 : 100 = {=a_volume * 78 / 100} litres.",
      "difficulte": 3
     },
     {
