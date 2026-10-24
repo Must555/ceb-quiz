@@ -242,7 +242,8 @@ const FORMES = {
       const elements = tires.map((x) => majuscule(remplirSouple(forme.element ?? '{cle}', varsElement(modele, forme, x))));
       const idx = tires.map((_, i) => i).sort((i, j) => premier(tires[i][forme.champ]) - premier(tires[j][forme.champ]));
       if (forme.sens === 'decroissant') idx.reverse();
-      const vars = { liste: idx.map((i) => `${nomDe(modele, forme, tires[i])} (${remplirSouple(forme.valeurAffichee ?? '{' + forme.champ + '}', tires[i])})`).join(' → ') };
+      const vars = { liste: idx.map((i) => `${nomDe(modele, forme, tires[i])} (${remplirSouple(forme.valeurAffichee ?? '{' + forme.champ + '}', tires[i])})`).join(' → '),
+        avjc: vals.some((v) => v < 0) ? ' Attention aux dates av. J.-C. : plus le nombre est grand, plus c\'est ancien.' : '' };
       return { _signature: elements.slice().sort().join(','), cle: `${forme.enonce}|${elements.slice().sort().join(',')}`, vars, type: 'ordre', elements, reponse: idx };
     }
     return null;
@@ -288,6 +289,7 @@ const FORMES = {
     if (tires.some((x) => liste(x[forme.champ]).map(aff).filter((v) => colonnes.includes(v)).length !== 1)) return null;
     const lignes = tires.map((x) => majuscule(remplirSouple(forme.element ?? '{cle}', varsElement(modele, forme, x))));
     const reponse = tires.map((x) => colonnes.indexOf(liste(x[forme.champ]).map(aff).find((v) => colonnes.includes(v))));
+    if (colonnes.length > 1 && reponse.every((c) => c === reponse[0])) return null; // toutes les lignes dans la même colonne : trop facile à deviner
     const vars = { liste: tires.map((x) => `${nomDe(modele, forme, x)} → ${aff(premier(x[forme.champ]))}`).join(' ; ') };
     return { _signature: lignes.slice().sort().join(','), cle: `${forme.enonce}|${lignes.slice().sort().join(',')}`, vars, type: 'grille', lignes, colonnes, reponse, points: tires.length };
   },
@@ -317,7 +319,14 @@ const FORMES = {
 
 export function genererFaits(modele, rng) {
   const formes = modele.formes ?? [modele];
-  const i = formes.length === 1 ? 0 : rng.int(0, formes.length - 1);
+  // « poids » (facultatif) : une forme moins fréquente (ex. 0.3).
+  let i;
+  if (formes.length === 1) i = 0;
+  else if (formes.some((f) => f.poids != null)) {
+    const total = formes.reduce((t, f) => t + (f.poids ?? 1), 0);
+    let x = rng.next() * total; i = 0;
+    while (i < formes.length - 1 && x >= (formes[i].poids ?? 1)) { x -= formes[i].poids ?? 1; i++; }
+  } else i = rng.int(0, formes.length - 1);
   const forme = formes[i];
   const fn = FORMES[forme.sorte];
   if (!fn) throw new Error(`${modele.id} : forme inconnue « ${forme.sorte} »`);

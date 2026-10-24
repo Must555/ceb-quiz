@@ -9,6 +9,14 @@ export function formatNombre(n) {
   return (neg ? '−' : '') + entFmt + (dec ? ',' + dec : '');
 }
 
+// Montant en euros : 2 décimales dès qu'il y a des cents (2,70 ; 12 ; 1 234,05).
+export function formatMontant(n) {
+  if (typeof n !== 'number' || !Number.isFinite(n)) return String(n);
+  const c = Math.round(n * 100);
+  if (c % 100 === 0) return formatNombre(c / 100);
+  return formatNombre(Math.trunc(c / 100)) + ',' + String(Math.abs(c % 100)).padStart(2, '0');
+}
+
 // "1 234,50 €" -> 1234.5 ; renvoie NaN si ce n'est pas un nombre.
 export function parseNombre(input) {
   if (typeof input === 'number') return input;

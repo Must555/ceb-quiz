@@ -8,10 +8,10 @@
       "titre": "Les pourcentages",
       "regle": [
         "« 25 % » veut dire 25 sur 100.",
-        "Pour calculer un pourcentage d'un nombre : nombre × pourcentage ÷ 100.",
+        "Pour calculer un pourcentage d'un nombre : nombre × pourcentage : 100.",
         "Réduction : prix de départ − réduction = prix à payer."
       ],
-      "exemple": "20 % de 150 € = 150 × 20 ÷ 100 = 30 €. Avec 20 % de réduction, on paie 150 − 30 = 120 €.",
+      "exemple": "20 % de 150 € = 150 × 20 : 100 = 30 €. Avec 20 % de réduction, on paie 150 − 30 = 120 €.",
       "astuce": "10 % = on divise par 10. 50 % = la moitié. 25 % = le quart."
     },
     {
@@ -23,8 +23,8 @@
         "Le périmètre, c'est le tour de la figure (en m, cm…).",
         "L'aire, c'est la surface à l'intérieur (en m², cm²…).",
         "Rectangle : aire = L × l ; périmètre = (L + l) × 2.",
-        "Triangle : aire = (base × hauteur) ÷ 2.",
-        "Parallélogramme : base × hauteur. Losange : (grande diagonale × petite diagonale) ÷ 2. Trapèze : (grande base + petite base) × hauteur ÷ 2."
+        "Triangle : aire = (base × hauteur) : 2.",
+        "Parallélogramme : base × hauteur. Losange : (grande diagonale × petite diagonale) : 2. Trapèze : (grande base + petite base) × hauteur : 2."
       ],
       "exemple": "Rectangle de 6 m sur 4 m : périmètre = (6 + 4) × 2 = 20 m ; aire = 6 × 4 = 24 m².",
       "astuce": "Clôture, bordure, ruban → périmètre. Peinture, carrelage, gazon → aire."
@@ -89,11 +89,11 @@
       "e": "🚴",
       "titre": "La vitesse moyenne",
       "regle": [
-        "Vitesse = distance ÷ durée.",
+        "Vitesse = distance : durée.",
         "En km/h : les kilomètres parcourus en 1 heure.",
         "30 min = 0,5 h ; 1 h 30 = 1,5 h ; 2 h 15 = 2,25 h."
       ],
-      "exemple": "33 km en 2 h 30 → 33 ÷ 2,5 = 13,2 km/h.",
+      "exemple": "33 km en 2 h 30 → 33 : 2,5 = 13,2 km/h.",
       "astuce": "Vérifie si c'est réaliste : un vélo roule vers 15-25 km/h, une voiture vers 50-120 km/h."
     },
     {
@@ -120,7 +120,7 @@
         "Simplifier : on divise le haut et le bas par le même nombre (2/8 = 1/4).",
         "Fraction × nombre entier : on multiplie seulement le numérateur (3 × 2/7 = 6/7)."
       ],
-      "exemple": "3/4 de 60 = (60 ÷ 4) × 3 = 15 × 3 = 45.",
+      "exemple": "3/4 de 60 = (60 : 4) × 3 = 15 × 3 = 45.",
       "astuce": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 3/4 = 0,75 = 75 %."
     },
     {
@@ -131,7 +131,7 @@
       "regle": [
         "Pour comparer : on compare d'abord la partie entière, puis les dixièmes, puis les centièmes…",
         "Multiplier un décimal : on calcule sans la virgule, puis on remet autant de chiffres après la virgule qu'au départ.",
-        "× 10 : la virgule avance d'un rang vers la droite ; ÷ 10 : vers la gauche.",
+        "Quand on multiplie par 10, la virgule avance d'un rang vers la droite ; quand on divise par 10, elle recule d'un rang vers la gauche.",
         "Encadrer au centième : 7,38 < 7,386 < 7,39."
       ],
       "exemple": "0,54 > 0,5 car 54 centièmes > 50 centièmes. 2,9 × 4 : 29 × 4 = 116 → 11,6.",
@@ -143,11 +143,11 @@
       "e": "➗",
       "titre": "La division et le reste",
       "regle": [
-        "Dividende ÷ diviseur = quotient, avec parfois un reste.",
+        "Dividende : diviseur = quotient, avec parfois un reste.",
         "Le reste est toujours plus petit que le diviseur.",
         "Vérification : quotient × diviseur + reste = dividende."
       ],
-      "exemple": "129 ÷ 7 = 18 reste 3, car 18 × 7 = 126 et 126 + 3 = 129.",
+      "exemple": "129 : 7 = 18 reste 3, car 18 × 7 = 126 et 126 + 3 = 129.",
       "astuce": "« Combien de groupes complets ? » → c'est le quotient. « Combien en reste-t-il ? » → c'est le reste."
     },
     {
@@ -156,9 +156,9 @@
       "e": "📊",
       "titre": "La moyenne",
       "regle": [
-        "Moyenne = somme de toutes les valeurs ÷ nombre de valeurs."
+        "Moyenne = somme de toutes les valeurs : nombre de valeurs."
       ],
-      "exemple": "Notes 12, 15 et 18 : (12 + 15 + 18) ÷ 3 = 45 ÷ 3 = 15.",
+      "exemple": "Notes 12, 15 et 18. Moyenne = (12 + 15 + 18) : 3 = 45 : 3 = 15.",
       "astuce": "La moyenne est toujours entre la plus petite et la plus grande valeur."
     },
     {
@@ -394,7 +394,7 @@
       "e": "👥",
       "titre": "La densité de population",
       "regle": [
-        "Densité = nombre d'habitants ÷ superficie (en km²).",
+        "Densité = nombre d'habitants : superficie (en km²).",
         "Elle s'exprime en habitants par km² (hab./km²)."
       ],
       "exemple": "500 000 habitants sur 2 500 km² → 200 hab./km².",

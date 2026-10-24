@@ -693,8 +693,9 @@
       "au sens propre",
       "au sens figuré"
      ],
-     "enonce": "Les mots de ces phrases sont-ils employés au sens propre ou au sens figuré ?",
-     "explication": "{liste}"
+     "enonce": "Les mots entre guillemets sont-ils employés au sens propre ou au sens figuré ?",
+     "explication": "{liste}",
+     "element": "{cle} (« {expr} »)"
     }
    ]
   },

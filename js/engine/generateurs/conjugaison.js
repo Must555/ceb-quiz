@@ -274,7 +274,11 @@ export function conjuguer(infinitif, temps, personne) {
       const pp = (g) => f.pp + (g ? 'e' : '') + (pluriel && !(f.pp.endsWith('s') && !g) ? 's' : '');
       // je/tu/nous/vous : le genre n'est pas connu, on accepte masculin et féminin.
       const connu = personne.genre || ['il', 'ils', 'elle', 'elles', 'on'].includes(personne.pronom);
-      const variantes = connu ? [pp(fem)] : [pp(false), pp(true)];
+      let variantes = connu ? [pp(fem)] : [pp(false), pp(true)];
+      // « on » peut vouloir dire « nous » (on est allés) ; « vous » peut être une seule personne (vous êtes resté).
+      const ppN = (g, pl) => f.pp + (g ? 'e' : '') + (pl && !(f.pp.endsWith('s') && !g) ? 's' : '');
+      if (personne.pronom === 'on' && !personne.genre) variantes = [...new Set([...variantes, ppN(false, true), ppN(true, true)])];
+      if (personne.pronom === 'vous' && !personne.genre) variantes = [...new Set([...variantes, ppN(false, false), ppN(true, false)])];
       return { forme: `${aux} ${variantes[0]}`, formesAcceptees: variantes.map((v) => `${aux} ${v}`) };
     }
     const forme = `${IRREGULIERS.avoir.present[i]} ${f.pp}`;

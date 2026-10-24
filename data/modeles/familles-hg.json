@@ -18,7 +18,7 @@
      "element": "{Cle} ({date})",
      "difficulte": 1,
      "enonce": "Aide-toi des dates : range ces événements dans l'ordre chronologique, du plus ancien au plus récent.",
-     "explication": "Ordre : {liste}. Attention aux dates av. J.-C. : plus le nombre est grand, plus c'est ancien."
+     "explication": "Ordre : {liste}.{avjc}"
     },
     {
      "sorte": "ordre",
@@ -357,16 +357,16 @@
     {
      "sorte": "attribut",
      "champ": "role",
-     "enonce": "Qui était {cle} ?",
-     "explication": "{Cle} était {valeur} ({quand}).",
+     "enonce": "Qui {verbe} {cle} ?",
+     "explication": "{Cle} {verbe} {valeur} ({quand}).",
      "voisinsPar": "periode"
     },
     {
      "sorte": "attribut",
      "champ": "nom",
      "cle": "role",
-     "enonce": "Qui était {cle} ?",
-     "explication": "{Cle} : c'était {valeur} ({quand}).",
+     "enonce": "Qui {verbe} {cle} ?",
+     "explication": "{Cle} : {valeur} ({quand}).",
      "voisinsPar": "periode"
     },
     {
@@ -548,7 +548,7 @@
      "sorte": "lequel",
      "champ": "region",
      "difficulte": 1,
-     "enonce": "Laquelle de ces villes se trouve {valeurPhrase} ?",
+     "enonce": "Laquelle de ces villes ou communes se trouve {valeurPhrase} ?",
      "explication": "{Cle} se trouve {valeurPhrase}."
     },
     {
@@ -629,7 +629,8 @@
       "la Communauté flamande",
       "la Communauté germanophone",
       "les Communautés française et flamande"
-     ]
+     ],
+     "poids": 0.3
     }
    ]
   },
@@ -761,7 +762,7 @@
       "la Famenne",
       "le Condroz"
      ],
-     "enonce": "Laquelle de ces villes se trouve {valeurPhrase} ?",
+     "enonce": "Laquelle de ces villes ou communes se trouve {valeurPhrase} ?",
      "explication": "{Cle} se trouve {valeurPhrase}."
     }
    ]
@@ -922,7 +923,10 @@
      "n": 4,
      "difficulte": 3,
      "enonce": "Relie chaque pays à sa capitale.",
-     "explication": "{liste}."
+     "explication": "{liste}.",
+     "avec": [
+      "capitaleDistincte"
+     ]
     },
     {
      "sorte": "grille",

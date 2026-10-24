@@ -319,7 +319,7 @@ function expSoleil(rng, support) {
     specs: {
       cause,
       demarche: {
-        enonce: 'Pour que la comparaison soit juste, qu\'est-ce qui doit être pareil pour toutes les bouteilles ?',
+        enonce: `Pour que la comparaison soit juste, qu'est-ce qui doit être pareil pour ${series.length === 2 ? 'les deux bouteilles' : 'toutes les bouteilles'} ?`,
         bonne: 'La quantité d\'eau, la taille des bouteilles et la température de départ.',
         faux: demarche.faux,
         pourquoi: `Entre deux bouteilles que l'on compare, on ne change qu'une seule chose : ici, ${demarche.teste}. Tout le reste doit rester identique.`,
@@ -571,12 +571,12 @@ export function genererEffort(modele, rng) {
     if (forme === 'moyPouls') {
       return { type: 'numerique', reponse: m * 4, unite: 'battements par minute', difficulte: 3,
         enonce: `${p} compte ses battements de cœur pendant 15 secondes, ${moment}. ${maj(e)} recommence 3 fois et trouve ${vals.join(', ')} battements. Quel est son rythme cardiaque moyen, en battements par minute ?`,
-        explication: `Moyenne sur 15 s : (${vals.join(' + ')}) ÷ 3 = ${somme} ÷ 3 = ${m}. Sur 1 minute (4 × 15 s) : ${m} × 4 = ${m * 4} battements par minute.`, _signature: `moyP|${vals.join(',')}` };
+        explication: `Moyenne sur 15 s : (${vals.join(' + ')}) : 3 = ${somme} : 3 = ${m}. Sur 1 minute (4 × 15 s) : ${m} × 4 = ${m * 4} battements par minute.`, _signature: `moyP|${vals.join(',')}` };
     }
     const unite = pouls ? 'battements par minute' : 'mouvements par minute';
     return { type: 'numerique', reponse: m, unite,
       enonce: `Pour avoir un résultat fiable, ${p} mesure 3 fois ${pouls ? 'son rythme cardiaque' : 'sa ventilation'} ${moment} : ${vals.join(', ')} ${unite}. Quelle est la moyenne de ces 3 mesures ?`,
-      explication: `Moyenne = somme des mesures ÷ nombre de mesures = (${vals.join(' + ')}) ÷ 3 = ${somme} ÷ 3 = ${m} ${unite}.`, _signature: `moy|${pouls}|${apres}|${vals.join(',')}` };
+      explication: `Moyenne = somme des mesures : nombre de mesures = (${vals.join(' + ')}) : 3 = ${somme} : 3 = ${m} ${unite}.`, _signature: `moy|${pouls}|${apres}|${vals.join(',')}` };
   }
   if (forme === 'hausse') {
     const pouls = rng.next() < 0.6;
@@ -593,7 +593,7 @@ export function genererEffort(modele, rng) {
     const fig = svgTableau({ titre: elider(pouls ? `Rythme cardiaque de ${p} (battements/min)` : `Ventilation de ${p} (mouvements/min)`),
       entetes: ['', 'Mesure 1', 'Mesure 2', 'Mesure 3'], lignes: [['Au repos', ...rep.v.map(String)], ['Après l\'effort', ...eff.v.map(String)]] });
     const q = rng.pick(['repos', 'effort', 'diff']);
-    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) ÷ 3 = ${o.v[0] + o.v[1] + o.v[2]} ÷ 3 = ${o.m} ${unite}.`;
+    const expl = (o, nom) => `Moyenne ${nom} : (${o.v.join(' + ')}) : 3 = ${o.v[0] + o.v[1] + o.v[2]} : 3 = ${o.m} ${unite}.`;
     if (q === 'diff') {
       return { type: 'numerique', reponse: eff.m - rep.m, unite, figure: fig, difficulte: 3,
         enonce: `${p} a mesuré 3 fois ${pouls ? 'son rythme cardiaque' : 'sa ventilation'} au repos, puis 3 fois après l'effort. Calcule la moyenne de chaque ligne du tableau. De combien la moyenne après l'effort dépasse-t-elle la moyenne au repos ?`,
@@ -1049,7 +1049,7 @@ const TRAJETS = {
 const ORGANES = {
   respiratoire: ['Nez', 'Trachée', 'Bronches', 'Poumons', 'Alvéoles'],
   circulatoire: ['Cœur', 'Artères', 'Veines', 'Sang'],
-  digestif: ['Bouche', 'Œsophage', 'Estomac', 'Intestin grêle', 'Côlon', 'Anus', 'Foie', 'Pancréas', 'Glandes salivaires'],
+  digestif: ['Œsophage', 'Estomac', 'Intestin grêle', 'Côlon', 'Anus', 'Foie', 'Pancréas', 'Glandes salivaires'],
 };
 const VENTIL = {
   inspiration: ['Le diaphragme se contracte et s\'abaisse', 'Les côtes se soulèvent', 'La cage thoracique s\'agrandit', 'L\'air entre dans les poumons'],
@@ -1093,7 +1093,7 @@ const QCMS = [
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le pancréas', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
   { e: 'Lequel de ces organes est une glande annexe du système digestif (les aliments n\'y passent pas) ?', b: 'Le foie', f: ['L\'estomac', 'L\'œsophage', 'L\'intestin grêle', 'Le côlon'], x: 'Glandes annexes : glandes salivaires, pancréas et foie.' },
   { e: 'Dans quelle partie du tube digestif de l\'eau est-elle absorbée, juste avant l\'anus ?', b: 'Dans le côlon', f: ['Dans l\'estomac', 'Dans l\'intestin grêle', 'Dans l\'œsophage'], x: 'Le côlon (gros intestin) absorbe encore de l\'eau ; les restes sont évacués par l\'anus.' },
-  { e: 'Quel conduit amène l\'air jusqu\'aux bronches ?', b: 'La trachée', f: ['L\'œsophage', 'Les alvéoles', 'Les fosses nasales'], x: 'Nez ou bouche → trachée → bronches → alvéoles des poumons.' },
+  { e: 'Quel conduit relie la gorge aux bronches ?', b: 'La trachée', f: ['L\'œsophage', 'Les alvéoles', 'L\'intestin grêle'], x: 'Nez ou bouche → trachée → bronches → alvéoles des poumons.' },
   { e: 'Que transporte le sang qui revient des muscles vers les poumons ?', b: 'Du dioxyde de carbone à rejeter', f: ['Des aliments non digérés', 'De l\'urine', 'De l\'air pur'], x: 'Les muscles produisent du dioxyde de carbone ; le sang l\'emporte jusqu\'aux poumons.' },
 ];
 const SITUATIONS = [
@@ -1398,7 +1398,7 @@ const CTX_DEM = [
     effet: (v) => `l'évaporation de ${v.V} ml d'eau`, mesure: 'la quantité d\'eau qui reste après trois jours',
     f: [{ nom: 'la forme du récipient', col: 'Récipient', v: ['verre', 'assiette'], ph: ['dans un verre étroit', 'dans une assiette large'] }, { nom: 'l\'endroit', col: 'Endroit', v: ['pièce fraîche', 'radiateur'], ph: ['dans une pièce fraîche', 'près du radiateur'] },
       { nom: 'le couvercle', col: 'Couvercle', v: ['non', 'oui'], ph: ['sans couvercle', 'avec couvercle'], temoin: true, q: 'un couvercle empêche l\'eau de s\'évaporer', desc: ['un récipient d\'eau sans couvercle', 'un récipient d\'eau fermé par un couvercle'] }],
-    fait: (rng, v) => `Après trois jours, il reste ${rng.int(2, Math.round(v.V / 20)) * 10} ml d'eau dans le verre étroit.`,
+    fait: (rng, v) => `Après trois jours, il reste ${rng.int(Math.round(v.V * 0.8 / 10), Math.round(v.V * 0.95 / 10)) * 10} ml d'eau dans le verre étroit.`,
     hyp: () => ['Je pense que l\'eau s\'évapore plus vite dans une assiette large que dans un verre.', 'Peut-être que l\'eau s\'évapore plus vite près du radiateur.'],
     jug: () => ['L\'assiette bleue est la plus belle de la cuisine.', 'Cette expérience est trop longue, c\'est nul.'] },
   { id: 'bougie', dom: 'sc.matiere', tire: () => ({}),
@@ -1649,7 +1649,7 @@ export function genererTransfert(modele, rng) {
     if (pieges.length < 3) pieges.push(pieges.includes(m + q) ? m - q : m + q);
     const r = qcm(rng, deg(m), [...new Set(pieges)].filter((x) => x !== m).slice(0, 3).map(deg));
     return { ...r, enonce: `${p} verse ${V} ml d'eau à ${deg(T1)} et ${V} ml d'eau à ${deg(T2)} dans un même récipient. Quelle est environ la température du mélange ?`,
-      explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) ÷ 2 = ${m} °C. Les températures ne s'additionnent pas.`,
+      explication: `L'eau chaude cède de la chaleur à l'eau froide jusqu'à ce qu'elles aient la même température : le mélange est forcément entre ${deg(T2)} et ${deg(T1)}. Avec la même quantité d'eau, c'est à peu près au milieu : (${T1} + ${T2}) : 2 = ${m} °C. Les températures ne s'additionnent pas.`,
       _signature: `mel|${T1}|${T2}|${V}|${triee(r.choix)}`, cleContenu: `mel|${T1}|${T2}|${V}` };
   }
   if (forme === 'courbe') {
@@ -1816,7 +1816,7 @@ export function genererEconomie(modele, rng) {
     if (q === 'mois' && gain % 12) return null;
     if (q === 'mois') {
       return { type: 'numerique', reponse: gain / 12, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)}. En moyenne, combien de ${C.u} économise-t-elle par mois ?`,
-        explication: `Économie par an : ${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. Par mois : ${fmt(gain)} ÷ 12 = ${fmt(gain / 12)} ${C.u}. Une maison mieux isolée perd moins de chaleur : elle consomme moins.`,
+        explication: `Économie par an : ${fmt(avant)} − ${fmt(apres)} = ${fmt(gain)} ${C.u}. Par mois : ${fmt(gain)} : 12 = ${fmt(gain / 12)} ${C.u}. Une maison mieux isolée perd moins de chaleur : elle consomme moins.`,
         _signature: `cm|${C.u}|${avant}|${apres}|${trav}`, cleContenu: `cm|${C.u}|${avant}|${apres}` };
     }
     return { type: 'numerique', reponse: gain, unite: C.u, enonce: `Avant les travaux, la famille ${fam} utilisait ${fmt(avant)} ${C.u} par an pour se chauffer. Depuis qu'elle a ${trav}, elle en utilise ${fmt(apres)} par an. Combien de ${C.u} économise-t-elle chaque année ?`,
@@ -1853,6 +1853,7 @@ const GRANDEURS = {
 };
 // Pour « écrire le résultat » : unités de la même grandeur (le piège est l'échelle, pas la grandeur).
 // La température n'a qu'une unité au primaire : pas de question d'écriture pour elle.
+const ECHELLE = { mm: 1, cm: 10, m: 1000, km: 1e6, mg: 1, g: 1e3, kg: 1e6, t: 1e9, s: 1, min: 60, h: 3600, j: 86400, ml: 1, cl: 10, dl: 100, l: 1000 };
 const UNITES_SOEURS = { longueur: ['mm', 'cm', 'm', 'km'], masse: ['mg', 'g', 'kg', 't'], duree: ['s', 'min', 'h', 'j'], volume: ['ml', 'cl', 'dl', 'l'], pluie: ['mm', 'cm', 'm', 'ml'] };
 // Grandeurs qu'on ne propose jamais ensemble (sinon deux réponses défendables).
 const CONFLITS = { masse: ['volume'], volume: ['masse', 'pluie'], pluie: ['volume', 'longueur'], longueur: ['pluie'] };
@@ -1935,7 +1936,8 @@ export function genererMesures(modele, rng) {
     const val = valeurCtx(rng, c);
     const bonne = `${fmt(val)} ${c.u}`;
     // Pièges : unités de la même grandeur, à une autre échelle (13 mm, 13 m, 13 km pour un ver de 13 cm).
-    const faux = rng.shuffle(UNITES_SOEURS[g].filter((u) => u !== c.u)).slice(0, 3).map((u) => `${fmt(val)} ${u}`);
+    // Pas d'unité voisine (rapport 10 : 30 ml / 30 cl, 13 cm / 13 mm), qui donnerait souvent une valeur plausible aussi.
+    const faux = rng.shuffle(UNITES_SOEURS[g].filter((u) => u !== c.u && !(!(g === 'pluie' && (u === 'ml' || c.u === 'ml')) && Math.max(ECHELLE[u] / ECHELLE[c.u], ECHELLE[c.u] / ECHELLE[u]) < 50))).slice(0, 3).map((u) => `${fmt(val)} ${u}`);
     const r = qcm(rng, bonne, faux);
     return { ...r, enonce: `Avec ${instr}, ${p} mesure ${c.t}. L'instrument indique ${fmt(val)}. Comment écrire correctement le résultat ?`,
       explication: `${maj(instr)} sert ${GRANDEURS[g].sert} : le résultat s'écrit ${bonne}. Un nombre sans la bonne unité ne veut rien dire en sciences.`,
@@ -2001,19 +2003,19 @@ export function genererMesures(modele, rng) {
   const kg = grammes / 1000;
   return { type: 'numerique', reponse: enG ? kg : grammes, unite: enG ? 'kg' : 'g', figure: figBalance(enG ? `${fmt(grammes)} g` : `${fmt(kg)} kg`, lib),
     enonce: `${p} pèse ${objet} sur une balance. Quelle est la masse ${enG ? 'en kilogrammes (kg)' : 'en grammes (g)'} ?`,
-    explication: `1 kg = 1 000 g. ${enG ? `${fmt(grammes)} g = ${fmt(grammes)} ÷ 1 000 = ${fmt(kg)} kg.` : `${fmt(kg)} kg = ${fmt(kg)} × 1 000 = ${fmt(grammes)} g.`}`,
+    explication: `1 kg = 1 000 g. ${enG ? `${fmt(grammes)} g = ${fmt(grammes)} : 1 000 = ${fmt(kg)} kg.` : `${fmt(kg)} kg = ${fmt(kg)} × 1 000 = ${fmt(grammes)} g.`}`,
     _signature: `bal|${lib}|${grammes}|${enG}`, cleContenu: `bal|${grammes}|${enG}` };
 }
 
 // ================================================================ 12. LA NOTION D'ESPÈCE (races, hybrides stériles, compter les espèces)
 const ESP = {
   chien: { gn: 'un chien', races: ['caniche', 'berger allemand', 'labrador', 'teckel', 'dalmatien', 'bouvier des Flandres', 'beagle', 'border collie', 'berger malinois', 'golden retriever'], f: 'une chienne', m: 'un chien', petits: 'chiots', nomEsp: 'les chiens', proche: ['renard'] },
-  chat: { gn: 'un chat', races: ['siamois', 'persan', 'chartreux', 'maine coon', 'sacré de Birmanie', 'européen'], f: 'une chatte', m: 'un chat', petits: 'chatons', nomEsp: 'les chats', proche: [] },
+  chat: { gn: 'un chat', races: ['siamois', 'persan', 'chartreux', 'maine coon', 'sacré de Birmanie', 'bengal'], f: 'une chatte', m: 'un chat', petits: 'chatons', nomEsp: 'les chats', proche: [] },
   cheval: { gn: 'un cheval', races: ['frison', 'pur-sang', 'haflinger', 'trait belge', 'appaloosa', 'lipizzan'], f: 'une jument', m: 'un étalon', petits: 'poulains', nomEsp: 'les chevaux', proche: ['ane', 'zebre'] },
-  vache: { gn: 'une vache', races: ['Blanc-Bleu Belge', 'Holstein', 'Limousine', 'Charolaise', 'Highland', 'Jersiaise'], f: 'une vache', m: 'un taureau', petits: 'veaux', nomEsp: 'les bovins', proche: [] },
-  lapin: { gn: 'un lapin', races: ['géant des Flandres', 'bélier', 'rex', 'hollandais', 'angora'], f: 'une lapine', m: 'un lapin', petits: 'lapereaux', nomEsp: 'les lapins', proche: ['lievre'] },
-  poule: { gn: 'une poule', races: ['coucou de Malines', 'Brahma', 'Sussex', 'Leghorn', 'soie'], f: 'une poule', m: 'un coq', petits: 'poussins', nomEsp: 'les poules', proche: [] },
-  mouton: { gn: 'un mouton', races: ['Texel', 'Suffolk', 'mérinos', 'Ouessant'], f: 'une brebis', m: 'un bélier', petits: 'agneaux', nomEsp: 'les moutons', proche: ['chevre'] },
+  vache: { gn: 'une vache', races: ['blanc-bleu belge', 'holstein', 'limousine', 'charolaise', 'highland', 'jersiaise'], f: 'une vache', m: 'un taureau', petits: 'veaux', nomEsp: 'les bovins', proche: [] },
+  lapin: { gn: 'un lapin', races: ['géant des Flandres', 'bélier', 'rex', 'tête de lion', 'angora'], f: 'une lapine', m: 'un lapin', petits: 'lapereaux', nomEsp: 'les lapins', proche: ['lievre'] },
+  poule: { gn: 'une poule', races: ['coucou de Malines', 'brahma', 'sussex', 'leghorn', 'soie'], f: 'une poule', m: 'un coq', petits: 'poussins', nomEsp: 'les poules', proche: [] },
+  mouton: { gn: 'un mouton', races: ['texel', 'suffolk', 'mérinos', 'ouessant'], f: 'une brebis', m: 'un bélier', petits: 'agneaux', nomEsp: 'les moutons', proche: ['chevre'] },
   chevre: { gn: 'une chèvre', races: ['alpine', 'saanen', 'poitevine'], f: 'une chèvre', m: 'un bouc', petits: 'chevreaux', nomEsp: 'les chèvres', proche: ['mouton'] },
 };
 const SEULS = { ane: { gn: 'un âne', nomEsp: 'les ânes' }, zebre: { gn: 'un zèbre', nomEsp: 'les zèbres' }, lievre: { gn: 'un lièvre', nomEsp: 'les lièvres' }, renard: { gn: 'un renard', nomEsp: 'les renards' } };
@@ -2064,7 +2066,8 @@ export function genererEspece(modele, rng) {
       _signature: `cpt|${liste.map(([e, r]) => `${e}:${r}`).join(',')}`, cleContenu: `cpt|${triee(liste.map(([e, r]) => `${e}:${r}`))}` };
   }
   if (forme === 'meme') {
-    const e = rng.pick(CL); const [r1, r2] = rng.shuffle(ESP[e].races).slice(0, 2);
+    // Seulement les espèces qui ont un animal qui leur ressemble (sinon un seul choix contient le nom de l'espèce).
+    const e = rng.pick(CL.filter((x) => ESP[x].proche.length)); const [r1, r2] = rng.shuffle(ESP[e].races).slice(0, 2);
     const proches = ESP[e].proche.map((x) => animalAleatoire(rng, x));
     const autres = rng.shuffle(CL.filter((x) => x !== e && !ESP[e].proche.includes(x))).slice(0, 3).map((x) => animalAleatoire(rng, x));
     const faux = [...proches, ...autres].slice(0, 3);

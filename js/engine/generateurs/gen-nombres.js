@@ -376,7 +376,7 @@ const decomposer = famille([
       type: 'numerique', difficulte: 2,
       enonce: `Quel nombre est formé de ${enumerer(termes.map((t) => `${t.d} ${rangNom(t.p, t.d)}`))} ?`,
       reponse: nb.valeur,
-      explication: `On écrit chaque chiffre à son rang et on met un 0 dans les rangs vides : ${fmt(nb.valeur)}.`,
+      explication: `On écrit chaque chiffre à son rang${Object.keys(nb.chiffres).length > termes.length ? ' et on met un 0 dans les rangs vides' : ''} : ${fmt(nb.valeur)}.`,
     };
   }, 2),
   forme((rng) => {
@@ -1452,6 +1452,7 @@ const estimation = famille([
     }
     if (e <= 0 || est <= 0 || (ra === a && rb === b)) return null;
     const bon = deuxChiffres(e);
+    if (bon !== est) return null; // l'estimation calculée dans l'explication doit être la bonne proposition
     const lead = 10 ** Math.floor(Math.log10(bon));
     const fausses = [bon * 10, bon / 10, bon * 100, ...(op === '+' || op === '−' ? [bon + 3 * lead, bon - 3 * lead] : [])]
       .filter((x) => x >= 1 && Math.abs(x - e) > Math.abs(bon - e) * 2 + lead / 2);
@@ -1856,7 +1857,8 @@ const mesures = famille([
     const paires = { longueur: [['m', 'cm'], ['km', 'm'], ['m', 'mm'], ['cm', 'mm'], ['m', 'dm']], masse: [['kg', 'g'], ['t', 'kg'], ['g', 'mg']], capacite: [['l', 'cl'], ['l', 'ml'], ['l', 'dl'], ['hl', 'l']] }[sys === SYSTEMES.longueur ? 'longueur' : sys === SYSTEMES.masse ? 'masse' : 'capacite'];
     const [u1, u2] = rng.pick(paires);
     const f = sys.u[u1] / sys.u[u2];
-    const a = rng.pick([rng.int(1, 9), decimal(rng, 1, 9, 1)]);
+    const a = rng.pick([rng.int(2, 9), decimal(rng, 1, 9, 1)]);
+    if (a === 1) return null;
     const b = rng.int(1, f - 1);
     const moins = rng.next() < 0.3;
     if (moins && a * f <= b) return null;
@@ -2232,9 +2234,9 @@ const cercle = famille([
       type: 'numerique', unite: 'cm²', difficulte: 3,
       enonce: `Un disque a un ${donne} de ${donne === 'rayon' ? rr : 2 * rr} cm. Calcule son aire avec π ≈ 3,14.`,
       reponse: res,
-      explication: `Aire du disque = rayon × rayon × 3,14.${donne === 'diamètre' ? ` Rayon = ${2 * rr} : 2 = ${rr} cm.` : ''} ${rr} × ${rr} × 3,14 = ${fmt(res)} cm². (L'aire du disque n'est plus au programme de 6e primaire : elle sert pour les anciens CEB.)`,
+      explication: `Aire du disque = rayon × rayon × 3,14.${donne === 'diamètre' ? ` Rayon = ${2 * rr} : 2 = ${rr} cm.` : ''} ${rr} × ${rr} × 3,14 = ${fmt(res)} cm².`,
     };
-  }),
+  }, 0), // aire du disque : plus au programme de 6e primaire, jamais tirée
   forme((rng) => {
     const items = [
       ['Le segment qui relie le centre du cercle à un point du cercle s\'appelle…', 'le rayon'],
@@ -2246,7 +2248,7 @@ const cercle = famille([
     ];
     const [e, bon] = rng.pick(items);
     // Distracteurs de la même nature : des parties du cercle pour une notion, des instruments pour un instrument.
-    const notions = ['le rayon', 'le diamètre', 'le centre', 'la circonférence', 'le disque', 'la corde'];
+    const notions = ['le rayon', 'le diamètre', 'le centre', 'la circonférence', 'le disque'];
     const instruments = ['un compas', 'une équerre', 'une règle graduée', 'un rapporteur'];
     const pool = bon === 'un compas' ? instruments : notions;
     const c = qcm(rng, bon, rng.shuffle(pool.filter((x) => x !== bon)));
@@ -2291,13 +2293,14 @@ const durees = famille([
     };
   }, 2),
   forme((rng) => {
+    // [début, fin, nom, heure de départ min, max, durée min, max (minutes)]
     const ctx = rng.pick([
-      ['Un train part à', 'et arrive à', 'le trajet'], ['Un film commence à', 'et se termine à', 'le film'],
-      ['Le match commence à', 'et se termine à', 'le match'], ['Une randonnée commence à', 'et se termine à', 'la randonnée'],
-      ['Le bus quitte Namur à', 'et arrive à Liège à', 'le trajet'], ['Un avion décolle à', 'et atterrit à', 'le vol'],
+      ['Un train part à', 'et arrive à', 'le trajet', 6, 21, 20, 180], ['Un film commence à', 'et se termine à', 'le film', 14, 21, 80, 150],
+      ['Le match commence à', 'et se termine à', 'le match', 14, 20, 90, 120], ['Une randonnée commence à', 'et se termine à', 'la randonnée', 8, 15, 90, 240],
+      ['Le bus quitte Namur à', 'et arrive à Liège à', 'le trajet', 7, 20, 45, 75], ['Un avion décolle à', 'et atterrit à', 'le vol', 6, 21, 45, 200],
     ]);
-    const d = rng.int(8, 22) * 60 + rng.int(0, 59);
-    const duree = rng.int(20, 200);
+    const d = rng.int(ctx[3], ctx[4]) * 60 + rng.int(0, 59);
+    const duree = rng.int(ctx[5], ctx[6]);
     const f = d + duree;
     if (f >= 24 * 60) return null;
     const minutes = rng.next() < 0.5;
@@ -2469,7 +2472,7 @@ const calendrier = famille([
     return {
       ...c, difficulte: 3,
       enonce: `Le ${art(d1)} ${m} est un ${JOURS[j0]}. Quel jour de la semaine sera le ${art(cible)} ${m2} ?`,
-      explication: `Du ${art(d1)} ${m} au ${art(cible)} ${m2}, il y a ${plus} jours${m2 !== m ? ` (${m} a ${nj} jours)` : ''}. ${plus} = ${Math.floor(plus / 7)} × 7 + ${plus % 7} : après ${Math.floor(plus / 7)} ${pluriel(Math.floor(plus / 7), 'semaine')}, on retombe un ${JOURS[j0]}, puis on avance de ${plus % 7} ${pluriel(plus % 7, 'jour')} : ${j}.`,
+      explication: `Du ${art(d1)} ${m} au ${art(cible)} ${m2}, il y a ${plus} jours${m2 !== m ? ` (${m} a ${nj} jours)` : ''}. ${plus < 7 ? `On avance de ${plus} ${pluriel(plus, 'jour')} à partir de ${JOURS[j0]} : ${j}.` : `${plus} = ${Math.floor(plus / 7)} × 7 + ${plus % 7} : après ${Math.floor(plus / 7)} ${pluriel(Math.floor(plus / 7), 'semaine')}, on retombe un ${JOURS[j0]}, puis on avance de ${plus % 7} ${pluriel(plus % 7, 'jour')} : ${j}.`}`,
     };
   }, 2),
   forme((rng) => {
@@ -2541,8 +2544,8 @@ const achats = famille([
     };
   }),
   forme((rng) => {
-    const [nom, q, ref, refTxt] = rng.pick([['fromage', 250, 1000, 'kg'], ['jambon', 200, 1000, 'kg'], ['cerises', 500, 1000, 'kg'], ['noix', 125, 1000, 'kg'], ['viande hachée', 400, 1000, 'kg'], ['chocolat', 100, 1000, 'kg']]);
-    const pk = decimal(rng, 6, 35, 1);
+    const [nom, q, ref, refTxt, pmin, pmax] = rng.pick([['fromage', 250, 1000, 'kg', 10, 25], ['jambon', 200, 1000, 'kg', 12, 25], ['cerises', 500, 1000, 'kg', 5, 12], ['noix', 125, 1000, 'kg', 12, 20], ['viande hachée', 400, 1000, 'kg', 8, 14], ['chocolat', 100, 1000, 'kg', 8, 20]]);
+    const pk = decimal(rng, pmin, pmax, 1);
     const prix = Math.round(pk * q / ref * 100) / 100;
     if (Math.abs(prix * ref / q - pk) > 1e-9) return null;
     return {
@@ -2704,12 +2707,12 @@ const echelle = famille([
     return {
       ...c, difficulte: 3,
       enonce: `Sur une carte, ${cm} cm représentent ${reelTxt} en réalité. Quelle est l'échelle de la carte ?`,
-      explication: `${cm} cm représentent ${reelTxt}, donc 1 cm représente ${reelTxt} : ${cm} = ${reel / cm >= 1 ? `${fmt(reel / cm)} km` : `${fmt(reel / cm * 1000)} m`} = ${fmt(e)} cm. L'échelle est 1/${fmt(e)}.`,
+      explication: `${cm} cm représentent ${reelTxt}. Pour 1 cm, on divise par ${cm} : ${reelTxt} : ${cm} = ${reel / cm >= 1 ? `${fmt(reel / cm)} km` : `${fmt(reel / cm * 1000)} m`} = ${fmt(e)} cm. L'échelle est 1/${fmt(e)}.`,
     };
   }),
   forme((rng) => {
-    const e = rng.pick([10, 20, 43, 50, 87]);
-    const obj = rng.pick([['voiture', 4.3, 'm'], ['avion', 36, 'm'], ['camion', 12, 'm'], ['bateau', 20, 'm'], ['locomotive', 17.2, 'm']]);
+    const obj = rng.pick([['voiture', 4.3, 'm', [10, 20, 43]], ['avion', 36, 'm', [100, 200]], ['camion', 12, 'm', [20, 50]], ['bateau', 20, 'm', [100, 200]], ['locomotive', 17.2, 'm', [50, 87]]]);
+    const e = rng.pick(obj[3]);
     const cm = r(obj[1] * 100 / e);
     if (nbDecimales(cm) > 1) return null;
     return {
@@ -2855,7 +2858,8 @@ const proportionnalite = famille([
   }),
 ]);
 
-const VILLES_TEMP = ['Bruxelles', 'Arlon', 'Ostende', 'Liège', 'Namur', 'Mons', 'Bastogne', 'Oslo', 'Moscou', 'Madrid', 'Rome', 'Helsinki'];
+// Températures plausibles un matin d'hiver : [ville, min, max].
+const VILLES_TEMP = [['Bruxelles', -6, 5], ['Arlon', -10, 3], ['Ostende', -3, 6], ['Liège', -6, 5], ['Namur', -6, 5], ['Mons', -6, 5], ['Bastogne', -10, 3], ['Oslo', -20, -2], ['Moscou', -20, -2], ['Madrid', 0, 12], ['Rome', 0, 12], ['Helsinki', -20, -2]];
 const signe = (t) => (t < 0 ? `−${Math.abs(t)}` : `${t}`);
 const temperatures = famille([
   forme((rng) => {
@@ -2883,9 +2887,10 @@ const temperatures = famille([
     };
   }, 2),
   forme((rng) => {
-    const villes = rng.shuffle(VILLES_TEMP).slice(0, 4);
-    const ts = rng.shuffle(dedoublonner(range(1, 10).map(() => rng.int(-15, 12)))).slice(0, 4);
-    if (ts.length < 4 || !ts.some((t) => t < 0)) return null;
+    const tirees = rng.shuffle(VILLES_TEMP).slice(0, 4);
+    const villes = tirees.map((v) => v[0]);
+    const ts = tirees.map(([, a, b]) => rng.int(a, b));
+    if (dedoublonner(ts).length < 4 || !ts.some((t) => t < 0)) return null;
     const froid = rng.next() < 0.6;
     const cible = froid ? Math.min(...ts) : Math.max(...ts);
     const i = ts.indexOf(cible);
@@ -2955,8 +2960,8 @@ const problemes = famille([
   }),
   forme((rng) => {
     const P = rng.pick(PRENOMS);
-    const jeu = rng.pick(['un jeu vidéo', 'un vélo', 'une console', 'des rollers', 'un skateboard', 'une tablette']);
-    const prix = rng.int(6, 40) * 10; const a = rng.int(0, 10) * 5; const s = rng.pick([5, 7.5, 10, 12.5, 15, 20]);
+    const [jeu, pmin, pmax] = rng.pick([['un jeu vidéo', 3, 7], ['un vélo', 15, 40], ['une console', 25, 45], ['des rollers', 5, 12], ['un skateboard', 4, 12], ['une tablette', 15, 40]]);
+    const prix = rng.int(pmin, pmax) * 10; const a = rng.int(0, 10) * 5; const s = rng.pick([5, 7.5, 10, 12.5, 15, 20]);
     if (a >= prix) return null;
     const sem = Math.ceil((prix - a) / s);
     if (sem > 30 || sem < 2) return null;
@@ -3000,7 +3005,7 @@ const problemes = famille([
     const tot = adultes * pa + enfants * pe - reduc;
     return {
       type: 'numerique', unite: '€', difficulte: 2,
-      enonce: `Une famille de ${adultes} ${pluriel(adultes, 'adulte')} et ${enfants} ${pluriel(enfants, 'enfant')} va ${lieu}. L'entrée coûte ${pa} € par adulte et ${pe} € par enfant.${reduc ? ` La famille a un bon de réduction de ${reduc} €.` : ''} Combien paie la famille ?`,
+      enonce: `Une famille de ${adultes === 1 ? 'un adulte' : `${adultes} adultes`} et ${enfants === 1 ? 'un enfant' : `${enfants} enfants`} va ${lieu}. L'entrée coûte ${pa} € par adulte et ${pe} € par enfant.${reduc ? ` La famille a un bon de réduction de ${reduc} €.` : ''} Combien paie la famille ?`,
       reponse: tot,
       explication: `Adultes : ${adultes} × ${pa} = ${adultes * pa} €. Enfants : ${enfants} × ${pe} = ${enfants * pe} €. Total : ${adultes * pa} + ${enfants * pe}${reduc ? ` − ${reduc}` : ''} = ${tot} €.`,
     };
@@ -3013,7 +3018,7 @@ const problemes = famille([
       type: 'numerique', unite: '€', difficulte: 2,
       enonce: `Un club de ${sport} a ${equipes} équipes de ${joueurs} joueurs. Chaque joueur reçoit ${maillots === 1 ? 'un maillot' : '2 maillots'} à ${prix} € pièce. Combien le club dépense-t-il ?`,
       reponse: tot,
-      explication: `Joueurs : ${equipes} × ${joueurs} = ${equipes * joueurs}. Maillots : ${equipes * joueurs} × ${maillots} = ${equipes * joueurs * maillots}. Prix : ${equipes * joueurs * maillots} × ${prix} = ${fmt(tot)} €.`,
+      explication: `Joueurs : ${equipes} × ${joueurs} = ${equipes * joueurs}.${maillots === 2 ? ` Maillots : ${equipes * joueurs} × 2 = ${equipes * joueurs * 2}.` : ''} Prix : ${equipes * joueurs * maillots} × ${prix} = ${fmt(tot)} €.`,
     };
   }),
   forme((rng) => {
@@ -3064,7 +3069,7 @@ function enonceCalcul(rng, P) {
   const Il = P.il === 'elle' ? 'Elle' : 'Il';
   const T = [
     () => { const a = rng.int(2, 9); const b = rng.int(2, 15); const c = rng.pick([20, 50, 100]); if (a * b >= c) return null; return { e: `${P.n} achète ${a} livres à ${b} € pièce et paie avec un billet de ${c} €. Combien lui rend-on ?`, bon: `${c} − (${a} × ${b})`, faux: [`(${c} − ${a}) × ${b}`, `${c} − ${a} + ${b}`, `(${a} × ${b}) − ${c}`, `${c} : ${a} × ${b}`] }; },
-    () => { const b = rng.int(3, 6); const a = b * rng.int(4, 9); return { e: `Les ${a} élèves d'une école forment des équipes de ${b} joueurs. Combien d'équipes y a-t-il ?`, bon: `${a} : ${b}`, faux: [`${a} × ${b}`, `${a} − ${b}`, `${b} : ${a}`, `${a} + ${b}`] }; },
+    () => { const b = rng.int(3, 6); const a = b * rng.int(4, 9); return { e: `Les ${a} élèves de deux classes forment des équipes de ${b} joueurs. Combien d'équipes y a-t-il ?`, bon: `${a} : ${b}`, faux: [`${a} × ${b}`, `${a} − ${b}`, `${b} : ${a}`, `${a} + ${b}`] }; },
     () => { const a = rng.int(15, 80); const b = rng.int(5, 40); const c = rng.int(5, 30); return { e: `${P.n} a ${a} € dans sa tirelire. ${Il} reçoit ${b} € de sa grand-mère, puis dépense ${c} €. Combien lui reste-t-il ?`, bon: `${a} + ${b} − ${c}`, faux: [`${a} − ${b} + ${c}`, `${a} − ${b} − ${c}`, `${a} + ${b} + ${c}`, `(${a} − ${c}) − ${b}`] }; },
     () => { const b = rng.pick([6, 10, 12]); const a = b * rng.int(5, 20); const c = rng.pick([2, 3, 4, 5]); return { e: `Une fermière range ${a} œufs dans des boîtes de ${b}. Elle vend chaque boîte ${c} €. Combien gagne-t-elle si elle vend toutes les boîtes ?`, bon: `(${a} : ${b}) × ${c}`, faux: [`(${a} × ${b}) : ${c}`, `${a} × ${c}`, `(${a} : ${c}) × ${b}`, `${a} : ${b} + ${c}`] }; },
     () => { const b = rng.int(8, 25); const c = rng.int(3, 9); const a = b * c + rng.int(20, 150); return { e: `Un livre a ${a} pages. ${P.n} en lit ${b} par jour pendant ${c} jours. Combien de pages lui reste-t-il à lire ?`, bon: `${a} − (${b} × ${c})`, faux: [`(${a} − ${b}) × ${c}`, `${a} − ${b} − ${c}`, `${a} − (${b} + ${c})`, `(${a} : ${b}) − ${c}`] }; },

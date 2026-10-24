@@ -229,7 +229,7 @@
     "PMC : emballages en plastique (bouteilles, flacons, pots, barquettes…), emballages en métal (canettes, conserves), cartons à boissons (briques de lait).",
     "Papiers-cartons : journaux, magazines, boîtes en carton propres. Verre : bouteilles et bocaux (bulle à verre).",
     "Déchets organiques : épluchures, restes de fruits et légumes, marc de café (compost).",
-    "Piles, peintures, appareils électriques : point de collecte ou recyparc."
+    "Piles, peintures, appareils électriques : point de collecte ou parc à conteneurs."
    ],
    "exemple": "Une brique de lait va dans les PMC, pas dans les papiers-cartons.",
    "astuce": "Le meilleur déchet est celui qu'on ne produit pas."
@@ -367,7 +367,7 @@
    "regle": [
     "Le rythme cardiaque est le nombre de battements du cœur par minute. La ventilation est le nombre de mouvements respiratoires (inspiration + expiration) par minute.",
     "On les mesure avec un chronomètre : par exemple, on compte pendant 15 secondes et on multiplie par 4 (4 × 15 s = 1 minute).",
-    "On répète la mesure 3 fois et on calcule la moyenne : (mesure 1 + mesure 2 + mesure 3) ÷ 3.",
+    "On répète la mesure 3 fois et on calcule la moyenne : (mesure 1 + mesure 2 + mesure 3) : 3.",
     "Pendant l'effort, les muscles ont besoin de plus de dioxygène et de nutriments, et produisent plus de dioxyde de carbone : le cœur bat plus vite et on respire plus vite.",
     "Après l'effort, au repos, ils redescendent peu à peu vers leur valeur de départ."
    ],

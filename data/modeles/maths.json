@@ -46,17 +46,41 @@
         },
         "objet": {
           "liste": [
-            "un vélo",
-            "une trottinette",
-            "un sac à dos",
-            "une console",
-            "des baskets",
-            "un casque audio"
+            {
+              "o": "un vélo",
+              "min": 150,
+              "max": 400
+            },
+            {
+              "o": "une trottinette",
+              "min": 60,
+              "max": 200
+            },
+            {
+              "o": "un sac à dos",
+              "min": 30,
+              "max": 80
+            },
+            {
+              "o": "une console",
+              "min": 200,
+              "max": 400
+            },
+            {
+              "o": "des baskets",
+              "min": 50,
+              "max": 120
+            },
+            {
+              "o": "un casque audio",
+              "min": 30,
+              "max": 150
+            }
           ]
         },
         "prix": {
-          "min": 20,
-          "max": 200,
+          "min": 30,
+          "max": 400,
           "pas": 10
         },
         "remise": {
@@ -69,12 +93,14 @@
         }
       },
       "contraintes": [
-        "(prix * remise) % 100 == 0"
+        "(prix * remise) % 100 == 0",
+        "prix >= objet_min",
+        "prix <= objet_max"
       ],
-      "enonce": "{p.nom} veut acheter {objet} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-{p.pr} payer ?",
+      "enonce": "{p.nom} veut acheter {objet.o} à {prix} €. Pendant les soldes, il y a {remise} % de réduction. Combien va-t-{p.pr} payer ?",
       "reponse": "prix - prix * remise / 100",
       "unite": "€",
-      "explication": "{remise} % de {prix} € = {prix} × {remise} ÷ 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €.",
+      "explication": "{remise} % de {prix} € = {prix} × {remise} : 100 = {=prix * remise / 100} €. On retire la réduction : {prix} − {=prix * remise / 100} = {=prix - prix * remise / 100} €.",
       "fiche": "ma-pourcentages"
     },
     {
@@ -106,7 +132,7 @@
       "enonce": "Calcule {p} % de {n} €.",
       "reponse": "n * p / 100",
       "unite": "€",
-      "explication": "{p} % de {n}, c'est {n} × {p} ÷ 100 = {=n * p / 100} €.",
+      "explication": "{p} % de {n}, c'est {n} × {p} : 100 = {=n * p / 100} €.",
       "fiche": "ma-pourcentages"
     },
     {
@@ -117,27 +143,67 @@
       "variables": {
         "lieu": {
           "liste": [
-            "Un potager",
-            "Une chambre",
-            "Un terrain de jeu",
-            "Une terrasse",
-            "Un tapis",
-            "Une piscine"
+            {
+              "n": "Un potager",
+              "Lmin": 5,
+              "Lmax": 20,
+              "lmin": 3,
+              "lmax": 12
+            },
+            {
+              "n": "Une chambre",
+              "Lmin": 3,
+              "Lmax": 5,
+              "lmin": 2,
+              "lmax": 4
+            },
+            {
+              "n": "Un terrain de jeu",
+              "Lmin": 15,
+              "Lmax": 40,
+              "lmin": 10,
+              "lmax": 25
+            },
+            {
+              "n": "Une terrasse",
+              "Lmin": 4,
+              "Lmax": 10,
+              "lmin": 2,
+              "lmax": 6
+            },
+            {
+              "n": "Un tapis",
+              "Lmin": 2,
+              "Lmax": 4,
+              "lmin": 1,
+              "lmax": 3
+            },
+            {
+              "n": "Une piscine",
+              "Lmin": 8,
+              "Lmax": 25,
+              "lmin": 4,
+              "lmax": 12
+            }
           ]
         },
         "L": {
-          "min": 3,
-          "max": 28
+          "min": 2,
+          "max": 40
         },
         "l": {
-          "min": 2,
-          "max": 19
+          "min": 1,
+          "max": 25
         }
       },
       "contraintes": [
-        "L > l"
+        "L > l",
+        "L >= lieu_Lmin",
+        "L <= lieu_Lmax",
+        "l >= lieu_lmin",
+        "l <= lieu_lmax"
       ],
-      "enonce": "{lieu} rectangulaire mesure {L} m de long et {l} m de large. Quelle est son aire ?",
+      "enonce": "{lieu.n} rectangulaire mesure {L} m de long et {l} m de large. Quelle est son aire ?",
       "reponse": "L * l",
       "unite": "m²",
       "explication": "Aire du rectangle = longueur × largeur = {L} × {l} = {=L * l} m².",
@@ -188,7 +254,7 @@
       "enonce": "Un triangle a une base de {b} cm et une hauteur de {h} cm. Quelle est son aire ?",
       "reponse": "b * h / 2",
       "unite": "cm²",
-      "explication": "Aire du triangle = (base × hauteur) ÷ 2 = ({b} × {h}) ÷ 2 = {=b * h / 2} cm².",
+      "explication": "Aire du triangle = (base × hauteur) : 2 = ({b} × {h}) : 2 = {=b * h / 2} cm².",
       "fiche": "ma-aires-perimetres"
     },
     {
@@ -222,30 +288,6 @@
       "type": "numerique",
       "difficulte": 3,
       "variables": {
-        "villes": {
-          "liste": [
-            {
-              "a": "Liège",
-              "b": "Namur"
-            },
-            {
-              "a": "Bruxelles",
-              "b": "Louvain"
-            },
-            {
-              "a": "Mons",
-              "b": "Charleroi"
-            },
-            {
-              "a": "Gand",
-              "b": "Bruges"
-            },
-            {
-              "a": "Arlon",
-              "b": "Bastogne"
-            }
-          ]
-        },
         "cm": {
           "min": 1,
           "max": 15,
@@ -265,9 +307,11 @@
         "km": "cm * e / 100000"
       },
       "contraintes": [
-        "round(km, 1) == km"
+        "round(km, 1) == km",
+        "km >= 2",
+        "km <= 150"
       ],
-      "enonce": "Sur une carte à l'échelle 1/{e}, la distance en ligne droite entre {villes.a} et {villes.b} mesure {cm} cm. Quelle est la distance réelle en kilomètres ?",
+      "enonce": "Sur une carte à l'échelle 1/{e}, la distance en ligne droite entre deux villes mesure {cm} cm. Quelle est la distance réelle en kilomètres ?",
       "reponse": "km",
       "unite": "km",
       "explication": "1 cm sur la carte = {e} cm en vrai = {=e / 100000} km. Donc {cm} cm × {=e / 100000} = {=km} km.",
@@ -283,19 +327,31 @@
           "liste": [
             {
               "q": "Un gâteau entre au four",
-              "v": "Il cuit"
+              "v": "Il cuit",
+              "fin": "À quelle heure faut-il le sortir du four ?",
+              "dmin": 60,
+              "dmax": 75
             },
             {
               "q": "Un film commence",
-              "v": "Il dure"
+              "v": "Il dure",
+              "fin": "À quelle heure se termine-t-il ?",
+              "dmin": 85,
+              "dmax": 150
             },
             {
               "q": "Un train part de Bruxelles",
-              "v": "Le trajet dure"
+              "v": "Le trajet dure",
+              "fin": "À quelle heure arrive-t-il ?",
+              "dmin": 60,
+              "dmax": 150
             },
             {
               "q": "Un match de basket commence",
-              "v": "Il dure"
+              "v": "Il dure",
+              "fin": "À quelle heure se termine-t-il ?",
+              "dmin": 90,
+              "dmax": 130
             }
           ]
         },
@@ -309,7 +365,7 @@
           "pas": 5
         },
         "d": {
-          "min": 25,
+          "min": 60,
           "max": 150,
           "pas": 5
         }
@@ -322,9 +378,11 @@
       "contraintes": [
         "fm >= 10",
         "m >= 10",
-        "fh < 24"
+        "fh < 24",
+        "d >= activite_dmin",
+        "d <= activite_dmax"
       ],
-      "enonce": "{activite.q} à {h} h {m}. {activite.v} {d} minutes. À quelle heure est-ce terminé ? (exemple : 14 h 35)",
+      "enonce": "{activite.q} à {h} h {m}. {activite.v} {d} minutes. {activite.fin} (exemple : 14 h 35)",
       "reponse": [
         "{fh} h {fm}",
         "{fh}h{fm}",
@@ -456,7 +514,7 @@
       "difficulte": 2,
       "variables": {
         "num": {
-          "min": 1,
+          "min": 2,
           "max": 5
         },
         "den": {
@@ -494,7 +552,7 @@
       ],
       "enonce": "Il y a {q} {chose}. Combien font les {num}/{den} de ces {chose} ?",
       "reponse": "q / den * num",
-      "explication": "On partage en {den} : {q} ÷ {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}.",
+      "explication": "On partage en {den} : {q} : {den} = {=q / den}. Puis on en prend {num} : {=q / den} × {num} = {=q / den * num}.",
       "fiche": "ma-fractions"
     },
     {
@@ -508,34 +566,142 @@
             {
               "a": "Pour faire",
               "u1": "crêpes",
+              "sep": ",",
+              "b": "on utilise",
+              "u2": "g de farine",
+              "k": 20,
+              "u1s": "crêpe",
+              "q": "Combien de grammes de farine faut-il pour"
+            },
+            {
+              "a": "Pour faire",
+              "u1": "crêpes",
+              "sep": ",",
               "b": "on utilise",
               "u2": "g de farine",
               "k": 25,
-              "u1s": "crêpe"
+              "u1s": "crêpe",
+              "q": "Combien de grammes de farine faut-il pour"
+            },
+            {
+              "a": "Pour faire",
+              "u1": "crêpes",
+              "sep": ",",
+              "b": "on utilise",
+              "u2": "g de farine",
+              "k": 30,
+              "u1s": "crêpe",
+              "q": "Combien de grammes de farine faut-il pour"
             },
             {
               "a": "Une voiture parcourt",
               "u1": "km",
+              "sep": "",
+              "b": "et consomme",
+              "u2": "litres d'essence",
+              "k": 0.05,
+              "u1s": "km",
+              "q": "Combien de litres consomme-t-elle pour"
+            },
+            {
+              "a": "Une voiture parcourt",
+              "u1": "km",
+              "sep": "",
               "b": "et consomme",
               "u2": "litres d'essence",
               "k": 0.06,
-              "u1s": "km"
+              "u1s": "km",
+              "q": "Combien de litres consomme-t-elle pour"
+            },
+            {
+              "a": "Une voiture parcourt",
+              "u1": "km",
+              "sep": "",
+              "b": "et consomme",
+              "u2": "litres d'essence",
+              "k": 0.07,
+              "u1s": "km",
+              "q": "Combien de litres consomme-t-elle pour"
+            },
+            {
+              "a": "Une voiture parcourt",
+              "u1": "km",
+              "sep": "",
+              "b": "et consomme",
+              "u2": "litres d'essence",
+              "k": 0.08,
+              "u1s": "km",
+              "q": "Combien de litres consomme-t-elle pour"
             },
             {
               "a": "Pour",
               "u1": "élèves",
+              "sep": ",",
+              "b": "l'école commande",
+              "u2": "cahiers",
+              "k": 3,
+              "u1s": "élève",
+              "q": "Combien de cahiers faut-il commander pour"
+            },
+            {
+              "a": "Pour",
+              "u1": "élèves",
+              "sep": ",",
               "b": "l'école commande",
               "u2": "cahiers",
               "k": 4,
-              "u1s": "élève"
+              "u1s": "élève",
+              "q": "Combien de cahiers faut-il commander pour"
+            },
+            {
+              "a": "Pour",
+              "u1": "élèves",
+              "sep": ",",
+              "b": "l'école commande",
+              "u2": "cahiers",
+              "k": 5,
+              "u1s": "élève",
+              "q": "Combien de cahiers faut-il commander pour"
+            },
+            {
+              "a": "Pour",
+              "u1": "élèves",
+              "sep": ",",
+              "b": "l'école commande",
+              "u2": "cahiers",
+              "k": 6,
+              "u1s": "élève",
+              "q": "Combien de cahiers faut-il commander pour"
             },
             {
               "a": "Pour ensemencer",
               "u1": "hectares",
+              "sep": ",",
               "b": "un agriculteur utilise",
               "u2": "kg de graines",
-              "k": 20,
-              "u1s": "hectare"
+              "k": 150,
+              "u1s": "hectare",
+              "q": "Combien de kilos de graines faut-il pour"
+            },
+            {
+              "a": "Pour ensemencer",
+              "u1": "hectares",
+              "sep": ",",
+              "b": "un agriculteur utilise",
+              "u2": "kg de graines",
+              "k": 180,
+              "u1s": "hectare",
+              "q": "Combien de kilos de graines faut-il pour"
+            },
+            {
+              "a": "Pour ensemencer",
+              "u1": "hectares",
+              "sep": ",",
+              "b": "un agriculteur utilise",
+              "u2": "kg de graines",
+              "k": 200,
+              "u1s": "hectare",
+              "q": "Combien de kilos de graines faut-il pour"
             }
           ]
         },
@@ -574,11 +740,12 @@
         "y != x",
         "round(a, 1) == a",
         "round(r, 1) == r",
-        "a >= 1"
+        "a >= 1",
+        "!(ctx_k >= 100 && (x > 20 || y > 40))"
       ],
-      "enonce": "{ctx.a} {x} {ctx.u1}, {ctx.b} {=a} {ctx.u2}. Combien en faut-il pour {y} {ctx.u1} ?",
+      "enonce": "{ctx.a} {x} {ctx.u1}{ctx.sep} {ctx.b} {=a} {ctx.u2}. {ctx.q} {y} {ctx.u1} ?",
       "reponse": "r",
-      "explication": "Pour 1 {ctx.u1s} : {=a} ÷ {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}.",
+      "explication": "Pour 1 {ctx.u1s} : {=a} : {x} = {=ctx_k}. Pour {y} {ctx.u1} : {y} × {=ctx_k} = {=r} {ctx.u2}.",
       "fiche": "ma-proportionnalite"
     },
     {
@@ -655,7 +822,7 @@
       "enonce": "{veh.nom} parcourt {=d} km en {t.txt}. Quelle est sa vitesse moyenne en km/h ?",
       "reponse": "v",
       "unite": "km/h",
-      "explication": "Vitesse = distance ÷ durée = {=d} km ÷ {=t_h} h = {=v} km/h.",
+      "explication": "Vitesse = distance : durée = {=d} km : {=t_h} h = {=v} km/h.",
       "fiche": "ma-vitesse"
     },
     {
@@ -710,18 +877,36 @@
         },
         "objet": {
           "liste": [
-            "œufs dans des boîtes de",
-            "élèves dans des équipes de",
-            "bouteilles dans des caisses de"
+            {
+              "debut": "On range",
+              "nom": "œufs",
+              "dans": "dans des boîtes de",
+              "grp": "boîtes",
+              "verbe": "remplir"
+            },
+            {
+              "debut": "On répartit",
+              "nom": "élèves",
+              "dans": "en équipes de",
+              "grp": "équipes",
+              "verbe": "former"
+            },
+            {
+              "debut": "On range",
+              "nom": "bouteilles",
+              "dans": "dans des caisses de",
+              "grp": "caisses",
+              "verbe": "remplir"
+            }
           ]
         }
       },
       "contraintes": [
         "n % g != 0"
       ],
-      "enonce": "On range {n} {objet} {g}. Combien de groupes complets peut-on faire ?",
+      "enonce": "{objet.debut} {n} {objet.nom} {objet.dans} {g}. Combien de {objet.grp} complètes peut-on {objet.verbe} ?",
       "reponse": "floor(n / g)",
-      "explication": "{n} ÷ {g} = {=floor(n / g)} reste {=n % g}. On peut faire {=floor(n / g)} groupes complets ; il en reste {=n % g}.",
+      "explication": "{n} : {g} = {=floor(n / g)} reste {=n % g}. On peut {objet.verbe} {=floor(n / g)} {objet.grp} complètes ; il en reste {=n % g}.",
       "fiche": "ma-division"
     },
     {
@@ -760,7 +945,7 @@
       ],
       "enonce": "{p} a obtenu {a}/20, {b}/20 et {c}/20 à trois interrogations. Quelle est sa moyenne sur 20 ?",
       "reponse": "(a + b + c) / 3",
-      "explication": "Moyenne = somme ÷ nombre de notes = ({a} + {b} + {c}) ÷ 3 = {=a + b + c} ÷ 3 = {=(a + b + c) / 3}.",
+      "explication": "Moyenne = somme : nombre de notes = ({a} + {b} + {c}) : 3 = {=a + b + c} : 3 = {=(a + b + c) / 3}.",
       "fiche": "ma-moyenne"
     },
     {
@@ -774,17 +959,37 @@
           "max": 6
         },
         "p1": {
-          "min": 0.5,
-          "max": 4,
+          "min": 0.3,
+          "max": 3.5,
           "decimales": 1
         },
         "art": {
           "liste": [
-            "croissants",
-            "cahiers",
-            "stylos",
-            "bouteilles d'eau",
-            "pommes"
+            {
+              "n": "croissants",
+              "min": 0.9,
+              "max": 1.5
+            },
+            {
+              "n": "cahiers",
+              "min": 1,
+              "max": 3.5
+            },
+            {
+              "n": "stylos",
+              "min": 0.8,
+              "max": 3
+            },
+            {
+              "n": "bouteilles d'eau",
+              "min": 0.5,
+              "max": 1.5
+            },
+            {
+              "n": "pommes",
+              "min": 0.3,
+              "max": 0.8
+            }
           ]
         },
         "billet": {
@@ -798,12 +1003,14 @@
         "total": "n1 * p1"
       },
       "contraintes": [
-        "total < billet"
+        "total < billet",
+        "p1 >= art_min",
+        "p1 <= art_max"
       ],
-      "enonce": "Tu achètes {n1} {art} à {p1} € pièce et tu paies avec un billet de {billet} €. Combien te rend-on ?",
+      "enonce": "Tu achètes {n1} {art.n} à {p1|eur} € pièce et tu paies avec un billet de {billet} €. Combien te rend-on ?",
       "reponse": "billet - total",
       "unite": "€",
-      "explication": "Prix total : {n1} × {p1} = {=total} €. Rendu : {billet} − {=total} = {=billet - total} €.",
+      "explication": "Prix total : {n1} × {p1|eur} = {=total|eur} €. Rendu : {billet} − {=total|eur} = {=billet - total|eur} €.",
       "fiche": "ma-monnaie"
     }
   ]

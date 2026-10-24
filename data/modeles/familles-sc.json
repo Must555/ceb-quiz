@@ -267,14 +267,14 @@
      "sorte": "lequel",
      "champ": "reproduction",
      "enonce": "Lequel de ces animaux est {valeur} ?",
-     "explication": "{Cle} est {valeur} ; les trois autres ne le sont pas. {info}"
+     "explication": "{Cle} est {valeur} ; les trois autres ne le sont pas. Ovipare : la femelle pond des œufs ; vivipare : le petit se développe dans le ventre de sa mère."
     },
     {
      "sorte": "intrus",
      "champ": "reproduction",
      "difficulte": 2,
      "enonce": "Quel est l'intrus ? (pense à la naissance des petits)",
-     "explication": "{groupe} sont {valeurPluriel}. {Cle} est {valeurIntrus}. {info}"
+     "explication": "{groupe} sont {valeurPluriel}. {Cle} est {valeurIntrus}."
     },
     {
      "sorte": "vrai_faux",
@@ -290,7 +290,7 @@
       "vivipare"
      ],
      "enonce": "Ovipare ou vivipare ?",
-     "explication": "{liste}. Tous les mammifères de cette liste sont vivipares ; les oiseaux sont tous ovipares."
+     "explication": "{liste}. Ovipare : la femelle pond des œufs ; vivipare : le petit se développe dans le ventre de sa mère."
     }
    ]
   },
@@ -1019,7 +1019,7 @@
     "urine": {
      "enonceOrdre": "Remets dans l'ordre le trajet de l'urine, depuis l'organe qui la fabrique.",
      "enonceApres": "Où va l'urine juste après {cle} ?",
-     "enonceAvant": "D'où vient l'urine qui arrive dans {cle} ?"
+     "enonceAvant": "Par quel organe l'urine passe-t-elle juste avant d'arriver dans {cle} ?"
     },
     "sang": {
      "circulaire": true,
@@ -1615,20 +1615,20 @@
      "sorte": "calcul",
      "champ": "volume",
      "n": 1,
-     "enonce": "Un récipient fermé contient {a.volume} litres d'air. Sachant que l'air contient environ 21 % de dioxygène, combien de litres de dioxygène ce récipient contient-il environ ?",
+     "enonce": "Un récipient fermé contient {a.volume} litres d'air. En prenant 21 % de dioxygène dans l'air, calcule combien de litres de dioxygène ce récipient contient.",
      "reponse": "a_volume * 21 / 100",
      "unite": "litres",
-     "explication": "21 % de {a.volume} litres = {a.volume} × 21 ÷ 100 = {=a_volume * 21 / 100} litres.",
+     "explication": "21 % de {a.volume} litres = {a.volume} × 21 : 100 = {=a_volume * 21 / 100} litres.",
      "difficulte": 3
     },
     {
      "sorte": "calcul",
      "champ": "volume",
      "n": 1,
-     "enonce": "Une cuve contient {a.volume} litres d'air. Sachant que l'air contient environ 78 % de diazote, combien de litres de diazote la cuve contient-elle environ ?",
+     "enonce": "Une cuve contient {a.volume} litres d'air. En prenant 78 % de diazote dans l'air, calcule combien de litres de diazote la cuve contient.",
      "reponse": "a_volume * 78 / 100",
      "unite": "litres",
-     "explication": "78 % de {a.volume} litres = {a.volume} × 78 ÷ 100 = {=a_volume * 78 / 100} litres.",
+     "explication": "78 % de {a.volume} litres = {a.volume} × 78 : 100 = {=a_volume * 78 / 100} litres.",
      "difficulte": 3
     },
     {
