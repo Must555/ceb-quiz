@@ -1498,7 +1498,8 @@ const CHOIX_VOIX = ['voix active', 'voix passive'];
 const VERBES_ACTION = () => VERBES_CONJ.filter(([v]) => !['être', 'avoir', 'aller', 'pouvoir', 'devoir', 'vouloir', 'falloir', 'naître', 'mourir', 'plaire',
   'paraître', 'apparaître', 'disparaître', 'appartenir', 'correspondre', 'tomber', 'arriver', 'perdre', 'casser', 'oublier', 'salir', 'trahir',
   'mentir', 'décevoir', 'souffrir', 'pleurer', 'grossir', 'maigrir', 'vieillir', 'pâlir', 'frémir', 'guérir', 'rompre', 'interrompre', 'fondre',
-  'confondre', 'craindre', 'envahir', 'savoir', 'croire', 'recevoir', 'grandir', 'mordre', 'atterrir'].includes(v));
+  'confondre', 'craindre', 'envahir', 'savoir', 'croire', 'recevoir', 'grandir', 'mordre', 'atterrir',
+  'aimer', 'adorer', 'détester', 'préférer', 'bouger', 'habiter', 'vivre', 'rêver', 'parvenir', 'éviter', 'connaître'].includes(v));
 const AVANT_DE = ['sortir', 'jouer', 'partir', 'dormir', 'manger', 'regarder la télévision'];
 // Verbes dont le gérondif a du sens après « X est rentré / arrivé / parti / revenu en … ».
 const VERBES_GERONDIF = new Set(['chanter', 'siffler', 'raconter', 'courir', 'marcher', 'traverser', 'écouter', 'pousser', 'chuchoter',
@@ -1680,7 +1681,7 @@ const PROCHES = new Set(['C|E', 'E|C']);
 const THEMES_PROCHES = [["l'hiver", 'la santé'], ['la cuisine', 'la ferme'], ['la cuisine', 'le jardin'], ['la mer', 'la cuisine'], ['la ferme', 'la santé'], ["l'école", 'la musique'],
   // mots à double sens : frisson / trembler (froid ou peur), piste (cirque ou ski), tournoi / gardien, fouet, éclair, glacier, bulletin (météo)
   ["l'hiver", 'la peur'], ['la montagne', 'le cirque'], ['le château fort', 'le football'], ['la cuisine', 'le cirque'],
-  ['la météo', 'la cuisine'], ['la montagne', 'la cuisine'], ["l'école", 'la météo']];
+  ['la météo', 'la cuisine'], ['la montagne', 'la cuisine'], ["l'école", 'la météo'], ['la forêt', 'la cuisine'], ['la santé', 'la peur']];
 const compatibles = (a, b) => a[1] !== b[1] && !PROCHES.has(`${a[1]}|${b[1]}`) && !a[2].some((m) => b[2].includes(m))
   && !THEMES_PROCHES.some(([x, y]) => (x === a[0] && y === b[0]) || (x === b[0] && y === a[0]));
 
@@ -1777,6 +1778,7 @@ function frIntensiteModalite(modele, rng) {
     const iP = rng.int(0, PHRASES_INT.length - 1);
     const [sv, adj] = PHRASES_INT[iP];
     const adv = rng.pick(ADV_INT);
+    if (adv === 'peu' && ['bon', 'joli', 'gentil', 'contente'].includes(adj)) return null; // « peu bon » : tournure maladroite
     const phrase = `${sv} ${adv} ${adj}.`;
     const mots = sv.split(' ');
     const q = qcm(rng, adv, [adj, mots.at(-1), mots.at(-2)]);
@@ -1806,7 +1808,7 @@ function frIntensiteModalite(modele, rng) {
   if (!q) return null;
   return { _signature: `laquelle|${cherche}|${q.choix.slice().sort().join('|')}`, ...q,
     enonce: cherche === 'certaine' ? "Laquelle de ces phrases présente l'information comme certaine ?" : "Laquelle de ces phrases présente l'information comme seulement possible (pas sûre) ?",
-    explication: `« ${bonne} » ${cherche === 'certaine' ? 'Les autres phrases contiennent un mot qui montre un doute (peut-être, probablement, sans doute, il est probable que…).' : 'Les autres phrases contiennent un mot qui montre la certitude (il est certain que, sans aucun doute, c\'est sûr…).'}` };
+    explication: `« ${bonne} » ${cherche === 'certaine' ? 'Les autres phrases contiennent un mot qui montre un doute (peut-être, probablement, sans doute, il est probable que…).' : 'Les autres phrases contiennent un mot qui montre la certitude (il est certain que, sans aucun doute, c\'est sûr…).'}${/Sans doute/.test(bonne) ? ' Attention : « sans doute » veut dire « probablement », pas « c\'est certain ».' : ''}` };
 }
 
 // ═════════════════════════ 18. Mots composés ; justifier une graphie ═════════════════════════
@@ -1816,7 +1818,7 @@ const COMPOSES = [
   ['parapluie', 'soudé', 'parapluies', ['parapluie', 'parapluis'], 'soude'], ['passeport', 'soudé', 'passeports', ['passeport', 'passesports'], 'soude'],
   ['portemanteau', 'soudé', 'portemanteaux', ['portemanteaus', 'portesmanteaux'], 'soude'], ['autoroute', 'soudé', 'autoroutes', ['autoroute', 'autosroutes'], 'soude'],
   ['marchepied', 'soudé', 'marchepieds', ['marchepied', 'marchespieds'], 'soude'], ['paratonnerre', 'soudé', 'paratonnerres', ['paratonnerre', 'parastonnerres'], 'soude'],
-  ['parachute', 'soudé', 'parachutes', ['parachute', 'paraschutes'], 'soude'], ['gendarme', 'soudé', 'gendarmes', ['gendarme', 'gensdarmes'], 'soude'],
+  ['parachute', 'soudé', 'parachutes', ['parachute', 'paraschutes'], 'soude'], ['pourboire', 'soudé', 'pourboires', ['pourboire', 'poursboires'], 'soude'],
   ['chou-fleur', "trait d'union", 'choux-fleurs', ['choux-fleur', 'chou-fleurs', 'chous-fleurs'], 'nn'], ['coffre-fort', "trait d'union", 'coffres-forts', ['coffre-forts', 'coffres-fort'], 'na'],
   ['cerf-volant', "trait d'union", 'cerfs-volants', ['cerf-volants', 'cerfs-volant'], 'na'], ['rouge-gorge', "trait d'union", 'rouges-gorges', ['rouge-gorges', 'rouges-gorge'], 'na'],
   ['oiseau-mouche', "trait d'union", 'oiseaux-mouches', ['oiseau-mouches', 'oiseaux-mouche', 'oiseaus-mouches'], 'nn'], ['bateau-mouche', "trait d'union", 'bateaux-mouches', ['bateau-mouches', 'bateaux-mouche'], 'nn'],
@@ -1997,7 +1999,7 @@ const SUJETS_RECH = [
 ];
 const deX = (x) => (x.startsWith('les ') ? `des ${x.slice(4)}` : x.startsWith('le ') ? `du ${x.slice(3)}` : `de ${x}`);
 const FIABLES = [(s) => `une encyclopédie pour la jeunesse, article « ${s} », mise à jour cette année`, (s) => `le site d'un musée, page « ${s} »`, (s) => `un livre documentaire sur ${s}, écrit par un spécialiste`];
-const PAS_FIABLES = [(s) => `un site internet sur ${s}, sans nom d'auteur ni date`, (s) => `la page d'un magasin qui vend des jeux sur ${s}`, (s) => `le blog d'un passionné qui parle ${deX(s)}, sans citer ses sources`, (s) => `un message sur un forum qui parle ${deX(s)}, écrit par un inconnu`];
+const PAS_FIABLES = [(s) => `un site internet sur ${s}, sans nom d'auteur ni date`, (s) => `une vidéo publicitaire qui parle ${deX(s)}`, (s) => `le blog d'un passionné qui parle ${deX(s)}, sans citer ses sources`, (s) => `un message sur un forum qui parle ${deX(s)}, écrit par un inconnu`];
 function frSources(modele, rng) {
   const i = rng.int(0, SUJETS_RECH.length - 1);
   const [sujet, titre] = SUJETS_RECH[i];
@@ -2017,7 +2019,7 @@ function frSources(modele, rng) {
     if (!q) return null;
     return { _signature: `fiable|${i}|${kF}|${q.choix.slice().sort().join('|')}`, ...q,
       enonce: `Pour un exposé sur ${sujet}, quelle source est la plus fiable ?`,
-      explication: `${maj(bon)} : on connaît l'auteur ou l'organisme, l'information est vérifiée et datée. Un site sans auteur ni date, un forum, un blog sans sources ou un magasin qui veut vendre ne sont pas des sources sûres.` };
+      explication: `${maj(bon)} : on connaît l'auteur ou l'organisme et l'information est vérifiée. Un site sans auteur ni date, un forum, un blog sans sources ou une publicité qui veut vendre ne sont pas des sources sûres.` };
   }
   // date : l'information la plus récente
   const quoi = rng.pick([['les horaires actuels des bus de ta ville', 'Les horaires changent souvent'], ["les heures d'ouverture actuelles de la bibliothèque", "Les heures d'ouverture peuvent changer"],

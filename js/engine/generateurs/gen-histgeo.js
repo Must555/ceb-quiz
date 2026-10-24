@@ -126,7 +126,7 @@ function evenementsBrut(modele, rng) {
     case 'duree_jc': {
       // De av. J.-C. à apr. J.-C. : il n'y a pas d'an 0, donc |a| + b − 1.
       const a = rng.pick(exacts.filter((x) => x.annee < 0));
-      const b = rng.pick(exacts.filter((x) => x.annee > 0 && x.annee < 1600));
+      const b = rng.pick(exacts.filter((x) => x.annee >= 50 && x.annee < 1600));
       const d = b.annee - a.annee - 1;
       const faux = [...new Set([b.annee + a.annee, d + 100, d - 100, d + 10, d - 10])].filter((x) => x > 0 && x !== d && x !== d + 1);
       const choix = rng.shuffle([d, ...rng.shuffle(faux).slice(0, 3)]).map((x) => `${n(x)} ans`);
@@ -390,7 +390,7 @@ function densitePop(modele, rng) {
         type: 'qcm',
         enonce: `Au 1er janvier 2024, ${t.nom} comptait environ ${n(t.pop)} habitants, pour une superficie de ${n(t.sup)} km². Quelle est sa densité de population ?`,
         choix, reponse: choix.indexOf(`Environ ${n(d)} hab./km²`),
-        explication: `Densité = nombre d'habitants : superficie : ${n(t.pop)} : ${n(t.sup)} ≈ ${n(d)} habitants par km². Vérifie l'ordre de grandeur : ${n(d)} × ${n(t.sup)} ≈ ${n(t.pop)}.`,
+        explication: `Densité = nombre d'habitants : superficie, soit ${n(t.pop)} : ${n(t.sup)} ≈ ${n(d)} habitants par km². Vérifie l'ordre de grandeur : ${n(d)} × ${n(t.sup)} ≈ ${n(t.pop)}.`,
       };
     }
     case 'tranches': {
@@ -421,7 +421,7 @@ function densitePop(modele, rng) {
         type: 'qcm',
         enonce: `En 2024 : ${tires.map((t) => `${nomCourt(t)}, environ ${n(t.pop)} habitants sur ${n(t.sup)} km²`).join(' ; ')}. Quelle province est la ${plus ? 'plus' : 'moins'} densément peuplée ?`,
         choix, reponse: ds.indexOf(cible),
-        explication: `On calcule habitants : superficie : ${tires.map((t) => `${nomCourt(t)} ≈ ${n(densite(t))} hab./km²`).join(' ; ')}. Ce n'est pas forcément la province qui a le plus d'habitants !`,
+        explication: `On divise le nombre d'habitants par la superficie. ${tires.map((t) => `${nomCourt(t)} ≈ ${n(densite(t))} hab./km²`).join(' ; ')}. Ce n'est pas forcément la province qui a le plus d'habitants !`,
       };
     }
     case 'calcul': {
@@ -442,7 +442,7 @@ function densitePop(modele, rng) {
         type: 'numerique',
         enonce: `Une commune imaginaire compte ${n(pop)} habitants pour une superficie de ${n(sup)} km². Quelle est sa densité de population ?`,
         reponse: d, unite: 'hab./km²',
-        explication: `Densité = nombre d'habitants : superficie = ${n(pop)} : ${n(sup)} = ${n(d)} habitants par km².`,
+        explication: `Densité = nombre d'habitants : superficie, soit ${n(pop)} : ${n(sup)} = ${n(d)} habitants par km².`,
       };
     }
     default: return null;

@@ -13,7 +13,7 @@
 // permet à la session de garantir qu'une même variante ne revient jamais.
 
 import { evaluate } from './expr.js';
-import { formatNombre } from './format.js';
+import { formatNombre, formatMontant } from './format.js';
 import { GENERATEURS } from './generateurs/index.js';
 
 const MAX_ESSAIS = 200;
@@ -41,16 +41,17 @@ function varsPourExpressions(vars) {
 export function remplir(texte, vars) {
   if (texte == null) return texte;
   const exprVars = varsPourExpressions(vars);
-  return String(texte).replace(/\{(=)?([^{}]+)\}/g, (_, isExpr, inner) => {
-    if (isExpr) {
-      const v = evaluate(inner, exprVars);
-      return typeof v === 'number' ? formatNombre(v) : String(v);
-    }
+  return String(texte).replace(/\{(=)?([^{}]+)\}/g, (_, isExpr, brut) => {
+    // « |eur » : montant en euros avec 2 décimales (2,70).
+    const eur = /\|eur\s*$/.test(brut);
+    const inner = brut.replace(/\|eur\s*$/, '');
+    const f = (v) => (typeof v === 'number' ? (eur ? formatMontant(v) : formatNombre(v)) : String(v));
+    if (isExpr) return f(evaluate(inner, exprVars));
     const [nom, champ] = inner.trim().split('.');
     let v = vars[nom];
     if (champ) v = v?.[champ];
     if (v === undefined) throw new Error(`Variable « ${inner} » absente du modèle`);
-    return typeof v === 'number' ? formatNombre(v) : String(v);
+    return f(v);
   });
 }
 

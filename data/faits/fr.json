@@ -1230,7 +1230,7 @@
      "r": "mangé"
     },
     {
-     "nom": "Je vais ___ mes grands-parents.",
+     "nom": "Je vais ___ le musée avec ma classe.",
      "v": "visiter",
      "r": "visiter"
     },
@@ -1614,7 +1614,7 @@
        "p"
       ],
       [
-       "Le fruit des pommiers",
+       "La pomme du vieux pommier",
        "s"
       ]
      ],
@@ -2855,7 +2855,7 @@
      "ind_forme": "Il n'y a pas de mot de négation (ne… pas, ne… jamais, ne… plus, ne… rien…)."
     },
     {
-     "nom": "Ne cours pas dans le couloir !",
+     "nom": "Ne cours pas dans le couloir.",
      "type": "impérative",
      "forme": "négative",
      "ind_type": "Elle donne un ordre ou un conseil : le verbe est à l'impératif, sans sujet exprimé.",
@@ -2876,7 +2876,7 @@
      "ind_forme": "Il n'y a pas de mot de négation (ne… pas, ne… jamais, ne… plus, ne… rien…)."
     },
     {
-     "nom": "Ne touche pas à ce fil électrique !",
+     "nom": "Ne touche pas à ce fil électrique.",
      "type": "impérative",
      "forme": "négative",
      "ind_type": "Elle donne un ordre ou un conseil : le verbe est à l'impératif, sans sujet exprimé.",
@@ -2904,7 +2904,7 @@
      "ind_forme": "On trouve une négation (ne… pas, ne… jamais, ne… plus, ne… rien, personne ne…)."
     },
     {
-     "nom": "Viens vite voir !",
+     "nom": "Viens vite voir.",
      "type": "impérative",
      "forme": "affirmative",
      "ind_type": "Elle donne un ordre ou un conseil : le verbe est à l'impératif, sans sujet exprimé.",
@@ -7536,27 +7536,30 @@
      "mot": "voiture",
      "intrus": "vélo",
      "syns": [
-      "automobile"
+      "automobile",
+      "auto"
      ],
-     "synliste": "automobile"
+     "synliste": "automobile, auto"
     },
     {
      "id": "voiture|non|camion",
      "mot": "voiture",
      "intrus": "camion",
      "syns": [
-      "automobile"
+      "automobile",
+      "auto"
      ],
-     "synliste": "automobile"
+     "synliste": "automobile, auto"
     },
     {
      "id": "voiture|non|route",
      "mot": "voiture",
      "intrus": "route",
      "syns": [
-      "automobile"
+      "automobile",
+      "auto"
      ],
-     "synliste": "automobile"
+     "synliste": "automobile, auto"
     },
     {
      "id": "regarder|observer",
@@ -8188,27 +8191,33 @@
      "mot": "vite",
      "intrus": "lentement",
      "syns": [
-      "rapidement"
+      "rapidement",
+      "en vitesse",
+      "promptement"
      ],
-     "synliste": "rapidement"
+     "synliste": "rapidement, en vitesse, promptement"
     },
     {
      "id": "vite|non|doucement",
      "mot": "vite",
      "intrus": "doucement",
      "syns": [
-      "rapidement"
+      "rapidement",
+      "en vitesse",
+      "promptement"
      ],
-     "synliste": "rapidement"
+     "synliste": "rapidement, en vitesse, promptement"
     },
     {
      "id": "vite|non|tard",
      "mot": "vite",
      "intrus": "tard",
      "syns": [
-      "rapidement"
+      "rapidement",
+      "en vitesse",
+      "promptement"
      ],
-     "synliste": "rapidement"
+     "synliste": "rapidement, en vitesse, promptement"
     },
     {
      "id": "bizarre|étrange",
@@ -8410,27 +8419,30 @@
      "mot": "chemin",
      "intrus": "maison",
      "syns": [
-      "sentier"
+      "sentier",
+      "allée"
      ],
-     "synliste": "sentier"
+     "synliste": "sentier, allée"
     },
     {
      "id": "chemin|non|rivière",
      "mot": "chemin",
      "intrus": "rivière",
      "syns": [
-      "sentier"
+      "sentier",
+      "allée"
      ],
-     "synliste": "sentier"
+     "synliste": "sentier, allée"
     },
     {
      "id": "chemin|non|arbre",
      "mot": "chemin",
      "intrus": "arbre",
      "syns": [
-      "sentier"
+      "sentier",
+      "allée"
      ],
-     "synliste": "sentier"
+     "synliste": "sentier, allée"
     },
     {
      "id": "cadeau|présent",
@@ -8448,27 +8460,30 @@
      "mot": "cadeau",
      "intrus": "fête",
      "syns": [
-      "présent"
+      "présent",
+      "don"
      ],
-     "synliste": "présent"
+     "synliste": "présent, don"
     },
     {
      "id": "cadeau|non|gâteau",
      "mot": "cadeau",
      "intrus": "gâteau",
      "syns": [
-      "présent"
+      "présent",
+      "don"
      ],
-     "synliste": "présent"
+     "synliste": "présent, don"
     },
     {
      "id": "cadeau|non|carton",
      "mot": "cadeau",
      "intrus": "carton",
      "syns": [
-      "présent"
+      "présent",
+      "don"
      ],
-     "synliste": "présent"
+     "synliste": "présent, don"
     },
     {
      "id": "ami|copain",
@@ -8774,27 +8789,30 @@
      "mot": "détester",
      "intrus": "aimer",
      "syns": [
-      "haïr"
+      "haïr",
+      "exécrer"
      ],
-     "synliste": "haïr"
+     "synliste": "haïr, exécrer"
     },
     {
      "id": "détester|non|adorer",
      "mot": "détester",
      "intrus": "adorer",
      "syns": [
-      "haïr"
+      "haïr",
+      "exécrer"
      ],
-     "synliste": "haïr"
+     "synliste": "haïr, exécrer"
     },
     {
      "id": "détester|non|apprécier",
      "mot": "détester",
      "intrus": "apprécier",
      "syns": [
-      "haïr"
+      "haïr",
+      "exécrer"
      ],
-     "synliste": "haïr"
+     "synliste": "haïr, exécrer"
     },
     {
      "id": "vieux|âgé",
@@ -9822,9 +9840,7 @@
       "envelopper",
       "empaqueter",
       "ranger"
-     ],
-     "prefixe": "dé-",
-     "note": "Le préfixe « dé- » exprime le contraire."
+     ]
     },
     {
      "nom": "ordre",
@@ -9888,9 +9904,7 @@
       "classer",
       "trier",
       "organiser"
-     ],
-     "prefixe": "dé-",
-     "note": "Le préfixe « dé- » exprime le contraire."
+     ]
     },
     {
      "nom": "chanceux",
@@ -11617,11 +11631,11 @@
      "graphie": "em- devant m, b ou p"
     },
     {
-     "nom": "emballer",
+     "nom": "empaqueter",
      "affixe": "em-",
      "sorte": "préfixe",
      "sens": "dans",
-     "base": "balle",
+     "base": "paquet",
      "graphie": "em- devant m, b ou p"
     },
     {
@@ -13028,6 +13042,22 @@
      "nom": "mettre la puce à l'oreille",
      "sens": "éveiller un soupçon"
     }
+   ],
+   "incompatibles": [
+    [
+     "aider",
+     "participer au travail",
+     "s'entraider"
+    ],
+    [
+     "en avoir assez",
+     "commencer à se fâcher",
+     "être de mauvaise humeur"
+    ],
+    [
+     "être très calme et obéissant",
+     "ne rien dire du tout"
+    ]
    ]
   },
   {
@@ -13041,18 +13071,8 @@
      "note": "En langage courant, on dit « une voiture »."
     },
     {
-     "nom": "une automobile",
-     "niveau": "soutenu",
-     "note": "En langage courant, on dit « une voiture »."
-    },
-    {
      "nom": "un bouquin",
      "niveau": "familier",
-     "note": "En langage courant, on dit « un livre »."
-    },
-    {
-     "nom": "un ouvrage",
-     "niveau": "soutenu",
      "note": "En langage courant, on dit « un livre »."
     },
     {
@@ -14053,7 +14073,7 @@
      "note": "c'est un avis, un jugement, qui dépend de la personne qui parle."
     },
     {
-     "nom": "La lune tourne autour de la Terre.",
+     "nom": "La Lune tourne autour de la Terre.",
      "nature": "fait",
      "note": "on peut le vérifier, c'est vrai pour tout le monde."
     },
@@ -14470,7 +14490,7 @@
     "intention": {
      "informer": "d'informer",
      "persuader (convaincre, donner envie)": "de persuader (convaincre, donner envie)",
-     "enjoindre (donner des consignes, des ordres)": "d'enjoindre (donner des consignes, des ordres, des conseils)",
+     "enjoindre (donner des consignes, des ordres)": "d'enjoindre (donner des consignes, des ordres)",
      "donner du plaisir, émouvoir": "de donner du plaisir, de susciter des émotions"
     },
     "structure": {
@@ -14480,7 +14500,13 @@
      "argumentative": "une structure argumentative",
      "dialoguée": "une structure dialoguée"
     }
-   }
+   },
+   "incompatibles": [
+    [
+     "persuader (convaincre, donner envie)",
+     "enjoindre (donner des consignes, des ordres)"
+    ]
+   ]
   },
   {
    "id": "fr-reprises",

@@ -147,7 +147,7 @@ const ORDRE_FONCTIONS = Object.keys(FONCTIONS);
 function explicationFonction(code, g, verbe, sujet) {
   switch (code) {
     case 'S': return `« ${g} » est le sujet du verbe « ${verbe} » : c'est lui qui commande l'accord du verbe. On peut l'encadrer par « c'est … qui » ou « ce sont … qui ».`;
-    case 'CD': return `« ${g} » est un complément direct du verbe « ${verbe} » : il est relié au verbe sans préposition et on ne peut pas le déplacer.`;
+    case 'CD': return `« ${g} » est un complément direct du verbe « ${verbe} » : il est relié au verbe sans préposition et on ne peut pas le déplacer.${/^(du|de la|de l'|des) /i.test(g) ? ` Ici, « ${g.split(' ')[0]} » est un déterminant (on pourrait dire « le… », « la… »), pas une préposition.` : ''}`;
     case 'CI': return `« ${g} » est un complément indirect du verbe « ${verbe} » : il est relié au verbe par une préposition (à, de…) et on ne peut pas le déplacer.`;
     case 'CP': return `« ${g} » est un complément de phrase : on peut le déplacer (en début ou en fin de phrase) et même le supprimer.`;
     case 'AT': return `« ${g} » est un attribut du sujet : il suit un verbe comme être, sembler, devenir, paraître ou rester et dit comment est le sujet « ${sujet} ».`;
@@ -545,7 +545,8 @@ const PAS_IMPERATIF = new Set(['être', 'avoir', 'tomber', 'arriver', 'habiter',
 const SANS_CADRE = new Set(['être', 'avoir', 'tomber', 'aller', 'pouvoir', 'devoir', 'vouloir', 'naître', 'mourir', 'perdre', 'casser',
   'oublier', 'salir', 'trahir', 'mentir', 'décevoir', 'souffrir', 'pleurer', 'grossir', 'maigrir', 'vieillir', 'pâlir', 'frémir',
   'craindre', 'interrompre', 'rompre', 'disparaître', 'confondre', 'fondre', 'mordre', 'apparaître', 'paraître', 'plaire', 'appartenir',
-  'correspondre', 'guérir', 'grandir', 'envahir', 'atterrir', 'recevoir', 'savoir', 'croire', 'arriver']);
+  'correspondre', 'guérir', 'grandir', 'envahir', 'atterrir', 'recevoir', 'savoir', 'croire', 'arriver',
+  'aimer', 'adorer', 'détester', 'préférer', 'bouger', 'habiter', 'vivre', 'rêver', 'parvenir', 'éviter', 'connaître']);
 // [texte, idx de personne, genre ('m'/'f' ou null si inconnu), pronom ?]
 const SUJETS_CONJ = [
   ['je', 0, null, true], ['tu', 1, null, true], ['il', 2, 'm', true], ['elle', 2, 'f', true], ['nous', 3, null, true],
@@ -745,6 +746,7 @@ function frAlpha(modele, rng) {
   }
   const mots = rng.shuffle(pool).slice(0, 4);
   const tries = mots.slice().sort((a, b) => (cleAlpha(a) < cleAlpha(b) ? -1 : 1));
+  if (mots.every((m, n) => m === tries[n])) return null; // déjà rangés : on retire
   const liste = tries.join(' → ');
   const astuce = 'Si la première lettre est la même, compare la deuxième, puis la troisième…';
   if (forme === 'ordre') {

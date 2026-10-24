@@ -38,7 +38,8 @@ export function genererRepereTemps(modele, rng) {
   if (sorte === 'periode') {
     let annee;
     do { annee = rng.int(-5000, 2025); }
-    while (PERIODES.some((p) => Math.abs(annee - p.debut) < MARGE) || annee === 0);
+    // La charnière « vers 3500 av. J.-C. » est approximative : on reste à au moins 300 ans d'elle.
+    while (PERIODES.some((p) => Math.abs(annee - p.debut) < (p.debut < -1000 ? 300 : MARGE)) || annee === 0);
     const bonne = periodeDe(annee);
     const choix = rng.shuffle(PERIODES.map((p) => p.nom));
     return {
@@ -58,8 +59,12 @@ export function genererRepereTemps(modele, rng) {
     _signature: `siecle|${annee}`,
     type: 'texte_court',
     enonce: `En quel siècle se situe l'année ${annee} ? (écris le numéro, en chiffres ou en chiffres romains)`,
-    reponse: [String(s), romain(s), `${s}e`, `${s}e siecle`, `${romain(s)}e`, `${romain(s)}e siecle`, `${s}eme`],
+    reponse: [String(s), romain(s), `${s}e`, `${s}e siecle`, `${romain(s)}e`, `${romain(s)}e siecle`, `${s}eme`, `${romain(s)}eme`, `${romain(s)}eme siecle`,
+      ...(s === 1 ? ['1er', 'Ier', '1er siecle', 'Ier siecle', 'premier', 'premier siecle'] : [])],
     souple: true,
-    explication: `Le ${romain(s)}e siècle va de l'an ${(s - 1) * 100 + 1} à l'an ${s * 100}. Astuce : ${annee} → on prend les centaines (${Math.floor((annee - 1) / 100)}) et on ajoute 1 → ${s}.`,
+    explication: `Le ${s === 1 ? 'Ier' : `${romain(s)}e`} siècle va de l'an ${(s - 1) * 100 + 1} à l'an ${s * 100}. ${annee % 100 === 0
+      ? `Astuce : ${annee} est la dernière année d'un siècle : le siècle est le nombre de centaines, ${s}.`
+      : annee < 100 ? 'Toutes les années de 1 à 100 sont dans le premier siècle.'
+        : `Astuce : dans ${annee}, il y a ${Math.floor(annee / 100)} centaines complètes ; on ajoute 1 → ${s}.`}`,
   };
 }

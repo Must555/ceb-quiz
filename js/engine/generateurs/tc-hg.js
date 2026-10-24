@@ -967,7 +967,7 @@ const rechauffement = famille('re', [
     return {
       ...q,
       enonce: `Lequel de ces éléments est ${NOMS_CCS[cat]} le réchauffement climatique ?`.replace('une cause le', 'une cause du').replace('une conséquence le', 'une conséquence du'),
-      explication: `${bonne} : c'est ${cat === 'cause' ? 'une cause (cela rejette des gaz à effet de serre)' : cat === 'consequence' ? 'une conséquence du réchauffement' : 'une solution (cela réduit les rejets de gaz à effet de serre)'}.`,
+      explication: `${bonne} : c'est ${cat === 'cause' ? 'une cause (cela rejette des gaz à effet de serre)' : cat === 'consequence' ? 'une conséquence du réchauffement' : (/forêts/.test(bonne) ? 'une solution (les arbres absorbent du CO₂, un gaz à effet de serre)' : 'une solution (cela réduit les rejets de gaz à effet de serre)')}.`,
       _signature: `ccsq|${cat}|${bonne}|${cle(q.choix)}`,
       cleContenu: `ccsq|${cat}|${bonne}`,
       difficulte: 1,
@@ -1053,13 +1053,13 @@ function donneesClimat(type, rng) {
       break;
     default: return null;
   }
-  // Mois le plus chaud et le plus froid uniques (écart ≥ 1 °C).
+  // Mois le plus chaud et le plus froid uniques (écart ≥ 3 °C, lisible sur le graphique).
   const iMax = T.indexOf(Math.max(...T));
   const iMin = T.indexOf(Math.min(...T));
   const autresMax = Math.max(...T.filter((_, i) => i !== iMax));
-  if (T[iMax] - autresMax < 1) T[iMax] = autresMax + 1;
+  if (T[iMax] - autresMax < 3) T[iMax] = autresMax + 3;
   const autresMin = Math.min(...T.filter((_, i) => i !== iMin));
-  if (autresMin - T[iMin] < 1) T[iMin] = autresMin - 1;
+  if (autresMin - T[iMin] < 3) T[iMin] = autresMin - 3;
   // Mois le plus pluvieux unique (écart ≥ 10 mm), sauf climat aride.
   if (type !== 'aride') {
     const jMax = P.indexOf(Math.max(...P));
@@ -1301,9 +1301,9 @@ const LIEUX = [
   { fam: 'sec', t: 'le Sahara', ou: 'au Sahara', p: false, c: 'Il fait très chaud et il y a très peu d\'eau (désert chaud).' },
   { fam: 'froid', t: 'la Sibérie', ou: 'en Sibérie', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
   { fam: 'foret', t: 'l\'Amazonie', ou: 'en Amazonie', p: false, c: 'C\'est une immense forêt dense, chaude et humide, difficile à traverser et à défricher.' },
-  { fam: 'montagne', t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes, aux pentes raides, où il fait froid et où l\'on cultive peu.' },
-  { fam: 'glace', t: 'l\'Antarctique', ou: 'en Antarctique', p: false, c: 'C\'est un continent couvert de glace, glacial toute l\'année.' },
-  { fam: 'glace', t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'C\'est une région recouverte d\'une épaisse calotte de glace.' },
+  { fam: 'montagne froid', t: 'l\'Himalaya', ou: 'dans l\'Himalaya', p: false, c: 'Ce sont de très hautes montagnes, aux pentes raides, où il fait froid et où l\'on cultive peu.' },
+  { fam: 'glace froid', t: 'l\'Antarctique', ou: 'en Antarctique', p: false, c: 'C\'est un continent couvert de glace, glacial toute l\'année.' },
+  { fam: 'glace froid', t: 'l\'intérieur du Groenland', ou: 'à l\'intérieur du Groenland', p: false, c: 'C\'est une région recouverte d\'une épaisse calotte de glace.' },
   { fam: 'sec', t: 'le centre de l\'Australie', ou: 'au centre de l\'Australie', p: false, c: 'C\'est une région très sèche (aride), avec très peu de pluie.' },
   { fam: 'froid', t: 'le Grand Nord canadien', ou: 'dans le Grand Nord canadien', p: false, c: 'Il y fait très froid pendant une grande partie de l\'année.' },
   { fam: 'desert-fleuve', t: 'la vallée et le delta du Nil', ou: 'dans la vallée et le delta du Nil', p: true, c: 'L\'eau du fleuve permet de cultiver des terres fertiles au milieu du désert.' },
@@ -1311,9 +1311,9 @@ const LIEUX = [
   { fam: 'fleuve littoral plaine', t: 'l\'est de la Chine', ou: 'dans l\'est de la Chine', p: true, c: 'On y trouve des plaines fertiles, de grands fleuves et un long littoral.' },
   { fam: 'volcan', t: 'l\'île de Java, en Indonésie', ou: 'sur l\'île de Java, en Indonésie', p: true, c: 'Les sols volcaniques y sont fertiles et le climat chaud et humide convient au riz.' },
   { fam: 'fleuve delta', t: 'le Bangladesh', ou: 'au Bangladesh', p: true, c: 'C\'est un immense delta fertile, très favorable à la culture du riz.' },
-  { fam: 'tempere plaine fleuve', t: 'l\'Europe de l\'Ouest', ou: 'en Europe de l\'Ouest', p: true, c: 'Le climat y est tempéré, avec des plaines, des fleuves et de nombreuses villes.' },
-  { fam: 'littoral', t: 'les côtes du Japon', ou: 'sur les côtes du Japon', p: true, c: 'Les plaines du littoral accueillent des ports et de très grandes villes.' },
-  { fam: 'littoral', t: 'la côte est des États-Unis', ou: 'sur la côte est des États-Unis', p: true, c: 'Le littoral offre des ports et de grandes villes ouvertes au commerce.' },
+  { fam: 'tempere plaine fleuve littoral', t: 'l\'Europe de l\'Ouest', ou: 'en Europe de l\'Ouest', p: true, c: 'Le climat y est tempéré, avec des plaines, des fleuves et de nombreuses villes.' },
+  { fam: 'littoral tempere plaine', t: 'les côtes du Japon', ou: 'sur les côtes du Japon', p: true, c: 'Les plaines du littoral accueillent des ports et de très grandes villes.' },
+  { fam: 'littoral tempere plaine', t: 'la côte est des États-Unis', ou: 'sur la côte est des États-Unis', p: true, c: 'Le littoral offre des ports et de grandes villes ouvertes au commerce.' },
 ];
 const PAYS_POP = [
   { nom: 'la Russie', pop: 144e6, sup: 17100000 },
@@ -1552,7 +1552,7 @@ const QUESTIONS_GLOBE_SANS_CARTE = [
     expl: 'Au nord du cercle polaire arctique, c\'est la zone froide du Nord, autour du pôle Nord et de l\'océan Arctique.' },
   { q: 'Combien de continents compte-t-on sur la Terre ?', ok: '6 : Europe, Asie, Afrique, Amérique, Océanie et Antarctique',
     ko: ['4 : Europe, Asie, Afrique et Amérique', '5 : Europe, Asie, Afrique, Amérique et Océanie', '7 : Europe, Asie, Afrique, Amérique, Océanie, Antarctique et Groenland'],
-    expl: 'On compte 6 continents : l\'Europe, l\'Asie, l\'Afrique, l\'Amérique (du Nord et du Sud), l\'Océanie et l\'Antarctique. Le Groenland est une île.' },
+    expl: 'On compte 6 continents : l\'Europe, l\'Asie, l\'Afrique, l\'Amérique, l\'Océanie et l\'Antarctique. L\'Amérique compte comme un seul continent, même si on la partage souvent en Amérique du Nord et Amérique du Sud. Le Groenland est une île.' },
   { q: 'Quels sont les deux océans qui entourent les pôles ?', ok: 'L\'océan Arctique (au nord) et l\'océan Austral (au sud)',
     ko: ['L\'océan Atlantique et l\'océan Pacifique', 'L\'océan Indien et l\'océan Arctique', 'L\'océan Pacifique et l\'océan Austral'],
     expl: 'L\'océan Arctique entoure le pôle Nord ; l\'océan Austral, aussi appelé océan Antarctique, entoure le continent Antarctique et le pôle Sud.' },
@@ -1572,7 +1572,7 @@ const planisphere = famille('pl', [
     return {
       ...q, figure: svgPlanisphere(cibles),
       enonce: `Observe ce planisphère. ${quoi} est ${c.cat === 'ligne' ? 'désignée' : 'désigné'} par la lettre ${c.lettre} ?`,
-      explication: `La lettre ${c.lettre} désigne ${c.obj.nom}${c.cat === 'ligne' ? `, qui ${c.obj.def}` : ''}. ${c.cat === 'ligne' ? NOMS_LIGNES_EXPL : c.cat === 'ocean' ? 'Les 5 océans : Pacifique (le plus grand), Atlantique, Indien, Arctique (autour du pôle Nord) et Austral, aussi appelé océan Antarctique (autour de l\'Antarctique).' : 'Les 6 continents : Europe, Asie, Afrique, Amérique (du Nord et du Sud), Océanie et Antarctique.'}`,
+      explication: `La lettre ${c.lettre} désigne ${c.obj.nom}${c.cat === 'ligne' ? `, qui ${c.obj.def}` : ''}. ${c.cat === 'ligne' ? NOMS_LIGNES_EXPL : c.cat === 'ocean' ? 'Les 5 océans : Pacifique (le plus grand), Atlantique, Indien, Arctique (autour du pôle Nord) et Austral, aussi appelé océan Antarctique (autour de l\'Antarctique).' : 'Les 6 continents : Europe, Asie, Afrique, Amérique, Océanie et Antarctique. L\'Amérique compte comme un seul continent, formé de l\'Amérique du Nord et de l\'Amérique du Sud.'}`,
       _signature: `nom|${sigCibles(cibles)}|${c.lettre}|${cle(q.choix)}`,
       cleContenu: `nom|${sigCibles(cibles)}|${c.lettre}`,
       difficulte: c.cat === 'ligne' ? 2 : 1,
@@ -2539,7 +2539,7 @@ const BANQUE_PEUPL = [
   { q: 'Quelle est la province la moins peuplée de Belgique ?', ok: 'La province de Luxembourg', ko: ['La province d\'Anvers', 'La province de Hainaut', 'La province de Liège', 'La province de Flandre orientale'],
     expl: 'La province de Luxembourg (environ 295 000 habitants en 2024) est la moins peuplée. C\'est aussi la plus grande province : sa densité est la plus faible du pays (environ 66 habitants par km²).' },
   { q: 'Quelle province a la plus faible densité de population ?', ok: 'La province de Luxembourg', ko: ['La province d\'Anvers', 'La province du Brabant flamand', 'La province de Flandre orientale', 'La province du Brabant wallon'],
-    expl: 'Dans la province de Luxembourg, en Ardenne, il y a environ 66 habitants par km² : c\'est la densité la plus faible de Belgique.' },
+    expl: 'Dans la province de Luxembourg, surtout couverte par l\'Ardenne, il y a environ 66 habitants par km² : c\'est la densité la plus faible de Belgique.' },
   { q: 'Quelle Région belge compte le plus d\'habitants ?', ok: 'La Région flamande', ko: ['La Région wallonne', 'La Région de Bruxelles-Capitale'],
     expl: 'En 2024 : Région flamande ≈ 6,8 millions, Région wallonne ≈ 3,7 millions, Région de Bruxelles-Capitale ≈ 1,2 million d\'habitants.' },
   { q: 'Quelle Région belge a la plus forte densité de population ?', ok: 'La Région de Bruxelles-Capitale', ko: ['La Région flamande', 'La Région wallonne'],
@@ -2573,13 +2573,14 @@ const peuplementBe = famille('pb', [
     const pop = (p) => Math.round(p.pop / 1000) * 1000;
     const donnees = tires.map((p) => `${maj(p.nom)} : ${n(pop(p))} habitants pour ${n(p.sup)} km²`).join('\n');
     const q = { type: 'qcm', choix: tires.map((p) => maj(p.nom)), reponse: tires.indexOf(bon) };
-    const dens = tires.map((p) => `${p.court} ≈ ${n(Math.round(p.pop / p.sup))} hab./km²`).join(' ; ');
+    // Même calcul que la famille « densité » : population arrondie au millier (celle qui est affichée).
+    const dens = tires.map((p) => `${p.court} ≈ ${n(Math.round(pop(p) / p.sup))} hab./km²`).join(' ; ');
     return {
       ...q,
       enonce: `Population au 1er janvier 2024 (Statbel) :\n${donnees}\n${sorte === 'peuple' ? 'Quelle province compte le plus d\'habitants ?' : sorte === 'dense' ? 'Quelle province a la plus forte densité de population ?' : 'Quelle province a la plus faible densité de population ?'}`,
       explication: sorte === 'peuple'
         ? `On compare le nombre total d'habitants : ${bon.nom} en a le plus. (Densités : ${dens}.)`
-        : `Densité = nombre d'habitants : superficie. ${dens}. ${sorte === 'dense' ? 'La plus forte' : 'La plus faible'} : ${bon.nom}.`,
+        : `On divise le nombre d'habitants par la superficie. ${dens}. ${sorte === 'dense' ? 'La plus forte' : 'La plus faible'} : ${bon.nom}.`,
       _signature: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`, cleContenu: `cmp|${sorte}|${cle(tires.map((p) => p.court))}`,
       difficulte: sorte === 'peuple' ? 1 : 3,
     };

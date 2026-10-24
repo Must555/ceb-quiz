@@ -839,10 +839,10 @@ const representations = famille([
     for (const n of nombres) zones[n % pA === 0 && n % pB === 0 ? 'ab' : n % pA === 0 ? 'a' : n % pB === 0 ? 'b' : 'o'].push(n);
     if (zones.a.length > 7 || zones.b.length > 7 || zones.ab.length > 4 || zones.o.length > 6 || zones.ab.length === 0) return null;
     const qs = [
-      [`Combien de nombres sont à la fois des ${lA} et des ${lB} ?`, zones.ab.length, `On compte les nombres de l'intersection : ${enumerer(zones.ab.map(String))}.`],
-      [`Combien de nombres sont des ${lA} mais pas des ${lB} ?`, zones.a.length, zones.a.length ? `On compte la partie « ${lA} » sans l'intersection : ${enumerer(zones.a.map(String))}.` : 'Cette zone est vide : 0.'],
+      [`Combien de nombres sont à la fois des ${lA} et des ${lB} ?`, zones.ab.length, `On compte les nombres de l'intersection : ${enumerer(zones.ab.map(String))}, soit ${zones.ab.length} nombre${zones.ab.length > 1 ? 's' : ''}.`],
+      [`Combien de nombres sont des ${lA} mais pas des ${lB} ?`, zones.a.length, zones.a.length ? `On compte la partie « ${lA} » sans l'intersection : ${enumerer(zones.a.map(String))}, soit ${zones.a.length} nombre${zones.a.length > 1 ? 's' : ''}.` : 'Cette zone est vide : 0.'],
       [`Combien de nombres sont des ${lB} (en tout) ?`, zones.b.length + zones.ab.length, `Tout le cercle « ${lB} », intersection comprise : ${zones.b.length} + ${zones.ab.length} = ${zones.b.length + zones.ab.length}.`],
-      [`Combien de nombres ne sont ni des ${lA}, ni des ${lB} ?`, zones.o.length, `On compte les nombres en dehors des deux cercles : ${zones.o.length ? enumerer(zones.o.map(String)) : 'aucun'}.`],
+      [`Combien de nombres ne sont ni des ${lA}, ni des ${lB} ?`, zones.o.length, `On compte les nombres en dehors des deux cercles : ${zones.o.length ? `${enumerer(zones.o.map(String))}, soit ${zones.o.length} nombre${zones.o.length > 1 ? 's' : ''}` : 'aucun (0)'}.`],
     ];
     const [e, rep, x] = rng.pick(qs);
     return {

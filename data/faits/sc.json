@@ -202,7 +202,7 @@
      "reproduction": "vivipare",
      "respiration": "avec des poumons",
      "revetement": "une peau nue",
-     "info": "Elle remonte à la surface pour respirer : c'est un mammifère, pas un poisson.",
+     "info": "Elle remonte à la surface pour respirer.",
      "classe_accepte": [
       "mammifères"
      ]
@@ -216,7 +216,7 @@
      "respiration": "avec des poumons",
      "revetement": "des poils",
      "hiver": "en hibernant",
-     "info": "Elle vole, mais elle a des poils et allaite ses petits : c'est un mammifère.",
+     "info": "Elle vole, mais elle a des poils et allaite ses petits.",
      "info_hiver": "Chez nous, elle hiberne suspendue dans une grotte ou un grenier.",
      "classe_accepte": [
       "mammifères"
@@ -650,7 +650,7 @@
      "respiration": "avec des poumons",
      "pattes": 2,
      "regime": "carnivore",
-     "info": "Il ne vole pas, mais il a des plumes et pond des œufs : c'est un oiseau.",
+     "info": "Il ne vole pas, mais il a des plumes et pond des œufs.",
      "classe_accepte": [
       "oiseaus"
      ]
@@ -664,7 +664,7 @@
      "revetement": "des plumes",
      "respiration": "avec des poumons",
      "pattes": 2,
-     "info": "Elle ne vole pas, mais elle a des plumes et pond des œufs : c'est un oiseau.",
+     "info": "Elle ne vole pas, mais elle a des plumes et pond des œufs.",
      "classe_accepte": [
       "oiseaus"
      ]
@@ -974,7 +974,7 @@
      "squelette": "vertébré",
      "respiration": "avec des branchies",
      "regime": "carnivore",
-     "info": "Elle ressemble à un serpent, mais elle respire avec des branchies : c'est un poisson.",
+     "info": "Elle ressemble à un serpent, mais elle respire avec des branchies.",
      "classe_accepte": [
       "poissons"
      ]
@@ -1339,7 +1339,7 @@
      "squelette": "invertébré",
      "pattes": 8,
      "reproduction": "ovipare",
-     "info": "Elle a 8 pattes et se nourrit de sang : c'est un arachnide.",
+     "info": "Elle a 8 pattes et se nourrit de sang.",
      "classe_accepte": [
       "arachnides"
      ]
@@ -1388,7 +1388,7 @@
      "il": "il",
      "squelette": "invertébré",
      "pattes": 14,
-     "info": "Il vit sous les pierres et les feuilles mortes ; c'est un crustacé terrestre.",
+     "info": "Il vit sous les pierres et les feuilles mortes.",
      "classe_accepte": [
       "crustacés"
      ]
@@ -1454,7 +1454,7 @@
      "classe": "annélide",
      "il": "il",
      "squelette": "invertébré",
-     "info": "Son corps est fait d'anneaux : c'est un annélide.",
+     "info": "Son corps est fait d'anneaux.",
      "classe_accepte": [
       "annélides"
      ]
@@ -1464,7 +1464,7 @@
      "classe": "annélide",
      "il": "elle",
      "squelette": "invertébré",
-     "info": "Son corps est fait d'anneaux : c'est un annélide.",
+     "info": "Son corps est fait d'anneaux.",
      "classe_accepte": [
       "annélides"
      ]
@@ -1474,7 +1474,7 @@
      "classe": "myriapode",
      "il": "il",
      "squelette": "invertébré",
-     "info": "Il a de nombreuses paires de pattes : c'est un myriapode, pas un insecte.",
+     "info": "Il a de nombreuses paires de pattes.",
      "classe_accepte": [
       "myriapodes"
      ]
@@ -1484,7 +1484,7 @@
      "classe": "myriapode",
      "il": "elle",
      "squelette": "invertébré",
-     "info": "Elle a une paire de pattes par anneau du corps : c'est un myriapode.",
+     "info": "Elle a une paire de pattes par anneau du corps.",
      "classe_accepte": [
       "myriapodes"
      ]
@@ -3089,11 +3089,6 @@
      "info": "On mange la jeune pousse (la tige) qui sort de terre."
     },
     {
-     "nom": "la canne à sucre",
-     "partie": "tige",
-     "info": "Le sucre est extrait de sa tige."
-    },
-    {
      "nom": "la laitue",
      "partie": "feuille"
     },
@@ -3209,9 +3204,13 @@
      "partie": "graine"
     },
     {
-     "nom": "le grain de café",
-     "partie": "graine",
-     "info": "Le « grain » de café est la graine du caféier."
+     "nom": "la pousse de bambou",
+     "partie": "tige",
+     "info": "On mange la jeune tige du bambou."
+    },
+    {
+     "nom": "le grain de maïs",
+     "partie": "graine"
     }
    ]
   },
@@ -3233,8 +3232,7 @@
     {
      "nom": "la bouche",
      "role": "broyer les aliments et les mélanger à la salive",
-     "fait": "fait",
-     "appareil": "l'appareil digestif"
+     "fait": "fait"
     },
     {
      "nom": "les glandes salivaires",
@@ -3311,8 +3309,7 @@
     {
      "nom": "le diaphragme",
      "role": "s'abaisser à l'inspiration pour agrandir la cage thoracique (c'est un muscle placé sous les poumons)",
-     "fait": "fait",
-     "appareil": "l'appareil respiratoire"
+     "fait": "fait"
     },
     {
      "nom": "le cœur",
@@ -4513,10 +4510,10 @@
      "pourquoi": "La vapeur d'eau se refroidit en altitude et redevient liquide (gouttelettes) : c'est la condensation."
     },
     {
-     "nom": "Qu'est-ce qui fait évaporer l'eau des mers ?",
+     "nom": "D'où vient l'énergie qui fait évaporer l'eau des mers ?",
      "rep": "la chaleur du Soleil",
      "faux": [
-      "le vent qui souffle sur la mer",
+      "le sel de la mer",
       "le froid de la nuit",
       "les vagues qui remuent l'eau"
      ],
@@ -5239,23 +5236,23 @@
     },
     {
      "nom": "une pile usagée",
-     "poubelle": "un point de collecte spécial (magasin, recyparc)",
-     "info": "Les piles contiennent des produits dangereux : on les rapporte dans un point de collecte (magasin, école, recyparc)."
+     "poubelle": "un point de collecte spécial (magasin, parc à conteneurs)",
+     "info": "Les piles contiennent des produits dangereux : on les rapporte dans un point de collecte (magasin, école, parc à conteneurs)."
     },
     {
      "nom": "un vieux pot de peinture",
-     "poubelle": "un point de collecte spécial (magasin, recyparc)",
-     "info": "La peinture est un produit dangereux : elle va au recyparc."
+     "poubelle": "un point de collecte spécial (magasin, parc à conteneurs)",
+     "info": "La peinture est un produit dangereux : elle va au parc à conteneurs."
     },
     {
      "nom": "un vieil ordinateur",
-     "poubelle": "un point de collecte spécial (magasin, recyparc)",
-     "info": "Les appareils électriques se rapportent au magasin ou au recyparc."
+     "poubelle": "un point de collecte spécial (magasin, parc à conteneurs)",
+     "info": "Les appareils électriques se rapportent au magasin ou au parc à conteneurs."
     },
     {
      "nom": "une ampoule LED usagée",
-     "poubelle": "un point de collecte spécial (magasin, recyparc)",
-     "info": "Elle se rapporte dans un point de collecte (magasin ou recyparc)."
+     "poubelle": "un point de collecte spécial (magasin, parc à conteneurs)",
+     "info": "Elle se rapporte dans un point de collecte (magasin ou parc à conteneurs)."
     },
     {
      "nom": "Trier ses déchets permet de les recycler et d'économiser des matières premières.",

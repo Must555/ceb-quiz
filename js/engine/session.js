@@ -14,7 +14,7 @@
 import { createRng } from './random.js';
 import { genererVariante } from './generator.js';
 import { corriger } from './checker.js';
-import { normaliserTexte, formatNombre } from './format.js';
+import { normaliserTexte, formatNombre, formatMontant } from './format.js';
 
 // Ce que l'enfant voit, sans l'ordre d'affichage : deux questions identiques à l'écran sont la même question,
 // même si leurs clés internes diffèrent (prénom non affiché, ordre des propositions, numéro de forme…).
@@ -295,12 +295,19 @@ export class QuizSession {
   }
 }
 
+// « 1 élèves » → « 1 élève » : un nom d'unité au pluriel s'accorde au singulier sous 2.
+const INVARIABLES = new Set(['fois', 'mois', 'pas', 'poids', 'temps', 'cours', 'bus', 's']);
+export function uniteAccordee(n, unite) {
+  if (typeof n !== 'number' || Math.abs(n) >= 2 || !/^[a-zàâäéèêëîïôöûùüç]+s$/i.test(unite) || INVARIABLES.has(unite)) return unite;
+  return unite.replace(/s$/, '');
+}
+
 export function bonneReponseLisible(q) {
   switch (q.type) {
     case 'qcm': return [].concat(q.reponse).map((i) => q.choix[i]).join(' ou ');
     case 'qcm_multi': return q.reponse.map((i) => q.choix[i]).join(' ; ');
     case 'vrai_faux': return q.reponse ? 'Vrai' : 'Faux';
-    case 'numerique': return `${formatNombre(q.reponse)}${q.unite ? ' ' + q.unite : ''}`;
+    case 'numerique': return `${q.unite === '€' ? formatMontant(q.reponse) : formatNombre(q.reponse)}${q.unite ? ' ' + uniteAccordee(q.reponse, q.unite) : ''}`;
     case 'texte_court': return [].concat(q.reponse)[0];
     case 'trous': return q.reponse.map((r) => [].concat(r)[0]).join(' / ');
     case 'grille': return q.lignes.map((l, i) => `${l} → ${[].concat(q.reponse[i]).map((c) => colonnesDe(q, i)[c]).join(' ou ')}`).join('\n');

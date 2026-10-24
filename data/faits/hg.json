@@ -961,329 +961,379 @@
      "nom": "Ramsès II",
      "periode": "Antiquité",
      "role": "le grand pharaon qui a fait construire les temples d'Abou Simbel",
-     "quand": "vers 1250 av. J.-C."
+     "quand": "vers 1250 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Cléopâtre",
      "periode": "Antiquité",
      "role": "la dernière reine de l'Égypte ancienne",
-     "quand": "morte en 30 av. J.-C."
+     "quand": "morte en 30 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Jules César",
      "periode": "Antiquité",
      "role": "le général romain qui a conquis la Gaule",
-     "quand": "1er siècle av. J.-C."
+     "quand": "1er siècle av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Ambiorix",
      "periode": "Antiquité",
      "role": "le chef des Éburons révolté contre les Romains",
      "quand": "54 av. J.-C.",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Vercingétorix",
      "periode": "Antiquité",
      "role": "le chef gaulois vaincu à Alésia",
-     "quand": "52 av. J.-C."
+     "quand": "52 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Auguste",
      "periode": "Antiquité",
      "role": "le premier empereur romain",
-     "quand": "à partir de 27 av. J.-C."
+     "quand": "à partir de 27 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Clovis",
      "periode": "Moyen Âge",
      "role": "le roi des Francs qui s'est converti au christianisme vers 496",
      "quand": "roi de 481 à 511",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Charlemagne",
      "periode": "Moyen Âge",
      "role": "le roi des Francs sacré empereur en 800",
      "quand": "empereur de 800 à 814",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Godefroid de Bouillon",
      "periode": "Moyen Âge",
      "role": "un des chefs de la première croisade",
      "quand": "prise de Jérusalem en 1099",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Marco Polo",
      "periode": "Moyen Âge",
      "role": "le marchand vénitien qui a voyagé jusqu'en Chine",
-     "quand": "13e siècle"
+     "quand": "13e siècle",
+     "verbe": "était"
     },
     {
      "nom": "Jeanne d'Arc",
      "periode": "Moyen Âge",
      "role": "la jeune fille qui a combattu les Anglais pendant la guerre de Cent Ans",
-     "quand": "morte en 1431"
+     "quand": "morte en 1431",
+     "verbe": "était"
     },
     {
      "nom": "Philippe le Bon",
      "periode": "Moyen Âge",
      "role": "le duc de Bourgogne qui a réuni une grande partie de nos régions",
      "quand": "15e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Charles le Téméraire",
      "periode": "Moyen Âge",
      "role": "le duc de Bourgogne mort à la bataille de Nancy",
      "quand": "mort en 1477",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Gutenberg",
      "role": "l'inventeur de l'imprimerie à caractères mobiles",
-     "quand": "vers 1450"
+     "quand": "vers 1450",
+     "verbe": "était"
     },
     {
      "nom": "Charles Quint",
      "periode": "Temps modernes",
      "role": "l'empereur né à Gand en 1500",
      "quand": "1500-1558",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Pieter Bruegel l'Ancien",
      "periode": "Temps modernes",
      "role": "le peintre des scènes de la vie des paysans",
      "quand": "16e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Pierre Paul Rubens",
      "periode": "Temps modernes",
      "role": "le célèbre peintre baroque d'Anvers",
      "quand": "1577-1640",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Gérard Mercator",
      "periode": "Temps modernes",
      "role": "le géographe flamand auteur d'une célèbre carte du monde",
      "quand": "16e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "André Vésale",
      "periode": "Temps modernes",
      "role": "le médecin bruxellois, père de l'anatomie moderne",
      "quand": "16e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Galilée",
      "periode": "Temps modernes",
      "role": "le savant italien qui a observé le ciel avec une lunette",
-     "quand": "début du 17e siècle"
+     "quand": "début du 17e siècle",
+     "verbe": "était"
     },
     {
      "nom": "Louis XIV",
      "periode": "Temps modernes",
      "role": "le roi de France surnommé le Roi-Soleil",
-     "quand": "roi de 1643 à 1715"
+     "quand": "roi de 1643 à 1715",
+     "verbe": "était"
     },
     {
      "nom": "Napoléon Ier",
      "periode": "Époque contemporaine",
      "role": "l'empereur des Français vaincu à Waterloo",
-     "quand": "empereur de 1804 à 1815"
+     "quand": "empereur de 1804 à 1815",
+     "verbe": "était"
     },
     {
      "nom": "Léopold Ier",
      "periode": "Époque contemporaine",
      "role": "le premier roi des Belges",
      "quand": "roi de 1831 à 1865",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Léopold II",
      "periode": "Époque contemporaine",
      "role": "le roi des Belges propriétaire de l'État indépendant du Congo",
      "quand": "roi de 1865 à 1909",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Albert Ier",
      "periode": "Époque contemporaine",
      "role": "le « Roi-Chevalier » de la Première Guerre mondiale",
      "quand": "roi de 1909 à 1934",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
-     "nom": "Baudouin",
+     "nom": "le roi Baudouin",
      "periode": "Époque contemporaine",
      "role": "le roi des Belges au moment de l'indépendance du Congo",
      "quand": "roi de 1951 à 1993",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Gabrielle Petit",
      "periode": "Époque contemporaine",
      "role": "la résistante belge fusillée en 1916",
      "quand": "1893-1916",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "John Cockerill",
      "periode": "Époque contemporaine",
      "role": "l'industriel qui a fondé de grandes usines à Seraing",
      "quand": "19e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Adolphe Sax",
      "periode": "Époque contemporaine",
      "role": "l'inventeur belge du saxophone",
      "quand": "19e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Zénobe Gramme",
      "periode": "Époque contemporaine",
      "role": "l'inventeur belge de la dynamo",
      "quand": "19e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Ernest Solvay",
      "periode": "Époque contemporaine",
      "role": "le chimiste et industriel belge qui a inventé un procédé pour fabriquer la soude",
      "quand": "19e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Louis Braille",
      "periode": "Époque contemporaine",
      "role": "l'inventeur de l'écriture en relief pour les aveugles",
-     "quand": "19e siècle"
+     "quand": "19e siècle",
+     "verbe": "était"
     },
     {
      "nom": "Louis Pasteur",
      "periode": "Époque contemporaine",
      "role": "le savant qui a mis au point le vaccin contre la rage",
-     "quand": "19e siècle"
+     "quand": "19e siècle",
+     "verbe": "était"
     },
     {
      "nom": "Marie Curie",
      "periode": "Époque contemporaine",
      "role": "la scientifique qui a découvert le radium",
-     "quand": "vers 1900"
+     "quand": "vers 1900",
+     "verbe": "était"
     },
     {
      "nom": "Victor Horta",
      "periode": "Époque contemporaine",
      "role": "l'architecte belge de l'Art nouveau",
      "quand": "fin du 19e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Hergé",
      "periode": "Époque contemporaine",
      "role": "le dessinateur belge qui a créé Tintin",
      "quand": "20e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "René Magritte",
      "periode": "Époque contemporaine",
      "role": "le peintre surréaliste belge",
      "quand": "20e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Georges Lemaître",
      "periode": "Époque contemporaine",
      "role": "le prêtre et astronome belge à l'origine de la théorie du Big Bang",
      "quand": "20e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Anne Frank",
      "periode": "Époque contemporaine",
      "role": "la jeune fille juive qui a écrit son journal pendant la Seconde Guerre mondiale",
-     "quand": "1929-1945"
+     "quand": "1929-1945",
+     "verbe": "était"
     },
     {
      "nom": "Neil Armstrong",
      "periode": "Époque contemporaine",
      "role": "le premier homme à avoir marché sur la Lune",
-     "quand": "1969"
+     "quand": "1969",
+     "verbe": "était"
     },
     {
      "nom": "Eddy Merckx",
      "periode": "Époque contemporaine",
      "role": "le coureur cycliste belge cinq fois vainqueur du Tour de France",
      "quand": "20e siècle",
-     "belgique": true
+     "belgique": true,
+     "verbe": "est"
     },
     {
      "nom": "Toutânkhamon",
      "periode": "Antiquité",
      "role": "le jeune pharaon célèbre pour son masque en or",
-     "quand": "vers 1330 av. J.-C."
+     "quand": "vers 1330 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Alexandre le Grand",
      "periode": "Antiquité",
      "role": "le roi de Macédoine qui a conquis un immense empire jusqu'en Inde",
-     "quand": "mort en 323 av. J.-C."
+     "quand": "mort en 323 av. J.-C.",
+     "verbe": "était"
     },
     {
      "nom": "Martin Luther",
      "periode": "Temps modernes",
      "role": "le moine allemand à l'origine de la Réforme protestante",
-     "quand": "16e siècle"
+     "quand": "16e siècle",
+     "verbe": "était"
     },
     {
      "nom": "Magellan",
      "periode": "Temps modernes",
      "role": "le navigateur dont l'expédition a fait le premier tour du monde",
-     "quand": "départ en 1519"
+     "quand": "départ en 1519",
+     "verbe": "était"
     },
     {
      "nom": "Marie-Thérèse d'Autriche",
      "periode": "Temps modernes",
      "role": "l'impératrice qui a régné sur nos régions au 18e siècle",
      "quand": "1740-1780",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
      "nom": "Léopold III",
      "periode": "Époque contemporaine",
      "role": "le roi des Belges pendant la Seconde Guerre mondiale",
      "quand": "roi de 1934 à 1951",
-     "belgique": true
+     "belgique": true,
+     "verbe": "était"
     },
     {
-     "nom": "Albert II",
+     "nom": "le roi Albert II",
      "periode": "Époque contemporaine",
      "role": "le frère et successeur du roi Baudouin",
      "quand": "roi de 1993 à 2013",
-     "belgique": true
+     "belgique": true,
+     "verbe": "est"
     },
     {
-     "nom": "Philippe",
+     "nom": "le roi Philippe",
      "periode": "Époque contemporaine",
      "role": "le roi des Belges en 2026",
      "quand": "roi depuis 2013",
-     "belgique": true
+     "belgique": true,
+     "verbe": "est"
     },
     {
      "nom": "Nelson Mandela",
      "periode": "Époque contemporaine",
      "role": "le président sud-africain qui a lutté contre l'apartheid",
-     "quand": "20e siècle"
+     "quand": "20e siècle",
+     "verbe": "était"
     }
    ]
   },
@@ -1447,7 +1497,7 @@
      "sujet": "la Préhistoire"
     },
     {
-     "nom": "une épée de chevalier exposée dans un musée",
+     "nom": "une épée de chevalier du 13e siècle retrouvée lors de fouilles",
      "nature": "matérielle",
      "type": "une arme",
      "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
@@ -1527,7 +1577,7 @@
      "sujet": "les traditions"
     },
     {
-     "nom": "une affiche collée sur les murs de Bruxelles pendant la Première Guerre mondiale",
+     "nom": "une affiche illustrée (dessin d'un soldat) de la Première Guerre mondiale",
      "nature": "iconographique",
      "type": "une affiche",
      "epoque": "Oui, c'est une trace laissée à l'époque (source d'époque)",
@@ -3573,7 +3623,7 @@
      "nom": "l'Atlas",
      "type": "une chaîne de montagnes",
      "continent": "Afrique",
-     "info": "On la trouve notamment au Maroc.",
+     "info": "On le trouve notamment au Maroc.",
      "genre": "élément"
     },
     {
