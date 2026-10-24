@@ -246,8 +246,9 @@
    "id": "gis-2",
    "page": 26,
    "titre": "Carte des principaux gisements",
-   "fichier": "assets/2019/pdf26.webp",
-   "alt": "Charbon, cuivre, diamant, fer, or, uranium dans le monde."
+   "fichier": "assets/2019/pdf26-27.webp",
+   "alt": "Carte du monde des principaux gisements : charbon, cuivre, diamant, fer, or, uranium (pages 26 et 27 réunies).",
+   "pageFin": 27
   },
   {
    "id": "ue-1",
@@ -267,8 +268,9 @@
    "id": "europe",
    "page": 30,
    "titre": "L'Europe politique actuelle",
-   "fichier": "assets/2019/pdf30.webp",
-   "alt": "Carte des pays d'Europe."
+   "fichier": "assets/2019/pdf30-31.webp",
+   "alt": "Carte de tous les pays d'Europe avec leurs capitales (pages 30 et 31 réunies).",
+   "pageFin": 31
   },
   {
    "id": "terrils",
@@ -954,6 +956,69 @@
    "titre": "Un quadrillage",
    "fichier": "assets/2019/liv3-p21.webp",
    "alt": "Quadrillage vide de 15 colonnes (A à O) et 15 lignes (1 à 15), avec les cases à noircir : (J,4), (M,5), (N,8), (M,11), (J,12)."
+  },
+  {
+   "id": "liv7-p05",
+   "source": "livret",
+   "livret": 7,
+   "page": 5,
+   "titre": "Un carnet, un champ, un matelas",
+   "fichier": "assets/2019/liv7-p05.webp",
+   "alt": "Trois photos avec leurs dimensions sans unité : un carnet de 200 sur 140, un champ de 200 sur 140, un matelas de 200 sur 140."
+  },
+  {
+   "id": "liv7-p07",
+   "source": "livret",
+   "livret": 7,
+   "page": 7,
+   "titre": "L'échelle repliée",
+   "fichier": "assets/2019/liv7-p07.webp",
+   "alt": "Photo de l'échelle repliée."
+  },
+  {
+   "id": "liv7-p13",
+   "source": "livret",
+   "livret": 7,
+   "page": 13,
+   "titre": "Calendriers de juin et juillet 2019",
+   "fichier": "assets/2019/liv7-p13.webp",
+   "alt": "Le Tour de France se déroulera du 6 au 28 juillet 2019. Calendriers de juin 2019 (le 1er est un samedi, le dimanche 23 est grisé) et de juillet 2019 (le 1er est un lundi, le 31 un mercredi)."
+  },
+  {
+   "id": "liv5-p08",
+   "source": "livret",
+   "livret": 5,
+   "page": 8,
+   "titre": "Le tableau des attributs",
+   "fichier": "assets/2019/liv5-p08.webp",
+   "alt": "Photo d'un triton et tableau : yeux et bouche, squelette interne d'os, 4 pattes pour les deux ; peau nue et 4 doigts aux pattes antérieures pour le triton ; écailles et 5 doigts aux pattes antérieures pour le lézard."
+  },
+  {
+   "id": "liv9-p08",
+   "source": "livret",
+   "livret": 9,
+   "page": 8,
+   "titre": "Cartes de Belgique (1)",
+   "fichier": "assets/2019/liv9-p08.webp",
+   "alt": "Deux cartes : « Belgique - Bassins hydrographiques » et « Belgique - Relief »."
+  },
+  {
+   "id": "liv9-p09",
+   "source": "livret",
+   "livret": 9,
+   "page": 9,
+   "titre": "Cartes de Belgique (2)",
+   "fichier": "assets/2019/liv9-p09.webp",
+   "alt": "Deux cartes : « Belgique - Régions naturelles » et « Belgique - Quantités de précipitations annuelles moyennes »."
+  },
+  {
+   "id": "liv9-p18",
+   "source": "livret",
+   "livret": 9,
+   "page": 18,
+   "titre": "Trois bateaux sur une ligne du temps",
+   "fichier": "assets/2019/liv9-p18.webp",
+   "alt": "Ligne du temps avec trois photos classées chronologiquement : reconstitution d'un bateau romain datant de la période 160-180 après J.-C. ; caravelle de Christophe Colomb, fin du 15e siècle ; péniche en 2017."
   }
  ],
  "questions": [
@@ -1058,7 +1123,7 @@
    "numero": "4",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Coche la phrase qui prouve que l'histoire est imaginaire.",
+   "enonce": "Choisis la phrase qui prouve que l'histoire est imaginaire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reel-imaginaire",
@@ -1080,7 +1145,7 @@
    "numero": "5",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Coche l'idée qui se dégage de cette histoire.",
+   "enonce": "Choisis l'idée qui se dégage de cette histoire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1183,7 +1248,7 @@
    "numero": "9b",
    "domaine": "fr.ecouter",
    "type": "texte_court",
-   "enonce": "À qui le narrateur s'adresse-t-il quand il dit : « J'ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler » ?",
+   "enonce": "« J'ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler. Mais ils ne parlent que très rarement, et quand ils sont bien sûrs que nul ne les écoute. » À qui s'adresse la personne qui dit ces phrases ? Écris-le.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-narrateur",
@@ -1442,13 +1507,16 @@
    "numero": "10c",
    "domaine": "ma.geometrie",
    "type": "numerique",
-   "enonce": "Une vitre est un quadrilatère dont trois angles mesurent 90°, 90° et 60°. Quelle est l'amplitude du quatrième angle (en degrés) ?",
+   "enonce": "Observe la photo et le plan du vitrage (livret, page 13). Observe la vitre B. Quelle est l'amplitude du quatrième angle ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-angles",
    "reponse": 120,
    "unite": "°",
-   "explication": "La somme des angles d'un quadrilatère vaut 360° : 360 − 90 − 90 − 60 = 120°."
+   "explication": "La somme des angles d'un quadrilatère vaut 360° : 360 − 90 − 90 − 60 = 120°.",
+   "documents": [
+    "liv3-p13"
+   ]
   },
   {
    "id": "ceb-2019-l3-q20",
@@ -1456,11 +1524,11 @@
    "numero": "20",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Qui suis-je ?",
+   "enonce": "Qui suis-je ? Écris ta réponse, sois précis(e).",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
-   "texte": "Quadrilatère aux côtés parallèles deux à deux et tous isométriques, aux angles de même amplitude : un {1}  ·  Polygone à 3 côtés isométriques et 3 angles égaux : un {2}  ·  Polygone régulier à 6 côtés : un {3}",
+   "texte": "Je suis un quadrilatère. Mes côtés sont parallèles deux à deux ET sont tous isométriques. Mes angles ont tous la même amplitude. Je suis un {1}\nJe suis un polygone à 3 côtés. Mes côtés sont isométriques. Mes angles ont tous la même amplitude. Je suis un {2}\nJe suis un polygone régulier à 6 côtés. Je suis un {3}",
    "reponse": [
     [
      "carré",
@@ -1483,7 +1551,7 @@
    "numero": "17c",
    "domaine": "ma.geometrie",
    "type": "texte_court",
-   "enonce": "Dans un quadrillage, on noircit les cases (J,4), (M,5), (N,8), (M,11) et (J,12). Un cercle passe par ces 5 cases. Dans quelle case se trouve son centre ? (lettre, nombre)",
+   "enonce": "Dans le quadrillage (livret, page 21), on noircit les 5 cases suivantes : (J,4) – (M,5) – (N,8) – (M,11) – (J,12). On trace ensuite un cercle qui passe obligatoirement par les 5 cases noircies, en plaçant la pointe du compas dans une case, pas sur une ligne. Écris la lettre et le numéro de la case où se trouve le centre. (À l'épreuve, il fallait noircir les cases et tracer le cercle soi-même.)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-cercle",
@@ -2189,7 +2257,7 @@
    "numero": "3a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 42 × 99,2, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 14 × 99,2, c'est, à peu près : 100 – 150 – 140 – 90 – 1 400 » ; la réponse entourée est 1 400. À toi. Choisis le nombre qui correspond à peu près au résultat du calcul. Tu dois estimer. 42 × 99,2, c'est, à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -2209,7 +2277,7 @@
    "numero": "3b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 52 : 10,5, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 14 × 99,2, c'est, à peu près : 100 – 150 – 140 – 90 – 1 400 » ; la réponse entourée est 1 400. À toi. Choisis le nombre qui correspond à peu près au résultat du calcul. Tu dois estimer. 52 : 10,5, c'est, à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -2229,7 +2297,7 @@
    "numero": "3c",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 40 × 0,801, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 14 × 99,2, c'est, à peu près : 100 – 150 – 140 – 90 – 1 400 » ; la réponse entourée est 1 400. À toi. Choisis le nombre qui correspond à peu près au résultat du calcul. Tu dois estimer. 40 × 0,801, c'est, à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -2304,7 +2372,7 @@
    "points": 6,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "7,1 × 8,71 = 8,71 × {1}  ·  {2} × 100 = 2 × 27 × 50  ·  2,8 × 99 = (2,8 × 100) − {3}  ·  24,2 × 340 = {4} × 34  ·  37 × 105 = (37 × 100) + (37 × {5})  ·  44 : 1,2 = {6} : 12",
+   "texte": "7,1 × 8,71 = 8,71 × {1}  ·  {2} × 100 = 2 × 27 × 50  ·  2,8 × 99 = (2,8 × 100) − {3}  ·  24,2 × 340 = {4} × 34  ·  37 × 105 = (37 × 100) + ({5} × {6})  ·  44 : 1,2 = {7} : 12",
    "reponse": [
     [
      "7,1"
@@ -2319,13 +2387,40 @@
      "242"
     ],
     [
+     "37",
      "5"
+    ],
+    [
+     "5",
+     "37"
     ],
     [
      "440"
     ]
    ],
-   "explication": "Commutativité ; 2 × 50 = 100 ; 99 = 100 − 1 ; × 10 et : 10 ; 105 = 100 + 5 ; on multiplie les deux termes par 10."
+   "explication": "Commutativité ; 2 × 50 = 100 ; 99 = 100 − 1 ; × 10 et : 10 ; 105 = 100 + 5 ; on multiplie les deux termes par 10.",
+   "groupes": [
+    [
+     0
+    ],
+    [
+     1
+    ],
+    [
+     2
+    ],
+    [
+     3
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6
+    ]
+   ],
+   "differentes": true
   },
   {
    "id": "ceb-2019-l4-q11a",
@@ -2456,7 +2551,7 @@
    "numero": "14a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Un pack contient 6 bouteilles de 1,5 l. On range 36 packs. Quel calcul donne le nombre de bouteilles ?",
+   "enonce": "Voici un pack de 6 bouteilles d'eau. Les bouteilles de ce pack contiennent 1,5 litre chacune. On range 36 de ces packs dans le rayon d'un grand magasin. Choisis le calcul qui te permet de savoir combien de bouteilles doivent être rangées.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -2477,7 +2572,7 @@
    "numero": "14b",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "Combien de litres contient un pack de 6 bouteilles de 1,5 l ?",
+   "enonce": "Voici un pack de 6 bouteilles d'eau. Les bouteilles de ce pack contiennent 1,5 litre chacune. Combien de litres contient ce pack de bouteilles d'eau ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -2519,14 +2614,14 @@
    "numero": "16",
    "domaine": "ma.arithmetique",
    "type": "grille",
-   "enonce": "Peut-on placer 500 juste au milieu de ces segments ?",
+   "enonce": "Observe l'exemple : peut-on placer le nombre 500 juste au milieu du segment qui va de 400 à 600 ? Réponse : oui. À toi. Pourrait-on placer le nombre 500 juste au milieu de ces segments ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-droite-graduee",
    "lignes": [
-    "de 400 à 600",
-    "de 125 à 375",
-    "de 250 à 750"
+    "a) de 250 à 750",
+    "b) de 125 à 375",
+    "c) de 380 à 620"
    ],
    "colonnes": [
     "Oui",
@@ -2601,19 +2696,32 @@
    "livret": 4,
    "numero": "20",
    "domaine": "ma.arithmetique",
-   "type": "qcm",
-   "enonce": "Où placer les virgules pour obtenir 9664 + 658 + 4836 + 732 = 284 ?",
+   "type": "trous",
+   "enonce": "Place une virgule dans chacun des termes de l'addition pour obtenir 284 : 9664 + 658 + 4836 + 732 = 284. Récris chaque terme avec sa virgule.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-decimaux",
-   "choix": [
-    "96,64 + 65,8 + 48,36 + 73,2",
-    "966,4 + 6,58 + 483,6 + 7,32",
-    "9,664 + 65,8 + 4,836 + 73,2",
-    "96,64 + 6,58 + 48,36 + 73,2"
+   "reponse": [
+    [
+     "96,64",
+     "96.64"
+    ],
+    [
+     "65,8",
+     "65.8"
+    ],
+    [
+     "48,36",
+     "48.36"
+    ],
+    [
+     "73,2",
+     "73.2"
+    ]
    ],
-   "reponse": 0,
-   "explication": "96,64 + 48,36 = 145 et 65,8 + 73,2 = 139 ; 145 + 139 = 284."
+   "explication": "96,64 + 48,36 = 145 et 65,8 + 73,2 = 139 ; 145 + 139 = 284.",
+   "texte": "{1} + {2} + {3} + {4} = 284",
+   "toutOuRien": true
   },
   {
    "id": "ceb-2019-l4-q22a",
@@ -2679,16 +2787,16 @@
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "26 × 24 = {1}  ·  26 × 0,48 = {2}  ·  2,6 × 48 = {3}",
+   "texte": "2,6 × 48 = {1}  ·  26 × 24 = {2}  ·  26 × 0,48 = {3}",
    "reponse": [
+    [
+     "124,8"
+    ],
     [
      "624"
     ],
     [
      "12,48"
-    ],
-    [
-     "124,8"
     ]
    ],
    "explication": "24 est la moitié de 48 ; 0,48 = 48 : 100 ; 2,6 = 26 : 10."
@@ -2848,18 +2956,22 @@
    "numero": "7",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Observe l'exemple du livret (page 6) : on a décomposé le nombre 18 en parts égales. Complète le tableau suivant selon le même principe (la ligne B est donnée : 4,8 dans l'une de ses deux cases). Les lignes sont repérées par les lettres A à F : écris le nombre qui va dans chaque case de la ligne.",
+   "enonce": "Observe l'exemple du livret (page 6) : on a décomposé le nombre 18 en parts égales. Complète chaque case du tableau selon le même principe. Les lignes sont repérées par les lettres A à F (dans la ligne B, une des deux cases contient déjà 4,8) : écris le nombre qui va dans chaque case de la ligne.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "documents": [
     "liv4-p06"
    ],
-   "texte": "Ligne A : {1}\nLigne C : {2}\nLigne D : {3}\nLigne E : {4}\nLigne F : {5}",
+   "texte": "Ligne A : {1}\nLigne B : {2}\nLigne C : {3}\nLigne D : {4}\nLigne E : {5}\nLigne F : {6}",
    "reponse": [
     [
      "9,6",
      "9.6"
+    ],
+    [
+     "4,8",
+     "4.8"
     ],
     [
      "2,4",
@@ -3072,27 +3184,30 @@
    "numero": "1b",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Quel appareil du corps humain est concerné ?",
+   "enonce": "Observe les trois schémas du livret (page 2), repérés par les lettres A, B et C. Quel schéma peut expliquer les situations suivantes ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "lignes": [
-    "Beaucoup d'élèves sont enrhumés et toussent.",
-    "Un élève a vomi sa soupe.",
-    "Un élève s'est fracturé la clavicule."
+    "Il a fait froid la semaine passée, beaucoup d'élèves sont enrhumés et toussent.",
+    "Un élève a été malade à midi, il a vomi sa soupe.",
+    "Un élève s'est blessé à la gymnastique, il souffre d'une fracture de la clavicule."
    ],
    "colonnes": [
-    "Respiratoire",
-    "Digestif",
-    "Locomoteur",
-    "Circulatoire"
+    "Schéma A",
+    "Schéma B",
+    "Schéma C",
+    "Aucun des trois"
    ],
    "reponse": [
-    0,
     1,
-    2
+    2,
+    3
    ],
-   "explication": "Toux : respiration. Vomissement : digestion. Os cassé : squelette (locomoteur)."
+   "explication": "Toux : respiration. Vomissement : digestion. Os cassé : squelette (locomoteur).",
+   "documents": [
+    "liv5-p02"
+   ]
   },
   {
    "id": "ceb-2019-l5-q2b",
@@ -3100,11 +3215,11 @@
    "numero": "2b",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "La fleur attire les insectes en stimulant leurs sens.",
+   "enonce": "Pour être fécondée, la fleur attire les insectes. Pour y parvenir, elle stimule leurs sens. Complète avec les mots qui conviennent. Choisis dans les listes suivantes.\nStimulus* : gustatif – visuel – sonore – olfactif\nSens : le toucher – l'odorat – la vue – le gout – l'ouïe\n* Stimulus : élément capable de provoquer la réaction d'un organisme vivant.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-fleur",
-   "texte": "Son nectar est sucré : stimulus {1}, sens : {2}  ·  Elle sent bon : stimulus {3}, sens : {4}  ·  Elle est colorée : stimulus {5}, sens : {6}",
+   "texte": "Son nectar est sucré, c'est un stimulus {1}. Le sens visé est {2}.\nElle sent bon, c'est un stimulus {3}. Le sens visé est {4}.\nElle est colorée, c'est un stimulus {5}. Le sens visé est {6}.",
    "reponse": [
     [
      "gustatif"
@@ -3152,12 +3267,13 @@
    "numero": "3a",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Quels attributs différencient le triton (trouvé près de la mare) du lézard ?",
+   "enonce": "Des élèves ont trouvé un animal près de la mare. Certains pensent qu'il s'agit d'un triton. D'autres pensent qu'il s'agit d'un lézard. Ils observent des photos de tritons et de lézards puis ils complètent le tableau (livret, page 8). Ce tableau reprend une série d'attributs* (marqués par des croix) qui caractérisent le triton et le lézard. D'après ce tableau, l'animal trouvé près de la mare est un triton et non un lézard. Choisis les deux attributs* qui ont permis de différencier le triton du lézard.\n* Attribut : caractère visible d'un être vivant (plumes, squelette d'os…).",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
-    "classif"
+    "classif",
+    "liv5-p08"
    ],
    "choix": [
     "Un squelette interne d'os",
@@ -3171,7 +3287,11 @@
     4
    ],
    "explication": "Le triton a une peau nue et 4 doigts aux pattes antérieures ; le lézard a des écailles et 5 doigts.",
-   "parReponse": true
+   "parReponse": true,
+   "aussiAcceptes": [
+    3
+   ],
+   "nbAChoisir": 2
   },
   {
    "id": "ceb-2019-l5-q3c",
@@ -3179,16 +3299,16 @@
    "numero": "3c",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "D'après le tableau, la salamandre (yeux et bouche, squelette interne d'os, 4 membres, peau nue, 4 doigts aux pattes antérieures) est plus proche…",
+   "enonce": "Observe le tableau du livret (page 9). D'après ce tableau, la salamandre est plus proche du…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
-    "classif"
+    "liv5-p09"
    ],
    "choix": [
-    "du triton",
-    "du lézard"
+    "triton.",
+    "lézard."
    ],
    "reponse": 0,
    "explication": "Comme le triton, la salamandre a la peau nue et 4 doigts aux pattes antérieures (le lézard a des écailles et 5 doigts). Écris ensuite les deux attributs qui justifient ta réponse."
@@ -3199,12 +3319,12 @@
    "numero": "3c (justification)",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Tu as répondu à la question « D'après le tableau, la salamandre est plus proche du triton ou du lézard ? ». Écris les deux attributs qui justifient ta réponse.",
+   "enonce": "Observe le tableau du livret (page 9). D'après ce tableau, la salamandre est-elle plus proche du triton ou du lézard ? Écris les deux attributs qui justifient ta réponse.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
-    "classif"
+    "liv5-p09"
    ],
    "differentes": true,
    "souple": true,
@@ -3241,7 +3361,7 @@
    "numero": "4c",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "On verse 50 cm³ d'eau sur trois terres. Argileuse : 40 cm³ recueillis en 9 min ; tourbée : 47 cm³ en 2 min ; sablonneuse : 49 cm³ en 2 min. Quelle terre est la plus perméable ?",
+   "enonce": "Voici une expérience réalisée pour mesurer le temps d'infiltration de l'eau et la quantité d'eau retenue par la terre. On note les résultats dans le tableau suivant.\nVolume d'eau versé dans l'entonnoir, en cm³ : terre argileuse 50 – terre tourbée 50 – terre sablonneuse 50.\nVolume d'eau collecté dans le récipient, en cm³ : terre argileuse 40 – terre tourbée 47 – terre sablonneuse 49.\nDurée de l'écoulement de l'eau, en minutes : terre argileuse 9 – terre tourbée 2 – terre sablonneuse 2.\nQuelle terre est la plus perméable* à l'eau ?\n* Perméable : qui se laisse traverser ou pénétrer par d'autres corps.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -3259,13 +3379,13 @@
    "numero": "4d",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "On verse 50 cm³ d'eau sur trois terres et on mesure l'eau recueillie. Terre argileuse : 40 cm³ en 9 min ; terre tourbée : 47 cm³ en 2 min ; terre sablonneuse : 49 cm³ en 2 min. Ces affirmations sont-elles vraies ou fausses ?",
+   "enonce": "Voici une expérience réalisée pour mesurer le temps d'infiltration de l'eau et la quantité d'eau retenue par la terre. On note les résultats dans le tableau suivant.\nVolume d'eau versé dans l'entonnoir, en cm³ : terre argileuse 50 – terre tourbée 50 – terre sablonneuse 50.\nVolume d'eau collecté dans le récipient, en cm³ : terre argileuse 40 – terre tourbée 47 – terre sablonneuse 49.\nDurée de l'écoulement de l'eau, en minutes : terre argileuse 9 – terre tourbée 2 – terre sablonneuse 2.\nEn utilisant le tableau des résultats, dis si chaque affirmation est vraie ou fausse.\n* Perméable : qui se laisse traverser ou pénétrer par d'autres corps.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
    "lignes": [
     "L'eau prend plus de temps pour passer dans une terre sablonneuse que dans une terre argileuse.",
-    "La terre tourbée est plus perméable que la terre argileuse.",
+    "La terre tourbée est plus perméable* à l'eau que la terre argileuse.",
     "L'eau prend plus de temps pour passer dans une terre sablonneuse que dans une terre tourbée."
    ],
    "colonnes": [
@@ -3285,7 +3405,7 @@
    "numero": "5b",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Une salade fraiche posée sur une balance est plus légère le lendemain. Que s'est-il passé ?",
+   "enonce": "L'eau peut changer d'état à tout moment, à certaines conditions. Observe l'expérience de la salade posée sur une balance (portfolio, page 6). Que s'est-il passé ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -3323,11 +3443,13 @@
    "numero": "6a",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Dispositif 3 : bouteille A sur une table à 90 cm, bouteille D sur une armoire à 200 cm. Quelle hypothèse vérifie-t-on ? L'eau s'évapore plus vite quand…",
+   "enonce": "Observe les dispositifs expérimentaux (portfolio, pages 7 à 9). Pour le dispositif expérimental 3, choisis l'hypothèse que l'on a voulu vérifier. L'eau s'évapore plus vite quand…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
+    "evap-1",
+    "evap-2",
     "evap-3"
    ],
    "choix": [
@@ -3346,11 +3468,13 @@
    "numero": "6c",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Dispositif 4 : A sur un radiateur, E (autre forme) sur une table. Ce dispositif ne convient pas parce qu'il fait varier…",
+   "enonce": "Observe les dispositifs expérimentaux (portfolio, pages 7 à 9), en particulier le dispositif 4. Le dispositif expérimental 4 ne convient pas parce qu'il fait varier…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
+    "evap-1",
+    "evap-2",
     "evap-3"
    ],
    "choix": [
@@ -3368,7 +3492,7 @@
    "numero": "6d",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "La serviette étendue sur un mur au soleil sèche le plus vite. Pourquoi ? L'eau s'évapore plus vite…",
+   "enonce": "Au retour de la piscine, 4 élèves proposent des manières différentes de faire sécher leur serviette de bain (les serviettes sont toutes identiques).\nProposition 1 : mettre la serviette en boule à l'ombre sous un arbre.\nProposition 2 : étendre la serviette à l'ombre sur une branche d'arbre.\nProposition 3 : mettre la serviette en boule sur un mur au soleil.\nProposition 4 : étendre la serviette sur un mur au soleil.\nAprès expérimentation, c'est la proposition 4 qui s'avère être la plus efficace pour sécher une serviette. Pourquoi ? Choisis la meilleure proposition. L'eau s'évapore plus vite…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -3419,7 +3543,7 @@
    "numero": "8a",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Quelle expérience teste chaque variable qui influence l'équilibre de la grue ?",
+   "enonce": "Observe les expériences (portfolio, pages 12 à 15). Quelles expériences les élèves ont-ils réalisées pour identifier les variables qui influencent l'équilibre de leur grue ? Pour chaque variable, choisis la case qui convient.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
@@ -3437,7 +3561,7 @@
     "Expérience 2",
     "Expérience 3",
     "Expérience 4",
-    "Aucune"
+    "Aucune des expériences"
    ],
    "reponse": [
     3,
@@ -3452,7 +3576,7 @@
    "numero": "8b",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Que permettent de dire les quatre expériences ?",
+   "enonce": "Observe les expériences (portfolio, pages 12 à 15). Après ces expériences, les élèves ont émis deux nouvelles hypothèses concernant l'équilibre de leur grue. Pour chaque hypothèse, choisis la proposition correcte.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
@@ -3461,13 +3585,13 @@
     "grue-3"
    ],
    "lignes": [
-    "Hypothèse 1 : si on augmente suffisamment la surface de base, la grue pourra tenir en équilibre.",
-    "Hypothèse 2 : si on augmente la hauteur de la tour, la grue pourra tenir en équilibre."
+    "Hypothèse 1 : Si on augmente suffisamment la surface de base, la grue pourra tenir en équilibre.",
+    "Hypothèse 2 : Si on augmente la hauteur de la tour, la grue pourra tenir en équilibre."
    ],
    "colonnes": [
-    "Hypothèse validée",
-    "Hypothèse non valide",
-    "Aucune expérience ne permet de vérifier"
+    "Une des quatre expériences permet de dire que cette hypothèse est valide.",
+    "Une des quatre expériences permet de dire que cette hypothèse n'est pas valide.",
+    "Aucune des quatre expériences ne permet de vérifier cette hypothèse."
    ],
    "reponse": [
     0,
@@ -3481,7 +3605,7 @@
    "numero": "8c",
    "domaine": "sc.energie",
    "type": "trous",
-   "enonce": "Pour maintenir la grue en équilibre, on peut…",
+   "enonce": "Complète les propositions suivantes par le mot « augmenter » ou le mot « diminuer ». D'après les expériences (portfolio, pages 12 à 15), pour maintenir la grue en équilibre, on peut :",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
@@ -3489,7 +3613,7 @@
     "grue-2",
     "grue-3"
    ],
-   "texte": "{1} la surface de la base de la tour  ·  {2} la longueur de la flèche",
+   "texte": "{1} la surface de la base de la tour.  ·  {2} la longueur de la flèche.",
    "reponse": [
     [
      "augmenter"
@@ -3535,68 +3659,61 @@
    "livret": 5,
    "numero": "1a",
    "domaine": "sc.vivant",
-   "type": "grille",
-   "enonce": "Observe les trois schémas du livret (page 2), repérés par les lettres A, B et C. Pour chaque schéma, choisis le nom de l'appareil du corps humain qui complète l'étiquette « L'appareil … ».",
+   "type": "trous",
+   "enonce": "Observe les trois schémas du livret (page 2), repérés par les lettres A, B et C. Écris le nom de chaque appareil du corps humain.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "documents": [
     "liv5-p02"
    ],
-   "lignes": [
-    "Schéma A",
-    "Schéma B",
-    "Schéma C"
-   ],
-   "colonnes": [
-    "Respiratoire",
-    "Digestif",
-    "Locomoteur",
-    "Circulatoire"
-   ],
    "reponse": [
-    3,
-    0,
-    1
+    [
+     "circulatoire"
+    ],
+    [
+     "respiratoire"
+    ],
+    [
+     "digestif"
+    ]
    ],
-   "explication": "A : l'appareil circulatoire (cœur et vaisseaux) ; B : l'appareil respiratoire (poumons) ; C : l'appareil digestif."
+   "explication": "A : l'appareil circulatoire (cœur et vaisseaux) ; B : l'appareil respiratoire (poumons) ; C : l'appareil digestif.",
+   "texte": "Schéma A : l'appareil {1}\nSchéma B : l'appareil {2}\nSchéma C : l'appareil {3}"
   },
   {
    "id": "ceb-2019-l5-q1c",
    "livret": 5,
    "numero": "1c",
    "domaine": "sc.vivant",
-   "type": "grille",
-   "enonce": "Observe le schéma de la page 3 du livret : trois étiquettes vides, numérotées de 1 à 3, sont reliées à un organe par une flèche. Pour chaque étiquette, choisis le nom de l'organe à y écrire.",
+   "type": "trous",
+   "enonce": "Observe le schéma de la page 3 du livret : trois étiquettes vides, numérotées de 1 à 3, sont reliées à un organe par une flèche. Écris le nom des organes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
    "documents": [
     "liv5-p03"
    ],
-   "lignes": [
-    "Étiquette 1",
-    "Étiquette 2",
-    "Étiquette 3"
-   ],
-   "colonnes": [
-    "Œsophage",
-    "Estomac",
-    "Foie",
-    "Intestin grêle",
-    "Gros intestin",
-    "Rectum",
-    "Anus"
-   ],
    "reponse": [
-    0,
-    3,
     [
-     5,
-     6
+     "œsophage",
+     "oesophage",
+     "l'œsophage"
+    ],
+    [
+     "intestin grêle",
+     "intestin grele",
+     "l'intestin grêle"
+    ],
+    [
+     "rectum",
+     "le rectum",
+     "anus",
+     "l'anus"
     ]
    ],
-   "explication": "Étiquette 1 : l'œsophage ; étiquette 2 : l'intestin grêle ; étiquette 3 : le rectum (on accepte aussi l'anus)."
+   "explication": "Étiquette 1 : l'œsophage ; étiquette 2 : l'intestin grêle ; étiquette 3 : le rectum (on accepte aussi l'anus).",
+   "texte": "Étiquette 1 : {1}\nÉtiquette 2 : {2}\nÉtiquette 3 : {3}"
   },
   {
    "id": "ceb-2019-l5-q2a",
@@ -3784,11 +3901,12 @@
    "numero": "4b",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Dans l'expérience réalisée en classe pour illustrer le cycle de l'eau, l'eau s'infiltre à travers un mélange de gravier et de terre, puis est recueillie dans un récipient de récupération. Dans cette expérience, le récipient de récupération représente…",
+   "enonce": "Observe l'expérience réalisée dans une classe pour illustrer le cycle de l'eau (livret, page 12). Dans cette expérience, le récipient de récupération représente…",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
-    "eau-1"
+    "eau-1",
+    "liv5-p12"
    ],
    "fiche": "sc-cycle-eau",
    "choix": [
@@ -3994,7 +4112,7 @@
    ],
    "lignes": [
     "Quels sont les pays où l'on ne bénéficie pas encore de temps de loisir aujourd'hui ?",
-    "Quelles sont les activités de loisir pratiquées collectivement ?"
+    "Quelles sont les activités de loisir qui sont pratiquées collectivement ?"
    ],
    "colonnes": [
     "Oui",
@@ -4065,25 +4183,27 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "L'auteur propose deux significations du mot « loisir ».",
+   "enonce": "L'auteur propose deux significations différentes au mot « loisir ». Écris-les.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "documents": [
     "loisir-2"
    ],
-   "texte": "1. le {1}  ·  2. une {2}",
+   "texte": "1re signification : {1}\n2e signification : {2}",
    "reponse": [
     [
+     "le temps libre",
      "temps libre",
-     "temps dont on peut disposer librement",
-     "le temps dont on peut disposer librement"
+     "le temps dont on peut disposer librement",
+     "temps dont on peut disposer librement"
     ],
     [
+     "une activité de délassement",
+     "l'activité de délassement",
      "activité de délassement",
-     "activite de delassement",
-     "occupations que l'on peut choisir à sa guise",
-     "les occupations que l'on peut choisir à sa guise"
+     "les occupations que l'on peut choisir à sa guise",
+     "occupations que l'on peut choisir à sa guise"
     ]
    ],
    "explication": "« temps libre » ou « activité de délassement ». « Activité » ou « occupation » seuls ne suffisent pas."
@@ -4116,7 +4236,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Quelles activités augmentent avec l'âge (de 11 à 17 ans) ?",
+   "enonce": "Dans le bloc d'idées « Des choix liés à l'âge », l'auteur écrit que les activités de loisir évoluent au fil du temps. Choisis les deux activités qui sont en augmentation avec l'âge.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -4229,7 +4349,7 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Dans « Que signifie le mot \"loisir\" ? », l'intention de l'auteur est de…",
+   "enonce": "Dans le bloc d'idées dont l'intertitre est « Que signifie le mot \"loisir\" ? », l'intention de l'auteur est de…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
@@ -4239,7 +4359,7 @@
    "choix": [
     "persuader le lecteur de l'importance des loisirs.",
     "renseigner le lecteur sur la signification du mot « loisir ».",
-    "raconter ce que font les retraités.",
+    "raconter ce que font les retraités pendant leurs loisirs.",
     "encourager le lecteur à prendre du temps pour ses loisirs."
    ],
    "reponse": 1,
@@ -4251,7 +4371,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« …dans les pays d'Europe tout au moins, la durée du temps de loisir s'est allongée. » Que veut dire « dans les pays d'Europe tout au moins » ?",
+   "enonce": "Dans le bloc d'idées « La conquête du loisir », l'auteur écrit : « C'est seulement au vingtième siècle que, dans les pays d'Europe tout au moins, la durée du temps de loisir des travailleurs s'est allongée […]. » Que veut-il dire en écrivant « dans les pays d'Europe tout au moins » ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -4273,7 +4393,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Certaines de ces pratiques sont en déclin […]. » Explique ce que l'auteur veut dire.",
+   "enonce": "Dans le bloc d'idées « Des choix liés à l'âge », l'auteur écrit : « Certaines de ces pratiques sont en déclin […]. » Explique ce que l'auteur veut dire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -4288,11 +4408,11 @@
    "numero": "13",
    "domaine": "fr.vocabulaire",
    "type": "trous",
-   "enonce": "Transforme le verbe en nom (exemple : la durée s'est allongée → l'allongement de la durée).",
+   "enonce": "Complète en t'aidant de l'exemple. Exemple : « La durée du temps de loisir s'est allongée. » → « L'allongement de la durée du temps de loisir. »",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
-   "texte": "L'inactivité, c'est même nécessaire → la {1} d'être parfois inactif  ·  Les êtres humains ont occupé leur temps → l'{2} du temps de loisir",
+   "texte": "L'inactivité, parfois, c'est même nécessaire. → La {1} d'être parfois inactif.  ·  Les êtres humains ont occupé leur temps de loisir. → L'{2} du temps de loisir par les êtres humains.",
    "reponse": [
     [
      "nécessité",
@@ -4310,11 +4430,11 @@
    "numero": "14",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Écris l'infinitif et le temps des verbes.",
+   "enonce": "Écris l'infinitif et le temps de chacun des verbes soulignés.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
-   "texte": "« Ceux-ci se sont battus » : infinitif {1}, temps : {2}  ·  « ils touchaient leur salaire » : infinitif {3}, temps : {4}",
+   "texte": "« Ceux-ci se sont battus pour obtenir une réduction du temps de travail journalier […]. » (verbe souligné : se sont battus) : infinitif {1}, temps : {2}  ·  « […] c'est-à-dire des périodes de loisir où ils touchaient malgré tout leur salaire. » (verbe souligné : touchaient) : infinitif {3}, temps : {4}",
    "reponse": [
     [
      "se battre"
@@ -4492,7 +4612,7 @@
    "numero": "3",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Complète les dimensions avec l'unité adéquate.",
+   "enonce": "Complète les dimensions avec l'étalon (l'unité de mesure) adéquat.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
@@ -4509,7 +4629,10 @@
      "dam"
     ]
    ],
-   "explication": "Carnet : 14 cm = 140 mm ; matelas : 140 cm ; champ : 140 m."
+   "explication": "Carnet : 14 cm = 140 mm ; matelas : 140 cm ; champ : 140 m.",
+   "documents": [
+    "liv7-p05"
+   ]
   },
   {
    "id": "ceb-2019-l7-q4b",
@@ -4517,17 +4640,21 @@
    "numero": "4b",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Dépliée, une échelle pèse 13,8 kg. Repliée, elle pèse…",
+   "enonce": "Sur l'étiquette de l'échelle dépliée (livret, page 6), on lit : Poids 13,8 kg. Observe la photo de cette même échelle repliée (livret, page 7). Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "choix": [
-    "moins de 13,8 kg.",
-    "toujours 13,8 kg.",
-    "plus de 13,8 kg."
+    "Repliée, l'échelle pèse moins de 13,8 kg.",
+    "Repliée, l'échelle pèse toujours 13,8 kg.",
+    "Repliée, l'échelle pèse plus de 13,8 kg."
    ],
    "reponse": 1,
-   "explication": "La masse ne change pas quand on plie l'échelle."
+   "explication": "La masse ne change pas quand on plie l'échelle.",
+   "documents": [
+    "liv7-p06",
+    "liv7-p07"
+   ]
   },
   {
    "id": "ceb-2019-l7-q7a",
@@ -4579,7 +4706,7 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "texte_court",
-   "enonce": "Choux sur 1/6 du potager, carottes sur 1/4, tomates sur 1/3. Quelle fraction du potager sera occupée ?",
+   "enonce": "Un jardinier organise son potager. Il a déjà placé des choux sur 1/6 de la surface. Il va encore planter : des carottes sur 1/4 de la surface ; des tomates sur 1/3 de la surface. Quelle partie (fraction) du potager sera occupée par l'ensemble des plantations ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-addition",
@@ -4596,13 +4723,16 @@
    "numero": "11a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Le Tour de France 2019 se termine le dimanche 28 juillet. À partir du dimanche 23 juin, combien de semaines entières nous en séparent ?",
+   "enonce": "Le Tour de France débutera dans quelques jours. Il se déroulera du 6 juillet au 28 juillet 2019. Observe les calendriers de juin et de juillet 2019 (livret, page 13). À partir du 23 juin, combien de semaines entières nous séparent de la fin du Tour de France ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "reponse": 5,
    "unite": "semaines",
-   "explication": "Du 23 juin au 28 juillet : 35 jours = 5 semaines."
+   "explication": "Du 23 juin au 28 juillet : 35 jours = 5 semaines.",
+   "documents": [
+    "liv7-p13"
+   ]
   },
   {
    "id": "ceb-2019-l7-q11b",
@@ -4610,13 +4740,16 @@
    "numero": "11b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Le Tour de France 2019 se déroule du 6 au 28 juillet. Combien de jours dure-t-il ?",
+   "enonce": "Le Tour de France débutera dans quelques jours. Il se déroulera du 6 juillet au 28 juillet 2019. Observe les calendriers de juin et de juillet 2019 (livret, page 13). Combien de jours durera le Tour de France 2019 ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "reponse": 23,
    "unite": "jours",
-   "explication": "28 − 6 + 1 = 23 jours (on compte le premier et le dernier jour)."
+   "explication": "28 − 6 + 1 = 23 jours (on compte le premier et le dernier jour).",
+   "documents": [
+    "liv7-p13"
+   ]
   },
   {
    "id": "ceb-2019-l7-q11c",
@@ -4624,18 +4757,24 @@
    "numero": "11c",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Le 1er juillet 2019 est un lundi. Quel jour est le 28 juillet 2019 ?",
+   "enonce": "Le Tour de France débutera dans quelques jours. Il se déroulera du 6 juillet au 28 juillet 2019. Observe les calendriers de juin et de juillet 2019 (livret, page 13). Choisis le nom du jour qui correspond à la fin du Tour de France 2019.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
    "choix": [
-    "Samedi",
-    "Dimanche",
     "Lundi",
-    "Vendredi"
+    "Mardi",
+    "Mercredi",
+    "Jeudi",
+    "Vendredi",
+    "Samedi",
+    "Dimanche"
    ],
-   "reponse": 1,
-   "explication": "Les lundis : 1, 8, 15, 22, 29. Le 28 est un dimanche."
+   "reponse": 6,
+   "explication": "Les lundis : 1, 8, 15, 22, 29. Le 28 est un dimanche.",
+   "documents": [
+    "liv7-p13"
+   ]
   },
   {
    "id": "ceb-2019-l7-q12",
@@ -4643,7 +4782,7 @@
    "numero": "12",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Eddy Merckx est né le 17/6/1945. Quel âge a-t-il le 20 juin 2019 ?",
+   "enonce": "Pour fêter les 50 ans de la première victoire d'Eddy Merckx, né le 17/6/1945, le départ du Tour de France 2019 aura lieu à Bruxelles. Mais quel âge a Eddy Merckx aujourd'hui (le jour de l'épreuve, le jeudi 20 juin 2019) ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -4657,13 +4796,16 @@
    "numero": "13a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "18e étape : Embrun (785 m), cols de Vars (2 109 m), d'Izoard (2 360 m), du Galibier (2 642 m), du Lautaret (2 058 m), arrivée Valloire (1 419 m). Quelle est l'altitude du sommet le plus élevé (en m) ?",
+   "enonce": "Voici le relief de la 18e étape d'un Tour de France (livret, page 14). Écris l'altitude du sommet le plus élevé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
    "reponse": 2642,
    "unite": "m",
-   "explication": "Le col du Galibier : 2 642 m."
+   "explication": "Le col du Galibier : 2 642 m.",
+   "documents": [
+    "liv7-p14"
+   ]
   },
   {
    "id": "ceb-2019-l7-q13b",
@@ -4671,13 +4813,16 @@
    "numero": "13b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Départ à Embrun (785 m), arrivée à Valloire (1 419 m). Quelle est la différence d'altitude (en m) ?",
+   "enonce": "Voici le relief de la 18e étape d'un Tour de France (livret, page 14). Calcule la différence d'altitude entre la ville de départ et la ville d'arrivée.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "reponse": 634,
    "unite": "m",
-   "explication": "1 419 − 785 = 634 m."
+   "explication": "1 419 − 785 = 634 m.",
+   "documents": [
+    "liv7-p14"
+   ]
   },
   {
    "id": "ceb-2019-l7-q14",
@@ -4685,7 +4830,7 @@
    "numero": "14",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Étapes : 192 km, 27 km, 214 km, 215 km et 169 km. Combien de km en moyenne par jour ?",
+   "enonce": "Voici un tableau qui reprend les kilomètres à parcourir par les cyclistes lors des 5 premières étapes du Tour de France.\n6 juillet – Étape 1. Bruxelles–Bruxelles – 192 km\n7 juillet – Étape 2. Bruxelles–Bruxelles (clm) – 27 km\n8 juillet – Étape 3. Binche–Epernay – 214 km\n9 juillet – Étape 4. Reims–Nancy – 215 km\n10 juillet – Étape 5. Saint-Dié-des-Vosges–Colmar – 169 km\nCombien de kilomètres les cyclistes vont-ils parcourir en moyenne par jour ? Calcule.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-moyenne",
@@ -4700,7 +4845,7 @@
    "numero": "17a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Pompe à essence : 42 l à 1,36 € le litre. Quel est le prix (en €) ?",
+   "enonce": "Complète les écrans des pompes à essence comme dans l'exemple. Exemple : Prix 50,40 € – Capacité 35 l – Prix du litre 1,44 €. À toi : Prix … € – Capacité 42 l – Prix du litre 1,36 €. Quel est le prix ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -4715,7 +4860,7 @@
    "numero": "17b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Pompe à essence : 29,50 € à 1,18 € le litre. Combien de litres ?",
+   "enonce": "Complète les écrans des pompes à essence comme dans l'exemple. Exemple : Prix 50,40 € – Capacité 35 l – Prix du litre 1,44 €. À toi : Prix 29,50 € – Capacité … l – Prix du litre 1,18 €. Quelle est la capacité ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -4730,7 +4875,7 @@
    "numero": "18a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un peintre tapisse 48 m² par jour. Combien en 6 jours ?",
+   "enonce": "En une journée, un peintre a tapissé 48 m². En travaillant au même rythme, combien de m² ce peintre peut-il tapisser en 6 jours ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -4744,7 +4889,7 @@
    "numero": "18b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Au même rythme (48 m² par jour), combien de jours pour tapisser 192 m² ?",
+   "enonce": "En une journée, un peintre a tapissé 48 m². Toujours au même rythme, ce peintre doit tapisser 192 m². Combien de jours doit-il travailler ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -4758,7 +4903,7 @@
    "numero": "22",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un paquet normal permet 66 lessives. Ce paquet offre 50 % de lessives en plus. Combien de lessives en tout ?",
+   "enonce": "Observe ce paquet de poudre à lessiver (« +50 % gratuit »). Avec un paquet normal, on peut faire 66 lessives. Avec ce paquet-ci, on peut faire 50 % de lessives en plus. Combien de lessives peut-on faire en tout avec ce paquet ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
@@ -5059,14 +5204,14 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Le livre",
+   "enonce": "Écris la réponse aux questions suivantes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
    "documents": [
     "conte-3"
    ],
-   "texte": "Titre du livre : {1}  ·  Auteure : {2}",
+   "texte": "Quel est le titre du livre ? {1}\nQui est l'auteure du livre ? {2}",
    "reponse": [
     [
      "15 contes d'Europe",
@@ -5087,7 +5232,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Quel résumé correspond le mieux à l'histoire ?",
+   "enonce": "Choisis le résumé qui correspond le mieux à cette histoire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -5097,11 +5242,11 @@
     "conte-3"
    ],
    "choix": [
-    "Une gentille fée réalise les souhaits mais rate toujours sa dernière expérience.",
-    "Une vieille dame enfermée dans une bouteille de vinaigre en a pris la couleur.",
-    "Une fée délivre les vieilles dames enfermées dans des bouteilles.",
-    "Une vieille dame veut voir ses souhaits réalisés, n'est jamais satisfaite et est punie à la fin.",
-    "Une fée veut réaliser les souhaits de tout le monde, mais n'est jamais récompensée."
+    "C'est l'histoire d'une gentille fée qui réalise efficacement les souhaits, mais qui rate toujours sa dernière expérience. L'histoire recommence chaque fois.",
+    "C'est l'histoire d'une vieille dame qui a été enfermée dans une bouteille de vinaigre pendant très longtemps et qui en a pris la couleur comme l'odeur.",
+    "C'est l'histoire d'une fée qui a les pouvoirs de délivrer les vieilles dames enfermées dans des bouteilles parce qu'elles ont mauvais caractère.",
+    "C'est l'histoire d'une vieille dame qui veut voir ses souhaits réalisés, qui n'est jamais satisfaite et qui est punie à la fin.",
+    "C'est l'histoire d'une fée qui veut réaliser les souhaits de tout le monde, mais qui n'est jamais récompensée."
    ],
    "reponse": 3,
    "explication": "La vieille demande toujours plus et retourne dans sa bouteille."
@@ -5135,8 +5280,8 @@
    "livret": 8,
    "numero": "4",
    "domaine": "fr.lire",
-   "type": "trous",
-   "enonce": "Les souhaits de la vieille dame",
+   "type": "ouverte",
+   "enonce": "Écris la réponse aux questions suivantes. Quel est le souhait de la vieille dame au tout début de l'histoire ? À la fin de l'histoire, que souhaite la vieille dame ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -5145,19 +5290,9 @@
     "conte-2",
     "conte-3"
    ],
-   "texte": "Au début, elle souhaite une jolie petite {1}.  ·  À la fin, elle souhaite être souveraine (reine) du {2}.",
-   "reponse": [
-    [
-     "chaumière",
-     "chaumiere",
-     "maison"
-    ],
-    [
-     "monde",
-     "monde entier"
-    ]
-   ],
-   "explication": "Une chaumière avec des rosiers ; puis régner sur le monde entier."
+   "explication": "Une chaumière avec des rosiers ; puis régner sur le monde entier.",
+   "note": "Correctif : b) n'accepter que s'il y a l'idée d'universalité (monde entier).",
+   "reponseModele": "Au début : avoir une véritable maison, une jolie petite chaumière (et ne plus vivre dans une bouteille). À la fin : être souveraine (reine) du monde entier."
   },
   {
    "id": "ceb-2019-l8-q5",
@@ -5165,7 +5300,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "ordre",
-   "enonce": "Remets ces moments dans l'ordre de l'histoire.",
+   "enonce": "Remets ces phrases dans l'ordre de l'histoire. La phrase « La vieille dame souhaite devenir reine du monde. » est la 5e.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -5198,7 +5333,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Comment la vieille dame souhaite-t-elle appeler ses domestiques ?",
+   "enonce": "Comment la vieille dame souhaite-t-elle faire appel aux domestiques ?",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -5331,7 +5466,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Entoure les deux synonymes de « bougonner ».",
+   "enonce": "« Aussi la fée fut-elle stupéfaite, en s'approchant, d'entendre la vieille bougonner […]. » Choisis les deux synonymes du mot « bougonner ».",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -5355,14 +5490,14 @@
    "numero": "12",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Temps des verbes : « elle accéda encore au désir de la vieille » ; « mes valets courraient de chaque côté ».",
+   "enonce": "Lis cet extrait : « — Si j'étais duchesse, je pourrais aller chez la reine. Je m'y rendrais dans mon propre carrosse, au galop de mes chevaux, et mes valets courraient de chaque côté. La fée n'en revenait pas, pourtant elle accéda encore au désir de la vieille. — Ce soir, avant de t'endormir… Et demain, tu verras bien. Le lendemain, la vieille se retrouva duchesse et recevait tous les honneurs dus à son rang. » Complète le tableau.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
    "documents": [
     "conte-2"
    ],
-   "texte": "« accéda » est au {1} (comme « retrouva »).\n« courraient » est au conditionnel présent. Recopie un autre verbe du texte conjugué au même temps : {2}",
+   "texte": "« accéda » : temps de la conjugaison : {1} (autre verbe de l'extrait conjugué au même temps : « retrouva »)\n« courraient » : conditionnel présent ; autre verbe de l'extrait conjugué au même temps : {2}",
    "reponse": [
     [
      "passé simple",
@@ -5391,7 +5526,7 @@
    "numero": "13",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Elle ne montra aucun étonnement et, naturellement, elle oublia de remercier la fée. » Écris la classe des mots.",
+   "enonce": "« Le lendemain, la vieille se retrouva duchesse et recevait tous les honneurs dus à son rang. Elle ne montra aucun étonnement et, naturellement, elle oublia de remercier la fée. » Écris la classe des mots soulignés dans l'extrait. Choisis parmi les classes de mots suivantes : nom | pronom | verbe | déterminant | adjectif | mot de liaison | adverbe.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
@@ -5418,7 +5553,7 @@
    "numero": "14",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« …elle se souvint tout à coup de la vieille couleur de vinaigre. » Quelle est la classe du mot « vieille » ?",
+   "enonce": "« La fée vaquait à ses affaires aux quatre coins du monde quand elle se souvint tout à coup de la vieille couleur de vinaigre. « J'aimerais savoir ce qu'elle devient. Elle doit être heureuse dans sa chaumière ». » Choisis la classe du mot « vieille » en tenant compte du sens du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
@@ -5440,7 +5575,7 @@
    "numero": "15",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Le lendemain, la vieille […] se retrouva dans son manoir […], une nuée de domestiques autour d'elle. Pour pouvoir leur donner ses ordres […], il lui fallait apprendre… » Recopie deux pronoms qui désignent la vieille dame.",
+   "enonce": "« Le lendemain, la vieille, guère étonnée, à peine enchantée, se retrouva dans son manoir en pleine campagne, une nuée de domestiques autour d'elle. Pour pouvoir leur donner ses ordres et jouer son rôle de dame, il lui fallait apprendre à s'exprimer dans un langage plus raffiné. » Recopie deux pronoms qui désignent la vieille dame.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -5472,7 +5607,7 @@
    "numero": "16",
    "domaine": "fr.grammaire",
    "type": "grille",
-   "enonce": "Quelle est la structure de chaque phrase ?",
+   "enonce": "Voici des structures de phrases. Pour chaque phrase, choisis la structure qui convient.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-fonctions",
@@ -5482,10 +5617,10 @@
     "La fée était bonne fille."
    ],
    "colonnes": [
-    "CC – GS – V – CI",
-    "GS – V – CI – CC",
-    "GS – V – attribut",
-    "GS – V – CD – CC"
+    "A – Complément circonstanciel – Groupe sujet – [Verbe – Complément indirect du verbe]",
+    "B – Groupe sujet – [Verbe – Complément indirect du verbe] – Complément circonstanciel",
+    "C – Groupe sujet – [Verbe – Attribut du sujet]",
+    "D – Groupe sujet – [Verbe – Complément direct du verbe] – Complément circonstanciel"
    ],
    "reponse": [
     1,
@@ -5516,7 +5651,7 @@
    "numero": "7b",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Recopie une autre phrase dite par la fée.",
+   "enonce": "Recopie une phrase dite par la fée. Attention, tu ne peux pas recopier la phrase « Et demain, tu verras bien ! ».",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -5532,7 +5667,7 @@
    "numero": "1b",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "À quelle période conventionnelle associer ces faits ?",
+   "enonce": "Lis le document (portfolio, page 21) et associe les propositions et les périodes conventionnelles.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -5540,8 +5675,8 @@
     "charbon-2"
    ],
    "lignes": [
-    "Des machines permettent de remonter des quantités énormes de charbon (mécanisation, 19e siècle).",
-    "Des pompes à eau (machine à vapeur) permettent de vider l'eau des puits (18e siècle)."
+    "Des machines permettent de remonter des quantités énormes de charbon.",
+    "Des pompes à eau permettent de vider l'eau des puits et de creuser des mines plus profondes, la production augmente."
    ],
    "colonnes": [
     "Moyen Âge",
@@ -5591,7 +5726,7 @@
    "numero": "2b",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Quelles provinces flamandes sont concernées par un bassin houiller (Campine) ?",
+   "enonce": "Observe les cartes (portfolio, pages 22-23). Choisis les deux provinces flamandes concernées par un bassin houiller*.\n* Bassin houiller : région où des gisements de charbon sont présents.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-provinces",
@@ -5600,11 +5735,11 @@
     "mines-2"
    ],
    "choix": [
-    "Limbourg",
-    "Flandre occidentale",
-    "Flandre orientale",
-    "Brabant flamand",
-    "Anvers"
+    "Province du Limbourg",
+    "Province de Flandre occidentale",
+    "Province de Flandre orientale",
+    "Province du Brabant flamand",
+    "Province d'Anvers"
    ],
    "reponse": [
     0,
@@ -5645,7 +5780,7 @@
    "numero": "3b",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "En 1953, le charbon de Blegny, chargé sur des péniches à Liège, ne pouvait PAS être livré par bateau…",
+   "enonce": "Le charbon extrait de la mine de Blegny était amené par chemin de fer au port de Liège. Il était transporté ensuite par des péniches dans différents endroits. Observe la carte des voies navigables (portfolio, page 24). Choisis la proposition incorrecte. En 1953, ce charbon pouvait être livré par bateau…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-transports",
@@ -5668,18 +5803,22 @@
    "numero": "3c",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "« Il n'y a pas de voies navigables dans la province de Luxembourg parce que les pentes sont trop fortes. » Quelle carte a permis cette proposition ?",
+   "enonce": "Voici une proposition formulée par des élèves : « Il n'y a pas de voies navigables dans la province de Luxembourg parce que les pentes sont trop fortes. » Observe les quatre cartes (livret, pages 8 et 9). Choisis la carte qui a permis de formuler cette proposition.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
    "choix": [
-    "Bassins hydrographiques",
-    "Relief",
-    "Régions naturelles",
-    "Précipitations annuelles"
+    "Belgique - Bassins hydrographiques",
+    "Belgique - Relief",
+    "Belgique - Régions naturelles",
+    "Belgique - Quantités de précipitations annuelles moyennes"
    ],
    "reponse": 1,
-   "explication": "Les pentes se lisent sur la carte du relief."
+   "explication": "Les pentes se lisent sur la carte du relief.",
+   "documents": [
+    "liv9-p08",
+    "liv9-p09"
+   ]
   },
   {
    "id": "ceb-2019-l9-q4a",
@@ -5756,7 +5895,7 @@
    "numero": "5c",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "D'après la carte des gisements…",
+   "enonce": "D'après la carte des principaux gisements (portfolio, pages 26-27)…",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -5765,8 +5904,8 @@
    ],
    "lignes": [
     "on exploite des mines de charbon ailleurs qu'en Belgique.",
-    "l'uranium est exploité en Amérique du Sud.",
     "l'or est le minerai le plus exploité en Europe.",
+    "l'uranium est exploité en Amérique du Sud.",
     "l'Amérique est le continent qui compte le plus de gisements de cuivre."
    ],
    "colonnes": [
@@ -5787,13 +5926,13 @@
    "numero": "9",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Quelle période conventionnelle illustre chaque document ?",
+   "enonce": "Observe les documents classés chronologiquement (livret, page 18). Choisis le nom de la période conventionnelle illustrée par chaque document.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "lignes": [
-    "Reconstitution d'un bateau romain (160-180 après J.-C.)",
-    "Caravelle de Christophe Colomb (fin du 15e siècle)",
+    "Reconstitution d'un bateau romain datant de la période 160-180 après J.-C.",
+    "Caravelle de Christophe Colomb, fin du 15e siècle",
     "Péniche en 2017"
    ],
    "colonnes": [
@@ -5808,7 +5947,10 @@
     3,
     4
    ],
-   "explication": "Les Romains : Antiquité ; 1492 : début des Temps modernes ; aujourd'hui : époque contemporaine."
+   "explication": "Les Romains : Antiquité ; 1492 : début des Temps modernes ; aujourd'hui : époque contemporaine.",
+   "documents": [
+    "liv9-p18"
+   ]
   },
   {
    "id": "ceb-2019-l9-q10",
@@ -5870,7 +6012,7 @@
    "numero": "8a (justification)",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Ixelles était rurale au 18e siècle. En 2019, cette région est… ». Justifie ta réponse.",
+   "enonce": "Observe les vues d'Ixelles au 18e siècle et en 2019 (portfolio, page 33). Au 18e siècle, cette région était rurale. En 2019, cette région est-elle rurale, urbaine ou industrielle ? Justifie ta réponse par un élément du paysage.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -5907,7 +6049,7 @@
    "numero": "8b (justification)",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Chiny était rurale au 18e siècle. En 2019, cette région est… ». Justifie ta réponse.",
+   "enonce": "Observe les vues de Chiny au 18e siècle et en 2019 (portfolio, page 33). Au 18e siècle, cette région était rurale. En 2019, cette région est-elle rurale, urbaine ou industrielle ? Justifie ta réponse par un élément du paysage.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -5923,20 +6065,23 @@
    "numero": "12a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Le livret d'ouvrier est imposé par la loi du 10 novembre 1845. En quel siècle ?",
+   "enonce": "Une loi a obligé les ouvriers à détenir un livret. Observe le livret du mineur (portfolio, pages 36-37). Choisis le siècle de la parution de cette loi.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "documents": [
-    "livret-1"
+    "livret-1",
+    "livret-2"
    ],
    "choix": [
-    "17e siècle",
-    "18e siècle",
-    "19e siècle",
-    "20e siècle"
+    "16e s.",
+    "17e s.",
+    "18e s.",
+    "19e s.",
+    "20e s.",
+    "21e s."
    ],
-   "reponse": 2,
+   "reponse": 3,
    "explication": "1845 appartient au 19e siècle (1801-1900)."
   },
   {
@@ -5945,14 +6090,15 @@
    "numero": "12b",
    "domaine": "hg.histoire",
    "type": "trous",
-   "enonce": "Le livret du mineur",
+   "enonce": "Observe le livret du mineur (portfolio, pages 36-37). Réponds aux questions.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
    "documents": [
-    "livret-1"
+    "livret-1",
+    "livret-2"
    ],
-   "texte": "Date de naissance de l'ouvrier : {1}  ·  Ville où le livret a été délivré : {2}",
+   "texte": "Quelle est la date de naissance de l'ouvrier à qui appartenait ce livret ? {1}\nDans quelle ville le livret a-t-il été délivré ? {2}",
    "reponse": [
     [
      "11 janvier 1866",
@@ -6034,7 +6180,7 @@
    "numero": "13b",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Cueillette, chasse, pêche, huttes, peaux de bêtes, outils en pierre taillée, feu, troc, nomades : au temps…",
+   "enonce": "Voici un tableau de synthèse sur le mode de vie des gens dans nos régions, à une période déterminée.\nComment se nourrit-il ? Cueillette, chasse, pêche…\nComment se loge-t-il ? Huttes, abris légers, cavernes…\nComment s'habille-t-il ? Peaux de bêtes…\nQue produit-il ? Outils en pierre taillée\nQuelles techniques utilise-t-il ? Le feu\nComment fait-il du commerce ? Des échanges : le troc\nComment se déplace-t-il ? À pied, il est nomade.\nLis le tableau et complète le titre : « Au temps … »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
@@ -6053,7 +6199,7 @@
    "numero": "1a",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Lis le document (portfolio, page 20) et observe les lignes du temps du livret (pages 2 et 3), numérotées de 1 à 4. Coche les trois lignes du temps sur lesquelles tu pourrais représenter la période du carbonifère.",
+   "enonce": "Lis le document (portfolio, page 20) et observe les lignes du temps du livret (pages 2 et 3), numérotées de 1 à 4. Choisis les trois lignes du temps sur lesquelles tu pourrais représenter la période du carbonifère.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
