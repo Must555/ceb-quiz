@@ -628,6 +628,33 @@
    "titre": "Le schéma incomplet d'un bras",
    "fichier": "assets/2018/liv5-p20.webp",
    "alt": "Dessin des os du bras et de l'avant-bras, sans les muscles."
+  },
+  {
+   "id": "liv5-p18",
+   "source": "livret",
+   "livret": 5,
+   "page": 18,
+   "titre": "Deux articulations illustrées par des objets",
+   "fichier": "assets/2018/liv5-p18.webp",
+   "alt": "À gauche, « l'articulation charnière » : une charnière de porte qui ne s'ouvre que dans un sens. À droite, « l'articulation sphérique » : une rotule, une boule qui tourne dans un creux."
+  },
+  {
+   "id": "liv5-p23",
+   "source": "livret",
+   "livret": 5,
+   "page": 23,
+   "titre": "Le dessin",
+   "fichier": "assets/2018/liv5-p23.webp",
+   "alt": "Un quadrillage de lignes grises qui se croisent, avec des points noirs à certaines intersections."
+  },
+  {
+   "id": "liv8-p07",
+   "source": "livret",
+   "livret": 8,
+   "page": 7,
+   "titre": "La multiplication posée",
+   "fichier": "assets/2018/liv8-p07.webp",
+   "alt": "329,02 × 34 posée en colonnes : première ligne 1 3 1 6 0 8, deuxième ligne + 9 8 7 0 6 décalée d'un rang vers la gauche, résultat 11 186,68."
   }
  ],
  "questions": [
@@ -637,7 +664,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Quel résumé correspond à l'histoire ?",
+   "enonce": "Choisis le résumé qui correspond à cette histoire.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -646,10 +673,10 @@
     "faon-2"
    ],
    "choix": [
-    "Le faon attend que le photographe ait terminé son reportage avant de rejoindre sa mère.",
-    "Pris de pitié, l'homme prend le faon dans ses bras et le ramène près de sa mère.",
+    "Un photographe réussit à prendre des photos d'un faon né depuis une heure à peine. Le faon attend que le photographe ait terminé son reportage avant de rejoindre sa mère qui l'attend avec le reste du troupeau.",
+    "Un photographe prend des photos d'un jeune faon trop fragile pour regagner son troupeau. Pris de pitié, l'homme le prend dans ses bras et le ramène près de sa mère qui regagne le troupeau avec son petit.",
     "Un photographe prend des photos d'un jeune faon abandonné. Plutôt que de le prendre dans ses bras, l'homme comprend qu'il doit s'éloigner. Le faon rejoint alors lentement le troupeau.",
-    "L'homme s'éloigne et le troupeau se rapproche du faon pour l'accueillir."
+    "Un photographe prend des photos d'un jeune faon. Plutôt que de le prendre dans ses bras, l'homme comprend qu'il doit s'éloigner. Le troupeau se rapproche alors du jeune faon et l'accueille."
    ],
    "reponse": 2,
    "explication": "Le photographe s'écarte et le faon rejoint seul les siens, guidé par sa mère."
@@ -690,7 +717,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "L'auteur de cette histoire est…",
+   "enonce": "En t'aidant des indices du texte, choisis la proposition exacte.\nL'auteur de cette histoire est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -713,7 +740,7 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Il pensa que son effort était désormais inutile. » Pourquoi ?",
+   "enonce": "« Il se leva d'un bond, l'oreille tendue. De nouveau la plainte se fit entendre. Sans hésiter, l'homme, se dirigeant au son, descendit vers la clairière. Avant d'y parvenir, il perçut le bruit d'une galopade. Il pensa que son effort était désormais inutile. »\nPourquoi l'homme pensa-t-il cela ? Choisis la proposition exacte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -722,10 +749,10 @@
     "faon-2"
    ],
    "choix": [
-    "Parce qu'il n'entendait plus de plainte.",
+    "Parce qu'il n'entendait plus de plainte monter de la vallée.",
     "Parce qu'il ne pourrait pas prendre de photos des animaux qui ont fui.",
-    "Parce qu'il s'était trompé de chemin.",
-    "Parce qu'il était trop fatigué."
+    "Parce qu'il s'était trompé de chemin en poursuivant les animaux.",
+    "Parce qu'il était trop fatigué pour grimper dans la clairière."
    ],
    "reponse": 1,
    "explication": "Il entend une galopade : les chevreuils s'enfuient."
@@ -736,7 +763,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Les chevreuils avaient entendu ou senti son approche. » C'est l'approche…",
+   "enonce": "« Sans hésiter, l'homme, se dirigeant au son, descendit vers la clairière. Avant d'y parvenir, il perçut le bruit d'une galopade. Il pensa que son effort était désormais inutile. Les chevreuils avaient entendu ou senti son approche et ils s'étaient enfuis, en quelques bonds jusqu'au bois situé sur l'autre versant. »\nChoisis la proposition exacte. C'est l'approche…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -760,7 +787,7 @@
    "numero": "6",
    "domaine": "fr.grammaire",
    "type": "qcm_multi",
-   "enonce": "« L'homme se promenait… il était prêt à fixer n'importe quoi, simplement parce qu'il faisait beau, que l'on était revenu au printemps, qu'il respirait un air encore mouillé de rosée. » Quels pronoms désignent l'homme ?",
+   "enonce": "« L'homme se promenait sur le versant d'un vallon en Forêt d'Ardenne. L'appareil photographique en bandoulière, il était prêt à fixer n'importe quoi, simplement parce qu'il faisait beau, que l'on était revenu au printemps, qu'il respirait un air encore mouillé de rosée. »\nChoisis dans cet extrait deux pronoms qui désignent l'homme.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -786,7 +813,7 @@
    "numero": "7",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« La mère réclamait son petit, lui enjoignait de la rejoindre… » Que remplacent les pronoms ?",
+   "enonce": "« La mère réclamait son petit, lui enjoignait de la rejoindre, elle pour qui la crainte de l'homme avait été plus forte que l'amour maternel. »\nÉcris ce que remplace le pronom « lui », puis ce que remplace le pronom « la » dans cet extrait.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -811,7 +838,7 @@
    "numero": "8",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Et le bébé chevreuil voulut obéir. Il déplia ses jambes… Elles se révélèrent trop faibles. » Que remplacent les pronoms ?",
+   "enonce": "« Et le bébé chevreuil voulut obéir. Il déplia ses jambes, se mit sur ses pattes. Elles se révélèrent trop faibles encore pour le soutenir. »\nÉcris ce que chaque pronom remplace dans cet extrait.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -841,7 +868,7 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "La mère a abandonné son faon…",
+   "enonce": "Choisis la proposition exacte.\nLa mère a abandonné son faon…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -851,7 +878,7 @@
    ],
    "choix": [
     "parce que le faon ne répondait pas à ses appels.",
-    "parce que le troupeau s'était éloigné.",
+    "parce que le troupeau s'était rapidement éloigné.",
     "parce que le faon devait apprendre à se débrouiller.",
     "parce qu'elle a perçu la présence d'un homme."
    ],
@@ -864,7 +891,7 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Au simple déclic, la frayeur du faon redoubla. » Le déclic, c'est…",
+   "enonce": "« Évitant à ses gestes toute brusquerie, le photographe braqua son objectif sur le chétif mais déjà gracieux animal. Au simple déclic, la frayeur du faon redoubla. »\nChoisis la proposition exacte. Dans cet extrait, le déclic, c'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -873,10 +900,10 @@
     "faon-2"
    ],
    "choix": [
-    "la gâchette d'un fusil.",
+    "la gâchette d'un fusil de chasse.",
     "le bruit provoqué par l'appareil photo.",
-    "la fermeture d'un sac.",
-    "le galop du troupeau."
+    "la fermeture d'un sac en bandoulière.",
+    "le galop du troupeau dans la clairière."
    ],
    "reponse": 1,
    "explication": "Il vient de braquer son objectif : c'est le bruit de la photo."
@@ -887,7 +914,7 @@
    "numero": "11",
    "domaine": "fr.vocabulaire",
    "type": "texte_court",
-   "enonce": "« le photographe braqua son objectif sur le chétif animal » : remplace « braqua » par un verbe de même sens.",
+   "enonce": "« Évitant à ses gestes toute brusquerie, le photographe braqua son objectif sur le chétif mais déjà gracieux animal. »\nRemplace le verbe « braqua ». La phrase doit conserver son sens.\nÉvitant à ses gestes toute brusquerie, le photographe … son objectif sur le chétif mais déjà gracieux animal.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -942,7 +969,7 @@
    "numero": "13",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Comment l'homme a-t-il envie de réagir après la photo ? Comment réagit-il en réalité ?",
+   "enonce": "L'auteur décrit le comportement de l'homme après avoir photographié le faon.\nÉcris comment l'homme a envie de réagir.\nÉcris comment l'homme réagit en réalité.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -958,7 +985,7 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Ne touchez jamais un jeune animal. » Écris deux raisons citées par l'auteur.",
+   "enonce": "Le garde forestier donne le conseil suivant : « Ne touchez jamais un jeune animal. »\nÉcris ce qui justifie ce conseil à l'aide d'au moins deux raisons citées par l'auteur.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -974,7 +1001,7 @@
    "numero": "15",
    "domaine": "fr.grammaire",
    "type": "texte_court",
-   "enonce": "« Le photographe s'éloigna un peu pour que le petit animal reprenne quelque confiance. De nouveau, l'appel se fit entendre… » Recopie les mots qui enchainent ces deux phrases.",
+   "enonce": "« Porter secours au faon, c'était donc le condamner à mort. Le photographe s'éloigna un peu pour que le petit animal reprenne quelque confiance. De nouveau, l'appel se fit entendre et le jeune chevreuil, oreilles pointées vers l'autre côté de la vallée, recommença à se dresser. »\nRecopie les mots qui servent à enchainer les deuxième et troisième phrases.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -994,7 +1021,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Le faon abandonné n'est pas sans défense. Recopie une idée du texte qui le prouve.",
+   "enonce": "Le faon abandonné dans la forêt n'est pas sans défense.\nRecopie une idée du texte qui le prouve.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1009,7 +1036,7 @@
    "numero": "17",
    "domaine": "fr.conjugaison",
    "type": "trous",
-   "enonce": "Complète le tableau avec les verbes de l'extrait (commença, s'était immobilisé, faisait, obligeait, jeta, avança, avait compris…) : le temps de la conjugaison, puis un autre verbe de l'extrait conjugué au même temps.",
+   "enonce": "« Maladroitement, en titubant à chaque pas, le faon commença à marcher. Il jeta encore un coup d'œil en direction de l'homme qui s'était immobilisé, qui faisait tout pour conserver une attitude rassurante. Caressé par les marguerites dont le chatouillement l'obligeait parfois à secouer les oreilles, il avança lentement, progressant avec difficulté à travers les herbes qui constituaient un obstacle non négligeable pour ses forces à peine naissantes. Là-bas, comme si elle avait compris que son petit lui revenait, la mère redoublait ses appels. Dans la prairie, une traînée de tiges frémissantes marquait le passage du jeune animal zigzaguant, mais guidé par les cris maternels. »\nComplète le tableau : pour chaque verbe de l'extrait, écris le temps de la conjugaison et un autre verbe de l'extrait conjugué au même temps.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
@@ -1055,7 +1082,7 @@
    "numero": "18",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Il serait alors délaissé par les siens. » Remplace « les siens » par un groupe nominal de même sens.",
+   "enonce": "« Ne touchez jamais un jeune animal. Il sentirait l'odeur humaine et serait alors obligatoirement délaissé par les siens. »\nComplète par un groupe nominal qui respecte le sens de la phrase.\n« Ne touchez jamais un jeune animal. Il sentirait l'odeur humaine et serait alors obligatoirement délaissé par … . »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -1083,7 +1110,7 @@
    "numero": "19",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« né à peine d'une heure ainsi que l'indiquait son poil… » Quel mot de liaison peut remplacer « ainsi que » ?",
+   "enonce": "« Un faon tout jeune, né à peine d'une heure ainsi que l'indiquait son poil encore humide, presque poisseux, tentait de disparaître parmi les hautes herbes piquées de marguerites. »\nChoisis le mot de liaison qui respecte le sens de la phrase.\nUn faon tout jeune, né à peine d'une heure … l'indiquait son poil...",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -1105,7 +1132,7 @@
    "numero": "20",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "Quel est un synonyme de « gracieux » ?",
+   "enonce": "« Évitant à ses gestes toute brusquerie, le photographe braqua son objectif sur le chétif mais déjà gracieux animal. »\nChoisis un synonyme du mot « gracieux ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -1129,7 +1156,7 @@
    "numero": "21",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« Maladroitement, […] le faon jeta un coup d'œil en direction de l'homme qui faisait tout pour conserver une attitude rassurante. » Classe des mots.",
+   "enonce": "« Maladroitement, en titubant à chaque pas, le faon commença à marcher. Il jeta encore un coup d'œil en direction de l'homme qui s'était immobilisé, qui faisait tout pour conserver une attitude rassurante. »\nIndique la classe de mots à laquelle appartiennent les mots « maladroitement », « homme » et « rassurante » dans l'extrait.\nChoisis parmi les classes de mots suivantes : nom | pronom | verbe | déterminant | adjectif | mot de liaison | adverbe",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
@@ -1157,7 +1184,7 @@
    "numero": "22",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Il sifflota, satisfait de sa pleine liberté, du sentiment qu'il avait d'être son maître. » Quel adjectif pourrait qualifier l'homme ?",
+   "enonce": "« Par jeu, l'homme voulut s'asseoir un instant sur une pierre moussue exactement à l'endroit où un rayon de soleil oblique paraissait lui transpercer le cœur. Il sifflota, satisfait de sa pleine liberté, du sentiment qu'il avait d'être son maître. »\nChoisis un adjectif qui pourrait qualifier « l'homme » dans l'extrait ci-dessus.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1169,9 +1196,13 @@
     "triste",
     "serein",
     "craintif",
+    "heureux",
     "généreux"
    ],
-   "reponse": 1,
+   "reponse": [
+    1,
+    3
+   ],
    "explication": "Il est tranquille et satisfait : serein."
   },
   {
@@ -1180,7 +1211,7 @@
    "numero": "23",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Là-bas, comme si elle avait compris que son petit lui revenait, la mère redoublait ses appels. » Qu'est-ce que ressent la mère ?",
+   "enonce": "« […] il avança lentement, progressant avec difficulté à travers les herbes qui constituaient un obstacle non négligeable pour ses forces à peine naissantes. Là-bas, comme si elle avait compris que son petit lui revenait, la mère redoublait ses appels. Dans la prairie, une traînée de tiges frémissantes marquait le passage du jeune animal zigzaguant, mais guidé par les cris maternels. »\nÉcris ce que ressent la mère du faon.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1195,7 +1226,7 @@
    "numero": "24",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Quels titres auraient pu convenir (deux réponses) ?",
+   "enonce": "Le titre de ce texte est : Une heure de vie.\nChoisis les deux titres qui auraient pu convenir.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1222,11 +1253,13 @@
    "numero": "25",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Observe les trois croquis du livret (page 15), numérotés de 1 à 3. Entoure le croquis qui représente le paysage de cette histoire.",
+   "enonce": "Choisis le croquis qui représente le paysage de cette histoire.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
    "documents": [
+    "faon-1",
+    "faon-2",
     "liv1-p15"
    ],
    "choix": [
@@ -1276,7 +1309,7 @@
    "numero": "3",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Voici le développement d'un solide (livret, page 4). Complète : combien ce solide possède-t-il de faces, d'arêtes et de sommets ?",
+   "enonce": "Voici le développement d'un solide.\nComplète.\nÀ l'épreuve, tu pouvais découper ce développement et construire le solide.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-developpements",
@@ -1303,7 +1336,7 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe le cube et les cinq développements numérotés de 1 à 5 (livret, page 5). Entoure le développement qui correspond à ce cube.",
+   "enonce": "Observe ce cube.\nChoisis le développement qui correspond à ce cube.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-developpements",
@@ -1326,7 +1359,7 @@
    "numero": "5",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe (livret, page 6) les sept modèles numérotés de 1 à 7. Entoure le modèle qui a été réduit en respectant les proportions.",
+   "enonce": "Observe.\nChoisis le modèle qui a été réduit en respectant les proportions.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -1362,7 +1395,7 @@
    "numero": "7a",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Observe les huit figures numérotées de 1 à 8 (livret, page 8). Complète avec les numéros des figures.",
+   "enonce": "Observe ces huit figures.\nComplète :",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-polygones",
@@ -1430,7 +1463,7 @@
    "numero": "7b",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Les figures 3 et 6 (livret, page 8) ont plusieurs propriétés géométriques communes. Écris deux de ces propriétés.",
+   "enonce": "Observe ces huit figures.\nLes figures 3 et 6 ont plusieurs propriétés géométriques communes.\nÉcris deux de ces propriétés.",
    "points": 2,
    "fiche": "ma-polygones",
    "documents": [
@@ -1479,7 +1512,7 @@
    "numero": "11",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe les quatre tracés numérotés de 1 à 4 dans le quadrillage (livret, page 12). Un seul tracé comprend les trois figures suivantes : un rectangle ABDC ; un trapèze isocèle EFBA ; un triangle équilatéral AGC. Entoure le numéro qui correspond à ce tracé.",
+   "enonce": "Observe les quatre tracés dans le quadrillage.\nUn seul tracé comprend les trois figures suivantes :\n- un rectangle ABDC\n- un trapèze isocèle EFBA\n- un triangle équilatéral AGC\nChoisis le numéro qui correspond à ce tracé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-polygones",
@@ -1501,7 +1534,7 @@
    "numero": "12",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Observe la construction et le personnage (livret, page 13). Si tu l'observais comme le personnage, que verrais-tu ? Entoure le bon dessin parmi les quatre dessins numérotés de 1 à 4.",
+   "enonce": "Observe la construction.\nSi tu l'observais comme le personnage, que verrais-tu ?\nChoisis le bon dessin.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-representations",
@@ -1523,7 +1556,7 @@
    "numero": "13",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe les figures A, B, C et D (livret, page 14). Classe-les selon leur nombre d'axes de symétrie maximum.",
+   "enonce": "Observe ces figures.\nClasse-les dans ce tableau selon leur nombre d'axes de symétrie maximum.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-symetrie",
@@ -1569,7 +1602,7 @@
    "numero": "15",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Voici le contenu d'une boîte de construction de solides (livret, page 16). Tu veux construire les deux solides A et B. Écris le nombre de pièces nécessaires pour réaliser ces constructions : boules (sommets), bâtonnets longs, moyens et courts, pour chaque solide.",
+   "enonce": "Voici le contenu d'une boite de construction de solides.\nTu veux construire les deux solides ci-dessous.\nÉcris le nombre de pièces nécessaires pour réaliser ces constructions : nombre de boules (sommets), de bâtonnets longs, de bâtonnets moyens et de bâtonnets courts, pour le solide A et pour le solide B.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1616,7 +1649,7 @@
    "numero": "4b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "36 élèves : la moitié préfère la confiserie, le tiers la menuiserie, le reste la balade en forêt. Combien d'élèves ont préféré la balade ?",
+   "enonce": "Dans le cadre d'excursions culturelles réalisées en classe de dépaysement, on a demandé aux 36 élèves présents de s'exprimer sur leur visite préférée.\nOn a obtenu le résultat suivant :\n- la moitié des élèves a préféré la confiserie locale ;\n- le tiers des élèves a préféré la menuiserie de la région ;\n- le reste des élèves a préféré la balade en forêt.\nCalcule le nombre d'élèves ayant préféré la balade en forêt.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -1630,7 +1663,7 @@
    "numero": "5",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Le périmètre de chaque figure mesure 18 cm. Donne la longueur des côtés.",
+   "enonce": "Le périmètre de chacune de ces figures, un triangle équilatéral et un losange, mesure 18 cm.\nÉcris des dimensions possibles des côtés pour un triangle équilatéral et pour un losange.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -1710,14 +1743,17 @@
    "numero": "12",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Le compteur d'eau affiche 0 0 0 3 9 6 7 et le « 9 » désigne les hectolitres. Place les chiffres dans l'abaque.",
+   "enonce": "Observe ce compteur d'eau : 0 0 0 3 9 6 7\nLe « 9 » désigne les hectolitres.\nComplète le tableau (l'abaque) en y plaçant les chiffres indiqués par le compteur.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "kl : {1}  ·  hl : 9  ·  dal : {2}  ·  l : {3}",
+   "texte": "kl : {1}  ·  hl : {2}  ·  dal : {3}  ·  l : {4}",
    "reponse": [
     [
      "3"
+    ],
+    [
+     "9"
     ],
     [
      "6"
@@ -1735,7 +1771,7 @@
    "numero": "13",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "La plus grande longueur de la salle mesure 1 268 cm. Combien de banquettes entières de 1 m peut-on aligner ?",
+   "enonce": "Sur le plan d'une salle des fêtes, la plus grande longueur mesure 1 268 cm.\nCombien de banquette(s) entière(s) mesurant 1 mètre peut-on aligner au maximum sur la plus grande longueur ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -1792,7 +1828,7 @@
    "numero": "14b",
    "domaine": "ma.grandeurs",
    "type": "texte_court",
-   "enonce": "Combien de jours du mercredi 16 mai au mercredi 27 juin inclus ?",
+   "enonce": "Combien de jours se sont écoulés du mercredi 16 mai au mercredi 27 juin inclus de la même année ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -1813,11 +1849,11 @@
    "numero": "15a",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Il est 12:08. Je dois retrouver Arthur à 14h40. Combien de temps reste-t-il ?",
+   "enonce": "Je dois retrouver Arthur à 14h40 à l'arrêt du bus.\nJe regarde l'heure et je vois 12:08.\nCombien de temps reste-t-il avant de retrouver Arthur ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
-   "texte": "{1} h {2} min",
+   "texte": "Il reste {1} h {2} min avant de retrouver Arthur.",
    "reponse": [
     [
      "2"
@@ -1880,7 +1916,7 @@
    "numero": "17",
    "domaine": "ma.grandeurs",
    "type": "grille",
-   "enonce": "Quel objet correspond à chaque encadrement ?",
+   "enonce": "Associe à chaque encadrement l'objet qui lui correspond.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-ordres-grandeur",
@@ -1892,11 +1928,11 @@
     "200 cm < … < 220 cm"
    ],
    "colonnes": [
-    "Masse d'une feuille A4",
-    "Puissance d'un fer à repasser",
-    "Masse d'une voiture",
-    "Longueur d'un stylo",
-    "Hauteur d'une porte"
+    "La masse d'une feuille de papier A4",
+    "La puissance d'un fer à repasser",
+    "La masse d'une voiture",
+    "La longueur d'un stylo",
+    "La hauteur d'une porte"
    ],
    "reponse": [
     2,
@@ -1913,7 +1949,7 @@
    "numero": "18",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un aquarium cubique de 40 cm de côté est rempli sur 30 cm. Il faut 2 ml d'« Algue Stop » par litre. Combien de ml faut-il ?",
+   "enonce": "Voici un aquarium cubique de 40 cm de côté.\nIl est rempli d'eau sur une hauteur de 30 cm.\nIl convient d'ajouter un produit pour lutter contre les algues à raison de 2 ml par litre d'eau.\nCalcule la quantité d'« Algue Stop » nécessaire pour traiter l'eau de cet aquarium.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-volumes",
@@ -1939,7 +1975,7 @@
    "numero": "1b",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Si la bande entièrement grisée vaut 1, quelle fraction représente la partie grisée de chacune des deux barres numérotées 1 et 2 (livret, page 3) ? Écris-la.",
+   "enonce": "Si la bande entièrement grisée vaut 1, quelle fraction représente la partie grisée des barres 1 et 2 ? Écris-la.",
    "points": 2,
    "fiche": "ma-fractions",
    "documents": [
@@ -1971,7 +2007,7 @@
    "numero": "3",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Observe le disque (livret, page 5). Complète : quelle fraction du disque représente la surface grisée, la surface non grisée ? Écris ensuite une fraction équivalente à celle de la partie grisée (pas la même fraction).",
+   "enonce": "Observe ce disque.\nComplète, puis écris une fraction équivalente à celle représentée par la partie grisée.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -2014,7 +2050,7 @@
    "numero": "4a",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Observe la situation décrite (livret, page 6) : 36 élèves ; la moitié a préféré la confiserie locale, le tiers la menuiserie de la région, le reste la balade en forêt. Entoure la représentation qui correspond à la situation décrite, parmi les quatre numérotées de 1 à 4.",
+   "enonce": "Dans le cadre d'excursions culturelles réalisées en classe de dépaysement, on a demandé aux 36 élèves présents de s'exprimer sur leur visite préférée.\nOn a obtenu le résultat suivant :\n- la moitié des élèves a préféré la confiserie locale ;\n- le tiers des élèves a préféré la menuiserie de la région ;\n- le reste des élèves a préféré la balade en forêt.\nChoisis la représentation qui correspond à la situation décrite ci-dessus.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -2049,7 +2085,7 @@
    "numero": "8",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Observe l'aire de chaque figure grisée (livret, page 9). Le petit carré représente 1 unité. Écris l'aire des cinq figures.",
+   "enonce": "Observe l'aire de chaque figure grisée. Le petit carré représente 1 unité.\nÉcris l'aire de ces 5 figures.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -2095,7 +2131,7 @@
    "numero": "10",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Quel pourcentage de la figure a été grisé ? Observe la figure du livret (page 11).",
+   "enonce": "Quel pourcentage de la figure a été grisé ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
@@ -2112,7 +2148,7 @@
    "numero": "11",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Pour aller à l'école, Marc emprunte le trajet le plus long et Justine le plus court. Les trajets possibles (livret, page 11) sont : 3 km, 30 dam, 300 m, 0,3 hm, 30 m. Quel trajet effectuera chaque enfant ?",
+   "enonce": "Pour aller à l'école, Marc emprunte le trajet le plus long et Justine le plus court.\n3 km  |  30 dam  |  300 m  |  0,3 hm  |  30 m\nQuel trajet effectuera chaque enfant ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -2142,7 +2178,7 @@
    "numero": "15b",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Je dois retrouver Arthur à 14h40 à l'arrêt du bus. Un peu plus tard, je regarde l'horloge (livret, page 16). Combien de temps reste-t-il avant de retrouver Arthur ?",
+   "enonce": "Je dois retrouver Arthur à 14h40 à l'arrêt du bus.\nUn peu plus tard, je regarde l'horloge et je vois l'heure ci-contre.\nCombien de temps reste-t-il avant de retrouver Arthur ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -2200,7 +2236,7 @@
    "numero": "1b",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Les élèves veulent savoir si les graines germent uniquement au contact de la terre. Quelle expérience ?",
+   "enonce": "Les élèves veulent savoir si les graines germent uniquement au contact de la terre. Quelle expérience devront-ils réaliser ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -2211,7 +2247,7 @@
    ],
    "choix": [
     "Expérience 1",
-    "Expérience 2 (sans terre, sur du feutre)",
+    "Expérience 2",
     "Expérience 3",
     "Expérience 4"
    ],
@@ -2224,7 +2260,7 @@
    "numero": "1c",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Rédige la question que les élèves se sont posée avant l'expérience 3 (pot D dans l'obscurité).",
+   "enonce": "Rédige la question que les élèves se sont posée avant de procéder à l'expérience 3.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -2293,7 +2329,7 @@
    "numero": "4b",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Cycle de l'eau dans le milieu naturel : coche les deux affirmations correctes.",
+   "enonce": "Observe le schéma du cycle de l'eau dans le milieu naturel et choisis les deux affirmations correctes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -2308,7 +2344,10 @@
     2
    ],
    "explication": "L'eau se partage : évaporation, ruissèlement, infiltration, absorption.",
-   "parReponse": true
+   "parReponse": true,
+   "documents": [
+    "liv5-p08"
+   ]
   },
   {
    "id": "ceb-2018-l5-q4c",
@@ -2316,7 +2355,7 @@
    "numero": "4c",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Pourquoi l'utilisation des herbicides est-elle déconseillée, parfois interdite ?",
+   "enonce": "Dans les champs et les jardins, on épand parfois un produit toxique qui tue les mauvaises herbes. C'est de l'herbicide.\nEn observant les documents 1 et 2, explique pour quelle(s) raison(s) l'utilisation des herbicides est déconseillée et parfois interdite.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -2332,7 +2371,7 @@
    "numero": "6a",
    "domaine": "sc.matiere",
    "type": "ordre",
-   "enonce": "Remets les photos de l'expérience dans l'ordre (glaçons qui fondent puis eau chauffée).",
+   "enonce": "Des élèves ont laissé fondre des glaçons d'eau dans un ballon en verre. Ensuite, ils ont fait chauffer l'eau ainsi obtenue.\nRemets les photos de l'expérience dans l'ordre chronologique. Le numéro 4 t'est donné : c'est la photo C.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2340,11 +2379,11 @@
     "etats"
    ],
    "elements": [
-    "Photo D : ballon rempli de glaçons",
-    "Photo E : glace et eau liquide",
-    "Photo A : eau liquide, sans flamme",
-    "Photo C : eau liquide chauffée",
-    "Photo B : l'eau bout"
+    "Photo D",
+    "Photo E",
+    "Photo A",
+    "Photo C",
+    "Photo B"
    ],
    "reponse": [
     0,
@@ -2361,7 +2400,7 @@
    "numero": "6b",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Sur la photo E, il y a de la glace et de l'eau liquide. Quels états ?",
+   "enonce": "Observe les photos de l'expérience 1 sur les états de l'eau.\nSur la photo E, l'eau apparait sous deux états différents. Choisis le nom de ces deux états.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2386,7 +2425,7 @@
    "numero": "6c",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Glace et eau liquide mélangées (photo E) : à quelle température ?",
+   "enonce": "Observe les photos de l'expérience 1 sur les états de l'eau.\nÀ quelle température se trouve l'eau de la photo E ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2409,7 +2448,7 @@
    "numero": "6d",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "L'eau bout (photo B) : à quelle température ?",
+   "enonce": "Observe les photos de l'expérience 1 sur les états de l'eau.\nÀ quelle température se trouve l'eau de la photo B ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2432,7 +2471,7 @@
    "numero": "7",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Glace sortie du congélateur, relevés toutes les 10 min : −5,5 °C (que de la glace), −2 °C (que de la glace), puis la glace fond à 0 °C, beaucoup puis un peu de glace (température stable), enfin tout est fondu à 1,5 °C. Quel tableau convient ?",
+   "enonce": "Des élèves ont placé un thermomètre dans un pot rempli d'eau du robinet pendant une nuit dans le congélateur. Le lendemain, ils déposent le pot et le thermomètre sur une table de la classe et ils relèvent les températures toutes les dix minutes.\n8 h 00 : Au début de l'expérience, il n'y a que de la glace dans le pot. Le thermomètre affiche –5,5 °C.\n8 h 10 : Il n'y a que de la glace dans le pot. Le thermomètre affiche –2 °C.\n8 h 20 : La glace commence à fondre. Elle est mélangée à un peu d'eau liquide. La température de l'eau est de 0 °C.\n8 h 30 : Il y a beaucoup de glace dans l'eau liquide. La température de l'eau reste stable.\n8 h 40 : Il reste un peu de glace dans l'eau liquide. La température de l'eau reste stable.\n8 h 50 : Toute la glace est fondue. Il ne reste que de l'eau liquide. La température de l'eau est de 1,5 °C.\nLes élèves ont noté les relevés de températures (en °C) toutes les 10 minutes, de 0 à 50 min. Choisis le seul tableau qui correspond au déroulement de l'expérience.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -2451,7 +2490,7 @@
    "numero": "8",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Clé de détermination des champignons : complète.",
+   "enonce": "Complète la clé de détermination simplifiée des champignons. Écris le nom du champignon qui convient dans chaque case vide. Un exemple t'est donné : pas de lamelles sous le chapeau → Cèpe.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -2535,7 +2574,7 @@
    "numero": "10a",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Quel type d'articulation ?",
+   "enonce": "Dans notre corps, nous avons plusieurs types d'articulation. En voici deux illustrées par des objets.\nComplète le tableau : pour chaque articulation, choisis son type.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -2555,7 +2594,10 @@
     1,
     0
    ],
-   "explication": "Épaule et hanche tournent dans tous les sens (sphériques) ; coude et genou se plient dans un seul sens (charnières)."
+   "explication": "Épaule et hanche tournent dans tous les sens (sphériques) ; coude et genou se plient dans un seul sens (charnières).",
+   "documents": [
+    "liv5-p18"
+   ]
   },
   {
    "id": "ceb-2018-l5-q11a",
@@ -2584,7 +2626,7 @@
    "numero": "11b",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Quelles ont été les deux dates les plus favorables pour quitter le lieu d'hibernation ?",
+   "enonce": "À la fin de l'hiver, lorsque les soirées sont humides et moins froides, les batraciens quittent leur lieu d'hibernation…\nD'après le graphique, quelles ont été les deux dates les plus favorables aux batraciens pour quitter leur lieu d'hibernation ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -2610,7 +2652,7 @@
    "numero": "11d",
    "domaine": "sc.vivant",
    "type": "numerique",
-   "enonce": "Combien de batraciens sont sortis le soir le plus chaud (le 12 mars) ?",
+   "enonce": "Lis le texte et le graphique.\nCombien de batraciens sont sortis à la date à laquelle il a fait le plus chaud en soirée ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -2626,7 +2668,7 @@
    "numero": "13",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Un de tes cinq sens peut être perturbé par une illusion d'optique. Lequel ?",
+   "enonce": "Un de tes cinq sens peut être perturbé par ce dessin.\nChoisis le nom de ce sens.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -2638,7 +2680,10 @@
     "le gout"
    ],
    "reponse": 0,
-   "explication": "Une illusion d'optique trompe la vue."
+   "explication": "Une illusion d'optique trompe la vue.",
+   "documents": [
+    "liv5-p23"
+   ]
   },
   {
    "id": "ceb-2018-l5-q1d",
@@ -2646,7 +2691,7 @@
    "numero": "1d",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Les élèves veulent prouver que l'arrosage est nécessaire pour faire germer des graines de lentille. Observe les quatre situations numérotées de 1 à 4 (livret, page 4). Pour prouver que l'arrosage est nécessaire, les élèves doivent comparer la situation n° 1 avec quelle autre situation ?",
+   "enonce": "Voici une autre expérience sur la germination.\nLes élèves veulent prouver que l'arrosage est nécessaire pour faire germer les graines. Ils utilisent des graines de lentille.\nObserve les quatre situations ci-dessous.\nPour prouver que l'arrosage est nécessaire, les élèves doivent comparer la situation n° 1 avec la situation n° …",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
@@ -2667,7 +2712,7 @@
    "numero": "2",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Complète les étiquettes vides du schéma (livret, page 6), numérotées de 1 à 4, en utilisant quatre termes de la liste.",
+   "enonce": "Complète les étiquettes du schéma (numérotées de 1 à 4) en utilisant quatre termes de la liste ci-dessous.\nsolidification | évaporation | condensation | précipitations | ruissèlement",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -2716,7 +2761,7 @@
    "numero": "4a",
    "domaine": "sc.matiere",
    "type": "grille",
-   "enonce": "Les flèches représentent une partie du cycle de l'eau dans le milieu naturel. Observe le schéma (livret, page 8). Écris le numéro de la légende dans chaque étiquette vide, repérée par une lettre de A à D. Deux exemples sont donnés (1 et 6).",
+   "enonce": "Observe le schéma ci-dessous.\nLes flèches représentent une partie du cycle de l'eau dans le milieu naturel.\nÉcris le numéro de la légende dans l'étiquette correspondante (A, B, C, D). Deux exemples sont donnés (1 et 6).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-cycle-eau",
@@ -2751,7 +2796,7 @@
    "numero": "5",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Pour répondre, lis les deux graphiques (livret, page 10). Pour chaque phrase, indique si un graphique montre que c'est vrai, que c'est faux, ou si aucun graphique ne permet de le dire.",
+   "enonce": "Pour répondre à la question, lis les deux graphiques ci-dessous.\nDes élèves ont observé la croissance du haricot. Ils ont reporté les mesures de la hauteur de la tige dans un graphique.\nDes élèves ont voulu savoir quelle quantité d'eau favorise la croissance du blé.\nComplète le tableau à double entrée.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -2785,7 +2830,7 @@
    "numero": "10b",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Observe les cinq photos numérotées de 1 à 5 (livret, page 19). Entoure les photos sur lesquelles le biceps est contracté.",
+   "enonce": "Choisis les photos sur lesquelles le biceps est contracté.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -2844,7 +2889,7 @@
    "numero": "12",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Complète les étiquettes du cycle de vie de la grenouille (livret, page 22). Les étiquettes vides sont numérotées de 1 à 5 ; « Ponte des œufs » est donné.",
+   "enonce": "Complète les étiquettes du cycle de vie de la grenouille (étiquettes numérotées de 1 à 5 ; « Ponte des œufs » est donné).",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -2882,7 +2927,7 @@
    "numero": "14",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Pour composer les montages électriques numérotés de 1 à 4 (livret, pages 24 et 25), on a utilisé le même matériel que celui du portfolio. Entoure les schémas du circuit où l'ampoule peut s'allumer.",
+   "enonce": "Pour composer les montages électriques ci-dessous, on a utilisé le même matériel que celui du portfolio.\nChoisis les schémas du circuit où l'ampoule peut s'allumer.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -2909,7 +2954,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Arbre : « L'abeille peut remplir plusieurs missions » → oui : {1}. Non → « Elle pond » → oui : {2} ; non : {3}.",
+   "enonce": "Complète l'arbre à l'aide des mots suivants.\nmâle | ouvrière | reine",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -2917,7 +2962,7 @@
     "abeilles-1",
     "abeilles-2"
    ],
-   "texte": "Plusieurs missions : {1}  ·  Une seule mission et elle pond : {2}  ·  Elle ne pond pas : {3}",
+   "texte": "L'abeille peut remplir plusieurs missions. → Oui : {1}\nNon → Elle pond. → Oui : {2}  ·  Non : {3}",
    "reponse": [
     [
      "ouvrière",
@@ -2942,7 +2987,7 @@
    "numero": "3",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Les ouvrières : quelle fonction ?",
+   "enonce": "Voici le tableau des ouvrières (nom → fonction) :\nbutineuse → Récolter la nourriture.\nsentinelle → Défendre la ruche.\ncérifère → Construire les rayons.\nnourricière → Nourrir les larves et la reine.\nComplète les deux dernières lignes : quelle est la fonction de la ventileuse et de la nettoyeuse ?",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -2985,7 +3030,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans quelle partie du texte pourrait-on placer ces phrases ? (A fonctionner, B durer, C communiquer)",
+   "enonce": "Voici les trois parties du texte et leur intertitre :\nA. Une communauté bien organisée pour fonctionner\nB. Une communauté bien organisée pour durer\nC. Une communauté bien organisée pour communiquer\nIndique dans quelle partie du texte (A, B, C) chaque phrase ci-dessous pourrait être placée.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -3017,7 +3062,7 @@
    "numero": "6",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« …chacune d'elles a une mission bien précise à remplir sans empiéter sur celle des autres catégories. » « celle » désigne…",
+   "enonce": "« Les ouvrières sont des abeilles femelles atrophiées, autrement dit, elles sont incapables de pondre des œufs. Selon son âge et son expérience, chacune d'elles a une mission bien précise à remplir sans empiéter sur celle des autres catégories. »\nChoisis le groupe nominal que désigne le pronom « celle ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -3039,7 +3084,7 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "« Les mâles ou faux bourdons… Ce sont de véritables rois fainéants ou rentiers… celles-ci les tuent en hiver. » Quels mots désignent les mâles ?",
+   "enonce": "« Les mâles ou faux bourdons sont les insectes minoritaires dans la ruche, tant en nombre qu'en fonction. Ce sont de véritables rois fainéants ou rentiers qui ne participent pas à la vie commune. Nourris et hébergés par les ouvrières, celles-ci les tuent en hiver. »\nChoisis trois mots et/ou groupes de mots qui désignent « les mâles » dans cet extrait.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -3048,6 +3093,7 @@
    ],
    "choix": [
     "faux bourdons",
+    "les insectes minoritaires",
     "rois fainéants",
     "rentiers",
     "ouvrières",
@@ -3055,11 +3101,15 @@
    ],
    "reponse": [
     0,
-    1,
-    2
+    2,
+    3
    ],
-   "explication": "« celles-ci » désigne les ouvrières.",
-   "parReponse": true
+   "explication": "« Faux bourdons », « rois fainéants » et « rentiers » désignent les mâles. Le corrigé officiel accepte aussi « les insectes minoritaires ».",
+   "parReponse": true,
+   "aussiAcceptes": [
+    1
+   ],
+   "nbAChoisir": 3
   },
   {
    "id": "ceb-2018-l6-q8",
@@ -3067,7 +3117,7 @@
    "numero": "8",
    "domaine": "fr.grammaire",
    "type": "qcm_multi",
-   "enonce": "Quelles phrases ont la même structure que « Les butineuses ont le rôle le plus noble de la ruche » (sujet – verbe – CD) ?",
+   "enonce": "Choisis les deux phrases qui ont la même structure que celle-ci :\n« Les butineuses ont le rôle le plus noble de la ruche. »",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-fonctions",
@@ -3089,7 +3139,7 @@
    "numero": "9",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Ceux-ci comprennent de petites loges en forme d'hexagone. » Dans quelle phrase « comprendre » a-t-il le même sens ?",
+   "enonce": "« Si l'on ouvre une ruche, on rencontre des plaques brunes ou jaunes de cire, appelées « rayons ». Ceux-ci comprennent de petites loges en forme d'hexagone : les « alvéoles ». »\nChoisis la phrase dans laquelle le verbe « comprendre » a le même sens que dans l'extrait.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -3100,7 +3150,7 @@
     "Ces apiculteurs comprennent le langage des abeilles.",
     "Ces élèves comprennent aisément les consignes.",
     "Ces livres comprennent beaucoup d'histoires épatantes.",
-    "Ces touristes comprennent les explications."
+    "Ces touristes comprennent les explications fournies."
    ],
    "reponse": 2,
    "explication": "Ici, « comprendre » = contenir."
@@ -3111,7 +3161,7 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Écris avec précision ce qu'est la « gelée royale ».",
+   "enonce": "« La larve se nourrit de gelée royale. »\nÉcris avec précision ce qu'est la « gelée royale ».",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -3125,7 +3175,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans quelle partie du texte trouver l'information ?",
+   "enonce": "Indique dans quelle partie du texte (A, B, C) tu trouveras l'information nécessaire pour répondre à ces questions.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -3136,7 +3186,7 @@
    "lignes": [
     "Que fait la reine une fois fécondée ?",
     "De quels aliments les larves sont-elles nourries ?",
-    "De quel organe des sens les abeilles se servent-elles pour retrouver leur ruche ?"
+    "De quel organe des sens les abeilles se servent-elles pour retrouver l'emplacement de leur ruche ?"
    ],
    "colonnes": [
     "A",
@@ -3156,7 +3206,7 @@
    "numero": "13a",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Quels moyens les abeilles utilisent-elles pour communiquer et s'orienter ?",
+   "enonce": "Choisis, parmi les propositions suivantes, trois moyens utilisés par les abeilles pour communiquer et s'orienter.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -3222,7 +3272,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Observe les six couvertures de livres numérotées de 1 à 6 (livret, page 3). Entoure la couverture du livre qui pourrait contenir le texte Les abeilles.",
+   "enonce": "Choisis la couverture du livre qui pourrait contenir le texte Les abeilles.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -3246,7 +3296,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Grâce à la cire sécrétée par leurs glandes, les abeilles cirières fabriquent ces rayons. Débutant au plafond de la ruche auquel elles fixent les premières écailles de cire, elles poursuivent le déploiement des rayons à la verticale. » Observe les quatre flèches numérotées de 1 à 4 (livret, page 9). Entoure la flèche qui montre le sens de construction d'un rayon de ruche.",
+   "enonce": "« Grâce à la cire sécrétée par leurs glandes, les abeilles cirières fabriquent ces rayons. Débutant au plafond de la ruche auquel elles fixent les premières écailles de cire, elles poursuivent le déploiement des rayons à la verticale. »\nChoisis la flèche qui montre le sens de construction d'un rayon de ruche.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3297,7 +3347,7 @@
    "numero": "1c",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "À la fin de 1914, la Belgique…",
+   "enonce": "Observe le document.\nChoisis les propositions correctes.\nÀ la fin de l'année 1914, la Belgique...",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -3307,7 +3357,7 @@
    "choix": [
     "était entièrement occupée par l'armée allemande.",
     "était presque entièrement occupée par l'armée allemande.",
-    "n'était pas occupée.",
+    "n'était pas occupée par l'armée allemande.",
     "gardait une poche de résistance dans la région d'Ypres."
    ],
    "reponse": [
@@ -3322,7 +3372,7 @@
    "numero": "1e",
    "domaine": "hg.histoire",
    "type": "texte_court",
-   "enonce": "À quelle date l'armistice de la Première Guerre mondiale a-t-il été signé ? (jour mois année)",
+   "enonce": "À quelle date l'armistice de la Première Guerre mondiale a-t-il été signé ? (jour, mois, année)\nArmistice : accord entre les ennemis pour faire cesser les combats.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
@@ -3342,7 +3392,7 @@
    "numero": "2a",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Le document 1 (monument aux martyrs de Spontin) est la photo…",
+   "enonce": "Observe le document 1.\nChoisis les deux propositions correctes.\nCe document est la photo...",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3405,7 +3455,7 @@
    "numero": "2c",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Ernest Lottin, Antoine Résimont et Joseph Pierroux ne sont pas morts en même temps que les autres. Pourquoi ?",
+   "enonce": "Sur le document 3, on peut lire les noms d'Ernest Lottin, d'Antoine Résimont et Joseph Pierroux.\nCes trois hommes ne sont pas morts en même temps que les autres personnes.\nÉcris pourquoi.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3452,7 +3502,7 @@
    "numero": "4b",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "En 1914, pourquoi certains parents continuent-ils à envoyer leurs enfants travailler ?",
+   "enonce": "En 1914, certains parents continuent à envoyer leurs enfants travailler plutôt que d'aller à l'école.\nPourquoi ? Explique par une phrase courte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
@@ -3507,30 +3557,30 @@
    "numero": "5",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Quelle période conventionnelle illustre chaque document ?",
+   "enonce": "Chaque document illustre une période conventionnelle.\nIndique la période illustrée par chaque document.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
    "lignes": [
-    "Dolmens de Wéris",
-    "Colisée de Rome",
-    "Chevaliers de la tapisserie de Bayeux",
-    "Grandes découvertes",
-    "Révolution industrielle"
+    "Document 1 : Colisée de Rome",
+    "Document 2 : Dolmens de Wéris",
+    "Document 3 : Révolution industrielle",
+    "Document 4 : Grandes découvertes",
+    "Document 5 : Chevaliers de la Tapisserie de Bayeux"
    ],
    "colonnes": [
     "Préhistoire",
     "Antiquité",
     "Moyen Âge",
     "Temps modernes",
-    "Époque contemporaine"
+    "Période contemporaine"
    ],
    "reponse": [
-    0,
     1,
-    2,
+    0,
+    4,
     3,
-    4
+    2
    ],
    "explication": "Dans l'ordre chronologique.",
    "toutOuRien": true
@@ -3541,7 +3591,7 @@
    "numero": "7a",
    "domaine": "hg.histoire",
    "type": "texte_court",
-   "enonce": "Sur la carte de Ciney de 1777, quelles constructions forment les côtés du pentagone rose ?",
+   "enonce": "Compare les deux représentations de la ville de Ciney à des époques différentes.\nSur le document 1, tu vois un pentagone rose clair.\nSur la carte de 1777, quelles constructions sont représentées par les côtés du pentagone rose ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3606,7 +3656,7 @@
    "numero": "8c",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Observe la photographie (livret, page 12). Le paysage que tu vois à l'avant-plan de la photographie est…",
+   "enonce": "Observe la photographie.\nLe paysage que tu vois à l'avant-plan de la photographie est...",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -3662,7 +3712,7 @@
    "numero": "10",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Quelle(s) langue(s) officielle(s) ?",
+   "enonce": "Observe les cartes de Belgique.\nIndique la (les) langue(s) officielle(s). Un exemple t'est donné : dans la ville de Mons → français.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-langues",
@@ -3696,7 +3746,7 @@
    "numero": "11a",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Carte de la Wallonie : quelle légende convient ?",
+   "enonce": "Observe la carte de la Wallonie et lis attentivement les légendes.\nChoisis la légende qui devrait accompagner cette carte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -3704,10 +3754,10 @@
     "wallonie"
    ],
    "choix": [
-    "Légende 1 (bassins des cours d'eau)",
-    "Légende 2 (agricole, boisé, urbanisé)",
-    "Légende 3 (arrondissements)",
-    "Légende 4 (types de paysages)"
+    "Légende 1",
+    "Légende 2",
+    "Légende 3",
+    "Légende 4"
    ],
    "reponse": 1,
    "explication": "Les couleurs montrent l'occupation du sol : le sud boisé (Ardenne), le sillon Sambre-et-Meuse urbanisé."
@@ -3740,16 +3790,16 @@
    "numero": "12a",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Observe les deux photos (livret, page 18). Pourquoi les branches de ces arbres ont-elles poussé en oblique ?",
+   "enonce": "Observe les deux photos ci-dessous.\nPourquoi les branches de ces arbres ont-elles poussé en oblique ? Choisis les deux propositions correctes.\nLes branches de ces arbres ont poussé en oblique...",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-climats",
    "choix": [
-    "Elles se sont tournées vers le soleil.",
-    "Ces arbres ne sont pas protégés des vents dominants.",
-    "Les feuilles sont plus lourdes d'un côté.",
-    "Les humains ont arrosé d'un seul côté.",
-    "Le vent souffle fort et très souvent dans la même direction."
+    "parce qu'elles se sont tournées vers le soleil.",
+    "parce que ces arbres ne sont pas protégés des vents dominants.",
+    "parce que les feuilles sont plus lourdes du côté gauche des arbres.",
+    "parce que les humains ont arrosé d'un seul côté des arbres.",
+    "parce qu'à l'endroit où ils sont plantés, le vent souffle fort et très souvent dans la même direction."
    ],
    "reponse": [
     1,
@@ -3766,20 +3816,20 @@
    "numero": "12b",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Pour les cultures, la haie est-elle un atout ou une contrainte ?",
+   "enonce": "La Région wallonne conseille aux agriculteurs de laisser pousser les haies et d'en planter.\nPour les cultures, la haie est-elle un atout ou une contrainte ?",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
    "lignes": [
-    "En cas de pluies abondantes, elle ralentit le ruissèlement et les coulées de boue.",
-    "Elle occupe un espace du champ cultivable.",
+    "En cas de pluies abondantes, la haie ralentit le ruissèlement et les coulées de boue.",
+    "Une haie occupe un espace du champ cultivable.",
     "Une haie de feuillus enrichit naturellement le sol.",
-    "Elle joue un rôle de brise-vent.",
-    "Elle fait de l'ombre aux cultures proches."
+    "La haie joue un rôle de brise-vent.",
+    "La haie fait de l'ombre aux cultures proches."
    ],
    "colonnes": [
-    "Un atout",
-    "Une contrainte"
+    "la haie est un atout",
+    "la haie est une contrainte"
    ],
    "reponse": [
     0,
@@ -3821,7 +3871,7 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "texte_court",
-   "enonce": "Lis le graphique « Pertes humaines de la Première Guerre mondiale » (livret, page 5). Écris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
+   "enonce": "Lis le graphique « Pertes humaines de la Première Guerre mondiale ».\nÉcris le nom du seul pays où il y a eu plus de victimes civiles que militaires.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -4002,7 +4052,7 @@
    "numero": "8b (avant-plan)",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Observe la photographie (livret, page 12). Entoure les cases qui correspondent à ce que tu vois À L'AVANT-PLAN.",
+   "enonce": "Observe la photographie.\nChoisis ce que tu vois à l'avant-plan de la photographie.",
    "points": 1,
    "fiche": "hg-paysages",
    "documents": [
@@ -4029,7 +4079,7 @@
    "numero": "8b (arrière-plan)",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe la photographie (livret, page 12). Pour chaque élément, indique si tu le vois À L'ARRIÈRE-PLAN.",
+   "enonce": "Observe la photographie.\nPour chaque élément, indique si tu le vois à l'arrière-plan de la photographie.",
    "points": 1,
    "fiche": "hg-paysages",
    "documents": [
@@ -4066,7 +4116,7 @@
    "numero": "9b",
    "domaine": "hg.geographie",
    "type": "texte_court",
-   "enonce": "Écris le nom de la commune coloriée en noir sur la carte (livret, page 15).",
+   "enonce": "Écris le nom de la commune coloriée en noir sur la carte ci-dessous.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -4097,7 +4147,7 @@
    "numero": "13b",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Observe le schéma de deux cours d'eau (livret, page 20). Entoure la légende qui correspond au schéma. Sers-toi de ton dictionnaire.",
+   "enonce": "Voici un schéma représentant deux cours d'eau.\nChoisis la légende qui correspond au schéma. Sers-toi de ton dictionnaire.",
    "points": 1,
    "fiche": "hg-cours-eau",
    "documents": [
@@ -4118,7 +4168,7 @@
    "numero": "13c",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "À quel numéro du schéma de la page 20 la partie entourée sur la photo (livret, page 21) correspond-elle ?",
+   "enonce": "À quel numéro du schéma des deux cours d'eau la partie entourée sur la photo correspond-elle ?",
    "points": 1,
    "fiche": "hg-cours-eau",
    "documents": [
@@ -4383,7 +4433,7 @@
    "numero": "4a",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "329,02 × 34 = 11 186,68 (produits partiels : 1 316,08 et 9 870,6). Complète sans calculer.",
+   "enonce": "Observe cette multiplication correctement posée (329,02 × 34). Complète sans effectuer les opérations.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
@@ -4402,7 +4452,10 @@
      "329,02"
     ]
    ],
-   "explication": "Les deux produits partiels et la réciproque."
+   "explication": "Les deux produits partiels et la réciproque.",
+   "documents": [
+    "liv8-p07"
+   ]
   },
   {
    "id": "ceb-2018-l8-q4b",
@@ -4429,7 +4482,7 @@
    "numero": "5",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "4 menus identiques + 2 bouteilles de jus à 12 € + 3 thés à 2 € = 102 €. Quelle opération donne le prix d'un menu ?",
+   "enonce": "Olivia a invité Yanis, Charlotte et Samuel au restaurant.\nIls ont tous les quatre pris le même menu.\nEn plus, ils ont bu deux bouteilles de jus d'oranges pressées à 12 € chacune et les trois invités ont pris chacun un thé à 2 €.\nOlivia a payé 102 €.\nChoisis une opération permettant d'obtenir le prix d'un menu.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
@@ -4536,7 +4589,7 @@
    "numero": "9",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Pyramide de produits : chaque case est le produit des deux cases en dessous. En bas : 5, ?, 4. Au milieu : ?, 24.",
+   "enonce": "Le nombre contenu dans chaque case est le produit des nombres qui se trouvent dans les deux cases juste en dessous.\nObserve l'exemple : en bas 2, 3, 4 ; au milieu 6 (2 × 3 = 6) et 12 (3 × 4 = 12) ; au sommet 72 (6 × 12 = 72).\nComplète la pyramide : en bas 5, … , 4 ; au milieu … , 24 ; au sommet … .",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -4678,7 +4731,7 @@
    "numero": "17b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Nombres triangulaires : 1 + 3 = 4 ; 3 + 6 = 9 ; 6 + 10 = 16 ; 10 + 15 = 25 ; 15 + 21 = 36. Tous les résultats sont…",
+   "enonce": "Voici une suite de nombres : 1, 3, 6, 10, 15…\nSi on additionne deux de ces nombres consécutifs, on obtient ces résultats-ci :\n1 + 3 = 4 ; 3 + 6 = 9 ; 6 + 10 = 16 ; 10 + 15 = 25 ; 15 + 21 = 36\nTous les résultats obtenus sont...",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-suites",
@@ -4769,15 +4822,15 @@
    "numero": "19",
    "domaine": "ma.arithmetique",
    "type": "grille",
-   "enonce": "Quelle opération correspond à chaque situation ?",
+   "enonce": "Choisis, pour chaque situation, la lettre de l'opération qui lui correspond.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "lignes": [
-    "Je partage 3 paquets de 15 biscuits entre 5 enfants.",
-    "Mon voisin a 15 clapiers de 3 lapins. 5 lapins se sont enfuis.",
-    "Alice partage 5 paquets de 15 images avec ses 2 amies (3 personnes).",
-    "On achète 15 crayons à 1 € et 3 gommes à 5 €."
+    "Je partage équitablement 3 paquets de 15 biscuits entre 5 enfants. Combien de biscuits reçoivent-ils chacun ?",
+    "Mon voisin a 15 clapiers de 3 lapins. 5 lapins se sont enfuis. Combien de lapins lui reste-t-il ?",
+    "Alice partage équitablement 5 paquets de 15 images avec ses 2 amies. Combien d'images ont-elles chacune ?",
+    "On achète 15 crayons à 1 euro et 3 gommes à 5 euros. Combien paie-t-on ?"
    ],
    "colonnes": [
     "A (15 × 3) × 5",
@@ -4801,7 +4854,7 @@
    "numero": "10",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Observe la figure des étoiles (livret, page 11). Combien y a-t-il d'étoiles en tout ? Écris aussi l'opération qui te permet de donner le nombre total d'étoiles.",
+   "enonce": "Observe.\nCombien y a-t-il d'étoiles en tout ? Écris aussi l'opération qui te permet de donner le nombre total d'étoiles.",
    "points": 2,
    "corrigeVerifie": true,
    "texte": "En tout, il y a {1} étoiles.\nOpération : {2}",
@@ -4849,7 +4902,7 @@
    "numero": "15",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Complète chaque case de l'arbre (livret, page 14) pour décomposer le nombre 0,54 en parts égales.",
+   "enonce": "Complète chaque case pour décomposer le nombre 0,54 en parts égales.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-decimaux",
@@ -4876,7 +4929,7 @@
    "numero": "1",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Coche la case qui correspond à l'avis de l'auteur.",
+   "enonce": "Choisis la case qui correspond à l'avis de l'auteur.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4914,7 +4967,7 @@
    "numero": "3",
    "domaine": "fr.ecouter",
    "type": "grille",
-   "enonce": "L'auteur distingue les amateurs des collectionneurs. Trace une croix dans les cases qui conviennent : le document contient-il cette information ?",
+   "enonce": "Pour chaque information, choisis si le document la contient ou non.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4941,7 +4994,7 @@
    "numero": "4",
    "domaine": "fr.ecouter",
    "type": "qcm_multi",
-   "enonce": "Coche deux caractéristiques qui qualifient les amateurs.",
+   "enonce": "L'auteur distingue les amateurs des collectionneurs.\nChoisis deux caractéristiques qui qualifient les amateurs.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4997,7 +5050,7 @@
    "numero": "6",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Coche l'affirmation correcte.",
+   "enonce": "Choisis l'affirmation correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -5018,7 +5071,7 @@
    "numero": "7",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "L'auteur parle d'une grave erreur. À quoi fait-il allusion ? Coche l'affirmation correcte.",
+   "enonce": "L'auteur parle d'une grave erreur. À quoi fait-il allusion ? Choisis l'affirmation correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -5072,7 +5125,7 @@
    "numero": "10",
    "domaine": "fr.ecouter",
    "type": "qcm_multi",
-   "enonce": "Coche les deux dégâts que les rongeurs peuvent causer.",
+   "enonce": "Choisis les deux dégâts que les rongeurs peuvent causer.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
