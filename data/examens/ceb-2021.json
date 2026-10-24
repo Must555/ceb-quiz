@@ -763,6 +763,51 @@
    "titre": "La table des matières d'un atlas",
    "fichier": "assets/2021/liv5-p03.webp",
    "alt": "Table des matières d'un atlas. Belgique : régions 1, communautés 1, provinces 2, relief 3, hydrographie 4, utilisation du sol 5, climat 5, population 6, routes 6, chemin de fer 7, voies navigables 7, population 14, routes 15, chemin de fer 16, voies navigables 16. Europe : relief 8-9, cours d'eau 10, Union européenne 11-12, zone euro 13. Monde : monde politique 17-18, continents et océans 19-20, relief 21, grands cours d'eau 22, milieux naturels 23, climat 24, densité 25, grandes villes 26, migrations 26, richesse 26, principaux gisements 27, réserves de pétrole 28, fuseaux horaires 29."
+  },
+  {
+   "id": "liv5-p04",
+   "source": "livret",
+   "livret": 5,
+   "page": 4,
+   "titre": "Quatre images, quatre périodes",
+   "fichier": "assets/2021/liv5-p04.webp",
+   "alt": "Image A : gravure représentant un atelier d'imprimerie (16e siècle). Image B : capsule Apollo de retour de sa mission vers la Lune (20e siècle). Image C : casque celte (4e siècle avant J.-C.). Image D : extrait de la tapisserie de Bayeux représentant l'attaque d'un château (11e siècle)."
+  },
+  {
+   "id": "liv6-p10",
+   "source": "livret",
+   "livret": 6,
+   "page": 10,
+   "titre": "Le chapeau",
+   "fichier": "assets/2021/liv6-p10.webp",
+   "alt": "Photos d'un chapeau, d'un rouleau de ruban collant et du chapeau décoré porté par une élève. Plan du chapeau : un disque de 18 cm de diamètre et une hauteur de 25 cm."
+  },
+  {
+   "id": "liv6-p16",
+   "source": "livret",
+   "livret": 6,
+   "page": 16,
+   "titre": "Calendrier et programme d'été 2020",
+   "fichier": "assets/2021/liv6-p16.webp",
+   "alt": "Calendriers de juillet et d'aout 2020 (le 1er juillet est un mercredi, le 1er aout un samedi) et programme d'été : stages du 6 juillet au 14 aout, une semaine du lundi au vendredi ; 1re semaine judo, 2e football ou judo, 3e gymnastique ou football, 4e théâtre ou gymnastique, 5e natation ou théâtre, 6e natation ; le 3e samedi de juillet, grande brocante ; le 4e dimanche d'aout, kermesse."
+  },
+  {
+   "id": "liv8-p08",
+   "source": "livret",
+   "livret": 8,
+   "page": 8,
+   "titre": "L'opération posée",
+   "fichier": "assets/2021/liv8-p08.webp",
+   "alt": "Multiplication posée : 41 × 72 ; première ligne 82 ; deuxième ligne + 2 870 ; résultat 2 952."
+  },
+  {
+   "id": "liv9-p10",
+   "source": "livret",
+   "livret": 9,
+   "page": 10,
+   "titre": "Vivants - non vivants",
+   "fichier": "assets/2021/liv9-p10.webp",
+   "alt": "Tableau : une truite, un arbre et un ver de terre ont des échanges gazeux et sont vivants ; un pantin de bois et un ballon gonflable n'ont pas d'échange gazeux et ne sont pas vivants. Légende : deux flèches = échanges gazeux (dégage du gaz carbonique et absorbe de l'oxygène) ; croix = pas d'échange gazeux."
   }
  ],
  "questions": [
@@ -822,7 +867,7 @@
    "numero": "3",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "La visite que tu viens de vivre se déroule avec certitude dans un musée. Coche la proposition qui confirme que l'on est bien dans un musée.",
+   "enonce": "La visite que tu viens de vivre se déroule avec certitude dans un musée. Choisis la proposition qui confirme que l'on est bien dans un musée.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -937,7 +982,7 @@
    "numero": "8",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Quelle poupée correspond le plus à celle décrite durant la visite ? Coche la photo qui correspond à cette poupée (photos numérotées de 1 à 5, de gauche à droite).",
+   "enonce": "Quelle poupée correspond le plus à celle décrite durant la visite ? Choisis la photo qui correspond à cette poupée (photos numérotées de 1 à 5, de gauche à droite).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1044,7 +1089,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas le savoir"
+    "La visite ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -1075,7 +1120,7 @@
    "numero": "14",
    "domaine": "fr.ecouter",
    "type": "qcm_multi",
-   "enonce": "Tu veux jouer au diabolo. Coche les deux informations nécessaires pour jouer à ce jeu d'adresse.",
+   "enonce": "Tu veux jouer au diabolo. Choisis les deux informations nécessaires pour jouer à ce jeu d'adresse.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1213,11 +1258,11 @@
    "numero": "13a",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Complète chaque proposition le plus précisément possible.",
+   "enonce": "Complète chaque proposition. Sois le plus précis possible.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-triangles",
-   "texte": "Ce polygone est régulier et il a 3 angles : c'est un {1}.  ·  Ce quadrilatère a une et une seule paire de côtés parallèles et les deux autres côtés de même longueur : c'est un {2}.",
+   "texte": "Ce polygone est régulier et il a 3 angles. C'est un {1}.  ·  Ce polygone est un quadrilatère. Il a une et une seule paire de côtés parallèles et les deux autres côtés de même longueur. C'est un {2}.",
    "reponse": [
     [
      "triangle équilatéral",
@@ -1248,7 +1293,7 @@
    "numero": "18b",
    "domaine": "ma.geometrie",
    "type": "qcm",
-   "enonce": "Plan de stationnement : un automobiliste se gare en F8 (rue verte). Combien paie-t-il par heure ?",
+   "enonce": "Observe le plan de stationnement d'une ville. Un automobiliste se gare en F8. Quel tarif va-t-il payer, par heure, pour son stationnement ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-monnaie",
@@ -1397,7 +1442,7 @@
    "numero": "3d",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Observe la représentation du dé à douze faces (livret, page 5). Toutes ses faces sont identiques : ce sont des polygones réguliers. Écris leur nom.",
+   "enonce": "Observe la représentation de ce dé (livret, page 5). Toutes ses faces sont identiques. Ce sont des polygones réguliers. Écris leur nom.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
@@ -1421,7 +1466,7 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "texte_court",
-   "enonce": "Observe le quadrilatère tracé entre deux droites parallèles (livret, page 6). Écris son nom en deux mots : ce quadrilatère est un …",
+   "enonce": "Observe ce quadrilatère tracé au départ de deux droites parallèles (livret, page 6). Écris le nom de ce quadrilatère en deux mots : ce quadrilatère est un …",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
@@ -1921,7 +1966,7 @@
    "numero": "18a",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Observe le plan de stationnement. Écris les coordonnées (lettre + chiffre) des cases où le stationnement coute le plus cher.",
+   "enonce": "Observe le plan de stationnement d'une ville. Écris les coordonnées de toutes les cases où le stationnement coute le plus cher.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-monnaie",
@@ -1937,7 +1982,7 @@
    "numero": "18c",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Observe le plan de stationnement. Écris les cases du chemin le plus court pour aller de la place de la Libération à la Grand Place.",
+   "enonce": "Observe le plan de stationnement d'une ville. Un automobiliste se gare place de la Libération en A2. Il souhaite se rendre à pied sur la Grand Place. Écris les coordonnées de toutes les cases par lesquelles il va passer s'il emprunte le chemin le plus court.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-monnaie",
@@ -1964,7 +2009,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Dans le miniguide, à quelle page (province) trouve-t-on ces informations ?",
+   "enonce": "Dans le miniguide, à quelle page trouve-t-on des informations sur les activités suivantes ? Choisis la page consacrée à la province…",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -2056,7 +2101,7 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Que nous indiquent tous les titres du miniguide ?",
+   "enonce": "À chaque page du miniguide, il y a un titre. Que nous indiquent tous les titres ? Ils nous indiquent…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -2084,7 +2129,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "D'après le miniguide uniquement :",
+   "enonce": "En t'aidant uniquement des informations fournies dans le miniguide, choisis la colonne qui convient. Le contenu du miniguide permet-il de dire que c'est vrai ou faux ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -2101,7 +2146,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas savoir"
+    "Le contenu du miniguide ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -2116,7 +2161,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Ces informations ne sont pas dans le miniguide. À quelle province les associer ?",
+   "enonce": "Voici des informations qui ne se trouvent pas dans le miniguide. À quelle province pourrais-tu les associer ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-provinces",
@@ -2132,7 +2177,7 @@
    "lignes": [
     "Cet inventeur dispose à Dinant d'un espace qui lui est consacré.",
     "La collerette du Gille se porte aux épaules. Elle est réalisée à partir de ruban plissé blanc.",
-    "Cet artiste a déposé plus de 500 œuvres dans la ferme du Château de La Hulpe."
+    "Cet artiste a déposé plus de 500 œuvres dans la ferme du Château de la Hulpe."
    ],
    "colonnes": [
     "Brabant wallon",
@@ -2154,7 +2199,7 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Cinq des neuf boules sont accessibles au public. » Explique ce que veut dire « accessibles ».",
+   "enonce": "À la page 2 du miniguide, les auteurs écrivent : « Aujourd'hui, cinq des neuf boules sont accessibles au public. » Explique ce que veut dire « accessibles ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -2169,7 +2214,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Quels thèmes Jean-Michel Folon a-t-il choisis pour sensibiliser à la préservation de l'environnement ?",
+   "enonce": "D'après le miniguide, quels sont les différents thèmes choisis par Jean-Michel Folon pour nous sensibiliser à la préservation de l'environnement ? Choisis tous les thèmes.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -2235,7 +2280,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Les théâtres, modestement aménagés… » veut dire…",
+   "enonce": "À la page 5 du miniguide, les auteurs écrivent : « Les théâtres, modestement aménagés, sont des lieux privilégiés pour le spectacle. » « modestement aménagés » veut dire…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -2279,13 +2324,14 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Invente un titre pour chacun des trois paragraphes du texte sur l'abbaye d'Orval (situation, histoire, légende).",
+   "enonce": "Voici trois extraits du texte sur l'abbaye d'Orval. Invente un titre pour chacun des extraits.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
     "mg-5"
    ],
-   "reponseModele": "1. Où se trouve l'abbaye ? 2. L'histoire de l'abbaye. 3. La légende du nom « Orval »."
+   "reponseModele": "1. Où se trouve l'abbaye ? 2. L'histoire de l'abbaye. 3. La légende du nom « Orval ».",
+   "texte": "Extrait 1 : L'abbaye d'Orval se situe dans un vallon (une petite vallée) au sud de la Belgique, à un kilomètre de la frontière française.\nExtrait 2 : L'histoire de cette prestigieuse abbaye, construite par des moines italiens, débute en 1020. Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française.\nExtrait 3 : Une légende est à l'origine de son nom. On raconte qu'au Moyen Âge, la comtesse Mathilde de Toscane aurait perdu son alliance ornée de trois diamants dans une fontaine. C'est alors qu'une truite serait apparue miraculeusement avec l'anneau dans sa bouche. Heureuse d'avoir récupéré son bijou, la comtesse Mathilde aurait déclaré que cette région était un « Val d'Or ». C'est de cette légende que vient le nom « Orval »."
   },
   {
    "id": "ceb-2021-l4-q15",
@@ -2307,7 +2353,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Transforme le verbe en nom (exemple : le costume provient → la provenance du costume).",
+   "enonce": "Transforme le verbe en un nom comme dans l'exemple. Exemple : « Le costume du Gille provient d'un personnage de théâtre […]. » → « La provenance du costume du Gille. »",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
@@ -2315,7 +2361,7 @@
     "mg-5",
     "mg-6"
    ],
-   "texte": "L'abbaye se situe dans un vallon → la {1} de l'abbaye  ·  Adolphe Sax invente de nouveaux instruments → l'{2} de nouveaux instruments  ·  Des moines créent une brasserie → la {3} d'une brasserie",
+   "texte": "L'abbaye d'Orval se situe dans un vallon […]. → La {1} de l'abbaye d'Orval.  ·  Adolphe Sax invente de nouveaux instruments. → L'{2} de nouveaux instruments.  ·  Des moines créent une brasserie et une fromagerie. → La {3} d'une brasserie et d'une fromagerie.",
    "reponse": [
     [
      "situation"
@@ -2336,7 +2382,7 @@
    "numero": "17",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Ensuite, il en invente des nouveaux dont le plus connu est le saxophone. Cette invention fait évoluer les musiques militaires. » Le mot « invention » remplace…",
+   "enonce": "« Adolphe Sax perfectionne des instruments déjà existants comme la clarinette et la flute de pan. Ensuite, il en invente des nouveaux dont le plus connu est le saxophone. Cette invention fait évoluer les musiques militaires. » Dans cet extrait, de quoi parlent les auteurs en utilisant le mot « invention » ? Complète la phrase : le mot « invention » remplace…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -2356,7 +2402,7 @@
    "numero": "18",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "« Dans un premier temps, il perfectionne des instruments déjà existants. » Remplace « Dans un premier temps » par un autre groupe de mots de même sens.",
+   "enonce": "« Dans un premier temps, il perfectionne des instruments déjà existants comme la clarinette ou la flute de pan. » Remplace le groupe « Dans un premier temps » par un autre groupe de mots qui aura le même sens.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -2418,7 +2464,7 @@
    "numero": "20",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Comment les auteurs organisent-ils la description des aquarelles de Folon ?",
+   "enonce": "Les auteurs du miniguide décrivent les aquarelles de Jean-Michel Folon : « Ses aquarelles se caractérisent par l'utilisation de couleurs pastel et douces. On y trouve de drôles de petits bonshommes souvent coiffés d'un chapeau, des silhouettes qui flottent dans les airs, des éléments de la nature… » Comment les auteurs organisent-ils leur description ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -2426,9 +2472,9 @@
     "mg-2"
    ],
    "choix": [
-    "Ils expliquent les outils utilisés, puis décrivent les personnages.",
-    "Ils énumèrent tous les sujets et les objets choisis par Folon.",
-    "Ils décrivent d'abord les couleurs, ensuite les personnages et enfin ils citent d'autres éléments."
+    "Les auteurs expliquent les outils utilisés par le peintre, puis ils décrivent les personnages représentés.",
+    "Les auteurs décrivent les affiches réalisées en énumérant tous les sujets et les objets choisis par Jean-Michel Folon.",
+    "Les auteurs décrivent d'abord les couleurs, ensuite les personnages et enfin, ils citent d'autres éléments."
    ],
    "reponse": 2,
    "explication": "« couleurs pastel et douces… drôles de petits bonshommes… des éléments de la nature »."
@@ -2439,7 +2485,7 @@
    "numero": "21",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Réponds en te servant du miniguide (21a, 21b et 21c).",
+   "enonce": "Réponds en te servant du miniguide.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
@@ -2512,7 +2558,7 @@
    "numero": "21d",
    "domaine": "fr.lire",
    "type": "qcm_multi",
-   "enonce": "Adolphe Sax a perfectionné des instruments déjà existants. Lesquels ?",
+   "enonce": "Réponds en te servant du miniguide. Adolphe Sax a perfectionné des instruments de musique. Choisis-en deux.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -2607,7 +2653,7 @@
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
-   "texte": "Quelles chaines de montagnes se trouvent en France ? page(s) {1}  ·  Quel climat trouve-t-on en Amérique du Sud ? page {2}  ·  Puis-je payer en euros en Croatie ? page {3}",
+   "texte": "Quelles chaines de montagnes se trouvent en France ? page(s) {1}  ·  Quel type de climat trouve-t-on en Amérique du Sud ? page {2}  ·  Puis-je payer en euros en Croatie ? page {3}",
    "reponse": [
     [
      "8-9",
@@ -2635,7 +2681,7 @@
    "numero": "2a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "À quelle période conventionnelle appartient chaque image ? (Les images B, la capsule Apollo : époque contemporaine, et C, le casque celte : Antiquité, sont déjà données.)",
+   "enonce": "Chaque image illustre une période historique conventionnelle (livret, page 4). Image B : époque contemporaine. Image C : Antiquité. Choisis le nom des périodes manquantes pour les images A et D.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
@@ -2657,7 +2703,10 @@
     ],
     2
    ],
-   "explication": "16e siècle : Temps modernes (le corrigé accepte aussi le Moyen Âge pour la gravure). 11e siècle : Moyen Âge."
+   "explication": "16e siècle : Temps modernes (le corrigé accepte aussi le Moyen Âge pour la gravure). 11e siècle : Moyen Âge.",
+   "documents": [
+    "liv5-p04"
+   ]
   },
   {
    "id": "ceb-2021-l5-q2b",
@@ -2730,7 +2779,7 @@
    "numero": "5a",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Le théâtre de marionnettes (Liège) se situe plutôt… du musée Folon (La Hulpe).",
+   "enonce": "Le théâtre de marionnettes liégeoises se situe plutôt…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -2738,10 +2787,10 @@
     "mg-0"
    ],
    "choix": [
-    "au nord",
-    "au sud",
-    "à l'ouest",
-    "à l'est"
+    "au nord du musée Folon.",
+    "au sud du musée Folon.",
+    "à l'ouest du musée Folon.",
+    "à l'est du musée Folon."
    ],
    "reponse": 3,
    "explication": "Liège est à l'est de La Hulpe (Brabant wallon)."
@@ -2752,7 +2801,7 @@
    "numero": "5a2",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Pour aller de l'Atomium (Bruxelles) à Binche, on prend la direction…",
+   "enonce": "Pour aller de l'Atomium à Binche, on prendra la direction…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -2774,12 +2823,12 @@
    "numero": "5b",
    "domaine": "hg.geographie",
    "type": "texte_court",
-   "enonce": "Quel pays limitrophe de la Belgique est le plus proche de l'abbaye d'Orval ?",
+   "enonce": "Écris le nom du pays limitrophe* de la Belgique qui est le plus proche de l'abbaye d'Orval. (* Pays limitrophe : pays voisin, qui a des frontières communes.)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-belgique",
    "documents": [
-    "mg-5"
+    "mg-0"
    ],
    "reponse": [
     "la France",
@@ -2857,7 +2906,7 @@
    "numero": "6b",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Document A (photo aérienne de Liège) : entoure les deux caractéristiques dominantes du lieu.",
+   "enonce": "Document A (photo aérienne de Liège) : choisis les deux caractéristiques dominantes du lieu.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2919,7 +2968,7 @@
    "numero": "10c",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Combien de temps dure la gestation de la biche (cerf) ?",
+   "enonce": "Combien de temps la gestation du Cerf dure-t-elle ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-reproduction",
@@ -2940,7 +2989,7 @@
    "numero": "11a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "L'affiche du 12 mai 1940 (« reproduite à l'identique en 2020 ») est…",
+   "enonce": "Observe ce document. Le document est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3008,7 +3057,7 @@
    "numero": "11d",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "L'avis concerne les hommes âgés de plus de 16 ans et de moins de 30 ans en 1940. Ils sont nés…",
+   "enonce": "Observe le document. Entre quelles années sont nées les personnes concernées par le document ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -3030,7 +3079,7 @@
    "numero": "11e",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Pour chaque affirmation, que permet le document ?",
+   "enonce": "Pour chaque affirmation, choisis la colonne qui convient.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3039,15 +3088,15 @@
    ],
    "lignes": [
     "Jean, élève de 6e primaire, ne doit pas partir.",
-    "Pour se rendre à Erquelinnes, le train est gratuit pour les personnes concernées.",
-    "Les hommes de moins de 1 m 70 ne sont pas concernés.",
+    "Pour se rendre à Erquelinnes, le transport en train est gratuit pour les personnes concernées par l'avis.",
+    "Les hommes mesurant moins de 1 m 70 ne sont pas concernés par cet avis.",
     "Le ministre de la Défense en 1940 s'appelle Monsieur Denis.",
     "Gérard, qui a 34 ans, ne doit pas se rendre à Erquelinnes."
    ],
    "colonnes": [
-    "Je l'ai lu",
-    "Je peux le déduire",
-    "Je ne peux pas le déduire"
+    "Je l'ai lu dans le document",
+    "Je ne l'ai pas lu dans le document mais je peux le déduire",
+    "Je ne l'ai pas lu dans le document et je ne peux pas le déduire"
    ],
    "reponse": [
     1,
@@ -3332,7 +3381,7 @@
    "numero": "2",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Nafissatou Thiam saute 5,38 m, 6,26 m, 5,79 m, 5,93 m et 6,42 m. Quelle est la longueur moyenne de ses sauts (en m) ?",
+   "enonce": "Nafissatou Thiam, notre meilleure athlète belge actuelle, s'entraine au saut en longueur. 1er saut : 5,38 m ; 2e saut : 6,26 m ; 3e saut : 5,79 m ; 4e saut : 5,93 m ; 5e saut : 6,42 m. Calcule la longueur moyenne de ses sauts. La longueur moyenne des sauts est de … m.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-moyenne",
@@ -3374,28 +3423,48 @@
    "numero": "4",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Complète (exemple : un centième de mètre, c'est un cm, centimètre).",
+   "enonce": "Complète le tableau : écris l'abréviation de l'étalon, puis l'étalon en toutes lettres. Exemple : un centième de mètre, c'est un… cm, centimètre.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "Un dixième de litre, c'est un {1}  ·  Un millième de mètre, c'est un {2}  ·  Mille grammes, c'est un {3}",
+   "texte": "Un dixième de litre, c'est un… abréviation : {1} ; en toutes lettres : {2}  ·  Un millième de mètre, c'est un… abréviation : {3} ; en toutes lettres : {4}  ·  Mille grammes, c'est un… abréviation : {5} ; en toutes lettres : {6}",
    "reponse": [
     [
-     "dl",
+     "dl"
+    ],
+    [
      "décilitre",
      "decilitre"
     ],
     [
-     "mm",
+     "mm"
+    ],
+    [
      "millimètre",
      "millimetre"
     ],
     [
-     "kg",
+     "kg"
+    ],
+    [
      "kilogramme"
     ]
    ],
-   "explication": "déci = 1/10, milli = 1/1000, kilo = 1000."
+   "explication": "déci = 1/10, milli = 1/1000, kilo = 1000.",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2021-l6-q5",
@@ -3403,14 +3472,14 @@
    "numero": "5",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Document Aqua Passion : écris un nombre et son étalon pour chaque type de grandeur.",
+   "enonce": "Observe le document Aqua Passion. Complète le tableau avec une information prélevée dans le document : écris un nombre et son étalon. Exemple : un prix → 79,99 €.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
    "documents": [
     "aqua"
    ],
-   "texte": "Une capacité : {1}  ·  Une longueur : {2}  ·  Une masse : {3}  ·  Une température : {4}  ·  Une durée : {5}",
+   "texte": "Une capacité : {1}  ·  Une longueur : {2}  ·  Une masse : {3}  ·  Une durée : {4}  ·  Une température : {5}",
    "reponse": [
     [
      "72 l",
@@ -3431,6 +3500,14 @@
     [
      "250 g",
      "250g"
+    ],
+    [
+     "8 jours",
+     "9 jours",
+     "8 j",
+     "9 j",
+     "du 16 juin au 24 juin",
+     "du 16 juin 2020 au 24 juin 2020"
     ],
     [
      "20 °C",
@@ -3544,14 +3621,6 @@
      "entre 20 et 34°C",
      "entre 20° et 34°",
      "entre 20 et 34"
-    ],
-    [
-     "8 jours",
-     "9 jours",
-     "8 j",
-     "9 j",
-     "du 16 juin au 24 juin",
-     "du 16 juin 2020 au 24 juin 2020"
     ]
    ],
    "explication": "Capacité : 72 l, 100 l ou 100 ml ; longueur : 60, 30 ou 40 cm ; masse : 250 g ; durée : 8 jours ou 9 jours (du 16 au 24 juin) ; température : toute valeur de 20 à 34 °C indiquée dans le document convient."
@@ -3562,7 +3631,7 @@
    "numero": "6a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Une boite de nourriture contient 250 g. J'utilise 5 g par jour. Pendant combien de jours puis-je nourrir mes poissons ?",
+   "enonce": "Observe le document Aqua Passion. Pour nourrir les poissons, j'utilise en moyenne 5 g de nourriture en flocons par jour. Calcule le nombre de jours pendant lesquels je peux nourrir mes poissons avec cette boite entière.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -3598,7 +3667,7 @@
    "numero": "7",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un client achète 2 boites de nourriture (8,50 € pièce), 1 flacon O'Pure (3,90 €), 5 platys (13,50 € les 5) et 1 scalaire (6,90 €). Il reçoit une ristourne de 10 %. Combien paie-t-il (en €) ?",
+   "enonce": "Un client se rend au magasin Aqua Passion. Il achète : 2 boites de nourriture en flocons « Bubulle » ; 1 flacon de produit « O'Pure » ; 5 poissons « platy » ; 1 poisson « scalaire ». Le vendeur lui accorde une ristourne de 10 %. Calcule la somme qu'il doit payer (en €).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-pourcentages",
@@ -3616,7 +3685,7 @@
    "numero": "8",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Scalaires : 18,90 € pour 3 chez Aqua Passion, 31 € pour 5 chez Dori. Quelle est la différence de prix pour 15 poissons (en €) ?",
+   "enonce": "Voici le prix des scalaires dans deux magasins différents. Chez Aqua Passion : 18,90 € pour 3 poissons. Chez Dori : 31 € pour 5 poissons. Je souhaite acheter 15 poissons. Calcule la différence de prix entre ces magasins pour l'achat de 15 poissons (en €).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
@@ -3631,14 +3700,14 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Platy : 13,50 € pour 5. Complète le tableau.",
+   "enonce": "Voici une information prélevée du document Aqua Passion : « Platy, 13,50 € pour 5 ». Complète le tableau.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
    "documents": [
     "aqua"
    ],
-   "texte": "1 poisson : {1} €  ·  {2} poissons : 8,10 €  ·  10 poissons : {3} €",
+   "texte": "1 poisson : {1} €  ·  {2} poissons : 8,10 €  ·  5 poissons : 13,50 €  ·  10 poissons : {3} €",
    "reponse": [
     [
      "2,70",
@@ -3660,7 +3729,7 @@
    "numero": "10",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Observe les récipients : 1 (≈ 210 ml), 2 (≈ 0,5 l), 3 (≈ 1,75 dl), 4 (≈ 0,3 l).",
+   "enonce": "Observe les récipients dans le portfolio.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -3684,7 +3753,7 @@
    "numero": "13a",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Le bas du chapeau est un cercle de 18 cm de diamètre. Quelle longueur de ruban faut-il environ pour en faire le tour ?",
+   "enonce": "Des élèves confectionnent un chapeau. Pour décorer le bas du chapeau, les élèves vont utiliser du ruban collant. Observe le plan du chapeau (livret, page 10). Pour faire le tour du chapeau comme proposé sur la photo, la longueur du ruban doit être d'environ…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-cercle",
@@ -3696,7 +3765,10 @@
     "75 cm"
    ],
    "reponse": 3,
-   "explication": "Circonférence ≈ 3,14 × 18 ≈ 56,5 cm, donc environ 57 cm."
+   "explication": "Circonférence ≈ 3,14 × 18 ≈ 56,5 cm, donc environ 57 cm.",
+   "documents": [
+    "liv6-p10"
+   ]
   },
   {
    "id": "ceb-2021-l6-q13b",
@@ -3704,7 +3776,7 @@
    "numero": "13b",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Combien de carrés entiers de 25 cm de côté peut-on découper dans une feuille de 50 cm sur 70 cm ?",
+   "enonce": "Pour réaliser le dessus d'un chapeau, on a besoin d'un carton carré de 25 cm de côté. Combien de cartons carrés entiers peut-on découper dans une grande feuille cartonnée de 70 cm sur 50 cm ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -3717,7 +3789,7 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Au parc à conteneurs, on peut déposer 1 m³ par jour. Combien de caisses de 50 cm × 50 cm × 25 cm peut-on déposer au maximum ?",
+   "enonce": "Au parc à conteneurs (à la déchetterie), on peut déposer 1 m³ de déchets par jour, au maximum. Une caisse en carton mesure 50 cm × 50 cm × 25 cm. Calcule le nombre maximum de caisses semblables que l'on peut déposer par jour.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-volumes",
@@ -3731,7 +3803,7 @@
    "numero": "17a",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Stages d'été du lundi 6 juillet 2020 au vendredi 14 aout, une semaine chacun. Le théâtre a lieu la 4e ou la 5e semaine. Quelle semaine est possible ?",
+   "enonce": "Voici le programme des activités organisées dans un village durant l'été (livret, page 16). Tu voudrais participer à un stage de théâtre. Choisis une semaine possible.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -3742,7 +3814,10 @@
     "du 13 au 17 juillet"
    ],
    "reponse": 1,
-   "explication": "Semaines : 6-10, 13-17, 20-24, 27-31 juillet (4e), 3-7 aout (5e)."
+   "explication": "Semaines : 6-10, 13-17, 20-24, 27-31 juillet (4e), 3-7 aout (5e).",
+   "documents": [
+    "liv6-p16"
+   ]
   },
   {
    "id": "ceb-2021-l6-q17b",
@@ -3750,7 +3825,7 @@
    "numero": "17b",
    "domaine": "ma.grandeurs",
    "type": "texte_court",
-   "enonce": "La kermesse a lieu le 4e dimanche d'aout 2020 (le 2 aout 2020 est un dimanche). Écris sa date (jour/mois/année).",
+   "enonce": "Observe le programme d'été et le calendrier (livret, page 16). Écris la date de la kermesse (jour/mois/année).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -3764,7 +3839,10 @@
     "23 août 2021",
     "23 aout 2021"
    ],
-   "explication": "Dimanches d'aout : 2, 9, 16, 23. Le 4e est le 23/08/2020."
+   "explication": "Dimanches d'aout : 2, 9, 16, 23. Le 4e est le 23/08/2020.",
+   "documents": [
+    "liv6-p16"
+   ]
   },
   {
    "id": "ceb-2021-l6-q17c",
@@ -3794,7 +3872,7 @@
    "numero": "17d",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Le 31 aout 2020 est un lundi. Le 1er septembre 2020 sera un…",
+   "enonce": "Observe le calendrier (livret, page 16). En 2020, le 1er septembre sera un…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
@@ -3805,7 +3883,10 @@
     "dimanche"
    ],
    "reponse": 1,
-   "explication": "Le lendemain d'un lundi est un mardi."
+   "explication": "Le lendemain d'un lundi est un mardi.",
+   "documents": [
+    "liv6-p16"
+   ]
   },
   {
    "id": "ceb-2021-l6-q1",
@@ -3926,13 +4007,13 @@
    "numero": "18",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Observe les trois photos du livret (page 18) et lis chaque mesure. Les propositions du livret sont indiquées entre parenthèses.",
+   "enonce": "Observe les trois photos (livret, page 18). Écris la mesure correcte, choisie parmi les propositions entre parenthèses.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
     "liv6-p18"
    ],
-   "texte": "a) Quantité de liquide contenu dans la seringue : {1} (30 ml, 35 ml, 40 ml ou 50 ml)  ·  b) Diamètre de la balle : {2} (0 cm, 0,4 cm, 2,5 cm ou 4 cm)  ·  c) Contour du rouleau : environ {3} (6 cm, 34 cm, 40 cm ou 46 cm)",
+   "texte": "a) La quantité de liquide contenu dans la seringue est de… {1} (30 ml, 35 ml, 40 ml ou 50 ml)  ·  b) Le diamètre de la balle mesure… {2} (0 cm, 0,4 cm, 2,5 cm ou 4 cm)  ·  c) Le contour du rouleau mesure environ… {3} (6 cm, 34 cm, 40 cm ou 46 cm)",
    "reponse": [
     [
      "35 ml",
@@ -3994,7 +4075,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« …un verdier un peu espiègle que, le matin, elle était toute surprise de ne pas trouver perché au bout de sa jambe de plâtre. » Quel oiseau Brigitte était-elle surprise de ne pas trouver ?",
+   "enonce": "Lis cette phrase du texte : « Sa nuit était peuplée de merles et de pinsons, de pies bavardes, d'un rouge-gorge propriétaire et d'un verdier un peu espiègle que, le matin, elle était toute surprise de ne pas trouver perché au bout de sa jambe de plâtre. » Quel(s) oiseau(x), Brigitte était-elle surprise de ne pas trouver au bout de sa jambe de plâtre ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-reprises",
@@ -4003,7 +4084,7 @@
    ],
    "choix": [
     "un verdier",
-    "un rouge-gorge",
+    "un rougegorge",
     "un verdier et une pie",
     "une pie"
    ],
@@ -4048,7 +4129,7 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Argument de Brigitte : « Les oiseaux seraient bien dans la cuisine. » La grand-mère est-elle d'accord ?",
+   "enonce": "Voici un argument utilisé par Brigitte pour convaincre sa grand-mère : « Les oiseaux seraient bien dans la cuisine. » La grand-mère est-elle d'accord avec cet argument ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4136,7 +4217,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Un lecteur a compris : « Brigitte a froid dans le dos car il ne fait pas chaud dans la pièce. » A-t-il bien compris ?",
+   "enonce": "Lis l'extrait du texte qui commence par « Pour conclure, la grand-mère eut cette phrase terrible ». Voici ce qu'un lecteur a compris : « Brigitte a froid dans le dos, car il ne fait pas chaud dans la pièce où elle se trouve. » A-t-il bien compris ce que l'auteur veut dire ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-expressions",
@@ -4172,7 +4253,7 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "« […] ça n'est pas pour lui que tu veux un oiseau : c'est pour toi. » Que remplacent les pronoms ?",
+   "enonce": "Lis cet extrait du texte : « […] ça n'est pas pour lui que tu veux un oiseau : c'est pour toi. Son bonheur, tu t'en fiches : c'est le tien qui t'intéresse. » Que remplacent les pronoms « lui », « toi » et « tu » de la première phrase ?",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -4224,7 +4305,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Quel est le temps de ces verbes du texte ? (Exemple donné dans l'épreuve : « raconta » est au passé simple.)",
+   "enonce": "Lis cet extrait du texte : « Elle raconta comment, lorsqu'elle s'était mariée, tous les deux avaient installé la cage dans laquelle ils élevaient des chardonnerets : — Cela se faisait à l'époque parce que le chardonneret s'élève facilement. Il est agréable et il chante beaucoup […] » Quel est le temps verbal (temps de la conjugaison) de ces verbes ? Un verbe est déjà placé : « raconta » est au passé simple.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "fr-conjugaison-temps-simples",
@@ -4255,7 +4336,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Le chardonneret s'élève facilement » veut dire…",
+   "enonce": "Lis cette phrase du texte : « Cela se faisait à l'époque parce que le chardonneret s'élève facilement. » Dans le texte, « s'élève facilement » veut dire…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -4277,7 +4358,7 @@
    "numero": "13",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Nous étions heureux. Et puis il y a eu la guerre. » Quel groupe de mots relie ces deux phrases ?",
+   "enonce": "Lis cet extrait du texte : « Il est agréable et il chante beaucoup, surtout quand on lui donne de la graine de chanvre. Nous étions heureux. Et puis il y a eu la guerre. Ton grand-père est parti soldat. » Parmi les mots ou groupes de mots ci-dessous, lequel sert à relier deux phrases ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -4285,12 +4366,12 @@
     "gm-2"
    ],
    "choix": [
+    "surtout",
+    "Nous",
     "Et puis",
-    "il y a eu",
-    "la guerre",
-    "Nous étions"
+    "est parti"
    ],
-   "reponse": 0,
+   "reponse": 2,
    "explication": "« Et puis » est un organisateur (connecteur) de temps."
   },
   {
@@ -4309,8 +4390,8 @@
     "gm-3"
    ],
    "lignes": [
-    "« c'est comme si tu lui disais : Entre, mon ami ! Un festin est servi à l'intérieur ! »",
-    "L'hirondelle cimente son nid avec la boue des chemins et part l'hiver dans les pays chauds."
+    "« Eh bien ! c'est comme si tu lui disais : Entre, mon ami ! Un festin est servi à l'intérieur ! »",
+    "« […] l'hirondelle qui, au printemps, contre la poutre de la grange, cimente son nid avec la boue des chemins, le quitte en septembre pour aller passer l'hiver dans les pays chauds et le retrouve au printemps suivant pour y faire une nouvelle nichée. »"
    ],
    "colonnes": [
     "Réel",
@@ -4385,7 +4466,7 @@
    "numero": "17",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Pourquoi le grand-père a-t-il rangé la cage dans la grange en rentrant de la guerre ?",
+   "enonce": "En rentrant de la guerre, le grand-père a rangé définitivement la cage dans la grange. Pour quelle raison ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4394,10 +4475,10 @@
     "gm-3"
    ],
    "choix": [
-    "Il pensait que la grand-mère ne voulait plus entendre chanter les oiseaux.",
-    "Il n'y avait plus de graines de chanvre.",
-    "Il ne voulait plus faire vivre aux oiseaux ce qu'il avait vécu lui-même.",
-    "Il préférait s'occuper de pigeons voyageurs."
+    "Parce qu'il pensait que la grand-mère ne voulait plus entendre chanter les oiseaux.",
+    "Parce qu'il n'y avait plus de graines de chanvre à donner aux oiseaux pour qu'ils chantent.",
+    "Parce qu'il ne voulait plus faire vivre aux oiseaux ce qu'il avait vécu lui-même durant la guerre.",
+    "Parce qu'il préférait s'occuper d'autres oiseaux comme le pigeon voyageur."
    ],
    "reponse": 2,
    "explication": "Prisonnier derrière les barbelés, il a compris ce que vit un oiseau en cage."
@@ -4425,7 +4506,7 @@
    "colonnes": [
     "Vrai",
     "Faux",
-    "On ne peut pas savoir"
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     2,
@@ -4465,7 +4546,7 @@
     "Le geai"
    ],
    "colonnes": [
-    "Il utilise de la boue pour son nid.",
+    "Il utilise de la boue pour fabriquer son nid.",
     "Il parcourt de grandes distances pour rentrer chez lui.",
     "Il brise parfois ses œufs et part vivre ailleurs.",
     "Il fonce contre son grillage jusqu'à la mort."
@@ -4492,11 +4573,11 @@
     "Elle fait une bise au monsieur qui est habillé en soldat."
    ],
    "colonnes": [
-    "S – V – CD – CI",
-    "S – V – CD",
-    "CC – S – V – CC",
-    "S – V – CC – CD",
-    "S – V – attribut"
+    "Sujet – Verbe – Complément direct du verbe – Complément indirect du verbe",
+    "Sujet – Verbe – Complément direct du verbe",
+    "Complément circonstanciel – Sujet – Verbe – Complément circonstanciel",
+    "Sujet – Verbe – Complément circonstanciel – Complément direct du verbe",
+    "Sujet – Verbe – Attribut du sujet"
    ],
    "reponse": [
     1,
@@ -4511,7 +4592,7 @@
    "numero": "22",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "Schéma narratif (l'action = E, la résolution = B). Quelle phrase correspond à chaque étape ?",
+   "enonce": "Le texte est organisé selon une structure particulière : la structure narrative. Voici des phrases qui pourraient résumer chacune des étapes. Deux étapes sont déjà indiquées : l'action (E. La grand-mère s'oppose à l'idée de Brigitte et lui explique pourquoi.) et la résolution (B. La grand-mère fait prendre conscience à Brigitte qu'un oiseau enfermé dans une cage est malheureux.). Choisis la phrase qui correspond à chacune des autres étapes.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -4527,8 +4608,8 @@
    ],
    "colonnes": [
     "A. Brigitte veut élever un oiseau dans une cage.",
-    "C. Brigitte est en convalescence chez sa grand-mère et rêve d'oiseaux.",
-    "D. Brigitte a compris pourquoi les oiseaux sont mieux en liberté."
+    "C. Brigitte est en convalescence chez sa grand-mère et elle rêve d'oiseaux chaque nuit.",
+    "D. Grâce à sa grand-mère, Brigitte a compris pourquoi les oiseaux sont mieux en liberté."
    ],
    "reponse": [
     1,
@@ -4619,7 +4700,7 @@
    "numero": "2a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 99 × 85, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 67 × 101,01, c'est à peu près : 167 – 670 – 6 700 – 10 167 » (on a estimé le résultat de l'opération). À toi. Estime : 99 × 85, c'est à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -4638,7 +4719,7 @@
    "numero": "2b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 1 213 : 4, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 67 × 101,01, c'est à peu près : 167 – 670 – 6 700 – 10 167 » (on a estimé le résultat de l'opération). À toi. Estime : 1 213 : 4, c'est à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -4657,7 +4738,7 @@
    "numero": "2c",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 15 896 − 7 985, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 67 × 101,01, c'est à peu près : 167 – 670 – 6 700 – 10 167 » (on a estimé le résultat de l'opération). À toi. Estime : 15 896 − 7 985, c'est à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -4676,7 +4757,7 @@
    "numero": "2d",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Estime : 2 537 + 10 098, c'est à peu près…",
+   "enonce": "Observe l'exemple : « 67 × 101,01, c'est à peu près : 167 – 670 – 6 700 – 10 167 » (on a estimé le résultat de l'opération). À toi. Estime : 2 537 + 10 098, c'est à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
@@ -4836,7 +4917,7 @@
    "points": 6,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
-   "texte": "840 : 7 = (700 + {1}) : 7  ·  3 × 71 × 20 = 20 × 71 × {2}  ·  24 × 150 = {3} × 300  ·  3 627 − 1 995 = {4} − 2 000  ·  7,92 + 18 + 5,08 + 82 = 100 + {5}  ·  79 × 98 = (79 × 100) − (79 × {6})",
+   "texte": "840 : 7 = (700 + {1}) : 7  ·  3 × 71 × 20 = 20 × 71 × {2}  ·  24 × 150 = {3} × 300  ·  3 627 − 1 995 = {4} − 2 000  ·  7,92 + 18 + 5,08 + 82 = 100 + {5}  ·  79 × 98 = (79 × 100) − ({6})",
    "reponse": [
     [
      "140"
@@ -4855,7 +4936,14 @@
      "13"
     ],
     [
-     "2"
+     "79 × 2",
+     "79 x 2",
+     "79x2",
+     "79×2",
+     "2 × 79",
+     "2 x 79",
+     "2x79",
+     "2×79"
     ]
    ],
    "explication": "840 − 700 = 140 ; commutativité ; 24 : 2 et 150 × 2 ; on ajoute 5 aux deux termes ; 7,92 + 5,08 = 13 et 18 + 82 = 100 ; 98 = 100 − 2."
@@ -4866,23 +4954,51 @@
    "numero": "8",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Dans la multiplication posée 41 × 72 : 82, puis 2 870, total 2 952.",
+   "enonce": "Observe la multiplication posée 41 × 72 (livret, page 8). Complète les trois phrases.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
-   "texte": "82 est le résultat de 41 × {1}  ·  2 870 est le résultat de 41 × {2}  ·  2 952 est le résultat de 41 × {3}",
+   "texte": "82 est le résultat de l'opération {1}  ·  2 870 est le résultat de l'opération {2}  ·  2 952 est le résultat de l'opération {3}",
    "reponse": [
     [
-     "2"
+     "41 × 2",
+     "41 x 2",
+     "41x2",
+     "41×2",
+     "2 × 41",
+     "2 x 41",
+     "2x41",
+     "2×41"
     ],
     [
-     "70"
+     "41 × 70",
+     "41 x 70",
+     "41x70",
+     "41×70",
+     "70 × 41",
+     "70 x 41",
+     "70x41",
+     "70×41"
     ],
     [
-     "72"
+     "41 × 72",
+     "41 x 72",
+     "41x72",
+     "41×72",
+     "72 × 41",
+     "72 x 41",
+     "72x41",
+     "72×41",
+     "2 870 + 82",
+     "82 + 2 870",
+     "2870 + 82",
+     "82 + 2870"
     ]
    ],
-   "explication": "41 × 72 = 41 × 2 + 41 × 70 = 82 + 2 870 = 2 952."
+   "explication": "41 × 72 = 41 × 2 + 41 × 70 = 82 + 2 870 = 2 952.",
+   "documents": [
+    "liv8-p08"
+   ]
   },
   {
    "id": "ceb-2021-l8-q10",
@@ -4957,7 +5073,7 @@
    "numero": "13",
    "domaine": "ma.arithmetique",
    "type": "ordre",
-   "enonce": "Range ces résultats du moins élevé au plus élevé.",
+   "enonce": "Voici les résultats d'un élève aux contrôles de français. Range les résultats du moins élevé au plus élevé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
@@ -5089,13 +5205,15 @@
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
-   "texte": "17,5 − 3,2 = 14,3 donc 14,3 + 3,2 = {1}  ·  3,6 × 50 = 180 donc 180 : 50 = {2}",
+   "texte": "17,5 − 3,2 = 14,3 donc {1}  ·  3,6 × 50 = 180 donc {2}",
    "reponse": [
     [
-     "17,5"
+     "14,3 + 3,2 = 17,5",
+     "14,3+3,2=17,5"
     ],
     [
-     "3,6"
+     "180 : 50 = 3,6",
+     "180:50=3,6"
     ]
    ],
    "explication": "L'addition est la réciproque de la soustraction ; la division, de la multiplication."
@@ -5106,7 +5224,7 @@
    "numero": "17a",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "326 × 75 = ?",
+   "enonce": "Choisis la décomposition correcte. 326 × 75 = …",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -5124,7 +5242,7 @@
    "numero": "17b",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "16 × 123 = ?",
+   "enonce": "Choisis la décomposition correcte. 16 × 123 = …",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calcul-mental",
@@ -5196,7 +5314,7 @@
    "numero": "20",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "3 934 : 7 = 562. Quelle démarche ne permet PAS de vérifier ce résultat ?",
+   "enonce": "Observe cette division : 3 934 : 7 = 562. Quelle est la seule démarche qui ne permet pas de vérifier le résultat de cette division ? N'effectue aucun calcul.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -5440,27 +5558,32 @@
    "numero": "1",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Quel sens ou quel organe ?",
+   "enonce": "Nous faisons appel à nos sens dans la vie de tous les jours, par exemple, lorsque nous préparons du popcorn. Complète les phrases à l'aide du nom du sens qui est utilisé. Puis, lors d'un travail en classe, des élèves décrivent différents objets à l'aide d'adjectifs : écris le nom de l'organe des sens qu'ils ont utilisé pour décrire chaque objet (exemple : « Long, bleu » → l'œil).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
-   "texte": "Entendre le maïs sauter : l'{1}  ·  Sentir le parfum du popcorn : l'{2}  ·  Froid, rugueux : organe = la {3}  ·  Sucré, acide : organe = la {4}",
+   "texte": "Le sens qui te permet d'entendre le bruit des grains de maïs sautant contre le couvercle de la casserole est : {1}  ·  Le sens qui te permet de sentir le délicieux parfum du popcorn est : {2}  ·  Froid, rugueux → organe des sens : {3}  ·  Sucré, acide → organe des sens : {4}",
    "reponse": [
     [
      "ouïe",
-     "ouie"
+     "ouie",
+     "l'ouïe",
+     "l'ouie"
     ],
     [
-     "odorat"
+     "odorat",
+     "l'odorat"
     ],
     [
-     "peau"
+     "peau",
+     "la peau"
     ],
     [
      "langue",
      "papilles gustatives",
      "les papilles gustatives",
-     "les papilles"
+     "les papilles",
+     "la langue"
     ]
    ],
    "explication": "Ouïe, odorat ; le toucher par la peau ; le goût par la langue."
@@ -5506,12 +5629,14 @@
    "numero": "2b",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Pourquoi une plante peut-elle pousser sur un mur ? Coche les trois bonnes réponses.",
+   "enonce": "En te basant sur ces expériences, pourquoi une plante peut-elle pousser sur un mur ? Choisis les trois affirmations correctes. Une plante peut pousser sur un mur parce que…",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-plantes",
    "documents": [
-    "veg-a"
+    "veg-a",
+    "veg-b",
+    "veg-c"
    ],
    "choix": [
     "de l'eau s'est infiltrée dans le mur.",
@@ -5557,11 +5682,12 @@
    "numero": "3c",
    "domaine": "sc.vivant",
    "type": "texte_court",
-   "enonce": "Écris le nom d'un animal du portfolio (animaux des forêts) qui a le même cycle de vie que le cerf.",
+   "enonce": "Écris le nom d'un animal du portfolio qui a un cycle de vie identique à celui du cerf et de la biche.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-reproduction",
    "documents": [
+    "cerf",
     "foret"
    ],
    "reponse": [
@@ -5604,11 +5730,14 @@
    "numero": "6a",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Truite, arbre, ver de terre : vivants et échanges gazeux. Pantin de bois, ballon : non vivants, pas d'échange gazeux. Écris une conclusion.",
+   "enonce": "Observe le tableau et sa légende (livret, page 10). Avec les informations du tableau et de la légende, écris une phrase qui pourrait servir de conclusion.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
-   "reponseModele": "Les êtres vivants font des échanges gazeux (ils respirent) ; les non-vivants n'en font pas."
+   "reponseModele": "Les êtres vivants font des échanges gazeux (ils respirent) ; les non-vivants n'en font pas.",
+   "documents": [
+    "liv9-p10"
+   ]
   },
   {
    "id": "ceb-2021-l9-q6b",
@@ -5616,7 +5745,7 @@
    "numero": "6b",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Un pou : échanges gazeux ? vivant ?",
+   "enonce": "Voici un nouvel élément : un pou. Fait-il des échanges gazeux (dégage du gaz carbonique et absorbe de l'oxygène) ? Est-il vivant ou non vivant ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5626,7 +5755,10 @@
     "Pas d'échange gazeux, non vivant"
    ],
    "reponse": 0,
-   "explication": "Le pou est un animal : il respire, il est vivant."
+   "explication": "Le pou est un animal : il respire, il est vivant.",
+   "documents": [
+    "liv9-p10"
+   ]
   },
   {
    "id": "ceb-2021-l9-q6c",
@@ -5634,7 +5766,7 @@
    "numero": "6c",
    "domaine": "sc.vivant",
    "type": "qcm_multi",
-   "enonce": "Coche les trois propositions qui correspondent à la définition d'un organisme vivant.",
+   "enonce": "Choisis les trois propositions qui correspondent à la définition d'un organisme vivant.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5660,20 +5792,22 @@
    "numero": "7d",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Le cloporte est plus proche du gloméris que du carabe violet. Quel attribut le justifie ?",
+   "enonce": "Le cloporte est un petit crustacé terrestre. Lis le tableau (livret, page 14). D'après ce tableau, le cloporte est plus proche du gloméris que du carabe violet. Quel attribut justifie cette affirmation ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
    "documents": [
-    "jardin"
+    "liv9-p14"
    ],
    "choix": [
     "Bouche, yeux",
+    "Corps annelé",
     "Squelette externe, pattes articulées",
+    "Mandibules, antennes",
     "3 paires de pattes articulées",
     "Au moins une paire de pattes articulées sur tous les segments"
    ],
-   "reponse": 3,
+   "reponse": 5,
    "explication": "Le cloporte et le gloméris ont des pattes sur tous les segments ; le carabe (insecte) a 3 paires de pattes."
   },
   {
@@ -5682,7 +5816,7 @@
    "numero": "8a",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Expérience 1 (bouteille entre glaçons et eau chaude) : à quelle question répond-elle ?",
+   "enonce": "Observe l'expérience 1. À quelle question répond l'expérience ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-ecosystemes",
@@ -5772,11 +5906,11 @@
    "numero": "9a",
    "domaine": "sc.energie",
    "type": "trous",
-   "enonce": "Cuillère en bois, papier, caoutchouc : l'ampoule ne s'allume pas. Mine de crayon, pièce de cuivre, fil de fer : elle s'allume.",
+   "enonce": "Des élèves ont introduit différents objets dans un circuit simple et les ont classés dans un tableau. L'ampoule ne s'allume pas : cuillère en bois, feuille de papier, morceau de caoutchouc. L'ampoule s'allume : mine de crayon ordinaire, pièce de monnaie en cuivre, fil de fer. Complète chaque phrase avec un mot choisi dans la liste suivante : dispersants | isolants | condensateurs | conducteurs | commutateurs | champs.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
-   "texte": "Les premières matières sont des {1} électriques (elles ne laissent pas passer le courant). Les autres sont des {2} électriques.",
+   "texte": "L'ampoule ne s'allume pas : ces matières sont des {1} électriques car elles ne laissent pas passer le courant.  ·  L'ampoule s'allume : ces matières sont des {2} électriques car elles laissent passer le courant.",
    "reponse": [
     [
      "isolants"
@@ -5793,7 +5927,7 @@
    "numero": "9b",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Dans ce circuit, un objet empêche le courant de passer. Lequel ?",
+   "enonce": "Tu as réalisé ce montage pendant le cours de sciences (livret, page 19). L'ampoule de ce circuit ne s'allume pas. Un objet empêche le courant électrique de passer. Lequel ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
@@ -5816,7 +5950,7 @@
    "numero": "10a",
    "domaine": "sc.matiere",
    "type": "qcm_multi",
-   "enonce": "Des bouteilles d'eau gelées sont plus larges ou plus hautes. Que peux-tu déduire ? (deux réponses)",
+   "enonce": "En te basant sur ces expériences, que peux-tu déduire ? Choisis les deux propositions correctes.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5829,7 +5963,7 @@
     "L'eau à l'état solide occupe un volume plus petit qu'à l'état liquide.",
     "L'eau à l'état liquide occupe un volume plus grand qu'à l'état solide.",
     "L'eau à l'état liquide occupe un volume plus petit qu'à l'état solide.",
-    "L'eau occupe le même volume dans les deux états."
+    "L'eau à l'état liquide occupe un même volume qu'à l'état solide."
    ],
    "reponse": [
     0,
@@ -5871,7 +6005,7 @@
    "numero": "11a",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Que montre l'expérience de la pièce chauffée ?",
+   "enonce": "Que montre l'expérience ? Avec la chaleur…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
