@@ -799,6 +799,51 @@
    "titre": "La table des matières d'un manuel d'histoire",
    "fichier": "assets/2022/liv5-p03.webp",
    "alt": "Table des matières. La Préhistoire, le temps des chasseurs-cueilleurs 2 : se nourrir 3, armes et outils en pierre 4, se loger 6. La Préhistoire, le temps des premiers agriculteurs-éleveurs 7 : villages 8, outils et techniques pour travailler le sol 9, débuts de la métallurgie 11, élevage 12. L'Antiquité, le temps des Gallo-Romains 13 : organisations dans les campagnes 14, commerce 16, villa romaine 18, premiers écrits 19. Le Moyen Âge, le temps des seigneurs, des ecclésiastiques, des paysans et des bourgeois 21 : le seigneur, homme d'arme 22 ; l'ecclésiastique, homme d'Église 24 ; le paysan, homme de la terre 25 ; le bourgeois, homme de la ville 26."
+  },
+  {
+   "id": "liv3-p07",
+   "source": "livret",
+   "livret": 3,
+   "page": 7,
+   "titre": "Le tableau des solides",
+   "fichier": "assets/2022/liv3-p07.webp",
+   "alt": "Tableau à compléter : en colonnes, un cube, un parallélépipède rectangle, un prisme droit à base hexagonale et une pyramide à base carrée ; en lignes, un carré, un rectangle, un triangle, un hexagone et un pentagone."
+  },
+  {
+   "id": "liv6-p12",
+   "source": "livret",
+   "livret": 6,
+   "page": 12,
+   "titre": "Les fraisiers et le calendrier",
+   "fichier": "assets/2022/liv6-p12.webp",
+   "alt": "Le 28 avril, le jardinier repique les plants de fraisiers ; le 7 juin, il récolte les premières fraises. Calendriers d'avril, mai, juin et juillet 2022."
+  },
+  {
+   "id": "liv6-p17",
+   "source": "livret",
+   "livret": 6,
+   "page": 17,
+   "titre": "Les formats de feuilles",
+   "fichier": "assets/2022/liv6-p17.webp",
+   "alt": "Schéma A2 → A3 → A4 → A5 : à chaque fois, on divise par 2. Une feuille A2 = 2 feuilles A3 = 4 feuilles A4 = 8 feuilles A5."
+  },
+  {
+   "id": "liv9-p20",
+   "source": "livret",
+   "livret": 9,
+   "page": 20,
+   "titre": "Expériences 1 et 2",
+   "fichier": "assets/2022/liv9-p20.webp",
+   "alt": "Températures dans la maison A isolée et la maison B non isolée, de 0 à 30 minutes. Expérience 1 : A de 20 °C à 5,6 °C, B de 20 °C à 5 °C. Expérience 2 : A de 20 °C à 27,8 °C, B de 20 °C à 28,7 °C."
+  },
+  {
+   "id": "liv9-p22",
+   "source": "livret",
+   "livret": 9,
+   "page": 22,
+   "titre": "Expériences 3 et 4",
+   "fichier": "assets/2022/liv9-p22.webp",
+   "alt": "Portes et fenêtres ouvertes. Expérience 3 (frigo à 6 °C) : A de 20 °C à 5 °C, B de 20 °C à 5 °C. Expérience 4 (dehors au soleil, 28 °C) : A de 20 °C à 28,4 °C, B de 20 °C à 28,5 °C."
   }
  ],
  "questions": [
@@ -944,7 +989,7 @@
    "numero": "7",
    "domaine": "fr.ecouter",
    "type": "qcm",
-   "enonce": "Tu veux expliquer pourquoi Philippe Geluck a choisi un chat comme personnage. Coche l'information dont tu as besoin.",
+   "enonce": "Tu veux expliquer pourquoi Philippe Geluck a choisi un chat comme personnage. Choisis l'information dont tu as besoin.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -994,9 +1039,9 @@
     "Philippe Geluck a une recette pour créer un gag."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "L'entretien permet de dire que c'est VRAI",
+    "L'entretien permet de dire que c'est FAUX",
+    "L'entretien ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -1154,38 +1199,136 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "trous",
-   "enonce": "Combien de faces de chaque type faut-il pour construire ces solides ? (Cube, prisme droit à base hexagonale, pyramide à base carrée.)",
-   "points": 3,
+   "enonce": "Complète le tableau (livret, page 7). Indique le nombre de faces de chaque type qu'il faudra pour construire chacun de ces solides. Écris 0 s'il n'en faut pas.",
+   "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-solides",
-   "texte": "Cube : {1} carrés  ·  Prisme droit à base hexagonale : {2} hexagones et {3} rectangles  ·  Pyramide à base carrée : {4} carré et {5} triangles",
+   "texte": "Cube : {1} carré(s), {2} rectangle(s), {3} triangle(s), {4} hexagone(s), {5} pentagone(s)  ·  Parallélépipède rectangle : {6} carré(s), {7} rectangle(s), {8} triangle(s), {9} hexagone(s), {10} pentagone(s)  ·  Prisme droit à base hexagonale : {11} carré(s), {12} rectangle(s), {13} triangle(s), {14} hexagone(s), {15} pentagone(s)  ·  Pyramide à base carrée : {16} carré(s), {17} rectangle(s), {18} triangle(s), {19} hexagone(s), {20} pentagone(s)",
    "reponse": [
     [
      "6"
     ],
     [
-     "2"
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "2",
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "4",
+     "6"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
     ],
     [
      "6"
     ],
     [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "2"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
      "1"
     ],
     [
-     "4"
-    ]
-   ],
-   "explication": "Le cube a 6 faces carrées. Le prisme hexagonal : 2 bases hexagonales et 6 faces latérales rectangulaires. La pyramide : 1 base carrée et 4 triangles.",
-   "groupes": [
-    [
-     1,
-     2
+     "0",
+     "aucun",
+     "zéro"
     ],
     [
+     "4"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ],
+    [
+     "0",
+     "aucun",
+     "zéro"
+    ]
+   ],
+   "explication": "Cube : 6 carrés. Parallélépipède rectangle : 2 carrés et 4 rectangles (ou 6 rectangles). Prisme droit à base hexagonale : 6 rectangles et 2 hexagones. Pyramide à base carrée : 1 carré et 4 triangles.",
+   "groupes": [
+    [
+     0,
+     1,
+     2,
      3,
      4
+    ],
+    [
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    [
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    [
+     15,
+     16,
+     17,
+     18,
+     19
     ]
+   ],
+   "documents": [
+    "liv3-p07"
    ]
   },
   {
@@ -1251,7 +1394,7 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
-   "reponseModele": "…il n'a pas d'angle droit (ses angles ne sont pas droits)."
+   "reponseModele": "…il n'a pas d'angle droit (ses angles ne sont pas droits). Accepté aussi : …il a deux angles aigus et deux angles obtus."
   },
   {
    "id": "ceb-2022-l3-q1",
@@ -1259,7 +1402,7 @@
    "numero": "1",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe l'intérieur du wagon de train (livret, page 3). Christine cherche à retrouver des amis. Place-toi dans la position de Christine et choisis le prénom à écrire dans chaque vignette numérotée de 1 à 9 : deux vignettes resteront vides. Respecte les informations suivantes : Martin est assis à gauche de l'allée en face d'Emma. Il n'y a personne assis sur le siège derrière lui. Nassim joue aux cartes avec ses 3 copains. Il est assis côté fenêtre. Julien est à sa gauche. Amin est à droite, côté allée. Il est assis en face de Léo et dos à Lucie.",
+   "enonce": "Voici l'intérieur d'un wagon de train (livret, page 3). Christine cherche à retrouver des amis. Place-toi dans la position de Christine et choisis le prénom de chaque personne pour la seule vignette adéquate (vignettes numérotées de 1 à 9). Certaines étiquettes resteront vides. Respecte les informations suivantes : Martin est assis à gauche de l'allée en face d'Emma. Il n'y a personne assis sur le siège derrière lui. Nassim joue aux cartes avec ses 3 copains. Il est assis côté fenêtre. Julien est à sa gauche. Amin est à droite, côté allée. Il est assis en face de Léo et dos à Lucie.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
@@ -1421,7 +1564,7 @@
    "numero": "5b",
    "domaine": "ma.geometrie",
    "type": "grille",
-   "enonce": "Observe le plan du robot Thymio (livret, page 8). Coche VRAI ou FAUX pour chaque proposition.",
+   "enonce": "Observe le plan du robot Thymio (livret, page 8). Choisis VRAI ou FAUX pour chaque proposition.",
    "points": 3,
    "corrigeVerifie": true,
    "documents": [
@@ -1684,7 +1827,7 @@
    "numero": "4",
    "domaine": "fr.lire",
    "type": "texte_court",
-   "enonce": "Pourquoi est-il intéressant de pouvoir « ajuster la taille des caractères d'écriture » ?",
+   "enonce": "En quoi est-ce intéressant de pouvoir « ajuster la taille des caractères d'écriture » dans un livre numérique ? Complète avec un élément du texte : « Il est intéressant de pouvoir ajuster la taille des caractères… »",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -1695,7 +1838,10 @@
     "pour faciliter la lecture",
     "faciliter la lecture",
     "pour lire plus facilement",
-    "pour mieux lire"
+    "pour mieux lire",
+    "pour afficher deux pages à la fois",
+    "afficher deux pages à la fois",
+    "pour pouvoir afficher deux pages à la fois"
    ],
    "explication": "« La liberté d'ajuster la taille des caractères d'écriture afin de faciliter la lecture. »"
   },
@@ -1705,7 +1851,7 @@
    "numero": "5",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Écris un élément du texte qui explique pourquoi le livre numérique n'offre pas le même ressenti que le papier.",
+   "enonce": "Écris un élément du texte qui explique pourquoi le livre numérique n'offre pas le même ressenti que la version papier.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -1719,7 +1865,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "« Un nouveau moyen de diffusion des livres voit alors le jour. » Cette phrase signifie…",
+   "enonce": "À l'onglet (la page) « Évolution », on peut lire : « Un nouveau moyen de diffusion des livres voit alors le jour. » Que signifie cette phrase ? Cette phrase signifie…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1727,10 +1873,10 @@
     "num-2"
    ],
    "choix": [
-    "que l'on ne pourra plus acheter un livre papier en librairie.",
+    "que l'on ne pourra plus acheter un livre « papier » dans une librairie.",
     "que l'on pourra se procurer un livre autrement qu'en version papier.",
-    "que l'on n'imprimera plus jamais de livres papier.",
-    "que l'on pourra se connecter n'importe où à internet."
+    "que l'on n'imprimera plus jamais de livres en version papier.",
+    "que l'on pourra se connecter n'importe où au réseau internet."
    ],
    "reponse": 1,
    "explication": "Les livres peuvent désormais circuler sur internet, en plus du papier."
@@ -1741,7 +1887,7 @@
    "numero": "7",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Une élève dit : « Il n'y a que la liseuse qui permet de lire des livres numériques. » D'après le texte ?",
+   "enonce": "Lis ce que dit une élève : « Il n'y a que la liseuse qui permet de lire des livres numériques. » D'après le texte, est-ce vrai ou faux ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -1806,21 +1952,15 @@
    "livret": 4,
    "numero": "10",
    "domaine": "fr.lire",
-   "type": "qcm",
-   "enonce": "Pour lire des livres numériques, quel inconvénient ont l'ordinateur, le smartphone et la tablette, mais pas la liseuse ?",
+   "type": "ouverte",
+   "enonce": "Pour la lecture des livres numériques, l'ordinateur, le smartphone et la tablette présentent un même inconvénient que n'a pas la liseuse. Quel est cet inconvénient ? Écris ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "num-3"
    ],
-   "choix": [
-    "Leur écran produit une lumière parfois dangereuse pour les yeux.",
-    "Ils sont trop lourds.",
-    "Ils ne permettent pas de lire des romans.",
-    "Ils coutent trop cher."
-   ],
-   "reponse": 0,
-   "explication": "Pour la tablette : « écran qui produit une lumière parfois dangereuse pour les yeux, comme c'est aussi le cas avec l'ordinateur et le smartphone »."
+   "explication": "Pour la tablette : « écran qui produit une lumière parfois dangereuse pour les yeux, comme c'est aussi le cas avec l'ordinateur et le smartphone ».",
+   "reponseModele": "L'écran produit parfois une lumière dangereuse pour les yeux (ou toute idée allant dans ce sens). Ne convient pas : perdre le plaisir de tourner les pages, ne plus sentir l'odeur et la texture du papier (inconvénient commun à tous les supports, y compris la liseuse)."
   },
   {
    "id": "ceb-2022-l4-q11",
@@ -1828,7 +1968,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "D'après les données chiffrées, quelle version est privilégiée ?",
+   "enonce": "D'après le texte, à l'onglet (la page) « Données chiffrées », quelle version est privilégiée pour chacune des situations ci-dessous ?",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -1839,9 +1979,9 @@
     "Pour lire durant des temps libres."
    ],
    "colonnes": [
-    "Version papier",
-    "Version numérique",
-    "Les deux versions"
+    "Préférence pour la version papier",
+    "Préférence pour la version numérique",
+    "Utilisation de la version papier ET de la version numérique"
    ],
    "reponse": [
     2,
@@ -1855,7 +1995,7 @@
    "numero": "12",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "À quel onglet pourrais-tu ajouter ces informations ?",
+   "enonce": "Voici des informations qui ne se trouvent pas dans le texte. À quel onglet (quelle page) pourrais-tu les ajouter ?",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -1905,9 +2045,9 @@
     "Tous les livres numériques ont le même prix."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     2,
@@ -1931,9 +2071,12 @@
     "régler",
     "modifier",
     "changer",
+    "améliorer",
+    "agrandir",
+    "réduire",
+    "agrandir ou réduire",
     "mettre à la bonne taille",
-    "adapter la taille",
-    "agrandir ou réduire"
+    "adapter la taille"
    ],
    "explication": "Ajuster = adapter, régler à la taille qui convient."
   },
@@ -1943,15 +2086,15 @@
    "numero": "15",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Plus de la moitié des lecteurs interrogés ont recours aux deux versions. » Quel sens a « avoir recours » ?",
+   "enonce": "« Les résultats d'une enquête nous apprennent que plus de la moitié des lecteurs interrogés ont recours aux deux versions. » Voici quatre définitions d'expressions qui contiennent le mot « recours ». Choisis celle qui correspond à l'utilisation dans le texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
    "choix": [
-    "Faire appel à",
-    "Disposer d'un moyen d'action contre quelqu'un",
-    "Comme ultime ressource",
-    "Demande adressée à ses supérieurs par un militaire"
+    "Avoir recours : faire appel à.",
+    "Avoir un recours contre quelqu'un ou quelque chose : disposer d'un moyen d'action contre eux.",
+    "En dernier recours : comme ultime ressource.",
+    "Droit de recours : demande adressée à ses supérieurs par un militaire qui estime avoir à se plaindre d'une mesure intervenue à son encontre."
    ],
    "reponse": 0,
    "explication": "Ils utilisent, font appel aux deux versions."
@@ -1975,11 +2118,11 @@
    ],
    "lignes": [
     "Les conseils d'entretien pour les supports de lecture numérique",
-    "L'adresse de magasins pour l'achat des supports numériques"
+    "L'adresse de magasins pour l'achat des différents supports numériques"
    ],
    "colonnes": [
-    "Donnée dans le texte",
-    "Pas donnée"
+    "L'information est donnée dans le texte",
+    "L'information n'est pas donnée dans le texte"
    ],
    "reponse": [
     1,
@@ -1993,11 +2136,11 @@
    "numero": "17",
    "domaine": "fr.vocabulaire",
    "type": "trous",
-   "enonce": "Transforme l'infinitif en nom (exemple : équiper → l'équipement).",
+   "enonce": "Transforme l'infinitif en un nom. Exemple : « On va équiper les ordinateurs. » → « L'équipement des ordinateurs. »",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-familles-mots",
-   "texte": "Vous pouvez consulter les données → la {1} des données.  ·  Tu peux copier un fichier → la {2} d'un fichier.",
+   "texte": "Vous pouvez consulter les données. → La {1} des données.  ·  Tu peux copier un fichier informatique. → La {2} d'un fichier informatique.",
    "reponse": [
     [
      "consultation"
@@ -2014,7 +2157,7 @@
    "numero": "18",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Le livre numérique est un fichier que tu peux copier sur différents supports. Néanmoins, tous les livres ne peuvent pas être lus sur tous les supports. » Par quoi remplacer « Néanmoins » ?",
+   "enonce": "« Le livre numérique est un fichier informatique que tu peux copier sur différents supports. Néanmoins, tous les livres ne peuvent pas être lus sur tous les supports. » Quelle est la proposition qui pourrait remplacer « Néanmoins » en gardant le même sens ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -2041,7 +2184,7 @@
    "choix": [
     "Convaincre d'acheter un livre numérique.",
     "Expliquer comment lire un livre numérique sur une liseuse.",
-    "Donner du plaisir en racontant l'histoire du livre numérique.",
+    "Donner du plaisir en proposant l'histoire du livre numérique.",
     "Informer sur le livre numérique."
    ],
    "reponse": 3,
@@ -2053,7 +2196,7 @@
    "numero": "9",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Dans le texte « Le livre numérique », chaque pictogramme a une signification. Recopie le mot du texte qui donne la signification de chaque pictogramme.",
+   "enonce": "Recopie le mot du texte qui donne la signification de chacun des pictogrammes (un pouce vers le bas, un pouce vers le haut).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-paratexte",
@@ -2119,7 +2262,7 @@
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
-   "texte": "Le travail dans les champs au Moyen Âge : p. {1}  ·  Le début du travail des métaux : p. {2}  ·  La population urbaine au Moyen Âge : p. {3}",
+   "texte": "Le travail dans les champs au Moyen Âge : p. {1}  ·  Le début du travail des métaux dans nos régions : p. {2}  ·  La population urbaine au Moyen Âge : p. {3}",
    "reponse": [
     [
      "25"
@@ -2141,29 +2284,47 @@
    "livret": 5,
    "numero": "2a",
    "domaine": "hg.histoire",
-   "type": "grille",
-   "enonce": "Quelle phrase et quelle période correspondent à chaque personnage ?",
+   "type": "trous",
+   "enonce": "Complète pour chaque personnage : écris le chiffre de la phrase et la lettre de la période qui lui correspondent. Phrases : 1 « J'ai été le premier Roi des Belges. » — 2 « J'ai accompagné Jules César. » — 3 « J'ai été Empereur des Francs. » — 4 « J'ai été le chef d'une tribu gauloise. » Périodes : A Préhistoire — B Antiquité — C Moyen Âge — D Temps modernes — E Période contemporaine. Tu peux utiliser ton dictionnaire.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-personnages",
-   "lignes": [
-    "Ambiorix, « J'ai été le chef d'une tribu gauloise. »",
-    "Léopold Ier, « J'ai été le premier Roi des Belges. »",
-    "Charlemagne, « J'ai été Empereur des Francs. »"
-   ],
-   "colonnes": [
-    "Préhistoire",
-    "Antiquité",
-    "Moyen Âge",
-    "Temps modernes",
-    "Période contemporaine"
-   ],
    "reponse": [
-    1,
-    4,
-    2
+    [
+     "4"
+    ],
+    [
+     "B"
+    ],
+    [
+     "3"
+    ],
+    [
+     "C"
+    ],
+    [
+     "1"
+    ],
+    [
+     "E"
+    ]
    ],
-   "explication": "Ambiorix combat César (Antiquité) ; Léopold Ier devient roi en 1831 ; Charlemagne est couronné empereur en 800 (Moyen Âge)."
+   "explication": "Ambiorix combat César (Antiquité) ; Léopold Ier devient roi en 1831 ; Charlemagne est couronné empereur en 800 (Moyen Âge).",
+   "texte": "Ambiorix : phrase {1}, période {2}  ·  Charlemagne : phrase {3}, période {4}  ·  Léopold Ier : phrase {5}, période {6}",
+   "groupes": [
+    [
+     0,
+     1
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     5
+    ]
+   ]
   },
   {
    "id": "ceb-2022-l5-q2b1",
@@ -2218,16 +2379,16 @@
    "numero": "2c1",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Un chimiste belge a vécu de 1838 à 1922. Coche tous les évènements qui ont eu lieu durant sa vie.",
+   "enonce": "Voici une plaque portant le nom d'un personnage belge célèbre : « Place Solvay » — chimiste, 1838 – 1922. Choisis tous les évènements marquants qui se sont déroulés durant sa vie.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "choix": [
-    "Indépendance de la Belgique (1830)",
-    "Première Guerre mondiale (1914-1918)",
-    "Seconde Guerre mondiale (1940-1945)",
-    "Signature du Traité de Rome (1957)",
-    "Premier homme dans l'espace (1961)"
+    "Indépendance de la Belgique",
+    "Première Guerre mondiale",
+    "Seconde Guerre mondiale",
+    "Signature du Traité de Rome",
+    "Premier homme dans l'espace"
    ],
    "reponse": [
     1
@@ -2240,16 +2401,16 @@
    "numero": "2c2",
    "domaine": "hg.histoire",
    "type": "qcm_multi",
-   "enonce": "Une chanteuse et comédienne belge a vécu de 1928 à 2020. Coche tous les évènements qui ont eu lieu durant sa vie.",
+   "enonce": "Voici une plaque portant le nom d'une personnalité belge célèbre : « Parc Annie Cordy » — chanteuse et comédienne, 1928 – 2020. Choisis tous les évènements marquants qui se sont déroulés durant sa vie.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
    "choix": [
-    "Indépendance de la Belgique (1830)",
-    "Première Guerre mondiale (1914-1918)",
-    "Seconde Guerre mondiale (1940-1945)",
-    "Signature du Traité de Rome (1957)",
-    "Premier homme dans l'espace (1961)"
+    "Indépendance de la Belgique",
+    "Première Guerre mondiale",
+    "Seconde Guerre mondiale",
+    "Signature du Traité de Rome",
+    "Premier homme dans l'espace"
    ],
    "reponse": [
     2,
@@ -2264,7 +2425,7 @@
    "numero": "3",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Tableau de synthèse : fin des famines, constructions en béton, brique et acier, corons, électricité, révolution industrielle, chemin de fer, moteur à explosion, colonies, patrons et ouvriers, premiers droits sociaux. Quel est son titre ?",
+   "enonce": "Voici un tableau de synthèse sur le mode de vie des gens dans nos régions, à une période déterminée. Complète son titre en choisissant parmi les propositions suivantes : « AU TEMPS… ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-modes-vie",
@@ -2276,27 +2437,30 @@
     "Au temps des sociétés industrielles"
    ],
    "reponse": 4,
-   "explication": "Révolution industrielle, ouvriers et chemin de fer : le temps des sociétés industrielles."
+   "explication": "Révolution industrielle, ouvriers et chemin de fer : le temps des sociétés industrielles.",
+   "texte": "Mode de vie : fin des famines · constructions en matériaux durs (béton, brique, acier) · urbanisation (corons) · électricité · vêtements différents selon l'activité\nActivités économiques : révolution industrielle · essor des sciences · inventions de l'asphalte, de la bicyclette, du chemin de fer, du moteur à explosion · commerce international · colonies\nRapports sociaux : bourgeoisie · patrons · notables · ouvriers · premiers droits sociaux : un jour de congé par semaine pour tous les travailleurs"
   },
   {
    "id": "ceb-2022-l5-q4b",
    "livret": 5,
    "numero": "4b",
    "domaine": "hg.histoire",
-   "type": "qcm",
-   "enonce": "Les travaux des châteaux de Rochefort (1155) et de Lavaux-Sainte-Anne (1244) ont commencé pendant quelle période conventionnelle ?",
+   "type": "texte_court",
+   "enonce": "Voici deux châteaux dont la construction a débuté durant une même période historique : Lavaux-Sainte-Anne (début des travaux en 1244) et Rochefort (début des travaux en 1155). Écris le nom de la période conventionnelle durant laquelle la construction de ces châteaux a commencé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
-   "choix": [
-    "Préhistoire",
-    "Antiquité",
+   "reponse": [
     "Moyen Âge",
-    "Temps modernes",
-    "Période contemporaine"
+    "le Moyen Âge",
+    "Moyen-Âge",
+    "Moyen Age",
+    "le Moyen Age",
+    "moyen âge",
+    "au Moyen Âge"
    ],
-   "reponse": 2,
-   "explication": "1155 et 1244 font partie du Moyen Âge (476-1492)."
+   "explication": "1155 et 1244 font partie du Moyen Âge (476-1492).",
+   "souple": true
   },
   {
    "id": "ceb-2022-l5-q5a",
@@ -2304,7 +2468,7 @@
    "numero": "5a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Les pages des Très Riches Heures du duc de Berry sont des…",
+   "enonce": "Observe les quatre pages d'un calendrier illustrant un manuscrit du 15e siècle. Elles nous renseignent sur le mode de vie des paysans à la fin du Moyen Âge. Identifie la nature de ces traces du passé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2312,10 +2476,10 @@
     "enluminures"
    ],
    "choix": [
-    "Sculptures",
-    "Monuments",
-    "Gravures",
-    "Peintures"
+    "Sculpture",
+    "Monument",
+    "Gravure",
+    "Peinture"
    ],
    "reponse": 3,
    "explication": "Les enluminures sont des peintures qui décorent les manuscrits."
@@ -2326,7 +2490,7 @@
    "numero": "5b",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Les enluminures (février, mars, juillet, novembre) permettent-elles de dire que c'est vrai ou faux ?",
+   "enonce": "Observe les quatre pages d'un calendrier illustrant un manuscrit du 15e siècle (février, mars, juillet, novembre). Pour chaque affirmation, choisis la colonne qui convient.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -2340,9 +2504,9 @@
     "Les moissons se déroulaient en été."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Des indices visibles sur les documents permettent de dire que c'est VRAI",
+    "Des indices visibles sur les documents permettent de dire que c'est FAUX",
+    "Rien sur les documents ne permet de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -2358,19 +2522,20 @@
    "numero": "7a",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Marco Polo est né en 1254. En quel siècle ?",
+   "enonce": "Lis la fiche de Marco Polo. Choisis la proposition correcte : Marco Polo est né au…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
-    "12e siècle",
-    "13e siècle",
-    "14e siècle",
-    "15e siècle",
-    "16e siècle"
+    "12e siècle.",
+    "13e siècle.",
+    "14e siècle.",
+    "15e siècle.",
+    "16e siècle."
    ],
    "reponse": 1,
-   "explication": "Le 13e siècle va de 1201 à 1300."
+   "explication": "Le 13e siècle va de 1201 à 1300.",
+   "texte": "Marco POLO — Né en 1254 – mort en 1324 à Venise en Italie. Marchand italien, célèbre pour son voyage en Chine entre 1271 et 1295. Il est le premier Européen à décrire des réalités chinoises, tel le papier monnaie. Il mentionne l'existence du Japon (Cipango) jusqu'alors inconnu. Son récit a influencé Christophe Colomb et d'autres voyageurs."
   },
   {
    "id": "ceb-2022-l5-q7c",
@@ -2378,19 +2543,20 @@
    "numero": "7c",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Magellan découvre un passage entre l'océan Atlantique et l'océan Pacifique en octobre 1520. En quel siècle ?",
+   "enonce": "Fernand de Magellan est un explorateur célèbre. Voici des moments importants de son expédition. Choisis la proposition correcte : Magellan découvre un passage entre l'océan Atlantique et l'océan Pacifique au…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "choix": [
-    "12e siècle",
-    "13e siècle",
-    "14e siècle",
-    "15e siècle",
-    "16e siècle"
+    "12e siècle.",
+    "13e siècle.",
+    "14e siècle.",
+    "15e siècle.",
+    "16e siècle."
    ],
    "reponse": 4,
-   "explication": "1520 est au 16e siècle (1501-1600)."
+   "explication": "1520 est au 16e siècle (1501-1600).",
+   "texte": "Magellan quitte l'Espagne : septembre 1519\nL'expédition atteint le Brésil (Amérique du Sud) : décembre 1519\nMagellan découvre un passage entre l'océan Atlantique et l'océan Pacifique : octobre 1520\nArrivée aux Philippines (Indonésie) : mars 1521\nMort de Magellan dans ces iles lors d'un combat avec des indigènes : avril 1521\nRetour de l'expédition en Espagne : septembre 1522"
   },
   {
    "id": "ceb-2022-l5-q8a",
@@ -2430,7 +2596,7 @@
    "numero": "8b",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Coche un pays limitrophe de la Belgique qui n'a jamais organisé ce festival.",
+   "enonce": "Choisis un pays limitrophe* de la Belgique qui n'a jamais organisé le Festival olympique de la jeunesse européenne. (* Pays limitrophe : pays voisin, qui a des frontières communes.)",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-europe",
@@ -2484,7 +2650,7 @@
    "numero": "9a1",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Situe les milieux naturels n°5 et n°8 illustrés dans le portfolio. Coche le continent de chacun.",
+   "enonce": "Situe les milieux naturels n°5 et n°8 illustrés dans le portfolio. Choisis le continent de chacun.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2519,7 +2685,7 @@
    "numero": "9a2",
    "domaine": "hg.geographie",
    "type": "qcm_multi",
-   "enonce": "Situe les milieux naturels n°6 et n°7 illustrés dans le portfolio. Coche les continents.",
+   "enonce": "Situe les milieux naturels n°6 et n°7 illustrés dans le portfolio. Choisis les continents.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2565,15 +2731,15 @@
    "numero": "9c",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Vivre en montagne : atout ou contrainte ?",
+   "enonce": "La montagne est un milieu qui est caractérisé par de fortes pentes et un relief accidenté. Vivre en montagne présente des atouts (avantages) et des contraintes (inconvénients). Pour chaque proposition, choisis la colonne qui convient.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-regions-naturelles",
    "lignes": [
     "Les pentes très raides rendent les routes très sinueuses et très étroites.",
     "Les pentes très raides rendent possible la production d'hydroélectricité.",
-    "Les pentes raides et le froid rendent possibles des glissements de terrain et des éboulements.",
-    "Les pentes raides et l'altitude rendent possible la pratique de certains sports."
+    "Les pentes très raides et le froid lié à l'altitude rendent possible des glissements de terrain et des éboulements.",
+    "Les pentes très raides et l'altitude rendent possible la pratique de certaines activités sportives."
    ],
    "colonnes": [
     "Atout",
@@ -2593,7 +2759,7 @@
    "numero": "10a",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Les photos des glaciers (19e et 21e siècle) permettent-elles de dire que c'est vrai ou faux ?",
+   "enonce": "Compare les photos des glaciers (19e et 21e siècle). Choisis la case qui convient pour chaque proposition.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2606,9 +2772,9 @@
     "En été, il n'y a pas de glace."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Les photos permettent de dire que c'est VRAI",
+    "Les photos permettent de dire que c'est FAUX",
+    "Les photos ne permettent pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     0,
@@ -2622,14 +2788,14 @@
    "numero": "10b",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Pourquoi les glaciers du 21e siècle sont-ils différents de ceux du 19e siècle ?",
+   "enonce": "Pourquoi les glaciers au 21e siècle sont-ils différents de ces mêmes glaciers au 19e siècle ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-climats",
    "choix": [
     "Parce que les glaciers fondent en vieillissant.",
-    "Parce qu'il y avait beaucoup plus d'eau au 19e siècle.",
-    "Parce que des éboulements ont élargi le glacier.",
+    "Parce qu'il y avait beaucoup plus d'eau au 19e siècle qu'au 21e siècle.",
+    "Parce qu'il y a eu des éboulements qui ont élargi le glacier.",
     "Parce qu'il fait, en moyenne, plus chaud au 21e siècle qu'au 19e siècle."
    ],
    "reponse": 3,
@@ -2699,7 +2865,7 @@
    "numero": "4c",
    "domaine": "hg.histoire",
    "type": "qcm",
-   "enonce": "Le château de Lavaux-Sainte-Anne a été rénové au 20e siècle, dans les années trente. Voici des photos de cette rénovation (A, B et C, livret page 9). Coche la ligne du temps qui représente l'évolution de cette rénovation.",
+   "enonce": "Le château de Lavaux-Sainte-Anne a été rénové au 20e siècle, dans les années trente. Voici des photos de cette rénovation (A, B et C, livret page 9). Choisis la ligne du temps qui représente l'évolution de cette rénovation.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-frise",
@@ -2732,7 +2898,7 @@
    "numero": "6c1",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : les espaces non bâtis sont…",
+   "enonce": "Observe la photo de Binche (livret, page 13). Choisis la proposition correcte : les espaces non bâtis sont…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2752,7 +2918,7 @@
    "numero": "6c2",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : les espaces bâtis montrent principalement…",
+   "enonce": "Observe la photo de Binche (livret, page 13). Choisis la proposition correcte : les espaces bâtis montrent principalement…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2773,7 +2939,7 @@
    "numero": "6c3",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "Observe la photo de Binche (livret, page 13). Coche la proposition correcte : le réseau routier est constitué principalement…",
+   "enonce": "Observe la photo de Binche (livret, page 13). Choisis la proposition correcte : le réseau routier est constitué principalement…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2794,7 +2960,7 @@
    "numero": "6d1",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est…",
+   "enonce": "En t'aidant de la photo du centre de Binche (livret, page 13), choisis la proposition correcte : ce paysage est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2814,7 +2980,7 @@
    "numero": "6d2",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est plutôt constitué…",
+   "enonce": "En t'aidant de la photo du centre de Binche (livret, page 13), choisis la proposition correcte : ce paysage est plutôt constitué…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2834,7 +3000,7 @@
    "numero": "6d3",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "En t'aidant de la photo de la page précédente (livret, page 13), coche la proposition correcte : ce paysage est plutôt…",
+   "enonce": "En t'aidant de la photo du centre de Binche (livret, page 13), choisis la proposition correcte : ce paysage est plutôt…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2955,7 +3121,7 @@
    "numero": "11",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Observe les deux cartes du livret (page 24). Pour chaque affirmation, coche la proposition correcte.",
+   "enonce": "Observe les deux cartes du livret (page 24). Pour chaque affirmation, choisis la proposition correcte.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -2989,11 +3155,11 @@
    "numero": "2",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Pour un quatre-quarts, il faut 250 g de beurre, de farine, d'œufs et de sucre. Sacha a des paquets de 1/4 kg de beurre, des œufs de 50 g, une cuillère à soupe qui contient 10 g de farine et des sachets de 5 g de sucre.",
+   "enonce": "Pour réaliser un gâteau quatre-quarts, il faut 250 g de chacun des ingrédients suivants : beurre, farine, oeufs et sucre. Sacha n'a pas de balance, voici ce dont il dispose : 1 paquet de 1/4 kg de beurre ; 6 œufs de 50 g chacun ; de la farine (une cuillère à soupe contient 10 g) ; des sachets de sucre (chaque sachet contient 5 g de sucre). Complète les phrases. Pour réaliser son gâteau, Sacha va utiliser :",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
-   "texte": "{1} paquet(s) de beurre  ·  {2} œufs  ·  {3} cuillères de farine  ·  {4} sachets de sucre",
+   "texte": "{1} paquet(s) de beurre  ·  {2} œuf(s)  ·  {3} cuillère(s) à soupe de farine  ·  {4} sachet(s) de sucre",
    "reponse": [
     [
      "1"
@@ -3040,7 +3206,7 @@
    "numero": "7a",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux unités qu'on peut utiliser pour exprimer une longueur.",
+   "enonce": "Choisis les deux unités qu'on peut utiliser pour exprimer une longueur.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -3063,7 +3229,7 @@
    "numero": "7b",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux unités qu'on peut utiliser pour exprimer une capacité.",
+   "enonce": "Choisis les deux unités qu'on peut utiliser pour exprimer une capacité.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -3086,7 +3252,7 @@
    "numero": "7c",
    "domaine": "ma.grandeurs",
    "type": "qcm_multi",
-   "enonce": "Coche les deux unités qu'on peut utiliser pour exprimer un cout.",
+   "enonce": "Choisis les deux unités qu'on peut utiliser pour exprimer un cout.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-conversions",
@@ -3170,7 +3336,7 @@
    "numero": "11a",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Un bac carré de 1 m de côté est rempli de terreau sur 20 cm de hauteur. Le terreau est vendu en sacs de 40 litres (1 l = 1 dm³). Combien de sacs a-t-il fallu ?",
+   "enonce": "Souviens-toi : un litre, c'est un décimètre cube (1 l = 1 dm³). On a rempli le bac en bois à base carrée (1 m de côté) avec du terreau. Le terreau est emballé dans des sacs de 40 litres. Calcule le nombre de sacs de terreau qui ont été nécessaires pour remplir ce bac en bois sur une hauteur de 20 cm.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-volumes",
@@ -3203,14 +3369,22 @@
    "livret": 6,
    "numero": "12",
    "domaine": "ma.grandeurs",
-   "type": "numerique",
-   "enonce": "Le jardinier repique ses fraisiers le 28 avril et récolte les premières fraises le 7 juin. Combien de jours se sont écoulés ?",
+   "type": "trous",
+   "enonce": "Le 28 avril, le jardinier repique les plants de fraisiers. Le 7 juin, le jardinier récolte les premières fraises. Calcule le nombre de jours qui se sont écoulés depuis le repiquage jusqu'à la récolte des premières fraises (calendrier, livret page 12).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-calendrier",
-   "unite": "jours",
-   "reponse": 40,
-   "explication": "Avril : 2 jours (29 et 30) ; mai : 31 jours ; juin : 7 jours. Total : 40 jours."
+   "reponse": [
+    [
+     "40",
+     "41"
+    ]
+   ],
+   "explication": "Avril : 2 jours (29 et 30) ; mai : 31 jours ; juin : 7 jours. Total : 40 jours. Le corrigé officiel accepte aussi 41 (si l'on compte le jour du repiquage).",
+   "texte": "Il s'est écoulé {1} jours depuis le repiquage jusqu'à la récolte.",
+   "documents": [
+    "liv6-p12"
+   ]
   },
   {
    "id": "ceb-2022-l6-q13a",
@@ -3275,11 +3449,11 @@
    "numero": "15",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Complète les étiquettes.",
+   "enonce": "Complète les informations manquantes sur les étiquettes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-proportionnalite",
-   "texte": "Brocolis : 250 g à 3,60 € le kg → prix {1} €  ·  Tomates : 1,75 € à 3,50 € le kg → poids {2} g  ·  Poireaux : 1 000 g pour 4,50 € → {3} € le kg",
+   "texte": "BROCOLIS — 3,60 € par kg — Poids : 250 g — Prix : {1} €  ·  TOMATES — 3,50 € par kg — Poids : {2} g — Prix : 1,75 €  ·  POIREAUX — {3} € par kg — Poids : 1 000 g — Prix : 4,50 €",
    "reponse": [
     [
      "0,90",
@@ -3301,7 +3475,7 @@
    "numero": "17a",
    "domaine": "ma.grandeurs",
    "type": "trous",
-   "enonce": "Une feuille A3 vaut la moitié d'une A2, une A4 la moitié d'une A3, une A5 la moitié d'une A4. Complète par une fraction.",
+   "enonce": "Observe le rapport entre les aires de ces différents formats de feuilles (livret, page 17) : une feuille A3 vaut la moitié d'une A2, une A4 la moitié d'une A3, une A5 la moitié d'une A4. Complète chaque phrase par une fraction.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -3319,7 +3493,10 @@
      "3/8"
     ]
    ],
-   "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Donc A4 = 1/4 de A2 ; 2 A5 = 1 A4 = 1/2 de A3 ; 3 A5 = 3/8 de A2."
+   "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Donc A4 = 1/4 de A2 ; 2 A5 = 1 A4 = 1/2 de A3 ; 3 A5 = 3/8 de A2.",
+   "documents": [
+    "liv6-p17"
+   ]
   },
   {
    "id": "ceb-2022-l6-q17b",
@@ -3327,7 +3504,7 @@
    "numero": "17b",
    "domaine": "ma.grandeurs",
    "type": "texte_court",
-   "enonce": "Tu dois recouvrir complètement une feuille A2 avec des feuilles de 2 formats différents. Écris une composition possible, sur le modèle « 2 A3 et 5 A5 » (nombre de feuilles de chaque format).",
+   "enonce": "Une feuille A3 vaut la moitié d'une feuille A2, une A4 la moitié d'une A3 et une A5 la moitié d'une A4 (schéma, livret page 17). Tu dois recouvrir complètement une feuille A2 avec des feuilles de 2 formats différents. Complète la phrase : « Pour recouvrir complètement une feuille A2, il faut … feuille(s) A… ET … feuille(s) A… ». Écris ta réponse sous la forme « nombre A… et nombre A… ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-fractions",
@@ -3454,7 +3631,10 @@
     "2 feuilles A5, 3 feuilles A4",
     "2 feuille(s) A5, 3 feuille(s) A4"
    ],
-   "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Par exemple : 1 A3 et 2 A4 (4 + 4 = 8 A5), ou 1 A3 et 4 A5, ou 1 A4 et 6 A5, ou 2 A4 et 4 A5, ou 3 A4 et 2 A5."
+   "explication": "A2 = 2 A3 = 4 A4 = 8 A5. Par exemple : 1 A3 et 2 A4 (4 + 4 = 8 A5), ou 1 A3 et 4 A5, ou 1 A4 et 6 A5, ou 2 A4 et 4 A5, ou 3 A4 et 2 A5.",
+   "documents": [
+    "liv6-p17"
+   ]
   },
   {
    "id": "ceb-2022-l6-q18",
@@ -3462,13 +3642,14 @@
    "numero": "18",
    "domaine": "ma.grandeurs",
    "type": "numerique",
-   "enonce": "Calories des repas d'un enfant pendant une semaine : lundi 1 257, mardi 1 403, mercredi 1 162, jeudi 1 510, vendredi 1 024, samedi 1 685, dimanche 1 556. Quelle est la moyenne journalière ?",
+   "enonce": "Observe ce tableau reprenant la valeur énergétique (nombre de calories) des repas pris par un enfant durant une semaine. Calcule la moyenne journalière.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-moyenne",
    "unite": "calories",
    "reponse": 1371,
-   "explication": "Total : 9 597. 9 597 : 7 = 1 371."
+   "explication": "Total : 9 597. 9 597 : 7 = 1 371.",
+   "texte": "Lu. : 1 257  ·  Ma. : 1 403  ·  Me. : 1 162  ·  Je. : 1 510  ·  Ve. : 1 024  ·  Sa. : 1 685  ·  Di. : 1 556"
   },
   {
    "id": "ceb-2022-l6-q19",
@@ -3613,7 +3794,7 @@
    "numero": "14",
    "domaine": "ma.grandeurs",
    "type": "qcm",
-   "enonce": "Voici un trajet pour se rendre du point A au point B (livret, page 14). Coche le trajet qui a la même longueur.",
+   "enonce": "Voici un trajet pour se rendre du point A au point B (livret, page 14). Choisis le trajet qui a la même longueur.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -3634,7 +3815,7 @@
    "numero": "16",
    "domaine": "ma.grandeurs",
    "type": "grille",
-   "enonce": "Observe les transformations du livret (page 16) et coche les cases adéquates du tableau : dans chaque transformation, l'aire et le périmètre augmentent-ils ou diminuent-ils ?",
+   "enonce": "Observe les transformations du livret (page 16) et choisis les cases adéquates du tableau : dans chaque transformation, l'aire et le périmètre augmentent-ils ou diminuent-ils ?",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
@@ -3682,7 +3863,7 @@
    "numero": "1",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Récit « Cinq, six bonheurs ». Quel résumé correspond le mieux ?",
+   "enonce": "Choisis le résumé qui correspond le mieux à l'histoire « Cinq, six bonheurs ».",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3693,10 +3874,10 @@
     "bonheur-4"
    ],
    "choix": [
-    "Un garçon doit rédiger une rédaction sur le bonheur. Il prépare une tarte avec sa maman puis rend visite à sa grand-mère. À la fin, il va jouer dans la neige.",
-    "Un garçon doit écrire un texte sur le bonheur. Comme il n'a pas d'idées, il mène sa petite enquête. Finalement, il découvre sa propre vision du bonheur.",
-    "Un garçon doit réaliser un devoir de vacances. Il n'est pas content et va se plaindre auprès de sa mère et de sa grand-mère. Après avoir écrit son texte, il va s'amuser dans la neige.",
-    "Un garçon de dix ans n'a pas d'inspiration pour une rédaction sur le bonheur. Il demande à sa famille de l'écrire à sa place. Heureux, il peut aller s'amuser."
+    "C'est l'histoire d'un garçon qui doit rédiger une rédaction sur le bonheur. Il décide alors de préparer une tarte avec sa maman puis d'aller rendre visite à sa grand-mère. À la fin, il va jouer dans la neige près de chez lui.",
+    "C'est l'histoire d'un garçon qui doit écrire un texte sur le bonheur. Comme il n'a pas d'idées, il mène sa petite enquête. Finalement, il découvre sa propre vision du bonheur.",
+    "C'est l'histoire d'un garçon qui doit réaliser un devoir de vacances. Il n'est pas du tout content et va se plaindre auprès de sa mère et de sa grand-mère. Après avoir écrit son texte, il va s'amuser dans la neige.",
+    "C'est l'histoire d'un garçon de dix ans qui n'a pas d'inspiration pour écrire une rédaction sur le bonheur. Il demande à sa famille de l'écrire à sa place. Heureux, il peut aller s'amuser."
    ],
    "reponse": 1,
    "explication": "Il cherche ce qu'est le bonheur (maman, dictionnaire, grand-mère) et le découvre lui-même dans la neige."
@@ -3707,7 +3888,7 @@
    "numero": "2",
    "domaine": "fr.lire",
    "type": "trous",
-   "enonce": "Comment réagissent les élèves quand l'instituteur annonce un devoir de vacances ?",
+   "enonce": "Comment réagissent les élèves de la classe lorsque l'instituteur annonce qu'il donne un devoir de vacances ? Écris les deux réactions.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
@@ -3796,7 +3977,7 @@
    "numero": "6",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Un enfant dit : « Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. » D'après le texte ?",
+   "enonce": "Lis ce que dit un enfant : « Après avoir consulté le dictionnaire, Théophile a des idées pour rédiger sa rédaction. » D'après le texte, est-ce vrai ou faux ?",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3817,7 +3998,7 @@
    "numero": "6 (justification)",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Tu as répondu à la question « Un enfant dit : Après avoir consulté le dictionnaire, Théophile a des idées pour sa rédaction. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
+   "enonce": "Tu as répondu à la question « Un enfant dit : Après avoir consulté le dictionnaire, Théophile a des idées pour rédiger sa rédaction. D'après le texte, est-ce vrai ou faux ? ». Justifie ta réponse à l'aide d'un élément du texte.",
    "points": 0.5,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -3848,7 +4029,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "« Son regard traversait les murs et le temps. » Que veut dire l'auteur ?",
+   "enonce": "« Ses yeux brillaient et j'ai compris qu'elle voyait quelque chose que je ne pouvais pas voir. Son regard traversait les murs et le temps. Elle regardait en arrière, au-dedans d'elle-même et ce qu'elle voyait la faisait maintenant pleurer. » Que veut dire l'auteur quand il écrit « Son regard traversait les murs et le temps » ? Écris ce que signifie cette phrase dans l'extrait du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -3878,9 +4059,9 @@
     "Théophile réussit à terminer sa rédaction."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne peut pas le savoir"
+    "Le texte permet de dire que c'est VRAI",
+    "Le texte permet de dire que c'est FAUX",
+    "Le texte ne permet pas de dire que c'est vrai ou faux"
    ],
    "reponse": [
     1,
@@ -3895,13 +4076,13 @@
    "numero": "10",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Écris une phrase du texte qui montre que Théophile est émerveillé par la beauté du paysage.",
+   "enonce": "Écris une phrase du texte qui montre que Théophile est émerveillé par la beauté du paysage qu'il découvre.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "bonheur-4"
    ],
-   "reponseModele": "« Je n'avais pas assez de mes deux yeux pour voir toutes les beautés qui m'entouraient. »"
+   "reponseModele": "« Je n'avais pas assez de mes deux yeux pour voir toutes les beautés qui m'entouraient. » OU « Il suffit d'un peu de neige et d'une belle lumière pour que n'importe quel endroit devienne magnifique. » (Ne conviennent pas : « La poudreuse me rendait cinglé. », « J'étais bien ici… », « Le bonheur, c'est l'hiver. », « Une joie bien bête… ».)"
   },
   {
    "id": "ceb-2022-l7-q12",
@@ -3966,7 +4147,7 @@
    "numero": "14",
    "domaine": "fr.grammaire",
    "type": "qcm",
-   "enonce": "« …aux bras de ma mère qui me réchaufferaient… » Que remplace « qui » ?",
+   "enonce": "« En croisant les traces de mes pas qui allaient en sens inverse, j'ai pensé à la chaleur qui m'attendait à la maison, aux bras de ma mère qui me réchaufferaient, aux joues piquantes de mon père qui m'embrasserait, au rire idiot mais communicatif de mon frère. » Que remplace le pronom « qui » dans « qui me réchaufferaient » ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-pronoms",
@@ -3994,12 +4175,18 @@
     [
      "Théophile",
      "le narrateur",
-     "le garçon"
+     "le garçon",
+     "le héros de l'histoire",
+     "le héros",
+     "canard"
     ],
     [
      "les larmes",
      "larmes",
-     "des larmes"
+     "des larmes",
+     "les larmes de la grand-mère",
+     "larmes de la grand-mère",
+     "des larmes de la grand-mère"
     ]
    ],
    "explication": "« je » est Théophile ; il dessine les larmes."
@@ -4010,7 +4197,7 @@
    "numero": "16",
    "domaine": "fr.orthographe",
    "type": "texte_court",
-   "enonce": "« Je suis allé voir ma grand-mère maternelle… » « Je » est un garçon. Recopie le mot qui le prouve.",
+   "enonce": "« Je suis allé voir ma grand-mère maternelle qui habitait dans la même rue que mes parents et moi. » Qui est « Je » dans cet extrait : un garçon ou une fille ? Recopie le mot de l'extrait qui justifie ta réponse.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-participe-passe",
@@ -4035,11 +4222,11 @@
     "Ta maman est une spécialiste du bonheur."
    ],
    "colonnes": [
-    "A : Sujet – Verbe – CI",
-    "B : Sujet – Verbe – Attribut",
-    "C : Sujet – CD – Verbe",
-    "D : Sujet – CD – Verbe – CC",
-    "E : CC – Sujet – Verbe – CD"
+    "A : (Groupe) Sujet – Verbe – Complément indirect du verbe",
+    "B : (Groupe) Sujet – Verbe – Attribut du sujet",
+    "C : (Groupe) Sujet – Complément direct du verbe – Verbe",
+    "D : (Groupe) Sujet – Complément direct du verbe – Verbe – Complément circonstanciel (de phrase)",
+    "E : Complément circonstanciel (de phrase) – (Groupe) Sujet – Verbe – Complément direct du verbe"
    ],
    "reponse": [
     3,
@@ -4053,7 +4240,7 @@
    "numero": "18",
    "domaine": "fr.grammaire",
    "type": "trous",
-   "enonce": "« — Ah, c'est toi ! Entre ! a dit ma grand-mère, […] un truc du genre bonne nouvelle. » Écris la classe des mots.",
+   "enonce": "« — Ah, c'est toi ! Entre ! a dit ma grand-mère, en m'accueillant avec son sourire chaleureux et son regard pétillant qui me donnait l'impression d'être un ange descendu du ciel ou un truc du genre bonne nouvelle. » Écris la classe des mots « Entre » et « nouvelle » dans cet extrait. Choisis parmi les classes de mots suivantes : nom | pronom | verbe | déterminant | adjectif | mot de liaison.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-classes-mots",
@@ -4103,7 +4290,7 @@
    "numero": "20",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Il était moche, il pesait trois tonnes […]. Par contre, il y avait des photos et des dessins dans les marges. » Par quoi remplacer « Par contre » ?",
+   "enonce": "« Le dictionnaire de mes parents datait de 1960. Il était moche, il pesait trois tonnes, et ses deux mille pages étaient recouvertes d'une écriture de fourmis. Par contre, il y avait des photos et des dessins dans les marges de presque toutes les pages. » Quelle est la proposition qui pourrait remplacer « Par contre » en gardant le même sens ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-connecteurs",
@@ -4123,7 +4310,7 @@
    "numero": "21",
    "domaine": "fr.vocabulaire",
    "type": "ouverte",
-   "enonce": "« Ma vue s'est brouillée et des larmes de crocodile ont jailli de mes yeux. » Que signifie « s'est brouillée » ?",
+   "enonce": "« Une joie bien bête, simple, débile même, m'a rempli la poitrine… ma vue s'est brouillée et des larmes de crocodile ont jailli de mes yeux. » Que signifie « s'est brouillée » dans le texte ? Recherche la définition de ce verbe au dictionnaire. Écris la seule définition qui convient au sens du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-sens-mots",
@@ -4135,7 +4322,7 @@
    "numero": "22",
    "domaine": "fr.vocabulaire",
    "type": "qcm",
-   "enonce": "« Ma grand-mère a dit d'une voix chevrotante que je ne lui connaissais pas » : par quel adjectif remplacer « chevrotante » ?",
+   "enonce": "« Sa mine, de réjouie, est devenue plus sombre. […] Lorsque je suis arrivé à quarante-neuf, ma grand-mère a dit d'une voix chevrotante que je ne lui connaissais pas : — Le bonheur… ? Ses yeux brillaient et j'ai compris qu'elle voyait quelque chose que je ne pouvais pas voir. » Choisis l'adjectif qui peut remplacer le mot « chevrotante » en respectant le sens du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-synonymes",
@@ -4200,10 +4387,10 @@
    "corrigeVerifie": true,
    "fiche": "fr-lire-intention",
    "choix": [
-    "Informer sur la manière d'écrire une rédaction.",
-    "Persuader que seuls les adultes comprennent le bonheur.",
+    "Informer sur la manière d'écrire une rédaction à propos du bonheur.",
+    "Persuader que seuls les adultes comprennent ce qu'est le bonheur.",
     "Faire réfléchir sur l'idée de bonheur avec une histoire plaisante.",
-    "Donner des règles pour trouver le bonheur."
+    "Donner des règles à suivre pour trouver le bonheur."
    ],
    "reponse": 2,
    "explication": "Une histoire amusante qui fait réfléchir."
@@ -4214,7 +4401,7 @@
    "numero": "11",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Sur les croquis du livret (page 7), observe les traces de pas de Théophile dans la neige et l'emplacement des maisons (T : maison de Théophile, F : maison de Fabien, M : maison de la grand-mère). Coche le croquis qui correspond au texte.",
+   "enonce": "Sur les croquis du livret (page 7), observe les traces de pas de Théophile dans la neige et l'emplacement des maisons (T : maison de Théophile, F : maison de Fabien, M : maison de la grand-mère). Choisis le croquis qui correspond au texte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4278,16 +4465,16 @@
    "numero": "2b",
    "domaine": "ma.arithmetique",
    "type": "texte_court",
-   "enonce": "6 720 : 9,9, c'est à peu près… (donne une estimation)",
+   "enonce": "Sans effectuer l'opération, complète la phrase : 6 720 : 9,9, c'est à peu près…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-estimation",
    "reponse": [
     "672",
-    "670",
+    "678",
     "680",
-    "700",
-    "678"
+    "670",
+    "700"
    ],
    "explication": "6 720 : 10 = 672."
   },
@@ -4451,17 +4638,17 @@
    "numero": "6",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Suite : 0, 12, 24, 36, 48, 60, 72, 84. Coche les trois propositions correctes. Tous ces nombres sont…",
+   "enonce": "Voici une suite de nombres : 0 | 12 | 24 | 36 | 48 | 60 | 72 | 84. Choisis les trois propositions correctes. Tous ces nombres sont…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-multiples-diviseurs",
    "choix": [
-    "diviseurs de 12",
-    "multiples de 12",
-    "premiers",
-    "impairs",
-    "pairs",
-    "entiers"
+    "diviseurs de 12.",
+    "multiples de 12.",
+    "premiers.",
+    "impairs.",
+    "pairs.",
+    "entiers."
    ],
    "reponse": [
     1,
@@ -4476,11 +4663,11 @@
    "numero": "7",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Fractions et nombres à virgule.",
+   "enonce": "a) Écris la fraction sous la forme d'un nombre à virgule. b) Écris, chaque fois, le nombre à virgule sous la forme d'une fraction.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-fraction-decimal-pourcent",
-   "texte": "9/12 = {1}  ·  0,2 = {2}  ·  0,375 = {3}",
+   "texte": "a) 9/12 = {1}  ·  b) 0,2 = {2}  ·  0,375 = {3}",
    "reponse": [
     [
      "0,75"
@@ -4524,24 +4711,25 @@
    "numero": "10",
    "domaine": "ma.arithmetique",
    "type": "grille",
-   "enonce": "Quel nombre (6,06 ; 6,6 ; 6,006) peut se placer entre les bornes de chaque segment ?",
+   "enonce": "Parmi les nombres encadrés (6,66 | 6,06 | 6,6 | 6,006), choisis celui qui peut se placer entre les deux nombres qui limitent chaque segment.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "ma-decimaux",
    "lignes": [
-    "entre 6,01 et 6,5",
-    "entre 6 et 6,01",
-    "entre 6,5 et 6,650"
+    "Segment de 6,01 à 6,5",
+    "Segment de 6 à 6,01",
+    "Segment de 6,5 à 6,650"
    ],
    "colonnes": [
+    "6,66",
     "6,06",
     "6,6",
     "6,006"
    ],
    "reponse": [
-    0,
-    2,
-    1
+    1,
+    3,
+    2
    ],
    "explication": "6,010 < 6,060 < 6,500 ; 6,000 < 6,006 < 6,010 ; 6,50 < 6,60 < 6,65."
   },
@@ -4551,7 +4739,7 @@
    "numero": "12",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "Division : 2 640 : 36 = 73, reste 12. Quelle opération permet de la vérifier ?",
+   "enonce": "Observe cette division : 2 640 divisé par 36 donne 73, et il reste 12. Choisis la seule opération qui permet de vérifier cette division.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-division",
@@ -4571,7 +4759,7 @@
    "numero": "11",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les deux nombres compris entre 2 et 3.",
+   "enonce": "Choisis les deux nombres compris entre 2 et 3.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
@@ -4623,15 +4811,15 @@
    "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "association",
-   "enonce": "Associe chaque situation de jeu à son opération.",
+   "enonce": "Voici un plateau de jeu. Observe les situations et les opérations qui te sont proposées. Associe chaque situation à l'opération qui lui correspond.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-problemes",
    "gauche": [
-    "A : le pion est sur la 25e case et recule de 5 cases. Où arrive-t-il ?",
-    "B : pour arriver sur la 25e case, il a avancé de 5 cases. D'où partait-il ?",
-    "C : arrivé sur la 5e case, il avance de 25 cases. Où est-il ?",
-    "D : il a dû reculer de 25 cases pour retourner sur la 5e case. D'où partait-il ?"
+    "A : Sur un plateau de jeu, le pion d'un joueur se trouve sur la 25e case. Il doit reculer de 5 cases. Sur quelle case arrivera-t-il ?",
+    "B : Pour arriver sur la 25e case, un joueur a avancé son pion de 5 cases. Sur quelle case était-il au départ ?",
+    "C : En arrivant sur la 5e case, un joueur a pu avancer son pion de 25 cases. Sur quelle case est-il maintenant ?",
+    "D : Un joueur a dû retourner sur la 5e case. Pour cela, il a dû reculer de 25 cases. Sur quelle case était-il au départ ?"
    ],
    "droite": [
     "? + 5 = 25",
@@ -4665,7 +4853,7 @@
    "numero": "16a",
    "domaine": "ma.arithmetique",
    "type": "qcm_multi",
-   "enonce": "Coche les trois multiples de 9.",
+   "enonce": "Choisis les trois multiples de 9.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-divisibilite",
@@ -4826,13 +5014,14 @@
    "numero": "25a",
    "domaine": "ma.arithmetique",
    "type": "numerique",
-   "enonce": "Valeurs : bol de céréales 240 kcal, verre de lait 80, portion de spaghettis 364, yaourt 100, 2 tranches de pain 133, portion de fromage 250, verre d'eau 0, pomme 55, banane 90, verre de soda 110, gaufre au chocolat 360, sachet de chips 550, crème vanille 120. Menu : céréales et lait ; spaghettis ; yaourt ; deux tranches de pain, fromage et verre d'eau. Quelle est sa valeur énergétique ?",
+   "enonce": "Voici un tableau qui reprend la valeur énergétique (en kcal) de certains aliments. Calcule l'apport énergétique pour le menu suivant. MENU — Déjeuner : un bol de céréales et un verre de lait. Diner : une portion de spaghettis. Collation : un yaourt. Souper : deux tranches de pain, une portion de fromage et un verre d'eau. La valeur énergétique du menu est de … kcal.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
    "unite": "kcal",
    "reponse": 1167,
-   "explication": "240 + 80 + 364 + 100 + 133 + 250 + 0 = 1 167 kcal."
+   "explication": "240 + 80 + 364 + 100 + 133 + 250 + 0 = 1 167 kcal.",
+   "texte": "1 verre d'eau : 0  ·  1 verre de lait : 80  ·  1 verre de soda : 110  ·  1 pomme : 55  ·  1 banane : 90  ·  1 orange : 95  ·  1 boule de sorbet : 40  ·  1 yaourt : 100  ·  1 crème vanille : 120  ·  2 cookies : 160  ·  1 gaufre au chocolat : 360  ·  1 sachet de chips : 550  ·  2 tranches de pain : 133  ·  1 portion de fromage : 250  ·  1 bol de céréales : 240  ·  1 portion de spaghettis : 364  ·  1 portion de frites : 560  ·  1 hamburger : 565"
   },
   {
    "id": "ceb-2022-l8-q25b",
@@ -4840,11 +5029,11 @@
    "numero": "25b",
    "domaine": "ma.arithmetique",
    "type": "trous",
-   "enonce": "Valeurs : bol de céréales 240 kcal, verre de lait 80, portion de spaghettis 364, yaourt 100, 2 tranches de pain 133, portion de fromage 250, verre d'eau 0, pomme 55, banane 90, verre de soda 110, gaufre au chocolat 360, sachet de chips 550, crème vanille 120. … a la même valeur énergétique que…",
+   "enonce": "Voici un tableau qui reprend la valeur énergétique (en kcal) de certains aliments : 1 verre d'eau : 0  ·  1 verre de lait : 80  ·  1 verre de soda : 110  ·  1 pomme : 55  ·  1 banane : 90  ·  1 orange : 95  ·  1 boule de sorbet : 40  ·  1 yaourt : 100  ·  1 crème vanille : 120  ·  2 cookies : 160  ·  1 gaufre au chocolat : 360  ·  1 sachet de chips : 550  ·  2 tranches de pain : 133  ·  1 portion de fromage : 250  ·  1 bol de céréales : 240  ·  1 portion de spaghettis : 364  ·  1 portion de frites : 560  ·  1 hamburger : 565. Complète chaque ligne par le nombre qui correspond (« … a la même valeur énergétique que… »).",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-division",
-   "texte": "1 sachet de chips = {1} pommes  ·  1 gaufre = {2} bananes  ·  1 verre de soda = {3} pommes  ·  1 gaufre = {4} crèmes vanille",
+   "texte": "1 sachet de chips a la même valeur énergétique que {1} pomme(s)  ·  1 gaufre au chocolat a la même valeur énergétique que {2} banane(s)  ·  1 verre de soda a la même valeur énergétique que {3} pomme(s)  ·  1 gaufre au chocolat a la même valeur énergétique que {4} crème(s) vanille",
    "reponse": [
     [
      "10"
@@ -5066,11 +5255,11 @@
    "numero": "2a",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Complète le tableau (exemple : locomotion – os – muscle – déchirure). Mots : oxygène, artère, suc gastrique, poumons, cœur, estomac, bronchite, infarctus, indigestion.",
+   "enonce": "Complète le tableau à l'aide des mots suivants : circulation, oxygène, artère, digestion, suc gastrique, respiration, indigestion, poumons, cœur, bronchite, infarctus, estomac. Pour chaque fonction, écris le mot qui te fait penser à la fonction, l'organe et la maladie ou lésion. Un exemple t'est donné : locomotion – os – muscle – déchirure.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
-   "texte": "Circulation : mot {1}, organe {2}, maladie {3}  ·  Digestion : mot {4}, organe {5}, maladie {6}  ·  Respiration : mot {7}, organe {8}, maladie {9}",
+   "texte": "Fonction : circulation — mot {1}, organe {2}, maladie ou lésion {3}  ·  Fonction : digestion — mot {4}, organe {5}, maladie ou lésion {6}  ·  Fonction : respiration — mot {7}, organe {8}, maladie ou lésion {9}",
    "reponse": [
     [
      "artère"
@@ -5180,8 +5369,8 @@
    "livret": 9,
    "numero": "4d",
    "domaine": "sc.vivant",
-   "type": "qcm_multi",
-   "enonce": "Liseron des dunes (milieu : premières dunes). Coche ses trois caractéristiques d'après la clé de détermination du portfolio.",
+   "type": "trous",
+   "enonce": "Écris les trois caractéristiques du liseron des dunes en t'aidant de la clé de détermination. Nom : liseron des dunes. Milieu : premières dunes.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-classification",
@@ -5189,21 +5378,36 @@
     "littoral-2",
     "cle"
    ],
-   "choix": [
-    "fleurs roses",
-    "fleurs jaunes",
-    "pétales soudés formant un tube",
-    "pétales séparés",
-    "feuille ronde",
-    "feuille linéaire"
-   ],
    "reponse": [
-    0,
-    2,
-    4
+    [
+     "fleurs roses",
+     "fleur rose",
+     "feuilles rondes",
+     "feuille ronde",
+     "pétales soudés formant un tube",
+     "pétales soudés"
+    ],
+    [
+     "feuilles rondes",
+     "feuille ronde",
+     "pétales soudés formant un tube",
+     "pétales soudés",
+     "fleurs roses",
+     "fleur rose"
+    ],
+    [
+     "pétales soudés formant un tube",
+     "pétales soudés",
+     "fleurs roses",
+     "fleur rose",
+     "feuilles rondes",
+     "feuille ronde"
+    ]
    ],
    "explication": "Fleurs roses, pétales soudés en tube (entonnoir), feuilles rondes.",
-   "parReponse": true
+   "differentes": true,
+   "souple": true,
+   "texte": "Caractéristique : {1}\nCaractéristique : {2}\nCaractéristique : {3}"
   },
   {
    "id": "ceb-2022-l9-q6b",
@@ -5211,7 +5415,7 @@
    "numero": "6b",
    "domaine": "sc.vivant",
    "type": "trous",
-   "enonce": "Graphique Natagora 2021 des oiseaux les plus observés : transfère les données du graphique circulaire dans le graphique en bâtonnets, puis nomme deux oiseaux (un bâtonnet mesure 6 % et un autre 20 %).",
+   "enonce": "Transfère certaines données du graphique circulaire (portfolio, page 13) dans un graphique en bâtonnets : écris la valeur des bâtonnets du moineau domestique et de la mésange bleue, puis écris le nom des oiseaux des deux autres bâtonnets (l'un mesure 6 %, l'autre 20 %). À l'épreuve, il fallait achever de tracer les bâtonnets avec la latte.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -5246,7 +5450,7 @@
    "numero": "7c1",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Prévisions : samedi littoral 1/4 °C, centre 1/3 °C, sud −3/−1 °C ; dimanche 8/11, 12/15, 3/9 °C ; lundi 12/15, 14/16, 6/10 °C. Quel jour les températures varieront-elles de 3 à 15 degrés ?",
+   "enonce": "Observe le tableau de prévisions de l'IRM (Institut Royal Météorologique) (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « Les températures varieront de 3 à 15 degrés. » ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
@@ -5256,7 +5460,11 @@
     "Lundi"
    ],
    "reponse": 1,
-   "explication": "Dimanche : de 3 °C (sud) à 15 °C (centre)."
+   "explication": "Dimanche : de 3 °C (sud) à 15 °C (centre).",
+   "documents": [
+    "liv9-p17",
+    "liv9-p14"
+   ]
   },
   {
    "id": "ceb-2022-l9-q7d",
@@ -5328,7 +5536,7 @@
    "numero": "7e2",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Observe les deux photos : après une averse, une table de jardin est recouverte d'eau ; plus tard dans la journée, elle est sèche alors qu'elle n'a pas été essuyée. Coche le nom du changement d'état observé.",
+   "enonce": "Observe les deux photos : après une averse, une table de jardin est recouverte d'eau ; plus tard dans la journée, elle est sèche alors qu'elle n'a pas été essuyée. Choisis le nom du changement d'état observé.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5346,7 +5554,7 @@
    "numero": "8a",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Deux bouteilles identiques, une blanche et une noire, remplies d'eau au soleil. Qu'est-ce qu'on veut prouver ?",
+   "enonce": "Avec l'expérience et le graphique des bouteilles (portfolio, page 15), on veut prouver…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-energie",
@@ -5354,10 +5562,10 @@
     "maisons-2"
    ],
    "choix": [
-    "que l'endroit influence la température de l'eau.",
+    "que l'endroit où la bouteille est placée influence la température de l'eau.",
     "que la couleur de la bouteille influence la température de l'eau.",
-    "que la taille de la bouteille influence la température.",
-    "que la durée au soleil influence la température."
+    "que la taille de la bouteille influence la température de l'eau.",
+    "que la durée d'exposition au soleil influence la température de l'eau."
    ],
    "reponse": 1,
    "explication": "Seule la couleur change entre les deux bouteilles."
@@ -5368,7 +5576,7 @@
    "numero": "8b",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Graphique (relevés de 9 h à 13 h ; à 13 h : blanche 25 °C, noire 30 °C). Vrai, faux ou pas testé ?",
+   "enonce": "Observe l'expérience et le graphique des bouteilles (portfolio, page 15). Pour chaque affirmation, choisis la proposition correcte.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-energie",
@@ -5376,14 +5584,14 @@
     "maisons-2"
    ],
    "lignes": [
-    "La température a augmenté dans les deux bouteilles de 9 h à 16 h.",
-    "En fin d'expérience, l'eau de la bouteille noire est plus chaude que celle de la blanche.",
-    "L'eau chauffe plus vite dans la bouteille blanche."
+    "La température de l'eau a augmenté dans les deux bouteilles de 9 h à 16 h.",
+    "En fin d'expérience, la température de l'eau contenue dans la bouteille noire est supérieure à celle contenue dans la bouteille blanche.",
+    "L'eau chauffe plus vite dans la bouteille blanche que dans la bouteille noire."
    ],
    "colonnes": [
-    "Vrai",
-    "Faux",
-    "On ne l'a pas testé"
+    "vrai",
+    "faux",
+    "on ne l'a pas testé"
    ],
    "reponse": [
     2,
@@ -5414,15 +5622,16 @@
    "numero": "9a",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "Isolation : le temps « 0 » correspond au moment où…",
+   "enonce": "« Tant en hiver qu'en été, il est important d'avoir une maison bien isolée. » Observe les relevés des températures des expériences 1 et 2 (livret, page 20). Choisis la proposition correcte en t'aidant des tableaux de données. Le temps « 0 » correspond au moment où…",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
-    "isolation"
+    "isolation",
+    "liv9-p20"
    ],
    "choix": [
-    "la température est la plus basse.",
-    "la température est de 0 °C.",
+    "la température est la plus basse dans les maisons.",
+    "la température est de 0 °C dans les maisons.",
     "les élèves préparent le matériel.",
     "l'expérience commence."
    ],
@@ -5435,19 +5644,20 @@
    "numero": "9b",
    "domaine": "sc.energie",
    "type": "qcm_multi",
-   "enonce": "Au frigo : maison isolée 20 → 5,6 °C, non isolée 20 → 5 °C en 30 min (après 5 min : 15,2 et 12,8). Au soleil : isolée 20 → 27,8 °C, non isolée 20 → 28,7 °C (après 5 min : 23,2 et 26,4). Coche les deux observations correctes.",
+   "enonce": "Observe les relevés des températures des expériences 1 et 2 (livret, page 20). D'après les tableaux de données, qu'observent les élèves au terme des expériences 1 et 2 ? Choisis les deux propositions correctes.",
    "points": 2,
    "corrigeVerifie": true,
    "documents": [
-    "isolation"
+    "isolation",
+    "liv9-p20"
    ],
    "choix": [
-    "La température de la maison isolée varie plus vite.",
-    "La température de la maison isolée varie moins vite.",
-    "La température varie dans la maison isolée et reste stable dans l'autre.",
-    "Elle augmente dans la maison isolée et diminue dans l'autre.",
-    "Pour une même durée, la température de la maison isolée varie moins.",
-    "Pour une même durée, la température de la maison isolée varie plus."
+    "La température dans la maison isolée varie plus vite que dans la maison non isolée.",
+    "La température dans la maison isolée varie moins vite que dans la maison non isolée.",
+    "La température intérieure varie dans la maison isolée. Elle reste stable dans la maison non isolée.",
+    "La température intérieure augmente dans la maison isolée et diminue dans la maison non isolée.",
+    "Pour une même durée, la température dans la maison isolée varie moins que dans la maison non isolée.",
+    "Pour une même durée, la température dans la maison isolée varie plus que dans la maison non isolée."
    ],
    "reponse": [
     1,
@@ -5462,17 +5672,19 @@
    "numero": "9c",
    "domaine": "sc.energie",
    "type": "qcm",
-   "enonce": "En ouvrant portes et fenêtres, les deux maisons atteignent presque la même température. Quelle conclusion tirer des quatre expériences ?",
+   "enonce": "Les élèves refont les mêmes expériences en ouvrant les portes et les fenêtres des deux maisons (expérience 3 : dans le frigo à 6 °C ; expérience 4 : dehors, au soleil à 28 °C ; livret, pages 20 et 22). En te basant uniquement sur les quatre expériences, quelle conclusion vraisemblable les élèves tirent-ils ?",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
-    "isolation"
+    "isolation",
+    "liv9-p20",
+    "liv9-p22"
    ],
    "choix": [
-    "Aérer les habitations les rend plus saines.",
-    "Ouvrir fenêtres et portes fait toujours diminuer la température.",
-    "Placer de petites fenêtres isole mieux.",
-    "Une maison bien isolée, fenêtres et portes fermées, garde une température intérieure plus stable."
+    "Aérer les habitations est important pour qu'elles soient plus saines.",
+    "Ouvrir les fenêtres et les portes fait toujours diminuer la température dans les habitations.",
+    "Placer des petites fenêtres plutôt que des grandes quand on construit une nouvelle maison permet d'avoir une meilleure isolation de la maison.",
+    "Avoir une maison bien isolée et garder les fenêtres et les portes fermées permet de conserver une température intérieure plus stable."
    ],
    "reponse": 3,
    "explication": "Fermée et isolée, la maison change moins de température ; ouverte, l'isolation ne sert plus."
@@ -5483,7 +5695,7 @@
    "numero": "10a",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Expérience 1 : des glaçons fondent dans un verre d'eau salée (glaces de l'Arctique). Quelle question se posaient les élèves ?",
+   "enonce": "Quelle question les élèves se sont-ils posée avant de réaliser l'expérience n°1 (portfolio, page 18) ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
@@ -5492,9 +5704,9 @@
    ],
    "choix": [
     "Avec la fonte des glaces en Arctique, le niveau de l'eau des océans s'élève-t-il ?",
-    "Quel sera le niveau de l'eau quand les glaces auront fondu ?",
+    "Quel sera le niveau de l'eau des océans quand les glaces auront fondu ?",
     "Pourquoi le niveau des océans augmente-t-il ?",
-    "Où les glaces fondent-elles le plus vite ?"
+    "Où les glaces fondent-elles le plus vite, au Pôle Sud ou au Pôle Nord ?"
    ],
    "reponse": 0,
    "explication": "On teste si la glace qui flotte fait monter l'eau en fondant."
@@ -5535,12 +5747,14 @@
    "numero": "10e",
    "domaine": "sc.matiere",
    "type": "qcm",
-   "enonce": "Emma : « Les scientifiques se trompent. » Amandine : « Ils pourraient avoir raison pour le continent Antarctique. » Liam : « Ils pourraient avoir raison pour l'océan Arctique. » Qui a raison ?",
+   "enonce": "Lis ce qu'affirment ces trois élèves après avoir comparé les résultats des expériences 1 et 2. Liam : « Nos expériences montrent que les scientifiques pourraient avoir raison pour l'océan glacial Arctique. » Emma : « Nos expériences montrent que les scientifiques se trompent. » Amandine : « Nos expériences montrent que les scientifiques pourraient avoir raison pour le continent Antarctique. » Choisis le prénom de l'élève qui a raison.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-etats",
    "documents": [
-    "climat-1"
+    "climat-1",
+    "climat-2",
+    "climat-3"
    ],
    "choix": [
     "Emma",
@@ -5815,7 +6029,7 @@
    "numero": "7b",
    "domaine": "sc.energie",
    "type": "grille",
-   "enonce": "Observe le bulletin météo du livret (page 16). Tu peux t'aider de la légende des icônes de la page 14. Coche vrai ou faux pour chaque proposition.",
+   "enonce": "Observe le bulletin météo du livret (page 16). Tu peux t'aider de la légende des icônes de la page 14. Choisis vrai ou faux pour chaque proposition.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "sc-phenomenes",
