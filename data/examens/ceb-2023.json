@@ -5389,7 +5389,7 @@
    "numero": "3",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "Quelle est la fonction principale de chaque appareil ?",
+   "enonce": "Les appareils du corps humain ont différentes fonctions. Pour chaque appareil, choisis sa fonction principale.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
@@ -5412,7 +5412,7 @@
     0,
     2
    ],
-   "explication": "La peau protège et permet le toucher ; os et muscles soutiennent et font bouger ; le sang transporte ; les poumons échangent les gaz."
+   "explication": "Appareil tégumentaire = la peau : elle protège le corps et permet le toucher. Appareil locomoteur = les os, les muscles et les articulations : ils soutiennent, protègent et font bouger. Appareil circulatoire = le cœur, les vaisseaux et le sang : il transporte l'oxygène et les nutriments dans tout l'organisme. Appareil respiratoire = les voies respiratoires et les poumons : échanges gazeux (le dioxygène entre, le dioxyde de carbone sort). La colonne « absorption, dégradation, assimilation, stockage » est la fonction de l'appareil digestif, qui n'est pas dans le tableau."
   },
   {
    "id": "ceb-2023-l9-q4a",

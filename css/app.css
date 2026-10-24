@@ -388,11 +388,13 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .progres h1 { font-size:30px; font-weight:900; }
 .legende { display:flex; gap:14px; flex-wrap:wrap; margin:0; color:var(--mute); font-size:14px; font-weight:600; }
 .notions { display:flex; flex-direction:column; gap:8px; }
-.notion { display:grid; grid-template-columns:34px 1fr auto auto; gap:10px; align-items:center; padding:10px; border-radius:14px; background:var(--panel2); border:var(--bord); }
+.notion { display:grid; grid-template-columns:34px 1fr auto; gap:10px; align-items:center; padding:10px; border-radius:14px; background:var(--panel2); border:var(--bord); }
 .notion .e { font-size:24px; text-align:center; }
 .notion .nom b { display:block; }
 .notion .nom small { color:var(--mute); display:block; margin-bottom:6px; }
 .notion .barre { height:8px; }
+.notion .actions-notion { display:flex; gap:6px; }
+.notion .actions-notion .btn { white-space:nowrap; }
 .notion.st-fragile { border-left:5px solid #f97316; }
 .notion.st-progres { border-left:5px solid #eab308; }
 .notion.st-maitrise { border-left:5px solid var(--juste); }
@@ -400,7 +402,7 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
   .modal-actions { flex-direction:column-reverse; }
   .modal h2 { font-size:22px; }
   .notion { grid-template-columns:30px 1fr auto; }
-  .notion [data-fiche] { display:none; } /* sur téléphone : on touche 🎯, la fiche s'ouvre avant la mission */
+  .notion .actions-notion { flex-direction:column; }
 }
 .mute a { color:var(--txt); font-weight:700; }
 a.btn { text-decoration:none; }
@@ -602,7 +604,7 @@ a.btn { text-decoration:none; }
 .btn-voix { margin:2px 0 6px; }
 .btn-voix.lit { background:var(--mat-sel); border-color:var(--accent); }
 .voix-off { font-size:13px; color:var(--mute); font-weight:700; margin:2px 0 6px; }
-.puce-son { margin-left:auto; width:36px; height:32px; border-radius:999px; background:var(--panel); border:var(--bord); font-size:16px; }
+.puce-son { margin-left:auto; height:32px; padding:0 12px; border-radius:999px; background:var(--panel); border:var(--bord); font-size:14px; font-weight:700; color:var(--txt); white-space:nowrap; }
 
 /* ---------- Zoom des documents ---------- */
 .doc img { cursor:zoom-in; }

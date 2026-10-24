@@ -91,18 +91,28 @@ async function demarrer() {
 
 // Hors ligne : le service worker garde une copie du site. Quand une nouvelle version est publiée,
 // elle se télécharge en arrière-plan et un bandeau propose de l'utiliser (jamais de rechargement imposé).
+let majEnAttente = null; // nouvelle version prête, appliquée au prochain passage par l'accueil
 function installerHorsLigne() {
   if (!('serviceWorker' in navigator) || !(location.protocol === 'https:' || location.hostname === 'localhost')) return;
   // On recharge seulement quand l'enfant a demandé la mise à jour (pas à la toute première installation).
   let majDemandee = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => { if (majDemandee) { majDemandee = false; location.reload(); } });
+  const appliquer = (sw) => {
+    majDemandee = true;
+    if (navigator.serviceWorker.controller === sw) location.reload(); // déjà active : il suffit de recharger
+    else sw.postMessage('MISE_A_JOUR');
+  };
   const proposer = (sw) => {
+    // Sur l'accueil (aucune mission en cours), on passe à la nouvelle version tout de suite ;
+    // sinon on la garde pour le prochain retour à l'accueil, et le bandeau la propose.
+    majEnAttente = () => appliquer(sw);
+    if (!$('#ecran-accueil')?.hidden && !(partie && !partie.fini)) { majEnAttente = null; return appliquer(sw); }
     if (document.querySelector('.bandeau-maj')) return;
     const b = document.createElement('div');
     b.className = 'bandeau-maj'; b.setAttribute('role', 'status');
     b.innerHTML = '<span>✨ Une nouvelle version de Mission CEB est prête.</span><button class="btn btn-cta petit">Mettre à jour</button><button class="btn petit" aria-label="Plus tard">Plus tard</button>';
     const [maj, plusTard] = b.querySelectorAll('button');
-    maj.onclick = () => { maj.disabled = true; majDemandee = true; sw.postMessage('MISE_A_JOUR'); };
+    maj.onclick = () => { maj.disabled = true; majEnAttente = null; appliquer(sw); };
     plusTard.onclick = () => b.remove();
     document.body.append(b);
   };
@@ -249,6 +259,7 @@ function brancherAmbiances(el, onChoix) {
 
 // ============================================================ Accueil
 function afficherAccueil() {
+  if (majEnAttente) { const f = majEnAttente; majEnAttente = null; f(); }
   joueur = store.joueurActif();
   if (!joueur) return afficherConnexion();
   appliquerTheme(joueur.theme);
@@ -513,7 +524,7 @@ function afficherQuiz() {
     <div class="pied-quiz" id="pied"><div class="retour" id="retour" hidden></div>
       <div class="in"><button class="btn" id="passer">Je ne sais pas</button><button class="btn btn-cta" id="valider" disabled>Valider</button></div></div>`;
   montrer('ecran-quiz');
-  const majSon = () => { const on = confortDe(joueur).sons; const b = $('#q-son'); b.textContent = on ? '🔊' : '🔇'; b.setAttribute('aria-label', on ? 'Couper les sons' : 'Remettre les sons'); b.setAttribute('aria-pressed', String(!on)); };
+  const majSon = () => { const on = confortDe(joueur).sons; const b = $('#q-son'); b.textContent = on ? '🔔 Sons' : '🔕 Sons coupés'; b.title = on ? 'Bruitages (bonne réponse, erreur, fin de mission) : touche pour les couper' : 'Bruitages coupés : touche pour les remettre'; b.setAttribute('aria-label', on ? 'Couper les bruitages' : 'Remettre les bruitages'); b.setAttribute('aria-pressed', String(!on)); };
   $('#q-son').onclick = () => { joueur = store.modifier((j) => { j.confort = { ...confortDe(j), sons: !confortDe(j).sons }; }); appliquerConfort(joueur); majSon(); };
   majSon();
   $('#quitter').onclick = () => { taire(); terminerPartie(true); };
@@ -602,10 +613,19 @@ function questionSuivante() {
   pied.className = 'pied-quiz';
   $('#retour').hidden = true;
   $('#passer').hidden = false;
+  ajusterEspacePied();
   const bv = $('#valider'); bv.textContent = 'Valider'; bv.disabled = true;
   partie.ui = brancher($('#q-saisie'), q, { onPret: (ok) => { bv.disabled = !ok; }, onValider: () => { if (!bv.disabled) bv.click(); } });
   majEtat();
 }
+
+// Le bandeau de correction est fixé en bas : on laisse dessous assez de place pour pouvoir
+// faire défiler la question jusqu'au bout (sinon les dernières lignes restent cachées).
+function ajusterEspacePied() {
+  const z = $('#ecran-quiz .quiz'); const p = $('#pied');
+  if (z && p) z.style.paddingBottom = `${Math.max(150, p.offsetHeight + 24)}px`;
+}
+window.addEventListener('resize', () => ajusterEspacePied());
 
 function valider(passer) {
   if (partie.corrige || partie.fini) return;
@@ -631,6 +651,7 @@ function valider(passer) {
     ${r.niveau && r.niveau.apres !== r.niveau.avant ? `<p class="niveau-change">${r.niveau.apres > r.niveau.avant ? `🚀 Niveau ${r.niveau.apres} : tu es en forme, on corse un peu !` : `🌱 Niveau ${r.niveau.apres} : on reprend en douceur.`}</p>` : ''}
     <button class="lien lien-signaler" id="signaler">⚑ Signaler une erreur</button>`;
   $('#retour').hidden = false;
+  ajusterEspacePied();
   $('#voir-regle')?.addEventListener('click', () => ouvrirFiche(q.fiche));
   $('#signaler').onclick = () => ouvrirSignalement({ q, reponseDonnee: donnee, bonneReponse: r.bonneReponse ?? bonneReponseLisible(q), page: `quiz (${partie.modeJeu})` });
   $('#passer').hidden = true;
@@ -1363,8 +1384,8 @@ function afficherProgres() {
           <span class="e">${x.fiche.e}</span>
           <div class="nom"><b>${esc(x.fiche.titre)}</b><small>${STATUTS[x.statut].e} ${STATUTS[x.statut].nom}${x.n ? ` · ${Math.round(x.m * 100)} %` : ''}</small>
             <div class="barre"><i style="width:${x.n ? Math.round(x.m * 100) : 0}%"></i></div></div>
-          <button class="btn petit" data-fiche="${x.fiche.id}" aria-label="Fiche">📘</button>
-          <button class="btn petit" data-cible="${x.fiche.id}" aria-label="S'entraîner">🎯</button>
+          <div class="actions-notion"><button class="btn petit" data-fiche="${x.fiche.id}" title="Lire la fiche de la notion (la règle et des exemples)">📘 Fiche</button>
+          <button class="btn petit" data-cible="${x.fiche.id}" title="10 questions sur cette notion">🎯 S'entraîner</button></div>
         </div>`).join('')}</div>
     </section>`).join('')}
   </div>`;
@@ -1373,7 +1394,7 @@ function afficherProgres() {
   $('#retour-accueil', el).onclick = afficherAccueil;
   $('#p-cible', el)?.addEventListener('click', () => lancerCible(null, true));
   $$('[data-fiche]', el).forEach((b) => b.onclick = () => ouvrirFiche(b.dataset.fiche, { cta: '🎯 M\'entraîner sur cette notion', onCta: () => lancerCible(b.dataset.fiche, false) }));
-  $$('[data-cible]', el).forEach((b) => b.onclick = () => lancerCible(b.dataset.cible, true));
+  $$('[data-cible]', el).forEach((b) => b.onclick = () => lancerCible(b.dataset.cible, false));
 }
 
 // ============================================================ Réglages
