@@ -126,7 +126,8 @@ export function corriger(question, reponseEleve) {
     }
     case 'association': {
       // reponse = [[g, d], ...] ; l'élève fournit aussi des paires
-      const attendu = new Set(question.reponse.map(([g, d]) => `${g}-${d}`));
+      // pairesAcceptees (facultatif) : autres paires admises par le correctif, sans changer le barème.
+      const attendu = new Set([...question.reponse, ...(question.pairesAcceptees || [])].map(([g, d]) => `${g}-${d}`));
       const bons = reponseEleve.filter(([g, d]) => attendu.has(`${g}-${d}`)).length;
       const res = partiel(bons, question.reponse.length, max);
       return question.toutOuRien && !res.correct ? { ...res, score: 0 } : res;

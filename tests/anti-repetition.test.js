@@ -81,3 +81,12 @@ test('qcm_multi : propositions tolérées par le corrigé (aussiAcceptes, nbACho
   assert.ok(corriger(sans, [0, 1, 2, 3]).correct);
   assert.ok(!corriger(sans, [0, 1, 2]).correct);
 });
+
+test('association : paires tolérées par le corrigé (pairesAcceptees)', async () => {
+  const { corriger } = await import('../js/engine/index.js');
+  const q = { type: 'association', gauche: ['a', 'b'], droite: ['x', 'y', 'z'], reponse: [[0, 0], [1, 1]], pairesAcceptees: [[1, 2]], points: 2 };
+  assert.ok(corriger(q, [[0, 0], [1, 1]]).correct);
+  assert.ok(corriger(q, [[0, 0], [1, 2]]).correct);
+  assert.ok(!corriger(q, [[0, 2], [1, 1]]).correct);
+  assert.equal(corriger(q, [[0, 1], [1, 2]]).score, 1);
+});
