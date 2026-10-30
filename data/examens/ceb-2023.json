@@ -927,7 +927,7 @@
     "ecoute"
    ],
    "reponseModele": "Le chêne est majestueux (grand), comme s'il reliait la terre au ciel. Ou : il est important, impressionnant, imposant, monumental. On accepte toute idée de grandeur, de force, de robustesse. Ce n'est pas bon : « il touche la terre et le ciel », « il va jusqu'au ciel » ou « il est le roi de la forêt ».",
-   "explication": "La comparaison avec un pont qui relie la terre et le ciel montre que le chêne est immense, fort et imposant."
+   "explication": "Le chêne est si grand et si fort qu'il semble relier la terre, où plongent ses racines, et le ciel, où ses branches vont « jusqu'à accrocher les nuages ». Une bonne réponse parle de sa grandeur, de sa force ou de son allure imposante ; écrire seulement qu'il touche le ciel ne suffit pas."
   },
   {
    "id": "ceb-2023-l1-q3",
@@ -950,7 +950,7 @@
     "Photo 4"
    ],
    "reponse": 1,
-   "explication": "C'est la photo 2 : le roitelet est l'oiseau à la petite huppe jaune or, qui ressemble à une couronne."
+   "explication": "Dans le conte, l'oiseau a « une drôle de petite huppe jaune or sur la tête, on dirait une couronne ». Sur la photo 2, on voit cette petite huppe rayée sur le dessus de la tête : c'est le roitelet. Les oiseaux des autres photos (mésange, pic, pie) n'en ont pas."
   },
   {
    "id": "ceb-2023-l1-q4",
@@ -983,7 +983,7 @@
     1,
     2
    ],
-   "explication": "Le chêne-roi est le grand arbre, la rainette la petite grenouille, la reine des prés la fleur, et le roitelet le petit oiseau.",
+   "explication": "Le vent appelle l'arbre « le chêne-roi » ; le chœur des grenouilles nomme la petite grenouille « la grenouille rainette » ; l'oiseau dit à la fleur « tu es la reine des prés » ; le chêne dit à l'oiseau « tu es le petit roi des oiseaux, tu es le roitelet ».",
    "toutOuRien": true
   },
   {
@@ -1112,7 +1112,7 @@
      "à la petite fleur"
     ]
    ],
-   "explication": "C'est l'oiseau qui complimente la fleur et la nomme reine des prés.",
+   "explication": "C'est l'oiseau, le roitelet, qui parle à la fleur : « L'oiseau regarde la fleur et lui déclare : C'est vrai, tu es une belle fleur. Tu es la reine, la reine des prés ! »",
    "toutOuRien": true
   },
   {
@@ -1209,7 +1209,7 @@
     "découvrir l'histoire du chêne et du roseau."
    ],
    "reponse": 0,
-   "explication": "C'est un conte poétique et plaisant, qui fait aussi réfléchir : il sert d'abord à se distraire."
+   "explication": "Ce conte est une histoire poétique, que Joseph racontait « rien que pour le plaisir » : on l'écoute pour se distraire. Il ne raconte pas la vie de Joseph, et il ne fait que rappeler la fable du chêne et du roseau, sans la raconter."
   },
   {
    "id": "ceb-2023-l1-q12",
@@ -1294,10 +1294,11 @@
    "numero": "1",
    "domaine": "fr.ecrire",
    "type": "ouverte",
-   "enonce": "Écris la suite et la fin de l'histoire (au moins 90 mots) et invente un titre. Début : « Aujourd'hui, c'est l'anniversaire de Louis. Comme chaque année, il attend avec impatience le cadeau de son grand-père car c'est lui qui a toujours les idées les plus originales. Enfin ! Le facteur sonne à la porte et lui remet un colis. Louis l'ouvre avec empressement et… quelle n'est pas sa surprise ! »",
+   "enonce": "Écris la suite et la fin de l'histoire (au moins 90 mots) et invente un titre. Attention : le cadeau doit pouvoir être déposé par le facteur. Début : « Aujourd'hui, c'est l'anniversaire de Louis. Comme chaque année, il attend avec impatience le cadeau de son grand-père car c'est lui qui a toujours les idées les plus originales. Enfin ! Le facteur sonne à la porte et lui remet un colis. Louis l'ouvre avec empressement et… quelle n'est pas sa surprise ! »",
    "points": 35,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une bonne histoire continue directement le début : quel est le cadeau surprenant arrivé dans le colis, comment Louis réagit et pourquoi, ce qui se passe avec ce cadeau, puis une vraie fin. On attend aussi un titre en lien avec l'histoire, des paragraphes, des mots de liaison, peu de répétitions, des temps de verbes cohérents et une orthographe soignée."
   },
   {
    "id": "ceb-2023-l3-q1",
@@ -1326,7 +1327,7 @@
     0,
     2
    ],
-   "explication": "Le carré A reçoit le carreau 1 et le carré B reçoit le carreau 3 : ainsi le motif se répète de la même façon sur tout le sol."
+   "explication": "Le carré A est à la place d'un octogone de la 2e rangée : il faut le carreau 1. Le carré B se trouve entre les octogones, là où les bandes noires se croisent en tournant : il faut le carreau 3, comme à tous les autres croisements. Les carreaux 2 et 4 ne correspondent à aucun de ces deux endroits."
   },
   {
    "id": "ceb-2023-l3-q2",
@@ -1334,10 +1335,11 @@
    "numero": "2",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un triangle équilatéral, un losange et un disque à partir des segments donnés.",
+   "enonce": "Trace avec précision ce qui est demandé. Utilise tes instruments. a) Un triangle équilatéral : ce segment est une de ses bases. b) Un losange (non carré) : ce segment est sa petite diagonale. c) Un disque : ce segment est un de ses diamètres.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Les 3 côtés du triangle équilatéral ont la longueur du segment : au compas, trace un arc de cette longueur depuis chaque extrémité ; les arcs se croisent au 3e sommet. b) Les diagonales d'un losange se coupent en leur milieu à angle droit : trace la perpendiculaire au milieu du segment et places-y les 2 autres sommets, à la même distance du milieu, plus loin que la moitié du segment. c) Le centre du disque est le milieu du segment."
   },
   {
    "id": "ceb-2023-l3-q4",
@@ -1345,10 +1347,11 @@
    "numero": "4",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Termine la frise.",
+   "enonce": "Termine cette frise au crayon rouge en respectant sa régularité. Va jusqu'au bout du quadrillage.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Repère le motif de base (les traits verticaux et le trait oblique) et compte ses carreaux : sa longueur, sa hauteur et l'écart avant le motif suivant. Le trait en pointillé montre le début du motif suivant. Reproduis-le chaque fois exactement de la même manière, en comptant les carreaux, jusqu'au bout du quadrillage."
   },
   {
    "id": "ceb-2023-l3-q5",
@@ -1382,7 +1385,7 @@
     0,
     2
    ],
-   "explication": "Les solides 2, 3 et 5 sont des prismes (le solide 5, un cube, est un prisme). Les solides 4 et 6 ont une surface courbe : ce ne sont pas des polyèdres."
+   "explication": "Les solides 2, 3 et 5 n'ont que des faces planes, avec deux bases identiques et parallèles reliées par des rectangles : ce sont des prismes (le cube 5 est un prisme particulier). Le cylindre 4 et le cône 6 ont une surface courbe : ce ne sont pas des polyèdres. Aucun autre solide n'est une pyramide."
   },
   {
    "id": "ceb-2023-l3-q6",
@@ -1403,7 +1406,7 @@
     "triangle rectangle scalène",
     "triangle scalène rectangle"
    ],
-   "explication": "Il a un angle droit et ses trois côtés ont des longueurs différentes : c'est un triangle rectangle scalène. « Quelconque » est refusé."
+   "explication": "Le triangle a un angle droit (le sommet du haut) : il est rectangle. Ses trois côtés ont des longueurs toutes différentes : il est scalène. On ne peut pas écrire « quelconque », qui n'est pas un mot de mathématique précis."
   },
   {
    "id": "ceb-2023-l3-q7",
@@ -1411,10 +1414,11 @@
    "numero": "7",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Plan du magasin de meubles : repère des emplacements, trace le trajet le plus court, complète par droite ou gauche.",
+   "enonce": "Observe le plan de ce magasin de meubles (livret, page 8). a) Un meuble est rangé dans l'allée 24 – case 05 : trace une croix à cet emplacement. b) Marie doit aller chercher des chaises. Le seul renseignement dont elle dispose est qu'elles se trouvent dans l'allée la plus proche des caisses, dans la case 03 : colorie cet emplacement. c) Elle souhaite emporter la lampe représentée sur le plan : écris les numéros de l'emplacement où se trouve cette lampe. d) Marie a prévu d'acheter un lit d'enfant (allée 19, case 08), un bureau (allée 10, case 14) et une armoire (allée 18, case 10) : trace en rouge sur le plan le trajet le plus court, de l'entrée jusqu'aux caisses, en passant précisément par ces emplacements. e) Complète par droite ou gauche : en entrant dans le magasin, Marie prend un caddie situé à sa … ; lorsqu'elle passe à la caisse, le service client se situe à sa … ; en sortant du magasin, elle trouvera l'endroit pour laisser son caddie à sa … .",
    "points": 7,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On lit un emplacement par le numéro de l'allée, puis celui de la case. b) L'allée la plus proche des caisses est la 25 : case 25-03. c) La lampe est dans l'allée 30, case 04. d) Le trajet le plus court passe dans l'ordre par 10-14, 18-10, puis 19-08. e) Marie entre en allant vers la gauche du plan : les caddies sont à sa droite ; à la caisse, elle descend vers la sortie : le service client est à sa droite ; en sortant, le coin des caddies est à sa gauche."
   },
   {
    "id": "ceb-2023-l3-q8",
@@ -1422,10 +1426,11 @@
    "numero": "8",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un triangle rectangle et un parallélogramme de sommet commun A.",
+   "enonce": "Trace un triangle rectangle et un parallélogramme. Les deux figures auront le sommet A en commun. Utilise tes instruments.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le triangle rectangle a un angle droit, que l'on trace avec l'équerre. Le parallélogramme a deux paires de côtés parallèles. Le point A doit être un sommet de chacune des deux figures. Un rectangle ou un carré convient aussi, car ce sont des parallélogrammes particuliers."
   },
   {
    "id": "ceb-2023-l3-q10",
@@ -1433,10 +1438,11 @@
    "numero": "10",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un octogone régulier.",
+   "enonce": "Trace un octogone régulier en utilisant les quatre droites du livret comme lignes de construction. Choisis les dimensions qui te conviennent. Utilise tes instruments.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les 4 droites se coupent au même point et forment 8 angles égaux de 45°. Pique le compas sur ce point et reporte la même distance sur les 8 demi-droites, puis relie les 8 points dans l'ordre. Les 8 côtés ont alors la même longueur et les 8 angles la même amplitude : c'est un octogone régulier."
   },
   {
    "id": "ceb-2023-l3-q11",
@@ -1476,7 +1482,7 @@
     4,
     0
    ],
-   "explication": "Le 7 n'a aucun côté parallèle ni égal ; le 3 a deux paires de côtés égaux sans côtés parallèles ; le 5 a une seule paire de côtés parallèles ; le 6 est un rectangle ; le 4 est un losange ; le 2 est un carré."
+   "explication": "Le 7 n'a ni côtés parallèles ni côtés de même longueur. Le 3 (cerf-volant) a 2 paires de côtés voisins égaux, mais pas de côtés parallèles. Le 5 (trapèze) a une seule paire de côtés parallèles. Le 6 est un rectangle (4 angles droits), le 4 un losange (4 côtés égaux, 2 paires d'angles égaux) et le 2 un carré (4 côtés égaux et 4 angles droits)."
   },
   {
    "id": "ceb-2023-l3-q12",
@@ -1493,7 +1499,7 @@
    ],
    "unite": "axes de symétrie",
    "reponse": 4,
-   "explication": "La figure se superpose à elle-même en la pliant suivant 4 droites : 2 droites qui passent par le milieu des côtés opposés et 2 diagonales."
+   "explication": "La croix a quatre bras identiques. On peut la plier en deux parties qui se superposent exactement suivant 4 droites : la droite verticale et la droite horizontale qui passent par son centre, et les 2 droites en diagonale qui passent par les coins du carré du milieu."
   },
   {
    "id": "ceb-2023-l3-q13",
@@ -1501,10 +1507,11 @@
    "numero": "12",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Reproduis le dessin de losanges.",
+   "enonce": "Reproduis ce dessin sur le papier pointé. Les losanges doivent être disposés comme sur le modèle et avoir les mêmes dimensions. Le premier losange t'est donné (en pointillé). Utilise ton matériel.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Sur le modèle, compte les intervalles entre les points pour chaque côté du deuxième losange et repère les sommets qu'il partage avec le premier. Reproduis-le avec les mêmes mesures et à la même place par rapport au losange en pointillé, en reliant les points à la latte."
   },
   {
    "id": "ceb-2023-l3-q14",
@@ -1512,10 +1519,11 @@
    "numero": "14",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Reproduis la constellation d'Orion en l'agrandissant.",
+   "enonce": "Observe cette représentation de la constellation d'Orion. Reproduis-la sur le grand quadrillage, en respectant l'agrandissement du quadrillage. Utilise tes instruments.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le grand quadrillage a le même nombre de carreaux, mais des carreaux plus grands. Repère chaque point de la figure en comptant les carreaux depuis les bords, place-le au même endroit du grand quadrillage, puis relie les points à la latte. La figure garde la même forme, en plus grand."
   },
   {
    "id": "ceb-2023-l3-q15",
@@ -1537,7 +1545,7 @@
     "Solide 4"
    ],
    "reponse": 2,
-   "explication": "C'est le solide 3 : les boules sont les sommets et les bâtonnets sont les arêtes. Il y a 6 boules et 12 bâtonnets, comme dans l'octaèdre (6 sommets, 12 arêtes)."
+   "explication": "Les boules de plasticine sont les sommets et les bâtonnets les arêtes. Il y a 6 boules et 12 bâtonnets : c'est le solide 3, qui a 6 sommets et 12 arêtes. Le cube (1) a 8 sommets et 12 arêtes, le prisme à base triangulaire (2) 6 sommets mais 9 arêtes."
   },
   {
    "id": "ceb-2023-l3-q15b",
@@ -1558,7 +1566,7 @@
     "Matériel C"
    ],
    "reponse": 0,
-   "explication": "Le prisme à base hexagonale a 12 sommets (12 boules) et 18 arêtes (18 bâtonnets) : c'est le matériel A."
+   "explication": "Le prisme à base hexagonale a 12 sommets (6 en haut, 6 en bas) et 18 arêtes : 12 courtes autour des deux bases et 6 longues entre elles. Seul le matériel A contient 12 boules et 18 bâtonnets ; le B n'a que 12 bâtonnets et le C seulement 6 boules."
   },
   {
    "id": "ceb-2023-l3-q16",
@@ -1566,10 +1574,11 @@
    "numero": "16",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Découpe et colle les triangles sur le carré et le disque.",
+   "enonce": "Parmi les triangles à découper (page 19 du livret) : a) découpe le triangle qui possède une base isométrique aux côtés du carré et colle-le pour que cette base et un côté du carré se confondent ; b) découpe le triangle qui possède une base isométrique au diamètre du disque et colle-le pour que cette base soit un diamètre de ce disque.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "« Isométrique » veut dire « de même longueur ». a) Mesure le côté du carré, puis les bases des triangles : garde celui dont une base a exactement cette longueur et colle-la sur un côté du carré. b) Le diamètre passe par le centre marqué du disque : choisis le triangle dont la base a la longueur du diamètre et colle cette base en la faisant passer par le centre."
   },
   {
    "id": "ceb-2023-l3-q3",
@@ -1581,7 +1590,7 @@
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "ma-quadrilateres",
-   "explication": "Un polygone régulier a tous ses côtés de même longueur et tous ses angles de même amplitude.",
+   "explication": "Une bonne réponse donne les deux propriétés d'un polygone régulier : tous ses côtés ont la même longueur et tous ses angles ont la même amplitude. C'est vrai pour le carré A comme pour le triangle équilatéral B. L'ordre des deux raisons n'a pas d'importance.",
    "reponseModele": "… parce qu'elles ont tous leurs angles de même amplitude et parce qu'elles ont tous leurs côtés de même longueur (isométriques). Ou toute formulation allant dans ce sens ; l'ordre des deux propositions n'est pas important.",
    "documents": [
     "liv3-p05"
@@ -1598,7 +1607,8 @@
    "corrigeVerifie": true,
    "numerisable": false,
    "remarque": "Question de marquage sur une figure du livret (représentation de la porte) que nous n'avons pas : gardée en mode papier.",
-   "reponseModele": "Deux angles obtus (plus grands que 90°) sont marqués d'un arc noir."
+   "reponseModele": "Deux angles obtus (plus grands que 90°) sont marqués d'un arc noir.",
+   "explication": "Un angle obtus est plus grand qu'un angle droit (plus de 90°). Dans le parallélogramme A, ce sont l'angle en haut à droite et l'angle en bas à gauche : ils sont plus ouverts qu'un angle droit. Les angles des triangles et les coins du cadre sont droits ou aigus."
   },
   {
    "id": "ceb-2023-l3-q9b",
@@ -1619,7 +1629,7 @@
      "180"
     ]
    ],
-   "explication": "La somme des angles d'un quadrilatère vaut 360° ; celle d'un triangle 180°.",
+   "explication": "Dans un triangle, la somme des 3 angles vaut toujours 180°. Le parallélogramme A est un quadrilatère : une diagonale le partage en 2 triangles, donc la somme de ses 4 angles vaut 2 × 180° = 360°.",
    "documents": [
     "liv3-p11"
    ]
@@ -1657,7 +1667,7 @@
     1,
     0
    ],
-   "explication": "La naissance en Angleterre et Philip Astley sont dans l'histoire du cirque ; Monsieur Loyal présente le cirque traditionnel."
+   "explication": "Le cadre 3 de l'histoire du cirque (page 3) dit que le cirque traditionnel « nait en Angleterre » et que Philip Astley « a d'abord l'idée d'organiser des spectacles de chevaux ». Monsieur Loyal, le présentateur qui fait le lien entre les numéros, est décrit à la page 4, celle du cirque traditionnel."
   },
   {
    "id": "ceb-2023-l4-q2",
@@ -1685,7 +1695,7 @@
     3,
     2
    ],
-   "explication": "Moyen Âge (saltimbanques), 18e siècle (Astley), dès 1950 (télévision), 2014 (interdiction)."
+   "explication": "Les saltimbanques vont de château en château au Moyen Âge (cadre 2). Philip Astley crée ses spectacles de chevaux au 18e siècle (cadre 3). Dès 1950, la télévision fait baisser l'intérêt pour le cirque, et depuis 2014 les animaux sauvages sont interdits en Belgique (cadre 4)."
   },
   {
    "id": "ceb-2023-l4-q3",
@@ -1740,7 +1750,8 @@
    "documents": [
     "cirque-2"
    ],
-   "reponseModele": "Le public montre moins d'intérêt pour le cirque traditionnel (dès 1950, notamment parce qu'il regarde de plus en plus la télévision). Ou : le cirque souhaite attirer plus de (nouveaux) spectateurs. Ou toute idée allant dans ce sens. Ce n'est pas bon : seulement « à cause de la télévision » (réponse incomplète)."
+   "reponseModele": "Le public montre moins d'intérêt pour le cirque traditionnel (dès 1950, notamment parce qu'il regarde de plus en plus la télévision). Ou : le cirque souhaite attirer plus de (nouveaux) spectateurs. Ou toute idée allant dans ce sens. Ce n'est pas bon : seulement « à cause de la télévision » (réponse incomplète).",
+   "explication": "Le cadre 4 explique que, « dès 1950, le public montre moins d'intérêt pour le cirque traditionnel », entre autres à cause de la télévision. « Ainsi » montre la conséquence : les artistes ont renouvelé le cirque pour attirer à nouveau le public. Répondre seulement « à cause de la télévision » ne suffit pas."
   },
   {
    "id": "ceb-2023-l4-q5",
@@ -1754,7 +1765,8 @@
    "documents": [
     "cirque-2"
    ],
-   "reponseModele": "Pour protéger les animaux et veiller à leur bienêtre."
+   "reponseModele": "Pour protéger les animaux et veiller à leur bienêtre.",
+   "explication": "Le cadre 4 donne la raison : la Belgique interdit ces numéros depuis 2014 « afin de veiller à la protection et au bienêtre animal ». Une bonne réponse parle de protéger les animaux ou de leur bienêtre."
   },
   {
    "id": "ceb-2023-l4-q6",
@@ -1773,7 +1785,7 @@
     "de la musique."
    ],
    "reponse": 2,
-   "explication": "« sa » renvoie à l'artiste qui présente son numéro."
+   "explication": "Dans « tout au long de sa prestation, l'artiste cherche à provoquer une émotion », le déterminant « sa » renvoie à l'artiste : c'est lui qui présente son numéro. Le spectateur regarde, et la musique ne fait qu'accompagner."
   },
   {
    "id": "ceb-2023-l4-q7",
@@ -1792,7 +1804,7 @@
     "tous les artistes jouent un rôle."
    ],
    "reponse": 3,
-   "explication": "« Chacun d'eux » : chaque artiste, donc tous."
+   "explication": "« Chacun d'eux » veut dire « chaque artiste, sans exception ». Tous les artistes jouent donc un rôle dans l'histoire, en plus de présenter un numéro."
   },
   {
    "id": "ceb-2023-l4-q8",
@@ -1833,7 +1845,7 @@
      "l'admiration"
     ]
    ],
-   "explication": "« Provoquer l'émerveillement, la peur, le rire. »",
+   "explication": "Au début de la page 4, le spectacle du cirque traditionnel « vise essentiellement à provoquer l'émerveillement, la peur, le rire ». Il suffit de recopier deux de ces réactions.",
    "differentes": true
   },
   {
@@ -1863,7 +1875,7 @@
     1,
     0
    ],
-   "explication": "Les numéros sont « principalement d'acrobatie », pas uniquement. « La piste circulaire d'un diamètre de 13 mètres. »"
+   "explication": "Au cirque contemporain, on intègre des numéros « principalement d'acrobatie » : « principalement » ne veut pas dire « uniquement », donc c'est faux. Pour le cirque traditionnel, le texte parle de « la piste circulaire d'un diamètre de 13 mètres » : c'est vrai."
   },
   {
    "id": "ceb-2023-l4-q10",
@@ -1890,7 +1902,7 @@
     1,
     0
    ],
-   "explication": "Les metteurs en scène créent les spectacles contemporains ; le traditionnel enchaine une douzaine de numéros indépendants."
+   "explication": "À la page 5 (cirque contemporain), « des metteurs en scène, de plus en plus créatifs, sont constamment à la recherche de nouvelles idées ». À la page 4 (cirque traditionnel), « une douzaine de numéros, sans rapport les uns avec les autres, se succèdent »."
   },
   {
    "id": "ceb-2023-l4-q11",
@@ -1922,7 +1934,7 @@
     0,
     2
    ],
-   "explication": "Une date de l'histoire ; une information sur la formation."
+   "explication": "Les grandes familles de cirques au début du 20e siècle, c'est un évènement daté : sa place est dans l'histoire du cirque en Europe. Une école qui forme des artistes professionnels se rattache à la partie sur les écoles de cirque, qui parle déjà de l'École Supérieure des Arts du Cirque."
   },
   {
    "id": "ceb-2023-l4-q12",
@@ -1939,7 +1951,7 @@
     "liv4-p07"
    ],
    "reponseModele": "Tout ou rien (1 point) : il faut que la justification soit cohérente avec ta réponse. OUI : les spectacles avec animaux sauvages sont interdits en Belgique (le mot « sauvages » est exigé). NON : c'est possible si l'affiche date d'avant 2014 (avant l'interdiction).",
-   "explication": "Depuis 2014, la Belgique interdit les numéros qui mettent en scène des animaux sauvages."
+   "explication": "Les deux réponses sont possibles si la justification va avec. OUI : l'affiche montre des animaux sauvages (lion, tigre, éléphant), et la Belgique interdit ces numéros depuis 2014 ; il faut écrire le mot « sauvages ». NON : c'est possible si l'affiche date d'avant 2014, avant l'interdiction."
   },
   {
    "id": "ceb-2023-l4-q13",
@@ -1947,7 +1959,7 @@
    "numero": "13",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "À la bibliothèque, que dois-tu utiliser pour vérifier les informations sur la comparaison du cirque traditionnel et du cirque contemporain ?",
+   "enonce": "Tu es dans une bibliothèque. Que dois-tu utiliser pour vérifier les informations des pages 4 et 5 sur la comparaison du « cirque traditionnel » et du « cirque contemporain » ? Choisis la proposition correcte.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-types-textes",
@@ -1959,7 +1971,7 @@
     "La brochure « 20 bricolages sur le thème du cirque »"
    ],
    "reponse": 1,
-   "explication": "Pour vérifier des informations, on consulte un documentaire sur le sujet."
+   "explication": "Pour vérifier des informations sur le cirque d'hier et d'aujourd'hui, il faut un livre documentaire sur ce sujet. Le dictionnaire des synonymes explique des mots, le livret publicitaire parle d'une seule école, et l'interview et les bricolages ne comparent pas les deux types de cirques."
   },
   {
    "id": "ceb-2023-l4-q14a",
@@ -2063,7 +2075,7 @@
     "cirque-2"
    ],
    "reponse": 3,
-   "explication": "Le corrigé officiel compte 3 paragraphes dans le cadre 4. Un paragraphe est un bloc de lignes séparé des autres par un passage à la ligne."
+   "explication": "Le cadre 4 contient 3 blocs de lignes séparés par un espace : celui qui commence par « Au 20e siècle », celui qui commence par « Ainsi » et celui qui commence par « Aujourd'hui ». Chaque bloc est un paragraphe."
   },
   {
    "id": "ceb-2023-l4-q17",
@@ -2085,7 +2097,7 @@
     "A partir du 19e siecle",
     "par la suite"
    ],
-   "explication": "« Au 18e siècle », « Par la suite » et « À partir du 19e siècle » organisent le cadre 3."
+   "explication": "Un organisateur textuel se place au début d'un paragraphe et aide à suivre l'ordre du texte, ici l'ordre du temps. Dans le cadre 3, les trois paragraphes commencent par « Au 18e siècle », « Par la suite » et « À partir du 19e siècle » : il suffit d'en recopier un."
   },
   {
    "id": "ceb-2023-l4-q18",
@@ -2100,7 +2112,7 @@
    "reponse": [
     "Ensuite"
    ],
-   "explication": "« Ensuite » marque l'étape suivante."
+   "explication": "« Ensuite » commence la dernière phrase et la relie à la phrase d'avant : il annonce l'étape suivante, après l'option spécifique en école secondaire."
   },
   {
    "id": "ceb-2023-l4-q19",
@@ -2119,7 +2131,7 @@
     "incontournable"
    ],
    "reponse": 1,
-   "explication": "Insolite = qui surprend, inhabituel."
+   "explication": "« Insolite » veut dire étonnant, qui sort de l'ordinaire : on peut le remplacer par « inhabituelle ». « Ordinaire » dit le contraire, et « comique » ou « incontournable » n'ont pas ce sens."
   },
   {
    "id": "ceb-2023-l4-q20",
@@ -2138,7 +2150,7 @@
     "Dans les années septante, de jeunes artistes renouvèlent les arts du cirque."
    ],
    "reponse": 3,
-   "explication": "« Dans les années septante » (CC), « de jeunes artistes » (S), « renouvèlent » (V), « les arts du cirque » (CD)."
+   "explication": "« Dans les années septante » (complément circonstanciel), « de jeunes artistes » (sujet), « renouvèlent » (verbe), « les arts du cirque » (complément direct du verbe). La 1re phrase n'a pas de complément direct, la 2e commence par le sujet, et dans la 3e « à des ateliers » est un complément indirect."
   },
   {
    "id": "ceb-2023-l4-q21",
@@ -2157,7 +2169,7 @@
     "Faire l'expérience de… Exemple : Elle touche à tous les instruments."
    ],
    "reponse": 3,
-   "explication": "Les enfants essaient toutes les disciplines."
+   "explication": "Dans l'extrait, les jeunes enfants essaient, découvrent toutes les disciplines du cirque : c'est le sens « faire l'expérience de… », comme dans « Elle touche à tous les instruments ». Ils ne font pas que poser la main sur le matériel."
   },
   {
    "id": "ceb-2023-l4-q22",
@@ -2249,7 +2261,7 @@
      "la Meuse"
     ]
    ],
-   "explication": "L'Ourthe coule de Vieuxville jusqu'à Liège. Liège et Namur sont toutes deux sur la Meuse."
+   "explication": "La cache n°5 (Vieuxville) est au bord de l'Ourthe, une rivière qui coule vers le nord jusqu'à Liège, où se trouve la cache n°2 (Cointe). Liège et Namur sont toutes les deux au bord de la Meuse : pour aller de l'une à l'autre, on suit la Meuse."
   },
   {
    "id": "ceb-2023-l5-q1c",
@@ -2310,7 +2322,7 @@
     3,
     2
    ],
-   "explication": "Le 16e siècle fait partie des Temps modernes (1492-1789). Le 6e siècle est au début du Moyen Âge (476-1492)."
+   "explication": "L'astrolabe (trésor n°2) date du 16e siècle, de 1501 à 1600 : c'est l'époque des Temps modernes, qui commencent à la fin du 15e siècle. La fibule (trésor n°5) date du 6e siècle : c'est le début du Moyen Âge, qui commence en 476 avec la fin de l'Empire romain d'Occident."
   },
   {
    "id": "ceb-2023-l5-q1e",
@@ -2384,7 +2396,7 @@
      3
     ]
    ],
-   "explication": "L'astrolabe sert aux grandes découvertes ; la photo d'un soldat du 20e siècle appartient au temps des sociétés industrielles ; un nomade de 7 000 av. J.-C. était chasseur-cueilleur."
+   "explication": "L'astrolabe nautique du 16e siècle servait à naviguer : il appartient au temps des grandes découvertes techniques et géographiques. La photo d'un soldat du 20e siècle appartient au temps des sociétés industrielles. Le silex taillé était l'outil d'un nomade vers 7 000 av. J.-C. : c'est le temps des chasseurs-cueilleurs."
   },
   {
    "id": "ceb-2023-l5-q2a",
@@ -2411,7 +2423,7 @@
     0,
     0
    ],
-   "explication": "Les deux photos sont prises à hauteur d'homme, depuis le sol."
+   "explication": "Les deux photos sont prises par une personne debout sur le sol : on voit la rue, les maisons ou la prairie de face, avec le ciel au-dessus de l'horizon. Une photo aérienne est prise d'en haut (avion, drone), comme les photos n°2 et n°3 de la ferme de Mont-Saint-Jean."
   },
   {
    "id": "ceb-2023-l5-q2b",
@@ -2419,7 +2431,7 @@
    "numero": "2b",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Lequel de ces deux paysages…",
+   "enonce": "Observe les photos A (colline de Cointe) et B (région de Vieuxville). Pour chaque question, choisis la réponse correcte. Lequel de ces deux paysages…",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2440,7 +2452,7 @@
     0,
     1
    ],
-   "explication": "A : une ville (maisons, voitures). B : une grande prairie et une ferme."
+   "explication": "La photo B montre surtout une grande prairie, des arbres et des champs : des éléments naturels et beaucoup d'espaces non bâtis. La photo A montre une rue bordée de maisons et de voitures, avec la ville au loin : c'est un paysage urbain."
   },
   {
    "id": "ceb-2023-l5-q2c",
@@ -2481,7 +2493,7 @@
     "la province de Liège",
     "province de Liège"
    ],
-   "explication": "Cointe (à Liège) et Vieuxville sont dans la province de Liège."
+   "explication": "Sur la carte des caches, Cointe (cache n°2) est à Liège, et Vieuxville (cache n°5) se trouve plus au sud, mais toujours à l'intérieur de la province de Liège."
   },
   {
    "id": "ceb-2023-l5-q2e",
@@ -2489,7 +2501,7 @@
    "numero": "2e",
    "domaine": "hg.geographie",
    "type": "grille",
-   "enonce": "Photos de la ferme de Mont-Saint-Jean : à quel élément correspond chaque lettre ?",
+   "enonce": "Observe les photos n°1 et n°2 de la ferme de Mont-Saint-Jean (portfolio, page 23). Pour chacune des trois lettres, choisis l'élément auquel elle correspond.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2512,7 +2524,7 @@
     1,
     2
    ],
-   "explication": "A montre la ferme (bâtiments), B les champs derrière, C le rondpoint (voie de communication)."
+   "explication": "A est posé sur les bâtiments blancs de la ferme. B est sur les terres vertes au fond de la photo n°2 : des prairies et des champs. C est sur le rondpoint, qui fait partie des routes : une voie de communication. Aucune lettre ne montre l'espace boisé."
   },
   {
    "id": "ceb-2023-l5-q2f",
@@ -2520,7 +2532,7 @@
    "numero": "2f",
    "domaine": "hg.geographie",
    "type": "texte_court",
-   "enonce": "Photo n°3 : une zone peu humanisée et une zone très humanisée. Écris un élément aménagé par l'homme qui sépare ces deux zones.",
+   "enonce": "Observe la photo n°3 de la ferme de Mont-Saint-Jean. On y voit une zone peu humanisée et une zone très humanisée. Écris le nom d'un élément aménagé par l'homme qui sépare ces deux zones.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2551,7 +2563,7 @@
     "la clôture",
     "clôture"
    ],
-   "explication": "Une route sépare la zone bâtie de la zone boisée et agricole."
+   "explication": "Sur la photo n°3, la zone très humanisée, à gauche, a des parkings et de grands bâtiments ; la zone peu humanisée, à droite, a des champs et des prairies. Entre les deux passent une route et une rangée d'arbres. La ferme, un parking ou le rondpoint ne séparent pas les deux zones."
   },
   {
    "id": "ceb-2023-l5-q3",
@@ -2568,7 +2580,7 @@
     "moissons-2"
    ],
    "lignes": [
-    "La mécanisation des outils nécessite malgré tout l'utilisation des animaux.",
+    "La mécanisation des outils nécessite malgré tout parfois l'utilisation des animaux.",
     "Les moissons sont réalisées uniquement lors de journées ensoleillées.",
     "De tout temps, les moissons sont uniquement réalisées par des hommes.",
     "Des machines agricoles motorisées sont utilisées à l'époque contemporaine.",
@@ -2586,7 +2598,7 @@
     0,
     2
    ],
-   "explication": "La moissonneuse mécanique de 1834 est tirée par des chevaux. Rien ne parle de la météo. Des femmes moissonnent sur le document 3. La moissonneuse-batteuse de 2020 est motorisée. Le plus ancien document date de 4 000 av. J.-C. (Énoncé corrigé selon l'erratum officiel : « malgré tout parfois ».)"
+   "explication": "Le document 2 montre une moissonneuse mécanique de 1834 tirée par des chevaux : vrai. Aucun document ne parle de la météo. Le document 3 montre aussi des femmes qui travaillent aux champs : faux. La moissonneuse-batteuse de 2020 (document 5) a un moteur : vrai. Le plus ancien document date d'environ 4 000 av. J.-C. : rien ne parle de 10 000 av. J.-C."
   },
   {
    "id": "ceb-2023-l5-q4a",
@@ -2617,7 +2629,7 @@
     4,
     1
    ],
-   "explication": "Le Royaume-Uni est en Europe ; l'Argentine en Amérique (du Sud)."
+   "explication": "Le costume n°1 vient de la bourgeoisie anglaise, au Royaume-Uni : un pays d'Europe. Le costume n°3 est un costume traditionnel d'Argentine : un pays d'Amérique du Sud."
   },
   {
    "id": "ceb-2023-l5-q4b",
@@ -2637,7 +2649,7 @@
     3,
     11
    ],
-   "explication": "1931 est juste après 1930 ; 2019 est juste avant 2020.",
+   "explication": "Le costume n°2 a été offert le 09/01/1931 : 1931 se place entre 1930 et 1940. Le costume n°4 a été offert le 01/07/2019 : 2019 se place entre 2010 et 2020.",
    "lignes": [
     "Costume n°2",
     "Costume n°4"
@@ -2684,7 +2696,7 @@
     2,
     1
    ],
-   "explication": "C est entre l'Amérique et l'Afrique (Atlantique). B est à l'est de l'Asie (Pacifique). D est l'océan Indien, A l'océan Arctique."
+   "explication": "L'océan Atlantique se trouve entre l'Amérique, à l'ouest, et l'Europe et l'Afrique, à l'est : c'est la lettre C. L'océan Pacifique est le grand océan situé entre l'Asie et l'Océanie, d'un côté, et l'Amérique, de l'autre : sur cette carte, c'est la lettre B, à l'est de l'Asie. D est dans l'océan Indien."
   },
   {
    "id": "ceb-2023-l5-q5",
@@ -2718,7 +2730,7 @@
     3,
     1
    ],
-   "explication": "La densité est sur la carte 2, les élevages sur la carte 3, les industries (poisson, sidérurgie) sur la carte 4."
+   "explication": "Pour comparer la densité de population des provinces, il faut la carte 2. Les élevages de porcs et de bovins sont sur la carte 3 (agriculture). L'industrie alimentaire du poisson est sur la carte 4 (industries). Pour savoir si Charleroi et Liège ont une forte densité de population, il faut à nouveau la carte 2."
   },
   {
    "id": "ceb-2023-l5-q6a",
@@ -2743,7 +2755,7 @@
     "21e siècle"
    ],
    "reponse": 4,
-   "explication": "1940-1945 : 20e siècle."
+   "explication": "Les documents parlent des années 1940 à 1945 : Jules Hannecart est fait prisonnier en 1940, et le faire-part est daté de 1945. Les années de 1901 à 2000 forment le 20e siècle."
   },
   {
    "id": "ceb-2023-l5-q6b",
@@ -2767,7 +2779,7 @@
     "Le premier homme dans l'espace"
    ],
    "reponse": 2,
-   "explication": "Prisonnier en 1940, libéré en 1945, l'Allemagne nazie : c'est la guerre 40-45."
+   "explication": "Jules Hannecart est prisonnier de 1940 à 1945, et la carte montre l'Europe en 1942 avec l'Allemagne nazie et les pays occupés : c'est la Seconde Guerre mondiale. La Première Guerre mondiale a eu lieu plus tôt, de 1914 à 1918."
   },
   {
    "id": "ceb-2023-l5-q6c",
@@ -2875,7 +2887,7 @@
     0,
     3
    ],
-   "explication": "Mort dans un camp en Allemagne pendant la guerre, la nouvelle n'a pu arriver qu'après la libération (mai 1945)."
+   "explication": "Gérard Barthélemy est mort en mars 1944 dans un camp en Allemagne, en pleine guerre : sa famille ne pouvait sans doute pas l'apprendre tout de suite. Le faire-part est daté du 13 mai 1945, juste après la fin de la guerre. Rien ne dit que sa famille ne l'aimait pas ou manquait de temps."
   },
   {
    "id": "ceb-2023-l5-q6e",
@@ -2900,7 +2912,7 @@
     "Document audiovisuel"
    ],
    "reponse": 5,
-   "explication": "Un faire-part est un document écrit."
+   "explication": "Le faire-part est un texte imprimé qui annonce un décès : c'est un document écrit. Ce n'est ni une image (photo, peinture), ni un monument ou une sculpture."
   },
   {
    "id": "ceb-2023-l5-q6f",
@@ -2925,7 +2937,7 @@
      "Francoise"
     ]
    ],
-   "explication": "« Monsieur Louis Barthélemy, Madame Louis Barthélemy, née Mathilde Hayot » ; « Mesdemoiselles Françoise et Geneviève Barthélemy »."
+   "explication": "Parmi les frères, le faire-part cite « Monsieur Louis Barthélemy », marié à Mathilde Hayot, la belle-sœur : le frère s'appelle Louis. Les nièces sont « Françoise et Geneviève » ; Geneviève est déjà écrite dans l'arbre, donc l'autre nièce est Françoise."
   },
   {
    "id": "ceb-2023-l5-q7a",
@@ -2955,7 +2967,7 @@
     3,
     1
    ],
-   "explication": "Au solstice d'été, la durée du jour est maximale ; au solstice d'hiver, elle est minimale."
+   "explication": "Le portfolio dit que le solstice d'été est « la journée où la durée du jour est maximale » et le solstice d'hiver celle où « la durée du jour est minimale ». Aux équinoxes, le jour et la nuit durent chacun 12 heures."
   },
   {
    "id": "ceb-2023-l5-q7b",
@@ -3077,7 +3089,7 @@
     0,
     2
    ],
-   "explication": "1450 < 1672 < 1957."
+   "explication": "L'imprimerie a été inventée vers 1450, plus de 200 ans avant 1672 : c'est avant la présentation du télescope. Le Traité de Rome a été signé en 1957, près de 300 ans après 1672 : c'est après."
   },
   {
    "id": "ceb-2023-l5-q8c",
@@ -3097,7 +3109,7 @@
     "Christiaan Huygens (17e siècle)"
    ],
    "reponse": 2,
-   "explication": "1846 est au 19e siècle."
+   "explication": "1846 fait partie du 19e siècle (de 1801 à 1900) : la seule scientifique qui vivait au 19e siècle est Angeline Stickney. Huygens, Halley et Nicole-Reine Étable ont vécu avant (17e et 18e siècles), et Stephen Hawking après (20e et 21e siècles)."
   },
   {
    "id": "ceb-2023-l6-q1",
@@ -3146,7 +3158,7 @@
     "48 jours",
     "47 jours"
    ],
-   "explication": "Il reste 1 jour en juin (le 30), 31 jours en juillet et 16 jours en aout : 1 + 31 + 16 = 48. Le corrigé officiel accepte aussi 47 (les jours qui séparent les deux dates)."
+   "explication": "Après le jeudi 29 juin, il reste 1 jour en juin (le 30), puis 31 jours en juillet et 16 jours en aout jusqu'au mercredi 16 : 1 + 31 + 16 = 48 jours. Si on ne compte pas le jour de l'excursion lui-même, on trouve 47 jours, ce qui est aussi accepté."
   },
   {
    "id": "ceb-2023-l6-q2b",
@@ -3176,7 +3188,7 @@
      "16 h 30 min"
     ]
    ],
-   "explication": "10 h 30 + 1 h = 11 h 30. 14 h + 2 h 30 = 16 h 30."
+   "explication": "Arrivée à Arlon à 10 h 30, la chasse commence une heure après : 10 h 30 + 1 h = 11 h 30. Le piquenique se termine à 14 h, et le jeu finit deux heures trente plus tard : 14 h + 2 h 30 = 16 h 30."
   },
   {
    "id": "ceb-2023-l6-q2b-pique",
@@ -3184,7 +3196,7 @@
    "numero": "2b (piquenique)",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Dans l'agenda du mercredi 16 aout (livret, page 4), colorie la case qui désigne la durée du piquenique (de 13h à 14h).",
+   "enonce": "Dans l'agenda du mercredi 16 aout, colorie la case qui désigne la durée du piquenique (de 13 h à 14 h).",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-durees",
@@ -3192,7 +3204,8 @@
     "geocaching"
    ],
    "numerisable": false,
-   "reponseModele": "La case de 13 h à 14 h est coloriée."
+   "reponseModele": "La case de 13 h à 14 h est coloriée.",
+   "explication": "Le piquenique dure une heure, de 13 h à 14 h : on colorie la case de l'agenda qui va de la ligne de 13 h à la ligne de 14 h, sans déborder sur les heures voisines."
   },
   {
    "id": "ceb-2023-l6-q3a",
@@ -3318,7 +3331,7 @@
    "fiche": "ma-calendrier",
    "unite": "ans",
    "reponse": 15,
-   "explication": "En septembre 2023 elle aura 16 ans ; en juillet 2023, elle a encore 15 ans (pas assez pour louer un vélo)."
+   "explication": "Louna aura 16 ans le 16 septembre 2023 (2023 − 2007 = 16). En juillet 2023, son anniversaire n'est pas encore passé : elle a donc encore 15 ans et ne peut pas louer de vélo."
   },
   {
    "id": "ceb-2023-l6-q7b",
@@ -3441,7 +3454,7 @@
     "40 mm"
    ],
    "reponse": 2,
-   "explication": "Le 4 est au rang des dixièmes de cm, c'est-à-dire des millimètres."
+   "explication": "Dans 2,4 cm, le 4 est le chiffre des dixièmes : il vaut 0,4 cm. Comme 1 cm = 10 mm, un dixième de centimètre vaut 1 mm : le 4 représente donc 4 mm."
   },
   {
    "id": "ceb-2023-l6-q14b",
@@ -3460,7 +3473,7 @@
     "2 cm³"
    ],
    "reponse": 2,
-   "explication": "Le 2 est au rang des unités : 2 litres."
+   "explication": "Dans 12,5 l, le 1 est le chiffre des dizaines (1 dal) et le 2 celui des unités : il représente 2 l. Le 5, après la virgule, représente 5 dl."
   },
   {
    "id": "ceb-2023-l6-q15",
@@ -3516,7 +3529,7 @@
     "1 200 cm"
    ],
    "reponse": 1,
-   "explication": "120 m est le plus grand (1 200 cm = 12 m)."
+   "explication": "Convertis tout en mètres : 12 mm = 0,012 m ; 1,2 dm = 0,12 m ; 1 200 cm = 12 m. C'est donc 120 m la plus grande longueur."
   },
   {
    "id": "ceb-2023-l6-q20c",
@@ -3543,10 +3556,11 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Trace sur l'instrument un trait indiquant 3,6 kg.",
+   "enonce": "Trace, en rouge, un trait sur l'instrument (le cadran gradué en kg) pour indiquer 3,6 kg.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Sur ce cadran, l'intervalle entre deux nombres (1 kg) est partagé en 5 petits intervalles : chaque petit trait vaut 0,2 kg. 3,6 kg = 3 kg + 0,6 kg : le trait se place exactement sur la 3e petite graduation après le 3."
   },
   {
    "id": "ceb-2023-l6-q10",
@@ -3562,7 +3576,7 @@
     "liv6-p13"
    ],
    "reponseModele": "1 point pour l'opération (par exemple 80 × 50, ou 20 + 20 + 20 + 20 = 80 et 20 + 20 + 10 = 50, ou 10 × 400…) et 1 point pour la réponse : 4 000 cm² ou 0,4 m² (le nombre ET l'unité).",
-   "explication": "Aire du rectangle = longueur × largeur. Les mesures de 20 cm indiquées sur le carrelage permettent de trouver les dimensions du tapis : 80 cm sur 50 cm."
+   "explication": "Chaque carreau mesure 20 cm de côté. Le tapis couvre 4 carreaux en longueur (20 + 20 + 20 + 20 = 80 cm) et 2 carreaux et demi en largeur (20 + 20 + 10 = 50 cm). Aire = 80 × 50 = 4 000 cm², soit 0,4 m². Il faut écrire le nombre et l'unité."
   },
   {
    "id": "ceb-2023-l6-q11",
@@ -3645,7 +3659,7 @@
      "10/20"
     ]
    ],
-   "explication": "La pelouse occupe un quart du jardin, la remise un seizième du jardin ; le compost est le tiers de la terrasse ; le potager est la moitié de la pelouse. Toute fraction équivalente est acceptée."
+   "explication": "Le jardin est un carré partagé en 4 bandes égales. La pelouse occupe une bande entière : 1/4. La remise occupe le quart d'une bande : 1/16 du jardin. Le compost a la taille de la remise, et la terrasse en vaut 3 fois plus : 1/3. Le potager (une partie de bande moins un triangle) vaut 2/16 du jardin, la moitié des 4/16 de la pelouse."
   },
   {
    "id": "ceb-2023-l6-q16",
@@ -3827,7 +3841,7 @@
     2,
     3
    ],
-   "explication": "Le livret mesure 297 mm sur 210 mm : il passe dans l'enveloppe 3 (365 × 280 mm) et dans l'enveloppe 4 (229 × 324 mm), qui sont plus grandes dans les deux dimensions.",
+   "explication": "Le livret A4 mesure 297 mm sur 210 mm. Il passe dans l'enveloppe 3 (365 mm sur 280 mm) et dans l'enveloppe 4 (324 mm sur 229 mm), plus grandes dans les deux sens. Les enveloppes 1, 2 et 5 sont trop petites : par exemple, l'enveloppe 1 ne mesure que 162 mm de large.",
    "parReponse": true
   },
   {
@@ -3852,7 +3866,7 @@
     "C'est l'histoire d'un frère et d'une sœur qui se disputent une machine à écrire. Le frère gagne cette machine et découvre, grâce à sa sœur, qu'elle est magique. Finalement, les deux enfants se partagent la machine."
    ],
    "reponse": 1,
-   "explication": "Cassie invente le Génie pour récupérer la machine ; à la fin, Jules la lui donne."
+   "explication": "Jules gagne la machine à pile ou face ; Cassie invente une stratégie, le faux Génie, pour la récupérer ; à la fin, Jules la lui donne : « Tiens, je te la donne. » Ce n'est pas le frère qui crée le Génie, la sœur ne disparait pas, et ils partagent les bonbons, pas la machine."
   },
   {
    "id": "ceb-2023-l7-q2",
@@ -3876,7 +3890,7 @@
     "Cassie."
    ],
    "reponse": 3,
-   "explication": "Cassie raconte : « mon petit frère Jules »."
+   "explication": "Celle qui raconte dit « je » et parle de « mon petit frère Jules » ; Papa lui dit : « Cassie, tu es une grande fille ». La narratrice est donc Cassie, qui raconte sa propre histoire."
   },
   {
    "id": "ceb-2023-l7-q4",
@@ -3936,7 +3950,8 @@
     "genie-2",
     "genie-3"
    ],
-   "reponseModele": "Pour résoudre le problème : elle crée le Génie de la machine à écrire (ou elle utilise la machine en cachette dans la chambre de son frère, ou elle joue un mauvais tour à son frère avec la machine). À la fin : Jules donne la machine à sa sœur (ou Cassie reçoit la machine, ou Jules lui donne son dernier souhait). Ce n'est pas bon : « elle exauce des vœux », « elle fait une blague / peur à son frère », « ils se réconcilient », « ils partagent les bonbons / la machine », « le génie a exaucé les trois vœux »."
+   "reponseModele": "Pour résoudre le problème : elle crée le Génie de la machine à écrire (ou elle utilise la machine en cachette dans la chambre de son frère, ou elle joue un mauvais tour à son frère avec la machine). À la fin : Jules donne la machine à sa sœur (ou Cassie reçoit la machine, ou Jules lui donne son dernier souhait). Ce n'est pas bon : « elle exauce des vœux », « elle fait une blague / peur à son frère », « ils se réconcilient », « ils partagent les bonbons / la machine », « le génie a exaucé les trois vœux ».",
+   "explication": "Pour résoudre son problème, Cassie se fait passer pour le Génie de la machine à écrire : elle tape des messages en cachette dans la chambre de Jules. À la fin, Jules lui donne la machine (« Je te la donne »). Dire seulement qu'elle fait une blague, ou qu'ils se réconcilient, ne suffit pas."
   },
   {
    "id": "ceb-2023-l7-q7",
@@ -3950,7 +3965,8 @@
    "documents": [
     "genie-2"
    ],
-   "reponseModele": "Elle est impatiente (de voir s'il y a une réponse). Ou : elle a peur, elle stresse (qu'il n'y ait pas de réponse, de ce qu'elle va lire, de se faire surprendre par son frère). Ou toute idée allant dans ce sens. Ce n'est pas bon : « elle a le cœur qui bat », « elle aime la machine à écrire »."
+   "reponseModele": "Elle est impatiente (de voir s'il y a une réponse). Ou : elle a peur, elle stresse (qu'il n'y ait pas de réponse, de ce qu'elle va lire, de se faire surprendre par son frère). Ou toute idée allant dans ce sens. Ce n'est pas bon : « elle a le cœur qui bat », « elle aime la machine à écrire ».",
+   "explication": "Cassie est impatiente et un peu inquiète : elle se demande si Jules a répondu au Génie, et elle ne veut pas se faire surprendre dans sa chambre. Écrire seulement que son cœur bat ne suffit pas : il faut dire ce qu'elle ressent."
   },
   {
    "id": "ceb-2023-l7-q8",
@@ -3971,7 +3987,7 @@
     "Faire disparaitre sa sœur."
    ],
    "reponse": 2,
-   "explication": "Premier vœu : les bonbons ; deuxième : la meilleure note au devoir de français."
+   "explication": "Jules écrit : « Mon second vœu : avoir la meilleure note à mon devoir de français. » Son premier vœu était son poids en bonbons, et le dernier, que le Génie disparaisse avec sa sœur."
   },
   {
    "id": "ceb-2023-l7-q9",
@@ -3995,7 +4011,7 @@
     "le tas de friandises",
     "les paquets de bonbons"
    ],
-   "explication": "Le tas de bonbons que Cassie a versé sur le lit."
+   "explication": "Cassie a versé les bonbons « en pluie sur le lit de Jules », et cela forme un tas. Un monticule est un petit tas, et « sucré » montre qu'il s'agit des bonbons : Jules cache ce tas de bonbons sous sa couette."
   },
   {
    "id": "ceb-2023-l7-q10",
@@ -4047,7 +4063,7 @@
     "la sœur de Jules",
     "la narratrice"
    ],
-   "explication": "C'est Cassie qui écrit les messages du Génie."
+   "explication": "C'est Cassie qui tape en cachette les messages signés « Le Génie de la Machine à Écrire » : « je me suis glissée dans sa chambre, j'ai mis une nouvelle feuille blanche dans la machine à écrire […], et j'ai tapé »."
   },
   {
    "id": "ceb-2023-l7-q12a",
@@ -4069,7 +4085,7 @@
     "d'impatience."
    ],
    "reponse": 2,
-   "explication": "Relis ce que dit Cassie quand Jules annonce qu'il veut la machine. Justifie ensuite sur la fiche suivante."
+   "explication": "Quand Jules dit qu'il veut la machine, Cassie s'écrie en sanglotant : « Mais c'est trop injuste, pourquoi il l'aurait ? C'est moi qui veux être écrivain, pas lui ! » Elle éprouve un sentiment d'injustice."
   },
   {
    "id": "ceb-2023-l7-q12a-j",
@@ -4085,7 +4101,7 @@
     "genie-1"
    ],
    "reponseModele": "« Mais c'est trop injuste, pourquoi il l'aurait ? » ou « C'est moi qui veux être écrivain, pas lui ! » ou toute idée allant dans ce sens, avec au minimum l'idée d'injustice (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
-   "explication": "Cassie trouve injuste que ce soit son frère qui ait la machine : c'est elle qui veut être écrivain."
+   "explication": "Une bonne justification recopie ou résume un passage qui montre l'injustice, par exemple « Mais c'est trop injuste, pourquoi il l'aurait ? » ou « C'est moi qui veux être écrivain, pas lui ! »."
   },
   {
    "id": "ceb-2023-l7-q12b",
@@ -4107,7 +4123,7 @@
     "d'impatience."
    ],
    "reponse": 0,
-   "explication": "Relis comment Cassie réagit quand Jules lui donne la machine. Justifie ensuite sur la fiche suivante."
+   "explication": "Quand Jules lui tend la machine, Cassie « restait bouche bée » : elle ne s'y attendait pas du tout, elle qui venait de le traiter de minable. C'est de l'étonnement."
   },
   {
    "id": "ceb-2023-l7-q12b-j",
@@ -4123,7 +4139,7 @@
     "genie-3"
    ],
    "reponseModele": "« Et comme je restais bouche bée… » (il a sorti les bonbons de sous son lit) ou toute idée allant dans ce sens, avec au minimum l'idée d'étonnement (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
-   "explication": "« Rester bouche bée » veut dire être tellement surpris qu'on ne sait plus quoi dire."
+   "explication": "Une bonne justification cite « Et comme je restais bouche bée » ou explique que Cassie ne s'attendait pas à recevoir la machine. « Rester bouche bée », c'est être si surpris qu'on reste la bouche ouverte, sans rien dire."
   },
   {
    "id": "ceb-2023-l7-q13",
@@ -4155,7 +4171,7 @@
     2,
     1
    ],
-   "explication": "Cassie achète une dizaine de paquets, pas son poids. On ne connait pas sa note. Les vœux sont écrits par Jules ; Cassie écrit les messages du Génie."
+   "explication": "Jules écrit lui-même au Génie : « En vrai, je pèse plus que ça » : faux. Le texte ne dit pas quelle note Jules a reçue : on ne peut pas savoir. C'est Jules qui écrit ses vœux ; Cassie écrit seulement les messages du Génie : faux."
   },
   {
    "id": "ceb-2023-l7-q14",
@@ -4169,7 +4185,8 @@
    "documents": [
     "genie-3"
    ],
-   "reponseModele": "Parce que Jules ne sera plus le maitre de la machine à écrire (il sera son ancien maitre, il n'aura plus la machine, il va la donner à sa sœur, il veut que la machine disparaisse avec sa sœur, Cassie sera le nouveau maitre). Accepté aussi : parce que c'était son dernier vœu. Ce n'est pas bon : « parce que Jules est le dernier maitre », « parce que le génie doit disparaitre »."
+   "reponseModele": "Parce que Jules ne sera plus le maitre de la machine à écrire (il sera son ancien maitre, il n'aura plus la machine, il va la donner à sa sœur, il veut que la machine disparaisse avec sa sœur, Cassie sera le nouveau maitre). Accepté aussi : parce que c'était son dernier vœu. Ce n'est pas bon : « parce que Jules est le dernier maitre », « parce que le génie doit disparaitre ».",
+   "explication": "« Ex- » veut dire « ancien ». Par son dernier vœu, Jules donne la machine à sa sœur : il ne sera plus le maitre du Génie, il sera son ancien maitre. Une bonne réponse explique qu'il n'aura plus la machine ou que Cassie devient sa nouvelle propriétaire."
   },
   {
    "id": "ceb-2023-l7-q15",
@@ -4177,7 +4194,7 @@
    "numero": "15",
    "domaine": "fr.lire",
    "type": "grille",
-   "enonce": "« — On partage ? »",
+   "enonce": "Voici l'extrait d'un dialogue : « — On partage ? » Pour chaque question, choisis la réponse correcte.",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4198,7 +4215,7 @@
     3,
     2
    ],
-   "explication": "Jules sort les bonbons de sous son lit et propose de les partager avec Cassie."
+   "explication": "Juste avant, Jules « a sorti les bonbons de sous son lit » devant Cassie, restée bouche bée. C'est donc Jules qui parle, et il propose à Cassie de partager les bonbons."
   },
   {
    "id": "ceb-2023-l7-q17",
@@ -4218,7 +4235,7 @@
     "Sami a raison."
    ],
    "reponse": 1,
-   "explication": "Relis la fin de l'histoire pour comprendre ce que Jules veut vraiment. Justifie ensuite sur la fiche suivante."
+   "explication": "Sami a raison. Jules écrit « que tu disparaisses avec ma sœur » pour jouer un tour : juste après, il donne la machine à Cassie (« C'est ça mon dernier souhait : que tu la prennes ») et lui propose de partager les bonbons. Il veut que la machine, et le Génie, s'en aillent chez sa sœur."
   },
   {
    "id": "ceb-2023-l7-q17-j",
@@ -4234,7 +4251,7 @@
     "genie-3"
    ],
    "reponseModele": "Une idée au choix : Jules veut que la machine (et le Génie) disparaisse chez sa sœur ; Jules veut donner la machine à écrire à sa sœur ; Jules se doutait que sa sœur était le génie ; Jules ne le pense pas vraiment car il aime sa sœur. Refusé : « Jules veut que sa sœur soit heureuse » ; « Jules ne veut pas que la machine disparaisse avec sa sœur » ; « Ils se réconcilient à la fin ». (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
-   "explication": "Jules plaisante : il donne la machine à sa sœur, qu'il aime."
+   "explication": "Une bonne justification montre que Jules ne veut pas vraiment voir sa sœur disparaitre : il veut que la machine (et le Génie) aille chez elle, il lui donne la machine, ou il avait deviné que Cassie était le Génie."
   },
   {
    "id": "ceb-2023-l7-q18",
@@ -4250,7 +4267,8 @@
     "genie-2",
     "genie-3"
    ],
-   "reponseModele": "Les deux réponses sont acceptées si la justification est cohérente. OUI : c'est Cassie (la sœur de Jules) qui est le Génie de la machine à écrire ; le génie est un personnage créé par Cassie. NON : c'est Cassie qui a inventé le génie ; un génie, cela n'existe pas : c'est Cassie le Génie. Ce n'est pas bon : « il y avait peut-être vraiment un bon génie dans la machine », « la magie, ça n'existe pas »."
+   "reponseModele": "Les deux réponses sont acceptées si la justification est cohérente. OUI : c'est Cassie (la sœur de Jules) qui est le Génie de la machine à écrire ; le génie est un personnage créé par Cassie. NON : c'est Cassie qui a inventé le génie ; un génie, cela n'existe pas : c'est Cassie le Génie. Ce n'est pas bon : « il y avait peut-être vraiment un bon génie dans la machine », « la magie, ça n'existe pas ».",
+   "explication": "Le Génie n'est pas un être magique : c'est Cassie qui l'a inventé et qui écrit ses messages. On peut répondre NON (un génie, ça n'existe pas : c'est Cassie) ou OUI (le Génie existe, c'est Cassie qui joue ce rôle), si la justification va avec la réponse."
   },
   {
    "id": "ceb-2023-l7-q19a",
@@ -4267,7 +4285,7 @@
     "Cassie"
    ],
    "reponse": 1,
-   "explication": "« retournée » est au féminin."
+   "explication": "Avec l'auxiliaire être, le participe passé « retournée » s'accorde avec le sujet « je » : il se termine par un -e, donc « je » est une fille. C'est Cassie."
   },
   {
    "id": "ceb-2023-l7-q19b",
@@ -4311,7 +4329,7 @@
      "le frère"
     ]
    ],
-   "explication": "« l' » remplace la machine à écrire ; « lui » désigne Jules."
+   "explication": "« Pourquoi il l'aurait ? » : ce que Jules voudrait avoir, c'est la machine à écrire, donc « l' » remplace la machine. « Pas lui » : Cassie parle de son frère qui veut la machine, donc « lui » remplace Jules."
   },
   {
    "id": "ceb-2023-l7-q21",
@@ -4362,7 +4380,7 @@
     "J'ai tapé sans m'arrêter."
    ],
    "reponse": 2,
-   "explication": "« J' » (S) « ai arraché » (V) « la feuille » (CD)."
+   "explication": "« J' » (sujet), « ai arraché » (verbe), « la feuille » (complément direct) : même structure. La 1re phrase a en plus le complément « en pluie », dans la 2e les compléments « te » et « la » sont placés avant le verbe, et la 4e n'a pas de complément direct."
   },
   {
    "id": "ceb-2023-l7-q23",
@@ -4408,7 +4426,7 @@
     "parce que"
    ],
    "reponse": 2,
-   "explication": "« Mais » marque une opposition, comme « pourtant »."
+   "explication": "« Mais » oppose deux idées : elle a dépensé toute sa fortune, et pourtant elle ne le regrette pas. « Car » et « parce que » donnent une cause, « donc » une conséquence."
   },
   {
    "id": "ceb-2023-l7-q25",
@@ -4427,7 +4445,7 @@
     "Encourager : soutenir un candidat ou une équipe. Exemple : Il supporte une équipe sportive."
    ],
    "reponse": 2,
-   "explication": "Cassie « tolère » son petit frère depuis huit ans."
+   "explication": "Cassie dit qu'elle « supporte » son frère depuis huit ans : elle tolère sa présence et son attitude, même s'il l'énerve. Elle ne le porte pas pour l'empêcher de tomber et ne l'encourage pas comme une équipe sportive."
   },
   {
    "id": "ceb-2023-l7-q26",
@@ -4465,7 +4483,7 @@
     "Divertir le lecteur avec une histoire plaisante."
    ],
    "reponse": 3,
-   "explication": "C'est un récit amusant."
+   "explication": "C'est un récit inventé, plein d'humour (le faux Génie, le tas de bonbons), écrit pour faire passer un bon moment au lecteur. Il n'explique pas comment fonctionne une machine à écrire et ne fait pas la morale sur le partage."
   },
   {
    "id": "ceb-2023-l7-q3",
@@ -4509,7 +4527,7 @@
     "Livre 4"
    ],
    "reponse": 3,
-   "explication": "C'est le livre 4, un recueil de belles histoires. Les autres parlent de tours de magie, de conseils pour écrire et de l'histoire de la machine à écrire."
+   "explication": "« Le Génie de la Machine à Écrire » est une histoire inventée : on la trouve dans un recueil de récits, comme le livre 4, « Histoires enchantées – 10 belles histoires ». Le livre 3 parle bien de la machine à écrire, mais c'est un documentaire sur son histoire."
   },
   {
    "id": "ceb-2023-l8-q1a",
@@ -4527,7 +4545,7 @@
     "170"
    ],
    "reponse": 1,
-   "explication": "13 + 104 + 33 ≈ 150."
+   "explication": "On arrondit chaque nombre : 13,3 ≈ 13 ; 103,5 ≈ 104 ; 32,5 ≈ 33. Puis 13 + 104 + 33 = 150 : le résultat est à peu près 150."
   },
   {
    "id": "ceb-2023-l8-q1b",
@@ -4545,7 +4563,7 @@
     "850"
    ],
    "reponse": 1,
-   "explication": "1 000 − 250 = 750."
+   "explication": "On arrondit : 1 003,6 ≈ 1 000 et 257,1 ≈ 250. Puis 1 000 − 250 = 750 : le résultat est à peu près 750."
   },
   {
    "id": "ceb-2023-l8-q1c",
@@ -4563,7 +4581,7 @@
     "140 000"
    ],
    "reponse": 1,
-   "explication": "700 × 20 = 14 000."
+   "explication": "On arrondit : 703 ≈ 700 et 19,7 ≈ 20. Puis 700 × 20 = 14 000. 1 400 serait dix fois trop petit et 140 000 dix fois trop grand."
   },
   {
    "id": "ceb-2023-l8-q1d",
@@ -4581,7 +4599,7 @@
     "200"
    ],
    "reponse": 0,
-   "explication": "200 : 2 = 100."
+   "explication": "On arrondit : 203 ≈ 200 et 1,9 ≈ 2. Puis 200 : 2 = 100 : le résultat est à peu près 100."
   },
   {
    "id": "ceb-2023-l8-q3",
@@ -4621,7 +4639,7 @@
      "0,8"
     ]
    ],
-   "explication": "927 ; 7 979,2 ; 1,35 ; 9,99 ; 540 ; 5,6 ; 420 ; 0,8."
+   "explication": "765 + 162 = 927. 8 020,0 − 40,8 = 7 979,2. En alignant les virgules : 0,80 + 0,55 = 1,35 et 12,30 − 2,31 = 9,99. 60 × 9 = 540. 7 × 8 dixièmes = 56 dixièmes = 5,6. 600 × 7 = 4 200, puis : 10 = 420. 72 dixièmes : 9 = 8 dixièmes = 0,8."
   },
   {
    "id": "ceb-2023-l8-q5",
@@ -4643,7 +4661,7 @@
      "70,5"
     ]
    ],
-   "explication": "3 000 + 9 = 3 009 ; 70 + 0,5 = 70,5."
+   "explication": "3 unités de mille valent 3 000 ; on ajoute 9 unités, sans centaine ni dizaine : 3 009. 7 dizaines valent 70 et 5 dixièmes valent 0,5 : 70,5."
   },
   {
    "id": "ceb-2023-l8-q6",
@@ -4750,7 +4768,7 @@
     "Seize-mille-neuf-cent-quatre-vingt-trois unités et cinq dixièmes"
    ],
    "reponse": 3,
-   "explication": "16 983 unités et 5 dixièmes."
+   "explication": "16 983,5, c'est 16 983 unités et un seul chiffre après la virgule, le 5 : 5 dixièmes. Lire « trente-cinq dixièmes » ou « trente-cinq centièmes » mélange le 3 des unités avec le 5 des dixièmes."
   },
   {
    "id": "ceb-2023-l8-q11b",
@@ -4763,7 +4781,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": 36,
-   "explication": "3 692 = 36 centaines et 92 unités."
+   "explication": "Le chiffre des centaines est 6, mais la question demande toutes les centaines entières : 3 692 = 36 centaines et 92 unités. Il y a donc 36 centaines entières, et pas seulement 6."
   },
   {
    "id": "ceb-2023-l8-q12",
@@ -4794,7 +4812,7 @@
      "2/10"
     ]
    ],
-   "explication": "0,125 = 1/8 ; 0,25 = 1/4 ; 2 × 0,5 = 1 ; 5 × 0,2 = 1."
+   "explication": "0,125 est un huitième : 0,125 × 8 = 1. 0,25 est un quart : 0,25 × 4 = 1. Deux moitiés font un entier : 2 × 0,5 = 1. Cinq cinquièmes font un entier : 5 × 0,2 = 1."
   },
   {
    "id": "ceb-2023-l8-q13a",
@@ -4815,7 +4833,7 @@
    "reponse": [
     2
    ],
-   "explication": "36 = 12 × 3 : 12 est un diviseur de 36."
+   "explication": "36 = 12 × 3 : 12 divise 36 sans reste, c'est donc un diviseur de 36. Il est pair, et plus petit que 36 : il n'est ni un multiple ni le double de 36."
   },
   {
    "id": "ceb-2023-l8-q13b",
@@ -4858,7 +4876,7 @@
    "reponse": [
     0
    ],
-   "explication": "87 finit par 7 : il est impair."
+   "explication": "87 se termine par 7 : il est impair. Ce n'est pas un multiple de 36, car 36 × 2 = 72 et 36 × 3 = 108."
   },
   {
    "id": "ceb-2023-l8-q13d",
@@ -4903,7 +4921,7 @@
    "reponse": [
     4
    ],
-   "explication": "17 n'a que deux diviseurs (1 et 17) : il est premier."
+   "explication": "17 n'a que deux diviseurs, 1 et 17 : il est premier. Il est impair et ne divise pas 99 (17 × 5 = 85 et 17 × 6 = 102)."
   },
   {
    "id": "ceb-2023-l8-q16",
@@ -4921,7 +4939,7 @@
     "Boite de 36 stylos"
    ],
    "reponse": 2,
-   "explication": "144 = 4 × 36. 144 n'est pas multiple de 5 ni de 22."
+   "explication": "Il faut un nombre entier de boites, sans stylo en trop : 144 : 36 = 4 boites. 144 n'est pas dans la table de 5 (il ne finit ni par 0 ni par 5), et avec des boites de 22, 22 × 6 = 132 et 22 × 7 = 154 : il manquerait ou il resterait des stylos."
   },
   {
    "id": "ceb-2023-l8-q17",
@@ -4929,7 +4947,7 @@
    "numero": "17",
    "domaine": "ma.arithmetique",
    "type": "qcm",
-   "enonce": "100 − 12,5 … 12,5 − 100",
+   "enonce": "Complète par = ou ≠ : 100 − 12,5 … 12,5 − 100",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-operations",
@@ -4938,7 +4956,7 @@
     "≠"
    ],
    "reponse": 1,
-   "explication": "La soustraction n'est pas commutative : 87,5 ≠ −87,5."
+   "explication": "100 − 12,5 = 87,5. Dans 12,5 − 100, on enlève un grand nombre d'un petit : on n'obtient pas 87,5. En soustraction, on ne peut pas échanger les deux nombres : les deux expressions sont différentes."
   },
   {
    "id": "ceb-2023-l8-q19",
@@ -4965,7 +4983,7 @@
      "×0,3"
     ]
    ],
-   "explication": "On annule une addition par une soustraction, une division par une multiplication."
+   "explication": "L'opération réciproque défait la première. On a ajouté 43,3 à 64,7, donc on retrouve 64,7 en enlevant 43,3 : 108 − 43,3 = 64,7. On a divisé 45,66 par 0,3, donc on le retrouve en multipliant : 152,2 × 0,3 = 45,66."
   },
   {
    "id": "ceb-2023-l8-q20b",
@@ -4987,7 +5005,7 @@
     0,
     2
    ],
-   "explication": "Prix + monnaie rendue = somme donnée ; somme donnée − monnaie rendue = prix.",
+   "explication": "On vérifie la monnaie de deux façons : prix + monnaie rendue = somme donnée (24,45 + 0,55 = 25), ou somme donnée − monnaie rendue = prix (25 − 0,55 = 24,45). Les deux autres opérations ne donnent ni 25 ni 24,45.",
    "parReponse": true
   },
   {
@@ -5040,7 +5058,7 @@
      "946"
     ]
    ],
-   "explication": "903 : 10 ; 903 × 2 ; 903 + 21 ; 903 + 43."
+   "explication": "2,1 est 10 fois plus petit que 21 : 903 : 10 = 90,3. 42 est le double de 21 : 903 × 2 = 1 806. 21 × 44, c'est 21 × 43 plus une fois 21 : 903 + 21 = 924. 22 × 43, c'est 21 × 43 plus une fois 43 : 903 + 43 = 946."
   },
   {
    "id": "ceb-2023-l8-q25",
@@ -5063,7 +5081,7 @@
     1,
     3
    ],
-   "explication": "56 × 25 = 1 400 = 56 × 20 + 56 × 5 = 5 600 : 4.",
+   "explication": "56 × 25 = 1 400. En décomposant 25 en 20 + 5 : (56 × 20) + (56 × 5) = 1 120 + 280 = 1 400. Et 25 est le quart de 100 : (56 × 100) : 4 = 5 600 : 4 = 1 400. Les trois autres donnent 1 030, 1 125 et 380.",
    "parReponse": true
   },
   {
@@ -5080,7 +5098,7 @@
     "liv8-p04"
    ],
    "reponseModele": "1 point pour l'opération (par exemple 4 × 8 + 4 × 4, ou 12 × 4) et 1 point pour la réponse : ce carrelage compte 48 losanges noirs (uniquement cette réponse).",
-   "explication": "Toute opération cohérente avec le dessin est acceptée, par exemple 4 × 8 + 4 × 4 = 48 ou 12 × 4 = 48."
+   "explication": "Le carrelage compte 4 étoiles complètes de 8 losanges noirs et, sur les bords gauche et droit, 4 demi-étoiles de 4 losanges : 4 × 8 + 4 × 4 = 32 + 16 = 48. On peut aussi compter 12 groupes de 4 losanges : 12 × 4 = 48."
   },
   {
    "id": "ceb-2023-l8-q4",
@@ -5108,7 +5126,7 @@
      "100.250"
     ]
    ],
-   "explication": "Entre 100 000 et 100 100, il y a deux graduations : chacune vaut donc 50. La case A est 50 avant 100 000 (99 950) et la case B est 5 graduations après 100 000 (100 250)."
+   "explication": "Entre 100 000 et 100 100, il y a deux intervalles : chacun vaut 100 : 2 = 50. La case A est un intervalle avant 100 000 : 99 950. La case B est 5 intervalles après 100 000 : 100 000 + 5 × 50 = 100 250."
   },
   {
    "id": "ceb-2023-l8-q11a",
@@ -5211,7 +5229,7 @@
     "liv8-p14"
    ],
    "reponseModele": "1 point pour l'opération (1 080 : 12, ou toute opération en cohérence avec la situation) ; 1 point pour la réponse : une barrette contient 90 agrafes (uniquement cette réponse).",
-   "explication": "On partage le nombre total d'agrafes de la boite en 12 parts égales : 1 080 : 12 = 90."
+   "explication": "La boite indique 1 080 agrafes, partagées en 12 barrettes identiques : 1 080 : 12 = 90. On vérifie : 12 × 90 = 1 080. Une barrette contient 90 agrafes."
   },
   {
    "id": "ceb-2023-l8-q20a",
@@ -5309,7 +5327,7 @@
     1,
     1
    ],
-   "explication": "Tous les vivants respirent ; les plantes ne dorment pas et ne se déplacent pas."
+   "explication": "Tous les êtres vivants, animaux comme plantes, respirent. Mais les plantes ne se déplacent pas d'un endroit à un autre, et tous les vivants ne dorment pas : ces deux affirmations sont donc fausses."
   },
   {
    "id": "ceb-2023-l9-q2a",
@@ -5381,7 +5399,7 @@
      "les papilles"
     ]
    ],
-   "explication": "On entend avec les oreilles, on goute avec la langue. « La bouche » ne suffit pas : c'est la langue (les papilles gustatives) qui perçoit le goût."
+   "explication": "On entend avec les oreilles et on goute avec la langue, où se trouvent les papilles gustatives. « La bouche » ne suffit pas : c'est la langue qui perçoit le gout."
   },
   {
    "id": "ceb-2023-l9-q3",
@@ -5432,7 +5450,7 @@
     "chat",
     "un chat"
    ],
-   "explication": "Les molaires sécantes (qui coupent la viande) sont celles du chat."
+   "explication": "On suit l'arbre : « yeux, bouche », puis « squelette interne, 4 membres, poils », puis « molaires sécantes » : on arrive au chat. Le cheval, lui, a des sabots et le lapin des incisives à croissance constante."
   },
   {
    "id": "ceb-2023-l9-q4b",
@@ -5460,7 +5478,7 @@
     1,
     2
    ],
-   "explication": "Comme le doryphore, la coccinelle est un insecte (squelette externe, 6 pattes, antennes) avec des élytres.",
+   "explication": "Dans l'arbre, le doryphore a trois attributs : « yeux, bouche », puis « squelette externe, 3 paires de pattes, antennes », puis « élytres ». La coccinelle, rangée avec lui, a donc les mêmes. Les autres attributs sont ceux de la fourmi, de la mouche ou des mammifères.",
    "parReponse": true
   },
   {
@@ -5493,7 +5511,7 @@
      "le dindon"
     ]
    ],
-   "explication": "L'âne a un seul doigt (1 doigt) ; le chien a des molaires sécantes ; le dindon a des plumes mais pas de bec aplati, contrairement au canard."
+   "explication": "Dans le classement de la page 6, l'âne est le seul animal à 1 doigt (étiquette A). Le chien est celui qui a des molaires sécantes (B). Parmi les animaux à plumes, le canard a un bec aplati : l'autre, le dindon, va dans l'étiquette C."
   },
   {
    "id": "ceb-2023-l9-q5a",
@@ -5561,7 +5579,7 @@
     3,
     4
    ],
-   "explication": "Les poissons respirent par les branchies, la grenouille aussi par la peau, les mammifères par les poumons.",
+   "explication": "Les poissons chargent l'oxygène dans leurs branchies, les mammifères comme l'être humain dans leurs poumons, et la grenouille aussi à travers sa peau. La bouche et le nez laissent seulement passer l'air, et le cœur pompe le sang.",
    "parReponse": true
   },
   {
@@ -5570,13 +5588,14 @@
    "numero": "7a",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Trace les trois bâtonnets manquants dans le graphique du débit expiratoire.",
+   "enonce": "Les élèves ont réalisé un graphique à partir des données du tableau 1 (portfolio, page 10). Sur ce graphique, trois bâtonnets n'ont pas été tracés : un pour Pablo, un pour Ethan, un pour Théo. Trace les trois bâtonnets manquants.",
    "points": 3,
    "corrigeVerifie": false,
    "documents": [
     "debit-1"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Pour chaque enfant, repère le test dont le bâtonnet manque, puis lis sa valeur dans le tableau 1 (en litres par minute). Trace le bâtonnet à sa place, jusqu'à cette hauteur sur l'axe vertical, avec le même code que les autres bâtonnets de ce test."
   },
   {
    "id": "ceb-2023-l9-q7b",
@@ -5598,7 +5617,7 @@
     "Appareil respiratoire"
    ],
    "reponse": 3,
-   "explication": "On mesure l'air soufflé : c'est la respiration."
+   "explication": "Le débit expiratoire de pointe mesure le volume d'air que l'on souffle par minute : cet air sort des poumons, il s'agit donc de l'appareil respiratoire."
   },
   {
    "id": "ceb-2023-l9-q7c",
@@ -5710,7 +5729,7 @@
      "être un homme ou une femme"
     ]
    ],
-   "explication": "Le tableau varie selon l'âge, la taille et le sexe.",
+   "explication": "Dans le tableau 2, le débit change d'une ligne à l'autre selon l'âge, d'une colonne à l'autre selon la taille moyenne, et entre la partie « homme » et la partie « femme » selon le sexe.",
    "texte": "{1}  ·  {2}  ·  {3}",
    "differentes": true
   },
@@ -5726,7 +5745,8 @@
    "documents": [
     "flottaison-1"
    ],
-   "reponseModele": "Quelle matière flotte ou coule ? (ou toute question allant en ce sens). Ce n'est pas bon : « Est-ce que les objets lourds coulent ? », « Quels sont les objets plus lourds et plus légers ? »."
+   "reponseModele": "Quelle matière flotte ou coule ? (ou toute question allant en ce sens). Ce n'est pas bon : « Est-ce que les objets lourds coulent ? », « Quels sont les objets plus lourds et plus légers ? ».",
+   "explication": "Dans l'expérience 1, on pose sur l'eau neuf objets de matières différentes (frigolite, bois, fer, liège, plastique…) pour voir lesquels flottent et lesquels coulent. Une bonne question parle donc de la matière, par exemple : « Quelles matières flottent ou coulent ? » Une question sur les objets lourds ou légers ne convient pas."
   },
   {
    "id": "ceb-2023-l9-q8b",
@@ -5774,7 +5794,7 @@
     "flottaison-2",
     "flottaison-3"
    ],
-   "explication": "L'azobé est un bois très dense : il coule dans l'eau douce mais peut flotter dans l'eau salée.",
+   "explication": "Dans l'expérience 2, la boule en bois d'azobé coule dans l'eau douce : l'affirmation est donc fausse (NON). On peut aussi répondre OUI à condition de parler de l'eau salée, où la boule d'azobé flotte. Dire que cela dépend de la taille, du poids ou de la forme du bois ne suffit pas.",
    "reponseModele": "Tu peux répondre OUI ou NON, à condition que ta justification soit cohérente avec ta réponse (1 point). OUI : il faut faire référence à la nature de l'eau (par exemple : dans l'eau salée, le bois d'azobé peut flotter). NON : la boule d'azobé coule (dans l'eau douce). Refusé : « ça dépend de la taille, du poids ou de la forme du bois » ; « d'autres matières (frigolite, éponge) flottent »."
   },
   {
@@ -5860,7 +5880,7 @@
     0,
     2
    ],
-   "explication": "Chauffé, le liquide se dilate et monte ; refroidi, il se contracte et descend.",
+   "explication": "Au frigo, le niveau de l'eau colorée descend dans le tube : refroidi, le liquide diminue de volume. Dans l'eau chaude, le niveau monte : chauffé, il augmente de volume. Le récipient est fermé par un bouchon, donc l'eau ne s'évapore pas.",
    "parReponse": true
   },
   {
@@ -5888,7 +5908,7 @@
     1,
     3
    ],
-   "explication": "Dilatation à la chaleur, contraction au froid.",
+   "explication": "Quand le liquide est chauffé et que son volume augmente, c'est la dilatation ; quand il est refroidi et que son volume diminue, c'est la contraction. Il n'y a ni évaporation ni condensation, car l'eau reste liquide.",
    "parReponse": true
   },
   {
@@ -6014,7 +6034,7 @@
     "Non"
    ],
    "reponse": 1,
-   "explication": "Regarde les matériaux classés comme bons conducteurs dans le tableau. Justifie ensuite sur la fiche suivante."
+   "explication": "Non : dans le tableau, la mine de crayon en graphite et l'eau salée sont aussi de bons conducteurs, et ce ne sont pas des métaux."
   },
   {
    "id": "ceb-2023-l9-q11c-j",
