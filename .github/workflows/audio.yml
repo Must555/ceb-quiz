@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A audio-essais assets/audio scripts/audio/journal.txt 2>/dev/null || true
+          for d in audio-essais assets/audio scripts/audio/journal.txt; do [ -e "$d" ] && git add -A "$d"; done
           git commit -m "Audio généré (Azure Speech)" || echo "Rien de nouveau"
           git push
