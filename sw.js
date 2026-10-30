@@ -5,7 +5,7 @@
 // - Les pages du portfolio (images des examens) sont copiées au fur et à mesure qu'on les ouvre.
 // - Nouvelle version publiée = nouveau numéro VERSION : le navigateur la télécharge en arrière-plan,
 //   l'application propose « Mettre à jour », puis l'ancienne copie est effacée.
-const VERSION = '5947be04813d';
+const VERSION = 'dc3c2f65558f';
 const COEUR = `coeur-${VERSION}`;
 const IMAGES = 'images-v1';
 const PAGES = 'pages-v1';
@@ -389,6 +389,8 @@ self.addEventListener('fetch', (e) => {
   const chemin = url.pathname.slice(new URL(self.registration.scope).pathname.length);
   if (chemin.startsWith('fiches/') || chemin === 'sitemap.xml' || chemin === 'robots.txt') return e.respondWith(reseauDabord(req, PAGES));
   if (chemin.startsWith('assets/20')) return e.respondWith(copieDabord(req, IMAGES));
+  // Textes d'écoute enregistrés (plusieurs Mo, lus par morceaux) : laissés au navigateur.
+  if (chemin.startsWith('assets/audio/')) return;
   // Page d'accueil (vitrine) : toujours la version en ligne, la copie ne sert que hors ligne.
   if (req.mode === 'navigate' && (chemin === '' || chemin === 'index.html')) {
     return e.respondWith(fetch(req).catch(() => caches.match('index.html', { cacheName: COEUR }).then((r) => r ?? Response.error())));

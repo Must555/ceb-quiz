@@ -79,6 +79,7 @@ function voixFrancaises() {
 
 let lecture = 0; // numéro de la lecture en cours : une lecture arrêtée ne fait plus rien
 let attente = null;
+let son = null; // fichier audio en cours (textes d'écoute enregistrés)
 let quandArrete = null; // prévient le bouton de la lecture interrompue (il revient à « Écouter »)
 
 // Lit une liste de morceaux [{ texte, lecteur }] l'un après l'autre.
@@ -124,6 +125,7 @@ export function parler(texte, { onFin } = {}) {
 export function taire() {
   lecture++;
   clearTimeout(attente);
+  if (son) { son.pause(); son = null; }
   if (voixDisponible()) speechSynthesis.cancel();
   const f = quandArrete; quandArrete = null; f?.();
 }
@@ -133,6 +135,29 @@ export function taire() {
 // si l'appareil en a deux, sinon une hauteur différente.
 export function lireSegments(segments, { onFin } = {}) {
   return lireMorceaux(segments.map((s) => ({ texte: s.texte, lecteur: s.lecteur })), { onFin });
+}
+
+// Texte d'écoute : le fichier audio enregistré s'il existe, sinon (ou s'il ne se charge pas,
+// par exemple hors ligne) la voix du navigateur. onTemps(écoulé, durée) en secondes.
+export const audioPossible = () => typeof Audio !== 'undefined';
+export function lireEcoute(doc, { onFin, onTemps } = {}) {
+  if (!doc.audio || !audioPossible()) return lireSegments(doc.segments, { onFin });
+  taire();
+  const num = lecture;
+  const a = new Audio(doc.audio);
+  son = a;
+  quandArrete = onFin ?? null;
+  const finir = () => { if (num === lecture) { lecture++; son = null; quandArrete = null; onFin?.(); } };
+  const repli = () => {
+    if (num !== lecture || son !== a) return;
+    son = null; quandArrete = null; // la voix prend le relais : le bouton reste sur « Arrêter »
+    if (!lireSegments(doc.segments, { onFin })) finir();
+  };
+  a.onended = finir;
+  a.onerror = repli;
+  a.ontimeupdate = () => { if (num === lecture) onTemps?.(a.currentTime, a.duration); };
+  a.play().catch(repli);
+  return true;
 }
 
 // Bouton « Écouter » : bascule lecture / arrêt.
