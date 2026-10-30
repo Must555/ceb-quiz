@@ -1,7 +1,7 @@
 {
  "voix": {
-  "1": "fr-BE-CharlineNeural",
-  "2": "fr-BE-GerardNeural"
+  "1": "fr-FR-Vivienne:DragonHDLatestNeural",
+  "2": "fr-FR-Remy:DragonHDLatestNeural"
  },
  "vitesse": "-5%",
  "fichiers": {
