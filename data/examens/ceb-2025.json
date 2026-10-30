@@ -799,7 +799,7 @@
     "un témoignage d'une candidate astronaute."
    ],
    "reponse": 3,
-   "explication": "Florence Poutriquet raconte à la première personne (« je ») ce qu'elle a vécu : c'est un témoignage."
+   "explication": "Florence Poutriquet raconte elle-même, en « je », l'aventure qu'elle a vécue : « J'ai moi-même postulé pour être astronaute ». C'est donc un témoignage. Ce n'est pas une interview, car personne ne lui pose de questions."
   },
   {
    "id": "ceb-2025-l1-q2",
@@ -916,7 +916,7 @@
     "ecoute"
    ],
    "reponseModele": "Une information parmi : vivre avec d'autres personnes dans l'espace ; rester calme (si une situation devient dangereuse) ; maitriser leurs nerfs ou leurs émotions (pour gérer des situations difficiles). Toute reformulation allant dans ce sens est acceptée.",
-   "explication": "L'Agence spatiale veut s'assurer que les astronautes pourront vivre ensemble et rester calmes face au danger."
+   "explication": "Une bonne réponse reprend une des raisons données pour l'évaluation psychologique : les astronautes doivent pouvoir « vivre ensemble dans l'espace », « rester calmes si une situation devenait très dangereuse » ou « maitriser leurs nerfs et leurs émotions »."
   },
   {
    "id": "ceb-2025-l1-q7",
@@ -932,7 +932,7 @@
     "ecoute"
    ],
    "reponseModele": "C'est un astronaute avec un handicap (physique). Toute reformulation allant dans ce sens est acceptée.",
-   "explication": "Florence explique que l'Agence appelle parastronaute un astronaute avec un handicap."
+   "explication": "Florence le définit elle-même : un parastronaute, « c'est-à-dire un astronaute avec un handicap ». Ta réponse doit donc parler d'un astronaute qui a un handicap."
   },
   {
    "id": "ceb-2025-l1-q8",
@@ -980,7 +980,7 @@
     "ecoute"
    ],
    "reponseModele": "Après l'évaluation médicale. Toute reformulation allant dans ce sens est acceptée. Ce n'est pas bon : « en septembre 2022 ».",
-   "explication": "C'est après la semaine de tests médicaux qu'elle apprend, en septembre, qu'elle est éliminée."
+   "explication": "Elle passe d'abord une semaine de tests médicaux (l'évaluation médicale), puis : « au mois de septembre, j'ai appris que j'étais éliminée ». On demande une étape de la sélection : répondre « en septembre » donne une date, pas une étape."
   },
   {
    "id": "ceb-2025-l1-q10",
@@ -1002,7 +1002,7 @@
     "de l'admiration."
    ],
    "reponse": 0,
-   "explication": "Elle est fière et heureuse de son aventure, même si elle n'a pas été retenue : elle ne regrette rien."
+   "explication": "Même éliminée, Florence est contente de son parcours : « Quelle fierté ! », « c'était une aventure exceptionnelle » et « je ne regrette rien ». Elle ressent donc de la satisfaction, pas du désespoir ni du mécontentement."
   },
   {
    "id": "ceb-2025-l1-q11",
@@ -1040,7 +1040,7 @@
     "Dans la vie, il ne faut jamais rien regretter."
    ],
    "reponse": 2,
-   "explication": "Pour conclure, elle dit qu'il faut croire en ses rêves."
+   "explication": "En conclusion, elle insiste : « il est important que tu réalises qu'il faut croire en ses rêves ». Les rencontres et l'absence de regrets sont citées, mais ce ne sont que des exemples de ce que son rêve lui a apporté."
   },
   {
    "id": "ceb-2025-l1-q13",
@@ -1062,7 +1062,7 @@
     "donner du plaisir en racontant une histoire d'astronautes."
    ],
    "reponse": 0,
-   "explication": "Elle raconte, étape après étape, comment s'est déroulée sa sélection."
+   "explication": "Tout le podcast suit les étapes de sa sélection, dans l'ordre : inscription, tests techniques, évaluation psychologique, tests médicaux. Elle ne donne pas de consignes et ne décrit pas vraiment le Centre : elle explique son parcours."
   },
   {
    "id": "ceb-2025-l1-q14",
@@ -1102,7 +1102,8 @@
    "enonce": "Invente la suite et la fin d'une histoire imaginaire dont tu es le personnage principal. Début : « Tu constates que tu t'es transformé(e) en un adulte ou en un animal. Une journée particulière commence alors… Sept heures, le réveil sonne. » Écris en « je », invente un titre, utilise des mots de liaison, fais des paragraphes, garde les temps du début et écris au moins 90 mots.",
    "points": 35,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une bonne histoire raconte en « je » ta transformation et ta journée, avec un début, des évènements et une fin. Elle a un titre en lien avec l'histoire, des paragraphes, des mots de liaison (d'abord, ensuite, soudain…), des pronoms pour éviter les répétitions, les mêmes temps que le début et des phrases bien ponctuées."
   },
   {
    "id": "ceb-2025-l3-q1a",
@@ -1171,7 +1172,7 @@
     "I7→I6→I5→I4→J4→K4→L4→M4→N4",
     "I7→I6→I5→I4→J4→K4→L4→M4"
    ],
-   "explication": "On suit le couloir gris de la colonne I jusqu'en I4, puis on remonte le couloir jusqu'à l'entrée 1 (K4 – L4) et on sort vers M4 et N4. La salle de gymnastique bloque le passage direct."
+   "explication": "Le point de rassemblement (sigle vert) est en N4. Depuis I7, on suit le couloir gris de la colonne I jusqu'en I4 (I6, I5, I4), puis le couloir de la ligne 4 jusqu'à l'entrée 1 (J4, K4) et on sort vers L4, M4 et N4. La salle de gymnastique empêche d'aller tout droit."
   },
   {
    "id": "ceb-2025-l3-q1b",
@@ -1192,7 +1193,7 @@
     "salle de gym",
     "la salle de gym"
    ],
-   "explication": "Suis le trajet sur le plan, couloir après couloir : le local indiqué est la salle de gymnastique."
+   "explication": "Le directeur sort de son bureau dans le couloir C et tourne à gauche vers la ligne 4. Il prend à gauche le long couloir de la ligne 4, puis, en I4, le couloir sur sa droite (I5, I6). Le local à sa gauche est la salle de gymnastique."
   },
   {
    "id": "ceb-2025-l3-q1c",
@@ -1206,7 +1207,8 @@
    "documents": [
     "plan-ecole"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Pars de la case C7 et relie les cases dans l'ordre donné, sans en sauter : de C7 à C6, puis dans la ligne 6 jusqu'en E6, puis dans la colonne E jusqu'en E4, puis dans la ligne 4 jusqu'en I4, et enfin I3."
   },
   {
    "id": "ceb-2025-l3-q1d",
@@ -1237,7 +1239,7 @@
     4,
     5
    ],
-   "explication": "Le potager occupe 4 cases : M6, M7, N6 et N7."
+   "explication": "Le potager s'étend sur 2 colonnes (M et N) et sur 2 lignes (6 et 7). Il occupe donc 4 cases : M6, M7, N6 et N7."
   },
   {
    "id": "ceb-2025-l3-q2",
@@ -1297,7 +1299,7 @@
     "Développement 3"
    ],
    "reponse": 2,
-   "explication": "C'est le développement 3 : un carré (la base) entouré de 4 triangles (les faces)."
+   "explication": "La pyramide à base carrée a 1 carré (la base) et 4 triangles. Le développement 3 montre un carré avec un triangle sur chacun de ses 4 côtés. Le développement 1 n'a que des triangles et il manque un triangle au développement 2."
   },
   {
    "id": "ceb-2025-l3-q3",
@@ -1310,7 +1312,7 @@
    "corrigeVerifie": true,
    "numerisable": false,
    "reponseModele": "a) Un trapèze rectangle (« trapèze droit » ou simplement « trapèze » sont refusés). b) Colorier le parallélogramme non rectangle (la forme oblique au centre).",
-   "explication": "Un trapèze rectangle a deux côtés parallèles et un angle droit.",
+   "explication": "a) La figure barrée a deux côtés parallèles (c'est un trapèze) et un angle droit : c'est un trapèze rectangle ; « trapèze » seul n'est pas assez précis. b) Il faut colorier la grande figure penchée du milieu : ses côtés opposés sont parallèles deux à deux, mais elle n'a aucun angle droit.",
    "remarque": "Question à colorier sur le dessin du devoir de Lucas : gardée en mode papier (la partie a, écrire le nom de la figure, ne se joue pas seule)."
   },
   {
@@ -1333,7 +1335,7 @@
     "Flocon 4"
    ],
    "reponse": 3,
-   "explication": "C'est le flocon 4 : le motif découpé dans le papier plié se répète dans chacune des parts quand on déplie."
+   "explication": "Quand on déplie, chaque découpe se répète de part et d'autre de chaque pli : on retrouve le même motif sur toutes les branches. Compare la forme des découpes du papier plié avec chaque flocon : seul le flocon 4 correspond."
   },
   {
    "id": "ceb-2025-l3-q5",
@@ -1344,7 +1346,8 @@
    "enonce": "Reproduis la composition en respectant l'agrandissement du quadrillage.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le nouveau quadrillage est plus grand : chaque côté qui mesure 1 carreau sur le modèle mesure aussi 1 carreau sur l'agrandissement. Compte les carreaux de chaque segment et place la figure au centre du quadrillage."
   },
   {
    "id": "ceb-2025-l3-q6",
@@ -1355,7 +1358,8 @@
    "enonce": "Trace à tes instruments : un rectangle (non carré), un cercle, un triangle scalène obtusangle, un triangle isocèle acutangle.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Chaque figure se trace avec les instruments (latte, équerre, compas) à partir du segment de départ : il est un côté du rectangle, un diamètre du cercle, un côté du triangle scalène obtusangle et une hauteur du triangle isocèle acutangle. Un tracé à main levée n'est pas accepté."
   },
   {
    "id": "ceb-2025-l3-q7",
@@ -1366,7 +1370,8 @@
    "enonce": "Géoplan : entoure les clous pour transformer un trapèze isocèle en trapèze rectangle, puis en carré.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Il faut déplacer le sommet A juste au-dessus de D : le côté AD devient perpendiculaire aux deux bases, qui restent parallèles. On obtient un angle droit, donc un trapèze rectangle. b) Il faut déplacer C et D sous A et B, à la même distance que AB : la figure a alors 4 côtés de même longueur et 4 angles droits."
   },
   {
    "id": "ceb-2025-l3-q8",
@@ -1392,7 +1397,7 @@
      "5F"
     ]
    ],
-   "explication": "Pars de la case du joueur et avance case par case, flèche après flèche : X3 arrive en G4 et Y4 en F5."
+   "explication": "X3 part de E2 : ↓ ↓ l'amène en E4, puis → → en G4. Y4 part de F7 : ↑ en F6, ← en E6, ↑ en E5, → en F5. Avance d'une case par flèche, dans l'ordre."
   },
   {
    "id": "ceb-2025-l3-q9",
@@ -1469,7 +1474,8 @@
    "enonce": "Reproduis la composition en respectant les dimensions.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "La composition est formée d'un carré de 8 cm de côté et d'un carré de 3 cm de côté. Trace-les avec la latte et l'équerre (angles droits) puis place le petit carré exactement au même endroit que sur le modèle."
   },
   {
    "id": "ceb-2025-l3-q11",
@@ -1480,7 +1486,8 @@
    "enonce": "Trace avec précision un triangle équilatéral de 5 cm de côté.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Trace un côté de 5 cm. Avec le compas ouvert à 5 cm, trace un arc depuis chaque extrémité : les arcs se croisent au troisième sommet. Les 3 côtés mesurent alors 5 cm."
   },
   {
    "id": "ceb-2025-l3-q12",
@@ -1491,7 +1498,8 @@
    "enonce": "Achève la frise jusqu'au bout de la trame.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Repère le motif qui se répète dans la frise et reproduis-le dans le même ordre jusqu'au bout de la trame, sans oublier la dernière partie de l'hexagone."
   },
   {
    "id": "ceb-2025-l3-q13",
@@ -1502,7 +1510,8 @@
    "enonce": "Observe les droites : complète (sécante, perpendiculaire, parallèle), place le point A et identifie un angle obtus.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) La droite b ne croise jamais la droite a : elles sont parallèles. La droite f croise la droite a sans former d'angle droit : elle est sécante. b) Le point A se place là où les droites c et e se croisent, écrit en majuscule. c) Un angle obtus est plus grand qu'un angle droit : repère-en un à un croisement de deux droites."
   },
   {
    "id": "ceb-2025-l3-q14",
@@ -1538,7 +1547,7 @@
      "obtusangle scalène"
     ]
    ],
-   "explication": "Un triangle se nomme avec la longueur de ses côtés (équilatéral, isocèle, scalène) et la mesure de ses angles (acutangle, rectangle, obtusangle)."
+   "explication": "On regarde d'abord les côtés, puis les angles. Ligne 1 : 3 côtés isométriques, donc équilatéral. Ligne 2 : 1 angle droit, donc rectangle. Ligne 3 : 2 côtés isométriques et 3 angles aigus, donc isocèle acutangle. Ligne 4 : 3 côtés de longueurs différentes et 1 angle obtus, donc scalène obtusangle."
   },
   {
    "id": "ceb-2025-l3-q15",
@@ -1555,7 +1564,7 @@
    ],
    "unite": "axes de symétrie",
    "reponse": 6,
-   "explication": "Le dessin se superpose à lui-même en le pliant suivant 6 droites différentes : il a 6 axes de symétrie."
+   "explication": "Le flocon a 6 branches identiques. Il a 3 axes qui passent par deux branches opposées et 3 axes qui passent entre les branches : 3 + 3 = 6 axes de symétrie."
   },
   {
    "id": "ceb-2025-l3-q16a",
@@ -1576,7 +1585,7 @@
     "est un quadrilatère."
    ],
    "reponse": 0,
-   "explication": "Cherche ce que les trois figures du groupe A ont en commun : chacune a au moins un angle droit."
+   "explication": "Les trois figures du groupe A (le triangle, le trapèze et le cerf-volant) ont chacune au moins un angle droit. Le triangle n'est pas un quadrilatère et n'a pas de côtés parallèles : les deux autres propositions sont donc fausses."
   },
   {
    "id": "ceb-2025-l3-q16b",
@@ -1597,7 +1606,7 @@
     "a uniquement des angles aigus."
    ],
    "reponse": 1,
-   "explication": "Chaque figure du groupe B a au moins deux côtés de même longueur (isométriques)."
+   "explication": "Le triangle isocèle, le trapèze isocèle et le losange ont tous au moins deux côtés de même longueur (isométriques). Le triangle n'a pas de côtés parallèles et le trapèze a des angles obtus : les autres propositions ne conviennent pas."
   },
   {
    "id": "ceb-2025-l4-q1",
@@ -1629,7 +1638,7 @@
      "kilo"
     ]
    ],
-   "explication": "Diviser par 10 : déci (3 dl). Multiplier par 10 : déca (3 dag = 30 g). Diviser par 100 : centi (3 ca, 2 cm). Multiplier par 1 000 : kilo (5 km)."
+   "explication": "Chaque préfixe indique une unité 10, 100 ou 1 000 fois plus grande ou plus petite. Divisé par 10 : déci (3 l : 10 = 3 dl). Multiplié par 10 : déca (3 g × 10 = 3 dag). Divisé par 100 : centi (3 ca et 2 cm). Multiplié par 1 000 : kilo (5 km)."
   },
   {
    "id": "ceb-2025-l4-q2",
@@ -1714,7 +1723,7 @@
      "41"
     ]
    ],
-   "explication": "17 h 55 + 10 min = 18 h 05 : c'est la rue de la Loi. 17 h 55 + 46 min = 18 h 41.",
+   "explication": "On ajoute la durée du GPS à l'heure de départ. 17 h 55 + 10 min = 18 h 05 : à 10 minutes du départ, le GPS indique la rue de la Loi. 17 h 55 + 46 min = 18 h 41 au Cinquantenaire (17 h 55 + 5 min = 18 h 00, puis + 41 min).",
    "groupes": [
     [
      1,
@@ -1764,7 +1773,8 @@
    "enonce": "Chacun des disques vaut 1. Colorie 7/3.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "7/3, c'est 7 tiers. 3 tiers font un disque entier : 6 tiers font 2 disques entiers et il reste 1 tiers. Colorie 2 disques entiers et 1 tiers du troisième disque (2 des 6 parts marquées)."
   },
   {
    "id": "ceb-2025-l4-q6",
@@ -1782,7 +1792,7 @@
    "unite": "m²",
    "reponse": 800,
    "tolerance": 100,
-   "explication": "On estime combien de fois l'étalon de 100 m² « rentre » dans la pelouse : environ 8 fois, soit environ 800 m² (on accepte de 700 à 900 m²)."
+   "explication": "On imagine combien de fois le rectangle étalon de 100 m² peut se placer dans la pelouse : environ 8 fois. 8 × 100 m² = 800 m². C'est une estimation : une réponse de 700 à 900 m² est acceptée."
   },
   {
    "id": "ceb-2025-l4-q7",
@@ -1810,7 +1820,7 @@
     0,
     0
    ],
-   "explication": "0,12 l = 120 ml (trop). 7 cl = 70 ml, 60 ml et 1 dl = 100 ml sont acceptés."
+   "explication": "On convertit tout en ml et on compare à 100 ml. Boisson : 0,12 l = 120 ml, c'est trop. Écran solaire : 60 ml, c'est permis. Dentifrice : 7 cl = 70 ml, c'est permis. Sirop : 1 dl = 100 ml, c'est permis car « 100 ml maximum » accepte 100 ml."
   },
   {
    "id": "ceb-2025-l4-q8",
@@ -1866,7 +1876,7 @@
    "fiche": "ma-division",
    "unite": "ml",
    "reponse": 5,
-   "explication": "75 ml : 15 = 5 ml."
+   "explication": "Le flacon de 75 ml est partagé en 15 recharges égales : on divise. 75 ml : 15 = 5 ml. Vérification : 15 × 5 ml = 75 ml."
   },
   {
    "id": "ceb-2025-l4-q11",
@@ -1914,7 +1924,7 @@
     "50-59 ans"
    ],
    "reponse": 2,
-   "explication": "Parmi ces cinq catégories, le plus petit bâton du graphique est celui des 30-39 ans."
+   "explication": "Parmi les cinq catégories proposées, le bâton le plus petit est celui des 30-39 ans (environ 8 %). Les « moins de 10 ans » et les « 60 ans et plus » ont des bâtons encore plus petits, mais ils ne font pas partie des propositions."
   },
   {
    "id": "ceb-2025-l4-q12b",
@@ -1930,7 +1940,7 @@
     "liv4-p12"
    ],
    "reponse": false,
-   "explication": "C'est faux : les moins de 10 ans ont un petit bâton ; le plus grand est celui des 10-19 ans."
+   "explication": "C'est faux : le bâton des moins de 10 ans est l'un des plus petits (environ 6 %). Le plus grand bâton est celui des 10-19 ans (30 %)."
   },
   {
    "id": "ceb-2025-l4-q13",
@@ -1962,7 +1972,7 @@
    "unite": "cm²",
    "reponse": 20.35,
    "tolerance": 0.0501,
-   "explication": "Rectangle : 8 × 5 = 40 cm². Disque de diamètre 5 cm (rayon 2,5 cm) : 3,14 × 2,5 × 2,5 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm² (on accepte de 20,3 à 20,4)."
+   "explication": "Aire du rectangle : 8 × 5 = 40 cm². Le disque touche les deux longueurs : son diamètre vaut 5 cm, donc son rayon 2,5 cm. Aire du disque : 2,5 × 2,5 × 3,14 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm², soit environ 20,4 cm²."
   },
   {
    "id": "ceb-2025-l4-q15",
@@ -1981,7 +1991,7 @@
     "1re ligne : ? | 45 — 2e ligne : 6 | 135"
    ],
    "reponse": 2,
-   "explication": "Les litres vont dans la colonne des litres et les m² dans celle des m² : 6 l pour 45 m², ? l pour 135 m². (Réponse : 18 l.)"
+   "explication": "Dans un tableau de proportionnalité, chaque colonne garde la même grandeur : les litres d'un côté, les m² de l'autre. On connait 6 l pour 45 m² et on cherche les litres pour 135 m², donc le « ? » va dans la colonne des litres, à côté de 135. (135 = 3 × 45, donc 3 × 6 = 18 l.)"
   },
   {
    "id": "ceb-2025-l4-q16",
@@ -1992,7 +2002,8 @@
    "enonce": "Colorie 15 % de la figure.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "15 %, c'est 15 cases sur 100. La figure compte 40 cases : 15 % de 40 = 40 × 15 : 100 = 6. Il faut colorier 6 cases."
   },
   {
    "id": "ceb-2025-l4-q17",
@@ -2009,7 +2020,7 @@
    ],
    "unite": "min",
    "reponse": 32,
-   "explication": "La montre indique 10 h 49 et le train part à 11 h 21 : 11 h 21 − 10 h 49 = 32 minutes."
+   "explication": "La montre indique 10 h 49 et le panneau annonce le départ à 11 h 21. De 10 h 49 à 11 h 00 : 11 min ; de 11 h 00 à 11 h 21 : 21 min. Attente : 11 + 21 = 32 minutes."
   },
   {
    "id": "ceb-2025-l4-q18a",
@@ -2080,7 +2091,7 @@
     2,
     3
    ],
-   "explication": "25 cl = 0,25 l (= 250 ml). 2 500 ml = 2,5 l ; 250 dl = 25 l."
+   "explication": "On convertit tout en litres : 250 l ; 2 500 ml = 2,5 l ; 25 cl = 0,25 l ; 0,25 l ; 250 dl = 25 l. Les deux grandeurs égales sont 25 cl et 0,25 l."
   },
   {
    "id": "ceb-2025-l4-q20b",
@@ -2103,7 +2114,7 @@
     2,
     4
    ],
-   "explication": "0,12 km = 120 m. 12 hm = 1 200 m ; 12 dm = 1,2 m ; 1 200 cm = 12 m."
+   "explication": "On convertit tout en mètres : 12 hm = 1 200 m ; 12 dm = 1,2 m ; 120 m ; 1 200 cm = 12 m ; 0,12 km = 120 m. Les deux grandeurs égales sont 120 m et 0,12 km."
   },
   {
    "id": "ceb-2025-l4-q20c",
@@ -2126,7 +2137,7 @@
     0,
     1
    ],
-   "explication": "150 dg = 15 g. 15 cg = 0,15 g ; 1 500 mg = 1,5 g ; 1,5 kg = 1 500 g."
+   "explication": "On convertit tout en grammes : 15 g ; 150 dg = 15 g ; 15 cg = 0,15 g ; 1 500 mg = 1,5 g ; 1,5 kg = 1 500 g. Les deux grandeurs égales sont 15 g et 150 dg."
   },
   {
    "id": "ceb-2025-l4-q21",
@@ -2191,7 +2202,7 @@
     "12/8",
     "1,5"
    ],
-   "explication": "1 2/8 = 1 1/4. 2 3/4 − 1 1/4 = 1 2/4 = 1 1/2."
+   "explication": "On rend les fractions comparables : 2/8 = 1/4, donc 1 2/8 = 1 1/4. On soustrait les entiers puis les fractions : 2 − 1 = 1 et 3/4 − 1/4 = 2/4. Résultat : 1 2/4 = 1 1/2."
   },
   {
    "id": "ceb-2025-l4-q24",
@@ -2213,7 +2224,7 @@
     "Clé USB (G)"
    ],
    "reponse": 1,
-   "explication": "Il faut que la partie foncée (espace utilisé) soit 1 part sur 6 de la barre : c'est la clé E."
+   "explication": "Pour 1/6, la partie foncée doit tenir 6 fois dans toute la barre. C'est le cas de la clé E. La clé F est moins remplie (environ 1/10), la clé G l'est à 1/3 et la clé D presque entièrement."
   },
   {
    "id": "ceb-2025-l4-q25",
@@ -2254,7 +2265,7 @@
      "6/12"
     ]
    ],
-   "explication": "Carré 1 : la partie grise est la moitié (1/2). Carré 2 : la partie blanche est 1 quart, donc le gris est 3/4. Rectangle : le gris occupe la moitié (1/2). Les fractions équivalentes sont acceptées."
+   "explication": "Carré 1 : la bande grise occupe la moitié de la hauteur, donc 1/2. Carré 2 : le triangle blanc va du côté droit jusqu'au centre, il vaut 1/4 du carré ; la partie grise vaut donc 3/4. Rectangle : le losange blanc relie les milieux des côtés et occupe la moitié ; le gris vaut 1/2. Attention : on demande la partie grise, pas la blanche."
   },
   {
    "id": "ceb-2025-l4-q26",
@@ -2391,7 +2402,7 @@
     5,
     3
    ],
-   "explication": "Jouer aux échecs est un loisir : se distraire. Le corrigé officiel ne sanctionne pas « se vêtir » (on voit les vêtements de l'époque)."
+   "explication": "Sur le tableau, trois personnes jouent aux échecs : c'est un jeu, un loisir. L'œuvre nous renseigne donc surtout sur la façon de se distraire. On peut aussi y observer les vêtements de l'époque : « se vêtir » est donc accepté."
   },
   {
    "id": "ceb-2025-l5-q2e",
@@ -2474,7 +2485,7 @@
    "numero": "3a",
    "domaine": "hg.geographie",
    "type": "qcm",
-   "enonce": "L'Europe et l'Amérique sont séparées par…",
+   "enonce": "L'Europe et l'Amérique sont séparées par un milieu naturel. C'est…",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-continents",
@@ -2485,7 +2496,7 @@
     "une chaine de montagnes"
    ],
    "reponse": 1,
-   "explication": "L'océan Atlantique sépare l'Europe de l'Amérique."
+   "explication": "Sur un planisphère, entre l'Amérique (à l'ouest) et l'Europe (à l'est), il y a une immense étendue d'eau salée : l'océan Atlantique. Une mer est plus petite et bordée de terres."
   },
   {
    "id": "ceb-2025-l5-q3b",
@@ -2522,7 +2533,8 @@
    "reponseModele": "Un canal a été creusé et aménagé par l'homme : c'est un élément construit, pas naturel. (Dire que « l'eau est naturelle », ou parler des routes et des maisons, ne répond pas.)",
    "documents": [
     "liv5-p08"
-   ]
+   ],
+   "explication": "Une bonne réponse explique qu'un canal n'est pas naturel : c'est un cours d'eau creusé ou aménagé par l'homme (on voit par exemple ses berges bétonnées). Dire que « l'eau est naturelle » ou parler des routes et des maisons ne répond pas à la question."
   },
   {
    "id": "ceb-2025-l5-q4a",
@@ -2617,7 +2629,7 @@
     "au Grand-Duché de Luxembourg"
    ],
    "reponse": 2,
-   "explication": "Givet est juste de l'autre côté de la frontière, en France, au sud de Dinant."
+   "explication": "Sur la carte, Givet est placée en dehors du territoire coloré de la Wallonie, dans une petite pointe qui s'enfonce au sud de Dinant. Cette pointe appartient à la France, le pays voisin au sud de la Belgique."
   },
   {
    "id": "ceb-2025-l5-q5a1",
@@ -2869,7 +2881,7 @@
     1,
     2
    ],
-   "explication": "Selon le corrigé officiel, les documents du portfolio ne permettent pas d'affirmer que la première Exposition universelle a eu lieu au Royaume-Uni en 1851. L'Atomium est cité comme une trace laissée dans le paysage : il existe toujours, donc c'est faux. Rien ne parle de crème glacée."
+   "explication": "Ligne 1 : le texte dit seulement « Depuis 1851 », sans dire dans quel pays a eu lieu la première exposition : on ne peut pas savoir. Ligne 2 : le texte cite l'Atomium parmi les « traces » que l'Expo 58 a laissées dans le paysage : il existe toujours, c'est donc faux. Ligne 3 : les documents ne parlent jamais de crème glacée."
   },
   {
    "id": "ceb-2025-l5-q6b",
@@ -2944,7 +2956,7 @@
     "jardins du Belvédère",
     "les jardins du Belvédère"
    ],
-   "explication": "Le numéro 13 correspond aux Jardins français du Belvédère."
+   "explication": "La zone verte en D3 – D4 porte le numéro 13. Dans la liste « Quelques lieux d'exposition », le numéro 13 correspond aux Jardins français du Belvédère."
   },
   {
    "id": "ceb-2025-l5-q6e",
@@ -2966,7 +2978,7 @@
     "11"
    ],
    "reponse": 1,
-   "explication": "La Suisse n'est pas membre de l'Union européenne."
+   "explication": "Selon la liste, 8 est le pavillon de la France, 9 celui de la Suisse, 10 celui de l'Espagne et 11 celui du Portugal. La France, l'Espagne et le Portugal font partie de l'Union européenne, mais pas la Suisse."
   },
   {
    "id": "ceb-2025-l5-q6f1",
@@ -2979,7 +2991,8 @@
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "numerisable": false,
-   "reponseModele": "Un trait placé sur 1958, entre 1950 et 1960."
+   "reponseModele": "Un trait placé sur 1958, entre 1950 et 1960.",
+   "explication": "1958 se trouve entre 1950 et 1960, un peu plus près de 1960 : 8 ans après 1950. Repère les graduations de la ligne du temps et place ton trait sur 1958."
   },
   {
    "id": "ceb-2025-l5-q6f",
@@ -3038,7 +3051,8 @@
    "documents": [
     "villes-double"
    ],
-   "reponseModele": "Aucune Exposition universelle n'a eu lieu en Afrique (ni en Antarctique)."
+   "reponseModele": "Aucune Exposition universelle n'a eu lieu en Afrique (ni en Antarctique).",
+   "explication": "Une bonne réponse cite un continent où aucune Exposition universelle n'a eu lieu : sur la carte des villes hôtes, il n'y a aucune date en Afrique (ni en Antarctique)."
   },
   {
    "id": "ceb-2025-l5-q6i",
@@ -3068,7 +3082,7 @@
     0,
     0
    ],
-   "explication": "1967 est après 1830. 1949 est avant 1961. 1880 est avant 1914."
+   "explication": "On compare chaque date aux repères. Montréal, 1967 : après l'indépendance de la Belgique (1830). Port-au-Prince, 1949 : avant le premier voyage de l'homme dans l'espace (1961). Melbourne, 1880 : avant la Première Guerre mondiale (1914-1918)."
   },
   {
    "id": "ceb-2025-l5-q7a",
@@ -3201,7 +3215,8 @@
    "documents": [
     "eurovision-2"
    ],
-   "reponseModele": "L'article date du 20/11/2022 : le concours de 2023 (en mai 2023) n'avait pas encore eu lieu."
+   "reponseModele": "L'article date du 20/11/2022 : le concours de 2023 (en mai 2023) n'avait pas encore eu lieu.",
+   "explication": "L'article est daté du 20/11/2022, alors que le concours 2023 a lieu en mai 2023. Une bonne réponse dit que, quand l'article a été écrit, le concours 2023 n'avait pas encore eu lieu : on ne pouvait pas connaitre le gagnant."
   },
   {
    "id": "ceb-2025-l5-q7d",
@@ -3215,7 +3230,8 @@
    "documents": [
     "eurovision-2"
    ],
-   "reponseModele": "À cause de la guerre en Ukraine : on ne pouvait pas organiser le concours en sécurité."
+   "reponseModele": "À cause de la guerre en Ukraine : on ne pouvait pas organiser le concours en sécurité.",
+   "explication": "L'article de L'Universel l'explique : « La guerre qui a lieu en Ukraine actuellement ne permet pas d'organiser le concours dans des conditions de sécurité suffisantes. » Ta réponse doit parler de la guerre en Ukraine."
   },
   {
    "id": "ceb-2025-l5-q7e",
@@ -3281,7 +3297,7 @@
      0
     ]
    ],
-   "explication": "Les peintures rupestres datent des chasseurs-cueilleurs (Préhistoire). La machine à vapeur est inventée au 18e siècle, pendant les Temps modernes (grandes découvertes). La guerre 14-18 appartient au temps des sociétés industrielles."
+   "explication": "Les premières peintures rupestres sont réalisées par les chasseurs-cueilleurs de la Préhistoire. La machine à vapeur est inventée au 18e siècle, au temps des grandes découvertes techniques et géographiques (Temps modernes). La guerre 14-18 a lieu au 20e siècle, au temps des sociétés industrielles."
   },
   {
    "id": "ceb-2025-l5-q8b",
@@ -3293,7 +3309,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-dates-cles",
-   "reponseModele": "Les Romains arrivent dans nos régions vers 57 av. J.-C. (Antiquité) ; le Traité de Rome est signé en 1957 (Époque contemporaine)."
+   "reponseModele": "Les Romains arrivent dans nos régions vers 57 av. J.-C. (Antiquité) ; le Traité de Rome est signé en 1957 (Époque contemporaine).",
+   "explication": "Une bonne réponse montre que les deux évènements sont très éloignés dans le temps : les Romains arrivent dans nos régions pendant l'Antiquité, il y a plus de 2 000 ans, alors que le Traité de Rome est signé en 1957, à l'Époque contemporaine (20e siècle)."
   },
   {
    "id": "ceb-2025-l5-q8c",
@@ -3305,7 +3322,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-periodes",
-   "reponseModele": "Le premier homme dans l'espace (Gagarine) date de 1961 : c'est l'Époque contemporaine, pas les Temps modernes (1492-1789)."
+   "reponseModele": "Le premier homme dans l'espace (Gagarine) date de 1961 : c'est l'Époque contemporaine, pas les Temps modernes (1492-1789).",
+   "explication": "Une bonne réponse dit que le premier homme est allé dans l'espace en 1961, au 20e siècle, donc à l'Époque contemporaine (temps des sociétés industrielles). Les Temps modernes se terminent en 1789, bien avant."
   },
   {
    "id": "ceb-2025-l6-q1",
@@ -3335,7 +3353,7 @@
      "0.18"
     ]
    ],
-   "explication": "0,64 − 0,38 = 0,26 (case A) ; 0,26 − 0,10 = 0,16 (case B) ; 0,38 − 0,08 − 0,12 = 0,18 (case C).",
+   "explication": "Dans ce schéma, chaque case est la somme des cases reliées en dessous. Case A : 0,64 − 0,38 = 0,26. Case B : 0,26 − 0,10 = 0,16. Case C : 0,38 − 0,08 − 0,12 = 0,18. Vérification : 0,08 + 0,18 + 0,12 = 0,38.",
    "groupes": [
     [
      0,
@@ -3390,7 +3408,7 @@
      "8"
     ]
    ],
-   "explication": "33 : 3 = 11 ; 17 × 2 = 34 ; 32 : 4 = 8."
+   "explication": "Le tiers, c'est diviser par 3 : 33 : 3 = 11. Le double, c'est multiplier par 2 : 17 × 2 = 34. Le quart, c'est diviser par 4 : 32 : 4 = 8."
   },
   {
    "id": "ceb-2025-l6-q4",
@@ -3491,7 +3509,7 @@
      "0.28"
     ]
    ],
-   "explication": "Case A : 0,05 × 5 = 0,25. Case B : 0,06 × 2 = 0,12. Case C : 0,07 × 4 = 0,28."
+   "explication": "Chaque case blanche est le produit du nombre de sa ligne par le nombre de sa colonne, comme 0,08 × 3 = 0,24. Case A : 0,05 × 5 = 0,25. Case B : 0,06 × 2 = 0,12. Case C : 0,07 × 4 = 0,28."
   },
   {
    "id": "ceb-2025-l6-q7",
@@ -3661,7 +3679,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": 12.087,
-   "explication": "12 unités et 87 millièmes : 12,087."
+   "explication": "On écrit 12 à gauche de la virgule. 87 millièmes s'écrivent avec 3 chiffres après la virgule : 0 dixième, 8 centièmes et 7 millièmes. On obtient 12,087. Écrire 12,87 serait faux : ce sont 87 centièmes."
   },
   {
    "id": "ceb-2025-l7-q1b",
@@ -3674,7 +3692,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-numeration",
    "reponse": 12870.2,
-   "explication": "12 870 unités et 2 dixièmes : 12 870,2."
+   "explication": "Douze-mille-huit-cent-septante unités, c'est 12 870, à gauche de la virgule. Deux dixièmes, c'est le chiffre 2 juste après la virgule : 12 870,2."
   },
   {
    "id": "ceb-2025-l7-q2a",
@@ -3751,7 +3769,7 @@
     "18 × 6 = 108 ; 2 × 24 = 48 ; 1 × 5 = 5 ; 108 + 48 + 5 = 161. Il va payer 161 €."
    ],
    "reponse": 2,
-   "explication": "Tarif de groupe enfant (6 €), l'instituteur entre gratuitement, un album coûte 24 € (32 € est le prix du livre)."
+   "explication": "La classe forme un groupe de plus de 15 personnes : chaque élève paie le tarif de groupe enfant, 6 €, et l'instituteur entre gratuitement. 18 × 6 = 108 € ; 2 albums illustrés : 2 × 24 = 48 € ; 1 poster : 5 €. Total : 108 + 48 + 5 = 161 €. Attention, 32 € est le prix du livre, pas de l'album."
   },
   {
    "id": "ceb-2025-l7-q4b",
@@ -3769,7 +3787,7 @@
     "21 × 6 = 126 ; 2 × 6 = 12 ; 1 × 32 = 32 ; 126 + 12 + 32 = 170. Il va payer 170 €."
    ],
    "reponse": 0,
-   "explication": "Une tasse coûte 6 € et le guide de visite 10 €."
+   "explication": "Les entrées restent 21 × 6 = 126 € (groupe, instituteur gratuit). Deux tasses : 2 × 6 = 12 €. Un guide de visite : 10 €. Total : 126 + 12 + 10 = 148 €. Les autres propositions utilisent le prix du poster (5 €) ou du livre (32 €)."
   },
   {
    "id": "ceb-2025-l7-q5",
@@ -3828,7 +3846,7 @@
    "fiche": "ma-operations",
    "unite": "km",
    "reponse": 159,
-   "explication": "22 744 − 22 585 = 159 km."
+   "explication": "La distance parcourue est la différence entre les deux compteurs : arrivée moins départ. 22 744 − 22 585 = 159 km."
   },
   {
    "id": "ceb-2025-l7-q8",
@@ -4052,7 +4070,7 @@
      "+7 535"
     ]
    ],
-   "explication": "L'addition se vérifie par une soustraction, la multiplication par une division, la soustraction par une addition."
+   "explication": "Chaque opération se « défait » par l'opération contraire. 96 829 − 4 301 = 92 528 (la soustraction défait l'addition). 5 250 : 42 = 125 (la division défait la multiplication). 38 085 + 7 535 = 45 620 (l'addition défait la soustraction)."
   },
   {
    "id": "ceb-2025-l7-q15",
@@ -4187,7 +4205,7 @@
     "Renseigner le lecteur à propos de la mémoire."
    ],
    "reponse": 3,
-   "explication": "C'est un texte informatif : il explique les différents systèmes de mémoire."
+   "explication": "Le texte explique ce qu'est la mémoire, ses différents systèmes, comment l'améliorer et comment elle fonctionne chez les animaux : il renseigne le lecteur. Il ne raconte pas d'histoire et ne dit pas que la mémoire est propre à l'humain : « La mémoire est loin d'être une capacité réservée aux êtres humains. »"
   },
   {
    "id": "ceb-2025-l8-q2a",
@@ -4201,7 +4219,8 @@
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Il trie les informations : il garde les informations utiles (pour le futur) et élimine les informations inutiles. Une de ces idées suffit."
+   "reponseModele": "Il trie les informations : il garde les informations utiles (pour le futur) et élimine les informations inutiles. Une de ces idées suffit.",
+   "explication": "Le bloc « Qui dort se souvient » le dit : pendant le sommeil, le cerveau « trie les informations, garde celles qui sont utiles pour le futur et élimine les autres ». Une de ces idées suffit."
   },
   {
    "id": "ceb-2025-l8-q2b",
@@ -4237,7 +4256,7 @@
    "documents": [
     "memoire-3"
    ],
-   "explication": "Le texte dit : « si une leçon est répétée mécaniquement, même mille fois, elle ne sera jamais apprise. » Il faut d'abord la comprendre.",
+   "explication": "Les deux choix sont possibles si la justification parle de comprendre. Le texte dit : « si une leçon est répétée mécaniquement, même mille fois, elle ne sera jamais apprise ». Mais il dit aussi que « la répétition améliore aussi l'apprentissage » quand on comprend ce qu'on apprend.",
    "reponseModele": "Les deux réponses sont acceptées si la justification est cohérente avec le texte. Lilly a tort : une leçon répétée mécaniquement, même mille fois, ne sera jamais apprise ; il faut d'abord la comprendre. Ou Lilly a raison : répéter aide à retenir, à condition de comprendre ce qu'on répète. Sans justification, pas de point."
   },
   {
@@ -4252,7 +4271,7 @@
    "documents": [
     "memoire-4"
    ],
-   "explication": "« Elle sert à communiquer, à mieux se nourrir, à survivre ou à se protéger d'animaux prédateurs. »",
+   "explication": "Le début du bloc sur les animaux donne la réponse : la mémoire « sert à communiquer, à mieux se nourrir, à survivre ou à se protéger d'animaux prédateurs ». Les exemples du geai et des éléphants (retrouver ses cachettes, les points d'eau…) sont aussi acceptés.",
    "reponseModele": "Une utilité parmi : communiquer ; mieux se nourrir ; survivre ; se protéger d'animaux prédateurs. Sont aussi acceptés : différencier des voix, identifier une menace, reconnaitre d'autres animaux, retrouver sa nourriture (points d'eau), apprendre aux autres, mémoriser des cachettes, se souvenir de ce qu'il reste dans chaque réserve, se souvenir s'il a été observé par un autre animal. Une réponse en trop qui est fausse fait perdre le point."
   },
   {
@@ -4285,7 +4304,7 @@
     0,
     2
    ],
-   "explication": "Retenir les cartes le temps de la partie : mémoire de travail (très courte). Les pays d'Europe sont des savoirs : mémoire sémantique."
+   "explication": "Retenir les cartes jouées sert seulement le temps de la partie : c'est la mémoire de travail, qui retient une information « le temps de réaliser une tâche ». Citer les pays d'Europe, c'est une connaissance sur le monde : la mémoire sémantique, « celle des connaissances »."
   },
   {
    "id": "ceb-2025-l8-q6",
@@ -4299,7 +4318,8 @@
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Utiliser des moyens mnémotechniques ; répéter en comprenant ce qu'on apprend (résumé, mots-clés, schémas, tableaux) ; bien dormir ; bien se nourrir. Répéter sans comprendre ne suffit pas."
+   "reponseModele": "Utiliser des moyens mnémotechniques ; répéter en comprenant ce qu'on apprend (résumé, mots-clés, schémas, tableaux) ; bien dormir ; bien se nourrir. Répéter sans comprendre ne suffit pas.",
+   "explication": "Le texte donne plusieurs « coups de pouce » : utiliser des moyens mnémotechniques, répéter en comprenant ce qu'on apprend, bien dormir et bien se nourrir. Il faut en écrire un. « Répéter » seul ne suffit pas, car le texte dit qu'il faut comprendre."
   },
   {
    "id": "ceb-2025-l8-q7",
@@ -4316,7 +4336,7 @@
     "liv8-p05"
    ],
    "reponseModele": "Mémoire épisodique (1 point, tout ou rien ; une seule case cochée). Justification possible : c'est la mémoire des souvenirs personnels / des épisodes de ta vie ; ou : c'est la mémoire qui fait voyager dans le temps en pensée ; ou : parce que tu connais les épisodes qui font ton passé, tu peux imaginer l'avenir et faire des projets ; ou toute description de l'illustration en lien avec ces idées.",
-   "explication": "La mémoire épisodique est la mémoire de ton histoire."
+   "explication": "La fille se souvient d'un moment de vacances à la plage avec sa famille : c'est un souvenir personnel. Le texte dit que ces « souvenirs personnels sont des épisodes de ta vie » et forment la mémoire épisodique. Ta justification doit reprendre cette idée."
   },
   {
    "id": "ceb-2025-l8-q8",
@@ -4330,7 +4350,8 @@
    "documents": [
     "memoire-3"
    ],
-   "reponseModele": "Deux raisons parmi : le cerveau rejoue ce que tu as fait et appris lorsque tu étais éveillé ; il révise ; les (circuits de) neurones qui ont été activés sont réactivés ; il trie les informations ; il garde les informations utiles (pour le futur) ; il élimine les informations qui ne sont pas utiles."
+   "reponseModele": "Deux raisons parmi : le cerveau rejoue ce que tu as fait et appris lorsque tu étais éveillé ; il révise ; les (circuits de) neurones qui ont été activés sont réactivés ; il trie les informations ; il garde les informations utiles (pour le futur) ; il élimine les informations qui ne sont pas utiles.",
+   "explication": "Le bloc « Qui dort se souvient » donne plusieurs raisons : pendant le sommeil, le cerveau rejoue ce que tu as appris, il révise, il réactive les neurones utilisés, il trie les informations, garde celles qui sont utiles et élimine les autres. Il faut en écrire deux différentes."
   },
   {
    "id": "ceb-2025-l8-q9",
@@ -4375,7 +4396,7 @@
    "documents": [
     "memoire-4"
    ],
-   "explication": "« Il ne le fera que s'il a lui-même été voleur dans le passé. »",
+   "explication": "Le texte précise : « il ne le fera que s'il a lui-même été voleur dans le passé ». La condition est donc d'avoir déjà été voleur lui-même.",
    "reponseModele": "S'il a (déjà) été voleur lui-même (dans le passé)."
   },
   {
@@ -4392,7 +4413,7 @@
     "memoire-4"
    ],
    "reponseModele": "Réponse : vrai (si tu as écrit faux, ce n'est pas sanctionné : seule la justification compte). Justification attendue, avec la notion de « souvenir vécu » : les éléphants sont capables de reconnaître d'autres éléphants qu'ils ont croisés durant leur vie ; ou ils identifient des hommes qui leur sont familiers ou qu'ils ont connus dans le passé ; ou ils peuvent mémoriser les points d'eau qu'ils connaissent. 1 point.",
-   "explication": "La mémoire épisodique, c'est se souvenir de ce qu'on a vécu."
+   "explication": "La mémoire épisodique est celle des souvenirs vécus. Le texte montre que les éléphants en ont une : ils reconnaissent « d'autres éléphants qu'ils ont croisés dans leur vie », les hommes qu'ils ont connus dans le passé et les points d'eau qu'ils connaissent. Ta justification doit citer un de ces souvenirs vécus."
   },
   {
    "id": "ceb-2025-l8-q12",
@@ -4427,7 +4448,7 @@
     ],
     3
    ],
-   "explication": "Marcher est un geste devenu automatique (mémoire procédurale). Le gout est lié aux sens (mémoire perceptive)."
+   "explication": "Marcher est un geste appris qui devient automatique, comme skier ou conduire : il va dans « Une mémoire automatique » (la mémoire des sens est aussi acceptée). Le gout des tomates est lié à un des cinq sens : il va dans « Une mémoire des sens », à côté du gout du caramel."
   },
   {
    "id": "ceb-2025-l8-q13",
@@ -4446,7 +4467,7 @@
     "Un indispensable devoir de mémoire"
    ],
    "reponse": 2,
-   "explication": "Le texte explique la mémoire chez l'homme ET chez les animaux : un documentaire général sur la mémoire."
+   "explication": "Le texte parle de la mémoire en général, chez l'humain et chez les animaux : il pourrait se trouver dans « Le grand livre de la mémoire ». Les autres titres parlent d'un âne, des seuls hommes ou du « devoir de mémoire », qui est un autre sujet (se souvenir de l'histoire)."
   },
   {
    "id": "ceb-2025-l8-q14",
@@ -4465,7 +4486,7 @@
     "quand"
    ],
    "reponse": 1,
-   "explication": "« Parce que » et « puisque » introduisent une cause."
+   "explication": "« Parce que » introduit la cause : tu sais que l'ortie pique parce que tu l'as déjà touchée. « Puisque » introduit aussi une cause. « Même si » et « malgré que » expriment une opposition, et « quand » le temps."
   },
   {
    "id": "ceb-2025-l8-q15",
@@ -4521,7 +4542,7 @@
     "nécessité"
    ],
    "reponse": 1,
-   "explication": "Une faculté est une capacité, un pouvoir de faire quelque chose."
+   "explication": "Une faculté, c'est une capacité, le pouvoir de faire quelque chose : la mémoire est une capacité de ton cerveau. « Facilité » ressemble au mot mais n'a pas le même sens."
   },
   {
    "id": "ceb-2025-l8-q17",
@@ -4590,7 +4611,7 @@
     2,
     0
    ],
-   "explication": "« est » est un verbe d'état : « le carburant de ton corps » est attribut du sujet. On appartient « à » quelque chose : complément indirect."
+   "explication": "Phrase 1 : « est » est un verbe d'état, donc « le carburant de ton corps » est attribut du sujet « Ce que tu manges » : structure C. Phrase 2 : on appartient « à » quelque chose ; « à la famille des corvidés » est un complément indirect du verbe : structure A."
   },
   {
    "id": "ceb-2025-l8-q19",
@@ -4637,7 +4658,7 @@
     "Michèle MIRA PONS, Question de mémoire, Éditions Actes Sud junior, 2018"
    ],
    "reponse": 3,
-   "explication": "Une référence complète donne dans l'ordre : l'auteur, le titre, l'éditeur et l'année."
+   "explication": "Une référence complète donne, dans l'ordre : l'auteure (Michèle MIRA PONS), le titre (Question de mémoire), l'éditeur (Éditions Actes Sud junior) et l'année (2018). Il manque un élément ou l'ordre est mauvais dans les autres propositions."
   },
   {
    "id": "ceb-2025-l9-q1",
@@ -4661,7 +4682,7 @@
     "Les grandes batailles d'autrefois"
    ],
    "reponse": 2,
-   "explication": "Ce conte amuse et fait réfléchir au bonheur : il a sa place dans un recueil d'histoires."
+   "explication": "« Une bonne idée » est un conte : il amuse (les sages qui s'enfuient par les fenêtres, le livre raturé) et il fait réfléchir à la façon de trouver le bonheur. Il a donc sa place dans un livre d'« Histoires pour se distraire et réfléchir ». Il ne donne pas de conseils d'écriture et ne parle ni de métiers ni de batailles."
   },
   {
    "id": "ceb-2025-l9-q2",
@@ -4675,7 +4696,8 @@
    "documents": [
     "bonne-idee-1"
    ],
-   "reponseModele": "Tout ce qui pourrait aider sa fille à trouver le bonheur (les meilleurs conseils pour être heureuse)."
+   "reponseModele": "Tout ce qui pourrait aider sa fille à trouver le bonheur (les meilleurs conseils pour être heureuse).",
+   "explication": "Le roi le dit au marchand : « Je veux que tu rédiges un livre qui contiendra pour ma fille tout ce qui pourrait l'aider à trouver le bonheur ». Plus haut, il demande aussi « les meilleurs conseils pour trouver le bonheur dans cette vie »."
   },
   {
    "id": "ceb-2025-l9-q3",
@@ -4699,7 +4721,7 @@
     "C'est l'histoire d'une princesse qui attend un livre sur le bonheur. Lorsqu'elle reçoit le manuscrit, elle constate qu'il ne contient que des ratures et des pages déchirées. Comme elle n'a pas lu de conseils, elle décide alors de se promener dans les jardins du palais."
    ],
    "reponse": 2,
-   "explication": "Le marchand n'est pas sage et ne remet pas le livre lui-même ; la princesse lit bien quelques lignes. Le 3e résumé suit toute l'histoire."
+   "explication": "Le 3e résumé suit toute l'histoire : le roi veut un livre sur le bonheur, l'aviatrice, le navigateur et le charretier le raturent pendant le voyage, et la princesse n'y trouve plus que quelques lignes qu'elle applique. Le marchand n'est pas le plus sage du royaume, il ne remet pas le livre lui-même et la princesse lit bien un conseil."
   },
   {
    "id": "ceb-2025-l9-q4",
@@ -4713,7 +4735,8 @@
    "documents": [
     "bonne-idee-2"
    ],
-   "reponseModele": "Il consulte tous les sages qu'il peut rencontrer (environ 234), prend des notes pendant plus de neuf ans et écrit un livre de 972 pages. (Il faut parler de sa rencontre avec les sages.)"
+   "reponseModele": "Il consulte tous les sages qu'il peut rencontrer (environ 234), prend des notes pendant plus de neuf ans et écrit un livre de 972 pages. (Il faut parler de sa rencontre avec les sages.)",
+   "explication": "Ta réponse doit parler des sages : le marchand « alla consulter tous les sages qu'il pouvait croiser, prenant des notes ». Il en rencontre environ 234. Dire seulement qu'« il glane des informations » n'est pas assez précis."
   },
   {
    "id": "ceb-2025-l9-q5",
@@ -4732,7 +4755,7 @@
     "Inviter le lecteur à écrire une histoire plaisante sur la manière de trouver le bonheur."
    ],
    "reponse": 1,
-   "explication": "Un conte avec une morale : il amuse tout en faisant réfléchir."
+   "explication": "C'est un conte : l'histoire est plaisante (personnages amusants, situations drôles) et, à la fin, elle fait réfléchir au bonheur avec le conseil « Ton cœur sait déjà tout ce qui te rendra heureuse ». L'auteur n'explique pas comment écrire un livre et ne cherche pas à convaincre que voyager rend heureux."
   },
   {
    "id": "ceb-2025-l9-q6",
@@ -4763,7 +4786,7 @@
      "charretier"
     ]
    ],
-   "explication": "« Un roi avait combattu les pays voisins presque aussi longtemps qu'avait duré son règne. » C'est le charretier qui « déposa l'ouvrage au palais »."
+   "explication": "Le texte commence par : « Un roi avait combattu les pays voisins presque aussi longtemps qu'avait duré son règne » : il faisait la guerre. Défendre son peuple ou remplir ses coffres sont des raisons de faire la guerre, pas son occupation. À la fin, c'est le charretier qui « déposa l'ouvrage au palais »."
   },
   {
    "id": "ceb-2025-l9-q7",
@@ -4785,7 +4808,7 @@
     "de l'impatience"
    ],
    "reponse": 1,
-   "explication": "Relis la réaction du marchand quand le roi le menace. Justifie ensuite en recopiant la phrase du texte sur la fiche suivante."
+   "explication": "Après la menace « Sinon, attends-toi à un châtiment terrible ! », le texte dit : « Le marchand s'inclina en tremblant sous cette menace ». Trembler montre qu'il a peur."
   },
   {
    "id": "ceb-2025-l9-q7-j",
@@ -4801,7 +4824,7 @@
     "bonne-idee-1"
    ],
    "reponseModele": "« Le marchand s'inclina en tremblant sous cette menace. » (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.) Refusé : « Il avait peur d'échouer » ; « Sinon, attends-toi à un châtiment terrible. »",
-   "explication": "« En tremblant » montre la peur du marchand."
+   "explication": "Il faut recopier la phrase qui montre la peur du marchand : « Le marchand s'inclina en tremblant sous cette menace. » La menace du roi (« Sinon, attends-toi à un châtiment terrible ») explique pourquoi il a peur, mais elle ne montre pas ce qu'il ressent."
   },
   {
    "id": "ceb-2025-l9-q8",
@@ -4815,7 +4838,8 @@
    "documents": [
     "bonne-idee-3"
    ],
-   "reponseModele": "Il prend le temps d'observer et de profiter du chemin, au lieu de penser seulement à arriver au but."
+   "reponseModele": "Il prend le temps d'observer et de profiter du chemin, au lieu de penser seulement à arriver au but.",
+   "explication": "Le charretier avance lentement avec son âne et en profite pour observer « ce qui se trouve autour » de lui. L'auteur veut dire qu'il faut profiter du moment présent : le chemin est aussi important que l'arrivée. Recopier une partie de la phrase ne suffit pas, il faut l'expliquer avec tes mots."
   },
   {
    "id": "ceb-2025-l9-q9",
@@ -4829,7 +4853,8 @@
    "documents": [
     "bonne-idee-1"
    ],
-   "reponseModele": "Il veut faire fortune, s'enrichir (il manque de clients)."
+   "reponseModele": "Il voit là une occasion de s'enrichir, de faire fortune. Ou : il veut vendre ses tissus. Ou : il veut avoir de nouveaux clients. Ce n'est pas bon : « faire une princesse sage ».",
+   "explication": "Au début, le marchand de tissus est « en manque de clients » et se présente au roi « croyant voir là une occasion de faire fortune ». Il veut donc s'enrichir, vendre ses tissus ou trouver des clients."
   },
   {
    "id": "ceb-2025-l9-q10",
@@ -4845,7 +4870,8 @@
     "bonne-idee-2",
     "bonne-idee-3"
    ],
-   "reponseModele": "Les deux réponses sont acceptées avec une justification cohérente. Oui : plusieurs personnages ont une bonne idée (le roi, le marchand, l'aviatrice, le navigateur, le charretier, la princesse) ; l'expression « de bonnes idées » revient trois fois. Non : la seule vraie bonne idée est le conseil final."
+   "reponseModele": "Les deux réponses sont acceptées avec une justification cohérente. Oui : plusieurs personnages ont une bonne idée (le roi, le marchand, l'aviatrice, le navigateur, le charretier, la princesse) ; l'expression « de bonnes idées » revient trois fois. Non : la seule vraie bonne idée est le conseil final.",
+   "explication": "Les deux réponses sont possibles si tu justifies. Oui : plusieurs personnages ont « une bonne idée » (le roi, le marchand, l'aviatrice, le navigateur, le charretier) et l'expression revient plusieurs fois. Non : la seule vraie bonne idée est le conseil final que suit la princesse, « Et c'était, en effet, une bonne idée. »"
   },
   {
    "id": "ceb-2025-l9-q11",
@@ -4864,7 +4890,7 @@
     "que le roi a eu beaucoup de bonnes idées"
    ],
    "reponse": 2,
-   "explication": "« Enfin » montre qu'on l'attendait : jusque-là, le roi ne faisait que la guerre."
+   "explication": "« Enfin » montre qu'on attendait cette bonne idée depuis longtemps : avant, le roi passait son temps à faire la guerre, « pour s'occuper les jours de pluie ». L'auteur fait comprendre qu'il n'avait pas eu de bonnes idées jusque-là."
   },
   {
    "id": "ceb-2025-l9-q12",
@@ -4886,7 +4912,7 @@
     "suivre les conseils des sages avec sérénité."
    ],
    "reponse": 0,
-   "explication": "Le livre se termine par : « Ton cœur sait déjà tout ce qui te rendra heureuse. »"
+   "explication": "Le seul conseil qui reste dans le livre se termine par : « Ton cœur sait déjà tout ce qui te rendra heureuse ». La morale est donc d'écouter son cœur. Éviter les dangers à tout prix, c'est justement ce que l'aviatrice a rayé."
   },
   {
    "id": "ceb-2025-l9-q13",
@@ -4917,7 +4943,7 @@
     4,
     2
    ],
-   "explication": "Il se présente au roi, annonce qu'il doit voyager, écrit son livre (avec des remerciements aux sages), se sent satisfait une fois le livre fini, puis le confie à l'aviatrice."
+   "explication": "Le marchand répond d'abord à l'invitation du roi, puis annonce qu'il doit voyager aux quatre coins du globe. Des années plus tard, il écrit son livre (avec ses remerciements aux sages), se sent « satisfait d'avoir accompli un projet si important », puis confie le manuscrit à l'aviatrice."
   },
   {
    "id": "ceb-2025-l9-q14",
@@ -4939,7 +4965,7 @@
     "Elle applique le message qu'elle a lu et recopié."
    ],
    "reponse": 3,
-   "explication": "Elle écoute son cœur et profite du moment présent, comme le disent les lignes qu'elle a lues."
+   "explication": "La princesse vient de lire que son cœur sait ce qui la rendra heureuse et qu'il faut accueillir chaque moment avec sérénité. Elle sort profiter du soleil et des cerisiers : elle applique ce message, comme le charretier qui prend le temps d'observer ce qui l'entoure."
   },
   {
    "id": "ceb-2025-l9-q15",
@@ -4973,7 +4999,7 @@
     2,
     1
    ],
-   "explication": "Le texte ne dit pas ce que le roi pense du manuscrit ni ce que deviendra la princesse. À la naissance, « il eut quand même, enfin, une bonne idée » : vrai. Le roi fait remettre le livre « aussitôt » à la princesse sans le lire : faux."
+   "explication": "Ligne 1 : le texte ne dit pas ce que le roi pense du manuscrit. Ligne 2 : à la naissance de sa fille, « il eut quand même, enfin, une bonne idée » : vrai. Ligne 3 : le marchand imagine « une princesse sage et éclairée », mais on ne sait pas ce qu'elle deviendra. Ligne 4 : le roi fait mettre le livre « aussitôt » entre les mains de la princesse : faux."
   },
   {
    "id": "ceb-2025-l9-q16",
@@ -4989,7 +5015,8 @@
     "bonne-idee-2",
     "bonne-idee-3"
    ],
-   "reponseModele": "Plusieurs personnes (l'aviatrice, le navigateur, le charretier) ont supprimé les parties du livre qui ne leur convenaient pas ; ou : des pages ont été barrées, raturées, déchirées ; ou : il ne reste plus que quelques conseils. Accepté aussi : il faut peu de choses pour trouver le bonheur."
+   "reponseModele": "Plusieurs personnes (l'aviatrice, le navigateur, le charretier) ont supprimé les parties du livre qui ne leur convenaient pas ; ou : des pages ont été barrées, raturées, déchirées ; ou : il ne reste plus que quelques conseils. Accepté aussi : il faut peu de choses pour trouver le bonheur.",
+   "explication": "Pendant le voyage, l'aviatrice « raya tous les passages qui ne lui plaisaient pas, arrachant même parfois des pages entières », puis le navigateur et le charretier ont raturé à leur tour. Une bonne réponse explique que plusieurs personnes ont barré ou déchiré le livre, et qu'il ne reste que quelques conseils."
   },
   {
    "id": "ceb-2025-l9-q17a",
@@ -5009,7 +5036,7 @@
     "Un homme"
    ],
    "reponse": 0,
-   "explication": "« préparée » est au féminin : c'est l'aviatrice qui parle."
+   "explication": "Dans « m'être préparée », le participe passé « préparée » se termine par -ée : il est au féminin. C'est l'aviatrice, une femme, qui parle."
   },
   {
    "id": "ceb-2025-l9-q17b",
@@ -5040,7 +5067,7 @@
    "reponse": [
     "alors"
    ],
-   "explication": "« Alors » relie la lecture du livre à la décision de la princesse."
+   "explication": "« Alors » relie la lecture des quelques lignes à la décision de la princesse d'aller se promener : elle sort parce qu'elle a lu ce conseil."
   },
   {
    "id": "ceb-2025-l9-q19",
@@ -5059,7 +5086,7 @@
     "Il crée des nouveaux mots."
    ],
    "reponse": 1,
-   "explication": "Les trois phrases sont construites de la même façon, avec des mots différents."
+   "explication": "Les trois phrases suivent le même modèle : participe passé + « alors » + « par/d'une bonne idée », puis le personnage avec un adjectif, puis un verbe et une plume d'oiseau. Le vocabulaire change (frappée, illuminé, caressé) : l'auteur reproduit une même structure de phrase."
   },
   {
    "id": "ceb-2025-l9-q20",
@@ -5091,10 +5118,9 @@
     "combine",
     "truc",
     "un truc",
-    "piège",
     "feinte"
    ],
-   "explication": "Un stratagème est une ruse, une astuce pour arriver à ses fins."
+   "explication": "Le marchand invente un voyage pour pouvoir s'enfuir : c'est une ruse, une astuce, un plan. D'ailleurs, la phrase suivante dit : « Ce plan fonctionna un temps »."
   },
   {
    "id": "ceb-2025-l9-q21",
@@ -5113,7 +5139,7 @@
     "annoncer une conséquence (exemple : J'aime le poisson, alors j'en mange.)"
    ],
    "reponse": 3,
-   "explication": "L'âne est lent, donc le charretier prend son temps : c'est une conséquence."
+   "explication": "L'âne est lent par nature ; à cause de cela, le charretier prend le temps d'observer. « Alors » annonce ici une conséquence, comme dans « J'aime le poisson, alors j'en mange »."
   },
   {
    "id": "ceb-2025-l9-q22",
@@ -5132,7 +5158,7 @@
     "Caractère, tempérament d'un être vivant."
    ],
    "reponse": 3,
-   "explication": "Le charretier parle du caractère de son âne : il est lent par nature."
+   "explication": "Le charretier parle de son âne : « la lenteur est dans ta nature » veut dire que l'âne est lent de caractère, par tempérament. Il ne s'agit ni du paysage ni de la nature d'un mot en grammaire."
   },
   {
    "id": "ceb-2025-l9-q23",
@@ -5175,7 +5201,7 @@
     "Il déposa l'ouvrage au palais quelques heures plus tard."
    ],
    "reponse": 2,
-   "explication": "« Ce sage » (sujet) « donne » (verbe) « trop de prix » (CD) « aux biens matériels » (CI). Dans la 1re, le CI vient avant le CD ; dans la 4e, « au palais » et « plus tard » sont des compléments de phrase."
+   "explication": "« Ce sage » (sujet) « donne » (verbe) « trop de prix » (complément direct) « aux biens matériels » (complément indirect) : même ordre que le modèle. Dans la 1re phrase, le complément indirect vient avant le direct ; la 2e n'a pas de complément indirect ; dans la 4e, « au palais » et « quelques heures plus tard » sont des compléments de phrase."
   },
   {
    "id": "ceb-2025-l9-q25",
@@ -5212,7 +5238,7 @@
      "dentelée"
     ]
    ],
-   "explication": "Cheminement vient de « chemin » ; édenté vient de « dent » (sans dents)."
+   "explication": "Les mots d'une même famille sont construits autour d'un même radical. « Cheminement » est construit sur « chemin » (cheminer, cheminot…). « Édenté » est construit sur « dent » : é- + dent + -é signifie « qui a perdu ses dents » (dentiste, dentaire…)."
   },
   {
    "id": "ceb-2025-l9-q26",
@@ -5253,7 +5279,7 @@
      "la fille"
     ]
    ],
-   "explication": "Le roi parle (« Je ») au marchand (« tu ») ; sa fille, c'est la princesse, et « l' » reprend « ma fille »."
+   "explication": "C'est le roi qui parle : « Je » désigne le roi. Il s'adresse au marchand : « tu » désigne le marchand. « Ma fille » est la fille du roi, la princesse. Dans « l'aider », le pronom « l' » reprend « ma fille » : c'est aussi la princesse."
   },
   {
    "id": "ceb-2025-l10-q1a",
@@ -5278,7 +5304,7 @@
      "oreilles"
     ]
    ],
-   "explication": "L'odorat passe par le nez, l'ouïe par les oreilles."
+   "explication": "Chaque sens a son organe. L'odorat, le sens qui permet de sentir les odeurs, passe par le nez. L'ouïe, le sens qui permet d'entendre, passe par les oreilles."
   },
   {
    "id": "ceb-2025-l10-q1b",
@@ -5324,7 +5350,7 @@
     "Schéma 3"
    ],
    "reponse": 1,
-   "explication": "Chez la poule : accouplement, fécondation, ponte, incubation, éclosion, croissance. C'est le schéma 2."
+   "explication": "Chez la poule, il y a d'abord l'accouplement avec le coq, puis la fécondation, la ponte de l'œuf, l'incubation (la poule couve), l'éclosion et la croissance du poussin. Seul le schéma 2 contient toutes ces étapes dans cet ordre : le schéma 1 oublie la ponte et le schéma 3 place la ponte avant la fécondation."
   },
   {
    "id": "ceb-2025-l10-q2b",
@@ -5345,7 +5371,7 @@
     "Élise"
    ],
    "reponse": 2,
-   "explication": "L'œuf doit être fécondé puis couvé environ 21 jours (incubation). Le coq ne féconde pas forcément tous les œufs, et les 21 jours viennent après la ponte."
+   "explication": "Élise a raison : l'œuf doit être fécondé, puis couvé. Le texte dit : « Après la ponte, la poule couve ses œufs […] La durée d'incubation d'un œuf de poule est d'environ 21 jours. » Emma se trompe, car le coq ne féconde la poule qu'« éventuellement ». Lucas aussi : les 21 jours viennent après la ponte."
   },
   {
    "id": "ceb-2025-l10-q2c",
@@ -5360,7 +5386,8 @@
    "documents": [
     "poule"
    ],
-   "reponseModele": "Certains animaux ne pondent pas d'œufs : les mammifères (chien, vache, humain…) sont vivipares, leurs petits se développent dans le ventre de la mère. (Dire seulement « c'est faux » ou « la plupart pondent » ne suffit pas.)"
+   "reponseModele": "Certains animaux ne pondent pas d'œufs : les mammifères (chien, vache, humain…) sont vivipares, leurs petits se développent dans le ventre de la mère. (Dire seulement « c'est faux » ou « la plupart pondent » ne suffit pas.)",
+   "explication": "Une bonne réponse donne la raison : certains animaux ne pondent pas d'œufs. Les mammifères (le chien, la vache, l'humain…) sont vivipares : leurs petits se développent dans le ventre de la mère. Écrire seulement « tous les animaux ne sont pas ovipares » répète la phrase sans l'expliquer."
   },
   {
    "id": "ceb-2025-l10-q2d",
@@ -5390,7 +5417,7 @@
     1,
     2
    ],
-   "explication": "Après la ponte, l'œuf est couvé : c'est l'incubation (C). Puis le poussin sort de l'œuf : c'est l'éclosion (D)."
+   "explication": "Dans le cycle du geai, comme chez la poule, l'œuf pondu est d'abord couvé : l'étiquette C correspond à l'incubation. Ensuite, l'oisillon sort de sa coquille : l'étiquette D correspond à l'éclosion."
   },
   {
    "id": "ceb-2025-l10-q2e",
@@ -5419,7 +5446,7 @@
      "2"
     ]
    ],
-   "explication": "Larve : étiquette 3 ; nymphose : étiquette A ; œufs : étiquette 2."
+   "explication": "Comme chez le papillon, le ténébrion passe par les états œuf, larve, nymphe et adulte. La larve est le « ver » allongé, étiquette 3. La nymphose est l'étape (en pointillés) où la larve devient nymphe : entre 3 et 4, c'est l'étiquette A. Les œufs sont le petit groupe de boules, étiquette 2."
   },
   {
    "id": "ceb-2025-l10-q3a",
@@ -5436,7 +5463,8 @@
     "poulies-3",
     "poulies-4"
    ],
-   "reponseModele": "La force nécessaire pour soulever une charge dépend-elle du nombre de poulies (ou de portions de corde) qui la supportent ?"
+   "reponseModele": "La force nécessaire pour soulever une charge dépend-elle du nombre de poulies (ou de portions de corde) qui la supportent ?",
+   "explication": "Les trois expériences changent le nombre de poulies et de portions de corde, et on mesure la force de traction. Une bonne question demande donc si le nombre de poulies (ou de portions de corde) change la force nécessaire pour soulever la charge."
   },
   {
    "id": "ceb-2025-l10-q3b",
@@ -5466,7 +5494,7 @@
      "15"
     ]
    ],
-   "explication": "La force est divisée par le nombre de portions de corde : 60, 60 : 2 = 30 et 60 : 4 = 15."
+   "explication": "Le tableau des résultats montre que la force de traction est divisée par le nombre de portions de corde qui supportent la charge. Avec 1 portion : 60 kg. Avec 2 portions : 60 : 2 = 30 kg. Avec 4 portions : 60 : 4 = 15 kg."
   },
   {
    "id": "ceb-2025-l10-q4a",
@@ -5488,7 +5516,7 @@
      "tegumentaire"
     ]
    ],
-   "explication": "La digestion transforme et absorbe les aliments. La peau (appareil tégumentaire) protège et permet le toucher."
+   "explication": "Absorber, dégrader, assimiler et stocker les aliments, c'est le rôle de l'appareil digestif. La protection du corps et le toucher sont assurés par la peau, qui forme l'appareil tégumentaire."
   },
   {
    "id": "ceb-2025-l10-q4b1",
@@ -5507,7 +5535,7 @@
     "La trachée-artère, les bronches, le diaphragme"
    ],
    "reponse": 1,
-   "explication": "Le foie, la vésicule biliaire et le pancréas aident à digérer. Les alvéoles pulmonaires appartiennent à la respiration."
+   "explication": "Le foie, la vésicule biliaire et le pancréas aident à digérer les aliments : ils font tous partie de l'appareil digestif. Dans la première proposition, les alvéoles pulmonaires appartiennent à l'appareil respiratoire."
   },
   {
    "id": "ceb-2025-l10-q4b2",
@@ -5566,7 +5594,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
-   "reponseModele": "La trachée-artère fait partie de l'appareil respiratoire : elle conduit l'air vers les poumons, pas les aliments."
+   "reponseModele": "La trachée-artère fait partie de l'appareil respiratoire : elle conduit l'air vers les poumons, pas les aliments.",
+   "explication": "Une bonne réponse dit que la trachée-artère fait partie de l'appareil respiratoire : elle conduit l'air vers les poumons, pas les aliments. Ce sont les organes de l'appareil digestif, comme les intestins, qui s'occupent des aliments."
   },
   {
    "id": "ceb-2025-l10-q4e",
@@ -5578,7 +5607,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-appareils",
-   "reponseModele": "Le toucher est assuré par la peau. Les os et les articulations servent au soutien, à la protection et au mouvement du corps."
+   "reponseModele": "Le toucher est assuré par la peau. Les os et les articulations servent au soutien, à la protection et au mouvement du corps.",
+   "explication": "Une bonne réponse dit que les os et les articulations servent à soutenir, protéger et faire bouger le corps. Le toucher, lui, est assuré par la peau (l'appareil tégumentaire)."
   },
   {
    "id": "ceb-2025-l10-q5a",
@@ -5599,7 +5629,7 @@
     0,
     2
    ],
-   "explication": "Un vivant se nourrit, respire, se reproduit et meurt : le saïga (une antilope) et le rhododendron (une plante). L'améthyste est une pierre."
+   "explication": "Un être vivant naît, se nourrit, respire, se reproduit et meurt. D'après le tableau, le saïga (élément 1) et le rhododendron (élément 3) font tout cela : ils sont vivants. L'améthyste (élément 2) ne fait rien de tout cela : c'est une pierre, un non-vivant."
   },
   {
    "id": "ceb-2025-l10-q5b",
@@ -5655,7 +5685,7 @@
     0,
     0
    ],
-   "explication": "La centrale et les panneaux solaires produisent du courant. Le train utilise le courant pour rouler."
+   "explication": "Photo 1 : le train utilise le courant pour rouler, c'est un récepteur. Photo 2 : la centrale électrique produit du courant, c'est un générateur. Photo 3 : les panneaux solaires du toit produisent du courant, c'est aussi un générateur."
   },
   {
    "id": "ceb-2025-l10-q6b",
@@ -5677,7 +5707,7 @@
     "Le verre n'est pas un conducteur de chaleur."
    ],
    "reponse": 2,
-   "explication": "Le verre est un isolant électrique ; le métal conduit le courant."
+   "explication": "Le verre est un isolant électrique : il ne laisse pas passer le courant. Le métal, lui, est un bon conducteur : le courant passerait dans le pylône puis dans le sol. La chaleur et la solidité n'ont rien à voir ici."
   },
   {
    "id": "ceb-2025-l10-q7a",
@@ -5753,7 +5783,7 @@
     2,
     4
    ],
-   "explication": "L'expérience montre l'eau sous plusieurs états (glace, eau, vapeur) et son passage de l'un à l'autre : c'est le cycle de l'eau.",
+   "explication": "L'eau chaude s'évapore, la vapeur se condense en gouttes sur le film refroidi par les glaçons, et les gouttes tombent dans le bol : c'est un petit cycle de l'eau. On y voit l'eau sous ses trois états et les glaçons qui fondent (de solide à liquide). On ne teste ni l'électricité, ni l'isolation, ni la dilatation.",
    "parReponse": true
   },
   {
@@ -5804,7 +5834,7 @@
     1,
     0
    ],
-   "explication": "On met l'eau, puis l'huile, puis le sel. Le sel coule en entraînant de l'huile, puis l'huile remonte."
+   "explication": "On verse d'abord l'eau, puis l'huile, qui reste au-dessus de l'eau. On ajoute ensuite le sel : plus lourd, il coule en formant une « boule » entourée d'huile. Après quelques secondes, l'huile, plus légère que l'eau, se libère et remonte en gouttelettes."
   },
   {
    "id": "ceb-2025-l10-q9a",
@@ -5820,7 +5850,8 @@
     "ballons-2",
     "ballons-3"
    ],
-   "reponseModele": "Quels éléments (quantité d'air, diamètre de la corde, lubrifiant) font varier la distance parcourue par le ballon ?"
+   "reponseModele": "Quels éléments (quantité d'air, diamètre de la corde, lubrifiant) font varier la distance parcourue par le ballon ?",
+   "explication": "Dans l'expérience, on change la quantité d'air, le diamètre de la corde et la présence de lubrifiant, puis on mesure la distance parcourue par le ballon. Une bonne question demande si ces éléments (ou l'un d'eux) font varier cette distance."
   },
   {
    "id": "ceb-2025-l10-q9b",
@@ -5849,7 +5880,7 @@
     1,
     0
    ],
-   "explication": "Plus d'air : le ballon va plus loin. Corde plus épaisse : plus de frottements, il va moins loin. Le lubrifiant réduit les frottements : il va plus loin."
+   "explication": "Dans chaque colonne des tableaux, la distance grandit quand on ajoute de l'air. Sur chaque ligne, elle diminue quand la corde est plus épaisse. Et chaque valeur du tableau 2 (avec lubrifiant) est plus grande que celle du tableau 1 : le lubrifiant augmente la distance."
   },
   {
    "id": "ceb-2025-l10-q9d",
@@ -5863,7 +5894,8 @@
    "documents": [
     "ballons-4"
    ],
-   "reponseModele": "La quantité d'air dans le ballon, le diamètre de la corde et l'utilisation (ou non) de lubrifiant."
+   "reponseModele": "La quantité d'air dans le ballon, le diamètre de la corde et l'utilisation (ou non) de lubrifiant.",
+   "explication": "Il faut citer les trois éléments que les élèves ont fait changer : la quantité d'air dans le ballon, le diamètre (l'épaisseur) de la corde et l'utilisation ou non de lubrifiant. « La grandeur de la corde » n'est pas accepté, car cela parle de sa longueur."
   },
   {
    "id": "ceb-2025-l10-q9e",
@@ -5886,7 +5918,7 @@
      "15,6"
     ]
    ],
-   "explication": "Avec la corde de 2 mm, la distance baisse à 625 mm pour 15,6 l alors qu'elle était de 705 mm pour 10,4 l : ce n'est pas logique."
+   "explication": "Normalement, plus il y a d'air, plus le ballon va loin. Avec la corde de 2 mm, la distance passe de 705 mm (10,4 l) à 625 mm (15,6 l) : elle diminue alors qu'elle devrait augmenter. Le souci concerne donc la corde de 2 mm avec 15,6 l d'air."
   },
   {
    "id": "ceb-2025-l10-q9c",
@@ -5900,7 +5932,8 @@
    "documents": [
     "ballons-4"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les deux bâtonnets manquants se lisent dans le tableau 1 : 900 mm (15,6 l d'air, corde de 1 mm) et 380 mm (5,2 l d'air, corde de 4 mm). Trace-les à la bonne hauteur en suivant les graduations de l'axe des distances."
   },
   {
    "id": "ceb-2025-l10-q9f",
@@ -5933,7 +5966,7 @@
      "1 110"
     ]
    ],
-   "explication": "On lit la hauteur du bâton correspondant : 650 mm ; environ 715 ou 720 mm ; environ 1 105 ou 1 110 mm."
+   "explication": "On cherche le bon groupe de bâtons (la corde) et la bonne couleur (la quantité d'air), puis on lit la hauteur sur l'axe. Corde de 2 mm, 5,2 l : 650 mm. Corde de 4 mm, 10,4 l : un peu plus de 700, environ 715 ou 720 mm. Corde de 1 mm, 15,6 l : un peu plus de 1 100, environ 1 105 ou 1 110 mm."
   },
   {
    "id": "ceb-2025-l10-q9g",
@@ -5951,7 +5984,7 @@
     3,
     0
    ],
-   "explication": "La plus grande distance (1 305 mm) est obtenue avec le plus d'air (20,8 l) et la corde la plus fine (1 mm).",
+   "explication": "Le bâton le plus haut du graphique (1 305 mm) se trouve dans le groupe « corde de 1 mm de diamètre », avec la couleur « 20,8 l d'air ». Le ballon va le plus loin avec le plus d'air et la corde la plus fine.",
    "lignes": [
     "Le ballon parcourt la plus grande distance lorsqu'on y injecte…",
     "… et que l'on utilise la corde de…"
