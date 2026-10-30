@@ -1,0 +1,30 @@
+# Génère les fichiers audio des textes d'écoute avec Azure Speech.
+# Se lance quand scripts/audio/commande.json change sur la branche « audio » ; le résultat est
+# enregistré sur cette même branche (rien n'est publié sur le site sans relecture).
+name: Audio des textes d'écoute
+on:
+  push:
+    branches: [audio]
+    paths: ['scripts/audio/commande.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/audio/generer-audio.mjs
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      - name: Enregistrer les fichiers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A audio-essais assets/audio 2>/dev/null || true
+          git commit -m "Audio généré (Azure Speech)" || echo "Rien de nouveau"
+          git push
