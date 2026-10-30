@@ -37,49 +37,102 @@ export function texteAVoix(q) {
   return morceaux.filter(Boolean).join('. ').replace(/([.?!:])\./g, '$1');
 }
 
-function voixFrancaise() {
-  const voix = speechSynthesis.getVoices();
-  return voix.find((v) => v.lang === 'fr-BE') ?? voix.find((v) => v.lang === 'fr-FR') ?? voix.find((v) => v.lang?.startsWith('fr')) ?? null;
-}
-export function parler(texte, { onFin } = {}) {
-  if (!voixDisponible()) return false;
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(texte);
-  const v = voixFrancaise();
-  if (v) u.voice = v;
-  u.lang = v?.lang ?? 'fr-BE';
-  u.rate = 0.92;
-  u.onend = u.onerror = () => onFin?.();
-  speechSynthesis.speak(u);
-  return true;
-}
-export function taire() { if (voixDisponible()) speechSynthesis.cancel(); }
+// ---------------------------------------------------------------- lecture à voix haute
+// La voix du navigateur avale le début des phrases et coupe les longs blocs (surtout les voix
+// en ligne de Chrome). On lit donc phrase par phrase, chacune seulement quand la précédente est
+// finie, avec une courte pause, et on préfère une voix française installée sur l'appareil.
+const PAUSE_PHRASE = 250; // ms
+const PAUSE_LECTEUR = 500; // ms, quand la personne qui parle change
+const LONGUEUR_MAX = 180; // au-delà, on coupe aussi aux virgules et points-virgules
 
-// ---------------------------------------------------------------- livrets « Écouter »
-// Le texte officiel est lu par la voix du navigateur, segment par segment. Deux lecteurs
-// (interview) : deux voix françaises si l'appareil en a deux, sinon une hauteur différente.
-function voixFrancaises() {
-  const v = speechSynthesis.getVoices().filter((x) => x.lang?.startsWith('fr'));
-  const ordre = (x) => (x.lang === 'fr-BE' ? 0 : x.lang === 'fr-FR' ? 1 : 2);
-  return v.sort((a, b) => ordre(a) - ordre(b));
+// Découpe un texte en phrases à lire (le texte n'est pas modifié, seulement découpé).
+export function decouperPhrases(texte) {
+  const phrases = String(texte ?? '').replace(/\s+/g, ' ').trim()
+    .split(/(?<=[.!?…])\s+(?=[«"“(—–-]?\s*[A-ZÀ-ÖØ-Þ0-9«"“(—–-])/u)
+    .map((x) => x.trim()).filter(Boolean)
+    // pas de coupure après une abréviation ou une initiale (M. Dupont, av. J.-C., Saint-J. …)
+    .reduce((acc, x) => {
+      const prec = acc[acc.length - 1];
+      if (prec && /(?:^|[\s(])(?:M|Mme|Mlle|Mr|Dr|St|Ste|av|apr|env|cf|ex|p|n°|etc|[A-ZÀ-Þ]|J\.-C)\.$/u.test(prec)) acc[acc.length - 1] = `${prec} ${x}`;
+      else acc.push(x);
+      return acc;
+    }, []);
+  const res = [];
+  for (const ph of phrases) {
+    if (ph.length <= LONGUEUR_MAX) { res.push(ph); continue; }
+    let cour = '';
+    for (const bout of ph.split(/(?<=[,;:])\s+/u)) {
+      if (cour && (cour + ' ' + bout).length > LONGUEUR_MAX) { res.push(cour); cour = bout; }
+      else cour = cour ? `${cour} ${bout}` : bout;
+    }
+    if (cour) res.push(cour);
+  }
+  return res;
 }
-export function lireSegments(segments, { onFin } = {}) {
+
+// Voix françaises, les mieux adaptées d'abord : installées sur l'appareil, puis belges, puis françaises.
+function voixFrancaises() {
+  const v = speechSynthesis.getVoices().filter((x) => x.lang?.replace('_', '-').startsWith('fr'));
+  const rang = (x) => (x.localService ? 0 : 10) + (x.lang === 'fr-BE' ? 0 : x.lang === 'fr-FR' ? 1 : 2);
+  return v.sort((a, b) => rang(a) - rang(b));
+}
+
+let lecture = 0; // numéro de la lecture en cours : une lecture arrêtée ne fait plus rien
+let attente = null;
+let quandArrete = null; // prévient le bouton de la lecture interrompue (il revient à « Écouter »)
+
+// Lit une liste de morceaux [{ texte, lecteur }] l'un après l'autre.
+function lireMorceaux(morceaux, { onFin, rate = 0.9 } = {}) {
   if (!voixDisponible()) return false;
-  speechSynthesis.cancel();
+  taire();
+  const num = lecture;
   const voix = voixFrancaises();
-  segments.forEach((seg, i) => {
-    const u = new SpeechSynthesisUtterance(seg.texte);
-    const k = (seg.lecteur ?? 1) - 1;
+  const phrases = morceaux.flatMap((m) => decouperPhrases(m.texte).map((texte) => ({ texte, lecteur: m.lecteur ?? 1 })));
+  let i = 0;
+  const finir = () => { if (num === lecture) { lecture++; quandArrete = null; onFin?.(); } };
+  const suivante = () => {
+    if (num !== lecture) return;
+    if (i >= phrases.length) return finir();
+    const ph = phrases[i++];
+    const u = new SpeechSynthesisUtterance(ph.texte);
+    const k = ph.lecteur - 1;
     const v = voix[k % Math.max(1, voix.length)] ?? null;
     if (v) u.voice = v;
     u.lang = v?.lang ?? 'fr-BE';
-    u.rate = 0.9;
+    u.rate = rate;
     if (k > 0 && voix.length < 2) u.pitch = 0.8;
-    if (i === segments.length - 1) u.onend = () => onFin?.();
-    u.onerror = (e) => { if (e.error !== 'interrupted' && e.error !== 'canceled') onFin?.(); };
+    let fait = false;
+    const apres = () => {
+      if (fait || num !== lecture) return;
+      fait = true;
+      const pause = phrases[i] && phrases[i].lecteur !== ph.lecteur ? PAUSE_LECTEUR : PAUSE_PHRASE;
+      attente = setTimeout(suivante, pause);
+    };
+    u.onend = apres;
+    u.onerror = (e) => { if (e.error === 'interrupted' || e.error === 'canceled') return; apres(); };
     speechSynthesis.speak(u);
-  });
+  };
+  quandArrete = onFin ?? null;
+  // Chrome avale parfois ce qui est lancé juste après un arrêt : on laisse un court instant.
+  attente = setTimeout(suivante, 60);
   return true;
+}
+
+export function parler(texte, { onFin } = {}) {
+  return lireMorceaux([{ texte }], { onFin, rate: 0.92 });
+}
+export function taire() {
+  lecture++;
+  clearTimeout(attente);
+  if (voixDisponible()) speechSynthesis.cancel();
+  const f = quandArrete; quandArrete = null; f?.();
+}
+
+// ---------------------------------------------------------------- livrets « Écouter »
+// Le texte officiel est lu segment par segment. Deux lecteurs (interview) : deux voix françaises
+// si l'appareil en a deux, sinon une hauteur différente.
+export function lireSegments(segments, { onFin } = {}) {
+  return lireMorceaux(segments.map((s) => ({ texte: s.texte, lecteur: s.lecteur })), { onFin });
 }
 
 // Bouton « Écouter » : bascule lecture / arrêt.

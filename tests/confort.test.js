@@ -28,3 +28,13 @@ test('réglages de confort : valeurs par défaut et application sur la page', ()
   assert.equal(sons.actifs, false);
   sons.juste(); // sons coupés : ne fait rien, même sans audio (Node)
 });
+
+test('lecture à voix haute : découpe en phrases sans perdre de texte', async () => {
+  const { decouperPhrases } = await import('../js/app/confort.js');
+  assert.deepEqual(decouperPhrases('Bonjour, je suis Julie. Bienvenue ! Et M. Dupont arrive vers 57 av. J.-C.'),
+    ['Bonjour, je suis Julie.', 'Bienvenue !', 'Et M. Dupont arrive vers 57 av. J.-C.']);
+  const long = 'Un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt, vingt et un, vingt-deux, vingt-trois, vingt-quatre, fin.';
+  const morceaux = decouperPhrases(long);
+  assert.ok(morceaux.length > 1 && morceaux.every((m) => m.length <= 180));
+  assert.equal(morceaux.join(' '), long);
+});
