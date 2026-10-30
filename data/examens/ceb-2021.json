@@ -882,7 +882,7 @@
     "C'est là que les jouets étaient fabriqués il y a cent ans."
    ],
    "reponse": 1,
-   "explication": "Un musée conserve et expose des objets : ici, les jouets anciens que le guide nous montre."
+   "explication": "Un musée est un lieu où l'on conserve et où l'on montre des objets au public. Ici, on y regarde les jouets anciens que la guide présente. On n'y joue pas avec eux, on ne les répare pas et on ne les fabrique pas."
   },
   {
    "id": "ceb-2021-l1-q4",
@@ -1044,7 +1044,7 @@
     "train en tôle",
     "le train en tôle"
    ],
-   "explication": "Parmi les jouets présentés, seul le train est un moyen de transport : c'est un train mécanique en tôle émaillée."
+   "explication": "Le seul moyen de transport parmi les jouets présentés est le train : « un train qui est réalisé en tôle émaillée. Ce train est mécanique. » La guide ajoute qu'on reproduisait les moyens de transport en jouets."
   },
   {
    "id": "ceb-2021-l1-q11",
@@ -1066,7 +1066,7 @@
     "les diabolos",
     "le jeu du diabolo"
    ],
-   "explication": "Le diabolo est issu de la culture chinoise."
+   "explication": "La guide dit du diabolo : « Ce jeu est issu de la culture chinoise. » Il vient donc d'une culture différente de la nôtre."
   },
   {
    "id": "ceb-2021-l1-q12",
@@ -1162,7 +1162,7 @@
     "Aujourd'hui, les diabolos sont toujours fabriqués en fer."
    ],
    "reponse": 3,
-   "explication": "Autrefois, le diabolo était en fer ; aujourd'hui, le fer est remplacé par du plastique ou du caoutchouc."
+   "explication": "La guide dit : « Autrefois, le diabolo était fabriqué en fer […]. Actuellement, le fer est remplacé par du plastique ou mieux encore, du caoutchouc. » Les diabolos ne sont donc plus en fer. Les trois autres informations sont données pendant la visite."
   },
   {
    "id": "ceb-2021-l1-q16",
@@ -1211,7 +1211,7 @@
     "m'informer sur certains jouets utilisés autrefois."
    ],
    "reponse": 3,
-   "explication": "Le guide présente des jouets et des jeux d'il y a cent ans : l'intention est d'informer."
+   "explication": "Pendant toute la visite, la guide présente des jouets et des jeux d'il y a une centaine d'années : on s'informe. Elle ne parle pas de dangers, ne raconte pas d'histoire et ne s'attarde pas sur les règles des jeux."
   },
   {
    "id": "ceb-2021-l2-q1",
@@ -1222,7 +1222,8 @@
    "enonce": "Tu es en classes de dépaysement ou en excursion et tu viens de vivre une situation particulière (une copine ou un copain maladroit, une découverte exceptionnelle, un moment de panique dans un parc animalier, des visiteurs bloqués dans un musée). Écris une lettre (au moins 90 mots) à un membre de ta famille pour lui raconter ce qui s'est passé.",
    "points": 40,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une bonne lettre a une date, une formule pour interpeler la personne (« Chère maman, »), un corps, une formule finale et une signature. Le récit raconte une des quatre situations pendant les classes de dépaysement, avec un début, un déroulement et une fin, en paragraphes reliés par des mots de liaison, avec des temps de conjugaison cohérents, sans répétitions inutiles et en au moins 90 mots."
   },
   {
    "id": "ceb-2021-l3-q3c",
@@ -1249,7 +1250,7 @@
      "4"
     ]
    ],
-   "explication": "4 faces triangulaires, 6 arêtes et 4 sommets.",
+   "explication": "Faces : le triangle de la base et 3 triangles sur les côtés, soit 4. Arêtes : 3 autour de la base et 3 qui montent vers le sommet, soit 6. Sommets : les 3 coins de la base et le sommet du haut, soit 4.",
    "toutOuRien": true
   },
   {
@@ -1273,7 +1274,7 @@
      "trapeze isocele"
     ]
    ],
-   "explication": "Polygone régulier à 3 angles = triangle équilatéral. Une seule paire de côtés parallèles et deux côtés isométriques = trapèze isocèle."
+   "explication": "Un polygone régulier a tous ses côtés et tous ses angles égaux : avec 3 angles, c'est un triangle équilatéral. Un quadrilatère avec une seule paire de côtés parallèles est un trapèze ; si ses deux autres côtés ont la même longueur, c'est un trapèze isocèle."
   },
   {
    "id": "ceb-2021-l3-q13b",
@@ -1285,7 +1286,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-triangles",
-   "reponseModele": "Ce polygone a 3 côtés et un angle droit."
+   "reponseModele": "Ce polygone a 3 côtés et un angle droit.",
+   "explication": "Il faut donner les deux caractéristiques du triangle rectangle : un polygone à 3 côtés (ou 3 angles) et un angle droit. Par exemple : « Ce polygone a 3 angles dont un est droit. » « Il a trois angles et un angle droit » ne convient pas, car cela fait croire à quatre angles."
   },
   {
    "id": "ceb-2021-l3-q18b",
@@ -1306,7 +1308,7 @@
     "1 €"
    ],
    "reponse": 0,
-   "explication": "En F8, la rue est verte : 0,5 € par heure."
+   "explication": "La case F8 se trouve dans la colonne F et la ligne 8. La rue du Rempart, qui la traverse, est verte : d'après la légende, le vert coute 0,5 € par heure."
   },
   {
    "id": "ceb-2021-l3-q1",
@@ -1330,7 +1332,7 @@
      "5"
     ]
    ],
-   "explication": "Le joueur 1 voit le plateau 3 et le joueur 2 le plateau 5. Pour t'aider : repère un pion facile à suivre et imagine-le quand tu changes de côté autour du plateau."
+   "explication": "Chaque joueur voit le plateau tourné d'un quart de tour. Le joueur 1, assis à gauche, a devant lui la colonne de gauche du plateau vu du dessus, et le haut du plateau se trouve à sa gauche : c'est le plateau 3. Le joueur 2, assis à droite, a devant lui la colonne de droite, et le haut du plateau est à sa droite : c'est le plateau 5."
   },
   {
    "id": "ceb-2021-l3-q2",
@@ -1391,7 +1393,7 @@
     "Dé 7"
    ],
    "reponse": 6,
-   "explication": "C'est le dé 7 : il a 20 faces triangulaires."
+   "explication": "On compte les faces de chaque dé : le dé 1 en a 4, le dé 5 (le cube) en a 6, le dé 3 en a 12. Le dé 7 a 20 faces triangulaires : c'est lui qui en a le plus."
   },
   {
    "id": "ceb-2021-l3-q3b",
@@ -1412,7 +1414,7 @@
     "Développement C"
    ],
    "reponse": 0,
-   "explication": "Ce dé a des faces triangulaires : seul le développement A est fait de triangles. Les développements B et C contiennent des pentagones ou des carrés."
+   "explication": "Ce dé a 8 faces qui sont toutes des triangles. Seul le développement A est fait de 8 triangles. Le B a deux pentagones et des rectangles (un prisme) et le C a 6 carrés (un cube)."
   },
   {
    "id": "ceb-2021-l3-q3c2",
@@ -1434,7 +1436,7 @@
     "Dessin 4"
    ],
    "reponse": 1,
-   "explication": "C'est le dessin 2 : une pyramide dont la base est un triangle (4 faces triangulaires). Le dessin 1 est un cône, le 3 une pyramide à base carrée et le 4 une pyramide à base hexagonale."
+   "explication": "Une pyramide à base triangulaire a une base en triangle et 3 faces triangulaires qui se rejoignent au sommet : c'est le dessin 2. Le dessin 1 est un cône ; les dessins 3 et 4 sont des pyramides dont la base a plus de trois côtés."
   },
   {
    "id": "ceb-2021-l3-q3d",
@@ -1479,7 +1481,7 @@
     "trapèze scalène",
     "un trapèze scalène"
    ],
-   "explication": "Il a deux côtés parallèles (un trapèze) et deux angles droits : c'est un trapèze rectangle. On accepte aussi « trapèze scalène »."
+   "explication": "Ses deux côtés verticaux sont sur les deux droites parallèles : il a une paire de côtés parallèles, c'est un trapèze. Les petits coins carrés montrent deux angles droits : c'est un trapèze rectangle. On accepte aussi « trapèze scalène », car ses côtés non parallèles n'ont pas la même longueur."
   },
   {
    "id": "ceb-2021-l3-q5",
@@ -1491,7 +1493,8 @@
    "points": 1,
    "corrigeVerifie": false,
    "numerisable": false,
-   "remarque": "Corrigé : carré de 5 cm de côté dont [CD] est un côté (tolérance 1 mm). Tracé sur le dessin du livret : non numérisable."
+   "remarque": "Corrigé : carré de 5 cm de côté dont [CD] est un côté (tolérance 1 mm). Tracé sur le dessin du livret : non numérisable.",
+   "explication": "Un carré a 4 côtés de même longueur et 4 angles droits. Le côté [CD] mesure 5 cm : avec l'équerre, on trace un angle droit en C et en D, on reporte 5 cm sur ces deux côtés, puis on relie les deux points. Le tracé doit être précis à 1 mm près."
   },
   {
    "id": "ceb-2021-l3-q5b",
@@ -1504,7 +1507,8 @@
    "corrigeVerifie": false,
    "numerisable": false,
    "neutralisee": true,
-   "remarque": "Question neutralisée par le correctif officiel (0 point) : la notion de non-polygone ne fait pas partie des essentiels. L'épreuve vaut donc 49 points et non 50."
+   "remarque": "Question neutralisée par le correctif officiel (0 point) : la notion de non-polygone ne fait pas partie des essentiels. L'épreuve vaut donc 49 points et non 50.",
+   "explication": "Un polygone est une figure fermée formée uniquement de segments. Un non-polygone est donc, par exemple, une figure fermée dont un des côtés est une ligne courbe ; ici, [EF] doit être un de ses côtés. Cette question n'a pas été comptée à l'épreuve."
   },
   {
    "id": "ceb-2021-l3-q6",
@@ -1512,10 +1516,11 @@
    "numero": "6",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Choisis les pièces pour construire un solide fermé et nomme-le.",
+   "enonce": "Observe ce matériel : 2 hexagones, 4 carrés et 5 triangles. Avec ce matériel, tu dois construire un solide complètement fermé. Choisis les pièces que tu vas utiliser, puis choisis le nom du solide que tu obtiendras avec ces pièces (une pyramide à base carrée, un prisme droit à base hexagonale, une pyramide à base triangulaire, un cube ou un prisme à base triangulaire).",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Plusieurs solides sont possibles : 4 triangles forment une pyramide à base triangulaire ; 1 carré et 4 triangles, une pyramide à base carrée ; 3 carrés et 2 triangles, un prisme à base triangulaire. Le nom doit correspondre aux pièces choisies. Le cube (6 carrés) et le prisme à base hexagonale (6 rectangles) sont impossibles : il n'y a pas assez de pièces."
   },
   {
    "id": "ceb-2021-l3-q7",
@@ -1557,7 +1562,7 @@
      "C"
     ]
    ],
-   "explication": "A (rectangle) et C (triangle rectangle) ont des angles droits, donc des côtés perpendiculaires. Seul le rectangle A a des axes de symétrie. La somme des angles d'un triangle vaut 180° : c'est la figure C."
+   "explication": "A (rectangle) et C (triangle rectangle) ont un angle droit, donc deux côtés perpendiculaires. Seul le rectangle A a des axes de symétrie : on peut le plier en deux parties qui se superposent. La somme des angles d'un triangle vaut toujours 180° : c'est la figure C."
   },
   {
    "id": "ceb-2021-l3-q8",
@@ -1565,10 +1570,11 @@
    "numero": "8",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Achève l'agrandissement du dessin.",
+   "enonce": "Observe ce dessin géométrique. En utilisant tes instruments, achève l'agrandissement de ce dessin.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les carreaux du grand quadrillage sont 2 fois plus grands : on garde le même nombre de carreaux pour chaque longueur. Le rectangle fait 14 carreaux sur 4. Pour le triangle, on compte depuis le bord gauche du rectangle : un sommet sur le côté du haut à 11 carreaux, un sommet 1 carreau au-dessus du rectangle à 6 carreaux, et un sommet 4 carreaux sous le rectangle à 8 carreaux."
   },
   {
    "id": "ceb-2021-l3-q9",
@@ -1576,10 +1582,11 @@
    "numero": "9",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un rectangle dont les sommets sont des points donnés.",
+   "enonce": "Observe ce triangle scalène tracé à l'aide de ces points. À toi. En utilisant tes instruments, trace un rectangle. Chaque sommet doit être un des points.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les points sont placés en cercle. Les diagonales d'un rectangle se coupent en leur milieu et ont la même longueur : choisis deux points exactement opposés, puis deux autres points opposés, et relie les quatre. Vérifie les angles droits avec l'équerre. Un carré est aussi accepté."
   },
   {
    "id": "ceb-2021-l3-q10",
@@ -1587,10 +1594,11 @@
    "numero": "10",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Plan d'appartement : suis le programme de construction.",
+   "enonce": "Observe ce plan d'un appartement (coins A, B, C et D). a) Pour trouver l'endroit du lustre : place le point E au milieu du côté [AB] ; trace les segments [DE] et [BC] ; place le point F à l'intersection de [DE] et [BC] ; trace un cercle de centre F et de rayon 5,5 cm ; place le point P à l'endroit où ce cercle coupe le segment [DE]. b) Julien a laissé son vélo à l'extérieur devant la porte d'entrée : trace une croix à cet endroit. c) Pour réaliser le plan de travail du bureau, on a assemblé 3 planches : choisis ces 3 planches.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) E est au milieu de [AB] (mesure [AB] et divise par 2). [DE] et [BC] se croisent en F ; avec le compas ouvert à 5,5 cm et la pointe en F, le cercle coupe [DE] en P, près de la table ronde. b) La porte d'entrée est la porte du bas de la pièce principale, sur le côté [CD] : la croix se place juste dehors. c) Le bureau en coin se forme avec le long rectangle, la planche à 5 côtés au coin coupé et le petit carré."
   },
   {
    "id": "ceb-2021-l3-q11",
@@ -1824,7 +1832,7 @@
      "8;6"
     ]
    ],
-   "explication": "Scalènes acutangles : 1, 2, 4 et 5. Isocèles acutangles : 3 ou 7. Scalènes obtusangles : 6 et 8."
+   "explication": "Acutangle : 3 angles aigus ; obtusangle : un angle plus grand qu'un angle droit. Scalène : 3 côtés de longueurs différentes ; isocèle : 2 côtés de même longueur. Les triangles 1, 2, 4 et 5 ont 3 angles aigus et 3 côtés différents. Les triangles 3 et 7 ont 2 côtés égaux et 3 angles aigus. Les triangles 6 et 8 ont un angle obtus et 3 côtés différents."
   },
   {
    "id": "ceb-2021-l3-q12",
@@ -1853,7 +1861,7 @@
    "documents": [
     "liv3-p15"
    ],
-   "explication": "Le cercle (1), le losange (4) et le pentagone régulier (6) ont au moins deux axes de symétrie. À l'épreuve : 1 point par figure juste, 1 point en moins par figure en trop."
+   "explication": "Le cercle (1) a une infinité d'axes, le losange (4) en a deux (ses diagonales) et le pentagone régulier (6) en a cinq. Le cerf-volant (3) et la figure 5 n'en ont qu'un seul, et le parallélogramme (2) n'en a aucun. À l'épreuve : 1 point par figure juste, 1 point en moins par figure en trop."
   },
   {
    "id": "ceb-2021-l3-q14",
@@ -1925,7 +1933,7 @@
      "2;1"
     ]
    ],
-   "explication": "Prismes : 3 et 5. Pyramides : 4 et 6. Non polyèdres (solides à surface courbe) : 1 (cylindre) et 2 (cône)."
+   "explication": "Un prisme a deux bases identiques reliées par des rectangles : 3 (prisme à base triangulaire) et 5 (la boite). Une pyramide a une base et des faces triangulaires qui se rejoignent en un sommet : 4 (le dé) et 6 (le tipi). Le cylindre (1) et le cône (2) ont une surface courbe : ce ne sont pas des polyèdres."
   },
   {
    "id": "ceb-2021-l3-q15",
@@ -1933,10 +1941,11 @@
    "numero": "15",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Reproduis le symbole des Jeux olympiques.",
+   "enonce": "Observe ce symbole des Jeux olympiques. Reproduis ce symbole à l'aide de tes instruments. Les cinq cercles doivent être disposés comme sur le modèle. Tu dois t'aider des lignes en pointillés.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le cercle déjà tracé a un diamètre de 5 cm : les quatre autres aussi (compas ouvert à 2,5 cm). Les centres des trois cercles du haut sont sur la ligne pointillée du haut, ceux des deux cercles du bas sur la ligne du bas. Chaque cercle du bas coupe les deux cercles du haut entre lesquels il se trouve, comme sur le modèle."
   },
   {
    "id": "ceb-2021-l3-q16",
@@ -1944,10 +1953,11 @@
    "numero": "16",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un parallélogramme, un trapèze et un pentagone non régulier.",
+   "enonce": "À l'aide de ces lignes parallèles et de tes instruments, trace les figures demandées. Attention, les longueurs des côtés de ces figures doivent mesurer au moins 2 cm. Un parallélogramme, nomme-le « 1 » ; un trapèze, nomme-le « 2 » ; un pentagone non régulier, nomme-le « 3 ».",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Parallélogramme : deux paires de côtés parallèles, par exemple deux segments de même longueur sur deux lignes, reliés par deux segments parallèles. Trapèze : une seule paire de côtés parallèles, deux segments de longueurs différentes sur deux lignes. Pentagone non régulier : 5 côtés qui n'ont pas tous la même longueur. Chaque côté mesure au moins 2 cm."
   },
   {
    "id": "ceb-2021-l3-q17",
@@ -1955,10 +1965,11 @@
    "numero": "17",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Assemble deux trapèzes rectangles pour former un pentagone puis un trapèze isocèle.",
+   "enonce": "Voici un trapèze rectangle. Avec deux trapèzes rectangles identiques, on peut construire différentes figures : un élève a ainsi construit un rectangle. À toi : avec les trapèzes à découper, a) sans les superposer, colle deux trapèzes pour former un pentagone ; b) sans les superposer, colle deux trapèzes pour former un trapèze isocèle.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Un pentagone a 5 côtés : on accole les deux trapèzes par un côté de même longueur pour que la figure obtenue ait exactement 5 côtés. b) Un trapèze isocèle a une paire de côtés parallèles et deux côtés obliques de même longueur : on accole les deux trapèzes par leur côté droit (le côté perpendiculaire aux bases), l'un étant l'image de l'autre dans un miroir."
   },
   {
    "id": "ceb-2021-l3-q18a",
@@ -1974,7 +1985,7 @@
     "parking"
    ],
    "reponseModele": "C5, C6 et D5 (1 point, tout ou rien : il faut les trois cases).",
-   "explication": "Les cases bleues sont les plus chères : 1 € par heure."
+   "explication": "Le tarif le plus cher est le bleu : 1 € par heure. Les rues bleues (autour de la Grand Place) passent dans les cases C5, C6 et D5. Il faut écrire les trois cases."
   },
   {
    "id": "ceb-2021-l3-q18c",
@@ -1990,7 +2001,7 @@
     "parking"
    ],
    "reponseModele": "A3, A4, B4, C4, C5 (la case de départ A2 peut manquer). 1 point, tout ou rien.",
-   "explication": "Compte les cases une à une en suivant les rues du quadrillage."
+   "explication": "Depuis la place de la Libération (A2), on descend la rue Gérard Dubois (A3, A4), on suit vers la droite les rues qui passent en B4 et C4, puis la rue de France descend jusqu'à la Grand Place en C5. On écrit chaque case traversée dans l'ordre."
   },
   {
    "id": "ceb-2021-l3-q19",
@@ -2001,7 +2012,8 @@
    "enonce": "Termine le pavage.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le pavage est symétrique par rapport à une droite verticale qui passe au milieu du carré. La partie vide en bas à droite est l'image dans un miroir de la partie en bas à gauche : pour chaque case, regarde la case symétrique de l'autre côté de l'axe et colorie le triangle dans le sens inverse."
   },
   {
    "id": "ceb-2021-l4-q1",
@@ -2043,7 +2055,7 @@
     4,
     0
    ],
-   "explication": "Marionnettes : Liège. Gille : Hainaut. Abbaye d'Orval : Luxembourg. Adolphe Sax : Namur. Folon : Brabant wallon."
+   "explication": "Chaque page du miniguide porte le nom de sa province. Le théâtre traditionnel, ce sont les marionnettes liégeoises : Liège. Le cortège folklorique, c'est le carnaval du Gille : Hainaut. Le bâtiment historique, c'est l'abbaye d'Orval : Luxembourg. L'inventeur du saxophone, Adolphe Sax : Namur. Le musée de l'aquarelliste Folon, à La Hulpe : Brabant wallon."
   },
   {
    "id": "ceb-2021-l4-q2b",
@@ -2065,7 +2077,7 @@
     "Mathilde de Toscane"
    ],
    "reponse": 1,
-   "explication": "Couleurs pastel, petits bonshommes et silhouettes qui flottent : c'est le style de Jean-Michel Folon. Les réponses 2a et 2b forment un seul point officiel, tout ou rien pour les deux."
+   "explication": "On voit une silhouette qui flotte dans les airs : le miniguide dit que, dans les œuvres de Folon, on trouve « des silhouettes qui flottent dans les airs ». Adolphe Sax est un musicien, Charlemagne et Mathilde sont des personnages du miniguide. Les réponses 2a et 2b forment un seul point officiel, tout ou rien pour les deux."
   },
   {
    "id": "ceb-2021-l4-q3",
@@ -2093,7 +2105,7 @@
     "participer à la fabrication d'un saxophone."
    ],
    "reponse": 1,
-   "explication": "Le guide présente des lieux à découvrir en Wallonie et à Bruxelles."
+   "explication": "Le miniguide présente des lieux et des richesses à découvrir dans chaque province : il aide à choisir où aller en excursion. Il n'explique pas comment construire un théâtre, cuisiner ou fabriquer un saxophone."
   },
   {
    "id": "ceb-2021-l4-q4",
@@ -2121,7 +2133,7 @@
     "quelques monuments qui font partie de notre histoire."
    ],
    "reponse": 1,
-   "explication": "Le guide annonce « six richesses » de notre patrimoine : lieux, personnages, traditions."
+   "explication": "La première page annonce : « Pars maintenant à la découverte de ces six richesses » du patrimoine. Les titres mélangent des personnages (Folon, Sax, le Gille), des monuments (l'Atomium, l'abbaye) et un spectacle : ce ne sont donc pas seulement des personnages ou des monuments, mais des richesses de notre patrimoine."
   },
   {
    "id": "ceb-2021-l4-q5",
@@ -2153,7 +2165,7 @@
     2,
     1
    ],
-   "explication": "Folon : « couleurs pastel et douces ». Orval : le texte donne seulement le début (1020). Atomium : cinq boules sont accessibles, pas quatre."
+   "explication": "Folon : ses aquarelles utilisent des « couleurs pastel et douces » (vrai). Orval : le texte dit seulement que son histoire « débute en 1020 », il ne parle pas de la fin de la construction (on ne peut pas dire). Atomium : « cinq des neuf boules sont accessibles au public », pas quatre (faux)."
   },
   {
    "id": "ceb-2021-l4-q6",
@@ -2191,7 +2203,7 @@
     1,
     0
    ],
-   "explication": "Sax (Dinant) : Namur. Gille : Hainaut. Folon (La Hulpe) : Brabant wallon."
+   "explication": "On relie chaque information à une page du miniguide. Adolphe Sax est né à Dinant : province de Namur. Le Gille est un personnage du carnaval de Binche : province de Hainaut. Le musée de Folon se trouve à La Hulpe : province du Brabant wallon."
   },
   {
    "id": "ceb-2021-l4-q7",
@@ -2206,7 +2218,8 @@
    "documents": [
     "mg-1"
    ],
-   "reponseModele": "Le public peut y entrer, les visiter."
+   "reponseModele": "Le public peut y entrer, les visiter.",
+   "explication": "« Accessibles » veut dire qu'on peut y aller, y entrer, les visiter. La suite du texte le confirme : dans ces boules, « on y organise des expositions » et une classe peut même y loger. « Facile à atteindre » ne convient pas."
   },
   {
    "id": "ceb-2021-l4-q8",
@@ -2233,7 +2246,7 @@
     2,
     4
    ],
-   "explication": "« L'arbre, l'oiseau et la terre sont des thèmes choisis par l'artiste. »"
+   "explication": "Le miniguide dit : « L'arbre, l'oiseau et la terre sont des thèmes choisis par l'artiste afin de sensibiliser à la préservation de l'environnement. » Le chapeau est dessiné sur ses bonshommes, mais ce n'est pas un de ces thèmes."
   },
   {
    "id": "ceb-2021-l4-q10",
@@ -2251,7 +2264,7 @@
     "Le Gille de Binche",
     "Gille de Binche"
    ],
-   "explication": "C'est dans la page « Le Gille de Binche » (il offre ses oranges)."
+   "explication": "L'information se trouve à la page du Gille : « C'est également à ce moment-là que le Gille offre ses oranges au public. » Les oranges sont les fruits. Le titre de ce sujet est « Le Gille de Binche »."
   },
   {
    "id": "ceb-2021-l4-q11",
@@ -2272,7 +2285,7 @@
     "sort lors du cortège du matin et lors du cortège de l'après-midi."
    ],
    "reponse": 1,
-   "explication": "« ne… que » veut dire « seulement »."
+   "explication": "« Ne… que » veut dire « seulement ». « Il ne sort que lors du cortège de l'après-midi » signifie donc qu'il sort uniquement l'après-midi. Le matin, le Gille porte son masque de cire."
   },
   {
    "id": "ceb-2021-l4-q12",
@@ -2294,7 +2307,7 @@
     "aménagés avec des matériaux solides."
    ],
    "reponse": 1,
-   "explication": "Modestement = simplement, sans luxe."
+   "explication": "« Modestement » veut dire simplement, sans luxe. Des théâtres « modestement aménagés » sont donc installés avec simplicité, ce qui est le contraire du luxe."
   },
   {
    "id": "ceb-2021-l4-q13",
@@ -2316,7 +2329,7 @@
     "Milieu social d'où est issu quelqu'un"
    ],
    "reponse": 2,
-   "explication": "Le nom « Orval » vient de la légende : c'est son commencement."
+   "explication": "La phrase explique d'où vient le nom « Orval » : c'est de la légende de la comtesse Mathilde que « vient le nom ». Ici, « origine » veut donc dire le commencement, la première apparition du nom. Les autres définitions parlent de géométrie, de courrier ou de la famille d'une personne."
   },
   {
    "id": "ceb-2021-l4-q14",
@@ -2331,7 +2344,8 @@
     "mg-5"
    ],
    "reponseModele": "1. Où se trouve l'abbaye ? 2. L'histoire de l'abbaye. 3. La légende du nom « Orval ».",
-   "texte": "Extrait 1 : L'abbaye d'Orval se situe dans un vallon (une petite vallée) au sud de la Belgique, à un kilomètre de la frontière française.\nExtrait 2 : L'histoire de cette prestigieuse abbaye, construite par des moines italiens, débute en 1020. Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française.\nExtrait 3 : Une légende est à l'origine de son nom. On raconte qu'au Moyen Âge, la comtesse Mathilde de Toscane aurait perdu son alliance ornée de trois diamants dans une fontaine. C'est alors qu'une truite serait apparue miraculeusement avec l'anneau dans sa bouche. Heureuse d'avoir récupéré son bijou, la comtesse Mathilde aurait déclaré que cette région était un « Val d'Or ». C'est de cette légende que vient le nom « Orval »."
+   "texte": "Extrait 1 : L'abbaye d'Orval se situe dans un vallon (une petite vallée) au sud de la Belgique, à un kilomètre de la frontière française.\nExtrait 2 : L'histoire de cette prestigieuse abbaye, construite par des moines italiens, débute en 1020. Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française.\nExtrait 3 : Une légende est à l'origine de son nom. On raconte qu'au Moyen Âge, la comtesse Mathilde de Toscane aurait perdu son alliance ornée de trois diamants dans une fontaine. C'est alors qu'une truite serait apparue miraculeusement avec l'anneau dans sa bouche. Heureuse d'avoir récupéré son bijou, la comtesse Mathilde aurait déclaré que cette région était un « Val d'Or ». C'est de cette légende que vient le nom « Orval ».",
+   "explication": "Chaque titre doit résumer tout l'extrait, pas un seul détail. Extrait 1 : l'endroit où se trouve l'abbaye. Extrait 2 : son histoire (sa construction et ses dégâts). Extrait 3 : la légende à l'origine du nom « Orval ». Un titre comme « Mathilde de Toscane » ou « Les dégâts » ne garde qu'un détail."
   },
   {
    "id": "ceb-2021-l4-q15",
@@ -2345,7 +2359,8 @@
    "documents": [
     "mg-5"
    ],
-   "reponseModele": "« Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française. »"
+   "reponseModele": "« Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française. »",
+   "explication": "Il faut recopier la phrase qui parle des dégâts : « Malheureusement, comme beaucoup d'édifices (de bâtiments), elle a souvent subi des dégâts au cours du temps et particulièrement lors de la Révolution française. » Le passage « comme beaucoup d'édifices, elle a subi des dégâts au cours du temps » est indispensable."
   },
   {
    "id": "ceb-2021-l4-q16",
@@ -2367,14 +2382,15 @@
      "situation"
     ],
     [
-     "invention"
+     "invention",
+     "inventeur"
     ],
     [
      "création",
      "creation"
     ]
    ],
-   "explication": "se situer → situation ; inventer → invention ; créer → création."
+   "explication": "On cherche le nom de la même famille que le verbe, comme provenir → la provenance. Se situer → la situation. Inventer → l'invention. Créer → la création."
   },
   {
    "id": "ceb-2021-l4-q17",
@@ -2392,9 +2408,11 @@
    "reponse": [
     "le saxophone",
     "saxophone",
-    "l'invention du saxophone"
+    "l'invention du saxophone",
+    "le plus connu",
+    "le plus connu (le saxophone)"
    ],
-   "explication": "« Cette invention », c'est le saxophone."
+   "explication": "Juste avant, le texte dit : « il en invente des nouveaux dont le plus connu est le saxophone ». « Cette invention » reprend donc le saxophone, pour éviter de répéter le mot."
   },
   {
    "id": "ceb-2021-l4-q18",
@@ -2419,9 +2437,21 @@
     "en premier",
     "en premier lieu",
     "au debut",
-    "premierement"
+    "premierement",
+    "au commencement",
+    "tout au début",
+    "tout au debut",
+    "en premier temps",
+    "avant tout",
+    "pour débuter",
+    "pour debuter",
+    "en tout premier lieu",
+    "dans un premier moment",
+    "tout d'abord,",
+    "au tout début",
+    "initialement"
    ],
-   "explication": "« D'abord », « Tout d'abord », « Premièrement »…"
+   "explication": "« Dans un premier temps » indique le premier moment d'une suite d'actions, avant « Ensuite ». On peut le remplacer par un mot de même sens : « d'abord », « tout d'abord », « pour commencer », « au début »…"
   },
   {
    "id": "ceb-2021-l4-q19",
@@ -2456,7 +2486,7 @@
     1,
     1
    ],
-   "explication": "Le saxophone existe vraiment ; Tchantchès et Nanesse sont des marionnettes ; Folon « emmène le visiteur dans un monde imaginaire »."
+   "explication": "Le saxophone existe vraiment : Adolphe Sax l'a inventé. Tchantchès et Nanesse sont des personnages de marionnettes : leurs aventures sont inventées. Pour Folon, le miniguide dit : « L'artiste emmène le visiteur dans un monde imaginaire »."
   },
   {
    "id": "ceb-2021-l4-q20",
@@ -2477,7 +2507,7 @@
     "Les auteurs décrivent d'abord les couleurs, ensuite les personnages et enfin, ils citent d'autres éléments."
    ],
    "reponse": 2,
-   "explication": "« couleurs pastel et douces… drôles de petits bonshommes… des éléments de la nature »."
+   "explication": "La description suit cet ordre : d'abord les couleurs (« couleurs pastel et douces »), ensuite les personnages (« de drôles de petits bonshommes », « des silhouettes ») et enfin d'autres éléments (« des éléments de la nature »). Elle ne parle ni des outils du peintre ni de ses affiches."
   },
   {
    "id": "ceb-2021-l4-q21",
@@ -2550,7 +2580,7 @@
      "la nationalité italienne"
     ]
    ],
-   "explication": "L'Atomium a été construit pour l'exposition universelle de 1958. Les deux héros les plus populaires sont Tchantchès et Nanesse. Les moines qui ont construit l'abbaye d'Orval étaient italiens."
+   "explication": "Atomium : « construction […] qui date de l'Exposition universelle de 1958 ». Marionnettes : « Tchantchès et Nanesse sont les héros les plus populaires » (Charlemagne est un personnage clé, mais pas un de ces deux héros). Orval : l'abbaye a été « construite par des moines italiens »."
   },
   {
    "id": "ceb-2021-l4-q21b",
@@ -2603,7 +2633,7 @@
     "Informer sur le patrimoine en Wallonie et à Bruxelles."
    ],
    "reponse": 3,
-   "explication": "C'est un guide : il informe."
+   "explication": "Le miniguide présente des richesses du patrimoine dans chaque province et à Bruxelles : son but est d'informer. Il n'oblige à rien, ne cherche pas à prouver que la peinture est le plus bel art et ne raconte pas surtout des histoires pour émouvoir."
   },
   {
    "id": "ceb-2021-l4-q2a",
@@ -2625,7 +2655,7 @@
     "un artiste peintre connu"
    ],
    "reponse": 1,
-   "explication": "Le portrait est celui d'Adolphe Sax, compositeur et créateur d'instruments (page 9 du miniguide)."
+   "explication": "Ce portrait est celui qui illustre la page d'Adolphe Sax dans le miniguide. Le texte dit que ses aptitudes musicales lui ont permis de « devenir compositeur, chef d'orchestre et même créateur d'instruments » : c'est un compositeur de musique."
   },
   {
    "id": "ceb-2021-l4-q9",
@@ -2641,7 +2671,7 @@
     "liv4-p07"
    ],
    "reponseModele": "a) Il fallait choisir la peinture 2 (1 pt). b) Ta justification doit parler d'un bonhomme, d'un chapeau ou d'éléments de la nature, comme chez Folon (1 pt). Toute idée allant dans ce sens est acceptée.",
-   "explication": "Folon dessine de petits bonshommes à chapeau et des éléments de la nature (arbre, oiseau)."
+   "explication": "La peinture 2 montre un bonhomme coiffé d'un chapeau, dans des couleurs douces. La justification doit reprendre un élément du texte, par exemple « de drôles de petits bonshommes souvent coiffés d'un chapeau » ou les éléments de la nature."
   },
   {
    "id": "ceb-2021-l5-q1",
@@ -2670,7 +2700,7 @@
      "13"
     ]
    ],
-   "explication": "Relief de l'Europe : 8-9 ; climats du monde : 24 ; zone euro : 13.",
+   "explication": "On cherche d'abord le bon territoire, puis le bon thème. Les montagnes de France : partie Europe, « Relief », pages 8-9 (le relief du monde, page 21, est aussi accepté). Le climat de l'Amérique du Sud : partie Monde, « Climat », page 24. Payer en euros en Croatie : partie Europe, « Zone euro », page 13.",
    "documents": [
     "liv5-p03"
    ]
@@ -2703,7 +2733,7 @@
     ],
     2
    ],
-   "explication": "16e siècle : Temps modernes (le corrigé accepte aussi le Moyen Âge pour la gravure). 11e siècle : Moyen Âge.",
+   "explication": "Le 16e siècle (années 1501 à 1600) fait partie des Temps modernes, qui commencent avec l'invention de l'imprimerie et la découverte de l'Amérique ; on accepte aussi le Moyen Âge pour cette image. Le 11e siècle (années 1001 à 1100) est en plein Moyen Âge, l'époque des châteaux forts.",
    "documents": [
     "liv5-p04"
    ]
@@ -2726,7 +2756,7 @@
     "Les premières peintures rupestres"
    ],
    "reponse": 3,
-   "explication": "César conquiert nos régions en 57 avant J.-C. : c'est l'Antiquité."
+   "explication": "L'Antiquité commence avec l'invention de l'écriture et se termine vers 476. Chez nous, Jules César conquiert la Gaule et nos régions vers 57 avant J.-C. : c'est l'arrivée des Romains. Les peintures rupestres datent de la Préhistoire ; Colomb et Gutenberg, de la fin du 15e siècle ; la Première Guerre mondiale, de l'Époque contemporaine."
   },
   {
    "id": "ceb-2021-l5-q3d",
@@ -2745,7 +2775,7 @@
     "Époque contemporaine"
    ],
    "reponse": 2,
-   "explication": "Les Temps modernes vont de 1492 environ à 1789."
+   "explication": "Toutes les dates (1487, 1492, 1538, 1769) se trouvent entre 1450 et 1789, les limites des Temps modernes sur la ligne du temps. Le Moyen Âge se termine avant et l'Époque contemporaine commence après, avec la Révolution française de 1789."
   },
   {
    "id": "ceb-2021-l5-q3e",
@@ -2771,7 +2801,7 @@
     1,
     0
    ],
-   "explication": "Vinci et Colomb vivent en même temps. Mercator : 16e s., Watt : 18e-19e s. 1819 appartient au 19e siècle."
+   "explication": "Vinci (1452-1519) et Colomb (1451-1506) ont vécu en même temps : ils ont pu se rencontrer. Mercator (1512-1594) vit au 16e siècle et Watt (1736-1819) aux 18e et 19e siècles : pas le même siècle. Watt meurt en 1819 ; les années 1801 à 1900 forment le 19e siècle."
   },
   {
    "id": "ceb-2021-l5-q5a",
@@ -2793,7 +2823,7 @@
     "à l'est du musée Folon."
    ],
    "reponse": 3,
-   "explication": "Liège est à l'est de La Hulpe (Brabant wallon)."
+   "explication": "Sur la carte du sommaire, le musée Folon est à La Hulpe (Brabant wallon), au centre du pays. Liège est plus à droite sur la carte, donc à l'est du musée."
   },
   {
    "id": "ceb-2021-l5-q5a2",
@@ -2815,7 +2845,7 @@
     "de l'est"
    ],
    "reponse": 1,
-   "explication": "Binche (Hainaut) est au sud de Bruxelles."
+   "explication": "Sur la carte du sommaire, l'Atomium est à Bruxelles et Binche se trouve dans le Hainaut, plus bas sur la carte. Comme le nord est en haut, aller vers le bas, c'est prendre la direction du sud."
   },
   {
    "id": "ceb-2021-l5-q5b",
@@ -2834,7 +2864,7 @@
     "la France",
     "France"
    ],
-   "explication": "L'abbaye est « à un kilomètre de la frontière française »."
+   "explication": "Le miniguide dit que l'abbaye d'Orval se trouve « au sud de la Belgique, à un kilomètre de la frontière française ». Le pays voisin le plus proche est donc la France."
   },
   {
    "id": "ceb-2021-l5-q5c",
@@ -2868,7 +2898,7 @@
     1,
     2
    ],
-   "explication": "Bruxelles-Liège, c'est l'A3 (l'A27 est près de Verviers et Malmedy) : faux, et la carte 1 (routes) le montre. Liège-Namur-Dinant en train : vrai, la carte 2 (chemin de fer) le montre. Charleroi-Liège : train (carte 2) ou autoroute A15 (carte 1) : vrai, avec les deux cartes."
+   "explication": "Bruxelles-Liège en car : l'autoroute est l'A3, l'A27 passe près de Verviers et Malmedy : faux, la carte 1 (routes) le montre. Liège-Namur-Dinant en train : vrai, le réseau ferroviaire de la carte 2 le montre. Charleroi-Liège : vrai en train (carte 2) et par l'autoroute A15 (carte 1), il faut donc les deux cartes."
   },
   {
    "id": "ceb-2021-l5-q6a",
@@ -2894,11 +2924,14 @@
     "Document C (carte 1778)"
    ],
    "reponse": [
-    1,
+    [
+     1,
+     0
+    ],
     1,
     2
    ],
-   "explication": "Le plan B indique les voies ferrées et les noms ; seule la carte de 1778 montre le 18e siècle."
+   "explication": "Le plan B (2019) indique les voies de chemin de fer et les noms des lieux : on y voit la ligne au sud de la Meuse et le cimetière de Robermont au sud de Bressoux. Pour savoir comment était le lieu au 18e siècle, il faut la carte C, qui date de 1778."
   },
   {
    "id": "ceb-2021-l5-q6b",
@@ -2923,7 +2956,7 @@
     1,
     3
    ],
-   "explication": "Une grande ville : urbain et très humanisé.",
+   "explication": "La photo A montre une ville remplie de maisons, d'immeubles, de routes et de ponts : le lieu est urbain (c'est une ville, pas la campagne) et très humanisé (l'Homme l'a beaucoup transformé). À l'épreuve, 1 point en moins par réponse en trop.",
    "parReponse": true
   },
   {
@@ -2959,7 +2992,7 @@
     2,
     3
    ],
-   "explication": "Charrette à cheval sur la photo ancienne ; lampadaire et voitures garées sur la photo récente ; des trottoirs pour les piétons se voient sur les deux photos ; aucun nom de rue n'est visible.",
+   "explication": "Sur la photo ancienne, on voit une charrette tirée par un cheval. Sur la photo récente, on voit des lampadaires et des voitures garées le long de la rue. Les deux photos montrent des trottoirs pour les piétons. Aucun nom de rue n'est visible : on ne peut pas savoir s'il a changé.",
    "remarque": "Le correctif officiel neutralise cette question dans la version V1 (Arial 20) seulement (0 point)."
   },
   {
@@ -2981,7 +3014,7 @@
     "Environ 6 mois"
    ],
    "reponse": 0,
-   "explication": "« Les femelles fécondées portent leur petit pendant environ 8 mois. »"
+   "explication": "Le portfolio dit : « Les femelles fécondées portent leur petit pendant environ 8 mois, c'est la gestation. » Le calendrier le confirme : de septembre-octobre à mai-juin, cela fait environ 8 mois, et non 8 semaines."
   },
   {
    "id": "ceb-2021-l5-q11a",
@@ -3005,7 +3038,7 @@
     "un document écrit reconstitué."
    ],
    "reponse": 5,
-   "explication": "C'est un texte, refait à l'identique en 2020 : un document écrit reconstitué."
+   "explication": "C'est un texte imprimé, donc un document écrit. La note sous l'affiche dit : « Document reproduit à l'identique en 2020 ». Ce n'est donc pas l'affiche originale de 1940, mais une copie : un document écrit reconstitué."
   },
   {
    "id": "ceb-2021-l5-q11b",
@@ -3049,7 +3082,7 @@
     "L'indépendance de la Belgique"
    ],
    "reponse": 3,
-   "explication": "L'Allemagne envahit la Belgique le 10 mai 1940 : Seconde Guerre mondiale (1939-1945)."
+   "explication": "L'avis date du 12 mai 1940 et demande aux jeunes hommes de partir immédiatement. La Seconde Guerre mondiale a duré de 1939 à 1945 : l'Allemagne a envahi la Belgique le 10 mai 1940. La Première Guerre mondiale, elle, s'est déroulée de 1914 à 1918."
   },
   {
    "id": "ceb-2021-l5-q11d",
@@ -3071,7 +3104,7 @@
     "entre 1916 et 1930"
    ],
    "reponse": 1,
-   "explication": "1940 − 30 = 1910 et 1940 − 16 = 1924."
+   "explication": "L'avis concerne les hommes « âgés de plus de 16 ans et de moins de 30 ans » en 1940. 1940 − 30 = 1910 et 1940 − 16 = 1924 : ils sont nés entre 1910 et 1924."
   },
   {
    "id": "ceb-2021-l5-q11e",
@@ -3105,7 +3138,7 @@
     0,
     1
    ],
-   "explication": "Jean a environ 12 ans et Gérard 34 : hors de 16-30 ans, on le déduit. Le transport gratuit et le nom H. Denis sont écrits. La taille n'est pas mentionnée."
+   "explication": "Jean (environ 12 ans) et Gérard (34 ans) n'ont pas entre 16 et 30 ans : ce n'est pas écrit, mais on le déduit. Le transport gratuit (« admis au transport gratuit sur tous les chemins de fer ») et le nom « H. Denis » sont écrits. L'avis ne parle jamais de la taille : on ne peut rien en déduire."
   },
   {
    "id": "ceb-2021-l5-q3a",
@@ -3116,7 +3149,8 @@
    "enonce": "Colorie la durée de vie de Léonard de Vinci sur la ligne du temps.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Léonard de Vinci a vécu de 1452 à 1519. Sur la ligne graduée de 10 en 10 ans, chaque petit trait vaut 1 an : on colorie à partir de 2 traits après 1450 jusqu'à 9 traits après 1510."
   },
   {
    "id": "ceb-2021-l5-q3b",
@@ -3138,7 +3172,7 @@
     "Ligne C"
    ],
    "reponse": 2,
-   "explication": "Les dates vont de 1487 à 1769. La ligne A s'arrête au 15e siècle et la ligne B commence en 1600 : seule la ligne C (de 1500 à 1800) permet de situer les quatre dates."
+   "explication": "Les dates vont de 1487 à 1769. La ligne A s'arrête à la fin du 15e siècle (1500) et la ligne B commence en 1600 : elles ne peuvent pas contenir toutes les dates. La ligne C commence un peu avant 1500 et dépasse 1800 : elle permet de placer 1487, 1492, 1538 et 1769."
   },
   {
    "id": "ceb-2021-l5-q3c",
@@ -3149,7 +3183,8 @@
    "enonce": "Colorie la période des découvertes sur la ligne du temps.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les quatre découvertes ont lieu entre 1487 et 1769. Sur cette ligne, la période qui les contient va de 1450 à 1789 : ce sont les Temps modernes. On colorie donc de 1450 à 1789."
   },
   {
    "id": "ceb-2021-l5-q4",
@@ -3184,7 +3219,7 @@
     ],
     1
    ],
-   "explication": "La photo 1 montre l'Atomium : un monument. La photo 2 montre une sculpture (on accepte aussi « monument »). La photo 3 est une peinture."
+   "explication": "Photo 1 : l'Atomium, un bâtiment construit pour l'Exposition universelle, est un monument. Photo 2 : une grande statue dans une rue est une sculpture (on accepte aussi monument). Photo 3 : l'œuvre de Folon est une peinture (une aquarelle)."
   },
   {
    "id": "ceb-2021-l5-q6c",
@@ -3220,10 +3255,11 @@
    "numero": "6d",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Trace le trajet entre les deux musées de Liège.",
+   "enonce": "Dans Liège, des élèves se rendent du Musée de la Vie wallonne au Musée du Grand Curtius. Voici l'itinéraire qu'ils suivent : rue des Mineurs ; 2e rue à gauche ; 2e rue à droite ; 1re rue à gauche ; tout droit jusqu'au rondpoint, sortie Quai de Maestricht ; arrivée au Grand Curtius. Trace leur trajet en vert sur le plan.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On suit les consignes dans l'ordre en comptant les rues : depuis le Musée de la Vie wallonne, la rue des Mineurs, puis la 2e rue à gauche (Féronstrée), la 2e rue à droite (rue Velbruck), la 1re rue à gauche (La Batte) et, au rondpoint, la sortie Quai de Maestricht jusqu'au Grand Curtius."
   },
   {
    "id": "ceb-2021-l5-q7",
@@ -3251,7 +3287,7 @@
      "2"
     ]
    ],
-   "explication": "L'étiquette A désigne le bâtiment 5 (le réfectoire), l'étiquette B le bâtiment 3 (la brasserie) et l'étiquette C le bâtiment 2 (le cloitre)."
+   "explication": "On repère d'abord l'église (1), puis on compare la place des bâtiments autour du cloitre. Sur la maquette, A est le grand bâtiment situé à l'opposé de l'église, de l'autre côté du cloitre : le réfectoire (5). Sur le plan, B est le bâtiment isolé en haut à gauche : la brasserie (3). C est la cour carrée au centre : le cloitre (2)."
   },
   {
    "id": "ceb-2021-l5-q9a",
@@ -3278,7 +3314,7 @@
      "4"
     ]
    ],
-   "explication": "Nice est dans le sud-est de la France (5), Cologne dans l'ouest de l'Allemagne (1) et Venise dans le nord-est de l'Italie (4)."
+   "explication": "Nice est une ville du sud-est de la France, au bord de la Méditerranée : n° 5. Cologne est dans l'ouest de l'Allemagne, près de la Belgique : n° 1. Venise est dans le nord-est de l'Italie, au bord de la mer Adriatique : n° 4."
   },
   {
    "id": "ceb-2021-l5-q9b",
@@ -3335,7 +3371,7 @@
      "L"
     ]
    ],
-   "explication": "Premier planisphère : l'Amérique est l'étiquette C et l'Asie l'étiquette B. Deuxième : l'Asie est l'étiquette F et l'Afrique l'étiquette I. Troisième : l'océan Atlantique est l'étiquette K et l'océan Pacifique l'étiquette L."
+   "explication": "Premier planisphère : l'étiquette C est entre l'Amérique du Nord et l'Amérique du Sud, et B au milieu de l'Asie (A est sur l'Europe, D sur l'Afrique, E sur l'Océanie). Deuxième planisphère, centré sur le Pacifique : l'Asie est à gauche (F) et l'Afrique à droite (I). Troisième : K est entre l'Amérique et l'Europe (Atlantique), L entre l'Asie et l'Amérique (Pacifique) ; M est dans l'océan Indien."
   },
   {
    "id": "ceb-2021-l5-q10a",
@@ -3354,7 +3390,7 @@
     "le sanglier",
     "un sanglier"
    ],
-   "explication": "Les cases grises de janvier ne concernent que le sanglier."
+   "explication": "Les cases grises montrent les accouplements. Dans la colonne « Jan. », seule la ligne du sanglier a une case grise : il s'accouple de fin novembre à janvier."
   },
   {
    "id": "ceb-2021-l5-q10b",
@@ -3373,7 +3409,7 @@
     "le chevreuil",
     "un chevreuil"
    ],
-   "explication": "La gestation dure du mois d'accouplement (case grise) au mois de mise bas (case noire) : c'est chez le chevreuil que cette durée est la plus longue."
+   "explication": "La gestation va de l'accouplement (gris) à la mise bas (noir). Chevreuil : de juillet-aout à avril-mai, environ 9 mois. Cerf : de septembre-octobre à mai-juin, environ 8 mois. Daim : environ 7 mois. Mouflon et sanglier : environ 5 et 4 mois. C'est le chevreuil qui a la plus longue gestation."
   },
   {
    "id": "ceb-2021-l6-q2",
@@ -3415,7 +3451,7 @@
     0,
     0
    ],
-   "explication": "Un cahier ≈ 100 g, un seau ≈ 10 l, une gomme ≈ 10 cm³."
+   "explication": "Un cahier pèse environ 100 g, comme une plaque de chocolat ; 10 g serait le poids de quelques feuilles et 1 000 g celui d'un gros livre. Un seau contient environ 10 l d'eau. Une gomme est un petit bloc d'environ 4 cm × 2 cm × 1 cm, soit à peu près 10 cm³."
   },
   {
    "id": "ceb-2021-l6-q4",
@@ -3450,7 +3486,7 @@
      "kilogramme"
     ]
    ],
-   "explication": "déci = 1/10, milli = 1/1000, kilo = 1000.",
+   "explication": "Le préfixe donne la valeur : déci = un dixième, milli = un millième, kilo = mille. Un dixième de litre est un décilitre (dl), un millième de mètre est un millimètre (mm) et mille grammes font un kilogramme (kg). « Kilo » seul ne suffit pas : il faut le nom complet de l'étalon.",
    "groupes": [
     [
      0,
@@ -3623,7 +3659,7 @@
      "entre 20 et 34"
     ]
    ],
-   "explication": "Capacité : 72 l, 100 l ou 100 ml ; longueur : 60, 30 ou 40 cm ; masse : 250 g ; durée : 8 jours ou 9 jours (du 16 au 24 juin) ; température : toute valeur de 20 à 34 °C indiquée dans le document convient."
+   "explication": "On prend chaque fois un nombre suivi de son étalon. Capacité (en litres) : l'aquarium de 72 l ou le flacon de 100 ml. Longueur : une dimension de l'aquarium, 60, 30 ou 40 cm (une seule). Masse : la boite de 250 g. Durée : l'offre va du 16 au 24 juin, soit 8 ou 9 jours. Température : le chauffage se règle entre 20 °C et 34 °C."
   },
   {
    "id": "ceb-2021-l6-q6a",
@@ -3640,7 +3676,7 @@
    ],
    "reponse": 50,
    "unite": "jours",
-   "explication": "250 : 5 = 50 jours."
+   "explication": "La boite contient 250 g et on en utilise 5 g par jour. On cherche combien de fois 5 g il y a dans 250 g : 250 : 5 = 50. La boite dure 50 jours."
   },
   {
    "id": "ceb-2021-l6-q6b",
@@ -3659,7 +3695,7 @@
     "31 juillet"
    ],
    "reponse": 1,
-   "explication": "Du 17 au 30 juin : 14 jours ; juillet : 31 jours (45) ; encore 5 jours en aout : le 5 aout."
+   "explication": "Le 17 juin est le 1er jour. Du 17 au 30 juin, cela fait 14 jours. Avec les 31 jours de juillet, on arrive à 45 jours. Il en manque 5 : le 50e jour est le 5 aout."
   },
   {
    "id": "ceb-2021-l6-q7",
@@ -3677,7 +3713,7 @@
    "reponse": 37.17,
    "tolerance": 0.005,
    "unite": "€",
-   "explication": "17 + 3,90 + 13,50 + 6,90 = 41,30 € ; 10 % = 4,13 € ; 41,30 − 4,13 = 37,17 €."
+   "explication": "2 boites de nourriture : 2 × 8,50 = 17 €. Total : 17 + 3,90 + 13,50 + 6,90 = 41,30 €. La ristourne de 10 % vaut 41,30 : 10 = 4,13 €. Il paie 41,30 − 4,13 = 37,17 €."
   },
   {
    "id": "ceb-2021-l6-q8",
@@ -3692,7 +3728,7 @@
    "reponse": 1.5,
    "tolerance": 0.005,
    "unite": "€",
-   "explication": "Aqua Passion : 5 × 18,90 = 94,50 €. Dori : 3 × 31 = 93 €. Différence : 1,50 €."
+   "explication": "Chez Aqua Passion, 15 poissons, c'est 5 lots de 3 : 5 × 18,90 = 94,50 €. Chez Dori, c'est 3 lots de 5 : 3 × 31 = 93 €. La différence est de 94,50 − 93 = 1,50 €."
   },
   {
    "id": "ceb-2021-l6-q9",
@@ -3721,7 +3757,7 @@
      "27,00"
     ]
    ],
-   "explication": "13,50 : 5 = 2,70 € ; 8,10 : 2,70 = 3 ; 2 × 13,50 = 27 €."
+   "explication": "1 poisson : 13,50 : 5 = 2,70 €. Pour 8,10 €, on cherche combien de fois 2,70 € : 8,10 : 2,70 = 3 poissons. 10 poissons, c'est 2 fois 5 poissons : 2 × 13,50 = 27 €."
   },
   {
    "id": "ceb-2021-l6-q10",
@@ -3745,7 +3781,7 @@
      "3"
     ]
    ],
-   "explication": "En ml : 210, 500, 175, 300. Le plus : n° 2 ; le moins : n° 3."
+   "explication": "On met toutes les quantités dans la même unité, en ml : récipient 1 : environ 210 ml ; récipient 2 : environ 500 ml ; récipient 3 : environ 1,75 dl = 175 ml ; récipient 4 : environ 0,3 l = 300 ml. Le plus rempli est le 2 et le moins rempli le 3."
   },
   {
    "id": "ceb-2021-l6-q13a",
@@ -3765,7 +3801,7 @@
     "75 cm"
    ],
    "reponse": 3,
-   "explication": "Circonférence ≈ 3,14 × 18 ≈ 56,5 cm, donc environ 57 cm.",
+   "explication": "Le ruban fait le tour du bas du chapeau, qui est un cercle de 18 cm de diamètre. La circonférence vaut le diamètre × 3,14 : 18 × 3,14 ≈ 56,5 cm, donc environ 57 cm. 18 cm, c'est seulement le diamètre, et 25 cm le côté du carton.",
    "documents": [
     "liv6-p10"
    ]
@@ -3781,7 +3817,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-aires-perimetres",
    "reponse": 4,
-   "explication": "50 : 25 = 2 et 70 : 25 = 2 (reste 20 cm) : 2 × 2 = 4 carrés."
+   "explication": "Dans la largeur de 50 cm, on place 50 : 25 = 2 carrés. Dans la longueur de 70 cm, on en place 2 aussi (2 × 25 = 50 cm, il reste 20 cm, trop peu pour un 3e carré). On découpe donc 2 × 2 = 4 carrés entiers."
   },
   {
    "id": "ceb-2021-l6-q15",
@@ -3795,7 +3831,7 @@
    "fiche": "ma-volumes",
    "reponse": 16,
    "unite": "caisses",
-   "explication": "Une caisse : 0,5 × 0,5 × 0,25 = 0,0625 m³. 1 : 0,0625 = 16 caisses."
+   "explication": "On travaille dans la même unité : 50 cm = 0,5 m et 25 cm = 0,25 m. Une caisse : 0,5 × 0,5 × 0,25 = 0,0625 m³. Dans 1 m³ : 1 : 0,0625 = 16 caisses. On peut aussi voir que 1 m contient 2 fois 50 cm et 4 fois 25 cm : 2 × 2 × 4 = 16."
   },
   {
    "id": "ceb-2021-l6-q17a",
@@ -3814,7 +3850,7 @@
     "du 13 au 17 juillet"
    ],
    "reponse": 1,
-   "explication": "Semaines : 6-10, 13-17, 20-24, 27-31 juillet (4e), 3-7 aout (5e).",
+   "explication": "Les stages commencent le lundi 6 juillet. Les semaines sont : 1re du 6 au 10 juillet, 2e du 13 au 17, 3e du 20 au 24, 4e du 27 au 31 juillet, 5e du 3 au 7 aout. Le théâtre a lieu la 4e ou la 5e semaine : parmi les choix, seule la semaine du 27 au 31 juillet convient.",
    "documents": [
     "liv6-p16"
    ]
@@ -3839,7 +3875,7 @@
     "23 août 2021",
     "23 aout 2021"
    ],
-   "explication": "Dimanches d'aout : 2, 9, 16, 23. Le 4e est le 23/08/2020.",
+   "explication": "La kermesse a lieu le 4e dimanche d'aout. Dans le calendrier d'aout, les dimanches (D) sont le 2, le 9, le 16 et le 23 : le 4e est le 23 aout 2020, soit le 23/08/2020.",
    "documents": [
     "liv6-p16"
    ]
@@ -3883,7 +3919,7 @@
     "dimanche"
    ],
    "reponse": 1,
-   "explication": "Le lendemain d'un lundi est un mardi.",
+   "explication": "Dans le calendrier, le 31 aout est un lundi (L). Le jour suivant, le 1er septembre, est donc un mardi.",
    "documents": [
     "liv6-p16"
    ]
@@ -3903,7 +3939,7 @@
    ],
    "reponse": 325,
    "unite": "m",
-   "explication": "Il y a 13 intervalles de 25 m entre le poteau A et le poteau B : 13 × 25 = 325 m."
+   "explication": "On compte les espaces entre les poteaux, pas les poteaux : entre A et B, il y a 13 espaces de 25 m. 13 × 25 = 325 m. Compter 14 poteaux donnerait une réponse trop grande de 25 m."
   },
   {
    "id": "ceb-2021-l6-q11",
@@ -3949,7 +3985,7 @@
    "fiche": "ma-fractions",
    "numerisable": false,
    "reponseModele": "La batterie est chargée aux trois quarts (3/4 = 75 %) : colorie trois quarts de chaque représentation. Toute forme de représentation de 3/4 est acceptée.",
-   "explication": "75 % = 75/100 = 3/4.",
+   "explication": "La batterie représentée a 3 cases pleines sur 4 : elle est chargée aux trois quarts (3/4 = 75 %). Dans chaque autre représentation, on colorie 3/4 : par exemple 3 parts sur 4 égales, ou les trois quarts de la longueur de la barre.",
    "remarque": "Coloriage sur le dessin du livret : question laissée en version papier."
   },
   {
@@ -3996,10 +4032,11 @@
    "numero": "16",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Géoplan : aire et périmètre de figures.",
+   "enonce": "Voici un rectangle réalisé sur un géoplan (planche à clous sur laquelle on tend des élastiques). a) Choisis la figure qui a une aire différente de celle de ce rectangle. b) Trace un quadrilatère qui a le même périmètre que la croix. c) Trace un quadrilatère qui a la même aire que le triangle.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Le rectangle couvre 3 × 2 = 6 carrés ; les parallélogrammes ont une base de 3 et une hauteur de 2, soit 6 aussi. Le carré penché a deux diagonales de 4 : 4 × 4 : 2 = 8 carrés, c'est lui qui est différent. b) La croix a un périmètre de 12 cm : par exemple un carré de 3 cm de côté. c) Le triangle a une base de 4 cm et une hauteur de 2 cm : 4 × 2 : 2 = 4 cm², par exemple un carré de 2 cm de côté."
   },
   {
    "id": "ceb-2021-l6-q18",
@@ -4031,7 +4068,7 @@
      "34cm"
     ]
    ],
-   "explication": "La seringue contient 35 ml, la balle mesure 4 cm de diamètre et le contour du rouleau mesure environ 34 cm."
+   "explication": "a) Le liquide s'arrête au milieu entre 30 et 40 ml : 35 ml. b) La balle est serrée entre les becs du pied à coulisse, qui s'arrête à 4 sur la règle : 4 cm. c) Sur le rouleau, la graduation 4 se trouve juste à côté de la graduation 38 du tour suivant : un tour mesure 38 − 4 = 34 cm."
   },
   {
    "id": "ceb-2021-l6-q19",
@@ -4039,10 +4076,11 @@
    "numero": "19",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Verres de jus : fractions.",
+   "enonce": "a) Voici un verre contenant 1/2 de jus d'orange. On ajoute la moitié de la quantité de jus d'orange déjà présent dans ce verre. Choisis la fraction de verre obtenue (1/3, 1/4, 3/4 ou 1/8). Voici un verre contenant 1/2 de cacao. On vide la moitié de la quantité de cacao présent dans ce verre. Choisis la fraction de verre qui reste (1/3, 1/4, 3/4 ou 1/8). b) Observe ces verres de jus d'orange : 1/2 + 1/8 + 1/4. Colorie le niveau de jus dans le dernier verre puis écris la fraction dans l'étiquette.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) La moitié de 1/2, c'est 1/4. Jus : 1/2 + 1/4 = 2/4 + 1/4 = 3/4 du verre. Cacao : 1/2 − 1/4 = 1/4 du verre. b) On met tout en huitièmes : 1/2 = 4/8 et 1/4 = 2/8, donc 4/8 + 1/8 + 2/8 = 7/8. On colorie le verre jusqu'à la 7e graduation sur 8."
   },
   {
    "id": "ceb-2021-l7-q1",
@@ -4067,7 +4105,7 @@
     "Mon grand-père, ce héros !"
    ],
    "reponse": 1,
-   "explication": "La grand-mère fait comprendre à Brigitte qu'un oiseau doit vivre libre."
+   "explication": "Toute l'histoire montre que les oiseaux doivent rester libres : la grand-mère dit « Les oiseaux sont bien dans les arbres ! » et l'histoire du grand-père prisonnier fait comprendre à Brigitte qu'un oiseau en cage est malheureux. Les autres titres ne parlent que d'un détail ou de choses absentes du texte."
   },
   {
    "id": "ceb-2021-l7-q2",
@@ -4089,7 +4127,7 @@
     "une pie"
    ],
    "reponse": 0,
-   "explication": "Le pronom « que » reprend « un verdier »."
+   "explication": "Dans la phrase, le pronom « que » reprend le dernier oiseau nommé : « un verdier un peu espiègle que, le matin, elle était toute surprise de ne pas trouver perché ». Les pies et le rouge-gorge peuplent seulement ses rêves."
   },
   {
    "id": "ceb-2021-l7-q3",
@@ -4121,7 +4159,7 @@
     2,
     2
    ],
-   "explication": "Brigitte veut garder l'oiseau au chaud ; la grand-mère lui répond ; puis elle raconte ce qu'elle a dit au grand-père."
+   "explication": "Brigitte veut garder les oiseaux dans la cuisine, et quand la grand-mère dit qu'ils sont bien dehors, elle répond « Mais il fait froid ! ». La grand-mère lui répond « Il ne fera pas toujours froid. ». Plus loin, la grand-mère raconte ce qu'elle a dit un jour au grand-père : « J'aimais bien entendre chanter les chardonnerets […]. »"
   },
   {
    "id": "ceb-2021-l7-q4",
@@ -4157,7 +4195,7 @@
     "gm-1"
    ],
    "reponseModele": "Elle dit que les oiseaux sont bien dans les arbres ou dans le ciel, quand ils volent. Toute idée liée à la nécessité de laisser les oiseaux en liberté est acceptée. (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
-   "explication": "La grand-mère pense que la place des oiseaux est dehors, en liberté."
+   "explication": "La grand-mère n'est pas d'accord : elle répond « Les oiseaux sont bien dans les arbres ! Voilà où ils sont bien : dans le ciel, quand ils volent. » Toute justification du texte qui dit que les oiseaux doivent être en liberté convient."
   },
   {
    "id": "ceb-2021-l7-q5",
@@ -4179,7 +4217,7 @@
     "ceux qui aiment les chardonnerets."
    ],
    "reponse": 2,
-   "explication": "Comme les gens qui enferment les oiseaux pour leur propre plaisir."
+   "explication": "La grand-mère dit cela parce que Brigitte veut mettre un oiseau dans la vieille cage. « Les autres », ce sont donc les gens qui, comme Brigitte, enferment des oiseaux dans une cage."
   },
   {
    "id": "ceb-2021-l7-q6",
@@ -4194,7 +4232,8 @@
    "documents": [
     "gm-1"
    ],
-   "reponseModele": "Parce que Brigitte veut un oiseau pour son propre plaisir, sans penser au bonheur de l'oiseau."
+   "reponseModele": "Parce que Brigitte veut un oiseau pour son propre plaisir, sans penser au bonheur de l'oiseau.",
+   "explication": "La grand-mère l'explique juste après : « ça n'est pas pour lui que tu veux un oiseau : c'est pour toi. Son bonheur, tu t'en fiches : c'est le tien qui t'intéresse. » Une bonne réponse dit que Brigitte pense à son propre plaisir et pas au bonheur de l'oiseau."
   },
   {
    "id": "ceb-2021-l7-q7",
@@ -4209,7 +4248,8 @@
    "documents": [
     "gm-1"
    ],
-   "reponseModele": "Parce que sa grand-mère l'a traitée d'égoïste (et a refusé son idée)."
+   "reponseModele": "Parce que sa grand-mère l'a traitée d'égoïste (et a refusé son idée).",
+   "explication": "Juste avant, la grand-mère l'a traitée d'« égoïste » et lui a dit qu'elle ne voulait pas un oiseau mais « un jouet qui chante ». Une bonne réponse donne une de ces raisons, ou dit que la grand-mère lui refuse d'avoir un oiseau."
   },
   {
    "id": "ceb-2021-l7-q8",
@@ -4245,7 +4285,7 @@
     "gm-2"
    ],
    "reponseModele": "Le texte dit que « la température n'était pas en cause » (accepté aussi : elle avait froid dans le dos car elle allait être mal jugée, ou parce qu'elle avait peur d'être jugée). Refusé : « choquée », « fâchée », « mal à l'aise ». (0,5 point ; au total 1 point pour la case et la justification, tout ou rien.)",
-   "explication": "« Avoir froid dans le dos » veut dire ici avoir peur, pas avoir froid."
+   "explication": "Le texte dit : « La température n'était pas en cause : Brigitte avait froid dans le dos. » Elle a froid dans le dos parce qu'elle a peur : elle va « être mal jugée des oiseaux ». Dire seulement qu'elle est fâchée ou mal à l'aise ne suffit pas."
   },
   {
    "id": "ceb-2021-l7-q9",
@@ -4297,7 +4337,7 @@
     "Et pourtant,"
    ],
    "reponse": 1,
-   "explication": "« D'ailleurs » ajoute un argument : « De plus »."
+   "explication": "« Et d'ailleurs » ajoute une nouvelle raison à la précédente : après « tu t'en fiches », la grand-mère ajoute « c'est un jouet ». « De plus » a le même sens. « C'est pourquoi » annoncerait une conséquence, « Au contraire » et « Et pourtant » une opposition."
   },
   {
    "id": "ceb-2021-l7-q11",
@@ -4350,7 +4390,7 @@
     "que le chardonneret aime les graines de chanvre."
    ],
    "reponse": 1,
-   "explication": "« Élever » un animal, c'est le faire grandir chez soi."
+   "explication": "Élever un animal, c'est le nourrir et le faire grandir chez soi. Si le chardonneret « s'élève facilement », c'est qu'il vit sans difficulté en cage, chez l'Homme. Le mot n'a ici rien à voir avec « se lever » ou « monter dans les airs »."
   },
   {
    "id": "ceb-2021-l7-q13",
@@ -4372,7 +4412,7 @@
     "est parti"
    ],
    "reponse": 2,
-   "explication": "« Et puis » est un organisateur (connecteur) de temps."
+   "explication": "« Et puis » relie la phrase « Nous étions heureux. » à la suivante et montre ce qui s'est passé ensuite : « il y a eu la guerre ». « Surtout » et « Nous » ne relient pas deux phrases, et « est parti » est le verbe d'une phrase."
   },
   {
    "id": "ceb-2021-l7-q14",
@@ -4458,7 +4498,7 @@
      "grand-pere"
     ]
    ],
-   "explication": "Brigitte regarde les photos de son grand-père soldat."
+   "explication": "« Elle » reprend Brigitte, comme dans les phrases d'avant : « Brigitte se serre contre la grand-mère. Elle regarde les photos. » Sur les photos, la grand-mère a montré « ton grand-père », qui « est parti soldat » : le monsieur habillé en soldat est le grand-père."
   },
   {
    "id": "ceb-2021-l7-q17",
@@ -4481,7 +4521,7 @@
     "Parce qu'il préférait s'occuper d'autres oiseaux comme le pigeon voyageur."
    ],
    "reponse": 2,
-   "explication": "Prisonnier derrière les barbelés, il a compris ce que vit un oiseau en cage."
+   "explication": "Le grand-père a été prisonnier cinq ans : « nous étions toujours derrière les barbelés ». En revenant, il a rangé la cage sans rien dire : il ne voulait plus enfermer des oiseaux comme lui avait été enfermé. Le texte ne parle pas d'un manque de graines ni du pigeon voyageur pour expliquer son geste."
   },
   {
    "id": "ceb-2021-l7-q18",
@@ -4513,7 +4553,7 @@
     1,
     0
    ],
-   "explication": "Le texte ne parle pas du vol bas. « Ces histoires vraies ravissaient Brigitte. » « Il est resté cinq ans dans un camp. »"
+   "explication": "Le texte décrit le nid et le voyage de l'hirondelle, mais ne dit rien de son vol quand il va pleuvoir : on ne peut pas savoir. Au début, on lit « Ces histoires vraies ravissaient Brigitte » : elle les aime, c'est donc faux. La grand-mère dit du grand-père : « Il est resté cinq ans dans un camp, en Allemagne » : c'est vrai."
   },
   {
    "id": "ceb-2021-l7-q19",
@@ -4527,7 +4567,8 @@
    "documents": [
     "gm-3"
    ],
-   "reponseModele": "Elle cimente son nid avec la boue des chemins ; elle retrouve son nid et y fait une nouvelle nichée."
+   "reponseModele": "Elle cimente son nid avec la boue des chemins ; elle retrouve son nid et y fait une nouvelle nichée.",
+   "explication": "Le texte dit que l'hirondelle, « au printemps, […] cimente son nid avec la boue des chemins » et qu'elle « le retrouve au printemps suivant pour y faire une nouvelle nichée ». Il faut deux de ces actions (construire son nid, revenir des pays chauds, faire une nichée). Partir en septembre ne se passe pas au printemps."
   },
   {
    "id": "ceb-2021-l7-q20",
@@ -4555,7 +4596,7 @@
     1,
     2
    ],
-   "explication": "Pigeon : de Toulouse à Lille en une journée. Geai : casse ses œufs si son nid est découvert."
+   "explication": "Le pigeon voyageur, « lâché à Toulouse ou à Biarritz, est capable en une journée de revenir dans sa maison de Lille ou de Strasbourg » : il parcourt de grandes distances. Le geai, « voyant son nid découvert, casse ses œufs et s'en va loger ailleurs ». La boue, c'est l'hirondelle, et le grillage, le perdreau."
   },
   {
    "id": "ceb-2021-l7-q21",
@@ -4584,7 +4625,7 @@
     4,
     0
    ],
-   "explication": "« les photos » : CD. « une égoïste » : attribut (verbe être). « une bise » : CD ; « au monsieur… » : CI."
+   "explication": "« Elle regarde les photos » : sujet, verbe et un complément sans préposition (regarde quoi ? les photos), donc un complément direct. « Tu es une égoïste » : après le verbe être, « une égoïste » dit comment est le sujet, c'est un attribut du sujet. « Elle fait une bise au monsieur… » : « une bise » est un complément direct et « au monsieur… », introduit par « à », un complément indirect."
   },
   {
    "id": "ceb-2021-l7-q22",
@@ -4616,7 +4657,7 @@
     0,
     2
    ],
-   "explication": "Situation initiale : C ; déclencheur : A ; situation finale : D.",
+   "explication": "Au début, Brigitte est en convalescence chez sa grand-mère et rêve d'oiseaux (C) : c'est la situation initiale. Puis ce rêve « lui donna l'idée d'avoir un oiseau à elle » (A) : c'est l'élément déclencheur. À la fin, Brigitte a compris pourquoi les oiseaux sont mieux libres (D) : c'est la situation finale.",
    "toutOuRien": true
   },
   {
@@ -4642,7 +4683,7 @@
     "Il est inutile de conserver des objets qui ne servent plus."
    ],
    "reponse": 1,
-   "explication": "Brigitte pensait à son plaisir, pas au bonheur de l'oiseau."
+   "explication": "Brigitte voulait un oiseau pour son plaisir, et la grand-mère lui reproche : « Son bonheur, tu t'en fiches ». La leçon est de penser aussi au bonheur des autres, ici l'oiseau, avant d'agir. Les autres morales ne correspondent pas à ce qui se passe dans l'histoire."
   },
   {
    "id": "ceb-2021-l7-q24",
@@ -4666,7 +4707,7 @@
     "Donner les règles à suivre pour élever des oiseaux."
    ],
    "reponse": 2,
-   "explication": "C'est un extrait de roman : un récit émouvant."
+   "explication": "Le texte est un extrait de roman : il raconte une histoire touchante, celle de Brigitte et du grand-père prisonnier. Il ne cherche pas à donner des informations sur les oiseaux ni des règles pour les élever, et il ne pousse pas à en élever, au contraire."
   },
   {
    "id": "ceb-2021-l7-q25",
@@ -4711,7 +4752,7 @@
     "9 000"
    ],
    "reponse": 2,
-   "explication": "100 × 85 = 8 500."
+   "explication": "Pour estimer, on arrondit : 99 est presque 100, et 100 × 85 = 8 500. Le résultat exact (8 415) est un peu plus petit, mais 8 500 est l'estimation la plus proche. 850 serait 10 × 85."
   },
   {
    "id": "ceb-2021-l8-q2b",
@@ -4730,7 +4771,7 @@
     "4 800"
    ],
    "reponse": 1,
-   "explication": "1 200 : 4 = 300."
+   "explication": "On arrondit 1 213 à 1 200, un nombre facile à diviser par 4 : 1 200 : 4 = 300. 4 800 serait le résultat d'une multiplication par 4, pas d'une division."
   },
   {
    "id": "ceb-2021-l8-q2c",
@@ -4749,7 +4790,7 @@
     "24 000"
    ],
    "reponse": 1,
-   "explication": "16 000 − 8 000 = 8 000."
+   "explication": "On arrondit les deux nombres au millier : 15 896 ≈ 16 000 et 7 985 ≈ 8 000. 16 000 − 8 000 = 8 000. Les réponses 22 000 et 24 000 seraient des additions."
   },
   {
    "id": "ceb-2021-l8-q2d",
@@ -4768,7 +4809,7 @@
     "12 600"
    ],
    "reponse": 3,
-   "explication": "2 500 + 10 100 = 12 600."
+   "explication": "On arrondit : 2 537 ≈ 2 500 et 10 098 ≈ 10 100. 2 500 + 10 100 = 12 600. Le résultat dépasse forcément 10 098 + 2 000 = 12 098 : 7 600, 8 000 et 10 250 sont trop petits."
   },
   {
    "id": "ceb-2021-l8-q3a",
@@ -4782,7 +4823,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 14995,
    "tolerance": 0.0001,
-   "explication": "15 000 − 5 = 14995."
+   "explication": "On retire 5 à 15 000 : 15 000 − 5 = 14 995. Vérification : 14 995 + 5 = 15 000."
   },
   {
    "id": "ceb-2021-l8-q3b",
@@ -4796,7 +4837,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 3.1,
    "tolerance": 0.0001,
-   "explication": "3,1 × 1 = 3,1."
+   "explication": "Multiplier un nombre par 1 ne le change pas : 3,1 × 1 = 3,1."
   },
   {
    "id": "ceb-2021-l8-q3c",
@@ -4810,7 +4851,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 2.32,
    "tolerance": 0.0001,
-   "explication": "1,12 + 1,20 = 2,32."
+   "explication": "On aligne les virgules en écrivant 1,2 = 1,20 : 1,12 + 1,20 = 2,32. Écrire 1,14 serait une erreur : on n'additionne pas les centièmes avec les dixièmes."
   },
   {
    "id": "ceb-2021-l8-q3d",
@@ -4824,7 +4865,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 1355.2,
    "tolerance": 0.0001,
-   "explication": "1 736,8 − 381,6 = 1355,2."
+   "explication": "On pose la soustraction en alignant les virgules : 1 736,8 − 381,6 = 1 355,2. Vérification : 1 355,2 + 381,6 = 1 736,8."
   },
   {
    "id": "ceb-2021-l8-q3e",
@@ -4838,7 +4879,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 9,
    "tolerance": 0.0001,
-   "explication": "12 × 9 = 108."
+   "explication": "On cherche par combien diviser 108 pour obtenir 12 : c'est le nombre qui, multiplié par 12, donne 108. Comme 12 × 9 = 108, on a 108 : 9 = 12."
   },
   {
    "id": "ceb-2021-l8-q3f",
@@ -4852,7 +4893,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 480,
    "tolerance": 0.0001,
-   "explication": "8 × 60 = 480."
+   "explication": "0,8 × 600, c'est 8 dixièmes × 600 = 4 800 dixièmes, soit 480. On peut aussi diviser 600 par 10 et multiplier 0,8 par 10 : 8 × 60 = 480."
   },
   {
    "id": "ceb-2021-l8-q6a",
@@ -4871,7 +4912,7 @@
     "Les centaines"
    ],
    "reponse": 2,
-   "explication": "6 DM, 5 UM, 9 C, 8 D, 2 U, 1 d."
+   "explication": "On lit chaque chiffre dans l'ordre : 65 982,1, c'est 6 dizaines de mille, 5 unités de mille, 9 centaines, 8 dizaines, 2 unités et 1 dixième. Le 8 est juste avant le chiffre des unités : c'est le chiffre des dizaines."
   },
   {
    "id": "ceb-2021-l8-q6b",
@@ -4905,7 +4946,7 @@
    "reponse": [
     "659,821"
    ],
-   "explication": "659 unités, 821 millièmes : 659,821."
+   "explication": "Le nombre doit avoir 659 unités : la virgule se place juste après 659. Les trois chiffres suivants, 821, vont jusqu'aux millièmes (3e rang après la virgule) : 659,821."
   },
   {
    "id": "ceb-2021-l8-q7",
@@ -4946,7 +4987,7 @@
      "2×79"
     ]
    ],
-   "explication": "840 − 700 = 140 ; commutativité ; 24 : 2 et 150 × 2 ; on ajoute 5 aux deux termes ; 7,92 + 5,08 = 13 et 18 + 82 = 100 ; 98 = 100 − 2."
+   "explication": "840 = 700 + 140, deux nombres faciles à diviser par 7. On peut changer l'ordre des facteurs : 3 × 71 × 20 = 20 × 71 × 3. 300 est le double de 150, donc l'autre facteur est la moitié de 24 : 12. On ajoute 5 aux deux termes (1 995 + 5 = 2 000) : 3 627 + 5 = 3 632. 18 + 82 = 100 et 7,92 + 5,08 = 13. 98 = 100 − 2, donc 79 × 98 = 79 × 100 − 79 × 2."
   },
   {
    "id": "ceb-2021-l8-q8",
@@ -5034,7 +5075,7 @@
      "400"
     ]
    ],
-   "explication": "100 − 90 ; 300 : 30 ; 50 : 5 ; 122 − 22 ; 100 − 55,55 = 44,45 ; 1 200 : 12 ; 400 : 4."
+   "explication": "100 − 90 = 10 ; 300 : 30 = 10 ; 1/5 de 50, c'est 50 : 5 = 10. Pour les cases avec 100 : 122 − 22 = 100 ; il manque 100 − 55,55 = 44,45 ; 1 200 : 12 = 100 ; et 1/4 de 400 = 400 : 4 = 100."
   },
   {
    "id": "ceb-2021-l8-q12",
@@ -5065,7 +5106,7 @@
     1,
     2
    ],
-   "explication": "3/5 = 0,6 ; 1/4 = 0,25 ; 3/2 = 1,5 ; 1/5 = 0,2 ; 1/6 ≈ 0,17 > 0,06."
+   "explication": "On écrit chaque fraction en nombre décimal. 3/5 = 0,6, plus grand que 0,35 (attention, 0,35 n'est pas 3/5). 1/4 = 0,25 = 0,250. 3/2 = 1,5, plus grand que 1. 1/5 = 0,2. 1/6 vaut environ 0,17, plus que 6 centièmes (0,06)."
   },
   {
    "id": "ceb-2021-l8-q13",
@@ -5089,7 +5130,7 @@
     0,
     3
    ],
-   "explication": "30/50 = 0,6 ; 7/10 = 0,7 ; 24/30 = 0,8 ; 18/20 = 0,9."
+   "explication": "Pour comparer, on transforme chaque résultat en dixièmes : 30/50 = 6/10 ; 7/10 ; 24/30 = 8/10 ; 18/20 = 9/10. Du moins élevé au plus élevé : 30/50, 7/10, 24/30, 18/20. Le plus grand nombre de points (30/50) n'est pas le meilleur résultat."
   },
   {
    "id": "ceb-2021-l8-q14",
@@ -5216,7 +5257,7 @@
      "180:50=3,6"
     ]
    ],
-   "explication": "L'addition est la réciproque de la soustraction ; la division, de la multiplication."
+   "explication": "L'opération réciproque fait le chemin inverse et revient au nombre de départ. La soustraction se « défait » par une addition : 14,3 + 3,2 = 17,5. La multiplication se « défait » par une division : 180 : 50 = 3,6."
   },
   {
    "id": "ceb-2021-l8-q17a",
@@ -5234,7 +5275,7 @@
     "(3 × 26) × 75"
    ],
    "reponse": 0,
-   "explication": "75 = 25 × 3."
+   "explication": "On peut remplacer 75 par un produit qui vaut 75 : 25 × 3 = 75, donc 326 × 75 = 326 × (25 × 3). Les autres ne conviennent pas : 70 × 5 = 350 et 3 × 26 = 78, pas 326."
   },
   {
    "id": "ceb-2021-l8-q17b",
@@ -5252,7 +5293,7 @@
     "(4 × 4) × 123"
    ],
    "reponse": 2,
-   "explication": "16 = 4 × 4."
+   "explication": "On remplace 16 par un produit qui vaut 16 : 4 × 4 = 16, donc 16 × 123 = (4 × 4) × 123. Les autres produits ne font pas 16 : 10 × 6 = 60 et 8 × 8 = 64."
   },
   {
    "id": "ceb-2021-l8-q18",
@@ -5278,7 +5319,7 @@
      "10"
     ]
    ],
-   "explication": "Multiples de 6 : 6, 12. Diviseurs communs de 24 et 15 : 1, 3. 10 est multiple de 5 et divise 10."
+   "explication": "Multiples de 6 jusqu'à 15 : 6 et 12. Diviseurs de 24 : 1, 2, 3, 4, 6, 8, 12 ; diviseurs de 15 : 1, 3, 5, 15 ; ceux qui divisent les deux sont 1 et 3. Les nombres à deux chiffres multiples de 5 sont 10 et 15, mais seul 10 divise 10."
   },
   {
    "id": "ceb-2021-l8-q19",
@@ -5325,7 +5366,7 @@
     "2 × 7, 60 × 7, 500 × 7, puis on additionne les trois produits"
    ],
    "reponse": 2,
-   "explication": "3 500 + 420 + 14 = 3 934 et 7 × 562 = 3 934 fonctionnent ; 540 et 21 ne décomposent pas 3 934."
+   "explication": "Pour vérifier, il faut retrouver 3 934. 562 × 7 = 3 934. 3 500 + 420 + 14 = 3 934, donc les trois quotients additionnés donnent 562. 2 × 7 + 60 × 7 + 500 × 7 = 562 × 7. Mais 540 + 21 = 561 : cette démarche ne décompose pas 3 934."
   },
   {
    "id": "ceb-2021-l8-q21",
@@ -5349,7 +5390,7 @@
      "8 × 8 × 8 = 512"
     ]
    ],
-   "explication": "8 × 8 = 64 et 8 × 8 × 8 = 512."
+   "explication": "Avec 8, une réglette contient 8 petits cubes. Une plaquette est formée de 8 réglettes : 8 × 8 = 64. Un cube est formé de 8 plaquettes : 8 × 8 × 8 = 64 × 8 = 512."
   },
   {
    "id": "ceb-2021-l8-q1",
@@ -5357,10 +5398,11 @@
    "numero": "1",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Calcul mental dicté.",
+   "enonce": "Écris le résultat des cinq opérations dictées (tu as 6 secondes pour chacune) : a) 450 + 90 ; b) 60 × 4 ; c) la moitié de 170 ; d) 105 − 95 ; e) 10 − 1,5.",
    "points": 5,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) 450 + 50 = 500, puis + 40 : 540. b) 6 × 4 = 24, donc 60 × 4 = 240. c) La moitié de 160 est 80 et celle de 10 est 5 : 85. d) De 95 à 105, il y a 10. e) 10 − 1 = 9, puis − 0,5 : 8,5."
   },
   {
    "id": "ceb-2021-l8-q4",
@@ -5368,11 +5410,12 @@
    "numero": "4",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Abaque : écris le nombre et ajoute des jetons.",
+   "enonce": "Des nombres peuvent être représentés avec des jetons dans un abaque (colonnes CM, DM, UM, C, D, U, d, c). a) Écris en chiffres et en lettres le nombre représenté dans l'abaque. b) Si on ajoute un jeton dans la colonne des dizaines, quel nombre obtient-on ? Et si on ajoute un jeton dans la colonne des dixièmes ? c) Dessine 3 jetons pour obtenir un nombre compris entre 100 000 et 200 000 (ligne 1), entre 1 et 2 (ligne 2), entre 0,1 et 0,2 (ligne 3).",
    "points": 6,
    "corrigeVerifie": false,
    "numerisable": false,
-   "remarque": "Toute la question repose sur l'abaque du livret, que nous n'avons pas : non numérisable. Officiel (6 pts) : 4a, 1 pt tout ou rien : 4 103,92 ; quatre-mille-cent-trois unités (et) nonante-deux centièmes (ne pas accepter « virgule ») ; 4b, 2 x 1 pt : 4 113,92 et 4 104,02 ; 4c, 3 x 1 pt : trois lignes de jetons à dessiner (réponse libre correspondant à la situation demandée)."
+   "remarque": "Toute la question repose sur l'abaque du livret, que nous n'avons pas : non numérisable. Officiel (6 pts) : 4a, 1 pt tout ou rien : 4 103,92 ; quatre-mille-cent-trois unités (et) nonante-deux centièmes (ne pas accepter « virgule ») ; 4b, 2 x 1 pt : 4 113,92 et 4 104,02 ; 4c, 3 x 1 pt : trois lignes de jetons à dessiner (réponse libre correspondant à la situation demandée).",
+   "explication": "a) Le nombre est 4 103,92 : « quatre-mille-cent-trois unités (et) nonante-deux centièmes » (pas « virgule »). b) Un jeton de plus en D ajoute 10 : 4 113,92. Un jeton de plus en d ajoute 0,1 : 9 dixièmes + 1 = 10 dixièmes = 1 unité, donc 4 104,02. c) Ligne 1 : 1 jeton en CM et 2 jetons dans des colonnes plus à droite (par exemple 120 000). Ligne 2 : 1 jeton en U et 2 jetons en d ou en c (par exemple 1,2). Ligne 3 : 1 jeton en d et 2 jetons en c (0,12)."
   },
   {
    "id": "ceb-2021-l8-q5",
@@ -5383,7 +5426,8 @@
    "enonce": "Situe 0,5 sur les droites graduées.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On cherche d'abord la valeur d'un intervalle. Droite 1 : de 0 à 1, il y a 10 intervalles de 0,1 : 0,5 est au 5e trait après 0. Droite 2 : de 0,6 à 0,7, il y a 5 intervalles de 0,02 : 0,5 est 0,1 avant 0,6, donc 5 traits à gauche de 0,6. Droite 3 : de 1/4 à 1, il y a 3 intervalles de 1/4 : 0,5 = 2/4 est au trait juste après 1/4."
   },
   {
    "id": "ceb-2021-l8-q9",
@@ -5586,7 +5630,7 @@
      "la langue"
     ]
    ],
-   "explication": "Ouïe, odorat ; le toucher par la peau ; le goût par la langue."
+   "explication": "On entend avec les oreilles, grâce à l'ouïe, et on sent les odeurs avec le nez, grâce à l'odorat. « Froid, rugueux » se sentent en touchant : l'organe du toucher est la peau (pas seulement la main). « Sucré, acide » sont des gouts : l'organe du gout est la langue, avec ses papilles gustatives."
   },
   {
    "id": "ceb-2021-l9-q2a",
@@ -5621,7 +5665,7 @@
     0,
     2
    ],
-   "explication": "A compare arrosé / non arrosé ; B lumière / obscurité ; C avec / sans sels minéraux. Pour les trois hypothèses, l'expérience permet de dire que c'est vrai."
+   "explication": "Dans chaque expérience, une seule chose change. A : un pot arrosé et un pot non arrosé, seules les graines arrosées germent, donc l'eau est nécessaire. B : une plante à la lumière et une dans l'obscurité, celle dans le noir dépérit. C : une plante avec et une sans sels minéraux, celle sans sels minéraux se développe mal. Les trois hypothèses sont donc vraies."
   },
   {
    "id": "ceb-2021-l9-q2b",
@@ -5651,7 +5695,7 @@
     3,
     4
    ],
-   "explication": "Les expériences montrent les besoins : eau, sels minéraux et lumière.",
+   "explication": "Les expériences montrent qu'une plante a besoin d'eau, de lumière et de sels minéraux. Sur un mur, l'eau de pluie s'infiltre, le mur contient des sels minéraux et il est éclairé. Aucune expérience ne parle de terre dans le mur, de chaleur ou de racines sous le mur. À l'épreuve, 1 point en moins par réponse en trop.",
    "parReponse": true
   },
   {
@@ -5674,7 +5718,7 @@
     "Des mammifères"
    ],
    "reponse": 3,
-   "explication": "Les petits se développent dans le ventre et tètent : ce sont des mammifères."
+   "explication": "La gestation (le petit grandit dans le ventre de sa mère), la mise bas et l'allaitement (le petit tète le lait de sa mère) sont propres aux mammifères. Les oiseaux, les insectes et les amphibiens pondent des œufs."
   },
   {
    "id": "ceb-2021-l9-q3c",
@@ -5701,7 +5745,7 @@
     "belette",
     "la belette"
    ],
-   "explication": "Les mammifères : sanglier, renard, loir gris, belette."
+   "explication": "Le cerf et la biche sont des mammifères. Parmi les animaux des forêts du portfolio, les autres mammifères (avec des poils, qui allaitent leurs petits) sont le sanglier, le renard, le loir gris et la belette. Le pic épeiche est un oiseau, l'orvet un reptile et l'épeire une araignée."
   },
   {
    "id": "ceb-2021-l9-q3d",
@@ -5722,7 +5766,7 @@
     "pic epeiche",
     "pic"
    ],
-   "explication": "La couvaison concerne les oiseaux : le pic épeiche."
+   "explication": "La ponte d'œufs et la couvaison (la mère couve ses œufs pour les tenir au chaud) sont le cycle de vie des oiseaux. Le seul oiseau parmi les animaux des forêts du portfolio est le pic épeiche. Écrire seulement « oiseau » ne suffit pas : il faut le nom de l'animal."
   },
   {
    "id": "ceb-2021-l9-q6a",
@@ -5737,7 +5781,8 @@
    "reponseModele": "Les êtres vivants font des échanges gazeux (ils respirent) ; les non-vivants n'en font pas.",
    "documents": [
     "liv9-p10"
-   ]
+   ],
+   "explication": "Dans le tableau, la truite, l'arbre et le ver de terre sont vivants et font des échanges gazeux ; le pantin de bois et le ballon ne sont pas vivants et n'en font pas. La conclusion doit faire ce lien : un être vivant a des échanges gazeux (il dégage du gaz carbonique et absorbe de l'oxygène), un non-vivant n'en a pas."
   },
   {
    "id": "ceb-2021-l9-q6b",
@@ -5755,7 +5800,7 @@
     "Pas d'échange gazeux, non vivant"
    ],
    "reponse": 0,
-   "explication": "Le pou est un animal : il respire, il est vivant.",
+   "explication": "Le pou est un petit animal : il respire, donc il absorbe de l'oxygène et dégage du gaz carbonique. D'après la conclusion du tableau, un élément qui fait des échanges gazeux est vivant.",
    "documents": [
     "liv9-p10"
    ]
@@ -5783,7 +5828,7 @@
     3,
     4
    ],
-   "explication": "Tout être vivant naît, grandit, se nourrit, se reproduit et meurt.",
+   "explication": "Tous les êtres vivants, animaux comme plantes, naissent, grandissent, se nourrissent, se reproduisent et meurent. Parler, dormir ou courir ne concernent pas tous les vivants : un arbre ne parle pas et ne court pas. À l'épreuve, 1 point en moins par réponse en trop.",
    "parReponse": true
   },
   {
@@ -5808,7 +5853,7 @@
     "Au moins une paire de pattes articulées sur tous les segments"
    ],
    "reponse": 5,
-   "explication": "Le cloporte et le gloméris ont des pattes sur tous les segments ; le carabe (insecte) a 3 paires de pattes."
+   "explication": "Dans le tableau, les trois animaux ont une croix pour « bouche, yeux », « squelette externe, pattes articulées » et « mandibules, antennes » : ces attributs ne les distinguent pas. Seuls le cloporte et le gloméris ont une croix pour « au moins une paire de pattes articulées sur tous les segments ». Le carabe, lui, a « 3 paires de pattes articulées »."
   },
   {
    "id": "ceb-2021-l9-q8a",
@@ -5830,7 +5875,7 @@
     "Les cloportes préfèrent-ils vivre en groupe ou seuls ?"
    ],
    "reponse": 1,
-   "explication": "Seule la température change entre les deux côtés."
+   "explication": "Dans l'expérience 1, la bouteille a de la terre humide partout et reste éclairée de la même façon : la seule différence est un côté au-dessus des glaçons et l'autre au-dessus de l'eau chaude. L'expérience compare donc le froid et la chaleur."
   },
   {
    "id": "ceb-2021-l9-q8b",
@@ -5897,7 +5942,7 @@
     1,
     2
    ],
-   "explication": "Ils vont vers l'obscurité et vers le froid.",
+   "explication": "Dans l'expérience 2, tous les cloportes se sont mis du côté obscur : ils préfèrent un endroit sombre. Dans l'expérience 1, 5 cloportes sur 8 sont du côté des glaçons et 1 seul du côté de l'eau chaude : ils préfèrent un endroit frais. À l'épreuve, 1 point en moins par réponse en trop.",
    "parReponse": true
   },
   {
@@ -5919,7 +5964,7 @@
      "conducteurs"
     ]
    ],
-   "explication": "Isolants : bois, papier, caoutchouc. Conducteurs : métaux, mine de crayon (graphite)."
+   "explication": "Quand l'ampoule ne s'allume pas, le courant ne passe pas : le bois, le papier et le caoutchouc sont des isolants électriques. Quand elle s'allume, le courant passe : le cuivre, le fer et la mine de crayon (en graphite) sont des conducteurs électriques."
   },
   {
    "id": "ceb-2021-l9-q9b",
@@ -5942,7 +5987,7 @@
     "une gomme"
    ],
    "reponse": 4,
-   "explication": "La gomme (caoutchouc) est isolante ; la mine de crayon conduit."
+   "explication": "La fourchette, les ciseaux et le trombone sont en fer, un métal qui conduit le courant ; le crayon taillé des deux côtés laisse passer le courant par sa mine. La gomme est en caoutchouc, un isolant : c'est elle qui empêche le courant de passer."
   },
   {
    "id": "ceb-2021-l9-q10a",
@@ -5969,7 +6014,7 @@
     0,
     3
    ],
-   "explication": "En gelant, l'eau augmente de volume.",
+   "explication": "La bouteille d'eau gelée au congélateur est devenue plus large ou plus haute que celle restée en classe : en devenant de la glace (état solide), l'eau prend plus de place. Les deux bonnes propositions disent la même chose de deux façons : le solide occupe plus de volume, donc le liquide en occupe moins.",
    "parReponse": true
   },
   {
@@ -6019,7 +6064,7 @@
     "les clous « se sont écartés »."
    ],
    "reponse": 1,
-   "explication": "Chaude, la pièce ne passe plus : elle est devenue plus grande."
+   "explication": "Les clous sont restés au même endroit. Quand la pièce est chauffée, elle ne passe plus entre eux ; quand elle refroidit, elle passe à nouveau. C'est donc la pièce qui s'est élargie avec la chaleur."
   },
   {
    "id": "ceb-2021-l9-q11b",
@@ -6041,7 +6086,7 @@
     "la pression."
    ],
    "reponse": 0,
-   "explication": "C'est la dilatation."
+   "explication": "Quand un corps chauffé augmente de volume, on parle de dilatation, comme la pièce de l'expérience qui s'élargit. La contraction est le phénomène inverse (le volume diminue en refroidissant) ; « dilettante » n'a rien à voir avec la chaleur."
   },
   {
    "id": "ceb-2021-l9-q3a",
@@ -6177,7 +6222,7 @@
      "poils,sabots"
     ]
    ],
-   "explication": "Le pic épeiche a des plumes et un bec : aucune croix. Le loir gris a des poils. Le sanglier a des poils et des sabots. Aucun de ces animaux n'a de crocs."
+   "explication": "On regarde dans quels ensembles du classement se trouve chaque animal. Le pic épeiche est seul dans « plumes et bec » : aucune croix. Le loir gris est dans « poils » seulement : une croix pour poils. Le sanglier est à la fois dans « poils » et « sabots », mais pas dans « crocs » : deux croix."
   },
   {
    "id": "ceb-2021-l9-q7b",
@@ -6185,10 +6230,11 @@
    "numero": "7b",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Entoure les chélicères.",
+   "enonce": "Entoure la paire de chélicères sur la photo de l'acarien (livret, page 13).",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le portfolio explique que les chélicères sont des « crochets articulés », placés tout à l'avant de la tête, près de la bouche, comme chez l'épeire diadème. Sur la photo de l'acarien, il faut entourer ces deux petits crochets à l'avant du corps, et non les pattes."
   },
   {
    "id": "ceb-2021-l9-q7c",
@@ -6205,7 +6251,7 @@
     "liv9-p13"
    ],
    "reponseModele": "Par exemple : le moustique et le gloméris n'ont pas 4 paires de pattes articulées ; ou ils n'ont pas de chélicères ; ou ils portent des antennes. Toute formulation dans ce sens est acceptée (pas besoin de phrase). 1 point.",
-   "explication": "L'épeire a 4 paires de pattes, des chélicères et pas d'antennes."
+   "explication": "L'épeire diadème a 4 paires de pattes articulées, une paire de chélicères et pas d'antennes. Le moustique et le gloméris, eux, ont des antennes, pas de chélicères, et pas 4 paires de pattes. Un seul de ces attributs suffit pour justifier."
   },
   {
    "id": "ceb-2021-l9-q7e",
@@ -6285,7 +6331,7 @@
     0,
     2
    ],
-   "explication": "Avec 20 ml de vinaigre et 4 g de bicarbonate, le tableau montre que la fusée décolle. Avec 6 g, on n'a pas fait d'essai : on ne peut pas le dire."
+   "explication": "Dans le tableau, on croise la colonne « 20 ml » et la ligne « 4 g » : il y a une flèche, la fusée décolle. Le tableau s'arrête à 5 g : aucun essai n'a été fait avec 6 g, donc on ne peut pas dire si la fusée va décoller."
   },
   {
    "id": "ceb-2021-l9-q12b",
@@ -6293,10 +6339,11 @@
    "numero": "12b",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Trace le bâtonnet manquant.",
+   "enonce": "Les élèves utilisent la « rampe de lancement » et mesurent la distance parcourue par la fusée. Avec 30 ml de vinaigre : 3 g de bicarbonate → 7 m ; 4 g → 10,5 m ; 5 g → 12 m. Ces données sont placées dans un graphique en bâtonnets. Avec ta latte, trace le bâtonnet manquant.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le bâtonnet manquant est celui de 4 g : il doit monter jusqu'à 10,5 m. Les lignes du graphique vont de 2 en 2 m : 10,5 m se trouve juste au-dessus de la ligne 10, au quart de l'espace entre 10 et 12. On le trace avec la même largeur que les deux autres bâtonnets."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2021, épreuve préparée pour 2020), comparé question par question le 21/10/2026."
