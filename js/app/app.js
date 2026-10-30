@@ -576,7 +576,9 @@ function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
     const d = docs.find((x) => x.id === b.dataset.doc);
     const info = b.parentElement.querySelector('.ecoute-info');
     const deja = () => (compteur ? compteur[d.id] ?? 0 : 0);
-    const maj = (lit = false) => {
+    let lit = false; // état de la lecture, retenu ici (le texte du bouton est illustré, on ne s'y fie pas)
+    const maj = (enCours = false) => {
+      lit = enCours;
       const reste = max - deja();
       b.textContent = lit ? '⏹️ Arrêter' : '▶️ Écouter le texte';
       b.disabled = !lit && reste <= 0;
@@ -586,9 +588,9 @@ function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
     };
     maj();
     b.onclick = () => {
-      if (b.textContent.startsWith('⏹️')) { taire(); return maj(false); }
-      if (compteur) compteur[d.id] = deja() + 1;
+      if (lit) { taire(); return maj(false); }
       if (!lireSegments(d.segments, { onFin: () => maj(false) })) return maj(false);
+      if (compteur) compteur[d.id] = deja() + 1;
       maj(true);
     };
   });
