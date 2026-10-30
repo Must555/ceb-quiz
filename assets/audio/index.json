@@ -1,0 +1,21 @@
+{
+ "voix": {
+  "1": "fr-BE-CharlineNeural",
+  "2": "fr-BE-GerardNeural"
+ },
+ "vitesse": "-5%",
+ "fichiers": {
+  "ceb-2015/ecoute": "ceb-2015-ecoute.mp3",
+  "ceb-2016/ecoute": "ceb-2016-ecoute.mp3",
+  "ceb-2017/ecoute": "ceb-2017-ecoute.mp3",
+  "ceb-2018/ecoute": "ceb-2018-ecoute.mp3",
+  "ceb-2019/ecoute": "ceb-2019-ecoute.mp3",
+  "ceb-2021/ecoute": "ceb-2021-ecoute.mp3",
+  "ceb-2022/ecoute": "ceb-2022-ecoute.mp3",
+  "ceb-2023/ecoute": "ceb-2023-ecoute.mp3",
+  "ceb-2024/ecoute": "ceb-2024-ecoute.mp3",
+  "ceb-2025/ecoute": "ceb-2025-ecoute.mp3",
+  "ceb-2026-so/ecoute": "ceb-2026-so-ecoute.mp3",
+  "ceb-2026-tc/ecoute": "ceb-2026-so-ecoute.mp3"
+ }
+}
