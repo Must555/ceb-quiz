@@ -4,7 +4,7 @@ import * as store from './store.js';
 import { niveau, serieActuelle, jourDe, DEFIS, BADGES, enregistrerSession } from './progression.js';
 import { rendreSaisie, brancher, esc } from './question-ui.js';
 import { STATUTS, carteNotions, faiblesses, revisionsDues, coachPret, poidsCoach, maitrise } from './coach.js';
-import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, lireSegments, sons, ouvrirZoom } from './confort.js';
+import { appliquerConfort, confortDe, TAILLES, ESPACES, peutLireAVoixHaute, voixDisponible, texteAVoix, parler, taire, brancherBoutonVoix, lireSegments, lireEcoute, sons, ouvrirZoom } from './confort.js';
 import { filtrerFiches, paquet, noterCarte, cartesDues, carteDue, exercicesParNotion } from './cartes.js';
 import { ADRESSE_SIGNALEMENT, messageSignalement, lienMailto } from './signaler.js';
 import { nouvelleGraine, decoderDefi, lienDefi, optionsDefi, comparer, empreinteDonnees, NB_QUESTIONS_DEFI } from './defi-amis.js';
@@ -582,14 +582,16 @@ function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
       const reste = max - deja();
       b.textContent = lit ? '⏹️ Arrêter' : '▶️ Écouter le texte';
       b.disabled = !lit && reste <= 0;
-      info.textContent = !voixDisponible() ? 'Ton appareil ne sait pas lire à voix haute : demande à un adulte de te lire le texte.'
+      info.textContent = !voixDisponible() && !d.audio ? 'Ton appareil ne sait pas lire à voix haute : demande à un adulte de te lire le texte.'
         : max === Infinity ? 'Tu peux l\'écouter autant de fois que tu veux.'
         : reste > 0 ? `Écoutes restantes : ${reste} sur ${max} (comme à l'épreuve).` : 'Tu as utilisé tes deux écoutes.';
     };
     maj();
     b.onclick = () => {
       if (lit) { taire(); return maj(false); }
-      if (!lireSegments(d.segments, { onFin: () => maj(false) })) return maj(false);
+      const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+      const onTemps = (t, duree) => { if (lit && Number.isFinite(duree)) info.textContent = `Lecture : ${mmss(t)} / ${mmss(duree)}`; };
+      if (!lireEcoute(d, { onFin: () => maj(false), onTemps })) return maj(false);
       if (compteur) compteur[d.id] = deja() + 1;
       maj(true);
     };
