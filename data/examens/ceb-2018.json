@@ -115,7 +115,7 @@
    "page": 6,
    "titre": "La germination : expérience 4 et résultats",
    "fichier": "assets/2018/pdf06.webp",
-   "alt": "Pot E : sans eau. Résultats : les graines germent dans A, B, C et D, pas dans E."
+   "alt": "Pot E : de la terre, pas d'eau, dans la classe, à la chaleur, avec de la lumière. Résultats après dix jours : les graines ont germé dans les pots A, C et D, pas dans les pots B et E."
   },
   {
    "id": "etats",
@@ -143,7 +143,7 @@
    "page": 10,
    "titre": "La consommation d'eau en Wallonie",
    "fichier": "assets/2018/pdf10.webp",
-   "alt": "Chasse d'eau 33 %, hygiène corporelle 36 %, lessive 13 %, vaisselle 7 %, nettoyage 4 %, jardinage 3 %, boisson et aliments 4 % (à vérifier sur le graphique)."
+   "alt": "Diagramme circulaire : chasse d'eau 36 %, hygiène corporelle (bain, douche, lavabo) 33 %, lessive 13 %, vaisselle 7 %, nettoyage 4 %, jardinage et arrosage 4 %, boisson et préparation des aliments 3 %."
   },
   {
    "id": "champi",
@@ -679,7 +679,7 @@
     "Un photographe prend des photos d'un jeune faon. Plutôt que de le prendre dans ses bras, l'homme comprend qu'il doit s'éloigner. Le troupeau se rapproche alors du jeune faon et l'accueille."
    ],
    "reponse": 2,
-   "explication": "Le photographe s'écarte et le faon rejoint seul les siens, guidé par sa mère."
+   "explication": "L'homme pense à prendre le faon dans ses bras, mais il « s'écarta » et « s'éloigna un peu ». C'est ensuite le faon qui marche seul jusqu'aux siens : « Le faon avait rejoint les siens ». Ce n'est donc pas le troupeau qui vient vers lui, et l'homme ne le porte pas."
   },
   {
    "id": "ceb-2018-l1-q2",
@@ -709,7 +709,7 @@
     3,
     4
    ],
-   "explication": "Promenade, plainte, fuite des chevreuils, le faon marche, retour heureux."
+   "explication": "Le texte suit cet ordre : l'homme se promène avec son appareil photo ; une plainte le fait sursauter ; en descendant, il entend la galopade des chevreuils qui fuient ; le faon finit par marcher vers sa mère ; à la fin, l'homme repart heureux de ses photos et de sa bonne action."
   },
   {
    "id": "ceb-2018-l1-q3",
@@ -732,7 +732,7 @@
     "un promeneur qui découvre la forêt."
    ],
    "reponse": 1,
-   "explication": "« René-Pierre Audras, journaliste s'intéressant au monde animal »."
+   "explication": "L'indice se trouve sous le texte, à côté du nom de l'auteur : « René-Pierre Audras, journaliste s'intéressant au monde animal ». Le garde forestier est seulement un ami du photographe dont on cite le conseil."
   },
   {
    "id": "ceb-2018-l1-q4",
@@ -755,7 +755,7 @@
     "Parce qu'il était trop fatigué pour grimper dans la clairière."
    ],
    "reponse": 1,
-   "explication": "Il entend une galopade : les chevreuils s'enfuient."
+   "explication": "L'homme est photographe. La galopade lui fait comprendre que « les chevreuils […] s'étaient enfuis » : il ne pourra plus les photographier, c'est pourquoi son effort lui parait inutile. Il entend encore la plainte, et il ne s'est pas trompé de chemin."
   },
   {
    "id": "ceb-2018-l1-q5",
@@ -779,7 +779,7 @@
     "du faon."
    ],
    "reponse": 1,
-   "explication": "« son » renvoie à l'homme qui descend vers la clairière."
+   "explication": "Dans la phrase, c'est l'homme qui « descendit vers la clairière » : les chevreuils ont entendu ou senti son approche, c'est-à-dire l'arrivée du photographe, et ils se sont enfuis."
   },
   {
    "id": "ceb-2018-l1-q6",
@@ -804,7 +804,7 @@
     0,
     3
    ],
-   "explication": "« il faisait beau » est impersonnel ; « on » désigne les gens en général.",
+   "explication": "« il était prêt » et « il respirait » remplacent « l'homme » : c'est lui qui est prêt à photographier et qui respire l'air. Dans « il faisait beau », « il » ne désigne personne (il parle du temps) ; « on » désigne les gens en général.",
    "parReponse": true
   },
   {
@@ -830,7 +830,7 @@
      "la mère"
     ]
    ],
-   "explication": "La mère demande à son petit de la rejoindre, elle."
+   "explication": "La mère appelle son petit : elle demande à son petit (« lui ») de venir la rejoindre, elle, la mère (« la »). Il faut écrire le groupe complet avec son déterminant : « son petit » et « la mère », pas seulement « petit » ou « mère »."
   },
   {
    "id": "ceb-2018-l1-q8",
@@ -860,7 +860,7 @@
      "les jambes"
     ]
    ],
-   "explication": "Le bébé chevreuil ; ses pattes (jambes). Il faut écrire le déterminant : « ses pattes », « le bébé chevreuil »."
+   "explication": "« Il » remplace « le bébé chevreuil », sujet de la phrase précédente. « Elles » est au féminin pluriel : il remplace « ses pattes » (ou « ses jambes »), qui sont trop faibles. Il faut écrire le déterminant avec le nom."
   },
   {
    "id": "ceb-2018-l1-q9",
@@ -883,7 +883,7 @@
     "parce qu'elle a perçu la présence d'un homme."
    ],
    "reponse": 3,
-   "explication": "« la crainte de l'homme avait été plus forte que l'amour maternel »."
+   "explication": "Le texte dit que pour la mère « la crainte de l'homme avait été plus forte que l'amour maternel » : elle a fui parce qu'elle a senti l'homme approcher. Elle continue d'ailleurs à appeler son petit."
   },
   {
    "id": "ceb-2018-l1-q10",
@@ -906,7 +906,7 @@
     "le galop du troupeau dans la clairière."
    ],
    "reponse": 1,
-   "explication": "Il vient de braquer son objectif : c'est le bruit de la photo."
+   "explication": "Juste avant, le photographe « braqua son objectif » sur le faon : le déclic est le petit bruit de l'appareil photo au moment où il prend la photo. Il n'y a pas de chasseur dans l'histoire."
   },
   {
    "id": "ceb-2018-l1-q11",
@@ -930,7 +930,7 @@
     "visa",
     "fixa"
    ],
-   "explication": "braquer = pointer, diriger."
+   "explication": "Braquer son objectif sur un animal, c'est le pointer vers lui. On peut donc écrire « pointa », « dirigea », « orienta », « tourna », « visa » ou « fixa », au passé simple comme « braqua »."
   },
   {
    "id": "ceb-2018-l1-q12",
@@ -961,7 +961,7 @@
     "une heure de vie",
     "pattes faibles"
    ],
-   "explication": "« né à peine d'une heure ainsi que l'indiquait son poil encore humide, presque poisseux »."
+   "explication": "Plusieurs indices le montrent : le faon est « né à peine d'une heure », il a le « poil encore humide », les « yeux voilés », des pattes « trop faibles », et on l'appelle « le bébé chevreuil ». Un seul indice suffit."
   },
   {
    "id": "ceb-2018-l1-q13",
@@ -977,7 +977,8 @@
     "faon-1",
     "faon-2"
    ],
-   "reponseModele": "Il a envie de prendre le faon dans ses bras ; en réalité il s'écarte et s'éloigne pour ne pas le toucher."
+   "reponseModele": "Il a envie de prendre le faon dans ses bras ; en réalité il s'écarte et s'éloigne pour ne pas le toucher.",
+   "explication": "Une bonne réponse contient deux parties : l'homme a envie de prendre le faon dans ses bras (« Il allait prendre le faon dans ses bras ») ; en réalité, il s'écarte et ne le touche pas, car il se rappelle le conseil du garde forestier."
   },
   {
    "id": "ceb-2018-l1-q14",
@@ -993,7 +994,8 @@
     "faon-1",
     "faon-2"
    ],
-   "reponseModele": "Il sentirait l'odeur humaine ; il serait délaissé par les siens (mis en quarantaine), donc condamné à mort."
+   "reponseModele": "Il sentirait l'odeur humaine ; il serait délaissé par les siens (mis en quarantaine), donc condamné à mort.",
+   "explication": "Une bonne réponse donne deux raisons du texte parmi celles-ci : le faon sentirait l'odeur humaine ; il serait délaissé par les siens, « mis en quarantaine » ; il serait donc condamné à mort."
   },
   {
    "id": "ceb-2018-l1-q16",
@@ -1013,7 +1015,7 @@
     "De nouveau",
     "de nouveau"
    ],
-   "explication": "« De nouveau » relie la deuxième et la troisième phrase."
+   "explication": "La troisième phrase commence par « De nouveau » : ces mots relient ce qui se passe à ce qui précède (l'appel se fait entendre une nouvelle fois). Il faut recopier les deux mots, « De » seul ne suffit pas."
   },
   {
    "id": "ceb-2018-l1-q15",
@@ -1028,7 +1030,8 @@
    "documents": [
     "faon-2"
    ],
-   "reponseModele": "Son pelage se fond dans les couleurs naturelles ; il n'est repérable que de très près ; il est inodore ; sa mère le défendrait contre un renard."
+   "reponseModele": "Son pelage se fond dans les couleurs naturelles ; il n'est repérable que de très près ; il est inodore ; sa mère le défendrait contre un renard.",
+   "explication": "Une bonne réponse recopie une idée du début de la page 3 : son pelage se fond dans les couleurs de la nature ; il n'est repérable que de très près ; il est inodore ; sa mère chargerait un renard pour le défendre."
   },
   {
    "id": "ceb-2018-l1-q17",
@@ -1064,7 +1067,7 @@
      "l'imparfait"
     ]
    ],
-   "explication": "commença, jeta et avança sont au passé simple ; s'était immobilisé et avait compris sont au plus-que-parfait ; faisait et obligeait sont à l'imparfait.",
+   "explication": "« commença », « jeta » et « avança » sont au passé simple (terminaison -a des verbes en -er). « s'était immobilisé » et « avait compris » sont au plus-que-parfait (avoir ou être à l'imparfait + participe passé). « faisait » et « obligeait » sont à l'imparfait (terminaison -ait).",
    "groupes": [
     [
      0,
@@ -1102,7 +1105,7 @@
     "sa troupe",
     "son groupe"
    ],
-   "explication": "« Les siens », ce sont les animaux de son espèce, de son groupe, de sa famille (les chevreuils). Pas seulement « sa mère »."
+   "explication": "« Les siens », ce sont les animaux de sa famille ou de son espèce : on peut écrire « sa famille », « son troupeau », « les autres chevreuils »… Il faut un groupe nominal qui désigne tout le groupe, pas seulement « sa mère »."
   },
   {
    "id": "ceb-2018-l1-q19",
@@ -1124,7 +1127,7 @@
     "comme"
    ],
    "reponse": 2,
-   "explication": "« comme l'indiquait son poil » garde le sens."
+   "explication": "« ainsi que » veut dire « comme » : son poil humide montre qu'il vient de naitre. « pendant que » parle du temps et « alors que » d'une opposition, ce qui change le sens de la phrase."
   },
   {
    "id": "ceb-2018-l1-q20",
@@ -1148,7 +1151,7 @@
     "fragile"
    ],
    "reponse": 1,
-   "explication": "Gracieux = élégant."
+   "explication": "Un animal gracieux bouge avec grâce, il est beau et fin : c'est un synonyme d'« élégant ». « fragile » ressemble au mot « chétif », qui est un autre mot de la phrase."
   },
   {
    "id": "ceb-2018-l1-q21",
@@ -1176,7 +1179,7 @@
      "adjectif"
     ]
    ],
-   "explication": "Adverbe en -ment ; nom (l'homme) ; adjectif qui qualifie « attitude »."
+   "explication": "« maladroitement » est un adverbe : il dit comment le faon marche (beaucoup d'adverbes finissent en -ment). « homme » est un nom, précédé du déterminant « l' ». « rassurante » est un adjectif : il précise le nom « attitude »."
   },
   {
    "id": "ceb-2018-l1-q22",
@@ -1203,7 +1206,7 @@
     1,
     3
    ],
-   "explication": "Il est tranquille et satisfait : serein."
+   "explication": "L'homme sifflote, « satisfait de sa pleine liberté » : il est calme et content, donc serein ou heureux. Rien ne montre qu'il est triste, qu'il a peur ou qu'il est généreux dans ce passage."
   },
   {
    "id": "ceb-2018-l1-q23",
@@ -1218,7 +1221,8 @@
    "documents": [
     "faon-2"
    ],
-   "reponseModele": "Elle est inquiète et impatiente de retrouver son petit, puis soulagée et heureuse."
+   "reponseModele": "Elle est inquiète et impatiente de retrouver son petit, puis soulagée et heureuse.",
+   "explication": "Une bonne réponse nomme un sentiment de la mère : elle est inquiète ou stressée tant que son petit n'est pas là, ou impatiente, rassurée, heureuse, puisqu'elle « redoublait ses appels » en comprenant que son petit revenait."
   },
   {
    "id": "ceb-2018-l1-q24",
@@ -1244,7 +1248,7 @@
     0,
     3
    ],
-   "explication": "L'homme prend la bonne décision de ne pas toucher le faon.",
+   "explication": "L'histoire montre surtout la bonne décision de l'homme : il ne touche pas le faon pour qu'il ne soit pas abandonné. « Un troupeau en fuite » ne raconte qu'un petit moment, et la mère n'est pas « sans cœur » : elle appelle son petit.",
    "parReponse": true
   },
   {
@@ -1268,7 +1272,7 @@
     "Croquis 3"
    ],
    "reponse": 2,
-   "explication": "Le paysage de l'histoire est une vallée creuse avec des arbres sur les deux versants : c'est le croquis 3."
+   "explication": "L'homme est sur le versant d'un vallon et descend vers une clairière au fond ; les chevreuils fuient vers le bois « sur l'autre versant ». Le paysage est donc une vallée en creux avec des arbres des deux côtés : c'est le croquis 3, pas une plaine plate ni une seule pente."
   },
   {
    "id": "ceb-2018-l2-q1",
@@ -1276,10 +1280,11 @@
    "numero": "1",
    "domaine": "fr.ecrire",
    "type": "ouverte",
-   "enonce": "Le photographe oublie le conseil (« Ne touchez jamais un jeune animal ») et prend le faon dans ses bras. Écris la suite de l'histoire en 2 ou 3 paragraphes : ce que fait le photographe, comment réagit le faon, une fin.",
+   "enonce": "Dans le texte Une heure de vie, le conseil donné par le garde forestier est le suivant : « Ne touchez jamais un jeune animal. Il sentirait l'odeur humaine et serait alors obligatoirement délaissé par les siens, mis littéralement en quarantaine. »\nImagine que le photographe oublie ce conseil et prenne le faon dans ses bras.\nÉcris la suite de l'histoire.\nRaconte ce que le photographe fait, comment il agit ; comment réagit le faon ; une fin à l'histoire.\nPense à organiser ton texte en 2 ou 3 paragraphes et à vérifier l'orthographe, la construction des phrases, les temps de conjugaison utilisés, la ponctuation…\nTon texte commence par : « Le photographe oublie le conseil et prend le faon dans ses bras. »",
    "points": 30,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un bon texte est bien une suite de l'histoire : le photographe agit au début, on apprend ce qui arrive au faon, et il y a une fin (même imaginaire, par exemple le faon recueilli par l'homme). Les idées sont personnelles, pas recopiées du texte. Le texte est organisé en 2 ou 3 paragraphes, avec des organisateurs (ensuite, finalement…) et des connecteurs variés (mais, car, alors…), et l'orthographe est soignée."
   },
   {
    "id": "ceb-2018-l3-q1",
@@ -1287,10 +1292,11 @@
    "numero": "1",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Construis un hexagone régulier à partir du trapèze.",
+   "enonce": "Construis un hexagone régulier, à partir de ce trapèze (livret, page 2), avec tes instruments.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un hexagone régulier a 6 côtés de même longueur et 6 angles égaux. Le trapèze du livret est la moitié d'un hexagone régulier : on peut tracer, de l'autre côté de sa grande base, le même trapèze retourné. On peut aussi accoler au trapèze un autre hexagone régulier, à condition que ses 6 côtés soient égaux (vérifie à la latte ou au compas)."
   },
   {
    "id": "ceb-2018-l3-q2",
@@ -1301,7 +1307,8 @@
    "enonce": "Construis un carré de 4 cm de côté.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un carré a 4 côtés de même longueur et 4 angles droits. Trace un côté de 4 cm à la latte, puis un angle droit à chaque extrémité avec l'équerre, reporte 4 cm sur ces deux côtés et relie les deux points. Le tracé doit être précis (1 mm près)."
   },
   {
    "id": "ceb-2018-l3-q3",
@@ -1351,7 +1358,7 @@
     "Développement 5"
    ],
    "reponse": 1,
-   "explication": "Sur le cube, le soleil est devant, le flocon à droite et le nuage au-dessus : seul le développement 2 respecte ces positions."
+   "explication": "Sur le cube, le nuage est au-dessus du soleil et le flocon à droite du soleil. Dans le développement 2, le nuage est collé au-dessus du soleil et le flocon à sa droite : en pliant, on retrouve le cube. Dans le 1, le nuage arriverait derrière ; dans le 5, le flocon arriverait en dessous."
   },
   {
    "id": "ceb-2018-l3-q5",
@@ -1384,10 +1391,11 @@
    "numero": "6",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Repère les cases de la figure et colorie les figures.",
+   "enonce": "Observe ce quadrillage (colonnes A à P, lignes 1 à 16) et la figure qui y est représentée (livret, page 7).\na) Repère chaque case de la figure dessinée dans le quadrillage et complète (deux cases sont déjà notées : G6 et G5).\nb) Colorie les deux figures suivantes à la bonne place dans le quadrillage : la figure jaune contient la case O4, la figure verte contient la case K9.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une case se nomme par la lettre de sa colonne puis le numéro de sa ligne. a) La figure grise occupe G5, H5, G6, H6, I6 et H7 : il reste à écrire H5, H6, I6 et H7 dans le dessin penché. b) Place d'abord la case connue (O4 en jaune, K9 en vert), puis colorie les autres cases autour en gardant exactement la même forme et la même orientation."
   },
   {
    "id": "ceb-2018-l3-q7",
@@ -1441,7 +1449,7 @@
      "5"
     ]
    ],
-   "explication": "Polygones irréguliers possibles : 1, 2, 4, 5, 7, 8 (pas les figures régulières 3 et 6). Quadrilatères : 1, 7, 8. Hexagones : 2, 3, 5. Chaque ligne demande deux numéros différents.",
+   "explication": "Un polygone irrégulier n'a pas tous ses côtés et tous ses angles égaux : 1, 2, 4, 5, 7 et 8 conviennent, mais pas 3 (hexagone régulier) ni 6 (triangle équilatéral). Les quadrilatères ont 4 côtés : 1, 7 et 8. Les hexagones ont 6 côtés : 2, 3 et 5.",
    "groupes": [
     [
      0,
@@ -1470,7 +1478,7 @@
     "liv3-p08"
    ],
    "reponseModele": "Par exemple : tous les côtés ont la même longueur ; tous les angles ont la même mesure ; ce sont des polygones réguliers (1 point par propriété correcte).",
-   "explication": "La figure 3 est un hexagone régulier et la figure 6 un triangle équilatéral : ce sont deux polygones réguliers.",
+   "explication": "La figure 3 est un hexagone régulier et la figure 6 un triangle équilatéral. Une bonne réponse cite deux propriétés communes : leurs côtés ont tous la même longueur, leurs angles ont tous la même amplitude, ce sont des polygones réguliers.",
    "corrigeVerifie": true
   },
   {
@@ -1479,10 +1487,11 @@
    "numero": "8",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un triangle au compas (6, 8 et 4 cm).",
+   "enonce": "En utilisant ton compas et en laissant les traces de construction, trace un triangle au départ de la base [AB] (6 cm), sachant que les deux autres côtés doivent mesurer 8 cm et 4 cm.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Pique le compas en A avec une ouverture de 8 cm et trace un arc ; pique ensuite en B avec une ouverture de 4 cm et trace un second arc. Le point où les deux arcs se croisent est le troisième sommet : relie-le à A et à B. Les traces de compas doivent rester visibles."
   },
   {
    "id": "ceb-2018-l3-q9",
@@ -1490,10 +1499,11 @@
    "numero": "9",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Repasse un triangle obtusangle scalène et un triangle rectangle.",
+   "enonce": "Observe ces six triangles de base [AB] (livret, page 10).\na) Repasse en vert le contour d'un triangle obtusangle scalène.\nb) Repasse en rouge le contour d'un triangle rectangle.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Un triangle obtusangle a un angle plus grand qu'un angle droit ; scalène veut dire que ses trois côtés ont des longueurs différentes. b) Un triangle rectangle a un angle droit : vérifie-le en posant l'équerre dans les coins. Chaque triangle doit être repassé dans sa propre couleur."
   },
   {
    "id": "ceb-2018-l3-q10",
@@ -1501,10 +1511,11 @@
    "numero": "10",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace un cercle de 4 cm de rayon passant par A.",
+   "enonce": "Trace un cercle passant par le point A. Son rayon devra mesurer 4 cm.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le rayon est la distance entre le centre et le cercle. Choisis un centre à 4 cm du point A (mesure-le à la latte), ouvre le compas de 4 cm, pique au centre et trace : le cercle passe alors par A. Il y a donc plusieurs cercles possibles."
   },
   {
    "id": "ceb-2018-l3-q11",
@@ -1526,7 +1537,7 @@
     "Tracé 4"
    ],
    "reponse": 2,
-   "explication": "Seul le tracé 3 contient le rectangle ABDC, le trapèze isocèle EFBA et le triangle équilatéral AGC."
+   "explication": "Dans le tracé 3, ABDC a 4 angles droits (rectangle), EF est parallèle à AB avec deux côtés obliques de même longueur (trapèze isocèle) et AGC a trois côtés égaux (triangle équilatéral). Dans les tracés 1, 2 et 4, au moins une de ces trois figures ne respecte pas sa définition : vérifie les angles droits à l'équerre et les longueurs à la latte."
   },
   {
    "id": "ceb-2018-l3-q12",
@@ -1548,7 +1559,7 @@
     "Dessin 4"
    ],
    "reponse": 2,
-   "explication": "C'est le dessin 3 qui correspond à la vue du personnage."
+   "explication": "Le personnage regarde la construction de face : il voit en bas le long bloc couché sur toute la largeur, au-dessus à droite la haute tour et au-dessus à gauche le bloc plus bas qui dépasse derrière. C'est le dessin 3 ; dans le 2, le bloc de gauche descendrait jusqu'au sol."
   },
   {
    "id": "ceb-2018-l3-q13",
@@ -1583,7 +1594,7 @@
     3,
     1
    ],
-   "explication": "A (le disque) : une infinité d'axes ; B : 2 axes ; C (le carré) : 4 axes ; D : 1 axe."
+   "explication": "A est un disque : toute droite qui passe par son centre est un axe, il y en a une infinité. B est un hexagone allongé qui n'a que 2 axes (un en longueur, un en largeur). C est un carré : 4 axes (2 médianes et 2 diagonales). D n'a qu'un axe, qui passe par sa pointe."
   },
   {
    "id": "ceb-2018-l3-q14",
@@ -1591,10 +1602,11 @@
    "numero": "14",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Puzzle : construis un triangle.",
+   "enonce": "Observe ce puzzle (livret, page 15). Découpe les pièces du puzzle carré qui se trouve à la page 17 du livret. Construis un triangle avec les trois pièces et colle-les. Attention, tu ne peux pas les superposer !",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les trois pièces doivent être posées côte à côte, sans se chevaucher et sans trou, pour former un seul grand triangle. Essaie de tourner les pièces : leurs côtés droits doivent former les trois côtés du triangle."
   },
   {
    "id": "ceb-2018-l3-q15",
@@ -1610,7 +1622,7 @@
     "liv3-p16"
    ],
    "reponseModele": "Solide A : 5 boules et 8 bâtonnets, soit 4 longs + 4 moyens, ou 4 longs + 4 courts, ou 4 moyens + 4 courts. Solide B : 12 boules et 18 bâtonnets, soit 12 longs + 6 moyens, ou 12 longs + 6 courts, ou 12 moyens + 6 courts. (1 point par solide.)",
-   "explication": "Une pyramide à base carrée a 5 sommets et 8 arêtes ; un prisme à base hexagonale a 12 sommets et 18 arêtes."
+   "explication": "Il faut une boule par sommet et un bâtonnet par arête. Le solide A est une pyramide à base carrée : 5 sommets et 8 arêtes, 4 de même longueur pour la base et 4 autres de même longueur pour les côtés. Le solide B est un prisme à base hexagonale : 12 sommets et 18 arêtes, 12 pour les deux hexagones et 6 plus courtes pour la hauteur."
   },
   {
    "id": "ceb-2018-l4-q2",
@@ -1628,7 +1640,7 @@
     "Ils ont colorié la même surface"
    ],
    "reponse": 1,
-   "explication": "3/5 = 6/10, et 6/10 est plus petit que 7/10 : Laura a colorié la plus grande surface. Justifie ensuite en comparant les fractions."
+   "explication": "Pour comparer, on écrit les deux fractions avec le même dénominateur : 3/5 = 6/10 (on multiplie 3 et 5 par 2). Comme 7/10 est plus grand que 6/10, c'est Laura qui a colorié la plus grande surface."
   },
   {
    "id": "ceb-2018-l4-q2-j",
@@ -1641,7 +1653,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-fractions-comparer",
    "reponseModele": "Il faut comparer les deux fractions, par exemple en les mettant au même dénominateur (1 point). Exemple : « 3/5 = 6/10 et 6/10 est plus petit que 7/10, donc Laura a colorié la plus grande surface. » Une autre méthode juste qui compare bien les deux fractions est aussi acceptée.",
-   "explication": "Pour comparer 3/5 et 7/10, on écrit 3/5 en dixièmes : 3/5 = 6/10."
+   "explication": "Une bonne justification compare vraiment les deux fractions, par exemple en les mettant au même dénominateur : « 3/5 = 6/10 et 6/10 < 7/10 ». Écrire seulement « 3/5, c'est plus petit que 7/10 » ne suffit pas : il faut montrer pourquoi."
   },
   {
    "id": "ceb-2018-l4-q4b",
@@ -1655,7 +1667,7 @@
    "fiche": "ma-fractions",
    "reponse": 6,
    "unite": "élèves",
-   "explication": "36 : 2 = 18 ; 36 : 3 = 12 ; 36 − 18 − 12 = 6."
+   "explication": "La moitié de 36 élèves : 36 : 2 = 18 (confiserie). Le tiers : 36 : 3 = 12 (menuiserie). Le reste : 36 − 18 − 12 = 6. Donc 6 élèves ont préféré la balade en forêt."
   },
   {
    "id": "ceb-2018-l4-q5",
@@ -1676,7 +1688,7 @@
      "4,5"
     ]
    ],
-   "explication": "18 : 3 = 6 ; 18 : 4 = 4,5."
+   "explication": "Un triangle équilatéral a 3 côtés de même longueur : 18 : 3 = 6 cm. Un losange a 4 côtés de même longueur : 18 : 4 = 4,5 cm."
   },
   {
    "id": "ceb-2018-l4-q6",
@@ -1709,7 +1721,7 @@
      "cl"
     ]
    ],
-   "explication": "10 fois plus grande : on monte d'une unité (ml → cl, dl → l, l → dal). 100 fois plus petite : on descend de deux unités (hl → l, dal → dl, l → cl).",
+   "explication": "Pour garder le même nombre devant, on change d'unité. a) Une unité 10 fois plus grande, c'est l'unité juste au-dessus : ml → cl, dl → l, l → dal. b) Une unité 100 fois plus petite, c'est deux rangs plus bas : hl → l, dal → dl, l → cl.",
    "groupes": [
     [
      0,
@@ -1735,7 +1747,7 @@
    "fiche": "ma-volumes",
    "reponse": 30,
    "unite": "cm",
-   "explication": "Par couche : 9 × 6 = 54 cubes. 270 : 54 = 5 couches de 6 cm = 30 cm."
+   "explication": "Sur le fond, on place 54 : 6 = 9 cubes en longueur et 36 : 6 = 6 cubes en largeur, soit 9 × 6 = 54 cubes par couche. Il faut 270 : 54 = 5 couches, chacune haute de 6 cm : 5 × 6 = 30 cm."
   },
   {
    "id": "ceb-2018-l4-q12",
@@ -1762,7 +1774,7 @@
      "7"
     ]
    ],
-   "explication": "Chaque chiffre vaut 10 fois moins que celui de gauche : 3 kl, 9 hl, 6 dal, 7 l.",
+   "explication": "Le « 9 » est le chiffre des hectolitres. Le chiffre à sa gauche, 3, est celui des kilolitres ; à sa droite viennent 6 décalitres puis 7 litres. Les zéros du début ne s'écrivent pas : 3 kl 9 hl 6 dal 7 l.",
    "toutOuRien": true
   },
   {
@@ -1777,7 +1789,7 @@
    "fiche": "ma-conversions",
    "reponse": 12,
    "unite": "banquettes",
-   "explication": "1 268 cm = 12,68 m : 12 banquettes entières."
+   "explication": "On convertit dans la même unité : 1 268 cm = 12,68 m. On peut aligner 12 banquettes d'un mètre ; la 13e ne tient pas en entier, car il ne reste que 68 cm."
   },
   {
    "id": "ceb-2018-l4-q14a",
@@ -1820,7 +1832,7 @@
      "16 heures 29"
     ]
    ],
-   "explication": "Le 27 juin, le soleil se lève à 05:31 et se couche à 22:00. De 5 h 31 à 21 h 31 : 16 h ; plus 29 min jusqu'à 22 h : 16 h 29 min."
+   "explication": "Sur la page du 27 juin, on lit « lever 05:31 » et « coucher 22:00 ». De 5 h 31 à 21 h 31, il s'écoule 16 h ; de 21 h 31 à 22 h, encore 29 min : en tout 16 h 29 min."
   },
   {
    "id": "ceb-2018-l4-q14b",
@@ -1840,7 +1852,7 @@
     "41",
     "41 jours"
    ],
-   "explication": "Du 16 au 31 mai : 16 jours ; + 27 jours de juin = 43 jours (inclus). Le corrigé accepte aussi 41 ou 42 jours.",
+   "explication": "Mai a 31 jours. Du 16 au 31 mai inclus, cela fait 31 − 16 + 1 = 16 jours ; on ajoute les 27 premiers jours de juin : 16 + 27 = 43 jours. Si on ne compte pas le premier ou le dernier jour, on trouve 42 ou 41, ce qui est aussi accepté.",
    "souple": true
   },
   {
@@ -1862,7 +1874,7 @@
      "32"
     ]
    ],
-   "explication": "De 12 h 08 à 14 h 08 : 2 h ; + 32 min.",
+   "explication": "Le téléphone affiche 12 h 08. De 12 h 08 à 14 h 08, il y a 2 h ; de 14 h 08 à 14 h 40, il y a encore 40 − 8 = 32 min. Il reste donc 2 h 32 min.",
    "toutOuRien": true
   },
   {
@@ -1896,7 +1908,7 @@
      "2,5"
     ]
    ],
-   "explication": "12 = 8 × 1,5 : tout × 1,5. 1,25 l = 1 l × 1,25 : 8 × 1,25 = 10 personnes.",
+   "explication": "Pour 12 personnes, on prend une fois et demie la recette de 8 (8 + 4) : 4 + 2 = 6 boules, 1,5 l de lait, 3 cuillerées. Pour 1,25 l de lait, on ajoute un quart de la recette (0,25 l) : 8 + 2 = 10 personnes, 4 + 1 = 5 boules, 2 + 0,5 = 2,5 cuillerées.",
    "groupes": [
     [
      0,
@@ -1941,7 +1953,7 @@
     1,
     4
    ],
-   "explication": "Voiture ≈ 1 t ; stylo ≈ 14 cm ; feuille ≈ 5 g ; fer ≈ 1 500 W ; porte ≈ 2,10 m."
+   "explication": "Une voiture pèse environ 1 t (entre 0,8 t et 1,5 t). Un stylo mesure environ 14 cm. Une feuille A4 pèse quelques grammes (4 à 5 g). Un fer à repasser a une puissance d'environ 1 500 W. Une porte mesure un peu plus de 2 m de haut (entre 200 et 220 cm)."
   },
   {
    "id": "ceb-2018-l4-q18",
@@ -1955,7 +1967,7 @@
    "fiche": "ma-volumes",
    "reponse": 96,
    "unite": "ml",
-   "explication": "40 × 40 × 30 = 48 000 cm³ = 48 l ; 48 × 2 = 96 ml."
+   "explication": "On calcule le volume d'eau, pas celui de tout l'aquarium : 40 × 40 × 30 = 48 000 cm³. Comme 1 l = 1 000 cm³, cela fait 48 l. Il faut 2 ml par litre : 48 × 2 = 96 ml d'Algue Stop."
   },
   {
    "id": "ceb-2018-l4-q1",
@@ -1963,11 +1975,12 @@
    "numero": "1a",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Si la bande grisée vaut 1, colorie la fraction demandée : 2/3 et 5/12.",
+   "enonce": "Si la bande entièrement grisée vaut 1 (livret, page 3), colorie la fraction demandée dans chaque bande : 2/3, puis 5/12.",
    "points": 2,
    "corrigeVerifie": false,
    "numerisable": false,
-   "fiche": "ma-fractions"
+   "fiche": "ma-fractions",
+   "explication": "La bande qui vaut 1 mesure 6 cm. Pour 2/3, partage-la en 3 parts de 2 cm et colories-en 2 : 4 cm. Pour 5/12, partage-la en 12 parts de 0,5 cm et colories-en 5 : 2,5 cm."
   },
   {
    "id": "ceb-2018-l4-q1b",
@@ -1998,7 +2011,7 @@
     ]
    ],
    "souple": true,
-   "explication": "Barre 1 : 5/6 ; barre 2 : 1/4 (ou des fractions équivalentes).",
+   "explication": "La bande qui vaut 1 mesure 6 cm. Dans la barre 1, la partie grisée mesure 5 cm : c'est 5/6. Dans la barre 2, elle mesure 1,5 cm, soit le quart de 6 cm : c'est 1/4. Une fraction équivalente est aussi juste.",
    "corrigeVerifie": true
   },
   {
@@ -2031,7 +2044,7 @@
     ]
    ],
    "souple": true,
-   "explication": "3 secteurs sur 8 sont grisés : 3/8 ; il reste 5/8. Une fraction équivalente à 3/8 : 6/16, 9/24… (la fraction 3/8 elle-même est refusée)."
+   "explication": "Le disque est partagé en 8 parts égales et 3 sont grisées : 3/8. Les 5 autres ne le sont pas : 5/8. Pour une fraction équivalente, on multiplie le numérateur et le dénominateur par le même nombre : 3/8 = 6/16 (× 2). Réécrire 3/8 ne compte pas."
   },
   {
    "id": "ceb-2018-l4-q3c",
@@ -2039,10 +2052,11 @@
    "numero": "3c",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Colorie un quart du disque complet dans la partie non grisée.",
+   "enonce": "Observe ce disque partagé en 8 parts égales, dont 3 sont grisées (livret, page 5). Colorie un quart du disque complet dans la partie non grisée.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le disque complet a 8 parts égales. Un quart du disque, c'est 8 : 4 = 2 parts. Il faut donc colorier 2 des 5 parts blanches."
   },
   {
    "id": "ceb-2018-l4-q4a",
@@ -2064,7 +2078,7 @@
     "Représentation 4"
    ],
    "reponse": 1,
-   "explication": "Sur 36 élèves : 18 (la moitié), 12 (le tiers) et 6 pour le reste. Chaque petit carré vaut 2 élèves : la représentation 2 convient."
+   "explication": "La représentation a 18 cases pour 36 élèves : une case vaut 2 élèves. Il faut 18 élèves (la moitié) = 9 cases, 12 élèves (le tiers) = 6 cases et 6 élèves = 3 cases. Seule la représentation 2 a 9 cases grises, 6 blanches et 3 noires."
   },
   {
    "id": "ceb-2018-l4-q5b",
@@ -2077,7 +2091,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-perimetre-constant",
    "reponseModele": "Toute longueur et toute largeur dont la somme fait 9 cm, avec deux dimensions différentes : par exemple 6 cm et 3 cm, ou 5 cm et 4 cm. 4,5 cm et 4,5 cm est refusé (c'est un carré, pas un rectangle strict).",
-   "explication": "Le périmètre est 2 × (longueur + largeur) : longueur + largeur = 9 cm."
+   "explication": "Le périmètre d'un rectangle vaut 2 × (longueur + largeur), donc longueur + largeur = 18 : 2 = 9 cm. Toute paire de mesures différentes qui fait 9 cm convient (6 cm et 3 cm, 5 cm et 4 cm…). 4,5 cm et 4,5 cm donne un carré, pas un rectangle strict."
   },
   {
    "id": "ceb-2018-l4-q8",
@@ -2112,7 +2126,7 @@
     ]
    ],
    "souple": true,
-   "explication": "A = 14 ; B = 20 ; C = 2,5 ; D = 8 ; E = 8 unités."
+   "explication": "On compte les carrés-unités entiers et on assemble les morceaux. A : rectangle de 6 × 3 = 18, moins le trou de 4 : 14. B : trapèze (6 + 4) × 4 : 2 = 20. C : triangle 5 × 1 : 2 = 2,5. D : carré penché dont les diagonales mesurent 4 : 4 × 4 : 2 = 8. E : rectangle de 4 et pointe triangulaire de 4 : 8."
   },
   {
    "id": "ceb-2018-l4-q9",
@@ -2120,10 +2134,11 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Colorie 75 % et 140 % de l'unité.",
+   "enonce": "Ce carré représente une unité (livret, page 10).\na) Colorie 75 % de l'unité.\nb) Colorie 140 % de l'unité.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le carré-unité est partagé en 100 petits carrés : 1 % = 1 petit carré. a) 75 % = 75 petits carrés, soit les 3/4 du carré. b) 140 % = 140 petits carrés : le carré entier (100 %) plus 40 petits carrés d'une deuxième unité. S'il n'y a pas de place, on peut écrire qu'il manque 40 carrés."
   },
   {
    "id": "ceb-2018-l4-q10",
@@ -2140,7 +2155,7 @@
    ],
    "reponse": 20,
    "unite": "%",
-   "explication": "20 % de la figure sont grisés."
+   "explication": "La figure compte 40 cases, dont 8 sont grisées. 8 sur 40, c'est 8/40 = 1/5 = 20/100, donc 20 %."
   },
   {
    "id": "ceb-2018-l4-q11",
@@ -2170,7 +2185,7 @@
     ]
    ],
    "souple": true,
-   "explication": "3 km = 3 000 m est le plus long ; 30 m est le plus court (30 dam, 300 m et 0,3 hm valent tous 300 m)."
+   "explication": "On convertit tout en mètres : 3 km = 3 000 m ; 30 dam = 300 m ; 300 m ; 0,3 hm = 30 m ; 30 m. Le plus long est 3 km (Marc) ; le plus court est 30 m, qui s'écrit aussi 0,3 hm (Justine)."
   },
   {
    "id": "ceb-2018-l4-q15b",
@@ -2194,7 +2209,7 @@
      "45"
     ]
    ],
-   "explication": "L'horloge indique 12 h 55 : de 12 h 55 à 14 h 40, il reste 1 h 45 min.",
+   "explication": "La petite aiguille est juste avant le 1 et la grande sur le 11 : il est 12 h 55. De 12 h 55 à 13 h, il y a 5 min ; de 13 h à 14 h 40, 1 h 40 min. En tout : 1 h 45 min.",
    "toutOuRien": true
   },
   {
@@ -2217,7 +2232,7 @@
     0,
     1
    ],
-   "explication": "Dans l'expérience 1, seule la température change entre le pot A (dans la classe) et le pot B (à l'extérieur) : la condition mise en évidence est la présence de chaleur.",
+   "explication": "Les pots A et B ont tous les deux de la terre, de l'eau et de la lumière : ces conditions ne changent pas, l'expérience ne permet donc pas de les tester. Seule la température change (A dans la classe, B dehors au froid), et les graines du pot B n'ont pas germé : l'expérience 1 montre que la chaleur est nécessaire.",
    "lignes": [
     "Présence de terre",
     "Présence d'eau et de lumière",
@@ -2252,7 +2267,7 @@
     "Expérience 4"
    ],
    "reponse": 1,
-   "explication": "Le pot C est sans terre."
+   "explication": "Dans l'expérience 2, la seule différence entre les pots est la terre : le pot C n'en a pas (graines sur du feutre). Ses graines ont quand même germé : la terre n'est donc pas nécessaire à la germination."
   },
   {
    "id": "ceb-2018-l5-q1c",
@@ -2267,7 +2282,8 @@
    "documents": [
     "germ-2"
    ],
-   "reponseModele": "« Les graines ont-elles besoin de lumière pour germer ? »"
+   "reponseModele": "« Les graines ont-elles besoin de lumière pour germer ? »",
+   "explication": "Dans l'expérience 3, seule la lumière change : le pot D est dans l'obscurité. Une bonne question parle donc de la lumière (ou de l'obscurité) et de la germination, par exemple : « Une graine germe-t-elle dans l'obscurité ? ». Le mot « pousser » ne convient pas : on étudie la germination, pas la croissance."
   },
   {
    "id": "ceb-2018-l5-q1e",
@@ -2284,7 +2300,7 @@
     "germ-2",
     "germ-3"
    ],
-   "explication": "Il faut de la chaleur (expérience 1) et de l'eau (expérience 4 : sans eau, la graine ne germe pas). La terre et la lumière ne sont pas indispensables.",
+   "explication": "Les résultats montrent que les graines ne germent ni au froid (pot B de l'expérience 1) ni sans eau (pot E de l'expérience 4). Elles germent sans terre (pot C) et dans le noir (pot D). Les deux conditions indispensables sont donc la chaleur et l'eau (l'humidité).",
    "texte": "1re condition : {1}\n2e condition : {2}",
    "souple": true,
    "differentes": true,
@@ -2343,7 +2359,7 @@
     1,
     2
    ],
-   "explication": "L'eau se partage : évaporation, ruissèlement, infiltration, absorption.",
+   "explication": "Le schéma montre que l'eau de pluie se partage : une partie s'évapore (aussi par les feuilles), une partie ruissèle vers le cours d'eau, une partie s'infiltre et une partie est absorbée par les racines. Ni la nappe ni les plantes ne reçoivent donc toute l'eau.",
    "parReponse": true,
    "documents": [
     "liv5-p08"
@@ -2363,7 +2379,8 @@
     "cycle",
     "captage"
    ],
-   "reponseModele": "L'herbicide s'infiltre avec l'eau de pluie jusqu'à la nappe phréatique, où l'on capte l'eau potable : il pollue l'eau que nous buvons."
+   "reponseModele": "L'herbicide s'infiltre avec l'eau de pluie jusqu'à la nappe phréatique, où l'on capte l'eau potable : il pollue l'eau que nous buvons.",
+   "explication": "Une bonne réponse dit que l'herbicide pollue, et parle de l'eau : il s'infiltre avec la pluie jusqu'à la nappe phréatique. Or le document 2 montre que l'eau du robinet est captée dans cette nappe : l'eau que nous buvons serait polluée."
   },
   {
    "id": "ceb-2018-l5-q6a",
@@ -2392,7 +2409,7 @@
     3,
     4
    ],
-   "explication": "Glace → fonte → eau liquide → chauffage → ébullition."
+   "explication": "On commence par les glaçons entiers (D), puis la glace qui fond dans un peu d'eau (E), puis l'eau toute liquide (A). Ensuite on chauffe l'eau (C, donnée) et enfin elle bout, avec de grosses bulles (B)."
   },
   {
    "id": "ceb-2018-l5-q6b",
@@ -2416,7 +2433,7 @@
     0,
     1
    ],
-   "explication": "Glace : solide ; eau : liquide.",
+   "explication": "Sur la photo E, on voit encore des glaçons, c'est-à-dire de l'eau à l'état solide, qui flottent dans de l'eau à l'état liquide. Il n'y a pas encore de vapeur (état gazeux), car on ne chauffe pas encore.",
    "parReponse": true
   },
   {
@@ -2440,7 +2457,7 @@
     "100 °C"
    ],
    "reponse": 1,
-   "explication": "La glace fond à 0 °C."
+   "explication": "Sur la photo E, la glace est en train de fondre dans l'eau. Tant que de la glace fond, l'eau reste à 0 °C, la température de fusion de la glace."
   },
   {
    "id": "ceb-2018-l5-q6d",
@@ -2463,7 +2480,7 @@
     "100 °C"
    ],
    "reponse": 4,
-   "explication": "L'eau bout à 100 °C."
+   "explication": "Sur la photo B, l'eau chauffée forme de grosses bulles : elle bout. L'eau pure bout à 100 °C."
   },
   {
    "id": "ceb-2018-l5-q7",
@@ -2482,7 +2499,7 @@
     "−5,5 ; −2 ; 0 ; 0 ; 0 ; 1,5"
    ],
    "reponse": 3,
-   "explication": "Tant qu'il reste de la glace, la température reste à 0 °C (8 h 20, 8 h 30, 8 h 40)."
+   "explication": "À 20, 30 et 40 minutes, il reste de la glace et le texte dit que la température « reste stable » : elle reste à 0 °C. Elle monte seulement quand toute la glace est fondue, à 50 minutes (1,5 °C). Les autres tableaux montent trop tôt."
   },
   {
    "id": "ceb-2018-l5-q8",
@@ -2514,7 +2531,7 @@
      "amanite ovoide"
     ]
    ],
-   "explication": "Vesse de loup, pézize, tricholome, pratelle, amanite ovoïde, oronge (le cèpe n'a pas de lamelles). (Dans la clé officielle, le cèpe est donné en exemple.)"
+   "explication": "On suit la clé avec les images du portfolio. Sans distinction pied/chapeau et en forme de coupe : la pézize. Des lamelles mais pas d'anneau : le tricholome. Un anneau mais pas de volve : la pratelle. Une volve et un chapeau blanc : l'amanite ovoïde (l'oronge a le chapeau orangé)."
   },
   {
    "id": "ceb-2018-l5-q9a",
@@ -2522,7 +2539,7 @@
    "numero": "9a",
    "domaine": "sc.vivant",
    "type": "grille",
-   "enonce": "La circulation du sang : vrai ou faux ?",
+   "enonce": "La circulation du sang.\nPour chaque affirmation, dis si elle est correcte ou incorrecte.",
    "points": 5,
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
@@ -2544,7 +2561,7 @@
     0,
     1
    ],
-   "explication": "Le sang circule en circuit fermé, toujours dans le même sens ; le cœur accélère à l'effort et ne s'arrête jamais."
+   "explication": "Le sang circule dans des vaisseaux fermés, toujours dans le même sens. Le cœur est un muscle qui se contracte pour pousser le sang. Il bat plus vite quand on fait un effort, et il ne s'arrête jamais chez une personne vivante."
   },
   {
    "id": "ceb-2018-l5-q9b",
@@ -2565,7 +2582,7 @@
     0,
     2
    ],
-   "explication": "Le sang apporte l'oxygène et emporte les déchets.",
+   "explication": "Pendant l'effort, les muscles travaillent plus : ils ont besoin de plus d'oxygène, que le sang leur apporte, et ils produisent plus de déchets, que le sang emporte. Le sang ne va pas « plus bas » : il circule partout dans le corps, au repos comme à l'effort.",
    "parProposition": true
   },
   {
@@ -2605,7 +2622,7 @@
    "numero": "11a",
    "domaine": "sc.vivant",
    "type": "qcm",
-   "enonce": "Graphique des batraciens à Lasne : que représente la ligne bleue ?",
+   "enonce": "Lis le texte et le graphique « Migration des batraciens à Lasne » (portfolio, page 12).\nDans le graphique, que représente la ligne bleue ?",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "ma-donnees",
@@ -2618,7 +2635,7 @@
     "La température du matin"
    ],
    "reponse": 2,
-   "explication": "Légende : bleu = température du matin."
+   "explication": "La légende sous le graphique indique : trait rouge = « Température du soir », trait bleu = « Température du matin ». Le nombre de batraciens est montré par les bâtonnets verts."
   },
   {
    "id": "ceb-2018-l5-q11b",
@@ -2643,7 +2660,7 @@
     0,
     1
    ],
-   "explication": "695 batraciens le 5 mars et 393 le 4 mars.",
+   "explication": "Les dates les plus favorables sont celles où le plus de batraciens sont sortis : les bâtonnets les plus hauts sont ceux du 5 mars (695) et du 4 mars (393). Le 11 mars (359) et le 12 mars (271), il y en a moins.",
    "parReponse": true
   },
   {
@@ -2660,7 +2677,7 @@
     "batra"
    ],
    "reponse": 271,
-   "explication": "Le 12 mars (environ 15 °C le soir) : 271 batraciens."
+   "explication": "La soirée la plus chaude est le point le plus haut de la ligne rouge : le 12 mars, environ 15 °C. Le bâtonnet de ce jour-là indique 271 batraciens."
   },
   {
    "id": "ceb-2018-l5-q13",
@@ -2680,7 +2697,7 @@
     "le gout"
    ],
    "reponse": 0,
-   "explication": "Une illusion d'optique trompe la vue.",
+   "explication": "Ce dessin est une illusion d'optique : on n'arrive pas à voir tous les points noirs en même temps, ils semblent apparaitre et disparaitre. C'est donc la vue qui est trompée.",
    "documents": [
     "liv5-p23"
    ]
@@ -2738,7 +2755,7 @@
     4,
     2
    ],
-   "explication": "1 : précipitations ; 2 : évaporation ; 3 : ruissèlement ; 4 : condensation. « Solidification » n'est pas utilisé.",
+   "explication": "1 : la pluie tombe des nuages, ce sont les précipitations. 2 : les flèches montent du sol et de la forêt vers le ciel, c'est l'évaporation. 3 : l'eau coule sur la pente vers la rivière, c'est le ruissèlement. 4 : la vapeur se refroidit en altitude et forme les nuages, c'est la condensation. La solidification (eau qui gèle) n'apparait pas.",
    "toutOuRien": true
   },
   {
@@ -2747,13 +2764,14 @@
    "numero": "3",
    "domaine": "sc.matiere",
    "type": "ouverte",
-   "enonce": "Complète le graphique en bâtonnets de la consommation d'eau.",
+   "enonce": "Lis le graphique du portfolio (page 10) et complète le graphique en bâtonnets « Répartition des consommations moyennes d'eau par personne et par jour en Région wallonne » (livret, page 7). Utilise ta latte.",
    "points": 3,
    "corrigeVerifie": false,
    "documents": [
     "conso"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Il faut reporter les pourcentages du diagramme circulaire pour les bâtonnets qui manquent : boisson et préparation des aliments 3 %, vaisselle 7 %, hygiène corporelle 33 %. Chaque bâtonnet doit s'arrêter exactement à la bonne graduation de l'axe des pourcentages."
   },
   {
    "id": "ceb-2018-l5-q4a",
@@ -2788,7 +2806,7 @@
     4,
     3
    ],
-   "explication": "A : légende 3 ; B : légende 2 ; C : légende 5 ; D : légende 4."
+   "explication": "A : la flèche monte depuis les feuilles de l'arbre (légende 3). B : la flèche monte depuis le sol (légende 2). C : l'eau tombée glisse sur le sol jusqu'au cours d'eau (légende 5). D : la flèche entre dans les racines (légende 4)."
   },
   {
    "id": "ceb-2018-l5-q5",
@@ -2849,7 +2867,7 @@
     1,
     2
    ],
-   "explication": "Le biceps est contracté sur les photos 1, 2 et 3 ; il ne l'est pas sur les photos 4 et 5."
+   "explication": "Le biceps se contracte (il devient plus court et gonfle) quand on plie le bras au coude. Sur les photos 1, 2 et 3, le bras est plié ; sur les photos 4 et 5, il est tendu, donc le biceps n'est pas contracté."
   },
   {
    "id": "ceb-2018-l5-q10c",
@@ -2862,7 +2880,7 @@
    "corrigeVerifie": true,
    "fiche": "sc-corps-humain",
    "reponseModele": "Une question sur la place ou l'attache du muscle (1 point). Exemples : « Où se trouve ce muscle ? » ; « Comment ce muscle est-il attaché (aux os) ? » ; toute formulation dans ce sens. On ne sanctionne pas l'erreur de grammaire.",
-   "explication": "Pour dessiner un muscle, il faut savoir où il est et à quels os il est attaché (par des tendons).",
+   "explication": "Une bonne réponse est une vraie question sur la place du muscle ou sur la manière dont il est attaché aux os, par exemple : « Où se trouve ce muscle ? » ou « À quels os ce muscle est-il attaché ? ».",
    "documents": [
     "liv5-p20"
    ]
@@ -2946,7 +2964,7 @@
     0,
     3
    ],
-   "explication": "L'ampoule peut s'allumer dans les circuits 1 et 4 (circuits fermés) ; dans les circuits 2 et 3, le circuit est ouvert."
+   "explication": "L'ampoule s'allume si le courant peut faire une boucle complète : une borne de la pile, l'ampoule, le fil de cuivre, la tige qui le touche, puis l'autre borne. C'est le cas des circuits 1 et 4. Dans le 2, une borne de la pile n'est reliée à rien ; dans le 3, les deux fils partent de la même borne."
   },
   {
    "id": "ceb-2018-l6-q2",
@@ -2979,7 +2997,7 @@
      "le mâle"
     ]
    ],
-   "explication": "L'ouvrière change de mission ; la reine pond ; le mâle ne participe pas à la vie commune."
+   "explication": "Les ouvrières ont une « mission » qui change selon leur âge : nettoyeuse, nourricière, cirière… (oui → ouvrière). Les autres ne changent pas de rôle : la reine « passe sa vie à pondre » (oui → reine) et les mâles ne pondent pas et « ne participent pas à la vie commune » (non → mâle)."
   },
   {
    "id": "ceb-2018-l6-q3",
@@ -3008,7 +3026,7 @@
     1,
     2
    ],
-   "explication": "Les ventileuses battent des ailes ; les nettoyeuses gardent la ruche propre."
+   "explication": "Le texte dit : « Les ventileuses renouvèlent l'air intérieur en battant des ailes » et « Les nettoyeuses assurent la propreté de la ruche »."
   },
   {
    "id": "ceb-2018-l6-q4",
@@ -3022,7 +3040,8 @@
    "documents": [
     "abeilles-2"
    ],
-   "reponseModele": "Les nettoyeuses expédient le cadavre dehors ; sinon, elles l'embaument de propolis pour éviter qu'il n'infecte la ruche."
+   "reponseModele": "Les nettoyeuses expédient le cadavre dehors ; sinon, elles l'embaument de propolis pour éviter qu'il n'infecte la ruche.",
+   "explication": "Une bonne réponse donne les deux façons citées dans la partie B : les nettoyeuses expédient le cadavre dehors ; sinon, elles l'embaument (elles l'enduisent de propolis) pour que sa décomposition n'infecte pas la ruche."
   },
   {
    "id": "ceb-2018-l6-q5",
@@ -3054,7 +3073,7 @@
      0
     ]
    ],
-   "explication": "Retrouver la ruche : communiquer / s'orienter (C). La fécondation de la reine : durer (B)."
+   "explication": "Retrouver le chemin de sa ruche, c'est s'orienter : la partie C explique comment les abeilles se guident grâce au soleil et à l'odorat. La fécondation de la reine parle du rôle de la reine (partie A) et de la naissance de nouvelles abeilles (partie B) : les deux parties conviennent."
   },
   {
    "id": "ceb-2018-l6-q6",
@@ -3076,7 +3095,7 @@
     "son expérience"
    ],
    "reponse": 2,
-   "explication": "« celle » = la mission des autres catégories."
+   "explication": "« celle » est un pronom féminin singulier qui évite de répéter un nom : chaque ouvrière a une mission sans empiéter sur la mission des autres catégories. « celle » remplace donc « une mission ». « des autres catégories » est le complément qui suit le pronom."
   },
   {
    "id": "ceb-2018-l6-q7",
@@ -3104,7 +3123,7 @@
     2,
     3
    ],
-   "explication": "« Faux bourdons », « rois fainéants » et « rentiers » désignent les mâles. Le corrigé officiel accepte aussi « les insectes minoritaires ».",
+   "explication": "Le texte reprend « les mâles » par d'autres mots : « faux bourdons », « les insectes minoritaires », « de véritables rois fainéants » et « rentiers ». « ouvrières » et « celles-ci » désignent les autres abeilles, celles qui tuent les mâles.",
    "parReponse": true,
    "aussiAcceptes": [
     1
@@ -3131,7 +3150,7 @@
     1,
     3
    ],
-   "explication": "« sont… » : attribut ; « se déplace en suivant… » : CC."
+   "explication": "La phrase modèle est construite ainsi : sujet (Les butineuses) + verbe (ont) + complément direct du verbe (le rôle le plus noble…). C'est pareil pour « Les ventileuses renouvèlent l'air intérieur » et « Les nourricières nourrissent les larves et la reine ». Dans « sont des abeilles… », il y a un attribut du sujet ; dans « se déplace en suivant… », il n'y a pas de complément direct."
   },
   {
    "id": "ceb-2018-l6-q9",
@@ -3153,7 +3172,7 @@
     "Ces touristes comprennent les explications fournies."
    ],
    "reponse": 2,
-   "explication": "Ici, « comprendre » = contenir."
+   "explication": "Dans l'extrait, les rayons « comprennent » des alvéoles : ils les contiennent. C'est le même sens dans « Ces livres comprennent beaucoup d'histoires » (ils les contiennent). Dans les autres phrases, « comprendre » veut dire saisir le sens de quelque chose."
   },
   {
    "id": "ceb-2018-l6-q10",
@@ -3167,7 +3186,8 @@
    "documents": [
     "abeilles-1"
    ],
-   "reponseModele": "Une sorte de lait sécrété par les glandes des abeilles nourricières, donné aux larves."
+   "reponseModele": "Une sorte de lait sécrété par les glandes des abeilles nourricières, donné aux larves.",
+   "explication": "Une réponse précise reprend la définition de la partie B : la gelée royale est « une sorte de lait sécrété par les glandes » des abeilles nourricières. Dire seulement que c'est une sorte de lait est incomplet : il faut aussi dire qui la produit."
   },
   {
    "id": "ceb-2018-l6-q12",
@@ -3198,7 +3218,7 @@
     1,
     2
    ],
-   "explication": "La ponte et l'élevage des larves : B. L'orientation : C."
+   "explication": "La ponte de la reine après sa fécondation et la nourriture des larves (gelée royale, puis eau, miel et pollen) sont expliquées dans la partie B, qui raconte comment la ruche dure. L'odorat qui aide à retrouver la ruche est expliqué dans la partie C, sur la communication."
   },
   {
    "id": "ceb-2018-l6-q13a",
@@ -3224,7 +3244,7 @@
     2,
     4
    ],
-   "explication": "La vue (le soleil), l'odorat et la danse."
+   "explication": "La partie C cite la vue (elles suivent le soleil), l'odorat (le produit odoriférant qui guide les débutantes) et la danse (en cercle ou en 8). Le texte ne parle ni du toucher ni de l'ouïe."
   },
   {
    "id": "ceb-2018-l6-q13b",
@@ -3249,7 +3269,7 @@
     "la reconnaissance entre elles"
    ],
    "souple": true,
-   "explication": "Le texte cite aussi le sens de l'orientation ou le pouvoir de se reconnaitre entre elles."
+   "explication": "Le texte dit : « Outre la vue, l'odorat, le sens de l'orientation et le pouvoir de se reconnaitre entre elles, elles ont encore un langage particulier : la danse. » Les deux moyens qui restent sont le sens de l'orientation et le pouvoir de se reconnaitre entre elles."
   },
   {
    "id": "ceb-2018-l6-q14",
@@ -3257,14 +3277,15 @@
    "numero": "14",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Écris un titre plus précis que « Les abeilles ».",
+   "enonce": "Le titre de ce texte est Les abeilles.\nÉcris un autre titre plus précis en respectant le contenu du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
     "abeilles-1",
     "abeilles-2"
    ],
-   "reponseModele": "La vie bien organisée des abeilles dans la ruche."
+   "reponseModele": "La vie bien organisée des abeilles dans la ruche.",
+   "explication": "Un bon titre résume tout le texte, pas une seule partie : il parle de la vie organisée des abeilles dans la ruche, par exemple « Le monde des abeilles » ou « L'organisation d'une ruche ». « La danse des abeilles » serait trop limité."
   },
   {
    "id": "ceb-2018-l6-q1",
@@ -3288,7 +3309,7 @@
     "Couverture 6"
    ],
    "reponse": 4,
-   "explication": "Un texte informatif sur les abeilles pourrait se trouver dans une encyclopédie du monde vivant : la couverture 5."
+   "explication": "Les abeilles est un texte informatif : il explique la vie réelle des abeilles. Il pourrait se trouver dans « Nature, encyclopédie du monde vivant » (couverture 5). Les couvertures 2, 3 et 6 annoncent des histoires inventées (roman, aventures), la 4 des recettes et la 1 des abbayes."
   },
   {
    "id": "ceb-2018-l6-q11",
@@ -3310,7 +3331,7 @@
     "Flèche 4"
    ],
    "reponse": 1,
-   "explication": "Les abeilles commencent au plafond et construisent vers le bas : c'est la flèche 2."
+   "explication": "Le texte dit que les abeilles commencent « au plafond de la ruche » puis continuent « à la verticale » : le rayon se construit donc du haut vers le bas. C'est la flèche 2, qui descend."
   },
   {
    "id": "ceb-2018-l7-q1b",
@@ -3318,7 +3339,7 @@
    "numero": "1b",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Carte du front fin 1914 : vrai ou faux ?",
+   "enonce": "Observe la carte du front fin 1914 (portfolio, page 17).\nPour chaque affirmation, dis si elle est vraie ou fausse.",
    "points": 3,
    "corrigeVerifie": true,
    "fiche": "hg-cartes",
@@ -3339,7 +3360,7 @@
     1,
     0
    ],
-   "explication": "Ils ont occupé le nord-est et se sont approchés de Meaux, à quelques dizaines de km de Paris, sans le prendre."
+   "explication": "Sur la carte, seul le nord-est de la France est colorié comme « régions occupées » : les Allemands n'ont pas envahi toute la France. Paris est en dehors de la zone occupée : ils ne l'ont pas conquis. Leur « avance extrême » de septembre 1914 passe près de Meaux, à environ 40 km de Paris d'après l'échelle : moins de 100 km."
   },
   {
    "id": "ceb-2018-l7-q1c",
@@ -3364,7 +3385,7 @@
     1,
     3
    ],
-   "explication": "Seule une petite zone derrière l'Yser n'était pas occupée."
+   "explication": "Sur la carte, presque toute la Belgique est dans la couleur des « régions occupées par les Allemands fin 1914 ». Seul un petit morceau à l'ouest, près d'Ypres et de l'Yser, derrière le front, ne l'est pas : c'est la poche de résistance."
   },
   {
    "id": "ceb-2018-l7-q1e",
@@ -3384,7 +3405,7 @@
     "11/11/18",
     "11 novembre 18"
    ],
-   "explication": "Le 11 novembre 1918."
+   "explication": "La Première Guerre mondiale s'est terminée par l'armistice signé le 11 novembre 1918 : c'est pour cela que le 11 novembre est un jour férié en Belgique. La guerre avait commencé en 1914."
   },
   {
    "id": "ceb-2018-l7-q2a",
@@ -3410,7 +3431,7 @@
     1,
     3
    ],
-   "explication": "Un monument, qui est une trace du passé.",
+   "explication": "La photo montre un monument construit pour se souvenir des victimes de 1914 : c'est un monument, et aussi une trace du passé, car il nous renseigne sur ce qui s'est passé. Ce n'est ni une église, ni une maison, ni un site de fouilles archéologiques.",
    "parReponse": true
   },
   {
@@ -3419,7 +3440,7 @@
    "numero": "2b",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Les plaques (documents 2, 3 et 4) permettent-elles de dire que… ?",
+   "enonce": "Observe les plaques du monument de Spontin (documents 2, 3 et 4).\nLes documents 2, 3 et 4 permettent-ils de dire que… ?",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3447,7 +3468,7 @@
     1,
     0
    ],
-   "explication": "Plus de 40 noms ; la façon dont ils sont morts n'est pas indiquée ; « Martyrs du 23 aout 1914 » ; Gabrielle Poncin avait 8 ans. Pour « toutes fusillées », le corrigé accepte aussi « c'est faux » (une victime est tombée à l'Yser, une autre est décédée à Rennes)."
+   "explication": "Les plaques portent bien plus de 40 noms (c'est vrai). Elles ne disent pas comment les victimes sont mortes (on ne peut pas le dire) ; on peut aussi répondre « c'est faux », car un soldat est « décédé à Rennes ». Le document 2 indique « Martyrs du 23 aout 1914 », pas septembre (faux). Gabrielle Poncin avait 8 ans : des enfants ont été tués (vrai)."
   },
   {
    "id": "ceb-2018-l7-q2c",
@@ -3462,7 +3483,8 @@
    "documents": [
     "spontin-2"
    ],
-   "reponseModele": "C'étaient des soldats morts au front (à l'Yser en 1914 et 1915, à Rennes en 1916), pas des civils tués à Spontin le 23 aout 1914."
+   "reponseModele": "C'étaient des soldats morts au front (à l'Yser en 1914 et 1915, à Rennes en 1916), pas des civils tués à Spontin le 23 aout 1914.",
+   "explication": "Une bonne réponse dit que ces trois hommes étaient des soldats morts ailleurs, à la guerre : le document 3 indique « tombé à l'Yser » en 1914 et 1915, et « décédé à Rennes » en 1916. Les autres sont des civils tués à Spontin le 23 aout 1914."
   },
   {
    "id": "ceb-2018-l7-q4a",
@@ -3470,7 +3492,7 @@
    "numero": "4a",
    "domaine": "hg.histoire",
    "type": "grille",
-   "enonce": "Le travail des enfants en Belgique : fait certain ou pas ?",
+   "enonce": "Lis les documents sur le travail des enfants (portfolio, pages 20 et 21).\nEn Belgique… : pour chaque phrase, dis si c'est un fait certain ou un fait qui n'est pas certain.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-sources",
@@ -3494,7 +3516,7 @@
     0,
     1
    ],
-   "explication": "En 1843, ce sont les enfants de la classe ouvrière. La première loi date de 1889. L'école obligatoire : 1914. La photo de 1904 montre des garçons."
+   "explication": "En 1843, ce sont « les enfants de la classe ouvrière » qui travaillent, pas tous les enfants (pas certain). Ils travaillent dès 6 ou 7 ans et la première loi n'arrive qu'en 1889 : en 1850, c'est permis (certain). En 1914, « l'école devient obligatoire » (certain). La photo de 1904 montre « deux jeunes garçons » au tri du charbon, pas des filles (pas certain)."
   },
   {
    "id": "ceb-2018-l7-q4b",
@@ -3509,7 +3531,8 @@
    "documents": [
     "enfants-1"
    ],
-   "reponseModele": "Parce que l'argent gagné par les enfants aide la famille pauvre à vivre."
+   "reponseModele": "Parce que l'argent gagné par les enfants aide la famille pauvre à vivre (accepté aussi : parce que c'est la guerre).",
+   "explication": "Une bonne réponse reprend l'idée du texte : l'argent gagné par les enfants aide leur famille pauvre à vivre. On peut aussi penser à la guerre qui commence en 1914."
   },
   {
    "id": "ceb-2018-l7-q4d",
@@ -3546,7 +3569,7 @@
      "Amérique du Nord"
     ]
    ],
-   "explication": "Afrique (nombreux pays) et Asie (Népal…). Le corrigé accepte aussi « Amérique ».",
+   "explication": "Les pays à plus de 20 % sont dans les trois couleurs roses et rouges de la légende (20 à 30 %, 30 à 40 %, plus de 40 %). Ils sont surtout en Afrique et en Asie ; on en voit aussi un petit dans les Caraïbes, en Amérique.",
    "souple": true,
    "differentes": true,
    "texte": "1er continent : {1}\n2e continent : {2}"
@@ -3582,7 +3605,7 @@
     3,
     2
    ],
-   "explication": "Dans l'ordre chronologique.",
+   "explication": "Les dolmens de Wéris ont été dressés à la Préhistoire. Le Colisée de Rome date de l'Antiquité (les Romains). La Tapisserie de Bayeux montre des chevaliers du Moyen Âge. Les Grandes découvertes (vers 1500) ouvrent les Temps modernes. La Révolution industrielle (19e siècle) appartient à la période contemporaine.",
    "toutOuRien": true
   },
   {
@@ -3617,7 +3640,7 @@
     "les remparts et les tours",
     "remparts et tours"
    ],
-   "explication": "Les remparts (le plan actuel garde des noms de rues « Rempart… »)."
+   "explication": "Sur la carte de 1777, les côtés du pentagone entourent la vieille ville : ce sont les remparts (les murailles, les fortifications). Le plan de 2017 en garde la trace dans des noms de rues comme « Rempart de la Tour » ou « Rempart des Béguines »."
   },
   {
    "id": "ceb-2018-l7-q7d",
@@ -3635,7 +3658,7 @@
     "19e siècle"
    ],
    "reponse": 1,
-   "explication": "1701 à 1800 : 18e siècle."
+   "explication": "Le 18e siècle va de 1701 à 1800. L'année 1777 en fait partie. Attention : on ne lit pas le siècle dans les deux premiers chiffres (17), il faut ajouter 1."
   },
   {
    "id": "ceb-2018-l7-q7d1",
@@ -3643,12 +3666,13 @@
    "numero": "7d (1re ligne)",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Sur la ligne du temps graduée de 1400 à 2100, trace un trait pour indiquer l'année 1777.",
+   "enonce": "Sur la ligne du temps graduée de 1400 à 2100 (livret, page 11), trace un trait pour indiquer l'année 1777.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "hg-siecles",
    "numerisable": false,
-   "reponseModele": "Un trait entre 1700 et 1800, juste avant la graduation 1800."
+   "reponseModele": "Un trait entre 1700 et 1800, juste avant la graduation 1800.",
+   "explication": "1777 se trouve entre 1700 et 1800, plus près de 1800 : 77 ans après 1700, il ne reste que 23 ans avant 1800. Le trait se place donc aux trois quarts environ de l'espace entre 1700 et 1800. Il faut un trait, pas une case coloriée."
   },
   {
    "id": "ceb-2018-l7-q8c",
@@ -3666,7 +3690,7 @@
     "un paysage urbain."
    ],
    "reponse": 2,
-   "explication": "À l'avant-plan, on voit surtout une surface bâtie : c'est un paysage urbain.",
+   "explication": "À l'avant-plan, les maisons et les rues serrées occupent presque tout l'espace : c'est un paysage de ville, un paysage urbain. Un paysage rural serait surtout fait de champs et de prairies ; un paysage industriel montrerait des usines.",
    "documents": [
     "liv7-p12"
    ]
@@ -3677,7 +3701,7 @@
    "numero": "9a",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Plan de la Région de Bruxelles-Capitale : complète par au nord, au sud, à l'est ou à l'ouest.",
+   "enonce": "Observe le plan de la Région de Bruxelles-Capitale (portfolio, page 27).\nComplète les affirmations par une des directions cardinales suivantes : au nord, au sud, à l'est, à l'ouest.",
    "points": 4,
    "corrigeVerifie": true,
    "fiche": "hg-orientation",
@@ -3704,7 +3728,7 @@
      "nord"
     ]
    ],
-   "explication": "Anderlecht est à l'ouest, Uccle au sud, Woluwe-Saint-Lambert au nord de Boitsfort."
+   "explication": "Le nord est en haut du plan. Anderlecht est à gauche de Woluwe-Saint-Pierre, donc à l'ouest. Uccle est en dessous de la Ville de Bruxelles, donc au sud. Woluwe-Saint-Lambert est au-dessus de Watermael-Boitsfort, et la Ville de Bruxelles au-dessus d'Uccle : au nord."
   },
   {
    "id": "ceb-2018-l7-q10",
@@ -3738,7 +3762,7 @@
     3,
     4
    ],
-   "explication": "La province de Liège comprend la Communauté germanophone ; Bruxelles est bilingue."
+   "explication": "On lit la carte linguistique. La ville de Liège est en région de langue française. Anvers est en région de langue néerlandaise. La province de Liège comprend aussi les communes germanophones de l'est : français et allemand. La Région de Bruxelles-Capitale est bilingue : français et néerlandais."
   },
   {
    "id": "ceb-2018-l7-q11a",
@@ -3760,7 +3784,7 @@
     "Légende 4"
    ],
    "reponse": 1,
-   "explication": "Les couleurs montrent l'occupation du sol : le sud boisé (Ardenne), le sillon Sambre-et-Meuse urbanisé."
+   "explication": "La légende 2 a du sens avec la carte : le sud, en vert foncé, est « Boisé » (l'Ardenne), et le long de la Sambre et de la Meuse on trouve les couleurs « urbanisé » des grandes villes. Les légendes 1 et 3 parlent de bassins ou d'arrondissements qui ne correspondent pas aux zones, et la 4 cite des polders et un littoral, absents de la Wallonie."
   },
   {
    "id": "ceb-2018-l7-q11b",
@@ -3782,7 +3806,7 @@
     "Répartition des paysages en Wallonie"
    ],
    "reponse": 2,
-   "explication": "La légende 2 décrit l'occupation du territoire."
+   "explication": "La bonne légende (légende 2) indique pour chaque zone la part agricole, boisée ou urbanisée du territoire : la carte montre donc l'occupation du territoire. Elle ne montre ni les villes ni les cours d'eau en particulier."
   },
   {
    "id": "ceb-2018-l7-q12a",
@@ -3805,7 +3829,7 @@
     1,
     4
    ],
-   "explication": "Le vent dominant, fort et toujours dans le même sens, couche les arbres.",
+   "explication": "Ces arbres sont isolés, sans protection : quand le vent souffle fort et presque toujours dans la même direction (le vent dominant), il pousse les branches et l'arbre grandit penché de ce côté. Le soleil, le poids des feuilles ou l'arrosage n'expliquent pas une forme pareille.",
    "documents": [
     "liv7-p18"
    ]
@@ -3838,7 +3862,7 @@
     0,
     1
    ],
-   "explication": "Elle protège le sol et les cultures, mais prend de la place et fait de l'ombre."
+   "explication": "Atouts : la haie freine l'eau qui ruissèle et la boue, ses feuilles mortes enrichissent le sol, et elle arrête le vent (brise-vent). Contraintes : elle prend une partie du champ qu'on ne peut pas cultiver, et son ombre gêne la croissance des cultures proches."
   },
   {
    "id": "ceb-2018-l7-q1a",
@@ -3846,13 +3870,14 @@
    "numero": "1a",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Colorie la durée des batailles sur la ligne du temps.",
+   "enonce": "Observe le document « La guerre 1914-1918 » (portfolio, page 16).\nSur la ligne du temps de 1914 à 1918, colorie la durée des batailles des Flandres, de la Somme et de Verdun. Un exemple t'est donné (la bataille de la Somme).",
    "points": 2,
    "corrigeVerifie": false,
    "documents": [
     "guerre-1"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Sur la carte, chaque bataille porte ses dates : Flandres « mai-décembre 1915 », Somme « juil.-novembre 1916 » (l'exemple), Verdun « fév.-décembre 1916 ». Sur la ligne du temps, colorie pour les Flandres de mai à décembre dans la case 1915, et pour Verdun de février à décembre dans la case 1916."
   },
   {
    "id": "ceb-2018-l7-q1d",
@@ -3860,10 +3885,11 @@
    "numero": "1d",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Repasse le contour de la Belgique de 1914.",
+   "enonce": "Sur la carte du livret (page 3), repasse en rouge le contour de la Belgique de 1914.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Suis la ligne « Frontières en 1914 » de la légende tout autour de la Belgique, entre les Pays-Bas, l'Allemagne, le Grand-Duché de Luxembourg et la France, jusqu'à la mer du Nord, sans lever le crayon."
   },
   {
    "id": "ceb-2018-l7-q3",
@@ -3883,7 +3909,7 @@
     "la Belgique"
    ],
    "souple": true,
-   "explication": "La Belgique est le seul pays dont la barre des civils morts dépasse celle des soldats morts."
+   "explication": "Pour chaque pays, on compare les deux barres. Pour la Belgique, la barre « Civils morts » est plus longue que la barre « Soldats morts ». Pour tous les autres pays, ce sont les soldats morts qui sont les plus nombreux."
   },
   {
    "id": "ceb-2018-l7-q4c",
@@ -3921,7 +3947,7 @@
     5,
     5
    ],
-   "explication": "Photo 1 : Herstal, 1899 (19e) ; photo 2 : Engis, 1904 (20e) ; photo 3 : Belgique, 2017 (21e) ; photos 4 (Népal, 2011) et 5 (Inde, 2011) : ailleurs, 21e siècle.",
+   "explication": "Il faut lire la légende de chaque photo. Photo 1 : Herstal, 1899 (Belgique, 19e siècle). Photo 2 : Engis, 1904 (Belgique, 20e siècle). Photo 3 : Belgique, 2017 (21e siècle). Photos 4 (Népal, 2011) et 5 (Inde, 2011) : ailleurs dans le monde, 21e siècle.",
    "groupes": [
     [
      0,
@@ -3992,7 +4018,7 @@
      "la Turquie"
     ]
    ],
-   "explication": "Sur la carte, des enfants travaillent encore au Portugal, en Italie et dans plusieurs pays des Balkans (Albanie, Macédoine, Serbie, Monténégro, Bosnie). Le corrigé accepte aussi la Turquie."
+   "explication": "En Europe, presque tous les pays sont gris (« pas de données ») ; ceux colorés en vert clair (0,01 à 10 %) ont encore des enfants au travail. On les trouve au sud de l'Europe : le Portugal, l'Italie et plusieurs pays des Balkans (Albanie, Macédoine, Serbie, Monténégro, Bosnie). La Turquie est aussi acceptée."
   },
   {
    "id": "ceb-2018-l7-q6",
@@ -4000,10 +4026,11 @@
    "numero": "6",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Complète la grille horaire de la semaine.",
+   "enonce": "Voici les activités d'un élève du 4 au 10 juin : sport le mercredi de 14 h à 15 h 30 et le samedi de 9 h 30 à 11 h ; dentiste mardi à 17 h 30 ; visite médicale toute la matinée de jeudi ; préparation de son exposé 3 fois de 17 h 30 à 18 h 30 ; invitation d'un(e) ami(e) un jour où il n'a pas d'activité prévue.\nDans la grille horaire du livret (page 9), certaines activités n'apparaissent pas. Complète la grille horaire.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Il manque le dentiste et l'exposé. Le dentiste se place le mardi, dans la case 17 h - 18 h, à partir du milieu (17 h 30). L'exposé se place exactement 3 fois, de 17 h 30 à 18 h 30, un autre jour que le mardi, puisque le dentiste occupe déjà ce moment-là."
   },
   {
    "id": "ceb-2018-l7-q7b",
@@ -4019,7 +4046,8 @@
     "ciney"
    ],
    "numerisable": false,
-   "reponseModele": "Les rues « parallèles » à l'ancien tracé des remparts (qui dessinent le pentagone), avec la place Monseu en pointillé."
+   "reponseModele": "Les rues « parallèles » à l'ancien tracé des remparts (qui dessinent le pentagone), avec la place Monseu en pointillé.",
+   "explication": "Les remparts ont disparu, mais des rues ont été construites à leur place. Sur le plan de 2017, il faut colorier les rues qui forment le même pentagone autour du centre, comme les rues « Rempart… », en passant par la place Monseu."
   },
   {
    "id": "ceb-2018-l7-q7bc",
@@ -4027,13 +4055,14 @@
    "numero": "7c",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Sur la carte Ferraris de 1777, colorie en bleu l'emplacement de la rue du Condroz actuelle et de la rue du Centre actuelle, puis trace une croix bleue à l'emplacement actuel de la place Monseu.",
+   "enonce": "Compare les documents 1 et 2 (portfolio, page 15).\nSur la carte Ferraris de 1777, colorie en bleu la rue du Condroz actuelle et la rue du Centre actuelle.\nSur cette même carte de 1777, trace une croix en bleu à l'emplacement actuel de la place Monseu.",
    "points": 2,
    "corrigeVerifie": false,
    "documents": [
     "ciney"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Repère d'abord les rues sur le plan de 2017, puis retrouve le même tracé à l'intérieur du pentagone de 1777 : la rue du Centre et la rue du Condroz traversent la vieille ville jusqu'au rempart. La place Monseu se trouve à l'ouest, dans le coin du pentagone : on place la croix au même endroit sur la carte de 1777."
   },
   {
    "id": "ceb-2018-l7-q8ab",
@@ -4041,10 +4070,11 @@
    "numero": "8a",
    "domaine": "hg.geographie",
    "type": "ouverte",
-   "enonce": "Avec un crayon de couleur rouge, trace la limite entre l'espace qui est « très bâti » et l'espace « peu bâti » sur la photographie.",
+   "enonce": "Observe la photographie du livret (page 12).\nAvec un crayon de couleur rouge, trace la limite entre l'espace qui est « très bâti » et l'espace « peu bâti ».",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "La ville, très bâtie, occupe l'avant-plan et le milieu de la photo. Plus loin, à l'arrière-plan, on voit surtout des prairies et des bois. La limite rouge suit la ligne, un peu brisée, où s'arrêtent les maisons."
   },
   {
    "id": "ceb-2018-l7-q8b1",
@@ -4070,7 +4100,7 @@
     2,
     3
    ],
-   "explication": "À l'avant-plan : des espaces boisés, une surface bâtie et des remparts.",
+   "explication": "À l'avant-plan, en bas de la photo, on voit la ville avec beaucoup de maisons (surface bâtie), des arbres (espaces boisés) et les anciens murs de la ville (remparts). On n'y voit ni prairies ni autoroutes.",
    "corrigeVerifie": true
   },
   {
@@ -4106,7 +4136,7 @@
     1,
     1
    ],
-   "explication": "À l'arrière-plan : des espaces boisés et des prairies (le corrigé accepte aussi une surface bâtie).",
+   "explication": "À l'arrière-plan, en haut de la photo, on voit surtout la campagne : des prairies et des espaces boisés. On peut aussi y voir quelques maisons. Il n'y a ni remparts ni autoroutes.",
    "corrigeVerifie": true,
    "toutOuRien": true
   },
@@ -4128,7 +4158,7 @@
     "Saint Gilles"
    ],
    "souple": true,
-   "explication": "La commune coloriée en noir est Saint-Gilles."
+   "explication": "Compare la carte avec le plan de la page 27 : la commune noire est petite, au sud du centre de la Ville de Bruxelles, entre Anderlecht, Forest et Ixelles. C'est Saint-Gilles."
   },
   {
    "id": "ceb-2018-l7-q13",
@@ -4136,10 +4166,11 @@
    "numero": "13a",
    "domaine": "hg.histoire",
    "type": "ouverte",
-   "enonce": "Sur le schéma représentant deux cours d'eau, trace une flèche en bleu pour indiquer le sens de l'écoulement de l'eau.",
+   "enonce": "Voici un schéma représentant deux cours d'eau (livret, page 20).\nSur le schéma, trace une flèche en bleu pour indiquer le sens de l'écoulement de l'eau.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un cours d'eau coule toujours de la source, en hauteur, vers la mer, plus bas. La flèche doit donc partir du côté des montagnes (n° 1) et aller vers la mer (n° 4)."
   },
   {
    "id": "ceb-2018-l7-q13b",
@@ -4159,7 +4190,7 @@
     "Légende C"
    ],
    "reponse": 2,
-   "explication": "1 : source ; 2 : affluent ; 3 : confluent ; 4 : embouchure. C'est la légende C.",
+   "explication": "1 est l'endroit où nait le cours d'eau : la source. 2 est une petite rivière qui se jette dans une plus grande : un affluent. 3 est le point où les deux cours d'eau se rejoignent : le confluent. 4 est l'endroit où le cours d'eau arrive dans la mer : l'embouchure. C'est la légende C.",
    "corrigeVerifie": true
   },
   {
@@ -4182,7 +4213,7 @@
     "n°4"
    ],
    "reponse": 3,
-   "explication": "La photo montre l'arrivée d'un fleuve dans la mer : une embouchure, le n°4.",
+   "explication": "La partie entourée sur la photo montre l'endroit où le cours d'eau se jette dans la mer : c'est son embouchure, qui porte le n° 4 sur le schéma.",
    "corrigeVerifie": true
   },
   {
@@ -4197,7 +4228,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 12,
    "tolerance": 0.0001,
-   "explication": "84 : 7 = 12."
+   "explication": "On cherche combien de fois 7 entre dans 84 : 7 × 10 = 70, il reste 14, et 14 = 7 × 2. Donc 84 : 7 = 10 + 2 = 12 (vérification : 7 × 12 = 84)."
   },
   {
    "id": "ceb-2018-l8-q1b",
@@ -4211,7 +4242,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 19.2,
    "tolerance": 0.0001,
-   "explication": "43,7 − 24,5 = 19,2."
+   "explication": "Le nombre manquant est la différence entre le total et le nombre connu : 43,7 − 24,5 = 19,2. Vérification : 19,2 + 24,5 = 43,7."
   },
   {
    "id": "ceb-2018-l8-q1c",
@@ -4225,7 +4256,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 35.5,
    "tolerance": 0.0001,
-   "explication": "26,98 + 8,52 = 35.5."
+   "explication": "On additionne en alignant les virgules : 0,98 + 0,52 = 1,50, et 26 + 8 = 34. En tout : 34 + 1,50 = 35,50, qu'on peut écrire 35,5."
   },
   {
    "id": "ceb-2018-l8-q1d",
@@ -4239,7 +4270,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 99998,
    "tolerance": 0.0001,
-   "explication": "100 000 − 2 = 99998."
+   "explication": "Enlever 2 à 100 000, c'est reculer de 2 : 100 000 − 1 = 99 999, puis 99 999 − 1 = 99 998."
   },
   {
    "id": "ceb-2018-l8-q1e",
@@ -4253,7 +4284,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 0,
    "tolerance": 0.0001,
-   "explication": "Tout nombre multiplié par 0 donne 0."
+   "explication": "Dans une multiplication, si un des facteurs vaut 0, le produit vaut toujours 0 : inutile de calculer 18 × 3,2. Donc 18 × 3,2 × 0 = 0."
   },
   {
    "id": "ceb-2018-l8-q1f",
@@ -4267,7 +4298,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 111600,
    "tolerance": 0.0001,
-   "explication": "10 % = 18 600 ; × 6 = 111 600."
+   "explication": "10 % de 186 000, c'est 186 000 : 10 = 18 600. 60 %, c'est 6 fois plus : 6 × 18 600 = 111 600."
   },
   {
    "id": "ceb-2018-l8-q1g",
@@ -4281,7 +4312,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 0.06,
    "tolerance": 0.0001,
-   "explication": "42 : 700 = 0,06."
+   "explication": "Le nombre manquant vaut 42 : 700. Comme 7 × 6 = 42 et 700 est 100 fois plus grand que 7, le résultat est 100 fois plus petit que 6 : 0,06. Vérification : 0,06 × 700 = 42."
   },
   {
    "id": "ceb-2018-l8-q1h",
@@ -4295,7 +4326,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 7736,
    "tolerance": 0.0001,
-   "explication": "8 031 − 295 = 7736."
+   "explication": "On peut enlever 300 puis rajouter 5, car 295 = 300 − 5 : 8 031 − 300 = 7 731, puis 7 731 + 5 = 7 736."
   },
   {
    "id": "ceb-2018-l8-q1i",
@@ -4309,7 +4340,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 81,
    "tolerance": 0.0001,
-   "explication": "0,125 = 1/8 ; 648 : 8 = 81."
+   "explication": "0,125 est égal à 1/8 : multiplier par 0,125, c'est diviser par 8. 648 : 8 = 81 (car 8 × 80 = 640 et 8 × 1 = 8)."
   },
   {
    "id": "ceb-2018-l8-q1j",
@@ -4323,7 +4354,7 @@
    "fiche": "ma-calcul-mental",
    "reponse": 2670,
    "tolerance": 0.0001,
-   "explication": "2 240 + 1 760 = 4 000 ; + 330 = 4 330 ; 7 000 − 4 330 = 2 670."
+   "explication": "On regroupe les nombres qui vont bien ensemble : 2 240 + 1 760 = 4 000, puis 4 000 + 330 = 4 330. Il manque 7 000 − 4 330 = 2 670."
   },
   {
    "id": "ceb-2018-l8-q2a",
@@ -4343,7 +4374,7 @@
     "1 700"
    ],
    "reponse": 2,
-   "explication": "17 × 10 = 170."
+   "explication": "10,09 est très proche de 10 : 17 × 10 = 170. Le vrai produit (171,53) est donc proche de 170, pas de 1 700 (ce serait 17 × 100)."
   },
   {
    "id": "ceb-2018-l8-q2b",
@@ -4363,7 +4394,7 @@
     "45"
    ],
    "reponse": 1,
-   "explication": "40 × 0,8 = 32."
+   "explication": "41 est proche de 40 : 40 × 0,8 = 32 (car 4 × 8 = 32 et on divise par 10 deux fois). Multiplier par 0,8, qui est plus petit que 1, donne un résultat plus petit que 41 : 320 et 410 sont impossibles."
   },
   {
    "id": "ceb-2018-l8-q2c",
@@ -4383,7 +4414,7 @@
     "47 000"
    ],
    "reponse": 0,
-   "explication": "250 × 100 = 25 000."
+   "explication": "108 est proche de 100 : 250 × 100 = 25 000. Le vrai produit (27 000) en est le plus proche ; 2 800 et 10 800 sont beaucoup trop petits, 43 200 et 47 000 trop grands."
   },
   {
    "id": "ceb-2018-l8-q3a",
@@ -4397,7 +4428,7 @@
    "fiche": "ma-operations",
    "reponse": 9337,
    "tolerance": 0.0001,
-   "explication": "6 854 + 2 377 + 106 = 9337."
+   "explication": "6 854 + 106 = 6 960 (le 106 complète bien 54). Puis 6 960 + 2 377 = 9 337."
   },
   {
    "id": "ceb-2018-l8-q3b",
@@ -4411,7 +4442,7 @@
    "fiche": "ma-operations",
    "reponse": 856.8,
    "tolerance": 0.0001,
-   "explication": "252 × 3,4 = 856,8."
+   "explication": "On calcule 252 × 34 = 7 560 + 1 008 = 8 568 (252 × 30 et 252 × 4), puis on place la virgule : il y a un chiffre après la virgule dans 3,4, donc 856,8."
   },
   {
    "id": "ceb-2018-l8-q3c",
@@ -4425,7 +4456,7 @@
    "fiche": "ma-operations",
    "reponse": 1907.2,
    "tolerance": 0.0001,
-   "explication": "2 143,7 − 236,5 = 1907,2."
+   "explication": "On soustrait en alignant les virgules : 2 143,7 − 236,5. Les dixièmes : 7 − 5 = 2. Puis 2 143 − 236 = 1 907. Le résultat est 1 907,2. Vérification : 1 907,2 + 236,5 = 2 143,7."
   },
   {
    "id": "ceb-2018-l8-q4a",
@@ -4452,7 +4483,7 @@
      "329,02"
     ]
    ],
-   "explication": "Les deux produits partiels et la réciproque.",
+   "explication": "Dans la multiplication posée, la première ligne est 329,02 × 4 = 1 316,08 et la deuxième, décalée d'un rang, est 329,02 × 30 = 9 870,6. La division est l'opération réciproque : si 329,02 × 34 = 11 186,68, alors 11 186,68 : 34 = 329,02.",
    "documents": [
     "liv8-p07"
    ]
@@ -4474,7 +4505,7 @@
     "11 186,68 + 329,02"
    ],
    "reponse": 3,
-   "explication": "35 fois, c'est 34 fois + 1 fois 329,02."
+   "explication": "329,02 × 35, c'est 34 fois 329,02 plus encore une fois 329,02. On ajoute donc 329,02 au résultat connu : 11 186,68 + 329,02. Ajouter 1 ou 35 serait une erreur."
   },
   {
    "id": "ceb-2018-l8-q5",
@@ -4496,7 +4527,7 @@
     1,
     3
    ],
-   "explication": "On retire les boissons (24 + 6 = 30) puis on partage en 4 : (102 − 24 − 6) : 4 = 18 €. L'écriture (¼ × 102) − (¼ × 24) − (¼ × 6) donne le même résultat : le corrigé accepte les deux."
+   "explication": "On enlève d'abord les boissons : 2 jus à 12 € = 24 € et 3 thés à 2 € = 6 €. Il reste le prix des 4 menus, qu'on partage par 4 : (102 − 24 − 6) : 4 = 72 : 4 = 18 €. Prendre le quart de chaque nombre, (¼ × 102) − (¼ × 24) − (¼ × 6), donne aussi 18 €."
   },
   {
    "id": "ceb-2018-l8-q6",
@@ -4528,7 +4559,7 @@
      "12"
     ]
    ],
-   "explication": "38 = 40 − 2, donc 24 × 38 = (24 × 40) − (24 × 2). 192 = 120 + 72, donc 192 : 12 = (120 : 12) + (72 : 12).",
+   "explication": "38 = 40 − 2 : 24 × 38, c'est 24 × 40 moins 24 × 2 (on a compté 2 fois 24 en trop). 192 = 120 + 72 : pour diviser 192 par 12, on divise chaque morceau par 12, (120 : 12) + (72 : 12) = 10 + 6 = 16.",
    "groupes": [
     [
      0,
@@ -4562,7 +4593,7 @@
      "128 678,058"
     ]
    ],
-   "explication": "Le chiffre des centièmes passe de 6 à 8 ; celui des unités de mille de 5 à 8."
+   "explication": "Dans 4 573,169, le chiffre des centièmes est 6 (2e chiffre après la virgule) : 6 + 2 = 8, donc 4 573,189. Dans 125 678,058, le chiffre des unités de mille est 5 : 5 + 3 = 8, donc 128 678,058."
   },
   {
    "id": "ceb-2018-l8-q8",
@@ -4581,7 +4612,7 @@
     "(458 × 21) × 9"
    ],
    "reponse": 2,
-   "explication": "Dividende = quotient × diviseur + reste."
+   "explication": "Pour vérifier une division avec reste, on multiplie le quotient par le diviseur puis on ajoute le reste : on doit retrouver le dividende. (458 × 21) + 9 = 9 618 + 9 = 9 627."
   },
   {
    "id": "ceb-2018-l8-q9",
@@ -4605,7 +4636,7 @@
      "720"
     ]
    ],
-   "explication": "24 = 6 × 4 ; 5 × 6 = 30 ; 30 × 24 = 720.",
+   "explication": "La case du milieu en bas multipliée par 4 doit donner 24 : 24 : 4 = 6. La case du milieu à gauche vaut 5 × 6 = 30. Le sommet vaut 30 × 24 = 720.",
    "toutOuRien": true
   },
   {
@@ -4651,7 +4682,7 @@
      "7.2"
     ]
    ],
-   "explication": "a) on avance de 15 en 15 ; b) de 125 en 125 ; c) de 0,2 en 0,2.",
+   "explication": "On trouve d'abord l'écart entre deux graduations voisines. a) De 30 à 45 : on avance de 15, donc 15, 60 et 135. b) De 125 en 125 : 500, 750 et 875. c) De 5,6 à 5,8 : on avance de 0,2, donc 6, 6,6 et 7,2.",
    "groupes": [
     [
      0,
@@ -4683,7 +4714,7 @@
    "reponse": [
     "67,003"
    ],
-   "explication": "67 unités, 003 millièmes."
+   "explication": "Il faut 67 unités avant la virgule, puis les millièmes, qui sont le 3e chiffre après la virgule : 67,003 (0 dixième, 0 centième, 3 millièmes)."
   },
   {
    "id": "ceb-2018-l8-q13",
@@ -4700,7 +4731,7 @@
     "0,7",
     "70/100"
    ],
-   "explication": "70 centièmes = 0,70."
+   "explication": "Un centième, c'est 0,01. Septante centièmes, c'est 70 × 0,01 = 0,70, qu'on peut aussi écrire 0,7 ou 70/100."
   },
   {
    "id": "ceb-2018-l8-q16",
@@ -4723,7 +4754,7 @@
      "/"
     ]
    ],
-   "explication": "Opérations réciproques."
+   "explication": "L'addition et la soustraction sont des opérations réciproques : si 973,204 − 755,153 = 218,051, alors 755,153 + 218,051 = 973,204. De même pour la multiplication et la division : si 62,3 × 7,1 = 442,33, alors 442,33 : 7,1 = 62,3."
   },
   {
    "id": "ceb-2018-l8-q17b",
@@ -4742,7 +4773,7 @@
     "des nombres carrés."
    ],
    "reponse": 3,
-   "explication": "4 = 2², 9 = 3², 16 = 4²…"
+   "explication": "4 = 2 × 2, 9 = 3 × 3, 16 = 4 × 4, 25 = 5 × 5 et 36 = 6 × 6 : ce sont des nombres carrés. Ils ne sont pas tous pairs (9, 25) ni tous impairs (4, 16), et ce ne sont pas des nombres premiers."
   },
   {
    "id": "ceb-2018-l8-q18a",
@@ -4766,7 +4797,7 @@
     2,
     0
    ],
-   "explication": "7,02 < 7,199 < 7,2 < 7,23."
+   "explication": "Les parties entières sont toutes 7 : on compare les dixièmes. 7,02 a 0 dixième, c'est le plus petit. Puis 7,199 (1 dixième) < 7,2 (2 dixièmes) < 7,23 (2 dixièmes et 3 centièmes). Le nombre de chiffres ne compte pas : 7,199 est plus petit que 7,2."
   },
   {
    "id": "ceb-2018-l8-q18b",
@@ -4790,7 +4821,7 @@
     3,
     2
    ],
-   "explication": "0,2 < 0,4 < 0,5 < 0,75."
+   "explication": "On écrit chaque fraction en nombre décimal : 2/10 = 0,2 ; 2/5 = 0,4 ; 1/2 = 0,5 ; 3/4 = 0,75. Dans l'ordre croissant : 2/10 < 2/5 < 1/2 < 3/4."
   },
   {
    "id": "ceb-2018-l8-q18c",
@@ -4814,7 +4845,7 @@
     0,
     3
    ],
-   "explication": "0,25 < 0,48 < 0,74 < 0,75."
+   "explication": "On écrit tout en nombres décimaux : 1/4 = 0,25 et 3/4 = 0,75. Puis on compare : 0,25 < 0,480 < 0,74 < 0,75, donc 1/4 < 0,480 < 0,74 < 3/4."
   },
   {
    "id": "ceb-2018-l8-q19",
@@ -4846,7 +4877,7 @@
     5,
     4
    ],
-   "explication": "B = 9 biscuits ; D = 40 lapins ; F = 25 images ; E = 30 €."
+   "explication": "Biscuits : 3 paquets de 15, partagés entre 5, c'est (3 × 15) : 5 = 9 (B). Lapins : 15 clapiers de 3, moins 5, c'est (15 × 3) − 5 = 40 (D). Images : 5 paquets de 15 partagés entre Alice et ses 2 amies, donc 3 personnes : (5 × 15) : 3 = 25 (F). Achat : 15 crayons à 1 € + 3 gommes à 5 €, c'est 15 + (3 × 5) = 30 € (E)."
   },
   {
    "id": "ceb-2018-l8-q10",
@@ -4880,7 +4911,7 @@
      "17 + 17 + 17 + 17 + 17 + 17 + 17 + 17"
     ]
    ],
-   "explication": "8 × 17 = 136 étoiles (ou 17 × 8, ou 17 + 17 + … huit fois).",
+   "explication": "Les étoiles sont rangées en 8 rangées de 17 (ou 17 colonnes de 8). Au lieu de compter une à une, on multiplie : 8 × 17 = 80 + 56 = 136 étoiles.",
    "documents": [
     "liv8-p11"
    ]
@@ -4891,10 +4922,11 @@
    "numero": "14",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Colorie des paires de produits 12, 24 et 36.",
+   "enonce": "Dans le carré de nombres du livret (page 13), le produit des deux nombres grisés (4 et 3) est 12.\na) Colorie en rouge deux autres nombres dont le produit est 12.\nb) Colorie en vert deux nombres dont le produit est le double de 12.\nc) Colorie en bleu deux nombres dont le produit est le triple de 12.\nAttention, tu ne peux pas utiliser deux fois la même case !",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Cherche dans le carré deux cases dont le produit vaut 12 (en rouge), puis 24, le double de 12 (en vert), puis 36, le triple de 12 (en bleu). Aide-toi des tables : 12 = 2 × 6 = 1 × 12 ; 24 = 3 × 8 = 4 × 6 = 2 × 12 ; 36 = 4 × 9 = 6 × 6 = 3 × 12. Chaque case ne sert qu'une fois."
   },
   {
    "id": "ceb-2018-l8-q15",
@@ -4910,7 +4942,7 @@
     "liv8-p14"
    ],
    "reponseModele": "Les trois cases du milieu contiennent 0,18 (0,54 = 3 × 0,18). Les neuf cases du bas contiennent 0,06 (0,18 = 3 × 0,06). (1 point par ligne.)",
-   "explication": "0,54 : 3 = 0,18 ; 0,18 : 3 = 0,06."
+   "explication": "On partage 0,54 en 3 parts égales : 0,54 : 3 = 0,18 dans chaque case du milieu. Puis chaque 0,18 en 3 : 0,18 : 3 = 0,06 dans chacune des 9 cases du bas. Vérification : 9 × 0,06 = 0,54."
   },
   {
    "id": "ceb-2018-l8-q17a",
@@ -4918,10 +4950,11 @@
    "numero": "17a",
    "domaine": "ma.arithmetique",
    "type": "ouverte",
-   "enonce": "Représente le sixième nombre triangulaire.",
+   "enonce": "Voici les premiers nombres d'une suite : 1, 3, 6, 10, 15 (livret, page 15).\nReprésente le sixième nombre de cette suite dans le quadrillage. Trace et colorie.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "On ajoute chaque fois 1 de plus : 1, + 2 = 3, + 3 = 6, + 4 = 10, + 5 = 15, + 6 = 21. Le sixième nombre est 21 : on le dessine comme un escalier de 6 colonnes de 6, 5, 4, 3, 2 et 1 carrés."
   },
   {
    "id": "ceb-2018-l9-q1",
@@ -4943,7 +4976,7 @@
     "Il est déconseillé de posséder ou d'adopter des animaux exotiques."
    ],
    "reponse": 3,
-   "explication": "L'auteur dit que détenir ces animaux est contraire à leur respect et met leur vie en danger : il le déconseille."
+   "explication": "Dès le début, l'auteur dit que ces animaux « ne sont d'aucune utilité dans une maison » et que les détenir « est pourtant contraire à leur respect ». À la fin, il demande des mesures pour que les serpents restent dans la nature : il déconseille donc d'en posséder."
   },
   {
    "id": "ceb-2018-l9-q2",
@@ -4959,7 +4992,7 @@
     "ecoute"
    ],
    "reponseModele": "En hiver : il risque de mourir de froid. En été : il risque d'être tué par des passants (qui ont peur de lui). Toute phrase qui va dans le sens de chaque réponse est acceptée. 1 point par phrase.",
-   "explication": "Dans notre pays, le serpent peut mourir de froid l'hiver, et l'été des passants qui ont peur peuvent le tuer."
+   "explication": "Une bonne réponse reprend les deux dangers cités : en hiver, le serpent risque de mourir de froid dans notre pays ; en été, des personnes qui le voient sur la voie publique risquent de le tuer, parce qu'il leur fait peur."
   },
   {
    "id": "ceb-2018-l9-q3",
@@ -5042,7 +5075,7 @@
     "boa et couleuvres",
     "couleuvres et boa"
    ],
-   "explication": "Le texte parle du boa et de la couleuvre."
+   "explication": "Au début, l'auteur cite « le python, le boa ou d'autres reptiles », puis il dit que les serpents importés « vont de la petite couleuvre au python ». Les deux autres serpents nommés sont donc le boa et la couleuvre."
   },
   {
    "id": "ceb-2018-l9-q6",
@@ -5101,7 +5134,7 @@
     "ecoute"
    ],
    "reponseModele": "Une idée de destruction des récoltes (et des plantations) et une idée de contagion (ils peuvent rendre malades d'autres espèces). 1 point par idée.",
-   "explication": "Quand il y a trop de rongeurs, ils détruisent des récoltes et des plantations, et ils peuvent transmettre des maladies à d'autres espèces."
+   "explication": "Une bonne réponse donne les deux idées du texte : les rongeurs trop nombreux détruisent des récoltes et toutes sortes de plantations ; ils peuvent être contagieux et donner des maladies à d'autres espèces."
   },
   {
    "id": "ceb-2018-l9-q9",
@@ -5117,7 +5150,7 @@
     "ecoute"
    ],
    "reponseModele": "Ils les abandonnent (dans un bois, un parc ou le long d'un cours d'eau). Toute idée d'abandon est acceptée.",
-   "explication": "Certains propriétaires changent d'avis et abandonnent leur serpent dans la nature."
+   "explication": "Une bonne réponse parle d'abandon : l'auteur dit que certains propriétaires « changent d'avis et vont alors les abandonner dans un bois, un parc ou le long d'un cours d'eau »."
   },
   {
    "id": "ceb-2018-l9-q10",
@@ -5181,7 +5214,7 @@
     "ecoute"
    ],
    "reponseModele": "Comment : ils risquent de le tuer. Pourquoi : parce qu'ils ont peur (toute idée de peur). Attention : on n'accepte pas d'autres interprétations comme « Il parait méchant ». 1 point par réponse.",
-   "explication": "Certains passants n'hésitent pas à tuer le serpent, tellement il leur fait peur."
+   "explication": "Une bonne réponse a deux parties : les passants risquent de tuer le serpent, et ils le font parce qu'il leur fait peur. Une idée qui n'est pas dans le texte, comme « il parait méchant », ne convient pas."
   },
   {
    "id": "ceb-2018-l9-q13",
@@ -5221,7 +5254,7 @@
     "ecoute"
    ],
    "reponseModele": "Deux idées liées au texte, par exemple : le python contribue à l'équilibre de la nature ; le python n'est pas un jouet, un animal de compagnie, une mascotte ; le python risque de mourir (en été, en hiver, par manque de soins) ; le python peut devenir dangereux ; sa place est dans la nature ; il n'est pas fait pour vivre dans une maison. Il faut deux éléments, sinon 0 point.",
-   "explication": "Le titre dit que le python n'est pas à sa place dans un salon : il y est en danger, il peut être dangereux, et il est utile dans la nature."
+   "explication": "Une bonne réponse donne deux idées du texte qui montrent que le python ne doit pas vivre dans une maison, par exemple : ce n'est pas un jouet ni une mascotte ; il peut devenir dangereux à cause de sa force ; il risque de mourir faute de soins ; sa place est dans la nature, où il aide à garder l'équilibre en mangeant les rongeurs."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2018), comparé question par question le 21/10/2026."
