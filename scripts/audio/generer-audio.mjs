@@ -16,15 +16,16 @@ const essai = commande.mode === 'essai';
 
 const echap = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 async function synthese(texte, voix) {
-  const ssml = `<speak version="1.0" xml:lang="fr-BE"><voice name="${voix}"><prosody rate="${vitesse}">${echap(texte)}</prosody></voice></speak>`;
-  for (let essaiN = 1; essaiN <= 4; essaiN++) {
+  const langue = voix.slice(0, 5);
+  const ssml = `<speak version="1.0" xml:lang="${langue}"><voice name="${voix}"><prosody rate="${vitesse}">${echap(texte)}</prosody></voice></speak>`;
+  for (let essaiN = 1; essaiN <= (commande.mode === 'comparer' ? 2 : 4); essaiN++) {
     const r = await fetch(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`, {
       method: 'POST',
       headers: { 'Ocp-Apim-Subscription-Key': cle, 'Content-Type': 'application/ssml+xml', 'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3', 'User-Agent': 'mission-ceb' },
       body: ssml,
     });
     if (r.ok) return Buffer.from(await r.arrayBuffer());
-    console.error(`  ${voix} : HTTP ${r.status} ${await r.text().catch(() => '')} (essai ${essaiN})`);
+    console.log(`  ${voix} : HTTP ${r.status} ${await r.text().catch(() => '')} (essai ${essaiN})`);
     await new Promise((ok) => setTimeout(ok, 3000 * essaiN));
   }
   throw new Error('Synthèse impossible');
@@ -38,6 +39,26 @@ async function silence(ms) {
     silences[ms] = r.ok ? Buffer.from(await r.arrayBuffer()) : Buffer.alloc(0);
   }
   return silences[ms];
+}
+
+// Mode « comparer » : le début d'un même texte avec plusieurs paires de voix, pour choisir à l'oreille.
+if (commande.mode === 'comparer') {
+  await mkdir('audio-essais', { recursive: true });
+  const d = JSON.parse(await readFile(`data/examens/${commande.examen ?? 'ceb-2024'}.json`, 'utf8'));
+  const docs = Array.isArray(d.documents) ? d.documents : Object.values(d.documents ?? {});
+  const segs = docs.find((x) => x.segments?.length).segments.slice(0, commande.nbSegments ?? 2);
+  for (const e of commande.essais) {
+    try {
+      const morceaux = [];
+      for (const [i, s] of segs.entries()) {
+        if (i > 0) morceaux.push(await silence(segs[i - 1].lecteur !== s.lecteur ? pauseLecteur : 350));
+        morceaux.push(await synthese(s.texte, e.voix[s.lecteur ?? 1] ?? e.voix[1]));
+      }
+      await writeFile(`audio-essais/comparer-${e.nom}.mp3`, Buffer.concat(morceaux));
+      console.log(`comparer-${e.nom} : ok (${Object.values(e.voix).join(', ')})`);
+    } catch (err) { console.log(`comparer-${e.nom} : impossible (${err.message})`); }
+  }
+  process.exit(0);
 }
 
 const fichiers = (await readdir('data/examens')).filter((f) => /^ceb-.*\.json$/.test(f)).sort();
