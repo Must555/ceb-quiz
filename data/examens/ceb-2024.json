@@ -784,7 +784,7 @@
     "ecoute"
    ],
    "reponseModele": "Une question sur son métier de créateur, d'éditeur ou de distributeur de jeux, par exemple : « Comment trouvez-vous l'inspiration pour créer un jeu ? », « Combien de temps faut-il pour créer un jeu ? », « Comment distribuez-vous vos jeux ? » ou « Peut-on créer un jeu sans éditeur ? ». Attention : ce n'est pas bon si la question a déjà été posée dans l'entretien (qualités d'un créateur, bon jeu, étapes de création, objectif des jeux, catégories, « invitation à rencontrer l'autre »), ni si elle parle de la vie personnelle de Thibaut.",
-   "explication": "La question doit parler d'un de ses métiers et ne pas répéter une question déjà posée dans l'entretien."
+   "explication": "Ta question doit porter sur un de ses métiers (créer, éditer ou distribuer des jeux), par exemple « Comment trouvez-vous vos idées de jeux ? ». Elle ne doit pas reprendre une question déjà posée par le journaliste (qualités, bon jeu, étapes, objectif, catégories) ni parler de sa vie personnelle."
   },
   {
    "id": "ceb-2024-l1-q4",
@@ -813,7 +813,7 @@
     0,
     1
    ],
-   "explication": "Thibaut parle de ses métiers (créateur, éditeur, distributeur). Il ne dit rien du temps qu'il faut pour créer un jeu ni de la formation à suivre."
+   "explication": "Dès le début, le journaliste dit : « Vous êtes créateur, éditeur et distributeur de jeux de société » : ses métiers sont donnés. Personne ne dit, en revanche, combien de temps il faut pour créer un jeu, ni quelle formation suivre pour devenir créateur."
   },
   {
    "id": "ceb-2024-l1-q5",
@@ -835,7 +835,7 @@
     "faire preuve de curiosité"
    ],
    "reponse": 0,
-   "explication": "Thibaut cite l'empathie : se mettre à la place de quelqu'un d'autre. Il ne parle ni d'outils numériques, ni de dessin, ni de curiosité."
+   "explication": "Thibaut dit qu'un créateur doit être « empathique », c'est-à-dire « pouvoir se mettre à la place de quelqu'un d'autre » : c'est comprendre ce que l'autre ressent. Il ne parle ni d'outils numériques, ni de dessin, ni de curiosité."
   },
   {
    "id": "ceb-2024-l1-q6",
@@ -857,7 +857,7 @@
     "parler de ses erreurs"
    ],
    "reponse": 1,
-   "explication": "Pour Thibaut, les erreurs sont des expériences : il faut accepter de se remettre en question, analyser et prendre une autre direction."
+   "explication": "Thibaut dit qu'il faut « accepter de faire une erreur », qu'il appelle plutôt des « expériences ». Quand quelque chose ne marche pas, il analyse pourquoi et prend une autre direction : il se sert de ses erreurs pour avancer, il ne les ignore pas."
   },
   {
    "id": "ceb-2024-l1-q7",
@@ -873,7 +873,7 @@
     "ecoute"
    ],
    "reponseModele": "Il se fait connaitre en testant ses jeux dans des festivals de jeux de société (idée de lieu), ou auprès de gens qu'il rencontre, de professionnels du jeu (idée de rencontre). Ce n'est pas bon : auprès de sa famille.",
-   "explication": "Après sa famille, il teste ses jeux auprès de professionnels et de gens rencontrés dans des festivals : c'est aussi une façon de se faire connaitre."
+   "explication": "Thibaut teste ses jeux auprès de professionnels du jeu et de gens qu'il rencontre dans des festivals, puis il ajoute : « C'est aussi une façon de me faire connaitre. » Citer les festivals ou ces rencontres suffit ; les tests en famille ne le font pas connaitre."
   },
   {
    "id": "ceb-2024-l1-q8",
@@ -889,7 +889,7 @@
     "ecoute"
    ],
    "reponseModele": "On ne joue pas les uns contre les autres : on joue ensemble contre le jeu (on combat le jeu). Ce n'est pas assez de dire seulement « on joue ensemble » ou « en équipe ».",
-   "explication": "Dans un jeu de coopération, personne ne joue contre les autres : tout le monde joue ensemble contre le jeu."
+   "explication": "Thibaut aime les jeux de coopération, « où nous ne jouons pas les uns contre les autres, mais où nous jouons ensemble contre le jeu ». Dire seulement « on joue ensemble » ne suffit pas : on peut aussi jouer ensemble, en équipes, à un jeu de compétition."
   },
   {
    "id": "ceb-2024-l1-q9",
@@ -911,7 +911,7 @@
     "Les festivals de jeux sont des lieux de rencontre entre amateurs de jeux de société."
    ],
    "reponse": 2,
-   "explication": "Thibaut dit que le jeu crée un moment de pause qu'on partage avec l'autre et qu'on se donne à soi-même. Les autres phrases ne sont pas dites dans l'entretien."
+   "explication": "À la fin, Thibaut dit : « Le jeu crée alors un moment de pause qu'on partage avec un autre et qu'on se donne à soi-même. » Il ne parle jamais de concours, et les festivals sont seulement des lieux où il teste ses jeux."
   },
   {
    "id": "ceb-2024-l1-q10",
@@ -938,7 +938,7 @@
     2,
     0
    ],
-   "explication": "Il part d'une idée, réalise un prototype (un premier exemplaire), le teste, puis le jeu est édité."
+   "explication": "Les mots de liaison donnent l'ordre : « Tout d'abord, je pars d'une idée ou d'un thème », « Ensuite, je réalise un prototype » (un premier exemplaire), puis « Je le teste ». Enfin, « quand le jeu a été suffisamment testé », il est édité."
   },
   {
    "id": "ceb-2024-l1-q11",
@@ -954,7 +954,7 @@
     "ecoute"
    ],
    "reponseModele": "NON, il y a une différence. Avec le jeu, en quelques minutes d'explication des règles, tout le monde est sur un pied d'égalité et la partie peut commencer. Avec la musique, on ne peut pas jouer tout de suite : si Thibaut joue de la guitare, il ne peut pas forcément dire « Tiens, vas-y, joue » et donner la guitare. (Un seul de ces éléments suffit.)",
-   "explication": "Thibaut compare le jeu et la musique mais voit une différence : le jeu s'apprend en quelques minutes, un instrument non."
+   "explication": "Il faut répondre NON et donner la différence expliquée par Thibaut : avec le jeu, après quelques minutes d'explication des règles, tout le monde est à égalité et la partie commence ; avec la musique, on ne peut pas jouer tout de suite (il ne peut pas tendre sa guitare en disant « Tiens, vas-y, joue »)."
   },
   {
    "id": "ceb-2024-l1-q12",
@@ -976,7 +976,7 @@
     "Le but poursuivi par tous les jeux de société"
    ],
    "reponse": 3,
-   "explication": "Thibaut dit que tous les jeux ont un objectif principal : donner du plaisir."
+   "explication": "Le journaliste demande si les jeux ont tous le même objectif, et Thibaut répond que « tous les jeux ont un objectif principal, celui de donner du plaisir ». L'histoire des jeux, la formation des créateurs et les jeux en classe ne sont pas abordés."
   },
   {
    "id": "ceb-2024-l1-q13",
@@ -1008,7 +1008,7 @@
     1,
     2
    ],
-   "explication": "Il teste ses jeux dans des festivals. Un bon jeu peut ne plus fonctionner à un autre moment ou avec d'autres joueurs : c'est faux. Il ne parle pas de voyages, et il ne dit pas qu'il joue de la guitare (c'est seulement un exemple)."
+   "explication": "Voyages : il n'en parle jamais, on ne peut pas savoir. Festivals : vrai, il teste ses jeux auprès de gens rencontrés « dans des festivals de jeux de société ». Bon jeu : faux, le meilleur des jeux « ne fonctionnait plus à un autre moment de la journée ou avec d'autres joueurs ». Guitare : « Si je joue de la guitare » n'est qu'un exemple, on ne peut pas savoir."
   },
   {
    "id": "ceb-2024-l1-q14",
@@ -1035,7 +1035,7 @@
     1,
     0
    ],
-   "explication": "Thibaut ne raconte pas son parcours. Le deuxième résumé reprend dans l'ordre les sujets de l'entretien : qualités, bon jeu, étapes de création, catégories."
+   "explication": "Premier résumé : non, Thibaut ne raconte jamais son parcours professionnel. Deuxième résumé : oui, il reprend les sujets de l'entretien dans l'ordre : qualités d'un créateur, ce qu'est un bon jeu, étapes de la création et catégories de jeux."
   },
   {
    "id": "ceb-2024-l2-q1",
@@ -1043,10 +1043,11 @@
    "numero": "1",
    "domaine": "fr.ecrire",
    "type": "ouverte",
-   "enonce": "Écris une histoire dont tu es le personnage principal et qui se termine par : « Finalement, nous nous sommes quittés en échangeant nos regards et sans dire un mot. Au fond de moi, j'avais déjà hâte de revenir en forêt et de retrouver mon nouvel ami / ma nouvelle amie pour une prochaine aventure. » Invente un titre, écris en « je », fais des paragraphes, utilise des mots de liaison, au moins 90 mots.",
+   "enonce": "Voici la fin d'une histoire : « Finalement, nous nous sommes quittés / quittées en échangeant nos regards et sans dire un mot. Au fond de moi, j'avais déjà hâte de revenir en forêt et de retrouver mon nouvel ami / ma nouvelle amie pour une prochaine aventure. » Écris une histoire dont tu es le personnage principal et qui se termine par cette fin. Prépare d'abord tes idées : qui est ton nouvel ami / ta nouvelle amie ? Comment l'as-tu rencontré(e) ? Quelle aventure avez-vous vécue ensemble dans la forêt ? Invente un titre, écris en « je », crée des paragraphes, utilise des mots de liaison, évite les répétitions inutiles. Ton histoire doit comporter au moins 90 mots, sans compter la fin donnée.",
    "points": 35,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une bonne histoire se passe (au moins en partie) en forêt et raconte une aventure avec un nouvel ami ou une nouvelle amie, en « je », avec beaucoup d'idées claires. Elle a un titre en lien avec l'histoire, des paragraphes, des mots de liaison, des pronoms pour éviter les répétitions et des temps de verbes cohérents. Elle s'enchaine sans rupture avec la fin donnée, et l'orthographe est soignée."
   },
   {
    "id": "ceb-2024-l3-q1a",
@@ -1054,13 +1055,14 @@
    "numero": "1a",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Plan de l'avion : trace une croix sur le siège 18E.",
+   "enonce": "Observe le plan de cet avion (portfolio, page 8). Les sièges noircis sont ceux qui sont déjà réservés. Monsieur Durand veut réserver le siège 18E en classe économique. Trace une croix sur ce siège.",
    "points": 1,
    "corrigeVerifie": false,
    "documents": [
     "avion"
    ],
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Repère d'abord la rangée 18 grâce aux numéros écrits à droite du plan, puis la lettre E : c'est le siège du milieu du groupe D, E, F, à droite du couloir."
   },
   {
    "id": "ceb-2024-l3-q1b",
@@ -1082,7 +1084,7 @@
     "21D et 21F"
    ],
    "reponse": 1,
-   "explication": "En rangée 21, aucun siège libre n'est à côté d'un autre (B, C et E sont pris). En rangée 20, B et C sont libres et côte à côte."
+   "explication": "Les toilettes de la classe économique sont derrière la rangée 21. Dans la rangée 21, aucun siège libre n'a de voisin libre (B, C et E sont pris). Dans la rangée 20, juste devant, les sièges B et C sont libres et côte à côte."
   },
   {
    "id": "ceb-2024-l3-q1c",
@@ -1104,7 +1106,7 @@
     "Rangée 21"
    ],
    "reponse": 1,
-   "explication": "En rangée 16, seul le siège A est pris : B, C, D, E et F sont libres."
+   "explication": "Dans la rangée 16, seul le siège A est noirci : B, C, D, E et F sont libres, cela fait 5 sièges. Les rangées 11 et 18 n'ont que 4 sièges libres, et la rangée 21 seulement 3."
   },
   {
    "id": "ceb-2024-l3-q1d",
@@ -1129,7 +1131,7 @@
     "C 7",
     "D 7"
    ],
-   "explication": "La dernière rangée de première classe est la 7. Côté couloir : C ou D, tous deux libres."
+   "explication": "La première classe va de la rangée 1 à la rangée 7 : la dernière rangée est donc la 7. Les sièges côté couloir sont C et D ; ils sont libres tous les deux, donc 7C ou 7D convient."
   },
   {
    "id": "ceb-2024-l3-q2",
@@ -1140,7 +1142,8 @@
    "enonce": "Complète la suite en dessinant les trois figures suivantes.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Les 4 premières figures forment un motif qui se répète : la 5e figure est la même que la 1re et la 6e la même que la 2e. Les trois figures suivantes sont donc la 3e, la 4e, puis de nouveau la 1re. Il faut dessiner les trois."
   },
   {
    "id": "ceb-2024-l3-q3",
@@ -1170,7 +1173,7 @@
      "rectangle scalene"
     ]
    ],
-   "explication": "Regarde les longueurs des côtés (isocèle, scalène) puis les angles (acutangle, rectangle). « Quelconque » ne remplace pas « scalène »."
+   "explication": "Triangle du haut : il a deux côtés de même longueur (isocèle) et trois angles aigus (acutangle). Triangle du bas : il a un angle droit (rectangle) et trois côtés de longueurs différentes (scalène). « Quelconque » ne remplace pas « scalène »."
   },
   {
    "id": "ceb-2024-l3-q4",
@@ -1203,10 +1206,11 @@
    "numero": "5",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Trace avec précision un hexagone régulier.",
+   "enonce": "Trace, avec précision, un hexagone régulier au départ de cette construction inachevée.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un hexagone régulier a 6 côtés de même longueur et 6 angles de 120°. Reporte la longueur du côté donné sur chaque nouveau côté et construis chaque angle de 120° avec le rapporteur, jusqu'à refermer la figure. Le tracé doit être précis au millimètre près."
   },
   {
    "id": "ceb-2024-l3-q6",
@@ -1214,10 +1218,11 @@
    "numero": "6",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Quadrillage : coche les déplacements de la figure B et colorie le nouvel emplacement de la figure A.",
+   "enonce": "Observe le quadrillage. a) On a déplacé la figure B qui est devenue la figure B'. Chaque flèche représente un déplacement d'une case dans une direction. Coche les indications qui correspondent au déplacement effectué. b) On déplace la figure A selon les indications suivantes : → → ↓ ↓ ↓ ↓ ← ←. Colorie le nouvel emplacement de la figure.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) De B à B', la figure va de 3 cases vers la gauche et de 5 cases vers le bas : seule la 2e ligne de flèches (3 ← et 5 ↓) convient. b) 2 cases à droite puis 2 à gauche s'annulent : la figure A descend seulement de 4 cases et occupe C7, D7, D8 et E8."
   },
   {
    "id": "ceb-2024-l3-q7",
@@ -1225,10 +1230,11 @@
    "numero": "7",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Repasse les pointillés pour faire apparaitre un carré, un triangle équilatéral et un triangle obtusangle.",
+   "enonce": "Repasse en rouge les traits pointillés pour faire apparaitre : a) un carré ; b) un triangle équilatéral ; c) un triangle obtusangle.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un carré a 4 côtés de même longueur et 4 angles droits. Un triangle équilatéral a 3 côtés de même longueur. Un triangle obtusangle a un angle plus grand qu'un angle droit. Vérifie à la latte et à l'équerre, puis repasse tous les côtés de chaque figure."
   },
   {
    "id": "ceb-2024-l3-q8",
@@ -1239,7 +1245,8 @@
    "enonce": "Trace l'axe de symétrie de chaque lettre.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Un axe de symétrie partage la lettre en deux moitiés qui se superposent exactement si on plie la feuille sur cet axe. Le C, posé de travers, a un axe en biais ; le Ш a un axe vertical en son milieu ; le B a un axe horizontal en son milieu."
   },
   {
    "id": "ceb-2024-l3-q9a",
@@ -1316,7 +1323,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Triangle équilatéral : 7 ; losange : 4 ; hexagone régulier : 3. Sans aucun côté de même longueur : le triangle 5 et le quadrilatère 13.",
+   "explication": "Tous les côtés égaux : le triangle équilatéral 7, le quadrilatère 4 (ses 4 côtés ont la même longueur) et l'hexagone régulier 3. Aucun côté égal : le triangle rectangle 5 et le trapèze 13, dont les 4 côtés ont des longueurs différentes. Le triangle 9 ne convient pas : il a deux côtés égaux.",
    "groupes": [
     [
      0,
@@ -1335,10 +1342,11 @@
    "numero": "10",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Achève le tracé du parallélogramme.",
+   "enonce": "Voici deux côtés d'un parallélogramme. Achève, avec précision, le tracé de ce parallélogramme à l'aide de tes instruments.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Dans un parallélogramme, les côtés opposés sont parallèles et de même longueur. Par l'extrémité libre de chaque côté donné, trace une parallèle à l'autre côté (latte et équerre) ou reporte sa longueur au compas : les deux traits se croisent au 4e sommet. Précision : 1 mm."
   },
   {
    "id": "ceb-2024-l3-q11",
@@ -1384,7 +1392,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Solide A (cube) : 6 faces, 8 sommets, 12 arêtes. Les solides B et C ont chacun 7 faces, 10 sommets et 15 arêtes.",
+   "explication": "Le solide A est un cube : 6 faces, 8 sommets, 12 arêtes. Le solide B est un cube dont on a coupé un coin : une face de plus (le triangle), 1 sommet enlevé et 3 nouveaux (8 − 1 + 3 = 10) et 3 arêtes de plus (12 + 3 = 15). Le solide C, un cube dont on a coupé une arête, a aussi 7 faces, 10 sommets et 15 arêtes.",
    "groupes": [
     [
      0,
@@ -1439,7 +1447,7 @@
     5,
     3
    ],
-   "explication": "1 : prisme droit à base triangulaire (C) ; 2 : prisme droit à base hexagonale (B) ; 3 : pyramide à base carrée (F) ; 4 : un solide qui n'est pas un polyèdre, le cylindre (D)."
+   "explication": "1 : prisme droit à base triangulaire, le solide C. 2 : prisme droit à base hexagonale, le solide B (H a une base à 5 côtés). 3 : pyramide à base carrée, le solide F. 4 : le seul solide qui n'est pas un polyèdre est le cylindre D, car il a des surfaces courbes."
   },
   {
    "id": "ceb-2024-l3-q14",
@@ -1450,7 +1458,8 @@
    "enonce": "Reproduis le dessin en respectant les dimensions.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Mesure d'abord le segment [AB] et les diamètres des deux petits disques. Le grand cercle a [AB] pour diamètre : son centre est le milieu de [AB]. Les deux petits cercles ont leur centre sur [AB] et se touchent. Les trois cercles doivent avoir les bonnes mesures, à 1 mm près."
   },
   {
    "id": "ceb-2024-l3-q15",
@@ -1480,7 +1489,7 @@
     1,
     0
    ],
-   "explication": "Dans un agrandissement ou une réduction, toutes les longueurs sont multipliées par le même nombre : la figure 2 est 1,5 fois plus grande, la figure 1 est deux fois plus petite."
+   "explication": "La figure du haut a une barre de 6 carrés sur 2 et un pied de 2 sur 2. Figure 2 : barre de 9 sur 3, pied de 3 sur 3, tout est multiplié par 1,5. Figure 1 : barre de 3 sur 1, pied de 1 sur 1, tout est divisé par 2. Les figures 3, 4 et 5 changent certaines longueurs et pas d'autres."
   },
   {
    "id": "ceb-2024-l3-q16",
@@ -1488,10 +1497,11 @@
    "numero": "16",
    "domaine": "ma.geometrie",
    "type": "ouverte",
-   "enonce": "Découpe et colle deux triangles pour former un losange, un parallélogramme et un rectangle.",
+   "enonce": "Découpe les six triangles (livret, page 19). a) Choisis et colle deux triangles pour construire un losange. b) Choisis et colle deux triangles pour construire un parallélogramme (non rectangle). c) Choisis et colle deux triangles pour former un rectangle.",
    "points": 3,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Prends chaque fois deux triangles identiques. Losange : deux triangles isocèles (ou équilatéraux) collés par leur base, pour obtenir 4 côtés égaux. Parallélogramme : deux triangles collés par un même côté, l'un retourné, pour que les côtés opposés soient parallèles sans angle droit. Rectangle : deux triangles rectangles collés par leur plus grand côté."
   },
   {
    "id": "ceb-2024-l3-q13",
@@ -1510,7 +1520,7 @@
     "un parallélogramme (non rectangle)"
    ],
    "reponse": 3,
-   "explication": "Deux paires de côtés parallèles, sans angle droit : un parallélogramme qui n'est pas un rectangle."
+   "explication": "Les droites a et b sont parallèles, c et d aussi : la figure a deux paires de côtés parallèles, c'est un parallélogramme. Comme c et d ne sont pas perpendiculaires à a et b, il n'y a aucun angle droit : ce n'est pas un rectangle. Un trapèze n'a qu'une seule paire de côtés parallèles."
   },
   {
    "id": "ceb-2024-l3-q17",
@@ -1529,7 +1539,7 @@
     "Programme 4 : Trace un rectangle ABCD. Trace les médianes [AC] et [BD]. Marque le point E milieu de [BC]. Trace un cercle de centre E et de rayon [EC]."
    ],
    "reponse": 2,
-   "explication": "[AC] et [BD] relient des sommets opposés : ce sont des diagonales, pas des médianes. Le cercle passe par B et C avec E au milieu : [BC] est son diamètre.",
+   "explication": "[AC] et [BD] relient des sommets opposés du rectangle : ce sont des diagonales (une médiane relie les milieux de deux côtés opposés). Le cercle a pour centre E, milieu de [BC], et passe par B et C : [BC] est son diamètre, pas son rayon. Seul le programme 3 dit tout cela.",
    "documents": [
     "liv3-p18"
    ]
@@ -1565,7 +1575,7 @@
      "8min"
     ]
    ],
-   "explication": "La température de cuisson est 170 °C et la durée 8 minutes.",
+   "explication": "Sur l'emballage, on lit « 170 °C » : les degrés Celsius mesurent une température. On lit aussi « 8 min » : les minutes mesurent une durée. Il faut écrire chaque fois le nombre et son unité.",
    "documents": [
     "liv4-p02"
    ]
@@ -1606,10 +1616,11 @@
    "numero": "2",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Trace une figure qui a le même périmètre que le losange.",
+   "enonce": "Dans le quadrillage, trace une figure qui aura le même périmètre que ce losange.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le périmètre est la longueur du tour de la figure. Mesure un côté du losange et multiplie par 4 : le losange a un périmètre de 16 cm. Trace une figure dont le tour mesure aussi 16 cm, par exemple un carré de 4 cm de côté ou un rectangle de 5 cm sur 3 cm."
   },
   {
    "id": "ceb-2024-l4-q3",
@@ -1622,7 +1633,8 @@
    "corrigeVerifie": false,
    "numerisable": false,
    "neutralisee": true,
-   "remarque": "Question neutralisée par le correctif officiel (0 point)."
+   "remarque": "Question neutralisée par le correctif officiel (0 point).",
+   "explication": "Sur ce chronomètre, la grande aiguille indique les secondes (grand cadran « s », de 0 à 60) et l'aiguille du petit cadran « min » indique les minutes. Pour 6 min 28 s, place l'aiguille des minutes sur 6 et celle des secondes sur 28."
   },
   {
    "id": "ceb-2024-l4-q4",
@@ -1633,7 +1645,8 @@
    "enonce": "Estime la longueur de la ligne courbe.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Une ligne courbe ne se mesure pas directement à la latte. Tu peux poser une ficelle le long de la courbe puis la mesurer, ou découper la courbe en petits morceaux presque droits et additionner leurs longueurs. Une réponse entre 25 cm et 32 cm convient."
   },
   {
    "id": "ceb-2024-l4-q5",
@@ -1655,10 +1668,11 @@
    "numero": "6",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Trace sur le récipient gradué les deux étapes pour mesurer 1,5 litre de lait.",
+   "enonce": "Pour réaliser une recette, Sofian doit mesurer 1,5 litre de lait. Mais il ne dispose que du récipient gradué dessiné dans le livret. Il doit donc mesurer en deux étapes. Trace un trait rouge sur le récipient gradué pour indiquer la quantité qu'il mesure à chacune des étapes.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "1,5 l = 1 500 ml. Le récipient est trop petit pour tout mesurer en une fois : il faut deux quantités dont la somme fait 1 500 ml, par exemple 750 ml puis 750 ml, ou 800 ml puis 700 ml."
   },
   {
    "id": "ceb-2024-l4-q7",
@@ -1700,7 +1714,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "Compte les carreaux entiers, puis assemble les demi-carreaux : A = 4 cm², B = 6 cm², C = 4 cm²."
+   "explication": "A : une colonne de 3 carreaux plus 1 carreau, donc 4 cm². B : un triangle de 3 cm de base et 4 cm de hauteur, la moitié d'un rectangle de 3 × 4 = 12 cm², donc 6 cm². C : deux triangles de 2 cm de base et 2 cm de hauteur, chacun la moitié de 4 cm² : 2 + 2 = 4 cm²."
   },
   {
    "id": "ceb-2024-l4-q9",
@@ -1708,10 +1722,11 @@
    "numero": "9",
    "domaine": "ma.grandeurs",
    "type": "ouverte",
-   "enonce": "Colorie 3/12, 2/6 et 1/3 du rectangle, puis complète les numérateurs pour que la somme vaille 1.",
+   "enonce": "a) Le rectangle en gras représente une unité. Colorie 3/12 de ce rectangle en bleu, 2/6 de ce rectangle en rouge et 1/3 de ce rectangle en jaune. b) Complète les numérateurs des fractions pour que la somme soit égale à 1 : …/12 + …/3 = 1.",
    "points": 4,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "a) Le rectangle compte 24 cases. 3/12 de 24 : 24 : 12 × 3 = 6 cases en bleu ; 2/6 de 24 : 24 : 6 × 2 = 8 cases en rouge ; 1/3 de 24 : 24 : 3 = 8 cases en jaune. b) Les deux fractions doivent faire 12/12. Comme 1/3 = 4/12, on peut écrire 4/12 + 2/3 (4/12 + 8/12) ou 8/12 + 1/3 (8/12 + 4/12). On accepte aussi 0/12 + 3/3 et 12/12 + 0/3."
   },
   {
    "id": "ceb-2024-l4-q10",
@@ -1728,7 +1743,7 @@
    ],
    "unite": "kg",
    "reponse": 0.432,
-   "explication": "180 × 2,4 g = 432 g, soit 0,432 kg."
+   "explication": "Masse de tous les bonbons : 180 × 2,4 g = 432 g. Comme 1 kg = 1 000 g, on divise par 1 000 : 432 g = 0,432 kg."
   },
   {
    "id": "ceb-2024-l4-q11a",
@@ -1747,7 +1762,7 @@
     "10 hectolitres"
    ],
    "reponse": 2,
-   "explication": "1 l = 10 dl (et 100 cl)."
+   "explication": "Un décilitre est 10 fois plus petit qu'un litre : 1 l = 10 dl (et 100 cl). Le décalitre (10 l) et l'hectolitre (100 l) sont plus grands qu'un litre."
   },
   {
    "id": "ceb-2024-l4-q11b",
@@ -1766,7 +1781,7 @@
     "0,1 décamètre"
    ],
    "reponse": 3,
-   "explication": "1 dam = 10 m, donc 1 m = 0,1 dam."
+   "explication": "1 dam = 10 m, donc 1 m est le dixième d'un décamètre : 0,1 dam. Attention : 0,1 km ferait 100 m, et 0,1 dm ou 0,1 cm sont bien plus petits qu'un mètre."
   },
   {
    "id": "ceb-2024-l4-q11c",
@@ -1785,7 +1800,7 @@
     "0,001 milligramme"
    ],
    "reponse": 0,
-   "explication": "1 kg = 1 000 g, donc 1 g = 0,001 kg."
+   "explication": "1 kg = 1 000 g, donc 1 g est le millième d'un kilogramme : 0,001 kg. Le décagramme, le centigramme et le milligramme ne conviennent pas : 0,001 de ces unités est bien plus petit qu'un gramme."
   },
   {
    "id": "ceb-2024-l4-q12",
@@ -1824,7 +1839,7 @@
     0,
     3
    ],
-   "explication": "Le 5 octobre : P3 (jusqu'au 6/10) et P6 (jusqu'au 11/10). P5 est rentrée le 4/10, P4 le 27/09.",
+   "explication": "Le calendrier montre que le premier samedi d'octobre est le 5 octobre. Ce jour-là, les P3 (retour le 06/10) et les P6 (retour le 11/10) sont encore à la mer. Les P5 sont rentrés le 04/10 et les P4 le 27/09.",
    "documents": [
     "liv4-p15"
    ]
@@ -1942,7 +1957,7 @@
     "Figure 5"
    ],
    "reponse": 3,
-   "explication": "Les figures 1, 2, 3 et 5 ont la même fraction grisée ; la figure 4 (le disque) en a une autre."
+   "explication": "Figure 2 : 15 carrés gris sur 20, soit 15/20 = 3/4. Les figures 1, 3 et 5 sont aussi grisées aux 3/4 (par exemple 6 carrés sur 8 pour la figure 1). Dans le disque, 4 parts sur 6 sont grises : 4/6 = 2/3, c'est une autre fraction."
   },
   {
    "id": "ceb-2024-l4-q18a",
@@ -1991,7 +2006,7 @@
     "liv4-p20"
    ],
    "reponse": 20,
-   "explication": "Dans le groupe « Classique », le bâtonnet des adultes (le plus foncé) monte jusqu'à 20."
+   "explication": "Dans le groupe « Classique », regarde le bâtonnet des adultes (gris moyen, le troisième, selon la légende) : il monte jusqu'à 20. Le bâtonnet noir (11) est celui des ados."
   },
   {
    "id": "ceb-2024-l4-q19b",
@@ -2017,7 +2032,7 @@
     0,
     3
    ],
-   "explication": "Chez les ados, le classique et la variété française ont tous deux 11 votes."
+   "explication": "Les ados sont représentés par les bâtonnets les plus foncés. Le bâtonnet du classique et celui de la variété française montent tous les deux à 11 votes ; ceux du rock (25), du rap (23) et du R&B (30) sont différents."
   },
   {
    "id": "ceb-2024-l4-q19c",
@@ -2040,7 +2055,7 @@
     "le classique",
     "du classique"
    ],
-   "explication": "Chez les jeunes, seul le classique est sous les 10 votes (5)."
+   "explication": "Les jeunes sont représentés par les bâtonnets gris clair. Seul celui du classique reste sous la ligne 10 (5 votes) ; tous les autres dépassent 10."
   },
   {
    "id": "ceb-2024-l4-q20",
@@ -2078,7 +2093,7 @@
    "fiche": "ma-moyenne",
    "unite": "kg/hab.",
    "reponse": 145.6,
-   "explication": "Total : 1 164,8 kg. Moyenne sur 8 ans : 1 164,8 : 8 = 145,6 kg par habitant."
+   "explication": "La moyenne, c'est le total partagé par le nombre de valeurs. 152 + 150,8 + 147,4 + 145,1 + 144,9 + 142 + 141,9 + 140,7 = 1 164,8 kg. Il y a 8 années, de 2015 à 2022 : 1 164,8 : 8 = 145,6 kg par habitant."
   },
   {
    "id": "ceb-2024-l4-q22",
@@ -2139,7 +2154,7 @@
     4,
     0
    ],
-   "explication": "1412-1416 : Moyen Âge (476-1492). 1957 : Époque contemporaine (après 1789). 17 000 av. J.-C. : Préhistoire."
+   "explication": "Les dates indiquent la période. Trace 1 (1412-1416) : Moyen Âge, de 476 à 1492. Trace 3 (1957) : Époque contemporaine, qui commence en 1789. Trace 4 (vers 17 000 ans avant J.-C.) : Préhistoire, avant l'invention de l'écriture."
   },
   {
    "id": "ceb-2024-l5-q1b",
@@ -2169,7 +2184,7 @@
     3,
     0
    ],
-   "explication": "Le Traité de Rome (1957) crée la Communauté économique européenne. L'Appel au Peuple de 1830 appelle les Belges à combattre les Hollandais : l'indépendance."
+   "explication": "La trace 3 est le traité qui crée la Communauté économique européenne en 1957 : c'est le Traité de Rome. La trace 5 dit « Aux armes ! Braves Belges. Les Hollandais ont osé attaquer Bruxelles » : en 1830, les Belges se battent pour leur indépendance."
   },
   {
    "id": "ceb-2024-l5-q1c1",
@@ -2191,7 +2206,7 @@
     "un document écrit"
    ],
    "reponse": 3,
-   "explication": "C'est un texte imprimé : un document écrit."
+   "explication": "La trace 5 est une feuille imprimée qui contient un texte (« Appel au Peuple. Aux armes ! Braves Belges… ») : c'est un document écrit. Ce n'est ni une peinture, ni un graphique, ni un monument."
   },
   {
    "id": "ceb-2024-l5-q1c2",
@@ -2214,7 +2229,7 @@
     "s'alimentaient en 1830."
    ],
    "reponse": 0,
-   "explication": "Une affiche placardée pour appeler la population : un moyen de communiquer."
+   "explication": "Cet appel imprimé, signé par les membres du Gouvernement provisoire, transmet un message à toute la population. Il montre comment on communiquait en 1830 : par des textes imprimés diffusés au peuple."
   },
   {
    "id": "ceb-2024-l5-q1d1",
@@ -2234,7 +2249,7 @@
     "se loger"
    ],
    "reponse": 4,
-   "explication": "Chauffer sa maison, c'est une question de logement.",
+   "explication": "Un hypocauste est un système de chauffage par le sol : l'air chaud d'un foyer circule sous le plancher, posé sur de petites colonnes de briques. Chauffer sa maison est une technique pour se loger.",
    "documents": [
     "liv5-p04"
    ]
@@ -2257,7 +2272,7 @@
     "Époque contemporaine"
    ],
    "reponse": 1,
-   "explication": "Les villas romaines datent de l'Antiquité.",
+   "explication": "Les villas romaines ont été construites par les Romains, qui occupaient nos régions pendant l'Antiquité. Cette période va de l'invention de l'écriture jusqu'à la fin de l'Empire romain d'Occident, en 476.",
    "documents": [
     "liv5-p04"
    ]
@@ -2275,7 +2290,8 @@
    "reponseModele": "Le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité : le lancer du disque existait donc bien avant le Moyen Âge.",
    "documents": [
     "liv5-p05"
-   ]
+   ],
+   "explication": "Une bonne réponse montre que le lancer du disque existait avant le Moyen Âge : le Discobole date du 5e siècle avant J.-C., c'est-à-dire de l'Antiquité. Le Moyen Âge ne commence qu'en 476 après J.-C."
   },
   {
    "id": "ceb-2024-l5-q2a",
@@ -2312,7 +2328,7 @@
     3,
     1
    ],
-   "explication": "Document 5 : Stockholm (Suède) ; 1 : Paris ; 3 : Mexico ; 4 : Séoul ; 2 : Melbourne."
+   "explication": "Chaque document indique sa ville et son pays. A, au nord de l'Europe : Stockholm en Suède (document 5). B, en Europe de l'Ouest : Paris en France (1). C, en Amérique : Mexico (3). D, en Asie : Séoul en Corée du Sud (4). E, au sud-est de l'Australie : Melbourne (2)."
   },
   {
    "id": "ceb-2024-l5-q2b",
@@ -2334,7 +2350,7 @@
     "un document audiovisuel"
    ],
    "reponse": 1,
-   "explication": "Une affiche imprimée avec du texte : parmi les propositions, c'est un document écrit."
+   "explication": "Le document 5 est une affiche imprimée avec des mots écrits (« Olympiska spelen Stockholm 1912 ») : parmi les propositions, c'est un document écrit. Ce n'est pas un objet sculpté ni un monument, et on ne peut pas l'écouter ou le regarder comme un film (audiovisuel)."
   },
   {
    "id": "ceb-2024-l5-q2c",
@@ -2353,7 +2369,7 @@
     "21e siècle"
    ],
    "reponse": 2,
-   "explication": "Le 20e siècle va de 1901 à 2000."
+   "explication": "Le 20e siècle va de 1901 à 2000 : l'année 1912 en fait partie. Attention : une année qui commence par 19 appartient au 20e siècle (sauf 1900), comme l'année 2024 appartient au 21e siècle."
   },
   {
    "id": "ceb-2024-l5-q2d",
@@ -2380,7 +2396,7 @@
     2,
     0
    ],
-   "explication": "1914-1918 est entre 1863 et 1937. 1957 est après 1937. 1830 est avant 1863."
+   "explication": "Pierre de Coubertin a vécu de 1863 à 1937. La guerre 14-18 (de 1914 à 1918) a eu lieu durant sa vie. Le Traité de Rome (1957) a été signé après sa mort. L'indépendance de la Belgique (1830) a eu lieu avant sa naissance."
   },
   {
    "id": "ceb-2024-l5-q2e",
@@ -2415,7 +2431,7 @@
     2,
     0
    ],
-   "explication": "B : l'affiche de Saint-Louis 1904. A : la note de 1896 cite l'escrime et annonce Paris pour 1900. C : Charlotte Cooper, championne en 1900. Rien ne dit si Coubertin avait encore ce poste en 1900."
+   "explication": "Saint-Louis : l'affiche B indique « 1904 ». Escrime en 1896 : la note A, de 1896, cite « l'escrime ». Coubertin en 1900 : la note A date de 1896, aucun document ne dit son poste en 1900. Femmes en 1900 : la photo C montre Charlotte Cooper, championne olympique en 1900. Ville de 1900 : la note A annonce la seconde célébration « à Paris, en 1900 »."
   },
   {
    "id": "ceb-2024-l5-q2e2",
@@ -2437,7 +2453,7 @@
     "un document écrit"
    ],
    "reponse": 1,
-   "explication": "C'est une photographie d'époque."
+   "explication": "Le document C est une image en noir et blanc prise avec un appareil photo : c'est une photographie. On y voit Charlotte Cooper, sa raquette de tennis à la main."
   },
   {
    "id": "ceb-2024-l5-q2e3",
@@ -2459,7 +2475,7 @@
     "se soignaient en 1900."
    ],
    "reponse": 2,
-   "explication": "On voit la tenue de sport d'une championne en 1900 : une longue robe."
+   "explication": "Sur la photo, Charlotte Cooper joue au tennis vêtue d'une longue robe blanche à manches longues : le document montre comment certaines athlètes s'habillaient en 1900. Il ne dit rien de leur école, de leur langage ou de leur santé."
   },
   {
    "id": "ceb-2024-l5-q2f",
@@ -2508,7 +2524,8 @@
    "documents": [
     "attributions-double"
    ],
-   "reponseModele": "Aucun J.O. d'été n'a été organisé en Afrique (ni en Antarctique)."
+   "reponseModele": "Aucun J.O. d'été n'a été organisé en Afrique (ni en Antarctique).",
+   "explication": "Il faut citer un continent où les J.O. d'été n'ont jamais eu lieu. Sur la carte, aucun pays d'Afrique n'est colorié comme pays organisateur : l'Afrique ne les a jamais accueillis. L'Antarctique non plus."
   },
   {
    "id": "ceb-2024-l5-q2h",
@@ -2539,7 +2556,7 @@
     2,
     3
    ],
-   "explication": "Los Angeles est à l'ouest de la Belgique, Tokyo à l'est ; Sydney est au sud de Tokyo."
+   "explication": "Utilise la flèche du nord de la carte. Los Angeles, en Amérique, est à l'ouest de Bruxelles. Tokyo, en Asie, est à l'est de Bruxelles. Sydney, en Australie, se trouve bien plus au sud que Tokyo."
   },
   {
    "id": "ceb-2024-l5-q2i",
@@ -2554,7 +2571,8 @@
    "documents": [
     "aeroports"
    ],
-   "reponseModele": "L'avion part d'Europe, survole l'Asie et arrive en Océanie : il passe au-dessus de trois continents."
+   "reponseModele": "L'avion part d'Europe, survole l'Asie et arrive en Océanie : il passe au-dessus de trois continents.",
+   "explication": "Sur la carte, la ligne qui va de Bruxelles (1) à Sydney (6) part d'Europe, passe au-dessus de l'Asie et arrive en Océanie (Australie) : l'avion survole trois continents, pas deux."
   },
   {
    "id": "ceb-2024-l5-q2j",
@@ -2583,7 +2601,7 @@
      "les Pays-Bas"
     ]
    ],
-   "explication": "Les Pays-Bas ont 10 médailles d'or, 12 d'argent et 14 de bronze (la France en a 11 de bronze). Le Canada a 10 médailles de bronze."
+   "explication": "Dans le graphique, la France et les Pays-Bas ont tous deux 10 médailles d'or et 12 d'argent, mais seuls les Pays-Bas ont 14 médailles de bronze (la France en a 11). Le bâtonnet bronze du Canada s'arrête à 10. Parmi les pays de l'Union européenne du graphique (Belgique, France, Pays-Bas), les Pays-Bas ont le plus de bronze."
   },
   {
    "id": "ceb-2024-l5-q2k1",
@@ -2602,7 +2620,7 @@
     "tous les quatre ans"
    ],
    "reponse": 3,
-   "explication": "1996, 2000, 2004… : tous les 4 ans."
+   "explication": "Dans le tableau, les années se suivent de 4 en 4 : 1996, 2000, 2004, 2008, 2012, 2016. Les J.O. d'été ont donc lieu tous les quatre ans."
   },
   {
    "id": "ceb-2024-l5-q2k2",
@@ -2621,7 +2639,7 @@
     "quatre ans"
    ],
    "reponse": 1,
-   "explication": "Par exemple du 08/08 au 24/08 : environ 16 jours, deux semaines."
+   "explication": "Par exemple, à Pékin, les J.O. ont duré du 08/08 au 24/08, soit environ 16 jours : un peu plus de deux semaines. Les autres éditions du tableau durent à peu près autant."
   },
   {
    "id": "ceb-2024-l5-q2k3",
@@ -2640,7 +2658,7 @@
     "Atlanta"
    ],
    "reponse": 2,
-   "explication": "2008 − 8 = 2000 : Sydney."
+   "explication": "Les J.O. de Pékin ont eu lieu en 2008. 2008 − 8 = 2000 : 8 ans plus tôt, ils avaient lieu à Sydney. Londres (2012) et Rio de Janeiro (2016) viennent après Pékin, et Atlanta (1996) 12 ans avant."
   },
   {
    "id": "ceb-2024-l5-q2l",
@@ -2675,7 +2693,7 @@
     0,
     0
    ],
-   "explication": "Owens : États-Unis (Amérique), 20e siècle ; Buitendag : Afrique du Sud (Afrique), 21e siècle ; Weingärtner : Allemagne (Europe), 19e siècle (1896).",
+   "explication": "Owens vient des États-Unis (Amérique) ; 1936 est au 20e siècle (de 1901 à 2000). Buitendag vient d'Afrique du Sud (Afrique) ; 2020 est au 21e siècle. Weingärtner vient d'Allemagne (Europe) ; 1896 est au 19e siècle (de 1801 à 1900).",
    "colonnesParLigne": [
     [
      "Europe",
@@ -2754,7 +2772,7 @@
      "2"
     ]
    ],
-   "explication": "Le trajet 3 passe par l'Italie, la Libye et le Tchad. Le trajet 1 finit au Sénégal. Le trajet 2 finit au Togo."
+   "explication": "Compare les pays du tableau avec la carte. Le coucou passe par la Suisse, l'Italie, la Libye et le Tchad : trajet 3. L'hirondelle et la cigogne passent toutes deux par Gibraltar et le Maroc, mais l'hirondelle s'arrête au Sénégal (trajet 1) et la cigogne continue jusqu'au Togo (trajet 2)."
   },
   {
    "id": "ceb-2024-l5-q3b1",
@@ -2775,7 +2793,7 @@
     "hirondelle",
     "l'hirondelle"
    ],
-   "explication": "Dans la colonne de septembre (S), seule la ligne de l'hirondelle rustique passe du blanc au noir."
+   "explication": "Une migration commence quand la ligne de l'oiseau passe du blanc (présence en Belgique) au noir (migration). Dans la colonne S (septembre), cela n'arrive que pour l'hirondelle rustique. Le coucou et le martinet partent déjà en aout."
   },
   {
    "id": "ceb-2024-l5-q3b2",
@@ -2819,7 +2837,7 @@
     "un océan"
    ],
    "reponse": 1,
-   "explication": "Sol sec et végétation rare : un désert."
+   "explication": "Sur la photo 1, le sol est sec et couvert de pierres, avec seulement quelques buissons secs : la végétation est très rare, c'est un désert. On n'y voit ni arbres serrés (forêt) ni étendue d'eau (mer, océan)."
   },
   {
    "id": "ceb-2024-l5-q4b",
@@ -2846,7 +2864,7 @@
     1,
     0
    ],
-   "explication": "La forêt est vue d'en haut (photo aérienne) ; la grand-place est photographiée depuis le sol."
+   "explication": "La photo 2 montre le dessus des arbres, vus d'en haut, comme depuis un avion : c'est une photographie aérienne. La photo 4 montre les façades de la place à hauteur d'une personne, avec le ciel au-dessus : elle a été prise au sol."
   },
   {
    "id": "ceb-2024-l5-q4c",
@@ -2854,7 +2872,7 @@
    "numero": "4c",
    "domaine": "hg.geographie",
    "type": "trous",
-   "enonce": "Écris le numéro de la photographie dont le paysage est surtout caractérisé par…",
+   "enonce": "Écris le numéro d'une photographie qui présente un paysage caractérisé principalement par…",
    "points": 2,
    "corrigeVerifie": true,
    "fiche": "hg-paysages",
@@ -2871,7 +2889,7 @@
      "4"
     ]
    ],
-   "explication": "Photo 2 : une forêt. Photo 1 : un sol presque nu."
+   "explication": "Un vaste terrain couvert d'arbres : la photo 2, une forêt. Pour la rareté de la végétation, on peut choisir la photo 1 (un sol sec et caillouteux avec quelques buissons) ou la photo 4 (une place de ville entourée de bâtiments, sans plantes)."
   },
   {
    "id": "ceb-2024-l5-q4d",
@@ -2898,7 +2916,7 @@
     1,
     4
    ],
-   "explication": "Des bâtiments partout : un paysage très humanisé et urbain.",
+   "explication": "Sur la photo 4, on ne voit que des constructions humaines : maisons, tour, église, place pavée. C'est un paysage très humanisé et urbain (une ville). Il n'est ni naturel, ni rural (pas de champs), ni industriel (pas d'usines).",
    "parReponse": true
   },
   {
@@ -2923,7 +2941,7 @@
     0,
     0
    ],
-   "explication": "Protéger la biodiversité et absorber le CO₂ sont deux avantages."
+   "explication": "Les deux phrases décrivent des avantages pour l'Humain. Une végétation abondante abrite et nourrit de nombreuses espèces animales et végétales, et les arbres absorbent du dioxyde de carbone, un gaz à effet de serre. Ce sont donc deux atouts."
   },
   {
    "id": "ceb-2024-l5-q4f",
@@ -2953,7 +2971,7 @@
     0,
     2
    ],
-   "explication": "B : une ville entièrement construite. A : quelques maisons autour d'une église. C : des haies entre les champs."
+   "explication": "Photo B : une grande ville où presque tout l'espace est couvert de bâtiments, c'est une surface très bâtie. Photo A : quelques maisons regroupées autour d'une église, au milieu des arbres : un village. Photo C : des haies et des rangées d'arbres séparent les champs et les prairies."
   },
   {
    "id": "ceb-2024-l6-q1",
@@ -2971,7 +2989,7 @@
     "plus grand que 470"
    ],
    "reponse": 0,
-   "explication": "47 × 10 = 470 ; comme 9,9 < 10, le produit est plus petit."
+   "explication": "47 × 10 = 470. Or 9,9 est un peu plus petit que 10 : 47 × 9,9 = 470 − 4,7 = 465,3. Le résultat est donc plus petit que 470."
   },
   {
    "id": "ceb-2024-l6-q2",
@@ -3024,7 +3042,7 @@
      "48"
     ]
    ],
-   "explication": "2 400 : 600 × 4, 300 × 8, 1 800 + 600, 48 000 : 20. On divise ensuite par 100 puis par 1 000.",
+   "explication": "2 400 = 4 × 600 = 300 × 8 = 1 800 + 600 = 48 000 : 20. Pour 24, tout est 100 fois plus petit : 6 ; 3 ; 18 ; 480. Pour 2,4, tout est 1 000 fois plus petit que pour 2 400 : 0,6 ; 0,3 ; 1,8 ; 48 (car 48 : 20 = 2,4).",
    "groupes": [
     [
      0,
@@ -3069,7 +3087,7 @@
     1,
     4
    ],
-   "explication": "15 × 45 = 675. 45 = 9 × 5 donne 15 × 9 × 5 = 675. 15 = 10 + 5 donne (10 × 45) + (5 × 45) = 675.",
+   "explication": "15 × 45 = 675. Comme 45 = 9 × 5, 15 × 9 × 5 donne le même résultat. Comme 15 = 10 + 5, on peut aussi calculer (10 × 45) + (5 × 45) = 450 + 225 = 675. Attention : (5 × 45) + (5 × 45), c'est seulement 10 × 45.",
    "parReponse": true
   },
   {
@@ -3093,7 +3111,7 @@
     0,
     3
    ],
-   "explication": "880 : 20 = 44. On peut diviser 800 puis 80 par 20 (40 + 4), ou diviser par 10 puis par 2 (88 : 2).",
+   "explication": "880 : 20 = 44. On peut partager 880 en 800 + 80 et diviser chaque partie par 20 : 40 + 4 = 44. Diviser par 20, c'est aussi diviser par 10 puis par 2 : 88 : 2 = 44. Attention : (880 : 10) × 2 ferait 176.",
    "parReponse": true
   },
   {
@@ -3113,7 +3131,7 @@
     "886 432 × 4"
    ],
    "reponse": 2,
-   "explication": "On vérifie une division par une multiplication : quotient × diviseur = dividende."
+   "explication": "On vérifie une division avec l'opération inverse, la multiplication : quotient × diviseur = dividende. Si le calcul est juste, 221 608 × 4 redonne 886 432."
   },
   {
    "id": "ceb-2024-l6-q5",
@@ -3213,7 +3231,7 @@
      "1250+1250+1250+1250+1250+1250"
     ]
    ],
-   "explication": "15 000 contient 4 fois 3 750. 6 × 1 250 = 7 500, il manque 7 500."
+   "explication": "Dans l'arbre, 15 000 = 7 500 + 7 500 et chaque 7 500 = 3 750 + 3 750 : 15 000 contient donc 4 fois 3 750. Ensuite, 6 × 1 250 = 7 500 et 15 000 − 7 500 = 7 500 : il manque 7 500."
   },
   {
    "id": "ceb-2024-l6-q7",
@@ -3232,7 +3250,7 @@
     "207,56 + 291,6"
    ],
    "reponse": 3,
-   "explication": "≈ 740 ; ≈ 710 ; 380 ; ≈ 500 (208 + 292)."
+   "explication": "Arrondis avant de calculer. 1,5 × 493 ≈ 1,5 × 500 = 750. 10 000 − 9 287 ≈ 700. 1 900 : 5 = 380. 207,56 + 291,6 ≈ 208 + 292 = 500 : c'est le résultat le plus proche de 500."
   },
   {
    "id": "ceb-2024-l6-q8",
@@ -3282,7 +3300,7 @@
      "7,27+25,73"
     ]
    ],
-   "explication": "9 fois = 10 fois − 1 fois. 4 × 50 = 200. Diviser par 0,1 = multiplier par 10. On ajoute 2 aux deux termes d'une soustraction. On déplace 4 d'un terme à l'autre. 2,88 + 14,12 = 17 et 25,73 + 7,27 = 33."
+   "explication": "9 fois 67,2, c'est 10 fois 67,2 moins une fois : 10. 4 × 50 = 200, il reste × 3 : 3. Diviser par 0,1, c'est multiplier par 10 : 10. On ajoute 2 aux deux nombres de la soustraction (6 498 + 2 = 6 500) : 379 + 2 = 381. On donne 4 au premier nombre de l'addition (856 + 4 = 860) et on les retire au second : 1 393. 2,88 + 14,12 = 17, il reste 25,73 + 7,27 = 33."
   },
   {
    "id": "ceb-2024-l6-q9a",
@@ -3301,7 +3319,7 @@
     "25"
    ],
    "reponse": 2,
-   "explication": "25 : 10 = 2,5."
+   "explication": "25/10, c'est 25 dixièmes : 25 : 10 = 2,5. Attention : 2,05 vaut 205 centièmes et 0,25 vaut 25 centièmes."
   },
   {
    "id": "ceb-2024-l6-q9b",
@@ -3320,7 +3338,7 @@
     "2"
    ],
    "reponse": 3,
-   "explication": "32 : 16 = 2."
+   "explication": "Une fraction est une division : 32/16 = 32 : 16 = 2, car 16 × 2 = 32. Les nombres 32,16 ou 16,32 ne font que recopier les chiffres de la fraction."
   },
   {
    "id": "ceb-2024-l6-q9c",
@@ -3338,7 +3356,7 @@
     "1 465/1 000"
    ],
    "reponse": 1,
-   "explication": "14,65 = 1 465 centièmes."
+   "explication": "Dans 14,65, le dernier chiffre (5) est celui des centièmes : 14,65 = 1 465 centièmes = 1 465/100. 1 465/10 vaudrait 146,5 et 1 465/1 000 vaudrait 1,465."
   },
   {
    "id": "ceb-2024-l6-q10",
@@ -3363,7 +3381,7 @@
     3,
     4
    ],
-   "explication": "12,5 × 48 = 600. 25 × 24 = 600 (double et moitié). 12,5 = 12 + 0,5 ou 10 + 2,5.",
+   "explication": "12,5 × 48 = 600. 25 × 24 : on double 12,5 et on prend la moitié de 48, le produit ne change pas. 12,5 = 12 + 0,5 ou 10 + 2,5, d'où (12 × 48) + (0,5 × 48) et (10 × 48) + (2,5 × 48). Attention : 25 × 96 ferait le double (1 200).",
    "parReponse": true
   },
   {
@@ -3402,7 +3420,7 @@
      "2.5"
     ]
    ],
-   "explication": "10 × 0,1 = 1 ; 2 × 0,5 = 1 ; 0,2 × 50 = 10 ; 4 × 2,5 = 10."
+   "explication": "10 × 0,1 = 1 (un dixième de 10) ; 2 × 0,5 = 1 (la moitié de 2) ; 0,2 × 50 = 10 (2 × 50 = 100, puis on divise par 10) ; 4 × 2,5 = 10 (4 × 25 = 100, puis on divise par 10)."
   },
   {
    "id": "ceb-2024-l6-q12",
@@ -3431,7 +3449,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "90 × 0,7 = 63 ; 0,9 × 0,07 = 0,063 ; 0,09 × 700 = 63."
+   "explication": "Pars de 9 × 7 = 63. 90 × 0,7 : un facteur est 10 fois plus grand, l'autre 10 fois plus petit, donc 63. 0,9 × 0,07 : on divise par 10 puis par 100, donc 0,063. 0,09 × 700 : on divise par 100 puis on multiplie par 100, donc 63."
   },
   {
    "id": "ceb-2024-l6-q13a",
@@ -3449,7 +3467,7 @@
     "12 × 2 × 2 × 2 × 2"
    ],
    "reponse": 1,
-   "explication": "8 = 2 × 2 × 2."
+   "explication": "8 = 2 × 2 × 2 : multiplier par 8, c'est multiplier trois fois par 2. Attention : 12 × 2 × 2 ne fait que 12 × 4, et avec quatre fois 2 on obtient 12 × 16."
   },
   {
    "id": "ceb-2024-l6-q13b",
@@ -3467,7 +3485,7 @@
     "3 600 : 10 : 2 : 2"
    ],
    "reponse": 2,
-   "explication": "Diviser par 40, c'est diviser par 10, puis par 2, puis encore par 2."
+   "explication": "40 = 10 × 2 × 2 : diviser par 40, c'est diviser par 10, puis par 2, puis encore par 2 (3 600 : 10 = 360 ; 360 : 2 = 180 ; 180 : 2 = 90). Diviser quatre fois par 10, ce serait diviser par 10 000."
   },
   {
    "id": "ceb-2024-l7-q1",
@@ -3484,7 +3502,7 @@
    ],
    "unite": "places",
    "reponse": 156,
-   "explication": "Il y a 12 rangées de 3 + 7 + 3 = 13 sièges : 12 × 13 = 156 places."
+   "explication": "Chaque rangée compte 3 + 7 + 3 = 13 sièges, et les gradins ont 12 rangées. Il suffit donc de multiplier : 12 × 13 = 156 places assises."
   },
   {
    "id": "ceb-2024-l7-q2a",
@@ -3512,7 +3530,7 @@
     4,
     6
    ],
-   "explication": "8, 16, 24, 32 (le suivant, 40, dépasse 37)."
+   "explication": "Les multiples de 8 sont les résultats de la table de 8 : 8, 16, 24, 32. Le suivant, 40, dépasse 37. 12, 18, 28 et 36 ne sont pas dans la table de 8 (par exemple 28 = 4 × 7 et 36 = 4 × 9)."
   },
   {
    "id": "ceb-2024-l7-q2b",
@@ -3560,7 +3578,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "a) chaque graduation vaut 0,2 ; b) l'agrandissement est gradué de 0,1 en 0,1 à partir de 5 ; c) il est gradué de 0,01 en 0,01 à partir de 7."
+   "explication": "a) De 8,2 à 9, il y a 4 intervalles : chacun vaut 0,8 : 4 = 0,2. La case est 6 graduations après 9 : 9 + 1,2 = 10,2. b) Le zoom partage l'intervalle de 5 à 6 en 10 : chaque graduation vaut 0,1 et la case est à 5,4. c) Le zoom partage l'intervalle de 7 à 7,1 en 10 : chaque graduation vaut 0,01 et la case est à 7,04."
   },
   {
    "id": "ceb-2024-l7-q4",
@@ -3587,7 +3605,7 @@
     0,
     1
    ],
-   "explication": "5/4 = 1,25 > 1. 5/9 est plus petit que 1, donc < 5,9. 0,2 = 0,20 = 20 centièmes."
+   "explication": "5/4 = 1 + 1/4 = 1,25 : c'est plus grand que 1. 5/9 est plus petit que 1 (5 parts sur 9), donc plus petit que 5,9 : attention, 5/9 ne s'écrit pas 5,9. 0,2 = 0,20 = 20 centièmes : c'est égal."
   },
   {
    "id": "ceb-2024-l7-q5",
@@ -3612,7 +3630,7 @@
      "245,681"
     ]
    ],
-   "explication": "a) 245 unités entières : 245,681. b) Le 2 aux dizaines de mille : 24 568,1. c) Le 8 aux centièmes : 245,681 (6 dixièmes, 8 centièmes, 1 millième)."
+   "explication": "a) Pour avoir 245 unités entières, la virgule se place juste après 245 : 245,681. b) Pour que le 2 soit aux dizaines de mille, il faut 5 chiffres avant la virgule : 24 568,1. c) Le rang des centièmes est le 2e après la virgule : 245,681 (6 dixièmes, 8 centièmes, 1 millième)."
   },
   {
    "id": "ceb-2024-l7-q6",
@@ -3653,7 +3671,7 @@
      "5 073,012"
     ]
    ],
-   "explication": "4 769 300 ; 7 080 024 ; 5 073,012."
+   "explication": "Écris les nombres par classes de trois chiffres. 4 millions, 769 mille, 300 : 4 769 300. 7 millions, 080 mille, 024 : 7 080 024 (n'oublie pas les zéros). 5 073 unités et 12 millièmes : 5 073,012, car les millièmes occupent le 3e rang après la virgule."
   },
   {
    "id": "ceb-2024-l7-q8",
@@ -3677,7 +3695,7 @@
     1,
     4
    ],
-   "explication": "Trois quarts = 0,75 = 75/100. Septante-cinq dixièmes = 7,5."
+   "explication": "Trois quarts = 3/4 = 75/100 = 0,75 : ces deux nombres sont équivalents. 100/75 est plus grand que 1, 0,075 vaut 75 millièmes, septante-cinq dixièmes vaut 7,5, et 7,05 vaut 705 centièmes."
   },
   {
    "id": "ceb-2024-l7-q9",
@@ -3697,7 +3715,7 @@
     "centaines"
    ],
    "reponse": 3,
-   "explication": "7 centaines de mille, 2 dizaines de mille, 1 unité de mille…"
+   "explication": "Dans 721 546,03, la partie entière se lit « 721 mille 546 ». Le 7 est aux centaines de mille, le 2 aux dizaines de mille et le 1 aux unités de mille."
   },
   {
    "id": "ceb-2024-l7-q10",
@@ -3734,7 +3752,7 @@
      "33 millions trois mille"
     ]
    ],
-   "explication": "6,08 millions = 6 080 000. 33 003 000 = 33,003 millions (33 millions 3 mille).",
+   "explication": "6,08 millions, c'est 6 millions et 0,08 million, soit 80 000 : 6 080 000, qui se dit « 6 millions 80 mille ». 33 003 000, c'est 33 millions et 3 000 ; or 3 000 = 0,003 million : 33,003 millions, qui se dit « 33 millions 3 mille ».",
    "souple": true,
    "groupes": [
     [
@@ -3772,7 +3790,7 @@
     ]
    ],
    "champsCourts": true,
-   "explication": "a) dividende = diviseur × quotient + reste : 8 × 436 + 1 = 3 489. b) 1 982 + 238 = 2 220."
+   "explication": "a) Dans une division, dividende = diviseur × quotient + reste : 8 × 436 + 1 = 3 488 + 1 = 3 489. b) On retrouve le premier terme d'une soustraction avec une addition : 1 982 + 238 = 2 220."
   },
   {
    "id": "ceb-2024-l7-q12",
@@ -3785,7 +3803,7 @@
    "corrigeVerifie": true,
    "fiche": "ma-division",
    "reponse": 260,
-   "explication": "1 560 : 6 = 260."
+   "explication": "Il y a 6 gouts (praliné, fraise, caramel, vanille, lait, moka), avec la même quantité pour chacun. On partage donc 1 560 en 6 : 1 560 : 6 = 260 pralines à la fraise."
   },
   {
    "id": "ceb-2024-l7-q13",
@@ -3804,7 +3822,7 @@
     "Résolution 4 : 5 × 18 = 90 ; 90 – 6 = 84 ; 84 – 6 = 78. Chaque classe primaire recevra 78 paquets de feuilles."
    ],
    "reponse": 2,
-   "explication": "90 paquets, moins 2 × 3 = 6 pour les maternelles : 84 paquets, partagés en 6 : 14 paquets."
+   "explication": "18 boites de 5 paquets : 18 × 5 = 90 paquets. Les 2 classes maternelles reçoivent 2 × 3 = 6 paquets : il reste 90 − 6 = 84 paquets, partagés entre 6 classes : 84 : 6 = 14. La résolution 1 n'enlève que 2 paquets, la 4 soustrait au lieu de partager."
   },
   {
    "id": "ceb-2024-l7-q14",
@@ -3834,7 +3852,7 @@
      "9"
     ]
    ],
-   "explication": "Un multiple de 2 finit par un chiffre pair ; un multiple de 5 par 0 ou 5. 2 370 est multiple des deux."
+   "explication": "Un multiple de 2 se termine par un chiffre pair (0, 2, 4, 6, 8) ; un multiple de 5 se termine par 0 ou 5. Multiple de 2 mais pas de 5 : 2, 4, 6 ou 8. Multiple de 5 mais pas de 2 : 5. Ni l'un ni l'autre : 1, 3, 7 ou 9."
   },
   {
    "id": "ceb-2024-l7-q15",
@@ -3863,7 +3881,7 @@
     0,
     1
    ],
-   "explication": "83,98 et 83,809 dépassent 83,800. 82,740 est sous 83,7. 83,787 est entre 83,700 et 83,800."
+   "explication": "Compare avec le même nombre de décimales : 83,7 = 83,700 et 83,8 = 83,800. 83,98 (= 83,980) et 83,809 dépassent 83,800. 82,740 n'a que 82 unités : il est sous 83,7. 83,787 est entre 83,700 et 83,800."
   },
   {
    "id": "ceb-2024-l8-q1",
@@ -3891,7 +3909,7 @@
      "6"
     ]
    ],
-   "explication": "L'introduction (page 3) annonce le contenu. « Le chocolat, stop ou encore ? » (page 6) donne deux points de vue."
+   "explication": "La page 3 commence par une introduction qui annonce le contenu : « D'où vient le chocolat ? Comment le fabrique-t-on ? Peut-on le consommer sans modération ? ». La page 6, « Le chocolat, stop ou encore ? », présente deux points de vue : « Stop… » (les dégâts sur l'environnement) et « … ou encore ? » (les bienfaits)."
   },
   {
    "id": "ceb-2024-l8-q2",
@@ -3927,7 +3945,7 @@
     1,
     3
    ],
-   "explication": "La conservation : « Le saviez-vous ? » de la recette. L'expédition des fèves : la fabrication. Les bienfaits : « … ou encore ? »."
+   "explication": "Conservation : dans « Envie de chocolat ? », un encadré « Le saviez-vous ? » dit de conserver le chocolat « dans un endroit frais et sec ». Transport : dans « Comment fabrique-t-on le chocolat ? », les fèves sont « expédiées dans les chocolateries ». Bienfaits : dans « Le chocolat, stop ou encore ? », on lit que « cet aliment donne de l'énergie »."
   },
   {
    "id": "ceb-2024-l8-q3",
@@ -3941,7 +3959,8 @@
    "documents": [
     "choco-2"
    ],
-   "reponseModele": "Deux fois par an, à l'aide d'un outil tranchant : on les détache du tronc, puis on les fend pour en sortir les fèves."
+   "reponseModele": "À l'aide d'un outil tranchant (ou coupant) : on les détache du tronc. On accepte aussi : à la main.",
+   "explication": "Le texte dit : « À l'aide d'un outil tranchant, les cabosses sont détachées du tronc, puis fendues de manière à en extraire les fèves. » La réponse attendue est donc : avec un outil tranchant (ou coupant). On accepte aussi : à la main."
   },
   {
    "id": "ceb-2024-l8-q4",
@@ -3955,7 +3974,8 @@
    "documents": [
     "choco-2"
    ],
-   "reponseModele": "Les fèves sont rassemblées en tas couverts de feuilles de bananier ou placées dans de grands bacs en bois, et elles sont régulièrement mélangées."
+   "reponseModele": "Les fèves sont rassemblées en tas couverts de feuilles de bananier ou placées dans de grands bacs en bois, et elles sont régulièrement mélangées.",
+   "explication": "Le texte dit que les fèves sont « soit rassemblées en tas couverts de feuilles de bananiers, soit placées dans de grands bacs en bois » et que « dans les deux cas, elles sont régulièrement mélangées ». Ta phrase doit contenir les deux idées : rassemblées (ou placées dans des bacs) et mélangées."
   },
   {
    "id": "ceb-2024-l8-q5",
@@ -3987,7 +4007,7 @@
     0,
     1
    ],
-   "explication": "« C'est la terre qui va donner le gout. » « Les méthodes peuvent varier suivant les fabricants. »"
+   "explication": "Didier dit : « C'est la terre qui va donner le gout » : la première phrase est vraie. Le texte dit aussi : « Les méthodes peuvent varier suivant les fabricants » : elles ne sont pas identiques chez tous les chocolatiers, la seconde phrase est fausse."
   },
   {
    "id": "ceb-2024-l8-q6",
@@ -4057,7 +4077,7 @@
      "au soleil"
     ]
    ],
-   "explication": "Climat chaud et humide près de l'équateur ; pulpe sucrée et légèrement acide ; couleur brune pendant la fermentation ; le séchage au soleil l'arrête. La pulpe est à la fois sucrée ET légèrement acide : une seule des deux saveurs ne suffit pas."
+   "explication": "On cultive le cacaoyer « dans différentes régions proches de l'équateur », au climat chaud et humide. La pulpe est « à la fois sucrée et légèrement acide » : il faut les deux saveurs. Les fèves obtiennent « leur couleur brune » durant la fermentation. Le séchage, où « les fèves sont exposées au soleil », sert à « arrêter le processus de fermentation »."
   },
   {
    "id": "ceb-2024-l8-q7",
@@ -4080,7 +4100,7 @@
     "la mise en sac",
     "le stockage en sacs"
    ],
-   "explication": "« Elles sont stockées dans de grands sacs en toile, pour être finalement expédiées. »"
+   "explication": "Le texte dit : « Les fèves sont exposées au soleil pendant une à quatre semaines, puis elles sont stockées dans de grands sacs en toile, pour être finalement expédiées dans les chocolateries. » Entre le séchage et l'expédition, il y a donc le stockage."
   },
   {
    "id": "ceb-2024-l8-q8",
@@ -4094,7 +4114,8 @@
    "documents": [
     "choco-2"
    ],
-   "reponseModele": "Il découvre de nouvelles façons de travailler le chocolat et apprend des choses sur la plante elle-même."
+   "reponseModele": "Il découvre de nouvelles façons de travailler le chocolat et apprend des choses sur la plante elle-même.",
+   "explication": "Didier explique que, pendant ses « voyages cacao », il découvre « de nouvelles façons de travailler le chocolat, mais aussi des informations sur la plante elle-même ». Il suffit de citer un de ces deux bénéfices."
   },
   {
    "id": "ceb-2024-l8-q9",
@@ -4113,7 +4134,7 @@
     "mesurée"
    ],
    "reponse": 3,
-   "explication": "Modéré = mesuré, sans excès."
+   "explication": "Une consommation « modérée » est raisonnable, sans excès : elle est mesurée. « Régulière » parle de la fréquence, « suffisante » veut dire assez, et « excessive » est le contraire de modérée."
   },
   {
    "id": "ceb-2024-l8-q10",
@@ -4127,7 +4148,8 @@
    "documents": [
     "choco-4"
    ],
-   "reponseModele": "Elle entraine une déforestation massive (qui modifie le climat local) ou elle demande énormément d'eau (20 000 l pour 1 kg de fèves)."
+   "reponseModele": "Elle entraine une déforestation massive (qui modifie le climat local) ou elle demande énormément d'eau (20 000 l pour 1 kg de fèves).",
+   "explication": "Dans la partie « Stop… », le texte donne deux raisons : la culture « conduit souvent à une déforestation massive », qui modifie le climat local, et le cacaoyer demande énormément d'eau (« environ 20 000 litres d'eau pour produire 1 kilogramme de fèves »). Une seule raison suffit."
   },
   {
    "id": "ceb-2024-l8-q11",
@@ -4142,7 +4164,7 @@
    "documents": [
     "choco-4"
    ],
-   "explication": "Le chocolat donne de l'énergie et diminue le stress, mais sa consommation doit rester modérée.",
+   "explication": "La meilleure réponse est « raison et tort à la fois » : le texte cite des bienfaits (le chocolat « donne de l'énergie », « diminue le stress et augmente le bienêtre ») mais rappelle que sa consommation « doit rester modérée ». La justification doit venir du texte et aller avec la case choisie.",
    "reponseModele": "Meilleure réponse : Manon a raison et tort à la fois. Le chocolat apporte des bienfaits (par exemple pour le moral, le cœur ou l'énergie), mais sa consommation doit rester modérée. On accepte aussi « raison » justifié par un bienfait, ou « tort » justifié par le fait qu'il n'est pas bon d'en manger trop. Sans justification, pas de point."
   },
   {
@@ -4166,7 +4188,7 @@
     "Présence d'une liste d'ingrédients à utiliser"
    ],
    "reponse": 4,
-   "explication": "Une illustration, un titre ou des étapes numérotées existent dans d'autres textes ; la liste d'ingrédients est propre à la recette."
+   "explication": "La liste des ingrédients à utiliser n'existe que dans une recette. Un titre, une illustration, des étapes numérotées ou des verbes à l'infinitif se trouvent aussi dans d'autres textes, comme un mode d'emploi ou un bricolage."
   },
   {
    "id": "ceb-2024-l8-q13",
@@ -4195,7 +4217,7 @@
     2,
     3
    ],
-   "explication": "Une recette fait agir (elle dit quoi faire). « Le saviez-vous ? » donne des informations."
+   "explication": "La recette dit au lecteur ce qu'il doit faire (« Casser le chocolat », « Faire fondre le chocolat ») : elle fait agir. Les encadrés « Le saviez-vous ? » donnent des renseignements, par exemple que la truffe a été inventée en 1895 : ils informent."
   },
   {
    "id": "ceb-2024-l8-q14",
@@ -4219,7 +4241,7 @@
     "Photo 5"
    ],
    "reponse": 3,
-   "explication": "Compare chaque photo aux étapes de la recette : le sucre n'en fait pas partie."
+   "explication": "Compare chaque photo aux ingrédients et aux étapes de la recette. La photo 4 montre qu'on ajoute du sucre, alors que le sucre n'est ni dans la liste des ingrédients ni dans la préparation. Les autres photos montrent la crème versée, le beurre ajouté, le chocolat cassé et les boules roulées dans le cacao."
   },
   {
    "id": "ceb-2024-l8-q15",
@@ -4234,7 +4256,7 @@
    "documents": [
     "choco-5"
    ],
-   "explication": "« Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. »",
+   "explication": "Un encadré « Le saviez-vous ? » explique : « Le chocolat s'imprègne des odeurs qui l'entourent. C'est pourquoi il faut l'emballer. » La chaleur et l'humidité, citées dans l'autre encadré, disent où le conserver, pas pourquoi l'emballer.",
    "reponseModele": "Parce que le chocolat s'imprègne des odeurs qui l'entourent. Ce n'est pas bon : « parce que le chocolat n'aime ni la chaleur ni l'humidité »."
   },
   {
@@ -4249,7 +4271,8 @@
    "documents": [
     "choco-4"
    ],
-   "reponseModele": "Il donne de l'énergie ; il diminue le stress ; il augmente le bienêtre."
+   "reponseModele": "Il donne de l'énergie ; il diminue le stress ; il augmente le bienêtre.",
+   "explication": "Dans la partie « … ou encore ? », le texte cite trois bienfaits : le chocolat « donne de l'énergie », il « diminue le stress » et il « augmente le bienêtre ». Un seul suffit."
   },
   {
    "id": "ceb-2024-l8-q17",
@@ -4298,7 +4321,7 @@
     "feves de cacao",
     "se"
    ],
-   "explication": "Les graines sont appelées « fèves de cacao », puis reprises par « celles-ci ». « fèves » seul ne suffit pas : il faut « fèves de cacao » (ou le pronom « celles-ci », « se »)."
+   "explication": "Dans l'extrait, les graines sont « appelées fèves de cacao », puis reprises par le pronom « Celles-ci ». Le pronom « se » (« se trouvent des graines ») les désigne aussi. « fèves » seul ne suffit pas : le groupe complet est « fèves de cacao »."
   },
   {
    "id": "ceb-2024-l8-q19",
@@ -4317,7 +4340,7 @@
     "Impression produite sur quelqu'un. Exemple : Votre remarque a fait mauvais effet."
    ],
    "reponse": 2,
-   "explication": "Les effets de la production, ce sont ses conséquences : ce qu'elle produit."
+   "explication": "Les « effets négatifs » de la production, ce sont ses conséquences, ce qu'elle produit : la déforestation, le grand besoin en eau. Il ne s'agit ni d'objets personnels, ni d'effets spéciaux de cinéma, ni d'une impression faite sur quelqu'un."
   },
   {
    "id": "ceb-2024-l8-q20",
@@ -4336,7 +4359,7 @@
     "Ce film est une production franco-belge."
    ],
    "reponse": 2,
-   "explication": "Il s'agit de produire des biens en grande quantité, comme la production agricole."
+   "explication": "Dans l'extrait, la « production » du chocolat, c'est le fait de cultiver et de fabriquer un produit en grande quantité, comme la production agricole. La chaleur qui nait d'un frottement, l'œuvre d'un artiste ou un film sont d'autres sens du mot."
   },
   {
    "id": "ceb-2024-l8-q21",
@@ -4388,7 +4411,7 @@
      "tranchait"
     ]
    ],
-   "explication": "Dégustation → déguster, dégustateur. Tranchant → trancher, une tranche. On n'accepte ni le mot donné, ni le même mot au féminin ou au pluriel."
+   "explication": "Les mots d'une même famille partagent le même radical. Dégustation → déguster, dégustateur (ou gouter, gout, dégout). Tranchant → trancher, une tranche, un trancheur. Un mot inventé, ou le même mot au féminin ou au pluriel (tranchante), ne convient pas."
   },
   {
    "id": "ceb-2024-l9-q1",
@@ -4412,7 +4435,7 @@
     "C'est l'histoire d'un garçon qui doit réaliser un devoir d'écriture. Il est paniqué, car son amie le qualifie de cancre. Finalement, il questionne le chien de ses rêves. Il trouve l'inspiration et lit son poème devant la classe."
    ],
    "reponse": 2,
-   "explication": "Nico écrit sur le conseil du chien de son rêve, pas sur son cauchemar ; Nour ne le traite pas de cancre et ne lui lit pas Prévert pour ce devoir."
+   "explication": "Le 3e résumé suit l'histoire : Nico est angoissé par le poème, Nour lui conseille de parler au chien de son rêve, et ce conseil l'aide à écrire. Les autres se trompent : il n'écrit pas sur son cauchemar (1er), Nour ne lui lit pas Prévert pour ce devoir (2e) et elle ne le traite pas de cancre (4e)."
   },
   {
    "id": "ceb-2024-l9-q2",
@@ -4434,7 +4457,7 @@
     "il ne devrait pas mémoriser et réciter un texte."
    ],
    "reponse": 3,
-   "explication": "Il est soulagé de ne pas devoir apprendre et déclamer un texte… avant d'apprendre qu'il devra l'écrire."
+   "explication": "La maitresse dit d'abord qu'elle avait pensé donner « un texte à apprendre et à déclamer devant toute la classe », puis qu'elle a « changé d'avis ». Nico est rassuré : il croit qu'il ne devra pas mémoriser et réciter un texte… avant d'apprendre qu'il devra l'écrire."
   },
   {
    "id": "ceb-2024-l9-q3",
@@ -4456,7 +4479,7 @@
     "triste"
    ],
    "reponse": 1,
-   "explication": "« Nico avait blêmi : c'était encore pire ! » Il n'en dort plus."
+   "explication": "Quand il apprend qu'il doit écrire le poème, « Nico avait blêmi : c'était encore pire ! », et il n'en dort plus du weekend. Il est inquiet, angoissé, pas seulement déçu ou triste."
   },
   {
    "id": "ceb-2024-l9-q4",
@@ -4470,7 +4493,8 @@
    "documents": [
     "coeur-1"
    ],
-   "reponseModele": "Il n'a pas dormi du weekend, angoissé par son poème, et il a fait des cauchemars trois nuits de suite."
+   "reponseModele": "Il n'a pas dormi du weekend, angoissé par son poème, et il a fait des cauchemars trois nuits de suite.",
+   "explication": "Les cernes viennent du manque de sommeil. Le texte dit : « Il n'en avait pas dormi du weekend », et Nico explique : « C'est la troisième nuit d'affilée que je fais des cauchemars ». Une de ces deux raisons suffit."
   },
   {
    "id": "ceb-2024-l9-q5",
@@ -4492,7 +4516,7 @@
     "pour aider son ami à écrire un poème"
    ],
    "reponse": 1,
-   "explication": "Elle écrit une histoire de vampire : « ça me donnera peut-être des idées »."
+   "explication": "Nour dit : « Une histoire de vampire. D'ailleurs, raconte-moi ton dernier cauchemar, ça me donnera peut-être des idées. » Elle cherche des idées pour son histoire ; elle ne veut pas se moquer (elle promet de ne pas le faire)."
   },
   {
    "id": "ceb-2024-l9-q6",
@@ -4514,7 +4538,7 @@
     "Solan"
    ],
    "reponse": 1,
-   "explication": "Relis ce que le texte dit de la relation entre Nour et Nico. Justifie ensuite sur la fiche suivante."
+   "explication": "Solan a raison. Le narrateur dit que Nour et Nico sont devenus amis, « peut-être même un peu plus que ça… Du moins pour Nico ». À la fin, quand Nour demande qui aimera son poème, Nico répond « Ça, aucune idée » en mentant et en rougissant."
   },
   {
    "id": "ceb-2024-l9-q6-j",
@@ -4532,7 +4556,7 @@
     "coeur-3"
    ],
    "reponseModele": "« …peut-être même un peu plus que cela… Du moins pour Nico » ou « mentit Nicolas en rougissant » (0,5 point ; au total 1 point pour la case et la justification, tout ou rien).",
-   "explication": "Le texte laisse entendre que, pour Nico, c'est plus que de l'amitié."
+   "explication": "Il faut écrire « Solan » et recopier un passage qui montre que Nico aime Nour : « peut-être même un peu plus que ça… Du moins pour Nico », ou « Ça, aucune idée, mentit Nico en rougissant »."
   },
   {
    "id": "ceb-2024-l9-q7",
@@ -4546,7 +4570,8 @@
    "documents": [
     "coeur-1"
    ],
-   "reponseModele": "Elle griffonne dans son carnet intime ; elle écrit une histoire de vampire « juste pour le plaisir » ; elle a fini son poème dès le vendredi soir."
+   "reponseModele": "Nour écrit (griffonne) juste pour le plaisir. Ou : « Nour l'écrivaine ». On accepte aussi : elle avait déjà terminé son poème (son devoir) le vendredi soir.",
+   "explication": "Plusieurs passages le montrent : Nour griffonne dans son carnet et dit « j'écrivais juste pour le plaisir… Une histoire de vampire » ; Nico pense à « Nour l'écrivaine, Nour la grande lectrice » ; elle avait déjà terminé son poème le vendredi soir. Un seul élément suffit."
   },
   {
    "id": "ceb-2024-l9-q8",
@@ -4554,7 +4579,7 @@
    "numero": "8",
    "domaine": "fr.lire",
    "type": "qcm",
-   "enonce": "Observe les quatre illustrations numérotées du livret (page 5). Dans le livret, il fallait cocher celle qui correspond le mieux au moment où Nico parle à Nour pour la première fois. Laquelle est-ce ?",
+   "enonce": "Observe les quatre illustrations (livret, page 5). Choisis l'illustration qui correspond le mieux au moment où Nico parle à Nour pour la première fois.",
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "fr-inferences",
@@ -4571,7 +4596,7 @@
     "Illustration 4"
    ],
    "reponse": 2,
-   "explication": "Au moment où Nico lui parle, Nour est assise par terre, plongée dans son livre de Prévert : c'est l'illustration 3."
+   "explication": "Le texte dit que, la première fois que Nico lui a parlé, Nour « se tenait assise contre le même mur décrépi et lisait un recueil de poèmes de Prévert ». C'est l'illustration 3 qui montre Nour assise, plongée dans son livre."
   },
   {
    "id": "ceb-2024-l9-q9",
@@ -4585,7 +4610,8 @@
    "documents": [
     "coeur-2"
    ],
-   "reponseModele": "Le nom de l'auteur, Prévert, lui fait penser à un « pré tout vert » avec des vaches."
+   "reponseModele": "Le nom de l'auteur, Prévert, lui fait penser à un « pré tout vert » avec des vaches.",
+   "explication": "Le nom de l'auteur, Prévert, « lui avait fait songer à un pré tout vert avec de gros ruminants regardant passer les trains ». C'est ce jeu de mots (Prévert, pré vert) qui lui fait penser aux vaches."
   },
   {
    "id": "ceb-2024-l9-q10",
@@ -4599,7 +4625,8 @@
    "documents": [
     "coeur-2"
    ],
-   "reponseModele": "Nour se moque de sa peur d'un bébé caniche, alors que Nico est amoureux d'elle et veut lui plaire."
+   "reponseModele": "Nour se moque de sa peur d'un bébé caniche, alors que Nico est amoureux d'elle et veut lui plaire.",
+   "explication": "Nico vient d'avouer qu'il a été mordu par le bébé caniche de sa tante, et Nour éclate de rire : elle se moque de sa peur et de son cauchemar. Comme Nico tient beaucoup à elle, ce rire lui fait de la peine."
   },
   {
    "id": "ceb-2024-l9-q11",
@@ -4621,7 +4648,7 @@
     "elle est plus qu'une amie pour Nico."
    ],
    "reponse": 3,
-   "explication": "Nico est amoureux : il a peur que son poème ne plaise pas à Nour."
+   "explication": "Le texte explique juste après que Nour et Nico sont devenus amis, « peut-être même un peu plus que ça… Du moins pour Nico ». Il n'arrive pas à écrire parce qu'il a peur de ne pas plaire à celle qu'il aime."
   },
   {
    "id": "ceb-2024-l9-q12",
@@ -4635,7 +4662,8 @@
    "documents": [
     "coeur-2"
    ],
-   "reponseModele": "Pour plaire à Nour, qui est une grande lectrice et écrivaine : son poème doit être aussi beau que celui de Prévert."
+   "reponseModele": "Pour plaire à Nour, qui est une grande lectrice et écrivaine : son poème doit être aussi beau que celui de Prévert.",
+   "explication": "Le texte dit qu'il fallait, « pour plaire à Nour l'écrivaine, Nour la grande lectrice, Nour la si parfaite, que son poème soit aussi beau que celui de Prévert ». Il veut plaire à Nour et ne pas la décevoir."
   },
   {
    "id": "ceb-2024-l9-q13",
@@ -4655,7 +4683,7 @@
     "désert de neige",
     "un desert de neige"
    ],
-   "explication": "« On aurait dit un désert de neige » : une comparaison."
+   "explication": "L'auteur écrit : « On aurait dit un désert de neige ». « On aurait dit » annonce une comparaison : la page blanche, vide et immense, ressemble à un désert de neige."
   },
   {
    "id": "ceb-2024-l9-q14",
@@ -4689,7 +4717,7 @@
     1,
     1
    ],
-   "explication": "Nico parle du « conseil d'un ami, le chien de mon rêve ». Rien ne dit ce que ressent Nour. Il ne la connait que depuis quelques mois. Le sujet est « entièrement libre »."
+   "explication": "Le chien : vrai, Nico parle du « conseil d'un ami, le chien de mon rêve ». Nour amoureuse : le texte ne dit jamais ce qu'elle ressent, on ne peut pas savoir. L'école maternelle : faux, « cela ne faisait que quelques mois qu'il la connaissait ». Le sujet : faux, la maitresse dit qu'« il est entièrement libre »."
   },
   {
    "id": "ceb-2024-l9-q15",
@@ -4718,7 +4746,7 @@
     3,
     0
    ],
-   "explication": "Elle lisait Prévert lors de leur première rencontre (quelques mois avant), a fini son poème le vendredi, écrit une histoire de vampire le lundi et écoute Nico le mercredi."
+   "explication": "Nour lisait Prévert la première fois qu'ils se sont parlé, quelques mois plus tôt. Elle a terminé son poème le vendredi soir. Le lundi matin, elle écrit une histoire de vampire. Le mercredi, à l'école, elle écoute le poème de Nico."
   },
   {
    "id": "ceb-2024-l9-q16",
@@ -4726,7 +4754,7 @@
    "numero": "16",
    "domaine": "fr.lire",
    "type": "ouverte",
-   "enonce": "Le texte a pour titre « Avec le cœur ». Explique ce choix.",
+   "enonce": "Le texte a pour titre « Avec le cœur ». Explique le choix de ce titre à l'aide du texte.",
    "points": 1,
    "corrigeVerifie": true,
    "documents": [
@@ -4734,7 +4762,8 @@
     "coeur-2",
     "coeur-3"
    ],
-   "reponseModele": "La maitresse demande un poème qui « vienne du cœur » ; Nico finit par écrire sincèrement, avec ses sentiments pour Nour : « écrit avec le cœur, comme demandé »."
+   "reponseModele": "Une des idées suivantes : un poème écrit avec le cœur, avec sincérité (par exemple : Madame Lampion demande un poème écrit avec le cœur) ; ou une histoire d'amour (par exemple : Nico est amoureux de Nour).",
+   "explication": "La maitresse demande un poème qui « vienne du cœur ». À la fin, Nour dit que le texte de Nico est « écrit avec le cœur, comme demandé » : il est sincère et parle de ses vrais sentiments. On peut aussi expliquer que c'est une histoire d'amour : Nico est amoureux de Nour. Ta réponse doit faire ce lien avec le texte."
   },
   {
    "id": "ceb-2024-l9-q17",
@@ -4753,7 +4782,7 @@
     "Il ne faut pas reporter au lendemain ce que l'on peut faire le jour même."
    ],
    "reponse": 1,
-   "explication": "Le chien conseille : « Si tu ne te sens pas capable de quelque chose, avoue-le. » Nico réussit en étant sincère."
+   "explication": "Le chien conseille à Nico : « Si tu ne te sens pas capable de quelque chose, avoue-le. » Nico écrit sincèrement et son poème plait : il n'avait pas besoin d'être parfait comme Prévert, mais vrai. Les autres phrases ne parlent pas de cette histoire."
   },
   {
    "id": "ceb-2024-l9-q18",
@@ -4772,7 +4801,7 @@
     "Inciter le lecteur à lire un texte poétique."
    ],
    "reponse": 1,
-   "explication": "C'est un récit qui raconte une histoire pour le plaisir du lecteur."
+   "explication": "« Avec le cœur » est un récit inventé, avec des personnages, qui raconte comment Nico écrit un poème : l'auteur veut divertir le lecteur. Il ne donne ni informations, ni règles pour écrire une poésie."
   },
   {
    "id": "ceb-2024-l9-q19",
@@ -4787,7 +4816,7 @@
    "reponse": [
     "puis"
    ],
-   "explication": "« Puis » est un organisateur qui marque la suite dans le temps."
+   "explication": "« Puis » relie les deux phrases en marquant la suite dans le temps : d'abord Nico se sent rassuré, puis la maitresse continue de parler. C'est un organisateur."
   },
   {
    "id": "ceb-2024-l9-q20",
@@ -4814,7 +4843,7 @@
     0,
     1
    ],
-   "explication": "« il » montre que c'est un garçon qui parle ; « provoquée » (féminin) montre qu'il parle à une fille."
+   "explication": "« il » est un pronom masculin : c'est un garçon (Nico) qui parle. « l' » désigne la personne à qui il parle ; le participe « provoquée » s'accorde avec ce « l' » et prend un -e : c'est une fille (Nour)."
   },
   {
    "id": "ceb-2024-l9-q20a",
@@ -4831,7 +4860,7 @@
     "« il »"
    ],
    "souple": false,
-   "explication": "Le pronom « il » prouve que celui qui parle est un garçon.",
+   "explication": "Dans « l'avait-il gentiment provoquée », le sujet est le pronom « il », qui est masculin : c'est un garçon qui parle.",
    "documents": [
     "coeur-2"
    ]
@@ -4928,7 +4957,7 @@
      "déterminant possessif"
     ]
    ],
-   "explication": "« son devoir » : nom (précédé d'un déterminant). « et » relie deux propositions. « sa » accompagne le nom « tête »."
+   "explication": "« son devoir » : ici, « devoir » est un nom, précédé du déterminant « son » (ce n'est pas le verbe). « et » relie deux parties de la phrase : c'est un mot de liaison. « sa » accompagne le nom « tête » : c'est un déterminant (possessif)."
   },
   {
    "id": "ceb-2024-l9-q24",
@@ -4947,7 +4976,7 @@
     "Il écrivit son poème d'une traite."
    ],
    "reponse": 2,
-   "explication": "« Elle » (sujet) « fronça » (verbe) « les sourcils » (CD). Les autres n'ont pas de CD ou ajoutent un autre complément."
+   "explication": "Dans « Elle fronça les sourcils », on trouve le sujet « Elle », le verbe « fronça » et le complément direct « les sourcils » (elle fronça quoi ? les sourcils). « Aucun mot ne venait » n'a pas de complément, et les deux autres phrases ajoutent d'autres compléments (« Cette nuit », « d'un chien », « d'une traite »)."
   },
   {
    "id": "ceb-2024-l9-q25",
@@ -4973,7 +5002,7 @@
     1,
     3
    ],
-   "explication": "avais terminé : plus-que-parfait (auxiliaire à l'imparfait + participe passé). m'étonnerait : conditionnel présent."
+   "explication": "« avais terminé » : l'auxiliaire avoir à l'imparfait (avais) suivi du participe passé (terminé), c'est le plus-que-parfait. « étonnerait » : le radical du futur (étonner-) avec la terminaison de l'imparfait (-ait), c'est le conditionnel présent."
   },
   {
    "id": "ceb-2024-l9-q26",
@@ -4992,7 +5021,7 @@
     "pour que"
    ],
    "reponse": 1,
-   "explication": "« Pourvu que » exprime une condition."
+   "explication": "« Parlez de ce que vous voulez, pourvu que ça vienne du cœur » : vous pouvez parler de tout, à condition que ça vienne du cœur. « Pourvu que » exprime une condition, alors que « afin que », « pour que » et « de sorte que » expriment un but ou une conséquence."
   },
   {
    "id": "ceb-2024-l9-q27",
@@ -5011,7 +5040,7 @@
     "Nature profonde d'une personne. Exemple : Zoé est parfois moqueuse, mais elle a un fond gentil."
    ],
    "reponse": 3,
-   "explication": "Avoir « un bon fond », c'est être gentil au fond de soi."
+   "explication": "Nour veut dire que le cancre du poème est gentil au fond de lui, malgré ses mauvais résultats : c'est sa nature profonde. Il ne s'agit pas du fond d'un objet, d'un lieu ou d'un tissu."
   },
   {
    "id": "ceb-2024-l10-q1a",
@@ -5022,7 +5051,8 @@
    "enonce": "Entoure sur la photo de Julia l'organe qui lui permet de gouter la saveur du lait.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Le gout se perçoit avec la langue, dans la bouche : il faut entourer la bouche de Julia. La flèche de la photo, elle, montre l'oreille, l'organe de l'ouïe."
   },
   {
    "id": "ceb-2024-l10-q1b",
@@ -5067,7 +5097,7 @@
     0,
     3
    ],
-   "explication": "Les cinq sens : la vue, l'ouïe, l'odorat, le gout et le toucher."
+   "explication": "Les cinq sens sont la vue, l'ouïe, l'odorat, le gout et le toucher : ici, ce sont l'odorat et la vue. La respiration et la transpiration sont des fonctions du corps ; la gentillesse et l'humour sont des qualités."
   },
   {
    "id": "ceb-2024-l10-q2",
@@ -5098,7 +5128,7 @@
     4,
     5
    ],
-   "explication": "L'eau chaude réchauffe l'air de la bouteille. En se refroidissant, l'air prend moins de place : l'eau colorée monte dans la bouteille."
+   "explication": "On présente d'abord le matériel, on verse l'eau colorée dans l'assiette, puis l'eau chaude dans la bouteille pour chauffer l'air. On retire l'eau chaude et on retourne la bouteille sur l'assiette. En refroidissant, l'air prend moins de place : l'eau colorée monte dans la bouteille."
   },
   {
    "id": "ceb-2024-l10-q3",
@@ -5126,7 +5156,7 @@
      "condensation"
     ]
    ],
-   "explication": "L'eau qui coule forme des cours d'eau (ruissèlement). La pluie et la neige sont des précipitations. La vapeur qui redevient liquide se condense."
+   "explication": "L'eau de la fonte des glaces coule sur le sol et forme des cours d'eau : c'est le ruissèlement. La pluie, la neige ou la grêle qui tombent des nuages sont des précipitations. La vapeur d'eau (un gaz) qui devient de minuscules gouttelettes (liquide) se condense : c'est la condensation."
   },
   {
    "id": "ceb-2024-l10-q4",
@@ -5169,7 +5199,7 @@
      "triton crêté"
     ]
    ],
-   "explication": "Aselle : 2 paires d'antennes ; épinoche : nageoires à rayons ; triton : 4 doigts à la main ; ragondin : poils et mamelles."
+   "explication": "Compare les croix avec la collection. 1re ligne : squelette externe et 2 paires d'antennes, l'aselle aquatique. 2e ligne : nageoires à rayons, l'épinoche (un poisson). 3e ligne : poils, mamelles et oreilles avec pavillon, le ragondin (un mammifère). 4e ligne : 4 doigts à la main, le triton à crête."
   },
   {
    "id": "ceb-2024-l10-q5a",
@@ -5199,7 +5229,7 @@
     3,
     1
    ],
-   "explication": "Après l'œuf vient la planule (2) ; le polype se transforme ensuite en strobile (4), qui libère des éphyrules."
+   "explication": "Suis le cycle à partir de l'œuf. Le portfolio dit que l'œuf donne une larve, la planule (2), qui se fixe et devient un polype (3). Le polype se divise ensuite en un empilement de disques, le strobile (4), qui libère des éphyrules (5) qui deviennent des méduses adultes."
   },
   {
    "id": "ceb-2024-l10-q5b",
@@ -5235,7 +5265,7 @@
     4,
     3
    ],
-   "explication": "La métamorphose (B) est le passage de la larve à l'adulte ; la pupe est le dessin 3 ; l'adulte est le dessin 4 ; la reproduction (A) mène de l'adulte aux œufs.",
+   "explication": "Comme chez le papillon, on trouve les œufs (1), la larve (2), la pupe (3) et l'adulte (4). La métamorphose (B) est le passage de la pupe à l'adulte, et la reproduction (A) relie l'adulte aux nouveaux œufs.",
    "colonnesParLigne": [
     [
      "1",
@@ -5296,7 +5326,7 @@
     2,
     3
    ],
-   "explication": "Le cœur et les vaisseaux : appareil circulatoire (2) ; les poumons : appareil respiratoire (3) ; l'estomac et les intestins : appareil digestif (4)."
+   "explication": "Le schéma 2 montre le cœur et les vaisseaux sanguins : l'appareil circulatoire. Le schéma 3 montre les poumons : l'appareil respiratoire. Le schéma 4 montre l'estomac et les intestins : l'appareil digestif, qui transforme les aliments. Le schéma 1 montre les muscles et le squelette."
   },
   {
    "id": "ceb-2024-l10-q7a",
@@ -5322,7 +5352,7 @@
     2,
     1
    ],
-   "explication": "La moelle épinière passe à l'intérieur de la colonne vertébrale ; les côtes (cage thoracique) entourent les poumons."
+   "explication": "La moelle épinière passe à l'intérieur de la colonne vertébrale, formée de vertèbres. Les poumons sont entourés par les côtes, qui forment la cage thoracique. Le crâne, lui, protège le cerveau."
   },
   {
    "id": "ceb-2024-l10-q7b",
@@ -5330,10 +5360,11 @@
    "numero": "7b",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Entoure sur le squelette de la chauvesouris l'articulation qui correspond au coude.",
+   "enonce": "Entoure en rouge, sur le squelette de la chauvesouris, l'articulation qui correspond au coude chez l'humain.",
    "points": 1,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Chez l'humain, le coude relie l'os du bras à ceux de l'avant-bras. Sur l'aile de la chauvesouris, cherche la même articulation : après l'os qui part de l'épaule, avant les os de l'avant-bras et les longs doigts qui tendent l'aile."
   },
   {
    "id": "ceb-2024-l10-q8a",
@@ -5361,7 +5392,7 @@
      "liquide"
     ]
    ],
-   "explication": "Les états de l'eau : solide (glace), liquide, gazeux (vapeur). L'eau du lac est liquide ; dans l'air (1), l'eau est à l'état gazeux."
+   "explication": "L'eau existe à l'état solide (glace), liquide ou gazeux (vapeur). Au point 1, dans l'air au-dessus du lac, l'eau est présente sous forme de vapeur : état gazeux. Au point 2, l'eau du lac est liquide."
   },
   {
    "id": "ceb-2024-l10-q8b",
@@ -5379,7 +5410,7 @@
     "Vaporisation"
    ],
    "reponse": 0,
-   "explication": "Liquide → solide : solidification."
+   "explication": "Quand l'eau liquide devient solide (de la glace), c'est la solidification. La condensation est le passage du gaz au liquide, et la vaporisation le passage du liquide au gaz."
   },
   {
    "id": "ceb-2024-l10-q8c",
@@ -5406,7 +5437,7 @@
     1,
     0
    ],
-   "explication": "Les brindilles sont encore solides ; fondu, l'aluminium est liquide ; refroidi, il redevient solide.",
+   "explication": "Photo 1 : les brindilles d'aluminium n'ont pas encore fondu, elles sont solides. Photo 2 : l'aluminium « fondu » coule dans le moule, il est liquide. Photo 3 : refroidi, il forme un petit lingot dur, il est redevenu solide.",
    "documents": [
     "liv10-p11"
    ]
@@ -5501,7 +5532,7 @@
     2,
     0
    ],
-   "explication": "L'anémomètre mesure la vitesse du vent, la girouette indique sa direction, le pluviomètre recueille la pluie."
+   "explication": "L'anémomètre mesure la vitesse du vent (4 km/h). La girouette indique la direction du vent (sud-ouest). Le pluviomètre recueille l'eau qui tombe et mesure la quantité de précipitations. Le baromètre, lui, mesure la pression de l'air."
   },
   {
    "id": "ceb-2024-l10-q9c",
@@ -5530,7 +5561,7 @@
      "15 millimètres"
     ]
    ],
-   "explication": "SO = sud-ouest : une direction. Vendredi : 15 mm de pluie (n'oublie pas l'unité)."
+   "explication": "Dans le bulletin, la ligne « Direction du vent » indique « SO » le jeudi : sud-ouest est une direction. Le vendredi, la ligne « Quantité de précipitations » indique 15 mm : n'oublie pas l'unité, le millimètre."
   },
   {
    "id": "ceb-2024-l10-q10a1",
@@ -5552,7 +5583,7 @@
     "les plus élevés chez l'enfant."
    ],
    "reponse": 1,
-   "explication": "Les bâtons les plus hauts sont ceux des adolescents (16 ans)."
+   "explication": "Les bâtonnets les plus hauts sont ceux des adolescents de 16 ans : environ 2 400 kcal pour les filles et 3 000 kcal pour les garçons. Chez les adultes, et plus encore après 70 ans, les besoins sont plus bas."
   },
   {
    "id": "ceb-2024-l10-q10a2",
@@ -5574,7 +5605,7 @@
     "les filles de 16 ans ont des besoins énergétiques moins élevés que les garçons du même âge."
    ],
    "reponse": 3,
-   "explication": "À 16 ans : 2 400 kcal pour les filles, 3 000 pour les garçons."
+   "explication": "À 16 ans, le bâtonnet des filles monte à environ 2 400 kcal et celui des garçons à 3 000 kcal : les filles ont des besoins moins élevés. À 3 ans, les deux sont égaux (1 200 kcal) ; après 70 ans, les femmes ont besoin de moins (1 500 kcal contre 1 900 kcal)."
   },
   {
    "id": "ceb-2024-l10-q10a3",
@@ -5596,7 +5627,7 @@
     "comme pour les garçons, les besoins énergétiques des filles diminuent tout au long de leur vie."
    ],
    "reponse": 2,
-   "explication": "Les bâtons montent jusqu'à 16 ans, puis redescendent."
+   "explication": "Pour les filles comme pour les garçons, les bâtonnets montent de 3 ans à 16 ans, puis redescendent chez les adultes et encore plus après 70 ans : les besoins augmentent jusqu'à l'adolescence, puis diminuent."
   },
   {
    "id": "ceb-2024-l10-q10a4",
@@ -5622,7 +5653,7 @@
     0,
     1
    ],
-   "explication": "Le graphique compare les besoins selon l'âge et selon le sexe.",
+   "explication": "Le graphique compare les besoins selon l'âge (écrit sous chaque groupe de bâtonnets) et selon le sexe (les deux couleurs de la légende). Les kilocalories sont l'unité de mesure, pas une variable, et le sport ou l'année n'apparaissent pas dans ce graphique.",
    "parReponse": true
   },
   {
@@ -5631,10 +5662,11 @@
    "numero": "10b1",
    "domaine": "sc.vivant",
    "type": "ouverte",
-   "enonce": "Trace les bâtonnets manquants dans le graphique des dépenses énergétiques.",
+   "enonce": "D'après les données du tableau des dépenses énergétiques, trace les bâtonnets manquants dans le graphique.",
    "points": 2,
    "corrigeVerifie": false,
-   "numerisable": false
+   "numerisable": false,
+   "explication": "Dans le tableau, le golf dépense 60 kcal pour 15 minutes et 240 kcal pour 60 minutes : ce sont les deux bâtonnets qui manquent. Trace-les au-dessus de « Golf », jusqu'aux hauteurs 60 et 240 de l'axe, avec la même largeur que les autres."
   },
   {
    "id": "ceb-2024-l10-q10b2",
@@ -5653,7 +5685,7 @@
     "Le yoga"
    ],
    "reponse": 2,
-   "explication": "Handball : 748 kcal, le plus grand nombre.",
+   "explication": "Dans la colonne des 60 minutes, le handball a la plus grande valeur : 748 kcal. Le judo dépense 612 kcal, le tennis 408 kcal et le yoga seulement 102 kcal.",
    "documents": [
     "liv10-p14"
    ]
@@ -5675,7 +5707,7 @@
     "est moins importante en pratiquant la brasse que de l'équitation."
    ],
    "reponse": 2,
-   "explication": "Yoga 26 kcal < tennis de table 51 kcal. Tennis de table et équitation sont égaux (51).",
+   "explication": "Pour 15 minutes, le yoga dépense 26 kcal et le tennis de table 51 kcal : le yoga dépense moins. Le tennis de table et l'équitation dépensent autant (51 kcal), et la brasse (102 kcal) dépense plus que l'équitation.",
    "documents": [
     "liv10-p14"
    ]
@@ -5794,7 +5826,7 @@
     1,
     4
    ],
-   "explication": "On ne change qu'une chose à la fois : même endroit, même quantité d'eau, même durée.",
+   "explication": "Pour comparer deux expériences, on ne change qu'une seule chose et on garde tout le reste identique : le même endroit, la même quantité d'eau, la même durée. La couleur de la tulipe ne joue aucun rôle, et arroser la tulipe changerait la quantité d'eau.",
    "parReponse": true
   },
   {
@@ -5810,7 +5842,8 @@
    "documents": [
     "fleurs"
    ],
-   "reponseModele": "Les deux hypothèses sont correctes : sans huile, le niveau baisse (l'eau s'évapore) ; avec de l'huile, le niveau baisse seulement là où il y a la tulipe (elle absorbe l'eau)."
+   "reponseModele": "Les deux hypothèses sont correctes : sans huile, le niveau baisse (l'eau s'évapore) ; avec de l'huile, le niveau baisse seulement là où il y a la tulipe (elle absorbe l'eau).",
+   "explication": "La conclusion doit contenir les deux idées : l'eau s'évapore ET la tulipe absorbe l'eau. Dans l'expérience 1, le niveau baisse seulement dans l'éprouvette sans huile. Dans l'expérience 2, l'huile empêche l'évaporation, mais le niveau baisse quand même là où se trouve la tulipe."
   },
   {
    "id": "ceb-2024-l10-q13",
@@ -5825,7 +5858,8 @@
    "documents": [
     "liquides"
    ],
-   "reponseModele": "Exp. 2 : Que devient l'eau au congélateur ? L'eau prend-elle plus de place en gelant (la bouteille va-t-elle casser) ? Exp. 3 : À quelle température l'eau bout-elle ? Que devient l'eau quand elle bout ?"
+   "reponseModele": "Exp. 2 : Que devient l'eau au congélateur ? L'eau prend-elle plus de place en gelant (la bouteille va-t-elle casser) ? Exp. 3 : À quelle température l'eau bout-elle ? Que devient l'eau quand elle bout ?",
+   "explication": "La question se pose avant l'expérience et porte sur ce qu'on va observer. Expérience 2 (eau au congélateur) : par exemple « L'eau prend-elle plus de place en gelant ? ». Expérience 3 (eau qui bout) : par exemple « À quelle température l'eau bout-elle ? ». Une question sans lien avec l'expérience ne convient pas."
   },
   {
    "id": "ceb-2024-l10-q14a",
@@ -5848,7 +5882,7 @@
     "Peut-on allumer la lampe LED avec seulement 2 câbles ?"
    ],
    "reponse": 2,
-   "explication": "La seule différence entre les montages est l'eau salée : on teste si elle laisse passer le courant."
+   "explication": "Le montage 2 est le même que le montage 1, avec en plus un verre d'eau salée dans le circuit. Comme seule l'eau salée change, les élèves voulaient savoir si elle laisse passer le courant, c'est-à-dire si elle est conductrice d'électricité."
   },
   {
    "id": "ceb-2024-l10-q14b",
@@ -5860,7 +5894,8 @@
    "points": 1,
    "corrigeVerifie": true,
    "fiche": "sc-electricite",
-   "reponseModele": "Les métaux (fer, argent, étain) sont conducteurs d'électricité ; le plastique, le bois et la porcelaine sont des isolants."
+   "reponseModele": "Les métaux (fer, argent, étain) sont conducteurs d'électricité ; le plastique, le bois et la porcelaine sont des isolants.",
+   "explication": "La conclusion doit généraliser avec les mots « conducteur » ou « isolant » : les métaux (fer, argent, étain) sont conducteurs d'électricité ; le plastique, le bois et la porcelaine sont isolants. Dire seulement que la lampe s'allume avec la cuillère en fer est une observation, pas une conclusion."
   }
  ],
  "corrigeOfficiel": "Correctif officiel de la FWB (CEB 2024), comparé question par question le 21/10/2026."
