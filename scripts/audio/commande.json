@@ -1,11 +1,5 @@
 {
- "mode": "comparer",
- "examen": "ceb-2024",
- "nbSegments": 2,
- "essais": [
-  { "nom": "1-actuelle-charline-gerard", "voix": { "1": "fr-BE-CharlineNeural", "2": "fr-BE-GerardNeural" } },
-  { "nom": "2-multilingue-vivienne-remy", "voix": { "1": "fr-FR-VivienneMultilingualNeural", "2": "fr-FR-RemyMultilingualNeural" } },
-  { "nom": "3-hd-vivienne-remy", "voix": { "1": "fr-FR-Vivienne:DragonHDLatestNeural", "2": "fr-FR-Remy:DragonHDLatestNeural" } },
-  { "nom": "4-classique-denise-henri", "voix": { "1": "fr-FR-DeniseNeural", "2": "fr-FR-HenriNeural" } }
- ]
+ "mode": "tout",
+ "voix": { "1": "fr-FR-Vivienne:DragonHDLatestNeural", "2": "fr-FR-Remy:DragonHDLatestNeural" },
+ "lancement": 6
 }
