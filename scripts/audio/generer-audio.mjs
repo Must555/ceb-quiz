@@ -6,7 +6,7 @@
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 
 const cle = process.env.AZURE_SPEECH_KEY;
-const region = process.env.AZURE_SPEECH_REGION;
+const region = (process.env.AZURE_SPEECH_REGION ?? '').toLowerCase().replace(/[^a-z0-9]/g, ''); // « France Central » → francecentral
 if (!cle || !region) { console.error('Secrets AZURE_SPEECH_KEY et AZURE_SPEECH_REGION manquants.'); process.exit(1); }
 const commande = JSON.parse(await readFile('scripts/audio/commande.json', 'utf8'));
 const VOIX = { 1: 'fr-BE-CharlineNeural', 2: 'fr-BE-GerardNeural', ...(commande.voix ?? {}) };
