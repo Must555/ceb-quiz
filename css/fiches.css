@@ -134,3 +134,8 @@ th { font-size:14px; color:var(--mute); }
 .livret > summary { list-style:none; position:relative; padding-right:28px; } .livret > summary::-webkit-details-marker { display:none; }
 .livret > summary::after { content:'+'; position:absolute; right:2px; top:10px; font:800 20px/1 var(--titre); color:var(--bleu-v); }
 .livret[open] > summary::after { content:'−'; }
+/* Fiches approfondies : exemples expliqués, pièges, résumé des vraies questions du CEB. */
+.fiche > p { margin:0 0 10px; }
+.regle.expl b { display:block; }
+.regle.au-ceb .source-ceb { display:block; font-weight:700; font-size:14px; color:var(--mute); }
+.regle.au-ceb a { font-weight:700; }

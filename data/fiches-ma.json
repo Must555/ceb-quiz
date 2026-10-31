@@ -39,7 +39,83 @@
     "Vers la droite, les nombres augmentent ; vers la gauche, ils diminuent."
    ],
    "exemple": "Entre 100 et 200, il y a 4 intervalles : chacun vaut 100 : 4 = 25. La 3e graduation après 100 est 175.",
-   "astuce": "Compte les intervalles (les espaces), pas les traits !"
+   "astuce": "Compte les intervalles (les espaces), pas les traits !",
+   "comprendre": [
+    "Une droite graduée est une règle de nombres. Les traits (les graduations) sont espacés régulièrement, et chaque espace entre deux traits voisins vaut la même quantité : c'est le pas.",
+    "Méthode en trois étapes. 1) Repère deux nombres écrits. 2) Compte les intervalles entre eux : les espaces, pas les traits. 3) Divise l'écart par le nombre d'intervalles : tu obtiens le pas. Ensuite, avance (vers la droite, on ajoute le pas) ou recule (vers la gauche, on l'enlève) autant de fois qu'il faut.",
+    "Au CEB, la droite ne commence presque jamais à 0, et le pas peut valoir 0,01, 0,2, 50 ou 125. Parfois, une seconde droite est un agrandissement (un zoom) d'un morceau de la première : chaque intervalle est alors découpé en intervalles plus petits. Le milieu entre deux nombres se trouve en les additionnant puis en divisant par 2."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Entre 3 et 4, il y a 4 intervalles.",
+     "explication": "Le pas vaut 1 : 4 = 0,25. Les graduations sont 3,25 ; 3,5 ; 3,75."
+    },
+    {
+     "cas": "5,6 ; 5,8 ; ? ; 6,2",
+     "explication": "On avance de 0,2. Après 5,8 vient 6 (et non 5,10)."
+    },
+    {
+     "cas": "Entre 100 000 et 100 100, il y a 2 intervalles.",
+     "explication": "Le pas vaut 50. Une graduation avant 100 000, c'est 99 950."
+    },
+    {
+     "cas": "Le milieu entre 380 et 620.",
+     "explication": "(380 + 620) : 2 = 500."
+    }
+   ],
+   "pieges": [
+    "Compter les traits au lieu des espaces : avec 3 traits entre 100 et 200, il y a 4 intervalles, pas 3.",
+    "Supposer que le pas vaut 1 ou 10 sans le calculer.",
+    "Se tromper en passant à l'unité suivante avec les décimaux : 3,75 + 0,25 = 4 ; après 17,99 vient 18.",
+    "Partir de 0 alors que la droite commence ailleurs : compte toujours à partir d'un nombre écrit."
+   ],
+   "auCEBIntro": "Cette notion est tombée en 2015, 2017, 2018, 2019, 2022, 2023, 2024, 2025 et 2026.",
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 8,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Compléter trois suites graduées. Pas de 15 (15, 60, 135), de 125 (500, 750, 875) et de 0,2 (6 ; 6,6 ; 7,2)."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 4,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "500 est-il juste au milieu du segment de 250 à 750 ? Oui. De 125 à 375 ? Non, le milieu est 250. De 380 à 620 ? Oui."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "4"
+     ],
+     "libelle": "question 4",
+     "texte": "Avec un pas de 50, les cases autour de 100 000 valent 99 950 et 100 250."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 8,
+     "questions": [
+      "A12a"
+     ],
+     "libelle": "question A12a",
+     "texte": "Entre 3 250 et 3 500, il y a 2 intervalles : le pas vaut 125. 4 600 se trouve juste avant 4 625, sous la tache C."
+    }
+   ]
   },
   {
    "id": "ma-suites",
