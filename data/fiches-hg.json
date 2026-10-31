@@ -12,7 +12,93 @@
     "Il n'y a pas d'an 0 : on passe de l'an 1 av. J.-C. à l'an 1 apr. J.-C. De 52 av. J.-C. à 476 : 52 + 476 − 1 = 527 ans."
    ],
    "exemple": "Charles Quint naît en 1500 et abdique en 1555 : 55 ans plus tard.",
-   "astuce": "Dessine une petite ligne du temps avec les 4 dates charnières (3500 av. J.-C., 476, 1492, 1789) et place les événements dessus."
+   "astuce": "Dessine une petite ligne du temps avec les 4 dates charnières (3500 av. J.-C., 476, 1492, 1789) et place les événements dessus.",
+   "comprendre": [
+    "Une ligne du temps est une droite graduée de dates : le passé à gauche, le présent à droite. Les graduations sont régulières : de 10 en 10 ans, de 100 en 100 ans, parfois en millions d'années. Pour placer une date, repère entre quelles graduations elle tombe : 1931 se place entre 1930 et 1940.",
+    "Avant J.-C., on compte à rebours : 500 av. J.-C. est plus ancien que 100 av. J.-C. Il n'y a pas d'an 0 : on passe de l'an 1 av. J.-C. à l'an 1 apr. J.-C.",
+    "Beaucoup de questions demandent un petit calcul. Une durée : on soustrait les deux dates. Une année de naissance : année moins âge. Pour savoir si quelqu'un a pu connaître un évènement, vérifie qu'il était vivant à cette date. Choisis aussi la bonne échelle : une période de 60 millions d'années ne tient pas sur une ligne graduée en années, jusqu'à l'an 2000."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "J.O. d'été en 1996, 2000, 2004, 2008.",
+     "explication": "Les dates avancent de 4 en 4 : tous les quatre ans."
+    },
+    {
+     "cas": "Marcel, né en 1885, fête ses 29 ans.",
+     "explication": "1885 + 29 = 1914."
+    },
+    {
+     "cas": "Un château en ruines, puis en travaux, puis rénové.",
+     "explication": "Les photos se rangent dans cet ordre sur la ligne du temps."
+    },
+    {
+     "cas": "De 52 av. J.-C. à 476.",
+     "explication": "52 + 476 − 1 = 527 ans, car il n'y a pas d'an 0."
+    }
+   ],
+   "pieges": [
+    "Placer 500 av. J.-C. après 100 av. J.-C.",
+    "Mal lire l'échelle : vérifie de combien en combien vont les graduations.",
+    "Oublier qu'il n'y a pas d'an 0 pour une durée à cheval sur la naissance de Jésus-Christ.",
+    "Confondre l'année et le siècle : 1931 est au 20e siècle."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "5d"
+     ],
+     "libelle": "question 5d",
+     "texte": "Marcel, né en 1885, écrit « aujourd'hui 29 ans » le 24 septembre : c'est en 1914."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "11b"
+     ],
+     "libelle": "question 11b",
+     "texte": "Pour connaître la découverte des îles Galápagos (1535), il fallait être vivant : seul Jacques Cartier (1491-1557) l'était encore."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "11d"
+     ],
+     "libelle": "question 11d",
+     "texte": "Les hommes de 16 à 30 ans en 1940 sont nés entre 1910 et 1924."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "4b"
+     ],
+     "libelle": "question 4b",
+     "texte": "1931 se place entre 1930 et 1940 ; 2019 entre 2010 et 2020."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 5,
+     "questions": [
+      "2k1"
+     ],
+     "libelle": "question 2k",
+     "texte": "Les J.O. d'été ont lieu tous les quatre ans."
+    }
+   ]
   },
   {
    "id": "hg-modes-vie",
@@ -26,7 +112,82 @@
     "Temps modernes : grands voyages, cours royales (Versailles), grands peintres. Époque contemporaine : machines, usines, trains, électricité, voitures, ordinateurs."
    ],
    "exemple": "Le moine copiste qui écrit sur du parchemin → Moyen Âge.",
-   "astuce": "Demande-toi : quelle énergie ? quelle écriture ? quel habitat ? Cela t'aide à trouver la période."
+   "astuce": "Demande-toi : quelle énergie ? quelle écriture ? quel habitat ? Cela t'aide à trouver la période.",
+   "comprendre": [
+    "À chaque époque, les gens ont les mêmes besoins : se nourrir, se loger, se vêtir, se déplacer, communiquer, produire, se distraire, croire. Ce qui change, c'est la façon d'y répondre. Décrire un mode de vie, c'est dire comment les gens répondaient à ces besoins.",
+    "Au CEB, on te donne souvent un tableau de synthèse sans titre, et tu dois trouver l'époque (« Au temps… »). Cherche l'indice le plus précis : la nourriture (chasse et cueillette, ou champs cultivés ?), l'habitat (hutte, villa romaine, château, coron), l'énergie (force des bras et des animaux, eau et vent, charbon et vapeur, électricité), la religion (plusieurs dieux chez les Romains).",
+    "Une trace du passé renseigne sur un ou plusieurs de ces besoins. Un tableau de joueurs d'échecs parle de distraction, mais aussi des vêtements de l'époque."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Nomades, chasse, cueillette, pêche, huttes, outils en pierre taillée.",
+     "explication": "Les chasseurs-cueilleurs de la Préhistoire."
+    },
+    {
+     "cas": "Villages, champs cultivés, élevage, poteries, pierre polie.",
+     "explication": "Les premiers agriculteurs."
+    },
+    {
+     "cas": "Villa romaine, routes pavées, plusieurs dieux.",
+     "explication": "Les Gallo-Romains, dans l'Antiquité."
+    },
+    {
+     "cas": "Usines, corons, chemin de fer, électricité, ouvriers et patrons.",
+     "explication": "Les sociétés industrielles, aux 19e et 20e siècles."
+    }
+   ],
+   "pieges": [
+    "Choisir l'époque à partir d'un indice trop vague : on chassait aussi au Moyen Âge.",
+    "Confondre les chasseurs-cueilleurs (nomades) et les premiers agriculteurs (installés dans des villages).",
+    "Oublier qu'une même trace peut renseigner sur plusieurs besoins.",
+    "Placer une invention trop tôt : pas d'électricité au Moyen Âge, pas de chemin de fer chez les Romains."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "« Villa romaine » et « plusieurs dieux » : au temps des Gallo-Romains."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "13b"
+     ],
+     "libelle": "question 13b",
+     "texte": "Cueillette, chasse, pêche, huttes, peaux de bêtes : au temps des chasseurs-cueilleurs."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Corons, électricité, chemin de fer, moteur à explosion : au temps des sociétés industrielles."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 5,
+     "questions": [
+      "2d"
+     ],
+     "libelle": "question 2d",
+     "texte": "Le tableau « Les Joueurs d'échecs » renseigne sur la façon de se distraire (« se vêtir » était aussi accepté)."
+    }
+   ]
   },
   {
    "id": "hg-personnages",
@@ -197,7 +358,82 @@
     "La plupart des pays de l'UE utilisent l'euro (en Belgique depuis 2002, en Bulgarie depuis 2026), mais pas tous (Danemark, Suède, Pologne, Tchéquie, Hongrie, Roumanie)."
    ],
    "exemple": "Varsovie est la capitale de la Pologne.",
-   "astuce": "La Suisse et la Norvège sont en Europe, mais ne font pas partie de l'Union européenne."
+   "astuce": "La Suisse et la Norvège sont en Europe, mais ne font pas partie de l'Union européenne.",
+   "comprendre": [
+    "L'Europe est un continent. L'Union européenne (UE) est une association de pays européens qui ont décidé de travailler ensemble. Tous les pays d'Europe n'en font pas partie : la Suisse et la Norvège n'y sont jamais entrées, et le Royaume-Uni l'a quittée en 2020.",
+    "L'UE s'est construite petit à petit. En 1957-1958, elle commence avec 6 pays fondateurs, dont la Belgique. D'autres pays sont entrés ensuite, par vagues : l'Espagne et le Portugal en 1986 ; l'Autriche, la Suède et la Finlande en 1995 ; la Pologne et neuf autres pays en 2004. Aujourd'hui, elle compte 27 pays.",
+    "Sur une carte de l'UE, la légende indique souvent l'année d'entrée par une couleur : compare la couleur du pays avec la légende avant de répondre. Bruxelles accueille plusieurs institutions européennes, comme la Commission européenne."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un pays colorié avec la couleur « 1995 ».",
+     "explication": "Il est entré dans l'UE en 1995 : l'Autriche, la Suède ou la Finlande."
+    },
+    {
+     "cas": "La Norvège.",
+     "explication": "Un pays d'Europe, mais pas de l'UE."
+    },
+    {
+     "cas": "Istanbul.",
+     "explication": "Une ville de Turquie, un pays qui n'est pas membre de l'UE."
+    },
+    {
+     "cas": "Varsovie.",
+     "explication": "La capitale de la Pologne, entrée dans l'UE en 2004."
+    }
+   ],
+   "pieges": [
+    "Confondre l'Europe (le continent) et l'Union européenne (une association de pays).",
+    "Croire que tous les pays de l'UE utilisent l'euro.",
+    "Oublier que le Royaume-Uni n'est plus dans l'UE : les documents anciens le montrent encore membre.",
+    "Répondre sans regarder la légende de la carte."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "13b"
+     ],
+     "libelle": "question 13b",
+     "texte": "Parmi les capitales de la culture, Stavanger (Norvège) et Istanbul (Turquie) ne sont pas dans un pays de l'UE."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "L'Empire romain recouvrait entièrement cinq pays de l'UE actuelle : l'Italie, l'Espagne, le Portugal, la Grèce et la France."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "4b"
+     ],
+     "libelle": "question 4b",
+     "texte": "L'Espagne (1986) fait partie de l'UE depuis plus longtemps que la Pologne (2004) ; la Suisse et la Norvège n'en font pas partie."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 5,
+     "questions": [
+      "5d"
+     ],
+     "libelle": "question 5d",
+     "texte": "Un pays entré dans l'UE en 1995 : l'Autriche, la Suède ou la Finlande."
+    }
+   ]
   },
   {
    "id": "hg-continents",
@@ -211,7 +447,82 @@
     "Océans : Pacifique (le plus grand), Atlantique, Indien, Arctique (autour du pôle Nord) et Austral, aussi appelé océan Antarctique (autour de l'Antarctique)."
    ],
    "exemple": "L'Everest, le plus haut sommet du monde, est dans l'Himalaya (Asie).",
-   "astuce": "Regarde un planisphère et repère d'abord l'Europe, puis les continents autour."
+   "astuce": "Regarde un planisphère et repère d'abord l'Europe, puis les continents autour.",
+   "comprendre": [
+    "Au CEB, on compte 6 continents : l'Europe, l'Asie, l'Afrique, l'Amérique, l'Océanie et l'Antarctique. L'Amérique se divise souvent en Amérique du Nord et Amérique du Sud. Les océans séparent la plupart des continents. L'Europe et l'Asie, elles, forment un seul bloc de terre : la limite passe par les monts Oural.",
+    "Sur un planisphère, repère d'abord l'Europe, en haut au centre. L'Afrique est en dessous, l'Asie à droite (à l'est), l'Amérique à gauche (à l'ouest), de l'autre côté de l'océan Atlantique. L'Océanie est en bas à droite, l'Antarctique tout en bas, autour du pôle Sud.",
+    "Un continent n'est pas un pays : il en contient beaucoup. Certains pays sont sur deux continents, comme la Russie (Europe et Asie). Pour trouver le continent d'un pays, repère-le sur la carte : l'Argentine et le Brésil sont en Amérique du Sud, l'Égypte en Afrique, le Japon en Asie."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Entre l'Europe et l'Amérique.",
+     "explication": "L'océan Atlantique."
+    },
+    {
+     "cas": "Le Nil et l'Amazone.",
+     "explication": "Le Nil traverse l'Égypte, en Afrique ; l'Amazone, le Brésil, en Amérique du Sud."
+    },
+    {
+     "cas": "L'Australie.",
+     "explication": "Un pays d'Océanie."
+    },
+    {
+     "cas": "Un planisphère de 1490 sans l'Amérique.",
+     "explication": "Normal : les Européens ne la connaissaient pas encore (Christophe Colomb y arrive en 1492)."
+    }
+   ],
+   "pieges": [
+    "Confondre un pays et un continent : l'Australie est un pays, l'Afrique un continent.",
+    "Confondre océan (immense étendue d'eau salée) et mer (plus petite, bordée de terres).",
+    "Oublier que la Russie est à la fois en Europe et en Asie.",
+    "Placer un fleuve ou une montagne sur le mauvais continent : retiens au moins un fleuve et une chaîne de montagnes par continent."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Le planisphère de Martellus (1490) ne montre pas l'Amérique."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "9a1"
+     ],
+     "libelle": "question 9a",
+     "texte": "Une forêt de Russie est en Europe ou en Asie (les deux sont acceptés) ; une forêt d'Amérique du Sud, en Amérique."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "4a"
+     ],
+     "libelle": "question 4a",
+     "texte": "Un costume de la bourgeoisie anglaise vient d'Europe ; un costume d'Argentine, d'Amérique du Sud."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 5,
+     "questions": [
+      "3a"
+     ],
+     "libelle": "question 3a",
+     "texte": "L'Europe et l'Amérique sont séparées par un océan."
+    }
+   ]
   },
   {
    "id": "hg-climats",
@@ -240,7 +551,93 @@
     "Le soleil se lève à l'est et se couche à l'ouest ; à midi, en Belgique, il est au sud."
    ],
    "exemple": "Tu regardes vers le nord et tu fais un quart de tour vers la droite : tu regardes vers l'est.",
-   "astuce": "Retiens l'ordre dans le sens des aiguilles d'une montre : Nord, Est, Sud, Ouest (« N'Est-ce Sûrement pas Ouvert ? »)."
+   "astuce": "Retiens l'ordre dans le sens des aiguilles d'une montre : Nord, Est, Sud, Ouest (« N'Est-ce Sûrement pas Ouvert ? »).",
+   "comprendre": [
+    "S'orienter, c'est savoir où se trouve un lieu par rapport à un autre. On utilise les quatre points cardinaux (nord, est, sud, ouest) et, entre eux, les directions intermédiaires (nord-est, sud-est, sud-ouest, nord-ouest).",
+    "Sur une carte, cherche d'abord la flèche du nord ou la rose des vents. Le plus souvent, le nord est en haut : l'est est alors à droite, le sud en bas, l'ouest à gauche. Mais pas toujours : si la flèche est penchée, tourne la carte dans ta tête pour la remettre droite.",
+    "Pour dire « A est au … de B », place-toi sur B et regarde dans quelle direction se trouve A. Sur un plan quadrillé, une case se repère par la lettre de sa colonne et le chiffre de sa ligne (J8)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Liège est à droite de Namur sur une carte orientée nord en haut.",
+     "explication": "Liège est à l'est de Namur."
+    },
+    {
+     "cas": "La forêt de Soignes est en bas à droite du centre de Bruxelles.",
+     "explication": "Elle est au sud-est."
+    },
+    {
+     "cas": "Tu regardes vers le nord et tu fais un demi-tour.",
+     "explication": "Tu regardes vers le sud."
+    },
+    {
+     "cas": "Le matin, le soleil est à l'est.",
+     "explication": "Ton ombre part vers l'ouest."
+    }
+   ],
+   "pieges": [
+    "Inverser les deux lieux : si Mons est à l'ouest de Namur, alors Namur est à l'est de Mons.",
+    "Supposer que le nord est en haut sans regarder la flèche.",
+    "Confondre l'est et l'ouest : sur la rose des vents, dans le sens des aiguilles d'une montre, on lit Nord, Est, Sud, Ouest.",
+    "Répondre « en haut » ou « à droite » au lieu d'un point cardinal."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "19a"
+     ],
+     "libelle": "question 19a",
+     "texte": "Sur le plan de Mons, la flèche du nord pointe vers le haut à droite ; le point de départ est au sud de la Grand-Place."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "5b"
+     ],
+     "libelle": "question 5b",
+     "texte": "La forêt de Soignes est au sud-est du centre de Bruxelles."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Sur la rose des vents, après l'Est viennent le Sud, l'Ouest, puis le Nord."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "5a"
+     ],
+     "libelle": "question 5a",
+     "texte": "Le théâtre de marionnettes liégeoises est à l'est du musée Folon (à La Hulpe)."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 5,
+     "questions": [
+      "4c"
+     ],
+     "libelle": "question 4c",
+     "texte": "Dinant est au sud de Namur ; Namur est à l'est de Mons."
+    }
+   ]
   },
   {
    "id": "hg-echelle",

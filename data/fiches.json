@@ -396,7 +396,94 @@
         "le, la, les, lui, leur peuvent aussi être des pronoms devant un verbe."
       ],
       "exemple": "Les minuties sont petites. C'est grâce à elles… → « elles » = les minuties.",
-      "astuce": "Pour trouver ce que remplace un pronom, relis la phrase d'avant."
+      "astuce": "Pour trouver ce que remplace un pronom, relis la phrase d'avant.",
+      "comprendre": [
+        "Un pronom remplace un nom ou un groupe nominal déjà cité, pour ne pas le répéter. Il en prend souvent le genre et le nombre : « les traces… elles », « le château… il ».",
+        "Pour trouver ce qu'il remplace : 1) remonte dans le texte, le plus souvent juste avant ; 2) cherche un nom de même genre et de même nombre ; 3) mets ta réponse à la place du pronom : la phrase doit garder son sens.",
+        "Les pronoms relatifs (qui, que, dont, où) reprennent le nom placé juste avant eux : « les bras de ma mère qui me réchaufferaient ». « Les premiers… les seconds » reprennent les noms dans l'ordre où ils ont été cités. Attention : certains pronoms ne remplacent rien. Dans « il pleut » ou « il faisait beau », « il » ne désigne personne ; « on » désigne souvent les gens en général."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Léa a perdu sa clé. Elle la cherche partout. »",
+          "explication": "« elle » = Léa ; « la » = sa clé."
+        },
+        {
+          "cas": "« Les matériaux favoris de ces architectes étaient le verre, l'acier et le fer qu'ils combinaient. »",
+          "explication": "« qu' » = le verre, l'acier et le fer ; « ils » = les architectes."
+        },
+        {
+          "cas": "« Tu cours à la rencontre de quelqu'un pour lui manifester ta joie de le revoir. » Avec « tes parents ».",
+          "explication": "« pour leur manifester ta joie de les revoir »."
+        },
+        {
+          "cas": "« Il faisait beau. »",
+          "explication": "« il » ne remplace aucun nom."
+        }
+      ],
+      "pieges": [
+        "Prendre le nom le plus proche sans vérifier le sens et l'accord : le verbe au pluriel demande un nom au pluriel.",
+        "Donner un seul mot quand le texte attend le groupe entier.",
+        "Chercher ce que remplace « il » dans « il pleut ».",
+        "Écrire « leurs » devant un verbe : le pronom « leur » ne prend jamais de s."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2015"
+          ],
+          "livret": 9,
+          "questions": [
+            "20"
+          ],
+          "libelle": "question 20",
+          "texte": "Avec « tes parents », « lui » devient « leur » et « le » devient « les »."
+        },
+        {
+          "examens": [
+            "ceb-2017"
+          ],
+          "livret": 1,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "« qu' » désigne le verre, l'acier et le fer."
+        },
+        {
+          "examens": [
+            "ceb-2018"
+          ],
+          "livret": 1,
+          "questions": [
+            "6"
+          ],
+          "libelle": "question 6",
+          "texte": "« il était prêt » et « il respirait » désignent l'homme ; dans « il faisait beau », « il » ne désigne personne."
+        },
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 7,
+          "questions": [
+            "14"
+          ],
+          "libelle": "question 14",
+          "texte": "« qui me réchaufferaient » reprend les bras de ma mère (verbe au pluriel)."
+        },
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "6"
+          ],
+          "libelle": "question 6",
+          "texte": "« Les premières » reprend les traces ; « les secondes », les empreintes."
+        }
+      ]
     },
     {
       "id": "hg-periodes",
