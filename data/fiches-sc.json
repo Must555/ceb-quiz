@@ -24,7 +24,71 @@
     "Tous les mammifères de chez nous sont vivipares ; tous les oiseaux sont ovipares."
    ],
    "exemple": "La poule est ovipare ; le chat est vivipare.",
-   "astuce": "Ovi = œuf, vivi = vivant : l'ovipare pond des œufs, le vivipare met au monde des petits vivants."
+   "astuce": "Ovi = œuf, vivi = vivant : l'ovipare pond des œufs, le vivipare met au monde des petits vivants.",
+   "comprendre": [
+    "Chez la plupart des animaux, il faut un mâle et une femelle pour avoir des petits. Après l'accouplement vient la fécondation, puis le petit se développe : soit dans un œuf pondu (ovipare), soit dans le ventre de sa mère (vivipare).",
+    "Sont ovipares : tous les oiseaux, et la plupart des poissons, des amphibiens, des reptiles et des insectes. L'œuf contient des réserves de nourriture pour le petit. Chez les oiseaux, la mère couve l'œuf pour le garder au chaud : c'est l'incubation, qui se termine par l'éclosion.",
+    "Sont vivipares : tous les mammifères de chez nous, comme le chien, le cerf, la baleine, la chauve-souris ou l'être humain. Le temps que le petit passe dans le ventre de sa mère s'appelle la gestation : environ 9 mois chez la femme, environ 8 mois chez la biche, environ 2 mois chez la chatte. Après la naissance, le petit boit le lait de sa mère."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La poule.",
+     "explication": "Accouplement, fécondation, ponte, incubation, éclosion, croissance du poussin."
+    },
+    {
+     "cas": "La baleine et la chauve-souris.",
+     "explication": "Des mammifères vivipares, même si l'une vit dans l'eau et l'autre vole."
+    },
+    {
+     "cas": "La roussette, un petit requin de nos côtes.",
+     "explication": "Elle pond des œufs : ovipare."
+    },
+    {
+     "cas": "Le cerf.",
+     "explication": "Vivipare ; le faon naît au printemps, environ 8 mois après l'accouplement d'automne."
+    }
+   ],
+   "pieges": [
+    "Classer un animal d'après son milieu : la baleine vit dans l'eau, mais elle est vivipare.",
+    "Croire que tout animal qui vole pond des œufs : la chauve-souris est un mammifère vivipare.",
+    "Confondre la gestation (dans le ventre de la mère) et l'incubation (l'œuf couvé).",
+    "Mettre les étapes dans le désordre : la fécondation vient avant la ponte."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "10c"
+     ],
+     "libelle": "question 10c",
+     "texte": "La gestation du cerf dure environ 8 mois, et non 8 semaines."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Roussette : œuf, jeune, adulte. Cormoran : l'adulte pond des œufs, d'où sortent des poussins qui deviennent des cormorans juvéniles."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Le cycle de la poule : accouplement, fécondation, ponte, incubation, éclosion, croissance. Le schéma qui place la ponte avant la fécondation est faux."
+    }
+   ]
   },
   {
    "id": "sc-hiver",

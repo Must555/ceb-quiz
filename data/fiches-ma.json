@@ -154,7 +154,93 @@
     "Pourcentage = fraction sur 100 : 35 % = 35/100 = 0,35."
    ],
    "exemple": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 1/5 = 0,2 = 20 % ; 1/10 = 0,1 = 10 %.",
-   "astuce": "Pour passer d'un décimal à un pourcentage, multiplie par 100 : 0,07 = 7 %."
+   "astuce": "Pour passer d'un décimal à un pourcentage, multiplie par 100 : 0,07 = 7 %.",
+   "comprendre": [
+    "Une fraction, un nombre décimal et un pourcentage peuvent dire la même chose : une partie d'un tout. Les 3/4 d'une pizza, 0,75 de la pizza et 75 % de la pizza, c'est la même part.",
+    "Fraction → décimal : cherche une fraction égale sur 10, 100 ou 1 000 (1/5 = 2/10 = 0,2), ou divise le numérateur par le dénominateur (5 : 8 = 0,625). Décimal → fraction : lis le nombre à voix haute. 0,375, c'est 375 millièmes, donc 375/1 000, qu'on peut simplifier en 3/8.",
+    "Un pourcentage, c'est un nombre de parts sur 100. Du décimal au pourcentage, on multiplie par 100 (0,4 = 40 %) ; dans l'autre sens, on divise par 100 (7 % = 0,07). Sur un dessin, compte les parts coloriées et le total : 15 cases sur 60 = 15/60 = 1/4 = 25 %."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "25/10",
+     "explication": "25 dixièmes = 2,5 (ni 0,25, ni 2,05)."
+    },
+    {
+     "cas": "9/12",
+     "explication": "On simplifie par 3 : 3/4 = 0,75 = 75 %."
+    },
+    {
+     "cas": "Une batterie avec 3 cases pleines sur 4.",
+     "explication": "3/4 = 75 %."
+    },
+    {
+     "cas": "1,2 = 12/10 = 6/5 = 1 200/1 000 = 1,200",
+     "explication": "Toutes ces écritures désignent le même nombre."
+    }
+   ],
+   "pieges": [
+    "Confondre 1,02 (1 unité et 2 centièmes) et 1,2 (1 unité et 2 dixièmes).",
+    "Croire que 1/5 = 0,5 : 1/5 = 0,2, et 0,5 = 1/2.",
+    "Écrire 0,7 = 7 % : 0,7 = 70 %.",
+    "Oublier les parts non coloriées dans le total."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 6,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "15 cases grisées sur 60 : 1/4, donc 25 % du rectangle."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 8,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "Parmi les écritures de 1,2, les deux intrus sont 1,02 et 1/2."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 6,
+     "questions": [
+      "9a"
+     ],
+     "libelle": "question 9a",
+     "texte": "25/10, c'est 2,5."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 6,
+     "questions": [
+      "10a"
+     ],
+     "libelle": "question 10a",
+     "texte": "0,625, c'est 5/8."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 4,
+     "questions": [
+      "22a"
+     ],
+     "libelle": "question 22a",
+     "texte": "7 colonnes grisées sur 10 : 0,7 ou 70 % de l'unité."
+    }
+   ]
   },
   {
    "id": "ma-fractions-addition",
