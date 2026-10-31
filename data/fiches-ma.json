@@ -209,7 +209,82 @@
     "Elle permet de vérifier la place de la virgule dans un résultat."
    ],
    "exemple": "152 × 49 ≈ 150 × 50 = 7 500. 48,7 × 3,1 ≈ 50 × 3 = 150, donc le résultat est 150,97 et pas 15,097.",
-   "astuce": "Choisis des nombres « ronds » qui vont bien ensemble."
+   "astuce": "Choisis des nombres « ronds » qui vont bien ensemble.",
+   "comprendre": [
+    "Estimer, c'est trouver vite un résultat approché, sans faire le calcul exact. On remplace les nombres par des nombres ronds tout proches, faciles à calculer de tête.",
+    "L'estimation sert à trois choses : choisir parmi des propositions sans poser l'opération ; vérifier un résultat (la place de la virgule, le nombre de zéros) ; répondre à « environ combien ? » pour un prix, une masse ou une hauteur. Pour une mesure, compare à un repère connu : une porte mesure environ 2 m de haut, une feuille A4 pèse environ 5 g, une brique de lait contient 1 l.",
+    "Regarde aussi dans quel sens tu as arrondi. 47 × 9,9 : comme 9,9 est un peu plus petit que 10, le résultat est un peu plus petit que 47 × 10 = 470."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "42 × 99,2",
+     "explication": "42 × 100 = 4 200."
+    },
+    {
+     "cas": "70 095 − 29 003",
+     "explication": "70 000 − 29 000 = 41 000, donc environ 40 000."
+    },
+    {
+     "cas": "Un livre à 50,50 €, une clé USB à 28,99 €, des CD à 19,40 €, un écran à 148,50 €, un disque dur à 87,10 €.",
+     "explication": "50 + 30 + 20 + 150 + 90 = 340 €."
+    },
+    {
+     "cas": "Un livret de 20 pages A4, soit 10 feuilles.",
+     "explication": "10 × 5 g = 50 g."
+    }
+   ],
+   "pieges": [
+    "Calculer exactement quand on demande d'estimer : tu perds du temps.",
+    "Se tromper d'un zéro : 17 × 10,09 fait environ 170, pas 1 700.",
+    "Oublier le sens de l'arrondi : 4 300 : 11 donne moins que 4 300 : 10 = 430.",
+    "Choisir un repère irréaliste pour une mesure (un livret qui pèse 500 g, c'est un gros livre)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 7,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "L'achat de cinq articles d'informatique coute environ 340 € (de 300 à 350 € acceptés)."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 8,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Le nombre le plus proche de 17 × 10,09 est 170."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 6,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Le livret de l'épreuve (20 pages A4) pèse environ 50 grammes."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 6,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "47 × 9,9 donne un nombre plus petit que 470."
+    }
+   ]
   },
   {
    "id": "ma-priorites",
@@ -349,7 +424,82 @@
     "Pavé droit : chaque face est parallèle (et isométrique) à la face opposée, et perpendiculaire aux 4 autres."
    ],
    "exemple": "Un prisme dont la base a n côtés a n + 2 faces, 3 × n arêtes et 2 × n sommets.",
-   "astuce": "Une pyramide dont la base a n côtés a n + 1 faces, 2 × n arêtes et n + 1 sommets."
+   "astuce": "Une pyramide dont la base a n côtés a n + 1 faces, 2 × n arêtes et n + 1 sommets.",
+   "comprendre": [
+    "Un solide a trois dimensions : longueur, largeur, hauteur. Les polyèdres n'ont que des faces planes, qui sont des polygones. Le cylindre, le cône et la sphère ont une surface courbe : ils peuvent rouler, ce ne sont pas des polyèdres.",
+    "Deux grandes familles de polyèdres. Le prisme a deux bases identiques et parallèles, reliées par des rectangles : le cube et le pavé sont des prismes. La pyramide a une seule base, et des triangles qui se rejoignent en un sommet, la pointe.",
+    "Pour compter sans te tromper, procède par étages. Faces : les bases, puis les faces des côtés. Arêtes : autour de chaque base, puis celles qui montent. Sommets : les coins de chaque base, plus la pointe s'il y en a une. Vérification : faces + sommets = arêtes + 2 (cube : 6 + 8 = 12 + 2)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Pyramide à base triangulaire.",
+     "explication": "4 faces (la base + 3 triangles), 6 arêtes (3 + 3), 4 sommets (3 + la pointe)."
+    },
+    {
+     "cas": "Prisme à base hexagonale.",
+     "explication": "8 faces (2 hexagones + 6 rectangles), 18 arêtes (6 + 6 + 6), 12 sommets (6 + 6)."
+    },
+    {
+     "cas": "Un cube dont on coupe un coin.",
+     "explication": "7 faces, 10 sommets, 15 arêtes : une face triangulaire en plus, un sommet enlevé et trois nouveaux, trois arêtes en plus."
+    },
+    {
+     "cas": "Le cylindre.",
+     "explication": "Il a deux bases identiques et parallèles, mais ce n'est pas un polyèdre : sa surface latérale est courbe."
+    }
+   ],
+   "pieges": [
+    "Oublier les faces, arêtes et sommets cachés à l'arrière du dessin.",
+    "Oublier les coins de la base parmi les sommets d'une pyramide.",
+    "Croire que deux bases parallèles suffisent pour être un polyèdre : il faut que toutes les faces soient des polygones.",
+    "Pour le pavé, oublier qu'il peut avoir 2 carrés et 4 rectangles, ou 6 rectangles."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 3,
+     "questions": [
+      "4"
+     ],
+     "libelle": "question 4",
+     "texte": "Pourquoi ce prisme est-il un polyèdre ? Parce que toutes ses faces sont des polygones."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 3,
+     "questions": [
+      "3c"
+     ],
+     "libelle": "question 3c",
+     "texte": "La pyramide à base triangulaire a 4 faces, 6 arêtes et 4 sommets."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 3,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Le cube a 6 faces, 8 sommets et 12 arêtes ; le cube dont on a coupé un coin a 7 faces, 10 sommets et 15 arêtes."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Pour une pyramide à base carrée, il faut 8 bâtonnets (les arêtes), 5 boules (les sommets), 1 carré et 4 triangles (les faces)."
+    }
+   ]
   },
   {
    "id": "ma-symetrie",
@@ -406,7 +556,83 @@
     "L'effectif : le nombre de fois qu'une valeur apparaît. Pourcentage d'un effectif : effectif sur total, ramené à 100."
    ],
    "exemple": "Notes : 12 ; 15 ; 18. Moyenne = (12 + 15 + 18) : 3 = 45 : 3 = 15.",
-   "astuce": "Vérifie que la moyenne est bien entre la plus petite et la plus grande valeur."
+   "astuce": "Vérifie que la moyenne est bien entre la plus petite et la plus grande valeur.",
+   "comprendre": [
+    "Un tableau ou un graphique range des informations pour qu'on les compare vite. Avant de répondre, lis le titre (de quoi parle-t-on ?), les axes ou les colonnes (quoi, et dans quelle unité ?) et la légende (quelle couleur pour quoi ?).",
+    "Chaque forme a son usage. Le diagramme en bâtonnets compare des quantités. Le graphique en ligne montre une évolution dans le temps. Le diagramme circulaire montre les parts d'un tout, souvent en pourcentages, qui font 100 % ensemble. Le tableau à double entrée croise deux informations : la valeur se lit à la croisée d'une ligne et d'une colonne.",
+    "Pour lire une valeur sur un bâton, suis une ligne horizontale depuis son sommet jusqu'à l'axe gradué, en regardant de combien en combien vont les graduations. Ensuite seulement, calcule ce qu'on te demande : un total, un écart, une moyenne."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Gaufres vendues en 5 jours : 13, 8, 10, 5, 9.",
+     "explication": "Total 45, moyenne 45 : 5 = 9 gaufres par jour."
+    },
+    {
+     "cas": "Deux courbes sur le même graphique.",
+     "explication": "La légende dit laquelle est la température du matin et laquelle celle du soir."
+    },
+    {
+     "cas": "Diagramme circulaire : moineau 32 %, mésange bleue 16 %.",
+     "explication": "À eux deux 48 %, presque la moitié des oiseaux observés."
+    },
+    {
+     "cas": "Graduations de 5 en 5 : un bâton s'arrête au milieu entre 15 et 20.",
+     "explication": "Il vaut environ 17,5."
+    }
+   ],
+   "pieges": [
+    "Confondre les couleurs ou les bâtons : vérifie toujours la légende.",
+    "Oublier l'unité, ou croire que les graduations vont de 1 en 1.",
+    "Chercher parmi toutes les catégories du graphique alors que la question te limite aux propositions.",
+    "Arrondir quand on te demande la valeur exacte.",
+    "Pour la moyenne, oublier une valeur ou diviser par le mauvais nombre."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 8,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "Les gaufres vendues en 5 jours (13, 8, 10, 5, 9) donnent une moyenne de 9 par jour."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 5,
+     "questions": [
+      "11a"
+     ],
+     "libelle": "question 11a",
+     "texte": "Sur le graphique de la migration des batraciens, la ligne bleue est la température du matin ; les bâtonnets verts sont le nombre de batraciens."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 6,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "L'utilisation du GSM passe de 50 % à 18 % quand l'âge augmente : elle diminue."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 4,
+     "questions": [
+      "12a"
+     ],
+     "libelle": "question 12a",
+     "texte": "Parmi les tranches d'âge proposées, ce sont les 30-39 ans qui achètent le moins de pommes d'amour. D'autres tranches ont un bâton plus petit, mais elles n'étaient pas proposées."
+    }
+   ]
   },
   {
    "id": "ma-aires-formules",

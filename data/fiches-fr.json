@@ -401,7 +401,83 @@
     "Cherche les mots qui donnent des indices (vêtements, gestes, lieux, moments)."
    ],
    "exemple": "Tom met son bonnet et ses gants → il fait froid.",
-   "astuce": "Justifie toujours ta réponse avec un indice du texte."
+   "astuce": "Justifie toujours ta réponse avec un indice du texte.",
+   "comprendre": [
+    "Un auteur ne dit pas tout. Il laisse des indices, et le lecteur complète avec ce qu'il sait : c'est faire une inférence. Au CEB, beaucoup de questions de lecture et d'écoute en demandent : qui parle, où se passe la scène, ce que ressent un personnage, quelle est l'idée de l'histoire.",
+    "Méthode en trois temps. 1) Relis le passage concerné. 2) Repère les indices : mots de lieu et de moment, gestes, paroles, objets. 3) Demande-toi ce qu'ils veulent dire, et choisis la réponse qui s'appuie sur eux, pas sur ton imagination.",
+    "La bonne réponse doit pouvoir être prouvée par le texte. C'est pour cela qu'on te demande souvent de justifier : recopie l'indice. Et quand le texte ne dit rien sur un point, la bonne réponse est parfois « l'information n'est pas donnée »."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Léa souffle sur ses doigts et remonte son écharpe. »",
+     "explication": "Il fait froid. Indices : souffler sur ses doigts, l'écharpe."
+    },
+    {
+     "cas": "« La cloche sonne ; les élèves rangent leurs cahiers en vitesse. »",
+     "explication": "On est à l'école, à la fin d'un cours."
+    },
+    {
+     "cas": "« Il claqua la porte sans dire au revoir. »",
+     "explication": "Il est fâché. Le mot « colère » n'est pas écrit : c'est le geste qui le montre."
+    },
+    {
+     "cas": "Le narrateur dit « je » et sa sœur l'appelle par son prénom.",
+     "explication": "Le narrateur est un personnage de l'histoire, et on connaît son nom."
+    }
+   ],
+   "pieges": [
+    "Répondre avec ce qu'on pense soi-même au lieu de ce que dit le texte.",
+    "Choisir une proposition vraie seulement en partie : un seul élément faux la rend fausse.",
+    "Confondre « le texte ne le dit pas » et « c'est faux ».",
+    "Pour l'idée de l'histoire, retenir un détail au lieu de ce qui fait réussir ou échouer le personnage."
+   ],
+   "auCEBIntro": "Chaque année, les livrets de lecture et d'écoute en posent plusieurs.",
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 1,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Qui est le narrateur ? Jean-Jacques : il dit « je », et sa petite sœur l'appelle « Zean-Zacques »."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 1,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "L'idée de l'histoire est que, pour un dressage réussi, il vaut mieux s'entrainer avec ténacité. Le prince « recommence chaque exercice »."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 1,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Dans l'entretien écouté, Philippe Geluck est interrogé par les personnes qui ont conçu l'épreuve. Animateur de radio, c'est un de ses métiers à lui."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 1,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Le podcast dit où se trouve le Centre européen des astronautes (à Cologne, en Allemagne), mais jamais combien de femmes ont été sélectionnées."
+    }
+   ]
   },
   {
    "id": "fr-temps-composes",
