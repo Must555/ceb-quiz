@@ -145,7 +145,7 @@ ${f.regle.map((r) => `<li>${esc(r)}</li>`).join('\n')}
 </ul>
 <div class="encart"><h2>Exemple</h2><p>${esc(f.exemple)}</p></div>
 ${f.astuce ? `<div class="encart astuce"><h2><img class="ic" src="../assets/ui/astuce.webp" alt="" width="40" height="40"> Astuce</h2><p>${esc(f.astuce)}</p></div>` : ''}
-</article>
+${blocApprofondi(f, enrichi.examensParId)}</article>
 ${blocsEnrichis(enrichi)}
 <section class="agir">
 <h2>Et maintenant, entraîne-toi !</h2>
@@ -240,8 +240,29 @@ function questionStatique(q, i, source = '') {
   return `<details class="exemple"><summary><span class="num">${i + 1}</span>${esc(q.enonce).replace(/\n/g, '<br>')}${multi}${texte}${choix}${source}</summary><p><b>Réponse :</b> ${esc(lisible(q))}${aussi}${q.explication ? `<br>${esc(q.explication)}` : ''}</p></details>`;
 }
 
+const nomEx = (ex) => ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} (tronc commun)` : ex.annee === 2026 ? `CEB ${ex.annee} (socles)` : `CEB ${ex.annee}`;
+
+// Fiche approfondie (champs facultatifs des données) : explication développée, exemples expliqués,
+// pièges fréquents et résumé des vraies questions du CEB sur la notion (avec lien vers l'examen).
+export function blocApprofondi(f, examensParId = {}) {
+  let h = '';
+  if (f.comprendre?.length) h += `<h2>Comprendre la règle</h2>\n${f.comprendre.map((p) => `<p>${esc(p)}</p>`).join('\n')}\n`;
+  if (f.exemplesExpliques?.length) h += `<h2>Exemples expliqués</h2>\n<ul class="regle expl">\n${f.exemplesExpliques.map((x) => `<li><b>${esc(x.cas)}</b> ${esc(x.explication)}</li>`).join('\n')}\n</ul>\n`;
+  if (f.pieges?.length) h += `<h2>Les pièges du CEB</h2>\n<ul class="regle pieges">\n${f.pieges.map((x) => `<li>${esc(x)}</li>`).join('\n')}\n</ul>\n`;
+  if (f.auCEB?.length || f.auCEBNote) {
+    h += `<h2>Ce que le CEB t'a déjà demandé</h2>\n${f.auCEBIntro ? `<p>${esc(f.auCEBIntro)}</p>\n` : ''}`;
+    if (f.auCEB?.length) h += `<ul class="regle au-ceb">\n${f.auCEB.map((x) => {
+      const exs = x.examens.map((id) => examensParId[id]).filter(Boolean);
+      const nom = exs.length > 1 && exs.every((e) => e.annee === exs[0].annee) ? `CEB ${exs[0].annee} (socles et tronc commun)` : exs.map(nomEx).join(', ');
+      const liens = exs.map((e) => `<a href="../examens/${slugExamen(e)}.html">${exs.length > 1 ? esc(nomEx(e).replace(/^CEB \d+ \((.*)\)$/, '$1')) : 'Voir l\'examen'}</a>`).join(' · ');
+      return `<li><span class="source-ceb">${esc(nom)} · livret ${x.livret} · ${esc(x.libelle)}</span> ${esc(x.texte)} <span class="nw">${exs.length > 1 ? 'Voir l\'examen : ' : ''}${liens}</span></li>`;
+    }).join('\n')}\n</ul>\n`;
+    if (f.auCEBNote) h += `<p class="mute-t">${esc(f.auCEBNote)}</p>\n`;
+  }
+  return h;
+}
+
 function blocsEnrichis({ exemples, officielles, annees }) {
-  const nomEx = (ex) => ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} (tronc commun)` : ex.annee === 2026 ? `CEB ${ex.annee} (socles)` : `CEB ${ex.annee}`;
   const lienEx = (ex) => `../examens/${ex.id}.html`;
   let h = '';
   if (exemples.length) h += `<section class="matiere"><h2>Exercices corrigés</h2><p class="mute-t">Essaie de répondre, puis ouvre la réponse. Dans l'application, ces exercices changent à chaque partie.</p>
@@ -550,11 +571,12 @@ export async function generer() {
   for (const meta of (await lireJson('data/examens/index.json')).examens.filter((e) => e.statut !== 'a_encoder')) examens.push(await donnees.chargerExamen(meta.id));
   examens.sort((a, b) => a.annee - b.annee || (a.referentiel === 'tronc_commun') - (b.referentiel === 'tronc_commun'));
   const { choisies, examensDe } = officiellesParFiche(examens);
+  const examensParId = Object.fromEntries(examens.map((e) => [e.id, e]));
   for (const f of fiches) {
     const liste = parMatiere[f.matiere];
     const i = liste.indexOf(f);
     const voisines = [...liste.slice(i + 1), ...liste.slice(0, i)].slice(0, 8);
-    const enrichi = { exemples: exemplesFiche(donnees.modeles, f.id), officielles: choisies[f.id] ?? [], annees: examensDe[f.id] ?? [] };
+    const enrichi = { exemples: exemplesFiche(donnees.modeles, f.id), officielles: choisies[f.id] ?? [], annees: examensDe[f.id] ?? [], examensParId };
     out[`fiches/${f.id}.html`] = pageFiche(f, voisines, nbEx[f.id] ?? 0, enrichi);
   }
   out['fiches/index.html'] = pageIndex(parMatiere, fiches.length);

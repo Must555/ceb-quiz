@@ -52,7 +52,67 @@
     "Coccinelle, abeille, moustique, hanneton : œuf → larve → nymphe → adulte."
    ],
    "exemple": "La larve du hanneton s'appelle le ver blanc ; celle de la mouche, l'asticot.",
-   "astuce": "Les mammifères, les oiseaux et les reptiles ne font pas de métamorphose : le petit ressemble déjà à l'adulte."
+   "astuce": "Les mammifères, les oiseaux et les reptiles ne font pas de métamorphose : le petit ressemble déjà à l'adulte.",
+   "comprendre": [
+    "Tous les animaux grandissent, mais certains changent complètement de forme : c'est la métamorphose. Le jeune (la larve) ne ressemble pas à l'adulte, ne vit souvent pas au même endroit et ne mange pas la même chose. La chenille mange des feuilles, le papillon boit le nectar des fleurs. Le têtard vit dans l'eau et respire par des branchies ; la grenouille vit aussi sur terre et respire avec des poumons.",
+    "Chez beaucoup d'insectes, il y a quatre étapes : œuf → larve → nymphe → adulte. Pendant l'étape de la nymphe (la chrysalide du papillon), l'animal ne mange pas et se transforme dans son enveloppe : c'est la nymphose.",
+    "Chez la grenouille, le changement est progressif : têtard sans pattes, puis pattes arrière, puis pattes avant ; la queue disparait. Un cycle de vie est une boucle : l'adulte pond des œufs, et tout recommence."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La coccinelle.",
+     "explication": "La larve, allongée, noire et orange, mange des pucerons ; la nymphe reste accrochée à une feuille ; l'adulte en sort."
+    },
+    {
+     "cas": "Le ténébrion meunier.",
+     "explication": "Sa larve est le « ver de farine » qu'on donne aux oiseaux ; la nymphe, blanche, ne se déplace pas ; l'adulte est un petit coléoptère noir."
+    },
+    {
+     "cas": "La poule : œuf → poussin → poule.",
+     "explication": "Le poussin ressemble déjà à l'adulte, en plus petit : pas de métamorphose."
+    }
+   ],
+   "pieges": [
+    "Confondre larve et nymphe : la larve bouge et mange beaucoup ; la nymphe ne se déplace pas et ne mange pas.",
+    "Placer les pattes avant du têtard avant les pattes arrière : les pattes arrière apparaissent d'abord.",
+    "Penser que tous les animaux font une métamorphose : les mammifères, les oiseaux et les reptiles n'en font pas.",
+    "Appeler la chenille ou l'asticot « un ver » au sens du ver de terre : ce sont des larves d'insectes."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "Compléter trois cycles de vie avec des photos : grenouille (œufs, têtard sans pattes, têtard à pattes arrière, têtard à quatre pattes), poule (œuf, poussin qui sort de l'œuf, poussin, poule) et papillon (œuf, chenille, chrysalide, papillon)."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 5,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "Remettre les étiquettes du cycle de la grenouille dans l'ordre : ponte des œufs → têtard sans pattes → têtard avec pattes arrière → têtard avec quatre pattes → grenouille."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "2e"
+     ],
+     "libelle": "question 2e",
+     "texte": "Sur le schéma du cycle du ténébrion meunier, « proche de celui du papillon », retrouver la larve, l'étape de la nymphose et les œufs."
+    }
+   ]
   },
   {
    "id": "sc-chaines",
@@ -66,7 +126,46 @@
     "Les décomposeurs (vers de terre, champignons, bactéries) recyclent la matière morte."
    ],
    "exemple": "L'herbe → le lapin → le renard : l'herbe est le producteur, le lapin le consommateur primaire, le renard le consommateur secondaire.",
-   "astuce": "Suis la flèche comme si c'était la nourriture qui voyage."
+   "astuce": "Suis la flèche comme si c'était la nourriture qui voyage.",
+   "comprendre": [
+    "Une chaine alimentaire montre qui mange qui dans un milieu : une mare, une forêt, un jardin. Chaque flèche part de celui qui est mangé et pointe vers celui qui le mange. Elle suit le chemin de la nourriture.",
+    "Le premier maillon est toujours un végétal (herbe, feuilles, algues, graines). Les végétaux sont les seuls à fabriquer leur propre matière, grâce à la lumière du Soleil, à l'eau, aux sels minéraux du sol et au dioxyde de carbone de l'air : ce sont les producteurs. Tous les autres êtres vivants sont des consommateurs : ils doivent manger d'autres êtres vivants.",
+    "Dans la nature, les chaines se croisent : un animal mange plusieurs choses et peut être mangé par plusieurs autres. L'ensemble forme un réseau alimentaire. Si un maillon disparait, toute la suite du réseau est touchée."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Feuilles de chêne → chenille → mésange → épervier.",
+     "explication": "Les feuilles sont le producteur ; la chenille, le consommateur primaire ; la mésange, le secondaire ; l'épervier, le tertiaire."
+    },
+    {
+     "cas": "Le renard mange des lapins, mais aussi des souris, des insectes et des fruits.",
+     "explication": "Il fait partie de plusieurs chaines à la fois : c'est un réseau alimentaire."
+    },
+    {
+     "cas": "Il n'y a plus de végétaux.",
+     "explication": "Les herbivores n'ont plus rien à manger et disparaissent. Puis les carnivores qui les mangeaient n'ont plus de proies : ils disparaissent aussi."
+    }
+   ],
+   "pieges": [
+    "Inverser la flèche : « lapin → herbe » voudrait dire que l'herbe mange le lapin. La flèche pointe toujours vers le mangeur.",
+    "Commencer par un animal : une chaine complète commence par le végétal.",
+    "Croire qu'un carnivore n'est pas touché quand les plantes disparaissent : il ne mange pas de plantes, mais ses proies, oui.",
+    "Confondre « consommateur primaire » (le premier mangeur, un herbivore) et « le plus important »."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 7,
+     "questions": [
+      "4a",
+      "4b"
+     ],
+     "libelle": "question 4",
+     "texte": "À partir d'un schéma (herbe, criquet, lapin, merle, musaraigne, renard, hibou), écrire deux chaines alimentaires complètes, par exemple herbe → lapin → renard. Puis : quels animaux disparaitraient s'il n'y avait plus aucun végétal ? Réponse : tous les six."
+    }
+   ]
   },
   {
    "id": "sc-ecosystemes",
@@ -205,7 +304,74 @@
     "Matériaux naturels (bois, laine, pierre) ou fabriqués par l'être humain (plastique, verre, béton)."
    ],
    "exemple": "Un fil électrique : du cuivre (conducteur) entouré de plastique (isolant).",
-   "astuce": "Métal = conducteur électrique."
+   "astuce": "Tous les métaux conduisent le courant, mais pas seulement eux : le graphite et l'eau salée aussi.",
+   "comprendre": [
+    "On choisit un matériau d'après ce qu'on attend de l'objet : laisser passer le courant ou l'arrêter, garder la chaleur ou le froid, laisser passer la lumière… Ce sont les propriétés du matériau.",
+    "Électricité. Tous les métaux laissent passer le courant : ce sont des conducteurs. Ils ne sont pas les seuls : le graphite (la mine du crayon) et l'eau salée conduisent aussi. Le plastique, le caoutchouc, le verre et le bois sec arrêtent le courant : ce sont des isolants. C'est pour cela qu'ils entourent les fils et forment les prises. L'eau du robinet et le corps humain conduisent le courant : jamais d'appareil électrique près de l'eau.",
+    "Chaleur. La chaleur passe toujours du plus chaud vers le plus froid. Un isolant thermique ralentit ce passage, dans les deux sens : il garde chaud ce qui est chaud et froid ce qui est froid. Les bons isolants emprisonnent beaucoup d'air immobile (laine, plumes, polystyrène, double vitrage). Un isolant ne produit pas de chaleur."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une casserole.",
+     "explication": "Le fond en métal laisse passer vite la chaleur vers les aliments ; le manche en bois ou en plastique évite de se bruler."
+    },
+    {
+     "cas": "Une boite en frigolite (polystyrène).",
+     "explication": "Elle garde les glaces froides ; la même boite garde une soupe chaude."
+    },
+    {
+     "cas": "Un pull en laine.",
+     "explication": "Il ne chauffe pas : il empêche la chaleur de ton corps de s'échapper."
+    },
+    {
+     "cas": "Une vitre, un verre dépoli, un volet.",
+     "explication": "La vitre est transparente, le verre dépoli d'une salle de bain est translucide, le volet est opaque."
+    }
+   ],
+   "pieges": [
+    "Croire que la laine réchauffe. Elle ralentit seulement le passage de la chaleur.",
+    "Croire qu'un glaçon emballé dans de la laine fond plus vite : la laine freine la chaleur de la pièce, il fond plus lentement.",
+    "Penser que seuls les métaux conduisent l'électricité (graphite, eau salée).",
+    "Confondre transparent (on voit nettement à travers) et translucide (la lumière passe, mais on ne voit pas nettement)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "4a",
+      "5",
+      "5e",
+      "6"
+     ],
+     "libelle": "questions 4 à 8",
+     "texte": "Un glaçon posé sur une assiette nue fond avant celui qui est entouré d'une écharpe en laine. Dans l'expérience de l'eau chaude (60 °C au départ), l'eau entourée de l'écharpe est encore à 48,4 °C après 60 minutes, contre 35,9 °C sans écharpe : la laine a ralenti le refroidissement. Les deux isolants du document : la laine de mouton et le polystyrène expansé (frigolite)."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "11c"
+     ],
+     "libelle": "question 11c",
+     "texte": "Les objets métalliques sont-ils les seuls bons conducteurs ? Non : la mine de crayon en graphite et l'eau salée conduisent aussi."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "6b"
+     ],
+     "libelle": "question 6b",
+     "texte": "On fabrique les isolateurs des pylônes en verre parce que le verre ne conduit pas le courant électrique."
+    }
+   ]
   },
   {
    "id": "sc-aimants",
@@ -286,7 +452,36 @@
     "La lumière est beaucoup plus rapide que le son (on voit l'éclair avant d'entendre le tonnerre)."
    ],
    "exemple": "Vers le milieu de la journée, le Soleil est haut : les ombres sont courtes.",
-   "astuce": "Pas de matière = pas de son."
+   "astuce": "Pas de matière = pas de son.",
+   "comprendre": [
+    "On voit un objet quand de la lumière entre dans nos yeux. Une source de lumière en produit : le Soleil, une flamme, une ampoule allumée, un écran. Les autres objets renvoient seulement une partie de la lumière qu'ils reçoivent : c'est ainsi qu'on voit la Lune, une table ou un livre. Dans le noir complet, on ne voit rien, pas même un miroir.",
+    "La lumière va tout droit. Quand un objet opaque l'arrête, il reste derrière lui une zone non éclairée : l'ombre. Elle est toujours du côté opposé à la source. Plus la source est basse, plus l'ombre est longue ; plus la lampe s'approche de l'objet, plus l'ombre sur le mur est grande.",
+    "Un son nait d'une vibration : la corde d'une guitare, la peau d'un tambour, nos cordes vocales vibrent. La vibration se transmet de proche en proche à la matière (air, eau, mur, table) jusqu'à notre oreille. Sans matière, rien ne vibre : dans le vide de l'espace, aucun son ne voyage.",
+    "La lumière parcourt environ 300 000 km en une seconde ; le son, dans l'air, environ 340 m. Le son met donc environ 3 secondes pour faire 1 km."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "On voit l'éclair, puis on entend le tonnerre 6 secondes plus tard.",
+     "explication": "L'orage est à environ 2 km (6 : 3 = 2)."
+    },
+    {
+     "cas": "L'oreille collée à une table, on entend très bien un ongle qui gratte à l'autre bout.",
+     "explication": "Le son passe aussi par les solides."
+    },
+    {
+     "cas": "À midi en été, ton ombre est courte ; le soir, elle est longue.",
+     "explication": "À midi, le Soleil est haut. Le soir, il est bas, à l'ouest : ton ombre s'allonge et part vers l'est."
+    }
+   ],
+   "pieges": [
+    "Croire que la Lune produit sa lumière : elle est éclairée par le Soleil.",
+    "Dessiner l'ombre du côté de la lampe.",
+    "Prendre un miroir pour une source de lumière : il renvoie la lumière, il n'en produit pas.",
+    "Croire que le son voyage dans le vide, comme les explosions dans les films de l'espace.",
+    "Oublier qu'un objet transparent (une vitre) ne fait presque pas d'ombre : il laisse passer la lumière."
+   ],
+   "auCEB": [],
+   "auCEBNote": "Cette notion n'a pas fait l'objet d'une question dans les épreuves de 2015 à 2026, mais elle sert à comprendre les expériences de sciences."
   },
   {
    "id": "sc-systeme-solaire",
@@ -342,7 +537,80 @@
     "On conclut en s'appuyant sur les résultats : cause → effet."
    ],
    "exemple": "Pour tester la lumière : deux pots de haricots avec la même terre, le même arrosage, mais l'un à la lumière et l'autre dans le noir.",
-   "astuce": "Si deux choses changent en même temps, on ne sait pas laquelle est la cause !"
+   "astuce": "Si deux choses changent en même temps, on ne sait pas laquelle est la cause !",
+   "comprendre": [
+    "Une expérience sert à répondre à une question précise, par exemple « Les graines ont-elles besoin de lumière pour germer ? ». Avant de commencer, on propose une réponse possible : l'hypothèse (« Je pense que oui »). L'expérience dira si elle est juste ou fausse. Une hypothèse fausse n'est pas un échec : c'est un résultat.",
+    "Pour que l'expérience prouve quelque chose, on compare au moins deux montages presque identiques. Une seule chose change : celle qu'on veut tester (ici, la lumière). Tout le reste est pareil : même nombre de graines, même coton, même quantité d'eau, même température. Le montage qu'on ne modifie pas sert de témoin.",
+    "On observe ou on mesure, on note les résultats dans un tableau ou un graphique, puis on conclut : on compare les montages et on dit si l'hypothèse est confirmée. La conclusion parle seulement de ce qu'on a testé."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Graines de haricot sur du coton humide, un pot à la lumière, l'autre dans une armoire : les deux germent.",
+     "explication": "L'hypothèse « il faut de la lumière pour germer » est fausse. (La lumière devient nécessaire ensuite, pour que la plantule grandisse et verdisse.)"
+    },
+    {
+     "cas": "Deux récipients avec 20 cl d'eau à 60 °C ; un seul est entouré d'une écharpe en laine. On relève la température pendant 1 heure.",
+     "explication": "Seule l'écharpe change : c'est l'expérience du CEB 2015. L'eau sans écharpe sert de témoin."
+    },
+    {
+     "cas": "Mauvais montage : un pot au soleil et arrosé, l'autre à l'ombre et sans eau.",
+     "explication": "Deux choses changent : si le second pousse mal, on ne sait pas si c'est à cause de l'ombre ou du manque d'eau."
+    }
+   ],
+   "pieges": [
+    "Choisir un montage qui change deux choses à la fois.",
+    "Confondre l'hypothèse (ce que je pense avant) et la conclusion (ce que j'ai constaté après).",
+    "Conclure plus loin que l'expérience : avoir vu flotter quelques objets en bois ne prouve pas que « tout ce qui est en bois flotte ».",
+    "Oublier le témoin, ou ne faire qu'une seule mesure.",
+    "Pour retrouver la question des élèves, chercher ce qui est différent entre les montages : c'est le sujet de la question."
+   ],
+   "auCEBIntro": "Presque chaque année, le livret de sciences part d'expériences faites en classe : « Quelle question les élèves se sont-ils posée ? », « Quelle expérience permet de vérifier… ? », « Que peux-tu conclure ? ».",
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 7,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Pour vérifier que la roue tourne plus vite si le trou de l'entonnoir est plus grand, le seul bon choix fait varier uniquement la taille du trou."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 5,
+     "questions": [
+      "1b"
+     ],
+     "libelle": "question 1b",
+     "texte": "Pour savoir si les graines germent uniquement au contact de la terre, il faut l'expérience où seul un pot n'a pas de terre (graines sur du feutre). Elles germent quand même."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "Une bouteille avec de la terre humide partout, un côté au-dessus de glaçons, l'autre au-dessus d'eau chaude. La question des élèves : les cloportes préfèrent-ils le froid ou la chaleur ?"
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "8c"
+     ],
+     "libelle": "question 8c",
+     "texte": "« Tout ce qui est en bois flotte » est faux : une boule de bois d'azobé coule dans l'eau douce."
+    }
+   ]
   },
   {
    "id": "sc-chaleur",

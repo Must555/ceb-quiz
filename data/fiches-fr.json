@@ -52,10 +52,59 @@
    "regle": [
     "Le groupe nominal a pour noyau un nom.",
     "Le noyau peut être précisé par un déterminant, des adjectifs, un complément du nom (de…, à…, en…).",
-    "Tout le groupe prend le genre et le nombre du noyau."
+    "Le déterminant et les adjectifs s'accordent avec le noyau, pas avec le nom du complément."
    ],
    "exemple": "le petit chien noir de Hugo → noyau : chien (masculin singulier).",
-   "astuce": "Le noyau est le nom qu'on ne peut pas supprimer."
+   "astuce": "Le noyau est le nom qu'on ne peut pas supprimer.",
+   "comprendre": [
+    "Le groupe nominal (GN) est un groupe de mots construit autour d'un nom : son noyau. Le plus petit GN est un nom seul (Bruxelles, Léa) ou un déterminant suivi d'un nom (le chien).",
+    "On peut l'allonger avec des expansions : un ou plusieurs adjectifs (le petit chien noir), un complément du nom introduit par un petit mot comme de, à, en, pour, sans (un pull en laine), ou une proposition qui commence par qui, que, où (le chien qui aboie). Pour trouver le noyau, enlève les mots un à un : le noyau est le nom qu'on ne peut pas supprimer.",
+    "Le déterminant et les adjectifs s'accordent avec le noyau, jamais avec le nom du complément : dans « des pots de confiture », « confiture » garde son propre accord. Et quand on remplace un GN par un pronom, le pronom prend la place du groupe entier."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "une maison → la grande maison → la grande maison blanche de mes grands-parents",
+     "explication": "Le groupe s'allonge, mais le noyau reste « maison »."
+    },
+    {
+     "cas": "« Les feuilles du vieux chêne sont tombées. »",
+     "explication": "Le noyau est « feuilles » (féminin pluriel) : on écrit « sont tombées », pas « est tombé »."
+    },
+    {
+     "cas": "« Le petit chien noir de Hugo aboie. » → « Il aboie. »",
+     "explication": "Un seul pronom remplace les six mots du groupe."
+    }
+   ],
+   "pieges": [
+    "Accorder avec le nom du complément : « la boite de crayons est rangée » (noyau : boite).",
+    "Prendre un adjectif pour le noyau.",
+    "Oublier une partie du groupe quand on le recopie : le complément du nom en fait partie.",
+    "Couper un GN quand on dit ce que remplace un pronom : la réponse attendue est souvent le groupe complet."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 1,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "Recopier le groupe nominal complet qui désigne Tintin sans le nommer : « le héros créé par Hergé », avec « créé par Hergé »."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 1,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "Remplacer « les siens » par un groupe nominal qui garde le sens : « sa famille », « son troupeau » ou « les autres chevreuils » (pas seulement « sa mère »)."
+    }
+   ]
   },
   {
    "id": "fr-pluriel",
@@ -470,7 +519,73 @@
     "Un même mot peut changer de classe : « leur maison » (déterminant), « je leur parle » (pronom)."
    ],
    "exemple": "Plusieurs élèves (déterminant indéfini) sont partis ; plusieurs (pronom indéfini) sont restés.",
-   "astuce": "Regarde ce qui suit : s'il y a un nom, c'est un déterminant ; sinon, c'est un pronom. Attention : « premier, deuxième… » ne sont pas des déterminants numéraux, ce sont des adjectifs (le premier jour)."
+   "astuce": "Regarde ce qui suit : s'il y a un nom, c'est un déterminant ; sinon, c'est un pronom. Attention : « premier, deuxième… » ne sont pas des déterminants numéraux, ce sont des adjectifs (le premier jour).",
+   "comprendre": [
+    "Déterminants et pronoms sont souvent les mêmes petits mots : le, leur, plusieurs, aucun, deux… Ce qui décide, c'est leur travail dans la phrase. Le déterminant accompagne un nom : il le présente et en montre souvent le genre et le nombre (la maison, ces maisons). Le pronom prend la place d'un nom ou d'un groupe nominal, pour éviter une répétition, ou désigne directement une personne (je, tu, nous).",
+    "Méthode en deux temps. 1) Regarde ce qui suit. Un nom, même avec un adjectif entre les deux (« leurs belles maisons ») : c'est un déterminant. Un verbe ou rien : c'est un pronom. 2) Pour la sous-classe, demande-toi ce que le mot exprime : à qui (possessif), lequel on montre (démonstratif), combien (numéral), une quantité vague (indéfini), une question ou une exclamation (interrogatif, exclamatif).",
+    "Un pronom remplace toujours quelque chose. Au CEB, on te demande souvent d'écrire ce qu'il remplace : relis la phrase d'avant, puis vérifie en mettant ta réponse à la place du pronom. La phrase doit garder son sens."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Je leur ai rendu leurs livres. »",
+     "explication": "Le premier « leur » est devant un verbe : pronom personnel (= à eux). « leurs » est devant le nom « livres » : déterminant possessif."
+    },
+    {
+     "cas": "« Ce vélo est à Léa ; celui-ci est à moi. »",
+     "explication": "« ce » : déterminant démonstratif. « celui-ci » : pronom démonstratif (= ce vélo-ci)."
+    },
+    {
+     "cas": "« Trois enfants sont arrivés ; deux sont déjà repartis. »",
+     "explication": "« trois » : déterminant numéral. « deux » : pronom numéral (= deux enfants)."
+    },
+    {
+     "cas": "« Quelle belle journée ! »",
+     "explication": "« quelle » : déterminant exclamatif."
+    }
+   ],
+   "pieges": [
+    "« le, la, les » devant un verbe sont des pronoms : « Je la vois. »",
+    "« leur » pronom ne prend jamais de s ; « leur » déterminant s'accorde (leurs livres).",
+    "« premier, deuxième… » ne sont pas des déterminants numéraux, ce sont des adjectifs (le premier jour).",
+    "Un adjectif entre le déterminant et le nom ne change rien : dans « ces deux petits chats », « ces » et « deux » sont des déterminants.",
+    "Pour dire ce que remplace un pronom, donne le groupe en entier (« ce premier bulletin », pas seulement « bulletin » quand le texte précise)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 1,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Donner la classe de mots d'un extrait. « quelques » (devant « modifications ») est un déterminant ; « il » et « celle » (qui remplace « l'histoire ») sont des pronoms."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 7,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Dans « ça n'est pas pour lui que tu veux un oiseau : c'est pour toi », « lui » remplace l'oiseau ; « toi » et « tu » désignent Brigitte."
+    },
+    {
+     "examens": [
+      "ceb-2026-so",
+      "ceb-2026-tc"
+     ],
+     "livret": 10,
+     "questions": [
+      "13"
+     ],
+     "libelle": "question 13",
+     "texte": "Dans « ce premier bulletin, tu me le montres ? », « le » remplace ce premier bulletin."
+    }
+   ]
   },
   {
    "id": "fr-narrateur",
@@ -498,7 +613,71 @@
     "Une histoire inventée peut être vraisemblable : un roman peut raconter un bus raté."
    ],
    "exemple": "« Le chien ouvrit le frigo et se fit un sandwich. » → imaginaire et invraisemblable.",
-   "astuce": "Demande-toi : est-ce que cela pourrait vraiment arriver ?"
+   "astuce": "Demande-toi : est-ce que cela pourrait vraiment arriver ?",
+   "comprendre": [
+    "Ce sont deux questions différentes. Réel ou imaginaire ? On se demande d'où vient le texte : des faits qui se sont vraiment passés ou qui existent (article, documentaire, interview, biographie), ou une histoire inventée par un auteur (conte, fable, roman, BD, légende).",
+    "Vraisemblable ou invraisemblable ? On se demande si ce qui est raconté pourrait arriver dans la vraie vie. Une histoire inventée peut être vraisemblable : un roman peut raconter un garçon qui rate son bus. Elle devient invraisemblable dès qu'il y a quelque chose d'impossible : un animal qui parle, un objet magique, un voyage d'une planète à l'autre.",
+    "Au CEB, il faut justifier avec le texte. Recopie ou cite le passage précis qui est impossible. « C'est bizarre » ou « c'est un conte » ne suffit pas."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« En 1969, des astronautes ont marché sur la Lune. »",
+     "explication": "Fait réel : on peut le vérifier dans une encyclopédie."
+    },
+    {
+     "cas": "« Ce matin, Lucas a raté son bus et il est arrivé en retard. »",
+     "explication": "Peut-être inventé, mais vraisemblable."
+    },
+    {
+     "cas": "« Le chien ouvrit le frigo et se fit un sandwich. »",
+     "explication": "Imaginaire et invraisemblable."
+    },
+    {
+     "cas": "Un documentaire sur un poisson qui vit sans lumière, au fond des océans.",
+     "explication": "C'est étonnant, mais vrai : étonnant ne veut pas dire inventé."
+    }
+   ],
+   "pieges": [
+    "Croire qu'une histoire inventée est forcément invraisemblable.",
+    "Justifier sans citer le texte.",
+    "Choisir comme preuve une phrase qui pourrait arriver dans la réalité : seule une phrase impossible prouve que l'histoire est imaginaire.",
+    "Croire qu'un fait surprenant est faux."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 4,
+     "questions": [
+      "2 (justification)"
+     ],
+     "libelle": "question 2",
+     "texte": "L'histoire du petit prince et du renard est imaginaire ; preuve : le renard parle avec le petit prince, venu d'une autre planète."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 1,
+     "questions": [
+      "2 (justification)"
+     ],
+     "libelle": "question 2",
+     "texte": "L'histoire est imaginaire ; preuve : la meule est magique, elle tourne toute seule et produit du sel."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 1,
+     "questions": [
+      "4"
+     ],
+     "libelle": "question 4",
+     "texte": "La phrase qui prouve que l'histoire est imaginaire est « J'ai appris au petit prince à se tenir en selle. » C'est le cheval qui la dit à sa mère ; les trois autres phrases, dites par le prince, sont possibles."
+    }
+   ]
   },
   {
    "id": "fr-organisateurs",
