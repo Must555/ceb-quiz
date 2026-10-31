@@ -88,7 +88,8 @@
      "libelle": "question 2a",
      "texte": "Le cycle de la poule : accouplement, fécondation, ponte, incubation, éclosion, croissance. Le schéma qui place la ponte avant la fécondation est faux."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-hiver",
@@ -176,7 +177,8 @@
      "libelle": "question 2e",
      "texte": "Sur le schéma du cycle du ténébrion meunier, « proche de celui du papillon », retrouver la larve, l'étape de la nymphose et les œufs."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-chaines",
@@ -229,7 +231,8 @@
      "libelle": "question 4",
      "texte": "À partir d'un schéma (herbe, criquet, lapin, merle, musaraigne, renard, hibou), écrire deux chaines alimentaires complètes, par exemple herbe → lapin → renard. Puis : quels animaux disparaitraient s'il n'y avait plus aucun végétal ? Réponse : tous les six."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-ecosystemes",
@@ -435,7 +438,8 @@
      "libelle": "question 6b",
      "texte": "On fabrique les isolateurs des pylônes en verre parce que le verre ne conduit pas le courant électrique."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-aimants",
@@ -545,7 +549,8 @@
     "Oublier qu'un objet transparent (une vitre) ne fait presque pas d'ombre : il laisse passer la lumière."
    ],
    "auCEB": [],
-   "auCEBNote": "Cette notion n'a pas fait l'objet d'une question dans les épreuves de 2015 à 2026, mais elle sert à comprendre les expériences de sciences."
+   "auCEBNote": "Cette notion n'a pas fait l'objet d'une question dans les épreuves de 2015 à 2026, mais elle sert à comprendre les expériences de sciences.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-systeme-solaire",
@@ -674,7 +679,8 @@
      "libelle": "question 8c",
      "texte": "« Tout ce qui est en bois flotte » est faux : une boule de bois d'azobé coule dans l'eau douce."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-chaleur",

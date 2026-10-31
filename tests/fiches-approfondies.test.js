@@ -62,3 +62,11 @@ test('blocApprofondi : rubriques et liens vers les pages d\'examens', () => {
   }
   assert.equal(blocApprofondi({ id: 'x' }), '');
 });
+
+test('fiches approfondies : date de mise à jour dans le sitemap (lastmod)', async () => {
+  const sitemap = await readFile(new URL('../sitemap.xml', import.meta.url), 'utf8');
+  for (const f of approfondies) {
+    assert.match(f.miseAJour ?? '', /^20\d\d-\d\d-\d\d$/, `${f.id} : miseAJour`);
+    assert.ok(sitemap.includes(`<loc>https://missionceb.be/fiches/${f.id}.html</loc><lastmod>${f.miseAJour}</lastmod>`), `${f.id} : lastmod absent du sitemap`);
+  }
+});

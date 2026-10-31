@@ -115,7 +115,8 @@
      "libelle": "question A12a",
      "texte": "Entre 3 250 et 3 500, il y a 2 intervalles : le pas vaut 125. 4 600 se trouve juste avant 4 625, sous la tache C."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-suites",
@@ -240,7 +241,8 @@
      "libelle": "question 22a",
      "texte": "7 colonnes grisées sur 10 : 0,7 ou 70 % de l'unité."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-fractions-addition",
@@ -370,7 +372,8 @@
      "libelle": "question 1",
      "texte": "47 × 9,9 donne un nombre plus petit que 470."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-priorites",
@@ -585,7 +588,8 @@
      "libelle": "question 2",
      "texte": "Pour une pyramide à base carrée, il faut 8 bâtonnets (les arêtes), 5 boules (les sommets), 1 carré et 4 triangles (les faces)."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-symetrie",
@@ -718,7 +722,8 @@
      "libelle": "question 12a",
      "texte": "Parmi les tranches d'âge proposées, ce sont les 30-39 ans qui achètent le moins de pommes d'amour. D'autres tranches ont un bâton plus petit, mais elles n'étaient pas proposées."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-aires-formules",
