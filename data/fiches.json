@@ -293,7 +293,84 @@
         "Intention de l'auteur : informer, persuader, enjoindre (donner des consignes), donner du plaisir (raconter, faire rire)."
       ],
       "exemple": "Recette = enjoindre. Article sur la tour Eiffel = informer. Bande dessinée = donner du plaisir.",
-      "astuce": "Cherche les mots qui jugent (beau, horrible) : ils montrent une opinion."
+      "astuce": "Cherche les mots qui jugent (beau, horrible) : ils montrent une opinion.",
+      "comprendre": [
+        "Avant de lire un texte en détail, demande-toi pourquoi l'auteur l'a écrit : c'est son intention dominante. Au CEB, il y en a quatre : informer (renseigner, expliquer), persuader (convaincre de penser ou d'acheter quelque chose), enjoindre (faire agir : consignes, recette, règlement), donner du plaisir (raconter, faire rire, émouvoir).",
+        "Les indices : un texte qui informe donne des faits, des dates, des chiffres, souvent avec des intertitres. Un texte qui enjoint parle à l'impératif ou à l'infinitif (« Casser le chocolat »). Un texte qui persuade donne des arguments et des avis (« le meilleur », « il faut absolument »). Un récit inventé, avec des personnages et des dialogues, donne du plaisir.",
+        "Un fait peut être vérifié par tout le monde ; une opinion est l'avis d'une personne. Un même document peut mêler plusieurs intentions : une page de livre de cuisine peut contenir une recette (enjoindre) et un encadré « Le saviez-vous ? » (informer). Pour juger un article, repère aussi sa source : auteur, nom du journal ou du magazine, date."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« La tour Eiffel a été construite pour l'Exposition universelle de 1889. »",
+          "explication": "Un fait : on peut le vérifier."
+        },
+        {
+          "cas": "« C'est le plus beau monument du monde. »",
+          "explication": "Une opinion : « le plus beau » dépend de la personne."
+        },
+        {
+          "cas": "La règle d'un jeu de société.",
+          "explication": "Enjoindre : elle dit au joueur ce qu'il doit faire."
+        },
+        {
+          "cas": "« Le meilleur goûter pour être en forme ! » sur une affiche.",
+          "explication": "Persuader : la publicité veut te faire acheter."
+        }
+      ],
+      "pieges": [
+        "Choisir « donner du plaisir » parce que le texte est agréable à lire : un documentaire passionnant reste un texte qui informe.",
+        "Confondre informer et persuader : un texte qui informe ne te demande pas de changer d'avis ni d'acheter.",
+        "Se laisser guider par un détail : on cherche l'intention de tout le texte.",
+        "Dans une source, confondre l'éditeur et le nom du magazine."
+      ],
+      "auCEBIntro": "La question « Quelle est l'intention dominante de l'auteur ? » revient presque chaque année.",
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2016"
+          ],
+          "livret": 1,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "Un conte inventé pour amuser : donner du plaisir."
+        },
+        {
+          "examens": [
+            "ceb-2017"
+          ],
+          "livret": 1,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "« La Belgique, ses arts et ses loisirs » donne des dates, des noms et des explications : informer."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 8,
+          "questions": [
+            "13"
+          ],
+          "libelle": "question 13",
+          "texte": "La recette fait agir (enjoindre) ; les encadrés « Le saviez-vous ? » informent."
+        },
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "La source de l'article : Annalisa Plaitano, magazine Cosinus, janvier 2023. Éditions Faton est l'éditeur, pas le nom du magazine."
+        }
+      ]
     },
     {
       "id": "fr-accords",
@@ -451,7 +528,72 @@
         "Phénomène chimique : une nouvelle matière apparaît (rouille, combustion, cuisson)."
       ],
       "exemple": "La glace qui fond = physique. Le fer qui rouille = chimique.",
-      "astuce": "Peut-on revenir en arrière facilement ? Oui → souvent physique. Non → souvent chimique."
+      "astuce": "Peut-on revenir en arrière facilement ? Oui → souvent physique. Non → souvent chimique.",
+      "comprendre": [
+        "Quand la matière change, demande-toi : est-ce encore la même matière ? Si oui, c'est un phénomène physique. L'eau qui gèle reste de l'eau. Le sucre dissous dans l'eau est toujours là : l'eau a un goût sucré. Une barre de métal chauffée s'allonge un peu (c'est la dilatation), mais reste du métal.",
+        "Si une nouvelle matière apparaît, c'est un phénomène chimique. Le bois qui brule donne des cendres, de la fumée et des gaz. Le fer qui rouille se couvre d'une matière rouge et friable, la rouille. Un gâteau cuit ne redevient jamais de la pâte.",
+        "Indices d'un phénomène chimique : une couleur qui change pour de bon, une odeur nouvelle, des bulles de gaz, une flamme, et surtout l'impossibilité de revenir simplement en arrière."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Le beurre qui fond dans la poêle.",
+          "explication": "Physique : au frigo, il redevient solide."
+        },
+        {
+          "cas": "Une allumette qui brule.",
+          "explication": "Chimique : le bois devient cendre et fumée."
+        },
+        {
+          "cas": "De l'eau et de l'huile dans un verre.",
+          "explication": "Physique : elles se superposent sans se transformer."
+        },
+        {
+          "cas": "Une pièce de métal chauffée qui ne passe plus entre deux clous.",
+          "explication": "Physique : elle s'est dilatée, et repasse en refroidissant."
+        }
+      ],
+      "pieges": [
+        "Croire que la glace qui fond change de matière : elle reste de l'eau.",
+        "Croire que le sucre dissous a disparu.",
+        "Appliquer l'astuce « revenir en arrière » sans réfléchir : un verre cassé ne se recolle pas, mais c'est toujours du verre (physique).",
+        "Confondre la dilatation (le volume augmente avec la chaleur) et un changement de matière."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2016"
+          ],
+          "livret": 7,
+          "questions": [
+            "11b"
+          ],
+          "libelle": "question 11b",
+          "texte": "L'alcool du thermomètre qui monte, la montgolfière qui gonfle d'air chaud, les rails qui se déforment à la chaleur sont liés à la dilatation ; l'élastique qu'on étire, non."
+        },
+        {
+          "examens": [
+            "ceb-2021"
+          ],
+          "livret": 9,
+          "questions": [
+            "11a",
+            "11b"
+          ],
+          "libelle": "question 11",
+          "texte": "Avec la chaleur, la pièce s'est élargie ; ce phénomène s'appelle la dilatation."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "15"
+          ],
+          "libelle": "question 15",
+          "texte": "L'évaporation de l'eau et l'eau avec l'huile sont des phénomènes physiques ; la chaine en fer qui rouille, un phénomène chimique."
+        }
+      ]
     },
     {
       "id": "sc-energie",

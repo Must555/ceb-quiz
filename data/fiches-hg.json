@@ -54,7 +54,82 @@
     "Source orale : témoignage, récit, chanson transmise de vive voix."
    ],
    "exemple": "Une photo de classe de 1920 est une source iconographique d'époque.",
-   "astuce": "Une source d'époque a été produite au moment des faits ; un livre ou un dessin récent sur les Romains n'est pas une trace de l'Antiquité."
+   "astuce": "Une source d'époque a été produite au moment des faits ; un livre ou un dessin récent sur les Romains n'est pas une trace de l'Antiquité.",
+   "comprendre": [
+    "L'historien connaît le passé grâce aux traces que les gens ont laissées : les sources. Pour les périodes sans écriture, comme la Préhistoire, les seules sources sont des objets et des vestiges.",
+    "Au CEB, on te demande souvent la nature d'une trace : document écrit, objet, peinture, sculpture, photo, monument. Regarde comment elle a été faite. Un texte écrit à la main ou imprimé est un document écrit. Une forme taillée dans la pierre ou coulée dans le métal est une sculpture. Une chose fabriquée pour servir (outil, instrument, pièce de monnaie) est un objet. La légende aide beaucoup : « gravure de… », « aquarelle », « bronze ».",
+    "Une source d'époque a été faite au moment des faits, souvent par quelqu'un qui les a vécus. Une source faite plus tard raconte des faits que son auteur n'a pas vécus. Pour le savoir, compare la date de la source et la date de l'évènement."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un livret d'ouvrier rempli à la main au 19e siècle.",
+     "explication": "Un document écrit, d'époque."
+    },
+    {
+     "cas": "Un monument aux morts de la guerre 1914-1918.",
+     "explication": "Un monument, et aussi une trace du passé : il rappelle les victimes."
+    },
+    {
+     "cas": "Un film tourné aujourd'hui sur les Romains.",
+     "explication": "Ce n'est pas une trace de l'Antiquité : il a été fait près de 2 000 ans après."
+    },
+    {
+     "cas": "Un soldat écrit « je suis prisonnier » dans une lettre.",
+     "explication": "Un témoignage de ce qu'il a vécu lui-même."
+    }
+   ],
+   "pieges": [
+    "Deviner la nature d'une trace sans lire la légende.",
+    "Croire qu'une source ancienne a toujours été faite par un témoin : compare les dates.",
+    "Oublier qu'un monument ou un bâtiment est aussi une trace du passé.",
+    "Prendre un livre ou un dessin récent sur le passé pour une source d'époque."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Marcel Ladril a-t-il écrit ce qu'il a vécu ? Oui : il dit « je » et raconte sa propre captivité (« Je suis prisonnier de guerre des Allemands »)."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "15a"
+     ],
+     "libelle": "question 15a",
+     "texte": "Une gravure de Théodore de Bry (1528-1598) montre une scène de 1493. C'est un document historique, une gravure, faite par quelqu'un qui n'a pas vécu la scène."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "Un livret d'ouvrier est un document écrit ; un bronze, une sculpture ; une aquarelle, une peinture."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 5,
+     "questions": [
+      "1c1"
+     ],
+     "libelle": "question 1c",
+     "texte": "Une feuille imprimée « Appel au Peuple. Aux armes ! Braves Belges… » est un document écrit."
+    }
+   ]
   },
   {
    "id": "hg-provinces",
@@ -206,7 +281,93 @@
     "Habitat groupé (maisons rassemblées), dispersé (fermes isolées), linéaire (maisons alignées le long d'une route)."
    ],
    "exemple": "Des fermes isolées au milieu des prairies → habitat dispersé.",
-   "astuce": "Regarde ce qui domine dans le paysage : la nature cultivée, les bâtiments ou les usines."
+   "astuce": "Regarde ce qui domine dans le paysage : la nature cultivée, les bâtiments ou les usines.",
+   "comprendre": [
+    "Un paysage, c'est ce qu'on voit depuis un endroit. Pour le décrire, on regarde ce qui occupe le plus de place : champs et prairies (paysage rural), maisons, immeubles et rues (paysage urbain), usines, entrepôts et ports (paysage industriel).",
+    "On distingue les espaces bâtis (les constructions) et les espaces non bâtis (champs, bois, prairies, eau). On repère aussi les voies de communication : routes, autoroutes, chemins de fer et voies navigables (fleuves, canaux). Un lieu très humanisé a été beaucoup transformé par l'Homme ; un lieu peu humanisé, peu.",
+    "La façon de photographier compte. Une photo prise au sol montre les façades de face, avec l'horizon et le ciel. Une photo aérienne est prise d'en haut, depuis un avion ou un drone, et montre surtout les toits. Deux photos du même endroit à des époques différentes montrent comment le paysage a changé."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des toits partout, des rues bordées de maisons, presque pas de champs.",
+     "explication": "Paysage urbain, espaces non bâtis peu nombreux."
+    },
+    {
+     "cas": "Des maisons serrées autour de l'église ; des fermes isolées entre les prairies.",
+     "explication": "Le village est un habitat groupé ; les fermes isolées, un habitat dispersé."
+    },
+    {
+     "cas": "Ixelles au 18e siècle, puis aujourd'hui.",
+     "explication": "Au 18e siècle : des champs et des prés, quelques maisons, Ixelles est rurale. Aujourd'hui : des rues et des immeubles partout, elle est urbaine."
+    },
+    {
+     "cas": "La Meuse à Dinant.",
+     "explication": "Un fleuve où circulent des bateaux est une voie navigable."
+    }
+   ],
+   "pieges": [
+    "Décrire un détail au lieu de ce qui domine dans le paysage.",
+    "Croire qu'une photo prise du haut d'une colline est une photo aérienne : on y voit encore l'horizon, elle est prise au sol.",
+    "Oublier les fleuves et les canaux parmi les voies de communication.",
+    "Affirmer ce que la photo ne montre pas (la saison, un nom de rue) : « on ne peut pas le savoir » est parfois la bonne réponse."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "13a"
+     ],
+     "libelle": "question 13a",
+     "texte": "Des prairies avec des clôtures, des arbres, une forêt au loin, aucune construction : paysage rural."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "Ixelles, rurale au 18e siècle, est urbaine aujourd'hui."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "6b"
+     ],
+     "libelle": "question 6b",
+     "texte": "La photo aérienne de Liège montre un lieu urbain et très humanisé."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "La photo prise depuis la colline de Cointe est une photo prise au sol, pas une photo aérienne."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 5,
+     "questions": [
+      "7a"
+     ],
+     "libelle": "question 7a",
+     "texte": "Des toits presque partout : peu d'espaces non bâtis, surtout des maisons d'habitation, des rues bordées de maisons."
+    }
+   ]
   },
   {
    "id": "hg-cartes",
