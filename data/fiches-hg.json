@@ -98,7 +98,8 @@
      "libelle": "question 2k",
      "texte": "Les J.O. d'été ont lieu tous les quatre ans."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-modes-vie",
@@ -187,7 +188,8 @@
      "libelle": "question 2d",
      "texte": "Le tableau « Les Joueurs d'échecs » renseigne sur la façon de se distraire (« se vêtir » était aussi accepté)."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-personnages",
@@ -290,7 +292,8 @@
      "libelle": "question 1c",
      "texte": "Une feuille imprimée « Appel au Peuple. Aux armes ! Braves Belges… » est un document écrit."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-provinces",
@@ -433,7 +436,8 @@
      "libelle": "question 5d",
      "texte": "Un pays entré dans l'UE en 1995 : l'Autriche, la Suède ou la Finlande."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-continents",
@@ -522,7 +526,8 @@
      "libelle": "question 3a",
      "texte": "L'Europe et l'Amérique sont séparées par un océan."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-climats",
@@ -637,7 +642,8 @@
      "libelle": "question 4c",
      "texte": "Dinant est au sud de Namur ; Namur est à l'est de Mons."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-echelle",
@@ -764,7 +770,8 @@
      "libelle": "question 7a",
      "texte": "Des toits presque partout : peu d'espaces non bâtis, surtout des maisons d'habitation, des rues bordées de maisons."
     }
-   ]
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-cartes",

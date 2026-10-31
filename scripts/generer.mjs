@@ -591,11 +591,14 @@ export async function generer() {
   out['ceb-2027/index.html'] = pageCeb2027(CEB27);
   out['reviser-le-ceb/index.html'] = pageReviser();
   out['enseignants/index.html'] = pageEnseignants();
+  // Date de dernière modification du contenu (lastmod) : Google relit d'abord les pages modifiées.
+  // Fiches : champ miseAJour, à mettre à jour à chaque changement de contenu de la fiche.
+  const dateDe = { [`${SITE}ceb-2027/`]: CEB27.miseAJour, ...Object.fromEntries(fiches.filter((f) => f.miseAJour).map((f) => [`${SITE}fiches/${f.id}.html`, f.miseAJour])) };
   out['sitemap.xml'] = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${[SITE, `${SITE}ceb-2027/`, `${SITE}enseignants/`, `${SITE}examens/`, `${SITE}exercices/`, `${SITE}reviser-le-ceb/`, `${SITE}fiches/`,
   ...examens.map((ex) => `${SITE}examens/${slugExamen(ex)}.html`), ...Object.values(SLUG).map((x) => `${SITE}exercices/${x}.html`),
-  ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc>${u === `${SITE}ceb-2027/` ? `<lastmod>${CEB27.miseAJour}</lastmod>` : ''}</url>`).join('\n')}
+  ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc>${dateDe[u] ? `<lastmod>${dateDe[u]}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `;
   out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /relecture/\nDisallow: /moteur.html\n\nSitemap: ${SITE}sitemap.xml\n`;
