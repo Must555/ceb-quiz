@@ -16,7 +16,7 @@
    "comprendre": [
     "Une ligne du temps est une droite graduée de dates : le passé à gauche, le présent à droite. Les graduations sont régulières : de 10 en 10 ans, de 100 en 100 ans, parfois en millions d'années. Pour placer une date, repère entre quelles graduations elle tombe : 1931 se place entre 1930 et 1940.",
     "Avant J.-C., on compte à rebours : 500 av. J.-C. est plus ancien que 100 av. J.-C. Il n'y a pas d'an 0 : on passe de l'an 1 av. J.-C. à l'an 1 apr. J.-C.",
-    "Beaucoup de questions demandent un petit calcul. Une durée : on soustrait les deux dates. Une année de naissance : année moins âge. Pour savoir si quelqu'un a pu connaître un évènement, vérifie qu'il était vivant à cette date. Choisis aussi la bonne échelle : une période de 60 millions d'années ne tient pas sur une ligne graduée en années, jusqu'à l'an 2000."
+    "Beaucoup de questions demandent un petit calcul. Une durée : on soustrait les deux dates. Une année de naissance : année moins âge. Pour savoir si quelqu'un a pu connaitre un évènement, vérifie qu'il était vivant à cette date. Choisis aussi la bonne échelle : une période de 60 millions d'années ne tient pas sur une ligne graduée en années, jusqu'à l'an 2000."
    ],
    "exemplesExpliques": [
     {
@@ -63,7 +63,7 @@
       "11b"
      ],
      "libelle": "question 11b",
-     "texte": "Pour connaître la découverte des îles Galápagos (1535), il fallait être vivant : seul Jacques Cartier (1491-1557) l'était encore."
+     "texte": "Pour connaitre la découverte des iles Galápagos (1535), il fallait être vivant : seul Jacques Cartier (1491-1557) l'était encore."
     },
     {
      "examens": [
@@ -219,7 +219,7 @@
    "exemple": "Une photo de classe de 1920 est une source iconographique d'époque.",
    "astuce": "Une source d'époque a été produite au moment des faits ; un livre ou un dessin récent sur les Romains n'est pas une trace de l'Antiquité.",
    "comprendre": [
-    "L'historien connaît le passé grâce aux traces que les gens ont laissées : les sources. Pour les périodes sans écriture, comme la Préhistoire, les seules sources sont des objets et des vestiges.",
+    "L'historien connait le passé grâce aux traces que les gens ont laissées : les sources. Pour les périodes sans écriture, comme la Préhistoire, les seules sources sont des objets et des vestiges.",
     "Au CEB, on te demande souvent la nature d'une trace : document écrit, objet, peinture, sculpture, photo, monument. Regarde comment elle a été faite. Un texte écrit à la main ou imprimé est un document écrit. Une forme taillée dans la pierre ou coulée dans le métal est une sculpture. Une chose fabriquée pour servir (outil, instrument, pièce de monnaie) est un objet. La légende aide beaucoup : « gravure de… », « aquarelle », « bronze ».",
     "Une source d'époque a été faite au moment des faits, souvent par quelqu'un qui les a vécus. Une source faite plus tard raconte des faits que son auteur n'a pas vécus. Pour le savoir, compare la date de la source et la date de l'évènement."
    ],
@@ -306,7 +306,83 @@
     "La Région de Bruxelles-Capitale ne fait partie d'aucune province."
    ],
    "exemple": "Arlon est le chef-lieu de la province de Luxembourg.",
-   "astuce": "Attention aux pièges : le chef-lieu du Hainaut est Mons (pas Charleroi) et celui du Limbourg est Hasselt."
+   "astuce": "Attention aux pièges : le chef-lieu du Hainaut est Mons (pas Charleroi) et celui du Limbourg est Hasselt.",
+   "comprendre": [
+    "La Belgique compte 10 provinces, 5 en Flandre et 5 en Wallonie. Chaque province a un chef-lieu, la ville où se trouve son administration. La Région de Bruxelles-Capitale ne fait partie d'aucune province.",
+    "En Wallonie : Hainaut (Mons), Namur (Namur), Liège (Liège), Luxembourg (Arlon), Brabant wallon (Wavre). En Flandre : Flandre occidentale (Bruges), Flandre orientale (Gand), Anvers (Anvers), Limbourg (Hasselt), Brabant flamand (Louvain).",
+    "Pour situer une ville sur une carte des provinces, repère d'abord une grande ville proche, puis regarde dans quelle province elle se trouve. La plus grande ville d'une province n'est pas toujours son chef-lieu : Charleroi est plus grande que Mons."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Dinant, la ville d'Adolphe Sax.",
+     "explication": "Province de Namur."
+    },
+    {
+     "cas": "Binche et ses Gilles.",
+     "explication": "Province de Hainaut."
+    },
+    {
+     "cas": "Le Grand-Hornu, près de Mons.",
+     "explication": "Province de Hainaut."
+    },
+    {
+     "cas": "Arlon.",
+     "explication": "Chef-lieu de la province de Luxembourg."
+    }
+   ],
+   "pieges": [
+    "Donner Charleroi comme chef-lieu du Hainaut : c'est Mons.",
+    "Confondre la province de Luxembourg et le pays du Luxembourg.",
+    "Placer Bruxelles dans le Brabant.",
+    "Oublier que Namur et Liège sont à la fois des villes et des provinces."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "11d"
+     ],
+     "libelle": "question 11d",
+     "texte": "La voie romaine de Reims à Trèves passait par Arlon, aujourd'hui dans la province de Luxembourg."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Le Grand-Hornu est dans la province de Hainaut ; Blegny-Mine dans la province de Liège."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 4,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Dinant (Adolphe Sax) : province de Namur ; Binche (le Gille) : Hainaut ; La Hulpe (musée Folon) : Brabant wallon."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "2d"
+     ],
+     "libelle": "question 2d",
+     "texte": "Cointe et Vieuxville sont toutes les deux dans la province de Liège."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-langues",
@@ -319,7 +395,61 @@
     "Langues officielles : néerlandais en Flandre, français en Wallonie (allemand dans 9 communes de l'est de la province de Liège), français et néerlandais à Bruxelles."
    ],
    "exemple": "Eupen est en Région wallonne, mais sa langue officielle est l'allemand.",
-   "astuce": "Région = territoire ; Communauté = langue."
+   "astuce": "Région = territoire ; Communauté = langue.",
+   "comprendre": [
+    "La Belgique est un État fédéral. Elle est découpée de deux façons différentes. Les 3 Régions (flamande, wallonne, Bruxelles-Capitale) s'occupent surtout de ce qui touche au territoire : l'économie, les routes, l'environnement. Les 3 Communautés (française, flamande, germanophone) s'occupent de ce qui touche aux personnes et à la langue : l'enseignement, la culture.",
+    "Chaque endroit a sa ou ses langues officielles : le néerlandais en Flandre, le français en Wallonie, le français et le néerlandais à Bruxelles, et l'allemand dans 9 communes de l'est de la province de Liège, comme Eupen et Saint-Vith.",
+    "Une ville peut donc être en Région wallonne et dans la Communauté germanophone : c'est le cas d'Eupen. Pour répondre, lis bien la carte : souvent, une couleur montre la région et des hachures montrent la communauté."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Eupen.",
+     "explication": "Province de Liège, Région wallonne, Communauté germanophone : on y parle allemand."
+    },
+    {
+     "cas": "Malmedy.",
+     "explication": "Province de Liège, Région wallonne, Communauté française."
+    },
+    {
+     "cas": "Bruxelles.",
+     "explication": "Une Région à part, avec deux langues officielles : le français et le néerlandais."
+    },
+    {
+     "cas": "Les écoles francophones de Bruxelles et de Wallonie.",
+     "explication": "Elles dépendent de la même Communauté : la Fédération Wallonie-Bruxelles, qui organise le CEB."
+    }
+   ],
+   "pieges": [
+    "Confondre Région (un territoire) et Communauté (une langue, l'enseignement, la culture).",
+    "Oublier la Communauté germanophone.",
+    "Croire que toute la province de Liège parle allemand : seulement 9 communes de l'est.",
+    "Oublier que Bruxelles a deux langues officielles."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Malmedy et Eupen sont dans la province de Liège, en Région wallonne ; Malmedy est dans la Communauté française, Eupen dans la Communauté germanophone."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 7,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "Langues officielles : français à Liège, néerlandais à Anvers, français et allemand dans la province de Liège, français et néerlandais à Bruxelles."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-cours-eau",
@@ -333,7 +463,83 @@
     "Un fleuve se jette dans la mer ; une rivière se jette dans un autre cours d'eau."
    ],
    "exemple": "La Sambre se jette dans la Meuse à Namur.",
-   "astuce": "Namur (Sambre et Meuse), Liège (Meuse et Ourthe), Gand (Escaut et Lys) : ville de confluence !"
+   "astuce": "Namur (Sambre et Meuse), Liège (Meuse et Ourthe), Gand (Escaut et Lys) : ville de confluence !",
+   "comprendre": [
+    "Un cours d'eau nait à sa source et coule toujours vers le bas, jusqu'à son embouchure. Un fleuve se jette dans la mer ; une rivière se jette dans un autre cours d'eau, dont elle est un affluent. L'endroit où deux cours d'eau se rejoignent s'appelle le confluent.",
+    "La Belgique a deux grands fleuves. La Meuse vient de France, traverse Dinant, Namur, Huy et Liège, puis continue vers les Pays-Bas. L'Escaut vient aussi de France, passe à Tournai, Gand et Anvers, puis rejoint la mer du Nord aux Pays-Bas.",
+    "Beaucoup de villes sont nées à un confluent : Namur (Sambre et Meuse), Liège (Ourthe et Meuse), Gand (Lys et Escaut). Des canaux, creusés par l'être humain, relient les cours d'eau pour les bateaux : le canal Albert relie Liège à Anvers."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La Sambre se jette dans la Meuse à Namur.",
+     "explication": "La Sambre est un affluent de la Meuse ; Namur est au confluent."
+    },
+    {
+     "cas": "La Senne traverse Bruxelles.",
+     "explication": "Elle fait partie du bassin de l'Escaut."
+    },
+    {
+     "cas": "Aller en bateau d'Anvers à Namur par Liège.",
+     "explication": "Le canal Albert jusqu'à Liège, puis la Meuse jusqu'à Namur."
+    },
+    {
+     "cas": "Suivre l'Ourthe vers l'aval.",
+     "explication": "On arrive à Liège, où elle se jette dans la Meuse."
+    }
+   ],
+   "pieges": [
+    "Confondre l'affluent (le cours d'eau qui se jette) et le confluent (le lieu de rencontre).",
+    "Confondre la source (le début) et l'embouchure (la fin).",
+    "Croire qu'un canal est une rivière naturelle.",
+    "Placer Bruxelles sur la Meuse : elle est traversée par la Senne."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "6b"
+     ],
+     "libelle": "question 6b",
+     "texte": "D'Anvers à Namur en passant par Liège : le canal Albert, puis la Meuse."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 7,
+     "questions": [
+      "13b"
+     ],
+     "libelle": "question 13b",
+     "texte": "Sur le schéma de deux cours d'eau, retrouver la source, l'affluent, le confluent et l'embouchure."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "6c"
+     ],
+     "libelle": "question 6c",
+     "texte": "À Liège, l'endroit où l'Ourthe rejoint la Meuse est le confluent ; l'Ourthe est l'affluent."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "1b"
+     ],
+     "libelle": "question 1b",
+     "texte": "Depuis Vieuxville, on suit l'Ourthe jusqu'à Liège ; de Liège à Namur, on suit la Meuse."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-regions-naturelles",
@@ -347,7 +553,72 @@
     "Le pays de Herve : prairies et haies (bocage)."
    ],
    "exemple": "Bastogne se trouve en Ardenne ; Waremme en Hesbaye.",
-   "astuce": "Du nord-ouest au sud-est, on monte : basse Belgique (Dunes, Polders, Flandre), moyenne Belgique (Hesbaye, Condroz), haute Belgique (Ardenne). Attention : la Famenne est un creux entre le Condroz et l'Ardenne."
+   "astuce": "Du nord-ouest au sud-est, on monte : basse Belgique (Dunes, Polders, Flandre), moyenne Belgique (Hesbaye, Condroz), haute Belgique (Ardenne). Attention : la Famenne est un creux entre le Condroz et l'Ardenne.",
+   "comprendre": [
+    "La Belgique est découpée en régions naturelles : chacune a son relief, son sol, sa végétation et ses activités. Elles se succèdent du nord-ouest, bas et proche de la mer, au sud-est, plus haut.",
+    "Basse Belgique : les Dunes, les Polders (anciennes terres gagnées sur la mer), la Flandre sablonneuse, la Campine (sable, bruyères, pins). Moyenne Belgique : les régions limoneuses comme la Hesbaye, aux sols très fertiles (céréales, betteraves), et le Condroz. Haute Belgique : l'Ardenne, plateau élevé et boisé ; le point culminant du pays, le signal de Botrange (694 m), est dans les Hautes Fagnes. Tout au sud : la Lorraine belge.",
+    "La Belgique n'a pas de montagne : même l'Ardenne est un plateau de collines et de vallées. Pour reconnaitre un milieu sur une photo, regarde le relief et la végétation."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Bastogne et Waremme.",
+     "explication": "Bastogne est en Ardenne ; Waremme en Hesbaye."
+    },
+    {
+     "cas": "Une piste de ski dans la province de Liège.",
+     "explication": "Elle traverse une forêt d'Ardenne : ce n'est pas une montagne."
+    },
+    {
+     "cas": "Des prés entourés de haies.",
+     "explication": "Le pays de Herve, région de bocage et d'élevage."
+    },
+    {
+     "cas": "Le littoral.",
+     "explication": "Les Dunes, au bord de la mer du Nord."
+    }
+   ],
+   "pieges": [
+    "Dire que la Belgique a des montagnes.",
+    "Confondre le Condroz (crêtes et creux) et la Famenne (un creux argileux entre le Condroz et l'Ardenne).",
+    "Placer la Campine au sud : elle est au nord-est.",
+    "Oublier que l'altitude augmente du nord-ouest vers le sud-est."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "20"
+     ],
+     "libelle": "question 20",
+     "texte": "Localiser trois paysages sur la carte : le littoral au bord de la mer du Nord, la vallée de la Meuse, l'Ardenne au sud-est."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Le point culminant est le signal de Botrange : 694 m, plus un escalier de 6 m, cela fait 700 m."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 5,
+     "questions": [
+      "3b"
+     ],
+     "libelle": "question 3b",
+     "texte": "La piste de ski du Mont des Brumes est tracée dans une forêt : la Belgique n'a pas de montagne."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-europe",
@@ -479,7 +750,7 @@
     "Confondre un pays et un continent : l'Australie est un pays, l'Afrique un continent.",
     "Confondre océan (immense étendue d'eau salée) et mer (plus petite, bordée de terres).",
     "Oublier que la Russie est à la fois en Europe et en Asie.",
-    "Placer un fleuve ou une montagne sur le mauvais continent : retiens au moins un fleuve et une chaîne de montagnes par continent."
+    "Placer un fleuve ou une montagne sur le mauvais continent : retiens au moins un fleuve et une chaine de montagnes par continent."
    ],
    "auCEB": [
     {
@@ -657,7 +928,50 @@
     "Plus le nombre sous le 1 est petit, plus la carte est détaillée."
    ],
    "exemple": "À 1/50 000, 4 cm = 200 000 cm = 2 km.",
-   "astuce": "Pour convertir des cm en km, enlève 5 zéros (100 000 cm = 1 km)."
+   "astuce": "Pour convertir des cm en km, enlève 5 zéros (100 000 cm = 1 km).",
+   "comprendre": [
+    "Une carte représente un territoire en beaucoup plus petit. L'échelle indique combien de fois. À 1/25 000, 1 cm sur la carte représente 25 000 cm sur le terrain, soit 250 m. À 1/100 000, 1 cm représente 1 km.",
+    "Pour trouver une distance réelle : mesure à la latte sur la carte, multiplie par le nombre de l'échelle, puis convertis (100 000 cm = 1 km). Avec une échelle graphique (un petit trait gradué), reporte ce trait sur la distance à mesurer.",
+    "Plus le nombre sous le « 1 » est petit, plus la carte est détaillée et le territoire représenté petit : un plan de ville est à grande échelle (1/10 000), une carte de l'Europe à petite échelle (1/10 000 000)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "À 1/50 000, 4 cm sur la carte.",
+     "explication": "4 × 50 000 = 200 000 cm = 2 km."
+    },
+    {
+     "cas": "À 1/400 000, 6,5 cm entre Liège et Maastricht.",
+     "explication": "1 cm = 4 km, donc 26 km en ligne droite."
+    },
+    {
+     "cas": "Une carte à 1/1 000 000.",
+     "explication": "1 cm = 10 km : bien pour un pays entier."
+    },
+    {
+     "cas": "Un plan de quartier.",
+     "explication": "Grande échelle : on voit les rues et les maisons."
+    }
+   ],
+   "pieges": [
+    "Oublier de convertir les cm en m ou en km.",
+    "Se tromper de zéros : 1/25 000 donne 250 m, pas 25 km.",
+    "Mesurer en suivant la route quand on demande la distance en ligne droite.",
+    "Croire qu'une carte « à grande échelle » montre un grand territoire : c'est l'inverse."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 4,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "Échelle 1/400 000 : entre Liège et Maastricht, 6,5 cm sur la carte, soit 26 km en ligne droite."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-secteurs",
@@ -670,7 +984,38 @@
     "Tertiaire : on rend des services (enseignement, santé, commerce, transport, administration…)."
    ],
    "exemple": "Le pêcheur (primaire) → l'usine de conserves (secondaire) → le vendeur au magasin (tertiaire).",
-   "astuce": "Pose-toi la question : cette personne récolte-t-elle, fabrique-t-elle ou rend-elle un service ?"
+   "astuce": "Pose-toi la question : cette personne récolte-t-elle, fabrique-t-elle ou rend-elle un service ?",
+   "comprendre": [
+    "Les métiers sont rangés en trois secteurs d'activité. Le secteur primaire tire les ressources de la nature : agriculture, élevage, pêche, forêt, mines. Le secteur secondaire transforme ces matières premières ou construit : usines, artisans, bâtiment. Le secteur tertiaire rend des services : enseignement, santé, commerce, transport, banque, tourisme, administration.",
+    "Un même produit passe souvent par les trois secteurs : le blé est cultivé (primaire), transformé en farine puis en pain (secondaire), et vendu au magasin (tertiaire).",
+    "En Belgique, comme dans les autres pays riches, la plupart des travailleurs sont aujourd'hui dans le secteur tertiaire. Autrefois, la plupart des gens travaillaient la terre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le pêcheur, l'usine de conserves, le vendeur.",
+     "explication": "Primaire, secondaire, tertiaire."
+    },
+    {
+     "cas": "Une institutrice.",
+     "explication": "Elle rend un service : secteur tertiaire."
+    },
+    {
+     "cas": "Un menuisier qui fabrique une table.",
+     "explication": "Il transforme le bois : secteur secondaire."
+    },
+    {
+     "cas": "Un bucheron.",
+     "explication": "Il tire le bois de la forêt : secteur primaire."
+    }
+   ],
+   "pieges": [
+    "Classer un métier d'après le lieu de travail plutôt que d'après ce qu'il fait.",
+    "Croire que le transport est dans le secondaire : c'est un service, donc tertiaire.",
+    "Oublier que la construction (le bâtiment) est dans le secondaire.",
+    "Confondre l'agriculteur (primaire) et l'usine de transformation des aliments (secondaire)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les secteurs d'activité aident à comprendre les paysages industriels et la vie dans nos régions.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-paysages",
@@ -800,7 +1145,72 @@
     "Par l'air : avion, hélicoptère."
    ],
    "exemple": "La péniche transporte beaucoup de marchandises lourdes sur les canaux, lentement mais à bas prix.",
-   "astuce": "Demande-toi sur quoi roule, flotte ou vole le véhicule."
+   "astuce": "Demande-toi sur quoi roule, flotte ou vole le véhicule.",
+   "comprendre": [
+    "On transporte des personnes et des marchandises par la route (voiture, bus, camion), par le rail (train, tram), par l'eau (péniche, bateau, porte-conteneurs) et par les airs (avion). Chaque moyen a ses avantages : rapidité, prix, quantité transportée, pollution.",
+    "La péniche transporte beaucoup de marchandises lourdes à bas prix, mais lentement, et seulement là où il y a des voies navigables : fleuves, rivières aménagées et canaux. Le nord de la Belgique en a beaucoup ; l'Ardenne et la province de Luxembourg presque pas.",
+    "Pour savoir si on peut aller d'un endroit à un autre, lis la carte du bon réseau (routes, chemins de fer ou voies navigables) et sa légende : l'épaisseur du trait indique souvent l'importance de la voie."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Du charbon de Liège vers Anvers.",
+     "explication": "En péniche, par le canal Albert."
+    },
+    {
+     "cas": "Un voyage de Bruxelles à New York.",
+     "explication": "En avion : c'est le plus rapide pour traverser l'océan."
+    },
+    {
+     "cas": "Des conteneurs venant d'Asie.",
+     "explication": "Par porte-conteneurs, jusqu'au port d'Anvers."
+    },
+    {
+     "cas": "Liège, Namur, Dinant en train.",
+     "explication": "La ligne suit la vallée de la Meuse."
+    }
+   ],
+   "pieges": [
+    "Croire qu'on peut aller en péniche partout : il faut une voie navigable.",
+    "Lire la mauvaise carte (routes au lieu du rail).",
+    "Oublier la légende : un trait épais n'a pas le même sens qu'un trait fin.",
+    "Confondre train et tram : le tram roule en ville, souvent sur la route."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "6c"
+     ],
+     "libelle": "question 6c",
+     "texte": "Les grandes voies navigables (plus de 1 500 tonnes) sont nombreuses au nord, en Flandre, et absentes en Haute Belgique."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "3b"
+     ],
+     "libelle": "question 3b",
+     "texte": "Depuis Liège, les péniches pouvaient aller vers Anvers, les Pays-Bas, le Hainaut et la France, mais pas jusqu'à Arlon."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "5c"
+     ],
+     "libelle": "question 5c",
+     "texte": "Avec la carte des routes et celle des chemins de fer, on vérifie quels trajets sont possibles : Liège-Namur-Dinant en train, c'est vrai."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-moments-cles",
@@ -830,7 +1240,50 @@
     "Deux familles de langues : romanes, issues du latin (français, wallon, italien, espagnol…) et germaniques (néerlandais, allemand, anglais…)."
    ],
    "exemple": "Le tonneau est une invention gauloise adoptée par les Romains pour transporter le vin.",
-   "astuce": "Clovis = baptême (vers 496) ; Charlemagne = empereur (800). Ne les confonds pas !"
+   "astuce": "Clovis = baptême (vers 496) ; Charlemagne = empereur (800). Ne les confonds pas !",
+   "comprendre": [
+    "Vers 57-52 av. J.-C., Jules César conquiert la Gaule, où vivent les Celtes. Pendant près de cinq siècles, Celtes et Romains se mélangent : on parle des Gallo-Romains. Les Romains apportent le latin, l'écriture, les chaussées, les villas, les thermes, les tuiles et le chauffage par le sol. Les Celtes leur apportent notamment le tonneau.",
+    "Au 5e siècle, l'Empire romain d'Occident s'effondre (476). Les Francs, un peuple germanique, s'installent dans nos régions. Leur roi Clovis se fait baptiser vers 496, et Charlemagne est couronné empereur en 800. Le christianisme se répand et des monastères sont fondés.",
+    "Une trace du passé permet souvent de dater un mode de vie : une villa avec un hypocauste (chauffage sous le sol) est romaine ; un baptême de roi franc appartient au début du Moyen Âge."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "L'hypocauste.",
+     "explication": "Un chauffage romain : le feu du foyer chauffe l'air qui circule sous le sol, posé sur de petites piles de briques."
+    },
+    {
+     "cas": "Le tonneau.",
+     "explication": "Une invention celte, adoptée par les Romains pour transporter le vin."
+    },
+    {
+     "cas": "Une chaussée romaine comme celle de Bavay à Tongres.",
+     "explication": "Une route empierrée construite par les Romains pour relier les villes."
+    },
+    {
+     "cas": "Clovis et Charlemagne.",
+     "explication": "Clovis : baptême vers 496. Charlemagne : couronné empereur en 800."
+    }
+   ],
+   "pieges": [
+    "Confondre Clovis (baptême) et Charlemagne (empereur).",
+    "Croire que les Romains ont tout apporté : les Celtes aussi ont transmis des inventions.",
+    "Placer les Francs dans l'Antiquité romaine : ils s'installent surtout quand l'Empire s'effondre.",
+    "Oublier que les Gallo-Romains sont le mélange des Celtes et des Romains."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "Sur les vestiges d'un hypocauste, retrouver le foyer (praefurnium), les pilettes, le sol qu'elles soutiennent (suspensura) et les conduits dans les murs (tubuli)."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-migrations",
@@ -845,7 +1298,50 @@
     "Apports culturels : cuisine (pizza, couscous, döner kebab…), religions (islam, orthodoxie), langues, musique, fêtes."
    ],
    "exemple": "Le chanteur Salvatore Adamo, fils d'un mineur sicilien, est arrivé enfant en Belgique.",
-   "astuce": "Retiens 46 – 56 – 64 – 74 : Italie, Bois du Cazier, Maroc et Turquie, arrêt."
+   "astuce": "Retiens 46 – 56 – 64 – 74 : Italie, Bois du Cazier, Maroc et Turquie, arrêt.",
+   "comprendre": [
+    "Après la Seconde Guerre mondiale, la Belgique doit se reconstruire et produire beaucoup de charbon, mais il manque des ouvriers dans les mines. En 1946, elle signe un accord avec l'Italie : des travailleurs italiens viennent travailler dans les charbonnages belges.",
+    "D'autres accords suivent : l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). Le 8 aout 1956, la catastrophe du Bois du Cazier, à Marcinelle, près de Charleroi, fait 262 morts, dont 136 Italiens. En 1974, la Belgique arrête officiellement de faire venir des travailleurs étrangers.",
+    "Les immigrés rencontrent des difficultés : la langue, le logement (souvent des baraquements), la famille restée au pays, les préjugés. Beaucoup s'installent avec leur famille, et leurs enfants et petits-enfants sont aujourd'hui belges. Pour étudier ce sujet, il faut choisir des documents qui parlent vraiment des immigrés en Belgique."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "1946.",
+     "explication": "Accord avec l'Italie : des mineurs contre du charbon."
+    },
+    {
+     "cas": "Le Bois du Cazier.",
+     "explication": "Une mine de Marcinelle où 262 mineurs meurent en 1956 ; c'est aujourd'hui un lieu de mémoire."
+    },
+    {
+     "cas": "Le chanteur Salvatore Adamo.",
+     "explication": "Fils d'un mineur sicilien, arrivé enfant en Belgique."
+    },
+    {
+     "cas": "Une carte de l'Italie seule.",
+     "explication": "Elle ne suffit pas pour étudier les Italiens en Belgique."
+    }
+   ],
+   "pieges": [
+    "Croire que l'immigration a commencé seulement avec le Maroc et la Turquie : l'Italie vient d'abord, en 1946.",
+    "Confondre le Bois du Cazier (1956) et l'accord avec l'Italie (1946).",
+    "Choisir un document qui parle d'autres travailleurs ou d'un autre pays.",
+    "Oublier les raisons de cette immigration : le manque de mineurs et le besoin de charbon."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Pour un travail sur l'immigration italienne en Belgique après 1945, seul le graphique des Italiens vivant en Belgique convient : les autres documents parlent d'ouvriers belges, de l'Italie seule ou de travailleurs marocains."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-colonisations",
@@ -873,7 +1369,72 @@
     "Solutions : isoler les maisons, vélo, marche et transports en commun, énergies renouvelables (soleil, vent, eau), moins de gaspillage, produits locaux et de saison."
    ],
    "exemple": "Aller à l'école à vélo plutôt qu'en voiture évite de rejeter du CO₂.",
-   "astuce": "Cause = ce qui rejette des gaz ; conséquence = ce qui arrive à la planète ; solution = ce qui réduit les rejets."
+   "astuce": "Cause = ce qui rejette des gaz ; conséquence = ce qui arrive à la planète ; solution = ce qui réduit les rejets.",
+   "comprendre": [
+    "L'effet de serre est naturel : certains gaz de l'air retiennent une partie de la chaleur du Soleil, sans quoi la Terre serait glacée. Mais les activités humaines rejettent beaucoup plus de ces gaz, et la température moyenne de la Terre augmente : c'est le réchauffement climatique.",
+    "Les principales causes : le dioxyde de carbone (CO₂), rejeté quand on brule du charbon, du pétrole ou du gaz (voitures, chauffage, usines) et quand on détruit les forêts ; le méthane, rejeté surtout par l'élevage des ruminants. Les conséquences : fonte des glaciers, montée du niveau des mers, sécheresses et vagues de chaleur, animaux et plantes menacés.",
+    "Chacun peut agir : se déplacer à pied, à vélo ou en transports en commun, isoler les maisons, utiliser des énergies renouvelables, gaspiller moins. Au CEB, distingue bien une cause (ce qui rejette des gaz), une conséquence (ce qui arrive à la planète) et une solution (ce qui réduit les rejets)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des glaciers plus petits au 21e siècle qu'au 19e siècle.",
+     "explication": "Une conséquence : il fait en moyenne plus chaud."
+    },
+    {
+     "cas": "Aller à l'école à vélo plutôt qu'en voiture.",
+     "explication": "Une solution : le vélo ne rejette pas de CO₂."
+    },
+    {
+     "cas": "L'élevage de vaches.",
+     "explication": "Une cause : il rejette du méthane."
+    },
+    {
+     "cas": "La montée du niveau des mers.",
+     "explication": "Une conséquence : la fonte des glaces et l'eau qui se dilate en se réchauffant."
+    }
+   ],
+   "pieges": [
+    "Croire que l'effet de serre est mauvais en lui-même : c'est son renforcement qui pose problème.",
+    "Confondre cause, conséquence et solution.",
+    "Oublier le méthane parmi les gaz à effet de serre.",
+    "Croire qu'un glacier fond parce qu'il vieillit."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "10b"
+     ],
+     "libelle": "question 10b",
+     "texte": "Les glaciers ont reculé depuis le 19e siècle parce qu'il fait, en moyenne, plus chaud au 21e siècle."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "L'élevage produit surtout du méthane ; la voiture et le chauffage, du dioxyde de carbone."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "Remplacer la voiture par le vélo aide à lutter contre le réchauffement : on ne brule plus d'essence, on ne rejette plus de CO₂."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-population-monde",
@@ -902,7 +1463,61 @@
     "Le tropique du Cancer (au nord) et le tropique du Capricorne (au sud) limitent la zone chaude ; les cercles polaires arctique et antarctique entourent les zones froides."
    ],
    "exemple": "L'Europe est au nord de l'Afrique ; l'océan Atlantique les sépare de l'Amérique.",
-   "astuce": "Repère d'abord l'Europe et l'Afrique au centre de la carte, puis l'Amérique à gauche et l'Asie à droite."
+   "astuce": "Repère d'abord l'Europe et l'Afrique au centre de la carte, puis l'Amérique à gauche et l'Asie à droite.",
+   "comprendre": [
+    "Le planisphère est une carte du monde entier, à plat. On y repère 6 continents (Europe, Asie, Afrique, Amérique, Océanie, Antarctique) et 5 océans (Pacifique, Atlantique, Indien, Arctique, Austral). Le Pacifique est le plus grand.",
+    "Le plus souvent, l'Europe et l'Afrique sont au centre, l'Amérique à gauche et l'Asie à droite. Mais certains planisphères sont centrés sur l'océan Pacifique : l'Asie se retrouve alors à gauche et l'Amérique à droite. Regarde donc toujours la forme des continents avant de répondre.",
+    "Des lignes aident à se repérer : l'équateur partage la Terre en deux hémisphères ; les tropiques limitent la zone chaude ; les cercles polaires entourent les zones froides. Sur une carte quadrillée, on repère une case par une lettre et un chiffre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "L'Australie.",
+     "explication": "La grande ile en bas à droite, en Océanie."
+    },
+    {
+     "cas": "La Sibérie.",
+     "explication": "Le nord de l'Asie, en haut à droite."
+    },
+    {
+     "cas": "Le Niger.",
+     "explication": "Un pays d'Afrique, au sud du Sahara."
+    },
+    {
+     "cas": "Un planisphère centré sur le Pacifique.",
+     "explication": "L'Asie est à gauche, l'Amérique à droite."
+    }
+   ],
+   "pieges": [
+    "Croire que l'Europe est toujours au centre de la carte.",
+    "Confondre l'océan Austral et l'océan Arctique.",
+    "Prendre le Groenland, énorme sur beaucoup de planisphères, pour un continent.",
+    "Confondre l'Australie (un pays) et l'Océanie (un continent)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "5a"
+     ],
+     "libelle": "question 5a",
+     "texte": "Placer trois mines sur la carte du monde : l'or en Australie, le diamant en Sibérie (Asie), l'uranium au Niger (Afrique)."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "9c"
+     ],
+     "libelle": "question 9c",
+     "texte": "Sur le planisphère centré sur le Pacifique, l'Asie est à gauche et l'Amérique à droite."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-millenaires",
@@ -986,7 +1601,50 @@
     "Une vallée est un creux allongé creusé par un cours d'eau ; ses pentes sont les versants. L'altitude se mesure à partir du niveau de la mer."
    ],
    "exemple": "La Sambre est un affluent de la Meuse ; Namur est au confluent des deux.",
-   "astuce": "Basse Belgique = plaine (Flandre) ; haute Belgique = plateau (Ardenne). Le point le plus haut : Botrange, 694 m."
+   "astuce": "Basse Belgique = plaine (Flandre) ; haute Belgique = plateau (Ardenne). Le point le plus haut : Botrange, 694 m.",
+   "comprendre": [
+    "Le relief, c'est la forme du terrain. Une plaine est une surface plane et peu élevée. Un plateau est une surface assez plane, plus élevée, entaillée par des vallées. Une montagne a une altitude élevée et des pentes fortes. La Belgique a des plaines au nord-ouest et des plateaux au sud-est, mais pas de montagne.",
+    "Une vallée est un creux allongé creusé par un cours d'eau. Sa forme dépend du relief : dans une plaine, elle est large et à peine creusée ; dans un plateau, elle peut être profonde, avec des versants raides ; en montagne, les pentes sont très fortes.",
+    "Un cours d'eau nait à sa source, peut dessiner des méandres (de grandes boucles) et finit à son embouchure. L'embouchure d'un fleuve peut être un estuaire, un large entonnoir comme celui de l'Escaut, ou un delta, avec plusieurs bras comme le Nil."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La Flandre.",
+     "explication": "Une plaine : terrain plat et bas."
+    },
+    {
+     "cas": "L'Ardenne.",
+     "explication": "Un plateau, entaillé par des vallées comme celles de la Semois ou de l'Ourthe."
+    },
+    {
+     "cas": "La Semois, qui fait de grandes boucles.",
+     "explication": "Ce sont des méandres."
+    },
+    {
+     "cas": "Le Nil, qui se divise en plusieurs bras avant la mer.",
+     "explication": "C'est un delta."
+    }
+   ],
+   "pieges": [
+    "Dire que la Belgique a des montagnes.",
+    "Confondre plaine (basse) et plateau (plus haut, entaillé de vallées).",
+    "Confondre la source (le début) et l'embouchure (la fin).",
+    "Confondre estuaire (un seul large bras) et delta (plusieurs bras)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Relier chaque photo de vallée à son profil : des pentes très raides en montagne, une vallée à peine creusée dans un terrain presque plat, et une vallée plus profondément creusée."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-vues-aeriennes",
@@ -1000,7 +1658,83 @@
     "Habitat groupé (maisons serrées), dispersé (fermes isolées), linéaire (maisons le long d'une route)."
    ],
    "exemple": "Des champs en 1975 remplacés par des maisons en 2020 : un lotissement a été construit.",
-   "astuce": "Compare les deux vues case par case, comme dans un jeu des différences."
+   "astuce": "Compare les deux vues case par case, comme dans un jeu des différences.",
+   "comprendre": [
+    "Une vue aérienne est une photo prise d'en haut, depuis un avion, un hélicoptère ou un drone. On y voit le dessus des toits, la forme des champs, des rues et des bâtiments. Une photo prise au sol montre plutôt les façades, la pente du terrain, les panneaux et le ciel.",
+    "Pour comparer deux vues du même endroit à des dates différentes, lis d'abord les dates et la légende. Puis repère ce qui a changé (nouvelles maisons, routes, forêt abattue ou plantée) et ce qui est resté pareil (rivière, anciennes routes, église), comme dans un jeu des différences.",
+    "Pour relier une vue aérienne à un plan, oriente-les de la même façon : cherche un repère commun facile, comme une église, un carrefour ou une rivière, puis place le reste par rapport à lui."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des champs en 1975, des maisons en 2020.",
+     "explication": "Un lotissement a été construit : le paysage est devenu plus urbain."
+    },
+    {
+     "cas": "On voit le dessus des toits d'une usine et la ville au loin.",
+     "explication": "C'est une photo aérienne."
+    },
+    {
+     "cas": "On veut lire une plaque de rue ou voir la pente d'une route.",
+     "explication": "La photo prise au sol est plus utile."
+    },
+    {
+     "cas": "Le plan d'une villa romaine et sa photo aérienne.",
+     "explication": "On tourne le plan pour qu'il ait la même orientation que la photo, puis on repère chaque pièce."
+    }
+   ],
+   "pieges": [
+    "Comparer deux vues sans regarder leurs dates.",
+    "Oublier de tourner le plan dans le même sens que la photo.",
+    "Croire qu'une photo prise du haut d'une colline est une vue aérienne.",
+    "Chercher sur une vue aérienne un détail qu'on ne voit que du sol (un panneau, une façade)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 6,
+     "questions": [
+      "11a"
+     ],
+     "libelle": "question 11a",
+     "texte": "La vue aérienne montre le mieux les toits, les surfaces et les formes ; la vue au sol, la pente, les panneaux et les plaques de rue."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Pour placer les pièces de la villa gallo-romaine de Malagne sur la photo aérienne, on tourne d'abord le plan dans le même sens que la photo."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "6a"
+     ],
+     "libelle": "question 6a",
+     "texte": "Un paysage vu d'en haut, de très loin, avec le toit des usines : c'est une photo aérienne."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Sur la vue aérienne de l'abbaye de Villers-la-Ville, on repère d'abord l'église, puis les autres bâtiments autour du cloitre."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "hg-consommer",
