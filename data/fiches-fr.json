@@ -27,7 +27,50 @@
     "Forme négative : ne… pas, ne… jamais, ne… plus, ne… rien, personne ne…"
    ],
    "exemple": "Range ta chambre. (impérative) — Tu ne ranges pas ta chambre ? (interrogative, négative)",
-   "astuce": "Regarde le signe de fin, puis cherche une négation."
+   "astuce": "Regarde le signe de fin, puis cherche une négation.",
+   "comprendre": [
+    "Chaque phrase a un type, selon ce qu'elle veut faire. La phrase déclarative informe et finit par un point. La phrase interrogative pose une question et finit par un point d'interrogation. La phrase exclamative exprime un sentiment fort et finit par un point d'exclamation. La phrase impérative donne un ordre ou un conseil, sans sujet exprimé.",
+    "Chaque phrase a aussi une forme : affirmative ou négative. La forme négative se reconnait à deux petits mots autour du verbe : ne… pas, ne… jamais, ne… plus, ne… rien, ne… personne.",
+    "Pour analyser une phrase, regarde d'abord le signe de fin, puis cherche un verbe sans sujet (impératif), enfin cherche une négation. Une phrase impérative peut finir par un point d'exclamation sans être exclamative."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Range ta chambre. »",
+     "explication": "Impérative affirmative : un ordre, sans sujet."
+    },
+    {
+     "cas": "« Tu ne ranges pas ta chambre ? »",
+     "explication": "Interrogative négative."
+    },
+    {
+     "cas": "« Quelle belle journée ! »",
+     "explication": "Exclamative affirmative."
+    },
+    {
+     "cas": "« Regarde ! »",
+     "explication": "Impérative : il n'y a pas de sujet, même avec un point d'exclamation."
+    }
+   ],
+   "pieges": [
+    "Classer toute phrase qui finit par « ! » comme exclamative.",
+    "Oublier la forme (affirmative ou négative) quand on la demande aussi.",
+    "Ne pas voir le « ne » qui s'élide : « Il n'a rien vu » est négative.",
+    "Prendre « il n'y a que… » pour une vraie négation : la phrase veut dire « seulement »."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 4,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Pour chaque phrase, le type et la forme : une phrase qui donne un ordre avec « regarde » et finit par « ! » est impérative affirmative."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-ponctuation",
@@ -42,7 +85,38 @@
     "Les parenthèses ajoutent une précision ; les points de suspension créent du suspense."
    ],
    "exemple": "Hugo crie : « J'ai gagné ! » Voici les ingrédients : du lait, des œufs et de la farine.",
-   "astuce": "Lis la phrase à voix haute : la ponctuation marque les pauses et le ton."
+   "astuce": "Lis la phrase à voix haute : la ponctuation marque les pauses et le ton.",
+   "comprendre": [
+    "La ponctuation découpe le texte et donne le ton. Le point termine une phrase déclarative ; le point d'interrogation, une question ; le point d'exclamation, une phrase qui exprime un sentiment fort ou un ordre. Les points de suspension laissent une phrase inachevée ou créent du suspense.",
+    "La virgule sépare les éléments d'une énumération (des pommes, des poires et des prunes) et détache un complément ou une précision (Le matin, il court.). Les deux-points annoncent une énumération, une explication ou des paroles. Les parenthèses ajoutent une précision.",
+    "Dans un dialogue, les guillemets ouvrent et ferment les paroles ; le tiret signale qu'un autre personnage parle. Lire à voix haute aide à placer la ponctuation : elle marque les pauses et l'intonation."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Hugo crie : « J'ai gagné ! »",
+     "explication": "Les deux-points annoncent les paroles, les guillemets les encadrent, le point d'exclamation montre la joie."
+    },
+    {
+     "cas": "Voici les ingrédients : du lait, des œufs et de la farine.",
+     "explication": "Les deux-points annoncent une énumération, les virgules séparent les éléments."
+    },
+    {
+     "cas": "« Il ouvrit la porte et… rien. »",
+     "explication": "Les points de suspension créent du suspense."
+    },
+    {
+     "cas": "« Tu viens ? — Oui, j'arrive. »",
+     "explication": "Le tiret montre qu'un autre personnage répond."
+    }
+   ],
+   "pieges": [
+    "Oublier le point d'interrogation à la fin d'une question.",
+    "Mettre une virgule entre le sujet et le verbe (« Le chien, aboie »).",
+    "Oublier de fermer les guillemets.",
+    "Écrire une très longue phrase sans aucune ponctuation."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais la ponctuation compte dans toutes les productions écrites et aide à lire les dialogues.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-groupe-nominal",
@@ -121,7 +195,38 @@
     "-s, -x, -z : pas de changement."
    ],
    "exemple": "un cheval → des chevaux ; un clou → des clous ; un bijou → des bijoux.",
-   "astuce": "Apprends par cœur la liste des 7 mots en -ou : bijou, caillou, chou, genou, hibou, joujou, pou."
+   "astuce": "Apprends par cœur la liste des 7 mots en -ou : bijou, caillou, chou, genou, hibou, joujou, pou.",
+   "comprendre": [
+    "La plupart des noms et des adjectifs prennent un s au pluriel : un chien, des chiens ; un grand arbre, de grands arbres. Le s ne s'entend pas : c'est le déterminant (les, des, mes, ces) qui annonce le pluriel.",
+    "Certaines terminaisons ont leur propre règle. -eau, -au, -eu prennent un x (des bateaux, des jeux), sauf landau, pneu et bleu. -al devient -aux (des chevaux), sauf bal, carnaval, chacal, festival, récital, régal. -ou prend un s, sauf sept mots qui prennent un x : bijou, caillou, chou, genou, hibou, joujou, pou. -ail prend un s, sauf travail, vitrail, corail, émail (-aux).",
+    "Les mots qui finissent déjà par s, x ou z ne changent pas : un nez, des nez ; une croix, des croix. Pour bien accorder, cherche toujours le nom, puis le déterminant qui dit s'il y en a un ou plusieurs."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "un bijou → des bijoux ; un clou → des clous",
+     "explication": "Bijou fait partie des sept mots en -ou qui prennent un x ; clou prend un s."
+    },
+    {
+     "cas": "un festival → des festivals ; un journal → des journaux",
+     "explication": "Festival est une exception à la règle -al → -aux."
+    },
+    {
+     "cas": "un travail → des travaux ; un rail → des rails",
+     "explication": "Travail fait partie des exceptions en -ail."
+    },
+    {
+     "cas": "un bleu → des bleus ; un feu → des feux",
+     "explication": "Bleu est une exception en -eu."
+    }
+   ],
+   "pieges": [
+    "Oublier le s quand on ne l'entend pas.",
+    "Mettre un x à tous les mots en -ou (« des clouxs »).",
+    "Oublier les exceptions en -al (festivals, carnavals).",
+    "Ajouter un s à un mot qui finit déjà par s, x ou z."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais le pluriel compte dans toutes les productions écrites ; voir aussi la fiche « Pluriels et accords ».",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-feminin",
@@ -135,7 +240,38 @@
     "Quelques mots changent complètement : coq → poule, oncle → tante."
    ],
    "exemple": "un chanteur → une chanteuse ; un acteur → une actrice ; sportif → sportive.",
-   "astuce": "Écoute bien le féminin : on entend souvent la lettre finale (gros → grosse)."
+   "astuce": "Écoute bien le féminin : on entend souvent la lettre finale (gros → grosse).",
+   "comprendre": [
+    "Pour mettre un nom ou un adjectif au féminin, on ajoute le plus souvent un e : voisin → voisine, grand → grande. Si le mot finit déjà par e au masculin, il ne change pas : un élève, une élève ; rapide.",
+    "Certaines terminaisons changent : -er → -ère (boulanger, boulangère), -f → -ve (sportif, sportive), -x → -se (heureux, heureuse), -eur → -euse (chanteur, chanteuse) ou -trice (acteur, actrice). Parfois, la consonne finale double : bon → bonne, gentil → gentille, chat → chatte.",
+    "Quelques noms changent complètement : le coq et la poule, l'oncle et la tante, le cheval et la jument. Écoute le féminin à voix haute : on entend souvent la lettre finale qu'il faut écrire (gros → grosse)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "un acteur → une actrice ; un chanteur → une chanteuse",
+     "explication": "-eur devient -trice ou -euse : il faut les connaitre."
+    },
+    {
+     "cas": "sportif → sportive ; neuf → neuve",
+     "explication": "-f devient -ve."
+    },
+    {
+     "cas": "bon → bonne ; ancien → ancienne",
+     "explication": "La consonne finale double."
+    },
+    {
+     "cas": "un frère → une sœur",
+     "explication": "Un autre mot pour le féminin."
+    }
+   ],
+   "pieges": [
+    "Ajouter un e à un mot qui en a déjà un.",
+    "Oublier de doubler la consonne (« bone » au lieu de « bonne »).",
+    "Écrire « acteuse » au lieu d'« actrice ».",
+    "Oublier d'accorder les adjectifs avec un nom féminin."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais le féminin compte dans toutes les productions écrites et sert d'indice en lecture (« je suis allée »).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-accord-adjectif",
@@ -148,7 +284,38 @@
     "Un nom masculin + un nom féminin → masculin pluriel."
    ],
    "exemple": "des chaussures vertes ; Mes cousines sont contentes ; Le pull et la robe sont neufs.",
-   "astuce": "Pose la question « qui est-ce qui est… ? » pour trouver le nom avec lequel accorder."
+   "astuce": "Pose la question « qui est-ce qui est… ? » pour trouver le nom avec lequel accorder.",
+   "comprendre": [
+    "L'adjectif prend le genre et le nombre du nom qu'il accompagne : un pull vert, une robe verte, des chaussures vertes. Pour trouver ce nom, pose la question « qui est-ce qui est… ? ».",
+    "Après le verbe être (et sembler, paraitre, devenir, rester), l'adjectif est attribut du sujet : il s'accorde avec le sujet. « Mes cousines sont contentes. »",
+    "Si l'adjectif se rapporte à plusieurs noms, il se met au pluriel. Avec un nom masculin et un nom féminin, c'est le masculin pluriel qui l'emporte : « Le pull et la robe sont neufs. »"
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« des chaussures vertes »",
+     "explication": "« vertes » s'accorde avec « chaussures » : féminin pluriel."
+    },
+    {
+     "cas": "« Mes cousines sont contentes. »",
+     "explication": "Après « sont », accord avec le sujet « cousines »."
+    },
+    {
+     "cas": "« Le pull et la robe sont neufs. »",
+     "explication": "Masculin + féminin : masculin pluriel."
+    },
+    {
+     "cas": "« une boite de crayons cassée »",
+     "explication": "C'est la boite qui est cassée : accord avec « boite »."
+    }
+   ],
+   "pieges": [
+    "Accorder avec le nom le plus proche au lieu du bon nom.",
+    "Oublier l'accord après le verbe être.",
+    "Mettre au féminin quand un des noms est masculin.",
+    "Oublier les féminins particuliers (blanc → blanche, gentil → gentille)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'accord de l'adjectif compte dans toutes les productions écrites ; les accords servent aussi d'indices en lecture (fiche « Pluriels et accords »).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-accord-sujet-verbe",
@@ -161,7 +328,38 @@
     "« qui » a le nombre du nom qu'il reprend. Le, la, les, leur devant le verbe ne sont pas des sujets."
    ],
    "exemple": "Le chien des voisins aboie. Dans la mare vivent des grenouilles. Mon frère les aide.",
-   "astuce": "Encadre le sujet par « c'est … qui » ou « ce sont … qui »."
+   "astuce": "Encadre le sujet par « c'est … qui » ou « ce sont … qui ».",
+   "comprendre": [
+    "Le verbe conjugué s'accorde avec le noyau de son sujet, en personne et en nombre : le chien aboie, les chiens aboient. Pour trouver le sujet, encadre-le par « c'est… qui » ou « ce sont… qui » : ce sont les chiens qui aboient.",
+    "Attention aux pièges : le sujet peut être éloigné du verbe (« Les enfants de la classe de Léa chantent »), placé après lui (« Dans la mare vivent des grenouilles ») ou accompagné d'un complément du nom au singulier ou au pluriel. C'est toujours le noyau qui commande.",
+    "Les pronoms le, la, les, leur placés devant le verbe ne sont pas des sujets : « Mon frère les aide » (c'est mon frère qui aide). Le pronom qui a le nombre du nom qu'il reprend : « les élèves qui lisent »."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Le chien des voisins aboie. »",
+     "explication": "Le noyau est « chien » (singulier), pas « voisins »."
+    },
+    {
+     "cas": "« Dans la mare vivent des grenouilles. »",
+     "explication": "Le sujet « des grenouilles » est après le verbe : pluriel."
+    },
+    {
+     "cas": "« Mon frère les aide. »",
+     "explication": "« les » n'est pas le sujet : c'est mon frère qui aide."
+    },
+    {
+     "cas": "« C'est moi qui lis. »",
+     "explication": "« qui » reprend « moi » : le verbe est à la 1re personne."
+    }
+   ],
+   "pieges": [
+    "Accorder avec le nom le plus proche du verbe.",
+    "Prendre « les » ou « leur » devant le verbe pour le sujet.",
+    "Oublier d'accorder quand le sujet est après le verbe.",
+    "Oublier le -nt à la 3e personne du pluriel."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'accord du verbe compte dans toutes les productions écrites.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-participe-passe",
@@ -174,7 +372,83 @@
     "Un garçon et une fille : masculin pluriel (ils sont partis)."
    ],
    "exemple": "Léa est arrivée. Tom et Léa sont arrivés. Léa a mangé.",
-   "astuce": "Cherche d'abord l'auxiliaire, puis le sujet."
+   "astuce": "Cherche d'abord l'auxiliaire, puis le sujet.",
+   "comprendre": [
+    "Le participe passé est la forme du verbe qu'on trouve après un auxiliaire : il est parti, elle a mangé. Avec l'auxiliaire être, il s'accorde avec le sujet, comme un adjectif : Léa est arrivée, Tom et Léa sont arrivés.",
+    "Avec l'auxiliaire avoir, il ne s'accorde pas avec le sujet : elles ont mangé. Il s'accorde seulement si ce qu'on a mangé, vu, provoqué… est placé avant le verbe : « la pomme qu'elle a mangée », « il l'a provoquée ».",
+    "Ces accords sont des indices de lecture : un e ou un s à la fin du participe montre qui parle ou de qui on parle. Au CEB, on te demande souvent de recopier le mot qui le prouve."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Je suis allé voir ma grand-mère. »",
+     "explication": "Pas de e : c'est un garçon qui parle."
+    },
+    {
+     "cas": "« Je suis retournée dans ma chambre. »",
+     "explication": "Avec être, « retournée » s'accorde avec « je » : c'est une fille."
+    },
+    {
+     "cas": "« Elles ont mangé. »",
+     "explication": "Avec avoir, pas d'accord avec le sujet."
+    },
+    {
+     "cas": "« Il l'avait provoquée. »",
+     "explication": "Avec avoir, le participe s'accorde avec « l' » placé avant : il parle à une fille."
+    }
+   ],
+   "pieges": [
+    "Accorder avec le sujet quand l'auxiliaire est avoir.",
+    "Oublier l'accord avec être.",
+    "Mettre un e quand le sujet est masculin, ou oublier le s au pluriel.",
+    "Pour prouver qui parle, recopier un mot qui ne montre rien (le pronom « je » ne montre pas si c'est une fille ou un garçon)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 7,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "« Je suis allé » s'écrit sans e : celui qui parle est un garçon."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 7,
+     "questions": [
+      "19b"
+     ],
+     "libelle": "question 19b",
+     "texte": "« Je suis retournée » : le mot « retournée » prouve que c'est Cassie qui parle."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 9,
+     "questions": [
+      "20b"
+     ],
+     "libelle": "question 20b",
+     "texte": "« l'avait-il gentiment provoquée » : le mot « provoquée » prouve qu'il parle à une fille."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 9,
+     "questions": [
+      "17b"
+     ],
+     "libelle": "question 17b",
+     "texte": "« de m'être préparée » : le mot « préparée » montre que c'est une femme qui parle."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-e-er",
@@ -187,7 +461,38 @@
     "Avec vous : -ez. À l'imparfait : -ais (je, tu), -ait (il, elle, on)."
    ],
    "exemple": "Il faut ranger. J'ai rangé. Vous rangez. Il rangeait.",
-   "astuce": "Remplace par « vendre » ou « vendu » : vendre → -er ; vendu → -é."
+   "astuce": "Remplace par « vendre » ou « vendu » : vendre → -er ; vendu → -é.",
+   "comprendre": [
+    "Les terminaisons -é, -er, -ez, -ait se prononcent presque pareil. Pour choisir, il faut savoir quelle forme du verbe on écrit.",
+    "Après une préposition (à, de, pour, sans) ou après un autre verbe conjugué, on écrit l'infinitif en -er : il faut ranger, je vais manger, pour jouer. Après avoir ou être, on écrit le participe passé en -é, accordé si besoin : j'ai rangé, elle est arrivée. Avec vous, on écrit -ez : vous rangez. À l'imparfait, on écrit -ais (je, tu) ou -ait (il, elle, on) : il rangeait.",
+    "Le test le plus sûr : remplace le verbe par « vendre » ou « vendu ». Si « vendre » va, c'est -er ; si « vendu » va, c'est -é. Pour l'imparfait, « vendait » va."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Il faut ranger ta chambre. »",
+     "explication": "« Il faut vendre » : infinitif en -er."
+    },
+    {
+     "cas": "« J'ai rangé ma chambre. »",
+     "explication": "« J'ai vendu » : participe passé en -é."
+    },
+    {
+     "cas": "« Vous rangez vos affaires. »",
+     "explication": "Avec vous : -ez."
+    },
+    {
+     "cas": "« Elle rangeait toujours tout. »",
+     "explication": "« Elle vendait » : imparfait en -ait."
+    }
+   ],
+   "pieges": [
+    "Écrire « il va mangé » : après « va », c'est l'infinitif.",
+    "Écrire « j'ai manger » : après avoir, c'est le participe.",
+    "Oublier l'accord du participe avec être (elle est arrivée).",
+    "Confondre -ait (il) et -ais (je, tu)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ce choix revient dans chaque production écrite.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-orthographe-lexicale",
@@ -199,7 +504,38 @@
     "Beaucoup de mots courants ont des lettres muettes ou doubles : trottoir, girafe, hibou, automne."
    ],
    "exemple": "Il y a toujours beaucoup de monde sur le trottoir.",
-   "astuce": "Copie les mots difficiles et cache-les pour les réécrire."
+   "astuce": "Copie les mots difficiles et cache-les pour les réécrire.",
+   "comprendre": [
+    "L'orthographe lexicale, c'est la façon d'écrire les mots eux-mêmes, telle qu'on la trouve dans le dictionnaire. Elle ne s'explique pas toujours par une règle : il faut mémoriser les mots fréquents.",
+    "Les mots invariables ne changent jamais : beaucoup, toujours, jamais, souvent, parfois, pendant, depuis, longtemps, maintenant, aujourd'hui, ensuite, alors. Beaucoup de mots courants ont des lettres muettes (le d de pied) ou doubles (trottoir, appeler).",
+    "Pour retenir un mot : observe-le, épelle-le, cache-le, écris-le, puis vérifie. Les mots de la même famille aident souvent à trouver une lettre muette : grand → grandeur, donc un d à la fin ; chant → chanter, donc un t."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Il y a toujours beaucoup de monde. »",
+     "explication": "« toujours » s'écrit toujours avec un s final ; « beaucoup » n'en prend jamais."
+    },
+    {
+     "cas": "un chat → chaton ; un bord → border",
+     "explication": "Le mot de la même famille fait entendre la lettre muette."
+    },
+    {
+     "cas": "trottoir, girafe, hibou, automne",
+     "explication": "Des mots courants à connaitre : deux t et un seul r final dans « trottoir », un seul f dans « girafe », un m muet dans « automne »."
+    },
+    {
+     "cas": "l'orthographe rectifiée",
+     "explication": "Certaines graphies nouvelles sont acceptées : « ile » comme « île », « connaitre » comme « connaître »."
+    }
+   ],
+   "pieges": [
+    "Ajouter un s à un mot invariable (« beaucoups »).",
+    "Oublier une lettre muette qu'un mot de la même famille fait entendre.",
+    "Écrire un mot « comme il se prononce » sans vérifier.",
+    "Ne pas relire ses mots difficiles à la fin d'une production écrite."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'orthographe des mots compte dans toutes les productions écrites.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-temps-recit",
@@ -211,7 +547,61 @@
     "Conditionnel présent : radical du futur + -ais, -ais, -ait, -ions, -iez, -aient (je chanterais, nous irions)."
    ],
    "exemple": "Il ouvrit la porte et vit un dragon. Si j'étais riche, je voyagerais.",
-   "astuce": "Futur : je chanterai. Conditionnel : je chanterais (avec un s)."
+   "astuce": "Futur : je chanterai. Conditionnel : je chanterais (avec un s).",
+   "comprendre": [
+    "Le passé simple est le temps des récits écrits : il raconte des actions passées, courtes ou qui se suivent. À la 3e personne, il se termine par -a / -èrent pour les verbes en -er (il chanta, ils chantèrent), par -it / -irent (il finit, ils prirent), -ut / -urent (il voulut, ils voulurent) ou -int / -inrent (il vint, ils vinrent).",
+    "Dans un récit, le passé simple raconte les actions principales ; l'imparfait décrit le décor ou ce qui dure : « Il pleuvait (décor). Soudain, la porte s'ouvrit (action). »",
+    "Le conditionnel présent exprime une action possible, souhaitée ou soumise à une condition : « Si j'étais riche, je voyagerais. » On le forme avec le radical du futur et les terminaisons de l'imparfait : je chanterais, nous irions, ils pourraient."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Il ouvrit la porte et vit un dragon. »",
+     "explication": "Deux actions au passé simple, qui se suivent."
+    },
+    {
+     "cas": "« Si j'étais duchesse, je pourrais aller chez la reine. »",
+     "explication": "« pourrais » est au conditionnel : c'est une situation imaginée."
+    },
+    {
+     "cas": "je chanterai / je chanterais",
+     "explication": "Futur sans s, conditionnel avec s."
+    },
+    {
+     "cas": "« Elle prit son sac. »",
+     "explication": "Passé simple du verbe prendre."
+    }
+   ],
+   "pieges": [
+    "Confondre futur (je chanterai) et conditionnel (je chanterais).",
+    "Écrire « ils chantairent » au lieu de « ils chantèrent ».",
+    "Confondre passé simple (il finit) et présent (il finit) : seul le contexte du récit les distingue.",
+    "Mettre le conditionnel après « si » : on dit « si j'étais », pas « si je serais »."
+   ],
+   "miseAJour": "2026-10-31",
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 1,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "« commença », « jeta » et « avança » sont au passé simple ; « faisait » et « obligeait » à l'imparfait ; « s'était immobilisé » au plus-que-parfait."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 8,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "« accéda » et « retrouva » sont au passé simple ; « courraient », « pourrais » et « rendrais » au conditionnel présent, après « Si j'étais duchesse »."
+    }
+   ]
   },
   {
    "id": "fr-infinitif",
@@ -224,7 +614,38 @@
     "Pour le trouver, dis « il faut… » devant le verbe."
    ],
    "exemple": "nous prendrons → prendre ; il voulut → vouloir ; elles iraient → aller.",
-   "astuce": "Astuce : « Il faut … » → il faut prendre, il faut aller."
+   "astuce": "Astuce : « Il faut … » → il faut prendre, il faut aller.",
+   "comprendre": [
+    "L'infinitif est la forme du verbe qu'on trouve dans le dictionnaire, sans sujet et sans temps : manger, finir, prendre, vouloir. Il se termine par -er, -ir, -re ou -oir.",
+    "Pour retrouver l'infinitif d'un verbe conjugué, mets « il faut » devant : « nous prendrons » → il faut prendre ; « il voulut » → il faut vouloir ; « elles iraient » → il faut aller.",
+    "L'infinitif s'emploie aussi dans la phrase : après un autre verbe (je veux partir, on peut remarquer), après une préposition (pour lire, sans parler) ou pour donner une consigne (Casser le chocolat, Ne pas toucher)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« nous prendrons »",
+     "explication": "Il faut prendre : l'infinitif est « prendre »."
+    },
+    {
+     "cas": "« elles iraient »",
+     "explication": "Il faut aller : l'infinitif est « aller », même si on n'entend plus le radical."
+    },
+    {
+     "cas": "« On peut remarquer… »",
+     "explication": "« remarquer » est à l'infinitif, après le verbe « peut »."
+    },
+    {
+     "cas": "« Casser le chocolat en morceaux. »",
+     "explication": "Une consigne de recette à l'infinitif."
+    }
+   ],
+   "pieges": [
+    "Confondre l'infinitif (manger) et le participe passé (mangé) : remplace par « prendre » / « pris » pour vérifier.",
+    "Donner une forme conjuguée au lieu de l'infinitif.",
+    "Se tromper pour les verbes irréguliers (« il fut » → être ; « il eut » → avoir).",
+    "Oublier qu'après une préposition, le verbe est à l'infinitif (pour jouer)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; l'infinitif est aussi interrogé dans la fiche « Les modes du verbe » (CEB 2026 : « remarquer »).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-auxiliaires",
@@ -237,7 +658,38 @@
     "Les verbes pronominaux (se laver, s'amuser…) se conjuguent avec être."
    ],
    "exemple": "Elle est tombée. Il a couru. Nous nous sommes amusés.",
-   "astuce": "Courir et marcher se conjuguent avec avoir : il a couru, il a marché."
+   "astuce": "Courir et marcher se conjuguent avec avoir : il a couru, il a marché.",
+   "comprendre": [
+    "Aux temps composés (passé composé, plus-que-parfait…), on utilise un auxiliaire : avoir ou être. La grande majorité des verbes se conjuguent avec avoir : j'ai mangé, il a couru, nous avons fini.",
+    "Quelques verbes, qui expriment surtout un déplacement ou un changement d'état, se conjuguent avec être : aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, naitre, mourir, devenir, revenir. Tous les verbes pronominaux aussi : se laver, s'amuser, se lever.",
+    "Le choix compte pour l'accord : avec être, le participe passé s'accorde avec le sujet (elle est tombée) ; avec avoir, pas avec le sujet (elle a couru)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Elle est tombée. »",
+     "explication": "Tomber se conjugue avec être : accord avec « elle »."
+    },
+    {
+     "cas": "« Il a couru. »",
+     "explication": "Courir, comme marcher, se conjugue avec avoir."
+    },
+    {
+     "cas": "« Nous nous sommes amusés. »",
+     "explication": "Verbe pronominal : auxiliaire être."
+    },
+    {
+     "cas": "« Ils sont partis tôt. »",
+     "explication": "Partir se conjugue avec être : accord au masculin pluriel."
+    }
+   ],
+   "pieges": [
+    "Dire « j'ai tombé » ou « il a venu ».",
+    "Croire que tous les verbes de mouvement prennent être : courir, marcher, sauter prennent avoir.",
+    "Oublier l'auxiliaire être avec les verbes pronominaux.",
+    "Accorder le participe avec le sujet quand l'auxiliaire est avoir."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; le choix de l'auxiliaire est aussi travaillé dans les fiches « Le passé composé » et « Accord du participe passé ».",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-synonymes",
@@ -249,7 +701,94 @@
     "On les utilise pour éviter les répétitions."
    ],
    "exemple": "content = joyeux = ravi ; commencer = débuter.",
-   "astuce": "Remplace le mot dans une phrase : si le sens reste le même, c'est un synonyme."
+   "astuce": "Remplace le mot dans une phrase : si le sens reste le même, c'est un synonyme.",
+   "comprendre": [
+    "Des synonymes sont des mots de même classe qui ont un sens très proche : commencer et débuter, content et ravi. On les emploie pour éviter de répéter le même mot.",
+    "Un mot a souvent plusieurs sens : son synonyme dépend de la phrase. « Une faculté de ton cerveau », c'est une capacité ; « une faculté de médecine », c'est une partie de l'université. Lis donc toujours la phrase entière.",
+    "Méthode : remplace le mot par ta proposition. Si la phrase garde le même sens, c'est le bon synonyme. Garde la même classe : un verbe se remplace par un verbe, un adjectif par un adjectif."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Une consommation modérée »",
+     "explication": "Mesurée, raisonnable. « Régulière » parle de la fréquence, pas de la quantité."
+    },
+    {
+     "cas": "« Ajuster la taille des caractères »",
+     "explication": "Adapter, régler."
+    },
+    {
+     "cas": "« Un spectacle insolite »",
+     "explication": "Inhabituel, étonnant."
+    },
+    {
+     "cas": "« Il dit avec orgueil »",
+     "explication": "Avec fierté. Le contraire serait la modestie."
+    }
+   ],
+   "pieges": [
+    "Choisir un mot qui ressemble par la forme : « faculté » n'est pas « facilité ».",
+    "Choisir le contraire : « modérée » n'est pas « excessive ».",
+    "Changer de classe : remplacer un adjectif par un nom.",
+    "Oublier la phrase quand le mot a plusieurs sens."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 1,
+     "questions": [
+      "13"
+     ],
+     "libelle": "question 13",
+     "texte": "« Orgueil » peut être remplacé par « fierté »."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 4,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "« Ajuster » veut dire adapter, régler."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 4,
+     "questions": [
+      "20"
+     ],
+     "libelle": "question 20",
+     "texte": "« Insolite » peut être remplacé par « inhabituelle »."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 8,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Une consommation « modérée » est une consommation mesurée."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 8,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "« Faculté » veut dire ici « capacité »."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-antonymes",
@@ -261,7 +800,38 @@
     "On peut les former avec un préfixe : in-, im-, il-, ir-, dé-, dés-, mal-, mé-."
    ],
    "exemple": "possible → impossible ; heureux → malheureux ; lisible → illisible.",
-   "astuce": "Devant b, m, p : im- (impossible). Devant l : il-. Devant r : ir-."
+   "astuce": "Devant b, m, p : im- (impossible). Devant l : il-. Devant r : ir-.",
+   "comprendre": [
+    "Des antonymes sont des mots de même classe qui ont un sens contraire : grand et petit, ouvrir et fermer, la joie et la tristesse. Un mot peut avoir plusieurs antonymes selon son sens : un pain frais / rassis, un temps frais / chaud.",
+    "Beaucoup d'antonymes se forment avec un préfixe : in- (inutile), im- devant b, m, p (impossible, immobile), il- devant l (illisible), ir- devant r (irrégulier), dé- ou dés- (défaire, désordre), mal- (malheureux), mé- (mécontent).",
+    "Pour vérifier, mets l'antonyme dans la phrase : elle doit dire le contraire. Garde la même classe : un adjectif a pour contraire un adjectif."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "possible → impossible ; lisible → illisible ; régulier → irrégulier",
+     "explication": "Le préfixe change selon la lettre qui suit : im- devant p, il- devant l, ir- devant r."
+    },
+    {
+     "cas": "« positif » et « négatif »",
+     "explication": "Deux adjectifs de sens contraire."
+    },
+    {
+     "cas": "un pain frais, un temps frais",
+     "explication": "Le contraire change avec le sens : rassis pour le pain, chaud pour le temps."
+    },
+    {
+     "cas": "heureux → malheureux",
+     "explication": "Le préfixe mal- donne le sens contraire."
+    }
+   ],
+   "pieges": [
+    "Ajouter un préfixe qui n'existe pas (« inpossible », « délisible »).",
+    "Donner un mot d'une autre classe (le contraire de « rapide » n'est pas « lenteur »).",
+    "Choisir un mot simplement différent au lieu d'un mot contraire.",
+    "Oublier que le contraire dépend du sens du mot dans la phrase."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; les antonymes sont aussi travaillés dans la fiche « Le vocabulaire » (CEB 2026 : « positif » et « négatif »).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-familles-mots",
@@ -273,7 +843,94 @@
     "Attention aux faux amis : ils se ressemblent mais n'ont pas le même sens (ventre n'est pas de la famille de vent)."
    ],
    "exemple": "terre : terrain, enterrer, souterrain, atterrir.",
-   "astuce": "Demande-toi si le sens du mot de base se retrouve dans le mot."
+   "astuce": "Demande-toi si le sens du mot de base se retrouve dans le mot.",
+   "comprendre": [
+    "Une famille de mots regroupe des mots construits à partir du même radical, la partie commune qui porte le sens : terre, terrain, enterrer, souterrain. On les fabrique en ajoutant au radical un préfixe au début (en-, sous-, re-) ou un suffixe à la fin (-ment, -tion, -eur, -able).",
+    "Au CEB, on te demande souvent de transformer un verbe en nom de la même famille : consulter → la consultation, équiper → l'équipement, créer → la création. Le déterminant donné t'aide : « la » demande un nom féminin.",
+    "Pour vérifier, demande-toi si le sens du mot de base se retrouve dans le mot. « Ventre » ressemble à « vent », mais ne parle pas du vent : ce n'est pas la même famille. Un mot inventé, ou le même mot au féminin ou au pluriel, ne compte pas."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "dent → dentiste, dentifrice, dentaire, édenté",
+     "explication": "On retrouve partout le sens de « dent »."
+    },
+    {
+     "cas": "sensation → sens, sentir, sensible, sensationnel",
+     "explication": "Ces mots partagent le radical « sens »."
+    },
+    {
+     "cas": "se situer → la situation ; inventer → l'invention",
+     "explication": "Le verbe devient un nom de la même famille."
+    },
+    {
+     "cas": "terre et terrible",
+     "explication": "Pas de la même famille : « terrible » vient de « terreur », il ne parle pas de la terre."
+    }
+   ],
+   "pieges": [
+    "Se fier seulement à la ressemblance : « chaton » et « château » n'ont pas le même sens.",
+    "Inventer un mot qui n'existe pas (« renouvelage », « émerveillation »).",
+    "Donner le même mot au féminin ou au pluriel.",
+    "Oublier une lettre en formant le mot : renouveler → renouvellement, avec deux l."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 4,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "Se situer → la situation ; inventer → l'invention ; créer → la création."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 4,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Consulter → la consultation ; copier → la copie."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 4,
+     "questions": [
+      "22"
+     ],
+     "libelle": "question 22",
+     "texte": "Renouveler → renouvellement ou nouveau ; émerveillement → émerveiller, merveille, merveilleux. Les mots inventés sont refusés."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 8,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "Dégustation → déguster ; tranchant → trancher, une tranche."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 8,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "Sensation → sensationnel, sens, sentir, sensible."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-prefixes-suffixes",
@@ -299,7 +956,50 @@
     "Le mot spécifique est plus précis : pomme, marteau, chaise…"
    ],
    "exemple": "fruit → pomme, poire, banane.",
-   "astuce": "Demande-toi : « c'est un… quoi ? »"
+   "astuce": "Demande-toi : « c'est un… quoi ? »",
+   "comprendre": [
+    "Un mot générique désigne une catégorie, une famille de choses : fruit, outil, meuble, véhicule, jeu. Un mot spécifique désigne un élément précis de cette catégorie : pomme, marteau, chaise, vélo, diabolo.",
+    "Pour trouver le mot générique, demande-toi : « c'est un… quoi ? ». La pomme est un fruit ; le marteau est un outil. Un mot peut être spécifique par rapport à un autre et générique par rapport à un troisième : animal → oiseau → mésange.",
+    "Dans un texte, l'auteur utilise souvent le mot générique pour ne pas répéter le mot spécifique : « Léa a acheté des tulipes. Ces fleurs embaument la maison. » C'est une façon de reprendre un mot."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le diabolo.",
+     "explication": "Un jeu d'adresse : c'est la catégorie à laquelle il appartient."
+    },
+    {
+     "cas": "fruit → pomme, poire, banane",
+     "explication": "« fruit » est le mot générique ; les autres sont spécifiques."
+    },
+    {
+     "cas": "animal → oiseau → mésange",
+     "explication": "« oiseau » est spécifique par rapport à « animal », mais générique par rapport à « mésange »."
+    },
+    {
+     "cas": "« J'ai vu un chevreuil. L'animal s'est enfui. »",
+     "explication": "« L'animal » reprend « un chevreuil » avec un mot générique."
+    }
+   ],
+   "pieges": [
+    "Inverser générique et spécifique.",
+    "Choisir une catégorie trop large (« une chose ») quand le texte en donne une précise.",
+    "Ne pas reconnaitre un mot générique qui reprend un nom dans un texte.",
+    "Mélanger des catégories : la tomate est un fruit pour le botaniste, mais un légume à la cuisine."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 1,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "Le diabolo appartient à la catégorie des jeux d'adresse."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-sens-mots",
@@ -323,7 +1023,72 @@
     "Il ne faut pas la comprendre mot à mot."
    ],
    "exemple": "avoir un poil dans la main = être paresseux.",
-   "astuce": "Imagine la scène : l'image t'aide souvent à comprendre le sens."
+   "astuce": "Imagine la scène : l'image t'aide souvent à comprendre le sens.",
+   "comprendre": [
+    "Une expression est un groupe de mots qui a un sens imagé : on ne peut pas la comprendre mot à mot. « Avoir un poil dans la main » ne parle ni de poil ni de main : cela veut dire être paresseux.",
+    "Pour trouver le sens : 1) imagine la scène, l'image aide souvent ; 2) relis la phrase autour, le contexte montre si c'est positif ou négatif ; 3) remplace l'expression par ta proposition : la phrase doit garder son sens.",
+    "Au CEB, on te demande aussi de repérer, dans un texte, plusieurs passages qui veulent dire la même chose, ou d'expliquer une expression avec tes mots."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Se gonfler d'orgueil »",
+     "explication": "Devenir très fier, se croire supérieur. Personne ne grossit !"
+    },
+    {
+     "cas": "« Avoir froid dans le dos »",
+     "explication": "Avoir peur."
+    },
+    {
+     "cas": "« Tomber des nues »",
+     "explication": "Être très surpris."
+    },
+    {
+     "cas": "« Mettre la main à la pâte »",
+     "explication": "Participer au travail."
+    }
+   ],
+   "pieges": [
+    "Comprendre l'expression au sens propre, mot à mot.",
+    "Choisir une proposition qui reprend un mot de l'expression plutôt que son sens.",
+    "Oublier de vérifier avec la phrase autour.",
+    "Confondre une expression imagée et un simple mot difficile."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 6,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "« Le juge est devenu fou » et « son esprit est dérangé » disent la même chose : il a perdu la raison."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 1,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "« Un cavalier accompli » est un cavalier expérimenté."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 1,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "« Se gonfler d'orgueil » veut dire se sentir fier et supérieur."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-niveaux-langue",
@@ -336,7 +1101,38 @@
     "Soutenu : à l'écrit ou dans les occasions spéciales (une automobile, se sustenter)."
    ],
    "exemple": "un bouquin (familier) / un livre (courant) / un ouvrage (soutenu).",
-   "astuce": "À l'école et dans une rédaction, utilise le langage courant."
+   "astuce": "À l'école et dans une rédaction, utilise le langage courant.",
+   "comprendre": [
+    "On ne parle pas de la même façon à un ami, à un professeur ou dans un discours. Le langage familier s'utilise entre proches (une bagnole, bouffer, c'est super). Le langage courant convient à presque toutes les situations (une voiture, manger). Le langage soutenu s'emploie à l'écrit ou dans les grandes occasions (une automobile, se restaurer).",
+    "Le niveau de langue se voit dans le vocabulaire, mais aussi dans la construction des phrases : « T'as vu ? » (familier), « As-tu vu ? » (soutenu), « Est-ce que tu as vu ? » (courant).",
+    "À l'école, dans une rédaction ou une lettre, on utilise le langage courant. Dans un récit, un auteur peut faire parler un personnage en langage familier pour le rendre vivant."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "un bouquin / un livre / un ouvrage",
+     "explication": "Familier, courant, soutenu."
+    },
+    {
+     "cas": "« J'ai la flemme. »",
+     "explication": "Familier ; en courant : « Je n'ai pas envie. »"
+    },
+    {
+     "cas": "« Je vous prie d'agréer mes salutations distinguées. »",
+     "explication": "Soutenu : une formule de lettre officielle."
+    },
+    {
+     "cas": "« T'inquiète ! »",
+     "explication": "Familier, il manque « ne » et « pas » : « Ne t'inquiète pas. »"
+    }
+   ],
+   "pieges": [
+    "Écrire en langage familier dans une rédaction.",
+    "Croire qu'un mot familier est une faute : il convient entre amis.",
+    "Oublier que la construction de la phrase compte aussi.",
+    "Confondre langage soutenu et mots compliqués inutiles."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais le niveau de langue compte dans chaque production écrite.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-ordre-alphabetique",
@@ -349,7 +1145,38 @@
     "Les accents ne comptent pas pour ranger les mots."
    ],
    "exemple": "baleine → banane → bateau → bijou.",
-   "astuce": "Récite l'alphabet en pointant les lettres."
+   "astuce": "Récite l'alphabet en pointant les lettres.",
+   "comprendre": [
+    "Les mots du dictionnaire, d'un index ou d'un glossaire sont rangés dans l'ordre de l'alphabet. On compare d'abord la 1re lettre ; si elle est la même, on compare la 2e, puis la 3e, et ainsi de suite.",
+    "Les accents et les majuscules ne changent pas l'ordre : « école » se range comme « ecole ». Un mot court passe avant un mot plus long qui commence pareil : « mer » avant « merci ».",
+    "Pour chercher vite dans un dictionnaire, ouvre-le à peu près au bon endroit (le m est vers le milieu), puis utilise les mots repères écrits en haut des pages : ils indiquent le premier et le dernier mot de la page."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "baleine, banane, bateau, bijou",
+     "explication": "Même 1re lettre : on compare la 2e (a, a, a, i), puis la 3e (l, n, t)."
+    },
+    {
+     "cas": "mer et merci",
+     "explication": "« mer » passe avant : il est plus court et commence pareil."
+    },
+    {
+     "cas": "été et étoile",
+     "explication": "On compare é-t-é et é-t-o : « e » vient avant « o », donc « été » d'abord."
+    },
+    {
+     "cas": "Mots repères « cadeau – calme » en haut de la page.",
+     "explication": "Le mot « café » est sur cette page : il se range entre les deux."
+    }
+   ],
+   "pieges": [
+    "Ne regarder que la 1re lettre.",
+    "Croire que les accents changent l'ordre.",
+    "Ranger un mot long avant un mot court qui commence pareil.",
+    "Oublier les mots repères en haut des pages du dictionnaire."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'ordre alphabétique sert chaque fois qu'on cherche dans un dictionnaire ou un index.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-connecteurs",
@@ -423,7 +1250,7 @@
     },
     {
      "cas": "Le narrateur dit « je » et sa sœur l'appelle par son prénom.",
-     "explication": "Le narrateur est un personnage de l'histoire, et on connaît son nom."
+     "explication": "Le narrateur est un personnage de l'histoire, et on connait son nom."
     }
    ],
    "pieges": [
@@ -511,7 +1338,38 @@
     "-cer, -ger : ç ou ge devant a et o (nous commençons, je mangeais)."
    ],
    "exemple": "Je jette, nous jetons. J'achète, nous achetons. Je nettoie, nous nettoyons.",
-   "astuce": "Le radical change seulement quand la syllabe suivante est muette : je, tu, il, ils au présent, et tout le futur."
+   "astuce": "Le radical change seulement quand la syllabe suivante est muette : je, tu, il, ils au présent, et tout le futur.",
+   "comprendre": [
+    "Certains verbes en -er changent un peu leur radical quand la syllabe suivante est muette, c'est-à-dire avec je, tu, il, ils au présent, et à toutes les personnes du futur et du conditionnel.",
+    "Appeler et jeter doublent leur consonne : j'appelle, je jetterai, mais nous appelons. Acheter, lever, peser, mener prennent un accent grave : j'achète, je lèverai, mais nous achetons. Céder, répéter, espérer changent é en è au présent : je cède, mais nous cédons. Les verbes en -oyer et -uyer changent y en i : je nettoie, j'essuierai.",
+    "Les verbes en -cer et -ger gardent le son du radical devant a et o : nous commençons (ç), nous mangeons (e). Envoyer a un futur particulier : j'enverrai."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "je jette / nous jetons",
+     "explication": "Deux t devant le e muet, un seul quand la syllabe se prononce."
+    },
+    {
+     "cas": "j'achète / nous achetons",
+     "explication": "Accent grave devant le e muet."
+    },
+    {
+     "cas": "je nettoie / nous nettoyons",
+     "explication": "y devient i devant le e muet."
+    },
+    {
+     "cas": "nous commençons / nous mangeons",
+     "explication": "Le ç et le e gardent les sons « s » et « j »."
+    }
+   ],
+   "pieges": [
+    "Doubler la consonne avec nous et vous (« nous appellons »).",
+    "Oublier l'accent grave (« j'achete »).",
+    "Écrire « je nettoye » au lieu de « je nettoie ».",
+    "Écrire « nous mangons » ou « nous commencons »."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces verbes très courants reviennent dans toutes les productions écrites.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-relire",
@@ -526,7 +1384,38 @@
     "-é ou -er : remplace par « vendu » ou « vendre »."
    ],
    "exemple": "Les fleurs du jardin sentent bon. Ma sœur est partie à la mer.",
-   "astuce": "Relis la phrase plusieurs fois, en cherchant à chaque fois un seul type d'erreur."
+   "astuce": "Relis la phrase plusieurs fois, en cherchant à chaque fois un seul type d'erreur.",
+   "comprendre": [
+    "Relire son texte, c'est chercher les erreurs avant de le rendre. Relis plusieurs fois, en cherchant à chaque fois un seul type d'erreur : d'abord le sens, puis les accords, puis les homophones, enfin les mots difficiles.",
+    "Les accords : le verbe avec son sujet (c'est… qui) ; le déterminant et l'adjectif avec le nom ; le participe passé avec être. Les homophones : a / à (avait), et / est (était), son / sont (étaient), ces / ses. Pour -é ou -er, remplace par « vendu » ou « vendre ».",
+    "Vérifie aussi les majuscules au début des phrases et aux noms propres, et la ponctuation. Dans une production écrite au CEB, l'orthographe et la présentation font partie des critères."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Les fleur du jardin sent bon. »",
+     "explication": "Corrigé : « Les fleurs du jardin sentent bon. » Le nom et le verbe au pluriel."
+    },
+    {
+     "cas": "« Ma sœur est parti a la mer. »",
+     "explication": "Corrigé : « Ma sœur est partie à la mer. » Accord avec être, et « à »."
+    },
+    {
+     "cas": "« Il va mangé. »",
+     "explication": "Corrigé : « Il va manger. » On peut dire « il va vendre »."
+    },
+    {
+     "cas": "« Ils son contents. »",
+     "explication": "Corrigé : « Ils sont contents. » On peut dire « ils étaient »."
+    }
+   ],
+   "pieges": [
+    "Tout relire une seule fois en cherchant tout en même temps.",
+    "Oublier les accords dans le groupe nominal.",
+    "Se fier à l'oreille pour les homophones.",
+    "Oublier les majuscules et les points."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais relire sert à chaque production écrite et à chaque réponse rédigée.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-epithete-cn",
@@ -569,7 +1458,38 @@
     "Attention : lent se termine par -ent mais suit la règle générale : lente → lentement."
    ],
    "exemple": "Papa conduit prudemment. Les enfants entrent bruyamment.",
-   "astuce": "-ant donne -amment avec un a, -ent donne -emment avec un e : la voyelle de l'adjectif se garde."
+   "astuce": "-ant donne -amment avec un a, -ent donne -emment avec un e : la voyelle de l'adjectif se garde.",
+   "comprendre": [
+    "Beaucoup d'adverbes se forment à partir d'un adjectif et de la terminaison -ment. En général, on part de l'adjectif au féminin : lent → lente → lentement ; doux → douce → doucement.",
+    "Si l'adjectif se termine par une voyelle au masculin (i, u, é, ai), on part du masculin : vrai → vraiment, poli → poliment, absolu → absolument. Les adjectifs en -ant donnent -amment (bruyant → bruyamment) ; ceux en -ent donnent -emment (prudent → prudemment), qui se prononce aussi « amment ».",
+    "Quelques adverbes sont à retenir : gentil → gentiment, bref → brièvement, énorme → énormément, précis → précisément. L'adverbe est invariable : il ne prend jamais de e ni de s."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Papa conduit prudemment. »",
+     "explication": "prudent → prudemment, avec -emment."
+    },
+    {
+     "cas": "« Les enfants entrent bruyamment. »",
+     "explication": "bruyant → bruyamment, avec -amment."
+    },
+    {
+     "cas": "heureux → heureusement",
+     "explication": "On part du féminin, heureuse."
+    },
+    {
+     "cas": "poli → poliment",
+     "explication": "L'adjectif finit par une voyelle : on part du masculin."
+    }
+   ],
+   "pieges": [
+    "Écrire « prudament » ou « bruyemment » : -ent donne -emment, -ant donne -amment.",
+    "Partir du féminin quand l'adjectif finit par une voyelle (« vraiement »).",
+    "Écrire « gentillement » au lieu de « gentiment ».",
+    "Accorder l'adverbe."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; reconnaitre un adverbe en -ment est travaillé dans la fiche « Les classes de mots » (CEB 2025 : « ardemment »).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-pp-sans-aux-cd",
@@ -583,7 +1503,50 @@
     "Si le complément direct est après le verbe, pas d'accord : j'ai acheté des pommes."
    ],
    "exemple": "La lettre que Léa a écrite est sur mon bureau. Léa a écrit une lettre.",
-   "astuce": "Avec avoir, pose la question « quoi ? » : si la réponse (que, l', les…) est avant le verbe, accorde."
+   "astuce": "Avec avoir, pose la question « quoi ? » : si la réponse (que, l', les…) est avant le verbe, accorde.",
+   "comprendre": [
+    "Employé sans auxiliaire, le participe passé se comporte comme un adjectif : il s'accorde avec le nom qu'il accompagne. Des feuilles tombées, une porte fermée, des enfants fatigués.",
+    "Avec l'auxiliaire avoir, il ne s'accorde jamais avec le sujet. Mais il s'accorde avec le complément direct (ce qu'on a fait, vu, acheté…) si celui-ci est placé avant le verbe : « les pommes que j'ai achetées », « ces fleurs, je les ai cueillies ». Si le complément est après le verbe, pas d'accord : « j'ai acheté des pommes ».",
+    "Méthode : après avoir, pose la question « quoi ? » ou « qui ? ». Si la réponse est un mot placé avant le verbe (que, l', la, les, me, te, nous), accorde avec ce qu'il remplace."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« La lettre que Léa a écrite est sur mon bureau. »",
+     "explication": "Écrit quoi ? « que » = la lettre, placé avant : féminin singulier."
+    },
+    {
+     "cas": "« Léa a écrit une lettre. »",
+     "explication": "Le complément est après le verbe : pas d'accord."
+    },
+    {
+     "cas": "« Il l'avait provoquée. »",
+     "explication": "Provoqué qui ? « l' » = Nour, placé avant : accord au féminin."
+    },
+    {
+     "cas": "« des feuilles tombées »",
+     "explication": "Sans auxiliaire : accord avec « feuilles »."
+    }
+   ],
+   "pieges": [
+    "Accorder avec le sujet quand l'auxiliaire est avoir.",
+    "Accorder alors que le complément est après le verbe.",
+    "Oublier l'accord quand le complément est un pronom placé avant (l', les).",
+    "Oublier d'accorder un participe employé seul, comme un adjectif."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 9,
+     "questions": [
+      "20b"
+     ],
+     "libelle": "question 20b",
+     "texte": "« l'avait-il gentiment provoquée » : avec avoir, « provoquée » s'accorde avec « l' » placé avant, qui désigne une fille."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-determinants-pronoms",
@@ -785,7 +1748,38 @@
     "Relis la question : que dois-tu écrire exactement (un mot, un nombre…) ?"
    ],
    "exemple": "1. Garde les noms d'animaux. 2. Prends le premier dans l'ordre alphabétique. 3. Écris-le au pluriel.",
-   "astuce": "Barre ou entoure au fur et à mesure pour ne rien oublier."
+   "astuce": "Barre ou entoure au fur et à mesure pour ne rien oublier.",
+   "comprendre": [
+    "Au CEB, beaucoup de points se perdent parce qu'une consigne a été mal lue. Avant de répondre, lis la consigne en entier, jusqu'au bout, et repère les verbes d'action : écris, coche, entoure, souligne, relie, recopie, justifie.",
+    "Quand il y a plusieurs étapes, fais-les dans l'ordre et note le résultat de chaque étape avant de passer à la suivante. Barre ou entoure au fur et à mesure pour ne rien oublier.",
+    "Relis enfin ce qui est demandé : un mot ou une phrase ? Un nombre avec son unité ? Combien de réponses (« choisis les deux… ») ? Recopier un mot du texte veut dire l'écrire exactement comme dans le texte."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Garde les noms d'animaux. Prends le premier dans l'ordre alphabétique. Écris-le au pluriel. »",
+     "explication": "Trois étapes, dans l'ordre : trier, ranger, transformer."
+    },
+    {
+     "cas": "« Choisis les deux propositions correctes. »",
+     "explication": "Il en faut exactement deux, pas une ni trois."
+    },
+    {
+     "cas": "« Recopie le mot qui prouve… »",
+     "explication": "Un seul mot, recopié tel quel, sans le changer."
+    },
+    {
+     "cas": "« Justifie ta réponse. »",
+     "explication": "Il faut donner la raison, souvent avec un passage du texte."
+    }
+   ],
+   "pieges": [
+    "Commencer à répondre avant d'avoir lu toute la consigne.",
+    "Sauter une étape.",
+    "Donner plus ou moins de réponses que demandé.",
+    "Oublier l'unité ou la justification demandée."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais toutes les questions du CEB commencent par une consigne à bien lire.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-passive-mise-en-evidence",
@@ -799,7 +1793,38 @@
     "Mise en évidence : « c'est … qui » (sujet) ou « c'est … que » (complément) : C'est le chat qui attrape la souris."
    ],
    "exemple": "Les feuilles sont emportées par le vent. → voix passive (le vent fait l'action).",
-   "astuce": "Attention : « Léa est partie » est à la voix active (partir se conjugue avec être)."
+   "astuce": "Attention : « Léa est partie » est à la voix active (partir se conjugue avec être).",
+   "comprendre": [
+    "À la voix active, le sujet fait l'action : « Le chat attrape la souris. » À la voix passive, le sujet subit l'action : « La souris est attrapée par le chat. » On forme la voix passive avec être et le participe passé, accordé avec le sujet.",
+    "Le complément d'agent, introduit par « par » (parfois « de »), dit qui fait l'action. Il peut manquer : « La porte a été fermée. » La voix passive permet de mettre en avant ce qui subit l'action.",
+    "La mise en évidence sert aussi à insister : « C'est le chat qui attrape la souris » met en valeur le sujet ; « C'est la souris que le chat attrape » met en valeur le complément."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Les feuilles sont emportées par le vent. »",
+     "explication": "Voix passive : c'est le vent qui fait l'action."
+    },
+    {
+     "cas": "« Le vent emporte les feuilles. »",
+     "explication": "La même idée à la voix active."
+    },
+    {
+     "cas": "« Léa est partie. »",
+     "explication": "Voix active : partir se conjugue avec être, mais Léa fait l'action."
+    },
+    {
+     "cas": "« C'est Hugo qui a gagné. »",
+     "explication": "Mise en évidence du sujet avec « c'est… qui »."
+    }
+   ],
+   "pieges": [
+    "Prendre « elle est partie » pour une voix passive.",
+    "Oublier l'accord du participe avec le sujet à la voix passive.",
+    "Confondre le complément d'agent et un complément de lieu introduit par « par » (« passer par Namur »).",
+    "Changer le temps du verbe en passant à la voix passive."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais repérer qui fait l'action aide à comprendre les phrases longues des textes.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-subjonctif-participe",
@@ -813,7 +1838,38 @@
     "Les autres modes : indicatif (fait réel), impératif (ordre), infinitif (forme du dictionnaire)."
    ],
    "exemple": "Maman veut que tu ranges (subjonctif) ta chambre. Léa est rentrée (participe passé) en chantant (participe présent).",
-   "astuce": "Un « que » devant le verbe après « il faut » ou « vouloir » annonce le subjonctif."
+   "astuce": "Un « que » devant le verbe après « il faut » ou « vouloir » annonce le subjonctif.",
+   "comprendre": [
+    "Le subjonctif présent exprime une action souhaitée, nécessaire ou possible. On le trouve après « il faut que », « vouloir que », « il est important que », « avant que » : il faut que tu finisses, je veux qu'il fasse, il est important que nous allions.",
+    "Le participe présent se termine par -ant et ne s'accorde pas (en marchant, chantant). Le participe passé se termine par -é, -i, -u, -s, -t (mangé, fini, venu, pris, peint) : il s'emploie avec être ou avoir, ou seul comme un adjectif.",
+    "Pour reconnaitre le mode d'un verbe : un « que » après « il faut » ou « vouloir » annonce le subjonctif ; une forme en -ant est un participe présent ; une forme en -é, -i, -u après un auxiliaire est un participe passé."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Maman veut que tu ranges ta chambre. »",
+     "explication": "« ranges » est au subjonctif, après « veut que »."
+    },
+    {
+     "cas": "« Léa est rentrée en chantant. »",
+     "explication": "« rentrée » : participe passé ; « chantant » : participe présent."
+    },
+    {
+     "cas": "« Il faut que je fasse mes devoirs. »",
+     "explication": "Subjonctif du verbe faire : « que je fasse »."
+    },
+    {
+     "cas": "« des feuilles étalées »",
+     "explication": "Participe passé employé comme adjectif, accordé avec « feuilles »."
+    }
+   ],
+   "pieges": [
+    "Écrire l'indicatif après « il faut que » (« il faut que tu fais »).",
+    "Accorder le participe présent.",
+    "Confondre participe passé (mangé) et infinitif (manger).",
+    "Croire que tout verbe après « que » est au subjonctif : « je pense que tu viens » est à l'indicatif."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; reconnaitre les modes est interrogé dans la fiche « Les modes du verbe » (CEB 2026).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-participe-present",
@@ -827,7 +1883,38 @@
     "Il est invariable. Avec « en », il forme le gérondif : en chantant."
    ],
    "exemple": "nous mangeons → mangeant ; nous commençons → commençant ; nous voyons → voyant.",
-   "astuce": "Pense à « nous » : il garde le ç et le e (commençant, mangeant)."
+   "astuce": "Pense à « nous » : il garde le ç et le e (commençant, mangeant).",
+   "comprendre": [
+    "Le participe présent est une forme du verbe qui se termine toujours par -ant : chantant, finissant, prenant. Il exprime une action qui se passe en même temps qu'une autre : « Les enfants, riant aux éclats, sortent de la classe. »",
+    "Pour le former, on part du présent avec « nous » et on remplace -ons par -ant : nous finissons → finissant ; nous voyons → voyant. Le verbe garde le ç et le e qui servent à la prononciation : commençant, mangeant. Trois exceptions : étant (être), ayant (avoir), sachant (savoir).",
+    "Il est invariable : il ne prend jamais de e ni de s. Précédé de « en », il forme le gérondif : « Il chante en marchant. »"
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "nous commençons → commençant",
+     "explication": "On garde le ç pour garder le son « s »."
+    },
+    {
+     "cas": "nous mangeons → mangeant",
+     "explication": "On garde le e pour garder le son « j »."
+    },
+    {
+     "cas": "« Les filles, souriant, entrent. »",
+     "explication": "« souriant » ne prend ni e ni s : il est invariable."
+    },
+    {
+     "cas": "« Elle lit en mangeant. »",
+     "explication": "« en mangeant » est un gérondif : deux actions en même temps."
+    }
+   ],
+   "pieges": [
+    "Accorder le participe présent (« souriantes »).",
+    "Oublier le ç ou le e (« commencant », « mangant »).",
+    "Se tromper sur les exceptions : « sachant », pas « savant ».",
+    "Confondre la terminaison -ant avec un nom en -ent (« un agent »)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; reconnaitre un participe est travaillé dans la fiche « Les modes du verbe » (CEB 2026).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-champ-lexical",
@@ -840,7 +1927,38 @@
     "Les champs lexicaux aident à comprendre de quoi parle un texte et l'ambiance (peur, joie…)."
    ],
    "exemple": "Champ lexical de l'hiver : neige, flocon, luge, verglas, frissonner.",
-   "astuce": "Pour trouver l'intrus, demande-toi : à quoi me font penser les autres mots ?"
+   "astuce": "Pour trouver l'intrus, demande-toi : à quoi me font penser les autres mots ?",
+   "comprendre": [
+    "Un champ lexical est un ensemble de mots qui se rapportent à un même thème. Il contient des noms, des verbes et des adjectifs : pour la mer, vague, plage, nager, salé, marin.",
+    "Repérer un champ lexical aide à comprendre de quoi parle un texte et quelle ambiance il crée. Dans un récit, les mots ombre, frisson, cri, trembler, sombre forment le champ lexical de la peur.",
+    "Pour trouver l'intrus d'une liste, demande-toi à quel thème te font penser la plupart des mots : celui qui ne s'y rattache pas est l'intrus. Pour écrire, utiliser un champ lexical riche rend ton texte plus vivant."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "neige, flocon, luge, verglas, frissonner",
+     "explication": "Le champ lexical de l'hiver."
+    },
+    {
+     "cas": "ballon, but, arbitre, gardien, cuillère",
+     "explication": "« cuillère » est l'intrus : les autres parlent du football."
+    },
+    {
+     "cas": "rire, joyeux, sourire, fête, éclater de rire",
+     "explication": "Le champ lexical de la joie : l'ambiance du texte est gaie."
+    },
+    {
+     "cas": "« Le vent hurlait, les volets claquaient, Léa tremblait. »",
+     "explication": "Le champ lexical de la peur et de la tempête."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un champ lexical ne contient que des noms.",
+    "Confondre champ lexical (même thème) et famille de mots (même radical).",
+    "Choisir un intrus d'après la classe du mot plutôt que d'après le thème.",
+    "Ne pas utiliser le champ lexical pour deviner l'ambiance d'un texte."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais repérer les mots d'un même thème aide à comprendre tous les textes de lecture.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-intensite-modalite",
@@ -854,7 +1972,38 @@
     "Probabilité (pas sûr) : peut-être, probablement, sans doute, il est probable que."
    ],
    "exemple": "« Sans doute, il pleuvra demain » = il pleuvra probablement (ce n'est pas certain).",
-   "astuce": "Attention : « sans doute » veut dire « probablement » ; « sans aucun doute » veut dire « c'est sûr »."
+   "astuce": "Attention : « sans doute » veut dire « probablement » ; « sans aucun doute » veut dire « c'est sûr ».",
+   "comprendre": [
+    "Certains mots expriment une idée plus ou moins forte : tiède, chaud, brulant ; aimer, adorer ; petit, minuscule. Les adverbes très, trop, si, assez, peu, extrêmement modifient aussi l'intensité d'un adjectif : un peu fatigué, très fatigué, extrêmement fatigué.",
+    "D'autres mots montrent si celui qui parle est sûr ou non de ce qu'il dit. Certitude : il est certain que, sans aucun doute, c'est sûr, évidemment. Probabilité : peut-être, probablement, sans doute, il est possible que, il semble que.",
+    "En lecture, ces mots aident à comprendre l'avis de l'auteur ou d'un personnage : une information donnée avec « peut-être » n'est pas sûre. Dans un résumé, il faut les garder pour ne pas changer le sens."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Sans doute, il pleuvra demain. »",
+     "explication": "Il pleuvra probablement, mais ce n'est pas certain."
+    },
+    {
+     "cas": "« Sans aucun doute, il pleuvra demain. »",
+     "explication": "C'est sûr."
+    },
+    {
+     "cas": "tiède → chaud → brulant",
+     "explication": "Du moins fort au plus fort."
+    },
+    {
+     "cas": "« Les dinosaures ont peut-être eu des plumes. »",
+     "explication": "L'auteur n'en est pas certain."
+    }
+   ],
+   "pieges": [
+    "Croire que « sans doute » veut dire « c'est sûr ».",
+    "Ranger des mots du plus fort au moins fort quand on demande l'inverse.",
+    "Supprimer « peut-être » dans un résumé et changer ainsi le sens.",
+    "Confondre « trop » (excès) et « très » (beaucoup)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces nuances aident à répondre juste aux questions de compréhension.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-mots-composes",
@@ -869,7 +2018,38 @@
     "Orthographe rectifiée : certains mots peuvent se souder (portemonnaie) ; les deux graphies sont acceptées."
    ],
    "exemple": "un arc-en-ciel → des arcs-en-ciel ; un timbre-poste → des timbres-poste.",
-   "astuce": "Demande-toi ce que chaque mot veut dire au pluriel : des choux et des fleurs, mais des timbres pour la poste."
+   "astuce": "Demande-toi ce que chaque mot veut dire au pluriel : des choux et des fleurs, mais des timbres pour la poste.",
+   "comprendre": [
+    "Un mot composé est formé de plusieurs mots, mais il désigne une seule chose. Il peut être soudé (portefeuille), écrit avec un trait d'union (chou-fleur), avec un petit mot de liaison (pomme de terre) ou avec des mots séparés (carte postale).",
+    "Au pluriel, on se demande ce que chaque mot veut dire. Nom + nom ou nom + adjectif : les deux varient (des choux-fleurs, des coffres-forts). Avec un mot de liaison, seul le premier nom varie (des pommes de terre, des arcs-en-ciel). Après un mot invariable, seul le nom varie (des sous-marins).",
+    "Parfois, le sens commande : des timbres-poste (des timbres pour la poste). L'orthographe rectifiée permet de souder certains mots (portemonnaie) : les deux écritures sont acceptées."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "un chou-fleur → des choux-fleurs",
+     "explication": "Deux noms : les deux varient."
+    },
+    {
+     "cas": "une pomme de terre → des pommes de terre",
+     "explication": "Avec « de », seul le premier nom varie."
+    },
+    {
+     "cas": "un sous-marin → des sous-marins",
+     "explication": "« sous » est invariable : seul « marin » varie."
+    },
+    {
+     "cas": "un timbre-poste → des timbres-poste",
+     "explication": "Des timbres pour la poste : « poste » reste au singulier."
+    }
+   ],
+   "pieges": [
+    "Mettre les deux mots au pluriel quand il y a un mot de liaison (« des pommes de terres »).",
+    "Accorder un mot invariable (« des sous-marins », jamais « des sous-marin »).",
+    "Couper un mot composé en deux mots séparés.",
+    "Oublier de réfléchir au sens de chaque mot."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les mots composés reviennent souvent en orthographe.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-coherence-temps",
@@ -898,7 +2078,61 @@
     "Note de bas de page : explication appelée par un astérisque (*) ou un chiffre."
    ],
    "exemple": "Pour trouver la page sur le hérisson dans un documentaire, cherche « hérisson » dans l'index.",
-   "astuce": "Avant de lire, regarde le titre, les images et leurs légendes : ils t'aident à deviner le contenu."
+   "astuce": "Avant de lire, regarde le titre, les images et leurs légendes : ils t'aident à deviner le contenu.",
+   "comprendre": [
+    "Le paratexte, c'est tout ce qui entoure le texte et aide à le comprendre avant même de le lire : le titre, les intertitres, le chapeau (le court texte en gras sous le titre d'un article), les images et leurs légendes, les encadrés, les pictogrammes, la source.",
+    "Pour un livre, la couverture donne le titre, l'auteur et souvent le genre : un recueil d'histoires, un roman, un documentaire. Le sommaire (au début) donne les parties et leurs pages ; l'index (à la fin) donne les mots importants par ordre alphabétique.",
+    "Avant de lire, regarde le paratexte : il annonce le sujet, le type de texte et où trouver une information. Pour répondre à « dans quel livre trouverais-tu… ? », demande-toi si tu cherches une histoire inventée ou des informations vraies."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Trouver la page sur le hérisson dans un documentaire.",
+     "explication": "On cherche « hérisson » dans l'index, à la fin."
+    },
+    {
+     "cas": "Un pouce vers le haut et un pouce vers le bas dans un tableau.",
+     "explication": "Des pictogrammes : un avantage et un inconvénient."
+    },
+    {
+     "cas": "Une histoire inventée sur une machine à écrire magique.",
+     "explication": "On la trouve dans un recueil d'histoires, pas dans un documentaire sur la machine à écrire."
+    },
+    {
+     "cas": "Un astérisque (*) après un mot difficile.",
+     "explication": "Il renvoie à une note qui explique ce mot."
+    }
+   ],
+   "pieges": [
+    "Confondre sommaire (au début, dans l'ordre des pages) et index (à la fin, par ordre alphabétique).",
+    "Choisir un livre seulement parce que son titre contient le même mot.",
+    "Ignorer les légendes des images, qui donnent souvent la réponse.",
+    "Oublier de lire les intertitres pour retrouver la bonne partie du texte."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 4,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Le pouce vers le haut signifie « avantage » ; le pouce vers le bas, « inconvénient »."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 7,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "L'histoire « Le Génie de la Machine à Écrire » se trouve dans le recueil « Histoires enchantées », pas dans le documentaire sur la machine à écrire."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "fr-sources",

@@ -26,7 +26,38 @@
     "S'il vaut 5, 6, 7, 8 ou 9 : on arrondit au-dessus (on ajoute 1 au chiffre)."
    ],
    "exemple": "4 587 arrondi à la centaine : le chiffre des dizaines est 8, donc 4 600. 3,14 arrondi au dixième : 3,1.",
-   "astuce": "Attention aux 9 : 3,97 arrondi au dixième donne 4."
+   "astuce": "Attention aux 9 : 3,97 arrondi au dixième donne 4.",
+   "comprendre": [
+    "Arrondir, c'est remplacer un nombre par un nombre proche, plus simple : à la dizaine, à la centaine, à l'unité, au dixième… On l'utilise pour estimer, ou quand la précision n'est pas utile (« environ 4 600 spectateurs »).",
+    "Pour arrondir à un rang, regarde le chiffre juste à droite de ce rang. S'il vaut 0, 1, 2, 3 ou 4, on garde le chiffre du rang et on remplace la suite par des zéros (ou on la supprime après la virgule). S'il vaut 5, 6, 7, 8 ou 9, on ajoute 1 au chiffre du rang.",
+    "Attention aux 9 : ajouter 1 à 9 fait passer au rang suivant. 3,97 arrondi au dixième donne 4 ; 2 996 arrondi à la dizaine donne 3 000."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "4 587 à la centaine",
+     "explication": "Le chiffre des dizaines est 8 : on arrondit au-dessus, 4 600."
+    },
+    {
+     "cas": "3,14 au dixième",
+     "explication": "Le chiffre des centièmes est 4 : on garde, 3,1."
+    },
+    {
+     "cas": "3,97 au dixième",
+     "explication": "Le 7 fait monter le 9 : on obtient 4 (ou 4,0)."
+    },
+    {
+     "cas": "56,5 cm à l'unité",
+     "explication": "Le chiffre des dixièmes est 5 : on arrondit au-dessus, 57 cm."
+    }
+   ],
+   "pieges": [
+    "Regarder le mauvais chiffre (le dernier au lieu de celui juste à droite du rang).",
+    "Oublier de remplacer les chiffres suivants par des zéros.",
+    "Se tromper quand le chiffre du rang est un 9.",
+    "Arrondir quand la question demande la valeur exacte."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais arrondir sert dans toutes les estimations et dans les calculs avec 3,14.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-droite-graduee",
@@ -129,7 +160,94 @@
     "Pour un trou au milieu, applique la règle à partir du nombre juste avant."
    ],
    "exemple": "50 ; 100 ; 200 ; 400 : on multiplie par 2 à chaque fois. 1,57 ; 1,27 ; 0,97 : on enlève 0,3.",
-   "astuce": "Si les écarts ne sont pas égaux, essaie la multiplication."
+   "astuce": "Si les écarts ne sont pas égaux, essaie la multiplication.",
+   "comprendre": [
+    "Une suite de nombres suit une règle qui se répète : ajouter, enlever, multiplier ou diviser par le même nombre. Pour la trouver, compare deux nombres voisins, puis vérifie que la règle marche aussi pour les suivants.",
+    "Si les écarts entre les nombres sont égaux, c'est une addition ou une soustraction (840, 910, 980 : + 70). S'ils grandissent de plus en plus vite, essaie la multiplication (50, 100, 200, 400 : × 2).",
+    "Certaines suites viennent d'un dessin : tables et chaises, allumettes, carrés. Compte ce qui s'ajoute à chaque étape, puis écris la règle avec des mots ou un calcul, pour trouver n'importe quelle étape sans tout dessiner."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "1,57 ; 1,27 ; 0,97",
+     "explication": "On enlève 0,3 à chaque fois : le suivant est 0,67."
+    },
+    {
+     "cas": "799 997 ; 799 998 ; …",
+     "explication": "On avance de 1 : 799 999, puis 800 000, puis 800 001."
+    },
+    {
+     "cas": "1 table : 4 chaises ; 2 tables : 6 ; 3 tables : 8.",
+     "explication": "Chaque table ajoute 2 chaises : chaises = 2 × tables + 2. Avec 7 tables : 16 chaises."
+    },
+    {
+     "cas": "59,02 ; 59,03 ; 59,04 en reculant",
+     "explication": "Avant 59,02 viennent 59,01, puis 59, puis 58,99."
+    }
+   ],
+   "pieges": [
+    "Trouver une règle avec deux nombres seulement, sans vérifier avec les autres.",
+    "Se tromper au passage d'une centaine de mille ou d'une unité (799 999 → 800 000 ; 59 → 58,99).",
+    "Avancer au lieu de reculer quand le trou est au début de la suite.",
+    "Dans une suite dessinée, compter tout à chaque étape au lieu de chercher ce qui s'ajoute."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 8,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Chaque ligne du tableau avance d'un même pas (40, 50, 60, 70, 80) : par exemple 420 + 70 = 490."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 8,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Après 799 998 : 799 999, 800 000, 800 001. Avant 59,02 : 59,01, 59, 58,99."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 8,
+     "questions": [
+      "17b"
+     ],
+     "libelle": "question 17b",
+     "texte": "Dans la suite 1, 3, 6, 10, 15, deux nombres voisins additionnés donnent 4, 9, 16, 25 : des nombres carrés."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Chaque table ajoute 2 chaises : 7 tables pour 16 chaises ; 9 tables pour 20 chaises."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 6,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "840 + 70 = 910, puis 980, puis 1 050 ; 1 080 + 90 = 1 170, puis 1 260, puis 1 350."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-fractions-comparer",
@@ -255,7 +373,83 @@
     "Le tout vaut 1 : 1 = 8/8 = 5/5…"
    ],
    "exemple": "2/8 + 3/8 = 5/8. Il reste 8/8 − 5/8 = 3/8.",
-   "astuce": "Pense aux parts d'une pizza : 2 parts + 3 parts = 5 parts de même taille."
+   "astuce": "Pense aux parts d'une pizza : 2 parts + 3 parts = 5 parts de même taille.",
+   "comprendre": [
+    "On additionne des fractions comme on additionne des parts de même taille. Avec le même dénominateur, on additionne les numérateurs et on garde le dénominateur : 2/8 + 3/8 = 5/8. On n'additionne jamais les dénominateurs.",
+    "Si les dénominateurs sont différents, on cherche d'abord des fractions égales qui ont le même dénominateur : 1/4 + 3/8 → 2/8 + 3/8 = 5/8. Pour 1/6 + 1/4 + 1/3, on passe en douzièmes : 2/12 + 3/12 + 4/12 = 9/12.",
+    "On simplifie ensuite si on peut : 9/12 = 3/4. Le tout vaut 1, c'est-à-dire 8/8, 12/12… Pour la soustraction, on fait pareil avec les numérateurs : 1/2 − 1/6 = 3/6 − 1/6 = 2/6 = 1/3."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "2/7 + 3/7",
+     "explication": "5/7, et pas 5/14."
+    },
+    {
+     "cas": "1/4 + 3/8",
+     "explication": "1/4 = 2/8, donc 2/8 + 3/8 = 5/8."
+    },
+    {
+     "cas": "Un potager : 1/6 de choux, 1/4 de carottes, 1/3 de tomates.",
+     "explication": "2/12 + 3/12 + 4/12 = 9/12 = 3/4 de la surface."
+    },
+    {
+     "cas": "2 3/4 − 1 2/8",
+     "explication": "2/8 = 1/4 ; on fait 2 − 1 = 1 et 3/4 − 1/4 = 2/4 : le résultat est 1 2/4 = 1 1/2."
+    }
+   ],
+   "pieges": [
+    "Additionner les dénominateurs.",
+    "Additionner avant d'avoir mis les fractions au même dénominateur.",
+    "Oublier qu'une réponse peut être juste sans être simplifiée (6/8 = 3/4) : les deux sont acceptées si la question ne demande pas de simplifier.",
+    "Oublier que le tout vaut 1 quand on cherche « ce qui reste »."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 4,
+     "questions": [
+      "14b"
+     ],
+     "libelle": "question 14b",
+     "texte": "3/5 l + 1/4 l + 3/10 l + 1/20 l = 12/20 + 5/20 + 6/20 + 1/20 = 24/20 l, soit 1,2 l."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 7,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "1/6 + 1/4 + 1/3 = 9/12 = 3/4 de la surface du potager."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 6,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "1/4 + 3/8 = 5/8 ; 1/2 − 1/6 = 1/3."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 4,
+     "questions": [
+      "23"
+     ],
+     "libelle": "question 23",
+     "texte": "2 3/4 − 1 2/8 = 1 1/2."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-operations",
@@ -386,7 +580,38 @@
     "Avec seulement des + et des −, on calcule de gauche à droite."
    ],
    "exemple": "4 + 5 × 3 = 4 + 15 = 19, mais (4 + 5) × 3 = 9 × 3 = 27.",
-   "astuce": "Souligne d'abord le calcul prioritaire, puis réécris le calcul pas à pas."
+   "astuce": "Souligne d'abord le calcul prioritaire, puis réécris le calcul pas à pas.",
+   "comprendre": [
+    "Dans un calcul avec plusieurs opérations, l'ordre compte. On calcule d'abord ce qui est entre parenthèses. Ensuite, les multiplications et les divisions. Enfin, les additions et les soustractions.",
+    "Quand il n'y a que des additions et des soustractions, ou que des multiplications et des divisions, on calcule de gauche à droite : 20 − 5 + 3 = 15 + 3 = 18, et non 20 − 8.",
+    "Méthode : souligne le calcul prioritaire, fais-le, puis recopie le calcul avec le résultat, étape par étape. Dans un problème, les parenthèses servent à montrer ce qu'on calcule en premier : (12 + 8) × 3 pour 3 paquets de 12 bonbons rouges et 8 bleus."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "4 + 5 × 3",
+     "explication": "4 + 15 = 19 : la multiplication d'abord."
+    },
+    {
+     "cas": "(4 + 5) × 3",
+     "explication": "9 × 3 = 27 : les parenthèses d'abord."
+    },
+    {
+     "cas": "20 − 5 + 3",
+     "explication": "De gauche à droite : 15 + 3 = 18."
+    },
+    {
+     "cas": "100 − 4 × 5 × 2",
+     "explication": "4 × 5 × 2 = 40, puis 100 − 40 = 60."
+    }
+   ],
+   "pieges": [
+    "Calculer de gauche à droite en oubliant que × et : passent avant + et −.",
+    "Oublier les parenthèses.",
+    "Faire une soustraction après une addition qui la suit (20 − 5 + 3 n'est pas 20 − 8).",
+    "Recopier le calcul en oubliant une partie."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les priorités servent dès qu'un problème demande plusieurs opérations.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-multiples-diviseurs",
@@ -442,7 +667,50 @@
     "Le lien avec les capacités : 1 dm³ = 1 l et 1 cm³ = 1 ml."
    ],
    "exemple": "Un aquarium de 50 cm × 30 cm × 40 cm : 60 000 cm³ = 60 dm³ = 60 litres.",
-   "astuce": "1 are, c'est l'aire d'un carré de 10 m sur 10 m : 100 m². 1 hectare, c'est un carré de 100 m sur 100 m : 10 000 m²."
+   "astuce": "1 are, c'est l'aire d'un carré de 10 m sur 10 m : 100 m². 1 hectare, c'est un carré de 100 m sur 100 m : 10 000 m².",
+   "comprendre": [
+    "Une aire se mesure en unités carrées. 1 m², c'est l'aire d'un carré de 1 m de côté ; il contient 100 dm², car 10 × 10 = 100. Pour passer d'une unité d'aire à la suivante, on multiplie ou on divise par 100 : on déplace la virgule de 2 rangs.",
+    "Pour les terrains, on utilise les unités agraires : 1 are (a) = 100 m², l'aire d'un carré de 10 m sur 10 m ; 1 hectare (ha) = 10 000 m², un carré de 100 m sur 100 m.",
+    "Un volume se mesure en unités cubes. 1 dm³ contient 1 000 cm³, car 10 × 10 × 10 = 1 000 : on déplace la virgule de 3 rangs. Le lien avec les capacités est à retenir : 1 dm³ = 1 l et 1 cm³ = 1 ml."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "3 m² en dm²",
+     "explication": "3 × 100 = 300 dm²."
+    },
+    {
+     "cas": "Un terrain de 2 500 m²",
+     "explication": "25 ares, soit 0,25 ha."
+    },
+    {
+     "cas": "Un aquarium de 50 cm × 30 cm × 40 cm",
+     "explication": "60 000 cm³ = 60 dm³ = 60 litres."
+    },
+    {
+     "cas": "Un triangle mesuré en carrés : base 8 carrés, hauteur 7 carrés",
+     "explication": "8 × 7 : 2 = 28 carrés."
+    }
+   ],
+   "pieges": [
+    "Utiliser la règle des longueurs (× 10) pour les aires (× 100) ou les volumes (× 1 000).",
+    "Confondre l'are (100 m²) et l'hectare (10 000 m²).",
+    "Oublier qu'1 litre vaut 1 dm³, et non 1 cm³.",
+    "Écrire une aire sans « ² » ou un volume sans « ³ »."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 8,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Avec un petit carré comme unité, le triangle isocèle (base 8, hauteur 7) mesure 8 × 7 : 2 = 28 carrés."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-cercle",
@@ -456,7 +724,83 @@
     "Aire du disque = rayon × rayon × 3,14."
    ],
    "exemple": "Une roue de 60 cm de diamètre : circonférence = 60 × 3,14 = 188,4 cm.",
-   "astuce": "3,14 est une valeur approchée du nombre π (pi)."
+   "astuce": "3,14 est une valeur approchée du nombre π (pi).",
+   "comprendre": [
+    "Le cercle est la ligne formée par tous les points situés à la même distance d'un point, le centre. Le disque est la surface à l'intérieur du cercle. On trace un cercle au compas : la pointe sur le centre, l'écartement égal au rayon.",
+    "Le rayon va du centre au cercle. Le diamètre traverse le cercle d'un bord à l'autre en passant par le centre : il vaut 2 rayons. Le diamètre est aussi un axe de symétrie du disque.",
+    "Le tour du cercle s'appelle la circonférence : diamètre × 3,14. L'aire du disque vaut rayon × rayon × 3,14. Le nombre 3,14 est une valeur approchée de π (pi) : il vaut un peu plus de 3, donc le tour d'un cercle fait un peu plus de 3 fois son diamètre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un abat-jour de 50 cm de diamètre.",
+     "explication": "Pour l'entourer d'un ruban : 50 × 3,14 = 157 cm."
+    },
+    {
+     "cas": "Un cercle de 3 cm de rayon.",
+     "explication": "Diamètre : 6 cm. Circonférence : 6 × 3,14 = 18,84 cm. Aire du disque : 3 × 3 × 3,14 = 28,26 cm²."
+    },
+    {
+     "cas": "Un segment qui va du bord du disque jusqu'au centre.",
+     "explication": "C'est un rayon."
+    },
+    {
+     "cas": "Un disque coincé entre les deux longueurs d'un rectangle de 5 cm de large.",
+     "explication": "Son diamètre vaut 5 cm, donc son rayon 2,5 cm."
+    }
+   ],
+   "pieges": [
+    "Confondre rayon et diamètre, et oublier de diviser ou de multiplier par 2.",
+    "Calculer l'aire avec le diamètre au lieu du rayon.",
+    "Confondre le tour (la circonférence, en cm) et l'aire (en cm²).",
+    "Appeler « milieu » le centre du disque."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 6,
+     "questions": [
+      "13a"
+     ],
+     "libelle": "question 13a",
+     "texte": "Le bas d'un chapeau de 18 cm de diamètre : 18 × 3,14 ≈ 56,5 cm de ruban, donc environ 57 cm."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 6,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Un abat-jour de 50 cm de diamètre : 50 × 3,14 = 157 cm de ruban."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 3,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Le cercle de centre E, milieu de [BC], qui passe par B et C : [BC] est son diamètre, pas son rayon."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 3,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "[AC], qui traverse le disque en passant par le centre, est un diamètre ; [BO], qui va du bord au centre, est un rayon."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-calendrier",
@@ -483,7 +827,38 @@
     "Pour calculer un écart qui traverse 0, on passe par 0 : de −4 °C à 7 °C, il y a 4 + 7 = 11 degrés."
    ],
    "exemple": "Il fait 3 °C et la température baisse de 8 degrés : 3 − 8 = −5 °C.",
-   "astuce": "Imagine un thermomètre : monter = aller vers le haut, baisser = aller vers le bas."
+   "astuce": "Imagine un thermomètre : monter = aller vers le haut, baisser = aller vers le bas.",
+   "comprendre": [
+    "La température se mesure en degrés Celsius (°C) avec un thermomètre. L'eau gèle à 0 °C et bout à 100 °C. Sous 0 °C, on écrit un signe moins : −5 °C se lit « moins cinq degrés ».",
+    "Pour comparer des températures négatives, pense au thermomètre : plus on descend, plus il fait froid. −12 °C est plus froid que −3 °C, même si 12 est plus grand que 3. Ordre : −12 < −3 < 0 < 4.",
+    "Pour calculer un écart qui traverse 0, passe par 0 en deux étapes : de −4 °C à 7 °C, on monte de 4 degrés jusqu'à 0, puis de 7 degrés : 11 degrés en tout."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Il fait 3 °C et la température baisse de 8 degrés.",
+     "explication": "3 − 8 = −5 °C : on descend de 3 jusqu'à 0, puis encore de 5."
+    },
+    {
+     "cas": "Le matin −6 °C, l'après-midi 4 °C.",
+     "explication": "La température a monté de 6 + 4 = 10 degrés."
+    },
+    {
+     "cas": "Ranger −2 °C, −9 °C et 1 °C du plus froid au plus chaud.",
+     "explication": "−9 °C, −2 °C, 1 °C."
+    },
+    {
+     "cas": "Une température normale du corps.",
+     "explication": "Environ 37 °C ; au-dessus de 38 °C, on a de la fièvre."
+    }
+   ],
+   "pieges": [
+    "Croire que −12 °C est plus chaud que −3 °C.",
+    "Calculer un écart en soustrayant les deux nombres sans tenir compte du signe (7 − 4 au lieu de 7 + 4).",
+    "Oublier le signe moins dans la réponse.",
+    "Lire la mauvaise graduation du thermomètre."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les températures reviennent dans les bulletins météo et les expériences de sciences.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-problemes",
@@ -603,7 +978,83 @@
     "Les diagonales d'un rectangle ne sont pas des axes de symétrie !"
    ],
    "exemple": "La lettre H a 2 axes (vertical et horizontal), la lettre A en a 1, la lettre S n'en a aucun.",
-   "astuce": "Pour vérifier, imagine que tu plies la figure le long de la droite."
+   "astuce": "Pour vérifier, imagine que tu plies la figure le long de la droite.",
+   "comprendre": [
+    "Une figure a un axe de symétrie si on peut la plier le long d'une droite et que les deux moitiés se superposent exactement, comme les ailes d'un papillon. Une figure peut n'avoir aucun axe, en avoir un ou en avoir plusieurs.",
+    "Pour les compter, essaie toutes les directions : la verticale, l'horizontale, les deux diagonales, puis d'autres pour les polygones réguliers. À retenir : carré 4 axes, rectangle 2 (par les milieux des côtés), losange 2 (ses diagonales), triangle équilatéral 3, triangle isocèle 1, cercle une infinité.",
+    "Pliage et découpage : quand on découpe un papier plié puis qu'on le déplie, chaque découpe se répète de l'autre côté du pli, comme dans un miroir."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le rectangle.",
+     "explication": "2 axes : la droite verticale et la droite horizontale qui passent par son centre. Plié selon une diagonale, les deux triangles ne se superposent pas."
+    },
+    {
+     "cas": "Une croix aux quatre bras identiques.",
+     "explication": "4 axes : vertical, horizontal et les deux diagonales."
+    },
+    {
+     "cas": "Une bouteille vue de face.",
+     "explication": "1 axe vertical."
+    },
+    {
+     "cas": "Les lettres H, A et S.",
+     "explication": "H a 2 axes, A en a 1, S n'en a aucun."
+    }
+   ],
+   "pieges": [
+    "Prendre les diagonales du rectangle pour des axes de symétrie.",
+    "Oublier les axes en diagonale du carré ou d'une croix.",
+    "Regarder seulement le contour et oublier les détails à l'intérieur du dessin.",
+    "Croire qu'un dessin est symétrique parce qu'il a l'air régulier : vérifie chaque détail des deux côtés."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 3,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Le dessin 1 a 1 axe ; le dessin 2 en a 2 (ses diagonales)."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 3,
+     "questions": [
+      "13"
+     ],
+     "libelle": "question 13",
+     "texte": "La croix aux quatre bras identiques a 4 axes de symétrie."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "4"
+     ],
+     "libelle": "question 4",
+     "texte": "Après pliage et découpage, seul le flocon 4 répète la découpe de chaque côté de chaque pli."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 3,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Parmi quatre dessins, seule la bouteille a un axe de symétrie."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-triangles",
@@ -618,7 +1069,83 @@
     "Au compas : on trace un côté, puis deux arcs de cercle depuis ses extrémités (rayon = longueur des autres côtés) ; leur croisement donne le 3e sommet."
    ],
    "exemple": "Deux angles mesurent 50° et 70° : le troisième mesure 180 − 50 − 70 = 60°.",
-   "astuce": "Un triangle ne peut avoir qu'un seul angle droit ou obtus."
+   "astuce": "Un triangle ne peut avoir qu'un seul angle droit ou obtus.",
+   "comprendre": [
+    "On nomme un triangle d'après ses côtés et d'après ses angles. Côtés : équilatéral (3 côtés égaux), isocèle (2 côtés égaux), scalène (3 côtés différents). Angles : rectangle (un angle droit), acutangle (3 angles aigus), obtusangle (un angle obtus).",
+    "Le nom précis combine les deux : triangle isocèle acutangle, triangle rectangle scalène… Sur un dessin, les petits traits indiquent les côtés de même longueur et le petit carré marque l'angle droit. Au besoin, vérifie avec la latte et l'équerre.",
+    "La somme des trois angles vaut toujours 180°. Un triangle ne peut donc avoir qu'un seul angle droit ou obtus. Dans un triangle équilatéral, chaque angle mesure 60°."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Côtés de 5 cm, 5 cm et 3 cm, trois angles aigus.",
+     "explication": "Triangle isocèle acutangle."
+    },
+    {
+     "cas": "Un angle droit et trois côtés de longueurs différentes.",
+     "explication": "Triangle rectangle scalène."
+    },
+    {
+     "cas": "Trois bâtonnets identiques.",
+     "explication": "Ils forment un triangle équilatéral."
+    },
+    {
+     "cas": "Deux angles de 90° et 35°.",
+     "explication": "Le troisième mesure 180 − 90 − 35 = 55°."
+    }
+   ],
+   "pieges": [
+    "Écrire « quelconque » au lieu de « scalène » : le CEB attend le mot précis.",
+    "Ne donner qu'un mot quand on demande le nom précis (deux mots).",
+    "Regarder les côtés et oublier les angles, ou l'inverse.",
+    "Croire qu'un triangle peut avoir deux angles droits."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 3,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Un angle droit et trois côtés différents : triangle rectangle scalène (« quelconque » n'était pas accepté)."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 3,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Le triangle du haut est isocèle acutangle ; celui du bas, rectangle scalène."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Nommer chaque triangle d'après un tableau de caractéristiques : d'abord les côtés, puis les angles."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 3,
+     "questions": [
+      "12a"
+     ],
+     "libelle": "question 12a",
+     "texte": "Pour un triangle équilatéral, il faut les trois bâtonnets identiques (3, 5 et 6)."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-angles",
@@ -632,7 +1159,72 @@
     "Sur une horloge, deux heures voisines sont séparées de 30° (360 : 12)."
    ],
    "exemple": "À 3 h, les aiguilles forment un angle droit : 3 × 30 = 90°.",
-   "astuce": "Compare avec le coin d'une feuille (angle droit) : plus fermé = aigu, plus ouvert = obtus."
+   "astuce": "Compare avec le coin d'une feuille (angle droit) : plus fermé = aigu, plus ouvert = obtus.",
+   "comprendre": [
+    "Un angle est formé par deux demi-droites qui partent du même point, le sommet. Son amplitude se mesure en degrés (°) avec un rapporteur. Angle aigu : moins de 90°. Angle droit : 90°, comme le coin d'une feuille. Angle obtus : entre 90° et 180°. Angle plat : 180°.",
+    "Dans un triangle, la somme des trois angles vaut toujours 180°. Dans un quadrilatère, elle vaut 360°, car une diagonale le partage en deux triangles. On s'en sert pour trouver un angle inconnu : on enlève les angles connus.",
+    "Un tour complet vaut 360°, un demi-tour 180°, un quart de tour 90°. Sur une horloge, deux heures voisines sont séparées de 30° (360 : 12)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un quadrilatère avec des angles de 90°, 90° et 60°.",
+     "explication": "Le quatrième vaut 360 − 240 = 120°."
+    },
+    {
+     "cas": "Un triangle avec des angles de 50° et 70°.",
+     "explication": "Le troisième vaut 180 − 120 = 60°."
+    },
+    {
+     "cas": "À 3 h, les aiguilles d'une horloge.",
+     "explication": "Elles forment un angle droit : 3 × 30 = 90°."
+    },
+    {
+     "cas": "Comparer un angle au coin d'une feuille.",
+     "explication": "Plus fermé : aigu. Plus ouvert : obtus."
+    }
+   ],
+   "pieges": [
+    "Croire que la longueur des côtés change l'angle : seule l'ouverture compte.",
+    "Utiliser 180° pour un quadrilatère au lieu de 360°.",
+    "Lire la mauvaise graduation du rapporteur (40° au lieu de 140°).",
+    "Confondre aigu (moins de 90°) et obtus (plus de 90°)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 3,
+     "questions": [
+      "10c"
+     ],
+     "libelle": "question 10c",
+     "texte": "La vitre B a trois angles de 90°, 90° et 60° : le quatrième mesure 360 − 240 = 120°."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 3,
+     "questions": [
+      "9b"
+     ],
+     "libelle": "question 9b",
+     "texte": "La somme des angles du parallélogramme vaut 360° ; celle du triangle, 180°."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 3,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Les deux triangles ont chacun 2 angles aigus."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-donnees",
@@ -738,7 +1330,83 @@
     "Trapèze : (grande base + petite base) × hauteur : 2."
    ],
    "exemple": "Trapèze de bases 10 cm et 6 cm, hauteur 4 cm : (10 + 6) × 4 : 2 = 16 × 4 : 2 = 32 cm².",
-   "astuce": "Mets toutes les longueurs dans la même unité avant de calculer, et écris l'aire en unités « carrées » (cm², m²)."
+   "astuce": "Mets toutes les longueurs dans la même unité avant de calculer, et écris l'aire en unités « carrées » (cm², m²).",
+   "comprendre": [
+    "L'aire d'une figure est la mesure de sa surface. On l'exprime en unités carrées : cm², m². Sur un quadrillage, on peut compter les carrés ; sinon, on utilise une formule.",
+    "Rectangle : longueur × largeur. Carré : côté × côté. Parallélogramme : base × hauteur. Triangle : base × hauteur : 2, car c'est la moitié d'un rectangle. Losange : grande diagonale × petite diagonale : 2. Trapèze : (grande base + petite base) × hauteur : 2.",
+    "La hauteur est toujours perpendiculaire à la base : elle se mesure à angle droit, comme un fil à plomb. Le côté penché d'un parallélogramme ou d'un trapèze n'est pas la hauteur. Pour une figure compliquée, découpe-la en figures simples et additionne leurs aires, ou retire la partie en trop."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un trapèze de bases 10 cm et 5 cm, hauteur 4 cm.",
+     "explication": "(10 + 5) × 4 : 2 = 30 cm². Le côté oblique ne sert pas."
+    },
+    {
+     "cas": "Un losange de diagonales 6 cm et 3 cm.",
+     "explication": "6 × 3 : 2 = 9 cm²."
+    },
+    {
+     "cas": "Un terrain en parallélogramme : base 25 m, hauteur 50 m.",
+     "explication": "25 × 50 = 1 250 m²."
+    },
+    {
+     "cas": "Un rectangle de 8 cm sur 5 cm dont on retire un disque de 2,5 cm de rayon.",
+     "explication": "40 − 2,5 × 2,5 × 3,14 = 40 − 19,625 = 20,375 cm²."
+    }
+   ],
+   "pieges": [
+    "Prendre le côté penché pour la hauteur.",
+    "Oublier de diviser par 2 pour le triangle, le losange et le trapèze.",
+    "Mélanger les unités (des cm et des m dans le même calcul).",
+    "Écrire l'aire en cm au lieu de cm²."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 6,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "Le polygone se découpe en un rectangle de 20 cm² et deux triangles de 2 cm² : 24 cm²."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 4,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Le terrain en parallélogramme : 25 × 50 = 1 250 m², à 70 € le m², soit 87 500 €. Les côtés penchés ne servent pas."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 7,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Sur un quadrillage en cm : rectangle 12 cm², losange 9 cm², trapèze 10 cm², triangle 14 cm²."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 4,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Le trapèze : (10 + 5) × 4 : 2 = 30 cm² ; le côté oblique de 6,4 cm n'est pas la hauteur."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-logique",
@@ -752,7 +1420,61 @@
     "Une case sûre permet de barrer tout le reste de sa ligne et de sa colonne."
    ],
    "exemple": "Léa, Tom et Agathe ont chacun un animal différent. Tom n'a pas le chat. Ni Léa ni Tom n'ont le lapin. → Agathe a le lapin, donc Léa a le chat et Tom le chien.",
-   "astuce": "Relis tous les indices à chaque fois que tu as trouvé une nouvelle case : un indice peut servir deux fois."
+   "astuce": "Relis tous les indices à chaque fois que tu as trouvé une nouvelle case : un indice peut servir deux fois.",
+   "comprendre": [
+    "Une énigme logique se résout avec des indices, sans deviner. Le plus sûr est de dessiner un tableau à double entrée : les personnes en lignes, les choix en colonnes. Chaque indice permet de barrer une ou plusieurs cases.",
+    "Quand une ligne ou une colonne n'a plus qu'une case libre, c'est la bonne réponse. Une case sûre permet ensuite de barrer tout le reste de sa ligne et de sa colonne. Relis tous les indices à chaque nouvelle découverte : un indice peut servir deux fois.",
+    "D'autres énigmes demandent de comparer : sur une balance, le plateau le plus lourd descend. Range les objets deux par deux, puis mets toutes les comparaisons bout à bout."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Léa, Tom et Agathe ont chacun un animal différent. Tom n'a pas le chat. Ni Léa ni Tom n'ont le lapin.",
+     "explication": "Agathe a le lapin, donc Léa a le chat et Tom le chien."
+    },
+    {
+     "cas": "B est plus lourd que A et que C ; A est plus lourd que C ; C est plus lourd que D.",
+     "explication": "Du plus léger au plus lourd : D, C, A, B."
+    },
+    {
+     "cas": "Un tableau où chaque ligne contient les multiples d'un nombre.",
+     "explication": "La 9e case de la ligne de 11 vaut 11 × 9 = 99."
+    },
+    {
+     "cas": "« Personne n'a le même dessert. »",
+     "explication": "Une case sûre barre aussi toute sa colonne."
+    }
+   ],
+   "pieges": [
+    "Deviner au lieu de barrer case par case.",
+    "Oublier de relire les indices après chaque découverte.",
+    "Sur une balance, croire que le plateau le plus haut est le plus lourd.",
+    "Utiliser une comparaison dans le mauvais sens."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 7,
+     "questions": [
+      "6b"
+     ],
+     "libelle": "question 6b",
+     "texte": "La case grisée est la 9e de la ligne des multiples de 11 : 11 × 9 = 99."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 4,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "D'après quatre pesées, les masses se rangent de la plus légère à la plus lourde : D, C, A, B."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-developpements",
@@ -766,7 +1488,83 @@
     "Pyramide à base carrée : 1 carré et 4 triangles. Cylindre : 1 rectangle et 2 disques."
    ],
    "exemple": "Une croix de 6 carrés (4 en colonne et 1 de chaque côté) est un développement du cube.",
-   "astuce": "Un bloc de 2 × 2 carrés ou une ligne de 5 carrés ne peut jamais faire un cube. Imagine une face posée au sol et replie les autres autour."
+   "astuce": "Un bloc de 2 × 2 carrés ou une ligne de 5 carrés ne peut jamais faire un cube. Imagine une face posée au sol et replie les autres autour.",
+   "comprendre": [
+    "Le développement d'un solide est son patron, une fois déplié et posé à plat. En pliant le développement le long des arêtes, on reconstruit le solide, sans trou et sans face en double.",
+    "Pour reconnaitre le solide, compte et observe les faces : 6 carrés pour le cube ; 6 rectangles identiques deux à deux pour le pavé ; 2 triangles et 3 rectangles pour le prisme à base triangulaire ; 1 carré et 4 triangles pour la pyramide à base carrée ; 2 disques et 1 rectangle pour le cylindre.",
+    "Pour vérifier qu'un développement se referme bien, imagine une face posée au sol et replie les autres autour d'elle, une par une. Deux faces ne doivent jamais arriver au même endroit, et les faces qui se touchent dans le solide doivent pouvoir se rejoindre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une croix de 6 carrés (4 en colonne et 1 de chaque côté).",
+     "explication": "C'est un développement du cube."
+    },
+    {
+     "cas": "Une ligne de 5 carrés, plus un carré à côté.",
+     "explication": "Impossible pour un cube : en repliant la ligne, le premier et le cinquième carré arrivent au même endroit."
+    },
+    {
+     "cas": "Un carré avec un triangle sur chacun de ses 4 côtés.",
+     "explication": "Le développement d'une pyramide à base carrée."
+    },
+    {
+     "cas": "Un rectangle et deux disques.",
+     "explication": "Le développement d'un cylindre."
+    }
+   ],
+   "pieges": [
+    "Placer les deux bases d'un prisme du même côté : elles doivent se trouver aux deux bouts.",
+    "Compter les faces sans vérifier leur forme (4 rectangles au lieu de 3 pour un prisme à base triangulaire).",
+    "Accepter un bloc de 2 × 2 carrés dans un développement de cube : il ne se referme jamais.",
+    "Oublier que, pour un pavé, les faces opposées doivent être identiques."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 3,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Le développement donne une pyramide à base carrée : 5 faces, 8 arêtes et 5 sommets."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 3,
+     "questions": [
+      "3b"
+     ],
+     "libelle": "question 3b",
+     "texte": "Un dé à 8 faces triangulaires : seul le développement fait de 8 triangles convient."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "2c"
+     ],
+     "libelle": "question 2c",
+     "texte": "Pour la pyramide à base carrée, il faut le développement avec un carré et un triangle sur chacun de ses 4 côtés."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 3,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "Le prisme à base triangulaire a 3 rectangles et 2 triangles, un à chaque bout : le développement qui met les deux triangles du même côté ne convient pas."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-representations",
@@ -780,7 +1578,61 @@
     "Tableau à double entrée : on lit la case au croisement d'une ligne et d'une colonne ; on additionne une ligne ou une colonne pour un total."
    ],
    "exemple": "8 élèves font seulement du foot, 5 font foot et natation, 6 seulement natation : 13 font du foot en tout.",
-   "astuce": "N'oublie pas ce qui est écrit en dehors des cercles quand on demande le total."
+   "astuce": "N'oublie pas ce qui est écrit en dehors des cercles quand on demande le total.",
+   "comprendre": [
+    "Pour classer et compter, on utilise trois outils : le diagramme d'ensembles, l'arbre et le tableau à double entrée.",
+    "Dans un diagramme d'ensembles, chaque cercle est un groupe. La partie commune à deux cercles contient ce qui appartient aux deux groupes à la fois ; ce qui est dessiné en dehors des cercles n'appartient à aucun. Pour un total, additionne toutes les zones, sans compter deux fois la partie commune.",
+    "Un arbre de classement pose une question à chaque embranchement (« A-t-il 4 côtés ? », « A-t-il un angle droit ? ») : on suit les branches pour placer chaque objet. Dans un arbre de choix, le nombre de possibilités est le produit des choix à chaque étape."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "8 élèves font seulement du foot, 5 font foot et natation, 6 seulement de la natation.",
+     "explication": "13 font du foot en tout (8 + 5) ; 19 élèves font au moins un sport (8 + 5 + 6)."
+    },
+    {
+     "cas": "3 entrées et 4 plats.",
+     "explication": "3 × 4 = 12 menus différents."
+    },
+    {
+     "cas": "Un arbre qui demande d'abord « 4 côtés ? », puis « un angle droit ? ».",
+     "explication": "Le rectangle va dans « oui » puis « oui » ; le losange dans « oui » puis « non » ; le triangle rectangle dans « non » puis « oui »."
+    },
+    {
+     "cas": "Un triangle sans côtés de même longueur.",
+     "explication": "Il va dans la branche « non » à la question « au moins 2 côtés isométriques ? »."
+    }
+   ],
+   "pieges": [
+    "Compter deux fois la partie commune des cercles.",
+    "Oublier ce qui est écrit en dehors des cercles quand on demande le total.",
+    "Additionner au lieu de multiplier dans un arbre de choix (3 + 4 au lieu de 3 × 4).",
+    "Proposer un critère d'arbre sans vérifier qu'il marche pour toutes les figures de la branche."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 3,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Retrouver les deux critères d'un arbre de figures : « est-ce un quadrilatère ? », puis « a-t-il au moins un angle droit ? »."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 3,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Placer des figures dans un arbre : les petits traits indiquent les côtés isométriques ; un triangle sans côtés isométriques va dans sa propre case."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-diagonales-medianes",
@@ -809,7 +1661,83 @@
     "Le carré et le triangle équilatéral sont réguliers ; le rectangle et le losange ne le sont pas."
    ],
    "exemple": "Un hexagone régulier tracé dans un cercle a des côtés égaux au rayon : on reporte 6 fois le rayon au compas.",
-   "astuce": "Penta = 5, hexa = 6, octo = 8 (comme une pieuvre !), déca = 10."
+   "astuce": "Penta = 5, hexa = 6, octo = 8 (comme une pieuvre !), déca = 10.",
+   "comprendre": [
+    "Un polygone est une figure fermée formée uniquement de segments. Le cercle n'est pas un polygone : son bord est courbe. On nomme un polygone d'après son nombre de côtés : triangle 3, quadrilatère 4, pentagone 5, hexagone 6, octogone 8, décagone 10.",
+    "Un polygone est régulier s'il a à la fois tous ses côtés de même longueur et tous ses angles de même amplitude. Le carré est régulier. Le losange (côtés égaux, angles différents) et le rectangle (angles égaux, côtés différents) ne le sont pas.",
+    "Pour classer des polygones, on observe le nombre de côtés, les côtés de même longueur (petits traits), les angles droits (petit carré) et les côtés parallèles. Au CEB, on les range souvent dans un arbre ou un tableau."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un panneau STOP.",
+     "explication": "Un octogone régulier : 8 côtés égaux et 8 angles égaux."
+    },
+    {
+     "cas": "Le losange.",
+     "explication": "Ses 4 côtés sont égaux, mais pas ses angles : il n'est pas régulier."
+    },
+    {
+     "cas": "Un pentagone aux côtés de longueurs différentes.",
+     "explication": "C'est bien un pentagone, mais il est irrégulier."
+    },
+    {
+     "cas": "Un disque.",
+     "explication": "Ce n'est pas un polygone : son bord est une ligne courbe."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un polygone est régulier dès que ses côtés sont égaux (le losange).",
+    "Appeler polygone une figure dont un bord est courbe.",
+    "Confondre hexagone (6 côtés) et octogone (8 côtés).",
+    "Oublier qu'un triangle aussi est un polygone."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 3,
+     "questions": [
+      "4a"
+     ],
+     "libelle": "question 4a",
+     "texte": "Le cercle n'est pas un polygone ; la figure à 6 côtés est un hexagone ; celle qui a 5 côtés égaux et 5 angles égaux est un pentagone régulier."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 3,
+     "questions": [
+      "7a"
+     ],
+     "libelle": "question 7a",
+     "texte": "Toutes les figures sont des polygones irréguliers, sauf l'hexagone régulier et le triangle équilatéral."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 3,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Dans l'arbre, le rectangle a les angles égaux mais pas tous les côtés ; le losange a les côtés égaux mais pas tous les angles."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "16a"
+     ],
+     "libelle": "question 16a",
+     "texte": "Les figures du groupe A ont été rassemblées parce que chacune a au moins un angle droit."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-mouvements",
@@ -823,7 +1751,61 @@
     "Ces trois mouvements ne changent ni les longueurs ni les angles. L'agrandissement et la réduction changent la taille, pas la forme."
    ],
    "exemple": "Agrandir au double un rectangle de 3 × 2 carreaux donne 6 × 4 carreaux : longueurs × 2, aire × 4.",
-   "astuce": "Repère un petit détail de la figure (un coin, un « pied ») et regarde où il se retrouve dans l'image."
+   "astuce": "Repère un petit détail de la figure (un coin, un « pied ») et regarde où il se retrouve dans l'image.",
+   "comprendre": [
+    "On peut déplacer une figure de trois façons sans changer sa forme ni sa taille. Le glissement la fait avancer sans la tourner. Le retournement la retourne comme un calque qu'on renverse : on obtient une image en miroir. Le pivotement la fait tourner autour d'un point (quart de tour, demi-tour…).",
+    "Pour reconnaitre le mouvement, suis un petit détail de la figure (un coin, une feuille, un « pied ») et regarde où il se retrouve dans l'image. S'il a changé de côté comme dans un miroir, il y a eu un retournement. Si la figure a la tête en bas sans être en miroir, elle a pivoté d'un demi-tour.",
+    "Les frises et les pavages répètent un motif par ces mouvements. L'agrandissement et la réduction, eux, changent la taille mais gardent la forme."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une fleur passée de l'autre côté d'une ligne, tête en bas, puis décalée vers la droite.",
+     "explication": "Un retournement (miroir sur la ligne), puis un glissement."
+    },
+    {
+     "cas": "La lettre F tournée d'un quart de tour.",
+     "explication": "Un pivotement : elle n'est pas en miroir."
+    },
+    {
+     "cas": "Un rectangle de 3 × 2 carreaux agrandi au double.",
+     "explication": "6 × 4 carreaux : les longueurs sont multipliées par 2."
+    },
+    {
+     "cas": "Un carrelage où il manque une pièce.",
+     "explication": "Regarde comment le motif se répète autour du trou pour choisir la bonne pièce."
+    }
+   ],
+   "pieges": [
+    "Confondre retournement et demi-tour : le retournement donne une image en miroir.",
+    "Ne regarder que la forme générale, sans suivre un détail.",
+    "Croire qu'un glissement peut faire tourner la figure.",
+    "Oublier qu'il faut parfois deux mouvements pour passer d'une figure à l'autre."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 3,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Pour compléter le carrelage, on regarde comment le motif se répète à chaque croisement."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 3,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Pour passer de la fleur A à la fleur A' : un retournement (en miroir sur la ligne), puis un glissement le long de la frise."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-perimetre-constant",
@@ -837,7 +1819,61 @@
     "Si on ajoute à la longueur ce qu'on enlève à la largeur, le périmètre ne change pas."
    ],
    "exemple": "Périmètre 16 cm : 7 × 1 = 7 cm² ; 6 × 2 = 12 cm² ; 5 × 3 = 15 cm² ; 4 × 4 = 16 cm² (le plus grand).",
-   "astuce": "Commence par calculer le demi-périmètre, puis fais la liste des paires de côtés possibles."
+   "astuce": "Commence par calculer le demi-périmètre, puis fais la liste des paires de côtés possibles.",
+   "comprendre": [
+    "Le périmètre est la longueur du tour d'une figure ; l'aire est la mesure de sa surface. Deux figures peuvent avoir le même périmètre et des aires différentes, ou la même aire et des périmètres différents.",
+    "Pour un rectangle, périmètre = 2 × (longueur + largeur). Donc longueur + largeur = périmètre : 2, le demi-périmètre. Pour trouver tous les rectangles d'un périmètre donné, cherche toutes les paires de nombres qui font ce demi-périmètre.",
+    "À périmètre égal, plus le rectangle ressemble à un carré, plus son aire est grande. Un rectangle « strict » a une longueur et une largeur différentes : le carré ne compte pas."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Rectangles de périmètre 16 cm.",
+     "explication": "Demi-périmètre 8 : 7 × 1 = 7 cm² ; 6 × 2 = 12 cm² ; 5 × 3 = 15 cm² ; 4 × 4 = 16 cm² (le carré, la plus grande aire)."
+    },
+    {
+     "cas": "Périmètre 18 cm, rectangle strict.",
+     "explication": "Longueur + largeur = 9 : 6 et 3, ou 5 et 4… mais pas 4,5 et 4,5, qui donne un carré."
+    },
+    {
+     "cas": "Un rectangle de 6 carreaux sur 3 et un autre de 2 carreaux de large.",
+     "explication": "Périmètre 18 ; l'autre doit mesurer 9 − 2 = 7 carreaux de long."
+    },
+    {
+     "cas": "On ajoute 1 cm à la longueur et on enlève 1 cm à la largeur.",
+     "explication": "Le périmètre ne change pas, mais l'aire, si."
+    }
+   ],
+   "pieges": [
+    "Confondre périmètre (le tour) et aire (la surface).",
+    "Oublier de diviser le périmètre par 2 avant de chercher la longueur et la largeur.",
+    "Proposer un carré quand on demande un rectangle strict.",
+    "Croire que même périmètre veut dire même aire."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 4,
+     "questions": [
+      "5b"
+     ],
+     "libelle": "question 5b",
+     "texte": "Un rectangle strict de 18 cm de périmètre : longueur + largeur = 9 cm, par exemple 6 cm et 3 cm."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 4,
+     "questions": [
+      "6a"
+     ],
+     "libelle": "question 6a",
+     "texte": "Le rectangle A (6 sur 3 carreaux) a un périmètre de 18 ; le rectangle B, large de 2 carreaux, doit en mesurer 7 de long."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-vocabulaire-operations",
@@ -851,7 +1887,38 @@
     "Dividende = quotient × diviseur + reste."
    ],
    "exemple": "Dans 87 : 7 = 12 reste 3 : 87 est le dividende, 7 le diviseur, 12 le quotient et 3 le reste.",
-   "astuce": "« Le produit de la somme de 3 et 4 par 5 » : (3 + 4) × 5 = 35. Commence par l'opération la plus « intérieure »."
+   "astuce": "« Le produit de la somme de 3 et 4 par 5 » : (3 + 4) × 5 = 35. Commence par l'opération la plus « intérieure ».",
+   "comprendre": [
+    "Chaque opération a son vocabulaire. L'addition donne une somme ; la soustraction, une différence ; la multiplication, un produit ; la division, un quotient. Les nombres qu'on additionne sont des termes ; ceux qu'on multiplie, des facteurs.",
+    "Dans une division, le dividende est le nombre qu'on partage, le diviseur est le nombre par lequel on divise. S'il reste quelque chose, c'est le reste : il est toujours plus petit que le diviseur. Vérification : dividende = quotient × diviseur + reste.",
+    "Ces mots servent à lire les énoncés : « le double » (× 2), « la moitié » (: 2), « le triple » (× 3), « le quart » (: 4). Dans une phrase longue, commence par l'opération la plus intérieure : « le produit de la somme de 3 et 4 par 5 » = (3 + 4) × 5 = 35."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "87 : 7 = 12, reste 3",
+     "explication": "87 est le dividende, 7 le diviseur, 12 le quotient et 3 le reste. Vérification : 12 × 7 + 3 = 87."
+    },
+    {
+     "cas": "La différence entre 50 et 18",
+     "explication": "50 − 18 = 32."
+    },
+    {
+     "cas": "Le produit de 6 et 4",
+     "explication": "6 × 4 = 24."
+    },
+    {
+     "cas": "La moitié de la somme de 30 et 10",
+     "explication": "(30 + 10) : 2 = 20."
+    }
+   ],
+   "pieges": [
+    "Confondre somme (addition) et produit (multiplication).",
+    "Donner un reste plus grand que le diviseur.",
+    "Inverser l'ordre dans une différence ou une division : 50 − 18, pas 18 − 50.",
+    "Calculer de gauche à droite sans chercher l'opération la plus intérieure."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces mots reviennent dans tous les énoncés de problèmes.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-egalites",
@@ -879,7 +1946,38 @@
     "On simplifie le résultat si possible : on divise le numérateur et le dénominateur par un même nombre."
    ],
    "exemple": "1/4 + 3/8 = 2/8 + 3/8 = 5/8. 4 × 3/8 = 12/8 = 3/2.",
-   "astuce": "Pense à des parts de pizza : on ne peut additionner que des parts de même taille."
+   "astuce": "Pense à des parts de pizza : on ne peut additionner que des parts de même taille.",
+   "comprendre": [
+    "Pour multiplier une fraction par un nombre entier, on multiplie le numérateur et on garde le dénominateur : 3 × 2/7 = 6/7. C'est comme prendre 3 fois 2 parts d'un septième.",
+    "Pour additionner ou soustraire des fractions, il faut le même dénominateur. Si un dénominateur est un multiple de l'autre, transforme la fraction qui a le plus petit : 1/4 = 2/8. Puis additionne ou soustrais les numérateurs et garde le dénominateur. On n'additionne jamais les dénominateurs.",
+    "Simplifie le résultat quand c'est possible, en divisant le numérateur et le dénominateur par le même nombre : 12/8 = 3/2. Une fraction plus grande que 1 peut s'écrire avec un entier : 3/2 = 1 1/2."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "4 × 3/8",
+     "explication": "12/8, qu'on simplifie par 4 : 3/2, soit 1 1/2."
+    },
+    {
+     "cas": "1/4 + 3/8",
+     "explication": "2/8 + 3/8 = 5/8."
+    },
+    {
+     "cas": "5/6 − 1/3",
+     "explication": "1/3 = 2/6, donc 5/6 − 2/6 = 3/6 = 1/2."
+    },
+    {
+     "cas": "3 pizzas partagées en quarts, on mange 5 quarts.",
+     "explication": "Il reste 12/4 − 5/4 = 7/4 de pizza."
+    }
+   ],
+   "pieges": [
+    "Multiplier aussi le dénominateur par l'entier (3 × 2/7 = 6/21 est faux).",
+    "Additionner les dénominateurs.",
+    "Oublier de transformer une fraction avant d'additionner.",
+    "Oublier de simplifier quand la question le demande."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; les additions de fractions des CEB sont dans la fiche « Additionner des fractions ».",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-promotions",
@@ -907,7 +2005,38 @@
     "Situation de proportionnalité : on passe toujours d'un ensemble à l'autre en multipliant par le même nombre. Avec « + 3 », ce n'est pas de la proportionnalité."
    ],
    "exemple": "Cahiers → prix : 2 → 3 € ; 5 → 7,50 €. Prix d'un cahier = 3 : 2 = 1,50 €. Pour 8 cahiers : 8 × 1,50 = 12 €.",
-   "astuce": "Pour remonter une flèche, fais l'opération inverse : × 4 devient : 4, + 3 devient − 3."
+   "astuce": "Pour remonter une flèche, fais l'opération inverse : × 4 devient : 4, + 3 devient − 3.",
+   "comprendre": [
+    "Un graphe fléché relie des éléments par des flèches. Toutes les flèches d'un même graphe représentent la même relation ou la même opération : « × 4 », « + 3 », « est le double de ».",
+    "Le sens de la flèche compte. Avec la relation « est le double de », la flèche 8 → 4 se lit « 8 est le double de 4 » ; dans l'autre sens, ce serait faux. Pour remonter une flèche, fais l'opération inverse : × 4 devient : 4, + 3 devient − 3.",
+    "Pour trouver l'opération cachée, essaie-la sur une flèche, puis vérifie qu'elle marche pour toutes les autres. Dans une situation de proportionnalité (cahiers → prix), on passe toujours d'un nombre à l'autre en multipliant par le même nombre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "2 → 8 ; 5 → 20 ; 7 → ?",
+     "explication": "Chaque flèche multiplie par 4 : 7 → 28."
+    },
+    {
+     "cas": "? → 15 avec la flèche « + 6 ».",
+     "explication": "On remonte : 15 − 6 = 9."
+    },
+    {
+     "cas": "Cahiers → prix : 2 → 3 € ; 5 → 7,50 €.",
+     "explication": "Un cahier coute 1,50 € ; 8 cahiers coutent 8 × 1,50 = 12 €."
+    },
+    {
+     "cas": "3 → 9 ; 4 → 10.",
+     "explication": "Ce n'est pas « × 3 » (4 × 3 = 12). La règle qui marche pour les deux flèches est « + 6 »."
+    }
+   ],
+   "pieges": [
+    "Trouver une opération avec une seule flèche, sans vérifier les autres.",
+    "Lire la flèche dans le mauvais sens.",
+    "Oublier de faire l'opération inverse pour remonter une flèche.",
+    "Croire qu'une situation est proportionnelle alors que la règle est une addition."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les graphes fléchés aident à résoudre beaucoup de problèmes de proportionnalité.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-assemblages-cubes",
@@ -921,7 +2050,61 @@
     "Un grand cube de 2 × 2 × 2 contient 8 petits cubes ; un grand cube de 3 × 3 × 3 en contient 27."
    ],
    "exemple": "Des colonnes de 3, 2, 2 et 1 cubes : 3 + 2 + 2 + 1 = 8 cubes. Vu de dessus : 4 cases.",
-   "astuce": "Dessine la vue de dessus et écris dans chaque case la hauteur de la colonne, puis additionne."
+   "astuce": "Dessine la vue de dessus et écris dans chaque case la hauteur de la colonne, puis additionne.",
+   "comprendre": [
+    "Pour compter les cubes d'un assemblage, compte colonne par colonne : une colonne de 3 cubes compte 3 cubes, même si on ne voit que celui du dessus. Un cube ne flotte pas : sous chaque cube visible, il y a d'autres cubes, cachés.",
+    "Vu de dessus, on voit une case par colonne, quelle que soit sa hauteur. Une bonne méthode : dessine la vue de dessus et écris dans chaque case la hauteur de la colonne, puis additionne.",
+    "Pour compter les faces visibles, pars de 6 faces par cube, puis enlève les faces posées sur la table et les faces collées entre deux cubes (2 faces par contact)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des colonnes de 3, 2, 2 et 1 cubes.",
+     "explication": "3 + 2 + 2 + 1 = 8 cubes. Vu de dessus : 4 cases."
+    },
+    {
+     "cas": "Un grand cube de 3 × 3 × 3.",
+     "explication": "Il contient 27 petits cubes."
+    },
+    {
+     "cas": "4 cubes en ligne posés sur la table.",
+     "explication": "24 faces, moins 4 posées sur la table, moins 6 collées (3 contacts × 2) : 14 faces visibles."
+    },
+    {
+     "cas": "Un assemblage qu'on bascule sur un autre côté.",
+     "explication": "Son empreinte sur la table change, mais le nombre de cubes reste le même."
+    }
+   ],
+   "pieges": [
+    "Oublier les cubes cachés sous les autres.",
+    "Compter une colonne entière comme un seul cube parce qu'on ne voit que son dessus.",
+    "Oublier qu'un contact cache 2 faces, une sur chaque cube.",
+    "Choisir une empreinte avec plus de carrés qu'il n'y a de cubes."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 3,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "Faces visibles de trois assemblages : 14, 25 et 38, en enlevant les faces posées sur la table et les faces collées."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 3,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Un assemblage de 5 cubes déposé autrement peut laisser une empreinte d'un carré ou de deux carrés côte à côte, jamais de 6 carrés."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-symboles-geo",
@@ -949,7 +2132,38 @@
     "Le nombre du dessous s'obtient en « coupant » le nombre au bon rang ; celui du dessus est le suivant."
    ],
    "exemple": "12,507 au centième : 12,50 < 12,507 < 12,51.",
-   "astuce": "Vérifie toujours : le nombre doit être plus grand que celui de gauche et plus petit que celui de droite."
+   "astuce": "Vérifie toujours : le nombre doit être plus grand que celui de gauche et plus petit que celui de droite.",
+   "comprendre": [
+    "Encadrer un nombre, c'est l'écrire entre deux nombres plus simples, les plus proches possible : un juste en dessous, un juste au-dessus. Au dixième, les deux nombres ont un chiffre après la virgule et se suivent : 7,3 < 7,38 < 7,4.",
+    "Au centième, ils ont deux chiffres après la virgule : 7,38 < 7,386 < 7,39. Au millième, trois chiffres : 2,456 < 2,4567 < 2,457. Pour encadrer à l'unité : 7 < 7,38 < 8.",
+    "Le nombre du dessous s'obtient en coupant le nombre au bon rang ; celui du dessus est le suivant. Pense à une droite graduée : le nombre se trouve entre deux graduations voisines."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "12,507 au centième",
+     "explication": "12,50 < 12,507 < 12,51."
+    },
+    {
+     "cas": "3,96 au dixième",
+     "explication": "3,9 < 3,96 < 4 : après 3,9 vient 4,0."
+    },
+    {
+     "cas": "0,45 à l'unité",
+     "explication": "0 < 0,45 < 1."
+    },
+    {
+     "cas": "8,2 au centième",
+     "explication": "8,2 = 8,20 : il est déjà au centième, on peut écrire 8,19 < 8,2 < 8,21 si on veut un encadrement strict."
+    }
+   ],
+   "pieges": [
+    "Donner deux nombres qui ne se suivent pas (7,3 < 7,38 < 7,5).",
+    "Se tromper de rang (encadrer au dixième quand on demande le centième).",
+    "Mal passer à l'unité suivante (3,9 puis 3,10 au lieu de 4).",
+    "Oublier de vérifier que le nombre est bien entre les deux."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais encadrer sert à placer les décimaux sur une droite graduée et à comparer des nombres.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "ma-horaire",

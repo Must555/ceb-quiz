@@ -11,7 +11,61 @@
     "Omnivore : mange à la fois des végétaux et des animaux."
    ],
    "exemple": "La vache est herbivore, le loup est carnivore, le sanglier est omnivore.",
-   "astuce": "Omni = « tout » : l'omnivore mange de tout."
+   "astuce": "Omni = « tout » : l'omnivore mange de tout.",
+   "comprendre": [
+    "Le régime alimentaire d'un animal, c'est ce qu'il mange. L'herbivore mange des végétaux (herbe, feuilles, graines, fruits). Le carnivore mange d'autres animaux (viande, poissons, insectes). L'omnivore mange les deux.",
+    "Les dents donnent un indice. Les carnivores ont de longues canines pointues pour attraper et déchirer. Les herbivores ont de larges incisives pour couper l'herbe et des molaires plates pour broyer. Les omnivores ont des dents de chaque sorte, un peu comme les nôtres.",
+    "Le régime peut changer avec les saisons : le renard mange plus de fruits en été et en automne, et surtout des petits mammifères en hiver. Un graphique en secteurs montre la part de chaque aliment."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La vache, le loup et le sanglier.",
+     "explication": "La vache est herbivore, le loup carnivore, le sanglier omnivore."
+    },
+    {
+     "cas": "Un crâne avec de longues canines recourbées.",
+     "explication": "Un carnivore."
+    },
+    {
+     "cas": "L'hirondelle, qui attrape des insectes en vol.",
+     "explication": "Un insectivore, donc un animal qui mange d'autres animaux."
+    },
+    {
+     "cas": "L'être humain.",
+     "explication": "Un omnivore : il peut manger des végétaux et des animaux."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un animal qui mange des insectes est herbivore.",
+    "Classer un animal d'après sa taille ou sa force (le grand éléphant est herbivore).",
+    "Lire un graphique de régime sans comparer les parts saison par saison.",
+    "Oublier qu'omnivore veut dire « qui mange de tout »."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "1a"
+     ],
+     "libelle": "question 1a",
+     "texte": "Le régime du renard roux change avec les saisons : en hiver, les mammifères forment presque tout son repas."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "11a"
+     ],
+     "libelle": "question 11a",
+     "texte": "Un crâne aux longues canines pointues est celui d'un carnivore ; un crâne aux dents de chaque sorte, comme les nôtres, celui d'un omnivore."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-reproduction",
@@ -45,7 +99,7 @@
     },
     {
      "cas": "Le cerf.",
-     "explication": "Vivipare ; le faon naît au printemps, environ 8 mois après l'accouplement d'automne."
+     "explication": "Vivipare ; le faon nait au printemps, environ 8 mois après l'accouplement d'automne."
     }
    ],
    "pieges": [
@@ -103,7 +157,38 @@
     "Rester actif : continuer à chercher sa nourriture (renard, cerf, écureuil, mésange)."
    ],
    "exemple": "L'hirondelle part en Afrique en automne, car il n'y a plus d'insectes volants chez nous en hiver.",
-   "astuce": "L'écureuil n'hiberne pas : il reste actif et mange les réserves qu'il a cachées."
+   "astuce": "L'écureuil n'hiberne pas : il reste actif et mange les réserves qu'il a cachées.",
+   "comprendre": [
+    "En hiver, il fait froid et la nourriture est rare. Les animaux s'y adaptent de quatre façons. Certains hibernent : ils dorment profondément tout l'hiver, leur cœur bat très lentement et ils vivent sur leurs réserves de graisse (hérisson, loir, chauve-souris).",
+    "D'autres s'engourdissent : leur corps prend la température de l'air, ils se cachent et ne bougent presque plus (grenouille, crapaud, lézard, couleuvre, coccinelle). D'autres encore migrent vers des pays plus chauds, où ils trouvent à manger (hirondelle, cigogne, martinet).",
+    "Enfin, beaucoup restent actifs : ils cherchent leur nourriture tout l'hiver, changent parfois de pelage ou de plumage, ou mangent les réserves qu'ils ont cachées (renard, cerf, écureuil, mésange)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "L'hirondelle.",
+     "explication": "Elle part en Afrique en automne, car il n'y a plus d'insectes volants chez nous en hiver."
+    },
+    {
+     "cas": "Le hérisson.",
+     "explication": "Il hiberne sous un tas de feuilles, en vivant sur ses réserves."
+    },
+    {
+     "cas": "La grenouille.",
+     "explication": "Elle s'engourdit dans la vase au fond de la mare."
+    },
+    {
+     "cas": "L'écureuil.",
+     "explication": "Il n'hiberne pas : il reste actif et mange les noisettes qu'il a cachées."
+    }
+   ],
+   "pieges": [
+    "Croire que l'écureuil hiberne.",
+    "Confondre hiberner (dormir profondément, corps chaud ralenti) et s'engourdir (le corps prend la température de l'air).",
+    "Croire que les oiseaux migrent tous : la mésange reste chez nous.",
+    "Réveiller un animal qui hiberne : il dépense alors ses réserves."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais elle aide à comprendre comment les animaux s'adaptent à leur milieu.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-metamorphoses",
@@ -246,7 +331,50 @@
     "Les champignons ne sont ni des plantes ni des animaux : sans chlorophylle, ils se nourrissent de matière déjà faite et se reproduisent par des spores."
    ],
    "exemple": "En forêt, le ver de terre et les champignons font disparaître les feuilles mortes.",
-   "astuce": "Tous les êtres vivants dépendent les uns des autres."
+   "astuce": "Tous les êtres vivants dépendent les uns des autres.",
+   "comprendre": [
+    "Un écosystème, c'est un milieu (le sol, l'eau, la lumière, la température) et tous les êtres vivants qui y vivent : une mare, une forêt, une prairie. Chaque être vivant y est adapté et dépend des autres pour se nourrir, s'abriter ou se reproduire.",
+    "Les décomposeurs (vers de terre, cloportes, champignons, bactéries) se nourrissent des restes morts : feuilles tombées, bois mort, cadavres. Ils les transforment en matières minérales qui nourrissent à nouveau le sol et les plantes. Sans eux, les restes s'entasseraient.",
+    "Les champignons ne sont ni des plantes ni des animaux : ils n'ont pas de chlorophylle, se nourrissent de matière déjà fabriquée et se reproduisent par des spores. Les petits animaux du sol, comme le cloporte, préfèrent souvent les endroits humides, frais et sombres."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Les feuilles mortes en forêt.",
+     "explication": "Les vers de terre, les cloportes et les champignons les font disparaitre peu à peu et enrichissent le sol."
+    },
+    {
+     "cas": "Un champignon sur un tronc mort.",
+     "explication": "C'est un décomposeur : il se nourrit du bois mort."
+    },
+    {
+     "cas": "Une bouteille avec un côté chaud et un côté froid.",
+     "explication": "Elle permet de savoir si les cloportes préfèrent le froid ou la chaleur."
+    },
+    {
+     "cas": "Une mare.",
+     "explication": "Un écosystème : l'eau, les plantes, les insectes, les grenouilles, les décomposeurs du fond."
+    }
+   ],
+   "pieges": [
+    "Croire que les champignons sont des plantes.",
+    "Oublier les décomposeurs dans un écosystème.",
+    "Croire qu'un écosystème est seulement un lieu, sans les êtres vivants.",
+    "Dans une expérience sur les petits animaux, changer plusieurs conditions à la fois."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "La terre est humide partout et l'éclairage est le même ; seul un côté est au-dessus de glaçons et l'autre au-dessus d'eau chaude : l'expérience demande si les cloportes préfèrent le froid ou la chaleur."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-plantes",
@@ -261,7 +389,72 @@
     "Feuillus : feuilles larges ; conifères : aiguilles ou écailles, graines dans des cônes."
    ],
    "exemple": "La tomate contient des graines : pour un botaniste, c'est un fruit.",
-   "astuce": "Photo = lumière, synthèse = fabrication."
+   "astuce": "Photo = lumière, synthèse = fabrication.",
+   "comprendre": [
+    "Chaque organe de la plante a son rôle. Les racines fixent la plante et puisent l'eau et les sels minéraux du sol. La tige la soutient et transporte la sève. Les feuilles fabriquent la nourriture. La fleur sert à la reproduction.",
+    "La plante fabrique elle-même sa nourriture : grâce à la lumière, ses feuilles utilisent l'eau et le dioxyde de carbone de l'air pour fabriquer des sucres, et rejettent du dioxygène. C'est la photosynthèse. Pour vivre, une plante a donc besoin de lumière, d'eau, d'air, de sels minéraux et d'une température qui lui convient.",
+    "Une graine germe avec de l'eau, de l'air et de la chaleur : elle n'a besoin ni de terre ni de lumière au début, car elle a des réserves. Ensuite, la jeune plante a besoin de lumière pour grandir et verdir."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des graines sur du coton humide, sans terre.",
+     "explication": "Elles germent : la terre n'est pas nécessaire à la germination."
+    },
+    {
+     "cas": "Une jeune plante gardée dans le noir.",
+     "explication": "Elle s'allonge, jaunit, puis dépérit : il lui manque la lumière."
+    },
+    {
+     "cas": "Des tulipes dans un vase dont le niveau d'eau baisse.",
+     "explication": "La tige aspire l'eau, qui monte jusqu'aux feuilles et aux fleurs."
+    },
+    {
+     "cas": "Le cycle du pommier.",
+     "explication": "Graine, germination, croissance, floraison, pollinisation et fécondation, puis fruits et graines."
+    }
+   ],
+   "pieges": [
+    "Croire qu'une graine a besoin de terre ou de lumière pour germer.",
+    "Croire que la plante mange la terre : elle y puise de l'eau et des sels minéraux, et fabrique sa nourriture dans ses feuilles.",
+    "Dans une expérience, changer deux conditions à la fois.",
+    "Oublier que les feuilles rejettent du dioxygène à la lumière."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 5,
+     "questions": [
+      "1a"
+     ],
+     "libelle": "question 1a",
+     "texte": "Dans l'expérience 1, seule la température change d'un pot à l'autre : c'est la seule condition que l'expérience permet de tester."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Une plante à la lumière et une autre dans l'obscurité : celle qui est dans le noir dépérit."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "12a"
+     ],
+     "libelle": "question 12a",
+     "texte": "Pour comparer les expériences avec les tulipes, il faut le même endroit et la même quantité d'eau : on ne change qu'une chose à la fois."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-fleur",
@@ -275,7 +468,50 @@
     "Les graines sont dispersées par le vent, l'eau, les animaux ou la plante elle-même."
    ],
    "exemple": "Le pissenlit a des graines à parachute : le vent les emporte.",
-   "astuce": "Ovaire → fruit, ovule → graine."
+   "astuce": "Ovaire → fruit, ovule → graine.",
+   "comprendre": [
+    "La fleur sert à la reproduction de la plante. Ses organes mâles, les étamines, produisent le pollen. Son organe femelle, le pistil, contient l'ovaire, où se trouvent les ovules.",
+    "Pour qu'il y ait des graines, le pollen doit arriver sur le pistil d'une fleur de la même espèce : c'est la pollinisation. Le vent ou les insectes la font. Pour attirer les insectes, la fleur stimule leurs sens : des couleurs vives (la vue), une odeur (l'odorat), un nectar sucré (le gout).",
+    "Après la fécondation, l'ovaire grossit et devient le fruit ; les ovules deviennent les graines. Les graines sont ensuite dispersées par le vent, l'eau, les animaux ou la plante elle-même, puis elles germent et le cycle recommence."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une abeille qui butine.",
+     "explication": "Elle boit le nectar et transporte, sans le vouloir, du pollen d'une fleur à l'autre."
+    },
+    {
+     "cas": "Le pissenlit.",
+     "explication": "Ses graines ont un petit parachute : le vent les emporte."
+    },
+    {
+     "cas": "La cerise.",
+     "explication": "L'ovaire de la fleur est devenu le fruit ; le noyau contient la graine."
+    },
+    {
+     "cas": "Le nectar sucré.",
+     "explication": "C'est un stimulus pour le gout : il attire les insectes."
+    }
+   ],
+   "pieges": [
+    "Confondre étamines (mâles, pollen) et pistil (femelle, ovules).",
+    "Croire que le fruit vient de la feuille ou de la tige : il vient de l'ovaire.",
+    "Confondre pollinisation (le transport du pollen) et fécondation (la rencontre dans l'ovule).",
+    "Associer un stimulus au mauvais sens (l'odeur, c'est l'odorat)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 5,
+     "questions": [
+      "2b"
+     ],
+     "libelle": "question 2b",
+     "texte": "Pour attirer les insectes, la fleur stimule leurs sens : son nectar sucré vise le gout, son odeur vise l'odorat, ses couleurs visent la vue."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-appareils",
@@ -302,7 +538,38 @@
     "Brosse-toi les dents au moins 2 fois par jour, pendant 2 minutes : les bactéries et le sucre provoquent les caries."
    ],
    "exemple": "Le loup a de longues canines ; la vache a de larges molaires pour broyer l'herbe.",
-   "astuce": "Couronne = partie visible ; racine = cachée dans la gencive."
+   "astuce": "Couronne = partie visible ; racine = cachée dans la gencive.",
+   "comprendre": [
+    "Nos dents n'ont pas toutes la même forme ni le même rôle. Les incisives, plates et tranchantes, coupent. Les canines, pointues, déchirent. Les prémolaires et les molaires, larges, broient les aliments.",
+    "L'enfant a 20 dents de lait, qui tombent vers 6 à 12 ans. L'adulte a 32 dents définitives : 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont les 4 dents de sagesse). La couronne est la partie visible ; la racine est cachée dans la gencive.",
+    "Les bactéries de la bouche transforment le sucre en acide, qui attaque les dents : c'est la carie. Pour l'éviter, on se brosse les dents au moins deux fois par jour, pendant deux minutes, et on limite les sucreries. Les dents des animaux montrent aussi leur régime alimentaire."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Croquer une pomme.",
+     "explication": "Les incisives coupent le morceau, les molaires le broient."
+    },
+    {
+     "cas": "Le loup.",
+     "explication": "De longues canines pour déchirer la viande : un carnivore."
+    },
+    {
+     "cas": "La vache.",
+     "explication": "De larges molaires pour broyer l'herbe : un herbivore."
+    },
+    {
+     "cas": "Une dent de lait qui tombe à 7 ans.",
+     "explication": "Une dent définitive pousse à sa place."
+    }
+   ],
+   "pieges": [
+    "Confondre canines (déchirer) et incisives (couper).",
+    "Croire que les dents de lait ne doivent pas être soignées.",
+    "Oublier les prémolaires dans le compte des 32 dents.",
+    "Croire que le sucre abime les dents tout seul : ce sont les bactéries qui le transforment en acide."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; les dents des animaux sont interrogées dans la fiche « Le régime alimentaire » (CEB 2024 : les crânes).",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-alimentation",
@@ -316,7 +583,50 @@
     "Bien dormir (9 à 11 h), bouger chaque jour, boire de l'eau et se laver les mains : c'est bon pour la santé."
    ],
    "exemple": "Un repas équilibré : des légumes, un féculent, un peu de viande ou de poisson, de l'eau.",
-   "astuce": "Varie ton assiette : chaque groupe d'aliments a son rôle."
+   "astuce": "Varie ton assiette : chaque groupe d'aliments a son rôle.",
+   "comprendre": [
+    "Les aliments n'ont pas tous le même rôle. Les aliments bâtisseurs (viande, poisson, œufs, produits laitiers, légumineuses) aident le corps à grandir et à se réparer. Les aliments énergétiques (pain, pâtes, riz, pommes de terre, matières grasses, sucre) donnent de l'énergie. Les fruits et légumes apportent des vitamines, des minéraux et des fibres.",
+    "Le corps a besoin d'énergie pour respirer, faire battre le cœur, grandir et bouger. Ce besoin change avec l'âge et l'activité : il est très élevé à l'adolescence, quand le corps grandit vite, et chez les personnes très actives.",
+    "Être en bonne santé, ce n'est pas seulement manger varié : c'est aussi boire de l'eau, dormir assez, bouger chaque jour et se laver les mains avant de manger."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une assiette de pâtes avec du poisson et des brocolis.",
+     "explication": "Les trois groupes sont présents : énergétique, bâtisseur et protecteur."
+    },
+    {
+     "cas": "Un adolescent de 16 ans et une personne de 75 ans.",
+     "explication": "L'adolescent a besoin de plus d'énergie : il grandit encore."
+    },
+    {
+     "cas": "Un repas de frites, chips et soda.",
+     "explication": "Beaucoup d'énergie, mais presque rien pour bâtir et protéger le corps."
+    },
+    {
+     "cas": "Les lentilles.",
+     "explication": "Une légumineuse : elles aident à bâtir le corps, comme la viande."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un seul groupe d'aliments suffit.",
+    "Croire que les besoins sont les mêmes à tout âge.",
+    "Lire un graphique sans regarder qui est représenté (filles, garçons, âge).",
+    "Oublier l'eau, le sommeil et l'activité physique."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "10a1"
+     ],
+     "libelle": "question 10a",
+     "texte": "D'après le graphique, les besoins énergétiques sont les plus élevés à l'adolescence (environ 2 400 kcal pour les filles et 3 000 kcal pour les garçons de 16 ans)."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-etats",
@@ -357,7 +667,61 @@
     "Séparer : décantation (laisser reposer), filtration (filtre), évaporation (récupérer ce qui est dissous), tamisage (tamis), aimantation (aimant)."
    ],
    "exemple": "Pour récupérer le sel de l'eau de mer, on fait évaporer l'eau (marais salants).",
-   "astuce": "Un filtre ne retient pas ce qui est dissous."
+   "astuce": "Un filtre ne retient pas ce qui est dissous.",
+   "comprendre": [
+    "Un mélange contient plusieurs matières. S'il est homogène, on ne distingue plus les constituants (l'eau sucrée). S'il est hétérogène, on les voit (l'eau et l'huile, l'eau et le sable).",
+    "Une matière soluble se dissout dans l'eau : on ne la voit plus, mais elle est toujours là (le sel, le sucre). Une matière insoluble ne se dissout pas (le sable, l'huile). Une même quantité d'eau ne peut dissoudre qu'une quantité limitée de sel : au-delà, le sel reste au fond.",
+    "Pour séparer un mélange : la décantation (laisser reposer, le plus lourd tombe au fond), la filtration (un filtre retient les grains), le tamisage, l'aimantation (pour le fer) et l'évaporation (l'eau s'en va, ce qui était dissous reste)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "De l'eau et de l'huile dans un verre.",
+     "explication": "Mélange hétérogène : l'huile, plus légère, reste au-dessus."
+    },
+    {
+     "cas": "Récupérer le sel de l'eau de mer.",
+     "explication": "On fait évaporer l'eau, comme dans les marais salants."
+    },
+    {
+     "cas": "De l'eau boueuse.",
+     "explication": "On la laisse reposer (décantation), puis on la filtre."
+    },
+    {
+     "cas": "On ajoute du sel 10 g par 10 g dans de l'eau à 20 °C.",
+     "explication": "À un moment, le sel ne se dissout plus et reste au fond."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un filtre retient le sel ou le sucre dissous.",
+    "Croire qu'une matière dissoute a disparu.",
+    "Conclure sur une quantité qui n'a pas été testée (35 g si on a essayé 30 g et 40 g).",
+    "Confondre soluble (se dissout) et liquide."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 7,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Avec 30 g, tout le sel est dissous ; avec 40 g, il en reste au fond. On n'a jamais essayé 35 g ni chauffé l'eau : on ne peut rien en dire."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "On verse l'eau, puis l'huile, qui reste au-dessus ; le sel ajouté coule et entraine un peu d'huile, qui remonte ensuite."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-materiaux",
@@ -452,7 +816,38 @@
     "L'aiguille d'une boussole est un petit aimant qui indique le nord."
    ],
    "exemple": "Avec un aimant, on peut séparer de la limaille de fer du sable.",
-   "astuce": "Pas tous les métaux : surtout le fer et l'acier."
+   "astuce": "Pas tous les métaux : surtout le fer et l'acier.",
+   "comprendre": [
+    "Un aimant attire certains métaux : le fer, l'acier (fait surtout de fer), le nickel et le cobalt. Il n'attire pas le cuivre, l'aluminium, l'or, ni le bois, le plastique, le verre ou le papier. Tous les métaux ne sont donc pas attirés.",
+    "Un aimant a deux pôles, nord et sud, où la force est la plus grande. Deux pôles de même nom se repoussent ; deux pôles différents s'attirent. L'aimant agit même à travers une feuille de papier, une table en bois ou l'eau, si elle n'est pas trop épaisse.",
+    "L'aiguille d'une boussole est un petit aimant qui s'oriente vers le nord. On se sert aussi des aimants pour trier : au parc à conteneurs, un gros aimant sépare les boites en acier des canettes en aluminium."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un trombone et une pièce en cuivre.",
+     "explication": "Le trombone, en acier, est attiré ; le cuivre, non."
+    },
+    {
+     "cas": "Deux aimants, pôle nord contre pôle nord.",
+     "explication": "Ils se repoussent."
+    },
+    {
+     "cas": "De la limaille de fer mélangée à du sable.",
+     "explication": "Un aimant récupère le fer : c'est une façon de séparer un mélange."
+    },
+    {
+     "cas": "Une boussole.",
+     "explication": "Son aiguille aimantée montre le nord."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un aimant attire tous les métaux.",
+    "Croire que deux pôles identiques s'attirent.",
+    "Croire qu'un aimant n'agit pas à travers un objet non magnétique.",
+    "Confondre conducteur d'électricité et attiré par l'aimant : le cuivre conduit le courant mais n'est pas attiré."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les aimants servent à comprendre le tri des matériaux et la boussole.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-dechets",
@@ -466,7 +861,61 @@
     "Piles, peintures, appareils électriques : point de collecte ou parc à conteneurs."
    ],
    "exemple": "Une brique de lait va dans les PMC, pas dans les papiers-cartons.",
-   "astuce": "Le meilleur déchet est celui qu'on ne produit pas."
+   "astuce": "Le meilleur déchet est celui qu'on ne produit pas.",
+   "comprendre": [
+    "Chaque jour, nous jetons des déchets. Bien les trier permet de les recycler : on en refait de nouveaux objets, ce qui économise des matières premières et de l'énergie. En Belgique, on trie surtout les PMC (emballages en plastique, en métal et cartons à boissons), les papiers-cartons, le verre et les déchets organiques.",
+    "Les déchets organiques (épluchures, restes de fruits et légumes, marc de café) peuvent aller au compost : ils se décomposent et deviennent un engrais naturel. Les déchets dangereux ou encombrants (piles, peintures, appareils électriques, gros objets) vont au parc à conteneurs ou dans un point de collecte.",
+    "Le mieux reste de produire moins de déchets : réduire (moins d'emballages, une gourde au lieu de bouteilles), réutiliser (réparer, donner), puis recycler ce qui reste."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une brique de lait.",
+     "explication": "Elle va dans les PMC, pas dans les papiers-cartons : c'est un carton à boissons."
+    },
+    {
+     "cas": "Une bouteille en verre.",
+     "explication": "Dans la bulle à verre."
+    },
+    {
+     "cas": "Une pile usagée.",
+     "explication": "Dans un point de collecte, jamais à la poubelle : elle contient des produits dangereux."
+    },
+    {
+     "cas": "Des bouteilles en plastique recyclées.",
+     "explication": "On peut en faire du tissu, par exemple le rembourrage d'un oreiller."
+    }
+   ],
+   "pieges": [
+    "Mettre une brique de lait avec les papiers-cartons.",
+    "Jeter les piles avec les déchets ménagers.",
+    "Croire que recycler suffit : réduire et réutiliser passent avant.",
+    "Mettre de la viande ou des produits gras au compost de jardin."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 6,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Au parc à conteneurs, on peut déposer 1 m³ par jour : une caisse de 0,0625 m³, c'est 16 caisses au maximum."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 4,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Avec des bouteilles en plastique recyclées, on fabrique du tissu : 12 bouteilles par oreiller, donc 120 pour 10 oreillers."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-air",
@@ -479,7 +928,50 @@
     "Nous inspirons du dioxygène et rejetons du dioxyde de carbone."
    ],
    "exemple": "Dans 100 litres d'air, il y a environ 21 litres de dioxygène.",
-   "astuce": "21 % de dioxygène : pense à « 21 », comme un anniversaire important !"
+   "astuce": "21 % de dioxygène : pense à « 21 », comme un anniversaire important !",
+   "comprendre": [
+    "L'air est invisible, mais c'est bien de la matière : il occupe de la place, il a une masse et on peut le comprimer, comme dans une pompe à vélo. C'est un mélange de gaz : environ 78 % de diazote, 21 % de dioxygène et 1 % d'autres gaz, dont le dioxyde de carbone.",
+    "Quand on chauffe de l'air, il se dilate : il prend plus de place. Quand il refroidit, il se contracte : il prend moins de place. C'est pour cela qu'une montgolfière gonflée d'air chaud s'élève, et qu'un ballon laissé au froid se dégonfle un peu.",
+    "Nous inspirons de l'air riche en dioxygène et rejetons de l'air plus riche en dioxyde de carbone. Les plantes, à la lumière, font l'inverse."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une bouteille « vide » plongée à l'envers dans l'eau.",
+     "explication": "L'eau n'entre pas : la bouteille est pleine d'air, qui occupe la place."
+    },
+    {
+     "cas": "On chauffe une bouteille, puis on la retourne sur une assiette d'eau colorée.",
+     "explication": "En refroidissant, l'air prend moins de place : l'eau monte dans la bouteille."
+    },
+    {
+     "cas": "Dans 100 litres d'air.",
+     "explication": "Environ 21 litres de dioxygène."
+    },
+    {
+     "cas": "Un ballon gonflé pèse un peu plus que le même ballon vide.",
+     "explication": "L'air a une masse."
+    }
+   ],
+   "pieges": [
+    "Croire qu'une bouteille « vide » ne contient rien.",
+    "Croire que l'air est surtout fait de dioxygène : c'est le diazote, environ 78 %.",
+    "Croire que l'air chaud « disparait » : il prend seulement plus de place.",
+    "Mélanger l'ordre des étapes d'une expérience : chauffer, puis refroidir, puis observer."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Remettre en ordre une expérience : on chauffe l'air de la bouteille avec de l'eau chaude, on la retourne sur l'assiette ; en refroidissant, l'air prend moins de place et l'eau colorée monte."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-transformations",
@@ -492,7 +984,38 @@
     "Une partie de l'énergie est souvent « perdue » en chaleur."
    ],
    "exemple": "Une éolienne transforme l'énergie mécanique du vent en énergie électrique.",
-   "astuce": "Demande-toi : « Qu'est-ce qui le fait marcher ? » puis « Qu'est-ce qu'il produit ? »."
+   "astuce": "Demande-toi : « Qu'est-ce qui le fait marcher ? » puis « Qu'est-ce qu'il produit ? ».",
+   "comprendre": [
+    "L'énergie existe sous plusieurs formes : électrique, thermique (la chaleur), lumineuse, mécanique (le mouvement), sonore, chimique (dans les aliments, les piles, les carburants).",
+    "Un appareil reçoit une forme d'énergie et la transforme en une autre. Une lampe transforme l'énergie électrique en lumière ; un moteur électrique, en mouvement ; une pile, de l'énergie chimique en énergie électrique ; une éolienne, le mouvement du vent en électricité.",
+    "Une partie de l'énergie se transforme presque toujours en chaleur, sans être utile : c'est pour cela qu'une ampoule ou un ordinateur chauffent. L'énergie ne disparait jamais : elle change de forme."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un grille-pain.",
+     "explication": "Énergie électrique → énergie thermique."
+    },
+    {
+     "cas": "Un panneau solaire.",
+     "explication": "Énergie lumineuse → énergie électrique."
+    },
+    {
+     "cas": "Un vélo avec une dynamo.",
+     "explication": "Le mouvement des roues (mécanique) → électricité → lumière du phare."
+    },
+    {
+     "cas": "Ton corps qui court.",
+     "explication": "L'énergie chimique des aliments → mouvement et chaleur."
+    }
+   ],
+   "pieges": [
+    "Croire que l'énergie disparait : elle se transforme.",
+    "Oublier la chaleur produite en plus.",
+    "Inverser ce que l'appareil reçoit et ce qu'il produit.",
+    "Croire qu'une pile contient de l'électricité toute faite : elle contient de l'énergie chimique."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les transformations d'énergie aident à comprendre l'électricité et les sources d'énergie.",
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-electricite",
@@ -563,7 +1086,50 @@
     "Un satellite tourne autour d'une planète : la Lune est le satellite de la Terre."
    ],
    "exemple": "Jupiter est la plus grande planète ; Mercure est la plus proche du Soleil.",
-   "astuce": "« Me Voici Toute Mignonne, Je Suis Une Nébuleuse » : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+   "astuce": "« Me Voici Toute Mignonne, Je Suis Une Nébuleuse » : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune.",
+   "comprendre": [
+    "Le Soleil est une étoile : une énorme boule de gaz très chaude qui produit sa propre lumière. Huit planètes tournent autour de lui. Dans l'ordre, en partant du Soleil : Mercure, Vénus, la Terre, Mars (des planètes rocheuses), puis Jupiter, Saturne, Uranus et Neptune (des planètes géantes).",
+    "La Terre tourne sur elle-même en 24 heures : c'est l'alternance du jour et de la nuit. Elle tourne autour du Soleil en un peu plus de 365 jours : c'est une année. La Lune, satellite de la Terre, tourne autour d'elle en un peu moins d'un mois ; elle ne produit pas de lumière, elle renvoie celle du Soleil.",
+    "Les planètes ne produisent pas de lumière : on les voit parce qu'elles sont éclairées par le Soleil. Les planètes les plus lointaines ont été découvertes tard : Uranus en 1781 et Neptune en 1846."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Jupiter et Mercure.",
+     "explication": "Jupiter est la plus grande planète ; Mercure, la plus proche du Soleil."
+    },
+    {
+     "cas": "Le jour et la nuit.",
+     "explication": "La Terre tourne sur elle-même : le côté tourné vers le Soleil est dans le jour."
+    },
+    {
+     "cas": "La Lune qui brille la nuit.",
+     "explication": "Elle renvoie la lumière du Soleil."
+    },
+    {
+     "cas": "Mnémotechnique : « Me Voici Toute Mignonne, Je Suis Une Nébuleuse ».",
+     "explication": "Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
+    }
+   ],
+   "pieges": [
+    "Croire que le Soleil tourne autour de la Terre.",
+    "Confondre étoile (produit sa lumière) et planète (éclairée).",
+    "Compter Pluton parmi les planètes : depuis 2006, ce n'est plus le cas.",
+    "Confondre la rotation (24 heures, jour et nuit) et le tour du Soleil (une année)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "8c"
+     ],
+     "libelle": "question 8c",
+     "texte": "La planète Neptune a été découverte en 1846, au 19e siècle : seule la scientifique qui vivait à ce moment-là pouvait l'avoir connue."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-terre-mouvements",
@@ -591,7 +1157,72 @@
     "Pour comparer, regarde les valeurs au même moment. Pour un écart, fais une soustraction (grande valeur − petite valeur)."
    ],
    "exemple": "Après 20 minutes, l'eau du pot « Laine » est à 55 °C et celle du pot « Sans rien » à 40 °C : écart = 55 − 40 = 15 degrés.",
-   "astuce": "N'oublie jamais l'unité dans ta réponse (°C, cm, minutes, battements par minute…)."
+   "astuce": "N'oublie jamais l'unité dans ta réponse (°C, cm, minutes, battements par minute…).",
+   "comprendre": [
+    "En sciences, les résultats d'une expérience sont souvent rangés dans un tableau ou un graphique. Lis d'abord le titre, puis ce qui est écrit sur chaque axe ou en tête de chaque colonne, avec l'unité (°C, mm, minutes).",
+    "Pour lire une valeur sur un graphique : pars de l'axe du bas (souvent le temps), monte jusqu'à la courbe ou au bâton, puis va lire la valeur sur l'axe de gauche. Pour l'inverse, pars de la valeur et redescends vers l'axe du bas. Quand une courbe devient plate, la valeur ne change plus.",
+    "Ne conclus que sur ce qui a été mesuré : si le tableau s'arrête à 5 g, on ne peut rien dire de ce qui se passerait avec 6 g. Pour comparer deux résultats, prends-les au même moment et calcule l'écart par une soustraction."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Après 20 minutes, 55 °C dans le pot avec laine et 40 °C dans le pot sans rien.",
+     "explication": "Écart : 55 − 40 = 15 degrés."
+    },
+    {
+     "cas": "De l'eau qui chauffe : la courbe monte, puis reste plate à 100 °C.",
+     "explication": "L'eau bout : sa température ne monte plus."
+    },
+    {
+     "cas": "Un tableau d'essais qui va de 1 g à 5 g.",
+     "explication": "On ne sait pas ce qui se passerait avec 6 g : on ne l'a pas testé."
+    },
+    {
+     "cas": "Des bâtons de couleurs différentes pour chaque groupe.",
+     "explication": "La légende dit quelle couleur correspond à quoi."
+    }
+   ],
+   "pieges": [
+    "Lire sur le mauvais axe ou oublier l'unité.",
+    "Confondre deux courbes ou deux couleurs : vérifie la légende.",
+    "Conclure sur quelque chose qui n'a pas été testé.",
+    "Comparer deux valeurs prises à des moments différents."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 7,
+     "questions": [
+      "3ab"
+     ],
+     "libelle": "question 3",
+     "texte": "L'eau qui chauffe : 46 °C après 4 minutes, puis 100 °C à 16, 20 et 24 minutes, car la courbe devient plate."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "12a"
+     ],
+     "libelle": "question 12a",
+     "texte": "Avec 20 ml et 4 g, la fusée décolle ; le tableau s'arrête à 5 g, donc on ne peut pas savoir ce qui se passe avec 6 g."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "9f"
+     ],
+     "libelle": "question 9f",
+     "texte": "Pour compléter le tableau, on cherche le bon groupe de bâtons (la corde) et la bonne couleur (la quantité d'air), puis on lit la hauteur sur l'axe : 650 mm pour la corde de 2 mm et 5,2 l d'air."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-demarche",
@@ -695,7 +1326,61 @@
     "La lumière absorbée se transforme en énergie thermique ; une surface noire absorbe plus de lumière qu'une surface blanche."
    ],
    "exemple": "Un glaçon entouré de laine fond plus lentement : la laine ralentit l'arrivée de la chaleur de l'air.",
-   "astuce": "Ce n'est pas « le froid qui entre », c'est la chaleur qui sort !"
+   "astuce": "Ce n'est pas « le froid qui entre », c'est la chaleur qui sort !",
+   "comprendre": [
+    "La chaleur passe toujours d'un corps chaud vers un corps plus froid, jamais l'inverse. Une tasse de chocolat chaud refroidit jusqu'à la température de la pièce ; un glaçon se réchauffe et fond. Ce n'est pas le froid qui entre : c'est la chaleur qui sort.",
+    "Un isolant thermique (laine, polystyrène, liège, air immobile) ralentit ce passage. Il garde chaud ce qui est chaud et froid ce qui est froid, mais il ne produit ni chaleur ni froid. Les métaux, au contraire, sont de bons conducteurs : la chaleur les traverse vite.",
+    "On mesure la température avec un thermomètre. En Belgique, on l'exprime en degrés Celsius (°C) ; dans certains pays, en degrés Fahrenheit (°F). Les nombres sont différents, mais c'est la même température : 20 °C = 68 °F."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un glaçon entouré de laine.",
+     "explication": "Il fond plus lentement : la laine freine l'arrivée de la chaleur de la pièce."
+    },
+    {
+     "cas": "De l'eau à 60 °C, avec et sans écharpe.",
+     "explication": "Après une heure, l'eau entourée de l'écharpe est plus chaude : elle a refroidi plus lentement."
+    },
+    {
+     "cas": "Une cuillère en métal dans une soupe chaude.",
+     "explication": "Le manche devient vite chaud : le métal conduit la chaleur."
+    },
+    {
+     "cas": "Un thermomètre qui indique 20 °C.",
+     "explication": "Sur l'échelle Fahrenheit, il indique 68 °F : c'est la même température."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un pull ou une écharpe produit de la chaleur.",
+    "Croire que le froid passe d'un objet à l'autre.",
+    "Croire qu'un isolant ne sert qu'à garder chaud.",
+    "Lire la mauvaise échelle d'un thermomètre à deux échelles."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "5e"
+     ],
+     "libelle": "question 5e",
+     "texte": "L'eau entourée d'une écharpe en laine est encore à 48,4 °C après 60 minutes, contre 35,9 °C sans écharpe : l'écharpe a ralenti le refroidissement."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 7,
+     "questions": [
+      "8c"
+     ],
+     "libelle": "question 8c",
+     "texte": "Le thermomètre indique 20 °C, c'est-à-dire 68 °F."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-effort",
@@ -710,7 +1395,50 @@
     "Après l'effort, au repos, ils redescendent peu à peu vers leur valeur de départ."
    ],
    "exemple": "21 battements en 15 secondes → 21 × 4 = 84 battements par minute.",
-   "astuce": "On sent le pouls au poignet ou sur le côté du cou, avec deux doigts (jamais avec le pouce)."
+   "astuce": "On sent le pouls au poignet ou sur le côté du cou, avec deux doigts (jamais avec le pouce).",
+   "comprendre": [
+    "Pendant un effort, les muscles travaillent plus : ils ont besoin de plus de dioxygène et de nutriments, et rejettent plus de dioxyde de carbone. Le cœur bat donc plus vite pour faire circuler le sang, et on respire plus vite et plus profondément.",
+    "On mesure le rythme cardiaque en battements par minute, en prenant le pouls au poignet ou au cou avec deux doigts. On mesure la ventilation en mouvements respiratoires par minute. Pour gagner du temps, on compte pendant 15 secondes et on multiplie par 4.",
+    "Une seule mesure peut se tromper : on la répète 3 fois et on fait la moyenne. Après l'effort, le rythme redescend peu à peu jusqu'au rythme de repos."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "21 battements en 15 secondes.",
+     "explication": "21 × 4 = 84 battements par minute."
+    },
+    {
+     "cas": "Trois mesures : 80, 84 et 82 battements par minute.",
+     "explication": "Moyenne : (80 + 84 + 82) : 3 = 82."
+    },
+    {
+     "cas": "Après une course.",
+     "explication": "Le cœur bat vite, puis ralentit petit à petit pendant le repos."
+    },
+    {
+     "cas": "Un graphique de la fréquence cardiaque minute par minute.",
+     "explication": "La barre la plus haute montre le moment de l'effort le plus fort."
+    }
+   ],
+   "pieges": [
+    "Prendre le pouls avec le pouce : il a son propre pouls.",
+    "Oublier de multiplier par 4 quand on a compté pendant 15 secondes.",
+    "Se fier à une seule mesure.",
+    "Croire que le cœur s'arrête de battre plus vite dès qu'on s'arrête."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "5b"
+     ],
+     "libelle": "question 5b",
+     "texte": "Sur le graphique, la fréquence cardiaque est de 80 battements par minute une minute avant l'effort ; la plus haute est atteinte à la 12e minute."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-ensembles-emboites",
@@ -739,7 +1467,50 @@
     "Les scientifiques classent les vivants d'après leurs attributs partagés : c'est la classification phylogénétique, qui montre les liens de parenté entre espèces."
    ],
    "exemple": "La chauve-souris vole, mais elle a des poils et 4 membres (ses ailes sont ses membres avant) : elle est classée avec les animaux à poils.",
-   "astuce": "Demande-toi : « Qu'est-ce qu'il A ? »"
+   "astuce": "Demande-toi : « Qu'est-ce qu'il A ? »",
+   "comprendre": [
+    "Un attribut est un caractère qu'on peut observer chez un animal : un squelette interne ou externe, des poils, des plumes, des écailles, des pattes articulées, une coquille, le nombre de doigts, la forme des dents ou du bec.",
+    "Pour classer, les scientifiques regroupent les animaux qui partagent des attributs : ce que l'animal a, et non ce qu'il fait ou l'endroit où il vit. La chauve-souris vole, mais elle a des poils : elle est rangée avec les animaux à poils, pas avec les oiseaux.",
+    "Dans un arbre de classement, chaque embranchement pose une question sur un attribut (« a des plumes ? », « a un seul doigt ? »). On suit les branches pour placer chaque animal, et chaque groupe est inclus dans un plus grand."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "L'araignée et l'insecte.",
+     "explication": "Tous deux ont un squelette externe et des pattes articulées ; l'insecte a 6 pattes et des antennes, l'araignée 8 pattes et pas d'antennes."
+    },
+    {
+     "cas": "La baleine.",
+     "explication": "Elle vit dans l'eau, mais elle a des poils (à la naissance) et allaite ses petits : elle est rangée avec les mammifères, pas avec les poissons."
+    },
+    {
+     "cas": "Le canard et le dindon.",
+     "explication": "Tous deux ont des plumes ; seul le canard a un bec aplati."
+    },
+    {
+     "cas": "L'âne.",
+     "explication": "Il n'a qu'un doigt à chaque patte (le sabot)."
+    }
+   ],
+   "pieges": [
+    "Classer d'après ce que l'animal fait (voler, nager) au lieu de ce qu'il a.",
+    "Classer d'après le milieu de vie.",
+    "Confondre insecte (6 pattes) et araignée (8 pattes).",
+    "Oublier qu'un groupe peut être inclus dans un plus grand (les oiseaux font partie des animaux à squelette interne)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "4c"
+     ],
+     "libelle": "question 4c",
+     "texte": "Dans l'arbre, l'âne va dans l'étiquette « 1 doigt », le chien dans « molaires sécantes » et le dindon parmi les animaux à plumes sans bec aplati."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-espece",
@@ -768,7 +1539,50 @@
     "Inspiration : le diaphragme s'abaisse, les côtes se soulèvent, la cage thoracique s'agrandit. Expiration : le diaphragme remonte, la cage thoracique diminue."
    ],
    "exemple": "Pour courir, le muscle reçoit le dioxygène (poumons → sang → cœur → artères) et les nutriments (intestin grêle → sang).",
-   "astuce": "Le sang est le « camion de livraison » qui relie les trois systèmes."
+   "astuce": "Le sang est le « camion de livraison » qui relie les trois systèmes.",
+   "comprendre": [
+    "Trois systèmes du corps travaillent ensemble. Le système digestif transforme les aliments en nutriments, qui passent dans le sang au niveau de l'intestin grêle. Le système respiratoire fait entrer le dioxygène : dans les alvéoles des poumons, il passe dans le sang, et le dioxyde de carbone en sort.",
+    "Le système circulatoire relie les deux : le cœur pompe le sang, qui part par les artères et revient par les veines. Le sang apporte à chaque muscle et à chaque organe le dioxygène et les nutriments dont ils ont besoin, et il emporte leurs déchets.",
+    "Pendant un effort, les trois systèmes accélèrent ensemble : on respire plus vite, le cœur bat plus vite, et les muscles utilisent plus de nutriments."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un muscle de la jambe pendant une course.",
+     "explication": "Il reçoit le dioxygène (poumons → sang → cœur → artères) et les nutriments (intestin grêle → sang)."
+    },
+    {
+     "cas": "Le dioxyde de carbone produit par les muscles.",
+     "explication": "Le sang l'emporte jusqu'aux poumons, et on le rejette en expirant."
+    },
+    {
+     "cas": "Une tartine mangée le matin.",
+     "explication": "Elle est digérée, puis ses nutriments passent dans le sang dans l'intestin grêle."
+    },
+    {
+     "cas": "Les alvéoles pulmonaires.",
+     "explication": "C'est là que se font les échanges de gaz entre l'air et le sang."
+    }
+   ],
+   "pieges": [
+    "Croire que les nutriments passent dans le sang dans l'estomac : c'est surtout dans l'intestin grêle.",
+    "Croire que le dioxygène reste dans les poumons : le sang l'emporte partout.",
+    "Confondre artères (partent du cœur) et veines (reviennent au cœur).",
+    "Étudier chaque système seul, sans voir le rôle du sang qui les relie."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 9,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Sur le schéma des liens entre les systèmes, les échanges de gaz se font dans les poumons, et les nutriments passent de l'intestin vers le sang."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-ventilation",
@@ -838,7 +1652,61 @@
     "Pour lire une graduation, compte combien vaut un petit trait entre deux nombres écrits. Écris toujours l'unité avec le résultat."
    ],
    "exemple": "Entre 20 et 30 °C il y a 5 petits intervalles : chaque trait vaut 2 °C.",
-   "astuce": "1 kg = 1 000 g ; 1 L = 1 000 mL ; 1 min = 60 s."
+   "astuce": "1 kg = 1 000 g ; 1 L = 1 000 mL ; 1 min = 60 s.",
+   "comprendre": [
+    "Pour mesurer, il faut le bon instrument et la bonne unité. Température : le thermomètre, en degrés Celsius (°C). Masse : la balance, en grammes ou kilogrammes. Durée : le chronomètre, en secondes ou minutes. Volume d'un liquide : le verre gradué ou l'éprouvette, en millilitres ou litres. Longueur : la latte ou le mètre ruban.",
+    "Pour la météo, on utilise aussi le pluviomètre (la quantité de pluie, en mm), l'anémomètre (la vitesse du vent), la girouette (la direction d'où vient le vent) et le baromètre (la pression de l'air).",
+    "Pour lire une graduation, compte d'abord combien vaut un petit trait entre deux nombres écrits. Écris toujours l'unité avec le nombre : « 20 », ce n'est pas une mesure ; « 20 °C », si."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Entre 20 et 30 °C, il y a 5 petits intervalles.",
+     "explication": "Chaque trait vaut 2 °C."
+    },
+    {
+     "cas": "Savoir d'où vient le vent.",
+     "explication": "La girouette."
+    },
+    {
+     "cas": "Mesurer la pluie tombée en une nuit.",
+     "explication": "Le pluviomètre, en millimètres."
+    },
+    {
+     "cas": "Mesurer la vitesse du vent.",
+     "explication": "L'anémomètre, en km/h."
+    }
+   ],
+   "pieges": [
+    "Confondre la girouette (la direction) et l'anémomètre (la vitesse).",
+    "Oublier l'unité.",
+    "Croire que chaque petit trait vaut 1.",
+    "Confondre masse (balance) et volume (verre gradué)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 7,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "L'anémomètre mesure la vitesse du vent, le pluviomètre la pluie tombée, la girouette indique d'où vient le vent et le baromètre mesure la pression de l'air."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "9b"
+     ],
+     "libelle": "question 9b",
+     "texte": "Pour compléter le tableau météo : l'anémomètre donne la vitesse du vent, la girouette sa direction, le pluviomètre la quantité de pluie."
+    }
+   ],
+   "miseAJour": "2026-10-31"
   },
   {
    "id": "sc-sang",

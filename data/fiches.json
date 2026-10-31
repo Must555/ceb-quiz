@@ -81,7 +81,61 @@
         "On convertit ensuite en km (100 000 cm = 1 km)."
       ],
       "exemple": "Échelle 1/400 000 : 1 cm = 4 km. 6,5 cm sur la carte = 6,5 × 4 = 26 km.",
-      "astuce": "Retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm."
+      "astuce": "Retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm.",
+      "comprendre": [
+        "Une carte est beaucoup plus petite que la réalité. L'échelle dit combien de fois. Échelle 1/100 000 : 1 cm sur la carte représente 100 000 cm dans la réalité, c'est-à-dire 1 km.",
+        "Pour trouver une distance réelle : mesure sur la carte avec la latte, multiplie par le nombre de l'échelle, puis convertis en km. Astuce : retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm (1/400 000 : 1 cm = 4 km).",
+        "Certaines cartes ont une échelle graphique : un petit trait gradué (par exemple « 0 — 10 km »). On reporte ce trait sur la distance à mesurer. Agrandir ou réduire une figure, c'est la même idée : toutes les longueurs sont multipliées ou divisées par le même nombre."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Échelle 1/400 000, 6,5 cm sur la carte.",
+          "explication": "1 cm = 4 km, donc 6,5 × 4 = 26 km."
+        },
+        {
+          "cas": "Échelle 1/25 000, 4 cm sur la carte.",
+          "explication": "4 × 25 000 = 100 000 cm = 1 km."
+        },
+        {
+          "cas": "Une figure de 6 carreaux sur 2 agrandie : 9 sur 3.",
+          "explication": "Toutes les longueurs sont multipliées par 1,5 : c'est un agrandissement."
+        },
+        {
+          "cas": "La même figure en 3 carreaux sur 1.",
+          "explication": "Toutes les longueurs sont divisées par 2 : c'est une réduction."
+        }
+      ],
+      "pieges": [
+        "Oublier de convertir les cm en km.",
+        "Mesurer la distance en suivant la route alors qu'on demande la distance à vol d'oiseau (en ligne droite).",
+        "Croire qu'une figure est agrandie si une seule longueur change.",
+        "Se tromper de zéros : 100 000 cm = 1 km, pas 10 km."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 3,
+          "questions": [
+            "15"
+          ],
+          "libelle": "question 15",
+          "texte": "L'agrandissement multiplie toutes les longueurs par 1,5 ; la réduction les divise toutes par 2."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 4,
+          "questions": [
+            "21"
+          ],
+          "libelle": "question 21",
+          "texte": "Échelle 1/400 000 : 1 cm = 4 km. Entre Liège et Maastricht, 6,5 cm sur la carte, soit 26 km."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "ma-vitesse",
@@ -94,7 +148,50 @@
         "30 min = 0,5 h ; 1 h 30 = 1,5 h ; 2 h 15 = 2,25 h."
       ],
       "exemple": "33 km en 2 h 30 → 33 : 2,5 = 13,2 km/h.",
-      "astuce": "Vérifie si c'est réaliste : un vélo roule vers 15-25 km/h, une voiture vers 50-120 km/h."
+      "astuce": "Vérifie si c'est réaliste : un vélo roule vers 15-25 km/h, une voiture vers 50-120 km/h.",
+      "comprendre": [
+        "La vitesse moyenne dit quelle distance on parcourt en une unité de temps, le plus souvent en une heure : des kilomètres par heure (km/h). Vitesse = distance : durée.",
+        "Avant de diviser, écris la durée en heures avec une virgule : 30 min = 0,5 h ; 1 h 30 = 1,5 h ; 2 h 15 = 2,25 h ; 45 min = 0,75 h. Attention : 2 h 30 ne s'écrit pas 2,30 h.",
+        "On peut aussi raisonner par étapes : si on parcourt 33 km en 2 h 30, c'est-à-dire en 5 demi-heures, on parcourt 33 : 5 = 6,6 km en une demi-heure, donc 13,2 km en une heure. Vérifie enfin que ta réponse est réaliste."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "33 km en 2 h 30.",
+          "explication": "33 : 2,5 = 13,2 km/h."
+        },
+        {
+          "cas": "120 km en 1 h 30.",
+          "explication": "120 : 1,5 = 80 km/h."
+        },
+        {
+          "cas": "Un vélo à 15 km/h pendant 2 heures.",
+          "explication": "Il parcourt 15 × 2 = 30 km."
+        },
+        {
+          "cas": "Une vitesse de 300 km/h pour un vélo.",
+          "explication": "Impossible : il y a une erreur de calcul."
+        }
+      ],
+      "pieges": [
+        "Écrire 2 h 30 = 2,30 h au lieu de 2,5 h.",
+        "Multiplier au lieu de diviser.",
+        "Oublier l'unité km/h.",
+        "Ne pas vérifier si le résultat est réaliste (un piéton marche vers 5 km/h)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 4,
+          "questions": [
+            "29"
+          ],
+          "libelle": "question 29",
+          "texte": "Un bateau parcourt 33 km en 2 h 30 : 33 : 2,5 = 13,2 km/h."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "ma-proportionnalite",
@@ -159,7 +256,83 @@
         "Moyenne = somme de toutes les valeurs : nombre de valeurs."
       ],
       "exemple": "Notes 12, 15 et 18. Moyenne = (12 + 15 + 18) : 3 = 45 : 3 = 15.",
-      "astuce": "La moyenne est toujours entre la plus petite et la plus grande valeur."
+      "astuce": "La moyenne est toujours entre la plus petite et la plus grande valeur.",
+      "comprendre": [
+        "La moyenne permet de résumer plusieurs valeurs par un seul nombre. On additionne toutes les valeurs, puis on divise par le nombre de valeurs. C'est comme si on partageait le total en parts égales.",
+        "Compte bien toutes les valeurs, même celles qui valent 0 : un jour sans marche compte comme un jour. Une semaine, c'est 7 valeurs ; de 2015 à 2022, cela fait 8 années.",
+        "Vérifie ton résultat : la moyenne est toujours entre la plus petite et la plus grande valeur. Tu peux aussi refaire le calcul à l'envers : moyenne × nombre de valeurs = total."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Notes : 12, 15 et 18.",
+          "explication": "(12 + 15 + 18) : 3 = 45 : 3 = 15."
+        },
+        {
+          "cas": "Marche : 37, 0, 25, 9, 0, 13 et 42 minutes sur 7 jours.",
+          "explication": "126 : 7 = 18 minutes par jour. Les jours à 0 comptent."
+        },
+        {
+          "cas": "Ventes : 26, 35, 17, 19, 34, 53, 61.",
+          "explication": "245 : 7 = 35 par jour. Vérification : 35 × 7 = 245."
+        },
+        {
+          "cas": "Une moyenne de 50 avec des valeurs entre 10 et 30.",
+          "explication": "Impossible : il y a une erreur de calcul."
+        }
+      ],
+      "pieges": [
+        "Oublier les valeurs égales à 0.",
+        "Diviser par le mauvais nombre (compter mal les années de 2015 à 2022).",
+        "Oublier une valeur dans l'addition.",
+        "Confondre la moyenne et la valeur du milieu de la liste."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 6,
+          "questions": [
+            "18"
+          ],
+          "libelle": "question 18",
+          "texte": "Les calories d'une semaine : 9 597 : 7 = 1 371 calories par jour."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "4"
+          ],
+          "libelle": "question 4",
+          "texte": "Une semaine de marche : 126 minutes en 7 jours, y compris deux jours à 0, soit 18 minutes par jour."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "21"
+          ],
+          "libelle": "question 21",
+          "texte": "Les ordures ménagères de 2015 à 2022 : 1 164,8 kg en 8 années, soit 145,6 kg par habitant."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "20"
+          ],
+          "libelle": "question 20",
+          "texte": "Les pas d'une semaine : 93 170 : 7 = 13 310 pas par jour."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "ma-monnaie",
@@ -212,7 +385,50 @@
         "Avec être : il s'accorde avec le sujet (elles sont allées)."
       ],
       "exemple": "Nous avons fini. Elle est venue. Ils sont partis.",
-      "astuce": "Participe en -é, -i ou -u ? Mets-le au féminin : prise → pris, faite → fait."
+      "astuce": "Participe en -é, -i ou -u ? Mets-le au féminin : prise → pris, faite → fait.",
+      "comprendre": [
+        "Le passé composé raconte une action terminée. Il est formé de deux mots : l'auxiliaire avoir ou être conjugué au présent, puis le participe passé du verbe. J'ai prêté, nous avons fini, elle est venue.",
+        "La plupart des verbes utilisent avoir. Quelques verbes de mouvement ou de changement d'état utilisent être : aller, venir, partir, arriver, entrer, sortir, naitre, mourir, rester, tomber… et tous les verbes pronominaux (se lever, se laver).",
+        "Ne le confonds pas avec les autres temps composés : avec l'auxiliaire à l'imparfait, c'est le plus-que-parfait (j'avais prêté) ; au futur, le futur antérieur (j'aurai prêté). Pour trouver le temps, regarde le temps de l'auxiliaire."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Je le lui ai prêté. »",
+          "explication": "« ai » (avoir au présent) + « prêté » : passé composé."
+        },
+        {
+          "cas": "« Elle est venue. »",
+          "explication": "Avec être, le participe s'accorde avec le sujet."
+        },
+        {
+          "cas": "« Nous avions fini. »",
+          "explication": "Avoir à l'imparfait : plus-que-parfait, pas passé composé."
+        },
+        {
+          "cas": "« Ils se sont levés. »",
+          "explication": "Verbe pronominal : auxiliaire être."
+        }
+      ],
+      "pieges": [
+        "Prendre le passé composé pour un présent parce que l'auxiliaire est au présent.",
+        "Confondre passé composé (j'ai prêté) et plus-que-parfait (j'avais prêté).",
+        "Utiliser avoir avec aller ou venir (« j'ai venu »).",
+        "Oublier l'accord du participe avec être."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 10,
+          "questions": [
+            "20b"
+          ],
+          "libelle": "question 20b",
+          "texte": "« Je le lui ai prêté » : l'auxiliaire avoir au présent (ai) et le participe passé (prêté) forment le passé composé."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-homophones",
@@ -226,7 +442,38 @@
         "ses (« les siens ») / ces (« ceux-là »). ou (« ou bien ») / où (un lieu)."
       ],
       "exemple": "Il a mangé à la cantine. Ils ont faim, on mange ?",
-      "astuce": "Remplace le mot par un autre : si la phrase a encore du sens, tu as trouvé le bon."
+      "astuce": "Remplace le mot par un autre : si la phrase a encore du sens, tu as trouvé le bon.",
+      "comprendre": [
+        "Des homophones sont des mots qui se prononcent de la même façon mais qui s'écrivent différemment et n'ont pas le même sens : a et à, on et ont, et et est, son et sont, ces et ses, ou et où.",
+        "Pour choisir, remplace le mot par un autre. a → avait (il a faim, il avait faim) ; à ne se remplace pas. ont → avaient ; on → il. est → était ; et → et puis. sont → étaient ; son → mon. ses → mes (les siens) ; ces → ceux-là. où indique un lieu ou un moment ; ou → ou bien.",
+        "Si la phrase garde du sens après le remplacement, tu as trouvé la bonne écriture. Relis toujours ces petits mots à la fin d'une production écrite."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Il a mangé à la cantine. »",
+          "explication": "« a » peut devenir « avait » ; « à » ne peut pas."
+        },
+        {
+          "cas": "« Ils ont faim, on mange ? »",
+          "explication": "« ont » → « avaient » ; « on » → « il »."
+        },
+        {
+          "cas": "« Le chat est noir et blanc. »",
+          "explication": "« est » → « était » ; « et » → « et puis »."
+        },
+        {
+          "cas": "« Où vas-tu ? Au parc ou à la piscine ? »",
+          "explication": "« où » demande le lieu ; « ou » veut dire « ou bien »."
+        }
+      ],
+      "pieges": [
+        "Choisir à l'oreille sans faire le test du remplacement.",
+        "Confondre « ses » (les siens) et « ces » (ceux-là).",
+        "Oublier l'accent de « à » ou de « où ».",
+        "Écrire « son » à la place de « sont » devant un participe : « ils sont partis »."
+      ],
+      "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces petits mots comptent dans toutes les productions écrites.",
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-sujet-complements",
@@ -252,7 +499,95 @@
         "Un mot en -ment est souvent un adverbe (rapidement)."
       ],
       "exemple": "« petits » dans « de petits métiers » est un adjectif ; « prend » est un verbe.",
-      "astuce": "Pour trouver un verbe, conjugue-le : je prends, tu prends… Si ça marche, c'est un verbe."
+      "astuce": "Pour trouver un verbe, conjugue-le : je prends, tu prends… Si ça marche, c'est un verbe.",
+      "comprendre": [
+        "Chaque mot appartient à une classe, selon son rôle. Le nom désigne une personne, un animal, une chose ou une idée. Le déterminant se place devant le nom. L'adjectif précise le nom. Le pronom remplace le nom. Le verbe se conjugue. L'adverbe précise un verbe, un adjectif ou un autre adverbe. Le mot de liaison relie (et, mais, car, quand…).",
+        "Un même mot peut changer de classe selon la phrase : « son devoir » (nom), « tu dois » (verbe devoir) ; « Entre ! » (verbe), « entre deux maisons » (mot qui relie). Il faut donc toujours regarder le mot dans sa phrase.",
+        "Quelques tests : un verbe se conjugue quand on change le temps ; un nom peut recevoir un déterminant ; un adjectif s'accorde avec un nom et peut souvent être enlevé ; un adverbe est invariable, et beaucoup se terminent en -ment."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« son devoir ne serait pas fait »",
+          "explication": "« devoir » est un nom : il est précédé du déterminant « son »."
+        },
+        {
+          "cas": "« le précieux manuscrit »",
+          "explication": "« précieux » est un adjectif : il précise le nom « manuscrit »."
+        },
+        {
+          "cas": "« le royaume attendait si ardemment »",
+          "explication": "« ardemment » est un adverbe : il précise le verbe « attendait »."
+        },
+        {
+          "cas": "« Entre ! a dit ma grand-mère. »",
+          "explication": "« Entre » est le verbe entrer à l'impératif."
+        }
+      ],
+      "pieges": [
+        "Classer un mot sans regarder la phrase où il se trouve.",
+        "Confondre déterminant et pronom : « leur maison » (déterminant), « je leur parle » (pronom).",
+        "Croire que tout mot en -ment est un adverbe : « le moment », « un vêtement » sont des noms.",
+        "Prendre un nom pour un verbe : « un sourire » (nom), « il sourit » (verbe)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 7,
+          "questions": [
+            "18"
+          ],
+          "libelle": "question 18",
+          "texte": "« Entre ! » est un verbe ; dans « bonne nouvelle », « nouvelle » est un nom."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 7,
+          "questions": [
+            "21"
+          ],
+          "libelle": "question 21",
+          "texte": "« sourire » est un nom ; « bien » (dans « bien plus vieux ») est un adverbe."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 9,
+          "questions": [
+            "23"
+          ],
+          "libelle": "question 23",
+          "texte": "« devoir » est un nom ; « et » un mot de liaison ; « sa » un déterminant."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 9,
+          "questions": [
+            "23"
+          ],
+          "libelle": "question 23",
+          "texte": "« précieux » est un adjectif ; « ardemment » un adverbe."
+        },
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "7"
+          ],
+          "libelle": "question 7",
+          "texte": "« possède » est un verbe ; « vous » un pronom ; « vos » un déterminant."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-modes",
@@ -266,7 +601,50 @@
         "Subjonctif : après « il faut que », « vouloir que » (il faut que tu finisses)."
       ],
       "exemple": "« Découvrons ces traces » → impératif. « On peut remarquer » → remarquer est à l'infinitif.",
-      "astuce": "Pas de sujet + ton d'ordre = impératif."
+      "astuce": "Pas de sujet + ton d'ordre = impératif.",
+      "comprendre": [
+        "Le mode indique la façon dont l'action est présentée. L'indicatif présente un fait réel (il joue, il jouait, il jouera). L'impératif donne un ordre ou un conseil, sans sujet (joue, jouons, jouez). Le subjonctif s'emploie après « il faut que », « je veux que » (il faut que tu viennes).",
+        "Certains modes ne se conjuguent pas avec un sujet. L'infinitif est la forme du dictionnaire (jouer, finir, prendre) ; on le trouve souvent après un autre verbe (« on peut remarquer »). Le participe présent finit par -ant (jouant) ; le participe passé (joué, étalée) s'emploie avec un auxiliaire ou comme un adjectif.",
+        "Pour trouver le mode : y a-t-il un sujet ? Si non, est-ce un ordre (impératif), une forme en -er, -ir, -re, -oir (infinitif) ou une forme en -ant, -é, -i, -u (participe) ? Si oui, cherche « que » devant (subjonctif) ; sinon, c'est l'indicatif."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Découvrons ces traces. »",
+          "explication": "Impératif : pas de sujet, une invitation."
+        },
+        {
+          "cas": "« On peut remarquer… »",
+          "explication": "« remarquer » est à l'infinitif, après le verbe « peut »."
+        },
+        {
+          "cas": "« des feuilles étalées »",
+          "explication": "« étalées » est un participe passé employé comme adjectif."
+        },
+        {
+          "cas": "« Il faut que tu finisses. »",
+          "explication": "« finisses » est au subjonctif, après « il faut que »."
+        }
+      ],
+      "pieges": [
+        "Confondre impératif (« Mange ! ») et indicatif (« Tu manges. ») : l'impératif n'a pas de sujet.",
+        "Confondre infinitif (« manger ») et participe passé (« mangé »).",
+        "Oublier que le participe présent en -ant ne s'accorde pas.",
+        "Prendre un participe passé employé comme adjectif pour un verbe conjugué."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "15"
+          ],
+          "libelle": "question 15",
+          "texte": "« étalées » est un participe ; « Découvrons » est à l'impératif ; « remarquer » est à l'infinitif."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-vocabulaire",
@@ -280,7 +658,75 @@
         "Un même mot peut avoir plusieurs sens : c'est la phrase qui choisit."
       ],
       "exemple": "« résistance » : le fer résiste aux forces / la résistance s'oppose à l'ennemi.",
-      "astuce": "Pour trouver le mot racine, enlève le début ou la fin du mot : in-visible, criminel → crime."
+      "astuce": "Pour trouver le mot racine, enlève le début ou la fin du mot : in-visible, criminel → crime.",
+      "comprendre": [
+        "Les mots sont reliés entre eux. Les synonymes ont un sens proche (content, joyeux). Les antonymes ont un sens contraire (positif, négatif). Les mots d'une même famille sont construits sur le même mot de base (crime, criminel ; doigt, digital).",
+        "Un mot dérivé est formé d'un mot de base auquel on ajoute un préfixe au début (in-visible) ou un suffixe à la fin (scienti-fique). Pour retrouver le mot de base, enlève le début ou la fin : criminel → crime.",
+        "Beaucoup de mots ont plusieurs sens : c'est la phrase qui choisit le bon. Pour trouver le sens d'un mot dans un texte, remplace-le par chaque définition proposée et garde celle qui va avec la phrase."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« positif » et « négatif »",
+          "explication": "Deux antonymes : ils ont des sens contraires."
+        },
+        {
+          "cas": "« criminel » et « digital »",
+          "explication": "Ils sont construits sur « crime » et sur « doigt » (en latin, digitus veut dire doigt)."
+        },
+        {
+          "cas": "« la résistance d'un pont » et « un héros de la résistance »",
+          "explication": "Le même mot a deux sens : la solidité d'un matériau, et l'action de s'opposer à l'ennemi."
+        },
+        {
+          "cas": "visible → invisible",
+          "explication": "Le préfixe « in- » donne le sens contraire."
+        }
+      ],
+      "pieges": [
+        "Choisir deux mots du même thème au lieu de deux mots contraires.",
+        "Prendre un mot qui ressemble par le son pour un mot de la même famille.",
+        "Donner le sens le plus courant d'un mot sans relire la phrase.",
+        "Oublier que « in- » peut s'écrire « im- » devant b, m ou p : possible → impossible."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "8"
+          ],
+          "libelle": "question 8",
+          "texte": "Dans la phrase sur les traces « en positif » et « en négatif », les deux antonymes sont « positif » et « négatif »."
+        },
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 6,
+          "questions": [
+            "16"
+          ],
+          "libelle": "question 16",
+          "texte": "« Criminel » est construit sur « crime » ; « digital » vient de « doigt »."
+        },
+        {
+          "examens": [
+            "ceb-2026-so",
+            "ceb-2026-tc"
+          ],
+          "livret": 10,
+          "questions": [
+            "18"
+          ],
+          "libelle": "question 18",
+          "texte": "« Gabrielle Petit est un symbole de la résistance » : s'opposer à l'ennemi. « Le fer est choisi pour sa résistance » : la solidité d'un matériau."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-lire-intention",
@@ -313,7 +759,7 @@
           "explication": "Enjoindre : elle dit au joueur ce qu'il doit faire."
         },
         {
-          "cas": "« Le meilleur goûter pour être en forme ! » sur une affiche.",
+          "cas": "« Le meilleur gouter pour être en forme ! » sur une affiche.",
           "explication": "Persuader : la publicité veut te faire acheter."
         }
       ],
@@ -384,7 +830,61 @@
         "L'adjectif s'accorde avec le nom : des roses rouges, des fleurs blanches."
       ],
       "exemple": "un cheval → des chevaux ; une jolie fleur → de jolies fleurs.",
-      "astuce": "Cherche le nom dont parle l'adjectif, puis regarde son genre et son nombre."
+      "astuce": "Cherche le nom dont parle l'adjectif, puis regarde son genre et son nombre.",
+      "comprendre": [
+        "Dans un groupe nominal, le déterminant et l'adjectif prennent le genre (masculin ou féminin) et le nombre (singulier ou pluriel) du nom. Au pluriel, on ajoute le plus souvent un s : une jolie fleur → de jolies fleurs.",
+        "Certains noms changent autrement : -al devient -aux (un cheval, des chevaux), sauf bal, carnaval, festival, chacal, récital, régal ; -eau, -au et -eu prennent un x (des bateaux, des tuyaux, des jeux), sauf pneu, bleu, landau. Les noms qui finissent déjà par s, x ou z ne changent pas : un héros, des héros.",
+        "Les accords sont aussi des indices pour comprendre un texte : un e ou un s à la fin d'un adjectif ou d'un participe passé montre si on parle d'un garçon ou d'une fille, d'une ou de plusieurs personnes. C'est souvent le déterminant qui montre le nombre quand le nom ne change pas."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "un cheval → des chevaux ; un festival → des festivals",
+          "explication": "-al donne -aux, sauf quelques exceptions à retenir."
+        },
+        {
+          "cas": "un jeu → des jeux ; un pneu → des pneus",
+          "explication": "-eu prend un x, sauf pneu et bleu."
+        },
+        {
+          "cas": "le héros / certains héros",
+          "explication": "Le nom ne change pas ; c'est le déterminant qui montre le pluriel."
+        },
+        {
+          "cas": "« Je me suis préparée »",
+          "explication": "Le e de « préparée » montre que c'est une fille qui parle."
+        }
+      ],
+      "pieges": [
+        "Accorder l'adjectif avec le mauvais nom : cherche le nom dont il parle.",
+        "Oublier les exceptions en -al et en -eu.",
+        "Ajouter un s à un nom qui finit déjà par s, x ou z.",
+        "Ne pas utiliser les accords comme indices quand on demande qui parle."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2017"
+          ],
+          "livret": 1,
+          "questions": [
+            "16"
+          ],
+          "libelle": "question 16",
+          "texte": "« Le héros créé par Hergé » est au singulier, « certains héros » au pluriel : le mot « héros » ne change pas, ce sont le déterminant et l'accord qui le montrent."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 9,
+          "questions": [
+            "17a"
+          ],
+          "libelle": "question 17a",
+          "texte": "« de m'être préparée » : le e final montre que c'est une femme qui parle, l'aviatrice."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "fr-pronoms",
@@ -539,7 +1039,72 @@
         "Provinces wallonnes : Hainaut, Namur, Liège, Luxembourg, Brabant wallon."
       ],
       "exemple": "Bruxelles-Capitale est la région la plus densément peuplée.",
-      "astuce": "Flandre au nord, Wallonie au sud, Bruxelles au centre."
+      "astuce": "Flandre au nord, Wallonie au sud, Bruxelles au centre.",
+      "comprendre": [
+        "La Belgique est un petit pays d'Europe de l'Ouest, indépendant depuis 1830. Elle a pour voisins la France, le Luxembourg, l'Allemagne et les Pays-Bas, et elle est bordée au nord-ouest par la mer du Nord. Sa capitale est Bruxelles.",
+        "C'est un État fédéral. Il compte 3 régions : la Région flamande au nord, la Région wallonne au sud et la Région de Bruxelles-Capitale au centre. Il compte aussi 3 communautés, liées aux langues : française, flamande et germanophone.",
+        "Il y a 10 provinces : 5 en Flandre et 5 en Wallonie. Bruxelles n'appartient à aucune province. Les frontières ont parfois changé : Eupen et Malmedy, allemandes en 1914, sont devenues belges après la Première Guerre mondiale."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "L'abbaye d'Orval, tout au sud du pays.",
+          "explication": "Le pays voisin le plus proche est la France."
+        },
+        {
+          "cas": "Tournai et Verviers.",
+          "explication": "Deux villes wallonnes : Tournai est à l'ouest de Namur, Verviers à l'est."
+        },
+        {
+          "cas": "Eupen.",
+          "explication": "Une ville de la province de Liège où l'on parle surtout allemand."
+        },
+        {
+          "cas": "Bruxelles.",
+          "explication": "La capitale du pays, et une région à part entière."
+        }
+      ],
+      "pieges": [
+        "Confondre les régions (territoires) et les communautés (langues).",
+        "Placer Bruxelles dans une province.",
+        "Oublier le Luxembourg parmi les pays voisins.",
+        "Confondre la province de Luxembourg (en Belgique) et le pays du Luxembourg."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2015"
+          ],
+          "livret": 6,
+          "questions": [
+            "2"
+          ],
+          "libelle": "question 2",
+          "texte": "En comparant les cartes de 1914 et d'aujourd'hui : Eupen et Malmedy étaient allemandes, elles sont aujourd'hui belges."
+        },
+        {
+          "examens": [
+            "ceb-2021"
+          ],
+          "livret": 5,
+          "questions": [
+            "5b"
+          ],
+          "libelle": "question 5b",
+          "texte": "Le pays voisin le plus proche de l'abbaye d'Orval est la France."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 5,
+          "questions": [
+            "6a"
+          ],
+          "libelle": "question 6a",
+          "texte": "Une ville wallonne de 50 000 à 75 000 habitants, à l'ouest de Namur : Tournai."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "hg-globe",
@@ -552,7 +1117,50 @@
         "Océans : Atlantique (entre Europe/Afrique et Amérique), Pacifique (le plus grand), Indien, Arctique, Austral (aussi appelé océan Antarctique)."
       ],
       "exemple": "La Belgique est dans l'hémisphère Nord, en zone tempérée.",
-      "astuce": "Le tropique du Cancer est au nord de l'équateur, le tropique du Capricorne au sud."
+      "astuce": "Le tropique du Cancer est au nord de l'équateur, le tropique du Capricorne au sud.",
+      "comprendre": [
+        "Le globe est une maquette de la Terre. Des lignes imaginaires aident à se repérer. L'équateur fait le tour de la Terre à égale distance des deux pôles : il la partage en hémisphère Nord et hémisphère Sud. Les parallèles sont des cercles parallèles à l'équateur ; les méridiens vont d'un pôle à l'autre.",
+        "Deux parallèles importants entourent l'équateur : le tropique du Cancer au nord et le tropique du Capricorne au sud. Entre eux se trouve la zone chaude. Autour des pôles, ce sont les zones froides ; entre les deux, les zones tempérées, où se trouve la Belgique.",
+        "Sur un planisphère, le nord est en général en haut. Mais vérifie toujours la flèche ou la position de l'équateur : sur certaines cartes, le nord est ailleurs."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "La Belgique.",
+          "explication": "Dans l'hémisphère Nord, en zone tempérée."
+        },
+        {
+          "cas": "Le Brésil et l'Australie.",
+          "explication": "Surtout dans l'hémisphère Sud : quand c'est l'hiver chez nous, c'est l'été chez eux."
+        },
+        {
+          "cas": "Un pays traversé par l'équateur, comme le Kenya.",
+          "explication": "Il fait partie de la zone chaude."
+        },
+        {
+          "cas": "L'Antarctique.",
+          "explication": "Autour du pôle Sud, dans une zone froide, entouré par l'océan Austral."
+        }
+      ],
+      "pieges": [
+        "Confondre l'équateur (la ligne) et l'Équateur (le pays d'Amérique du Sud).",
+        "Inverser les tropiques : le Cancer est au nord, le Capricorne au sud.",
+        "Confondre parallèles (horizontaux) et méridiens (d'un pôle à l'autre).",
+        "Supposer que le nord est en haut sans vérifier la carte."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 5,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "Sur la carte de la population mondiale (le nord y est à gauche), une seule agglomération de 15 à 20 millions d'habitants, Kinshasa, est dans l'hémisphère Sud."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     },
     {
       "id": "hg-densite",
@@ -619,8 +1227,8 @@
       "exemple": "La glace qui fond = physique. Le fer qui rouille = chimique.",
       "astuce": "Peut-on revenir en arrière facilement ? Oui → souvent physique. Non → souvent chimique.",
       "comprendre": [
-        "Quand la matière change, demande-toi : est-ce encore la même matière ? Si oui, c'est un phénomène physique. L'eau qui gèle reste de l'eau. Le sucre dissous dans l'eau est toujours là : l'eau a un goût sucré. Une barre de métal chauffée s'allonge un peu (c'est la dilatation), mais reste du métal.",
-        "Si une nouvelle matière apparaît, c'est un phénomène chimique. Le bois qui brule donne des cendres, de la fumée et des gaz. Le fer qui rouille se couvre d'une matière rouge et friable, la rouille. Un gâteau cuit ne redevient jamais de la pâte.",
+        "Quand la matière change, demande-toi : est-ce encore la même matière ? Si oui, c'est un phénomène physique. L'eau qui gèle reste de l'eau. Le sucre dissous dans l'eau est toujours là : l'eau a un gout sucré. Une barre de métal chauffée s'allonge un peu (c'est la dilatation), mais reste du métal.",
+        "Si une nouvelle matière apparait, c'est un phénomène chimique. Le bois qui brule donne des cendres, de la fumée et des gaz. Le fer qui rouille se couvre d'une matière rouge et friable, la rouille. Un gâteau cuit ne redevient jamais de la pâte.",
         "Indices d'un phénomène chimique : une couleur qui change pour de bon, une odeur nouvelle, des bulles de gaz, une flamme, et surtout l'impossibilité de revenir simplement en arrière."
       ],
       "exemplesExpliques": [
@@ -697,7 +1305,61 @@
         "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air."
       ],
       "exemple": "Un radiateur est en acier (conducteur) ; un pull en laine garde la chaleur (isolant).",
-      "astuce": "Ce qui a mis des millions d'années à se former (pétrole, gaz) ne se renouvelle pas."
+      "astuce": "Ce qui a mis des millions d'années à se former (pétrole, gaz) ne se renouvelle pas.",
+      "comprendre": [
+        "L'énergie permet de chauffer, d'éclairer, de faire bouger. On la tire de sources différentes. Les sources renouvelables se reforment vite ou ne s'épuisent pas : le Soleil, le vent, l'eau qui coule, le bois. Les sources non renouvelables ont mis des millions d'années à se former et s'épuisent : le pétrole, le gaz naturel, le charbon, l'uranium.",
+        "Quand on brule du pétrole, du gaz, du charbon ou du bois, on rejette du dioxyde de carbone (CO₂), un gaz à effet de serre qui contribue au réchauffement climatique. L'élevage de ruminants rejette, lui, beaucoup de méthane, un autre gaz à effet de serre.",
+        "L'énergie se transforme : un panneau solaire transforme la lumière en électricité, une éolienne transforme le vent en électricité. Une surface sombre absorbe mieux l'énergie du Soleil qu'une surface claire."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Se chauffer au mazout ou au bois.",
+          "explication": "Le mazout vient du pétrole (non renouvelable) ; le bois repousse (renouvelable)."
+        },
+        {
+          "cas": "Une voiture à essence.",
+          "explication": "Elle brule un dérivé du pétrole et rejette du CO₂."
+        },
+        {
+          "cas": "Deux bouteilles d'eau au soleil, une blanche et une noire.",
+          "explication": "L'eau de la bouteille noire chauffe plus : le noir absorbe davantage l'énergie du Soleil."
+        },
+        {
+          "cas": "Une éolienne.",
+          "explication": "Elle transforme l'énergie du vent, renouvelable, en électricité."
+        }
+      ],
+      "pieges": [
+        "Croire que le bois n'est pas renouvelable : il l'est, s'il est replanté.",
+        "Croire que l'électricité est une source d'énergie : elle est produite à partir d'une source (vent, Soleil, gaz, uranium…).",
+        "Oublier le méthane parmi les gaz à effet de serre.",
+        "Dans une expérience, changer deux choses à la fois (la couleur et la taille de la bouteille)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 9,
+          "questions": [
+            "8a"
+          ],
+          "libelle": "question 8a",
+          "texte": "Deux bouteilles identiques au soleil, l'une blanche, l'autre noire : on veut prouver que la couleur influence la température de l'eau."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 5,
+          "questions": [
+            "18"
+          ],
+          "libelle": "question 18",
+          "texte": "L'élevage produit surtout du méthane ; la voiture et le chauffage, du dioxyde de carbone."
+        }
+      ],
+      "miseAJour": "2026-10-31"
     }
   ]
 }
