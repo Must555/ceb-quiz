@@ -260,7 +260,83 @@
     "Sinon, on met les fractions sur le même dénominateur (3/4 = 6/8, donc 3/4 > 5/8)."
    ],
    "exemple": "Comparer 2/3 et 3/4 : 2/3 = 8/12 et 3/4 = 9/12, donc 2/3 < 3/4.",
-   "astuce": "Compare aussi à 1/2 : une fraction est plus grande que 1/2 si son numérateur dépasse la moitié du dénominateur."
+   "astuce": "Compare aussi à 1/2 : une fraction est plus grande que 1/2 si son numérateur dépasse la moitié du dénominateur.",
+   "comprendre": [
+    "Pour comparer deux fractions de même dénominateur, compare les numérateurs : 5/8 > 3/8. Avec le même numérateur, c'est l'inverse : la plus grande a le plus petit dénominateur, car ses parts sont plus grandes (2/3 > 2/5).",
+    "Sinon, mets-les sur le même dénominateur (3/4 = 6/8, donc 3/4 > 5/8), ou transforme-les en nombres décimaux : 3/5 = 0,6 ; 1/3 ≈ 0,33 ; 5/2 = 2,5.",
+    "Deux repères aident beaucoup. Comparer à 1 : une fraction est plus grande que 1 si son numérateur dépasse son dénominateur (5/4 > 1). Comparer à 1/2 : une fraction est plus grande que 1/2 si son numérateur dépasse la moitié du dénominateur (5/8 > 1/2)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "2/3 et 3/4",
+     "explication": "8/12 et 9/12 : 2/3 < 3/4."
+    },
+    {
+     "cas": "5/4 et 1",
+     "explication": "5/4 = 1,25 : plus grand que 1."
+    },
+    {
+     "cas": "5/9 et 5,9",
+     "explication": "5/9 est plus petit que 1 ; 5,9 est presque 6. Attention, 5/9 ne s'écrit pas 5,9."
+    },
+    {
+     "cas": "Ranger 1/5 ; 0,6 ; 1 ; 5/3 ; 1/2",
+     "explication": "1/5 = 0,2 ; 1/2 = 0,5 ; 0,6 ; 1 ; 5/3 ≈ 1,67."
+    }
+   ],
+   "pieges": [
+    "Croire que 2/5 > 2/3 parce que 5 > 3.",
+    "Lire une fraction comme un nombre à virgule (5/9 n'est pas 5,9).",
+    "Comparer seulement les numérateurs quand les dénominateurs sont différents.",
+    "Oublier qu'une fraction peut être plus grande que 1."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 8,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Entre 2 et 3, on trouve 2,32 et 5/2 (2,5) ; 3/2 vaut 1,5 et 2/3 moins de 1."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Dans l'ordre croissant : 1/5 ; 1/2 ; 0,6 ; 1 ; 5/3."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 7,
+     "questions": [
+      "4"
+     ],
+     "libelle": "question 4",
+     "texte": "5/4 est plus grand que 1 ; 5/9 est plus petit que 5,9 ; 0,2 est égal à 0,20."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 7,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "3/5 = 0,6 > 0,35 ; 1/3 ≈ 0,33 > 0,25 ; 3/2 = 1,5 > 1."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-fraction-decimal-pourcent",
@@ -463,7 +539,83 @@
     "On vérifie une soustraction avec une addition et une division avec une multiplication."
    ],
    "exemple": "12,4 − 3,75 = 12,40 − 3,75 = 8,65. Vérification : 8,65 + 3,75 = 12,4.",
-   "astuce": "Avant de calculer, estime le résultat : cela évite les grosses erreurs de virgule."
+   "astuce": "Avant de calculer, estime le résultat : cela évite les grosses erreurs de virgule.",
+   "comprendre": [
+    "Pour additionner ou soustraire des nombres décimaux, on aligne les virgules, l'une sous l'autre, et on complète avec des zéros si besoin : 12,4 − 3,75 = 12,40 − 3,75 = 8,65. Pour multiplier un décimal, on calcule sans virgule, puis on remet autant de chiffres après la virgule qu'il y en avait en tout dans les facteurs.",
+    "Chaque opération a son opération réciproque, qui sert à vérifier et à trouver un nombre manquant : l'addition et la soustraction, la multiplication et la division. 45 693 + 21 427 = 67 120, donc 67 120 − 21 427 = 45 693.",
+    "On peut changer l'ordre des termes d'une addition ou des facteurs d'une multiplication sans changer le résultat : 4 × 18 × 45 = 45 × 18 × 4. Un produit vaut 0 dès qu'un des facteurs vaut 0. Avant de calculer, estime le résultat pour éviter les erreurs de virgule."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "0,8 + 0,55",
+     "explication": "0,80 + 0,55 = 1,35 : on aligne les virgules."
+    },
+    {
+     "cas": "8 020 − 40,8",
+     "explication": "8 020,0 − 40,8 = 7 979,2."
+    },
+    {
+     "cas": "… × 6 = 42",
+     "explication": "On fait l'opération réciproque : 42 : 6 = 7."
+    },
+    {
+     "cas": "2 400 = 4 × … = … × 8",
+     "explication": "4 × 600 et 300 × 8."
+    }
+   ],
+   "pieges": [
+    "Aligner les derniers chiffres au lieu des virgules.",
+    "Oublier de remettre la virgule après une multiplication.",
+    "Vérifier une addition avec une autre addition au lieu d'une soustraction.",
+    "Oublier qu'un produit avec un facteur 0 vaut 0."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "8 020 − 40,8 = 7 979,2 ; 0,8 + 0,55 = 1,35 ; 12,3 − 2,31 = 9,99 : on aligne les virgules."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 6,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "2 400 = 4 × 600 = 300 × 8 = 1 800 + 600 = 48 000 : 20 ; pour 24, tout est 100 fois plus petit."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 6,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "7 888 + 4 565 = 8 000 + 4 453 ; 29,7 × 20 = 297 × 2 ; 4 × 18 × 45 = 45 × 18 × 4."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 8,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Pour vérifier 45 693 + 21 427 = 67 120, on calcule 67 120 − 21 427 : on doit retrouver 45 693."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-calcul-mental",
@@ -478,7 +630,83 @@
     "× 250 = × 1 000 : 4. Décompositions à connaitre : 100 = 4 × 25 = 2 × 50 = 5 × 20 ; 1 = 0,5 × 2 = 0,25 × 4 = 0,2 × 5 = 0,1 × 10."
    ],
    "exemple": "36 × 25 = 3 600 : 4 = 900. Sachant que 25 × 15 = 375, alors 2,5 × 15 = 37,5.",
-   "astuce": "Dans une somme, si tu ajoutes 2 à un terme, enlève 2 à l'autre : 376 + 18 = 374 + 20."
+   "astuce": "Dans une somme, si tu ajoutes 2 à un terme, enlève 2 à l'autre : 376 + 18 = 374 + 20.",
+   "comprendre": [
+    "Calculer de tête, c'est choisir le chemin le plus simple. Multiplier par 10, 100 ou 1 000 donne à chaque chiffre une valeur 10, 100 ou 1 000 fois plus grande. Multiplier par 5, c'est multiplier par 10 puis diviser par 2 ; par 25, multiplier par 100 puis diviser par 4 ; par 9, multiplier par 10 puis enlever le nombre.",
+    "On peut décomposer un nombre : 15 × 45 = (10 × 45) + (5 × 45) = 450 + 225 = 675. On peut aussi s'appuyer sur un calcul connu : si 21 × 43 = 903, alors 22 × 43 = 903 + 43 = 946, et 2,1 × 43 = 90,3.",
+    "Le double, c'est × 2 ; la moitié, : 2 ; le triple, × 3 ; le tiers, : 3 ; le quart, : 4. Dans une addition, on peut arranger les termes : 56,95 + 2,25 = 57 + 2,2 = 59,2."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "36 × 25",
+     "explication": "3 600 : 4 = 900."
+    },
+    {
+     "cas": "17 × 9",
+     "explication": "170 − 17 = 153."
+    },
+    {
+     "cas": "Le tiers de 33, le double de 17, le quart de 32",
+     "explication": "11, 34 et 8."
+    },
+    {
+     "cas": "450 × 0,3",
+     "explication": "C'est la même chose que 45 × 3 = 135 : un facteur divisé par 10, l'autre multiplié par 10."
+    }
+   ],
+   "pieges": [
+    "Croire que (5 × 45) + (5 × 45) égale 15 × 45 : cela ne fait que 10 × 45.",
+    "Oublier qu'un produit vaut 0 dès qu'un des facteurs vaut 0.",
+    "Déplacer la virgule dans le mauvais sens en multipliant par 10.",
+    "Confondre le tiers (: 3) et le triple (× 3)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 8,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "0 × 40 = 20 × 14 × 0 × 2 ; 56,95 + 2,25 = (56,95 + 0,05) + 2,2 ; 450 × 0,3 = 45 × 3."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "22"
+     ],
+     "libelle": "question 22",
+     "texte": "Si 21 × 43 = 903, alors 2,1 × 43 = 90,3 ; 42 × 43 = 1 806 ; 21 × 44 = 924 ; 22 × 43 = 946."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 6,
+     "questions": [
+      "3a"
+     ],
+     "libelle": "question 3a",
+     "texte": "15 × 45 donne le même résultat que 15 × 9 × 5 et que (10 × 45) + (5 × 45)."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 6,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "11 est le tiers de 33 ; 34 le double de 17 ; 8 le quart de 32."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-estimation",
@@ -638,7 +866,83 @@
     "Par 4 : les deux derniers chiffres forment un nombre divisible par 4. Par 25 : il se termine par 00, 25, 50 ou 75."
    ],
    "exemple": "4 518 : 4 + 5 + 1 + 8 = 18. 18 est divisible par 9, donc 4 518 est divisible par 9 (et par 3).",
-   "astuce": "Un nombre divisible par 9 est toujours divisible par 3."
+   "astuce": "Un nombre divisible par 9 est toujours divisible par 3.",
+   "comprendre": [
+    "Un nombre est divisible par un autre (ou est un multiple de cet autre) si la division tombe juste, sans reste. Des caractères permettent de le savoir sans calculer.",
+    "Par 2 : le chiffre des unités est pair (0, 2, 4, 6, 8). Par 5 : il se termine par 0 ou 5. Par 10 : il se termine par 0. Par 4 : le nombre formé par les deux derniers chiffres est divisible par 4. Par 3 : la somme de ses chiffres est divisible par 3. Par 9 : la somme de ses chiffres est divisible par 9.",
+    "Ces règles servent dans les problèmes de partage sans reste : 144 élèves, des boites de 36 stylos, cela fait 4 boites sans stylo en trop. Un nombre divisible par 9 l'est aussi par 3 ; un nombre divisible par 10 l'est aussi par 2 et par 5."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "4 518",
+     "explication": "4 + 5 + 1 + 8 = 18, divisible par 9 : 4 518 est divisible par 9 et par 3."
+    },
+    {
+     "cas": "7 110",
+     "explication": "10 n'est pas divisible par 4 : 7 110 n'est pas un multiple de 4."
+    },
+    {
+     "cas": "36, 270, 369",
+     "explication": "Sommes des chiffres : 9, 9, 18 : ce sont des multiples de 9."
+    },
+    {
+     "cas": "Un nombre divisible par 4 et par 5.",
+     "explication": "Il finit par 0, et ses deux derniers chiffres forment un multiple de 4 : 00, 20, 40, 60, 80."
+    }
+   ],
+   "pieges": [
+    "Regarder seulement le dernier chiffre pour la divisibilité par 4.",
+    "Confondre la règle de 3 et 9 (somme des chiffres) avec celle de 2 et 5 (dernier chiffre).",
+    "Croire qu'un nombre pair est forcément divisible par 4 (6, 10, 14 ne le sont pas).",
+    "Choisir une boite qui laisse des objets en trop dans un problème de partage."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 4,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "Pour être divisible par 4 et par 5, un nombre finit par 00, 20, 40, 60 ou 80."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 8,
+     "questions": [
+      "16a"
+     ],
+     "libelle": "question 16a",
+     "texte": "Les multiples de 9 parmi les propositions : 36, 270 et 369 (sommes des chiffres : 9, 9, 18)."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "Pour 144 élèves sans stylo en trop, il faut des boites de 36 : 144 : 36 = 4."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 8,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "7 110 n'est pas un multiple de 4 : ses deux derniers chiffres, 10, ne sont pas dans la table de 4."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-ordres-grandeur",
@@ -653,7 +957,83 @@
     "Volume : un petit cube de 1 cm d'arête = 1 cm³ (un morceau de sucre ≈ 2 cm³), une brique de lait = 1 dm³ = 1 l, une boîte à chaussures ≈ 8 dm³, une salle de classe ≈ 200 m³."
    ],
    "exemple": "La masse d'un smartphone est d'environ 180 g (pas 180 kg, ni 180 mg).",
-   "astuce": "Compare avec un objet que tu connais bien : c'est plus lourd ou plus léger qu'une pomme ?"
+   "astuce": "Compare avec un objet que tu connais bien : c'est plus lourd ou plus léger qu'une pomme ?",
+   "comprendre": [
+    "Avoir une idée des ordres de grandeur, c'est savoir à peu près combien mesurent, pèsent ou contiennent les objets courants. Cela permet de choisir la bonne unité et de repérer une réponse absurde.",
+    "Quelques repères : une feuille A4 pèse environ 5 g, un cahier environ 100 g, un élève environ 40 kg, une voiture environ 1 tonne. Un crayon mesure environ 18 cm, une porte 2 m, un autocar une douzaine de mètres, un terrain de football 100 m. Une canette contient 33 cl, un seau environ 10 l.",
+    "Pour estimer, compare avec un repère que tu connais : le crayon est-il plus long ou plus court qu'une latte de 30 cm ? Vérifie ensuite l'unité : 180 g pour un téléphone, pas 180 kg ni 180 mg."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La longueur d'un autocar.",
+     "explication": "Environ 10 m, la longueur de 3 ou 4 voitures."
+    },
+    {
+     "cas": "33 cl.",
+     "explication": "Un tiers de litre : une canette de soda."
+    },
+    {
+     "cas": "La masse d'un cahier.",
+     "explication": "Environ 100 g, comme une plaque de chocolat."
+    },
+    {
+     "cas": "La masse d'une voiture.",
+     "explication": "Environ 1 tonne (entre 0,8 et 1,5 t)."
+    }
+   ],
+   "pieges": [
+    "Se tromper d'unité (des mètres au lieu de centimètres).",
+    "Ne pas vérifier si la réponse est vraisemblable.",
+    "Confondre millilitre et centilitre (33 cl = 330 ml).",
+    "Choisir un repère trop éloigné de l'objet à estimer."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 4,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Une voiture pèse environ 1 t ; un stylo mesure environ 14 cm ; une feuille A4 pèse 4 à 5 g."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 7,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "33 cl pourraient être la capacité d'une canette de soda."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 6,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Un cahier pèse environ 100 g ; un seau contient environ 10 l."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 6,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "La longueur d'un autocar est d'environ 10 m."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-unites-aire-volume",
@@ -814,7 +1194,83 @@
     "Les années bissextiles sont en général divisibles par 4 (2024, 2028…)."
    ],
    "exemple": "Le 3 mai est un mardi. 14 jours plus tard (2 semaines), le 17 mai est aussi un mardi.",
-   "astuce": "Compte les jours sur les bosses de tes poings : une bosse = 31 jours, un creux = 30 jours (ou février)."
+   "astuce": "Compte les jours sur les bosses de tes poings : une bosse = 31 jours, un creux = 30 jours (ou février).",
+   "comprendre": [
+    "Une année compte 12 mois et 365 jours, ou 366 les années bissextiles, qui ont un 29 février (2024, 2028…). Les mois ont 31 jours (janvier, mars, mai, juillet, aout, octobre, décembre) ou 30 jours (avril, juin, septembre, novembre) ; février en a 28 ou 29.",
+    "Pour compter les jours entre deux dates, avance mois par mois : les jours qui restent dans le premier mois, puis les mois entiers, puis les jours du dernier mois. Du 28 avril au 7 juin : 2 jours en avril (29 et 30), 31 en mai, 7 en juin, soit 40 jours.",
+    "Une semaine compte 7 jours : 7, 14 ou 21 jours plus tard, on retombe sur le même jour de la semaine. Lis bien la question : faut-il compter le premier jour ? le dernier ? Les deux réponses sont parfois acceptées quand l'énoncé n'est pas précis."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Du jeudi 29 juin au mercredi 16 aout.",
+     "explication": "1 jour en juin + 31 en juillet + 16 en aout = 48 jours."
+    },
+    {
+     "cas": "Une boite de 50 jours entamée le 17 juin.",
+     "explication": "Du 17 au 30 juin : 14 jours ; avec juillet : 45 jours ; le 50e jour est le 5 aout."
+    },
+    {
+     "cas": "Le 3 mai est un mardi.",
+     "explication": "Le 17 mai, 14 jours plus tard, est aussi un mardi."
+    },
+    {
+     "cas": "2028.",
+     "explication": "Une année bissextile : 366 jours, avec un 29 février."
+    }
+   ],
+   "pieges": [
+    "Oublier qu'un mois a 30 ou 31 jours.",
+    "Compter le premier jour alors qu'il ne le faut pas, ou l'inverse.",
+    "Oublier le 29 février d'une année bissextile.",
+    "Lire une date au format jour/mois à l'envers (06/10, c'est le 6 octobre)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 6,
+     "questions": [
+      "6b"
+     ],
+     "libelle": "question 6b",
+     "texte": "Une boite de 50 jours entamée le 17 juin sera terminée le 5 aout."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 6,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "Du 28 avril au 7 juin : 2 + 31 + 7 = 40 jours (41 acceptés si l'on compte le 28)."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 6,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Du jeudi 29 juin au mercredi 16 aout : 1 + 31 + 16 = 48 jours (47 acceptés)."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 4,
+     "questions": [
+      "13a"
+     ],
+     "libelle": "question 13a",
+     "texte": "Le premier samedi d'octobre est le 5 : ce jour-là, les P3 (retour le 06/10) et les P6 (retour le 11/10) sont encore à la mer."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-temperatures",
@@ -873,7 +1329,83 @@
     "Pour choisir le bon calcul, traduis chaque étape : « par pièce » → ×, « partager » → :, « il reste » → −. Les parenthèses montrent ce qu'on calcule d'abord."
    ],
    "exemple": "3 cahiers à 2,40 € et une trousse à 6 € payés avec 20 € : 3 × 2,40 = 7,20 € ; 7,20 + 6 = 13,20 € ; 20 − 13,20 = 6,80 €.",
-   "astuce": "Demande-toi à chaque fois : faut-il réunir, enlever, répéter ou partager ?"
+   "astuce": "Demande-toi à chaque fois : faut-il réunir, enlever, répéter ou partager ?",
+   "comprendre": [
+    "Pour résoudre un problème, lis tout l'énoncé jusqu'à la question. Repère ce qu'on cherche, puis les données utiles : certaines ne servent à rien. Un schéma rapide (cartons, poteaux, cases) aide souvent à voir la situation.",
+    "Découpe ensuite le problème en étapes : chaque étape répond à une petite question (combien d'œufs dans un carton complet ? dans 4 cartons ?). Pour choisir l'opération, traduis : réunir → +, enlever ou comparer → −, répéter → ×, partager → :.",
+    "Écris chaque calcul avec son résultat et son unité, puis vérifie que la réponse est vraisemblable et qu'elle répond bien à la question posée. Dans un problème de poteaux ou d'arbres alignés, compte les espaces, pas les objets."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "4 cartons complets de 5 × 6 œufs et un carton de 3 rangées de 6.",
+     "explication": "4 × 30 = 120 ; 3 × 6 = 18 ; 120 + 18 = 138 œufs."
+    },
+    {
+     "cas": "Une douche de 8 minutes à 15 l/min ou à 6 l/min.",
+     "explication": "120 l contre 48 l : on économise 72 l."
+    },
+    {
+     "cas": "13 espaces de 25 m entre deux poteaux.",
+     "explication": "13 × 25 = 325 m : on compte les espaces, pas les poteaux."
+    },
+    {
+     "cas": "On avance de 5 et on arrive en case 25.",
+     "explication": "La case de départ est inconnue : ? + 5 = 25."
+    }
+   ],
+   "pieges": [
+    "Utiliser toutes les données, même celles qui ne servent pas.",
+    "Répondre à une étape intermédiaire au lieu de la question finale.",
+    "Compter les poteaux au lieu des espaces.",
+    "Oublier l'unité ou ne pas vérifier si la réponse est réaliste."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 6,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Entre les poteaux A et B, 13 espaces de 25 m : 325 m. Compter 14 poteaux donnerait 25 m de trop."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 8,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Associer chaque situation du plateau de jeu à son opération : partir de 25 et reculer de 5, c'est 25 − 5 = ? ; arriver en 25 en avançant de 5, c'est ? + 5 = 25."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 4,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "8 minutes de douche : 120 l avec le pommeau classique, 48 l avec l'économique, soit 72 l économisés."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 7,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "4 cartons de 30 œufs et un carton de 18 : 138 œufs."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-solides",
@@ -1647,7 +2179,72 @@
     "Hauteur d'un triangle : segment qui part d'un sommet et arrive perpendiculairement sur le côté opposé. Hauteur d'un parallélogramme : perpendiculaire à un côté, jusqu'au côté opposé."
    ],
    "exemple": "Rectangle : diagonales égales mais pas perpendiculaires ; ses 2 axes de symétrie sont ses médianes.",
-   "astuce": "Losange ↔ diagonales, rectangle ↔ médianes, carré ↔ les deux."
+   "astuce": "Losange ↔ diagonales, rectangle ↔ médianes, carré ↔ les deux.",
+   "comprendre": [
+    "Dans un quadrilatère, une diagonale relie deux sommets opposés ; une médiane relie les milieux de deux côtés opposés ; une hauteur est perpendiculaire aux côtés parallèles (les bases). Un quadrilatère a 2 diagonales et 2 médianes.",
+    "Les diagonales ont des propriétés qui aident à reconnaitre les figures. Elles se coupent en leur milieu dans le parallélogramme, le rectangle, le losange et le carré. Elles ont la même longueur dans le rectangle et le carré. Elles sont perpendiculaires dans le losange et le carré.",
+    "Les axes de symétrie : dans le losange, ce sont les diagonales ; dans le rectangle, ce sont les médianes ; dans le carré, les deux (4 axes). Le parallélogramme quelconque et le trapèze quelconque n'en ont aucun."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le rectangle.",
+     "explication": "Diagonales égales mais pas perpendiculaires ; ses 2 axes de symétrie sont ses médianes."
+    },
+    {
+     "cas": "Le losange.",
+     "explication": "Diagonales perpendiculaires, et ce sont ses axes de symétrie."
+    },
+    {
+     "cas": "Tracer les médianes d'un rectangle.",
+     "explication": "Elles le partagent en 4 petits rectangles identiques."
+    },
+    {
+     "cas": "Le carré.",
+     "explication": "Diagonales et médianes sont toutes des axes de symétrie : 4 axes."
+    }
+   ],
+   "pieges": [
+    "Confondre diagonale (d'un sommet à l'autre) et médiane (d'un milieu à l'autre).",
+    "Croire que les diagonales du rectangle sont des axes de symétrie.",
+    "Croire que les diagonales d'un rectangle sont perpendiculaires.",
+    "Oublier que le milieu d'un côté se mesure avant de tracer une médiane."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 3,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Dans deux carrés emboités, la moitié d'une diagonale du grand carré est plus longue qu'un côté du petit carré : ils ne sont pas isométriques."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 3,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Les médianes d'un rectangle relient les milieux des côtés opposés et le partagent en 4 petits rectangles ; ce ne sont pas les diagonales."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 3,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Le losange a ses diagonales comme axes de symétrie, le rectangle ses médianes, le carré les deux ; le trapèze n'a ni l'un ni l'autre."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-polygones",
@@ -1991,7 +2588,61 @@
     "Prix de revient = prix d'achat + frais. Bénéfice = prix de vente − prix de revient. Si on vend moins cher que le prix de revient, on fait une perte."
    ],
    "exemple": "Achat 120 €, transport 15 € : prix de revient 135 €. Vente 160 € : bénéfice de 160 − 135 = 25 €.",
-   "astuce": "Pour comparer deux promotions, calcule le prix total de chacune pour le même nombre d'articles."
+   "astuce": "Pour comparer deux promotions, calcule le prix total de chacune pour le même nombre d'articles.",
+   "comprendre": [
+    "Les magasins proposent des promotions de formes différentes. « Le deuxième à moitié prix » : pour deux articles, on paie un article entier et la moitié du second. « 3 pour le prix de 2 » : par lot de 3, on en paie 2. « +50 % gratuit » : le paquet contient la moitié en plus, pour le même prix.",
+    "« Jusqu'à 70 % » veut dire que 70 % est la plus grande remise : beaucoup d'articles ont moins. « À partir de 15 € » veut dire que 15 € est le prix le plus bas. Les tarifs de groupe peuvent aussi offrir des entrées gratuites (un adulte gratuit par 15 enfants payants).",
+    "Pour un commerçant : prix de revient = prix d'achat + frais. Bénéfice = prix de vente − prix de revient. S'il vend moins cher que son prix de revient, il fait une perte. Pour comparer deux offres, calcule le prix total pour le même nombre d'articles."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Deux t-shirts à 12 €, le deuxième à moitié prix.",
+     "explication": "12 + 6 = 18 €."
+    },
+    {
+     "cas": "Un paquet de lessive pour 66 lavages, « +50 % gratuit ».",
+     "explication": "66 + 33 = 99 lavages."
+    },
+    {
+     "cas": "Achat 120 €, transport 15 €, vente 160 €.",
+     "explication": "Prix de revient 135 € ; bénéfice 160 − 135 = 25 €."
+    },
+    {
+     "cas": "Un adulte gratuit par 15 enfants payants, 26 enfants.",
+     "explication": "Il n'y a qu'un groupe complet de 15 : un seul adulte entre gratuitement."
+    }
+   ],
+   "pieges": [
+    "Répondre seulement le « bonus » (33 lessives) au lieu du total (99).",
+    "Appliquer la moitié prix aux deux articles.",
+    "Croire que tous les articles sont remisés de 70 % quand on lit « jusqu'à 70 % ».",
+    "Oublier les frais dans le prix de revient."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 7,
+     "questions": [
+      "22"
+     ],
+     "libelle": "question 22",
+     "texte": "« +50 % gratuit » sur un paquet de 66 lessives : 66 + 33 = 99 lessives."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 8,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "26 enfants à 19 € = 494 € ; avec un adulte gratuit par 15 enfants payants, un seul adulte entre gratuitement."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-graphe-fleche",
@@ -2118,7 +2769,61 @@
     "Sur une figure, le petit carré indique un angle droit. Des petits traits identiques indiquent des côtés de même longueur (isométriques)."
    ],
    "exemple": "Si a ⊥ c et b ⊥ c, alors a // b.",
-   "astuce": "Le codage dit la vérité même si le dessin n'est pas parfait : fie-toi aux traits et aux petits carrés."
+   "astuce": "Le codage dit la vérité même si le dessin n'est pas parfait : fie-toi aux traits et aux petits carrés.",
+   "comprendre": [
+    "En géométrie, on écrit avec des symboles. Un point se nomme par une majuscule (le point A), une droite par une minuscule (la droite d) ou par deux de ses points entre parenthèses ((AB)). [AB] désigne le segment qui va de A à B.",
+    "a // b veut dire que les droites a et b sont parallèles : elles ne se coupent jamais. a ⊥ b veut dire qu'elles sont perpendiculaires : elles se coupent à angle droit.",
+    "Sur une figure, le codage dit la vérité, même si le dessin est un peu imprécis : le petit carré indique un angle droit ; des petits traits identiques indiquent des segments de même longueur. Lis toujours le codage avant de répondre."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "[AB]",
+     "explication": "Le segment d'extrémités A et B."
+    },
+    {
+     "cas": "a ⊥ c et b ⊥ c",
+     "explication": "Deux droites perpendiculaires à la même droite sont parallèles : a // b."
+    },
+    {
+     "cas": "Deux côtés marqués du même petit trait.",
+     "explication": "Ils ont la même longueur, même si le dessin semble un peu différent."
+    },
+    {
+     "cas": "Un petit carré au sommet d'un angle.",
+     "explication": "C'est un angle droit."
+    }
+   ],
+   "pieges": [
+    "Confondre // (parallèles) et ⊥ (perpendiculaires).",
+    "Écrire un segment sans crochets.",
+    "Se fier au dessin plutôt qu'au codage.",
+    "Nommer une droite avec une majuscule seule (A désigne un point)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 3,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Retrouver la construction qui correspond à l'énoncé grâce aux codes : côtés de même longueur, angle droit, droites parallèles."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 3,
+     "questions": [
+      "20"
+     ],
+     "libelle": "question 20",
+     "texte": "Sur le plan, le seul segment nommé est [AB] ; c est perpendiculaire à g (⊥) et b est parallèle à g (//)."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-encadrer",

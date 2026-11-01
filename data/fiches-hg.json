@@ -1131,7 +1131,72 @@
     "La source (et sa date) dit d'où viennent les informations : des chiffres de 2024 ne sont pas ceux de 1990."
    ],
    "exemple": "Pour trouver une rue, on prend un plan de ville.",
-   "astuce": "Avant de répondre, lis toujours le titre et la légende."
+   "astuce": "Avant de répondre, lis toujours le titre et la légende.",
+   "comprendre": [
+    "Une carte est un dessin simplifié d'un territoire vu d'en haut. Avant de répondre à une question, lis toujours trois choses : le titre (de quoi parle la carte ?), la légende (que veulent dire les couleurs et les symboles ?) et la source avec sa date (d'où viennent les informations, et de quand ?).",
+    "Il existe beaucoup de sortes de cartes : le plan d'une ville ou d'un bâtiment, la carte routière ou ferroviaire, la carte du relief, des climats, de la population, de l'agriculture… Pour répondre, choisis la carte qui contient vraiment l'information demandée.",
+    "Sur un plan quadrillé, une case se repère par une lettre et un chiffre (H8). La rose des vents ou la flèche du nord donne les directions ; l'échelle permet de calculer les distances."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Comparer la densité de population des provinces.",
+     "explication": "Il faut une carte de la population, pas une carte de l'agriculture ou du relief."
+    },
+    {
+     "cas": "Trouver le train pour Houyet à la gare de Namur.",
+     "explication": "Sur la carte des lignes, Houyet est sur la ligne vers Dinant : on prend le train « Dinant Bertrix »."
+    },
+    {
+     "cas": "Sortir d'une école par le plus court chemin sur un plan quadrillé.",
+     "explication": "On suit les couloirs et on note les cases traversées : I6, I5, I4, J4…"
+    },
+    {
+     "cas": "Une carte avec des chiffres de 1990.",
+     "explication": "Elle ne montre pas forcément la situation d'aujourd'hui : regarde la date de la source."
+    }
+   ],
+   "pieges": [
+    "Répondre sans lire la légende.",
+    "Choisir une carte qui ne contient pas l'information demandée.",
+    "Inverser lettre et chiffre, ou ligne et colonne, sur un plan quadrillé.",
+    "Oublier la date de la source."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Pour comparer la densité des provinces, il faut la carte de la population ; pour les élevages de porcs et de bovins, la carte de l'agriculture."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 3,
+     "questions": [
+      "1a"
+     ],
+     "libelle": "question 1a",
+     "texte": "Sur le plan quadrillé de l'école, le chemin vers le point de rassemblement suit les couloirs : I6, I5, I4, puis J4, K4… jusqu'en N4."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 5,
+     "questions": [
+      "9a"
+     ],
+     "libelle": "question 9a",
+     "texte": "Avec la carte des lignes de train, on trouve la voie depuis Namur : voie 6 pour Houyet (ligne de Dinant), voie 7 pour Mons."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-transports",
@@ -1225,7 +1290,61 @@
     "Faits marquants : vers 3500 av. J.-C., invention de l'écriture (Préhistoire → Antiquité) ; an 1, début de l'ère chrétienne ; 476, chute de l'Empire romain d'Occident (Antiquité → Moyen Âge) ; 1492, Christophe Colomb aux Amériques (Moyen Âge → Temps modernes) ; 1789, Révolution française (Temps modernes → Époque contemporaine)."
    ],
    "exemple": "Le baptême de Clovis (vers 496) appartient au Haut Moyen Âge, donc au Moyen Âge.",
-   "astuce": "Place d'abord les 4 dates repères (vers 3500 av. J.-C., 476, 1492, 1789) sur une frise, puis glisse chaque moment clé dans sa période."
+   "astuce": "Place d'abord les 4 dates repères (vers 3500 av. J.-C., 476, 1492, 1789) sur une frise, puis glisse chaque moment clé dans sa période.",
+   "comprendre": [
+    "L'histoire est découpée en grandes périodes, séparées par des dates repères : la Préhistoire (jusqu'à l'invention de l'écriture, vers 3500 av. J.-C.), l'Antiquité (jusqu'en 476), le Moyen Âge (jusqu'en 1492), les Temps modernes (jusqu'en 1789) et l'Époque contemporaine.",
+    "Dans nos régions, quelques moments clés marquent ces périodes : la conquête romaine et la période gallo-romaine (Antiquité) ; l'installation des Francs, Clovis et Charlemagne (début du Moyen Âge) ; les grandes explorations et les colonisations européennes, après le voyage de Christophe Colomb en 1492 (Temps modernes) ; les migrations de travailleurs vers la Belgique après 1945 (Époque contemporaine).",
+    "Pour situer un fait, place d'abord les dates repères sur une frise, puis glisse le fait dans sa période. Un moment clé explique souvent un grand changement : les colonisations, par exemple, ont fait connaitre le christianisme sur d'autres continents."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le baptême de Clovis, vers 496.",
+     "explication": "Après 476 : Moyen Âge."
+    },
+    {
+     "cas": "La Révolution française, 1789.",
+     "explication": "Elle ouvre l'Époque contemporaine."
+    },
+    {
+     "cas": "Christophe Colomb arrive aux Amériques, 1492.",
+     "explication": "Début des Temps modernes et des grandes colonisations."
+    },
+    {
+     "cas": "Des tombes du 5e au 7e siècle.",
+     "explication": "Après 476 : Moyen Âge."
+    }
+   ],
+   "pieges": [
+    "Se tromper de date repère (1492 et 1789 ne sont pas interchangeables).",
+    "Placer un fait de 476 ou de 1492 dans la mauvaise période : ces dates ouvrent la période suivante.",
+    "Oublier que la Préhistoire se termine avec l'écriture.",
+    "Confondre un moment clé et une simple date."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Associer chaque fait à sa date : la Révolution française en 1789, l'arrivée de Christophe Colomb aux Amériques en 1492."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "7b"
+     ],
+     "libelle": "question 7b",
+     "texte": "La diffusion du christianisme dans les Amériques et en Australie, du 16e au 19e siècle, s'explique par les colonisations européennes."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-gallo-romains-francs",
@@ -1449,7 +1568,50 @@
     "Densité = habitants : superficie. Un pays très peuplé n'est pas forcément très dense (la Russie a plus d'habitants que le Japon, mais elle est bien moins dense)."
    ],
    "exemple": "Presque tous les Égyptiens vivent dans la vallée et le delta du Nil, au milieu du désert.",
-   "astuce": "Pour comparer des densités, calcule toujours habitants : km² : ne regarde pas seulement le nombre d'habitants."
+   "astuce": "Pour comparer des densités, calcule toujours habitants : km² : ne regarde pas seulement le nombre d'habitants.",
+   "comprendre": [
+    "La Terre compte environ 8 milliards d'habitants, mais ils sont très mal répartis. Environ 6 humains sur 10 vivent en Asie, et plus de la moitié de l'humanité habite aujourd'hui en ville. Certaines agglomérations dépassent 15 ou 20 millions d'habitants.",
+    "Les espaces très peuplés sont souvent des plaines au climat favorable, avec de l'eau et près de la mer : l'Asie du Sud et de l'Est, l'Europe de l'Ouest, la vallée du Nil, les littoraux. Les espaces presque vides sont trop secs (déserts), trop froids (Sibérie, Antarctique), trop hauts (Himalaya) ou couverts de forêt dense (Amazonie).",
+    "Pour comparer des territoires, on ne regarde pas seulement le nombre d'habitants mais la densité : habitants : superficie, en hab./km². Sur une carte de la population, lis bien la légende : la taille des points ou l'intensité de la couleur indiquent le nombre d'habitants."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "L'Égypte.",
+     "explication": "Presque tous les Égyptiens vivent dans la vallée et le delta du Nil, au milieu du désert."
+    },
+    {
+     "cas": "La Sibérie.",
+     "explication": "Immense mais presque vide : il y fait trop froid."
+    },
+    {
+     "cas": "L'hémisphère Nord.",
+     "explication": "Il compte la plupart des terres et des très grandes villes."
+    },
+    {
+     "cas": "La Chine et l'Inde.",
+     "explication": "Les deux pays les plus peuplés du monde, avec chacun plus d'un milliard d'habitants."
+    }
+   ],
+   "pieges": [
+    "Confondre « le plus d'habitants » et « la plus forte densité ».",
+    "Croire que les grands pays sont toujours très peuplés (la Russie, le Canada).",
+    "Lire une carte sans sa légende ni sa date.",
+    "Supposer que le nord est en haut sans vérifier la carte."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Sur la carte de la population mondiale, la plupart des très grandes agglomérations sont dans l'hémisphère Nord, beaucoup en Asie ; une seule de 15 à 20 millions d'habitants, Kinshasa, est dans l'hémisphère Sud."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-planisphere",
@@ -1573,7 +1735,61 @@
     "Pour comparer, on peut construire un tableau à double entrée : un thème par ligne, une époque par colonne."
    ],
    "exemple": "Entre 1950 et aujourd'hui : la monnaie a changé (franc belge → euro), la capitale est restée Bruxelles.",
-   "astuce": "Si les deux cases d'une ligne du tableau sont identiques, c'est une continuité."
+   "astuce": "Si les deux cases d'une ligne du tableau sont identiques, c'est une continuité.",
+   "comprendre": [
+    "Comparer deux époques, c'est chercher ce qui a changé (les changements) et ce qui est resté pareil (les continuités, ou permanences). Les deux comptent : l'histoire n'est pas seulement faite de nouveautés.",
+    "Pour comparer, on observe des documents des deux époques : deux photos de la même rue, deux cartes, deux tableaux de vie quotidienne. Un tableau à double entrée aide : un thème par ligne (transport, éclairage, habitat…), une époque par colonne.",
+    "Ne conclus que sur ce que les documents montrent. Si une information n'est visible sur aucune des deux photos (un nom de rue, une saison), on ne peut pas savoir si elle a changé."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une rue en 1900 et aujourd'hui.",
+     "explication": "La charrette tirée par un cheval a été remplacée par des voitures : un changement. Les trottoirs sont toujours là : une continuité."
+    },
+    {
+     "cas": "La monnaie de la Belgique.",
+     "explication": "Le franc belge a été remplacé par l'euro en 2002 : un changement."
+    },
+    {
+     "cas": "La capitale de la Belgique.",
+     "explication": "C'est toujours Bruxelles depuis 1830 : une continuité."
+    },
+    {
+     "cas": "Ixelles, rurale au 18e siècle, urbaine aujourd'hui.",
+     "explication": "Le paysage a changé : des champs sont devenus des rues."
+    }
+   ],
+   "pieges": [
+    "Ne chercher que les changements et oublier les continuités.",
+    "Conclure sur ce qu'aucun document ne montre.",
+    "Comparer deux documents qui ne montrent pas le même lieu.",
+    "Oublier de regarder les dates des documents."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 5,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Deux photos de la rue de Courcelles : la charrette sur l'ancienne, les voitures et les lampadaires sur la récente, des trottoirs sur les deux ; aucun nom de rue n'est visible, on ne peut pas savoir s'il a changé."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 9,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "Ixelles, rurale au 18e siècle, est devenue urbaine."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-peuplement-belgique",

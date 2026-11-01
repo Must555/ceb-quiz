@@ -12,7 +12,83 @@
         "Réduction : prix de départ − réduction = prix à payer."
       ],
       "exemple": "20 % de 150 € = 150 × 20 : 100 = 30 €. Avec 20 % de réduction, on paie 150 − 30 = 120 €.",
-      "astuce": "10 % = on divise par 10. 50 % = la moitié. 25 % = le quart."
+      "astuce": "10 % = on divise par 10. 50 % = la moitié. 25 % = le quart.",
+      "comprendre": [
+        "Un pourcentage est une fraction sur 100 : 25 % veut dire 25 sur 100, donc un quart. Pour calculer un pourcentage d'un nombre : nombre × pourcentage : 100. 20 % de 150 € = 150 × 20 : 100 = 30 €.",
+        "Quelques pourcentages se calculent de tête : 50 %, c'est la moitié ; 25 %, le quart ; 75 %, les trois quarts ; 10 %, on divise par 10. On peut combiner : 30 % = 3 × 10 % ; 5 % = la moitié de 10 %.",
+        "Attention à ce qu'on demande : la réduction ou le prix à payer ? L'augmentation ou le nouveau total ? Après une réduction de 20 % sur 150 €, on paie 150 − 30 = 120 €. Après une augmentation de 40 % de 640 habitants, on en compte 640 + 256 = 896."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "10 % de 78 km",
+          "explication": "78 : 10 = 7,8 km ; 30 % = 3 × 7,8 = 23,4 km."
+        },
+        {
+          "cas": "32 % de 25 élèves",
+          "explication": "25 × 32 : 100 = 8 élèves."
+        },
+        {
+          "cas": "40 % de crevettes dans une croquette de 60 g",
+          "explication": "60 × 40 : 100 = 24 g."
+        },
+        {
+          "cas": "Un récipient rempli au quart",
+          "explication": "Il est rempli à 25 % de sa capacité."
+        }
+      ],
+      "pieges": [
+        "Donner la réduction au lieu du prix à payer, ou l'augmentation au lieu du total.",
+        "Croire que 25 % veut dire « divisé par 25 » : c'est le quart.",
+        "Oublier de diviser par 100.",
+        "Croire qu'un pourcentage dépasse toujours le nombre de départ."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "Un parcours de 78 km : 10 % = 7,8 km ; 39 km = 50 % ; 30 % = 23,4 km ; 70 % = 54,6 km."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "12"
+          ],
+          "libelle": "question 12",
+          "texte": "Une croquette de 60 g contient 40 % de crevettes : 60 × 40 : 100 = 24 g."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "18a"
+          ],
+          "libelle": "question 18a",
+          "texte": "32 % des 25 votes : 25 × 32 : 100 = 8 élèves."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "12"
+          ],
+          "libelle": "question 12",
+          "texte": "Un récipient rempli au quart l'est à 25 % ; à mi-chemin entre le quart et la moitié, à 37,5 %."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-aires-perimetres",
@@ -27,7 +103,83 @@
         "Parallélogramme : base × hauteur. Losange : (grande diagonale × petite diagonale) : 2. Trapèze : (grande base + petite base) × hauteur : 2."
       ],
       "exemple": "Rectangle de 6 m sur 4 m : périmètre = (6 + 4) × 2 = 20 m ; aire = 6 × 4 = 24 m².",
-      "astuce": "Clôture, bordure, ruban → périmètre. Peinture, carrelage, gazon → aire."
+      "astuce": "Clôture, bordure, ruban → périmètre. Peinture, carrelage, gazon → aire.",
+      "comprendre": [
+        "Le périmètre est la longueur du tour d'une figure : il se mesure en m, cm… L'aire est la mesure de la surface à l'intérieur : elle se mesure en m², cm²… Clôture, bordure, ruban : on cherche un périmètre. Peinture, carrelage, gazon : on cherche une aire.",
+        "Rectangle : périmètre = (longueur + largeur) × 2 ; aire = longueur × largeur. Sur un quadrillage, on peut aussi compter les carreaux à l'intérieur ; un demi-carreau compte pour une moitié.",
+        "Deux figures peuvent avoir le même périmètre et des aires différentes, ou l'inverse. Pour une grande surface difficile à mesurer, on peut estimer l'aire avec un étalon : on compte combien de fois il y entre."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Un rectangle de 6 m sur 4 m.",
+          "explication": "Périmètre : (6 + 4) × 2 = 20 m. Aire : 6 × 4 = 24 m²."
+        },
+        {
+          "cas": "Deux rectangles de 6 × 3 et de 5 × 4 carreaux.",
+          "explication": "Même périmètre (18 carreaux), mais des aires de 18 et 20 carreaux."
+        },
+        {
+          "cas": "Un bac carré de 1 m de côté, un fraisier tous les 20 cm.",
+          "explication": "100 : 20 = 5 par rangée, 5 rangées : 25 fraisiers."
+        },
+        {
+          "cas": "Une pelouse où un étalon de 100 m² entre environ 8 fois.",
+          "explication": "Environ 800 m²."
+        }
+      ],
+      "pieges": [
+        "Confondre périmètre (un tour, en m) et aire (une surface, en m²).",
+        "Oublier de multiplier par 2 pour le périmètre d'un rectangle.",
+        "Croire que même périmètre veut dire même aire.",
+        "Mélanger les unités (des cm et des m)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 6,
+          "questions": [
+            "11b"
+          ],
+          "libelle": "question 11b",
+          "texte": "Un bac carré de 1 m de côté, un fraisier tous les 20 cm : 5 × 5 = 25 fraisiers."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "8"
+          ],
+          "libelle": "question 8",
+          "texte": "Sur un quadrillage de 1 cm, les aires des figures sont de 4, 6 et 4 cm² ; le triangle est la moitié d'un rectangle de 12 cm²."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "6"
+          ],
+          "libelle": "question 6",
+          "texte": "L'étalon de 100 m² entre environ 8 fois dans la pelouse : environ 800 m² (de 700 à 900 m² acceptés)."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "6b"
+          ],
+          "libelle": "question 6b",
+          "texte": "Le rectangle A (6 × 3 = 18 carreaux) a une aire plus petite que le rectangle C (5 × 4 = 20), même s'ils ont le même périmètre."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-volumes",
@@ -245,7 +397,72 @@
         "Vérification : quotient × diviseur + reste = dividende."
       ],
       "exemple": "129 : 7 = 18 reste 3, car 18 × 7 = 126 et 126 + 3 = 129.",
-      "astuce": "« Combien de groupes complets ? » → c'est le quotient. « Combien en reste-t-il ? » → c'est le reste."
+      "astuce": "« Combien de groupes complets ? » → c'est le quotient. « Combien en reste-t-il ? » → c'est le reste.",
+      "comprendre": [
+        "Diviser, c'est partager en parts égales ou chercher combien de fois un nombre entre dans un autre. Dividende : diviseur = quotient, avec parfois un reste. Le reste est toujours plus petit que le diviseur.",
+        "Pour vérifier une division, on fait l'opération inverse, la multiplication : quotient × diviseur + reste = dividende. 129 : 7 = 18 reste 3, car 18 × 7 + 3 = 129.",
+        "Dans un problème, réfléchis à ce que la question demande. « Combien de groupes complets ? » : le quotient. « Combien en reste-t-il ? » : le reste. « Combien de boites faut-il acheter ? » : s'il reste quelque chose, il faut une boite de plus."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "75 ml partagés en 15 recharges égales.",
+          "explication": "75 : 15 = 5 ml par recharge."
+        },
+        {
+          "cas": "75 boules de sorbet, 20 boules par boite.",
+          "explication": "3 boites donnent 60 boules : pas assez. Il faut 4 boites."
+        },
+        {
+          "cas": "Vérifier 886 432 : 4 = 221 608.",
+          "explication": "On calcule 221 608 × 4 : on doit retrouver 886 432."
+        },
+        {
+          "cas": "130 élèves, des cars de 50 places.",
+          "explication": "130 : 50 = 2 reste 30 : il faut 3 cars."
+        }
+      ],
+      "pieges": [
+        "Donner un reste plus grand que le diviseur.",
+        "Oublier d'ajouter une boite, un car ou une table pour le reste.",
+        "Vérifier une division avec une soustraction ou une autre division.",
+        "Inverser le dividende et le diviseur."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 6,
+          "questions": [
+            "20"
+          ],
+          "libelle": "question 20",
+          "texte": "75 boules à 20 par boite : 3 boites ne suffisent pas (60 boules), il en faut 4."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 6,
+          "questions": [
+            "4"
+          ],
+          "libelle": "question 4",
+          "texte": "Pour vérifier 886 432 : 4 = 221 608, on calcule 221 608 × 4."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "10"
+          ],
+          "libelle": "question 10",
+          "texte": "Un flacon de 75 ml recharge 15 fois un vaporisateur : 75 : 15 = 5 ml."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-moyenne",
@@ -359,7 +576,83 @@
         "Losange : 4 côtés égaux. Parallélogramme : côtés opposés parallèles. Trapèze : au moins une paire de côtés parallèles (un trapèze isocèle a en plus ses deux côtés non parallèles de même longueur)."
       ],
       "exemple": "Un carré est un rectangle particulier, et aussi un losange particulier.",
-      "astuce": "Pense à une famille : le carré a toutes les qualités des autres."
+      "astuce": "Pense à une famille : le carré a toutes les qualités des autres.",
+      "comprendre": [
+        "Un quadrilatère est un polygone à 4 côtés. On les reconnait à leurs côtés parallèles, à leurs côtés de même longueur et à leurs angles droits. Le trapèze a au moins une paire de côtés parallèles. Le parallélogramme a ses côtés opposés parallèles et de même longueur, deux à deux.",
+        "Le rectangle est un parallélogramme qui a 4 angles droits. Le losange est un parallélogramme qui a 4 côtés de même longueur. Le carré a tout à la fois : 4 côtés égaux et 4 angles droits. C'est donc un rectangle particulier et un losange particulier.",
+        "Pour définir une figure, on cherche ce qu'il faut et ce qui suffit : « pour être un losange, il faut et il suffit d'être un quadrilatère à 4 côtés de même longueur ». Pour en construire un avec des bâtonnets, pense aux côtés : un parallélogramme demande deux paires de bâtonnets identiques."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "4 côtés parallèles deux à deux, 2 angles aigus et 2 obtus.",
+          "explication": "Un parallélogramme (le losange aussi est accepté)."
+        },
+        {
+          "cas": "4 côtés de même longueur, sans angle droit.",
+          "explication": "Un losange."
+        },
+        {
+          "cas": "4 angles droits.",
+          "explication": "Un rectangle ; le carré en est un cas particulier."
+        },
+        {
+          "cas": "Un cerf-volant (2 paires de côtés voisins égaux).",
+          "explication": "Ni côtés parallèles ni côtés opposés égaux : ce n'est pas un parallélogramme."
+        }
+      ],
+      "pieges": [
+        "Croire qu'un carré n'est pas un rectangle.",
+        "Appeler losange un carré tourné, ou carré un losange dont on ne connait pas les angles.",
+        "Confondre trapèze (une paire de côtés parallèles) et parallélogramme (deux paires).",
+        "Juger d'après le dessin sans regarder le codage (petits traits, angles droits)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2022"
+          ],
+          "livret": 3,
+          "questions": [
+            "13"
+          ],
+          "libelle": "question 13",
+          "texte": "Côtés parallèles deux à deux avec 2 angles aigus et 2 obtus : un parallélogramme ; 4 côtés de même longueur : un losange."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 3,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "Classer sept quadrilatères d'après leurs côtés parallèles et leurs côtés de même longueur : le cerf-volant n'a pas de côtés parallèles, le trapèze en a une seule paire."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 3,
+          "questions": [
+            "4"
+          ],
+          "libelle": "question 4",
+          "texte": "Pour être un losange, il faut et il suffit d'être un polygone à 4 côtés isométriques ; pour être un rectangle, d'avoir 4 angles droits."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 3,
+          "questions": [
+            "12b"
+          ],
+          "libelle": "question 12b",
+          "texte": "Pour construire un parallélogramme, il faut deux paires de bâtonnets de même longueur."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-conjugaison-temps-simples",
@@ -372,7 +665,72 @@
         "Futur simple : infinitif + -ai, -as, -a, -ons, -ez, -ont (aller → j'irai, être → je serai, avoir → j'aurai, faire → je ferai)."
       ],
       "exemple": "chanter : je chante / je chantais / je chanterai. finir : nous finissons / nous finissions / nous finirons.",
-      "astuce": "Imparfait = « avant, d'habitude ». Futur = « demain »."
+      "astuce": "Imparfait = « avant, d'habitude ». Futur = « demain ».",
+      "comprendre": [
+        "Les temps simples se conjuguent en un seul mot. Le présent dit ce qui se passe maintenant ou ce qui est toujours vrai (je chante, nous finissons). L'imparfait décrit le décor ou ce qui durait, ce qu'on faisait d'habitude (je chantais). Le futur simple dit ce qui se passera (je chanterai).",
+        "Les terminaisons : imparfait -ais, -ais, -ait, -ions, -iez, -aient ; futur -ai, -as, -a, -ons, -ez, -ont, ajoutées à l'infinitif pour la plupart des verbes. Certains futurs sont à retenir : j'irai, je serai, j'aurai, je ferai, je verrai, je pourrai. Le conditionnel présent mélange les deux : radical du futur + terminaisons de l'imparfait (je chanterais).",
+        "Pour trouver le temps d'un verbe : compte les mots (un mot = temps simple ; deux mots = temps composé), puis regarde la terminaison. Au CEB, on te demande souvent de nommer le temps et de recopier un autre verbe du texte conjugué au même temps."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« il déplacera la nourriture »",
+          "explication": "Un seul mot, terminaison -ra : futur simple."
+        },
+        {
+          "cas": "« il cachait ses réserves »",
+          "explication": "Terminaison -ait : imparfait."
+        },
+        {
+          "cas": "« vous découvrez »",
+          "explication": "Un seul mot, l'action se passe maintenant : présent."
+        },
+        {
+          "cas": "« cela m'étonnerait »",
+          "explication": "Radical du futur + -ait : conditionnel présent, pas imparfait."
+        }
+      ],
+      "pieges": [
+        "Confondre futur (je chanterai) et conditionnel (je chanterais).",
+        "Confondre imparfait (il chantait) et conditionnel (il chanterait).",
+        "Prendre un temps composé (a observé) pour un temps simple.",
+        "Recopier un verbe d'un autre temps comme exemple."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 7,
+          "questions": [
+            "23"
+          ],
+          "libelle": "question 23",
+          "texte": "« ai commencé » est au passé composé ; « aurait » au conditionnel présent."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 8,
+          "questions": [
+            "14"
+          ],
+          "libelle": "question 14",
+          "texte": "« a observé » est au passé composé ; « déplacera » au futur simple, comme « fera »."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 6,
+          "questions": [
+            "15"
+          ],
+          "libelle": "question 15",
+          "texte": "« a rejeté » est au passé composé (deux mots) ; « découvrez » au présent."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-passe-compose",
@@ -1012,7 +1370,83 @@
         "Nous sommes au 21e siècle (XXIe)."
       ],
       "exemple": "1889 → 19e siècle ; 1900 → 19e siècle ; 1901 → 20e siècle.",
-      "astuce": "Prends les centaines de l'année et ajoute 1 (1889 → 18 + 1 = 19). Attention aux années qui finissent par 00 !"
+      "astuce": "Prends les centaines de l'année et ajoute 1 (1889 → 18 + 1 = 19). Attention aux années qui finissent par 00 !",
+      "comprendre": [
+        "Un siècle est une période de 100 ans. Le 1er siècle va de l'an 1 à l'an 100, le 2e de 101 à 200… Le 20e siècle va de 1901 à 2000, et nous vivons au 21e siècle, qui a commencé en 2001. Les siècles s'écrivent souvent en chiffres romains : XXe, XXIe.",
+        "Pour trouver le siècle d'une année, prends le nombre de centaines et ajoute 1 : 1889 → 18 + 1 = 19e siècle ; 742 → 7 + 1 = 8e siècle. Attention aux années qui finissent par 00 : elles terminent un siècle. 1900 appartient encore au 19e siècle, et 2000 au 20e.",
+        "Une vie, un règne ou un évènement peut s'étendre sur deux siècles : Charlemagne (742-814) a vécu au 8e et au 9e siècle. Avant Jésus-Christ, on compte les siècles à rebours : le 1er siècle av. J.-C. va de l'an 100 à l'an 1 av. J.-C."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "1912",
+          "explication": "19 + 1 = 20e siècle."
+        },
+        {
+          "cas": "1900",
+          "explication": "Elle termine le 19e siècle : ce n'est pas encore le 20e."
+        },
+        {
+          "cas": "Charlemagne (742-814)",
+          "explication": "742 est au 8e siècle, 814 au 9e : sa vie s'étend sur deux siècles."
+        },
+        {
+          "cas": "Des documents de 1940 à 1945",
+          "explication": "Ils se situent au 20e siècle."
+        }
+      ],
+      "pieges": [
+        "Oublier d'ajouter 1 : 1889 n'est pas au 18e siècle.",
+        "Placer 1900 ou 2000 au siècle suivant.",
+        "Confondre l'année et le siècle (le 19e siècle, ce ne sont pas les années 1900).",
+        "Se tromper en lisant les chiffres romains (XIX = 19, XXI = 21)."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 5,
+          "questions": [
+            "6a"
+          ],
+          "libelle": "question 6a",
+          "texte": "Des documents des années 1940 à 1945 se situent au 20e siècle."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 5,
+          "questions": [
+            "2c"
+          ],
+          "libelle": "question 2c",
+          "texte": "L'année 1912 se situe au 20e siècle, qui va de 1901 à 2000."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 5,
+          "questions": [
+            "2c"
+          ],
+          "libelle": "question 2c",
+          "texte": "Une œuvre des années 1801 à 1900 se situe au 19e siècle."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 5,
+          "questions": [
+            "4d"
+          ],
+          "libelle": "question 4d",
+          "texte": "La vie de Charlemagne (742-814) s'étend sur le 8e et le 9e siècle."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "hg-dates-cles",
@@ -1172,7 +1606,61 @@
         "Elle s'exprime en habitants par km² (hab./km²)."
       ],
       "exemple": "500 000 habitants sur 2 500 km² → 200 hab./km².",
-      "astuce": "Plus il y a de monde sur un petit territoire, plus la densité est grande."
+      "astuce": "Plus il y a de monde sur un petit territoire, plus la densité est grande.",
+      "comprendre": [
+        "La densité de population dit combien de personnes vivent, en moyenne, sur 1 km². On la calcule en divisant le nombre d'habitants par la superficie : densité = habitants : km². Elle s'exprime en habitants par km² (hab./km²).",
+        "Elle permet de comparer des territoires de tailles différentes. Une grande province peut avoir beaucoup d'habitants et pourtant une faible densité, si elle est très étendue. En Belgique, la densité moyenne est d'environ 380 hab./km² ; elle dépasse 7 000 hab./km² dans la Région de Bruxelles-Capitale et reste sous 70 dans la province de Luxembourg.",
+        "Sur une carte de densité, chaque couleur ou chaque symbole correspond à une tranche de la légende (moins de 200, de 200 à 399…). Pour placer une valeur, cherche la tranche qui la contient."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "500 000 habitants sur 2 500 km².",
+          "explication": "500 000 : 2 500 = 200 hab./km²."
+        },
+        {
+          "cas": "Anvers : 686 hab./km² ; légende « plus de 600 ».",
+          "explication": "686 dépasse 600 : il va dans cette tranche."
+        },
+        {
+          "cas": "Namur : 138 hab./km².",
+          "explication": "Moins de 200 : une densité faible, avec beaucoup de forêts et de campagne."
+        },
+        {
+          "cas": "Une ville de 50 000 habitants sur 50 km².",
+          "explication": "1 000 hab./km², bien plus dense qu'une région rurale."
+        }
+      ],
+      "pieges": [
+        "Confondre nombre d'habitants et densité.",
+        "Diviser la superficie par le nombre d'habitants au lieu de l'inverse.",
+        "Placer une valeur dans la mauvaise tranche de la légende (400 est-il dans « 200 à 399 » ou « 400 à 599 » ?).",
+        "Oublier l'unité hab./km²."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 5,
+          "questions": [
+            "5"
+          ],
+          "libelle": "question 5",
+          "texte": "Pour comparer la densité de population des provinces, on choisit la carte de la population."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 5,
+          "questions": [
+            "20"
+          ],
+          "libelle": "question 20",
+          "texte": "Placer les densités des provinces dans la légende : Anvers (686) dans « plus de 600 », la Flandre orientale (564) entre 400 et 599, Namur (138) sous 200."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "sc-corps-humain",
@@ -1186,7 +1674,83 @@
         "Le sang : plasma (liquide), globules rouges (transportent le dioxygène), globules blancs (combattent les microbes), plaquettes (referment les plaies)."
       ],
       "exemple": "Inspiration : le diaphragme descend, l'air entre. Expiration : l'air sort.",
-      "astuce": "Artère = « Aller » (A comme Aller, depuis le cœur)."
+      "astuce": "Artère = « Aller » (A comme Aller, depuis le cœur).",
+      "comprendre": [
+        "Les organes du corps travaillent ensemble en systèmes, aussi appelés appareils. Le système locomoteur (os, articulations, muscles) permet de bouger. Le système circulatoire (cœur, vaisseaux, sang) transporte. Le système respiratoire (nez, trachée, bronches, poumons) fait entrer le dioxygène. Le système digestif transforme les aliments.",
+        "Le cœur pompe le sang : les artères l'emmènent du cœur vers les organes, les veines le ramènent. Dans les poumons, le sang prend le dioxygène et rejette le dioxyde de carbone. Dans l'intestin grêle, il reçoit les nutriments.",
+        "Nos cinq sens nous informent sur ce qui nous entoure, chacun avec son organe : la vue (les yeux), l'ouïe (les oreilles), l'odorat (le nez), le gout (la langue), le toucher (la peau). Certains animaux ont un sens plus développé que le nôtre : l'odorat de l'ours, l'ouïe de la chouette."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Le crâne, le cœur, le poumon.",
+          "explication": "Système locomoteur (os), circulatoire, respiratoire."
+        },
+        {
+          "cas": "Sentir une odeur, entendre un bruit, gouter le sel.",
+          "explication": "L'odorat, l'ouïe, le gout."
+        },
+        {
+          "cas": "Une inspiration.",
+          "explication": "Le diaphragme descend, la cage thoracique se soulève et l'air entre dans les poumons."
+        },
+        {
+          "cas": "Le sang qui part du cœur vers les jambes.",
+          "explication": "Il circule dans les artères."
+        }
+      ],
+      "pieges": [
+        "Confondre artères (partent du cœur) et veines (reviennent au cœur).",
+        "Ranger un organe dans le mauvais système (le crâne n'est pas dans le système digestif).",
+        "Associer un sens au mauvais organe.",
+        "Oublier que les systèmes travaillent ensemble, reliés par le sang."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 9,
+          "questions": [
+            "2a"
+          ],
+          "libelle": "question 2a",
+          "texte": "Pour une odeur, l'odorat ; pour un bruit, l'ouïe ; pour le sel, le gout."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 10,
+          "questions": [
+            "1b"
+          ],
+          "libelle": "question 1b",
+          "texte": "La flèche désigne l'oreille : le sens lié est l'ouïe."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 10,
+          "questions": [
+            "1a"
+          ],
+          "libelle": "question 1a",
+          "texte": "L'odorat de l'ours passe par le nez ; l'ouïe de la chouette, par les oreilles."
+        },
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 9,
+          "questions": [
+            "4a"
+          ],
+          "libelle": "question 4a",
+          "texte": "Le crâne appartient au système locomoteur, le cœur au système circulatoire, le poumon au système respiratoire."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "sc-classification",
@@ -1199,7 +1763,84 @@
         "Une espèce : des êtres qui peuvent se reproduire entre eux et avoir des petits eux-mêmes féconds."
       ],
       "exemple": "La chauve-souris vole mais a des poils et des mamelles : c'est un mammifère.",
-      "astuce": "Pose-toi la question : « Qu'est-ce qu'il A ? » (plumes, poils, squelette…)."
+      "astuce": "Pose-toi la question : « Qu'est-ce qu'il A ? » (plumes, poils, squelette…).",
+      "comprendre": [
+        "Un être vivant nait, se nourrit, respire, grandit, se reproduit et meurt. Une plante est vivante, même si elle ne se déplace pas ; un cristal ou une pierre ne l'est pas.",
+        "Pour classer les vivants, on regarde leurs attributs, c'est-à-dire ce qu'ils ont : poils et mamelles (mammifères), plumes (oiseaux), nageoires rayonnées (poissons à rayons), squelette externe et pattes articulées (arthropodes), avec 3 paires de pattes et 1 paire d'antennes pour les insectes, corps en anneaux (annélides). Ce qu'ils font (voler, nager) ou l'endroit où ils vivent ne compte pas.",
+        "Les groupes s'emboitent comme des boites : tous les animaux de la collection ont des yeux et une bouche ; parmi eux, certains ont un squelette interne ; parmi ceux-là, certains ont des plumes. Une espèce regroupe les êtres qui peuvent se reproduire entre eux et avoir des petits eux-mêmes féconds."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "La pipistrelle, qui vole.",
+          "explication": "Elle a des poils et des mamelles : c'est un mammifère (une chauve-souris), pas un oiseau."
+        },
+        {
+          "cas": "Le saïga, le rhododendron et l'améthyste.",
+          "explication": "Le saïga (une antilope) et le rhododendron (une plante) sont vivants ; l'améthyste est une pierre."
+        },
+        {
+          "cas": "L'aselle aquatique.",
+          "explication": "Squelette externe et 2 paires d'antennes : un crustacé, pas un insecte."
+        },
+        {
+          "cas": "Le lombric.",
+          "explication": "Son corps est fait d'anneaux : un annélide."
+        }
+      ],
+      "pieges": [
+        "Classer d'après ce que l'animal fait ou d'après son milieu.",
+        "Croire qu'une plante n'est pas vivante parce qu'elle ne bouge pas.",
+        "Confondre insecte (6 pattes, 1 paire d'antennes) et autres arthropodes.",
+        "Oublier que tous les vivants respirent, plantes comprises."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 9,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "Tous les êtres vivants respirent ; mais ils ne se déplacent pas tous et ne dorment pas tous."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 10,
+          "questions": [
+            "4"
+          ],
+          "libelle": "question 4",
+          "texte": "D'après les croix du tableau : squelette externe et 2 paires d'antennes, c'est l'aselle aquatique ; nageoires à rayons, l'épinoche."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 10,
+          "questions": [
+            "5a"
+          ],
+          "libelle": "question 5a",
+          "texte": "Le saïga et le rhododendron sont vivants ; l'améthyste ne l'est pas."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "7",
+            "11a"
+          ],
+          "libelle": "questions 7 et 11",
+          "texte": "Un caractère qui permet de comparer les vivants est un attribut ; un système de groupes emboités est une classification. Poils et mamelles : la pipistrelle est un mammifère."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "sc-combustion",

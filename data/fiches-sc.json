@@ -640,7 +640,83 @@
     "L'eau pure gèle à 0 °C et bout à 100 °C (au niveau de la mer)."
    ],
    "exemple": "La buée sur le miroir de la salle de bain, c'est de la condensation.",
-   "astuce": "La vapeur d'eau est invisible !"
+   "astuce": "La vapeur d'eau est invisible !",
+   "comprendre": [
+    "La matière existe sous trois états. Un solide a une forme propre (la glace). Un liquide prend la forme de son récipient (l'eau). Un gaz occupe tout l'espace disponible (la vapeur d'eau, invisible).",
+    "On passe d'un état à l'autre en chauffant ou en refroidissant. Fusion : solide → liquide. Solidification : liquide → solide. Vaporisation : liquide → gaz (lente, c'est l'évaporation ; rapide, à 100 °C, c'est l'ébullition). Condensation : gaz → liquide. L'eau pure gèle à 0 °C et bout à 100 °C.",
+    "Un changement d'état est un phénomène physique : la matière ne change pas, l'eau reste de l'eau. Chauffer un liquide le fait aussi gonfler un peu (il se dilate) ; le refroidir le fait diminuer de volume."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La rosée, la grêle, la vapeur.",
+     "explication": "La rosée est liquide, la grêle solide, la vapeur d'eau gazeuse."
+    },
+    {
+     "cas": "La buée sur le miroir de la salle de bain.",
+     "explication": "La vapeur d'eau se condense en gouttes sur le miroir froid."
+    },
+    {
+     "cas": "Le linge qui sèche.",
+     "explication": "L'eau s'évapore : elle passe à l'état gazeux."
+    },
+    {
+     "cas": "Un liquide coloré dans un petit tube, au frigo puis dans l'eau chaude.",
+     "explication": "Refroidi, il diminue de volume ; chauffé, il augmente."
+    }
+   ],
+   "pieges": [
+    "Croire qu'on voit la vapeur d'eau : la « fumée » au-dessus d'une casserole, ce sont déjà de fines gouttes liquides.",
+    "Confondre fusion (solide → liquide) et dissolution (le sucre dans l'eau).",
+    "Croire que l'eau évaporée a disparu.",
+    "Confondre condensation et solidification."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "7d"
+     ],
+     "libelle": "question 7d",
+     "texte": "En plus de l'état liquide, l'eau existe à l'état solide et à l'état gazeux."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "10a"
+     ],
+     "libelle": "question 10a",
+     "texte": "Chauffé, le liquide augmente de volume ; refroidi, il diminue."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "8a"
+     ],
+     "libelle": "question 8a",
+     "texte": "Au-dessus du lac, l'eau est à l'état gazeux (vapeur) ; dans le lac, à l'état liquide."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "7b"
+     ],
+     "libelle": "question 7b",
+     "texte": "La rosée est de l'eau liquide, les grêlons de l'eau solide, et après évaporation l'eau est gazeuse."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-cycle-eau",
@@ -654,7 +730,83 @@
     "L'eau ruisselle ou s'infiltre, rejoint les rivières puis la mer… et le cycle recommence."
    ],
    "exemple": "Quand l'eau de mer s'évapore, le sel reste dans la mer : la pluie n'est pas salée.",
-   "astuce": "Évaporation → condensation → précipitations → ruissellement/infiltration."
+   "astuce": "Évaporation → condensation → précipitations → ruissellement/infiltration.",
+   "comprendre": [
+    "L'eau de la Terre circule sans cesse : c'est le cycle de l'eau. Le Soleil chauffe l'eau des mers, des lacs et des rivières : elle s'évapore et devient de la vapeur, invisible. Les plantes en rejettent aussi par leurs feuilles (la transpiration).",
+    "En montant, la vapeur se refroidit et se condense en fines gouttelettes : elles forment les nuages et le brouillard. Quand les gouttes deviennent lourdes, elles tombent : ce sont les précipitations (pluie, neige, grêle).",
+    "Au sol, une partie de l'eau ruisselle vers les rivières et la mer (le ruissèlement), une autre s'infiltre dans le sol et rejoint les nappes souterraines (l'infiltration). Puis le cycle recommence. Quand l'eau de mer s'évapore, le sel reste dans la mer : la pluie n'est pas salée."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Des bancs de brouillard le matin.",
+     "explication": "La vapeur d'eau se condense en gouttelettes."
+    },
+    {
+     "cas": "La neige qui tombe sur Bastogne.",
+     "explication": "Une précipitation."
+    },
+    {
+     "cas": "L'eau de fonte des glaces qui forme des cours d'eau.",
+     "explication": "Le ruissèlement."
+    },
+    {
+     "cas": "Une flaque qui disparait au soleil.",
+     "explication": "L'eau s'évapore : elle n'a pas disparu, elle est dans l'air."
+    }
+   ],
+   "pieges": [
+    "Confondre évaporation (liquide → vapeur) et condensation (vapeur → gouttes).",
+    "Confondre ruissèlement (l'eau coule sur le sol) et infiltration (elle entre dans le sol).",
+    "Croire que les nuages sont de la vapeur : ce sont des gouttelettes.",
+    "Croire que la pluie est salée parce qu'elle vient de la mer."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "9a"
+     ],
+     "libelle": "question 9a",
+     "texte": "Sur le schéma : la vapeur se condense en nuages (A), la pluie tombe (B), l'eau ruisselle vers la mer (C)."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "L'eau de fonte des glaces qui forme des cours d'eau : le ruissèlement ; l'eau des nuages qui tombe : les précipitations."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "7a"
+     ],
+     "libelle": "question 7a",
+     "texte": "Le brouillard vient de la condensation ; la neige qui tombe est une précipitation."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 9,
+     "questions": [
+      "7a"
+     ],
+     "libelle": "question 7a",
+     "texte": "Compléter le schéma du cycle de l'eau : évaporation au-dessus de la mer, condensation en nuages, précipitations."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-melanges",
@@ -1029,7 +1181,83 @@
     "Danger : le courant des prises (230 V) peut tuer. Jamais d'eau près d'un appareil électrique."
    ],
    "exemple": "Une clé en métal placée dans le circuit laisse passer le courant ; une gomme, non.",
-   "astuce": "Circuit fermé = courant qui passe = ampoule allumée."
+   "astuce": "Circuit fermé = courant qui passe = ampoule allumée.",
+   "comprendre": [
+    "Un circuit électrique est une boucle : un générateur (pile, panneau solaire, centrale) produit le courant, un récepteur (ampoule, moteur, sonnette) l'utilise, et des fils de connexion les relient. Le courant ne circule que si la boucle est fermée, d'une borne de la pile à l'autre.",
+    "Un interrupteur ouvert coupe la boucle : l'ampoule s'éteint. Fermé, il laisse passer le courant. Les matériaux conducteurs (les métaux, le graphite, l'eau salée) laissent passer le courant ; les isolants (plastique, caoutchouc, bois sec, verre) l'arrêtent.",
+    "Le courant des prises de la maison (230 volts) est dangereux et peut tuer. On ne touche jamais une prise avec un objet en métal, et on n'approche jamais un appareil branché de l'eau."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un objet glissé dans un circuit simple.",
+     "explication": "Si l'ampoule s'allume, il est conducteur (une cuillère en fer) ; sinon, il est isolant (une gomme)."
+    },
+    {
+     "cas": "Un train électrique et une centrale.",
+     "explication": "Le train utilise le courant : récepteur. La centrale le produit : générateur."
+    },
+    {
+     "cas": "Les deux fils d'une ampoule reliés à la même borne de la pile.",
+     "explication": "La boucle ne passe pas par l'ampoule : elle ne s'allume pas."
+    },
+    {
+     "cas": "Un verre d'eau salée ajouté au circuit, et la lampe reste allumée.",
+     "explication": "L'eau salée conduit le courant."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un seul fil suffit : il faut une boucle complète.",
+    "Confondre générateur (produit) et récepteur (utilise).",
+    "Croire que seuls les métaux conduisent le courant.",
+    "Penser qu'une pile et une prise sont aussi dangereuses l'une que l'autre."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "9a"
+     ],
+     "libelle": "question 9a",
+     "texte": "Quand l'ampoule ne s'allume pas, les matières sont des isolants (bois, papier, caoutchouc) ; quand elle s'allume, ce sont des conducteurs (cuivre, fer)."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "11a"
+     ],
+     "libelle": "question 11a",
+     "texte": "Un générateur fournit le courant (panneau solaire, piles) ; un récepteur l'utilise (moteur, ampoules) ; un fil relie les éléments."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "14a"
+     ],
+     "libelle": "question 14a",
+     "texte": "Le second montage ajoute seulement un verre d'eau salée : la question est de savoir si l'eau salée conduit l'électricité."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "6a"
+     ],
+     "libelle": "question 6a",
+     "texte": "Le train est un récepteur ; la centrale et les panneaux solaires sont des générateurs."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-lumiere-son",
@@ -1143,7 +1371,50 @@
     "Phases de la Lune : nouvelle lune → premier croissant → premier quartier → pleine lune → dernier quartier → dernier croissant."
    ],
    "exemple": "Le matin, le Soleil est à l'est : ton ombre est tournée vers l'ouest.",
-   "astuce": "Nord → est → sud → ouest, dans le sens des aiguilles d'une montre."
+   "astuce": "Nord → est → sud → ouest, dans le sens des aiguilles d'une montre.",
+   "comprendre": [
+    "La Terre tourne sur elle-même en 24 heures : c'est la rotation. La moitié tournée vers le Soleil est dans le jour, l'autre dans la nuit. C'est pour cela que le Soleil semble se lever à l'est, passer au sud vers le milieu de la journée (en Belgique) et se coucher à l'ouest.",
+    "La Terre tourne aussi autour du Soleil en un peu plus de 365 jours : c'est la révolution, qui dure une année. Son axe est penché : selon la saison, notre hémisphère reçoit les rayons du Soleil plus ou moins directement, et les journées sont plus ou moins longues. Au solstice d'été (vers le 21 juin), le jour est le plus long ; au solstice d'hiver (vers le 21 décembre), le plus court ; aux équinoxes, le jour et la nuit durent chacun environ 12 heures.",
+    "La Lune tourne autour de la Terre en un peu moins d'un mois. Elle n'a pas de lumière propre : on voit la partie éclairée par le Soleil, qui change chaque jour. Ce sont les phases de la Lune, de la nouvelle lune à la pleine lune."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le matin, ton ombre.",
+     "explication": "Le Soleil est à l'est : ton ombre est tournée vers l'ouest."
+    },
+    {
+     "cas": "Le 21 juin en Belgique.",
+     "explication": "Le jour le plus long de l'année : c'est le solstice d'été."
+    },
+    {
+     "cas": "Quand il fait jour en Belgique, il fait nuit en Australie.",
+     "explication": "Elle est sur la face de la Terre qui n'est pas tournée vers le Soleil."
+    },
+    {
+     "cas": "La pleine lune.",
+     "explication": "On voit toute la face de la Lune éclairée par le Soleil."
+    }
+   ],
+   "pieges": [
+    "Croire que le Soleil tourne autour de la Terre.",
+    "Confondre rotation (24 heures, jour et nuit) et révolution (une année).",
+    "Croire que les saisons viennent de la distance au Soleil : elles viennent de l'inclinaison de l'axe.",
+    "Croire que la Lune produit sa lumière."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 5,
+     "questions": [
+      "7a"
+     ],
+     "libelle": "question 7a",
+     "texte": "Dans l'hémisphère Nord, le jour le plus long est le solstice d'été et le jour le plus court, le solstice d'hiver ; aux équinoxes, jour et nuit durent 12 heures."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-lire-donnees",
@@ -1453,7 +1724,72 @@
     "Plus deux animaux sont dans un petit ensemble commun, plus ils partagent d'attributs : ils sont plus proches parents."
    ],
    "exemple": "Le chat et le pigeon sont tous les deux dans « 4 membres » (les ailes du pigeon sont ses membres avant), mais le chat va dans « poils » et le pigeon dans « plumes ».",
-   "astuce": "On classe selon ce que l'animal A, pas selon ce qu'il fait ni où il vit."
+   "astuce": "On classe selon ce que l'animal A, pas selon ce qu'il fait ni où il vit.",
+   "comprendre": [
+    "Pour classer des animaux, on dessine des ensembles qui s'emboitent comme des boites. Le grand ensemble regroupe les animaux qui ont un attribut commun (un squelette interne, par exemple) ; un ensemble placé à l'intérieur regroupe ceux qui ont cet attribut et un attribut en plus (4 membres, puis des poils ou des plumes).",
+    "On place chaque animal dans le plus petit ensemble qui lui correspond, en descendant d'un ensemble à l'autre. S'il n'a aucun des attributs écrits sur les ensembles dessinés, il reste dans le grand rectangle, hors des ensembles.",
+    "Pour remplir les ensembles, on s'aide souvent d'un tableau d'attributs : une ligne par animal, une croix par attribut. On classe toujours selon ce que l'animal a, pas selon ce qu'il fait ni où il vit."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Le chat et le pigeon.",
+     "explication": "Tous deux dans « 4 membres » (les ailes sont les membres avant du pigeon) ; le chat va dans « poils », le pigeon dans « plumes »."
+    },
+    {
+     "cas": "Le rougegorge.",
+     "explication": "Une seule croix dans le tableau, dans « plumes » : il va dans l'ensemble « plumes »."
+    },
+    {
+     "cas": "Le lombric.",
+     "explication": "Son corps est fait d'anneaux : ensemble « corps annelé »."
+    },
+    {
+     "cas": "Le triton et la salamandre.",
+     "explication": "Squelette interne, peau nue, une queue : ils vont dans le même petit ensemble."
+    }
+   ],
+   "pieges": [
+    "Placer un animal dans un grand ensemble alors qu'il a l'attribut d'un plus petit.",
+    "Classer d'après le milieu de vie ou la façon de se déplacer.",
+    "Oublier qu'un animal du petit ensemble a aussi tous les attributs des grands.",
+    "Oublier les animaux qui ne vont dans aucun ensemble dessiné."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 5,
+     "questions": [
+      "3d"
+     ],
+     "libelle": "question 3d",
+     "texte": "En descendant dans les ensembles (yeux et bouche, squelette interne, peau nue, queue), le triton et la salamandre vont dans le même ensemble."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 9,
+     "questions": [
+      "7e"
+     ],
+     "libelle": "question 7e",
+     "texte": "Le gloméris, le trombidion (4 paires de pattes) et l'oxychilus (un escargot) vont chacun dans l'ensemble de leurs attributs."
+    },
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 9,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "D'après le tableau, le rougegorge va dans « plumes » ; le lombric, dans « corps annelé »."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-attributs",
@@ -1596,7 +1932,38 @@
     "Un modèle ne montre pas tout : dans le corps, les côtes bougent aussi, le diaphragme est un muscle, et les poumons contiennent des millions d'alvéoles."
    ],
    "exemple": "Le diaphragme s'abaisse → la cage thoracique s'agrandit → l'air entre dans les poumons (inspiration).",
-   "astuce": "Membrane tirée vers le bas = diaphragme qui s'abaisse = l'air entre."
+   "astuce": "Membrane tirée vers le bas = diaphragme qui s'abaisse = l'air entre.",
+   "comprendre": [
+    "Respirer, c'est faire entrer et sortir l'air des poumons : c'est la ventilation. Elle se fait grâce au diaphragme, un muscle en forme de dôme sous les poumons, et aux muscles entre les côtes.",
+    "Inspiration : le diaphragme s'abaisse et la cage thoracique s'agrandit ; le volume des poumons augmente et l'air entre par le nez ou la bouche, puis la trachée et les bronches. Expiration : le diaphragme remonte, la cage thoracique se resserre, l'air sort.",
+    "Pour comprendre, on utilise un modèle : une bouteille (la cage thoracique), une membrane en caoutchouc (le diaphragme), des ballons (les poumons), un tube en Y (la trachée et les bronches). Tirer la membrane vers le bas fait gonfler les ballons. Mais un modèle ne montre pas tout : nos poumons ne sont pas de simples ballons, et la cage thoracique bouge aussi."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "On tire la membrane vers le bas.",
+     "explication": "Le volume dans la bouteille augmente, l'air entre, les ballons gonflent : c'est l'inspiration."
+    },
+    {
+     "cas": "On pousse la membrane vers le haut.",
+     "explication": "L'air sort, les ballons se dégonflent : c'est l'expiration."
+    },
+    {
+     "cas": "Pendant une course.",
+     "explication": "On respire plus vite et plus fort : la ventilation augmente."
+    },
+    {
+     "cas": "Le tube en Y du modèle.",
+     "explication": "Il représente la trachée, qui se divise en deux bronches."
+    }
+   ],
+   "pieges": [
+    "Croire que les poumons gonflent tout seuls : c'est le diaphragme qui les fait se remplir.",
+    "Inverser inspiration et expiration.",
+    "Confondre la ventilation (l'air entre et sort) et les échanges de gaz dans les alvéoles.",
+    "Croire que le modèle montre tout : la cage thoracique réelle bouge, la bouteille non."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; la mesure de la ventilation pendant l'effort est travaillée dans la fiche « Rythme cardiaque et ventilation ».",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-faits-hypotheses",
@@ -1638,7 +2005,62 @@
     "Un isolant (laine, polystyrène, liège, air immobile) ne produit pas de chaleur : il ralentit son passage. Les métaux, eux, conduisent bien la chaleur."
    ],
    "exemple": "Plusieurs couches de vêtements emprisonnent de l'air : la chaleur du corps s'échappe moins.",
-   "astuce": "Moins de chaleur perdue = moins de mazout ou de gaz brûlé = moins de dioxyde de carbone rejeté."
+   "astuce": "Moins de chaleur perdue = moins de mazout ou de gaz brûlé = moins de dioxyde de carbone rejeté.",
+   "comprendre": [
+    "En hiver, la chaleur de la maison s'échappe vers l'extérieur, plus froid : il faut donc chauffer sans arrêt. Plus la maison perd de chaleur, plus on brule de gaz, de mazout ou de bois, ce qui coute cher et rejette du dioxyde de carbone.",
+    "Pour limiter les pertes, on isole : le toit (par où passe beaucoup de chaleur), les murs, les fenêtres (le double vitrage emprisonne une couche d'air ou de gaz entre deux vitres). Une maison bien isolée garde aussi la fraicheur en été : sa température change moins vite.",
+    "Des gestes simples aident : fermer les volets et les rideaux le soir, fermer les portes des pièces non chauffées, aérer peu de temps mais en grand, baisser un peu le chauffage, porter un pull. Un isolant ne produit pas de chaleur : il ralentit son passage."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Deux maquettes de maison, l'une isolée, l'autre non, à 20 °C.",
+     "explication": "Au froid, la maison isolée refroidit moins vite ; au chaud, elle se réchauffe moins vite."
+    },
+    {
+     "cas": "Plusieurs couches de vêtements.",
+     "explication": "Elles emprisonnent de l'air : la chaleur du corps s'échappe moins."
+    },
+    {
+     "cas": "Aérer 5 minutes fenêtres grandes ouvertes.",
+     "explication": "L'air se renouvelle sans refroidir les murs, contrairement à une fenêtre entrouverte toute la journée."
+    },
+    {
+     "cas": "Baisser le chauffage de 1 degré.",
+     "explication": "On consomme moins d'énergie, donc on rejette moins de CO₂."
+    }
+   ],
+   "pieges": [
+    "Croire qu'un isolant produit de la chaleur.",
+    "Croire que l'isolation ne sert qu'en hiver.",
+    "Oublier le toit, par où une grande partie de la chaleur s'échappe.",
+    "Lire « temps 0 » dans un tableau comme « 0 °C » : c'est le début de l'expérience."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "9a",
+      "9b"
+     ],
+     "libelle": "question 9",
+     "texte": "Le temps 0 est le moment où l'expérience commence. Dans la maison isolée, la température varie moins vite et moins, au froid comme au chaud, que dans la maison non isolée."
+    },
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "5e"
+     ],
+     "libelle": "question 5e",
+     "texte": "L'écharpe en laine a ralenti le refroidissement de l'eau : 48,4 °C après 60 minutes, contre 35,9 °C sans écharpe."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-mesures",
@@ -1720,7 +2142,50 @@
     "Le plasma transporte les nutriments et des déchets, comme le dioxyde de carbone, vers les organes qui les évacuent."
    ],
    "exemple": "Quand on se coupe, les plaquettes aident à former un bouchon (un caillot) : le saignement s'arrête.",
-   "astuce": "Le sang est le « camion de livraison » du corps : il apporte le dioxygène et les nutriments, il emporte les déchets."
+   "astuce": "Le sang est le « camion de livraison » du corps : il apporte le dioxygène et les nutriments, il emporte les déchets.",
+   "comprendre": [
+    "Le sang circule dans tout le corps, poussé par le cœur, dans des vaisseaux : les artères partent du cœur, les veines y reviennent, et de minuscules capillaires relient les deux au plus près des organes.",
+    "Le sang est formé d'un liquide, le plasma, dans lequel baignent les globules rouges, les globules blancs et les plaquettes. Les globules rouges transportent le dioxygène et donnent au sang sa couleur. Les globules blancs défendent le corps contre les microbes. Les plaquettes aident à boucher une blessure.",
+    "Le plasma transporte les nutriments venus de l'intestin et emporte les déchets, comme le dioxyde de carbone, vers les organes qui les évacuent (les poumons, les reins). Le sang relie donc tous les systèmes du corps."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "On se coupe le doigt.",
+     "explication": "Les plaquettes forment un bouchon, le caillot : le saignement s'arrête."
+    },
+    {
+     "cas": "Pendant un effort.",
+     "explication": "Le cœur envoie plus de sang aux muscles : ils reçoivent plus de dioxygène et de nutriments, et leurs déchets sont emportés plus vite."
+    },
+    {
+     "cas": "Une infection.",
+     "explication": "Les globules blancs se multiplient pour combattre les microbes."
+    },
+    {
+     "cas": "Le sang qui revient des poumons.",
+     "explication": "Il est riche en dioxygène et repart vers le cœur, puis vers tout le corps."
+    }
+   ],
+   "pieges": [
+    "Croire que le sang ne transporte que le dioxygène : il transporte aussi les nutriments et les déchets.",
+    "Confondre globules rouges (dioxygène) et globules blancs (défense).",
+    "Confondre artères (partent du cœur) et veines (reviennent au cœur).",
+    "Croire que digérer est un rôle du sang : c'est le rôle du système digestif."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Les fonctions du système circulatoire : distribuer les nutriments et l'oxygène, débarrasser les organes de leurs déchets. Digérer n'en fait pas partie."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   }
  ]
 }
