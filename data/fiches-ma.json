@@ -13,7 +13,83 @@
     "1 million = 1 000 000 (6 zéros) ; 1 milliard = 1 000 000 000 (9 zéros) = mille millions."
    ],
    "exemple": "45 873,26 : 8 est le chiffre des centaines, 2 celui des dixièmes, 6 celui des centièmes. Il y a 458 centaines en tout.",
-   "astuce": "Pour « combien de centaines en tout », prends tous les chiffres jusqu'à celui des centaines."
+   "astuce": "Pour « combien de centaines en tout », prends tous les chiffres jusqu'à celui des centaines.",
+   "comprendre": [
+    "Dans notre système de numération, la valeur d'un chiffre dépend de sa place, son rang. De droite à gauche : unités, dizaines, centaines, puis unités de mille, dizaines de mille, centaines de mille, millions… Après la virgule : dixièmes, centièmes, millièmes. Dans 507 214, le 5 vaut 500 000.",
+    "Décomposer un nombre, c'est écrire la valeur de chaque chiffre : 16 026 = 10 000 + 6 000 + 20 + 6, ou (1 × 10 000) + (6 × 1 000) + (2 × 10) + 6. Un rang vide s'écrit avec un 0 : 3 unités de mille et 9 unités font 3 009.",
+    "Pour lire un grand nombre, on le sépare en classes de trois chiffres en partant des unités. Il ne faut pas confondre le chiffre des centaines (un seul chiffre) et le nombre de centaines (tous les chiffres jusqu'aux centaines) : 45 873 a 8 comme chiffre des centaines, mais 458 centaines en tout."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "16 026 décomposé.",
+     "explication": "10 000 + 6 000 + 20 + 6 : il n'y a pas de centaine."
+    },
+    {
+     "cas": "3 unités de mille et 9 unités.",
+     "explication": "3 009 : on écrit des 0 aux rangs vides."
+    },
+    {
+     "cas": "7 dizaines et 5 dixièmes.",
+     "explication": "70 + 0,5 = 70,5."
+    },
+    {
+     "cas": "Placer une virgule dans 245681 pour avoir 245 unités entières.",
+     "explication": "245,681 : trois chiffres avant la virgule."
+    }
+   ],
+   "pieges": [
+    "Oublier le 0 d'un rang vide (écrire 309 au lieu de 3 009).",
+    "Confondre dizaines et dixièmes, centaines et centièmes.",
+    "Confondre le chiffre des centaines et le nombre de centaines.",
+    "Mal regrouper les chiffres par trois en lisant un grand nombre."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 8,
+     "questions": [
+      "7"
+     ],
+     "libelle": "question 7",
+     "texte": "Décomposer comme 61 526 = 60 000 + 1 000 + 500 + 20 + 6 : 16 026 = 10 000 + 6 000 + 20 + 6."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 6,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "5 323 = (5 × 1 000) + (3 × 100) + (2 × 10) + (3 × 1) ; 500 000 + 7 000 + 200 + 10 + 4 = 507 214."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 7,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Placer la virgule dans 245681 : 245,681 pour 245 unités entières ; 24 568,1 pour que le 2 soit aux dizaines de mille."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "3 unités de mille et 9 unités s'écrivent 3 009 ; 7 dizaines et 5 dixièmes, 70,5."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-arrondir",
@@ -854,7 +930,83 @@
    ],
    "exemple": "Multiples de 6 : 6, 12, 18, 24 ; multiples de 8 : 8, 16, 24. Le plus petit multiple commun est 24.",
    "astuce": "Beaucoup de nombres impairs ne sont pas premiers : 9, 15, 21, 27, 49, 51, 91…",
-   "miseAJour": "2026-11-01"
+   "miseAJour": "2026-11-01",
+   "comprendre": [
+    "Les multiples d'un nombre sont les résultats de sa table : 8, 16, 24, 32… sont des multiples de 8. Un diviseur d'un nombre le divise sans reste : 12 est un diviseur de 36, car 36 = 12 × 3. Les deux mots vont ensemble : si 12 est un diviseur de 36, alors 36 est un multiple de 12.",
+    "Un multiple commun à deux nombres est dans les deux tables : les multiples communs de 6 et de 8 sont 24, 48, 72… Le plus petit, 24, sert quand deux choses se répètent et se retrouvent (deux pions qui avancent de 6 et de 8 cases). Un diviseur commun divise les deux nombres : 3 et 9 divisent à la fois 45 et 72.",
+    "Un nombre premier a exactement deux diviseurs : 1 et lui-même (2, 3, 5, 7, 11, 13, 17…). 1 n'est pas premier, et 2 est le seul nombre premier pair. Les caractères de divisibilité aident à vérifier vite : un multiple de 2 se termine par 0, 2, 4, 6 ou 8 ; un multiple de 5, par 0 ou 5."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Les multiples de 8 jusqu'à 37.",
+     "explication": "8, 16, 24 et 32 ; 40 dépasse 37."
+    },
+    {
+     "cas": "Deux pions avancent de 6 et de 8 cases.",
+     "explication": "Ils se retrouvent sur les multiples communs : 24, 48, 72."
+    },
+    {
+     "cas": "Les diviseurs communs de 45 et 72 parmi 2, 3, 5 et 9.",
+     "explication": "3 et 9 divisent les deux ; 5 ne divise pas 72 ; 2 ne divise pas 45."
+    },
+    {
+     "cas": "17.",
+     "explication": "Il n'a que deux diviseurs, 1 et 17 : il est premier."
+    }
+   ],
+   "pieges": [
+    "Confondre multiple et diviseur (12 est un diviseur de 36, pas un multiple).",
+    "Oublier que 0 est un multiple de tous les nombres.",
+    "Croire que tous les nombres impairs sont premiers (9, 15, 21 ne le sont pas).",
+    "Croire que 1 est un nombre premier."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 8,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "Deux joueurs avancent de 6 et de 8 cases : ils s'arrêtent tous les deux sur les cases 24, 48 et 72."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 4,
+     "questions": [
+      "22a",
+      "22b"
+     ],
+     "libelle": "questions 22a et 22b",
+     "texte": "21 et 63 sont multiples à la fois de 3 et de 7 ; 3 et 9 divisent à la fois 45 et 72."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 8,
+     "questions": [
+      "13e"
+     ],
+     "libelle": "question 13e",
+     "texte": "17 est premier : il n'a que deux diviseurs, 1 et lui-même."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 7,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Les multiples de 8 entre 1 et 37 : 8, 16, 24 et 32."
+    }
+   ]
   },
   {
    "id": "ma-divisibilite",
@@ -2530,7 +2682,61 @@
     "Attention aux fausses égalités : 12 × 40 = 480 + 35 = 515 est faux, car 12 × 40 ne vaut pas 515."
    ],
    "exemple": "Écriture correcte : 12 × 40 = 480 puis 480 + 35 = 515, ou (12 × 40) + 35 = 480 + 35 = 515.",
-   "astuce": "Lis chaque « = » séparément : ce qui est à gauche et à droite doit toujours avoir la même valeur."
+   "astuce": "Lis chaque « = » séparément : ce qui est à gauche et à droite doit toujours avoir la même valeur.",
+   "comprendre": [
+    "Le signe « = » ne veut pas dire « voici le résultat » : il veut dire « a la même valeur que ». Une égalité peut donc avoir un calcul de chaque côté : 152 + 17 = 190 − 21, car les deux côtés valent 169. Le signe « ≠ » veut dire « n'est pas égal à ».",
+    "Pour compléter une égalité, calcule le côté que tu connais entièrement, puis cherche ce qui donne la même valeur de l'autre côté. Pour vérifier si deux expressions sont égales, calcule chacune séparément et compare : 62 × 2,5 = 155 et (62 × 2) + (62 × 0,5) = 124 + 31 = 155.",
+    "Attention aux « fausses égalités » quand on enchaine des calculs sur une même ligne : 12 × 40 = 480 + 35 = 515 est faux, car 12 × 40 ne vaut pas 515. On écrit plutôt deux égalités : 12 × 40 = 480, puis 480 + 35 = 515."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "152 + 17 et 190 − 21.",
+     "explication": "Les deux valent 169 : 152 + 17 = 190 − 21."
+    },
+    {
+     "cas": "54 … 27 … 27.",
+     "explication": "54 − 27 = 27 : 27 est la moitié de 54."
+    },
+    {
+     "cas": "20 … 34 … 10 … 4.",
+     "explication": "20 = 34 − 10 − 4 : le signe = peut venir en premier."
+    },
+    {
+     "cas": "62 × 2,5 et (62 : 5) : 2.",
+     "explication": "155 d'un côté, 6,2 de l'autre : il faut le signe ≠."
+    }
+   ],
+   "pieges": [
+    "Écrire une suite de calculs avec des « = » qui ne relient pas des valeurs égales.",
+    "Croire que le résultat est toujours à droite du signe =.",
+    "Mettre « = » entre deux expressions sans avoir calculé les deux côtés.",
+    "Confondre = et ≠ dans un tableau à compléter."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 8,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "Placer les signes : 54 − 27 = 27 ; 96 : 8 = 12 ; 20 = 34 − 10 − 4."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 6,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "62 × 2,5 = 155 : égal à (62 × 2) + (62 × 0,5) et à (62 : 4) × 10, mais pas à (62 : 5) : 2."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-fractions-operations",
@@ -2883,7 +3089,50 @@
     "Pour savoir s'il reste du temps, on additionne toutes les durées et on compare avec le temps disponible."
    ],
    "exemple": "Départ 8 h 40, trajet 50 min → 9 h 30 ; visite 1 h 15 → 10 h 45 ; pause 15 min → 11 h.",
-   "astuce": "Écris l'horaire dans un tableau à deux colonnes : activité, heure de début."
+   "astuce": "Écris l'horaire dans un tableau à deux colonnes : activité, heure de début.",
+   "comprendre": [
+    "Établir l'horaire d'une journée, c'est placer les activités les unes après les autres en calculant l'heure de début de chacune. On part de l'heure de départ, puis on ajoute la durée de chaque activité, sans oublier les trajets, les pauses et les repas.",
+    "Un tableau à deux colonnes aide beaucoup : l'activité et son heure de début. L'heure de fin d'une activité est l'heure de début de la suivante, sauf s'il y a une pause entre les deux. Quand les minutes dépassent 60, on les échange contre 1 heure : 10 h 75 = 11 h 15.",
+    "Pour savoir si tout tient dans le temps disponible, additionne toutes les durées et compare avec le temps entre le départ et l'heure limite. Si une activité doit commencer à une heure fixe (un train, un spectacle), place-la d'abord, puis organise le reste autour."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Départ 8 h 40, trajet de 50 min.",
+     "explication": "On arrive à 9 h 30."
+    },
+    {
+     "cas": "Une visite de 1 h 15 qui commence à 9 h 30.",
+     "explication": "Elle finit à 10 h 45."
+    },
+    {
+     "cas": "Arrivée à 10 h 30, activité qui commence une heure après.",
+     "explication": "Elle commence à 11 h 30."
+    },
+    {
+     "cas": "Un piquenique qui finit à 14 h, puis 2 h 30 de jeu.",
+     "explication": "Le jeu se termine à 16 h 30."
+    }
+   ],
+   "pieges": [
+    "Oublier les trajets ou les pauses entre deux activités.",
+    "Ajouter les minutes comme des décimaux (écrire 10 h 75).",
+    "Confondre la durée d'une activité et son heure de fin.",
+    "Placer les activités dans le désordre quand l'une d'elles a une heure fixe."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 6,
+     "questions": [
+      "2b"
+     ],
+     "libelle": "question 2b",
+     "texte": "Une journée de géocaching : arrivée à 10 h 30, début du jeu une heure après (11 h 30) ; fin du piquenique à 14 h, fin du jeu 2 h 30 plus tard (16 h 30)."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   }
  ]
 }

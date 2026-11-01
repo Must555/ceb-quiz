@@ -1143,7 +1143,83 @@
     "Sens propre : le sens premier, concret. Sens figuré : un sens imagé."
    ],
    "exemple": "la glace (dessert, miroir, eau gelée) ; avoir un cœur d'or (sens figuré).",
-   "astuce": "Relis la phrase entière avant de choisir le sens."
+   "astuce": "Relis la phrase entière avant de choisir le sens.",
+   "comprendre": [
+    "Beaucoup de mots ont plusieurs sens. Dans le dictionnaire, chaque sens est numéroté et souvent suivi d'un exemple. C'est la phrase, et parfois tout le paragraphe, qui dit quel sens est le bon : « la glace » peut être un dessert, un miroir ou de l'eau gelée.",
+    "Le sens propre est le sens premier, concret : « un cœur qui bat ». Le sens figuré est imagé : « avoir un cœur d'or », c'est être très généreux. Une expression peut aussi changer de sens selon les mots qui l'accompagnent : « avoir recours à » veut dire « faire appel à », mais « en dernier recours » veut dire « comme ultime solution ».",
+    "Au CEB, on te donne souvent plusieurs définitions et tu dois choisir celle qui convient à l'extrait. Méthode : relis la phrase entière, remplace le mot par chaque définition et garde celle qui donne un sens logique dans le texte."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« La lenteur est dans ta nature. »",
+     "explication": "« Nature » veut dire ici le caractère, le tempérament, pas le paysage."
+    },
+    {
+     "cas": "« Les effets négatifs d'une production. »",
+     "explication": "« Effets » veut dire ici les conséquences, pas des vêtements ni des effets spéciaux."
+    },
+    {
+     "cas": "« Ils touchent à toutes les disciplines. »",
+     "explication": "« Toucher à » veut dire ici essayer, faire l'expérience de."
+    },
+    {
+     "cas": "« Avoir un cœur d'or. »",
+     "explication": "Un sens figuré : être très généreux."
+    }
+   ],
+   "pieges": [
+    "Choisir le sens le plus connu du mot sans relire la phrase.",
+    "Prendre au sens propre une expression au sens figuré.",
+    "Lire seulement le mot souligné, sans le paragraphe autour.",
+    "Choisir une définition qui contient le même mot que l'extrait, mais qui ne convient pas."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 9,
+     "questions": [
+      "22"
+     ],
+     "libelle": "question 22",
+     "texte": "« La lenteur est dans ta nature » : « nature » veut dire le caractère, le tempérament de l'âne."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 8,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "Les « effets négatifs » de la production de chocolat sont ses conséquences."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 4,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "« Ils touchent à toutes les disciplines » : ils en font l'expérience, ils les essaient."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 4,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "« Avoir recours aux deux versions », c'est faire appel aux deux, les utiliser."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-expressions",
@@ -1324,7 +1400,71 @@
    ],
    "exemple": "Il pleut, donc je prends mon parapluie. Je prends mon parapluie car il pleut.",
    "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ? Concession = on s'attendait au contraire (pourtant, même si).",
-   "miseAJour": "2026-11-01"
+   "miseAJour": "2026-11-01",
+   "comprendre": [
+    "Les mots de liaison (ou connecteurs) relient deux idées et disent quel lien existe entre elles. Cause : parce que, car, puisque. Conséquence : donc, alors, c'est pourquoi. Opposition : mais, cependant, pourtant, néanmoins. Temps : puis, ensuite, quand, pendant que. Ajout : et, de plus.",
+    "Au CEB, on te demande souvent de remplacer un connecteur par un autre de même sens. Pour cela, trouve d'abord le lien entre les deux idées : « Tu sais que l'ortie pique parce que tu l'as touchée » exprime une cause ; « puisque » peut remplacer « parce que », mais pas « même si », qui exprime une opposition.",
+    "Attention à la place des idées. « Il pleut, donc je prends mon parapluie » (conséquence) dit la même chose que « Je prends mon parapluie car il pleut » (cause), mais dans l'autre ordre. « Bien que » est suivi du subjonctif (bien qu'il pleuve) ; « même si » est suivi de l'indicatif (même s'il pleut)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Néanmoins, tous les livres ne peuvent pas être lus sur tous les supports. »",
+     "explication": "Une opposition : « néanmoins » peut être remplacé par « cependant »."
+    },
+    {
+     "cas": "« … parce que tu en as fait l'expérience. »",
+     "explication": "Une cause : « puisque » convient aussi."
+    },
+    {
+     "cas": "« Il était rassuré. Puis elle avait poursuivi. »",
+     "explication": "« Puis » marque la suite dans le temps."
+    },
+    {
+     "cas": "« Il pleut, donc je reste. »",
+     "explication": "« Donc » annonce une conséquence."
+    }
+   ],
+   "pieges": [
+    "Confondre cause (parce que, car) et conséquence (donc, c'est pourquoi).",
+    "Remplacer un connecteur d'opposition par « et » ou « de plus », qui ajoutent une idée.",
+    "Oublier que « malgré que » est à éviter : on dit « bien que ».",
+    "Choisir un connecteur sans relire les deux idées qu'il relie."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 8,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Dans « … parce que tu en as fait l'expérience », on peut remplacer « parce que » par « puisque », qui exprime aussi la cause."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 9,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "Le mot qui relie deux phrases en marquant la suite dans le temps : « puis »."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 4,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "« Néanmoins » marque une opposition : on peut le remplacer par « cependant »."
+    }
+   ]
   },
   {
    "id": "fr-types-textes",
@@ -1426,7 +1566,83 @@
     "Pour savoir ce que désigne une reprise, relis la phrase d'avant."
    ],
    "exemple": "Julie a un chaton. Elle l'adore. → Elle = Julie ; l' = le chaton.",
-   "astuce": "Remplace la reprise par ta réponse : la phrase doit garder son sens."
+   "astuce": "Remplace la reprise par ta réponse : la phrase doit garder son sens.",
+   "comprendre": [
+    "Pour éviter de répéter un mot, l'auteur le reprend autrement. Il peut utiliser un pronom (il, elle, le, lui, celui-ci, celles-ci…), un autre groupe nominal (« ces mammifères » pour les éléphants, « cette invention » pour le saxophone) ou un déterminant possessif (« sa prestation », celle de l'artiste).",
+    "Au CEB, on te demande souvent ce que désigne une reprise. Remonte dans le texte, le plus souvent juste avant, et cherche un mot de même genre et de même nombre. Vérifie ensuite en remplaçant la reprise par ta réponse : la phrase doit garder son sens.",
+    "Un même personnage ou un même objet peut être repris de plusieurs façons dans un texte. Les repérer t'aide à suivre de qui ou de quoi on parle, surtout dans les textes documentaires où les noms sont longs."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Des graines appelées fèves de cacao. Celles-ci interviennent… »",
+     "explication": "« Celles-ci » reprend les fèves de cacao (féminin pluriel)."
+    },
+    {
+     "cas": "« Il en invente de nouveaux, dont le plus connu est le saxophone. Cette invention… »",
+     "explication": "« Cette invention » reprend le saxophone."
+    },
+    {
+     "cas": "« L'artiste cherche, tout au long de sa prestation… »",
+     "explication": "« Sa » renvoie à l'artiste."
+    },
+    {
+     "cas": "Un texte sur les éléphants.",
+     "explication": "Ils sont repris par « ces mammifères » et par « ils »."
+    }
+   ],
+   "pieges": [
+    "Choisir le dernier nom lu sans vérifier le genre et le nombre.",
+    "Oublier que les reprises peuvent être des groupes nominaux, pas seulement des pronoms.",
+    "Recopier un seul mot quand la reprise désigne tout un groupe (« les fèves de cacao », pas « fèves »).",
+    "Ne pas vérifier en remplaçant la reprise par sa réponse."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 8,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Dans un texte sur les éléphants, l'auteure les désigne par « ces mammifères » et par des pronoms comme « ils »."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 8,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "« Celles-ci » reprend les fèves de cacao."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 4,
+     "questions": [
+      "6"
+     ],
+     "libelle": "question 6",
+     "texte": "Dans « tout au long de sa prestation », « sa » renvoie à l'artiste."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 4,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "« Cette invention » reprend le saxophone, pour éviter de répéter le mot."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-inferences",
@@ -2012,7 +2228,72 @@
     "Point de vue objectif : des faits, sans avis. Point de vue subjectif : des mots qui jugent ou expriment des sentiments (magnifique, horrible, je trouve que…)."
    ],
    "exemple": "« J'ai ouvert la porte » → narrateur interne. « Ce château est superbe ! » → point de vue subjectif.",
-   "astuce": "Cherche « je » dans le récit, puis cherche les mots qui donnent un avis."
+   "astuce": "Cherche « je » dans le récit, puis cherche les mots qui donnent un avis.",
+   "comprendre": [
+    "Le narrateur est la voix qui raconte l'histoire. L'auteur est la personne réelle qui a écrit le livre. Les deux peuvent se confondre, mais pas toujours : dans un roman écrit en « je », le narrateur est souvent un personnage inventé.",
+    "Si le narrateur participe à l'histoire et dit « je », c'est un narrateur interne, un personnage. S'il raconte ce qui arrive aux personnages en disant « il » ou « elle », sans jamais apparaitre, c'est un narrateur externe : au CEB, la réponse attendue est alors souvent « l'auteur ». Le narrateur peut aussi s'adresser au lecteur : « J'ai oublié de vous dire que… ».",
+    "Le point de vue est objectif quand le texte donne des faits sans avis. Il est subjectif quand des mots jugent ou expriment des sentiments : magnifique, horrible, malheureusement, je trouve que… Pour répondre, cherche d'abord qui dit « je », puis les mots qui donnent un avis."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« J'ai ouvert la porte en tremblant. »",
+     "explication": "Un narrateur interne : un personnage raconte ce qu'il vit."
+    },
+    {
+     "cas": "Un récit qui parle de « Tom », de « il » et de « sa grand-mère ».",
+     "explication": "Le narrateur ne participe pas à l'histoire : c'est l'auteur qui raconte."
+    },
+    {
+     "cas": "« (J'ai oublié de vous dire que, dans ce pays-là, les chevaux savent parler.) »",
+     "explication": "Le narrateur s'adresse au lecteur pour ajouter une explication."
+    },
+    {
+     "cas": "« Ce château est superbe ! »",
+     "explication": "Un point de vue subjectif : « superbe » donne un avis."
+    }
+   ],
+   "pieges": [
+    "Croire que le narrateur est toujours le personnage principal.",
+    "Choisir un personnage qui parle dans un dialogue (entre tirets) au lieu de la voix qui raconte.",
+    "Confondre « je » dans un dialogue et « je » du narrateur.",
+    "Prendre un avis (point de vue subjectif) pour un fait."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 1,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Le récit parle de « Tom » et de « sa grand-mère » sans jamais dire « je » : c'est l'auteur qui raconte."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 1,
+     "questions": [
+      "9a"
+     ],
+     "libelle": "question 9a",
+     "texte": "« J'ai oublié de vous dire que… », entre parenthèses : c'est le narrateur qui parle, pas un personnage."
+    },
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 4,
+     "questions": [
+      "18"
+     ],
+     "libelle": "question 18",
+     "texte": "Les débuts de paragraphes ne sont prononcés par aucun personnage : c'est le narrateur, ici l'auteur, qui raconte."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-reel-imaginaire",
