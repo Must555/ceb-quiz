@@ -203,7 +203,61 @@
     "Époque contemporaine : les rois des Belges (Léopold Ier depuis 1831… Philippe depuis 2013), Adolphe Sax, Hergé…"
    ],
    "exemple": "Charlemagne, sacré empereur en 800, appartient au Moyen Âge.",
-   "astuce": "Associe chaque personnage à une date que tu connais, puis place-la sur la ligne du temps."
+   "astuce": "Associe chaque personnage à une date que tu connais, puis place-la sur la ligne du temps.",
+   "comprendre": [
+    "Connaitre quelques personnages aide à situer les périodes. Antiquité : Jules César, qui conquiert la Gaule, et Ambiorix, chef des Éburons qui le combat. Moyen Âge : Clovis, Charlemagne (sacré en 800), Godefroid de Bouillon. Temps modernes : Christophe Colomb, Vasco de Gama, Charles Quint (né à Gand en 1500), les peintres Bruegel et Rubens. Époque contemporaine : Léopold Ier, premier roi des Belges, Adolphe Sax, Hergé.",
+    "Pour savoir si deux personnages ont vécu à la même époque, compare leurs dates ou leurs siècles. Christophe Colomb arrive en Amérique en 1492, à la fin du 15e siècle : Vasco de Gama, navigateur du 15e siècle, est son contemporain ; Marco Polo (13e et 14e siècles) a vécu avant lui.",
+    "Une phrase écrite comme si le personnage parlait (« J'ai été le premier roi des Belges ») contient des indices : un titre, un lieu, une date, une action célèbre. Relie ces indices à ce que tu connais, puis place le personnage dans sa période."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« J'ai été le premier roi des Belges. »",
+     "explication": "Léopold Ier, Époque contemporaine."
+    },
+    {
+     "cas": "Un chef gaulois qui a combattu Jules César.",
+     "explication": "Ambiorix, chef des Éburons, Antiquité."
+    },
+    {
+     "cas": "Couronné empereur en 800.",
+     "explication": "Charlemagne, Moyen Âge."
+    },
+    {
+     "cas": "Né à Gand en 1500, empereur.",
+     "explication": "Charles Quint, Temps modernes."
+    }
+   ],
+   "pieges": [
+    "Confondre Charlemagne (Moyen Âge) et Charles Quint (Temps modernes).",
+    "Placer tous les explorateurs à la même date.",
+    "Croire que deux personnages du même siècle se sont forcément rencontrés.",
+    "Oublier que Jules César et Ambiorix vivent avant J.-C."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "Ambiorix, qui a combattu Jules César : Antiquité ; Charlemagne, couronné en 800 : Moyen Âge ; Léopold Ier, premier roi des Belges : Époque contemporaine."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "15c"
+     ],
+     "libelle": "question 15c",
+     "texte": "Vasco de Gama (15e siècle) a vécu à la même époque que Christophe Colomb ; Marco Polo a vécu avant."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-sources",
@@ -814,7 +868,71 @@
    ],
    "exemple": "Des rennes, des mousses et un sol gelé → la toundra.",
    "astuce": "Pense à la température ET aux pluies pour reconnaître un climat.",
-   "miseAJour": "2026-11-01"
+   "miseAJour": "2026-11-01",
+   "comprendre": [
+    "Le climat, c'est le temps qu'il fait en moyenne dans une région, sur de nombreuses années : les températures et les précipitations. La météo, elle, décrit le temps d'un jour. La Belgique a un climat tempéré océanique : des hivers doux, des étés frais et de la pluie toute l'année.",
+    "Sur Terre, on distingue la zone chaude, autour de l'équateur (forêt équatoriale, savane, désert chaud), deux zones tempérées (forêts de feuillus, climats méditerranéen et continental, taïga au nord) et deux zones froides autour des pôles (toundra, milieu polaire). Plus on s'éloigne de l'équateur, plus il fait froid en moyenne.",
+    "Le relief et la mer comptent aussi. En Belgique, il pleut davantage sur les hauteurs de l'est (Ardenne, Hautes Fagnes) que dans les plaines de l'ouest. Le climat change aussi avec le temps : depuis le 19e siècle, la température moyenne de la Terre augmente et les glaciers reculent."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Il pleut toute l'année, hivers doux, étés frais.",
+     "explication": "Un climat tempéré océanique, comme en Belgique."
+    },
+    {
+     "cas": "Chaud toute l'année, une saison des pluies et une saison sèche.",
+     "explication": "La savane, dans la zone chaude."
+    },
+    {
+     "cas": "Les Hautes Fagnes et la côte belge.",
+     "explication": "Il pleut plus sur les hauteurs de l'est que dans l'ouest."
+    },
+    {
+     "cas": "Un glacier photographié en 1900 puis aujourd'hui.",
+     "explication": "Il a reculé à cause du réchauffement climatique."
+    }
+   ],
+   "pieges": [
+    "Confondre météo (le temps d'un jour) et climat (une moyenne sur des années).",
+    "Croire qu'il pleut plus là où le relief est plat : c'est l'inverse en Belgique.",
+    "Oublier de regarder les pluies, et pas seulement les températures.",
+    "Croire qu'un glacier fond parce qu'il vieillit."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "10b"
+     ],
+     "libelle": "question 10b",
+     "texte": "Les glaciers ont reculé depuis le 19e siècle parce que la température moyenne de la Terre a augmenté."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 7,
+     "questions": [
+      "12a"
+     ],
+     "libelle": "question 12a",
+     "texte": "Des arbres isolés, poussés en oblique : ils ne sont pas protégés des vents dominants, qui soufflent souvent dans la même direction."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "10c"
+     ],
+     "libelle": "question 10c",
+     "texte": "En Belgique, il pleut davantage à l'est, sur les hauteurs comme les Hautes Fagnes, que dans l'ouest plus plat."
+    }
+   ]
   },
   {
    "id": "hg-orientation",
@@ -921,55 +1039,55 @@
    "id": "hg-echelle",
    "matiere": "hg",
    "e": "📐",
-   "titre": "L'échelle d'une carte",
+   "titre": "Lire l'échelle d'une carte",
    "regle": [
     "1/25 000 : 1 cm sur la carte = 25 000 cm en réalité = 250 m.",
     "1/100 000 : 1 cm = 1 km. 1/1 000 000 : 1 cm = 10 km.",
-    "Distance réelle = distance sur la carte × le nombre sous le « 1 » (puis on convertit les cm en m ou en km).",
+    "Échelle graphique : un segment gradué (par exemple « 0 — 20 km ») que l'on reporte sur la carte pour mesurer une distance.",
     "Plus le nombre sous le 1 est petit, plus la carte est détaillée."
    ],
    "exemple": "À 1/50 000, 4 cm = 200 000 cm = 2 km.",
-   "astuce": "Pour convertir des cm en km, divise par 100 000 (100 000 cm = 1 km ; 250 000 cm = 2,5 km).",
+   "astuce": "Grande échelle = petit nombre sous le 1 = beaucoup de détails (un plan de ville). Petite échelle = grand territoire, peu de détails (une carte de l'Europe).",
    "comprendre": [
-    "Une carte représente un territoire en beaucoup plus petit. L'échelle indique combien de fois. À 1/25 000, 1 cm sur la carte représente 25 000 cm sur le terrain, soit 250 m. À 1/100 000, 1 cm représente 1 km.",
-    "Pour trouver une distance réelle : mesure à la latte sur la carte, multiplie par le nombre de l'échelle, puis convertis (100 000 cm = 1 km). Avec une échelle graphique (un petit trait gradué), reporte ce trait sur la distance à mesurer.",
-    "Plus le nombre sous le « 1 » est petit, plus la carte est détaillée et le territoire représenté petit : un plan de ville est à grande échelle (1/10 000), une carte de l'Europe à petite échelle (1/10 000 000)."
+    "Une carte est toujours plus petite que le territoire qu'elle montre. L'échelle indique de combien. Elle peut être numérique (1/50 000 : 1 cm sur la carte représente 50 000 cm, soit 500 m) ou graphique : un petit segment gradué, par exemple « 0 — 20 km ». L'échelle graphique reste juste quand on agrandit ou réduit la carte à la photocopieuse.",
+    "Pour mesurer une distance avec l'échelle graphique, reporte le segment sur la carte avec une bandelette de papier, ou mesure à la latte et compare avec la longueur du segment. On mesure d'habitude « à vol d'oiseau », c'est-à-dire en ligne droite ; une distance par la route est presque toujours plus longue.",
+    "On parle de grande échelle quand le nombre sous le 1 est petit (1/10 000) : la carte montre un petit territoire avec beaucoup de détails, comme un plan de ville. À petite échelle (1/10 000 000), elle montre un grand territoire avec peu de détails, comme une carte de l'Europe. Choisis la carte selon ton besoin : un plan pour trouver une rue, une carte routière pour un trajet, un atlas pour situer un pays. Pour les calculs de distances, vois aussi la fiche « Calculer avec une échelle »."
    ],
    "exemplesExpliques": [
+    {
+     "cas": "Une échelle graphique « 0 — 20 km », reportée 2 fois entre deux villes.",
+     "explication": "Les villes sont à environ 40 km l'une de l'autre, à vol d'oiseau."
+    },
     {
      "cas": "À 1/50 000, 4 cm sur la carte.",
      "explication": "4 × 50 000 = 200 000 cm = 2 km."
     },
     {
-     "cas": "À 1/400 000, 6,5 cm entre Liège et Maastricht.",
-     "explication": "1 cm = 4 km, donc 26 km en ligne droite."
+     "cas": "Trouver une rue dans une ville.",
+     "explication": "Il faut un plan de ville, à grande échelle (par exemple 1/10 000)."
     },
     {
-     "cas": "Une carte à 1/1 000 000.",
-     "explication": "1 cm = 10 km : bien pour un pays entier."
-    },
-    {
-     "cas": "Un plan de quartier.",
-     "explication": "Grande échelle : on voit les rues et les maisons."
+     "cas": "Situer la Belgique en Europe.",
+     "explication": "Une carte à petite échelle, dans un atlas."
     }
    ],
    "pieges": [
+    "Mesurer en suivant la route quand on demande la distance à vol d'oiseau (en ligne droite).",
+    "Croire qu'une carte « à grande échelle » montre un grand territoire : c'est l'inverse.",
     "Oublier de convertir les cm en m ou en km.",
-    "Se tromper de zéros : 1/25 000 donne 250 m, pas 25 km.",
-    "Mesurer en suivant la route quand on demande la distance en ligne droite.",
-    "Croire qu'une carte « à grande échelle » montre un grand territoire : c'est l'inverse."
+    "Garder l'échelle numérique d'une carte agrandie ou réduite : seule l'échelle graphique reste juste."
    ],
    "auCEB": [
     {
      "examens": [
-      "ceb-2026-tc"
+      "ceb-2015"
      ],
-     "livret": 4,
+     "livret": 6,
      "questions": [
-      "21"
+      "9"
      ],
-     "libelle": "question 21",
-     "texte": "Échelle 1/400 000 : entre Liège et Maastricht, 6,5 cm sur la carte, soit 26 km en ligne droite."
+     "libelle": "question 9",
+     "texte": "La distance à vol d'oiseau entre Theux et Liège : on compare la mesure faite sur la carte avec l'échelle graphique, soit environ 20 km."
     }
    ],
    "miseAJour": "2026-11-01"
@@ -1475,7 +1593,51 @@
     "Commerce triangulaire : Europe → Afrique (tissus, armes, alcool) ; Afrique → Amériques (esclaves) ; Amériques → Europe (sucre, coton, café, tabac)."
    ],
    "exemple": "On parle portugais au Brésil parce que le Portugal l'a colonisé.",
-   "astuce": "Pense à un repas européen sans pomme de terre, tomate ni chocolat : c'était le cas avant 1492 !"
+   "astuce": "Pense à un repas européen sans pomme de terre, tomate ni chocolat : c'était le cas avant 1492 !",
+   "comprendre": [
+    "À la fin du 15e siècle, les Européens cherchent une route maritime vers l'Asie et ses épices. Christophe Colomb atteint les Amériques en 1492, Vasco de Gama atteint l'Inde en contournant l'Afrique en 1498, et l'expédition de Magellan fait le premier tour du monde (1519-1522). D'autres suivent, comme Jacques Cartier au Canada.",
+    "Ces voyages font connaitre en Europe des produits venus des Amériques : pomme de terre, maïs, tomate, cacao, tabac, dinde. Ils mènent aussi à la colonisation : des pays européens prennent possession de terres lointaines. Pour les peuples colonisés, les conséquences sont lourdes : maladies, travail forcé, esclavage, langue et religion imposées.",
+    "Le commerce triangulaire relie trois continents : des navires partent d'Europe avec des marchandises, achètent des esclaves en Afrique, les vendent aux Amériques et rapportent en Europe du sucre, du coton ou du café. Aujourd'hui encore, on parle espagnol ou portugais en Amérique du Sud à cause de cette colonisation."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "La route de l'Inde en contournant l'Afrique.",
+     "explication": "Vasco de Gama, en 1498."
+    },
+    {
+     "cas": "Le détroit à la pointe sud de l'Amérique.",
+     "explication": "Il porte le nom de Magellan."
+    },
+    {
+     "cas": "On parle portugais au Brésil.",
+     "explication": "Le Portugal a colonisé le Brésil."
+    },
+    {
+     "cas": "La pomme de terre en Europe.",
+     "explication": "Elle vient des Amériques : on ne la connaissait pas avant 1492."
+    }
+   ],
+   "pieges": [
+    "Croire que le blé ou la pomme viennent des Amériques : ils étaient déjà connus en Europe.",
+    "Confondre les navigateurs et leurs découvertes.",
+    "Oublier les conséquences des colonisations pour les peuples colonisés.",
+    "Croire que Colomb savait qu'il arrivait sur un nouveau continent : il pensait avoir atteint les Indes."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 5,
+     "questions": [
+      "11a",
+      "11b"
+     ],
+     "libelle": "questions 11a et 11b",
+     "texte": "Sur un planisphère : Vasco de Gama (route de l'Inde), Colomb (Caraïbes), Magellan (pointe de l'Amérique du Sud), Cartier (Canada). Seul Cartier, mort en 1557, a pu connaitre la découverte des iles Galápagos (1535)."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-rechauffement",
@@ -1694,7 +1856,38 @@
     "Avant J.-C., on compte à rebours : le IVe millénaire av. J.-C. va de 4000 à 3001 av. J.-C. ; 3000 av. J.-C. est plus ancien que 500 av. J.-C."
    ],
    "exemple": "1492 → XVe siècle, IIe millénaire ; vers 3500 av. J.-C. → IVe millénaire av. J.-C.",
-   "astuce": "Pour une durée à cheval sur l'an 1 (au 1er janvier), additionne les deux nombres et retire 1 : du 1er janvier 10 av. J.-C. au 1er janvier 10 apr. J.-C., il s'écoule 19 ans."
+   "astuce": "Pour une durée à cheval sur l'an 1 (au 1er janvier), additionne les deux nombres et retire 1 : du 1er janvier 10 av. J.-C. au 1er janvier 10 apr. J.-C., il s'écoule 19 ans.",
+   "comprendre": [
+    "Un siècle dure 100 ans et un millénaire 1 000 ans, soit 10 siècles. Notre calendrier compte les années à partir de l'an 1, début de l'ère chrétienne. Il n'y a pas d'an 0 : on passe directement de l'an 1 av. J.-C. à l'an 1 apr. J.-C.",
+    "Après J.-C., le 1er millénaire va de l'an 1 à l'an 1000, le 2e de 1001 à 2000, le 3e a commencé en 2001. De la même façon, le 20e siècle va de 1901 à 2000. Avant J.-C., on compte à rebours : le 4e millénaire av. J.-C. va de 4000 à 3001 av. J.-C., et 3000 av. J.-C. est plus ancien que 500 av. J.-C.",
+    "Pour calculer une durée qui traverse l'an 1, additionne les deux nombres d'années, puis retire 1, puisqu'il n'y a pas d'an 0 : du 1er janvier 10 av. J.-C. au 1er janvier 10 apr. J.-C., il s'écoule 19 ans. Pour une durée entièrement après J.-C., on soustrait simplement : de 1830 à 2030, 200 ans."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "1492.",
+     "explication": "15e siècle (1401-1500), 2e millénaire (1001-2000)."
+    },
+    {
+     "cas": "Vers 3500 av. J.-C.",
+     "explication": "4e millénaire av. J.-C. (de 4000 à 3001 av. J.-C.)."
+    },
+    {
+     "cas": "L'an 2000.",
+     "explication": "Dernière année du 20e siècle et du 2e millénaire."
+    },
+    {
+     "cas": "De 52 av. J.-C. à 476.",
+     "explication": "52 + 476 − 1 = 527 ans."
+    }
+   ],
+   "pieges": [
+    "Croire que l'an 2000 appartient au 3e millénaire.",
+    "Compter un an 0 dans une durée qui traverse l'an 1.",
+    "Penser qu'avant J.-C., 500 est plus ancien que 3000.",
+    "Confondre siècle (100 ans) et millénaire (1 000 ans)."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les siècles et les dates avant J.-C. reviennent dans les questions sur les lignes du temps (voir les fiches « Les siècles » et « La ligne du temps »).",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-outils-info",
@@ -1708,7 +1901,50 @@
     "Dans un moteur de recherche, tape des mots-clés précis (le sujet + ce que tu cherches)."
    ],
    "exemple": "Pour lire sur Charlemagne, cherche « Charlemagne » dans l'index, ou le chapitre « Haut Moyen Âge » dans la table des matières.",
-   "astuce": "Dictionnaire = sens des mots ; atlas = cartes ; index = pages où trouver un mot."
+   "astuce": "Dictionnaire = sens des mots ; atlas = cartes ; index = pages où trouver un mot.",
+   "comprendre": [
+    "Pour trouver vite une information dans un livre, deux outils aident. La table des matières, au début ou à la fin, donne les chapitres dans l'ordre du livre avec leur page de début. L'index, à la fin, range les mots importants par ordre alphabétique avec toutes les pages où on en parle.",
+    "Un chapitre commence à la page indiquée et se termine juste avant le chapitre suivant : s'il commence page 12 et que le suivant commence page 15, il occupe les pages 12, 13 et 14. Choisis aussi le bon ouvrage : le dictionnaire pour le sens et l'orthographe d'un mot, l'atlas pour les cartes, l'encyclopédie pour expliquer un sujet.",
+    "Sur internet, tape des mots-clés précis dans un moteur de recherche : le sujet et ce que tu cherches (« castor nourriture », plutôt qu'une longue phrase). Vérifie ensuite que le site est fiable : on sait qui l'a écrit et quand."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Trouver la page d'une carte dans un portfolio.",
+     "explication": "Cherche dans la table des matières le titre qui parle d'une carte."
+    },
+    {
+     "cas": "Trouver toutes les pages où l'on parle de Charlemagne.",
+     "explication": "Cherche « Charlemagne » dans l'index."
+    },
+    {
+     "cas": "Un chapitre page 12, le suivant page 15.",
+     "explication": "Le chapitre occupe les pages 12 à 14."
+    },
+    {
+     "cas": "Savoir où se trouve le Pérou.",
+     "explication": "Un atlas."
+    }
+   ],
+   "pieges": [
+    "Confondre la table des matières (les chapitres dans l'ordre) et l'index (les mots par ordre alphabétique).",
+    "Croire qu'un chapitre s'arrête à sa page de début.",
+    "Taper une phrase entière dans un moteur de recherche au lieu de mots-clés.",
+    "Chercher le sens d'un mot dans un atlas."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 4,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Lire la table des matières du portfolio pour trouver la page d'une carte, d'une expérience ou d'une comparaison de documents d'époques différentes."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-documents",
@@ -1723,7 +1959,61 @@
     "Demande-toi quelle est l'intention de l'auteur : informer, convaincre, rendre hommage, vendre…"
    ],
    "exemple": "Une affiche de 1946 qui propose du travail dans les mines belges : trace du passé, dont l'intention est de convaincre.",
-   "astuce": "Distingue ce qui est écrit dans le document de ce que tu peux en déduire."
+   "astuce": "Distingue ce qui est écrit dans le document de ce que tu peux en déduire.",
+   "comprendre": [
+    "Avant d'utiliser un document, on se pose quelques questions : qui l'a fait (l'auteur) ? quand et où ? de quoi parle-t-il ? dans quel but (informer, convaincre, vendre, rendre hommage) ? La date de réalisation n'est pas toujours celle des faits : un article de 2006 peut raconter une catastrophe de 1956.",
+    "Une trace du passé a été réalisée à l'époque des faits, par les gens de ce temps-là : une affiche de 1946, une lettre de soldat, un objet. Un travail postérieur a été fait plus tard, à partir des traces : un manuel scolaire, un film, une maquette, une bande dessinée. Les deux sont utiles, mais la trace est plus proche des faits.",
+    "Lire un document, c'est aussi lire précisément ce qu'il montre : une légende, un calendrier, un graphique, une date complète. Distingue ce qui est écrit dans le document de ce que tu en déduis, et vérifie chaque réponse en revenant au document."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Une affiche de 1946 qui propose du travail dans les mines belges.",
+     "explication": "Une trace du passé, dont l'intention est de convaincre."
+    },
+    {
+     "cas": "Un film tourné aujourd'hui sur la Première Guerre mondiale.",
+     "explication": "Un travail postérieur."
+    },
+    {
+     "cas": "Un calendrier où la ligne d'un oiseau passe du blanc au noir en septembre.",
+     "explication": "L'oiseau commence sa migration en septembre."
+    },
+    {
+     "cas": "Un article de 2006 sur la catastrophe du Bois du Cazier.",
+     "explication": "Il est réalisé en 2006 mais parle de faits de 1956."
+    }
+   ],
+   "pieges": [
+    "Confondre la date du document et la date des faits racontés.",
+    "Prendre un film ou une BD récente pour une trace du passé.",
+    "Répondre avec ses connaissances au lieu de lire le document.",
+    "Oublier une partie de la réponse demandée (le jour de la semaine dans une date complète)."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 5,
+     "questions": [
+      "3b1"
+     ],
+     "libelle": "question 3b1",
+     "texte": "Dans un calendrier des migrations, l'oiseau qui commence sa migration en septembre est l'hirondelle rustique."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 5,
+     "questions": [
+      "8f"
+     ],
+     "libelle": "question 8f",
+     "texte": "Lire un calendrier : la cérémonie de clôture a lieu le jour qui suit le vendredi 29, soit le samedi 30 juillet 2022."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-changements",
@@ -1805,7 +2095,37 @@
    ],
    "exemple": "Bruxelles-Capitale : environ 1,26 million d'habitants sur 162 km², soit plus de 7 700 habitants par km².",
    "astuce": "Une grande population ne veut pas dire une forte densité : compare toujours avec la superficie.",
-   "miseAJour": "2026-11-01"
+   "miseAJour": "2026-11-01",
+   "comprendre": [
+    "Au 1er janvier 2026, la Belgique compte environ 11,9 millions d'habitants : environ 6,9 millions en Région flamande, 3,7 millions en Région wallonne et 1,3 million en Région de Bruxelles-Capitale. Mais ils ne sont pas répartis de façon égale sur le territoire.",
+    "Les espaces très peuplés sont le grand espace urbain entre Bruxelles, Anvers, Gand et Louvain, et le sillon Sambre-et-Meuse, avec Charleroi, Namur et Liège. On y trouve de grandes villes, des industries, des routes et des chemins de fer. Les espaces peu peuplés sont surtout au sud-est : l'Ardenne, la Famenne, les Hautes Fagnes, où les forêts et les prairies occupent beaucoup de place.",
+    "Pour comparer, on utilise la densité : le nombre d'habitants divisé par la superficie (hab./km²). La province d'Anvers est la plus peuplée ; celle de Luxembourg est la moins peuplée et la moins dense, sous 70 hab./km². Bruxelles-Capitale, petite et très peuplée, dépasse 7 700 hab./km²."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Bruxelles-Capitale : environ 1,26 million d'habitants sur 162 km².",
+     "explication": "Plus de 7 700 habitants par km² : la région la plus dense."
+    },
+    {
+     "cas": "La province de Luxembourg.",
+     "explication": "Beaucoup de forêts, peu de grandes villes : moins de 70 hab./km²."
+    },
+    {
+     "cas": "Charleroi, Namur et Liège.",
+     "explication": "Des villes du sillon Sambre-et-Meuse, un espace très peuplé."
+    },
+    {
+     "cas": "Une grande province peu peuplée.",
+     "explication": "Une faible densité : beaucoup de place pour peu d'habitants."
+    }
+   ],
+   "pieges": [
+    "Confondre la population (le nombre d'habitants) et la densité (habitants par km²).",
+    "Croire que la Wallonie est plus peuplée que la Flandre.",
+    "Placer l'Ardenne parmi les espaces très peuplés.",
+    "Oublier de diviser par la superficie pour comparer deux territoires."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les cartes de densité de population reviennent souvent (voir la fiche « La densité de population »)."
   },
   {
    "id": "hg-eau-relief",
@@ -1966,7 +2286,38 @@
     "Une banque garde l'argent, gère les paiements et accorde des prêts. Financement participatif : beaucoup de personnes financent un projet."
    ],
    "exemple": "Faire réparer son vélo plutôt que d'en acheter un neuf économise de l'argent et des ressources.",
-   "astuce": "Avant d'acheter, demande-toi : en ai-je vraiment besoin ? Puis-je l'emprunter, le réparer ou l'acheter d'occasion ?"
+   "astuce": "Avant d'acheter, demande-toi : en ai-je vraiment besoin ? Puis-je l'emprunter, le réparer ou l'acheter d'occasion ?",
+   "comprendre": [
+    "Consommer autrement, c'est réfléchir avant d'acheter : en ai-je vraiment besoin ? Puis-je l'emprunter, le louer, l'échanger, le réparer ou l'acheter d'occasion ? Chaque objet neuf demande des matières premières, de l'énergie et un transport.",
+    "Le commerce équitable garantit aux producteurs un prix juste, de bonnes conditions de travail et l'absence de travail des enfants. Des labels sur les emballages permettent de le reconnaitre. Acheter des produits locaux et de saison réduit aussi les transports.",
+    "L'argent aussi se gère. Épargner, c'est mettre de l'argent de côté. Un crédit est un prêt qu'il faut rembourser, avec des intérêts. Une banque garde l'argent, gère les paiements et prête de l'argent. Dans un financement participatif, beaucoup de personnes donnent chacune un peu pour financer un projet."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Faire réparer son vélo au lieu d'en acheter un neuf.",
+     "explication": "On économise de l'argent et des ressources."
+    },
+    {
+     "cas": "Un chocolat avec un label de commerce équitable.",
+     "explication": "Le producteur de cacao reçoit un prix juste."
+    },
+    {
+     "cas": "Emprunter 100 € et rembourser 110 €.",
+     "explication": "Les 10 € en plus sont les intérêts du crédit."
+    },
+    {
+     "cas": "Des fraises belges achetées en juin.",
+     "explication": "Un produit local et de saison : moins de transport."
+    }
+   ],
+   "pieges": [
+    "Confondre épargner (garder de l'argent) et emprunter (recevoir un crédit).",
+    "Croire qu'un crédit se rembourse sans rien payer de plus.",
+    "Penser que « équitable » veut dire « moins cher ».",
+    "Oublier les solutions sans achat : prêt, échange, location."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; ces notions font partie des nouveaux référentiels du tronc commun.",
+   "miseAJour": "2026-11-01"
   }
  ]
 }

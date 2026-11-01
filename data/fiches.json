@@ -193,7 +193,83 @@
         "Repères : petit cube de 1 cm d'arête = 1 cm³ ; brique de lait = 1 dm³ = 1 l."
       ],
       "exemple": "Boîte de 5 cm × 4 cm × 3 cm : volume = 60 cm³.",
-      "astuce": "Aquarium de 40 cm × 25 cm × 30 cm = 4 dm × 2,5 dm × 3 dm = 30 dm³ = 30 litres."
+      "astuce": "Aquarium de 40 cm × 25 cm × 30 cm = 4 dm × 2,5 dm × 3 dm = 30 dm³ = 30 litres.",
+      "comprendre": [
+        "Le volume, c'est la place qu'un objet occupe dans l'espace. On le mesure en cubes : le centimètre cube (cm³) est un petit cube de 1 cm d'arête, le décimètre cube (dm³) un cube de 1 dm d'arête, le mètre cube (m³) un cube de 1 m d'arête. Un dm³ contient exactement 1 litre : c'est le lien entre volume et capacité.",
+        "Pour un parallélépipède rectangle (une boite, un aquarium, une pièce), le volume vaut longueur × largeur × hauteur. On peut aussi le voir comme l'aire de la base × la hauteur : un étage de cubes, répété autant de fois qu'il y a d'étages. Les trois longueurs doivent être dans la même unité avant de multiplier.",
+        "Entre deux unités de volume voisines, on multiplie ou on divise par 1 000, et pas par 10 : 1 m³ = 1 000 dm³ et 1 dm³ = 1 000 cm³. Pour passer à des litres, convertis d'abord en dm³ : un aquarium de 60 cm × 25 cm × 40 cm vaut 6 dm × 2,5 dm × 4 dm = 60 dm³, soit 60 litres."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Une boite de 5 cm × 4 cm × 3 cm.",
+          "explication": "5 × 4 × 3 = 60 cm³ : 20 petits cubes par étage, sur 3 étages."
+        },
+        {
+          "cas": "Un aquarium de 40 cm × 25 cm × 30 cm.",
+          "explication": "4 dm × 2,5 dm × 3 dm = 30 dm³, donc 30 litres."
+        },
+        {
+          "cas": "Un bloc de 60 m³ dont la base mesure 5 m sur 4 m.",
+          "explication": "L'aire de la base vaut 20 m² ; la hauteur vaut 60 : 20 = 3 m."
+        },
+        {
+          "cas": "On double les trois dimensions d'une boite.",
+          "explication": "Le volume est multiplié par 2 × 2 × 2 = 8, pas par 2."
+        }
+      ],
+      "pieges": [
+        "Additionner les trois dimensions au lieu de les multiplier.",
+        "Multiplier des longueurs écrites dans des unités différentes (des cm et des dm).",
+        "Convertir les volumes avec 10 ou 100 au lieu de 1 000 (1 dm³ = 1 000 cm³).",
+        "Oublier que le volume d'un récipient rempli aux 3/4 n'est que les 3/4 de sa capacité."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "5"
+          ],
+          "libelle": "question 5",
+          "texte": "Un aquarium de 60 cm × 25 cm × 40 cm rempli aux 3/4 : 60 000 cm³ : 4 × 3 = 45 000 cm³, soit 45 litres."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "Un parallélépipède de 2 m³ : si on double la longueur, le volume double ; si on double la hauteur et la profondeur, il est multiplié par 4."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "14"
+          ],
+          "libelle": "question 14",
+          "texte": "Un volume de 60 m³ sur une base de 5 m sur 4 m : la hauteur vaut 60 : 20 = 3 m."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "Dans une caissette de 25 cm × 20 cm × 10 cm, on range 5 × 4 × 2 = 40 cubes de 5 cm d'arête."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-conversions",
@@ -206,7 +282,72 @@
         "Capacité : l → dl → cl → ml (× 10 à chaque pas)."
       ],
       "exemple": "3,5 km = 3 500 m ; 250 cl = 2,5 l ; 2 t = 2 000 kg.",
-      "astuce": "Vers une unité plus petite, le nombre devient plus grand (on multiplie). Vers une unité plus grande, il devient plus petit (on divise)."
+      "astuce": "Vers une unité plus petite, le nombre devient plus grand (on multiplie). Vers une unité plus grande, il devient plus petit (on divise).",
+      "comprendre": [
+        "Pour convertir une mesure, on garde la même grandeur et on change d'unité. Les unités de longueur, de masse et de capacité suivent le même tableau : à chaque pas vers une unité plus petite, on multiplie par 10 ; vers une unité plus grande, on divise par 10. Les préfixes le disent : kilo = 1 000, hecto = 100, déca = 10, déci = un dixième, centi = un centième, milli = un millième.",
+        "Le plus sûr est d'écrire le nombre dans un tableau d'unités, le chiffre des unités sous l'unité de départ, puis de déplacer la virgule sous l'unité demandée, en ajoutant des zéros si besoin. Ainsi, 3,5 km = 3 500 m et 250 cl = 2,5 l.",
+        "Avant d'additionner ou de comparer des mesures, mets-les toutes dans la même unité. Une mesure complète a toujours trois parties : la grandeur (longueur, masse, durée…), le nombre et l'unité. « 150 m » : grandeur longueur, mesure 150, unité mètre."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "3,5 km en mètres.",
+          "explication": "Du km au m, il y a 3 pas : × 1 000, donc 3 500 m."
+        },
+        {
+          "cas": "250 cl en litres.",
+          "explication": "Du cl au l, il y a 2 pas : : 100, donc 2,5 l."
+        },
+        {
+          "cas": "Un sac de 0,33 kg et des objets de 380 g, 12 g et 1 050 g.",
+          "explication": "Tout en grammes : 330 + 380 + 12 + 1 050 = 1 772 g = 1,772 kg."
+        },
+        {
+          "cas": "3 litres divisés par 10.",
+          "explication": "3 décilitres : le préfixe déci veut dire « un dixième »."
+        }
+      ],
+      "pieges": [
+        "Additionner des kg et des g sans les mettre dans la même unité.",
+        "Multiplier quand on passe à une unité plus grande (le nombre doit devenir plus petit).",
+        "Oublier un zéro dans le tableau : 2 t = 2 000 kg, pas 200 kg.",
+        "Écrire un nombre sans son unité : la réponse est alors incomplète."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "Sur un panneau « 150 m », la grandeur est la longueur, la mesure 150 et l'unité le mètre ; « 30 MIN. » indique une durée."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "3 litres divisés par 10 donnent 3 décilitres ; 3 grammes multipliés par 10 donnent 3 décagrammes ; 3 ares divisés par 100 donnent 3 centiares."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "3a"
+          ],
+          "libelle": "question 3a",
+          "texte": "Un sac à dos et son contenu : on convertit tout en grammes, on additionne, puis on écrit 2 347 g = 2,347 kg."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-durees",
@@ -220,13 +361,78 @@
         "Horaire d'une journée : ajoute les durées une par une, dans l'ordre des activités."
       ],
       "exemple": "16 h 45 + 1 h 30 = 17 h 75 = 18 h 15.",
-      "astuce": "Pour une durée entre deux heures, avance par étapes : 9 h 47 → 10 h 00 (13 min) → 11 h 00 (1 h) → 11 h 12 (12 min) = 1 h 25."
+      "astuce": "Pour une durée entre deux heures, avance par étapes : 9 h 47 → 10 h 00 (13 min) → 11 h 00 (1 h) → 11 h 12 (12 min) = 1 h 25.",
+      "comprendre": [
+        "Les durées ne se calculent pas comme les nombres décimaux : 1 heure vaut 60 minutes, et pas 100. On ne peut donc pas soustraire 11,12 − 9,47. On compte plutôt par étapes, en passant par l'heure pleine suivante.",
+        "Pour trouver une heure d'arrivée, on ajoute la durée à l'heure de départ : d'abord les heures, puis les minutes. Si les minutes dépassent 60, on les échange contre 1 heure : 16 h 75 = 17 h 15. Pour trouver une durée, on avance de l'heure de départ à l'heure d'arrivée : de 9 h 47 à 10 h, 13 min ; de 10 h à 11 h 12, 1 h 12 min ; en tout 1 h 25 min.",
+        "Autres repères : 1 jour = 24 h, 1 min = 60 s, une demi-heure = 30 min, un quart d'heure = 15 min. Pour savoir combien de jours font 648 heures, on divise par 24 : 27 jours."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Un trajet de 9 h 47 à 11 h 12.",
+          "explication": "13 min jusqu'à 10 h, puis 1 h 12 min : 1 h 25 min."
+        },
+        {
+          "cas": "Un départ à 17 h 55 et 46 minutes de marche.",
+          "explication": "17 h 55 + 5 min = 18 h, puis 41 min de plus : 18 h 41."
+        },
+        {
+          "cas": "16 h 45 + 1 h 30.",
+          "explication": "17 h 75, c'est-à-dire 18 h 15."
+        },
+        {
+          "cas": "648 heures, combien de jours ?",
+          "explication": "648 : 24 = 27 jours."
+        }
+      ],
+      "pieges": [
+        "Calculer avec les heures comme avec des décimaux (100 minutes dans une heure).",
+        "Oublier d'échanger 60 minutes contre 1 heure (écrire 17 h 75).",
+        "Confondre une heure (le moment où l'on part) et une durée (le temps qui passe).",
+        "Oublier qu'un jour compte 24 heures, et pas 12."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "3"
+          ],
+          "libelle": "question 3",
+          "texte": "Une montre indique 9 h 47 au départ et 11 h 12 à l'arrivée : le trajet a duré 13 min + 1 h 12 min = 1 h 25 min."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "3a"
+          ],
+          "libelle": "question 3a",
+          "texte": "Un piéton part à 17 h 55 ; le trajet dure 46 minutes : il arrive à 18 h 41."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "7"
+          ],
+          "libelle": "question 7",
+          "texte": "Un compteur indique 648 heures avant l'ouverture des Jeux olympiques : 648 : 24 = 27 jours."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-echelle",
       "matiere": "ma",
       "e": "🗺️",
-      "titre": "L'échelle d'une carte",
+      "titre": "Calculer avec une échelle",
       "regle": [
         "Échelle 1/100 000 : 1 cm sur la carte = 100 000 cm en réalité = 1 km.",
         "Distance réelle = distance sur la carte × nombre de l'échelle.",
@@ -237,7 +443,7 @@
       "comprendre": [
         "Une carte est beaucoup plus petite que la réalité. L'échelle dit combien de fois. Échelle 1/100 000 : 1 cm sur la carte représente 100 000 cm dans la réalité, c'est-à-dire 1 km.",
         "Pour trouver une distance réelle : mesure sur la carte avec la latte, multiplie par le nombre de l'échelle, puis convertis en km. Astuce : divise le nombre de l'échelle par 100 000 pour savoir combien de km vaut 1 cm (1/400 000 : 1 cm = 4 km ; 1/25 000 : 1 cm = 0,25 km).",
-        "Certaines cartes ont une échelle graphique : un petit trait gradué (par exemple « 0 — 10 km »). On reporte ce trait sur la distance à mesurer. Agrandir ou réduire une figure, c'est la même idée : toutes les longueurs sont multipliées ou divisées par le même nombre."
+        "Pour lire une carte de géographie (échelle graphique, grande ou petite échelle), vois la fiche « Lire l'échelle d'une carte ». Agrandir ou réduire une figure, c'est la même idée : toutes les longueurs sont multipliées ou divisées par le même nombre."
       ],
       "exemplesExpliques": [
         {
@@ -357,7 +563,82 @@
       ],
       "exemple": "80 kg de graines pour 4 ha → 20 kg pour 1 ha → 200 kg pour 10 ha.",
       "astuce": "« Pour 1 » est la clé : divise d'abord, multiplie ensuite.",
-      "miseAJour": "2026-11-01"
+      "miseAJour": "2026-11-01",
+      "comprendre": [
+        "Deux grandeurs sont proportionnelles quand on passe toujours de l'une à l'autre en multipliant par le même nombre. Le prix de pommes vendues au kilo est proportionnel à leur masse ; l'âge et la taille d'un enfant, non.",
+        "La méthode la plus sûre est le passage par l'unité : on calcule d'abord pour 1, puis on multiplie. 80 kg de graines pour 4 hectares, c'est 80 : 4 = 20 kg pour 1 hectare, donc 20 × 10 = 200 kg pour 10 hectares.",
+        "On peut aussi utiliser un tableau et chercher un lien simple entre les colonnes : 3 fois plus de personnes, 3 fois plus de pommes ; la moitié des pas, la moitié du temps. Dans une recette, tous les ingrédients sont multipliés ou divisés par le même nombre."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "80 kg de graines pour 4 ha. Combien pour 10 ha ?",
+          "explication": "20 kg pour 1 ha, donc 200 kg pour 10 ha."
+        },
+        {
+          "cas": "Une recette pour 4 personnes, à faire pour 2.",
+          "explication": "On divise toutes les quantités par 2 : 50 g de sucre deviennent 25 g."
+        },
+        {
+          "cas": "36 bouteilles pour 3 oreillers. Combien pour 10 ?",
+          "explication": "12 bouteilles pour 1 oreiller, donc 120 pour 10."
+        },
+        {
+          "cas": "480 pas en 6 min. Combien de minutes pour 160 pas ?",
+          "explication": "160 est le tiers de 480 : 6 : 3 = 2 min."
+        }
+      ],
+      "pieges": [
+        "Ajouter au lieu de multiplier : pour 2 fois plus de personnes, il faut 2 fois plus de chaque ingrédient, pas « 2 de plus ».",
+        "Oublier de changer un des ingrédients dans une recette.",
+        "Croire que tout est proportionnel (l'âge et la taille, le prix d'un lot en promotion).",
+        "Multiplier avant d'avoir trouvé la valeur « pour 1 »."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "2"
+          ],
+          "libelle": "question 2",
+          "texte": "80 kg de graines pour 4 hectares : 20 kg pour 1 hectare, donc 200 kg pour 10 hectares."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "2"
+          ],
+          "libelle": "question 2",
+          "texte": "Un crumble pour 4 personnes : pour 2 personnes, on divise tout par 2 ; avec 300 g d'amandes (3 fois 100 g), on cuisine pour 12 personnes."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "15"
+          ],
+          "libelle": "question 15",
+          "texte": "36 bouteilles recyclées pour 3 oreillers : 12 par oreiller, donc 120 pour 10 oreillers, et 60 bouteilles pour 5 oreillers."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "5"
+          ],
+          "libelle": "question 5",
+          "texte": "Un podomètre : 480 pas, 6 min, 12 kcal. Pour 160 pas (le tiers), 2 min et 4 kcal."
+        }
+      ]
     },
     {
       "id": "ma-fractions",
@@ -371,7 +652,83 @@
         "Fraction × nombre entier : on multiplie seulement le numérateur (3 × 2/7 = 6/7)."
       ],
       "exemple": "3/4 de 60 = (60 : 4) × 3 = 15 × 3 = 45.",
-      "astuce": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 3/4 = 0,75 = 75 %."
+      "astuce": "1/2 = 0,5 = 50 % ; 1/4 = 0,25 = 25 % ; 3/4 = 0,75 = 75 %.",
+      "comprendre": [
+        "Une fraction décrit un partage en parts égales. Dans 3/4, le dénominateur (4) dit en combien de parts égales on partage ; le numérateur (3) dit combien de parts on prend. Les parts doivent être égales : un disque coupé en 3 morceaux inégaux n'est pas partagé en tiers.",
+        "Pour prendre une fraction d'une quantité, on divise par le dénominateur, puis on multiplie par le numérateur : 3/4 de 60 = (60 : 4) × 3 = 45. Plusieurs fractions peuvent représenter la même part : 1/2 = 2/4 = 3/6. Pour simplifier, on divise le numérateur et le dénominateur par un même nombre.",
+        "Pour reconnaitre une fraction sur un dessin, compte d'abord les parts égales du tout, puis les parts coloriées. Si les parts ne sont pas égales, redécoupe mentalement le dessin en petites parts identiques. Repères utiles : 1/2 = 0,5 = 50 %, 1/4 = 0,25 = 25 %, 3/4 = 0,75 = 75 %."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "3/4 de 60.",
+          "explication": "60 : 4 = 15, puis 15 × 3 = 45."
+        },
+        {
+          "cas": "15 carrés gris sur 20.",
+          "explication": "15/20 = 3/4 (on divise par 5 en haut et en bas)."
+        },
+        {
+          "cas": "Un disque en 6 parts égales, 3 grises.",
+          "explication": "3/6, c'est la moitié du disque."
+        },
+        {
+          "cas": "On mange 1/3 d'une tablette, puis 1/4 du reste.",
+          "explication": "Il reste 2/3 ; 1/4 de 2/3 = 1/6 ; il reste 2/3 − 1/6 = 1/2."
+        }
+      ],
+      "pieges": [
+        "Compter des parts qui ne sont pas égales.",
+        "Inverser le numérateur et le dénominateur.",
+        "Prendre « 1/4 du reste » comme « 1/4 de la tablette entière ».",
+        "Croire que 3/6 et 1/2 sont des parts différentes."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 4,
+          "questions": [
+            "25"
+          ],
+          "libelle": "question 25",
+          "texte": "Un disque qu'on redécoupe en 6 parts égales : 3 parts sont grises, c'est la moitié."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "9"
+          ],
+          "libelle": "question 9",
+          "texte": "Une tablette : 1/3 est mangé, puis 1/4 du reste. Il reste 1/2 de la tablette."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 4,
+          "questions": [
+            "17"
+          ],
+          "libelle": "question 17",
+          "texte": "Quatre figures sont grisées aux 3/4 (15 carrés sur 20, 6 sur 8…) ; la figure 4 représente une autre fraction."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "13"
+          ],
+          "libelle": "question 13",
+          "texte": "Sur le plan d'un jardin carré partagé en 4 bandes égales, la pelouse vaut 1/4 du jardin et la remise 1/16."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-decimaux",
@@ -386,7 +743,71 @@
       ],
       "exemple": "0,54 > 0,5 car 54 centièmes > 50 centièmes. 2,9 × 4 : 29 × 4 = 116 → 11,6.",
       "astuce": "Ajoute des zéros pour comparer facilement : 0,5 = 0,50 et 0,45 < 0,50.",
-      "miseAJour": "2026-11-01"
+      "miseAJour": "2026-11-01",
+      "comprendre": [
+        "Un nombre décimal a une partie entière et une partie décimale, séparées par la virgule. Après la virgule viennent les dixièmes, puis les centièmes, puis les millièmes. Dans 2,4 cm, le 4 vaut 4 dixièmes de cm, c'est-à-dire 4 mm.",
+        "Pour comparer deux décimaux, on compare d'abord la partie entière, puis les dixièmes, puis les centièmes. Ajouter des zéros à la fin ne change pas la valeur : 0,5 = 0,50. Ainsi 0,45 < 0,50 : un nombre plus long n'est pas forcément plus grand.",
+        "Pour additionner ou soustraire, on aligne les virgules. Pour multiplier, on calcule sans virgule, puis on remet autant de chiffres après la virgule qu'il y en a en tout dans les deux nombres. Multiplier par 10, 100, 1 000 déplace la virgule vers la droite ; diviser la déplace vers la gauche."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "0,54 et 0,5.",
+          "explication": "0,54 > 0,50 : 54 centièmes contre 50 centièmes."
+        },
+        {
+          "cas": "2,9 × 4.",
+          "explication": "29 × 4 = 116, et un chiffre après la virgule : 11,6."
+        },
+        {
+          "cas": "Le 4 de 2,4 cm.",
+          "explication": "C'est le chiffre des dixièmes : 4 dixièmes de cm = 4 mm."
+        },
+        {
+          "cas": "10 = 4 × … ?",
+          "explication": "4 × 2,5 = 10, car 4 × 25 = 100, puis on divise par 10."
+        }
+      ],
+      "pieges": [
+        "Croire que 0,45 est plus grand que 0,5 parce qu'il a plus de chiffres.",
+        "Mal aligner les virgules dans une addition (1,12 + 1,2 n'est pas 1,14).",
+        "Oublier de remettre la virgule après une multiplication.",
+        "Confondre le rang des dixièmes et celui des dizaines."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 6,
+          "questions": [
+            "1"
+          ],
+          "libelle": "question 1",
+          "texte": "Dans une décomposition de 0,64, chaque case est la somme des cases du dessous : 0,64 − 0,38 = 0,26, puis 0,26 − 0,10 = 0,16."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 6,
+          "questions": [
+            "11"
+          ],
+          "libelle": "question 11",
+          "texte": "1 = 10 × 0,1 = 2 × 0,5 et 10 = 0,2 × 50 = 4 × 2,5."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "14a"
+          ],
+          "libelle": "question 14a",
+          "texte": "Dans 2,4 cm, le 4 est le chiffre des dixièmes : il représente 4 mm."
+        }
+      ]
     },
     {
       "id": "ma-division",
@@ -565,7 +986,72 @@
         "Promotions : « le 2e à moitié prix », « 3 pour 2 » : calcule le prix payé pour le lot, puis compare."
       ],
       "exemple": "4 croissants à 1,20 € = 4,80 €. On paie avec 10 € → on rend 10 − 4,80 = 5,20 €.",
-      "astuce": "Pour comparer des prix, calcule le prix pour 1 kg (ou 1 l) de chaque produit."
+      "astuce": "Pour comparer des prix, calcule le prix pour 1 kg (ou 1 l) de chaque produit.",
+      "comprendre": [
+        "Les prix s'écrivent avec deux chiffres après la virgule : les centimes. 1 € = 100 centimes, donc 0,15 € = 15 centimes. Pour additionner des prix, on aligne les virgules et on complète les nombres entiers par « ,00 » : 1 042 € = 1 042,00 €.",
+        "Le prix total vaut la quantité × le prix d'un article. Le rendu vaut la somme donnée − le prix total. Quand un tarif a un forfait et un prix par minute ou par heure, on calcule la partie variable, puis on ajoute le forfait : 1 € + 45 × 0,15 € = 7,75 €.",
+        "Pour comparer des offres, ramène-les à la même quantité : le prix pour 1 kg, 1 litre ou 1 article. Lis bien les conditions d'un tarif : une heure « entamée » se paie entière, et le prix peut changer selon le jour."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "4 croissants à 1,20 € payés avec un billet de 10 €.",
+          "explication": "4 × 1,20 = 4,80 € ; on rend 10 − 4,80 = 5,20 €."
+        },
+        {
+          "cas": "344,99 € + 1 042 € + 285,50 €.",
+          "explication": "On aligne les virgules : 344,99 + 1 042,00 + 285,50 = 1 672,49 €."
+        },
+        {
+          "cas": "Un vélo loué 45 minutes : 1 € + 0,15 € par minute.",
+          "explication": "45 × 0,15 = 6,75 € ; + 1 € = 7,75 €."
+        },
+        {
+          "cas": "Un stationnement de 4 h 48 min à 1,15 € l'heure entamée.",
+          "explication": "5 heures entamées : 5 × 1,15 = 5,75 €."
+        }
+      ],
+      "pieges": [
+        "Mal aligner les virgules (ajouter des centimes à des euros).",
+        "Oublier le forfait ou une partie du tarif.",
+        "Compter 4 heures au lieu de 5 quand la cinquième heure est entamée.",
+        "Écrire 7,5 € au lieu de 7,50 € : la valeur est la même, mais un prix s'écrit avec deux chiffres après la virgule."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 7,
+          "questions": [
+            "5"
+          ],
+          "libelle": "question 5",
+          "texte": "Trois meubles à 344,99 €, 1 042 € et 285,50 € : on aligne les virgules, le total vaut 1 672,49 €."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 4,
+          "questions": [
+            "4"
+          ],
+          "libelle": "question 4",
+          "texte": "Un parking de 7 h 02 à 11 h 50 : 5 heures entamées à 1,15 €, soit 5,75 €."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 6,
+          "questions": [
+            "7c"
+          ],
+          "libelle": "question 7c",
+          "texte": "Un vélo électrique loué 45 minutes : 1 € + 45 × 0,15 € = 7,75 €."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-quadrilateres",
@@ -848,7 +1334,82 @@
       ],
       "exemple": "Au cours de notre vie, nos empreintes ne changent pas. → « Au cours de notre vie » : complément de phrase.",
       "astuce": "Encadre le sujet par « C'est … qui » : C'est le petit chien qui aboie.",
-      "miseAJour": "2026-11-01"
+      "miseAJour": "2026-11-01",
+      "comprendre": [
+        "Une phrase de base a un sujet et un prédicat (le verbe conjugué avec ce qui en dépend). Le sujet dit de qui ou de quoi on parle ; on le trouve avec « Qui est-ce qui… ? » ou « Qu'est-ce qui… ? » posé devant le verbe, ou en l'encadrant par « C'est… qui ». Le verbe s'accorde avec lui.",
+        "Le complément du verbe dépend du verbe : en général, on ne peut pas le déplacer, et souvent pas le supprimer. Il est direct sans préposition (« Elle fronça les sourcils » : elle fronça quoi ? les sourcils) et indirect avec une préposition (« Il parle à son frère »). Après un verbe d'état (être, sembler, devenir…), on trouve un attribut du sujet.",
+        "Le complément de phrase donne une précision de temps, de lieu, de but ou de manière. On peut le déplacer ou le supprimer sans que la phrase perde son sens : « Au cours de notre vie, nos empreintes ne changent pas » devient « Nos empreintes ne changent pas au cours de notre vie ». Pour trouver la structure d'une phrase, repère d'abord le verbe conjugué, puis le sujet, puis teste chaque groupe."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Elle fronça les sourcils. »",
+          "explication": "Sujet « Elle », verbe « fronça », complément direct « les sourcils »."
+        },
+        {
+          "cas": "« Pour révéler les traces, on peut utiliser différents types de poudres. »",
+          "explication": "Complément de phrase (déplaçable), sujet « on », verbe, complément direct."
+        },
+        {
+          "cas": "« Ce que tu manges est le carburant de ton corps. »",
+          "explication": "Après le verbe d'état « est », « le carburant de ton corps » est attribut du sujet."
+        },
+        {
+          "cas": "« Aucun mot ne venait. »",
+          "explication": "Un sujet et un verbe, sans complément du verbe."
+        }
+      ],
+      "pieges": [
+        "Prendre le premier mot de la phrase pour le sujet, alors que c'est un complément de phrase.",
+        "Chercher le sujet après le verbe sans poser la question « Qui est-ce qui ? ».",
+        "Confondre complément direct et attribut du sujet après « être ».",
+        "Croire qu'un groupe qu'on peut déplacer est un complément du verbe."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 6,
+          "questions": [
+            "14"
+          ],
+          "libelle": "question 14",
+          "texte": "Même structure que « Depuis des milliers d'années, les êtres humains utilisent traces et empreintes » : « Pour révéler les traces, on peut utiliser différents types de poudres »."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 8,
+          "questions": [
+            "18"
+          ],
+          "libelle": "question 18",
+          "texte": "Dans « Ce que tu manges est le carburant de ton corps », le verbe d'état « est » est suivi d'un attribut du sujet."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 9,
+          "questions": [
+            "24"
+          ],
+          "libelle": "question 24",
+          "texte": "Comme « J'ai mes raisons », la phrase « Elle fronça les sourcils » a la structure sujet, verbe, complément direct du verbe."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 4,
+          "questions": [
+            "19"
+          ],
+          "libelle": "question 19",
+          "texte": "« Dans les années septante, de jeunes artistes renouvèlent les arts du cirque » : complément de phrase, sujet, verbe, complément direct."
+        }
+      ]
     },
     {
       "id": "fr-classes-mots",
@@ -1361,7 +1922,83 @@
         "Temps modernes : jusqu'à la Révolution française (1789). Ensuite : Époque contemporaine."
       ],
       "exemple": "Les Mérovingiens (5e-7e siècle) vivaient au Moyen Âge.",
-      "astuce": "Retiens les 4 dates charnières : 3500 av. J.-C., 476, 1492, 1789."
+      "astuce": "Retiens les 4 dates charnières : 3500 av. J.-C., 476, 1492, 1789.",
+      "comprendre": [
+        "Pour s'y retrouver dans le passé, les historiens découpent le temps en cinq grandes périodes, séparées par des évènements repères. La Préhistoire se termine avec l'invention de l'écriture (vers 3500 av. J.-C.). L'Antiquité se termine avec la fin de l'Empire romain d'Occident (476). Le Moyen Âge se termine avec l'arrivée de Christophe Colomb en Amérique (1492). Les Temps modernes se terminent avec la Révolution française (1789). Ensuite vient l'Époque contemporaine, la nôtre.",
+        "Ces périodes sont dites conventionnelles : les historiens se sont mis d'accord sur ces dates, mais la vie des gens n'a pas changé d'un coup en 476 ou en 1492. Elles servent surtout à classer les traces du passé et les évènements.",
+        "Pour trouver la période d'une date, compare-la aux repères : 1565 est entre 1492 et 1789, donc aux Temps modernes. Si on te donne un siècle, transforme-le en années : le 6e siècle va de 501 à 600, il est après 476, donc au Moyen Âge. Avant J.-C., les nombres plus grands sont plus anciens : 17 000 ans av. J.-C., c'est la Préhistoire."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Un tableau peint en 1565.",
+          "explication": "Entre 1492 et 1789 : les Temps modernes."
+        },
+        {
+          "cas": "Un bijou du 6e siècle.",
+          "explication": "De 501 à 600, après 476 : le Moyen Âge."
+        },
+        {
+          "cas": "Une peinture dans une grotte, vers 17 000 ans av. J.-C.",
+          "explication": "Avant l'écriture : la Préhistoire."
+        },
+        {
+          "cas": "Un traité signé en 1957.",
+          "explication": "Après 1789 : l'Époque contemporaine."
+        }
+      ],
+      "pieges": [
+        "Confondre la date de la trace et la date à laquelle on l'a retrouvée ou exposée.",
+        "Oublier qu'avant J.-C., 3000 est plus ancien que 500.",
+        "Placer 1492 ou 1789 dans la mauvaise période : ce sont des dates de passage.",
+        "Confondre le 16e siècle (1501-1600) et les années 1600."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 5,
+          "questions": [
+            "1b"
+          ],
+          "libelle": "question 1b",
+          "texte": "Une dame romaine de la fin du 2e siècle : Antiquité ; un document de 1775 : Temps modernes ; un document de 2025 : Époque contemporaine."
+        },
+        {
+          "examens": [
+            "ceb-2025"
+          ],
+          "livret": 5,
+          "questions": [
+            "2b"
+          ],
+          "libelle": "question 2b",
+          "texte": "Une œuvre de Pieter Brueghel peinte en 1565 date des Temps modernes (de 1492 à 1789)."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 5,
+          "questions": [
+            "1a"
+          ],
+          "libelle": "question 1a",
+          "texte": "Une trace de 1412-1416 : Moyen Âge ; une trace de 1957 : Époque contemporaine ; une trace de 17 000 ans av. J.-C. : Préhistoire."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 5,
+          "questions": [
+            "1d"
+          ],
+          "libelle": "question 1d",
+          "texte": "Un astrolabe du 16e siècle appartient aux Temps modernes ; une fibule du 6e siècle, au Moyen Âge."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "hg-siecles",
@@ -1464,7 +2101,72 @@
         "1957 : signature du traité de Rome, qui fonde la Communauté économique européenne (CEE, en place le 1er janvier 1958), ancêtre de l'Union européenne."
       ],
       "exemple": "Gabrielle Petit, résistante belge, a vécu pendant la Première Guerre mondiale.",
-      "astuce": "Place chaque date sur une frise : tu verras mieux dans quelle période elle se trouve."
+      "astuce": "Place chaque date sur une frise : tu verras mieux dans quelle période elle se trouve.",
+      "comprendre": [
+        "Quelques dates servent de repères pour toute l'histoire de nos régions. 800 : Charlemagne est sacré empereur. 1830 : la Belgique devient indépendante ; Léopold Ier devient le premier roi des Belges en 1831. 1914-1918 : la Première Guerre mondiale. 1940-1945 : la Seconde Guerre mondiale. 1957 : le traité de Rome crée la Communauté économique européenne, ancêtre de l'Union européenne.",
+        "Au CEB, on te montre souvent une trace (une affiche, un traité, une lettre, une carte) et tu dois retrouver l'évènement. Cherche les indices : une date, un nom de pays, des mots comme « Hollandais » (1830), « occupation » ou « prisonnier » (les deux guerres), « Communauté économique européenne » (1957).",
+        "Place toujours les dates sur une ligne du temps : tu vois tout de suite ce qui vient avant ou après. Une Exposition universelle de 1967 se tient après l'indépendance de la Belgique ; une autre de 1949, avant le premier voyage d'un homme dans l'espace (1961)."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "« Aux armes ! Braves Belges. Les Hollandais ont osé attaquer Bruxelles » (1830).",
+          "explication": "Un appel lié à l'indépendance de la Belgique."
+        },
+        {
+          "cas": "Un soldat prisonnier de 1940 à 1945.",
+          "explication": "La Seconde Guerre mondiale."
+        },
+        {
+          "cas": "Un traité qui crée la Communauté économique européenne.",
+          "explication": "Le traité de Rome, en 1957."
+        },
+        {
+          "cas": "Charlemagne (742-814).",
+          "explication": "Sacré empereur en 800 : il vit au Moyen Âge."
+        }
+      ],
+      "pieges": [
+        "Confondre la Première (1914-1918) et la Seconde Guerre mondiale (1940-1945).",
+        "Confondre l'indépendance (1830) et le premier roi (Léopold Ier, 1831).",
+        "Croire que le traité de Rome a créé directement l'Union européenne.",
+        "Situer une date sans la placer sur une ligne du temps."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-so"
+          ],
+          "livret": 5,
+          "questions": [
+            "4a"
+          ],
+          "libelle": "question 4a",
+          "texte": "L'arbre généalogique de Charlemagne : son père, Pépin le Bref (714-768) ; son fils, Louis le Pieux (778-840)."
+        },
+        {
+          "examens": [
+            "ceb-2024"
+          ],
+          "livret": 5,
+          "questions": [
+            "1b"
+          ],
+          "libelle": "question 1b",
+          "texte": "Le traité qui crée la Communauté économique européenne se rapporte au traité de Rome (1957) ; l'« Appel au peuple » de 1830, à l'indépendance de la Belgique."
+        },
+        {
+          "examens": [
+            "ceb-2023"
+          ],
+          "livret": 5,
+          "questions": [
+            "6b"
+          ],
+          "libelle": "question 6b",
+          "texte": "Un soldat prisonnier de 1940 à 1945 et une carte de l'Europe en 1942 : la Seconde Guerre mondiale."
+        }
+      ],
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "hg-belgique",
@@ -1859,7 +2561,82 @@
       ],
       "exemple": "Huile en feu : coupe le feu, puis couvre avec le couvercle ou une couverture anti-feu (à défaut, un linge en coton humide, pas mouillé) : on prive le feu d'O₂. Jamais d'eau !",
       "astuce": "En cas d'incendie, sors accroupi : la fumée chaude monte vers le plafond.",
-      "miseAJour": "2026-11-01"
+      "miseAJour": "2026-11-01",
+      "comprendre": [
+        "Pour qu'un feu prenne et continue de bruler, il faut trois éléments en même temps : un combustible (bois, papier, gaz, cire, huile), du dioxygène, présent dans l'air, et une source de chaleur (une flamme, une étincelle). On les représente par le triangle du feu.",
+        "La combustion d'un combustible comme le bois, le gaz ou une bougie libère de l'énergie thermique (de la chaleur), de la vapeur d'eau et du dioxyde de carbone. C'est une transformation chimique : de nouvelles matières apparaissent. Une expérience simple le montre : sous une cloche, la bougie s'éteint quand le dioxygène est utilisé ; au-dessus de la flamme, une plaque froide se couvre de buée.",
+        "Pour éteindre un feu, on retire un des trois éléments : on coupe le gaz (plus de combustible), on étouffe le feu avec un couvercle ou une couverture (plus de dioxygène), on refroidit avec de l'eau (moins de chaleur), sauf sur de l'huile ou un appareil électrique. En cas d'incendie, on sort en restant bas, car la fumée chaude monte."
+      ],
+      "exemplesExpliques": [
+        {
+          "cas": "Une bougie sous un bocal.",
+          "explication": "Elle s'éteint quand le dioxygène du bocal est utilisé."
+        },
+        {
+          "cas": "Une plaque froide au-dessus d'une flamme.",
+          "explication": "Des gouttes d'eau apparaissent : la combustion libère de la vapeur d'eau."
+        },
+        {
+          "cas": "Une poêle d'huile en feu.",
+          "explication": "On coupe le feu et on couvre : couvercle, couverture anti-feu ou linge humide (pas mouillé). Jamais d'eau."
+        },
+        {
+          "cas": "Une chaudière à gaz.",
+          "explication": "La combustion du gaz libère de l'énergie thermique, de la vapeur d'eau et du dioxyde de carbone."
+        }
+      ],
+      "pieges": [
+        "Jeter de l'eau sur de l'huile en feu : l'huile est projetée et le feu s'étend.",
+        "Croire que le combustible (le bois) est un produit de la combustion.",
+        "Oublier le dioxygène dans le triangle du feu.",
+        "Sortir debout d'une pièce enfumée : le dioxygène manque en hauteur."
+      ],
+      "auCEB": [
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "12"
+          ],
+          "libelle": "question 12",
+          "texte": "Trois expériences avec une bougie : il faut du dioxygène pour qu'elle brule ; sa combustion libère de la vapeur d'eau et de l'énergie thermique."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "13"
+          ],
+          "libelle": "question 13",
+          "texte": "La combustion du gaz dans une chaudière libère de la vapeur d'eau, du dioxyde de carbone et de l'énergie thermique."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "14"
+          ],
+          "libelle": "question 14",
+          "texte": "Un feu dans la cuisine : après avoir coupé le gaz, on étend une couverture humide sur la poêle, jamais d'eau."
+        },
+        {
+          "examens": [
+            "ceb-2026-tc"
+          ],
+          "livret": 9,
+          "questions": [
+            "21"
+          ],
+          "libelle": "question 21",
+          "texte": "Le dioxygène manque dans le haut d'une pièce en feu : on sort en position accroupie."
+        }
+      ]
     },
     {
       "id": "sc-phenomenes",

@@ -8,12 +8,13 @@ import { blocApprofondi } from '../scripts/generer.mjs';
 
 const lire = async (p) => JSON.parse(await readFile(new URL('../' + p, import.meta.url), 'utf8'));
 const fiches = [];
-for (const m of ['fr', 'ma', 'hg', 'sc']) fiches.push(...(await lire(`data/fiches-${m}.json`)).fiches);
+for (const p of ['data/fiches.json', ...['fr', 'ma', 'hg', 'sc'].map((m) => `data/fiches-${m}.json`)]) fiches.push(...(await lire(p)).fiches);
 const approfondies = fiches.filter((f) => f.comprendre || f.exemplesExpliques || f.pieges || f.auCEB || f.auCEBNote);
 const examens = {};
 for (const e of (await lire('data/examens/index.json')).examens) examens[e.id] = await lire(`data/examens/${e.id}.json`);
 
-test('au moins les 9 fiches « explorées, non indexées » sont approfondies', () => {
+test('toutes les fiches sont approfondies', () => {
+  assert.equal(approfondies.length, fiches.length, fiches.filter((f) => !approfondies.includes(f)).map((f) => f.id).join(', '));
   const ids = approfondies.map((f) => f.id);
   for (const id of ['sc-chaines', 'sc-lumiere-son', 'fr-determinants-pronoms', 'sc-demarche', 'sc-materiaux', 'sc-metamorphoses', 'fr-groupe-nominal', 'ma-droite-graduee', 'fr-reel-imaginaire']) assert.ok(ids.includes(id), id);
 });

@@ -525,7 +525,83 @@
     "Les 5 sens : la vue (yeux), l'ouïe (oreilles), l'odorat (nez), le goût (langue), le toucher (peau)."
    ],
    "exemple": "Le crâne protège le cerveau ; les côtes protègent le cœur et les poumons.",
-   "astuce": "Un appareil = plusieurs organes qui travaillent ensemble pour une même fonction."
+   "astuce": "Un appareil = plusieurs organes qui travaillent ensemble pour une même fonction.",
+   "comprendre": [
+    "Un appareil (ou système) est un ensemble d'organes qui travaillent ensemble pour une même fonction. L'appareil digestif transforme les aliments et fait passer les nutriments dans le sang. L'appareil respiratoire fait entrer le dioxygène et sortir le dioxyde de carbone : ce sont les échanges gazeux. L'appareil circulatoire, avec le cœur et les vaisseaux, transporte le sang dans tout le corps.",
+    "L'appareil locomoteur (os, muscles, tendons, articulations) soutient le corps, protège certains organes et permet de bouger : le crâne protège le cerveau, les côtes protègent le cœur et les poumons. L'appareil tégumentaire, c'est la peau : elle protège le corps et permet le toucher. L'appareil urinaire (reins, vessie) élimine des déchets, et le système nerveux (cerveau, nerfs) commande le corps.",
+    "Pour relier une situation à un appareil, demande-toi quel organe est touché : tousser concerne les poumons (respiratoire), vomir concerne l'estomac (digestif), une fracture concerne un os (locomoteur), un infarctus concerne le cœur (circulatoire)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un élève enrhumé qui tousse.",
+     "explication": "Le nez, la gorge et les poumons : l'appareil respiratoire."
+    },
+    {
+     "cas": "Un élève qui vomit sa soupe.",
+     "explication": "L'estomac : l'appareil digestif."
+    },
+    {
+     "cas": "Une fracture de la clavicule.",
+     "explication": "Un os : l'appareil locomoteur."
+    },
+    {
+     "cas": "La peau.",
+     "explication": "L'appareil tégumentaire : protection et toucher."
+    }
+   ],
+   "pieges": [
+    "Confondre l'œsophage (digestif) et la trachée (respiratoire).",
+    "Oublier que la peau forme un appareil à part entière.",
+    "Croire que le sang est fabriqué dans le cœur : le cœur le pompe.",
+    "Attribuer une fonction à un seul organe alors que tout l'appareil y participe."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 10,
+     "questions": [
+      "4a"
+     ],
+     "libelle": "question 4a",
+     "texte": "L'appareil digestif assure l'absorption, la dégradation, l'assimilation et le stockage ; la peau forme l'appareil tégumentaire."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 9,
+     "questions": [
+      "3"
+     ],
+     "libelle": "question 3",
+     "texte": "Tégumentaire : protection et toucher ; locomoteur : support, protection, mobilité ; circulatoire : transport ; respiratoire : échanges gazeux."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "2a"
+     ],
+     "libelle": "question 2a",
+     "texte": "La circulation : les artères, le cœur, et l'infarctus comme maladie ; la digestion : le suc gastrique et l'estomac."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 5,
+     "questions": [
+      "1b"
+     ],
+     "libelle": "question 1b",
+     "texte": "Tousser : l'appareil respiratoire ; vomir : l'appareil digestif ; une clavicule cassée : un os, qu'aucun des schémas ne montrait."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-dents",
@@ -1860,7 +1936,38 @@
     "L'âne et la jument peuvent avoir un petit, le mulet, mais il est stérile : l'âne et le cheval sont deux espèces différentes."
    ],
    "exemple": "Un caniche et un berger allemand ont des chiots qui pourront avoir des chiots : même espèce.",
-   "astuce": "Le test, ce n'est pas la ressemblance : ce sont les petits… et les petits des petits !"
+   "astuce": "Le test, ce n'est pas la ressemblance : ce sont les petits… et les petits des petits !",
+   "comprendre": [
+    "Une espèce est un groupe d'êtres vivants qui peuvent se reproduire entre eux et avoir des petits qui, plus tard, pourront à leur tour avoir des petits. Le chat, le chien, le cheval et l'humain sont des espèces différentes.",
+    "La ressemblance ne suffit pas. Un chihuahua et un saint-bernard sont très différents, mais ils appartiennent à la même espèce : leurs chiots pourront avoir des chiots. Le lapin et le lièvre se ressemblent, mais ce sont deux espèces différentes. L'âne et la jument peuvent avoir un petit, le mulet, mais il est stérile : l'âne et le cheval sont donc deux espèces distinctes.",
+    "Le nom d'une espèce est souvent précis : on dit « mésange bleue » ou « mésange charbonnière », car ce sont deux espèces de mésanges. Dans une classification, l'espèce est le plus petit groupe ; les espèces qui partagent des attributs sont rangées dans des groupes plus grands (les oiseaux, les mammifères…)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un caniche et un berger allemand.",
+     "explication": "Leurs chiots seront féconds : même espèce."
+    },
+    {
+     "cas": "Un âne et une jument.",
+     "explication": "Leur petit, le mulet, est stérile : deux espèces différentes."
+    },
+    {
+     "cas": "Le lapin et le lièvre.",
+     "explication": "Ils se ressemblent, mais ne forment pas une seule espèce."
+    },
+    {
+     "cas": "La mésange bleue et la mésange charbonnière.",
+     "explication": "Deux espèces du même groupe d'oiseaux."
+    }
+   ],
+   "pieges": [
+    "Croire que des animaux qui se ressemblent sont de la même espèce.",
+    "Croire que des animaux très différents (les races de chiens) sont d'espèces différentes.",
+    "Oublier la deuxième condition : les petits doivent être féconds.",
+    "Confondre espèce et race."
+   ],
+   "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais la notion d'espèce aide à comprendre la classification des êtres vivants.",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-liens-systemes",
@@ -1977,7 +2084,51 @@
     "En sciences, on conclut à partir des faits, jamais à partir des goûts."
    ],
    "exemple": "« Le glaçon au soleil a fondu en 20 minutes » est un fait ; « Les glaçons en étoile sont les plus jolis » est un jugement de valeur.",
-   "astuce": "Mots d'un jugement : beau, joli, amusant, meilleur, nul… Mots d'une hypothèse : je pense que, peut-être que…"
+   "astuce": "Mots d'un jugement : beau, joli, amusant, meilleur, nul… Mots d'une hypothèse : je pense que, peut-être que…",
+   "comprendre": [
+    "En sciences, on distingue trois sortes de phrases. Un fait est une observation ou une mesure que tout le monde peut vérifier : « Après 24 heures, il manque 12 mm d'eau dans le verre placé devant le ventilateur. » Une hypothèse est une réponse possible à une question, qu'on va vérifier par une expérience : « Je pense que le vent fait évaporer l'eau plus vite. » Un jugement de valeur est un avis personnel : « Cette expérience est la plus amusante. »",
+    "Une bonne hypothèse peut être vérifiée par l'expérience prévue. Après l'expérience, on compare les résultats à l'hypothèse : l'expérience la valide (les mesures vont dans son sens) ou ne la valide pas. Une hypothèse non validée n'est pas une faute : elle fait avancer la recherche.",
+    "Pour reconnaitre les phrases, cherche les indices. Un fait contient souvent des nombres, des mesures, des observations. Une hypothèse commence souvent par « je pense que », « peut-être que », « si… alors… ». Un jugement contient des mots comme beau, joli, meilleur, nul, amusant."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Le glaçon au soleil a fondu en 20 minutes. »",
+     "explication": "Un fait : une mesure que chacun peut vérifier."
+    },
+    {
+     "cas": "« Je pense que les graines ont besoin d'eau pour germer. »",
+     "explication": "Une hypothèse, à vérifier par une expérience."
+    },
+    {
+     "cas": "« Les glaçons en étoile sont les plus jolis. »",
+     "explication": "Un jugement de valeur."
+    },
+    {
+     "cas": "Devant le ventilateur, 12 mm d'eau évaporés ; sur le radiateur, 5 mm.",
+     "explication": "Ces mesures valident l'hypothèse « le vent fait plus évaporer que la chaleur »."
+    }
+   ],
+   "pieges": [
+    "Prendre un avis (« c'est la meilleure méthode ») pour un fait.",
+    "Écrire une hypothèse que l'expérience ne peut pas vérifier.",
+    "Conclure à partir d'une seule impression, sans mesure.",
+    "Croire qu'une hypothèse non validée est une erreur."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 7,
+     "questions": [
+      "1a",
+      "1b"
+     ],
+     "libelle": "questions 1a et 1b",
+     "texte": "Des verres d'eau placés devant un ventilateur, sur un radiateur, sur une table et dans un frigo : les mesures valident « le vent favorise plus l'évaporation que la chaleur » et « la chaleur favorise l'évaporation » ; il fallait ensuite écrire une autre hypothèse que l'expérience peut vérifier."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-transfert-chaleur",
@@ -1991,7 +2142,50 @@
     "Si on mélange la même quantité d'eau chaude et d'eau froide, la température du mélange est entre les deux (à peu près au milieu) : les températures ne s'additionnent pas."
    ],
    "exemple": "Un glaçon dans une limonade : la chaleur passe de la limonade vers le glaçon. La limonade refroidit et le glaçon fond.",
-   "astuce": "On ne dit pas « le froid entre » : c'est toujours la chaleur qui se déplace."
+   "astuce": "On ne dit pas « le froid entre » : c'est toujours la chaleur qui se déplace.",
+   "comprendre": [
+    "La chaleur, ou énergie thermique, se déplace toujours d'une matière plus chaude vers une matière plus froide. D'elle-même, elle ne va jamais dans l'autre sens. On ne dit donc pas que « le froid entre » : c'est la chaleur qui sort.",
+    "Quand deux matières de températures différentes se touchent, la chaude se refroidit et la froide se réchauffe, jusqu'à ce qu'elles aient la même température. Une tasse de thé posée sur la table finit à la température de la pièce. Si on mélange autant d'eau à 60 °C que d'eau à 20 °C, on obtient de l'eau à environ 40 °C : les températures ne s'additionnent pas.",
+    "Un isolant, comme la laine, le polystyrène ou l'air immobile, ralentit le passage de la chaleur, mais ne la crée pas et ne l'arrête pas complètement. Une écharpe autour d'un récipient d'eau chaude ne réchauffe pas l'eau : elle la fait refroidir plus lentement."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un glaçon dans une limonade.",
+     "explication": "La chaleur passe de la limonade vers le glaçon : la limonade refroidit, le glaçon fond."
+    },
+    {
+     "cas": "Autant d'eau à 60 °C et d'eau à 20 °C.",
+     "explication": "Le mélange est à environ 40 °C, pas à 80 °C."
+    },
+    {
+     "cas": "Une écharpe autour d'un récipient d'eau chaude.",
+     "explication": "L'eau refroidit moins vite : 48,4 °C après une heure, contre 35,9 °C sans écharpe."
+    },
+    {
+     "cas": "Une cuillère en métal dans une soupe chaude.",
+     "explication": "La chaleur passe de la soupe vers la cuillère, qui devient chaude."
+    }
+   ],
+   "pieges": [
+    "Dire que « le froid passe » d'une matière à l'autre.",
+    "Additionner les températures quand on mélange deux liquides.",
+    "Croire qu'un pull ou une écharpe produit de la chaleur.",
+    "Croire que la chaleur peut passer d'elle-même du froid vers le chaud."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 5,
+     "questions": [
+      "5e"
+     ],
+     "libelle": "question 5e",
+     "texte": "L'eau entourée d'une écharpe en laine est encore à 48,4 °C après 60 minutes, contre 35,9 °C sans écharpe : l'écharpe a ralenti le refroidissement, elle n'a pas réchauffé l'eau."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-economie-chaleur",
