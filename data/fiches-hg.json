@@ -230,7 +230,7 @@
     },
     {
      "cas": "Un monument aux morts de la guerre 1914-1918.",
-     "explication": "Un monument, et aussi une trace du passé : il rappelle les victimes."
+     "explication": "Un monument, et aussi une trace du passé : il a été construit juste après la guerre, par les gens de l'époque, pour rappeler les victimes."
     },
     {
      "cas": "Un film tourné aujourd'hui sur les Romains.",
@@ -293,7 +293,7 @@
      "texte": "Une feuille imprimée « Appel au Peuple. Aux armes ! Braves Belges… » est un document écrit."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-provinces",
@@ -553,10 +553,10 @@
     "Le pays de Herve : prairies et haies (bocage)."
    ],
    "exemple": "Bastogne se trouve en Ardenne ; Waremme en Hesbaye.",
-   "astuce": "Du nord-ouest au sud-est, on monte : basse Belgique (Dunes, Polders, Flandre), moyenne Belgique (Hesbaye, Condroz), haute Belgique (Ardenne). Attention : la Famenne est un creux entre le Condroz et l'Ardenne.",
+   "astuce": "Du nord-ouest au sud-est, on monte : basse Belgique (Dunes, Polders, Flandre), moyenne Belgique (Hainaut, Brabant, Hesbaye), haute Belgique (Condroz, Famenne, Ardenne, Lorraine belge). Attention : la Famenne est un creux entre le Condroz et l'Ardenne.",
    "comprendre": [
     "La Belgique est découpée en régions naturelles : chacune a son relief, son sol, sa végétation et ses activités. Elles se succèdent du nord-ouest, bas et proche de la mer, au sud-est, plus haut.",
-    "Basse Belgique : les Dunes, les Polders (anciennes terres gagnées sur la mer), la Flandre sablonneuse, la Campine (sable, bruyères, pins). Moyenne Belgique : les régions limoneuses comme la Hesbaye, aux sols très fertiles (céréales, betteraves), et le Condroz. Haute Belgique : l'Ardenne, plateau élevé et boisé ; le point culminant du pays, le signal de Botrange (694 m), est dans les Hautes Fagnes. Tout au sud : la Lorraine belge.",
+    "Basse Belgique : les Dunes, les Polders (anciennes terres gagnées sur la mer), la Flandre sablonneuse, la Campine (sable, bruyères, pins). Moyenne Belgique : les bas plateaux limoneux du Hainaut, du Brabant et de la Hesbaye, aux sols très fertiles (céréales, betteraves). Haute Belgique, au sud du sillon Sambre-et-Meuse : le Condroz, la Famenne, l'Ardenne, plateau élevé et boisé, et tout au sud la Lorraine belge ; le point culminant du pays, le signal de Botrange (694 m), est dans les Hautes Fagnes.",
     "La Belgique n'a pas de montagne : même l'Ardenne est un plateau de collines et de vallées. Pour reconnaitre un milieu sur une photo, regarde le relief et la végétation."
    ],
    "exemplesExpliques": [
@@ -618,7 +618,7 @@
      "texte": "La piste de ski du Mont des Brumes est tracée dans une forêt : la Belgique n'a pas de montagne."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-europe",
@@ -629,7 +629,7 @@
     "En 2026, l'Union européenne compte 27 pays (le Royaume-Uni l'a quittée en 2020).",
     "6 pays fondateurs : Belgique, France, Allemagne, Italie, Pays-Bas, Luxembourg. Ils signent le traité de Rome en 1957 ; la Communauté économique européenne (CEE) commence le 1er janvier 1958.",
     "Bruxelles accueille de nombreuses institutions européennes.",
-    "La plupart des pays de l'UE utilisent l'euro (en Belgique depuis 2002, en Bulgarie depuis 2026), mais pas tous (Danemark, Suède, Pologne, Tchéquie, Hongrie, Roumanie)."
+    "21 des 27 pays de l'UE utilisent l'euro (en Belgique depuis 2002, en Bulgarie depuis 2026), mais pas tous (Danemark, Suède, Pologne, Tchéquie, Hongrie, Roumanie)."
    ],
    "exemple": "Varsovie est la capitale de la Pologne.",
    "astuce": "La Suisse et la Norvège sont en Europe, mais ne font pas partie de l'Union européenne.",
@@ -708,7 +708,7 @@
      "texte": "Un pays entré dans l'UE en 1995 : l'Autriche, la Suède ou la Finlande."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-continents",
@@ -743,7 +743,7 @@
     },
     {
      "cas": "Un planisphère de 1490 sans l'Amérique.",
-     "explication": "Normal : les Européens ne la connaissaient pas encore (Christophe Colomb y arrive en 1492)."
+     "explication": "Normal : les savants européens ne la connaissaient pas encore (Christophe Colomb y arrive en 1492)."
     }
    ],
    "pieges": [
@@ -798,7 +798,7 @@
      "texte": "L'Europe et l'Amérique sont séparées par un océan."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-climats",
@@ -812,8 +812,9 @@
     "Zones froides : toundra, milieu polaire (banquise) : froid toute l'année, même le mois le plus chaud reste sous 10 °C.",
     "Climatogramme : les barres bleues donnent les précipitations de chaque mois (en mm), la courbe rouge la température moyenne (en °C). Si les mois les plus chauds sont décembre, janvier et février, le lieu est dans l'hémisphère Sud."
    ],
-   "exemple": "Rennes, mousses et sol gelé → la toundra.",
-   "astuce": "Pense à la température ET aux pluies pour reconnaître un climat."
+   "exemple": "Des rennes, des mousses et un sol gelé → la toundra.",
+   "astuce": "Pense à la température ET aux pluies pour reconnaître un climat.",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-orientation",
@@ -824,7 +825,7 @@
     "4 points cardinaux : nord, est, sud, ouest. 4 intermédiaires : nord-est, sud-est, sud-ouest, nord-ouest.",
     "Un quart de tour = 2 crans sur la rose des vents à 8 directions ; un demi-tour = direction opposée.",
     "Sur une carte, le nord est en général en haut, l'est à droite.",
-    "Le soleil se lève à l'est et se couche à l'ouest ; à midi, en Belgique, il est au sud."
+    "Le soleil se lève à l'est et se couche à l'ouest ; vers le milieu de la journée, en Belgique, il est au sud."
    ],
    "exemple": "Tu regardes vers le nord et tu fais un quart de tour vers la droite : tu regardes vers l'est.",
    "astuce": "Retiens l'ordre dans le sens des aiguilles d'une montre : Nord, Est, Sud, Ouest (« N'Est-ce Sûrement pas Ouvert ? »).",
@@ -914,7 +915,7 @@
      "texte": "Dinant est au sud de Namur ; Namur est à l'est de Mons."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-echelle",
@@ -928,7 +929,7 @@
     "Plus le nombre sous le 1 est petit, plus la carte est détaillée."
    ],
    "exemple": "À 1/50 000, 4 cm = 200 000 cm = 2 km.",
-   "astuce": "Pour convertir des cm en km, enlève 5 zéros (100 000 cm = 1 km).",
+   "astuce": "Pour convertir des cm en km, divise par 100 000 (100 000 cm = 1 km ; 250 000 cm = 2,5 km).",
    "comprendre": [
     "Une carte représente un territoire en beaucoup plus petit. L'échelle indique combien de fois. À 1/25 000, 1 cm sur la carte représente 25 000 cm sur le terrain, soit 250 m. À 1/100 000, 1 cm représente 1 km.",
     "Pour trouver une distance réelle : mesure à la latte sur la carte, multiplie par le nombre de l'échelle, puis convertis (100 000 cm = 1 km). Avec une échelle graphique (un petit trait gradué), reporte ce trait sur la distance à mesurer.",
@@ -971,7 +972,7 @@
      "texte": "Échelle 1/400 000 : entre Liège et Maastricht, 6,5 cm sur la carte, soit 26 km en ligne droite."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-secteurs",
@@ -1294,7 +1295,7 @@
    "comprendre": [
     "L'histoire est découpée en grandes périodes, séparées par des dates repères : la Préhistoire (jusqu'à l'invention de l'écriture, vers 3500 av. J.-C.), l'Antiquité (jusqu'en 476), le Moyen Âge (jusqu'en 1492), les Temps modernes (jusqu'en 1789) et l'Époque contemporaine.",
     "Dans nos régions, quelques moments clés marquent ces périodes : la conquête romaine et la période gallo-romaine (Antiquité) ; l'installation des Francs, Clovis et Charlemagne (début du Moyen Âge) ; les grandes explorations et les colonisations européennes, après le voyage de Christophe Colomb en 1492 (Temps modernes) ; les migrations de travailleurs vers la Belgique après 1945 (Époque contemporaine).",
-    "Pour situer un fait, place d'abord les dates repères sur une frise, puis glisse le fait dans sa période. Un moment clé explique souvent un grand changement : les colonisations, par exemple, ont fait connaitre le christianisme sur d'autres continents."
+    "Pour situer un fait, place d'abord les dates repères sur une frise, puis glisse le fait dans sa période. Un moment clé explique souvent un grand changement : les colonisations européennes, par exemple, ont largement diffusé le christianisme, surtout dans les Amériques et en Australie."
    ],
    "exemplesExpliques": [
     {
@@ -1411,7 +1412,7 @@
    "titre": "Les migrations vers la Belgique après 1945",
    "regle": [
     "Après la guerre, il faut reconstruire le pays et produire du charbon, mais les mines manquent d'ouvriers.",
-    "1946 : accord avec l'Italie (des mineurs contre du charbon). Puis l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). 1974 : arrêt officiel de l'immigration de travail.",
+    "1946 : accord avec l'Italie (des mineurs contre du charbon). Puis l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). 1974 : la Belgique arrête de recruter des travailleurs hors de la Communauté européenne (le regroupement familial continue).",
     "8 août 1956 : catastrophe du Bois du Cazier à Marcinelle (Charleroi) : 262 morts, dont 136 Italiens.",
     "Obstacles à l'intégration : langue, logement (baraquements), famille restée au pays, préjugés. Facilités : regroupement familial, associations (ex. ACLI), école, compatriotes, syndicats.",
     "Apports culturels : cuisine (pizza, couscous, döner kebab…), religions (islam, orthodoxie), langues, musique, fêtes."
@@ -1420,7 +1421,7 @@
    "astuce": "Retiens 46 – 56 – 64 – 74 : Italie, Bois du Cazier, Maroc et Turquie, arrêt.",
    "comprendre": [
     "Après la Seconde Guerre mondiale, la Belgique doit se reconstruire et produire beaucoup de charbon, mais il manque des ouvriers dans les mines. En 1946, elle signe un accord avec l'Italie : des travailleurs italiens viennent travailler dans les charbonnages belges.",
-    "D'autres accords suivent : l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). Le 8 aout 1956, la catastrophe du Bois du Cazier, à Marcinelle, près de Charleroi, fait 262 morts, dont 136 Italiens. En 1974, la Belgique arrête officiellement de faire venir des travailleurs étrangers.",
+    "D'autres accords suivent : l'Espagne (1956), la Grèce (1957), le Maroc et la Turquie (1964). Le 8 aout 1956, la catastrophe du Bois du Cazier, à Marcinelle, près de Charleroi, fait 262 morts, dont 136 Italiens. En 1974, la Belgique arrête officiellement de faire venir des travailleurs de pays hors de la Communauté européenne ; les familles peuvent encore rejoindre ceux qui sont déjà là.",
     "Les immigrés rencontrent des difficultés : la langue, le logement (souvent des baraquements), la famille restée au pays, les préjugés. Beaucoup s'installent avec leur famille, et leurs enfants et petits-enfants sont aujourd'hui belges. Pour étudier ce sujet, il faut choisir des documents qui parlent vraiment des immigrés en Belgique."
    ],
    "exemplesExpliques": [
@@ -1460,7 +1461,7 @@
      "texte": "Pour un travail sur l'immigration italienne en Belgique après 1945, seul le graphique des Italiens vivant en Belgique convient : les autres documents parlent d'ouvriers belges, de l'Italie seule ou de travailleurs marocains."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-colonisations",
@@ -1797,13 +1798,14 @@
    "e": "🏙️",
    "titre": "Le peuplement de la Belgique",
    "regle": [
-    "En 2024 : Belgique ≈ 11,8 millions d'habitants ; Région flamande ≈ 6,8 ; Région wallonne ≈ 3,7 ; Région de Bruxelles-Capitale ≈ 1,2 million.",
+    "Au 1er janvier 2026 : Belgique ≈ 11,9 millions d'habitants ; Région flamande ≈ 6,9 ; Région wallonne ≈ 3,7 ; Région de Bruxelles-Capitale ≈ 1,3 million.",
     "Espaces très peuplés : l'espace Bruxelles-Gand-Anvers-Louvain et le sillon Sambre-et-Meuse (Charleroi, Namur, Liège).",
     "Espaces peu peuplés : l'Ardenne, la Famenne, les Hautes Fagnes.",
     "Densité = habitants : km². La province d'Anvers est la plus peuplée ; celle de Luxembourg la moins peuplée et la moins dense."
    ],
-   "exemple": "Bruxelles-Capitale : environ 1,2 million d'habitants sur 162 km², soit plus de 7 000 habitants par km².",
-   "astuce": "Une grande population ne veut pas dire une forte densité : compare toujours avec la superficie."
+   "exemple": "Bruxelles-Capitale : environ 1,26 million d'habitants sur 162 km², soit plus de 7 700 habitants par km².",
+   "astuce": "Une grande population ne veut pas dire une forte densité : compare toujours avec la superficie.",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-eau-relief",
@@ -1817,7 +1819,7 @@
     "Une vallée est un creux allongé creusé par un cours d'eau ; ses pentes sont les versants. L'altitude se mesure à partir du niveau de la mer."
    ],
    "exemple": "La Sambre est un affluent de la Meuse ; Namur est au confluent des deux.",
-   "astuce": "Basse Belgique = plaine (Flandre) ; haute Belgique = plateau (Ardenne). Le point le plus haut : Botrange, 694 m.",
+   "astuce": "Basse Belgique = plaine (Flandre) ; moyenne Belgique = bas plateaux (Hesbaye) ; haute Belgique = plateaux plus élevés (Condroz, Ardenne). Le point le plus haut : Botrange, 694 m.",
    "comprendre": [
     "Le relief, c'est la forme du terrain. Une plaine est une surface plane et peu élevée. Un plateau est une surface assez plane, plus élevée, entaillée par des vallées. Une montagne a une altitude élevée et des pentes fortes. La Belgique a des plaines au nord-ouest et des plateaux au sud-est, mais pas de montagne.",
     "Une vallée est un creux allongé creusé par un cours d'eau. Sa forme dépend du relief : dans une plaine, elle est large et à peine creusée ; dans un plateau, elle peut être profonde, avec des versants raides ; en montagne, les pentes sont très fortes.",
@@ -1860,7 +1862,7 @@
      "texte": "Relier chaque photo de vallée à son profil : des pentes très raides en montagne, une vallée à peine creusée dans un terrain presque plat, et une vallée plus profondément creusée."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "hg-vues-aeriennes",

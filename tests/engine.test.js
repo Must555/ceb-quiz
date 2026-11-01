@@ -2,8 +2,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import { evaluate } from '../js/engine/expr.js';
-import { chargerDonnees, QuizSession, genererVariante, corriger, createRng, parseNombre, formatNombre } from '../js/engine/index.js';
+import { chargerDonnees, QuizSession, genererVariante, corriger, createRng, parseNombre, formatNombre, bonneReponseLisible } from '../js/engine/index.js';
 import { conjuguer } from '../js/engine/generateurs/conjugaison.js';
 import { periodeDe, siecleDe } from '../js/engine/generateurs/histoire.js';
 
@@ -201,6 +202,15 @@ test('correction : cas particuliers', () => {
   assert.equal(corriger(deux, ['acrobatie', 'jonglerie']).correct, true);
   assert.deepEqual([corriger(deux, ['acrobatie', "l'acrobatie"]).correct, corriger(deux, ['acrobatie', 'acrobaties']).score], [false, 0.5]);
   assert.match(corriger(deux, ['Acrobatie', 'acrobatie']).remarque, /différentes/);
+  // « Différentes » par groupe (CEB 2018, L3 Q7a) : deux numéros différents par ligne, mais le
+  // même numéro peut servir sur deux lignes (la figure 1 est irrégulière ET quadrilatère).
+  const q7a = JSON.parse(readFileSync(new URL('../data/examens/ceb-2018.json', import.meta.url), 'utf8')).questions.find((q) => q.livret === 3 && q.numero === '7a');
+  assert.equal(corriger(q7a, ['1', '2', '1', '7', '2', '3']).score, 3);
+  assert.deepEqual([corriger(q7a, ['1', '1', '1', '7', '2', '3']).score, corriger(q7a, ['1', '1', '1', '7', '2', '3']).correct], [2, false]);
+  // La réponse affichée suit le correctif quand la donnée code une plage (CEB 2023, L6 Q15).
+  const abatJour = JSON.parse(readFileSync(new URL('../data/examens/ceb-2023.json', import.meta.url), 'utf8')).questions.find((q) => q.livret === 6 && q.numero === '15');
+  assert.match(bonneReponseLisible(abatJour), /^157 cm/);
+  assert.equal(corriger(abatJour, '158').correct, true);
   // Le corrigé officiel admet parfois plusieurs bonnes cases sur une ligne (ex. extincteurs, CEB 2026).
   const grilleMulti = { type: 'grille', reponse: [3, [1, 2, 3, 4], [0, 1, 2, 3]], points: 3 };
   assert.equal(corriger(grilleMulti, [3, 4, 0]).score, 3);

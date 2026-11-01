@@ -1482,7 +1482,8 @@
     "trapèze scalène",
     "un trapèze scalène"
    ],
-   "explication": "Ses deux côtés verticaux sont sur les deux droites parallèles : il a une paire de côtés parallèles, c'est un trapèze. Les petits coins carrés montrent deux angles droits : c'est un trapèze rectangle. On accepte aussi « trapèze scalène », car ses côtés non parallèles n'ont pas la même longueur."
+   "explication": "Ses deux côtés verticaux sont sur les deux droites parallèles : il a une paire de côtés parallèles, c'est un trapèze. Les petits coins carrés montrent deux angles droits : c'est un trapèze rectangle. On accepte aussi « trapèze scalène », car ses côtés non parallèles n'ont pas la même longueur.",
+   "reponseAffichee": "trapèze rectangle (« trapèze scalène » est accepté aussi)"
   },
   {
    "id": "ceb-2021-l3-q5",
@@ -5746,7 +5747,8 @@
     "belette",
     "la belette"
    ],
-   "explication": "Le cerf et la biche sont des mammifères. Parmi les animaux des forêts du portfolio, les autres mammifères (avec des poils, qui allaitent leurs petits) sont le sanglier, le renard, le loir gris et la belette. Le pic épeiche est un oiseau, l'orvet un reptile et l'épeire une araignée."
+   "explication": "Le cerf et la biche sont des mammifères. Parmi les animaux des forêts du portfolio, les autres mammifères (avec des poils, qui allaitent leurs petits) sont le sanglier, le renard, le loir gris et la belette. Le pic épeiche est un oiseau, l'orvet un reptile et l'épeire une araignée.",
+   "reponseAffichee": "Un mammifère au choix : sanglier, renard, loir gris ou belette"
   },
   {
    "id": "ceb-2021-l9-q3d",

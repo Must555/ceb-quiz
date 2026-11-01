@@ -1973,7 +1973,8 @@
    "unite": "cm²",
    "reponse": 20.35,
    "tolerance": 0.0501,
-   "explication": "Aire du rectangle : 8 × 5 = 40 cm². Le disque touche les deux longueurs : son diamètre vaut 5 cm, donc son rayon 2,5 cm. Aire du disque : 2,5 × 2,5 × 3,14 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm², soit environ 20,4 cm²."
+   "explication": "Aire du rectangle : 8 × 5 = 40 cm². Le disque touche les deux longueurs : son diamètre vaut 5 cm, donc son rayon 2,5 cm. Aire du disque : 2,5 × 2,5 × 3,14 = 19,625 cm². Surface hachurée : 40 − 19,625 = 20,375 cm², soit environ 20,4 cm².",
+   "reponseAffichee": "20,375 cm² (toute réponse de 20,3 à 20,4 cm² est acceptée)"
   },
   {
    "id": "ceb-2025-l4-q15",

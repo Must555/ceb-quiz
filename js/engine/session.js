@@ -303,6 +303,8 @@ export function uniteAccordee(n, unite) {
 }
 
 export function bonneReponseLisible(q) {
+  // reponseAffichee : texte du correctif quand la donnée code une plage ou des réponses au choix.
+  if (q.reponseAffichee) return q.reponseAffichee;
   switch (q.type) {
     case 'qcm': return [].concat(q.reponse).map((i) => q.choix[i]).join(' ou ');
     case 'qcm_multi': return q.reponse.map((i) => q.choix[i]).join(' ; ');

@@ -7,7 +7,7 @@
    "titre": "Les fonctions dans la phrase",
    "regle": [
     "Sujet : il commande l'accord du verbe ; on l'encadre par « c'est … qui ».",
-    "Complément du verbe : on ne peut pas le déplacer. Direct (sans préposition : il mange une pomme) ou indirect (avec préposition : il parle à Léa).",
+    "Complément du verbe : en général, on ne peut pas le déplacer. Direct (sans préposition : il mange une pomme) ou indirect (avec préposition : il parle à Léa).",
     "Complément de phrase : on peut le déplacer et le supprimer (où ? quand ? comment ?).",
     "Attribut du sujet : après être, sembler, devenir, paraître, rester (Léa est contente)."
    ],
@@ -15,7 +15,7 @@
    "astuce": "Essaie de déplacer le groupe : s'il bouge sans problème, c'est un complément de phrase.",
    "comprendre": [
     "Dans une phrase, chaque groupe de mots a une fonction. Le sujet commande l'accord du verbe : on le trouve en l'encadrant par « c'est… qui » ou en posant la question « qui est-ce qui ? ». Il peut être placé après le verbe : « Dans la presse sont nées les aventures de Tintin. »",
-    "Le complément du verbe ne peut ni être supprimé ni être déplacé. Il est direct s'il suit le verbe sans préposition (« Elle regarde les photos ») et indirect s'il est introduit par une préposition (« Il parle à Léa »). L'attribut du sujet suit un verbe d'état (être, sembler, devenir, paraitre, rester) et dit comment est le sujet (« Tu es une égoïste »).",
+    "Le complément du verbe ne peut généralement pas être déplacé, et souvent pas supprimé : « Léa mange une pomme » peut devenir « Léa mange », mais « Elle met son manteau » ne peut pas devenir « Elle met ». Il est direct s'il suit le verbe sans préposition (« Elle regarde les photos ») et indirect s'il est introduit par une préposition (« Il parle à Léa »). L'attribut du sujet suit un verbe d'état (être, sembler, devenir, paraitre, rester) et dit comment est le sujet (« Tu es une égoïste »).",
     "Le complément de phrase (où ? quand ? comment ? pourquoi ?) peut être déplacé et supprimé. Pour comparer la structure de deux phrases, découpe chacune en groupes et nomme leur fonction : sujet + verbe + complément direct, par exemple."
    ],
    "exemplesExpliques": [
@@ -106,7 +106,7 @@
    "astuce": "Regarde le signe de fin, puis cherche une négation.",
    "comprendre": [
     "Chaque phrase a un type, selon ce qu'elle veut faire. La phrase déclarative informe et finit par un point. La phrase interrogative pose une question et finit par un point d'interrogation. La phrase exclamative exprime un sentiment fort et finit par un point d'exclamation. La phrase impérative donne un ordre ou un conseil, sans sujet exprimé.",
-    "Chaque phrase a aussi une forme : affirmative ou négative. La forme négative se reconnait à deux petits mots autour du verbe : ne… pas, ne… jamais, ne… plus, ne… rien, ne… personne.",
+    "Chaque phrase a aussi une forme : affirmative ou négative. La forme négative se reconnait le plus souvent à deux petits mots autour du verbe : ne… pas, ne… jamais, ne… plus, ne… rien, ne… personne. Elle peut aussi commencer par « personne ne… » ou « rien ne… ».",
     "Pour analyser une phrase, regarde d'abord le signe de fin, puis cherche un verbe sans sujet (impératif), enfin cherche une négation. Une phrase impérative peut finir par un point d'exclamation sans être exclamative."
    ],
    "exemplesExpliques": [
@@ -131,7 +131,8 @@
     "Classer toute phrase qui finit par « ! » comme exclamative.",
     "Oublier la forme (affirmative ou négative) quand on la demande aussi.",
     "Ne pas voir le « ne » qui s'élide : « Il n'a rien vu » est négative.",
-    "Prendre « il n'y a que… » pour une vraie négation : la phrase veut dire « seulement »."
+    "Prendre « il n'y a que… » pour une vraie négation : la phrase veut dire « seulement ».",
+    "Chercher une case « exclamatif » qui n'existe pas : au CEB 2015, le tableau ne proposait que trois types (déclaratif, interrogatif, impératif)."
    ],
    "auCEB": [
     {
@@ -146,7 +147,7 @@
      "texte": "Pour chaque phrase, le type et la forme : une phrase qui donne un ordre avec « regarde » et finit par « ! » est impérative affirmative."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-ponctuation",
@@ -264,17 +265,17 @@
    "titre": "Le pluriel des noms et des adjectifs",
    "regle": [
     "En général : + s.",
-    "-eau, -au, -eu → + x (sauf landau, pneu, bleu).",
+    "-eau, -au, -eu → + x (sauf landau, sarrau, pneu, bleu, émeu).",
     "-al → -aux (sauf bal, carnaval, festival, chacal, récital, régal).",
     "-ou → + s, sauf bijou, caillou, chou, genou, hibou, joujou, pou (+ x).",
-    "-ail → + s, sauf travail, vitrail, corail, émail (-aux).",
+    "-ail → + s, sauf sept mots en -aux : bail, corail, émail, soupirail, travail, vantail, vitrail.",
     "-s, -x, -z : pas de changement."
    ],
    "exemple": "un cheval → des chevaux ; un clou → des clous ; un bijou → des bijoux.",
    "astuce": "Apprends par cœur la liste des 7 mots en -ou : bijou, caillou, chou, genou, hibou, joujou, pou.",
    "comprendre": [
     "La plupart des noms et des adjectifs prennent un s au pluriel : un chien, des chiens ; un grand arbre, de grands arbres. Le s ne s'entend pas : c'est le déterminant (les, des, mes, ces) qui annonce le pluriel.",
-    "Certaines terminaisons ont leur propre règle. -eau, -au, -eu prennent un x (des bateaux, des jeux), sauf landau, pneu et bleu. -al devient -aux (des chevaux), sauf bal, carnaval, chacal, festival, récital, régal. -ou prend un s, sauf sept mots qui prennent un x : bijou, caillou, chou, genou, hibou, joujou, pou. -ail prend un s, sauf travail, vitrail, corail, émail (-aux).",
+    "Certaines terminaisons ont leur propre règle. -eau, -au, -eu prennent un x (des bateaux, des jeux), sauf landau, sarrau, pneu, bleu et émeu. -al devient -aux (des chevaux), sauf bal, carnaval, chacal, festival, récital, régal. -ou prend un s, sauf sept mots qui prennent un x : bijou, caillou, chou, genou, hibou, joujou, pou. -ail prend un s, sauf sept mots qui font -aux : bail, corail, émail, soupirail, travail, vantail, vitrail.",
     "Les mots qui finissent déjà par s, x ou z ne changent pas : un nez, des nez ; une croix, des croix. Pour bien accorder, cherche toujours le nom, puis le déterminant qui dit s'il y en a un ou plusieurs."
    ],
    "exemplesExpliques": [
@@ -302,7 +303,7 @@
     "Ajouter un s à un mot qui finit déjà par s, x ou z."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais le pluriel compte dans toutes les productions écrites ; voir aussi la fiche « Pluriels et accords ».",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-feminin",
@@ -381,7 +382,7 @@
     },
     {
      "cas": "« une boite de crayons cassée »",
-     "explication": "C'est la boite qui est cassée : accord avec « boite »."
+     "explication": "Si c'est la boite qui est cassée, on accorde avec « boite » : cassée. Si ce sont les crayons, on écrit « cassés ». C'est le sens qui décide."
     }
    ],
    "pieges": [
@@ -391,7 +392,7 @@
     "Oublier les féminins particuliers (blanc → blanche, gentil → gentille)."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'accord de l'adjectif compte dans toutes les productions écrites ; les accords servent aussi d'indices en lecture (fiche « Pluriels et accords »).",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-accord-sujet-verbe",
@@ -401,14 +402,14 @@
    "regle": [
     "Le verbe s'accorde avec le noyau du sujet.",
     "Attention au sujet éloigné, au sujet placé après le verbe et au complément du nom.",
-    "« qui » a le nombre du nom qu'il reprend. Le, la, les, leur devant le verbe ne sont pas des sujets."
+    "« qui » a la personne et le nombre du mot qu'il reprend (c'est moi qui lis). Le, la, les, leur devant le verbe ne sont pas des sujets."
    ],
    "exemple": "Le chien des voisins aboie. Dans la mare vivent des grenouilles. Mon frère les aide.",
    "astuce": "Encadre le sujet par « c'est … qui » ou « ce sont … qui ».",
    "comprendre": [
     "Le verbe conjugué s'accorde avec le noyau de son sujet, en personne et en nombre : le chien aboie, les chiens aboient. Pour trouver le sujet, encadre-le par « c'est… qui » ou « ce sont… qui » : ce sont les chiens qui aboient.",
     "Attention aux pièges : le sujet peut être éloigné du verbe (« Les enfants de la classe de Léa chantent »), placé après lui (« Dans la mare vivent des grenouilles ») ou accompagné d'un complément du nom au singulier ou au pluriel. C'est toujours le noyau qui commande.",
-    "Les pronoms le, la, les, leur placés devant le verbe ne sont pas des sujets : « Mon frère les aide » (c'est mon frère qui aide). Le pronom qui a le nombre du nom qu'il reprend : « les élèves qui lisent »."
+    "Les pronoms le, la, les, leur placés devant le verbe ne sont pas des sujets : « Mon frère les aide » (c'est mon frère qui aide). Le pronom qui a la personne et le nombre du mot qu'il reprend : « les élèves qui lisent », « c'est moi qui lis »."
    ],
    "exemplesExpliques": [
     {
@@ -435,7 +436,7 @@
     "Oublier le -nt à la 3e personne du pluriel."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais l'accord du verbe compte dans toutes les productions écrites.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-participe-passe",
@@ -532,7 +533,7 @@
    "e": "🔀",
    "titre": "-é, -er, -ez ou -ait ?",
    "regle": [
-    "Après une préposition (à, de, pour, sans) ou un verbe conjugué : infinitif en -er.",
+    "Après une préposition (à, de, pour, sans) ou un autre verbe conjugué que avoir ou être : infinitif en -er.",
     "Après avoir ou être : participe passé en -é (+ accord éventuel).",
     "Avec vous : -ez. À l'imparfait : -ais (je, tu), -ait (il, elle, on)."
    ],
@@ -568,7 +569,7 @@
     "Confondre -ait (il) et -ais (je, tu)."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ce choix revient dans chaque production écrite.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-orthographe-lexicale",
@@ -690,7 +691,7 @@
     "Pour le trouver, dis « il faut… » devant le verbe."
    ],
    "exemple": "nous prendrons → prendre ; il voulut → vouloir ; elles iraient → aller.",
-   "astuce": "Astuce : « Il faut … » → il faut prendre, il faut aller.",
+   "astuce": "Dis « Il faut… » devant le verbe : il faut prendre, il faut aller.",
    "comprendre": [
     "L'infinitif est la forme du verbe qu'on trouve dans le dictionnaire, sans sujet et sans temps : manger, finir, prendre, vouloir. Il se termine par -er, -ir, -re ou -oir.",
     "Pour retrouver l'infinitif d'un verbe conjugué, mets « il faut » devant : « nous prendrons » → il faut prendre ; « il voulut » → il faut vouloir ; « elles iraient » → il faut aller.",
@@ -721,7 +722,7 @@
     "Oublier qu'après une préposition, le verbe est à l'infinitif (pour jouer)."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; l'infinitif est aussi interrogé dans la fiche « Les modes du verbe » (CEB 2026 : « remarquer »).",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-auxiliaires",
@@ -737,7 +738,7 @@
    "astuce": "Courir et marcher se conjuguent avec avoir : il a couru, il a marché.",
    "comprendre": [
     "Aux temps composés (passé composé, plus-que-parfait…), on utilise un auxiliaire : avoir ou être. La grande majorité des verbes se conjuguent avec avoir : j'ai mangé, il a couru, nous avons fini.",
-    "Quelques verbes, qui expriment surtout un déplacement ou un changement d'état, se conjuguent avec être : aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, naitre, mourir, devenir, revenir. Tous les verbes pronominaux aussi : se laver, s'amuser, se lever.",
+    "Quelques verbes, qui expriment surtout un déplacement ou un changement d'état, se conjuguent avec être : aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, naitre, mourir, devenir, revenir. Tous les verbes pronominaux aussi : se laver, s'amuser, se lever. Attention : entrer, sortir, monter et descendre prennent avoir quand ils ont un complément direct : il a sorti le chien, elle a monté l'escalier.",
     "Le choix compte pour l'accord : avec être, le participe passé s'accorde avec le sujet (elle est tombée) ; avec avoir, pas avec le sujet (elle a couru)."
    ],
    "exemplesExpliques": [
@@ -765,7 +766,7 @@
     "Accorder le participe avec le sujet quand l'auxiliaire est avoir."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; le choix de l'auxiliaire est aussi travaillé dans les fiches « Le passé composé » et « Accord du participe passé ».",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-synonymes",
@@ -1317,12 +1318,13 @@
    "regle": [
     "Cause : parce que, car, puisque.",
     "Conséquence : donc, alors, c'est pourquoi, par conséquent.",
-    "Opposition / concession : mais, pourtant, cependant, même si, bien que.",
+    "Opposition / concession : mais, pourtant, cependant, même si, bien que (suivi du subjonctif : bien qu'il pleuve).",
     "Temps : quand, puis, ensuite, avant de, pendant que, lorsque.",
     "Ajout : et, de plus, en plus. Conclusion : en conclusion, pour conclure, bref, en résumé."
    ],
    "exemple": "Il pleut, donc je prends mon parapluie. Je prends mon parapluie car il pleut.",
-   "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ? Concession = on s'attendait au contraire (pourtant, même si)."
+   "astuce": "Cause = pourquoi ? Conséquence = qu'est-ce que ça entraîne ? Concession = on s'attendait au contraire (pourtant, même si).",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-types-textes",
@@ -1339,7 +1341,7 @@
    "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte ; « pourquoi ? parce que » = texte explicatif.",
    "comprendre": [
     "Chaque texte a une intention : informer, persuader (convaincre), enjoindre (faire agir) ou donner du plaisir. Il a aussi une forme. Pour les documents écoutés ou lus au CEB, il faut souvent reconnaitre le genre : conte, récit, article, interview, témoignage, exposé, débat, recette, mode d'emploi.",
-    "Quelques indices : une interview (un entretien), c'est un journaliste qui pose des questions et une personne qui répond. Un témoignage, c'est une personne qui raconte elle-même, en « je », ce qu'elle a vécu. Un exposé explique un sujet, sans questions. Un débat fait parler plusieurs personnes d'avis différents. Un conte commence souvent par « Il était une fois » et contient du merveilleux.",
+    "Quelques indices : une interview (un entretien), c'est souvent un journaliste qui pose des questions et une personne qui répond. Un témoignage, c'est une personne qui raconte elle-même, en « je », ce qu'elle a vécu. Un exposé explique un sujet, sans questions. Un débat fait parler plusieurs personnes d'avis différents. Un conte commence souvent par « Il était une fois » et contient du merveilleux.",
     "On distingue aussi cinq structures : narrative (on raconte), descriptive (on décrit), explicative (comment ? pourquoi ?), argumentative (une idée et des arguments) et dialoguée (des personnes se parlent)."
    ],
    "exemplesExpliques": [
@@ -1453,7 +1455,7 @@
     },
     {
      "cas": "« Il claqua la porte sans dire au revoir. »",
-     "explication": "Il est fâché. Le mot « colère » n'est pas écrit : c'est le geste qui le montre."
+     "explication": "Il est sans doute fâché. Le mot « colère » n'est pas écrit : c'est le geste qui le montre."
     },
     {
      "cas": "Le narrateur dit « je » et sa sœur l'appelle par son prénom.",
@@ -1513,7 +1515,7 @@
      "texte": "Le podcast dit où se trouve le Centre européen des astronautes (à Cologne, en Allemagne), mais jamais combien de femmes ont été sélectionnées."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-temps-composes",
@@ -1610,7 +1612,7 @@
     "-cer, -ger : ç ou ge devant a et o (nous commençons, je mangeais)."
    ],
    "exemple": "Je jette, nous jetons. J'achète, nous achetons. Je nettoie, nous nettoyons.",
-   "astuce": "Le radical change seulement quand la syllabe suivante est muette : je, tu, il, ils au présent, et tout le futur.",
+   "astuce": "Appeler, jeter, acheter, nettoyer… changent devant une syllabe muette : je, tu, il, ils au présent, et tout le futur et le conditionnel. Les verbes en -cer et -ger, eux, changent devant a et o.",
    "comprendre": [
     "Certains verbes en -er changent un peu leur radical quand la syllabe suivante est muette, c'est-à-dire avec je, tu, il, ils au présent, et à toutes les personnes du futur et du conditionnel.",
     "Appeler et jeter doublent leur consonne : j'appelle, je jetterai, mais nous appelons. Acheter, lever, peser, mener prennent un accent grave : j'achète, je lèverai, mais nous achetons. Céder, répéter, espérer changent é en è au présent : je cède, mais nous cédons. Les verbes en -oyer et -uyer changent y en i : je nettoie, j'essuierai.",
@@ -1641,7 +1643,7 @@
     "Écrire « nous mangons » ou « nous commencons »."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces verbes très courants reviennent dans toutes les productions écrites.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-relire",
@@ -1872,7 +1874,7 @@
     "Si le complément direct est après le verbe, pas d'accord : j'ai acheté des pommes."
    ],
    "exemple": "La lettre que Léa a écrite est sur mon bureau. Léa a écrit une lettre.",
-   "astuce": "Avec avoir, pose la question « quoi ? » : si la réponse (que, l', les…) est avant le verbe, accorde.",
+   "astuce": "Avec avoir, pose la question « quoi ? » ou « qui ? » : si la réponse (que, l', les…) est avant le verbe, accorde.",
    "comprendre": [
     "Employé sans auxiliaire, le participe passé se comporte comme un adjectif : il s'accorde avec le nom qu'il accompagne. Des feuilles tombées, une porte fermée, des enfants fatigués.",
     "Avec l'auxiliaire avoir, il ne s'accorde jamais avec le sujet. Mais il s'accorde avec le complément direct (ce qu'on a fait, vu, acheté…) si celui-ci est placé avant le verbe : « les pommes que j'ai achetées », « ces fleurs, je les ai cueillies ». Si le complément est après le verbe, pas d'accord : « j'ai acheté des pommes ».",
@@ -1915,7 +1917,7 @@
      "texte": "« l'avait-il gentiment provoquée » : avec avoir, « provoquée » s'accorde avec « l' » placé avant, qui désigne une fille."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-determinants-pronoms",
@@ -1929,11 +1931,11 @@
     "Un même mot peut changer de classe : « leur maison » (déterminant), « je leur parle » (pronom)."
    ],
    "exemple": "Plusieurs élèves (déterminant indéfini) sont partis ; plusieurs (pronom indéfini) sont restés.",
-   "astuce": "Regarde ce qui suit : s'il y a un nom, c'est un déterminant ; sinon, c'est un pronom. Attention : « premier, deuxième… » ne sont pas des déterminants numéraux, ce sont des adjectifs (le premier jour).",
+   "astuce": "Regarde ce qui suit : s'il est suivi d'un nom, parfois après un adjectif (leurs belles maisons), c'est un déterminant ; sinon, c'est un pronom. Attention : « premier, deuxième… » ne sont pas des déterminants numéraux, ce sont des adjectifs (le premier jour).",
    "comprendre": [
     "Déterminants et pronoms sont souvent les mêmes petits mots : le, leur, plusieurs, aucun, deux… Ce qui décide, c'est leur travail dans la phrase. Le déterminant accompagne un nom : il le présente et en montre souvent le genre et le nombre (la maison, ces maisons). Le pronom prend la place d'un nom ou d'un groupe nominal, pour éviter une répétition, ou désigne directement une personne (je, tu, nous).",
     "Méthode en deux temps. 1) Regarde ce qui suit. Un nom, même avec un adjectif entre les deux (« leurs belles maisons ») : c'est un déterminant. Un verbe ou rien : c'est un pronom. 2) Pour la sous-classe, demande-toi ce que le mot exprime : à qui (possessif), lequel on montre (démonstratif), combien (numéral), une quantité vague (indéfini), une question ou une exclamation (interrogatif, exclamatif).",
-    "Un pronom remplace toujours quelque chose. Au CEB, on te demande souvent d'écrire ce qu'il remplace : relis la phrase d'avant, puis vérifie en mettant ta réponse à la place du pronom. La phrase doit garder son sens."
+    "Un pronom remplace le plus souvent un mot ou un groupe déjà cité (dans « il pleut », « il » ne remplace rien). Au CEB, on te demande souvent d'écrire ce qu'il remplace : relis la phrase d'avant, puis vérifie en mettant ta réponse à la place du pronom. La phrase doit garder son sens."
    ],
    "exemplesExpliques": [
     {
@@ -1996,7 +1998,7 @@
      "texte": "Dans « ce premier bulletin, tu me le montres ? », « le » remplace ce premier bulletin."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-narrateur",
@@ -2331,7 +2333,7 @@
    "exemple": "nous mangeons → mangeant ; nous commençons → commençant ; nous voyons → voyant.",
    "astuce": "Pense à « nous » : il garde le ç et le e (commençant, mangeant).",
    "comprendre": [
-    "Le participe présent est une forme du verbe qui se termine toujours par -ant : chantant, finissant, prenant. Il exprime une action qui se passe en même temps qu'une autre : « Les enfants, riant aux éclats, sortent de la classe. »",
+    "Le participe présent est une forme du verbe qui se termine toujours par -ant : chantant, finissant, prenant. Il exprime souvent une action qui se passe en même temps qu'une autre : « Les enfants, riant aux éclats, sortent de la classe. »",
     "Pour le former, on part du présent avec « nous » et on remplace -ons par -ant : nous finissons → finissant ; nous voyons → voyant. Le verbe garde le ç et le e qui servent à la prononciation : commençant, mangeant. Trois exceptions : étant (être), ayant (avoir), sachant (savoir).",
     "Il est invariable : il ne prend jamais de e ni de s. Précédé de « en », il forme le gérondif : « Il chante en marchant. »"
    ],
@@ -2360,7 +2362,7 @@
     "Confondre la terminaison -ant avec un nom en -ent (« un agent »)."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; reconnaitre un participe est travaillé dans la fiche « Les modes du verbe » (CEB 2026).",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-champ-lexical",
@@ -2459,7 +2461,7 @@
    "regle": [
     "Un mot composé est formé de plusieurs mots et désigne une seule chose.",
     "Il peut être soudé (portefeuille), avec un trait d'union (chou-fleur), avec un connecteur (pomme de terre) ou juxtaposé (carte postale).",
-    "Pluriel : nom + nom ou nom + adjectif → les deux varient (choux-fleurs, coffres-forts).",
+    "Pluriel : nom + adjectif, ou deux noms de même importance → les deux varient (choux-fleurs, coffres-forts) ; si le 2e nom complète le 1er, il ne varie pas (timbres-poste).",
     "Avec un connecteur, seul le premier nom varie (pommes de terre) ; après un mot invariable, seul le nom varie (sous-marins).",
     "Orthographe rectifiée : certains mots peuvent se souder (portemonnaie) ; les deux graphies sont acceptées."
    ],
@@ -2467,7 +2469,7 @@
    "astuce": "Demande-toi ce que chaque mot veut dire au pluriel : des choux et des fleurs, mais des timbres pour la poste.",
    "comprendre": [
     "Un mot composé est formé de plusieurs mots, mais il désigne une seule chose. Il peut être soudé (portefeuille), écrit avec un trait d'union (chou-fleur), avec un petit mot de liaison (pomme de terre) ou avec des mots séparés (carte postale).",
-    "Au pluriel, on se demande ce que chaque mot veut dire. Nom + nom ou nom + adjectif : les deux varient (des choux-fleurs, des coffres-forts). Avec un mot de liaison, seul le premier nom varie (des pommes de terre, des arcs-en-ciel). Après un mot invariable, seul le nom varie (des sous-marins).",
+    "Au pluriel, on se demande ce que chaque mot veut dire. Nom + adjectif, ou deux noms de même importance : les deux varient (des choux-fleurs, des coffres-forts). Avec un mot de liaison, seul le premier nom varie (des pommes de terre, des arcs-en-ciel). Après un mot invariable, seul le nom varie (des sous-marins).",
     "Parfois, le sens commande : des timbres-poste (des timbres pour la poste). L'orthographe rectifiée permet de souder certains mots (portemonnaie) : les deux écritures sont acceptées."
    ],
    "exemplesExpliques": [
@@ -2495,7 +2497,7 @@
     "Oublier de réfléchir au sens de chaque mot."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les mots composés reviennent souvent en orthographe.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-coherence-temps",
@@ -2572,7 +2574,7 @@
    "titre": "Le paratexte : autour du texte",
    "regle": [
     "Titre, sous-titre et intertitres annoncent le sujet et les parties.",
-    "Chapeau : court texte en gras sous le titre d'un article, qui résume l'essentiel.",
+    "Chapeau : court texte, souvent en gras, sous le titre d'un article ; il résume l'essentiel.",
     "Légende : texte qui explique une image. Encadré : information en plus, dans un cadre.",
     "Sommaire (au début) : les parties et leurs pages. Index (à la fin) : les mots importants, par ordre alphabétique.",
     "Note de bas de page : explication appelée par un astérisque (*) ou un chiffre."
@@ -2580,7 +2582,7 @@
    "exemple": "Pour trouver la page sur le hérisson dans un documentaire, cherche « hérisson » dans l'index.",
    "astuce": "Avant de lire, regarde le titre, les images et leurs légendes : ils t'aident à deviner le contenu.",
    "comprendre": [
-    "Le paratexte, c'est tout ce qui entoure le texte et aide à le comprendre avant même de le lire : le titre, les intertitres, le chapeau (le court texte en gras sous le titre d'un article), les images et leurs légendes, les encadrés, les pictogrammes, la source.",
+    "Le paratexte, c'est tout ce qui entoure le texte et aide à le comprendre avant même de le lire : le titre, les intertitres, le chapeau (le court texte, souvent en gras, sous le titre d'un article), les images et leurs légendes, les encadrés, les pictogrammes, la source.",
     "Pour un livre, la couverture donne le titre, l'auteur et souvent le genre : un recueil d'histoires, un roman, un documentaire. Le sommaire (au début) donne les parties et leurs pages ; l'index (à la fin) donne les mots importants par ordre alphabétique.",
     "Avant de lire, regarde le paratexte : il annonce le sujet, le type de texte et où trouver une information. Pour répondre à « dans quel livre trouverais-tu… ? », demande-toi si tu cherches une histoire inventée ou des informations vraies."
    ],
@@ -2632,7 +2634,7 @@
      "texte": "L'histoire « Le Génie de la Machine à Écrire » se trouve dans le recueil « Histoires enchantées », pas dans le documentaire sur la machine à écrire."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-sources",

@@ -91,7 +91,7 @@ function reponseCorrige(q) {
   if (q.type === 'trous') return `<p>${q.reponse.map((r, i) => `(${i + 1}) <b>${esc([].concat(r)[0])}</b>`).join(' · ')}</p>`;
   if (q.type === 'ordre') return `<p>${q.reponse.map((i, k) => `${k + 1}. ${esc(q.elements[i])}`).join('<br>')}</p>`;
   if (q.type === 'ouverte') return `<p><i>Réponse modèle :</i> ${esc(q.reponseModele ?? '')}</p>`;
-  const autres = q.type === 'texte_court' && [].concat(q.reponse).length > 1 ? ` <span class="mute">(aussi accepté : ${[].concat(q.reponse).slice(1, 4).map(esc).join(', ')})</span>` : '';
+  const autres = !q.reponseAffichee && q.type === 'texte_court' && [].concat(q.reponse).length > 1 ? ` <span class="mute">(aussi accepté : ${[].concat(q.reponse).slice(1, 4).map(esc).join(', ')})</span>` : '';
   return `<p class="pre"><b>${esc(bonneReponseLisible(q))}</b>${autres}</p>`;
 }
 

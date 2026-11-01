@@ -3210,7 +3210,8 @@
     "fort de Hollogne",
     "fort de Flémalle"
    ],
-   "explication": "La rive gauche est celle qu'on a à sa gauche quand on regarde dans le sens où coule le fleuve. Ici, la Meuse vient du sud-ouest (Flémalle) et part vers le nord : la rive gauche est le côté ouest et nord-ouest de la carte. Les forts de ce côté sont Flémalle, Hollogne, Loncin, Lantin, Liers et Pontisse."
+   "explication": "La rive gauche est celle qu'on a à sa gauche quand on regarde dans le sens où coule le fleuve. Ici, la Meuse vient du sud-ouest (Flémalle) et part vers le nord : la rive gauche est le côté ouest et nord-ouest de la carte. Les forts de ce côté sont Flémalle, Hollogne, Loncin, Lantin, Liers et Pontisse.",
+   "reponseAffichee": "Un fort au choix : Flémalle, Hollogne, Loncin, Lantin, Liers ou Pontisse"
   },
   {
    "id": "ceb-2015-l6-q2",
@@ -7287,7 +7288,8 @@
     "trachée",
     "la trachée"
    ],
-   "explication": "Le paragraphe parle de la langue, du palais, des dents, des cordes vocales et du larynx, mais pas de l'épiglotte ni de la trachée."
+   "explication": "Le paragraphe parle de la langue, du palais, des dents, des cordes vocales et du larynx, mais pas de l'épiglotte ni de la trachée.",
+   "reponseAffichee": "l'épiglotte ou la trachée"
   },
   {
    "id": "ceb-2015-l9-q9",

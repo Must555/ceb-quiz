@@ -2098,7 +2098,8 @@
     "A partir du 19e siecle",
     "par la suite"
    ],
-   "explication": "Un organisateur textuel se place au début d'un paragraphe et aide à suivre l'ordre du texte, ici l'ordre du temps. Dans le cadre 3, les trois paragraphes commencent par « Au 18e siècle », « Par la suite » et « À partir du 19e siècle » : il suffit d'en recopier un."
+   "explication": "Un organisateur textuel se place au début d'un paragraphe et aide à suivre l'ordre du texte, ici l'ordre du temps. Dans le cadre 3, les trois paragraphes commencent par « Au 18e siècle », « Par la suite » et « À partir du 19e siècle » : il suffit d'en recopier un.",
+   "reponseAffichee": "Un au choix : « Au 18e siècle », « Par la suite » ou « À partir du 19e siècle »"
   },
   {
    "id": "ceb-2023-l4-q18",
@@ -3492,7 +3493,8 @@
    "tolerance": 0.5,
    "documents": [
     "liv6-p18"
-   ]
+   ],
+   "reponseAffichee": "157 cm (toute réponse de 157 à 158 cm est acceptée)"
   },
   {
    "id": "ceb-2023-l6-q20a",

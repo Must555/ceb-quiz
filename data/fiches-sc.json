@@ -11,7 +11,7 @@
     "Omnivore : mange à la fois des végétaux et des animaux."
    ],
    "exemple": "La vache est herbivore, le loup est carnivore, le sanglier est omnivore.",
-   "astuce": "Omni = « tout » : l'omnivore mange de tout.",
+   "astuce": "Omni = « tout » : l'omnivore mange des végétaux et des animaux.",
    "comprendre": [
     "Le régime alimentaire d'un animal, c'est ce qu'il mange. L'herbivore mange des végétaux (herbe, feuilles, graines, fruits). Le carnivore mange d'autres animaux (viande, poissons, insectes). L'omnivore mange les deux.",
     "Les dents donnent un indice. Les carnivores ont de longues canines pointues pour attraper et déchirer. Les herbivores ont de larges incisives pour couper l'herbe et des molaires plates pour broyer. Les omnivores ont des dents de chaque sorte, un peu comme les nôtres.",
@@ -65,7 +65,7 @@
      "texte": "Un crâne aux longues canines pointues est celui d'un carnivore ; un crâne aux dents de chaque sorte, comme les nôtres, celui d'un omnivore."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-reproduction",
@@ -74,7 +74,7 @@
    "titre": "Ovipare ou vivipare ?",
    "regle": [
     "Ovipare : la femelle pond des œufs ; le petit se développe dans l'œuf, hors du corps de la mère.",
-    "Vivipare : le petit se développe dans le ventre de sa mère et naît déjà formé.",
+    "Vivipare : le petit se développe dans le ventre de sa mère, sans œuf pondu, puis il nait.",
     "Tous les mammifères de chez nous sont vivipares ; tous les oiseaux sont ovipares."
    ],
    "exemple": "La poule est ovipare ; le chat est vivipare.",
@@ -143,7 +143,7 @@
      "texte": "Le cycle de la poule : accouplement, fécondation, ponte, incubation, éclosion, croissance. Le schéma qui place la ponte avant la fécondation est faux."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-hiver",
@@ -151,16 +151,16 @@
    "e": "❄️",
    "titre": "Passer l'hiver",
    "regle": [
-    "Hiberner : dormir profondément tout l'hiver, le cœur bat très lentement (hérisson, loir, chauve-souris).",
-    "S'engourdir (vie ralentie) : le corps prend la température de l'air, l'animal se cache et ne bouge plus (grenouille, crapaud, lézard, couleuvre, coccinelle).",
+    "Hiberner : passer l'hiver dans un sommeil très profond, le corps refroidi et le cœur très lent, avec de courts réveils (hérisson, loir, chauve-souris).",
+    "S'engourdir (vie ralentie) : le corps prend la température du milieu (air, eau, sol), l'animal se cache et ne bouge plus (grenouille, crapaud, lézard, couleuvre, coccinelle).",
     "Migrer : partir vers des pays plus chauds (hirondelle, cigogne, martinet).",
     "Rester actif : continuer à chercher sa nourriture (renard, cerf, écureuil, mésange)."
    ],
    "exemple": "L'hirondelle part en Afrique en automne, car il n'y a plus d'insectes volants chez nous en hiver.",
    "astuce": "L'écureuil n'hiberne pas : il reste actif et mange les réserves qu'il a cachées.",
    "comprendre": [
-    "En hiver, il fait froid et la nourriture est rare. Les animaux s'y adaptent de quatre façons. Certains hibernent : ils dorment profondément tout l'hiver, leur cœur bat très lentement et ils vivent sur leurs réserves de graisse (hérisson, loir, chauve-souris).",
-    "D'autres s'engourdissent : leur corps prend la température de l'air, ils se cachent et ne bougent presque plus (grenouille, crapaud, lézard, couleuvre, coccinelle). D'autres encore migrent vers des pays plus chauds, où ils trouvent à manger (hirondelle, cigogne, martinet).",
+    "En hiver, il fait froid et la nourriture est rare. Les animaux s'y adaptent de quatre façons. Certains hibernent : ils dorment très profondément pendant l'hiver, avec de courts réveils ; leur corps se refroidit, leur cœur bat très lentement et ils vivent sur leurs réserves de graisse (hérisson, loir, chauve-souris).",
+    "D'autres s'engourdissent : leur corps prend la température du milieu (air, eau, sol), ils se cachent et ne bougent presque plus (grenouille, crapaud, lézard, couleuvre, coccinelle). D'autres encore migrent vers des pays plus chauds, où ils trouvent à manger (hirondelle, cigogne, martinet).",
     "Enfin, beaucoup restent actifs : ils cherchent leur nourriture tout l'hiver, changent parfois de pelage ou de plumage, ou mangent les réserves qu'ils ont cachées (renard, cerf, écureuil, mésange)."
    ],
    "exemplesExpliques": [
@@ -174,7 +174,7 @@
     },
     {
      "cas": "La grenouille.",
-     "explication": "Elle s'engourdit dans la vase au fond de la mare."
+     "explication": "Elle s'engourdit, souvent dans la vase au fond de la mare."
     },
     {
      "cas": "L'écureuil.",
@@ -183,12 +183,12 @@
    ],
    "pieges": [
     "Croire que l'écureuil hiberne.",
-    "Confondre hiberner (dormir profondément, corps chaud ralenti) et s'engourdir (le corps prend la température de l'air).",
+    "Confondre hiberner (un mammifère qui dort très profondément, avec de courts réveils) et s'engourdir (le corps prend la température du milieu).",
     "Croire que les oiseaux migrent tous : la mésange reste chez nous.",
     "Réveiller un animal qui hiberne : il dépense alors ses réserves."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais elle aide à comprendre comment les animaux s'adaptent à leur milieu.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-metamorphoses",
@@ -334,7 +334,7 @@
    "astuce": "Tous les êtres vivants dépendent les uns des autres.",
    "comprendre": [
     "Un écosystème, c'est un milieu (le sol, l'eau, la lumière, la température) et tous les êtres vivants qui y vivent : une mare, une forêt, une prairie. Chaque être vivant y est adapté et dépend des autres pour se nourrir, s'abriter ou se reproduire.",
-    "Les décomposeurs (vers de terre, cloportes, champignons, bactéries) se nourrissent des restes morts : feuilles tombées, bois mort, cadavres. Ils les transforment en matières minérales qui nourrissent à nouveau le sol et les plantes. Sans eux, les restes s'entasseraient.",
+    "Les décomposeurs (vers de terre, cloportes, champignons, bactéries) se nourrissent des restes morts : feuilles tombées, bois mort, cadavres. Les vers de terre et les cloportes découpent et mangent ces restes ; les champignons et les bactéries finissent de les transformer en matières minérales, qui nourrissent à nouveau le sol et les plantes. Sans eux, les restes s'entasseraient.",
     "Les champignons ne sont ni des plantes ni des animaux : ils n'ont pas de chlorophylle, se nourrissent de matière déjà fabriquée et se reproduisent par des spores. Les petits animaux du sol, comme le cloporte, préfèrent souvent les endroits humides, frais et sombres."
    ],
    "exemplesExpliques": [
@@ -374,7 +374,7 @@
      "texte": "La terre est humide partout et l'éclairage est le même ; seul un côté est au-dessus de glaçons et l'autre au-dessus d'eau chaude : l'expérience demande si les cloportes préfèrent le froid ou la chaleur."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-plantes",
@@ -406,7 +406,7 @@
     },
     {
      "cas": "Des tulipes dans un vase dont le niveau d'eau baisse.",
-     "explication": "La tige aspire l'eau, qui monte jusqu'aux feuilles et aux fleurs."
+     "explication": "L'eau monte dans la tige jusqu'aux feuilles et aux fleurs : la plante l'absorbe."
     },
     {
      "cas": "Le cycle du pommier.",
@@ -454,7 +454,7 @@
      "texte": "Pour comparer les expériences avec les tulipes, il faut le même endroit et la même quantité d'eau : on ne change qu'une chose à la fois."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-fleur",
@@ -534,14 +534,14 @@
    "titre": "Les dents",
    "regle": [
     "Incisives (plates, tranchantes) : couper. Canines (pointues) : déchirer. Prémolaires et molaires (larges) : broyer.",
-    "Dents de lait : 20. Dents définitives : 32 (8 incisives, 4 canines, 8 prémolaires, 12 molaires).",
+    "Dents de lait : 20. Dents définitives : 32 chez l'adulte (8 incisives, 4 canines, 8 prémolaires, 12 molaires, dont 4 dents de sagesse qui poussent tard, parfois jamais).",
     "Brosse-toi les dents au moins 2 fois par jour, pendant 2 minutes : les bactéries et le sucre provoquent les caries."
    ],
    "exemple": "Le loup a de longues canines ; la vache a de larges molaires pour broyer l'herbe.",
-   "astuce": "Couronne = partie visible ; racine = cachée dans la gencive.",
+   "astuce": "Couronne = partie visible ; racine = plantée dans l'os de la mâchoire, sous la gencive.",
    "comprendre": [
     "Nos dents n'ont pas toutes la même forme ni le même rôle. Les incisives, plates et tranchantes, coupent. Les canines, pointues, déchirent. Les prémolaires et les molaires, larges, broient les aliments.",
-    "L'enfant a 20 dents de lait, qui tombent vers 6 à 12 ans. L'adulte a 32 dents définitives : 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont les 4 dents de sagesse). La couronne est la partie visible ; la racine est cachée dans la gencive.",
+    "L'enfant a 20 dents de lait, qui tombent vers 6 à 12 ans. L'adulte a 32 dents définitives : 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont les 4 dents de sagesse, qui poussent vers 17 à 25 ans, parfois jamais). La couronne est la partie visible ; la racine est plantée dans l'os de la mâchoire, sous la gencive.",
     "Les bactéries de la bouche transforment le sucre en acide, qui attaque les dents : c'est la carie. Pour l'éviter, on se brosse les dents au moins deux fois par jour, pendant deux minutes, et on limite les sucreries. Les dents des animaux montrent aussi leur régime alimentaire."
    ],
    "exemplesExpliques": [
@@ -569,7 +569,7 @@
     "Croire que le sucre abime les dents tout seul : ce sont les bactéries qui le transforment en acide."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche ; les dents des animaux sont interrogées dans la fiche « Le régime alimentaire » (CEB 2024 : les crânes).",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-alimentation",
@@ -890,7 +890,7 @@
    "astuce": "Tous les métaux conduisent le courant, mais pas seulement eux : le graphite et l'eau salée aussi.",
    "comprendre": [
     "On choisit un matériau d'après ce qu'on attend de l'objet : laisser passer le courant ou l'arrêter, garder la chaleur ou le froid, laisser passer la lumière… Ce sont les propriétés du matériau.",
-    "Électricité. Tous les métaux laissent passer le courant : ce sont des conducteurs. Ils ne sont pas les seuls : le graphite (la mine du crayon) et l'eau salée conduisent aussi. Le plastique, le caoutchouc, le verre et le bois sec arrêtent le courant : ce sont des isolants. C'est pour cela qu'ils entourent les fils et forment les prises. L'eau du robinet et le corps humain conduisent le courant : jamais d'appareil électrique près de l'eau.",
+    "Électricité. Tous les métaux laissent passer le courant : ce sont des conducteurs. Ils ne sont pas les seuls : le graphite (la mine du crayon) et l'eau salée conduisent aussi. Le plastique, le caoutchouc, le verre et le bois sec arrêtent le courant : ce sont des isolants. C'est pour cela que le plastique et le caoutchouc entourent les fils et forment les prises. L'eau du robinet et le corps humain conduisent le courant : jamais d'appareil électrique près de l'eau.",
     "Chaleur. La chaleur passe toujours du plus chaud vers le plus froid. Un isolant thermique ralentit ce passage, dans les deux sens : il garde chaud ce qui est chaud et froid ce qui est froid. Les bons isolants emprisonnent beaucoup d'air immobile (laine, plumes, polystyrène, double vitrage). Un isolant ne produit pas de chaleur."
    ],
    "exemplesExpliques": [
@@ -955,7 +955,7 @@
      "texte": "On fabrique les isolateurs des pylônes en verre parce que le verre ne conduit pas le courant électrique."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-aimants",
@@ -1084,7 +1084,7 @@
    "comprendre": [
     "L'air est invisible, mais c'est bien de la matière : il occupe de la place, il a une masse et on peut le comprimer, comme dans une pompe à vélo. C'est un mélange de gaz : environ 78 % de diazote, 21 % de dioxygène et 1 % d'autres gaz, dont le dioxyde de carbone.",
     "Quand on chauffe de l'air, il se dilate : il prend plus de place. Quand il refroidit, il se contracte : il prend moins de place. C'est pour cela qu'une montgolfière gonflée d'air chaud s'élève, et qu'un ballon laissé au froid se dégonfle un peu.",
-    "Nous inspirons de l'air riche en dioxygène et rejetons de l'air plus riche en dioxyde de carbone. Les plantes, à la lumière, font l'inverse."
+    "Nous inspirons de l'air riche en dioxygène et rejetons de l'air plus riche en dioxyde de carbone. Les plantes, à la lumière, font surtout l'inverse : elles absorbent du dioxyde de carbone et rejettent du dioxygène. Elles respirent aussi, jour et nuit."
    ],
    "exemplesExpliques": [
     {
@@ -1123,7 +1123,7 @@
      "texte": "Remettre en ordre une expérience : on chauffe l'air de la bouteille avec de l'eau chaude, on la retourne sur l'assiette ; en refroidissant, l'air prend moins de place et l'eau colorée monte."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-transformations",
@@ -1148,7 +1148,7 @@
      "explication": "Énergie électrique → énergie thermique."
     },
     {
-     "cas": "Un panneau solaire.",
+     "cas": "Un panneau solaire photovoltaïque.",
      "explication": "Énergie lumineuse → énergie électrique."
     },
     {
@@ -1167,7 +1167,7 @@
     "Croire qu'une pile contient de l'électricité toute faite : elle contient de l'énergie chimique."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les transformations d'énergie aident à comprendre l'électricité et les sources d'énergie.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-electricite",
@@ -1387,8 +1387,8 @@
      "explication": "Le jour le plus long de l'année : c'est le solstice d'été."
     },
     {
-     "cas": "Quand il fait jour en Belgique, il fait nuit en Australie.",
-     "explication": "Elle est sur la face de la Terre qui n'est pas tournée vers le Soleil."
+     "cas": "Quand il est midi en Belgique, il fait nuit à Sydney, en Australie.",
+     "explication": "Cette ville est alors sur la face de la Terre qui n'est pas tournée vers le Soleil."
     },
     {
      "cas": "La pleine lune.",
@@ -1798,7 +1798,7 @@
    "titre": "Les attributs des animaux",
    "regle": [
     "Un attribut est un caractère que l'on peut observer chez un animal : squelette interne ou externe, 4 membres, poils, plumes, écailles, nageoires rayonnées…",
-    "Squelette externe et pattes articulées : insectes (6 pattes, des antennes), araignées et scorpions (8 pattes, pas d'antennes), crustacés (des antennes).",
+    "Squelette externe et pattes articulées : insectes (6 pattes, des antennes), araignées et scorpions (8 pattes, pas d'antennes), crustacés (2 paires d'antennes).",
     "Pied plat et tentacules : escargot et limace ; l'escargot a aussi une coquille. Corps mou en anneaux : ver de terre, sangsue.",
     "Les scientifiques classent les vivants d'après leurs attributs partagés : c'est la classification phylogénétique, qui montre les liens de parenté entre espèces."
    ],
@@ -1807,7 +1807,7 @@
    "comprendre": [
     "Un attribut est un caractère qu'on peut observer chez un animal : un squelette interne ou externe, des poils, des plumes, des écailles, des pattes articulées, une coquille, le nombre de doigts, la forme des dents ou du bec.",
     "Pour classer, les scientifiques regroupent les animaux qui partagent des attributs : ce que l'animal a, et non ce qu'il fait ou l'endroit où il vit. La chauve-souris vole, mais elle a des poils : elle est rangée avec les animaux à poils, pas avec les oiseaux.",
-    "Dans un arbre de classement, chaque embranchement pose une question sur un attribut (« a des plumes ? », « a un seul doigt ? »). On suit les branches pour placer chaque animal, et chaque groupe est inclus dans un plus grand."
+    "Dans une clé de détermination, chaque embranchement pose une question sur un attribut (« a des plumes ? », « a un seul doigt ? ») : on suit les branches pour trouver le groupe ou le nom d'un animal. Dans une classification, les groupes sont emboités : chaque groupe est inclus dans un plus grand."
    ],
    "exemplesExpliques": [
     {
@@ -1816,7 +1816,7 @@
     },
     {
      "cas": "La baleine.",
-     "explication": "Elle vit dans l'eau, mais elle a des poils (à la naissance) et allaite ses petits : elle est rangée avec les mammifères, pas avec les poissons."
+     "explication": "Elle vit dans l'eau, mais elle a des poils (à la naissance) et des mamelles : elle est rangée avec les mammifères, pas avec les poissons."
     },
     {
      "cas": "Le canard et le dindon.",
@@ -1846,7 +1846,7 @@
      "texte": "Dans l'arbre, l'âne va dans l'étiquette « 1 doigt », le chien dans « molaires sécantes » et le dindon parmi les animaux à plumes sans bec aplati."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-espece",
