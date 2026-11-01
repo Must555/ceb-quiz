@@ -117,6 +117,14 @@
    "fiche": "sc-espece",
    "difficulte": 2,
    "variantesMin": 40
+  },
+  {
+   "id": "sc-f-meteo",
+   "generateur": "sc_meteo",
+   "domaine": "sc.matiere",
+   "fiche": "sc-meteo",
+   "difficulte": 1,
+   "variantesMin": 40
   }
  ]
 }
