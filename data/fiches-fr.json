@@ -12,7 +12,83 @@
     "Attribut du sujet : après être, sembler, devenir, paraître, rester (Léa est contente)."
    ],
    "exemple": "Chaque matin (complément de phrase), Léa (sujet) prend (verbe) le bus (complément direct du verbe).",
-   "astuce": "Essaie de déplacer le groupe : s'il bouge sans problème, c'est un complément de phrase."
+   "astuce": "Essaie de déplacer le groupe : s'il bouge sans problème, c'est un complément de phrase.",
+   "comprendre": [
+    "Dans une phrase, chaque groupe de mots a une fonction. Le sujet commande l'accord du verbe : on le trouve en l'encadrant par « c'est… qui » ou en posant la question « qui est-ce qui ? ». Il peut être placé après le verbe : « Dans la presse sont nées les aventures de Tintin. »",
+    "Le complément du verbe ne peut ni être supprimé ni être déplacé. Il est direct s'il suit le verbe sans préposition (« Elle regarde les photos ») et indirect s'il est introduit par une préposition (« Il parle à Léa »). L'attribut du sujet suit un verbe d'état (être, sembler, devenir, paraitre, rester) et dit comment est le sujet (« Tu es une égoïste »).",
+    "Le complément de phrase (où ? quand ? comment ? pourquoi ?) peut être déplacé et supprimé. Pour comparer la structure de deux phrases, découpe chacune en groupes et nomme leur fonction : sujet + verbe + complément direct, par exemple."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Chaque matin, Léa prend le bus. »",
+     "explication": "« Chaque matin » : complément de phrase ; « Léa » : sujet ; « le bus » : complément direct du verbe."
+    },
+    {
+     "cas": "« Les butineuses ont le rôle le plus noble de la ruche. »",
+     "explication": "Sujet + verbe + complément direct, comme « Les ventileuses renouvèlent l'air intérieur »."
+    },
+    {
+     "cas": "« Chez nous, c'est dans la presse que sont nées les aventures de Tintin. »",
+     "explication": "Le sujet de « sont nées » est « les aventures de Tintin », placé après le verbe."
+    },
+    {
+     "cas": "« Tu es une égoïste. »",
+     "explication": "« une égoïste » est attribut du sujet, après le verbe être."
+    }
+   ],
+   "pieges": [
+    "Croire que le sujet est toujours le premier groupe de la phrase.",
+    "Confondre complément direct (après un verbe d'action) et attribut (après un verbe d'état).",
+    "Ne recopier qu'une partie du groupe sujet.",
+    "Déplacer un complément du verbe : la phrase n'a plus de sens."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 1,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Le sujet de « sont nées » est « les aventures de Tintin », placé après le verbe."
+    },
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 6,
+     "questions": [
+      "8"
+     ],
+     "libelle": "question 8",
+     "texte": "Les phrases construites comme « Les butineuses ont le rôle le plus noble » ont un sujet, un verbe et un complément direct."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 6,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Le groupe sujet complet est « Le passage de l'enfance vers l'adolescence »."
+    },
+    {
+     "examens": [
+      "ceb-2021"
+     ],
+     "livret": 7,
+     "questions": [
+      "21"
+     ],
+     "libelle": "question 21",
+     "texte": "« Elle regarde les photos » : sujet, verbe, complément direct ; « Tu es une égoïste » : sujet, verbe être, attribut."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-types-phrases",
@@ -944,7 +1020,62 @@
     "Le suffixe se place après : -ette/-on (petit), -eur/-iste (personne qui fait), -able (qui peut être), -ment (de telle manière), -ier (arbre fruitier), -erie (magasin)."
    ],
    "exemple": "re + lire = relire ; il + lisible = illisible ; em + bouteille = embouteiller ; pomme + ier = pommier.",
-   "astuce": "Enlève le préfixe ou le suffixe pour retrouver le mot de base."
+   "astuce": "Enlève le préfixe ou le suffixe pour retrouver le mot de base.",
+   "comprendre": [
+    "Beaucoup de mots sont construits à partir d'un mot de base auquel on ajoute un préfixe (au début) ou un suffixe (à la fin). Le préfixe change le sens : re- (de nouveau : relire), pré- (avant : prévoir), sous- (en dessous : sous-sol), in-, im-, il-, ir- (le contraire : injuste, impoli, illisible, irréel).",
+    "Le suffixe change souvent la classe du mot ou précise son sens : -ette, -on (petit : maisonnette, chaton), -eur, -iste (la personne qui fait : chanteur, dentiste), -able (qui peut être : lavable), -ment (adverbe : lentement), -ier (l'arbre : pommier).",
+    "Pour retrouver le mot de base, enlève le préfixe ou le suffixe : criminel → crime. Quand le préfixe finit par la consonne qui commence le mot de base, on écrit deux consonnes : immobile, illégal, irréel, emmener. Les unités de mesure utilisent aussi des préfixes : kilo- (× 1 000), hecto- (× 100), centi- (un centième), milli- (un millième)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "re + lire = relire ; il + lisible = illisible",
+     "explication": "Le préfixe change le sens : de nouveau, le contraire."
+    },
+    {
+     "cas": "criminel → crime ; digital → doigt",
+     "explication": "On retrouve le nom de base (« digital » vient du latin digitus, le doigt)."
+    },
+    {
+     "cas": "pomme → pommier",
+     "explication": "Le suffixe -ier désigne l'arbre."
+    },
+    {
+     "cas": "hectomètre, milligramme",
+     "explication": "Hecto = 100 : un hectomètre vaut 100 m. Milli = un millième : un milligramme vaut 0,001 g."
+    }
+   ],
+   "pieges": [
+    "Écrire « imobile » ou « ilégal » : il faut deux consonnes.",
+    "Croire que tout mot qui commence par « re » a un préfixe (« regarder » ne veut pas dire « garder de nouveau »).",
+    "Confondre préfixe (au début) et suffixe (à la fin).",
+    "Donner un mot de base qui n'a pas le même sens."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-so",
+      "ceb-2026-tc"
+     ],
+     "livret": 6,
+     "questions": [
+      "16"
+     ],
+     "libelle": "question 16",
+     "texte": "« criminel » est construit sur « crime » ; « digital » vient de « doigt »."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 4,
+     "questions": [
+      "24"
+     ],
+     "libelle": "question 24",
+     "texte": "Les préfixes des unités : un hectomètre vaut 100 m ; un milligramme, 0,001 g ; un centilitre, 10 ml."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-generique",
@@ -1205,7 +1336,83 @@
     "Cinq structures : narrative (on raconte), descriptive (on décrit), explicative (comment ? pourquoi ?), argumentative (une idée et des arguments), dialoguée (des personnes se parlent)."
    ],
    "exemple": "« Mélange la farine… » → recette → donner des consignes.",
-   "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte ; « pourquoi ? parce que » = texte explicatif."
+   "astuce": "Cherche les indices : impératif = consignes ; « Il était une fois » = conte ; « pourquoi ? parce que » = texte explicatif.",
+   "comprendre": [
+    "Chaque texte a une intention : informer, persuader (convaincre), enjoindre (faire agir) ou donner du plaisir. Il a aussi une forme. Pour les documents écoutés ou lus au CEB, il faut souvent reconnaitre le genre : conte, récit, article, interview, témoignage, exposé, débat, recette, mode d'emploi.",
+    "Quelques indices : une interview (un entretien), c'est un journaliste qui pose des questions et une personne qui répond. Un témoignage, c'est une personne qui raconte elle-même, en « je », ce qu'elle a vécu. Un exposé explique un sujet, sans questions. Un débat fait parler plusieurs personnes d'avis différents. Un conte commence souvent par « Il était une fois » et contient du merveilleux.",
+    "On distingue aussi cinq structures : narrative (on raconte), descriptive (on décrit), explicative (comment ? pourquoi ?), argumentative (une idée et des arguments) et dialoguée (des personnes se parlent)."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un journaliste pose des questions à Philippe Geluck, qui répond.",
+     "explication": "Une interview."
+    },
+    {
+     "cas": "Une scientifique raconte en « je » sa sélection pour devenir astronaute.",
+     "explication": "Un témoignage, pas une interview : personne ne lui pose de questions."
+    },
+    {
+     "cas": "Un conte poétique raconté pour le plaisir.",
+     "explication": "Il sert à se distraire, pas à s'informer."
+    },
+    {
+     "cas": "« Mélange la farine et les œufs. »",
+     "explication": "Une recette : elle donne des consignes."
+    }
+   ],
+   "pieges": [
+    "Confondre interview (questions et réponses) et témoignage (une personne raconte seule).",
+    "Confondre exposé (une personne explique) et débat (plusieurs avis).",
+    "Croire qu'un texte qui parle d'un sujet réel est forcément un documentaire.",
+    "Oublier de regarder qui parle et à qui."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 1,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Une personne pose des questions et Philippe Geluck y répond : c'est une interview."
+    },
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 1,
+     "questions": [
+      "11"
+     ],
+     "libelle": "question 11",
+     "texte": "Écouter ce conte poétique permet de se distraire."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 1,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Un journaliste pose des questions et une seule personne répond : une interview."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 1,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Florence Poutriquet raconte elle-même, en « je », ce qu'elle a vécu : un témoignage, pas une interview."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-reprises",
@@ -1323,7 +1530,72 @@
     "Passé antérieur : auxiliaire au passé simple + participe passé (quand il eut fini, il sortit) ; action terminée juste avant une autre, dans un récit."
    ],
    "exemple": "Quand tu auras fini tes devoirs, tu pourras jouer. Si j'avais su, je serais venue plus tôt.",
-   "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé."
+   "astuce": "Regarde le temps de l'auxiliaire : imparfait → plus-que-parfait, futur → futur antérieur, conditionnel → conditionnel passé.",
+   "comprendre": [
+    "Un temps composé est formé de deux mots : l'auxiliaire avoir ou être conjugué, puis le participe passé. Le temps de l'auxiliaire donne le nom du temps : auxiliaire au présent → passé composé (j'ai fini) ; à l'imparfait → plus-que-parfait (j'avais fini) ; au futur → futur antérieur (j'aurai fini) ; au conditionnel → conditionnel passé (j'aurais fini).",
+    "Les temps composés montrent souvent qu'une action a eu lieu avant une autre. Le plus-que-parfait raconte une action passée avant une autre action passée ; le futur antérieur, une action future terminée avant une autre. « Quand tu auras fini, tu pourras jouer » : d'abord finir, ensuite jouer.",
+    "Le futur proche se forme avec aller au présent et l'infinitif : je vais partir. « Venir de » + infinitif exprime un passé récent : il vient de partir. Sur une ligne du temps, place les actions dans l'ordre où elles se passent vraiment."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Je l'avais terminé vendredi soir. »",
+     "explication": "« avais » (imparfait) + « terminé » : plus-que-parfait."
+    },
+    {
+     "cas": "« Ce sera merveilleux quand tu m'auras apprivoisé. »",
+     "explication": "« auras apprivoisé » : futur antérieur. D'abord apprivoiser, ensuite ce sera merveilleux."
+    },
+    {
+     "cas": "« Il venait de lancer la pièce. »",
+     "explication": "Une action qui s'est passée juste avant une autre."
+    },
+    {
+     "cas": "« Nous allons partir. »",
+     "explication": "Futur proche : aller au présent + infinitif."
+    }
+   ],
+   "pieges": [
+    "Regarder le participe au lieu de l'auxiliaire pour trouver le temps.",
+    "Confondre passé composé (j'ai fini) et plus-que-parfait (j'avais fini).",
+    "Ranger les actions sur la ligne du temps dans l'ordre de la phrase plutôt que dans l'ordre des faits.",
+    "Oublier l'accord du participe avec l'auxiliaire être."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2015"
+     ],
+     "livret": 4,
+     "questions": [
+      "19"
+     ],
+     "libelle": "question 19",
+     "texte": "« quand tu m'auras apprivoisé » : le futur antérieur montre une action terminée avant une autre action future."
+    },
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 6,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "« venait de » montre une action qui s'est passée juste avant une autre : il faut la placer en premier sur la ligne du temps."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 9,
+     "questions": [
+      "25"
+     ],
+     "libelle": "question 25",
+     "texte": "« avais terminé » est au plus-que-parfait ; « étonnerait » au conditionnel présent."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-verbes-er-radical",
@@ -1429,7 +1701,50 @@
     "Épithète et complément du nom font partie du groupe nominal : on peut les supprimer."
    ],
    "exemple": "Le chat noir (épithète) de la voisine (complément du nom) semble fatigué (attribut).",
-   "astuce": "Y a-t-il un verbe entre le nom et l'adjectif ? Oui → attribut ; non → épithète."
+   "astuce": "Y a-t-il un verbe entre le nom et l'adjectif ? Oui → attribut ; non → épithète.",
+   "comprendre": [
+    "Dans un groupe nominal, le nom peut être précisé par un adjectif épithète, placé juste avant ou juste après lui, sans verbe : un chat noir, une jolie maison. L'épithète s'accorde avec le nom.",
+    "Il peut aussi être précisé par un complément du nom : un groupe introduit par une préposition (de, à, en, pour, sans…) : le vélo de Tom, une tarte aux pommes, un pull en laine. Épithète et complément du nom font partie du groupe nominal : on peut les supprimer.",
+    "L'attribut du sujet, lui, est relié au sujet par un verbe d'état (être, sembler, paraitre, devenir, rester) : « Le ciel est gris. » Il fait partie du prédicat et ne peut pas être supprimé. Le test : y a-t-il un verbe d'état entre le nom et l'adjectif ? Oui : attribut. Non : épithète."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Le chat noir de la voisine semble fatigué. »",
+     "explication": "« noir » : épithète ; « de la voisine » : complément du nom ; « fatigué » : attribut du sujet (après « semble »)."
+    },
+    {
+     "cas": "« une tarte aux pommes »",
+     "explication": "« aux pommes » : complément du nom."
+    },
+    {
+     "cas": "« La Belgique est un pays surréaliste. »",
+     "explication": "« un pays surréaliste » : attribut du sujet, après « est »."
+    },
+    {
+     "cas": "« une grande maison blanche »",
+     "explication": "Deux épithètes, l'une avant et l'autre après le nom."
+    }
+   ],
+   "pieges": [
+    "Appeler épithète un adjectif placé après « être » : c'est un attribut.",
+    "Croire qu'un complément du nom commence toujours par « de ».",
+    "Oublier d'accorder l'épithète avec le nom.",
+    "Prendre un complément du verbe pour un complément du nom."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2017"
+     ],
+     "livret": 1,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Les trois phrases qui contiennent un attribut du sujet ont un verbe d'état (être, paraitre, devenir) suivi de ce qu'on dit du sujet, comme « un pays surréaliste »."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-predicat",
@@ -1443,7 +1758,61 @@
     "Le complément de phrase (quand ? où ? pourquoi ?) peut être déplacé et supprimé."
    ],
    "exemple": "Chaque soir (complément de phrase), mon frère (sujet) lit une BD (prédicat).",
-   "astuce": "Supprime ce qui peut l'être : il reste le sujet et le prédicat."
+   "astuce": "Supprime ce qui peut l'être : il reste le sujet et le prédicat.",
+   "comprendre": [
+    "Une phrase simple se compose d'un groupe sujet et d'un groupe prédicat, et parfois d'un complément de phrase. Le sujet, c'est ce dont on parle : on le trouve avec « c'est… qui » ou « qu'est-ce qui ? ». Le prédicat, c'est ce qu'on dit du sujet : le verbe conjugué avec ses compléments, ou avec son attribut.",
+    "Le complément de phrase répond souvent à quand ? où ? pourquoi ? comment ? On peut le déplacer ou le supprimer sans que la phrase perde son sens. Le sujet et le prédicat, eux, ne peuvent ni être supprimés ni être déplacés librement.",
+    "Pour analyser une phrase : 1) cherche le verbe conjugué ; 2) trouve son sujet avec « c'est… qui » ; 3) essaie de supprimer et de déplacer les autres groupes. Ce qui peut bouger est un complément de phrase ; le reste, avec le verbe, forme le prédicat."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Chaque soir, mon frère lit une BD. »",
+     "explication": "« Chaque soir » : complément de phrase. « mon frère » : sujet. « lit une BD » : prédicat."
+    },
+    {
+     "cas": "« Le passage de l'enfance vers l'adolescence ne consiste pas uniquement en un changement physique. »",
+     "explication": "Le groupe sujet est tout le groupe « Le passage de l'enfance vers l'adolescence »."
+    },
+    {
+     "cas": "« Pour révéler les traces, on peut utiliser différents types de poudres. »",
+     "explication": "Complément de phrase + sujet + verbe + complément du verbe."
+    },
+    {
+     "cas": "« Le ciel est gris. »",
+     "explication": "« est gris » : prédicat, avec l'attribut « gris »."
+    }
+   ],
+   "pieges": [
+    "Ne recopier qu'un morceau du groupe sujet.",
+    "Prendre un complément du verbe pour un complément de phrase : il ne se déplace pas.",
+    "Croire que le sujet est toujours au début de la phrase.",
+    "Oublier que le prédicat contient le verbe et ses compléments, pas le verbe seul."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 6,
+     "questions": [
+      "15"
+     ],
+     "libelle": "question 15",
+     "texte": "Le groupe sujet est « Le passage de l'enfance vers l'adolescence » : il faut l'écrire en entier."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 6,
+     "questions": [
+      "14"
+     ],
+     "libelle": "question 14",
+     "texte": "Retrouver la phrase qui a la même structure : complément de phrase + sujet + verbe + complément du verbe."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-adverbes",
@@ -1734,7 +2103,84 @@
     "Fin : enfin, finalement, pour finir, depuis ce jour."
    ],
    "exemple": "D'abord, mélange la farine et les œufs. Ensuite, ajoute le lait. Enfin, fais cuire.",
-   "astuce": "Repère l'organisateur au début de chaque phrase, puis vérifie que l'histoire est logique."
+   "astuce": "Repère l'organisateur au début de chaque phrase, puis vérifie que l'histoire est logique.",
+   "comprendre": [
+    "Les organisateurs textuels sont des mots qui indiquent l'ordre des évènements ou des étapes. Pour commencer : d'abord, tout d'abord, il était une fois, un jour. Pour la suite : ensuite, puis, après, le lendemain, plus tard. Pour un évènement brusque : soudain, tout à coup. Pour finir : enfin, finalement, pour terminer.",
+    "Au CEB, on te demande souvent de remettre des moments d'un récit, d'une interview ou d'une recette dans l'ordre chronologique. Repère d'abord les organisateurs dans le texte : ils sont de précieux indices.",
+    "Attention : l'ordre du texte n'est pas toujours l'ordre des faits. Un personnage peut se souvenir d'un évènement passé au milieu de l'histoire. Range les évènements dans l'ordre où ils se sont vraiment passés, sauf si la consigne demande l'ordre d'apparition dans le texte."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Tout d'abord, je pars d'une idée. Ensuite, je réalise un prototype. Puis je le teste. »",
+     "explication": "Les mots de liaison donnent l'ordre des étapes."
+    },
+    {
+     "cas": "« D'abord, mélange la farine et les œufs. Ensuite, ajoute le lait. Enfin, fais cuire. »",
+     "explication": "Une recette : trois étapes dans l'ordre."
+    },
+    {
+     "cas": "« Soudain, la porte s'ouvrit. »",
+     "explication": "« Soudain » annonce un évènement brusque qui relance l'histoire."
+    },
+    {
+     "cas": "« Le chêne se souvint alors d'une vieille fable. »",
+     "explication": "Un souvenir : l'ordre du texte et l'ordre des faits peuvent être différents."
+    }
+   ],
+   "pieges": [
+    "Ranger les évènements au hasard sans chercher les organisateurs.",
+    "Confondre l'ordre chronologique et l'ordre d'apparition dans le texte : lis bien la consigne.",
+    "Oublier que la première étape est parfois donnée en exemple.",
+    "Écrire un texte sans organisateurs : le lecteur s'y perd."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2023"
+     ],
+     "livret": 1,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "Remettre quatre moments du conte dans l'ordre de leur apparition : la pluie complimente le chêne, le chêne se souvient de la fable, l'oiseau complimente la fleur, les grenouilles proclament leur reine."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 1,
+     "questions": [
+      "10"
+     ],
+     "libelle": "question 10",
+     "texte": "« Tout d'abord », « Ensuite », puis « Je le teste » : les mots de liaison donnent l'ordre des étapes de la création d'un jeu."
+    },
+    {
+     "examens": [
+      "ceb-2025"
+     ],
+     "livret": 1,
+     "questions": [
+      "5"
+     ],
+     "libelle": "question 5",
+     "texte": "Les étapes de la sélection d'une astronaute, dans l'ordre : le médecin, l'inscription, les épreuves techniques, l'évaluation psychologique, les tests médicaux."
+    },
+    {
+     "examens": [
+      "ceb-2026-so",
+      "ceb-2026-tc"
+     ],
+     "livret": 1,
+     "questions": [
+      "2"
+     ],
+     "libelle": "question 2",
+     "texte": "Remettre cinq idées du récit dans l'ordre chronologique, à partir de « Tom s'émerveille face à son petit aquarium »."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-consignes",
@@ -2063,7 +2509,61 @@
     "On ne mélange pas sans raison le présent ou le futur avec ces temps."
    ],
    "exemple": "Léa lisait un roman quand, tout à coup, le téléphone sonna.",
-   "astuce": "« Soudain », « tout à coup » annoncent souvent un passé simple."
+   "astuce": "« Soudain », « tout à coup » annoncent souvent un passé simple.",
+   "comprendre": [
+    "Un récit au passé utilise surtout deux temps. L'imparfait plante le décor, décrit les personnages ou raconte ce qui dure et se répète : « Il faisait nuit. Léa lisait. » Le passé simple raconte les actions principales, souvent soudaines, qui font avancer l'histoire : « Soudain, le téléphone sonna. »",
+    "Les deux temps se combinent souvent dans la même phrase : une action longue à l'imparfait est interrompue par une action brève au passé simple. Des mots comme « soudain », « tout à coup », « alors », « le lendemain » annoncent souvent un passé simple.",
+    "Pour qu'un texte soit cohérent, on ne change pas de temps sans raison : si le récit est au passé, on ne passe pas au présent au milieu d'une phrase. Les paroles des personnages, entre guillemets, peuvent être au présent : elles sont dites au moment où ils parlent."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "« Léa lisait un roman quand, tout à coup, le téléphone sonna. »",
+     "explication": "« lisait » : action qui dure (imparfait) ; « sonna » : action brève qui l'interrompt (passé simple)."
+    },
+    {
+     "cas": "« Le faon commença à marcher. La mère redoublait ses appels. »",
+     "explication": "« commença » fait avancer le récit ; « redoublait » décrit ce qui dure."
+    },
+    {
+     "cas": "« Le lendemain, la vieille se retrouva duchesse et recevait tous les honneurs. »",
+     "explication": "« se retrouva » : un évènement ; « recevait » : ce qui se répète ensuite."
+    },
+    {
+     "cas": "« Il ouvrit la porte et voit un dragon. »",
+     "explication": "Incohérent : il faut « vit », au passé simple comme « ouvrit »."
+    }
+   ],
+   "pieges": [
+    "Mélanger présent et passé simple dans le récit sans raison.",
+    "Mettre au passé simple une description qui dure (« il fit nuit depuis des heures »).",
+    "Confondre l'imparfait (il chantait) et le conditionnel (il chanterait).",
+    "Oublier que les paroles rapportées peuvent garder leur propre temps."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2018"
+     ],
+     "livret": 1,
+     "questions": [
+      "17"
+     ],
+     "libelle": "question 17",
+     "texte": "Dans le récit du faon, « commença », « jeta » et « avança » sont au passé simple ; « faisait » et « obligeait » à l'imparfait."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 8,
+     "questions": [
+      "12"
+     ],
+     "libelle": "question 12",
+     "texte": "« accéda » et « retrouva » sont au passé simple, le temps du récit ; « courraient » est au conditionnel présent, dans les paroles de la vieille."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "fr-paratexte",
@@ -2146,7 +2646,62 @@
     "Pour une information qui change (horaires, prix, météo), choisis le document le plus récent."
    ],
    "exemple": "Pour un exposé sur les volcans : le site d'un musée des sciences, plutôt qu'un forum anonyme.",
-   "astuce": "Pose-toi trois questions : Qui l'a écrit ? Quand ? Est-ce que ça répond à ma question ?"
+   "astuce": "Pose-toi trois questions : Qui l'a écrit ? Quand ? Est-ce que ça répond à ma question ?",
+   "comprendre": [
+    "Pour un exposé ou une recherche, toutes les sources ne se valent pas. Une source fiable indique qui l'a écrite (un auteur, un musée, un organisme) et quand ; elle est vérifiée. Une publicité, un message anonyme ou une vidéo pour rire ne sont pas des sources sûres.",
+    "Choisis aussi une source qui répond vraiment à ta question. Un document peut parler du même thème sans contenir l'information cherchée : une carte de l'Italie ne dit rien des Italiens qui vivent en Belgique.",
+    "Pour une information qui change (horaires, prix, chiffres de population), prends le document le plus récent. Sur internet, lis le titre d'un lien avant de cliquer : il dit vers quoi il mène."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un exposé sur les volcans.",
+     "explication": "Le site d'un musée des sciences plutôt qu'un forum anonyme."
+    },
+    {
+     "cas": "Un travail sur l'immigration italienne en Belgique.",
+     "explication": "Un graphique des Italiens vivant en Belgique convient ; une affiche pour des ouvriers belges, non."
+    },
+    {
+     "cas": "Les horaires de la piscine.",
+     "explication": "Le site de la piscine, à jour, plutôt qu'un vieux dépliant."
+    },
+    {
+     "cas": "Un article de magazine.",
+     "explication": "Repère l'auteur, le nom du magazine et la date de parution."
+    }
+   ],
+   "pieges": [
+    "Croire tout ce qui est écrit sur internet.",
+    "Choisir un document parce qu'il parle du même thème, sans vérifier qu'il répond à la question.",
+    "Oublier la date du document.",
+    "Confondre l'éditeur et le nom du magazine dans une source."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2026-tc"
+     ],
+     "livret": 5,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "Pour un travail sur l'immigration italienne en Belgique, seul le graphique des Italiens vivant en Belgique convient."
+    },
+    {
+     "examens": [
+      "ceb-2026-so",
+      "ceb-2026-tc"
+     ],
+     "livret": 6,
+     "questions": [
+      "1"
+     ],
+     "libelle": "question 1",
+     "texte": "La source de l'article : Annalisa Plaitano, magazine Cosinus, janvier 2023. Éditions Faton est l'éditeur."
+    }
+   ],
+   "miseAJour": "2026-11-01"
   }
  ]
 }
