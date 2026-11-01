@@ -1132,7 +1132,8 @@
     "C 7",
     "D 7"
    ],
-   "explication": "La première classe va de la rangée 1 à la rangée 7 : la dernière rangée est donc la 7. Les sièges côté couloir sont C et D ; ils sont libres tous les deux, donc 7C ou 7D convient."
+   "explication": "La première classe va de la rangée 1 à la rangée 7 : la dernière rangée est donc la 7. Les sièges côté couloir sont C et D ; ils sont libres tous les deux, donc 7C ou 7D convient.",
+   "reponseAffichee": "7C ou 7D"
   },
   {
    "id": "ceb-2024-l3-q2",

@@ -850,10 +850,11 @@
     "Un multiple de 6 est dans la table de 6 : 6, 12, 18, 24…",
     "Un diviseur de 24 divise 24 sans reste : 1, 2, 3, 4, 6, 8, 12, 24.",
     "Un nombre premier a exactement 2 diviseurs : 1 et lui-même (2, 3, 5, 7, 11, 13…). 1 n'est pas premier.",
-    "Plus petit multiple commun (PPCM) : quand deux choses se répètent et se retrouvent. Plus grand diviseur commun (PGCD) : pour faire des groupes identiques sans reste."
+    "PPCM (plus petit commun multiple) : le plus petit nombre qui est un multiple des deux (PPCM de 6 et 8 = 24) ; il sert quand deux choses se répètent et se retrouvent. PGCD (plus grand commun diviseur) : le plus grand nombre qui divise les deux sans reste (PGCD de 12 et 18 = 6) ; il sert à faire des groupes identiques."
    ],
    "exemple": "Multiples de 6 : 6, 12, 18, 24 ; multiples de 8 : 8, 16, 24. Le plus petit multiple commun est 24.",
-   "astuce": "Beaucoup de nombres impairs ne sont pas premiers : 9, 15, 21, 27, 49, 51, 91…"
+   "astuce": "Beaucoup de nombres impairs ne sont pas premiers : 9, 15, 21, 27, 49, 51, 91…",
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-divisibilite",
@@ -1419,8 +1420,8 @@
     "Pyramide à base carrée : 5 faces, 8 arêtes, 5 sommets. Prisme à base triangulaire : 5 faces, 9 arêtes, 6 sommets.",
     "Pavé droit : chaque face est parallèle (et isométrique) à la face opposée, et perpendiculaire aux 4 autres."
    ],
-   "exemple": "Un prisme dont la base a n côtés a n + 2 faces, 3 × n arêtes et 2 × n sommets.",
-   "astuce": "Une pyramide dont la base a n côtés a n + 1 faces, 2 × n arêtes et n + 1 sommets.",
+   "exemple": "Un prisme à base pentagonale a 7 faces (2 pentagones + 5 rectangles), 15 arêtes (5 + 5 + 5) et 10 sommets (5 + 5).",
+   "astuce": "Une pyramide à base hexagonale a 7 faces (la base + 6 triangles), 12 arêtes (6 + 6) et 7 sommets (6 + la pointe).",
    "comprendre": [
     "Un solide a trois dimensions : longueur, largeur, hauteur. Les polyèdres n'ont que des faces planes, qui sont des polygones. Le cylindre, le cône et la sphère ont une surface courbe : ils peuvent rouler, ce ne sont pas des polyèdres.",
     "Deux grandes familles de polyèdres. Le prisme a deux bases identiques et parallèles, reliées par des rectangles : le cube et le pavé sont des prismes. La pyramide a une seule base, et des triangles qui se rejoignent en un sommet, la pointe.",
@@ -1496,7 +1497,7 @@
      "texte": "Pour une pyramide à base carrée, il faut 8 bâtonnets (les arêtes), 5 boules (les sommets), 1 carré et 4 triangles (les faces)."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-symetrie",
@@ -1603,7 +1604,7 @@
    "exemple": "Deux angles mesurent 50° et 70° : le troisième mesure 180 − 50 − 70 = 60°.",
    "astuce": "Un triangle ne peut avoir qu'un seul angle droit ou obtus.",
    "comprendre": [
-    "On nomme un triangle d'après ses côtés et d'après ses angles. Côtés : équilatéral (3 côtés égaux), isocèle (2 côtés égaux), scalène (3 côtés différents). Angles : rectangle (un angle droit), acutangle (3 angles aigus), obtusangle (un angle obtus).",
+    "On nomme un triangle d'après ses côtés et d'après ses angles. Côtés : équilatéral (3 côtés égaux), isocèle (au moins 2 côtés égaux), scalène (3 côtés différents). Angles : rectangle (un angle droit), acutangle (3 angles aigus), obtusangle (un angle obtus).",
     "Le nom précis combine les deux : triangle isocèle acutangle, triangle rectangle scalène… Sur un dessin, les petits traits indiquent les côtés de même longueur et le petit carré marque l'angle droit. Au besoin, vérifie avec la latte et l'équerre.",
     "La somme des trois angles vaut toujours 180°. Un triangle ne peut donc avoir qu'un seul angle droit ou obtus. Dans un triangle équilatéral, chaque angle mesure 60°."
    ],
@@ -1621,7 +1622,7 @@
      "explication": "Ils forment un triangle équilatéral."
     },
     {
-     "cas": "Deux angles de 90° et 35°.",
+     "cas": "Un triangle dont deux angles mesurent 90° et 35°.",
      "explication": "Le troisième mesure 180 − 90 − 35 = 55°."
     }
    ],
@@ -1677,7 +1678,7 @@
      "texte": "Pour un triangle équilatéral, il faut les trois bâtonnets identiques (3, 5 et 6)."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-angles",
@@ -2045,7 +2046,7 @@
     }
    ],
    "pieges": [
-    "Placer les deux bases d'un prisme du même côté : elles doivent se trouver aux deux bouts.",
+    "Placer les deux bases d'un prisme du même côté de la bande des rectangles : il en faut une au-dessus et une en dessous.",
     "Compter les faces sans vérifier leur forme (4 rectangles au lieu de 3 pour un prisme à base triangulaire).",
     "Accepter un bloc de 2 × 2 carrés dans un développement de cube : il ne se referme jamais.",
     "Oublier que, pour un pavé, les faces opposées doivent être identiques."
@@ -2093,10 +2094,10 @@
       "21"
      ],
      "libelle": "question 21",
-     "texte": "Le prisme à base triangulaire a 3 rectangles et 2 triangles, un à chaque bout : le développement qui met les deux triangles du même côté ne convient pas."
+     "texte": "Le prisme à base triangulaire a 3 rectangles et 2 triangles, un de chaque côté de la bande des rectangles : le développement qui met les deux triangles du même côté ne convient pas."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-representations",
@@ -2241,7 +2242,7 @@
       "14"
      ],
      "libelle": "question 14",
-     "texte": "Le losange a ses diagonales comme axes de symétrie, le rectangle ses médianes, le carré les deux ; le trapèze n'a ni l'un ni l'autre."
+     "texte": "Le losange a ses diagonales comme axes de symétrie, le rectangle ses médianes, le carré les deux ; le trapèze (non isocèle) n'a ni l'un ni l'autre."
     }
    ],
    "miseAJour": "2026-11-01"
@@ -2857,8 +2858,8 @@
      "explication": "0 < 0,45 < 1."
     },
     {
-     "cas": "8,2 au centième",
-     "explication": "8,2 = 8,20 : il est déjà au centième, on peut écrire 8,19 < 8,2 < 8,21 si on veut un encadrement strict."
+     "cas": "5,064 au centième",
+     "explication": "5,06 < 5,064 < 5,07 : on coupe après les centièmes (5,06), puis on prend le centième suivant (5,07)."
     }
    ],
    "pieges": [
@@ -2868,7 +2869,7 @@
     "Oublier de vérifier que le nombre est bien entre les deux."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais encadrer sert à placer les décimaux sur une droite graduée et à comparer des nombres.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "ma-horaire",

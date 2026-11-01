@@ -92,14 +92,19 @@ export function corriger(question, reponseEleve) {
     case 'trous': {
       // reponse = [[formes acceptées case 1], [case 2], ...]
       // differentes : true → « écris-en deux » : une même réponse répétée ne compte qu'une fois.
-      const vues = new Set();
+      // differentes : 'groupe' → la règle vaut à l'intérieur de chaque groupe (une même réponse
+      // peut servir dans deux groupes, comme « 2 polygones irréguliers » puis « 2 quadrilatères »).
+      const vues = new Map();
+      const groupeDe = (i) => (question.differentes === 'groupe' ? (question.groupes ?? []).findIndex((g) => g.includes(i)) : 0);
       let repetee = false;
       const oks = question.reponse.map((acc, i) => {
         const ok = comparerTexte(reponseEleve[i] ?? '', [].concat(acc), question.souple !== false).ok;
         if (!ok || !question.differentes) return ok;
         const cle = normaliserTexte(reponseEleve[i]).replace(/^(le |la |les |l'|un |une |des )/, '').replace(/s$/, '');
-        if (vues.has(cle)) { repetee = true; return false; }
-        vues.add(cle);
+        const k = groupeDe(i);
+        if (!vues.has(k)) vues.set(k, new Set());
+        if (vues.get(k).has(cle)) { repetee = true; return false; }
+        vues.get(k).add(cle);
         return true;
       });
       const res = noter(oks, question, max, reponseEleve);

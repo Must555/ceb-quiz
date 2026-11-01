@@ -1133,7 +1133,8 @@
     "D 5",
     "G 7"
    ],
-   "explication": "On lit d'abord la lettre de la colonne, puis le chiffre de la ligne. Les pierres précieuses se trouvent dans les cases E2, D5 et G7 : une seule de ces coordonnées suffit."
+   "explication": "On lit d'abord la lettre de la colonne, puis le chiffre de la ligne. Les pierres précieuses se trouvent dans les cases E2, D5 et G7 : une seule de ces coordonnées suffit.",
+   "reponseAffichee": "Une case au choix : E2, D5 ou G7"
   },
   {
    "id": "ceb-2026-so-l3-q1b",
@@ -2831,7 +2832,8 @@
     "Finlande",
     "la Finlande"
    ],
-   "explication": "La partie grisée commence en 1995 et continue jusqu'à aujourd'hui. Sur les cartes, les pays qui deviennent roses en 1995 sont l'Autriche, la Suède et la Finlande : un de ces trois pays suffit."
+   "explication": "La partie grisée commence en 1995 et continue jusqu'à aujourd'hui. Sur les cartes, les pays qui deviennent roses en 1995 sont l'Autriche, la Suède et la Finlande : un de ces trois pays suffit.",
+   "reponseAffichee": "Un pays au choix : Autriche, Suède ou Finlande"
   },
   {
    "id": "ceb-2026-so-l5-q6a",
@@ -2944,7 +2946,8 @@
     "Libramont-Chevigny"
    ],
    "souple": true,
-   "explication": "Les villes de moins de 25 000 habitants sont marquées d'un simple point. Dans la province de Luxembourg, Bastogne, Libramont et La Roche-en-Ardenne ont ce point ; Arlon a un rond orange, elle est plus grande."
+   "explication": "Les villes de moins de 25 000 habitants sont marquées d'un simple point. Dans la province de Luxembourg, Bastogne, Libramont et La Roche-en-Ardenne ont ce point ; Arlon a un rond orange, elle est plus grande.",
+   "reponseAffichee": "Une ville au choix : Bastogne, Libramont ou La Roche-en-Ardenne"
   },
   {
    "id": "ceb-2026-so-l5-q7a",

@@ -1576,7 +1576,8 @@
    "explication": "Le centre doit être à la même distance des 5 cases noircies. La case (J,8) est à 4 cases de (J,4) (4 lignes plus haut), de (J,12) (4 lignes plus bas) et de (N,8) (4 colonnes à droite), et le cercle passe aussi par (M,5) et (M,11). La case voisine (I,8) est acceptée aussi.",
    "documents": [
     "liv3-p21"
-   ]
+   ],
+   "reponseAffichee": "(J,8) ; la case voisine (I,8) est acceptée aussi"
   },
   {
    "id": "ceb-2019-l3-q1",
@@ -1729,7 +1730,8 @@
     "trapèze",
     "un trapèze"
    ],
-   "explication": "Chaque bandelette a ses deux bords parallèles. En croisant C et E, la partie grisée a donc deux paires de côtés parallèles : c'est un parallélogramme. Comme les bandes n'ont pas la même largeur et ne se croisent pas à angle droit, ce n'est ni un losange ni un rectangle. Un parallélogramme a au moins une paire de côtés parallèles : « trapèze » est accepté aussi."
+   "explication": "Chaque bandelette a ses deux bords parallèles. En croisant C et E, la partie grisée a donc deux paires de côtés parallèles : c'est un parallélogramme. Comme les bandes n'ont pas la même largeur et ne se croisent pas à angle droit, ce n'est ni un losange ni un rectangle. Un parallélogramme a au moins une paire de côtés parallèles : « trapèze » est accepté aussi.",
+   "reponseAffichee": "parallélogramme (« trapèze » est accepté aussi)"
   },
   {
    "id": "ceb-2019-l3-q6b",
@@ -1948,7 +1950,8 @@
     "F, D, C",
     "F D C"
    ],
-   "explication": "Un rectangle a deux paires de côtés parallèles : ses côtés opposés sont parallèles. Les vitres C, D et F sont des rectangles ; une seule lettre suffit. Les trapèzes A, B, E et G n'ont qu'une paire de côtés parallèles."
+   "explication": "Un rectangle a deux paires de côtés parallèles : ses côtés opposés sont parallèles. Les vitres C, D et F sont des rectangles ; une seule lettre suffit. Les trapèzes A, B, E et G n'ont qu'une paire de côtés parallèles.",
+   "reponseAffichee": "C, D ou F (une seule lettre suffit)"
   },
   {
    "id": "ceb-2019-l3-q11",
@@ -5798,7 +5801,8 @@
    "explication": "La légende cite des lieux de Wallonie : la ligne de chemin de fer Liège–Namur (L), le pont de Seraing (G) ou la Meuse (E), le fleuve qui passe à Liège et à Namur. Liège, Namur et Seraing sont des villes de la Région wallonne.",
    "documents": [
     "liv9-p06"
-   ]
+   ],
+   "reponseAffichee": "Un lieu au choix : la Meuse, le pont de Seraing ou la ligne de chemin de fer Liège–Namur"
   },
   {
    "id": "ceb-2019-l9-q3b",

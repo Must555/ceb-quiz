@@ -1996,7 +1996,7 @@
     "des Temps modernes"
    ],
    "reponse": 1,
-   "explication": "Le tableau parle de « villa romaine » et de « polythéisme (plusieurs dieux) » : c'est le mode de vie des Gallo-Romains, dans l'Antiquité. Les chasseurs-cueilleurs ne cultivent pas la terre, et au Moyen Âge on croit en un seul Dieu."
+   "explication": "Le tableau parle de « villa romaine » et de « polythéisme (plusieurs dieux) » : c'est le mode de vie des Gallo-Romains, dans l'Antiquité. Les chasseurs-cueilleurs ne cultivent pas la terre, et au Moyen Âge, dans nos régions, les gens sont chrétiens : ils croient en un seul Dieu."
   },
   {
    "id": "ceb-2016-l4-q8b",
@@ -2050,7 +2050,7 @@
     "Amérique"
    ],
    "reponse": 3,
-   "explication": "Le planisphère de Martellus date de 1490, avant le voyage de Christophe Colomb (1492) : les Européens ne connaissaient pas encore l'Amérique. On y reconnait l'Europe, l'Afrique et l'Asie (la Chine, les Indes)."
+   "explication": "Le planisphère de Martellus date de 1490, avant le voyage de Christophe Colomb (1492) : les savants européens ne connaissaient pas encore l'Amérique. On y reconnait l'Europe, l'Afrique et l'Asie (la Chine, les Indes)."
   },
   {
    "id": "ceb-2016-l4-q11c",
@@ -4154,7 +4154,8 @@
     "rhinocéros",
     "chat sauvage"
    ],
-   "explication": "Il faut un mammifère à 4 pattes, avec des poils et des mamelles : le chien, le lapin, la vache, le cheval… Les cétacés comme la baleine ou le dauphin sont des mammifères, mais ils n'ont pas 4 pattes."
+   "explication": "Il faut un mammifère à 4 pattes, avec des poils et des mamelles : le chien, le lapin, la vache, le cheval… Les cétacés comme la baleine ou le dauphin sont des mammifères, mais ils n'ont pas 4 pattes.",
+   "reponseAffichee": "Un mammifère à 4 pattes au choix : chien, lapin, vache, cheval…"
   },
   {
    "id": "ceb-2016-l7-q3",
@@ -4480,7 +4481,7 @@
     1,
     0
    ],
-   "explication": "La dilatation est l'augmentation de volume d'une matière qui chauffe. L'alcool chauffé monte dans le tube, l'air chaud gonfle la montgolfière, les rails chauffés s'allongent et se déforment, et la chaleur de l'eau bouillante fait éclater la coquille des œufs. Étirer un élastique ou dissoudre du sucre n'a rien à voir avec la chaleur."
+   "explication": "La dilatation est l'augmentation de volume d'une matière qui chauffe. L'alcool chauffé monte dans le tube, l'air chaud gonfle la montgolfière, les rails chauffés s'allongent et se déforment, et, dans l'eau bouillante, l'air et le contenu de l'œuf se dilatent et font éclater la coquille. Étirer un élastique ou dissoudre du sucre n'a rien à voir avec la chaleur."
   },
   {
    "id": "ceb-2016-l7-q12a",

@@ -233,10 +233,10 @@
         "On convertit ensuite en km (100 000 cm = 1 km)."
       ],
       "exemple": "Échelle 1/400 000 : 1 cm = 4 km. 6,5 cm sur la carte = 6,5 × 4 = 26 km.",
-      "astuce": "Retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm.",
+      "astuce": "Divise le nombre de l'échelle par 100 000 pour savoir combien de km vaut 1 cm (1/400 000 : 4 km ; 1/25 000 : 0,25 km, soit 250 m).",
       "comprendre": [
         "Une carte est beaucoup plus petite que la réalité. L'échelle dit combien de fois. Échelle 1/100 000 : 1 cm sur la carte représente 100 000 cm dans la réalité, c'est-à-dire 1 km.",
-        "Pour trouver une distance réelle : mesure sur la carte avec la latte, multiplie par le nombre de l'échelle, puis convertis en km. Astuce : retire 5 zéros au nombre de l'échelle pour savoir combien de km vaut 1 cm (1/400 000 : 1 cm = 4 km).",
+        "Pour trouver une distance réelle : mesure sur la carte avec la latte, multiplie par le nombre de l'échelle, puis convertis en km. Astuce : divise le nombre de l'échelle par 100 000 pour savoir combien de km vaut 1 cm (1/400 000 : 1 cm = 4 km ; 1/25 000 : 1 cm = 0,25 km).",
         "Certaines cartes ont une échelle graphique : un petit trait gradué (par exemple « 0 — 10 km »). On reporte ce trait sur la distance à mesurer. Agrandir ou réduire une figure, c'est la même idée : toutes les longueurs sont multipliées ou divisées par le même nombre."
       ],
       "exemplesExpliques": [
@@ -287,7 +287,7 @@
           "texte": "Échelle 1/400 000 : 1 cm = 4 km. Entre Liège et Maastricht, 6,5 cm sur la carte, soit 26 km."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-vitesse",
@@ -351,12 +351,13 @@
       "e": "⚖️",
       "titre": "La proportionnalité",
       "regle": [
-        "Deux grandeurs sont proportionnelles si, quand l'une double, l'autre double aussi.",
+        "Deux grandeurs sont proportionnelles si on passe toujours de l'une à l'autre en multipliant par le même nombre. Ainsi, quand l'une double, l'autre double aussi.",
         "Méthode : on calcule pour 1, puis on multiplie.",
         "On peut aussi utiliser un tableau et chercher le nombre qui fait passer d'une ligne à l'autre."
       ],
       "exemple": "80 kg de graines pour 4 ha → 20 kg pour 1 ha → 200 kg pour 10 ha.",
-      "astuce": "« Pour 1 » est la clé : divise d'abord, multiplie ensuite."
+      "astuce": "« Pour 1 » est la clé : divise d'abord, multiplie ensuite.",
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-fractions",
@@ -379,12 +380,13 @@
       "titre": "Les nombres décimaux",
       "regle": [
         "Pour comparer : on compare d'abord la partie entière, puis les dixièmes, puis les centièmes…",
-        "Multiplier un décimal : on calcule sans la virgule, puis on remet autant de chiffres après la virgule qu'au départ.",
+        "Multiplier des décimaux : on calcule sans la virgule, puis on remet autant de chiffres après la virgule qu'il y en a en tout dans les deux nombres (1,2 × 0,3 : 12 × 3 = 36 → 0,36).",
         "Quand on multiplie par 10, la virgule avance d'un rang vers la droite ; quand on divise par 10, elle recule d'un rang vers la gauche.",
         "Encadrer au centième : 7,38 < 7,386 < 7,39."
       ],
       "exemple": "0,54 > 0,5 car 54 centièmes > 50 centièmes. 2,9 × 4 : 29 × 4 = 116 → 11,6.",
-      "astuce": "Ajoute des zéros pour comparer facilement : 0,5 = 0,50 et 0,45 < 0,50."
+      "astuce": "Ajoute des zéros pour comparer facilement : 0,5 = 0,50 et 0,45 < 0,50.",
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "ma-division",
@@ -603,7 +605,7 @@
       "pieges": [
         "Croire qu'un carré n'est pas un rectangle.",
         "Appeler losange un carré tourné, ou carré un losange dont on ne connait pas les angles.",
-        "Confondre trapèze (une paire de côtés parallèles) et parallélogramme (deux paires).",
+        "Confondre un trapèze qui n'a qu'une seule paire de côtés parallèles et un parallélogramme (deux paires).",
         "Juger d'après le dessin sans regarder le codage (petits traits, angles droits)."
       ],
       "auCEB": [
@@ -743,7 +745,7 @@
         "Avec être : il s'accorde avec le sujet (elles sont allées)."
       ],
       "exemple": "Nous avons fini. Elle est venue. Ils sont partis.",
-      "astuce": "Participe en -é, -i ou -u ? Mets-le au féminin : prise → pris, faite → fait.",
+      "astuce": "Tu hésites sur la dernière lettre du participe (pris ? fait ?) Mets-le au féminin : prise → pris, faite → fait.",
       "comprendre": [
         "Le passé composé raconte une action terminée. Il est formé de deux mots : l'auxiliaire avoir ou être conjugué au présent, puis le participe passé du verbe. J'ai prêté, nous avons fini, elle est venue.",
         "La plupart des verbes utilisent avoir. Quelques verbes de mouvement ou de changement d'état utilisent être : aller, venir, partir, arriver, entrer, sortir, naitre, mourir, rester, tomber… et tous les verbes pronominaux (se lever, se laver).",
@@ -786,7 +788,7 @@
           "texte": "« Je le lui ai prêté » : l'auxiliaire avoir au présent (ai) et le participe passé (prêté) forment le passé composé."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-homophones",
@@ -797,7 +799,8 @@
         "a (on peut dire « avait ») / à (on ne peut pas).",
         "ont (« avaient ») / on (« il »).",
         "et (« et puis ») / est (« était »).",
-        "ses (« les siens ») / ces (« ceux-là »). ou (« ou bien ») / où (un lieu)."
+        "ses (« les siens ») / ces (« ceux-là »).",
+        "ou (« ou bien ») / où (un lieu)."
       ],
       "exemple": "Il a mangé à la cantine. Ils ont faim, on mange ?",
       "astuce": "Remplace le mot par un autre : si la phrase a encore du sens, tu as trouvé le bon.",
@@ -831,7 +834,7 @@
         "Écrire « son » à la place de « sont » devant un participe : « ils sont partis »."
       ],
       "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais ces petits mots comptent dans toutes les productions écrites.",
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-sujet-complements",
@@ -841,10 +844,11 @@
       "regle": [
         "Le sujet : on le trouve avec « Qui est-ce qui… ? » ou « Qu'est-ce qui… ? » devant le verbe.",
         "Le complément de phrase peut être déplacé ou supprimé (où ? quand ? comment ?).",
-        "Le complément du verbe ne peut pas être déplacé ni supprimé."
+        "Le complément du verbe ne peut généralement pas être déplacé, et souvent pas supprimé."
       ],
       "exemple": "Au cours de notre vie, nos empreintes ne changent pas. → « Au cours de notre vie » : complément de phrase.",
-      "astuce": "Encadre le sujet par « C'est … qui » : C'est le petit chien qui aboie."
+      "astuce": "Encadre le sujet par « C'est … qui » : C'est le petit chien qui aboie.",
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-classes-mots",
@@ -853,13 +857,13 @@
       "titre": "Les classes de mots",
       "regle": [
         "Nom, déterminant, adjectif, pronom, verbe : ce sont des mots variables.",
-        "Adverbe, préposition, conjonction : ils sont invariables.",
+        "Adverbe, mot de liaison (préposition, conjonction) : ils sont invariables.",
         "Un mot en -ment est souvent un adverbe (rapidement)."
       ],
       "exemple": "« petits » dans « de petits métiers » est un adjectif ; « prend » est un verbe.",
       "astuce": "Pour trouver un verbe, conjugue-le : je prends, tu prends… Si ça marche, c'est un verbe.",
       "comprendre": [
-        "Chaque mot appartient à une classe, selon son rôle. Le nom désigne une personne, un animal, une chose ou une idée. Le déterminant se place devant le nom. L'adjectif précise le nom. Le pronom remplace le nom. Le verbe se conjugue. L'adverbe précise un verbe, un adjectif ou un autre adverbe. Le mot de liaison relie (et, mais, car, quand…).",
+        "Chaque mot appartient à une classe, selon sa nature. Le nom désigne une personne, un animal, une chose ou une idée. Le déterminant se place devant le nom. L'adjectif précise le nom. Le pronom remplace le nom. Le verbe se conjugue. L'adverbe précise un verbe, un adjectif ou un autre adverbe. Le mot de liaison relie (et, mais, car, quand…).",
         "Un même mot peut changer de classe selon la phrase : « son devoir » (nom), « tu dois » (verbe devoir) ; « Entre ! » (verbe), « entre deux maisons » (mot qui relie). Il faut donc toujours regarder le mot dans sa phrase.",
         "Quelques tests : un verbe se conjugue quand on change le temps ; un nom peut recevoir un déterminant ; un adjectif s'accorde avec un nom et peut souvent être enlevé ; un adverbe est invariable, et beaucoup se terminent en -ment."
       ],
@@ -945,7 +949,7 @@
           "texte": "« possède » est un verbe ; « vous » un pronom ; « vos » un déterminant."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-modes",
@@ -963,7 +967,7 @@
       "comprendre": [
         "Le mode indique la façon dont l'action est présentée. L'indicatif présente un fait réel (il joue, il jouait, il jouera). L'impératif donne un ordre ou un conseil, sans sujet (joue, jouons, jouez). Le subjonctif s'emploie après « il faut que », « je veux que » (il faut que tu viennes).",
         "Certains modes ne se conjuguent pas avec un sujet. L'infinitif est la forme du dictionnaire (jouer, finir, prendre) ; on le trouve souvent après un autre verbe (« on peut remarquer »). Le participe présent finit par -ant (jouant) ; le participe passé (joué, étalée) s'emploie avec un auxiliaire ou comme un adjectif.",
-        "Pour trouver le mode : y a-t-il un sujet ? Si non, est-ce un ordre (impératif), une forme en -er, -ir, -re, -oir (infinitif) ou une forme en -ant, -é, -i, -u (participe) ? Si oui, cherche « que » devant (subjonctif) ; sinon, c'est l'indicatif."
+        "Pour trouver le mode : y a-t-il un sujet ? Si non, est-ce un ordre (impératif), une forme en -er, -ir, -re, -oir (infinitif) ou une forme en -ant, -é, -i, -u (participe) ? Si oui, regarde ce qui précède : après « il faut que » ou « je veux que », c'est le subjonctif ; après « je sais que », « je pense que » ou sans « que », c'est en général l'indicatif. Teste avec « que je fasse » ou « que je sois »."
       ],
       "exemplesExpliques": [
         {
@@ -1002,7 +1006,7 @@
           "texte": "« étalées » est un participe ; « Découvrons » est à l'impératif ; « remarquer » est à l'infinitif."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-vocabulaire",
@@ -1191,7 +1195,7 @@
       "astuce": "Cherche le nom dont parle l'adjectif, puis regarde son genre et son nombre.",
       "comprendre": [
         "Dans un groupe nominal, le déterminant et l'adjectif prennent le genre (masculin ou féminin) et le nombre (singulier ou pluriel) du nom. Au pluriel, on ajoute le plus souvent un s : une jolie fleur → de jolies fleurs.",
-        "Certains noms changent autrement : -al devient -aux (un cheval, des chevaux), sauf bal, carnaval, festival, chacal, récital, régal ; -eau, -au et -eu prennent un x (des bateaux, des tuyaux, des jeux), sauf pneu, bleu, landau. Les noms qui finissent déjà par s, x ou z ne changent pas : un héros, des héros.",
+        "Certains noms changent autrement : -al devient -aux (un cheval, des chevaux), sauf bal, carnaval, festival, chacal, récital, régal ; -eau, -au et -eu prennent un x (des bateaux, des tuyaux, des jeux), sauf pneu, bleu, émeu, landau, sarrau. Les noms qui finissent déjà par s, x ou z ne changent pas : un héros, des héros.",
         "Les accords sont aussi des indices pour comprendre un texte : un e ou un s à la fin d'un adjectif ou d'un participe passé montre si on parle d'un garçon ou d'une fille, d'une ou de plusieurs personnes. C'est souvent le déterminant qui montre le nombre quand le nom ne change pas."
       ],
       "exemplesExpliques": [
@@ -1242,7 +1246,7 @@
           "texte": "« de m'être préparée » : le e final montre que c'est une femme qui parle, l'aviatrice."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "fr-pronoms",
@@ -1259,7 +1263,7 @@
       "comprendre": [
         "Un pronom remplace un nom ou un groupe nominal déjà cité, pour ne pas le répéter. Il en prend souvent le genre et le nombre : « les traces… elles », « le château… il ».",
         "Pour trouver ce qu'il remplace : 1) remonte dans le texte, le plus souvent juste avant ; 2) cherche un nom de même genre et de même nombre ; 3) mets ta réponse à la place du pronom : la phrase doit garder son sens.",
-        "Les pronoms relatifs (qui, que, dont, où) reprennent le nom placé juste avant eux : « les bras de ma mère qui me réchaufferaient ». « Les premiers… les seconds » reprennent les noms dans l'ordre où ils ont été cités. Attention : certains pronoms ne remplacent rien. Dans « il pleut » ou « il faisait beau », « il » ne désigne personne ; « on » désigne souvent les gens en général."
+        "Les pronoms relatifs (qui, que, dont, où) reprennent un groupe du nom placé avant eux, leur antécédent. Vérifie avec l'accord : dans « les bras de ma mère qui me réchaufferaient », le verbe est au pluriel, donc « qui » reprend « les bras de ma mère », pas « ma mère ». « Les premiers… les seconds » reprennent les noms dans l'ordre où ils ont été cités. Attention : certains pronoms ne remplacent rien. Dans « il pleut » ou « il faisait beau », « il » ne désigne personne ; « on » désigne souvent les gens en général."
       ],
       "exemplesExpliques": [
         {
@@ -1343,7 +1347,7 @@
           "texte": "« Les premières » reprend les traces ; « les secondes », les empreintes."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "hg-periodes",
@@ -1609,7 +1613,7 @@
       "astuce": "Plus il y a de monde sur un petit territoire, plus la densité est grande.",
       "comprendre": [
         "La densité de population dit combien de personnes vivent, en moyenne, sur 1 km². On la calcule en divisant le nombre d'habitants par la superficie : densité = habitants : km². Elle s'exprime en habitants par km² (hab./km²).",
-        "Elle permet de comparer des territoires de tailles différentes. Une grande province peut avoir beaucoup d'habitants et pourtant une faible densité, si elle est très étendue. En Belgique, la densité moyenne est d'environ 380 hab./km² ; elle dépasse 7 000 hab./km² dans la Région de Bruxelles-Capitale et reste sous 70 dans la province de Luxembourg.",
+        "Elle permet de comparer des territoires de tailles différentes. Une grande province peut avoir beaucoup d'habitants et pourtant une faible densité, si elle est très étendue. En Belgique, la densité moyenne est d'environ 390 hab./km² (2026) ; elle dépasse 7 700 hab./km² dans la Région de Bruxelles-Capitale et reste sous 70 dans la province de Luxembourg.",
         "Sur une carte de densité, chaque couleur ou chaque symbole correspond à une tranche de la légende (moins de 200, de 200 à 399…). Pour placer une valeur, cherche la tranche qui la contient."
       ],
       "exemplesExpliques": [
@@ -1622,7 +1626,7 @@
           "explication": "686 dépasse 600 : il va dans cette tranche."
         },
         {
-          "cas": "Namur : 138 hab./km².",
+          "cas": "La province de Namur : 138 hab./km².",
           "explication": "Moins de 200 : une densité faible, avec beaucoup de forêts et de campagne."
         },
         {
@@ -1671,7 +1675,7 @@
         "Le cœur pompe le sang. Artères : du cœur vers les organes. Veines : des organes vers le cœur.",
         "Dans les poumons (alvéoles), le sang prend le dioxygène (O₂) et rejette le dioxyde de carbone (CO₂).",
         "Dans l'intestin, les nutriments passent dans le sang.",
-        "Le sang : plasma (liquide), globules rouges (transportent le dioxygène), globules blancs (combattent les microbes), plaquettes (referment les plaies)."
+        "Le sang : plasma (liquide), globules rouges (transportent le dioxygène), globules blancs (combattent les microbes), plaquettes (aident à boucher les plaies)."
       ],
       "exemple": "Inspiration : le diaphragme descend, l'air entre. Expiration : l'air sort.",
       "astuce": "Artère = « Aller » (A comme Aller, depuis le cœur).",
@@ -1853,8 +1857,9 @@
         "Pour éteindre, on supprime un des trois éléments.",
         "Bougie : la cire fond (phénomène physique) puis brûle (phénomène chimique) ; un verre froid au-dessus se couvre de buée (eau produite) ; sous un bocal, la flamme s'éteint faute de dioxygène."
       ],
-      "exemple": "Huile en feu : couvrir avec une couverture humide (on prive le feu d'O₂). Jamais d'eau !",
-      "astuce": "En cas d'incendie, sors accroupi : la fumée chaude monte vers le plafond."
+      "exemple": "Huile en feu : coupe le feu, puis couvre avec le couvercle ou une couverture anti-feu (à défaut, un linge en coton humide, pas mouillé) : on prive le feu d'O₂. Jamais d'eau !",
+      "astuce": "En cas d'incendie, sors accroupi : la fumée chaude monte vers le plafond.",
+      "miseAJour": "2026-11-01"
     },
     {
       "id": "sc-phenomenes",
@@ -1940,7 +1945,7 @@
       "e": "⚡",
       "titre": "L'énergie",
       "regle": [
-        "Renouvelables : soleil, vent, eau, bois… (elles se renouvellent vite).",
+        "Renouvelables : soleil, vent, eau, bois si on replante… (elles se renouvellent vite).",
         "Non renouvelables : pétrole, gaz naturel, charbon, uranium (elles s'épuisent).",
         "Pour se chauffer : gaz naturel, mazout, charbon (non renouvelables) ; bois, pellets, Soleil (renouvelables).",
         "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air."
@@ -1950,7 +1955,7 @@
       "comprendre": [
         "L'énergie permet de chauffer, d'éclairer, de faire bouger. On la tire de sources différentes. Les sources renouvelables se reforment vite ou ne s'épuisent pas : le Soleil, le vent, l'eau qui coule, le bois. Les sources non renouvelables ont mis des millions d'années à se former et s'épuisent : le pétrole, le gaz naturel, le charbon, l'uranium.",
         "Quand on brule du pétrole, du gaz, du charbon ou du bois, on rejette du dioxyde de carbone (CO₂), un gaz à effet de serre qui contribue au réchauffement climatique. L'élevage de ruminants rejette, lui, beaucoup de méthane, un autre gaz à effet de serre.",
-        "L'énergie se transforme : un panneau solaire transforme la lumière en électricité, une éolienne transforme le vent en électricité. Une surface sombre absorbe mieux l'énergie du Soleil qu'une surface claire."
+        "L'énergie se transforme : un panneau solaire photovoltaïque transforme la lumière en électricité, une éolienne transforme le vent en électricité. Une surface sombre absorbe mieux l'énergie du Soleil qu'une surface claire."
       ],
       "exemplesExpliques": [
         {
@@ -2000,7 +2005,7 @@
           "texte": "L'élevage produit surtout du méthane ; la voiture et le chauffage, du dioxyde de carbone."
         }
       ],
-      "miseAJour": "2026-10-31"
+      "miseAJour": "2026-11-01"
     }
   ]
 }

@@ -1284,7 +1284,8 @@
     "D 5",
     "G 7"
    ],
-   "explication": "On lit d'abord la lettre de la colonne, puis le chiffre de la ligne. Les pierres précieuses se trouvent dans les cases E2, D5 et G7 : une seule de ces coordonnées suffit."
+   "explication": "On lit d'abord la lettre de la colonne, puis le chiffre de la ligne. Les pierres précieuses se trouvent dans les cases E2, D5 et G7 : une seule de ces coordonnées suffit.",
+   "reponseAffichee": "Une case au choix : E2, D5 ou G7"
   },
   {
    "id": "ceb-2026-tc-l3-q1b",
