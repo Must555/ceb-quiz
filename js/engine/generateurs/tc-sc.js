@@ -12,6 +12,7 @@
 //   sc_economie    : limiter les pertes de chaleur (isolation, gestes, choix d'un isolant ou d'un conducteur)
 //   sc_mesures     : instruments et unités (thermomètre, balance, chronomètre, verre gradué, pluviomètre), lectures
 //   sc_espece      : notion d'espèce (races, hybrides stériles, compter les espèces)
+//   sc_meteo       : lire un bulletin météo (valeurs, écarts, comparaisons, instruments, abréviations, Beaufort)
 
 import { formatNombre as fmt } from '../format.js';
 
@@ -2140,6 +2141,151 @@ export function genererEspece(modele, rng) {
     _signature: `grille|${triee(ps.map((x) => x.t))}`, cleContenu: `grille|${triee(ps.map((x) => x.t))}` };
 }
 
+// ================================================================ 13. LIRE UN BULLETIN MÉTÉO (fiche sc-meteo)
+// Bulletin tiré au hasard (4 jours) : ciel, températures minimale et maximale, vent (direction, vitesse),
+// précipitations. Questions : lire une valeur, calculer un écart, comparer les jours, instruments,
+// abréviations des directions, vrai ou faux, échelle de Beaufort. Températures toujours positives
+// (les réponses numériques négatives ne sont pas admises).
+const JOURS_M = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche'];
+const CIELS = [
+  { nom: 'Ensoleillé', pluie: false, phrase: 'un temps ensoleillé' },
+  { nom: 'Nuageux, sec', pluie: false, phrase: 'un ciel nuageux, mais sec' },
+  { nom: 'Brouillard', pluie: false, phrase: 'du brouillard' },
+  { nom: 'Averses', pluie: true, phrase: 'des averses' },
+  { nom: 'Pluie', pluie: true, phrase: 'de la pluie' },
+  { nom: 'Orages', pluie: true, phrase: 'des orages' },
+];
+const DIRS = [['N', 'nord'], ['NE', 'nord-est'], ['E', 'est'], ['SE', 'sud-est'], ['S', 'sud'], ['SO', 'sud-ouest'], ['O', 'ouest'], ['NO', 'nord-ouest']];
+const BEAUFORT = [
+  [0, 'Calme : la fumée monte tout droit.'],
+  [3, 'Les feuilles et les petites branches bougent sans arrêt ; les drapeaux flottent.'],
+  [5, 'Les petits arbres se balancent.'],
+  [6, 'Les grosses branches s\'agitent ; on a du mal à garder son parapluie ouvert.'],
+  [8, 'Des branches cassent ; marcher contre le vent est très difficile.'],
+  [10, 'Des arbres sont déracinés ; les dégâts sont importants.'],
+  [12, 'Ouragan : les dégâts sont très importants.'],
+];
+const INSTR_M = { temp: 'le thermomètre', vitesse: 'l\'anémomètre', direction: 'la girouette', pluie: 'le pluviomètre' };
+const DONNEE_M = { temp: 'la température', vitesse: 'la vitesse du vent', direction: 'la direction du vent', pluie: 'la quantité de précipitations' };
+const LIGNES_M = { temp: 'Température', vitesse: 'Vitesse du vent', direction: 'Direction du vent', pluie: 'Précipitations' };
+
+function bulletin(rng) {
+  const ete = rng.next() < 0.5; const d0 = rng.int(0, 3);
+  const jours = [0, 1, 2, 3].map((k) => {
+    const ciel = rng.pick(CIELS);
+    const tmin = ete ? rng.int(10, 19) : rng.int(1, 6);
+    const tmax = tmin + rng.int(ete ? 5 : 3, ete ? 13 : 8);
+    const [dirA, dirN] = rng.pick(DIRS);
+    const vent = rng.int(1, 14) * 5;
+    const pluie = ciel.pluie ? rng.int(2, 30) : 0;
+    return { jour: JOURS_M[d0 + k], ciel, tmin, tmax, dirA, dirN, vent, pluie };
+  });
+  return { ete, jours };
+}
+const figBulletin = (b) => svgTableau({ titre: 'Bulletin météo',
+  entetes: ['', ...b.jours.map((j) => maj(j.jour))],
+  lignes: [['Ciel', ...b.jours.map((j) => j.ciel.nom)],
+    ['T° minimale', ...b.jours.map((j) => `${j.tmin} °C`)],
+    ['T° maximale', ...b.jours.map((j) => `${j.tmax} °C`)],
+    ['Direction du vent', ...b.jours.map((j) => j.dirA)],
+    ['Vitesse du vent', ...b.jours.map((j) => `${j.vent} km/h`)],
+    ['Précipitations', ...b.jours.map((j) => `${j.pluie} mm`)]] });
+const sigB = (b) => b.jours.map((j) => `${j.ciel.nom}:${j.tmin}:${j.tmax}:${j.dirA}:${j.vent}:${j.pluie}`).join(',');
+const uniqueMax = (js, f) => { const m = Math.max(...js.map(f)); return js.filter((j) => f(j) === m).length === 1 ? js.find((j) => f(j) === m) : null; };
+
+export function genererMeteo(modele, rng) {
+  const forme = rng.pick(['lire', 'lire', 'ecart', 'ecart', 'compare', 'compare', 'instrument', 'instrument', 'grille', 'abrev', 'vf', 'vf', 'beaufort', 'beaufort2']);
+  if (forme === 'beaufort' || forme === 'beaufort2') {
+    const [f, effet] = rng.pick(BEAUFORT);
+    const autres = rng.shuffle(BEAUFORT.filter(([x]) => x !== f)).slice(0, 3);
+    if (forme === 'beaufort') {
+      const r = qcm(rng, `Force ${f}`, autres.map(([x]) => `Force ${x}`));
+      return { ...r, enonce: `D'après l'échelle de Beaufort, quelle est la force du vent quand on observe ceci ? « ${effet} »`,
+        explication: `L'échelle de Beaufort mesure la force du vent de 0 (calme) à 12 (ouragan) d'après ses effets. ${effet.replace(/\.$/, '')} : force ${f}.`,
+        _signature: `bf|${f}|${triee(r.choix)}`, cleContenu: `bf|${f}|${triee(r.choix)}` };
+    }
+    const r = qcm(rng, effet, autres.map(([, e]) => e));
+    return { ...r, enonce: `Sur l'échelle de Beaufort, quels effets correspondent à un vent de force ${f} ?`,
+      explication: `Force ${f} : ${effet.charAt(0).toLowerCase() + effet.slice(1)} Plus le nombre est grand (de 0 à 12), plus le vent est fort.`,
+      _signature: `bf2|${f}|${triee(r.choix)}`, cleContenu: `bf2|${f}|${triee(r.choix)}` };
+  }
+  if (forme === 'abrev') {
+    const [a, n] = rng.pick(DIRS.filter(([x]) => x.length === 2));
+    const faux = DIRS.filter(([x]) => x.length === 2 && x !== a).map(([, x]) => x);
+    const r = qcm(rng, n, rng.shuffle(faux));
+    return { ...r, enonce: `Dans un bulletin météo, la direction du vent est notée « ${a} ». Que veut dire cette abréviation ?`,
+      explication: `« ${a} » veut dire ${n} : N = nord, S = sud, E = est, O = ouest. Le vent vient du ${n}.`,
+      _signature: `ab|${a}|${triee(r.choix)}`, cleContenu: `ab|${a}` };
+  }
+  if (forme === 'instrument' || forme === 'grille') {
+    const ks = Object.keys(INSTR_M);
+    if (forme === 'grille') {
+      const lignes = rng.shuffle(ks);
+      const colonnes = rng.shuffle(['le thermomètre', 'l\'anémomètre', 'la girouette', 'le pluviomètre']).map(maj);
+      return { type: 'grille', enonce: 'Quel instrument mesure chaque donnée du bulletin météo ?', lignes: lignes.map((k) => maj(DONNEE_M[k])), colonnes,
+        reponse: lignes.map((k) => colonnes.indexOf(maj(INSTR_M[k]))), points: 4,
+        explication: `${maj(ks.map((k) => `${DONNEE_M[k]} : ${INSTR_M[k]}`).join(' ; '))}. Le baromètre, lui, mesure la pression de l'air.`,
+        _signature: `gr|${lignes.join(',')}|${colonnes.join(',')}`, cleContenu: `gr|${lignes.join(',')}|${colonnes.join(',')}` };
+    }
+    const k = rng.pick(ks);
+    const faux = rng.shuffle([...ks.filter((x) => x !== k).map((x) => INSTR_M[x]), 'le baromètre']).slice(0, 3);
+    const r = qcm(rng, maj(INSTR_M[k]), faux.map(maj));
+    return { ...r, enonce: `Avec quel instrument mesure-t-on ${DONNEE_M[k]} indiquée dans un bulletin météo ?`,
+      explication: `${maj(DONNEE_M[k])} se mesure avec ${INSTR_M[k]}. Thermomètre : la température (°C) ; anémomètre : la vitesse du vent (km/h) ; girouette : la direction du vent ; pluviomètre : les précipitations (mm).`,
+      _signature: `ins|${k}|${triee(faux)}`, cleContenu: `ins|${k}|${triee(faux)}` };
+  }
+  const b = bulletin(rng); const fig = figBulletin(b); const sb = sigB(b);
+  if (forme === 'lire') {
+    const j = rng.pick(b.jours); const quoi = rng.pick(['tmax', 'tmin', 'vent', 'pluie']);
+    if (quoi === 'pluie' && j.pluie === 0) return null;
+    const Q = { tmax: ['la température maximale', j.tmax, '°C', 'T° maximale'], tmin: ['la température minimale', j.tmin, '°C', 'T° minimale'],
+      vent: ['la vitesse du vent', j.vent, 'km/h', 'Vitesse du vent'], pluie: ['la quantité de précipitations', j.pluie, 'mm', 'Précipitations'] }[quoi];
+    return { type: 'numerique', reponse: Q[1], unite: Q[2], figure: fig,
+      enonce: `Lis le bulletin météo. Quelle est ${Q[0]} prévue le ${j.jour} ?`,
+      explication: `On cherche la colonne « ${maj(j.jour)} » et la ligne « ${Q[3]} » : ${Q[1]} ${Q[2]}.`,
+      _signature: `lire|${sb}|${j.jour}|${quoi}`, cleContenu: `lire|${sb}|${j.jour}|${quoi}` };
+  }
+  if (forme === 'ecart') {
+    const j = rng.pick(b.jours); const e = j.tmax - j.tmin;
+    return { type: 'numerique', reponse: e, unite: '°C', figure: fig,
+      enonce: `Lis le bulletin météo. Quel est l'écart entre la température maximale et la température minimale du ${j.jour} ?`,
+      explication: `Le ${j.jour}, la maximale est ${j.tmax} °C et la minimale ${j.tmin} °C : ${j.tmax} − ${j.tmin} = ${e} °C.`,
+      _signature: `ec|${sb}|${j.jour}`, cleContenu: `ec|${sb}|${j.jour}` };
+  }
+  if (forme === 'compare') {
+    const quoi = rng.pick(['chaud', 'vent', 'pluie', 'sec']);
+    let j; let expl;
+    if (quoi === 'chaud') { j = uniqueMax(b.jours, (x) => x.tmax); expl = j && `La température maximale la plus haute est ${j.tmax} °C, le ${j.jour}.`; }
+    if (quoi === 'vent') { j = uniqueMax(b.jours, (x) => x.vent); expl = j && `La plus grande vitesse du vent est ${j.vent} km/h, le ${j.jour}.`; }
+    if (quoi === 'pluie') { j = uniqueMax(b.jours, (x) => x.pluie); expl = j && j.pluie > 0 && `C'est le ${j.jour} qu'il tombera le plus de pluie : ${j.pluie} mm.`; }
+    if (quoi === 'sec') { const s = b.jours.filter((x) => x.pluie === 0); j = s.length === 1 ? s[0] : null; expl = j && `Seul le ${j.jour} a 0 mm de précipitations (${j.ciel.phrase}).`; }
+    if (!j || !expl) return null;
+    const enonce = { chaud: 'Quel jour fera-t-il le plus chaud ?', vent: 'Quel jour le vent soufflera-t-il le plus fort ?', pluie: 'Quel jour tombera-t-il le plus de pluie ?', sec: 'Quel est le seul jour sans précipitations ?' }[quoi];
+    return { type: 'qcm', choix: b.jours.map((x) => maj(x.jour)), reponse: b.jours.indexOf(j), figure: fig,
+      enonce: `Lis le bulletin météo. ${enonce}`, explication: expl,
+      _signature: `cmp|${sb}|${quoi}`, cleContenu: `cmp|${sb}|${quoi}` };
+  }
+  // Vrai ou faux sur une donnée du bulletin.
+  const j = rng.pick(b.jours); const vrai = rng.next() < 0.5;
+  const k = rng.pick(['dir', 'ciel', 'tmax', 'vent']);
+  let affirm; let expl;
+  if (k === 'dir') {
+    const [, d] = vrai ? [j.dirA, j.dirN] : rng.pick(DIRS.filter(([a]) => a !== j.dirA));
+    affirm = `Le ${j.jour}, le vent viendra ${/^[eo]/.test(d) ? `de l'${d}` : `du ${d}`}.`; expl = `Le bulletin indique « ${j.dirA} » le ${j.jour}, c'est-à-dire ${j.dirN}.`;
+  } else if (k === 'ciel') {
+    const c = vrai ? j.ciel : rng.pick(CIELS.filter((x) => x.pluie !== j.ciel.pluie));
+    affirm = `Le ${j.jour}, on prévoit ${c.phrase}.`; expl = `Le bulletin indique « ${j.ciel.nom} » le ${j.jour}.`;
+  } else if (k === 'tmax') {
+    const t = vrai ? j.tmax : j.tmin;
+    affirm = `Le ${j.jour}, la température maximale sera de ${t} °C.`; expl = `Le ${j.jour}, la maximale est ${j.tmax} °C ; ${j.tmin} °C est la minimale.`;
+  } else {
+    const v = vrai ? j.vent : j.vent + rng.pick([10, 15, 20]);
+    affirm = `Le ${j.jour}, le vent soufflera à ${v} km/h.`; expl = `Le bulletin indique ${j.vent} km/h le ${j.jour}.`;
+  }
+  return { type: 'vrai_faux', reponse: vrai, figure: fig, enonce: `Lis le bulletin météo. Vrai ou faux ? ${affirm}`,
+    explication: `${vrai ? 'Vrai' : 'Faux'}. ${expl}`, _signature: `vf|${sb}|${affirm}`, cleContenu: `vf|${sb}|${affirm}` };
+}
+
 // ---------------------------------------------------------------- enregistrement
 const avecCle = (fn) => (modele, rng) => {
   const q = fn(modele, rng);
@@ -2163,4 +2309,5 @@ export const GENERATEURS = {
   sc_economie: avecCle(genererEconomie),
   sc_mesures: avecCle(genererMesures),
   sc_espece: avecCle(genererEspece),
+  sc_meteo: avecCle(genererMeteo),
 };
