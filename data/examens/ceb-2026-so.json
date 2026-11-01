@@ -5030,7 +5030,7 @@
    "enonce": "Dans la nature, on trouve l'eau à l'état liquide. Sous quels deux autres états peut-on la trouver ?",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-etats",
    "texte": "{1} et {2}",
    "reponse": [
     [
@@ -5109,7 +5109,7 @@
    "enonce": "Des élèves ont pesé de l'eau et de l'huile. 1 litre d'eau pèse 1 000 g. 1 litre d'huile pèse 835 g. Ils versent de l'eau et de l'huile dans un bocal, ils laissent reposer les liquides pendant une heure, puis ils observent : l'huile est en haut, l'eau en bas. Dans les mêmes conditions, ils réalisent une nouvelle expérience dans un autre bocal. Ils pèsent du lait. 1 litre de lait pèse 1 020 g. Ils versent du lait et de l'huile dans un autre bocal, ils laissent reposer les liquides pendant une heure, puis observent. Choisis la seule représentation correcte de ce qu'ils voient après une heure (liquides de haut en bas).",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-melanges",
    "choix": [
     "Bocal 1 : lait, huile",
     "Bocal 2 : eau, huile, lait",
