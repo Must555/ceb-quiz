@@ -3856,7 +3856,7 @@
    "enonce": "Voici une liste de noms qui correspondent à des instruments météorologiques : une girouette | un thermomètre | un baromètre | un anémomètre | un pluviomètre. Choisis le nom de chaque instrument.",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-mesures",
    "lignes": [
     "mesure la vitesse du vent.",
     "mesure la quantité de précipitations tombées (en mm).",

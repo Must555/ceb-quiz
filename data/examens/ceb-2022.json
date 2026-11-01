@@ -5472,7 +5472,7 @@
    "enonce": "Observe le tableau de prévisions de l'IRM (Institut Royal Météorologique) (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « Les températures varieront de 3 à 15 degrés. » ?",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "choix": [
     "Samedi",
     "Dimanche",
@@ -6021,7 +6021,7 @@
    "enonce": "Voici trois prévisions météorologiques (livret, page 14). Pour chaque carte de la page suivante (cartes A, B et C), écris dans l'étiquette ronde le numéro du bulletin météorologique qui convient.",
    "points": 3,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "liv9-p14",
     "liv9-p15"
@@ -6052,7 +6052,7 @@
    "enonce": "Observe le bulletin météo du livret (page 16). Tu peux t'aider de la légende des icônes de la page 14. Choisis vrai ou faux pour chaque proposition.",
    "points": 3,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "liv9-p16",
     "liv9-p14"
@@ -6082,7 +6082,7 @@
    "enonce": "Observe le tableau de prévisions de l'IRM (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « La nébulosité sera variable et des orages secoueront certaines régions du pays. » ?",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "liv9-p17",
     "liv9-p14"
@@ -6104,7 +6104,7 @@
    "enonce": "Observe le tableau de prévisions de l'IRM (livret, page 17). Tu peux t'aider de la légende des icônes de la page 14. Pour l'ensemble de la Belgique, à quel jour correspond cette prévision : « Après quelques brumes matinales, le temps sera généralement sec sur tout le pays. » ?",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "liv9-p17",
     "liv9-p14"

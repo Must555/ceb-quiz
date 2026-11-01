@@ -3558,7 +3558,8 @@
      "17 h08"
     ]
    ],
-   "explication": "À côté de Tournai, on lit « 2 °C / 8 °C » : la température minimale est 2 °C et la maximale, la plus haute, est 8 °C. En bas du bulletin, à côté du soleil qui descend, on lit « Coucher : 17 h 08 » (le lever est à 8 h 36)."
+   "explication": "À côté de Tournai, on lit « 2 °C / 8 °C » : la température minimale est 2 °C et la maximale, la plus haute, est 8 °C. En bas du bulletin, à côté du soleil qui descend, on lit « Coucher : 17 h 08 » (le lever est à 8 h 36).",
+   "fiche": "sc-meteo"
   },
   {
    "id": "ceb-2019-l5-q8a",
@@ -3569,7 +3570,7 @@
    "enonce": "Observe les expériences (portfolio, pages 12 à 15). Quelles expériences les élèves ont-ils réalisées pour identifier les variables qui influencent l'équilibre de leur grue ? Pour chaque variable, choisis la case qui convient.",
    "points": 3,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "grue-2",
     "grue-3"
@@ -3602,7 +3603,7 @@
    "enonce": "Observe les expériences (portfolio, pages 12 à 15). Après ces expériences, les élèves ont émis deux nouvelles hypothèses concernant l'équilibre de leur grue. Pour chaque hypothèse, choisis la proposition correcte.",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "grue-2",
     "grue-3"
@@ -3631,7 +3632,7 @@
    "enonce": "Complète les propositions suivantes par le mot « augmenter » ou le mot « diminuer ». D'après les expériences (portfolio, pages 12 à 15), pour maintenir la grue en équilibre, on peut :",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "grue-2",
     "grue-3"
@@ -4023,7 +4024,7 @@
    "documents": [
     "meteo"
    ],
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "souple": true,
    "texte": "la direction du vent : {1}\nla vitesse du vent : {2}",
    "reponse": [
@@ -4045,7 +4046,7 @@
    "enonce": "Observe l'échelle de Beaufort (portfolio, page 11) et les quatre photos du livret (pages 18 et 19), numérotées de 1 à 4. Pour chaque photo, écris un nombre de 0 à 12 exprimant la force du vent en Beaufort qui correspond aux effets illustrés.",
    "points": 4,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "beaufort",
     "liv5-p18",

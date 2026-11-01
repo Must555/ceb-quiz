@@ -2725,14 +2725,16 @@
         "Renouvelables : soleil, vent, eau, bois si on replante… (elles se renouvellent vite).",
         "Non renouvelables : pétrole, gaz naturel, charbon, uranium (elles s'épuisent).",
         "Pour se chauffer : gaz naturel, mazout, charbon (non renouvelables) ; bois, pellets, Soleil (renouvelables).",
-        "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air."
+        "Bons conducteurs de chaleur : métaux. Bons isolants : laine, liège, bois, air.",
+        "Leviers et engrenages : ils transmettent un mouvement ou une force, sans créer d'énergie."
       ],
       "exemple": "Un radiateur est en acier (conducteur) ; un pull en laine garde la chaleur (isolant).",
       "astuce": "Ce qui a mis des millions d'années à se former (pétrole, gaz) ne se renouvelle pas.",
       "comprendre": [
         "L'énergie permet de chauffer, d'éclairer, de faire bouger. On la tire de sources différentes. Les sources renouvelables se reforment vite ou ne s'épuisent pas : le Soleil, le vent, l'eau qui coule, le bois. Les sources non renouvelables ont mis des millions d'années à se former et s'épuisent : le pétrole, le gaz naturel, le charbon, l'uranium.",
         "Quand on brule du pétrole, du gaz, du charbon ou du bois, on rejette du dioxyde de carbone (CO₂), un gaz à effet de serre qui contribue au réchauffement climatique. L'élevage de ruminants rejette, lui, beaucoup de méthane, un autre gaz à effet de serre.",
-        "L'énergie se transforme : un panneau solaire photovoltaïque transforme la lumière en électricité, une éolienne transforme le vent en électricité. Une surface sombre absorbe mieux l'énergie du Soleil qu'une surface claire."
+        "L'énergie se transforme : un panneau solaire photovoltaïque transforme la lumière en électricité, une éolienne transforme le vent en électricité. Une surface sombre absorbe mieux l'énergie du Soleil qu'une surface claire.",
+        "Les leviers et les engrenages ne fabriquent pas d'énergie : ils transmettent un mouvement ou une force. Un levier est une tige rigide qui pivote autour d'un point fixe, le pivot : les tenailles, le sécateur ou la pince sont des leviers. Dans un engrenage, deux roues dentées qui se touchent tournent en sens inverse ; dans un engrenage fermé (en cercle), les roues ne peuvent tourner que si leur nombre est pair."
       ],
       "exemplesExpliques": [
         {
@@ -2750,6 +2752,10 @@
         {
           "cas": "Une éolienne.",
           "explication": "Elle transforme l'énergie du vent, renouvelable, en électricité."
+        },
+        {
+          "cas": "Quatre roues dentées en ligne, la première tourne dans le sens des aiguilles d'une montre.",
+          "explication": "Chaque roue tourne à l'inverse de sa voisine : la quatrième tourne dans l'autre sens."
         }
       ],
       "pieges": [
@@ -2780,6 +2786,30 @@
           ],
           "libelle": "question 18",
           "texte": "L'élevage produit surtout du méthane ; la voiture et le chauffage, du dioxyde de carbone."
+        },
+        {
+          "examens": [
+            "ceb-2016"
+          ],
+          "livret": 7,
+          "questions": [
+            "6a",
+            "6b"
+          ],
+          "libelle": "questions 6a et 6b",
+          "texte": "Deux roues dentées voisines tournent en sens inverse : un engrenage fermé ne tourne qu'avec un nombre pair de roues."
+        },
+        {
+          "examens": [
+            "ceb-2016"
+          ],
+          "livret": 7,
+          "questions": [
+            "9b",
+            "9c"
+          ],
+          "libelle": "questions 9b et 9c",
+          "texte": "Les tenailles et la pince coupante sont des leviers : leurs branches pivotent autour d'un axe ; une paille ou un tuba, non."
         }
       ],
       "miseAJour": "2026-11-01"

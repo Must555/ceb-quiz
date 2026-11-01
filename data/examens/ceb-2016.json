@@ -4166,7 +4166,7 @@
    "enonce": "Observe l'expérience n° 1 : les pales. Écris la question que les élèves se sont posée avant de concevoir l'expérience n° 1.",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "roues-1"
    ],
@@ -4182,7 +4182,7 @@
    "enonce": "Observe l'expérience n° 2 : la hauteur de chute de l'eau. À ton avis, dans quel cas la roue effectue-t-elle le plus grand nombre de tours en 1 minute ?",
    "points": 0,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "roues-2"
    ],
@@ -4207,7 +4207,7 @@
    "enonce": "Qu'a-t-on constaté à la fin de l'expérience n° 2 ? Si une même quantité d'eau tombe de plus haut, par le même entonnoir :",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "roues-2"
    ],
@@ -4228,7 +4228,7 @@
    "enonce": "Pourquoi les élèves ont-ils fait trois essais ?",
    "points": 0.5,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "roues-2"
    ],
@@ -4252,7 +4252,7 @@
    "enonce": "Voici une hypothèse : la roue effectuera un plus grand nombre de tours en 1 minute, si la taille du trou de l'entonnoir augmente. Choisis le seul choix qui permet de vérifier l'hypothèse.",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-demarche",
    "documents": [
     "roues-1",
     "roues-2"
@@ -4275,7 +4275,7 @@
    "enonce": "Voici des engrenages fermés. Certains fonctionnent : les roues tournent. Certains ne fonctionnent pas : les roues sont bloquées. Observe ces montages d'engrenages fermés. Pour chaque affirmation, indique si elle est correcte ou incorrecte. Un montage d'engrenages fermé constitué…",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-energie",
    "lignes": [
     "…d'un nombre pair de roues ne fonctionne pas.",
     "…d'un nombre impair de roues ne fonctionne pas.",
@@ -4306,7 +4306,7 @@
    "enonce": "Voici un engrenage ouvert. Si on actionne cet engrenage : la roue A tourne dans le sens des aiguilles d'une montre et la roue D tourne dans le sens inverse. Dans cet engrenage, que se passe-t-il…",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-energie",
    "lignes": [
     "si on supprime la roue C et que la roue D s'emboite à la roue B ?",
     "si on supprime les roues B et C et que la roue D s'emboite à la roue A ?",
@@ -4703,7 +4703,7 @@
    "enonce": "Observe les photos du livret (page 14). Choisis les objets qui ne fonctionnent pas selon le principe des leviers dans leur utilisation habituelle.",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-energie",
    "documents": [
     "leviers",
     "liv7-p14"
@@ -4729,7 +4729,7 @@
    "enonce": "Observe les quatre images du livret (page 15). Classe les objets dans le tableau : pour chaque objet, choisis la case adéquate.",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-energie",
    "documents": [
     "leviers",
     "liv7-p15"

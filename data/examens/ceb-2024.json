@@ -5453,7 +5453,7 @@
    "enonce": "Observe le bulletin météorologique (portfolio, page 26). À l'aide de la légende, quelle est la tendance générale de la journée du mardi 25/06 ?",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "meteo"
    ],
@@ -5483,7 +5483,7 @@
    "enonce": "Observe le bulletin météorologique (portfolio, page 26). À l'aide de la légende, quelle est la tendance générale de la journée du jeudi 27/06 ?",
    "points": 1,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "meteo"
    ],
@@ -5513,7 +5513,7 @@
    "enonce": "Complète le tableau en t'aidant du bulletin météorologique et des instruments de mesure. Exemple : lundi 24/06, température minimale : 23 °C, température maximale : 29 °C → thermomètre. Quel instrument a été utilisé pour chaque donnée ?",
    "points": 3,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "meteo"
    ],
@@ -5545,7 +5545,7 @@
    "enonce": "Complète le tableau en t'aidant du bulletin météorologique.",
    "points": 2,
    "corrigeVerifie": true,
-   "fiche": "sc-phenomenes",
+   "fiche": "sc-meteo",
    "documents": [
     "meteo"
    ],

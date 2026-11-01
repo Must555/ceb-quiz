@@ -790,6 +790,17 @@
      ],
      "libelle": "question 7b",
      "texte": "La rosée est de l'eau liquide, les grêlons de l'eau solide, et après évaporation l'eau est gazeuse."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 9,
+     "questions": [
+      "7b"
+     ],
+     "libelle": "question 7b",
+     "texte": "En plus de l'état liquide, l'eau se trouve à l'état solide (glace, neige) et à l'état gazeux (vapeur d'eau)."
     }
    ],
    "miseAJour": "2026-11-01"
@@ -947,9 +958,20 @@
      ],
      "libelle": "question 8",
      "texte": "On verse l'eau, puis l'huile, qui reste au-dessus ; le sel ajouté coule et entraine un peu d'huile, qui remonte ensuite."
+    },
+    {
+     "examens": [
+      "ceb-2026-so"
+     ],
+     "livret": 9,
+     "questions": [
+      "9"
+     ],
+     "libelle": "question 9",
+     "texte": "1 litre d'huile pèse 835 g et 1 litre de lait 1 020 g : dans le bocal, l'huile reste au-dessus du lait."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-materiaux",
@@ -1656,9 +1678,33 @@
      ],
      "libelle": "question 8c",
      "texte": "« Tout ce qui est en bois flotte » est faux : une boule de bois d'azobé coule dans l'eau douce."
+    },
+    {
+     "examens": [
+      "ceb-2016"
+     ],
+     "livret": 7,
+     "questions": [
+      "4c"
+     ],
+     "libelle": "question 4c",
+     "texte": "Les élèves font trois essais : un seul essai ne suffit pas pour valider un résultat, et plusieurs essais permettent de calculer une moyenne."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 5,
+     "questions": [
+      "8a",
+      "8b",
+      "8c"
+     ],
+     "libelle": "questions 8a, 8b et 8c",
+     "texte": "Pour l'équilibre d'une grue, chaque expérience change une seule variable : on peut augmenter la surface de la base et diminuer la longueur de la flèche ; aucune expérience ne change la hauteur de la tour, on ne peut donc pas vérifier cette hypothèse."
     }
    ],
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-01"
   },
   {
    "id": "sc-chaleur",
@@ -2377,6 +2423,113 @@
      ],
      "libelle": "question 14",
      "texte": "Les fonctions du système circulatoire : distribuer les nutriments et l'oxygène, débarrasser les organes de leurs déchets. Digérer n'en fait pas partie."
+    }
+   ],
+   "miseAJour": "2026-11-01"
+  },
+  {
+   "id": "sc-meteo",
+   "matiere": "sc",
+   "e": "🌦️",
+   "titre": "Lire un bulletin météo",
+   "regle": [
+    "Un bulletin météo donne des prévisions : l'état du ciel (soleil, nuages, averses, orages), les températures minimale et maximale, la direction et la vitesse du vent, la quantité de précipitations.",
+    "Les symboles se lisent avec la légende : un nuage avec des gouttes = averses ; un nuage avec un éclair = orages.",
+    "Instruments : thermomètre (température, en °C), pluviomètre (précipitations, en mm), anémomètre (vitesse du vent, en km/h), girouette (direction du vent), baromètre (pression de l'air).",
+    "Échelle de Beaufort : la force du vent, de 0 (calme, la fumée monte droit) à 12 (ouragan)."
+   ],
+   "exemple": "« 2 °C / 8 °C » à Tournai : la température minimale est 2 °C, la maximale 8 °C.",
+   "astuce": "Avant de répondre, lis la légende du bulletin et repère les unités : °C, mm, km/h.",
+   "comprendre": [
+    "La météo décrit le temps qu'il fera dans les prochains jours ; le climat, lui, est une moyenne sur de nombreuses années. En Belgique, les prévisions officielles sont faites par l'Institut royal météorologique (IRM). Un bulletin peut être une carte avec des symboles, un tableau par jour et par région, ou un court texte.",
+    "Pour lire un bulletin, commence par la légende : chaque symbole a un sens précis (« nuageux, mais sec », « très nuageux avec averses », « orages »…). Repère ensuite la ligne et la colonne qui t'intéressent : le jour, la région ou la ville. Les températures sont souvent données par deux nombres : la minimale (la plus basse, la nuit) et la maximale (la plus haute, l'après-midi).",
+    "Chaque donnée est mesurée par un instrument : le thermomètre pour la température, le pluviomètre pour la quantité de pluie (en millimètres), l'anémomètre pour la vitesse du vent (en km/h), la girouette pour sa direction (le point cardinal d'où il vient, par exemple sud-ouest). Pour la force du vent, l'échelle de Beaufort décrit ses effets : à 6, on a du mal à garder son parapluie ouvert ; à 10, des arbres sont déracinés."
+   ],
+   "exemplesExpliques": [
+    {
+     "cas": "Un nuage sombre avec de la pluie et un éclair.",
+     "explication": "D'après la légende, des orages."
+    },
+    {
+     "cas": "« Vitesse du vent : 4 km/h » et « Direction du vent : SO ».",
+     "explication": "La vitesse est mesurée par l'anémomètre, la direction (sud-ouest) par la girouette."
+    },
+    {
+     "cas": "À la côte, du vent de 30 à 55 km/h.",
+     "explication": "Il ne dépasse pas 55 km/h : « des rafales de plus de 55 km/h » est faux."
+    },
+    {
+     "cas": "Un arbre arraché du sol par le vent.",
+     "explication": "Force 10 sur l'échelle de Beaufort."
+    }
+   ],
+   "pieges": [
+    "Confondre l'anémomètre (vitesse du vent) et la girouette (direction du vent).",
+    "Lire la température minimale à la place de la maximale.",
+    "Oublier l'unité dans la réponse (15 mm, 8 °C, 54 km/h).",
+    "Répondre pour un autre jour ou une autre région que celle demandée."
+   ],
+   "auCEB": [
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "9a1",
+      "9a2"
+     ],
+     "libelle": "questions 9a1 et 9a2",
+     "texte": "D'après la légende, le mardi est un jour d'orages ; le jeudi est très nuageux avec averses fréquentes ou intenses."
+    },
+    {
+     "examens": [
+      "ceb-2024"
+     ],
+     "livret": 10,
+     "questions": [
+      "9b",
+      "9c"
+     ],
+     "libelle": "questions 9b et 9c",
+     "texte": "La vitesse du vent est mesurée par l'anémomètre, sa direction (sud-ouest) par la girouette, les précipitations (15 mm) par le pluviomètre."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "7b"
+     ],
+     "libelle": "question 7b",
+     "texte": "Dans un bulletin, le vent à la côte va de 30 à 55 km/h : il n'y aura pas de rafales de plus de 55 km/h ; près de Namur, le temps sera couvert, mais sec."
+    },
+    {
+     "examens": [
+      "ceb-2022"
+     ],
+     "livret": 9,
+     "questions": [
+      "7c1",
+      "7c2",
+      "7c3"
+     ],
+     "libelle": "questions 7c1, 7c2 et 7c3",
+     "texte": "Dans le tableau de l'IRM, « de 3 à 15 degrés » et « des orages » correspondent au dimanche ; « quelques brumes matinales, puis un temps sec », au lundi."
+    },
+    {
+     "examens": [
+      "ceb-2019"
+     ],
+     "livret": 5,
+     "questions": [
+      "7a",
+      "7b",
+      "7c"
+     ],
+     "libelle": "questions 7a, 7b et 7c",
+     "texte": "Lire un bulletin : « 2 °C / 8 °C » donne une maximale de 8 °C ; sur l'échelle de Beaufort, un arbre arraché correspond à un vent de force 10."
     }
    ],
    "miseAJour": "2026-11-01"
