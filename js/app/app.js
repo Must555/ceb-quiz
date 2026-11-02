@@ -567,11 +567,11 @@ function rendreDocs(docs) {
     ? `<div class="ecoute" data-doc="${d.id}"><p class="ecoute-titre">🎧 Texte à écouter</p>
         <button class="btn btn-cta ecoute-btn" data-doc="${d.id}">▶️ Écouter le texte</button>
         <p class="ecoute-info mute"></p></div>`
-    : `<button class="btn doc-btn" data-doc="${d.id}">📄 ${i === 0 ? 'Document' : 'Voir le document'} : ${esc(d.titre)}</button>
-      <figure class="doc" id="doc-${d.id}" ${i === 0 ? '' : 'hidden'}><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>${d.source === 'livret' ? `Livret ${d.livret}, page ${d.page}` : `Portfolio, ${d.pageFin ? `pages ${d.page}-${d.pageFin}` : `page ${d.page}`}`} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
+    : `<button class="btn doc-btn" data-doc="${d.id}" aria-expanded="true">📄 Document${docs.length > 1 ? ` ${i + 1}` : ''} : ${esc(d.titre)}</button>
+      <figure class="doc" id="doc-${d.id}"><img src="${esc(d.fichier)}" alt="${esc(d.alt)}" loading="lazy"><figcaption>${d.source === 'livret' ? `Livret ${d.livret}, page ${d.page}` : `Portfolio, ${d.pageFin ? `pages ${d.page}-${d.pageFin}` : `page ${d.page}`}`} · 🔍 touche pour agrandir</figcaption></figure>`).join('');
 }
 function brancherDocs(docs, { compteur = null, max = Infinity } = {}) {
-  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; });
+  $$('.doc-btn').forEach((b) => b.onclick = () => { const f = $(`#doc-${b.dataset.doc}`); f.hidden = !f.hidden; b.setAttribute('aria-expanded', String(!f.hidden)); });
   $$('.ecoute-btn').forEach((b) => {
     const d = docs.find((x) => x.id === b.dataset.doc);
     const info = b.parentElement.querySelector('.ecoute-info');
