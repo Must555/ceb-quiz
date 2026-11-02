@@ -49,21 +49,21 @@ export function jourDe(j, jour = aujourdhui()) {
 
 // ---------- Badges ----------
 export const BADGES = [
-  { id: 'premier_pas', e: '🚀', nom: 'Décollage', desc: 'Termine ta première mission', test: (j) => j.sessions.length >= 1 },
-  { id: 'q100', e: '💯', nom: 'Centurion', desc: 'Réponds à 100 questions', test: (j) => j.totalQuestions >= 100 },
-  { id: 'q500', e: '🧠', nom: 'Cerveau d\'acier', desc: 'Réponds à 500 questions', test: (j) => j.totalQuestions >= 500 },
+  { id: 'premier_pas', e: '🚀', nom: 'Décollage', desc: 'Termine ta première mission', prog: (j) => [j.sessions.length, 1], test: (j) => j.sessions.length >= 1 },
+  { id: 'q100', e: '💯', nom: 'Centurion', desc: 'Réponds à 100 questions', prog: (j) => [j.totalQuestions, 100], test: (j) => j.totalQuestions >= 100 },
+  { id: 'q500', e: '🧠', nom: 'Cerveau d\'acier', desc: 'Réponds à 500 questions', prog: (j) => [j.totalQuestions, 500], test: (j) => j.totalQuestions >= 500 },
   { id: 'sans_faute', e: '🎯', nom: 'Sans faute', desc: '100 % sur une mission d\'au moins 10 questions', test: (j, s) => s && s.questions >= 10 && s.pourcentage === 100 },
   { id: 'serie10', e: '⚡', nom: 'Éclair', desc: '10 bonnes réponses d\'affilée', test: (j, s) => s && s.meilleureSerie >= 10 },
-  { id: 'jours3', e: '🔥', nom: 'En feu', desc: 'Joue 3 jours d\'affilée', test: (j) => j.serie.record >= 3 },
-  { id: 'jours7', e: '🌋', nom: 'Volcan', desc: 'Joue 7 jours d\'affilée', test: (j) => j.serie.record >= 7 },
-  { id: 'fr20', e: '📖', nom: 'Plume d\'or', desc: '20 bonnes réponses en français', test: (j) => (j.parMatiere.fr?.bonnes ?? 0) >= 20 },
-  { id: 'ma20', e: '📐', nom: 'As des maths', desc: '20 bonnes réponses en maths', test: (j) => (j.parMatiere.ma?.bonnes ?? 0) >= 20 },
-  { id: 'hg20', e: '🌍', nom: 'Globe-trotter', desc: '20 bonnes réponses en histoire-géo', test: (j) => (j.parMatiere.hg?.bonnes ?? 0) >= 20 },
-  { id: 'sc20', e: '🧪', nom: 'Savant fou', desc: '20 bonnes réponses en sciences', test: (j) => (j.parMatiere.sc?.bonnes ?? 0) >= 20 },
+  { id: 'jours3', e: '🔥', nom: 'En feu', desc: 'Joue 3 jours d\'affilée', prog: (j) => [j.serie.record, 3], test: (j) => j.serie.record >= 3 },
+  { id: 'jours7', e: '🌋', nom: 'Volcan', desc: 'Joue 7 jours d\'affilée', prog: (j) => [j.serie.record, 7], test: (j) => j.serie.record >= 7 },
+  { id: 'fr20', e: '📖', nom: 'Plume d\'or', desc: '20 bonnes réponses en français', prog: (j) => [j.parMatiere.fr?.bonnes ?? 0, 20], test: (j) => (j.parMatiere.fr?.bonnes ?? 0) >= 20 },
+  { id: 'ma20', e: '📐', nom: 'As des maths', desc: '20 bonnes réponses en maths', prog: (j) => [j.parMatiere.ma?.bonnes ?? 0, 20], test: (j) => (j.parMatiere.ma?.bonnes ?? 0) >= 20 },
+  { id: 'hg20', e: '🌍', nom: 'Globe-trotter', desc: '20 bonnes réponses en histoire-géo', prog: (j) => [j.parMatiere.hg?.bonnes ?? 0, 20], test: (j) => (j.parMatiere.hg?.bonnes ?? 0) >= 20 },
+  { id: 'sc20', e: '🧪', nom: 'Savant fou', desc: '20 bonnes réponses en sciences', prog: (j) => [j.parMatiere.sc?.bonnes ?? 0, 20], test: (j) => (j.parMatiere.sc?.bonnes ?? 0) >= 20 },
   { id: 'coach', e: '🧭', nom: 'Bien guidé', desc: 'Termine une mission ciblée du coach', test: (j, s) => s && s.modeJeu === 'cible' },
   { id: 'examen', e: '📝', nom: 'Candidat', desc: 'Termine un examen blanc', test: (j, s) => s && s.mode === 'examen' },
   { id: 'chrono', e: '⏱️', nom: 'Contre la montre', desc: '10 bonnes réponses en mode Chrono', test: (j, s) => s && s.modeJeu === 'chrono' && s.bonnes >= 10 },
-  { id: 'niveau5', e: '👑', nom: 'Aventurier', desc: 'Atteins le niveau 5', test: (j) => niveau(j.xp).n >= 5 },
+  { id: 'niveau5', e: '👑', nom: 'Aventurier', desc: 'Atteins le niveau 5', prog: (j) => [niveau(j.xp).n, 5], test: (j) => niveau(j.xp).n >= 5 },
 ];
 
 // ---------- Fin de session ----------
