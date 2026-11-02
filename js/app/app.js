@@ -290,7 +290,7 @@ function afficherAccueil() {
         <button data-aller="progres"><span>${ic('progres')}</span>Progrès</button>
         <button data-aller="fiches"><span>${ic('fiches')}</span>Fiches</button>
         <a class="nav-lien" href="imprimer.html"><span>${ic('papier')}</span>Examen papier</a>
-        <button class="bientot" data-bientot><span>${ic('badges')}</span>Collection</button>
+        <button data-aller="collection"><span>${ic('badges')}</span>Collection</button>
         <button data-aller="reglages"><span>${ic('style')}</span>Mon style</button>
         <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
         <button data-aller="parents"><span>👪</span>Parents</button>
@@ -385,6 +385,7 @@ function afficherAccueil() {
         <section class="carte">
           <h3>🏅 Ma collection <span class="mute" style="font-weight:600;font-size:14px">${nbBadges} / ${BADGES.length}</span></h3>
           <div class="collection">${BADGES.slice(0, 8).map((b) => `<div class="${joueur.badges[b.id] ? 'obtenu' : 'lock'}" title="${esc(b.nom)} : ${esc(b.desc)}">${b.e}</div>`).join('')}</div>
+          <button class="btn petit" data-aller="collection" style="margin-top:12px;width:100%">Voir toute ma collection →</button>
         </section>
       </div>
     </main>
@@ -395,6 +396,7 @@ function afficherAccueil() {
     <button data-aller="fiches"><span>${ic('fiches')}</span>Fiches</button>
     <button data-aller="reglages"><span>${ic('style')}</span>Mon style</button>
     <button data-aller="joueurs"><span>🔁</span>Joueurs</button>
+    <button data-aller="parents"><span>👪</span>Parents</button>
   </nav>`;
   montrer('ecran-accueil');
 
@@ -435,7 +437,7 @@ function afficherAccueil() {
   $('#ignorer-defi', el)?.addEventListener('click', () => { defiRecu = null; afficherAccueil(); });
   $$('[data-aller="reglages"]', el).forEach((b) => b.onclick = afficherReglages);
   $$('[data-aller="joueurs"]', el).forEach((b) => b.onclick = () => { store.deconnecter(); afficherConnexion(); });
-  $$('[data-bientot]', el).forEach((b) => b.onclick = () => toast('Arrive très bientôt ! 🛠️'));
+  $$('[data-aller="collection"]', el).forEach((b) => b.onclick = afficherCollection);
   $$('[data-aller="progres"]', el).forEach((b) => b.onclick = afficherProgres);
   $$('[data-aller="fiches"]', el).forEach((b) => b.onclick = afficherFiches);
   $$('[data-aller="parents"]', el).forEach((b) => b.onclick = () => afficherParents(afficherAccueil));
@@ -1401,6 +1403,35 @@ function afficherProgres() {
   $$('[data-cible]', el).forEach((b) => b.onclick = () => lancerCible(b.dataset.cible, false));
 }
 
+// ============================================================ Collection
+// Tous les badges : obtenus (avec la date) ou à débloquer (avec la progression quand elle se compte).
+function afficherCollection() {
+  const nb = BADGES.filter((b) => joueur.badges[b.id]).length;
+  const carte = (b) => {
+    const date = joueur.badges[b.id];
+    const p = !date && b.prog ? b.prog(joueur) : null;
+    const pct = p ? Math.min(100, Math.round((Math.min(p[0], p[1]) / p[1]) * 100)) : 0;
+    return `<div class="badge-carte ${date ? 'obtenu' : 'lock'}">
+      <span class="e" aria-hidden="true">${b.e}</span>
+      <div><b>${esc(b.nom)}</b><small>${esc(b.desc)}</small>
+        ${date ? `<small class="quand">✔ Obtenu le ${dateLongue(date)}</small>` : p ? `<div class="barre" role="img" aria-label="${Math.min(p[0], p[1])} sur ${p[1]}"><i style="width:${pct}%"></i></div><small class="quand">${Math.min(p[0], p[1])} / ${p[1]}</small>` : '<small class="quand">🔒 À débloquer</small>'}</div>
+    </div>`;
+  };
+  $('#ecran-collection').innerHTML = `<div class="progres">
+    <p><button class="btn" id="retour-accueil">← Accueil</button></p>
+    <h1>🏅 Ma collection</h1>
+    <div class="gains">
+      <div><b>${nb} / ${BADGES.length}</b><small>badges</small></div>
+      <div><b>${joueur.gemmes}</b><small>gemmes</small></div>
+      <div><b>${niveau(joueur.xp).n}</b><small>niveau</small></div>
+    </div>
+    <section class="carte"><h3 class="section-titre">✨ Mes badges</h3><div class="badges-liste">${BADGES.filter((b) => joueur.badges[b.id]).map(carte).join('') || '<p class="mute" style="margin:0">Pas encore de badge : termine ta première mission pour décrocher « Décollage » 🚀</p>'}</div></section>
+    ${nb < BADGES.length ? `<section class="carte"><h3 class="section-titre">🔒 À débloquer</h3><div class="badges-liste">${BADGES.filter((b) => !joueur.badges[b.id]).map(carte).join('')}</div></section>` : '<p class="carte" style="margin:0">🏆 Bravo, tu as tous les badges !</p>'}
+  </div>`;
+  montrer('ecran-collection');
+  $('#retour-accueil', $('#ecran-collection')).onclick = afficherAccueil;
+}
+
 // ============================================================ Réglages
 function afficherReglages() {
   const el = $('#ecran-reglages');
@@ -1512,7 +1543,7 @@ function afficherParents(retour) {
     </header>
     <section class="carte p-rebours">
       <div><small class="sur">CEB ${CEB.annee}</small><b>${jRestants ? `J − ${jRestants}` : 'C\'est parti !'}</b></div>
-      <p>${jRestants ? `Encore <b>${jRestants} jours</b> (environ ${Math.floor(jRestants / 7)} semaines) avant le ${CEB.jours[0].jour.toLowerCase()} ${CEB.annee}.` : 'Le CEB a commencé ou est terminé.'} Épreuves le matin : ${CEB.jours.map((d) => `${d.jour} (${d.matiere.toLowerCase()})`).join(', ')}.</p>
+      <p>${jRestants ? `Encore <b>${jRestants} jours</b> (environ ${Math.floor(jRestants / 7)} semaines) avant le ${CEB.jours[0].jour.toLowerCase()} ${CEB.annee}.` : 'Le CEB a commencé ou est terminé.'} Épreuves le matin : ${CEB.jours.map((d) => (d.matiere ? `${d.jour} (${d.matiere.toLowerCase()})` : d.jour)).join(', ')}.</p>
     </section>
     ${joueurs.length > 1 ? `<div class="p-enfants no-print" role="tablist" aria-label="Enfant">${onglets}</div>` : ''}
     ${enfant ? blocsEnfant(enfant, reglages) : '<section class="carte"><p>Aucun joueur sur cet appareil pour l\'instant. Le bilan apparaîtra dès que votre enfant aura créé son joueur et joué une première partie.</p></section>'}

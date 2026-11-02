@@ -201,6 +201,16 @@ textarea.champ { resize:vertical; min-height:90px; line-height:1.4; }
 .collection div { aspect-ratio:1; border-radius:14px; display:grid; place-items:center; font-size:26px; background:var(--panel2); border:var(--bord); }
 .collection div.lock { opacity:.3; filter:grayscale(1); }
 .collection div.obtenu { background:linear-gradient(135deg,#ffd23f,#ff9f1c); }
+.badges-liste { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:10px; }
+.badge-carte { display:flex; gap:12px; align-items:center; padding:12px; border-radius:14px; background:var(--panel2); border:var(--bord); }
+.badge-carte .e { flex:none; width:52px; height:52px; border-radius:14px; display:grid; place-items:center; font-size:28px; background:var(--panel); border:var(--bord); }
+.badge-carte.obtenu .e { background:linear-gradient(135deg,#f3d36b,#e3a43c); }
+.badge-carte.lock .e { filter:grayscale(1); opacity:.45; }
+.badge-carte > div { min-width:0; flex:1; display:flex; flex-direction:column; gap:3px; }
+.badge-carte b { font-size:15px; }
+.badge-carte small { color:var(--mute); font-size:13px; }
+.badge-carte small.quand { font-weight:700; }
+.badge-carte .barre { height:8px; }
 .navbas { display:none; }
 
 /* ---------- Quiz ---------- */

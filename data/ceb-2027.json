@@ -1,21 +1,45 @@
 {
  "_aide": "Source unique des informations du CEB 2027 (page /ceb-2027/). Le jour de la circulaire : mettre statut à \"confirme\", remplir source, corriger les dates/livrets si besoin, changer miseAJour, puis npm run generer et npm test (le test signale index.html et js/app/parents.js s'ils ne suivent pas).",
  "annee": 2027,
- "statut": "annonce",
- "miseAJour": "2026-10-23",
+ "statut": "confirme",
+ "miseAJour": "2026-11-02",
  "source": {
-  "intitule": null,
-  "numero": null,
-  "date": null,
-  "url": null
+  "intitule": "la circulaire « Dates de passation des épreuves externes certificatives (CEB, CE1D et CESS) »",
+  "numero": "9788",
+  "date": "2026-08-27",
+  "url": "https://gallilex.cfwb.be/sites/default/files/circulaires/2026-08/53288_0000.pdf"
  },
  "jours": [
-  { "date": "2027-06-21", "matiere": "Français", "livrets": null },
-  { "date": "2027-06-22", "matiere": "Mathématiques", "livrets": null },
-  { "date": "2027-06-24", "matiere": "Sciences", "livrets": null },
-  { "date": "2027-06-25", "matiere": "Formation historique et géographique", "livrets": null }
+  {
+   "date": "2027-06-21",
+   "matiere": null,
+   "livrets": null
+  },
+  {
+   "date": "2027-06-22",
+   "matiere": null,
+   "livrets": null
+  },
+  {
+   "date": "2027-06-24",
+   "matiere": null,
+   "livrets": null
+  },
+  {
+   "date": "2027-06-25",
+   "matiere": null,
+   "livrets": null
+  }
  ],
- "seuils": { "matiere": 50, "moyenne": 60, "base": "un décret du 19 mars 2026" },
- "resultats": null,
- "complements": []
+ "seuils": {
+  "matiere": 50,
+  "moyenne": 60,
+  "base": "un décret du 19 mars 2026"
+ },
+ "resultats": "2027-06-28",
+ "complements": [
+  "Chaque matinée d'épreuve commence entre 8 h 15 et 8 h 45.",
+  "La circulaire ne précise pas quelles matières sont évaluées chaque matinée. En 2026 (tronc commun), les 10 livrets étaient répartis sur les 4 matinées en mélangeant les matières : 1re matinée, écouter, écrire et géométrie ; 2e matinée, grandeurs et formation historique et géographique ; 3e matinée, lire et arithmétique ; 4e matinée, sciences et lire.",
+  "Les élèves à besoins spécifiques peuvent bénéficier d'aménagements raisonnables : une circulaire distincte, prévue début 2027, en précisera les modalités."
+ ]
 }

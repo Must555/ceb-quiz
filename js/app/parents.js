@@ -8,17 +8,18 @@ import { hashString } from '../engine/random.js';
 import { aujourdhui } from './store.js';
 import { maitrise } from './coach.js';
 
-// CEB 2027 : du lundi 21 au vendredi 25 juin 2027 (le matin), référentiels du tronc commun.
+// CEB 2027 : matinées des lundi 21, mardi 22, jeudi 24 et vendredi 25 juin 2027, référentiels du tronc commun
+// (circulaire 9788 du 27/08/2026 ; la répartition des matières par matinée n'y est pas précisée : matiere null).
 // Réussite : au moins 50 % dans chaque discipline ET au moins 60 % de moyenne
 // (décret du 19 mars 2026 relevant les seuils de réussite des épreuves externes certificatives).
 export const CEB = {
   annee: 2027,
   debut: '2027-06-21',
   jours: [
-    { date: '2027-06-21', jour: 'Lundi 21 juin', matiere: 'Français' },
-    { date: '2027-06-22', jour: 'Mardi 22 juin', matiere: 'Mathématiques' },
-    { date: '2027-06-24', jour: 'Jeudi 24 juin', matiere: 'Sciences' },
-    { date: '2027-06-25', jour: 'Vendredi 25 juin', matiere: 'Formation historique et géographique' },
+    { date: '2027-06-21', jour: 'Lundi 21 juin', matiere: null },
+    { date: '2027-06-22', jour: 'Mardi 22 juin', matiere: null },
+    { date: '2027-06-24', jour: 'Jeudi 24 juin', matiere: null },
+    { date: '2027-06-25', jour: 'Vendredi 25 juin', matiere: null },
   ],
   seuilMatiere: 50,
   seuilMoyenne: 60,
