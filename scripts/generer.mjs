@@ -47,7 +47,10 @@ export function descriptionGoogle(f) {
   const fin = ' Exemple, astuce et exercices corrigés tout de suite.';
   const place = 158 - fin.length;
   // Des phrases entières tant qu'elles tiennent ; sinon la première, coupée proprement à un mot.
-  const phrases = f.regle.join(' ').replace(/\s+/g, ' ').trim().match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g).map((x) => x.trim());
+  // Les points des abréviations (J.-C., av., apr., env., ex., etc. suivi d'un mot) ne terminent pas une phrase.
+  const POINT = '\u0001';
+  const proteger = (s) => s.replace(/J\.-C\./g, `J${POINT}-C${POINT}`).replace(/\b(av|apr|env|ex|cf|etc)\.(?=\s+[a-zà-ÿ0-9(])/g, `$1${POINT}`);
+  const phrases = proteger(f.regle.join(' ').replace(/\s+/g, ' ').trim()).match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g).map((x) => x.trim().replaceAll(POINT, '.'));
   let texte = '';
   for (const ph of phrases) { const t = texte ? `${texte} ${ph}` : ph; if (t.length > place) break; texte = t; }
   if (!texte) texte = couper(phrases[0], place);
