@@ -1134,7 +1134,11 @@
     "Confondre l'agriculteur (primaire) et l'usine de transformation des aliments (secondaire)."
    ],
    "auCEBNote": "Aucune question des CEB 2015 à 2026 n'est classée dans cette fiche, mais les secteurs d'activité aident à comprendre les paysages industriels et la vie dans nos régions.",
-   "miseAJour": "2026-10-31"
+   "miseAJour": "2026-11-06",
+   "seo": {
+    "titre": "Secteurs d'activité et métiers – Fiche CEB histoire-géo",
+    "description": "Primaire, secondaire, tertiaire : quels métiers dans chaque secteur ? Agriculture et pêche ; usines, artisans et bâtiment ; santé, enseignement et commerce."
+   }
   },
   {
    "id": "hg-paysages",

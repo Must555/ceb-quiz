@@ -116,8 +116,9 @@ const pied = (lienSignaler) => `</main>
 
 function pageFiche(f, voisines, nbEx, enrichi = { exemples: [], officielles: [], annees: [] }) {
   const m = MATIERES[f.matiere];
-  const titre = titreGoogle(f.titre, f.matiere);
-  const description = descriptionGoogle(f);
+  // `seo` (facultatif) : titre et description choisis à la main d'après les requêtes de la Search Console.
+  const titre = f.seo?.titre ?? titreGoogle(f.titre, f.matiere);
+  const description = f.seo?.description ?? descriptionGoogle(f);
   const sujet = `[Mission CEB] Erreur signalée — fiche « ${f.titre} »`;
   const signaler = `mailto:${ADRESSE_SIGNALEMENT}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(`Bonjour,\n\nJe pense avoir trouvé une erreur dans la fiche « ${f.titre} » (${f.id}).\n\nCommentaire : `)}`;
   // Fil d'Ariane (Google affiche « Mission CEB › Fiches › Mathématiques » au lieu de l'adresse) + ressource.
@@ -362,8 +363,8 @@ function pageExamen(ex, tous, fiches = {}) {
   const livrets = livretsReels(ex);
   const jouables = livrets.reduce((s, l) => s + l.questions.length, 0);
   const jours = [...new Set((ex.livrets ?? []).map((l) => l.date).filter(Boolean))].sort();
-  const titre = ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} tronc commun : l'examen en ligne` : ex.annee === 2026 ? `CEB ${ex.annee} socles : l'examen en ligne` : `CEB ${ex.annee} : l'examen complet en ligne`;
-  const description = `Le ${nom} livret par livret : matières, dates, durées et ${jouables} questions à refaire en ligne, corrigées tout de suite.`;
+  const titre = ex.referentiel === 'tronc_commun' ? `CEB ${ex.annee} tronc commun : questions et corrigé en ligne` : ex.annee === 2026 ? `CEB ${ex.annee} socles : questions et corrigé en ligne` : `CEB ${ex.annee} : questions et corrigé, à refaire en ligne`;
+  const description = `Les ${jouables} questions du ${nom} livret par livret, avec les réponses du corrigé officiel de la FWB et une correction immédiate. Sans compte.`;
   const ligne = (l) => {
     const r = livrets.find((x) => x.n === l.n);
     return `<tr><td>${l.n}</td><td>${esc(l.titre)}</td><td>${NOM_MAT_COURT[l.matiere] ?? ''}</td><td class="nw">${l.date ? (() => { const d = new Date(l.date + 'T12:00:00'); return `${JOURS[d.getDay()].slice(0, 3)}. ${d.getDate()}/${String(d.getMonth() + 1).padStart(2, '0')}`; })() : '—'}</td><td class="pts">${l.points ?? '—'}</td><td>${r ? `${r.questions.length}` : '<span class="papier">papier</span>'}</td></tr>`;
