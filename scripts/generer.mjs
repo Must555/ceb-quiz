@@ -610,7 +610,7 @@ ${[SITE, `${SITE}ceb-2027/`, `${SITE}enseignants/`, `${SITE}examens/`, `${SITE}e
   ...fiches.map((f) => `${SITE}fiches/${f.id}.html`)].map((u) => `<url><loc>${u}</loc>${dateDe[u] ? `<lastmod>${dateDe[u]}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `;
-  out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /relecture/\nDisallow: /moteur.html\n\nSitemap: ${SITE}sitemap.xml\n`;
+  out['robots.txt'] = `User-agent: *\nAllow: /\nDisallow: /maquettes/\nDisallow: /relecture/\nDisallow: /moteur.html\nDisallow: /archives/\n\nSitemap: ${SITE}sitemap.xml\n`;
 
   // Service worker : fichiers du cœur de l'application + version = empreinte de leur contenu.
   const coeur = [

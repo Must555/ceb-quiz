@@ -3,5 +3,6 @@ Allow: /
 Disallow: /maquettes/
 Disallow: /relecture/
 Disallow: /moteur.html
+Disallow: /archives/
 
 Sitemap: https://missionceb.be/sitemap.xml
