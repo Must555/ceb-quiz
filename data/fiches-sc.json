@@ -1516,7 +1516,11 @@
      "texte": "Dans l'hémisphère Nord, le jour le plus long est le solstice d'été et le jour le plus court, le solstice d'hiver ; aux équinoxes, jour et nuit durent 12 heures."
     }
    ],
-   "miseAJour": "2026-11-01"
+   "miseAJour": "2026-11-19",
+   "seo": {
+    "titre": "Jour, nuit, saisons, phases de la Lune – Fiche CEB sciences",
+    "description": "Pourquoi il fait jour puis nuit, pourquoi les saisons et les phases de la Lune : rotation et révolution de la Terre expliquées simplement. Exercices corrigés."
+   }
   },
   {
    "id": "sc-lire-donnees",
